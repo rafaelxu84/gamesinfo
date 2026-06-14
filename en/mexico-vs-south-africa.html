@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Mexico vs South Africa · 2026 World Cup Opening Match</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0d1220; --card:#161d2e; --card2:#1c2540; --line:#2a3450;
+    --txt:#e9eef8; --mut:#93a1c4; --mx:#16a34a; --sa:#e0ad1a; --draw:#64748b;
+    --accent:#38bdf8; --warn:#f59e0b; --good:#22c55e; --bad:#ef4444; --purp:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#16a34a);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  /* summary */
+  .summary{background:linear-gradient(135deg,#13261b,#152138);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}
+  .watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  /* grids */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:680px){.grid2,.grid3{grid-template-columns:1fr}}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .stat .k{color:var(--mut);font-size:12px}.stat .v{font-size:22px;font-weight:800;margin-top:3px}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.3px}
+  td.mx{color:#34d27b;font-weight:600}td.sa{color:#ecc24a;font-weight:600}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700}
+  .pmx{background:#16a34a33;color:#4ade80}.psa{background:#e0ad1a33;color:#f0cf6b}
+  details{background:var(--card2);border:1px solid var(--line);border-radius:10px;margin-top:12px;overflow:hidden}
+  summary{cursor:pointer;padding:12px 16px;font-weight:700;font-size:14px;color:var(--accent);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary:before{content:"＋ ";font-weight:800}
+  details[open] summary:before{content:"− "}
+  details .body{padding:0 16px 16px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}
+  .insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}
+  .flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .tag{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <span class="badge">⚽ 2026 World Cup · Opening Match · Full Sample Report · 🏁 FT 2-0</span>
+  <h1>Mexico vs South Africa</h1>
+  <div class="meta">11 June 2026 · Mexico City, Estadio Azteca (altitude ~2,250 m) · Group A, Matchday 1 · A 2010 opening-match echo</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 Mexico</div><div class="rk">FIFA #15 · Host · Squad value €194.6m</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 South Africa</div><div class="rk">FIFA #60 · Back after 16 years · Squad value €52.7m</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Including carry-over reference for the next match</span></h2>
+    <div class="sub">Full time: Mexico 2-0 South Africa (HT 1-0) · Data sources: Opta/FotMob/Sofascore · Pre-match analysis preserved below as a prediction archive</div>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:14px">9' Quiñones capitalised on a <b>fatal Sithole back-pass error</b> to slide home the tournament's opening goal; 67' Jiménez headed in at the far post to seal 2-0. Discipline collapsed late: <b>50' Sithole brought down Gutiérrez on a clear goalscoring opportunity — straight red (DOGSO) → 82' Zwane slapped Alvarado, VAR intervened — straight red → 90+2' Mexico's Montes stamped on Mudau — straight red (controversial, looked like a yellow)</b> — the first three-red-card World Cup game in 20 years.</p>
+
+    <h4>② Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇲🇽 Mexico</th><th>🇿🇦 South Africa</th><th>Reading</th></tr>
+      <tr><td>Possession</td><td class="mx">61%</td><td class="sa">39%</td><td>Dominance as expected, but not suffocating</td></tr>
+      <tr><td>xG</td><td class="mx"><b>1.41</b></td><td class="sa"><b>0.07</b></td><td>South Africa created virtually nothing — the cost of a pure 5-3-2 parking job</td></tr>
+      <tr><td>Shots / on target</td><td class="mx">16 / 4 (1 post)</td><td class="sa">3 / 0</td><td>Mexico's <b>conversion rate was poor</b>: 16 shots, only 4 on target; 2-0 was near the upper bound of efficiency</td></tr>
+      <tr><td>Box touches</td><td class="mx">20</td><td class="sa">2</td><td>Ten-fold penetration gap; South Africa's counter never materialised</td></tr>
+      <tr><td>Red cards</td><td class="mx">1 (Montes 90+2)</td><td class="sa">2 (Sithole 50' / Zwane 82')</td><td>All three were straight reds — hard evidence of strict officiating at this tournament</td></tr>
+    </table>
+
+    <h4>③ Tactical review (actual vs pre-match assessment)</h4>
+    <ul class="watch">
+      <li><b>Mexico's three-midfield solution without Álvarez worked</b>: Lira–Fidalgo–Gutiérrez overloaded South Africa's three-man midfield bank; 61% possession + 20 box touches vindicated the pre-match reading that "dropping the anchor for more drive" was viable. <b>Transferable conclusion</b>: Mexico have a polished blueprint for breaking down deep blocks, but against teams that counter-attack (South Korea) Álvarez's return is still needed.</li>
+      <li><b>Finishing efficiency remains Mexico's ceiling</b>: 16 shots, 4 on target, 1 post — the pre-match judgment that "beyond Jiménez Mexico lack a killer" was half-right. Quiñones's goal came from an opponent gift rather than structured build-up play. Against a higher-quality back line this conversion rate would be punished.</li>
+      <li><b>South Africa's 5-3-2 plan lasted 9 minutes</b>: The goal came from a self-inflicted error, not from being played through — confirming the pre-match profile of "goals conceded tend to stem from individual mistakes". Broos's impact subs (Zwane/Mofokeng after 60') brought a red card instead of a goal.</li>
+      <li><b>High-ball route delivered</b>: The decisive second goal was a cross + far-post header — the pre-match flag on "aerial / high-ball weight increasing" was directionally correct (rain was not the main plot).</li>
+      <li><b>Discipline was the biggest surprise</b>: Sampaio's historical profile as a "let-it-flow" referee was shattered — 3 straight reds + VAR pro-actively intervening signals a significantly stricter officiating environment across the whole tournament; the foul-cost in every subsequent match must be reassessed.</li>
+    </ul>
+
+    <h4>④ Prediction ledger</h4>
+    <ul class="cl">
+      <li>Result: Mexico win ✓ (market consensus 66–70%, delivered); scoreline 2-0 = one of the supercomputer's most-likely scorelines ✓</li>
+      <li>Total goals: Under 2.5 ✓ (primary recommendation; combined xG of 1.48 confirms the low-scoring nature)</li>
+      <li>Market heat read: "Justified heat — value already consumed" ✓ — the favourite delivered but there was no information edge</li>
+      <li>Official lineup read: Quiñones adds a danger man ✓ (scored); "Álvarez on the bench is a choice" ✓ (three-midfield ran smoothly)</li>
+      <li>Misses: Discipline meltdown (3 reds) not anticipated; Rangel wet-weather risk was never tested (South Africa 0 shots on target)</li>
+    </ul>
+
+    <h4>⑤ Forward transfer → reference for both teams' next matches</h4>
+    <table>
+      <tr><th>Team</th><th>Next match</th><th>Information carried forward</th></tr>
+      <tr><td class="mx">🇲🇽 Mexico</td><td>6/18 vs South Korea (Guadalajara)</td><td>① <b>Montes suspended</b> — a first-choice centre-back is missing; who partners Vásquez is now the biggest question; ② Álvarez very likely returns to the starting XI to cope with South Korea's transition speed; ③ a 16-shots-to-4-on-target conversion rate facing a Kim Min-jae-led defence is a genuine vulnerability; ④ For South Korea's reference: South Africa's three-man midfield block slowed Mexico's centre for 9 minutes — but one back-pass error was all it took to collapse; <b>high-press against Mexico has high reward and zero margin for error</b>.</td></tr>
+      <tr><td class="sa">🇿🇦 South Africa</td><td>6/18 vs Czechia</td><td>① <b>Sithole + Zwane both suspended</b> — the midfield enforcer and the No. 1 impact attacking substitute are both absent; ② full-game xG of 0.07: pure defending earns no points, and with a depleted squad the risk of being forced into a more open game is greater; ③ for Czechia, this is a significant boost to their qualification arithmetic (and modestly increases the draw value in today's Korea–Czechia match).</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">Sources: <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — Post-match statistics</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — Match report / 3 red cards</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — Full-time stats</a> · <a href="https://www.fotmob.com/news/10lkoinljn1hg1808rdcu23cff-mexico-2-0-south-africa-three-players-sent-off-world-cup-co-hosts-start-style" style="color:var(--accent)">FotMob</a> · <a href="https://www.sofascore.com/news/mexico-2-0-south-africa-world-cup-opener-report" style="color:var(--accent)">Sofascore</a></div>
+  </section>
+
+  <!-- ===== SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">Mexico are the clear favourites, enjoying <b>home ground + altitude + squad value (3.7×) + form</b> advantages on all four fronts. The vig-removed/de-vigged implied win probability sits at roughly <b>64%</b>. Mexico's numbers during their Gold Cup triumph were outstanding (avg <b>2.41 xG</b> in attack, just <b>0.85 xGA</b> in defence — best in both metrics that tournament), with defensive organisation as their bedrock. South Africa have confirmed an even more conservative <b>5-3-2 back-five block</b> than predicted (see the ✅ Confirmed Lineups module below) plus quick counter-attacks; their biggest weakness is the lack of a reliable finisher beyond Foster. The match will likely be <b>low-scoring</b> (market handicap: Under 2.5), with a narrow Mexico win as the consensus script — <b>both confirmed XIs reinforce this conclusion</b>.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Handicap / win prob. (de-vigged)</div><div class="v" style="color:#34d27b">≈64%</div></div>
+      <div class="key"><div class="k">Squad value ratio</div><div class="v">3.7×</div></div>
+      <div class="key"><div class="k">Mexico xG/match (Gold Cup)</div><div class="v" style="color:#34d27b">2.41</div></div>
+      <div class="key"><div class="k">H2H record</div><div class="v">Mex 0 wins</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Opening 30 minutes</b>: Can South Africa withstand the Azteca atmosphere and altitude? This is the only window for an upset.</li>
+      <li><b>Mexico second half</b>: Their historic weakness is a drop in rhythm after substitutions — an opening for South African counter-attacks.</li>
+      <li><b>Set pieces</b>: In a low-scoring match, the most likely route to goal for both sides.</li>
+      <li><b>New rules impact</b>: 8-second goalkeeper limit, 5-second throw-in countdown, only captains may address the referee — these compress time-wasting tactics and work against a South Africa side looking to park the bus and run down the clock.</li>
+    </ul>
+  </div>
+
+  <!-- ===== KEY MATCH NEWS ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information affecting this fixture, with item-by-item explanation of its tactical or result impact</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match Day · 06-11 <span style="color:var(--mut);font-weight:400">· Opening ceremony + predicted starting line-ups</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Today: 90-minute opening ceremony (Pelé/Maradona tributes, local start 11:30); pre-match predicted line-ups point to <b>Rangel in goal</b> for Mexico, Modiba fit to return on South Africa's left</div>
+      <p style="font-size:13.5px">The Azteca today becomes <b>the first stadium to host three World Cup opening matches</b> (1970/1986/2026). The opening ceremony starts at 11:30 local time and runs roughly 90 minutes, featuring tributes to Pelé and Maradona, with performances by Shakira, J Balvin, Andrea Bocelli, Maná and others; kick-off is at 13:00 local (15:00 ET). Predicted starting XI for matchday: Mexico — <b>Raúl Rangel in goal</b> (confirming the earlier goalkeeping question after Malagón's squad withdrawal), 4-3-3/4-2-3-1 shape, Jiménez as the lone striker; South Africa — <b>fit-again Modiba starts at left back</b>, Foster leads the line.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: ① A 90-minute ceremony + full house + tribute sequences cranks the home atmosphere to maximum — Mexico's opening 15-minute wave will be ferocious, and that is the most dangerous period for South Africa. ② Rangel starting confirms Mexico are fielding a goalkeeper with no World Cup experience in the opening match — coupled with forecast rain, his handling of high balls is South Africa's only realistic set-piece target. ③ Modiba's return completes South Africa's defensive shape on the left, allowing Broos to field his theoretical best defensive block. <span style="color:var(--warn)">[Both starting XIs subject to the official pre-match team sheets]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://uk.sports.yahoo.com/news/estadio-azteca-break-world-cup-131523407.html" style="color:var(--accent)">Yahoo — Azteca third opening match</a> · <a href="https://sport.quotidiano.net/en/calcio/mondiali/cerimonia-apertura-2026-nyq96hsg" style="color:var(--accent)">QN — Ceremony time/programme</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/preview/mexico-vs-south-africa-prediction-team-news-lineups_598850.html" style="color:var(--accent)">Sports Mole — Matchday predicted line-ups</a> · <a href="https://www.si.com/soccer/mexico-predicted-lineup-vs-south-africa-world-cup-6-11-26" style="color:var(--accent)">SI — Mexico predicted XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Mexico · Injuries / Squad <span style="color:var(--mut);font-weight:400">· 06-09 pre-match confirmed</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Goalkeeper Malagón and midfielder Marcel Ruiz ruled out injured; Montes/Álvarez/Chávez/Vega appeared in final warm-up despite knock concerns</div>
+      <p style="font-size:13.5px">According to ESPN pre-match reports, Aguirre's final 26-man squad is without <b>first-choice goalkeeper Luis Ángel Malagón and midfielder Marcel Ruiz</b> through injury. On the positive side, players whose fitness had been in doubt — <b>César Montes, Edson Álvarez, Luis Chávez and Alexis Vega — all featured heavily in the 6/5 warm-up against Serbia</b>, clearing their injury concerns. Guillermo Ochoa, 36, is the only player in either squad to have been selected for both the 2010 and 2026 tournaments.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Malagón's absence removes Mexico's designated first-choice goalkeeper, with Rangel or another listed keeper expected to step in — this is one of the few genuine uncertainties heading into the opening match. However, the defensive and midfield core (Álvarez/Montes/Chávez) passed their fitness tests in a competitive environment, leaving Mexico's key framework intact. Mexico's favourites status is not shaken. <span style="color:var(--warn)">[Starting goalkeeper to be officially confirmed before kick-off]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — Mexico vs South Africa pre-match squad news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Mexico · Form <span style="color:var(--mut);font-weight:400">· 06-04 final warm-up</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mexico beat Serbia 5-1, overturning early deficit to complete pre-tournament preparation</div>
+      <p style="font-size:13.5px">In their final warm-up before the World Cup, Mexico fell behind in the 19th minute (Stanic), before Johan Vázquez levelled in the 34th. Two own goals, a cool finish from Raúl Jiménez, and a stunning long-range strike from Luis Chávez in the 90th minute completed a <b>5-1 comeback win against Serbia</b>. This was Mexico's <b>8th consecutive unbeaten match in 2026</b> to close out preparations (last three: Ghana 2-0, Australia 1-0, Serbia 5-1). 36-year-old Guillermo Ochoa was called up for <b>what would be his sixth World Cup</b>, the only player in either squad to appear on both the 2010 and 2026 rosters.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: A big win in the final pre-tournament run-out provides <b>positive feedback for both morale and attacking output</b>. Jiménez's finishing, Chávez's long-range shooting and set-piece delivery are the most realistic match-winners in what is expected to be a low-scoring fixture. Coming from behind to win also demonstrates the squad can organise a comeback, further reinforcing Mexico's favourites status.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.washingtonpost.com/sports/soccer/2026/06/05/mexico-world-cup-2026-raul-jimenez/bbbe7fe4-60a0-11f1-9c46-d6211372eede_story.html" style="color:var(--accent)">Washington Post — Mexico 5-1 Serbia</a> · <a href="https://www.outlookindia.com/sports/football/mexico-vs-serbia-live-score-international-friendly-2026-updates-highlights-toluca" style="color:var(--accent)">Outlook — Match details</a> · <a href="https://www.aljazeera.com/sports/2026/5/23/mexico-beat-ghana-as-world-cup-co-hosts-lay-down-early-warm-up-marker" style="color:var(--accent)">Al Jazeera — Win vs Ghana</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Mexico · Squad confirmed <span style="color:var(--mut);font-weight:400">· 26-man squad announced</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Aguirre's 26-man squad announced; final warm-up played in <b>4-2-3-1</b>; Edson Álvarez fit and retains captaincy</div>
+      <p style="font-size:13.5px">Mexico have officially named their 26-man World Cup squad. Based on the final warm-up, Aguirre favours a <b>4-2-3-1</b>: Edson Álvarez (captain) and Luis Romo in the double pivot, with Luis Chávez and Erik Lira in reserve; Alvarado and Huerta provide pace on the wings, with 35-year-old Raúl Jiménez as the lone striker. <b>The previously reported Álvarez fitness concerns did not appear in the squad notes — he is fully fit, in the squad, and retains the captain's armband.</b></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The shift from the previously speculated 4-3-3 to a 4-2-3-1 with a double pivot means greater defensive solidity and control — well-suited to the "manage the tempo, suffocate South Africa's counter-attacks" script at home with altitude advantage. Álvarez fit and anchoring the midfield eliminates a key question mark, stabilising Mexico's defensive and midfield structure. Jiménez remains the primary set-piece and penalty taker.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-squad-announced" style="color:var(--accent)">FIFA — Mexico 26-man squad</a> · <a href="https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad" style="color:var(--accent)">Al Jazeera — Squad / key players</a> · <a href="https://www.prizepicks.com/playbook-article/mexico-world-cup-roster-announced-projected-starting-lineup" style="color:var(--accent)">PrizePicks — Predicted 4-2-3-1 XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Key Ruling <span style="color:var(--mut);font-weight:400">· 06-02 CAS decision</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">CAS upholds FIFA fine against Mexico FA but <b>overturns partial-closure order — Azteca opening match to be played at full capacity</b></div>
+      <p style="font-size:13.5px">Over the homophobic chanting issue, the Court of Arbitration for Sport (CAS) upheld FIFA's total fine of CHF 140,000 (~USD 178,000) ahead of the World Cup, but <b>overturned the order to partially close the stands in FIFA matches</b>. This means the 6/11 opening match at the Azteca will be played at full capacity.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: A partial closure would have directly undermined Mexico's most powerful intangible advantages — <b>home atmosphere + altitude</b>. With the sanction overturned, the opening match kicks off to a packed house and Mexico's biggest invisible asset is preserved in full, making the task even harder for a South Africa side relying on a compact defensive structure. (Note: the fine stands, and the homophobic chant has a track record at the Azteca — ongoing disciplinary risk remains.)</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/06/02/ahead-of-world-cup-mexico-soccer-body-loses-appeals-against-fifa-fines-for-fans-anti-gay-chant" style="color:var(--accent)">AP / NY1 — CAS ruling</a> · <a href="https://www.outlookindia.com/sports/football/fifa-world-cup-2026-mexico-loses-appeal-against-anti-gay-chant-fine" style="color:var(--accent)">Outlook — Appeal details</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">South Africa · Final warm-up <span style="color:var(--mut);font-weight:400">· 06-06 Pachuca (behind closed doors)</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">South Africa's final pre-tournament warm-up ends 1-1 with Jamaica; <b>Foster scores but five-match winless run continues</b>; Broos expresses dissatisfaction</div>
+      <p style="font-size:13.5px">On 6/6 at Estadio Hidalgo in Pachuca, behind closed doors, South Africa drew <b>1-1 with Jamaica</b>: Lyle Foster scored in the second half before Dwayne Atkinson equalised. This followed a goalless draw with Nicaragua, extending their <b>pre-tournament winless run to five matches</b>. Broos told media he was not satisfied with the side's performance in Hidalgo and would continue to fine-tune in the coming days.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Foster's goal eases some finishing anxiety, but the trend of "five without a win + muted attack" had not been reversed heading into the opening match. Add the Azteca's atmosphere and altitude, and South Africa's task of nicking a result becomes even harder. The silver lining is that high-altitude training compensated for acclimatisation time lost to the earlier visa difficulties — but whether they can convert limited chances remains Foster's familiar problem: the only reliable finisher in the squad.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.goal.com/en-za/lists/jamaica-1-1-south-africa-confusion-reigns-after-bafana-bafana-s-behind-closed-doors-fifa-world-cup-warm-up/blt5b925bdb40e375d3" style="color:var(--accent)">Goal — Jamaica 1-1 South Africa</a> · <a href="https://www.safa.net/general-news/bafana-continue-with-their-world-cup-preparations-after-jamaica-friendly/" style="color:var(--accent)">SAFA — Post-match preparations</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">South Africa · Injury good news <span style="color:var(--mut);font-weight:400">· 06-09 pre-match</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Left back Modiba recovers from hamstring injury and completes full training session; winger Morena and Nkota not selected</div>
+      <p style="font-size:13.5px">Pre-match reports confirm <b>left back Aubrey Modiba has recovered from his hamstring injury and completed a full training session this week, and is pushing for a starting berth</b>. <b>No South Africa player is on the official World Cup injury list</b> ahead of the opening match. Wingers Thapelo Morena and Mohau Nkota did not make the final squad.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Modiba's return reinforces South Africa's left-side attack and defence — he needs to contribute to Mofokeng/Appollis's wide counter-attacks while also coping with pressure from Mexico's right-side crosses. With the full squad available, Broos can field what is theoretically his strongest compact defensive block for a match where snatching a result is the aim.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://khelnow.com/football/world-football-south-africa-injury-news-ahead-world-cup-opener-vs-mexico-202606" style="color:var(--accent)">Khel Now — South Africa injury update</a> · <a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — Pre-match squad news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Venue · Weather Warning <span style="color:var(--mut);font-weight:400">· 06-09 forecast</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mexico City forecast for 6/11: <b>thunderstorms + heavy rain + gusts up to 50 km/h</b>, possible hail — coinciding with the opening ceremony and opening match</div>
+      <p style="font-size:13.5px">Mexico's meteorological service and multiple media outlets forecast <b>thunderstorms, heavy rainfall and strong winds</b> (gusts up to ~50 km/h) in Mexico City from Thursday afternoon on 6/11, with hail not ruled out. The window overlaps heavily with the 15:00 ET opening ceremony and opening match.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Rain and a wet pitch typically <b>lower passing quality while increasing the value of set pieces and long-range efforts</b> — further reinforcing the match's primary read of "low-scoring + set-piece decider" (supporting the Under 2.5 case). High-speed rain also tests goalkeepers, making Mexico's debutant Rangel and South Africa's Williams important variables in wet conditions. The double difficulty of altitude plus a thunderstorm is harder on the sea-level South Africans.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.tudn.com/mundial-2026/mexico-vs-sudafrica/se-pronostican-lluvias-y-tormenta-dia-de-la-inauguracion-y-partido-mexico-vs-sudafrica-mundial-2026" style="color:var(--accent)">TUDN — Opening day thunderstorm forecast</a> · <a href="https://www.cronista.com/mexico/actualidad-mx/un-gran-muro-de-agua-caera-durante-la-inauguracion-del-mundial-advierten-tormenta-electrica-vientos-de-hasta-50-kmh-y-posible-granizada-el-jueves-11/" style="color:var(--accent)">El Cronista — Storm/wind/hail warning</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match Referee · Officially confirmed <span style="color:var(--mut);font-weight:400">· 06-08 FIFA appointment</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Opening match referee confirmed: Brazilian official <b>Wilton Sampaio</b>; VAR: Colombia's Nicolás Gallo</div>
+      <p style="font-size:13.5px">FIFA has officially appointed <b>Brazilian referee Wilton Sampaio</b> to officiate the 6/11 Azteca opening match. Assistant referees are Brazil's Bruno Pires and Bruno Boschilia; VAR will be Colombia's Nicolás Gallo. This is Sampaio's <b>second time officiating a Mexico match</b> (previously the 2016 Copa América Centenario); he is one of South America's most experienced international referees and officiated at the 2022 World Cup.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: South American referees generally have a higher tolerance for physical contact and tend toward a more "let it flow" approach — theoretically more favourable to the home hosts, who are physically stronger. Combined with the new "8-second keeper, 5-second throw, only captains speak" rules, this further squeezes the space for South Africa's "park the bus + time-wasting" approach. Sampaio is experienced; semi-automated offside will also make marginal calls faster and more accurate.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — Opening match referee appointment</a> · <a href="https://ghanasoccernet.com/world-cup-2026-brazilian-referee-wilton-sampaio-to-officiate-mexico-south-africa-opener" style="color:var(--accent)">GhanaSoccernet — Sampaio to officiate opening match</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups (lineup-watch auto-insert) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130b">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· announced pre-kickoff · dual-source verified</span></h2>
+    <div class="sub">Announced around T-65 (~14:00 ET) · Sources: The South African (confirmed report) + Khel Now / Bolavip live blog, cross-checked</div>
+
+    <h4>🇲🇽 Mexico official XI (4-3-3) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Officially confirmed (two sources agree)</span></h4>
+    <div class="lineup">Rangel; Reyes · Montes(C) · Vásquez · Gallardo; Lira · Fidalgo · Gutiérrez; Alvarado · Jiménez · Quiñones</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: Ochoa (40, still waiting on a record 6th World Cup appearance), <b style="color:#e2e8f0">Edson Álvarez (the captain, surprisingly benched)</b>, Santiago Giménez, 17-year-old Gilberto Mora.</p>
+
+    <h4>🇿🇦 South Africa official XI (5-3-2) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Officially confirmed (two sources agree)</span></h4>
+    <div class="lineup">Williams(C); Mudau · Okon · Mbokazi · Sibisi · Modiba; Mokoena · Sithole · Adams; Rayners · Foster</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: Zwane, Mofokeng, Appollis, Moremi — every predicted wide creator held in reserve.</p>
+
+    <h4>Official vs predicted</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="mx">MEX · Midfield shape</td><td>Álvarez+Romo double pivot</td><td><b>Lira · Fidalgo · Gutiérrez midfield three</b></td><td><b>The biggest shock of the day: captain Edson Álvarez benched</b> — against a low block, Aguirre trades the defensive anchor for ball progression.</td></tr>
+      <tr><td class="mx">MEX · Right-back</td><td>Sánchez</td><td>Reyes</td><td>Carries over the right flank from the 5-1 win over Serbia; more mobility to track South Africa's counter outlet.</td></tr>
+      <tr><td class="mx">MEX · Left wing</td><td>Huerta</td><td>Quiñones</td><td>The Saudi Pro League Golden Boot winner (33 goals) adds a 1-v-1 threat and box presence.</td></tr>
+      <tr><td class="mx">MEX · Goalkeeper</td><td>Rangel</td><td>Rangel</td><td><b>As predicted</b>: Ochoa's record 6th World Cup appearance is on hold; confirms the read after Malagón's injury.</td></tr>
+      <tr><td class="sa">RSA · Formation</td><td>Back four, 4-3-2-1</td><td><b>Back five, 5-3-2 (+Sibisi)</b></td><td>Broos goes even more conservative than any prediction — the goal is clear: protect a 0-0 or nick a point from a set piece.</td></tr>
+      <tr><td class="sa">RSA · Attack</td><td>Appollis · Mofokeng · Moremi</td><td><b>All benched</b>; Rayners partners Foster</td><td>Wide creators sacrificed for a direct two-striker outlet — the counter-attacking route changes completely.</td></tr>
+      <tr><td class="sa">RSA · Midfield</td><td>Mbatha+Mokoena</td><td>Mokoena · Sithole · Adams</td><td>Three workers packed centrally, specifically to shut down Fidalgo's receiving zones.</td></tr>
+    </table>
+
+    <h4>Tactical read</h4>
+    <ul class="watch">
+      <li><b>Quick-take verdict: holds, and is reinforced</b> — Mexico's 4-3-3 siege vs South Africa's 5-3-2 bunker; both sides double down on the low-scoring script, so the Mexico-win + Under 2.5 storyline stands.</li>
+      <li><b>Álvarez on the bench is a choice, not an injury</b>: no need for a double pivot against a bunker; if a counter lands, Aguirre still holds the captain and S. Giménez as in-game cards.</li>
+      <li><b>South Africa shelves all its creators</b>: the script is to drag a 0-0 past the hour mark, then unleash Zwane/Mofokeng — Mexico's most dangerous window shifts from kickoff to after the subs.</li>
+      <li><b>The weather variable stands</b>: at altitude in a likely storm, the Rayners+Foster aerial route is South Africa's only weapon; Rangel's handling of wet high balls remains Mexico's biggest unknown (consistent with the match-day news above).</li>
+    </ul>
+
+    <div style="font-size:12px;margin-top:10px">Sources: <a href="https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/bafana-bafana-starting-11-vs-mexico/" style="color:var(--accent)">The South African — Confirmed: both starting XIs</a> · <a href="https://khelnow.com/football/world-football-mexico-starting-lineup-vs-south-africa-202606" style="color:var(--accent)">Khel Now — Mexico XI + full bench</a> · <a href="https://bolavip.com/en/world-cup/mexico-vs-south-africa-live-2026-world-cup-opening-game" style="color:var(--accent)">Bolavip — live blog (confirmed lineups)</a></div>
+  </section>
+
+  <!-- ===== 1 DATA PANEL ===== -->
+  <!-- ===== Confirmed Lineups & What They Mean (lineup-watch) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130b">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Announced pre-kickoff · Double-source verified</span></h2>
+    <div class="sub">Announced ~T-65 (around 14:00 ET) · Sources: The South African (official confirmation) + Khel Now / Bolavip live page, cross-checked</div>
+
+    <h4>🇲🇽 Mexico official XI (4-3-3) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Officially confirmed (two sources agree)</span></h4>
+    <div class="lineup">Rangel; Reyes · Montes(C) · Vásquez · Gallardo; Lira · Fidalgo · Gutiérrez; Alvarado · Jiménez · Quiñones</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: Ochoa (40, on standby for a record 6th World Cup), <b style="color:#e2e8f0">Edson Álvarez (captain — surprise omission)</b>, Santiago Giménez, 17-year-old Gilberto Mora.</p>
+
+    <h4>🇿🇦 South Africa official XI (5-3-2) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Officially confirmed (two sources agree)</span></h4>
+    <div class="lineup">Williams(C); Mudau · Okon · Mbokazi · Sibisi · Modiba; Mokoena · Sithole · Adams; Rayners · Foster</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: Zwane, Mofokeng, Appollis, Moremi — every predicted wide creator held in reserve.</p>
+
+    <h4>Official vs Predicted</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="mx">MEX · Midfield shape</td><td>Álvarez+Romo double pivot</td><td><b>Lira · Fidalgo · Gutiérrez midfield three</b></td><td><b>Biggest shock of the day: captain Edson Álvarez benched</b> — against a low block, Aguirre trades his defensive anchor for ball progression.</td></tr>
+      <tr><td class="mx">MEX · Right-back</td><td>Sánchez</td><td>Reyes</td><td>Keeps the right flank from the 5-1 win over Serbia; more mobile, tracks South Africa&#39;s counter outlet.</td></tr>
+      <tr><td class="mx">MEX · Left wing</td><td>Huerta</td><td>Quiñones</td><td>Saudi league Golden Boot (33 goals) in form; adds 1-v-1 punch and box finishing.</td></tr>
+      <tr><td class="mx">MEX · Goalkeeper</td><td>Rangel</td><td>Rangel</td><td><b>As predicted</b>: Ochoa&#39;s record 6th World Cup wait continues; confirms the read after Malagón&#39;s injury.</td></tr>
+      <tr><td class="sa">RSA · Formation</td><td>Back four 4-3-2-1</td><td><b>Back five 5-3-2 (+Sibisi)</b></td><td>Broos goes more conservative than every prediction — protect the 0-0 or steal a point from a set piece.</td></tr>
+      <tr><td class="sa">RSA · Attack</td><td>Appollis · Mofokeng · Moremi</td><td><b>All benched</b>; Rayners partners Foster</td><td>Wide spark sacrificed for a long-ball twin-striker platform — the counter route is completely redrawn.</td></tr>
+      <tr><td class="sa">RSA · Midfield</td><td>Mbatha+Mokoena</td><td>Mokoena · Sithole · Adams</td><td>Three workhorses flood the middle, built to deny Fidalgo&#39;s receiving zones.</td></tr>
+      
+    </table>
+
+    <h4>Tactical read</h4>
+    <ul class="watch">
+      <li><b>Headline verdict: maintained and reinforced</b> — Mexico&#39;s 4-3-3 siege vs South Africa&#39;s 5-3-2 bunker; both sides double down on the low-scoring script. Mexico win + Under 2.5 remains the base case.</li>
+      <li><b>Álvarez benched is a choice, not an injury</b>: no double pivot needed against a bunker; if a counter lands, Aguirre holds the captain + S. Giménez as in-game cards.</li>
+      <li><b>South Africa shelves all of its creators</b>: the script is 0-0 deep into the hour, then unleash Zwane/Mofokeng — Mexico&#39;s danger window shifts from kickoff to after the subs.</li>
+      <li><b>The rain variable stands</b>: at altitude in a storm, the Rayners+Foster aerial route is the lone weapon; Rangel&#39;s wet-ball handling remains Mexico&#39;s biggest unknown (consistent with the news module above).</li>
+      
+    </ul>
+
+    <div style="font-size:12px;margin-top:10px">Sources: <a href="https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/bafana-bafana-starting-11-vs-mexico/" style="color:var(--accent)">The South African — Confirmed: both official lineups</a> · <a href="https://khelnow.com/football/world-football-mexico-starting-lineup-vs-south-africa-202606" style="color:var(--accent)">Khel Now — Mexico XI + full bench</a> · <a href="https://bolavip.com/en/world-cup/mexico-vs-south-africa-live-2026-world-cup-opening-game" style="color:var(--accent)">Bolavip — live page (confirmed lineups)</a></div>
+  </section>
+
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Squad value · Expected goals xG · Goals scored/conceded · Ranking · Vig-removed/de-vigged implied probability — all charts use verified data</div>
+
+    <div class="grid2">
+      <div class="chartbox"><h5>Squad value comparison (€m, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>Mexico — Gold Cup 2025 expected goals profile (per match)</h5><canvas id="xgChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Match implied win probability (de-vigged)</h5><canvas id="oddsChart"></canvas></div>
+      <div class="chartbox"><h5>Group A — group-winning implied probability (%)</h5><canvas id="groupChart"></canvas></div>
+    </div>
+
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇲🇽 Mexico</th><th>🇿🇦 South Africa</th></tr>
+      <tr><td>FIFA Ranking</td><td class="mx">15</td><td class="sa">60</td></tr>
+      <tr><td>Full squad value</td><td class="mx">€194.6m</td><td class="sa">€52.7m (final 26-man squad ~€45.3m)</td></tr>
+      <tr><td>Expected goals xG (recent competitive)</td><td class="mx">2.41 / match (Gold Cup, tournament best)</td><td class="sa">Limited data (low scoring across 10 qualifying matches)</td></tr>
+      <tr><td>Expected goals against xGA</td><td class="mx">0.85 / match (Gold Cup, tournament best)</td><td class="sa">Defensively solid; goals conceded mostly from individual errors</td></tr>
+      <tr><td>Recent form</td><td class="mx">5 unbeaten, only 1 goal conceded; March: 0-0 Portugal, 1-1 Belgium</td><td class="sa">Qualifying: 5W 3D 2L over 10 matches (edged Nigeria); March: 1-1, 1-2 Panama</td></tr>
+      <tr><td>Match odds (bet365 06-08)</td><td class="mx">1.48</td><td class="sa">Draw 4.33 / South Africa win 6.50</td></tr>
+      <tr><td>Implied win prob. (de-vigged)</td><td class="mx">≈63.7% <span class="tag">Risen to 66-70%, see 🔥 Market Heat</span></td><td class="sa">Draw 21.8% / South Africa 14.5%</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2" class="mx">2 meetings, Mexico 0 wins (incl. 2010 World Cup opening match 1-1)</td></tr>
+    </table>
+    <div class="note">📌 Scoring outlook: Mexico's attack lacks a second reliable finisher beyond Jiménez + South Africa "create chances but waste them" — both profiles point to a <b>low-scoring result</b>, consistent with the market's Under 2.5 lean.</div>
+  </section>
+
+  <!-- ===== 1B BETTING MARKET HEAT ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· New Module · Celebrity picks / Odds movement / Money flow / Sentiment</span></h2>
+    <div class="sub">How much of the price is "sentiment premium"? Four signals + a composite Market Heat Index — all real data with sources</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Significantly overheated (Mexico side)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Sentiment is almost one-sided + odds have been continuously compressed toward Mexico (1.48→1.42). But the fundamentals also support a Mexico win — this is "hot for good reason; the value has been eaten up", not irrational mania.</div>
+    </div>
+
+    <h4>① Celebrity / Expert Pick Aggregation (14 sources · Pick breakdown: Mexico 9 · Under 3 · South Africa +1.5 AH 1 · South Africa upset 1)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th><th>Direction</th></tr>
+      <tr><td>David Faitelson</td><td>TUDN pundit (one of Mexico's most influential sports commentators)</td><td>"In normal circumstances Mexico should win clearly," but warns this is "Mexico vs themselves" — emotional control is the key</td><td><span class="pill pmx">Mexico win · with caveat</span></td></tr>
+      <tr><td>Alex Blowers</td><td>VSiN (Las Vegas betting network)</td><td>Mexico Win to Zero 2.00: "South Africa's attacking firepower can't support an upset"</td><td><span class="pill pmx">Mexico clean sheet win</span></td></tr>
+      <tr><td>Martin Green</td><td>SportsLine certified profitable expert</td><td>Leads with Under 2.5: "Mexico have gone under 2.5 in 6 of their last 7 matches"</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">Under</span></td></tr>
+      <tr><td>SportsGambler expert panel</td><td>Betting analysis site</td><td>Most aggressive: Mexico <b>Asian handicap -1.25</b>, projecting a 2+ goal win; correct score 2-0 (5.40)</td><td><span class="pill pmx">Mexico big win</span></td></tr>
+      <tr><td>OddsShark</td><td>North American odds media</td><td>Mexico to score at least 2 goals</td><td><span class="pill pmx">Mexico attack strong</span></td></tr>
+      <tr><td>LiveScore / Squawka</td><td>UK football data and scores media</td><td>Hosts to take the opening match; model repeatedly returns 1-0 / 2-0</td><td><span class="pill pmx">Mexico win</span></td></tr>
+      <tr><td>Bleacher Report</td><td>Full group-stage fixture-by-fixture predictions</td><td>Mexico win</td><td><span class="pill pmx">Mexico win</span></td></tr>
+      <tr><td>SportsCasting supercomputer</td><td>Model</td><td>Mexico win probability 67.7%, the most one-sided fixture in Group A; most likely score 1-0</td><td><span class="pill pmx">Mexico win</span></td></tr>
+      <tr><td>Nate Silver model</td><td>100,000-simulation full-tournament model</td><td>Mexico topping Group A as base case (Elo 1800 vs 1526; qualification probability 95% vs 35%)</td><td><span class="pill pmx">Mexico dominant</span></td></tr>
+      <tr><td>RotoWire · Courtin</td><td>Tactical analyst</td><td>"South Africa can cause trouble for about 30 minutes, then quality and environment take over"</td><td><span class="pill pmx">Mexico win</span></td></tr>
+      <tr><td>AI panel · Claude</td><td>NYSportsDay three-model experiment</td><td>Mexico 1.44 is "defensible, not overpriced"; 10-model ensemble 100% consensus Mexico win (xG 1.80 vs 0.50)</td><td><span class="pill pmx">Mexico win</span></td></tr>
+      <tr><td>AI panel · ChatGPT</td><td>Same</td><td>Takes the safety cushion: <b>South Africa +1.5 (1.57)</b> — "Mexico will win, but not by two goals"; cites 2010 opening 1-1</td><td><span class="pill psa">South Africa AH</span></td></tr>
+      <tr><td>AI panel · Gemini</td><td>Same</td><td>Ignores the moneyline; goes straight to <b>Under 2.5 (1.71)</b>: structurally conservative opening match</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">Under</span></td></tr>
+      <tr><td>Steven Pienaar et al.</td><td>South Africa legend (former Everton key player) + South Africa pundit group</td><td>Publicly predicting a South Africa "Aztecazo" upset — the only contrarian celebrity voice (with home-nation bias)</td><td><span class="pill psa">South Africa upset</span></td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal</b>: Of 14 sources, not one neutral party backs South Africa to win outright — the win/loss consensus has reached an absolute extreme. The only meaningful disagreement is over <b>margin</b>: SportsGambler sees a 2+ goal win, while ChatGPT and the Asian handicap market (Mexico -1.5 only 2.25~+130, implying 43%) say "Mexico win but not by much." In other words: the market is overheated on "Mexico win", while cautiously priced on "Mexico big win".</div>
+
+    <h4 style="margin-top:20px">② Odds Movement Tracker (money flowing toward Mexico)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Book / Market</th><th>Mexico win</th><th>Implied prob.</th><th>Read</th></tr>
+      <tr><td>06-08 early</td><td>bet365</td><td class="mx">1.48</td><td>≈63.7% (de-vigged)</td><td>Original report snapshot</td></tr>
+      <tr><td>06-08</td><td>DraftKings / Lucky Rebel</td><td class="mx">1.44</td><td>≈66%</td><td>Compression begins</td></tr>
+      <tr><td>06-09/10</td><td>DraftKings current</td><td class="mx">1.42</td><td>≈68-70%</td><td>Pre-match money continues into Mexico</td></tr>
+      <tr><td>06-10</td><td>Prediction market aggregate (VWAP)</td><td colspan="2" class="mx">69.0¢ · 30-day change +4.5¢</td><td>Momentum confirmed: single-sided warming</td></tr>
+    </table>
+    <div class="note">📌 <b>Consistent one-sided movement</b> (1.48 → -240, approx. +5pp; prediction markets: 30-day Mexico +4.5¢, South Africa -3.6¢) shows public and large-stake money moving in the same direction; no "smart money going the other way". The value window for backing Mexico has effectively closed; the draw (4.20/4.40) and South Africa (6.50/8.00) prices have widened passively simply because nobody wants them.</div>
+
+    <h4 style="margin-top:20px">③ Prediction Market Money Flow (Kalshi / Polymarket / Gemini — three platforms, DefiRate 30-min aggregation)</h4>
+    <table>
+      <tr><th>Result</th><th>Aggregate (VWAP)</th><th>Kalshi</th><th>Polymarket</th><th>Gemini</th><th>Volume</th><th>30-day momentum</th></tr>
+      <tr><td class="mx">Mexico win</td><td class="mx"><b>69.0%</b></td><td>69.5¢ ($216.4K)</td><td>68.5¢ ($333.0K)</td><td>69.5¢</td><td><b>$549.3K</b></td><td style="color:#4ade80">↑ +4.5</td></tr>
+      <tr><td>Draw</td><td>20.5%</td><td>20.5¢ ($10.8K)</td><td>20.5¢ ($28.9K)</td><td>20.5¢</td><td>$39.7K</td><td>↓ -0.3</td></tr>
+      <tr><td class="sa">South Africa win</td><td class="sa">10.5%</td><td>10.5¢ ($53.9K)</td><td>10.5¢ ($127.3K)</td><td>10.5¢</td><td>$181.2K</td><td style="color:#f87171">↓ -3.6</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>Consensus strength</b>: Cross-platform spread just 1¢, all arbitrage scans return "not actionable" — the global book (Polymarket) and the US book (Kalshi) show <b>zero divergence</b> on this fixture; pricing is highly efficient.</li>
+      <li><b>Volume structure anomaly</b>: South Africa contract volume of $181K is 4.6× the draw's $39.7K — classic <b>lottery-ticket psychology</b> (small stakes on a dream). But the price has still fallen 3.6¢, meaning sell pressure is stronger. The draw is the "boring option" ignored by both camps.</li>
+      <li><b>Derivative markets</b>: Kalshi gives Mexico a 57% chance of topping Group A and 84% of reaching the round of 32; total prediction market volume for the tournament had already passed <b>$2 billion</b> before kick-off (the largest sports prediction market event in history), and volume for this match will grow further before the whistle.</li>
+    </ul>
+
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Multi-source win probability: Mexico win (%) — consensus range 64-70</h5><canvas id="mktChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">④ Social media / public sentiment</h4>
+        <ul class="cl">
+          <li>Mexico City enters a "semi-shutdown" for the opening match: schools closed, businesses working remotely, 87,000 full house — a national emotional event.</li>
+          <li>Legends exhibition match result (Mexico 5-2 South Africa) went viral on TUDN, further cementing the "certain win" narrative.</li>
+          <li>Contrarian voices come almost exclusively from the South African media ecosystem (SuperSport/iDiski "Aztecazo" conversation).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: This is a textbook "host-nation opening match overheating" scenario — one-sided celebrity picks, mass public emotion, and single-directional odds compression all resonating together. For analytical purposes: <b>64% is not the ceiling but the floor</b>; market consensus has risen to 66-70%. If you are looking for under-priced angles, the draw and "South Africa 0-1 narrow defeat" ranges are the blind spots the market's emotions have left behind. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://vsin.com/soccer/mexico-vs-south-africa-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Blowers pick / DK odds</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-africa-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Green</a> · <a href="https://www.infobae.com/mexico/deportes/2026/06/07/david-faitelson-brinda-su-pronostico-para-la-inauguracion-del-mundial-2026-entre-mexico-y-sudafrica/">Infobae — Faitelson</a> · <a href="https://oem.com.mx/esto/mundial-2026/leyendas-de-sudafrica-predicen-una-victoria-sobre-mexico-para-hacer-un-aztecazo-en-el-mundial-2026-30405431">ESTO — Pienaar / South Africa legends</a> · <a href="https://www.sportscasting.com/news/supercomputer-mexico-vs-south-africa-betting-picks/">SportsCasting supercomputer</a> · <a href="https://bleacherreport.com/articles/25435511-world-cup-2026-match-predictions-all-group-fixtures">B/R fixture-by-fixture predictions</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/mexico/">DefiRate — Kalshi/Polymarket</a> · <a href="https://www.kucoin.com/news/flash/polymarket-and-kalshi-see-2-billion-in-fifa-world-cup-bets-before-kickoff">$2B prediction market volume</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760415">ESPN Odds</a> · <a href="https://www.oddschecker.com/us/soccer/world-cup/mexico-v-south-africa">oddschecker</a> · <a href="https://www.sportsgambler.com/betting-tips/football/mexico-vs-south-africa-prediction-lineups-odds-2026-06-11/">SportsGambler</a> · <a href="https://www.oddsshark.com/soccer/world-cup/mexico-south-africa-odds-picks-2026">OddsShark</a> · <a href="https://www.livescore.com/en/news/football/world-cup/predictions/mexico-vs-south-africa-predictions-co-hosts-to-claim-win-in-world-cup-opener/">LiveScore</a> · <a href="https://www.nysportsday.com/2026/06/08/chatgpt-claude-gemini-mexico-vs-south-africa-predictions-world-cup-2026/">NYSportsDay — AI three-model panel</a> · <a href="https://www.natesilver.net/p/world-cup-2026-odds-predictions">Nate Silver</a></div>
+  </section>
+
+  <!-- ===== 2 PLAYERS & FORM ===== -->
+  <section>
+    <h2><span class="n">2</span> Starting Line-ups &amp; Recent Form <span class="tag">predicted version — see the ✅ official module above</span></h2>
+    <div class="sub">Predicted XI (analytical sources, not official) · Squad value and form — key players individually</div>
+
+    <h4>🇲🇽 Mexico Predicted XI (4-2-3-1, Aguirre's final warm-up shape)</h4>
+    <div class="lineup">Rangel; Sánchez · Montes · Vásquez · Gallardo; Álvarez · Romo; Alvarado · Fidalgo · Huerta; Jiménez</div>
+    <table>
+      <tr><th>Player</th><th>Position</th><th>Club</th><th>Value</th><th>Recent / Notes</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>Striker</td><td>Fulham</td><td>€5.0m</td><td>Most reliable finisher in the squad; 4 goals at the Nations League final stage; set-piece and penalty taker</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>Winger</td><td>Al-Qadsiah</td><td>€12.0m</td><td>High-scoring Saudi season (outscored Toney/Ronaldo); man of the match vs Belgium</td></tr>
+      <tr><td class="mx">Álvaro Fidalgo</td><td>Midfielder</td><td>América</td><td>€9.0m</td><td>Naturalised midfielder; excellent tempo control in the March window; likely starter</td></tr>
+      <tr><td class="mx">Edson Álvarez</td><td>DM / Captain</td><td>Fenerbahçe</td><td>€25.0m</td><td>Highest squad value; <b>fit and retaining the captaincy</b>, anchor of the 4-2-3-1 double pivot</td></tr>
+      <tr><td class="mx">César Montes / J. Vásquez</td><td>Centre-back</td><td>Lokomotiv / Genoa</td><td>€4.5m / €14m</td><td>European experience; settled partnership</td></tr>
+      <tr><td class="mx">Jesús Gallardo</td><td>Left back</td><td>—</td><td>—</td><td>One of the squad's most experienced players (100+ caps); responsible for left-side delivery</td></tr>
+      <tr><td class="mx">Raúl Rangel</td><td>Goalkeeper</td><td>Guadalajara</td><td>—</td><td><b>Malagón ruled out injured</b>; Rangel moves to first-choice contender (strong in 2 March warm-ups); subject to official pre-match squad sheet</td></tr>
+    </table>
+
+    <h4>🇿🇦 South Africa Predicted XI (4-3-2-1)</h4>
+    <div class="lineup">Williams; Mudau · Okon · Mbokazi · Modiba; Mbatha · Mokoena; Appollis · Mofokeng · Moremi; Foster</div>
+    <table>
+      <tr><th>Player</th><th>Position</th><th>Club</th><th>Value</th><th>Recent / Notes</th></tr>
+      <tr><td class="sa">Lyle Foster</td><td>Striker</td><td>Burnley</td><td>€10–12m</td><td>Highest value in the squad; 10 goals in 24 caps; inconsistent form is the team's Achilles heel</td></tr>
+      <tr><td class="sa">Oswin Appollis</td><td>Winger</td><td>Orlando Pirates</td><td>€2m</td><td>In-form; most assists in qualifying (4, team-leading); 8 international goals</td></tr>
+      <tr><td class="sa">Relebohile Mofokeng</td><td>Winger</td><td>Orlando Pirates</td><td>€2m</td><td>21 years old, most expensive African U23 player (R68.6m); direct in 1v1 situations</td></tr>
+      <tr><td class="sa">Teboho Mokoena</td><td>Midfield hub</td><td>Mamelodi Sundowns</td><td>—</td><td>Links attack and defence; distributor and set-piece taker</td></tr>
+      <tr><td class="sa">Mbekezeli Mbokazi</td><td>Centre-back</td><td>Orlando Pirates</td><td>—</td><td>Defensive pillar + world-class long-range shooting (screamer vs Panama from distance)</td></tr>
+      <tr><td class="sa">Ronwen Williams</td><td>Goalkeeper</td><td>Mamelodi Sundowns</td><td>—</td><td>Captain, 60+ caps; legendary AFCON 2023 penalty shoot-out (saved 4 in a row)</td></tr>
+    </table>
+    <div class="note">Note: "—" for squad value means the exact figure was not retrieved this cycle; the production agent auto-populates all 26-player values, club season appearances/goals/assists/ratings from Transfermarkt/FotMob.</div>
+  </section>
+
+  <!-- ===== 3 SQUAD ANALYSIS ===== -->
+  <section>
+    <h2><span class="n">3</span> Squad Depth Analysis</h2>
+    <div class="sub">Depth · Age profile · Experience · Key absences</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 Mexico</div>
+        <div class="role">Veterans + next generation blend · Aguirre's third stint in charge</div>
+        <ul class="cl">
+          <li><b>Experience</b>: Ochoa set to appear at a sixth World Cup (matching Messi/Ronaldo records); Gallardo with 100+ caps.</li>
+          <li><b>Depth</b>: Attack covered by Jiménez / Quiñones / Alvarado / Lozano / S.Giménez — multi-option, comprehensively outranking the rest of the group in value and depth.</li>
+          <li><b>Concerns</b>: First-choice goalkeeper Malagón out injured, replaced by Rangel or others; right back injury (Huescas); the first-choice XI had limited time together (12 starters absent in March). Álvarez/Montes/Chávez fitness cleared after final warm-up appearance.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 South Africa</div>
+        <div class="role">Predominantly domestic PSL players + limited Europe-based contingent · Broos's farewell season</div>
+        <ul class="cl">
+          <li><b>European core</b>: Foster (Premier League, Burnley) is the only player from a top-flight European league as a regular starter; most others are from Orlando Pirates / Sundowns.</li>
+          <li><b>Young attack</b>: Mofokeng (21) and Appollis provide pace and directness as counter-attack outlets.</li>
+          <li><b>Weakness</b>: No reliable finisher beyond Foster; left-back rotation; total squad value is only 1/4 of Mexico's — a direct attacking duel would be one-sided.</li>
+          <li><b>Side note</b>: Visa complications delayed the squad's travel to Mexico, causing some disruption to preparation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4 TACTICS ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Matchup</h2>
+    <div class="sub">Formation · Attacking and defensive structure · Key individual duels</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Overall strength profile (analyst composite assessment, 0–10)</h5><canvas id="radarChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">Key Matchup Threads</h4>
+        <ul class="cl">
+          <li><b>Mexico possession vs South Africa low block</b>: Mexico build from the back, breaking through Quiñones/Alvarado on the wings; South Africa's confirmed <b>5-3-2</b> (more conservative than predicted) drops deep with Mokoena sweeping centrally.</li>
+          <li><b>South Africa counter vs Mexico transition</b>: the confirmed XI switches to a Rayners+Foster long-ball double pivot hunting second balls, with Appollis/Mofokeng held back as 60th-minute cards; Mexico's defensive recovery the moment they lose the ball is critical.</li>
+          <li><b>Set pieces</b>: Both sides use set pieces to break down compact defences — in a low-scoring match this is the most realistic scoring method.</li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>Expand: Tactical detail for both sides</summary>
+      <div class="body">
+        <h4>🇲🇽 Mexico 4-3-3</h4>
+        <p style="font-size:14px">Aguirre's system emphasises <b>build-up from deep + rapid ball circulation + defensive discipline</b>; Edson Álvarez (when fit) as the single-pivot anchor, controlling tempo and protecting the back line. Home ground + altitude has historically been an advantage over European and Asian opponents. Weakness: pressing at high intensity can produce turnovers in build-up; second-half rhythm drops after substitutions.</p>
+        <h4>🇿🇦 South Africa 4-3-2-1 <span class="tag">pre-match projection; confirmed shape is 5-3-2 — see ✅ module above</span></h4>
+        <p style="font-size:14px">Broos emphasises <b>unified identity, compact defensive block + quick counter-attacks + set pieces</b>; Williams is the last line of defence; Mbokazi's long-range shooting is an unexpected weapon. The problem is finishing efficiency — multiple clear-cut chances missed against Panama in March.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===== 5 HEAD COACHES ===== -->
+  <section>
+    <h2><span class="n">5</span> Head Coach Style</h2>
+    <div class="sub">Coaching philosophy · Tactical tendencies · In-match management</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">Javier Aguirre</div>
+        <div class="role">Mexico · Third stint in charge (veteran manager)</div>
+        <ul class="cl">
+          <li>Tactically <b>flexible</b>, making it difficult for opponents to prepare (has used 5-3-2/3-5-2 at club level; settled on 4-3-3 for the national side).</li>
+          <li>Core principle: balance over flair; build-up from deep; adapts shape fluidly to the scoreline and opponent.</li>
+          <li>Track record: won the 2025 Nations League and Gold Cup since taking over, rebuilding the squad's identity.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">Hugo Broos</div>
+        <div class="role">South Africa · 74-year-old Belgian veteran · Farewell match</div>
+        <ul class="cl">
+          <li>Famously said: "I like attacking football, I won't sit 60 metres from goal and wait to counter" — but the foundation is still <b>solid defence + efficient counter-attacks</b>.</li>
+          <li>Emphasises <b>consistent identity and style</b>; team above individual (willing to drop big names).</li>
+          <li>CV: Won AFCON 2017 with Cameroon; South Africa finished fourth at AFCON 2023.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6 REFEREE ===== -->
+  <section>
+    <h2><span class="n">6</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="sub">Wilton Sampaio: quantified strictness · tendencies toward both sides · major-tournament officiating patterns — all data sourced</div>
+    <div class="note">✅ <b>Officially confirmed (06-08)</b>: Opening match referee is <b>Brazilian official Wilton Sampaio (44)</b>, assistants Bruno Pires and Bruno Boschilia (both Brazil), VAR is Colombia's Nicolás Gallo. Officiated 4 matches at the 2022 World Cup (including the England–France quarter-final).</div>
+
+    <h4>Officiating Strictness (data profile)</h4>
+    <div class="grid3">
+      <div class="stat"><div class="k">Yellow cards / match (career 311-341 matches)</div><div class="v" style="color:var(--warn)">≈5.0</div><div class="k">Current season 33 matches even higher: 5.27 + 8 red cards</div></div>
+      <div class="stat"><div class="k">Penalty award rate</div><div class="v" style="color:var(--warn)">0.22-0.24/match</div><div class="k">Penalty in approx. 19-24% of matches</div></div>
+      <div class="stat"><div class="k">Fouls called / match</div><div class="v" style="color:var(--warn)">≈27.9</div><div class="k">Whistle-heavy · red card in ~16% of matches</div></div>
+    </div>
+    <table>
+      <tr><th>Dimension</th><th>Data / Facts</th><th>Implication for this match</th></tr>
+      <tr><td>Domestic pattern (Série A)</td><td>5.3 yellows/match, 27.9 fouls/match, 0.29 penalties/match — <b>one of the strictest card-givers in the Brazilian league</b></td><td>If this pattern applies: South Africa's "tactical foul to kill tempo" approach will be very costly, and accumulating yellows will also carry over into the next two group matches</td></tr>
+      <tr><td>Major tournament pattern (2022 World Cup)</td><td>4 matches, only <b>3.33 yellows/match</b> — noticeably looser; in the England–France match he <b>did not award the penalty for Kane being brought down in the first half</b> (VAR upheld), publicly criticised as a major error by Maguire/Bellingham afterwards</td><td>At major tournaments he tends to "let the match flow, allow physical contact" — higher tolerance for tussles in the box and jostling at set pieces; this helps the defensive side (South Africa) survive set-piece bombardment</td></tr>
+      <tr><td>History vs Mexico</td><td>Officiated Mexico once: 2016 Copa América Centenario <b>Mexico 2-0 Jamaica</b> (this match would be the second); has never officiated South Africa</td><td>Sample size too small, <b>no verifiable team bias</b> — any tendency should be assessed on style, not results</td></tr>
+      <tr><td>Style tendency (overall)</td><td>South American referee + 87,000 full home crowd. Academic literature provides extensive evidence of home-ground officiating bias (added time, card decisions, penalties) as a systematic small shift rather than a personal issue</td><td>Marginal calls (50/50 balls) more likely to go to the hosts; combined with his 19-24% penalty rate and Mexico's volume of attacks in the box, <b>Mexico's probability of winning a penalty is doubly elevated</b> (Jiménez primary taker)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Two-sided reminder</b>: He is not all bad news for South Africa — if he uses the World Cup "allow contact" mode, South Africa's defensive wrestling at set pieces and high-intensity pressing are less likely to be punished. The real tail risk is him <b>switching back to the Série A strict-carding mode</b>, in which case a South Africa side that survives by fouling could be carrying 2-3 yellows within 20 minutes, forcing an even deeper shell earlier. Watch how he handles the very first tactical foul in the opening 15 minutes — that is the day's calibration signal.</div>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://kickoffscore.com/referees/wilton-pereira-sampaio">KickoffScore — Career/season officiating data</a> · <a href="https://www.statshub.com/referee/pereira-sampaio-wilton/243701">StatsHub — 5.08 yellows/match</a> · <a href="https://corner-stats.com/wilton-pereira-sampaio/brazil/referee/1624">Corner-Stats — Penalties/red cards</a> · <a href="https://www.nationalworld.com/sport/football/wilton-sampaio-who-england-vs-france-referee-french-world-cup-games-3949736">NationalWorld — 2022 World Cup officiating</a> · <a href="http://law5-theref.blogspot.com/2022/12/wilton-sampaio-in-quarterfinal-england.html">Law5 — England–France decision review</a> · <a href="https://www.gettyimages.com/detail/news-photo/referee-wilton-sampaio-in-actionduring-a-group-c-match-news-photo/539157100">2016 Copa América Centenario Mexico–Jamaica</a></div>
+    <h4>Tournament-Wide New Rules (impact on this match)</h4>
+    <ul class="cl">
+      <li><b>8-second goalkeeper limit</b>: Exceeding it concedes an indirect free kick in the box — limits South Africa goalkeeper's time-wasting.</li>
+      <li><b>5-second countdown for throw-ins / goal kicks</b>: Violation hands possession to the opponent — equally unhelpful for "sit deep and kill time".</li>
+      <li><b>Only the captain may address the referee</b>: Other players surrounding the referee receive an immediate yellow card — emotional management becomes more important.</li>
+      <li><b>Upgraded semi-automated offside</b>: Ball chip + player 3D modelling; marginal offside calls faster and more accurate.</li>
+      <li><b>Tighter substitution / injury-time rules</b>: Substituted player must leave the field within 10 seconds; injured player returning must remain off for at least 1 minute.</li>
+    </ul>
+    <div class="note">Overall impact: the new rules collectively <b>compress time-wasting and reward sustained attacking play</b>, relatively benefiting a squad-value- and possession-rich Mexico that wants to control the tempo; South Africa's ability to "park the bus and grind out a result" is further constrained by the rulebook.</div>
+  </section>
+
+  <!-- ===== 7 JOURNALIST / ANALYST INSIGHTS ===== -->
+  <section>
+    <h2><span class="n">7</span> Reporter / Analyst Insights</h2>
+    <div class="sub">Distinguishing first-hand facts from analytical opinions; source tier noted</div>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· Tier B — Tactical analysis — web-scraped</small></div>"Mexico will win the group without drama. Home + altitude are advantages the odds can't fully price in; South Africa can cause trouble for about 30 minutes, then quality and the environment take over."</div>
+    <div class="insight"><div class="who">Tom Marshall · ESPN <small>· Tier A — Pitch-side correspondent (based in Mexico City)</small></div>Primary source for verifying Mexico starting XI, the goalkeeper question (Rangel/Malagón), and Álvarez fitness as hard first-hand intelligence.</div>
+    <div class="insight"><div class="who">iDiski Times / SuperSport <small>· Tier A/C — South Africa beat media</small></div>Primary source for South Africa's XI, Foster/Appollis form, and the visa saga context.</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· Official — Wenger-led post-match analysis</small></div>Authoritative tactical post-match review; used as input for next-fixture prediction.</div>
+  </section>
+
+  <!-- ===== 8 OVERALL ASSESSMENT ===== -->
+  <section>
+    <h2><span class="n">8</span> Overall Assessment &amp; Verification Checklist</h2>
+    <ul class="cl">
+      <li><b>Final verdict (updated post-announcement): ✅ maintained and reinforced</b> — both confirmed XIs (Mexico's 4-3-3 possession midfield, South Africa's 5-3-2 bus) double down on the "low-scoring + narrow Mexico win" script; the one new variable is the transition-defence risk of Álvarez starting on the bench.</li>
+      <li><b>Result tendency</b>: Mexico win, cautious on margin (1-0 / 2-0); South Africa's upset window shifts from "early in the match" to "after the 60th-minute Zwane/Mofokeng substitutions".</li>
+      <li><b>Key man</b>: Jiménez (Mexico — pivot and set-piece taker); Williams (South Africa — goalkeeper capable of single-handedly changing the outcome).</li>
+      <li><b>X-factor</b>: Altitude impact on South Africa's fitness (sea-level + European club players); whether Mexico's second-half intensity drops again.</li>
+      <li><b>Market</b>: Mexico win + Under 2.5 is the consensus script; South Africa leaving with honour intact (narrow defeat or draw) counts as a success for them.</li>
+    </ul>
+    <div class="flag">
+      ⚠ <b>Items to verify (cross-check list)</b>:<br>
+      ① Goalkeeper — <b style="color:#4ade80">✅ settled: Rangel officially starts</b>, Ochoa on the bench (his record sixth World Cup appearance on hold).<br>
+      ② <b style="color:#4ade80">✅ Official lineups announced and dual-source verified (see ✅ module)</b>: Mexico 4-3-3 (not the predicted 4-2-3-1; Álvarez benched), South Africa 5-3-2 (not the predicted 4-3-2-1).<br>
+      ③ Match referee officially confirmed: <b>Wilton Sampaio (Brazil)</b>.<br>
+      ④ South Africa xG data is limited (outside CONCACAF data infrastructure); production version should connect FBref/Understat international fixture data.
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — Group A tactics/line-ups/odds (web-scraped)</a><br>
+      • <a href="https://footystats.org/international/concacaf-gold-cup/xg">FootyStats — Gold Cup xG (Mexico 2.41/0.85)</a> · <a href="https://www.transfermarkt.us/mexico/startseite/verein/6303">Transfermarkt — Mexico €194.6m</a> · <a href="https://www.transfermarkt.us/south-africa/kader/verein/3806">Transfermarkt — South Africa €52.7m</a><br>
+      • <a href="https://www.transfermarkt.us/lyle-foster/profil/spieler/467623">Transfermarkt — Lyle Foster</a> · <a href="https://www.kickoff.com/psl/orlando-pirates/where-appollis-and-mofokeng-rank-in-highest-valued-players-in-psl">KickOff — Appollis/Mofokeng values</a><br>
+      • <a href="https://www.theifab.com/news/the-ifab-introduces-further-measures-to-improve-match-flow-and-player-behaviour/">IFAB — 2026 officiating rule changes</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">2026 World Cup officials</a><br>
+      • <a href="https://www.mykhel.com/cricket/mexico-fifa-world-cup-2026-tactics-how-javier-aguirre-s-4-3-3-shapes-el-tri-s-identity-430709.html">Aguirre tactics</a> · <a href="https://www.news24.com/sport/soccer/bafanabafana/no-favouritism-attacking-football-with-results-hugo-broos-outlines-bafana-bafana-philosophy-20210511">Broos coaching philosophy</a> · <a href="https://www.aljazeera.com/sports/2026/5/31/south-africas-world-cup-2026-departure-delayed-over-mexican-visa-debacle">South Africa visa saga</a>
+    </div>
+  </section>
+
+  <div class="foot">"Source registry → data collection (online search + web scraping) → analytical output" — full sample · Data as of 2026-06-11 · Charts use verified data; radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',SA='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['Mexico','South Africa'],datasets:[{data:[194.6,52.7],backgroundColor:[MX,SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('xgChart'),{type:'bar',
+ data:{labels:['xG / match (att.)','xGA / match (def.)'],datasets:[{data:[2.41,0.85],backgroundColor:['#34d27b','#38bdf8'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:3,title:{display:true,text:'Gold Cup 2025 · Higher = better attack / leaky defence'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('oddsChart'),{type:'doughnut',
+ data:{labels:['Mexico win','Draw','South Africa win'],datasets:[{data:[63.7,21.8,14.5],backgroundColor:[MX,DR,SA],borderColor:'#161d2e',borderWidth:2}]},
+ options:{plugins:{legend:{position:'bottom'}},cutout:'58%'}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Mexico','Czechia','South Korea','South Africa'],datasets:[{data:[52,24,22,8],backgroundColor:[MX,'#7dd3fc','#a78bfa',SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Group-win implied probability %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('mktChart'),{type:'bar',
+ data:{labels:['bet365 de-vigged (06-08)','Supercomputer model','Polymarket (06-10)','Kalshi/Gemini (06-10)','DraftKings (06-10)'],datasets:[{data:[63.7,67.7,68.5,69.5,69.5],backgroundColor:['#64748b','#7dd3fc','#a78bfa','#c4b5fd',MX],borderRadius:6}]},
+ options:{...noLeg,indexAxis:'y',scales:{x:{grid:{color:grid},min:55,max:75,title:{display:true,text:'Mexico win probability % · Further right = hotter market'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Set pieces','Squad depth','Match environment'],
+  datasets:[
+   {label:'Mexico',data:[8.5,6.5,7.5,7,9,9],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'South Africa',data:[7,5,6.5,7,4,4],borderColor:SA,backgroundColor:SA+'33',pointBackgroundColor:SA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

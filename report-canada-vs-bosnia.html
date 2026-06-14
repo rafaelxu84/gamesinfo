@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 加拿大 vs 波黑 · 2026世界杯 B组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-canada-vs-bosnia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-canada-vs-bosnia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-canada-vs-bosnia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-canada-vs-bosnia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-canada-vs-bosnia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ca:#d52b1e;--ba:#002f6c;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f18,#002f6c);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1f1513,#152138);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ca{color:#f08a82;font-weight:600}td.ba{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-canada-vs-bosnia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-canada-vs-bosnia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-canada-vs-bosnia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · B组首轮 · 加拿大世界杯主场首秀</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0d3b66,#1d4a2a);margin-left:6px">🏁 已完赛 1-1</span>
+  <h1>加拿大 vs 波黑</h1>
+  <div class="meta">2026年6月12日 · 多伦多 BMO Field（满座） · 15:00 ET · B组（同组：瑞士、卡塔尔）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇦 加拿大</div><div class="rk">FIFA #30 · 身价 €203.05m · 东道主</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇧🇦 波黑</div><div class="rk">FIFA #71 · 身价 €149.2m · 时隔12年回归</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 1-1（半场 0-1）· 事实与解读分开</span></h2>
+    <div class="sub">加拿大主场首秀 68% 控球压制却只换回 1 分；超级替补 Larin 78′ 替身仅 2 分钟扳平，挽救东道主面子。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">波黑用一次定位球先声夺人：<b>21′ Jovo Lukic 头球破门</b>（角球，本人国家队首球），半场 0-1。加拿大下半场把波黑压进禁区，但久攻不下；<b>Marsch 第 76′ 换上 Cyle Larin</b>，<b>78′ Larin 接 Promise David 直塞推射扳平</b>（替补登场仅 2 分钟）。此后双方均无再下一城，1-1 收场，两队各取 1 分。</p>
+    <div class="lineup">21′ ⚽ Lukic (BIH, 角球头球)  ·  半场 0-1  ·  76′ ↑ Larin (CAN)  ·  78′ ⚽ Larin (CAN, David 助攻)  ·  🟨 Buchanan (CAN, 危险动作)  ·  全场 1-1</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇦 加拿大</th><th>🇧🇦 波黑</th><th>一句话解读</th></tr>
+      <tr><td>控球率</td><td class="ca">68%</td><td class="ba">32%</td><td>加拿大彻底掌控球权，但控球≠创造</td></tr>
+      <tr><td>xG（预期进球）</td><td class="ca">1.25</td><td class="ba">0.98</td><td>差距远小于控球差——波黑用 1/3 球权造出近似威胁，效率惊人</td></tr>
+      <tr><td>射门 / 射正</td><td class="ca">7 / —</td><td class="ba">8 / 2</td><td>波黑射门数反超且 2 次射正全靠定位球转化，加拿大量大质低</td></tr>
+      <tr><td>禁区触球</td><td class="ca">17</td><td class="ba">7</td><td>加拿大 2.4 倍领土优势却迟迟无果，临门一脚是短板</td></tr>
+      <tr><td>进球方式</td><td class="ca">运动战(替补)</td><td class="ba">定位球</td><td>波黑唯一进球来自角球——赛前点名的"Dzeko/定位球路径"兑现</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Facundo Tello（阿根廷）· 加 Buchanan 1 黄 · 全场判罚平稳</td><td>低对抗、无点球，符合赛前"非高牌局"预期</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/canada-vs-bosnia-herzegovina-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760416/bosnia-herzegovina-canada" style="color:var(--accent)">ESPN 赛后</a> · <a href="https://www.nbcsports.com/soccer/live/live-updates-canada-vs-bosnia-and-herzegovina-as-hosts-open-2026-world-cup-in-toronto" style="color:var(--accent)">NBC Sports</a>（xG/控球/射门 ≥2 源一致）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">控球假象 · 缺 Davies 的代价被坐实</div>加拿大 68% 控球、17 次禁区触球却只有 1.25 xG——<b>说明加拿大有球权没纵深</b>：失去 Davies 的左路爆点后，进攻沦为横向倒脚，缺一个能"一步过人/送身后球"的破密集点。这正是赛前速览"加终结点不加宽度"的判断被实战放大。</div>
+    <div class="insight"><div class="who" style="color:#7fa6e6">波黑：用定位球补质量差</div>波黑全场被压，却靠一次角球（Lukic 头球）拿到全部产出。<b>说明这支波黑的现实武器是定位球与转换，而非阵地组织</b>——身高与争顶（Dzeko/Kolašinac 体系）是他们对抗强队的硬通货，下一场对瑞士仍会照此剧本。</div>
+    <div class="insight"><div class="who" style="color:var(--good)">Larin 超级替补 · Marsch 的换人救了场</div>Larin 替补登场 2 分钟即破门，且助攻来自另一名替补 David 的直塞。<b>说明加拿大的板凳终结力（Larin）比首发组合更能解密集防守</b>——首发"David 单中锋"对铁桶效率低，双前锋/Larin 前置或是后续解法。</div>
+    <div class="insight"><div class="who">体能与主场情绪管理</div>多伦多湿热 32°C 下加拿大下半场仍维持高压并最终扳平，<b>说明东道主体能与精神面没问题</b>，问题纯在进攻设计而非态度——这对后续比赛是积极信号。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>加拿大小胜 1-0（基准剧本，隐含 ≈53%）</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>仅 1-1 平。赛前唯一悬念"无 Davies 能否破铁桶"——答案是没能在 90 分钟内破开</td></tr>
+      <tr><td>低分局 / Under 2.5（Goal、Sports Mole 共识）</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>全场仅 2 球，Under 2.5 命中</td></tr>
+      <tr><td>波黑唯一现实得分路径＝定位球/支点</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>进球正是角球头球（Lukic），路径判断准确</td></tr>
+      <tr><td>加拿大"有终结点没宽度"</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>68% 控球 + 17 禁区触球但 xG 仅 1.25，破密集低效坐实</td></tr>
+      <tr><td>David 作为最高终结点破局</td><td style="color:var(--warn);font-weight:700">~ 偏差</td><td>David 未进球但贡献扳平助攻；真正终结者是替补 Larin</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>方向判断（低分、波黑靠定位球、加拿大破密集低效）大体命中，但<b>胜负结果误判</b>——把"加拿大主胜"当基准，低估了缺 Davies 后破铁桶的难度。这是本场最值得记录的偏差。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇨🇦 加拿大 → 下一场 vs 卡塔尔（6/18 温哥华 BC Place）</div>
+        ① <b>Davies 有望回归</b>——Marsch 赛前已称"本届会回来"，左路爆点若复出可直接解决本场暴露的"无宽度"问题；<br>② <b>破密集仍是核心课题</b>：卡塔尔同样会深守，本场 17 次禁区触球换 1 球的低效必须改进，Larin 前置或双前锋值得考虑；<br>③ <b>定位球防守要补</b>：本场丢球来自角球，对身高占优的对手需加强禁区盯人。</div>
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🇧🇦 波黑 → 下一场 vs 瑞士（6/18 洛杉矶 SoFi）</div>
+        ① <b>定位球＝可复制武器</b>：本场靠角球进球，对更强的瑞士仍是最现实的得分来源；<br>② <b>Dzeko 的使用</b>：本场首发改双跑动、Dzeko 留作后手，体能管理思路延续；<br>③ <b>对瑞士需更深的防守块</b>：瑞士（FIFA #19）终结效率远高于加拿大，本场被压 68% 仍只丢 1 球的低位防守要再收紧，否则难复制拿分。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">加拿大队史第一次<b>以东道主身份</b>踢世界杯，多伦多 BMO Field 满座开球——但开场就遇当头一棒：<b>队长 Alphonso Davies 确定缺席本场</b>（腿筋伤，Marsch 已官宣"第一场不踢，但本届会回来"）。好在锋线焦点仍在：尤文图斯前锋 <b>Jonathan David（国家队 39 球）</b>是全场身价与终结力的最高点。波黑的剧本很清楚：<b>低位防守块 + Dzeko(40岁)/Demirović 双塔反击</b>，Demirović 本季德甲 12 球 3 助是阵中最有状态的攻击点。赔率给加拿大明显主胜倾向（隐含 ≈53%），主流预测以<b>加拿大 1-0 的低分局</b>为基准剧本——没有 Davies 的加拿大能否破开铁桶，是唯一悬念。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">性质</div><div class="v" style="color:var(--warn)">东道主首秀</div></div>
+      <div class="key"><div class="k">身价</div><div class="v">加 ≈1.4×</div></div>
+      <div class="key"><div class="k">Davies</div><div class="v" style="color:var(--bad)">缺席</div></div>
+      <div class="key"><div class="k">Demirović本季</div><div class="v" style="color:#7fa6e6">12球3助</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>无 Davies 的左路</b>：加拿大失去最大爆点与推进通道，宽度与冲击力打折——波黑右路压力骤减。</li>
+      <li><b>David 对低位防线</b>：39 个国家队进球的终结点 + 点球第一主罚，对手又惯于深守送犯规/角球。</li>
+      <li><b>Dzeko 的支点球</b>：40 岁的 Dzeko 与 Demirović 的"老支点+新跑动"组合，是波黑唯一现实的得分路径。</li>
+      <li><b>Marsch 高强度逼抢 vs 波黑出球</b>：波黑后场出球偏慢，被前压逼抢失误是最可能的丢球方式。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">加拿大 · 重大伤停 <span style="color:var(--mut);font-weight:400">· Marsch 官宣 · 双源确认</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">队长 Alphonso Davies <b>确定缺席揭幕战</b>：腿筋伤未愈，Marsch："第一场不踢，但本届会踢"</div>
+      <p style="font-size:13.5px">Davies 5/6 在拜仁欧冠半决赛次回合对巴黎时拉伤左腿筋，仍入选 26 人名单，但主帅 Jesse Marsch 已明确表态：<b>"No, he won't play in the first game. But he'll play in the tournament"</b>——目标是小组第三场前复出。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Davies 是加拿大体系里唯一的世界级爆点——左路一条龙推进既是进攻发起器，也是对手必须重点设防的牵制点。他缺阵意味着：① 加拿大宽度与纵深冲击骤降，更依赖 David 在中路对阵地防守的硬解；② 波黑右后卫 Dedić 不必收着防，可以放心前顶参与反击；③ Marsch 的高位逼抢丢球后的"快速回追保险"也少了一档速度。对一场预期低分的比赛，这是最大的单点变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.thescore.com/worldcup/news/3550369" style="color:var(--accent)">theScore — Marsch 官宣缺席首战</a> · <a href="https://sports.yahoo.com/articles/why-alphonso-davies-missing-2026-213721175.html" style="color:var(--accent)">Yahoo — 为什么 Davies 缺阵是重大打击</a> · <a href="https://www.espn.com/soccer/story/_/id/48914937/alphonso-davies-named-canada-world-cup-squad-injury-concerns" style="color:var(--accent)">ESPN — 带伤入选 26 人</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">加拿大 · 伤情群 <span style="color:var(--mut);font-weight:400">· 赛前评估 · 待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Bombito、Ali Ahmed、Shaffelburg 等多人缺席对爱尔兰热身（1-1），"多数应能赶上揭幕战"</div>
+      <p style="font-size:13.5px">收官热身 1-1 平爱尔兰一战，<b>Moise Bombito（未披露）、Ali Ahmed（腿筋）、Alfie Jones（未披露）、Jacob Shaffelburg（腿部）</b>均未出场、仍在恢复中；Sports Mole 评估"其中多数应能赶上揭幕战"，但均未获官方逐一确认。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Bombito 是预测首发的主力中卫，若他赶不上，加拿大后防要临时改组（Cornelius 搭档人选变化），对位 40 岁但支点能力仍强的 Dzeko 时制空与协防默契是隐患；Shaffelburg/Ahmed 又恰是 Davies 缺阵后左路最直接的替代冲击点——这串伤情决定了加拿大"少了 Davies 之后还剩多少冲击力"。<span style="color:var(--warn)">[逐人出场状态待赛前官方名单核实]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/preview/canada-vs-bosnia-hvina-prediction-team-news-lineups_598907.html" style="color:var(--accent)">Sports Mole — 加拿大队况</a> · <a href="https://www.espn.com/soccer/story/_/id/48972712/fifa-world-cup-2026-canada-vs-bosnia-herzegovina-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN — 赛前队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">加拿大 · 比赛日新增 <span style="color:var(--mut);font-weight:400">· 06-12 当天 · 待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">后腰 Koné 赛前训练因<b>发烧</b>缺席；比赛日预测首发转向 4-4-2（David+Larin 双前锋）；多伦多湿热 32°C、午后 40% 降雨</div>
+      <p style="font-size:13.5px">比赛日早间消息：① <b>Ismaël Koné 因发烧缺席赛前训练</b>，出场略有悬念，但报道称"只要状态允许就会首发"（待核）；② Sports Mole/SI 比赛日预测首发改为 <b>4-4-2</b>：Crépeau；Johnston、Cornelius、De Fougerolles、Laryea；Buchanan、Koné、Eustáquio、Millar；David、Larin——Bombito 未入预测首发（伤情未明）；③ 天气：多云、最高约 <b>32°C 湿热</b>，午后 40% 降雨概率后转晴——周四 FIFA 球迷节曾因雷雨中途取消，临场仍有变数；④ BMO Field 临时加座 1.7 万、扩容至 4.5 万，预计满场。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Koné 是双后腰出球的另一半——若他打折或缺阵，加拿大被波黑中场绞杀的风险上升一档；4-4-2 双前锋的信号则说明 Marsch 无 Davies 后选择"加终结点而非加宽度"；32°C 湿热压强度、利好想拖节奏的波黑，若午后降雨兑现则传控质量再打折。<span style="color:var(--warn)">[Koné/Bombito 状态与首发以开球前官方名单为准]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/preview/canada-vs-bosnia-hvina-prediction-team-news-lineups_598907.html" style="color:var(--accent)">Sports Mole — Koné/比赛日首发</a> · <a href="https://www.si.com/soccer/canada-vs-bosnia-herzegovina-world-cup-preview-predictions-lineups-6-12-26" style="color:var(--accent)">SI — 预测首发</a> · <a href="https://nowtoronto.com/culture/canada-vs-bosnia-forecast-will-rain-disrupt-torontos-fifa-fan-festival-again/" style="color:var(--accent)">NOW Toronto — 天气</a> · <a href="https://www.tsn.ca/soccer/fifa-world-cup/article/toronto-stadium-upgrades-get-positive-reviews-as-biggest-world-cup-ever-set-to-kick-off/" style="color:var(--accent)">TSN — BMO 扩容</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">波黑 · 状态 <span style="color:var(--mut);font-weight:400">· 阵容信号</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Demirović 本季德甲 <b>12 球 3 助</b>是波黑最在状态的攻击点；40 岁 Dzeko 体能受控、预计首发</div>
+      <p style="font-size:13.5px">斯图加特前锋 <b>Ermedin Demirović</b> 以 12 球 3 助攻的德甲赛季进入世界杯，是 Barbarez 阵中状态最好的进攻球员；40 岁的 <b>Edin Dzeko</b> 经轮换管理后健康可出战，他与 Kolašinac 是 2014 巴西世界杯阵容仅存的两人。预测首发中 Demirović 拉到左侧/二线，与 Dzeko 形成"支点+跑动"组合。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：波黑的胜负手只有一条——守住低位后用 Dzeko 做球、Demirović/Bajraktarević 冲第二落点。Demirović 的状态决定这条反击线是否真有牙齿；Dzeko 的支点则专打加拿大"高位逼抢身后留下的中卫一对一"。若加拿大压上后被这对组合打成 1-0/1-1，就是本场最现实的冷门路径。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rotowire.com/soccer/article/canada-vs-bosnia-and-herzegovina-preview-prediction-lineups-odds-2026-world-cup-group-b-117672" style="color:var(--accent)">RotoWire — 对阵前瞻/首发</a> · <a href="https://www.espn.com/soccer/story/_/id/48972712/fifa-world-cup-2026-canada-vs-bosnia-herzegovina-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN — Dzeko/Kolašinac 2014 仅存两人</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· 06-08 FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">本场主裁敲定：<b>阿根廷裁判 Facundo Tello</b> 执法——生涯约 <b>5.27 黄/场、0.22 红/场</b>，"出牌偏多"型</div>
+      <p style="font-size:13.5px">FIFA 已确认<b>加拿大 vs 波黑由阿根廷裁判 Facundo Tello 执法</b>，助理 Belatti/Chade（阿根廷），第四官员 Alturais（沙特）。量化数据：近20场场均约 <b>5.5 张牌、25 次犯规</b>；生涯均值约 <b>5.27 黄/场、0.22 红/场</b>——在国际级主裁中属"出牌偏多"。他执法过 2022 世界杯两场小组赛+摩洛哥vs葡萄牙1/4决赛、欧洲杯2024。<b>点球判罚率与执法加拿大/波黑的历史：未检索到（无样本，如实说明）。</b></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场的结构是"东道主强攻 vs 客队深守"，犯规与定位球数量天然偏高。5.27黄/场的尺度落在这个结构上，意味着波黑靠战术犯规切断加拿大转换的成本显著抬高，下半场可能出现停赛累积压力；叠加"门将 8 秒、掷界 5 秒"新规，波黑拖节奏保平的空间被进一步压缩。<b>两面性</b>：出牌多也同样约束加拿大的高位逼抢强度——Marsch 系的战术犯规同样在打击面内。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://foot-africa.com/en/news/2026-world-cup-facundo-tello-appointed-for-canada-vs-bosnia-and-herzegovina-1236727/" style="color:var(--accent)">Foot Africa — 任命/履历</a> · <a href="https://valuestats.com/en/referee/17944-facundo-tello-figueroa" style="color:var(--accent)">ValueStats — Tello 出牌数据</a> · <a href="https://onefootball.com/en/news/argentine-at-world-cup-opener-tello-to-referee-canada-bosnia-42983215" style="color:var(--accent)">OneFootball — FIFA 确认</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#05210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认 · 名单为事实 / 影响为解读</span></h2>
+    <div class="sub">开球前官方公布的首发已落定（≥2 源一致：OneFootball 官方阵容 + 加拿大足协 @CANMNT 官方推文）。最大看点：<b style="color:var(--good)">两队均摆 4-4-2 双前锋</b>，而波黑队长 <b style="color:var(--good)">Dzeko 意外替补</b>。</div>
+
+    <h4>① 双方官方首发 XI</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#f08a82;margin-bottom:4px">🇨🇦 加拿大 · 官方首发（4-4-2）· Eustáquio 任队长</div>
+        <div class="lineup">Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Eustáquio (C) · Koné · Millar; David · Oluwaseyi</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#cbd5e1">Cyle Larin</b>（90 场二号射手，搏命换上的终结点）、<b style="color:#cbd5e1">Jonathan Osorio</b>（多伦多本地老将、串联）、<b style="color:#cbd5e1">Alphonso Davies</b>（在 26 人名单中，本场不会登场但保留后续返场）。</div>
+      </div>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:#7fa6e6;margin-bottom:4px">🇧🇦 波黑 · 官方首发（4-4-2）· Dzeko 替补</div>
+        <div class="lineup">Vasilj; Kolašinac · Muharemović · Katić · Dedić; Memić · Bašić · Tahirović · Bajraktarević; Lukic · Demirović</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#cbd5e1">Edin Dzeko</b>（40 岁队长、原预测首发支点，本场改为后手奇兵）、<b style="color:#cbd5e1">Haris Tabakovic</b>（脚踝伤后入替补，二号高点）。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② 官方 vs 预测首发对照</h4>
+    <div style="font-size:12.5px;color:var(--mut);margin-bottom:6px">🇨🇦 加拿大（对照本页"预测首发 4-2-3-1"）</div>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td>阵型</td><td>4-2-3-1 单前锋</td><td class="ca">4-4-2 双前锋</td><td>比赛日已预判转 4-4-2，现命中——Marsch 无 Davies 选择"加终结点"而非"加宽度"</td></tr>
+      <tr><td>中卫</td><td>Bombito 首发</td><td class="ca">De Fougerolles 首发<br>(Bombito 替补)</td><td>关键新闻里的 Bombito 伤情担忧兑现，对位制空人选改变</td></tr>
+      <tr><td>锋线搭档</td><td>David 单箭头<br>(日内传 Larin)</td><td class="ca">Oluwaseyi 搭 David</td><td>选"跑动冲身后"而非支点/Larin，呼应 4-4-2 的提速思路</td></tr>
+      <tr><td>左路</td><td>Osorio 攻击中场</td><td class="ca">Millar 边前卫<br>(Osorio 替补)</td><td>更偏边路宽度与回防平衡，弥补 Davies 缺位的边路</td></tr>
+      <tr><td>后腰</td><td>Koné 存疑(发烧)</td><td class="ca">Koné 首发</td><td>发烧未影响出场——双后腰出球组合完整，利好控场（待核项落定）</td></tr>
+    </table>
+    <div style="font-size:12.5px;color:var(--mut);margin:12px 0 6px">🇧🇦 波黑（对照本页"预测首发 4-2-3-1"）</div>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td><b style="color:var(--good)">支点/队长</b></td><td>Dzeko 首发 (C)</td><td class="ba"><b>Dzeko 替补</b></td><td><b>本场最大爆点</b>：报告核心"Dzeko 支点反击"剧本被改写，前场变轻变快、禁区高点缺位</td></tr>
+      <tr><td>阵型</td><td>4-2-3-1</td><td class="ba">4-4-2</td><td>Lukic + Demirović 双前锋，更偏"双跑动"而非"支点+跑动"</td></tr>
+      <tr><td>中卫</td><td>Hadžikadunić</td><td class="ba">Katić 首发</td><td>对 Panama 破门的 Katić 顶上，补制空</td></tr>
+      <tr><td>中场</td><td>Hadžiahmetović / Gigović</td><td class="ba">Memić / Bašić</td><td>更偏拦截+出球，少了 Gigović 的前场串联</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 战术解读（解读，落到速览主线）</h4>
+    <div class="insight"><div class="who">阵型信号</div>两队都摆 4-4-2 双前锋。加拿大用 Oluwaseyi 的跑动补 Davies 缺失的纵深、而非靠边路宽度——<b>速览"加终结点不加宽度"的判断得到证实</b>。</div>
+    <div class="insight"><div class="who" style="color:var(--good)">关键对位变化 · 最大变量</div><b>Dzeko 替补直接改写波黑剧本。</b>报告原以"Dzeko 支点做球 + Demirović 跑动"为波黑唯一现实得分路径；首发是 Lukic+Demirović 的"双跑动"，制空支点缺位。<b style="color:var(--good)">速览结论修正</b>：波黑冷门路径由"Dzeko 支点打高位身后"调整为"Demirović/Lukic 抢转换速度 + Dzeko 作为 60′ 后的奇兵搏命"。</div>
+    <div class="insight"><div class="who">加拿大后防改组</div>Bombito 替补、De Fougerolles 顶上——制空对抗略降档；但波黑既然没摆 Dzeko、禁区高点威胁同步下降，两处变化<b>部分对冲</b>，对加拿大防守端反而偏利好。</div>
+    <div class="insight"><div class="who">控场风险回落</div>Koné 发烧未影响首发，双后腰出球组合完整——被波黑中场绞杀的风险较赛前回落，利好加拿大控场（关键新闻里的待核项现已落定）。</div>
+    <div class="flag" style="background:#0f2417;border-color:#1d4a2a"><b style="color:var(--good)">速览主线：维持。</b>加拿大小胜（1-0 / 2-0）基准剧本不变——Dzeko 替补与 Bombito 替补两处意外整体相互对冲，没有动摇加拿大主胜的结构；唯一被改写的是<b>波黑的进攻形态</b>（更跑动、少支点，Dzeko 转为后手）。</div>
+
+    <h4 style="margin-top:18px">④ 市场反应</h4>
+    <div class="note">开球前盘口仍在已记录区间：<b>加 1.77 / 平 3.65 / 波黑 4.70</b>（欧洲小数盘；美式 −130→1.77、+265→3.65、+370→4.70）。首发公布后<b>暂无显著盘口移动报道</b>。值得盯：Dzeko 替补对"双方进球 / 波黑进球"类市场理论上偏利空（少了禁区支点），但官方名单与比赛日 4-4-2 预测大体吻合，加拿大主胜价未现快速移动。<span style="color:var(--mut)">（仅事实陈述，非投注建议。）</span></div>
+
+    <h4 style="margin-top:18px">⑤ 来源</h4>
+    <div class="src"><a href="https://ca.sports.yahoo.com/news/canada-bosnia-herzegovina-official-line-175000683.html">OneFootball / Yahoo — 双方官方阵容（Dzeko 替补）</a> · <a href="https://khelnow.com/football/world-football-canada-starting-lineup-vs-bosnia-herzegovina-fifa-world-cup-202606">Khel Now — 加拿大官方首发 + 替补名单（引 @CANMNT 官方推文）</a> · <a href="https://bolavip.com/en/world-cup/canada-vs-bosnia-and-herzegovina-predicted-lineups-for-their-2026-world-cup-debut">Bolavip — 确认阵容</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水） · B组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（bet365 去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>B 组四队身价格局（€百万）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇦 加拿大</th><th>🇧🇦 波黑</th></tr>
+      <tr><td>FIFA 排名</td><td class="ca">#30</td><td class="ba">#71</td></tr>
+      <tr><td>全队身价</td><td class="ca">€203.05m</td><td class="ba">€149.2m</td></tr>
+      <tr><td>阵型</td><td class="ca">4-2-3-1（高位逼抢）</td><td class="ba">4-2-3-1（低位块+反击）</td></tr>
+      <tr><td>核心终结点</td><td class="ca">Jonathan David（尤文，国家队39球，点球主罚）</td><td class="ba">Demirović（斯图加特，本季12球3助）、Dzeko（40岁支点）</td></tr>
+      <tr><td>收官热身</td><td class="ca">1-1 爱尔兰（多名主力伤缺未登场）</td><td class="ba">—（以预选/热身周期评估）</td></tr>
+      <tr><td>1X2 赔率（06-12 综合）</td><td class="ca">1.77–1.80（隐含≈53%）</td><td class="ba">4.70–4.80（≈20%）· 平 3.55（≈27%）</td></tr>
+      <tr><td>本场定位</td><td colspan="2" class="ba">东道主必须赢的开局 vs 客队守反偷分；瑞士在本组身价断层第一（€333.6m），这场很大程度是"小组第二之争"的前哨</td></tr>
+    </table>
+    <div class="note">📌 概率为 bet365 赔率去水后的隐含概率（53/25/22），非模型预测。波黑 FIFA 排名（#71）远低于加拿大，但身价差（1.36×）没有排名差那么悬殊——风格相克（深守反击）让这场比看上去更难打。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面</span></h2>
+    <div class="sub">东道主光环有热度，但预测面高度一致地"冷静"——共识是低分小胜</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · 情绪热度高于资金信号（06-12 上调）</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">历史性主场首秀+满场+全网情绪一边倒押加拿大，但盘口并未跟着走热：加拿大价持平（1.77-1.80），<b>平局走低（3.80→3.55）、波黑上飘（4.20→4.80）</b>——舆论热度明显高于资金信号，情绪溢价偏高，平局/小球才是市场真实流向。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向高度一致：加拿大小胜；新声音开始押平局价值）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>VSiN</td><td>拉斯维加斯投注网络</td><td>Best Bet = <b>加拿大 ML 1.83</b></td></tr>
+      <tr><td>SportsLine · Martin Green</td><td>认证盈利专家</td><td>倾向<b>大 2.5 球</b>：两队势均力敌但主场优势决定性</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>基准剧本 <b>加拿大 1-0</b>：波黑会让比赛长时间难受，但 David 的质量最终破局</td></tr>
+      <tr><td>Goal.com</td><td>预测媒体</td><td>"<b>Cagey low-scoring opener</b>"：东道主不败 + Under 2.5 的组合</td></tr>
+      <tr><td>RotoWire</td><td>战术前瞻</td><td>加拿大窄优势主胜；强调 David 是"everything going forward"的参照点</td></tr>
+      <tr><td>Betfair</td><td>交易所</td><td>反向主推：<b>平局 3.60</b>——加拿大近8场5平、波黑近5场连平的"平局体质"对撞</td></tr>
+      <tr><td>Covers / Lineups 趋势</td><td>数据媒体</td><td>提示波黑近9场8场双方进球——BTTS 是被低估的口袋</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动追踪（06-11 → 06-12 比赛日：钱流向"主胜+平局"）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>加拿大胜</th><th>平局</th><th>波黑胜</th></tr>
+      <tr><td>06-11（开档）</td><td>bet365</td><td class="ca">1.80</td><td>3.80</td><td class="ba">4.20</td></tr>
+      <tr><td>06-12</td><td>OddsShark 综合</td><td class="ca">1.80</td><td>3.55</td><td class="ba">4.80</td></tr>
+      <tr><td>06-12</td><td>FOX 综合</td><td class="ca">1.77</td><td>3.60</td><td class="ba">4.70</td></tr>
+      <tr><td>06-12</td><td>大小 2.5</td><td colspan="3">大 2.25 / 小 1.69 —— 盘面明显偏小球</td></tr>
+    </table>
+    <div class="note">📌 <b>移动解读</b>：加拿大持平、<b>平局压缩 -0.25、波黑放宽 +0.60</b>——资金在买"加拿大不败"而非"加拿大必胜"；Davies 缺阵没有动摇主胜价，但把"波黑爆冷"的残余幻想挤干净了。隐含概率（去水）：加 ≈53% / 平 ≈27% / 波黑 ≈20%。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场资金面（Polymarket / Kalshi / DefiRate 聚合）</h4>
+    <table>
+      <tr><th>结果</th><th>DefiRate 聚合</th><th>Kalshi</th><th>Polymarket</th><th>动向</th></tr>
+      <tr><td class="ca">加拿大胜</td><td class="ca"><b>52.5%</b></td><td>54%</td><td>52.5%（量 $130万）</td><td style="color:#f87171">↓ -1.5</td></tr>
+      <tr><td>平局</td><td>26.5%</td><td>26%</td><td>26.5%（量 $3.5万）</td><td style="color:#4ade80">↑ +2.0</td></tr>
+      <tr><td class="ba">波黑胜</td><td class="ba">20.5%</td><td>21%</td><td>20.5%（量 $53.9万）</td><td style="color:#f87171">↓ -1.0</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>与博彩盘共振</b>：预测市场同样"平局升、两边降"——两个独立资金池指向同一结论：低分胶着局。</li>
+      <li><b>资金结构异象</b>：波黑合约量 $53.9万 是平局 $3.5万 的 15 倍——又见"长射彩票"心态（小额买梦想），但价格不涨反跌，卖压更大。Polymarket 本场截至 06-11 总成交约 $98.3万。</li>
+      <li><b>衍生市场</b>：Kalshi 给加拿大出线 88%、小组头名 33%（瑞士存在感压顶）。</li>
+    </ul>
+    <div class="flag">⚠ <b>值得盯的点</b>：舆论一边倒（全国首秀情绪）但资金没有跟着把加拿大价压下去——这种"声量热、价格冷"的背离通常意味着主胜的情绪溢价已在价里。真正的市场共识藏在小球 1.69 与平局压缩里。</div>
+    <div class="note">📌 仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://vsin.com/soccer/canada-vs-bosnia-and-herzegovina-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN</a> · <a href="https://www.sportsline.com/insiders/canada-vs-bosnia-and-herzegovina-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Green</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/preview/canada-vs-bosnia-hvina-prediction-team-news-lineups_598907.html">Sports Mole</a> · <a href="https://www.goal.com/en-ng/betting/world-cup/canada-vs-bosnia-predictions-12-06-2026/A%3Abltbeef1b712f69186d">Goal</a> · <a href="https://www.rotowire.com/soccer/article/canada-vs-bosnia-and-herzegovina-preview-prediction-lineups-odds-2026-world-cup-group-b-117672">RotoWire</a> · <a href="https://betting.betfair.com/football/world-cup-2026/canada-v-bosnia-world-cup-2026-tips-prediction-friday-match-preview-bet-builder-100626-1063.html">Betfair — 平局论</a> · <a href="https://www.covers.com/world-cup/canada-vs-bosnia-prediction-picks-odds-friday-6-12-2026">Covers — 趋势</a> · <a href="https://www.oddsshark.com/soccer/world-cup/canada-bosnia-herzegovina-odds-june-12-2026-2520744">OddsShark — 赔率</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/canada/">DefiRate — 聚合</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-can-bih-2026-06-12">Polymarket</a> · <a href="https://kalshi.com/markets/kxwcgame/world-cup-game/kxwcgame-26jun12canbih">Kalshi</a></div>
+  </section>
+
+  <!-- 首发与近期表现 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:12px;font-weight:600;background:#0f2417;color:var(--good);border:1px solid #1d4a2a;border-radius:6px;padding:2px 8px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方首发见页面上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🇨🇦 加拿大 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Crépeau; Johnston · Cornelius · Bombito · Laryea; Eustáquio · Koné; Buchanan · Osorio · Oluwaseyi; David (C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ca">Jonathan David</td><td>中锋 / 尤文图斯</td><td>国家队 39 球历史射手王、点球主罚；本场全队进攻的唯一参照点</td></tr>
+      <tr><td class="ca">Tajon Buchanan</td><td>右边锋 / 比利亚雷亚尔</td><td>Davies 缺阵后球队最重要的爆点替代，右路一对一是破密集的主通道</td></tr>
+      <tr><td class="ca">Stephen Eustáquio</td><td>后腰 / 波尔图</td><td>与 Koné 组双后腰，出球节拍器；被逼抢时的出球质量决定加拿大控场</td></tr>
+      <tr><td class="ca">Moise Bombito</td><td>中卫 / 尼斯</td><td>伤情待核——若缺阵，对位 Dzeko 的制空与协防是隐患</td></tr>
+    </table>
+    <h4>🇧🇦 波黑 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Vasilj; Dedić · Hadžikadunić · Muharemović · Kolašinac; Hadžiahmetović · Tahirović; Bajraktarević · Gigović · Demirović; Dzeko (C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ba">Edin Dzeko</td><td>中锋 / 40岁老将</td><td>2014 阵容仅存两人之一；支点做球仍是顶级，体能按 60-70 分钟管理</td></tr>
+      <tr><td class="ba">Ermedin Demirović</td><td>前锋 / 斯图加特</td><td><b>本季德甲 12 球 3 助</b>，阵中状态最好的攻击点；冲 Dzeko 做球的第二落点</td></tr>
+      <tr><td class="ba">Sead Kolašinac</td><td>左后卫/中卫</td><td>2014 仅存的另一人，经验与对抗，领防左路对 Buchanan 一侧的协防</td></tr>
+      <tr><td class="ba">Nikola Vasilj</td><td>门将 / 圣保利</td><td>德甲整季高接低挡，波黑守住低分局的底气</td></tr>
+    </table>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇦 加拿大 · Jesse Marsch（2024上任，前利兹联）</div>
+        <div class="role">4-2-3-1 · 高位逼抢 + 快速转换</div>
+        <ul class="cl">
+          <li>红牛系打法：高强度逼抢、抢断后 5 秒内打门前——对出球慢的波黑后场是天克。</li>
+          <li>命门：Davies 缺阵后宽度骤减，阵地战破密集手段集中到 David/Buchanan 两点。</li>
+          <li>东道主首秀的情绪管理：BMO Field 满座既是推力也是压力。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇧🇦 波黑 · Sergej Barbarez（2024上任）</div>
+        <div class="role">4-2-3-1 · 低位防守块 + Dzeko 支点反击</div>
+        <ul class="cl">
+          <li>身份清晰：让出控球、双后腰护禁区前沿，反击全部经 Dzeko 的做球中转。</li>
+          <li>Demirović/Bajraktarević 提供反击速度，定位球前点 Dzeko 仍是威胁。</li>
+          <li>风险：被高位逼抢直接打穿出球线；Dzeko 下场后（~70'）进攻基本归零。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣（06-08）</b>：本场主裁为<b>阿根廷裁判 Facundo Tello</b>。"强攻 vs 深守"的结构下犯规与定位球必然偏多，Tello 偏严的出牌尺度抬高波黑战术犯规的成本。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷球/球门球 5 秒倒计时</b>：直接压缩波黑拖节奏保平的空间。</li>
+      <li><b>仅队长可与裁判沟通</b>：Dzeko（队长）的老练沟通是波黑的隐形资产。</li>
+      <li><b>升级版半自动越位</b>：加拿大反越位冲身后（Oluwaseyi/Buchanan）的临界球判得更快更准。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Yahoo Sports <small>· B级 分析</small></div>"为什么 Davies 缺席揭幕战对东道主是重大打击"——他不只是边后卫，而是加拿大由守转攻唯一的世界级载体；没有他，加拿大的转换威胁直接降档。</div>
+    <div class="insight"><div class="who">RotoWire <small>· B级 战术前瞻</small></div>David 是加拿大"everything going forward"的参照点；波黑惯于深守让出控球，比赛大概率演变为一边倒围攻 + 零星反击的剧本。</div>
+    <div class="insight"><div class="who">Sports Mole / Goal <small>· B级 预测</small></div>共识比分 1-0：波黑能把比赛拖入难受的低分泥潭，但 90 分钟里 David 的质量更可能先兑现一次。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：加拿大小胜（1-0/2-0）是基准剧本；波黑的现实目标是 0-0/1-1 偷分，冷门路径=Dzeko 支点打高位身后。</li>
+      <li><b>关键先生</b>：David（加/终结）、Buchanan（加/无 Davies 后的爆点）、Demirović（波/反击牙齿）、Vasilj（波/守分底线）。</li>
+      <li><b>胜负手</b>：加拿大破密集的效率（定位球+David 抢点） vs 波黑反击的兑现率（全场可能只有 2-3 次机会）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 预测首发为分析源推测，以赛前官方为准；② Bombito/Ahmed/Shaffelburg 伤情逐人状态临场复核（Bombito 未入比赛日预测首发）；③ Davies 缺席已由 Marsch 官宣（双源，硬信息）；④ Koné 发烧为单源消息；⑤ 天气数值为单源预报，临场复核。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.thescore.com/worldcup/news/3550369">theScore — Marsch 官宣 Davies 缺席首战</a> · <a href="https://sports.yahoo.com/articles/why-alphonso-davies-missing-2026-213721175.html">Yahoo — Davies 缺阵影响分析</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/preview/canada-vs-bosnia-hvina-prediction-team-news-lineups_598907.html">Sports Mole — 前瞻/伤情/预测首发</a> · <a href="https://www.rotowire.com/soccer/article/canada-vs-bosnia-and-herzegovina-preview-prediction-lineups-odds-2026-world-cup-group-b-117672">RotoWire — 战术前瞻</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48972712/fifa-world-cup-2026-canada-vs-bosnia-herzegovina-kickoff-how-watch-stats-team-news">ESPN — 赛前队况</a> · <a href="https://www.transfermarkt.us/bosnien-herzegowina/marktwertanalyse/verein/3446">Transfermarkt — 波黑身价</a> · <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html">Yahoo — 裁判任命</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12（比赛日） · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',CA='#d52b1e',BA='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['加拿大','波黑'],datasets:[{data:[203.05,149.2],backgroundColor:[CA,BA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['加拿大胜','平局','波黑胜'],datasets:[{data:[53,25,22],backgroundColor:[CA,DR,BA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞士','加拿大','波黑','卡塔尔'],datasets:[{data:[333.6,203.05,149.2,19.93],backgroundColor:['#b91c1c',CA,BA,'#7c2d92'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'加拿大',data:[6.5,7,6.5,6,7,5.5],borderColor:CA,backgroundColor:CA+'33',pointBackgroundColor:CA},
+   {label:'波黑',data:[6.5,5.5,5.5,6.5,6,6.5],borderColor:BA,backgroundColor:BA+'33',pointBackgroundColor:BA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

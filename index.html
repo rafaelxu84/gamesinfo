@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 世界杯 · 赛事分析中心</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;
+    --accent:#38bdf8;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--draw:#64748b;--mx:#16a34a;--sa:#e0ad1a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.6;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+  h1{font-size:28px;font-weight:800}h1 .em{color:var(--accent)}
+  .updated{color:var(--mut);font-size:13px}.updated b{color:var(--good)}
+  .lead{color:var(--mut);font-size:14px;margin:8px 0 20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  h2{font-size:17px;margin-bottom:4px}
+  .sub{color:var(--mut);font-size:12.5px;margin-bottom:14px}
+  /* day nav */
+  .days{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:18px}
+  .daytab{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;text-align:center;min-width:80px;transition:.15s}
+  .daytab.active{background:var(--accent);color:#06121c;border-color:var(--accent)}
+  .daytab .d{font-size:11px;font-weight:600;opacity:.8}.daytab .m{font-size:15px;font-weight:800}
+  .dayblock{display:none}.dayblock.active{display:block}
+  /* dashboard match card */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .mc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.15s}
+  .mc:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .mc.live{cursor:pointer}.mc.soon{opacity:.72}
+  .mc .grp{font-size:11px;color:var(--mut);font-weight:700;letter-spacing:.4px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
+  .mc .grp .feat{color:var(--good)}
+  .mc .teams{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+  .mc .tn{font-size:17px;font-weight:800}.mc .tn small{display:block;font-size:11px;color:var(--mut);font-weight:500;margin-top:1px}
+  .mc .tn.r{text-align:right}
+  .mc .vs{font-size:12px;color:var(--mut);font-weight:700}
+  /* prob bar */
+  .prob{margin:4px 0 6px}
+  .pbar{display:flex;height:13px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+  .pbar i{display:block;height:100%}
+  .plab{display:flex;justify-content:space-between;font-size:11px;margin-top:5px;color:var(--mut)}
+  .plab b{color:var(--txt);font-weight:700}
+  .plab .home{color:#4ade80}.plab .away{color:#f0cf6b}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip{font-size:11px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--mut)}
+  .chip b{color:var(--txt)}
+  .chip.xg{color:#7dd3fc}.chip.warnchip{color:#f0cf6b}
+  .mc .go{margin-top:13px;font-size:12.5px;color:var(--accent);font-weight:700}
+  .mc.soon .go{color:var(--mut)}
+  .secttitle{display:flex;align-items:center;gap:9px;margin:6px 0 2px}
+  .secttitle .n{background:var(--accent);color:#06121c;width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:26px}
+  .how p{font-size:13px;color:var(--mut)}.how b{color:var(--good)}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <div class="top">
+    <h1>🏆 2026 <span class="em">世界杯</span> 赛事分析中心</h1>
+    <div class="updated">更新：<b>2026-06-14</b> · 昨日（6/13）4 场<b>赛后复盘已出</b>（含瑞士/土耳其两场大冷）· 今日 4 场 E/F 组首轮临场分析</div>
+  </div>
+  <div class="lead">每场一眼看懂：胜率 · 预期进球 · 关键指标。点卡片进入详情（含关键临场新闻、数据面、战术、主帅、裁判）。 &nbsp;<a href="teams.html" style="color:var(--accent);text-decoration:none;font-weight:700">🌍 全48队情报库 →</a></div>
+
+  <div class="secttitle"><span class="n">📅</span><h2>按比赛日浏览</h2></div>
+  <div class="sub">点击日期切换；每张卡片就是该场的速读 dashboard</div>
+  <div class="days" id="days"></div>
+
+  <!-- Day 1 -->
+  <div class="dayblock active" data-day="0">
+    <div class="cards">
+
+      <a class="mc live" href="mexico-vs-south-africa.html">
+        <div class="grp"><span>A 组 · 阿兹特克(墨西哥城) · 已结束</span><span class="feat">★ 揭幕战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 墨西哥<small>Quiñones 9' · Jiménez</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">南非 🇿🇦<small>三红牌之夜</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">终场 2-0 · 东道主开门红</span>
+          <span class="chip warnchip">单场 3 红牌（南非2 · 墨1）</span>
+          <span class="chip xg">Jiménez 世界杯首球 · 赛前"墨小胜"共识兑现</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-korea-vs-czechia.html">
+        <div class="grp"><span>A 组 · 瓜达拉哈拉(Akron) · 已结束</span><span>终场</span></div>
+        <div class="teams">
+          <div class="tn">🇰🇷 韩国<small>黄仁范 · 吴贤揆 80'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 1</div>
+          <div class="tn r">捷克 🇨🇿<small>Krejčí 59'</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">✅ 首发已官宣</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">终场 2-1 · 韩国下半场逆转</span>
+          <span class="chip xg">韩国与墨西哥同积 3 分领跑 A 组</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="dayblock" data-day="1">
+    <div class="cards">
+      <a class="mc live" href="report-canada-vs-bosnia.html">
+        <div class="grp"><span>B 组 · 多伦多(BMO Field) · 已结束</span><span class="feat">★ 加拿大主场首秀 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 加拿大<small>FIFA #30 · 东道主</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">波黑 🇧🇦<small>Lukic 21' 角球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:53%;background:#d52b1e"></i><i style="width:27%;background:var(--draw)"></i><i style="width:20%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">赛前 加胜 <b>53%</b></span><span>平 27%</span><span style="color:#7fa6e6">波黑 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 1-1 · 主胜预测偏差 / 小球兑现</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">Larin 78' 替补2分钟扳平 · 加 68% 控球未破铁桶</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-usa-vs-paraguay.html">
+        <div class="grp"><span>D 组 · 洛杉矶(SoFi) · 已结束</span><span class="feat">★ 美国主场首秀 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 美国<small>Balogun ×2 · Reyna</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">巴拉圭 🇵🇾<small>Mauricio 73'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:49%;background:#1f4e9c"></i><i style="width:28%;background:var(--draw)"></i><i style="width:23%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">赛前 美胜 <b>49%</b></span><span>平 28%</span><span style="color:#f08a82">巴 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 4-1 · 最大预测偏差（市场仅给49%）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">半场 3-0 拆穿巴防线 · Balogun 状态确立</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="dayblock" data-day="2">
+    <div class="cards">
+
+      <a class="mc live" href="report-brazil-vs-morocco.html">
+        <div class="grp"><span>C 组 · 东卢瑟福(MetLife) · 已结束</span><span class="feat">★ 当日头牌焦点战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 巴西<small>Vinícius 32'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">摩洛哥 🇲🇦<small>Saibari 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:59%;background:#16a34a"></i><i style="width:23%;background:var(--draw)"></i><i style="width:18%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#4ade80">赛前 巴西 <b>59%</b></span><span>平 23%</span><span style="color:#f08a82">摩 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 1-1 · 主胜预测偏差</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">"别买巴西大胜"兑现 · Alisson 终场双扑保平</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-qatar-vs-switzerland.html">
+        <div class="grp"><span>B 组 · 圣克拉拉(Levi's) · 已结束</span><span class="feat">★ 本届首个大冷 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇶🇦 卡塔尔<small>Khoukhi 90+4'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">瑞士 🇨🇭<small>Embolo 17' (P)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#8a1538"></i><i style="width:17%;background:var(--draw)"></i><i style="width:73%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#e08aa0">赛前 卡 <b>10%</b></span><span>平 17%</span><span style="color:#f08a82">瑞士 73%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 1-1 · 重大预测偏差（瑞士 73% 未兑现）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">瑞士 26 射 3.24xG 仅进 1 球 · 卡塔尔队史世界杯首分</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-haiti-vs-scotland.html">
+        <div class="grp"><span>C 组 · 福克斯堡(Gillette) · 已结束</span><span class="feat">★ 52年 vs 28年双回归 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇭🇹 海地<small>15 射 0 球</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">苏格兰 🏴󠁧󠁢󠁳󠁣󠁴󠁿<small>McGinn 28'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:14%;background:#d21034"></i><i style="width:21%;background:var(--draw)"></i><i style="width:65%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">赛前 海 <b>14%</b></span><span>平 21%</span><span style="color:#7fa6e6">苏格兰 65%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 0-1 · 苏格兰胜预测兑现 / 比分偏差</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">苏格兰 1990 后世界杯首胜 · 暂登 C 组 · 海地 xG 反超未转化</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-australia-vs-turkiye.html">
+        <div class="grp"><span>D 组 · 温哥华(BC Place·顶棚关闭) · 已结束</span><span class="feat">★ 又一冷门 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇺 澳大利亚<small>Irankunda 27' · Metcalfe</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">土耳其 🇹🇷<small>缺 Yıldız · 0 球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:19%;background:#e0a514"></i><i style="width:26%;background:var(--draw)"></i><i style="width:55%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#f0cf6b">赛前 澳 <b>19%</b></span><span>平 26%</span><span style="color:#f08a82">土耳其 55%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 2-0 · 热门押反（土 55% 翻车）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">澳高效反击+零封 · 本届"押强队让球"连续两场翻车</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="dayblock" data-day="3">
+    <div class="cards">
+
+      <a class="mc live" href="report-germany-vs-curacao.html">
+        <div class="grp"><span>E 组 · 休斯顿(NRG) · 13:00 ET</span><span class="feat">★ 德国战车揭幕</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 德国<small>FIFA #9 · 近 9 连胜</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">库拉索 🇨🇼<small>FIFA #82 · 世界杯首秀</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:93%;background:#c8a951"></i><i style="width:5%;background:var(--draw)"></i><i style="width:2%;background:#003da5"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">德 <b>93%</b></span><span>平 5%</span><span style="color:#7fa6e6">库 2%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">德胜 <b>1.05</b> · 史诗级一边倒</span>
+          <span class="chip xg">焦点在大小球：Over 4.5 仅 1.83 · 共识 4-0/5-0</span>
+          <span class="chip">Nagelsmann 近 4 战零封</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 共识强无情绪溢价</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-netherlands-vs-japan.html">
+        <div class="grp"><span>F 组 · 达拉斯(AT&T) · 16:00 ET</span><span class="feat">★ 当日最难分预测</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 荷兰<small>FIFA #18</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">日本 🇯🇵<small>FIFA #8 · 排名更高</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#f36c21"></i><i style="width:27%;background:var(--draw)"></i><i style="width:31%;background:#bc002d"></i></div>
+          <div class="plab"><span style="color:#f3a06a">荷 <b>42%</b></span><span>平 27%</span><span style="color:#f08a82">日 31%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">荷胜 <b>2.12</b> · 排名反挂(日#8>荷#18)</span>
+          <span class="chip warnchip">荷缺 Timber(整届)+门将 Verbruggen 伤</span>
+          <span class="chip warnchip">日缺 三笘薫 · 攻击线削弱</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 强强对话舆论高</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-cotedivoire-vs-ecuador.html">
+        <div class="grp"><span>E 组 · 费城(Lincoln Fin.) · 19:00 ET</span><span>低分缠斗</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇮 科特迪瓦<small>预选 6 战 0 失球</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">厄瓜多尔 🇪🇨<small>预选 18 战仅失 5</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:38%;background:#ff7f00"></i><i style="width:32%;background:var(--draw)"></i><i style="width:30%;background:#ffce00"></i></div>
+          <div class="plab"><span style="color:#ffa64d">科 <b>38%</b></span><span>平 32%</span><span style="color:#f0cf6b">厄 30%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">两队都防守见长 · 共识低分小球</span>
+          <span class="chip xg">科曾 2-1 胜法国 · 4-0 胜韩国</span>
+          <span class="chip">厄 Beccacece 体系难攻破</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 三向贴平情绪干净</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-sweden-vs-tunisia.html">
+        <div class="grp"><span>F 组 · 蒙特雷(BBVA) · 22:00 ET</span><span>Isak+Gyökeres 攻击线</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇪 瑞典<small>2018 后回归</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">突尼斯 🇹🇳<small>预选零失球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:37%;background:#006aa7"></i><i style="width:34%;background:var(--draw)"></i><i style="width:29%;background:#e70013"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">瑞 <b>37%</b></span><span>平 34%</span><span style="color:#f08a82">突 29%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">瑞胜 <b>1.95</b> · 平 3.55 · 突 4.44</span>
+          <span class="chip warnchip">瑞攻强守弱 · 难当稳赢热门</span>
+          <span class="chip xg">突尼斯预选全程零封 · 防反硬骨头</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 攻击牌面拉热度</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 5 · 6/15 -->
+  <div class="dayblock" data-day="4">
+    <div class="sub" style="margin:0 0 12px">6/15（周一）G/H 组首轮 4 场 · 完整 dashboard 指标与逐场详情将于赛前生成</div>
+    <div class="cards">
+      <div class="mc soon">
+        <div class="grp"><span>G 组 · 旧金山湾区(Levi's) · 12:00 ET</span><span class="feat">★ 卫冕欧洲冠军登场</span></div>
+        <div class="teams"><div class="tn">🇪🇸 西班牙<small>欧洲杯卫冕 · 夺冠热门</small></div><div class="vs">VS</div><div class="tn r">佛得角 🇨🇻<small>世界杯首秀</small></div></div>
+        <div class="chips"><span class="chip">西班牙史诗级让球热门</span><span class="chip xg">焦点在大小球与净胜球</span></div>
+        <div class="go" style="color:var(--mut)">⏳ 赛前生成完整分析</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>H 组 · 亚特兰大(Mercedes-Benz) · 15:00 ET</span><span>萨拉赫领衔</span></div>
+        <div class="teams"><div class="tn">🇧🇪 比利时<small>黄金一代尾声</small></div><div class="vs">VS</div><div class="tn r">埃及 🇪🇬<small>Salah 核心</small></div></div>
+        <div class="chips"><span class="chip">比利时主胜倾向</span><span class="chip xg">Salah vs 比利时后防是看点</span></div>
+        <div class="go" style="color:var(--mut)">⏳ 赛前生成完整分析</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>G 组 · 西雅图(Lumen) · 18:00 ET</span><span>南美劲旅</span></div>
+        <div class="teams"><div class="tn">🇸🇦 沙特<small>亚洲区</small></div><div class="vs">VS</div><div class="tn r">乌拉圭 🇺🇾<small>FIFA 前列 · 强队</small></div></div>
+        <div class="chips"><span class="chip">乌拉圭明显主胜倾向</span><span class="chip xg">沙特冷门基因（2022 曾爆阿根廷）</span></div>
+        <div class="go" style="color:var(--mut)">⏳ 赛前生成完整分析</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>H 组 · 洛杉矶(SoFi) · 21:00 ET</span><span>低分缠斗预期</span></div>
+        <div class="teams"><div class="tn">🇮🇷 伊朗<small>亚洲铁卫</small></div><div class="vs">VS</div><div class="tn r">新西兰 🇳🇿<small>大洋洲冠军</small></div></div>
+        <div class="chips"><span class="chip">伊朗小幅领先</span><span class="chip xg">两队防强攻弱 · 共识低分</span></div>
+        <div class="go" style="color:var(--mut)">⏳ 赛前生成完整分析</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6+ -->
+  <div class="dayblock" data-day="5">
+    <div class="cards"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">后续比赛日</div></div><div class="sub" style="margin:6px 0 0">每日 agent 自动拉取当日全部赛程、生成 dashboard 与详情报告并补进此处。</div></div></div>
+  </div>
+
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <div class="secttitle" style="margin-bottom:8px"><span class="n">🧑‍⚖️</span><h2>裁判观察 · 开赛阶段执法解读（截至 6/14）</h2></div>
+    <p style="font-size:13px;color:var(--txt)">开赛阶段主裁尺度跨度极大，"谁来吹"对牌类盘口的影响被显著放大：</p>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">• <b style="color:var(--txt)">揭幕战（墨西哥 2-0 南非）</b>：Wilton Sampaio（巴西，生涯 5.08 黄/场，全球最严之一）掏 <b>3 红</b>，创世界杯揭幕战纪录——但这与他"零容忍 + VAR 撑腰"的一贯画像吻合，不算意外，信号是 FIFA 敢把严哨派上焦点场、开赛定调从严。<br>
+    • <b style="color:var(--txt)">美国 4-1 巴拉圭</b>：Danny Makkelie（荷兰）用 VAR 撤销对 Ream 的错误黄牌、改判 Almirón 假摔——示范级纠错，"假摔必罚"立此存照。<br>
+    • <b style="color:var(--txt)">加拿大 1-1 波黑</b>：Facundo Tello（阿根廷）全场仅 <b>1 黄</b>、放任身体对抗，与 Sampaio 形成两极。<br>
+    • <b style="color:var(--txt)">韩国 2-1 捷克</b>：埃及 Amin Mohamed 首执世界杯，控场平稳。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/13 复盘</b>：Vinčić（巴-摩）焦点战吹得克制、无点球；Said Martínez（卡-瑞，首执世界杯）判给瑞士点球、控场平稳，无哨样本的不确定性未爆发；海-苏、澳-土均对抗可控、无判点争议——开赛阶段除揭幕战 Sampaio 3 红外，整体尺度趋于正常。</p>
+    <p style="font-size:13px;color:#bfe0f7;margin-top:8px">📌 <b>今日（6/14）E/F 组首轮</b>：德-库、荷-日、科-厄、瑞-突四场当值裁判画像将于各场详情页【当值裁判】模块逐场更新。<span style="color:var(--mut)">VAR 对发牌/身份错误介入果断。仅供分析参考，非投注建议。</span></p>
+  </div>
+
+  <div class="how">
+    <p>⚙ <b>每天自动更新</b>：定时任务每天抓取当日+次日全部比赛与关键新闻，更新各场胜率/预期进球等 dashboard 指标，把<b>关键临场新闻</b>写进每场详情页核心模块，并采集<b>🔥投注市场热度</b>（名人/专家推荐方向、赔率变动、预测市场资金面、舆论声量 → 合成 1-5 过热指数），最后自动部署上线。</p>
+  </div>
+
+  <div class="foot">2026 世界杯赛事分析中心 · 胜率为赔率隐含概率(去水)，部分对阵为模型近似 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const DAYS=[{m:'6/11',d:'周四·已赛'},{m:'6/12',d:'周五·已赛'},{m:'6/13',d:'周六·已赛'},{m:'6/14',d:'周日·今天'},{m:'6/15',d:'周一'},{m:'6/16+',d:'后续'}];
+const md=v=>{const[a,b]=v.replace('+','').split('/').map(Number);return a*100+b};
+const _t=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'numeric',day:'numeric'}).format(new Date());
+let ACTIVE=DAYS.findIndex(x=>x.m.replace('+','')===_t);
+if(ACTIVE<0)ACTIVE=md(_t)>md(DAYS[DAYS.length-1].m)?DAYS.length-1:0;
+const nav=document.getElementById('days');
+DAYS.forEach((x,i)=>{const el=document.createElement('div');el.className='daytab'+(i===ACTIVE?' active':'');
+ el.innerHTML=`<div class="m">${x.m}</div><div class="d">${x.d}</div>`;
+ el.onclick=()=>{document.querySelectorAll('.daytab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dayblock').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');document.querySelector(`.dayblock[data-day="${i}"]`).classList.add('active');};
+ nav.appendChild(el);});
+document.querySelectorAll('.dayblock').forEach(b=>b.classList.toggle('active',b.dataset.day==String(ACTIVE)));
+</script>
+</body>
+</html>

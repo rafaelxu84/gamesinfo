@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa do Mundo 2026 · Central de Análise de Jogos</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;
+    --accent:#38bdf8;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--draw:#64748b;--mx:#16a34a;--sa:#e0ad1a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.6;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+  h1{font-size:28px;font-weight:800}h1 .em{color:var(--accent)}
+  .updated{color:var(--mut);font-size:13px}.updated b{color:var(--good)}
+  .lead{color:var(--mut);font-size:14px;margin:8px 0 20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  h2{font-size:17px;margin-bottom:4px}
+  .sub{color:var(--mut);font-size:12.5px;margin-bottom:14px}
+  /* day nav */
+  .days{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:18px}
+  .daytab{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;text-align:center;min-width:80px;transition:.15s}
+  .daytab.active{background:var(--accent);color:#06121c;border-color:var(--accent)}
+  .daytab .d{font-size:11px;font-weight:600;opacity:.8}.daytab .m{font-size:15px;font-weight:800}
+  .dayblock{display:none}.dayblock.active{display:block}
+  /* dashboard match card */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .mc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.15s}
+  .mc:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .mc.live{cursor:pointer}.mc.soon{opacity:.72}
+  .mc .grp{font-size:11px;color:var(--mut);font-weight:700;letter-spacing:.4px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
+  .mc .grp .feat{color:var(--good)}
+  .mc .teams{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+  .mc .tn{font-size:17px;font-weight:800}.mc .tn small{display:block;font-size:11px;color:var(--mut);font-weight:500;margin-top:1px}
+  .mc .tn.r{text-align:right}
+  .mc .vs{font-size:12px;color:var(--mut);font-weight:700}
+  /* prob bar */
+  .prob{margin:4px 0 6px}
+  .pbar{display:flex;height:13px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+  .pbar i{display:block;height:100%}
+  .plab{display:flex;justify-content:space-between;font-size:11px;margin-top:5px;color:var(--mut)}
+  .plab b{color:var(--txt);font-weight:700}
+  .plab .home{color:#4ade80}.plab .away{color:#f0cf6b}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip{font-size:11px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--mut)}
+  .chip b{color:var(--txt)}
+  .chip.xg{color:#7dd3fc}.chip.warnchip{color:#f0cf6b}
+  .mc .go{margin-top:13px;font-size:12.5px;color:var(--accent);font-weight:700}
+  .mc.soon .go{color:var(--mut)}
+  .secttitle{display:flex;align-items:center;gap:9px;margin:6px 0 2px}
+  .secttitle .n{background:var(--accent);color:#06121c;width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:26px}
+  .how p{font-size:13px;color:var(--mut)}.how b{color:var(--good)}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <div class="top">
+    <h1>🏆 <span class="em">Copa do Mundo</span> 2026 · Central de Análise</h1>
+    <div class="updated">Atualizado: <b>2026-06-14</b> · ontem (13/6) 4 <b>análises pós-jogo publicadas</b> (incl. as zebras de Suíça e Türkiye) · hoje 4 prévias da 1ª rodada dos Grupos E/F</div>
+  </div>
+  <div class="lead">Cada jogo num relance: probabilidades de vitória · gols esperados · indicadores-chave. Clique no card para ver os detalhes (notícias de última hora, dados, tática, técnicos, arbitragem). &nbsp;<a href="teams.html" style="color:var(--accent);text-decoration:none;font-weight:700">🌍 Base de dados das 48 seleções →</a></div>
+
+  <div class="secttitle"><span class="n">📅</span><h2>Navegue por dia de jogo</h2></div>
+  <div class="sub">Clique na data para alternar; cada card é o dashboard de leitura rápida do jogo</div>
+  <div class="days" id="days"></div>
+
+  <!-- Day 1 -->
+  <div class="dayblock active" data-day="0">
+    <div class="cards">
+
+      <a class="mc live" href="mexico-vs-south-africa.html">
+        <div class="grp"><span>Grupo A · Azteca (Cidade do México) · Encerrado</span><span class="feat">★ Jogo de abertura · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 México<small>Quiñones 9' · Jiménez</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">África do Sul 🇿🇦<small>Noite de três cartões vermelhos</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalação oficial anunciada</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">Final 2-0 · Anfitrião estreia com vitória</span>
+          <span class="chip warnchip">3 vermelhos em um só jogo (África do Sul 2 · México 1)</span>
+          <span class="chip xg">Primeiro gol de Jiménez em Copas · Consenso pré-jogo de "vitória apertada do México" confirmado</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-korea-vs-czechia.html">
+        <div class="grp"><span>Grupo A · Guadalajara (Akron) · Encerrado</span><span>Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇰🇷 Coreia do Sul<small>Hwang In-beom · Oh Hyeon-gyu 80'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 1</div>
+          <div class="tn r">Tchéquia 🇨🇿<small>Krejčí 59'</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">✅ Escalação oficial anunciada</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">Final 2-1 · Virada coreana no 2º tempo</span>
+          <span class="chip xg">Coreia do Sul e México lideram o Grupo A com 3 pontos</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="dayblock" data-day="1">
+    <div class="cards">
+      <a class="mc live" href="report-canada-vs-bosnia.html">
+        <div class="grp"><span>Grupo B · Toronto (BMO Field) · Encerrado</span><span class="feat">★ Estreia do Canadá em casa · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 Canadá<small>FIFA #30 · Anfitrião</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Bósnia 🇧🇦<small>Lukic 21' escanteio</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:53%;background:#d52b1e"></i><i style="width:27%;background:var(--draw)"></i><i style="width:20%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">Pré-jogo Canadá <b>53%</b></span><span>Empate 27%</span><span style="color:#7fa6e6">Bósnia 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 1-1 · errou vitória da casa / acertou Under</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Larin empatou 2 min após entrar (78') · Canadá não furou o ferrolho com 68% de posse</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + pré-jogo →</div>
+      </a>
+      <a class="mc live" href="report-usa-vs-paraguay.html">
+        <div class="grp"><span>Grupo D · Los Angeles (SoFi) · Encerrado</span><span class="feat">★ Estreia dos EUA em casa · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 EUA<small>Balogun ×2 · Reyna</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">Paraguai 🇵🇾<small>Mauricio 73'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:49%;background:#1f4e9c"></i><i style="width:28%;background:var(--draw)"></i><i style="width:23%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">Pré-jogo EUA <b>49%</b></span><span>Empate 28%</span><span style="color:#f08a82">Paraguai 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 4-1 · maior erro de previsão (mercado dava só 49%)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">3-0 no intervalo rompeu o bloco do Paraguai · forma de Balogun confirmada</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + pré-jogo →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="dayblock" data-day="2">
+    <div class="cards">
+
+      <a class="mc live" href="report-brazil-vs-morocco.html">
+        <div class="grp"><span>Grupo C · East Rutherford (MetLife) · Encerrado</span><span class="feat">★ Jogo principal do dia · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 Brasil<small>Vinícius 32'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Marrocos 🇲🇦<small>Saibari 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:59%;background:#16a34a"></i><i style="width:23%;background:var(--draw)"></i><i style="width:18%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#4ade80">Pré-jogo Brasil <b>59%</b></span><span>Empate 23%</span><span style="color:#f08a82">Marrocos 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 1-1 · erro na previsão de vitória da casa</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">"Não aposte em goleada do Brasil" confirmado · Alisson garante empate com dupla defesa no fim</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-qatar-vs-switzerland.html">
+        <div class="grp"><span>Grupo B · Santa Clara (Levi's) · Encerrado</span><span class="feat">★ Primeira grande zebra do torneio · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇶🇦 Catar<small>Khoukhi 90+4'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Suíça 🇨🇭<small>Embolo 17' (P)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#8a1538"></i><i style="width:17%;background:var(--draw)"></i><i style="width:73%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#e08aa0">Pré-jogo Catar <b>10%</b></span><span>Empate 17%</span><span style="color:#f08a82">Suíça 73%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 1-1 · grande erro de previsão (Suíça 73% não se confirmou)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Suíça com 26 finalizações e 3,24 de xG fez só 1 gol · primeiro ponto da história do Catar em Copas</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-haiti-vs-scotland.html">
+        <div class="grp"><span>Grupo C · Foxborough (Gillette) · Encerrado</span><span class="feat">★ Duplo retorno: 52 anos vs 28 anos · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇭🇹 Haiti<small>15 finalizações, 0 gol</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">Escócia 🏴󠁧󠁢󠁳󠁣󠁴󠁿<small>McGinn 28'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:14%;background:#d21034"></i><i style="width:21%;background:var(--draw)"></i><i style="width:65%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">Pré-jogo Haiti <b>14%</b></span><span>Empate 21%</span><span style="color:#7fa6e6">Escócia 65%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 0-1 · vitória da Escócia confirmada / placar com desvio</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Primeira vitória da Escócia em Copas desde 1990 · líder provisório do Grupo C · xG do Haiti superou mas não converteu</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-australia-vs-turkiye.html">
+        <div class="grp"><span>Grupo D · Vancouver (BC Place · teto fechado) · Encerrado</span><span class="feat">★ Mais uma zebra · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇺 Austrália<small>Irankunda 27' · Metcalfe</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">Turquia 🇹🇷<small>sem Yıldız · 0 gol</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:19%;background:#e0a514"></i><i style="width:26%;background:var(--draw)"></i><i style="width:55%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#f0cf6b">Pré-jogo Austrália <b>19%</b></span><span>Empate 26%</span><span style="color:#f08a82">Turquia 55%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 2-0 · favorito invertido (Turquia 55% tombou)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Austrália eficiente no contra-ataque + clean sheet · "apostar no handicap do forte" tombou em dois jogos seguidos</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="dayblock" data-day="3">
+    <div class="cards">
+
+      <a class="mc live" href="report-germany-vs-curacao.html">
+        <div class="grp"><span>Grupo E · Houston (NRG) · 13:00 ET</span><span class="feat">★ Estreia da máquina alemã</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 Alemanha<small>FIFA #9 · 9 vitórias seguidas</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Curaçao 🇨🇼<small>FIFA #82 · Estreia em Copas</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:93%;background:#c8a951"></i><i style="width:5%;background:var(--draw)"></i><i style="width:2%;background:#003da5"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">Alemanha <b>93%</b></span><span>Empate 5%</span><span style="color:#7fa6e6">Curaçao 2%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória alemã <b>1.05</b> · Desequilíbrio épico</span>
+          <span class="chip xg">Foco no over/under: Over 4.5 a só 1.83 · Consenso 4-0/5-0</span>
+          <span class="chip">Nagelsmann com 4 jogos sem sofrer gol</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · Consenso forte, sem prêmio emocional</span>
+        </div>
+        <div class="go">Ver análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-netherlands-vs-japan.html">
+        <div class="grp"><span>Grupo F · Dallas (AT&T) · 16:00 ET</span><span class="feat">★ A previsão mais difícil do dia</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 Holanda<small>FIFA #18</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Japão 🇯🇵<small>FIFA #8 · ranking mais alto</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#f36c21"></i><i style="width:27%;background:var(--draw)"></i><i style="width:31%;background:#bc002d"></i></div>
+          <div class="plab"><span style="color:#f3a06a">Holanda <b>42%</b></span><span>Empate 27%</span><span style="color:#f08a82">Japão 31%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória holandesa <b>2.12</b> · Ranking invertido (Japão #8 > Holanda #18)</span>
+          <span class="chip warnchip">Holanda sem Timber (Copa toda) + goleiro Verbruggen lesionado</span>
+          <span class="chip warnchip">Japão sem Mitoma · ataque enfraquecido</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · Duelo de gigantes, opinião pública alta</span>
+        </div>
+        <div class="go">Ver análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-cotedivoire-vs-ecuador.html">
+        <div class="grp"><span>Grupo E · Filadélfia (Lincoln Fin.) · 19:00 ET</span><span>Disputa de placar baixo</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇮 Costa do Marfim<small>0 gols sofridos em 6 jogos de eliminatórias</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Equador 🇪🇨<small>Só 5 sofridos em 18 jogos de eliminatórias</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:38%;background:#ff7f00"></i><i style="width:32%;background:var(--draw)"></i><i style="width:30%;background:#ffce00"></i></div>
+          <div class="plab"><span style="color:#ffa64d">C. Marfim <b>38%</b></span><span>Empate 32%</span><span style="color:#f0cf6b">Equador 30%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">As duas brilham na defesa · Consenso de placar baixo/Under</span>
+          <span class="chip xg">C. Marfim já venceu a França por 2-1 · 4-0 na Coreia do Sul</span>
+          <span class="chip">O sistema de Beccacece no Equador é difícil de furar</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · Três vias coladas, emoção limpa</span>
+        </div>
+        <div class="go">Ver análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-sweden-vs-tunisia.html">
+        <div class="grp"><span>Grupo F · Monterrey (BBVA) · 22:00 ET</span><span>Ataque Isak+Gyökeres</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇪 Suécia<small>De volta após 2018</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Tunísia 🇹🇳<small>Sem sofrer gols nas eliminatórias</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:37%;background:#006aa7"></i><i style="width:34%;background:var(--draw)"></i><i style="width:29%;background:#e70013"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">Suécia <b>37%</b></span><span>Empate 34%</span><span style="color:#f08a82">Tunísia 29%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória sueca <b>1.95</b> · Empate 3.55 · Tunísia 4.44</span>
+          <span class="chip warnchip">Suécia forte no ataque, frágil na defesa · difícil ser favorita segura</span>
+          <span class="chip xg">Tunísia sem sofrer gols em todas as eliminatórias · osso duro no contra-ataque</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · O cartaz ofensivo puxa o interesse</span>
+        </div>
+        <div class="go">Ver análise completa →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 5 · 6/15 -->
+  <div class="dayblock" data-day="4">
+    <div class="sub" style="margin:0 0 12px">6/15 (segunda) · 1ª rodada dos Grupos G/H, 4 jogos · indicadores completos do dashboard e detalhes de cada jogo serão gerados antes das partidas</div>
+    <div class="cards">
+      <div class="mc soon">
+        <div class="grp"><span>Grupo G · Área da Baía de SF (Levi's) · 12:00 ET</span><span class="feat">★ Entra o campeão europeu</span></div>
+        <div class="teams"><div class="tn">🇪🇸 Espanha<small>Campeão da Eurocopa · favorito ao título</small></div><div class="vs">VS</div><div class="tn r">Cabo Verde 🇨🇻<small>Estreia em Copas</small></div></div>
+        <div class="chips"><span class="chip">Espanha favorita com handicap épico</span><span class="chip xg">Foco no over/under e no saldo de gols</span></div>
+        <div class="go" style="color:var(--mut)">⏳ Análise completa antes do jogo</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>Grupo H · Atlanta (Mercedes-Benz) · 15:00 ET</span><span>Salah no comando</span></div>
+        <div class="teams"><div class="tn">🇧🇪 Bélgica<small>Fim da geração de ouro</small></div><div class="vs">VS</div><div class="tn r">Egito 🇪🇬<small>Salah como referência</small></div></div>
+        <div class="chips"><span class="chip">Tendência de vitória belga</span><span class="chip xg">Salah vs defesa da Bélgica é o ponto de atenção</span></div>
+        <div class="go" style="color:var(--mut)">⏳ Análise completa antes do jogo</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>Grupo G · Seattle (Lumen) · 18:00 ET</span><span>Força sul-americana</span></div>
+        <div class="teams"><div class="tn">🇸🇦 Arábia Saudita<small>Zona asiática</small></div><div class="vs">VS</div><div class="tn r">Uruguai 🇺🇾<small>Topo da FIFA · favorito</small></div></div>
+        <div class="chips"><span class="chip">Clara tendência de vitória uruguaia</span><span class="chip xg">Veia de zebra da Arábia Saudita (bateu a Argentina em 2022)</span></div>
+        <div class="go" style="color:var(--mut)">⏳ Análise completa antes do jogo</div>
+      </div>
+      <div class="mc soon">
+        <div class="grp"><span>Grupo H · Los Angeles (SoFi) · 21:00 ET</span><span>Expectativa de placar baixo</span></div>
+        <div class="teams"><div class="tn">🇮🇷 Irã<small>Muralha asiática</small></div><div class="vs">VS</div><div class="tn r">Nova Zelândia 🇳🇿<small>Campeã da Oceania</small></div></div>
+        <div class="chips"><span class="chip">Irã ligeiramente à frente</span><span class="chip xg">As duas defendem bem e atacam pouco · consenso de placar baixo</span></div>
+        <div class="go" style="color:var(--mut)">⏳ Análise completa antes do jogo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6+ -->
+  <div class="dayblock" data-day="5">
+    <div class="cards"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">Próximos dias de jogo</div></div><div class="sub" style="margin:6px 0 0">Todos os dias, o agente busca automaticamente a programação completa do dia, gera o dashboard e os relatórios detalhados e os adiciona aqui.</div></div></div>
+  </div>
+
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <div class="secttitle" style="margin-bottom:8px"><span class="n">🧑‍⚖️</span><h2>Observação da arbitragem · Leitura da arbitragem até agora (até 14/6)</h2></div>
+    <p style="font-size:13px;color:var(--txt)">Na fase inicial, a amplitude de critério dos árbitros principais é enorme, e o "quem apita" amplifica bastante o impacto sobre os mercados de cartões:</p>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">• <b style="color:var(--txt)">Jogo de abertura (México 2-0 África do Sul)</b>: Wilton Sampaio (Brasil, 5,08 cartões amarelos/jogo na carreira, um dos mais rigorosos do mundo) deu <b>3 vermelhos</b>, recorde para jogos de abertura de Copa — mas isso bate com seu perfil habitual de "tolerância zero + respaldo do VAR", não é surpresa; o sinal é que a FIFA topa colocar um árbitro rigoroso num jogo de destaque, definindo o tom de rigor logo na abertura.<br>
+    • <b style="color:var(--txt)">EUA 4-1 Paraguai</b>: Danny Makkelie (Holanda) usou o VAR para anular um cartão amarelo errado para Ream e reverteu uma simulação de Almirón — correção exemplar, deixando claro que "simulação é falta certa".<br>
+    • <b style="color:var(--txt)">Canadá 1-1 Bósnia</b>: Facundo Tello (Argentina) deu apenas <b>1 amarelo</b> no jogo todo, deixou o duelo físico correr — o polo oposto de Sampaio.<br>
+    • <b style="color:var(--txt)">Coreia do Sul 2-1 Tchéquia</b>: o egípcio Amin Mohamed estreou em Copas, com controle de jogo tranquilo.</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">Balanço de 13/6</b>: Vinčić (Brasil-Marrocos) apitou o jogo de destaque com sobriedade e sem pênaltis; Said Martínez (Catar-Suíça, estreia em Copa) marcou o pênalti da Suíça e controlou o jogo, sem que a incerteza de não ter amostra estourasse; Haiti-Escócia e Austrália-Turquia tiveram contato sob controle e sem polêmica de pênalti — fora os 3 vermelhos de Sampaio no jogo de abertura, o critério na fase inicial tende ao normal.</p>
+    <p style="font-size:13px;color:#bfe0f7;margin-top:8px">📌 <b>Hoje (14/6) · 1ª rodada dos Grupos E/F</b>: os perfis dos árbitros de Alemanha-Curaçao, Holanda-Japão, Costa do Marfim-Equador e Suécia-Tunísia serão atualizados jogo a jogo no módulo [Árbitro da partida] de cada página de detalhes. <span style="color:var(--mut)">O VAR intervém com firmeza em cartões/erros de identidade. Apenas para fins de análise — não é recomendação de apostas.</span></p>
+  </div>
+
+  <div class="how">
+    <p>⚙ <b>Atualização automática diária</b>: uma tarefa agendada coleta todos os dias os jogos de hoje e de amanhã com as notícias-chave, atualiza os indicadores do dashboard de cada jogo (probabilidades de vitória / gols esperados etc.), insere as <b>notícias de última hora</b> no módulo central de cada página de detalhes e coleta o <b>🔥 calor do mercado de apostas</b> (direção das dicas de celebridades/especialistas, movimento das odds, fluxo de capital nos mercados de previsão, volume nas redes → índice de superaquecimento composto de 1-5), publicando tudo automaticamente.</p>
+  </div>
+
+  <div class="foot">Central de Análise da Copa do Mundo 2026 · Probabilidades de vitória são probabilidades implícitas das odds (sem a margem); alguns confrontos usam aproximação de modelo · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const DAYS=[{m:'6/11',d:'Qui · Encerrado'},{m:'6/12',d:'Sex · Encerrado'},{m:'6/13',d:'Sáb · Encerrado'},{m:'6/14',d:'Dom · Hoje'},{m:'6/15',d:'Seg'},{m:'6/16+',d:'Depois'}];
+const md=v=>{const[a,b]=v.replace('+','').split('/').map(Number);return a*100+b};
+const _t=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'numeric',day:'numeric'}).format(new Date());
+let ACTIVE=DAYS.findIndex(x=>x.m.replace('+','')===_t);
+if(ACTIVE<0)ACTIVE=md(_t)>md(DAYS[DAYS.length-1].m)?DAYS.length-1:0;
+const nav=document.getElementById('days');
+DAYS.forEach((x,i)=>{const el=document.createElement('div');el.className='daytab'+(i===ACTIVE?' active':'');
+ el.innerHTML=`<div class="m">${x.m}</div><div class="d">${x.d}</div>`;
+ el.onclick=()=>{document.querySelectorAll('.daytab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dayblock').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');document.querySelector(`.dayblock[data-day="${i}"]`).classList.add('active');};
+ nav.appendChild(el);});
+document.querySelectorAll('.dayblock').forEach(b=>b.classList.toggle('active',b.dataset.day==String(ACTIVE)));
+</script>
+</body>
+</html>

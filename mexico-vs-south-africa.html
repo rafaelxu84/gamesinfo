@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 墨西哥 vs 南非 · 2026世界杯揭幕战</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0d1220; --card:#161d2e; --card2:#1c2540; --line:#2a3450;
+    --txt:#e9eef8; --mut:#93a1c4; --mx:#16a34a; --sa:#e0ad1a; --draw:#64748b;
+    --accent:#38bdf8; --warn:#f59e0b; --good:#22c55e; --bad:#ef4444; --purp:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#16a34a);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  /* summary */
+  .summary{background:linear-gradient(135deg,#13261b,#152138);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}
+  .watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  /* grids */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:680px){.grid2,.grid3{grid-template-columns:1fr}}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .stat .k{color:var(--mut);font-size:12px}.stat .v{font-size:22px;font-weight:800;margin-top:3px}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.3px}
+  td.mx{color:#34d27b;font-weight:600}td.sa{color:#ecc24a;font-weight:600}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700}
+  .pmx{background:#16a34a33;color:#4ade80}.psa{background:#e0ad1a33;color:#f0cf6b}
+  details{background:var(--card2);border:1px solid var(--line);border-radius:10px;margin-top:12px;overflow:hidden}
+  summary{cursor:pointer;padding:12px 16px;font-weight:700;font-size:14px;color:var(--accent);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary:before{content:"＋ ";font-weight:800}
+  details[open] summary:before{content:"− "}
+  details .body{padding:0 16px 16px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}
+  .insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}
+  .flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .tag{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <span class="badge">⚽ 2026 世界杯 · 揭幕战 · 🏁 已完赛 2-0</span>
+  <h1>墨西哥 vs 南非</h1>
+  <div class="meta">2026年6月11日 · 墨西哥城 阿兹特克球场（海拔 ~2,250m）· A组首轮 · 2010揭幕战剧本重演</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 墨西哥</div><div class="rk">FIFA #15 · 东道主 · 身价 €194.6m</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 南非</div><div class="rk">FIFA #60 · 时隔16年回归 · 身价 €52.7m</div></div>
+  </div>
+
+
+  <!-- ===== 📊 赛后复盘（daily 任务按规范维护）===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 含对下一场的迁移参考</span></h2>
+    <div class="sub">终场 墨西哥 2-0 南非（半场 1-0）· 数据来源 Opta/FotMob/Sofascore · 赛前分析全文保留在下方作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">9' Quiñones 抓住 <b>Sithole 后场致命失误</b>推射首开纪录（本届世界杯第一球）；67' Jiménez 远点头球锁定 2-0。尾声纪律崩盘：<b>50' Sithole 放倒单刀 Gutiérrez 直红（DOGSO）→ 82' Zwane 掌掴 Alvarado，VAR 介入直红 → 90+2' 墨西哥 Montes 蹬踏 Mudau 直红（争议，似黄牌动作）</b>——世界杯 20 年来首次单场 3 红。</p>
+
+    <h4>② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇲🇽 墨西哥</th><th>🇿🇦 南非</th><th>解读</th></tr>
+      <tr><td>控球</td><td class="mx">61%</td><td class="sa">39%</td><td>压制如预期，但未到"围攻窒息"级</td></tr>
+      <tr><td>xG</td><td class="mx"><b>1.41</b></td><td class="sa"><b>0.07</b></td><td>南非全场≈零威胁——5-3-2 只守不攻的代价</td></tr>
+      <tr><td>射门 / 射正</td><td class="mx">16 / 4（1中柱）</td><td class="sa">3 / 0</td><td>墨<b>转化率一般</b>：16 射仅 4 正，2-0 已是效率上限附近</td></tr>
+      <tr><td>禁区触球</td><td class="mx">20</td><td class="sa">2</td><td>渗透深度差 10 倍，南非反击完全没成型</td></tr>
+      <tr><td>红牌</td><td class="mx">1（Montes 90+2）</td><td class="sa">2（Sithole 50' / Zwane 82'）</td><td>三张全是直红——本届执法从严的实证</td></tr>
+    </table>
+
+    <h4>③ 技战术复盘（实际 vs 赛前判断）</h4>
+    <ul class="watch">
+      <li><b>墨西哥无 Álvarez 的三中场方案成立</b>：Lira-Fidalgo-Gutiérrez 过载南非三工兵中路，61% 控球 + 20 次禁区触球；官方首发解读"舍锚点换推进"的判断兑现。<b>可迁移结论</b>：对铁桶阵墨有成熟破局模板，但对能对攻的队（韩国）仍需 Álvarez 回归。</li>
+      <li><b>终结效率仍是墨的天花板</b>：16 射 4 正、1 中柱，赛前"除 Jiménez 外缺爆点"的判断半兑现——Quiñones 的进球来自对手失误馈赠而非阵地战创造。面对防线质量更高的对手，这个转化率会被惩罚。</li>
+      <li><b>南非 5-3-2 计划 9 分钟破产</b>：失球源于自身出球失误而非被打穿——印证"失球多源于个人失误"的赛前画像；落后后 Broos 的后手牌（Zwane/Mofokeng 60' 后登场反咬）等来的不是进球而是红牌。</li>
+      <li><b>高球路线兑现</b>：制胜的第二球正是传中+远点头球——赛前"雨战/高球权重上升"的判断方向正确（雨势本身未成主角）。</li>
+      <li><b>纪律是最大意外</b>：Sampaio 大赛"放对抗"的历史画像被打破，3 直红 + VAR 主动介入——本届执法环境显著偏严，后续所有比赛的犯规成本都要重估。</li>
+    </ul>
+
+    <h4>④ 预测对账</h4>
+    <ul class="cl">
+      <li>赛果：墨胜 ✓（市场共识 66-70%，兑现）；比分 2-0 = 超算最可能比分之一 ✓</li>
+      <li>大小球：Under 2.5 ✓（主推方向，xG 合计 1.48 还印证了低进球本质）</li>
+      <li>过热判读："热得有道理、价值已被吃掉" ✓——热门兑现但无超额信息差</li>
+      <li>官方首发解读：Quiñones 增加爆点 ✓（进球）；"Álvarez 替补是选择" ✓（三中场运转正常）</li>
+      <li>偏差：未预见纪律崩盘（3 红）；Rangel 雨战风险未被考验（南非 0 射正）</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移 → 两队下一场参考</h4>
+    <table>
+      <tr><th>球队</th><th>下一场</th><th>带入信息</th></tr>
+      <tr><td class="mx">🇲🇽 墨西哥</td><td>6/18 vs 韩国（瓜达拉哈拉）</td><td>① <b>Montes 红牌停赛</b>——主力中卫缺阵，中卫深度（Vásquez 搭档谁）成最大议题；② Álvarez 大概率回首发对抗韩国转换速度；③ 16射4正的转化率面对金玟哉领衔的防线是真隐患；④ 韩国可借鉴：南非三工兵把墨中场迟滞了 9 分钟——但一次出球失误就破产，<b>对墨高位逼抢收益大、容错为零</b>。</td></tr>
+      <tr><td class="sa">🇿🇦 南非</td><td>6/18 vs 捷克</td><td>① <b>Sithole + Zwane 双停赛</b>——中场绞杀器和头号后手爆点同时缺席；② 全场 xG 0.07：纯防守换不来分数，残阵下被迫开放比赛风险更大；③ 对捷克而言这是出线算分的重大利好（今晚韩捷场的平局价值随之微升）。</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">来源：<a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — 赛后统计</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — 战报/3红牌细节</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — 终场数据</a> · <a href="https://www.fotmob.com/news/10lkoinljn1hg1808rdcu23cff-mexico-2-0-south-africa-three-players-sent-off-world-cup-co-hosts-start-style" style="color:var(--accent)">FotMob</a> · <a href="https://www.sofascore.com/news/mexico-2-0-south-africa-world-cup-opener-report" style="color:var(--accent)">Sofascore</a></div>
+  </section>
+
+  <!-- ===== 速览 SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">墨西哥在<b>主场 + 海拔 + 身价（3.7倍）+ 状态</b>四重优势下是明显热门，赔率隐含胜率约 <b>64%</b>。墨西哥金杯夺冠时数据极强（场均 <b>2.41 xG</b> 攻、仅 <b>0.85 xGA</b> 防，均为该届最佳），防守组织是底色。南非官宣比预测更保守的 <b>5-3-2 五后卫铁桶</b>（见下方✅官方首发模块）+ 快速反击立足，最大命门是 Foster 之外缺稳定终结点。比赛大概率<b>低进球</b>（盘口 Under 2.5），墨西哥小胜是主线剧本——<b>双方官方首发均强化此结论</b>。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">让球/胜率(去水)</div><div class="v" style="color:#34d27b">≈64%</div></div>
+      <div class="key"><div class="k">身价比</div><div class="v">3.7×</div></div>
+      <div class="key"><div class="k">墨xG/场(金杯)</div><div class="v" style="color:#34d27b">2.41</div></div>
+      <div class="key"><div class="k">历史交锋</div><div class="v">墨0胜</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>开场30分钟</b>：南非能否顶住阿兹特克氛围与海拔，是冷门唯一窗口。</li>
+      <li><b>墨西哥下半场</b>：旧毛病是换人后节奏下滑，南非反击可乘。</li>
+      <li><b>定位球</b>：低进球比赛里最可能的破局点，双方都有套路。</li>
+      <li><b>新规影响</b>：8秒门将持球、5秒掷界外球倒计时、仅队长可与裁判沟通——压缩拖延战术，对想"摆大巴拖时间"的南非略不利。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">比赛日 · 06-11 当天 <span style="color:var(--mut);font-weight:400">· 开幕式 + 赛前首发指向</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">今日开幕：90 分钟开幕式（Pelé/Maradona 致敬，11:30 当地开始）；赛前预测首发指向 <b>Rangel 把守球门</b>、Modiba 伤愈回归南非左路</div>
+      <p style="font-size:13.5px">阿兹特克今天成为<b>史上首座三办世界杯揭幕战的球场</b>（1970/1986/2026）。开幕式 11:30 当地时间开始、约 90 分钟，含对 Pelé 与 Maradona 的致敬环节，Shakira、J Balvin、Andrea Bocelli、Maná 等出演，13:00 当地（15:00 ET）开球。比赛日预测首发：墨西哥 <b>Raúl Rangel 把守球门</b>（印证此前 Malagón 落选后的门将悬念），4-3-3/4-2-3-1 框架，Jiménez 单箭头；南非方面 <b>伤愈的 Modiba 回归左后卫首发位</b>，Foster 顶在最前。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：① 90 分钟开幕式 + 满场 + 致敬环节把主场情绪值拉满，墨西哥开局 15 分钟的冲击波会更猛，南非最危险的时段就是开场；② Rangel 首发等于确认墨西哥用一名无世界杯经验的门将打揭幕战——叠加雷雨预报，他的高球与脱手处理是南非定位球唯一现实的攻击点；③ Modiba 回归让南非左路攻防完整，Broos 能排出理论最强防守块。<span style="color:var(--warn)">[两队首发以开球前官方名单为准]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://uk.sports.yahoo.com/news/estadio-azteca-break-world-cup-131523407.html" style="color:var(--accent)">Yahoo — 阿兹特克三办揭幕战</a> · <a href="https://sport.quotidiano.net/en/calcio/mondiali/cerimonia-apertura-2026-nyq96hsg" style="color:var(--accent)">QN — 开幕式时间/流程</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/preview/mexico-vs-south-africa-prediction-team-news-lineups_598850.html" style="color:var(--accent)">Sports Mole — 比赛日预测首发</a> · <a href="https://www.si.com/soccer/mexico-predicted-lineup-vs-south-africa-world-cup-6-11-26" style="color:var(--accent)">SI — 墨预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">墨西哥 · 伤情/名单 <span style="color:var(--mut);font-weight:400">· 06-09 赛前确认</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">门将 Malagón、中场 Marcel Ruiz 因伤无缘名单；Montes/Álvarez/Chávez/Vega 带伤但末战已出场</div>
+      <p style="font-size:13.5px">据 ESPN 赛前消息，Aguirre 的最终 26 人因伤<b>缺少原主力门将 Luis Ángel Malagón 与中场 Marcel Ruiz</b>。另一方面，此前状态存疑的 <b>César Montes、Edson Álvarez、Luis Chávez、Alexis Vega 均在 6/5 对塞尔维亚的热身中获得大量出场时间</b>，伤情已无大碍。36 岁的 Guillermo Ochoa 是两队唯一同时入选 2010 与 2026 名单的球员。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Malagón 落选使墨西哥门将位置失去原定主力，预计由 Rangel 等在册门将顶上——这是揭幕战为数不多的不确定点。但中后场核心（Álvarez/Montes/Chávez）带伤过关且已实战检验，主力框架完整，不动摇墨西哥的热门地位。<span style="color:var(--warn)">[首发门将待赛前官方确认]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — 墨西哥 vs 南非 赛前队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">墨西哥 · 状态 <span style="color:var(--mut);font-weight:400">· 06-04 最后一场热身</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">墨西哥 5-1 大胜塞尔维亚，逆转开局结束揭幕前备战</div>
+      <p style="font-size:13.5px">世界杯前最后一场热身：墨西哥第19分钟先丢一球（Stanic），随后 Johan Vázquez 第34分钟扳平，凭借两个对手乌龙、Raúl Jiménez 的冷静推射，以及 Luis Chávez 第90分钟一记惊艳远射，<b>5-1 逆转塞尔维亚</b>。这是墨西哥 <b>2026 年第 8 场连续不败</b>收官（最近三场：加纳 2-0、澳大利亚 1-0、塞尔维亚 5-1）。36 岁门将 <b>Guillermo Ochoa 入选征战个人第 6 届世界杯</b>，是两队唯一同时出现在 2010 与 2026 名单中的球员。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：揭幕前最后一练拿到大胜，<b>士气与进攻火力都给到正反馈</b>——Jiménez 的状态、Chávez 的远射与定位球能力，正是这场预期低进球比赛里最现实的破局点。先丢后赢也说明球队落后时仍能组织反扑，进一步巩固墨西哥的热门地位。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.washingtonpost.com/sports/soccer/2026/06/05/mexico-world-cup-2026-raul-jimenez/bbbe7fe4-60a0-11f1-9c46-d6211372eede_story.html" style="color:var(--accent)">Washington Post — 墨5-1塞尔维亚</a> · <a href="https://www.outlookindia.com/sports/football/mexico-vs-serbia-live-score-international-friendly-2026-updates-highlights-toluca" style="color:var(--accent)">Outlook — 比赛细节</a> · <a href="https://www.aljazeera.com/sports/2026/5/23/mexico-beat-ghana-as-world-cup-co-hosts-lay-down-early-warm-up-marker" style="color:var(--accent)">Al Jazeera — 胜加纳</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">墨西哥 · 阵容确定 <span style="color:var(--mut);font-weight:400">· 26 人名单官宣</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Aguirre 26 人名单出炉，末战热身改打 <b>4-2-3-1</b>；Edson Álvarez 健康留任队长</div>
+      <p style="font-size:13.5px">墨西哥已正式公布 26 人世界杯名单。从最后一场热身看，Aguirre 倾向 <b>4-2-3-1</b>：Edson Álvarez（队长）与 Luis Romo 坐镇双后腰，Luis Chávez、Erik Lira 待命；边路由 Alvarado、Huerta 提供速度，35 岁的 Raúl Jiménez 担纲单箭头。<b>此前担心的 Álvarez 伤情并未出现在名单备注中——他健康入选并保留队长袖标。</b></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：阵型从此前推测的 4-3-3 转向 4-2-3-1，双后腰结构更重防守与控场，配合主场+海拔，更适合"控住节奏、压缩南非反击"的剧本；Álvarez 健康出任锚点，等于补回了之前"出战存疑"的关键变量，墨西哥中后场更稳。Jiménez 仍是定位球与点球主罚的破局点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-squad-announced" style="color:var(--accent)">FIFA — 墨西哥 26 人名单</a> · <a href="https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad" style="color:var(--accent)">Al Jazeera — 阵容/看点</a> · <a href="https://www.prizepicks.com/playbook-article/mexico-world-cup-roster-announced-projected-starting-lineup" style="color:var(--accent)">PrizePicks — 预测首发 4-2-3-1</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 重要裁决 <span style="color:var(--mut);font-weight:400">· 06-02 CAS 裁定</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">CAS 维持 FIFA 对墨足协罚款，但<b>撤销"部分关闭球场"处罚——阿兹特克揭幕战满场</b></div>
+      <p style="font-size:13.5px">就球迷反同口号一事，国际体育仲裁法庭（CAS）在世界杯开幕前维持了 FIFA 合计 14 万瑞郎（约 17.8 万美元）的罚款，但<b>撤销了在 FIFA 赛事中部分关闭看台的处罚</b>。这意味着 6/11 阿兹特克揭幕战将以满场举行。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：原本"部分空场"会直接削弱墨西哥赖以为生的<b>主场氛围 + 海拔</b>双重优势；处罚被撤销后，揭幕战满座，墨西哥的最大无形资产完整保留——对靠密集防守偷分的南非更不利。（注：罚款维持，反同口号在阿兹特克"屡有出现"，仍是潜在纪律风险。）</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/06/02/ahead-of-world-cup-mexico-soccer-body-loses-appeals-against-fifa-fines-for-fans-anti-gay-chant" style="color:var(--accent)">AP / NY1 — CAS 裁决</a> · <a href="https://www.outlookindia.com/sports/football/fifa-world-cup-2026-mexico-loses-appeal-against-anti-gay-chant-fine" style="color:var(--accent)">Outlook — 上诉细节</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">南非 · 收官热身 <span style="color:var(--mut);font-weight:400">· 06-06 帕丘卡（闭门）</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">南非揭幕前最后一练 1-1 平牙买加，<b>Foster 进球但连续 5 场不胜</b>；Broos 直言不满</div>
+      <p style="font-size:13.5px">6/6 在帕丘卡 Estadio Hidalgo 闭门进行最后一场热身，南非 <b>1-1 战平牙买加</b>，下半场 Lyle Foster 破门、随后被 Dwayne Atkinson 扳平。此前 0-0 平尼加拉瓜，<b>大赛前最近 5 场热身全部不胜</b>。Broos 赛后表示对球队在伊达尔戈的表现并不满意，会在接下来几天继续打磨。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Foster 进球缓解了一点终结焦虑，但"5 场不胜 + 进攻乏力"的趋势在揭幕战前并未扭转，叠加客场作战阿兹特克的氛围与海拔，南非偷分难度更大。好消息是高原集训补足了早前签证耽误的适应时间——但能否把握有限机会，仍是 Foster 之外缺稳定终结点的老问题。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en-za/lists/jamaica-1-1-south-africa-confusion-reigns-after-bafana-bafana-s-behind-closed-doors-fifa-world-cup-warm-up/blt5b925bdb40e375d3" style="color:var(--accent)">Goal — 牙买加 1-1 南非</a> · <a href="https://www.safa.net/general-news/bafana-continue-with-their-world-cup-preparations-after-jamaica-friendly/" style="color:var(--accent)">SAFA — 赛后备战</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">南非 · 伤情利好 <span style="color:var(--mut);font-weight:400">· 06-09 赛前</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">左后卫 Modiba 腿筋伤愈、完成完整合练有望首发；边锋 Morena、Nkota 落选</div>
+      <p style="font-size:13.5px">赛前消息，<b>左后卫 Aubrey Modiba 已从腿筋伤中恢复并完成本周一次完整训练，正争取首发</b>；揭幕战前<b>南非全队无人登上世界杯伤病名单</b>。边锋 Thapelo Morena 与 Mohau Nkota 则未能入选阵容。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Modiba 复出补强了南非左路的攻防——他既要参与 Mofokeng/Appollis 的边路反击，又要在墨西哥右路传中下顶防压力。全队健康出战，意味着 Broos 能排出理论上最强的密集防守块去打这场以偷分为目标的硬仗。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://khelnow.com/football/world-football-south-africa-injury-news-ahead-world-cup-opener-vs-mexico-202606" style="color:var(--accent)">Khel Now — 南非伤情利好</a> · <a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — 赛前队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">现场环境 · 天气预警 <span style="color:var(--mut);font-weight:400">· 06-09 预报</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">墨城 6/11 预报<b>雷暴 + 强降雨 + 最高 50km/h 阵风</b>，可能伴随冰雹——恰逢开幕式与揭幕战</div>
+      <p style="font-size:13.5px">墨西哥气象部门与多家媒体预报，6/11 周四下午起墨西哥城将出现<b>雷暴、强降雨与大风</b>（阵风最高约 50km/h），不排除冰雹；时间窗与 15:00 ET 的开幕式+揭幕战高度重叠。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：雨战+湿滑场地通常<b>压低传控质量、抬高定位球与远射权重</b>——进一步强化本场"低进球 + 定位球破局"的主线判断（利好 Under 2.5 的判读）；同时高球速雨地对门将是考验，墨西哥新启用的 Rangel 与南非 Williams 的雨战处理都是变量。海拔+雷雨双重环境，对来自海平面的南非更不友好。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.tudn.com/mundial-2026/mexico-vs-sudafrica/se-pronostican-lluvias-y-tormenta-dia-de-la-inauguracion-y-partido-mexico-vs-sudafrica-mundial-2026" style="color:var(--accent)">TUDN — 开幕日雷雨预报</a> · <a href="https://www.cronista.com/mexico/actualidad-mx/un-gran-muro-de-agua-caera-durante-la-inauguracion-del-mundial-advierten-tormenta-electrica-vientos-de-hasta-50-kmh-y-posible-granizada-el-jueves-11/" style="color:var(--accent)">El Cronista — 雷暴/大风/冰雹预警</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· 06-08 FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">揭幕战主裁敲定：巴西名哨 <b>Wilton Sampaio</b> 执法；VAR 为哥伦比亚 Nicolás Gallo</div>
+      <p style="font-size:13.5px">FIFA 已正式任命<b>巴西裁判 Wilton Sampaio</b> 执法 6/11 阿兹特克揭幕战，助理裁判为巴西的 Bruno Pires 与 Bruno Boschilia，VAR 由哥伦比亚的 Nicolás Gallo 担任。这是 Sampaio <b>第二次执法墨西哥队</b>的比赛（上一次为 2016 美洲杯百年纪念赛），他也是南美最有经验的国际级主裁之一，执法过 2022 世界杯。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：南美裁判通常对身体对抗的容忍度较高、判罚尺度偏"放"，理论上对身体更强硬、想压制对手的东道主墨西哥更友好；同时与本届"门将 8 秒、掷界 5 秒、仅队长可沟通"新规叠加，会进一步压缩南非"摆大巴 + 拖时间"的保平空间。Sampaio 经验丰富，VAR 半自动越位也将让临界判罚更快更准。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — 开幕战裁判任命</a> · <a href="https://ghanasoccernet.com/world-cup-2026-brazilian-referee-wilton-sampaio-to-officiate-mexico-south-africa-opener" style="color:var(--accent)">GhanaSoccernet — Sampaio 执法揭幕战</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读（lineup-watch 自动写入）===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130b">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 开球前官宣 · 双源核验</span></h2>
+    <div class="sub">官宣时点约 T-65（14:00 ET 前后）· 来源：The South African（官方确认稿）+ Khel Now / Bolavip 直播页交叉一致</div>
+
+    <h4>🇲🇽 墨西哥 官方 XI（4-3-3）<span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ 官方确认（双源一致）</span></h4>
+    <div class="lineup">Rangel; Reyes · Montes(C) · Vásquez · Gallardo; Lira · Fidalgo · Gutiérrez; Alvarado · Jiménez · Quiñones</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">替补席关键武器：Ochoa（40岁，候命冲击个人第6届世界杯出场）、<b style="color:#e2e8f0">Edson Álvarez（队长，意外坐席）</b>、Santiago Giménez、17岁 Gilberto Mora。</p>
+
+    <h4>🇿🇦 南非 官方 XI（5-3-2）<span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ 官方确认（双源一致）</span></h4>
+    <div class="lineup">Williams(C); Mudau · Okon · Mbokazi · Sibisi · Modiba; Mokoena · Sithole · Adams; Rayners · Foster</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">替补席关键武器：Zwane、Mofokeng、Appollis、Moremi——预测中的全部边路创造力球员集体待命。</p>
+
+    <h4>官方 vs 预测 对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="mx">墨 · 中场结构</td><td>Álvarez+Romo 双后腰</td><td><b>Lira · Fidalgo · Gutiérrez 三中场</b></td><td><b>全场最大爆点：队长 Edson Álvarez 替补</b>——面对铁桶阵，Aguirre 舍防守锚点换控球推进。</td></tr>
+      <tr><td class="mx">墨 · 右后卫</td><td>Sánchez</td><td>Reyes</td><td>沿用 5-1 胜塞尔维亚的右路，机动性更强，盯防南非反击出球点。</td></tr>
+      <tr><td class="mx">墨 · 左边锋</td><td>Huerta</td><td>Quiñones</td><td>沙特金靴（33球）状态正佳，增加一对一爆点与禁区终结。</td></tr>
+      <tr><td class="mx">墨 · 门将</td><td>Rangel</td><td>Rangel</td><td><b>与预测一致</b>：Ochoa 的第6届世界杯出场纪录暂缓；印证 Malagón 伤缺后的判断。</td></tr>
+      <tr><td class="sa">南非 · 阵型</td><td>四后卫 4-3-2-1</td><td><b>五后卫 5-3-2（+Sibisi）</b></td><td>Broos 比所有预测更保守——目标明确：守 0-0 或定位球偷 1 分。</td></tr>
+      <tr><td class="sa">南非 · 攻击组</td><td>Appollis · Mofokeng · Moremi</td><td><b>全部替补</b>，Rayners 搭档 Foster</td><td>放弃边路爆点，改打长传双前锋支点抢二点——反击路线完全改变。</td></tr>
+      <tr><td class="sa">南非 · 中场</td><td>Mbatha+Mokoena</td><td>Mokoena · Sithole · Adams</td><td>三工兵铺满中路，针对性封锁 Fidalgo 的接球区。</td></tr>
+    </table>
+
+    <h4>战术解读</h4>
+    <ul class="watch">
+      <li><b>速览结论：维持并强化</b>——墨西哥 4-3-3 控球围攻 vs 南非 5-3-2 铁桶，双方都按"低进球"剧本加码，墨胜 + Under 2.5 的主线判断不变。</li>
+      <li><b>Álvarez 替补是选择不是伤情</b>：对铁桶阵无需双后腰；若被反击得手，Aguirre 手握队长 + S. Giménez 两张后手牌。</li>
+      <li><b>南非雪藏全部创造力球员</b>：剧本是 0-0 拖到 60 分钟后再上 Zwane/Mofokeng 反咬——墨西哥最危险时段从"开场"后移到"换人后"。</li>
+      <li><b>雨战变量仍在</b>：海拔 + 雷雨下，南非 Rayners+Foster 的高球直击是唯一武器；Rangel 的雨地高球处理是墨方最大不确定点（与上方临场新闻判断一致）。</li>
+    </ul>
+
+    <div style="font-size:12px;margin-top:10px">来源：<a href="https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/bafana-bafana-starting-11-vs-mexico/" style="color:var(--accent)">The South African — Confirmed: 两队官方首发</a> · <a href="https://khelnow.com/football/world-football-mexico-starting-lineup-vs-south-africa-202606" style="color:var(--accent)">Khel Now — 墨西哥 XI + 完整替补席</a> · <a href="https://bolavip.com/en/world-cup/mexico-vs-south-africa-live-2026-world-cup-opening-game" style="color:var(--accent)">Bolavip — 比赛直播页（Confirmed lineups）</a></div>
+  </section>
+
+  <!-- ===== 1 数据面 ===== -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 预期进球 xG · 进球/失球 · 排名 · 赔率隐含概率 — 图表均为已核实数据</div>
+
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>墨西哥 金杯2025 预期进球画像（场均）</h5><canvas id="xgChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>本场赔率隐含胜率（去水后）</h5><canvas id="oddsChart"></canvas></div>
+      <div class="chartbox"><h5>A组夺组热度（隐含概率%）</h5><canvas id="groupChart"></canvas></div>
+    </div>
+
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇲🇽 墨西哥</th><th>🇿🇦 南非</th></tr>
+      <tr><td>FIFA 排名</td><td class="mx">15</td><td class="sa">60</td></tr>
+      <tr><td>全队身价</td><td class="mx">€194.6m</td><td class="sa">€52.7m（最终26人 ~€45.3m）</td></tr>
+      <tr><td>预期进球 xG（最近正赛）</td><td class="mx">2.41 / 场（金杯，全场最佳）</td><td class="sa">数据有限（预选 10场进球偏少）</td></tr>
+      <tr><td>预期失球 xGA</td><td class="mx">0.85 / 场（金杯，全场最佳）</td><td class="sa">防守稳，失球多源于个人失误</td></tr>
+      <tr><td>近期战绩</td><td class="mx">近5不败，仅失1球；3月 0-0 葡萄牙、1-1 比利时</td><td class="sa">预选10场 5胜3平2负（压尼日利亚出线）；3月 1-1、1-2 巴拿马</td></tr>
+      <tr><td>本场胜平负赔率(bet365 06-08)</td><td class="mx">1.48</td><td class="sa">平 4.33 / 胜 6.50</td></tr>
+      <tr><td>隐含胜率(去水)</td><td class="mx">≈63.7% <span class="tag">已升至 66-70%，见🔥市场热度</span></td><td class="sa">平 21.8% / 胜 14.5%</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="mx">2 次，墨西哥 0 胜（含 2010 世界杯揭幕 1-1）</td></tr>
+    </table>
+    <div class="note">📌 进球预期：墨西哥进攻除 Jiménez 外缺爆点 + 南非"创造机会但浪费多"，双向画像共同指向<b>低比分</b>，与市场 Under 2.5 倾向一致。</div>
+  </section>
+
+  <!-- ===== 1B 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 新模块 · 名人推荐 / 赔率变动 / 资金面 / 舆论</span></h2>
+    <div class="sub">赔率里有多少是"情绪溢价"？四个信号 + 合成过热指数 — 全部真实数据带来源</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · 显著偏热（墨西哥方向）</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">舆论近乎一边倒 + 赔率持续向墨压缩（1.48→1.42）。但基本面同样支持墨胜，属"热得有道理、价值被吃掉"，而非非理性狂热。</div>
+    </div>
+
+    <h4>① 名人 / 专家推荐聚合（14 个信源 · 方向统计：押墨 9 · 押小球 3 · 押南非受让 1 · 押南非爆冷 1）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th><th>方向</th></tr>
+      <tr><td>David Faitelson</td><td>TUDN 名嘴（墨西哥最具影响力体育评论员之一）</td><td>"正常情况下墨西哥该明白地赢"，但警告这场是"墨西哥 vs 自己"，情绪控制是关键</td><td><span class="pill pmx">墨胜·带保留</span></td></tr>
+      <tr><td>Alex Blowers</td><td>VSiN（拉斯维加斯投注网络）</td><td>Mexico Win to Zero 2.00："南非的进攻火力撑不起爆冷"</td><td><span class="pill pmx">墨胜零封</span></td></tr>
+      <tr><td>Martin Green</td><td>SportsLine 认证盈利专家</td><td>主推 Under 2.5："墨西哥近7场6场小于2.5球"</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">小球</span></td></tr>
+      <tr><td>SportsGambler 专家组</td><td>投注分析站</td><td>最激进的一档：墨西哥<b>亚盘 -1.25</b>，看赢 2 球+，正确比分 2-0 (5.40)</td><td><span class="pill pmx">墨大胜</span></td></tr>
+      <tr><td>OddsShark</td><td>北美赔率媒体</td><td>墨西哥至少进 2 球</td><td><span class="pill pmx">墨攻强</span></td></tr>
+      <tr><td>LiveScore / Squawka</td><td>英系比分/数据媒体</td><td>东道主稳拿揭幕战；模型重复出现 1-0 / 2-0</td><td><span class="pill pmx">墨胜</span></td></tr>
+      <tr><td>Bleacher Report</td><td>全小组赛逐场预测</td><td>墨西哥胜</td><td><span class="pill pmx">墨胜</span></td></tr>
+      <tr><td>SportsCasting 超算</td><td>模型</td><td>墨胜概率 67.7%，A组最一边倒场次；最可能比分 1-0</td><td><span class="pill pmx">墨胜</span></td></tr>
+      <tr><td>Nate Silver 模型</td><td>10万次全赛事模拟</td><td>墨西哥小组头名为基准剧本（Elo 1800 vs 1526，出线概率 95% vs 35%）</td><td><span class="pill pmx">墨强势</span></td></tr>
+      <tr><td>RotoWire · Courtin</td><td>战术分析师</td><td>"南非能制造约30分钟麻烦，随后质量与环境显现"</td><td><span class="pill pmx">墨胜</span></td></tr>
+      <tr><td>AI 面板 · Claude</td><td>NYSportsDay 三模型实验</td><td>墨胜 1.44 是"可辩护而非虚高"的价格；10 模型集成 100% 共识墨胜（xG 1.80 vs 0.50）</td><td><span class="pill pmx">墨胜</span></td></tr>
+      <tr><td>AI 面板 · ChatGPT</td><td>同上</td><td>反向取安全垫：<b>南非 +1.5 (1.57)</b>——"墨西哥会赢，但赢不了两球"；引用 2010 揭幕 1-1</td><td><span class="pill psa">南非受让</span></td></tr>
+      <tr><td>AI 面板 · Gemini</td><td>同上</td><td>无视胜负盘，直取 <b>Under 2.5 (1.71)</b>：揭幕战结构性保守</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">小球</span></td></tr>
+      <tr><td>Steven Pienaar 等</td><td>南非传奇（前埃弗顿核心）+ 南非名宿团</td><td>公开预测南非爆冷"Aztecazo"——唯一的反向名人声音（有主队立场）</td><td><span class="pill psa">南非爆冷</span></td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号</b>：14 个信源里 0 个中立方押南非赢——胜负方向上的共识已经一边倒到极致。值得注意的分歧全部在<b>幅度</b>上：SportsGambler 看赢 2 球+，而 ChatGPT/市场让球盘（墨 -1.5 仅 2.25~2.30，隐含 43%）都说"赢但赢不大"。即：市场对"墨胜"定价过热，对"墨大胜"反而谨慎。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动追踪（钱在往墨西哥流）</h4>
+    <table>
+      <tr><th>时点</th><th>书商/市场</th><th>墨胜</th><th>隐含概率</th><th>解读</th></tr>
+      <tr><td>06-08 早段</td><td>bet365</td><td class="mx">1.48</td><td>≈63.7%（去水）</td><td>本报告原快照</td></tr>
+      <tr><td>06-08</td><td>DraftKings / Lucky Rebel</td><td class="mx">1.44</td><td>≈66%</td><td>开始压缩</td></tr>
+      <tr><td>06-09/10</td><td>DraftKings 现价</td><td class="mx">1.42</td><td>≈68-70%</td><td>临场资金继续涌向墨</td></tr>
+      <tr><td>06-10</td><td>预测市场聚合（VWAP）</td><td colspan="2" class="mx">69.0¢ · 30天 +4.5¢</td><td>动量确认：单边升温</td></tr>
+    </table>
+    <div class="note">📌 <b>方向一致的单边移动</b>（1.48 → 1.42，约 +5pp；预测市场 30 天墨 +4.5¢、南非 -3.6¢）说明公众与大额资金同向押墨，无"聪明钱反向"迹象；想跟墨胜的价值窗口已基本关闭，反而平局 4.20/4.40、南非 6.50/8.00 的价格因无人问津而被动变"宽"。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场资金面（Kalshi / Polymarket / Gemini 三平台，DefiRate 每30分钟聚合）</h4>
+    <table>
+      <tr><th>结果</th><th>聚合价(VWAP)</th><th>Kalshi</th><th>Polymarket</th><th>Gemini</th><th>合约量</th><th>30天动量</th></tr>
+      <tr><td class="mx">墨西哥胜</td><td class="mx"><b>69.0%</b></td><td>69.5¢ ($216.4K)</td><td>68.5¢ ($333.0K)</td><td>69.5¢</td><td><b>$549.3K</b></td><td style="color:#4ade80">↑ +4.5</td></tr>
+      <tr><td>平局</td><td>20.5%</td><td>20.5¢ ($10.8K)</td><td>20.5¢ ($28.9K)</td><td>20.5¢</td><td>$39.7K</td><td>↓ -0.3</td></tr>
+      <tr><td class="sa">南非胜</td><td class="sa">10.5%</td><td>10.5¢ ($53.9K)</td><td>10.5¢ ($127.3K)</td><td>10.5¢</td><td>$181.2K</td><td style="color:#f87171">↓ -3.6</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>共识强度</b>：三平台价差仅 1¢，套利扫描全部"不可操作"——全球盘（Polymarket）与美国盘（Kalshi）对本场<b>零分歧</b>，定价高度有效。</li>
+      <li><b>资金结构异象</b>：南非合约量 $181K 是平局 $39.7K 的 4.6 倍——典型<b>长射彩票心态</b>（小额买梦想）；但价格仍跌 3.6¢，说明卖压更大。平局是被两头资金共同忽视的"无聊选项"。</li>
+      <li><b>衍生市场</b>：Kalshi 给墨西哥夺 A 组头名 57%、晋级 32 强 84%；全赛事预测市场体量赛前已破 <b>$20 亿</b>（史上最大体育预测市场事件），本场量级开赛前还会放大。</li>
+    </ul>
+
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>多源胜率对比：墨西哥胜（%）— 共识区间 64-70</h5><canvas id="mktChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">④ 社媒 / 舆论热度</h4>
+        <ul class="cl">
+          <li>墨城为揭幕战进入"半停摆"：学校停课、企业转远程，87,000 满场 —— 全国性情绪事件。</li>
+          <li>传奇表演赛墨西哥 5-2 南非（TUDN 全网刷屏），进一步强化"必胜"叙事。</li>
+          <li>反向声量基本只来自南非媒体生态（SuperSport/iDiski"Aztecazo"话题）。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是教科书式的"东道主揭幕战过热"——名人一边倒、全民情绪、赔率单边压缩三者共振。对分析的意义：<b>64% 不是上限而是下限</b>，市场共识已抬到 66-70%；若想找被忽视的角度，平局与"南非 0-1 小负"区间才是市场情绪留下的盲点。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://vsin.com/soccer/mexico-vs-south-africa-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Blowers pick/DK赔率</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-africa-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Green</a> · <a href="https://www.infobae.com/mexico/deportes/2026/06/07/david-faitelson-brinda-su-pronostico-para-la-inauguracion-del-mundial-2026-entre-mexico-y-sudafrica/">Infobae — Faitelson</a> · <a href="https://oem.com.mx/esto/mundial-2026/leyendas-de-sudafrica-predicen-una-victoria-sobre-mexico-para-hacer-un-aztecazo-en-el-mundial-2026-30405431">ESTO — Pienaar/南非名宿</a> · <a href="https://www.sportscasting.com/news/supercomputer-mexico-vs-south-africa-betting-picks/">SportsCasting 超算</a> · <a href="https://bleacherreport.com/articles/25435511-world-cup-2026-match-predictions-all-group-fixtures">B/R 逐场预测</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/mexico/">DefiRate — Kalshi/Polymarket</a> · <a href="https://www.kucoin.com/news/flash/polymarket-and-kalshi-see-2-billion-in-fifa-world-cup-bets-before-kickoff">$2B 预测市场体量</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760415">ESPN Odds</a> · <a href="https://www.oddschecker.com/us/soccer/world-cup/mexico-v-south-africa">oddschecker</a> · <a href="https://www.sportsgambler.com/betting-tips/football/mexico-vs-south-africa-prediction-lineups-odds-2026-06-11/">SportsGambler</a> · <a href="https://www.oddsshark.com/soccer/world-cup/mexico-south-africa-odds-picks-2026">OddsShark</a> · <a href="https://www.livescore.com/en/news/football/world-cup/predictions/mexico-vs-south-africa-predictions-co-hosts-to-claim-win-in-world-cup-opener/">LiveScore</a> · <a href="https://www.nysportsday.com/2026/06/08/chatgpt-claude-gemini-mexico-vs-south-africa-predictions-world-cup-2026/">NYSportsDay — AI三模型面板</a> · <a href="https://www.natesilver.net/p/world-cup-2026-odds-predictions">Nate Silver</a></div>
+  </section>
+
+  <!-- ===== 2 首发球员近期表现 ===== -->
+  <section>
+    <h2><span class="n">2</span> 首发球员 & 近期表现 <span class="tag">预测版，官方版见上方✅模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方）· 身价与状态 — 关键球员逐一</div>
+
+    <h4>🇲🇽 墨西哥 预测首发（4-2-3-1，Aguirre 末战热身阵型）</h4>
+    <div class="lineup">Rangel; Sánchez · Montes · Vásquez · Gallardo; Álvarez · Romo; Alvarado · Fidalgo · Huerta; Jiménez</div>
+    <table>
+      <tr><th>球员</th><th>位置</th><th>俱乐部</th><th>身价</th><th>近期 / 备注</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>中锋</td><td>Fulham</td><td>€5.0m</td><td>队内最可靠终结点；2025国联决赛阶段4球；定位球+点球主罚</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>边锋</td><td>Al-Qadsiah</td><td>€12.0m</td><td>沙特赛季高产（超 Toney/C罗）；对比利时全场最佳</td></tr>
+      <tr><td class="mx">Álvaro Fidalgo</td><td>中场</td><td>América</td><td>€9.0m</td><td>归化中场，3月窗控节奏出色，可能首发</td></tr>
+      <tr><td class="mx">Edson Álvarez</td><td>后腰/队长</td><td>Fenerbahçe</td><td>€25.0m</td><td>队内最高身价；<b>健康入选并留任队长</b>，4-2-3-1 双后腰锚点</td></tr>
+      <tr><td class="mx">César Montes / J. Vásquez</td><td>中卫</td><td>Lokomotiv / Genoa</td><td>€4.5m / €14m</td><td>欧洲历练、搭档稳定</td></tr>
+      <tr><td class="mx">Jesús Gallardo</td><td>左后卫</td><td>—</td><td>—</td><td>队内资历最深之一（100+ 场），负责左路传中</td></tr>
+      <tr><td class="mx">Raúl Rangel</td><td>门将</td><td>Guadalajara</td><td>—</td><td><b>Malagón 因伤落选</b>，Rangel 升为头号门将人选（3 月两场热身表现好）；以赛前官方为准</td></tr>
+    </table>
+
+    <h4>🇿🇦 南非 预测首发（4-3-2-1）</h4>
+    <div class="lineup">Williams; Mudau · Okon · Mbokazi · Modiba; Mbatha · Mokoena; Appollis · Mofokeng · Moremi; Foster</div>
+    <table>
+      <tr><th>球员</th><th>位置</th><th>俱乐部</th><th>身价</th><th>近期 / 备注</th></tr>
+      <tr><td class="sa">Lyle Foster</td><td>中锋</td><td>Burnley</td><td>€10–12m</td><td>队内最高身价；国家队 10球/24场；状态起伏是球队命门</td></tr>
+      <tr><td class="sa">Oswin Appollis</td><td>边锋</td><td>Orlando Pirates</td><td>€2m</td><td>最当红；预选 4 助攻全队最多；8 个国家队进球</td></tr>
+      <tr><td class="sa">Relebohile Mofokeng</td><td>边锋</td><td>Orlando Pirates</td><td>€2m</td><td>21岁，非洲最贵 U23（R68.6m）；敢于一对一</td></tr>
+      <tr><td class="sa">Teboho Mokoena</td><td>中场枢纽</td><td>Mamelodi Sundowns</td><td>—</td><td>连接攻防，调度+定位球主罚</td></tr>
+      <tr><td class="sa">Mbekezeli Mbokazi</td><td>中卫</td><td>Orlando Pirates</td><td>—</td><td>防守支柱 + 世界级远射（对巴拿马远程世界波）</td></tr>
+      <tr><td class="sa">Ronwen Williams</td><td>门将</td><td>Mamelodi Sundowns</td><td>—</td><td>队长，60+场；2023非洲杯点球大战连扑4个封神</td></tr>
+    </table>
+    <div class="note">说明：身价"—"表示本次未取到精确值；生产版 agent 会从 Transfermarkt/FotMob 自动补全全部 26 人身价、俱乐部赛季出场/进球/助攻/评分。</div>
+  </section>
+
+  <!-- ===== 3 阵容分析 ===== -->
+  <section>
+    <h2><span class="n">3</span> 阵容深度分析</h2>
+    <div class="sub">深度 · 年龄结构 · 经验 · 关键缺阵</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 墨西哥</div>
+        <div class="role">老将+新生代混合 · Aguirre 第三度执教</div>
+        <ul class="cl">
+          <li><b>经验值</b>：Ochoa 有望迎来第 6 届世界杯（与梅西/C罗并肩纪录）；Gallardo 100+ 场。</li>
+          <li><b>深度</b>：锋线 Jiménez / Quiñones / Alvarado / Lozano / S.Giménez 多点，身价与厚度全面碾压本组。</li>
+          <li><b>隐患</b>：主力门将 Malagón 因伤落选，由 Rangel 等顶上；右后卫伤兵（Huescas）；全主力磨合时间偏少（3月两场曾缺 12 名主力）。Álvarez/Montes/Chávez 伤情已随末战出场解除。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 南非</div>
+        <div class="role">本土PSL为主 + 少量旅欧 · Broos 谢幕季</div>
+        <ul class="cl">
+          <li><b>核心旅欧</b>：Foster（英超 Burnley）是唯一顶级联赛常规主力；其余多来自 Orlando Pirates / Sundowns。</li>
+          <li><b>年轻冲击</b>：Mofokeng(21)、Appollis 边路速度是反击爆点。</li>
+          <li><b>命门</b>：Foster 之外无稳定终结点；左后卫轮换、整体身价仅墨西哥 1/4，正面对攻吃亏。</li>
+          <li><b>插曲</b>：赴墨签证风波导致行程延后，备战受一定干扰。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4 战术风格 ===== -->
+  <section>
+    <h2><span class="n">4</span> 球队战术风格 & 对位</h2>
+    <div class="sub">阵型 · 攻防结构 · 关键对位</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>综合实力画像（分析师综合评估，0–10）</h5><canvas id="radarChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">对位关键</h4>
+        <ul class="cl">
+          <li><b>墨西哥控球 vs 南非低位块</b>：墨西哥从后场组织、边路 Quiñones/Alvarado 突破；南非官宣改打 <b>5-3-2</b> 收缩（比预测更保守）、Mokoena 居中扫荡。</li>
+          <li><b>南非反击 vs 墨西哥转换</b>：官方首发改打 Rayners+Foster 长传双支点抢二点，Appollis/Mofokeng 留作 60 分钟后手牌；墨西哥失球瞬间的退防是关键。</li>
+          <li><b>定位球</b>：双方都靠定位球破密集防守——这是低进球剧本里最现实的得分方式。</li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>展开：双方战术细节</summary>
+      <div class="body">
+        <h4>🇲🇽 墨西哥 4-3-3</h4>
+        <p style="font-size:14px">Aguirre 体系强调<b>从后场出球 + 快速传导 + 防守纪律</b>；Edson Álvarez（若健康）作单后腰锚点，控节奏护防线。主场+海拔历来对欧/亚对手有利。短板：高强度逼抢下出球易失误、下半场换人后节奏回落。</p>
+        <h4>🇿🇦 南非 4-3-2-1 <span class="tag">赛前推测；官宣为 5-3-2，见上方✅模块</span></h4>
+        <p style="font-size:14px">Broos 强调<b>统一身份、紧凑防守块 + 快速反击 + 定位球</b>；Williams 门线定海神针，Mbokazi 远射是奇兵。问题是终结效率——3月对巴拿马多次错失必进球。</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===== 5 主教练风格 ===== -->
+  <section>
+    <h2><span class="n">5</span> 主教练风格</h2>
+    <div class="sub">执教哲学 · 战术倾向 · 临场</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">Javier Aguirre</div>
+        <div class="role">墨西哥 · 第三度执教（生涯老帅）</div>
+        <ul class="cl">
+          <li>战术<b>多变</b>，让对手难以预判（俱乐部时期用过 5-3-2/3-5-2，国家队定型 4-3-3）。</li>
+          <li>核心：平衡而非花哨、从后场build-up、根据比分/对手灵活切换形态。</li>
+          <li>战绩背书：上任后拿 2025 国家联赛 + 金杯两冠，重建球队身份。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">Hugo Broos</div>
+        <div class="role">南非 · 74岁比利时名帅 · 生涯谢幕之战</div>
+        <ul class="cl">
+          <li>名言："我喜欢进攻足球，不会龟缩在离门60米处再反击"——但底层仍是<b>稳固防守 + 高效反击</b>。</li>
+          <li>强调<b>一致的身份与风格</b>、团队大于个人（敢弃名将）。</li>
+          <li>履历：2017 带喀麦隆夺非洲杯；2023 带南非非洲杯第4。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">6</span> 当值裁判 & 执法环境</h2>
+    <div class="sub">Wilton Sampaio：严厉度量化 · 对两队倾向性 · 大赛执法模式 — 数据均带来源</div>
+    <div class="note">✅ <b>已官宣（06-08）</b>：揭幕战主裁为<b>巴西名哨 Wilton Sampaio（44岁）</b>，助理 Bruno Pires、Bruno Boschilia（均巴西），VAR 为哥伦比亚 Nicolás Gallo。执法过 2022 世界杯 4 场（含英法 1/4 决赛）。</div>
+
+    <h4>执法严厉度（数据画像）</h4>
+    <div class="grid3">
+      <div class="stat"><div class="k">黄牌 / 场（生涯 311-341 场）</div><div class="v" style="color:var(--warn)">≈5.0</div><div class="k">本赛季 33 场更高：5.27 + 8 红</div></div>
+      <div class="stat"><div class="k">判点频率</div><div class="v" style="color:var(--warn)">0.22-0.24/场</div><div class="k">约 19-24% 的场次会出现点球</div></div>
+      <div class="stat"><div class="k">犯规判罚 / 场</div><div class="v" style="color:var(--warn)">≈27.9</div><div class="k">哨子偏碎 · 红牌出现在 ~16% 场次</div></div>
+    </div>
+    <table>
+      <tr><th>维度</th><th>数据 / 事实</th><th>对本场的含义</th></tr>
+      <tr><td>国内模式（巴甲）</td><td>5.3 黄/场、27.9 犯规/场、0.29 点/场——巴甲<b>最严出牌裁判之一</b></td><td>若按此尺度：南非"密集战术犯规拖节奏"的代价极高，累积黄牌还会波及后两轮小组赛</td></tr>
+      <tr><td>大赛模式（2022 世界杯）</td><td>4 场仅 <b>3.33 黄/场</b>，明显收哨；英法战上半场<b>未判 Kane 遭放倒的点球</b>（VAR 维持），赛后被 Maguire/Bellingham 公开批评"错判量惊人"</td><td>大赛上他倾向"让比赛流动、放身体对抗"——禁区内缠斗与定位球卡位的容忍度高，对防守方（南非）的定位球生存有利</td></tr>
+      <tr><td>对墨西哥历史</td><td>执法墨西哥 1 次：2016 美洲杯百年 <b>墨西哥 2-0 牙买加</b>（本场为第 2 次）；从未执法过南非</td><td>样本太小，<b>无可证实的队伍倾向</b>——倾向性判断应基于风格而非战绩</td></tr>
+      <tr><td>风格倾向（综合）</td><td>南美裁判 + 87,000 人满场主场。学界对主场判罚偏移（补时、出牌、点球）有大量文献支撑，属系统性小幅偏移而非个人问题</td><td>边际判罚（51:49 球）更可能吹向东道主；叠加他 19-24% 的判点率与墨西哥的禁区压境量，<b>墨西哥获点概率被双重抬升</b>（Jiménez 主罚点球）</td></tr>
+    </table>
+    <div class="flag">⚠ <b>两面性提醒</b>：他对南非并非全是坏消息——若沿用世界杯"放对抗"模式，南非的定位球防守缠斗和高强度逼抢更不容易被吹；真正的尾部风险是他<b>切回巴甲严出牌模式</b>，那么以犯规为生存手段的南非可能 20 分钟内吃 2-3 黄，被迫提前收缩。关注开场 15 分钟他对第一次战术犯规的处理——那是当天尺度的信号弹。</div>
+    <div class="src" style="margin-top:8px">来源：<a href="https://kickoffscore.com/referees/wilton-pereira-sampaio">KickoffScore — 生涯/本季判罚数据</a> · <a href="https://www.statshub.com/referee/pereira-sampaio-wilton/243701">StatsHub — 5.08黄/场</a> · <a href="https://corner-stats.com/wilton-pereira-sampaio/brazil/referee/1624">Corner-Stats — 点球/红牌</a> · <a href="https://www.nationalworld.com/sport/football/wilton-sampaio-who-england-vs-france-referee-french-world-cup-games-3949736">NationalWorld — 2022世界杯执法</a> · <a href="http://law5-theref.blogspot.com/2022/12/wilton-sampaio-in-quarterfinal-england.html">Law5 — 英法战判罚复盘</a> · <a href="https://www.gettyimages.com/detail/news-photo/referee-wilton-sampaio-in-actionduring-a-group-c-match-news-photo/539157100">2016美洲杯百年 墨-牙买加</a></div>
+    <h4>本届统一执法新规（对本场的影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球</b>：超时判对方禁区内间接任意球——压缩南非门将拖延空间。</li>
+      <li><b>掷界外球/球门球 5 秒倒计时</b>：超时改判对方球权——同样不利于"拖时间保平"。</li>
+      <li><b>仅队长可与裁判沟通</b>：其余球员围堵裁判直接黄牌——情绪管理更重要。</li>
+      <li><b>升级版半自动越位</b>：球内传感器 + 球员 3D 建模，临界越位判罚更快更准。</li>
+      <li><b>换人/伤停规则收紧</b>：被换下球员 10 秒内离场、伤停球员复赛后须场外至少 1 分钟。</li>
+    </ul>
+    <div class="note">综合影响：新规整体<b>压缩拖延、奖励持续进攻</b>，这对身价/控球占优、想掌控节奏的墨西哥相对有利；南非若想靠"摆大巴 + 消耗时间"偷分，难度被规则进一步抬高。</div>
+  </section>
+
+  <!-- ===== 7 记者/分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">7</span> 跟队记者 / 分析师洞察</h2>
+    <div class="sub">区分"一手事实"与"分析观点"，标注信源等级</div>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· B级 战术分析 · 浏览器抓取</small></div>"墨西哥赢下小组无悬念，主场+海拔优势赔率无法完全量化；南非能制造约30分钟麻烦，随后质量与环境开始显现。"</div>
+    <div class="insight"><div class="who">Tom Marshall · ESPN <small>· A级 跟队记者（墨城常驻）</small></div>用于核对墨西哥首发、门将之争（Rangel/Malagón）与 Álvarez 伤情等一手硬信息。</div>
+    <div class="insight"><div class="who">iDiski Times / SuperSport <small>· A/C级 南非跟队媒体</small></div>用于南非首发、Foster/Appollis 状态及签证风波等情境信息。</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· 官方 · Wenger 领衔逐场分析</small></div>赛后权威战术复盘，作为下一场预测输入。</div>
+  </section>
+
+  <!-- ===== 8 综合研判 ===== -->
+  <section>
+    <h2><span class="n">8</span> 综合研判 & 待核清单</h2>
+    <ul class="cl">
+      <li><b>最终结论（官宣后更新）：✅ 维持并强化</b>——双方官方首发（墨 4-3-3 控球三中场、南非 5-3-2 铁桶）都按"低进球+墨小胜"剧本加码；唯一新变量是 Álvarez 替补带来的转换期防守风险。</li>
+      <li><b>赛果倾向</b>：墨西哥胜，比分谨慎（1-0 / 2-0）；南非偷袭窗口由"开场"后移至"60分钟换上 Zwane/Mofokeng 之后"。</li>
+      <li><b>关键先生</b>：Jiménez（墨/支点+定位球）、Williams（南非/能单独改变比赛的门将）。</li>
+      <li><b>X 因素</b>：海拔对南非（海平面+旅欧球员）体能消耗；墨西哥下半场是否再松懈。</li>
+      <li><b>市场</b>：墨胜 + Under 2.5 是主线；南非全身而退（小负或平）即算成功。</li>
+    </ul>
+    <div class="flag">
+      ⚠ <b>待核（交叉验证项）</b>：<br>
+      ① 门将——<b style="color:#4ade80">✅ 已落定：Rangel 官宣首发</b>，Ochoa 替补待命（第6届世界杯出场纪录暂缓）。<br>
+      ② <b style="color:#4ade80">✅ 官方首发已公布并双源核验（见✅模块）</b>：墨 4-3-3（非预测的 4-2-3-1，Álvarez 替补）、南非 5-3-2（非预测的 4-3-2-1）。<br>
+      ③ 当值主裁已确认 <b>Wilton Sampaio（巴西）</b>。<br>
+      ④ 南非 xG 数据来源有限（非 CONCACAF 体系），生产版应接 FBref/Understat 国际赛数据补全。
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — Group A 战术/首发/赔率（浏览器抓取）</a><br>
+      • <a href="https://footystats.org/international/concacaf-gold-cup/xg">FootyStats — 金杯 xG（墨西哥 2.41/0.85）</a> · <a href="https://www.transfermarkt.us/mexico/startseite/verein/6303">Transfermarkt — 墨西哥 €194.6m</a> · <a href="https://www.transfermarkt.us/south-africa/kader/verein/3806">Transfermarkt — 南非 €52.7m</a><br>
+      • <a href="https://www.transfermarkt.us/lyle-foster/profil/spieler/467623">Transfermarkt — Lyle Foster</a> · <a href="https://www.kickoff.com/psl/orlando-pirates/where-appollis-and-mofokeng-rank-in-highest-valued-players-in-psl">KickOff — Appollis/Mofokeng 身价</a><br>
+      • <a href="https://www.theifab.com/news/the-ifab-introduces-further-measures-to-improve-match-flow-and-player-behaviour/">IFAB — 2026 执法新规</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">2026 World Cup officials</a><br>
+      • <a href="https://www.mykhel.com/cricket/mexico-fifa-world-cup-2026-tactics-how-javier-aguirre-s-4-3-3-shapes-el-tri-s-identity-430709.html">Aguirre 战术</a> · <a href="https://www.news24.com/sport/soccer/bafanabafana/no-favouritism-attacking-football-with-results-hugo-broos-outlines-bafana-bafana-philosophy-20210511">Broos 执教哲学</a> · <a href="https://www.aljazeera.com/sports/2026/5/31/south-africas-world-cup-2026-departure-delayed-over-mexican-visa-debacle">南非签证风波</a>
+    </div>
+  </section>
+
+  <div class="foot">"来源注册表 → 数据采集（联网搜索+网页抓取）→ 图文分析"完整样本 · 数据截至 2026-06-11 · 图表均为已核实数据，雷达图为分析师综合评估 · 仅供赛事分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',SA='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['墨西哥','南非'],datasets:[{data:[194.6,52.7],backgroundColor:[MX,SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('xgChart'),{type:'bar',
+ data:{labels:['场均 xG (攻)','场均 xGA (防)'],datasets:[{data:[2.41,0.85],backgroundColor:['#34d27b','#38bdf8'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:3,title:{display:true,text:'金杯2025 · 越高=攻强/防漏'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('oddsChart'),{type:'doughnut',
+ data:{labels:['墨西哥胜','平局','南非胜'],datasets:[{data:[63.7,21.8,14.5],backgroundColor:[MX,DR,SA],borderColor:'#161d2e',borderWidth:2}]},
+ options:{plugins:{legend:{position:'bottom'}},cutout:'58%'}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['墨西哥','捷克','韩国','南非'],datasets:[{data:[52,24,22,8],backgroundColor:[MX,'#7dd3fc','#a78bfa',SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'夺组隐含概率 %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('mktChart'),{type:'bar',
+ data:{labels:['bet365 去水 (06-08)','超算模型','Polymarket (06-10)','Kalshi/Gemini (06-10)','DraftKings (06-10)'],datasets:[{data:[63.7,67.7,68.5,69.5,69.5],backgroundColor:['#64748b','#7dd3fc','#a78bfa','#c4b5fd',MX],borderRadius:6}]},
+ options:{...noLeg,indexAxis:'y',scales:{x:{grid:{color:grid},min:55,max:75,title:{display:true,text:'墨胜概率 % · 越右=市场越热'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','身价深度','临场环境'],
+  datasets:[
+   {label:'墨西哥',data:[8.5,6.5,7.5,7,9,9],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'南非',data:[7,5,6.5,7,4,4],borderColor:SA,backgroundColor:SA+'33',pointBackgroundColor:SA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

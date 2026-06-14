@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Australia vs Türkiye · 2026 World Cup Group D</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-australia-vs-turkiye.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --au:#e0a514;--tr:#d0312d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#6b4f12,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241a0e,#152138);border:1px solid var(--line);border-left:4px solid var(--tr);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.au{color:#f0cf6b;font-weight:600}td.tr{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">⚽ 2026 World Cup · Group D Matchday 1 · Türkiye back after 24 years</span>
+  <span class="badge" style="background:linear-gradient(90deg,#9a7d12,#1d4a2a);margin-left:6px">🏁 FT Australia 2-0</span>
+  <h1>Australia vs Türkiye</h1>
+  <div class="meta">June 13, 2026 · BC Place, Vancouver (roof closed) · 21:00 PT (6/14 00:00 ET) · Group D (also: USA, Paraguay) · FS1</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0cf6b">🇦🇺 Australia</div><div class="rk">FIFA #27 (unverified) · Squad value ≈€41.3m · 6th consecutive appearance</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇹🇷 Türkiye</div><div class="rk">FIFA #22 · Squad value ≈€500m · First qualification in 24 years</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review module ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· FT Australia 2-0 Türkiye (HT 1-0) · Facts and analysis kept separate</span></h2>
+    <div class="sub">Pegged at a 19% win probability by the market, Australia counter-attacked efficiently to a 2-0 clean sheet over Türkiye, Irankunda striking in a flash and Metcalfe sealing it with a long-range shot. Another upset where backing the favorite blew up — the tournament's "back the favorite on the handicap" script has failed repeatedly.</div>
+
+    <h4 style="margin-top:6px">① How the goals came</h4>
+    <p style="font-size:13.5px">Australia struck first with a textbook counter: <b>27′ Nestory Irankunda finished off a lightning break</b> (Paul Okon-Engstler assist), 1-0 at the break. In the second half Türkiye pressed with possession but couldn't break through, and Australia held firm before adding a second — <b>Connor Metcalfe drilled a long-range shot into the corner</b>, locking up 2-0 with a clean sheet. Türkiye's first World Cup match in 24 years ended in defeat.</p>
+    <div class="lineup">27′ ⚽ Irankunda (AUS, Okon-Engstler assist · fast break)  ·  HT 1-0  ·  Türkiye pushed up in the second half to no avail  ·  ⚽ Metcalfe (AUS, long-range shot)  ·  FT 2-0 · Australia clean sheet</div>
+
+    <h4 style="margin-top:18px">② Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇦🇺 Australia</th><th>🇹🇷 Türkiye</th><th>One-line read</th></tr>
+      <tr><td>Score / margin</td><td class="au">2 goals · clean sheet</td><td class="tr">0 goals</td><td>Efficiency in front of goal + a leak-free defense is the entire logic of the 2-0</td></tr>
+      <tr><td>Attacking style</td><td class="au">Fast counter</td><td class="tr">Possession pressure</td><td>Türkiye held the ball but lacked penetration; Australia's two high-quality transitions were enough</td></tr>
+      <tr><td>First goal source</td><td class="au">Counter (Irankunda)</td><td class="tr">—</td><td>Right on the pre-match read that "Australia's hope lies in transitions and set pieces"</td></tr>
+      <tr><td>Second goal</td><td class="au">Long-range shot (Metcalfe)</td><td class="tr">—</td><td>Türkiye pushing up left space and were punished by a long-range shot</td></tr>
+      <tr><td>Key absence impact</td><td class="au">Fully fit</td><td class="tr">Missing Yıldız</td><td>Türkiye's attack lacked a spark, and their attacking options visibly shrank</td></tr>
+      <tr><td>Referee / discipline</td><td colspan="2" style="color:#cbd5e1">Referee Cesar Ramos (Mexico) / officiating crew · roof-closed neutral conditions, duels under control</td><td>BC Place's roof was closed, so no weather variable</td></tr>
+    </table>
+    <div class="note">Data sources: <a href="https://theanalyst.com/articles/australia-vs-turkiye-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760421/turkiye-australia" style="color:var(--accent)">ESPN</a> · <a href="https://www.foxsports.com/live-blog/soccer/australia-vs-turkiye-live-updates-score-top-plays-from-todays-action" style="color:var(--accent)">FOX Sports</a> (score/goals agree across ≥2 sources; full possession/xG panel pending Opta update, style descriptions used for now).</div>
+
+    <h4 style="margin-top:18px">③ Tactical review</h4>
+    <div class="insight"><div class="who" style="color:#f0cf6b">Australia: a low-value side won on paper-beating "efficient transitions + clean sheet"</div>Worth only about €41m and pegged by the market at a 19% win probability, Australia nonetheless took 2-0 with two high-quality counters + a full clean sheet. <b>This shows this Australia side's realistic weapons are pragmatic defending + fast transitions + set pieces (8 corner/free-kick goals in qualifying, second in the AFC)</b> — they won't go ball-for-ball with you on possession; they compete on chance efficiency and organizational discipline, exactly the scoring path flagged pre-match.</div>
+    <div class="insight"><div class="who" style="color:#f08a82">Türkiye: without Yıldız, possession with no penetration</div>Türkiye held the ball but scored 0, and pushing up in the second half got them punished by a long-range shot. <b>This shows that without a spark like Yıldız, this Türkiye side's positional attack lacks the final pass/shot to break down a packed defense</b> — Arda Güler stepping up still can't solve it alone; possession quality ≠ threat, a structural concern.</div>
+    <div class="insight"><div class="who" style="color:#f0cf6b">Metcalfe's long-range shot = the standard punishment for pushing up and leaving space</div>The second goal came from the gap left after Türkiye committed everyone forward. <b>This shows Australia knew exactly what they had to do: defend first, then turn the opponent's recklessness into a second strike</b> — that game-management ability is the experience dividend of an established World Cup side (6 in a row).</div>
+    <div class="insight"><div class="who" style="color:var(--warn)">Another "back the favorite" blow-up — the tournament's running handicap warning</div>After Switzerland were held by Qatar, Türkiye — a 13x squad-value favorite with a tightening price — also lost. <b>This shows that in the tournament's opening stage the gap between strong and weak is being systematically overrated by the market</b>: minnows' organization and favorites' lack of cohesion coexist, and "blindly backing the favorite on the handicap" carries very high risk.</div>
+
+    <h4 style="margin-top:18px">④ Prediction reconciliation (checking each pre-match call)</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td>Türkiye narrow win (implied ≈55%) · consensus 0-1/2-1 low-scoring</td><td style="color:var(--bad);font-weight:700">✗ Major miss</td><td>Australia won 2-0; the favorite direction was completely backwards</td></tr>
+      <tr><td>Price tightening 1.80→1.74 (money on Türkiye)</td><td style="color:var(--bad);font-weight:700">✗ Off</td><td>The side the money flowed to lost; the line move was a reverse signal</td></tr>
+      <tr><td>Yıldız likely injured out · Arda Güler steps up</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>Yıldız was indeed out, and the impact of his absence on Türkiye's attack was underrated</td></tr>
+      <tr><td>Australia's hope = transitions + set pieces</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>The first goal was exactly a fast counter; the scoring-path read was accurate</td></tr>
+      <tr><td>Low-scoring game (consensus under)</td><td style="color:var(--warn);font-weight:700">~ Split</td><td>2 total goals is indeed not high, but the "Türkiye win" under script was wrong</td></tr>
+    </table>
+    <div class="flag"><b>Reconciliation summary:</b> the result direction was a <b>major reverse call</b> — we treated Türkiye as the favorite and underrated both the impact of missing Yıldız and Australia's pragmatic efficiency. But the "Australia scores via transitions/set pieces" path read landed. Stacked with the Switzerland upset draw, the tournament's "back the favorite on the handicap" has now blown up two matches in a row; the pricing of the strong-weak gap must be corrected.</div>
+
+    <h4 style="margin-top:18px">⑤ Forward carry-over (into next match)</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#f0cf6b"><div class="who" style="color:#f0cf6b">🇦🇺 Australia → next vs USA (6/19, Seattle)</div>
+        ① <b>The counter template may not work against the USA</b>: the USA beat Paraguay 4-1 in round 1 with fierce firepower and will keep the ball proactively, so Australia will need even stronger defensive resilience than here;<br>② <b>Set pieces = a repeatable weapon</b>: against the USA they remain the most realistic scoring source (their hallmark of 8 goals in qualifying);<br>③ <b>Morale and health</b>: clean sheet + fully fit + an upset win mean maxed confidence, but against the pace of Balogun/Reyna the defense must recover into position faster on the transition.</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇹🇷 Türkiye → next vs Paraguay (6/19-20, Santa Clara)</div>
+        ① <b>Must solve breaking down a packed defense</b>: the no-penetration possession problem here will recur against a Paraguay who also sit deep (lost 1-4 in round 1, but structure is their strength); Yıldız's return or a new way to unlock defenses is needed;<br>② <b>Yıldız's fitness is the key variable</b>: whether he rejoins directly determines Türkiye's attacking ceiling;<br>③ <b>Mental reset</b>: an opening upset loss + pressure to advance mean they must avoid being caught on the counter again by Paraguay (whose Enciso could return as soon as this match and is a counter threat).</div>
+    </div>
+    <div class="note" style="margin-top:14px">Below is this match's <b>full pre-match analysis archive</b> (key pre-game news, official lineups, the data picture, market activity, referee profile, etc. preserved as-is, as the basis for the prediction reconciliation).</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">Vancouver's late-night slot hides one of the tournament's <b>most lopsided squad-value gaps: Türkiye ≈€500m, roughly 13 times Australia's</b>. Montella's Türkiye arrives on an 8-match unbeaten run (7 wins in the last 8) with the golden midfield of Güler (Real Madrid, 6 goals 12 assists this season) + Çalhanoğlu (Inter), returning to a World Cup stage it has missed for 24 years; the big bad news is that <b>Juventus forward Yıldız (10 goals 6 assists in Serie A) is likely out of the opener with a calf injury</b>. Popovic's Australia is fully fit and anchored in the defensive discipline of a back three, with the attack staked on naturalized rising star <b>Mohamed Toure</b>, who scored 10 in 12 in the second half of the season. Odds imply a Türkiye win probability of ≈55% and the price keeps tightening toward the Turks (1.80→1.74); expert direction is one-sided (≈6 outlets on Türkiye vs 0 on Australia), with the only split on totals. Reference script: the teams have met twice (2004 friendlies), Türkiye winning both.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Türkiye implied win prob (de-vigged)</div><div class="v" style="color:#f08a82">≈55%</div></div>
+      <div class="key"><div class="k">Squad value ratio</div><div class="v">≈13×</div></div>
+      <div class="key"><div class="k">Türkiye last 8</div><div class="v" style="color:#f08a82">7W, unbeaten</div></div>
+      <div class="key"><div class="k">Yıldız</div><div class="v" style="color:var(--bad)">Injury doubt</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Güler's right half-space</b>: his Real Madrid growth curve carrying over to the national team — his vertical link with Çalhanoğlu is Türkiye's main scoring axis.</li>
+      <li><b>The Yıldız ripple effect</b>: without the Serie A starlet, Türkiye's wide spark drops a tier — Aktürkoğlu (the playoff match-winner) carries double the load.</li>
+      <li><b>Australia's back-three block</b>: Souttar made the squad 14 months after a serious Achilles injury — his aerial duel against Türkiye's crossing game is a head-on collision.</li>
+      <li><b>Late-night slot + closed roof</b>: climate-controlled, windless indoor conditions — a pure tactical execution match with environmental variables near zero.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: key pre-match news ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Pre-Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · With sources + why it matters</span></h2>
+    <div class="sub">First-hand news and fitness signals affecting this match, with item-by-item explanations of how each changes tactics or outcome</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 Pre-Match Update · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">🆕 <b>Türkiye's Arda Güler has fully recovered</b>: his end-of-season injury has healed, and he is expected to start and could become one of the standouts of this tournament — partly offsetting the creative loss from Yıldız's absence. <span style="color:var(--mut)">🔑 Güler takes over the final-third orchestration, so Türkiye's attack will not stall despite Yıldız being out.</span></p>
+      <p style="margin-bottom:6px">⚠ <b>Yıldız is likely out</b> (calf injury, training alone in recent days); <b>Ferdi Kadıoğlu is a doubt</b>. Australia have no significant injuries and a fully available squad.</p>
+      <p style="margin-bottom:0">Predicted XI — Türkiye 4-2-3-1: <b>Çakır; Çelik, Demiral, Bardakçı, Kadıoğlu; Çalhanoğlu, Yüksek; Güler, Kökçü, Yıldız; Aktürkoğlu</b>. Odds: Türkiye <b>1.67</b> (4/6) / Australia <b>5.00</b> (4/1). <span style="font-size:12px;color:var(--mut)">Sources: <a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html" style="color:var(--accent)">Sports Mole</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">Türkiye · Injuries <span style="color:var(--mut);font-weight:400">· 06-11 pre-match assessment · single source, unverified</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Yıldız (Juventus, 10 goals 6 assists in Serie A) likely out of the opener with a calf injury</b>; Güler fully recovered from his late-season knock</div>
+      <p style="font-size:13.5px">Türkiye's most anticipated "twin-star link-up" is down to one star: Kenan Yıldız is expected to miss the opener with a calf injury; the good news is Arda Güler has fully recovered, and Kadıoğlu is back in full training. Up front, playoff-final match-winner Aktürkoğlu and Gül are expected to step in.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Yıldız is Türkiye's only wide player who can "beat his man one-on-one"; without him, the entire attack flows back through the central Güler-Çalhanoğlu link — and Australia's back three + double pivot is designed precisely to clog the middle. This injury pulls the "Türkiye should win" consensus from the 2-goal tier back to the 1-goal tier, and it is the Under camp's strongest argument. <span style="color:var(--warn)">[Defer to the official pre-match team sheet]</span></div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html" style="color:var(--accent)">Sports Mole — Türkiye injuries/predicted XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Australia · Positive news <span style="color:var(--mut);font-weight:400">· Squad signals</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Australia is <b>fully fit</b>; Souttar makes the cut 14 months after a serious Achilles injury, naturalized rising star Volpato gets his first call-up</div>
+      <p style="font-size:13.5px">Popovic has no injuries to manage: Leicester City tower Harry Souttar, 14 months on from a ruptured Achilles, started consecutive matches and scored late in the season and made the final squad; Boyle, Borrello, Gauci and Rowles missed out; former Roma academy product Volpato completed naturalization for his first call-up. The attack is built around Mohamed Toure (Norwich), who scored 10 in 12 in the second half of the season.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: for a team worth 1/13th of its opponent, "fully fit + structurally intact" is the entire bankroll. Souttar's return directly restores the central axis of the back three and aerial dominance at both ends of set pieces — Türkiye's crosses and corners (Çalhanoğlu on duty) target exactly that spot. Toure's form decides whether Australia's counters have any finishing ability at all.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.squawka.com/en/news/world-cup/australia-vs-turkey-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — Australia team news</a> · <a href="https://www.sen.com.au/news/2026/05/31/world-cup-news-socceroos-squad-tony-popovic" style="color:var(--accent)">SEN — squad</a> · <a href="https://en.wikipedia.org/wiki/Harry_Souttar" style="color:var(--accent)">Souttar comeback background</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match-day conditions <span style="color:var(--mut);font-weight:400">· 06-12 forecast</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Vancouver sunny and warm (23-26°C), <b>BC Place roof will stay closed</b> — a climate-controlled indoor match, environmental variables near zero</div>
+      <p style="font-size:13.5px">Match day in Vancouver is clear with highs around 23–26°C; BC Place has confirmed the roof will be closed, keeping the pitch climate-controlled and windless. This is the only match of the round played "indoors."</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: no heat, no wind, no rain — passing precision and set-piece execution take no discount, making this a "laboratory conditions" contest of pure tactics and individual quality. Neutral-to-favorable for the more technical Türkiye; Australia loses "environmental chaos," a potential underdog card.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.vancouverisawesome.com/local-news/metro-vancouver-weather-temps-world-cup-rain-2026-12403704" style="color:var(--accent)">Vancouver Is Awesome — weather</a> · <a href="https://anywherevancouver.com/vancouver-weather-forecast-hot-sunny-fifa-world-cup/" style="color:var(--accent)">AnywhereVancouver — forecast</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match referee · Confirmed <span style="color:var(--mut);font-weight:400">· ESPN + FIFA official list</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Venezuelan referee <b>Jesús Valenzuela</b> takes charge (VAR: Michael Orue) — <b>the most card-happy</b> of today's four referees</div>
+      <p style="font-size:13.5px">The match is officiated by Venezuela's <b>Jesús Valenzuela</b> (42, FIFA since 2013), with assistants Urrego and Moreno and Michael Orue on VAR — confirmed by both ESPN and the FIFA official list (<b>upgraded from "single source, unverified" to confirmed</b>). <b>Career numbers (now filled in)</b>: 354 matches, <b>1,772 yellows + 49 reds ≈ 5.01 yellows/game</b>, a <b>card-heavy</b> profile and the highest among today's four referees; named IFFHS South American Referee of the Year for 2021, and officiated group-stage matches at the 2022 World Cup. No traceable officiating history with either Australia or Türkiye.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: 5.01 yellows/game is the highest of today's four referees — a double-edged sword: ① for an Australia that "compensates for technique with intensity," frequent whistles chop up its physical-duel rhythm and raise the accumulation-suspension risk; ② an emotional Türkiye (Çalhanoğlu protests, flank scuffles) is also prone to cards, with accumulation-suspension danger for key players. There is no authoritative standalone sample for his penalty rate, but the high card density means this is a "referee-present" game. <b>Two-sided</b>: a strict whistle suppresses rough play, but it can also interrupt the continuous build-up on Güler's side for Türkiye.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN — referee confirmed</a> · <a href="https://en.wikipedia.org/wiki/Jes%C3%BAs_Valenzuela" style="color:var(--accent)">Wikipedia — Valenzuela profile</a> · <a href="https://www.whoscored.com/referees/3615/show/jes%C3%BAs-valenzuela" style="color:var(--accent)">WhoScored — card data</a></div>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section>
+    <h2><span class="n">1</span> The Data (Core)</h2>
+    <div class="sub">Squad values · 1X2 implied probability (de-vigged odds) · Group D landscape — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Squad value comparison (€m, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 implied probability (FanDuel, de-vigged)</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group D squad values (€m, approx.)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst rating 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇦🇺 Australia</th><th>🇹🇷 Türkiye</th></tr>
+      <tr><td>FIFA ranking</td><td class="au">#27 (unverified)</td><td class="tr">#22</td></tr>
+      <tr><td>Squad value</td><td class="au">≈€41.3m (unverified)</td><td class="tr">≈€500m (about 13×)</td></tr>
+      <tr><td>Last 6</td><td class="au">LLWWLD (0-1 Mexico, finished 1-1 Switzerland)</td><td class="tr">WDWWWW · 8 unbeaten (4-0 North Macedonia, 2-1 Venezuela)</td></tr>
+      <tr><td>World Cup history</td><td class="au">6th in a row; round of 16 in 2022</td><td class="tr">First in 24 years (playoff 1-0 Kosovo); 3rd place in 2002</td></tr>
+      <tr><td>Formation</td><td class="au">Back-three 3-4-2-1 (defensive block + transitions)</td><td class="tr">4-2-3-1 (Güler-Çalhanoğlu axis)</td></tr>
+      <tr><td>1X2 odds (FanDuel)</td><td class="au">5.10 (implied ≈19%)</td><td class="tr">1.74 (≈55%) · Draw 3.60 (≈26%)</td></tr>
+      <tr><td>Over/Under 2.5</td><td colspan="2">Under backed at 1.75–1.85 (BetNow's 1.85 cited as the sharpest price)</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2" class="tr">2 meetings (2004 friendlies): Türkiye won both, 3-1 and 1-0</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from FanDuel odds (55/26/19). Australia's €41.3m squad value badly contradicts its résumé of six straight World Cups + a 2022 round of 16 — the Socceroos' real strength has always run above their paper value, and a 13x gap does not mean a 13x strength gap.</div>
+  </section>
+
+  <!-- ===== Betting market heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Pundit picks / odds / money flow / sentiment</span></h2>
+    <div class="sub">Huge attention inside Türkiye, the North American late-night slot suppressing overall volume — moderate heat, one-sided direction</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · One-sided but restrained in volume</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Experts 6-0 on Türkiye, the price tightening the same way (1.80→1.74), and Türkiye also the most actively traded name in the Group D winner market — but the late-night slot + non-glamour pairing keeps total volume at normal levels; sentiment is concentrated among the Turkish diaspora and domestic media.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction tally: Türkiye win ≈6 · Australia 0 · Draw 0; totals split)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>Prediction outlet</td><td><b>Australia 0-1 Türkiye</b></td></tr>
+      <tr><td>KickOff algorithm</td><td>Model</td><td>0-1 (highest single-scoreline probability at 13%)</td></tr>
+      <tr><td>Yahoo / OneFootball</td><td>Prediction aggregators</td><td>Türkiye win (1.74)</td></tr>
+      <tr><td>Racing Post</td><td>UK stalwart</td><td>Türkiye win; also tips "Türkiye -1 + BTTS @4.25"</td></tr>
+      <tr><td>Tribuna / Sports Interaction</td><td>Prediction sites</td><td>Türkiye win</td></tr>
+      <tr><td>SportsLine · Jon Eimer</td><td>Verified expert (31-13 in UCL)</td><td>Contrarian pocket: <b>Over 2.5 goals</b></td></tr>
+      <tr><td>compare.bet</td><td>Odds aggregator</td><td>The pocket's flip side: <b>Under 2.5 goals</b> (1.85 cited as the sharpest price)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Structural signal</b>: 6-0 directional consensus + a low-scoring 0-1/1-0 consensus. The most informative item is the <b>scoreline distribution</b>: the model camp's top single scoreline is only 13% (0-1) — the classic profile of "result clear, goals highly uncertain," and the Over/Under camps are betting against each other precisely on Türkiye's attacking ceiling without Yıldız.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (price tightening toward Türkiye)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Türkiye win</th><th>Read</th></tr>
+      <tr><td>06-08</td><td>Composite</td><td class="tr">1.80–1.85</td><td>Opening range</td></tr>
+      <tr><td>06-11/12</td><td>FanDuel</td><td class="tr">1.74</td><td>One-way tightening ≈+2pp</td></tr>
+      <tr><td>06-11/12</td><td>Racing Post best price</td><td class="tr">1.80 (Australia as high as 5.50)</td><td>Bookmaker disagreement 1.74–1.80</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">③ Prediction market money flow (Group D winner market, DefiRate aggregation)</h4>
+    <table>
+      <tr><th>Team</th><th>Group winner prob</th><th>Volume</th><th>Notes</th></tr>
+      <tr><td>USA</td><td>38.6%</td><td>—</td><td>Group favorite</td></tr>
+      <tr><td class="tr">Türkiye</td><td class="tr">34.3% (Poly 34.5% / Kalshi 32.5%)</td><td class="tr"><b>$84.4K (most active in the group)</b></td><td>The money's favorite target</td></tr>
+      <tr><td>Paraguay</td><td>18.4%</td><td>—</td><td>—</td></tr>
+      <tr><td class="au">Australia</td><td class="au">9.0%</td><td>—</td><td>30-day momentum +2.4% (modest buying)</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>Group landscape signal</b>: prediction markets see Group D as a "USA-Türkiye duopoly" — the winner of this match most likely locks in the spot contesting first place with the USA, making matchday 1 the group's "second-seed final."</li>
+      <li><b>Anomaly</b>: Australia sits at just 9% to win the group yet shows +2.4% 30-day buying momentum — small money is betting on the classic "Australia scrapes through" script.</li>
+      <li>Single-match markets exist but prices/volumes were not captured (unverified); total tournament prediction-market volume has passed $2 billion.</li>
+    </ul>
+
+    <h4 style="margin-top:20px">④ Social media / public sentiment</h4>
+    <ul class="cl">
+      <li>Inside Türkiye: the first match in 24 years = a national event, Turkish media at full speed, the Güler/Yıldız twin-star narrative everywhere.</li>
+      <li>North American side: the 00:00 ET late-night slot + a non-glamour pairing leaves mainstream English-language volume well below the day's other three matches.</li>
+      <li>Australian side: an early-afternoon broadcast slot (14:00 AEST — actually friendly), with "the Socceroos rediscovering their clinical edge" the main ESPN AU storyline.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: one-sided direction but no bubble — Türkiye's 55% midpoint is fair pricing for "13x squad value + 8 unbeaten vs a fully fit defensive block." Two points buried by the sentiment: ① without Yıldız, Türkiye's "win by two" capability is in doubt, making -1.5-type handicap lines look expensive; ② behind Australia's 9% group-winner price lies its historical path dependence of repeatedly advancing as the weakest team on paper. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html">Sports Mole</a> · <a href="https://www.kickoff.co.uk/world-cup-predictions-stats-odds/australia-vs-turkey/">KickOff algorithm</a> · <a href="https://onefootball.com/en/news/australia-vs-turkey-prediction-world-cup-2026-preview-best-bets-42991072">OneFootball</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/australia-vs-turkey-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aDqeC7S5q8Ib/">Racing Post</a> · <a href="https://www.sportsline.com/insiders/australia-vs-turkiye-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Eimer</a> · <a href="https://www.compare.bet/news/australia-vs-turkey-betting-preview-predictions-tips-and-live-odds">compare.bet — odds/trends</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-d/">DefiRate — Group D prediction markets</a> · <a href="https://finance.yahoo.com/markets/options/articles/world-cup-betting-kalshi-polymarket-133600704.html">Yahoo Finance — $2B volume</a></div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">2</span> Lineups & Key Players</h2>
+    <div class="sub">Predicted XIs (analyst projections, not official; defer to the official pre-match team sheets)</div>
+    <h4>🇦🇺 Australia predicted XI (3-4-2-1)</h4>
+    <div class="lineup">Ryan(C); Italiano · Circati · Souttar; Herrington · Metcalfe · Irvine · Bos; O'Neill · Leckie; Toure</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="au">Harry Souttar</td><td>Centre-back / Leicester City</td><td>Back from a 14-month Achilles layoff, started and scored late in the season; aerial core at both ends</td></tr>
+      <tr><td class="au">Jackson Irvine</td><td>Midfielder / St. Pauli</td><td>Foot surgery in spring 2025, back in October; midfield engine and dressing-room leader</td></tr>
+      <tr><td class="au">Mohamed Toure</td><td>Striker / Norwich</td><td><b>10 goals in 12 in the second half of the season</b> — Australia's only finishing bet on the counter</td></tr>
+      <tr><td class="au">Mathew Ryan / Leckie</td><td>Goalkeeper(C) / Wide</td><td>Ryan's tournament experience the ballast; Leckie a veteran with 1 goal 1 assist in 10 World Cup matches</td></tr>
+    </table>
+    <h4>🇹🇷 Türkiye predicted XI (4-2-3-1)</h4>
+    <div class="lineup">Çakır; Çelik · Demiral · Bardakçı · Elmalı; Çalhanoğlu(C) · Yüksek; Güler · Kökçü · Yılmaz; Gül</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="tr">Arda Güler</td><td>Attacking mid/right / Real Madrid</td><td><b>6 goals 12 assists</b> in 51 matches all season (4 goals 9 assists in La Liga); UCL "breakthrough of the season" — Türkiye's playmaker-in-chief</td></tr>
+      <tr><td class="tr">Hakan Çalhanoğlu (C)</td><td>Defensive mid / Inter</td><td>9 goals 4 assists in Serie A this season; set-piece master with 22 goals in 105 caps, the tempo master switch</td></tr>
+      <tr><td class="tr">Kenan Yıldız</td><td>Winger / Juventus</td><td>10 goals 6 assists in 33 Serie A matches, the team's top scorer; <b>likely out of this match with a calf injury</b></td></tr>
+      <tr><td class="tr">Kerem Aktürkoğlu</td><td>Winger</td><td>Playoff-final match-winner; with Yıldız out, the entire wide burden falls on him</td></tr>
+    </table>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">3</span> Tactical Styles & Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0cf6b">🇦🇺 Australia · Tony Popovic (appointed 2024)</div>
+        <div class="role">3-4-2-1 · Defensive block + set pieces + transitions</div>
+        <ul class="cl">
+          <li>Since taking over he has rebuilt the team into a disciplined back-three defensive unit: don't concede first, then talk about winning — the standard Australian script against stronger sides.</li>
+          <li>The flaw ESPN AU highlights: <b>clinical finishing</b> — chance conversion has long run low, and Toure is the new answer.</li>
+          <li>The toolkit: Souttar's set-piece aerial power, Irvine's late runs, and aerial bombardment of the opposing centre-back line.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇹🇷 Türkiye · Vincenzo Montella (appointed 2023)</div>
+        <div class="role">4-2-3-1 · Central penetration + a free role for Güler</div>
+        <ul class="cl">
+          <li>The Italian coach has given Güler full creative license, with Çalhanoğlu dealing from deep — the strongest central axis in the group's second tier.</li>
+          <li>Beneath the 8-match unbeaten run is improved control: both friendlies against North Macedonia/Venezuela were closed out methodically.</li>
+          <li>Risk: the wide game drops a tier without Yıldız; against a packed back three, the "if you can't play through, cross it" Plan B is only average.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corners technical -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> Corners: Technical Read <span style="font-size:12px;color:var(--mut);font-weight:500">· Style × live lines · handicap & totals</span></h2>
+    <div class="sub">Turkiye's possession and territorial edge produces a clear corner lean (≈6 vs Australia's ≈2), yet Australia's crossing/set-piece game self-generates corners — the market posts Turkiye -1.5, with a moderate-to-low total.</div>
+    <h4>① Corner profiles of both teams (style-driven)</h4>
+    <table>
+      <tr><th>Dimension</th><th>🇦🇺 Australia</th><th>🇹🇷 Turkiye</th><th>Meaning</th></tr>
+      <tr><td>Corners won per game</td><td class="au">≈2</td><td class="tr">≈6</td><td>Turkiye's possession + territory gives a far higher corner base</td></tr>
+      <tr><td>Corners conceded per game</td><td class="au">Med-high (unverified)</td><td class="tr">Med-low (unverified)</td><td>Australia leaks corners when pinned back; Turkiye spends little time under siege</td></tr>
+      <tr><td>Attacking emphasis</td><td class="au">Wing crossing / aerial bombardment</td><td class="tr">Central penetration first, Aktürkoğlu on the wing as support</td><td>Australia manufactures corners via byline play; Turkiye prefers to break through rather than cross</td></tr>
+      <tr><td>Set-piece threat</td><td class="au">High (Souttar's aerial reach + tall CB group)</td><td class="tr">High (Çalhanoğlu delivers, precise placement)</td><td>Both can convert a corner into a real threat</td></tr>
+      <tr><td>Corner edge lean</td><td class="au">Behind but self-generates</td><td class="tr">Clear edge</td><td>The line handing Turkiye -1.5 reflects this gap</td></tr>
+    </table>
+    <h4>② Live lines (corner market)</h4>
+    <p><b>Corner handicap</b>: Turkiye <b>-1.5</b> @ <b>1.75</b> (European decimal). <b>Corner total O/U</b>: major books have not posted a public line; from the ≈2+6 per-game base and a low-scoring script we estimate a line around <b>O/U 8.5</b> (odds ≈ <b>1.90/1.90</b>, <b>unverified</b>). Source: Before You Bet (Australia 2 / Turkiye 6 per game; Turkiye -1.5 @ 1.75).</p>
+    <h4>③ Technical read (handicap & totals)</h4>
+    <div class="insight"><div class="who">Handicap (corner spread)</div>Turkiye holds a clear corner edge: possession, territory and central pressure all push the opponent toward their own box, and the 6-to-2 per-game gap supports -1.5. But it is no gift — Australia's crossing/aerial route self-generates corners, and once chasing a deficit and forced to attack, their corner count rebounds. -1.5 is not pick'em, but neither is it a lock — call it "reasonably tilted to Turkiye".</div>
+    <div class="insight"><div class="who">Totals (corner count)</div>The under case: Turkiye prefers to penetrate rather than cross, voluntarily skipping part of the "cross-clear-recorner" loop; a low-scoring script (Under 2.5 favored) usually comes with controlled tempo and capped corner output. The over case: once pinned back, Australia can only counter via byline play + aerial balls, and the combined crossing volume can push the total up. On balance the total is moderate-to-low, with 8.5 balanced on both sides and no strong one-way edge.</div>
+    <div class="insight"><div class="who">Variables & two-way risk</div>Yıldız's absence weakens Turkiye's left-wing individual breaks → reduced byline corner generation, helping suppress Turkiye's corners and the total; Güler's return preserves central organization, but central penetration does not directly produce corners. BC Place roof closed, climate-controlled and windless → crossing precision undimmed, set-piece quality stable, environment neutral for corner output.</div>
+    <div class="note">For analysis only — not betting advice. Sources: <a href="https://www.beforeyoubet.com.au/australia-vs-turkey-world-cup-2026-preview-and-betting-tips">Before You Bet — corner data/handicap</a> · <a href="https://www.apwin.com/team/turkey-national-team/corners/">APWin — Turkiye corners</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b> (ESPN + FIFA official list): Venezuela's <b>Jesús Valenzuela</b> (42, FIFA since 2013; 2021 IFFHS South American Referee of the Year; 2022 World Cup experience). <b>Numbers (now filled in)</b>: ≈ <b>5.01 yellows/game</b> (1,772 yellows / 49 reds in 354 matches) — the highest of today's four referees, a card-heavy profile. No officiating history with either team. Read: a strict whistle chops up physical duels (suppressing Australia's intensity route), and the accumulation-suspension risk rises for both sides' key players; no authoritative standalone sample for his penalty rate.</div>
+    <h4>Tournament-wide new officiating rules (impact on this match)</h4>
+    <ul class="cl">
+      <li><b>8-second goalkeeper hold, 5-second throw-ins</b>: if Australia takes a lead and wants to sit on it, the time-wasting tools are cut — forcing it to keep playing instead.</li>
+      <li><b>Only captains may talk to the referee</b>: Çalhanoğlu vs Ryan — both captains known for composure, a neutral matchup on the communication front.</li>
+      <li><b>Semi-automated offside</b>: Türkiye's through balls in behind Australia's back three (Güler's trademark) get marginal calls faster and more accurately.</li>
+    </ul>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN AU <small>· Tier C regional authority</small></div>Popovic's Australia "must rediscover its clinical edge" — the defensive block is built; the problem has always been the final pass and shot. Toure's 10-goal half-season is the first time this system has owned a genuine finisher.</div>
+    <div class="insight"><div class="who">KickOff algorithm <small>· Model</small></div>The top single scoreline, 0-1, carries only 13% probability — the model is saying: "Türkiye wins" is certain, "how, and by how many" is completely uncertain. A low-scoring narrow win is the central script.</div>
+    <div class="insight"><div class="who">Racing Post <small>· Tier B</small></div>The "Türkiye -1 + BTTS @4.25" combination implies a judgment: Türkiye's quality will eventually tell, but Australia's set pieces are good enough to trade one goal — the most honest breakdown of both teams' arsenals.</div>
+  </section>
+
+  <!-- Verdict -->
+  <section>
+    <h2><span class="n">6</span> Overall Verdict & Unverified Items</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow Türkiye 1-0 / 2-1 win is the central script; Australia's path is to drag the match into a set-piece war of attrition and trade one goal through Souttar's aerial power.</li>
+      <li><b>Key men</b>: Güler (TUR/playmaker-in-chief), Çalhanoğlu (TUR/tempo + set pieces), Souttar (AUS/aerial power at both ends), Toure (AUS/the only finishing bet).</li>
+      <li><b>Decisive battle</b>: Türkiye's central penetration vs the density of Australia's back three; the quality of Türkiye's wide Plan B without Yıldız is the dividing line between "win by 1 or win by 2."</li>
+      <li><b>Market view</b>: the 55% midpoint is fair; -1.5-type handicap lines look expensive given the Yıldız doubt; Australia's +2.4% prediction-market momentum is the only contrarian money signal.</li>
+    </ul>
+    <div class="flag">⚠ <b>Unverified</b>: ① Australia's €41.3m squad value and FIFA #27 ranking unverified; ② Yıldız injury status pending the official team sheet; ③ mainstream Asian handicap lines not obtained; ④ predicted XIs are analyst projections. <span style="color:var(--mut)">(Referee confirmed via ESPN + FIFA official list.)</span></div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html">Sports Mole — preview/injuries/predicted XIs</a> · <a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news">ESPN — pre-match team news/kickoff time</a><br>
+      • <a href="https://www.squawka.com/en/news/world-cup/australia-vs-turkey-team-news-predicted-lineups/">Squawka — team news</a> · <a href="https://www.espn.com.au/football/story/_/id/49035589/fifa-world-cup-socceroos-turkiye-preview-australia-rediscover-clinical-edge-early-popovic-tenure">ESPN AU — tactical storyline</a> · <a href="https://www.compare.bet/news/australia-vs-turkey-betting-preview-predictions-tips-and-live-odds">compare.bet — odds</a><br>
+      • <a href="https://defirate.com/prediction-markets/world-cup-odds/group-d/">DefiRate — Group D prediction markets</a> · <a href="https://www.transfermarkt.us/arda-guler/leistungsdaten/spieler/861410">Transfermarkt — Güler</a> · <a href="https://www.livescore.com/en/season-stats/hakan-calhanoglu/16015/">LiveScore — Çalhanoğlu</a> · <a href="https://dailysports.net/news/who-are-the-officials-for-the-2026-world-cup-opener-between-australia-and-turkey/">Dailysports — referee (single source, unverified)</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-12 · Charts use verified data; radar chart is the analyst's composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',AU='#e0a514',TR='#d0312d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['Australia','Türkiye'],datasets:[{data:[41.3,500],backgroundColor:[AU,TR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Türkiye win','Draw','Australia win'],datasets:[{data:[55,26,19],backgroundColor:[TR,DR,AU],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:65,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['USA','Türkiye','Paraguay','Australia'],datasets:[{data:[331,500,55,41.3],backgroundColor:['#1f4e9c',TR,'#d0312d88',AU],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m (approx.)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive solidity','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'Australia',data:[7,5,5.5,7.5,5.5,7],borderColor:AU,backgroundColor:AU+'33',pointBackgroundColor:AU},
+   {label:'Türkiye',data:[6.5,7,8,7.5,8.5,5.5],borderColor:TR,backgroundColor:TR+'33',pointBackgroundColor:TR}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

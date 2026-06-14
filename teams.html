@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全 48 队情报库 · 2026 世界杯</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/teams.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/teams.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/teams.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/teams.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/teams.html">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;--accent:#38bdf8;--good:#22c55e;--warn:#f59e0b}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.55;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  h1{font-size:26px;font-weight:800}
+  .lead{color:var(--mut);font-size:13.5px;margin:8px 0 16px;border-bottom:1px solid var(--line);padding-bottom:14px}
+  .ctrl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .ctrl button{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:7px 13px;font-size:13px;cursor:pointer}
+  .ctrl button.active{background:var(--accent);color:#06121c;border-color:var(--accent);font-weight:700}
+  .grpttl{font-size:14px;font-weight:800;color:var(--accent);margin:18px 0 6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:6px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.3px;cursor:pointer}
+  td.team{font-weight:700}
+  td.val{font-variant-numeric:tabular-nums}
+  .rank{display:inline-block;min-width:24px;text-align:center;background:var(--card2);border:1px solid var(--line);border-radius:6px;font-size:11px;padding:1px 4px;color:var(--mut)}
+  .bar{height:6px;border-radius:3px;background:var(--accent);display:inline-block;vertical-align:middle;margin-left:6px}
+  .mut{color:var(--mut)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:11px 13px;font-size:12.5px;margin-top:14px;color:#bfe0f7}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+  .src{font-size:12px;color:var(--mut)}.src a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/teams.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/teams.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/teams.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+  <a class="back" href="index.html">← 返回分析中心</a>
+  <h1>🌍 全 48 队情报库</h1>
+  <div class="lead">参考数据底库：分组 · FIFA 排名 · 全队身价 · 主帅（国籍 / 上任年 / 前职）。供各场分析调用。</div>
+
+  <div class="ctrl">
+    <button data-view="group" class="active">按小组</button>
+    <button data-view="value">按身价排序</button>
+    <button data-view="rank">按 FIFA 排名</button>
+  </div>
+
+  <div id="content"></div>
+
+  <div class="note">📌 说明：FIFA 排名已补全至大部分参赛队——头部(前 6)取 2026/4 已公布榜，其余取 2026/1 ESPN 公布的完整 Top 50（含荣誉提名 #58/#71）；未进 Top 50 的队伍(卡塔尔/海地/库拉索/新西兰/佛得角/沙特/约旦/乌兹别克/加纳)暂留"—"。身价来自 Transfermarkt 榜单，部分队伍暂为"—"，由每日 agent 持续补全；主帅名单为全 48 队完整数据。所有数据走"联网搜索 + 网页抓取"获取，不依赖浏览器。</div>
+  <div class="src" style="margin-top:10px">来源：<a href="https://www.fifplay.com/world-cup-2026-head-coaches/">FIFPlay 全48队主帅</a> · <a href="https://www.sportingpedia.com/2026/06/03/2026-world-cup-team-values-and-group-rankings/">Sportingpedia 身价榜（6/3 · Transfermarkt 全48队）</a> · <a href="https://www.givemesport.com/every-squad-at-2026-world-cup-ranked-by-combined-player-value/">GiveMeSport 身价</a> · <a href="https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings">ESPN FIFA 排名</a></div>
+  <div class="foot">2026 世界杯赛事分析中心 · 身价已按 2026-06-03 Transfermarkt 快照更新（A组/头部队伍 + 日本 + 美国补全；伊朗 6/10 补入 ~€38m；苏格兰 6/11 补入 €170.25m）· 数据截至 2026-06-11 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+// 全 48 队参考数据（group, 队名, FIFA排名, 身价€m, 主帅, 国籍, 上任, 前职）
+const T=[
+ ['A','🇲🇽 墨西哥',15,194.6,'Javier Aguirre','墨西哥',2024,'马洛卡'],
+ ['A','🇿🇦 南非',60,45.8,'Hugo Broos','比利时',2021,'奥斯坦德'],
+ ['A','🇰🇷 韩国',22,142.3,'Hong Myung-bo','韩国',2024,'蔚山HD'],
+ ['A','🇨🇿 捷克',43,190.18,'Miroslav Koubek','捷克',2024,'比尔森'],
+ ['B','🇨🇦 加拿大',30,203.05,'Jesse Marsch','美国',2024,'利兹联'],
+ ['B','🇧🇦 波黑',71,149.2,'Sergej Barbarez','波黑',2024,'解说/前球员'],
+ ['B','🇶🇦 卡塔尔',55,19.93,'Julen Lopetegui','西班牙',2025,'西汉姆'],
+ ['B','🇨🇭 瑞士',18,333.6,'Murat Yakin','瑞士',2021,'沙夫豪森'],
+ ['C','🇧🇷 巴西',6,912.2,'Carlo Ancelotti','意大利',2025,'皇马'],
+ ['C','🇲🇦 摩洛哥',8,488.2,'Mohamed Ouahbi','摩洛哥',2026,'摩洛哥U20(世界杯冠军)'],
+ ['C','🇭🇹 海地',83,55.6,'Sébastien Migné','法国',2024,'喀麦隆助教'],
+ ['C','🏴 苏格兰',38,170.25,'Steve Clarke','苏格兰',2019,'基尔马诺克'],
+ ['D','🇺🇸 美国',16,410,'Mauricio Pochettino','阿根廷',2024,'切尔西'],
+ ['D','🇵🇾 巴拉圭',40,157.15,'Gustavo Alfaro','阿根廷',2024,'哥斯达黎加'],
+ ['D','🇦🇺 澳大利亚',27,41.3,'Tony Popovic','澳大利亚',2024,'墨尔本胜利'],
+ ['D','🇹🇷 土耳其',25,494.2,'Vincenzo Montella','意大利',2023,'阿达纳'],
+ ['E','🇩🇪 德国',10,998,'Julian Nagelsmann','德国',2023,'拜仁'],
+ ['E','🇨🇼 库拉索',82,null,'Dick Advocaat','荷兰',2024,'ADO海牙'],
+ ['E','🇨🇮 科特迪瓦',37,530.9,'Emerse Faé','科特迪瓦',2024,'国家队助教'],
+ ['E','🇪🇨 厄瓜多尔',23,376.2,'Sebastián Beccacece','阿根廷',2024,'埃尔切'],
+ ['F','🇳🇱 荷兰',7,837.2,'Ronald Koeman','荷兰',2023,'荷兰国家队'],
+ ['F','🇯🇵 日本',19,265.5,'Hajime Moriyasu','日本',2018,'日本U23'],
+ ['F','🇸🇪 瑞典',42,476.48,'Graham Potter','英格兰',2025,'切尔西'],
+ ['F','🇹🇳 突尼斯',47,null,'Sami Trabelsi','突尼斯',2025,'Al-Sailiya'],
+ ['G','🇧🇪 比利时',9,542.9,'Rudi Garcia','法国',2025,'那不勒斯'],
+ ['G','🇪🇬 埃及',31,null,'Hossam Hassan','埃及',2024,'Modern Future'],
+ ['G','🇮🇷 伊朗',20,38.0,'Amir Ghalenoei','伊朗',2023,'Gol Gohar'],
+ ['G','🇳🇿 新西兰',85,null,'Darren Bazeley','英格兰',2023,'新西兰U23'],
+ ['H','🇪🇸 西班牙',2,1260,'Luis de la Fuente','西班牙',2022,'西班牙U21'],
+ ['H','🇨🇻 佛得角',69,null,'Bubista','佛得角',2020,'俱乐部'],
+ ['H','🇸🇦 沙特',61,null,'Giorgos Donis','希腊',2025,'Al-Fateh'],
+ ['H','🇺🇾 乌拉圭',17,405.8,'Marcelo Bielsa','阿根廷',2023,'利兹联'],
+ ['I','🇫🇷 法国',1,1530,'Didier Deschamps','法国',2012,'马赛'],
+ ['I','🇸🇳 塞内加尔',12,472.9,'Pape Thiaw','塞内加尔',2024,'国家队助教'],
+ ['I','🇮🇶 伊拉克',58,null,'Graham Arnold','澳大利亚',2025,'澳大利亚'],
+ ['I','🇳🇴 挪威',32,601,'Ståle Solbakken','挪威',2020,'哥本哈根'],
+ ['J','🇦🇷 阿根廷',3,818.5,'Lionel Scaloni','阿根廷',2018,'阿根廷助教'],
+ ['J','🇩🇿 阿尔及利亚',28,257.6,'Vladimir Petković','波黑',2024,'瑞士国家队'],
+ ['J','🇦🇹 奥地利',24,null,'Ralf Rangnick','德国',2022,'曼联(临)'],
+ ['J','🇯🇴 约旦',63,19.83,'Jamal Sellami','摩洛哥',2024,'摩洛哥U23'],
+ ['K','🇵🇹 葡萄牙',5,1020,'Roberto Martínez','西班牙',2023,'比利时'],
+ ['K','🇨🇴 哥伦比亚',14,292.8,'Néstor Lorenzo','阿根廷',2022,'Melgar'],
+ ['K','🇨🇩 民主刚果',48,null,'Sébastien Desabre','法国',2022,'乌干达'],
+ ['K','🇺🇿 乌兹别克',50,null,'Fabio Cannavaro','意大利',2025,'乌迪内斯'],
+ ['L','🏴 英格兰',4,1320,'Thomas Tuchel','德国',2025,'拜仁'],
+ ['L','🇭🇷 克罗地亚',11,385.7,'Zlatko Dalić','克罗地亚',2017,'阿尔艾因'],
+ ['L','🇬🇭 加纳',74,230.88,'Otto Addo','加纳',2024,'多特蒙德助教'],
+ ['L','🇵🇦 巴拿马',33,34.83,'Thomas Christiansen','西班牙',2020,'利兹联助教']
+];
+const maxV=Math.max(...T.map(r=>r[3]||0));
+const C=document.getElementById('content');
+function coachCell(r){return `${r[4]} <span class="mut">· ${r[5]} · ${r[6]}${r[7]?' · 前'+r[7]:''}</span>`;}
+function valCell(v){if(v==null)return '<span class="mut">—</span>';
+  return `€${v}m<span class="bar" style="width:${Math.round(v/maxV*70)}px"></span>`;}
+function rankCell(x){return x==null?'<span class="mut">—</span>':`<span class="rank">${x}</span>`;}
+function rowHTML(r,showGroup){return `<tr>${showGroup?`<td class="mut">${r[0]}</td>`:''}<td class="team">${r[1]}</td><td>${rankCell(r[2])}</td><td class="val">${valCell(r[3])}</td><td>${coachCell(r)}</td></tr>`;}
+function render(view){
+  if(view==='group'){
+    const groups=[...new Set(T.map(r=>r[0]))];
+    C.innerHTML=groups.map(g=>{
+      const rows=T.filter(r=>r[0]===g).map(r=>rowHTML(r,false)).join('');
+      return `<div class="grpttl">${g} 组</div><table><tr><th>球队</th><th>FIFA</th><th>身价</th><th>主帅（国籍·上任·前职）</th></tr>${rows}</table>`;
+    }).join('');
+  }else if(view==='value'){
+    const rows=[...T].sort((a,b)=>(b[3]||-1)-(a[3]||-1)).map(r=>rowHTML(r,true)).join('');
+    C.innerHTML=`<table><tr><th>组</th><th>球队</th><th>FIFA</th><th>身价↓</th><th>主帅</th></tr>${rows}</table>`;
+  }else{
+    const rows=[...T].sort((a,b)=>(a[2]??999)-(b[2]??999)).map(r=>rowHTML(r,true)).join('');
+    C.innerHTML=`<table><tr><th>组</th><th>球队</th><th>FIFA↑</th><th>身价</th><th>主帅</th></tr>${rows}</table>`;
+  }
+}
+document.querySelectorAll('.ctrl button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.ctrl button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');render(b.dataset.view);});
+render('group');
+</script>
+</body>
+</html>

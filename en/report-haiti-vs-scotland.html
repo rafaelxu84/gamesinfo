@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Haiti vs Scotland · 2026 World Cup Group C</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-haiti-vs-scotland.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">⚽ 2026 World Cup · Group C Matchday 1 · A double return: 52 years vs 28 years</span>
+  <span class="badge" style="background:linear-gradient(90deg,#7a1f18,#0d3b66);margin-left:6px">🏁 FT Scotland 1-0</span>
+  <h1>Haiti vs Scotland</h1>
+  <div class="meta">June 13, 2026 · Gillette Stadium, Foxborough · 21:00 ET · Group C (also: Brazil, Morocco) · FOX/Telemundo</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇭🇹 Haiti</div><div class="rk">FIFA #83 (second-lowest in the tournament) · Squad value €55.6m · First since 1974</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</div><div class="rk">FIFA #42 · Squad value €207.8m · First since 1998</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review module ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· FT Haiti 0-1 Scotland (HT 0-1) · Facts and analysis kept separate</span></h2>
+    <div class="sub">Haiti edged both shots and xG yet scored 0, while Scotland stole the only goal of the game via a twice-deflected McGinn strike at 28′ — Scotland claimed their first World Cup win since 1990 and topped Group C. The result call landed, but the scoreline and the "Haiti can grab one back" read were off.</div>
+
+    <h4 style="margin-top:6px">① How the goals came</h4>
+    <p style="font-size:13.5px">The game's only goal came from <b>28′ John McGinn</b>: off a deft Che Adams touch to set it up, McGinn struck and the shot <b>deflected twice off defenders, changing direction</b>, deceiving keeper Johny Placide into the net. After that Haiti kept creating chances but fell agonizingly short again and again, and Scotland held on for 1-0. At <b>31 years 238 days</b>, McGinn became Scotland's oldest World Cup scorer (passing Dalglish). This was Scotland's <b>first World Cup win since 1990</b>, and because Brazil-Morocco finished 1-1 at the same time, Scotland <b>provisionally topped Group C</b>.</p>
+    <div class="lineup">28′ ⚽ McGinn (SCO, Adams assist · two deflections)  ·  HT 0-1  ·  Haiti missed several chances over the match  ·  FT 0-1  ·  Scotland's first World Cup win since 1990 · top of Group C</div>
+
+    <h4 style="margin-top:18px">② Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇭🇹 Haiti</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</th><th>One-line read</th></tr>
+      <tr><td>Possession</td><td class="ht">≈56%</td><td class="sc">≈44%</td><td>Haiti dared to keep the ball rather than just park the bus — 52 years on from their last major tournament, they still play with ideas</td></tr>
+      <tr><td>xG (expected goals)</td><td class="ht">1.21</td><td class="sc">1.05</td><td>Haiti edged the xG yet scored 0 — the gap was all in the final touch, not in creation</td></tr>
+      <tr><td>Shots / on target</td><td class="ht">15 / —</td><td class="sc">9 / —</td><td>Haiti had nearly double the shots; high volume and decent quality, but none converted</td></tr>
+      <tr><td>How goals were scored</td><td class="ht">None</td><td class="sc">Open play (two deflections)</td><td>Scotland's only goal had an element of luck (two changes of direction), not the product of domination</td></tr>
+      <tr><td>Key man</td><td class="ht">Finishing lacking</td><td class="sc">McGinn / Adams link-up</td><td>Scotland's midfield experience (McGinn) delivered on the one high-quality chance</td></tr>
+      <tr><td>Referee / discipline</td><td colspan="2" style="color:#cbd5e1">Referee Mohammed Al-Hoish (Saudi Arabia) / officiating crew · duels kept under control, no penalty controversy</td><td>No high-card or penalty variable materialized, in line with the neutral expectation</td></tr>
+    </table>
+    <div class="note">Data sources: <a href="https://theanalyst.com/articles/haiti-vs-scotland-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> (xG/shots) · <a href="https://www.espn.com/soccer/report/_/gameId/760418" style="color:var(--accent)">ESPN report</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/scotland-haiti-world-cup-2026-report-result-goals-mcginn/" style="color:var(--accent)">101 Great Goals</a> (agree across ≥2 sources; shots-on-target counts vary slightly by source).</div>
+
+    <h4 style="margin-top:18px">③ Tactical review</h4>
+    <div class="insight"><div class="who" style="color:#f08a82">Haiti: lost on finishing, not on the game — competitive on their major-tournament return</div>15 shots, 1.21 xG, a possession edge — Haiti forced Scotland into pure damage limitation. <b>This shows Haiti's (FIFA #83) match quality far exceeds their ranking, and all they lack is finishing consistency</b> — this side shouldn't be treated as a pushover, and opponents who underrate them will pay.</div>
+    <div class="insight"><div class="who" style="color:#7fa6e6">Scotland: won on a deflection + defensive discipline, not by dominating</div>1.05 xG, 9 shots, 44% possession, out-chanced by their opponent, and the goal came with two lucky deflections. <b>This shows Scotland's win here was the pragmatic kind — defensive organization + taking one chance + a bit of luck</b>, not a performance that overran the opponent. McGinn/Adams's experience paying off in the one window is the value of an established side.</div>
+    <div class="insight"><div class="who" style="color:var(--good)">Scotland: the curse finally broken — psychological meaning > technical meaning</div>First World Cup win since 1990, provisionally top of Group C. <b>This shows the "0 from 12 tournaments" demon weighing on Scotland was partly lifted in round 1</b> — the 3 points give them the initiative to advance in a group of death (Brazil/Morocco), with huge value for morale.</div>
+    <div class="insight"><div class="who">The low-scoring script played out — neither side is a firepower team</div>Just 1 goal in the whole match, Haiti all xG and no conversion. <b>This shows this was a textbook "chance-based" low-scoring game</b>, in line with the pre-match low-firepower expectation; Haiti's problems and Scotland's pragmatism both point to a continued under-leaning tendency going forward.</div>
+
+    <h4 style="margin-top:18px">④ Prediction reconciliation (checking each pre-match call)</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td>Scotland to win (implied ≈65%)</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>Scotland won 1-0; the result direction landed</td></tr>
+      <tr><td>Model consensus score 2-1 · Haiti grabs one back</td><td style="color:var(--bad);font-weight:700">✗ Off</td><td>Actual 1-0; Haiti had 15 shots and 0 goals, the "Haiti to score" call fell flat</td></tr>
+      <tr><td>Pressure of Scotland's "0 from 12 tournaments" curse</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>The pressure was real, but Scotland held firm and grabbed a crucial first win</td></tr>
+      <tr><td>Low-scoring, under lean</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>Just 1 goal in the match; the under landed</td></tr>
+      <tr><td>Haiti's strength underrated by ranking</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>15 shots and 1.21 xG outdid Scotland; the "don't underrate Haiti" call was accurate</td></tr>
+    </table>
+    <div class="flag"><b>Reconciliation summary:</b> three hits — result, low-scoring, and "Haiti is competitive" — with the one miss being <b>misjudging that Haiti would score</b>, underrating both Haiti's finishing instability and Scotland's defensive discipline. Overall direction was good.</div>
+
+    <h4 style="margin-top:18px">⑤ Forward carry-over (into next match)</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇭🇹 Haiti → next vs Brazil (6/19, Philadelphia, Lincoln Financial)</div>
+        ① <b>Finishing is the lifeline</b>: 15 shots and 0 goals here; against a Brazil that concedes fewer chances, conversion must improve or there'll be little output;<br>② <b>Match quality is promising</b>: Haiti play without fear and can hold the ball, so against a Neymar-less Brazil with an unstable positional attack they may not be easy points;<br>③ <b>Defensive focus</b>: Scotland scored off a single deflection, and Brazil's individual quality (Vinícius) is greater, so the marking and blocking on the edge of the box must come earlier.</div>
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland → next vs Morocco (6/19, Foxborough, Gillette)</div>
+        ① <b>Must withstand Morocco's opening storm</b>: Morocco fired 12 shots in the first 30 minutes against Brazil; Scotland build slowly, and being broken open early would put them on the back foot;<br>② <b>Set pieces = Scotland's scoring hope</b>: open-play xG was just 1.05 here, so against a physically strong Morocco, McGinn/Adams's set pieces and second balls remain the most realistic path;<br>③ <b>Choices after going top</b>: with 3 points in hand, they can pragmatically play for a draw against Morocco — the defensive discipline (already proven here) is the asset.</div>
+    </div>
+    <div class="note" style="margin-top:14px">Below is this match's <b>full pre-match analysis archive</b> (key pre-game news, official lineups, the data picture, market activity, referee profile, etc. preserved as-is, as the basis for the prediction reconciliation).</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">A match with maximum storyline value: Haiti returns to the World Cup <b>after 52 years</b> (and due to the security crisis at home, every "home" qualifier was played 500 miles away in Curaçao — head coach Migné has never set foot in Haiti in his 18 months in charge); Scotland is back <b>after 28 years</b>, still carrying the curse of "12 major tournaments, 12 group-stage exits" — and in 1998 their group opponents happened to be <b>Brazil + Morocco</b> too, fate coming full circle. On the pitch, the odds are one-sided: Scotland to win at 1.44 (implied ≈65%), a 3.7x squad-value gap, and a midfield led by McTominay (~10 goals this season at Napoli) that is a class above. Haiti's weapon is its <b>twin counter-attack engines</b> — Sunderland's Isidor (€18m, the squad's most valuable player) and Wolves' Bellegarde, plus all-time top scorer Nazon. The match is in Greater Boston, home to America's third-largest Haitian community — but high ticket prices plus a travel ban put the "home crowd" in doubt. Baseline script: <b>Scotland 2-0/2-1</b>.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Scotland implied win prob (de-vigged)</div><div class="v" style="color:#7fa6e6">≈65%</div></div>
+      <div class="key"><div class="k">Squad value ratio</div><div class="v">3.7×</div></div>
+      <div class="key"><div class="k">Haiti's last World Cup</div><div class="v" style="color:#f08a82">1974</div></div>
+      <div class="key"><div class="k">Scotland's tournament curse</div><div class="v" style="color:var(--warn)">0 of 12 advanced</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>McTominay's stomach bug</b>: missed Thursday training (expected to play) — he is half of Scotland's attack; any drop in condition moves the line directly.</li>
+      <li><b>Haiti's counter-attacking teeth</b>: Isidor + Bellegarde are both Premier League-level transition players, and Scotland's high line (Hanley/Souttar lack pace) is an exploitable point.</li>
+      <li><b>The Boston stands</b>: how many Haitian diaspora fans get in decides who really "owns" this neutral venue.</li>
+      <li><b>Scotland's curse mentality</b>: the opener is "the must-win one" — all the pressure sits on Scotland; Haiti carries zero baggage.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: key pre-match news ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Pre-Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · With sources + why it matters</span></h2>
+    <div class="sub">First-hand news and fitness signals affecting this match, with item-by-item explanations of how each changes tactics or outcome</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 Pre-Match Update · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">🆕 <b>Scotland's Billy Gilmour ruled out for the whole World Cup</b>: he suffered a serious knee injury in the warm-up against Curaçao, and Manchester United youngster Tyler Fletcher has been added to the squad as an emergency call-up. <span style="color:var(--mut)">🔑 The midfield loses a reliable distributor, the partner organizing alongside McTominay must be reshuffled, and Scotland's control of the game may lose some of its fluency.</span></p>
+      <p style="margin-bottom:6px">✅ <b>McTominay has fully recovered</b>: after missing training earlier with a stomach complaint, Steve Clarke has confirmed he is fit and expected to start (upgraded from "expected to play" to "confirmed available").</p>
+      <p style="margin-bottom:0">Predicted XI (Sports Mole): <b>Gunn; Hickey, Hanley, Souttar, Robertson; Doak, McTominay, Ferguson, McGinn; Adams, Shankland</b> (leaning 4-2-3-1). <span style="font-size:12px;color:var(--mut)">Sources: <a href="https://www.espn.com/soccer/story/_/id/48814281/scotland-world-cup-squad-announced-scott-mctominay-ross-stewart" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/scotland/world-cup-2026/predicted-lineups/mctominay-decision-gunn-or-gordon-in-goal-predicted-scotland-lineup-vs-haiti_598955.html" style="color:var(--accent)">Sports Mole</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Scotland · Injury cluster <span style="color:var(--mut);font-weight:400">· 06-11 multiple sources</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Gilmour out of the World Cup (knee); <b>McTominay missed Thursday training with a stomach bug</b> (expected to play); McKenna has a knock, Adams racing to be fit</div>
+      <p style="font-size:13.5px">Midfielder Billy Gilmour misses the tournament with a knee injury; Manchester United youngster Tyler Fletcher called up as replacement. Key man McTominay missed Thursday's session with a stomach complaint but is expected to make the starting XI; centre-back McKenna has a minor knock, and striker Adams (Torino, thigh) is racing against time. Captain Robertson is fit.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Gilmour's absence robs Scotland of its only "possession metronome" — midfield orchestration falls entirely on Ferguson/McGinn, forcing a more direct style; McTominay is half of Scotland's scoring output (late runs + set-piece attacks), and his physical condition is the single most price-sensitive variable in this match — any official "not starting" news would move the line immediately. <span style="color:var(--warn)">[McTominay/McKenna/Adams individual status unverified pending the official pre-match team sheet]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.fourfourtwo.com/team/scotland-injury-news-latest-as-scott-mctominay-misses-training-before-world-cup-opener" style="color:var(--accent)">FourFourTwo — McTominay misses training</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-injury-news-steve-clarke-mulls-over-major-decision-on-trio-as-world-cup-campaign-begins-8671906" style="color:var(--accent)">The Scotsman — injury trio</a> · <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html" style="color:var(--accent)">Sports Mole — team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Haiti · Team news <span style="color:var(--mut);font-weight:400">· Conflicting reports · unverified</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Sports Mole (6/11): Haiti at <b>full strength with no injuries</b>; earlier NYSportsDay (6/9) said 38-year-old captain-goalkeeper Placide was a doubt — the later report takes precedence</div>
+      <p style="font-size:13.5px">The latest assessment has Haiti at full strength: Nazon and Jean Jacques are fit and available. The predicted XI features an <b>Isidor + Nazon strike pair</b> rather than AEK Athens' Pierrot — the latter missed 6 matches injured earlier this year, and as a "homecoming" figure who grew up in Melrose, Massachusetts and attended Northeastern University, a super-sub role looks more likely. Goalkeeper Placide's status differs between two sources — <b>flagged as unverified</b>.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: a full-strength Haiti can field its theoretically strongest 4-4-2 counter-attacking block. If 38-year-old Placide is replaced at the last minute by Alexandre Pierre, Haiti's aerial handling and organizational experience drop a notch — and Scotland is precisely a set-piece + crossing team (Robertson's left-side delivery), so the goalkeeper variable connects directly to the opponent's main weapon.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html" style="color:var(--accent)">Sports Mole — Haiti team news/predicted XI</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/" style="color:var(--accent)">NYSportsDay — Placide doubt (earlier)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Off the pitch · Home-crowd factor <span style="color:var(--mut);font-weight:400">· Boston diaspora</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Greater Boston is America's third-largest Haitian community (over 100,000 in Massachusetts), but <b>high ticket prices + a travel ban</b> will keep most Haitian fans out</div>
+      <p style="font-size:13.5px">The match lands in a Haitian diaspora stronghold: Massachusetts' Haitian population exceeds 100,000. But single tickets on FIFA's site were at one point listed at $2,100, and combined with the travel ban targeting Haiti, fans from the home country can barely enter the US — local media report Haitian fans "feel excluded from their own first World Cup"; diaspora groups in Rhode Island and elsewhere are still organizing to attend. Also: Foxborough on Saturday is cloudy, around 15°C, 20% chance of rain — a cool evening good for running, no extreme weather.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: this could have been Haiti's "quasi-home game" — if the diaspora fills the stands, the atmosphere is worth roughly half a home advantage; ticket prices and visa realities have discounted it. Crowd ownership is the last variable revealed before kickoff — the ratio of flags in the broadcast shots is the signal. The cool weather is neutral-to-favorable for Scotland's high-intensity pressing.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.bostonglobe.com/2026/06/03/metro/haiti-world-cup/" style="color:var(--accent)">Boston Globe — Haitian community and ticket prices</a> · <a href="https://www.wbur.org/news/2026/05/26/boston-haitians-world-cup-scotland-match" style="color:var(--accent)">WBUR — diaspora anticipation</a> · <a href="https://www.aljazeera.com/sports/2026/5/23/world-cup-2026-haiti-fans-feel-excluded-from-first-tournament-since-1974" style="color:var(--accent)">Al Jazeera — fans feeling excluded</a> · <a href="https://forecast.weather.gov/MapClick.php?lat=42.0654&lon=-71.2478" style="color:var(--accent)">NWS — Foxborough forecast</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match referee · Officially announced <span style="color:var(--mut);font-weight:400">· FIFA appointment</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Renowned Algerian referee <b>Mustapha Ghorbal</b> (40) takes charge — <b>referee of the 2024 Champions League final (Real Madrid–Dortmund)</b>, with 2 matches at the 2022 World Cup on his CV; VAR is Spain's Naranjo</div>
+      <p style="font-size:13.5px">The referee is Algeria's <b>Mustapha Ghorbal</b>, a FIFA international since 2014, with assistants Gourari and Zerhouni, Spain's Hernández as fourth official, and Spain's Naranjo on VAR. <b>Career numbers (now filled in)</b>: 184 matches, <b>712 yellows + 22 reds ≈ 3.87 yellows/game</b> (low-ish), <b>0.36 penalties/game</b> (on the high side); ~14.5 fouls/game this season (2025/26), 0 penalties. Top-tier big-match CV: <b>referee of the 2024 Champions League final</b> (Real Madrid 2-0 Dortmund) and 2 matches at the 2022 World Cup (Netherlands–Ecuador, Australia–Denmark). No traceable officiating history with either Haiti or Scotland (no head-to-head sample).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: 3.87 yellows/game is low-ish, 0.36 penalties/game high — the profile is <b>doesn't reach for cards to chop the game up, but isn't afraid to point to the spot in the box</b>. This match is structured as "Scotland's aerial bombardment + Haiti's counters," with heavy two-way body contact: the lenient card threshold lets the body-battle flow and helps Haiti drag the tempo into a scrap; but the high penalty rate carries a cost for box grappling/handball on both sides — Scotland's set-piece grappling in the box and fouls on Haiti's counters are both more likely to escalate into penalties. The Champions-League-final-level pedigree shows he controls big games calmly and isn't swayed by the atmosphere. <b>Two-sided</b>: the looser threshold favors physical duels, while the stricter penalty calls give the technically weaker side a "win-a-penalty" outlet.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-referee-confirmed-as-12-year-fifa-veteran-to-take-charge-of-world-cup-clash-8668192" style="color:var(--accent)">The Scotsman — referee announced</a> · <a href="https://africasoccer.com/world-cup-202-mustapha-ghorbal-scotland-vs-haiti/" style="color:var(--accent)">AfricaSoccer — Ghorbal</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups & What They Mean ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e1f15,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Both official XIs · vs predicted · snapshot call re-checked</span></h2>
+    <div class="sub">Announced ~20:00 ET (about 1h before kickoff) · two sources agree ✅ officially confirmed</div>
+
+    <h4>🇭🇹 Haiti official XI (4-4-2)</h4>
+    <div class="lineup">Placide; Arcus · Adé · Delcroix · Experience; Deedson · Jean Jacques · Bellegarde · Providence; Pierrot · Isidor</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: <b style="color:#e2e8f0">Duckens Nazon</b> (Haiti's all-time top scorer, 44 goals — startlingly benched here) · <b style="color:#e2e8f0">Josué Casimir</b> (wide thrust) · backup keeper Alexandre Pierre.</div>
+
+    <h4 style="margin-top:16px">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland official XI (4-4-2)</h4>
+    <div class="lineup">Gunn; Hickey · Hanley · Hendry · Robertson(C); Gannon-Doak · McTominay · Ferguson · McGinn; Adams · Shankland</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons: <b style="color:#e2e8f0">Lawrence Shankland</b> starts; bench includes <b style="color:#e2e8f0">Ryan Christie</b> (midfield rotation), <b style="color:#e2e8f0">John Souttar / Scott McKenna</b> (defensive depth), and 43-year-old keeper <b style="color:#e2e8f0">Craig Gordon</b>.</div>
+
+    <h4 style="margin-top:18px">vs Predicted XI</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht"><b>Haiti · striker</b></td><td>Nazon</td><td><b>Pierrot</b></td><td>Record scorer Nazon is on the bench — Migné picked target man Pierrot to battle and hold up against Scotland's CBs, turning Haiti's clinical finisher into a late-game card.</td></tr>
+      <tr><td class="ht"><b>Haiti · wide</b></td><td>Deedson / Casimir</td><td><b>Deedson</b></td><td>The runner wins out, stressing pressing and recovery — confirming Haiti is set up as a counter-block, not a possession side.</td></tr>
+      <tr><td class="ht"><b>Haiti · keeper</b></td><td>Placide (unverified)</td><td><b>Placide ✅</b></td><td>The 38-year-old veteran is confirmed; the earlier "conflicting info" flag is cleared. His high-ball handling vs Scotland's crossing stays the key matchup.</td></tr>
+      <tr><td class="sc"><b>Scotland · CB</b></td><td>Hanley/Souttar + McKenna/Souttar</td><td><b>Hanley · Hendry</b></td><td>Hendry replaces Souttar/McKenna alongside Hanley — a quicker, better-on-the-ball pairing aimed squarely at Isidor's runs in behind.</td></tr>
+      <tr><td class="sc"><b>Scotland · McTominay</b></td><td>Starts (fitness doubt)</td><td><b>Starts ✅</b></td><td>"Perfect and ready" after the stomach bug — the single biggest variable is resolved in Scotland's favour, validating the 65% baseline.</td></tr>
+      <tr><td class="sc"><b>Scotland · GK/wide</b></td><td>Gunn ; McGinn/Christie</td><td><b>Gunn · McGinn</b></td><td>Gunn wins the keeper battle (Gordon benched) and McGinn edges Christie — in line with the prediction, no surprise.</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">Tactical read</h4>
+    <ul class="cl">
+      <li><b>Haiti's biggest signal = Nazon on the bench.</b> Swapping the record scorer for target man Pierrot means Migné prioritises holding, link-up and attrition, saving Nazon's finishing as a 60-minute weapon once Scotland tire — squarely the "Haiti steals one on the counter" script.</li>
+      <li><b>Hendry in at CB is a targeted call against Isidor.</b> His turn and distribution suit dealing with Isidor's runs in behind and Haiti's first long ball in transition better than Souttar/McKenna — Scotland pre-empts Haiti's sharpest weapon.</li>
+      <li><b>McTominay starting fit is the key confirmation for the snapshot call.</b> The report flagged him as "the most price-sensitive single variable"; starting normally, half of Scotland's attack is online and the ~65% win-probability baseline holds.</li>
+      <li><b>Mirror 4-4-2s, midfield 4v4.</b> McTominay+Ferguson vs Bellegarde+Jean Jacques — whoever wins second balls and transitions sets the tempo; the Robertson↔Doak left side vs Haiti's Providence/Arcus flank is the decisive zone.</li>
+      <li><b>Snapshot call: maintained.</b> Scotland 2-0/2-1 stays the baseline; McTominay's presence reinforces the ceiling, while Haiti's Pierrot-pivot + Isidor pace keeps the "steal one / BTTS Yes / 2-1 scoreline" pocket alive — the official sheets overturn no main thread and remove the biggest uncertainty.</li>
+    </ul>
+
+    <div class="note">📊 <b>Market reaction</b>: as of this capture, no clear post-lineup line move was detected (unverified). In theory McTominay confirmed steadies Scotland's price; Nazon's surprise benching has limited handicap impact (Pierrot+Isidor remains an attacking front). Factual statement only, not betting advice.</div>
+
+    <div class="src" style="margin-top:10px">Sources: <a href="https://x.com/ScotlandNT/status/2065940647056486786">@ScotlandNT official XI</a> · <a href="https://x.com/Concacaf/status/2065944231248621868">@Concacaf Haiti XI</a> · <a href="https://bolavip.com/en/world-cup/haiti-vs-scotland-live-2026-world-cup-game-in-boston">Bolavip — both official XIs (live blog)</a> · <a href="https://www.si.com/soccer/haiti-vs-scotland-world-cup-preview-predictions-lineups-6-13-26">SI — lineup cross-check</a></div>
+  </section>
+
+  <!-- Data -->
+  <section>
+    <h2><span class="n">1</span> The Data (Core)</h2>
+    <div class="sub">Squad values · 1X2 implied probability (de-vigged odds) · Group C landscape — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Squad value comparison (€m, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 implied probability (bet365, de-vigged)</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group C squad values (€m)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst rating 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇭🇹 Haiti</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</th></tr>
+      <tr><td>FIFA ranking</td><td class="ht">#83 (second-lowest in the tournament)</td><td class="sc">#42</td></tr>
+      <tr><td>Squad value</td><td class="ht">≈€55.6m (39th)</td><td class="sc">≈€207.8m</td></tr>
+      <tr><td>Road to qualification</td><td class="ht">CONCACAF: 6W 2D in 10 matches; all "home" games moved to Curaçao</td><td class="sc">Topped UEFA group 4W 1D 1L; beat Denmark 4-2 in the finale (two stoppage-time goals)</td></tr>
+      <tr><td>Recent friendlies</td><td class="ht">0-1 Tunisia, 1-1 Iceland, 4-0 New Zealand, 1-2 Peru</td><td class="sc">0-1 Japan, 0-1 Ivory Coast, 4-1 Curaçao, 4-0 Bolivia</td></tr>
+      <tr><td>World Cup history</td><td class="ht">2nd appearance (1974: lost all 3, conceded 14)</td><td class="sc">9th appearance (the curse: group-stage exit in all 12 major tournaments)</td></tr>
+      <tr><td>1X2 odds (bet365)</td><td class="ht">6.25 (implied ≈14%)</td><td class="sc">1.44 (≈65%) · Draw 4.50 (≈21%)</td></tr>
+      <tr><td>Handicap / Totals</td><td colspan="2" class="sc">Scotland -1.5 @2.45 / Haiti +1.5 @1.49; Over 2.5 @1.71 / Under @1.91 — market picture = "Scotland by one goal"</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2">First-ever meeting</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from bet365 odds (65/21/14). The friendlies share a pattern: both teams beat weak sides and lost to high-intensity opponents (Haiti 1-2 Peru, Scotland back-to-back losses to Japan/Ivory Coast) — Scotland's 65% is built on a "class gap," not a "form gap."</div>
+  </section>
+
+  <!-- ===== Betting market heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Pundit picks / odds / money flow / sentiment</span></h2>
+    <div class="sub">Hot story, cold line: narrative traffic at full blast, competitive suspense flattened by the price</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Hot narrative + one-sided line, but normal volume</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Dense coverage from UK media + East Coast US outlets, the double-return narrative maxed out; the line is tightening one way toward Scotland (-190→-225/-270) with no signs of frenzy. Sentiment centers on "Scotland finally breaking the curse" — historically the exact narrative that keeps burning people.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction tally: Scotland win 8+ · Haiti 0 · Draw 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>Prediction outlet</td><td><b>Haiti 1-3 Scotland</b></td></tr>
+      <tr><td>Racing Post</td><td>UK stalwart</td><td>Scotland to "sweep" the opener</td></tr>
+      <tr><td>Squawka</td><td>Data outlet</td><td>Scotland narrow win, low score</td></tr>
+      <tr><td>Chris Sutton</td><td>BBC pundit</td><td>Scotland win; advocates two strikers, names <b>Doak</b> the X factor</td></tr>
+      <tr><td>Wayne Rooney</td><td>BBC pundit</td><td>Backs Scotland</td></tr>
+      <tr><td>MrFixitsTips</td><td>Scottish betting outlet</td><td>Scotland win + Under 2.5</td></tr>
+      <tr><td>SportsCasting supercomputer</td><td>Model</td><td>Scotland win probability 63%</td></tr>
+      <tr><td>AI panel · ChatGPT / Claude / Gemini</td><td>NYSportsDay three-model panel</td><td>ChatGPT: Haiti +1.5; Claude: Scotland win (89% consensus across a 10-model ensemble); Gemini: Over 2.5 — same direction, most popular scoreline <b>2-1</b></td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal</b>: same structure as the day's other two matches — 0 sources back Haiti; the only "contrarian" call is ChatGPT's Haiti +1.5 safety cushion. Note one detail: the model scoreline consensus is <b>2-1, not 2-0</b> — most quantitative sources assume Haiti scores once. BTTS Yes is the pocket ignored by pundit picks but implicitly supported by the models.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (money tightening toward Scotland)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Scotland win</th><th>Read</th></tr>
+      <tr><td>Early</td><td>Sports Interaction</td><td class="sc">≈1.53 (-190)</td><td>Opening line</td></tr>
+      <tr><td>06-11/12</td><td>bet365</td><td class="sc">1.44 (-225)</td><td>One-way tightening</td></tr>
+      <tr><td>06-11/12</td><td>Lucky Rebel</td><td class="sc">1.37 (-270)</td><td>Tightest price; implied already near 70%</td></tr>
+    </table>
+    <div class="note">📌 <b>One-way move ≈ +4-7pp</b>: Scottish diaspora money (UK + North American Scots) and "break the curse" sentiment pushing the price in the same direction; Haiti drifting passively 6.25→6.50. Kalshi has Scotland 62-66%, Haiti 15-17%, Draw ~22% — the prediction market is cooler than the tightest sportsbook price (70%), a rare 4-8pp temperature gap between the two pools, with the sportsbook side running hotter on emotion.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>: Scotland 62-66%, 17 markets on this match (result/handicap/totals/BTTS/scorer/corners); Polymarket single-match price and volume not found (unverified).</li>
+      <li><b>Sentiment</b>: UK media (BBC/Sky/Scotsman) running the "28-year return + curse" narrative at full power; East Coast US media (Boston Globe/WBUR) doing the Haitian community story — two narratives that never intersect, leaving the actual football discussion thin.</li>
+      <li><b>Squad-value illusion reminder</b>: Haiti's €55.6m is unusually high for a "FIFA #83" side (Isidor/Bellegarde/Nazon all play in major European leagues) — the ranking underrates its counter-attacking quality.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the sportsbook line is 4-8pp hotter than the prediction markets, and the heat source is "break the curse" emotion rather than new information. If McTominay starts healthy, around 65% is a fair midpoint; the market blind spot is <b>BTTS Yes / 2-1-type scorelines</b> — Haiti's counter-attacking setup is good enough to trade one goal in behind Scotland's high line. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/haiti-vs-scotland-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aPgNf2G3Jg7R/">Racing Post</a> · <a href="https://www.thatsagoal.com/football-pundits-predictions-for-today/chris-suttons-predictions">Sutton picks</a> · <a href="https://www.scotsman.com/sport/football/scottish-premiership/latest-premiership-news/man-utd-england-scotland-world-cup-prediction-wayne-rooney-bbc-ryan-christie-steve-clarke-usa-8673645">Rooney</a> · <a href="https://mrfixitstips.co.uk/previews/haiti-vs-scotland-prediction-and-betting-tips/">MrFixitsTips</a> · <a href="https://www.sportscasting.com/news/supercomputer-haiti-vs-scotland-betting-picks-predictions-odds/">SportsCasting supercomputer</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/">NYSportsDay AI panel</a> · <a href="https://www.squawka.com/us/news/world-cup/kalshi-promo-code-haiti-vs-scotland-06-13-26-world-cup-2026/">Squawka/Kalshi</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/haiti-vs-scotland-odds-prediction-061426-217127">Sports Interaction — early price</a></div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">2</span> Lineups & Key Players <span class="tag" style="font-size:11px;font-weight:600;background:#0e2a18;color:var(--good);border:1px solid #1d4a2a;border-radius:6px;padding:2px 8px;vertical-align:middle">Predicted version — official XI in the ✅ module above</span></h2>
+    <div class="sub">Predicted XIs (analyst projections, not official; the official sheets are now out — see "✅ Confirmed Lineups &amp; What They Mean" above)</div>
+    <h4>🇭🇹 Haiti predicted XI (4-4-2)</h4>
+    <div class="lineup">Placide(unverified); Arcus · Adé · Delcroix · Experience; Deedson/Casimir · Jean Jacques · Bellegarde · Providence; Isidor · Nazon</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Wilson Isidor</td><td>Forward / Sunderland (€18m, squad's most valuable)</td><td>Premier League-level sprinting and finishing, counter-attack engine No. 1</td></tr>
+      <tr><td class="ht">Duckens Nazon</td><td>Forward / Esteghlal (Iran)</td><td>National team's all-time top scorer, 44 goals/78 caps; 6 in qualifying incl. a hat-trick vs Costa Rica</td></tr>
+      <tr><td class="ht">Jean-Ricner Bellegarde</td><td>Midfielder / Wolves (€16m)</td><td>Ball-carrying progression + gear shifts, the engine of Haiti's defense-to-attack transitions</td></tr>
+      <tr><td class="ht">Danley Jean Jacques</td><td>Midfielder / Philadelphia Union</td><td>Midfield balancer; match-sharp from a high-intensity MLS season</td></tr>
+    </table>
+    <h4>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland predicted XI (4-4-2 / 4-2-3-1)</h4>
+    <div class="lineup">Gunn; Hickey · Hanley/Souttar · McKenna/Souttar · Robertson(C); Doak · McTominay · Ferguson · McGinn/Christie; Adams · Shankland</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Scott McTominay</td><td>Midfielder / Napoli (≈£34.5m)</td><td>~10 goals 3 assists in Serie A this season; half of Scotland's attack; missed Thursday training with a stomach bug (expected to play · unverified)</td></tr>
+      <tr><td class="sc">Andy Robertson (C)</td><td>Left-back / Liverpool</td><td>Captain; left-flank crossing is Scotland's No. 1 attacking channel</td></tr>
+      <tr><td class="sc">Lawrence Shankland</td><td>Forward / Rangers</td><td>3 goals 1 assist in the last two friendlies, in hot form and expected to start</td></tr>
+      <tr><td class="sc">Ben Gannon-Doak</td><td>Winger / Bournemouth</td><td>Explosive spark back from injury; Sutton's named X factor, set to attack Haiti's left flank</td></tr>
+    </table>
+    <div class="note">Goalkeeper battle: Gunn vs 43-year-old Gordon (the tournament's oldest player) — Clarke hasn't shown his hand. Haiti squad note: Jean Jacques plays for Philadelphia Union (not Lens); the winger in media lists is Deedson, and the supposed Mondésir does not appear in any authoritative squad list (unverified).</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">3</span> Tactical Styles & Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇭🇹 Haiti · Sébastien Migné (French, appointed 2024)</div>
+        <div class="role">4-4-2 mid-low block + direct twin strikers</div>
+        <ul class="cl">
+          <li>A "nomad coach" with a CV across multiple African nations; in 18 months in charge he has never set foot in Haiti due to the security crisis — the squad is held together by diaspora players + Curaçao training camps.</li>
+          <li>The script is clear: concede possession, Bellegarde carries, Isidor/Nazon attack the space in behind — purpose-built to hit Scotland's slow centre-back line.</li>
+          <li>Risk: little top-level defensive experience in big matches; set-piece defending under sustained bombardment from Robertson's crossing side is the Achilles heel.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland · Steve Clarke (appointed 2019, 7-year tenure)</div>
+        <div class="role">4-4-2/4-2-3-1 · Compact structure + left-flank delivery</div>
+        <ul class="cl">
+          <li>After the epic 4-2 qualification clincher over Denmark, Clarke's conservative label has been partly torn off; but in tournament openers he has always played it safe.</li>
+          <li>Three attacking tools: Robertson's crosses, McTominay's late runs, set pieces — all dependent on McTominay's box presence.</li>
+          <li>Psychological variable: the 0-for-12 tournament curse + national expectation; all the "must-win opener" pressure sits on Scotland's side.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corners -->
+<section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+  <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> Corners: Technical Read <span style="font-size:12px;color:var(--mut);font-weight:500">· Style × live lines · handicap & totals</span></h2>
+  <div class="sub">Scotland's crossing + set-piece game naturally generates corners; Haiti's deep-block counter style produces few — the corner picture leans Scottish, with the handicap live and totals fairly neutral.</div>
+  <h4>① Corner profiles of both sides (style-driven)</h4>
+  <table><tr><th>Dimension</th><th>🇭🇹 Haiti</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</th><th>Meaning</th></tr>
+    <tr><td>Corners won per game</td><td class="ht">≈3-4 (low, est./TBC)</td><td class="sc">≈5-6 (high, est./TBC)</td><td>Scotland's sustained pressure earns corners; Haiti sees little ball, low output</td></tr>
+    <tr><td>Corners conceded per game</td><td class="ht">≈5-6 (high, est./TBC)</td><td class="sc">≈3-4 (low, est./TBC)</td><td>Haiti's deep defending invites crosses and corners; Scotland concedes few</td></tr>
+    <tr><td>Attacking emphasis (wide/central/press)</td><td class="ht">Central through-balls on the counter</td><td class="sc">Wide crossing + press, Robertson left-side delivery</td><td>Scotland's wide play converts straight into corners; Haiti goes central, not via the flanks</td></tr>
+    <tr><td>Set-piece threat</td><td class="ht">Weak (aerial handling is the soft spot)</td><td class="sc">Strong (McTominay attacking the box + height)</td><td>On corners Scotland's main weapon vs Haiti's weak point</td></tr>
+    <tr><td>Corner-dominance lean</td><td class="ht">Disadvantage</td><td class="sc">Clearly dominant</td><td>Both corner count and corner quality tilt to Scotland</td></tr>
+  </table>
+  <h4>② Live lines (corner market)</h4>
+  <p>Bookmakers and news sources have not publicly disclosed a dedicated corner line for this match (corner markets on bet365/oddschecker/sofascore not located). <b>Reasoned estimate from style and league baselines (TBC)</b>: corner total <b>O/U 9.5</b>, indicative odds about <b>Over 1.90 / Under 1.90</b> (European decimal, est./TBC); corner handicap <b>Scotland -2.5</b> (Scotland corner-dominant, est./TBC). Factual anchor: the Scottish Premiership averages ≈10 corners per game (home ≈5.5, away ≈4.6), consistent with a "dominant side ≈6 / weaker side ≈3-4" profile. Sources: footystats / betoncorners (league baseline, factual); the match-specific line is an analytical estimate.</p>
+  <h4>③ Technical read (handicap & totals)</h4>
+  <div class="insight"><div class="who">Handicap (corner handicap)</div>Scotland's crossing game (Robertson's left-side delivery) plus set-piece targeting (McTominay) keeps Haiti pinned in its box and forces corners; Haiti's central counter style doesn't use the flanks and yields few. The corner-count gap leans wide naturally, so <b>Scotland -2.5 on corners has room to land</b> — if Scotland controls the game on class, a corner margin of +3 or more is a reasonable script.</div>
+  <div class="insight"><div class="who">Totals (total corners)</div>Scotland's one-way corner production (≈6) lifts the total, but Haiti's deep defending and flank-avoidance suppress its own output (≈3-4), summing to roughly 9-10, hugging the 9.5 line. <b>Slight lean to the over, but not firm</b>: if Haiti sits in a deep block and Scotland builds patiently, corners pile up over; if Haiti concedes early and is forced out, reducing Scotland's crossing frequency, it can fall to the under.</div>
+  <div class="insight"><div class="who">Variables & two-sidedness</div>① If Scotland fails to break through and ramps up crossing and wide pressure late chasing a goal, the corner count spikes, favoring the over and the Scotland handicap; ② <b>Gilmour out</b> affects midfield build-up and width — Scotland may launch balls into the box more directly, which can actually raise corner output; ③ Reverse risk: if Scotland goes 2-0 up early and eases off to control, crossing drops and both the corner total and the handicap margin shrink.</div>
+  <div class="note">For analysis only — not betting advice. The corner-specific line is an estimate based on style and league baselines (TBC). Sources: <a href="https://footystats.org/scotland/premiership/corner-stats" style="color:var(--accent)">FootyStats — Scottish Premiership corner baseline</a> · <a href="https://www.betoncorners.com/teams/scotland-corners/" style="color:var(--accent)">BetOnCorners — Scotland corners</a></div>
+</section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Officially announced</b>: Algeria's <b>Mustapha Ghorbal</b> (40, FIFA since 2014; <b>referee of the 2024 Champions League final</b>, plus 2 matches at the 2022 World Cup). <b>Numbers (now filled in)</b>: ≈ 3.87 yellows/game, 0.36 penalties/game (712 yellows / 22 reds in 184 matches). No officiating history with either team. Read: a lenient card threshold (favors the body-battle, helps Haiti scrap) but a strict penalty call (box grappling/handball carries a cost, giving the weaker side a "win-a-penalty" outlet); the big-match CV shows calm game control.</div>
+    <h4>Tournament-wide new officiating rules (impact on this match)</h4>
+    <ul class="cl">
+      <li><b>8-second goalkeeper hold, 5-second throw-ins</b>: if Haiti leads or the game stalls, its time-wasting tools are cut — 38-year-old Placide's old habits are first in the firing line.</li>
+      <li><b>Only captains may talk to the referee</b>: Robertson's captaincy experience is a hidden Scotland asset.</li>
+      <li><b>Semi-automated offside</b>: marginal calls on Haiti's runs in behind (Isidor) get decided faster — a double-edged sword.</li>
+    </ul>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Chris Sutton · BBC <small>· Pundit</small></div>"Scotland should play two strikers and let Doak run at them" — the subtext: don't roll out another Clarke-style conservative setup. Against the weakest-tier opponent of the tournament, playing it safe is the real risk of the curse continuing.</div>
+    <div class="insight"><div class="who">SportsCasting supercomputer <small>· Model</small></div>A 63% win probability sits below the line's implied 65-70% — the model is cooler than the market, and the gap is exactly the price of "break the curse" emotion.</div>
+    <div class="insight"><div class="who">Composite · Haiti profile <small>· Tactical signal</small></div>This is not the Haiti of 1974: a counter-attacking line of Isidor (Premier League), Bellegarde (Premier League) and Jean Jacques (MLS) is unprecedented for a FIFA #83 team — the huge crack between 39th in squad value and 83rd in ranking is the upset space itself.</div>
+  </section>
+
+  <!-- Verdict -->
+  <section>
+    <h2><span class="n">6</span> Overall Verdict & Unverified Items</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: Scotland 2-0/2-1 is the baseline script; Haiti's realistic path is to survive the first 30-minute bombardment, trade one goal on the counter, and drag the match into Scotland's anxiety zone.</li>
+      <li><b>Key men</b>: McTominay (SCO/half the attack + fitness doubt), Robertson (SCO/supply line), Isidor (HAI/counter engine No. 1), Placide or his deputy (HAI/aerial handling).</li>
+      <li><b>Decisive battle</b>: Scotland's conversion rate on set pieces and crosses vs Haiti's success rate attacking the high line; McTominay's physical condition is the biggest single-point variable.</li>
+      <li><b>Market view</b>: sportsbooks (tightest at 70%) run hotter than prediction markets (62-66%) — the sentiment gap comes from the "break the curse" narrative; 2-1/BTTS Yes is the overlooked pocket.</li>
+    </ul>
+    <div class="flag">⚠ <b>Unverified</b>: ① McTominay/McKenna/Adams individual status pending official pre-match confirmation; ② conflicting reports on Haiti goalkeeper Placide; ③ Pierrot's current status single-sourced; ④ Polymarket single-match volume not found; ⑤ all predicted XIs are analyst projections. <span style="color:var(--mut)">(Ghorbal's quantitative officiating data has now been filled in.)</span></div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html">Sports Mole — preview/injuries/predicted XIs</a> · <a href="https://www.fourfourtwo.com/team/scotland-injury-news-latest-as-scott-mctominay-misses-training-before-world-cup-opener">FourFourTwo — McTominay</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-injury-news-steve-clarke-mulls-over-major-decision-on-trio-as-world-cup-campaign-begins-8671906">Scotsman — injuries</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49026945/haiti-scotland-kickoff-how-watch-stats-team-news">ESPN — pre-match team news</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/">NYSportsDay — AI panel/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/haiti-vs-scotland-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aPgNf2G3Jg7R/">Racing Post</a><br>
+      • <a href="https://www.bostonglobe.com/2026/06/03/metro/haiti-world-cup/">Boston Globe — Haitian community</a> · <a href="https://www.wbur.org/news/2026/05/26/boston-haitians-world-cup-scotland-match">WBUR</a> · <a href="https://www.888sport.com/blog/football/world-cup/haiti-squad-value-and-salaries-2026-world-cup">888sport — Haiti squad value</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-referee-confirmed-as-12-year-fifa-veteran-to-take-charge-of-world-cup-clash-8668192">Scotsman — referee</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-12 · Charts use verified data; radar chart is the analyst's composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['Haiti','Scotland'],datasets:[{data:[55.6,207.8],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Scotland win','Draw','Haiti win'],datasets:[{data:[65,21,14],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Brazil','Morocco','Scotland','Haiti'],datasets:[{data:[1135,488.2,207.8,55.6],backgroundColor:['#16a34a','#c1272d',SC,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive solidity','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'Haiti',data:[5,6,5,5,6.5,3.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Scotland',data:[7,6.5,7,7.5,7,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

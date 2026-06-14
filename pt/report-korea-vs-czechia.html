@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Pré-Jogo · Coreia do Sul vs Tchéquia · Copa do Mundo 2026 Grupo A</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --kr:#cd2e3a;--cz:#11457e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f29,#11457e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21161c,#152138);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.kr{color:#f0828b;font-weight:600}td.cz{color:#7fb0e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="index.html">← Voltar à central de análise</a><br>
+  <span class="badge">⚽ Copa do Mundo 2026 · Grupo A — 1ª Rodada · 🏁 Final Coreia do Sul 2-1 Tchéquia</span>
+  <h1>Coreia do Sul vs Tchéquia</h1>
+  <div class="meta">11 de junho de 2026 · Guadalajara — Estadio Akron · 22:00 ET · Grupo A (com México e África do Sul)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 Coreia do Sul</div><div class="rk">Valor €136,75m · Última Copa de Son</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fb0e6">🇨🇿 Tchéquia</div><div class="rk">Valor €115,90m · Retorno após 20 anos</div></div>
+  </div>
+
+  
+  <!-- ===== 📊 Análise pós-jogo (mantida pela tarefa diária) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> Análise pós-jogo: tática e dados <span style="font-size:12px;color:var(--mut);font-weight:500">· com referências transferíveis para o próximo jogo</span></h2>
+    <div class="sub">Final: Coreia do Sul 2-1 Tchéquia (virada) · Dados: Opta/Yahoo box score · A análise pré-jogo completa permanece abaixo como arquivo de previsões</div>
+
+    <h4>① Cronologia do placar</h4>
+    <p style="font-size:14px">59' Tchéquia abre o placar: <b>arremesso lateral longo → cabeçada potente de Krejčí no segundo poste</b> (exatamente a rota de "melhor bola parada da Europa" destacada na prévia); a Coreia responde 8 minutos depois — 67' <b>Hwang In-beom empata (assistência de Lee Kang-in)</b>; 80' <b>Oh Hyeon-gyu vira</b> (jogada de Hwang). Dois gols em 21 minutos para completar a virada.</p>
+
+    <h4>② Comparativo de dados</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇰🇷 Coreia do Sul</th><th>🇨🇿 Tchéquia</th><th>Leitura</th></tr>
+      <tr><td>Posse</td><td class="kr"><b>61,7%</b></td><td class="cz">38,3%</td><td>No choque de esquemas espelhados, a Coreia dominou o controle — muito acima do esperado</td></tr>
+      <tr><td>xG</td><td class="kr"><b>1,84</b></td><td class="cz">0,81</td><td>Vitória pela qualidade de criação, não pela sorte; pouca ameaça tcheca em jogo corrido</td></tr>
+      <tr><td>Passes certos</td><td class="kr">468</td><td class="cz">—</td><td><b>Recorde da Coreia em Copas desde 1966</b> — prova dura da evolução no jogo posicional</td></tr>
+      <tr><td>Destaques individuais</td><td class="kr">Lee Kang-in 37/37 passes · 3 chances criadas · 10/14 duelos; Hwang In-beom 73 passes (2º maior da Coreia em Copas)</td><td class="cz">Gol de cabeça de Krejčí</td><td>Lee Kang-in é a chave do jogo posicional; a produção tcheca segue dependente de bola parada</td></tr>
+    </table>
+
+    <h4>③ Leitura tática (real vs previsto)</h4>
+    <ul class="watch">
+      <li><b>O rótulo de "pouca criatividade em jogo corrido" da Coreia caiu</b>: 61,7% de posse + 468 passes + xG 1,84, com os dois gols nascendo de infiltrações pelo meio. <b>Conclusão transferível</b>: contra blocos baixos/médios, a Coreia agora tem resposta posicional liderada por Lee Kang-in — não depende mais só do contra-ataque de Son.</li>
+      <li><b>Vitória sem Son como protagonista</b>: gols de Hwang In-beom/Oh Hyeon-gyu, assistências de Lee Kang-in/Hwang — a tese de "sem Son o ataque trava" foi refutada; o ataque multifocal é o maior sinal novo da Coreia no torneio.</li>
+      <li><b>O roteiro tcheco se cumpriu pela metade</b>: a bola parada floresceu primeiro (cabeçada de Krejčí em arremesso longo), provando que a arma é real; mas após sair na frente sofreu 2 gols em 21 minutos — o bloco não segurou as infiltrações centrais, e Schick não manteve a fase artilheira (o grosso do xG 0,81 veio de bola parada).</li>
+      <li><b>No espelho 3-4-2-1, o jogo se decidiu no miolo</b>: os 73 passes de Hwang esmagaram o duelo direto — a leitura da escalação oficial ("alas + bola parada decidem") acertou só metade: quem decidiu foi a qualidade de saída pelo centro.</li>
+    </ul>
+
+    <h4>④ Conferência das previsões</h4>
+    <ul class="cl">
+      <li>Resultado: painel de IA · Claude "Coreia a 2,70 é preço de valor (probabilidade real 43-45%)" ✓; âncora no empate da SportsLine ✗; "Tchéquia sem perder" do Racing Post ✗</li>
+      <li>Total de gols: Over 2,5 de Eimer ✓ (3 gols); Under de Gemini ✗ — a real divergência entre especialistas foi vencida pelo lado Over</li>
+      <li>Índice de calor 2/5 "mercado limpo e equilibrado" ✓; mas o sinal de divergência "público 69% na Coreia vs preço parado = dinheiro inteligente na Tchéquia" ✗ — <b>caso raro de público certo e bancas erradas; registrado</b></li>
+      <li>Arbitragem: estreia de Amin Omar em Copas foi estável; o risco de cauda de "cartões em série em jogo de alta tensão" não se materializou</li>
+    </ul>
+
+    <h4>⑤ Referências transferíveis → próximo jogo de cada equipe</h4>
+    <table>
+      <tr><th>Equipe</th><th>Próximo jogo</th><th>O que levar</th></tr>
+      <tr><td class="kr">🇰🇷 Coreia do Sul</td><td>18/06 vs México (Guadalajara)</td><td>① Duelo direto pela liderança: ambos com 3 pontos — quem vencer praticamente garante o 1º lugar do Grupo A; ② <b>Montes suspenso no México</b> — zaga reorganizada, alvo claro para Son/Oh Hyeon-gyu; ③ O modelo de controle não se copia direto (o México não é a Tchéquia): preparar o retorno ao modo contra-ataque, mas a produção posicional de Lee Kang-in já é um ativo confiável; ④ Alerta: a pressão mexicana (16 finalizações contra a África do Sul) é muito superior à tcheca — a velha fraqueza da linha de 3 na transição defensiva terá seu teste mais duro.</td></tr>
+      <tr><td class="cz">🇨🇿 Tchéquia</td><td>18/06 vs África do Sul</td><td>① Obrigada a vencer, e o adversário está <b>desfalcado</b> (Sithole/Zwane suspensos; ataque de xG 0,07 na estreia); ② A arma de bola parada está validada — seguir bombardeando a defesa aérea sul-africana é o plano principal; ③ Mas a falta de criatividade em jogo corrido vai reaparecer contra o bloco baixo — é preciso um plano B além de Schick; ④ Cenário de classificação: 0 ponto, mas pega a África do Sul desfalcada antes do México na última rodada — o destino segue nas próprias mãos.</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">Fontes: <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a> · <a href="https://heavy.com/sports/soccer/world-cup/south-korea-vs-czech-republic-results-today-fifa-world-cup-live-score-updates-stats/" style="color:var(--accent)">Heavy — registro do jogo</a></div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia isto primeiro)</h3>
+    <p class="lead">Este é o <b>verdadeiro divisor da classificação pelo 2º lugar do Grupo A</b> — o México já cumpriu o roteiro dos favoritos: venceu a África do Sul por 2-0 e assumiu a liderança do Grupo A (resultado do jogo de abertura confirmado); quem vencer aqui fica com a iniciativa na disputa por essa segunda vaga. Os valores dos dois elencos são próximos (Coreia levemente superior) e as odds estão quase equilibradas. <b>O contraste de estilos</b>: a Coreia tem um teto individual mais alto (Son/Lee Kang-in/Kim Min-jae), mas o sistema de três zagueiros tem dado espaços em transições defensivas (0-4 para Costa do Marfim e 0-1 para Áustria em março, 180 minutos sem marcar em jogo aberto); a Tchéquia é mais sólida e tem as <b>bolas paradas mais eficazes das eliminatórias europeias (8 gols)</b>, com Schick marcando 16 gols em 28 jogos pelo Leverkusen nesta temporada. Se vira um jogo posicional, as bolas paradas e a finalização de Schick são o fator X da Tchéquia; se a Coreia conseguir tornar o jogo mais aberto, a velocidade de Son no contra-ataque pode punir a Tchéquia.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Natureza do jogo</div><div class="v" style="color:var(--warn)">Divisor classificatório</div></div>
+      <div class="key"><div class="k">Valor</div><div class="v">Coreia ≈1,18×</div></div>
+      <div class="key"><div class="k">Schick (temporada)</div><div class="v" style="color:#7fb0e6">16 gols</div></div>
+      <div class="key"><div class="k">Bolas paradas Tchéquia</div><div class="v" style="color:#7fb0e6">Nº 1 Europa</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Bolas paradas</b>: a Tchéquia marcou 8 gols de bola parada nas eliminatórias — o melhor da Europa; a defesa de três no fundo da Coreia tem dificuldades nesse quesito — é o maior fator decisivo desta partida.</li>
+      <li><b>Son vs o sistema</b>: Son lidera as assistências na MLS nesta temporada (8) mas ainda não marcou; se a Coreia não encontrar saída pela criatividade de Son, os canais ofensivos ficam muito estreitos.</li>
+      <li><b>Forma de Schick</b>: 9 gols nas últimas 7 rodadas da Bundesliga (incluindo hat-trick contra o Leipzig) — um dos finalizadores mais precisos do grupo além de Son.</li>
+      <li><b>Adaptação do novo técnico</b>: Koubek assumiu a Tchéquia há pouco tempo e passou por apenas 2 jogos (ambos decididos nos pênaltis); este será o 3º.</li>
+    </ul>
+  </div>
+
+  <!-- ===== MÓDULO PRINCIPAL: NOTÍCIAS PRÉ-JOGO ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias Pré-Jogo <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo principal · Com fontes + por que é importante</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que afetam este jogo, com explicação de como cada um muda a tática ou o resultado</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Situação do Grupo A · Jogo de abertura encerrado <span style="color:var(--mut);font-weight:400">· 11/06 Resultado final</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">México 2-0 África do Sul (Quiñones primeiro gol do torneio aos 9' + Jiménez); <b>3 cartões vermelhos</b> no final — Zwane/Sithole suspensos para a próxima rodada</div>
+      <p style="font-size:13.5px">O jogo de abertura se desenrolou exatamente conforme o roteiro "México vence + poucos gols": vitória por 2-0 e liderança do Grupo A. O trecho final saiu do controle, com <b>3 vermelhos consecutivos no apito final — a primeira vez em 20 anos de Copa do Mundo</b> (incluindo vermelho direto de Zwane após revisão do VAR).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: ① O vencedor desta partida detém a iniciativa para a segunda vaga de classificação do Grupo A — o perdedor enfrenta o México na rodada seguinte (Coreia em 18/6) ou depende totalmente da última rodada, com margem de erro mínima; ② as duas suspensões da África do Sul significam que <b>eles chegarão desfalcados ao duelo final com a Tchéquia</b> — um benefício potencial para a aritmética de classificação tcheca e um leve aumento no valor do empate hoje; ③ os 3 vermelhos são a primeira evidência concreta do rigor arbitral neste torneio, o que eleva diretamente o risco de cartões nesta partida igualmente acirrada — veja o módulo de arbitragem abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — México 2-0 África do Sul resultado final</a> · <a href="https://www.cbssports.com/soccer/news/mexico-vs-south-africa-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS — 3 vermelhos / suspensões</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Coreia do Sul · Forma <span style="color:var(--mut);font-weight:400">· 30/05 / 04/06 últimos amistosos</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Dois amistosos vencidos para fechar a preparação: 5-0 sobre Trinidad e Tobago (Son marca duas vezes), 1-0 sobre El Salvador (Son poupado)</div>
+      <p style="font-size:13.5px">A Coreia fechou a preparação com duas vitórias: em 30/5, <b>5-0 contra Trinidad e Tobago</b> — Son marcou de perto aos 40' e converteu um pênalti 3 minutos depois, marcando duas vezes e reencontrando o gol; em 4/6, o último amistoso terminou <b>1-0 contra El Salvador</b> (gol de Lee Dong-gyeong), com Son poupado para preservar a forma. Son afirmou que esta "pode ser minha última Copa do Mundo".</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: a maior preocupação da Coreia era os 180 minutos sem gol em jogos abertos em março — os dois gols de Son nos amistosos aliviam diretamente a dúvida sobre "só cria, não finaliza". O fato de ele ter sido poupado no último jogo indica que o técnico Hong o trata como a peça central da partida de abertura, e a Tchéquia precisará marcá-lo com atenção redobrada nos contra-ataques.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.thestandard.com.hk/sports-updates/article/333414/Son-sees-double-in-friendly-win-over-Trinidad-and-Tobago" style="color:var(--accent)">The Standard — Son marca duas vezes</a> · <a href="https://bolavip.com/en/soccer/south-korea-vs-el-salvador-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — 1-0 El Salvador/Son poupado</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Tchéquia · Forma + Escalação <span style="color:var(--mut);font-weight:400">· 04/06 último amistoso</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tchéquia vence a Guatemala por 3-1, <b>Schick marca, Hložek retorna de lesão como suplente</b></div>
+      <p style="font-size:13.5px">No último amistoso antes da Copa, a Tchéquia <b>venceu a Guatemala por 3-1</b>: Schick (11'), Holeš (72') e Višinský (79') marcaram, com Schick mantendo a forma em alta (16 gols em 28 jogos pelo Leverkusen nesta temporada). <b>Adam Hložek, recuperado de lesão, entrou no 2º tempo como suplente</b>, adicionando mais uma opção ofensiva além de Schick.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: Schick marcou antes do jogo, confirmando que o finalizador mais preciso do grupo — além de Son — está em forma; combinado com as <b>melhores bolas paradas da Europa</b> da Tchéquia, isso vai de encontro exatamente às fraquezas do sistema de três zagueiros da Coreia em transições defensivas; o retorno de Hložek também reduz o risco de "Schick marcado, ataque mudo" — a profundidade ofensiva da Tchéquia é melhor do que em março.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://bolavip.com/en/soccer/guatemala-vs-czechia-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — Tchéquia 3-1 Guatemala</a> · <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393" style="color:var(--accent)">Bundesliga — Forma de Schick</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Coreia do Sul · Lesões <span style="color:var(--mut);font-weight:400">· Convocados · Relatados como sem gravidade</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lee Kang-in com entorse no tornozelo esquerdo (saiu no intervalo vs Brest) + Kim Min-jae com problema no joelho (saiu no intervalo vs Wolfsburg) — ambos convocados para os 26, relatos dizem que não é grave</div>
+      <p style="font-size:13.5px">Lee Kang-in sofreu uma entorse no tornozelo esquerdo na partida do PSG contra o Brest e foi substituído no 2º tempo, mas a mídia coreana relata que é uma lesão leve e não afeta a Copa; Kim Min-jae jogou apenas o 1º tempo na partida do Bayern contra o Wolfsburg por dores no joelho, igualmente descrita como não grave. Ambos estão na lista final de 26 convocados divulgada por Hong Myung-bo em 16/5.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: estes são os dois eixos da Coreia — Lee Kang-in é praticamente o único capaz de romper a defesa compacta da Tchéquia no jogo posicional; Kim Min-jae é o pilar da defesa de três, essencial para o jogo aéreo e para sair com a bola. Mesmo uma condição física abaixo do ideal de qualquer um deles amplificaria os problemas já conhecidos da Coreia de "criatividade insuficiente no jogo aberto + fraqueza defensiva em bolas paradas". O status real deve ser confirmado com a escalação oficial antes do jogo (é uma "informação dura a verificar").</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — Escalação da Coreia do Sul</a> · <a href="https://www.msn.com/en-xl/news/other/lee-kang-in-kim-min-jae-injured-ahead-of-world-cup/ar-AA2363NI" style="color:var(--accent)">Mídia coreana — Lesões de Lee Kang-in/Kim Min-jae</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369" style="color:var(--accent)">RotoWire</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Elencos confirmados <span style="color:var(--mut);font-weight:400">· Convocações de 26 jogadores divulgadas</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Os dois elencos de 26 estão definidos: Hwang Hee-chan recuperado deve jogar; Tchéquia com Krejčí como capitão e 10 jogadores do Slavia de Praga</div>
+      <p style="font-size:13.5px">Hong Myung-bo divulgou a lista coreana em 16/5; <b>Hwang Hee-chan se recuperou completamente de uma pequena lesão no tornozelo no final da temporada e deve ser titular</b>, com Son garantido na esquerda. Koubek fechou os 26 da Tchéquia em 31/5; o zagueiro do Wolverhampton <b>Ladislav Krejčí será capitão</b>, e o elenco conta com nada menos que 10 jogadores do campeão nacional Slavia de Praga (espinha dorsal do time), com Schick como a maior ameaça.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: o retorno de Hwang Hee-chan à forma completa dá à Coreia mais um ponto de pressão e velocidade além de Son, aliviando diretamente a preocupação com "criatividade ofensiva insuficiente no jogo aberto"; a Tchéquia, construída em torno do bloco do Slavia, tem alto entrosamento e conhece bem os esquemas de bola parada — exatamente o que vai explorar as fragilidades defensivas da Coreia no três. Ambos os times entram sem desfalques significativos — é um confronto equilibrado com escalações completas.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — 26 convocados da Coreia</a> · <a href="https://worldcuppass.com/czechia-world-cup-squad-2026/" style="color:var(--accent)">WorldCupPass — 26 convocados da Tchéquia</a> · <a href="https://www.goal.com/en-om/news/south-korea-czech-republic-world-cup-preview/bltc5df400bcedf8307" style="color:var(--accent)">Goal — Pré-visualização do confronto</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Árbitro · Confirmado <span style="color:var(--mut);font-weight:400">· 08/06 nomeação FIFA</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro confirmado: <b>o egípcio Amin Omar (Amin Mohamed Omar)</b> apita (um dos quatro jogos do dia de abertura)</div>
+      <p style="font-size:13.5px">A FIFA divulgou os árbitros dos quatro jogos do dia de abertura; <b>Coreia do Sul vs Tchéquia será apitado pelo egípcio Amin Omar (Amin Mohamed Omar)</b> (no mesmo dia: Sampaio apita México-África do Sul, Facundo Tello apita Canadá-Bósnia, Danny Makkelie apita EUA-Paraguai).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: neste confronto equilibrado pelo 2º lugar, a postura do árbitro amplifica o impacto no resultado. A forma como o árbitro trata as disputas físicas em bolas paradas e as cargas na área vai determinar diretamente se o <b>bombardeio de bolas paradas da Tchéquia</b> pode render mais faltas e se as disputas aéreas de Schick serão apitadas; combinado às novas regras (8s goleiro, 5s lateral, só o capitão fala), a gestão emocional da Coreia num duelo equilibrado também é fundamental.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — Árbitros do dia de abertura</a> · <a href="https://onefootball.com/en/news/fifa-confirms-referees-for-opening-2026-world-cup-fixtures-42984754" style="color:var(--accent)">OneFootball — FIFA confirma árbitros dos jogos de abertura</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Escalações oficiais ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2216,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130a">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· anunciadas T-60 · verificação por duas fontes</span></h2>
+    <div class="sub">Os XI oficiais das duas equipes já foram divulgados (contas oficiais theKFA e @ceskarepre_cz + matérias do Khel Now) · <b style="color:#4ade80">✅ Confirmação oficial</b></div>
+
+    <h4>🇰🇷 Coreia do Sul — XI oficial (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Lee Gi-hyuk; Seol Yeong-u · Hwang In-beom · Paik Seung-ho · Lee Tae-seok; Lee Kang-in · Lee Jae-sung; Son Heung-min (C)</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: <b style="color:#f0828b">Hwang Hee-chan</b> (Wolves, fora do XI previsto), Cho Gue-sung (referência aérea), Lee Dong-gyeong (marcou no último amistoso)</div>
+
+    <h4>🇨🇿 Tchéquia — XI oficial (3-4-2-1)</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci (C); Coufal · Soucek · Sojka · Zeleny; Provod · Sulc; Schick</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: <b style="color:#7fb0e6">Chory</b> (centroavante de 2 m, marcou contra a Guatemala), Hlozek (recuperado de lesão), Darida (experiência)</div>
+
+    <h4>vs escalação prevista (Coreia 8/11 iguais · Tchéquia 9/11 iguais)</h4>
+    <table>
+      <tr><th>Mudança</th><th>Prevista</th><th>Oficial</th><th>Por que é importante</th></tr>
+      <tr><td class="kr">COR · terceiro zagueiro</td><td>Kim Tae-hwan</td><td><b>Lee Gi-hyuk</b></td><td>Hong escolhe mobilidade em vez de experiência: recomposição mais rápida contra Schick e os contra-ataques tchecos.</td></tr>
+      <tr><td class="kr">COR · meio-campo</td><td>Kim Jin-gyu</td><td><b>Paik Seung-ho</b></td><td>Uma camada extra de proteção e chute de longe no duplo pivô — mirando exatamente a fraqueza de transição da linha de três apontada nesta página.</td></tr>
+      <tr><td class="kr">COR · ataque</td><td>Hwang Hee-chan</td><td><b>Lee Jae-sung</b></td><td><b>A grande surpresa</b>: Hwang no banco; a Coreia troca profundidade vertical por controle associativo e guarda Hwang como arma para o segundo tempo.</td></tr>
+      <tr><td class="cz">TCH · volante</td><td>Darida</td><td><b>Sojka</b></td><td>O veterano de 35 anos dá lugar ao jovem volante do Slavia — aposta em fôlego nos 1.500 m+ de altitude de Guadalajara.</td></tr>
+      <tr><td class="cz">TCH · ala esquerdo</td><td>Jurasek</td><td><b>Zeleny</b></td><td>A opção mais defensiva; o bloco do Slavia cresce ainda mais, priorizando segurança nos duelos pelos lados.</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">Leitura tática</h4>
+    <ul class="cl">
+      <li><b>3-4-2-1 espelhado</b>: o jogo tende a se decidir nos duelos de alas e nas bolas paradas — em linha com o resumo: jogo cadenciado favorece a Tchéquia.</li>
+      <li><b>Coreia mais conservadora que o esperado</b>: Hwang no banco + duplo pivô Paik Seung-ho/Hwang In-beom — Hong prioriza tapar a fraqueza de transição; Son como referência, com Lee Kang-in/Lee Jae-sung flutuando atrás.</li>
+      <li><b>Arsenal de bolas paradas tcheco intacto</b>: Soucek/Krejci/Schick todos titulares — a melhor bola parada da Europa (8 gols nas Eliminatórias) segue completa; o maior fator desta página não muda.</li>
+      <li><b>O banco pode decidir</b>: os dois lados escalaram meio-campistas de muita rodagem por causa da altitude e do horário noturno; Hwang Hee-chan/Chory/Hlozek — três jogadores capazes de mudar o jogo — começam no banco, então a janela de substituições após os 60’ pode ser o verdadeiro divisor de águas.</li>
+      <li><b>Conclusão do resumo: mantida</b> — início equilibrado e de poucos eventos, com bolas paradas e os contra-ataques de Son como os dois fatores X; única correção: a Coreia começará mais cautelosa que o previsto, com os primeiros 30 minutos provavelmente de estudo.</li>
+    </ul>
+
+    <h4 style="margin-top:16px">Reação do mercado</h4>
+    <div style="font-size:13.5px;color:#cbd5e1">Sem movimentos de odds verificáveis em torno da divulgação das escalações (≈T-60) — nenhum XI trouxe surpresa de peso, em linha com o perfil de mercado “2/5 equilibrado, sem prêmio emocional” acima (odds decimais estáveis em ≈2,62–2,75 / 3,00–3,15 / 2,75–2,85).</div>
+
+    <div class="src" style="margin-top:12px">Fontes: <a href="https://khelnow.com/football/world-football-south-korea-starting-lineup-vs-czechia-confirmed-fifa-world-cup-202606">Khel Now — XI oficial da Coreia do Sul (com post do theKFA)</a> · <a href="https://khelnow.com/football/world-football-czechia-starting-lineup-vs-south-korea-fifa-world-cup-202606">Khel Now — XI oficial da Tchéquia (com post da federação tcheca)</a> · <a href="https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-south-korea-v-czechia/blt0769fcf7cebda064">Goal US — página da partida</a> · <a href="https://www.aljazeera.com/sports/2026/6/11/south-korea-vs-czechia-world-cup-group-match-teams-start-and-lineups">Al Jazeera — XI previstos</a></div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Análise de Dados (Principal)</h2>
+    <div class="sub">Valor de mercado · Forma dos jogadores-chave · Probabilidade de classificação — todos os gráficos são dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Comparação de valor total do elenco (€ milhões, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>Produção dos principais artilheiros na temporada no clube</h5><canvas id="formChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Calor para liderança/classificação no Grupo A (probabilidade implícita %)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil geral de força (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇰🇷 Coreia do Sul</th><th>🇨🇿 Tchéquia</th></tr>
+      <tr><td>Valor total do elenco</td><td class="kr">€136,75m</td><td class="cz">€115,90m</td></tr>
+      <tr><td>Formação</td><td class="kr">3-4-2-1</td><td class="cz">4-2-3-1 / 3-4-2-1</td></tr>
+      <tr><td>Principal finalizador</td><td class="kr">Son (LAFC, 8 assist. 0 gols na temp.), Hwang Hee-chan (Wolves)</td><td class="cz">Schick (Leverkusen, 28j 16g; 25 gols pela seleção)</td></tr>
+      <tr><td>Bolas paradas</td><td class="kr">Mediano, e é uma fraqueza defensiva</td><td class="cz">8 gols nas eliminatórias, o maior da Europa</td></tr>
+      <tr><td>Amistosos de março</td><td class="kr">0-4 para Costa do Marfim, 0-1 para Áustria (sem gol em jogo aberto)</td><td class="cz">Classificou pela repescagem em dois jogos decididos nos pênaltis</td></tr>
+      <tr><td>Prob. implícita de liderança do grupo</td><td class="kr">≈22%</td><td class="cz">≈24%</td></tr>
+      <tr><td>Contexto desta partida</td><td colspan="2" class="cz">Disputa pelo 2º lugar do grupo — o resultado define quem controla a classificação (odds quase equilibradas)</td></tr>
+    </table>
+    <div class="note">📌 Este não é "forte vs fraco" — é um duelo equilibrado entre duas seleções de segunda prateleira. Os dados apontam para as bolas paradas (vantagem da Tchéquia) e para a capacidade de Son ativar o ataque (variável da Coreia) como fatores decisivos.</div>
+  </section>
+
+  <!-- ===== ÍNDICE DE CALOR DO MERCADO ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Índice de Calor do Mercado de Apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· Novo módulo · Recomendações / Odds / Volume</span></h2>
+    <div class="sub">Ao contrário do "superaquecimento generalizado" do jogo de abertura, este é um mercado limpo quase equilibrado — dados reais com fontes</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de Superaquecimento do Mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · Equilibrado, sem prêmio emocional evidente</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Especialistas divididos, odds equilibradas nas três direções, sem unanimidade de nomes conhecidos — precificação do mercado em linha com os fundamentos; a divergência está na mais/menos de gols, não no 1X2.</div>
+    </div>
+
+    <h4>① Agregado de recomendações de especialistas (8 fontes · Direções divididas: Coreia 2 · Tchéquia invicta 2 · Empate/Menos gols 3 · Mais gols 1)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Especialista de elite SportsLine</td><td>Especialista certificado</td><td>Abertura equilibrada com poucos gols, <b>empate como âncora</b>, acrescenta placar exato 1-1 como versão de longa cotação</td></tr>
+      <tr><td>Jon Eimer</td><td>Tipster profissional</td><td>Posição contrária: aposta em <b>Mais de 2,5</b> — a Coreia foi o ataque mais prolífico na fase de grupos das eliminatórias; os últimos 5 jogos da Tchéquia tiveram mais de 2,5 gols</td></tr>
+      <tr><td>Racing Post</td><td>Mídia britânica de apostas</td><td>Destaca bolas paradas da Tchéquia + forma de Schick; favorece Tchéquia invicta</td></tr>
+      <tr><td>Algoritmo KickOff</td><td>Modelo</td><td>Coreia do Sul levemente favorita com 38%</td></tr>
+      <tr><td>Dimers / Squawka</td><td>Modelos agregados</td><td>Quase três vias iguais; Menos de 3,5 como opção conservadora de consenso</td></tr>
+      <tr><td>Painel IA · Claude</td><td>Experimento com 3 modelos — NYSportsDay</td><td><b>Coreia do Sul 2.70 é valor</b>: 10 modelos integrados estimam prob. real de vitória coreana em 43-45% vs 37% do mercado; o objetivo de Son de bater o recorde de gols da Coreia em Copas é uma variável de motivação</td></tr>
+      <tr><td>Painel IA · ChatGPT</td><td>Mesmo experimento</td><td><b>Tchéquia +0,5 (1.48)</b>: uma seleção que retorna após 20 anos "não vai perder o jogo de abertura"; estima xG Coreia 1,20 vs Tchéquia 0,90</td></tr>
+      <tr><td>Painel IA · Gemini</td><td>Mesmo experimento</td><td><b>Menos de 2,5 (1.65)</b>: estrutura de abertura conservadora quando ambos têm medo de perder; placares comuns 1-0/1-1/0-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds e volume (três vias quase empatadas)</h4>
+    <table>
+      <tr><th>Mercado</th><th>Coreia do Sul vence</th><th>Empate</th><th>Tchéquia vence</th></tr>
+      <tr><td>bet365</td><td class="kr">2.62</td><td>3.10</td><td class="cz">2.75</td></tr>
+      <tr><td>FanDuel</td><td class="kr">2.65</td><td>3.00</td><td class="cz">2.85</td></tr>
+      <tr><td>Kalshi mercado de previsão</td><td class="kr">37¢</td><td>31¢</td><td class="cz">34¢</td></tr>
+      <tr><td>Lucky Rebel (09/06)</td><td class="kr">2.70</td><td>3.15</td><td class="cz">2.80</td></tr>
+      <tr><td>Oddschecker ao vivo (11/06)</td><td class="kr">≈2,75 (melhor odd)</td><td colspan="2">Três vias ainda equilibradas · sem movimento unilateral pré-jogo</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Uma divergência que merece atenção</b>: os bookmakers americanos mostram que <b>69% do volume público aposta na Coreia</b> (dados de handle citados pelo NYSportsDay), mas as odds quase não se moveram para a Coreia (2.62/2.65/+170, mantendo estável) — os bookmakers não estão preocupados com o dinheiro do público, o que significa que <b>o dinheiro grande está equilibrando o mercado do lado da Tchéquia/empate</b>. Este é o único sinal de "dinheiro inteligente vs dinheiro público" deste jogo: o público compra o nome de Son, o dinheiro frio compra a estrutura da Tchéquia.</div>
+    <div class="note">📌 Os bookmakers e os mercados de previsão se confirmam mutuamente (37/31/34 ≈ 36/30/34); nenhum movimento unilateral nos preços; o foco das redes sociais foi todo absorvido pelo jogo de abertura no mesmo dia, deixando este jogo com baixo volume de menções. As verdadeiras divergências que o mercado deixa são duas: mais/menos de gols (especialistas dos dois lados brigam entre si) e a divergência acima de "público na Coreia vs preço parado". Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://www.sportsline.com/insiders/south-korea-vs-czechia-odds-predictions-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine</a> · <a href="https://www.offshoresportsbooks.com/picks/soccer/2026/south-korea-vs-czech-republic-world-cup-group-a-odds-and-picks-june-11/">Eimer — Mais de 2,5</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/south-korea-vs-czech-republic-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aLfLg0I6etoI/">Racing Post</a> · <a href="https://www.kickoff.co.uk/world-cup-predictions-stats-odds/south-korea-vs-czech-rep/">Algoritmo KickOff</a> · <a href="https://www.dimers.com/bet-hub/swc/schedule/2026_1_kor_cze">Dimers</a> · <a href="https://www.oddsshark.com/soccer/world-cup/south-korea-czech-republic-odds-june-11-2026-2520741">OddsShark</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-south-korea-vs-czech-republic-world-cup-2026/">NYSportsDay — Painel com 3 IAs + 69% do público na Coreia</a></div>
+  </section>
+
+  <!-- Escalação e jogadores-chave -->
+  <section>
+    <h2><span class="n">2</span> Escalação &amp; Jogadores-Chave <span style="font-size:11px;background:#14321f;border:1px solid #1d4a2a;color:#4ade80;border-radius:6px;padding:2px 8px;font-weight:600;vertical-align:middle">Versão prevista · veja o módulo oficial ✅ acima</span></h2>
+    <div class="sub">Escalação prevista (projeção analítica, não oficial)</div>
+    <h4>🇰🇷 Coreia do Sul — Escalação prevista (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Kim Tae-hwan; Seol Yeong-u · Kim Jin-gyu · Hwang In-beom · Lee Tae-seok; Lee Kang-in · Hwang Hee-chan · Son Heung-min</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma / Obs.</th></tr>
+      <tr><td class="kr">Son Heung-min</td><td>Atacante / LAFC</td><td>Capitão, recordista de partidas pela seleção; 8 assistências liderando a MLS nesta temporada, mas sem gols; quase certamente sua última Copa · Valor €20m</td></tr>
+      <tr><td class="kr">Lee Kang-in</td><td>Meia / PSG</td><td>O mais técnico; presença regular na Liga dos Campeões; menos minutos na temp. 25/26 por lesões</td></tr>
+      <tr><td class="kr">Kim Min-jae</td><td>Zagueiro / Bayern</td><td>Pilar da defesa, jogo aéreo e saída de bola; âncora do sistema de três · Valor €40m (maior do grupo)</td></tr>
+      <tr><td class="kr">Hwang Hee-chan</td><td>Ponta / Wolverhampton</td><td>Pressão e mobilidade; oferece uma segunda ameaça além de Son</td></tr>
+    </table>
+    <h4>🇨🇿 Tchéquia — Escalação prevista (4-2-3-1)</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci; Coufal · Soucek · Darida · Jurasek; Provod · Schick · Sulc</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma / Obs.</th></tr>
+      <tr><td class="cz">Patrik Schick</td><td>Centroavante / Leverkusen</td><td>16 gols em 28 jogos nesta temporada (9 nas últimas 7 rodadas); 25 gols pela seleção; um dos finalizadores mais precisos do grupo · Valor €27m</td></tr>
+      <tr><td class="cz">Tomas Soucek</td><td>Meia / West Ham</td><td>Infiltração + bombardeio de bola parada; cobrador confiável nos pênaltis da repescagem</td></tr>
+      <tr><td class="cz">Ladislav Krejci</td><td>Zagueiro/Capitão / Wolverhampton</td><td>Excelente temporada; nos dois jogos da repescagem marcou de cabeça em bola parada para empatar — ameaça nos dois lados do campo nas bolas paradas</td></tr>
+      <tr><td class="cz">Matej Kovar</td><td>Goleiro / PSV</td><td>Defendeu pênaltis nos dois jogos da repescagem; capaz de ganhar um jogo sozinho</td></tr>
+    </table>
+    <div class="note">Observação: "—" em valor e dados exatos de jogo no clube serão preenchidos automaticamente pelo agente de produção via Transfermarkt/FotMob para todos os 26 jogadores.</div>
+  </section>
+
+  <!-- Táticas + Treinadores -->
+  <section>
+    <h2><span class="n">3</span> Estilo Tático &amp; Treinadores</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 Coreia do Sul · Hong Myung-bo</div>
+        <div class="role">3-4-2-1 · Pressão alta + contra-ataque rápido</div>
+        <ul class="cl">
+          <li>Movido pelo talento individual: Son/Lee Kang-in/Kim Min-jae/Hwang Hee-chan — o elenco mais forte desde 2002.</li>
+          <li>Calcanhar de Aquiles: na transição, quando os laterais sobem, a defesa de três fica exposta às costas — fraca na marcação de cruzamentos e bola recuada (o gol da vitória da Áustria veio exatamente assim).</li>
+          <li>Se Son não criar, os canais ofensivos no jogo aberto ficam muito estreitos (180 min sem gol no jogo aberto em março).</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fb0e6">🇨🇿 Tchéquia · Koubek (74 anos)</div>
+        <div class="role">4-2-3-1/3-4-2-1 · Compacto + Bolas paradas + Schick</div>
+        <ul class="cl">
+          <li>Identidade clara: bloco defensivo sólido, bolas paradas (8 gols nas eliminatórias — a melhor da Europa), finalização pontual de Schick.</li>
+          <li>Novo técnico com apenas 2 jogos de experiência (ambos decididos nos pênaltis); este é o 3º — o entrosamento é um risco.</li>
+          <li>No jogo aberto, fora de Schick, a criatividade é limitada — se ele for anulado, o ataque pode secar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Árbitro -->
+  <section>
+    <h2><span class="n">4</span> Árbitro &amp; Contexto de Arbitragem</h2>
+    <div class="note">✅ <b>Confirmado (08/06)</b>: o árbitro desta partida é o <b>egípcio Amin Omar (Amin Mohamed Omar, 41 anos, advogado de formação — a imprensa coreana o chama de "o advogado egípcio")</b>. A equipe de arbitragem é predominantemente egípcia: assistentes Abu El-Gal / Hosam Taha (ambos do Egito), VAR Mahmoud A. Suga (Egito), AVAR Joe Dickerson (EUA), quarto árbitro da Costa Rica. <b>Contexto-chave: esta é sua estreia no Mundial de seleções adultas</b> (sua única experiência prévia em torneios FIFA foi o Mundial Sub-17 de 2019).</div>
+
+    <h4>Perfil de rigor arbitral (dados)</h4>
+    <div class="keyrow" style="grid-template-columns:repeat(3,1fr)">
+      <div class="key"><div class="k">Cartões amarelos / jogo (carreira: 115-153 jogos)</div><div class="v" style="color:var(--warn)">≈3,9</div><div class="k">Vermelhos: 0,20/jogo</div></div>
+      <div class="key"><div class="k">Pênaltis marcados</div><div class="v" style="color:var(--warn)">42</div><div class="k">amostra registrada da carreira</div></div>
+      <div class="key"><div class="k">Torneios internacionais (8)</div><div class="v" style="color:var(--warn)">20 faltas/jogo</div><div class="k">24 amarelos e 3 vermelhos no total</div></div>
+    </div>
+    <table>
+      <tr><th>Dimensão</th><th>Dado / Fato</th><th>Implicação para esta partida</th></tr>
+      <tr><td>Perfil geral</td><td>≈3,9 amarelos/jogo, 0,20 vermelhos/jogo — <b>um grau mais ameno</b> que Sampaio no jogo inaugural (≈5,0 amarelos/jogo)</td><td>Apito geral não excessivamente rígido, favorece a fluidez do jogo; mas longe de um estilo permissivo</td></tr>
+      <tr><td>Padrão em grandes jogos</td><td>Na CAN / jogos decisivos do Egito já chegou a <b>6-8 amarelos + vermelhos em um único jogo</b> — quanto mais acirrado, mais cartões</td><td>Esta partida é um clássico "decisor de classificação" sob alta pressão: se a agressividade escalar nos primeiros minutos, ele tem histórico de distribuir muitos cartões</td></tr>
+      <tr><td>Padrão em jogos fluidos</td><td>Sua atuação no Mundial Sub-17 mostrou <b>ajuste flexível à dinâmica do jogo</b>: 5 amarelos em jogos disputados, apenas 1-2 em partidas desequilibradas ou fluidas</td><td>"Preserva a fluidez, mas é firme nas faltas perigosas" — as faltas de costas para o gol da Coreia e as divididas aéreas da Tchéquia estão na sua lista de condutas a punir</td></tr>
+      <tr><td>Histórico com as seleções</td><td><b>Amostra zero</b>: nunca apitou nenhum jogo da Coreia ou da Tchéquia em nenhuma categoria; estreia no Mundial adulto</td><td>Sem viés histórico conhecido; árbitros na estreia costumam <b>começar mais rigorosos para "estabelecer autoridade"</b> — o tratamento da primeira falta tática nos primeiros 15 minutos é o sinalizador do padrão do dia</td></tr>
+      <tr><td>Sinal do ambiente do torneio</td><td>O jogo inaugural (Sampaio) terminou com <b>3 cartões vermelhos nos acréscimos</b> — primeira vez em 20 anos de Copa; somado ao fuera de juego semiautomático aprimorado</td><td>Primeira evidência do rigor arbitral generalizado nesta edição — ambas as seleções devem calcular o custo de "cartões acumulados" em cada decisão de falta (2 amarelos = suspensão no próximo jogo do grupo)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Impacto direto</b>: Seus 42 pênaltis marcados na carreira provam que <b>ele não hesita em punir infrações na área</b> — as puxadas de Soucek/Krejci nos escanteios da Tchéquia e as disputas físicas de Kim Min-jae na defesa da Coreia são potenciais focos de controvérsia; o fuera de juego semiautomático elimina qualquer dúvida sobre as posições limítrofes de Schick nas bolas paradas. Aviso especial para a Coreia (a imprensa coreana já o analisa detalhadamente): num duelo equilibrado, a gestão emocional equivale a um recurso tático, e com a regra "só o capitão pode falar", os amarelos desnecessários de jogadores técnicos como Lee Kang-in têm um custo amplificado.</div>
+    <div class="src" style="margin-top:8px">Fontes: <a href="https://www.statshub.com/referee/omar-amin-mohamed/787203">StatsHub — dados disciplinares da carreira</a> · <a href="https://corner-stats.com/amin-omar/egypt/referee/4405">Corner-Stats — amarelos/vermelhos / pênaltis</a> · <a href="https://www.footymetrics.com/referees/33272-amin-mohamed-omar">FootyMetrics</a> · <a href="https://www.starnewskorea.com/en/sports/2026/06/09/2026060912152045331">StarNews (Coreia) — equipe de arbitragem / perfil em torneios internacionais / "advogado egípcio"</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico">ESPN — 3 vermelhos no jogo inaugural</a></div>
+    <h4>Novas regras de arbitragem desta edição (impacto nesta partida)</h4>
+    <ul class="cl">
+      <li><b>Somente o capitão pode falar com o árbitro</b>: num duelo equilibrado a emoção esquenta — a disciplina tem grande impacto.</li>
+      <li><b>8 segundos para o goleiro / 5 segundos para tiro lateral ou tiro de meta</b>: reduz a perda de tempo, favorece quem quer controlar o jogo.</li>
+      <li><b>Sistema semiautomático de impedimento aprimorado</b>: as posições de impedimento em bolas paradas e nas disputas de cabeça de Schick serão decididas de forma mais rápida e precisa.</li>
+    </ul>
+  </section>
+
+  <!-- Análises -->
+  <section>
+    <h2><span class="n">5</span> Análises de Especialistas</h2>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· Nível B — análise tática · raspagem de site</small></div>"O jogo Coreia vs Tchéquia em 11/6 é o que decide o 2º lugar do grupo. Se a Coreia vencer, fica com a iniciativa; se a Tchéquia vencer, o caminho da Coreia para a classificação fica muito mais difícil. É o jogo pivô de todo o grupo."</div>
+    <div class="insight"><div class="who">Bundesliga / Opta <small>· Nível B — dados</small></div>Schick marcou 9 gols nas últimas 7 rodadas da Bundesliga (incluindo hat-trick contra o Leipzig); a Tchéquia marcou 8 gols de bola parada nas eliminatórias — o maior da Europa — duas métricas que elevam a expectativa de gols da Tchéquia.</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· Oficial · liderado por Wenger com análise jogo a jogo</small></div>Revisão tática autorizada pós-jogo, usada como insumo para a próxima previsão.</div>
+  </section>
+
+  <!-- Conclusão -->
+  <section>
+    <h2><span class="n">6</span> Conclusão &amp; Pontos a Verificar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: equilibrado — empate ou vitória mínima são comuns; se houver vencedor, a eficiência nas bolas paradas e a forma de Schick dão leve vantagem de finalização à Tchéquia, enquanto o trunfo da Coreia está no contra-ataque explosivo de Son.</li>
+      <li><b>Jogadores decisivos</b>: Schick (Tchéquia/finalização), Son (Coreia/contra-ataque e criação), Krejci (Tchéquia/bolas paradas em ambos os lados).</li>
+      <li><b>Fator decisivo</b>: bolas paradas (vantagem Tchéquia) + se a defesa de três da Coreia aguenta as transições sem ser furada.</li>
+    </ul>
+    <div class="flag">⚠ <b>Pontos a verificar</b>: ① Escalação prevista é projeção analítica — confirmação oficial 1h antes (a formação da Coreia oscila entre 3-4-2-1 e 4-2-3-1, dependendo do posicionamento de Hong); ② situação e forma física de Lee Kang-in/Kim Min-jae a confirmar pré-jogo; ③ árbitro já confirmado: <b>Amin Omar (Amin Mohamed Omar) (Egito)</b>; ④ odds precisas de 1X2 serão atualizadas antes do apito (atualmente aproximadas pela prob. implícita de classificação).</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — Grupo A: táticas/escalação/odds (raspagem de site)</a><br>
+      • <a href="https://www.starnewskorea.com/en/sports/2026/05/18/2026051714120068002">StarNews — Valor total do elenco coreano €136,75m</a> · <a href="https://www.transfermarkt.us/tschechien/marktwertanalyse/verein/3445">Transfermarkt — Tchéquia €115,90m</a><br>
+      • <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393">Bundesliga — Forma de Schick</a> · <a href="https://www.mlssoccer.com/news/lafc-son-heung-min-headlines-south-korea-2026-world-cup-roster">MLSSoccer — Son no LAFC</a>
+    </div>
+  </section>
+
+  <div class="foot">Central de Análise · Copa do Mundo 2026 · Dados até 11/06/2026 · Gráficos baseados em dados verificados; gráfico de radar é avaliação composta do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',KR='#cd2e3a',CZ='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['Coreia do Sul','Tchéquia'],datasets:[{data:[136.75,115.90],backgroundColor:[KR,CZ],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ milhões'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('formChart'),{type:'bar',
+ data:{labels:['Gols','Assistências'],datasets:[
+  {label:'Schick (Bundesliga 25/26)',data:[16,3],backgroundColor:CZ,borderRadius:5},
+  {label:'Son (MLS 2026)',data:[0,8],backgroundColor:KR,borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'Temporada no clube'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['México','Tchéquia','Coreia do Sul','África do Sul'],datasets:[{data:[52,24,22,8],backgroundColor:['#16a34a',CZ,KR,'#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Prob. implícita liderança do grupo %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Estabilidade defensiva','Finalização ofensiva','Controle do meio','Bolas paradas','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'Coreia do Sul',data:[6,6.5,7,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR},
+   {label:'Tchéquia',data:[7.5,7,6.5,9,7,6.5],borderColor:CZ,backgroundColor:CZ+'33',pointBackgroundColor:CZ}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

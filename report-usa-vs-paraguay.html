@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 美国 vs 巴拉圭 · 2026世界杯 D组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --us:#1f4e9c;--py:#d0312d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f4e9c,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13192b,#251515);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.us{color:#7fa6e6;font-weight:600}td.py{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · D组首轮 · 美国世界杯主场首秀</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0d3b66,#1d4a2a);margin-left:6px">🏁 已完赛 4-1</span>
+  <h1>美国 vs 巴拉圭</h1>
+  <div class="meta">2026年6月12日 · 洛杉矶 SoFi Stadium（Inglewood） · 21:00 ET / 18:00 当地 · D组（同组：澳大利亚、土耳其）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 美国</div><div class="rk">FIFA #16 · 身价 €410m · 东道主</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇾 巴拉圭</div><div class="rk">FIFA #40 · 身价 €157.15m · 时隔16年回归</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 4-1（半场 3-0）· 事实与解读分开</span></h2>
+    <div class="sub">市场只给 ≈49% 的美国，半场就 3-0 拆穿巴拉圭防线；Balogun 梅开二度，Reyna 补时 trivela 收尾——本场是产品最大的一次预测偏差。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">美国开场闪击：<b>7′ McKennie 倒三角传中，Bobadilla 自摆乌龙</b> 1-0；<b>31′ Balogun</b> 接 Pulisic 折射球推射右下角 2-0；<b>45+5′ Balogun</b> 再下一城（Tillman 直塞身后，扛住铲抢挑射左上角），半场 3-0 已基本锁定。下半场巴拉圭<b>73′ 替补 Mauricio</b> 接 Enciso 做球第一时间抽射扳回一城；<b>90+8′ Reyna</b> 替补登场用一记 trivela（外脚背弧线）锁定 4-1。</p>
+    <div class="lineup">7′ ⚽ Bobadilla 乌龙 (美 1-0)  ·  31′ ⚽ Balogun  ·  45+5′ ⚽ Balogun (半场 3-0)  ·  73′ ⚽ Mauricio (巴)  ·  90+8′ ⚽ Reyna (trivela)  ·  全场 4-1  ·  🟨 Almirón (巴, 假摔, VAR 改判)</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇸 美国</th><th>🇵🇾 巴拉圭</th><th>一句话解读</th></tr>
+      <tr><td>控球率</td><td class="us">65%</td><td class="py">35%</td><td>美国掌控但更关键的是效率，而非控球</td></tr>
+      <tr><td>xG（预期进球）</td><td class="us">1.35</td><td class="py">0.47</td><td>美国 4 球远超 1.35 xG——超神终结（Balogun/Reyna）是胜负手，非"碾压机会"</td></tr>
+      <tr><td>实际进球 vs xG</td><td class="us">4（+2.65）</td><td class="py">1（+0.53）</td><td>双方都超出 xG，但美国的转化效率是档次差别</td></tr>
+      <tr><td>进球来源</td><td class="us">运动战×3+乌龙</td><td class="py">替补转换</td><td>美国靠传切+个人质量破密集，正是赛前怀疑能否做到的事</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Danny Makkelie（荷兰）· VAR 撤销 Ream 黄牌、改判 Almirón 假摔黄牌 · 判罚整体克制</td><td>无点球、低对抗，胜负完全由运动战决定</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/united-states-vs-paraguay-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.cbssports.com/soccer/news/usa-paraguay-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS Sports</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021458" style="color:var(--accent)">FIFA Match Centre</a>（比分/进球/xG ≥2 源一致）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who" style="color:#7fa6e6">美国：闪击 + 个人质量破密集</div>美国半场 3-0，全部进球来自运动战（含乌龙），靠的是 McKennie 倒三角、Pulisic/Tillman 的传球质量和 Balogun 的终结。<b>说明这支美国破南美防守块的能力被市场严重低估</b>——赛前"≈49%、能否破铁桶存疑"的定价，被 Balogun 的状态和边中结合直接证伪。</div>
+    <div class="insight"><div class="who" style="color:var(--good)">Balogun 状态 = 攻击核心确立</div>Balogun 接 5/31 对塞内加尔进球后再梅开二度，且两球质量都高（折射推射 + 扛防挑射）。<b>说明 Pochettino 的单中锋支点找到了答案</b>，延续性正反馈成立，这是本届美国进攻体系的最大确定性。</div>
+    <div class="insight"><div class="who" style="color:#f08a82">巴拉圭：结构在领先方手里崩得很快</div>赛前被定义为"结构稳、能拖泥潭"的巴拉圭，却在 45 分钟内丢 3 球。<b>说明 Alfaro 的低位块一旦被早进球打穿、需要压出来时，转换防守是巨大漏洞</b>——下一场若再早失球会非常被动。</div>
+    <div class="insight"><div class="who">Reyna 的板凳冲击力</div>Reyna 替补登场补时用 trivela 收尾，<b>说明美国的二线创造力深度（Reyna/Tillman）是真武器</b>，Pochettino 手握的进攻轮换牌比预期更厚。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>美胜隐含仅 ≈49%、市场深度怀疑美国破密集</td><td style="color:var(--bad);font-weight:700">✗ 大偏差</td><td>美国 4-1 大胜、半场 3-0，市场定价被彻底证伪——本场是产品最大的方向性误判</td></tr>
+      <tr><td>低分泥潭 / 大小球重心下压（Under 倾向）</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>全场 5 球，Over 2.5 轻松命中，泥潭剧本完全落空</td></tr>
+      <tr><td>Pulisic + Balogun 延续对塞内加尔状态</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>Balogun 梅开二度、Pulisic 助攻第二球，破局判断准确</td></tr>
+      <tr><td>Richards 中卫出战存疑</td><td style="color:var(--good);font-weight:700">✓ 化解</td><td>Richards 如期首发且表现稳健，赛前隐患未兑现</td></tr>
+      <tr><td>巴拉圭缺 Enciso、反击降档</td><td style="color:var(--warn);font-weight:700">~ 信息更新</td><td>Enciso 实际登场并助攻 Mauricio 唯一进球——赛前"缺阵"信息有误/后续恢复，诚实记录</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>本场是产品迄今<b>最大的一次预测偏差</b>——核心错误在于跟随市场把巴拉圭的"结构稳"权重抬得过高，低估了 Balogun 当前状态与美国主场气势。延续性判断（Pulisic/Balogun）与 Richards 隐患化解命中，但胜负与大小球方向双双判错，需如实记入命中率账本。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🇺🇸 美国 → 下一场 vs 澳大利亚（6/19 西雅图）</div>
+        ① <b>Balogun 火热状态</b>是最大带入资产，单中锋支点体系已跑通；<br>② <b>"破密集"疑虑已解</b>：澳大利亚大概率也会低位防守，但本场证明美国有边中结合+个人质量的解法；<br>③ <b>防守专注度要警惕</b>：3-0 后松动被扳回一球，对更具冲击力的对手（如澳的高空与边路）需保持全场强度；Richards 健康可用是利好。</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇵🇾 巴拉圭 → 下一场 vs 土耳其（6/19-20 圣克拉拉）</div>
+        ① <b>必须避免早失球</b>：本场 45 分钟丢 3 球暴露被打穿后转换防守的硬伤，对同样擅长进攻的土耳其是致命点；<br>② <b>Enciso 可用</b>：本场他做球制造唯一进球，是巴拉圭反击创造力的支点，应围绕他建立反击；<br>③ <b>低位块需重建信心</b>：被早进球后阵型拉扯的问题要在训练中修正，否则出线形势将极其被动。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">美国队史压力最大的一场揭幕战：主场办赛 + Pochettino 上任以来的全部铺垫都押在这个夏天。纸面差距清楚——身价 <b>2.6 倍</b>、FIFA 排名 #16 vs #40，且美国 5/31 刚 <b>3-2 击败塞内加尔</b>（Pulisic、Balogun 进球）带着正反馈而来。但市场给的定价却<b>冷静得多：美国胜的隐含概率只有 ≈49%</b>（1.95，预测市场 49.5%）——因为 Alfaro 的巴拉圭正是美国最不想碰的类型：南美预选第 6 出线、结构稳定、靠防守块和定位球把比赛拖进泥潭，还在预选里赢过阿根廷。美国的两个隐患：<b>中卫 Richards 脚踝伤刚恢复训练（出战存疑）</b>，以及 Pulisic 整季被腿筋伤+滑囊炎打断的体能底。巴拉圭则缺 <b>Enciso 与 Balbuena</b>，反击的尖牙打了折扣。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">性质</div><div class="v" style="color:var(--warn)">东道主首秀</div></div>
+      <div class="key"><div class="k">身价</div><div class="v">美 ≈2.6×</div></div>
+      <div class="key"><div class="k">美胜隐含</div><div class="v" style="color:#7fa6e6">≈49%</div></div>
+      <div class="key"><div class="k">Richards</div><div class="v" style="color:var(--warn)">出战存疑</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>≈49% 的定价信号</b>：身价差 2.6 倍但赔率只给五五开——市场对"美国破南美防守块"的能力深度怀疑。</li>
+      <li><b>Richards 的中卫位</b>：若赶不上，Ream 身边换人对位 Sanabria 的支点与定位球，是美国最薄的一环。</li>
+      <li><b>Pulisic + Balogun 的对塞内加尔延续性</b>：两人 5/31 双双进球，能否在阵地战里复刻是破局关键。</li>
+      <li><b>巴拉圭缺 Enciso/Balbuena</b>：反击创造力降档，更可能彻底摆死守——比赛大小球重心进一步下压。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">美国 · 伤情 <span style="color:var(--mut);font-weight:400">· 赛前评估 · 待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">唯一防守悬念：中卫 <b>Chris Richards 自称已痊愈、本周一恢复合练，首发仍存疑</b>；其余全队健康</div>
+      <p style="font-size:13.5px">比赛日更新（双源）：Richards 5月随水晶宫脚踝韧带撕裂、缺阵超一个月，<b>本周一才恢复合练</b>；本人自称已痊愈，但他缺席对德国热身一事曾令 Pochettino 公开"恼火"。若不首发，由 <b>Miles Robinson 或 McKenzie</b> 搭档 Tim Ream（Sports Mole 称之为"Pochettino's defensive dilemma"）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Richards 是美国防线唯一兼具对抗与出球的右中卫。他若缺阵/不在状态，对位 Sanabria 的支点做球与巴拉圭最依赖的<b>定位球抢点</b>时，37 岁的 Ream 身边将是临时拍档——这正是 Alfaro 球队最擅长攻击的一类弱点。<span style="color:var(--warn)">[首发与否赛前 1 小时官方名单核实]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48976577/usa-world-cup-chris-richards-injury-mauricio-pochettino-germany" style="color:var(--accent)">ESPN — Richards 恢复时间线</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Richards 抉择/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">巴拉圭 · 伤停 <span style="color:var(--mut);font-weight:400">· 双源 · Enciso 状态两说，标"待核"</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">巴拉圭核心 <b>Julio Enciso 基本确认缺席本场</b>（大腿双重撞击伤）——最快第三轮对澳大利亚复出；Balbuena 伤缺</div>
+      <p style="font-size:13.5px">比赛日更新（双源确认）：Enciso 6/5 热身赛对尼加拉瓜第25分钟被<b>担架抬下</b>（大腿前后侧双重撞击）、已做 MRI；预计留在名单但<b>最快第三轮对澳大利亚复出</b>，本场基本无缘。预选射手 Enciso 正是巴拉圭反击中最具创造力的一点；Balbuena 伤缺抽走定位球高点。除此之外 Alfaro <b>无其他伤情</b>，延续固定班底。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拉圭本就把宝押在"少数几次反击+定位球"上，Enciso 缺阵让反击从"有创造力的尖牙"退化为"靠 Almirón 个人推进 + Sanabria 抢点"的单线程；Balbuena 缺席则抽走一名定位球攻防两端的高点。对美国的实际意义：<b>被打反击丢球的概率下降，比赛更接近"美国半场攻防演练"</b>——破不破得开是另一回事。<span style="color:var(--warn)">[Enciso 是否进名单/替补，赛前官方为准]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.beinsports.com/en-nz/football/fifa-world-cup-2026/articles/paraguay-s-julio-enciso-injured-ahead-of-world-cup-2026-06-06" style="color:var(--accent)">beIN — Enciso 伤情</a> · <a href="https://www.si.com/soccer/usmnt-first-world-cup-opponent-injury-blow-star-player" style="color:var(--accent)">SI — 伤情确认</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — 前瞻/伤停</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">美国 · 状态 <span style="color:var(--mut);font-weight:400">· 05-31 收官热身</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">美国 3-2 胜塞内加尔收官：<b>Pulisic、Balogun 双双进球</b>，锋线带着正反馈进世界杯</div>
+      <p style="font-size:13.5px">5/31 收官热身，美国 <b>3-2 击败塞内加尔</b>，Pulisic 与 Balogun 各入一球。对 Pulisic 这是重要信号——他在 AC 米兰的赛季被<b>腿筋伤与滑囊炎</b>反复打断，长时间没有直接产出；Balogun（摩纳哥，上季各项赛事 19 球）则坐稳单箭头。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：美国破巴拉圭低位块的两条最现实通道，正是 Pulisic 的内切爆点和 Balogun 的禁区终结——两人赛前同场进球，等于把"美国唯一明确的进球路径"点亮了。反过来，若 Pulisic 体能底不支撑 90 分钟高输出（整季伤病史），美国的阵地战创造力会断崖式回落到 Tillman/McKennie 的二档方案。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/" style="color:var(--accent)">Racing Post — 3-2 塞内加尔/Pulisic 赛季伤病</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — 队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">美国 · 门将官宣信号 <span style="color:var(--mut);font-weight:400">· 首发格局</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">门将之争尘埃落定：<b>Matt Freese 已取代 Matt Turner 成为 Pochettino 的第一选择</b></div>
+      <p style="font-size:13.5px">Sports Mole 确认 <b>Matt Freese "definitively taken over"</b>——这位 NYCFC 门将经过一年竞争压过了前国门 Matt Turner，将把守揭幕战大门。中场由 Adams + McKennie 坐镇，Tillman 前插，Pulisic 顶在 Balogun 身后。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Freese 的脚下出球是 Pochettino 选他的核心理由——美国要在巴拉圭的中前场逼抢下从后场组织，门将参与出球是第一环。风险面：Freese 没有世界杯经验，主场 7 万人 + 揭幕压力下的第一脚处理，是巴拉圭高位试探的首选目标。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Freese 第一门将</a> · <a href="https://www.nbcsports.com/soccer/news/usmnt-lineup-versus-paraguay-who-will-pochettino-choose-for-usa-in-world-cup-opener" style="color:var(--accent)">NBC — 首发讨论</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· 06-08 FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">本场主裁：<b>荷兰名哨 Danny Makkelie</b>——生涯506场 <b>3.40黄/场、0.32点球/场</b>，风格偏宽松流动；本季判点率升至 0.50/场</div>
+      <p style="font-size:13.5px"><b>量化画像（KickoffScore/StatsHub）</b>：生涯 506 场，场均黄牌 <b>3.40</b>、红牌 0.09、点球 <b>0.32/场</b>；2025/26 赛季 26 场：黄牌 3.12/场、<b>点球 0.50/场</b>、犯规 22.4/场——在国际级主裁中属"少出牌、让比赛流动，但敢指点球"的类型。大赛履历丰富（欧冠/欧洲杯级别）。执法历史：<b>2015 年美国 vs 德国友谊赛执法过美国队；与巴拉圭无公开执法记录（未找到，如实说明）</b>。VAR 为西班牙 Carlos del Cerro Grande。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：宽松尺度是双刃剑——去年11月美巴友谊赛终场曾爆发冲突，若 Makkelie 延续"少哨"风格，巴拉圭的身体对抗与碎犯规会被放过更多，比赛容易踢糙；但他本季 0.50/场 的判点率叠加美国在禁区内的冲击频率（Pulisic/Balogun/Dest），<b>点球是本场被低估的破局通道</b>。"仅队长可与裁判沟通"新规仍精准命中巴拉圭的围裁施压习惯。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.statshub.com/referee/makkelie-danny-desmond/72792" style="color:var(--accent)">StatsHub — Makkelie 数据</a> · <a href="https://kickoffscore.com/referees/danny-makkelie" style="color:var(--accent)">KickoffScore — 本季数据</a> · <a href="https://sports.yahoo.com/articles/referee-usmnts-opening-world-cup-160003416.html" style="color:var(--accent)">Yahoo — 任命/VAR</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">场外 · 开幕式与票务 <span style="color:var(--mut);font-weight:400">· 06-12 比赛日</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">SoFi 开幕式巨星阵容（Katy Perry/Future/Anitta/LISA 等）；但<b>开赛前数日门票仍未售罄</b>，$1,120 起步的票价引发全国争议</div>
+      <p style="font-size:13.5px">美国站开幕式（三国三场之一）表演嘉宾含 Katy Perry、Future、Anitta、LISA、Rema、Tyla。另一面：FIFA 官网与二级市场仍有数千张余票，最低 $1,120/最高 $2,735——纽约/新泽西总检察长公开批评定价，特朗普称"不会花 $1,000 看球"。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：满场与否影响"东道主氛围红利"的成色——若看台留白或被中性观众填充，美国队预期的主场推力会打折；票价争议也成为比球队本身更热的场外话题，分流了情绪能量。对比赛的直接影响有限，但它解释了"全网声量爆炸、现场未必鼎沸"的反差。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.cbssports.com/soccer/news/2026-world-cup-opening-ceremony-live-updates/live/" style="color:var(--accent)">CBS — 开幕式</a> · <a href="https://www.npr.org/2026/06/08/nx-s1-5849905/fifa-world-cup-tickets-prices" style="color:var(--accent)">NPR — 票价争议</a> · <a href="https://sports.yahoo.com/articles/thousands-world-cup-tickets-remain-115259383.html" style="color:var(--accent)">Yahoo — 余票</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水 + 预测市场互证） · D组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（书商去水 vs 预测市场）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>D 组四队身价格局（€百万）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇸 美国</th><th>🇵🇾 巴拉圭</th></tr>
+      <tr><td>FIFA 排名</td><td class="us">#16</td><td class="py">#40</td></tr>
+      <tr><td>全队身价</td><td class="us">≈€410m</td><td class="py">€157.15m</td></tr>
+      <tr><td>核心终结点</td><td class="us">Pulisic（米兰）、Balogun（摩纳哥，上季 19 球）</td><td class="py">Sanabria（克雷莫纳，预选 4 球：含胜玻/委制胜球、平阿根廷扳平球）</td></tr>
+      <tr><td>晋级之路</td><td class="us">东道主直通</td><td class="py">南美预选第 6（28 分），主场 2-1 赢过阿根廷</td></tr>
+      <tr><td>收官热身</td><td class="us">3-2 胜塞内加尔（Pulisic/Balogun 进球）</td><td class="py">—（Alfaro 固定班底，无新增伤情）</td></tr>
+      <tr><td>1X2（书商）</td><td class="us">1.95（隐含≈49%）</td><td class="py">3.95（≈24%）· 平 3.45（≈27%）</td></tr>
+      <tr><td>预测市场</td><td class="us">Kalshi/Polymarket 美 49.5%</td><td class="py">平 28.5% · 巴 23.5% —— 与书商互证</td></tr>
+    </table>
+    <div class="note">📌 最值得记住的一个数：<b>身价差 2.6 倍，胜率却只有 ≈49%</b>。书商与预测市场互相印证（49/27/24 ≈ 49.5/28.5/23.5），说明这不是情绪定价——市场系统性怀疑美国对南美式低位块的破局能力。这也是为什么平局 3.45 被多家媒体列为"价值方向"。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面</span></h2>
+    <div class="sub">全美关注度拉满，但价格出奇冷静——声量热、定价冷的典型分裂</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · 公众资金极端单边（06-12 上调）</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">比赛日核心信号：<b>公众投注 87-94% 的资金单边押胜率仅约50%的美国</b>（DraftKings 94%金额/BetMGM 89%），而价格几乎不动、平局还被悄悄上调到 29%——教科书级"公众钱 vs 价格不动"背离，庄家对平局有巨大正向利益。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：胜负 ≈7-0 全数看美国小胜；约半数选防守型注项）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>VSiN</td><td>拉斯维加斯投注网络</td><td>美国 ML 1.91 + BTTS"否" 1.77，串关 2.90——低比分美国胜</td></tr>
+      <tr><td>SportsLine · Jon Eimer</td><td>认证专家（欧冠31-13）</td><td>倾向美国方向最佳投注（具体注项付费墙内·待核）</td></tr>
+      <tr><td>CBS / Sports Mole / Goal</td><td>预测媒体</td><td>一致美国胜方向；Goal："USMNT to start strongly in LA"</td></tr>
+      <tr><td>Racing Post</td><td>英国投注媒体</td><td>美国胜为基准，"小胜+低分"主剧本</td></tr>
+      <tr><td>Dimers 模型</td><td>量化</td><td>美 51.2% / 平 25.7% / 巴 23.1%，最可能比分 <b>1-0</b></td></tr>
+      <tr><td>AI 面板 · ChatGPT</td><td>NYSportsDay 三模型</td><td>反向安全垫：<b>巴拉圭 +0.5（1.80）</b>——"美国赢但赢得难看"</td></tr>
+      <tr><td>AI 面板 · Claude</td><td>同上</td><td>美国 ML（2.05）——认为五五开的价低估了主场</td></tr>
+      <tr><td>AI 面板 · Gemini</td><td>同上</td><td><b>小 2.5 球（1.61）</b>：三模型共识最常见比分 1-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率与公众资金面（美式已换算小数）</h4>
+    <table>
+      <tr><th>市场</th><th>美国胜</th><th>平局</th><th>巴拉圭胜</th></tr>
+      <tr><td>FanDuel</td><td class="us">1.95</td><td>3.40</td><td class="py">4.10</td></tr>
+      <tr><td>Caesars</td><td class="us">1.91</td><td>3.35</td><td class="py">4.05</td></tr>
+      <tr><td>隐含概率（去水）</td><td class="us">≈48.8%</td><td>≈28.0%</td><td class="py">≈23.2%</td></tr>
+      <tr><td>Kalshi / Polymarket</td><td class="us">50%</td><td><b>29%</b></td><td class="py">23-24%</td></tr>
+      <tr><td>大小 2.5（FanDuel）</td><td colspan="3">大 2.28 / 小 1.63 —— 小球被重捧；Kalshi/Polymarket 给小球 59-60%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>比赛日核心背离</b>：<b>DraftKings 89%票数/94%金额、BetMGM 87%/89%、另一大书商 90%/82% 单边押美国</b>——而美国价对比 06-11 基线反而微降（49→48.8%）、平局升至 28-29%。公众钱海啸般涌入却推不动价格 = 庄家与锐利资金在对侧接单。历史上这种结构里，"无聊的平局"正是庄家最盈利的结果。若临场美国价被买短至 1.77 而无新利好，属纯情绪资金。</div>
+    <div class="note">📌 仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://vsin.com/soccer/usa-vs-paraguay-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN</a> · <a href="https://www.covers.com/industry/usmnt-drawing-massive-betting-action-entering-friday-world-cup-opener-june-11-2026">Covers — 公众资金分布</a> · <a href="https://www.foxsports.com/stories/soccer/2026-world-cup-odds-books-hoping-draw-ahead-usa-paraguay">FOX — 庄家盼平局</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-paraguay-odds-prediction-time-2026-world-cup-picks-best-bets/">CBS — 赔率</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-usa-vs-paraguay-predictions-world-cup-2026/">NYSportsDay — AI面板</a> · <a href="https://www.dimers.com/news/paraguay-vs-united-states-final-prediction-group-d-world-cup-2026-ac">Dimers</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — Kalshi/Polymarket</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-paraguay-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine</a></div>
+  </section>
+
+  <!-- 首发与近期表现 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇺🇸 美国 预测首发（4-3-3，媒体一致版本 · 06-12 更新）</h4>
+    <div class="lineup">Freese; Freeman · Richards(或M.Robinson) · Ream · A.Robinson; Adams · McKennie · Tillman; Dest(右路新角色) · Pulisic; Balogun</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="us">Christian Pulisic</td><td>攻击手 / AC米兰</td><td>队史最大球星；整季受腿筋伤+滑囊炎打断，但 5/31 对塞内加尔破门回暖</td></tr>
+      <tr><td class="us">Folarin Balogun</td><td>中锋 / 摩纳哥</td><td>上季各项赛事 19 球；对塞内加尔进球，坐稳单箭头</td></tr>
+      <tr><td class="us">Tyler Adams</td><td>后腰 / 伯恩茅斯</td><td>中场绞肉机，对位 Almirón 推进的第一道闸</td></tr>
+      <tr><td class="us">Chris Richards</td><td>中卫 / 水晶宫</td><td><b>自称痊愈、周一恢复合练，首发待定</b>——他的去留改变美国防空与出球结构</td></tr>
+    </table>
+    <h4>🇵🇾 巴拉圭 关键球员（首发以官方为准；Alfaro 惯用固定班底 4-4-2/5-3-2）</h4>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="py">Antonio Sanabria</td><td>前锋 / 克雷莫纳</td><td>预选 4 球（胜玻利维亚/委内瑞拉制胜球 + 平阿根廷扳平球）——大场面属性</td></tr>
+      <tr><td class="py">Miguel Almirón</td><td>攻击中场 / 亚特兰大联</td><td>反击推进核心；Enciso 缺阵后创造力几乎全压在他身上</td></tr>
+      <tr><td class="py">Julio Enciso</td><td>攻击手 / 斯特拉斯堡</td><td><b>基本确认缺席本场</b>（最快第三轮复出）；他的缺席让反击降一档</td></tr>
+      <tr><td class="py">Fabián Balbuena</td><td>中卫</td><td><b>伤缺</b>——定位球攻防两端少一个高点</td></tr>
+    </table>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 美国 · Mauricio Pochettino（2024上任，前切尔西）</div>
+        <div class="role">3-4-2-1 / 4-2-3-1 · 高位压迫 + 边翼卫推进</div>
+        <ul class="cl">
+          <li>Pochettino 式高强度：前场三人组逼抢出球线，Dest/A. Robinson 双翼卫提供宽度。</li>
+          <li>破密集的解法：Pulisic 内切 + Tillman 肋部前插 + Balogun 抢前点，定位球由 McKennie 冲击。</li>
+          <li>命门：被打身后的中卫回追速度（尤其 Richards 缺阵时），以及主场压力下的开局 15 分钟。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇾 巴拉圭 · Gustavo Alfaro（2024上任，前哥斯达黎加）</div>
+        <div class="role">4-4-2 / 5-3-2 · 低位块 + 定位球 + 比赛管理</div>
+        <ul class="cl">
+          <li>Alfaro 是南美"弱队拿分学"宗师：结构纪律、犯规艺术、定位球——预选靠这套赢了阿根廷。</li>
+          <li>固定班底默契极高，几乎不轮换；落后前绝不提速。</li>
+          <li>风险：Enciso/Balbuena 缺阵让反击与定位球各少一张牌；全场被压住时只能指望 Sanabria 的一次抢点。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣（06-08）</b>：本场主裁为<b>荷兰裁判 Danny Makkelie</b>。欧洲裁判对碎犯规与围堵裁判的低容忍 + "仅队长沟通"新规，双重压缩巴拉圭的比赛管理空间。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷球/球门球 5 秒倒计时</b>：巴拉圭拖节奏的传统艺能被针对性削弱。</li>
+      <li><b>仅队长可与裁判沟通</b>：南美球队习惯性围裁判的成本大增，纪律风险上移。</li>
+      <li><b>升级版半自动越位</b>：Balogun 反越位冲身后的临界球判罚更快更准。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Racing Post <small>· B级 投注媒体</small></div>美国胜是基准，但巴拉圭的防守组织（南美预选仅次于头部队的失球数）意味着"小胜+低分"才是主剧本；Pulisic 的体能底是 X 因素。</div>
+    <div class="insight"><div class="who">SI / Kalshi / Polymarket <small>· 预测市场</small></div>两大预测市场与书商三方互证在 49/28/23 一带——身价 2.6 倍差距下这个定价本身就是信息：市场对"美国 vs 南美低位块"的历史战绩存疑。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· B级 预测</small></div>Pochettino 的真正抉择不在锋线在防线：Richards 能否首发，决定美国是"控场+敢压上"还是"留保险+稳着打"两种比赛。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：美国小胜（1-0/2-1）为基准；巴拉圭最现实的目标是 0-0 拖到 70 分钟后偷定位球。Enciso 缺阵显著降低巴拉圭赢球路径。</li>
+      <li><b>关键先生</b>：Pulisic（美/破局）、Balogun（美/终结）、Sanabria（巴/唯一兑现点）、Adams（美/掐断 Almirón）。</li>
+      <li><b>胜负手</b>：美国前 30 分钟能否先进球——先丢球的巴拉圭必须出来对攻（不擅长）；0-0 拖入下半场则巴拉圭剧本成立、平局概率陡增。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Richards 是否首发（赛前官方）；② Enciso 是否进名单/替补；③ 美国预测首发 3-4-2-1 与 4-2-3-1 两说并存，以官方为准；④ 临场赔率变动（1.95 基准）复核。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html">Sports Mole — 前瞻/伤停</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html">Sports Mole — 美国预测首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/">Racing Post — 赔率/队况</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — 预测市场</a><br>
+      • <a href="https://www.fourfourtwo.com/team/paraguay-world-cup-2026-squad">FourFourTwo — 巴拉圭 26 人/Sanabria/Enciso</a> · <a href="https://www.transfermarkt.us/paraguay/marktwertanalyse/verein/3581">Transfermarkt — 巴拉圭身价</a> · <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html">Yahoo — 裁判任命</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12（比赛日） · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',US='#3b6fb0',PY='#d0312d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['美国','巴拉圭'],datasets:[{data:[410,157.15],backgroundColor:[US,PY],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['美国胜','平局','巴拉圭胜'],datasets:[
+  {label:'书商(去水)',data:[49,27,24],backgroundColor:US,borderRadius:5},
+  {label:'Kalshi/Polymarket',data:[49.5,28.5,23.5],backgroundColor:'#7c92b8',borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['土耳其','美国','巴拉圭','澳大利亚'],datasets:[{data:[494.2,410,157.15,null],backgroundColor:['#b91c1c',US,PY,'#446'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万（澳暂缺）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'美国',data:[6.5,7,7,6.5,8,6.5],borderColor:US,backgroundColor:US+'33',pointBackgroundColor:US},
+   {label:'巴拉圭',data:[7.5,5.5,5.5,7,5.5,6],borderColor:PY,backgroundColor:PY+'33',pointBackgroundColor:PY}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

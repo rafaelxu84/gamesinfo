@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 澳大利亚 vs 土耳其 · 2026世界杯 D组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-australia-vs-turkiye.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-australia-vs-turkiye.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --au:#e0a514;--tr:#d0312d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#6b4f12,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241a0e,#152138);border:1px solid var(--line);border-left:4px solid var(--tr);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.au{color:#f0cf6b;font-weight:600}td.tr{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-australia-vs-turkiye.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · D组首轮 · 土耳其24年后回归</span>
+  <span class="badge" style="background:linear-gradient(90deg,#9a7d12,#1d4a2a);margin-left:6px">🏁 已完赛 澳大利亚 2-0</span>
+  <h1>澳大利亚 vs 土耳其</h1>
+  <div class="meta">2026年6月13日 · 温哥华 BC Place（顶棚关闭） · 21:00 PT（美东 6/14 00:00 ET） · D组（同组：美国、巴拉圭） · FS1</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0cf6b">🇦🇺 澳大利亚</div><div class="rk">FIFA #27（待核） · 身价 ≈€41.3m · 连续6届参赛</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇹🇷 土耳其</div><div class="rk">FIFA #22 · 身价 ≈€5亿 · 24年来首次入围</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 澳大利亚 2-0 土耳其（半场 1-0）· 事实与解读分开</span></h2>
+    <div class="sub">被市场定为 19% 胜率的澳大利亚高效反击 2-0 零封土耳其，Irankunda 闪电破门、Metcalfe 远射锁胜。又一场押热门翻车的冷门——本届"押强队让球"的剧本连续失灵。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">澳大利亚用一次教科书反击先声夺人：<b>27′ Nestory Irankunda 闪电反击破门</b>（Paul Okon-Engstler 助攻），半场 1-0。下半场土耳其控球施压却久攻不下，澳大利亚顶住后再下一城——<b>Connor Metcalfe 一记远射钻入死角</b>，2-0 锁定胜局并零封对手。土耳其 24 年后重返世界杯的首秀以失利收场。</p>
+    <div class="lineup">27′ ⚽ Irankunda (AUS, Okon-Engstler 助攻 · 快速反击)  ·  半场 1-0  ·  下半场土耳其压上未果  ·  ⚽ Metcalfe (AUS, 远射)  ·  全场 2-0 · 澳零封</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇺 澳大利亚</th><th>🇹🇷 土耳其</th><th>一句话解读</th></tr>
+      <tr><td>比分 / 净胜</td><td class="au">2 球 · 零封</td><td class="tr">0 球</td><td>澳门前高效 + 后防零漏，是 2-0 的全部逻辑</td></tr>
+      <tr><td>进攻形态</td><td class="au">快速反击</td><td class="tr">控球施压</td><td>土耳其握球权但缺穿透，澳大利亚两次高质量转换就够了</td></tr>
+      <tr><td>首球来源</td><td class="au">反击(Irankunda)</td><td class="tr">—</td><td>正中赛前"澳大利亚的指望在转换与定位球"的判断</td></tr>
+      <tr><td>第二球</td><td class="au">远射(Metcalfe)</td><td class="tr">—</td><td>土耳其压上留出空间，被远射惩罚</td></tr>
+      <tr><td>关键缺阵影响</td><td class="au">全员健康</td><td class="tr">缺 Yıldız</td><td>土耳其攻击线少了爆点，进攻办法明显变少</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Cesar Ramos（墨西哥）/ 当值组 · 顶棚关闭中性环境、对抗可控</td><td>BC Place 顶棚关闭，无天气变量</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/australia-vs-turkiye-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760421/turkiye-australia" style="color:var(--accent)">ESPN</a> · <a href="https://www.foxsports.com/live-blog/soccer/australia-vs-turkiye-live-updates-score-top-plays-from-todays-action" style="color:var(--accent)">FOX Sports</a>（比分/进球 ≥2 源一致；控球/xG 完整面板待 Opta 更新，暂以形态描述为准）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who" style="color:#f0cf6b">澳大利亚：低估值球队靠"高效转换 + 零封"打赢牌面</div>身价仅约 €41m、被市场定为 19% 胜率，澳大利亚却用两次高质量反击 + 全场零封拿下 2-0。<b>说明这支澳大利亚的现实武器是务实防守 + 快速转换 + 定位球（预选 8 个角球/任意球进球，AFC 第二）</b>——不跟你比控球，比的是机会效率与组织纪律，正是赛前点名的得分路径。</div>
+    <div class="insight"><div class="who" style="color:#f08a82">土耳其：缺 Yıldız 后，控球无穿透</div>土耳其握有球权却 0 进球，下半场压上反被远射惩罚。<b>说明这支土耳其在缺少 Yıldız 这类爆点时，阵地进攻缺乏破密集的最后一传/一射</b>——Arda Güler 顶上仍难独自解题，控球质量≠威胁，是结构性隐患。</div>
+    <div class="insight"><div class="who" style="color:#f0cf6b">Metcalfe 远射＝压上留空间的标准惩罚</div>第二球来自土耳其全线压上后的远射空当。<b>说明澳大利亚很清楚自己该干什么：先守住、再用对手的冒进换二次打击</b>——这种比赛管理能力是老牌世界杯参赛队（连续 6 届）的经验红利。</div>
+    <div class="insight"><div class="who" style="color:var(--warn)">又一场"押强队"翻车——本届让球盘的连续警示</div>继瑞士被卡塔尔逼平，土耳其作为 13× 身价、水位收紧的热门也输球。<b>说明本届开赛阶段强弱差被市场系统性高估</b>，弱旅的组织度与强队的磨合不足同时存在，"无脑买强队让球"风险极高。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>土耳其窄胜（隐含 ≈55%）· 共识 0-1/2-1 低分局</td><td style="color:var(--bad);font-weight:700">✗ 重大偏差</td><td>澳大利亚 2-0 反赢，热门方向完全押反</td></tr>
+      <tr><td>水位收紧 1.80→1.74（资金压土耳其）</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>资金流向的那一边输球，盘口移动是反向信号</td></tr>
+      <tr><td>Yıldız 伤缺大概率 · Arda Güler 顶上</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>Yıldız 确实缺阵，且其缺阵对土耳其进攻影响被低估</td></tr>
+      <tr><td>澳大利亚指望＝转换 + 定位球</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>首球正是快速反击，得分路径判断准确</td></tr>
+      <tr><td>低分局（共识小球）</td><td style="color:var(--warn);font-weight:700">~ 各半</td><td>2 球总进球确实不高，但"土耳其赢"的小分剧本错了</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>胜负方向<b>重大押反</b>——把土耳其当热门、低估了缺 Yıldız 的影响与澳大利亚的务实效率。但"澳大利亚靠转换/定位球得分"的路径判断命中。叠加瑞士冷平，本届"押强队让球"已连续两场翻车，须修正对强弱差的定价。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#f0cf6b"><div class="who" style="color:#f0cf6b">🇦🇺 澳大利亚 → 下一场 vs 美国（6/19 西雅图）</div>
+        ① <b>反击模板对美国未必好用</b>：美国首轮 4-1 大胜巴拉圭、火力凶猛且会主动控球，澳大利亚需要比本场更强的防守韧性；<br>② <b>定位球＝可复制武器</b>：对美国仍是最现实的得分来源（预选 8 球的看家本领）；<br>③ <b>士气与健康</b>：零封+全员健康+爆冷取胜，信心拉满，但面对 Balogun/Reyna 的速度，后防转换要更快回位。</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇹🇷 土耳其 → 下一场 vs 巴拉圭（6/19-20 圣克拉拉）</div>
+        ① <b>必须解决破密集</b>：本场控球无穿透的问题，对同样会低位死守的巴拉圭（首轮 1-4 负但结构本是强项）会重演，需要 Yıldız 复出或新的破局手段；<br>② <b>Yıldız 伤情是关键变量</b>：他能否归队直接决定土耳其进攻上限；<br>③ <b>心理重整</b>：首秀爆冷告负 + 出线压力，必须避免对巴拉圭再被反击打反击（巴拉圭的 Enciso 最快本场复出，反击有威胁）。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">温哥华的深夜档藏着全届<b>最悬殊的身价差之一：土耳其 ≈€5亿，约为澳大利亚的13倍</b>。蒙特拉的土耳其带着 8 场不败（近8场7胜）、Güler（皇马，赛季6球12助）+ Çalhanoğlu（国米）的黄金中场回归 24 年缺席的世界杯舞台；最大坏消息是<b>尤文前锋 Yıldız（意甲10球6助）小腿伤大概率缺席首战</b>。波波维奇的澳大利亚则全员健康、以三中卫的防守纪律立足，锋线押在下半季 12 场 10 球的归化新星 <b>Mohamed Toure</b> 身上。赔率隐含土耳其胜率 ≈55% 且水位持续向土方收紧（1.80→1.74）；专家方向一边倒（土胜≈6家 vs 澳 0），分歧只在大小球。剧本参考：两队史上交手两次（2004友谊赛），土耳其两连胜。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">土耳其隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈55%</div></div>
+      <div class="key"><div class="k">身价比</div><div class="v">≈13×</div></div>
+      <div class="key"><div class="k">土耳其近8场</div><div class="v" style="color:#f08a82">7胜不败</div></div>
+      <div class="key"><div class="k">Yıldız</div><div class="v" style="color:var(--bad)">伤疑</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Güler 的右半空间</b>：皇马赛季的成长曲线兑现到国家队，他与 Çalhanoğlu 的纵向连线是土耳其的得分主轴。</li>
+      <li><b>Yıldız 缺阵的连锁</b>：少了意甲新星，土耳其边路爆点降档——Aktürkoğlu（附加赛制胜功臣）压力倍增。</li>
+      <li><b>澳洲的三中卫块</b>：Souttar 跟腱重伤14个月后赶上末班车——他的制空对位土耳其传中流是硬碰硬。</li>
+      <li><b>深夜档+顶棚关闭</b>：恒温无风的室内条件，纯战术执行局，环境变量趋零。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 临场更新 · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">🆕 <b>土耳其 Arda Güler 完全康复</b>：赛季末伤病已痊愈，预计首发并可能成为本届亮点——一定程度对冲 Yıldız 缺阵的创造力损失。<span style="color:var(--mut)">🔑 Güler 接管前场组织，土耳其进攻不至于因 Yıldız 缺席而失速。</span></p>
+      <p style="margin-bottom:6px">⚠ <b>Yıldız 大概率缺阵</b>（小腿伤、近日单独训练）；<b>Ferdi Kadıoğlu 状态存疑</b>。澳大利亚无重要伤情、全员可用。</p>
+      <p style="margin-bottom:0">预测首发——土耳其 4-2-3-1：<b>Çakır；Çelik、Demiral、Bardakçı、Kadıoğlu；Çalhanoğlu、Yüksek；Güler、Kökçü、Yıldız；Aktürkoğlu</b>。赔率：土 <b>1.67</b>（4/6）/ 澳 <b>5.00</b>（4/1）。<span style="font-size:12px;color:var(--mut)">来源：<a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html" style="color:var(--accent)">Sports Mole</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">土耳其 · 伤情 <span style="color:var(--mut);font-weight:400">· 06-11 赛前评估 · 单源待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Yıldız（尤文，意甲10球6助）小腿伤大概率缺席首战</b>；Güler 已从赛季末段伤势完全康复</div>
+      <p style="font-size:13.5px">土耳其最被期待的"双星连线"只剩一颗：Kenan Yıldız 小腿伤预计缺席揭幕战；好消息是 Arda Güler 已完全康复，卡迪奥卢也已回归合练。锋线预计由附加赛决赛制胜球功臣 Aktürkoğlu 与 Gül 顶上。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Yıldız 是土耳其唯一能"一对一硬解"的边路球员，他缺阵后土耳其的进攻全部回流到 Güler-Çalhanoğlu 的中路连线——澳大利亚的三中卫+双后腰恰好就是为堵中路设计的。这一伤把"土耳其该赢"的共识从 2 球档拉回 1 球档，是小球派最硬的论据。<span style="color:var(--warn)">[以赛前官方名单为准]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html" style="color:var(--accent)">Sports Mole — 土耳其伤情/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">澳大利亚 · 利好 <span style="color:var(--mut);font-weight:400">· 名单信号</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">澳大利亚<b>全员健康</b>；Souttar 跟腱重伤14个月后赶上末班车入选，归化新星 Volpato 首次入队</div>
+      <p style="font-size:13.5px">波波维奇手中无伤员：莱斯特城高塔 Harry Souttar 在跟腱重伤14个月后于赛季末连续首发并进球、入选最终名单；Boyle、Borrello、Gauci、Rowles 落选；前罗马青训的 Volpato 完成归化首次入队。锋线主打下半季 12 场 10 球的 Mohamed Toure（诺维奇）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：对一支身价只有对手 1/13 的队，"全员健康+结构完整"就是全部本钱。Souttar 的回归直接补上三中卫的中轴与定位球两端的制空——土耳其的传中与角球（Çalhanoğlu 主罚）正是冲这个点来的。Toure 的状态决定澳洲反击有没有终结能力。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.squawka.com/en/news/world-cup/australia-vs-turkey-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — 澳大利亚队况</a> · <a href="https://www.sen.com.au/news/2026/05/31/world-cup-news-socceroos-squad-tony-popovic" style="color:var(--accent)">SEN — 名单</a> · <a href="https://en.wikipedia.org/wiki/Harry_Souttar" style="color:var(--accent)">Souttar 复出背景</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 <span style="color:var(--mut);font-weight:400">· 06-12 预报</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">温哥华晴热（23-26°C），<b>BC Place 顶棚将保持关闭</b>——恒温室内局，环境变量趋零</div>
+      <p style="font-size:13.5px">比赛日温哥华晴朗、最高约 23–26°C，BC Place 确认顶棚关闭，场内恒温无风。这是本轮唯一在"室内"进行的比赛。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：无热、无风、无雨——传控与定位球的执行精度都不打折，纯比拼战术与个人质量的"实验室条件"。对技术更细的土耳其是中性偏好；澳大利亚失去了"环境搅局"这张潜在的弱队牌。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.vancouverisawesome.com/local-news/metro-vancouver-weather-temps-world-cup-rain-2026-12403704" style="color:var(--accent)">Vancouver Is Awesome — 天气</a> · <a href="https://anywherevancouver.com/vancouver-weather-forecast-hot-sunny-fifa-world-cup/" style="color:var(--accent)">AnywhereVancouver — 预报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已确认 <span style="color:var(--mut);font-weight:400">· ESPN + FIFA 官方名单</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">委内瑞拉裁判 <b>Jesús Valenzuela</b> 主哨（VAR：Michael Orue）——今日四主裁中<b>出牌最多型</b></div>
+      <p style="font-size:13.5px">本场由委内瑞拉的 <b>Jesús Valenzuela</b>（42岁、FIFA 2013 起）执法，助理 Urrego、Moreno，VAR Michael Orue——ESPN 与 FIFA 官方名单均已确认（由原"单源待核"<b>升级为已确认</b>）。<b>生涯量化（本次补全）</b>：354 场 <b>1772 黄 + 49 红 ≈ 5.01 黄/场</b>，属<b>出牌偏多型</b>，为今日四场主裁最高；2021 年获 IFFHS 评选南美年度最佳裁判，执法过 2022 世界杯小组赛。与澳大利亚、土耳其两队均无可查对阵执法史。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：5.01 黄/场是今日四主裁最高——这是把双刃剑：① 对"用强度弥补技术"的澳大利亚，频繁响哨会切碎其身体对抗节奏、且累计黄牌风险高；② 土耳其若情绪化（Çalhanoğlu 抗议、边路缠斗）同样易吃牌，关键球员有累计停赛隐患。点球判罚率暂无权威单独样本，但高黄牌密度意味着这是"裁判存在感强"的一场。<b>两面性</b>：严哨抑制粗野动作，也可能打断土耳其 Güler 一侧的连续组织。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN — 裁判确认</a> · <a href="https://en.wikipedia.org/wiki/Jes%C3%BAs_Valenzuela" style="color:var(--accent)">Wikipedia — Valenzuela 履历</a> · <a href="https://www.whoscored.com/referees/3615/show/jes%C3%BAs-valenzuela" style="color:var(--accent)">WhoScored — 出牌数据</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水） · D组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（FanDuel 去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>D 组四队身价格局（€百万，近似）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇺 澳大利亚</th><th>🇹🇷 土耳其</th></tr>
+      <tr><td>FIFA 排名</td><td class="au">#27（待核）</td><td class="tr">#22</td></tr>
+      <tr><td>全队身价</td><td class="au">≈€41.3m（待核）</td><td class="tr">≈€5亿（约13倍）</td></tr>
+      <tr><td>近6场</td><td class="au">LLWWLD（0-1墨西哥、1-1瑞士收官）</td><td class="tr">WDWWWW · 8场不败（4-0北马其顿、2-1委内瑞拉）</td></tr>
+      <tr><td>世界杯史</td><td class="au">连续6届；2022 进16强</td><td class="tr">24年来首次（附加赛1-0科索沃）；2002 季军</td></tr>
+      <tr><td>阵型</td><td class="au">三中卫 3-4-2-1（防守块+转换）</td><td class="tr">4-2-3-1（Güler-Çalhanoğlu 中轴）</td></tr>
+      <tr><td>1X2 赔率（FanDuel）</td><td class="au">5.10（隐含≈19%）</td><td class="tr">1.74（≈55%）· 平 3.60（≈26%）</td></tr>
+      <tr><td>大小 2.5</td><td colspan="2">小球 1.75–1.85 受捧（BetNow 1.85 被指最锐利价）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="tr">2次（2004友谊赛）：土耳其 3-1、1-0 两连胜</td></tr>
+    </table>
+    <div class="note">📌 概率为 FanDuel 赔率去水后的隐含概率（55/26/19）。澳大利亚的 €41.3m 身价与连续6届世界杯+2022十六强的履历严重背离——澳洲的真实实力一贯高于纸面身价，13倍差距不等于13倍实力差。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">土耳其国内关注度极高，北美深夜档压制整体声量——热度中等、方向单边</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 单边但量级克制</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家 6-0 一边倒看土、水位同向收紧（1.80→1.74），土耳其也是 D 组头名盘成交最活跃的标的——但深夜档+非豪门让总量停在常规档；情绪集中在土耳其侨民与国内媒体。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：土耳其胜 ≈6 · 澳大利亚 0 · 平 0；大小球分裂）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>澳大利亚 0-1 土耳其</b></td></tr>
+      <tr><td>KickOff 算法</td><td>模型</td><td>0-1（单一比分概率 13% 最高）</td></tr>
+      <tr><td>Yahoo / OneFootball</td><td>预测聚合</td><td>土耳其胜（1.74）</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>土耳其胜；另荐"土 -1 + 双方进球 @4.25"</td></tr>
+      <tr><td>Tribuna / Sports Interaction</td><td>预测站</td><td>土耳其胜</td></tr>
+      <tr><td>SportsLine · Jon Eimer</td><td>认证专家（欧冠31-13）</td><td>反向口袋：<b>大 2.5 球</b></td></tr>
+      <tr><td>compare.bet</td><td>赔率聚合</td><td>反向口袋的反面：<b>小 2.5 球</b>（1.85 被指最锐利价）</td></tr>
+    </table>
+    <div class="flag">⚠ <b>结构信号</b>：6-0 的方向共识 + 0-1/1-0 型低分共识。最有信息量的是<b>比分分布</b>：模型派最高单一比分仅 13%（0-1）——这是"胜负清楚、进球高度不确定"的典型画像，大小球两派对赌的正是 Yıldız 缺阵后土耳其的进攻上限。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（水位向土耳其收紧）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>土耳其胜</th><th>解读</th></tr>
+      <tr><td>06-08</td><td>综合</td><td class="tr">1.80–1.85</td><td>开档区间</td></tr>
+      <tr><td>06-11/12</td><td>FanDuel</td><td class="tr">1.74</td><td>单边收紧 ≈+2pp</td></tr>
+      <tr><td>06-11/12</td><td>Racing Post 最佳价</td><td class="tr">1.80（澳最高 5.50）</td><td>书商间分歧 1.74–1.80</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">③ 预测市场资金面（D组头名盘，DefiRate 聚合）</h4>
+    <table>
+      <tr><th>队伍</th><th>头名概率</th><th>成交量</th><th>备注</th></tr>
+      <tr><td>美国</td><td>38.6%</td><td>—</td><td>组内第一热门</td></tr>
+      <tr><td class="tr">土耳其</td><td class="tr">34.3%（Poly 34.5% / Kalshi 32.5%）</td><td class="tr"><b>$84.4K（组内最活跃）</b></td><td>资金最关注的标的</td></tr>
+      <tr><td>巴拉圭</td><td>18.4%</td><td>—</td><td>—</td></tr>
+      <tr><td class="au">澳大利亚</td><td class="au">9.0%</td><td>—</td><td>30日动量 +2.4%（小幅买入）</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>组格局信号</b>：预测市场把 D 组视为"美土双头"，本场胜者大概率锁定与美国争头名的位置——首轮即组内"第二档决赛"。</li>
+      <li><b>异象</b>：澳大利亚头名概率仅 9% 却有 +2.4% 的 30 日买入动量——有小额资金在赌"澳洲式过线"剧本。</li>
+      <li>单场盘存在但价格/量未抓取（待核）；全赛事预测市场体量已破 $20亿。</li>
+    </ul>
+
+    <h4 style="margin-top:20px">④ 社媒 / 舆论热度</h4>
+    <ul class="cl">
+      <li>土耳其国内：24 年首战 = 全民事件，土媒全速运转，Güler/Yıldız 双星叙事铺天盖地。</li>
+      <li>北美侧：深夜 00:00 ET 档+非豪门组合，主流英文媒体声量明显低于同日另三场。</li>
+      <li>澳大利亚侧：清晨档直播（AEST 14:00 为下午——实际友好），"Socceroos 找回临门效率"是 ESPN AU 的主线话题。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：方向单边但无泡沫——土耳其 55% 的中枢价对"身价13倍+8场不败 vs 全员健康的防守块"是合理定价。被情绪掩盖的两点：① Yıldız 缺阵让土耳其的"赢两球能力"存疑，-1.5 类盘口偏贵；② 澳洲 9% 的头名价背后是它史上多次"纸面最弱却出线"的路径依赖。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html">Sports Mole</a> · <a href="https://www.kickoff.co.uk/world-cup-predictions-stats-odds/australia-vs-turkey/">KickOff 算法</a> · <a href="https://onefootball.com/en/news/australia-vs-turkey-prediction-world-cup-2026-preview-best-bets-42991072">OneFootball</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/australia-vs-turkey-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aDqeC7S5q8Ib/">Racing Post</a> · <a href="https://www.sportsline.com/insiders/australia-vs-turkiye-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Eimer</a> · <a href="https://www.compare.bet/news/australia-vs-turkey-betting-preview-predictions-tips-and-live-odds">compare.bet — 赔率/走势</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-d/">DefiRate — D组预测市场</a> · <a href="https://finance.yahoo.com/markets/options/articles/world-cup-betting-kalshi-polymarket-133600704.html">Yahoo Finance — $2B 体量</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇦🇺 澳大利亚 预测首发（3-4-2-1）</h4>
+    <div class="lineup">Ryan(C); Italiano · Circati · Souttar; Herrington · Metcalfe · Irvine · Bos; O'Neill · Leckie; Toure</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="au">Harry Souttar</td><td>中卫 / 莱斯特城</td><td>跟腱重伤14个月后复出、赛季末连续首发并进球；制空双端核心</td></tr>
+      <tr><td class="au">Jackson Irvine</td><td>中场 / 圣保利</td><td>2025春脚部手术、10月复出；中场发动机与更衣室领袖</td></tr>
+      <tr><td class="au">Mohamed Toure</td><td>中锋 / 诺维奇</td><td><b>下半赛季 12场10球</b>——澳洲反击唯一的终结赌注</td></tr>
+      <tr><td class="au">Mathew Ryan / Leckie</td><td>门将(C) / 边路</td><td>Ryan 大赛经验压舱；Leckie 世界杯10场1球1助的老将</td></tr>
+    </table>
+    <h4>🇹🇷 土耳其 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Çakır; Çelik · Demiral · Bardakçı · Elmalı; Çalhanoğlu(C) · Yüksek; Güler · Kökçü · Yılmaz; Gül</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="tr">Arda Güler</td><td>前腰/右路 / 皇马</td><td>全季51场 <b>6球12助</b>（西甲4球9助）；欧冠"赛季新锐"——土耳其的发牌人</td></tr>
+      <tr><td class="tr">Hakan Çalhanoğlu (C)</td><td>后腰 / 国米</td><td>本季意甲 9球4助；105场22球的定位球大师，节奏总开关</td></tr>
+      <tr><td class="tr">Kenan Yıldız</td><td>边锋 / 尤文</td><td>意甲33场 10球6助、队内最佳射手；<b>小腿伤大概率缺席本场</b></td></tr>
+      <tr><td class="tr">Kerem Aktürkoğlu</td><td>边锋</td><td>附加赛决赛制胜球功臣；Yıldız 缺阵后边路担子全在他</td></tr>
+    </table>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0cf6b">🇦🇺 澳大利亚 · Tony Popovic（2024上任）</div>
+        <div class="role">3-4-2-1 · 防守块 + 定位球 + 转换</div>
+        <ul class="cl">
+          <li>接手后把球队重构为三中卫的防守纪律体：先不丢、再谈赢——对强队的标准澳洲剧本。</li>
+          <li>ESPN AU 点出的命门：<b>临门效率</b>——创造的机会转化率长期偏低，Toure 是新的答案。</li>
+          <li>武器库：Souttar 的定位球制空、Irvine 的后插上、对手中卫线的高球轰炸。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇹🇷 土耳其 · Vincenzo Montella（2023上任）</div>
+        <div class="role">4-2-3-1 · 中路渗透 + Güler 自由权限</div>
+        <ul class="cl">
+          <li>意大利教头给了 Güler 充分自由权限，Çalhanoğlu 拖后发牌——中轴质量是组内第二档最强。</li>
+          <li>8场不败的底层是控制力提升：对北马其顿/委内瑞拉两场热身都按部就班拿下。</li>
+          <li>风险：Yıldız 缺阵后边路降档；面对密集三中卫，"渗透不进则传中"的 Plan B 质量一般。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">土耳其控球与领土优势带来明显角球倾向（场均6 vs 澳2），但澳大利亚的传中/定位球打法会自造角球——盘口给出土耳其 -1.5，总数中等偏低。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table>
+      <tr><th>维度</th><th>🇦🇺 澳大利亚</th><th>🇹🇷 土耳其</th><th>含义</th></tr>
+      <tr><td>场均获得角球</td><td class="au">≈2</td><td class="tr">≈6</td><td>土方控球+territory，开角球的基数远高</td></tr>
+      <tr><td>场均被迫角球</td><td class="au">中高（待核）</td><td class="tr">中低（待核）</td><td>澳洲被围攻时易让出角球，土方被压时间少</td></tr>
+      <tr><td>进攻侧重</td><td class="au">边路传中 / 高球轰炸</td><td class="tr">中路渗透为主，边路 Aktürkoğlu 辅</td><td>澳洲靠下底制造角球；土方更想穿透而非传中</td></tr>
+      <tr><td>定位球威胁</td><td class="au">高（Souttar 制空 + 高大中卫群）</td><td class="tr">高（Çalhanoğlu 主罚，落点精准）</td><td>双方都能把角球转成实质威胁</td></tr>
+      <tr><td>角球占优倾向</td><td class="au">劣势但能自造</td><td class="tr">明显占优</td><td>盘口让土方 -1.5 反映这一差</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p><b>角球让球</b>：土耳其 <b>-1.5</b> @ <b>1.75</b>（欧赔小数）。<b>角球总数大小</b>：主流书商未公开挂线，按场均 2+6 与低进球剧本估算线约 <b>大小 8.5</b>（赔率 ≈ <b>1.90/1.90</b>，<b>待核</b>）。来源：Before You Bet（澳2 / 土6 场均、土 -1.5 @1.75）。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>土耳其在角球上明显占优：控球、territory 与中路施压都把对方逼向自家禁区，场均6比2的差距支撑 -1.5 的让球。但这并非送分——澳大利亚的传中/高球路线本身会自造角球，且一旦落后转为强攻，角球数会回补。-1.5 并非 pick'em，但也谈不上稳吃，属"合理略偏土方"。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>偏小的逻辑：土耳其更想穿透而非传中，主动放弃了一部分"传中-解围-再开角"的循环；低进球剧本（小2.5受捧）通常伴随节奏克制、角球产量受限。偏大的逻辑：澳洲一旦被压只能靠边路下底+高球还击，双方传中量叠加可推高总数。综合看总数中等偏低，8.5 一线两面均衡，无强烈单边。</div>
+    <div class="insight"><div class="who">变量与两面性</div>Yıldız 缺阵削弱土耳其左路的个人突破→下底造角球能力下降，利于压低土方角球与总数；Güler 康复回归保住中路组织，但中路渗透不直接产角球。BC Place 顶棚关闭、恒温无风→传中精度不打折，定位球质量稳定，环境对角球产量呈中性。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.beforeyoubet.com.au/australia-vs-turkey-world-cup-2026-preview-and-betting-tips">Before You Bet — 角球数据/让球盘</a> · <a href="https://www.apwin.com/team/turkey-national-team/corners/">APWin — 土耳其角球</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>（ESPN + FIFA 官方名单）：委内瑞拉 <b>Jesús Valenzuela</b>（42岁、FIFA 2013起；2021 IFFHS 南美最佳裁判；2022 世界杯履历）。<b>量化（本次补全）</b>：≈ <b>5.01 黄/场</b>（1772黄/49红 in 354场）——今日四主裁最高、出牌偏多。与两队无对阵执法史。读法：严哨切碎身体对抗（抑制澳大利亚的强度路线），双方关键球员累计黄牌停赛风险升高；判点率暂无权威单独样本。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：若澳洲拿到领先想守，拖时间工具被砍——反而逼它继续踢。</li>
+      <li><b>仅队长可与裁判沟通</b>：Çalhanoğlu vs Ryan 两位队长都以冷静著称，沟通面中性。</li>
+      <li><b>半自动越位</b>：土耳其打澳洲三中卫身后的直塞（Güler 的招牌）临界判罚更快更准。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN AU <small>· C级 区域权威</small></div>波波维奇任内的澳大利亚"必须找回临门效率"——防守块已经成型，问题始终在最后一传一射；Toure 的 10 球下半季是这套体系第一次拥有真正的终结点。</div>
+    <div class="insight"><div class="who">KickOff 算法 <small>· 模型</small></div>最高单一比分 0-1 仅 13% 概率——模型在说："土耳其赢"很确定，"怎么赢、赢几个"完全不确定。低分窄胜是中枢剧本。</div>
+    <div class="insight"><div class="who">Racing Post <small>· B级</small></div>"土 -1 + BTTS @4.25"的组合暗含的判断：土耳其质量终将兑现，但澳洲的定位球足以换一球——这是对两队武器库最诚实的拆解。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：土耳其 1-0 / 2-1 窄胜是中枢剧本；澳大利亚的路径是把比赛拖进定位球消耗战、用 Souttar 的制空换一球。</li>
+      <li><b>关键先生</b>：Güler（土/发牌人）、Çalhanoğlu（土/节奏+定位球）、Souttar（澳/双端制空）、Toure（澳/唯一终结赌注）。</li>
+      <li><b>胜负手</b>：土耳其中路渗透 vs 澳洲三中卫密度；Yıldız 缺阵后土耳其的边路 Plan B 质量是"赢1个还是赢2个"的分界线。</li>
+      <li><b>市场视角</b>：55% 中枢合理；-1.5 类盘口因 Yıldız 伤疑偏贵；澳洲 +2.4% 的预测市场动量是唯一的反向资金信号。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 澳身价 €41.3m 与 FIFA #27 待核；② Yıldız 伤情以官方名单为准；③ 亚盘主流线未取得；④ 预测首发为分析源推测。<span style="color:var(--mut)">（裁判已由 ESPN + FIFA 官方名单确认。）</span></div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/preview/australia-vs-turkey-prediction-team-news-lineups_599005.html">Sports Mole — 前瞻/伤情/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49019692/fifa-world-cup-2026-australia-vs-turkiye-kickoff-how-watch-stats-team-news">ESPN — 赛前队况/开球时间</a><br>
+      • <a href="https://www.squawka.com/en/news/world-cup/australia-vs-turkey-team-news-predicted-lineups/">Squawka — 队况</a> · <a href="https://www.espn.com.au/football/story/_/id/49035589/fifa-world-cup-socceroos-turkiye-preview-australia-rediscover-clinical-edge-early-popovic-tenure">ESPN AU — 战术主线</a> · <a href="https://www.compare.bet/news/australia-vs-turkey-betting-preview-predictions-tips-and-live-odds">compare.bet — 赔率</a><br>
+      • <a href="https://defirate.com/prediction-markets/world-cup-odds/group-d/">DefiRate — D组预测市场</a> · <a href="https://www.transfermarkt.us/arda-guler/leistungsdaten/spieler/861410">Transfermarkt — Güler</a> · <a href="https://www.livescore.com/en/season-stats/hakan-calhanoglu/16015/">LiveScore — Çalhanoğlu</a> · <a href="https://dailysports.net/news/who-are-the-officials-for-the-2026-world-cup-opener-between-australia-and-turkey/">Dailysports — 裁判（单源待核）</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',AU='#e0a514',TR='#d0312d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['澳大利亚','土耳其'],datasets:[{data:[41.3,500],backgroundColor:[AU,TR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['土耳其胜','平局','澳大利亚胜'],datasets:[{data:[55,26,19],backgroundColor:[TR,DR,AU],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:65,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['美国','土耳其','巴拉圭','澳大利亚'],datasets:[{data:[331,500,55,41.3],backgroundColor:['#1f4e9c',TR,'#d0312d88',AU],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万（近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'澳大利亚',data:[7,5,5.5,7.5,5.5,7],borderColor:AU,backgroundColor:AU+'33',pointBackgroundColor:AU},
+   {label:'土耳其',data:[6.5,7,8,7.5,8.5,5.5],borderColor:TR,backgroundColor:TR+'33',pointBackgroundColor:TR}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

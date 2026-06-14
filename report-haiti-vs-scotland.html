@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 海地 vs 苏格兰 · 2026世界杯 C组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-haiti-vs-scotland.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-haiti-vs-scotland.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-haiti-vs-scotland.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · C组首轮 · 52年 vs 28年的双重回归</span>
+  <span class="badge" style="background:linear-gradient(90deg,#7a1f18,#0d3b66);margin-left:6px">🏁 已完赛 苏格兰 1-0</span>
+  <h1>海地 vs 苏格兰</h1>
+  <div class="meta">2026年6月13日 · 福克斯堡 Gillette Stadium · 21:00 ET · C组（同组：巴西、摩洛哥） · FOX/Telemundo</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇭🇹 海地</div><div class="rk">FIFA #83（本届倒数第二） · 身价 €55.6m · 1974年后首次</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</div><div class="rk">FIFA #42 · 身价 €207.8m · 1998年后首次</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 海地 0-1 苏格兰（半场 0-1）· 事实与解读分开</span></h2>
+    <div class="sub">海地射门与 xG 双双反超却 0 进球，苏格兰靠 McGinn 28′ 一次双折射偷到全场唯一进球——苏格兰拿下 1990 年以来世界杯首胜、登顶 C 组。胜负判断命中，但比分与"海地能换一球"的判断有偏差。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">全场唯一进球来自<b>28′ John McGinn</b>：Che Adams 一记精妙触球做球，McGinn 起脚后<b>两次折射打门员防守球员变线</b>，骗过门将 Johny Placide 入网。此后海地持续创造机会却屡屡功亏一篑，苏格兰守住 1-0。McGinn 以 <b>31 岁 238 天</b>成为苏格兰世界杯最年长进球者（超越 Dalglish）。这是苏格兰<b>自 1990 年以来的世界杯首胜</b>，且因巴西-摩洛哥同时 1-1，苏格兰<b>暂登 C 组榜首</b>。</p>
+    <div class="lineup">28′ ⚽ McGinn (SCO, Adams 助攻 · 两次折射)  ·  半场 0-1  ·  海地全场多次错失  ·  全场 0-1  ·  苏格兰 1990 后世界杯首胜 · 登顶 C 组</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇭🇹 海地</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>一句话解读</th></tr>
+      <tr><td>控球率</td><td class="ht">≈56%</td><td class="sc">≈44%</td><td>海地敢于持球、并非一味摆大巴——回归大赛 52 年仍踢得有想法</td></tr>
+      <tr><td>xG（预期进球）</td><td class="ht">1.21</td><td class="sc">1.05</td><td>海地 xG 反超却 0 球——差距全在临门一脚，不在创造</td></tr>
+      <tr><td>射门 / 射正</td><td class="ht">15 / —</td><td class="sc">9 / —</td><td>海地射门数多近一倍，量大质不差但全部未转化</td></tr>
+      <tr><td>进球方式</td><td class="ht">无</td><td class="sc">运动战(双折射)</td><td>苏格兰唯一进球带运气成分（两次变线），并非碾压所得</td></tr>
+      <tr><td>关键先生</td><td class="ht">终结力欠缺</td><td class="sc">McGinn / Adams 串联</td><td>苏格兰中场经验（McGinn）在唯一一次高质量机会里兑现</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Mohammed Al-Hoish（沙特）/ 当值组 · 对抗可控、无点球争议</td><td>未出现高牌或判点变量，符合中性预期</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/haiti-vs-scotland-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a>（xG/射门）· <a href="https://www.espn.com/soccer/report/_/gameId/760418" style="color:var(--accent)">ESPN 赛后</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/scotland-haiti-world-cup-2026-report-result-goals-mcginn/" style="color:var(--accent)">101 Great Goals</a>（≥2 源一致；射正口径各源略有出入）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who" style="color:#f08a82">海地：输在终结，不输在比赛——回归大赛踢得有竞争力</div>15 射、1.21 xG、控球反超，海地把苏格兰逼到只能死守。<b>说明海地（FIFA #83）的比赛质量远超排名，缺的只是临门一脚的稳定性</b>——这支队不该被当作鱼腩，对手轻视它会吃亏。</div>
+    <div class="insight"><div class="who" style="color:#7fa6e6">苏格兰：靠一次折射 + 防守纪律赢球，不是靠压制</div>1.05 xG、9 射、44% 控球还被对手多创造机会，进球还带两次折射运气。<b>说明苏格兰这场胜利是务实型的——防守组织 + 一次机会把握 + 一点运气</b>，不是状态碾压。McGinn/Adams 的经验在唯一窗口兑现，是老牌球队的价值。</div>
+    <div class="insight"><div class="who" style="color:var(--good)">苏格兰：终于打破魔咒，心理意义>技术意义</div>1990 年以来世界杯首胜、暂登 C 组。<b>说明压在苏格兰身上的"12 届 0 出线"心魔在首轮就部分卸下</b>——抢到的 3 分让他们在死亡之组（巴西/摩洛哥）拥有出线主动权，士气价值极高。</div>
+    <div class="insight"><div class="who">小分剧本兑现——两队都不是火力型</div>全场仅 1 球，海地空有 xG 无转化。<b>说明这是一场典型的"机会型"低分局</b>，与赛前低火力预期一致；海地的问题、苏格兰的务实都指向后续仍是小分倾向。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>苏格兰胜（隐含 ≈65%）</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>苏格兰 1-0 取胜，胜负方向命中</td></tr>
+      <tr><td>模型共识比分 2-1 · 海地能换一球</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>实际 1-0，海地 15 射 0 进球，"海地进一球"判断落空</td></tr>
+      <tr><td>苏格兰"12届0出线"魔咒压力</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>压力真实存在，但苏格兰顶住、抢到关键首胜</td></tr>
+      <tr><td>低分小球倾向</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>全场仅 1 球，小球命中</td></tr>
+      <tr><td>海地实力被排名低估</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>15 射 1.21 xG 力压苏格兰，"别轻视海地"判断准确</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>胜负、低分、"海地有竞争力"三项命中，唯一偏差是<b>误判海地能进一球</b>——低估了海地终结力的不稳定与苏格兰的防守纪律。整体方向良好。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇭🇹 海地 → 下一场 vs 巴西（6/19 费城 Lincoln Financial）</div>
+        ① <b>终结力是生死线</b>：本场 15 射 0 球，对巴西这种机会更少的对手，把握度必须提升，否则难有产出；<br>② <b>比赛质量可期</b>：海地踢得不怯场、能持球，面对缺内马尔、阵地进攻不稳的巴西未必是送分童子；<br>③ <b>防守专注度</b>：苏格兰靠一次折射就破门，巴西的个人能力（Vinícius）更强，禁区前沿的盯人与封堵要更早。</div>
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 → 下一场 vs 摩洛哥（6/19 福克斯堡 Gillette）</div>
+        ① <b>必须扛住摩洛哥开场风暴</b>：摩洛哥对巴西前 30 分钟轰 12 射，苏格兰组织偏慢，若开场被打穿会很被动；<br>② <b>定位球＝苏格兰得分指望</b>：本场运动战 xG 仅 1.05，对身体强硬的摩洛哥，McGinn/Adams 的定位球与二点球仍是最现实路径；<br>③ <b>登顶后的取舍</b>：手握 3 分，对摩洛哥可更务实地求一分，防守纪律（本场已验证）是资本。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">故事性满分的一场：海地<b>时隔52年</b>重返世界杯（且因国内安全危机，全部"主场"预选赛在500英里外的库拉索踢完，主帅米涅上任18个月从未踏足海地本土）；苏格兰<b>时隔28年</b>回归，还背着"12届大赛全部小组出局"的魔咒——而且 98 年那届的同组对手恰好也是<b>巴西+摩洛哥</b>，宿命轮回。竞技层面盘口一边倒：苏格兰胜赔 1.44（隐含 ≈65%），身价 3.7 倍，McTominay（那不勒斯赛季 ~10球）领衔的中场高出一个级别。海地的武器是<b>反击双引擎</b>——桑德兰的 Isidor（€18m，队内最贵）与狼队的 Bellegarde，外加史上射手王 Nazon。比赛在大波士顿举行：当地是全美第三大海地裔社区，但高票价+旅行禁令让"主场"成色存疑。基准剧本：<b>苏格兰 2-0/2-1</b>。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">苏格兰隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈65%</div></div>
+      <div class="key"><div class="k">身价比</div><div class="v">3.7×</div></div>
+      <div class="key"><div class="k">海地上次世界杯</div><div class="v" style="color:#f08a82">1974</div></div>
+      <div class="key"><div class="k">苏格兰大赛魔咒</div><div class="v" style="color:var(--warn)">12届0出线</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>McTominay 的肠胃炎</b>：周四缺训（预计可出战）——他是苏格兰进攻端的一半，状态打折直接改盘口。</li>
+      <li><b>海地的反击牙齿</b>：Isidor+Bellegarde 都是英超级别的转换球员，苏格兰高位防线（Hanley/Souttar 偏慢）是可打的点。</li>
+      <li><b>波士顿的看台成色</b>：海地侨民能进场多少决定这场"中立场"的实际归属。</li>
+      <li><b>苏格兰的魔咒心态</b>：首战即"必须赢的那场"——压力全在苏格兰一侧，海地零包袱。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 临场更新 · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">🆕 <b>苏格兰 Billy Gilmour 整届世界杯报销</b>：热身赛对库拉索遭遇严重膝伤，曼联新星 Tyler Fletcher 紧急补入名单。<span style="color:var(--mut)">🔑 中场少一个稳定出球点，McTominay 身边的组织搭档需重排，可能影响苏格兰控场的流畅度。</span></p>
+      <p style="margin-bottom:6px">✅ <b>McTominay 已完全康复</b>：此前肠胃不适缺训，Steve Clarke 确认其健康、预计首发（由"预计可战"升级为"确认可用"）。</p>
+      <p style="margin-bottom:0">预测首发(Sports Mole)：<b>Gunn；Hickey、Hanley、Souttar、Robertson；Doak、McTominay、Ferguson、McGinn；Adams、Shankland</b>（4-2-3-1 倾向）。<span style="font-size:12px;color:var(--mut)">来源：<a href="https://www.espn.com/soccer/story/_/id/48814281/scotland-world-cup-squad-announced-scott-mctominay-ross-stewart" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/scotland/world-cup-2026/predicted-lineups/mctominay-decision-gunn-or-gordon-in-goal-predicted-scotland-lineup-vs-haiti_598955.html" style="color:var(--accent)">Sports Mole</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">苏格兰 · 伤情群 <span style="color:var(--mut);font-weight:400">· 06-11 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Gilmour 无缘世界杯（膝）；<b>McTominay 周四因肠胃不适缺训</b>（预计可出战）；McKenna 轻伤、Adams 抢恢复</div>
+      <p style="font-size:13.5px">中场 Billy Gilmour 膝伤无缘本届，曼联小将 Tyler Fletcher 替补入队。核心 McTominay 周四肠胃不适缺席训练但预计能赶上首发；中卫 McKenna 有轻伤，前锋 Adams（都灵，大腿）在和时间赛跑。队长 Robertson 健康。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Gilmour 缺阵让苏格兰失去唯一的"控球节拍器"，中场组织全压到 Ferguson/McGinn 身上，风格被迫更直接；McTominay 是苏格兰得分手段的一半（后插上+定位球抢点），他的身体状态是本场盘口最敏感的单点变量——任何"不首发"的官宣都会立刻移动价格。<span style="color:var(--warn)">[McTominay/McKenna/Adams 逐人状态待赛前官方名单核实]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fourfourtwo.com/team/scotland-injury-news-latest-as-scott-mctominay-misses-training-before-world-cup-opener" style="color:var(--accent)">FourFourTwo — McTominay 缺训</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-injury-news-steve-clarke-mulls-over-major-decision-on-trio-as-world-cup-campaign-begins-8671906" style="color:var(--accent)">The Scotsman — 伤情三人组</a> · <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html" style="color:var(--accent)">Sports Mole — 队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">海地 · 队况 <span style="color:var(--mut);font-weight:400">· 信息冲突 · 待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Sports Mole（6/11）：海地<b>无伤病</b>满员出战；早前 NYSportsDay（6/9）称 38 岁队长门将 Placide 存疑——以更晚信息为准</div>
+      <p style="font-size:13.5px">最新评估海地全员可战：Nazon、Jean Jacques 健康在列。预测首发为 <b>Isidor+Nazon 双前锋</b>而非 AEK 雅典的 Pierrot——后者年初曾伤缺6场，且他是麻州 Melrose 长大、东北大学出身的"回家作战"情怀人物，替补奇兵角色更可能。门将 Placide 的状态两源说法不一，<b>标记待核</b>。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：满员的海地能摆出理论最强的 4-4-2 反击块。38 岁的 Placide 若临场换成 Alexandre Pierre，海地的高球处理与指挥经验降一档——苏格兰恰好是定位球+传中流（Robertson 左路输送），门将变量直接对接对手的主武器。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html" style="color:var(--accent)">Sports Mole — 海地队况/预测首发</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/" style="color:var(--accent)">NYSportsDay — Placide 存疑（较早）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">场外 · 主场成色 <span style="color:var(--mut);font-weight:400">· 波士顿侨民</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">大波士顿是全美第三大海地裔社区（马萨诸塞州超10万人），但<b>高票价+旅行禁令</b>让多数海地球迷难进场</div>
+      <p style="font-size:13.5px">本场恰好落在海地侨民重镇：马萨诸塞州海地裔人口超 10 万。但 FIFA 官网单票一度标到 $2,100，叠加针对海地的旅行禁令，本土球迷几乎无法赴美——当地媒体报道海地球迷"感觉被自己的第一届世界杯排除在外"；罗德岛等地侨民仍在组团助威。另：Foxborough 周六多云、约15°C、20%降水概率，晚间凉爽利于跑动，无极端天气。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这本可以是海地的"准主场"——若侨民填满看台，氛围价值约等于半个主场优势；票价与签证现实把它打了折。看台归属是开球前最后揭晓的变量，转播镜头里的旗帜比例就是信号。凉爽天气则中性偏利于高强度逼抢的苏格兰。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.bostonglobe.com/2026/06/03/metro/haiti-world-cup/" style="color:var(--accent)">Boston Globe — 海地社区与票价</a> · <a href="https://www.wbur.org/news/2026/05/26/boston-haitians-world-cup-scotland-match" style="color:var(--accent)">WBUR — 侨民期待</a> · <a href="https://www.aljazeera.com/sports/2026/5/23/world-cup-2026-haiti-fans-feel-excluded-from-first-tournament-since-1974" style="color:var(--accent)">Al Jazeera — 球迷被排除感</a> · <a href="https://forecast.weather.gov/MapClick.php?lat=42.0654&lon=-71.2478" style="color:var(--accent)">NWS — Foxborough 预报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿尔及利亚名哨 <b>Mustapha Ghorbal</b>（40岁）执法——<b>2024 欧冠决赛（皇马–多特）主裁</b>、2022 世界杯 2 场履历；VAR 为西班牙 Naranjo</div>
+      <p style="font-size:13.5px">主裁为 FIFA 2014 年起的国际级阿尔及利亚人 <b>Mustapha Ghorbal</b>，助理 Gourari、Zerhouni，第四官员西班牙 Hernández，VAR 西班牙 Naranjo。<b>生涯量化（本次补全）</b>：184 场 <b>712 黄 + 22 红 ≈ 3.87 黄/场</b>（中等偏低）、<b>0.36 点球/场</b>（偏高）；本季(2025/26)约 14.5 犯规/场、0 点球。大赛履历顶级：<b>2024 年欧冠决赛主裁</b>（皇马 2-0 多特）、2022 世界杯执法 2 场（荷兰–厄瓜多尔、澳大利亚–丹麦）。与海地、苏格兰国家队均无可查的对阵执法史（对阵史无样本）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：3.87 黄/场属中等偏低、0.36 点球/场偏高——画像是<b>不爱用牌切碎比赛、却敢在禁区响哨</b>。本场结构"苏格兰冲吊 + 海地反击"双向身体接触多：偏宽的黄牌尺度利于身体流、利海地把节奏拖糙；但偏高的判点率对两队禁区内拉拽/手球都构成成本——苏格兰角球冲吊的禁区肢体、海地反击被侵犯，都更可能升级成点球。欧冠决赛级的大场面履历说明他控场稳、不易被气氛带偏。<b>两面性</b>：尺度偏宽利身体对抗，判点偏严又给技术弱势方一个"造点"出口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-referee-confirmed-as-12-year-fifa-veteran-to-take-charge-of-world-cup-clash-8668192" style="color:var(--accent)">The Scotsman — 裁判官宣</a> · <a href="https://africasoccer.com/world-cup-202-mustapha-ghorbal-scotland-vs-haiti/" style="color:var(--accent)">AfricaSoccer — Ghorbal</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e1f15,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双方官宣 XI · 对照预测 · 速览结论复核</span></h2>
+    <div class="sub">官宣时点 ~20:00 ET（开球前约1小时）· 双源一致 ✅ 官方确认</div>
+
+    <h4>🇭🇹 海地 官方首发（4-4-2）</h4>
+    <div class="lineup">Placide; Arcus · Adé · Delcroix · Experience; Deedson · Jean Jacques · Bellegarde · Providence; Pierrot · Isidor</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#e2e8f0">Duckens Nazon</b>（国家队史射手王 44球，本场惊人地坐板凳）· <b style="color:#e2e8f0">Josué Casimir</b>（边路冲击）· 替补门将 Alexandre Pierre。</div>
+
+    <h4 style="margin-top:16px">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 官方首发（4-4-2）</h4>
+    <div class="lineup">Gunn; Hickey · Hanley · Hendry · Robertson(C); Gannon-Doak · McTominay · Ferguson · McGinn; Adams · Shankland</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#e2e8f0">Lawrence Shankland</b> 已首发；板凳含 <b style="color:#e2e8f0">Ryan Christie</b>（中场轮换）、<b style="color:#e2e8f0">John Souttar / Scott McKenna</b>（防线深度）、43岁门将 <b style="color:#e2e8f0">Craig Gordon</b>。</div>
+
+    <h4 style="margin-top:18px">vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht"><b>海地·前锋</b></td><td>Nazon</td><td><b>Pierrot</b></td><td>史射王 Nazon 被摁在替补席——Migné 选了支点型中锋 Pierrot 做苏格兰双中卫的对抗与做球，海地的"clinical 终结者"成了后手奇兵。</td></tr>
+      <tr><td class="ht"><b>海地·边路</b></td><td>Deedson / Casimir 二选一</td><td><b>Deedson</b></td><td>跑动型边前卫胜出，强调反抢与回防——印证海地是"反击块"而非控球队的定位。</td></tr>
+      <tr><td class="ht"><b>海地·门将</b></td><td>Placide（待核）</td><td><b>Placide ✅</b></td><td>38岁老门将确认首发，原"信息冲突·待核"解除；高球处理这一对接苏格兰传中的关键点维持原画像。</td></tr>
+      <tr><td class="sc"><b>苏格兰·中卫</b></td><td>Hanley/Souttar + McKenna/Souttar</td><td><b>Hanley · Hendry</b></td><td>Hendry 顶替 Souttar/McKenna 搭档 Hanley——速度更好、出球更稳的组合，针对 Isidor 的身后冲刺做了准备。</td></tr>
+      <tr><td class="sc"><b>苏格兰·McTominay</b></td><td>首发（健康存疑）</td><td><b>首发 ✅</b></td><td>肠胃不适后确认"perfect and ready"，本场最大单点变量正面解除——65% 中枢的最重要前提兑现。</td></tr>
+      <tr><td class="sc"><b>苏格兰·门将/边路</b></td><td>Gunn ; McGinn/Christie</td><td><b>Gunn · McGinn</b></td><td>Gunn 赢下门将之争（Gordon 替补），McGinn 压过 Christie——与预测主线一致，无意外。</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读</h4>
+    <ul class="cl">
+      <li><b>海地的最大信号 = Nazon 坐板凳。</b>用支点中锋 Pierrot 替下史射王，意味着 Migné 优先要"扛住+做球+消耗"，把 Nazon 的终结力留作 60 分钟后打苏格兰体能下降时的奇兵——这是冲着"先求不丢、再图一击"去的，与"海地反击换一球"的剧本同向。</li>
+      <li><b>苏格兰双中卫换 Hendry，是对位 Isidor 的针对性选择。</b>Hendry 的转身与出球比 Souttar/McKenna 更适合处理 Isidor 的身后启动与由守转攻的第一脚长传——苏格兰提前堵死了海地最锋利的那把刀。</li>
+      <li><b>McTominay 健康首发，是对速览结论最关键的确认。</b>原报告把他列为"本场盘口最敏感的单点变量"；既然正常首发，苏格兰进攻手段的一半到位，65% 上下的胜率中枢站得住。</li>
+      <li><b>两队都摆 4-4-2 镜像，中场 4v4。</b>苏格兰中路 McTominay+Ferguson 对海地 Bellegarde+Jean Jacques，谁先在二点球与转换中占上风谁就掌握节奏；边路 Robertson↔Doak 的左路与海地 Providence/Arcus 一侧的攻防是胜负手区域。</li>
+      <li><b>速览结论：维持。</b>苏格兰 2-0/2-1 基准剧本不变；McTominay 到位巩固上限，海地用 Pierrot 支点+Isidor 速度仍保留"反击换一球 / BTTS Yes / 2-1 型比分"的口袋——官方名单没有推翻任何主线，反而消掉了最大的不确定性。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：截至本次抓取，未检得首发公布后明确的盘口位移数据（待核）。理论上 McTominay 确认首发利于苏格兰价格企稳；Nazon 意外替补对海地让球盘的影响有限（Pierrot+Isidor 仍是进攻配置）。仅作事实陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:10px">来源：<a href="https://x.com/ScotlandNT/status/2065940647056486786">@ScotlandNT 官方首发</a> · <a href="https://x.com/Concacaf/status/2065944231248621868">@Concacaf 海地首发</a> · <a href="https://bolavip.com/en/world-cup/haiti-vs-scotland-live-2026-world-cup-game-in-boston">Bolavip — 双方官宣 XI（直播博客）</a> · <a href="https://www.si.com/soccer/haiti-vs-scotland-world-cup-preview-predictions-lineups-6-13-26">SI — 阵容核对</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水） · C组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（bet365 去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队身价格局（€百万）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇭🇹 海地</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#83（本届倒数第二）</td><td class="sc">#42</td></tr>
+      <tr><td>全队身价</td><td class="ht">≈€55.6m（第39）</td><td class="sc">≈€207.8m</td></tr>
+      <tr><td>晋级之路</td><td class="ht">CONCACAF 10场6胜2平；"主场"全部移师库拉索</td><td class="sc">欧预赛4胜1平1负头名；末轮4-2丹麦（补时连入两球）</td></tr>
+      <tr><td>近期热身</td><td class="ht">0-1突尼斯、1-1冰岛、4-0新西兰、1-2秘鲁</td><td class="sc">0-1日本、0-1科特迪瓦、4-1库拉索、4-0玻利维亚</td></tr>
+      <tr><td>世界杯史</td><td class="ht">第2次（1974：3战全败丢14球）</td><td class="sc">第9次（魔咒：12届大赛全部小组出局）</td></tr>
+      <tr><td>1X2 赔率（bet365）</td><td class="ht">6.25（隐含≈14%）</td><td class="sc">1.44（≈65%）· 平 4.50（≈21%）</td></tr>
+      <tr><td>让球 / 大小</td><td colspan="2" class="sc">苏格兰 -1.5 @2.45 / 海地 +1.5 @1.49；大2.5 @1.71 / 小 @1.91 —— 市场画像="苏格兰净胜1球"</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">史上首次交手</td></tr>
+    </table>
+    <div class="note">📌 概率为 bet365 赔率去水后的隐含概率（65/21/14）。两队热身共同点：都赢弱队、都输给高强度对手（海地1-2秘鲁、苏格兰连败日本/科特迪瓦）——苏格兰的 65% 建立在"级别差"而非"状态差"上。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">故事热、盘口冷：叙事流量满格，竞技悬念被价格压扁</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 叙事热 + 盘口单边但量级常规</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">英媒+美东本地媒体高密度报道、双重回归叙事拉满；盘口向苏格兰单边收紧（-190→-225/-270）但无狂热迹象。情绪集中在"苏格兰终于要破魔咒"——这恰是历史上反复坑人的叙事。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：苏格兰胜 8+ · 海地 0 · 平 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>海地 1-3 苏格兰</b></td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>苏格兰"横扫"开门红</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>苏格兰小胜、低比分</td></tr>
+      <tr><td>Chris Sutton</td><td>BBC 名宿</td><td>苏格兰胜；建议双前锋、点名 <b>Doak</b> 是X因素</td></tr>
+      <tr><td>Wayne Rooney</td><td>BBC 名宿</td><td>看好苏格兰</td></tr>
+      <tr><td>MrFixitsTips</td><td>苏格兰本地投注媒体</td><td>苏格兰胜 + 小2.5</td></tr>
+      <tr><td>SportsCasting 超算</td><td>模型</td><td>苏格兰胜率 63%</td></tr>
+      <tr><td>AI 面板 · ChatGPT / Claude / Gemini</td><td>NYSportsDay 三模型</td><td>ChatGPT：海地 +1.5；Claude：苏格兰胜（10模型集成 89% 共识）；Gemini：大2.5 —— 方向一致，最热比分 <b>2-1</b></td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号</b>：与当日另两场同构——0 信源押海地，唯一的"反向"是 ChatGPT 的海地 +1.5 安全垫。注意一个细节：模型比分共识是 <b>2-1 而非 2-0</b>——多数量化源默认海地能进一个。BTTS Yes 是被名人推荐忽略、但被模型隐含支持的口袋。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（钱在向苏格兰收紧）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>苏格兰胜</th><th>解读</th></tr>
+      <tr><td>早期</td><td>Sports Interaction</td><td class="sc">≈1.53（-190）</td><td>开档</td></tr>
+      <tr><td>06-11/12</td><td>bet365</td><td class="sc">1.44（-225）</td><td>单边收紧</td></tr>
+      <tr><td>06-11/12</td><td>Lucky Rebel</td><td class="sc">1.37（-270）</td><td>最紧价；隐含已逼近70%</td></tr>
+    </table>
+    <div class="note">📌 <b>单边移动 ≈ +4-7pp</b>：苏格兰侨民资金（英伦+北美苏格兰人）与"破魔咒"情绪同向推价；海地 6.25→6.50 被动变宽。Kalshi 给苏格兰 62-66%、海地 15-17%、平 ~22%——预测市场比最紧的博彩价（70%）冷静，两池间出现少见的 4-8pp 温差，博彩侧情绪更满。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：苏格兰 62-66%，本场共 17 个市场（胜负/让球/总分/BTTS/射手/角球）；Polymarket 单场价格与成交量未检得（待核）。</li>
+      <li><b>舆论</b>：英媒（BBC/Sky/Scotsman）全力运转"28年回归+魔咒"叙事；美东媒体（Boston Globe/WBUR）做海地社区故事——两套叙事互不相交，竞技讨论反而稀薄。</li>
+      <li><b>身价错觉提醒</b>：海地 €55.6m 是"FIFA #83"里罕见的高配（Isidor/Bellegarde/Nazon 都在欧洲主流联赛）——排名低估了它的反击质量。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩盘比预测市场热 4-8pp，热源是"破魔咒"情绪而非新信息。若 McTominay 健康首发，65% 上下是合理中枢；市场盲点在 <b>BTTS Yes / 2-1 型比分</b>——海地的反击配置足以在苏格兰高线身后换一球。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/haiti-vs-scotland-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aPgNf2G3Jg7R/">Racing Post</a> · <a href="https://www.thatsagoal.com/football-pundits-predictions-for-today/chris-suttons-predictions">Sutton picks</a> · <a href="https://www.scotsman.com/sport/football/scottish-premiership/latest-premiership-news/man-utd-england-scotland-world-cup-prediction-wayne-rooney-bbc-ryan-christie-steve-clarke-usa-8673645">Rooney</a> · <a href="https://mrfixitstips.co.uk/previews/haiti-vs-scotland-prediction-and-betting-tips/">MrFixitsTips</a> · <a href="https://www.sportscasting.com/news/supercomputer-haiti-vs-scotland-betting-picks-predictions-odds/">SportsCasting 超算</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/">NYSportsDay AI 面板</a> · <a href="https://www.squawka.com/us/news/world-cup/kalshi-promo-code-haiti-vs-scotland-06-13-26-world-cup-2026/">Squawka/Kalshi</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/haiti-vs-scotland-odds-prediction-061426-217127">Sports Interaction — 早期价</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span class="tag" style="font-size:11px;font-weight:600;background:#0e2a18;color:var(--good);border:1px solid #1d4a2a;border-radius:6px;padding:2px 8px;vertical-align:middle">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方"✅ 官方首发 &amp; 解读"）</div>
+    <h4>🇭🇹 海地 预测首发（4-4-2）</h4>
+    <div class="lineup">Placide(待核); Arcus · Adé · Delcroix · Experience; Deedson/Casimir · Jean Jacques · Bellegarde · Providence; Isidor · Nazon</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Wilson Isidor</td><td>前锋 / 桑德兰（€18m，队内最贵）</td><td>英超级别的冲刺与终结，反击第一引擎</td></tr>
+      <tr><td class="ht">Duckens Nazon</td><td>前锋 / Esteghlal（伊朗）</td><td>国家队史射手王 44球/78场；预选6球含对哥斯达黎加帽子戏法</td></tr>
+      <tr><td class="ht">Jean-Ricner Bellegarde</td><td>中场 / 狼队（€16m）</td><td>持球推进+换挡，海地由守转攻的发动机</td></tr>
+      <tr><td class="ht">Danley Jean Jacques</td><td>中场 / 费城联合</td><td>中场平衡器；MLS 赛季高强度对抗的实战状态</td></tr>
+    </table>
+    <h4>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 预测首发（4-4-2 / 4-2-3-1）</h4>
+    <div class="lineup">Gunn; Hickey · Hanley/Souttar · McKenna/Souttar · Robertson(C); Doak · McTominay · Ferguson · McGinn/Christie; Adams · Shankland</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Scott McTominay</td><td>中场 / 那不勒斯（≈£34.5m）</td><td>本季意甲约10球3助；苏格兰进攻的一半；周四肠胃不适缺训（预计可战·待核）</td></tr>
+      <tr><td class="sc">Andy Robertson (C)</td><td>左后卫 / 利物浦</td><td>队长；左路传中是苏格兰第一进攻通道</td></tr>
+      <tr><td class="sc">Lawrence Shankland</td><td>前锋 / Rangers</td><td>近两场热身 3球1助，状态正热、料获首发</td></tr>
+      <tr><td class="sc">Ben Gannon-Doak</td><td>边锋 / 伯恩茅斯</td><td>伤愈复出的爆点；Sutton 点名的 X 因素，冲海地左路</td></tr>
+    </table>
+    <div class="note">门将之争：Gunn vs 43 岁的 Gordon（本届最年长球员）——Clarke 未揭牌。海地名单注：Jean Jacques 效力费城联合（非朗斯）；媒体名单中边锋为 Deedson，所谓 Mondésir 未见权威名单（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇭🇹 海地 · Sébastien Migné（法籍，2024上任）</div>
+        <div class="role">4-4-2 中低位块 + 双前锋直击</div>
+        <ul class="cl">
+          <li>非洲多国执教履历的"游牧名帅"；上任18个月因安全危机从未踏足海地本土，全靠侨民球员+库拉索集训凝聚。</li>
+          <li>剧本清晰：让出控球，Bellegarde 推进、Isidor/Nazon 冲身后——专打苏格兰偏慢的中卫线。</li>
+          <li>风险：后防国际级硬仗经验少，被 Robertson 一侧的传中流持续轰炸时的定位球防守是命门。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · Steve Clarke（2019上任，任期7年）</div>
+        <div class="role">4-4-2/4-2-3-1 · 结构紧凑 + 左路输送</div>
+        <ul class="cl">
+          <li>末轮4-2丹麦的史诗出线后，Clarke 的保守标签被部分撕掉；但大赛首战他历来求稳。</li>
+          <li>进攻三板斧：Robertson 传中、McTominay 后插上、定位球——全部依赖 McTominay 的禁区存在感。</li>
+          <li>心理变量：12届大赛0出线的魔咒+全国期待，首战"必须赢"的压力全在苏格兰一侧。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+<section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+  <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+  <div class="sub">苏格兰的传中+定位球打法天然吃角球，海地低位反击角球产量低——角球面整体倒向苏格兰，让球可看、总数偏中性。</div>
+  <h4>① 两队角球画像（打法驱动）</h4>
+  <table><tr><th>维度</th><th>🇭🇹 海地</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>含义</th></tr>
+    <tr><td>场均获得角球</td><td class="ht">≈3-4（低，估算/待核）</td><td class="sc">≈5-6（高，估算/待核）</td><td>苏格兰持续施压拿角球，海地控球少、产量低</td></tr>
+    <tr><td>场均被迫角球</td><td class="ht">≈5-6（高，估算/待核）</td><td class="sc">≈3-4（低，估算/待核）</td><td>海地深度退防被传中逼出角球，苏格兰失球面少</td></tr>
+    <tr><td>进攻侧重（边路/中路/高压）</td><td class="ht">中路直塞反击为主</td><td class="sc">边路传中 + 高压，Robertson 左路输送</td><td>苏格兰边路流直接转化角球，海地走中路不靠边角</td></tr>
+    <tr><td>定位球威胁</td><td class="ht">弱（高球处理是命门）</td><td class="sc">强（McTominay 抢点 + 身高优势）</td><td>角球进攻端苏格兰是主武器、海地是软肋</td></tr>
+    <tr><td>角球占优倾向</td><td class="ht">劣势</td><td class="sc">明显占优</td><td>角球数与角球质量双重倒向苏格兰</td></tr>
+  </table>
+  <h4>② 实际盘口（角球市场）</h4>
+  <p>各大博彩与新闻源未公开披露本场角球专项盘口（bet365/oddschecker/sofascore 角球市场未检得）。<b>基于打法与联赛基准的合理估算（待核）</b>：角球总数大小盘 <b>O/U 9.5</b>，参考赔率约 <b>大 1.90 / 小 1.90</b>（European 小数，估算/待核）；角球让球 <b>苏格兰 -2.5</b>（苏格兰角球占优，估算/待核）。事实锚点：苏超联赛场均 ≈10 个角球（主队 ≈5.5、客队 ≈4.6），与"苏格兰主导一方约 6 / 弱势一方约 3-4"的画像吻合。来源：footystats / betoncorners（联赛基准，事实）；本场专项线为分析估算。</p>
+  <h4>③ 技术面研判（让分 & 大小球）</h4>
+  <div class="insight"><div class="who">让分（角球让球）</div>苏格兰的传中流（Robertson 左路输送）+ 定位球抢点（McTominay）会持续把海地压在禁区里，逼出角球；海地中路直塞反击的打法本身不靠边路、产出角球少。角球数差天然偏大，<b>苏格兰 -2.5 的角球让球有打出空间</b>——若苏格兰按级别差掌控比赛，角球净差到 +3 以上是合理剧本。</div>
+  <div class="insight"><div class="who">大小球（角球总数）</div>苏格兰单边制造角球（≈6）抬高总数，但海地低位防守+回避边路使其自身角球产量被压（≈3-4），两侧合计约 9-10，紧贴 9.5 线。<b>倾向略偏大但不坚决</b>：若海地摆深度块、苏格兰耐心传导，角球会堆积偏大；若海地早失球被迫压出、对攻减少苏格兰传中频次，则可能回落到小。</div>
+  <div class="insight"><div class="who">变量与两面性</div>① 苏格兰若久攻不下、末段追分加大传中与边路冲击，角球数会尖峰式上涨，利大球与苏格兰让球兑现；② <b>Gilmour 报销</b>影响中场出球与控场宽度，苏格兰可能更直接地起球冲吊，反而推高角球产量；③ 反向风险：苏格兰早早 2-0 后收力控场，传中减少，角球总数与让球差同时缩水。</div>
+  <div class="note">仅供分析参考，非投注建议。角球专项盘口为基于打法与联赛基准的估算（待核）。来源：<a href="https://footystats.org/scotland/premiership/corner-stats" style="color:var(--accent)">FootyStats — 苏超角球基准</a> · <a href="https://www.betoncorners.com/teams/scotland-corners/" style="color:var(--accent)">BetOnCorners — 苏格兰角球</a></div>
+</section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：阿尔及利亚 <b>Mustapha Ghorbal</b>（40岁、FIFA 2014起；<b>2024 欧冠决赛主裁</b>、2022 世界杯 2 场）。<b>量化（本次补全）</b>：≈ 3.87 黄/场、0.36 点球/场（184 场 712 黄 / 22 红）。与两队无对阵执法史。读法：黄牌尺度偏宽（利身体流、利海地拖糙），但判点偏严（禁区拉拽/手球有成本，给弱势方"造点"出口）；大赛履历说明控场稳。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：海地若领先或僵持，拖时间工具被砍——38岁 Placide 的旧习惯首当其冲。</li>
+      <li><b>仅队长可与裁判沟通</b>：Robertson 的队长经验是苏格兰的隐形资产。</li>
+      <li><b>半自动越位</b>：海地反击冲身后（Isidor）的临界球判得更快——双刃剑。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Chris Sutton · BBC <small>· 名宿</small></div>"苏格兰应该上双前锋、放 Doak 去冲"——潜台词是别又摆 Clarke 式保守阵：对本届最弱档对手，保守踢法才是魔咒延续的真正风险。</div>
+    <div class="insight"><div class="who">SportsCasting 超算 <small>· 模型</small></div>63% 胜率低于盘口隐含（65-70%）——模型比市场冷静，差值正是"破魔咒情绪"的定价。</div>
+    <div class="insight"><div class="who">综合 · 海地侧画像 <small>· 战术信号</small></div>海地不是 1974 的海地：Isidor（英超）、Bellegarde（英超）、Jean Jacques（MLS）构成的反击线在 FIFA #83 的队里史无前例——身价第39 vs 排名第83 的巨大裂缝就是冷门空间本身。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：苏格兰 2-0/2-1 是基准剧本；海地的现实路径是顶住前30分钟轰炸后用反击换一球，把比赛拖进苏格兰的焦虑区。</li>
+      <li><b>关键先生</b>：McTominay（苏/进攻的一半+健康存疑）、Robertson（苏/输送源）、Isidor（海/反击第一引擎）、Placide或替补门将（海/高球处理）。</li>
+      <li><b>胜负手</b>：苏格兰定位球与传中的兑现效率 vs 海地反击打高线身后的成功率；McTominay 的身体状态是最大单点变量。</li>
+      <li><b>市场视角</b>：博彩盘（最紧70%）比预测市场（62-66%）热——情绪差额来自"破魔咒"叙事；2-1/BTTS Yes 是被忽略的口袋。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① McTominay/McKenna/Adams 逐人状态以赛前官方为准；② 海地门将 Placide 两源信息冲突；③ Pierrot 现状单源；④ Polymarket 单场量未检得；⑤ 预测首发均为分析源推测。<span style="color:var(--mut)">（Ghorbal 量化执法数据本次已补全。）</span></div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/haiti/world-cup-2026/preview/haiti-vs-scotland-prediction-team-news-lineups_598953.html">Sports Mole — 前瞻/伤情/预测首发</a> · <a href="https://www.fourfourtwo.com/team/scotland-injury-news-latest-as-scott-mctominay-misses-training-before-world-cup-opener">FourFourTwo — McTominay</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-injury-news-steve-clarke-mulls-over-major-decision-on-trio-as-world-cup-campaign-begins-8671906">Scotsman — 伤情</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49026945/haiti-scotland-kickoff-how-watch-stats-team-news-fifa-world-cup-2026">ESPN — 赛前队况</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-haiti-vs-scotland-predictions-world-cup-2026/">NYSportsDay — AI面板/赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/haiti-vs-scotland-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aPgNf2G3Jg7R/">Racing Post</a><br>
+      • <a href="https://www.bostonglobe.com/2026/06/03/metro/haiti-world-cup/">Boston Globe — 海地社区</a> · <a href="https://www.wbur.org/news/2026/05/26/boston-haitians-world-cup-scotland-match">WBUR</a> · <a href="https://www.888sport.com/blog/football/world-cup/haiti-squad-value-and-salaries-2026-world-cup">888sport — 海地身价</a> · <a href="https://www.scotsman.com/sport/football/international/scotland-vs-haiti-referee-confirmed-as-12-year-fifa-veteran-to-take-charge-of-world-cup-clash-8668192">Scotsman — 裁判</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['海地','苏格兰'],datasets:[{data:[55.6,207.8],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['苏格兰胜','平局','海地胜'],datasets:[{data:[65,21,14],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[1135,488.2,207.8,55.6],backgroundColor:['#16a34a','#c1272d',SC,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'海地',data:[5,6,5,5,6.5,3.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'苏格兰',data:[7,6.5,7,7.5,7,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

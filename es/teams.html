@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base de datos de las 48 selecciones · Copa del Mundo 2026</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/teams.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/teams.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/teams.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/teams.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/teams.html">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;--accent:#38bdf8;--good:#22c55e;--warn:#f59e0b}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.55;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  h1{font-size:26px;font-weight:800}
+  .lead{color:var(--mut);font-size:13.5px;margin:8px 0 16px;border-bottom:1px solid var(--line);padding-bottom:14px}
+  .ctrl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .ctrl button{background:var(--card);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:7px 13px;font-size:13px;cursor:pointer}
+  .ctrl button.active{background:var(--accent);color:#06121c;border-color:var(--accent);font-weight:700}
+  .grpttl{font-size:14px;font-weight:800;color:var(--accent);margin:18px 0 6px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-bottom:6px}
+  th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.3px;cursor:pointer}
+  td.team{font-weight:700}
+  td.val{font-variant-numeric:tabular-nums}
+  .rank{display:inline-block;min-width:24px;text-align:center;background:var(--card2);border:1px solid var(--line);border-radius:6px;font-size:11px;padding:1px 4px;color:var(--mut)}
+  .bar{height:6px;border-radius:3px;background:var(--accent);display:inline-block;vertical-align:middle;margin-left:6px}
+  .mut{color:var(--mut)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:11px 13px;font-size:12.5px;margin-top:14px;color:#bfe0f7}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+  .src{font-size:12px;color:var(--mut)}.src a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/teams.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/teams.html" style="color:#92a0c2;text-decoration:none">EN</a> · <b style="color:#38bdf8">ES</b> · <a href="/pt/teams.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+  <a class="back" href="index.html">← Volver al centro de análisis</a>
+  <h1>🌍 Base de datos de las 48 selecciones</h1>
+  <div class="lead">Base de datos de referencia: grupos · ranking FIFA · valor de plantilla · director técnico (nacionalidad / año de llegada / cargo anterior). Se usa como insumo para los análisis de cada partido.</div>
+
+  <div class="ctrl">
+    <button data-view="group" class="active">Por grupo</button>
+    <button data-view="value">Por valor de plantilla</button>
+    <button data-view="rank">Por ranking FIFA</button>
+  </div>
+
+  <div id="content"></div>
+
+  <div class="note">📌 Nota: el ranking FIFA ya está completo para la mayoría de las selecciones — el top (primeros 6) viene de la lista publicada en 2026/4, y el resto del Top 50 completo publicado por ESPN en 2026/1 (incluye menciones honoríficas #58/#71); las selecciones fuera del Top 50 (Catar/Haití/Curazao/Nueva Zelanda/Cabo Verde/Arabia Saudita/Jordania/Uzbekistán/Ghana) quedan por ahora con "—". Los valores de plantilla provienen del listado de Transfermarkt; algunas selecciones siguen con "—" y el agente diario los completa de forma continua. La lista de directores técnicos está completa para las 48 selecciones. Todos los datos se obtienen mediante "búsqueda en línea + extracción de páginas web", sin depender de navegador.</div>
+  <div class="src" style="margin-top:10px">Fuentes: <a href="https://www.fifplay.com/world-cup-2026-head-coaches/">FIFPlay — DT de las 48 selecciones</a> · <a href="https://www.sportingpedia.com/2026/06/03/2026-world-cup-team-values-and-group-rankings/">Sportingpedia — valores de plantilla (6/3 · Transfermarkt, las 48 selecciones)</a> · <a href="https://www.givemesport.com/every-squad-at-2026-world-cup-ranked-by-combined-player-value/">GiveMeSport — valores de plantilla</a> · <a href="https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings">ESPN — ranking FIFA</a></div>
+  <div class="foot">Centro de Análisis de la Copa del Mundo 2026 · Valores actualizados con el corte de Transfermarkt del 2026-06-03 (Grupo A/selecciones top + Japón + EE. UU. completados; Irán agregado el 6/10 con ~€38m; Escocia agregada el 6/11 con €170.25m) · Datos al 2026-06-11 · Solo con fines de análisis — no es consejo de apuestas</div>
+</div>
+
+<script>
+// Datos de referencia de las 48 selecciones (grupo, equipo, ranking FIFA, valor €m, DT, nacionalidad, llegada, cargo anterior)
+const T=[
+ ['A','🇲🇽 México',15,194.6,'Javier Aguirre','México',2024,'Mallorca'],
+ ['A','🇿🇦 Sudáfrica',60,45.8,'Hugo Broos','Bélgica',2021,'Oostende'],
+ ['A','🇰🇷 Corea del Sur',22,142.3,'Hong Myung-bo','Corea del Sur',2024,'Ulsan HD'],
+ ['A','🇨🇿 República Checa',43,190.18,'Miroslav Koubek','Chequia',2024,'Viktoria Plzeň'],
+ ['B','🇨🇦 Canadá',30,203.05,'Jesse Marsch','EE. UU.',2024,'Leeds United'],
+ ['B','🇧🇦 Bosnia',71,149.2,'Sergej Barbarez','Bosnia',2024,'comentarista/exjugador'],
+ ['B','🇶🇦 Catar',55,19.93,'Julen Lopetegui','España',2025,'West Ham'],
+ ['B','🇨🇭 Suiza',18,333.6,'Murat Yakin','Suiza',2021,'Schaffhausen'],
+ ['C','🇧🇷 Brasil',6,912.2,'Carlo Ancelotti','Italia',2025,'Real Madrid'],
+ ['C','🇲🇦 Marruecos',8,488.2,'Mohamed Ouahbi','Marruecos',2026,'Marruecos Sub-20 (campeón mundial)'],
+ ['C','🇭🇹 Haití',83,55.6,'Sébastien Migné','Francia',2024,'asistente de Camerún'],
+ ['C','🏴 Escocia',38,170.25,'Steve Clarke','Escocia',2019,'Kilmarnock'],
+ ['D','🇺🇸 Estados Unidos',16,410,'Mauricio Pochettino','Argentina',2024,'Chelsea'],
+ ['D','🇵🇾 Paraguay',40,157.15,'Gustavo Alfaro','Argentina',2024,'Costa Rica'],
+ ['D','🇦🇺 Australia',27,41.3,'Tony Popovic','Australia',2024,'Melbourne Victory'],
+ ['D','🇹🇷 Turquía',25,494.2,'Vincenzo Montella','Italia',2023,'Adana'],
+ ['E','🇩🇪 Alemania',10,998,'Julian Nagelsmann','Alemania',2023,'Bayern'],
+ ['E','🇨🇼 Curazao',82,null,'Dick Advocaat','Países Bajos',2024,'ADO Den Haag'],
+ ['E','🇨🇮 Costa de Marfil',37,530.9,'Emerse Faé','Costa de Marfil',2024,'asistente de la selección'],
+ ['E','🇪🇨 Ecuador',23,376.2,'Sebastián Beccacece','Argentina',2024,'Elche'],
+ ['F','🇳🇱 Países Bajos',7,837.2,'Ronald Koeman','Países Bajos',2023,'selección de Países Bajos'],
+ ['F','🇯🇵 Japón',19,265.5,'Hajime Moriyasu','Japón',2018,'Japón Sub-23'],
+ ['F','🇸🇪 Suecia',42,476.48,'Graham Potter','Inglaterra',2025,'Chelsea'],
+ ['F','🇹🇳 Túnez',47,null,'Sami Trabelsi','Túnez',2025,'Al-Sailiya'],
+ ['G','🇧🇪 Bélgica',9,542.9,'Rudi Garcia','Francia',2025,'Napoli'],
+ ['G','🇪🇬 Egipto',31,null,'Hossam Hassan','Egipto',2024,'Modern Future'],
+ ['G','🇮🇷 Irán',20,38.0,'Amir Ghalenoei','Irán',2023,'Gol Gohar'],
+ ['G','🇳🇿 Nueva Zelanda',85,null,'Darren Bazeley','Inglaterra',2023,'Nueva Zelanda Sub-23'],
+ ['H','🇪🇸 España',2,1260,'Luis de la Fuente','España',2022,'España Sub-21'],
+ ['H','🇨🇻 Cabo Verde',69,null,'Bubista','Cabo Verde',2020,'clubes'],
+ ['H','🇸🇦 Arabia Saudita',61,null,'Giorgos Donis','Grecia',2025,'Al-Fateh'],
+ ['H','🇺🇾 Uruguay',17,405.8,'Marcelo Bielsa','Argentina',2023,'Leeds United'],
+ ['I','🇫🇷 Francia',1,1530,'Didier Deschamps','Francia',2012,'Marsella'],
+ ['I','🇸🇳 Senegal',12,472.9,'Pape Thiaw','Senegal',2024,'asistente de la selección'],
+ ['I','🇮🇶 Irak',58,null,'Graham Arnold','Australia',2025,'Australia'],
+ ['I','🇳🇴 Noruega',32,601,'Ståle Solbakken','Noruega',2020,'Copenhague'],
+ ['J','🇦🇷 Argentina',3,818.5,'Lionel Scaloni','Argentina',2018,'asistente de Argentina'],
+ ['J','🇩🇿 Argelia',28,257.6,'Vladimir Petković','Bosnia',2024,'selección de Suiza'],
+ ['J','🇦🇹 Austria',24,null,'Ralf Rangnick','Alemania',2022,'Manchester United (interino)'],
+ ['J','🇯🇴 Jordania',63,19.83,'Jamal Sellami','Marruecos',2024,'Marruecos Sub-23'],
+ ['K','🇵🇹 Portugal',5,1020,'Roberto Martínez','España',2023,'Bélgica'],
+ ['K','🇨🇴 Colombia',14,292.8,'Néstor Lorenzo','Argentina',2022,'Melgar'],
+ ['K','🇨🇩 RD del Congo',48,null,'Sébastien Desabre','Francia',2022,'Uganda'],
+ ['K','🇺🇿 Uzbekistán',50,null,'Fabio Cannavaro','Italia',2025,'Udinese'],
+ ['L','🏴 Inglaterra',4,1320,'Thomas Tuchel','Alemania',2025,'Bayern'],
+ ['L','🇭🇷 Croacia',11,385.7,'Zlatko Dalić','Croacia',2017,'Al-Ain'],
+ ['L','🇬🇭 Ghana',74,230.88,'Otto Addo','Ghana',2024,'asistente del Dortmund'],
+ ['L','🇵🇦 Panamá',33,34.83,'Thomas Christiansen','España',2020,'asistente del Leeds United']
+];
+const maxV=Math.max(...T.map(r=>r[3]||0));
+const C=document.getElementById('content');
+function coachCell(r){return `${r[4]} <span class="mut">· ${r[5]} · ${r[6]}${r[7]?' · antes: '+r[7]:''}</span>`;}
+function valCell(v){if(v==null)return '<span class="mut">—</span>';
+  return `€${v}m<span class="bar" style="width:${Math.round(v/maxV*70)}px"></span>`;}
+function rankCell(x){return x==null?'<span class="mut">—</span>':`<span class="rank">${x}</span>`;}
+function rowHTML(r,showGroup){return `<tr>${showGroup?`<td class="mut">${r[0]}</td>`:''}<td class="team">${r[1]}</td><td>${rankCell(r[2])}</td><td class="val">${valCell(r[3])}</td><td>${coachCell(r)}</td></tr>`;}
+function render(view){
+  if(view==='group'){
+    const groups=[...new Set(T.map(r=>r[0]))];
+    C.innerHTML=groups.map(g=>{
+      const rows=T.filter(r=>r[0]===g).map(r=>rowHTML(r,false)).join('');
+      return `<div class="grpttl">Grupo ${g}</div><table><tr><th>Equipo</th><th>FIFA</th><th>Valor</th><th>DT (nacionalidad · llegada · cargo anterior)</th></tr>${rows}</table>`;
+    }).join('');
+  }else if(view==='value'){
+    const rows=[...T].sort((a,b)=>(b[3]||-1)-(a[3]||-1)).map(r=>rowHTML(r,true)).join('');
+    C.innerHTML=`<table><tr><th>Grupo</th><th>Equipo</th><th>FIFA</th><th>Valor↓</th><th>DT</th></tr>${rows}</table>`;
+  }else{
+    const rows=[...T].sort((a,b)=>(a[2]??999)-(b[2]??999)).map(r=>rowHTML(r,true)).join('');
+    C.innerHTML=`<table><tr><th>Grupo</th><th>Equipo</th><th>FIFA↑</th><th>Valor</th><th>DT</th></tr>${rows}</table>`;
+  }
+}
+document.querySelectorAll('.ctrl button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.ctrl button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');render(b.dataset.view);});
+render('group');
+</script>
+</body>
+</html>

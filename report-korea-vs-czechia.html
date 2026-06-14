@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 韩国 vs 捷克 · 2026世界杯 A组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --kr:#cd2e3a;--cz:#11457e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f29,#11457e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21161c,#152138);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.kr{color:#f0828b;font-weight:600}td.cz{color:#7fb0e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · A组首轮 · 🏁 已完赛 韩国 2-1 捷克</span>
+  <h1>韩国 vs 捷克</h1>
+  <div class="meta">2026年6月11日 · 瓜达拉哈拉 Estadio Akron · 22:00 ET · A组（与墨西哥、南非同组）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 韩国</div><div class="rk">身价 €136.75m · Son 谢幕之旅</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fb0e6">🇨🇿 捷克</div><div class="rk">身价 €115.90m · 时隔20年回归</div></div>
+  </div>
+
+
+  <!-- ===== 📊 赛后复盘（daily 任务按规范维护）===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 含对下一场的迁移参考</span></h2>
+    <div class="sub">终场 韩国 2-1 捷克（落后逆转）· 数据来源 Opta/Yahoo box score · 赛前分析全文保留在下方作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">59' 捷克先发制人：<b>长界外球轰炸 → Krejčí 远点强力头球</b>（正是赛前标注的"全欧最强定位球"路径）；韩国 8 分钟后回应——67' <b>黄仁范扳平（李刚仁助攻）</b>；80' <b>吴贤揆反超</b>（黄仁范策动）。韩国 21 分钟内连扳两球完成逆转。</p>
+
+    <h4>② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇰🇷 韩国</th><th>🇨🇿 捷克</th><th>解读</th></tr>
+      <tr><td>控球</td><td class="kr"><b>61.7%</b></td><td class="cz">38.3%</td><td>镜像阵型对撞中韩国完全拿下控制权——远超赛前预期</td></tr>
+      <tr><td>xG</td><td class="kr"><b>1.84</b></td><td class="cz">0.81</td><td>胜在创造质量，不是运气；捷克运动战威胁有限</td></tr>
+      <tr><td>成功传球</td><td class="kr">468 次</td><td class="cz">—</td><td><b>韩国 1966 年以来世界杯单场最高</b>——阵地战进化的硬证据</td></tr>
+      <tr><td>关键个体</td><td class="kr">李刚仁 37/37 传球成功 · 3 次创造机会 · 对抗 10/14；黄仁范 73 传（韩国队史世界杯第二多）</td><td class="cz">Krejčí 头球破门</td><td>李刚仁是阵地战解题钥匙；捷克输出仍依赖定位球</td></tr>
+    </table>
+
+    <h4>③ 技战术复盘（实际 vs 赛前判断）</h4>
+    <ul class="watch">
+      <li><b>韩国"运动战创造力不足"的标签被撕掉</b>：61.7% 控球 + 468 传 + xG 1.84，两个进球都来自中路渗透配合。<b>可迁移结论</b>：对低位/中位块，韩国已有李刚仁主导的阵地战答案，不再只靠 Son 反击。</li>
+      <li><b>Son 不是主角也能赢</b>：进球黄仁范/吴贤揆、助攻李刚仁/黄仁范——赛前"Son 不出球进攻就窄"的判断被证伪，多点开花是韩国本届最大的增量信号。</li>
+      <li><b>捷克剧本只兑现一半</b>：定位球先开花（Krejčí 长界外球头球）证明武器真实；但领先后 21 分钟连丢 2 球——防守块挡不住韩国中路连续渗透，且 Schick 未能延续火热状态（xG 0.81 的大头在定位球）。</li>
+      <li><b>镜像 3-4-2-1 的胜负手在中场腰位</b>：黄仁范 73 传碾压对位——官方首发解读"翼卫对位+定位球拉锯"只对了一半，真正分出胜负的是中路出球质量。</li>
+    </ul>
+
+    <h4>④ 预测对账</h4>
+    <ul class="cl">
+      <li>胜负：AI 面板 Claude"韩国 2.70 是价值价（真实概率 43-45%）" ✓ 兑现；SportsLine 平局锚 ✗；Racing Post 捷克不败 ✗</li>
+      <li>大小球：Eimer 的 Over 2.5 ✓（3 球）；Gemini 的 Under ✗——"专家两派打架"的真分歧由 Over 派胜出</li>
+      <li>市场热度 2/5"干净均势局"判读 ✓；但"公众 69% 押韩 vs 价格不动 = 聪明钱在捷克"的背离信号 ✗——<b>本场是公众正确、书商平衡盘失准的少数案例，记录在案</b></li>
+      <li>裁判：Amin Omar 世界杯首秀整体平稳，赛前"均势高压局可能大开杀戒"的尾部风险未触发</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移 → 两队下一场参考</h4>
+    <table>
+      <tr><th>球队</th><th>下一场</th><th>带入信息</th></tr>
+      <tr><td class="kr">🇰🇷 韩国</td><td>6/18 vs 墨西哥（瓜达拉哈拉）</td><td>① 头名直接对话：两队同积 3 分，赢者基本锁定 A 组头名；② <b>墨西哥 Montes 停赛</b>——中卫线重组，Son/吴贤揆 的冲击点明确；③ 控场模板难直接复制（墨西哥不是捷克），要准备回反击模式，但李刚仁的阵地战输出已是可靠资产；④ 警示：墨西哥对南非 16 射 4 正的压制力远超捷克，三后卫转换防守的老软肋将面临本届最强测试。</td></tr>
+      <tr><td class="cz">🇨🇿 捷克</td><td>6/18 vs 南非</td><td>① 必须拿 3 分，且对手是<b>残阵</b>（Sithole/Zwane 双停赛、全场 xG 0.07 的进攻）；② 定位球武器已验证，对南非高空防守继续轰炸是主线；③ 但运动战创造力不足的问题面对南非低位块会再次暴露——Schick 之外需要 Plan B；④ 出线形势：0 分但末轮才碰墨西哥，先打残阵南非，命运仍在自己手里。</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">来源：<a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — 赛后统计/李刚仁·黄仁范数据</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a> · <a href="https://heavy.com/sports/soccer/world-cup/south-korea-vs-czech-republic-results-today-fifa-world-cup-live-score-updates-stats/" style="color:var(--accent)">Heavy — 过程记录</a></div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 A 组<b>出线第二名的真正分水岭</b>——墨西哥已 2-0 拿下南非坐上头名（揭幕战按热门剧本兑现），韩/捷谁赢这场谁就掌握 A 组第二席的出线主动权。两队身价接近（韩略高），赔率几乎五五开。<b>看点对冲</b>：韩国个人天赋上限更高（Son/李刚仁/金玟哉），但三后卫体系在转换防守中屡屡漏人（3月 0-4 科特迪瓦、0-1 奥地利，180 分钟运动战零进球）；捷克更稳、且<b>定位球是全欧预选最强（8 球）</b>，Schick 本赛季勒沃库森 28 场 16 球状态火热。若打成阵地战，捷克的定位球与 Schick 终结力是 X 因素；若被韩国打成对攻，Son 的反击速度能制裁捷克。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">性质</div><div class="v" style="color:var(--warn)">出线分水岭</div></div>
+      <div class="key"><div class="k">身价</div><div class="v">韩 ≈1.18×</div></div>
+      <div class="key"><div class="k">Schick本季</div><div class="v" style="color:#7fb0e6">16球</div></div>
+      <div class="key"><div class="k">捷定位球</div><div class="v" style="color:#7fb0e6">全欧No.1</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>定位球攻防</b>：捷克预选 8 个定位球进球冠绝欧洲，韩国三后卫定位球与回防是软肋——本场最大胜负手。</li>
+      <li><b>Son vs 体系</b>：Son 在 LAFC 本季 8 助攻领跑但仍未进球；韩国若 Son 不出球，进攻通道极窄。</li>
+      <li><b>Schick 状态</b>：近 7 轮德甲 9 球（含对莱比锡帽子戏法），是 A 组除 Son 外最准的终结点。</li>
+      <li><b>新帅磨合</b>：捷克主帅 Koubek 仅执教过 2 场（均点球大战晋级），本场是他第 3 场。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">A组形势 · 揭幕战刚结束 <span style="color:var(--mut);font-weight:400">· 06-11 终场</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">墨西哥 2-0 南非（Quiñones 第9分钟全届首球 + Jiménez）；终场连出 <b>3 张红牌</b>，南非 Zwane/Sithole 下轮停赛</div>
+      <p style="font-size:13.5px">揭幕战完全按"墨胜 + 低进球"主线兑现：墨西哥 2-0 取 3 分坐上 A 组头名。比赛尾声失控，<b>20 年来世界杯首次单场终场连出 3 红</b>（含 VAR 介入的 Zwane 直红）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：① 本场胜者将独占 A 组第二张出线门票的主动权——输家下轮要么碰墨西哥（韩国 6/18）、要么只能指望末轮，容错空间骤减；② 南非两人停赛意味着<b>末轮对捷克时南非是残阵</b>——对捷克的出线算分是潜在利好，平局价值因此微升；③ 3 红牌是本届执法从严的首个实证，直接抬高本场（同样高压的均势局）的吃牌风险——详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — 墨 2-0 南非 终场</a> · <a href="https://www.cbssports.com/soccer/news/mexico-vs-south-africa-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS — 3 红牌/停赛</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">韩国 · 状态 <span style="color:var(--mut);font-weight:400">· 05-30 / 06-04 收官热身</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">热身两连胜收官：5-0 屠特立尼达（Son 梅开二度），1-0 小胜萨尔瓦多（Son 轮休）</div>
+      <p style="font-size:13.5px">韩国揭幕前两场热身全胜：5/30 <b>5-0 大胜特立尼达和多巴哥</b>，Son 第40分钟近距离破门、3分钟后点球再入一球，梅开二度找回进球手感；6/4 最后一练 <b>1-0 小胜萨尔瓦多</b>（Lee Dong-gyeong 进球），Son 被轮休、替补登场保护状态。Son 称这"可能是我最后一届世界杯"。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：此前 3 月运动战 180 分钟零进球是韩国最大隐忧——Son 热身梅开二度直接缓解了"只助攻不进球"的担忧，进攻端拿到正反馈。最后一场对他轮休，说明洪明甫把他当揭幕战的绝对核心来保护，捷克需重点盯防 Son 的反击。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.thestandard.com.hk/sports-updates/article/333414/Son-sees-double-in-friendly-win-over-Trinidad-and-Tobago" style="color:var(--accent)">The Standard — Son 梅开二度</a> · <a href="https://bolavip.com/en/soccer/south-korea-vs-el-salvador-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — 1-0 萨尔瓦多/Son 轮休</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">捷克 · 状态 + 阵容 <span style="color:var(--mut);font-weight:400">· 06-04 收官热身</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">捷克 3-1 胜危地马拉收官，<b>Schick 破门、Hložek 伤愈替补登场</b></div>
+      <p style="font-size:13.5px">世界杯前最后一练，捷克 <b>3-1 击败危地马拉</b>：Schick(11')、Holeš(72')、Višinský(79') 各入一球，Schick 延续火热状态（本季勒沃库森 28 场 16 球）。<b>伤愈的 Adam Hložek 下半场替补登场</b>，为 Schick 之外补上进攻轮换。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Schick 赛前进球意味着 A 组除 Son 外最准的终结点状态在线，配合捷克<b>全欧最强的定位球</b>，正好打韩国三后卫回防的软肋；Hložek 复出登场也降低了"Schick 被盯死即哑火"的风险，捷克锋线深度优于 3 月。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://bolavip.com/en/soccer/guatemala-vs-czechia-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — 捷 3-1 危地马拉</a> · <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393" style="color:var(--accent)">Bundesliga — Schick 状态</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">韩国 · 伤情 <span style="color:var(--mut);font-weight:400">· 已入选 · 据报无大碍</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">李刚仁左踝伤（对布雷斯特被换下）+ 金玟哉膝伤（对沃尔夫斯堡半场退场）—— 均入选 26 人，报道称问题不大</div>
+      <p style="font-size:13.5px">李刚仁在 PSG 对布雷斯特的联赛中左踝受伤、下半场早早被换下，但韩媒报道为轻伤、不影响世界杯；金玟哉本月对沃尔夫斯堡仅踢半场后因膝痛退场，同样被指并非严重伤情。两人均已进入洪明甫 5/16 公布的最终 26 人。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是韩国进攻与防守的两个支点——李刚仁是阵地战里少数能突破捷克紧凑防线的人，金玟哉是三后卫体系的制空与出球核心。两人哪怕只是体能未拉满，都会放大韩国"运动战创造力不足 + 定位球回防软肋"的既有问题。具体出场状态以赛前官方为准（属"待核硬信息"）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — 韩国名单</a> · <a href="https://www.msn.com/en-xl/news/other/lee-kang-in-kim-min-jae-injured-ahead-of-world-cup/ar-AA2363NI" style="color:var(--accent)">韩媒 — 李刚仁/金玟哉伤情</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369" style="color:var(--accent)">RotoWire</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">双方阵容确定 <span style="color:var(--mut);font-weight:400">· 26 人名单官宣</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队 26 人名单均已确定：黄喜灿伤愈进首发；捷克 Krejčí 任队长、10 人来自布拉格斯拉维亚</div>
+      <p style="font-size:13.5px">韩国洪明甫 5/16 公布名单，<b>黄喜灿已完全摆脱赛季末的脚踝小伤，预计进入首发</b>，Son 锁定左路。捷克 Koubek 5/31 敲定 26 人，狼队中卫 <b>Ladislav Krejčí 出任队长</b>，阵中多达 10 人来自卫冕本土冠军布拉格斯拉维亚（球队骨架），头号威胁仍是状态火热的 Schick。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：黄喜灿健康复出，为韩国在 Son 之外补上一个能逼抢、能冲身后的进攻点，直接缓解"运动战创造力不足"的隐忧；捷克以斯拉维亚班底为骨架，默契度高、定位球套路熟，正好针对韩国三后卫的回防软肋。两队均无重大缺阵，这是一场阵容齐整的均势对决。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — 韩国 26 人</a> · <a href="https://worldcuppass.com/czechia-world-cup-squad-2026/" style="color:var(--accent)">WorldCupPass — 捷克 26 人</a> · <a href="https://www.goal.com/en-om/news/south-korea-czech-republic-world-cup-preview/bltc5df400bcedf8307" style="color:var(--accent)">Goal — 对阵前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· 06-08 FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">本场主裁敲定：<b>埃及裁判 Amin Omar（Amin Mohamed Omar）</b> 执法（开幕日四场之一）</div>
+      <p style="font-size:13.5px">FIFA 已为开幕日四场比赛公布主裁，其中<b>韩国 vs 捷克由埃及裁判 Amin Omar 执法</b>（同日：Sampaio 吹墨西哥-南非、Facundo Tello 吹加拿大-波黑、Danny Makkelie 吹美国-巴拉圭）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场是一场均势的"出线分水岭"，裁判尺度对结果影响放大。主裁对定位球冲撞、禁区内推搡的判罚倾向，将直接决定捷克<b>全欧最强的定位球轰炸</b>能否多吃禁区犯规、Schick 抢点时的身体对抗会否被吹；叠加"门将 8 秒、掷界 5 秒、仅队长可沟通"新规，韩国在均势对决中能否管住情绪同样关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — 开幕日裁判任命</a> · <a href="https://onefootball.com/en/news/fifa-confirms-referees-for-opening-2026-world-cup-fixtures-42984754" style="color:var(--accent)">OneFootball — FIFA 确认开幕场次裁判</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2216,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130a">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· T-60 官宣 · 双源验证</span></h2>
+    <div class="sub">两队官方 XI 已公布（韩国足协 theKFA 与捷克足协 @ceskarepre_cz 官推 + Khel Now 双队专稿）· <b style="color:#4ade80">✅ 官方确认</b></div>
+
+    <h4>🇰🇷 韩国 官方首发（3-4-2-1）</h4>
+    <div class="lineup">金承奎; 李韩范 · 金玟哉 · 李基赫; 薛英佑 · 黄仁范 · 白升浩 · 李泰锡; 李刚仁 · 李在城; 孙兴慜(队长)</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">替补席关键武器：<b style="color:#f0828b">黄喜灿</b>（狼队，预测首发落选）、曺圭成（高点）、李东炅（上场热身进球者）</div>
+
+    <h4>🇨🇿 捷克 官方首发（3-4-2-1）</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci(队长); Coufal · Soucek · Sojka · Zeleny; Provod · Sulc; Schick</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">替补席关键武器：<b style="color:#7fb0e6">Chory</b>（2米高中锋，对危地马拉破门）、Hlozek（伤愈）、Darida（经验）</div>
+
+    <h4>vs 预测首发 对照（韩国 8/11 一致 · 捷克 9/11 一致）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="kr">韩 · 第三中卫</td><td>金太铉</td><td><b>李基赫</b></td><td>洪明甫选机动性而非经验，用更快的回追应对 Schick 抢点与捷克反击。</td></tr>
+      <tr><td class="kr">韩 · 中场</td><td>金鎭奎</td><td><b>白升浩</b></td><td>双后腰多一层屏障+远射，直指本页反复强调的"三后卫转换防守软肋"。</td></tr>
+      <tr><td class="kr">韩 · 攻击线</td><td>黄喜灿</td><td><b>李在城</b></td><td><b>本场最大爆点</b>：黄喜灿坐替补，韩国用串联控制取代冲刺纵深，黄变下半场奇兵。</td></tr>
+      <tr><td class="cz">捷 · 后腰</td><td>Darida</td><td><b>Sojka</b></td><td>35岁老将让位斯拉维亚年轻后腰——瓜达拉哈拉海拔 1500m+ 的跑动续航牌。</td></tr>
+      <tr><td class="cz">捷 · 左翼卫</td><td>Jurasek</td><td><b>Zeleny</b></td><td>选防守属性更强的 Zeleny，斯拉维亚班底进一步扩大，优先保证边路对位安全。</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">战术解读</h4>
+    <ul class="cl">
+      <li><b>镜像 3-4-2-1</b>：两队同阵型对撞，比赛大概率演变为翼卫对位与定位球的拉锯——与速览"阵地战利捷"的判断一致。</li>
+      <li><b>韩国姿态比预期更稳</b>：黄喜灿后置 + 白升浩/黄仁范双后腰，洪明甫优先封堵转换软肋；Son 顶中锋，李刚仁/李在城在他身后自由换位。</li>
+      <li><b>捷克定位球武器完整保留</b>：Soucek/Krejci/Schick 全部首发，全欧最强定位球（预选 8 球）原样上膛——本页最大胜负手判断不变。</li>
+      <li><b>替补席才是分水岭</b>：双方都为海拔与晚场配置跑动型中场，黄喜灿/Chory/Hlozek 三个改变比赛的进攻后手都在板凳上，60 分钟后的换人窗口可能决定比赛。</li>
+      <li><b>速览结论：维持</b>——均势、低事件率开局、定位球与 Son 反击仍是两大 X 因素；唯一修正：韩国开局会比预期更保守，前 30 分钟更可能是低强度试探。</li>
+    </ul>
+
+    <h4 style="margin-top:16px">市场反应</h4>
+    <div style="font-size:13.5px;color:#cbd5e1">首发公布时点（约 T-60）未见可核实的显著盘口移动——两队 XI 均无核心伤缺爆冷，与上方"2/5 均衡无情绪溢价"的市场画像一致（欧洲小数盘三向维持 ≈2.62-2.75 / 3.00-3.15 / 2.75-2.85）。</div>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://khelnow.com/football/world-football-south-korea-starting-lineup-vs-czechia-confirmed-fifa-world-cup-202606">Khel Now — 韩国官方首发（内嵌 theKFA 官推）</a> · <a href="https://khelnow.com/football/world-football-czechia-starting-lineup-vs-south-korea-fifa-world-cup-202606">Khel Now — 捷克官方首发（内嵌捷克足协官推）</a> · <a href="https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-south-korea-v-czechia/blt0769fcf7cebda064">Goal US — 赛前页</a> · <a href="https://www.aljazeera.com/sports/2026/6/11/south-korea-vs-czechia-world-cup-group-match-teams-start-and-lineups">Al Jazeera — 赛前预测对照</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 关键球员状态 · 小组出线概率 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>头号射手本赛季俱乐部产出</h5><canvas id="formChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>A组夺组/出线热度（隐含概率%）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇰🇷 韩国</th><th>🇨🇿 捷克</th></tr>
+      <tr><td>全队身价</td><td class="kr">€136.75m</td><td class="cz">€115.90m</td></tr>
+      <tr><td>阵型</td><td class="kr">3-4-2-1</td><td class="cz">4-2-3-1 / 3-4-2-1</td></tr>
+      <tr><td>核心终结点</td><td class="kr">Son(LAFC,本季8助0球)、黄喜灿(狼队)</td><td class="cz">Schick(勒沃库森,28场16球;国家队25球)</td></tr>
+      <tr><td>定位球</td><td class="kr">一般，且防守端是软肋</td><td class="cz">预选 8 球，全欧最多</td></tr>
+      <tr><td>3月热身</td><td class="kr">0-4 科特迪瓦、0-1 奥地利（运动战零球）</td><td class="cz">预选附加赛两场点球大战晋级</td></tr>
+      <tr><td>夺组隐含概率</td><td class="kr">≈22%</td><td class="cz">≈24%</td></tr>
+      <tr><td>本场定位</td><td colspan="2" class="cz">小组第二之争，赛果直接决定出线主动权（赔率近五五开）</td></tr>
+    </table>
+    <div class="note">📌 这场不是"强弱对话"，而是两支二档队的均势对决。数据指向胜负手在<b>定位球</b>（捷克优势）与<b>Son 能否激活进攻</b>（韩国变量）。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 新模块 · 名人推荐 / 赔率 / 资金面</span></h2>
+    <div class="sub">与揭幕战的"全民过热"相反，这场是干净的五五开市场 — 真实数据带来源</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · 均衡，无明显情绪溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向分裂、赔率三向接近、无名人一边倒——市场定价与基本面基本一致，分歧点在大小球而非胜负。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（8 个信源 · 方向分裂：押韩 2 · 押捷不败 2 · 押平/小球 3 · 押大球 1）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>SportsLine 精英专家</td><td>认证盈利专家</td><td>低分均势开局，以<b>平局为锚</b>，加 1-1 正确比分作长价版本</td></tr>
+      <tr><td>Jon Eimer</td><td>职业 tipster</td><td>反向主推 <b>Over 2.5</b>：韩国是预选小组头号攻击力，捷克近5场全部大于2.5球</td></tr>
+      <tr><td>Racing Post</td><td>英国投注媒体</td><td>强调捷克定位球 + Schick 状态，倾向捷克不败</td></tr>
+      <tr><td>KickOff 算法</td><td>模型</td><td>韩国 38% 小幅占优</td></tr>
+      <tr><td>Dimers / Squawka</td><td>模型聚合</td><td>接近三向均分，Under 3.5 为共识安全垫</td></tr>
+      <tr><td>AI 面板 · Claude</td><td>NYSportsDay 三模型实验</td><td><b>韩国 2.70 是价值价</b>：10模型集成估韩胜真实概率 43-45% vs 市场 37%；Son 冲国家队世界杯射手纪录是动机变量</td></tr>
+      <tr><td>AI 面板 · ChatGPT</td><td>同上</td><td><b>捷克 +0.5 (1.48)</b>：时隔20年回归的队"不会输掉揭幕战"；xG 估 韩1.20 vs 捷0.90</td></tr>
+      <tr><td>AI 面板 · Gemini</td><td>同上</td><td><b>Under 2.5 (1.65)</b>：双方都怕输的开局结构性低分；常见比分 1-0/1-1/0-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率与资金面（三向几乎贴平）</h4>
+    <table>
+      <tr><th>市场</th><th>韩国胜</th><th>平局</th><th>捷克胜</th></tr>
+      <tr><td>bet365</td><td class="kr">2.62</td><td>3.10</td><td class="cz">2.75</td></tr>
+      <tr><td>FanDuel</td><td class="kr">2.65</td><td>3.00</td><td class="cz">2.85</td></tr>
+      <tr><td>Kalshi 预测市场</td><td class="kr">37¢</td><td>31¢</td><td class="cz">34¢</td></tr>
+      <tr><td>Lucky Rebel（06-09）</td><td class="kr">2.70</td><td>3.15</td><td class="cz">2.80</td></tr>
+      <tr><td>oddschecker 临场（06-11）</td><td class="kr">≈2.75（最佳价）</td><td colspan="2">三向仍贴平 · 赛前无单边移动</td></tr>
+    </table>
+    <div class="flag">⚠ <b>一个值得盯的背离</b>：美国主流书商的<b>公众投注资金 69% 押韩国</b>（NYSportsDay 援引 handle 数据），但赔率几乎没向韩国移动（2.62/2.65/2.70 区间稳定）——书商不怕散户单边，意味着<b>平衡盘口的大额资金在捷克/平局一侧</b>。这是本场唯一的"聪明钱 vs 公众钱"信号：散户买 Son 的名气，冷钱买捷克的结构。</div>
+    <div class="note">📌 书商与预测市场互相印证（37/31/34 ≈ 36/30/34），价格层面<b>没有单边移动</b>；舆论焦点都被同日揭幕战吸走，本场社媒声量低。市场留下的真分歧有两个：大小球（专家两派打架），以及上面的"公众押韩 vs 价格不动"背离。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsline.com/insiders/south-korea-vs-czechia-odds-predictions-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine</a> · <a href="https://www.offshoresportsbooks.com/picks/soccer/2026/south-korea-vs-czech-republic-world-cup-group-a-odds-and-picks-june-11/">Eimer — Over 2.5</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/south-korea-vs-czech-republic-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aLfLg0I6etoI/">Racing Post</a> · <a href="https://www.kickoff.co.uk/world-cup-predictions-stats-odds/south-korea-vs-czech-rep/">KickOff 算法</a> · <a href="https://www.dimers.com/bet-hub/swc/schedule/2026_1_kor_cze">Dimers</a> · <a href="https://www.oddsshark.com/soccer/world-cup/south-korea-czech-republic-odds-june-11-2026-2520741">OddsShark</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-south-korea-vs-czech-republic-world-cup-2026/">NYSportsDay — AI三模型+公众投注69%押韩</a></div>
+  </section>
+
+  <!-- 首发与近期表现 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:11px;background:#14321f;border:1px solid #1d4a2a;color:#4ade80;border-radius:6px;padding:2px 8px;font-weight:600;vertical-align:middle">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方）</div>
+    <h4>🇰🇷 韩国 预测首发（3-4-2-1）</h4>
+    <div class="lineup">金承奎; 李韩范 · 金玟哉 · 金太铉; 薛영우 · 金鎭奎 · 黄仁范 · 李泰锡; 李刚仁 · 黄喜灿 · 孙兴慜</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="kr">孙兴慜 Son</td><td>前锋 / LAFC</td><td>队长、史上出场纪录；本季 MLS 8 助攻领跑但未进球；几乎确定的最后一届世界杯 · 身价 €20m</td></tr>
+      <tr><td class="kr">李刚仁 Lee Kang-in</td><td>中场 / PSG</td><td>技术最好；欧冠常规轮换，25/26 受伤病影响出场减少</td></tr>
+      <tr><td class="kr">金玟哉 Kim Min-jae</td><td>中卫 / 拜仁</td><td>后防核心，出球与制空；三后卫体系的定海神针 · 身价 €40m（本组最高）</td></tr>
+      <tr><td class="kr">黄喜灿 Hwang Hee-chan</td><td>边前锋 / 狼队</td><td>逼抢与跑动，提供 Son 之外的另一种威胁</td></tr>
+    </table>
+    <h4>🇨🇿 捷克 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci; Coufal · Soucek · Darida · Jurasek; Provod · Schick · Sulc</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="cz">Patrik Schick</td><td>中锋 / 勒沃库森</td><td>本季 28 场 16 球（近 7 轮 9 球）；国家队 25 球；A组最准终结点之一 · 身价 €27m</td></tr>
+      <tr><td class="cz">Tomas Soucek</td><td>中场 / 西汉姆</td><td>后插上+定位球轰炸，附加赛点球大战稳健命中</td></tr>
+      <tr><td class="cz">Ladislav Krejci</td><td>中卫/队长 / 狼队</td><td>本季出色；两场附加赛均靠定位球头球扳平——攻守两端的定位球威胁</td></tr>
+      <tr><td class="cz">Matej Kovar</td><td>门将 / PSV</td><td>附加赛点球大战连扑，能凭一己之力赢球</td></tr>
+    </table>
+    <div class="note">说明：身价"—"与精确俱乐部赛季数据由生产版 agent 从 Transfermarkt/FotMob 自动补全全部 26 人。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 韩国 · 洪明甫</div>
+        <div class="role">3-4-2-1 · 高压 + 快速反击</div>
+        <ul class="cl">
+          <li>个人天赋驱动：Son/李刚仁/金玟哉/黄喜灿，2002 以来最强阵容。</li>
+          <li>命门：三后卫在转换中边翼卫压上后被打身后，对回敲与传中防守差（奥地利制胜球即如此）。</li>
+          <li>若 Son 不创造，运动战进攻通道极窄（3月 180 分钟运动战零进球）。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fb0e6">🇨🇿 捷克 · Koubek（74岁）</div>
+        <div class="role">4-2-3-1/3-4-2-1 · 紧凑 + 定位球 + Schick</div>
+        <ul class="cl">
+          <li>身份清晰：稳固防守块、定位球（全欧预选最多8球）、Schick 单点终结。</li>
+          <li>新帅仅 2 场执教经验（均点球晋级），本场是第 3 场，磨合是风险。</li>
+          <li>运动战除 Schick 外创造力有限，被盯死时进攻容易枯竭。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣（06-08）</b>：本场主裁为<b>埃及裁判 Amin Omar（Amin Mohamed Omar，41岁，职业律师出身，韩媒称"埃及律师"）</b>。裁判组以埃及班底为主：助理 Abu El-Gal / Hosam Taha（均埃及），VAR Mahmoud A. Suga（埃及），AVAR Joe Dickerson（美国），第四官员来自哥斯达黎加。<b>关键背景：这是他成年世界杯的执法首秀</b>（此前 FIFA 大赛经历仅 2019 U-17 世界杯）。</div>
+
+    <h4>执法严厉度（数据画像）</h4>
+    <div class="keyrow" style="grid-template-columns:repeat(3,1fr)">
+      <div class="key"><div class="k">黄牌 / 场（生涯 115-153 场）</div><div class="v" style="color:var(--warn)">≈3.9</div><div class="k">红牌 0.20/场</div></div>
+      <div class="key"><div class="k">判点</div><div class="v" style="color:var(--warn)">42 次</div><div class="k">生涯追踪样本</div></div>
+      <div class="key"><div class="k">国际大赛（8 届）</div><div class="v" style="color:var(--warn)">20 犯规/场</div><div class="k">合计 24 黄 3 红</div></div>
+    </div>
+    <table>
+      <tr><th>维度</th><th>数据 / 事实</th><th>对本场的含义</th></tr>
+      <tr><td>总体画像</td><td>≈3.9 黄/场、0.20 红/场——比揭幕战的 Sampaio（≈5.0 黄/场）<b>温和一档</b></td><td>整体哨风不算碎，利于比赛流畅；但远非"放任型"</td></tr>
+      <tr><td>大场次模式</td><td>非洲杯/埃及关键战曾单场 <b>6-8 黄 + 红牌</b>——火药味越浓出牌越狠</td><td>本场是典型的"出线分水岭"高压局：若早期对抗升级，他有大开杀戒的前科</td></tr>
+      <tr><td>顺风局模式</td><td>U-17 世界杯执法显示<b>看局势灵活调节</b>：胶着局 5 黄，一边倒/流畅局仅 1-2 张</td><td>"保流畅、但对危险犯规果断出牌"——韩国防线背身犯规、捷克高空冲撞都在他的红线清单上</td></tr>
+      <tr><td>对两队历史</td><td><b>零样本</b>：从未执法过韩国或捷克任何级别比赛；成年世界杯首秀</td><td>无队伍倾向可言；首秀裁判通常<b>开场偏严"立威"、按规则手册吹</b>，开场 15 分钟的第一次战术犯规处理是当天尺度的信号弹</td></tr>
+      <tr><td>本届环境信号</td><td>几小时前的揭幕战（Sampaio 执法）终场<b>连出 3 红牌</b>，世界杯 20 年首见；叠加升级版半自动越位</td><td>本届整体执法环境偏严的首个实证——两队都要把"累积黄牌"成本计入犯规决策（小组赛 2 黄即停赛下一场）</td></tr>
+    </table>
+    <div class="flag">⚠ <b>对位影响</b>：他 42 次生涯判点说明<b>不惧吹禁区内犯规</b>——捷克定位球轰炸时 Soucek/Krejci 的拉拽、韩国回防时金玟哉的对抗，都是潜在点球争议点；半自动越位则让 Schick 的抢点临界越位无所遁形。对韩国的特别提醒（韩媒已在重点分析他）：均势局里情绪管理 = 战术资源，"仅队长可沟通"新规下李刚仁这类技术型球员吃无谓黄牌的代价被放大。</div>
+    <div class="src" style="margin-top:8px">来源：<a href="https://www.statshub.com/referee/omar-amin-mohamed/787203">StatsHub — 生涯判罚数据</a> · <a href="https://corner-stats.com/amin-omar/egypt/referee/4405">Corner-Stats — 黄红牌/点球</a> · <a href="https://www.footymetrics.com/referees/33272-amin-mohamed-omar">FootyMetrics</a> · <a href="https://www.starnewskorea.com/en/sports/2026/06/09/2026060912152045331">StarNews（韩）— 裁判组/国际大赛画像/"埃及律师"</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico">ESPN — 揭幕战 3 红牌</a></div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>仅队长可与裁判沟通</b>：均势对决情绪易上头，纪律影响很大。</li>
+      <li><b>门将 8 秒持球、掷球/球门球 5 秒倒计时</b>：压缩拖延，利于想控场的一方。</li>
+      <li><b>升级版半自动越位</b>：捷克定位球与 Schick 抢点的临界越位会判得更快更准。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· B级 战术分析 · 浏览器抓取</small></div>"6/11 的韩 vs 捷是决定小组第二的比赛。韩国若取胜则掌握主动；捷克若取胜，韩国出线之路骤难。这是整组的支点之战。"</div>
+    <div class="insight"><div class="who">Bundesliga / Opta <small>· B级 数据</small></div>Schick 近 7 轮德甲打入 9 球（含对莱比锡帽子戏法）；捷克预选 8 个定位球进球为全欧最多——两条数据共同抬高捷克的进球期望。</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· 官方 · Wenger 领衔</small></div>赛后逐场权威复盘，作为下一场预测输入。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：均势，平局或小胜均常见；若分胜负，捷克的定位球效率与 Schick 状态略占终结力优势，韩国的胜点在 Son 的反击爆发。</li>
+      <li><b>关键先生</b>：Schick（捷/终结）、Son（韩/反击与组织）、Krejci（捷/定位球攻防两端）。</li>
+      <li><b>胜负手</b>：定位球（捷优）+ 韩国三后卫转换防守是否被打穿。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 预测首发为分析源推测，以赛前1小时官方为准（韩国阵型 3-4-2-1 与 4-2-3-1 两种说法并存，视洪明甫排兵）；② 李刚仁/金玟哉伤情与状态临场复核；③ 当值主裁已确认 <b>Amin Mohamed（埃及）</b>；④ 本场精确 1X2 赔率开赛前补全（当前以小组出线概率近似）。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — A组战术/首发/赔率（浏览器抓取）</a><br>
+      • <a href="https://www.starnewskorea.com/en/sports/2026/05/18/2026051714120068002">StarNews — 韩国全队身价 €136.75m</a> · <a href="https://www.transfermarkt.us/tschechien/marktwertanalyse/verein/3445">Transfermarkt — 捷克 €115.90m</a><br>
+      • <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393">Bundesliga — Schick 状态</a> · <a href="https://www.mlssoccer.com/news/lafc-son-heung-min-headlines-south-korea-2026-world-cup-roster">MLSSoccer — Son LAFC</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-11 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',KR='#cd2e3a',CZ='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['韩国','捷克'],datasets:[{data:[136.75,115.90],backgroundColor:[KR,CZ],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('formChart'),{type:'bar',
+ data:{labels:['进球','助攻'],datasets:[
+  {label:'Schick(德甲25/26)',data:[16,3],backgroundColor:CZ,borderRadius:5},
+  {label:'Son(MLS2026)',data:[0,8],backgroundColor:KR,borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'俱乐部本季'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['墨西哥','捷克','韩国','南非'],datasets:[{data:[52,24,22,8],backgroundColor:['#16a34a',CZ,KR,'#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'夺组隐含概率 %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'韩国',data:[6,6.5,7,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR},
+   {label:'捷克',data:[7.5,7,6.5,9,7,6.5],borderColor:CZ,backgroundColor:CZ+'33',pointBackgroundColor:CZ}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>
