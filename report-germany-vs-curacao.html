@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 德国 vs 库拉索 · 2026世界杯 E组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-germany-vs-curacao.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-germany-vs-curacao.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-germany-vs-curacao.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-germany-vs-curacao.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-germany-vs-curacao.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-germany-vs-curacao.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-germany-vs-curacao.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-germany-vs-curacao.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · E组首轮 · 四星德国 vs 史上最小参赛国</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 已完赛 · 德国 7-1 库拉索</span>
+  <h1>德国 vs 库拉索</h1>
+  <div class="meta">2026年6月14日 · 休斯顿 NRG Stadium · 13:00 ET · E组（同组：科特迪瓦、厄瓜多尔）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇩🇪 德国</div><div class="rk">FIFA #9 · 4次世界杯冠军 · 近9场全胜</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇼 库拉索</div><div class="rk">FIFA ≈#82 · 世界杯处子秀 · 史上最小参赛国（人口约15.6万）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-15） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 德国 7-1 库拉索 · 06-14</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">德国从第 6 分钟 Nmecha 与 Wirtz 二过一破门起便单向碾压，库拉索 Comenencia 第 21 分钟一度扳成 1-1（全场唯一亮点），但 Schlotterbeck（38'）、Havertz 半场补时点球（45+5'）已将分差拉开；下半场 Musiala（47'）、Brown（68'）、Undav（78'）、Havertz 梅开二度（88'）让比分滑向 7-1。<b>德国凭此役以 239 球超越巴西（238），成为世界杯历史总进球最多的球队。</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 6' Nmecha · 21' Comenencia(库) · 38' Schlotterbeck · 45+5' Havertz(点) · 47' Musiala · 68' Brown · 78' Undav · 88' Havertz</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta）</h4>
+    <table>
+      <tr><th>指标</th><th>🇩🇪 德国</th><th>🇨🇼 库拉索</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>65%</b></td><td>35%</td><td>低位块没换来控球补偿，德国完全掌控节奏</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>3.91</b></td><td>0.40</td><td>7 球 vs 3.91 xG：终结效率远超模型，半数进球质量偏高（如 Nmecha/Musiala 的远射）</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>26 / 12</b></td><td>8 / 2</td><td>德国 12 脚射正进 7 球，射正转化率惊人；库拉索 8 射多为低质远射</td></tr>
+      <tr><td class="ht">失球质量</td><td colspan="2">库拉索唯一进球（Comenencia）来自德国后场短暂松懈</td><td>德国零封纪录中断——非战术崩盘，而是大胜下的注意力滑坡</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/germany-vs-curacao-stats-world-cup-2026">Opta Analyst — Germany 7-1 Curaçao Stats</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760422">ESPN 战报</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">破密集靠的是个人质量而非阵地渗透</div>德国 7 球里有多个来自二过一配合后的远射与禁区外质量射门（Nmecha、Musiala、Schlotterbeck），而非传统的边路传中。<b>说明德国这套 Wirtz-Musiala-Sané 中前场对低位块的破解方式是"用技术个体直接解题"</b>——遇到下一档的有组织防线（如科特迪瓦），这种打法是否仍高效是关键看点。</div>
+    <div class="insight"><div class="who">Nmecha 顶替 Goretzka 的双后腰成立</div>赛前对账质疑"少了 Goretzka 后插上射门威胁"，实战中 Nmecha 不仅完成处子球，还提供了更强的出球与覆盖。<b>说明 Nagelsmann 的中场年轻化在面对弱旅时运转顺畅</b>，但抗压样本仍待强敌检验。</div>
+    <div class="insight"><div class="who">Havertz 是这套体系的禁区终结答案</div>梅开二度（含点球），延续其作为伪九/前锋摇摆点的稳定输出。<b>说明德国不缺中前场创造，缺的历史短板（稳定射手）本场被 Havertz 填上</b>，火力深度（Undav 替补建功）进一步背书。</div>
+    <div class="insight"><div class="who">零封中断是注意力问题，不是结构问题</div>失球发生在 1-0 领先、对手几乎无威胁的阶段。<b>说明德国后防在"垃圾时间心态"下会松懈</b>——对手若有反击爆点（科特迪瓦的 Amad/Adingra），这种松懈会被惩罚。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">德国胜（隐含 ≈93%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>7-1 完胜，毫无悬念</td></tr>
+      <tr><td class="ht">基准比分 德国 4-0</td><td style="color:var(--warn)"><b>~ 偏差</b></td><td>方向对，但进球数远超预期（7 球），低估了德国火力与库拉索防线的脆弱</td></tr>
+      <tr><td class="ht">大 4.5 球（≈1.83）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>8 球轻松打穿大盘，盘口张力（"能进几个"）判断正确</td></tr>
+      <tr><td class="ht">市场过热 2/5（情绪干净）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>胜负无分歧、价值在进球数线上的判读成立</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f08a82">🇩🇪 德国 · 下一场 vs 科特迪瓦（6/20 多伦多）</h4>
+        <ul class="watch">
+          <li><b>火力状态拉满</b>：Havertz、Musiala、Nmecha 均建功并满血，进攻信心爆棚——但对手从库拉索升级为零封型铁桶。</li>
+          <li><b>破密集方式将被检验</b>：本场靠个人质量解题，面对科特迪瓦 13 球 0 失的有组织低位块，能否复制是 E 组头名之争的核心。</li>
+          <li><b>后防松懈隐患</b>：领先后注意力滑坡的问题，遇上 Amad（绝杀者）+ Adingra 的反击爆点须警惕。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇨🇼 库拉索 · 下一场 vs 厄瓜多尔（6/20 堪萨斯城）</h4>
+        <ul class="watch">
+          <li><b>防线被打穿 7 球</b>：4-4-2 双前锋未能护住防线——对厄瓜多尔（南美最难攻破之一）大概率回收更深、专注零失球或控失球。</li>
+          <li><b>Kastaneer 仍坐板凳的疑问</b>：预选射手王本场未首发，球队进攻乏力，下一场反击端是否启用值得关注。</li>
+          <li><b>抢分窗口</b>：对厄瓜多尔的低比分对话才是库拉索现实的拿分机会，须放弃对攻、压实结构。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>纯量级碾压</b>的比赛：四星德国（FIFA #9、近9场全胜、近4场正式比赛零封）对阵<b>史上最小参赛国</b>库拉索（人口约15.6万、世界杯处子秀、CONCACAF预选不败）。盘口几乎没有悬念——德国胜赔 <b>1.05</b>（去水隐含 ≈93%），库拉索胜赔高达 <b>101.00</b>（≈2%），平局 20.00（≈5%）。真正有看点的不是胜负，而是<b>进球总数市场</b>：大4.5球 ≈1.83、小4.5球 ≈1.80，几乎五五开。预测共识普遍指向 <b>德国 4-0 / 5-0</b>。库拉索由名帅 Dick Advocaat 带队、Bacuna 兄弟领衔，目标是体面、是历史、是别被打穿；德国则把这当成调试火力、积累净胜球的开胃菜。基准剧本：<b>德国 4-0 大胜</b>，比赛的全部张力压在"能进几个"上。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">德国隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈93%</div></div>
+      <div class="key"><div class="k">德国连胜场次</div><div class="v">9场</div></div>
+      <div class="key"><div class="k">库拉索人口</div><div class="v" style="color:#f08a82">15.6万</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>进球总数才是盘口</b>：胜负被压到 1.05，资金与分歧全在大/小 4.5 球（≈1.83 / ≈1.80）这条线上。</li>
+      <li><b>Neuer 的回归</b>：40 岁的 Neuer 带着小腿伤情预计回归首发——德国零封纪录是否延续看他与后防协同。</li>
+      <li><b>德国的火力轮换</b>：Nagelsmann 是否轮换、何时换上替补，直接影响后段比分膨胀速度。</li>
+      <li><b>库拉索的防线韧性</b>：3月曾 0-5 负澳大利亚——能否避免再次被打穿，是衡量"体面"的标尺。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">德国 · 门将位置 <span style="color:var(--mut);font-weight:400">· 06-12 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">40 岁的 <b>Manuel Neuer</b> 预计回归首发，此前有小腿伤；Kimmich 任队长</div>
+      <p style="font-size:13.5px">据 ESPN、Sports Mole 预测首发，Neuer 将在世界杯揭幕战重回门将位置，尽管 40 岁的他近期带有小腿伤。Kimmich 戴队长袖标，Wirtz、Musiala、Havertz、Sané 构成进攻核心，后防由 Rüdiger、Tah 坐镇。<span style="color:var(--warn)">[Neuer 是否确定首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：德国近4场正式比赛零封，门将与后防的协同是这条纪录的基石。面对库拉索这种几乎不会有威胁射门的对手，门将的实战意义不大，但 Neuer 能否无伤完赛、是否需要保护小腿，会影响 Nagelsmann 在后段大胜局面下的换人取舍。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49035928/germany-vs-curacao-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 预测首发/门将</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/neuers-return-how-germany-could-line-up-against-curacao_599049.html" style="color:var(--accent)">Sports Mole — Neuer 回归</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">库拉索 · 阵容核心 <span style="color:var(--mut);font-weight:400">· 06-12 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">前阿斯顿维拉中场 <b>Leandro Bacuna</b> 预计任队长；<b>Bacuna 兄弟同时首发</b>，门将 Eloy Room、预选射手王 Kastaneer 领衔</div>
+      <p style="font-size:13.5px">媒体预测库拉索摆 4-2-3-1：Room；Brenet、Gaari、Sambo、Floranus；Leandro Bacuna、Juninho Bacuna；Gorre、Roemeratoe、Kastaneer；Margaritha。阵容骨架由具备欧洲及英格兰联赛经验的归化/侨民球员组成——库拉索的球员库主要来自荷兰青训体系。<span style="color:var(--warn)">[预测首发为分析源推测，非官方 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：库拉索唯一现实目标是组织一条尽量密集的低位防线、限制失球数。Bacuna 兄弟的经验是中场抗压的关键；Kastaneer 是反击端唯一能制造惊喜的点。若防线被早早打穿（如对澳大利亚的 0-5），比分可能滑向 5-0/6-0——这直接对接大/小 4.5 球市场。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/bacuna-brothers-to-start-how-curacao-could-line-up-against-germany_599048.html" style="color:var(--accent)">Sports Mole — 库拉索预测首发</a> · <a href="https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance" style="color:var(--accent)">Sky Sports — 库拉索背景</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">摩洛哥裁判 <b>Jalal Jiyed</b> 执法——自 2002 年以来首位执法世界杯的摩洛哥主裁</div>
+      <p style="font-size:13.5px">FIFA 任命 1987 年出生、2019 年起进入 FIFA 国际级名单的摩洛哥人 <b>Jalal Jiyed</b>（亦拼作 Jayed）执法本场。履历包括 2025 年智利 U20 世界杯、2025 年非洲杯季军战（埃及 vs 尼日利亚）。他是自 2002 年 Mohamed Guezzaz 之后首位被选为世界杯中央主裁的摩洛哥裁判。出牌/判点的量化数据未检索到（<b>无样本，如实说明</b>）；与德国、库拉索均无可查执法历史。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在一场量级极端不对称的比赛里，裁判对结果几乎没有影响——德国不需要任何边际帮助。唯一可能的裁判面价值是牌数/点球类盘口：若 Jiyed 对库拉索后卫的拉拽犯规判罚从严，点球与红黄牌概率会略升。但缺乏量化样本意味着裁判面在本场基本没有可下注的依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.moroccoworldnews.com/2026/06/318415/world-cup-2026-moroccan-referee-jalal-jiyed-to-officiate-germany-vs-curacao/" style="color:var(--accent)">Morocco World News — Jiyed 官宣</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed" style="color:var(--accent)">Wikipedia — Jalal Jayed</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读（lineup-watch 写入 06-14 T-45） ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 已官宣 · ESPN + khelnow 双源一致</span></h2>
+    <div class="sub">两队官方 XI 已确认（赛前约 T-60 公布）。德国满血、零轮换；库拉索变阵 4-4-2。下方为官方名单 vs 站内预测的逐条对照与解读。</div>
+
+    <div class="twocol">
+      <div>
+        <h4>🇩🇪 德国 官方 XI（4-2-3-1）<span style="color:var(--good);font-size:12px">✅ 官方确认</span></h4>
+        <div class="lineup">Neuer; Kimmich(C) · Tah · Schlotterbeck · Brown; Pavlovic · Nmecha; Sané · Musiala · Wirtz; Havertz</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席武器：Goretzka（后插上射门）、Rüdiger（中卫经验）、Raum（左路）等——主力尽出，板凳深度充足。</div>
+      </div>
+      <div>
+        <h4>🇨🇼 库拉索 官方 XI（4-4-2）<span style="color:var(--good);font-size:12px">✅ 官方确认</span></h4>
+        <div class="lineup">Room; Floranus · Obispo · Bazoer · Fonville; J. Bacuna · Comenencia · L. Bacuna(C) · Chong; Locadia · Hansen</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席武器：<b style="color:#f0cf6b">Kastaneer（预选射手王，意外坐板凳）</b>、Gorre、Sambo——反击爆点被压到替补席。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">官方 vs 站内预测 · 逐条对照</h4>
+    <table>
+      <tr><th>变化</th><th>站内预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">德 · 中卫</td><td>Rüdiger</td><td><b>Schlotterbeck</b></td><td>左脚出球型中卫，利于传导打穿低位块；防守端对库拉索无差别</td></tr>
+      <tr><td class="ht">德 · 左后卫</td><td>Raum</td><td><b>Brown</b></td><td>法兰克福年轻左卫顶替，下底/边路产出相关（联动角球面）</td></tr>
+      <tr><td class="ht">德 · 后腰搭档</td><td>Goretzka</td><td><b>Nmecha</b></td><td>双后腰更年轻灵活、抗压出球；Goretzka 的后插上射门威胁减弱</td></tr>
+      <tr><td class="ht">德 · 其余 8 人</td><td colspan="2">一致（Neuer/Kimmich/Tah/Pavlovic/Sané/Musiala/Wirtz/Havertz）</td><td>主力尽出、零轮换——计划 A、火力拉满（外部共识 Sports Mole/Yahoo 已 11/11 命中）</td></tr>
+      <tr><td class="sc">库 · 阵型</td><td>4-2-3-1 单箭头</td><td><b>4-4-2 双前锋</b></td><td>Advocaat 保留两名前锋，不是纯摆大巴——留出反击人手</td></tr>
+      <tr><td class="sc">库 · 防线核心</td><td>Gaari / Sambo / Brenet</td><td><b>Obispo / Bazoer / Fonville</b></td><td>前阿贾克斯的 Bazoer（后腰改中卫）把欧洲经验放进防线中枢</td></tr>
+      <tr><td class="sc">库 · 锋线</td><td>Margaritha + Kastaneer</td><td><b>Locadia + Hansen</b></td><td>经验射手 Locadia 搭速度型 Hansen；预选射手王 Kastaneer 落选首发</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（官方阵容信号）</h4>
+    <div class="insight"><div class="who">阵型信号 · 德国中场 <small>· Pavlovic + Nmecha</small></div>Nagelsmann 用更年轻、更抗压的 Nmecha 取代 Goretzka 组双后腰，牺牲一部分后插上射门，换取出球与覆盖。对库拉索这种低位块，控球与渗透优先级高于禁区到达——<b>速览结论（德国 4-0 基准）维持</b>。</div>
+    <div class="insight"><div class="who">满血出战 · 零轮换 <small>· 德国</small></div>Neuer、Wirtz、Musiala、Sané、Havertz 全部首发，Nagelsmann 没有任何保留——开场即火力全开，支持"早进球 / 总分偏大"读数（至少在大比分领先、降速之前）。</div>
+    <div class="insight"><div class="who">库拉索没摆纯大巴 <small>· 4-4-2 开放结构</small></div>官方是 Locadia + Hansen 双前锋，而非预测的单箭头死守。留两名前锋＝防守人数减少、保留反击人手：一方面给德国更多空间（利多大球），另一方面保留了零星反击的微弱威胁。</div>
+    <div class="insight"><div class="who">Bazoer 坐镇 / Kastaneer 坐板凳 <small>· Advocaat 取舍</small></div>把欧洲经验（Bazoer）放进防线核心、把预选射手王（Kastaneer）放上替补席——Advocaat 优先防守结构与经验，库拉索的反击爆点被弱化。</div>
+    <div class="insight"><div class="who">速览结论 <small>· 是否修正</small></div><b>维持</b>"德国 4-0 基准、5-0 上行"。库拉索双前锋的开放结构若被早早打穿，5-0 上行概率略增；总分 4.5 线仍是唯一有信息含量的市场，官方阵容（满血德国 + 开放库拉索）在解读上<b>边际偏向大球</b>一侧。</div>
+
+    <h4 style="margin-top:18px">市场反应（首发公布前后）</h4>
+    <ul class="cl">
+      <li><b>1X2 无异动</b>：德胜维持 <b>1.05</b>、平 20.00、库胜 101.00（DECIMAL）——满血德国 XI 完全符合市场预期，首发公布未触发盘口移动。</li>
+      <li><b>总分</b>：大 / 小 4.5 球维持 ≈<b>1.83</b> / ≈<b>1.80</b>。官方阵容在解读上边际偏向大球，但公开盘口未见显著异动。</li>
+      <li style="color:var(--mut)">仅作事实陈述，非投注建议。</li>
+    </ul>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://www.espn.com/soccer/match/_/gameId/760422/curacao-germany">ESPN — 比赛页官方阵容（赛前实时）</a> · <a href="https://khelnow.com/football/world-football-curacao-lineup-vs-germany-fifa-world-cup-2026-clash">Khel Now — 库拉索官方首发</a> · 德国官方 XI 与 <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-curacao-prediction-team-news-lineups_599044.html">Sports Mole</a> / <a href="https://uk.sports.yahoo.com/news/germany-xi-vs-curacao-confirmed-122125951.html">Yahoo</a> 预测一致佐证（双源确认）。</div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · E组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 4.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>E 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇩🇪 德国</th><th>🇨🇼 库拉索</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#9</td><td class="sc">≈#82</td></tr>
+      <tr><td>世界杯史</td><td class="ht">4 次冠军（1954/74/90/2014）</td><td class="sc">史上首次参赛（处子秀）</td></tr>
+      <tr><td>近期战绩</td><td class="ht">近 9 场全胜；近 4 场正式比赛零封</td><td class="sc">CONCACAF 预选不败晋级；3月 0-5 负澳大利亚</td></tr>
+      <tr><td>主教练</td><td class="ht">Julian Nagelsmann</td><td class="sc">Dick Advocaat（荷兰名帅）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.05（隐含≈93%）</td><td class="sc">胜 101.00（≈2%）· 平 20.00（≈5%）</td></tr>
+      <tr><td>大 / 小 4.5 球</td><td colspan="2" class="sc">大 4.5 ≈1.83 / 小 4.5 ≈1.80 —— 市场画像="德国大胜，进球数才是悬念"</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">史上首次交手</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈93/5/2）。这是本届最不对称的对位之一：德国身价、深度、经验全面碾压。市场的全部分歧不在"谁赢"，而在"赢几个"——大小 4.5 球几乎对半，意味着市场认为 4-0 与 5-0 同样可能。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">胜负冷、总分热：结果毫无悬念，资金与讨论全挤进进球数市场</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识极强、无情绪溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">几乎没有情绪溢价：胜负被压到 1.05，没有"故事流量"推动单边异动。唯一活跃的市场是<b>大/小 4.5 球</b>——这里才是分歧和资金所在。整体而言是一场"过热度低、但总分市场有真实价值分歧"的比赛。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：德国胜 全部 · 库拉索 0 · 平 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>德国 4-0</b></td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>德国大胜；大球倾向</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>德国胜、低风险</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>德国胜 + <b>倾向大 4.5 球</b></td></tr>
+      <tr><td>SportsCasting 超算</td><td>模型</td><td>德国压倒性胜率；一模型给"4球以上"概率 56%（→小 4.5 略占优 @1.73）</td></tr>
+      <tr><td>AI 面板 · ChatGPT / Claude / Gemini</td><td>NYSportsDay 三模型</td><td>方向一致看德国；Claude 聚焦总分、选<b>大 4.5 球</b>，91% 共识德国净胜 3+，中枢进球 3.8–4.5</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（其实很低）</b>：0 信源押库拉索、0 信源押平——但这正是"共识极强、无情绪溢价"的表现，不是过热。真正的分歧是大小球：SportsLine/Claude 偏大，部分超算偏小，中枢恰好卡在 4.5 这条线上。换言之，<b>4-0 是基准、5-0 是上行、3-0 是下行</b>——这才是本场唯一有信息含量的口袋。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（胜负盘几乎不动，DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>德国胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>多家综合</td><td class="ht">≈1.05</td><td>极端单边，几无移动空间</td></tr>
+      <tr><td>06-12/13</td><td>主流博彩</td><td class="ht">1.05（约 1/20）</td><td>稳定；库拉索 101.00、平 20.00</td></tr>
+      <tr><td>06-12/13</td><td>大 4.5 球</td><td class="ht">≈1.83</td><td>对应小 4.5 ≈1.80 —— 唯一有双向资金的市场</td></tr>
+    </table>
+    <div class="note">📌 <b>胜负盘没有"钱在移动"可言</b>：1.05 已是地板价，几乎没有变动空间。所有真实的价格发现都发生在<b>总分与让球（亚盘）市场</b>：德国常见让球线在 -3.5 上下（线非赔率，保留原值）。资金的实质博弈是"4-0 还是 5-0"。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：德国约 94%、平约 5%、库拉索约 3%——与博彩去水概率（93/5/2）高度一致，两池之间无温差，说明定价已完全收敛、无情绪偏离。</li>
+      <li><b>Polymarket / DefiRate</b>：本场单独的胜负市场价格与成交量未检得（<b>待核</b>）；总分细分市场亦未见公开深度数据。</li>
+      <li><b>舆论</b>：媒体叙事集中在库拉索的"史上最小参赛国"传奇与德国的火力调试，竞技悬念稀薄；社交讨论量中等，情绪正面但无对抗性，没有推动盘口的力量。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场博彩与预测市场完全收敛（≈93%）、无任何情绪溢价的比赛，过热指数 <b>2/5</b>。胜负毫无价值，唯一有信息含量的是<b>总分 4.5 球</b>这条线——专家偏大、部分模型偏小，中枢卡在 4.5。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-curacao-prediction-team-news-lineups_599044.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/germany-vs-curacao-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aCceV7d7CMtv/">Racing Post</a> · <a href="https://www.sportsline.com/insiders/germany-vs-curacao-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine</a> · <a href="https://www.sportscasting.com/news/supercomputer-germany-vs-curacao-predictions-betting-picks-odds/">SportsCasting 超算</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-germany-vs-curacao-predictions-world-cup-2026/">NYSportsDay AI 面板</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-germany-vs-curacao-06-14-26-world-cup-2026/">Squawka/Kalshi</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/germany-vs-curacao-odds-prediction-061426-217139">Sports Interaction</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:12px;color:var(--good);font-weight:600;border:1px solid #1d4a2a;background:#0e2417;border-radius:6px;padding:2px 8px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🇩🇪 德国 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Neuer; Kimmich(C) · Rüdiger · Tah · Raum; Pavlovic · Goretzka; Wirtz · Musiala · Sané; Havertz</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Florian Wirtz</td><td>中场 / 利物浦</td><td>德国进攻创造力核心；身后空间的最大利用者</td></tr>
+      <tr><td class="ht">Jamal Musiala</td><td>中场 / 拜仁慕尼黑</td><td>盘带突破点，破密集防守的关键</td></tr>
+      <tr><td class="ht">Kai Havertz</td><td>前锋 / 阿森纳</td><td>单箭头终结点，对弱旅的射门效率核心</td></tr>
+      <tr><td class="ht">Joshua Kimmich (C)</td><td>中场/后卫 / 拜仁慕尼黑</td><td>队长；组织与定位球输送的中枢</td></tr>
+    </table>
+    <h4>🇨🇼 库拉索 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Room; Brenet · Gaari · Sambo · Floranus; L. Bacuna · J. Bacuna; Gorre · Roemeratoe · Kastaneer; Margaritha</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Leandro Bacuna (C)</td><td>中场 / 前阿斯顿维拉、卡迪夫、沃特福德</td><td>预计任队长；英格兰联赛经验是中场抗压支柱</td></tr>
+      <tr><td class="sc">Juninho Bacuna</td><td>中场</td><td>Bacuna 兄弟同时首发；中场覆盖与持球出球</td></tr>
+      <tr><td class="sc">Gervane Kastaneer</td><td>前锋/边锋</td><td>预选赛射手王；反击端唯一的惊喜来源</td></tr>
+      <tr><td class="sc">Eloy Room</td><td>门将</td><td>经验丰富的门将；本场预计将面对高强度射门压力</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / ESPN），<b>以赛前官方名单为准</b>。Neuer 是否确定首发、Nagelsmann 是否轮换均待赛前确认（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇩🇪 德国 · Julian Nagelsmann</div>
+        <div class="role">4-2-3-1 高位控球 + 边中结合的快速渗透</div>
+        <ul class="cl">
+          <li>带队近 9 场全胜、近 4 场正式比赛零封——攻守两端都处在上升曲线，揭幕战目标是早进球、控比分、攒净胜球。</li>
+          <li>Wirtz/Musiala/Sané 的三人组负责拆解密集防守；Havertz 做支点。面对低位块，定位球（Kimmich 输送）是重要破局手段。</li>
+          <li>风险（极低）：唯一变量是轮换与受伤——大胜在握后是否提前保护核心、给替补练兵。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇼 库拉索 · Dick Advocaat（荷兰名帅）</div>
+        <div class="role">4-2-3-1 低位密集块 + 零星反击</div>
+        <ul class="cl">
+          <li>经验极其丰富的荷兰老帅，带领史上最小参赛国创造历史——本场目标是组织防线、控制失球、争取体面。</li>
+          <li>剧本：双后腰（Bacuna 兄弟）保护禁区前沿，全队回收，靠 Kastaneer 偶尔反击；力求不被早早打穿。</li>
+          <li>风险：球员个人能力与德国差距悬殊，一旦防线被撕开（参照 3月 0-5 负澳大利亚），比分可能迅速膨胀。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+<section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+  <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+  <div class="sub">德国控球碾压、把库拉索压在半场 → 角球大概率单边倾斜；市场角球总数线 O 10.5（≈2.30），让分隐含德国 -4.5 上下。</div>
+  <h4>① 两队角球画像（打法驱动）</h4>
+  <table><tr><th>维度</th><th>🇩🇪 德国</th><th>🇨🇼 库拉索</th><th>含义</th></tr>
+    <tr><td>场均获得角球</td><td class="ht">≈7–8（强强对话约 6–7，碾压弱旅可冲 9+）<span style="color:var(--warn)">待核</span></td><td class="sc">≈2–3（弱旅、少持球）<span style="color:var(--warn)">待核</span></td><td>德国持球+围攻 → 角球产出显著高于对手</td></tr>
+    <tr><td>场均被迫角球</td><td class="ht">≈2–3（低位被反击有限）</td><td class="sc">≈6–8（长期挨打、解围出底线多）<span style="color:var(--warn)">待核</span></td><td>密集防守频繁解围 → 库拉索"送"出大量角球</td></tr>
+    <tr><td>进攻侧重</td><td class="ht">边中结合：Sané/边后卫下底 + 中路渗透</td><td class="sc">几乎无组织进攻，仅 Kastaneer 零星反击</td><td>德国边路下底是角球主要来源</td></tr>
+    <tr><td>定位球威胁</td><td class="ht">高：Kimmich 输送 + Rüdiger/Tah 高点</td><td class="sc">低：身高/组织均不占优</td><td>角球不仅多，且转化威胁大</td></tr>
+    <tr><td>角球占优倾向</td><td class="ht">压倒性占优（预计 8–10:2–3）</td><td class="sc">明显劣势</td><td>角球差与控球/射门差同向放大</td></tr>
+  </table>
+  <h4>② 实际盘口（角球市场）</h4>
+  <p>角球<b>总数</b>线：<b>大 10.5 球 @ ≈2.30</b>（13/10 折合欧赔，2 dp）；对应小 10.5 球 ≈1.57（<span style="color:var(--warn)">待核</span>，由抽水反推）。角球<b>让分</b>：公开源未给出确切让球线，按打法画像合理推断 <b>德国 -4.5 / -5.5</b>（即德国需净多 5–6 角才赢盘）<span style="color:var(--warn)">待核</span>。来源：FanDuel/Racing Post 角球市场、Tips.GG。</p>
+  <h4>③ 技术面研判（让分 & 大小球）</h4>
+  <div class="insight"><div class="who">让分（角球让球）</div>德国角球占优几乎是确定性事件——围攻一支低位弱旅，8–10:2–3 是常见区间。但 <b>-4.5/-5.5 的让球线已把这种碾压定价进去</b>：德国要赢盘需净多 5–6 角。若库拉索全场摆大巴、频繁解围出底线，库拉索这一侧的角球可能比想象多（被迫角球），反而压缩德国的净角球差——让球盘并非"白送"。</div>
+  <div class="insight"><div class="who">大小球（角球总数）</div>德国围攻会推高总角球数；同时密集防守的库拉索解围出底线也会"贡献"角球，两股力量都指向<b>偏大</b>。但 10.5 是一条偏高的线——若德国早早 3-0 后收力、控球转为横传倒脚而非强攻下底，角球产出会回落。净倾向：温和偏大，但非高确定性，10.5 这条线接近合理定价。</div>
+  <div class="insight"><div class="who">变量与两面性</div>若德国半场前 3-0 领先 → 后段降速、Nagelsmann 轮换 → 下底冲击减少、角球数趋缓（taper）；反之若库拉索死守至终场、德国持续强攻不破门，角球可能堆叠到 12+。轮换、领先时间点、库拉索的解围方式是三大变量。</div>
+  <div class="note">仅供分析参考，非投注建议。来源：<a href="https://sportsbook.fanduel.com/soccer/fifa-world-cup/germany-v-curacao-35035284?tab=corners">FanDuel — 角球市场</a> · <a href="https://tips.gg/article/germany-vs-curacao-betting-odds/">Tips.GG — 角球总数</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/germany-vs-curacao-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aCceV7d7CMtv/">Racing Post — 投注</a></div>
+</section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：摩洛哥 <b>Jalal Jiyed</b>（生于 1987，2019 起 FIFA 国际级；2025 U20 世界杯、2025 非洲杯季军战）——自 2002 年以来首位执法世界杯的摩洛哥中央主裁。出牌/判点量化数据未检得（<b>无样本</b>）；与两队均无执法历史。</div>
+    <div class="flag">⚠ <b>两面看</b>：在如此悬殊的对位里，裁判对胜负几乎零影响——德国不需要任何边际帮助。理论上唯一的裁判面价值在牌数/点球盘：库拉索后卫频繁拉拽可能导致点球或黄牌增加。但<b>缺乏量化样本</b>意味着无法据此判断 Jiyed 的尺度倾向，裁判面在本场基本不构成可操作依据。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：库拉索若想拖延节奏，工具被砍——但在 0-3/0-4 的局面下意义有限。</li>
+      <li><b>仅队长可与裁判沟通</b>：双方队长 Kimmich / Leandro Bacuna 经验都不缺。</li>
+      <li><b>半自动越位</b>：德国持续压上时的越位临界球判得更快、更准——对总分市场略有抑制作用。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">SportsLine 专家 <small>· 美系投注媒体</small></div>"德国的火力足以打进数球"——明确把价值指向<b>大 4.5 球</b>，认为胜负无看点、总分才是真正的市场。</div>
+    <div class="insight"><div class="who">Claude · AI 面板 <small>· NYSportsDay</small></div>聚焦总分，选<b>大 4.5 球</b>；91% 共识德国净胜 3+，中枢进球 3.8–4.5——恰好压在大小球分界线上，说明这条线确实是"五五开"。</div>
+    <div class="insight"><div class="who">综合 · 库拉索侧画像 <small>· 战术信号</small></div>库拉索不是来抢分的——它的历史已经在出线那一刻完成。本场的"胜利"是体面：把失球控制在个位数低端、避免重演 0-5。Bacuna 兄弟的英伦经验与 Advocaat 的防守组织，是"不崩盘"的唯一保障。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：德国 4-0 是基准剧本；5-0 是上行（库拉索早早被打穿），3-0 是下行（库拉索低位块顶住 + 德国轮换收力）。库拉索取分概率可忽略（≈2%）。</li>
+      <li><b>关键先生</b>：Wirtz / Musiala（德/破密集防守）、Havertz（德/终结效率）、L. Bacuna（库/中场抗压）、Room（库/承压门将）。</li>
+      <li><b>胜负手</b>：胜负无悬念；真正的"胜负手"是德国的<b>进球节奏</b>——首球时间、是否半场前破门、Nagelsmann 何时轮换，共同决定最终比分落在 4.5 线哪一侧。</li>
+      <li><b>市场视角</b>：博彩与预测市场完全收敛（≈93%），无情绪溢价，过热指数 2/5。唯一有信息含量的市场是<b>大/小 4.5 球</b>；让球（亚盘）线在德国 -3.5 上下（线非赔率，保留原值）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Neuer 是否确定首发、是否带伤；② Nagelsmann 轮换计划；③ 双方预测首发均为分析源推测；④ Jiyed 量化执法数据缺失（无样本）；⑤ Polymarket/DefiRate 单场价格与成交量未检得；⑥ 库拉索 FIFA 具体排名以 6 月最新榜为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49035928/germany-vs-curacao-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 收看方式/裁判/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-curacao-prediction-team-news-lineups_599044.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/neuers-return-how-germany-could-line-up-against-curacao_599049.html">Sports Mole — 德国首发</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/bacuna-brothers-to-start-how-curacao-could-line-up-against-germany_599048.html">Sports Mole — 库拉索首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/germany-vs-curacao-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aCceV7d7CMtv/">Racing Post — 赔率/投注</a> · <a href="https://www.sportsline.com/insiders/germany-vs-curacao-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-germany-vs-curacao-predictions-world-cup-2026/">NYSportsDay — AI 面板/Kalshi</a> · <a href="https://www.sportscasting.com/news/supercomputer-germany-vs-curacao-predictions-betting-picks-odds/">SportsCasting — 超算</a><br>
+      • <a href="https://www.moroccoworldnews.com/2026/06/318415/world-cup-2026-moroccan-referee-jalal-jiyed-to-officiate-germany-vs-curacao/">Morocco World News — 裁判 Jiyed</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed">Wikipedia — Jalal Jayed</a> · <a href="https://www.skysports.com/football/news/12098/13545528/world-cup-2026-curacao-caribbean-nations-historic-first-appearance">Sky Sports — 库拉索（最小参赛国）</a> · <a href="https://sports.yahoo.com/articles/germany-wins-9th-row-streak-221318663.html">Yahoo — 德国 9 连胜</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-13 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['德国胜','平局','库拉索胜'],datasets:[{data:[93,5,2],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 4.5 球','小 4.5 球'],datasets:[{data:[54,55],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，近五五开）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['德国','厄瓜多尔','科特迪瓦','库拉索'],datasets:[{data:[9,23,49,82],backgroundColor:[HT,'#16a34a','#c1272d',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'德国',data:[8.5,9,9,8,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'库拉索',data:[4,3.5,4,3.5,4,2.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

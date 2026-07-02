@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa do Mundo 2026 · Central de Análise de Jogos</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;
+    --accent:#38bdf8;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--draw:#64748b;--mx:#16a34a;--sa:#e0ad1a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.6;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+  h1{font-size:28px;font-weight:800}h1 .em{color:var(--accent)}
+  .updated{color:var(--mut);font-size:13px}.updated b{color:var(--good)}
+  .lead{color:var(--mut);font-size:14px;margin:8px 0 20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  h2{font-size:17px;margin-bottom:4px}
+  .sub{color:var(--mut);font-size:12.5px;margin-bottom:14px}
+  /* day nav */
+  .days{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:18px}
+  .daytab{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;text-align:center;min-width:80px;transition:.15s}
+  .daytab.active{background:var(--accent);color:#06121c;border-color:var(--accent)}
+  .daytab .d{font-size:11px;font-weight:600;opacity:.8}.daytab .m{font-size:15px;font-weight:800}
+  .dayblock{display:none}.dayblock.active{display:block}
+  /* dashboard match card */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .mc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.15s}
+  .mc:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .mc.live{cursor:pointer}.mc.soon{opacity:.72}
+  .mc .grp{font-size:11px;color:var(--mut);font-weight:700;letter-spacing:.4px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
+  .mc .grp .feat{color:var(--good)}
+  .mc .teams{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+  .mc .tn{font-size:17px;font-weight:800}.mc .tn small{display:block;font-size:11px;color:var(--mut);font-weight:500;margin-top:1px}
+  .mc .tn.r{text-align:right}
+  .mc .vs{font-size:12px;color:var(--mut);font-weight:700}
+  /* prob bar */
+  .prob{margin:4px 0 6px}
+  .pbar{display:flex;height:13px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+  .pbar i{display:block;height:100%}
+  .plab{display:flex;justify-content:space-between;font-size:11px;margin-top:5px;color:var(--mut)}
+  .plab b{color:var(--txt);font-weight:700}
+  .plab .home{color:#4ade80}.plab .away{color:#f0cf6b}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip{font-size:11px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--mut)}
+  .chip b{color:var(--txt)}
+  .chip.xg{color:#7dd3fc}.chip.warnchip{color:#f0cf6b}
+  .mc .go{margin-top:13px;font-size:12.5px;color:var(--accent);font-weight:700}
+  .mc.soon .go{color:var(--mut)}
+  .secttitle{display:flex;align-items:center;gap:9px;margin:6px 0 2px}
+  .secttitle .n{background:var(--accent);color:#06121c;width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:26px}
+  .how p{font-size:13px;color:var(--mut)}.how b{color:var(--good)}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <div class="top">
+    <h1>🏆 <span class="em">Copa do Mundo</span> 2026 · Central de Análise</h1>
+    <div class="updated">Atualizado: <b>2026-06-20</b> · Ontem (19/6) Grupo C/D 2ª rodada — 4 <b>análises pós-jogo publicadas</b> (EUA 2-0 Austrália, classificado · Marrocos 1-0 Escócia, Saibari 2' · Brasil 3-0 Haiti, Haiti primeiro eliminado · Paraguai 1-0 Türkiye, com 10 homens, Türkiye eliminado — <b>três favoritos confirmaram, só a Türkiye falhou como zebra</b>) · Hoje (20/6) Grupo E/F 2ª rodada — 4 <b>páginas de detalhes completas geradas</b> (Países Baixos-Suécia / Alemanha-Costa do Marfim / Equador-Curaçao / Tunísia-Japão) · Amanhã (21/6) Grupo G/H 2ª rodada — 4 <b>prévias publicadas</b> (Espanha-Arábia Saudita / Bélgica-Irã / Uruguai-Cabo Verde / Nova Zelândia-Egito) · 4 idiomas sincronizados.</div>
+  </div>
+  <div class="lead">Cada jogo num relance: probabilidades de vitória · gols esperados · indicadores-chave. Clique no card para ver os detalhes (notícias de última hora, dados, tática, técnicos, arbitragem). &nbsp;<a href="teams.html" style="color:var(--accent);text-decoration:none;font-weight:700">🌍 Base de dados das 48 seleções →</a></div>
+
+  <!-- ===== Resumo do torneio (até agora) ===== -->
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b);margin-top:0;margin-bottom:22px">
+    <div class="secttitle" style="margin-bottom:10px"><span class="n">📊</span><h2>O torneio até agora (11–14 jun · Grupos A–F, 1ª rodada · 12 jogos)</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px 0 14px">
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Jogos</div><div style="font-size:19px;font-weight:800">12</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Total de gols</div><div style="font-size:19px;font-weight:800;color:#7dd3fc">38</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Gols/jogo</div><div style="font-size:19px;font-weight:800">3.17</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Empates</div><div style="font-size:19px;font-weight:800;color:#cbd5e1">4</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Favoritos sem vencer</div><div style="font-size:19px;font-weight:800;color:#f0cf6b">6</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">Vermelhos</div><div style="font-size:19px;font-weight:800;color:#f08a82">3</div></div>
+    </div>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">🆕 <b>Explosão de 19 gols em um só dia (14/6 · 1ª rodada dos Grupos E/F)</b>: 4 jogos com 19 gols (média de 4,75), elevando a média geral de 2,38 de uma vez para <b>3.17</b>. Alemanha 7-1 Curaçao (assumiu a artilharia histórica das Copas com 239, superando o Brasil) e Suécia 5-1 Tunísia (o mito de não sofrer gols da Tunísia nas eliminatórias virou 5 sofridos numa partida) contribuíram com o fogo; a diferença entre fortes e fracos foi cumprida à risca nos Grupos E/F. Mas os <b>favoritos "tropeçaram" de novo duas vezes</b>: a Holanda (47% pré-jogo) foi segurada em 2-2 pelo Japão escalado com rodízio, e o Equador (38%) levou o gol decisivo de Amad aos 90' contra a Costa do Marfim, dando sequência ao enredo de "favoritos não cobrem" do início. O único duelo travado de placar baixo foi CIV-EQU (1-0), confirmando a expectativa de Under.</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">⚽ <b>Gols e resultados</b>: 8 jogos com 19 gols, média de <b>2.38</b> por jogo (um pouco abaixo do patamar de cerca de 2,5 das fases de grupos das duas últimas Copas). O ataque ficou polarizado — EUA 4-1 Paraguai (5 gols) brilhou isolado, Haiti 0-1 Escócia teve só 1 gol, e os outros 6 jogos foram disputas apertadas de 2 a 3 gols. <b>Os 3 empates aconteceram todos em estreias de favoritos/anfitriões</b> (Canadá, Brasil e Suíça foram segurados), e o "tropeço dos gigantes" na largada é o enredo mais marcante.</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">📉 <b>Handicap e zebras (a maior história da rodada)</b>: os favoritos sistematicamente "não cobriram". Nos 8 jogos, os favoritos <b>venceram diretamente apenas 4 vezes</b> (México, Coreia do Sul, EUA e Escócia), foram segurados 3 vezes (Canadá 53%, Brasil 59%, <b>Suíça 73%</b>) e sofreram 1 derrota surpreendente (Türkiye 55%). O handicap (nível -1,5) só foi realmente coberto em <b>dois jogos: México 2-0 e EUA 4-1</b>; mesmo a Escócia (1-0) e a Coreia do Sul (2-1), que venceram, não cobriram o handicap. <b>No dia 13/6, com 4 jogos, só a Escócia venceu entre os favoritos</b> — um verdadeiro "dia de zebra". <b>Conclusão</b>: na largada o mercado precificou a diferença entre fortes e fracos com excesso de confiança, e "apostar no handicap do favorito de olhos fechados" deu errado seguidamente — Suíça segurada pelo Catar e Türkiye derrotada pela Austrália foram os dois alertas mais altos.</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:0">🧑‍⚖️ <b>Tendência da arbitragem</b>: na partida de abertura, Sampaio (Brasil, um dos mais rigorosos do mundo) aplicou <b>3 vermelhos</b> num único jogo, recorde para uma estreia de Copa do Mundo, dando o tom de "rigor + respaldo do VAR" para o início; mas os 7 jogos seguintes <b>voltaram rapidamente ao normal</b> — em geral com poucos cartões e nenhum vermelho, e Tello (Canadá-Polônia) chegou a mostrar apenas 1 amarelo no jogo inteiro, formando um contraste total com Sampaio. <b>O volume de cartões depende muito mais do estilo pessoal do árbitro do que de um critério único do torneio.</b> O VAR foi sempre decisivo: Makkelie (EUA-Paraguai) anulou um cartão errado e marcou uma simulação, e Said Martínez (Catar-Suíça) marcou um pênalti claro. Fora a partida de abertura, não houve grandes polêmicas de arbitragem por enquanto (perfil jogo a jogo logo abaixo em 🧑‍⚖️ Observação da arbitragem).</p>
+    <p style="font-size:12px;color:var(--mut);margin-top:10px;border-top:1px solid var(--line);padding-top:10px">Critério dos dados: a probabilidade de vitória é a probabilidade implícita nas odds pré-jogo (sem a margem); "favoritos sem vencer" = o lado com maior probabilidade implícita pré-jogo não venceu nos 90 minutos. Apenas para fins de análise — não é recomendação de apostas.</p>
+  </div>
+
+  <div class="secttitle"><span class="n">📅</span><h2>Navegue por dia de jogo</h2></div>
+  <div class="sub">Clique na data para alternar; cada card é o dashboard de leitura rápida do jogo</div>
+  <div class="days" id="days"></div>
+
+  <!-- Day 1 -->
+  <div class="dayblock active" data-day="0">
+    <div class="cards">
+
+      <a class="mc live" href="mexico-vs-south-africa.html">
+        <div class="grp"><span>Grupo A · Azteca (Cidade do México) · Encerrado</span><span class="feat">★ Jogo de abertura · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 México<small>Quiñones 9' · Jiménez</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">África do Sul 🇿🇦<small>Noite de três cartões vermelhos</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalação oficial anunciada</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">Final 2-0 · Anfitrião estreia com vitória</span>
+          <span class="chip warnchip">3 vermelhos em um só jogo (África do Sul 2 · México 1)</span>
+          <span class="chip xg">Primeiro gol de Jiménez em Copas · Consenso pré-jogo de "vitória apertada do México" confirmado</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-korea-vs-czechia.html">
+        <div class="grp"><span>Grupo A · Guadalajara (Akron) · Encerrado</span><span>Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇰🇷 Coreia do Sul<small>Hwang In-beom · Oh Hyeon-gyu 80'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 1</div>
+          <div class="tn r">Tchéquia 🇨🇿<small>Krejčí 59'</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">✅ Escalação oficial anunciada</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">Final 2-1 · Virada coreana no 2º tempo</span>
+          <span class="chip xg">Coreia do Sul e México lideram o Grupo A com 3 pontos</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="dayblock" data-day="1">
+    <div class="cards">
+      <a class="mc live" href="report-canada-vs-bosnia.html">
+        <div class="grp"><span>Grupo B · Toronto (BMO Field) · Encerrado</span><span class="feat">★ Estreia do Canadá em casa · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 Canadá<small>FIFA #30 · Anfitrião</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Bósnia 🇧🇦<small>Lukic 21' escanteio</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:53%;background:#d52b1e"></i><i style="width:27%;background:var(--draw)"></i><i style="width:20%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">Pré-jogo Canadá <b>53%</b></span><span>Empate 27%</span><span style="color:#7fa6e6">Bósnia 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 1-1 · errou vitória da casa / acertou Under</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Larin empatou 2 min após entrar (78') · Canadá não furou o ferrolho com 68% de posse</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + pré-jogo →</div>
+      </a>
+      <a class="mc live" href="report-usa-vs-paraguay.html">
+        <div class="grp"><span>Grupo D · Los Angeles (SoFi) · Encerrado</span><span class="feat">★ Estreia dos EUA em casa · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 EUA<small>Balogun ×2 · Reyna</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">Paraguai 🇵🇾<small>Mauricio 73'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:49%;background:#1f4e9c"></i><i style="width:28%;background:var(--draw)"></i><i style="width:23%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">Pré-jogo EUA <b>49%</b></span><span>Empate 28%</span><span style="color:#f08a82">Paraguai 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 4-1 · maior erro de previsão (mercado dava só 49%)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">3-0 no intervalo rompeu o bloco do Paraguai · forma de Balogun confirmada</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + pré-jogo →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="dayblock" data-day="2">
+    <div class="cards">
+
+      <a class="mc live" href="report-brazil-vs-morocco.html">
+        <div class="grp"><span>Grupo C · East Rutherford (MetLife) · Encerrado</span><span class="feat">★ Jogo principal do dia · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 Brasil<small>Vinícius 32'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Marrocos 🇲🇦<small>Saibari 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:59%;background:#16a34a"></i><i style="width:23%;background:var(--draw)"></i><i style="width:18%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#4ade80">Pré-jogo Brasil <b>59%</b></span><span>Empate 23%</span><span style="color:#f08a82">Marrocos 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 1-1 · erro na previsão de vitória da casa</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">"Não aposte em goleada do Brasil" confirmado · Alisson garante empate com dupla defesa no fim</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-qatar-vs-switzerland.html">
+        <div class="grp"><span>Grupo B · Santa Clara (Levi's) · Encerrado</span><span class="feat">★ Primeira grande zebra do torneio · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇶🇦 Catar<small>Khoukhi 90+4'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">Suíça 🇨🇭<small>Embolo 17' (P)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#8a1538"></i><i style="width:17%;background:var(--draw)"></i><i style="width:73%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#e08aa0">Pré-jogo Catar <b>10%</b></span><span>Empate 17%</span><span style="color:#f08a82">Suíça 73%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 1-1 · grande erro de previsão (Suíça 73% não se confirmou)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Suíça com 26 finalizações e 3,24 de xG fez só 1 gol · primeiro ponto da história do Catar em Copas</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-haiti-vs-scotland.html">
+        <div class="grp"><span>Grupo C · Foxborough (Gillette) · Encerrado</span><span class="feat">★ Duplo retorno: 52 anos vs 28 anos · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇭🇹 Haiti<small>15 finalizações, 0 gol</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">Escócia 🏴󠁧󠁢󠁳󠁣󠁴󠁿<small>McGinn 28'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:14%;background:#d21034"></i><i style="width:21%;background:var(--draw)"></i><i style="width:65%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">Pré-jogo Haiti <b>14%</b></span><span>Empate 21%</span><span style="color:#7fa6e6">Escócia 65%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 0-1 · vitória da Escócia confirmada / placar com desvio</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Primeira vitória da Escócia em Copas desde 1990 · líder provisório do Grupo C · xG do Haiti superou mas não converteu</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-australia-vs-turkiye.html">
+        <div class="grp"><span>Grupo D · Vancouver (BC Place · teto fechado) · Encerrado</span><span class="feat">★ Mais uma zebra · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇺 Austrália<small>Irankunda 27' · Metcalfe</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">Turquia 🇹🇷<small>sem Yıldız · 0 gol</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:19%;background:#e0a514"></i><i style="width:26%;background:var(--draw)"></i><i style="width:55%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#f0cf6b">Pré-jogo Austrália <b>19%</b></span><span>Empate 26%</span><span style="color:#f08a82">Turquia 55%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 Encerrado 2-0 · favorito invertido (Turquia 55% tombou)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 Análise disponível</span>
+          <span class="chip xg">Austrália eficiente no contra-ataque + clean sheet · "apostar no handicap do forte" tombou em dois jogos seguidos</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="dayblock" data-day="3">
+    <div class="cards">
+
+      <a class="mc live" href="report-germany-vs-curacao.html">
+        <div class="grp"><span>Grupo E · Houston (NRG) · Encerrado</span><span class="feat">★ Estreia da máquina alemã · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 Alemanha<small>Havertz×2 · Musiala · Undav…</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">7 - 1</div>
+          <div class="tn r">Curaçao 🇨🇼<small>Comenencia 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:93%;background:#c8a951"></i><i style="width:5%;background:var(--draw)"></i><i style="width:2%;background:#003da5"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">Pré-jogo Alemanha <b>93%</b></span><span>Empate 5%</span><span style="color:#7fa6e6">Curaçao 2%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 7-1 · vitória confirmada, gols acima do esperado</span>
+          <span class="chip xg">Over 4.5 confirmado · Alemanha vira maior artilheira da história das Copas (239)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor pré-jogo 2/5 · leitura emocional confirmada</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-netherlands-vs-japan.html">
+        <div class="grp"><span>Grupo F · Dallas (AT&T) · Encerrado</span><span class="feat">★ A previsão mais difícil do dia · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 Holanda<small>Van Dijk 50' · Summerville 64'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 2</div>
+          <div class="tn r">Japão 🇯🇵<small>Nakamura 57' · Kamada 88'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:47%;background:#f36c21"></i><i style="width:27%;background:var(--draw)"></i><i style="width:26%;background:#bc002d"></i></div>
+          <div class="plab"><span style="color:#f3a06a">Pré-jogo Holanda <b>47%</b></span><span>Empate 27%</span><span style="color:#f08a82">Japão 26%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip">🏁 Encerrado 2-2 · Holanda abriu vantagem duas vezes e foi alcançada (desvio na previsão)</span>
+          <span class="chip xg">Japão empatou duas vezes · gol mais tardio de sua história em Copas (88')</span>
+          <span class="chip xg">Direção "poucos gols/empate possível" confirmada · superestimou a finalização da Holanda</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-cotedivoire-vs-ecuador.html">
+        <div class="grp"><span>Grupo E · Filadélfia (Lincoln Fin.) · Encerrado</span><span>Disputa de placar baixo · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇮 Costa do Marfim<small>Amad Diallo 90'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 0</div>
+          <div class="tn r">Equador 🇪🇨<small>Duas traves · invencibilidade de 19 jogos encerrada</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:28%;background:#ff7f00"></i><i style="width:34%;background:var(--draw)"></i><i style="width:38%;background:#ffce00"></i></div>
+          <div class="plab"><span style="color:#ffa64d">Pré-jogo C. Marfim 28%</span><span>Empate 34%</span><span style="color:#f0cf6b">Equador <b>38%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Encerrado 1-0 · Under + vitória por um gol (roteiro confirmado)</span>
+          <span class="chip xg">1v1 pelas pontas acertou: cruzamento de Singo + gol de Amad pelo banco</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor pré-jogo 2/5 · leitura de clima limpo confirmada</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-sweden-vs-tunisia.html">
+        <div class="grp"><span>Grupo F · Monterrey (BBVA) · Encerrado</span><span>Isak+Gyökeres · Fim de jogo</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇪 Suécia<small>Ayari×2 · Isak · Gyökeres · Svanberg</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">5 - 1</div>
+          <div class="tn r">Tunísia 🇹🇳<small>Rekik 43'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:50%;background:#006aa7"></i><i style="width:28%;background:var(--draw)"></i><i style="width:22%;background:#e70013"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">Pré-jogo Suécia <b>50%</b></span><span>Empate 28%</span><span style="color:#f08a82">Tunísia 22%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip">🏁 Encerrado 5-1 · vencedor confirmado, mas "duelo travado de poucos gols" foi grande desvio</span>
+          <span class="chip xg">Mito de não sofrer gols da Tunísia caiu: 5 sofridos numa partida · chute de fora furou o ferrolho</span>
+          <span class="chip xg">Pontos de fogo da Suécia mais distribuídos que o esperado (Ayari/Svanberg)</span>
+        </div>
+        <div class="go">📊 Análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 5 · 6/15 -->
+  <div class="dayblock" data-day="4">
+    <div class="sub" style="margin:0 0 12px">6/15 (segunda) · 1ª rodada dos Grupos G/H, 4 jogos · <b>todos encerrados — os quatro empatados, favoritos como Espanha/Uruguai surpreendidos</b>, análises pós-jogo publicadas (clique no card para ver a análise pós-jogo + acerto da prévia)</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-spain-vs-capeverde.html">
+        <div class="grp"><span>Grupo H · Atlanta (Mercedes-Benz) · 12:00 ET</span><span class="feat">★ Entra o campeão europeu</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇸 Espanha<small>FIFA #2 · favorita ao título</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Cabo Verde 🇨🇻<small>Estreia em Copas</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:83%;background:#c60b1e"></i><i style="width:13%;background:var(--draw)"></i><i style="width:4%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f08a82">Espanha <b>83%</b></span><span>Empate 13%</span><span style="color:#7fa6e6">Cabo Verde 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ Escalações confirmadas</span>
+          <span class="chip">Vitória Espanha <b>1.10</b> · Handicap asiático -2.5</span>
+          <span class="chip xg">🆕 Yamal e Nico Williams podem ser poupados (gestão de lesão na coxa) · a única dúvida é quantos gols</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · Consenso forte, sem prêmio emocional</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 Encerrado 0-0 (errou: vitória Espanha + -2.5 ambos; zebra histórica)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-belgium-vs-egypt.html">
+        <div class="grp"><span>Grupo G · Seattle (Lumen) · 15:00 ET</span><span class="feat">★ Estreia de Salah no seu aniversário</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇪 Bélgica<small>Fim da geração de ouro</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Egito 🇪🇬<small>Salah como referência</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#c8a951"></i><i style="width:25%;background:var(--draw)"></i><i style="width:19%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">Bélgica <b>56%</b></span><span>Empate 25%</span><span style="color:#f08a82">Egito 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ Escalações confirmadas</span>
+          <span class="chip">Vitória Bélgica <b>1.67</b> · Over 2.5 = 2.00</span>
+          <span class="chip xg">🆕 Doku confirmado titular · De Ketelaere falso 9 no lugar de Lukaku · goleiro reserva Shobeir + Trezeguet de fora no Egito</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · Narrativa de duelo de gigantes</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 Encerrado 1-1 (errou: vitória Bélgica e mais de 2.5; assistência de Salah ✓)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-saudiarabia-vs-uruguay.html">
+        <div class="grp"><span>Grupo H · Miami (Hard Rock) · 18:00 ET</span><span>Força sul-americana</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇦 Arábia Saudita<small>Zona asiática · veia de zebra</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Uruguai 🇺🇾<small>FIFA #17 · favorito</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:13%;background:#1a7a3d"></i><i style="width:21%;background:var(--draw)"></i><i style="width:66%;background:#5ba3d9"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Arábia Saudita <b>13%</b></span><span>Empate 21%</span><span style="color:#9cc6ea">Uruguai 66%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#7fd6a0;border-color:#1d4a2a;background:#0f2418">✅ Escalações confirmadas</span>
+          <span class="chip">Vitória Uruguai <b>1.43</b> · linha convergiu ≈66%</span>
+          <span class="chip xg">🆕 Zagueiros do Uruguai Araújo + Giménez ambos em dúvida · janela BTTS · o novo técnico da Arábia tem só 2 meses</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · Movido por lesões, não por hype</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 Encerrado 1-1 (errou: vitória Uruguai; menos ✓, ambos marcam ✓)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-iran-vs-newzealand.html">
+        <div class="grp"><span>Grupo G · Los Angeles (SoFi) · 21:00 ET</span><span>Expectativa de placar baixo</span></div>
+        <div class="teams">
+          <div class="tn">🇮🇷 Irã<small>Muralha asiática</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Nova Zelândia 🇳🇿<small>Campeã da Oceania</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:52%;background:#c8102e"></i><i style="width:28%;background:var(--draw)"></i><i style="width:20%;background:#8a8f98"></i></div>
+          <div class="plab"><span style="color:#f08a82">Irã <b>52%</b></span><span>Empate 28%</span><span style="color:#cbd5e1">Nova Zelândia 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória Irã <b>1.83</b> · Under 2.5 = 1.71 (≈58%)</span>
+          <span class="chip xg">🆕 Irã 100% fisicamente + 3 vitórias seguidas em amistosos · NZ sem Thomas · narrativa do Under reforçada</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · Dinheiro no Under impulsiona o sentimento</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 Encerrado 2-2 (errou: o menos virou 4 gols; vitória Irã falhou)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 6 · 6/16 -->
+  <div class="dayblock" data-day="5">
+    <div class="sub" style="margin:0 0 12px">6/16 (terça) · 1ª rodada dos Grupos I/J, 4 jogos · <b>todos encerrados — os quatro favoritos cumpriram</b> (hat-trick de Messi iguala Klose, Haaland/Mbappé com dois gols cada), análises pós-jogo publicadas (clique no card para ver a análise pós-jogo + acerto da prévia)</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-france-vs-senegal.html">
+        <div class="grp"><span>Grupo I · East Rutherford (MetLife) · 15:00 ET</span><span class="feat">★ Entra a França · revanche de 2002</span></div>
+        <div class="teams">
+          <div class="tn">🇫🇷 França<small>uma das favoritas ao título</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Senegal 🇸🇳<small>força africana · Mané/Jackson</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:64%;background:#1f4e9c"></i><i style="width:22%;background:var(--draw)"></i><i style="width:14%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">França <b>64%</b></span><span>Empate 22%</span><span style="color:#7fd6a0">Senegal 14%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas</span>
+          <span class="chip">Vitória França <b>1.44</b> · Empate 4.50 · Senegal 7.50</span>
+          <span class="chip xg">Mbappé a 5 gols do recorde histórico de artilharia da França · a defesa francesa não é impenetrável</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · duelo de gigantes + história de 2002</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 FINAL 3-1 (previsto: vitória da França ✓, Mais de 2.5 ✓; Mbappé com 2 gols quebra o recorde de artilharia da França; gol tardio, sem defesa intacta)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-iraq-vs-norway.html">
+        <div class="grp"><span>Grupo I · Foxborough (Gillette) · 18:00 ET</span><span class="feat">★ Estreia de Haaland em Copas</span></div>
+        <div class="teams">
+          <div class="tn">🇮🇶 Iraque<small>volta após 40 anos</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Noruega 🇳🇴<small>Haaland/Ødegaard · volta após 28 anos</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:7%;background:#1a7a3d"></i><i style="width:14%;background:var(--draw)"></i><i style="width:79%;background:#bc2b2b"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Iraque 7%</span><span>Empate 14%</span><span style="color:#f08a82">Noruega <b>79%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#7fd6a0;border-color:#1d4a2a;background:#0e2218">✅ Escalações confirmadas</span>
+          <span class="chip">Vitória Noruega <b>1.20</b> · Empate 7.00 · Iraque 14.00</span>
+          <span class="chip xg">Haaland 16 gols nas eliminatórias · a intriga está na margem + total de gols, não no resultado</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · dinheiro no handicap/gols de Haaland</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 FINAL 1-4 (previsto: vitória da Noruega ✓, hándicap ✓; dois gols de Haaland na estreia em Copa)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-argentina-vs-algeria.html">
+        <div class="grp"><span>Grupo J · Kansas City (Arrowhead) · 21:00 ET</span><span class="feat">★ Argentina campeã entra em campo · arbitra Marciniak</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇷 Argentina<small>atual campeã · Messi</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Argélia 🇩🇿<small>Mahrez/Amoura</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:68%;background:#75aadb"></i><i style="width:20%;background:var(--draw)"></i><i style="width:12%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#9cc6ea">Argentina <b>68%</b></span><span>Empate 20%</span><span style="color:#7fd6a0">Argélia 12%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória Argentina <b>1.40</b> · Empate 4.50 · Argélia 8.00</span>
+          <span class="chip xg">O manejo da lesão no posterior da coxa de Messi é a grande dúvida · arbitra Marciniak, árbitro da final de 2022</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · narrativa do Messi + estreia da campeã</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 FINAL 3-0 (previsto: vitória da Argentina ✓; hat-trick de Messi iguala Klose no topo dos artilheiros de Copas)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-austria-vs-jordan.html">
+        <div class="grp"><span>Grupo J · Santa Clara (Levi's) · 00:00 ET (17/6)</span><span>Jogo de madrugada · Rangnick</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇹 Áustria<small>Rangnick · invicta nos últimos 5</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Jordânia 🇯🇴<small>estreia em Copas · dois atacantes lesionados</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:71%;background:#c8102e"></i><i style="width:17%;background:var(--draw)"></i><i style="width:12%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f08a82">Áustria <b>71%</b></span><span>Empate 17%</span><span style="color:#7fd6a0">Jordânia 12%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Vitória Áustria <b>1.34</b> · Empate 5.50 · Jordânia 8.00</span>
+          <span class="chip xg">O artilheiro da Jordânia Al-Naimat + Sabra ambos fora por lesão · ataque enfraquecido</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 2.5/5 · consenso forte · dinheiro no handicap da Áustria</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 FINAL 3-1 (previsto: vitória da Áustria ✓, -1.5 ✓; primeiro gol da Jordânia + resistência)</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 7 · 6/17 -->
+  <div class="dayblock" data-day="6">
+    <div class="sub" style="margin:0 0 12px">6/17 (quarta) · 1ª rodada dos Grupos K/L, 4 jogos · odds decimais (aprox. sem a margem) · <b>páginas de detalhes prévias já geradas, clique num card para entrar</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-portugal-vs-drcongo.html">
+        <div class="grp"><span>Grupo K · NRG, Houston · 13:00 ET</span><span class="feat">★ estreia da turnê de despedida de Ronaldo</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇹 Portugal<small>candidata ao título · Ronaldo/B.Fernandes</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Congo (RDC) 🇨🇩<small>zebra africana · volta às Copas</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:77%;background:#1a7a3d"></i><i style="width:17%;background:var(--draw)"></i><i style="width:6%;background:#1f6fb0"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Portugal <b>77%</b></span><span>Empate 17%</span><span style="color:#9cc6ea">Congo RDC 6%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Portugal <b>1.31</b> · Empate 6.00 · Congo RDC 13.00</span>
+          <span class="chip xg">O suspense é a margem e os gols · Congo físico, perigoso no contra-ataque</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ Escalações confirmadas · Dias/Leão poupados, Portugal em 4-2-3-1, Ronaldo titular</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 Calor de mercado 2.5/5 · narrativa Ronaldo vs consenso unilateral</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-england-vs-croatia.html">
+        <div class="grp"><span>Grupo L · AT&T, Arlington · 16:00 ET</span><span class="feat">★ revanche da semifinal de 2018</span></div>
+        <div class="teams">
+          <div class="tn">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra<small>Tuchel · 8 vitórias nas eliminatórias, 0 gol sofrido</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Croácia 🇭🇷<small>fim da era Modrić · meio-campo envelhecido</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#c8102e"></i><i style="width:25%;background:var(--draw)"></i><i style="width:19%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f08a82">Inglaterra <b>56%</b></span><span>Empate 25%</span><span style="color:#7fa6e6">Croácia 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Inglaterra <b>1.73</b> · Empate 3.80 · Croácia 4.75</span>
+          <span class="chip xg">Inglaterra se classificou com 8 vitórias, 22 GP, 0 GC · o meio-campo envelhecido da Croácia é o fator decisivo</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ Escalações confirmadas · Guéhi/Saka no banco, Croácia sem Kovačić num 4-3-3</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · rivalidade de 2018</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-ghana-vs-panama.html">
+        <div class="grp"><span>Grupo L · BMO Field, Toronto · 19:00 ET</span><span>confronto de 6 pontos</span></div>
+        <div class="teams">
+          <div class="tn">🇬🇭 Gana<small>Estrelas Negras · vantagem individual</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Panamá 🇵🇦<small>raça da Concacaf · contra-ataque</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#1a7a3d"></i><i style="width:27%;background:var(--draw)"></i><i style="width:31%;background:#bc2b2b"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Gana <b>42%</b></span><span>Empate 27%</span><span style="color:#f08a82">Panamá 31%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Gana <b>2.00</b> · Empate 3.50 · Panamá 3.60</span>
+          <span class="chip xg">Os dois sabem que é o jogo mais provável de pontuar no grupo · o mercado pende ao menos</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ Escalações confirmadas · Gana muda para 4-4-1-1 (Sulemana titular) · Panamá deixa Carrasquilla/Díaz no banco, Waterman titular</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · preços equilibrados, clima limpo</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-uzbekistan-vs-colombia.html">
+        <div class="grp"><span>Grupo K · Azteca, Cidade do México (2.250m) · 22:00 ET</span><span>madrugada · árbitro A. Taylor</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇿 Uzbequistão<small>estreia em Copas</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Colômbia 🇨🇴<small>vice da Copa América · volta às Copas</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#1a7a3d"></i><i style="width:22%;background:var(--draw)"></i><i style="width:68%;background:#f0c000"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Uzbequistão 10%</span><span>Empate 22%</span><span style="color:#f7e07a">Colômbia <b>68%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Colômbia <b>1.43</b> · Empate 4.50 · Uzbequistão 7.50</span>
+          <span class="chip xg">A altitude do Azteca (2.250m) reduz o ritmo do favorito no fim · o mercado prefere uma vitória controlada da Colômbia</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 Calor de mercado 2.5/5 · consenso Colômbia + variável altitude</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 8 · 6/18 -->
+  <div class="dayblock" data-day="7">
+    <div class="sub" style="margin:0 0 12px">6/18 (quinta) · 2ª rodada dos Grupos A/B, 4 jogos · odds decimais (aprox. sem a margem) · <b>encerrados · análises pós-jogo publicadas, clique num card para ver a análise + o acerto de contas com a prévia</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-czechia-vs-southafrica.html">
+        <div class="grp"><span>Grupo A · Atlanta (Mercedes-Benz) · 12:00 ET</span><span>ambos perderam na 1ª rodada · perder = eliminação</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇿 Tchéquia<small>Sadílek 6'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">África do Sul 🇿🇦<small>Mokoena 83' de pênalti</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:54%;background:#d7141a"></i><i style="width:27%;background:var(--draw)"></i><i style="width:19%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f08a82">Tchéquia <b>54%</b></span><span>Empate 27%</span><span style="color:#7fd6a0">África do Sul 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas · Souček no banco</span>
+          <span class="chip">Tchéquia <b>1.75</b> · Empate 3.80 · África do Sul 5.00</span>
+          <span class="chip xg">🆕 Bolas paradas da Tchéquia as melhores das eliminatórias UEFA (11 gols · 7 de escanteio) · Sithole+Zwane suspensos na África do Sul (trazido do jogo anterior)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · horário frio · consenso sem prêmio</span>
+          <span class="chip warnchip" style="font-weight:700">🏁 Final 1-1 · vitória em casa da Tchéquia (54%) → empate (desvio) · análise disponível</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-switzerland-vs-bosnia.html">
+        <div class="grp"><span>Grupo B · Inglewood (SoFi) · 15:00 ET</span><span>Suíça: 26 finalizações e só 1 gol na 1ª rodada</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇭 Suíça<small>Manzambi dois gols 74'+90'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">Bósnia 🇧🇦<small>Muharemović 80' vermelho · Mahmić 90+3'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:61%;background:#d52b1e"></i><i style="width:24%;background:var(--draw)"></i><i style="width:15%;background:#3b5dab"></i></div>
+          <div class="plab"><span style="color:#f08a82">Suíça <b>61%</b></span><span>Empate 24%</span><span style="color:#9cb3e6">Bósnia 15%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas · Džeko titular · Zakaria no banco</span>
+          <span class="chip">Suíça <b>1.62</b> · Empate 4.21 · Bósnia 6.50</span>
+          <span class="chip xg">🆕 Suíça com 26 finalizações e 3.24 de xG fez só 1 gol de pênalti (dúvida de finalização · trazido do jogo anterior) · bolas paradas da Bósnia como arma de contra-ataque</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · narrativa de valor no menos/empate</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Final 4-1 · vitória em casa da Suíça (61%) cumprida · 4 gols nos últimos 17 minutos</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-canada-vs-qatar.html">
+        <div class="grp"><span>Grupo B · Vancouver (BC Place) · 18:00 ET</span><span>anfitrião · dúvida sobre o retorno de Davies</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 Canadá<small>hat-trick de David · Larin 16'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">6 - 0</div>
+          <div class="tn r">Catar 🇶🇦<small>2 vermelhos · com 9 · Koné lesão grave</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:72%;background:#d52b1e"></i><i style="width:18%;background:var(--draw)"></i><i style="width:10%;background:#8a1538"></i></div>
+          <div class="plab"><span style="color:#f08a82">Canadá <b>72%</b></span><span>Empate 18%</span><span style="color:#d98aa0">Catar 10%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas · Davies fora · Catar com seis atrás, sem Almoez Ali</span>
+          <span class="chip">Canadá <b>1.29</b> · Empate 5.50 · Catar 10.00</span>
+          <span class="chip xg">🆕 Quebrar o bloco baixo é a tarefa-chave do Canadá (1ª rodada: 68% de posse e só 1 gol · trazido do jogo anterior) · Catar com bloco baixo + bolas paradas resistentes</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · movido pela pressão de classificação · BTTS No bem precificado</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Final 6-0 · Canadá (72%) cumpriu · maior goleada de sua história · hat-trick de David</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+      <a class="mc live" href="report-mexico-vs-korea.html">
+        <div class="grp"><span>Grupo A · Guadalajara (Akron) · 21:00 ET</span><span class="feat">★ disputa da liderança em casa · Montes suspenso</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 México<small>Romo 50' · 2 vitórias, classificado antecipadamente</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 0</div>
+          <div class="tn r">Coreia do Sul 🇰🇷<small>58% de posse sem converter · última rodada decisiva</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:48%;background:#1a7a3d"></i><i style="width:29%;background:var(--draw)"></i><i style="width:23%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">México <b>48%</b></span><span>Empate 29%</span><span style="color:#f08a82">Coreia 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">México <b>2.00</b> · Empate 3.30 · Coreia 4.25</span>
+          <span class="chip xg">🆕 César Montes suspenso (vermelho) · Edson Álvarez pode recuar para zagueiro (trazido do jogo anterior) · Coreia com 468 passes, recorde da seleção</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · clima de casa + disputa da liderança</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Final 1-0 · vitória apertada do México (48%) cumprida · Coreia superou no xG mas perdeu</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + prévia →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 9 = 6/19 -->
+  <div class="dayblock" data-day="8">
+    <div class="sub" style="margin:0 0 12px">6/19 (sexta) · 2ª rodada dos Grupos C/D, 4 jogos · odds decimais (aprox. sem a margem) · <b>encerrados · análises pós-jogo publicadas, clique num card para ver a análise + o acerto de contas com a prévia</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-usa-vs-australia.html">
+        <div class="grp"><span>Grupo D · Seattle (Lumen) · 15:00 ET</span><span class="feat">★ anfitrião em busca da liderança</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 EUA<small>Burgess contra 11' · Freeman 43'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">Austrália 🇦🇺<small>0 finalização no alvo · pressão de eliminação</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:60%;background:#1f4e9c"></i><i style="width:22%;background:var(--draw)"></i><i style="width:18%;background:#f5b301"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">Pré-jogo EUA <b>60%</b></span><span>Empate 22%</span><span style="color:#f5d469">Austrália 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218">✅ Escalações confirmadas</span>
+          <span class="chip">EUA <b>1.59</b> · Empate 4.00 · Austrália 5.10</span>
+          <span class="chip xg">🆕 Pulisic fora → Pepi titular, EUA mudam para 3-4-1-2 com dois atacantes · a ponta do contra-ataque da Austrália, Irankunda, surpreende no banco · o resumo se mantém, lógica de menos gols levemente reforçada</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3.5/5 · prêmio de dinheiro do público pelo anfitrião · valor em Austrália +1.5 / menos</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Fim de jogo 2-0 · vitória dos EUA (60%) acertada · Under 2.5 acertado · classificado</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + pré-jogo →</div>
+      </a>
+
+      <a class="mc live" href="report-scotland-vs-morocco.html">
+        <div class="grp"><span>Grupo C · Foxborough (Gillette) · 18:00 ET</span><span>semifinalista de 2022 vs Escócia de bola parada</span></div>
+        <div class="teams">
+          <div class="tn">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escócia<small>0 finalização no alvo · primeiro jogo sem marcar</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">Marrocos 🇲🇦<small>Saibari 2' (gol mais rápido do torneio)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:20%;background:#1f4e9c"></i><i style="width:25%;background:var(--draw)"></i><i style="width:55%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#9cb3e6">Pré-jogo Escócia 20%</span><span>Empate 25%</span><span style="color:#f08a82">Marrocos <b>55%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218">✅ Escalações confirmadas</span>
+          <span class="chip">Marrocos <b>1.70</b> · Empate 3.30 · Escócia 5.00</span>
+          <span class="chip xg">🆕 Marrocos deixa Amrabat + o artilheiro El Kaabi no banco, Brahim Díaz falso 9 (sem 9) · Escócia escala Tierney/Ferguson, Robertson capitão · veredito se mantém, lógica Under/empate reforçada</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · consenso de vitória do Marrocos + menos · o empate é um risco real</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Fim de jogo 0-1 · vitória apertada do Marrocos (55%) acertada · Under acertado · gol relâmpago aos 2' reescreveu o roteiro</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + pré-jogo →</div>
+      </a>
+
+      <a class="mc live" href="report-brazil-vs-haiti.html">
+        <div class="grp"><span>Grupo C · Filadélfia (Lincoln Financial) · 21:00 ET</span><span class="feat">★ grande favorito ao título manda em campo</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 Brasil<small>Cunha 23',36' · Vinícius 45+3'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">3 - 0</div>
+          <div class="tn r">Haiti 🇭🇹<small>primeira seleção eliminada do torneio</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:87%;background:#1a7a3d"></i><i style="width:9%;background:var(--draw)"></i><i style="width:4%;background:#00209f"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">Pré-jogo Brasil <b>87%</b></span><span>Empate 9%</span><span style="color:#9cc6ea">Haiti 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Brasil <b>1.10</b> · Empate 10.00 · Haiti 23.00</span>
+          <span class="chip xg">🆕 A chave está na eficiência para furar o bloqueio / quando abrem o placar (Brasil ineficiente na 1ª rodada, até foi superado em finalizações · trazido do jogo anterior) · a crise de finalização do Haiti, 15 finalizações 0 gols (trazido)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · resultado sem suspense, sem valor · o debate é o handicap -2.5/-3 e o mais</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 Fim de jogo 3-0 · Brasil (87%) acertado, placar 3-0 exato acertado · mas Over 3.5 errado (ficou no menos) · Raphinha lesionado</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + pré-jogo →</div>
+      </a>
+
+      <a class="mc live" href="report-turkiye-vs-paraguay.html">
+        <div class="grp"><span>Grupo D · Santa Clara (Levi's) · 00:00 ET (dia seguinte)</span><span>duelo decisivo de dois times que perderam na 1ª rodada</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇷 Türkiye<small>81% de posse · 32 finalizações e 0 gol · eliminada</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">Paraguai 🇵🇾<small>Galarza 71s · com 10 desde o 1º tempo</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:47%;background:#e30a17"></i><i style="width:28%;background:var(--draw)"></i><i style="width:25%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#f08a82">Pré-jogo Türkiye <b>47%</b></span><span>Empate 28%</span><span style="color:#f0a3a3">Paraguai 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Türkiye <b>1.95</b> · Empate 3.40 · Paraguai 4.00</span>
+          <span class="chip xg">🆕 A "posse sem penetração" da Türkiye diante de um bloco baixo é a tarefa (0-2 vs Austrália · trazido do jogo anterior) · o Paraguai precisa evitar gols cedo (3 sofridos em 45 minutos · trazido)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · duelo decisivo com linha equilibrada · o Under 2.5 tem o maior consenso</span>
+          <span class="chip warnchip" style="font-weight:700">🏁 Fim de jogo 0-1 · vitória em casa da Türkiye (47%) → derrota zebra (ERRO) · vermelho a Almirón 45+3', Paraguai com 10 · Under acertado · Türkiye eliminada, Almirón suspenso</span>
+        </div>
+        <div class="go">📊 Ver análise pós-jogo + pré-jogo →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 10 = 6/20 Grupo E/F 2ª rodada -->
+  <div class="dayblock" data-day="9">
+    <div class="sub" style="margin:0 0 12px">6/20 (sábado) · 2ª rodada dos Grupos E/F, 4 jogos · odds decimais (aprox. sem a margem) · <b>páginas de detalhes completas já geradas, clique num card para entrar</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-netherlands-vs-sweden.html">
+        <div class="grp"><span>Grupo F · Houston (NRG) · 13:00 ET</span><span class="feat">★ Van Dijk vs Isak</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 Países Baixos<small>1ª rodada: 2-2 com o Japão · alcançado duas vezes</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Suécia 🇸🇪<small>1ª rodada: 5-1 sobre a Tunísia</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#e2711d"></i><i style="width:24%;background:var(--draw)"></i><i style="width:20%;background:#2f6fd0"></i></div>
+          <div class="plab"><span style="color:#f0b27a">Países Baixos <b>56%</b></span><span>Empate 24%</span><span style="color:#9cc0ee">Suécia 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Países Baixos <b>1.67</b> · Empate 3.90 · Suécia 5.00</span>
+          <span class="chip xg">🆕 Países Baixos ineficientes na finalização, alcançados duas vezes, 5 jogos sem clean sheet (trazido do jogo anterior) · Suécia marcou de vários jogadores no 5-1, defesa não testada (trazido) · arbitra Michael Oliver (Inglaterra)</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · duelo interno do Liverpool aquece a pauta · linha tranquila</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-germany-vs-cotedivoire.html">
+        <div class="grp"><span>Grupo E · Toronto (BMO) · 16:00 ET</span><span class="feat">★ vencedor garante a classificação</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 Alemanha<small>1ª rodada: 7-1 sobre Curaçao</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Costa do Marfim 🇨🇮<small>Amad 90' decisivo sobre o Equador</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:61%;background:#9aa0a6"></i><i style="width:22%;background:var(--draw)"></i><i style="width:17%;background:#f47b20"></i></div>
+          <div class="plab"><span style="color:#cfd3d8">Alemanha <b>61%</b></span><span>Empate 22%</span><span style="color:#f5b07a">C. Marfim 17%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Alemanha <b>1.55</b> · Empate 4.20 · C. Marfim 5.75</span>
+          <span class="chip xg">🆕 Alemanha ofensiva forte mas 7 jogos sem clean sheet, defesa com brechas (trazido do jogo anterior) · resiliência da Costa do Marfim, clean sheet + gol decisivo (trazido) · supercomputador dá 30% à Costa do Marfim, acima dos 16% da linha (alerta de armadilha de valor) · arbitra Benítez Mareco (Paraguai)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · duelo de fortes, precificação racional, sem prêmio emocional</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ Escalações confirmadas · Alemanha mantém o XI do 7-1 (Brown titular), Costa do Marfim muda para um 4-3-3 com trio de meio (o jovem Oulai titular), N'Dicka fora</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-ecuador-vs-curacao.html">
+        <div class="grp"><span>Grupo E · Kansas City (Arrowhead) · 19:00 ET</span><span>diferença grande · olho na eficiência de finalização</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇨 Equador<small>1ª rodada: 0-1 para a C. Marfim · seca de gols</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Curaçao 🇨🇼<small>1ª rodada: 1-7 para a Alemanha · menor país a disputar Copa</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:86%;background:#f5c518"></i><i style="width:9%;background:var(--draw)"></i><i style="width:5%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f3da70">Equador <b>86%</b></span><span>Empate 9%</span><span style="color:#9cb3e6">Curaçao 5%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Equador <b>1.10</b> · Empate 11.00 · Curaçao 23.00</span>
+          <span class="chip xg">🆕 Equador na 1ª rodada com 12 finalizações, 3 na trave e só 1 no alvo, seca de gols (trazido do jogo anterior) · Curaçao com defesa em colapso no 1-7, mas amostra pequena (trazido) · xG alto contra seca de gols → cautela com handicap alto/mais gols (alerta de armadilha) · arbitra Ma Ning (China, primeiro árbitro chinês em 24 anos)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · unilateral, sem prêmio emocional · valor no handicap/total de gols</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-tunisia-vs-japan.html">
+        <div class="grp"><span>Grupo F · Monterrey (BBVA) · 23:00 ET</span><span>jogo nº 1000 das Copas · duelo decisivo da Tunísia</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇳 Tunísia<small>1ª rodada: 1-5 para a Suécia · troca de técnico, Renard</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Japão 🇯🇵<small>1ª rodada: 2-2 com os Países Baixos · Kubo em dúvida</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:16%;background:#c1272d"></i><i style="width:22%;background:var(--draw)"></i><i style="width:62%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">Tunísia 16%</span><span>Empate 22%</span><span style="color:#9cb3e6">Japão <b>62%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Japão <b>1.52</b> · Empate 4.00 · Tunísia 6.50</span>
+          <span class="chip xg">🆕 Tunísia trocou de técnico após um jogo, Renard (herói da zebra da Arábia em 2022) assume (trazido do jogo anterior) · Kubo do Japão com dúvida no joelho, Junya Ito pode ser titular (trazido) · arbitra Kovács (Romênia)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 Calor de mercado 2/5 · seleção fraca + jogo de madrugada · narrativa da troca de técnico/jogo nº 1000</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 11 = 6/21 Grupo G/H 2ª rodada -->
+  <div class="dayblock" data-day="10">
+    <div class="sub" style="margin:0 0 12px">6/21 (domingo) · 2ª rodada dos Grupos G/H, 4 jogos · odds decimais (aprox. sem a margem) · <b>prévias detalhadas já geradas, clique num card para entrar</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-spain-vs-saudiarabia.html">
+        <div class="grp"><span>Grupo H · Atlanta (Mercedes-Benz) · 12:00 ET</span><span class="feat">★ grande favorito ao título manda em campo</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇸 Espanha<small>1ª rodada: 0-0 com Cabo Verde · 27 finalizações, 0 gol</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Arábia Saudita 🇸🇦<small>1ª rodada: 1-1 com o Uruguai</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:86%;background:#e63329"></i><i style="width:10%;background:var(--draw)"></i><i style="width:4%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">Espanha <b>86%</b></span><span>Empate 10%</span><span style="color:#7fd6a0">Arábia 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas</span>
+          <span class="chip">Espanha <b>1.11</b> · Empate 10.00 · Arábia 23.00</span>
+          <span class="chip xg">🆕 Espanha na 1ª rodada com 27 finalizações, 2.29 de xG e 0 gol, finalização travada (trazido do jogo anterior) · Arábia com bloco baixo + gol de bola parada, Al-Owais inspirado ("modelo Cabo Verde" · trazido) · arbitra Raphael Claus (Brasil)</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · consenso forte · narrativa "outro ônibus na frente/Yamal titular" aquece</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-belgium-vs-iran.html">
+        <div class="grp"><span>Grupo G · Inglewood (SoFi) · 15:00 ET</span><span>grupo todo com 1 ponto · confusão geral</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇪 Bélgica<small>1ª rodada: 1-1 com o Egito · 15 finalizações de jogo, 0 gol</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Irã 🇮🇷<small>1ª rodada: 2-2 com a Nova Zelândia · brechas na transição</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:64%;background:#e63329"></i><i style="width:23%;background:var(--draw)"></i><i style="width:13%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">Bélgica <b>64%</b></span><span>Empate 23%</span><span style="color:#7fd6a0">Irã 13%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ Escalações confirmadas</span>
+          <span class="chip">Bélgica <b>1.44</b> · Empate 4.50 · Irã 7.00</span>
+          <span class="chip xg">🆕 Bélgica sem 9 de ofício para furar bloco (15 finalizações de jogo, 0 gol · trazido do jogo anterior) · Irã com brechas na transição (os dois gols vieram de bolas nas costas da defesa · trazido) · arbitra Dario Herrera (Argentina)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">🔁 Surpresa oficial: Lukaku titular (9 de verdade no lugar de De Ketelaere) · Saelemaekers pela direita · Irã com Taremi de único atacante</span>
+          <span class="chip" style="color:#ff8a8a;border-color:#6b2f2f;background:#241016;font-weight:700">Doku fora (doença) · Trossard vai para a esquerda</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · consenso Bélgica + narrativa geográfica/viagem do Irã</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-uruguay-vs-capeverde.html">
+        <div class="grp"><span>Grupo H · Miami (Hard Rock) · 18:00 ET</span><span>dúvida de finalização do Uruguai vs ferrolho da zebra</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇾 Uruguai<small>1ª rodada: 1-1 com a Arábia · 27 finalizações, 1 gol</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Cabo Verde 🇨🇻<small>1ª rodada: 0-0 com a Espanha · ferrolho + 7 defesas</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:65%;background:#4a9fd4"></i><i style="width:22%;background:var(--draw)"></i><i style="width:13%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#a5d3ee">Uruguai <b>65%</b></span><span>Empate 22%</span><span style="color:#7fd6a8">Cabo Verde 13%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Uruguai <b>1.46</b> · Empate 4.50 · Cabo Verde 7.20</span>
+          <span class="chip xg">🆕 Crise de finalização do Uruguai (27 finalizações, 1.54 de xG e só 1 gol, Núñez substituído no intervalo · trazido do jogo anterior) · ferrolho de Cabo Verde já comprovado (0-0 vs Espanha, Vozinha com 7 defesas, 1 falta no jogo todo · trazido) · arbitra Espen Eskas (Noruega)</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · consenso de vitória do Uruguai + debate Cinderela/dúvida de finalização</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+      <a class="mc live" href="report-newzealand-vs-egypt.html">
+        <div class="grp"><span>Grupo G · Vancouver (BC Place) · 21:00 ET</span><span>confronto de 6 pontos · caça ao recorde de Salah</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇿 Nova Zelândia<small>1ª rodada: 2-2 com o Irã · liderou duas vezes e foi alcançada</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">Egito 🇪🇬<small>1ª rodada: 1-1 com a Bélgica · Salah como referência</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:17%;background:#9aa0a6"></i><i style="width:24%;background:var(--draw)"></i><i style="width:59%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#cfd3d8">Nova Zelândia 17%</span><span>Empate 24%</span><span style="color:#f0a3a3">Egito <b>59%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">Egito <b>1.60</b> · Empate 4.00 · Nova Zelândia 5.50</span>
+          <span class="chip xg">🆕 Nova Zelândia sofre gols na transição, 12 jogos sem clean sheet (trazido do jogo anterior) · Egito afiado no contra-ataque mas depende de Salah na finalização (xG 1.07 · trazido) · arbitra Omar Al Ali (Emirados Árabes Unidos)</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 Calor de mercado 3/5 · caça ao recorde de Salah + confronto de 6 pontos</span>
+        </div>
+        <div class="go">Análise completa →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 12+ -->
+  <div class="dayblock" data-day="11">
+    <div class="cards"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">Próximos dias de jogo (a partir de 22/6 · 3ª rodada da fase de grupos em sequência)</div></div><div class="sub" style="margin:6px 0 0">Todos os dias, o agente busca automaticamente a programação completa do dia, gera o dashboard e os relatórios detalhados e os adiciona aqui.</div></div></div>
+  </div>
+
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <div class="secttitle" style="margin-bottom:8px"><span class="n">🧑‍⚖️</span><h2>Observação da arbitragem · Leitura da arbitragem até agora (até 19/6)</h2></div>
+    <p style="font-size:13px;color:var(--txt)">Na fase inicial, a amplitude de critério dos árbitros principais é enorme, e o "quem apita" amplifica bastante o impacto sobre os mercados de cartões:</p>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">• <b style="color:var(--txt)">Jogo de abertura (México 2-0 África do Sul)</b>: Wilton Sampaio (Brasil, 5,08 cartões amarelos/jogo na carreira, um dos mais rigorosos do mundo) deu <b>3 vermelhos</b>, recorde para jogos de abertura de Copa — mas isso bate com seu perfil habitual de "tolerância zero + respaldo do VAR", não é surpresa; o sinal é que a FIFA topa colocar um árbitro rigoroso num jogo de destaque, definindo o tom de rigor logo na abertura.<br>
+    • <b style="color:var(--txt)">EUA 4-1 Paraguai</b>: Danny Makkelie (Holanda) usou o VAR para anular um cartão amarelo errado para Ream e reverteu uma simulação de Almirón — correção exemplar, deixando claro que "simulação é falta certa".<br>
+    • <b style="color:var(--txt)">Canadá 1-1 Bósnia</b>: Facundo Tello (Argentina) deu apenas <b>1 amarelo</b> no jogo todo, deixou o duelo físico correr — o polo oposto de Sampaio.<br>
+    • <b style="color:var(--txt)">Coreia do Sul 2-1 Tchéquia</b>: o egípcio Amin Mohamed estreou em Copas, com controle de jogo tranquilo.</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">Balanço de 13/6</b>: Vinčić (Brasil-Marrocos) apitou o jogo de destaque com sobriedade e sem pênaltis; Said Martínez (Catar-Suíça, estreia em Copa) marcou o pênalti da Suíça e controlou o jogo, sem que a incerteza de não ter amostra estourasse; Haiti-Escócia e Austrália-Turquia tiveram contato sob controle e sem polêmica de pênalti — fora os 3 vermelhos de Sampaio no jogo de abertura, o critério na fase inicial tende ao normal.</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">Balanço de 14/6</b>: nos 4 jogos da 1ª rodada dos Grupos E/F o volume de cartões ficou sob controle, sem vermelhos; o árbitro marroquino Jalal Jiyed (Alemanha-Curaçao) tornou-se o primeiro árbitro do Marrocos a apitar uma Copa desde 2002. A explosão de 19 gols veio sobretudo da diferença de força e da eficiência de finalização, não de uma mudança no critério de arbitragem.</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">Balanço 6/15</b>: no Grupo G/H os quatro jogos <b>EMPATARAM</b> (Espanha 0-0, Bélgica 1-1, Arábia 1-1, Irã 2-2). Arbitragem em geral controlada, sem grandes polêmicas de pênalti/vermelho; Cabo Verde cometeu apenas 1 falta contra a Espanha (a menor em um jogo de Copa do Mundo desde 1966) — a história foi a disciplina, não o critério da arbitragem. Detalhe por jogo na Análise pós-jogo de cada relatório.</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">Balanço 6/19 (2ª rodada dos Grupos C/D)</b>: o grande foco da rodada foi <b>Türkiye 0-1 Paraguai</b> — Almirón levou vermelho nos acréscimos do 1º tempo pela nova regra (conflito por cobrir a boca), o Paraguai segurou com 10 desde o intervalo e virou a chave; a Türkiye, com 81% de posse e 32 finalizações, não fez gol e foi eliminada. Escócia-Marrocos, EUA-Austrália e Brasil-Haiti tiveram volume de cartões sob controle, sem grandes polêmicas de pênalti. A arbitragem não mudou o roteiro; força e eficiência de finalização seguem sendo o fio condutor.</p>
+    <p style="font-size:13px;color:#bfe0f7;margin-top:8px">📌 <b>Hoje (20/6) · árbitros designados para a 2ª rodada dos Grupos E/F</b>: Países Baixos–Suécia = Michael Oliver (Inglaterra, perfil de apito carregado); Alemanha–Costa do Marfim = Benítez Mareco (Paraguai); Equador–Curaçao = Ma Ning (China, primeiro árbitro chinês a apitar uma Copa em 24 anos); Tunísia–Japão = István Kovács (Romênia).<br>
+    📌 <b>Amanhã (21/6) · árbitros designados para a 2ª rodada dos Grupos G/H</b>: Espanha–Arábia Saudita = Raphael Claus (Brasil, árbitro da final da Copa América 2024); Bélgica–Irã = Dario Herrera (Argentina); Uruguai–Cabo Verde = Espen Eskas (Noruega); Nova Zelândia–Egito = Omar Al Ali (Emirados Árabes Unidos). O perfil de cada árbitro está no módulo [Árbitro da partida] da página de detalhes.<br>
+    📌 <b>Arquivo de designações históricas</b>: Espanha–Cabo Verde = Adham Makhadmeh (Jordânia); Bélgica–Egito = Ramon Abatti (Brasil); Arábia–Uruguai e Irã–Nova Zelândia, ver a página de detalhes de cada jogo.<br>
+    📌 <b>1ª rodada dos Grupos I/J (16/6)</b>: França–Senegal = Alireza Faghani (Austrália, 3ª Copa); Iraque–Noruega = Pierre Atcho (Gabão, estreia em Copa); <b>Argentina–Argélia = Szymon Marciniak (Polônia, árbitro da final da Copa de 2022)</b>; Áustria–Jordânia = Dahane Beida (Mauritânia, estreia em Copa). O perfil de cada árbitro está no módulo [Árbitro da partida] da página de detalhes. <span style="color:var(--mut)">O VAR intervém com firmeza em cartões/erros de identidade. Apenas para fins de análise — não é recomendação de apostas.</span></p>
+  </div>
+
+  <div class="how">
+    <p>⚙ <b>Atualização automática diária</b>: uma tarefa agendada coleta todos os dias os jogos de hoje e de amanhã com as notícias-chave, atualiza os indicadores do dashboard de cada jogo (probabilidades de vitória / gols esperados etc.), insere as <b>notícias de última hora</b> no módulo central de cada página de detalhes e coleta o <b>🔥 calor do mercado de apostas</b> (direção das dicas de celebridades/especialistas, movimento das odds, fluxo de capital nos mercados de previsão, volume nas redes → índice de superaquecimento composto de 1-5), publicando tudo automaticamente.</p>
+  </div>
+
+  <div class="foot">Central de Análise da Copa do Mundo 2026 · Probabilidades de vitória são probabilidades implícitas das odds (sem a margem); alguns confrontos usam aproximação de modelo · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const DAYS=[{m:'6/11',d:'Qui · Fim'},{m:'6/12',d:'Sex · Fim'},{m:'6/13',d:'Sáb · Fim'},{m:'6/14',d:'Dom · Fim'},{m:'6/15',d:'Seg · Fim'},{m:'6/16',d:'Ter · Fim'},{m:'6/17',d:'Qua · Fim'},{m:'6/18',d:'Qui · Fim'},{m:'6/19',d:'Sex · Encerrado'},{m:'6/20',d:'Sáb · Hoje'},{m:'6/21',d:'Dom · Amanhã'},{m:'6/22+',d:'Depois'}];
+const md=v=>{const[a,b]=v.replace('+','').split('/').map(Number);return a*100+b};
+const _t=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'numeric',day:'numeric'}).format(new Date());
+let ACTIVE=DAYS.findIndex(x=>x.m.replace('+','')===_t);
+if(ACTIVE<0)ACTIVE=md(_t)>md(DAYS[DAYS.length-1].m)?DAYS.length-1:0;
+const nav=document.getElementById('days');
+DAYS.forEach((x,i)=>{const el=document.createElement('div');el.className='daytab'+(i===ACTIVE?' active':'');
+ el.innerHTML=`<div class="m">${x.m}</div><div class="d">${x.d}</div>`;
+ el.onclick=()=>{document.querySelectorAll('.daytab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dayblock').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');document.querySelector(`.dayblock[data-day="${i}"]`).classList.add('active');};
+ nav.appendChild(el);});
+document.querySelectorAll('.dayblock').forEach(b=>b.classList.toggle('active',b.dataset.day==String(ACTIVE)));
+</script>
+</body>
+</html>

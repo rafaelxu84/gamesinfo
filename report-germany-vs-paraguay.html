@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 德国 vs 巴拉圭 · 2026世界杯 32强（胜者晋级16强 · 德国E组头名 · Schlotterbeck 重伤缺阵 · Nagelsmann vs Alfaro）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-germany-vs-paraguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-germany-vs-paraguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-germany-vs-paraguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#000000,#bc002d);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-germany-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">EN</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge" style="background:linear-gradient(90deg,#15803d,#065f46)">🏁 已完赛 · 比分 1-1（点球 4-3）· 巴拉圭点球淘汰德国晋级 16 强 · 本届首个重大冷门</span><br>
+  <span class="badge" style="margin-top:6px;display:inline-block">🔮 赛前前瞻 · 2026 世界杯 · 32 强淘汰赛 · 胜者晋级 16 强 · 德国 E 组头名 vs 巴拉圭最佳第三</span>
+  <h1>德国 vs 巴拉圭</h1>
+  <div class="meta">2026年6月29日（周一）· 波士顿 Foxborough · Gillette Stadium（吉列体育场）· 16:30 ET · 32 强阶段 · 胜者晋级 16 强</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇩🇪 德国</div><div class="rk">E 组头名 · 6 分（7-1 库拉索、2-1 科特迪瓦、1-2 厄瓜多尔）· 净胜球 +7 · 末轮爆冷负厄瓜多尔但仍以小组第一晋级 · 主帅 Julian Nagelsmann · 中卫 Schlotterbeck 重伤缺阵</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇵🇾 巴拉圭</div><div class="rk">D 组第三 · 4 分（1-4 美国、1-0 土耳其、0-0 澳大利亚）· 以最佳第三名之一晋级 · 10 人逆境 1-0 淘汰土耳其 · 主帅 Gustavo Alfaro · Diego Gómez 停赛、Almirón 复出</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-30） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 德国 1-1 巴拉圭（点球 3-4，巴拉圭晋级）· 半场 0-1 · 06-29</span></h2>
+
+    <h4>① 比分进程（含点球）</h4>
+    <p style="font-size:13.5px">波士顿 Foxborough 的 Gillette Stadium：一场<b>"德国全程压制却被点球淘汰"的世界级冷门</b>。德国控球 76%、传球碾压，却始终无法把场面优势转化为足够的进球；巴拉圭以低位铁桶 + 反击的预演剧本顽强消耗。<b>第 42 分钟，Julio Enciso（恩西索）接 Galarza 传中头球破门</b>，巴拉圭半场 1-0 领先；下半场<b>第 54 分钟 Kai Havertz（哈弗茨）接 Wirtz 传中头球扳平</b>，1-1。此后<b>德国 Tah 一记角球破门被 VAR 判定犯规门将（Gill）取消</b>，比分未再改写；90 分钟与加时均 1-1，进入点球。点球大战 <b>巴拉圭 4-3 胜出</b>：<b>德国先后由 Havertz（被 Gill 扑出）、Woltemade（被 Gill 扑出）、Tah（突围罚丢、罚飞横梁之上）三罚不中</b>；巴拉圭则由 Sanabria 罚丢、Balbuena 的"绝杀点球"被 Neuer 扑出；进入突然死亡后 Tah 罚飞、<b>Jose Canale（卡纳莱）一蹴而就锁定胜局</b>。<b>这是德国队史世界杯首次点球大战落败</b>，也是德国自 2010 夺冠后连续两届无缘 16 强（2022 小组出局、本届 32 强出局）；<b>巴拉圭队史时隔 2010 再进世界杯 16 强</b>。多家媒体称其为本届乃至世界杯史上淘汰赛阶段最大冷门之一。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 42' Enciso（巴 · 头球，助攻 Galarza）· 半场 0-1 · 54' Havertz（德 · 头球，助攻 Wirtz）· Tah 角球进球被 VAR 取消（犯规门将）· 90/120 分钟 1-1 · 点球 3-4（巴拉圭胜）</div>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">🥅 点球顺序（综合多源还原 · 德 3 / 巴 4）：Havertz ✗(Gill 扑) → 双方各中两轮 → Woltemade ✗(Gill 扑) → 巴 Sanabria ✗(罚丢) → 德 Amiri ✓ → 巴 Balbuena ✗（"绝杀点球"被 Neuer 扑出）→ 突然死亡：德 Tah ✗（罚飞横梁）→ 巴 Canale ✓ 制胜 <span style="color:var(--warn)">[逐轮主罚人精确顺序 · 各源细节略有出入 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / Sofascore）</h4>
+    <table>
+      <tr><th>指标</th><th>🇩🇪 德国</th><th>🇵🇾 巴拉圭</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG（全场）</td><td><b>0.72</b></td><td>0.42</td><td>差距并不悬殊：德国 76% 控球却只造出 0.72 xG，说明其控球大量停留在无威胁区域、破铁桶效率低下；巴拉圭 0.42 xG 配合 Enciso 的头球，机会少但把握更高效</td></tr>
+      <tr><td class="ht">控球率（全场）</td><td><b>76%</b></td><td>24%</td><td>德国控球碾压（76-24）却是"账面繁荣"——把球权握在了无法穿透密集防线的区域，典型的"控而不破"</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>多于巴拉圭</b> <span style="color:var(--warn)">[全场总射门精确数 · 待核]</span></td><td>少而精</td><td>德国射门数占优但转化低；巴拉圭半场即 2 次射正（多于德国 1 次），少机会高把握是其搅局核心 <span style="color:var(--warn)">[全场射门/射正精确数 · 待核]</span></td></tr>
+      <tr><td class="ht">传球（半场）</td><td><b>342（准 308）</b></td><td>93（准 55）</td><td>德国半场传球 342-93、准确传球 308-55 全面碾压——传控数据华丽，却未换来领先，凸显破密集防守的效率瓶颈</td></tr>
+      <tr><td class="ht">关键判罚</td><td colspan="2"><b>Tah 角球进球被 VAR 取消（判德国犯规门将 Gill）</b></td><td>这粒被取消的进球是全场转折点之一——若维持，德国可能提前锁定胜局；VAR 介入后德国未能再下一城，最终被拖入点球 <span style="color:var(--warn)">[发生具体分钟 · 待核]</span></td></tr>
+      <tr><td class="ht">历史里程碑</td><td colspan="2"><b>德国队史世界杯首次点球大战落败 · 巴拉圭时隔 2010 再进 16 强</b></td><td>德国连续两届无缘 16 强（FIFA 排名第 10 负于第 41）；被广泛评为世界杯淘汰赛史上最大冷门之一</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/germany-vs-paraguay-stats-world-cup-2026">Opta Analyst — Germany 1-1 Paraguay (3-4 pens) Stats</a> · <a href="https://www.sofascore.com/news/germany-vs-paraguay-1-1-stats-point-to-extra-time">Sofascore — 控球/xG/传球数据</a> · <a href="https://www.aljazeera.com/sports/2026/6/29/paraguay-shock-germany-in-shootout-win-for-one-of-all-time-world-cup-upsets">Al Jazeera — 赛报（进球时间与方式、VAR、点球）</a> · <a href="https://www.espn.com/soccer/story/_/id/49220268/germany-dumped-world-cup-paraguay-penalties">ESPN — 点球大战还原</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"德国进攻火力 vs 巴拉圭铁桶"剧本兑现——但铁桶赢了</div>赛前判断德国是绝对热门（去水 ≈68%）、巴拉圭以纪律性铁桶 + 反击搅局。结果场面完全如此：<b>德国 76% 控球、传球碾压，却只造出 0.72 xG，全程无法持续穿透巴拉圭低位防线</b>。可迁移结论：<b>德国在 Nagelsmann 体系下传控华丽，但破密集防守的"最后一传/终结效率"是真实短板——控球率高不等于威胁高</b>。</div>
+    <div class="insight"><div class="who">巴拉圭的搅局路径被完整执行：低位铁桶 + 一次定位球/边路传中致命</div>巴拉圭延续对土耳其/澳大利亚的零封基因，<b>主动让出 76% 球权、把德国压在无威胁区域，并用 Galarza 边路传中 + Enciso 头球一击致命</b>。可迁移结论：<b>对阵传控强队，"放弃球权 + 压缩纵深 + 抓定位球/传中"是被反复验证的有效路径——巴拉圭已把它做到极致，并具备拖入点球的心理韧性</b>。</div>
+    <div class="insight"><div class="who">VAR 取消 Tah 角球进球：定位球攻防的细节决定生死</div>德国一记角球破门因犯规门将被 VAR 取消，<b>这粒进球若有效，德国大概率提前晋级</b>。可迁移结论：<b>面对摆大巴的球队，定位球是最现实的破局口，但在 SAOT/VAR 精准执法下，定位球进攻的身体接触（尤其对门将）容错极低——德国吃了细节的亏</b>。</div>
+    <div class="insight"><div class="who">点球大战：德国队史首败 + Neuer 神扑也无力回天</div>德国三罚不中（Havertz、Woltemade 被 Gill 扑、Tah 罚飞），即便 Neuer 扑出 Balbuena 的绝杀点球，仍难逃淘汰。可迁移结论：<b>德国在高压点球情境下的心理稳定性出现裂痕（队史世界杯首败）；而巴拉圭门将 Gill 两次扑救成为 X 因素——门将状态是淘汰赛拖入点球后的决定性变量</b>。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">德国绝对热门取胜晋级（去水 ≈68%）</td><td style="color:var(--bad)"><b>✗ 落空（重大冷门）</b></td><td>这是<b>本场最大的预测偏差</b>：德国 90/120 分钟战平、点球出局。盘口把德国列为 -280 接近碾压，但淘汰赛单场容错低 + 巴拉圭铁桶 + 点球运气，冷门成真——市场对"密集防守拖入点球"的尾部风险定价不足</td></tr>
+      <tr><td class="ht">巴拉圭以铁桶纪律 + 反击搅局（≈10% 胜率）</td><td style="color:var(--good)"><b>✓ 命中（且更进一步）</b></td><td>赛前明确点出巴拉圭"连续零封 + 反击/定位球一击致命 + 具备拖入点球的韧性"——这一搅局路径被完整执行，甚至直接送德国出局，超出预期</td></tr>
+      <tr><td class="ht">总分线 Over 2.5（市场偏 Over -140）</td><td style="color:var(--bad)"><b>✗ 未中</b></td><td>全场仅 2 球（1-1），Under 2.5 命中——赛前已提示"巴拉圭连续零封为低比分提供另一侧概率、Over 非铁板"，方向上偏向了被验证的一侧</td></tr>
+      <tr><td class="ht">德国 -1.5 让球</td><td style="color:var(--bad)"><b>✗ 未中</b></td><td>德国未能在 90 分钟取胜，让球完全落空——与"德国破铁桶效率存疑"的陷阱提醒一致</td></tr>
+      <tr><td class="ht">陷阱提醒：巴拉圭低比分/爆冷有现实概率</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>赛前深度数据模块明确写入"巴拉圭本届单场最多 1 球、连续零封 → 低比分/爆冷有现实概率"——这一尾部风险正是本场结果</td></tr>
+    </table>
+    <div class="note" style="margin-top:10px">📌 <b>诚实对账</b>：本场主线（德国晋级 + Over + 让球）三项落空，是产品近期最大的一次预测偏差。但赛前已在"陷阱提醒/总分线/盘口定位"中明确标注巴拉圭铁桶搅局与低比分的尾部风险——结果属于"已被提示的低概率事件兑现"，而非完全失察。淘汰赛单场 + 点球的随机性是热门翻车的结构性来源。仅陈述兑现/偏差，不构成投注建议。</div>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5aa8d8">🇵🇾 巴拉圭 · 晋级 16 强（对阵法国/瑞典胜者）</h4>
+        <ul class="watch">
+          <li><b>下一场：7 月 4 日（周六）费城 Lincoln Financial Field，对阵法国 vs 瑞典的胜者</b>——对手强度再升一档，巴拉圭大概率延续低位铁桶 + 反击的成功模板。</li>
+          <li><b>已验证的搅局武器</b>：低位防守 + Galarza/Enciso 的边路传中与头球、门将 Gill 的点球扑救能力，是对阵更强对手时可复制的得分/止损路径。</li>
+          <li><b>体能与轮换压力</b>：连续两场（含本场 120 分钟 + 点球）高强度消耗 + 跨区奔波，体能是隐忧；Diego Gómez 本场停赛后下一场可回归、加固中场拦截（须确认黄牌状态）。<span style="color:var(--warn)">[Gómez 解禁/伤情 · 待核]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8788a">🇩🇪 德国 · 止步 32 强（本届出局）</h4>
+        <ul class="watch">
+          <li><b>连续两届无缘 16 强</b>（2022 小组出局、本届 32 强出局），队史世界杯首次点球大战落败——结构性问题：传控华丽但破密集防守效率低、点球心理稳定性受质疑。</li>
+          <li><b>暴露的战术漏洞</b>：76% 控球仅 0.72 xG，"控而不破"是 Nagelsmann 体系需解决的核心课题；中卫深度（Schlotterbeck 重伤）与定位球攻防细节同样待补强。</li>
+          <li><b>带走的资本</b>：Wirtz/Musiala/Havertz 的进攻天赋与小组赛火力（7-1、2-1）仍是顶级，未来大赛周期的上限取决于能否把控球转化为高质量机会 + 提升淘汰赛抗压能力。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 2026 世界杯 <b>32 强阶段的一场淘汰赛——单场定生死，胜者晋级 16 强</b>。<b>德国（E 组头名，6 分）</b>前两轮 7-1 屠库拉索、2-1 力克科特迪瓦展示进攻火力，末轮虽 1-2 爆冷不敌厄瓜多尔，仍凭净胜球 +7 稳居小组第一；<b>巴拉圭（D 组第三，4 分）</b>开局 1-4 惨败美国，随后 10 人作战逆境 1-0 淘汰土耳其、末轮 0-0 闷平澳大利亚，以最佳第三名之一惊险晋级。最大临场变量：<b>德国中卫 Nico Schlotterbeck 对科特迪瓦伤及脚踝、本届报销</b>（多源一致），Rüdiger 与 Tah 继续搭档中卫，左后卫 Nathaniel Brown 此前肌肉问题、预计可首发（待核）；巴拉圭方面 <b>Diego Gómez 累计黄牌停赛</b>、Almirón 停赛归位、Alderete（膝）与 Sosa（肌肉）状态待评估。盘口方向极其明确偏德国：<b>德国 -280（DECIMAL ≈1.36）· 平 +400（≈5.00）· 巴拉圭 +800（≈9.00）</b>（FanDuel；DraftKings 德国 -265 ≈1.38）。三处核心看点：① <b>德国能否破巴拉圭的低位铁桶防守</b>（巴拉圭末两场仅丢 0 球、防守韧性极强）；② <b>德国末轮负厄瓜多尔后的心态与轮换</b>（Nagelsmann 如何重整旗鼓）；③ <b>巴拉圭的反击与定位球能否抓住德国可能的松懈</b>。基准剧本：<b>德国个人质量与进攻火力全面占优、巴拉圭以纪律性铁桶 + 反击搅局</b>，专家倾向德国晋级但对总分线分歧（部分偏 Over 2.5、部分看好巴拉圭低比分顽抗），过热指数 ≈ 3/5（德国豪门叙事 + 末轮爆冷争议）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">德国隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈68%</div></div>
+      <div class="key"><div class="k">巴拉圭隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈10%</div></div>
+      <div class="key"><div class="k">平局隐含概率(去水)</div><div class="v" style="color:var(--draw)">≈22%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>赛制（多源确认）</b>：32 强单场淘汰，90 分钟平局进加时，仍平则点球。胜者晋级 16 强。</li>
+      <li><b>德国 Schlotterbeck 重伤报销（多源一致）</b>：中卫 Nico Schlotterbeck 在 6/20 对科特迪瓦一役伤及脚踝、伤情严重，本届缺阵；Antonio Rüdiger 继续与 Jonathan Tah 搭档中卫。</li>
+      <li><b>德国 Brown 肌肉问题、预计可首发（待核）</b>：左后卫 Nathaniel Brown 因肌肉问题缺席末轮对厄瓜多尔，预计本场可从首发出战——待赛前官方名单确认。</li>
+      <li><b>巴拉圭 Diego Gómez 停赛、Almirón 复出（多源确认）</b>：中场 Diego Gómez 因对澳大利亚累计第二张黄牌停赛缺阵；Miguel Almirón 停赛期满归位；Alderete（膝）与 Sosa（肌肉）状态待评估。</li>
+      <li><b>上一场带入——德国 1-2 不敌厄瓜多尔</b>：德国末轮爆冷输球，但前两轮 7-1、2-1 已锁定头名；Nagelsmann 如何修复心态与防守是看点。</li>
+      <li><b>上一场带入——巴拉圭 0-0 澳大利亚 + 10 人 1-0 淘汰土耳其</b>：巴拉圭末两场展现极强防守韧性（连续零封），Galarza 对土耳其开场 64 秒闪击是其反击锐度的写照。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 伤停已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 德国中卫 Schlotterbeck 脚踝重伤、本届缺阵 <span style="color:var(--mut);font-weight:400">· Sports Mole / BuliNews / OneFootball 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">德国中卫 <b>Nico Schlotterbeck</b> 在对科特迪瓦时伤及脚踝、伤情严重，本场及本届缺阵；<b>Rüdiger 与 Tah 继续搭档中卫</b></div>
+      <p style="font-size:13.5px">据 Sports Mole、BuliNews、OneFootball 多源一致报道，德国中卫 Nico Schlotterbeck 在 6 月 20 日对科特迪瓦一役遭遇严重脚踝伤势，已缺席末轮对厄瓜多尔，本场对巴拉圭继续缺阵。主帅 Julian Nagelsmann 因此让 Antonio Rüdiger 重回中路、与 Jonathan Tah 组成中卫搭档。此外，左后卫 Nathaniel Brown 此前因肌肉问题缺席对厄瓜多尔，本场预计可从首发出战。<span style="color:var(--warn)">[Brown 首发与否、Schlotterbeck 确切伤情 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Schlotterbeck 是德国后防左中卫的重要轮换/主力之一，他的缺阵削弱德国中卫深度，迫使 Rüdiger 承担更大防守负担。面对巴拉圭虽以防守见长、但具备 Galarza/Enciso/Sosa 的反击速度与定位球冲击，德国后防组合的稳定性与协防是看点之一——尤其在末轮已暴露被厄瓜多尔逆转的情况下。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-paraguay-prediction-team-news-lineups_600229.html" style="color:var(--accent)">Sports Mole — 德国 vs 巴拉圭预览/伤停</a> · <a href="https://bulinews.com/germany-paraguay-preview-team-news-and-predicted-lineups" style="color:var(--accent)">BuliNews — 球队消息/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49197785/germany-vs-paraguay-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — 收看/裁判/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 巴拉圭 Diego Gómez 停赛、Almirón 停赛归位 <span style="color:var(--mut);font-weight:400">· Sports Mole / BuliNews 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">巴拉圭中场 <b>Diego Gómez</b> 累计黄牌停赛缺阵；<b>Miguel Almirón</b> 停赛期满回归；Alderete（膝）/Sosa（肌肉）状态待评估</div>
+      <p style="font-size:13.5px">据 Sports Mole、BuliNews 多源报道，巴拉圭中场 Diego Gómez 因在对澳大利亚一役领到本届第二张黄牌而停赛，本场缺阵；前 Newcastle 边锋/中场 Miguel Almirón 停赛期满、重返球队。后防核心 Omar Alderete（膝伤）与边锋 Ramón Sosa（肌肉）状态均需赛前评估。主帅 Gustavo Alfaro 在小组赛中已多次调整阵容（开局 1-4 负美国后改打更务实的防守体系）。<span style="color:var(--warn)">[Alderete/Sosa 能否出战、巴拉圭最终首发 · 以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Diego Gómez 是巴拉圭中场的活力与拦截来源，他的停赛影响中场屏障；Almirón 的回归则增添边路创造力与反击经验。Alderete 若无法出战，巴拉圭赖以立身的铁桶防守将受冲击——对一支靠纪律和低比分顽抗的球队尤为关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/key-absence-confirmed-how-paraguay-could-line-up-vs-germany_600235.html" style="color:var(--accent)">Sports Mole — 巴拉圭预测首发/缺阵</a> · <a href="https://bulinews.com/germany-paraguay-preview-team-news-and-predicted-lineups" style="color:var(--accent)">BuliNews — 巴拉圭球队消息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 德国 1-2 厄瓜多尔（末轮爆冷，仍以头名晋级）<span style="color:var(--mut);font-weight:400">· Al Jazeera / Yahoo / ESPN 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">德国末轮 1-2 爆冷不敌厄瓜多尔，<b>但凭前两轮 7-1、2-1 锁定的净胜球 +7 仍稳居 E 组头名</b></div>
+      <p style="font-size:13.5px">据 Al Jazeera、Yahoo Sports、ESPN 多源，德国在末轮被厄瓜多尔 2-1 逆转，是 Nagelsmann 麾下的一次意外失利；但德国前两轮 7-1 屠库拉索（本届最大胜差之一）、2-1 力克科特迪瓦，已积 6 分、净胜球 +7，仍以小组第一身份晋级，厄瓜多尔则以最佳第三名出线。<span style="color:var(--warn)">[德国本届完整场均 xG · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：末轮失利暴露德国在领先/轮换情况下的专注度与防守问题，但其进攻上限（前两轮 9 球）依然全联赛级别。Nagelsmann 如何在淘汰赛重整心态、是否恢复主力阵容、能否避免再次轻敌，是德国能否顺利晋级的关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/25/ecuador-edge-germany-2-1-to-squeeze-into-world-cup-last-32" style="color:var(--accent)">Al Jazeera — 厄瓜多尔 2-1 德国</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" style="color:var(--accent)">Wikipedia — 2026 世界杯 E 组</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 巴拉圭 0-0 澳大利亚 + 10 人 1-0 淘汰土耳其 <span style="color:var(--mut);font-weight:400">· Al Jazeera / FIFA / FOX 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">巴拉圭末两场连续零封：<b>0-0 闷平澳大利亚锁定出线</b>，此前 <b>10 人作战 1-0 淘汰土耳其</b>（Galarza 开场 64 秒闪击）</div>
+      <p style="font-size:13.5px">据 Al Jazeera、FIFA、FOX Sports 多源，巴拉圭开局 1-4 惨败美国后，主帅 Alfaro 改打更务实体系：对土耳其半场前遭遇红牌、10 人作战仍凭 Matías Galarza 开场 64 秒的低射 1-0 取胜（本届最快进球之一），将土耳其淘汰出局；末轮 0-0 闷平澳大利亚、以 4 分锁定 D 组第三、成为最佳第三名之一晋级。<span style="color:var(--warn)">[巴拉圭本届完整场均 xG · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拉圭的晋级路径印证其打法基因——纪律性铁桶防守 + 反击/定位球一击致命，且具备少打一人仍守住胜果的韧性。面对德国的进攻火力，巴拉圭大概率继续低位防守 + 快速反击，把比赛拖入低比分、消耗德国耐心——这是其搅局的最现实路径。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/20/turkiye-knocked-out-of-world-cup-2026-after-1-0-defeat-to-10-man-paraguay" style="color:var(--accent)">Al Jazeera — 10 人巴拉圭 1-0 土耳其</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D" style="color:var(--accent)">Wikipedia — 2026 世界杯 D 组</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"明显偏德国、但巴拉圭以铁桶防守具备搅局能力"的场次——市场在德国大热门与巴拉圭低比分顽抗之间寻找定价平衡</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 德国豪门叙事 + 末轮爆冷争议 + 巴拉圭铁桶搅局空间</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">德国被定为绝对热门（-280，DECIMAL ≈1.36），盘口接近碾压级——巴拉圭 +800 折合 ≈10% 胜率为明显劣势方。专家普遍偏德国晋级，但对总分线分歧（部分偏 Over 2.5，部分看好巴拉圭低比分顽抗）；过热信号主要来自德国豪门情绪面与末轮负厄瓜多尔的争议，而非真实强弱不确定。</div>
+    </div>
+
+    <h4>① 专家推荐聚合</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>SportsLine（证明过的专家）</td><td>模型/专家综合</td><td>偏德国晋级；强调德国进攻火力 + 巴拉圭旅途疲劳（加州→波士顿），部分倾向 Over 2.5</td></tr>
+      <tr><td>BetMGM</td><td>博彩研究</td><td>偏德国取胜（预测赔率约 1.38）；总分线偏 Over 2.5</td></tr>
+      <tr><td>Sports Mole</td><td>北美/英系综合媒体</td><td>偏德国取胜；点出 Schlotterbeck 缺阵与 Brown 复出的阵容变量</td></tr>
+      <tr><td>Transfermarkt Picks</td><td>数据媒体</td><td>偏德国；指出巴拉圭防守韧性与反击</td></tr>
+      <tr><td>SportPesa / GhanaSoccerNet</td><td>预测媒体</td><td>偏德国晋级；H2H 与近况均偏德国</td></tr>
+      <tr><td>DraftKings Network</td><td>博彩研究</td><td>德国 -265 开盘大热门；总分 Over 2.5（-140）受青睐</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL 欧赔）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>德国 / 平局 / 巴拉圭</th><th>解读</th></tr>
+      <tr><td>初盘（对阵确定后 · 约 6/27）</td><td>1X2</td><td class="sc">≈1.36 / 5.00 / 9.00 <span style="color:var(--warn)">[DraftKings 德国 -265≈1.38]</span></td><td>对阵一出即把德国列为绝对热门（德国 -280 / 平 +400 / 巴拉圭 +800，美盘）</td></tr>
+      <tr><td>现盘（赛前）</td><td>FanDuel/多平台</td><td class="sc">≈1.36 / 5.00 / 9.00 <span style="color:var(--warn)">[部分平台德国 -265~-280(1.36-1.38)]</span></td><td>Schlotterbeck 缺阵 + 末轮爆冷消息已基本计价、盘口波动有限；晋级盘德国 ≈-700、巴拉圭 ≈+480</td></tr>
+      <tr><td>大/小球 + 让球</td><td colspan="2" class="sc">总分线 O/U 2.5 偏大球（Over 约 -140 为主流）；德国让 -1.5（约 +100）</td><td>市场预期德国进攻火力可破巴拉圭防线，但巴拉圭铁桶 + 反击为低比分提供另一侧概率</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（对阵确定 · 约 6/27）</td><td class="sc">德国约 -280（DECIMAL ≈1.36）；巴拉圭约 +800（≈9.00）；平 +400（≈5.00）</td><td>以个人质量（Wirtz、Musiala、Havertz、Kimmich）+ 进攻上限（前两轮 9 球）+ 历史底蕴定价；巴拉圭虽以最佳第三名晋级、防守韧性获尊重，但被列为明显劣势方</td></tr>
+      <tr><td>重定价（伤停 + 末轮复盘 · 约 6/27-28）</td><td class="ht">德国约 -265~-280（DECIMAL ≈1.36-1.38）· 巴拉圭 ≈9.00 · 平 ≈5.00</td><td><b>Repricing 驱动因素</b>：① Schlotterbeck 重伤缺阵 → 轻微抑制德国盘口进一步走低；② 德国末轮 1-2 负厄瓜多尔 → 引发"轻敌/状态"争议，但前两轮火力仍支撑大热门定位；③ 巴拉圭连续零封（0-0 澳、10 人 1-0 土）→ 强化其铁桶搅局叙事，平局赔率 ≈5.00 对应隐含 ≈22%（含淘汰赛平进加时折算）</td></tr>
+      <tr><td>现盘（赛前）</td><td class="sc">德国约 1.36；总分 O/U 2.5（Over -140 为主流）；让球 -1.5（约 +100）</td><td>市场定位明确：<b>德国绝对热门、接近碾压</b>——巴拉圭 ≈10% 胜率明显劣势；<b>总分线偏 Over 2.5</b> 与"德国进攻火力 vs 巴拉圭铁桶"的张力一致，但 Over 共识不如让球深度坚定。定位档位：<b>强热门，核心博弈在让球深度（-1.5）与总分线方向</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"德国结构性绝对偏强、巴拉圭以纪律性铁桶搅局"的场次，过热指数 <b>3/5</b>。德国 -1.5 让球与 Over 2.5 反映市场对德国进攻火力破密集防守的信心，但巴拉圭连续零封 + 末轮德国爆冷为低比分/爆冷提供另一侧概率。巴拉圭 ≈10% 胜率与 ≈22% 平局概率合计约 32%，说明德国优势明显但淘汰赛单场仍有变数。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：主流预测市场方向与盘口一致偏德国晋级（约 -700 晋级盘）；有加密预测市场报道随本场升温。<span style="color:var(--warn)">[精确占比 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>德国末轮爆冷负厄瓜多尔</b>——引发关于 Nagelsmann 是否轻敌、轮换是否过度的争议，成为本场最大舆论叙事锚点。</li>
+      <li><b>舆论焦点 ②</b>：<b>巴拉圭的铁桶韧性</b>——10 人 1-0 淘汰土耳其、0-0 守平澳大利亚，Alfaro 麾下的纪律性防守获舆论尊重；巴拉圭媒体谨慎乐观。</li>
+      <li><b>舆论焦点 ③</b>：<b>德国伤情</b>——Schlotterbeck 重伤报销、Brown 肌肉问题，后防深度成讨论点。</li>
+      <li><b>公众资金面 / 社媒</b>：公众资金偏德国（绝对热门 + 豪门效应），休闲盘集中在德国 -1.5 让球与 Over 2.5、Wirtz/Musiala/Havertz 进球 prop；部分专家提示巴拉圭低比分顽抗的搅局价值。<span style="color:var(--warn)">[量化数据 · 待核]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是"德国结构绝对偏强、巴拉圭以铁桶纪律搅局"的中等偏强热度场次，过热指数 <b>3/5</b>。德国豪门叙事 + 末轮爆冷推高情绪面，总分线 Over 2.5 与让球 -1.5 反映市场对德国进攻的信心，但巴拉圭连续零封为低比分提供现实概率。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsline.com/insiders/germany-vs-paraguay-odds-predictions-2026-world-cup-round-of-32-picks-from-proven-soccer-expert/">SportsLine — 赔率 / Picks</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/germany-vs-paraguay-prediction-odds-preview-world-cup-june-29-bm16/">BetMGM — 预测 / 赔率</a> · <a href="https://dknetwork.draftkings.com/2026/06/27/opening-odds-for-germany-vs-paraguay-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 开盘赔率</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-paraguay-prediction-team-news-lineups_600229.html">Sports Mole — 预览/预测</a> · <a href="https://www.transfermarkt.us/online-betting/picks/germany-vs-paraguay-picks-29-06-2026/">Transfermarkt — Picks</a></div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛）</b>与<b>本届世界杯实际值（小组赛）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（小组赛）</th><th>差值与解读</th></tr>
+      <tr><td class="sc">🇩🇪 德国 · 进攻</td><td class="sc">2022 世界杯小组出局（但攻强守弱）；2024 欧洲杯东道主八强；Nagelsmann 体系下进攻火力强、Wirtz/Musiala/Havertz/Sané 构成顶级进攻群</td><td class="sc">3 战 10 球（7-1 库拉索、2-1 科特迪瓦、1-2 厄瓜多尔）；前两轮 9 球、净胜球 +7；末轮对厄瓜多尔仅 1 球</td><td><b>进攻火力顶级</b>：7-1 体现进攻上限，但末轮负厄瓜多尔暴露专注度/轮换问题 <span style="color:var(--warn)">（本届完整场均 xG · 待核）</span></td></tr>
+      <tr><td class="sc">🇩🇪 德国 · 防守</td><td class="sc">2024 欧洲杯防守评价中上；但中卫深度依赖 Rüdiger/Tah，伤病敏感</td><td class="sc">3 战丢 4 球（库拉索 1、科特迪瓦 1、厄瓜多尔 2）；末轮被厄瓜多尔逆转；Schlotterbeck 重伤报销</td><td><b>后防是隐患</b>：末轮丢 2 球暴露问题，Schlotterbeck 缺阵削弱中卫深度——巴拉圭反击/定位球可针对 <span style="color:var(--warn)">（本场中卫组合 · 待核）</span></td></tr>
+      <tr><td class="ht">🇵🇾 巴拉圭 · 进攻</td><td class="ht">2010 世界杯八强（队史最佳）；近年进攻产量低，依赖反击与定位球；Almirón、Sosa、Enciso 为边路与终结来源</td><td class="ht">3 战 2 球（1-4 美国、1-0 土耳其、0-0 澳大利亚）；<b>本届单场最多进 1 球</b>；Galarza 对土耳其 64 秒闪击</td><td><b>低产但高效</b>：进攻产量低，但反击一击致命（土耳其）。典型低比分、谨慎球队 <span style="color:var(--warn)">（场均 xG 公开数据有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇵🇾 巴拉圭 · 防守</td><td class="ht">Alfaro 麾下南美预选赛防守纪律突出；以低位防守 + 整体性著称</td><td class="ht">3 战丢 4 球（美国 4、土耳其 0、澳大利亚 0）；<b>末两场连续零封</b>，含 10 人对土耳其</td><td><b>防守是立身之本</b>：开局崩盘后迅速收紧，末两场零封、含少打一人守住胜果 <span style="color:var(--warn)">（场均 xGA 公开数据有限 · 待核）</span></td></tr>
+    </table>
+    <div class="note">📌 <b>关键读数</b>：德国本届前两轮 9 球展示顶级进攻火力，但末轮负厄瓜多尔暴露专注度/防守问题；巴拉圭开局 1-4 崩盘后迅速收紧、末两场连续零封（含 10 人作战）——是典型低比分、铁桶球队。两组数据共同支撑"德国进攻火力 vs 巴拉圭密集防守"的张力，市场总分线偏 Over 2.5 但非强共识。来源：FIFA / ESPN 赛报 / Wikipedia 小组数据。国家队场均 xG 公开样本有限，相关项标"待核"。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">德国 ≈1.8–2.4</td><td class="ht">巴拉圭 ≈0.5–0.9</td><td>德国个人质量 + 进攻上限全面占优；巴拉圭反击频率有限但讲求效率——与盘口德国 -1.5 / Over 2.5 一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta 超算赛前整体把德国列为夺冠热门梯队、远高于巴拉圭；本场德国被多数模型/盘口列为绝对热门（晋级盘 ≈-700）<span style="color:var(--warn)">[本场单场超算精确分布 · 待核]</span></td><td>德国整体实力与进攻火力占优，但巴拉圭铁桶防守是模型不易完全量化的变量；淘汰赛单场容错低、德国末轮已爆冷一次</td></tr>
+      <tr><td>压迫 PPDA / xT / 场面倾斜</td><td colspan="2" class="ht">国家队公开详细数据有限 <span style="color:var(--warn)">（PPDA/xT 待核）</span>——定性：德国在 Nagelsmann 体系下倾向高位控球与纵向渗透、占据 field tilt；巴拉圭以低位防守 + 快速反击为主，主动让出球权</td><td><b>陷阱提醒</b>：① 德国末轮爆冷负厄瓜多尔 → 状态/轻敌争议，但火力仍在；② Schlotterbeck 缺阵 → 巴拉圭反击/定位球有机会；③ 巴拉圭本届单场最多 1 球、连续零封 → 低比分/爆冷有现实概率，Over 非铁板；④ 德国进球 prop 受豪门情绪驱动可能溢价</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——巴拉圭的少机会高把握是其搅局路径核心。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。<span style="color:var(--warn)">待核</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，德国高位控球体系倾向占优。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/ESPN/FIFA 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">1</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>多源确认</b>：据 Dailysports、BuliNews、Yahoo Sports，本场主裁为<b>摩洛哥籍国际级裁判 Jalal Jayed（贾拉勒·贾耶德）</b>，搭配摩洛哥裁判组——助理 Zakaria Brinsi、Akarkad Mostafa。这是 Jayed 本届第二次执法德国比赛（此前曾执法德国 7-1 库拉索之战，亦执法 K 组葡萄牙 vs 乌兹别克斯坦）。场地为波士顿 Foxborough 的 <b>Gillette Stadium（吉列体育场）</b>，开球时间 16:30 ET。<span style="color:var(--warn)">[VAR 组完整名单 · 以 FIFA 官方为准 · 待核]</span></div>
+    <h4>执法尺度 + 数据画像（来源：statshub / playerstats / corner-stats）</h4>
+    <ul class="cl">
+      <li><b>数据画像</b>：Jalal Jayed 自 2019 年进入 FIFA 国际裁判名单、2015 年起执法摩洛哥 Botola 顶级联赛。多家统计站点的<b>场均黄牌约 3.4–4.6 张（不同样本口径差异较大，整体属中等略偏严）</b>；红牌与点球判罚未见高度异常。<span style="color:var(--warn)">[精确生涯均值因样本口径不一 · 待核]</span></li>
+      <li><b>本届大赛尺度</b>：2026 世界杯统一执法新规——仅队长可与主裁沟通、门将 8 秒规则、半自动越位（SAOT）精准校准冲刺临界点。以 Jayed 中等偏严的黄牌均值看，淘汰赛高强度对抗下出牌料处于中等水平；对拉扯、战术犯规与禁区内动作保持警觉。</li>
+      <li><b>与两队的历史</b>：Jayed 本届已执法德国一场（7-1 库拉索），与巴拉圭无显著公开执法史；作为摩洛哥裁判，他主要执法非洲及本届世界杯赛事。<span style="color:var(--warn)">[对两队历史执法细分数据 · 待核]</span></li>
+      <li><b>两面性</b>：巴拉圭须低位防守 + 战术犯规打断德国推进，可能吃牌（小组赛已有红牌纪录）；德国高位压上、由攻转守的反抢亦可能制造犯规。半自动越位将精准裁决德国的纵向渗透与巴拉圭反击的临界冲刺。Jayed 黄牌均值中等偏严，黄牌总数盘值得关注。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Jayed 场均黄牌约 3.4–4.6（样本口径不一），属中等偏严类型。本场淘汰赛压力大、巴拉圭须密集防守与战术犯规、德国须求攻——中场拼抢与禁区动作料频繁，黄牌总数盘可能中等偏高。鉴于其对两队历史数据样本有限、生涯均值口径不一，相关盘口以倾向看待、不作可操作依据。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">2</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· 小组战绩 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>两队小组赛进球 / 失球</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇩🇪 德国</th><th>🇵🇾 巴拉圭</th></tr>
+      <tr><td>小组赛</td><td class="sc">7-1 库拉索 + 2-1 科特迪瓦 + 1-2 厄瓜多尔 · 6 分，净 +7，进 10，失 4 · E 组头名</td><td class="ht">1-4 美国 + 1-0 土耳其（Galarza）+ 0-0 澳大利亚 · 4 分，净 -2，进 2，失 4 · D 组第三（最佳第三名出线）</td></tr>
+      <tr><td>晋级身份</td><td colspan="2">德国 E 组头名、巴拉圭 D 组第三（最佳第三名）；32 强单场淘汰，胜者晋级 16 强（90 分钟平局进加时，仍平点球）</td></tr>
+      <tr><td>主教练</td><td class="sc">Julian Nagelsmann（高位控球 + 纵向渗透；进攻火力强）</td><td class="ht">Gustavo Alfaro（低位防守 + 务实反击；开局崩盘后迅速收紧）</td></tr>
+      <tr><td>核心球员</td><td class="sc">Florian Wirtz · Jamal Musiala · Kai Havertz（前场三叉戟）· Joshua Kimmich（中场/队长）· Antonio Rüdiger（中卫）</td><td class="ht">Miguel Almirón（边路/创造，停赛归位）· Matías Galarza（中场/制胜球）· Antonio Sanabria / Ávalos（锋线）· Omar Alderete（中卫，膝伤待评估）</td></tr>
+      <tr><td>重要缺/伤状态</td><td class="sc">Schlotterbeck 脚踝重伤本届报销；Brown 肌肉问题、预计可首发（待核）</td><td class="ht">Diego Gómez 累黄停赛；Almirón 停赛归位；Alderete（膝）/Sosa（肌肉）待评估（待核）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="sc">胜 ≈1.36（隐含 ≈68%）</td><td class="ht">胜 ≈9.00（隐含 ≈10%）· 平 ≈5.00（≈22%）</td></tr>
+      <tr><td>总分 / 让球</td><td colspan="2" class="sc">O/U 2.5 偏大球（Over 约 -140 为主流）；德国让 -1.5（约 +100）· 晋级盘：德国 ≈-700 / 巴拉圭 ≈+480</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后隐含概率（德国 1.36 / 平 5.00 / 巴拉圭 9.00，归一后约 68/22/10），与"德国绝对热门、巴拉圭搅局"的市场定位一致。大小球主流偏 Over 2.5（Over 约 -140），与德国进攻火力对巴拉圭密集防守的张力吻合。美盘换算：德国 -280→1.36、平 +400→5.00、巴拉圭 +800→9.00。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发（预测版）===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 非官方 · 以赛前 FIFA Match Centre 为准</span></h2>
+    <div class="sub">预测首发（Sports Mole / BuliNews / ESPN 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+
+    <h4>🇩🇪 德国 预测首发（4-2-3-1）· Julian Nagelsmann</h4>
+    <div class="lineup">Neuer; Kimmich · Rüdiger · Tah · Brown; Pavlović · Nmecha; Sané · Musiala · Wirtz; Havertz</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Florian Wirtz · Jamal Musiala</td><td>前腰/前场</td><td>德国进攻创造核心，前两轮 9 球的发动机；面对巴拉圭密集防守的破局关键 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Kai Havertz</td><td>中锋</td><td>前场三叉戟终结点，承担支点与终结任务 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Antonio Rüdiger</td><td>中卫</td><td>Schlotterbeck 缺阵后回归中路、与 Tah 搭档，承担更大防守负担 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Nathaniel Brown</td><td>左后卫</td><td>肌肉问题缺席末轮，预计本场可首发回归 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+    </table>
+
+    <h4>🇵🇾 巴拉圭 预测首发（4-4-2 / 5-4-1）· Gustavo Alfaro</h4>
+    <div class="lineup">Gill; Velázquez · Gómez(A.) · Alderete; Cáceres · Galarza · Cubas · Maidana; Almirón · Enciso; Ávalos　【Alderete/Sosa 状态待评估 · Diego Gómez 停赛】</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Miguel Almirón</td><td>边路/创造 · 经验</td><td>停赛期满回归，增添边路创造力与反击经验 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Matías Galarza</td><td>中场</td><td>对土耳其开场 64 秒闪击制胜，反击锐度代表 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Omar Alderete</td><td>中卫</td><td>巴拉圭后防核心，膝伤状态待赛前评估 <span style="color:var(--warn)">[出战/首发待核]</span></td></tr>
+      <tr><td class="ht">Diego Gómez</td><td>中场</td><td>累计黄牌停赛、本场缺阵——影响中场拦截与活力 <span style="color:var(--warn)">[确认缺阵]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（Sports Mole / BuliNews / ESPN），各源有出入。德国 <b>Schlotterbeck 重伤缺阵</b>、<b>Brown 预计复出</b>影响后防；巴拉圭 <b>Diego Gómez 停赛</b>、<b>Almirón 回归</b>，<b>Alderete/Sosa 状态待评估</b>。官方名单以赛前 <b>FIFA Match Centre</b> 为准 · 待核。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（2022 世界杯 + 2024 欧洲杯 / 美洲杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇩🇪 德国 · Julian Nagelsmann</div>
+        <div class="role">4-2-3-1 · 高位控球 + 纵向渗透 · Wirtz/Musiala/Havertz 前场三叉戟</div>
+        <ul class="cl">
+          <li>Nagelsmann 麾下德国以 <b>高位控球、纵向渗透、前场高质量组合</b> 立足。Wirtz 与 Musiala 是创造核心，Havertz 做支点终结，Sané 提供边路速度，Kimmich 在右后卫/中场串联。前两轮 9 球展示进攻上限。</li>
+          <li>交叉参照：德国 2022 世界杯小组出局、2024 欧洲杯（东道主）八强；本届前两轮火力全开，但末轮 1-2 负厄瓜多尔暴露领先/轮换下的专注度与防守问题。<b>后防中卫深度依赖 Rüdiger/Tah，Schlotterbeck 缺阵是隐患。</b></li>
+          <li>本场应对：面对巴拉圭的密集低位防守，<b>如何耐心破铁桶、避免被反击打穿</b>是首要课题——这正是德国需要 Wirtz/Musiala 的穿透与 Havertz/Sané 终结的场景。Nagelsmann 是否恢复主力、修复末轮心态是看点。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇵🇾 巴拉圭 · Gustavo Alfaro</div>
+        <div class="role">低位防守 + 务实反击，纪律为先（曾打 5-4-1 收缩）</div>
+        <ul class="cl">
+          <li>Alfaro（经验丰富的南美名帅）麾下巴拉圭以 <b>纪律性低位防守 + 整体压缩空间 + 快速反击</b> 立足。开局 1-4 惨败美国后迅速务实收紧，末两场连续零封——含 10 人对土耳其守住胜果。Galarza/Almirón 提供反击与创造。</li>
+          <li>交叉参照：巴拉圭 2010 世界杯八强（队史最佳），近年以防守韧性著称；本届以最佳第三名晋级，进攻产量低（单场最多 1 球）但反击高效。<b>典型低比分、铁桶球队。</b></li>
+          <li>本场应对：面对个人质量全面占优的德国，巴拉圭大概率<b>继续低位铁桶 + 反击 + 定位球</b>，主动让出球权，靠 Galarza/Almirón 的反击速度与 Alderete 领衔的防线寻找机会。能否守住德国进攻火力、抓住德国后防隐患是搅局关键。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">盘口 / 模型综合 <small>· 多源一致</small></div>德国被列为绝对热门（去水 ≈68%），接近碾压——巴拉圭去水 ≈10% 胜率 + ≈22% 平局概率合计约 32%。但淘汰赛单场容错低，德国末轮已爆冷一次，巴拉圭的铁桶防守是模型不易完全量化的搅局变量。专家普遍偏德国晋级，但对总分线有分歧。</div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 综合预测媒体</small></div>德国能否破巴拉圭密集防守是本场最大悬念。Schlotterbeck 缺阵削弱德国后防深度，Rüdiger/Tah 须承担更大防守负担；Brown 能否首发回归影响德国左路。Wirtz/Musiala/Havertz 的穿透与终结效率是德国破铁桶的关键。</div>
+    <div class="insight"><div class="who">Al Jazeera / FOX <small>· 战术分析媒体</small></div>巴拉圭的铁桶韧性是真实搅局变量——10 人 1-0 淘汰土耳其、0-0 守平澳大利亚，连续零封展现纪律性。Galarza 的反击锐度与定位球是其抓住德国后防隐患的最现实路径。德国末轮负厄瓜多尔暴露的专注度问题是否延续值得观察。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源综合</small></div>⚠ 陷阱提醒：① 德国进球 prop（Wirtz/Musiala/Havertz）受豪门情绪驱动可能溢价；② 巴拉圭本届单场最多 1 球、连续零封 → 低比分/爆冷有现实概率，Over 2.5 非铁板；③ 巴拉圭 Diego Gómez 停赛削弱中场拦截，Alderete 膝伤若加重则铁桶受损；④ 德国 Schlotterbeck 缺阵 + 末轮防守问题是巴拉圭搅局的最现实路径。</div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：德国实力与进攻火力全面偏强（盘口去水 ≈68%、前两轮 9 球），但巴拉圭的铁桶防守 + 连续零封使其具备真实搅局能力。基准剧本：<b>德国掌控、巴拉圭低位顽抗</b>——德国有打开局面的个人质量（Wirtz/Musiala/Havertz），市场总分线偏 Over 2.5，但巴拉圭单场最多 1 球、连续零封意味着低比分/爆冷有现实概率。淘汰赛单场，平局进加时、点球收场的可能性需纳入考量；德国末轮已爆冷一次，不可轻视巴拉圭。</li>
+      <li><b>关键先生</b>：德国 — Florian Wirtz / Jamal Musiala（创造）· Kai Havertz（终结）· Antonio Rüdiger（防线）· Manuel Neuer（门将）；巴拉圭 — Matías Galarza（反击/制胜）· Miguel Almirón（创造）· Omar Alderete（防线，待评估）· 门将 Gill。</li>
+      <li><b>胜负手</b>：① 德国能否耐心破巴拉圭铁桶、避免被反击打穿；② Schlotterbeck 缺阵后德国中卫组合的稳定性；③ 巴拉圭 Alderete 能否出战、Diego Gómez 停赛后的中场拦截；④ 德国末轮负厄瓜多尔后的心态修复与专注度；⑤ 淘汰赛压力 + 旅途因素（巴拉圭加州→波士顿）下两队的体能。</li>
+      <li><b>市场视角</b>：绝对偏德国（≈68% 去水）、接近碾压单边（巴拉圭 ≈10%、平局 ≈22%），过热指数 3/5。总分线偏 Over 2.5（德国进攻火力），但巴拉圭连续零封为低比分提供另一侧概率。德国进球 prop 受豪门情绪驱动，可能存在溢价。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre 为准）——<b>德国 Brown 是否首发</b>、<b>巴拉圭 Alderete/Sosa 能否出战</b>；② 德国本场中卫组合（Schlotterbeck 缺阵后）；③ 裁判 Jayed 完整 VAR 组合 · 对两队历史执法细分数据 · 生涯黄牌均值精确口径；④ 本届两队场均 xG 完整数据（Opta/FotMob 细分 · 待核）；⑤ 本场单场超算精确分布（Opta · 待核）；⑥ 精确初盘/现盘数值 · 实时赔率以赛前为准；⑦ 两队 PPDA/xT/field tilt 细分——国家队公开样本有限。</div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-paraguay-prediction-team-news-lineups_600229.html">Sports Mole — 德国vs巴拉圭预览/伤停/预测首发</a> · <a href="https://bulinews.com/germany-paraguay-preview-team-news-and-predicted-lineups">BuliNews — 球队消息/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49197785/germany-vs-paraguay-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — 收看/裁判/预测首发</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/key-absence-confirmed-how-paraguay-could-line-up-vs-germany_600235.html">Sports Mole — 巴拉圭预测首发/缺阵</a> · <a href="https://www.goal.com/en/news/germany-paraguay-world-cup-preview/blt69845ea4b54b1ac0">Goal.com — 赛前预览</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/25/ecuador-edge-germany-2-1-to-squeeze-into-world-cup-last-32">Al Jazeera — 厄瓜多尔 2-1 德国</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — 2026 世界杯 E 组</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760448/ivory-coast-germany">ESPN — 德国 2-1 科特迪瓦</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760422/curacao-germany">ESPN — 德国 7-1 库拉索</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/20/turkiye-knocked-out-of-world-cup-2026-after-1-0-defeat-to-10-man-paraguay">Al Jazeera — 10 人巴拉圭 1-0 土耳其</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — 2026 世界杯 D 组</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760443/paraguay-turkiye">ESPN — 土耳其 0-1 巴拉圭</a><br>
+      • <a href="https://dailysports.net/news/moroccan-referee-jalal-jayed-appointed-for-germany-vs-paraguay-world-cup-round-of-32-clash/">Dailysports — Jayed 执法本场</a> · <a href="https://bulinews.com/moroccan-referee-appointed-for-germany-paraguay-clash">BuliNews — Jayed 任命</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed">Wikipedia — Jalal Jayed</a> · <a href="https://www.statshub.com/referee/jayed-jalal/789297">StatsHub — Jayed 黄牌/场</a> · <a href="https://corner-stats.com/jalal-jayed/morocco/referee/4546">Corner-Stats — Jayed 黄牌/点球</a><br>
+      • <a href="https://www.sportsline.com/insiders/germany-vs-paraguay-odds-predictions-2026-world-cup-round-of-32-picks-from-proven-soccer-expert/">SportsLine — 赔率 / Picks</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/germany-vs-paraguay-prediction-odds-preview-world-cup-june-29-bm16/">BetMGM — 预测 / 赔率</a> · <a href="https://dknetwork.draftkings.com/2026/06/27/opening-odds-for-germany-vs-paraguay-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 开盘赔率</a> · <a href="https://www.transfermarkt.us/online-betting/picks/germany-vs-paraguay-picks-29-06-2026/">Transfermarkt — Picks</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760489">ESPN — 赔率/让球</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-28 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['德国胜','平局','巴拉圭胜'],datasets:[{data:[68,22,10],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[57,43],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['德国 进','德国 失','巴拉圭 进','巴拉圭 失'],datasets:[{data:[10,4,2,4],backgroundColor:[SC,'#9aa6c0',HT,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:11,title:{display:true,text:'小组赛进/失球（德国净+7 / 巴净-2）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'德国',data:[6.5,8.5,8,8,9,7.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC},
+   {label:'巴拉圭',data:[7.5,5,5.5,6,5.5,6],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

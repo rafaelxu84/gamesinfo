@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 卡塔尔 vs 瑞士 · 2026世界杯 B组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-qatar-vs-switzerland.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-qatar-vs-switzerland.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-qatar-vs-switzerland.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-qatar-vs-switzerland.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-qatar-vs-switzerland.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --qa:#8a1538;--ch:#d52b1e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a1538,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#221318,#152138);border:1px solid var(--line);border-left:4px solid var(--ch);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.qa{color:#e08aa0;font-weight:600}td.ch{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-qatar-vs-switzerland.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-qatar-vs-switzerland.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-qatar-vs-switzerland.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · B组首轮 · 当日最一边倒的盘口</span>
+  <span class="badge" style="background:linear-gradient(90deg,#7a1f18,#1d4a2a);margin-left:6px">🏁 已完赛 1-1 · 本届首个大冷</span>
+  <h1>卡塔尔 vs 瑞士</h1>
+  <div class="meta">2026年6月13日 · 圣克拉拉 Levi's Stadium（68,500座） · 12:00 PT / 15:00 ET · B组（同组：加拿大、波黑）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e08aa0">🇶🇦 卡塔尔</div><div class="rk">FIFA #55 · 身价 €19.9m（全场72队最低·待核）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇭 瑞士</div><div class="rk">FIFA #19 · 身价 €333.6m（B组断层第一）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 1-1（半场 0-1）· 本届首个大冷 · 事实与解读分开</span></h2>
+    <div class="sub">瑞士 26 射 3.24 xG 全场碾压却只进 1 球（点球），卡塔尔 90+4′ Khoukhi 头球绝平拿到队史世界杯首个积分。这是对"史诗级一边倒共识"最直接的一次打脸。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">瑞士早早占优：<b>17′ Embolo 点球破门</b>（门将 Abunada 对 Freuler 犯规所得，瑞士世界杯史上首粒点球），半场 0-1。此后瑞士狂攻不止、机会成堆却屡屡浪费；卡塔尔死守低位、几乎无还手之力。直到补时绝境，<b>90+4′ 队长 Boualem Khoukhi 头球破门绝平</b>——为卡塔尔拿到<b>队史世界杯首个积分</b>，也是 1966 年有记录以来世界杯小组赛第三晚的扳平球。</p>
+    <div class="lineup">17′ ⚽(P) Embolo (SUI, 瑞士世界杯首粒点球)  ·  半场 0-1  ·  瑞士全场 26 射狂攻未果  ·  90+4′ ⚽ Khoukhi (QAT, 头球绝平 · 队史世界杯首分)  ·  全场 1-1</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇶🇦 卡塔尔</th><th>🇨🇭 瑞士</th><th>一句话解读</th></tr>
+      <tr><td>控球率</td><td class="qa">31%</td><td class="ch">56%</td><td>卡塔尔主动让出球权、收缩防守，剧本与赛前判断一致</td></tr>
+      <tr><td>xG（预期进球）</td><td class="qa">0.76</td><td class="ch">3.24</td><td>瑞士 xG 是对手 4 倍多——创造了至少 3 个进球的机会却只兑现 1 个</td></tr>
+      <tr><td>射门 / 射正</td><td class="qa">7 / 4</td><td class="ch">26 / 7</td><td>瑞士 26 射史诗级压制，但 7 次射正只换 1 球，终结效率灾难</td></tr>
+      <tr><td>进球方式</td><td class="qa">定位球头球(绝平)</td><td class="ch">点球</td><td>瑞士唯一进球来自点球（运动战颗粒无收），卡塔尔靠定位球偷分</td></tr>
+      <tr><td>关键时刻</td><td class="qa">90+4′ 绝平</td><td class="ch">久攻不下</td><td>正午高温下瑞士后段体能与专注度下滑，被一次定位球惩罚</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Said Martínez（洪都拉斯，首执世界杯正赛）· 判给瑞士点球、全场控制平稳</td><td>无主哨样本的不确定性未爆发，点球判罚清晰</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/qatar-vs-switzerland-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a>（xG/射门/控球）· <a href="https://www.skysports.com/football/qatar-vs-switzerland/549770" style="color:var(--accent)">Sky Sports</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760420/switzerland-qatar" style="color:var(--accent)">ESPN 赛后</a>（≥2 源一致）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who" style="color:#f08a82">瑞士：26 射只进 1 球＝终结力是真问题，不是运气</div>3.24 xG 对 0.76、26 射对 7 射，瑞士该赢三个。但 7 次射正只入 1 球（还是点球）。<b>说明这支瑞士能造机会、缺杀手</b>——Embolo 之外的运动战终结点不可靠，面对铁桶时把握度不足会反复要命。这不是单场背运，是结构性短板。</div>
+    <div class="insight"><div class="who" style="color:#e08aa0">卡塔尔：低位块 + 定位球 + 绝不放弃＝东道区球队的现实模板</div>31% 控球、0.76 xG，卡塔尔几乎全程挨打却用一次定位球偷到历史性 1 分。<b>说明卡塔尔的现实武器是纪律性低位防守 + 定位球高点 + 心态韧性</b>——Khoukhi 的绝平不是偶然，而是死守到底后定位球红利的兑现。</div>
+    <div class="insight"><div class="who">正午高温＝被低估的胜负手</div>赛前点名的"12:00 PT 正午暴晒利于卡塔尔拖节奏"被实战验证：瑞士后段久攻不下、体能与专注度下滑，最终在补时被惩罚。<b>说明环境因素在弱旅死守战里能放大为实打实的结果变量</b>，不该只当背景板。</div>
+    <div class="insight"><div class="who" style="color:var(--warn)">"史诗级共识"本身就是风险</div>赛前瑞士隐含胜率 73%、共识 2-0、亚盘 -1.75。结果是平局。<b>说明当市场对强队过度自信、价格被压到极致时，强队"赢不下来"的尾部风险反而被忽视</b>——干净的情绪面（2/5 热度）不等于没有冷门空间。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>瑞士主胜（隐含 ≈73%）</td><td style="color:var(--bad);font-weight:700">✗ 重大偏差</td><td>1-1 平。本届首个真正意义的大冷，胜率严重高估</td></tr>
+      <tr><td>共识比分 瑞士 2-0 / 亚盘 -1.75</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>瑞士连让平手都没做到，让球盘完全落空</td></tr>
+      <tr><td>正午暴晒利卡塔尔拖节奏</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>高温下瑞士后段乏力，卡塔尔成功拖到补时偷分</td></tr>
+      <tr><td>卡塔尔现实路径＝死守 + 定位球</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>绝平正是定位球头球，路径判断准确</td></tr>
+      <tr><td>市场热度 2/5「共识强、情绪面干净」</td><td style="color:var(--warn);font-weight:700">~ 反讽</td><td>情绪面确实干净，但"共识过强"本身埋了冷门——读数对、结论该更谨慎</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>本场是本届目前<b>最大的预测偏差</b>——诚实记下：把瑞士主胜当板上钉钉，低估了"强队终结力不稳 + 弱旅死守 + 高温"三者叠加的冷门概率。唯一命中的是环境与卡塔尔得分路径的判断。长期信用靠的就是这种不回避的对账。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#e08aa0"><div class="who" style="color:#e08aa0">🇶🇦 卡塔尔 → 下一场 vs 加拿大（6/18 温哥华 BC Place）</div>
+        ① <b>低位块 + 定位球＝可复制模板</b>：加拿大首轮 68% 控球只逼平波黑、破密集低效，卡塔尔的死守剧本对加拿大同样可能奏效；<br>② <b>定位球高点是得分指望</b>：Khoukhi 的头球能力对依赖角球的加拿大是双刃——攻防两端都要盯死定位球；<br>③ <b>士气红利</b>：拿到队史首分后，球队信心与防守纪律会更稳，加拿大想破必须有耐心。</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇨🇭 瑞士 → 下一场 vs 波黑（6/18 洛杉矶 SoFi）</div>
+        ① <b>终结效率必须解决</b>：26 射 1 球的浪费若重演，对同样会低位死守 + 定位球反击的波黑（首轮 Lukic 角球进球）可能再次吞分；<br>② <b>提防波黑定位球</b>：本场已暴露被定位球绝平，波黑正是身高/角球见长的队，禁区盯人要补；<br>③ <b>心理包袱</b>：被卡塔尔逼平后，瑞士出线压力陡增，急于求成可能在 SoFi 再被反击打反击。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">被普遍称为"小组赛最一边倒的对决"：瑞士身价是卡塔尔的<b>约17倍</b>，赔率隐含胜率约 <b>73%</b>（bet365 1.30；部分书商低至 1.21）。瑞士欧预赛 <b>4胜2平不败、进14失2、6场5零封</b>，近14场仅负1场；卡塔尔则带着<b>6场不胜</b>（近两场0-1爱尔兰、1-1萨尔瓦多）走进世界杯。洛佩特吉的卡塔尔大概率摆 5-4-1 低位铁桶、把全部反击押在 <b>Akram Afif</b> 一个人身上。市场的真正分歧不在胜负，而在<b>瑞士能赢几个</b>——亚盘已开到 -1.5/-1.75。唯一的"剧本杀"伏笔：两队史上唯一一次交手（2018友谊赛），卡塔尔 1-0 爆冷赢了。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">瑞士隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈73%</div></div>
+      <div class="key"><div class="k">身价比</div><div class="v">≈17×</div></div>
+      <div class="key"><div class="k">瑞士欧预赛失球</div><div class="v" style="color:#f08a82">2</div></div>
+      <div class="key"><div class="k">卡塔尔近6场</div><div class="v" style="color:var(--bad)">不胜</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>瑞士的耐心 vs 铁桶的纪律</b>：Xhaka 控节奏拆密集，卡塔尔的5-4-1能撑多久是唯一悬念。</li>
+      <li><b>Afif 的反击单点</b>：卡塔尔全队唯一能改变比分的人；瑞士左路身后是他的目标区。</li>
+      <li><b>正午暴晒</b>：12:00 当地开球、约28°C 直晒，对习惯炎热的卡塔尔反而是相对友好变量。</li>
+      <li><b>大小球分歧</b>：专家在 2.5 球上下各有拥趸——瑞士赢但"赢几个"才是本场的真问题。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 半场战报 & 下半场前瞻（实时） ===== -->
+  <section style="border:1px solid #1d4a2a;border-left:4px solid var(--good);background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#05210f">⏱️</span> 半场战报 &amp; 下半场前瞻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 实时 · 半场 瑞士 1-0 卡塔尔 · 更新 ~16:00 ET</span></h2>
+    <div class="sub">赛前主线正在被验证：瑞士技术压制、卡塔尔深蹲防守——下半场的真问题不是"谁赢"，而是"瑞士赢几个"。</div>
+
+    <h4>① 上半场发生了什么（事实）</h4>
+    <p style="font-size:13.5px"><b>17′ Embolo 点球破门</b>，瑞士 1-0：卡塔尔门将 <b>Abunada 出击放倒 Freuler</b> 送点并吃到黄牌，Embolo 一蹴而就——这也是<b>瑞士队史首个世界杯点球进球</b>。此后瑞士延续技术压制、控制节奏，把卡塔尔逼回半场深蹲；卡塔尔进攻端 Afif/Almoez 难以拿到有效球权。半场瑞士 1-0 领先。</p>
+    <div class="lineup">17′ ⚽ Embolo（点球 · 瑞士队史首个世界杯点球）  ·  🟨 Abunada（门将犯规送点）  ·  半场 瑞士 1-0</div>
+
+    <h4>② 与赛前研判的半场对照</h4>
+    <div class="insight"><div class="who" style="color:var(--good)">✓ 主线兑现：瑞士控场、卡塔尔深守</div>赛前"瑞士围攻 vs 卡塔尔战术犯规切反击"的结构完全上演，且卡塔尔的犯规成本第一时间就以点球形式付出——与"门将/后防在压力下易送定位球/点球"的判断一致。</div>
+    <div class="insight"><div class="who" style="color:var(--good)">✓ 角球画像延续</div>瑞士持续施压、把卡塔尔压到禁区线，角球与定位球供给占优——与赛前"瑞士角球让分占优（-3.5 画像）"一致。</div>
+    <div class="insight"><div class="who" style="color:var(--warn)">⚠ 但只领先一球：让球盘未覆盖</div>赛前亚盘 <b>瑞士 -1.75</b>、共识比分 2-0——目前 1-0 意味着<b>让球盘尚未覆盖</b>，瑞士进第二球前胜负分差并不保险。</div>
+
+    <h4>③ 下半场前瞻（预测）</h4>
+    <div class="insight"><div class="who">瑞士的两条路</div><b>路线A（管理）</b>：1-0 在手 + 正午高温（圣克拉拉午后），瑞士可能控球降速、保住净胜球、为体能与后续小组赛留力；<b>路线B（锁胜）</b>：若想覆盖 -1.75 / 兑现 2-0 共识，会用 Embolo + 边路（Ndoye/Vargas）继续找第二球。判断：<b>瑞士大概率先求稳控场，待卡塔尔压出后用转换打第二球</b>。</div>
+    <div class="insight"><div class="who">卡塔尔的应对</div>落后必须把防线压高、加快 <b>Afif / Almoez Ali</b> 的前场参与，主帅大概率换上更具突破/支点的攻击手；但卡塔尔出球能力有限，<b>压上后留给瑞士的反击空间更大</b>——这正是瑞士打第二球的窗口。</div>
+    <div class="insight"><div class="who">关键风险点</div>① 门将 <b>Abunada 已背一黄</b>，再有冒失出击或拖延有<b>红牌风险</b>，会直接打崩卡塔尔；② 瑞士定位球/角球持续施压，第二球更可能来自定位球或反击；③ 高温下双方下半场强度回落，可能压低总进球数。</div>
+
+    <h4>④ 盘口技术面（半场后）</h4>
+    <p style="font-size:13.5px">• <b>大小球</b>：半场仅 1 球，全场总进球（赛前共识 ≈2.5）目前<b>偏 Under 运行</b>，除非卡塔尔压上后转为对攻；<br>
+    • <b>亚盘让球</b>：瑞士 <b>-1.75</b> 需净胜 2 球才完全覆盖——1-0 时仍悬，第二球是分水岭；<br>
+    • <b>角球</b>：瑞士 <b>-3.5</b> 角球让分画像延续，下半场卡塔尔压出可能两端角球都增加。</p>
+    <div class="note">⏱️ 实时信息随比赛进程变化，本前瞻基于半场情况；仅供分析参考，非投注建议。来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021447" style="color:var(--accent)">FIFA Match Centre</a> · <a href="https://www.espn.com/soccer/story/_/id/49051620/qatar-vs-switzerland-live-2026-world-cup-updates-score-commentary" style="color:var(--accent)">ESPN Live</a> · <a href="https://www.tsn.ca/soccer/fifa-world-cup/article/switzerlands-embolo-scores-first-penalty-shot-at-2026-fifa-world-cup-against-qatar/" style="color:var(--accent)">TSN — Embolo 点球</a></div>
+  </section>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 临场更新 · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">赔率/资金面：bet365 <b>瑞士 1.30</b>（-334）/ 平 <b>5.50</b>（+450）/ <b>卡塔尔 9.50</b>（+850）；Kalshi 预测市场 <b>卡 7% · 平 14% · 瑞士 81%</b>——价格与盘口一致，无情绪溢价。</p>
+      <p style="margin-bottom:0">阵容信号：瑞士 <b>Embolo</b> 领衔锋线，中场轴心 <b>Xhaka + Freuler</b>（Shaqiri / Sommer / Schär 均已退役）；卡塔尔仍倚仗 <b>Afif、Almoez Ali</b> 的前场组合。<span style="font-size:12px;color:var(--mut)">来源：<a href="https://www.squawka.com/us/news/world-cup/match-preview-qatar-vs-switzerland-06-13-26-world-cup-2026/" style="color:var(--accent)">Squawka</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-qatar-vs-switzerland-jun-13-2026-game-boxscore-647621" style="color:var(--accent)">FOX Sports</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">两队伤停 · 利好 <span style="color:var(--mut);font-weight:400">· 06-12 赛前评估</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">双方均无重大伤停报道；瑞士门将位置已完成 Sommer→Kobel 交接</div>
+      <p style="font-size:13.5px">赛前各分析源均未报告两队有重要伤停。瑞士方面值得注意的结构变化是：<b>Sommer 已退出国家队，多特蒙德门将 Kobel 确立头号位置</b>；锋线上 Amdouni 与 Embolo 竞争单中锋首发。卡塔尔则以 2023 亚洲杯夺冠班底为主，Abunada 把守球门，Pedro Miguel、Khoukhi 两名老将领衔后防。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：无伤停意味着双方都能按"理论最优解"出牌——瑞士的防守结构（欧预赛仅失2球）完整，卡塔尔的铁桶也齐装满员。对盘口的含义：比赛会按"强弱分明、节奏单向"的标准剧本走，变量更少，让球线（-1.5/-1.75）的定价基础更扎实。<span style="color:var(--warn)">[首发以赛前官方名单为准]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/qatar/world-cup-2026/preview/qatar-vs-switzerland-prediction-team-news-lineups_598996.html" style="color:var(--accent)">Sports Mole — 前瞻/队况</a> · <a href="https://www.rotowire.com/soccer/headlines/gregor-kobel-news-switzerland-no1-goalkeeper-518498" style="color:var(--accent)">RotoWire — Kobel 确立主力</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">卡塔尔 · 状态警报 <span style="color:var(--mut);font-weight:400">· 备战周期</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">卡塔尔带着 <b>6 场不胜</b>进世界杯：5月末 0-1 爱尔兰、6/6 仅 1-1 萨尔瓦多</div>
+      <p style="font-size:13.5px">洛佩特吉的球队近6场不胜（LLDLLD）。最后两场热身：0-1 负于爱尔兰，1-1 战平身价远逊的萨尔瓦多。作为对照，瑞士同期 4-1 约旦、收官 1-1 澳大利亚，近 14 场仅负 1 场（3月 3-4 德国的对攻战）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：卡塔尔的不胜周期里最大的问题是<b>创造机会的能力而非防守</b>——对萨尔瓦多控球过半却只换来1球。这强化了"洛佩特吉会彻底放弃控球、摆最低的块"的预期；同时也意味着如果瑞士早进球，卡塔尔几乎没有 Plan B。2022 东道主三连败的阴影（世界杯正赛至今 0 胜）是这支球队必须直面的心理包袱。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/qatar/world-cup-2026/preview/qatar-vs-switzerland-prediction-team-news-lineups_598996.html" style="color:var(--accent)">Sports Mole — 两队近况</a> · <a href="https://www.rotowire.com/soccer/article/qatar-vs-switzerland-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-b-117815" style="color:var(--accent)">RotoWire — 战术前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 天气 <span style="color:var(--mut);font-weight:400">· 06-12 预报 · 待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">圣克拉拉周六晴、最高约 28°C，<b>正午开球暴晒</b>；本周当地曾发高温预警</div>
+      <p style="font-size:13.5px">预报显示比赛日晴天、最高 83°F（约28°C）、西风 5-10mph。Levi's Stadium 无顶棚，12:00 当地开球意味着全程直晒，东看台球员通道侧温度更高。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：高温直晒通常压低比赛强度、增加饮水暂停——对<b>想把节奏拖慢、缩短有效比赛时间的卡塔尔是结构性利好</b>，对需要持续高强度围攻的瑞士是小幅折损。卡塔尔球员常年在更极端的湿热环境踢球，适应性占优。这是"小球派"论据里最实在的一条。<span style="color:var(--warn)">[赛日临场天气待核]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.weatherforyou.com/report/levis+stadium-ca" style="color:var(--accent)">WeatherForYou — Levi's Stadium 预报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">史上首位执法世界杯的洪都拉斯主裁：<b>Said Martínez</b>；第四官员为牙买加 Oshane Nation</div>
+      <p style="font-size:13.5px">FIFA 任命洪都拉斯的 <b>Said Martínez</b> 主哨本场——他成为首位执法世界杯正赛的洪都拉斯裁判，助理为同国的 Walter López 与 Cristian Ramírez。可查数据：近49场 209 黄（约 <b>4.27 黄/场</b>）、5红+5次两黄变红（待核）。作为 CONCACAF 系裁判，与卡塔尔、瑞士两队均无可查的执法历史（无样本）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：4.27 黄/场属中等偏多，但"首次执法世界杯"的裁判通常倾向求稳、少给极端判罚。本场结构是"瑞士围攻 vs 卡塔尔战术犯规切反击"，若 Martínez 对零碎犯规吹得严，卡塔尔的拖延成本上升（叠加门将8秒/掷界5秒新规）；点球判罚率无可查样本，是唯一的盲区。<b>两面性提醒</b>：历史性首秀也可能让他在主场气氛下偏向"少干预"，利于卡塔尔把比赛切碎。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.concacaf.com/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup" style="color:var(--accent)">Concacaf — Martínez 创历史</a> · <a href="https://www.tvcnews.tv/fifa-names-match-officials-for-qatar-vs-switzerland-clash/" style="color:var(--accent)">TVC News — 任命/纪律数据</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认（FIFA + FotMob）· 含 vs 预测对照</span></h2>
+    <div class="sub">官方名单已于赛前公布；下方为已证实首发与它对本场分析主线的影响</div>
+
+    <div style="display:inline-block;font-size:12px;font-weight:700;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:999px;padding:3px 10px;margin-bottom:12px">✅ 官方确认 · FIFA 比赛中心与 FotMob 名单一致</div>
+
+    <h4>🇶🇦 卡塔尔 官方首发（4-3-3 / FIFA 标注 4-2-3-1）</h4>
+    <div class="lineup">Abunada ─ Al Oui · Pedro Miguel · Khoukhi(C) · Homam Ahmed ─ Gaber · Madibo · Laye ─ Edmilson Junior · Abdurisag · Afif</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:5px">替补席关键武器：<b>Almoez Ali</b>（19·国家队历史射手王 60 球，本场坐板凳）、Hassan Al Haidos（10·队史出场王）、Ahmed Fathi（20）。</div>
+
+    <h4 style="margin-top:16px">🇨🇭 瑞士 官方首发（3-4-3）</h4>
+    <div class="lineup">Kobel ─ Zakaria · Akanji · Elvedi ─ Aebischer · Freuler · Xhaka(C) · Rodríguez ─ Ndoye · Embolo · Vargas</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:5px">替补席关键武器：<b>Zeki Amdouni</b>（23·与 Embolo 竞争中锋者）、Silvan Widmer（3·预测首发右后卫）、Fabian Rieder（22）、Noah Okafor（19）。<br>注：FIFA 官方把 Rodríguez 归入后卫线、Zakaria 归入中场；FotMob 读作 Zakaria 居三中卫、Rodríguez 任左翼卫——11 人完全一致，只是排布解读不同。</div>
+
+    <h4 style="margin-top:18px">vs 预测首发 · 对照（变化逐条说明）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ch">瑞士阵型</td><td>4-2-3-1（后四 + 单中锋）</td><td class="ch">3-4-3（后三 + 双翼卫 + 三叉戟）</td><td>比预期更进攻：对弱旅主动增配前场人手，"赢几个"天平向大球/让球方倾斜</td></tr>
+      <tr><td class="ch">Widmer / Zakaria</td><td>Widmer 首发右后卫；Zakaria 替补</td><td class="ch">Widmer 替补；Zakaria 首发（三中卫/后腰）</td><td>改踢三中卫，右路宽度交给 Aebischer 翼卫，后场出球更强</td></tr>
+      <tr><td class="ch">瑞士锋线</td><td>Embolo 与 Amdouni 竞争单中锋，Rieder 前腰</td><td class="ch">Embolo + Ndoye + Vargas 三前锋齐发；Amdouni、Rieder 替补</td><td>火力点从 1 个增到 3 个，正面强攻意图明确</td></tr>
+      <tr><td class="qa">卡塔尔阵型</td><td>5-4-1 低位铁桶</td><td class="qa">4-3-3（后四 + 单后腰 Madibo）</td><td>不是预期的五后卫摆大巴——开局更敢出球，但防线少一人，边路更易被瑞士翼卫扯开</td></tr>
+      <tr><td class="qa">Almoez Ali</td><td>首发支点中锋</td><td class="qa">替补（首发无认可中锋）</td><td>卡塔尔靠 Afif/Abdurisag/Edmilson 跑动型三叉戟，抢点弱化，反击更依赖 Afif 单点</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读</h4>
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0;font-size:13.5px">① 瑞士 3-4-3 比预测的 4-2-3-1 更进攻——三前锋齐发、双翼卫压上。<b style="color:var(--good)">速览结论：维持，并小幅向"瑞士赢 2+/大球"一侧修正</b>，理由是阵型本身就比预期更倾向强攻。</div>
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0;font-size:13.5px">② 卡塔尔没摆 5-4-1，而是 4-3-3 + 单后腰 Madibo，且首发无认可中锋（Almoez 替补）。<b style="color:var(--good)">速览"Afif 是唯一胜负手"的判断：维持，甚至更极端</b>——前场抢点能力下降，改变比分几乎只能靠 Afif。</div>
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0;font-size:13.5px">③ 关键对位：瑞士双翼卫 + 边锋制造的边路宽度，对上卡塔尔后四而非预期的五后卫——边路局部 2 打 1 风险高于预期，对"瑞士净胜 2 球（-1.5/-1.75）"的定价是支撑。</div>
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:10px 14px;margin:10px 0;font-size:13.5px">④ 体能信号：正午约 28°C 暴晒下瑞士仍主动选更耗体能的高位 3-4-3，说明 Yakin 想速战速决而非控场磨。若早进球，速览已点出的"卡塔尔无 Plan B"隐患成立概率上升。</div>
+
+    <h4 style="margin-top:18px">市场反应</h4>
+    <div class="note">赔率一律欧洲小数盘。赛前（~10:00 ET）：bet365 <b>瑞士 1.30</b> / 平 <b>5.50</b> / <b>卡塔尔 9.50</b>；Polymarket 瑞士 81¢、让球瑞士 -1.5 约 58¢。T-47（官宣后）未捕捉到实测盘口移动快照。方向性看，瑞士更激进的 3-4-3 + 卡塔尔首发无中锋，与"大球/让球盘瑞士"一侧一致——此为解读，非实测线移动，亦非投注建议。</div>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021447">FIFA — 官方比赛中心（Starting Line Up）</a> · <a href="https://www.fotmob.com/matches/qatar-vs-switzerland/1beswv">FotMob（Opta）— 确认首发</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水） · B组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（bet365 去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>B 组四队身价格局（€百万）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇶🇦 卡塔尔</th><th>🇨🇭 瑞士</th></tr>
+      <tr><td>FIFA 排名</td><td class="qa">#55</td><td class="ch">#19</td></tr>
+      <tr><td>全队身价</td><td class="qa">≈€19.9m（全场最低·待核）</td><td class="ch">€333.6m</td></tr>
+      <tr><td>预选赛</td><td class="qa">亚洲区附加赛 2-1 阿联酋出线</td><td class="ch">欧预赛 4胜2平不败，进14失2，5次零封</td></tr>
+      <tr><td>近6场</td><td class="qa">LLDLLD（6场不胜）</td><td class="ch">WDLDWD（近14场仅1负）</td></tr>
+      <tr><td>阵型</td><td class="qa">5-4-1 / 4-3-3（低位块+Afif反击）</td><td class="ch">4-2-3-1（Xhaka+Freuler 控节奏）</td></tr>
+      <tr><td>1X2 赔率（bet365）</td><td class="qa">9.50（隐含≈10%）</td><td class="ch">1.30（≈73%）· 平 5.50（≈17%）</td></tr>
+      <tr><td>亚盘</td><td colspan="2" class="ch">瑞士 -1.75 @1.88（另有 -1.5 主流盘·待核）——市场按"净胜2球"定价</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="qa">仅1次：2018友谊赛卡塔尔 1-0 爆冷胜——本场是两队首次正式交手</td></tr>
+    </table>
+    <div class="note">📌 概率为 bet365 赔率去水后的隐含概率（73/17/10）。各书商对瑞士的报价区间很宽（1.21–1.30），FanDuel 隐含胜率高达 ~79%——书商之间的分歧本身说明"瑞士会赢"无争议、"赢几个"定价混乱。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面</span></h2>
+    <div class="sub">悬念低、星味有限——市场冷静，分歧全在大小球与让球幅度</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识极强但无情绪溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Polymarket 本场成交约 $43万，属开赛周中低档；价格三平台一致（瑞士 ~81¢）。没有人押卡塔尔，也没有人为瑞士抬价——这是"无聊的正确"，情绪面干净，判断靠数据即可。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：瑞士胜 4 · 大球 2 · 小球 2 — 胜负零分歧）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>卡塔尔 1-2 瑞士：铁桶能撑一段，但质量差最终显现</td></tr>
+      <tr><td>RotoWire</td><td>战术前瞻</td><td>瑞士赢1-2球，2-0 / 2-1 最可能</td></tr>
+      <tr><td>SportsLine · Martin Green</td><td>认证盈利专家</td><td>倾向<b>大 2.5 球</b>（1.69）：瑞士火力 + 卡塔尔防线被持续施压后崩口</td></tr>
+      <tr><td>Dimers 模型</td><td>量化模型</td><td>瑞士胜率 72.1%，最可能比分 <b>0-2</b>（12.9%）</td></tr>
+      <tr><td>AI 面板 · ChatGPT</td><td>NYSportsDay 三模型</td><td>瑞士 -1.5——直接打净胜球</td></tr>
+      <tr><td>AI 面板 · Claude</td><td>同上</td><td>瑞士胜，但点名 <b>-475（1.21）偏贵</b>：模型胜率 72-79%，价格已到顶</td></tr>
+      <tr><td>AI 面板 · Gemini</td><td>同上</td><td>反向取<b>小 2.5 球</b>（2.15）：铁桶+暴晒+正午档，进球被结构性压低</td></tr>
+      <tr><td>Sportskeeda</td><td>预测媒体</td><td>BTTS No：卡塔尔很难进球</td></tr>
+    </table>
+    <div class="flag">⚠ <b>结构信号</b>：8 个信源 0 个押卡塔尔不败——方向共识比墨西哥揭幕战还极端，但<b>没有伴随价格泡沫</b>（瑞士价稳定在 1.21-1.30 区间未持续压缩）。真正的分歧在大小球：Green/Dimers 看 2-0 以上，Gemini/部分模型看 2.5 以下——"瑞士 2-0"恰好是两派的交集，也是赔付最低的共识比分。</div>
+
+    <h4 style="margin-top:20px">② 赔率与资金面（美式已换算小数）</h4>
+    <table>
+      <tr><th>市场</th><th>瑞士胜</th><th>平局</th><th>卡塔尔胜</th></tr>
+      <tr><td>bet365</td><td class="ch">1.30</td><td>5.50</td><td class="qa">9.50</td></tr>
+      <tr><td>FanDuel / Lucky Rebel</td><td class="ch">1.21</td><td>6.50</td><td class="qa">14.00</td></tr>
+      <tr><td>大小 2.5</td><td colspan="3">大 1.69 / 小 2.15 — 盘面偏大球</td></tr>
+      <tr><td>Polymarket（成交≈$42.6万，6/11 为 $25.9万，临场放量）</td><td class="ch">81¢</td><td>14¢</td><td class="qa">6.8¢</td></tr>
+      <tr><td>Kalshi</td><td class="ch">81%</td><td>14%</td><td class="qa">7%</td></tr>
+    </table>
+    <div class="note">📌 预测市场（81%）比博彩去水概率（73%）更激进——散户在预测市场上把"瑞士必胜"买得更满；Polymarket 让球盘瑞士 -1.5 仅 58¢，再次印证"赢是共识、赢两个才半信半疑"。开盘→现价的完整时间线无单一权威来源，待核。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.oddsshark.com/soccer/world-cup/qatar-switzerland-odds-june-13-2026-2494713">OddsShark — 赔率</a> · <a href="https://www.sportsline.com/insiders/qatar-vs-switzerland-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Green</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-qatar-vs-switzerland-world-cup-2026/">NYSportsDay — AI三模型</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-qat-che-2026-06-13">Polymarket</a> · <a href="https://www.sportscasting.com/news/supercomputer-qatar-vs-switzerland-betting-picks-predictions-odds/">SportsCasting/Dimers</a> · <a href="https://www.sportskeeda.com/football/qatar-vs-switzerland-prediction-betting-tips-june-13th-2026">Sportskeeda</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:11px;font-weight:700;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:999px;padding:2px 9px;vertical-align:middle">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇶🇦 卡塔尔 预测首发（5-4-1 / 4-3-3）</h4>
+    <div class="lineup">Abunada; Pedro Miguel · Khoukhi · 后防多名亚洲杯班底; 中场工兵群; Edmilson Junior · Afif（核心） · Abdurisag</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="qa">Akram Afif</td><td>边锋 / Al Sadd</td><td>队内身价最高（€4-8m，来源不一·待核）；国家队 125场39球；两届亚洲杯冠军核心——卡塔尔唯一的胜负手</td></tr>
+      <tr><td class="qa">Almoez Ali</td><td>中锋 / Al-Duhail</td><td>国家队历史射手王 126场60球；支点+抢点</td></tr>
+      <tr><td class="qa">Boualem Khoukhi / Pedro Miguel</td><td>中卫</td><td>老将组合，亚洲杯冠军班底；对抗瑞士高点（Embolo/Amdouni）是硬考验</td></tr>
+      <tr><td class="qa">Salah Abunada</td><td>门将</td><td>预计首发；本场预期面对 15+ 射门，他的发挥直接决定净胜球盘</td></tr>
+    </table>
+    <h4>🇨🇭 瑞士 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Kobel; Widmer · Akanji · Elvedi · Rodriguez; Xhaka(C) · Freuler; Ndoye · Rieder · Vargas; Amdouni（Embolo 竞争）</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ch">Granit Xhaka</td><td>后腰/队长 / 桑德兰（待核）</td><td>第4次世界杯；拆密集防守的节拍器，本场比赛的实际"主裁"</td></tr>
+      <tr><td class="ch">Breel Embolo</td><td>中锋</td><td>国家队 24球、欧预赛4球队内最佳；与 Amdouni 竞争首发</td></tr>
+      <tr><td class="ch">Dan Ndoye</td><td>边锋 / 诺丁汉森林（待核）</td><td>右路爆点，对位卡塔尔五后卫的翼卫身后</td></tr>
+      <tr><td class="ch">Gregor Kobel</td><td>门将 / 多特蒙德</td><td>Sommer 退队后确立主力；本场预期工作量极低，专注定位球</td></tr>
+    </table>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e08aa0">🇶🇦 卡塔尔 · Julen Lopetegui（洛佩特吉）</div>
+        <div class="role">5-4-1 低位块 + Afif 单点反击</div>
+        <ul class="cl">
+          <li>前皇马/西班牙主帅接手后定位现实：让出控球、压缩中路，把反击全权交给 Afif。</li>
+          <li>命门：6场不胜暴露的不是防守而是<b>无法把控球转化为机会</b>——落后即死局。</li>
+          <li>2022 东道主三连败的心理包袱：卡塔尔世界杯正赛至今 0 胜 0 分 0 净胜球。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇭 瑞士 · Murat Yakin（雅金）</div>
+        <div class="role">4-2-3-1 · 控节奏 + 防守结构</div>
+        <ul class="cl">
+          <li>欧预赛进14失2的结构大师；不急不躁，用 Xhaka-Freuler 双轴把比赛"管理"到赢。</li>
+          <li>连续三届世界杯进16强后止步——本届目标明确：小组头名 + 突破八强天花板。</li>
+          <li>风险点：对铁桶阵的"破局耐心"历来偏保守，若 60 分钟 0-0，Yakin 的换人胆量是变量。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">瑞士持续压上、卡塔尔深度低位龟缩——角球几乎一边倒流向瑞士，悬念只在卡塔尔"摆得多死"会不会把总数也压下去。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table>
+      <tr><th>维度</th><th>🇶🇦 卡塔尔</th><th>🇨🇭 瑞士</th><th>含义</th></tr>
+      <tr><td>场均获得角球</td><td class="qa">≈2–3（低位反击为主，进攻端贫乏·估算待核）</td><td class="ch">4.33（欧预赛实测）</td><td>瑞士持续围攻=高角球产出；卡塔尔靠零星反击，很难造角</td></tr>
+      <tr><td>场均被迫角球</td><td class="qa">≈6+（被压制下大量解围出底线·估算待核）</td><td class="ch">3.17（欧预赛实测）</td><td>卡塔尔被持续施压→封堵解围出界，被动角球必然偏高</td></tr>
+      <tr><td>进攻侧重（边路/中路/高压）</td><td class="qa">边路单点反击（Afif）+ 零星定位球</td><td class="ch">边中结合 + Ndoye/Vargas 边路下底</td><td>瑞士下底传中被封堵=角球；卡塔尔几乎不下底</td></tr>
+      <tr><td>定位球威胁</td><td class="qa">中（Khoukhi/Almoez 高点抢点）</td><td class="ch">中高（Akanji/Elvedi/Embolo 制空）</td><td>瑞士角球转化威胁更高，但本身也吃下大量角球</td></tr>
+      <tr><td>角球占优倾向</td><td class="qa">明显劣势</td><td class="ch">大幅占优（净角球预计 +4 ~ +6）</td><td>角球差是本场最确定的单边方向之一</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球<b>大小球总数线 9.0</b>：大 <b>@1.91</b> / 小 <b>@1.89</b>（Pinnacle）。角球<b>让球线：瑞士 -3.5 @1.87</b> / 卡塔尔 +3.5 @1.92（Pinnacle）。分队角球：卡塔尔 <b>O/U 2.5</b>（大 1.79 / 小 1.97）、瑞士 <b>O/U 6.5</b>（大 2.13 / 小 1.67）。来源：Pinnacle。<span style="color:var(--warn)">[临场线/赔率可能浮动，待核]</span></p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>瑞士 4.33 vs 卡塔尔被迫约6+，理论净角球轻松落在 +4~+6 区间——瑞士 -3.5 的让球线方向无误，但已把"中位数级别的碾压"定价进去（赔率近乎五五开 1.87/1.92），并没有留出明显折扣。真正能撑住 -3.5 的前提是瑞士"持续围攻"剧本兑现；若卡塔尔摆得极死、瑞士只靠远射与零星下底，净角球可能掉到 +2~+3，让球线就会承压。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>总数线 9.0 是本模块最割裂的一项：瑞士近8场竞技赛事有7场角球不足6个（自身造角并不高产），叠加卡塔尔"切碎比赛、龟缩低位"会压低双方总和——这是看小的结构性论据。反向论据是若瑞士打出长时间阵地围攻、传中被五后卫不断封堵出界，被动角球会快速累积、把总数推过9。"摆铁桶压总数" vs "持续围攻刷角球"正是9.0这条线两面下注的核心矛盾。</div>
+    <div class="insight"><div class="who">变量与两面性</div>正午暴晒（约28°C）压低强度、增加饮水暂停，结构上利于"小角球总数"；卡塔尔的拖延/破坏节奏（叠加门将8秒、掷界5秒新规被吹严的可能）也会减少有效进攻回合。<b>两面性</b>：若瑞士早进球，卡塔尔可能被迫压出来,反而送出更多前场下底→瑞士角球与总数双双被推高；早失球的卡塔尔从"压总数"变成"刷瑞士角球"的助推器。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.pinnacle.com/en/soccer/fifa-world-cup/qatar-vs-switzerland/1620858176/">Pinnacle — 角球市场</a> · <a href="https://www.apwin.com/team/switzerland-national-team/corners/">APWin — 瑞士角球数据</a> · <a href="https://www.performanceodds.com/corners_team_opponent/16494/">PerformanceOdds — 球队/对手角球</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：洪都拉斯 <b>Said Martínez</b>——史上首位执法世界杯的洪都拉斯主裁。近49场约 <b>4.27 黄/场</b>、5红+5次两黄变红（待核）；点球率无可查样本；与两队均无执法历史（<b>无样本，如实说明</b>）。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷球/球门球 5 秒倒计时</b>：直接打击卡塔尔"切碎比赛+拖时间"的核心生存策略。</li>
+      <li><b>仅队长可与裁判沟通</b>：首次执法世界杯的 Martínez 面对的沟通压力被规则减半。</li>
+      <li><b>半自动越位</b>：瑞士反越位冲身后（Ndoye/Vargas）的临界球判罚更快。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">RotoWire <small>· B级 战术前瞻</small></div>瑞士的胜负手不在锋线而在两个后腰：Xhaka-Freuler 对卡塔尔中场四人的"换位拉扯"会在 30 分钟后撕开第一道口子；2-0/2-1 是结构上最自然的结果。</div>
+    <div class="insight"><div class="who">NYSportsDay AI 面板 <small>· 模型派样本</small></div>三模型方向一致（瑞士胜）但打法分裂成三路：-1.5（ChatGPT）、ML但嫌贵（Claude）、小2.5（Gemini）——模型派对"赢多少"的分歧与人类专家完全同构。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· B级 预测</small></div>1-2 或 0-2：卡塔尔的亚洲杯冠军班底有足够纪律把上半场拖成 0-0，但板凳深度差距会在 60 分钟后变成净胜球。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：瑞士 2-0 是专家与模型的共识交集；卡塔尔的现实目标是把净胜球控制在 1 个以内、守到 60 分钟后赌一次 Afif 的反击。</li>
+      <li><b>关键先生</b>：Xhaka（瑞/节奏）、Ndoye（瑞/爆点）、Afif（卡/唯一变量）、Abunada（卡/扑救上限决定盘口）。</li>
+      <li><b>胜负手</b>：瑞士破密集的耐心与定位球质量 vs 卡塔尔铁桶的纪律时长；正午高温是唯一站在卡塔尔一边的环境变量。</li>
+      <li><b>市场视角</b>：胜负无值——价值讨论全部集中在让球幅度与大小球；预测市场（81%）比博彩盘（73%）更自信，若临场瑞士价继续压向 1.20 以下，属情绪透支信号。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 卡塔尔身价 €19.9m 为单源数据；② 亚盘 -1.75 @1.88 来自 Sofascore 单源；③ Martínez 纪律数据（4.27黄/场）待核；④ 开盘→现价时间线未取得；⑤ 预测首发以赛前官方为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/qatar/world-cup-2026/preview/qatar-vs-switzerland-prediction-team-news-lineups_598996.html">Sports Mole — 前瞻/预测首发/近况</a> · <a href="https://www.rotowire.com/soccer/article/qatar-vs-switzerland-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-b-117815">RotoWire — 战术前瞻</a><br>
+      • <a href="https://www.oddsshark.com/soccer/world-cup/qatar-switzerland-odds-june-13-2026-2494713">OddsShark — 赔率</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-qat-che-2026-06-13">Polymarket — 预测市场</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-qatar-vs-switzerland-world-cup-2026/">NYSportsDay — AI面板/赔率</a><br>
+      • <a href="https://www.concacaf.com/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup">Concacaf — 裁判任命</a> · <a href="https://www.espn.com/soccer/story/_/id/48818354/granit-xhaka-captain-switzerland-world-cup-squad">ESPN — 瑞士名单</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-switzerland-players-squad-list-key-stats-schedule">Olympics.com — 瑞士关键球员</a> · <a href="https://www.weatherforyou.com/report/levis+stadium-ca">WeatherForYou — 天气</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',QA='#8a1538',CH='#d52b1e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['卡塔尔','瑞士'],datasets:[{data:[19.9,333.6],backgroundColor:[QA,CH],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['瑞士胜','平局','卡塔尔胜'],datasets:[{data:[73,17,10],backgroundColor:[CH,DR,QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞士','加拿大','波黑','卡塔尔'],datasets:[{data:[333.6,203.05,149.2,19.9],backgroundColor:[CH,'#d52b1e88','#3b6fb0',QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'卡塔尔',data:[5.5,4,4.5,5,5,4.5],borderColor:QA,backgroundColor:QA+'55',pointBackgroundColor:QA},
+   {label:'瑞士',data:[8.5,7,8,7,7.5,8],borderColor:CH,backgroundColor:CH+'33',pointBackgroundColor:CH}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

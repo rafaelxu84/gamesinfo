@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Norway vs France · 2026 World Cup Group I Final Round (Top spot at stake · France top with a draw / Norway must win)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-norway-vs-france.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-norway-vs-france.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-norway-vs-france.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-norway-vs-france.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-norway-vs-france.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group I Final Round · Top spot at stake (France top with a draw / Norway must win) · Mbappé vs Haaland</span>
+  <h1>Norway vs France</h1>
+  <div class="meta">Friday, 26 June 2026 · Foxborough, Boston Stadium (Gillette Stadium) · 15:00 local / 15:00 ET / 20:00 BST / 19:00 GMT · Group I final round · Group opponents: Senegal, Iraq (both already eliminated, 0 points)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇳🇴 Norway</div><div class="rk">4-1 Iraq + 3-2 Senegal · 6 pts (GD +4, 7 scored) · Through; must win to take top spot · Haaland braces in back-to-back games · Ryerson injury to monitor · rotation expected</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇫🇷 France</div><div class="rk">3-1 Senegal + 3-0 Iraq · 6 pts (GD +5, 6 scored) · Through; a draw secures top spot · Mbappé 4 goals · Head coach Deschamps absent (Stéphan deputising) · rotation expected</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the Group I final-round <b>"top-spot decider, but both sides are already through"</b> clash, and one of the talking points of this World Cup — <b>Mbappé vs Haaland</b> (both already on 4 goals, vying for the Golden Boot alongside Messi). The arithmetic is clear: <b>France 6 pts, goal difference +5 (6 scored); Norway 6 pts, goal difference +4 (7 scored)</b>. Both sides beat the same two opponents in their opening Group I games (Senegal, Iraq); the only difference is France's one extra goal of difference — <b>so France only need a draw to lock up top spot, while Norway must win to leapfrog them</b> (when level on points the head-to-head comes first, and this match is the direct meeting, so the winner ranks higher). The real significance of top spot: <b>the group winner faces one of the better third-placed teams in the round of 32 (seen as a relatively favourable draw, possibly Sweden, with a potential round-of-16 opponent on Germany's side); the runner-up most likely meets the Group E runner-up (Côte d'Ivoire / Ecuador) and could later run into Brazil / Netherlands, with England's side looming in the quarters — multiple outlets consider the top-spot draw more favourable</b>. But both are already qualified + the turnaround is short, so <b>both have openly said they will rotate</b>: Norway boss Solbakken has publicly said "there will be some changes" (several players cramped up late against Senegal, the game ended with 9 men); France's Deschamps has returned home to France following the death of his mother, with assistant Guy Stéphan taking charge, and the squad depth allows midfield rotation. The model and the market both make France clear favourites: Opta's supercomputer has <b>France 55.4% win / draw 21.6% / Norway 23.0%</b>; the market has a France win around <b>1.62</b> (FanDuel -160), draw <b>4.50</b>, Norway win <b>4.50</b> (+360–+400); on the Asian line <b>France -1 (about 2.05) / Norway +1 (about 1.80)</b>, with the total leaning <b>Over on O/U 2.5</b> (Over around -150). Three things to watch: ① <b>how heavily each side rotates</b> (decides intensity and upset probability); ② <b>whether the Haaland/Mbappé Golden Boot race keeps both attacking at full tilt</b> (pushing the Over); ③ <b>the motivation gap between Norway needing to win and France being satisfied with a draw</b>. Base-case script: <b>goals, with France either edging it or drawing to secure top spot</b>, overheat index ≈ 2/5 (consensus leans France but the price has not been driven by hype, with the disagreement over rotation and over/under).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">France implied win prob. (de-vigged)</div><div class="v" style="color:#5aa8d8">≈58%</div></div>
+      <div class="key"><div class="k">Norway implied win prob. (de-vigged)</div><div class="v" style="color:#e8788a">≈21%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈21%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic + top-spot rules (multi-source confirmed)</b>: France 6 pts, GD +5 (6 scored); Norway 6 pts, GD +4 (7 scored). Both are already into the round of 32. <b>When level on points, the head-to-head comes first — this match is the direct meeting, so the winner ranks higher</b>; because France already lead on goal difference, <b>France top the group with a draw, and Norway must win to overtake them</b>. The opening lies in: Norway must actively chase the win, which may leave France space for the counter / positional play.</li>
+      <li><b>France's Deschamps absent, Stéphan deputising (multi-source confirmed)</b>: per ESPN, Al Jazeera and Opta Analyst, France head coach <b>Didier Deschamps has returned home to France following the death of his mother</b>, with assistant <b>Guy Stéphan</b> taking charge for this match. The French FA issued a public message of condolence. This is the biggest non-sporting variable heading in — it may affect selection and in-game management.</li>
+      <li><b>Both sides have openly flagged rotation (multi-source confirmed)</b>: Norway's Solbakken said plainly "there will be some changes" (several players cramped late against Senegal, all subs used, finished with 9 men); France's squad depth comfortably allows midfield rotation, with Theo Hernández expected to replace Digne. <span style="color:var(--warn)">Whether Haaland / Ødegaard start differs slightly by source (most predicted XIs still include both, but some sources suggest they could be rested) · TBC · the official team sheet is decisive.</span></li>
+      <li><b>The Golden Boot race is a hidden "attack at full tilt" switch</b>: Mbappé (16 goals in 16 games, level with Klose) and Haaland (braces in back-to-back games) are both chasing Messi for the Golden Boot. <b>Even with qualification secured and even with rotation, the two stars' personal-honour motivation may keep the game open and push the Over and both sides' goals</b> — this is the key difference from the usual "coast once qualified" script.</li>
+      <li><b>Norway's attacking firepower is real but the defence has cracks</b>: Norway scored 7 in two games (more than France), but conceded in both (3 total); Haaland's spark + the support of Nusa/Sørloth is a real threat, but their defensive quality lags behind the midfield and attack. France's Mbappé / Dembélé / Olise / Barcola pace and finishing are well placed to exploit it — see the key match news.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: Key Match News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and status signals affecting this fixture, with item-by-item explanation of how each changes the tactics or the result (key players / rotation cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Major match-day variable · France head coach Deschamps absent <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / Opta Analyst all agree · 2026-06-24/25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources agree: <b>Didier Deschamps has returned home to France following the death of his mother</b>, with assistant <b>Guy Stéphan</b> taking charge for this match</div>
+      <p style="font-size:13.5px">According to <b>ESPN, Al Jazeera and Opta Analyst (Tom Webber)</b>, France head coach Deschamps learned of his mother's passing on Tuesday (6/23) and has left the training camp to return to France for the funeral. The French FA issued a public statement: "In this immensely painful moment, we wish the head coach strength and assure him of the entire squad's support." Assistant <b>Guy Stéphan</b> has been appointed interim head coach and will lead the team against Norway until Deschamps returns. <span style="color:var(--warn)">[Actual impact on selection and in-game management · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This is the biggest <b>non-sporting variable</b> of the match. Deschamps was the tactical and dressing-room core of France's 2018 title and 2022 final run; a caretaker change plus the emotional factor could affect the starting selections, in-game adjustments and concentration. Layered on top of the low-pressure "already through + draw secures top spot" situation, France may lean toward a safe rotation rather than going all-out — a potential window for Norway's top-spot bid.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Norway vs France official preview</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — Team news</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ Key-player check · both sides flag rotation (incl. doubts over the stars) <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / RotoWire / Opta multi-source · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Norway's Solbakken says plainly "there will be changes"; France's squad depth comfortably allows midfield rotation; <b>whether Haaland / Ødegaard start differs slightly by source</b></div>
+      <p style="font-size:13.5px">Norway boss <b>Ståle Solbakken</b>, after the Senegal game (several players cramped late, finished with 9 men), said clearly: "There will be some changes … the shorter turnaround and players' condition mean others will get a chance … next time you'll find it harder to guess the XI." <b>The predicted XIs from Al Jazeera / ESPN / Opta mostly still list Haaland and Ødegaard</b> (Golden Boot motivation + the top-spot incentive), but <b>other sources (RotoWire's team-news angle) suggest both could be rested with qualification secured, to keep them fresh for the knockouts</b> — the takes differ. On the France side, the squad depth comfortably allows midfield rotation, <b>Theo Hernández is expected to replace Digne</b>, and Malo Gusto (back from injury) is pushing Koundé for the right-back slot. <span style="color:var(--warn)">[Whether Haaland / Ødegaard start, and the specific rotation lists on both sides · subject to the official FIFA team sheet before kickoff · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: How heavily they rotate directly drives <b>the match intensity, the upset probability and the over/under direction</b>. If both rotate heavily, intensity drops, the script opens up and upset room rises; if Haaland/Mbappé start as usual for the Golden Boot, attacking firepower is maintained and the Over probability rises. This is the most uncertain variable of the match and the one that most affects the market — no single prediction can be fully trusted, and the official team sheet is decisive.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Solbakken flags rotation</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — Predicted XI / team news</a> · <a href="https://www.rotowire.com/soccer/article/norway-vs-france-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119630" style="color:var(--accent)">RotoWire — Predicted XI / team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Norway · Ryerson injury <span style="color:var(--mut);font-weight:400">· Al Jazeera / Opta multi-source · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Right back <b>Julian Ryerson</b> went off in the 13th minute against Senegal with a thigh injury; <b>Marcus Pedersen most likely deputises</b></div>
+      <p style="font-size:13.5px">Norway's <b>Julian Ryerson</b> lasted only 13 minutes against Senegal before going off with a thigh problem, and his replacement <b>Marcus Pedersen</b> then scored the opener. Several reports indicate Ryerson is likely to remain out and be replaced by Pedersen for this match; in defence Leo Østigård could come in for Heggem or Ajer, and in midfield Aursnes could be rested to give Thorstvedt a chance. <span style="color:var(--warn)">[Severity of the Ryerson injury and the exact XI · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Norway's defence already trails their midfield and attack, and a change on the right plus rotation will further affect its defensive stability. Against the wide pace of Mbappé / Dembélé / Barcola, Norway's full-backs and the back-three/four transitions are the weak link that will be targeted.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — Ryerson off injured</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Monitoring Ryerson's status</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Referee + weather <span style="color:var(--mut);font-weight:400">· ESPN official preview / Opta · 06-24/25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: England's <b>Michael Oliver</b>; Foxborough, Boston Stadium (Gillette) · forecast may include thunderstorms</div>
+      <p style="font-size:13.5px">Per ESPN's official pre-match preview, the referee is England's top international official <b>Michael Oliver</b>. The venue is the New England Patriots' home, <b>Gillette Stadium (tournament name Boston Stadium)</b>, an open-air ground. Opta notes the forecast shows the match <b>may be affected by thunderstorms</b> (France's last game against Iraq was interrupted by a thunderstorm for about 130 minutes). <span style="color:var(--warn)">[Full officiating team and VAR pairing, plus Oliver's per-game cards/penalty breakdown for this and the last two major tournaments · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Oliver is an experienced, decisive top referee with a clear threshold for physical duels. This tournament's unified new rules lean strict (only the captain may speak to the referee, the 8-second goalkeeper rule, semi-automated offside) — semi-automated offside will precisely catch Haaland / Mbappé on their marginal runs. If a thunderstorm causes a stoppage, the rhythm and players' fitness management will be disrupted, with a bigger impact on rotated XIs. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Referee/venue</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Weather note</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups & What They Mean (lineup-watch) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Officially confirmed (Football Italia official sheet + Yahoo/World Soccer Talk agree) · written T-50</span></h2>
+
+    <h4>🇳🇴 Norway Confirmed XI (4-3-3) · Solbakken · <b style="color:var(--good)">heavy rotation as flagged</b></h4>
+    <div class="lineup">Selvik; Aursnes · Falchener · Östigård · Bjørkan; Berg(C) · Thorstvedt · Aasgaard; Bobb · Strand Larsen · Schjelderup</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: <b style="color:var(--txt)">Erling Haaland</b> (4 goals this WC, Golden Boot contender — benched), <b style="color:var(--txt)">Martin Ødegaard</b> (captain/playmaker — benched), Alexander Sørloth, Antonio Nusa, Sander Berge. Captain's armband goes to <b>Patrick Berg</b>.</div>
+
+    <h4>🇫🇷 France Confirmed XI (4-2-3-1) · Guy Stéphan caretaker · <b>only 2 changes</b></h4>
+    <div class="lineup">Maignan; Koundé · Upamecano · Lacroix · T. Hernández; Tchouaméni · Koné; Olise · Doué · Dembélé; Mbappé(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: Adrien Rabiot (rested), N'Golo Kanté, Bradley Barcola, Marcus Thuram, Rayan Cherki, William Saliba, Ibrahima Konaté. Mbappé keeps the armband; the squad wears black armbands (Deschamps returned to France after his mother's death; FIFA reportedly declined the armband request).</div>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">vs Predicted XI</h5>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">Norway · stars</td><td>Haaland + Ødegaard start</td><td><b style="color:var(--good)">both benched</b></td><td>The preview's "Haaland vs France CBs" / "Mbappé vs Haaland duel" angle is void — Norway saves its core for the knockouts</td></tr>
+      <tr><td class="ht">Norway · overall</td><td>Nyland/Pedersen/Ajer/Heggem/Nusa/Sørloth/Berge…</td><td><b>10/11 changed, only Aursnes kept</b> (now at RB)</td><td>Front three becomes Bobb-Strand Larsen-Schjelderup — far less explosive and clinical</td></tr>
+      <tr><td class="sc">France · CB</td><td>Saliba</td><td>Lacroix</td><td>Saliba rested; Lacroix partners Upamecano — slightly less defensive steel but enough vs a backup Norway attack</td></tr>
+      <tr><td class="sc">France · DM</td><td>Rabiot</td><td>Koné</td><td>Rabiot rested; Koné gets a second straight start alongside Tchouaméni; Mbappé/Dembélé/Olise/Doué front line all retained</td></tr>
+    </table>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">Tactical read</h5>
+    <ul style="font-size:13.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><b>Formation signal</b>: Norway is nominally 4-3-3 but effectively a second-string XI — expectations for Norway's attacking firepower must be <b>cut sharply</b>; France changed only 2 and kept all front-line creators, so its intent to win and take top spot is clearly higher.</li>
+      <li><b>Key match-ups reset</b>: Lacroix/Upamecano face Strand Larsen, not Haaland — a lower duel level; France's wide trio Dembélé/Olise/Doué with Koundé/Theo overlapping can pin Norway's two backup full-backs (Aursnes/Bjørkan).</li>
+      <li><b>Rotation intent</b>: both are through and this decides top spot (France tops with a draw), but Norway rotates far more heavily — almost conceding top spot to bank knockout fitness; France keeps its spine.</li>
+      <li><b>X-factor</b>: Haaland/Ødegaard on the bench remain a threat if Norway trails or France tires late (compounded by possible thunderstorms at the venue).</li>
+      <li><b style="color:var(--good)">Snapshot verdict · revised</b>: the original read assumed "real Norway firepower / dual-star shootout." It is now <b>revised</b> — Norway's first choice sits, France holds a double edge in quality and motivation, strengthening the France/handicap side; but France isn't full-strength either (Rabiot/Saliba rested) and cohesion + storm risk keep a tail chance of an upset.</li>
+    </ul>
+
+    <div class="note"><b>Market reaction (qualitative)</b>: opening France <b>1.62</b> / draw <b>4.50</b> / Norway <b>4.50</b> (decimal). Norway resting its core (Haaland, Ødegaard, Nusa, Sørloth all benched) is a major signal that typically nudges the line further toward France (France shortens, Norway drifts) once the sheet drops. Factual statement only — not betting advice; exact movement per the live market.</div>
+
+    <div style="font-size:12px;margin-top:10px;color:var(--mut)">Sources: <a href="https://football-italia.net/world-cup-2026-norway-france-senegal-iraq/" style="color:var(--accent)">Football Italia — official lineups</a> · <a href="https://sports.yahoo.com/articles/france-vs-norway-starting-lineups-130000933.html" style="color:var(--accent)">Yahoo Sports — confirmed XI</a> · <a href="https://worldsoccertalk.com/world-cup/are-haaland-and-mbappe-playing-norway-vs-france-projected-lineups-for-the-2026-world-cup-group-i-game/" style="color:var(--accent)">World Soccer Talk — Confirmed lineups</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489" style="color:var(--accent)">FIFA Match Centre</a></div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Win/draw/loss implied probability (de-vigged) · Group I picture · Over/Under market · Composite strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group I four-team points (before final round)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Composite strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇳🇴 Norway</th><th>🇫🇷 France</th></tr>
+      <tr><td>First two rounds</td><td class="ht">4-1 Iraq + 3-2 Senegal (6 pts, GD +4, 7 scored)</td><td class="sc">3-1 Senegal + 3-0 Iraq (6 pts, GD +5, 6 scored)</td></tr>
+      <tr><td>Group I points (before final round)</td><td colspan="2">France 6 (GD +5, 6 scored) currently top, Norway 6 (GD +4, 7 scored) second; Senegal 0, Iraq 0, both eliminated. Both already into the round of 32</td></tr>
+      <tr><td>Top-spot scenarios</td><td class="ht">Must win to leapfrog into top spot (the direct meeting is the head-to-head)</td><td class="sc">A draw secures top spot (already ahead on goal difference); a win also tops</td></tr>
+      <tr><td>Head coach</td><td class="ht">Ståle Solbakken (has flagged rotation)</td><td class="sc">Didier Deschamps (absent) · Guy Stéphan deputising</td></tr>
+      <tr><td>Key players</td><td class="ht">Haaland, Ødegaard, Nusa, Sørloth, Berge</td><td class="sc">Mbappé, Dembélé, Olise, Tchouaméni, Saliba/Upamecano</td></tr>
+      <tr><td>Notable status</td><td class="ht">Ryerson thigh injury (likely out); several cramped vs Senegal → rotation</td><td class="sc">No injuries reported; Gusto back from injury pushing for a start</td></tr>
+      <tr><td>Things to watch / questions</td><td class="ht">Must win vs rotation; can Haaland's Golden Boot motivation pry open top spot</td><td class="sc">Draw is enough + rotation vs going all-out; will Mbappé start</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win ≈4.50 (implied ≈21%)</td><td class="sc">Win ≈1.62 (implied ≈58%) · Draw ≈4.50 (≈21%)</td></tr>
+      <tr><td>Handicap / Over-Under</td><td colspan="2" class="sc">France -1 (about 2.05) / Norway +1 (about 1.80); total O/U 2.5 leaning Over (Over around -150)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied probabilities after de-vigging the decimal odds (France 1.62 / draw 4.50 / Norway 4.50, normalised to about 58/21/21), consistent in direction with Opta's supercomputer (France 55.4% / draw 21.6% / Norway 23.0%). Odds sources: FanDuel (France -160 / draw +350 / Norway +360), DraftKings (France -160 / Norway +400), Sofascore/Lineups composite; Asian line France -1, total O/U 2.5 leaning Over. <b>How heavily each side rotates + the stars' Golden Boot motivation</b> are the core variables for the over/under and handicap depth. Specific odds subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this World Cup's actuals · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying)</b> against <b>this World Cup's actuals (first two rounds)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical average vs this World Cup's actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (first two rounds)</th><th>Gap and reading</th></tr>
+      <tr><td class="ht">🇳🇴 Norway · Attack</td><td class="ht">First World Cup in 28 years (last 1998, reached the round of 16); qualifying / warm-ups reliant on Haaland's finishing + Ødegaard's playmaking, with Nusa/Sørloth support</td><td class="ht">7 goals in 2 games (4-1 Iraq, 3-2 Senegal); Haaland with braces in back-to-back games (4 at this tournament)</td><td><b>Firepower above expectations</b>: Opta notes Norway have created 10 big chances at this tournament (most in Group I, and already more than their 9 across the entire 1998 campaign). Haaland is a genuine spark <span style="color:var(--warn)">(public per-game xG sample limited · TBC)</span></td></tr>
+      <tr><td class="ht">🇳🇴 Norway · Defence</td><td class="ht">A back-three/four system with defensive quality trailing the midfield and attack; scarce major-tournament experience (the team's first World Cup in nearly 28 years)</td><td class="ht">3 conceded in 2 games (conceded in both); several cramped late against Senegal, finished with 9 men</td><td><b>A clear weakness</b>: conceding in both games, the defensive transitions and fitness are the soft spots; Ryerson's injury further weakens the right, and against France's wide pace this is the Achilles heel</td></tr>
+      <tr><td class="sc">🇫🇷 France · Attack</td><td class="sc">2018 champions, 2022 finalists; Mbappé-led transitions and individual bursts are the trademark; squad depth is world-class</td><td class="sc">6 goals in 2 games (3-1 Senegal, 3-0 Iraq); Mbappé 4 goals (16 in 16 games, level with Klose), Dembélé off the mark</td><td><b>Stable and deep</b>: balanced firepower, with extremely high bench quality (Barcola/Doué/Thuram/Cherki etc.) so rotation does not drop the level <span style="color:var(--warn)">(public per-game xG sample limited · TBC)</span></td></tr>
+      <tr><td class="sc">🇫🇷 France · Defence</td><td class="sc">Top-tier defensive solidity after 2018/2022 (Saliba/Upamecano/Koundé/T.Hernández + Maignan)</td><td class="sc">1 conceded in 2 games (only 1 vs Senegal); structurally sound</td><td><b>A very high floor</b>: France are the soundest defence in the group, conceding the fewest; even with rotation, the defensive depth still beats Norway's</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical reading</b>: Norway's attacking firepower has exceeded historical expectations (Haaland + 10 big chances), but the defence is a soft spot, conceding in both games; France continue the 2018/2022 throughline of "balanced firepower + defensive solidity + squad depth", conceding the fewest. The deep data supports the throughline of "France edge it or draw to top the group, Norway riding Haaland's individual quality for an upset + an Over lean." Sources: Opta Analyst (10 big chances) · FotMob/Sofascore (first two rounds) · FIFA / team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection & Opta calibration + trap alerts</h4>
+    <table>
+      <tr><td>This match's model xG projection (magnitude · highly volatile due to rotation)</td><td class="ht">Norway ≈1.1–1.5</td><td class="sc">France ≈1.5–1.9</td><td>France slightly favoured, but because both may rotate the magnitude swings widely; Norway can create high-quality chances on Haaland's individual quality — consistent with the market's "France slight handicap + Over lean"</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Opta's supercomputer gives France 55.4% win / draw 21.6% / Norway 23.0%; de-vigged market about 58/21/21, consistent in direction toward France</td><td>France's overall strength and squad depth are clearly a tier higher; Norway's hot form + Haaland is the switch for creating an upset</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="ht">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Norway, who must win, will press proactively and raise field tilt; France, satisfied with a draw, may cede some possession and play transitions; rotation will simultaneously dampen both sides' pressing intensity</td><td><b>Trap alert</b>: ① both already through + both flag rotation → intensity may drop, the script opens up, <b>but Mbappé/Haaland's Golden Boot motivation is the reverse "attack at full tilt" switch</b>, keeping the Over/BTTS favoured; ② France top with a draw, so if they lead early they may turn defensive and suppress their own goals; ③ Norway must push up → exposing the defence to France's transitions; ④ Deschamps's absence + a possible thunderstorm stoppage are hard-to-quantify disturbances</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-style" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; with penalties removed it better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Big chance</b>: a high-probability scoring chance — Norway have 10 at this tournament, the most in Group I.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower = more aggressive pressing.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a "clearly leans France but the price has not been driven by hype" fixture — France a slight -1 handicap, the 1X2 still has genuine intrigue; the information content centres on rotation, the over/under and Golden Boot motivation</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · Consensus leans France but no frenzied one-way move; information centred on rotation/over-under/Golden Boot</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Experts lean France in one direction (≈58% de-vigged, supercomputer 55.4%), but the price has not been driven by hype — Norway still carries a genuine 4.50 (+360–+400), and bookmakers/media widely push <b>Over 2.5</b> (both can score, Golden Boot motivation). The real disagreement is over <b>how heavily each side rotates</b> and <b>whether Norway can spring an upset on Haaland</b>.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction leans France, disagreement over margin and over/under)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst (supercomputer)</td><td>Model</td><td>France 55.4% / draw 21.6% / Norway 23.0% — France are favourites</td></tr>
+      <tr><td>SI (Sports Illustrated)</td><td>North American media</td><td>France win; a supercomputer version once gave France 59.4%, backing France for top spot</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Leans a narrow France win; stresses France's squad depth still gives an edge even with rotation</td></tr>
+      <tr><td>OddsShark / Total Football Analysis</td><td>Data media</td><td><b>The Total Will Go OVER</b> — pushes Over 2.5 (both can score + Golden Boot motivation)</td></tr>
+      <tr><td>FanDuel Research / DraftKings</td><td>North American bookmaker research</td><td>France -160 favourites; includes Mbappé / Haaland goalscorer markets</td></tr>
+      <tr><td>Racing Post</td><td>UK veteran outlet</td><td>Offers a 6-1 Bet Builder angle (with a goals-galore lean); respects Norway's attack but still leans France</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (low)</b>: direction leans France but <b>not extreme</b>; Norway still carries a genuine 4.50, with a strong "Over/BTTS" consensus undercurrent. This is not a one-way, hype-priced fixture — the 1X2 has genuine intrigue, and the biggest uncertainty is <b>how heavily each side rotates</b> and <b>whether the stars' Golden Boot motivation keeps the game open</b>, rather than the result direction being driven by hype.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Norway win / draw / France win</th><th>Reading</th></tr>
+      <tr><td>Open (pre-match / composite)</td><td>1X2</td><td class="ht">≈4.50 / 4.50 / 1.62</td><td>France clear favourites, Norway a deep underdog <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>As of 06-25</td><td>FanDuel/DraftKings/Sofascore</td><td class="ht">Norway 4.50–5.00 (+360–+400) / draw 4.50 (+350) / France 1.62 (-160)</td><td>Books vary slightly, overall pricing France as clear favourites and Norway at ≈21–23%</td></tr>
+      <tr><td>06-25</td><td>Over/Under + handicap</td><td colspan="2" class="ht">France -1 (about 2.05) / Norway +1 (about 1.80); O/U 2.5 leaning Over (Over around -150); BTTS leans Yes</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning and movement trend (open → current)</h4>
+    <table>
+      <tr><th>Time</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Open (pre-season / days-out expectation)</td><td class="sc">France priced as a contender-level favourite, Norway respected as newcomers but underrated</td><td>Priced before the match as "title contenders France vs Norway returning to the World Cup after 28 years", France deeply favoured <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>Opening (after round two + goal-difference repricing)</td><td class="ht">France stay favourites (≈1.62); Norway ≈4.50</td><td><b>The repricing comes from round-two results</b>: France GD +5, conceded 1 (the soundest defence), Norway scored 7 but conceded in both (GD +4); the market makes France clear favourites. <b>Key logic: France being "top with a draw" actually reduces their need to go all-out, layered with Deschamps's absence + rotation flags — this is Norway's window to chase top spot / spring an upset</b></td></tr>
+      <tr><td>Current (06-25 → now)</td><td class="ht">France -1 (about 2.05); O/U 2.5 leaning Over; Norway +1 (about 1.80)</td><td>Price discovery centres on the <b>handicap depth</b> (can France beat Norway by more than one goal / the holding value of Norway +1) and the <b>over-under/BTTS</b> (both can score + Golden Boot motivation → Over lean); how heavily each side rotates and the stars' availability are the fine-tuning variables for handicap depth and the Over; media note that France's line often tightens within the final 48 hours due to public money</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning reading</b>: this is a "clearly leans France but the price has not been driven by hype" line — the 1X2 still has genuine price discovery, and Norway's 4.50 reflects the genuine tail of "must win + hot firepower + Haaland upset bid". The key variables are <b>how heavily each side rotates</b> (decides intensity and upset probability) and <b>the stars' Golden Boot motivation</b> (pushing the Over/BTTS). The core counter-intuitive point: France being "top with a draw" + Deschamps's absence + rotation flags are the real reasons Norway can chase top spot / spring an upset. Exact opening figures subject to each platform · TBC. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets</b>: direction is highly consistent with Opta's supercomputer / de-vigged odds (leaning France ≈55–58%). Top-spot market: France's probability of topping the group is significantly higher than Norway's (a draw is enough). Kalshi/Polymarket exact per-outcome shares for the single match were not found <span style="color:var(--warn)">[exact prediction-market shares · TBC]</span>.</li>
+      <li><b>Sentiment focus ①</b>: <b>the Mbappé vs Haaland Golden Boot duel</b> — both on 4 goals, chasing Messi (5 goals), with Mbappé 16 goals in 16 games to draw level with Klose. This is the biggest traffic point of the match, and the key to "may attack at full tilt even with rotation".</li>
+      <li><b>Sentiment focus ②</b>: <b>Haaland's "I don't really care about this one" comment</b> — he told Fox Sports plainly, "We've already qualified … I don't really care about this game … they (France) will probably win, and probably win the whole World Cup." This is widely read as a sign of a relaxed Norway mindset and possible rotation.</li>
+      <li><b>Sentiment focus ③</b>: <b>Deschamps's absence</b> — the France head coach away for the funeral, Stéphan deputising, is a non-sporting point of attention.</li>
+      <li><b>Public money / social-media volume breakdown</b>: no quantified data found <span style="color:var(--warn)">[public betting % / social-media quantification · TBC]</span>; qualitatively: public money leans France (favourites + squad), recreational books lean toward Over 2.5 / BTTS / star goalscorers.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite reading</b>: this is a "clearly leans France but the price has not been driven by hype" line, overheat index <b>2/5</b>. The 1X2 has genuine price discovery, and the core variables are <b>how heavily each side rotates</b> and <b>the stars' Golden Boot motivation</b>. The counter-intuitive point: France being "top with a draw" + Deschamps's absence + rotation flags are the reasons Norway can chase top spot / spring an upset. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/odds/_/gameId/760475">ESPN — Odds</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview">Opta Analyst — Supercomputer/preview</a> · <a href="https://www.oddsshark.com/soccer/world-cup/norway-france-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/norway-vs-france-prediction-picks-lineups-preview-and-best-bets-world-cup-2026-group-i">FanDuel Research</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/norway-vs-france-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aMxIm1b66uT1/">Racing Post — Bet Builder</a> · <a href="https://www.si.com/soccer/norway-vs-france-world-cup-preview-predictions-lineups-6-26-26">SI — Prediction</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: per ESPN's official pre-match preview, the referee is England's top international official <b>Michael Oliver</b>; the venue is Foxborough's <b>Gillette Stadium (tournament name Boston Stadium)</b>, an open-air ground, with Opta noting it <b>may be affected by thunderstorms</b>. <span style="color:var(--warn)">[Full officiating team and VAR pairing · TBC]</span></div>
+    <h4>Officiating threshold + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Michael Oliver is from England, a top referee in the Premier League and the Champions League / European competitions — experienced, decisive, with a clear and consistent threshold for physical duels. This World Cup's officiating environment leans strict (only the captain may speak to the referee, the 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>This / last two tournaments' actual sample</b>: Oliver's precise per-game cards/penalty breakdown for this and the last two World Cups has a limited public sample. <span style="color:var(--warn)">[Per-game yellow/penalty rate breakdown at major tournaments · no reliable major-tournament sample, no figures fabricated · TBC]</span>. Qualitative judgment: a top English referee has strong recognition of tactical fouls and box-area grappling.</li>
+      <li><b>Officiating history with both teams</b>: the notable public officiating-history sample with Norway and France is limited (<b>where there is no reliable sample, this is stated as such</b>).</li>
+      <li><b>Two-sidedness</b>: Norway must win → more high pressing and box-area aerial duels, and Haaland's physicality and grappling can easily produce free kicks/penalties; France's transitions and tactical-foul slowdowns also add card/penalty watch points. Semi-automated offside will precisely catch both sides' marginal runs (Haaland's / Mbappé's offside lines). If a thunderstorm causes a stoppage, the rhythm is disrupted, with a bigger impact on rotated XIs. Card/penalty markets are best treated as a lean, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-angle analysis</b>: France are clearly stronger here, so the referee's impact on the result is limited, with the main value in cards/penalties: Norway's box-area duels after pushing up and France's tactical fouls are the yellow-card/penalty watch points. Given Oliver's limited per-game major-tournament breakdown for this tournament, the related markets are best treated as a lean, not an actionable basis.</div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">3</span> Lineups & Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · Official version in the ✅ module above</span></h2>
+    <div class="sub">Predicted XIs (ESPN / Al Jazeera / Opta / RotoWire projections, unofficial; the official list is per the FIFA Match Centre before kickoff · TBC; both sides have flagged rotation)</div>
+    <h4>🇳🇴 Norway predicted XI (4-3-3 / 4-2-3-1) · Solbakken · rotation flagged</h4>
+    <div class="lineup">Nyland; Pedersen · Ajer · Heggem · Møller Wolfe; Aursnes · Berge · Ødegaard; Nusa · Haaland · Sørloth</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Erling Haaland</td><td>Striker / Man City</td><td>4 goals at this tournament (braces in back-to-back games); strong Golden Boot contender; Norway's one biggest spark, his availability is the focus <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="ht">Martin Ødegaard</td><td>Attacking mid/captain / Arsenal</td><td>Norway's playmaking core and talisman; the main supply line to Haaland; whether he is rested differs by source <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="ht">Antonio Nusa</td><td>Winger</td><td>Wide spark and penetration, a young pace type; opens space for Haaland</td></tr>
+      <tr><td class="ht">Ørjan Nyland</td><td>Goalkeeper</td><td>Must cope with the pace threat of Mbappé / Dembélé and France's transition finishing</td></tr>
+    </table>
+    <h4>🇫🇷 France predicted XI (4-2-3-1 / 4-3-3) · Guy Stéphan deputising · midfield rotation possible</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · T. Hernández; Tchouaméni · Rabiot; Dembélé · Olise · Doué/Barcola; Mbappé</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Kylian Mbappé</td><td>Forward/captain / Real Madrid</td><td>4 goals at this tournament, 16 in 16 games level with Klose; Golden Boot contender; almost certain to start even with rotation <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="sc">Ousmane Dembélé</td><td>Winger / PSG</td><td>Off the mark against Iraq; wide 1-v-1 and pace, a weapon to attack Norway's flank</td></tr>
+      <tr><td class="sc">Michael Olise</td><td>Winger/attacking mid / Bayern</td><td>In excellent form; both creation and finishing, an important piece in France's front-line rotation</td></tr>
+      <tr><td class="sc">William Saliba / Upamecano</td><td>Centre-back / Arsenal·Bayern</td><td>The core of France's defensive solidity; only 1 conceded in two games, key to stopping Haaland</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analytical projections (ESPN / Al Jazeera / Opta / RotoWire), and the versions differ slightly across sources (e.g. France's midfield choice between Kanté and Tchouaméni/Rabiot, and the wide choice between Doué and Barcola; whether Norway's Østigård replaces Heggem/Ajer), <b>the official team sheet is decisive · TBC</b>. The focus for both is <b>how heavily they rotate</b>: Norway's Solbakken has flagged changes, Ryerson is out injured with Pedersen deputising, Haaland/Ødegaard's availability TBC; France with Stéphan deputising, Theo Hernández replacing Digne, Gusto pushing Koundé, and possible midfield rotation <span style="color:var(--warn)">[XIs · TBC]</span>.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style & Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual approach and results in their last two major tournaments (World Cup + continental competition / France 2018+2022 and Norway 1998+this tournament)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇳🇴 Norway · Ståle Solbakken</div>
+        <div class="role">4-3-3 / 4-2-3-1 · Haaland as the pivot + Ødegaard playmaking + wide pace, must press proactively</div>
+        <ul class="cl">
+          <li>Under Solbakken, Norway use <b>Haaland as the finishing pivot, Ødegaard as the playmaking core, and Nusa/Sørloth providing the flank and second balls</b>. At this tournament they flowed freely with 4-1 over Iraq and 3-2 over Senegal (7 goals in two games, Opta count of 10 big chances, the most in Group I), but conceded in both — <b>hot in attack, cracks at the back</b>.</li>
+          <li>Cross-reference: Norway's first World Cup in nearly 28 years (round of 16 in 1998, then long absences), so <b>major-tournament experience is scarce</b>; Opta notes Norway have never previously beaten a European side at a World Cup (P5 D2 L3). This Norway is advancing on Haaland's individual quality and hot form, with the system and major-tournament resilience an unknown.</li>
+          <li>This match's entry point: having to win means Norway must press up and use Haaland's box-area aerial presence + Ødegaard's supply + Nusa's pace to prise France open. But pushing up inevitably exposes space behind, leaving openings for France's Mbappé / Dembélé transitions — and with Ryerson out injured and possible rotation, the defence is the Achilles heel to be targeted. Haaland's Golden Boot motivation is his reason to "attack at full tilt even with rotation".</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇫🇷 France · Didier Deschamps (absent) · Guy Stéphan deputising</div>
+        <div class="role">4-2-3-1 / 4-3-3 · Mbappé-led transitions + individual bursts + top-tier squad depth</div>
+        <ul class="cl">
+          <li>Deschamps's France are the modern-power template of <b>2018 champions, 2022 finalists</b>: top-tier defensive solidity (Saliba/Upamecano/Koundé/T.Hernández + Maignan), a midfield shield (Tchouaméni/Rabiot/Kanté), and a front line reliant on Mbappé's pace and individual bursts + Dembélé/Olise's wide creation. At this tournament, 6 goals in two games, only 1 conceded, with firepower and defence in balance.</li>
+          <li>Cross-reference: the 2018/2022 France both excelled at <b>"ceding some possession and finishing with world-class transitions and individual quality"</b>, which is especially lethal against attacking sides — exactly the risk when Norway must push up. <b>Squad depth is world-class</b> (the bench has Barcola/Doué/Thuram/Cherki/Mateta etc.), so even rotation barely drops the level, a resource other teams can hardly match.</li>
+          <li>This match's approach: a draw secures top spot → France have no need to go all-out, and can safely rotate the midfield, control the tempo and pick their moment to harvest the space behind Norway's push-up with Mbappé / Dembélé transitions. <b>The biggest variable is Deschamps's absence (Stéphan deputising)</b> — a caretaker change + the low-pressure situation could make France more conservative, leaving Norway a window to chase top spot. If a thunderstorm causes a stoppage, managing the tempo of a rotated XI is an extra test.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst (Tom Webber) <small>· Supercomputer / preview</small></div>France 55.4% win / draw 21.6% / Norway 23.0% — Norway may rotate in several spots, France are the favourites. But Norway have already created 10 big chances at this tournament (most in Group I, more than their 9 across all of 1998), and Haaland's firepower is real; this is not a lifeless "garbage time" clash.</div>
+    <div class="insight"><div class="who">SI / Sports Mole <small>· North American / prediction media</small></div>Several lean toward a narrow France win and back them for top spot: France's squad depth still gives an edge even with rotation, Norway's defence (conceding in both games) is the soft spot, and the pace of Mbappé/Dembélé/Olise/Barcola is well placed to exploit it.</div>
+    <div class="insight"><div class="who">OddsShark / Total Football Analysis <small>· Data media</small></div>Strongly push <b>Over 2.5</b>: both can score (BTTS leans Yes), and with Mbappé/Haaland's Golden Boot motivation, the game may stay open and goal-heavy even with rotation.</div>
+    <div class="insight"><div class="who">Composite · core intrigue and traps <small>· Opta / Al Jazeera</small></div>⚠ Trap alert: ① both already through + both flag rotation → intensity may drop, upset room rises; ② but Mbappé/Haaland's Golden Boot motivation is the reverse "attack at full tilt" switch, pushing the Over/BTTS; ③ France top with a draw, so if they lead early they may turn defensive and suppress their own goals; ④ Deschamps's absence (Stéphan deputising) + a possible thunderstorm stoppage are hard-to-quantify disturbances; ⑤ Haaland is the switch for creating an upset.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment & Verification Checklist</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a narrow France win or a draw (a draw secures top spot) is the base-case script. Strength and squad depth clearly lean France (GD +5, fewest conceded, the 2018/2022 power pedigree, overwhelming bench quality); Norway must win and are forced to push up, conceding in both games + Ryerson out injured, which France's transitions are well placed to exploit. But Norway's firepower is hot (7 goals in two games, 10 big chances), and Haaland is a genuine variable who can spring an upset or force the game open.</li>
+      <li><b>Key man</b>: Haaland (NOR / finishing spark + Golden Boot motivation), Ødegaard (NOR / playmaking talisman), Nusa (NOR / wide pace); Mbappé (FRA / pace and individual bursts + Golden Boot), Dembélé/Olise (FRA / wide creation), Saliba/Upamecano (FRA / defensive solidity). <b>France head coach Deschamps is absent, Stéphan deputising</b>.</li>
+      <li><b>Deciding factors</b>: ① how heavily each side rotates — decides intensity and upset probability; ② whether Norway can push up without being cut open at the back by France's transitions; ③ whether France being "top with a draw" + Deschamps's absence makes them more conservative and leaves Norway a window to chase top spot; ④ whether Mbappé/Haaland's Golden Boot motivation keeps the game open (pushing the Over/BTTS).</li>
+      <li><b>Market view</b>: a line that clearly leans France but whose price has not been driven by hype (≈58/21/21, supercomputer 55.4%), overheat index 2/5; the 1X2 has genuine price discovery. The core variables are how heavily each side rotates + the stars' Golden Boot motivation. The counter-intuitive point: France being "top with a draw" + the head coach's absence + rotation flags are the real reasons Norway can chase top spot / spring an upset.</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>: ① Both official XIs (FIFA Match Centre ~1 hr before kickoff) — <b>whether Haaland / Ødegaard start differs by source</b>, France's midfield (Kanté vs Tchouaméni/Rabiot) and wide (Doué vs Barcola) choices, Norway's defence (whether Østigård replaces Heggem/Ajer); ② severity of the Ryerson injury (Pedersen likely deputises, already multi-source); ③ the actual impact of Deschamps's absence on selection and in-game management (the absence itself is multi-source confirmed); ④ Oliver's full officiating team and VAR pairing, and his per-game cards/penalty breakdown for this and the last two tournaments (where there is no reliable major-tournament sample, this is stated as such); ⑤ the exact goal-difference and tie-break rules for top spot/runner-up (points → head-to-head → head-to-head goal difference → head-to-head goals scored → overall goal difference → overall goals scored → fair-play points → drawing of lots), and the specific round-of-32 fixtures and times (per FIFA's official bracket); ⑥ the handicap line (France -1) and the over-under total (O/U 2.5), with exact opening figures subject to the live pre-match market; ⑦ exact prediction-market single-match shares, public betting % / social-media quantification not found; ⑧ whether a thunderstorm actually affects the match (forecast only).</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — Norway vs France official preview (referee/venue/XIs/Deschamps absence)</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups">Al Jazeera — Team news/qualification scenarios/Haaland comments</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview">Opta Analyst — Supercomputer 55.4/21.6/23.0 + rotation flags + weather</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — Group I points/tie-break rules</a> · <a href="https://www.skysports.com/football/news/12098/13543102/world-cup-2026-group-i-guide-fixtures-schedule-standings-and-odds-for-france-senegal-iraq-and-norway">Sky Sports — Group I guide/picture</a> · <a href="https://www.espn.com/soccer/story/_/id/49082534/group-2026-world-cup-teams-records-stats-know-france-senegal-iraq-norway">ESPN — Group I data</a> · <a href="https://sports.yahoo.com/articles/france-vs-norway-scenarios-explained-070002551.html">Yahoo — Top-spot/draw scenarios</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/norway-vs-france-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119630">RotoWire — Predicted XIs/team news</a> · <a href="https://www.si.com/soccer/norway-vs-france-world-cup-preview-predictions-lineups-6-26-26">SI — Prediction/squads</a> · <a href="https://www.sportsmole.co.uk/football/norway/world-cup-2026/preview/norway-vs-france-prediction-team-news-lineups_600014.html">Sports Mole — Prediction/squads</a><br>
+      • <a href="https://www.espn.com/soccer/odds/_/gameId/760475">ESPN — Odds</a> · <a href="https://www.oddsshark.com/soccer/world-cup/norway-france-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/norway-vs-france-prediction-picks-lineups-preview-and-best-bets-world-cup-2026-group-i">FanDuel Research — Odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/norway-vs-france-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aMxIm1b66uT1/">Racing Post — Bet Builder</a> · <a href="https://www.sofascore.com/news/norway-vs-france-preview-form-odds-lineups">Sofascore — Odds/squads</a><br>
+      • <a href="https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup">Wikipedia — France World Cup history (2018 champions/2022 runners-up)</a> · <a href="https://en.wikipedia.org/wiki/Norway_at_the_FIFA_World_Cup">Wikipedia — Norway World Cup history (1998 round of 16)</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-25 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Norway win','Draw','France win'],datasets:[{data:[21,21,58],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[60,40],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, Over lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['France','Norway','Senegal','Iraq'],datasets:[{data:[6,6,0,0],backgroundColor:[SC,HT,'#9aa6c0','#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:8,title:{display:true,text:'Points (before final round · France GD+5 / Norway GD+4)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Norway',data:[5.5,8,6.5,7,8.5,4.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'France',data:[8.5,8.5,8,8.5,9,9],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

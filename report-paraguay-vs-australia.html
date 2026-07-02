@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 巴拉圭 vs 澳大利亚 · 2026世界杯 D组末轮（直接出线生死战）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-paraguay-vs-australia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d11f33;--sc:#f9c00c;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a4f9c,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241016,#1a1c10);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a96;font-weight:600}td.sc{color:#f0d869;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · D组末轮 · 直接出线生死战（巴拉圭须取胜 vs 澳大利亚平局即出线）</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 巴拉圭 0-0 澳大利亚</span>
+  <h1>巴拉圭 vs 澳大利亚</h1>
+  <div class="meta">2026年6月25日 · 加州 Santa Clara · Levi's Stadium · 19:00 本地（PT）/ 22:00 ET · D组（同组：美国、土耳其）· 末轮（同时进行：土耳其 vs 美国）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a96">🇵🇾 巴拉圭</div><div class="rk">1-4 美国 + 1-0 土耳其 · 3 分（净 -2）· <b>基本必须取胜</b>才稳出线，平/负须看最佳第三名</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0d869">🇦🇺 澳大利亚</div><div class="rk">2-0 土耳其 + 0-2 美国 · 3 分（净 0）· <b>平局即出线</b>（净胜球占优）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-26） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 巴拉圭 0-0 澳大利亚（半场 0-0） · 06-25</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">加州 Santa Clara · Bay Area Stadium（Levi's Stadium）：一场<b>谨慎的战术对决</b>，<b>全场 0-0</b>、半场亦 0-0，几无清晰机会。澳大利亚长时间控球（56%），最佳机会来自 <b>Jordan Bos 第 90 分钟禁区右侧的远射偏出</b>、以及他此前一脚远射逼出门将 <b>Orlando Gill</b> 的扑救；巴拉圭则在缺最佳射手 Almirón 的情况下主要靠反击威胁，替补 <b>Mauricio</b> 与 <b>Julio Enciso</b> 是其前插点。两防线全场均未遭真正考验。<b>结果：澳大利亚凭这 1 分以 D 组亚军（第 2）晋级 32 强；巴拉圭积 4 分，进入"最佳第三名"争夺。</b>美国虽末轮负土耳其仍以头名晋级。<span style="color:var(--warn)">[巴拉圭最佳第三名能否出线取决于其他组结果与净胜球 · 待核]</span></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 46' 黄牌 Irvine（澳）· 77' 黄牌 Diego Gómez（巴，本组第 2 张 → 若巴拉圭晋级将停赛缺席 32 强）· 90' Bos 远射偏出（澳全场最佳机会）｜门将 Gill 5 次扑救</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（ESPN / FotMob）</h4>
+    <table>
+      <tr><th>指标</th><th>🇵🇾 巴拉圭</th><th>🇦🇺 澳大利亚</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td>44%</td><td><b>56%</b></td><td>澳大利亚控球占优但不极端——符合赛前"澳掌控节奏、巴拉圭让出球权打反击"的预判</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td>0.25</td><td><b>0.57</b></td><td>双方 xG 均极低（合计 &lt;0.85），印证赛前"低进球 + 两队创造均不强"的主线；澳略高但远不足以破门</td></tr>
+      <tr><td class="ht">射正</td><td>2</td><td><b>5</b></td><td>澳射正更多却质量平平（xG 仅 0.57），多为远射；巴拉圭缺 Almirón 后运动战创造稀缺</td></tr>
+      <tr><td class="ht">传球（成功 / 成功率）</td><td>330 / 77%</td><td><b>438 / 82%</b></td><td>澳传球量与成功率双高，主导控球；但控而不透，未能撕开巴拉圭低位块</td></tr>
+      <tr><td class="ht">门将扑救 / 对抗成功</td><td><b>Gill 5 救</b> / 55</td><td>2 救 / <b>62</b></td><td>Gill 5 次扑救（含扑 Bos 远射）是巴拉圭保平功臣；澳对抗胜出略多，符合其身体流低位风格</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.espn.com/soccer/match/_/gameId/760469">ESPN — Paraguay 0-0 Australia</a> · <a href="https://www.fotmob.com/matches/australia-vs-paraguay/1hs39g">FotMob</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021461">FIFA Match Centre</a> · <a href="https://www.aljazeera.com/sports/2026/6/26/australia-paraguay-fifa-world-cup-2026-score-report-socceroos">Al Jazeera 战报</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"动机不对称"完全兑现：澳大利亚拿到所需结果、巴拉圭未能主动取胜</div>澳大利亚平局即出线、全程以控球（56%）+ 低位纪律消耗时间；巴拉圭须取胜却 0.25 xG、仅 2 次射正。<b>说明澳大利亚是一支能精准按出线需求管理比赛的硬仗型球队——给它一个"平局即可"的赛果，它的三中卫深蹲 + 控时几乎不出错</b>，这正是赛前判断的核心剧本。</div>
+    <div class="insight"><div class="who">Almirón 停赛的代价被坐实：巴拉圭破深蹲手段不足</div>失去队内最佳射手后，巴拉圭运动战 xG 仅 0.25，威胁主要来自替补 Mauricio/Enciso 的零星反击而非阵地渗透。<b>说明这支巴拉圭一旦被迫主动进攻、又缺核心创造点，破密集低位的上限就明显见顶</b>——赛前"主动取胜意愿与破密集手段不匹配"的风险精准应验。</div>
+    <div class="insight"><div class="who">澳大利亚控而不透：控球主导≠威胁创造</div>澳传球 438 次 / 82% 成功、控球 56%，但 xG 仅 0.57、最佳机会是 Bos 第 90 分钟远射偏出。<b>说明澳大利亚的进攻仍依赖边路与远射、缺乏破低位块的最后一传</b>——这一短板会在淘汰赛对更敢压上的对手时被放大。</div>
+    <div class="insight"><div class="who">门将与防守韧性是双方共同的"下限"</div>Gill 5 次扑救保平、两条防线全场未遭真正考验。<b>说明这两支队伍的竞争力底色都在防守纪律而非进攻火力</b>——晋级后若想走得更远，进攻终结能力是共同瓶颈。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">基准"低进球、势均力敌；澳倾向稳住平局/小胜"</td><td style="color:var(--good)"><b>✓ 精准兑现</b></td><td>0-0、合计 xG &lt;0.85——正是预测的低进球均势剧本</td></tr>
+      <tr><td class="ht">澳大利亚平局即第二出线（净胜球占优）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>1 分锁定 D 组亚军、晋级 32 强</td></tr>
+      <tr><td class="ht">巴拉圭基本须取胜方稳出线</td><td style="color:var(--warn)"><b>~ 未取胜，转最佳第三名</b></td><td>0-0 仅得 1 分（共 4 分），命运交给不可控的最佳第三名排名——与赛前判断一致</td></tr>
+      <tr><td class="ht">Almirón 停赛削弱破深蹲上限</td><td style="color:var(--good)"><b>✓ 应验</b></td><td>巴拉圭 0.25 xG、2 射正，主动取胜却无解深蹲</td></tr>
+      <tr><td class="ht">大/小 2.0 球 → 偏小球</td><td style="color:var(--good)"><b>✓ 走小</b></td><td>0 球，远低于 2.0 线，小球剧本完全兑现</td></tr>
+      <tr><td class="ht">市场过热 3/5（平局赔最低）</td><td style="color:var(--good)"><b>✓ 平局赔最低被验证</b></td><td>最低赔的平局正是赛果，无冷门</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f0d869">🇦🇺 澳大利亚 · 晋级 32 强（D组亚军）</h4>
+        <ul class="watch">
+          <li><b>D 组亚军晋级，预计 7/3 对阵 G 组亚军</b>（按赛制 D 亚军 vs G 亚军；当前 G 组亚军为伊朗）。<span style="color:var(--warn)">[G 组最终排名与对手以该组收官后为准 · 待核]</span></li>
+          <li><b>控而不透是要带入下一场的隐患</b>：56% 控球仅 0.57 xG、靠远射，破低位块的最后一传不足——对手会主动让出球权诱其在前场打转。</li>
+          <li><b>低位深蹲 + 反击 + 定位球的硬仗模板有效</b>：本场再次验证其按需管理比赛的能力，淘汰赛单场对抗中仍是其最可靠路径。</li>
+          <li><b>纪律风险</b>：Irvine 已吃牌；生死强度的淘汰赛需控制战术犯规累积，避免关键球员停赛。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#f08a96">🇵🇾 巴拉圭 · D组第 3 · 出线待最佳第三名排名</h4>
+        <ul class="watch">
+          <li><b>4 分小组第 3</b>：能否晋级取决于各组最佳第三名比较与净胜球，<b>不在自己掌控</b>。<span style="color:var(--warn)">[最佳第三名 8 席的最终排序待其他组收官 · 待核]</span></li>
+          <li><b>⭐ Diego Gómez 停赛风险（迁移到下一场）</b>：本场第 77 分钟领到本组累计第 2 张黄牌，<b>若巴拉圭晋级，将停赛缺席 32 强</b>——这是中场推进与创造的又一损失，须进入下一场预览的关键新闻。</li>
+          <li><b>Almirón 停赛期满可回归</b>：若晋级，最佳射手与右路创造点归位，将明显抬升破密集上限——本场暴露的进攻乏力主因正是其缺阵。</li>
+          <li><b>破深蹲手段不足是结构短板</b>：0.25 xG 说明缺核心点时阵地战几乎无解，淘汰赛需解决终结与最后一传。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 D 组末轮一场<b>"出线动机不对称"的直接生死战</b>。美国已 6 分锁定头名、土耳其 0 分出局；巴拉圭、澳大利亚<b>同积 3 分</b>争第二张直接出线门票。两队两轮间无交锋，但<b>净胜球澳大利亚 0、巴拉圭 -2</b>——若两队战平、双双 4 分，第一并列规则（相互战绩）因本场即为相互战绩、平局无差，<b>直接进入净胜球，澳大利亚占优</b>。故<b>平局对澳大利亚有利、即可锁定第二出线</b>；<b>巴拉圭基本必须取胜</b>（赢球即第二出线；战平或小负则只能寄望"最佳第三名"8 席，须看其他组结果，不在自己掌控）。<span style="color:var(--warn)">[注：部分媒体(SportsLine/Yahoo)推演平局也可能让巴拉圭以最佳第三名出线，但该情景取决于其他组、不可控；以 FIFA 官方判定为准 · 待核]</span> 最大临场变量：<b>巴拉圭头号球星兼队内最佳射手 Miguel Almirón 因红牌停赛缺阵</b>（对土耳其因"用手捂嘴说话"成为本届新规首个被罚下者，FIFA 官方确认禁赛一场、不可上诉），削弱巴拉圭右路进攻与终结上限——而巴拉圭恰恰是更需要进球的一方；澳大利亚边锋 <b>Mathew Leckie 有肌肉伤疑虑</b>、且因平局即出线可能保守轮换。三处看点：① <b>Almirón 停赛后巴拉圭谁来破局</b>（须取胜却缺最佳射手）；② <b>澳大利亚三中卫深蹲 + 平局即可的保守心态</b>能否拖住比赛；③ <b>净胜球规则下的尾段博弈</b>——巴拉圭一旦落后或久攻不下会全力压上，下半场剧情可能极端。基准剧本：<b>低进球、势均力敌；澳大利亚倾向稳住平局/小胜，巴拉圭被迫冒险</b>，过热指数 ≈ 3/5（三向赔率贴近、信息含量集中在停赛与出线算术）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">巴拉圭隐含胜率(去水)</div><div class="v" style="color:#f08a96">≈33%</div></div>
+      <div class="key"><div class="k">平局隐含概率(去水)</div><div class="v" style="color:var(--draw)">≈42%</div></div>
+      <div class="key"><div class="k">澳大利亚隐含胜率(去水)</div><div class="v" style="color:#f0d869">≈25%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称（核心）</b>：两队同 3 分。<b>澳大利亚净胜球 0、巴拉圭 -2</b>。本场即两队相互战绩，平局无法分胜负，故并列时直接看净胜球——<b>澳大利亚平局即第二出线</b>；<b>巴拉圭基本须取胜</b>方能稳出线，否则只能押注不可控的"最佳第三名"。求胜烈度倒向巴拉圭，但安全垫倒向澳大利亚。</li>
+      <li><b>⭐ Almirón 停赛缺阵（巴拉圭·多源+FIFA官方确认）</b>：队内最佳射手、右路核心 Miguel Almirón 对土耳其因新规"捂嘴说话"被直红罚下，FIFA 确认<b>禁赛一场、不可上诉</b>，确定缺席本场。这削弱了巴拉圭最需要进球一战的进攻与终结上限——详见关键临场新闻。</li>
+      <li><b>澳大利亚 Leckie 伤疑 + 保守轮换风险</b>：边锋 Mathew Leckie 对美国一战拉伤，尚未排除出战、但因"平局即出线"球队可能选择休养、由 Volpato/Irankunda 顶上。澳大利亚大概率三中卫深蹲、靠定位球与反击，把比赛拖入低分差。</li>
+      <li><b>净胜球规则下的尾段剧情</b>：因平局对澳有利，巴拉圭若 0-0 或落后会在下半场全力压上——这会拉开空间、增加澳大利亚反击得手或巴拉圭被打反击的尾段波动。本场的"进球时间/谁先进球"权重高于多数比赛。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · Almirón 确认停赛缺阵 <span style="color:var(--mut);font-weight:400">· FIFA 官方 / ESPN / Al Jazeera / FOX / Business Standard 多源一致 · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源 + FIFA 官方确认：Miguel Almirón <b>因红牌禁赛一场、不可上诉，确定缺席对澳大利亚</b>（队内最佳射手）</div>
+      <p style="font-size:13.5px">关键球员出缺多源交叉：<b>FIFA 官方</b>于 6-23 确认 Almirón 禁赛一场、本场缺阵且<b>不可上诉</b>；<b>ESPN、Al Jazeera、FOX Sports、Business Standard</b> 均报道——巴拉圭右路核心兼队内最佳射手 Almirón 在次轮对土耳其（巴拉圭 1-0 胜）上半场结束前，因本届新规"用手捂嘴在冲突中说话"成为<b>世界杯史上首位据此被直红罚下者</b>，巴拉圭随后 10 打 11 守住胜果。最可能顶替其右路进攻位置的是 <b>Mauricio</b>（首轮对美国曾破门），<b>Damián Bobadilla</b> 亦为候选。<span style="color:var(--warn)">[替补人选与首发以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拉圭是本场<b>更需要进球的一方</b>（基本须取胜），却恰恰失去队内最佳射手与右路创造点。这<b>直接降低巴拉圭破澳大利亚三中卫深蹲的上限</b>——对一支需要主动取胜的球队是结构性打击，提升了"低进球 + 平局"剧本的概率，也是大小球与让球盘的关键变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/23/paraguays-almiron-suspended-for-one-game-after-red-card-for-covering-mouth" style="color:var(--accent)">Al Jazeera — FIFA 确认禁赛一场</a> · <a href="https://www.espn.com/soccer/story/_/id/49123197/" style="color:var(--accent)">ESPN — 捂嘴被罚下</a> · <a href="https://www.business-standard.com/sports/fifa-world-cup/" style="color:var(--accent)">Business Standard — 一场禁赛</a> · <a href="https://www.foxsports.com/stories/soccer/2026-fifa-world-cup-paraguay-miguel-almiron-red-card" style="color:var(--accent)">FOX Sports</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">关键球员核查 · Leckie 伤疑（未排除 / 或轮休） <span style="color:var(--mut);font-weight:400">· Sports Mole / Squawka · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mathew Leckie 对美国一战肌肉不适，<b>尚未被排除</b>，但因"平局即出线"球队可能选择休养，由 <b>Volpato/Irankunda</b> 顶替</div>
+      <p style="font-size:13.5px">据 Sports Mole/Squawka，澳大利亚边锋 <b>Mathew Leckie</b> 在 6-19 对美国时拉伤肌肉，尚未被正式排除出战，但鉴于球队大概率出线、为淘汰赛(32 强)保留体能，主帅有动机让其轮休、改用 Cristian Volpato；同时主帅承认对美国弃用 <b>Nestory Irankunda</b> 是失误，这位 20 岁瓦特福德前锋本场预计回归首发。<span style="color:var(--warn)">[Leckie 是否出战及首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Leckie 缺阵或轮休本身影响有限，但它折射出澳大利亚的<b>"平局即可"心态与轮换倾向</b>——若进一步保守深蹲，比赛烈度与进球数下降，强化低进球/平局剧本；而 Irankunda 回归则提供反击爆点，在巴拉圭压上时是澳大利亚偷袭得手的关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/predicted-lineups/will-leckie-play-predicted-australia-xi-vs-paraguay_599929.html" style="color:var(--accent)">Sports Mole — 澳大利亚预测首发/Leckie</a> · <a href="https://www.squawka.com/en/news/world-cup/paraguay-vs-australia-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — 团队消息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· OneFootball / ESPN / Wikipedia · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：法国籍 <b>Clément Turpin</b>（本届第二次执法，首战为英格兰-克罗地亚）；加州 Santa Clara · Levi's Stadium</div>
+      <p style="font-size:13.5px">本场主裁为法国籍国际级名哨 <b>Clément Turpin</b>，这是他本届世界杯<b>第二次执法</b>（首战英格兰 vs 克罗地亚），并曾执法 2018、2022 两届世界杯。生涯场均黄牌约 <b>3.36 张</b>、红牌约 0.19 张，属相对克制、敢吹关键判罚的资深主裁。<span style="color:var(--warn)">[完整裁判组与 VAR 组合、Turpin 本届/近两届世界杯单场出牌细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本届新规已让巴拉圭吃了 Almirón 的红牌教训，Turpin 又是对纪律与战术犯规管理到位的主裁；生死战 + 净胜球压力下双方对抗与拖延会增多，裁判尺度对牌数、潜在点球与补时长度有实际影响。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://onefootball.com/en/news/clement-turpin-to-referee-england-v-croatia-in-first-2026-world-cup-assignment-43010694" style="color:var(--accent)">OneFootball — Turpin 任命</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/" style="color:var(--accent)">ESPN — 世界杯裁判名单</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials" style="color:var(--accent)">Wikipedia — 官员名单</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· D组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.0 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>D 组四队末轮前积分</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇵🇾 巴拉圭</th><th>🇦🇺 澳大利亚</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#40 区间</td><td class="sc">#27 区间</td></tr>
+      <tr><td>前两轮</td><td class="ht">1-4 美国 + 1-0 土耳其（3 分，净 -2）</td><td class="sc">2-0 土耳其 + 0-2 美国（3 分，净 0）</td></tr>
+      <tr><td>D 组积分（末轮前）</td><td colspan="2">美国 6 分锁头名；巴拉圭 3(-2)、澳大利亚 3(0) 争第二；土耳其 0 已出局</td></tr>
+      <tr><td>出线条件</td><td class="ht"><b>基本须取胜</b>方稳出线；平/负仅靠不可控的最佳第三名</td><td class="sc"><b>平局即出线</b>（净胜球占优）；胜更稳</td></tr>
+      <tr><td>主教练</td><td class="ht">Gustavo Alfaro（阿根廷籍）</td><td class="sc">Tony Popovic（澳大利亚）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Almirón(停赛)、Gustavo Gómez、Diego Gómez、Galarza、Sanabria</td><td class="sc">Souttar、Irankunda、Bos、O'Neill、Volpato</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">缺最佳射手却须取胜，谁来破深蹲</td><td class="sc">平局即可的保守心态 + 三中卫深蹲能否拖住</td></tr>
+      <tr><td>近两届大赛</td><td class="ht">缺席 2018/2022 世界杯（连续两届预选出局）</td><td class="sc">2022 世界杯进 16 强（小组次名出线）、2023 亚洲杯八强</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈2.88（+188，隐含≈33%）</td><td class="sc">胜 ≈3.93（+293，≈25%）· 平 ≈2.30（+130，≈42%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线偏低（O/U 1.5–2.0 之间）；让球贴近平手（澳 +0.5 / 巴 -0.5）；市场视作低进球的均势博弈</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈33/42/25，归一后）。盘口来源：ESPN/SportsLine（巴 +188≈2.88、平 +130≈2.30、澳 +293≈3.93；O/U 2.0：大 +128≈2.28、小 -145≈1.69；让球澳 +0.5 / 巴 -0.5）。Almirón 停赛是巴拉圭进攻上限与让球深度的核心不确定因素。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇵🇾 巴拉圭 · 进攻</td><td class="ht">南美预选进攻产出中游、依赖 Almirón 右路与 Sanabria 终结、定位球</td><td class="ht">2 战 2 球（1-4 美国、1-0 土耳其），<b>两轮累计 xG 偏低</b></td><td><b>偏弱且雪上加霜</b>：对土耳其全场仅 ≈0.32 xG 却 1-0 取胜（高效但创造稀少）；本届 xG 差值 <b>≈-1.37（两战）</b>。<b>Almirón 停赛进一步削弱破密集上限</b>，须取胜却缺最佳点 <span style="color:var(--warn)">（FotMob/xGscore 公开样本，PPDA/xT 细分 · 待核）</span></td></tr>
+      <tr><td class="ht">🇵🇾 巴拉圭 · 防守</td><td class="ht">Gustavo Gómez 领衔、对抗硬朗、防空强</td><td class="ht">2 战丢 6 球（含对美国 1-4 崩盘），但对土耳其 10 打 11 零封</td><td><b>两面性</b>：对美国一战暴露被高强度逼抢打穿的脆弱；但少打一人仍能对土耳其零封，显示其低位防守与拼抢的下限尚可</td></tr>
+      <tr><td class="sc">🇦🇺 澳大利亚 · 进攻</td><td class="sc">2022 世界杯靠纪律 + 反击进 16 强；进攻产出有限、依赖边路与定位球</td><td class="sc">2 战 2 球（2-0 土耳其、0-2 美国），对强队哑火</td><td><b>中规中矩</b>：对土耳其顺畅(Irankunda+Metcalfe)、对美国被压制 0 球；本届 xG 差值 <b>≈-0.65（两战）</b>，运动战创造一般，反击与定位球是主路径 <span style="color:var(--warn)">（xG 公开样本，细分 · 待核）</span></td></tr>
+      <tr><td class="sc">🇦🇺 澳大利亚 · 防守</td><td class="sc">Popovic 强调三中卫紧凑 + 低位防守纪律，Souttar 防空</td><td class="sc">2 战丢 2 球（均对美国），对土耳其零封</td><td><b>下限在防守</b>：三中卫结构对中下游对手稳健；本场"平局即可"会更主动深蹲，防守韧性是其拖住比赛的核心</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：两队本届 xG 差值均为负（巴 ≈-1.37、澳 ≈-0.65，两战累计），印证"两队进攻创造均不强、本场偏低进球"。巴拉圭须取胜却缺 Almirón、运动战创造稀缺；澳大利亚平局即可、防守韧性 + 反击/定位球是主线。深度数据支持"低进球 + 平局倾向、巴拉圭被迫冒险"的主线。来源：xGscore / FootyStats / RealGM xG Tracker（前两轮）· FotMob · ESPN。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">巴拉圭 ≈1.0–1.3</td><td class="sc">澳大利亚 ≈0.9–1.1</td><td>两队接近、总量偏低；Almirón 缺阵压低巴拉圭上限，与盘口"低进球 + 让球平手"一致</td></tr>
+      <tr><td>Opta / 超算 / 实力评级</td><td colspan="2" class="sc">体系内两队接近（FIFA 排名澳 #27 略高于巴 #40），超算给"平局/澳微favored"概率最高；与博彩平局赔最低一致</td><td>对手强度校准：两队均在对美国时被压制、对土耳其表现更顺——样本含金量以"对中游土耳其"一战更具参考性</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：澳大利亚倾向低位深蹲、PPDA 偏高（不主动逼抢）；巴拉圭须取胜会提高控球与压上、field tilt 占优但终结点缺失（Almirón 停赛降低右路 xT）</td><td><b>陷阱提醒</b>：① 澳大利亚"平局即可"可能极度保守、主动让出球权 → 比分差小、大球承压；② 巴拉圭尾段压上会拉开空间 → 澳大利亚反击得手或巴拉圭被反击的尾段波动放大；③ 净胜球规则使"谁先进球/进球时间"权重高，比"全场谁更强"更决定结果</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/xGscore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是势均力敌的"生死战"场次——三向赔率贴近、平局赔最低；信息含量集中在出线算术、Almirón 停赛与低进球倾向</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 三向赔率贴近、平局赔最低，无一边倒共识；情绪集中在出线生死与停赛</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">三向价格相对接近（巴 ≈2.88 / 平 ≈2.30 / 澳 ≈3.93），<b>平局赔率最低</b>反映"动机不对称→低进球→平局倾向"的共识。真正的价格发现在<b>大小球（低线）</b>与<b>让球（贴近平手）</b>，以及 Almirón 停赛对巴拉圭进攻上限的折价。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏低进球/平局，胜负分歧）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>SportsLine（Martin Green）</td><td>职业分析师</td><td>倾向小球（Under 3.5/低线）；视作低进球的均势博弈</td></tr>
+      <tr><td>ESPN</td><td>赛前前瞻</td><td>澳大利亚平局即出线、可能保守；巴拉圭缺 Almirón 须取胜难度上升</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>看好澳大利亚凭质量小胜或拿下平局；给出双方预测首发</td></tr>
+      <tr><td>Sky Sports</td><td>英系媒体</td><td>D 组次名之争，强调净胜球规则下澳大利亚的有利位置</td></tr>
+      <tr><td>Racing Post / Yahoo</td><td>综合媒体</td><td>多数倾向低进球；部分给"双方都需分→平局"剧本，小球(Under 2)是价值方向</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：与"一边倒"场次不同，本场是<b>势均力敌 + 平局赔最低</b>的生死战。最大的不确定性是 <b>Almirón 停赛对巴拉圭进攻上限的实际影响</b>，以及<b>澳大利亚会保守到什么程度</b>（平局即可）——这影响大小球与让球，而非清晰的 1X2 方向。情绪面集中在"捂嘴红牌"新规争议与生死战戏剧性。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>巴拉圭胜 / 平 / 澳大利亚胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="sc">≈2.75 / 2.30 / 3.80</td><td>开盘即三向贴近、平局赔最低，反映均势 + 平局倾向</td></tr>
+      <tr><td>06-23 截止</td><td>ESPN / SportsLine</td><td class="sc">≈2.88 / 2.30 / 3.93（+188 / +130 / +293）</td><td>Almirón 停赛确认后，巴拉圭胜赔微升（破深蹲难度上升）、平局赔维持最低</td></tr>
+      <tr><td>06-23</td><td>大/小球</td><td colspan="2" class="sc">总分线 O/U 2.0（大 +128≈2.28 / 小 -145≈1.69）——小球受青睐（缺 Almirón + 澳保守 + 两队 xG 偏低）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="sc">让球近平手（澳 +0.5 / 巴 -0.5）；1X2 三向贴近、平局赔最低；O/U 约 2.0</td><td>以"两队同分、实力接近、净胜球规则使澳大利亚平局即出线"定价——初盘即把本场定为<b>均势 + 平局倾向</b>，而非任一方一边倒</td></tr>
+      <tr><td>开盘（次轮赛后 + 停赛重定价）</td><td class="sc">巴拉圭胜 ≈2.75→2.88；让球维持平手附近；O/U 2.0 偏小</td><td><b>repricing 来自次轮 + 停赛</b>：澳大利亚 0-2 负美国、巴拉圭 1-0 险胜土耳其暴露双方进攻乏力；<b>Almirón 确认停赛</b>使市场对"巴拉圭主动取胜"的信心略降，巴胜赔微升、小球被进一步看好；"澳大利亚平局即可"心态支撑小球与平手盘</td></tr>
+      <tr><td>现盘（06-23→现）</td><td class="sc">巴 ≈2.88 / 平 ≈2.30 / 澳 ≈3.93；让球平手；O/U 2.0 偏小</td><td>价格发现集中在 <b>大小球（低线）</b>（缺 Almirón + 澳保守 → 小球承接）与<b>让球平手附近的微调</b>；平局赔最低、1X2 方向博弈有限，<b>小球与平局相关衍生盘</b>是本场主要博弈点</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是势均力敌的"平手盘 + 低线"生死战，与"一边倒重让盘"完全不同。1X2 平局赔最低、方向博弈有限，关键变量是 <b>Almirón 停赛后巴拉圭的进攻上限</b>与<b>澳大利亚的保守程度</b>（平局即可），共同压低进球预期。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（聚合）</b>：与博彩去水一致给"平局/澳大利亚出线"较高概率（净胜球占优 + 平局即可）；巴拉圭出线概率受"须取胜却缺 Almirón"压制。CryptoSlate 等加密预测盘亦上线本场合约。<span style="color:var(--warn)">[本场单场成交量/动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>"捂嘴红牌"新规争议</b>——Almirón 成为本届首位据此被罚下者，引发对新规尺度的广泛讨论，是本场最大流量点与情绪面。</li>
+      <li><b>舆论焦点 ②</b>：<b>净胜球规则下的出线戏剧性</b>——澳大利亚平局即出线 vs 巴拉圭须取胜，"谁先进球/尾段是否压上"的生死戏剧是叙事核心。</li>
+      <li><b>球队叙事</b>：巴拉圭时隔多届重返世界杯却背水一战、还缺最佳射手，悲情与拼搏并存；澳大利亚延续 2022 的"纪律 + 反击"求稳出线。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是势均力敌的生死战——平手盘、平局赔最低、过热指数 <b>3/5</b>。1X2 方向博弈有限，核心变量是 <b>Almirón 停赛后巴拉圭破深蹲的上限</b>与<b>澳大利亚的保守程度</b>，并连带压低进球预期（缺最佳射手 + 澳平局即可 → 小球承接、平局相关盘受青睐）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/story/_/id/49155739/">ESPN — 前瞻/盘口/裁判/预测首发</a> · <a href="https://www.sportsline.com/insiders/paraguay-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 赔率/picks</a> · <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/preview/paraguay-vs-australia-prediction-team-news-lineups_599899.html">Sports Mole — 前瞻/阵容</a> · <a href="https://www.skysports.com/football/news/12098/13543088/">Sky Sports — D 组指南</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/">Racing Post — 赔率/team news</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：本场主裁为法国籍国际级名哨 <b>Clément Turpin</b>，本届世界杯<b>第二次执法</b>（首战英格兰 vs 克罗地亚），曾执法 2018、2022 两届世界杯及欧冠决赛级别赛事。来源：OneFootball、ESPN 裁判名单、Wikipedia 官员名单。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Turpin 来自欧足联体系、经验极丰富——对身体对抗有一定容忍，但对战术犯规、拖延、冲突管理较为到位，敢吹关键判罚（含点球与红牌）。生涯场均黄牌约 <b>3.36 张</b>、红牌约 0.19 张，整体属"中等偏克制但权威"的尺度。<span style="color:var(--warn)">[此为生涯均值；其本届/近两届世界杯单场出牌/判点的精确大赛细分公开样本有限 · 待核]</span></li>
+      <li><b>本届新规背景</b>：本届世界杯执法环境偏严（仅队长可与裁判沟通、门将 8 秒规则、半自动越位、<b>"捂嘴说话即红牌"新规</b>）。本组次轮巴拉圭 Almirón 已因该新规被罚下——这意味着双方球员对冲突管理会更谨慎，但生死战的情绪与对抗仍可能制造牌点。</li>
+      <li><b>与两队的执法史</b>：Turpin 主要执法欧洲赛事，与巴拉圭、澳大利亚两队均无显著公开倾向性执法史可言。</li>
+      <li><b>两面性</b>：澳大利亚深蹲必然伴随大量身体对抗与战术犯规（延缓巴拉圭），巴拉圭须取胜会增加禁区拉扯与压上拼抢——Turpin 的尺度对牌数、潜在点球与补时长度有实际影响；净胜球压力下尾段拖延会增多，半自动越位将精准捕捉反击越位线。牌数/点球盘宜以倾向性看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在势均力敌 + 生死战格局下，裁判对牌数/点球的影响值得关注：澳大利亚的战术犯规与巴拉圭压上时的禁区拉扯是黄牌/点球观察点。鉴于 Turpin 本届/近两届世界杯单场出牌的大赛细分样本有限，相关盘口以倾向看待、不作数值化依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / Squawka 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇵🇾 巴拉圭 预测首发（4-4-2 / 4-2-3-1）· Gustavo Alfaro · Almirón 停赛缺阵</h4>
+    <div class="lineup">Gill; Cáceres · Gustavo Gómez · Alderete · Junior Alonso; Mauricio · Cubas · Diego Gómez · Galarza; Sanabria · Enciso</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Gustavo Gómez</td><td>中卫/队长 / 帕尔梅拉斯</td><td>巴拉圭后防核心与领袖，对抗硬朗、防空与定位球争顶；少打一人对土耳其零封的支柱</td></tr>
+      <tr><td class="ht">Diego Gómez</td><td>中场 / 布莱顿</td><td>中场推进与跑动，带伤可能首发；缺 Almirón 后需更多承担创造 <span style="color:var(--warn)">状态待核</span></td></tr>
+      <tr><td class="ht">Matías Galarza</td><td>中场</td><td>对土耳其第 3 分钟进球功臣；带伤可能首发，中场串联与远射 <span style="color:var(--warn)">状态待核</span></td></tr>
+      <tr><td class="ht">Mauricio</td><td>前场 / 替 Almirón</td><td>首轮对美国曾破门，最可能顶替停赛的 Almirón 出任右路/前场 <span style="color:var(--warn)">首发待核</span></td></tr>
+    </table>
+    <h4>🇦🇺 澳大利亚 预测首发（3-4-3 / 三中卫）· Tony Popovic · Irankunda 回归</h4>
+    <div class="lineup">Beach; Circati · Souttar · Burgess; Italiano · O'Neill · Okon-Engstler · Bos; Volpato · Touré · Irankunda</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Harry Souttar</td><td>中卫</td><td>澳大利亚防空与对抗核心，三中卫结构支柱；定位球两端的关键</td></tr>
+      <tr><td class="sc">Nestory Irankunda</td><td>边锋 / 瓦特福德</td><td>20 岁爆点，对土耳其破门；主帅承认对美国弃用是失误，预计回归首发 <span style="color:var(--warn)">首发待核</span></td></tr>
+      <tr><td class="sc">Jordan Bos</td><td>左翼卫</td><td>左路推进与传中，三中卫体系的宽度来源；攻防转换的关键覆盖</td></tr>
+      <tr><td class="sc">Aiden O'Neill</td><td>中场</td><td>中场屏障与节奏，预计连续第三场首发；澳大利亚低位防守的中场枢纽</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Sports Mole / Squawka），<b>以赛前官方名单为准 · 待核</b>。巴拉圭焦点是 <b>Almirón 停赛由谁顶替</b>（Mauricio/Bobadilla）、Diego Gómez 与 Galarza 的带伤状态；澳大利亚焦点是 <b>Leckie 是否出战或轮休</b>、Irankunda 是否回归首发、Popovic 三中卫深蹲程度。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛/预选的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a96">🇵🇾 巴拉圭 · Gustavo Alfaro</div>
+        <div class="role">务实 4-4-2/4-2-3-1，硬朗防守 + 定位球 + 边路（Almirón）创造</div>
+        <ul class="cl">
+          <li>Alfaro 的招牌是<b>组织纪律 + 硬朗对抗 + 定位球</b>——本届前两轮印证：对美国被高强度逼抢打穿 1-4，但对土耳其 10 打 11 凭第 3 分钟 Galarza 进球 + 全场死守 1-0 取胜，显示其<b>低位防守与拼抢下限尚可、但运动战创造稀缺</b>。</li>
+          <li>交叉参照：巴拉圭连续缺席 2018/2022 世界杯（南美预选出局），本届是多年后重返，缺乏近两届大赛实战样本；其打法更接近"南美预选式"的务实硬仗——<b>面对会深蹲的对手破门效率有限</b>，尤其在失去 Almirón 后。</li>
+          <li>本场切入口：须取胜却缺最佳射手与右路创造点，只能靠 <b>Sanabria/Enciso 的终结 + Diego Gómez/Galarza 的中场推进 + 定位球（Gustavo Gómez 争顶）</b>撬开澳大利亚三中卫低位；下半场若未进球会全力压上，但这会暴露反击空间。<b>本场最大风险是"主动取胜的意愿与破密集的手段不匹配"。</b></li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0d869">🇦🇺 澳大利亚 · Tony Popovic</div>
+        <div class="role">三中卫 3-4-3 紧凑低位 + 反击 + 定位球，Souttar 防空</div>
+        <ul class="cl">
+          <li>Popovic 强调<b>三中卫紧凑、低位防守纪律 + 边翼卫推进 + 反击/定位球</b>——本届对土耳其 2-0（Irankunda+Metcalfe）顺畅、对美国被压制 0-2，符合"对中下游能赢、对强队偏被动"的画像。</li>
+          <li>交叉参照：澳大利亚 2022 世界杯靠<b>纪律 + 反击 + 定位球</b>从死亡之组突围进 16 强（胜突尼斯、丹麦），2023 亚洲杯进八强——<b>这是一支"会拖、会守、会反击偷袭"的硬仗型球队</b>，与本场"平局即出线"的需求高度契合。</li>
+          <li>本场应对：大概率<b>低位三中卫深蹲 + Souttar 防空 + Irankunda/Volpato 反击</b>，把比赛拖入低分差；"平局即可"给了它主动让出球权、消耗时间的安全垫。胜负手在于<b>能否在巴拉圭尾段压上时用反击或定位球偷袭得手、或纯粹守住平局</b>。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">SportsLine（Martin Green） <small>· 职业分析师</small></div>倾向小球（低进球均势博弈）；两队都需结果、都不愿冒险陷入被反击的局面，是低进球的结构性理由。</div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 赛前前瞻</small></div>澳大利亚净胜球占优、平局即出线，倾向稳守；巴拉圭缺 Almirón 须取胜，破密集上限下降，看好澳大利亚拿到出线所需结果。</div>
+    <div class="insight"><div class="who">Sky Sports / Racing Post <small>· 综合媒体</small></div>强调净胜球规则下澳大利亚的有利位置与"谁先进球"的权重；多数倾向低进球、平局相关剧本。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob / xGscore</small></div>真正悬念是 <b>Almirón 停赛后巴拉圭能否主动破深蹲</b>与<b>澳大利亚保守到何种程度</b>。⚠ 陷阱提醒：两队 xG 均偏低、动机不对称使比赛偏低进球；净胜球规则让"进球时间/先失球方"决定剧情——巴拉圭尾段压上的反击空间是澳大利亚偷袭与巴拉圭崩盘的双向开关。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：低进球、势均力敌是基准剧本。澳大利亚凭净胜球优势 + "平局即出线"的安全垫倾向稳守，巴拉圭须取胜却缺最佳射手 Almirón、破深蹲手段受限——平局或一球小胜（任一方）是高概率区间，澳大利亚拿到出线所需结果的概率高于巴拉圭。</li>
+      <li><b>关键先生</b>：巴拉圭——Sanabria/Enciso（终结）、Diego Gómez/Galarza（中场推进）、Gustavo Gómez（防守 + 定位球争顶）；澳大利亚——Souttar（防空）、Irankunda（反击爆点）、Bos（左路宽度）、O'Neill（中场屏障）。<b>巴拉圭因 Almirón 停赛缺最佳射手是本场最大单点变化。</b></li>
+      <li><b>胜负手</b>：① 巴拉圭能否在缺 Almirón 下主动破澳大利亚三中卫低位（终结 + 定位球）；② 澳大利亚能否长时间深蹲不崩 + 反击/定位球偷袭；③ <b>谁先进球与进球时间</b>——净胜球规则下，先进球方（尤其澳大利亚）会极大改变比赛走向。</li>
+      <li><b>市场视角</b>：势均力敌生死战（≈33/42/25），平局赔最低、过热指数 3/5。核心变量是 Almirón 停赛后巴拉圭的进攻上限 + 澳大利亚的保守程度，连带压低进球预期（偏小球、平局相关盘受青睐）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>Almirón 停赛已多源 + FIFA 官方确认缺阵</b>，由 Mauricio 还是 Bobadilla 顶替首发待核；③ 澳大利亚 <b>Leckie 是否出战或轮休</b>、Irankunda 是否回归首发、Popovic 三中卫深蹲程度；④ 巴拉圭 Diego Gómez/Galarza 带伤状态；⑤ Turpin 完整裁判组与 VAR 组合、其本届/近两届世界杯单场出牌/判点大赛细分；⑥ <b>出线/最佳第三名的精确净胜球与并列规则</b>——本场即两队相互战绩，平局直接看净胜球（澳占优）；巴拉圭平/负后的"最佳第三名"情景取决于其他组、不可控（部分媒体推演平局或可让巴出线，以 FIFA 官方判定为准）；⑦ 让球线（近平手）与大小球总分线（O/U 2.0）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49155739/">ESPN — 前瞻/盘口/裁判/预测首发</a> · <a href="https://www.aljazeera.com/sports/2026/6/23/paraguays-almiron-suspended-for-one-game-after-red-card-for-covering-mouth">Al Jazeera — FIFA 确认 Almirón 禁赛</a> · <a href="https://www.espn.com/soccer/story/_/id/49123197/">ESPN — Almirón 捂嘴红牌</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/preview/paraguay-vs-australia-prediction-team-news-lineups_599899.html">Sports Mole — 前瞻/预测首发/团队消息</a> · <a href="https://www.sportsline.com/insiders/paraguay-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 赔率/picks</a> · <a href="https://www.skysports.com/football/news/12098/13543088/">Sky Sports — D 组指南/积分</a><br>
+      • <a href="https://onefootball.com/en/news/clement-turpin-to-referee-england-v-croatia-in-first-2026-world-cup-assignment-43010694">OneFootball — Turpin 任命</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — D组</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 官员名单</a> · <a href="https://soccer.realgm.com/analysis/559/">RealGM / xGscore — 本届 xG</a> · <a href="https://www.business-standard.com/sports/fifa-world-cup/">Business Standard — Almirón 禁赛</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',PAR='#d11f33',AUS='#e0c020',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['巴拉圭胜','平局','澳大利亚胜'],datasets:[{data:[33,42,25],backgroundColor:[PAR,DR,AUS],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:55,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.0 球','小 2.0 球'],datasets:[{data:[43,57],backgroundColor:[AUS,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['美国','澳大利亚','巴拉圭','土耳其'],datasets:[{data:[6,3,3,0],backgroundColor:['#3b5bdb',AUS,PAR,'#9aa3b2'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:7,title:{display:true,text:'积分（末轮前 · 净胜球 美+5 / 澳0 / 巴-2 / 土-3）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'巴拉圭',data:[6.5,5,6,5.5,5.5,4.5],borderColor:PAR,backgroundColor:PAR+'33',pointBackgroundColor:PAR},
+   {label:'澳大利亚',data:[7,5.5,5.5,6.5,5,7],borderColor:AUS,backgroundColor:AUS+'33',pointBackgroundColor:AUS}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

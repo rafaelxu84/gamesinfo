@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise pré-jogo aprofundada · Estados Unidos vs Austrália · Copa do Mundo 2026 Grupo D 2ª rodada</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#3b6fb0;--sc:#d4a017;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#6b5418);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13202e,#1a1a13);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#e6c45a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">ZH</a> · <a href="/en/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao centro de análises</a><br>
+  <span class="badge" style="background:linear-gradient(90deg,#14532d,#3b6fb0)">🏁 Encerrado · EUA 2-0 Austrália</span>
+  <span class="badge">⚽ Copa do Mundo 2026 · Grupo D 2ª rodada · As duas seleções venceram na 1ª rodada e estão empatadas em pontos · Confronto de seis pontos pela liderança do grupo</span>
+  <h1>Estados Unidos vs Austrália</h1>
+  <div class="meta">19 de junho de 2026 · Seattle, Lumen Field · 15:00 ET (meio-dia local) · Grupo D (mesmo grupo: Paraguai, Turquia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 Estados Unidos</div><div class="rk">FIFA #17 · Anfitriã · 1ª rodada 4-1 Paraguai · Sistema de pressão alta de Pochettino</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e6c45a">🇦🇺 Austrália</div><div class="rk">FIFA #27 · 1ª rodada 2-0 zebra sobre a Turquia · Bloco baixo + bola parada de Popovic</div></div>
+  </div>
+
+  <!-- ===== Análise pós-jogo (escrito em 06-20) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Análise pós-jogo: tática e dados <span style="font-size:12px;color:var(--mut);font-weight:500">· Encerrado EUA 2-0 Austrália · 06-19</span></h2>
+
+    <h4>① Evolução do placar</h4>
+    <p style="font-size:13.5px">Os Estados Unidos resolveram antes do intervalo no Lumen Field, em Seattle. Aos <b>11 minutos</b>, Balogun acelerou pela esquerda e cruzou rasteiro para a área, e o zagueiro australiano <b>Cameron Burgess mandou contra o próprio gol</b>. Aos <b>43 minutos</b>, um chute de Dest a partir de um escanteio desviou em <b>Alex Freeman</b>, que cabeceou com tranquilidade (validado após revisão do VAR por impedimento — o primeiro gol de Copa do jogador de 21 anos). No segundo tempo, os EUA passaram de um 4-2-3-1 para um 3-5-2 para administrar; a pressão final da Austrália com Irankunda (passou por Ream uma vez e Volpato chutou por cima) não rendeu nada. <b>Os EUA mantiveram o gol intacto sem o astro Pulisic (panturrilha) — seu primeiro jogo sem sofrer gols em 10 partidas (desde o amistoso de setembro contra o Japão) e suas primeiras vitórias consecutivas em Copa desde a edição inaugural de 1930 — garantindo vaga nas 16-avos com uma rodada de antecedência.</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 11' gol contra de Burgess (EUA · provocado por Balogun) · 43' Freeman (EUA · após chute desviado de Dest) · 56' amarelo para Robinson (EUA) · INT 2-0 · FINAL 2-0</div>
+
+    <h4 style="margin-top:16px">② Comparativo de dados principais</h4>
+    <table>
+      <tr><th>Métrica</th><th>🇺🇸 EUA</th><th>🇦🇺 Austrália</th><th>Leitura</th></tr>
+      <tr><td class="ht">Posse de bola</td><td><b>70%</b></td><td>30%</td><td>Chegou a 70-71% no primeiro tempo — exatamente a dinâmica "EUA com a bola, Austrália em bloco baixo" que a prévia projetou</td></tr>
+      <tr><td class="ht">Gols esperados xG</td><td><b>1.17</b></td><td>0.12</td><td>2 gols vs 1.17 xG = finalização um pouco acima da qualidade das chances; o 0.12 da Austrália mostra que o bloco baixo quase não concedeu chances claras, e os 2 gols dependeram de uma bola parada e de um desvio</td></tr>
+      <tr><td class="ht">Finalizações / no gol</td><td><b>9 / —</b></td><td>2 / —</td><td>7 das 9 finalizações dos EUA foram dentro da área, mas as chegadas em jogo aberto foram raras; "abrir o bloco com qualidade individual pelas pontas" ficou claramente diluído sem Pulisic</td></tr>
+      <tr><td class="ht">Passes / acerto</td><td><b>531 / ≈88%</b></td><td>308 / ≈77%</td><td>Domínio total na circulação, mas a alta posse não virou alto xG — prova de que o plano australiano "ceder a bola, proteger a área" funcionou</td></tr>
+      <tr><td class="ht">Escanteios</td><td><b>7</b></td><td>4</td><td>O cerco dos EUA gerou vantagem nos escanteios, e o segundo gol nasceu de uma segunda jogada de escanteio — combina com o perfil "EUA controlam, escanteios altos" da prévia</td></tr>
+      <tr><td class="ht">Faltas / cartões</td><td>12 / 1 (Robinson 56')</td><td>16 / —</td><td>A Austrália cometeu mais faltas (táticas, para cortar o ritmo); o único amarelo dos EUA foi pela entrada perigosa de Robinson — o recorte de arbitragem ("o bloco baixo australiano arrisca cartões") se cumpriu em parte, embora o total de cartões tenha ficado moderado</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Fontes: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA Match Centre — EUA 2-0 Austrália</a> · <a href="https://www.sofascore.com/news/usa-2-0-australia-at-ht-world-cup-group-d-report">Sofascore — posse/xG/finalizações</a> · <a href="https://www.espn.com/soccer/story/_/id/49118816/usmnt-player-ratings-freeman-surprise-hero-7-10-performance-stonewall-australia">ESPN — notas/desenrolar</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-united-states-vs-australia-jun-19-2026-game-boxscore-647645">FOX Sports — escanteios/faltas/passes</a></div>
+
+    <h4 style="margin-top:16px">③ Revisão tática</h4>
+    <div class="insight"><div class="who">Sem Pulisic, os EUA tiveram dificuldade para abrir o bloco</div>A prévia apontou Pulisic como a melhor solução individual diante de um bloco baixo. Na prática, 70% de posse renderam apenas 1.17 xG, com poucas chances claras em jogo aberto — os dois gols saíram de um gol contra e de um desvio em escanteio. Pepi na esquerda levou 3/10, Pochettino abriu Balogun pela ponta e, por fim, mudou para o 3-5-2. <b>Isso mostra uma seleção dos EUA muito dependente da qualidade individual (Pulisic/Reyna) para abrir blocos baixos organizados, sem um padrão posicional repetível</b> — uma fraqueza estrutural diante dos ferrolhos mais duros do mata-mata.</div>
+    <div class="insight"><div class="who">Bola parada e segundas bolas são o caminho de gol realista desta equipe</div>Ambos os gols nasceram do caos fora do jogo aberto (gol contra + cabeceio em segunda jogada de escanteio). <b>Isso mostra que, quando falta o brilho individual, os EUA podem se apoiar de forma confiável no jogo aéreo e nas segundas bolas de bola parada (Freeman/Richards/Ream)</b> — um caminho repetível que não depende de Pulisic, uma arma valiosa para jogos apertados de mata-mata.</div>
+    <div class="insight"><div class="who">O ajuste em jogo de Pochettino (4-2-3-1 → 3-5-2) é um ativo real</div>Diante de um bloco que não abria e de um Pepi que não funcionava pela esquerda, o treinador foi com decisão para a linha de três após o intervalo, liberou Balogun e usou substituições (Berhalter/Scally/Trusty) para proteger o zero. <b>Isso mostra uma seleção dos EUA com um plano B executável quando o plano A trava</b> — um sinal de potencial no mata-mata mais convincente do que o tranquilo 4-1 sobre o Paraguai.</div>
+    <div class="insight"><div class="who">O bloco baixo da Austrália funcionou, mas o ataque foi inexistente</div>30% de posse e apenas 0.12 xG: segurar os EUA em 1.17 xG conta como sucesso defensivo, mas, fora um arranque de Irankunda no fim, a Austrália não criou nada. <b>Isso mostra que o sistema de Popovic é "disciplinado atrás, fraco à frente" — uma vez que sofre primeiro (mesmo um gol contra), não tem uma segunda solução para a transição</b>; o modelo de contra-ataque de fato falhou contra um rival que quer a bola, como alertava a nota de transferência da prévia.</div>
+
+    <h4 style="margin-top:16px">④ Acerto de contas dos prognósticos</h4>
+    <table>
+      <tr><th>Tese pré-jogo</th><th>Resultado</th><th>Nota</th></tr>
+      <tr><td class="ht">Vitória dos EUA (sem margem ≈60% / Opta 58.5%)</td><td style="color:var(--good)"><b>✓ Acertou</b></td><td>EUA controlaram do início ao fim e venceram sem sofrer gols, sem sustos</td></tr>
+      <tr><td class="ht">Placar base EUA 2-0 (palpite de especialista mais comum)</td><td style="color:var(--good)"><b>✓ Acerto exato</b></td><td>O final foi justamente 2-0, o placar mais citado na prévia</td></tr>
+      <tr><td class="ht">Tendência de Menos de 2.5 reforçada (sem Pulisic)</td><td style="color:var(--good)"><b>✓ Acertou</b></td><td>2 gols no total, Menos de 2.5 pagou; a leitura "EUA cercam mas têm dificuldade de marcar com eficiência, gols atrasados" foi correta</td></tr>
+      <tr><td class="ht">Handicap EUA -1.5 (especialistas alertaram pouco valor)</td><td style="color:var(--warn)"><b>~ Acerto no limite</b></td><td>EUA venceram por 2, então o -1.5 entra; mas 1.17 xG mostra que esteve longe de ser tranquilo — a cautela dos especialistas ("não vencerá por 2") tinha fundamento</td></tr>
+      <tr><td class="ht">Risco: Austrália roubando um na bola parada/contra</td><td style="color:var(--good)"><b>✓ Risco evitado</b></td><td>Irankunda no banco, xG da Austrália de apenas 0.12 — cumpriu-se a revisão da prévia ("Irankunda no banco reduz a ameaça de contra cedo")</td></tr>
+      <tr><td class="ht">Preocupação: EUA relaxando após abrir vantagem (herança)</td><td style="color:var(--good)"><b>✓ Não se repetiu</b></td><td>Mudou para o 3-5-2 e manteve o zero; o desencaixe tardio de Ream diante de Irankunda foi isolado e não custou caro — disciplina claramente melhor que na 1ª rodada</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">📌 <b>Resumo do acerto de contas</b>: o cenário base (vitória de controle 2-0 dos EUA + Menos) foi um <b>acerto preciso</b>; o único desvio é que o processo foi mais equilibrado que o placar (xG 1.17 vs 2 reais), confirmando a ressalva "prêmio do dinheiro público local, mas o jogo não será necessariamente fácil". A tese pré-jogo do site se cumpriu no essencial.</div>
+
+    <h4 style="margin-top:16px">⑤ Projeção para frente</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fa6e6">🇺🇸 EUA · Próximo vs Turquia (25/6, Inglewood/LA)</h4>
+        <ul class="watch">
+          <li><b>O retorno de Pulisic é a principal variável</b>: com a vaga nas 16-avos já garantida e sem pressão para vencer, o prazo da panturrilha de Pulisic mirava esta rodada — se ele voltar, a fraqueza para "abrir o bloco" diminui; Pochettino também pode rodar para testar combinações.</li>
+          <li><b>O ataque posicional ainda precisa ser comprovado</b>: 70% de posse renderam apenas 1.17 xG, então abrir um bloco em jogo aberto fica em dúvida; a Turquia é mais forte que a Austrália e, após perder por 0-2 para ela, vai pressionar muito por pontos, testando de verdade o jogo posicional dos EUA.</li>
+          <li><b>Caminho de gol repetível = bola parada</b>: os duelos aéreos e as segundas bolas de Freeman/Richards/Ream foram a única produção confiável — também uma arma-chave contra a Turquia.</li>
+          <li><b>Sem novas suspensões/lesões</b>: o único amarelo de Robinson não acumula suspensão; elenco saudável, o retorno de Pulisic é a única incógnita.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e6c45a">🇦🇺 Austrália · Próximo vs Paraguai (25/6, Santa Clara)</h4>
+        <ul class="watch">
+          <li><b>Jogo de vida ou morte</b>: 1 vitória, 1 derrota, empatada no saldo de gols contra um Paraguai igualmente necessitado — é o verdadeiro desempate pela classificação, e a Austrália já não pode passar com um empate.</li>
+          <li><b>O ataque precisa produzir</b>: um xG de 0.12 sem ameaça expôs o problema "defesa sólida, ataque fraco"; contra o Paraguai precisam se soltar — Irankunda provavelmente volta à escalação, e a finalização de Toure/Velupillay é decisiva.</li>
+          <li><b>A bola parada segue sendo a marca registrada</b>: 8 gols nas Eliminatórias mais a ameaça aérea de Souttar/Circati — num duelo de poucos gols com o Paraguai, uma bola parada pode decidir a classificação.</li>
+          <li><b>Sem novas suspensões/lesões</b>: sem cartões vermelhos nem lesões aqui; Beach está firme no gol, o elenco está disponível — o problema é de abordagem, não de pessoal.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia primeiro este trecho)</h3>
+    <p class="lead">Este é um <b>confronto direto pela liderança do grupo entre duas seleções que venceram na 1ª rodada</b>: a anfitriã Estados Unidos (FIFA #17, pressão alta de Pochettino + Balogun como único centroavante, goleou o Paraguai por 4-1 na 1ª rodada) contra a Austrália, que surpreendeu (FIFA #27, bloco baixo disciplinado e contra-ataque de Popovic, derrubou a Turquia por 2-0 na 1ª rodada e escalou a escalação inicial mais jovem da história das Copas). O handicap aponta claramente, mas não é um atropelo: vitória dos EUA <b>1.61</b> (linha americana -165, probabilidade implícita sem margem ≈60%), empate <b>4.20</b> (+320, ≈23%), vitória da Austrália <b>5.50</b> (+450, ≈17%). Linha de gols 2.5: mais de <b>1.96</b> (-104) / menos de <b>1.82</b> (-122), o mercado pende levemente para menos gols. Handicap <b>Estados Unidos -1.5 / Austrália +1.5</b> (Austrália +1.5 cerca de -127). Supercomputador da Opta: vitória dos EUA <b>58,5%</b>, empate 20,9%, vitória da Austrália 20,6%. Roteiro base: <b>Estados Unidos vencem por 2-0 / 2-1 controlando o jogo</b>, mas o bloco baixo + contra-ataque + bola parada da Austrália já provaram na 1ª rodada que podem machucar — não são, de forma alguma, um adversário fácil. <b>🆕 Escalações oficiais divulgadas (veja o módulo ✅ abaixo): a grande estrela Pulisic está fora pela lesão na panturrilha — os EUA escalam Pepi e mudam para um 3-4-1-2 com dois atacantes; a ponta de lança do contra-ataque da Austrália, Irankunda, surpreende no banco. O cenário base do resumo (EUA controlam e vencem) se mantém, com a lógica de menos gols levemente reforçada.</b></p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita de vitória dos EUA (sem margem)</div><div class="v" style="color:#7fa6e6">≈60%</div></div>
+      <div class="key"><div class="k">Prob. implícita de menos gols</div><div class="v" style="color:#e6c45a">≈52%</div></div>
+      <div class="key"><div class="k">Prob. de vitória dos EUA (Opta)</div><div class="v" style="color:var(--good)">58,5%</div></div>
+      <div class="key"><div class="k">Índice de Sobreaquecimento do Mercado</div><div class="v" style="color:var(--warn)">3,5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Pulisic fora (oficial)</b>: panturrilha não recuperada, fora da convocação (mira a próxima rodada vs Türkiye); os EUA escalam Pepi e mudam para um 3-4-1-2 com dois atacantes — perde sua entrega de bola parada/pênaltis e a faísca individual, mas ganha verticalidade no ataque.</li>
+      <li><b>Boa fase de Balogun (trazido do jogo anterior)</b>: marcou duas vezes na 1ª rodada; o sistema com um único centroavante como ponto de apoio já está rodando, sendo o principal recurso dos EUA para furar defesas fechadas.</li>
+      <li><b>Bola parada + contra-ataque da Austrália (ajuste oficial)</b>: a marca das eliminatórias (8 gols; zagueiros altos Souttar/Circati) continua, mas a ponta do contra-ataque <b>Irankunda está no banco</b> — cai a ameaça de roubar pontos em transição cedo, Velupillay é mais de construção; Irankunda vira trunfo no segundo tempo.</li>
+      <li><b>Concentração defensiva dos EUA após abrir vantagem (trazido do jogo anterior)</b>: na 1ª rodada, após o 3-0, relaxaram e sofreram; a ausência de Irankunda do XI reduz o risco de contra-ataque cedo, mas quando ele entrar (60-70') a ameaça de velocidade na transição volta, então o recuo ainda exige cuidado.</li>
+    </ul>
+  </div>
+
+  <!-- noticias de ultima hora -->
+  <section style="border:1px solid #234a5a;background:linear-gradient(135deg,#13202b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave de última hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fontes + por que importa</span></h2>
+    <div class="sub">Informações em primeira mão e sinais de forma que influenciam esta partida, explicando item a item como alteram a tática ou o resultado (inclui o que foi trazido do jogo anterior)</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">🆕 Atualização pré-jogo · Maior incógnita dos EUA resolvida <span style="color:var(--mut);font-weight:400">· NBC / CBS / SI / FanDuel · 18-19/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Lesão na panturrilha de Pulisic confirmada como apta para ser titular</b> — Pochettino e o capitão Adams afirmaram que "Pulisic está pronto"<span style="font-size:12px;color:var(--warn)">(trazido do jogo anterior)</span></div>
+      <p style="font-size:13.5px">Segundo informações pré-jogo da NBC Sports, CBS Sports, SI e FanDuel, a substituição de Pulisic no intervalo contra o Paraguai na 1ª rodada foi por "desconforto na panturrilha, saída preventiva", e não por agravamento da lesão; antes da partida, o técnico Pochettino e o capitão Tyler Adams confirmaram que ele "está pronto", e toda a linha ofensiva, incluindo Pulisic, está confirmada como disponível e titular. Caso não tenha condições na hora do jogo, Timothy Weah assumiria sua posição na esquerda. Escalação provável: Estados Unidos (4-3-3) Freese; Freeman, Richards, Ream, Robinson; Adams, Tillman; Dest, McKenzie, Pulisic; Balogun. <span style="color:var(--warn)">(escalação provável, a confirmar pela lista oficial · a confirmar)</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: esta é a maior variável de última hora da partida. ① Pulisic é o recurso de maior qualidade individual dos EUA pela esquerda para furar defesas fechadas, além de ser o cobrador de bolas paradas/pênaltis — com ele em campo, a taxa de sucesso dos EUA para "abrir o bloco baixo combinando lateral e meio" sobe significativamente; ② a resolução da incógnita significa que a precificação do mercado para a vitória dos EUA e o handicap (-1.5) não vai afrouxar por desfalque — pelo contrário, consolida a linha principal.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start" style="color:var(--accent)">NBC Sports — escalação/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/" style="color:var(--accent)">CBS — lesão de Pulisic</a> · <a href="https://www.si.com/soccer/usmnt-predicted-lineup-vs-australia-world-cup-group-d-6-19-26" style="color:var(--accent)">SI — escalação provável</a></div>
+    </div>
+
+    <div style="border-left:3px solid #7fa6e6;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">Estados Unidos · Ativos trazidos da 1ª rodada <span style="color:var(--mut);font-weight:400">· deste site report-usa-vs-paraguay · 13/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Balogun marcou duas vezes, sistema de único centroavante rodando</b>; mas após o 3-0 a defesa relaxou e sofreu um gol <span style="font-size:12px;color:var(--warn)">(trazido do jogo anterior)</span></div>
+      <p style="font-size:13.5px">Os EUA venceram o Paraguai por 4-1 na 1ª rodada, Balogun marcou duas vezes + Reyna fez um golaço de trivela; o sistema com um único centroavante como ponto de apoio já está rodando, e as dúvidas sobre "furar defesas fechadas" foram respondidas pela combinação lateral-meio + qualidade individual. Mas o ponto de transferência da prévia anterior deste site apontava: após abrir 3-0, os EUA tiveram queda de concentração defensiva e sofreram um gol — esse risco é especialmente crítico contra um adversário mais incisivo. A disponibilidade física de Chris Richards é um ponto positivo.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a Austrália é justamente do tipo "bloco baixo + contra-ataque direto + jogo aéreo/bola parada", o que corresponde exatamente ao padrão de gols sofridos pelos EUA ao relaxarem após abrir vantagem. Se os EUA não mantiverem a intensidade durante todo o jogo, o contra-ataque de Irankunda e as bolas paradas da Austrália podem perfeitamente repetir a lógica do jogo zerado contra a Turquia e roubar pontos na contramão.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.aol.com/articles/haji-wright-delivers-as-usmnt-beats-australia-2-1-but-christian-pulisics-injury-clouds-win" style="color:var(--accent)">AOL — situação recente dos EUA</a> · <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26" style="color:var(--accent)">SI — análise da 1ª rodada/prévia</a></div>
+    </div>
+
+    <div style="border-left:3px solid #e6c45a;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e6c45a;font-weight:700">Austrália · Trazido da 1ª rodada + situação do elenco <span style="color:var(--mut);font-weight:400">· deste site report-australia-vs-turkiye · Sky / Goal · 14~18/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>2-0 zebra sobre a Turquia, elenco 100% saudável, confiança nas alturas</b>; Mohamed Toure teve cãibra contra a Turquia, forma sob monitoramento <span style="font-size:12px;color:var(--warn)">(trazido do jogo anterior)</span></div>
+      <p style="font-size:13.5px">A Austrália derrubou a Turquia por 2-0 em Vancouver na 1ª rodada (Irankunda marcou em contra-ataque no primeiro tempo, Metcalfe ampliou no segundo); o goleiro de 22 anos Patrick Beach foi titular no lugar do veterano Mat Ryan e, com 8 defesas, se tornou o maior pegador de bolas do torneio até agora; Popovic escalou "a escalação inicial mais jovem da história das Copas". Sem desfalques por lesão ou suspensão confirmados; apenas o atacante Mohamed Toure teve cãibra severa contra a Turquia e sua condição para jogar está sob monitoramento (a confirmar). O ponto de transferência da prévia deste site apontava: <b>o modelo de contra-ataque da Austrália pode não funcionar tão bem contra os EUA, que assumem a posse de bola, exigindo uma resistência defensiva ainda maior do que contra a Turquia</b>; mas a bola parada (8 gols nas eliminatórias) é uma arma replicável. Espera-se a manutenção da escalação da 1ª rodada, com Irankunda novamente titular como ponta de lança do contra-ataque.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: ① a inspiração de Beach e a confiança coletiva do jogo zerado são ativos reais — a Austrália não vai se intimidar; ② mas o jogo zerado da 1ª rodada foi alimentado por uma "Turquia com posse sem penetração" — os EUA são mais rápidos e mais verticais que a Turquia, e se a defesa australiana se atrasar no recuo na transição, a velocidade de Balogun/Pulisic punirá diretamente; ③ se Toure jogar lesionado ou for poupado, o ponto de apoio ofensivo da Austrália enfraquece, dependendo ainda mais do contra-ataque pontual de Irankunda e das bolas paradas.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver" style="color:var(--accent)">Sky Sports — análise do 2-0/Beach</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c" style="color:var(--accent)">Goal — prévia/cãibra de Toure</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19" style="color:var(--accent)">FanDuel — situação do elenco/escalação</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Contexto · Situação de classificação e significado da partida <span style="color:var(--mut);font-weight:400">· Opta / ESPN · 18/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">As duas seleções têm 3 pontos cada após a 1ª rodada; nesta partida o <b>vencedor provavelmente garante antecipadamente a liderança do grupo</b>, enquanto o derrotado vê a pressão por classificação aumentar bruscamente</div>
+      <p style="font-size:13.5px">Resultados da 1ª rodada do Grupo D: Estados Unidos 4-1 Paraguai, Austrália 2-0 Turquia; as duas seleções têm 3 pontos cada e lideram empatadas; Paraguai e Turquia se enfrentam no mesmo dia (19-20/06, Santa Clara) no outro jogo. Uma vitória dos EUA praticamente garante a classificação antes da 3ª rodada e assume a iniciativa pela liderança; a Opta dá aos EUA 32,83% de probabilidade de liderar o grupo (Turquia 29,04%, Paraguai 20,51%, Austrália 17,62%). Anfitriã + 69 mil pessoas em casa (Lumen Field). <span style="color:var(--warn)">(o cenário de classificação depende do placar do outro jogo e da pontuação final · a confirmar)</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: ambas têm motivação para "buscar a vitória", mas com perfis de risco diferentes — os EUA, em casa, precisam vencer para firmar a liderança e vão assumir o jogo pressionando; a Austrália já superou as expectativas da 1ª rodada, pode aceitar o empate e está mais disposta a se fechar em bloco baixo + roubar pontos no contra-ataque. Essa diferença de motivação reforça o formato "EUA com a posse, Austrália no contra-ataque".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — supercomputador/probabilidades do grupo</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries" style="color:var(--accent)">ESPN — situação do Grupo D</a></div>
+    </div>
+  </section>
+
+  <!-- Escalacoes oficiais -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· confirmado por duas fontes · revisão do resumo</span></h2>
+    <div class="note" style="background:#0e2218;border-color:#1d4a2a;color:#bff0d0">✅ <b>Confirmação oficial</b> (≥2 fontes coincidem: lista ao vivo do Yahoo Sports + notícias de CNN/ESPN, divulgadas ~75 min antes do início). <b>Dois bombas</b>: o núcleo de nível de capitão dos EUA <b>Pulisic está fora (panturrilha)</b> — Pepi é titular e a equipe muda para dois atacantes; a ponta de lança do contra-ataque da Austrália, <b>Irankunda, surpreende no banco</b>.</div>
+
+    <h4>🇺🇸 Estados Unidos — XI oficial (3-4-1-2 · dois atacantes ante o previsto)</h4>
+    <div class="lineup">Freese; Richards · Ream(C) · Freeman; Robinson · McKennie · Adams · Dest; Tillman; Balogun · Pepi</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Armas-chave no banco: Tim Weah (faísca pelas laterais), Gio Reyna (criatividade), Haji Wright (rodízio de referência). <b>Pulisic não está na convocação (poupado; mira a próxima rodada vs Türkiye).</b></div>
+
+    <h4 style="margin-top:14px">🇦🇺 Austrália — XI oficial (3-4-2-1 · mesmo modelo que venceu a Türkiye)</h4>
+    <div class="lineup">Beach; Burgess · Circati · Souttar(C); Bos · O'Neill · Leckie · Italiano; Velupillay · Okon-Engstler; Toure</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Armas-chave no banco: <b>Nestory Irankunda</b> (o maior trunfo de impacto — goleador mais jovem da história das Copas, máxima velocidade no contra-ataque, guardado como recurso), Mathew Ryan (experiência no gol), Connor Metcalfe (chegadas).</div>
+
+    <h4 style="margin-top:16px">vs escalação provável · comparação</h4>
+    <table>
+      <tr><th>Seleção</th><th>Mudança</th><th>Previsto</th><th>Oficial</th><th>Por que importa</th></tr>
+      <tr><td class="ht">EUA</td><td>Ponta de lança</td><td>Pulisic titular (ponta-esq.)</td><td>Pepi titular (segundo atacante)</td><td>Lesão na panturrilha confirmada como desfalque; não é troca de ponta por ponta, mas mudança para dois atacantes — pressão central mais direta sobre o bloco baixo, mas perde a qualidade individual de Pulisic e a função em bola parada/pênaltis</td></tr>
+      <tr><td class="ht">EUA</td><td>Esquema</td><td>4-3-3 com linha de quatro</td><td>3-4-1-2 com três zagueiros e dois atacantes</td><td>Da penetração pelas laterais para uma dupla de ataque; Dest/Robinson viram alas para dar largura, Tillman como meia-armador ligando Balogun+Pepi</td></tr>
+      <tr><td class="ht">EUA</td><td>Resto</td><td>—</td><td>10/11 da vitória sobre o Paraguai</td><td>Todos menos Pulisic mantidos — o técnico confia no XI da 1ª rodada</td></tr>
+      <tr><td class="sc">AUS</td><td>Ponta do contra-ataque</td><td>Irankunda titular</td><td>Irankunda no banco / Velupillay titular</td><td>A "arma de contra-ataque mais direta" em que o cenário de risco desta página se apoiava está no banco — cai a ameaça australiana de roubar pontos em transição cedo; Irankunda vira trunfo na reta final</td></tr>
+      <tr><td class="sc">AUS</td><td>Meio-campo</td><td>Metcalfe titular</td><td>Leckie titular</td><td>O veterano Leckie substitui Metcalfe (goleador na 1ª rodada); experiência/disciplina acima das chegadas</td></tr>
+      <tr><td class="sc">AUS</td><td>Esquema</td><td>4-2-3-1</td><td>3-4-2-1 (igual ao vs Türkiye)</td><td>Bloco baixo com três zagueiros + alas, Burgess/Circati/Souttar mais densos pelo alto — mesmo modelo que zerou a Türkiye</td></tr>
+      <tr><td class="sc">AUS</td><td>Centroavante</td><td>Toure (cãibra · a confirmar)</td><td>Toure titular</td><td>Dúvida da cãibra resolvida, confirmado na frente — elimina o item pendente ① desta página</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">Leitura tática (revisão do resumo)</h4>
+    <ul class="cl">
+      <li><b>Sinal de esquema (EUA)</b>: 4-3-3 → 3-4-1-2 com dois atacantes. Sem Pulisic, Pochettino acrescenta um atacante (Pepi ao lado de Balogun) em vez de um ponta, para furar o bloco baixo da Austrália com verticalidade, deixando a largura aos alas. A linha principal do resumo ("EUA controlam e cercam") <b>se mantém</b>; o método para furar passa de "qualidade individual pelas laterais + bola parada" para "dupla central + cruzamentos dos alas".</li>
+      <li><b>Baixa-chave (EUA)</b>: perder Pulisic = perder a melhor entrega de bola parada/pênaltis e uma faísca individual. Contra os zagueiros altos Souttar/Circati no duelo de bola parada de mão dupla, a ameaça dos EUA num lado cai — uma <b>correção</b> que pende levemente o fator "qualidade em bola parada" para a Austrália.</li>
+      <li><b>Baixa-chave (Austrália)</b>: Irankunda no banco é a maior mudança pontual. O risco de 1-1 desta página se sustentava justamente em "Irankunda rouba pontos no contra-ataque"; sua ausência do XI enfraquece claramente a transição direta cedo da Austrália (Velupillay/Okon-Engstler são mais de construção do que de pura velocidade) — o perigo de "ser surpreendido em vantagem" <b>cai um degrau</b> (mas Irankunda segue sendo trunfo dos 60-70', então o risco do segundo tempo volta).</li>
+      <li><b>Conclusão líquida</b>: o cenário base do resumo (EUA controlam e vencem) <b>se mantém</b>; as duas mudanças puxam em sentidos opostos — EUA mais diretos, porém mais fracos em bola parada/qualidade individual, Austrália com o modelo intacto, mas com menor ameaça de contra-ataque cedo. O formato provável é "cerco contínuo dos EUA + defesa pura e profunda da Austrália", gols talvez mais tarde, <b>lógica de menos de 2.5 levemente reforçada</b>. A estrutura de risco é reprecificada de "contra-ataque de Irankunda" para "rebaixamento em bola parada dos EUA + resiliência geral da Austrália".</li>
+    </ul>
+
+    <div class="note" style="margin-top:12px">📊 <b>Reação do mercado</b>: após a divulgação, consenso EUA <b>-170 (≈1,59 decimal)</b> · empate ≈4,0 · Austrália <b>+410 (≈5,10)</b>. Ponto-chave: apesar do desfalque confirmado da grande estrela Pulisic, os EUA seguem como favoritos claros (≈1,59) e não se alongaram de forma relevante com a notícia da lesão — o mercado julga que Pepi+Balogun (dois atacantes) compensa de sobra, em linha com a leitura de "prêmio do público anfitrião" desta página. (Não há dados com marca de tempo do movimento antes/depois; indica-se apenas o preço pós-anúncio; não é conselho de apostas.)</div>
+
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://sports.yahoo.com/soccer/live/usmnt-vs-australia-score-live-updates-where-to-watch-world-cup-2026-christian-pulisic-injury-news-lineups-170000908.html">Yahoo Sports — XI oficiais ao vivo + odds</a> · <a href="https://www.cnn.com/2026/06/19/sport/soccer-world-cup-usa-australia">CNN — Pulisic fora</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-118651">RotoWire — esquema/notícias</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">Central de partidas oficial da FIFA</a></div>
+  </section>
+
+  <!-- dados -->
+  <section>
+    <h2><span class="n">1</span> Dados (núcleo)</h2>
+    <div class="sub">Ranking FIFA · probabilidade implícita de vitória/empate/derrota (odds sem margem) · panorama do Grupo D · mercado de gols — todos os gráficos usam dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (sem margem, calculada a partir das odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita mais de / menos de 2.5 gols (sem margem)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Ranking FIFA das quatro seleções do Grupo D (quanto menor, mais forte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇺🇸 Estados Unidos</th><th>🇦🇺 Austrália</th></tr>
+      <tr><td>Ranking FIFA (06/2026)</td><td class="ht">#17</td><td class="sc">#27</td></tr>
+      <tr><td>Resultado da 1ª rodada</td><td class="ht">4-1 sobre o Paraguai (Balogun marcou duas vezes)</td><td class="sc">2-0 sobre a Turquia (Irankunda, Metcalfe)</td></tr>
+      <tr><td>Situação em grandes torneios</td><td class="ht">Oitavas na Copa 2022; eliminada na fase de grupos da Copa América 2024 (em casa)</td><td class="sc">Oitavas na Copa 2022; quartas na Copa da Ásia 2023</td></tr>
+      <tr><td>Técnico</td><td class="ht">Mauricio Pochettino</td><td class="sc">Tony Popovic</td></tr>
+      <tr><td>Odds 1X2 (DECIMAIS)</td><td class="ht">Vitória 1.61 (-165, implícita ≈60%)</td><td class="sc">Vitória 5.50 (+450, ≈17%) · Empate 4.20 (+320, ≈23%)</td></tr>
+      <tr><td>Mais de / menos de 2.5 gols</td><td colspan="2" class="sc">Mais de 2.5 @ 1.96 (-104) / menos de 2.5 @ 1.82 (-122) — mercado pende levemente para menos gols</td></tr>
+      <tr><td>Handicap (referência asiática)</td><td colspan="2">Estados Unidos -1.5 (cerca de +170) / Austrália +1.5 (cerca de -127)</td></tr>
+      <tr><td>Histórico de confrontos (recente)</td><td colspan="2">15/10/2025 amistoso Estados Unidos 2-1 Austrália (sem confrontos oficiais em Copa)</td></tr>
+      <tr><td>Maior incógnita</td><td class="ht">Lesão na panturrilha de Pulisic → titularidade confirmada</td><td class="sc">Cãibra de Mohamed Toure (forma sob monitoramento · a confirmar)</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as implícitas após remover a margem das odds DECIMAIS (≈60/23/17). Fonte das odds: DraftKings/consenso (EUA -165, empate +320, Austrália +450), conversão da linha americana para decimal: EUA 1.61, empate 4.20, Austrália 5.50. Linha de gols 2.5, mais de -104 (1.96) / menos de -122 (1.82). Handicap Estados Unidos -1.5 (cerca de +170) / Austrália +1.5 (cerca de -127). Supercomputador da Opta: vitória dos EUA 58,5%, empate 20,9%, vitória da Austrália 20,6% — em alta concordância com a probabilidade de mercado sem margem, precificação do handicap razoável.</div>
+  </section>
+
+  <!-- Dados profundos · metricas esperadas -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados Profundos · Métricas Esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· Média histórica vs valor real nesta Copa · sinais de qualidade subjacente · com fontes</span></h2>
+    <div class="sub">Método central: comparar a <b>base histórica de cada seleção (últimos 10 jogos de eliminatórias / amistosos)</b> com seus <b>valores reais da primeira rodada desta Copa</b>, perguntando "se está acima ou abaixo do nível histórico e o que isso significa". As amostras públicas de xG de seleções são limitadas; os dados faltantes são marcados como "a confirmar" e nunca inventados.</div>
+
+    <h4>① Núcleo: média histórica vs valor real nesta Copa (seleção por seleção)</h4>
+    <table>
+      <tr><th>Seleção / Métrica</th><th>Base histórica (últimos 10 · FootyStats)</th><th>Valor real nesta Copa (rodada 1)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇺🇸 EUA · ataque xG/gols</td><td class="ht">Últimos 10: <b>xGF 1.23/jogo</b>, 1.30 gols/jogo, 58% posse, 8.3 finalizações (4.6 no alvo), 16% conversão</td><td class="ht">Rodada 1 <b>xG 1.35</b>, marcou <b>4 gols</b> (4-1 Paraguai, adversário com apenas 0.47 xG)</td><td>O xG desta Copa (1.35) está <b>ligeiramente acima</b> da média histórica (1.23), mas 4 gols vs 1.35 xG = <b>forte superdesempenho na finalização (+2.65)</b> — inclui 1 gol contra + o golaço de Reyna nos acréscimos; <b>insustentável</b>, criatividade real ≈1.3–1.4</td></tr>
+      <tr><td class="ht">🇺🇸 EUA · defesa xGA/gols sofridos</td><td class="ht">Últimos 10: <b>xGA 1.20/jogo</b>, 1.10 sofridos/jogo, 30% de jogos sem sofrer gol</td><td class="ht">Rodada 1 limitou o Paraguai a <b>0.47 xG</b>, sofreu apenas 1 (relaxou após o 3-0)</td><td>O xGA da rodada 1 (0.47) é <b>claramente melhor</b> que a base histórica (1.20) — mas o adversário era fraco e o relaxamento veio depois de já estar na frente; a qualidade defensiva fica mascarada pelo placar, ainda a ser testada contra ataques mais multidimensionais</td></tr>
+      <tr><td class="sc">🇦🇺 Austrália · ataque xG/gols</td><td class="sc">Últimos 10: <b>xGF 0.83/jogo</b> (baixo), 1.60 gols/jogo, apenas 39% posse, <b>23% conversão (muito alta)</b></td><td class="sc">Rodada 1 <b>xG 0.77</b>, marcou 2 (2-0 Türkiye, 28,3% posse = a menor da sua história)</td><td>O xG desta Copa (0.77) <b>condiz</b> com a média histórica baixa (0.83) — a produção é por natureza escassa mas eficaz; os 2 gols vieram do contra-ataque de Irankunda + o chute de longe de Metcalfe via <b>alta conversão</b>, um traço de estilo e não sorte, mas o baixo xG significa que o número de gols oscila com facilidade</td></tr>
+      <tr><td class="sc">🇦🇺 Austrália · defesa xGA/gols sofridos</td><td class="sc">Últimos 10: <b>xGA 1.39/jogo (alto)</b>, 0.90 sofridos/jogo, 40% de jogos sem sofrer gol</td><td class="sc">Rodada 1 sofreu <b>1.33 xGA</b> da Türkiye (30 finalizações) e mesmo assim ficou <b>sem sofrer gol</b> (Beach 8 defesas)</td><td>História e rodada 1 coincidem: <b>xGA alto, gols sofridos reais baixos</b> — crônica "sorte defensiva / superdesempenho do goleiro" (xGA−sofridos ≈+0.49/jogo). Se as defesas de Beach caírem, esse 1.3+ de xGA vira gols; o <b>jogo sem sofrer gol é insustentável</b></td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórico</b>: ① <b>Finalização superaquecida dos EUA</b> — os 4 gols da rodada 1 superaram em muito os 1.35 xG via gol contra + golaço nos acréscimos; ao regredir à média o ataque real ≈1.3–1.4, a "goleada 4-1" exagera a diferença; ② <b>a defesa da Austrália vive de sorte + goleiro</b> — o xGA histórico 1.39 / rodada 1 1.33 superam ambos os gols reais sofridos, o jogo sem sofrer gol foi construído sobre as 8 defesas de Beach e é insustentável; ③ em ambas as seleções a rodada 1 foi "resultado melhor que o processo". Fontes: FootyStats (xGF/xGA/posse/finalizações dos últimos 10 de ambas) · Opta Analyst (xG rodada 1: EUA 1.35-0.47, AUS 0.77-1.33). Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção do jogo & calibração Opta</h4>
+    <table>
+      <tr><td>xG projetado do jogo pelo modelo (xGscore)</td><td class="ht">EUA ≈1.5</td><td class="sc">Austrália ≈0.8</td><td>Após a calibração, a projeção dos EUA com a bola domina — mas o bloco baixo da Austrália + a capacidade de Beach de comprimir o xG adversário em gols reais sofridos é a variável-chave que reduz a diferença</td></tr>
+      <tr><td>Supercomputador Opta 1X2</td><td colspan="2" class="sc">Vitória EUA <b>58,5%</b> / empate 20,9% / vitória Austrália 20,6% (25.000 simulações, ajustado por adversário)</td><td>Em alta concordância com as odds sem margem (60/23/17); o supercomputador não leva ao pé da letra o superdesempenho 4-1 dos EUA e dá à Austrália 20%+ de chance de roubar pontos</td></tr>
+      <tr><td>Opta Power Ranking · força da amostra</td><td colspan="2" class="sc">As avaliações de sistema de ambas as seleções estão próximas <span style="color:var(--warn)">(valores exatos a confirmar)</span>; <b>alerta de armadilha</b>: os últimos 10 dos EUA (incl. amistosos/eliminatórias) enfrentaram adversários mais fracos, então os números de xG precisam de um desconto</td><td>O xGF 1.23 dos EUA veio sobretudo contra adversários mais fracos; se "romper o bloco + finalizar" continua eficiente contra uma seleção forte que pressiona é a verdadeira incógnita</td></tr>
+      <tr><td>PPDA · xT · field tilt · PSxG · participação do xG de bola parada</td><td colspan="2" class="sc">Os dados públicos de seleções são limitados <span style="color:var(--warn)">(a confirmar)</span> — proxies qualitativos: EUA 58% posse + tendência de pressão alta (field tilt fortemente para os EUA); Austrália 39% posse, forçada ao bloco baixo, apoiando-se no valor de defesas de Beach (PSxG−sofridos positivo) para reduzir os gols reais sofridos</td><td>O field tilt provavelmente pende para os EUA por longos trechos; o jogo da Austrália é "sofrer poucos + eficiência no contra-ataque"</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Glossário de métricas profundas (o que cada métrica "tipo xG" significa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / xG sem pênaltis): soma da qualidade das chances de finalização; excluindo pênaltis reflete melhor a criatividade no jogo aberto.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que os adversários criam contra você, mede a defesa real e não as defesas/sorte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (diferença de gols esperados por 90): xGF−xGA, o melhor indicador único de força global. EUA últimos 10 +0.03, Austrália −0.56.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG por finalização</b> (qualidade média por chute): se a seleção de finalizações é eficiente — valor baixo = muitos chutes de longe / chances ruins.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PSxG</b> (xG pós-chute / dificuldade de defesa enfrentada pelo goleiro): subtrair os gols reais sofridos quantifica o valor agregado das defesas do goleiro — as 8 defesas de Beach na rodada 1 foram uma contribuição positiva.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: proporção de toques no último terço, mede o território/domínio e não a posse bruta.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas — FootyStats (xG/xGA/posse/finalizações medidos dos últimos 10 de ambas) + Opta Analyst (xG rodada 1/supercomputador). As amostras públicas de seleções para PPDA/xT/field tilt/PSxG/participação do xG de bola parada são limitadas; os dados faltantes são sempre marcados como "a confirmar" e nunca inventados.</div>
+  </section>
+
+  <!-- temperatura do mercado -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Temperatura do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de celebridades / odds / fluxo de capital / opinião pública</span></h2>
+    <div class="sub">A direção de vitória dos EUA é altamente unânime (anfitriã + viés óbvio do público em casa); a verdadeira divergência está em "vencer por 2 gols (handicap -1.5)" e em "menos gols" — a maioria dos especialistas aposta em menos gols</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de Sobreaquecimento do Mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.6">🔥</span><span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3,5/5 · público da anfitriã aquecido; handicap e menos gols têm divergência real</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">A direção de vitória dos EUA convergiu e, sendo a anfitriã jogando em casa, há um claro acúmulo de capital do público (a abertura -165 chegou a ser empurrada para -185), existindo um prêmio emocional; os especialistas, por sua vez, alertam de modo geral que "vence, mas o -1.5 não tem valor suficiente" — porque a Austrália já provou na 1ª rodada ser difícil.</div>
+    </div>
+
+    <h4>① Agregação de recomendações de especialistas (estatística de direção: vitória dos EUA todos · vitória da Austrália 0 · empate 0)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>Instituto de estatística</td><td>Prob. de vitória dos EUA <b>58,5%</b> (simulação do supercomputador); empate 20,9% / vitória da Austrália 20,6%</td></tr>
+      <tr><td>RotoWire</td><td>Mídia de previsões</td><td>Vitória dos EUA, mas handicap (-1.5) a -160 sem valor suficiente (Austrália difícil); inclina-se para <b>Estados Unidos 2-0</b></td></tr>
+      <tr><td>SportsLine (Green)</td><td>Mídia de apostas americana</td><td>Vitória dos EUA + aposta principal em <b>menos de 2.5 gols</b></td></tr>
+      <tr><td>Covers / Yahoo</td><td>Mídia de previsões</td><td>Consenso de vitória dos EUA; <b>2-0</b> é o placar mais comum</td></tr>
+      <tr><td>CBS Sports</td><td>Opinião sobre mercado de jogadores</td><td><b>Pulisic marcar ou dar assistência +110</b> (condicionado a ele jogar)</td></tr>
+      <tr><td>FanDuel Research</td><td>Mídia de handicap</td><td>Vitória dos EUA; alerta para o valor de hedge de Austrália +1.5 e Under</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de sobreaquecimento (médio-alto)</b>: a direção do resultado é altamente unânime (ninguém aposta na vitória da Austrália), o que é um consenso razoável; mas <b>anfitriã + jogo em casa fazem o público apostar unilateralmente nos EUA</b>, empurrando as odds para baixo (-165→-185), o que é um prêmio emocional real. O valor contrário dos especialistas se concentra em <b>Austrália +1.5 / menos de 2.5 gols</b> — ou seja, "os EUA vencem, mas não necessariamente por 2 gols".</div>
+
+    <h4 style="margin-top:20px">② Variação das odds (DECIMAIS)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitória dos EUA</th><th>Leitura</th></tr>
+      <tr><td>Abertura (DraftKings)</td><td>1X2</td><td class="ht">1.61 (-165)</td><td>Empate 4.20 / Austrália 5.50; pende claramente para os EUA, mas não é atropelo</td></tr>
+      <tr><td>18/06 público</td><td>1X2</td><td class="ht">cerca de 1.54 (-185)</td><td>Acúmulo de capital da anfitriã, vitória dos EUA ainda mais comprimida → sinal de prêmio emocional</td></tr>
+      <tr><td>18-19/06</td><td>Mais de / menos de 2.5</td><td colspan="2" class="sc">Mais de 2.5 @ 1.96 (-104); menos de 2.5 @ 1.82 (-122) — leve viés para menos gols</td></tr>
+      <tr><td>Handicap (referência asiática)</td><td>Estados Unidos -1.5</td><td colspan="2" class="sc">Estados Unidos -1.5 cerca de +170; Austrália +1.5 cerca de -127 (especialistas preferem Austrália +1.5)</td></tr>
+    </table>
+    <div class="note">📌 A vitória dos EUA foi empurrada pelo público de -165 para -185, um sinal típico de temperatura do público da anfitriã — o preço já consumiu o consenso. Os mercados com mais informação são o <b>handicap -1.5 e menos de 2.5 gols</b>: a maioria dos especialistas acha que "os EUA vencem, mas dificilmente por 2 gols", então o Under e o Austrália +1.5 são onde está a divergência/valor. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">②-b Posicionamento e movimento da linha (abertura → agora)</h4>
+    <table>
+      <tr><th>Momento</th><th>Linha / odd (vitória dos EUA)</th><th>Mudança de posicionamento · gatilho</th></tr>
+      <tr><td>Abertura do torneio (antes da fase de grupos · DraftKings)</td><td class="ht">aprox. 1.74 (-135)<br><span style="font-size:11.5px;color:var(--mut)">Empate ≈4.70 (+270) / Austrália ≈4.50 (+350)</span></td><td>EUA definidos como favoritos moderados, não como rolo compressor; Austrália vista brevemente como a seleção com menor chance de avançar do Grupo D.</td></tr>
+      <tr><td>Após o 4-1 dos EUA sobre o Paraguai (pico)</td><td class="ht">aprox. 1.51 (-195)<br><span style="font-size:11.5px;color:var(--mut)">Empate ≈4.60 (+360) / Austrália ≈6.00 (+500)</span></td><td><b>Gatilho: a goleada dos EUA + temperatura da anfitriã</b>. A vitória dos EUA encurtou até -195 e a vitória visitante da Austrália esticou para +500 — uma breve reação exagerada do mercado.</td></tr>
+      <tr><td>Após o 2-0 da Austrália sobre a Türkiye (abertura desta partida)</td><td class="ht">aprox. 1.61 (-165)<br><span style="font-size:11.5px;color:var(--mut)">Empate ≈4.20 (+320) / Austrália ≈5.50 (+450)</span></td><td><b>Gatilho: o surpreendente jogo sem sofrer gols da Austrália contra a Türkiye</b>. EUA recuaram de -195 para -165 e a vitória visitante da Austrália apertou de +500 para +450 — Austrália <b>reprecificada como adversário incômodo</b>.</td></tr>
+      <tr><td>Linha atual 18/19-06 (público)</td><td class="ht">aprox. 1.54 (-185) → 1.61 (-170)<br><span style="font-size:11.5px;color:var(--mut)">91% do dinheiro na vitória dos EUA</span></td><td><b>Gatilho: acúmulo unilateral do público local da anfitriã</b>. A vitória dos EUA encurtou de novo (prêmio emocional); ao mesmo tempo o Austrália +1.5 ganhou apoio e os futuros de avanço / primeiro lugar do Grupo D da Austrália se estreitaram (já não na lanterna).</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura do posicionamento do mercado</b>: a linha desta partida percorreu um ciclo completo — abertura → empurrada para cima pela goleada dos EUA → recolhida pela surpresa da Austrália → comprimida de novo pelo público. <b>EUA</b> seguem como claros favoritos, mas após duas rodadas de empurrão o preço já consumiu o consenso e carrega um prêmio emocional da anfitriã (atual -185/-170 ante um justo -165); <b>Austrália</b> completou o reposicionamento de "lanterna insignificante" a "adversário incômodo de nível de segundo cabeça de chave" — sua odd de vitória visitante segue longa (≈5.50), mas seus futuros de avanço / primeiro lugar do grupo se estreitaram de forma substancial após o 2-0, e a linha +1.5 é o lado de valor segundo o consenso dos especialistas. Em outras palavras: o mercado está cada vez mais seguro da direção do resultado (EUA vencem) mas menos confiante na margem (-1.5). Fontes: DraftKings (abertura/movimento/fluxo de dinheiro) · ESPN (linha ao vivo) · Squawka (futuros de avanço/outright da Austrália). Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ Opinião pública</h4>
+    <ul class="cl">
+      <li><b>Supercomputador da Opta</b>: vitória dos EUA 58,5%, empate 20,9%, vitória da Austrália 20,6% — em alta concordância com a probabilidade sem margem das casas (60/23/17), os dois pools basicamente convergem.</li>
+      <li><b>Foco da opinião pública</b>: a lesão de Pulisic é o maior ponto de tráfego pré-jogo (já confirmado apto a jogar); a narrativa da zebra australiana "escalação mais jovem da história + defesas espetaculares do goleiro Beach" traz certa atenção emocional; anfitriã + atmosfera do estádio em Seattle amplificam o viés do público a favor dos EUA.</li>
+      <li><b>Divergência consenso de especialistas vs público</b>: os especialistas alertam que "os EUA vencem, mas o -1.5 não tem valor", em contraste com o público que comprime cada vez mais a vitória dos EUA — esse é o principal motivo de o índice de sobreaquecimento subir a 3,5/5.</li>
+      <li><b>Kalshi / Polymarket</b>: os preços públicos de negociação e os dados de fluxo de capital para o resultado desta partida não foram encontrados <span style="color:var(--warn)">(a confirmar)</span>.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura integrada</b>: as casas e o supercomputador da Opta convergem totalmente na direção do resultado (EUA ≈58–60%), índice de sobreaquecimento <b>3,5/5</b> — ligeiramente acima de uma partida de pura convergência, porque o público da anfitriã comprimiu o preço da vitória dos EUA, criando um prêmio emocional. A verdadeira divergência de valor se concentra no <b>handicap -1.5 (se os EUA conseguem vencer por 2 gols) e em menos de 2.5 gols</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — simulação do supercomputador</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — apostas/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — previsão de especialista</a> · <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — previsão/odds</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — odds de abertura</a></div>
+  </section>
+
+  <!-- aspecto tecnico dos escanteios -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> Aspecto técnico dos escanteios <span style="font-size:12px;color:var(--mut);font-weight:500">· estilo de jogo × mercado · análise técnica de handicap/gols</span></h2>
+    <div class="sub">EUA com a posse ativa, sitiando o bloco baixo → lado com produção de escanteios mais alta; a Austrália, forçada a afastar a bola para a linha de fundo, também contribui com escanteios; linhas específicas de mercado a confirmar.</div>
+    <h4>① Perfil de escanteios das duas seleções (movido pelo estilo de jogo)</h4>
+    <table><tr><th>Dimensão</th><th>🇺🇸 Estados Unidos</th><th>🇦🇺 Austrália</th><th>Significado</th></tr>
+      <tr><td>Estilo ofensivo</td><td class="ht">Pressão alta + posse ativa; muitos cruzamentos combinando lateral e meio; Pulisic cobra bolas paradas</td><td class="sc">Bloco baixo e contra-ataque; contra-ataque direto de Irankunda; finalização em bola parada (8 gols nas eliminatórias)</td></tr>
+      <tr><td>Estimativa de escanteios por jogo</td><td class="ht">≈6–8 (posse + sítio ao bloco baixo, alta produção de escanteios)<span style="color:var(--warn)">a confirmar</span></td><td class="sc">≈3–4 (mais defensiva, forçada a afastar para a linha de fundo)<span style="color:var(--warn)">a confirmar</span></td></tr>
+      <tr><td>Ameaça de bola parada</td><td class="ht">Alta: entrega de Pulisic + zagueiros altos (Richards/Ream) cabeceando</td><td class="sc">Alta: Souttar/Circati no alto + jogadas ensaiadas de falta, sua arma principal</td></tr>
+      <tr><td>Previsão de vantagem em escanteios</td><td class="ht">Vantagem clara (posse + sítio)</td><td class="sc">Poucos, mas precisos, dependendo da qualidade da bola parada e não da quantidade</td></tr>
+    </table>
+    <h4>② Linhas reais (mercado de escanteios)</h4>
+    <p>A linha de total de escanteios e o handicap não foram encontrados em cotações públicas nesta busca <span style="color:var(--warn)">(a confirmar)</span>. Pelo perfil de estilo: os EUA com a posse sitiando, produção de escanteios claramente mais alta, e a Austrália focada em afastar a bola defensivamente, o total de escanteios pode ficar na faixa de 9–12; linhas-base comuns O/U 9.5 ou 10.5 estão dentro do normal, e um handicap de escanteios dos EUA (como -2.5/-3) condiz com o perfil de vantagem na posse — as odds específicas seguem o mercado em tempo real.</p>
+    <h4>③ Avaliação técnica (handicap & gols)</h4>
+    <div class="insight"><div class="who">Handicap (handicap de escanteios)</div>Os EUA com a posse ativa, sitiando por longo tempo o bloco baixo australiano; a diferença de escanteios deve pender claramente para os EUA; se os EUA abrirem vantagem cedo e recuarem, a diferença de escanteios se estreita. O handicap de escanteios dos EUA está altamente atrelado à tendência do mercado principal.</div>
+    <div class="insight"><div class="who">Gols (total de escanteios)</div>O lado dos EUA eleva o total de escanteios (posse + cruzamentos), e a Austrália, forçada a afastar para a linha de fundo, aumenta ainda mais a base — total de escanteios médio-alto (≥9); se o jogo se decidir cedo e o ritmo cair, recua para 8–9.</div>
+    <div class="insight"><div class="who">Variáveis e os dois lados</div>A variável-chave é o formato do jogo: se a Austrália insistir no bloco baixo, o tempo de sítio dos EUA se alonga → número de escanteios sobe; se a Austrália for forçada a ir ao ataque para buscar o placar (perdendo por dois gols), as duas atacam, e bolas paradas e escanteios podem aumentar. A qualidade da bola parada (Pulisic vs Souttar/Circati no alto) é uma variável de mão dupla.</div>
+    <div class="note">Os dados específicos de linha de escanteios não foram encontrados; o acima é uma análise qualitativa movida pelo estilo de jogo. Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- arbitro -->
+  <section>
+    <h2><span class="n">4</span> Árbitro designado & ambiente de arbitragem</h2>
+    <div class="note">✅ <b>Designação do árbitro confirmada</b>: árbitro principal <b>Felix Zwayer</b> (Alemanha, 43 anos); assistentes Robert Kempter & Christian Dietz (Alemanha). Esta Copa é a primeira vez que Zwayer atua como árbitro principal em uma Copa (na Copa de 2018 na Rússia foi VAR); tornou-se árbitro internacional em 2012 e nesta temporada apitou 7 jogos da Champions League. Sua carreira tem ligação histórica com o caso de manipulação de resultados de Hoyzer na Alemanha em 2005 (chegou a ser suspenso por 6 meses), mas desde então atua por longo período em jogos de elite da Bundesliga e competições europeias.</div>
+    <h4>Perfil do critério de arbitragem (dados reais das temporadas mais recentes)</h4>
+    <ul class="cl">
+      <li><b>Alto volume de cartões, estilo severo</b>: média de carreira de cerca de <b>4,63 cartões amarelos, 0,09 vermelhos por jogo</b>; na Bundesliga 2024/25 média de cerca de 4,06 amarelos, na Champions média de cerca de 5,14 cartões por jogo, e o número de vermelhos na Champions naquela temporada (4) foi o maior entre todos os árbitros — em contextos de grande torneio/alta intensidade o limiar para puxar cartão é mais baixo, com gestão rígida de disputas e aplicação rigorosa das regras.</li>
+      <li><b>Diferença de critério entre grande torneio vs liga</b>: os cartões na Champions são claramente mais altos que na Bundesliga, indicando que em jogos de alta disputa e grande exposição Zwayer tende a puxar cartão mais cedo — nesta partida, como jogo-chave da anfitriã com alta intensidade de disputa e emoção, há suporte para a direção de mais cartões amarelos (Over). <span style="color:var(--warn)">(amostra como árbitro principal em Copa é 0, é preciso observar junto com as novas regras dos grandes torneios · a confirmar)</span></li>
+      <li><b>Histórico de arbitragem com as duas seleções</b>: não foi encontrada amostra pública de Zwayer tendo arbitrado anteriormente as seleções dos EUA ou da Austrália <span style="color:var(--warn)">(sem amostra · a confirmar)</span>, sem tendência prévia a se referenciar.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise do aspecto da arbitragem</b>: Zwayer é um árbitro alemão de muitos cartões, estilo severo, que puxa cartão mais cedo em jogos de alta disputa. Implicações para esta partida: ① a defesa em bloco baixo da Austrália + faltas táticas para cortar o contra-ataque dos EUA elevam o risco de cartões, sendo preciso atentar ao acúmulo de amarelos e até ao risco de suspensão; ② as faltas de pressão na marcação alta dos EUA também serão julgadas com rigor; ③ em ambiente de impedimento semiautomático + arbitragem rigorosa, o limiar para marcar pênalti por agarrões na área (disputa de bola parada Richards/Souttar) é mais baixo. No geral, o aspecto da arbitragem eleva ligeiramente "cartões amarelos Over" e "pênalti potencial", mas não constitui o fator principal capaz de alterar o resultado.</div>
+    <div class="src" style="margin-top:8px">Fontes: <a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — designação/perfil de Zwayer</a> · <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — dados de cartões de Zwayer</a> · <a href="https://www.whoscored.com/articles/yxmRCZUvL0qaJvEz8-CWlQ/show/who-is-felix-zwayer-europa-league-final-referee-stats-tottenham-man-united">WhoScored — estilo de arbitragem de Zwayer</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — lista de árbitros da Copa</a></div>
+  </section>
+
+  <!-- escalacao e jogadores-chave -->
+  <section>
+    <h2><span class="n">2</span> Escalação &amp; jogadores-chave <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">versão provável · versão oficial no módulo ✅ acima</span></h2>
+    <div class="sub">Escalação provável (estimativa das fontes de análise, não oficial; sujeita à lista oficial pré-jogo)</div>
+    <h4>🇺🇸 Estados Unidos escalação provável (4-3-3)</h4>
+    <div class="lineup">Freese; Freeman · Richards · Ream · Robinson; Adams · Tillman; Dest · McKenzie · Pulisic; Balogun</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="ht">Folarin Balogun</td><td>Atacante / Monaco</td><td>Marcou duas vezes na 1ª rodada; núcleo do sistema de único centroavante como ponto de apoio, recurso para furar o bloco baixo</td></tr>
+      <tr><td class="ht">Christian Pulisic</td><td>Ponta-esquerda / AC Milan</td><td>Núcleo de nível de capitão; lesão na panturrilha confirmada apta a ser titular; cobrador de bolas paradas/pênaltis</td></tr>
+      <tr><td class="ht">Tyler Adams</td><td>Volante / Bournemouth</td><td>Escudo de meio-campo e ponto de início da pressão; metrônomo da transição entre ataque e defesa</td></tr>
+      <tr><td class="ht">Chris Richards</td><td>Zagueiro / Crystal Palace</td><td>Saudável e disponível; chave na defesa aérea e na disputa de bola parada</td></tr>
+    </table>
+    <h4>🇦🇺 Austrália escalação provável (4-2-3-1, mantendo a da 1ª rodada)</h4>
+    <div class="lineup">Beach; Italiano · Circati · Souttar · Burgess; Bos · Metcalfe · O'Neill · Okon-Engstler; Irankunda; Toure</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="sc">Nestory Irankunda</td><td>Ponta/Atacante / Watford</td><td>20 anos; gol de contra-ataque na 1ª rodada, marcador mais jovem da história das Copas; a arma de contra-ataque mais direta</td></tr>
+      <tr><td class="sc">Patrick Beach</td><td>Goleiro / 22 anos</td><td>Inspirado na 1ª rodada no lugar de Ryan, 8 defesas, maior pegador de bolas do torneio até agora; o último seguro da defesa em bloco baixo</td></tr>
+      <tr><td class="sc">Harry Souttar / A. Circati</td><td>Zagueiros</td><td>Dupla de zagueiros altos; pilares da defesa aérea e da disputa de bola parada (mão dupla)</td></tr>
+      <tr><td class="sc">Connor Metcalfe</td><td>Meio-campo</td><td>Gol no segundo tempo da 1ª rodada; fonte de cobertura e infiltração no meio-campo</td></tr>
+    </table>
+    <div class="note">Nota sobre as listas: as escalações prováveis das duas seleções são estimativas de análise da mídia (SI / NBC / Rotowire / FanDuel), <b>sujeitas à lista oficial pré-jogo</b>. Pulisic, dos EUA, já está confirmado apto a jogar (caso não tenha condições na hora, Weah assume a esquerda); Mohamed Toure, da Austrália, está com a forma sob monitoramento após a cãibra (a confirmar), com os demais devendo manter a escalação da 1ª rodada.</div>
+  </section>
+
+  <!-- tatica + tecnicos -->
+  <section>
+    <h2><span class="n">3</span> Estilo tático & técnicos</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 Estados Unidos · Mauricio Pochettino</div>
+        <div class="role">4-3-3 pressão alta + posse ativa · Balogun como único centroavante de apoio</div>
+        <ul class="cl">
+          <li>O núcleo da anfitriã é a pressão alta na marcação + posse ativa, usando Adams para travar o meio, Tillman/McKenzie para conectar, apoiando-se em Balogun como único centroavante de referência e em Pulisic/Dest para abrir a largura pelas laterais.</li>
+          <li>A solução contra o bloco baixo já se concretizou na 1ª rodada (4-1 Paraguai): combinação lateral-meio + qualidade individual + bola parada (entrega de Pulisic, Richards/Ream cabeceando).</li>
+          <li>Risco (trazido do jogo anterior): após o 3-0 a concentração defensiva relaxou e sofreram um gol — diante da velocidade de contra-ataque de Irankunda, se o recuo na transição de ataque para defesa for lento, é fácil levar uma facada no contragolpe.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e6c45a">🇦🇺 Austrália · Tony Popovic</div>
+        <div class="role">4-2-3-1 bloco baixo disciplinado e contra-ataque + bola parada decisiva</div>
+        <ul class="cl">
+          <li>O foco tático é organizar um bloco baixo compacto, comprimir os espaços e criar chances pelo contra-ataque direto de Irankunda e pela bola parada (8 gols nas eliminatórias) — roteiro padrão contra adversários mais fortes, já validado no 2-0 sobre a Turquia na 1ª rodada.</li>
+          <li>O goleiro Beach + os zagueiros altos (Souttar/Circati) formam um duplo seguro na defesa aérea e nas defesas; o meio-campo Bos/Metcalfe/O'Neill fornece cobertura e infiltração.</li>
+          <li>Risco (trazido do jogo anterior): o modelo de contra-ataque pode não funcionar tão bem contra os EUA, que assumem a posse ativa, exigindo uma resistência defensiva maior do que contra a Turquia; o recuo da defesa na transição precisa ser mais rápido, senão a velocidade de Balogun/Pulisic punirá. Forma de Toure a confirmar.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- insights do analista -->
+  <section>
+    <h2><span class="n">5</span> Insights do analista</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· modelo de supercomputador</small></div>Prob. de vitória dos EUA 58,5%, empate 20,9%, vitória da Austrália 20,6% — o modelo quantitativo e as odds de mercado coincidem completamente. A Opta também dá aos EUA 32,83% de probabilidade de liderar o grupo (acima da Turquia, 29,04%). O relatório enfatiza que os EUA, como anfitriã + vantagem de força, são claros favoritos, mas a estrutura de bloco baixo e contra-ataque da Austrália lhe dá uma probabilidade de 20%+ de roubar pontos.</div>
+    <div class="insight"><div class="who">RotoWire <small>· mídia de apostas</small></div>Alerta claramente que "os EUA vencem, mas o handicap (-1.5) a -160 não tem valor suficiente, porque a Austrália provou na 1ª rodada contra a Turquia ser um adversário difícil" — inclina-se ao placar 2-0, mas é contra perseguir o handicap, sendo o aviso de risco mais importante dentro do consenso dos especialistas.</div>
+    <div class="insight"><div class="who">Comparativo dos últimos dois grandes torneios <small>· Estados Unidos vs Austrália</small></div>Estados Unidos: chegaram às oitavas na Copa 2022 (classificados na fase de grupos, eliminados nas oitavas pela Holanda), mas foram eliminados na fase de grupos da Copa América 2024 em casa (cartão vermelho cedo + ataque apagado, com troca de técnico em seguida) — sediar o torneio ≠ desempenho garantido, e <b>a concentração após abrir vantagem e a paciência contra defesas fechadas</b> são suas fraquezas históricas. Austrália: chegaram às oitavas na Copa 2022 com defesa disciplinada + contra-ataque eficiente, e às quartas na Copa da Ásia 2023 — <b>bloco baixo e contra-ataque + bola parada</b> é seu caminho replicável de gols em grandes torneios, e o 2-0 sobre a Turquia na 1ª rodada é exatamente esse modelo. Conclusão: os EUA têm vantagem de força e jogam em casa, mas o estilo de jogo da Austrália neutraliza adversários "do tipo posse, mas que relaxam ao abrir vantagem", o que é justamente a maior fonte de incerteza desta partida.</div>
+    <div class="insight"><div class="who">Síntese · perfil do formato do jogo <small>· sinal tático</small></div>A diferença de motivação reforça o formato: os EUA (que precisam vencer em casa para firmar a liderança) assumem o jogo pressionando; a Austrália (que já superou as expectativas e pode aceitar o empate) se fecha em bloco baixo + roubar pontos no contra-ataque/bola parada. O roteiro mais realista é os EUA com a posse, sitiando e buscando o momento de quebrar o impasse, enquanto a Austrália cria uma ou duas chances de alta qualidade pelo contra-ataque de Irankunda e pela bola parada — o fator decisivo está em os EUA marcarem cedo e, após abrir vantagem, manterem a disciplina sem serem surpreendidos no contragolpe.</div>
+  </section>
+
+  <!-- avaliacao integrada -->
+  <section>
+    <h2><span class="n">6</span> Avaliação integrada & pontos a confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: Estados Unidos vencerem por 2-0 / 2-1 controlando o jogo é o roteiro base (especialistas mais frequentes em 2-0); empate em 1-1 é o maior risco (Austrália rouba pontos com bola parada/contra-ataque); vitória da Austrália (cerca de 17–20%) é risco de cauda. Probabilidade de 0-0 é baixa (EUA atacando ativamente + jogo em casa).</li>
+      <li><b>Homens decisivos</b>: Balogun (EUA/ponto de apoio para furar a defesa), Pulisic (EUA/qualidade pelas laterais + bola parada, titularidade confirmada), Irankunda (Austrália/ponta de lança do contra-ataque), Beach + Souttar/Circati (Austrália/seguro de defesa aérea e defesas).</li>
+      <li><b>Fatores decisivos</b>: ① se os EUA conseguem marcar cedo para abrir o bloco baixo; ② se, após abrir vantagem, os EUA mantêm a disciplina sem serem surpreendidos por Irankunda (risco de concentração trazido do jogo anterior); ③ qualidade da bola parada de mão dupla (Pulisic vs zagueiros altos australianos). A mentalidade da Austrália de aceitar o empate + a resistência do contra-ataque são o suporte para a zebra/roubo de pontos.</li>
+      <li><b>Perspectiva de mercado</b>: as casas e o supercomputador da Opta convergem completamente (EUA ≈58–60%), mas o público da anfitriã comprimiu a vitória dos EUA de -165 para -185, índice de sobreaquecimento <b>3,5/5</b> — existe prêmio emocional. Os mercados com mais informação são o <b>handicap -1.5 (se os EUA vencem por 2 gols) e menos de 2.5 gols</b>, com os especialistas inclinados ao Under / Austrália +1.5.</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① se Pulisic será de fato titular na hora do jogo (fortemente confirmado, ainda sujeito à lista oficial); ② se Mohamed Toure, da Austrália, será titular ou poupado após a cãibra; ③ as escalações oficiais das duas seleções (anunciadas antes do jogo); ④ não há amostra pública do histórico de arbitragem de Zwayer com EUA/Austrália; ⑤ os preços e volumes de negociação em Kalshi/Polymarket para a partida não foram encontrados publicamente; ⑥ os dados específicos de linha de escanteios não foram encontrados; ⑦ as odds específicas do handicap asiático e da linha de handicap, e o impacto do resultado do outro jogo do Grupo D (Paraguai vs Turquia) no cenário de classificação, sujeitos aos dados em tempo real pré-jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — Grupo D (Estados Unidos, Austrália, Paraguai, Turquia)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">Tabela oficial da FIFA — Estados Unidos vs Austrália</a> · <a href="https://www.espn.com/soccer/story/_/id/49093966/fifa-world-cup-2026-usmnt-vs-australia-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — tabela/escalação/árbitro</a><br>
+      • <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26">SI — prévia/previsão/escalação</a> · <a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start">NBC Sports — escalação dos EUA/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/">CBS — lesão de Pulisic</a><br>
+      • <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — simulação do supercomputador</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — apostas/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — previsão de especialista</a><br>
+      • <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — previsão/odds</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — odds de abertura</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19">FanDuel — situação do elenco/escalação/best bets</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver">Sky Sports — análise do 2-0 da Austrália sobre a Turquia</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c">Goal — prévia/Toure</a> · <a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — árbitro Zwayer</a><br>
+      • <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — dados de cartões de Zwayer</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries">ESPN — situação do Grupo D/desfalques</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — lista de árbitros da Copa</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análises da Copa do Mundo 2026 · dados atualizados até 19/06/2026 · gráficos com dados verificados, o radar é avaliação integrada do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#d4a017',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória EUA','Empate','Vitória Austrália'],datasets:[{data:[60,23,17],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais de 2.5 gols','Menos de 2.5 gols'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (sem margem, leve viés para menos gols)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Estados Unidos','Turquia','Austrália','Paraguai'],datasets:[{data:[17,26,27,40],backgroundColor:[HT,'#c8102e',SC,'#d52b1e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (quanto menor, mais forte)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Estabilidade defensiva','Finalização ofensiva','Controle de meio-campo','Bola parada','Teto individual','Experiência em grandes torneios'],
+  datasets:[
+   {label:'Estados Unidos',data:[6.5,7.5,7.5,6.5,7.5,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Austrália',data:[7,5.5,5.5,7,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

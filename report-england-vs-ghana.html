@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 英格兰 vs 加纳 · 2026世界杯 L组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-england-vs-ghana.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3aa564;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#0f5a32);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#0f152e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#82d2a0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · L组次轮 · 双双 3 分的小组头名直接对话</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 英格兰 0-0 加纳</span>
+  <h1>英格兰 vs 加纳</h1>
+  <div class="meta">2026年6月23日 · 福克斯堡 Gillette 体育场（波士顿）· 16:00 ET · L组（同组：克罗地亚、巴拿马）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</div><div class="rk">FIFA #4 · 夺冠第三热门（Opta 11.2%）· 首轮 4-2 胜克罗地亚（Kane 梅开二度）· L组暂列榜首（净胜球）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#3aa564">🇬🇭 加纳</div><div class="rk">FIFA #73 · "黑色之星" · 首轮 1-0 绝杀巴拿马（Yirenkyi 90+5）· L组次席</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-24） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 英格兰 0-0 加纳(半场 0-0)· L组次轮 · 06-23</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">图赫尔(Tuchel)的英格兰在波士顿被组织严密的加纳逼平,陷入"次战魔咒"。英格兰全场<b>狂轰 19 脚射门、控球率高达 78.8%</b>(自 1966 年有记录以来英格兰世界杯单场最高,也是世界杯史上"未进球球队"的最高控球纪录),却始终撕不开加纳的低位铁桶。直到下半场才有首次射正,凯恩(Kane)末段错失一次绝佳机会。加纳全场<b>仅 2 脚射门</b>(本届迄今单场最少之一)却守住一分,黑色之星(Black Stars)收获关键平局。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 全场 0-0 · 英格兰 19 射但仅 14 次禁区触球、上半场 0 射正 · Kane 末段错失良机 · 加纳低位防守 + 2 射保平</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照(Opta)</h4>
+    <table>
+      <tr><th>指标</th><th>🏴 英格兰</th><th>🇬🇭 加纳</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.28</b></td><td>0.29</td><td>19 射仅 1.28 xG——量大但质低,多为低质远射/边路传中</td></tr>
+      <tr><td class="ht">控球</td><td><b>78.8%</b></td><td>21.2%</td><td>英格兰世界杯史上最高控球,却换来 0 进球——典型"无效控球"</td></tr>
+      <tr><td class="ht">射门 / 禁区触球</td><td><b>19 射 / 14 次禁区触球</b></td><td>2 射</td><td>禁区触球偏少说明传导多停留在外围,难入腹地</td></tr>
+      <tr><td class="ht">关键机会</td><td>Kane 末段错失</td><td>—</td><td>最大单次机会未把握,成为平局缩影</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源:<a href="https://theanalyst.com/articles/england-vs-ghana-stats-world-cup-2026">Opta Analyst — England 0-0 Ghana Stats</a> · <a href="https://www.espn.com/soccer/story/_/id/49156953/england-0-0-ghana-world-cup-2026-result-score-recap-frustrated-resolute-defence-harry-kane-chance">ESPN — Match Recap</a> · <a href="https://www.cbssports.com/soccer/news/england-ghana-live-updates-world-cup-2026-score-result/live/">CBS Sports — Result</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">78.8% 控球 + 0 进球:英格兰"无效控球"的教科书案例</div>英格兰创下世界杯史上未进球球队最高控球率,却仅 14 次禁区触球。<b>可迁移结论:面对低位铁桶,英格兰缺乏由控球转化为禁区内优质机会的手段(肋部直塞/纵向穿透不足),持球多停留外围。这是图赫尔末轮必须解决的进攻顽疾。</b></div>
+    <div class="insight"><div class="who">加纳的低位铁桶 + 2 射:防守纪律的胜利</div>加纳全场仅 2 射却守住一分,防线纪律与协防到位。<b>可迁移结论:中下游球队对强队"摆大巴 + 偶发反击"仍是有效策略,英格兰类持球强队需要专门的破密集预案。</b></div>
+    <div class="insight"><div class="who">凯恩末段错失:英格兰"次战魔咒"的缩影</div>英格兰再度在小组次战陷入沉闷,Kane 错失最好机会。<b>可迁移结论:英格兰的终结点过度集中于 Kane,缺乏第二爆点时极易被针对性限制。</b></div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">英格兰主导控球/压制</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>78.8% 控球、19 射,完全压制</td></tr>
+      <tr><td class="ht">英格兰取胜</td><td style="color:var(--bad)"><b>✗ 偏差</b></td><td>被加纳 0-0 逼平,胜负预测落空</td></tr>
+      <tr><td class="ht">大球倾向</td><td style="color:var(--bad)"><b>✗ 偏差</b></td><td>0-0,大球彻底落空</td></tr>
+      <tr><td class="ht">加纳难有还手</td><td style="color:var(--warn)"><b>~ 部分</b></td><td>进攻确实零威胁(2 射),但防守成功守平,出乎共识</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🏴 英格兰 · 下一场 末轮 vs 巴拿马(出线/头名)</h4>
+        <ul class="watch">
+          <li><b>破密集是首要课题</b>:对巴拿马很可能又是一场对手深蹲的比赛,英格兰需准备肋部穿透与定位球预案。</li>
+          <li><b>第二爆点</b>:除 Kane 外需要有人站出来(Bellingham/Foden 类前插),避免进攻单点化。</li>
+          <li><b>出线形势</b>:本场仅平,末轮需取胜以确保出线与争头名(具体形势视同组结果)。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇬🇭 加纳 · 下一场 末轮 vs 克罗地亚(出线关键战)</h4>
+        <ul class="watch">
+          <li><b>低位防守可复制</b>:逼平英格兰证明铁桶+反击有效,但克罗地亚中场控制力更强,需更主动的反击设计。</li>
+          <li><b>需要进球</b>:本场 0 进球,末轮若想出线大概率必须自己破门,终结点是软肋。</li>
+          <li><b>体能与纪律</b>:连续低位防守消耗大,末轮防线集中度是关键。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>"双双 3 分、争小组头名"的不对称对话</b>：英格兰（FIFA #4、Opta 夺冠第三热门 11.2%）首轮 <b>4-2 胜克罗地亚</b>、Kane 梅开二度（已平 Lineker 英格兰世界杯 10 球纪录）、Bellingham 与 Rashford 同样建功，<b>禁区内 20 脚射门创本届单场纪录</b>；加纳首轮 <b>1-0 绝杀巴拿马</b>（Yirenkyi 90+5'，队史最晚进球），但被对手压制 90 分钟、靠替补门将 Asare 神勇与个人灵光拿分。两队同积 3 分，英格兰靠净胜球暂列榜首——本场实为<b>头名之争</b>，但量级悬殊。盘口一边倒：英格兰胜赔约 <b>1.22</b>（去水隐含 ≈80%）、平局 <b>7.00</b>（≈14%）、加纳胜 <b>15.00</b>（≈6%）；大 2.5 球偏热（约 -145）。看点有三：① <b>英格兰能否复制"喂球流水线 + Kane 支点"并修补首轮上半场连丢两球的防守隐患</b>（Guéhi 或回归首发）；② <b>🔁 Partey 重磅回归</b>——首轮因被加拿大拒签缺席，本场在美国可出战，加纳中场拦截与出球质量提升；③ <b>加纳能否避免重演"被压制 90 分钟"</b>，靠 Semenyo/Kudus 边路反击搏取一线生机。基准剧本：<b>英格兰 2-0 / 3-0 取胜并锁定头名优势</b>。市场过热指数 ≈ 2/5（共识干净）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">英格兰隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈80%</div></div>
+      <div class="key"><div class="k">加纳隐含胜率(去水)</div><div class="v" style="color:#3aa564">≈6%</div></div>
+      <div class="key"><div class="k">英格兰 L 组头名概率(Opta)</div><div class="v" style="color:var(--warn)">67.5%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>英格兰防守隐患待修补（上一场带入）</b>：首轮上半场连丢两球、未能零封（预选赛 8 场全零封的纪录就此终结），Konsa 被指对克罗地亚两球负有责任——本场 <b>Guéhi 或回归首发</b>取代 Konsa。面对加纳速度型边路（Semenyo/Sulemana），需提防再现"上半场被对攻"。</li>
+      <li><b>英格兰进攻蓝图可复制（上一场带入）</b>：首轮"Rice/Anderson 传中 + Kane 支点 + 禁区量产触球（禁区内 20 射创纪录）"的流水线对低位防守的加纳同样有效；Kane 已平 Lineker 世界杯 10 球纪录，本场有望改写。Rashford/Saka 替补建功，进攻轮换余地大。</li>
+      <li><b>🔁 加纳 Partey 重磅回归（上一场带入 + 已更新）</b>：首轮因被加拿大政府拒签缺席（多伦多场），但加纳已获美国签证、本场在福克斯堡 <b>Partey 可出战</b>——这是相较首轮的关键加成，修补了首轮"无中场节拍器、被压制 90 分钟"的命门。</li>
+      <li><b>加纳门将变量（上一场带入）</b>：主力门将 Ati-Zigi 首轮半场受撞伤退，替补 Asare 完成世界杯首秀并 3 救封神。本场 <b>Asare 预计继续把门</b>，面对英格兰火力，门将能否再现神勇直接决定失球数。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项 + 关键球员多源核验）</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">🔁 已更新 · 加纳 · Partey 回归（上一场带入）<span style="color:var(--mut);font-weight:400">· Sky Sports · ESPN · 2026-06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中场核心 <b>Thomas Partey 已获美国签证、可出战英格兰</b>——首轮因被加拿大拒签缺席多伦多场</div>
+      <p style="font-size:13.5px">承接巴拿马战复盘的前瞻迁移并<b>更新</b>：Partey 首轮因加拿大政府拒签无法随队赴多伦多、错过对巴拿马；但 Sky Sports 与 ESPN 多源确认，他<b>已获美国签证，将可出战 6 月 23 日在波士顿福克斯堡的英格兰之战</b>。Partey 是加纳由守转攻的节拍器与中场屏障，他的回归直接修补了首轮"无中场组织、被巴拿马压制 90 分钟、仅 38% 控球"的命门，提升加纳的拦截强度与出球质量。<span style="color:var(--warn)">[最终首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是相较首轮的<b>实质性加成</b>，也是修正主读的关键点——加纳有了 Partey 后，理论上能更好地承接英格兰的中场压迫、减少"被全场压制"的风险。但即便如此，英格兰整体质量仍占绝对优势；Partey 的价值更多体现在"减少崩盘风险、控失球"，而非翻盘。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/11095/13554814/thomas-partey-ghana-midfielder-loses-appeal-for-canadian-visa-ahead-of-opening-world-cup-fixture" style="color:var(--accent)">Sky Sports — Partey 签证/可出战英格兰</a> · <a href="https://www.espn.com/soccer/story/_/id/49086399/thomas-partey-miss-ghana-world-cup-opener-visa-appeal-rejected" style="color:var(--accent)">ESPN — Partey 缺首轮/获美签</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">英格兰 · 三大主力伤情（多源核验）<span style="color:var(--mut);font-weight:400">· Sports Mole · Goal · Yahoo Sports · 2026-06-20/21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Rashford、Rice <b>已过体测、参加周六完整合练</b>；<b>Saka（跟腱）几乎确定再坐替补</b></div>
+      <p style="font-size:13.5px">关键球员多源核验（Sports Mole / Goal / Yahoo Sports 三源一致）：① <b>Declan Rice</b> 首轮对克罗地亚因腿筋紧绷被换下，但已在堪萨斯城恢复<b>完整合练</b>，预计获放行；② <b>Marcus Rashford</b> 此前有轻微肌肉问题，同样参加周六完整合练、虚惊一场；③ <b>Bukayo Saka</b> 持续受跟腱问题困扰、未与大部队同场草地训练、单独进行定制康复，<b>几乎确定再次替补</b>——若 Rice 体能存疑，<b>Kobbie Mainoo</b> 将与 Anderson 搭双后腰。此外英格兰已损失边卫 Tino Livramento（小腿拉伤退出，由切尔西 Chalobah 替补入替）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：胜负无悬念，价值全在<b>进球数、谁破门、能否零封</b>。Rice/Rashford 过关意味着英格兰中前场基本满状态；Saka 替补略降右路威胁上限（与首轮同），但 Madueke 顶替仍属高质量。Mainoo 若顶 Rice，中场出球与覆盖略有变化，但不改整体压制。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/injuries-and-suspensions/rice-saka-rashford-latest-england-injury-suspension-list-vs-ghana_599679.html" style="color:var(--accent)">Sports Mole — 英格兰伤停名单</a> · <a href="https://www.goal.com/en-ca/lists/thomas-tuchel-england-marcus-rashford-declan-rice-fitness-bukayo-saka-bench/blt572afb621d608389" style="color:var(--accent)">Goal — Rice/Rashford 过测、Saka 替补</a> · <a href="https://sports.yahoo.com/articles/england-face-fitness-concerns-over-214214938.html" style="color:var(--accent)">Yahoo Sports — 三人伤情</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">英格兰 · 防守隐患 + Guéhi 或回归（上一场带入）<span style="color:var(--mut);font-weight:400">· 克罗地亚战复盘迁移 · Sports Mole · 2026-06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">首轮上半场<b>连丢两球、未能零封</b>，Konsa 被指担责——本场 <b>Guéhi 或顶替 Konsa</b>，进攻蓝图（禁区内 20 射创纪录）可复制</div>
+      <p style="font-size:13.5px">承接克罗地亚战复盘的前瞻迁移：英格兰 4-2 取胜，但<b>上半场连丢两球</b>、终结预选赛 8 场全零封的纪录；Tuchel 已暗示后防调整——<b>Guéhi 可能回归首发</b>取代被指对克罗地亚两球负责的 Konsa。进攻端蓝图清晰：Rice 传中 + Kane 支点 + 禁区量产触球（首轮禁区内 20 脚射门创本届世界杯单场纪录），对低位防守的加纳同样适用。Kane 梅开二度后已平 Lineker 英格兰世界杯 10 球纪录，本场有望改写。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：加纳的取分路径是 Semenyo/Sulemana 的速度型边路冲击与反击——这恰好对位英格兰首轮暴露的"上半场被对攻、防守注意力"问题。若 Guéhi 回归、后防收紧，英格兰零封概率上升；若再现慢热，加纳的边路爆点理论上有制造威胁的窗口（影响零封盘与让球幅度）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/predicted-lineups/will-saka-start-predicted-england-xi-vs-ghana_599722.html" style="color:var(--accent)">Sports Mole — 英格兰预测首发/Guéhi</a> · <a href="https://www.espn.com/soccer/story/_/id/49125237/england-vs-ghana-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#82d2a0;font-weight:700">加纳 · 门将变量 + 被压制隐患（上一场带入）<span style="color:var(--mut);font-weight:400">· 巴拿马战复盘迁移 · ESPN · 2026-06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主力门将 <b>Ati-Zigi 伤退</b>，替补 <b>Asare 预计继续首发</b>；首轮被压制 90 分钟、靠个人灵光绝杀</div>
+      <p style="font-size:13.5px">承接巴拿马战复盘的前瞻迁移：加纳首轮 Ati-Zigi 半场受撞伤退，替补 Asare 世界杯首秀 3 救封神、守住零封，本场<b>预计继续把门</b>。但加纳全场被巴拿马 62% 控球压制、仅 38% 控球，进攻偏依赖个人灵光与替补冲击（Yirenkyi 补时绝杀）。面对火力远超巴拿马的英格兰，加纳"低控球、靠反击与门将硬撑"的模式将承受更大压力。Partey 回归是缓冲，但整体仍处下风。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：英格兰的喂球流水线（首轮禁区内 20 射）正是加纳门将与防线要承受的高强度考验。若 Asare 再现神勇、加纳收紧低位防守 + Partey 中场绞杀，失球数可控（0-2/0-3 区间）；若门将状态回落或被英格兰早早打穿，失球数可能滑向更深，直接对接英格兰让球（-1.5/-2）与大球市场。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49116820/kick-team-news-how-watch-fifa-world-cup-clash" style="color:var(--accent)">ESPN — 队况/Asare 把门</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b" style="color:var(--accent)">Goal — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· ESPN / Wikipedia(2026 officials) · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：洪都拉斯籍 <b>Saíd Martínez</b> 执法（史上首位执法世界杯的洪都拉斯主裁）；比赛在福克斯堡 Gillette 体育场进行</div>
+      <p style="font-size:13.5px">ESPN 与 2026 世界杯官员名单确认 FIFA 任命洪都拉斯籍 <b>Saíd Martínez</b> 执法本场 L 组次轮，助理裁判 Walter López 与 Christian Ramírez（均洪都拉斯籍）。Martínez 是 <b>史上首位以主裁身份执法世界杯的洪都拉斯裁判</b>，曾在卡塔尔 2022 世界杯担任助理裁判 9 场，并执法过 2021 与 2023 两届金杯决赛（含 2023 决赛墨西哥 vs 巴拿马）。比赛在福克斯堡 Gillette 体育场（露天）进行，需关注 6 月新英格兰地区午后的温度与湿度（16:00 ET 场）对加纳体能消耗的边际影响。<span style="color:var(--warn)">[Martínez 大赛单场出牌细分与点球率样本未逐项核得 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在实力悬殊的比赛里，裁判对胜负几乎无影响。裁判面的唯一价值在牌数/点球盘：若英格兰攻势凶猛、加纳频繁犯规拦截 Bellingham/Madueke 突破，黄牌与禁区点球概率会略升。Martínez 来自 CONCACAF 体系、对身体对抗有一定容忍，详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L" style="color:var(--accent)">Wikipedia — L 组（裁判 Saíd Martínez）</a> · <a href="https://www.concacaf.com/competitions/fifa-world-cup/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup" style="color:var(--accent)">CONCACAF — Martínez 史上首位洪都拉斯主裁</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认（England/Ghana 官方 + Oddschecker + PrizePicks）· 2026-06-23 赛前</span></h2>
+    <div class="sub">官方名单已公布（英格兰/加纳官方社媒 + Oddschecker + PrizePicks 一致）。下方为双方官方 XI、vs 预测对照、战术解读与对速览结论的影响。</div>
+
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 官方首发（4-2-3-1）· Tuchel</div>
+        <div class="lineup">Pickford; Reece James · Ezri Konsa · Marc Guéhi · Djed Spence; Declan Rice · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">替补席关键武器：Bukayo Saka、Eberechi Eze、Marcus Rashford、Ollie Watkins、Kobbie Mainoo、John Stones、Dan Burn。<b style="color:#f08a82">较首轮(克罗地亚)2 处变化，均在后防</b>：Guéhi 顶替 Stones、Spence 顶替 O'Reilly。</div>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇬🇭 加纳 官方首发（4-3-3）· Addo</div>
+        <div class="lineup">Asare; Senaya · Adjetey · Opoku · Mensah; Partey · Kwasi Sibo · Yirenkyi; Semenyo · Iñaki Williams · Jordan Ayew(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">替补席关键武器：Kamaldeen Sulemana、Ernest Nuamah、Abdul Fatawu、Brandon Thomas-Asante。<b style="color:#82d2a0">Partey 回归首发兑现</b>；<b style="color:var(--warn)">Mohammed Kudus 未进当日名单（首发+替补席均无，据 Oddschecker/PrizePicks）</b>。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">英 · 中卫</td><td>Guéhi 取代 Konsa</td><td><b>Konsa + Guéhi 搭档</b>，Stones 替补</td><td>实际是 Guéhi 顶替 Stones、<b>Konsa 保留</b>（与"换 Konsa"预测相反）——Tuchel 针对首轮上半场连丢两球补强纵深，但未弃用 Konsa</td></tr>
+      <tr><td class="ht">英 · 左后卫</td><td>Nico O'Reilly</td><td><b>Djed Spence</b></td><td>更具运动能力/进攻支援的边卫，强化左路与 Gordon 的叠瓦——两处变化均在后防，零封意图明确</td></tr>
+      <tr><td class="ht">英 · 后腰</td><td>Rice（/Mainoo 待定）</td><td><b>Rice 首发</b></td><td>体能过关、中场最强配置，"Rice/Anderson 传中 + Kane 支点"喂球流水线满血</td></tr>
+      <tr><td class="ht">英 · Saka</td><td>替补</td><td>替补（Madueke 顶右路）</td><td>与预测一致——右路威胁上限略降但 Madueke 仍属高质量</td></tr>
+      <tr><td class="sc">加 · 中场</td><td>Sulemana 边路 + Partey/Yirenkyi</td><td><b>Partey · Sibo · Yirenkyi 三中场</b></td><td>Kwasi Sibo 进首发、更功能化/拦截型中场——Addo 优先<b>中场绞杀与防被压制</b>而非创造力</td></tr>
+      <tr><td class="sc">加 · 锋线</td><td>Williams + Ayew 双前锋</td><td><b>Semenyo · Williams · Ayew 三前锋(4-3-3)</b></td><td>保留边路速度反击的对位（Semenyo vs 英格兰首轮慢热隐患），但更靠 Williams/Semenyo 冲击</td></tr>
+      <tr><td class="sc">加 · Kudus</td><td>出场组合存疑</td><td><b>未进当日名单</b></td><td>加纳最具个人爆点的反击手缺席，<b>反击创造力上限下降</b>——轻微利好英格兰零封/让深盘</td></tr>
+      <tr><td class="sc">加 · Partey</td><td>🔁 回归（待核）</td><td><b>首发确认</b></td><td>中场屏障兑现，修补首轮"无节拍器、被压制 90 分钟"的命门（与"已更新"主线一致）</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（官方名单确认后）</h4>
+    <ul class="cl">
+      <li><b>英格兰：进攻蓝图满血复制 + 后防针对性补强。</b>Rice + Anderson 双后腰、Bellingham 自由人、Madueke/Gordon 两翼、Kane 支点——首轮"禁区量产触球"的喂球流水线原样保留；两处变动全在后防（Guéhi、Spence），直指首轮上半场连丢两球，<b>"能否零封"主线维持并略增零封角度</b>。</li>
+      <li><b>Konsa 保留是与预测最大的出入。</b>市场/媒体普遍预期 Guéhi 换下担责的 Konsa，实际 Tuchel 选择 Guéhi 入替 Stones、Konsa 续任——信号是"增加恢复速度/对抗"而非否定 Konsa，后防仍以速度应对 Semenyo 边路。</li>
+      <li><b>加纳：功能化中场 + 失去最强爆点。</b>Partey-Sibo-Yirenkyi 三中场偏拦截屏障，Addo 现实目标是<b>控失球、防被压制</b>而非取胜——与速览"加纳搏一线生机、保净胜球"的判读一致。但 <b>Kudus 缺席当日名单</b>显著削弱加纳反击创造力，搏冷概率进一步走低。</li>
+      <li><b>速览结论：维持。</b>官方名单无颠覆性爆点，基准剧本 <b>英格兰 2-0 / 3-0 取胜并锁定头名优势</b>不变；后防双换人 + 加纳无 Kudus 小幅<b>强化"英格兰零封 / 让深盘(-2)"角度</b>，但加纳 Partey+Sibo 双屏障 + 低位密集仍是让深盘能否兑现的风险点（速览既有判读未改）。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：官方首发与赛前共识基本一致（英格兰双防守换人属预期内、Saka 替补如预期、Partey 回归兑现），<b>无触发盘口异动的爆点</b>，英格兰胜赔维持 ≈1.22。唯一新信息是<b>加纳 Kudus 未进当日名单</b>——理论上轻微利好英格兰零封与让深盘(-2)，但量级不足以显著移动已极端收敛的盘口。仅为事实陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:10px">来源：<a href="https://x.com/England/status/2069489479656628316">England 官方 — 首发(两处变化)</a> · <a href="https://x.com/GhanaBlackstars/status/2069491934620524808">Ghana Black Stars 官方 — 首发</a> · <a href="https://www.oddschecker.com/insight/football/20260623-england-vs-ghana-confirmed-lineups">Oddschecker — Confirmed Lineups</a> · <a href="https://www.prizepicks.com/playbook-article/england-vs-ghana-lineups-confirmed-starting-xi-world-cup-tuesday-june-23">PrizePicks — Lineups Confirmed</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· L组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水，偏大球）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>L 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</th><th>🇬🇭 加纳</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#4</td><td class="sc">#73</td></tr>
+      <tr><td>首轮结果</td><td class="ht">4-2 胜克罗地亚（Kane 梅开二度、Bellingham、Rashford；禁区内 20 射创纪录）</td><td class="sc">1-0 绝杀巴拿马（Yirenkyi 90+5'，队史最晚进球）</td></tr>
+      <tr><td>L 组积分</td><td colspan="2">英格兰 3 分（净胜球 +2，暂列榜首）· 加纳 3 分（净胜球 +1，次席）——本场为头名之争</td></tr>
+      <tr><td>主教练</td><td class="ht">Thomas Tuchel（德国籍）</td><td class="sc">Otto Addo（兼任，含外籍顾问）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Kane(C)、Bellingham、Rice、Saka(替补)</td><td class="sc">Partey(🔁回归)、Semenyo、Kudus、Ayew(C)</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">防守隐患修补（Guéhi 回归？）；能否零封；轮换幅度</td><td class="sc">Partey 回归效果；门将止血；控失球</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">欧洲杯 2024 亚军（决赛负西班牙）· 世界杯 2022 八强（负法国）</td><td class="sc">AFCON 2023 小组出局（未尝胜绩）· 世界杯 2022 小组出局</td></tr>
+      <tr><td>夺冠概率(Opta)</td><td class="ht">11.2%（全球第三热门）</td><td class="sc">极低（小组出线理论尚存）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.22（隐含≈80%）</td><td class="sc">胜 15.00（≈6%）· 平 7.00（≈14%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 偏热（约 -145）——核心市场是英格兰让球（-1.5/-2）与进球数</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈80/14/6，归一后）。赔率来源：BetOnline / Lucky Rebel（英格兰 -450 → 1.22、加纳 +1400 → 15.00、平 +600 → 7.00 / BetNow +550 → 6.50）；大 2.5 约 -145（去水隐含 ≈59%）。Opta 超算给英格兰 L 组头名 <b>67.5%</b>（25000 次模拟）、夺冠 11.2%（全球第三热门）。让球盘英格兰约 -1.5/-2，具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选 / 热身）</b>与<b>本届世界杯实际值</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🏴 英格兰 · 进攻</td><td class="ht">Tuchel 预选赛进 22 球（场均 2.75）；Kane/Bellingham/Saka 锋线轴心</td><td class="ht">首轮 <b>4 球</b>、<b>xG 2.82</b>、禁区内 20 射创纪录</td><td><b>高于</b>预选水准：质量碾压克罗地亚（对手 xG 仅 0.53），喂球流水线高效</td></tr>
+      <tr><td class="ht">🏴 英格兰 · 防守</td><td class="ht">预选赛 8 场<b>全零封</b>、净胜球 22-0</td><td class="ht">首轮丢 <b>2 球</b>（上半场，未零封）</td><td><b>低于</b>纪录：零封纪录终结，Konsa 担责——本场 Guéhi 或回归收紧后防</td></tr>
+      <tr><td class="sc">🇬🇭 加纳 · 进攻</td><td class="sc">"黑色之星"个人技术 + 边路爆点，但 2025/10 后未尝胜绩、创造力不足</td><td class="sc">首轮 <b>1 球</b>、xG 1.25（少而精），补时绝杀</td><td><b>低于</b>需要：被压制 90 分钟、仅 38% 控球；进攻靠灵光与替补冲击</td></tr>
+      <tr><td class="sc">🇬🇭 加纳 · 防守</td><td class="sc">防线被多家媒体点名为隐忧；门将深度脆弱</td><td class="sc">首轮零封（Asare 3 救），但门将临时换人</td><td><b>勉强达标</b>：靠替补门将神勇守住；对英格兰火力是更高量级考验</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：英格兰进攻本届实际值<b>高于</b>预选水准（4 球、xG 2.82），但防守<b>低于</b>零封纪录（丢 2 球）——这正是本场"能否零封"成为核心悬念的根源；加纳进攻<b>低于需要</b>、防守<b>勉强达标且靠门将运气</b>。深度数据与"英格兰全面占优、价值在让球与进球数、零封需打折"主线一致。来源：Opta Analyst · Sofascore（首轮 xG）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">英格兰 ≈2.3</td><td class="sc">加纳 ≈0.6</td><td>校准后英格兰压倒性占优；变量是 Tuchel 的防守调整能否兑现零封、以及加纳 Partey 回归后能否减少被压制</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">英格兰 L 组头名 <b>67.5%</b>、夺冠 11.2%（全球第三热门）；加纳出线理论尚存但概率低（FIFA #73 vs 英格兰 #4）</td><td>对手强度校准后英格兰样本含金量高（加纳 FIFA #73 为 L 组最弱之一）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：英格兰 field tilt 将长时间压向加纳半场，禁区触球大幅占优（参照首轮对克罗地亚 34-15）</td><td><b>陷阱提醒</b>：场面碾压几无悬念；但加纳 Partey 回归 + Asare 守门 + 低位密集，可能压低净胜幅度（让深盘 -2 的风险点）</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">英格兰胜方向绝对统一；真实分歧全在"让球幅度（-1.5 vs -2）+ 进球数 + 英格兰能否零封 + Kane 是否破门"；共识干净、过热低</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · 一边倒共识、情绪干净</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">英格兰是绝对热门（去水≈80%、-450），胜负无分歧、无情绪溢价。价值全在<b>让球幅度（-1.5 vs -2）、进球数（大 2.5）、英格兰能否零封与 Kane 是否破门/越线</b>。Kane 纪录追逐（已平 Lineker 世界杯 10 球）是唯一的舆论流量点。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向：英格兰胜 全数 · 平/加 ≈0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>英格兰 L 组头名 <b>67.5%</b>（超算 25000 次模拟）、夺冠 11.2%</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>英格兰胜 + 大球建包（9-2 Bet Builder），侧重 Kane 进球、英格兰让球</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>英格兰轻松取胜；Saka 替补、Guéhi 或回归后防</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>英格兰全面占优；加纳被压制后进攻乏力</td></tr>
+      <tr><td>Goal / The Sports Rush</td><td>预览/预测媒体</td><td>英格兰胜 + 大 2.5（英格兰首轮已大 2.5、预选场均 2.75）</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（低）</b>：胜负方向绝对统一（无人押加纳/平）——一边倒共识、无情绪溢价。真正分歧只在<b>让球幅度</b>（-1.5 vs -2）、<b>进球数</b>、<b>英格兰能否零封</b>与 <b>Kane 是否破门/越线</b>。Kane 纪录叙事是流量点而非资金异动来源。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>英格兰胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈1.20–1.25</td><td>英格兰压倒性热门；平 7.00 / 加纳 15.00</td></tr>
+      <tr><td>06-20 截止</td><td>BetOnline / Lucky Rebel</td><td class="ht">1.22（-450）</td><td>英格兰短赔基本不动（首轮 4-2 后维持，加纳首轮被压制亦不支持冷门）</td></tr>
+      <tr><td>06-20</td><td>大/小球</td><td colspan="2" class="ht">大 2.5 偏热（约 -145，去水≈59%）——英格兰火力 + 加纳脆弱后防</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>英格兰 -1.5 / -2</td><td colspan="2" class="ht">英格兰 -1.5/-2 具体赔率以实时盘口为准</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">英格兰胜 ≈1.20–1.25；让球 -1.5</td><td>以"FIFA #4、夺冠第三热门 vs 非洲中游 #73"定价，初盘即把英格兰压成超短热门、让球 -1.5</td></tr>
+      <tr><td>开盘（首轮赛后重定价）</td><td class="ht">英格兰胜 1.22；让球 -1.5/-2 角度增强；大 2.5 抬高</td><td><b>repricing 来自双方首轮</b>：英格兰 4-2 + 禁区内 20 射确认进攻强势、加纳被巴拿马压制 90 分钟暴露创造力不足 → 让球向 -2 加深的角度增强，大球线进一步抬高；但英格兰丢 2 球终结零封纪录，零封盘价值被打折</td></tr>
+      <tr><td>现盘（06-20→现）</td><td class="ht">英格兰胜 1.22；大 2.5 偏热 / 让球 -2 角度</td><td>胜负盘锁死（定价已极端收敛）；最活跃的价格发现在<b>让球（-1.5 vs -2）、大小球与英格兰零封</b>——"英格兰防守调整 + Partey 回归后加纳能否少丢"是让深盘能否兑现的关键变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场赔率从初盘起就极端（≈1.22、让 -1.5），<b>英格兰 4-2 的强势 + 加纳被压制 90 分钟</b>进一步强化让深盘与大球的角度，但<b>英格兰首轮丢 2 球</b>给零封盘降温。1X2 毫无价值（定价已饱和），唯一有信息含量的是<b>英格兰让球（-1.5/-2）、进球数与能否零封</b>——风险点是 Tuchel 轮换 + Partey 回归令加纳少被压制、压低净胜幅度。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：英格兰 L 组头名 <b>67.5%</b>、夺冠 11.2%（全球第三热门，仅次于西班牙、法国/阿根廷一档）——与博彩去水方向一致、无情绪溢价。本场基本是头名优势的积累。</li>
+      <li><b>舆论焦点 ①</b>：<b>Kane 的纪录追逐</b>（首轮梅开二度后已平 Lineker 英格兰世界杯 10 球纪录）是本场最大流量点。</li>
+      <li><b>舆论焦点 ②</b>：<b>🔁 Partey 的回归</b>——首轮被加拿大拒签的戏剧性事件后，他在美国可出战英格兰，是加纳叙事的最大转折。</li>
+      <li><b>Kalshi / Polymarket（聚合）</b>：本场单场胜负价格、成交量与动量细分未单独公开检得 <span style="color:var(--warn)">[待核]</span>；CryptoSlate 等预测市场方向与博彩一致（英格兰压倒性）。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向绝对明确（英格兰），博彩与超算一致（头名 67.5%、胜≈80%），过热指数 <b>2/5</b>。流量来自 <b>Kane 纪录</b>与 <b>Partey 回归</b>而非胜负盘；最有信息含量的是<b>英格兰让球（-1.5/-2）、进球数、能否零封与 Kane 是否破门</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-ghana-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZ9G29x8YvMg/">Racing Post — 赔率/投注/Bet Builder</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — L 组前瞻</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-ghana-06-23-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b">Goal — 前瞻</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为洪都拉斯籍 <b>Saíd Martínez</b>（史上首位以主裁身份执法世界杯的洪都拉斯裁判），助理裁判 Walter López 与 Christian Ramírez（均洪都拉斯籍）。来源：ESPN、2026 世界杯官员名单（Wikipedia）、CONCACAF。<span style="color:var(--warn)">[本场 VAR 具体组合 · 待核]</span></div>
+    <h4>近两届大赛 + 执法尺度（实际样本 + 定性）</h4>
+    <ul class="cl">
+      <li><b>大赛级样本存在</b>：Martínez 在卡塔尔 2022 世界杯担任助理裁判 9 场（本届为首次以主裁身份登场），并执法过 <b>2021 与 2023 两届金杯决赛</b>（含 2023 决赛墨西哥 vs 巴拿马）——属 CONCACAF 顶级裁判，大赛控场经验充足。<span style="color:var(--warn)">[本届/近两届大赛单场场均黄牌、点球率细分 · 待核]</span></li>
+      <li><b>执法体系画像</b>：来自 CONCACAF 体系，金杯执法环境通常允许一定身体对抗、对明显犯规与战术犯规出牌有据。其作为主裁的世界杯单场出牌均值尚无样本（首次执法世界杯主哨）。</li>
+      <li><b>与两队的执法史</b>：与英格兰、加纳两队均无显著公开执法史（双方此前与这位洪都拉斯裁判交集有限），无队伍倾向可言 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届执法环境偏严。加纳若大量犯规拦截英格兰攻势，累积黄牌与禁区点球风险上升。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场是"英格兰压倒性进攻 vs 加纳密集防守 + 身体对抗"的对位——裁判面唯一价值在牌数/点球：加纳后卫频繁拦截 Bellingham/Madueke 突破的累积犯规、禁区内拉扯的点球尺度是观察点。Martínez 作为金杯决赛级裁判控场成熟，但其作为世界杯主哨的单场出牌细分无样本，牌数盘宜以"倾向性"看待。半自动越位会更快判定 Kane/Madueke 的临界冲刺，对越位边缘进球有轻微抑制。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 官方首发模块</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / Ladbrokes 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 预测首发（4-2-3-1）· Tuchel</h4>
+    <div class="lineup">Pickford; Reece James · John Stones · Marc Guéhi · Nico O'Reilly; Declan Rice(/Mainoo) · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Harry Kane (C)</td><td>前锋 / 拜仁慕尼黑</td><td>首轮梅开二度、已平 Lineker 英格兰世界杯 10 球纪录；本场有望改写，任意时间进球是核心 props</td></tr>
+      <tr><td class="ht">Jude Bellingham</td><td>前腰 / 皇家马德里</td><td>首轮 47 分钟内切破门（3-2）；由守转攻引擎，10 号位自由人</td></tr>
+      <tr><td class="ht">Declan Rice</td><td>后腰 / 阿森纳</td><td>首轮因腿筋紧绷被换下，已恢复完整合练、预计获放行；若体能存疑由 Mainoo 顶替</td></tr>
+      <tr><td class="ht">Marc Guéhi</td><td>中卫 / 水晶宫</td><td>首轮替补，本场或回归首发取代 Konsa（被指对克罗地亚两球担责），收紧后防</td></tr>
+      <tr><td class="ht">Bukayo Saka</td><td>边锋 / 阿森纳</td><td>跟腱问题、单独康复，几乎确定再坐替补；Madueke 顶替右路</td></tr>
+    </table>
+    <h4>🇬🇭 加纳 预测首发（4-4-1-1 / 4-3-3）· Addo</h4>
+    <div class="lineup">Asare; Senaya · Adjetey · Opoku · Mensah; Semenyo · Partey(🔁) · Yirenkyi · Sulemana; Williams(/Nuamah); Ayew(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Thomas Partey 🔁</td><td>中场 / 自由身</td><td>已获美签、可出战；首轮因加拿大拒签缺阵——中场拦截与出球节拍器，回归是关键加成</td></tr>
+      <tr><td class="sc">Antoine Semenyo</td><td>边锋 / 伯恩茅斯</td><td>速度型边路爆点，加纳撕开英格兰防线的主要希望（对位首轮慢热隐患）</td></tr>
+      <tr><td class="sc">Mohammed Kudus</td><td>攻击型边锋/中场</td><td>技术爆点（视伤情/出场组合）；反击端串联，加纳为数不多的高质量个人能力</td></tr>
+      <tr><td class="sc">Benjamin Asare</td><td>门将</td><td>首轮替补登场 3 救封神（MVP 8.2），本场预计继续把门——能否再现神勇决定失球数</td></tr>
+      <tr><td class="sc">Jordan Ayew (C)</td><td>前锋 / 队长</td><td>大赛经验，支点与定位球争顶；加纳可复制的得分路径之一</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Sports Mole / Ladbrokes），<b>以赛前官方名单为准 · 待核</b>。英格兰 Guéhi 是否回归、Rice 体能（Mainoo 顶替？）、Saka 替补；加纳 Partey 是否首发、Kudus 出场组合与门将人选，是关键待核变量。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 · Thomas Tuchel</div>
+        <div class="role">4-2-3-1 控节奏 + 组织型防守 + 喂球流水线，Kane 支点，Bellingham 自由人</div>
+        <ul class="cl">
+          <li>Tuchel 带来<b>务实控制 + 防守纪律 + 把球量产进禁区</b>的体系——预选赛 8 战全胜进 22 球零失球，首轮 4-2 兑现"控territory + Kane 支点串联"的取胜蓝图（下半场射正 9 次、禁区触球 34-15 碾压克罗地亚）。</li>
+          <li>交叉参照：<b>欧洲杯 2024 亚军</b>（决赛负西班牙，进攻效率受质疑但下限高）、<b>世界杯 2022 八强</b>（负法国，Kane 失点）——英格兰大赛下限极高，但淘汰赛遇强敌时进攻效率与防守专注度是历史隐患。本场对加纳，唯一变量是轮换与首轮暴露的"上半场被对攻"。</li>
+          <li>本场切入口：加纳门将与被压制隐患正是英格兰喂球流水线的打击点；复制 Rice 传中 + Kane 支点 + 禁区量产触球，同时用 Guéhi 回归收紧后防、避免再现慢热与连丢球。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇬🇭 加纳 · Otto Addo</div>
+        <div class="role">4-4-1-1/4-3-3 低控球 + 边路反击，Semenyo/Kudus 个人爆点，Partey 节拍器</div>
+        <ul class="cl">
+          <li>Addo 的加纳是<b>个人技术 + 边路爆点 + 低控球反击</b>型球队，首轮对巴拿马仅 38% 控球、靠 1.25 xG 的少而精反击与替补冲击补时绝杀——这是其现实打法的兑现。</li>
+          <li>交叉参照：<b>AFCON 2023 小组出局</b>（未尝胜绩）、<b>世界杯 2022 小组出局</b>（"复仇战"0-2 负乌拉圭）——加纳近两届大赛进攻创造力与防守稳定性都不足，依赖个人灵光。对位英格兰这一短板会被放大。</li>
+          <li>本场应对：现实目标不是取胜而是<b>控制失球数、保住净胜球以维持出线竞争</b>。须收紧低位防守、Partey 回归后绞杀英格兰中场、靠 Semenyo/Sulemana 的边路速度搏取反击与定位球机会，避免重演"被压制 90 分钟"。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据统计</small></div>英格兰 L 组头名 67.5%、夺冠 11.2%（全球第三热门）。本场基本是头名优势的积累——英格兰质量、得分点与禁区压制是主线；加纳被压制后进攻乏力，需 Partey 回归与门将稳定来限制失球。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 投注媒体</small></div>建议英格兰胜 + 大球建包（9-2 Bet Builder），侧重 Kane 进球与英格兰让球；认为加纳对优质对手创造力不足，大 2.5 应被轻松突破（英格兰首轮已大 2.5、预选场均 2.75 球）。</div>
+    <div class="insight"><div class="who">Sports Mole / Goal <small>· 预测/预览</small></div>英格兰轻松取胜；Saka 跟腱问题再坐替补、Guéhi 或回归后防取代担责的 Konsa；Rice/Rashford 已过体测。加纳 Partey 回归是中场加成，Asare 继续把门。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / Sofascore</small></div>真正悬念不在胜负，而在<b>英格兰的进球数与是否零封</b>。⚠ 陷阱提醒：① 英格兰首轮丢 2 球、零封纪录已终结，零封盘需打折；② Partey 回归 + Asare 守门 + Tuchel 可能轮换，可能压低净胜幅度，让深盘（-2）有边际落空风险——这是唯一需要警惕的变量。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：英格兰取胜（2-0 / 3-0 / 3-1）是基准剧本，巩固 L 组头名优势；平局（≈14%）与加纳取胜（≈6%）是小尾部，需要英格兰大面积轮换 + 慢热 + 加纳门将神勇 + Partey 中场封锁同时发生。</li>
+      <li><b>关键先生</b>：Kane（英/纪录与终结）、Bellingham（英/由守转攻）、Madueke（英/Saka 缺阵下的右路爆点）、Partey（加/🔁中场节拍器）、Semenyo（加/边路反击）、Asare（加/门将止血）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>英格兰能否复制喂球流水线、修补防守隐患并零封</b>，以及<b>加纳 Partey 回归后能否减少被压制、控住失球</b>——决定让球盘（-1.5/-2）与大小球的结算。</li>
+      <li><b>市场视角</b>：博彩与超算绝对一致（英格兰，胜≈80%、头名 67.5%），1X2 毫无价值；最有信息含量的是<b>英格兰让球（-1.5/-2）、进球数、能否零封与 Kane 破门/越线</b>。过热指数 2/5（流量来自 Kane 纪录与 Partey 回归）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② 英格兰 Guéhi 是否回归、Rice 体能（Mainoo 顶替？）、Saka 替补；③ 加纳 Partey 是否首发、Kudus 出场组合、门将人选（Asare/Ati-Zigi 伤情）；④ Martínez 本场 VAR 组合与世界杯主哨单场出牌细分；⑤ Kalshi/Polymarket 本场成交量与动量细分；⑥ 亚盘让球线（-1.5/-2）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49125237/england-vs-ghana-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 赛程/首发/伤情/前瞻</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L">Wikipedia — L 组（含裁判 Saíd Martínez）</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-ghana-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZ9G29x8YvMg/">Racing Post — 赔率/队况/Bet Builder</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/injuries-and-suspensions/rice-saka-rashford-latest-england-injury-suspension-list-vs-ghana_599679.html">Sports Mole — 英格兰伤停</a> · <a href="https://www.goal.com/en-ca/lists/thomas-tuchel-england-marcus-rashford-declan-rice-fitness-bukayo-saka-bench/blt572afb621d608389">Goal — Rice/Rashford 过测、Saka 替补</a> · <a href="https://sports.yahoo.com/articles/england-face-fitness-concerns-over-214214938.html">Yahoo Sports — 三人伤情核验</a><br>
+      • <a href="https://www.skysports.com/football/news/11095/13554814/thomas-partey-ghana-midfielder-loses-appeal-for-canadian-visa-ahead-of-opening-world-cup-fixture">Sky Sports — Partey 签证/可出战英格兰</a> · <a href="https://www.espn.com/soccer/story/_/id/49086399/thomas-partey-miss-ghana-world-cup-opener-visa-appeal-rejected">ESPN — Partey 缺首轮/获美签</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — L 组前瞻/超算</a><br>
+      • <a href="https://www.concacaf.com/competitions/fifa-world-cup/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup">CONCACAF — Saíd Martínez 裁判背景</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-ghana-06-23-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b">Goal — 前瞻</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/group-l-focus-teams-fixtures-standings">FIFA — L 组焦点/积分</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-22 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3aa564',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['英格兰胜','平局','加纳胜'],datasets:[{data:[80,14,6],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[59,41],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['英格兰','克罗地亚','巴拿马','加纳'],datasets:[{data:[4,9,48,73],backgroundColor:[HT,'#7fa6e6','#9cc6ea','#82d2a0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/反击','个人上限','大赛经验'],
+  datasets:[
+   {label:'英格兰',data:[8,8.5,8.5,8,9,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'加纳',data:[5.5,5.5,6,6.5,6.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

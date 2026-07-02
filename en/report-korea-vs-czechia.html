@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · South Korea vs Czechia · 2026 World Cup Group A</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-korea-vs-czechia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-korea-vs-czechia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --kr:#cd2e3a;--cz:#11457e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f29,#11457e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21161c,#152138);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.kr{color:#f0828b;font-weight:600}td.cz{color:#7fb0e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-korea-vs-czechia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">⚽ 2026 World Cup · Group A, Matchday 1 · Battle for second place · 🏁 FT South Korea 2-1 Czechia</span>
+  <h1>South Korea vs Czechia</h1>
+  <div class="meta">11 June 2026 · Guadalajara, Estadio Akron · 22:00 ET · Group A (with Mexico and South Africa)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 South Korea</div><div class="rk">Squad value €136.75m · Son's farewell campaign</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fb0e6">🇨🇿 Czechia</div><div class="rk">Squad value €115.90m · Back after 20 years</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Including carry-over reference for the next match</span></h2>
+    <div class="sub">Full time: South Korea 2-1 Czechia (comeback from behind) · Data sources: Opta/Yahoo box score · Pre-match analysis preserved below as a prediction archive</div>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:14px">59' Czechia broke the deadlock: <b>long throw-in bombardment → Krejčí powerful far-post header</b> (exactly the "Europe's best set-piece" route flagged pre-match); Korea responded within 8 minutes — 67' <b>Hwang In-beom equalised (Lee Kang-in assist)</b>; 80' <b>Oh Hyeon-gyu turned it around</b> (Hwang In-beom the creator). Korea scored twice in 21 minutes to complete the comeback.</p>
+
+    <h4>② Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇰🇷 South Korea</th><th>🇨🇿 Czechia</th><th>Reading</th></tr>
+      <tr><td>Possession</td><td class="kr"><b>61.7%</b></td><td class="cz">38.3%</td><td>Korea took full control in a mirror-formation contest — far beyond pre-match expectations</td></tr>
+      <tr><td>xG</td><td class="kr"><b>1.84</b></td><td class="cz">0.81</td><td>Korea won on quality of chances, not luck; Czechia's open-play threat was limited</td></tr>
+      <tr><td>Completed passes</td><td class="kr">468</td><td class="cz">—</td><td><b>Korea's highest in a World Cup match since 1966</b> — hard evidence of positional evolution</td></tr>
+      <tr><td>Key individuals</td><td class="kr">Lee Kang-in: 37/37 passes completed · 3 chances created · duels 10/14; Hwang In-beom: 73 passes (2nd-most ever for Korea at a World Cup)</td><td class="cz">Krejčí headed goal</td><td>Lee Kang-in was the key to unlocking positional play; Czechia's output still reliant on set pieces</td></tr>
+    </table>
+
+    <h4>③ Tactical review (actual vs pre-match assessment)</h4>
+    <ul class="watch">
+      <li><b>Korea's "lack of open-play creativity" label was torn up</b>: 61.7% possession + 468 passes + xG 1.84, and both goals came from central combination play. <b>Transferable conclusion</b>: against low/mid-block teams Korea now have a Lee Kang-in–led positional answer; they are no longer solely reliant on Son counter-attacks.</li>
+      <li><b>Son was not the main character and Korea still won</b>: Scorers were Hwang In-beom and Oh Hyeon-gyu; assists came from Lee Kang-in and Hwang In-beom — the pre-match worry that "if Son doesn't produce, attacking channels narrow sharply" was disproved. Multiple goal-threats is the biggest incremental signal from Korea this tournament.</li>
+      <li><b>Czechia's script was only half-fulfilled</b>: The set piece delivered (Krejčí long-throw header confirmed the weapon is real); but after going ahead, they conceded twice in 21 minutes — the defensive block could not withstand Korea's sustained central penetration, and Schick could not extend his hot streak (xG 0.81 heavily weighted towards the set piece).</li>
+      <li><b>The decisive factor in the mirror 3-4-2-1 was central midfield quality</b>: Hwang In-beom's 73-pass dominance over his counterpart — the pre-match read of "wing-back duels + set-piece battle" was only half right; the real differentiator was central build-up quality.</li>
+    </ul>
+
+    <h4>④ Prediction ledger</h4>
+    <ul class="cl">
+      <li>Result: AI panel Claude's "Korea 2.70 is value (real probability 43–45%)" ✓ delivered; SportsLine draw anchor ✗; Racing Post Czechia unbeaten ✗</li>
+      <li>Total goals: Eimer's Over 2.5 ✓ (3 goals); Gemini's Under ✗ — the genuine "experts split" divergence was resolved by the Over camp</li>
+      <li>Market heat 2/5 "clean balanced market" read ✓; but the "public 69% on Korea vs price unmoved = smart money on Czechia" divergence signal ✗ — <b>this was a rare case where public money was right and the bookmakers' balanced book was wrong; noted for the record</b></li>
+      <li>Referee: Amin Omar's World Cup debut was broadly smooth; the pre-match tail-risk of "high-pressure even match could see cards fly" was not triggered</li>
+    </ul>
+
+    <h4>⑤ Forward transfer → reference for both teams' next matches</h4>
+    <table>
+      <tr><th>Team</th><th>Next match</th><th>Information carried forward</th></tr>
+      <tr><td class="kr">🇰🇷 South Korea</td><td>6/18 vs Mexico (Guadalajara)</td><td>① Top-of-table clash: both sides on 3 points; the winner essentially locks up Group A's top spot; ② <b>Mexico's Montes is suspended</b> — centre-back reshuffle in the making, with clear targets for Son / Oh Hyeon-gyu; ③ the positional template is hard to replicate directly against Mexico (Mexico are not Czechia), so Korea must be ready to revert to a counter-attack mode — but Lee Kang-in's positional output is now a reliable asset; ④ Warning: Mexico's 16-shot dominance over South Africa far exceeds what Czechia produced; the back-three's old vulnerability in defensive transitions faces its toughest test of the tournament.</td></tr>
+      <tr><td class="cz">🇨🇿 Czechia</td><td>6/18 vs South Africa</td><td>① Must win 3 points, and the opponent is a <b>depleted side</b> (Sithole/Zwane both suspended; full-game xG of 0.07 in attack); ② set-piece weapon is validated — keep bombarding South Africa's aerial defence as the main line; ③ but the lack of open-play creativity will be exposed again against a low block — Schick needs a Plan B partner; ④ qualification path: 0 points but face Mexico only in the final round; beat a depleted South Africa first and the group is still in Czechia's own hands.</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">Sources: <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — Post-match stats / Lee Kang-in · Hwang In-beom data</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a> · <a href="https://heavy.com/sports/soccer/world-cup/south-korea-vs-czech-republic-results-today-fifa-world-cup-live-score-updates-stats/" style="color:var(--accent)">Heavy — Match timeline</a></div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the <b>real qualification decider for Group A's second spot</b> — Mexico have already delivered on the favourites' script, beating South Africa 2-0 to go top of Group A (opening match result confirmed); whoever wins here controls the initiative for that second qualification place. Squad values are comparable (Korea slightly higher) and the odds are virtually even. <b>The contrast</b>: Korea's individual talent ceiling is higher (Son / Lee Kang-in / Kim Min-jae), but the three-centre-back system repeatedly concedes in transition (0-4 to Côte d'Ivoire, 0-1 to Austria in March; zero open-play goals across 180 minutes in those two matches). Czechia are more structured, and <b>their set pieces led all of Europe in qualifying (8 goals)</b>; Schick has been in outstanding form at Leverkusen this season (28 matches, 16 goals). In an organised defensive match, Czechia's set pieces and Schick's finishing are the X-factor; if Korea can open it up into an end-to-end game, Son's counter-attacking pace can punish Czechia.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Nature</div><div class="v" style="color:var(--warn)">Qualification decider</div></div>
+      <div class="key"><div class="k">Squad value</div><div class="v">Kor ≈1.18×</div></div>
+      <div class="key"><div class="k">Schick this season</div><div class="v" style="color:#7fb0e6">16 goals</div></div>
+      <div class="key"><div class="k">Czechia set pieces</div><div class="v" style="color:#7fb0e6">Europe No.1</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Set-piece battle</b>: Czechia scored 8 set-piece goals in qualifying — the most in Europe. Korea's three-back shape is vulnerable at set pieces and in defensive transition — this is the biggest swing factor in the fixture.</li>
+      <li><b>Son vs the system</b>: Son leads LAFC with 8 assists this season but has yet to score; if he is not creating, Korea's attacking threat narrows sharply.</li>
+      <li><b>Schick's form</b>: 9 goals in his last 7 Bundesliga rounds (including a hat-trick against Leipzig) — one of the most reliable finishers in Group A alongside Son.</li>
+      <li><b>New manager bedding in</b>: Czech head coach Koubek has only managed 2 matches (both won via penalty shoot-out); this is his third.</li>
+    </ul>
+  </div>
+
+  <!-- ===== KEY MATCH NEWS ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, with item-by-item explanation of tactical or result impact</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Group A Standing · Opening Match Just Finished <span style="color:var(--mut);font-weight:400">· 06-11 Full Time</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mexico 2-0 South Africa (Quiñones tournament's first goal in the 9th min + Jiménez); <b>3 red cards</b> at full time — Zwane/Sithole suspended next round</div>
+      <p style="font-size:13.5px">The opening match played out exactly on the "Mexico win + low scoring" main line: Mexico took 3 points with a 2-0 win to sit top of Group A. A chaotic finish produced <b>the first 3 red cards in a single World Cup game in 20 years</b> (including a VAR-reviewed straight red for Zwane).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: ① The winner of this match will hold the initiative for Group A's second qualification spot — the loser faces either Mexico next (Korea, 6/18) or must rely entirely on the final round, dramatically reducing their margin for error; ② South Africa's two suspensions mean <b>they will be a depleted side when they face Czechia in the final round</b> — a potential benefit for Czechia's qualification arithmetic and a slight uptick in the value of a draw today; ③ 3 red cards are the first hard evidence of strict officiating at this tournament, directly raising the card risk in this equally combative, evenly-matched fixture — see the Referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — Mexico 2-0 South Africa Full Time</a> · <a href="https://www.cbssports.com/soccer/news/mexico-vs-south-africa-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS — 3 red cards / suspensions</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">South Korea · Form <span style="color:var(--mut);font-weight:400">· 05-30 / 06-04 final warm-ups</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Back-to-back warm-up wins: 5-0 rout of Trinidad &amp; Tobago (Son brace), 1-0 win over El Salvador (Son rested)</div>
+      <p style="font-size:13.5px">Korea won both pre-tournament warm-ups: on 5/30 they <b>beat Trinidad &amp; Tobago 5-0</b>, with Son scoring in the 40th minute and adding a penalty three minutes later for a brace, rediscovering his scoring touch; in the final run-out on 6/4 they <b>beat El Salvador 1-0</b> (Lee Dong-gyeong with the goal), with Son rested as a substitute to protect his fitness. Son described this as "probably my last World Cup."</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Korea's biggest concern heading in was 180 minutes of zero open-play goals in March — Son's brace in the warm-up directly addresses the "all assists, no goals" worry and gives the attack a positive data point. Resting him in the final fixture signals that Hong Myung-bo is protecting him as the absolute focal point for the opening match; Czechia must plan around stopping Son in transition.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.thestandard.com.hk/sports-updates/article/333414/Son-sees-double-in-friendly-win-over-Trinidad-and-Tobago" style="color:var(--accent)">The Standard — Son brace</a> · <a href="https://bolavip.com/en/soccer/south-korea-vs-el-salvador-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — 1-0 El Salvador / Son rested</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Czechia · Form + Squad <span style="color:var(--mut);font-weight:400">· 06-04 final warm-up</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Czechia beat Guatemala 3-1 in final warm-up; <b>Schick scores; fit-again Hložek comes off the bench</b></div>
+      <p style="font-size:13.5px">In their final pre-tournament fixture, Czechia <b>beat Guatemala 3-1</b>: Schick (11'), Holeš (72') and Višinský (79') each scored; Schick continued his excellent form (28 matches, 16 goals at Leverkusen this season). <b>Fit-again Adam Hložek came on as a second-half substitute</b>, adding attacking rotation depth behind Schick.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Schick scoring pre-tournament confirms that Group A's most reliable finisher outside Son is in form; combined with Czechia's <b>Europe-leading set-piece record</b>, this directly targets Korea's weakness in set-piece defending and three-back transitions. Hložek's return also reduces the "shut down Schick and the attack runs dry" risk — Czechia's forward depth is better than in March.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://bolavip.com/en/soccer/guatemala-vs-czechia-live-international-friendly-before-2026-world-cup" style="color:var(--accent)">Bolavip — Czechia 3-1 Guatemala</a> · <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393" style="color:var(--accent)">Bundesliga — Schick form</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">South Korea · Injuries <span style="color:var(--mut);font-weight:400">· Both in squad · Reported minor</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lee Kang-in left ankle (subbed off vs Brest) + Kim Min-jae knee (left at half-time vs Wolfsburg) — both in 26-man squad, reported as minor concerns</div>
+      <p style="font-size:13.5px">Lee Kang-in picked up a left ankle injury in PSG's league match against Brest and was substituted early in the second half; Korean media reported it as a minor knock, not affecting World Cup availability. Kim Min-jae left the field at half-time against Wolfsburg this month with knee pain, also described as not a serious issue. Both have been included in Hong Myung-bo's final 26-man squad announced on 5/16.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: These two players are Korea's attacking and defensive pillars respectively — Lee Kang-in is one of the few players capable of breaking through a compact Czech defensive shape in open play; Kim Min-jae is the aerial authority and ball-playing pivot of the three-back system. Even if either player is at less than full fitness, it amplifies Korea's existing issues of "limited open-play creativity + set-piece defensive vulnerability." Confirm starting status from official pre-match sources (this is a "hard information item pending verification").</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — Korea squad</a> · <a href="https://www.msn.com/en-xl/news/other/lee-kang-in-kim-min-jae-injured-ahead-of-world-cup/ar-AA2363NI" style="color:var(--accent)">Korean media — Lee Kang-in / Kim Min-jae injuries</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369" style="color:var(--accent)">RotoWire</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Both squads confirmed <span style="color:var(--mut);font-weight:400">· 26-man squads announced</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Both 26-man squads finalised: Hwang Hee-chan fit and expected to start; Czechia's Krejčí named captain, 10 players from Slavia Prague</div>
+      <p style="font-size:13.5px">Hong Myung-bo announced Korea's squad on 5/16; <b>Hwang Hee-chan has fully recovered from a minor end-of-season ankle knock and is expected to start</b>, with Son locked in on the left. Koubek finalised Czechia's 26 on 5/31: Wolves centre-back <b>Ladislav Krejčí named as captain</b>; no fewer than 10 players come from defending domestic champions Slavia Prague (forming the squad's structural spine), with the primary threat remaining the in-form Schick.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Hwang Hee-chan's return adds a pressing and forward-running threat beside Son, directly easing Korea's "lack of open-play creativity" concern. Czechia's Slavia Prague spine brings high internal familiarity and well-drilled set-piece routines — exactly what is needed to exploit Korea's three-back defensive transition weakness. With no major absentees on either side, this is a clean, fully-loaded even contest.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — Korea 26-man squad</a> · <a href="https://worldcuppass.com/czechia-world-cup-squad-2026/" style="color:var(--accent)">WorldCupPass — Czechia 26-man squad</a> · <a href="https://www.goal.com/en-om/news/south-korea-czech-republic-world-cup-preview/bltc5df400bcedf8307" style="color:var(--accent)">Goal — Match preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match Referee · Officially confirmed <span style="color:var(--mut);font-weight:400">· 06-08 FIFA appointment</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Match referee confirmed: <b>Egyptian official Amin Omar (Amin Mohamed Omar)</b> (one of four opening-day appointments)</div>
+      <p style="font-size:13.5px">FIFA announced all four opening-day referees; <b>South Korea vs Czechia has been assigned to Egyptian official Amin Omar (Amin Mohamed Omar)</b> (same day: Sampaio for Mexico–South Africa; Facundo Tello for Canada–Bosnia; Danny Makkelie for USA–Paraguay).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This is an even qualification-decider fixture, so the referee's judgement calls carry extra weight. How the official reads tussles at set pieces and pushing in the box will directly determine whether Czechia's <b>Europe-leading set-piece bombardment</b> can earn more free kicks in dangerous areas and whether Schick's physical battles in the air will be penalised. Add the "8-second keeper, 5-second throw, only the captain speaks" new rules, and Korea's emotional discipline in a tight match is equally critical.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — Opening-day referee appointments</a> · <a href="https://onefootball.com/en/news/fifa-confirms-referees-for-opening-2026-world-cup-fixtures-42984754" style="color:var(--accent)">OneFootball — FIFA confirms opening-match referees</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2216,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130a">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· announced T-60 · dual-source verified</span></h2>
+    <div class="sub">Both official XIs are out (theKFA &amp; @ceskarepre_cz official posts + Khel Now team sheets) · <b style="color:#4ade80">✅ Officially confirmed</b></div>
+
+    <h4>🇰🇷 South Korea Official XI (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Lee Gi-hyuk; Seol Young-woo · Hwang In-beom · Paik Seung-ho · Lee Tae-seok; Lee Kang-in · Lee Jae-sung; Son Heung-min (C)</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: <b style="color:#f0828b">Hwang Hee-chan</b> (Wolves, dropped from the predicted XI), Cho Gue-sung (aerial target), Lee Dong-gyeong (scored in the final warm-up)</div>
+
+    <h4>🇨🇿 Czechia Official XI (3-4-2-1)</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci (C); Coufal · Soucek · Sojka · Zeleny; Provod · Sulc; Schick</div>
+    <div style="font-size:13px;color:var(--mut);margin:6px 0 14px">Key weapons on the bench: <b style="color:#7fb0e6">Chory</b> (2m striker, scored vs Guatemala), Hlozek (back from injury), Darida (experience)</div>
+
+    <h4>vs Predicted XI (Korea 8/11 match · Czechia 9/11 match)</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="kr">KOR · third CB</td><td>Kim Tae-hwan</td><td><b>Lee Gi-hyuk</b></td><td>Hong picks mobility over experience — faster recovery runs against Schick and Czech counters.</td></tr>
+      <tr><td class="kr">KOR · midfield</td><td>Kim Jin-kyu</td><td><b>Paik Seung-ho</b></td><td>An extra screening layer plus long-range shooting in the double pivot — aimed squarely at the back-three transition weakness flagged throughout this page.</td></tr>
+      <tr><td class="kr">KOR · attack</td><td>Hwang Hee-chan</td><td><b>Lee Jae-sung</b></td><td><b>The biggest surprise</b>: Hwang starts on the bench; Korea trades vertical running for link-up control, keeping Hwang as a second-half weapon.</td></tr>
+      <tr><td class="cz">CZE · holding mid</td><td>Darida</td><td><b>Sojka</b></td><td>The 35-year-old veteran makes way for Slavia’s young holder — a stamina call at Guadalajara’s 1,500m+ altitude.</td></tr>
+      <tr><td class="cz">CZE · left wing-back</td><td>Jurasek</td><td><b>Zeleny</b></td><td>The more defensive option; the Slavia bloc grows further, prioritising safety in the wide duels.</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">Tactical read</h4>
+    <ul class="cl">
+      <li><b>Mirrored 3-4-2-1</b>: the game should come down to wing-back duels and set pieces — consistent with the quick-read’s view that a settled game favours Czechia.</li>
+      <li><b>Korea more conservative than expected</b>: Hwang benched + a Paik Seung-ho/Hwang In-beom double pivot — Hong prioritises plugging the transition weakness; Son leads the line with Lee Kang-in/Lee Jae-sung floating behind.</li>
+      <li><b>Czechia’s set-piece arsenal fully loaded</b>: Soucek/Krejci/Schick all start — Europe’s best set-piece unit (8 goals in qualifying) is intact, so this page’s biggest swing factor is unchanged.</li>
+      <li><b>The bench may decide it</b>: both sides picked running midfielders for altitude and the late kick-off; Hwang Hee-chan/Chory/Hlozek — three game-changers — all start on the bench, so the post-60’ substitution window could be the real watershed.</li>
+      <li><b>Quick-read verdict: maintained</b> — an even, low-event start, with set pieces and Son’s counters as the two X-factors; the only correction: Korea will open more cautiously than expected, making a low-intensity first 30 minutes more likely.</li>
+    </ul>
+
+    <h4 style="margin-top:16px">Market reaction</h4>
+    <div style="font-size:13.5px;color:#cbd5e1">No verifiable odds movement around the team-sheet release (≈T-60) — neither XI contained a core-player shock, in line with the “2/5 balanced, no sentiment premium” market picture above (decimal odds steady at ≈2.62–2.75 / 3.00–3.15 / 2.75–2.85).</div>
+
+    <div class="src" style="margin-top:12px">Sources: <a href="https://khelnow.com/football/world-football-south-korea-starting-lineup-vs-czechia-confirmed-fifa-world-cup-202606">Khel Now — South Korea confirmed XI (embedded theKFA post)</a> · <a href="https://khelnow.com/football/world-football-czechia-starting-lineup-vs-south-korea-fifa-world-cup-202606">Khel Now — Czechia confirmed XI (embedded Czech FA post)</a> · <a href="https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-south-korea-v-czechia/blt0769fcf7cebda064">Goal US — match page</a> · <a href="https://www.aljazeera.com/sports/2026/6/11/south-korea-vs-czechia-world-cup-group-match-teams-start-and-lineups">Al Jazeera — pre-match predicted XIs</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Squad value · Key player form · Group qualification probability — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Squad value comparison (€m, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>Top striker — club output this season</h5><canvas id="formChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group A — group-win / qualification implied probability (%)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment, 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇰🇷 South Korea</th><th>🇨🇿 Czechia</th></tr>
+      <tr><td>Full squad value</td><td class="kr">€136.75m</td><td class="cz">€115.90m</td></tr>
+      <tr><td>Formation</td><td class="kr">3-4-2-1</td><td class="cz">4-2-3-1 / 3-4-2-1</td></tr>
+      <tr><td>Primary finisher</td><td class="kr">Son (LAFC, 8 assists 0 goals this season), Hwang Hee-chan (Wolves)</td><td class="cz">Schick (Leverkusen, 28 matches 16 goals; 25 international goals)</td></tr>
+      <tr><td>Set pieces</td><td class="kr">Average; a weakness defensively</td><td class="cz">8 qualifying goals — most in Europe</td></tr>
+      <tr><td>March warm-ups</td><td class="kr">0-4 Côte d'Ivoire, 0-1 Austria (zero open-play goals)</td><td class="cz">Won two play-off matches via penalty shoot-out</td></tr>
+      <tr><td>Group-win implied prob.</td><td class="kr">≈22%</td><td class="cz">≈24%</td></tr>
+      <tr><td>Match context</td><td colspan="2" class="cz">Battle for second place; result directly determines who controls their qualification destiny (odds near even)</td></tr>
+    </table>
+    <div class="note">📌 This is not a "strong vs weak" match — it is an even contest between two second-tier squads. The data points toward set pieces (Czechia advantage) and whether Son can activate the attack (Korea's variable) as the decisive factors.</div>
+  </section>
+
+  <!-- ===== BETTING MARKET HEAT ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· New Module · Celebrity picks / Odds / Money flow</span></h2>
+    <div class="sub">Contrast to the opening match's "blanket overheating" — this fixture is a clean even-money market — real data with sources</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · Balanced, no significant sentiment premium</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Expert picks are split; odds are close across all three outcomes; no celebrity one-way sweep — market pricing broadly matches fundamentals; the real divergence is over/under, not win/loss.</div>
+    </div>
+
+    <h4>① Expert Pick Aggregation (8 sources · Picks split: Korea 2 · Czechia unbeaten 2 · Draw/Under 3 · Over 1)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>SportsLine elite expert</td><td>Certified profitable expert</td><td>Low-scoring even opening; uses <b>draw as anchor</b>, with 1-1 correct score as a long-odds variant</td></tr>
+      <tr><td>Jon Eimer</td><td>Professional tipster</td><td>Contrarian lead: <b>Over 2.5</b> — Korea were the top-scoring group in qualifying; Czechia have gone over 2.5 in all 5 of their last matches</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>Highlights Czechia set pieces + Schick form; leans toward Czechia not losing</td></tr>
+      <tr><td>KickOff algorithm</td><td>Model</td><td>Korea 38%, narrow advantage</td></tr>
+      <tr><td>Dimers / Squawka</td><td>Model aggregation</td><td>Near three-way split; Under 3.5 as consensus safety net</td></tr>
+      <tr><td>AI panel · Claude</td><td>NYSportsDay three-model experiment</td><td><b>Korea 2.70 is value</b>: 10-model ensemble estimates Korea's true win probability at 43-45% vs market 37%; Son chasing South Korea's World Cup scoring record is a motivation variable</td></tr>
+      <tr><td>AI panel · ChatGPT</td><td>Same</td><td><b>Czechia +0.5 (1.48)</b>: a team back after 20 years "won't lose their opening match"; xG estimated Korea 1.20 vs Czechia 0.90</td></tr>
+      <tr><td>AI panel · Gemini</td><td>Same</td><td><b>Under 2.5 (1.65)</b>: structurally low-scoring opening where neither side can afford to lose; common scores 1-0/1-1/0-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds and Money Flow (three-way near-parity)</h4>
+    <table>
+      <tr><th>Market</th><th>South Korea win</th><th>Draw</th><th>Czechia win</th></tr>
+      <tr><td>bet365</td><td class="kr">2.62</td><td>3.10</td><td class="cz">2.75</td></tr>
+      <tr><td>FanDuel</td><td class="kr">2.65</td><td>3.00</td><td class="cz">2.85</td></tr>
+      <tr><td>Kalshi prediction market</td><td class="kr">37¢</td><td>31¢</td><td class="cz">34¢</td></tr>
+      <tr><td>Lucky Rebel (06-09)</td><td class="kr">2.70</td><td>3.15</td><td class="cz">2.80</td></tr>
+      <tr><td>Oddschecker live (06-11)</td><td class="kr">≈2.75 (best price)</td><td colspan="2">Three-way still near-parity · no single-directional line movement pre-match</td></tr>
+    </table>
+    <div class="flag">⚠ <b>One divergence worth watching</b>: US mainstream books show <b>public betting money 69% on Korea</b> (NYSportsDay citing handle data), yet the odds have barely moved toward Korea (stable in the 2.62/2.65/2.70 range) — the bookmakers are not nervous about one-sided retail action, which means <b>the balancing large-stake money is sitting on Czechia and the draw</b>. This is the only "smart money vs public money" signal in this fixture: retail bettors backing Son's name; cold money backing Czechia's structure.</div>
+    <div class="note">📌 Books and prediction markets confirm each other (37/31/34 ≈ 36/30/34); <b>no single-directional price movement</b>; all social media attention has been absorbed by the same-day opening match, leaving this fixture with low volume. The genuine market divisions are two: over/under (experts divided), and the "public on Korea but price unmoved" divergence above. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.sportsline.com/insiders/south-korea-vs-czechia-odds-predictions-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine</a> · <a href="https://www.offshoresportsbooks.com/picks/soccer/2026/south-korea-vs-czech-republic-world-cup-group-a-odds-and-picks-june-11/">Eimer — Over 2.5</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/south-korea-vs-czech-republic-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aLfLg0I6etoI/">Racing Post</a> · <a href="https://www.kickoff.co.uk/world-cup-predictions-stats-odds/south-korea-vs-czech-rep/">KickOff algorithm</a> · <a href="https://www.dimers.com/bet-hub/swc/schedule/2026_1_kor_cze">Dimers</a> · <a href="https://www.oddsshark.com/soccer/world-cup/south-korea-czech-republic-odds-june-11-2026-2520741">OddsShark</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-south-korea-vs-czech-republic-world-cup-2026/">NYSportsDay — AI three-model panel + 69% public on Korea</a></div>
+  </section>
+
+  <!-- Starting XI & Key Players -->
+  <section>
+    <h2><span class="n">2</span> Starting Line-ups &amp; Key Players <span style="font-size:11px;background:#14321f;border:1px solid #1d4a2a;color:#4ade80;border-radius:6px;padding:2px 8px;font-weight:600;vertical-align:middle">Predicted version · see the official ✅ module above</span></h2>
+    <div class="sub">Predicted XI (analytical sources, not official)</div>
+    <h4>🇰🇷 South Korea Predicted XI (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Kim Tae-hwan; Seol Young-woo · Kim Jin-kyu · Hwang In-beom · Lee Tae-seok; Lee Kang-in · Hwang Hee-chan · Son Heung-min</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="kr">Son Heung-min</td><td>Forward / LAFC</td><td>Captain, all-time appearance record holder; 8 MLS assists this season (leads league) but no goals; almost certainly his last World Cup · Value €20m</td></tr>
+      <tr><td class="kr">Lee Kang-in</td><td>Midfielder / PSG</td><td>Best technically in the squad; regular in UCL rotation, reduced appearances due to injury in 25/26</td></tr>
+      <tr><td class="kr">Kim Min-jae</td><td>Centre-back / Bayern</td><td>Defensive anchor for aerial duels and ball-playing; keystone of the three-back system · Value €40m (highest in group)</td></tr>
+      <tr><td class="kr">Hwang Hee-chan</td><td>Wide forward / Wolves</td><td>Pressing and running, provides an attacking threat alternative to Son</td></tr>
+    </table>
+    <h4>🇨🇿 Czechia Predicted XI (4-2-3-1)</h4>
+    <div class="lineup">Kovar; Chaloupek · Hranac · Krejci; Coufal · Soucek · Darida · Jurasek; Provod · Schick · Sulc</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="cz">Patrik Schick</td><td>Striker / Leverkusen</td><td>28 matches 16 goals this season (9 in last 7 rounds); 25 international goals; one of the most reliable finishers in Group A · Value €27m</td></tr>
+      <tr><td class="cz">Tomas Soucek</td><td>Midfielder / West Ham</td><td>Late runs + set-piece bombardment; composed in penalty shoot-outs in the play-offs</td></tr>
+      <tr><td class="cz">Ladislav Krejci</td><td>Centre-back / Captain / Wolves</td><td>Outstanding this season; scored headers from set pieces in both play-off legs to earn draws — a set-piece threat at both ends</td></tr>
+      <tr><td class="cz">Matej Kovar</td><td>Goalkeeper / PSV</td><td>Saved penalties in play-off shoot-outs; capable of single-handedly winning a match</td></tr>
+    </table>
+    <div class="note">Note: "—" values and precise club season stats are auto-populated from Transfermarkt/FotMob across all 26 players by the production agent.</div>
+  </section>
+
+  <!-- Tactics + Head Coaches -->
+  <section>
+    <h2><span class="n">3</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 South Korea · Hong Myung-bo</div>
+        <div class="role">3-4-2-1 · High press + rapid counter-attacks</div>
+        <ul class="cl">
+          <li>Individual-talent driven: Son / Lee Kang-in / Kim Min-jae / Hwang Hee-chan — strongest squad since 2002.</li>
+          <li>Weakness: in transition, wing-backs who have pushed high leave the three-back exposed in behind — vulnerable to cut-backs and crosses (Austria's winner came exactly this way).</li>
+          <li>If Son is not creating, open-play attacking channels are extremely narrow (180 minutes of open-play football with zero goals in March).</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fb0e6">🇨🇿 Czechia · Koubek (74)</div>
+        <div class="role">4-2-3-1/3-4-2-1 · Compact + Set pieces + Schick</div>
+        <ul class="cl">
+          <li>Identity is clear: solid defensive shape, set pieces (Europe's leading tally in qualifying — 8 goals), Schick as the single-point finisher.</li>
+          <li>New manager with just 2 competitive matches as coach (both via penalties); this is his third — bedding-in is a risk factor.</li>
+          <li>Limited open-play creativity beyond Schick; attack can dry up if he is nullified.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Officially confirmed (06-08)</b>: Match referee is <b>Egyptian official Amin Omar (Amin Mohamed Omar, 41, a qualified lawyer by profession — Korean media calls him "the Egyptian lawyer")</b>. The officiating team is predominantly Egyptian: assistants Abu El-Gal / Hosam Taha (both Egypt), VAR Mahmoud A. Suga (Egypt), AVAR Joe Dickerson (USA), fourth official from Costa Rica. <b>Key background: this is his senior World Cup debut</b> (his only prior FIFA tournament experience was the 2019 U-17 World Cup).</div>
+
+    <h4>Officiating Intensity (Data Profile)</h4>
+    <div class="keyrow" style="grid-template-columns:repeat(3,1fr)">
+      <div class="key"><div class="k">Yellow cards / match (career 115–153 matches)</div><div class="v" style="color:var(--warn)">≈3.9</div><div class="k">Red cards 0.20/match</div></div>
+      <div class="key"><div class="k">Penalties awarded</div><div class="v" style="color:var(--warn)">42</div><div class="k">career tracked sample</div></div>
+      <div class="key"><div class="k">International tournaments (8)</div><div class="v" style="color:var(--warn)">20 fouls/match</div><div class="k">24 yellows 3 reds total</div></div>
+    </div>
+    <table>
+      <tr><th>Dimension</th><th>Data / Fact</th><th>Implication for this match</th></tr>
+      <tr><td>Overall profile</td><td>≈3.9 yellows/match, 0.20 reds/match — <b>one notch milder</b> than opening-match referee Sampaio (≈5.0 yellows/match)</td><td>Overall whistle not overly nitpicky, favours match flow; but far from a permissive style</td></tr>
+      <tr><td>High-stakes pattern</td><td>In AFCON / key Egypt matches, single games of <b>6-8 yellows + red cards</b> — the hotter the powder keg, the heavier the bookings</td><td>This match is a classic high-pressure "qualification decider": if early aggression escalates, he has previous form for going card-heavy</td></tr>
+      <tr><td>Flowing-game pattern</td><td>U-17 World Cup officiating shows <b>flexible adjustment to match dynamics</b>: 5 yellows in tight games, only 1-2 in one-sided / flowing games</td><td>"Keep the game flowing but firm on dangerous fouls" — Korea's defensive back-to-goal fouls and Czechia's aerial challenges are both on his red-line list</td></tr>
+      <tr><td>Head-to-head history</td><td><b>Zero sample</b>: has never officiated a Korea or Czechia match at any level; senior World Cup debut</td><td>No team-bias history to speak of; debut referees typically <b>start strictly to "set the tone"</b> — the first tactical foul in the opening 15 minutes is the signal flare for the day's standard</td></tr>
+      <tr><td>Tournament environment signal</td><td>Opening match (Sampaio) produced <b>3 red cards at full-time</b> — first time in 20 years of World Cups; compounded by upgraded semi-automatic offside</td><td>The first hard evidence of a stricter officiating environment at this tournament — both teams must factor "accumulated yellow card" costs into every foul decision (2 yellows = suspended for next group match)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Direct impact</b>: His 42 career penalties awarded proves <b>he is not shy about calling box fouls</b> — Soucek/Krejci's shirt-pulling at Czechia set pieces and Kim Min-jae's physical challenges when Korea defends are potential penalty flashpoints; upgraded semi-automatic offside strips Schick's marginal near-post positions of any doubt. Special note for Korea (Korean media is already focusing heavily on him): in an even match, emotional discipline = tactical currency, and the "only the captain speaks" rule means yellow cards earned by technical players like Lee Kang-in carry an amplified cost.</div>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.statshub.com/referee/omar-amin-mohamed/787203">StatsHub — career disciplinary data</a> · <a href="https://corner-stats.com/amin-omar/egypt/referee/4405">Corner-Stats — yellow/red cards / penalties</a> · <a href="https://www.footymetrics.com/referees/33272-amin-mohamed-omar">FootyMetrics</a> · <a href="https://www.starnewskorea.com/en/sports/2026/06/09/2026060912152045331">StarNews (Korea) — officiating crew / international tournament profile / "Egyptian lawyer"</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico">ESPN — opening-match 3 red cards</a></div>
+    <h4>Tournament-Wide New Rules (impact on this match)</h4>
+    <ul class="cl">
+      <li><b>Only the captain may address the referee</b>: In a tight, emotionally charged even contest, discipline can have a major influence.</li>
+      <li><b>8-second goalkeeper limit, 5-second throw-in / goal kick countdown</b>: Compresses time-wasting; benefits the side that wants to control possession.</li>
+      <li><b>Upgraded semi-automated offside</b>: Czechia's set-piece routines and Schick's near-post runs in marginal offside positions will be adjudicated faster and more accurately.</li>
+    </ul>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· Tier B — Tactical analysis — web-scraped</small></div>"The 6/11 Korea vs Czechia is the match that decides the second qualifier. A Korea win and they control their destiny; a Czechia win and Korea's road out becomes much harder. This is the group's pivot match."</div>
+    <div class="insight"><div class="who">Bundesliga / Opta <small>· Tier B — Data</small></div>Schick scored 9 goals in his last 7 Bundesliga rounds (including a hat-trick against Leipzig); Czechia's 8 qualifying set-piece goals were the most in Europe — together these two data points raise Czechia's expected goals materially.</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· Official — Wenger-led</small></div>Authoritative post-match tactical review used as input for the next fixture's prediction.</div>
+  </section>
+
+  <!-- Overall Assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Items to Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: Even match; draw or a narrow win for either side are all common outcomes. If a winner does emerge, Czechia's set-piece efficiency and Schick's form give them a marginal finishing advantage; Korea's winning case rests on Son's counter-attacking explosion.</li>
+      <li><b>Key man</b>: Schick (Czechia — finishing), Son (Korea — counter-attacks and creativity), Krejci (Czechia — set-piece threat at both ends).</li>
+      <li><b>Decisive factor</b>: Set pieces (Czechia advantage) + whether Korea's three-back defensive transition is breached.</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>: ① Predicted XI is analytical source speculation; official team sheet 1 hour before kick-off takes precedence (Korea's formation — 3-4-2-1 vs 4-2-3-1 — is disputed; depends on Hong's selection). ② Lee Kang-in / Kim Min-jae fitness and starting status to be confirmed pre-match. ③ Match referee officially confirmed: <b>Amin Omar (Amin Mohamed Omar) (Egypt)</b>. ④ Exact 1X2 odds to be updated before kick-off (current figures approximated from group qualification probabilities).</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — Group A tactics/line-ups/odds (web-scraped)</a><br>
+      • <a href="https://www.starnewskorea.com/en/sports/2026/05/18/2026051714120068002">StarNews — South Korea full squad value €136.75m</a> · <a href="https://www.transfermarkt.us/tschechien/marktwertanalyse/verein/3445">Transfermarkt — Czechia €115.90m</a><br>
+      • <a href="https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393">Bundesliga — Schick form</a> · <a href="https://www.mlssoccer.com/news/lafc-son-heung-min-headlines-south-korea-2026-world-cup-roster">MLSSoccer — Son at LAFC</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-11 · Charts use verified data; radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',KR='#cd2e3a',CZ='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['South Korea','Czechia'],datasets:[{data:[136.75,115.90],backgroundColor:[KR,CZ],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€m'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('formChart'),{type:'bar',
+ data:{labels:['Goals','Assists'],datasets:[
+  {label:'Schick (Bundesliga 25/26)',data:[16,3],backgroundColor:CZ,borderRadius:5},
+  {label:'Son (MLS 2026)',data:[0,8],backgroundColor:KR,borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'Club (this season)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Mexico','Czechia','South Korea','South Africa'],datasets:[{data:[52,24,22,8],backgroundColor:['#16a34a',CZ,KR,'#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Group-win implied probability %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Big-match experience'],
+  datasets:[
+   {label:'South Korea',data:[6,6.5,7,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR},
+   {label:'Czechia',data:[7.5,7,6.5,9,7,6.5],borderColor:CZ,backgroundColor:CZ+'33',pointBackgroundColor:CZ}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

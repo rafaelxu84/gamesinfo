@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Analysis · Mexico vs South Korea · 2026 World Cup Group A Round 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --mx:#16a34a;--kr:#cd2e3a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#7a1f29);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13261b,#21161c);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.mx{color:#34d27b;font-weight:600}td.kr{color:#f0828b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .carry{background:#19233a;border:1px solid #2f4675;border-radius:7px;padding:3px 9px;font-size:11px;font-weight:700;display:inline-block;color:#9fc0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🏁 Full-time 1-0 · 2026 World Cup · Group A Round 2 · Direct fight for top spot (both teams on 3 points)</span>
+  <h1>Mexico vs South Korea</h1>
+  <div class="meta">June 18, 2026 · 21:00 ET · Guadalajara, Estadio Akron (Zapopan, altitude ≈1,560m) · Group A (also in group: Czechia, South Africa)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 Mexico</div><div class="rk">Hosts · Round 1 2-0 South Africa · rebuilding center-backs after Montes suspension</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 South Korea</div><div class="rk">Round 1 2-1 comeback over Czechia · Son's farewell run · Hwang In-beom named MOTM</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data</h2>
+    <div class="sub">Full-time Mexico 1-0 South Korea (HT 0-0) · Estadio Akron, Guadalajara · Referee Gustavo Tejera (Uruguay, as pre-assigned) · Sources: Opta Analyst / ESPN / CBS Sports / NBC Sports / Bolavip · Pre-match content below is preserved intact as a prediction archive</div>
+
+    <h4>① Scoreline progression</h4>
+    <p style="font-size:14px">This was a <b>"dull first half, one error settles it"</b> low-scoring grind. The first half produced only 5 shots between the two sides and a combined xG of just 0.22 — Mexico edged the opening, but Korea gradually took over the run of play (58% possession overall), and neither side cracked the other's box. The turning point came <b>right after the restart</b>: in the <b>50th minute</b> Korea goalkeeper <b>Kim Seung-gyu mishandled in possession/distribution</b>, and <b>Luis Romo</b> pounced to slot into the empty net, 1-0. That "gift" goal was the game's only goal. Korea then held more of the ball and even edged the xG (0.67 to Mexico's 0.48), but managed just 2 shots on target — one saved by <b>Rangel</b>, one blocked on the line by <b>Johan Vásquez</b>. Mexico sat in, protected the lead, recorded their <b>first-ever three-game World Cup winning run</b>, and <b>became the first team to clinch qualification</b> at this tournament, topping Group A early.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 4' Romo booked (challenge on Lee Kang-in, MEX) → HT 0-0 → 50' <b>Romo</b> (Kim Seung-gyu error, 1-0) → 71' MEX subs Obed Vargas for Romo, Pineda on → KOR subs Son / Lee Jae-sung → Hwang Hee-chan / Oh Hyeon-gyu, Eom Ji-sung & Yang Hyun-jun on → Full-time 1-0</div>
+
+    <h4>② Key data comparison</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metric</th><th style="padding:6px">🇲🇽 Mexico</th><th style="padding:6px">🇰🇷 South Korea</th><th style="text-align:left;padding:6px">Read</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Possession</td><td style="text-align:center">42%</td><td style="text-align:center"><b>58%</b></td><td style="padding:6px;color:var(--mut)">Korea dominated the ball but didn't win — confirming the pre-match read that "Korea's positional play has evolved and Mexico aren't a bunker," but possession never became goals</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">0.48</td><td style="text-align:center"><b>0.67</b></td><td style="padding:6px;color:var(--mut)">Korea actually edged the xG; the game's only goal came from a goalkeeper error, not a high-quality chance — the result was decided by an "unscripted" event</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots on target</td><td style="text-align:center">—</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">Korea's 2 SOT: one saved by Rangel, one blocked on the line by Vásquez; Mexico's goal came outside the "shot-on-target" pipeline — a steal into an empty net</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">First-half shots / xG</td><td colspan="2" style="text-align:center">Combined <b>5 shots · xG 0.22</b></td><td style="padding:6px;color:var(--mut)">A dull, chance-starved half — the game only took shape after the early-second-half error</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Decisive error</td><td style="text-align:center">—</td><td style="text-align:center"><b>GK error → goal</b></td><td style="padding:6px;color:var(--mut)">Kim Seung-gyu's 50' distribution error gifted the goal — an "X-factor" not flagged pre-match, yet it decided the game</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Yellow cards</td><td style="text-align:center">Romo 4'</td><td style="text-align:center">Paik Seung-ho</td><td style="padding:6px;color:var(--mut)">Tejera flashed the first yellow inside 4 minutes, matching the pre-match read of "strict South American whistle, asserting authority on a World Cup debut"</td></tr>
+      <tr><td style="padding:6px">Other splits (corners / fouls / pass accuracy)</td><td colspan="2" style="text-align:center;color:var(--warn)">No complete public item-by-item data for this metric</td><td style="padding:6px;color:var(--mut)">Published reports don't provide a full corners/fouls/pass-accuracy comparison; we won't fabricate it — defer to Opta match-centre corrections</td></tr>
+    </table></div>
+
+    <h4>③ Tactical review</h4>
+    <div class="insight"><div class="who">① Mexico "secure not losing first, then pounce on the error" — a pragmatic qualification</div>Facing a Korea side that dominated the ball, Mexico didn't push high as they did against South Africa in Round 1 — they accepted 42% possession, sat in, and waited for a mistake. One goalkeeper error was enough. <b>This shows Mexico</b>: in a high-stakes top-spot decider, Aguirre's team prioritized winning the result over winning the run of play — a contrast with their historical flaw of "plenty of possession, poor finishing." Winning on few chances with high efficiency is a sturdy, repeatable knockout template.</div>
+    <div class="insight"><div class="who">② The pre-match's biggest question — the rebuilt center-backs — held up</div>The biggest pre-match doubt was whether Álvarez dropping into central defense (after Montes's ban) could handle the Son / Oh Hyeon-gyu transition threat. Result: Mexico <b>kept a clean sheet</b>, Korea managed just 2 shots on target, and one was blocked on the line by Vásquez. <b>This shows Mexico</b>: the makeshift center-back line passed its real test, and the clean sheet came from discipline and a compact shape rather than luck — repairing the indiscipline exposed by the 3 red cards in Round 1 and adding confidence for the knockouts.</div>
+    <div class="insight"><div class="who">③ Korea "positional play has evolved, but finishing is still inefficient" — the old flaw in a new form</div>Korea bettered Mexico on possession (58%) and xG (0.67), continuing the possession-and-penetration style from Round 1 against Czechia and confirming the pre-match read that "their positional play has evolved." But just 2 shots on target — the ability to turn possession into high-quality chances is still lacking, and their own goalkeeper's error handed over the game. <b>This shows South Korea</b>: the team can control the game but still lacks the final ball/finish — the historical flaw of "creativity in a new form but still inefficient" reappeared as "dominant possession yet zero goals," and it will be magnified against stronger knockout opponents.</div>
+    <div class="insight"><div class="who">④ One error rewrote the script — confirming the pre-match framing of "two close sides, details decide it"</div>Pre-match vig-removed odds had Mexico ≈50%, draw ≈28%, Korea ≈26%, with the market treating the teams as "evenly matched, open game." On the day, xG of 0.48-0.67 was near 50-50, yet the result was decided by a non-tactical goalkeeper error. <b>This shows</b>: in a meeting of evenly matched sides, the result is often decided not by the tactical battle but by individual errors and moments of efficiency — exactly fulfilling the pre-match "base case: a narrow Mexico win, goal count near the totals line" (one goal at full-time, Under 2.5).</div>
+
+    <h4>④ Prediction reconciliation (checking pre-match conclusions item by item)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>Overview conclusion "narrow Mexico win or draw" → actual 1-0 narrow win</b>: the base case was fulfilled precisely; Mexico took the top-spot decider by the smallest margin.</li>
+      <li>✓ <b>Market-implied Mexico win ≈50% (odds ≈2.00) → Mexico won</b>: the mild favorite came through, no upset.</li>
+      <li>✓ <b>"Can Mexico's rebuilt CBs handle the Son / Oh Hyeon-gyu transitions" → held (clean sheet)</b>: Korea managed just 2 SOT; Álvarez dropping into defense passed the test.</li>
+      <li>✓ <b>"Both want to win → open game, whoever penetrates better positionally" → partly fulfilled</b>: Korea did edge possession and penetration (58%, slightly higher xG), but the penetration didn't yield a goal.</li>
+      <li>✗ <b>"Can Mexico's 4-from-16 SOT conversion punish Korea's back three" → goal didn't come from open-play finishing</b>: Mexico didn't win on shooting efficiency; their only goal came from a steal off the GK error — the conversion test was bypassed by an "error goal."</li>
+      <li>✓ <b>Totals: base case "goal count near the line" + the Under -170 side → actual 1 goal (Under 2.5)</b>: low scoreline delivered, the dull-game script landed.</li>
+      <li>✓ <b>Referee: "Tejera, strict South American whistle, asserts authority on World Cup debut" → first yellow inside 4 minutes</b>: the read on his standard matched; an early card.</li>
+      <li>△ <b>"Hwang In-beom is Korea's X-factor" (ESPN) → not fulfilled</b>: the real X-factor became Korea's own goalkeeper error rather than Hwang's penetration.</li>
+    </ul>
+
+    <h4>⑤ Forward carry (taking it into the next match)</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇲🇽 Mexico → June 24 final round vs Czechia (Mexico City)</div>① <b>Qualification + top spot secured</b>: 6 points, top of Group A, already through — they can rotate and rest against Czechia in the finale and store energy for the knockouts; ② Repeatable path: this match's "pragmatic compactness + pounce on the error + clean sheet" low-risk template suits the knockouts better than the high press used against South Africa; ③ The lingering concern is finishing — across two games their open-play goals have leaned on opponent errors and set pieces; they'll need to rediscover open-play efficiency against stronger knockout sides; ④ Discipline deserves credit: just 1 yellow and a clean sheet here, repairing the Round 1 3-red-card issue — but a Tejera-style strict whistle is a reminder of accumulated-card costs.</div>
+      <div class="insight" style="margin:0"><div class="who">🇰🇷 South Korea → June 24 final round vs South Africa (Guadalajara)</div>① This is a <b>must-not-lose qualification decider</b>: after this defeat Korea sit on 3 points and must take points in the finale (against a depleted, bottom-of-the-table South Africa side that picked up 3 reds in Round 1); ② The exposed weaknesses are <b>finishing efficiency and goalkeeper reliability</b> — dominant possession yet zero goals, with Kim Seung-gyu's error gifting the loss; against South Africa they must turn possession into shots on target and steady the backline; ③ The attacking outlet can continue: Lee Kang-in / Hwang In-beom's central penetration and possession (58%) still work, what's missing is the finish; ④ Son's farewell run hangs by a thread — back-to-back fatigue plus the finale's outcome will decide whether his World Cup continues, and Hong Myung-bo may need to bring on attackers like Hwang Hee-chan / Oh Hyeon-gyu earlier.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Sources: Opta Analyst (theanalyst.com), ESPN, CBS Sports, NBC Sports, Bolavip, Yahoo Sports. Some split metrics (corners / fouls / pass accuracy) have no complete public item-by-item data and are flagged honestly. For analysis only — not betting advice.</p>
+  </section>
+
+  <!-- ===== SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 Quick Overview (read this first)</h3>
+    <p class="lead">This is effectively the <b>fight for top spot</b> in Group A: Mexico and South Korea both won their openers and sit level on 3 points, and winning here all but locks up first place in Group A and qualification. Mexico hold the <b>home + altitude + H2H history edge</b> (6 meetings: 4 wins, 1 draw, 1 loss, including a 2-1 win over Korea at the 2018 World Cup), and the market prices Mexico to win at <b>≈2.00</b> (US line -106/+100, vig-removed implied ≈50%), the draw at <b>≈3.30</b> (+230, ≈28%), and Korea to win at <b>≈4.25</b> (+325/+333, ≈26%). But this is not the "hosts steamroller" script of the opener — Korea's 2-1 comeback over Czechia in Round 1 showed <b>Lee Kang-in-driven positional play plus multiple scoring outlets</b>, with Hwang In-beom (one goal, one assist) named MOTM, and they look a notch above South Africa. The <b>real deciders</b>: ① Mexico forced to rebuild their center-backs after Montes's suspension (Álvarez dropping back alongside Vásquez) — will they leave gaps against the transition threat of Son / Oh Hyeon-gyu; ② Mexico's conversion rate of just 4 shots on target from 16, and whether they can punish the soft underbelly of Korea's back three. The totals market is split (Over and Under 2.5 camps at odds with each other), overheating index ≈3/5 — home emotion lifts the Mexico-win talking-point heat, but the lines have not reached the one-sided frenzy of the opener. Base-case script: a narrow Mexico win or a draw, with the goal count near the totals line.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Mexico win implied (vig-removed)</div><div class="v" style="color:#34d27b">≈50%</div></div>
+      <div class="key"><div class="k">Korea win implied (vig-removed)</div><div class="v" style="color:#f0828b">≈26%</div></div>
+      <div class="key"><div class="k">H2H (6 games)</div><div class="v" style="color:#34d27b">MEX 4-1-1</div></div>
+      <div class="key"><div class="k">Market overheating index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Direct fight for top spot</b>: both teams on 3 points, the winner all but locks up first place in Group A; the loser/draw side sees its final-round fate shift (Mexico face Czechia in Round 3, Korea face a depleted South Africa).</li>
+      <li><b>Mexico's center-back reshuffle</b>: <span class="carry">Carried over from last match</span> Montes straight-red suspended, Álvarez most likely dropping back to fill in at center-back — this is Mexico's biggest defensive test of the tournament, exposed to Son's balls in behind on the break.</li>
+      <li><b>Son vs the system</b>: <span class="carry">Carried over from last match</span> Korea's win over Czechia proved "Korea can win even without a Son goal" (Hwang In-beom / Oh Hyeon-gyu scored), but Son's pace on the counter is still the sharpest weapon to punish Mexico's rebuilt center-backs.</li>
+      <li><b>Conversion-rate test</b>: <span class="carry">Carried over from last match</span> Mexico had 16 shots, 4 on target and 1 off the post in Round 1; against a backline led by Kim Min-jae, any lack of efficiency will be magnified.</li>
+    </ul>
+  </div>
+
+  <!-- ===== CORE MODULE: KEY MATCHDAY NEWS ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Matchday News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals shaping this match, each explained for how it changes tactics or outcome (includes carry-over items from both teams' last match)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Mexico · suspension reshuffle <span class="carry" style="margin-left:6px">Carried over from last match</span> <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Center-back <b>César Montes straight-red, suspended one match</b> — Aguirre most likely to drop <b>Edson Álvarez back to fill in at center-back</b>, partnering Johan Vásquez</div>
+      <p style="font-size:13.5px">Mexico's discipline collapsed late in the 2-0 win over South Africa in Round 1, with César Montes sent off in the 90+2nd minute for a stamp (a contentious DOGSO-type straight red), which suspends him for this match by rule. Having lost his first-choice center-back, multiple projections converge on <b>captain Edson Álvarez dropping back from defensive midfield to fill in at center-back alongside Johan Vásquez</b>, with Erik Lira anchoring midfield alone and Gilberto Mora (17) and Fidalgo pushing up into the front and central areas. <span style="color:var(--warn)">[Final XI subject to the official FIFA team sheet pre-match · pending confirmation]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Álvarez dropping back does upgrade the center-backs' ball progression and duels, but it also <b>removes Mexico's defensive anchor in midfield</b> — exactly the space exposed to Korea's central penetration through Lee Kang-in / Hwang In-beom and Son's balls in behind on the break. This is Mexico's biggest defensive test of the tournament, directly moving the handicap line (Mexico -0.5) and the first-goal market.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html" style="color:var(--accent)">Sports Mole — predicted XI after Montes suspension</a> · <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — team news / predicted XI / referee</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">South Korea · Hwang In-beom explosion <span class="carry" style="margin-left:6px">Carried over from last match</span> <span style="color:var(--mut);font-weight:400">· ESPN · Opta · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Korea's <b>2-1 comeback over Czechia</b>: Hwang In-beom (one goal, one assist) named MOTM, Lee Kang-in elite in positional play (37/37 passes)</div>
+      <p style="font-size:13.5px">After falling behind Czechia in Round 1, Korea equalized through Hwang In-beom (assisted by Lee Kang-in) in the 67th minute and went ahead in the 80th when Hwang In-beom set up Oh Hyeon-gyu, completing the comeback with two goals in 21 minutes. Across the match Korea had <b>61.7% possession, 1.84 xG and 468 completed passes (their highest in a single World Cup match since 1966)</b> — shedding the old "lacks open-play creativity" label. Feyenoord's Hwang In-beom (29) was named MOTM with a goal and an assist, while Lee Kang-in went 37/37 on passes and created 3 chances.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Korea proved they can win through central penetration even without a Son goal — which means Mexico can't just man-mark Son: <b>the passing quality of Hwang In-beom / Lee Kang-in in midfield is Korea's new attacking channel</b>. If Mexico's midfield in front of the rebuilt center-backs is split open again by central penetration, Korea's positional answer is more dangerous than it was against Czechia (Mexico are no parked-bus side and leave more space).</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Hwang In-beom named MOTM</a> · <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta — post-match stats / 468 passes</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">South Korea · injury recheck on key men <span class="carry" style="margin-left:6px">Carried over from last match</span> <span style="color:var(--mut);font-weight:400">· ESPN · Korean media · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lee Kang-in (left ankle) + Kim Min-jae (knee) essentially fit pre-match; both started and made key contributions in Round 1</div>
+      <p style="font-size:13.5px">The late-season worries over Lee Kang-in's left ankle and Kim Min-jae's knee were answered in Round 1 — both started against Czechia, with Lee Kang-in going 37/37 on passes and creating 3 chances, and Kim Min-jae anchoring the center of the back three. Both carry that form into this match, the twin pivots for Korea's attacking solutions (Lee Kang-in) and defensive aerial command (Kim Min-jae). <span style="color:var(--warn)">[Matchday fitness and XI subject to the official pre-match team sheet · pending confirmation]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Lee Kang-in is one of few who can keep producing creativity in positional play, and Kim Min-jae is the rock and ball-playing core of the back-three system — both being healthy directly determines whether Korea can stand firm both in possession and against Mexico's counters. With two high-intensity games back-to-back, fitness is a hidden variable.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — Korea squad / Lee Kang-in · Kim Min-jae</a> · <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510" style="color:var(--accent)">RotoWire — predicted XI / tactics</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Qualification picture · direct fight for top spot <span style="color:var(--mut);font-weight:400">· ESPN · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Both teams on 3 points, <b>the winner all but locks up first place in Group A</b>; two straight wins would clinch Mexico's progress early</div>
+      <p style="font-size:13.5px">Mexico beat South Africa 2-0 and Korea came from behind to beat Czechia 2-1 in Round 1, leaving both on 3 points with goal differences of Mexico +2 / Korea +1. The winner here all but locks up first place in Group A and a place in the round of 16; a draw helps both teams' qualification chances but leaves it to the final round; the loser must do the math in Round 3 (Mexico face Czechia, Korea face a South Africa side already down two suspended players). This is a genuine heavyweight clash with <b>double weight: qualification control + top-seed bracketing</b>, and neither side has any reason to play conservatively.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: because the top-seed bracket is valuable and both want to win, the game's <b>openness is higher than a typical "strong vs weak" matchup</b> — which is exactly the root of the split totals market (Over/Under camps). Mexico may not want to press as relentlessly as against South Africa with zero margin for error, and Korea also have an incentive to attack rather than purely defend and counter.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa" style="color:var(--accent)">ESPN — Group A picture / records</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/" style="color:var(--accent)">Squawka — preview</a></div>
+    </div>
+  </section>
+
+  <!-- ===== DATA ===== -->
+  <section>
+    <h2><span class="n">1</span> Data (core)</h2>
+    <div class="sub">1X2 implied probabilities (vig-removed) · Group A qualification picture · totals market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (vig-removed, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (market split, roughly even)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group A win/qualify heat (implied probability %)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇲🇽 Mexico</th><th>🇰🇷 South Korea</th></tr>
+      <tr><td>Head coach</td><td class="mx">Javier Aguirre</td><td class="kr">Hong Myung-bo</td></tr>
+      <tr><td>Round 1 result</td><td class="mx">2-0 win vs South Africa (Quiñones 9' / Jiménez 67')</td><td class="kr">2-1 comeback win vs Czechia (Hwang In-beom 67' / Oh Hyeon-gyu 80')</td></tr>
+      <tr><td>Round 1 data</td><td class="mx">Possession 61% · xG 1.41 · 16 shots, 4 on target (1 off post)</td><td class="kr">Possession 61.7% · xG 1.84 · 468 passes (team World Cup record)</td></tr>
+      <tr><td>Points / goal difference</td><td class="mx">3 pts · +2</td><td class="kr">3 pts · +1</td></tr>
+      <tr><td>Formation</td><td class="mx">4-3-3 (center-back reshuffle after Montes suspension)</td><td class="kr">3-4-2-1</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="mx">Win ≈2.00 (-106/+100, implied ≈50%)</td><td class="kr">Win ≈4.25 (+325/+333, ≈26%) · Draw ≈3.30 (+230, ≈28%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="kr">Market split: some price Over -120, some Under -170; two teams who both want to win → leaning open</td></tr>
+      <tr><td>Head-to-head (6 games)</td><td colspan="2" class="mx">Mexico 4 wins, 1 draw, 1 loss; 2018 World Cup Mexico 2-1 over Korea (Son scored)</td></tr>
+      <tr><td>Key players</td><td class="mx">Raúl Jiménez / Julián Quiñones / Edson Álvarez</td><td class="kr">Son Heung-min / Lee Kang-in / Hwang In-beom / Kim Min-jae</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the vig-removed implied figures from DECIMAL odds (≈50/28/26, including roughly 4% margin). Odds sources: bet365 (MEX -106 / Draw +230 / KOR +333), FanDuel (MEX -105 / Draw +230 / KOR +320). Totals line is 2.5, with the market split into two camps (Over -120 vs Under -170), reflecting the "both teams want to win" open expectation. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this-tournament actual · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendly samples)</b> with its <b>actual values from matches already played at this World Cup</b>, item by item, to see "whether this tournament is above or below the historical level, and what that tells us." Public xG samples for national teams are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: Historical average vs this World Cup actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (Round 1)</th><th>Delta &amp; read</th></tr>
+      <tr><td class="ht">🇲🇽 Mexico · Attack xG</td><td class="ht">Gold Cup 2025 title-winning level, <b>2.41 xG per game</b> (best in the tournament)</td><td class="ht">Round 1 <b>xG 1.41</b>, 61% possession, 2-0 win over South Africa</td><td><b>Below</b> the Gold Cup firepower — but the opponent was a South Africa parked in a 5-3-2 bus and down to nine men with three reds, so a drop is normal; open play still reached 1.41, efficiency on target</td></tr>
+      <tr><td class="ht">🇲🇽 Mexico · Defence xGA</td><td class="ht">Solid defence under Aguirre</td><td class="ht">Round 1 clean sheet, allowed South Africa only <b>xGA 0.07</b></td><td><b>Level/better</b> than history, but South Africa's attack was ≈zero so the sample carries little weight — the real test is facing Korea's positional play</td></tr>
+      <tr><td class="sc">🇰🇷 Korea · Attack xG/creativity</td><td class="sc">Historically criticized for "lacking positional-play creativity, reliant on Son's counters"</td><td class="sc">Round 1 <b>xG 1.84</b>, 61.7% possession, 468 passes, two goals from central penetration, 2-1 comeback over Czechia</td><td><b>Clearly above</b> the historical impression — the positional-play answer led by Lee Kang-in tears off the "counters only" label, the biggest upward revision this match</td></tr>
+      <tr><td class="sc">🇰🇷 Korea · Defence xGA</td><td class="sc">Historically a mid-table back line, vulnerable in behind</td><td class="sc">Round 1 only turned it around after going <b>1-0 down</b> to Czechia, conceding from a set piece</td><td><b>Level</b> with the historical concern: game management after leading and set-piece defending remain soft spots Mexico can target</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Mexico's attack dropped from the Gold Cup firepower (1.41 vs 2.41), but that is a normal adjustment against a bus and the efficiency is still there; Korea's attack, by contrast, <b>significantly exceeds</b> the historical impression (1.84 xG + high possession + positional penetration) and is the underrated pole this match. Both teams want the ball, and the deep data supports the main line of "an open, back-and-forth game decided by whose positional penetration is sharper," rather than a one-sided Mexico rout. Sources: Opta (Round 1 xG/possession/passes) · Yahoo box score · Gold Cup tournament data. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model-projected xG (xGscore)</td><td class="ht">Mexico ≈1.5</td><td class="sc">Korea ≈1.2</td><td>The projections are close — Korea's genuine 1.84 of creativity in Round 1 means its projection should not be heavily discounted</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">The two teams are in the same close tier; no-vig odds give Mexico ≈50% / draw ≈28% / Korea ≈26% (including about 4% margin)</td><td>After opponent-strength calibration, Korea's "win over Czechia" carries more weight than Mexico's "win over a depleted South Africa"</td></tr>
+      <tr><td>Pressing PPDA · xT · Field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: both teams lean toward possession + mid-and-front-third pressing, with Korea's central-penetration xT efficiency high</td><td>The game may seesaw; the key is who first produces penetration in positional play</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-type" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (expected goals / non-penalty expected goals): the total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (expected goals against): the quality of chances opponents create against you, measuring true defensive level rather than saves/luck.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (expected goal difference per 90): xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (average shot quality): whether shot selection is efficient — a low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes allowed per defensive action): the lower the value, the more aggressive the press, reflecting pressing intensity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of touches in the attacking third, measuring territory/game control rather than mere possession share.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources such as Opta/FotMob/Sofascore/Understat/xGscore; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are always marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- ===== BETTING MARKET HEAT ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· celebrity picks / odds / money flow / public sentiment</span></h2>
+    <div class="sub">Mexico are a mild favorite, home emotion lifts the topic's traffic, but neither the lines nor expert direction show the one-sided frenzy of the opener — four signals + a composite overheating index</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheating index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · mild Mexico-win lean; heat lifted by Guadalajara home emotion + top-spot narrative</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Mexico are a mild ≈50% favorite (far from the opener's 66-70%), expert direction mostly backs Mexico but is not one-sided, and there is clear disagreement on totals. The topic heat comes from three narratives — <b>Guadalajara home + the direct fight for top spot in Group A + Son's "farewell run"</b> — making this high exposure rather than money overheating.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction count: Mexico win majority · Korea unbeaten/handicap minority · totals split)</h4>
+    <table>
+      <tr><th>Who</th><th>Identity</th><th>View / Pick</th></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Mexico to win, home + firepower is value at 1/1</td></tr>
+      <tr><td>Yahoo Sports</td><td>US betting media</td><td>Mexico -106 the safe side; low-scoring lean</td></tr>
+      <tr><td>SportsLine (elite expert)</td><td>Verified profitable expert</td><td>Leans Mexico win + under, stressing Mexico's home atmosphere and conversion-rate ceiling</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>8-1 bet builder, Mexico win + goalscorer focus on Jiménez</td></tr>
+      <tr><td>ESPN (Anish Anand)</td><td>Prediction media</td><td>Home atmosphere helps Mexico chase the win; but Hwang In-beom is Korea's X-factor</td></tr>
+      <tr><td>OneFootball / TotalFootballAnalysis</td><td>Tactics/prediction</td><td>Favor Mexico but flag Korea's evolved positional play, Over 2.5 has merit</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (moderate)</b>: the win direction mostly backs Mexico, but not 100% one-sided — Korea's comeback over Czechia gives the "Korea unbeaten/handicap" camp some confidence. The real disagreement is on <b>totals (Over vs Under 2.5) and handicap size</b>: two teams who both want to win make "open, attacking" a reasonable expectation, lowering the certainty of the Under. Topic heat is driven by home emotion, but no significant money lifting the Korea win is visible.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Mexico win</th><th>Reading</th></tr>
+      <tr><td>Open (DraftKings 06-12)</td><td>1X2</td><td class="mx">≈2.00 (+100)</td><td>Mild Mexico lean; Draw +230 / Korea +325</td></tr>
+      <tr><td>06-16 close to kickoff</td><td>Multiple books</td><td class="mx">≈1.95–2.00 (bet365 -106 / FanDuel -105)</td><td>Narrow movement, no one-sided compression — unlike the opener</td></tr>
+      <tr><td>06-16</td><td>Over/Under</td><td colspan="2" class="mx">Totals line 2.5; market split (Over -120 / Under -170), no consensus</td></tr>
+      <tr><td>Handicap (Asian line reference)</td><td>MEX -0.5</td><td colspan="2" class="mx">Mexico -0.5 around -120~-130 (the sharper Korea +0.5 side pending confirmation)</td></tr>
+    </table>
+    <div class="note">📌 The 1X2 price stays stable at Mexico ≈2.00 with no one-sided movement — a sharp contrast with the opener's 1.48→1.42 one-sided compression on the Mexico win, indicating this match's <b>Mexico-win pricing is closer to the true probability (≈50%)</b>, with no window for a "hosts premium" to be eaten away. The most active price discovery is in the <b>totals and handicap markets</b>. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ public sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (Kalshi/Polymarket)</b>: single-match win prices, contract volume and 30-day momentum data for this game not publicly found <span style="color:var(--warn)">(pending confirmation)</span> — prediction-market volume already topped $2 billion after the opener, and this top-spot clash is expected to draw volume, but specific figures are unconfirmed.</li>
+      <li><b>Sentiment focus</b>: highly concentrated on <b>Guadalajara home + the direct fight for top spot in Group A</b>, plus the "could be his last World Cup" narrative around Son; Mexican local media (TUDN/ESTO) sentiment leans optimistic but with a "Mexico vs themselves" discipline wariness (echoing the 3 red cards in Round 1).</li>
+      <li><b>Divergence signal</b>: no clear "public vs price" divergence — unlike the nationwide overheating of the opener, this market is relatively balanced, and Korea's comeback gives the opposite direction some confidence.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite read</b>: mild Mexico-win lean (≈50%), no one-sided bookmaker compression, overheating index <b>3/5</b>. The heat comes from <b>home emotion + the top-spot narrative + Son's farewell</b> topic traffic, not from money overheating on the win line. The most informative markets are <b>totals (split into two camps) and the handicap (Mexico -0.5)</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — preview/odds</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — prediction/odds</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — elite expert</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — 8-1 bet builder</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — opening odds</a> · <a href="https://onefootball.com/en/news/mexico-vs-south-korea-prediction-world-cup-2026-preview-best-bets-43011422">OneFootball — preview</a></div>
+  </section>
+
+  <!-- ===== MATCH REFEREE ===== -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b> (ESPN 06-16): the referee for this match is <b>Uruguayan Gustavo Tejera (38, born in Montevideo, CONMEBOL international level)</b>. Tejera is one of South America's most active international referees, having officiated the CONMEBOL Libertadores/Sudamericana, South American World Cup qualifiers, and was selected for the <b>2024 Copa América</b> referee group. Sources: ESPN / besoccer / football-lineups.</div>
+    <h4>Last two major tournaments + officiating standard (actual tournament data prioritized)</h4>
+    <ul class="cl">
+      <li><b>2024 Copa América (most recent major tournament · has a sample)</b>: Tejera refereed the 2024 Copa América group-stage match <b>Colombia vs Costa Rica (Group D, 6/28, Glendale)</b> and served as fourth official for the Argentina vs Ecuador quarterfinal. This is his actual officiating sample at his most recent international major — limited as the main referee (a single group-stage match), so a per-match card breakdown within that one tournament must follow the official record <span style="color:var(--warn)">(pending confirmation)</span>.</li>
+      <li><b>World Cup (this is his first time officiating a World Cup)</b>: Tejera has <b>no World Cup main-referee sample</b> — this match (or any other in this tournament) is an early game in his senior World Cup officiating sequence. By the discipline of "no major-tournament sample means no sample," he has <b>no historical officiating data to reference</b> at World Cup level; only Copa América and his career standard can serve as an approximation.</li>
+      <li><b>Career card baseline (large sample, as background not a major-tournament gauge)</b>: roughly 316 career games with a cumulative 1,614 yellows and 36 reds, <b>about 5.1–5.24 yellows per game</b> — a <b>strict, card-heavy</b> South American whistle (CONMEBOL leagues are intensely physical, so the average is naturally high). Note: this is a league/full-sample average and <b>cannot be directly extrapolated to a major-tournament standard</b> (South American leagues are far choppier than the World Cup).</li>
+      <li><b>Officiating history with the two teams</b>: <b>zero sample</b> — no public record of Tejera officiating any Mexico or Korea match at any level. No team tendency; a first-time World Cup main referee usually <b>starts strict to "establish authority," whistling by the rulebook</b>, and how the first tactical foul in the opening 15 minutes is handled is the day's signal flare on standard.</li>
+      <li><b>This tournament's uniform new rules</b>: 8-second goalkeeper hold, only the captain may speak with the referee, semi-automated offside — layered onto the "strict" environment of this tournament's 3-red-card opener and incidents in the Korea-Czechia game, both teams in this high-pressure top-spot clash must factor the cost of accumulated yellows (2 yellows = suspension in the group stage) into their fouling decisions.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: Tejera is a referee with <b>no World Cup sample and only a single group-stage Copa América sample</b> — by best practice, this match's refereeing angle <b>cannot be set by his strict league average (≈5.1 yellows/game)</b>, which would overstate card expectations. The only usable references are: ① the South American whistle's broad <b>stylistic tendency</b> of low tolerance for physical contact and stricter calls; ② the "establish authority early" common trait of a first World Cup assignment; ③ this tournament's overall strict environment signal. In a high-intensity top-spot clash, <b>accumulated yellows and emotion management are real variables</b>, but the specific card magnitude lacks a major-tournament anchor and is best left for observation rather than a firm conclusion.</div>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — referee appointment Gustavo Tejera</a> · <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — Tejera career card data</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — Tejera profile</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">Alamy/AP — Copa América 2024 Colombia vs Costa Rica</a></div>
+  </section>
+
+  <!-- ===== PREDICTED LINEUPS ===== -->
+  <section>
+    <h2><span class="n">3</span> Predicted Lineups & Key Players</h2>
+    <div class="sub">Predicted lineups (analyst projections, not official; subject to the official team sheet at roughly T-60 pre-match · pending confirmation) · sources ESPN / Sports Mole / RotoWire</div>
+    <h4>🇲🇽 Mexico predicted XI (4-3-3 · center-back reshuffle after Montes suspension)</h4>
+    <div class="lineup">Rangel; Gallardo · Vásquez · Álvarez · Reyes; Lira; Quiñones · Fidalgo · Alvarado · Gutiérrez; Jiménez</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>Forward / Fulham</td><td>Finishing and penalty core; scored a far-post header in Round 1 for 2-0; the main breakthrough point on set pieces and box finishing</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>Winger / Al Hilal</td><td>Naturalized spark, pounced on a South Africa error to open scoring in Round 1 (tournament's first goal); one-on-one threat</td></tr>
+      <tr><td class="mx">Edson Álvarez (C)</td><td>Captain / DM → fill-in CB</td><td><span class="carry">Carried over</span> dropping back to partner Vásquez after Montes suspension — strong on the ball but removes the midfield anchor</td></tr>
+      <tr><td class="mx">Johan Vásquez</td><td>Center-back / Genoa</td><td>Core of the rebuilt defense, must face Son's balls in behind on the break and Oh Hyeon-gyu's threat</td></tr>
+    </table>
+    <h4>🇰🇷 South Korea predicted XI (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Lee Gi-hyuk; Seol Young-woo · Hwang In-beom · Paik Seung-ho · Lee Tae-seok; Lee Kang-in · Lee Jae-sung; Son Heung-min(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="kr">Son Heung-min (C)</td><td>Forward / LAFC</td><td>Captain, all-time appearance record holder; "farewell run"; his pace on the counter is the sharpest weapon to punish Mexico's rebuilt center-backs</td></tr>
+      <tr><td class="kr">Hwang In-beom</td><td>DM / Feyenoord</td><td><span class="carry">Carried over</span> one goal, one assist, MOTM in Round 1; his midfield ball progression + late runs are Korea's new attacking channel</td></tr>
+      <tr><td class="kr">Lee Kang-in</td><td>Midfielder / PSG</td><td><span class="carry">Carried over</span> 37/37 passes and 3 chances created in Round 1; the key to unlocking positional play</td></tr>
+      <tr><td class="kr">Kim Min-jae</td><td>Center-back / Bayern</td><td>The rock of the back three, core of aerial command and ball progression; highest market value in the group (€40m)</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted lineups are media analyst projections (ESPN / Sports Mole / RotoWire), <b>subject to the official team sheet pre-match · pending confirmation</b>. Mexico's center-back reshuffle due to the Montes suspension (Álvarez dropping back) is the biggest variable; Korea will most likely stick with the 3-4-2-1 and starting framework used against Czechia.</div>
+  </section>
+
+  <!-- ===== TACTICS + COACHES ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style & Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual approach and results across their last two major tournaments (Mexico: 2022 World Cup group exit + Gold Cup 2023/Copa América 2024; Korea: 2022 World Cup round of 16 + Asian Cup 2023/24 semifinal)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 Mexico · Javier Aguirre</div>
+        <div class="role">4-3-3 possession siege + home tempo lift; center-back reshuffle after Montes suspension</div>
+        <ul class="cl">
+          <li>Round 1 vs South Africa proved: a three-man midfield without the Álvarez anchor (Lira-Fidalgo-Gutiérrez) can overload a parked bus (61% possession, 20 touches in the box). But <b>this match Álvarez is forced to drop back to fill in at center-back</b>, leaving the midfield without its strongest shield — a role switch from "breaking down a parked bus" to "defending against an open game," which is harder.</li>
+          <li>Cross-reference: 2022 World Cup group exit (lack of cutting edge, eliminated on goal difference), Gold Cup 2023 title (best in the tournament at 2.41 xG / 0.85 xGA per game), Copa América 2024 group exit (low attacking efficiency) — Mexico's <b>chronic problem is exactly "plenty of possession, not enough finishing,"</b> reconfirmed by 16 shots, 4 on target in Round 1. Against a backline led by Kim Min-jae, that conversion rate is a genuine concern.</li>
+          <li>Risk: with Álvarez dropped back, the single holding midfielder (Lira) is matched against Korea's twin-core penetration from Lee Kang-in / Hwang In-beom; if it is split open centrally, Son's balls in behind on the break will directly threaten the rebuilt center-backs — Mexico's toughest defensive test of the tournament.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 South Korea · Hong Myung-bo</div>
+        <div class="role">3-4-2-1 · positional penetration + Son counter dual-mode</div>
+        <ul class="cl">
+          <li>Round 1 vs Czechia shed the old label: 61.7% possession, 468 passes, Lee Kang-in / Hwang In-beom dominating central penetration to score twice — proving <b>Korea now have a positional answer "beyond Son,"</b> no longer reliant on the counter alone. This is the biggest incremental signal of the tournament.</li>
+          <li>Cross-reference: 2022 World Cup round of 16 (the "giant-killer" template of a last-round 2-1 stunner over Portugal, low block + counter and an injured Son fighting on), Asian Cup 2023/24 semifinal (strong individual talent but repeated defensive lapses, exposed by a 0-2 elimination to Jordan revealing systemic issues) — Korea's <b>Achilles heel is always the transition-defense gaps of the back three</b>. They could borrow Japan's 2022 template of "low block + counter and bench impact (Doan equalizing twice off the bench vs Germany/Spain)": if Korea sit solidly early, use Lee Kang-in's positional play + Son/Oh Hyeon-gyu on the counter, then bring on substitutes to attack the fitness of Mexico's rebuilt center-backs, that is the most realistic path to a win.</li>
+          <li>Response: Hong Myung-bo will most likely keep the steady stance used against Czechia (Hwang Hee-chan may again wait on the bench as a second-half impact sub), using Lee Kang-in to link play and Son leading the line to stretch Mexico's rebuilt center-backs, exploiting the space behind a midfield with Álvarez dropped back.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ANALYST INSIGHTS ===== -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN · Anish Anand <small>· prediction media</small></div>The Guadalajara home crowd will give Mexico a "12th man" boost, and Mexico will chase the win with high energy and physicality to lock up qualification; but he names <b>Hwang In-beom as Korea's X-factor</b> — the Round 1 MOTM with a goal and an assist could decide the game again in the space left by Mexico's midfield reshuffle (Álvarez dropping back).</div>
+    <div class="insight"><div class="who">Sports Mole / RotoWire <small>· tactics/predicted XI</small></div>Both converge on <b>Álvarez dropping back to fill in at center-back alongside Vásquez</b> to cover the Montes suspension; they see Mexico's defensive reshuffle + the 16-shots-4-on-target conversion ceiling as a twin entry point for Korea's positional play and counters.</div>
+    <div class="insight"><div class="who">Opta (Round 1 review)<small>· data</small></div>Korea's 468 completed passes vs Czechia were the most in a single World Cup match since 1966, with 1.84 xG — quantitative evidence that Korea's positional creativity has evolved, no longer the old "Son counters only" profile, and more threatening to the open space of a non-parked-bus Mexico.</div>
+    <div class="insight"><div class="who">Composite · totals and handicap signals <small>· tactical signal</small></div>Two teams who both want to win the top-spot clash → clear market disagreement on Over/Under 2.5, with the handicap focused on Mexico -0.5. The real suspense: can Mexico's rebuilt center-backs hold off Son/Oh Hyeon-gyu on the break, and can Mexico convert possession into goals (echoing their historical "lack of finishing" affliction).</div>
+  </section>
+
+  <!-- ===== OVERALL ASSESSMENT ===== -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment & Pending Items</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow Mexico win (1-0 / 2-1) or a draw (≈28%) is the base-case script — home + H2H + slightly more firepower give the edge, but this is far from an opener-style steamroller; a Korea win (≈26%) is a moderate probability, requiring central penetration from Hwang In-beom / Lee Kang-in to split open Mexico's rebuilt center-backs + Son/Oh Hyeon-gyu cashing in on the counter to happen at the same time (the Round 1 comeback over Czechia already proved Korea can do this).</li>
+      <li><b>Key men</b>: Jiménez (Mexico/finishing and set pieces), Quiñones (Mexico/one-on-one spark), Álvarez + Vásquez (Mexico/rebuilt center-back line), Son (Korea/counter and farewell motivation), Hwang In-beom + Lee Kang-in (Korea/twin-core central penetration), Kim Min-jae (Korea/aerial command and ball progression).</li>
+      <li><b>Deciders</b>: ① <b>can Mexico's rebuilt center-backs (Álvarez dropping back) hold off the transition threat of Son/Oh Hyeon-gyu</b> — decides the handicap (Mexico -0.5); ② <b>can Mexico's 16-shots-4-on-target conversion rate punish the soft spot in Korea's back-three recovery</b>; ③ two teams who both want to win make <b>totals (Over/Under 2.5) the market's biggest disagreement</b>.</li>
+      <li><b>Market view</b>: the Mexico-win price is mild (≈50%, no one-sided compression), 1X2 value is close to true probability with no "hosts premium" window; the most informative are <b>totals (split into two camps) and the handicap (Mexico -0.5)</b>. Overheating index 3/5 (heat from home emotion and the top-spot narrative, not money on the win line).</li>
+    </ul>
+    <div class="flag">⚠ <b>Pending items</b>: ① Mexico's specific reshuffled defensive XI (whether Álvarez drops back, the single-holding-midfielder choice); ② Korea's fitness after two back-to-back games and Lee Kang-in / Kim Min-jae's matchday condition; ③ both teams' official team sheets (around T-60); ④ Gustavo Tejera's specific card breakdown in his single 2024 Copa América match (Colombia vs Costa Rica) (no World Cup sample, as noted); ⑤ Kalshi/Polymarket single-match prices, contract volume and 30-day momentum for this game not publicly found; ⑥ Asian-line handicap (Mexico -0.5/+0.5) and the specific totals line odds subject to live pre-match prices.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — fixture/referee Tejera/predicted XI/things to watch</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html">Sports Mole — Mexico predicted XI after Montes suspension</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510">RotoWire — predicted XI/tactical analysis</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — preview/odds</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — prediction/odds</a><br>
+      • <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — elite expert</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — 8-1 bet builder</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — opening odds</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta — Korea Round 1 stats/468 passes</a> · <a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa">ESPN — Group A picture/H2H</a><br>
+      • <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — Tejera card data</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — Tejera profile</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">AP — Copa América 2024 Tejera officiating</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · data as of 2026-06-17 · charts use verified data, radar chart is an analyst composite assessment · for analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',KR='#cd2e3a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Mexico Win','Draw','Korea Win'],datasets:[{data:[50,28,26],backgroundColor:[MX,DR,KR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied Prob % (vig-removed)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[52,48],backgroundColor:[KR,MX],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied Prob % (market split, roughly even)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Mexico','South Korea','Czechia','South Africa'],datasets:[{data:[48,30,18,4],backgroundColor:[MX,KR,'#3b6fb0','#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Win-group implied probability % (illustrative)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive Solidity','Attacking Finishing','Midfield Control','Set Pieces','Individual Ceiling','Tournament Experience'],
+  datasets:[
+   {label:'Mexico',data:[6.5,6,7,7,7,7],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'South Korea',data:[6,6.5,7.5,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

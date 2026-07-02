@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 沙特阿拉伯 vs 乌拉圭 · 2026世界杯 H组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-saudiarabia-vs-uruguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-saudiarabia-vs-uruguay.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-saudiarabia-vs-uruguay.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-saudiarabia-vs-uruguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-saudiarabia-vs-uruguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#2a4d1a,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#122418,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-saudiarabia-vs-uruguay.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-saudiarabia-vs-uruguay.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-saudiarabia-vs-uruguay.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-1 · 2026 世界杯 · H组首轮 · 沙特摆五后卫先入球、乌拉圭 80' 扳平</span>
+  <h1>沙特阿拉伯 vs 乌拉圭</h1>
+  <div class="meta">2026年6月15日 · 迈阿密 Hard Rock Stadium · 18:00 ET · H组（同组：西班牙、佛得角）· 双方首场</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇸🇦 沙特阿拉伯</div><div class="rk">FIFA #61 · 新帅 Donis 执教仅约7周 · 2022年爆冷阿根廷</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇾 乌拉圭</div><div class="rk">FIFA #16 · 2次世界杯冠军 · Bielsa 强压逼抢</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 沙特 1-1 乌拉圭（半场 1-0 沙特）· 数据来源 Opta Analyst / Sofascore / ESPN · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">沙特先声夺人：第 <b>41 分钟</b> Mohamed Kanno 头球被门将扑出，<b>Abdulelah Al-Amri</b> 抢点补射破门（这是他国家队 <b>42 场</b>颗粒无收后的进球，上一球还要追溯到 2021 年首秀）。乌拉圭整个下半场狂攻，第 <b>80 分钟</b>边锋 <b>Maxi Araújo</b> 同样抓住门将脱手的二点球抢射扳平。两粒进球都来自门将扑救后的二点反应——终结的偶然性大于运动战创造力。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 41' Al-Amri（补射，沙特 1-0）→ HT 1-0 → 80' M. Araújo（补射，1-1）→ FT 1-1</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇸🇦 沙特</th><th style="padding:6px">🇺🇾 乌拉圭</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">33%</td><td style="text-align:center"><b>67%</b></td><td style="padding:6px;color:var(--mut)">乌拉圭控球创其 1966 年以来世界杯单场新高，却只换来 1 球</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">下半场射门</td><td style="text-align:center">少</td><td style="text-align:center"><b>22</b></td><td style="padding:6px;color:var(--mut)">乌拉圭下半场 22 射，追平 1974 年东德(24)以来世界杯单半场最多——量大质平</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">进球方式</td><td style="text-align:center">补射</td><td style="text-align:center">补射</td><td style="padding:6px;color:var(--mut)">两球均来自门将脱手二点，非阵地战渗透</td></tr>
+      <tr><td style="padding:6px">阵型</td><td style="text-align:center">五后卫低位</td><td style="text-align:center">高压控球</td><td style="padding:6px;color:var(--mut)">沙特执行了"摆大巴+伺机反击"的预设方案</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 沙特的低位五后卫真能困住强队</div>Donis 上任仅约 7 周，选择五后卫深蹲并靠定位球/二点搏冷——结果用一次角球后的混战取得领先。<b>这说明沙特</b>：在实力差面前会主动放弃球权、压缩空间，把胜负押在死球与门前反应上；后续对手须做好"控球 70% 却久攻不下"的心理准备。</div>
+    <div class="insight"><div class="who">② 乌拉圭破密集防守的终结力存疑</div>67% 控球、下半场 22 射只进 1 球，且进球还靠捡漏。<b>这说明乌拉圭</b>：Bielsa 体系能制造海量射门，但面对低位铁桶缺乏一击致命的中锋效率（Núñez 把握机会能力是长期隐患），对慢热的他们越往后越焦躁。</div>
+    <div class="insight"><div class="who">③ 中卫双缺反而没暴露——因为对手不进攻</div>赛前最大变量"Araújo+Giménez 双缺"几乎没被检验，沙特全场极少由运动战威胁球门，失球反而来自死球。<b>这说明</b>乌拉圭的后防漏洞被推迟到了下一个会主动进攻的对手身上。</div>
+    <div class="insight"><div class="who">④ 深蹲球队的"末段失血"老问题</div>沙特扛到 80' 才被扳平，体能临界点后二点保护松动。<b>这说明</b>低位防守球队的脆弱窗口集中在最后 15 分钟，是可复制的攻击时段。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>乌拉圭胜（去水 66%）→ 实际 1-1 平</b>：胜负判断未兑现，沙特低位方案奏效。</li>
+      <li>✓ <b>"乌控沙守、低开放度"修正基调兑现</b>：乌拉圭控球 67%、沙特摆大巴，正是赛前末段修正的剧本。</li>
+      <li>✓ <b>大小球偏小（线 2.5）</b>：全场 2 球，小球兑现。</li>
+      <li>△ <b>BTTS</b>：双方均破门，但都靠二点补射而非赛前设想的"乌打破密集防守"路径。</li>
+      <li>✓ <b>"沙特爆冷基因仍在"</b>：抢分搅局判断方向正确。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇺🇾 乌拉圭 → 6/21 vs 佛得角（迈阿密 18:00 ET）</div>下一对手佛得角刚用低位铁桶逼平西班牙——乌拉圭将<b>连续第二场面对深蹲密集防守</b>，破密集的终结效率必须提升；Araújo/Giménez 若回归，其定位球争顶反而是打破铁桶的现实武器。</div>
+      <div class="insight" style="margin:0"><div class="who">🇸🇦 沙特 → 6/21 vs 西班牙（亚特兰大 12:00 ET）</div>低位反击对西班牙仍是唯一现实路径，但西班牙单场 27 射的火力远超乌拉圭，沙特门将的<b>二点控制与扑救后保护</b>将被反复施压；末段失血的老问题须重点修补。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst（theanalyst.com）、Al Jazeera、ESPN、Bolavip。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>质量落差明显但并非毫无悬念</b>的小组赛：乌拉圭（FIFA #16、Bielsa 强压逼抢体系、拥有瓦尔韦德、努内斯等世界级球星）对阵沙特阿拉伯（FIFA #61、新帅 Georgios Donis 执教不足两月、2022年曾爆冷阿根廷的"黑马基因"队伍）。盘口清晰——乌拉圭胜赔 <b>1.43</b>（去水隐含 ≈66%），沙特胜赔 <b>7.50</b>（≈13%），平局 <b>4.50</b>（≈21%）。这场比赛最大的博弈不只是胜负——<b>乌拉圭两名首选中卫（阿劳霍+希门尼斯）很可能缺席</b>，后防漏洞给沙特进球留出现实窗口；大小球线压在 <b>2.5</b>，大球赔率 2.00、小球 1.83，市场认为这更可能是一场低分硬仗而非大比分横扫。基准剧本：<b>乌拉圭 1-0 或 2-0</b>，但沙特进球并非低概率事件。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">乌拉圭隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈66%</div></div>
+      <div class="key"><div class="k">沙特隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈13%</div></div>
+      <div class="key"><div class="k">大/小 2.5 球线</div><div class="v" style="color:var(--warn)">偏小</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>乌拉圭中卫双缺</b>：阿劳霍（腓肠肌伤）几乎确定首战缺席，希门尼斯（踝关节）状态待定——这是本场最关键的单一变量，直接影响乌拉圭失球风险。</li>
+      <li><b>沙特换帅"试磨期"</b>：Donis 在开赛前约7周才接手，体系磨合时间极短；沙特球员绝大多数来自国内联赛，阵容体系协同度是未知数。</li>
+      <li><b>大小 2.5 球才是市场分歧所在</b>：大球 2.00 / 小球 1.83，Opta 给乌拉圭进球 64.7% 胜率，市场倾向低分；实际能否破 2.5 取决于乌拉圭中锋终结效率与沙特防线的韧性。</li>
+      <li><b>沙特的"爆冷基因"</b>：2022年 2-1 击败阿根廷（彼时排名#1）已写入世界杯历史；Donis 若能快速凝聚团队斗志，被低估的沙特仍有搅局可能。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 赛前最新 · 乌拉圭后防 + 沙特新帅 · Yahoo / Rotowire / Sports Mole · 06-15</div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">乌拉圭后防告急升级——<b>Araújo</b> 与 <b>Giménez</b> 双双成疑、<b>de Arrascaeta</b> 带伤；沙特新帅 <b>Donis</b> 上任仅两个月</div>
+      <p style="font-size:13.5px">据 Yahoo Sports / Rotowire / Sports Mole，Bielsa 的两名主力中卫 Ronald Araújo、José María Giménez 均存出场疑问，组织核心 Giorgian de Arrascaeta 也带轻伤——若三人受限，乌拉圭中轴将被迫重组。预测首发：Muslera；Varela、Cáceres、Bueno、Olivera；Valverde、Ugarte、Bentancur、M. Araújo；Viñas、Núñez。沙特一方，主帅 Georgios Donis 于 4 月接替被解雇的 Hervé Renard、仅执教约两个月，体系磨合时间有限；门将 Nawaf Al Aqidi（肌肉伤）缺阵。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这把上午"乌中卫双缺 + BTTS 窗口"的判读进一步坐实——若 Araújo/Giménez 双缺，乌拉圭的防空与一对一对抗下滑，沙特的定位球和快速反击有了可乘之机，失球概率上升。但硬币另一面是沙特新帅 Donis 磨合不足、体系尚未成型，限制了其抓住机会的上限——因此"乌拉圭虽强但不轻松、平局/小胜不确定性升高"，而非冷门已成定局。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/saudi-arabia-vs-uruguay-predicted-053500353.html" style="color:var(--accent)">Yahoo Sports — 预测首发</a> · <a href="https://www.rotowire.com/soccer/article/saudi-arabia-vs-uruguay-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-118095" style="color:var(--accent)">Rotowire — 战术分析</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/saudi-arabia-vs-uruguay-prediction-team-news-lineups_599115.html" style="color:var(--accent)">Sports Mole — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">乌拉圭 · 中卫危机 <span style="color:var(--mut);font-weight:400">· 06-13 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Ronald Araujo</b>（巴塞罗那）几乎确定缺席首战；<b>Jose Gimenez</b>（马竞）状态存疑</div>
+      <p style="font-size:13.5px">乌拉圭队长、首选右中卫 Araujo 在世界杯开幕前训练中拉伤腓肠肌，队方声明已返回巴塞罗那接受治疗，目标是为6月22日对阵佛得角复出。ESPN 伤情追踪与 Sports Mole 均确认首战"极不可能上场"。Gimenez 此前遭遇严重踝关节扭伤（马竞主场5月受伤），近期有所恢复但仍在恢复评估中；若无缘首战，乌拉圭将以两名非一线中卫搭档出战。<span style="color:var(--warn)">[Gimenez 能否首战出场以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是本场最大的单一变量。乌拉圭是本届配置最均衡的南美球队之一，但中卫位置的双线缺失意味着面对沙特的定位球与反击时防线将明显暴露。沙特若能早进一球，比分走向与大小球结果将完全不同——"双方均能进球"的市场（约 2.10）正是建立在这条逻辑之上。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48572979/2026-fifa-world-cup-injuries-tracker-which-stars-miss-latest-info" style="color:var(--accent)">ESPN — 伤情追踪</a> · <a href="https://www.sportsmole.co.uk/football/saudi-arabia/world-cup-2026/predicted-lineups/injury-concerns-for-bielsa-how-uruguay-could-line-up-vs-saudi-arabia_599117.html" style="color:var(--accent)">Sports Mole — 乌拉圭首发预测/伤情</a> · <a href="https://sports.yahoo.com/articles/barcelona-star-ronald-araujo-suffers-081828998.html" style="color:var(--accent)">Yahoo Sports — Araujo 伤情声明</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">沙特 · 换帅震荡 + 阵容核心 <span style="color:var(--mut);font-weight:400">· 06-11 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">希腊籍主帅 <b>Georgios Donis</b> 赛前约7周接手；队长 <b>Salem Al-Dawsari</b>（34 球）领衔进攻</div>
+      <p style="font-size:13.5px">沙特在世界杯开幕前约56天解雇了 Herve Renard（3月热身赛惨败后），紧急任命此前执教沙特俱乐部 Al-Khaleej 的希腊籍教练 Georgios Donis。选材上高度依赖国内联赛球员（沙特职业联赛），唯一的海外球员亮点是效力罗马的右边后卫 Saud Abdulhamid。Saudi Gazette 报道 Donis 本人也表示希望球员能将联赛经验转化为世界杯表现。阵容核心：Salem Al-Dawsari（队长/进攻核心，国家队 34 球）、Al-Buraikan（中锋）、Abdulhamid（右后卫）。<span style="color:var(--warn)">[Nawaf Al-Aqidi 因肌肉伤缺席，首发门将待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：换帅如此仓促意味着战术体系磨合时间极短，沙特的开局可能出现阵型混乱或执行失误——反过来也意味着球员在"保家卫国+爆冷基因"的情绪驱动下可能超常发挥。Salem Al-Dawsari 的状态直接决定沙特能否形成有效反击；Abdulhamid 在右路的上下翻飞将是乌拉圭左翼的压力测试点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en-us/world-cup-teams/group-h/world-cup-2026-guide-saudi-arabia/O~blta4d1aa8150596e24" style="color:var(--accent)">Goal.com — 沙特世界杯指南</a> · <a href="https://english.alarabiya.net/sports/2026/04/28/who-is-new-saudi-arabia-coach-georgios-donis" style="color:var(--accent)">Al Arabiya — Donis 背景</a> · <a href="https://saudigazette.com.sa/article/662040/sports/donis-hopes-saudi-players-benefit-from-pro-league-boom-at-world-cup-2026" style="color:var(--accent)">Saudi Gazette — Donis 寄语</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">历史交锋 · 2018年世界杯 <span style="color:var(--mut);font-weight:400">· FIFA 记录</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">唯一一次世界杯交锋：2018年俄罗斯 D组，乌拉圭 <b>1-0</b> 胜沙特（Suarez 进球）</div>
+      <p style="font-size:13.5px">两队在世界杯上仅有一次正面交锋，即 2018年俄罗斯世界杯小组赛，乌拉圭凭借 Luis Suarez 的进球以 1-0 险胜。在该届赛事中，沙特最终在小组赛阶段出局。时隔8年，双方在 H 组再度相遇，但人员构成已完全不同——Suarez（已不在国家队）与当年的沙特核心球员基本已退出历史舞台。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：历史交锋样本太小（仅一场），对当下的参考价值有限。但这条数据揭示了一个一致性：乌拉圭在小组赛面对沙特时能够最终将优势转化为胜分，尽管胜球差仅为 1 球——与当前市场倾向低分（大小球压 2.5 偏小）的判断方向一致。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/saudi-arabia-vs-uruguay-prediction-team-news-lineups_599115.html" style="color:var(--accent)">Sports Mole — 前瞻/历史交锋</a> · <a href="https://www.espn.com/soccer/story/_/id/49050294/fifa-world-cup-2026-saudi-arabia-vs-uruguay-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 赛事资讯</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2418,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06121c">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 官方确认 · 双方 XI + 对照表 + 战术修正</span></h2>
+    <div class="sub" style="color:#7fd6a0">两队均已官宣（乌拉圭足协 @Uruguay、沙特足协 @SaudiNT_EN 官方推文，101GreatGoals / Bolavip 现场同步）——✅ 官方确认</div>
+
+    <h4>🇸🇦 沙特阿拉伯 官方首发（五后卫 · 5-3-2 / 3-5-2）</h4>
+    <div class="lineup">Al-Owais; Al-Amri · Al-Tambakti · Abdulhamid · Al-Harbi · Abu Al-Shamat; Al-Khaibari · Kanno · Al-Juwayr; Al-Buraikan · S.Al-Dawsari(C)</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：Mandash（创造型中场，预测热门却落选首发）· Saleh Al-Shehri / Abdullah Al-Hamdan（替补前锋）· Al-Ghannam · Al-Aqidi（伤愈门将仍坐替补）</div>
+
+    <h4>🇺🇾 乌拉圭 官方首发（4-4-2）</h4>
+    <div class="lineup">Muslera; Cáceres · Varela · Olivera · Viña; Ugarte · Bentancur · Valverde(C) · M.Araujo; Núñez · Viñas</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：J.Giménez（首选中卫，脚踝伤仅替补）· Rochet（次门将）· De la Cruz · Pellistri · Canobbio · Sanabria。退出大名单：R.Araujo（小腿伤）、De Arrascaeta（小腿伤）；Suárez 未入选。</div>
+
+    <h4 style="margin-top:20px">vs 预测首发对照表</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">沙特·阵型</td><td>4-2-3-1（进攻型）</td><td>5-3-2 五后卫（Abu Al-Shamat 入防线）</td><td>Donis（执教仅 7 周）明显摆守势，放弃进攻型站位，压缩乌拉圭中路空间、靠双前锋反击</td></tr>
+      <tr><td class="ht">沙特·中前场</td><td>Mandash / N.Al-Dawsari / Al-Ghannam 先发</td><td>三人全部替补，改用 Al-Khaibari</td><td>牺牲创造力换拦截与防守人数，进一步坐实低位防守意图</td></tr>
+      <tr><td class="ht">沙特·Salem</td><td>前腰</td><td>第二前锋（与 Al-Buraikan 双箭头）</td><td>Salem 前移成反击直插点，定位球主罚不变</td></tr>
+      <tr><td class="ht">沙特·门将</td><td>Al-Aqidi 伤，替代待核</td><td>Al-Owais 先发</td><td>与本页预判一致，无意外</td></tr>
+      <tr><td class="sc">乌·R.Araujo</td><td>带"?"或先发</td><td>退出大名单（小腿伤）</td><td>"中卫危机"主线落地——最大隐忧成真</td></tr>
+      <tr><td class="sc">乌·Giménez</td><td>状态存疑</td><td>替补（脚踝）</td><td>两名首选中卫同时不首发，后防被迫重组</td></tr>
+      <tr><td class="sc">乌·后防补位</td><td>Sanabria + R.Araujo</td><td>Cáceres（头伤已过关）+ Olivera 客串中卫，Viña（肌肉伤已过关）先发</td><td>临时中卫组合经验/默契不足，转身与协防是软肋</td></tr>
+      <tr><td class="sc">乌·门将</td><td>Muslera</td><td>Muslera 确认（媒体曾传 Rochet）</td><td>与本页预测一致，GK 悬念落定</td></tr>
+      <tr><td class="sc">乌·中前场</td><td>Valverde/Bentancur/Ugarte/M.Araujo + Núñez/Viñas</td><td>11/11 一致</td><td>计划 A 执行——乌拉圭中前场无变化</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">战术解读</h4>
+    <div class="insight"><div class="who">① 阵型信号 <small>沙特变五后卫</small></div>沙特把预测的 4-2-3-1 改成五后卫（Abu Al-Shamat 入防线、Mandash 与 N.Al-Dawsari 同坐板凳）。新帅 Donis 执教仅约 7 周，选择"先求稳、靠 Salem/Al-Buraikan 反击"的低风险方案——速览结论中"沙特低位防守、伺机搏冷"得到<b>强化（维持）</b>。</div>
+    <div class="insight"><div class="who">② 关键对位 <small>乌临时中卫 vs Núñez</small></div>乌拉圭两名首选中卫 R.Araujo（退出名单）+ Giménez（替补）双双缺席首发，临时中卫为 Cáceres（刚过头部伤关）与天然左后卫客串的 Olivera。Núñez 的速度与高空冲击直接瞄准这条临时防线，但沙特摆五后卫、反击人数有限——乌中卫承压更多来自被反击瞬间的转身协防，而非持续围攻。</div>
+    <div class="insight"><div class="who">③ 中场博弈 <small>切断通往 Valverde 的线路</small></div>沙特换上拦截属性更强的 Al-Khaibari、牺牲创造型 Mandash，意在封堵传向 Valverde 的线路、打乱乌拉圭中路推进，迫使其更多走边路（M.Araujo / Varela 一侧）。</div>
+    <div class="insight"><div class="who">④ 速览结论修正 <small>对攻/BTTS → 低开放度</small></div>原"BTTS 窗口 / 强强对攻"基调需<b>下调</b>：沙特摆五后卫求稳，本场更可能是"乌拉圭控球压制 + 沙特摆大巴"的低开放度比赛，进球更可能来自定位球或乌拉圭打破密集防守，而非双方对攻。</div>
+    <div class="insight"><div class="who">⑤ 综合结论</div>速览主线"乌拉圭实力压制、沙特靠 Salem 反击搏冷"<b>维持</b>；但"对攻 / BTTS"基调<b>修正</b>为"低开放度、乌控沙守"，需警惕乌拉圭临时中卫被快速反击瞬间的风险。</div>
+
+    <div class="note">市场反应：运行时未检得首发公布后的独立盘口移动数据（可得才报）。从结构看，沙特摆出五后卫通常利于小球/降低进球预期，但此为结构推断，非已证实的盘口变动——以实际开盘为准，不构成投注建议。</div>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://www.101greatgoals.com/football/world-cup-news/world-cup-2026-live-saudi-arabia-vs-uruguay-teams-line-ups-tv-channel-live-online-stream/">101GreatGoals — 双方官方首发（引足协官推 @Uruguay / @SaudiNT_EN）</a> · <a href="https://bolavip.com/en/world-cup/saudi-arabia-vs-uruguay-live-2026-world-cup-game-in-miami">Bolavip US — 现场直播（乌拉圭官宣 XI）</a> · <a href="https://www.si.com/soccer/saudi-arabia-vs-uruguay-world-cup-preview-predictions-lineups-6-15-26">Sports Illustrated — 首发</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · H组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>H 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇸🇦 沙特阿拉伯</th><th>🇺🇾 乌拉圭</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#61</td><td class="sc">#16</td></tr>
+      <tr><td>世界杯史</td><td class="ht">6届；2022年爆冷阿根廷 2-1</td><td class="sc">2次冠军（1930/1950）；近年稳定出线</td></tr>
+      <tr><td>近期亮点</td><td class="ht">2022年击败阿根廷；但预选赛仅靠附加赛晋级</td><td class="sc">FIFA #16；Bielsa 体系成熟；南美预选赛优异</td></tr>
+      <tr><td>主教练</td><td class="ht">Georgios Donis（希腊籍；任职约7周）</td><td class="sc">Marcelo Bielsa（阿根廷名帅；强压逼抢）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 7.50（隐含≈13%）</td><td class="sc">胜 1.43（≈66%）· 平 4.50（≈21%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 @ 2.00 / 小 2.5 @ 1.83 —— 市场偏向低分硬仗</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">2018年世界杯：乌拉圭 1-0 沙特（Suarez）</td></tr>
+      <tr><td>关键伤情</td><td class="ht">Al-Aqidi 缺席（肌肉伤）</td><td class="sc">Araujo 几乎确定缺席；Gimenez 存疑 [待核]</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈66/21/13）。乌拉圭是明显强队，但排名差距（#16 vs #61）不像德国vs库拉索那样极端——这是一场"较弱但有竞争力的对手可能得分"的常规组赛；Opta 超算给出乌拉圭 64.7% 胜率、沙特 13.9%，与博彩市场高度吻合。大小球线 2.5 而非更高，说明市场预判双方均难以大规模得分。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家聚合 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">胜负有明确偏向，但并非毫无悬念；两队均有进球的市场（BTTS）吸引了显著资金关注</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 乌拉圭压倒性共识但伤情制造不确定性</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">胜负方向上共识较强（≈66% 乌拉圭），但乌拉圭中卫缺阵带来的伤情溢价，让 BTTS（双方均进球 ≈2.10）和沙特让球盘（+1.5 约 1.52）出现了真实的资金流入。不是情绪炒作，是结构性不确定性驱动的真实分歧。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：乌拉圭胜 全部 · 沙特 0 · 平 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>乌拉圭胜</b>；预测比分 2-0 或 1-0</td></tr>
+      <tr><td>Opta Analyst / 超算</td><td>数据模型</td><td>乌拉圭 64.7% 胜率；沙特 13.9%；平 21.4%</td></tr>
+      <tr><td>Football Whispers</td><td>分析媒体</td><td>乌拉圭胜 @ 1.44；同时看好 BTTS（双方均进球）@ 2.10</td></tr>
+      <tr><td>SportsLine 专家 Martin Green</td><td>美系投注媒体</td><td>倾向大 2.5 球（Over）；认为乌拉圭进攻与沙特均可能得分</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>乌拉圭胜；认为中场控制与压迫是决定因素</td></tr>
+      <tr><td>ChatGPT / NYSportsDay</td><td>AI 分析面板</td><td>乌拉圭胜；沙特 +1.5 让球盘覆盖建议；关注 BTTS 价值</td></tr>
+    </table>
+    <div class="flag">⚠ <b>信号解读</b>：0 信源押沙特直赢，但多家媒体强调沙特"不会空手而归"——Football Whispers 明确看好 BTTS，SportsLine 倾向大球，意味着市场对"沙特进球"的评价远高于"沙特赢球"。这是一场典型的"强队赢但可能不干净"的比赛，过热指数 3/5 中等，伤情驱动而非情绪炒作。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL，主要博彩综合）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>乌拉圭胜</th><th>平局</th><th>沙特胜</th><th>解读</th></tr>
+      <tr><td>初开档</td><td>综合均值</td><td class="sc">≈1.40–1.44</td><td>≈4.33–4.50</td><td class="ht">≈7.00–7.50</td><td>Araujo 伤情公布前较硬；伤情出来后沙特赔率略有收窄</td></tr>
+      <tr><td>赛前（06-14）</td><td>FanDuel / bet365 综合</td><td class="sc"><b>1.43</b></td><td><b>4.50</b></td><td class="ht"><b>7.50</b></td><td>稳定；中卫伤情未引发大幅移动但 BTTS 市场明显活跃</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td>主流博彩</td><td colspan="3" class="sc">大 2.5 @ <b>2.00</b> / 小 2.5 @ <b>1.83</b></td><td>市场偏向小球（低分硬仗），但大球赔率合理</td></tr>
+    </table>
+    <div class="note">📌 <b>亚盘（Asian Handicap）参考</b>：沙特 +1.5 让球盘（ChatGPT 分析建议；线非赔率，保留原值）意味着沙特不能以超过 1 球差落败即赢盘——结合乌拉圭 2018 年仅 1-0 赢沙特的历史，这条线有市场关注度。去水后大球隐含概率约 48%、小球约 52%，差距很小，说明总分市场真实分歧显著。<span style="color:var(--warn)">亚盘确切赔率未获独立核实 [待核]</span></div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：乌拉圭约 68%、平约 21%、沙特约 12%——与博彩去水概率（66/21/13）高度一致，两池之间无温差，定价已收敛。</li>
+      <li><b>Polymarket</b>：本场单独数据未检得（<b>待核</b>）；预计与 Kalshi 方向一致。</li>
+      <li><b>舆论</b>：媒体叙事集中在"Bielsa 的乌拉圭能否在后防破损情况下兑现强队身份"与"沙特能否复刻 2022年爆冷奇迹"两条线上；社交媒体对乌拉圭伤情反应活跃，情绪上对 BTTS 和沙特让球盘有正向推动，但尚未形成单边异动。</li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：市场给乌拉圭 ≈66% 胜率，Opta 给 64.7%——两者完全收敛，说明定价合理，无明显情绪溢价。真正有分歧的是<b>大/小 2.5 球</b>（近五五开）与 <b>BTTS</b>（双方均进球 ≈2.10）：这两个市场的分歧根源都指向乌拉圭中卫缺阵。过热指数 <b>3/5</b>，属于中等关注度。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/saudi-arabia-vs-uruguay-prediction-team-news-lineups_599115.html">Sports Mole — 前瞻</a> · <a href="https://theanalyst.com/articles/saudi-arabia-vs-uruguay-prediction-world-cup-2026-match-preview">Opta Analyst — 超算</a> · <a href="https://footballwhispers.com/blog/saudi-arabia-vs-uruguay-prediction-betting-tips-preview-world-cup-2026/">Football Whispers</a> · <a href="https://www.sportsline.com/insiders/uruguay-vs-saudi-arabia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Martin Green</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-saudi-arabia-vs-uruguay-06-15-26-world-cup-2026/">Squawka</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-saudi-arabia-vs-uruguay-predictions-world-cup-2026/">NYSportsDay AI 面板</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">乌拉圭高压逼抢带来更多边路机会；沙特低位防守的解围方式将影响角球总数</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇸🇦 沙特阿拉伯</th><th>🇺🇾 乌拉圭</th><th>含义</th></tr>
+      <tr><td>进攻侧重</td><td class="ht">Salem Al-Dawsari 边路突破；反击为主</td><td class="sc">高压逼抢 + 边路强攻；Valverde 中路打穿</td><td>乌拉圭是持球方，角球产出更稳定</td></tr>
+      <tr><td>防守方式</td><td class="ht">低位密集块；频繁解围出底线</td><td class="sc">高线逼抢；失球场景相对少</td><td>沙特解围出底线 → 乌拉圭角球来源</td></tr>
+      <tr><td>定位球能力</td><td class="ht">较低 <span style="color:var(--warn)">待核</span></td><td class="sc">中上；Valverde / Bentancur 定位球输送</td><td>乌拉圭角球转化威胁更大</td></tr>
+      <tr><td>预计角球分布</td><td class="ht">约 3–5 个 <span style="color:var(--warn)">待核</span></td><td class="sc">约 5–7 个 <span style="color:var(--warn)">待核</span></td><td>预计总数 8–12，但非大比分情形角球有限</td></tr>
+    </table>
+    <h4>② 技术面研判</h4>
+    <div class="insight"><div class="who">大/小球（角球总数）</div>与德国 vs 弱旅不同，这场比赛预计不会出现持续单边强攻；沙特若摆低位成功，乌拉圭将更多选择中路渗透而非强行下底——角球产出有限。反之若乌拉圭早早领先开始换档加速，角球数会上涨。总体倾向：<b>角球总数中等，约 8–10，大 9.5 线（若有）接近合理定价</b>。<span style="color:var(--warn)">确切角球盘口未独立核实 [待核]</span></div>
+    <div class="insight"><div class="who">让分（角球让球）</div>乌拉圭在角球数量上预计占优，但沙特防线的解围效率与乌拉圭的终结选择会影响净差。若乌拉圭早进球后放缓攻势，角球净差可能收窄。<b>乌拉圭 -2 / -3 的角球让分是合理预判区间</b>，但以赛中实际数据为准。<span style="color:var(--warn)">待核</span></div>
+    <div class="note">仅供分析参考，非投注建议。角球数据来源有限，上述分析基于打法画像推演，以官方博彩发布盘口为准。</div>
+  </section>
+
+  <!-- 当值裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：主裁 <b>Maurizio Mariani</b>（意大利，国际级 Serie A 资深主裁）执法本场；助理裁判：Daniele Bindoni、Alberto Tegoni（均为意大利籍）；第四官员：Drew Fischer（加拿大）。<b>值得一提的颜色细节</b>：本场裁判组将身着"火烈鸟粉"（flamingo pink）球衣，以致敬主办城市迈阿密（ESPN 报道）。2025/26赛季场均黄牌 3.95 张、红牌 0.14 张、点球 0.24 个（9赛季均值）。Serie A 裁判通常对战术犯规管理细致、牌量中等偏上（场均约 4.1 张总牌）；具体大赛尺度样本有限。与两队均无可查特殊执法历史。<span style="color:var(--warn)">本届世界杯执法样本为零、具体大赛尺度 [待核]</span></div>
+    <div class="flag">⚠ <b>两面看</b>：Mariani 的出牌均值（约 4.1/场）高于欧洲平均水平，在这场预计对抗激烈的比赛中，沙特后卫若采取犯规拖延战术，黄牌与点球概率相对偏高。但世界杯裁判通常比联赛更保守出牌——联赛数据参考意义有限。乌拉圭进攻压力与沙特低位防守的组合，可能在禁区前沿制造较多犯规。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：沙特若试图用门将持球拖延时间，工具受限——在落后时尤为被动。</li>
+      <li><b>仅队长可与裁判沟通</b>：Salem Al-Dawsari（沙特）、Federico Valverde（乌拉圭）各自作为沟通代表。</li>
+      <li><b>半自动越位</b>：乌拉圭高压线路下的边路越位判决将更快、更准——对进攻侧有一定帮助。</li>
+    </ul>
+    <div class="src" style="margin-top:8px">来源：<a href="https://www.espn.com/soccer/story/_/id/49050294/fifa-world-cup-2026-saudi-arabia-vs-uruguay-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判官宣</a> · <a href="https://www.ysscores.com/en/news/13982391/everything-you-need-to-know-about-the-saudi-arabia-vs-uruguay-world-cup-match-referee" style="color:var(--accent)">YSScores — 裁判详情</a> · <a href="https://corner-stats.com/maurizio-mariani/italy/referee/832" style="color:var(--accent)">Corner-Stats — Mariani 数据</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span class="tag" style="font-size:11px;font-weight:600;color:#7fd6a0;border:1px solid #1d4a2a;border-radius:6px;padding:2px 8px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇸🇦 沙特阿拉伯 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Al-Aqidi 替补门将; Abdulhamid · Al-Tambakti · Al-Amri · Al-Harbi; Kanno · N.Al-Dawsari; Al-Ghannam · Al-Juwayr · S.Al-Dawsari(C); Al-Buraikan</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Salem Al-Dawsari (C)</td><td>前腰/左边 / 吉达联合</td><td>队长；国家队 34 球；进攻核心与定位球主罚</td></tr>
+      <tr><td class="ht">Saud Abdulhamid</td><td>右后卫 / 罗马</td><td>唯一主力欧洲联赛球员；右路边路强大的上下翻飞</td></tr>
+      <tr><td class="ht">Firas Al-Buraikan</td><td>中锋 / 沙特联赛</td><td>本土联赛高效终结点；依赖 Salem 的输送</td></tr>
+      <tr><td class="ht">Nasser Al-Dawsari</td><td>中场 / 沙特联赛</td><td>Salem 的中场搭档；防守与过渡球的枢纽</td></tr>
+    </table>
+    <div class="note">⚠ <b>门将注意</b>：首选门将 Nawaf Al-Aqidi 因肌肉伤缺席，替代门将名单以官方公布为准 [待核]</div>
+    <h4>🇺🇾 乌拉圭 预测首发（4-4-2 / 4-2-3-1）</h4>
+    <div class="lineup">Muslera; Sanabria · Olivera · R.Araujo(?) · Varela; M.Araujo · Bentancur · Ugarte · Valverde(C); Nunez · Vinas</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Federico Valverde (C)</td><td>中场 / 皇家马德里</td><td>队长；世界顶级中场；跑动覆盖与前插是乌拉圭的发动机</td></tr>
+      <tr><td class="sc">Darwin Nunez</td><td>前锋 / 利物浦</td><td>主要终结点；速度与冲击力是对付沙特低位防线的利器</td></tr>
+      <tr><td class="sc">Rodrigo Bentancur</td><td>中场 / 热刺</td><td>中场平衡者；防守覆盖弥补 Valverde 前插空档</td></tr>
+      <tr><td class="sc">Fernando Muslera</td><td>门将 / 加拉塔萨雷</td><td>老将门将；经验丰富；在后防破损情况下承压增大</td></tr>
+    </table>
+    <div class="note">名单注：Ronald Araujo 几乎确定缺席；Jose Gimenez 状态存疑；若双双缺阵，后防将由 Olivera 与 Varela（均非传统中卫）搭档临时补位——这是乌拉圭首战最大的不确定性。<b>以赛前官方名单为准</b>。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇸🇦 沙特 · Georgios Donis</div>
+        <div class="role">4-2-3-1 低位防守 + Salem 主导反击</div>
+        <ul class="cl">
+          <li>执教仅约7周，战术体系磨合时间极短；前任 Renard 的防守遗产（2022年爆冷阿根廷的坚实低位块）仍是参考模板。</li>
+          <li>Salem Al-Dawsari 是进攻唯一的亮点核心，沙特战术思路：先防稳、再伺机通过 Abdulhamid 右路或 Salem 定位球制造威胁。</li>
+          <li>风险：换帅后体系不稳定，乌拉圭高压逼抢下中后场出球可能频繁失误，导致高位失球。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇾 乌拉圭 · Marcelo Bielsa</div>
+        <div class="role">4-4-2 / 4-2-3-1 高压逼抢 + Valverde 作为核心引擎</div>
+        <ul class="cl">
+          <li>Bielsa 的强压体系要求极高的跑动量与阵型纪律——这套体系让乌拉圭在南美预选赛中表现出色。</li>
+          <li>Valverde + Ugarte + Bentancur 的中场组合，在覆盖面积与对抗能力上远超沙特对位球员。</li>
+          <li>风险：中卫双缺让后防线承受极大压力——Bielsa 的高压战术本身就需要后防高位推进，若沙特打出反击，空档将被直接利用。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Football Whispers <small>· 英系分析媒体</small></div>"乌拉圭是明显更好的一支球队，但中卫双缺让这场比赛不再是单方面的碾压"——明确将 <b>BTTS（双方均进球）</b> @ 2.10 列为有价值的分析角度，认为沙特的进球概率被市场低估。</div>
+    <div class="insight"><div class="who">SportsLine · Martin Green <small>· 美系投注媒体</small></div>倾向大 2.5 球（Over）：认为乌拉圭进攻端拥有世界级选手（Nunez、Valverde），而沙特同样有能力在乌拉圭后防漏洞中得分——双方均有进球的条件并存。</div>
+    <div class="insight"><div class="who">Opta 超算 <small>· 数据模型</small></div>乌拉圭 64.7% 胜率，沙特 13.9%，平局 21.4%——与博彩去水概率（66/21/13）几乎完全一致，说明市场定价已经充分反映了各方信息，无明显可利用的定价偏差。</div>
+    <div class="insight"><div class="who">综合 · 沙特侧画像 <small>· 战术信号</small></div>沙特不是来"凑数"的——2022年 2-1 击败阿根廷已经证明了这一点。这支球队的核心优势不是技术，而是<b>情绪驱动的战术纪律</b>：当全队相信"爆冷可以发生"时，防守强度与拼抢意志往往超出统计模型的预估。Donis 能否在7周内重建这种集体认同，是沙特能否干扰乌拉圭的最大变量。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：乌拉圭获胜是基准（≈66%），但路径可能崎岖——1-0 或 2-0 是最可能的比分区间；沙特在中卫缺阵的乌拉圭后防上有现实的进球窗口（进球概率约 35–40% [待核]）。</li>
+      <li><b>关键先生</b>：Valverde（乌/中场引擎）、Nunez（乌/终结）、Salem Al-Dawsari（沙/进攻组织）、Abdulhamid（沙/边路冲击）。</li>
+      <li><b>最大变量</b>：Gimenez 是否出战——他的存在与否直接决定乌拉圭的失球风险区间，进而影响大/小球和 BTTS 两个市场的走向。</li>
+      <li><b>市场视角</b>：博彩与 Opta/Kalshi 完全收敛（≈66%），无情绪溢价；大/小 2.5 球近五五开（大球 48% / 小球 52% 去水），BTTS ≈2.10——这两个市场才是真正有分歧和信息含量的地方。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Gimenez 首战状态（踝伤恢复进度）以赛前官方名单为准；② 沙特替代门将（Al-Aqidi 缺席后首发名单）待确认；③ 两队预测首发均为媒体分析推测，非官方；④ Mariani 在本届世界杯无执法样本，联赛数据外推参考价值有限；⑤ 亚盘（Asian Handicap）确切赔率未独立核实；⑥ Polymarket 单场价格与成交量未检得；⑦ 沙特球员角球/定位球具体数据未获量化来源。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49050294/fifa-world-cup-2026-saudi-arabia-vs-uruguay-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛事资讯/裁判/首发预测</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/saudi-arabia-vs-uruguay-prediction-team-news-lineups_599115.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/saudi-arabia/world-cup-2026/predicted-lineups/injury-concerns-for-bielsa-how-uruguay-could-line-up-vs-saudi-arabia_599117.html">Sports Mole — 乌拉圭首发/伤情</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/predicted-lineups/salem-al-dawsari-to-lead-the-charge-how-saudi-arabia-could-line-up-vs-uruguay_599118.html">Sports Mole — 沙特首发</a><br>
+      • <a href="https://theanalyst.com/articles/saudi-arabia-vs-uruguay-prediction-world-cup-2026-match-preview">Opta Analyst — 超算概率</a> · <a href="https://footballwhispers.com/blog/saudi-arabia-vs-uruguay-prediction-betting-tips-preview-world-cup-2026/">Football Whispers — BTTS 分析</a> · <a href="https://www.sportsline.com/insiders/uruguay-vs-saudi-arabia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Martin Green</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-saudi-arabia-vs-uruguay-06-15-26-world-cup-2026/">Squawka</a><br>
+      • <a href="https://sports.yahoo.com/articles/barcelona-star-ronald-araujo-suffers-081828998.html">Yahoo Sports — Araujo 伤情</a> · <a href="https://www.espn.com/soccer/story/_/id/48572979/2026-fifa-world-cup-injuries-tracker-which-stars-miss-latest-info">ESPN — 伤情追踪</a> · <a href="https://english.alarabiya.net/sports/2026/04/28/who-is-new-saudi-arabia-coach-georgios-donis">Al Arabiya — Donis 背景</a> · <a href="https://saudigazette.com.sa/article/662040/sports/donis-hopes-saudi-players-benefit-from-pro-league-boom-at-world-cup-2026">Saudi Gazette — Donis 寄语</a><br>
+      • <a href="https://www.ysscores.com/en/news/13982391/everything-you-need-to-know-about-the-saudi-arabia-vs-uruguay-world-cup-match-referee">YSScores — 裁判</a> · <a href="https://corner-stats.com/maurizio-mariani/italy/referee/832">Corner-Stats — Mariani</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-saudi-arabia-vs-uruguay-predictions-world-cup-2026/">NYSportsDay — AI 面板</a> · <a href="https://www.rotowire.com/soccer/article/saudi-arabia-vs-uruguay-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-118095">RotoWire — 战术分析</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['乌拉圭胜','平局','沙特胜'],datasets:[{data:[66,21,13],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，近五五开）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['乌拉圭','佛得角','沙特','西班牙'],datasets:[{data:[16,60,61,6],backgroundColor:[SC,'#16a34a',HT,'#f59e0b'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'沙特',data:[6.5,5.5,5,5.5,5,6],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'乌拉圭',data:[6,7.5,8,7,8.5,8],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

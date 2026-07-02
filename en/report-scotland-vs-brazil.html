@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Scotland vs Brazil · 2026 World Cup Group C Final Round (Scotland's last stand)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-scotland-vs-brazil.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#005eb8;--sc:#ffdf00;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a4f9c,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0e1f2a,#1a1c10);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fb3ec;font-weight:600}td.sc{color:#f0d869;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group C Final Round · Scotland's last stand vs an all-but-qualified Brazil</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Scotland 0-3 Brazil</span>
+  <h1>Scotland vs Brazil</h1>
+  <div class="meta">24 June 2026 · Miami, Hard Rock Stadium · 18:00 ET · Group C (also in group: Morocco, Haiti) · Final round (simultaneous: Morocco vs Haiti)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</div><div class="rk">1-0 Haiti + 0-1 Morocco · 3 points (GD 0) · must win for any qualification chance · never out of a group in 12 major tournaments</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0d869">🇧🇷 Brazil</div><div class="rk">1-1 Morocco + 3-0 Haiti · 4 points (GD +3) · all but qualified, chasing top spot · never historically lost to Scotland</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-25) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Scotland 0-3 Brazil (HT around 0-2) · 06-24</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Miami's Hard Rock: Brazil were in complete control and Scotland's World Cup qualification dream took a heavy blow. <b>Vinícius Júnior scored a brace</b> and <b>Matheus Cunha</b> sealed it on the hour (60th minute). Brazil racked up <b>2.78 xG in the first half alone — the highest single half this tournament</b>. Brazil advanced as group winners to the Round of 32; Scotland on 3 points finished 3rd in Group C, their qualification dependent on the best-third-placed ranking (still, after 12 major tournaments, unable to confirm a first-ever group exit).</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ Vinícius ×2 · 60' Cunha｜Brazil first-half 2.78 xG (highest single half this tournament) · Vinícius 8 shots on target</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta / Sofascore)</h4>
+    <table>
+      <tr><th>Metric</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</th><th>🇧🇷 Brazil</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td>46%</td><td><b>54%</b></td><td>Brazil had possession dominance but not extreme — the real gap was in threat creation, not possession</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td>1.13</td><td><b>4.46</b></td><td>4.46 xG (including a first half of 2.78, the highest single half this tournament) — this was a genuine positional rout, dispelling the concern about breaking down packed defences</td></tr>
+      <tr><td class="ht">Shots / on target</td><td>14 / 5</td><td><b>21 / 9</b></td><td>21 shots, 9 on target, all-round domination, and the shots were pushed into high-quality zones</td></tr>
+      <tr><td class="ht">Big chances / through-balls</td><td>2 / 0</td><td><b>6 / 3</b></td><td>6 big chances, 3 successful through-balls — Brazil's penetration and vertical passing finally opened up this match</td></tr>
+      <tr><td class="ht">Vinícius individual</td><td colspan="2"><b>12 shots, 8 on target · 5 chances created · brace + assist</b></td><td>The left-side breakthrough point fully exploded, the matchwinner</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://theanalyst.com/articles/scotland-vs-brazil-stats-world-cup-2026">Opta Analyst — Scotland 0-3 Brazil Stats</a> · <a href="https://www.sofascore.com/news/brazil-3-0-scotland-vinicius-jr-shines-in-group-c">Sofascore</a> · <a href="https://www.espn.com/soccer/story/_/id/49167442/scotland-0-3-brazil-vinicius-junior-leaves-tartan-army-2026-world-cup-hopes-serious-jeopardy-miami">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">The packed-defence concern was dispelled — this is Brazil's true ceiling</div>4.46 xG, 21 shots, 6 big chances, 3 successful through-balls, with a first-half 2.78 xG the highest single half this tournament. <b>This shows the earlier problem of "possession dominance but inefficiency" against Morocco/Haiti was solved this match against Scotland's low block via vertical through-balls and wide breakthroughs</b> — Brazil proved they can solve a positional puzzle, and their knockout threat rises sharply.</div>
+    <div class="insight"><div class="who">Vinícius is the undisputed matchwinner</div>12 shots, 8 on target, 5 chances created, a brace + assist. <b>This shows that as long as Vinícius is given the vertical space against a deep line, he is Brazil's most reliable and most lethal opening point</b> — the primary target to shut down in the knockouts, but the cost of containing him is extremely high.</div>
+    <div class="insight"><div class="who">Cunha continues to answer the centre-forward question</div>Sealed it in the 60th minute. <b>This shows the rotation of Cunha at centre-forward keeps working</b>, and Brazil's attack now has a second reliable finisher beyond Vinícius.</div>
+    <div class="insight"><div class="who">Scotland's 12-major-tournament curse remains unbroken</div>1.13 xG, suppressed, losing to a Brazil they have never beaten. <b>This shows Scotland lack means to limit top-tier individual quality</b>, and their qualification fate is forced onto the best-third-placed ranking.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Notes</th></tr>
+      <tr><td class="ht">Brazil win (implied ≈70%)</td><td style="color:var(--good)"><b>✓ Delivered (and dominantly)</b></td><td>3-0 comprehensive win, stronger than the base "controlled narrow win" scenario</td></tr>
+      <tr><td class="ht">Base "Brazil narrow/controlled win"</td><td style="color:var(--warn)"><b>~ Underestimated the level of domination</b></td><td>4.46 xG, 21 shots was a rout not a narrow win — the feared "conservative rotation" did not drag down the display</td></tr>
+      <tr><td class="ht">Raphinha's absence weakens the deep-block-breaking ceiling</td><td style="color:var(--bad)"><b>✗ Did not play out</b></td><td>Vinícius single-handedly carried the breakthrough, the ceiling rose rather than fell</td></tr>
+      <tr><td class="ht">Over/Under 2.5</td><td style="color:var(--good)"><b>✓ Went Over</b></td><td>3 goals, over the 2.5 line</td></tr>
+      <tr><td class="ht">Market heat 2/5</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>The one-sided consensus validated, no upset</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#3fae6a">🇧🇷 Brazil · Advance to the Round of 32 (Group C winners)</h4>
+        <ul class="watch">
+          <li><b>Advance as Group C winners, facing the Group F runners-up from 6/28</b> (per the format of C winners vs F runners-up).</li>
+          <li><b>Positional problem-solving delivered this match</b>: 4.46 xG, 3 successful through-balls, the packed-defence concern dispelled — top-tier knockout threat.</li>
+          <li><b>Vinícius is the most repeatable opening point</b>, but he will be heavily marked, so Cunha/Raphinha (once fit) need to share the load.</li>
+          <li><b>Raphinha's injury still needs tracking</b>: Brazil dominated even without him this match, but restoring his wide depth is better for the knockouts.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland · 3rd in Group C · qualification pending the best-third-placed ranking</h4>
+        <ul class="watch">
+          <li><b>3rd in the group on 3 points</b>: whether they finally reach a first major-tournament group exit depends on the comparison of best third-placed teams across groups.</li>
+          <li><b>Lacking means to limit top-tier individual quality</b>: powerless against a Vinícius-style spark, they must address defensive targeting if they advance.</li>
+          <li><b>Attacking poverty (1.13 xG)</b>: even backs to the wall they struggled to create a threat; lacking a finishing point is a long-term weakness.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a Group C final round, an <b>"asymmetric motivation" duel</b>: Brazil on 4 points (1-1 draw vs Morocco + 3-0 win vs Haiti, GD +3) are <b>all but qualified, the goal being to fight for top spot</b>; Scotland on 3 points (1-0 win vs Haiti + 0-1 loss vs Morocco, GD 0) <b>must beat Brazil for any qualification chance</b>, and still need to watch the simultaneous Morocco-Haiti result. The historical dimension is deeply unfriendly to Scotland — <b>Scotland have never beaten Brazil at a major tournament, and Brazil have never historically lost to Scotland</b> (David Narey's astonishing "toe-poke" long shot in 1982 still ended in a 4-1 Brazil win), and Scotland have <b>never reached a group exit in 12 World Cups/Euros</b>. The odds are one-sided: Brazil <b>-275</b> (about decimal 1.36), Brazil handicap, total line O/U <b>2.5</b>. The biggest uncertainty is <b>Brazil's personnel and mindset</b>: Raphinha is confirmed out with a right-thigh muscle injury, Neymar is available but expected to be a substitute, and Ancelotti may rotate conservatively given they are all but through, while Scotland are giving an all-out last stand. Three talking points: ① <b>Raphinha's absence + possible Brazil rotation</b> and the impact on their ceiling for breaking a packed defence; ② <b>can Scotland's deep block + counters + set pieces</b> produce an upset in a last stand; ③ <b>the motivation gap</b> — Brazil conservative vs Scotland all-out. Base scenario: <b>a Brazil narrow win or controlled win</b>, Market Heat Index ≈ 2/5 (one-sided consensus, information content concentrated in "Brazil's line-up and handicap depth").</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Brazil implied win prob. (de-vigged)</div><div class="v" style="color:#f0d869">≈70%</div></div>
+      <div class="key"><div class="k">Scotland implied win prob. (de-vigged)</div><div class="v" style="color:#7fb3ec">≈12%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈18%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic + asymmetric motivation</b>: Brazil on 4 points are all but through, chasing top spot (a draw or narrow loss still likely sees them through in most scenarios); Scotland on 3 points must win, and still need to watch the Morocco-Haiti result for any qualification hope. This tilts the "intensity to win" entirely to Scotland, but the quality scales tilt to Brazil.</li>
+      <li><b>Raphinha confirmed out (Brazil · multi-source confirmed)</b>: a right-thigh muscle injury (substituted by Rayan in the first half vs Haiti), he will not face Scotland, staying with the squad to recover and chase a knockout return. This weakens Brazil's right-side ceiling for breaking a packed defence, most likely replaced by 19-year-old Rayan (Bournemouth) — see Key Match News.</li>
+      <li><b>Neymar available but expected to be a substitute (Brazil)</b>: Ancelotti confirmed Neymar "will be available" (just recovered from a calf injury), but he is expected not to start and to be a substitute option — Brazil's spark to break a stalemate and a sentiment-driving angle.</li>
+      <li><b>Scotland's last-stand deep block + counters + set pieces</b>: Scotland have never reached a group exit in 12 major tournaments, and their only path is a low block + McTominay/Robertson counters and set pieces; against a possibly rotated, Raphinha-less Brazil, whether they can produce a 1982-style "glorious defeat" or even an upset is the biggest uncertainty.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, explained item-by-item for how each changes the tactics or result (key players' absences cross-confirmed from multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Key player check · Raphinha confirmed out <span style="color:var(--mut);font-weight:400">· ESPN / Bolavip / Sports Mole / Goal multi-source agreement · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multi-source agreement: Raphinha is <b>confirmed out vs Scotland with a right-thigh muscle injury</b> (substituted by Rayan in the first half vs Haiti), but has not withdrawn from the tournament, staying to recover and chase a knockout return</div>
+      <p style="font-size:13.5px">Key-player absence cross-checked: <b>ESPN, Bolavip, Sports Mole and Goal</b> all report that Brazil winger <b>Raphinha</b> was substituted by 19-year-old Rayan in the first half of the second-round game vs Haiti with a right-thigh muscle injury, confirmed out of the final round vs Scotland, but staying with the squad for rehab and aiming for a return in the knockout stage. The most likely replacement on the right is <b>Bournemouth's 19-year-old Rayan</b>. <span style="color:var(--warn)">[The XI and injury grade per the pre-match FIFA Match Centre official line-up / Brazilian FA bulletin · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Raphinha is Brazil's most reliable right-side creator and finisher this tournament. His absence, compounded by Brazil's possible rotation now they are all but through, <b>lowers Brazil's ceiling for breaking Scotland's packed defence</b> — against an opponent expected to deep-block, Brazil need more individual inspiration (Vinícius/Neymar) or set pieces to open them up. This is the key variable for the goals and the handicap depth markets.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Raphinha injury/absence</a> · <a href="https://bolavip.com/" style="color:var(--accent)">Bolavip — Raphinha withdrawal</a> · <a href="https://www.sportsmole.co.uk/" style="color:var(--accent)">Sports Mole — team news</a> · <a href="https://www.goal.com/" style="color:var(--accent)">Goal — Brazil injuries</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Key player check · Neymar available (expected substitute) <span style="color:var(--mut);font-weight:400">· Ancelotti confirmed · ESPN / Goal · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Ancelotti confirms Neymar <b>"will be available"</b> (just recovered from a calf injury), but expected <b>not to start, as a substitute option</b></div>
+      <p style="font-size:13.5px">Head coach <b>Carlo Ancelotti</b> confirmed Neymar has recovered from a calf injury and is available for this match ("will be available"), but expected not to be in the XI, used as an impact substitute. This gives Brazil a creativity-off-the-bench card against a deep block when a stalemate is hard to break. <span style="color:var(--warn)">[Whether and how long he plays per the pre-match official line-up / in-game management · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: with Raphinha out and the opponent deep-blocking, Neymar's introduction off the bench is one of Brazil's potential solutions to "break a packed defence". If they struggle to score in the first half, his entry would lift Brazil's late-game creativity and set-piece quality — a real impact on the totals and the second-half goal timing.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Ancelotti/Neymar available</a> · <a href="https://www.goal.com/" style="color:var(--accent)">Goal — Neymar recovery</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Scotland team news · McKenna fit / Patterson at right back <span style="color:var(--mut);font-weight:400">· Sky Sports / Sports Mole · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Scott McKenna returned to full training Monday after a calf injury, may replace Grant Hanley; Nathan Patterson expected at right back</div>
+      <p style="font-size:13.5px">Per Sky Sports / Sports Mole, Scotland centre-back <b>Scott McKenna</b> returned to full training on Monday after a calf injury and may come into the XI in place of Grant Hanley; <b>Nathan Patterson</b> is expected to play right back/right wing-back. Scotland will most likely deep-block with a back three or a low back four, chasing a glimmer via McTominay/Robertson counters and set pieces. <span style="color:var(--warn)">[The XI per the official pre-match line-up · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Scotland's only path is keeping the defensive structure from collapsing + stealing via set pieces/counters. McKenna's return strengthens defensive duelling, and Patterson's stamina coverage relates to whether they can contain the Vinícius side. Personnel availability decides whether Scotland can drag the game into a tight margin and create an upset window.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.skysports.com/football" style="color:var(--accent)">Sky Sports — Scotland team news</a> · <a href="https://www.sportsmole.co.uk/" style="color:var(--accent)">Sports Mole — preview/line-ups</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee <span style="color:var(--mut);font-weight:400">· ESPN / SI · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Mexican official <b>César Arturo Ramos</b>; fourth official Espen Eskås (Norway); Miami's Hard Rock Stadium</div>
+      <p style="font-size:13.5px">The referee for this match is Mexican official <b>César Arturo Ramos</b>, a hugely experienced CONCACAF-system referee who has officiated multiple World Cups and Copa Américas; the fourth official is Norway's <b>Espen Eskås</b>. Miami's Hard Rock Stadium is a large modern venue, and Miami in June is hot and humid, a heavy fitness drain. <span style="color:var(--warn)">[The full officiating crew and VAR setup, and Ramos's per-match card breakdown at this/the last two major tournaments · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Scotland will inevitably use physical duels and tactical fouls to slow Brazil, so the referee's threshold has a real impact on cards and a potential penalty. Ramos is an experienced Mexican referee with strong big-stage control; the hot, humid conditions + Scotland's deep block may also stretch the game and increase stoppage time. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — World Cup referee list</a> · <a href="https://www.si.com/soccer" style="color:var(--accent)">SI — pre-match referee/preview</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">1X2 implied probability (de-vigged) · Group C picture · totals market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over / Under 2.5 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group C four teams · FIFA ranking (lower = stronger · approximate)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</th><th>🇧🇷 Brazil</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#40 range</td><td class="sc">#5 range (world top tier)</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-0 Haiti + 0-1 Morocco (3 pts, GD 0)</td><td class="sc">1-1 Morocco + 3-0 Haiti (4 pts, GD +3)</td></tr>
+      <tr><td>Group C points (before the final round)</td><td colspan="2">Brazil 4(+3), Morocco 4(+1) lead; Scotland 3(0) must win + watch Morocco-Haiti; Haiti 0, already out</td></tr>
+      <tr><td>Head coach</td><td class="ht">Steve Clarke (Scottish)</td><td class="sc">Carlo Ancelotti (Italian)</td></tr>
+      <tr><td>Key players</td><td class="ht">McTominay, Robertson, Ché Adams, McGinn</td><td class="sc">Vinícius Jr, Matheus Cunha, Paquetá, Casemiro</td></tr>
+      <tr><td>Match talking points / questions</td><td class="ht">Can the deep block + counters + set pieces produce an upset; motivation edge</td><td class="sc">Raphinha out + rotation?; deep-block-breaking ceiling; conservative risk</td></tr>
+      <tr><td>Head-to-head</td><td class="ht">Never beaten Brazil at a major tournament (the famous 1-4 in 1982)</td><td class="sc">Never historically lost to Scotland</td></tr>
+      <tr><td>Major-tournament record</td><td class="ht">Never reached a group exit in 12 World Cups/Euros</td><td class="sc">Five-time World Cup champions, a world top-tier regular</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win ≈8.00 (implied ≈12%)</td><td class="sc">Win ≈1.36 (-275, implied ≈70%) · Draw ≈4.80 (≈18%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5; Brazil handicap — the core markets are the handicap and the totals, not the 1X2 (one-sided)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from decimal odds (≈70/18/12, after normalising). Line source: ESPN (Brazil -275 ≈ decimal 1.36); the handicap is on the Brazil side, total line O/U 2.5. Raphinha's absence + Brazil's possible rotation are the uncertainty for the handicap depth. Specific odds per the real-time pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this tournament's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying)</b> against <b>this tournament's actual values (the first two rounds)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" — never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This tournament's actual (first two rounds)</th><th>Delta &amp; reading</th></tr>
+      <tr><td class="sc">🇧🇷 Brazil · Attack</td><td class="sc">World top-tier attack, top individual quality, occasional stalling against a packed defence</td><td class="sc">2 games, 4 goals (1-1 Morocco, 3-0 Haiti), net +3; only a draw against the strong-mid Morocco</td><td><b>Meets standard but with reservation</b>: fluent firepower against Haiti, but only 1-1 against a structurally sound side like Morocco; the open-play ceiling for breaking a packed defence drops with opponent strength <span style="color:var(--warn)">(per-game xG public sample limited · TBC)</span></td></tr>
+      <tr><td class="sc">🇧🇷 Brazil · Defence</td><td class="sc">High individual defensive quality, Alisson keeping goal, Casemiro shielding</td><td class="sc">2 games, conceded 1 (only Morocco scored), structurally solid</td><td><b>Meets standard</b>: the defence is the source of Brazil's high floor; Scotland's open-play threat is limited, the main risk coming from set pieces</td></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland · Attack</td><td class="ht">Low attacking output, reliant on McTominay's late runs and set pieces</td><td class="ht">2 games, 1 goal (1-0 Haiti, 0-1 Morocco), limited open-play creation</td><td><b>Weak</b>: against Brazil's defence, open-play chances are scarce, the only realistic path being scattered flashes from set pieces and counters <span style="color:var(--warn)">(xG public sample limited · TBC)</span></td></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland · Defence</td><td class="ht">Clarke's system stresses a back three/low compactness, defensive discipline</td><td class="ht">2 games, conceded 1 (0-1 Morocco), the structure acceptable but lacking attack</td><td><b>The floor is in defence</b>: few goals conceded, but this match they must withstand pressure for long spells; whether they avoid a collapse decides if the game is dragged into a tight margin</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Brazil's firepower fluctuates with opponent strength (3-0 Haiti vs 1-1 Morocco), and combined with Raphinha's absence + possible rotation, their ceiling for breaking Scotland's deep block dips slightly; Scotland's open-play creation is scarce, their path concentrated in set pieces/counters. The deep data supports the thesis of "Brazil controlled dominance, but goals suppressed by the line-up and the opponent's deep block". Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/team-history major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration + trap reminder</h4>
+    <table>
+      <tr><td>Model projected xG for this match (magnitude)</td><td class="sc">Brazil ≈1.8–2.1</td><td class="ht">Scotland ≈0.5</td><td>Brazil clearly ahead but with the ceiling slightly capped by Raphinha's absence + Scotland's deep block; consistent with the line's "Brazil heavy handicap"</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Brazil are far above Scotland (world top tier vs never qualified from a group), with the supercomputer giving Brazil a high probability to win + qualify; a Scotland win is in the upset range</td><td>After opponent-strength calibration Brazil's sample is affected by "padding against Haiti", with the 1-1 vs Morocco more informative</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Brazil's field tilt and possession will dominate overwhelmingly, with Scotland's PPDA high (passive deep block, not pressing); Raphinha's absence lowers Brazil's right-side xT</td><td><b>Trap reminder</b>: ① Brazil all but through and possibly rotating conservatively, attacking intensity may be below their quality; ② Scotland in a last stand will go all out — the "motivation gap" may make the scoreline gap smaller than the quality gap; ③ this depresses the reliability of the over and risks the deeper handicap being dragged by Scotland</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = many long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and any missing items are marked "TBC" — figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a textbook "one-sided" fixture — Brazil -275 heavy handicap, the 1X2 barely in doubt; information content concentrated in the handicap depth, the totals and Brazil's line-up/mindset</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · One-sided consensus, no three-way split, information concentrated in the handicap/totals</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The consensus is overwhelmingly Brazil (≈70%), with the 1X2 leaving almost no price-discovery room. The real disagreement is in the <b>handicap depth</b> (Raphinha out + possible Brazil rotation vs Scotland's deep block) and the <b>totals</b> (the motivation gap + difficulty breaking a packed defence). The sentiment is focused on Neymar's return and 1982 nostalgia.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction unanimous: Brazil win, disagreement on margin and handicap)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>ESPN</td><td>Pre-match preview</td><td>Brazil clearly ahead; watch Raphinha's absence and whether Ancelotti rotates</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Predict a Brazil win, Scotland deep-blocking; provides both predicted XIs</td></tr>
+      <tr><td>Sky Sports</td><td>UK media</td><td>Scotland's last stand, must win + watch other games, overall favours Brazil controlling the match</td></tr>
+      <tr><td>SI / Yahoo</td><td>General media</td><td>Brazil chasing top spot, all but through; Scotland's upset probability low, the narrative in 1982 nostalgia</td></tr>
+      <tr><td>Bolavip</td><td>South American media</td><td>Focus on Raphinha's withdrawal and Rayan's replacement, Neymar on standby as a substitute</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: unlike a "top-spot decider" type fixture, this is a <b>one-sided consensus</b> with no sentiment premium and no three-way split. The biggest uncertainty is <b>Brazil's handicap depth</b> (no Raphinha + possible rotation + already-qualified mindset) and <b>whether Scotland can drag the scoreline</b> — which affects the handicap and totals, not the 1X2 result.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Scotland win / Draw / Brazil win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="sc">≈8.50 / 4.80 / 1.34</td><td>Brazil one-sided favourites, Scotland a long-shot underdog</td></tr>
+      <tr><td>06-23 cutoff</td><td>ESPN / best price</td><td class="sc">≈8.00 / 4.80 / 1.36 (-275)</td><td>Raphinha's absence + possible rotation nudged Brazil's win price back up (1.34→1.36)</td></tr>
+      <tr><td>06-23</td><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5; Brazil handicap — the over under pressure (no Raphinha + Scotland's deep block + Brazil possibly conservative)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="sc">Brazil win ≈1.34; Brazil heavy handicap (around the 1.5-goal level); O/U 2.5</td><td>Priced on "Brazil world top tier vs Scotland never reaching a group exit", the opening line already framed Brazil as overwhelming favourites on a deep handicap</td></tr>
+      <tr><td>Open (post-second-round + injury repricing)</td><td class="sc">Brazil win 1.34→1.36; handicap depth under pressure; O/U 2.5 leaning Under</td><td><b>Repricing from second-round results + the injury</b>: Brazil's mere 1-1 vs Morocco exposed a packed-defence stall, their 3-0 vs Haiti fluent; <b>Raphinha confirmed out + Ancelotti possibly rotating</b> lowered the market's confidence in a Brazil "big win", nudging their win price back up and shifting the deep-handicap value down; meanwhile the "Brazil all but through" mindset supports the Under</td></tr>
+      <tr><td>Current line (06-23→now)</td><td class="sc">Brazil -275 (≈1.36); handicap maintained but depth contested; O/U 2.5 leaning Under</td><td>Price discovery is concentrated in the <b>handicap depth</b> (whether Scotland's backs-to-the-wall deep block can drag it) and the <b>totals</b> (no Raphinha + motivation gap → the over under pressure); the 1X2 has no information content, and <b>the drag value of Scotland's deep handicap</b> and the Under are this match's only playing fields</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a one-sided "heavy handicap line", completely different from a Switzerland-Canada-style "three-way split". The 1X2 has almost no price discovery, and the key variables are <b>Brazil's handicap depth</b> (Raphinha out + possible rotation + already-qualified mindset) and <b>whether Scotland can drag the scoreline to put the over under pressure</b>. Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction market (aggregate)</b>: consistent with the bookmaker de-vig in giving Brazil overwhelming dominance, a high probability to win + qualify + chase top spot; a Scotland win is a low-probability upset. There is no qualification-suspense play here, and the money is concentrated in the handicap/totals derivatives. <span style="color:var(--warn)">[This single match's volume/momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Neymar's return</b> — whether he comes off the bench and puts on an individual show is this match's biggest traffic angle and sentiment point.</li>
+      <li><b>Sentiment focus ②</b>: <b>1982 nostalgia</b> — the contrast of David Narey's "toe-poke" long shot with the classic 4-1 Brazil win, and whether Scotland can renew a "glorious defeat" or produce an upset.</li>
+      <li><b>Scotland narrative</b>: the "curse" of never reaching a group exit in 12 major tournaments, a last stand against a five-star Brazil, with the keynote one of pathos and grit; the market has very low confidence in their upset chances.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is a textbook one-sided fixture — Brazil heavy handicap, Heat Index <b>2/5</b>. The 1X2 has no price-discovery room, and the core variables are <b>Brazil's handicap depth + Scotland's ability to drag the scoreline</b>, with knock-on effects on the totals (no Raphinha + motivation gap + already-qualified mindset → the over under pressure, the Under and the drag value of Scotland's deep handicap rising). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/">ESPN — odds/preview/injuries</a> · <a href="https://www.si.com/soccer">SI — preview</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — general</a> · <a href="https://www.sportsmole.co.uk/">Sports Mole — prediction/line-ups</a> · <a href="https://www.skysports.com/football">Sky Sports — Scotland preview</a> · <a href="https://bolavip.com/">Bolavip — Brazil injuries</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the referee for this match is Mexican official <b>César Arturo Ramos</b> (a senior CONCACAF international, having officiated multiple World Cups/Copa Américas); the fourth official is Norway's <b>Espen Eskås</b>. Sources: the ESPN referee list, SI preview. <span style="color:var(--warn)">[The full officiating crew and VAR setup · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's uniform new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Ramos comes from Mexican football and the CONCACAF officiating system — experienced, with strong big-stage control, somewhat tolerant of physical contact but well-managed on tactical fouls, time-wasting and accumulation. This World Cup's officiating environment is strict (only the captain may communicate, the 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>Actual samples at this/the last two major tournaments</b>: Ramos is a senior referee who has officiated multiple major tournaments; the precise per-match card/penalty breakdown at this/the last two World Cups has limited public sample. <span style="color:var(--warn)">[Yellow-card/penalty-rate breakdown · TBC]</span>. Qualitative judgment: a referee with a stable threshold who is willing to make big calls.</li>
+      <li><b>Officiating history with both teams</b>: no notable public tendency in his officiating history with either Scotland or Brazil.</li>
+      <li><b>Two-sided</b>: Scotland's deep block will inevitably bring plenty of physical duels and tactical fouls (slowing Brazil), and Brazil's dribble grappling easily produces penalties/free kicks; the heat and humidity + Scotland slowing the tempo may stretch stoppage time. Semi-automated offside will precisely catch the borderline sprints on the Vinícius side. The card/penalty markets should be viewed as a tendency, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing analysis</b>: with an evident quality gap, the referee has limited impact on the result, the main value being in cards/penalties: Scotland's tactical fouls and Brazil's wide-dribble grappling are the yellow-card/penalty points to watch. Given Ramos's per-match breakdown this tournament has limited sample, treat the related markets as a tendency.</div>
+  </section>
+
+  <!-- Line-ups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XI (ESPN / Sports Mole projections, not official; official line-ups per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland Predicted XI (3-5-2 / 4-3-3) · Steve Clarke</h4>
+    <div class="lineup">Gunn; Patterson · McKenna · Hendry · Robertson; McGinn · Ferguson · McTominay; Christie · Ché Adams · Gannon-Doak</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Scott McTominay</td><td>Midfield / Napoli</td><td>Scotland's highest energy point, late runs and aerial set-piece challenges; the biggest single point for creating an upset</td></tr>
+      <tr><td class="ht">Andy Robertson</td><td>Left back/Left wing / squad icon</td><td>Left-side progression and crossing quality, a set-piece assist source; must also cover the Vinícius side defensively</td></tr>
+      <tr><td class="ht">Ché Adams</td><td>Centre-forward</td><td>Scotland's front-line focal point and counter-attack finisher; with open-play chances scarce he must convert efficiently</td></tr>
+      <tr><td class="ht">Scott McKenna</td><td>Centre-back</td><td>Calf injury, returned to full training Monday, may replace Hanley; defensive duelling and aerial work <span style="color:var(--warn)">start TBC</span></td></tr>
+    </table>
+    <h4>🇧🇷 Brazil Predicted XI (4-2-3-1) · Carlo Ancelotti · Raphinha out, Neymar a substitute</h4>
+    <div class="lineup">Alisson; Danilo · Marquinhos · Gabriel Magalhães · Douglas Santos; Casemiro · Bruno Guimarães; Rayan · Paquetá · Vinícius Jr; Matheus Cunha</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Vinícius Jr</td><td>Left winger / Real Madrid</td><td>Brazil's counter spark and individual-breakthrough core; the biggest threat against Scotland's right side and deep block</td></tr>
+      <tr><td class="sc">Matheus Cunha</td><td>Centre-forward</td><td>Lone-striker finishing and running; the focal point and second-ball threat when breaking a packed defence</td></tr>
+      <tr><td class="sc">Rayan</td><td>Right winger / Bournemouth</td><td>A 19-year-old prospect, expected to replace the absent Raphinha on the right <span style="color:var(--warn)">start TBC</span></td></tr>
+      <tr><td class="sc">Lucas Paquetá</td><td>Attacking midfielder / organisation</td><td>Brazil's midfield-to-attack link and tempo, the key circulation point for breaking a packed defence</td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (ESPN / Sports Mole); <b>defer to the official pre-match team sheet · TBC</b>. The Brazil focus is <b>Raphinha confirmed out</b> (Rayan replacing), whether Ancelotti rotates more heavily given they are all but through, and when Neymar comes off the bench; the Scotland focus is whether McKenna starts and whether Clarke deep-blocks with a back three or a back four.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments (the World Cup + the Euros / Copa América)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland · Steve Clarke</div>
+        <div class="role">Back three / low back four deep block + counters + set pieces, McTominay's late runs</div>
+        <ul class="cl">
+          <li>Clarke's signature is <b>defensive discipline + a compact structure + set pieces</b> — but Scotland exposed insufficient attacking output and a difficulty dominating games against strong sides at both Euro 2024 and the first two rounds of this tournament; never reaching a group exit in 12 major tournaments is a structural ceiling.</li>
+          <li>Cross-reference: the Euro 2024 group exit (no wins, a 1-5 drubbing by Germany exposing their fragility against strong sides), and this tournament's 0-1 loss to Morocco continuing "scarce open-play creation" — <b>against world top-tier sides they can only deep-block for a draw/steal, an open contest would collapse</b>. This means Scotland this match can only abandon possession and bet on set pieces and counters.</li>
+          <li>This match's angle: a low block + withstanding pressure for long without collapsing, stealing via McTominay/Robertson set pieces and scattered counters; they must strictly guard the pace on the Vinícius side. The last-stand motivation is their only chip — going all out + Brazil possibly conservative is the window to create a tight margin/upset.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0d869">🇧🇷 Brazil · Carlo Ancelotti</div>
+        <div class="role">4-2-3-1 possession-dominant + individual quality to break a game, Vinícius/Cunha finishing</div>
+        <ul class="cl">
+          <li>Since taking over, Ancelotti has stressed <b>possession dominance + a balanced double pivot + wide individual quality to break a game</b> — Brazil were fluent 3-0 vs Haiti this tournament, but only 1-1 vs a structurally sound Morocco, exposing a packed-defence stall consistent with Brazil's long-standing "occasional difficulty against a deep block" problem.</li>
+          <li>Cross-reference: the WC 2022 quarter-final penalty loss to Croatia (failing to break their bunker over 120 minutes), and the Copa América series stalls against packed defences — <b>Brazil do not break down deep-blocking lower-mid sides efficiently every game</b>. Raphinha's absence + possible rotation further weaken the right-side ceiling for breaking a packed defence.</li>
+          <li>This match's approach: use possession and the individual quality of Vinícius/Cunha/Paquetá to prise open Scotland's low block, supplemented by set pieces and second-ball attacks; Neymar can be a stalemate-breaking spark. But Brazil hold the "all but through, chasing top spot" safety cushion, so they may control the tempo and preserve fitness, with attacking intensity not necessarily maxed out — which lowers the probability of a big win and the over.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· Pre-match preview</small></div>Brazil clearly ahead and controlling the game; Raphinha's absence + whether Ancelotti rotates is the key to the deep-block-breaking ceiling, while Scotland can only deep-block and counter chasing an upset.</div>
+    <div class="insight"><div class="who">Sky Sports / SI <small>· General media</small></div>Scotland's last stand, must win + watch other games, with an extremely low upset probability; the narrative is focused on 1982 nostalgia and the pathos of 12 major tournaments without a group exit.</div>
+    <div class="insight"><div class="who">Bolavip <small>· South American media</small></div>Focus on Raphinha's right-thigh muscle withdrawal, Rayan replacing on the right, Neymar on standby as a substitute; Brazil's squad depth is enough to take control, but breaking a deep block needs individual inspiration.</div>
+    <div class="insight"><div class="who">Composite · core uncertainty and traps <small>· Opta / FotMob</small></div>The real uncertainty is <b>Brazil's handicap depth</b> and <b>whether they go all out</b>. ⚠ Trap reminder: Brazil all but through + no Raphinha + possible rotation, combined with Scotland's all-out deep block, means the "motivation gap" may make the scoreline gap smaller than the quality gap — the over under pressure, with drag value in Scotland's deep handicap; Neymar off the bench is Brazil's only switch to break a stalemate.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a Brazil narrow win or controlled win is the base scenario. The quality scales tilt overwhelmingly to Brazil (world top tier, never historically lost to Scotland); but Raphinha out + possible rotation + already-qualified mindset vs Scotland's all-out deep-block last stand may make the scoreline gap smaller than the quality gap. A big-win probability below Brazil's usual level, and a Scotland win is a low-probability upset.</li>
+      <li><b>Key men</b>: Vinícius Jr (BRA/counter spark), Matheus Cunha (BRA/finishing), Paquetá (BRA/break-down circulation), Neymar (BRA/impact sub); McTominay (SCO/late runs and set pieces), Robertson (SCO/left side + set pieces), Ché Adams (SCO/counter finishing).</li>
+      <li><b>Matchwinners</b>: ① whether Brazil can prise open Scotland's low block via individual quality + set pieces without Raphinha; ② whether Scotland can deep-block for long without collapsing + steal via set pieces/counters; ③ how seriously Brazil take top spot and the scale of their rotation (deciding attacking intensity and the totals).</li>
+      <li><b>Market view</b>: a textbook one-sided fixture (≈70/18/12), the 1X2 with no price-discovery room; Heat Index 2/5. The core variables are Brazil's handicap depth + Scotland's ability to drag the scoreline, with knock-on effects on the totals (no Raphinha + motivation gap → leaning Under, drag value in Scotland's deep handicap).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② <b>Raphinha's injury grade and confirmed absence</b> (multi-source confirmed out, the grade per the Brazilian FA bulletin), whether Rayan replaces him in the XI; ③ <b>whether and how long Neymar plays</b>; ④ whether Brazil rotate more heavily given they are all but through, whether Scotland's McKenna starts; ⑤ Ramos's full officiating crew and VAR setup, and his per-match card/penalty breakdown at this/the last two major tournaments; ⑥ the precise goal-difference and tiebreaker rules for qualification/top spot, and the Morocco-Haiti result combination Scotland need to qualify (per FIFA's official determination); ⑦ the handicap line and the totals line (O/U 2.5) — specific odds per the real-time pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/">ESPN — preview/odds/referee/Raphinha injury/Neymar</a> · <a href="https://www.sportsmole.co.uk/">Sports Mole — preview/team news/predicted XI</a> · <a href="https://www.goal.com/">Goal — Brazil injuries/Neymar recovery</a><br>
+      • <a href="https://bolavip.com/">Bolavip — Raphinha withdrawal/Rayan replacement</a> · <a href="https://www.skysports.com/football">Sky Sports — Scotland preview/team news</a> · <a href="https://www.si.com/soccer">SI — preview/referee</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — general</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C">Wikipedia — Group C</a> · <a href="https://en.wikipedia.org/wiki/Brazil_v_Scotland_(1982_FIFA_World_Cup)">Wikipedia — 1982 Brazil 4-1 Scotland (the famous Narey game)</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-24 · Charts use verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#005eb8',SC='#e0c020',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Scotland win','Draw','Brazil win'],datasets:[{data:[12,18,70],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[44,56],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, slight Under lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Brazil','Morocco','Scotland','Haiti'],datasets:[{data:[5,12,40,80],backgroundColor:[SC,'#c1632e',HT,'#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approximate)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Scotland',data:[6.5,4.5,5.5,5,4.5,5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Brazil',data:[8.5,8.5,8.5,9,9.5,9.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

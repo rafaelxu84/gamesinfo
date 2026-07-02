@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis previo a fondo · Chequia vs Sudáfrica · Mundial 2026 Grupo A 2ª jornada</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#c8102e;--sc:#e0ad1a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#8a6a13);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#1f1a08);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ec6f7c;font-weight:600}td.sc{color:#ecc24a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">EN</a> · <b style="color:#38bdf8">ES</b> · <a href="/pt/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← Volver al centro de análisis</a><br>
+  <span class="badge">🏁 Finalizado 1-1 · Mundial 2026 · Grupo A 2ª jornada · El duelo "en la víspera de la eliminación" entre dos selecciones que perdieron en la jornada inaugural</span>
+  <h1>Chequia vs Sudáfrica</h1>
+  <div class="meta">18 de junio de 2026 · Atlanta, Mercedes-Benz Stadium (techado) · 12:00 ET · Grupo A (mismo grupo: México, Corea del Sur)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇨🇿 Chequia</div><div class="rk">DT Koubek · 1ª jornada 1-2 ante Corea del Sur · El mejor a balón parado de Europa (11 goles en clasificación) · Falta de creatividad en juego abierto</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 Sudáfrica</div><div class="rk">DT Broos · 1ª jornada 0-2 ante México · Sithole+Zwane ambos suspendidos · xG total de apenas 0.07</div></div>
+  </div>
+
+  <!-- ===== Análisis post-partido ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Análisis post-partido: táctica y datos</h2>
+    <div class="sub">Final Chequia 1-1 Sudáfrica (descanso 1-0) · Mercedes-Benz Stadium, Atlanta, 67,442 · Árbitra Tori Penso (EE. UU., segunda árbitra mujer en la historia del Mundial masculino) · Datos de Sofascore / Opta Analyst / FIFA / ESPN · El contenido previo al partido se conserva íntegro como archivo de pronóstico</div>
+
+    <h4>① Desarrollo del marcador</h4>
+    <p style="font-size:14px">Fue un partido de <b>dos fases: Chequia golpeó temprano, Sudáfrica controló y empató</b>. A los <b>6 minutos</b>, una jugada checa nació de un saque de banda, Sojka filtró el balón y <b>Sadílek</b> se metió al área para definir bajo con la zurda, 1-0 — el gol más tempranero del Mundial hasta ahora. A partir de ahí el guion se volcó hacia Sudáfrica: Bafana Bafana acumuló <b>62%</b> de posesión y completó 508 de 563 pases, replegando a Chequia con una circulación paciente y consolidando poco a poco el dominio territorial. Chequia, por su parte, confirmó su perfil previo — el juego abierto no se abría, el ataque se redujo casi por completo a balón parado y centros al área, y Schick falló dos ocasiones claras. En la segunda mitad Sudáfrica superó a Chequia 12-9 en remates y su xG trepó de 0.21 al descanso a 1.14. Al <b>minuto 83</b>, un disparo lejano de Maseko pegó en el brazo del suplente checo <b>Šulc</b>, la árbitra señaló penal y <b>Mokoena</b> lo convirtió para igualar, 1-1. El xG final fue Chequia 1.02 contra Sudáfrica 1.35-1.37 — calidad y territorio parejos, la ventaja borrada por un único penal por mano.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 6' Sadílek (asistencia de Sojka, tras saque de banda, definición de zurda, 1-0) → 33' amarilla a Mokoena (primera de Sudáfrica) → DESC 1-0 → 83' Mokoena (penal, disparo lejano de Maseko al brazo de Šulc, 1-1) → FINAL 1-1</div>
+
+    <h4>② Comparativa de datos clave</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Métrica</th><th style="padding:6px">🇨🇿 Chequia</th><th style="padding:6px">🇿🇦 Sudáfrica</th><th style="text-align:left;padding:6px">Lectura</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Posesión</td><td style="text-align:center">38%</td><td style="text-align:center"><b>62%</b></td><td style="padding:6px;color:var(--mut)">Sudáfrica controló el juego con posesión y circulación (508/563 pases) — lo contrario a la lectura previa ("cuello de botella de Chequia en juego abierto, Sudáfrica forzada a abrirse"): fue Sudáfrica, no Chequia, quien tomó el balón</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">1.02</td><td style="text-align:center"><b>1.35</b></td><td style="padding:6px;color:var(--mut)">El xG de Sudáfrica subió de 0.21 a 1.14 en la segunda mitad — superando del todo la sequía de 0.07 de la 1ª jornada; la calidad de Chequia fue algo menor pero más cerca del arco</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Remates / a puerta</td><td style="text-align:center">14 / 3</td><td style="text-align:center"><b>17 / 4</b></td><td style="padding:6px;color:var(--mut)">Sudáfrica remató más en total, pero Chequia dominó 11-6 en remates dentro del área — "volumen para Sudáfrica, calidad para Chequia"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Ocasiones claras</td><td style="text-align:center"><b>3</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">Chequia dominó 3-1 pero solo marcó una vez — los dos fallos de Schick en ocasiones claras son la razón directa de no llevarse el partido</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Centros (acertados/intentos)</td><td style="text-align:center"><b>7/16 (44%)</b></td><td style="text-align:center">4/17 (24%)</td><td style="padding:6px;color:var(--mut)">La calidad de centro de Chequia fue claramente mayor y ganó el 59% de los duelos aéreos — la línea previa "balón parado / centros al área" se cumplió, pero la definición falló</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Tiros de esquina</td><td style="text-align:center">5</td><td style="text-align:center">5</td><td style="padding:6px;color:var(--mut)">5-5 — el "bombardeo de córneres" de Chequia no produjo gol; su arma más afilada del previo se apagó aquí</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Atajadas · portero</td><td style="text-align:center">Kovář 3 (+0.11 GP)</td><td style="text-align:center">Williams 2</td><td style="padding:6px;color:var(--mut)">Kovář neutralizó varias veces el ataque de Sudáfrica en la segunda mitad; el penal era imparable. Al contrario de la lectura previa ("Williams es la esperanza de empate de Sudáfrica"), fue el portero checo quien hizo de salvador</td></tr>
+      <tr><td style="padding:6px">Faltas · amarillas</td><td style="text-align:center">1 amarilla</td><td style="text-align:center">2 amarillas</td><td style="padding:6px;color:var(--mut)">Penso amonestó a 2 jugadores de Sudáfrica en la 1ª mitad (incl. Mokoena al 33') y a 1 checo en la 2ª — en línea direccional con la lectura previa del "riesgo de amarillas acumuladas de la diezmada Sudáfrica", sin perder el control</td></tr>
+    </table></div>
+
+    <h4>③ Análisis táctico</h4>
+    <div class="insight"><div class="who">① Roles totalmente invertidos: Sudáfrica con el balón, Chequia recibiendo golpes</div>La línea previa era "Chequia más fuerte sobre el papel, Sudáfrica obligada a un bloque bajo profundo". En la realidad Sudáfrica acumuló 62% de posesión, 508 pases y 58 entradas al último tercio para dominar el territorio, mientras Chequia se quedó en 38% y replegada. <b>Esto nos dice de Sudáfrica</b>: sin Sithole, Broos no aparcó el autobús — dejó que Mokoena (119 toques, 97 pases, 5 pases clave, calificación 8.0) llevara el juego como eje. Es la mayor subversión de la lectura previa; Sudáfrica sumó su punto con posesión, no con defensa pura.</div>
+    <div class="insight"><div class="who">② La "calidad en el área" de Chequia se sostuvo, pero la definición falló</div>Chequia dominó en remates dentro del área (11-6), ocasiones claras (3-1), precisión de centros (44% a 24%) y duelos aéreos (59%) — la línea previa de "meter el balón al área, fabricar calidad con centros y balón parado" sí se cumplió. Pero Schick falló dos ocasiones claras y el equipo apenas acertó 3 de 14 remates a puerta. <b>Esto nos dice de Chequia</b>: el marco ofensivo es correcto (calidad concentrada en el área), pero el viejo problema de carecer de un definidor fiable volvió a ser fatal — generar ocasiones sin convertirlas es justo por lo que 0 puntos se volvieron 1 y no pudieron liquidar a un rival diezmado.</div>
+    <div class="insight"><div class="who">③ El dividendo del balón parado quedó sin cobrar — córneres 5-5, bombardeo apagado</div>El previo señaló el "mejor balón parado de Europa de Chequia (11 goles en clasificación, 7 de córner)" como el punto de ruptura más afilado. Aquí los córneres acabaron 5-5 y no se convirtió ni un balón parado. Krejčí (calificación 7.5, 5 duelos aéreos ganados, 4 remates) fue amenaza por alto, pero con Souček en el banco faltó su objetivo aéreo más alto — justo la advertencia de "intensidad rebajada" ya anotada en el módulo de alineación oficial. <b>Esto nos dice de Chequia</b>: el balón parado es una fortaleza sobre el papel, pero cuando el rival (aun diezmado) defiende el aire bien colocado y a ti te falta tu mejor cabeza, el arma no es una vía fiable — el ajuste previo de "rebaja de intensidad" se validó con precisión.</div>
+    <div class="insight"><div class="who">④ Mokoena cargó a Sudáfrica él solo — metrónomo y definidor a la vez</div>Mokoena tuvo 119 toques (máximo del partido), completó 93 de 97 pases, dio 5 pases clave (los más del juego), acertó 8 de 8 pases largos, hizo 8 recuperaciones y convirtió el penal — llevándose el mejor del partido de Sofascore con 8.0. <b>Esto nos dice de Sudáfrica</b>: en un mediocampo sin Sithole, Mokoena asumió en solitario la creación, la progresión y la definición — coincidiendo exactamente con la lectura previa de que "Mokoena debe cargar solo con la recuperación y la salida". Convirtió una noche esperada de "aguantar y defender" en una de "controlar y empatar".</div>
+    <div class="insight"><div class="who">⑤ Un penal por mano decidió el empate — reaparece el mal de Chequia de "no sostener una ventaja"</div>Chequia se adelantó 1-0 a los 6 minutos, solo para ser alcanzada al 83' por una mano de Šulc en el área. Esto refleja la 1ª jornada: "ventaja de 1-0 remontada 2-1 por Corea del Sur". <b>Esto nos dice de Chequia</b>: la falla estructural de no poder ampliar una ventaja en juego abierto y luego costarle cerrar el partido ya apareció en dos partidos seguidos — la única diferencia es encajar dos y perder en la 1ª jornada frente a encajar uno y empatar aquí. Un ataque unidimensional (balón parado/centros, sin Plan B) deja cada ventaja en riesgo de escaparse.</div>
+
+    <h4>④ Conciliación del pronóstico (revisión punto por punto de las conclusiones previas)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>△ <b>Conclusión del resumen "Chequia gana por la mínima gracias al balón parado" → real 1-1</b>: la dirección (Chequia llevando la iniciativa, marcando primero) fue en parte correcta, pero la "victoria" falló — el bombardeo a balón parado se apagó, la definición falló y un penal por mano forzó el empate.</li>
+      <li>✗ <b>Victoria de Chequia implícita por el mercado ≈49% (cuota 1.75) / mercados de predicción ≈56% → sin victoria (empate)</b>: el favorito no respondió, cayendo en el empate (implícito previo ≈32%), una cola de probabilidad media.</li>
+      <li>✗ <b>Lectura central "el balón parado de Chequia rompe el bloque bajo de la diezmada Sudáfrica" → no cumplido</b>: córneres 5-5, sin gol de balón parado; y Sudáfrica no se metió en bloque bajo en absoluto, sino que tomó la iniciativa con 62% de posesión — tanto la vía de ruptura como el desarrollo fueron lo opuesto a lo esperado.</li>
+      <li>✓ <b>"Chequia carece de creatividad en juego abierto, sin Plan B" → cumplido con precisión</b>: apenas 38% de posesión, Schick fallando dos ocasiones claras y la incapacidad de ampliar la ventaja en juego abierto — el viejo problema volvió a ser fatal.</li>
+      <li>✓ <b>"La sequía ofensiva de Sudáfrica de 0.07 xG en la 1ª jornada" → marcadamente mejorada aquí</b>: el xG de Sudáfrica se recuperó a 1.35 (1.14 en la segunda mitad), superando la sequía gracias al control de Mokoena — lo contrario de la expectativa pesimista de "selección diezmada que solo puede defender".</li>
+      <li>△ <b>Tendencia de goles (Over 2.5 algo afilado ≈53%) → real 2 goles (Under)</b>: total de goles 2, no superó 2.5; el Over falló pero quedó cerca de la línea.</li>
+      <li>✓ <b>Arbitraje "Penso tarjetera, riesgo de amarillas acumuladas de Sudáfrica" → en parte cumplido</b>: Sudáfrica recibió 2 amarillas en la 1ª mitad (incl. Mokoena), 3 amarillas en total — direccionalmente consistente, sin escalar fuera de control.</li>
+    </ul>
+
+    <h4>⑤ Proyección al próximo partido</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇿 Chequia → 24/6 vs México (última jornada · Ciudad de México)</div>① Es un <b>duelo a vida o muerte</b>: con 1 punto y por detrás, Chequia debe sacarle puntos al líder del grupo, México, en la última jornada para tener alguna esperanza de avanzar o pelear el tercer puesto — un reto cuesta arriba; ② <b>La eficacia de definición es el punto débil</b>: dominó 3-1 en ocasiones claras pero marcó una, con Schick fallando dos veces — ante un México más fuerte, volver a desperdiciar ocasiones será aún más difícil de remontar; ③ el balón parado sigue siendo arma sobre el papel pero se apagó aquí (córneres 5-5); necesitan recuperar la intensidad del bombardeo (si Souček vuelve al once es algo a vigilar); ④ <b>"no sostener una ventaja" ya ocurrió en dos partidos seguidos</b> — ante el juego por banda y la calidad individual de México, hay que corregir con urgencia los riesgos de mano/colocación en el área.</div>
+      <div class="insight" style="margin:0"><div class="who">🇿🇦 Sudáfrica → 24/6 vs Corea del Sur (última jornada · Estadio Monterrey)</div>① También un <b>duelo a vida o muerte</b>: con 1 punto, necesitan vencer a Corea del Sur (ya con 3 por su triunfo) en la última jornada para tener opción; ② <b>Mokoena es el motor</b>: la posesión y la creación pasaron por completo por él (calificación 8.0) — ante una Corea del Sur más rápida seguirán apoyándose en su distribución, pero también deben repartir la dependencia; ③ <b>la sequía ofensiva está aliviada</b> (xG 1.35): el giro de Broos hacia tener el balón en vez de defender profundo puede mantenerse ante Corea del Sur, pero deben convertir la posesión en más ocasiones de área (aquí solo 6 remates dentro del área); ④ los suspendidos Sithole/Zwane terminan sus sanciones tras este juego y pueden volver para la última jornada, potenciando la recuperación de mediocampo y un recurso ofensivo de último tramo.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Fuentes: Sofascore (estadísticas/calificaciones post-partido), Opta Analyst (theanalyst.com), FIFA (centro de partido), ESPN, Sky Sports. Solo con fines de análisis — no es consejo de apuestas.</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumen rápido (lee esto primero)</h3>
+    <p class="lead">Este es un partido a vida o muerte donde "perder es quedar eliminado" entre <b>dos selecciones que cayeron en la jornada inaugural</b>: Chequia se adelantó 1-0 pero Corea del Sur le dio la vuelta 2-1, mientras que Sudáfrica perdió 0-2 ante México en el partido inaugural y <b>recibió dos de las tres tarjetas rojas</b> (Sithole y Zwane ambos suspendidos en este partido). El mercado se inclina claramente por Chequia: cuota de victoria de Chequia <b>1.75</b> (probabilidad implícita sin margen ≈49%), empate 3.80 (≈32%), victoria de Sudáfrica 5.00 (≈19%); los mercados de predicción dan a Chequia cerca de <b>56%</b> de probabilidad de ganar. El as estructural de Chequia es el <b>balón parado</b>: sus 11 goles a balón parado en la clasificación europea para el Mundial 2026 fueron los más de toda Europa (7 de ellos a partir de tiros de esquina, el 50% de sus goles totales), y los 4 goles ante Irlanda y Dinamarca en el repechaje también llegaron todos a balón parado. Ante una Sudáfrica diezmada que pierde a su recuperador de mediocampo Sithole, esa es la grieta más afilada para romper el partido. La debilidad es igual de clara: la <b>falta de creatividad de Chequia en juego abierto</b> (ya expuesta por el bloque bajo de Corea del Sur en la 1ª jornada), sin un Plan B más allá de Schick; Sudáfrica, por su parte, es una <b>plantilla diezmada + una sequía ofensiva con un xG total de 0.07</b>. Guion base: Chequia gana por la mínima gracias al balón parado; Sudáfrica busca una mínima esperanza con un bloque bajo disciplinado y el contraataque. Índice de sobrecalentamiento del mercado ≈ 2/5 (dos selecciones débiles, poco volumen de interés). </p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita victoria Chequia (sin margen)</div><div class="v" style="color:#ec6f7c">≈49%</div></div>
+      <div class="key"><div class="k">Prob. implícita victoria Sudáfrica (sin margen)</div><div class="v" style="color:#ecc24a">≈19%</div></div>
+      <div class="key"><div class="k">Balón parado de Chequia en clasificación</div><div class="v" style="color:var(--warn)">11 (más de Europa)</div></div>
+      <div class="key"><div class="k">Índice de sobrecalentamiento</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Las dos suspensiones de Sudáfrica</b>: el recuperador de mediocampo Sithole + el principal recurso ofensivo de banca Zwane ausentes al mismo tiempo (rojas en la 1ª jornada). Es la mayor fisura en la alineación de Broos y la vía de entrada para que Chequia acelere y use el balón parado.</li>
+      <li><b>Balón parado de Chequia vs defensa aérea de Sudáfrica</b>: los 11 goles a balón parado de Chequia en la clasificación fueron los primeros de Europa (7 de tiros de esquina), y sus 4 goles en el repechaje fueron todos a balón parado; el bombardeo por alto de Schick + Souček + Krejčí es el eje táctico del partido.</li>
+      <li><b>El cuello de botella de Chequia en juego abierto</b>: tras adelantarse en la 1ª jornada, Corea del Sur neutralizó con su bloque bajo, la creatividad en juego abierto se agotó y terminó remontado. Si Sudáfrica planta un bloque bajo sólido, Chequia podría caer de nuevo en el "no hallar salida con la posesión".</li>
+      <li><b>La árbitra Tori Penso (Estados Unidos)</b>: la segunda árbitra mujer en la historia del Mundial masculino (tras Frappart en 2022); su muestra internacional tiene un promedio alto de amarillas por partido (alrededor de 3.3–3.4), y sumado al entorno de arbitraje estricto de este torneo, el riesgo de tarjetas acumuladas de la diezmada Sudáfrica merece atención.</li>
+    </ul>
+  </div>
+
+  <!-- noticias clave de ultima hora -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Noticias clave de última hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · con fuentes + por qué importa</span></h2>
+    <div class="sub">Información de primera mano y señales de estado que afectan este partido, explicadas una a una sobre cómo cambian la táctica o el resultado (incluye lo que cada selección trae de su partido anterior)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">Sudáfrica · Lo que trae del partido anterior · Doble suspensión <span style="color:var(--mut);font-weight:400">· Traslado del análisis del partido inaugural · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Sudáfrica perdió 0-2 ante México en la 1ª jornada y <b>Sithole + Zwane quedaron ambos suspendidos por roja</b>, llega diezmada ante Chequia</div>
+      <p style="font-size:13.5px">Trasladando el análisis del partido inaugural a esta previa: en la derrota 0-2 ante México, <b>Sithole (roja directa al 50' por derribar a un atacante en posición de gol) y Zwane (roja directa por VAR al 82' por golpear a un rival) quedan ambos suspendidos en este partido</b>. El primero es el obrero que recupera en mediocampo y bloquea el punto de creación rival; el segundo es el principal recurso ofensivo de banca de Broos cuando va por detrás. Más grave aún, en ese partido Sudáfrica tuvo un <b>xG total de apenas 0.07</b> (3 tiros, 0 a puerta, solo 2 toques en el área), confirmando del todo el retrato de que defender puro no consigue puntos. Diezmada y obligada a abrir el partido, el riesgo es mayor.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por qué importa</b>: la ausencia de Sithole debilita directamente la cobertura e intercepción de Sudáfrica en mediocampo, facilitando el avance de Souček/Provod y la disputa del segundo balón a balón parado de Chequia; la ausencia de Zwane le quita a Broos el único recurso de contraataque de calidad cuando va por detrás. Estas dos suspensiones llevan a Sudáfrica de un "bloque defensivo denso + robar puntos al contragolpe" a un "casi solo poder defender a muerte", y son la base central de por qué el hándicap de Chequia (-0.5/-1) se ve como un ángulo más afilado.</div>
+      <div style="font-size:12px;margin-top:6px">Fuente: <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — Estadísticas posteriores México vs Sudáfrica</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — Crónica de las 3 rojas</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">Chequia · Lo que trae del partido anterior · Cuello de botella en juego abierto <span style="color:var(--mut);font-weight:400">· Traslado del análisis del partido ante Corea del Sur · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Chequia se adelantó 1-0 en la 1ª jornada pero <b>Corea del Sur le dio la vuelta 2-1</b>; el arma a balón parado quedó verificada, pero falta creatividad en juego abierto</div>
+      <p style="font-size:13.5px">Trasladando el análisis del partido ante Corea del Sur a esta previa: Chequia primero se adelantó 1-0 y luego fue remontada 2-1 por Corea del Sur. El arma a balón parado (gol temprano de jugada ensayada) quedó verificada, pero <b>la creatividad en juego abierto se agotó tras adelantarse</b>, fue perdiendo el control ante la presión y el dominio coreanos, y el viejo problema de no tener una segunda vía de ataque más allá de Schick volvió a quedar expuesto. Situación para clasificar: Chequia tiene 0 puntos, pero como solo enfrenta a México en la última jornada y aquí juega primero ante la diezmada Sudáfrica, su destino sigue en sus propias manos: debe sumar los 3 puntos.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por qué importa</b>: la eficacia de Chequia para romper el bloque bajo de Sudáfrica es la mayor incógnita táctica del partido. Si, como en la 1ª jornada, no logra abrir el juego en jugada corrida, el balón parado (tiros de esquina) se vuelve casi la única fuente de gol, y eso es justo la fortaleza de Chequia y la debilidad de la diezmada Sudáfrica: ambas señales se suman y apuntan al guion principal de Chequia "ganando gracias al balón parado".</div>
+      <div style="font-size:12px;margin-top:6px">Fuente: <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — Estadísticas posteriores Corea del Sur vs Chequia</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Chequia · As estructural <span style="color:var(--mut);font-weight:400">· Opta Analyst · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Los <b>11 goles a balón parado de Chequia en la clasificación europea fueron los más de toda Europa</b> (7 de tiros de esquina, el 50% de sus goles totales); sus 4 goles del repechaje fueron todos a balón parado</div>
+      <p style="font-size:13.5px">Según Opta, los goles a balón parado que anotó Chequia en la clasificación europea para el Mundial 2026 (11) fueron los más de toda Europa, de los cuales 7 goles de tiro de esquina fueron el registro individual más alto, y el balón parado representó el 50% de todos sus goles; más allá de las dos tandas de penales del repechaje rumbo al Mundial, los 4 goles en juego corrido ante Irlanda y Dinamarca también llegaron todos a balón parado. Schick (ataque al primer poste + definición), Souček (remate de cabeza por alto) y Krejčí son las principales armas aéreas; Provod es el ejecutor y el punto de centro del diseño de jugadas.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por qué importa</b>: los goles encajados por Sudáfrica en la 1ª jornada ya venían en parte de sus propios errores de salida, y en este partido pierde además a Sithole, ese disputador de segundos balones e interceptor central. El bombardeo de tiros de esquina y balón parado de Chequia golpea justo el eslabón más débil de la diezmada Sudáfrica. Es una vía para romper el partido con mucho más contenido informativo que el "intercambio en juego abierto", y respalda el ángulo del hándicap de Chequia.</div>
+      <div style="font-size:12px;margin-top:6px">Fuente: <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats" style="color:var(--accent)">Opta Analyst — Datos de balón parado de Chequia</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history" style="color:var(--accent)">FIFA — Historia de la selección de Chequia</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">Alineación · Onces titulares previstos <span style="color:var(--mut);font-weight:400">· Wincomparator · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Chequia se espera que mantenga su alineación de balón parado (Schick como único punta); Sudáfrica obligada a rehacer el mediocampo, con Makgopa/Foster en el frente de ataque</div>
+      <p style="font-size:13.5px">Once previsto de Chequia: Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick — manteniendo el esquema de balón parado de la clasificación, con Schick como núcleo de definición. Sudáfrica, por las suspensiones de Sithole/Zwane, está obligada a rehacer el equipo: Williams (C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster — en el mediocampo Moremi ocupa el lugar de Sithole, y en el frente Makgopa acompaña a Foster. <span style="color:var(--warn)">[Los onces oficiales de ambos quedan sujetos a la lista oficial de FIFA previa al partido · por confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por qué importa</b>: tras perder a Sithole en el mediocampo, baja la calidad de intercepción y disputa de segundos balones de Mokoena/Moremi, que es justo la zona objetivo del balón parado de Chequia y de las llegadas de Souček; si Schick está fino y Provod centra con precisión, la probabilidad de romper a la diezmada Sudáfrica sube notablemente. Ambos cambios mueven tanto el hándicap como el mercado del primer gol.</div>
+      <div style="font-size:12px;margin-top:6px">Fuente: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/" style="color:var(--accent)">Wincomparator — Once previsto/cuotas</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/" style="color:var(--accent)">Racing Post — Estado del equipo/apuestas</a> · <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Previa/once previsto</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Entorno del partido · Árbitra ya anunciada oficialmente <span style="color:var(--mut);font-weight:400">· FIFA / ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitra confirmada: la estadounidense <b>Tori Penso</b> — la <b>segunda árbitra mujer</b> en la historia del Mundial masculino</div>
+      <p style="font-size:13.5px">FIFA designó a la estadounidense <b>Tori Penso</b> para dirigir este partido de la 2ª jornada del Grupo A; se convertirá en la <b>segunda mujer en la historia del Mundial masculino en arbitrar un partido oficial</b> (tras Frappart en Qatar 2022). Las árbitras asistentes serán las estadounidenses Brooke Mayo y Kathryn Nesbitt, y el cuarto árbitro será el neozelandés Campbell-Kirk Kawana-Waugh. Penso dirigió la final del Mundial Femenino 2023 (primera árbitra estadounidense en dirigir una final de Mundial), y tiene muestra real en torneos masculinos de gran nivel en los Juegos Olímpicos masculinos de París 2024 y el Mundial de Clubes 2025 (dirigió Al Ain vs Juventus y Dortmund vs Ulsan). El partido se juega bajo techo en el Mercedes-Benz Stadium de Atlanta, sin variable climática.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por qué importa</b>: la muestra internacional de Penso tiene un promedio alto de amarillas (alrededor de 3.3–3.4 por partido), y sumado al entorno de arbitraje estricto del torneo (3 rojas ya en el partido inaugural), si la diezmada Sudáfrica pierde tiempo o entra en confrontaciones emocionales, el costo de las tarjetas acumuladas (2 amarillas = suspensión para el siguiente partido) y de las faltas en el área se amplifica; su frecuencia de penales señalados es de aproximadamente 0.36/partido, y su criterio en los duelos dentro del área merece atención. Más detalles en el módulo de arbitraje abajo.</div>
+      <div style="font-size:12px;margin-top:6px">Fuente: <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/" style="color:var(--accent)">TelecomAsia — Designación arbitral de Penso</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa" style="color:var(--accent)">FIFA — Penso en el Mundial de Clubes</a></div>
+    </div>
+  </section>
+
+  <!-- Alineaciones oficiales -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2014,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Alineaciones oficiales y lectura <span style="font-size:12px;color:var(--mut);font-weight:500">· Confirmado por dos fuentes (FIFA oficial + 101GreatGoals) · publicado ~50 min antes del inicio</span></h2>
+    <div class="sub">Cada equipo hace <b>5 cambios</b>, todos rotaciones del técnico (no bajas de última hora). <span style="color:var(--good)">✅ Confirmado oficialmente</span></div>
+
+    <div class="twocol">
+      <div>
+        <h4>🇨🇿 Once oficial de Chequia <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA lo marca 5-2-3</span></h4>
+        <div class="lineup">Kovář(1); Holeš(3) · Hranáč(4) · Coufal(5) · Krejčí(7,C); Darida(8) · Červ(12) · Sadílek(18) · Sojka(24); Hložek(9) · Schick(10)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Armas clave en el banco: <b>Souček(22)</b> (referencia aérea a balón parado / recuperador, descartado) · <b>Provod(17)</b> (creatividad por izquierda) · <b>Šulc(15)</b> (enganche libre)</div>
+      </div>
+      <div>
+        <h4>🇿🇦 Once oficial de Sudáfrica <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA lo marca 4-2-3-1</span></h4>
+        <div class="lineup">Williams(1,C); Mudau(20) · Mbokazi(14) · Okon(21) · Modiba(6); Mokoena(4) · Mbatha(5); Appollis(7) · Adams(23) · Maseko(12); Rayners(15)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Armas clave en el banco: <b>Foster(9)</b> (delantero de Premier League, pólvora para la segunda parte) · <b>Mofokeng(10)</b> (chispa) · <b>Makgopa(17)</b> (referencia aérea) · <b>Moremi(8)</b></div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">📋 vs once previsto</h4>
+    <table>
+      <tr><th>Cambio</th><th>Previsto</th><th>Oficial</th><th>Por qué importa</th></tr>
+      <tr><td class="ht">CHE · pivote</td><td>Souček titular</td><td>Souček al banco</td><td>Su mejor presencia aérea se queda fuera: baja la "calidad" del bombardeo a balón parado. Es el punto donde la tesis central del resumen necesita matiz.</td></tr>
+      <tr><td class="ht">CHE · mediocampo</td><td>Provod · Šulc</td><td>Darida · Červ · Sadílek</td><td>Cambiados por un trío de recorrido/salida de balón: respuesta directa al "se secó la creatividad en juego abierto, ahogada por el bloque bajo" del estreno.</td></tr>
+      <tr><td class="ht">CHE · ataque</td><td>Schick solo arriba</td><td>Hložek + Schick</td><td>Más profundidad con dos puntas, presionando la línea alta de Sudáfrica y abriendo más espacio para el contraataque.</td></tr>
+      <tr><td class="sc">SUD · central</td><td>Sibisi</td><td>Okon</td><td>Rotación defensiva; Okon entra en el eje de la zaga.</td></tr>
+      <tr><td class="sc">SUD · medio/ataque</td><td>Moremi / Makgopa · Foster</td><td>Mbatha · Adams / Rayners solo arriba</td><td>Broos deja fuera al delantero de PL Foster por un mediocampo más de control + Rayners arriba: continuidad del pragmático "bloque bajo + contra".</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">🧠 Lectura táctica</h4>
+    <ul class="watch">
+      <li><b>Conclusión del resumen: se mantiene, pero con matiz en el balón parado</b> — el resumen señalaba el "bombardeo aéreo de Schick + Souček + Krejčí" como punto de ruptura central, pero Souček está en el banco, retirando la mayor amenaza aérea de Chequia y bajando la intensidad del bombardeo a córner/balón parado frente a lo esperado; Krejčí, Hranáč, Holeš y Hložek aún aportan presencia aérea, y Souček queda como opción para la segunda parte. <b>La ventaja a balón parado sigue siendo la línea principal, con la intensidad revisada a la baja.</b></li>
+      <li><b>La renovación del mediocampo de Chequia responde directo al punto débil</b>: Darida + Červ + Sadílek sustituyen a Souček/Provod/Šulc, sumando recorrido, salida de balón y llegadas — atacando el problema del estreno de ser ahogados por el bloque bajo de Corea sin respuesta con el balón, y cubriendo la "falta de creatividad en juego abierto" del resumen.</li>
+      <li><b>Hložek junto a Schick (FIFA 5-2-3)</b>: de un solo punta a dos referencias, sumando penetración; si Sudáfrica adelanta líneas, Chequia gana más espacio al contraataque.</li>
+      <li><b>Sudáfrica: Rayners solo arriba, Foster fuera</b>: Broos elige un mediocampo de control (Mbatha + Adams) + Rayners por encima del nivel-PL de Foster, dando continuidad al disciplinado "bloque bajo + contra" y haciendo eco del "arañar una vía de vida con bloque bajo" del resumen; pero la sequía ofensiva de 0,07 xG del estreno no se alivia claramente con los cambios, quedando Foster/Mofokeng como recursos para remontar en la segunda parte.</li>
+    </ul>
+
+    <div class="note">📊 <b>Reacción del mercado</b>: hasta este módulo (≈50 min antes del inicio), no se detecta movimiento claro de la línea 1X2/más-menos tras publicarse las alineaciones. Con poco interés en ambos equipos y cambios que son rotaciones del técnico y no bajas sorpresa, se espera una reacción limitada de la línea. Solo como dato, no es consejo de apuestas.</div>
+
+    <div style="font-size:12px;margin-top:12px;color:var(--mut)">Fuentes: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440" style="color:var(--accent)">Match Centre oficial de FIFA — Line Up</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/world-cup-2026-live-czechia-vs-south-africa-teams-line-ups-tv-channel-live-online-stream/" style="color:var(--accent)">101GreatGoals — equipos confirmados</a></div>
+  </section>
+
+  <!-- plano de datos -->
+  <section>
+    <h2><span class="n">1</span> Plano de datos (central)</h2>
+    <div class="sub">Probabilidad implícita 1X2 (sin margen) · Panorama del Grupo A · Mercado de más/menos goles · Retrato de fuerza integral — todas las gráficas usan datos verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidad implícita 1X2 (sin margen, calculada con cuotas DECIMALES)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidad implícita Más/Menos 2.5 goles (sin margen)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Ranking FIFA de las cuatro selecciones del Grupo A (más bajo = más fuerte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Retrato de fuerza integral (evaluación de analistas 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativa de datos clave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇨🇿 Chequia</th><th>🇿🇦 Sudáfrica</th></tr>
+      <tr><td>Director técnico</td><td class="ht">Miroslav Koubek (relevó a Hašek en 2025-12)</td><td class="sc">Hugo Broos (belga)</td></tr>
+      <tr><td>Resultado 1ª jornada</td><td class="ht">1-2 ante Corea del Sur (remontado tras ir 1-0)</td><td class="sc">0-2 ante México (2 rojas)</td></tr>
+      <tr><td>Suspendidos/bajas en este partido</td><td class="ht">Sin titulares suspendidos confirmados por ahora</td><td class="sc"><b>Sithole + Zwane ambos suspendidos</b> (rojas en la 1ª jornada)</td></tr>
+      <tr><td>Vía de clasificación</td><td class="ht">Segundo de grupo en la clasificación europea (detrás de Croacia) + eliminó por penales a Irlanda y Dinamarca en el repechaje</td><td class="sc">Primero de su grupo en la clasificación africana</td></tr>
+      <tr><td>Retrato a balón parado</td><td class="ht"><b>11 goles a balón parado en la clasificación europea, los más de Europa</b> (7 de tiro de esquina, 50% de sus goles)</td><td class="sc">xG de 0.07 en la 1ª jornada, sin generar ni en juego abierto ni a balón parado</td></tr>
+      <tr><td>Últimos dos grandes torneos</td><td class="ht">Eurocopa 2024 eliminada como colista de grupo · Eurocopa 2020 octavos de final (cayó ante Dinamarca)</td><td class="sc">Copa Africana 2023 tercer lugar · Copa Africana 2025 octavos de final (cayó ante Camerún)</td></tr>
+      <tr><td>Cuotas 1X2 (DECIMALES)</td><td class="ht">Victoria 1.75 (implícita ≈49%)</td><td class="sc">Victoria 5.00 (≈19%) · Empate 3.80 (≈32%)</td></tr>
+      <tr><td>Más / Menos 2.5 goles</td><td colspan="2" class="sc">El Más está ligeramente afilado (Más de 2.5 alrededor de 1.88, implícita ≈53%); ambos necesitan marcar para sobrevivir, sube el margen de variación del marcador</td></tr>
+      <tr><td>Jugadores clave</td><td class="ht">Patrik Schick / Tomáš Souček / Lukáš Provod</td><td class="sc">Ronwen Williams / Lyle Foster / Evidence Makgopa</td></tr>
+    </table>
+    <div class="note">📌 Las probabilidades son las implícitas tras quitar el margen de las cuotas DECIMALES (≈49/32/19). Fuente de cuotas: bet365 (Chequia 1.75 / -143, empate 3.80 / +280, Sudáfrica 5.00 / +400), conversión de línea americana a decimal: -143→1.70, +280→3.80, +400→5.00 (la mejor oferta del mercado para Chequia llega a 1.82, Sudáfrica 4.00). La línea de más/menos está en 2.5: Más de 2.5 alrededor de 1.88 (implícita ≈53%, ligeramente afilado), y el hecho de que ambos "pierdan = queden eliminados" sube el grado de apertura; el BTTS (ambos marcan) alrededor de 2.00. El hándicap de Chequia -0.5/-1 queda por confirmar según la línea en tiempo real previa al partido. Solo con fines de análisis — no es consejo de apuestas.</div>
+  </section>
+
+  <!-- Datos profundos · Métricas esperadas -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Datos profundos · Métricas esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· Promedio histórico vs valor real de este Mundial · señales de calidad subyacente · con fuentes</span></h2>
+    <div class="sub">Método central: contrastar punto por punto la <b>base histórica de cada equipo (últimos dos torneos grandes / clasificación / muestras de amistosos)</b> con el <b>valor real de los partidos ya jugados en este Mundial</b>, para ver "si en este Mundial está por encima o por debajo del nivel histórico, y qué significa". La muestra pública de xG de selecciones es limitada; los datos faltantes se marcan como "por confirmar" y nunca se inventan.</div>
+
+    <h4>① Núcleo: Promedio histórico vs valor real de este Mundial (equipo por equipo)</h4>
+    <table>
+      <tr><th>Equipo / métrica</th><th>Base histórica (muestra/fuente)</th><th>Real en este Mundial (Jornada 1)</th><th>Diferencia y lectura</th></tr>
+      <tr><td class="ht">🇨🇿 Chequia · ataque xG/goles</td><td class="ht">Promedio de goles por partido alto en la clasificación europea, pero <b>50% provienen de balón parado</b> (11 goles de balón parado, los más de toda Europa); en la Eurocopa 2024 solo 2 goles en 3 partidos de fase final</td><td class="ht">Jornada 1: <b>xG 0.81</b>, 1 gol real (1-2 ante Corea, llegó a ir 1-0 arriba)</td><td>La creatividad en juego abierto de este Mundial se acerca al registro de "sequía en fase final" (≈0.8 xG), <b>por debajo</b> del lustroso número de goles de la clasificación: el dividendo del balón parado no se materializó en este partido y al juego abierto le falta Plan B</td></tr>
+      <tr><td class="ht">🇨🇿 Chequia · defensa xGA/goles encajados</td><td class="ht">Defensa de nivel medio en la clasificación europea; pasó la repesca por penales, no destaca por dejar la portería a cero</td><td class="ht">Jornada 1: Corea le generó <b>1.84 xGA</b> y encajó 2 goles (le remontaron tras ir arriba)</td><td><b>Peor</b> que su imagen histórica: no contiene la penetración por el centro y la gestión colapsa tras ponerse por delante; es un riesgo estructural ante rivales con capacidad de juego posicional</td></tr>
+      <tr><td class="sc">🇿🇦 Sudáfrica · ataque xG/goles</td><td class="sc">En la Copa Africana 2023 ya avanzó como tercer lugar con "pocos goles + penales", ataque pobre; promedio de goles bajo en clasificación y amistosos (últimos 5 sin ganar, 1-1 con Jamaica, 0-0 con Nicaragua)</td><td class="sc">Jornada 1: <b>xG 0.07</b> (prácticamente cero amenaza), 0 goles</td><td><b>Muy por debajo</b> de su ya pobre base histórica: 0.07 es del peor nivel en la historia del equipo; tras la <b>doble sanción de Sithole+Zwane</b> el ataque queda aún más sin solución</td></tr>
+      <tr><td class="sc">🇿🇦 Sudáfrica · defensa xGA/goles encajados</td><td class="sc">Su seña histórica = defensa disciplinada en bloque bajo (en la Copa Africana llegó lejos encajando poco)</td><td class="sc">Jornada 1: encajó 2 goles y, tras dos rojas, le perforaron la defensa</td><td>Las rojas hicieron fallar incluso su "única virtud"; con uno menos + titulares sancionados, la base defensiva de este partido se revisa aún más a la baja</td></tr>
+    </table>
+    <div class="note">📌 <b>Lectura real vs histórico</b>: los valores reales de ambos en este Mundial están <b>por debajo</b> de sus respectivas bases históricas: Chequia recae en el registro de sequía de fase final en juego abierto (0.81 xG) y no materializó el balón parado; el ataque de Sudáfrica (0.07 xG) marca un mínimo histórico y la defensa empeora por las rojas + doble sanción. Los datos profundos coinciden con la línea de que "Chequia es favorita sobre el papel, pero romper el bloque bajo aún exige un Plan B más allá de Schick". Fuentes: Opta Analyst (xG/estadísticas Jornada 1) · FotMob/Sofascore (datos Jornada 1) · registros públicos de torneos grandes/clasificación de cada equipo. Solo con fines de análisis — no es consejo de apuestas.</div>
+
+    <h4>② Proyección del partido & calibración Opta</h4>
+    <table>
+      <tr><td>xG proyectado por el modelo para este partido (xGscore)</td><td class="ht">Chequia ≈1.4</td><td class="sc">Sudáfrica ≈0.6</td><td>Tras calibrar, la proyección favorece claramente a Chequia, pero "romper el bloque bajo cerrado" siempre ha sido su talón de Aquiles; hay que vigilar la eficiencia de conversión</td></tr>
+      <tr><td>Opta Power Ranking / supercomputadora</td><td colspan="2" class="sc">Dentro del sistema, Chequia se mantiene firme en lo alto del Grupo A y Sudáfrica al fondo; la supercomputadora da a Chequia ≈49% de victoria (coincide con la cuota sin margen)</td><td>Tras calibrar por fuerza del rival, la muestra de Chequia tiene más valor que la de Sudáfrica (cuyos rivales fueron más débiles)</td></tr>
+      <tr><td>presión PPDA · xT · field tilt</td><td colspan="2" class="sc">Datos públicos de selecciones limitados <span style="color:var(--warn)">(por confirmar)</span> — cualitativo: Chequia con presión media-alta + bombardeo de balón parado, Sudáfrica forzada al bloque bajo pero con un escalón menos de ejecución</td><td>El dominio territorial probablemente se incline durante mucho tiempo hacia Chequia</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de métricas profundas (qué representa cada una de estas métricas "tipo xG")</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (goles esperados / goles esperados sin penales): suma de la calidad de las ocasiones de tiro; quitando los penales refleja mejor la creatividad en juego abierto.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (goles esperados en contra): la calidad de las ocasiones que el rival te genera; mide el nivel defensivo real y no el depender de paradas/suerte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (diferencia esperada neta por 90 minutos): xG−xGA, el mejor indicador único como proxy de la fuerza global.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (calidad media por disparo): si la selección de tiro es eficiente — valor bajo = muchos disparos lejanos / malas ocasiones.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (pases permitidos por acción defensiva): cuanto más bajo el valor = presión más feroz, refleja la intensidad de la presión.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinación del campo): proporción de toques en el tercio ofensivo, mide territorio/dominio territorial y no la mera posesión.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Nota: este módulo prioriza fuentes públicas como Opta/FotMob/Sofascore/Understat/xGscore; en selecciones, la muestra pública de métricas desglosadas como PPDA/xT/field tilt es limitada, los datos faltantes se marcan siempre como "por confirmar" y nunca se inventan valores.</div>
+  </section>
+
+  <!-- temperatura del mercado de apuestas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Temperatura del mercado de apuestas <span style="font-size:12px;color:var(--mut);font-weight:500">· Recomendaciones de expertos / cuotas / flujo de dinero / opinión pública</span></h2>
+    <div class="sub">El cruce entre dos selecciones débiles que perdieron en la 1ª jornada — bajo volumen de interés, poco dinero, pero coincidiendo en la dirección hacia Chequia; el dinero cae sobre todo en el hándicap de Chequia y en el más/menos goles</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de sobrecalentamiento del mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · Más bien frío; la dirección se inclina por Chequia pero con poco volumen y sin prima emocional</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Dos selecciones de baja audiencia + horario no estelar (12:00 ET) + ambas recién derrotadas: tanto la atención al tema como el dinero de las apuestas son escasos. La mayoría de los expertos apuesta por Chequia (base: ventaja a balón parado + doble suspensión de Sudáfrica), pero es un "consenso razonable" más que un sobrecalentamiento. El dinero se concentra en el <b>hándicap de Chequia y en el más/menos goles</b>, no en el simple mercado ganador.</div>
+    </div>
+
+    <h4>① Agregación de recomendaciones de expertos (conteo de dirección: victoria Chequia mayoría · empate minoría · victoria Sudáfrica 0)</h4>
+    <table>
+      <tr><th>Quién</th><th>Perfil</th><th>Opinión / Pick</th></tr>
+      <tr><td>Wincomparator</td><td>Modelo de predicción/cuotas</td><td>Victoria Chequia <b>49.2%</b> / empate 31.6% / Sudáfrica 19.2%; recomienda Más de 2.5 (55.2%)</td></tr>
+      <tr><td>Racing Post</td><td>Medio británico de apuestas</td><td>Victoria Chequia; combinada 7-2 con énfasis en gol de Schick + control de Chequia</td></tr>
+      <tr><td>Squawka</td><td>Medio de datos</td><td>Chequia es el lado más limpio; el ataque de la diezmada Sudáfrica es flojo</td></tr>
+      <tr><td>Goal.com</td><td>Medio de predicciones</td><td>"Perder es quedar eliminado": Chequia es favorita gracias al balón parado y a Schick</td></tr>
+      <tr><td>Compare.bet</td><td>Comparador de cuotas</td><td>Victoria Chequia + ángulo del Más goles</td></tr>
+      <tr><td>Johnnybet / TFA</td><td>Medios de predicción</td><td>Victoria Chequia; Sudáfrica necesita que Williams atajen de todo para tener opción de empate</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Señal de sobrecalentamiento (baja)</b>: la mayoría apuesta a la victoria de Chequia — es un consenso razonable, no un sobrecalentamiento. La verdadera discrepancia está en el <b>más/menos goles (Más vs Menos) y la magnitud del hándicap</b> (-0.5 vs -1), y en si Sudáfrica puede empatar apoyándose en Williams y el bloque bajo. No hay dinero significativo empujando la victoria de Sudáfrica, y la atención al tema es baja en general.</div>
+
+    <h4 style="margin-top:20px">② Movimiento de cuotas (DECIMALES)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Victoria Chequia</th><th>Lectura</th></tr>
+      <tr><td>Apertura (bet365)</td><td>1X2</td><td class="ht">1.75 (-143)</td><td>Claramente inclinado a Chequia; empate 3.80 (+280) / Sudáfrica 5.00 (+400)</td></tr>
+      <tr><td>Cierre 06-17</td><td>Varias casas</td><td class="ht">1.70–1.82 (mejor del mercado 1.82)</td><td>La cuota corta de Chequia oscila en un rango estrecho, básicamente estable</td></tr>
+      <tr><td>06-17</td><td>Más/Menos goles</td><td colspan="2" class="ht">El Más está ligeramente afilado (Más de 2.5 alrededor de 1.88, implícita ≈53%); ambos necesitan marcar para sobrevivir</td></tr>
+      <tr><td>Hándicap (referencia asiática)</td><td>Chequia -0.5 / -1</td><td colspan="2" class="ht">Las cuotas concretas de Chequia -0.5/-1 quedan por confirmar según la línea en tiempo real</td></tr>
+    </table>
+    <div class="note">📌 Las cuotas 1X2 prácticamente no se mueven: el precio del resultado es estable. El descubrimiento de precios más activo está en el <b>hándicap (-0.5/-1) y el más/menos goles (Más ligeramente afilado)</b>, además de las props de gol de Schick en cualquier momento y número de tiros de esquina de Chequia. Solo con fines de análisis — no es consejo de apuestas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de predicción & ④ Opinión pública</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregado de DefiRate)</b>: en este partido Chequia ronda el <b>56%</b> de probabilidad de ganar — coincide con la dirección de las cuotas sin margen; probabilidad de ganar el Grupo A: México 62.5%, Corea del Sur 35%, Chequia 3.4%, Sudáfrica 0.5%, ambas selecciones al borde de quedar fuera. <span style="color:var(--warn)">[El volumen negociado en este partido y el desglose del impulso a 30 días no se han verificado de forma pública por separado · por confirmar]</span></li>
+      <li><b>Foco de la opinión pública</b>: ① <b>Tori Penso se convierte en la segunda árbitra mujer del Mundial masculino</b> — esta es la mayor fuente de tema del partido (el valor narrativo supera al del propio juego); ② las dos suspensiones de Sudáfrica y su lucha por sobrevivir "en la víspera de la eliminación".</li>
+      <li><b>Narrativa de Sudáfrica</b>: plantilla diezmada + xG de 0.07 en el partido inaugural, la confianza pública en una victoria de Sudáfrica es bajísima; hay algo de dinero "de lotería a tiro lejano" apostando a la victoria de Sudáfrica, pero el precio no muestra un repunte claro.</li>
+      <li><b>Narrativa de Chequia</b>: selección fuerte a balón parado + obligada a ganar, la dirección de los expertos está concentrada pero con baja atención — es un "favorito razonable de baja audiencia".</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Lectura integral</b>: la dirección del resultado es clara (Chequia), las casas y los mercados de predicción coinciden, índice de sobrecalentamiento <b>2/5</b> (más bien frío). La atención al tema viene sobre todo del <b>significado histórico de Penso como árbitra mujer</b>, no del partido en sí; los mercados con más contenido informativo son el <b>hándicap de Chequia (-0.5/-1), el más/menos goles y las props de gol de Schick / tiros de esquina de Chequia</b>. Solo con fines de análisis — no es consejo de apuestas.</div>
+    <div class="src" style="margin-top:10px">Fuente: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — Predicción/cuotas</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — Cuotas/apuestas</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — Previa</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — Predicción</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- arbitra -->
+  <section>
+    <h2><span class="n">2</span> Árbitra del partido & entorno de arbitraje</h2>
+    <div class="note">✅ <b>Confirmado</b>: la árbitra principal de este partido es la estadounidense <b>Tori Penso</b> — la <b>segunda mujer en la historia del Mundial masculino en arbitrar un partido oficial</b> (tras Frappart en Qatar 2022); las asistentes serán las estadounidenses Brooke Mayo y Kathryn Nesbitt, y el cuarto árbitro el neozelandés Campbell-Kirk Kawana-Waugh. Fuente: FIFA / ESPN / TelecomAsia.</div>
+    <h4>Últimos dos grandes torneos + criterio de arbitraje internacional (datos reales)</h4>
+    <ul class="cl">
+      <li><b>Muestra real en torneos masculinos (clave)</b>: Penso cuenta con <b>muestra real de arbitraje en torneos masculinos</b> — dirigió 1 partido de fase de grupos en los Juegos Olímpicos masculinos de París 2024; dirigió 2 partidos en el Mundial de Clubes 2025 (Al Ain vs Juventus, Dortmund vs Ulsan) y fue cuarta árbitra 2 veces; dirigió la final del Mundial Femenino 2023 (primera árbitra estadounidense en dirigir una final de Mundial). Esto la distingue de árbitros debutantes sin ninguna muestra en grandes torneos, su valor de referencia es alto, aunque la muestra por partido en torneos masculinos de élite sigue siendo escasa.</li>
+      <li><b>Criterio de tarjetas/penales (muestra internacional integral)</b>: en el cómputo estadístico integral promedia <b>alrededor de 3.3–3.4 amarillas y 0.04 rojas por partido</b>, con unos 25 penales señalados en su carrera (alrededor de <b>0.36/partido</b>): un criterio con bastantes tarjetas. <span style="color:var(--warn)">[Su desglose de tarjetas por partido en una edición concreta de un torneo masculino tiene muestra pequeña, queda sujeto al registro oficial · por confirmar]</span></li>
+      <li><b>Historial arbitral con ambas selecciones</b>: como árbitra estadounidense que dirige desde hace tiempo competiciones de la CONCACAF / MLS / fútbol femenino, <b>no tiene historial arbitral público destacable ni polémicas con Chequia ni con Sudáfrica</b> — no hay sesgo hacia ningún equipo.</li>
+      <li><b>Nuevas reglas unificadas del torneo + señal de entorno</b>: 8 segundos de posesión del balón por el portero, solo el capitán puede comunicarse con el árbitro, fuera de juego semiautomático; en el partido inaugural del torneo salieron 3 rojas seguidas (algo no visto en 20 años de Mundiales), evidencia ya de un entorno de arbitraje más estricto. Si la diezmada Sudáfrica pierde tiempo o rodea al árbitro, restringida por las nuevas reglas y el criterio de bastantes tarjetas de Penso, el riesgo de tarjetas acumuladas (2 amarillas = suspensión para el siguiente partido) sube.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análisis del plano arbitral</b>: el criterio de Penso es de bastantes tarjetas (alrededor de 3.3–3.4 amarillas/partido), y en un partido donde "perder es quedar eliminado" con posible escalada de intensidad, el total de amarillas y las tarjetas acumuladas de Sudáfrica merecen atención; su frecuencia de penales es moderada (alrededor de 0.36/partido), y su criterio en los duelos del área es más bien neutral. Dado que cuenta con muestra real en torneos masculinos (a diferencia de un perfil puramente femenino/liga), el plano arbitral de este partido es una dimensión de análisis aprovechable — pero la muestra por partido en torneos masculinos de élite sigue siendo escasa, así que la extrapolación del criterio debe dejar margen.</div>
+  </section>
+
+  <!-- onces titulares y jugadores clave -->
+  <section>
+    <h2><span class="n">3</span> Onces titulares & rendimiento reciente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Versión prevista — ver el módulo ✅ oficial arriba</span></h2>
+    <div class="sub">Onces previstos (conjeturas de fuentes de análisis, no oficiales; la lista oficial ya salió — ver el módulo "✅ Alineaciones oficiales y lectura" arriba)</div>
+    <h4>🇨🇿 Once previsto de Chequia (4-2-3-1)</h4>
+    <div class="lineup">Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick</div>
+    <table>
+      <tr><th>Jugador</th><th>Posición/Club</th><th>Reciente / Notas</th></tr>
+      <tr><td class="ht">Patrik Schick</td><td>Delantero / Leverkusen</td><td>Núcleo de definición y primer poste a balón parado; en buen momento goleador con su club, es el arma número uno de Chequia para romper a una plantilla diezmada</td></tr>
+      <tr><td class="ht">Tomáš Souček</td><td>Mediocampista / West Ham</td><td>Remate por alto a balón parado y disputador de segundos balones; punto clave de llegada en los tiros de esquina</td></tr>
+      <tr><td class="ht">Lukáš Provod</td><td>Volante por banda / Slavia Praga</td><td>Ejecutor a balón parado y punto de diseño de centros; principal fuente de creatividad en juego abierto</td></tr>
+      <tr><td class="ht">Ladislav Krejčí</td><td>Central / Villarreal</td><td>Salida desde atrás + punto de remate por alto a balón parado, eje de equipo en ambas fases</td></tr>
+    </table>
+    <h4>🇿🇦 Once previsto de Sudáfrica (5-3-2 / 4-3-3, diezmado)</h4>
+    <div class="lineup">Williams(C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster</div>
+    <table>
+      <tr><th>Jugador</th><th>Posición/Club</th><th>Reciente / Notas</th></tr>
+      <tr><td class="sc">Ronwen Williams</td><td>Portero / Capitán</td><td>Héroe de la tanda de penales en la Copa Africana 2023; el mayor sostén de Sudáfrica para buscar el empate, sus atajadas y su mando son la última línea</td></tr>
+      <tr><td class="sc">Lyle Foster</td><td>Delantero / Burnley</td><td>Principal punto de definición de Sudáfrica, pero más allá de Foster falta un recurso ofensivo estable (lo confirma el xG de 0.07 de la 1ª jornada)</td></tr>
+      <tr><td class="sc">Evidence Makgopa</td><td>Delantero</td><td>Marcó ante Camerún en la Copa Africana 2025; podría subir al frente de ataque para sumar peligro</td></tr>
+      <tr><td class="sc">Teboho Mokoena</td><td>Mediocampista</td><td>Núcleo del mediocampo tras la suspensión de Sithole; debe asumir en solitario la intercepción y la salida</td></tr>
+    </table>
+    <div class="note">Nota sobre las listas: los onces previstos de ambos son conjeturas de análisis de los medios (Wincomparator / Racing Post / ESPN), <b>sujeto a la lista oficial previa al partido · por confirmar</b>. Sudáfrica, por la <b>doble suspensión de Sithole + Zwane</b>, está obligada a rehacer el mediocampo y el grupo ofensivo de banca; Chequia se espera que mantenga su esquema a balón parado, con Schick como único punta.</div>
+  </section>
+
+  <!-- tactica + directores tecnicos -->
+  <section>
+    <h2><span class="n">4</span> Estilo táctico & directores técnicos</h2>
+    <div class="sub">Cada conclusión se cruza con el juego y los resultados reales de ambas selecciones en sus dos últimos grandes torneos</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇨🇿 Chequia · Miroslav Koubek</div>
+        <div class="role">4-2-3-1 basado en el balón parado + esfuerzo de carrera + colectivismo, creatividad limitada en juego abierto</div>
+        <ul class="cl">
+          <li>El sello de Chequia es <b>el mejor a balón parado de Europa certificado por Opta</b> (11 goles en clasificación, 7 de tiro de esquina; 4 goles en el repechaje todos a balón parado) + esfuerzo de carrera + cohesión de equipo. Koubek, desde que tomó el mando en 2025-12, llevó a Chequia al Mundial justo con este juego, eliminando por penales a Irlanda y Dinamarca. El remate por alto de Schick/Souček/Krejčí es el arma central.</li>
+          <li>Cruce de referencia: en la Eurocopa 2024 Chequia <b>quedó eliminada como colista de grupo</b> (cayó ante Portugal, empató con Georgia, perdió con 10 hombres ante Turquía), exponiendo el mal crónico de agotarse la creatividad en juego abierto y no aguantar tras adelantarse; ser remontada 2-1 por Corea del Sur tras ir 1-0 en la 1ª jornada es la repetición del mismo mal. Ese es justo el mayor riesgo del partido: si Sudáfrica planta bien su bloque bajo, Chequia podría quedarse de nuevo "sin solución con la posesión".</li>
+          <li>Vía de entrada del partido: Sudáfrica pierde la intercepción y la disputa de segundos balones de Sithole en el mediocampo, y el bombardeo de tiros de esquina y balón parado de Chequia golpea de lleno el punto débil de la plantilla diezmada; Schick fino + Provod centrando con precisión es la vía realista para ganar por la mínima.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 Sudáfrica · Hugo Broos</div>
+        <div class="role">5-3-2 / bloque bajo + contraataque, obligada a ser conservadora con la plantilla diezmada, escasez de definición</div>
+        <ul class="cl">
+          <li>El sello de Broos es un <b>bloque bajo disciplinado + contraataque rápido + una cultura defensiva colectiva con plantilla joven</b> — con este juego llegó a semifinales de la Copa Africana 2023, eliminó por penales a RD Congo y se quedó con el tercer lugar (Williams fue el héroe de los penales), el molde de máximo nivel del equipo.</li>
+          <li>Cruce de referencia: en la Copa Africana 2025 Sudáfrica salió segunda de grupo y cayó 1-2 ante Camerún en octavos (gol de Makgopa), continuando el retrato de "defensa sólida pero escasez de definición"; la derrota 0-2 ante México en el partido inaugural amplificó al extremo esa carencia — <b>un xG total de apenas 0.07</b>, el costo de un 5-3-2 que solo defiende y no ataca se materializó del todo.</li>
+          <li>Respuesta para el partido: tras perder al recuperador de mediocampo Sithole y al recurso ofensivo de banca Zwane, baja la resistencia del bloque bajo de Broos, obligado a debatirse entre "defender a muerte para empatar" y "abrirse para buscar ganar"; la esperanza realista está en las atajadas de Williams, el robo a balón parado y ganar tiempo cuando Chequia no logre abrir el juego — pero abrir el partido con la plantilla diezmada solo le dará a Chequia más ocasiones a balón parado.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- perspectivas de los analistas -->
+  <section>
+    <h2><span class="n">5</span> Perspectivas de los analistas</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· Firma de datos</small></div>Los 11 goles a balón parado de Chequia en la clasificación europea fueron los más de Europa (7 de tiro de esquina, 50% de sus goles), y sus 4 goles en juego corrido del repechaje fueron todos a balón parado — los datos cuantitativos confirman que el balón parado es la fuente de gol más fiable de Chequia; ante una Sudáfrica diezmada que pierde a Sithole en la disputa de segundos balones, esta ventaja se amplifica aún más.</div>
+    <div class="insight"><div class="who">Wincomparator <small>· Modelo de predicción</small></div>Victoria Chequia 49.2% / empate 31.6% / Sudáfrica 19.2%, recomienda Más de 2.5 (55.2%, 1.88) — el modelo considera que el hecho de que ambas "pierdan = queden eliminadas" elevará la apertura y el número de goles, dirección que coincide con las cuotas sin margen.</div>
+    <div class="insight"><div class="who">Perspectiva de hándicap/más-menos goles <small>· Racing Post / Compare.bet</small></div>Varios medios consideran el <b>hándicap de Chequia -0.5/-1 y el Más de 2.5</b> como ángulos con más recorrido que el simple mercado ganador, con base en la ventaja a balón parado de Chequia + la doble suspensión de la diezmada Sudáfrica; el gol de Schick y el número de tiros de esquina de Chequia son el campo de batalla principal del aficionado impulsado por el tema.</div>
+    <div class="insight"><div class="who">Integral · significado histórico y señal arbitral <small>· FIFA / ESPN</small></div>El partido en sí tiene baja atención, pero <b>Tori Penso convirtiéndose en la segunda árbitra mujer del Mundial masculino</b> aporta volumen narrativo histórico. La verdadera incógnita no está en la dirección del resultado, sino en <b>si Chequia puede romper el bloque bajo de Sudáfrica con el balón parado</b>, y en si el criterio arbitral (Penso saca bastantes tarjetas) amplifica las amarillas y las polémicas en el área en la alta intensidad de "la víspera de la eliminación".</div>
+  </section>
+
+  <!-- veredicto integral -->
+  <section>
+    <h2><span class="n">6</span> Veredicto integral & por confirmar</h2>
+    <ul class="cl">
+      <li><b>Inclinación del resultado</b>: una victoria por la mínima de Chequia (1-0 / 2-0 / 2-1, rompiendo a balón parado) es el guion base; el empate (≈32%) es una cola de probabilidad media — si Chequia, como en la 1ª jornada, no logra abrir el juego en jugada corrida y Williams además neutraliza el balón parado, Sudáfrica tiene opción de empatar; una victoria de Sudáfrica (≈19%) requiere que coincidan a la vez una actuación estelar de Williams + un robo a balón parado/contragolpe + que Chequia se quede "sin solución con la posesión".</li>
+      <li><b>Hombres clave</b>: Schick (CZE/núcleo de definición y primer poste a balón parado), Souček + Provod (CZE/remate por alto a balón parado y centros), Williams (RSA/mayor sostén para empatar), Foster/Makgopa (RSA/recursos ofensivos limitados al contragolpe).</li>
+      <li><b>Factor decisivo</b>: el verdadero punto de interés del partido es <b>si el balón parado de Chequia puede romper el bloque bajo de Sudáfrica sin Sithole</b> — eso decide la liquidación del hándicap (-0.5/-1) y del más/menos goles (Más ligeramente afilado). El número de tiros de esquina de Chequia y si Schick anota son el núcleo de las props correspondientes.</li>
+      <li><b>Perspectiva del mercado</b>: las casas y los mercados de predicción coinciden en la dirección (inclinación a Chequia, alrededor de 56%), el valor en el 1X2 es limitado; los mercados con más contenido informativo son el <b>hándicap de Chequia (-0.5/-1), el más/menos goles y las líneas desglosadas de gol de Schick / tiros de esquina de Chequia</b>. Índice de sobrecalentamiento 2/5 (más bien frío, la atención al tema viene del significado histórico de Penso como árbitra mujer, no del mercado ganador).</li>
+    </ul>
+    <div class="flag">⚠ <b>Por confirmar</b>: ① <s>las listas oficiales de ambos</s> <span style="color:var(--good)">✅ confirmadas (dos fuentes, ver el módulo "Alineaciones oficiales y lectura" arriba; 5 rotaciones por lado, Souček al banco)</span>; ② si Chequia tiene alguna baja por lesión no anunciada; ③ el desglose específico de tarjetas por partido de Penso en una edición concreta de torneo masculino (la muestra internacional integral de alrededor de 3.3–3.4 amarillas/partido ya está confirmada); ④ el volumen negociado en este partido y el desglose del impulso a 30 días de Kalshi/Polymarket no se han verificado por separado; ⑤ las cuotas concretas de la línea de hándicap asiático (-0.5/-1) y de la línea total de más/menos goles quedan sujetas a la línea en tiempo real previa al partido.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fuentes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — Calendario/onces/árbitra</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440">FIFA — Centro del partido</a> · <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — Predicción/cuotas</a><br>
+      • <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats">Opta Analyst — Datos de balón parado de Chequia</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history">FIFA — Historia/clasificación de la selección de Chequia</a> · <a href="https://worldsoccertalk.com/world-cup/czechia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — Táctica de Chequia</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta Analyst — Corea del Sur vs Chequia (lo que trae Chequia)</a> · <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup">Opta Analyst — México vs Sudáfrica (lo que trae Sudáfrica/doble suspensión)</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — Cuotas/apuestas</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — Previa</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — Predicción</a> · <a href="https://www.compare.bet/news/czech-republic-vs-south-africa-betting-preview-predictions-tips-and-live-odds">Compare.bet — Comparador de cuotas</a><br>
+      • <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/">TelecomAsia — Designación arbitral de Penso</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa">FIFA — Penso en el Mundial de Clubes</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso">Wikipedia — Trayectoria de Penso</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Mercados de predicción</a><br>
+      • <a href="https://www.cafonline.com/afcon2025/news/cameroon-charge-into-the-quarter-finals-south-africa-fall-short-2-1/">CAF — Sudáfrica en la Copa Africana 2025 (eliminada en octavos)</a> · <a href="https://www.flashscore.com/news/soccer-euro-euro-2024-talking-points-portugal-impress-czech-regret-group-e-set-for-epic-end/ERs5dn9k">Flashscore — Eliminación de Chequia en la Eurocopa 2024</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de análisis de partidos del Mundial 2026 · Datos al 2026-06-17 · Las gráficas usan datos verificados, el gráfico de radar es una evaluación integral de analistas · Solo con fines de análisis — no es consejo de apuestas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#c8102e',SC='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Gana Chequia','Empate','Gana Sudáfrica'],datasets:[{data:[49,32,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Probabilidad implícita % (sin margen)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Más de 2.5 goles','Menos de 2.5 goles'],datasets:[{data:[53,47],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidad implícita % (sin margen, leve inclinación al Más)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['México','Corea del Sur','Chequia','Sudáfrica'],datasets:[{data:[15,23,42,60],backgroundColor:['#16a34a','#3b6fb0',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (más bajo = más fuerte, ilustrativo)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Definición ofensiva','Control de mediocampo','Balón parado','Techo individual','Experiencia en torneos'],
+  datasets:[
+   {label:'Chequia',data:[6.5,6,6,9,7,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Sudáfrica',data:[6,4.5,5.5,5,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

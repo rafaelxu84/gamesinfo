@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Analysis · Czechia vs South Africa · 2026 World Cup Group A Round 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#c8102e;--sc:#e0ad1a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#8a6a13);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#1f1a08);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ec6f7c;font-weight:600}td.sc{color:#ecc24a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🏁 Full-time 1-1 · 2026 World Cup · Group A Round 2 · An "eve of elimination" clash between two teams that lost their openers</span>
+  <h1>Czechia vs South Africa</h1>
+  <div class="meta">June 18, 2026 · Atlanta, Mercedes-Benz Stadium (indoor) · 12:00 ET · Group A (same group: Mexico, South Korea)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇨🇿 Czechia</div><div class="rk">Coached by Koubek · Round 1: lost 1-2 to South Korea · Europe's strongest set pieces (11 goals in qualifying) · lacking open-play creativity</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 South Africa</div><div class="rk">Coached by Broos · Round 1: lost 0-2 to Mexico · Sithole + Zwane both suspended · total xG just 0.07</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics & Data</h2>
+    <div class="sub">Full-time Czechia 1-1 South Africa (HT 1-0) · Mercedes-Benz Stadium, Atlanta, 67,442 · Referee Tori Penso (USA, the second female referee in men's World Cup history) · Data from Sofascore / Opta Analyst / FIFA / ESPN · The pre-match content below is fully preserved as a prediction archive</div>
+
+    <h4>① Scoring Progression</h4>
+    <p style="font-size:14px">This was a <b>two-phase game: Czechia struck early, South Africa controlled and equalized</b>. Just <b>6 minutes</b> in, a Czech move started from a throw-in, Sojka threaded the ball through, and <b>Sadílek</b> slid into the box to finish low with his left foot, 1-0 — the earliest goal of this World Cup so far. From there the script tilted entirely toward South Africa: Bafana Bafana held <b>62%</b> possession and completed 508 of 563 passes, pinning Czechia back with patient circulation and steadily making the territorial edge stick. Czechia, meanwhile, lived up to their pre-match profile — open play wouldn't open up, the attack came down almost entirely to set pieces and crosses into the box, and Schick failed to take two big chances. In the second half South Africa out-shot Czechia 12-9 and their xG climbed from 0.21 at the break to 1.14. In the <b>83rd minute</b>, a long-range Maseko shot struck the arm of Czech substitute <b>Šulc</b>, the referee pointed to the spot, and <b>Mokoena</b> converted to level it, 1-1. Full-time xG read Czechia 1.02 to South Africa 1.35-1.37 — quality and territory roughly even, the lead erased by a single handball penalty.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 6' Sadílek (assist Sojka, from a throw-in move, left-foot finish, 1-0) → 33' Mokoena booked (South Africa's first) → HT 1-0 → 83' Mokoena (penalty, Maseko long shot hit Šulc's arm, 1-1) → FT 1-1</div>
+
+    <h4>② Key Data Comparison</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metric</th><th style="padding:6px">🇨🇿 Czechia</th><th style="padding:6px">🇿🇦 South Africa</th><th style="text-align:left;padding:6px">Read</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Possession</td><td style="text-align:center">38%</td><td style="text-align:center"><b>62%</b></td><td style="padding:6px;color:var(--mut)">South Africa controlled the game with possession and circulation (508/563 passes) — the opposite of the pre-match read ("Czechia's open-play bottleneck, South Africa forced to open up"): it was South Africa, not Czechia, who took the ball</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">1.02</td><td style="text-align:center"><b>1.35</b></td><td style="padding:6px;color:var(--mut)">South Africa's xG rose from 0.21 to 1.14 in the second half — fully shaking off the 0.07 drought of Round 1; Czechia's quality was slightly lower but landed closer to goal</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots / on target</td><td style="text-align:center">14 / 3</td><td style="text-align:center"><b>17 / 4</b></td><td style="padding:6px;color:var(--mut)">South Africa had more total shots, but Czechia led 11-6 on shots inside the box — "volume for South Africa, quality for Czechia"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Big chances</td><td style="text-align:center"><b>3</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">Czechia led 3-1 yet scored only once — Schick missing two big chances is the direct reason they failed to win the game</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Crosses (completed/attempted)</td><td style="text-align:center"><b>7/16 (44%)</b></td><td style="text-align:center">4/17 (24%)</td><td style="padding:6px;color:var(--mut)">Czechia's crossing quality was clearly higher and they won 59% of aerials — the pre-match "set pieces / crosses into the box" theme delivered, but the finishing let them down</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Corners</td><td style="text-align:center">5</td><td style="text-align:center">5</td><td style="padding:6px;color:var(--mut)">5-5 even — Czechia's "corner bombardment" produced no goal; their sharpest pre-match weapon misfired here</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Saves · GK</td><td style="text-align:center">Kovář 3 saves (+0.11 GP)</td><td style="text-align:center">Williams 2 saves</td><td style="padding:6px;color:var(--mut)">Kovář repeatedly snuffed out South Africa's second-half pressure; the penalty was unstoppable. Contrary to the pre-match read ("Williams is South Africa's hope for a draw"), it was the Czech keeper doing the rescuing</td></tr>
+      <tr><td style="padding:6px">Fouls · Yellows</td><td style="text-align:center">1 yellow</td><td style="text-align:center">2 yellows</td><td style="padding:6px;color:var(--mut)">Penso booked 2 South Africa players in the first half (incl. Mokoena 33') and 1 Czech in the second — directionally in line with the pre-match "depleted South Africa accumulated-yellow risk," but the game never lost control</td></tr>
+    </table></div>
+
+    <h4>③ Tactical Review</h4>
+    <div class="insight"><div class="who">① Roles completely reversed: South Africa kept the ball, Czechia took the punches</div>The pre-match line was "Czechia stronger on paper, South Africa forced into a deep defensive block." In reality South Africa held 62% possession, made 508 passes and 58 final-third entries to dominate territory, while Czechia had just 38% and were pinned back. <b>This tells us about South Africa</b>: without Sithole, Broos did not park the bus — he let Mokoena (119 touches, 97 passes, 5 key passes, rating 8.0) run the game as the hub. That is the biggest subversion of the pre-match read; South Africa took their point through possession, not pure defending.</div>
+    <div class="insight"><div class="who">② Czechia's "quality in the box" held up, but the finishing failed</div>Czechia led on shots inside the box (11-6), big chances (3-1), cross accuracy (44% to 24%) and aerial duels (59%) — the pre-match theme of "feed the ball into the box, manufacture quality via crosses and set pieces" did deliver. But Schick missed two big chances and the team managed only 3 of 14 shots on target. <b>This tells us about Czechia</b>: the attacking framework is right (quality concentrated in the box), but the old problem of lacking a reliable finisher proved fatal again — chances created but not taken is exactly why 0 points became 1 and why they couldn't put away a depleted side.</div>
+    <div class="insight"><div class="who">③ The set-piece dividend went uncashed — corners 5-5, bombardment misfired</div>The preview flagged Czechia's "Europe's best set pieces (11 goals in qualifying, 7 from corners)" as the sharpest breakthrough point. Here corners finished 5-5 and not one set piece was converted. Krejčí (rating 7.5, 5 aerials won, 4 shots) was a threat from height, but with Souček on the bench their tallest target was absent — exactly the "intensity downgraded" caveat already noted in the official-lineup module. <b>This tells us about Czechia</b>: set pieces are a paper strength, but when the opponent (even depleted) defends the air with good positioning and you lack your top aerial target, the weapon is not a reliable outlet — the pre-match "intensity downgrade" tweak was precisely validated.</div>
+    <div class="insight"><div class="who">④ Mokoena carried South Africa single-handedly — both metronome and finisher</div>Mokoena had 119 touches (match high), completed 93 of 97 passes, made 5 key passes (most in the game), hit 8 of 8 long balls, made 8 recoveries, and converted the penalty — earning Sofascore's Player of the Match at 8.0. <b>This tells us about South Africa</b>: in a midfield missing Sithole, Mokoena single-handedly took on creation, progression and finishing — exactly matching the pre-match read that "Mokoena must shoulder interception and distribution alone." He turned an expected "absorb-and-defend" night into a "control-and-equalize" one.</div>
+    <div class="insight"><div class="who">⑤ A handball penalty decided the draw — Czechia's "can't hold a lead" affliction recurs</div>Czechia led 1-0 inside 6 minutes, only to be pegged back in the 83rd by a Šulc handball in the box. This mirrors Round 1's "1-0 lead overturned 2-1 by South Korea." <b>This tells us about Czechia</b>: the structural flaw of being unable to extend a lead through open play, then struggling to see the game out, has now shown up in back-to-back games — the only difference is conceding twice and losing in Round 1 versus conceding once and drawing here. A one-dimensional attack (set pieces/crosses, no Plan B) leaves every lead at risk of slipping away.</div>
+
+    <h4>④ Prediction Reconciliation (checking each pre-match conclusion)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>△ <b>Summary conclusion "Czechia win narrowly on set pieces" → actual 1-1 draw</b>: the direction (Czechia taking the initiative, scoring first) was partly right, but "win" fell through — the set-piece bombardment misfired, the finishing failed, and a handball penalty forced the draw.</li>
+      <li>✗ <b>Market-implied Czechia win ≈49% (odds 1.75) / prediction markets ≈56% → no win (draw)</b>: the favorite didn't deliver, landing in the draw (pre-match implied ≈32%), a mid-probability tail.</li>
+      <li>✗ <b>Core read "Czechia set pieces break South Africa's depleted low block" → not delivered</b>: corners 5-5, no set-piece goal; and South Africa didn't sit in a low block at all but took the initiative with 62% possession — both the breakthrough route and the run of play were the opposite of expected.</li>
+      <li>✓ <b>"Czechia lack open-play creativity, no Plan B" → precisely delivered</b>: just 38% possession, Schick missing two big chances, and an inability to extend the lead through open play — the old problem proved fatal again.</li>
+      <li>✓ <b>"South Africa's Round 1 attacking drought of 0.07 xG" → markedly improved here</b>: South Africa's xG recovered to 1.35 (1.14 in the second half), shaking off the drought through Mokoena's control — the opposite of the pessimistic "depleted side can only defend" expectation.</li>
+      <li>△ <b>Over/under lean (Over 2.5 slightly sharp ≈53%) → actual 2 goals (under)</b>: total goals 2, didn't clear 2.5; Over missed but close to the line.</li>
+      <li>✓ <b>Refereeing "Penso cards on the high side, South Africa accumulated-yellow risk" → partly delivered</b>: South Africa took 2 yellows in the first half (incl. Mokoena), 3 yellows total — directionally consistent, without escalating out of control.</li>
+    </ul>
+
+    <h4>⑤ Forward Carryover (into the next match)</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇿 Czechia → 6/24 vs Mexico (final round · Mexico City)</div>① This is a <b>win-or-go-home decider</b>: trailing on 1 point, Czechia must take points off group leaders Mexico in the final round to have any hope of advancing or chasing the third-place spot — a steep ask; ② <b>Finishing efficiency is the weak point</b>: they led 3-1 on big chances yet scored once, with Schick missing twice — against a stronger Mexico, wasting chances again will be even harder to recover from; ③ set pieces remain a paper weapon but misfired here (corners 5-5); they need to find the bombardment intensity (whether Souček returns to the XI is one to watch); ④ <b>"can't hold a lead" has now happened in back-to-back games</b> — against Mexico's wide play and individual quality, the handball/positioning risks in the box need urgent fixing.</div>
+      <div class="insight" style="margin:0"><div class="who">🇿🇦 South Africa → 6/24 vs South Korea (final round · Estadio Monterrey)</div>① Also a <b>win-or-go-home decider</b>: on 1 point, they need to beat South Korea (already on 3 from their win) in the final round to have a chance; ② <b>Mokoena is the engine</b>: possession and creation ran entirely through him (8.0 rating) — against a faster South Korea they'll keep leaning on his distribution, but also need to spread the dependence; ③ <b>the attacking drought is eased</b> (xG 1.35): Broos's shift to keeping the ball rather than defending deep can carry over against South Korea, but they must turn possession into more box chances (just 6 shots inside the box here); ④ the suspended Sithole/Zwane finish their bans after this game and can return for the final round, potentially boosting midfield interception and a late-game spark.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Sources: Sofascore (post-match stats/ratings), Opta Analyst (theanalyst.com), FIFA (match centre), ESPN, Sky Sports. For analysis only — not betting advice.</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">This is a <b>win-or-go-home decider between two teams that lost their openers</b>: Czechia led South Korea 1-0 in Round 1 but were overturned 2-1, while South Africa lost 0-2 to Mexico in their opener and <b>picked up two of the three red cards shown</b> (Sithole and Zwane both suspended for this match). The odds clearly favor Czechia — Czechia win 1.75 (no-vig implied ≈49%), draw 3.80 (≈32%), South Africa win 5.00 (≈19%); prediction markets give Czechia about <b>56%</b>. Czechia's structural trump card is <b>set pieces</b>: their 11 set-piece goals in European qualifying were the most in Europe (7 of them from corners, 50% of all goals), and all 4 of their goals in the playoffs against Ireland and Denmark also came from set pieces — against a depleted South Africa back line that has lost midfield destroyer Sithole, this is the sharpest route to breaking through. The weakness is equally clear: Czechia's <b>open-play creativity is lacking</b> (already exposed by South Korea's low block in Round 1), with no Plan B beyond Schick; South Africa face a <b>depleted squad + an attacking drought with a total xG of 0.07</b>. Base scenario: Czechia win narrowly on set pieces; South Africa cling to a lifeline with a disciplined low block and counters. Market overheat index ≈ 2/5 (two weak sides, low topic traffic).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Czechia implied win % (no-vig)</div><div class="v" style="color:#ec6f7c">≈49%</div></div>
+      <div class="key"><div class="k">South Africa implied win % (no-vig)</div><div class="v" style="color:#ecc24a">≈19%</div></div>
+      <div class="key"><div class="k">Czechia qualifying set-piece goals</div><div class="v" style="color:var(--warn)">11 (most in Europe)</div></div>
+      <div class="key"><div class="k">Market overheat index</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>South Africa's double suspension</b>: midfield destroyer Sithole + their top late-game spark Zwane both absent (Round 1 red cards) — this is the biggest crack in Broos's setup, and Czechia's entry point for tempo and set pieces.</li>
+      <li><b>Czechia set pieces vs South Africa's aerial defense</b>: Czechia's 11 set-piece goals in qualifying led Europe (7 from corners), and all 4 of their playoff goals were set pieces; the aerial bombardment from Schick + Souček + Krejčí is the tactical core of this match.</li>
+      <li><b>Czechia's open-play bottleneck</b>: after taking the lead in Round 1 they were neutralized by South Korea's low block, ran dry of open-play creativity and were ultimately overturned — if South Africa set up a solid low block, Czechia could once again get stuck "controlling possession with no answer."</li>
+      <li><b>Match referee Tori Penso (USA)</b>: the second female referee in men's World Cup history (after Frappart in 2022); her international sample shows a high cards-per-game average (around 3.3-3.4), and combined with this tournament's strict enforcement environment, the accumulated-yellow risk for a depleted South Africa is worth watching.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match-Day News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match-Day News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals affecting this match, with each item explained for how it changes tactics or outcome (including carry-over items from each team's last match)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">South Africa · last-match carry-over · double suspension <span style="color:var(--mut);font-weight:400">· opener review transfer · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">South Africa lost 0-2 to Mexico in Round 1 with <b>both Sithole + Zwane red-carded and suspended</b>, facing Czechia depleted</div>
+      <p style="font-size:13.5px">Carrying forward the preview transfer from the opener review: in South Africa's 0-2 loss to Mexico, <b>Sithole (50', straight red for hauling down a clear breakaway) and Zwane (82', straight red via VAR for slapping an opponent) are both suspended for this match</b> — the former is the workhorse who throttles the midfield and shuts down the opponent's playmaking outlet, the latter Broos's top late-game spark when chasing the game. More troubling, in that match South Africa had a <b>total xG of just 0.07</b> (3 shots, 0 on target, only 2 touches in the box), thoroughly confirming the picture of pure defense being unable to earn points. Forced to open up the game with a depleted squad, the risk is even greater.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Sithole's absence directly weakens South Africa's midfield coverage and interceptions, making Souček/Provod's progression and the fight for set-piece second balls easier for Czechia; Zwane's absence strips away Broos's only high-quality counter-attacking spark when trailing. These two suspensions compress South Africa from "packed defense + steal on the counter" to "almost only able to dig in," which is the core argument for viewing the Czechia handicap (-0.5/-1) as a sharper angle.</div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — Mexico vs South Africa post-match stats</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — 3 red cards match report</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">Czechia · last-match carry-over · open-play bottleneck <span style="color:var(--mut);font-weight:400">· South Korea match review transfer · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Czechia led 1-0 in Round 1 but were <b>overturned 2-1 by South Korea</b>; the set-piece weapon is proven, but open-play creativity is lacking</div>
+      <p style="font-size:13.5px">Carrying forward the preview transfer from the South Korea match review: Czechia took a 1-0 lead in Round 1, then were overturned 2-1 by South Korea — the set-piece weapon (an early goal from a routine) is proven, but <b>after taking the lead their open-play creativity ran dry</b>, they gradually lost their grip against South Korea's pressing and possession control, and the old problem of having no second route to break through beyond Schick was exposed again. Qualification picture: Czechia have 0 points, but they only face Mexico in the final round and play depleted South Africa here — their fate is still in their own hands, and they must take all 3 points.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: How efficiently Czechia can break down South Africa's low block is the biggest tactical question of this match. If, like Round 1, they can't open things up in open play, set pieces (corners) become almost the only source of goals — which happens to be Czechia's strength and the depleted South Africa's weakness, two signals stacking together to point at the main scenario of Czechia "winning on set pieces."</div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — South Korea vs Czechia post-match stats</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Czechia · structural trump card <span style="color:var(--mut);font-weight:400">· Opta Analyst · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Czechia's <b>11 set-piece goals in European qualifying were the most in Europe</b> (7 from corners, 50% of all goals); all 4 playoff goals were set pieces</div>
+      <p style="font-size:13.5px">According to Opta, Czechia's set-piece goals in the 2026 World Cup European qualifiers (11) were the most in Europe, of which 7 corner goals were the single-category high, and set pieces accounted for 50% of all goals; aside from the penalty shootouts in the two playoffs en route to the World Cup, all 4 of their open-play goals against Ireland and Denmark also came from set pieces. Schick (near-post attack + finishing), Souček (aerial target), and Krejčí are the main aerial weapons; Provod is the routine designer, free-kick taker, and crossing point.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: South Africa's Round 1 concessions stemmed partly from their own buildup errors, and now they lose Sithole, a central interceptor/second-ball contester — Czechia's corner and set-piece bombardment lands exactly on the weakest link of a depleted South Africa. This is a route with far more information value than "open-play shootout," and it also underpins the angle on the Czechia handicap.</div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats" style="color:var(--accent)">Opta Analyst — Czechia set-piece data</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history" style="color:var(--accent)">FIFA — Czechia team history</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">Lineups · predicted XI <span style="color:var(--mut);font-weight:400">· Wincomparator · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Czechia expected to stick with their set-piece lineup (Schick as lone striker); South Africa forced to rebuild midfield, with Makgopa/Foster up front</div>
+      <p style="font-size:13.5px">Czechia predicted XI: Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick — continuing the qualifying set-piece framework, with Schick as the finishing focal point. South Africa are forced to rebuild due to the Sithole/Zwane suspensions: Williams (C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster — Moremi steps into Sithole's midfield role, with Makgopa partnering Foster up front. <span style="color:var(--warn)">[both official lineups subject to the pre-match FIFA team sheet · to be confirmed]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: After losing Sithole, the interception and second-ball-contest quality of South Africa's Mokoena/Moremi drops — exactly the target zone for Czechia's set pieces and Souček's forward runs; if Schick is on form and Provod's crossing is accurate, Czechia's odds of breaking down a depleted side rise significantly. Both changes move the handicap and the first-to-score market.</div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/" style="color:var(--accent)">Wincomparator — predicted XI/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/" style="color:var(--accent)">Racing Post — team news/betting</a> · <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview/predicted XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · referee officially announced <span style="color:var(--mut);font-weight:400">· FIFA / ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: US official <b>Tori Penso</b> — the <b>second female referee</b> in men's World Cup history</div>
+      <p style="font-size:13.5px">FIFA has appointed US official <b>Tori Penso</b> to referee this Group A Round 2 match; she will become the <b>second female referee to officiate a match at a men's World Cup</b> (after Frappart at Qatar 2022). The assistant referees are the USA's Brooke Mayo and Kathryn Nesbitt, with New Zealand's Campbell-Kirk Kawana-Waugh as fourth official. Penso refereed the 2023 Women's World Cup final (the first US referee to officiate a World Cup final) and has real men's tournament samples from the 2024 Paris Olympics men's football and the 2025 Club World Cup (officiating Al Ain vs Juventus and Dortmund vs Ulsan). The match is played indoors at Atlanta's Mercedes-Benz Stadium, with no weather variable.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Penso's international sample shows a high cards-per-game average (around 3.3-3.4), and combined with this tournament's strict enforcement environment (3 reds in the opener alone), if a depleted South Africa stalls or gets into emotional confrontations, the cost of accumulated yellows (2 yellows = next-match ban) and penalty-area fouls will be amplified; her penalty frequency is about 0.36/game, so her threshold on box duels is worth watching. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Source: <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/" style="color:var(--accent)">TelecomAsia — Penso appointment</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa" style="color:var(--accent)">FIFA — Penso Club World Cup officiating</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed Lineups -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2014,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Two-source confirmed (FIFA official + 101GreatGoals) · released ~50 min before kick-off</span></h2>
+    <div class="sub">Each side makes <b>5 changes</b>, all manager rotations (not late injury shocks). <span style="color:var(--good)">✅ Officially confirmed</span></div>
+
+    <div class="twocol">
+      <div>
+        <h4>🇨🇿 Czechia Starting XI <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA-tagged 5-2-3</span></h4>
+        <div class="lineup">Kovář(1); Holeš(3) · Hranáč(4) · Coufal(5) · Krejčí(7,C); Darida(8) · Červ(12) · Sadílek(18) · Sojka(24); Hložek(9) · Schick(10)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: <b>Souček(22)</b> (set-piece target man / ball-winner, dropped) · <b>Provod(17)</b> (left-side creativity) · <b>Šulc(15)</b> (free-roaming No.10)</div>
+      </div>
+      <div>
+        <h4>🇿🇦 South Africa Starting XI <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA-tagged 4-2-3-1</span></h4>
+        <div class="lineup">Williams(1,C); Mudau(20) · Mbokazi(14) · Okon(21) · Modiba(6); Mokoena(4) · Mbatha(5); Appollis(7) · Adams(23) · Maseko(12); Rayners(15)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: <b>Foster(9)</b> (Premier League striker, second-half firepower) · <b>Mofokeng(10)</b> (spark) · <b>Makgopa(17)</b> (target man) · <b>Moremi(8)</b></div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">📋 vs Predicted XI</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">CZE · DM</td><td>Souček starts</td><td>Souček benched</td><td>Their best aerial presence sits — the "quality" of set-piece bombardment drops. This is the point where the snapshot's core thesis needs a tweak.</td></tr>
+      <tr><td class="ht">CZE · midfield</td><td>Provod · Šulc</td><td>Darida · Červ · Sadílek</td><td>Swapped for a running/ball-progression trio — a direct response to the opener's "movement-play creativity dried up, throttled by a low block."</td></tr>
+      <tr><td class="ht">CZE · attack</td><td>Schick lone striker</td><td>Hložek + Schick</td><td>Two-striker depth added, pressing South Africa's high line and opening more counter space.</td></tr>
+      <tr><td class="sc">RSA · centre-back</td><td>Sibisi</td><td>Okon</td><td>Defensive rotation; Okon comes in at centre-back.</td></tr>
+      <tr><td class="sc">RSA · mid/front</td><td>Moremi / Makgopa · Foster</td><td>Mbatha · Adams / Rayners lone striker</td><td>Broos drops PL striker Foster for a more controlling midfield + Rayners up top — a continuation of the pragmatic "low block + counter" script.</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">🧠 Tactical Read</h4>
+    <ul class="watch">
+      <li><b>Snapshot conclusion: holds, but the set-piece line is tweaked</b> — the snapshot listed "Schick + Souček + Krejčí aerial bombardment" as the core breaking point, yet Souček is benched, removing Czechia's tallest aerial threat and lowering the intensity of corner/set-piece bombardment vs expectation; Krejčí, Hranáč, Holeš and Hložek still offer aerial presence, and Souček remains a second-half option. <b>The set-piece edge stays as the main line, intensity revised down.</b></li>
+      <li><b>Czechia's midfield overhaul is a direct response to the weak spot</b>: Darida + Červ + Sadílek replace Souček/Provod/Šulc, adding running, ball progression and forward runs — addressing the opener problem of being throttled by South Korea's low block with no answer in possession, hedging the snapshot's "lack of open-play creativity."</li>
+      <li><b>Hložek alongside Schick (FIFA 5-2-3)</b>: from a lone striker to two points up top, adding penetration; if South Africa push up, Czechia get more counter space.</li>
+      <li><b>South Africa: Rayners lone striker, Foster dropped</b>: Broos picks a controlling midfield (Mbatha + Adams) + Rayners over PL-level Foster, continuing the disciplined "low block + counter" script and echoing the snapshot's "scrap for a lifeline via a low block"; but the opener's 0.07 xG attacking drought is not clearly eased by the changes, with Foster/Mofokeng held as second-half chase-down options.</li>
+    </ul>
+
+    <div class="note">📊 <b>Market reaction</b>: as of this module (≈50 min before kick-off), no clear 1X2/over-under line movement detected after lineups dropped. With low interest in both sides and changes being manager rotations rather than injury shocks, line reaction is expected to be limited. Stated as fact only, not betting advice.</div>
+
+    <div style="font-size:12px;margin-top:12px;color:var(--mut)">Sources: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440" style="color:var(--accent)">FIFA official Match Centre — Line Up</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/world-cup-2026-live-czechia-vs-south-africa-teams-line-ups-tv-channel-live-online-stream/" style="color:var(--accent)">101GreatGoals — confirmed teams</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">1X2 implied probabilities (odds no-vig) · Group A picture · over/under market · overall strength profile — all charts are verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (no-vig, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (no-vig)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group A four teams' FIFA ranking (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0-10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇿 Czechia</th><th>🇿🇦 South Africa</th></tr>
+      <tr><td>Head coach</td><td class="ht">Miroslav Koubek (took over from Hašek in 2025-12)</td><td class="sc">Hugo Broos (Belgian)</td></tr>
+      <tr><td>Round 1 result</td><td class="ht">Lost 1-2 to South Korea (led 1-0, then overturned)</td><td class="sc">Lost 0-2 to Mexico (2 red cards)</td></tr>
+      <tr><td>Suspensions/absences this match</td><td class="ht">No confirmed key suspensions</td><td class="sc"><b>Sithole + Zwane both suspended</b> (Round 1 reds)</td></tr>
+      <tr><td>Route to qualification</td><td class="ht">Runners-up in European qualifying group (behind Croatia) + playoff penalty wins over Ireland and Denmark</td><td class="sc">Topped their African qualifying group</td></tr>
+      <tr><td>Set-piece profile</td><td class="ht"><b>11 set-piece goals in European qualifying, most in Europe</b> (7 corners, 50% of goals)</td><td class="sc">Round 1 xG 0.07, misfiring in both open play and set pieces</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 bottom of group, eliminated · Euro 2020 last 16 (lost to Denmark)</td><td class="sc">AFCON 2023 third place · AFCON 2025 last 16 (lost to Cameroon)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win 1.75 (implied ≈49%)</td><td class="sc">Win 5.00 (≈19%) · Draw 3.80 (≈32%)</td></tr>
+      <tr><td>Over / Under 2.5 goals</td><td colspan="2" class="sc">Over slightly sharper (Over 2.5 about 1.88, implied ≈53%); both teams need to score to survive, raising scoreline volatility</td></tr>
+      <tr><td>Key players</td><td class="ht">Patrik Schick / Tomáš Souček / Lukáš Provod</td><td class="sc">Ronwen Williams / Lyle Foster / Evidence Makgopa</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are no-vig implied probabilities derived from DECIMAL odds (≈49/32/19). Odds source: bet365 (Czechia 1.75 / -143, draw 3.80 / +280, South Africa 5.00 / +400), American-to-decimal: -143→1.70, +280→3.80, +400→5.00 (best market price reaches Czechia 1.82, South Africa 4.00). Over/Under line is at 2.5: Over 2.5 about 1.88 (implied ≈53%, slightly sharper); both teams being "win-or-out" raises the openness; BTTS (both teams to score) about 2.00. Czechia handicap -0.5/-1 to be confirmed against the live pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this-tournament actual · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendly samples)</b> with its <b>actual values from matches already played at this World Cup</b>, item by item, to see "whether this tournament is above or below the historical level, and what that tells us." Public xG samples for national teams are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: Historical average vs this World Cup actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (Round 1)</th><th>Delta &amp; read</th></tr>
+      <tr><td class="ht">🇨🇿 Czechia · Attack xG/goals</td><td class="ht">Goals-per-game in Euro qualifying ran high but <b>50% came from set pieces</b> (11 set-piece goals, most in Europe); at Euro 2024 finals, only 2 goals in 3 matches</td><td class="ht">Round 1 <b>xG 0.81</b>, 1 goal scored (1-2 loss to Korea after leading 1-0)</td><td>This tournament's open-play creativity is close to the "finals misfire" tier (≈0.8 xG), <b>below</b> the glossy goal tallies from qualifying — the set-piece dividend went unredeemed this match, and open play lacks a Plan B</td></tr>
+      <tr><td class="ht">🇨🇿 Czechia · Defence xGA/goals conceded</td><td class="ht">Mid-table back line in Euro qualifying; advanced via a play-off shoot-out, not known for clean sheets</td><td class="ht">Round 1 conceded <b>1.84 xGA</b> to Korea, 2 goals (turned over after leading)</td><td><b>Worse</b> than the historical impression: cannot defend central penetration, and game management collapses after taking the lead — a structural risk against opponents with positional-play ability</td></tr>
+      <tr><td class="sc">🇿🇦 South Africa · Attack xG/goals</td><td class="sc">As 2023 AFCON third place it advanced on "few goals + penalties" with a barren attack; low goals-per-game in qualifying and friendlies (winless in last 5, 1-1 Jamaica, 0-0 Nicaragua)</td><td class="sc">Round 1 <b>xG 0.07</b> (effectively zero threat all match), 0 goals</td><td><b>Far below</b> an already-barren historical baseline — 0.07 is among the worst in the team's history; with <b>Sithole + Zwane both suspended</b>, the attack becomes even more unsolvable</td></tr>
+      <tr><td class="sc">🇿🇦 South Africa · Defence xGA/goals conceded</td><td class="sc">Historical foundation = disciplined low-block defending (went far at AFCON on conceding few)</td><td class="sc">Round 1 conceded 2 goals; back line breached after 2 red cards</td><td>The red cards nullified the "only strength"; down a man + key suspensions revise this match's defensive baseline further down</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: both teams' actual values this tournament are <b>below</b> their respective historical baselines — Czechia's open play has fallen back to the finals-misfire tier (0.81 xG) with set pieces unredeemed; South Africa's attack (0.07 xG) is a historical low and the defence is compounded by red cards + double suspension. The deep data is consistent with the main line that "Czechia is stronger on paper, but breaking down the low block still needs a Plan B beyond Schick." Sources: Opta Analyst (Round 1 xG/stats) · FotMob/Sofascore (Round 1 data) · team major-tournament/qualifying public records. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model-projected xG (xGscore)</td><td class="ht">Czechia ≈1.4</td><td class="sc">South Africa ≈0.6</td><td>After calibration Czechia's projection is clearly ahead — but "breaking a packed low block" has historically been Czechia's weakness, so watch the conversion efficiency</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Czechia sits firmly near the top of Group A, South Africa at the bottom; the supercomputer gives Czechia a win ≈49% (in line with the no-vig odds)</td><td>After opponent-strength calibration, Czechia's sample carries more weight than South Africa's (South Africa faced weaker opponents)</td></tr>
+      <tr><td>Pressing PPDA · xT · Field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Czechia mid-to-high block + set-piece bombardment, South Africa forced into a low block but a tier short on execution</td><td>Field tilt will most likely lean toward Czechia for long stretches</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-type" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (expected goals / non-penalty expected goals): the total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (expected goals against): the quality of chances opponents create against you, measuring true defensive level rather than saves/luck.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (expected goal difference per 90): xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (average shot quality): whether shot selection is efficient — a low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes allowed per defensive action): the lower the value, the more aggressive the press, reflecting pressing intensity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of touches in the attacking third, measuring territory/game control rather than mere possession share.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources such as Opta/FotMob/Sofascore/Understat/xGscore; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are always marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· expert picks / odds / money flow / public opinion</span></h2>
+    <div class="sub">A clash between two weak sides that both lost their openers — low topic traffic, thin money, but the direction consistently leans Czechia; money mainly on the Czechia handicap and over/under</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · cool; direction leans Czechia but low traffic, no emotional premium</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Two low-profile teams + an off-peak slot (12:00 ET) + both fresh off defeats — both topic heat and betting money are thin. Most experts pick Czechia (rationale: set-piece edge + South Africa's double suspension), but it's "reasonable consensus" rather than overheated. Money is concentrated on the <b>Czechia handicap and over/under</b>, not the straight match result.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (directional tally: Czechia win majority · draw minority · South Africa win 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Identity</th><th>View / Pick</th></tr>
+      <tr><td>Wincomparator</td><td>prediction/odds model</td><td>Czechia win <b>49.2%</b> / draw 31.6% / South Africa 19.2%; main pick Over 2.5 (55.2%)</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>Czechia win; 7-2 bet builder leaning on a Schick goal + Czechia control</td></tr>
+      <tr><td>Squawka</td><td>data media</td><td>Czechia the cleaner side; depleted South Africa lacks attacking threat</td></tr>
+      <tr><td>Goal.com</td><td>prediction media</td><td>"win or out" — Czechia favored on set pieces and Schick</td></tr>
+      <tr><td>Compare.bet</td><td>odds aggregator</td><td>Czechia win + over angle</td></tr>
+      <tr><td>Johnnybet / TFA</td><td>prediction media</td><td>Czechia win; South Africa need a Williams masterclass to have a draw chance</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (low)</b>: most pick Czechia on the result — this is reasonable consensus, not overheating. The real divergence is in the <b>over/under (Over vs Under) and the handicap size</b> (-0.5 vs -1), plus whether South Africa can grind out a draw via Williams and a low block. There's no significant money pushing a South Africa win, and topic heat is low overall.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Czechia win</th><th>Read</th></tr>
+      <tr><td>Open (bet365)</td><td>1X2</td><td class="ht">1.75 (-143)</td><td>Clearly leans Czechia; draw 3.80 (+280) / South Africa 5.00 (+400)</td></tr>
+      <tr><td>06-17 close</td><td>multi-platform</td><td class="ht">1.70-1.82 (best market 1.82)</td><td>Czechia's short price oscillates in a narrow band, basically stable</td></tr>
+      <tr><td>06-17</td><td>Over/Under</td><td colspan="2" class="ht">Over slightly sharper (Over 2.5 about 1.88, implied ≈53%); both teams need to score to survive</td></tr>
+      <tr><td>Handicap (Asian line reference)</td><td>Czechia -0.5 / -1</td><td colspan="2" class="ht">Czechia -0.5/-1 specific odds to be confirmed against the live line</td></tr>
+    </table>
+    <div class="note">📌 1X2 odds are basically static — result pricing is stable. The most active price discovery is in the <b>handicap (-0.5/-1) and over/under (over slightly sharper)</b>, plus Schick anytime scorer and Czechia corner-count props. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Public opinion</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (DefiRate aggregation)</b>: this match gives Czechia about <b>56%</b> — consistent with the no-vig betting direction; Group A win probabilities: Mexico 62.5%, South Korea 35%, Czechia 3.4%, South Africa 0.5%, both teams already on the brink of elimination. <span style="color:var(--warn)">[single-match volume and 30-day momentum breakdown for this match not separately found publicly · to be confirmed]</span></li>
+      <li><b>Public opinion focus</b>: ① <b>Tori Penso becoming the second female referee at a men's World Cup</b> — the biggest source of topic traffic for this match (narrative value above the match itself); ② South Africa's double suspension and "eve of elimination" survival fight.</li>
+      <li><b>South Africa narrative</b>: depleted squad + opener xG 0.07, the public has extremely low confidence in a South Africa win; a small amount of "long-shot lottery" money is on South Africa winning, but the price hasn't visibly moved up.</li>
+      <li><b>Czechia narrative</b>: a strong set-piece side + must win, with experts concentrated on the direction but low heat — a "reasonable favorite with low attention."</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Combined read</b>: the result direction is clear (Czechia), betting and prediction markets agree, overheat index <b>2/5</b> (cool). Topic heat comes mainly from <b>the historic significance of Penso as a female referee</b>, not the match itself; the most informative markets are the <b>Czechia handicap (-0.5/-1), over/under, and Schick goal / Czechia corner props</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Source: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — prediction/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — odds/betting</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — preview</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — prediction</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is US official <b>Tori Penso</b> — the <b>second female referee to officiate a match at a men's World Cup</b> (after Frappart at Qatar 2022); assistants are the USA's Brooke Mayo and Kathryn Nesbitt, with New Zealand's Campbell-Kirk Kawana-Waugh as fourth official. Source: FIFA / ESPN / TelecomAsia.</div>
+    <h4>Last two major tournaments + international officiating threshold (actual data)</h4>
+    <ul class="cl">
+      <li><b>Actual men's tournament sample (key)</b>: Penso has an <b>actual men's tournament officiating sample</b> — she officiated 1 group-stage match at the 2024 Paris Olympics men's football; at the 2025 Club World Cup she officiated 2 matches (Al Ain vs Juventus, Dortmund vs Ulsan) and served twice as fourth official; she refereed the 2023 Women's World Cup final (the first US referee to officiate a World Cup final). This distinguishes her from newcomers with no major-tournament sample at all, giving her higher reference value, but the single-match sample at top-tier men's tournaments is still small.</li>
+      <li><b>Cards/penalty threshold (combined international sample)</b>: across combined statistical bases she averages <b>about 3.3-3.4 yellows and 0.04 red per game</b>, with about 25 career penalties awarded (about <b>0.36/game</b>) — a threshold on the card-heavy side. <span style="color:var(--warn)">[her per-tournament card breakdown in men's competition is a small sample, defer to official records · to be confirmed]</span></li>
+      <li><b>Officiating history with both teams</b>: as a US referee long active in CONCACAF / MLS / women's competitions, she has <b>no significant public officiating history or controversy with either Czechia or South Africa</b> — no team bias to speak of.</li>
+      <li><b>This tournament's unified new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may speak with the referee, semi-automated offside; this tournament's opener alone saw 3 reds in a row (first time in 20 years of World Cups), empirical evidence that the officiating environment leans strict. If a depleted South Africa stalls or surrounds the referee, constrained by the new rules and Penso's card-heavy threshold, the accumulated-yellow risk (2 yellows = next-match ban) rises.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: Penso's card threshold leans heavy (about 3.3-3.4 yellows/game); in a "win-or-out" match where intensity could escalate, the total cards and South Africa's accumulated yellows are worth watching; her penalty frequency is moderate (about 0.36/game), with a fairly neutral threshold on box duels. Given she has an actual men's tournament sample (distinct from a purely women's/league background), the referee angle is a usable analytical dimension here — but the single-match sample at top-tier men's tournaments is still small, so extrapolating the threshold needs some margin.</div>
+  </section>
+
+  <!-- Lineups & Key Players -->
+  <section>
+    <h2><span class="n">3</span> Lineups & Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version — see the ✅ official module above</span></h2>
+    <div class="sub">Predicted XI (analyst-source estimates, not official; the official team sheet is now out — see the "✅ Confirmed Lineups &amp; What They Mean" module above)</div>
+    <h4>🇨🇿 Czechia predicted XI (4-2-3-1)</h4>
+    <div class="lineup">Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Patrik Schick</td><td>Forward / Leverkusen</td><td>Finishing core and set-piece near-post target; in club scoring form, the top weapon to break down a depleted side</td></tr>
+      <tr><td class="ht">Tomáš Souček</td><td>Midfielder / West Ham</td><td>Aerial set-piece target and second-ball contester; key arriving runner on corner attacks</td></tr>
+      <tr><td class="ht">Lukáš Provod</td><td>Wide midfielder / Slavia Prague</td><td>Set-piece taker and crossing/routine designer; the main source of open-play creativity</td></tr>
+      <tr><td class="ht">Ladislav Krejčí</td><td>Center-back / Villarreal</td><td>Buildup from the back + set-piece attacking target, the axis at both ends</td></tr>
+    </table>
+    <h4>🇿🇦 South Africa predicted XI (5-3-2 / 4-3-3, depleted)</h4>
+    <div class="lineup">Williams(C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Ronwen Williams</td><td>Goalkeeper / Captain</td><td>AFCON 2023 shootout hero; South Africa's biggest hope for a draw, his saves and organization are the floor</td></tr>
+      <tr><td class="sc">Lyle Foster</td><td>Forward / Burnley</td><td>South Africa's main finishing outlet, but beyond Foster there's no steady spark (Round 1 xG 0.07 confirms it)</td></tr>
+      <tr><td class="sc">Evidence Makgopa</td><td>Forward</td><td>Scored against Cameroon at AFCON 2025; may push up front to add threat</td></tr>
+      <tr><td class="sc">Teboho Mokoena</td><td>Midfielder</td><td>Midfield anchor after Sithole's suspension; must shoulder interceptions and buildup single-handedly</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analyst estimates (Wincomparator / Racing Post / ESPN), <b>subject to the official pre-match team sheet · to be confirmed</b>. South Africa are forced to rebuild their midfield and late-game attacking group due to the <b>Sithole + Zwane double suspension</b>; Czechia are expected to continue the set-piece framework, with Schick as lone striker.</div>
+  </section>
+
+  <!-- Tactics + Coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style & Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual approach and results in their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇨🇿 Czechia · Miroslav Koubek</div>
+        <div class="role">4-2-3-1 built on set pieces + hard running + cohesion, limited open-play creativity</div>
+        <ul class="cl">
+          <li>Czechia's hallmark is <b>Opta-certified set pieces, the strongest in Europe</b> (11 goals in qualifying, 7 corners; all 4 playoff goals from set pieces) + hard running + team cohesion — since taking over in 2025-12, Koubek used exactly this approach to win penalty shootouts over Ireland and Denmark to reach the World Cup. The aerial threat of Schick/Souček/Krejčí is the core weapon.</li>
+          <li>Cross-reference: at Euro 2024 Czechia <b>finished bottom of their group and were eliminated</b> (lost to Portugal, drew Georgia, lost to Türkiye with 10 men), exposing the chronic ailments of open-play creativity drying up and being unable to hold a lead; the 1-0 lead overturned 2-1 by South Korea in Round 1 is a repeat of the same affliction. This is the biggest risk in this match — if South Africa hold a solid low block, Czechia could once again find themselves "controlling possession with no answer."</li>
+          <li>Entry point this match: South Africa losing Sithole's midfield interceptions and second-ball contest leaves Czechia's corner and set-piece bombardment hitting the depleted side's soft spot; Schick on form + Provod's accurate crossing is the realistic route to a narrow win.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 South Africa · Hugo Broos</div>
+        <div class="role">5-3-2 / low block + counters, forced conservative when depleted, lacking finishers</div>
+        <ul class="cl">
+          <li>Broos's hallmark is a <b>disciplined low block + fast counters + a youthful collective defensive culture</b> — at AFCON 2023 this approach took them to the semifinals and a penalty-shootout win over DR Congo for third place (Williams the shootout hero), the team's standout template.</li>
+          <li>Cross-reference: at AFCON 2025 South Africa qualified as group runners-up and lost 1-2 to Cameroon in the last 16 (Makgopa scored), continuing the picture of "solid defense but lacking finishers"; the opener loss 0-2 to Mexico magnified this shortcoming to the extreme — a <b>total xG of just 0.07</b>, the full cost of a 5-3-2 that only defends and never attacks coming due.</li>
+          <li>Response this match: after losing midfield destroyer Sithole and late-game spark Zwane, the resilience of Broos's low block drops, forcing a dilemma between "dig in for a draw" and "open up to win"; the realistic hope lies in Williams's saves, set-piece ambushes, and stalling when Czechia can't open up in open play — but opening up the game with a depleted squad will only feed Czechia more set-piece chances.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· data agency</small></div>Czechia's 11 set-piece goals in European qualifying were the most in Europe (7 from corners, 50% of goals), and all 4 of their playoff open-play goals were set pieces — the quantified data confirms set pieces are Czechia's most reliable source of goals; against a depleted South Africa that has lost Sithole as a second-ball contester, this edge is further amplified.</div>
+    <div class="insight"><div class="who">Wincomparator <small>· prediction model</small></div>Czechia win 49.2% / draw 31.6% / South Africa 19.2%, main pick Over 2.5 (55.2%, 1.88) — the model believes both teams being "win-or-out" will push up openness and goal count, with the direction consistent with the no-vig betting market.</div>
+    <div class="insight"><div class="who">Handicap/over-under view <small>· Racing Post / Compare.bet</small></div>Multiple outlets see <b>Czechia -0.5/-1 and Over 2.5</b> as having more of an angle than the straight result, on the basis of Czechia's set-piece edge + South Africa's depleted double-suspension squad; Schick goals and Czechia corner counts are the topic-driven retail battleground.</div>
+    <div class="insight"><div class="who">Combined · historic significance and referee signals <small>· FIFA / ESPN</small></div>The match itself draws low attention, but <b>Tori Penso becoming the second female referee at a men's World Cup</b> brings historic-narrative traffic. The real suspense isn't the result direction but <b>whether Czechia can break down South Africa's low block via set pieces</b>, and whether the referee threshold (Penso card-heavy) amplifies yellows and box controversies in the high-intensity "eve of elimination" setting.</div>
+  </section>
+
+  <!-- Overall Assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment & To Be Confirmed</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow Czechia win (1-0 / 2-0 / 2-1, breaking through on set pieces) is the base scenario; a draw (≈32%) is a medium-probability tail — if Czechia can't open up in open play like Round 1 and Williams neutralizes their set pieces, South Africa have a chance to grind out a draw; a South Africa win (≈19%) needs a Williams masterclass + set-piece/counter ambushes + Czechia "controlling with no answer" all happening at once.</li>
+      <li><b>Key men</b>: Schick (CZE/finishing and set-piece near-post core), Souček + Provod (CZE/corner aerial target and crossing), Williams (RSA/biggest hope for a draw), Foster/Makgopa (RSA/limited counter spark).</li>
+      <li><b>Decisive factor</b>: the real watch point is <b>whether Czechia's set pieces can break down South Africa's low block missing Sithole</b> — which decides the settlement of the handicap (-0.5/-1) and over/under (over slightly sharper). Czechia's corner count and whether Schick scores are the cores of the corresponding props.</li>
+      <li><b>Market view</b>: betting and prediction markets agree on direction (lean Czechia, about 56%), 1X2 value is limited; the most informative markets are the <b>Czechia handicap (-0.5/-1), over/under, and Schick goal / Czechia corner sub-markets</b>. Overheat index 2/5 (cool, topic heat comes from the historic significance of Penso as a female referee, not the result market).</li>
+    </ul>
+    <div class="flag">⚠ <b>To be confirmed</b>: ① <s>both official starting lineups</s> <span style="color:var(--good)">✅ confirmed (two-source, see the "Confirmed Lineups &amp; What They Mean" module above; 5 rotations each side, Souček benched)</span>; ② whether Czechia have any undisclosed injuries/suspensions; ③ Penso's specific per-tournament cards-per-game breakdown in men's competition (combined international sample about 3.3-3.4 yellows/game already confirmed); ④ Kalshi/Polymarket single-match volume and 30-day momentum breakdown for this match not separately found; ⑤ the Asian handicap line (-0.5/-1) and over/under total line specific odds defer to the live pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — schedule/lineups/referee</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440">FIFA — Match Centre</a> · <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — prediction/odds</a><br>
+      • <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats">Opta Analyst — Czechia set-piece data</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history">FIFA — Czechia team history/qualification</a> · <a href="https://worldsoccertalk.com/world-cup/czechia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — Czechia tactics</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta Analyst — South Korea vs Czechia (Czechia carry-over)</a> · <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup">Opta Analyst — Mexico vs South Africa (South Africa carry-over/double suspension)</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — odds/betting</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — preview</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — prediction</a> · <a href="https://www.compare.bet/news/czech-republic-vs-south-africa-betting-preview-predictions-tips-and-live-odds">Compare.bet — odds aggregation</a><br>
+      • <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/">TelecomAsia — Penso appointment</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa">FIFA — Penso Club World Cup</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso">Wikipedia — Penso profile</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — prediction markets</a><br>
+      • <a href="https://www.cafonline.com/afcon2025/news/cameroon-charge-into-the-quarter-finals-south-africa-fall-short-2-1/">CAF — South Africa AFCON 2025 (last-16 exit)</a> · <a href="https://www.flashscore.com/news/soccer-euro-euro-2024-talking-points-portugal-impress-czech-regret-group-e-set-for-epic-end/ERs5dn9k">Flashscore — Czechia Euro 2024 exit</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-17 · Charts are verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#c8102e',SC='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Czechia Win','Draw','South Africa Win'],datasets:[{data:[49,32,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (no-vig)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[53,47],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (no-vig, slightly over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Mexico','South Korea','Czechia','South Africa'],datasets:[{data:[15,23,42,60],backgroundColor:['#16a34a','#3b6fb0',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger, illustrative)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive Solidity','Attacking Finishing','Midfield Control','Set Pieces','Individual Ceiling','Tournament Experience'],
+  datasets:[
+   {label:'Czechia',data:[6.5,6,6,9,7,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'South Africa',data:[6,4.5,5.5,5,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

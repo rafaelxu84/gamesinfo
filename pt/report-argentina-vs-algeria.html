@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analise Pre-Jogo · Argentina vs Argelia · Copa do Mundo 2026 Grupo J</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-argentina-vs-algeria.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#75aadb;--sc:#0a7a3f;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI",sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d4e89,#0a7a3f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13243a,#0e2a1c);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc4ee;font-weight:600}td.sc{color:#5fc28b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/pt/index.html">← Voltar ao Centro de Analise</a><br>
+  <span class="badge">&#x1F3C1; FINAL 3-0 · Copa do Mundo 2026 · Rodada 1 Grupo J · Hat-trick de Messi (17'/60'/76') iguala Klose como maior artilheiro da historia da Copa</span>
+  <h1>Argentina vs Argelia</h1>
+  <div class="meta">16 de junho de 2026 · Arrowhead Stadium, Kansas City · 21:00 ET · Grupo J (tambem: Austria, Jordania)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#9cc4ee">&#x1F1E6;&#x1F1F7; Argentina</div><div class="rk">FIFA #1 · Campea mundial atual · Liderada por Messi · 5 vitorias seguidas</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fc28b">&#x1F1E9;&#x1F1FF; Argelia</div><div class="rk">FIFA #28 · Forte africana · Capitao Mahrez · Letal na transicao</div></div>
+  </div>
+
+  <!-- ===== Analise pos-jogo ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">&#x1F4CA;</span> Analise pos-jogo: tatica e dados</h2>
+    <div class="sub">Final Argentina 3-0 Argelia (1&#x186; tempo 1-0) · Dados: Sofascore / Opta / FotMob / FIFA / ESPN · O conteudo de pre-jogo abaixo foi preservado integralmente como arquivo de previsao</div>
+
+    <h4>&#x2460; Como o placar se desenrolou</h4>
+    <p style="font-size:14px">Uma estreia de "roteiro cumprido, detalhes acima do previsto". <b>Messi</b> achou que tinha aberto o placar de perto no <b>minuto 8</b>, mas a bandeira subiu por impedimento; no <b>minuto 17</b> ele superou Luca Zidane com um drible marca registrada e uma finalizacao de canhota da entrada da area, 1-0 no intervalo. Na volta, no <b>minuto 60</b>, um chute de longe de <b>Mac Allister</b> foi espalmado pelo goleiro e Messi chegou para o toque no rebote, fazendo 2-0; no <b>minuto 76</b> ele bateu rasteiro no canto de fora da area, <b>igualando Klose com 16 gols para se tornar o maior artilheiro da historia da Copa</b> e ultrapassando Mbappé como o lider em atividade. Foi substituido no <b>minuto 79</b> sob uma ovacao de pe (poupado para o mata-mata). A Argelia teve apenas o gol de Chaibi aos 9 minutos (tambem anulado por impedimento) e nunca incomodou a defesa argentina.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 8' gol de Messi (impedimento, anulado) · 9' gol de Chaibi (impedimento, anulado) → 17' Messi (1-0) → Intervalo 1-0 → 60' Messi (rebote, 2-0) → 76' Messi (rasteiro no canto, 3-0) → 79' sai Messi → Final 3-0</div>
+
+    <h4>&#x2461; Comparativo de dados-chave</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metrica</th><th style="padding:6px">&#x1F1E6;&#x1F1F7; Argentina</th><th style="padding:6px">&#x1F1E9;&#x1F1FF; Argelia</th><th style="text-align:left;padding:6px">Leitura</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.00</b></td><td style="text-align:center">&#x2248;0.6 <span style="color:var(--warn)">a confirmar</span></td><td style="padding:6px;color:var(--mut)">Qualidade de chances argentina dominante; 3 gols ate superam o xG</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Posse de bola</td><td style="text-align:center">&#x2248;48%</td><td style="text-align:center"><b>&#x2248;52%</b></td><td style="padding:6px;color:var(--mut)">A Argelia teve mais bola mas nao produziu nada: posse esteril de manual</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Finalizacoes / no alvo</td><td style="text-align:center"><b>10 / 6</b></td><td style="text-align:center">7 / 1</td><td style="padding:6px;color:var(--mut)">Argentina letal com 6 no alvo; Argelia apenas 1</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Escanteios</td><td style="text-align:center">2</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">Nenhum gol em bola parada; a Argentina venceu no jogo aberto</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Amarelos / Vermelhos</td><td style="text-align:center">0 / 0</td><td style="text-align:center">0 / 0</td><td style="padding:6px;color:var(--mut)">Marciniak nao deu cartoes: sem tensao, diferenca de nivel clara</td></tr>
+      <tr><td style="padding:6px">Gols no jogo aberto</td><td style="text-align:center"><b>3 (todos de Messi)</b></td><td style="text-align:center">0</td><td style="padding:6px;color:var(--mut)">Todos os gols argentinos definidos por Messi: dependencia extrema do nucleo</td></tr>
+    </table></div>
+
+    <h4>&#x2462; Revisao tatica</h4>
+    <div class="insight"><div class="who">&#x2460; Aos 38, Messi ainda e o teto e o motor da Argentina</div>Os tres gols sairam so de Messi (um drible e chute, um toque oportunista no rebote, uma definicao fria de fora), e o jogo estava decidido antes da sua substituicao protetora aos 79'. <b>Isso diz sobre a Argentina</b>: apesar do elenco profundo, o teto e o piso do ataque dependem de um unico homem; quando ele esta em forma, resolve sozinho contra rivais medianos, mas tambem significa que um adversario de mata-mata so precisa congelar Messi para reduzir a expectativa de gols da Argentina.</div>
+    <div class="insight"><div class="who">&#x2461; O jogo sem sofrer gols veio como previsto, mas gracas a um adversario fraco</div>A Argentina limitou a Argelia a apenas 1 finalizacao no alvo e &#x2248;0.6 de xG, prolongando o retrospecto de "1 gol sofrido em 7". <b>Isso diz sobre a Argentina</b>: a defesa e de fato de primeira linha na disciplina, mas o valor desse jogo sem sofrer gols fica limitado pela falta de perigo do rival; o verdadeiro teste defensivo espera diante de um time com finalizador, entao nao convem ler isso como prova de que a defesa na transicao ja foi validada.</div>
+    <div class="insight"><div class="who">&#x2462; "52% de posse e zero finalizacoes no alvo" da Argelia: as presas do contra-ataque nunca morderam</div>A tese de pre-jogo colocava a criatividade de Mahrez + a velocidade de Amoura como o caminho realista do azarao vivo para pontuar; na pratica a Argelia teve mais bola mas nao conseguiu transforma-la em perigo, so o gol impedido de Chaibi. <b>Isso diz sobre a Argelia</b>: diante de um forte time compacto e disciplinado, falta-lhes o ultimo passe e a finalizacao para romper um bloco baixo, e seu teto individual fica muito comprimido pela defesa sistemica; seu modelo de contra so funciona se o adversario sobe e deixa espaco: quando o rival e paciente, eles se apagam.</div>
+    <div class="insight"><div class="who">&#x2463; Scaloni executou com limpeza o "gerenciamento de minutos"</div>Com o hat-trick feito e o 2-0 garantido, Messi saiu aos 79' sem risco desnecessario de lesao. <b>Isso diz sobre a Argentina</b>: a comissao gerencia o isquiotibial com criterio de "o suficiente basta": extrair o valor do nucleo em um jogo vencivel e depois proteger; esse controle de ritmo e justamente a marca de uma campea atual construida para um torneio longo.</div>
+
+    <h4>&#x2463; Balanco das previsoes (cada palpite de pre-jogo conferido)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>Vitoria da Argentina (sem margem &#x2248;68%, base 2-0/2-1) → real 3-0</b>: resultado plenamente cumprido, placar ainda mais contundente que a base (3 gols de margem, hándicap -1.5 / -2 ambos cobrem).</li>
+      <li>✓ <b>A inclinacao deste relatorio ao Mais de 2.5 → 3 gols, Mais de 2.5 acerta</b>: a leitura de poder ofensivo superou a tendencia do supercomputador ao Menos; o lado do Mais ganhou.</li>
+      <li>✓ <b>"Gerenciamento do isquiotibial de Messi + minutos, a maior variavel" → titular, hat-trick, substituicao protetora aos 79'</b>: a historia central cravada com precisao.</li>
+      <li>✗ <b>"As transicoes de Mahrez/Amoura mantem a Argelia como ameaca viva" → Argelia so 1 finalizacao no alvo, nenhuma ameaca no jogo aberto</b>: superestimou-se a capacidade da Argelia de pontuar; a tese do "azarao vivo" foi refutada.</li>
+      <li>~ <b>"Argentina 2-0, Menos o mais provavel" do supercomputador</b>: vencedor certo, mas placar e total errados (real 3-0, Mais).</li>
+    </ul>
+
+    <h4>&#x2464; Transferencia para frente (rumo ao proximo jogo)</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">&#x1F1E6;&#x1F1F7; Argentina → 22/6 vs Austria (Arlington, AT&amp;T Stadium, 13:00 ET)</div>① <b>Sem novas suspensoes/lesoes</b>: zero cartoes, Messi protegido cedo, titulares descansados. ② <b>Caminho de gol repetivel</b>: o "gol no rebote" de Messi (chute de longe + toque na segunda bola) funcionou duas vezes aqui; se a Austria tambem se fechar, atencao. ③ <b>Fraqueza exposta</b>: o ataque depende muito de Messi finalizar; se a Austria (FIFA #24, mais organizada que a Argelia) ousar marca-lo individualmente e congela-lo, testara se um segundo finalizador (Lautaro nao marcou aqui) aparece.</div>
+      <div class="insight" style="margin:0"><div class="who">&#x1F1E9;&#x1F1FF; Argelia → 22/6 vs Jordania (Area da Baia de SF, Levi's Stadium, 21:00 ET)</div>① <b>Sem novas suspensoes/lesoes</b>: terminou sem cartoes. ② <b>Falha fatal exposta</b>: 52% de posse e zero finalizacoes no alvo; falta-lhes o ultimo passe e a finalizacao para romper uma defesa fechada; a Jordania (FIFA #63) e mais fraca e cedera mais espaco, o que torna este o teste-chave de se o ataque consegue converter. ③ <b>Motivo de esperanca</b>: a velocidade de Amoura se mede melhor contra uma defesa mais fraca; e a vitoria mais realista da Argelia para seguir viva na classificacao, e eles precisam aproveita-la.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Fontes: Al Jazeera, ESPN, Yahoo Sports, FotMob, Sofascore, FIFA Match Centre, Goal.com. Apenas para fins de analise — nao e recomendacao de apostas.</p>
+  </section>
+
+  <div class="summary">
+    <h3>&#x1F4CB; RESUMO RAPIDO (Leia isto primeiro)</h3>
+    <p class="lead">Esta e a <b>estreia da campea com um roteiro claro mas um suspense central</b>: Argentina FIFA #1, campea da Copa de 2022 (liderada por Messi, com Lautaro de centroavante, em sequencia de cinco vitorias e tendo sofrido apenas 3 gols em 6 jogos de eliminatorias gracas a uma defesa de elite) vs Argelia FIFA #28 (forte africana construida em torno do capitao Mahrez como eixo criativo, com a velocidade e a verticalidade de Mohamed Amoura pelas pontas como principal ameaca de gol). O mercado inclina com forca — vitoria da Argentina <b>1.38–1.42</b> (probabilidade implicita sem margem &#x2248;68%), empate <b>4.50–4.60</b> (&#x2248;20%), vitoria da Argelia <b>7.00–9.00</b> (&#x2248;12%). Os mercados de predicao (Kalshi/Polymarket) dao a Argentina 71% de vencer a Argelia, &#x2248;71.5% de avancar do Grupo J e &#x2248;10% de ganhar o torneio. <b>A verdadeira historia e o gerenciamento do isquiotibial de Messi (38)</b> — confirmado no elenco e previsto como titular, mas como Scaloni administra seus minutos e a maior incerteza da partida. Roteiro base: <b>Argentina vence 2-0 / 2-1</b>; a Argelia, um azarao vivo, se mantem relevante pelas transicoes de Mahrez/Amoura.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implicita Vitoria Argentina</div><div class="v" style="color:#9cc4ee">&#x2248;68%</div></div>
+      <div class="key"><div class="k">Prob. implicita Vitoria Argelia</div><div class="v" style="color:#5fc28b">&#x2248;12%</div></div>
+      <div class="key"><div class="k">Mercado pred. · Argentina campea</div><div class="v" style="color:var(--warn)">&#x2248;10%</div></div>
+      <div class="key"><div class="k">Indice de Calor do Mercado</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>O isquiotibial de Messi e seus minutos</b>: o jogador de 38 anos esta confirmado e e esperado como titular, mas vem sendo gerenciado por um incomodo muscular — se Scaloni limita seus minutos e quando o substitui e a maior variavel para o poder ofensivo da Argentina e o apelo da partida.</li>
+      <li><b>A defesa de elite da Argentina</b>: apenas 3 gols sofridos em 6 jogos de eliminatorias e somente 1 nos ultimos 7; a dupla de zagueiros Romero + Lisandro Martínez e o quebra-cabeca que a Argelia precisa resolver.</li>
+      <li><b>A ameaca em transicao de Mahrez e Amoura</b>: Mahrez (capitao, 113 jogos, 38 gols) e o eixo de bola parada e criacao; Amoura (artilheiro com 10 gols em 8 eliminatorias) e sua velocidade sao a via mais realista de gol para a Argelia.</li>
+      <li><b>Desacordo no mercado de gols</b>: o supercomputador se inclina ao "Menos" (Argentina 2-0 como placar mais provavel), mas o poder de fogo da Argentina e a postura aberta da Argelia colocam varios especialistas no "Mais" — o unico mercado realmente bilateral aqui.</li>
+    </ul>
+  </div>
+
+  <!-- Noticias Chave -->
+  <section style="border:1px solid #1d4e6b;background:linear-gradient(135deg,#13202f,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">&#x1F534;</span> Noticias Chave da Partida <span style="font-size:12px;color:var(--mut);font-weight:500">· Modulo central · Com fontes + Por que importa</span></h2>
+    <div class="sub">Sinais de primeira mao que afetam esta partida — cada item explicado em termos de impacto tatico ou no resultado</div>
+
+    <div style="border-left:3px solid var(--accent);background:#0d1526;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">&#x1F195; Atualização matinal (16 jun) <span style="color:var(--mut);font-weight:400">· ESPN · Sports Mole · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Argentina sem lesionados: Messi, Emi Martínez e Julián Álvarez em forma; Messi fará seu 200º jogo pela seleção</div>
+      <p style="font-size:13.5px">A ESPN informa que a Argentina está "tranquila": Messi (totalmente recuperado após 20 minutos diante da Islândia), o goleiro Emiliano Martínez (liberado depois de fraturar um dedo antes da final da Liga Europa) e Julián Álvarez estão à disposição. Messi fará seu 200º jogo pela seleção e será o primeiro a disputar seis Copas do Mundo diferentes; deve formar dupla com Lautaro Martínez no ataque. A atual campeã estreia com força máxima — coerente com a leitura desta página: a Argentina é ampla favorita e a Argélia tentará a surpresa no contra-ataque com Amoura/Mahrez. <span style="color:var(--warn)">[Escalação final conforme a relação oficial em T-60 · pendente]</span></p>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://sports.yahoo.com/articles/preview-argentina-vs-algeria-team-010500837.html" style="color:var(--accent)">ESPN — Argentina sem lesionados</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html" style="color:var(--accent)">Sports Mole — escalação provável</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Argentina · Gerenciamento do isquiotibial de Messi <span style="color:var(--mut);font-weight:400">· Multiplas fontes · Jun 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Messi (38) confirmado e previsto como titular, gerenciando um incomodo no isquiotibial</b>; esta partida marca seu jogo 200 pela selecao e sua sexta Copa consecutiva</div>
+      <p style="font-size:13.5px">Lionel Messi esta prestes a fazer historia como o primeiro homem a jogar seis Copas diferentes; este e tambem seu jogo 200 pela selecao (sua 27.&#170; partida no torneio). Esta confirmado no elenco e e esperado como titular, mas vem gerenciando um incomodo no isquiotibial — como Scaloni administra seus minutos (se limita a carga e quando o substitui para proteger sua condicao de olho nas fases eliminatorias) e a historia que enquadra todo o jogo. <span style="color:var(--warn)">[Titularidade exata e minutos de Messi — sujeito a escalacao oficial pre-jogo e a decisoes durante o jogo (A CONFIRMAR)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Por que importa</b>: Messi continua sendo o maior ponto de producao da Argentina em criacao e bola parada. Se seus minutos forem limitados ou ele sair cedo, a criatividade e a eficiencia ofensiva da Argentina podem oscilar, abrindo espaco para a Argelia no contra-ataque — afetando diretamente o suspense e a direcao do mercado de gols.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://sports.yahoo.com/articles/preview-argentina-vs-algeria-team-010500837.html" style="color:var(--accent)">Yahoo Sports — Pre-jogo / historia de Messi</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html" style="color:var(--accent)">Sports Mole — Escalacao provavel da Argentina</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Argentina · Forma e numeros defensivos <span style="color:var(--mut);font-weight:400">· Multiplas fontes · Jun 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>A Argentina chega com cinco vitorias seguidas (apenas 1 gol sofrido nos ultimos 7)</b>, tendo sofrido apenas 3 em 6 eliminatorias e como lider da CONMEBOL</div>
+      <p style="font-size:13.5px">A campea atual chega em otima forma: liderou as eliminatorias sul-americanas, esta em sequencia de cinco vitorias e sofreu apenas um gol nos ultimos sete jogos — de elite nos dois lados do campo. Lautaro Martínez comanda o ataque, Julián Álvarez oferece uma opcao versatil e um meio-campo campeao com De Paul, Mac Allister e Enzo Fernández controla o centro. <span style="color:var(--warn)">[Escalacao final e rodizio — sujeitos a escalacao oficial pre-jogo (A CONFIRMAR)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Por que importa</b>: Os numeros defensivos da Argentina sao a base de sua posicao no mercado — eles reduzem a expectativa de gols da Argelia e sao a razao central pela qual o supercomputador projeta "Argentina 2-0, Menos" como resultado mais provavel. Se a zaga mantiver essa forma, marcar se torna dificilimo para a Argelia.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-algeria-prediction-team-news-lineups_599163.html" style="color:var(--accent)">Sports Mole — Pre-jogo / forma da Argentina</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/" style="color:var(--accent)">Racing Post — Odds / dados</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--sc);font-weight:700">Argelia · Elenco de Petković e destaques <span style="color:var(--mut);font-weight:400">· FIFA · beIN Sports · Mai-Jun 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Petković anuncia o elenco: Mahrez lidera, Amoura e o artilheiro, Luca Zidane no gol</b></div>
+      <p style="font-size:13.5px">O treinador Vladimir Petković convocou um elenco preliminar de 27 jogadores. O capitao e lider absoluto Riyad Mahrez (113 jogos, 38 gols) retorna para comandar a equipe; o atacante do VfL Wolfsburg Mohamed Amoura terminou como artilheiro da Argelia nas eliminatorias com 10 gols em 8 jogos; o jovem meia do Bayer Leverkusen Ibrahim Maza e uma peca-chave do futuro; e o goleiro do Granada Luca Zidane — filho da lenda francesa — aparece debaixo das traves. <span style="color:var(--warn)">[Escalacao inicial — sujeita a escalacao oficial pre-jogo (A CONFIRMAR)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Por que importa</b>: A Argelia possui um teto individual genuino (a criatividade de Mahrez + a velocidade de Amoura), o que a torna um azarao vivo e nao mera coadjuvante. Se a Argentina perder concentracao no gerenciamento de Messi ou na atencao defensiva, a ameaca em transicao de Amoura basta para fabricar um gol surpresa.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-squad-announcement-vladimir-petkovic" style="color:var(--accent)">FIFA — Elenco da Argelia (Petković)</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/vladimir-petkovi-s-official-algeria-squad-for-the-2026-fifa-world-cup-2026-05-31" style="color:var(--accent)">beIN Sports — Elenco da Argelia</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Mercado de gols · Desacordo genuino <span style="color:var(--mut);font-weight:400">· Multiplas fontes · Jun 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">O supercomputador se inclina ao "Menos" (Argentina 2-0 o mais provavel), mas varios especialistas apoiam o "Mais" — e o mercado mais bilateral da partida</div>
+      <p style="font-size:13.5px">A linha de Mais/Menos 2,5 esta quase equilibrada: Mais 2,5 em torno de 10/11 (melhor preco -105, BetOnline), Menos 2,5 em torno do par (1/1), com probabilidades sem margem de aproximadamente 52/48. O argumento do "Menos": a Argentina sofreu apenas 1 nos ultimos 7 e a Argelia apenas 2 nos ultimos 6, ambas as defesas solidas (um supercomputador projeta Argentina 2-0 como placar mais provavel e recomenda o "Menos"). O argumento do "Mais": o poder de fogo da Argentina (4 dos seus ultimos 6 foram Mais 2,5) e a tendencia da Argelia de jogar aberto. Este relatorio se inclina <b>levemente ao "Mais"</b> no balanco. <span style="color:var(--warn)">[Linhas especificas por casa — sujeitas a mercados ao vivo pre-jogo (A CONFIRMAR)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Por que importa</b>: Diferente do forte consenso sobre o resultado, o mercado de gols e o unico com desacordo genuino. Sua direcao depende de duas variaveis — os minutos de Messi (a producao ofensiva da Argentina) e se a Argelia ousa adiantar as linhas (o espaco para um jogo aberto).</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html" style="color:var(--accent)">Yahoo Sports — Predicao de gols</a> · <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/" style="color:var(--accent)">Sportscasting — Supercomputador / placar mais provavel</a></div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Dados (Central)</h2>
+    <div class="sub">Ranking FIFA · Probabilidades 1X2 sem margem · Panorama Grupo J · Mercado de gols — todos os graficos baseados em dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidades 1X2 sem margem (odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Mais/Menos 2,5 gols — Prob. implicita sem margem</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Grupo J — Ranking FIFA (menor = mais forte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de forca global (avaliacao analistas 0-10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>&#x1F1E6;&#x1F1F7; Argentina</th><th>&#x1F1E9;&#x1F1FF; Argelia</th></tr>
+      <tr><td>Ranking FIFA</td><td class="ht">#1</td><td class="sc">#28</td></tr>
+      <tr><td>Historia na Copa</td><td class="ht">Campea atual (2022) · potencia tradicional</td><td class="sc">Forte africana (1982/1986/2010/2014)</td></tr>
+      <tr><td>Forma recente</td><td class="ht">5 vitorias seguidas; so 1 sofrido em 7; 3 em 6 eliminatorias</td><td class="sc">Defesa igualmente solida (2 em 6); Amoura 10 em 8</td></tr>
+      <tr><td>Treinador</td><td class="ht">Lionel Scaloni</td><td class="sc">Vladimir Petković</td></tr>
+      <tr><td>Odds 1X2 (DECIMAIS)</td><td class="ht">Vitoria 1.38–1.42 (&#x2248;68%)</td><td class="sc">Vitoria 7.00–9.00 (&#x2248;12%) · Empate 4.50–4.60 (&#x2248;20%)</td></tr>
+      <tr><td>Mais / Menos 2,5 gols</td><td colspan="2" class="sc">Mais 2,5 &#x2248; 1.91 (-105, BetOnline) / Menos 2,5 &#x2248; 2.00 — quase equilibrado, este relatorio se inclina levemente ao "Mais"</td></tr>
+      <tr><td>Mercados de predicao</td><td colspan="2">Kalshi/Polymarket: Argentina 71% vence a Argelia · &#x2248;71.5% avanca · &#x2248;10% campea</td></tr>
+      <tr><td>Ponto de atencao</td><td class="ht">Gerenciamento do isquiotibial de Messi (A CONFIRMAR)</td><td class="sc">Ameaca em transicao de Mahrez/Amoura</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; As probabilidades sao valores implicitos sem margem calculados a partir de odds DECIMAIS (&#x2248;68/20/12). De linha americana para decimal: Argentina bet365 -239&#x2192;1.42 / BetOnline -245&#x2192;1.41 / FanDuel -270&#x2192;1.37; Empate +350&#x2192;4.50 / +360&#x2192;4.60; Argelia bet365 +600&#x2192;7.00 / FanDuel +800&#x2192;9.00. Os mercados de predicao (Kalshi/Polymarket, via agregacao da DefiRate) coincidem em direcao com as odds sem margem: Argentina 71% de vencer, &#x2248;71.5% de avancar, &#x2248;10% de ser campea — precificacao razoavel, com apenas um leve premio narrativo do lado da Argentina. Apenas para fins de analise — nao e recomendacao de apostas.</div>
+  </section>
+
+  <!-- Calor do Mercado -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">&#x1F525;</span> Calor do Mercado <span style="font-size:12px;color:var(--mut);font-weight:500">· Picks de especialistas / odds / dinheiro / sentimento</span></h2>
+    <div class="sub">O consenso em uma vitoria da Argentina e esmagador; a divisao real e o mercado de gols e a margem do handicap. A estreia de Messi defendendo o titulo atrai trafego, mas a precificacao continua razoavel</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Indice de Calor do Mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">&#x1F525;&#x1F525;&#x1F525;<span style="opacity:.25">&#x1F525;&#x1F525;</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Direcao vitoria Argentina unificada; gols/handicap genuinamente disputados</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">O consenso direcional em uma vitoria da Argentina e solido (nenhum especialista escolhe a Argelia), e e um consenso razoavel. A narrativa da estreia de Messi defendendo o titulo atrai muita atencao, criando um leve premio emocional do lado da Argentina, mas as odds sem margem coincidem com os mercados de predicao. A verdadeira divisao de valor e o mercado de gols (equilibrado) e a margem do handicap.</div>
+    </div>
+
+    <h4>&#x2460; Resumo de especialistas (Contagem direcional: Vitoria Argentina Todos · Argelia 0 · Empate 0)</h4>
+    <table>
+      <tr><th>Fonte</th><th>Papel</th><th>Opiniao / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>Midia de predicao</td><td><b>Vitoria Argentina</b> (em torno de 2-0 / 2-1)</td></tr>
+      <tr><td>Supercomputador Sportscasting</td><td>Modelo de dados</td><td>Argentina 2-0 placar mais provavel (14.1%); recomenda <b>Menos 2,5</b> (-110)</td></tr>
+      <tr><td>Yahoo Sports</td><td>Midia de predicao</td><td>Vitoria Argentina; em partes se inclina ao <b>Mais 2,5</b> (poder da Argentina + Argelia aberta)</td></tr>
+      <tr><td>Racing Post</td><td>Midia de apostas Reino Unido</td><td>Vitoria Argentina; Menos 2,5 a 1/1 visto como valor (ambas defesas solidas)</td></tr>
+      <tr><td>Squawka / Forebet</td><td>Midias de dados</td><td>Vitoria Argentina; placar apertado; Argelia mantem ameaca no contra</td></tr>
+      <tr><td>Rotowire</td><td>Midia de tatica/escalacoes</td><td>Argentina 4-3-3 no controle; Argelia 4-2-3-1 no contra-ataque</td></tr>
+    </table>
+    <div class="flag">&#x26A0; <b>Sinal de calor (moderado)</b>: O consenso direcional em uma vitoria da Argentina e absoluto — ninguem escolhe a Argelia — mas e um consenso razoavel, nao excesso irracional. A divisao real esta no <b>mercado de gols 2,5</b> (Menos do supercomputador vs Mais baseado no poder de fogo) e na <b>margem do handicap</b> (se o -1,5 se sustenta depende dos minutos de Messi e do rodizio da Argentina). O dinheiro emocional se concentra mais no lado "Vitoria Argentina + Mais" da estreia defendendo o titulo.</div>
+
+    <h4 style="margin-top:20px">&#x2461; Movimento de odds (DECIMAIS)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitoria Argentina</th><th>Leitura</th></tr>
+      <tr><td>Faixa de mercado</td><td>1X2</td><td class="ht">1.38–1.42</td><td>Forte inclinacao; Empate 4.50–4.60 / Argelia 7.00–9.00</td></tr>
+      <tr><td>Por casa</td><td>1X2 (exemplos)</td><td class="ht">bet365 1.42 · BetOnline 1.41 · FanDuel 1.37</td><td>FanDuel a mais otimista com a Argentina (-270)</td></tr>
+      <tr><td>Gols</td><td>Mais 2,5 / Menos 2,5</td><td colspan="2" class="ht">Mais 2,5 &#x2248; 1.91 (-105); Menos 2,5 &#x2248; 2.00 (1/1) — quase equilibrado</td></tr>
+      <tr><td>Handicap asiatico (ref.)</td><td>Argentina -1 / -1,5</td><td colspan="2" class="sc">Argentina -1 e a linha base; -1,5 depende dos minutos de Messi e do rodizio (linha nao odds — A CONFIRMAR)</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; O 1X2 esta muito inclinado e estavel, mostrando que o mercado quase nao tem duvidas sobre uma vitoria da Argentina. A batalha do dinheiro se concentra no <b>mercado de gols 2,5</b> (equilibrado, com precos que refletem a divisao) e na <b>margem do handicap</b>. No nivel do handicap asiatico, Argentina -1 captura a expectativa base de "vencer por um", enquanto -1,5 e o ponto de valor genuinamente disputado. Apenas para fins de analise — nao e recomendacao de apostas.</div>
+
+    <h4 style="margin-top:20px">&#x2462; Mercados de predicao &amp; &#x2463; Sentimento</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (via agregacao da DefiRate)</b>: Argentina 71% de vencer a Argelia — alinhado em direcao com as odds sem margem (&#x2248;68%) e um pouco mais alto, refletindo o leve premio narrativo da estreia defendendo o titulo.</li>
+      <li><b>Avanco e titulo</b>: Argentina &#x2248;71.5% de avancar do Grupo J e &#x2248;10% de ganhar todo o torneio — uma chance de titulo de primeiro nivel mas nao esmagadora entre os favoritos.</li>
+      <li><b>Foco do sentimento</b>: a sexta Copa de Messi, seu jogo 200 e o gerenciamento do isquiotibial dominam a grande maioria da cobertura; a estreia de uma campea atual atrai atencao naturalmente e e a fonte do premio emocional do lado da Argentina.</li>
+      <li><b>Disputa de gols</b>: o "Menos" do supercomputador/lado defensivo vs o "Mais" do lado poder de fogo/aberto e o desacordo mais substantivo do debate.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">&#x1F9ED; <b>Leitura de conjunto</b>: Os mercados de apostas e de predicao convergiram completamente na direcao do resultado (Argentina &#x2248;68–71%) — Indice de Calor <b>3/5</b>, consenso solido com apenas um leve premio narrativo do lado da Argentina. O mercado com mais informacao util e o <b>mercado de gols 2,5</b> (este relatorio se inclina levemente ao "Mais") e a <b>margem do handicap</b>. Apenas para fins de analise — nao e recomendacao de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/">Racing Post — Odds/Apostas</a> · <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/">Sportscasting — Supercomputador</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html">Yahoo Sports — Predicao/Melhores apostas</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-algeria-06-16-26-world-cup-2026/">Squawka — Pre-jogo</a> · <a href="https://tips.gg/article/argentina-algeria-predicted-lineups-story/">Tips.GG — Escalacoes provaveis</a></div>
+  </section>
+
+  <!-- Escanteios -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">&#x1F6A9;</span> Analise de Escanteios <span style="font-size:12px;color:var(--mut);font-weight:500">· Estilo vs. mercado · Handicap/total desdobramento tecnico</span></h2>
+    <div class="sub">A posse e a tendencia ao cerco prolongado da Argentina apontam para maior producao de escanteios; a Argelia, defendendo longos trechos e cortando para escanteios, tambem contribuira. Linhas de mercado especificas A CONFIRMAR.</div>
+    <h4>&#x2460; Perfil de escanteios (baseado no estilo)</h4>
+    <table><tr><th>Dimensao</th><th>&#x1F1E6;&#x1F1F7; Argentina</th><th>&#x1F1E9;&#x1F1FF; Argelia</th><th>Implicacao</th></tr>
+      <tr><td>Estilo ofensivo</td><td class="ht">Dominio de posse; penetracao pelas pontas + cerco prolongado; cobranca de Messi em bola parada</td><td class="sc">Contra-ataque defensivo; velocidade/verticalidade de Amoura; Mahrez entrando para criar</td></tr>
+      <tr><td>Escanteios estimados por jogo</td><td class="ht">&#x2248;6-8 (equipe de posse, muito tempo de cerco) <span style="color:var(--warn)">A CONFIRMAR</span></td><td class="sc">&#x2248;3-5 (majoritariamente defendendo, mas cortes frequentes) <span style="color:var(--warn)">A CONFIRMAR</span></td></tr>
+      <tr><td>Ameaca em bola parada</td><td class="ht">Alta: Messi cobra, varios zagueiros altos subindo</td><td class="sc">Media: Mahrez cobra, mas pontos de finalizacao limitados</td></tr>
+      <tr><td>Vantagem em escanteios</td><td class="ht">Clara (posse e tempo de cerco prolongado)</td><td class="sc">Menos escanteios conquistados, majoritariamente concessoes passivas</td></tr>
+    </table>
+    <h4>&#x2461; Mercado atual (linhas de escanteios)</h4>
+    <p>A linha total de escanteios e as odds de handicap especificas nao foram recuperadas em fontes publicas no momento de redacao. <span style="color:var(--warn)">(A CONFIRMAR)</span> Com base na analise do estilo de jogo: o perfil de posse-cerco da Argentina diante da defesa passiva da Argelia sugere um total combinado em torno de 9-12, com a Argentina detendo clara maioria; linhas de referencia O/U 9.5 ou 10.5 sao plausiveis, e um handicap de escanteios (Argentina -2 / -3) tambem e discutivel, mas as odds reais devem ser confirmadas nos mercados ao vivo.</p>
+    <h4>&#x2462; Avaliacao tecnica</h4>
+    <div class="insight"><div class="who">Handicap de escanteios</div>A vantagem de posse e cerco da Argentina e clara, entao a diferenca de escanteios pode ser ampla; se a Argelia recua por longos trechos e corta para escanteios, a contagem da Argentina se acumula ainda mais, dando valor de discussao a um handicap de escanteios (-2/-3). Mas se Messi sair cedo e a Argentina diminuir o ritmo, a diferenca se reduz.</div>
+    <div class="insight"><div class="who">Total de escanteios (Mais/Menos)</div>A Argentina dita o ritmo, entao o total e esperado na faixa alta (10+ esta longe de ser improvavel). Se a Argelia defende profundo o jogo todo, as concessoes passivas empurram o total para cima; se a Argentina sai na frente cedo e faz rodizio, o total recua.</div>
+    <div class="insight"><div class="who">Variaveis e risco bilateral</div>A variavel central e novamente os minutos de Messi e se a Argentina faz rodizio: se o time titular segue pressionando, os escanteios correm altos; se for 2-0 cedo e a Argentina protege Messi diminuindo o ritmo, a contagem se estabiliza na media. Se o contra-ataque da Argelia funcionar e o placar apertar, a pressao tardia da Argentina tambem eleva os escanteios.</div>
+    <div class="note">Dados especificos do mercado de escanteios nao recuperados — o acima e uma analise qualitativa baseada no estilo de jogo. Apenas para fins de analise — nao e recomendacao de apostas.</div>
+  </section>
+
+  <!-- Arbitro -->
+  <section>
+    <h2><span class="n">4</span> Arbitro e Ambiente de Arbitragem</h2>
+    <div class="note">&#x2705; <b>Confirmado</b>: O arbitro da partida e <b>Szymon Marciniak (Polonia)</b> — um dos arbitros de elite do futebol mundial, que apitou a final da Copa do Mundo de 2022 e a final da UEFA Champions League de 2023. Assistentes Tomasz Listkiewicz e Adam Kupsik; quarto arbitro Campbell Kirk Kawana-Waugh. <span style="color:var(--warn)">[Dados de cartoes/decisoes por jogo neste torneio — A CONFIRMAR]</span></div>
+    <h4>Perfil e estilo do arbitro</h4>
+    <ul class="cl">
+      <li><b>Autoridade em grandes jogos e controle de partida</b>: Marciniak e conhecido pelo forte controle de personalidades e autoridade em grandes jogos — deixa os jogos de elite respirarem mas e firme com reclamacoes. A estreia de uma campea atual e de alto perfil e exatamente o tipo de palco em que ele se destaca.</li>
+      <li><b>O que significa para Messi e Mahrez</b>: ambos os capitaes (Messi / Mahrez) sao veteranos de grandes torneios, e Marciniak tende a deixar as estrelas se expressarem dentro de limites justos; isso favorece a fluidez ofensiva da Argentina, e tambem significa que Amoura tem mais chances de obter decisoes efetivas quando sofre falta no contra-ataque.</li>
+      <li><b>Regras unificadas 2026</b>: goleiro 8 segundos com a bola, apenas o capitao pode falar com o arbitro, impedimento semi-automatizado — o criterio maduro e assentado de Marciniak torna improvavel que essas novas regras virem ponto de conflito.</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>Avaliacao arbitral</b>: Um arbitro de elite mais uma clara diferenca de talento significam que e improvavel que o arbitro seja fator decisivo. Mas se a Argelia defende profundo e ha contato de agarrao sobre Messi/Lautaro na area, as decisoes firmes de Marciniak podem trazer um penalti; inversamente, ele tambem protegera Amoura quando sofrer falta no contra-ataque. No balanco, o ambiente de arbitragem favorece que o lado mais forte libere plenamente sua vantagem tecnica. Numero de cartoes por jogo neste torneio <span style="color:var(--warn)">(A CONFIRMAR)</span>.</div>
+  </section>
+
+  <!-- Escalacoes -->
+  <section>
+    <h2><span class="n">2</span> Escalacoes e Jogadores Chave</h2>
+    <div class="sub">Escalacoes provaveis (analise da midia — nao oficial; sujeita a convocacoes pre-jogo)</div>
+    <h4>&#x1F1E6;&#x1F1F7; Argentina Escalacao provavel (4-3-3)</h4>
+    <div class="lineup">E. Martínez; Molina · Romero · L. Martínez · Tagliafico; De Paul · Mac Allister · Almada; Messi · Lautaro Martínez · Enzo Fernández</div>
+    <table>
+      <tr><th>Jogador</th><th>Posicao / Clube</th><th>Forma / Notas</th></tr>
+      <tr><td class="ht">Lionel Messi</td><td>Atacante/articulador / Inter Miami</td><td>Capitao; 38 anos; sexta Copa, jogo 200; gerenciando um incomodo no isquiotibial, minutos A CONFIRMAR</td></tr>
+      <tr><td class="ht">Lautaro Martínez</td><td>Centroavante / Inter de Milao</td><td>Ponta de lanca do ataque; ponto central de finalizacao</td></tr>
+      <tr><td class="ht">Emiliano Martínez</td><td>Goleiro / Aston Villa</td><td>Luva de Ouro da Copa 2022; habilidade de elite em disputas de penaltis e defesas decisivas</td></tr>
+      <tr><td class="ht">Cristian Romero / Lisandro Martínez</td><td>Zagueiros / Premier League</td><td>Dupla de zaga; coracao da defesa de elite da Argentina (1 sofrido em 7)</td></tr>
+    </table>
+    <h4>&#x1F1E9;&#x1F1FF; Argelia Escalacao provavel (4-2-3-1)</h4>
+    <div class="lineup">Zidane; Belghali · Mandi · Chergui · Ait-Nouri; Bentaleb · Boudaoui; Mahrez · Maza · Amoura; Gouiri</div>
+    <table>
+      <tr><th>Jogador</th><th>Posicao / Clube</th><th>Forma / Notas</th></tr>
+      <tr><td class="sc">Riyad Mahrez</td><td>Ponta/articulador / Al-Ahli</td><td>Capitao; 35 anos; 113 jogos, 38 gols; eixo criativo e cobrador de bola parada</td></tr>
+      <tr><td class="sc">Mohamed Amoura</td><td>Atacante/ponta / VfL Wolfsburg</td><td>Artilheiro com 10 gols em 8 eliminatorias; velocidade e verticalidade, o fio do contra-ataque</td></tr>
+      <tr><td class="sc">Ibrahim Maza</td><td>Meia / Bayer Leverkusen</td><td>Jovem talento; dobradica tecnica que conecta as linhas</td></tr>
+      <tr><td class="sc">Luca Zidane</td><td>Goleiro / Granada</td><td>Filho da lenda; goleiro da Argelia</td></tr>
+    </table>
+    <div class="note">Nota sobre escalacoes: Ambas as escalacoes provaveis sao estimativas de analise da midia (Sports Mole / Rotowire / Tips.GG). <b>Sujeitas as convocacoes oficiais pre-jogo.</b> A titularidade e os minutos de Messi carregam incerteza pelo gerenciamento do isquiotibial (A CONFIRMAR); o posicionamento ofensivo da Argelia (Gouiri/Amoura) esta sujeito ao planejamento durante o jogo (A CONFIRMAR).</div>
+  </section>
+
+  <!-- Tatica -->
+  <section>
+    <h2><span class="n">3</span> Estilo Tatico e Treinadores</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#9cc4ee">&#x1F1E6;&#x1F1F7; Argentina · Lionel Scaloni</div>
+        <div class="role">4-3-3 dominio de posse + defesa de elite + Messi em liberdade</div>
+        <ul class="cl">
+          <li>A Argentina domina com posse e organizacao alta — o triangulo de meio-campo De Paul/Mac Allister/Enzo cuida da progressao e da cobertura, Messi ganha espaco criativo pela direita ou em funcao livre, e Lautaro e o finalizador.</li>
+          <li>A defesa e a verdadeira base — a dupla Romero + Lisandro Martínez mais E. Martínez, apenas 1 sofrido nos ultimos 7; diante dos contra-ataques da Argelia, a recuperacao coletiva e os laterais se fechando sao chave.</li>
+          <li>Decisao central: o gerenciamento dos minutos de Messi por Scaloni. Ir 2-0 a frente e tirar Messi cedo por uma opcao versatil como Julián Álvarez pode proteger o craque mantendo o controle.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fc28b">&#x1F1E9;&#x1F1FF; Argelia · Vladimir Petković</div>
+        <div class="role">4-2-3-1 defesa compacta + contra-ataque Mahrez/Amoura</div>
+        <ul class="cl">
+          <li>O plano da Argelia e um bloco medio-baixo compacto para comprimir o espaco de penetracao da Argentina, protegido pelo duplo pivo Bentaleb/Boudaoui, e entao contra-ataques rapidos com a velocidade de Amoura e a criatividade de Mahrez.</li>
+          <li>As subidas de Ait-Nouri pela esquerda e Belghali pela direita dao energia pelas pontas; Maza liga a partir da posicao de meia-armador, Gouiri atua como ponto de referencia na frente.</li>
+          <li>Risco: diante do cerco de posse da Argentina, qualquer queda na concentracao defensiva ou conversao fraca no contra pode ver gols se acumularem sob pressao prolongada; a qualidade individual (Mahrez/Amoura) e sua unica via realista para a surpresa.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perspectivas de analistas -->
+  <section>
+    <h2><span class="n">5</span> Perspectivas de Analistas</h2>
+    <div class="insight"><div class="who">Supercomputador Sportscasting <small>· Modelo de dados</small></div>O modelo da a Argentina 2-0 como o placar mais provavel (14.1%) e recomenda Menos 2,5 — sua logica se apoia na defesa de elite da Argentina (1 sofrido em 7) e na zaga igualmente solida da Argelia, projetando um jogo controlado e de poucas concessoes para a Argentina.</div>
+    <div class="insight"><div class="who">Sports Mole / Racing Post <small>· Midia de predicao</small></div>Ambos favorecem uma vitoria da Argentina (em torno de 2-0/2-1); a Racing Post ve o Menos 2,5 (1/1) como valor, ressaltando que ambas as defesas sao solidas. Ambos listam a condicao e os minutos de Messi como a maior incerteza.</div>
+    <div class="insight"><div class="who">Yahoo Sports <small>· Angulo da historia</small></div>Foca no momento historico de Messi (primeiro homem a jogar seis Copas, jogo 200), apontando que o gerenciamento de seus minutos por Scaloni e "a historia que enquadra todo o jogo"; tambem alerta que o poder de fogo da Argentina mais a abertura da Argelia poderiam fazer o "Mais" se sustentar.</div>
+    <div class="insight"><div class="who">Resumo · Perfil Argelia <small>· Sinal tatico</small></div>A Argelia nao veio so para fazer numero — a criatividade de Mahrez e a velocidade de Amoura formam um teto individual real. Marcar e dificilimo para eles aqui, mas enquanto a Argentina escorregar no gerenciamento de Messi ou na concentracao defensiva, um contra-ataque bem-sucedido pode apertar o placar e criar tensao competitiva genuina.</div>
+  </section>
+
+  <!-- Avaliacao -->
+  <section>
+    <h2><span class="n">6</span> Avaliacao de Conjunto e Itens A Confirmar</h2>
+    <ul class="cl">
+      <li><b>Inclinacao do resultado</b>: Argentina 2-0 / 2-1 e o roteiro base; uma vitoria apertada 1-0 (se Messi sair cedo e a Argentina diminuir o ritmo) tambem e razoavel; o empate (&#x2248;20%) e um risco de cauda moderado; uma vitoria da Argelia (&#x2248;12%) e uma surpresa de baixa probabilidade que exige um contra-ataque de Amoura mais um deslize defensivo da Argentina.</li>
+      <li><b>Jogadores chave</b>: Messi (Argentina / criacao e bola parada, os minutos sao a variavel), Lautaro (Argentina / finalizacao), Romero+Lisandro (Argentina / defesa), Mahrez (Argelia / criacao), Amoura (Argelia / velocidade em transicao).</li>
+      <li><b>Fator decisivo</b>: Nao a diferenca de talento (que e clara), mas <b>se a Argentina consegue manter a pressao enquanto protege Messi</b>, e a <b>eficiencia de conversao no contra da Argelia</b>. Se a forma defensiva da Argentina continuar, o suspense e limitado.</li>
+      <li><b>Perspectiva do mercado</b>: Forte consenso no resultado (Argentina &#x2248;68–71%), Indice de Calor 3/5, apenas um leve premio narrativo. O mercado com mais informacao util e o <b>mercado de gols 2,5</b> (este relatorio se inclina levemente ao "Mais") e a <b>margem do handicap</b> (-1,5 depende dos minutos de Messi e do rodizio).</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>Itens A Confirmar</b>: &#x2460; Titularidade e minutos exatos de Messi (gerenciamento do isquiotibial); &#x2461; Posicionamento ofensivo da Argelia (Gouiri/Amoura) e escalacao final; &#x2462; Dados de cartoes/decisoes por jogo do arbitro Marciniak neste torneio; &#x2463; Linhas ao vivo por casa para gols e handicap; &#x2464; Volume e detalhe de precos por partida do Kalshi/Polymarket; &#x2465; Odds especificas do mercado de escanteios nao recuperadas; &#x2466; Rodizio de ambas as equipes durante o jogo — sujeito as escalacoes oficiais.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — Grupo J confirmado (Argentina, Argelia, Austria, Jordania)</a> · <a href="https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings">ESPN — Ranking FIFA (junho 2026)</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-algeria-preview-full-squad-list-key-stats-schedule">Olympics.com — Pre-jogo/calendario da Argelia</a><br>
+      • <a href="https://sports.yahoo.com/articles/preview-argentina-vs-algeria-team-010500837.html">Yahoo Sports — Pre-jogo/Escalacoes/Messi</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-algeria-prediction-team-news-lineups_599163.html">Sports Mole — Pre-jogo/Noticias do elenco</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html">Sports Mole — Escalacao provavel da Argentina</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/argentina-vs-algeria-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-118222">Rotowire — Escalacoes/Tatica</a> · <a href="https://tips.gg/article/argentina-algeria-predicted-lineups-story/">Tips.GG — Escalacoes provaveis</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/">Racing Post — Odds/Apostas</a><br>
+      • <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/">Sportscasting — Supercomputador</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html">Yahoo Sports — Predicao de gols</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-algeria-06-16-26-world-cup-2026/">Squawka — Pre-jogo</a><br>
+      • <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-squad-announcement-vladimir-petkovic">FIFA — Elenco da Argelia (Petković)</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/vladimir-petkovi-s-official-algeria-squad-for-the-2026-fifa-world-cup-2026-05-31">beIN Sports — Elenco da Argelia</a> · <a href="https://www.aljazeera.com/sports/2026/6/5/ranking-the-2026-world-cup-groups-which-teams-are-favourites-to-progress">Al Jazeera — Panorama Grupo J</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Analise da Copa do Mundo 2026 · Dados ate 2026-06-15 · Graficos baseados em dados verificados; o grafico de radar reflete a avaliacao composta de analistas · Apenas para fins de analise — nao e recomendacao de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#75aadb',SC='#0a7a3f',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'Segoe UI',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitoria Argentina','Empate','Vitoria Argelia'],datasets:[{data:[68,20,12],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Probabilidade implicita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais 2,5','Menos 2,5'],datasets:[{data:[52,48],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Probabilidade implicita % (sem margem, equilibrado — leve inclinacao ao Mais)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Argentina','Austria','Argelia','Jordania'],datasets:[{data:[1,24,28,63],backgroundColor:[HT,'#ed2939',SC,'#007a3d'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (menor = mais forte)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez Defensiva','Eficacia Ofensiva','Controle do Meio','Bola Parada','Nivel Individual','Exp. Competitiva'],
+  datasets:[
+   {label:'Argentina',data:[9,8.5,8.5,8,9.5,9.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Argelia',data:[6.5,6.5,6,5.5,7.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

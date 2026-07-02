@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 突尼斯 vs 日本 · 2026世界杯 F组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-tunisia-vs-japan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-tunisia-vs-japan.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-tunisia-vs-japan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-tunisia-vs-japan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-tunisia-vs-japan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#e70013;--sc:#bc002d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a0a10,#5a0016);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241114,#1a0c10);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f0857f;font-weight:600}td.sc{color:#e8788a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-tunisia-vs-japan.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-tunisia-vs-japan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-tunisia-vs-japan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · F组次轮 · 突尼斯"出局前夜"换帅 vs 日本控场求出线</span>
+  <h1>突尼斯 vs 日本</h1>
+  <div class="meta">2026年6月20日 23:00 ET（6月21日 12:00am ET / 当地 22:00 CST）· 蒙特雷 Estadio BBVA · F组（同组：瑞典、荷兰）· 世界杯史上第 1000 场比赛</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0857f">🇹🇳 突尼斯</div><div class="rk">0 分垫底 · 首轮 1-5 惨败瑞典 · 赛后火速换帅：Lamouchi 下课、<b>Renard</b> 接手 · 输球即出局</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e8788a">🇯🇵 日本</div><div class="rk">FIFA #8 · 首轮 2-2 逼平荷兰（两度落后扳平）· 取胜基本锁定出线 · Kubo 膝伤存疑</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>实力与处境双双失衡</b>的次轮对决，且恰逢<b>世界杯史上第 1000 场比赛</b>。突尼斯首轮 <b>1-5 惨败瑞典</b>（零封基因被彻底打穿），赛后突尼斯足协做出<b>世界杯史上首次"单场过后即解雇主帅"</b>的决定——Lamouchi 下课，由经验丰富的法国名帅 <b>Hervé Renard</b> 火线接手（他正是 2022 世界杯率沙特 2-1 掀翻阿根廷的那个人）。日本则在揭幕战<b>两度落后两度扳平、2-2 逼平荷兰</b>，凭借韧性与技术含量拿到关键 1 分，本场取胜基本可锁定出线。盘口一边倒：日本胜 <b>1.50–1.53</b>（美式 -190/-200，去水隐含 ≈62%）、平 4.00（≈22%）、突尼斯胜 6.25–7.00（≈14%）。Opta Power Rating 日本 81.2 vs 突尼斯 68.3，差距明显；预测市场出线概率日本 ≈27% vs 突尼斯 ≈5–6%。基准剧本：<b>日本控球主导、靠技术渗透与定位球破突尼斯低位块；突尼斯被迫前压求胜，留出日本反击空间</b>。最大变量：突尼斯换帅后的精神反弹 + 日本的 Kubo 膝伤是否影响进攻创造力。市场过热指数 ≈ 2/5（弱旅 + 深夜时段，但换帅与"第 1000 场"提供话题）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">日本隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈62%</div></div>
+      <div class="key"><div class="k">突尼斯隐含胜率(去水)</div><div class="v" style="color:#f0857f">≈14%</div></div>
+      <div class="key"><div class="k">突尼斯首轮失球</div><div class="v" style="color:var(--warn)">5（单场）</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>突尼斯世界杯史上首次"单场后换帅"</b>：Lamouchi 因 1-5 惨败下课，Renard 周中（周二）刚接手——精神反弹是 X 因素，但磨合时间几乎为零，战术体系来不及重塑。</li>
+      <li><b>日本 Kubo 膝伤存疑</b>：对荷兰受伤的核心创造者 Kubo 预计缺阵，Junya Ito（首轮替补登场表现亮眼、传中与盘带俱佳）顶上首发——日本进攻创造力的单点变量。</li>
+      <li><b>角色反转：日本将主导控球</b>：与对荷兰的低位反击不同，本场日本预计长时间控球，须用渗透与定位球破突尼斯密集——这恰是日本对荷兰一役未能解决的"低 xG"课题（仅 0.59 xG）。</li>
+      <li><b>突尼斯防线信心崩塌</b>：近两场连丢 10 球（热身 0-5 比利时 + 0... 1-5 瑞典），零失球神话破产后须先稳住后防，但又必须取胜——"既要防好又要进球"的两难。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f0857f;font-weight:700">突尼斯 · 上一场带入 · 零封神话破产 <span style="color:var(--mut);font-weight:400">· 瑞典战复盘迁移 · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">突尼斯首轮 <b>1-5 惨败瑞典</b>，预选 6 战零失球的铁桶单场丢 5、先失球即崩塌</div>
+      <p style="font-size:13.5px">承接瑞典战复盘的前瞻迁移：突尼斯以"CAF 预选 6 战全胜、进 16 球丢 0 球"的零失球基因登场，却被瑞典单场打进 5 球——其中 Ayari 两记远射世界波直接拆解了低位块。复盘已点明：<b>突尼斯的低位块对预选级对手有效，但缺乏应对世界级个人能力（远射手/顶级锋线）的二级防御，一旦先失球被迫前压，结构崩塌速度极快</b>；反击端除 Rekik 一球外极度贫瘠。本场面对技术更细腻的日本，须重新组织低位块并避免早早落后。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：零失球这一"立身之本"破产后，突尼斯的心理与结构都需重建；而本场又必须取胜（输即出局），被迫前压恰恰会重演瑞典战"先失球→崩塌"的剧本，正中日本快速转换的下怀。这是日本让球盘（-1 一类）被视为较锐角度的核心依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 瑞典 5-1 突尼斯赛后统计</a> · <a href="https://www.espn.com/soccer/story/_/id/49106410/fifa-world-cup-2026-tunisia-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 突尼斯近两场丢 10 球</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8788a;font-weight:700">日本 · 上一场带入 · 韧性抢分但低 xG <span style="color:var(--mut);font-weight:400">· 荷兰战复盘迁移 · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">日本首轮 <b>2-2 逼平荷兰</b>（两度落后扳平，队史世界杯最晚进球绝平）；但运动战创造力偏低（xG ≈0.59）</div>
+      <p style="font-size:13.5px">承接荷兰战复盘的前瞻迁移：日本两度落后两度扳平，Nakamura（折射）与 Kamada（角球摆渡、门将脱手）抓住机会，第 88 分钟完成绝平，"巨人杀手"韧性再获印证。但复盘也点明：本场不同于 2022 逆转德西的高质量套路，<b>这次是低 xG（≈0.59）、靠对手失误与定位球抓机会</b>——大轮换削弱了进攻创造力。前瞻迁移给出的两条对突尼斯的钥匙：① <b>体能红利延续</b>，可启用更多主力提升进攻；② <b>定位球是破密集的关键路径</b>（本场角球建功）；③ 运动战创造力待解。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场日本将从"反击方"变为"控球方"，须主动破解突尼斯低位块——这正是它对荷兰一役没解决好的"低 xG"难题。若运动战仍打不开，<b>定位球（角球）</b>将再次成为最可靠的得分来源；这也直接牵动大小球与双方进球盘的判读。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 荷兰 2-2 日本赛后统计</a> · <a href="https://footystats.org/clubs/japan-national-team-8579" style="color:var(--accent)">FootyStats — 日本 xG/状态</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">突尼斯 · 震动 · 换帅 <span style="color:var(--mut);font-weight:400">· CBS / ESPN / TribalFootball · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">突尼斯<b>世界杯史上首次"单场过后即解雇主帅"</b>：Lamouchi 下课，<b>Hervé Renard 火线接手</b></div>
+      <p style="font-size:13.5px">1-5 惨败瑞典后，突尼斯足协做出史无前例的决定——成为世界杯历史上<b>首支在大赛进行中、仅一场过后就解雇主帅</b>的球队。接任者是经验丰富的法国名帅 <b>Hervé Renard</b>：曾两夺非洲杯（赞比亚、科特迪瓦），率科特迪瓦征战 2014、摩洛哥征战 2018 世界杯，并在 <b>2022 世界杯率沙特 2-1 掀翻阿根廷</b>——证明他有能力在大赛单场制造冷门。但他周二（周中）才接手，距比赛仅数日，磨合时间几乎为零。据报道他已提高训练强度，并表示只让"有斗志的球员"首发。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：换帅是典型的<b>"新教练反弹效应"X 因素</b>——精神层面可能短期提振、球员为新帅"踢命";但战术体系无法在数日内重塑，更可能是"换汤不换药"的同一批人提高拼劲。Renard 的招牌正是<b>纪律性防守 + 反击偷分</b>（沙特掀翻阿根廷的模板），这与突尼斯"必须取胜需前压"的处境存在内在矛盾。市场对此反应有限（日本仍是大热门）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.cbssports.com/soccer/news/tunisia-manager-sabri-lamouchi-world-cup-sweden-fired/" style="color:var(--accent)">CBS Sports — Renard 接替 Lamouchi</a> · <a href="https://www.tribalfootball.com/article/soccer-fifa-club-world-cup-tunisia-appoint-renard-as-new-head-coach-just-days-after-brutally-sacking-lamouchi-211340c8-89da-4bfe-a8b4-9dedb84659c1" style="color:var(--accent)">TribalFootball — 换帅</a> · <a href="https://www.espn.com/soccer/story/_/id/49106410/fifa-world-cup-2026-tunisia-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/换帅</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8788a;font-weight:700">日本 · 减员 <span style="color:var(--mut);font-weight:400">· RotoWire / ESPN · 2026-06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">核心创造者 <b>Kubo 膝伤、预计缺阵</b>；Junya Ito 料顶上首发</div>
+      <p style="font-size:13.5px">据 RotoWire/ESPN，皇家社会的 Takefusa Kubo 在对荷兰一役膝部受伤，已进入世界杯伤病名单，本场<b>预计缺阵</b>；最可能顶替其位置的是 <b>Junya Ito</b>——他首轮替补登场后跑动、盘带与定位球传中均表现亮眼，被多家媒体认为有理由直接首发。日本预计 3-4-2-1 出战，Ito 与 Maeda 居 Ueda 身后。突尼斯方面无标注的伤情。<span style="color:var(--warn)">[Kubo 首发与否、日本是否沿用同一首发，以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Kubo 是日本内切组织、破密集的核心。其缺阵让创造责任转向 Ito 的边路突破与定位球传中——这反而可能强化日本"靠定位球破低位块"的路径（呼应荷兰战带入项）。Ito 能否还原首轮的冲击力，是日本能否把控球转化为进球的关键单点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rotowire.com/soccer/article/tunisia-vs-japan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-f-118802" style="color:var(--accent)">RotoWire — 预测首发/Kubo 膝伤</a> · <a href="https://www.espn.com/soccer/story/_/id/49106410/fifa-world-cup-2026-tunisia-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Ito 应首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· ESPN / FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">罗马尼亚顶级名哨 <b>István Kovács</b> 执法——欧冠/欧洲杯决赛级裁判，出牌偏严</div>
+      <p style="font-size:13.5px">据 ESPN，FIFA 任命罗马尼亚籍 <b>István Kovács</b> 执法本场。Kovács 是欧足联顶级裁判，曾执法 <b>2023 欧冠决赛、2024 欧洲杯</b>等大赛，公认执法权威、果断。第三方统计其<b>生涯场均约 5.39 张黄牌、0.36 个点球/场</b>（2025/26 赛季约 4.3 黄/场、0.30 点球/场）——属出牌偏多的尺度。比赛在蒙特雷 Estadio BBVA 进行（露天球场，6 月夜场，墨西哥北部干热气候，需关注暑热但夜场缓解）。详见下方裁判模块。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场是"日本技术控场 vs 突尼斯换帅后高拼劲低位反抢"的高对抗结构，且突尼斯输即出局、情绪可能上头——Kovács 偏严的尺度叠加这一背景，黄牌总数与突尼斯累计黄牌（2 黄即停下一场）风险上升。其点球判罚频率适中（约 0.36/场），禁区对抗的吹罚值得关注。<b>两面提醒</b>：上述为俱乐部/欧战综合样本，世界杯尺度通常更谨慎，且对两队均无可查执法史，应视为变量而非定数。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49106410/fifa-world-cup-2026-tunisia-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Kovács 执法任命</a> · <a href="https://www.statshub.com/referee/69579" style="color:var(--accent)">StatsHub — Kovács 数据</a> · <a href="https://kickoffscore.com/referees/istvan-kovacs" style="color:var(--accent)">KickoffScore — Kovács 数据</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· F组次轮后格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>F 组四队首轮后积分</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇹🇳 突尼斯</th><th>🇯🇵 日本</th></tr>
+      <tr><td>主教练</td><td class="ht">Hervé Renard（2026-06 火线接手，替 Lamouchi）</td><td class="sc">森保一 Hajime Moriyasu</td></tr>
+      <tr><td>首轮结果</td><td class="ht">1-5 负瑞典（零失球神话破产）</td><td class="sc">2-2 平荷兰（两度落后扳平）</td></tr>
+      <tr><td>积分 / 处境</td><td class="ht">0 分垫底 · <b>输即出局</b></td><td class="sc">1 分 · <b>取胜基本锁定出线</b></td></tr>
+      <tr><td>本场停赛/缺阵</td><td class="ht">无标注伤停</td><td class="sc"><b>Kubo（膝伤，预计缺阵）</b>；Mitoma/Endo 整届缺席</td></tr>
+      <tr><td>FIFA 排名 / Opta Power</td><td class="ht">Opta Power 68.3（组内垫底）</td><td class="sc">FIFA #8 · Opta Power 81.2</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">WC2022 胜法国仍小组出局 · 非洲杯 2023 小组出局</td><td class="sc">WC2022 逆转德西、16 强点球负克罗地亚 · 亚洲杯 2023 八强</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 6.25–7.00（隐含≈14%）</td><td class="sc">胜 1.50–1.53（≈62%）· 平 4.00（≈22%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">中性偏小（突尼斯求稳低位 + 日本低 xG），但突尼斯被迫前压可推高比分波动</td></tr>
+      <tr><td>核心球员</td><td class="ht">Ellyes Skhiri / Hannibal Mejbri / Montassar Talbi</td><td class="sc">Ayase Ueda / Junya Ito / Daichi Kamada</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈62/22/14）。赔率来源：多书综合（FanDuel 日本 -200→1.50、bet365 -188→1.53、平 +300→4.00、突尼斯 +525/+600→6.25/7.00）；美式转十进制：负数=1+100/|x|、正数=1+x/100。大小球分界 2.5：因突尼斯求稳 + 日本运动战低 xG，基准中性偏小；但突尼斯输即出局必须前压，比分波动空间上升。让球盘日本 -1（一类）待核以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;border-left:4px solid #10b981;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇹🇳 突尼斯 · 进攻 xG/进球</td><td class="ht">历来进攻贫瘠：WC2022 三场仅 1 球（胜法国）；非洲杯 2023 小组出局，进球稀少；预选靠整体而非火力</td><td class="ht">首轮 <b>1 球</b>（Rekik）、运动战创造极有限</td><td>本届进攻仍贴近"贫瘠"历史档；唯一进球来自零星机会，缺乏稳定终结点——换帅难在数日内补强</td></tr>
+      <tr><td class="ht">🇹🇳 突尼斯 · 防守 xGA/失球</td><td class="ht">立身之本＝纪律性低位防守（CAF 预选 6 战 <b>0 失球</b>）</td><td class="ht">首轮 <b>丢 5 球</b>（含两记远射世界波）；近两场共丢 10 球</td><td><b>灾难性远低于</b>历史基准——零失球神话单场破产，二级防御对世界级个人能力束手无策，是本届最大崩塌项</td></tr>
+      <tr><td class="sc">🇯🇵 日本 · 进攻 xG/进球</td><td class="sc">近年"巨人杀手"高效：WC2022 逆转德西；6 连胜进 11 球；技术渗透 + 反击锋利</td><td class="sc">首轮 <b>xG ≈0.59</b>、实进 2 球（含折射/脱手运气成分）</td><td>本届实际 xG <b>低于</b>其高光档——大轮换削弱运动战创造力，进球质量低于均值，靠韧性与定位球抓机会</td></tr>
+      <tr><td class="sc">🇯🇵 日本 · 防守 xGA/失球</td><td class="sc">防守组织稳健，亚洲顶级；6 连胜仅失 2 球</td><td class="sc">首轮 <b>失 2 球</b>（折射 + 角球摆渡，含偶然性）</td><td>失球含运气成分、非被战术打穿；对突尼斯有限火力，防守端基准应回到稳健档</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：突尼斯防守实际值<b>灾难性低于</b>历史基准（零封→单场丢 5），进攻仍贫瘠；日本进攻实际 xG（0.59）<b>低于</b>其高光档（轮换 + 低 xG），但防守稳健、靠韧性抓分。深度数据与"日本控场占优、但破低位块需找回运动战创造力 + 定位球"的主线一致。来源：Opta Analyst（首轮 xG/统计）· FootyStats/Sofascore（球队 xG/状态）· 队史大赛/预选公开记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（定性校准）</td><td class="ht">突尼斯 ≈0.7</td><td class="sc">日本 ≈1.6</td><td>校准后日本投射明显占优——但"破密集低位"是日本对荷兰未解的软肋，须关注转化效率</td></tr>
+      <tr><td>Opta Power Ranking / 出线概率</td><td colspan="2" class="sc">Opta Power：日本 <b>81.2</b> vs 突尼斯 <b>68.3</b>（荷兰 88.7 居首）；预测市场出线概率日本 ≈27% vs 突尼斯 ≈5–6%</td><td>对手强度校准后，日本样本含金量明显高于突尼斯（突尼斯首轮对手瑞典更强、暴露更彻底）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：日本中高位逼抢 + 控场，突尼斯被迫低位但换帅后拼劲或上升</td><td>场面倾斜大概率长时间倒向日本；<b>陷阱提醒</b>：突尼斯换帅"反弹效应"+ 输即出局的搏命，可能短时抬高其对抗强度</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/FootyStats 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">日本明显大热门、方向高度一致；资金主要落在日本让球（-1）与大小球，话题来自突尼斯换帅与"第 1000 场"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · 偏冷；方向一致倾向日本，话题靠换帅/第 1000 场</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">深夜时段（≈12am ET）+ 一支弱旅垫底——博彩资金与流量都偏薄。专家方向几乎一致押日本（依据：技术差距 + 突尼斯换帅混乱 + 刚丢 5 球），属"合理共识"。话题热度主要来自<b>突尼斯世界杯史上首次单场换帅</b>与<b>第 1000 场</b>叙事，而非比赛本身。资金集中在<b>日本让球（-1）与大小球</b>。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：日本胜 多数 · 平局 少数 · 突尼斯胜 个别）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>RotoWire</td><td>数据/预测媒体</td><td>突尼斯 1-2 日本；日本控场、技术差距终显</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>日本胜（低比分）；突尼斯须先稳后防</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>日本胜；建包侧重日本控盘 + 球员进球</td></tr>
+      <tr><td>TNT Sports</td><td>投注媒体</td><td>日本胜；Renard 反弹有限、磨合时间不足</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>日本占优；突尼斯防线刚丢 5 球难速修</td></tr>
+      <tr><td>WhoScored</td><td>统计预览</td><td>日本质量更高、为更干净一侧</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（低）</b>：胜负方向高度趋同于日本——这是合理共识而非过热。真正分歧在<b>让球幅度（-1 vs -1.5）与大小球（小球 vs 大球）</b>，以及突尼斯换帅"反弹效应"能否制造冷门。无显著推动突尼斯胜的资金；话题热度整体偏低，靠换帅与"第 1000 场"叙事支撑。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>日本胜</th><th>解读</th></tr>
+      <tr><td>当前（多书综合）</td><td>1X2</td><td class="sc">1.50–1.53（-188/-200）</td><td>日本明显热门；平 4.00（+300）/ 突尼斯 6.25–7.00（+525/+600）</td></tr>
+      <tr><td>去水隐含</td><td>—</td><td class="sc">≈62%</td><td>平 ≈22% · 突尼斯 ≈14%</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>日本 -1</td><td colspan="2" class="sc">日本 -1（一类）具体赔率待核以实时盘口为准</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率（日本胜，DECIMAL）</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前赛事开盘区间）</td><td class="sc"><span style="color:var(--warn)">赛事开盘区间</span> ≈ 1.55–1.65（赛前未单独检得精确开盘价 · 待核）</td><td>开盘即把日本定价为明显热门——基于赛前 Opta Power 81.2 vs 68.3 的实力差与日本更深的阵容</td></tr>
+      <tr><td>开盘（首轮结果后重定价）</td><td class="sc">≈ 1.53（-188）</td><td><b>repricing 来自首轮结果</b>：突尼斯 1-5 惨败 + 换帅混乱 → 进一步压低日本赔率；日本 2-2 逼平荷兰证明竞争力 → 强化热门定位</td></tr>
+      <tr><td>现盘（多书综合）</td><td class="sc">1.50–1.53（-200/-188）</td><td>窄幅继续走低（FanDuel 至 1.50/-200）——市场对日本取胜信心稳固，资金主要转向让球（-1）与大小球细分盘</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：初盘已把日本定位为明显热门，首轮"突尼斯崩盘 + 换帅 / 日本逼平荷兰"的结果推动日本胜赔从开盘区间继续小幅走低至 1.50–1.53。1X2 价值已被充分定价、空间有限；最活跃的价格发现转向<b>日本让球（-1）、大小球与日本球员进球 props</b>。突尼斯换帅"反弹效应"是唯一可能逆向的尾部变量，但市场未给予明显溢价。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（DefiRate 聚合）</b>：F 组出线概率 荷兰 ≈54%、<b>日本 ≈27%</b>、瑞典 ≈16%、<b>突尼斯 ≈5–6%</b>——日本出线概率约为突尼斯的 5 倍，与博彩去水方向一致。<span style="color:var(--warn)">[本场单场 1X2 成交量与 30 天动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点</b>：① <b>突尼斯世界杯史上首次单场换帅</b>（Lamouchi 下课、Renard 接手）——这是本场最大话题流量来源；② <b>世界杯第 1000 场比赛</b>的历史节点；③ 日本"巨人杀手"能否把控球转化为出线。</li>
+      <li><b>突尼斯叙事</b>：刚丢 5 球 + 换帅 + 输即出局，公众对取胜信心极低；少量"Renard 反弹/掀翻冷门"的彩票资金，但价格未见明显上扬。</li>
+      <li><b>日本叙事</b>：技术流大热门 + 出线在望，专家方向集中但热度受深夜时段压制——属"低关注度的合理热门"。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（日本），博彩与预测市场方向一致，过热指数 <b>2/5</b>（偏冷）。话题热度来自<b>突尼斯换帅与第 1000 场的历史叙事</b>，而非胜负盘；最有信息含量的市场是<b>日本让球（-1）、大小球与日本球员进球 props</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.rotowire.com/soccer/article/tunisia-vs-japan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-f-118802">RotoWire — 预测/赔率</a> · <a href="https://www.sportsmole.co.uk/football/tunisia/world-cup-2026/preview/tunisia-vs-japan-prediction-team-news-lineups_599494.html">Sports Mole — 前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/tunisia-vs-japan-predictions-team-news-odds-betting-tips-bet-builder-a1nmS7s9uYmG/">Racing Post — 投注</a> · <a href="https://www.tntsports.co.uk/betting/tips/tunisia-vs-japan-prediction-tips-and-odds-world-cup-2026/">TNT Sports — 预测</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/tunisia-v-japan-predictions">Total Football Analysis</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境（大赛实际口径）</h2>
+    <div class="note">✅ <b>已官宣</b>：本场主裁判为罗马尼亚籍 <b>István Kovács</b>——欧足联顶级名哨，曾执法 2023 欧冠决赛、2024 欧洲杯等大赛。来源：ESPN / FIFA。</div>
+    <h4>量化倾向（以大赛/欧战实际为准 · 双向提醒）</h4>
+    <ul class="cl">
+      <li><b>顶级大赛样本充足</b>：Kovács 不同于无大赛经验的新晋裁判——他执法过<b>欧冠决赛、欧洲杯</b>等顶级大赛，权威与临场控制公认出色，参考意义较高；这是本场可信赖的分析维度。</li>
+      <li><b>出牌/判点尺度（综合样本）</b>：第三方统计其<b>生涯场均约 5.39 张黄牌、约 0.36 个点球/场</b>；2025/26 赛季约 <b>4.3 黄/场、0.30 点球/场</b>——属出牌偏多的尺度。<span style="color:var(--warn)">[俱乐部/欧战综合口径，世界杯单届细分样本有限，以官方记录为准 · 待核]</span></li>
+      <li><b>不能直接外推到世界杯</b>：上述均值来自欧冠/欧联/罗甲等高强度俱乐部赛事，<b>世界杯小组赛裁判通常更早警示、更少滥发</b>，尺度差异大。把欧战均值当世界杯预期，正是牌/点盘最易误判的陷阱。</li>
+      <li><b>与两队历史</b>：与突尼斯、日本国家队均<b>无可查执法样本</b>（如实说明）——无队伍倾向可言。</li>
+      <li><b>本场影响</b>："日本控场技术对抗 + 突尼斯换帅后高拼劲、输即出局情绪化"的结构确实可能多牌；Kovács 偏严尺度叠加这一背景，突尼斯累计黄牌（2 黄即停下一场）风险值得关注，但因世界杯尺度与无两队样本，应视为<b>变量而非定数</b>。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Kovács 出牌尺度偏多（综合约 4.3–5.4 黄/场），在一场"突尼斯输即出局、对抗强度可能升级"的比赛里，黄牌总数与突尼斯累计黄牌值得关注；其点球判罚频率适中（约 0.36/场），禁区对抗吹罚偏向中性。鉴于其拥有顶级大赛实际样本（区别于纯联赛背景），本场裁判面是可参考维度——但欧战均值向世界杯外推需留余地。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#3a1414;color:#f0a0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版，官方版以赛前 FIFA 名单为准</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前 FIFA 官方名单为准 · 待核）</div>
+    <h4>🇹🇳 突尼斯 预测首发（4-3-3 / Renard 体系待定）</h4>
+    <div class="lineup">Dahmen; Valery · Rekik · Talbi · Abdi; Khedira · Skhiri · Hannibal; Achouri · Saad · Ben Slimane</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Ellyes Skhiri</td><td>中场 / 球队核心</td><td>身前扫荡 + 串联；Renard 体系下防线屏障的发动机，必首发</td></tr>
+      <tr><td class="ht">Hannibal Mejbri</td><td>中场 / 伯恩利</td><td>前曼联新星；突尼斯最主要的创造火花，进球路径几乎都要经他</td></tr>
+      <tr><td class="ht">Montassar Talbi</td><td>中卫 / 洛里昂</td><td>后防中坚；首轮丢 5 球后须领衔重建低位块的稳定性</td></tr>
+      <tr><td class="ht">Elias Saad</td><td>边/锋 / 圣保利</td><td>边路输送与终结点之一；突尼斯须靠边路给中路喂球</td></tr>
+    </table>
+    <h4>🇯🇵 日本 预测首发（3-4-2-1）</h4>
+    <div class="lineup">Z. Suzuki; H. Ito · Taniguchi · Watanabe; Doan · Kamada · Sano · Nakamura; J. Ito · Maeda; Ueda</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Ayase Ueda</td><td>前锋 / 单箭头</td><td>赛季状态出色的支点；破突尼斯低位块的中路终结核心，兼点球手</td></tr>
+      <tr><td class="sc">Junya Ito</td><td>边路/前腰 / 兰斯</td><td>首轮替补登场表现亮眼；Kubo 伤缺后顶上首发，盘带 + 定位球传中是创造力来源</td></tr>
+      <tr><td class="sc">Daichi Kamada</td><td>中场 / 水晶宫</td><td>首轮角球摆渡后蹭入绝平；组织与第二落点争夺，定位球关键点</td></tr>
+      <tr><td class="sc">Zion Suzuki</td><td>门将 / 帕尔马</td><td>日本新生代门将；扑救与出球均衡，控场体系的后场起点</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（RotoWire / ESPN / Sports Mole），<b>以赛前 FIFA 官方名单为准 · 待核</b>。突尼斯换帅后 Renard 的首发取舍存较大不确定性（他表示只用"有斗志的球员"）；日本因 <b>Kubo 膝伤</b>预计由 Junya Ito 顶上，森保一是否沿用同一框架待核。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0857f">🇹🇳 突尼斯 · Hervé Renard（2026-06 火线接手）</div>
+        <div class="role">纪律性低位块 + 反击偷分（招牌），但磨合时间几乎为零</div>
+        <ul class="cl">
+          <li>Renard 的招牌是<b>纪律性防守 + 快速反击 + 大赛偷分</b>——非洲杯两冠、<b>2022 世界杯率沙特 2-1 掀翻阿根廷</b>是其能在大赛单场制造冷门的最佳背书。</li>
+          <li>交叉参照：突尼斯近两届大赛 <b>WC2022 1-0 胜法国仍小组出局</b>（能守能偷一场、但攻不开出不了线）、<b>非洲杯 2023 小组出局</b>——"能守、能偷、攻乏力"的画像清晰；首轮 1-5 把"能守"也打没了。</li>
+          <li>本场矛盾：Renard 的强项是守反偷分，但突尼斯<b>输即出局必须前压取胜</b>，与其体系存在张力；周二才接手、磨合时间近乎为零，更可能是"同一批人提高拼劲"而非战术重塑。现实希望在 Hannibal 的灵光 + 定位球偷袭 + 日本久攻不下时的反击。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇯🇵 日本 · 森保一 Hajime Moriyasu</div>
+        <div class="role">3-4-2-1 · 技术控场 + 由守转攻；本场须从"反击方"转为"控球方"</div>
+        <ul class="cl">
+          <li>森保一近年"巨人杀手"打法：高强度逼抢 + 由守转攻快速直传，曾以此掀翻德/西/巴/英；亚洲范围内则惯于控球主导。</li>
+          <li>交叉参照：<b>WC2022 逆转德国、西班牙</b>（高质量低位反击 + 板凳奇兵）、16 强点球惜败克罗地亚；<b>亚洲杯 2023 八强</b>。本场角色与对荷兰相反——须主动控球破密集，这正是其对荷兰一役<b>低 xG（0.59）</b>暴露的待解课题。</li>
+          <li>本场切入口：用控球与翼卫宽度拉开突尼斯五后卫/低位块，靠 Ito/Maeda 在肋部找空间 + Ueda 支点；若运动战打不开，<b>定位球（角球）</b>是最可靠补充（首轮角球建功）。须警惕前压后被突尼斯反击的身后空间。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察 · 含近2届大赛对账</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据机构</small></div>Opta Power Rating 日本 81.2 vs 突尼斯 68.3，实力差距明显；突尼斯首轮被瑞典打出 5 球、零失球神话破产，二级防御对世界级个人能力束手无策。面对技术更细腻、惯于控场的日本，突尼斯低位块若再被渗透+定位球击穿，崩塌风险延续。</div>
+    <div class="insight"><div class="who">RotoWire / Sports Mole <small>· 预测媒体</small></div>普遍预测<b>突尼斯 1-2 日本</b>一类比分：日本控球主导、技术差距终显；突尼斯输即出局必须前压，反而留出日本反击空间。换帅 Renard 的"反弹效应"被认为存在但有限——磨合时间不足，更难在数日内修补刚丢 5 球的防线。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· DefiRate / 多书</small></div>预测市场出线概率日本 ≈27% vs 突尼斯 ≈5–6%，与博彩去水（日本 ≈62%）方向一致；多家媒体把<b>日本 -1 让球</b>视为比单纯胜负盘更有角度。大小球因突尼斯求稳 + 日本低 xG 中性偏小，但突尼斯被迫前压是推高比分的尾部变量。</div>
+    <div class="insight"><div class="who">综合 · 历史意义与裁判信号 <small>· ESPN / FIFA</small></div>本场叠加<b>世界杯第 1000 场</b>与<b>突尼斯史上首次单场换帅</b>两大历史叙事，话题价值高于比赛本身。真正悬念不在胜负方向，而在<b>日本能否把控球转化为进球（破低位块 + Kubo 伤缺后的创造力）</b>，以及 Kovács 偏严尺度是否在"出局前夜"的高对抗下放大黄牌与禁区争议。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：日本控场取胜（1-0 / 2-0 / 2-1，渗透或定位球破局）是基准剧本；平局（≈22%）是中等尾部——若日本像对荷兰那样运动战打不开、又被突尼斯换帅后的高拼劲与 Dahmen 化解，突尼斯有逼平机会；突尼斯取胜（≈14%）需要 Renard"反弹效应"+ 定位球/反击偷袭 + 日本低效同时发生（Renard 沙特掀翻阿根廷的模板提醒不可完全排除）。</li>
+      <li><b>关键先生</b>：Ueda（日/中路终结与点球）、Junya Ito（日/Kubo 伤缺后的创造力单点）、Kamada（日/角球与第二落点）、Skhiri + Hannibal（突/防线发动机与唯一创造火花）、Talbi（突/重建低位块）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>日本能否把长时间控球转化为破密集的进球</b>（对荷兰未解的低 xG 课题 + Kubo 伤缺）——决定让球盘（-1）与大小球的结算。日本角球数与定位球转化、突尼斯换帅反弹强度是相应 props 的核心。</li>
+      <li><b>市场视角</b>：博彩与预测市场方向一致（日本大热门，去水 ≈62%、出线 ≈27%），1X2 价值有限；最有信息含量的市场是<b>日本让球（-1）、大小球与日本球员进球细分盘</b>。过热指数 2/5（偏冷，话题来自换帅与第 1000 场的历史意义，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发名单以赛前 FIFA 名单为准（突尼斯换帅后 Renard 取舍不确定；日本 Kubo 是否首发/是否沿用同一框架）；② 突尼斯换帅后是否有未公开的伤停/弃用；③ Kovács 在世界杯单届的具体场均出牌细分（欧战综合样本约 4.3–5.4 黄/场已确认）；④ Kalshi/Polymarket 本场单场 1X2 成交量与 30 天动量细分未单独检得；⑤ 让球盘（日本 -1）与大小球总分线具体赔率、初盘精确开盘价以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49106410/fifa-world-cup-2026-tunisia-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/场地/裁判/预测首发/换帅</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021475">FIFA — 比赛中心</a> · <a href="https://www.rotowire.com/soccer/article/tunisia-vs-japan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-f-118802">RotoWire — 预测/赔率/Kubo 伤</a><br>
+      • <a href="https://www.cbssports.com/soccer/news/tunisia-manager-sabri-lamouchi-world-cup-sweden-fired/">CBS Sports — Lamouchi 下课、Renard 接手</a> · <a href="https://www.tribalfootball.com/article/soccer-fifa-club-world-cup-tunisia-appoint-renard-as-new-head-coach-just-days-after-brutally-sacking-lamouchi-211340c8-89da-4bfe-a8b4-9dedb84659c1">TribalFootball — 换帅</a> · <a href="https://www.sportsmole.co.uk/football/tunisia/world-cup-2026/preview/tunisia-vs-japan-prediction-team-news-lineups_599494.html">Sports Mole — 前瞻</a><br>
+      • <a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026">Opta Analyst — 瑞典 5-1 突尼斯（突尼斯带入）</a> · <a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026">Opta Analyst — 荷兰 2-2 日本（日本带入）</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-f-predictions-preview">Opta Analyst — F组 Power Ranking/预览</a><br>
+      • <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket 出线概率</a> · <a href="https://www.statshub.com/referee/69579">StatsHub — Kovács 数据</a> · <a href="https://kickoffscore.com/referees/istvan-kovacs">KickoffScore — Kovács 数据</a> · <a href="https://footystats.org/clubs/japan-national-team-8579">FootyStats — 日本 xG/状态</a> · <a href="https://footystats.org/clubs/tunisia-national-team-8685">FootyStats — 突尼斯 xG/状态</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F">Wikipedia — F组（积分/赛程）</a> · <a href="https://www.tntsports.co.uk/betting/tips/tunisia-vs-japan-prediction-tips-and-odds-world-cup-2026/">TNT Sports — 赔率/预测</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/tunisia-v-japan-predictions">Total Football Analysis — 预测</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-20（含近2届大赛对账、深度数据与盘口定位） · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#e70013',SC='#bc002d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['突尼斯胜','平局','日本胜'],datasets:[{data:[14,22,62],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，中性偏小）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞典','荷兰','日本','突尼斯'],datasets:[{data:[3,1,1,0],backgroundColor:['#0066b3','#f0a04b',SC,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'首轮后积分'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','控场技术','个人上限','大赛经验'],
+  datasets:[
+   {label:'突尼斯',data:[4.5,4,5.5,4.5,5,6],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'日本',data:[7,6.5,8,8,7,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

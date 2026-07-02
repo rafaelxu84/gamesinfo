@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 美国 vs 澳大利亚 · 2026世界杯 D组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#3b6fb0;--sc:#d4a017;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#6b5418);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13202e,#1a1a13);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#e6c45a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge" style="background:linear-gradient(90deg,#14532d,#3b6fb0)">🏁 已完赛 · 美国 2-0 澳大利亚</span>
+  <span class="badge">⚽ 2026 世界杯 · D组次轮 · 两队首轮全胜同分 · 争小组头名的六分之战</span>
+  <h1>美国 vs 澳大利亚</h1>
+  <div class="meta">2026年6月19日 · 西雅图 Lumen Field · 15:00 ET（当地正午）· D组（同组：巴拉圭、土耳其）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 美国</div><div class="rk">FIFA #17 · 东道主 · 首轮 4-1 巴拉圭 · Pochettino 高位压迫体系</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e6c45a">🇦🇺 澳大利亚</div><div class="rk">FIFA #27 · 首轮 2-0 爆冷土耳其 · Popovic 低位防反 + 定位球</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-20） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 美国 2-0 澳大利亚 · 06-19</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">美国在西雅图 Lumen Field 上半场即奠定胜局：第 <b>11 分钟</b> Balogun 左路提速下底横扫，澳大利亚中卫 <b>Cameron Burgess 解围打进乌龙</b>；第 <b>43 分钟</b> Dest 角球区域射门打在 <b>Alex Freeman</b> 身上变线、后者冷静头球补射，2-0 锁定半场（VAR 复核越位后判定有效——这是 21 岁 Freeman 的世界杯处子球）。下半场美国把 4-2-3-1 改为 3-5-2 控场收兵，澳大利亚最后 20 分钟换上 Irankunda 一度提速（Ream 被身后球过掉、Volpato 射门偏出），但始终未能转化。<b>美国在缺少头号球星 Pulisic（小腿伤）的情况下完成零封，这是球队近 10 场（自 9 月对日本以来）首次零封，也是自 1930 年首届世界杯以来首次在世界杯取得两连胜——提前一轮锁定 32 强。</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 11' Burgess 乌龙(美·Balogun 制造) · 43' Freeman(美·Dest 射门变线后补射) · 56' Robinson 黄牌(美) · HT 2-0 · FT 2-0</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇸 美国</th><th>🇦🇺 澳大利亚</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>70%</b></td><td>30%</td><td>上半场一度 70-71%——与赛前"美国持球、澳大利亚低位死守"的形态预判完全一致</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.17</b></td><td>0.12</td><td>2 球 vs 1.17 xG＝终结略高于机会质量；澳大利亚全场 xG 仅 0.12，低位块基本没让美国打出高质量正面机会，2 球多来自定位球/变线偶然性</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>9 / —</b></td><td>2 / —</td><td>美国 9 射其中 7 次来自禁区内，但运动战正面破门寥寥；赛前"破密集靠的是边路个人质量"在 Pulisic 缺阵后明显打折</td></tr>
+      <tr><td class="ht">传球 / 成功率</td><td><b>531 / ≈88%</b></td><td>308 / ≈77%</td><td>美国控传压制彻底，但高控球未换来高 xG——证明澳大利亚低位块"放控球、保禁区"的策略成立</td></tr>
+      <tr><td class="ht">角球</td><td><b>7</b></td><td>4</td><td>美国围攻产出角球占优，且第二球正源于角球二次进攻——与赛前"美国控球围攻、角球偏高"画像吻合</td></tr>
+      <tr><td class="ht">犯规 / 黄牌</td><td>12 / 1(Robinson 56')</td><td>16 / —</td><td>澳大利亚战术犯规更多（低位块打断节奏），美国唯一黄牌来自 Robinson 的危险铲球——赛前裁判面"澳低位防守吃牌风险"部分兑现，但全场牌量并不高</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA 官方赛事中心 — USA 2-0 Australia</a> · <a href="https://www.sofascore.com/news/usa-2-0-australia-at-ht-world-cup-group-d-report">Sofascore — 控球/xG/射门</a> · <a href="https://www.espn.com/soccer/story/_/id/49118816/usmnt-player-ratings-freeman-surprise-hero-7-10-performance-stonewall-australia">ESPN — 球员评分/过程</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-united-states-vs-australia-jun-19-2026-game-boxscore-647645">FOX Sports — 角球/犯规/传球</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">没有 Pulisic，美国的"破密集"立刻变钝</div>赛前模块明确点名 Pulisic 是美国撕开低位块的最佳个人解法。实战中美国 70% 控球、1.17 xG，运动战几乎打不出正面高质量机会，两球分别来自乌龙与角球变线。Pepi 顶左路仅得 3/10、Pochettino 中途把 Balogun 拉边、最终改 3-5-2。<b>说明这支美国队对有组织低位块的破解高度依赖个人质量（Pulisic/Reyna），缺少稳定的阵地渗透套路</b>——遇到淘汰赛更强的铁桶阵，这是结构性短板。</div>
+    <div class="insight"><div class="who">定位球与第二落点是这套体系的现实得分路径</div>2 球全部来自非运动战的混乱解法（乌龙 + 角球二次进攻补射）。<b>说明当个人爆点缺席时，美国能稳定指望的是定位球/角球的高大球员争顶（Freeman/Richards/Ream）</b>——这条路径可复制，且不依赖 Pulisic，是淘汰赛低比分硬仗里的重要武器。</div>
+    <div class="insight"><div class="who">Pochettino 的临场调整能力（4-2-3-1 → 3-5-2）是真实资产</div>面对打不开的低位块与 Pepi 左路失灵，主帅半场后果断变阵三中卫、把 Balogun 推向更自由的位置、并靠换人（Berhalter/Scally/Trusty）守住零封。<b>说明这支美国队在"计划 A 失灵"时有可执行的备选方案</b>——这是大赛深走的必要能力，比 4-1 大胜巴拉圭时的顺风局更有说服力。</div>
+    <div class="insight"><div class="who">澳大利亚低位块成立，但进攻端彻底哑火</div>澳大利亚 30% 控球、全场 xG 仅 0.12，把美国压到 1.17 xG 已属防守成功，但自身除 Irankunda 末段一次提速外几乎零威胁。<b>说明 Popovic 的体系"防守纪律够、进攻火力薄"——一旦先丢球（哪怕是乌龙），缺乏由守转攻的二次解法</b>，反击模板对会主动控球的强队果然失灵（正如赛前迁移点所警示）。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">美国胜（去水隐含 ≈60% / Opta 58.5%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>美国全程掌控、零封取胜，无悬念</td></tr>
+      <tr><td class="ht">基准比分 美国 2-0（专家最常见）</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>终场正是 2-0，赛前点名的最常见比分完全兑现</td></tr>
+      <tr><td class="ht">小 2.5 球逻辑略获强化（Pulisic 缺阵后）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>总进球 2 球，小 2.5 命中；"美国围攻但难高效得分、进球后移"判读正确</td></tr>
+      <tr><td class="ht">让球 美国 -1.5（专家提示价值不足）</td><td style="color:var(--warn)"><b>~ 临界兑现</b></td><td>美国净胜 2 球、-1.5 恰好走盘；但 1.17 xG 显示过程并不轻松，专家"难赢 2 球"的谨慎有据</td></tr>
+      <tr><td class="ht">风险点：澳大利亚定位球/反击偷分</td><td style="color:var(--good)"><b>✓ 风险已规避</b></td><td>Irankunda 被摁替补、澳 xG 仅 0.12——赛前"Irankunda 替补使开场反偷威胁下降"的修正判读成立</td></tr>
+      <tr><td class="ht">隐患：美国领先后松动被反偷（上一场带入）</td><td style="color:var(--good)"><b>✓ 本场未复发</b></td><td>改 3-5-2 收兵后零封；末段 Ream 被 Irankunda 过掉一次属个别失位，未酿成失球——纪律较首轮明显改善</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">📌 <b>对账小结</b>：赛前基准剧本（美国 2-0 控场取胜 + 小球）<b>精准命中</b>；唯一偏差是过程比比分更胶着（xG 1.17 vs 实进 2），印证"东道主公众盘溢价、但过程未必轻松"的提醒。本站赛前主线整体兑现。</div>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fa6e6">🇺🇸 美国 · 下一场 vs 土耳其（6/25 洛杉矶 Inglewood）</h4>
+        <ul class="watch">
+          <li><b>Pulisic 回归是头号变量</b>：本场已提前锁定 32 强、出线无压力，Pulisic 小腿伤的目标正是这一轮——他若复出，"破密集"短板立刻缓解；Pochettino 也可能借机轮换练阵。</li>
+          <li><b>破阵地战能力待验证</b>：本场 70% 控球仅 1.17 xG，运动战破密集打折；土耳其实力强于澳大利亚、且首轮 0-2 负澳后必全力争胜抢分，美国的阵地渗透会被真正检验。</li>
+          <li><b>可复制的得分路径＝定位球</b>：Freeman/Richards/Ream 的角球争顶 + 第二落点是本场唯一稳定输出，对土耳其的硬仗仍是重点武器。</li>
+          <li><b>无停赛/伤病新增</b>：Robinson 1 张黄牌不累计停赛；阵容健康，Pulisic 回归与否是唯一悬念。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e6c45a">🇦🇺 澳大利亚 · 下一场 vs 巴拉圭（6/25 圣克拉拉）</h4>
+        <ul class="watch">
+          <li><b>出线生死战</b>：1 胜 1 负、净胜球持平，对阵同样需抢分的巴拉圭——这是真正的出线分水岭，澳大利亚已无法再靠平局过关。</li>
+          <li><b>进攻端必须解题</b>：本场 xG 仅 0.12、全场零威胁暴露了"防守够、进攻薄"的结构问题；对巴拉圭须放开打，Irankunda 大概率回到首发、Toure/Velupillay 的终结效率是关键。</li>
+          <li><b>定位球仍是看家武器</b>：预选 8 球 + Souttar/Circati 高点，对巴拉圭的低比分对话里，一次定位球可能就是出线分水岭。</li>
+          <li><b>无停赛/伤病新增</b>：本场无红牌、无伤退；Beach 门将位置稳固，阵容可用——问题在打法而非人员。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>首轮双胜方的小组头名直接对话</b>：东道主美国（FIFA #17、Pochettino 的高位压迫 + Balogun 单中锋，首轮 4-1 大胜巴拉圭）对阵爆冷取胜的澳大利亚（FIFA #27、Popovic 的纪律低位防反，首轮 2-0 掀翻土耳其、上演史上最年轻世界杯首发）。盘口倾向明确但非碾压：美国胜 <b>1.61</b>（美线 -165，去水隐含 ≈60%），平局 <b>4.20</b>（+320，≈23%），澳大利亚胜 <b>5.50</b>（+450，≈17%）。大小球线 2.5：大 <b>1.96</b>（-104）/ 小 <b>1.82</b>（-122），市场轻偏小球。让球盘 <b>美国 -1.5 / 澳大利亚 +1.5</b>（澳 +1.5 约 -127）。Opta 超算：美国胜 <b>58.5%</b>、平 20.9%、澳大利亚胜 20.6%。基准剧本：<b>美国 2-0 / 2-1 控场取胜</b>，但澳大利亚的低位块 + 反击 + 定位球已被首轮证明能伤人，绝非送分对手。<b>🆕 官方首发已公布（见下方 ✅ 模块）：头号球星 Pulisic 小腿伤确认缺阵，美国改 Pepi 首发、阵型转 3-4-1-2 双前锋；澳大利亚反击尖刀 Irankunda 意外替补。速览基准（美国控场取胜）维持，小球逻辑略增强。</b></p>
+    <div class="keyrow">
+      <div class="key"><div class="k">美国隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈60%</div></div>
+      <div class="key"><div class="k">小球隐含概率</div><div class="v" style="color:#e6c45a">≈52%</div></div>
+      <div class="key"><div class="k">Opta 美国胜率</div><div class="v" style="color:var(--good)">58.5%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Pulisic 确认缺阵（官方）</b>：小腿伤未愈、本场不在名单（目标下轮土耳其）；美国改 Pepi 首发、阵型转 3-4-1-2 双前锋——失去其定位球/点球与个人爆点，但攻坚更直接。</li>
+      <li><b>Balogun 的火热状态（上一场带入）</b>：首轮梅开二度，单中锋支点体系已跑通，是美国对密集防守的主要破局点。</li>
+      <li><b>澳大利亚的定位球 + 反击（官方调整）</b>：预选 8 球的看家本领仍在(Souttar/Circati 高大中卫)，但反击尖刀 <b>Irankunda 被摁替补</b>——开场直接转换偷分威胁下降，Velupillay 更偏组织；Irankunda 转为下半场奇兵。</li>
+      <li><b>美国领先后的防守专注度（上一场带入）</b>：首轮 3-0 后松动被扳回一球；Irankunda 首发缺席降低了开场被反偷的风险，但其替补登场后(60-70 分钟)转换速度威胁回升，回防仍需警惕。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #234a5a;background:linear-gradient(135deg,#13202b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含上一场带入）</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">🆕 赛前最新 · 美国头号悬念落定 <span style="color:var(--mut);font-weight:400">· NBC / CBS / SI / FanDuel · 06-18/19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Pulisic 小腿伤确认可出战首发</b>——Pochettino 与队长 Adams 均表态"Pulisic 已准备好"<span style="font-size:12px;color:var(--warn)">（上一场带入）</span></div>
+      <p style="font-size:13.5px">据 NBC Sports、CBS Sports、SI 与 FanDuel 赛前消息，Pulisic 首轮对巴拉圭半场被换下系"小腿不适、预防性下场"，并非伤势加重；赛前主帅 Pochettino 与队长 Tyler Adams 双双确认其"已准备好"，整条进攻线连同 Pulisic 已确认可用并首发。若临场不可出战，Timothy Weah 将顶替其左路位置。预测首发：美国（4-3-3）Freese；Freeman、Richards、Ream、Robinson；Adams、Tillman；Dest、McKenzie、Pulisic；Balogun。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是本场最大的临场变量。① Pulisic 是美国左路最具个人质量的破密集解法，也是定位球/点球主罚手——他在阵，美国"边中结合撕开低位块"的成功率显著上升；② 悬念落定意味着市场对美国胜与让球（-1.5）的定价不会因伤退而松动，反而巩固主线。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start" style="color:var(--accent)">NBC Sports — 首发/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/" style="color:var(--accent)">CBS — Pulisic 伤情</a> · <a href="https://www.si.com/soccer/usmnt-predicted-lineup-vs-australia-world-cup-group-d-6-19-26" style="color:var(--accent)">SI — 预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid #7fa6e6;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">美国 · 首轮带入资产 <span style="color:var(--mut);font-weight:400">· 本站 report-usa-vs-paraguay · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Balogun 梅开二度、单中锋体系跑通</b>；但 3-0 后防守松动被扳回一球 <span style="font-size:12px;color:var(--warn)">（上一场带入）</span></div>
+      <p style="font-size:13.5px">美国首轮 4-1 巴拉圭，Balogun 梅开二度 + Reyna 一记 trivela 世界波，单中锋支点体系已跑通，"破密集"疑虑因边中结合 + 个人质量得到解答。但本站上一场前瞻迁移点名：3-0 领先后美国出现防守专注度松动、被扳回一球——这一隐患对更具冲击力的对手尤为关键。Chris Richards 健康可用是利好。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：澳大利亚正是"低位块 + 直接反击 + 高空/定位球"的类型，恰好对应美国领先后松懈的失分模板。美国若不能保持全场强度，澳大利亚的 Irankunda 反击与定位球完全可能复制土耳其一战的零封逻辑、反向偷分。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aol.com/articles/haji-wright-delivers-as-usmnt-beats-australia-2-1-but-christian-pulisics-injury-clouds-win" style="color:var(--accent)">AOL — 美国近况</a> · <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26" style="color:var(--accent)">SI — 首轮复盘/前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid #e6c45a;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e6c45a;font-weight:700">澳大利亚 · 首轮带入 + 队况 <span style="color:var(--mut);font-weight:400">· 本站 report-australia-vs-turkiye · Sky / Goal · 06-14~18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>2-0 爆冷土耳其、全员健康、信心拉满</b>；Mohamed Toure 对土耳其抽筋、状态被监控 <span style="font-size:12px;color:var(--warn)">（上一场带入）</span></div>
+      <p style="font-size:13.5px">澳大利亚首轮在温哥华 2-0 掀翻土耳其（Irankunda 半场反击破门、Metcalfe 下半场扩大比分），22 岁门将 Patrick Beach 顶替老将 Mat Ryan 首发、8 次扑救成为本届至今扑救王，Popovic 排出"史上最年轻世界杯首发 XI"。无伤停确认，唯前锋 Mohamed Toure 对土耳其严重抽筋、其出场状态被监控（待核）。本站前瞻迁移点名：澳大利亚的<b>反击模板对会主动控球的美国未必好用，需要比对土耳其更强的防守韧性</b>；但定位球（预选 8 球）是可复制武器。预期沿用首轮 XI、Irankunda 续作首发反击尖刀。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：① Beach 的神勇与全队零封信心是真实资产，澳大利亚不会怯场；② 但首轮是"土耳其控球无穿透"喂出来的零封——美国比土耳其更快、更立体，澳大利亚后防转换回位若慢半拍，Balogun/Pulisic 的速度会直接惩罚；③ Toure 若带伤或轮换，澳进攻支点削弱，更依赖 Irankunda 单点反击与定位球。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver" style="color:var(--accent)">Sky Sports — 2-0 复盘/Beach</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c" style="color:var(--accent)">Goal — 前瞻/Toure 抽筋</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19" style="color:var(--accent)">FanDuel — 队况/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">背景 · 出线形势与赛事意义 <span style="color:var(--mut);font-weight:400">· Opta / ESPN · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队首轮均 3 分同分，本场<b>胜者大概率提前锁定小组头名</b>、败者出线压力陡增</div>
+      <p style="font-size:13.5px">D组首轮罢战：美国 4-1 巴拉圭、澳大利亚 2-0 土耳其，两队各 3 分并列榜首；巴拉圭、土耳其同日（6/19-20，圣克拉拉）另一场对决。美国一场胜利即可在第三轮前基本预订晋级，并掌握头名主动权；Opta 给美国小组头名概率 32.83%（土耳其 29.04%、巴拉圭 20.51%、澳大利亚 17.62%）。东道主 + 主场 6.9 万人（Lumen Field）。<span style="color:var(--warn)">（出线情景以另一场比分及最终积分为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：双方都有"求胜"动机但风险偏好不同——美国主场必须赢球以坐稳头名，会主动控场施压；澳大利亚已超额完成首轮预期，可承受平局、更愿意低位死守 + 反击偷分。这一动机差异强化"美国持球、澳大利亚防反"的比赛形态。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 超算/小组概率</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries" style="color:var(--accent)">ESPN — D组形势</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认 · 速览结论复核</span></h2>
+    <div class="note" style="background:#0e2218;border-color:#1d4a2a;color:#bff0d0">✅ <b>官方确认</b>（≥2 源一致：Yahoo Sports 实时名单 + CNN/ESPN 队闻，开球前约 75 分钟公布）。<b>两大爆点</b>：美国队长级核心 <b>Pulisic 小腿伤确认缺阵</b>（改 Pepi 首发、阵型转双前锋）；澳大利亚反击尖刀 <b>Irankunda 意外被摁替补席</b>。</div>
+
+    <h4>🇺🇸 美国 官方首发（3-4-1-2 · 较预测改双前锋）</h4>
+    <div class="lineup">Freese; Richards · Ream(C) · Freeman; Robinson · McKennie · Adams · Dest; Tillman; Balogun · Pepi</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：Tim Weah（边路爆点）、Gio Reyna（创造力）、Haji Wright（支点轮换）。<b>Pulisic 本场不在名单（养伤，目标下轮土耳其）。</b></div>
+
+    <h4 style="margin-top:14px">🇦🇺 澳大利亚 官方首发（3-4-2-1 · 沿用胜土耳其模板）</h4>
+    <div class="lineup">Beach; Burgess · Circati · Souttar(C); Bos · O'Neill · Leckie · Italiano; Velupillay · Okon-Engstler; Toure</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Nestory Irankunda</b>（本场最大奇兵——史上最年轻世界杯进球者、最直接反击速度，被留作后手）、Mathew Ryan（门将经验）、Connor Metcalfe（前插）。</div>
+
+    <h4 style="margin-top:16px">vs 预测首发 · 对照</h4>
+    <table>
+      <tr><th>队</th><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">美</td><td>箭头</td><td>Pulisic 首发(左边锋)</td><td>Pepi 首发(第二前锋)</td><td>小腿伤确认缺阵；不是边锋换边锋，而是改双前锋——以中路直接性硬啃低位块，但失去 Pulisic 的个人质量与定位球/点球主罚</td></tr>
+      <tr><td class="ht">美</td><td>阵型</td><td>4-3-3 平后卫线</td><td>3-4-1-2 三中卫双塔</td><td>由边路渗透转向双前锋；Dest/Robinson 变翼卫给宽度，Tillman 居 10 号位串联 Balogun+Pepi</td></tr>
+      <tr><td class="ht">美</td><td>其余</td><td>—</td><td>10/11 沿用胜巴拉圭班底</td><td>除 Pulisic 外全员不变——主帅信任首轮阵容</td></tr>
+      <tr><td class="sc">澳</td><td>反击尖刀</td><td>Irankunda 首发</td><td>Irankunda 替补 / Velupillay 首发</td><td>本页风险剧本倚重的"最直接反击武器"被摁替补——澳大利亚开场快速转换偷分威胁下降，Irankunda 转为后手奇兵</td></tr>
+      <tr><td class="sc">澳</td><td>中场</td><td>Metcalfe 首发</td><td>Leckie 首发</td><td>老将 Leckie 替下首轮替补建功的 Metcalfe，经验/纪律优先于前插</td></tr>
+      <tr><td class="sc">澳</td><td>阵型</td><td>4-2-3-1</td><td>3-4-2-1(沿用胜土耳其)</td><td>三中卫+翼卫低位块，Burgess/Circati/Souttar 防空更密——与首轮零封土耳其同一模板</td></tr>
+      <tr><td class="sc">澳</td><td>中锋</td><td>Toure(抽筋·待核)</td><td>Toure 首发</td><td>抽筋疑虑解除、确认领衔——本页待核项①清除</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">战术解读（速览结论复核）</h4>
+    <ul class="cl">
+      <li><b>阵型信号（美国）</b>：4-3-3 → 3-4-1-2 双前锋。Pulisic 缺阵后 Pochettino 不补边锋而加一中锋(Pepi 配 Balogun)，意在用双塔/直接性硬啃澳大利亚低位块，宽度交给翼卫。速览"美国控场围攻"主线<b>维持</b>，破局方式由"边路个人质量+定位球"转为"中路双前锋+翼卫传中"。</li>
+      <li><b>关键减项（美国）</b>：失去 Pulisic = 失去最佳定位球/点球输送与个人爆点。面对 Souttar/Circati 高大中卫的双向定位球对位，美国一端威胁下调——速览"定位球质量"胜负手向澳大利亚略微倾斜，<b>修正</b>。</li>
+      <li><b>关键减项（澳大利亚）</b>：Irankunda 替补是本场最大单点变化。本页 1-1 风险的核心驱动正是"Irankunda 反击偷分"；其首发缺席使澳开场直接转换威胁明显减弱(Velupillay/Okon-Engstler 更偏组织而非纯爆速)——"领先后被反偷"隐患<b>下调一档</b>（但 Irankunda 仍是 60-70 分钟后的奇兵，下半场风险回升）。</li>
+      <li><b>净结论</b>：速览基准（美国控场取胜）<b>维持</b>；两处变化方向相反——美国攻坚更直接但定位球/个人质量下降，澳大利亚模板不变但开场反击威胁下降。综合更可能呈现"美国持续围攻 + 澳纯低位死守"，进球时间或后移，<b>小球(Under 2.5)逻辑略获强化</b>。风险结构由"Irankunda 反击"重定价为"美国定位球降级 + 澳整体韧性"。</li>
+    </ul>
+
+    <div class="note" style="margin-top:12px">📊 <b>市场反应</b>：首发公布后综合盘口 美国 <b>-170（≈1.59 欧赔）</b> · 平 ≈4.0 · 澳大利亚 <b>+410（≈5.10）</b>。要点：尽管头号球星 Pulisic 确认缺阵，美国仍稳居明显热门（≈1.59）、未因伤讯显著走高——市场认为 Pepi+Balogun 双前锋足以补偿，与本页"东道主公众盘溢价"判断一致。（精确的公布前后逐笔变动无带时间戳数据；仅陈述公布后水位，不构成投注建议。）</div>
+
+    <div class="src" style="margin-top:10px">来源：<a href="https://sports.yahoo.com/soccer/live/usmnt-vs-australia-score-live-updates-where-to-watch-world-cup-2026-christian-pulisic-injury-news-lineups-170000908.html">Yahoo Sports — 实时官方名单 + 赔率</a> · <a href="https://www.cnn.com/2026/06/19/sport/soccer-world-cup-usa-australia">CNN — Pulisic 确认缺阵</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-118651">RotoWire — 阵型/队闻</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA 官方赛事中心</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · D组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>D 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇸 美国</th><th>🇦🇺 澳大利亚</th></tr>
+      <tr><td>FIFA 排名（2026/06）</td><td class="ht">#17</td><td class="sc">#27</td></tr>
+      <tr><td>首轮结果</td><td class="ht">4-1 胜巴拉圭（Balogun 梅开二度）</td><td class="sc">2-0 胜土耳其（Irankunda、Metcalfe）</td></tr>
+      <tr><td>大赛近况</td><td class="ht">2022 世界杯 16 强；2024 美洲杯（主场）小组出局</td><td class="sc">2022 世界杯 16 强；2023 亚洲杯 8 强</td></tr>
+      <tr><td>主教练</td><td class="ht">Mauricio Pochettino</td><td class="sc">Tony Popovic</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.61（-165，隐含≈60%）</td><td class="sc">胜 5.50（+450，≈17%）· 平 4.20（+320，≈23%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 @ 1.96（-104）/ 小 2.5 @ 1.82（-122）—— 市场轻偏小球</td></tr>
+      <tr><td>让球（亚盘参考）</td><td colspan="2">美国 -1.5（约 +170）/ 澳大利亚 +1.5（约 -127）</td></tr>
+      <tr><td>历史交锋（近期）</td><td colspan="2">2025/10/15 友谊赛 美国 2-1 澳大利亚（无世界杯正式交锋）</td></tr>
+      <tr><td>头号悬念</td><td class="ht">Pulisic 小腿伤 → 确认首发</td><td class="sc">Mohamed Toure 抽筋（状态被监控·待核）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈60/23/17）。赔率来源：DraftKings/共识盘（美国 -165、平 +320、澳大利亚 +450），美线转十进制：美国 1.61、平 4.20、澳大利亚 5.50。大小球线 2.5，Over -104（1.96）/ Under -122（1.82）。让球 美国 -1.5（约 +170）/ 澳 +1.5（约 -127）。Opta 超算：美国胜 58.5%、平 20.9%、澳大利亚胜 20.6%——与市场去水概率高度吻合，盘口定价合理。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近 10 场预选 / 热身样本）</b>与<b>本届世界杯首轮的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（近 10 场 · FootyStats）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇺🇸 美国 · 进攻 xG/进球</td><td class="ht">近 10 场 <b>xGF 1.23/场</b>、实进 1.30/场、控球 58%、射门 8.3（射正 4.6）、射门转化 16%</td><td class="ht">首轮 <b>xG 1.35</b>、实进 <b>4 球</b>（4-1 巴拉圭，对手 xG 仅 0.47）</td><td>本届 xG（1.35）<b>略高于</b>历史均值（1.23），但 4 球 vs 1.35 xG＝<b>终结严重过热（+2.65）</b>——含 1 乌龙 + Reyna 读秒世界波，<b>不可持续</b>，真实创造力≈1.3–1.4 档</td></tr>
+      <tr><td class="ht">🇺🇸 美国 · 防守 xGA/失球</td><td class="ht">近 10 场 <b>xGA 1.20/场</b>、实丢 1.10/场、零封率 30%</td><td class="ht">首轮把巴拉圭限制到 <b>0.47 xG</b>、仅丢 1 球（3-0 后松动被扳回）</td><td>首轮 xGA（0.47）<b>显著优于</b>历史基准（1.20）——但对手是弱旅且领先后才松动；防线质量被高比分掩盖，对更立体进攻仍需观察</td></tr>
+      <tr><td class="sc">🇦🇺 澳大利亚 · 进攻 xG/进球</td><td class="sc">近 10 场 <b>xGF 0.83/场</b>（偏低）、实进 1.60/场、控球仅 39%、射门转化 <b>23%（很高）</b></td><td class="sc">首轮 <b>xG 0.77</b>、实进 2 球（2-0 土耳其，28.3% 控球＝队史最低）</td><td>本届 xG（0.77）<b>贴合</b>历史低位均值（0.83）——进攻产出本就少而精；2 球靠 Irankunda 反击 + Metcalfe 远射的<b>高转化</b>，是打法特征而非运气，但低 xG 意味着进球数易波动</td></tr>
+      <tr><td class="sc">🇦🇺 澳大利亚 · 防守 xGA/失球</td><td class="sc">近 10 场 <b>xGA 1.39/场（偏高）</b>、实丢 0.90/场、零封率 40%</td><td class="sc">首轮被土耳其打出 <b>1.33 xGA</b>（30 脚射门）却 <b>0 失球</b>（Beach 8 扑救）</td><td>历史与首轮一致：<b>xGA 高、实丢低</b>——长期"防守运气 / 门将超神"（xGA−实丢≈+0.49/场）。Beach 神勇若退潮，1.3+ 的 xGA 会兑现成失球，<b>零封不可持续</b></td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：① <b>美国终结过热</b>——首轮 4 球大幅超出 1.35 xG，靠乌龙 + 读秒世界波，回归后真实进攻≈1.3–1.4，"4-1 大胜"夸大了实力差；② <b>澳大利亚防守靠运气 + 门将</b>——历史 xGA 1.39/首轮 xGA 1.33 都远高于实际失球，零封是 Beach 8 扑救撑出来的，不可持续；③ 两队首轮均"结果好于过程"。来源：FootyStats（两队近 10 场 xGF/xGA/控球/射门）· Opta Analyst（首轮 xG：美 1.35-0.47、澳 0.77-1.33）。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（xGscore）</td><td class="ht">美国 ≈1.5</td><td class="sc">澳大利亚 ≈0.8</td><td>校准后美国持球投射占优——但澳大利亚低位块 + Beach 把对手 xG 压成实际失球的能力，是缩小比分的关键变量</td></tr>
+      <tr><td>Opta 超算胜平负</td><td colspan="2" class="sc">美国胜 <b>58.5%</b> / 平 20.9% / 澳大利亚胜 20.6%（25,000 次模拟，已做对手调整）</td><td>与去水赔率（60/23/17）高度吻合；超算并未把美国 4-1 的终结过热当真，给澳 20%+ 偷分概率</td></tr>
+      <tr><td>Opta Power Ranking · 样本强度</td><td colspan="2" class="sc">两队体系评级接近 <span style="color:var(--warn)">（具体数值待核）</span>；<b>陷阱提醒</b>：美国近 10 场（含友谊赛/预选）样本对手偏弱，xG 数字含金量需打折</td><td>美国 xGF 1.23 多来自弱对手；面对会主动施压的强队，"破密集 + 终结"是否仍高效是真正问号</td></tr>
+      <tr><td>PPDA · xT · field tilt · PSxG · 定位球 xG 占比</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性代理：美国控球 58% + 高位逼抢倾向（field tilt 强烈倒向美国）；澳大利亚控球 39%、被迫低位，靠 Beach 的扑救价值（PSxG−失球为正）压低实际失球</td><td>场面倾斜大概率长时间倒向美国，澳大利亚比的是"少失球 + 反击效率"</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xGF−xGA，综合实力的单一最佳代理指标。美国近 10 场 +0.03、澳大利亚 −0.56。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PSxG</b>（射后预期进球 / 门将面对的扑救难度）：减去实际失球可量化门将的扑救增益——Beach 首轮 8 扑救为正贡献。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 FootyStats（两队近 10 场实测 xG/xGA/控球/射门）+ Opta Analyst（首轮 xG/超算）等公开来源；国家队在 PPDA/xT/field tilt/PSxG/定位球 xG 占比 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">美国胜方向高度统一（东道主 + 主场公众盘偏向明显）；真正的分歧在"能否赢 2 球（让球 -1.5）"与"小球"——专家多数押小球</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.6">🔥</span><span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3.5/5 · 东道主公众盘偏热；让球与小球有真实分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">美国胜方向收敛、且作为东道主主场有明显公众盘资金堆叠（开盘 -165 一度推至 -185），存在情绪溢价；专家则普遍提示"赢球但 -1.5 价值不足"——因澳大利亚首轮已证明难缠。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：美国胜 全部 · 澳大利亚胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>美国胜率 <b>58.5%</b>（超算模拟）；平 20.9% / 澳大利亚胜 20.6%</td></tr>
+      <tr><td>RotoWire</td><td>预测媒体</td><td>美国胜，但 -160 让球(-1.5)价值不足（澳大利亚难缠）；倾向 <b>美国 2-0</b></td></tr>
+      <tr><td>SportsLine（Green）</td><td>美系投注媒体</td><td>美国胜 + 主推 <b>小 2.5 球</b></td></tr>
+      <tr><td>Covers / Yahoo</td><td>预测媒体</td><td>一致看美国胜；<b>2-0</b> 为最常见比分</td></tr>
+      <tr><td>CBS Sports</td><td>球员盘观点</td><td><b>Pulisic 进球或助攻 +110</b>（视其出战为前提）</td></tr>
+      <tr><td>FanDuel Research</td><td>盘口媒体</td><td>美国胜；提示澳大利亚 +1.5 与 Under 的对冲价值</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中高）</b>：胜负方向高度统一（无人押澳大利亚赢）属合理共识；但<b>东道主 + 主场令公众盘单边压注美国</b>，赔率被推得偏低（-165→-185），这是真实的情绪溢价。专家的反向价值集中在 <b>澳大利亚 +1.5 / 小 2.5 球</b>——即"美国会赢但未必赢 2 球"。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>美国胜</th><th>解读</th></tr>
+      <tr><td>开档（DraftKings）</td><td>1X2</td><td class="ht">1.61（-165）</td><td>平 4.20 / 澳大利亚 5.50；明确倾斜美国但非碾压</td></tr>
+      <tr><td>06-18 公众盘</td><td>1X2</td><td class="ht">约 1.54（-185）</td><td>东道主资金堆叠，美国胜被进一步压低 → 情绪溢价信号</td></tr>
+      <tr><td>06-18/19</td><td>大/小 2.5</td><td colspan="2" class="sc">大 2.5 @ 1.96（-104）；小 2.5 @ 1.82（-122）—— 轻偏小球</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>美国 -1.5</td><td colspan="2" class="sc">美国 -1.5 约 +170；澳大利亚 +1.5 约 -127（专家偏好澳 +1.5）</td></tr>
+    </table>
+    <div class="note">📌 美国胜被公众盘从 -165 推至 -185，是典型的东道主公众盘热度信号——价格已透支共识。最有信息含量的市场是 <b>让球 -1.5 与小 2.5 球</b>：多数专家认为"美国赢但难赢 2 球"，因此 Under 与澳 +1.5 是分歧/价值所在。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率（美国胜）</th><th>定位变化 · 触发</th></tr>
+      <tr><td>赛事开盘（小组赛开档前·DraftKings）</td><td class="ht">约 1.74（-135）<br><span style="font-size:11.5px;color:var(--mut)">平 ≈4.70（+270）/ 澳 ≈4.50（+350）</span></td><td>美国被定为温和热门、非碾压；澳大利亚一度被视为 D 组出线概率最低的鱼腩。</td></tr>
+      <tr><td>美国 4-1 巴拉圭后（峰值）</td><td class="ht">约 1.51（-195）<br><span style="font-size:11.5px;color:var(--mut)">平 ≈4.60（+360）/ 澳 ≈6.00（+500）</span></td><td><b>触发：美国大胜 + 东道主情绪</b>。美国胜被一路压短至 -195、澳客胜被拉长至 +500——市场短暂过度反应。</td></tr>
+      <tr><td>澳大利亚 2-0 土耳其后（本场开盘）</td><td class="ht">约 1.61（-165）<br><span style="font-size:11.5px;color:var(--mut)">平 ≈4.20（+320）/ 澳 ≈5.50（+450）</span></td><td><b>触发：澳爆冷零封土耳其</b>。美国从 -195 回收至 -165、澳客胜从 +500 收紧至 +450——澳被市场<b>重新定价为难缠对手</b>。</td></tr>
+      <tr><td>06-18/19 现盘（公众盘）</td><td class="ht">约 1.54（-185）→ 1.61（-170）<br><span style="font-size:11.5px;color:var(--mut)">资金 91% 押美国胜</span></td><td><b>触发：东道主主场公众盘单边堆叠</b>。美国胜被公众盘再度压短（情绪溢价）；同期澳 +1.5 受追捧、澳出线 / D 组头名 futures 被收窄（已脱离垫底）。</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场盘口经历了"开盘 → 美国大胜推高 → 澳爆冷回收 → 公众盘再压"的完整波动。<b>美国</b>仍是明显热门，但价格在两轮推动后已透支共识、带东道主情绪溢价（现盘 -185/-170 vs 合理 -165）；<b>澳大利亚</b>则完成从"垫底鱼腩"到"难缠次种子级对手"的重新定价——本场客胜赔率虽仍长（≈5.50），但其出线 / 小组头名 futures 在 2-0 后被实质性收窄，且 +1.5 受让盘成为专家公认的价值侧。换言之：市场对结果方向（美国赢）越发笃定，对赢球幅度（-1.5）的信心反而下降。来源：DraftKings（开盘/移动/资金面）· ESPN（实时盘口）· Squawka（澳大利亚出线/夺冠 futures）。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：美国胜 58.5%、平 20.9%、澳大利亚胜 20.6%——与博彩去水概率（60/23/17）高度吻合，两池基本收敛。</li>
+      <li><b>舆论焦点</b>：Pulisic 伤情是赛前最大流量点（已确认可出战）；澳大利亚"史上最年轻 XI + 门将 Beach 神扑"的爆冷叙事带来一定情绪关注；东道主 + 西雅图主场氛围放大公众盘对美国的偏好。</li>
+      <li><b>专家共识 vs 公众盘背离</b>：专家提示"美国赢但 -1.5 没价值"，与公众盘把美国胜越压越低形成对照——这是过热指数升至 3.5/5 的主因。</li>
+      <li><b>Kalshi / Polymarket</b>：本场单场胜负的公开成交价格与资金面数据未检得 <span style="color:var(--warn)">（待核）</span>。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与 Opta 超算在胜负方向上完全收敛（美国 ≈58–60%），过热指数 <b>3.5/5</b>——略高于纯收敛比赛，因东道主公众盘把美国胜价格压得偏低、存在情绪溢价。真正的价值分歧集中在<b>让球 -1.5（美国能否赢 2 球）与小 2.5 球</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — 投注/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — 预测/赔率</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — 开盘赔率</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">美国主动持球、围攻低位块 → 角球产出偏高一侧；澳大利亚被迫解围出底线也会贡献角球；市场具体盘口待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇺🇸 美国</th><th>🇦🇺 澳大利亚</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">高位压迫 + 主动控球；边中结合传中多；Pulisic 主罚定位球</td><td class="sc">低位防反；Irankunda 直接反击；定位球终结（预选 8 球）</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈6–8（控球+围攻低位块，角球产出高）<span style="color:var(--warn)">待核</span></td><td class="sc">≈3–4（多防守，被迫解围出底线）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Pulisic 输送 + 高大中卫（Richards/Ream）抢点</td><td class="sc">高：Souttar/Circati 高点 + 任意球套路，是看家武器</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显占优（持球+围攻）</td><td class="sc">少而精，靠定位球质量而非数量</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像：美国控球围攻、角球产出明显偏高，澳大利亚以防守解围为主，总角球可能落在 9–12 区间；常见基准线 O/U 9.5 或 10.5 属正常范围，美国让角（如 -2.5/-3）符合控球优势画像，具体赔率以实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>美国主动控球、长时间围攻澳大利亚低位块，角球差预计明显偏向美国；若美国早早领先后收兵，角球差会收窄。美国让角盘与主盘走势高度联动。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>美国一方推高总角球（控球+传中），澳大利亚被迫解围出底线进一步抬升基数——总角球偏中高（≥9）；若比赛早早分出且节奏放缓，则回落至 8–9。</div>
+    <div class="insight"><div class="who">变量与两面性</div>关键变量是比赛形态：澳大利亚若坚持低位死守，美国围攻时间拉长 → 角球数走高；若澳大利亚被迫追分压上（落后两球），双方对攻、定位球与角球均可能增多。定位球质量（Pulisic vs Souttar/Circati 高点）是双向变量。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>裁判委任已确认</b>：主裁 <b>Felix Zwayer</b>（德国，43 岁）；助理裁判 Robert Kempter & Christian Dietz（德国）。本届世界杯系 Zwayer 首次以主裁身份执法世界杯（2018 俄罗斯世界杯曾任 VAR）；2012 年成为国际级裁判，本赛季执法 7 场欧冠。其职业生涯与 2005 年德国 Hoyzer 假球案存在历史关联（曾被禁赛 6 个月），但此后长期执法德甲与欧战顶级赛事。</div>
+    <h4>执法尺度画像（最近赛季实际数据）</h4>
+    <ul class="cl">
+      <li><b>牌量偏高、风格严厉</b>：生涯场均约 <b>4.63 黄牌、0.09 红牌</b>；2024/25 德甲场均约 4.06 黄、欧冠场均约 5.14 张出牌，且欧冠该季红牌数（4 张）为所有裁判之首——大赛/高强度场合的出牌阈值更低，对抗管理严格、规则执行刚性。</li>
+      <li><b>大赛 vs 联赛尺度差</b>：欧冠出牌明显高于德甲，说明高对抗、高关注度的比赛 Zwayer 倾向更早动牌——本场作为东道主关键战、对抗与情绪强度高，黄牌大小球（Over）方向有支撑。<span style="color:var(--warn)">（世界杯主裁样本为 0，需结合大赛新规观察 · 待核）</span></li>
+      <li><b>对两队执法史</b>：未检得 Zwayer 此前执法美国或澳大利亚国家队的公开样本 <span style="color:var(--warn)">（无样本 · 待核）</span>，无既往倾向可参照。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Zwayer 是出牌偏多、风格严厉的德国主裁，在高对抗比赛中动牌更早。对本场含义：① 澳大利亚低位防守 + 战术犯规打断美国反击，吃牌风险上升，累计黄牌甚至停赛隐患需留意；② 美国高位压迫的逼抢犯规同样会被严格判罚；③ 半自动越位 + 严格判罚环境下，禁区内拉扯（定位球争顶 Richards/Souttar）的点球判罚阈值偏低。整体上裁判面对"黄牌 Over"与"潜在点球"略有抬升作用，但不构成改变胜负的主因。</div>
+    <div class="src" style="margin-top:8px">来源：<a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — Zwayer 委任/画像</a> · <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — Zwayer 牌量数据</a> · <a href="https://www.whoscored.com/articles/yxmRCZUvL0qaJvEz8-CWlQ/show/who-is-felix-zwayer-europa-league-final-referee-stats-tottenham-man-united">WhoScored — Zwayer 执法风格</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 世界杯裁判名单</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇺🇸 美国 预测首发（4-3-3）</h4>
+    <div class="lineup">Freese; Freeman · Richards · Ream · Robinson; Adams · Tillman; Dest · McKenzie · Pulisic; Balogun</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Folarin Balogun</td><td>前锋 / Monaco</td><td>首轮梅开二度；单中锋支点体系核心，对低位块的破局点</td></tr>
+      <tr><td class="ht">Christian Pulisic</td><td>左边锋 / AC Milan</td><td>队长级核心；小腿伤确认可出战首发；定位球/点球主罚手</td></tr>
+      <tr><td class="ht">Tyler Adams</td><td>后腰 / Bournemouth</td><td>中场屏障与压迫发起点；攻防转换的节拍器</td></tr>
+      <tr><td class="ht">Chris Richards</td><td>中卫 / Crystal Palace</td><td>健康可用；高点防守与定位球争顶的关键</td></tr>
+    </table>
+    <h4>🇦🇺 澳大利亚 预测首发（4-2-3-1，沿用首轮）</h4>
+    <div class="lineup">Beach; Italiano · Circati · Souttar · Burgess; Bos · Metcalfe · O'Neill · Okon-Engstler; Irankunda; Toure</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Nestory Irankunda</td><td>边锋/前锋 / Watford</td><td>20 岁；首轮反击破门、史上最年轻世界杯进球者；最直接的反击武器</td></tr>
+      <tr><td class="sc">Patrick Beach</td><td>门将 / 22 岁</td><td>首轮顶替 Ryan 神勇 8 扑救、本届至今扑救王；低位防守的最后保险</td></tr>
+      <tr><td class="sc">Harry Souttar / A. Circati</td><td>中卫</td><td>高大中卫组合；防空与定位球争顶（双向）的支柱</td></tr>
+      <tr><td class="sc">Connor Metcalfe</td><td>中场</td><td>首轮下半场进球；中场覆盖与前插的来源</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（SI / NBC / Rotowire / FanDuel），<b>以赛前官方名单为准</b>。美国 Pulisic 已确认可出战（若临场不可，Weah 顶左路）；澳大利亚 Mohamed Toure 抽筋后状态被监控（待核），其余预计沿用首轮 XI。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 美国 · Mauricio Pochettino</div>
+        <div class="role">4-3-3 高位压迫 + 主动控球 · Balogun 单中锋支点</div>
+        <ul class="cl">
+          <li>东道主的核心是高位压迫逼抢 + 主动控球，用 Adams 锁中路、Tillman/McKenzie 串联，依托 Balogun 单中锋做支点、Pulisic/Dest 边路撕开宽度。</li>
+          <li>对低位块的解法已在首轮兑现（4-1 巴拉圭）：边中结合 + 个人质量 + 定位球（Pulisic 输送、Richards/Ream 抢点）。</li>
+          <li>风险（上一场带入）：3-0 后防守专注度松动被扳回一球——面对 Irankunda 的反击速度，由攻转守的回位若慢，易被反偷一刀。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e6c45a">🇦🇺 澳大利亚 · Tony Popovic</div>
+        <div class="role">4-2-3-1 纪律低位防反 + 定位球决胜</div>
+        <ul class="cl">
+          <li>战术重心是组织密集低位块、压缩空间，靠 Irankunda 的直接反击与定位球（预选 8 球）创造机会——对实力更强对手的标准剧本，首轮 2-0 土耳其已验证。</li>
+          <li>门将 Beach + 高大中卫（Souttar/Circati）构成防空与扑救的双重保险；中场 Bos/Metcalfe/O'Neill 提供覆盖与前插。</li>
+          <li>风险（上一场带入）：反击模板对会主动控球的美国未必好用，需要比对土耳其更强的防守韧性；后防转换回位要更快，否则 Balogun/Pulisic 速度会惩罚。Toure 状态待核。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>美国胜率 58.5%、平 20.9%、澳大利亚胜 20.6%——量化模型与市场赔率完全吻合。Opta 同时给美国小组头名概率 32.83%（高于土耳其 29.04%）。报告强调美国作为东道主 + 实力优势是明显热门，但澳大利亚的低位防反结构给了其 20%+ 的偷分概率。</div>
+    <div class="insight"><div class="who">RotoWire <small>· 投注媒体</small></div>明确提示"美国会赢，但 -160 的让球(-1.5)价值不足，因澳大利亚首轮对土耳其证明是难缠对手"——倾向 2-0 比分但反对追让球，是专家共识里最重要的风险提醒。</div>
+    <div class="insight"><div class="who">最近两届大赛对账 <small>· 美国 vs 澳大利亚</small></div>美国：2022 世界杯打进 16 强（小组出线、淘汰赛负荷兰），但 2024 主场美洲杯小组出局（早红牌 + 进攻乏力、随后换帅）——主场办赛 ≠ 必然出色，<b>领先后的专注度与对密集防守的耐心</b>是其历史短板。澳大利亚：2022 世界杯靠纪律防守 + 高效反击进 16 强、2023 亚洲杯 8 强——<b>低位防反 + 定位球</b>是其大赛可复制的得分路径，首轮 2-0 土耳其正是这套模板。结论：美国实力与主场占优，但澳大利亚的打法克制"控球型却领先易松懈"的对手，这正是本场最大的不确定来源。</div>
+    <div class="insight"><div class="who">综合 · 比赛形态画像 <small>· 战术信号</small></div>动机差异强化形态：美国（主场必须赢、坐稳头名）主动控场施压；澳大利亚（已超额完成、可接受平局）低位死守 + 反击/定位球偷分。最现实剧本是美国控球围攻、伺机打破僵局，澳大利亚靠 Irankunda 反击与定位球制造一两次高质量机会——胜负手在于美国能否早进球、以及领先后能否保持纪律不被反偷。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：美国 2-0 / 2-1 控场取胜是基准剧本（专家最常见 2-0）；1-1 平局是最大风险（澳大利亚定位球/反击偷分）；澳大利亚胜（约 17–20%）是尾部风险。0-0 概率偏低（美国主动进攻 + 主场）。</li>
+      <li><b>关键先生</b>：Balogun（美/破局支点）、Pulisic（美/边路质量 + 定位球，已确认首发）、Irankunda（澳/反击尖刀）、Beach + Souttar/Circati（澳/防空与扑救保险）。</li>
+      <li><b>胜负手</b>：① 美国能否早进球打开低位块；② 美国领先后能否保持纪律、不被 Irankunda 反偷（上一场带入的专注度隐患）；③ 双向定位球质量（Pulisic vs 澳高大中卫）。澳大利亚的承受平局心态 + 防反韧性是其爆冷/偷分的依托。</li>
+      <li><b>市场视角</b>：博彩与 Opta 超算完全收敛（美国 ≈58–60%），但东道主公众盘把美国胜从 -165 压至 -185，过热指数 <b>3.5/5</b>——存在情绪溢价。最有信息含量的市场是<b>让球 -1.5（美国能否赢 2 球）与小 2.5 球</b>，专家倾向 Under / 澳 +1.5。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Pulisic 临场是否确实首发（已强烈确认，仍以官方名单为准）；② 澳大利亚 Mohamed Toure 抽筋后是否首发或轮换；③ 双方官方 XI（赛前公布）；④ Zwayer 对美/澳两队的执法史无公开样本；⑤ Kalshi/Polymarket 单场价格与成交量未公开检得；⑥ 角球具体盘口数据未检得；⑦ 亚盘具体赔率及让球线、D组另一场（巴拉圭 vs 土耳其）结果对出线情景的影响，以赛前实时数据为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — D组（美国、澳大利亚、巴拉圭、土耳其）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA 官方赛程 — 美国 vs 澳大利亚</a> · <a href="https://www.espn.com/soccer/story/_/id/49093966/fifa-world-cup-2026-usmnt-vs-australia-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — 赛程/首发/裁判</a><br>
+      • <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26">SI — 前瞻/预测/首发</a> · <a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start">NBC Sports — 美国首发/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/">CBS — Pulisic 伤情</a><br>
+      • <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — 投注/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a><br>
+      • <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — 预测/赔率</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — 开盘赔率</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19">FanDuel — 队况/首发/best bets</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver">Sky Sports — 澳大利亚 2-0 土耳其复盘</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c">Goal — 前瞻/Toure</a> · <a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — 裁判 Zwayer</a><br>
+      • <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — Zwayer 牌量数据</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries">ESPN — D组形势/伤停</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 世界杯裁判名单</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-19 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#d4a017',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['美国胜','平局','澳大利亚胜'],datasets:[{data:[60,23,17],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，轻偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['美国','土耳其','澳大利亚','巴拉圭'],datasets:[{data:[17,26,27,40],backgroundColor:[HT,'#c8102e',SC,'#d52b1e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'美国',data:[6.5,7.5,7.5,6.5,7.5,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'澳大利亚',data:[7,5.5,5.5,7,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

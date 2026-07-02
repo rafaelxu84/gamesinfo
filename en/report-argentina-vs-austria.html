@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Argentina vs Austria · 2026 World Cup Group J Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-argentina-vs-austria.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#6cace4;--sc:#e23b3b;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f4f8a,#7a4a0f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#10243e,#0f1a2e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc7ee;font-weight:600}td.sc{color:#f0928e;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group J Matchday 2 · The "group-topping clash" of two Matchday-1 winners</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Argentina 2-0 Austria</span>
+  <h1>Argentina vs Austria</h1>
+  <div class="meta">22 June 2026 · Arlington, AT&amp;T Stadium (Dallas) · 13:00 ET (12:00 CT) · Group J (also in group: Algeria, Jordan) · Match 43</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#6cace4">🇦🇷 Argentina</div><div class="rk">FIFA #1 · Defending World Cup champions · Matchday 1 won 3-0 vs Algeria (Messi hat-trick) · No cards, fully fresh</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e23b3b">🇦🇹 Austria</div><div class="rk">FIFA #22 · Rangnick high press · Matchday 1 won 3-1 vs Jordan (tighter than the scoreline) · Sabitzer carrying 1 yellow</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (written by daily-analysis 06-23) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Final Argentina 2-0 Austria (HT 1-0) · 06-22</span></h2>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Argentina sealed qualification with an unhurried display: early on, VAR intervened to award Argentina a penalty (Lautaro fouled), and <b>Messi's spot-kick was saved</b>; but the maestro did not let the suspense linger long — in the <b>38th minute</b> Messi met a low Facundo Medina cutback to slot home for 1-0; in the second half Argentina eased off and controlled the game, Austria never turning their territorial edge into shots on target, and in stoppage time <b>90+5'</b> Messi added another to lock down 2-0. The two goals took Messi to <b>17 and 18</b> personal World Cup goals, making him <b>the sole all-time men's World Cup top scorer (overtaking Klose's 16)</b>, and his 5th goal of this tournament. Argentina's two straight wins secured early qualification (all but confirming Group J top spot). <b>Argentina were "never out of second gear" all match — they won without going full throttle.</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ Early Messi penalty miss (VAR-awarded) · 38' Messi (Medina assist) · 90+5' Messi｜Messi's 17th &amp; 18th goals — sole World Cup top scorer · 5th of this tournament</div>
+
+    <h4 style="margin-top:16px">② Core data comparison (Opta / ESPN)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇦🇷 Argentina</th><th>🇦🇹 Austria</th><th>Reading</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.05</b></td><td>0.24</td><td>Clear chance-quality gap — Argentina scored 2 from 1.05 xG (including a missed penalty not counted in open-play xG), highly clinical; Austria's 0.24 xG was barely a real threat</td></tr>
+      <tr><td class="ht">Shots / on target</td><td><b>3 / 2</b></td><td>2 / 0</td><td>Argentina had just 3 shots but converted both that were on target — extreme efficiency, yet little volume created, confirming the "second-gear cruise"</td></tr>
+      <tr><td class="ht">Corners</td><td>0</td><td><b>2</b></td><td>Austria edged the corner count yet had 0 shots on target — the "real-world weapon" of set pieces simply never paid off this match, and the pre-match worry fell flat</td></tr>
+      <tr><td class="ht">Throw-ins / territorial progression</td><td>3</td><td><b>10</b></td><td>Austria repeatedly pushed the ball into Argentina's half down the flanks, but lacked penetration — high press + wide crosses struggled to crack Argentina's low block</td></tr>
+      <tr><td class="ht">Tackles / ball recoveries</td><td><b>12 / 17</b></td><td>6 / 11</td><td>Argentina were more aggressive in interceptions and second-ball protection, choking off Austria's high-press transitions</td></tr>
+      <tr><td class="ht">Successful dribbles</td><td>2/3 (67%)</td><td>2/11 (18%)</td><td>Austria completed just 2 of 11 dribbles — individual ball-carrying breaks were entirely shut down, forcing the attack into crosses</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.cbssports.com/soccer/news/argentina-austria-live-updates-world-cup-2026-score-result/live/">CBS Sports — match report/data</a> · <a href="https://www.skysports.com/football/argentina-vs-austria/report/549808">Sky Sports — Messi record-breaking report</a> · <a href="https://bleacherreport.com/articles/25444004-messi-argentina-beat-austria-final-match-stats-highlights-world-cup-group-j-scenarios">B/R — Final Match Stats</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">"Messi dependency" literally delivered — but this time it was a strength</div>The pre-match thread flagged that "Argentina's attack relies too much on Messi; the second finisher Lautaro must step up." The result: both goals came from Messi (he also took the missed penalty), with <b>dependency at 100%</b>. But with the maestro in scorching form, that dependency became a certain asset rather than a risk. <b>It shows that as long as Messi is on the pitch and hot, Argentina can beat mid-to-lower opponents without solving the "second outlet"; yet the moment they meet a strong side that can truly freeze Messi, the hidden danger of lacking a second finisher remains unanswered (Lautaro once again failed to score here).</b></div>
+    <div class="insight"><div class="who">Argentina 3 shots, 2 goals — won on efficiency, not dominance</div>Argentina had only 3 shots all match (2 on target, both scored), xG 1.05. <b>It shows this "low-effort win" rode Messi's individual ceiling and ruthless finishing, not positional grinding</b> — meet an opponent with stronger organisation that can stifle transitions in the knockouts, and this low-output attacking model magnifies the risk. With qualification already secured, the defending champions can afford to keep their cards hidden.</div>
+    <div class="insight"><div class="who">Rangnick's press neutralised by "low block + breakaway runs"; the set-piece weapon misfired</div>Austria progressed via 10 throw-ins and edged corners 2-0, yet had 0 shots on target and 0.24 xG. <b>It shows that facing the press, Argentina actively dropped into a low block, using tackles (12) and second-ball protection to cut off Austria's transitions, leaving the press unable to manufacture shots</b>; the "set pieces + veteran finishing" route most fancied for Austria pre-match never paid off, fully exposing the old problem of weak open-play firepower.</div>
+    <div class="insight"><div class="who">Austria's individual ball-carrying frozen (dribbles 2/11)</div>Austria completed just 2 of 11 dribbles (18%). <b>It shows that against Argentina's compact low block, Austria could neither create mismatches with individual breaks nor supply penetrative passes</b> — once the press stops working, this Rangnick side lacks a Plan B; in the final round against Algeria they need a way to break down a packed defence.</div>
+
+    <h4 style="margin-top:16px">④ Prediction reconciliation</h4>
+    <table>
+      <tr><th>Pre-match thread</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Argentina win (vig-free ≈62%)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Comfortable 2-0, early qualification — the favourite direction was entirely correct</td></tr>
+      <tr><td class="ht">Base scoreline Argentina 2-0</td><td style="color:var(--good)"><b>✓ Exact hit</b></td><td>The "2-0 / 2-1" base script delivered the 2-0 to the letter</td></tr>
+      <tr><td class="ht">Attack over-reliant on Messi</td><td style="color:var(--good)"><b>✓ Fully delivered</b></td><td>Both goals Messi — dependency 100%, but here it turned into an advantage</td></tr>
+      <tr><td class="ht">Second finisher must step up (Lautaro)</td><td style="color:var(--bad)"><b>✗ Not delivered</b></td><td>Lautaro again failed to score; the second-outlet question remains unresolved</td></tr>
+      <tr><td class="ht">Austria's set pieces a dark-horse weapon</td><td style="color:var(--bad)"><b>✗ Misfired</b></td><td>2 corners, 0 shots on target — set pieces and veteran finishing never paid off</td></tr>
+      <tr><td class="ht">Market overheat index 3/5</td><td style="color:var(--good)"><b>✓ Reasonable</b></td><td>The Messi narrative drove heat; the result matched the line, no excess bubble</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Carry-over to the next preview</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇦🇷 Argentina · Next match: final round vs Jordan (Group J finale)</h4>
+        <ul class="watch">
+          <li><b>Already through, heavy rotation expected</b>: two straight wins with top spot in sight, Scaloni will most likely protect Messi and the starters' fitness, giving subs like J. Álvarez/Tagliafico minutes — final-round intent and starting strength will dip.</li>
+          <li><b>The second finisher remains a knockout danger</b>: only Messi scored across both games, with Lautaro misfiring repeatedly. Final-round rotation is exactly the window to test second finishers like J. Álvarez, and bears on the knockout Plan B.</li>
+          <li><b>Low-output attacking model</b>: this win came from efficiency off 3 shots; against strong sides in the knockouts the risk magnifies — worth tracking whether Argentina can lift positional chance creation in the final round.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇦🇹 Austria · Next match: final round vs Algeria (Group J finale, qualification decider)</h4>
+        <ul class="watch">
+          <li><b>Qualification pressure spikes</b>: after losing to Argentina, the final round against Algeria is very likely a knockout-or-bust decider (including the best-third-place race), and they must take points.</li>
+          <li><b>Press failure needs a Plan B</b>: here the press was neutralised by a low block + breakaway runs, with 0.24 open-play xG. Against an Algeria likely also defending in a low block, they must solve the "break a packed defence" problem.</li>
+          <li><b>Set pieces must be activated</b>: they held 2 corners but 0 shots on target, and the set-piece weapon fancied pre-match misfired — the final round needs aerial targets like Arnautović to turn set pieces into real threats.</li>
+          <li><b>Sabitzer's yellow-card burden lifted</b>: no further booking here, so he can be used normally for his linking and tactical fouling in the final round.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">This is a <b>de facto Group J "group final"</b>: Argentina (defending champions, FIFA #1) won the opener 3-0 over Algeria with a <b>Messi hat-trick</b>; Austria (FIFA #22, coached by Rangnick) beat Jordan 3-1, though the game was tighter than the scoreline. Both teams sit on 3 points, and the winner all but locks up top spot and the more favourable knockout half. The line clearly leans Argentina — win odds around <b>1.60</b> (vig-free implied ≈62%), draw <b>4.00</b> (≈24%), Austria win <b>5.75</b> (≈15%); prediction markets (Kalshi) give Argentina about <b>62%</b>. The core tension lies in two matchups: ① <b>Rangnick's high press leaves space in behind</b> (already exposed against Jordan) running straight into Argentina's vertical speed and the Messi/Julián through-ball finishing; ② <b>whether Argentina's attack relies too much on Messi</b> — Austria are far more organised than Algeria, and if they dare to man-mark and freeze Messi, Argentina's second finisher (Lautaro failed to score in round 1) must step up. Base script: <b>Argentina win 2-0 / 2-1</b>, taken via transition speed and star ceiling; but Austria's set pieces and veteran finishing (Arnautović/Sabitzer) carry upset potential. Market overheat index ≈ 3/5 (Messi narrative + group-topping clash).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Argentina implied win prob (vig-free)</div><div class="v" style="color:#6cace4">≈62%</div></div>
+      <div class="key"><div class="k">Austria implied win prob (vig-free)</div><div class="v" style="color:#e23b3b">≈15%</div></div>
+      <div class="key"><div class="k">Messi goals in last 5</div><div class="v" style="color:var(--warn)">9 goals</div></div>
+      <div class="key"><div class="k">Market overheat index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Austria's press leaves space in behind (carried over from last match)</b>: Austria's high press worked against Jordan, but the space behind was repeatedly opened up — Argentina's vertical speed (Julián Álvarez, Nico González) and Messi's through-balls hit exactly this soft spot, the realistic path to an Argentina win.</li>
+      <li><b>Argentina over-reliant on Messi (carried over from last match)</b>: the 3-0 goals were heavily concentrated in Messi's individual finishing (a long-range strike from outside the box + a close-range "second-ball" tap-in), with Lautaro failing to score in round 1 — Austria are well organised and will man-mark and freeze Messi, so whether Argentina's second finisher delivers is the watch point.</li>
+      <li><b>Sabitzer cumulative yellow-card risk (carried over from last match)</b>: Austria's key man Sabitzer already carries 1 yellow, and another booking here would suspend him for the final round — a hidden minus for a side whose midfield relies on his linking, demanding particular caution when breaking up Argentina counters.</li>
+      <li><b>Set pieces are Austria's real-world weapon</b>: Austria are short on open-play firepower and over-rely on set pieces and veteran finishing (Arnautović/Sabitzer) — how Argentina's defence handles aerial duels is the key to whether an upset happens.</li>
+    </ul>
+  </div>
+
+  <!-- Key match news -->
+  <section style="border:1px solid #2a4a6b;background:linear-gradient(135deg,#131e2b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and status signals affecting this match, each explained for how it changes tactics or outcome (including carry-over items from both teams' last match)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc7ee;font-weight:700">Argentina · carried over from last match · over-reliance on Messi <span style="color:var(--mut);font-weight:400">· carry-over from the Algeria match · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Argentina beat Algeria 3-0 in round 1, <b>Messi hat-trick</b>; but the attack was heavily concentrated in Messi's individual finishing, with Lautaro failing to score</div>
+      <p style="font-size:13.5px">Following on from the carry-over of the Algeria-match review: Argentina won 3-0 with Messi accounting for all the goals (the "long-range strike from outside the box + close-range tap-in" second-ball finishing worked twice), no cards all match, Messi withdrawn early to protect him, and starters fully fresh. Algeria had 52% possession yet 0 shots on target, showing Argentina's defence was solid and finishing clinical. But the hidden danger is the <b>attack's over-reliance on Messi individually</b> — if Austria (FIFA #22, far more organised than Algeria) dare to man-mark and freeze Messi, whether Argentina's second finisher (Lautaro, Julián Álvarez) can step up is the biggest question of this match.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Argentina are a clear favourite (vig-free ≈62%), but their "Messi dependency" is a real risk against organised defending. If Austria successfully limit Messi and Argentina again lack a second outlet as in round 1, the scoreline could be suppressed (favouring Austria +1/+1.5 and the Under). Lautaro's form is the key variable for whether Argentina win comfortably.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Argentina vs Austria preview</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/" style="color:var(--accent)">Squawka — preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f0928e;font-weight:700">Austria · carried over from last match · press leaves space in behind + Sabitzer yellow <span style="color:var(--mut);font-weight:400">· carry-over from the Jordan match · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Austria beat Jordan 3-1 in round 1, tighter than the scoreline; <b>the high press leaves space in behind</b>, Sabitzer already on 1 yellow</div>
+      <p style="font-size:13.5px">Following on from the carry-over of the Jordan-match review: Austria won 3-1 but the game was <b>tight</b> (Jordan had more shots and scored first), and while Rangnick's high press worked, the <b>space-in-behind problem</b> was already exposed; open-play firepower is short, with over-reliance on set pieces and veteran finishing. Key man Sabitzer has already picked up a yellow card, and another booking here would suspend him for the next game (the final round). Against an opponent with Argentina's elite vertical speed, the space left behind by the press will be amplified without limit.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Rangnick's press is the core of Austria's system, but it is a double-edged sword — Argentina's Julián Álvarez and Nico González making runs in behind + Messi's through-balls are exactly the elite tool to punish the space behind a high press. Whether Austria can find the balance between "pressing up" and "covering in behind" directly decides the flow of the game; Sabitzer's yellow then limits his room for tactical fouling.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview/team news</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/" style="color:var(--accent)">Racing Post — team news/prediction</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc7ee;font-weight:700">Argentina · Messi in scorching form <span style="color:var(--mut);font-weight:400">· Yahoo / Racing Post · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">After his hat-trick Messi is on fire, <b>9 goals in his last 5 games</b>; Scaloni expected to keep his winning XI</div>
+      <p style="font-size:13.5px">Per Yahoo / Racing Post, after his round-1 hat-trick Messi has scored 9 goals across his last 5 games in all competitions, in prime form; this may be Messi's last World Cup, so the personal-honours motivation is huge. Scaloni is expected to keep a 4-3-3 / 4-4-2, with Julián Álvarez, Lautaro Martínez and Nico González building the attacking group around Messi, and midfield De Paul, Mac Allister and Enzo Fernández controlling the tempo. <span style="color:var(--warn)">[Confirmed XI per the pre-match FIFA team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Messi's hot form is Argentina's biggest certain asset and Austria's number-one defensive headache. Austria will most likely assign a man to track Messi — which frees space for Argentina's other attacking outlets (Julián/Lautaro), creating a "press here, it pops up there" dynamic that actually benefits Argentina's overall attack.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html" style="color:var(--accent)">Yahoo Sports — prediction/Messi form</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/" style="color:var(--accent)">Racing Post — team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · referee officially announced <span style="color:var(--mut);font-weight:400">· ESPN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Egypt's <b>Amin Mohamed Omar</b> in charge; the match is played at AT&amp;T's indoor retractable-roof stadium</div>
+      <p style="font-size:13.5px">Per ESPN, FIFA appointed Egyptian referee <b>Amin Mohamed Omar</b> for this match. He had already officiated South Korea 2-1 Czechia at this World Cup (6/12), keeping control smoothly with no major controversy. The match is at Arlington's AT&amp;T Stadium (retractable roof), and in June's Dallas heat the roof will most likely be <b>closed with air conditioning</b>, with no extreme-weather variable but with fitness to watch (a daytime 13:00 ET slot). <span style="color:var(--warn)">[The assistant/VAR combination for this match and Omar's per-game card breakdown in major tournaments are a limited sample · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In a match with Argentina on the attack and Austria pressing hard, the referee's threshold affects card and penalty markets. Omar's debut was calmly controlled, but this tournament's opener saw 3 reds and officiating overall has leaned strict; Austria's high-press tactical fouls and Sabitzer's cumulative yellow-card risk (2 yellows = suspension) are both watch points. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — referee/preview</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referee list</a></div>
+    </div>
+  </section>
+
+  <!-- ✅ Confirmed lineups & what they mean -->
+  <section style="border:1px solid #1d4a2a;border-radius:14px;padding:16px 16px 18px;margin:14px 0;background:rgba(34,197,94,0.04)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· official pre-match sheets + corrections to the predictions</span></h2>
+    <div class="sub">Argentina: multiple Argentine outlets (365scores/Río Negro/Infobae) unanimously report "formación confirmada" <b style="color:var(--good)">✅ officially confirmed</b>; Austria: the federation's official account @oefb1904 published it <b style="color:var(--good)">✅ officially confirmed</b>. Facts and reading set out separately.</div>
+
+    <h4 style="margin-top:14px">① Both confirmed XIs</h4>
+    <h4 style="font-size:14px;margin-top:10px">🇦🇷 Argentina (4-4-2 / 4-2-3-1, Almada linking centrally, Messi free) · Scaloni</h4>
+    <div class="lineup">E. Martínez; Molina · C. Romero · L. Martínez · Medina; De Paul · Enzo Fernández · Mac Allister · Almada; Messi(C) · Lautaro</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:5px">Key bench weapons: J. Álvarez (box finisher · impact sub), Tagliafico (back from injury), Paredes, N. González.</div>
+    <h4 style="font-size:14px;margin-top:12px">🇦🇹 Austria (4-2-3-1) · Rangnick</h4>
+    <div class="lineup">A. Schlager; Laimer · Posch · Danso · Alaba(C); Seiwald · X. Schlager; Schmid · Wanner · Sabitzer; Gregoritsch</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:5px">Key bench weapons: Arnautović (veteran finisher), Kalajdzic, Wimmer, Prass, Lienhart.</div>
+
+    <h4 style="margin-top:16px">② vs predicted XI comparison</h4>
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px">
+      <thead><tr style="text-align:left;color:var(--mut)">
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">Change</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">Predicted</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">Official</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">Why it matters</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 Centre-back</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Otamendi</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">L. Martínez</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Left-footed build-up + faster recovery, targeting Austria's quicker transitions</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 Left-back</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Tagliafico</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Medina</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Tagliafico just back from injury and only on the bench, Medina keeps the left</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 Attack</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">J. Álvarez starting</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Almada (central) + Messi/Lautaro front two</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Álvarez rested on the bench, all second-finisher pressure on Lautaro</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 Right-back</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">(round 1: Montiel)</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Molina</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">The only change from the round-1 win over Algeria, more attack, slightly less defence</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 Goalkeeper</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Pentz</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">A. Schlager</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Prediction missed, Rangnick goes with the steadier A. Schlager in goal</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 Captain/left-back</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">(omitted in prediction)</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Alaba(C) starting</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Organising core + set-piece taker returns, build-up and dead-ball threat ↑</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 Right-back</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Laimer (midfield)</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Laimer (wide full-back)</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Predicted in midfield, actually pulled to right-back, heavy two-way running</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 Midfield</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Baumgartner etc.</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">X. Schlager double pivot + Wanner/Schmid advanced</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Switch to a double pivot better protects the space behind, young creativity comes in</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:0">🇦🇹 Attack</td><td style="padding:6px 6px;border-bottom:0">Arnautović + Gregoritsch front two</td><td style="padding:6px 6px;border-bottom:0">Lone striker Gregoritsch (Arnautović on the bench)</td><td style="padding:6px 6px;border-bottom:0">Top veteran finisher starts on the bench, one fewer firepower point at kickoff</td></tr>
+      </tbody>
+    </table>
+
+    <h4 style="margin-top:16px">③ Tactical reading</h4>
+    <div style="font-size:13.5px;color:var(--txt);line-height:1.7">
+      <p style="margin:6px 0">• <b>Formation signal</b>: Austria shifted from the "predicted 4-2-2-2 front two" to an actual <b>4-2-3-1 lone striker + Seiwald/X. Schlager double pivot</b> — facing the defending champions, Rangnick chose to be more restrained and shore up the space behind first. The Quick-Summary thread "Argentina hit the space in behind via transition speed" <b>holds</b>, but the double pivot means the space behind may not be as large as when Austria faced Jordan, so Argentina's acceleration must lean more on instant Messi/Almada through-balls than on open space after the opponent commits forward.</p>
+      <p style="margin:6px 0">• <b>Key matchup correction</b>: with Argentina's J. Álvarez rested and Almada linking centrally → the "second finisher" goes from "to be watched" <b>up to "must be delivered by Lautaro"</b> (Lautaro failed to score in round 1); Álvarez, a box finisher, is kept as a second-half impact sub.</p>
+      <p style="margin:6px 0">• <b>Defensive adaptation</b>: Argentina use L. Martínez + Medina (both left-footed, quick to recover) in place of the predicted Otamendi + Tagliafico, adding speed against Austria's transitions and wide acceleration; Tagliafico just back from injury is on the bench, matching the pre-match "step-by-step" signal.</p>
+      <p style="margin:6px 0">• <b>Change to Austria's dark-horse weapon</b>: the pre-match flagged "Arnautović/Sabitzer veterans finishing for an upset" — Sabitzer starts (pulled wide) but <b>Arnautović drops to the bench</b>, reducing the early impact-sub threat by one, more likely kept by Rangnick as a points-chasing change after 60 minutes; Alaba starting then strengthens the existing set-piece upset channel.</p>
+      <p style="margin:6px 0">• <b>Quick-Summary conclusion: holds</b> (Argentina narrow-win base 2-0 / 2-1). Neither sheet has a swing factor that shifts the result direction: Argentina field a near-full first choice (only Álvarez rested, Messi leading), and Austria changed personnel not structure — in fact more organised. Fine-tune: Álvarez on the bench slightly lowers Argentina's "clean sheet + multiple goals" certainty, and Austria's double pivot slightly caps the "Over" ceiling.</p>
+    </div>
+
+    <h4 style="margin-top:14px">④ Market reaction</h4>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0">As of lineup release (around T-60), the headline 1X2 odds (Argentina win ≈<b>1.60</b> / draw ≈<b>4.00</b> / Austria win ≈<b>5.75</b>, decimal) showed no clear move — Argentina's XI broadly matched expectations (Álvarez rested is within an acceptable range), and Austria's reshuffle was "personnel" rather than a "give-up-style heavy rotation", not enough to move the result line; the marginal impact is more likely on the handicap (-1/-1.5) and totals, but no significant live-line shift was captured. Statement of fact only, not betting advice.</p>
+
+    <div class="src" style="margin-top:12px;font-size:12px">Sources: <a href="https://www.365scores.com/es/news/formacion-de-argentina-vs-austria-oficial/" style="color:var(--accent)">365scores — Argentina formación confirmada</a> · <a href="https://www.rionegro.com.ar/deportes/la-formacion-de-argentina-vs-austria-confirmada-scaloni-aposto-por-la-base-del-ultimo-partido-4620526/" style="color:var(--accent)">Diario Río Negro — confirmada</a> · <a href="https://www.infobae.com/deportes/2026/06/22/argentina-vs-austria-en-vivo-por-el-mundial-2026-hora-formaciones-tv-y-todo-lo-que-hay-que-saber/" style="color:var(--accent)">Infobae — confirmó la formación</a> · <a href="https://khelnow.com/football/world-football-austria-starting-lineup-vs-argentina-fifa-world-cup-2026-clash" style="color:var(--accent)">Khel Now — Austria official XI (via @oefb1904)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494" style="color:var(--accent)">FIFA — Match Centre</a></div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (core)</h2>
+    <div class="sub">FIFA ranking · win/draw/loss implied probabilities (vig-free odds) · Group J picture · totals market · overall strength profile — all charts are verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (vig-free, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (vig-free)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group J four teams' FIFA ranking (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇦🇷 Argentina</th><th>🇦🇹 Austria</th></tr>
+      <tr><td>FIFA ranking</td><td class="ht">#1</td><td class="sc">#22</td></tr>
+      <tr><td>Round-1 result</td><td class="ht">3-0 won vs Algeria (Messi hat-trick)</td><td class="sc">3-1 won vs Jordan (tight game)</td></tr>
+      <tr><td>Group J points</td><td colspan="2">Both teams <b>level on 3 points</b> — this match's winner all but locks up top spot and a better knockout half</td></tr>
+      <tr><td>Head coach</td><td class="ht">Lionel Scaloni</td><td class="sc">Ralf Rangnick</td></tr>
+      <tr><td>Key players</td><td class="ht">Messi(C), Julián Álvarez, Lautaro, De Paul</td><td class="sc">Sabitzer (1 yellow), Arnautović, Baumgartner, Laimer</td></tr>
+      <tr><td>Watch points/questions</td><td class="ht">Second finisher (Lautaro yet to score); breaking through once Messi is marked</td><td class="sc">Space behind the press; Sabitzer's yellow; weak open-play firepower</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">World Cup 2022 champions · Copa América 2024 champions</td><td class="sc">Euro 2024 group winners (lost to Türkiye in the Round of 16) · back since 1998 World Cup</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win 1.60 (implied ≈62%)</td><td class="sc">Win 5.75 (≈15%) · Draw 4.00 (≈24%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">Market leans slightly Over (Argentina firepower + Austria attack-strong but shaky defence), but if Messi is frozen and Austria sit deep, the disagreement is real</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied probabilities after removing the vig from DECIMAL odds (≈62/24/15, then normalised). Odds source: bet365 (Argentina -167 → 1.60, draw +300 → 4.00, Austria +475 → 5.75, via Yahoo/Racing Post); prediction market Kalshi Argentina 62% / draw 24% / Austria 15%. Handicap around Argentina -1/-1.5, exact odds per the live pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· historical averages vs this World Cup actuals · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two majors / qualifiers / friendlies)</b> against <b>this World Cup's actuals</b> item by item. Public xG samples for national teams are limited; missing items are marked "TBC", never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (round 1)</th><th>Difference and reading</th></tr>
+      <tr><td class="ht">🇦🇷 Argentina · attack</td><td class="ht">Champion-level firepower from World Cup 2022 + Copa América 2024, mature Messi/Julián/Lautaro finishing group</td><td class="ht">Round 1 <b>3 goals</b> (Messi hat-trick), efficient but concentrated on the individual</td><td><b>In line</b> with champion-level, but finishing over-concentrated on Messi — the stability of the second outlet is a danger (Lautaro yet to score)</td></tr>
+      <tr><td class="ht">🇦🇷 Argentina · defence</td><td class="ht">Title built on defensive discipline (Otamendi/Romero) + a midfield shield, known for conceding little</td><td class="ht">Round 1 <b>clean sheet</b>, Algeria 52% possession yet 0 shots on target</td><td><b>Continues</b> the solid-defence tradition: let the opponent hold the ball but not penetrate, defensive quality is Argentina's chassis</td></tr>
+      <tr><td class="sc">🇦🇹 Austria · attack</td><td class="sc">Rangnick system emphasises transition and set pieces, average open-play creativity, Euro qualifying carried by the collective</td><td class="sc">Round 1 <b>3 goals</b> won vs Jordan, but weak opponent, tight game</td><td><b>Inflated</b>: the 3-goal figure looks shiny but the opponent was Group J's weakest, and open-play firepower against Argentina will be discounted</td></tr>
+      <tr><td class="sc">🇦🇹 Austria · defence</td><td class="sc">High press + a compact midfield, but the space behind the back line is the system's inherent cost</td><td class="sc">Round 1 <b>conceded 1 goal</b> to Jordan, the space behind repeatedly opened up</td><td><b>Worse than</b> ideal: the space left by the press is exactly Argentina's vertical-speed strike point, a clean sheet is hard</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Argentina's attack and defence this World Cup <b>continue champion level</b> (3 goals, clean sheet), the only danger being over-reliance on Messi in attack; Austria's attacking data is <b>inflated by a weak opponent</b> and the space behind in defence is <b>worse than</b> ideal. The deep data aligns with the thread "Argentina double-favourite on paper and in reality, Austria's press a double-edged sword." Sources: Opta Analyst · FotMob/Sofascore (round 1) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model xG projection (magnitude)</td><td class="ht">Argentina ≈1.9</td><td class="sc">Austria ≈0.9</td><td>After calibration Argentina are clearly ahead — but Austria are more organised than Algeria, so Argentina's conversion efficiency is to watch (the trap of Messi being marked)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Argentina sit at Group J's and the world's very front; prediction markets (Kalshi) give Argentina win ≈62%, qualification &gt;95%, high probability to top the group, while Austria still have a qualification chance but topping the group is hard</td><td>After opponent-strength calibration Argentina's sample quality is higher than Austria's (Austria's round-1 opponent Jordan FIFA #62 is weaker)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Austria's PPDA is very low (high press), Argentina lean more toward control + lethal transition; field tilt most likely balanced, slightly toward Argentina</td><td>Austria's press will make the game tense, but <b>trap reminder</b>: Argentina excel at settling the game with a single transition, the run of play ≠ efficiency</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; with penalties removed it better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: quality per shot — a low value = many long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press (Austria's low value).</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than pure possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· expert picks / odds / money flow / sentiment</span></h2>
+    <div class="sub">The Argentina-win direction is highly unified; the real disagreement is "handicap depth (-1 vs -1.5) + clean sheet or not + goal count"; the Messi narrative brings extra traffic</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Argentina-win direction unified, Messi narrative draws traffic</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Argentina are a clear favourite (vig-free ≈62%, Kalshi 62%), and experts almost unanimously back Argentina — a reasonable consensus. The real disagreement is the <b>handicap depth (-1 vs -1.5) + clean sheet or not + the total</b>. Messi's "possible last World Cup + hat-trick" brings sentiment traffic above a normal group game.</div>
+    </div>
+
+    <h4>① Expert picks aggregation (direction: Argentina win majority · draw minority · Austria win 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Racing Post</td><td>Established UK outlet</td><td>Argentina win; bet builder weighted toward Messi goal/assist, notes Austria hard to keep out but can score 1</td></tr>
+      <tr><td>Yahoo Sports</td><td>Prediction media</td><td>Argentina narrow win; traders give Argentina 62% / draw 24% / Austria 15%</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Argentina the cleaner side; Austria's press can counter but the quality falls short</td></tr>
+      <tr><td>OneFootball / BetMGM</td><td>Odds aggregator</td><td>Argentina win + focus on handicap/totals angles</td></tr>
+      <tr><td>SportsLine experts</td><td>US betting media</td><td>Argentina win, a Messi moment; Austria's set pieces the only upset channel</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (moderate)</b>: the result direction is highly unified (no one backing Austria to win) — a reasonable consensus rather than overheating. The real disagreement is the <b>handicap depth</b> (-1 vs -1.5), <b>clean sheet or not</b> and the <b>total</b>. The Messi narrative is a source of sentiment traffic, but there is no significant money pushing an Austria win.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Argentina win</th><th>Reading</th></tr>
+      <tr><td>Open (multiple combined)</td><td>1X2</td><td class="ht">≈1.55–1.62</td><td>Argentina a clear favourite; draw 4.00 / Austria 5.75</td></tr>
+      <tr><td>As of 06-20</td><td>bet365 / FanDuel</td><td class="ht">1.60 (-167)</td><td>Argentina's short price stable (pricing barely moved after the round-1 3-0 hat-trick)</td></tr>
+      <tr><td>06-20</td><td>Over/Under</td><td colspan="2" class="ht">Market leans slightly to the Over (Argentina firepower + Austria attack-strong but shaky defence)</td></tr>
+      <tr><td>Handicap (Asian-line reference)</td><td>Argentina -1 / -1.5</td><td colspan="2" class="ht">Argentina -1/-1.5 exact odds per the live line</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Time</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="ht">Argentina win ≈1.55; handicap -1.5</td><td>Priced on "defending champions + FIFA #1 + Messi", the opening line pressed Argentina to a strong favourite, with the handicap as deep as -1.5 — the market assumed Argentina would steamroll</td></tr>
+      <tr><td>Open (repriced after round 1)</td><td class="ht">Argentina win 1.58–1.62; handicap -1/-1.5 both present</td><td><b>Repricing came from both teams' round 1</b>: Argentina's 3-0 hat-trick confirmed their strength (win price held low), but Austria also winning 3-1 proved they are no minnow → the handicap pulled back moderately from a pure -1.5 toward -1, with the win price slightly fine-tuned</td></tr>
+      <tr><td>Now (06-20→present)</td><td class="ht">Argentina win 1.60; Over slightly hot / handicap mostly -1</td><td>The result line is stable (outcome pricing has converged); the most active price discovery is on the <b>handicap (-1 vs -1.5) and clean sheet</b> — "whether Messi is frozen and whether Argentina's second outlet delivers" is the key to whether the deep handicap holds</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's odds went "pressed first, then fine-tuned" — the opening line priced a defending-champion steamroll (≈1.55, handicap -1.5), but <b>Austria also taking 3 points in round 1</b> triggered a repricing of handicap depth, pulling back from -1.5 toward -1. 1X2 value is limited (direction clear); the most informative are <b>Argentina's handicap (-1/-1.5), clean sheet or not and the total</b> — mapping the core suspense of "whether Argentina can win comfortably even with Messi targeted." Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (aggregated)</b>: about <b>62%</b> Argentina win, draw 24%, Austria 15% — highly consistent with the bookmakers' vig-free numbers, no clear sentiment premium. Group J qualification: Argentina &gt;95%, Austria still favoured (the round-1 win laid the foundation). <span style="color:var(--warn)">[This match's standalone volume and momentum breakdown not separately found · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Messi's possible last World Cup + hat-trick</b> is this match's biggest traffic source, the personal-honours narrative driving up attention.</li>
+      <li><b>Sentiment focus ②</b>: <b>whether Rangnick's Austria can upset the defending champions</b> — European media watch how his high-press system fares against top sides.</li>
+      <li><b>Austria narrative</b>: the round-1 win lifted public confidence in them "taking points/holding for a draw" slightly, but few back Austria to win; upset money is limited.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the result direction is clear (Argentina), bookmakers and prediction markets agree (≈62%), overheat index <b>3/5</b>. The topic heat comes from the <b>Messi narrative</b> and the <b>group-topping clash</b>, not the result line itself; the most informative are <b>Argentina's handicap (-1/-1.5), clean sheet or not and the total</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/">Racing Post — odds/betting</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html">Yahoo Sports — prediction/trader probabilities</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/">Squawka — preview</a> · <a href="https://onefootball.com/en/news/argentina-vs-austria-prediction-world-cup-2026-preview-best-bets-43029991">OneFootball — prediction</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is Egyptian <b>Amin Mohamed Omar</b> (selected for the 2026 World Cup referee list, already officiated South Korea 2-1 Czechia at this tournament). Source: ESPN (referee list / preview). <span style="color:var(--warn)">[The specific assistant/VAR combination for this match · TBC]</span></div>
+    <h4>Officiating threshold + this tournament's unified new rules (actual data + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Officiating profile</b>: Omar comes from the African (CAF) officiating system; his tournament debut (Korea–Czechia) was <b>calmly controlled with no major controversy</b>. His per-game card average in majors is a limited sample, so quantitative extrapolation needs caution. <span style="color:var(--warn)">[per-game yellow-card breakdown · TBC]</span></li>
+      <li><b>History with the two teams</b>: as an African referee, he has no significant public officiating history with either Argentina or Austria, so there is no team bias to speak of.</li>
+      <li><b>This tournament's unified new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may speak to the referee, semi-automated offside; the opener saw 3 reds in a row, evidence that the officiating environment leans strict. The tactical-foul risk of Austria's high press and Sabitzer's cumulative yellow (2 yellows = next-game suspension, bearing on the final round) are rising.</li>
+      <li><b>Actual impact on this match</b>: semi-automated offside will more quickly rule on Julián/Lautaro's marginal sprints in Argentina counters, slightly suppressing offside-borderline counter goals; Messi as captain adapts to "only the captain communicates" with no issue.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-side analysis</b>: this match is an "Argentina attacking + Austria pressing hard" matchup, watch points: ① the cumulative tactical fouls as Austria break up Argentina counters (Sabitzer yellow-sensitive); ② the threshold for penalties on tugging Messi/Lautaro in the box; ③ semi-automated offside ruling on Argentina's quick transitions. Given Omar's limited per-game sample in majors, the card market is best read as a "lean" rather than a precise average.</div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · official version in the ✅ module above</span></h2>
+    <div class="sub">Predicted XIs (ESPN / Racing Post projections, unofficial; the official sheet per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇦🇷 Argentina predicted XI (4-3-3) · Scaloni</h4>
+    <div class="lineup">E. Martínez; Molina · Romero · Otamendi · Tagliafico; De Paul · Enzo Fernández · Mac Allister; Messi(C) · J. Álvarez · Lautaro</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Lionel Messi (C)</td><td>Forward / Captain</td><td>Round-1 hat-trick, 9 goals in his last 5, scorching form; Austria's number-one defensive headache, frees space for teammates once marked</td></tr>
+      <tr><td class="ht">Julián Álvarez</td><td>Forward / Atlético</td><td>Runs in behind and finishing, the ideal tool to hit the space behind Austria's high press</td></tr>
+      <tr><td class="ht">Lautaro Martínez</td><td>Forward / Inter</td><td>Failed to score in round 1 — whether he rediscovers his finishing here decides if Argentina's second outlet stands up</td></tr>
+      <tr><td class="ht">Rodrigo De Paul</td><td>Midfield</td><td>The attack-defence transition engine, connecting Messi with the midfield, core of the counter-press</td></tr>
+    </table>
+    <h4>🇦🇹 Austria predicted XI (4-2-2-2 / 4-3-3) · Rangnick</h4>
+    <div class="lineup">Pentz; Posch · Danso · Wöber · Mwene; Seiwald · Sabitzer · Laimer; Baumgartner; Arnautović · Gregoritsch</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Marcel Sabitzer</td><td>Midfield / Borussia Dortmund</td><td>Austria's midfield linking core; <b>already on 1 yellow</b>, another booking suspends him for the final round, caution needed in challenges</td></tr>
+      <tr><td class="sc">Marko Arnautović</td><td>Forward</td><td>Experienced target man and finisher; aerial duels on set pieces are Austria's upset channel</td></tr>
+      <tr><td class="sc">Konrad Laimer</td><td>Midfield / Bayern</td><td>The coverage and running engine of the high press, executor of Rangnick's system</td></tr>
+      <tr><td class="sc">Christoph Baumgartner</td><td>Attacking midfielder</td><td>Forward runs and second-ball arrivals, one of Austria's few in-behind threats in open play</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analyst projections (ESPN / Racing Post), <b>the official pre-match sheet takes precedence · TBC</b>. Whether Scaloni's Argentina rotates, the Lautaro–Julián pairing, and Austria's defensive-line selections are the two main TBC variables.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced with both teams' actual play and results in their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#6cace4">🇦🇷 Argentina · Lionel Scaloni</div>
+        <div class="role">4-3-3 control + lethal transition, Messi as free man, defensive discipline the chassis</div>
+        <ul class="cl">
+          <li>Argentina's trademark is <b>midfield control + settling the game with one transition + Messi's free creativity</b> — the World Cup 2022 and Copa América 2024 double came from balance and big-tournament temperament. The round-1 3-0 clean sheet had the defence let Algeria hold the ball without penetrating.</li>
+          <li>Cross-reference: World Cup 2022 title (beat France on penalties in the final), Copa América 2024 defended — Argentina's game management and finishing efficiency in big games are elite. The danger is the attack's reliance on Messi; if targeted here, Julián/Lautaro must step up.</li>
+          <li>Entry point for this match: the space behind Austria's high press is exactly the strike point for Argentina's transition speed and Messi's through-balls; using control to drain Austria's pressing fitness, the second half is often Argentina's window to extend the lead.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e23b3b">🇦🇹 Austria · Ralf Rangnick</div>
+        <div class="role">High press (gegenpressing) + fast transition + set pieces, the space behind an inherent cost</div>
+        <ul class="cl">
+          <li>Rangnick's trademark is <b>extreme high pressing + fast transition after winning the ball + scoring from set pieces</b> — at Euro 2024 Austria advanced as group winners (above France and the Netherlands) precisely on this intensity football.</li>
+          <li>Cross-reference: Euro 2024 group winners, Round of 16 1-2 loss to Türkiye (definition: the press system capsized against an opponent's set pieces and resilience); this tournament won round 1 3-1 over Jordan but the game was tight, and the space behind was already exposed. Against Argentina, this cost will be magnified.</li>
+          <li>Response for this match: Austria's realistic hope is to disrupt Argentina's build-up tempo with the press, raid via set pieces (Arnautović aerial duels), and drag the game into a low score when Messi is limited. But if the press is breached by one transition and they concede first, Austria's open-play firepower will struggle to overturn the defending champions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN <small>· pre-match preview</small></div>This match is billed as a "de facto Group J final", with the winner all but locking up top spot and a better knockout half. Argentina's vertical speed against the space behind Austria's high press is key; Messi's hot form is Argentina's biggest certainty.</div>
+    <div class="insight"><div class="who">Racing Post <small>· betting media</small></div>Main pick Argentina win, bet builder weighted toward Messi goal/assist; views Austria's defence as hard to keep a clean sheet but capable of a set-piece counter, noting some value in both teams to score (BTTS).</div>
+    <div class="insight"><div class="who">Prediction market (Kalshi) <small>· market consensus</small></div>Argentina win ≈62% / draw 24% / Austria 15%, highly consistent with the bookmakers' vig-free numbers, no clear premium. Argentina qualification &gt;95%; this match weighs heavily on topping the group and half-bracket allocation.</div>
+    <div class="insight"><div class="who">Combined · core suspense and traps <small>· Opta / FotMob</small></div>The real suspense is not the result direction but <b>whether Argentina can still win comfortably and keep a clean sheet with Messi targeted</b>. ⚠ Trap reminder: if Austria successfully freeze Messi and Argentina's second outlet misfires as in round 1, the deep handicap (-1.5) and the Over carry whiff risk, while Austria's set-piece counter is the upset window.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: Argentina win (2-0 / 2-1, prised open by transition speed and Messi) is the base script; a draw (≈24%) is a moderate tail — if Austria freeze Messi and Argentina's second outlet misfires, Austria have a chance to hold for a draw; an Austria win (≈15%) needs the press disrupting + a set-piece raid + a rare Argentina off-day all at once.</li>
+      <li><b>Key men</b>: Messi (ARG/creation and finishing), Julián Álvarez (ARG/hitting the space behind), Lautaro (ARG/second outlet), Sabitzer (AUT/midfield linking, yellow-sensitive), Arnautović (AUT/set-piece upset channel).</li>
+      <li><b>Decider</b>: the real watch point is <b>Austria's space behind the press vs Argentina's transition speed</b> — which lands first, and <b>Argentina's second finisher once Messi is marked</b> — deciding the settlement of the handicap (-1/-1.5) and the total.</li>
+      <li><b>Market view</b>: bookmakers and prediction markets agree on direction (Argentina, ≈62%), 1X2 value is limited; the most informative are <b>Argentina's handicap (-1/-1.5), clean sheet or not and the total</b>. Overheat index 3/5 (the topic comes from the Messi narrative and the group-topping clash).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both official XIs (FIFA Match Centre about 1 hour pre-match); ② whether Argentina rotates, Lautaro's form; ③ Austria's defensive-line selection and whether Sabitzer is protected over the yellow; ④ Omar's assistant/VAR combination for this match and his per-game card breakdown in majors; ⑤ Kalshi/Polymarket volume and momentum breakdown for this match; ⑥ Asian handicap line (-1/-1.5) and the total goals line, with exact odds per the live pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — schedule/lineups/referee/preview</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494">FIFA — Match Centre</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/">Racing Post — odds/team news/prediction</a><br>
+      • <a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html">Yahoo Sports — prediction/trader probabilities</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/">Squawka — preview</a> · <a href="https://onefootball.com/en/news/argentina-vs-austria-prediction-world-cup-2026-preview-best-bets-43029991">OneFootball — prediction</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referee list</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — Group J</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-21 · Charts are verified data, radar chart is an analyst's overall assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#6cace4',SC='#e23b3b',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Argentina win','Draw','Austria win'],datasets:[{data:[62,24,15],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Implied probability % (vig-free)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[54,46],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (vig-free, slightly Over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Argentina','Austria','Algeria','Jordan'],datasets:[{data:[1,22,43,62],backgroundColor:[HT,SC,'#3b6fb0','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/counter','Individual ceiling','Big-tournament experience'],
+  datasets:[
+   {label:'Argentina',data:[8.5,8.5,8.5,7.5,9.5,9.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Austria',data:[6.5,6,7,7,6.5,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

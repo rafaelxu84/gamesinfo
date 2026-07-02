@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 世界杯 · 赛事分析中心</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/">
+<style>
+  :root{--bg:#0b1019;--card:#141b2b;--card2:#1a2238;--line:#28324d;--txt:#e9eef8;--mut:#92a0c2;
+    --accent:#38bdf8;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--draw:#64748b;--mx:#16a34a;--sa:#e0ad1a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.6;padding:24px 14px 70px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+  h1{font-size:28px;font-weight:800}h1 .em{color:var(--accent)}
+  .updated{color:var(--mut);font-size:13px}.updated b{color:var(--good)}
+  .lead{color:var(--mut);font-size:14px;margin:8px 0 20px;border-bottom:1px solid var(--line);padding-bottom:16px}
+  h2{font-size:17px;margin-bottom:4px}
+  .sub{color:var(--mut);font-size:12.5px;margin-bottom:14px}
+  /* day nav */
+  .days{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:18px}
+  .daytab{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;text-align:center;min-width:80px;transition:.15s}
+  .daytab.active{background:var(--accent);color:#06121c;border-color:var(--accent)}
+  .daytab .d{font-size:11px;font-weight:600;opacity:.8}.daytab .m{font-size:15px;font-weight:800}
+  .dayblock{display:none}.dayblock.active{display:block}
+  /* dashboard match card */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:760px){.cards{grid-template-columns:1fr}}
+  .mc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:.15s}
+  .mc:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .mc.live{cursor:pointer}.mc.soon{opacity:.72}
+  .mc .grp{font-size:11px;color:var(--mut);font-weight:700;letter-spacing:.4px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
+  .mc .grp .feat{color:var(--good)}
+  .mc .teams{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+  .mc .tn{font-size:17px;font-weight:800}.mc .tn small{display:block;font-size:11px;color:var(--mut);font-weight:500;margin-top:1px}
+  .mc .tn.r{text-align:right}
+  .mc .vs{font-size:12px;color:var(--mut);font-weight:700}
+  /* prob bar */
+  .prob{margin:4px 0 6px}
+  .pbar{display:flex;height:13px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+  .pbar i{display:block;height:100%}
+  .plab{display:flex;justify-content:space-between;font-size:11px;margin-top:5px;color:var(--mut)}
+  .plab b{color:var(--txt);font-weight:700}
+  .plab .home{color:#4ade80}.plab .away{color:#f0cf6b}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip{font-size:11px;background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:4px 9px;color:var(--mut)}
+  .chip b{color:var(--txt)}
+  .chip.xg{color:#7dd3fc}.chip.warnchip{color:#f0cf6b}
+  .mc .go{margin-top:13px;font-size:12.5px;color:var(--accent);font-weight:700}
+  .mc.soon .go{color:var(--mut)}
+  .secttitle{display:flex;align-items:center;gap:9px;margin:6px 0 2px}
+  .secttitle .n{background:var(--accent);color:#06121c;width:24px;height:24px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+  .how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:26px}
+  .how p{font-size:13px;color:var(--mut)}.how b{color:var(--good)}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <div class="top">
+    <h1>🏆 2026 <span class="em">世界杯</span> 赛事分析中心</h1>
+    <div class="updated">更新：<b>2026-07-02</b> · <b>32 强淘汰赛进行中</b>。昨日（7/1）3 场<b>赛后复盘已出</b>（<b style="color:#fca5a5">英格兰 2-1 刚果(金)·Kane 下半场梅开二度逆转、对阵墨西哥</b> / 比利时 3-2 塞内加尔（加时）·Tielemans 124'44" 世界杯史上最晚制胜球、读秒逆转、对阵美国 / 美国 2-0 波黑·Balogun 破门后染红停赛、10 人零封晋级、对阵比利时）· 今日（7/2）32 强 <b>西班牙vs奥地利 / 葡萄牙vs克罗地亚 / 瑞士vs阿尔及利亚</b> 预览已出（含 📈 深度数据 + 盘口定位趋势 + 当值裁判画像）· 次日（7/3）32 强 <b>澳大利亚vs埃及 / 阿根廷vs佛得角 / 哥伦比亚vs加纳</b> 预览已出（<b style="color:#fca5a5">⭐埃及 Salah 腿筋存疑、阿根廷 Messi 复出首发、加纳 Kudus 整届报销</b>均多源核验）· 中文站</div>
+  </div>
+  <div class="lead">每场一眼看懂：胜率 · 预期进球 · 关键指标。点卡片进入详情（含关键临场新闻、数据面、战术、主帅、裁判）。 &nbsp;<a href="teams.html" style="color:var(--accent);text-decoration:none;font-weight:700">🌍 全48队情报库 →</a></div>
+
+  <!-- ===== 赛事综述 + 盘路统计（开赛至今）===== -->
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b);margin-top:0;margin-bottom:22px">
+    <div class="secttitle" style="margin-bottom:10px"><span class="n">📊</span><h2>赛事综述 & 盘路统计 · 开赛至今（6/11–6/22 · 已完赛 40 场）</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px 0 14px">
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">已完赛</div><div style="font-size:19px;font-weight:800">40 场</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">总进球</div><div style="font-size:19px;font-weight:800;color:#7dd3fc">127</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">场均进球</div><div style="font-size:19px;font-weight:800">3.18</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">大球(&gt;2.5)</div><div style="font-size:19px;font-weight:800;color:#7dd3fc">22 · 55%</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">平局</div><div style="font-size:19px;font-weight:800;color:#cbd5e1">12 · 30%</div></div>
+      <div style="background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center"><div style="color:var(--mut);font-size:11px">冷门</div><div style="font-size:19px;font-weight:800;color:#f0cf6b">4 · 10%</div></div>
+    </div>
+
+    <!-- 盘路统计：AH + O/U -->
+    <div class="grid2" style="gap:12px;margin:4px 0 14px">
+      <div style="background:#0d1526;border:1px solid #1e466b;border-radius:10px;padding:14px 16px">
+        <div style="font-size:14px;font-weight:800;color:#7dd3fc;margin-bottom:8px">📈 大小球 O/U 2.5（客观 · 按终场总进球，40 场）</div>
+        <table style="margin-top:0">
+          <tr><th>盘路</th><th>场次</th><th>占比</th></tr>
+          <tr><td><b style="color:#7dd3fc">大球（≥3 球）</b></td><td>22</td><td>55%</td></tr>
+          <tr><td><b style="color:#cbd5e1">小球（≤2 球）</b></td><td>18</td><td>45%</td></tr>
+          <tr><td>场均进球</td><td colspan="2"><b>3.18</b> 球（总 127）</td></tr>
+          <tr><td>火力两极</td><td colspan="2">最火爆：德国 7-1 库拉索 / 德国 7-1 科特迪瓦（各 8 球）；0 球闷局 2 场（西0-0佛、比0-0伊）</td></tr>
+        </table>
+        <div style="font-size:11.5px;color:var(--mut);margin-top:8px">大球略占上风但接近五五开；强弱差大的组（E/F、B 组的卡塔尔被血洗）拉高了总进球。</div>
+      </div>
+      <div style="background:#0d1526;border:1px solid #6b4f1d;border-radius:10px;padding:14px 16px">
+        <div style="font-size:14px;font-weight:800;color:#f0cf6b;margin-bottom:8px">🅰️ 亚盘让球 AH（热门让球方 · 以赛前去水盘口为参考，40 场）</div>
+        <table style="margin-top:0">
+          <tr><th>热门表现</th><th>对让球盘的含义</th><th>场次</th></tr>
+          <tr><td><b style="color:#7fe0a0">赢 ≥2 球</b></td><td>稳过 -0.5/-1/-1.5 主流让步 → <b>上盘</b></td><td>18 · 45%</td></tr>
+          <tr><td><b style="color:#f0cf6b">仅赢 1 球</b></td><td>过 -0.5、-1 走水、-1.5 输 → 险盘</td><td>6 · 15%</td></tr>
+          <tr><td><b style="color:#f08a82">平局或告负</b></td><td>任何让步皆 <b>下盘</b>（受让方赢盘）</td><td>16 · 40%</td></tr>
+        </table>
+        <div style="font-size:11.5px;color:var(--mut);margin-top:8px">热门<b>上盘 18 场（45%）</b>、<b>下盘 16 场（40%）</b>（含 12 场平局 + 4 场冷门）——平局率高达 30%，本届迄今让球盘明显偏"<b>下盘/受让方</b>"，"无脑买强队让球"屡屡踏空。</div>
+      </div>
+    </div>
+
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">⚽ <b>进球与赛果</b>：40 场打入 <b>127 球、场均 3.18</b>（高于近两届世界杯小组赛约 2.5 的水准）。火力由强弱差驱动——德国两场 7-1（库拉索、科特迪瓦，各 8 球）、加拿大 6-0 卡塔尔、瑞典 5-1 突尼斯撑起大比分；另一端 2 场 0-0（西班牙-佛得角、比利时-伊朗）。整体<b>大球 55% 略多于小球 45%</b>，接近五五开。</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">📉 <b>让球盘与冷门（本届最强主线）</b>：热门（赛前隐含概率更高一方）<b>直接取胜 24 场（60%）</b>，平局 12 场（30%）、冷负 4 场（10%）——直胜率不低，<b>但让球盘上盘仅 18 场（45%）</b>。能<b>盖过 -1.5 级让步</b>（赢≥2 球）的有 <b>18 场</b>；仅赢 1 球的 <b>6 场</b>对 -1/-1.5 走水或输盘；其余 <b>16 场（40%）热门平或负、让球盘直接下盘</b>。换言之，"买强队让球"在<b>近半场次踏空</b>——瑞士被卡塔尔逼平、土耳其负澳大利亚、厄瓜多尔被科特迪瓦绝杀、荷兰两度被逼平（日本、瑞典）等，都是受让方赢盘的典型。</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:6px">✅ <b>已兑现的强势剧本</b>：真正"赢球又赢盘"的多为顶级豪门的火力释放——阿根廷 3-0 阿尔及利亚（Messi 帽子戏法登顶世界杯射手榜）、法国两战连胜（Mbappé 追平克洛泽 16 球）、挪威 Haaland 连场双响、西班牙 4-0 沙特、德国两场 7-1。这些场次让球 + 大球多数兑现，是热门定价能站住的一侧。</p>
+    <p style="font-size:13.5px;color:var(--txt);margin-bottom:0">🧑‍⚖️ <b>裁判走向</b>：揭幕战 Sampaio（巴西）单场 <b>3 红</b>创世界杯揭幕战纪录，定下"从严 + VAR 撑腰"的基调；但整体牌量<b>高度取决于主裁个人风格＞赛事统一尺度</b>——Tello（加-波）全场仅 1 黄，与 Sampaio 两极。VAR 始终果断（撤销错牌、判假摔、清晰判点）。逐场画像见下方 🧑‍⚖️ 裁判观察。</p>
+    <p style="font-size:12px;color:var(--mut);margin-top:10px;border-top:1px solid var(--line);padding-top:10px">数据口径：基于 6/11–6/22 已完赛 <b>40 场</b>的终场比分。<b>大小球</b>以 O/U 2.5 标准线、按终场总进球客观判定（全 40 场）。<b>亚盘让球</b>以"赛前去水隐含概率更高一方＝热门让球方"为口径、按热门净胜球归类（全 40 场按"热门净胜球 vs 让步线"归类；走水/分盘以净胜球与让步线对照为准，半球盘无走水）；并非逐场实时盘口结算，仅作方向性参考。逐场对照见下方折叠表。"热门未胜/冷门"＝赛前隐含概率最高一方未在 90 分钟取胜。仅供分析参考，非投注建议。</p>
+  </div>
+
+  <!-- 逐场盘路对照（折叠） -->
+  <details class="how" style="border-left:4px solid var(--warn);background:linear-gradient(135deg,#1b1a10,#141b2b);margin-top:0;margin-bottom:22px">
+    <summary style="cursor:pointer;font-weight:800;font-size:15px;color:var(--warn)">📋 逐场盘路对照表（已完赛 40 场 · 点击展开/收起）</summary>
+    <div class="sub" style="margin-top:10px">每场：终场比分 · 总进球 · 大小球(O/U 2.5) · 热门方(括号为净胜球) · 让球盘路(上盘/险盘/下盘)。口径见上方综述脚注；让球以"赛前去水热门方 vs 净胜球"归类，方向性参考、非逐场实时盘口结算。</div>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>对阵（主-客）</th><th>比分</th><th>总球</th><th>O/U</th><th>热门(净胜)</th><th>让球盘路</th></tr>
+      <tr><td>墨西哥 vs 南非</td><td style="font-weight:700">2-0</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">墨西哥（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>韩国 vs 捷克</td><td style="font-weight:700">2-1</td><td>3</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">韩国（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+      <tr><td>加拿大 vs 波黑</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">加拿大（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>美国 vs 巴拉圭</td><td style="font-weight:700">4-1</td><td>5</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">美国（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>巴西 vs 摩洛哥</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">巴西（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>卡塔尔 vs 瑞士</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">瑞士（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>海地 vs 苏格兰</td><td style="font-weight:700">0-1</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">苏格兰（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+      <tr><td>澳大利亚 vs 土耳其</td><td style="font-weight:700">2-0</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">土耳其（-2）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>德国 vs 库拉索</td><td style="font-weight:700">7-1</td><td>8</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">德国（+6）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>荷兰 vs 日本</td><td style="font-weight:700">2-2</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">荷兰（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>科特迪瓦 vs 厄瓜多尔</td><td style="font-weight:700">1-0</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">厄瓜多尔（-1）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>瑞典 vs 突尼斯</td><td style="font-weight:700">5-1</td><td>6</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">瑞典（+4）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>西班牙 vs 佛得角</td><td style="font-weight:700">0-0</td><td>0</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">西班牙（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>比利时 vs 埃及</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">比利时（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>沙特阿拉伯 vs 乌拉圭</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">乌拉圭（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>伊朗 vs 新西兰</td><td style="font-weight:700">2-2</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">伊朗（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>法国 vs 塞内加尔</td><td style="font-weight:700">3-1</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">法国（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>伊拉克 vs 挪威</td><td style="font-weight:700">1-4</td><td>5</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">挪威（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>阿根廷 vs 阿尔及利亚</td><td style="font-weight:700">3-0</td><td>3</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">阿根廷（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>奥地利 vs 约旦</td><td style="font-weight:700">3-1</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">奥地利（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>捷克 vs 南非</td><td style="font-weight:700">1-1</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">捷克（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>瑞士 vs 波黑</td><td style="font-weight:700">4-1</td><td>5</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">瑞士（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>加拿大 vs 卡塔尔</td><td style="font-weight:700">6-0</td><td>6</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">加拿大（+6）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>墨西哥 vs 韩国</td><td style="font-weight:700">1-0</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">墨西哥（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+      <tr><td>美国 vs 澳大利亚</td><td style="font-weight:700">2-0</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">美国（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>苏格兰 vs 摩洛哥</td><td style="font-weight:700">0-1</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">摩洛哥（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+      <tr><td>巴西 vs 海地</td><td style="font-weight:700">3-0</td><td>3</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">巴西（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>土耳其 vs 巴拉圭</td><td style="font-weight:700">0-1</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">土耳其（-1）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>荷兰 vs 瑞典</td><td style="font-weight:700">2-2</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">荷兰（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>德国 vs 科特迪瓦</td><td style="font-weight:700">7-1</td><td>8</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">德国（+6）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>厄瓜多尔 vs 库拉索</td><td style="font-weight:700">0-1</td><td>1</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">厄瓜多尔（-1）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>突尼斯 vs 日本</td><td style="font-weight:700">1-5</td><td>6</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">日本（+4）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>西班牙 vs 沙特阿拉伯</td><td style="font-weight:700">4-0</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">西班牙（+4）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>比利时 vs 伊朗</td><td style="font-weight:700">0-0</td><td>0</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">比利时（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>乌拉圭 vs 佛得角</td><td style="font-weight:700">2-2</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">乌拉圭（+0）</td><td style="color:#f08a82;font-weight:700">下盘</td></tr>
+      <tr><td>新西兰 vs 埃及</td><td style="font-weight:700">1-3</td><td>4</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">埃及（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>阿根廷 vs 奥地利</td><td style="font-weight:700">2-0</td><td>2</td><td style="color:#cbd5e1;font-weight:700">小</td><td style="font-size:12px">阿根廷（+2）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>法国 vs 伊拉克</td><td style="font-weight:700">3-0</td><td>3</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">法国（+3）</td><td style="color:#7fe0a0;font-weight:700">上盘</td></tr>
+      <tr><td>挪威 vs 塞内加尔</td><td style="font-weight:700">3-2</td><td>5</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">挪威（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+      <tr><td>约旦 vs 阿尔及利亚</td><td style="font-weight:700">1-2</td><td>3</td><td style="color:#7dd3fc;font-weight:700">大</td><td style="font-size:12px">阿尔及利亚（+1）</td><td style="color:#f0cf6b;font-weight:700">险盘</td></tr>
+    </table>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">汇总：<b style="color:#7dd3fc">大球 22 / 小球 18</b>（55% / 45%）· <b style="color:#7fe0a0">上盘 18</b> / <b style="color:#f0cf6b">险盘 6</b> / <b style="color:#f08a82">下盘 16</b>（45% / 15% / 40%；下盘含 12 场平局 + 4 场冷门）。仅供分析参考，非投注建议。</div>
+  </details>
+
+  <div class="secttitle"><span class="n">📅</span><h2>按比赛日浏览</h2></div>
+  <div class="sub">点击日期切换；每张卡片就是该场的速读 dashboard</div>
+  <div class="days" id="days"></div>
+
+  <!-- Day 1 -->
+  <div class="dayblock active" data-day="0">
+    <div class="cards">
+
+      <a class="mc live" href="mexico-vs-south-africa.html">
+        <div class="grp"><span>A 组 · 阿兹特克(墨西哥城) · 已结束</span><span class="feat">★ 揭幕战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 墨西哥<small>Quiñones 9' · Jiménez</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">南非 🇿🇦<small>三红牌之夜</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">终场 2-0 · 东道主开门红</span>
+          <span class="chip warnchip">单场 3 红牌（南非2 · 墨1）</span>
+          <span class="chip xg">Jiménez 世界杯首球 · 赛前"墨小胜"共识兑现</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-korea-vs-czechia.html">
+        <div class="grp"><span>A 组 · 瓜达拉哈拉(Akron) · 已结束</span><span>终场</span></div>
+        <div class="teams">
+          <div class="tn">🇰🇷 韩国<small>黄仁范 · 吴贤揆 80'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 1</div>
+          <div class="tn r">捷克 🇨🇿<small>Krejčí 59'</small></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">✅ 首发已官宣</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">终场 2-1 · 韩国下半场逆转</span>
+          <span class="chip xg">韩国与墨西哥同积 3 分领跑 A 组</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="dayblock" data-day="1">
+    <div class="cards">
+      <a class="mc live" href="report-canada-vs-bosnia.html">
+        <div class="grp"><span>B 组 · 多伦多(BMO Field) · 已结束</span><span class="feat">★ 加拿大主场首秀 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 加拿大<small>FIFA #30 · 东道主</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">波黑 🇧🇦<small>Lukic 21' 角球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:53%;background:#d52b1e"></i><i style="width:27%;background:var(--draw)"></i><i style="width:20%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">赛前 加胜 <b>53%</b></span><span>平 27%</span><span style="color:#7fa6e6">波黑 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 1-1 · 主胜预测偏差 / 小球兑现</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">Larin 78' 替补2分钟扳平 · 加 68% 控球未破铁桶</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-usa-vs-paraguay.html">
+        <div class="grp"><span>D 组 · 洛杉矶(SoFi) · 已结束</span><span class="feat">★ 美国主场首秀 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 美国<small>Balogun ×2 · Reyna</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">巴拉圭 🇵🇾<small>Mauricio 73'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:49%;background:#1f4e9c"></i><i style="width:28%;background:var(--draw)"></i><i style="width:23%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">赛前 美胜 <b>49%</b></span><span>平 28%</span><span style="color:#f08a82">巴 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 4-1 · 最大预测偏差（市场仅给49%）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">半场 3-0 拆穿巴防线 · Balogun 状态确立</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="dayblock" data-day="2">
+    <div class="cards">
+
+      <a class="mc live" href="report-brazil-vs-morocco.html">
+        <div class="grp"><span>C 组 · 东卢瑟福(MetLife) · 已结束</span><span class="feat">★ 当日头牌焦点战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 巴西<small>Vinícius 32'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">摩洛哥 🇲🇦<small>Saibari 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:59%;background:#16a34a"></i><i style="width:23%;background:var(--draw)"></i><i style="width:18%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#4ade80">赛前 巴西 <b>59%</b></span><span>平 23%</span><span style="color:#f08a82">摩 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 1-1 · 主胜预测偏差</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">"别买巴西大胜"兑现 · Alisson 终场双扑保平</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-qatar-vs-switzerland.html">
+        <div class="grp"><span>B 组 · 圣克拉拉(Levi's) · 已结束</span><span class="feat">★ 本届首个大冷 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇶🇦 卡塔尔<small>Khoukhi 90+4'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">瑞士 🇨🇭<small>Embolo 17' (P)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#8a1538"></i><i style="width:17%;background:var(--draw)"></i><i style="width:73%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#e08aa0">赛前 卡 <b>10%</b></span><span>平 17%</span><span style="color:#f08a82">瑞士 73%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 1-1 · 重大预测偏差（瑞士 73% 未兑现）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">瑞士 26 射 3.24xG 仅进 1 球 · 卡塔尔队史世界杯首分</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-haiti-vs-scotland.html">
+        <div class="grp"><span>C 组 · 福克斯堡(Gillette) · 已结束</span><span class="feat">★ 52年 vs 28年双回归 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇭🇹 海地<small>15 射 0 球</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">苏格兰 🏴󠁧󠁢󠁳󠁣󠁴󠁿<small>McGinn 28'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:14%;background:#d21034"></i><i style="width:21%;background:var(--draw)"></i><i style="width:65%;background:#3b6fb0"></i></div>
+          <div class="plab"><span style="color:#f08a82">赛前 海 <b>14%</b></span><span>平 21%</span><span style="color:#7fa6e6">苏格兰 65%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 0-1 · 苏格兰胜预测兑现 / 比分偏差</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">苏格兰 1990 后世界杯首胜 · 暂登 C 组 · 海地 xG 反超未转化</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-australia-vs-turkiye.html">
+        <div class="grp"><span>D 组 · 温哥华(BC Place·顶棚关闭) · 已结束</span><span class="feat">★ 又一冷门 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇺 澳大利亚<small>Irankunda 27' · Metcalfe</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">土耳其 🇹🇷<small>缺 Yıldız · 0 球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:19%;background:#e0a514"></i><i style="width:26%;background:var(--draw)"></i><i style="width:55%;background:#d0312d"></i></div>
+          <div class="plab"><span style="color:#f0cf6b">赛前 澳 <b>19%</b></span><span>平 26%</span><span style="color:#f08a82">土耳其 55%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 2-0 · 热门押反（土 55% 翻车）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip xg">澳高效反击+零封 · 本届"押强队让球"连续两场翻车</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="dayblock" data-day="3">
+    <div class="cards">
+
+      <a class="mc live" href="report-germany-vs-curacao.html">
+        <div class="grp"><span>E 组 · 休斯顿(NRG) · 已结束</span><span class="feat">★ 德国战车揭幕 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 德国<small>Havertz×2 · Musiala · Undav…</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">7 - 1</div>
+          <div class="tn r">库拉索 🇨🇼<small>Comenencia 21'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:93%;background:#c8a951"></i><i style="width:5%;background:var(--draw)"></i><i style="width:2%;background:#003da5"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">赛前 德 <b>93%</b></span><span>平 5%</span><span style="color:#7fa6e6">库 2%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 7-1 · 胜负兑现、进球数超预期</span>
+          <span class="chip xg">大 4.5 球兑现 · 德国登顶世界杯历史总进球(239)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 赛前热度 2/5 · 情绪面判读成立</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-netherlands-vs-japan.html">
+        <div class="grp"><span>F 组 · 达拉斯(AT&T) · 已结束</span><span class="feat">★ 当日最难分预测 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 荷兰<small>Van Dijk 50' · Summerville 64'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 2</div>
+          <div class="tn r">日本 🇯🇵<small>Nakamura 57' · Kamada 88'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:47%;background:#f36c21"></i><i style="width:27%;background:var(--draw)"></i><i style="width:26%;background:#bc002d"></i></div>
+          <div class="plab"><span style="color:#f3a06a">赛前 荷 <b>47%</b></span><span>平 27%</span><span style="color:#f08a82">日 26%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip">🏁 终场 2-2 · 荷兰两度领先被逼平（预测偏差）</span>
+          <span class="chip xg">日本两度追平 · 队史世界杯最晚进球(88')</span>
+          <span class="chip xg">"低比分/平局可能"方向兑现 · 高估荷兰终结</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-cotedivoire-vs-ecuador.html">
+        <div class="grp"><span>E 组 · 费城(Lincoln Fin.) · 已结束</span><span>低分缠斗 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇮 科特迪瓦<small>Amad Diallo 90'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 0</div>
+          <div class="tn r">厄瓜多尔 🇪🇨<small>两中梁 · 不败 19 场终结</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:28%;background:#ff7f00"></i><i style="width:34%;background:var(--draw)"></i><i style="width:38%;background:#ffce00"></i></div>
+          <div class="plab"><span style="color:#ffa64d">赛前 科 28%</span><span>平 34%</span><span style="color:#f0cf6b">厄 <b>38%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 1-0 · 小球+一球小胜（剧本兑现）</span>
+          <span class="chip xg">边路 1v1 命中：Singo 传 + Amad 替补绝杀</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 赛前热度 2/5 · 情绪干净判读成立</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-sweden-vs-tunisia.html">
+        <div class="grp"><span>F 组 · 蒙特雷(BBVA) · 已结束</span><span>Isak+Gyökeres · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇪 瑞典<small>Ayari×2 · Isak · Gyökeres · Svanberg</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">5 - 1</div>
+          <div class="tn r">突尼斯 🇹🇳<small>Rekik 43'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:50%;background:#006aa7"></i><i style="width:28%;background:var(--draw)"></i><i style="width:22%;background:#e70013"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">赛前 瑞 <b>50%</b></span><span>平 28%</span><span style="color:#f08a82">突 22%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip warnchip">🏁 终场 5-1 · 胜负兑现但"低比分缠斗"预测重大偏差</span>
+          <span class="chip xg">突尼斯预选零失球神话单场丢 5 · 远射破铁桶</span>
+          <span class="chip xg">瑞典火力点比预期更分散(Ayari/Svanberg)</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 5 · 6/15 -->
+  <div class="dayblock" data-day="4">
+    <div class="sub" style="margin:0 0 12px">6/15（周一）G/H 组首轮 4 场 · <b>已全部完赛——四场全平，西班牙/乌拉圭等热门集体爆冷</b>，赛后复盘已出（点卡片看复盘 + 赛前分析对账）</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-spain-vs-capeverde.html">
+        <div class="grp"><span>H 组 · 亚特兰大(Mercedes-Benz) · 12:00 ET</span><span class="feat">★ 卫冕欧洲冠军登场</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇸 西班牙<small>FIFA #2 · 夺冠大热</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">佛得角 🇨🇻<small>世界杯处子秀</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:83%;background:#c60b1e"></i><i style="width:13%;background:var(--draw)"></i><i style="width:4%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f08a82">西 <b>83%</b></span><span>平 13%</span><span style="color:#7fa6e6">佛 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">西胜 <b>1.10</b> · 亚盘让 -2.5</span>
+          <span class="chip xg">🆕 Yamal & Nico Williams 或双双轮休（腿筋管理）· 进球数才是悬念</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 共识强无溢价</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 0-0（预测偏差：西胜+让-2.5 双落空，赛会级冷门）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-belgium-vs-egypt.html">
+        <div class="grp"><span>G 组 · 西雅图(Lumen) · 15:00 ET</span><span class="feat">★ 萨拉赫生日首秀</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇪 比利时<small>黄金一代尾声</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">埃及 🇪🇬<small>Salah 核心</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#c8a951"></i><i style="width:25%;background:var(--draw)"></i><i style="width:19%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#e6cf7a">比 <b>56%</b></span><span>平 25%</span><span style="color:#f08a82">埃 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">比胜 <b>1.67</b> · 大 2.5 球 2.00</span>
+          <span class="chip xg">🆕 Doku 确认首发 · De Ketelaere 伪九替 Lukaku · 埃及替补门将 Shobeir + Trezeguet 落选</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 强强叙事拉热</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 1-1（预测偏差：比胜未兑现、大2.5落空；萨拉赫助攻✓）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-saudiarabia-vs-uruguay.html">
+        <div class="grp"><span>H 组 · 迈阿密(Hard Rock) · 18:00 ET</span><span>南美劲旅</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇦 沙特<small>亚洲区 · 冷门基因</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">乌拉圭 🇺🇾<small>FIFA #17 · 强队</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:13%;background:#1a7a3d"></i><i style="width:21%;background:var(--draw)"></i><i style="width:66%;background:#5ba3d9"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">沙 <b>13%</b></span><span>平 21%</span><span style="color:#9cc6ea">乌 66%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#7fd6a0;border-color:#1d4a2a;background:#0f2418">✅ 首发已官宣</span>
+          <span class="chip">乌胜 <b>1.43</b> · 盘口收敛 ≈66%</span>
+          <span class="chip xg">🆕 乌中卫 Araújo+Giménez 双双成疑 · BTTS 窗口 · 沙特新帅仅 2 月</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 伤情驱动而非炒作</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 1-1（预测偏差：乌胜未兑现；小球✓、BTTS✓）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-iran-vs-newzealand.html">
+        <div class="grp"><span>G 组 · 洛杉矶(SoFi) · 21:00 ET</span><span>低分缠斗预期</span></div>
+        <div class="teams">
+          <div class="tn">🇮🇷 伊朗<small>亚洲铁卫</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">新西兰 🇳🇿<small>大洋洲冠军</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:52%;background:#c8102e"></i><i style="width:28%;background:var(--draw)"></i><i style="width:20%;background:#8a8f98"></i></div>
+          <div class="plab"><span style="color:#f08a82">伊 <b>52%</b></span><span>平 28%</span><span style="color:#cbd5e1">新 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">伊胜 <b>1.83</b> · 小 2.5 球 1.71（≈58%）</span>
+          <span class="chip xg">🆕 伊朗全队健康+热身三连胜 · 新西兰 Thomas 缺阵 · 小球主线巩固</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 小球情绪资金</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 2-2（预测偏差：小球落空成 4 球大球、伊胜未兑现）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 6 · 6/16 -->
+  <div class="dayblock" data-day="5">
+    <div class="sub" style="margin:0 0 12px">6/16（周二）I/J 组首轮 4 场 · <b>已全部完赛——四场热门全部兑现</b>（Messi 帽子戏法平 Klose、Haaland/Mbappé 各入两球），赛后复盘已出（点卡片看复盘 + 赛前分析对账）</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-france-vs-senegal.html">
+        <div class="grp"><span>I 组 · 东卢瑟福(MetLife) · 15:00 ET</span><span class="feat">★ 法国登场 · 2002 旧怨</span></div>
+        <div class="teams">
+          <div class="tn">🇫🇷 法国<small>夺冠大热之一</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">塞内加尔 🇸🇳<small>非洲劲旅 · Mané/Jackson</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:64%;background:#1f4e9c"></i><i style="width:22%;background:var(--draw)"></i><i style="width:14%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">法 <b>64%</b></span><span>平 22%</span><span style="color:#7fd6a0">塞 14%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">法胜 <b>1.44</b> · 平 4.50 · 塞 7.50</span>
+          <span class="chip xg">Mbappé 距法国队史射手王仅 5 球 · 法防线非铁桶</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 强强叙事 + 2002 旧怨</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 3-1（预测兑现：法胜✓、大2.5✓；Mbappé 两球破队史射手王纪录，末段失球非零封）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-iraq-vs-norway.html">
+        <div class="grp"><span>I 组 · 福克斯堡(Gillette) · 18:00 ET</span><span class="feat">★ Haaland 世界杯首秀</span></div>
+        <div class="teams">
+          <div class="tn">🇮🇶 伊拉克<small>40 年来首返世界杯</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">挪威 🇳🇴<small>Haaland/Ødegaard · 28 年首返</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:7%;background:#1a7a3d"></i><i style="width:14%;background:var(--draw)"></i><i style="width:79%;background:#bc2b2b"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">伊 7%</span><span>平 14%</span><span style="color:#f08a82">挪 <b>79%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#7fd6a0;border-color:#1d4a2a;background:#0e2218">✅ 首发已官宣</span>
+          <span class="chip">挪胜 <b>1.20</b> · 平 7.00 · 伊 14.00</span>
+          <span class="chip xg">Haaland 预选 16 球 · 悬念在赢球幅度 + 进球数而非胜负</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 资金集中在让球/Haaland 进球</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 1-4（预测兑现：挪胜✓、让球✓；Haaland 世界杯首秀两球）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-argentina-vs-algeria.html">
+        <div class="grp"><span>J 组 · 堪萨斯城(Arrowhead) · 21:00 ET</span><span class="feat">★ 阿根廷卫冕登场 · Marciniak 执法</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇷 阿根廷<small>卫冕冠军 · Messi</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">阿尔及利亚 🇩🇿<small>Mahrez/Amoura</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:68%;background:#75aadb"></i><i style="width:20%;background:var(--draw)"></i><i style="width:12%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#9cc6ea">阿 <b>68%</b></span><span>平 20%</span><span style="color:#7fd6a0">阿尔 12%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">阿根廷胜 <b>1.40</b> · 平 4.50 · 阿尔 8.00</span>
+          <span class="chip xg">Messi 腿筋管理是最大悬念 · 2022 决赛主裁 Marciniak 执法</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · Messi 叙事 + 卫冕首战</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 3-0（预测兑现：阿胜✓；Messi 帽子戏法平 Klose 登顶世界杯射手榜）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-austria-vs-jordan.html">
+        <div class="grp"><span>J 组 · 圣克拉拉(Levi's) · 00:00 ET(6/17)</span><span>跨夜场 · Rangnick</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇹 奥地利<small>Rangnick · 近 5 场不败</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">约旦 🇯🇴<small>世界杯首秀 · 双前锋伤缺</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:71%;background:#c8102e"></i><i style="width:17%;background:var(--draw)"></i><i style="width:12%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f08a82">奥 <b>71%</b></span><span>平 17%</span><span style="color:#7fd6a0">约 12%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">奥胜 <b>1.34</b> · 平 5.50 · 约 8.00</span>
+          <span class="chip xg">约旦头号射手 Al-Naimat + Sabra 双双伤缺 · 进攻受挫</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 共识强 · 资金看奥让球</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d;background:#1c1708;font-weight:700">🏁 终场 3-1（预测兑现：奥胜✓、让-1.5✓；约旦首球+顽强抵抗）</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 7 · 6/17 -->
+  <div class="dayblock" data-day="6">
+    <div class="sub" style="margin:0 0 12px">6/17（周三）K/L 组首轮 4 场 · 赔率为欧赔小数盘（已去水近似）· <b>赛前完整详情页已生成，点卡片进入</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-portugal-vs-drcongo.html">
+        <div class="grp"><span>K 组 · 休斯顿(NRG) · 13:00 ET</span><span class="feat">★ C罗世界杯告别之旅登场</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇹 葡萄牙<small>夺冠争夺者 · Ronaldo/B.Fernandes</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">刚果(金) 🇨🇩<small>非洲黑马 · 世界杯睽违</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:77%;background:#1a7a3d"></i><i style="width:17%;background:var(--draw)"></i><i style="width:6%;background:#1f6fb0"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">葡 <b>77%</b></span><span>平 17%</span><span style="color:#9cc6ea">刚 6%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">葡胜 <b>1.31</b> · 平 6.00 · 刚 13.00</span>
+          <span class="chip xg">悬念在赢球幅度与进球数 · 刚果(金)身体对抗强、需防反击</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ 首发已官宣 · Dias/Leão 轮休、葡改 4-2-3-1、Ronaldo 首发</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 市场热度 2.5/5 · C罗叙事 vs 一边倒共识</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-england-vs-croatia.html">
+        <div class="grp"><span>L 组 · 阿灵顿(AT&T) · 16:00 ET</span><span class="feat">★ 2018 半决赛复仇战</span></div>
+        <div class="teams">
+          <div class="tn">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰<small>Tuchel · 预选 8 战全胜 0 失球</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">克罗地亚 🇭🇷<small>Modrić 一代落幕 · 中场老化</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#c8102e"></i><i style="width:25%;background:var(--draw)"></i><i style="width:19%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f08a82">英 <b>56%</b></span><span>平 25%</span><span style="color:#7fa6e6">克 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">英胜 <b>1.73</b> · 平 3.80 · 克 4.75</span>
+          <span class="chip xg">英格兰预选 8 胜 22 球 0 失球 · 克罗地亚中场老化是胜负手</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ 首发已官宣 · Guéhi/Saka 替补、克 Kovačić 替补打 4-3-3</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 2018 旧怨拉热</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-ghana-vs-panama.html">
+        <div class="grp"><span>L 组 · 多伦多(BMO Field) · 19:00 ET</span><span>小组"六分之战"</span></div>
+        <div class="teams">
+          <div class="tn">🇬🇭 加纳<small>黑色之星 · 个人能力占优</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">巴拿马 🇵🇦<small>中北美硬汉 · 防反</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#1a7a3d"></i><i style="width:27%;background:var(--draw)"></i><i style="width:31%;background:#bc2b2b"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">加 <b>42%</b></span><span>平 27%</span><span style="color:#f08a82">巴 31%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">加胜 <b>2.00</b> · 平 3.50 · 巴 3.60</span>
+          <span class="chip xg">两队都知道这是 L 组最易抢分一战 · 市场偏小球、谨慎对攻</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ 首发已官宣 · 加纳改 4-4-1-1（Sulemana 首发）· 巴拿马 Carrasquilla/Díaz 替补、Waterman 首发</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 三向贴平、情绪干净</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-uzbekistan-vs-colombia.html">
+        <div class="grp"><span>K 组 · 墨西哥城(Azteca, 海拔2250m) · 22:00 ET</span><span>跨夜场 · A.Taylor 执法</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇿 乌兹别克斯坦<small>世界杯处子秀</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">哥伦比亚 🇨🇴<small>美洲杯亚军 · 重返世界杯</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:10%;background:#1a7a3d"></i><i style="width:22%;background:var(--draw)"></i><i style="width:68%;background:#f0c000"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">乌 10%</span><span>平 22%</span><span style="color:#f7e07a">哥 <b>68%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">哥胜 <b>1.43</b> · 平 4.50 · 乌 7.50</span>
+          <span class="chip xg">阿兹特克 2250m 海拔削弱热门末段节奏 · 市场倾向哥控制式小胜</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 哥共识 + 海拔变量</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 8 · 6/18 -->
+  <div class="dayblock" data-day="7">
+    <div class="sub" style="margin:0 0 12px">6/18（周四）A/B 组次轮 4 场 · 赔率为欧赔小数盘（已去水近似）· <b>已完赛 · 赛后复盘已出，点卡片看复盘 + 赛前对账</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-czechia-vs-southafrica.html">
+        <div class="grp"><span>A 组 · 亚特兰大(Mercedes-Benz) · 12:00 ET</span><span>双方均首轮告负 · 输即出局</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇿 捷克<small>首轮 1-2 负韩国 · Sadílek 6'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 1</div>
+          <div class="tn r">南非 🇿🇦<small>Mokoena 83' 点球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:54%;background:#d7141a"></i><i style="width:27%;background:var(--draw)"></i><i style="width:19%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f08a82">捷 <b>54%</b></span><span>平 27%</span><span style="color:#7fd6a0">南 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣 · Souček 替补</span>
+          <span class="chip">捷胜 <b>1.75</b> · 平 3.80 · 南 5.00</span>
+          <span class="chip xg">🆕 捷克定位球预选全欧最强（11 球·7 角球）· 南非 Sithole+Zwane 停赛（上一场带入）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 冷门时段 · 共识无溢价</span>
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 1-1 · 捷 54% 主胜→平局（预测偏差）· 复盘已出</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-switzerland-vs-bosnia.html">
+        <div class="grp"><span>B 组 · 英格尔伍德(SoFi) · 15:00 ET</span><span>瑞士首轮 26 射仅 1 球</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇭 瑞士<small>Manzambi 梅开二度 74'+90'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">4 - 1</div>
+          <div class="tn r">波黑 🇧🇦<small>Muharemović 80' 红牌 · Mahmić 90+3'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:61%;background:#d52b1e"></i><i style="width:24%;background:var(--draw)"></i><i style="width:15%;background:#3b5dab"></i></div>
+          <div class="plab"><span style="color:#f08a82">瑞 <b>61%</b></span><span>平 24%</span><span style="color:#9cb3e6">波 15%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣 · Džeko 首发 · Zakaria 替补</span>
+          <span class="chip">瑞胜 <b>1.62</b> · 平 4.21 · 波 6.50</span>
+          <span class="chip xg">🆕 瑞士 26 射 3.24 xG 仅 1 点球进账（终结隐忧·上一场带入）· 波黑定位球是反击獠牙</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 小球/平局价值叙事</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 4-1 · 瑞 61% 主胜兑现 · 末段 17 分钟轰 4 球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-canada-vs-qatar.html">
+        <div class="grp"><span>B 组 · 温哥华(BC Place) · 18:00 ET</span><span>东道主 · Davies 复出悬念</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇦 加拿大<small>David 帽子戏法 · Larin 16'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">6 - 0</div>
+          <div class="tn r">卡塔尔 🇶🇦<small>2 红牌 · 9 人应战 · Koné 重伤</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:72%;background:#d52b1e"></i><i style="width:18%;background:var(--draw)"></i><i style="width:10%;background:#8a1538"></i></div>
+          <div class="plab"><span style="color:#f08a82">加 <b>72%</b></span><span>平 18%</span><span style="color:#d98aa0">卡 10%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣 · Davies 缺席 · 卡塔尔六后卫弃用 Almoez Ali</span>
+          <span class="chip">加胜 <b>1.29</b> · 平 5.50 · 卡 10.00</span>
+          <span class="chip xg">🆕 加拿大破密集防守是核心课题（首轮 68% 控球仅 1 球·上一场带入）· 卡塔尔低位+定位球韧性</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 出线压力驱动 · BTTS No 偏锐</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 6-0 · 加 72% 兑现 · 队史最大胜 · David 帽子戏法</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-mexico-vs-korea.html">
+        <div class="grp"><span>A 组 · 瓜达拉哈拉(Akron) · 21:00 ET</span><span class="feat">★ 主场榜首之争 · Montes 停赛</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 墨西哥<small>Romo 50' · 两战全胜提前出线</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 0</div>
+          <div class="tn r">韩国 🇰🇷<small>控球 58% 未转化 · 末轮生死</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:48%;background:#1a7a3d"></i><i style="width:29%;background:var(--draw)"></i><i style="width:23%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">墨 <b>48%</b></span><span>平 29%</span><span style="color:#f08a82">韩 23%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">墨胜 <b>2.00</b> · 平 3.30 · 韩 4.25</span>
+          <span class="chip xg">🆕 César Montes 红牌停赛 · Edson Álvarez 或回撤中卫（上一场带入）· 韩国 468 传球破队史</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 主场氛围 + 榜首之争</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 1-0 · 墨 48% 险胜兑现 · 韩国 xG 反超却落败</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 9 = 6/19 -->
+  <div class="dayblock" data-day="8">
+    <div class="sub" style="margin:0 0 12px">6/19（周五）C/D 组次轮 4 场 · 赔率为欧赔小数盘（已去水近似）· <b>已完赛 · 赛后复盘已出，点卡片看复盘 + 赛前对账</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-usa-vs-australia.html">
+        <div class="grp"><span>D 组 · 西雅图(Lumen) · 15:00 ET</span><span class="feat">★ 东道主争小组头名</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 美国<small>Burgess OG 11' · Freeman 43'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">澳大利亚 🇦🇺<small>0 射正 · 提前出局压力</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:60%;background:#1f4e9c"></i><i style="width:22%;background:var(--draw)"></i><i style="width:18%;background:#f5b301"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">美 <b>60%</b></span><span>平 22%</span><span style="color:#f5d469">澳 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218">✅ 首发已官宣</span>
+          <span class="chip">美胜 <b>1.59</b> · 平 4.00 · 澳 5.10</span>
+          <span class="chip xg">🆕 Pulisic 确认缺阵→Pepi 首发、美国改 3-4-1-2 双前锋 · 澳反击尖刀 Irankunda 意外替补 · 速览维持、小球逻辑略增强</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3.5/5 · 东道主公众盘溢价 · 价值在澳 +1.5 / 小球</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 2-0 · 美 60% 主胜兑现 · 小球(Under 2.5)兑现 · 提前出线</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-scotland-vs-morocco.html">
+        <div class="grp"><span>C 组 · 福克斯堡(Gillette) · 18:00 ET</span><span>2022 四强黑马 vs 定位球苏格兰</span></div>
+        <div class="teams">
+          <div class="tn">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰<small>0 射正 · 本届首场被零封</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">摩洛哥 🇲🇦<small>Saibari 2'（本届最快球）</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:20%;background:#1f4e9c"></i><i style="width:25%;background:var(--draw)"></i><i style="width:55%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#9cb3e6">苏 20%</span><span>平 25%</span><span style="color:#f08a82">摩 <b>55%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218">✅ 首发已官宣</span>
+          <span class="chip">摩胜 <b>1.70</b> · 平 3.30 · 苏 5.00</span>
+          <span class="chip xg">🆕 摩洛哥 Amrabat + 头号射手 El Kaabi 双双替补、Brahim Díaz 伪九无正印中锋 · 苏格兰 Tierney/Ferguson 进首发、Robertson 戴袖标 · 速览维持、小球/平局逻辑增强</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 摩胜+小球共识 · 平局是真实风险</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 0-1 · 摩 55% 险胜兑现 · 小球兑现 · 2' 闪击改写剧本</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-brazil-vs-haiti.html">
+        <div class="grp"><span>C 组 · 费城(Lincoln Financial) · 21:00 ET</span><span class="feat">★ 夺冠大热坐镇</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 巴西<small>Cunha 23',36' · Vinícius 45+3'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">3 - 0</div>
+          <div class="tn r">海地 🇭🇹<small>本届首支出局球队</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:87%;background:#1a7a3d"></i><i style="width:9%;background:var(--draw)"></i><i style="width:4%;background:#00209f"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">巴 <b>87%</b></span><span>平 9%</span><span style="color:#9cc6ea">海 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">巴胜 <b>1.10</b> · 平 10.00 · 海 23.00</span>
+          <span class="chip xg">🆕 看点在攻坚效率/开张时间（巴西首轮攻坚低效、射门反被压制·上一场带入）· 海地 15 射 0 球终结危机（上一场带入）</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">🔥 市场热度 3/5 · 胜负无悬念、价值堵死 · 分歧在让球 -2.5/-3 与大球</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 3-0 · 巴 87% 兑现、比分精准命中 · 但大球 3.5 偏差（走小）· Raphinha 伤退</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-turkiye-vs-paraguay.html">
+        <div class="grp"><span>D 组 · 圣克拉拉(Levi's) · 00:00 ET（次日）</span><span>两支首轮失利队的生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇷 土耳其<small>81% 控球 · 32 射仍 0 球 · 出局</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">巴拉圭 🇵🇾<small>Galarza 71秒 · 半场起 10 人死守</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:47%;background:#e30a17"></i><i style="width:28%;background:var(--draw)"></i><i style="width:25%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#f08a82">土 <b>47%</b></span><span>平 28%</span><span style="color:#f0a3a3">巴 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">土胜 <b>1.95</b> · 平 3.40 · 巴 4.00</span>
+          <span class="chip xg">🆕 土耳其"控而不破"破密集防守是课题（0-2 负澳·上一场带入）· 巴拉圭须防早失球（45 分钟丢 3 球·上一场带入）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 生死战盘口接近 · 小球(Under 2.5)最有共识</span>
+          <span class="chip warnchip" style="font-weight:700">🏁 终场 0-1 · 土 47% 主胜→爆冷负（预测偏差）· 小球兑现 · 土耳其出局、Almirón 停赛</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 10 = 6/20 E/F 组次轮 -->
+  <div class="dayblock" data-day="9">
+    <div class="sub" style="margin:0 0 12px">6/20（周六）E/F 组次轮 4 场 · <b>3 场已完赛、赛后复盘已出</b>（突-日深夜场进行中，复盘次日补）· 点卡片看复盘 + 赛前分析</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-netherlands-vs-sweden.html">
+        <div class="grp"><span>F 组 · 休斯顿(NRG) · 13:00 ET</span><span class="feat">★ 范戴克 vs 伊萨克</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 荷兰<small>首轮 2-2 平日本 · 两度被追平</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">瑞典 🇸🇪<small>首轮 5-1 大胜突尼斯</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#e2711d"></i><i style="width:24%;background:var(--draw)"></i><i style="width:20%;background:#2f6fd0"></i></div>
+          <div class="plab"><span style="color:#f0b27a">荷 <b>56%</b></span><span>平 24%</span><span style="color:#9cc0ee">瑞 20%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">荷胜 <b>1.67</b> · 平 3.90 · 瑞 5.00</span>
+          <span class="chip xg">🆕 荷兰终结低效、两度被追平、5 场不零封（上一场带入）· 瑞典 5-1 多点开花防线未受考验（上一场带入）· 当值 Michael Oliver（英格兰）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 利物浦内战话题拉热度 · 盘口冷静</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🏁 终场 荷兰 5-1 瑞典（胜负✓·净胜幅度远超共识）· 📊 复盘已出</span>
+        </div>
+        <div class="go">看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-germany-vs-cotedivoire.html">
+        <div class="grp"><span>E 组 · 多伦多(BMO) · 16:00 ET</span><span class="feat">★ 胜者锁定出线</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 德国<small>首轮 7-1 狂胜库拉索</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">科特迪瓦 🇨🇮<small>Amad 90' 绝杀厄瓜多尔</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:61%;background:#9aa0a6"></i><i style="width:22%;background:var(--draw)"></i><i style="width:17%;background:#f47b20"></i></div>
+          <div class="plab"><span style="color:#cfd3d8">德 <b>61%</b></span><span>平 22%</span><span style="color:#f5b07a">科 17%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">德胜 <b>1.55</b> · 平 4.20 · 科 5.75</span>
+          <span class="chip xg">🆕 德国攻强但 7 场不零封、防线有空当（上一场带入）· 科特迪瓦零封 + 绝杀的韧性（上一场带入）· 超算给科胜 30% 高于盘口 16%（价值陷阱提醒）· 当值 Benítez Mareco（巴拉圭）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 强强对话、定价理性、无情绪溢价</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣 · 德沿用 7-1 首发(Brown 先发)、科改 4-3-3 三中场(少年 Oulai 先发)、N'Dicka 落选</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🏁 终场 德国 2-1 科特迪瓦（胜负✓·价值陷阱命中：科先进球+读秒被绝杀）· 📊 复盘已出</span>
+        </div>
+        <div class="go">看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-ecuador-vs-curacao.html">
+        <div class="grp"><span>E 组 · 堪萨斯城(Arrowhead) · 19:00 ET</span><span>实力悬殊 · 看终结效率</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇨 厄瓜多尔<small>首轮 0-1 负科特迪瓦 · 终结荒</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">库拉索 🇨🇼<small>首轮 1-7 负德国 · 史上最小参赛国</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:86%;background:#f5c518"></i><i style="width:9%;background:var(--draw)"></i><i style="width:5%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f3da70">厄 <b>86%</b></span><span>平 9%</span><span style="color:#9cb3e6">库 5%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">厄胜 <b>1.10</b> · 平 11.00 · 库 23.00</span>
+          <span class="chip xg">🆕 厄瓜多尔首轮 12 射 3 中柱仅 1 射正、终结荒（上一场带入）· 库拉索 1-7 防线崩盘但样本薄（上一场带入）· 高 xG 撞终结荒→大让球/大球需谨慎（陷阱提醒）· 当值 马宁（中国，24 年来首位中国主裁）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 一边倒、无情绪溢价 · 价值在让球/大小</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🏁 终场 厄瓜多尔 0-0 库拉索（胜负✗踏空·终结荒+让球陷阱教科书命中：27射15正0球、对方门将15扑救平纪录）· 📊 复盘已出</span>
+        </div>
+        <div class="go">看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-tunisia-vs-japan.html">
+        <div class="grp"><span>F 组 · 蒙特雷(BBVA) · 23:00 ET</span><span>世界杯第 1000 场 · 突尼斯生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇳 突尼斯<small>首轮 1-5 负瑞典 · 临阵换帅 Renard</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">日本 🇯🇵<small>首轮 2-2 平荷兰 · 久保健英存疑</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:16%;background:#c1272d"></i><i style="width:22%;background:var(--draw)"></i><i style="width:62%;background:#1f4e9c"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">突 16%</span><span>平 22%</span><span style="color:#9cb3e6">日 <b>62%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">日胜 <b>1.52</b> · 平 4.00 · 突 6.50</span>
+          <span class="chip xg">🆕 突尼斯一场即换帅、Renard（2022 沙特爆冷功勋）接手（上一场带入）· 日本久保健英膝伤存疑、伊东纯也或首发（上一场带入）· 当值 Kovács（罗马尼亚）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 弱旅 + 深夜场 · 换帅/千场叙事驱动</span>
+          <span class="chip" style="color:#fcd34d;border-color:#6b4f1d;background:#241c0e;font-weight:700">⏳ 深夜场进行中（日本领先）· 终场比分与赛后复盘次日补</span>
+        </div>
+        <div class="go">看完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 11 = 6/21 G/H 组次轮 -->
+  <div class="dayblock" data-day="10">
+    <div class="sub" style="margin:0 0 12px">6/21（周日）G/H 组次轮 4 场 · <b>已全部完赛 · 4 场赛后复盘已出</b>，点卡片看技战术复盘 + 赛前预测对账</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-spain-vs-saudiarabia.html">
+        <div class="grp"><span>H 组 · 亚特兰大(Mercedes-Benz) · 12:00 ET</span><span class="feat">★ 夺冠大热坐镇</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇸 西班牙<small>首轮 0-0 平佛得角 · 27 射 0 球</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">沙特阿拉伯 🇸🇦<small>首轮 1-1 平乌拉圭</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:86%;background:#e63329"></i><i style="width:10%;background:var(--draw)"></i><i style="width:4%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">西 <b>86%</b></span><span>平 10%</span><span style="color:#7fd6a0">沙 4%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">西胜 <b>1.11</b> · 平 10.00 · 沙 23.00</span>
+          <span class="chip xg">🆕 西班牙首轮 27 射 2.29 xG 仍 0 球、终结失灵（上一场带入）· 沙特低位 + 定位球得分、Al-Owais 神勇（"佛得角模板"·上一场带入）· 当值 Raphael Claus（巴西）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 共识强 · "再摆大巴/亚马尔首发"叙事拉热度</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b5a1d;background:#1f1a0a;font-weight:700">🏁 终场 4-0（西胜+让球+大球全兑现）· 📊 复盘已出</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前对账 →</div>
+      </a>
+
+      <a class="mc live" href="report-belgium-vs-iran.html">
+        <div class="grp"><span>G 组 · 英格尔伍德(SoFi) · 15:00 ET</span><span>全组 1 分、混战</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇪 比利时<small>首轮 1-1 平埃及 · 15 射阵地 0 球</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">伊朗 🇮🇷<small>首轮 2-2 平新西兰 · 防转换漏洞</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:64%;background:#e63329"></i><i style="width:23%;background:var(--draw)"></i><i style="width:13%;background:#1a7a3d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">比 <b>64%</b></span><span>平 23%</span><span style="color:#7fd6a0">伊 13%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">✅ 首发已官宣</span>
+          <span class="chip">比胜 <b>1.44</b> · 平 4.50 · 伊 7.00</span>
+          <span class="chip xg">🆕 比利时无正印中锋破密集（15 射阵地 0 球·上一场带入）· 伊朗防转换有洞（两球均被直塞身后·上一场带入）· 当值 Dario Herrera（阿根廷）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">🔁 官方爆点：Lukaku 直接首发（真9顶替 De Ketelaere 伪九）· Saelemaekers 顶右路 · 伊朗 Taremi 单箭头铁桶</span>
+          <span class="chip" style="color:#ff8a8a;border-color:#6b2f2f;background:#241016;font-weight:700">Doku 因病确认缺席 · Trossard 改打左路</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 比利时共识 + 伊朗地缘/旅行叙事 + Doku 伤讯</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b5a1d;background:#1f1a0a;font-weight:700">🏁 终场 0-0（比胜共识踏空、Beiranvand 7 扑救 + Ngoy 染红）· 📊 复盘已出</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前对账 →</div>
+      </a>
+
+      <a class="mc live" href="report-uruguay-vs-capeverde.html">
+        <div class="grp"><span>H 组 · 迈阿密(Hard Rock) · 18:00 ET</span><span>乌拉圭终结隐忧 vs 黑马铁桶</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇾 乌拉圭<small>首轮 1-1 平沙特 · 27 射 1 球</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">佛得角 🇨🇻<small>首轮 0-0 平西班牙 · 铁桶+7 扑救</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:65%;background:#4a9fd4"></i><i style="width:22%;background:var(--draw)"></i><i style="width:13%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#a5d3ee">乌 <b>65%</b></span><span>平 22%</span><span style="color:#7fd6a8">佛 13%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">乌胜 <b>1.46</b> · 平 4.50 · 佛 7.20</span>
+          <span class="chip xg">🆕 乌拉圭终结危机（27 射 1.54 xG 仅 1 球、Núñez 半场被换·上一场带入）· 佛得角铁桶已验证（0-0 西、Vozinha 7 扑救、全场 1 犯规·上一场带入）· 当值 Espen Eskas（挪威）</span>
+          <span class="chip" style="color:#ff8a8a;border-color:#6b2f2f;background:#241016;font-weight:700">🔁 多源确认：Araújo、De Arrascaeta 缺阵、Giménez 替补、Piquerez 缺阵 · 乌破铁桶上限下降、让深盘/大球承压</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 乌胜共识 + 灰姑娘/终结质疑分歧 + 乌伤病潮</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b5a1d;background:#1f1a0a;font-weight:700">🏁 终场 2-2（乌胜共识偏差、佛得角连续两场不败）· 📊 复盘已出</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前对账 →</div>
+      </a>
+
+      <a class="mc live" href="report-newzealand-vs-egypt.html">
+        <div class="grp"><span>G 组 · 温哥华(BC Place) · 21:00 ET</span><span>六分之战 · 萨拉赫纪录追逐</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇿 新西兰<small>首轮 2-2 平伊朗 · 两度领先被追平</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">埃及 🇪🇬<small>首轮 1-1 平比利时 · 萨拉赫领衔</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:17%;background:#9aa0a6"></i><i style="width:24%;background:var(--draw)"></i><i style="width:59%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#cfd3d8">新 17%</span><span>平 24%</span><span style="color:#f0a3a3">埃 <b>59%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">埃胜 <b>1.60</b> · 平 4.00 · 新 5.50</span>
+          <span class="chip xg">🆕 新西兰防转换漏球、12 场不零封（上一场带入）· 埃及反击犀利但终结靠萨拉赫（xG 1.07·上一场带入）· 当值 Omar Al Ali（阿联酋）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">✅ 多源复核：萨拉赫确认首发、两队均无新增伤停 · 主线不变</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 萨拉赫纪录追逐 + 六分之战驱动</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b5a1d;background:#1f1a0a;font-weight:700">🏁 终场 1-3（埃及胜兑现、萨拉赫破门 · 埃及世界杯首胜）· 📊 复盘已出</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前对账 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 11 = 6/22 I/J 组次轮 -->
+  <div class="dayblock" data-day="11">
+    <div class="sub" style="margin:0 0 12px">6/22（周一）I/J 组次轮 4 场 · 赔率为欧赔小数盘（已去水近似）· <b>预览详情页已生成，点卡片进入</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-argentina-vs-austria.html">
+        <div class="grp"><span>J 组 · 阿灵顿(AT&T) · 已结束</span><span class="feat">★ 组首决战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇷 阿根廷<small>Messi 38' · 90+5'（独享世界杯射手王）</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">2 - 0</div>
+          <div class="tn r">奥地利 🇦🇹<small>高压被化解 · 0.24 xG</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:62%;background:#4a9fd4"></i><i style="width:24%;background:var(--draw)"></i><i style="width:15%;background:#d83232"></i></div>
+          <div class="plab"><span style="color:#a5d3ee">赛前 阿 <b>62%</b></span><span>平 24%</span><span style="color:#f0a3a3">奥 15%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 2-0 · 基准比分精准命中 · Messi 双响破纪录</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 阿胜 <b>1.60</b> · 平 4.00 · 奥 5.75</span>
+          <span class="chip xg">🆕 奥地利高压留身后空当（上一场带入）· 阿根廷过度依赖 Messi、Lautaro 未破门（上一场带入）· Sabitzer 背 1 黄停赛风险 · 当值 Amin Omar（埃及）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 阿根廷共识 + Messi 叙事 · 组首决战</span>
+          <span class="chip" style="color:#7fe0a0;border-color:#1d4a2a;background:rgba(34,197,94,0.08);font-weight:700">✅ 首发已官宣 · Álvarez 轮休、Almada 首发；奥地利 A.Schlager 把门、Alaba 领衔、Arnautović 替补</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-france-vs-iraq.html">
+        <div class="grp"><span>I 组 · 费城(Lincoln Financial) · 已结束</span><span>夺冠大热 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇫🇷 法国<small>Mbappé 双响（追平克洛泽16球）· Dembélé</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">3 - 0</div>
+          <div class="tn r">伊拉克 🇮🇶<small>0 威胁 · 世界杯首场天气中断</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:90%;background:#2f6fd0"></i><i style="width:7%;background:var(--draw)"></i><i style="width:3%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#9cc0ee">赛前 法 <b>90%</b></span><span>平 7%</span><span style="color:#7fd6a0">伊 3%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 3-0 · 夺冠大热兑现 · 2.38 xG 全面压制</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 法胜 <b>1.08</b> · 平 10.00 · 伊 34.00</span>
+          <span class="chip xg">🆕 法国警惕"沉闷开局"、Mbappé 已平 Gerd Müller 14 球（上一场带入）· 伊拉克门将+中路漏洞（上一场带入）· 当值 Drew Fischer（加拿大）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 一边倒共识 · 价值在让球/进球数/Mbappé 纪录</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-norway-vs-senegal.html">
+        <div class="grp"><span>I 组 · 东卢瑟福(MetLife) · 已结束</span><span class="feat">★ 六分之战 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇴 挪威<small>Haaland 48' · 58'（挪威世界杯史射手王）· Pedersen 43'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">3 - 2</div>
+          <div class="tn r">塞内加尔 🇸🇳<small>Sarr 53' · 90+3'（梅开二度紧咬）</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#d84a57"></i><i style="width:29%;background:var(--draw)"></i><i style="width:30%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">赛前 挪 <b>42%</b></span><span>平 29%</span><span style="color:#7fd6a0">塞 30%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 3-2 · 最焦灼之战兑现 · Haaland 双响定胜局</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 挪胜 <b>2.35</b> · 平 3.40 · 塞 3.10</span>
+          <span class="chip xg">🆕 挪威低位反击空间被压缩、Haaland+Ødegaard 定位球（上一场带入）· 塞内加尔终结失灵、生死战必胜（上一场带入）· 当值倾向 Sampaio（巴西·严哨，待官方确认）</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 4/5 · 三向真实分歧 · 实力 vs 形势 · 信息含量最高</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-jordan-vs-algeria.html">
+        <div class="grp"><span>J 组 · 圣克拉拉(Levi's) · 已结束</span><span>出局前夜 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇯🇴 约旦<small>Al-Rashdan 36' · 半场领先后被逆转、出局</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 2</div>
+          <div class="tn r">阿尔及利亚 🇩🇿<small>Benbouali · Gouiri 82'（两球均角球·替补建功）</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:16%;background:#c1272d"></i><i style="width:23%;background:var(--draw)"></i><i style="width:62%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">赛前 约 16%</span><span>平 23%</span><span style="color:#7fd6a0">阿 <b>62%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 2-1 阿尔及利亚 · 阿胜共识兑现（过程艰难，82' 才反超）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 阿胜 <b>1.60</b> · 平 3.90 · 约 5.75</span>
+          <span class="chip xg">🆕 约旦定位球软肋致命兑现（两球皆失于角球）· 阿尔及利亚运动战仍卡壳、靠死球+替补 Gouiri 解题 · 当值 Omar Al Ali（阿联酋）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 3/5 · 阿胜共识 + 生死戏</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 12 = 6/23 K/L 组次轮 -->
+  <div class="dayblock" data-day="12">
+    <div class="sub" style="margin:0 0 12px">6/23（周二·已赛）K/L 组次轮 4 场 · <b>4 场赛后复盘已出，点卡片看复盘 + 赛前分析对账</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-portugal-vs-uzbekistan.html">
+        <div class="grp"><span>K 组 · 休斯敦(NRG) · 已结束</span><span class="feat">★ C罗纪录夜 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇹 葡萄牙<small>C罗 6' 39'(队史世界杯射手王) · N.Mendes 17' · Leão 87'</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">5 - 0</div>
+          <div class="tn r">乌兹别克斯坦 🇺🇿<small>0.25 xG · 全场仅 2 射、零威胁</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:80%;background:#c8102e"></i><i style="width:14%;background:var(--draw)"></i><i style="width:6%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">赛前 葡 <b>80%</b></span><span>平 14%</span><span style="color:#7fd6a0">乌 6%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 5-0 · 大胜+大球兑现 · C罗 6 届世界杯均破门(史上首人)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 葡胜 <b>1.25</b> · 平 6.00 · 乌 11.00</span>
+          <span class="chip xg">🆕 葡萄牙首轮"控而不破"急需进球止血（上一场带入）· 乌兹别克斯坦低位密集、转换薄弱（上一场带入）· 当值 Jalal Jayed（摩洛哥）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">✅ 多源复核：C罗完全康复、本场可用、两队无新增伤停 · 主线不变</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ 首发已官宣 · 葡 4-2-3-1：Dias 回归、Renato Veiga 搭档、João Félix 首发、Leão 替补、Ronaldo(C)；乌兹 3-4-2-1 换门将 Nematov</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 葡一边倒共识 · 分歧在让球幅度 + 进球数</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-england-vs-ghana.html">
+        <div class="grp"><span>L 组 · 福克斯堡(Gillette) · 已结束</span><span>闷平 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🏴 英格兰<small>78.8% 控球(队史世界杯最高) · 19 射 · Kane 末段失良机</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 0</div>
+          <div class="tn r">加纳 🇬🇭<small>仅 2 射 · 低位铁桶守平</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:78%;background:#1f5fd0"></i><i style="width:14%;background:var(--draw)"></i><i style="width:8%;background:#caa53d"></i></div>
+          <div class="plab"><span style="color:#9cc0ee">赛前 英 <b>78%</b></span><span>平 14%</span><span style="color:#e6cf85">加 8%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 0-0 · 英胜+大球双落空 · 78.8% 控球史上最高却 0 进球</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 英胜 <b>1.22</b> · 平 7.00 · 加 15.00</span>
+          <span class="chip xg">🆕 英格兰 Saka 跟腱大概率再坐替补、中路渗透为主（上一场带入）· 加纳首轮中场被压、急需节拍器（上一场带入）· 当值 Saíd Martínez（洪都拉斯）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0f2417;font-weight:700">✅ 首发已官宣 · 英 4-2-3-1：Guéhi+Spence 双换强后防、Konsa 保留、Rice 首发、Saka 替补、Kane(C)；加 4-3-3：Partey 回归首发、Sibo 进三中场、Kudus 落选名单</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🔁 已更新：加纳 Partey 获美签、本场可出战（首轮因签证缺席）· Sky+ESPN 双源 · 补强加纳中场命门</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 英一边倒共识 · 价值在让球 / 进球数</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-panama-vs-croatia.html">
+        <div class="grp"><span>L 组 · 多伦多(BMO Field) · 已结束</span><span>克替补绝杀 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇦 巴拿马<small>8 射 0.62 xG · 两连败出局</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">0 - 1</div>
+          <div class="tn r">克罗地亚 🇭🇷<small>Budimir 54'(替补) · Stanišić 助攻 · 重启引擎</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:17%;background:#c1272d"></i><i style="width:25%;background:var(--draw)"></i><i style="width:58%;background:#d4344a"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">赛前 巴 17%</span><span>平 25%</span><span style="color:#f0a3a3">克 <b>58%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 0-1 · 克胜+小球兑现 · 替补 Budimir 一锤定音、巴拿马出局</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 克胜 <b>1.49</b> · 平 3.40 · 巴 6.50</span>
+          <span class="chip xg">🆕 克罗地亚改回 4-3-3、Kovačić 回归、Modrić 临近第 200 次出场（上一场带入）· 巴拿马铁桶 + Harvey 累黄停赛风险（上一场带入）· 当值 Pierre Atcho（加蓬）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2/5 · 克输球后赔率未极端 · 价值在让球 / 巴拿马进球 / 小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-colombia-vs-drcongo.html">
+        <div class="grp"><span>K 组 · 瓜达拉哈拉(Akron) · 已结束</span><span>哥锁出线 · 终场</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇴 哥伦比亚<small>Muñoz 76' · 20 射 · James 创造 5 次机会 · 6 分出线</small></div>
+          <div class="vs" style="font-size:17px;color:var(--txt);font-weight:800">1 - 0</div>
+          <div class="tn r">刚果(金) 🇨🇩<small>门将 Mpasi 8 扑救 · 坚持到 76'</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:60%;background:#f0c000"></i><i style="width:24%;background:var(--draw)"></i><i style="width:16%;background:#1f9d55"></i></div>
+          <div class="plab"><span style="color:#f0d878">赛前 哥 <b>60%</b></span><span>平 24%</span><span style="color:#7fd6a0">刚 16%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;font-weight:700">🏁 终场 1-0 · 哥胜+小球兑现 · Muñoz 制胜、提前出线(6 分)</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">📊 复盘已出</span>
+          <span class="chip">赛前 哥胜 <b>1.51</b> · 平 3.80 · 刚 6.50</span>
+          <span class="chip xg">🆕 哥伦比亚"控而不破"需 James-Díaz 提速（上一场带入）· 刚果(金)逼平葡萄牙、防反 xG 反超（上一场带入）· 当值 Maurizio Mariani（意大利）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">✅ 多源复核：James、Díaz 健康首发、两队无新增伤停 · 主线不变</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 哥胜共识但赔率不极端 · 分歧在让球(-1) / 小 2.5 球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 13+ -->
+  <!-- Day 13 = 6/24 A/B 组末轮 -->
+  <div class="dayblock" data-day="13">
+    <div class="sub" style="margin:0 0 12px">6/24（周三·已赛）A/B/C 组末轮（第三轮）6 场 · <b>6 场赛后复盘已全部出齐，点卡片看复盘 + 赛前预测对账</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-switzerland-vs-canada.html">
+        <div class="grp"><span>B 组 · 温哥华(BC Place) · 15:00 ET</span><span class="feat">★ 头名直接决战</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇭 瑞士<small>4 分（净+3）· 旅欧硬骨架 · 须胜夺头名</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">加拿大 🇨🇦<small>4 分（净+6）· 东道主 · 平局即头名 · Davies 回归在即</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:39%;background:#d52b1e"></i><i style="width:31%;background:var(--draw)"></i><i style="width:30%;background:#c8102e"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">瑞 <b>39%</b></span><span>平 31%</span><span style="color:#f0a3a3">加 30%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 瑞士 2-1 加拿大（瑞士夺 B 组头名 · 预测兑现）· 📊 复盘已出</span>
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣 · Davies 替补未首发、加拿大大幅轮换（FIFA 官方）</span>
+          <span class="chip">瑞胜 <b>2.50</b> · 平 3.15 · 加 3.25</span>
+          <span class="chip xg">🆕 两队同积 4 分、加拿大凭净胜球平局即头名（瑞士须胜）· 瑞士旅欧骨架 vs 加拿大主场+运动能力 · 当值 Ramon Abatti（巴西）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">⭐ Alphonso Davies 本届首秀可能性（ESPN+Sports Mole+bet365 多源）· 加拿大左路最大变量</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 3/5 · 三向真实分歧 · 1X2 含信息量、本日最高</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-bosnia-vs-qatar.html">
+        <div class="grp"><span>B 组 · 西雅图(Lumen Field) · 15:00 ET</span><span>准淘汰赛 · 平局皆出局</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇦 波黑<small>1 分（净-3）· Džeko 领衔 · 须胜冲最佳三</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">卡塔尔 🇶🇦<small>1 分（净-6）· 0-6 负加拿大、状态崩盘</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:62%;background:#1f9d55"></i><i style="width:22%;background:var(--draw)"></i><i style="width:16%;background:#8a1538"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">波 <b>62%</b></span><span>平 22%</span><span style="color:#f0a3a3">卡 16%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 波黑 3-1 卡塔尔（波黑历史首进淘汰赛 · 预测兑现）· 📊 复盘已出</span>
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣 · 波黑双前锋(Džeko+Demirović)、卡塔尔 Almoez Ali 替补（多媒体）</span>
+          <span class="chip">波黑胜 <b>1.44</b> · 平 4.50 · 卡 5.00</span>
+          <span class="chip xg">🆕 两队均 1 分、平局皆出局的准淘汰赛 · Džeko（≈73 国家队球）领衔 · 卡塔尔近 5 场 4 场未进球、净胜球-6 垫底 · 主裁待官方确认</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 波黑共识、卡塔尔崩盘 · 价值在让球/大球</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-southafrica-vs-korea.html">
+        <div class="grp"><span>A 组 · 蒙特雷(BBVA) · 21:00 ET</span><span>南非须胜 · 韩国平局即出线</span></div>
+        <div class="teams">
+          <div class="tn">🇿🇦 南非<small>1 分 · 必须取胜 · 两主力停赛</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">韩国 🇰🇷<small>3 分 · 平局大概率出线 · Son 领衔</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:16%;background:#007749"></i><i style="width:25%;background:var(--draw)"></i><i style="width:59%;background:#cd2e3a"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">南 16%</span><span>平 25%</span><span style="color:#f0a3a3">韩 <b>59%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 南非 1-0 韩国（爆冷 · 南非队史首进淘汰赛、孙兴慜被弃用）· 📊 复盘已出</span>
+          <span class="chip">韩胜 <b>1.66</b> · 平 4.00 · 南 5.75</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">⭐ 南非 Zwane（头号攻击手）+ Mokoena（中场核心）双双停赛（ESPN+Racing Post 多源）· 必胜却失两核</span>
+          <span class="chip xg">🆕 韩国平局即出线、Son 反击是胜负保险 · 多家预测韩国 1-0 · 当值 Facundo Tello（阿根廷·样本两极）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 韩国共识、南非缺核强化倾斜 · 价值在让球/小球</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-czechia-vs-mexico.html">
+        <div class="grp"><span>A 组 · 墨西哥城(阿兹特克/Banorte) · 21:00 ET</span><span>墨已出线 · 捷克须胜</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇿 捷克<small>1 分 · 只有取胜才能续命 · Schick</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">墨西哥 🇲🇽<small>6 分已出线 · 两战零失球 · 或大幅轮换</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:25%;background:#11457e"></i><i style="width:27%;background:var(--draw)"></i><i style="width:48%;background:#006847"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">捷 25%</span><span>平 27%</span><span style="color:#7fd6a0">墨 <b>48%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 捷克 0-3 墨西哥（墨西哥全胜夺 A 组头名 · 兑现）· 📊 复盘已出</span>
+          <span class="chip">墨胜 <b>1.95</b> · 平 3.40 · 捷 3.70</span>
+          <span class="chip xg">🆕 墨西哥已出线、赢/平即头名、多源预计大幅轮换（最大变量）· 捷克须胜却攻坚乏力、Schick 是破零封唯一支点 · 当值 Yael Falcón Pérez（阿根廷）</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2.5/5 · 墨主场共识但赔率不极端（轮换变量）· 价值在让球/大小球</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-scotland-vs-brazil.html">
+        <div class="grp"><span>C 组 · 迈阿密(Hard Rock) · 18:00 ET</span><span class="feat">★ 苏格兰生死战</span></div>
+        <div class="teams">
+          <div class="tn">🏴 苏格兰<small>3 分 · 须胜巴西方有出线机会 · 12 届大赛从未小组出线</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">巴西 🇧🇷<small>4 分 · 平局即头名 · 历史从未负于苏格兰</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:12%;background:#005eb8"></i><i style="width:18%;background:var(--draw)"></i><i style="width:70%;background:#ffdf00"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">苏 12%</span><span>平 18%</span><span style="color:#f0d878">巴 <b>70%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 苏格兰 0-3 巴西（巴西碾压夺 C 组头名 · 兑现）· 📊 复盘已出</span>
+          <span class="chip">巴胜 <b>1.36</b> · 平 ~4.50 · 苏 ~7.50</span>
+          <span class="chip xg">🆕 苏格兰必须取胜+看摩海结果 · 巴西基本出线争头名、动机或不对称 · 当值 César Ramos（墨西哥）</span>
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">⭐ 巴西 Raphinha 确认缺阵（右大腿肌肉伤 · ESPN+Bolavip+Sports Mole+Goal 多源）· Neymar 可用但预计替补、Rayan 顶替右路</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2/5 · 巴西一边倒共识 · 价值在让球幅度 / 大小球</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-morocco-vs-haiti.html">
+        <div class="grp"><span>C 组 · 亚特兰大(奔驰球场) · 18:00 ET</span><span>摩争头名 · 海地已出局</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇦 摩洛哥<small>4 分 · 掌握出线主动权、争头名 · 2022 四强</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">海地 🇭🇹<small>0 分 · 两连败已出局 · 荣誉之战</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:82%;background:#c1272d"></i><i style="width:12%;background:var(--draw)"></i><i style="width:6%;background:#00209f"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">摩 <b>82%</b></span><span>平 12%</span><span style="color:#7fa6e6">海 6%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#bbf7d0;border-color:#1d7a45;background:#0c2417;font-weight:700">🏁 终场 摩洛哥 4-2 海地（摩洛哥晋级 · 海地 52 年来世界杯首球）· 📊 复盘已出</span>
+          <span class="chip">摩胜 <b>1.19</b> · 平 ~6.50 · 海 ~13.00</span>
+          <span class="chip xg">🆕 摩洛哥本届进攻效率一般 + 或轮换保护主力→大 3.5 承压 · Hakimi 迎第 99 次出场 · 当值 Danny Makkelie（荷兰）</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 海地头号射手 Duckens Nazon（44 球）伤情存疑（RotoWire+Sports Mole+AfricaSoccer 多源）· 进攻威胁再降</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 1/5 · 一边倒共识 · 价值在让球 / 大小球</span>
+        </div>
+        <div class="go">看复盘 + 完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Day 14 = 6/25 D/E/F 组末轮 -->
+  <div class="dayblock" data-day="14">
+    <div class="sub" style="margin:0 0 12px">6/25（周四·已赛）D/E/F 组末轮（第三轮）6 场 · <b>6 场赛后复盘全部出齐</b>，点卡片看赛后复盘 + 赛前分析</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-paraguay-vs-australia.html">
+        <div class="grp"><span>D 组 · 圣克拉拉(Levi's) · 22:00 ET</span><span class="feat">★ 直接出线生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇾 巴拉圭<small>3 分（净-2）· 基本须取胜 · 1-0 险胜土耳其</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">澳大利亚 🇦🇺<small>3 分（净0）· 净胜球占优、平局即出线</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:33%;background:#d52b1e"></i><i style="width:42%;background:var(--draw)"></i><i style="width:25%;background:#00843d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">巴 33%</span><span><b>平 42%</b></span><span style="color:#7fd6a0">澳 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 巴拉圭 0-0 澳大利亚</span>
+          <span class="chip">巴胜 <b>2.88</b> · 平 2.30 · 澳 3.93（平局赔最低）</span>
+          <span class="chip xg">🆕 澳大利亚净胜球占优→平局即出线、巴拉圭基本须取胜 · 低进球均势博弈 · 当值 Clément Turpin（法国）</span>
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">⭐ 巴拉圭头号射手 Almirón "捂嘴红牌"新规停赛（FIFA 官方确认·史上首例 · Al Jazeera+ESPN+FOX 多源）· 进攻上限大降</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 3/5 · 三向贴近、平赔最低 · 价值在小球 / 平局衍生</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-turkiye-vs-usa.html">
+        <div class="grp"><span>D 组 · 英格尔伍德(SoFi) · 22:00 ET</span><span>dead rubber · 美已头名</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇷 土耳其<small>0 分 · 两连败已出局 · 荣誉雪耻战</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">美国 🇺🇸<small>6 分已锁头名 · dead rubber · 多源料大幅轮换</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:28%;background:#e30a17"></i><i style="width:23%;background:var(--draw)"></i><i style="width:49%;background:#0a3161"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">土 28%</span><span>平 23%</span><span style="color:#7fa6e6">美 <b>49%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 土耳其 3-2 美国</span>
+          <span class="chip">美胜 <b>2.05</b> · 平 4.10 · 土 3.50</span>
+          <span class="chip xg">🆕 美国已头名、本场无关排名→1X2 罕见三向胶平 · 土耳其接近主力拼本届首分 · 当值 Mustapha Ghorbal（阿尔及利亚）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">⭐ 美国大幅轮换 + 雪藏黄牌在身的 Adams/Balogun/Richards/A.Robinson（ESPN+CBS+FOX+S&S 4 源）· Pulisic 或短暂登场</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2/5 · 轮换+dead rubber 打散共识 · 价值在出场名单 / 小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-japan-vs-sweden.html">
+        <div class="grp"><span>F 组 · 阿灵顿(AT&T) · 19:00 ET</span><span class="feat">★ 瑞典生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇯🇵 日本<small>4 分 · 平局即出线、争头名 · 2-2 平荷兰</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">瑞典 🇸🇪<small>3 分 · 必须取胜才出线 · Isak / Gyökeres</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:49%;background:#bc002d"></i><i style="width:26%;background:var(--draw)"></i><i style="width:25%;background:#006aa7"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">日 <b>49%</b></span><span>平 26%</span><span style="color:#7fa6e6">瑞 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 日本 1-1 瑞典</span>
+          <span class="chip">日胜 <b>1.90</b> · 平 3.55 · 瑞 4.33</span>
+          <span class="chip xg">🆕 日本平局即出线、瑞典被迫压上反喂日本擅长的低位反击（反直觉逻辑）· 当值 Ivan Barton（萨尔瓦多）</span>
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">⭐ 日本久保建英(Kubo)确认缺阵（左膝伤 · ESPN+RotoWire+OneFootball 多源）· 三笘薫整届报销</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2/5 · 温和偏日本 · 价值在让球 / 大小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-tunisia-vs-netherlands.html">
+        <div class="grp"><span>F 组 · 堪萨斯城(Arrowhead) · 19:00 ET</span><span>荷争头名 · 突已出局</span></div>
+        <div class="teams">
+          <div class="tn">🇹🇳 突尼斯<small>0 分 · 已出局、换帅 Renard 接手</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">荷兰 🇳🇱<small>4 分 · 凭进球数居首 · 有动机堆净胜球</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:4%;background:#e70013"></i><i style="width:10%;background:var(--draw)"></i><i style="width:86%;background:#ff6200"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">突 4%</span><span>平 10%</span><span style="color:#f0a878">荷 <b>86%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 突尼斯 1-3 荷兰</span>
+          <span class="chip">荷胜 <b>1.10</b> · 平 9.50 · 突 23.0</span>
+          <span class="chip xg">🆕 荷兰与日本同分同净胜、仅凭进球数居首→有真实动机堆净胜球而非躺平轮换 · 当值 Katia Itzel García（墨西哥·女）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 一边倒共识 · 价值在让球深度 / 大球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-ecuador-vs-germany.html">
+        <div class="grp"><span>E 组 · 东卢瑟福(MetLife) · 16:00 ET</span><span>德争头名 · 厄搏出线</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇨 厄瓜多尔<small>1 分（净-1）· 两轮 0 进球 · 须胜冲最佳三</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">德国 🇩🇪<small>6 分已出线 · 只为头名 · 或大幅轮换</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:23%;background:#ffce00"></i><i style="width:27%;background:var(--draw)"></i><i style="width:50%;background:#dd0000"></i></div>
+          <div class="plab"><span style="color:#f0d878">厄 23%</span><span>平 27%</span><span style="color:#f0a3a3">德 <b>50%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 厄瓜多尔 2-1 德国</span>
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">✅ 首发已官宣 · 德国零轮换最强阵（修正"轮换"预判）· 厄改 4-4-2</span>
+          <span class="chip">德胜 <b>1.90</b> · 平 3.40 · 厄 3.90</span>
+          <span class="chip xg">🆕 厄瓜多尔须胜升 4 分搏"最佳第三名"末班车 · 德国已出线只为头名（超算胜率不到 50%）· 当值 Tori Penso（美国）</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">⭐ 德国大幅轮换（Nagelsmann 确认"混合阵容"）+ Schlotterbeck 赛季报销（多源）· 破密集上限存疑</span>
+          <span class="chip" style="color:#fb923c;border-color:#6b4f1d">🔥 市场热度 2/5 · 偏德国但非深盘 · 价值在让球 / 大小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-curacao-vs-cotedivoire.html">
+        <div class="grp"><span>E 组 · 费城(Lincoln Financial) · 16:00 ET</span><span>科胜/平即出线</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇼 库拉索<small>1 分 · 须胜 + 看另一场 · 门将 Eloy Room 神勇</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">科特迪瓦 🇨🇮<small>3 分 · 胜或平即出线 · Kessié 领衔</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:7%;background:#0038a8"></i><i style="width:14%;background:var(--draw)"></i><i style="width:79%;background:#ff8200"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">库 7%</span><span>平 14%</span><span style="color:#f0a878">科 <b>79%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 库拉索 0-2 科特迪瓦</span>
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">✅ 首发已官宣 · 科特迪瓦攻击型双前锋（Pépé 进首发）· Singo 缺阵 Doué 顶替</span>
+          <span class="chip">科胜 <b>1.33</b> · 平 8.00 · 库 19.0</span>
+          <span class="chip xg">🆕 科特迪瓦掌握主动（胜/平即出线）· 库拉索背水一战靠门将 Eloy Room（对厄 15 扑救平纪录）· 当值 Glenn Nyberg（瑞典）</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 科特迪瓦右后卫 Singo 大腿伤大概率缺阵、N'Dicka 首发存疑（ESPN+Sports Mole+RotoWire 多源）</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a">🔥 市场热度 2/5 · 一边倒共识 · 价值在让球 / 大小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+    <div class="cards" style="margin-top:10px"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">后续比赛日（6/27 起 · J–L 组末轮收官，随后进入 32 强淘汰赛）</div></div><div class="sub" style="margin:6px 0 0">每日 agent 自动拉取当日全部赛程、生成 dashboard 与详情报告并补进此处。</div></div></div>
+  </div>
+
+  <!-- Day 15 = 6/26 G/H/I 组末轮 -->
+  <div class="dayblock" data-day="15">
+    <div class="sub" style="margin:0 0 12px">6/26（周五·已赛）G/H/I 组末轮（第三轮）6 场 · <b>H/I 组 4 场赛后复盘已出</b>（西1-0乌 / 佛0-0沙 / 法4-1挪 / 塞5-0伊），点卡片看赛后复盘 + 赛前分析；<b>G 组 2 场（新-比、埃-伊）深夜进行中、复盘下次补</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-norway-vs-france.html">
+        <div class="grp"><span>I 组 · 福克斯堡(Gillette) · 15:00 ET</span><span class="feat">★ 头名直接对话</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇴 挪威<small>6 分 · 已出线 · 须取胜方夺头名</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">法国 🇫🇷<small>6 分 · 已出线 · 平局即夺头名(净胜球占优)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:21%;background:#ba0c2f"></i><i style="width:21%;background:var(--draw)"></i><i style="width:58%;background:#0055a4"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">挪 21%</span><span>平 21%</span><span style="color:#7fa6e6">法 <b>58%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 法国 4-1 挪威</span>
+          <span class="chip">法胜 <b>1.62</b> · 平 4.50 · 挪 4.50</span>
+          <span class="chip xg">🆕 两队均已出线、本场争头名(法平局即头名/挪须胜) · 双方预计大幅轮换 · 当值 Michael Oliver(英格兰)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 法国主帅 Deschamps 丧母返国、Guy Stéphan 代理；两队均宣告轮换、Haaland/Ødegaard 出场存疑(ESPN+Al Jazeera 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 共识偏法但价格不狂热 · 价值在轮换深度/大球</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣：挪威大轮换(Haaland/Ødegaard 替补·10 人换)、法国仅动 2 人(Mbappé 首发)</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-senegal-vs-iraq.html">
+        <div class="grp"><span>I 组 · 多伦多(BMO Field) · 15:00 ET</span><span class="feat">荣誉/避垫底</span></div>
+        <div class="teams">
+          <div class="tn">🇸🇳 塞内加尔<small>0 分 · 两连败 · 仅存须大胜的第三名尾部</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">伊拉克 🇮🇶<small>0 分 · 净-6 基本出局 · 荣誉战</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:71%;background:#00853f"></i><i style="width:20%;background:var(--draw)"></i><i style="width:9%;background:#ce1126"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">塞 <b>71%</b></span><span>平 20%</span><span style="color:#7fa6e6">伊 9%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 塞内加尔 5-0 伊拉克（伊开场染红）</span>
+          <span class="chip">塞胜 <b>1.27</b> · 平 4.50 · 伊 10.0</span>
+          <span class="chip xg">🆕 双双无缘前二、塞内加尔仅存须大胜的最佳第三名尾部 · 当值 Anthony Taylor(英格兰)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 塞内加尔门将 Mendy 膝伤缺阵、Mory Diaw 顶替；伊拉克队长兼射手 Aymen Hussein 伤疑(ESPN+Sports Mole 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 方向一边倒塞内加尔 · 关注度低</span>
+          <span class="chip" style="color:#4ade80;border-color:#1d4a2a;background:#0e2218;font-weight:700">✅ 首发已官宣：塞内加尔 Koulibaly(队长)+Jackson(中锋)双双替补、Mané 居中</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-capeverde-vs-saudiarabia.html">
+        <div class="grp"><span>H 组 · 休斯顿(NRG) · 20:00 ET · 与乌-西同时</span><span class="feat">★ 出线生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇻 佛得角<small>2 分 · 取胜即锁前二 · 队史首届世界杯</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">沙特阿拉伯 🇸🇦<small>1 分 · 须取胜+他场配合</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:40%;background:#003893"></i><i style="width:27%;background:var(--draw)"></i><i style="width:33%;background:#006c35"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">佛 <b>40%</b></span><span>平 27%</span><span style="color:#7fa6e6">沙 33%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 佛得角 0-0 沙特（佛得角次席晋级·史上最小国家进淘汰赛）</span>
+          <span class="chip">佛胜 <b>2.35</b> · 平 3.50 · 沙 2.90</span>
+          <span class="chip xg">🆕 佛得角胜即出线、沙特须胜；与乌拉圭-西班牙同时进行实时牵动 · 当值 François Letexier(法国)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 佛得角后卫 Sidny Lopes Cabral 累黄停赛；沙特全员健康(Sports Mole+Al Arabiya 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 近三向均势 · 价值在让球/小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-uruguay-vs-spain.html">
+        <div class="grp"><span>H 组 · 瓜达拉哈拉(Akron) · 20:00 ET · 与佛-沙同时</span><span class="feat">★ 焦点战</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇾 乌拉圭<small>2 分 · 须取胜方稳出线</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">西班牙 🇪🇸<small>4 分 · 两场零封 · 平局即夺头名</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:16%;background:#5aa8d8"></i><i style="width:22%;background:var(--draw)"></i><i style="width:62%;background:#c60b1e"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">乌 16%</span><span>平 22%</span><span style="color:#7fa6e6">西 <b>62%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 西班牙 1-0 乌拉圭（Baena 42'·全胜零封夺头名·乌出局）</span>
+          <span class="chip">西胜 <b>1.53</b> · 平 4.00 · 乌 6.00</span>
+          <span class="chip xg">🆕 西班牙平局即头名、乌拉圭须取胜；O/U 2.5 偏小、BTTS 偏 No · 当值 待核</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 西班牙 Pedri 累黄停赛；乌拉圭 Araújo + 德阿拉斯卡埃塔 双双小腿伤缺(Sports Mole+Yahoo 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 3/5 · 强共识压西班牙 · 价值在让球深度/小球</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-newzealand-vs-belgium.html">
+        <div class="grp"><span>G 组 · 温哥华(BC Place) · 23:00 ET · 与埃-伊同时</span><span class="feat">★ 豪门求生</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇿 新西兰<small>1 分 · 须取胜+他场配合</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">比利时 🇧🇪<small>2 分 · 取胜即稳进前二 · 两连平仅入1球(乌龙)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:8%;background:#888888"></i><i style="width:11%;background:var(--draw)"></i><i style="width:81%;background:#ef3340"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">新 8%</span><span>平 11%</span><span style="color:#7fa6e6">比 <b>81%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 新西兰 1-5 比利时（Trossard 梅开二度·凭净胜球夺 G 组头名晋级·新西兰垫底出局）</span>
+          <span class="chip">比胜 <b>1.20</b> · 平 9.00 · 新 13.0</span>
+          <span class="chip xg">🆕 比利时取胜即出线却两连平进攻哑火；新西兰须爆冷 · 当值 Adham Makhadmeh(约旦·队史首位)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 比利时 Ngoy 对伊朗 DOGSO 直红停赛、Theate 顶替；队长为 Tielemans；Doku 已归队(Sky+ESPN 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 4/5 · 极度一边倒压比利时 · 悬念被压缩、看让球深度</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+      <a class="mc live" href="report-egypt-vs-iran.html">
+        <div class="grp"><span>G 组 · 西雅图(Lumen) · 23:00 ET · 与新-比同时</span><span class="feat">★ 出线关键</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇬 埃及<small>4 分 · 平局即出线、胜则争头名</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">伊朗 🇮🇷<small>2 分 · 须取胜方掌握主动</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:42%;background:#ce1126"></i><i style="width:33%;background:var(--draw)"></i><i style="width:25%;background:#239f40"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">埃 <b>42%</b></span><span>平 33%</span><span style="color:#7fa6e6">伊 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 埃及 1-1 伊朗（Saber 5'/Rezaeian 14'·埃及次席晋级对阵澳大利亚·伊朗 93' 绝杀被 VAR 取消、列第三出线渺茫）</span>
+          <span class="chip">埃胜 <b>2.45</b> · 平 2.75 · 伊 3.30</span>
+          <span class="chip xg">🆕 埃及平局即出线、伊朗须取胜；O/U 2.5 重偏小球(低分闷战) · 当值 Szymon Marciniak(波兰·2022决赛主裁)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 伊朗队长 Hajisafi 累黄停赛；埃及中卫 Fathy(腿筋)+Abdelmaguid(脑震荡)双伤疑；Salah 1 球破国家队纪录(Sports Mole+ESPN 多源)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 温和偏埃及 · 价值在小球/半场平</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+    <div class="cards" style="margin-top:10px"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">后续比赛日（6/27 起 · J–L 组末轮收官，随后进入 32 强淘汰赛）</div></div><div class="sub" style="margin:6px 0 0">每日 agent 自动拉取当日全部赛程、生成 dashboard 与详情报告并补进此处。</div></div></div>
+  </div>
+
+  <!-- Day 16 = 6/27 J/K/L 组末轮收官 -->
+  <div class="dayblock" data-day="16">
+    <div class="sub" style="margin:0 0 12px">6/27（周六·已赛）J/K/L 组末轮（第三轮）收官 6 场 · <b>6 场赛后复盘均已出</b>（比分进程+核心数据对照+技战术复盘+预测对账+前瞻迁移），点卡片看赛后复盘+赛前分析 · 小组赛至此全部结束，6/28 起 32 强淘汰赛开打</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-panama-vs-england.html">
+        <div class="grp"><span>L 组 · 东卢瑟福(MetLife) · 17:00 ET · 与克-加同时</span><span class="feat">★ 英格兰收官</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇦 巴拿马<small>须爆冷方有渺茫机会</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">英格兰 🏴󠁧󠁢󠁥󠁮󠁧󠁿<small>4 分已出线 · 胜即锁头名 · 多源料轮换</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:6%;background:#da121a"></i><i style="width:12%;background:var(--draw)"></i><i style="width:82%;background:#00247d"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">巴 6%</span><span>平 12%</span><span style="color:#7fa6e6">英 <b>82%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 巴拿马 0-2 英格兰（Bellingham 62'、Kane 67'·英格兰夺 L 组头名、Kane 成队史世界杯射手王 11 球；R32 对刚果(金)）</span>
+          <span class="chip">英胜 <b>1.15</b> · 让球 -2.5 维持 · 巴/平长赔</span>
+          <span class="chip xg">🆕 英格兰已出线、胜即锁头名(平局须看加纳结果)·本届单场最大热门 · 当值 Abdulrahman Al-Jassim(卡塔尔)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 英格兰 Reece James 腘绳肌伤缺(ESPN+Goal+Yahoo 3 源)、料大幅轮换；巴拿马 Carrasquilla 缺阵 + Godoy 几无出场</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 一边倒压英格兰 · 价值在让球深度/轮换名单</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-croatia-vs-ghana.html">
+        <div class="grp"><span>L 组 · 费城(Lincoln Financial) · 17:00 ET · 与巴-英同时</span><span class="feat">★ 出线生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇭🇷 克罗地亚<small>3 分 · 须取胜保出线 · Modrić 老将领衔</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">加纳 🇬🇭<small>4 分 · 平局即晋级 · 两场零封(含封锁英格兰)</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:56%;background:#c8102e"></i><i style="width:26%;background:var(--draw)"></i><i style="width:18%;background:#006b3f"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">克 <b>56%</b></span><span>平 26%</span><span style="color:#7fd6a0">加 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 克罗地亚 2-1 加纳（Sučić、Vlašić 83'·Modrić 助攻创最年长助攻纪录；克次席晋级对葡萄牙、加纳列最佳第三晋级对哥伦比亚）</span>
+          <span class="chip">克胜 <b>2.00–2.10</b> · 让 -0.75 · 平 ~3.4</span>
+          <span class="chip xg">🆕 克罗地亚须取胜保出线 / 加纳平局即晋级；Opta 超算 56/26/18 · Under 2.5 强共识 · 当值 Drew Fischer(加拿大·首执世界杯·3.34 黄/场)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 加纳头号攻击手 Kudus 整届伤缺(多源确认)；克罗地亚靠 Modrić/Kovačić 中场创造力突围</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 偏克罗地亚但价格谨慎 · 价值在小球/加纳平局动机</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-colombia-vs-portugal.html">
+        <div class="grp"><span>K 组 · 迈阿密(Hard Rock) · 19:30 ET · 与刚-乌同时</span><span class="feat">★ 头名直接对话</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇴 哥伦比亚<small>平局即头名 · James/L.Díaz</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">葡萄牙 🇵🇹<small>须取胜方夺头名 · Ronaldo/B.Fernandes</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:24%;background:#fcd116"></i><i style="width:25%;background:var(--draw)"></i><i style="width:52%;background:#006600"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">哥 24%</span><span>平 25%</span><span style="color:#7fd6a0">葡 <b>52%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 哥伦比亚 0-0 葡萄牙（哥 24 射/7 正夺 K 组头名、队史首场世界杯 0-0；葡次席、Sánchez 绝杀因毫厘越位被吹；哥对加纳、葡对克罗地亚）</span>
+          <span class="chip">葡胜 <b>~2.06</b>(初盘 +120→-115) · 让 -0.5</span>
+          <span class="chip xg">🆕 葡萄牙须取胜夺头名 / 哥伦比亚平局即头名 · Opta 超算 葡 51.6% · 当值 Alireza Faghani(伊朗·≈3.6 黄/场)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 哥伦比亚 Durán 纪律/累黄缺阵、Suárez 肩伤疑、Luis Díaz 体能待核；葡萄牙 Ronaldo 是否首发待核</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 3/5 · 盘口明显向葡萄牙重定价 · 价值在让球/哥平局动机</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-drcongo-vs-uzbekistan.html">
+        <div class="grp"><span>K 组 · 亚特兰大(Mercedes-Benz) · 19:30 ET · 与哥-葡同时</span><span>出线尾部</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇩 刚果(金)<small>须取胜争最佳第三名 · Wissa/Bakambu</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">乌兹别克斯坦 🇺🇿<small>须大胜+他组配合 · 平局双出局</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:43%;background:#007fff"></i><i style="width:28%;background:var(--draw)"></i><i style="width:29%;background:#1eb53a"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">刚 <b>43%</b></span><span>平 28%</span><span style="color:#7fd6a0">乌 29%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 刚果(金) 3-1 乌兹别克斯坦（Shomurodov 10' 先进；Wissa 68' 点球+90+' 双响、Mayele 78'·刚果队史首进淘汰赛、列最佳第三对英格兰；乌出局）</span>
+          <span class="chip">刚胜 <b>2.20</b> · 平 3.00 · 乌 3.30</span>
+          <span class="chip xg">🆕 刚果(金)须取胜争最佳第三名、乌须大胜+他组配合、平局双出局 · 当值 Felix Zwayer(德国·≈4.6 黄/场)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 变量是刚果主帅 Desabre 能否弃五后卫改四后卫释放 Wissa+Bakambu 前场；乌 Shomurodov/Fayzullaev</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 1/5 · 局外人之战 · 关注度低</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-jordan-vs-argentina.html">
+        <div class="grp"><span>J 组 · 达拉斯(AT&T) · 22:00 ET · 与阿-奥同时</span><span>卫冕冠军收官</span></div>
+        <div class="teams">
+          <div class="tn">🇯🇴 约旦<small>0 分已出局 · 荣誉战 · 首届世界杯</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">阿根廷 🇦🇷<small>已锁头名 · dead rubber · 料轮换</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:5%;background:#007a3d"></i><i style="width:11%;background:var(--draw)"></i><i style="width:84%;background:#75aadb"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">约 5%</span><span>平 11%</span><span style="color:#7fa6e6">阿 <b>84%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 约旦 1-3 阿根廷（半场 0-2 · Messi 替补登场破门、连续 7 届世界杯均有进球创纪录；阿根廷三战全胜锁 J 组头名）</span>
+          <span class="chip">阿胜 <b>1.15</b> · 让球 -1.5 主流盘</span>
+          <span class="chip xg">🆕 阿根廷已锁头名、约旦已出局→排名/练兵局；盘口最极端场次之一 · 当值 István Kovács(罗马尼亚)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 阿根廷 Romero 右膝伤退、大概率缺阵→Otamendi 顶替(ESPN+World Soccer Talk 等 5 源·尚无官方排除)；Messi/Lautaro/Álvarez</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 1/5 · 极一边倒 · 看让球 -1.5 是否覆盖/轮换名单</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-algeria-vs-austria.html">
+        <div class="grp"><span>J 组 · 堪萨斯城(Arrowhead) · 22:00 ET · 与约-阿同时</span><span class="feat">★ 次席生死战</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇿 阿尔及利亚<small>3 分(净-2) · 须取胜翻盘 · Mahrez</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">奥地利 🇦🇹<small>3 分(净0) · 平局即次席晋级 · Arnautović</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:27%;background:#006233"></i><i style="width:30%;background:var(--draw)"></i><i style="width:43%;background:#ed2939"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">阿 27%</span><span>平 30%</span><span style="color:#7fa6e6">奥 <b>43%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#06210f;background:#22c55e;border-color:#22c55e;font-weight:800">🏁 终场 阿尔及利亚 3-3 奥地利（半场 1-1 · 读秒 6 球大战 · 双双晋级：奥地利夺次席、阿尔及利亚列最佳第三）</span>
+          <span class="chip">奥胜 <b>2.90</b> · 平 2.20 · 阿 4.00（偏小球）</span>
+          <span class="chip xg">🆕 奥地利平局即保次席 / 阿尔及利亚须取胜翻盘 · 当值 Ilgiz Tantashev(乌兹别克斯坦)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 阿尔及利亚 Amoura 腿筋伤缺(多源)；奥地利 Arnautović 首发存疑；"逆向吉荣"避签动机疑云(两主帅均否认)·待核</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 有价格发现 · 关注次席签运</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 赛前分析 →</div>
+      </a>
+
+    </div>
+    <div class="cards" style="margin-top:10px"><div class="mc soon"><div class="teams"><div class="tn" style="font-size:15px">✅ 小组赛收官 · 32 强对阵已揭晓</div></div><div class="sub" style="margin:6px 0 0">6/28（周日）起 32 强淘汰赛开打。点上方「6/28 今天」「6/29 周一」标签页查看每场赛前深度分析。</div></div></div>
+  </div>
+
+  <div class="dayblock" data-day="17">
+    <div class="sub" style="margin:0 0 12px">6/28（周日·已赛）· 32 强淘汰赛开打 · <b>本日唯一一场</b> · 胜者晋级 16 强 · <b style="color:#86efac">🏁 加拿大 1-0 南非（Eustáquio 92′绝杀，加拿大队史首胜淘汰赛、晋级 16 强）</b></div>
+    <div class="cards">
+
+      <a class="mc live" href="report-southafrica-vs-canada.html">
+        <div class="grp"><span>32 强 · 洛杉矶 Inglewood · SoFi Stadium · 15:00 ET / 12:00 PT</span><span class="feat">★ 本日唯一淘汰赛</span></div>
+        <div class="teams">
+          <div class="tn">🇿🇦 南非<small>队史首次世界杯淘汰赛 · 须防反夺机会</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">加拿大 🇨🇦<small>Davies 伤愈复出 · 东道主之一 · 实力占优</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:17%;background:#007749"></i><i style="width:27%;background:var(--draw)"></i><i style="width:56%;background:#ff0000"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">南非 17%</span><span>平 27%</span><span style="color:#f0a3a3">加 <b>56%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 加拿大 1-0 南非（预测加胜 56% ✓ 兑现）· 📊 复盘已出</span>
+          <span class="chip">加胜 <b>1.71</b> · 平 3.50 · 南非 5.50</span>
+          <span class="chip xg">🆕 Eustáquio 92′绝杀 · 加拿大晋级 16 强(7/4 休斯顿对摩洛哥) · 当值 João Pinheiro(葡萄牙)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ Davies 替补登场仍待复盘 · 南非高强度逼抢压制东道主、终场前一刻被绝杀</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="dayblock" data-day="18">
+    <div class="sub" style="margin:0 0 12px">6/29（周一·已赛）· 32 强淘汰赛 3 场 · <b style="color:#86efac">🏁 巴西 2-1 日本</b> / <b style="color:#fca5a5">德国 1-1 巴拉圭（点球 4-3，巴拉圭爆冷晋级）</b> / <b style="color:#fca5a5">荷兰 1-1 摩洛哥（点球 3-2，摩洛哥晋级）</b> · 三场赛后复盘已出</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-brazil-vs-japan.html">
+        <div class="grp"><span>32 强 · 休斯顿 NRG Stadium · 13:00 ET</span><span class="feat">★ 巴西大热门</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇷 巴西<small>晋级超算 62% · 求复仇 2025 热身 3-2 落败</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">日本 🇯🇵<small>森保一 3-4-2-1 · 求复刻热身赛逆转</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:55%;background:#fedf00"></i><i style="width:27%;background:var(--draw)"></i><i style="width:18%;background:#bc002d"></i></div>
+          <div class="plab"><span style="color:#e6d97f">巴 <b>55%</b></span><span>平 27%</span><span style="color:#f0a3a3">日 18%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 巴西 2-1 日本（预测巴胜 55% ✓ 兑现）· 📊 复盘已出</span>
+          <span class="chip">巴胜 <b>1.72</b> · 平 3.60 · 日 5.25</span>
+          <span class="chip xg">🆕 日本 Sano 29′先进，Casemiro 56′扳平，Martinelli 90+6′读秒绝杀；巴西晋级 16 强(7/5 对科特迪瓦/挪威胜者) · 当值 Maurizio Mariani(意大利)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 巴西全场 xG 1.72-0.23 碾压、但终结低效险被反击偷走；日本反击与定位球差一步</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-germany-vs-paraguay.html">
+        <div class="grp"><span>32 强 · 波士顿 Foxborough · Gillette Stadium · 16:30 ET</span><span class="feat">★ 德国头名</span></div>
+        <div class="teams">
+          <div class="tn">🇩🇪 德国<small>E 组头名 · Nagelsmann · Schlotterbeck 重伤缺阵</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">巴拉圭 🇵🇾<small>最佳第三 · Alfaro · 10 人逆境淘汰土耳其</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:68%;background:#111;border:1px solid #555"></i><i style="width:22%;background:var(--draw)"></i><i style="width:10%;background:#d52b1e"></i></div>
+          <div class="plab"><span style="color:#ddd">德 <b>68%</b></span><span>平 22%</span><span style="color:#f0a3a3">巴拉圭 10%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">🏁 终场 德国 1-1 巴拉圭（点球 4-3）· ✗ 偏差：预测德胜 68% 未兑现、爆冷出局 · 📊 复盘已出</span>
+          <span class="chip">德胜 <b>1.36</b> · 平 5.00 · 巴拉圭 9.00</span>
+          <span class="chip xg">🆕 Enciso 42′、Havertz 54′扳平；点球大战巴拉圭 4-3 (Canale 决胜) · 德国队史首次世界杯点球出局 · 当值 Jalal Jayed(摩洛哥)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 德国控球 76% 却 xG 仅 0.72，密集防守 + 点球玄学搏冷成功；巴拉圭晋级 16 强(7/4 费城对法国/瑞典胜者)</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-netherlands-vs-morocco.html">
+        <div class="grp"><span>32 强 · 蒙特雷/瓜达卢佩 · Estadio BBVA · 21:00 ET</span><span class="feat">★「内战」叙事</span></div>
+        <div class="teams">
+          <div class="tn">🇳🇱 荷兰<small>Koeman · Dumfries/Brobbey 带伤过测可战</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">摩洛哥 🇲🇦<small>Ouahbi · 三名主力荷兰出生 · Aguerd 报销</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:47%;background:#21468b"></i><i style="width:28%;background:var(--draw)"></i><i style="width:25%;background:#c1272d"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">荷 <b>47%</b></span><span>平 28%</span><span style="color:#f0a3a3">摩 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">🏁 终场 荷兰 1-1 摩洛哥（点球 3-2）· ✗ 偏差：预测荷胜 47% 未兑现、摩洛哥晋级 · 📊 复盘已出</span>
+          <span class="chip">荷胜 <b>1.91</b> · 平 3.30 · 摩 3.60</span>
+          <span class="chip xg">🆕 Gakpo 72′先进，Diop 90+1′绝平；点球大战摩洛哥 3-2 (Bounou 扑 Summerville、Saibari 决胜) · 当值 Wilton Sampaio(巴西·严哨)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 摩洛哥 xG 1.40-0.23 反客为主、密集防守 + 门将封神；摩洛哥晋级 16 强(7/4 休斯顿对加拿大)</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="dayblock" data-day="19">
+    <div class="sub" style="margin:0 0 12px">6/30（周二·已赛）· 32 强淘汰赛 3 场 · <b style="color:#fca5a5">🏁 科特迪瓦 1-2 挪威</b> / <b style="color:#86efac">🏁 法国 3-0 瑞典</b> / <b style="color:#86efac">🏁 墨西哥 2-0 厄瓜多尔</b> · 三场赛后复盘已出</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-cotedivoire-vs-norway.html">
+        <div class="grp"><span>32 强 · 阿灵顿 AT&amp;T Stadium · 13:00 ET</span><span class="feat">★ Haaland 看点</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇮 科特迪瓦<small>非洲劲旅 · 反击与身体对抗见长</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">挪威 🇳🇴<small>Haaland 领衔 · 进攻型踢法</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:26%;background:#f77f00"></i><i style="width:27%;background:var(--draw)"></i><i style="width:47%;background:#ba0c2f"></i></div>
+          <div class="plab"><span style="color:#f0b97f">科 26%</span><span>平 27%</span><span style="color:#f0a3a3">挪 <b>47%</b></span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#fca5a5;border-color:#6b2f2f;background:#1f1113;font-weight:700">🏁 终场 科特迪瓦 1-2 挪威（预测挪威 47% 胜率最高 ✓ 兑现）· 📊 复盘已出</span>
+          <span class="chip">挪胜 <b>2.05</b> · 平 3.50 · 科 3.65</span>
+          <span class="chip xg">🆕 Nusa 39′先进，Diallo 74′替补扳平，Haaland 86′绝杀；挪威晋级 16 强(7/5 对巴西) · 当值 Jesús Valenzuela(委内瑞拉)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 挪威 xG 2.02-1.15 效率制胜；科特迪瓦控球/角球占优却终结低效，Diallo 替补一度扳平仍告负</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-france-vs-sweden.html">
+        <div class="grp"><span>32 强 · 新泽西 MetLife Stadium · 17:00 ET</span><span class="feat">★ 法国大热门</span></div>
+        <div class="teams">
+          <div class="tn">🇫🇷 法国<small>夺冠热门 · 锋线火力充沛</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">瑞典 🇸🇪<small>反击锋线 · 搏冷需把握机会</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:74%;background:#0055a4"></i><i style="width:16%;background:var(--draw)"></i><i style="width:10%;background:#fecc00"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">法 <b>74%</b></span><span>平 16%</span><span style="color:#f0a3a3">瑞 10%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 法国 3-0 瑞典（预测法胜 74% ✓ 兑现）· 📊 复盘已出</span>
+          <span class="chip">法胜 <b>1.30</b> · 平 5.75 · 瑞 10.00</span>
+          <span class="chip xg">🆕 Mbappé 45′、Barcola 53′、Mbappé 74′；Mbappé 追平 Messi 本届 6 球榜首；法国晋级 16 强(7/4 费城对巴拉圭) · 当值 Danny Makkelie(荷兰)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 法国 xG 3.17-0.67 全面碾压，Olise 双助攻打开半空间；瑞典本届最早出局(1990年以来)</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-mexico-vs-ecuador.html">
+        <div class="grp"><span>32 强 · 墨西哥城 Estadio Azteca · 21:00 ET</span><span class="feat">★ 东道主主场</span></div>
+        <div class="teams">
+          <div class="tn">🇲🇽 墨西哥<small>东道主之一 · 阿兹特克主场之势</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">厄瓜多尔 🇪🇨<small>南美硬骨头 · 防守稳固</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:45%;background:#006847"></i><i style="width:30%;background:var(--draw)"></i><i style="width:25%;background:#ffdd00"></i></div>
+          <div class="plab"><span style="color:#7fd6a0">墨 <b>45%</b></span><span>平 30%</span><span style="color:#f0a3a3">厄 25%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 墨西哥 2-0 厄瓜多尔（预测墨西哥胜率最高 45% ✓ 兑现）· 📊 复盘已出</span>
+          <span class="chip">墨胜 <b>2.10</b> · 平 3.20 · 厄 3.70</span>
+          <span class="chip xg">🆕 Quiñones 22′、Jiménez 31′；补时 Hincapié(厄)因掩口冲突染红；墨西哥晋级 16 强(对英格兰/刚果(金)胜者) · 当值 Slavko Vinčić(斯洛文尼亚)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 墨西哥前 31 分钟建立两球优势后收缩防守，队史单届第 4 场零封；厄瓜多尔控球 57% 却难转化威胁</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="dayblock" data-day="20">
+    <div class="sub" style="margin:0 0 12px">7/1（周三·已赛）· 32 强淘汰赛 3 场 · <b>3 场赛后复盘全部出齐</b>，点卡片看赛后复盘 + 赛前对账 · 英格兰、美国、比利时晋级 16 强</div>
+    <div class="cards">
+
+      <a class="mc live" href="report-england-vs-drcongo.html">
+        <div class="grp"><span>32 强 · 亚特兰大 Mercedes-Benz Stadium · 12:00 ET</span><span class="feat">★ 英格兰大热门</span></div>
+        <div class="teams">
+          <div class="tn">🏴 英格兰<small>夺冠热门 · Kane/Bellingham 领衔</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">刚果(金) 🇨🇩<small>非洲黑马 · Wissa 锋线犀利</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:75%;background:#e5e7eb;border:1px solid #555"></i><i style="width:17%;background:var(--draw)"></i><i style="width:8%;background:#0085ca"></i></div>
+          <div class="plab"><span style="color:#ddd">英 <b>75%</b></span><span>平 17%</span><span style="color:#f0a3a3">刚 8%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 英格兰 2-1 刚果(金)（半场 0-1）· 预测英胜 75% ✓ 兑现（但 -1.5 让球未过）· 📊 复盘已出</span>
+          <span class="chip">英胜 <b>1.26</b> · 平 5.40 · 刚果(金) 14.00</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 盘口接近碾压级(英 ≈75%) · 当值 Adham Makhadmeh(约旦)</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🔁 已更新(7/1 凌晨多源二次核验)：Saka 跟腱问题已解除、对巴拿马出场 62 分钟、预计首发(Sky+TNT+FourFourTwo)；Rice 系轮休非伤停/禁赛、预计首发(Tuchel 新闻发布会+Sky)；<b>右后卫危机</b>——Reece James(腿筋)确诊缺阵，其替补 Jarell Quansah(脚踝)新增缺阵(Sky+ESPN+Sports Mole 多源)，Tuchel 拟用 Djed Spence 或 Konsa 顶替</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 刚果(金) Wissa(小组赛 4 球进 3) + Bakambu 健康、Mayele 或分薰前场；英格兰右后卫无人可用是本场最大结构性隐患</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-belgium-vs-senegal.html">
+        <div class="grp"><span>32 强 · 西雅图 Lumen Field · 16:00 ET</span><span class="feat">★ 首次交锋</span></div>
+        <div class="teams">
+          <div class="tn">🇧🇪 比利时<small>G 组头名 · De Bruyne/Doku · Tielemans 队长</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">塞内加尔 🇸🇳<small>非洲冠军底蕴 · Koulibaly 领防</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:45%;background:#ef3340"></i><i style="width:28%;background:var(--draw)"></i><i style="width:27%;background:#00853f"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">比 <b>45%</b></span><span>平 28%</span><span style="color:#7fd6a0">塞 27%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 比利时 3-2 塞内加尔（加时·常规 2-2）· 预测比胜 45% ~ 方向兑现（0-2 落后读秒逆转，"加时/低比分"预警精准）· 📊 复盘已出</span>
+          <span class="chip">比胜 <b>2.15</b> · 平 3.20 · 塞 3.70</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 晋级盘比利时 1.57、塞内加尔 2.40 · 当值 Saíd Martínez(洪都拉斯)</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🔁 已更新(7/1 凌晨多源二次核验)：Doku 呼吸道感染已愈、末轮首发新西兰，但比利时媒体 Sporza 指其"身体状态不佳、表现欠佳"、是否首发存战术争议(Sporza)；塞内加尔门将 <b>Mendy 膝伤确诊缺阵、Diaw 确认顶替</b>(华盛顿邮报+ESPN+塞内加尔 RTS 三源一致)；比利时 Debast 恢复部分训练但主帅称"仍太早"、预计缺阵(AP+Sports Mole)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 比利时锋无力隐忧(Lukaku 状态待复出) + Doku 状态存疑；塞内加尔换新门将、身体与反击犀利、≈27% 真实存在、盘口接近五五开</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+      <a class="mc live" href="report-usa-vs-bosnia.html">
+        <div class="grp"><span>32 强 · 旧金山湾区 Levi's Stadium · 20:00 ET</span><span class="feat">★ 东道主主场</span></div>
+        <div class="teams">
+          <div class="tn">🇺🇸 美国<small>东道主 · Pulisic 领衔 · 主场公众资金</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">波黑 🇧🇦<small>Džeko(40 岁队长)领衔 · 搏冷需把握</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:67%;background:#0a3161"></i><i style="width:18%;background:var(--draw)"></i><i style="width:15%;background:#002395"></i></div>
+          <div class="plab"><span style="color:#7fa6e6">美 <b>67%</b></span><span>平 18%</span><span style="color:#f0a3a3">波黑 15%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip" style="color:#86efac;border-color:#1d4a2a;background:#0e2218;font-weight:700">🏁 终场 美国 2-0 波黑（半场 1-0）· 预测美胜 67% ✓ 兑现（Balogun 破门后染红、10 人零封）· 📊 复盘已出</span>
+          <span class="chip">美胜 <b>1.45</b> · 平 4.33 · 波黑 7.50</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · Opta 超算 美 67.5%/平 18.3%/波黑 14.3% · 当值裁判待核 · O/U 2.5 偏 Over</span>
+          <span class="chip" style="color:#86efac;border-color:#1d633a;background:#0e2218;font-weight:700">🔁 已更新(7/1 凌晨多源二次核验)：Pulisic 确认健康、预计首发(Fox+ESPN+Sports Mole)；Balogun/Adams/Richards 确认回归首发——此前对土耳其轮休是主帅 Pochettino 刻意保护黄牌，<b>Adams、Richards、Robinson、Balogun 四人身背黄牌、累计再吃一张将停赛 16 强</b>(ESPN+FanSided+费城问询报三源)；波黑 Muharemović 停赛期满回归首发，Dedić 大腿伤存疑、Memić 可能替上(多源但未获波黑本地媒体独立证实)</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 4/5 · 东道主主场叙事吸引大量公众资金(约 95% 注单/资金压美国)、盘口或被推高 · 价值看让球深度/波黑 Džeko 反击 + 美国黄牌停赛风险</span>
+        </div>
+        <div class="go">📊 看赛后复盘 + 完整分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="dayblock" data-day="21">
+    <div class="sub" style="margin:0 0 12px">7/2（周四·今天）· 32 强淘汰赛 3 场 · 胜者晋级 16 强（90 分钟平局进加时/点球）· 赛前深度分析已出（含 📈 深度数据 + 盘口定位趋势 + 当值裁判画像）</div>
+    <div class="cards">
+
+      <a class="mc soon" href="report-spain-vs-austria.html">
+        <div class="grp"><span>32 强 · 洛杉矶英格尔伍德 SoFi Stadium · 15:00 ET</span><span class="feat">★ 西班牙碾压级热门</span></div>
+        <div class="teams">
+          <div class="tn">🇪🇸 西班牙<small>H 组头名满分（5 进 0 失）· 近 6 场 5 次零封</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">奥地利 🇦🇹<small>J 组次席 · 1954 年以来首入淘汰赛</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:76%;background:#c60b1e"></i><i style="width:17%;background:var(--draw)"></i><i style="width:7%;background:#ed2939"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">西 <b>76%</b></span><span>平 17%</span><span style="color:#f2a900">奥 7%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">西胜 <b>1.33</b> · 平 5.90 · 奥 13.00</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 盘口接近碾压级(西 ≈76%) · 专家看好"西班牙零封取胜/2-0" · 当值裁判待核</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 西班牙近 6 场 5 次零封、H 组满分出线；奥地利首入淘汰赛已是历史突破、防守压力山大</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+      <a class="mc soon" href="report-portugal-vs-croatia.html">
+        <div class="grp"><span>32 强 · 多伦多 BMO Field · 19:00 ET</span><span class="feat">★ C罗 vs 莫德里奇</span></div>
+        <div class="teams">
+          <div class="tn">🇵🇹 葡萄牙<small>C罗领衔 · 本届已进 2 球 · 末轮 0-0 遭刚果(金)逼平</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">克罗地亚 🇭🇷<small>莫德里奇(41岁队长) · 末轮两连胜状态回升</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:55%;background:#c8102e"></i><i style="width:30%;background:var(--draw)"></i><i style="width:19%;background:#3f75d4"></i></div>
+          <div class="plab"><span style="color:#f0707a">葡 <b>55%</b></span><span>平 30%</span><span style="color:#7fa6cf">克 19%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">葡胜 <b>1.55</b> · 平 3.35 · 克 3.20（implied 55/30/19%）</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · C罗任意时刻进球位居全场最短赔(-111) · 当值 Espen Eskås(挪威) · 公众资金约 85% 压葡萄牙</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 葡萄牙末轮 0-0 效率存疑(2 射正)；克罗地亚背靠背两胜状态回升、莫德里奇伤愈全勤，专家部分看好其 +400 的价值</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+      <a class="mc soon" href="report-switzerland-vs-algeria.html">
+        <div class="grp"><span>32 强 · 温哥华 BC Place · 23:00 ET / 20:00 PT</span><span class="feat">★ Petkovic 对决亲手带过的瑞士</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇭 瑞士<small>B 组头名(净胜球+4) · 冲击 72 年来首个 8 强</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">阿尔及利亚 🇩🇿<small>J 组最佳第三 · 末轮 3-3 奥地利暴露软肋</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:52%;background:#d52b1e"></i><i style="width:28%;background:var(--draw)"></i><i style="width:22%;background:#006233"></i></div>
+          <div class="plab"><span style="color:#f0a3a3">瑞 <b>52%</b></span><span>平 28%</span><span style="color:#7fd6a0">阿 22%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">瑞胜 <b>1.95</b> · 平 3.30（+230/235）· 阿 4.20（implied Kalshi 52/28/22%）</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 当值 Yael Falcón Pérez(阿根廷) · Petkovic(2014-21 执教瑞士)率阿尔及利亚对决母队</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 瑞士 B 组头名、7 球净胜+4；阿尔及利亚末轮 3-3 暴露防守脆弱、Amoura 伤情存疑，≈22% 仍有搏冷空间</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="how" style="border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <div class="secttitle" style="margin-bottom:8px"><span class="n">🧑‍⚖️</span><h2>裁判观察 · 执法解读（截至 6/23）</h2></div>
+    <p style="font-size:13px;color:var(--txt)">开赛阶段主裁尺度跨度极大，"谁来吹"对牌类盘口的影响被显著放大：</p>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">• <b style="color:var(--txt)">揭幕战（墨西哥 2-0 南非）</b>：Wilton Sampaio（巴西，生涯 5.08 黄/场，全球最严之一）掏 <b>3 红</b>，创世界杯揭幕战纪录——但这与他"零容忍 + VAR 撑腰"的一贯画像吻合，不算意外，信号是 FIFA 敢把严哨派上焦点场、开赛定调从严。<br>
+    • <b style="color:var(--txt)">美国 4-1 巴拉圭</b>：Danny Makkelie（荷兰）用 VAR 撤销对 Ream 的错误黄牌、改判 Almirón 假摔——示范级纠错，"假摔必罚"立此存照。<br>
+    • <b style="color:var(--txt)">加拿大 1-1 波黑</b>：Facundo Tello（阿根廷）全场仅 <b>1 黄</b>、放任身体对抗，与 Sampaio 形成两极。<br>
+    • <b style="color:var(--txt)">韩国 2-1 捷克</b>：埃及 Amin Mohamed 首执世界杯，控场平稳。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/13 复盘</b>：Vinčić（巴-摩）焦点战吹得克制、无点球；Said Martínez（卡-瑞，首执世界杯）判给瑞士点球、控场平稳，无哨样本的不确定性未爆发；海-苏、澳-土均对抗可控、无判点争议——开赛阶段除揭幕战 Sampaio 3 红外，整体尺度趋于正常。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/14 复盘</b>：E/F 组首轮 4 场牌量整体可控、无红牌；摩洛哥裁判 Jalal Jiyed（德-库）成为 2002 年以来首位执法世界杯的摩洛哥主裁。19 球的火力爆发主要源于实力差与终结效率，而非判罚尺度变化。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/15 复盘</b>：G/H 组四场<b>全部平局</b>（西0-0佛、比1-1埃、沙1-1乌、伊2-2新）。判罚整体可控、无重大点球/红牌争议；佛得角对西班牙全场<b>仅 1 次犯规</b>（1966 年以来世界杯单场最少），几乎不送定位球——纪律性而非裁判尺度成为故事主角。各场判罚细节见对应详情页【赛后复盘】。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/19 复盘（C/D 组次轮）</b>：本轮一大焦点是 <b>土耳其 0-1 巴拉圭</b>——Almirón 上半场补时因新规（遮挡口部冲突）领红，巴拉圭半场起 10 人死守逆袭，土耳其 81% 控球/32 射仍 0 球出局；苏-摩、美-澳、巴-海整体牌量可控，无重大点球争议。判罚未改变剧本，实力与终结效率仍是主线。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/20 复盘（E/F 组次轮，3 场已完）</b>：荷 5-1 瑞、德 2-1 科、厄 0-0 库三场均无红牌、判罚未改变剧本——德-科虽剧情跌宕（科特迪瓦先进球、德国读秒绝杀）但争议有限；厄-库 0-0 的主角是库拉索门将 Eloy Room 的 15 扑救（追平世界杯纪录）而非裁判。突-日深夜场进行中，复盘次日补。整体尺度延续"对抗可控、新规从严"的基调。</p>
+    <p style="font-size:13px;color:#cbd5e1;margin-top:6px">• <b style="color:var(--txt)">6/21 复盘（G/H 组次轮，4 场已完）</b>：西4-0沙、比0-0伊、乌2-2佛、埃3-1新。最大牌点是比-伊一役比利时 Ngoy 染红、伊朗门将 Beiranvand 7 扑救封堵造平局；其余三场判罚整体可控、无重大点球/红牌争议，实力差与终结效率（西班牙上半场轰 3 球、佛得角连续两场偷分）仍是主线。各场判罚细节见对应详情页【赛后复盘】。</p>
+    <p style="font-size:13px;color:#bfe0f7;margin-top:8px">📌 <b>6/22（已赛）I/J 组次轮裁判</b>：阿根廷-奥地利 = Amin Mohamed Omar（埃及）；法-伊拉克 = Drew Fischer（加拿大）；挪-塞 = Wilton Sampaio（巴西·严哨）；约-阿尔及利亚 = Omar Al Ali（阿联酋）。各场画像见详情页【当值裁判】模块。<br>
+    📌 <b>今日（6/23）K/L 组次轮裁判</b>：葡-乌兹 = Jalal Jayed（摩洛哥）；英-加 = Saíd Martínez（洪都拉斯，首位执法世界杯的洪都拉斯主裁）；巴-克 = Pierre Atcho（加蓬）；哥-刚果(金) = Maurizio Mariani（意大利）。各场画像见详情页【当值裁判】模块。<br>
+    📌 <b>明日（6/24）A/B 组末轮裁判</b>：瑞士-加拿大 = Ramon Abatti（巴西）；波黑-卡塔尔 = 待官方确认；南非-韩国 = Facundo Tello（阿根廷·样本两极：2022 超级杯 10 红 vs 本届加-波仅 1 黄）；捷克-墨西哥 = Yael Falcón Pérez（阿根廷）。各场画像见详情页【当值裁判】模块。<br>
+    📌 <b>后日（6/25）D/E/F 组末轮裁判</b>：巴拉圭-澳大利亚 = Clément Turpin（法国·名哨，生涯≈3.36 黄/场）；土耳其-美国 = Mustapha Ghorbal（阿尔及利亚·≈3.87 黄/场）；日本-瑞典 = Ivan Barton（萨尔瓦多）；突尼斯-荷兰 = Katia Itzel García（墨西哥·女性国际级）；厄瓜多尔-德国 = Tori Penso（美国·2023 女足世界杯决赛主裁）；库拉索-科特迪瓦 = Glenn Nyberg（瑞典）。各场画像见详情页【当值裁判】模块。<br>
+    📌 <b>历史委任存档（6/21）</b>：西-沙 = Raphael Claus（巴西，2024 美洲杯决赛主裁）；比-伊 = Dario Herrera（阿根廷）；乌-佛 = Espen Eskas（挪威）；新-埃 = Omar Al Ali（阿联酋）。<br>
+    📌 <b>历史委任存档</b>：西-佛 = Adham Makhadmeh（约旦）；比-埃 = Ramon Abatti（巴西）；I/J 组首轮 = Faghani（澳·法-塞）/ Atcho（加蓬·伊-挪）/ Marciniak（波兰·阿-阿，2022 决赛主裁）/ Beida（毛里塔尼亚·奥-约）；沙-乌、伊-新见各场详情页。<span style="color:var(--mut)">VAR 对发牌/身份错误介入果断。仅供分析参考，非投注建议。</span></p>
+  </div>
+
+
+  <div class="dayblock" data-day="22">
+    <div class="sub" style="margin:0 0 12px">7/3（周五）· 32 强淘汰赛 3 场 · 胜者晋级 16 强（90 分钟平局进加时/点球）· 赛前深度分析已出（含 📈 深度数据 + 盘口定位趋势 + 当值裁判画像）</div>
+    <div class="cards">
+
+      <a class="mc soon" href="report-australia-vs-egypt.html">
+        <div class="grp"><span>32 强 · 阿灵顿 AT&amp;T Stadium · 14:00 ET</span><span class="feat">★ 埃及 Salah 存疑</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇺 澳大利亚<small>AFC · 稳健防反 · 求首进 16 强</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">埃及 🇪🇬<small>Salah 领衔 · 腿筋伤存疑</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:29%;background:#febe10"></i><i style="width:33%;background:var(--draw)"></i><i style="width:38%;background:#ce1126"></i></div>
+          <div class="plab"><span style="color:#e6cf7f">澳 <b>29%</b></span><span>平 33%</span><span style="color:#f0a3a3">埃 38%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">澳 <b>3.30</b> · 平 2.95 · 埃 2.50</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 晋级盘 埃及 ≈1.80 / 澳大利亚 ≈2.05 · 当值 Gustavo Tejera(乌拉圭)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 埃及队长 Salah 对伊朗腿筋拉伤下场、经确认腿筋伤，本周部分参训、能否首发存疑——本场最大变量（多源核验）</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 3/5 · 盘口接近五五、平局隐含高(33%)；Salah 出战与否直接左右盘口方向</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+      <a class="mc soon" href="report-argentina-vs-capeverde.html">
+        <div class="grp"><span>32 强 · 迈阿密 Hard Rock Stadium · 18:00 ET</span><span class="feat">★ 阿根廷碾压级</span></div>
+        <div class="teams">
+          <div class="tn">🇦🇷 阿根廷<small>卫冕冠军 · Messi 本届 6 球领跑射手榜</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">佛得角 🇨🇻<small>世界杯处子秀 · 小组不败(3 平)晋级</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:84%;background:#75aadb"></i><i style="width:11%;background:var(--draw)"></i><i style="width:5%;background:#0d5c3f"></i></div>
+          <div class="plab"><span style="color:#a9cdf0">阿 <b>84%</b></span><span>平 11%</span><span style="color:#7fd6a0">佛 5%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">阿 <b>1.15</b> · 平 8.50 · 佛得角 20.00</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 晋级盘 阿根廷 ≈1.17（碾压级）· 当值裁判待定(FIFA 尚未公布，赛前 24-48h 委任)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ Messi 末轮轮休后本场复出首发、本届 6 球刷新男子世界杯纪录；Romero 膝伤已康复预计回归首发（J.Álvarez 让出首发）（多源核验）</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 悬念极低、极端实力差；热度来自 Messi 个人数据盘与佛得角"续写冷门"情绪盘</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+      <a class="mc soon" href="report-colombia-vs-ghana.html">
+        <div class="grp"><span>32 强 · 堪萨斯城 Arrowhead Stadium · 21:30 ET</span><span class="feat">★ 哥伦比亚占优</span></div>
+        <div class="teams">
+          <div class="tn">🇨🇴 哥伦比亚<small>南美劲旅 · James/L.Díaz 领衔</small></div>
+          <div class="vs">VS</div>
+          <div class="tn r">加纳 🇬🇭<small>非洲之星 · Kudus 整届报销</small></div>
+        </div>
+        <div class="prob">
+          <div class="pbar"><i style="width:63%;background:#fcd116"></i><i style="width:25%;background:var(--draw)"></i><i style="width:12%;background:#006b3f"></i></div>
+          <div class="plab"><span style="color:#e6cf7f">哥 <b>63%</b></span><span>平 25%</span><span style="color:#7fd6a0">加 12%</span></div>
+        </div>
+        <div class="chips">
+          <span class="chip">哥 <b>1.51</b> · 平 3.80 · 加纳 7.50</span>
+          <span class="chip xg">🆕 胜者晋级 16 强 · 晋级盘 哥伦比亚 ≈1.18 / 加纳 ≈4.70 · 当值 Clément Turpin(法国)</span>
+          <span class="chip" style="color:#fbbf24;border-color:#6b4f1d">⭐ 加纳 Kudus 大腿伤整届报销、创造力受创（上一场带入）；哥伦比亚 Jhon Durán 纪律原因整届出局、Suárez 顶位首发（多源核验）</span>
+          <span class="chip" style="color:#f87171;border-color:#6b2f2f">🔥 市场热度 2/5 · 哥伦比亚明确占优 + 低事件/小球对阵，无巨星个人盘引流</span>
+        </div>
+        <div class="go">📊 看赛前深度分析 →</div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="how">
+    <p>⚙ <b>每天自动更新</b>：定时任务每天抓取当日+次日全部比赛与关键新闻，更新各场胜率/预期进球等 dashboard 指标，把<b>关键临场新闻</b>写进每场详情页核心模块，并采集<b>🔥投注市场热度</b>（名人/专家推荐方向、赔率变动、预测市场资金面、舆论声量 → 合成 1-5 过热指数），最后自动部署上线。</p>
+  </div>
+
+  <div class="foot">2026 世界杯赛事分析中心 · 胜率为赔率隐含概率(去水)，部分对阵为模型近似 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const DAYS=[{m:'6/11',d:'周四·已赛'},{m:'6/12',d:'周五·已赛'},{m:'6/13',d:'周六·已赛'},{m:'6/14',d:'周日·已赛'},{m:'6/15',d:'周一·已赛'},{m:'6/16',d:'周二·已赛'},{m:'6/17',d:'周三·已赛'},{m:'6/18',d:'周四·已赛'},{m:'6/19',d:'周五·已赛'},{m:'6/20',d:'周六·已赛'},{m:'6/21',d:'周日·已赛'},{m:'6/22',d:'周一·已赛'},{m:'6/23',d:'周二·已赛'},{m:'6/24',d:'周三·已赛'},{m:'6/25',d:'周四·已赛'},{m:'6/26',d:'周五·已赛'},{m:'6/27',d:'周六·已赛'},{m:'6/28',d:'周日·已赛'},{m:'6/29',d:'周一·已赛'},{m:'6/30',d:'周二·已赛'},{m:'7/1',d:'周三·已赛'},{m:'7/2',d:'周四·今天'},{m:'7/3',d:'周五'}];
+const md=v=>{const[a,b]=v.replace('+','').split('/').map(Number);return a*100+b};
+const _t=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'numeric',day:'numeric'}).format(new Date());
+let ACTIVE=DAYS.findIndex(x=>x.m.replace('+','')===_t);
+if(ACTIVE<0)ACTIVE=md(_t)>md(DAYS[DAYS.length-1].m)?DAYS.length-1:0;
+const nav=document.getElementById('days');
+DAYS.forEach((x,i)=>{const el=document.createElement('div');el.className='daytab'+(i===ACTIVE?' active':'');
+ el.innerHTML=`<div class="m">${x.m}</div><div class="d">${x.d}</div>`;
+ el.onclick=()=>{document.querySelectorAll('.daytab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.dayblock').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');document.querySelector(`.dayblock[data-day="${i}"]`).classList.add('active');};
+ nav.appendChild(el);});
+document.querySelectorAll('.dayblock').forEach(b=>b.classList.toggle('active',b.dataset.day==String(ACTIVE)));
+</script>
+</body>
+</html>

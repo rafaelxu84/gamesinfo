@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 荷兰 vs 瑞典 · 2026世界杯 F组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-netherlands-vs-sweden.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#f36c21;--sc:#1f6fc4;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b5500f,#16467e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#2a1709,#10243e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f5944f;font-weight:600}td.sc{color:#5aa0e0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · F组次轮 · 头名瑞典 vs 受挫荷兰的"组首争夺战"</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 已完赛 · 荷兰 5-1 瑞典</span>
+  <h1>荷兰 vs 瑞典</h1>
+  <div class="meta">2026年6月20日 · 休斯顿 NRG 体育场（顶棚封闭·室内）· 13:00 ET · F组（同组：日本、突尼斯）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f5944f">🇳🇱 荷兰</div><div class="rk">Koeman 执教 · 首轮 2-2 平日本（两度领先被追平）· 近5场零封挂零 · 终结与防线管理是软肋</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa0e0">🇸🇪 瑞典</div><div class="rk">Potter 执教 · 首轮 5-1 大胜突尼斯（登顶F组）· Isak+Gyökeres 双星 + Ayari 远射梅开二度</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-21） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 荷兰 5-1 瑞典（半场 2-0）· 06-20</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">荷兰交出本届迄今最具统治力的表演之一。<b>Brobbey</b> 第 5 分钟近距离捅射闪击、第 17 分钟接右路传中再下一城，半场已 2-0；下半场 <b>Gakpo</b> 第 47、54 分钟两度抢点扫射梅开二度，将比分拉到 4-0。瑞典第 59 分钟由 <b>Elanga</b>（Isak 直塞）扳回一城，但替补登场的 <b>Summerville</b> 第 89 分钟锦上添花，荷兰 5-1 大胜登顶 F 组。<b>Gakpo 凭此役追平范佩西，成为荷兰世界杯小组赛进球最多的球员（5 球）。</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 5' Brobbey · 17' Brobbey · 47' Gakpo · 54' Gakpo · 59' Elanga(瑞) · 89' Summerville</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta）</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇱 荷兰</th><th>🇸🇪 瑞典</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>48%</b></td><td>43%</td><td>荷兰并不靠控球碾压，而是高效——少控球、高质量</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>2.47</b></td><td>0.99</td><td>5 球 vs 2.47 xG：终结效率爆表，与首轮"2-2 终结低效"判若两队</td></tr>
+      <tr><td class="ht">射门（含射正）</td><td>10</td><td><b>16</b></td><td>瑞典射门更多却只换来 0.99 xG + 1 球——大量低质远射，进攻无质量</td></tr>
+      <tr><td class="ht">效率对比</td><td colspan="2">荷兰 10 射 5 球 vs 瑞典 16 射 1 球</td><td>转化率天壤之别：荷兰把握住每一次禁区机会，瑞典浪费场面优势</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/netherlands-vs-sweden-stats-world-cup-2026">Opta Analyst — Netherlands 5-1 Sweden Stats</a> · <a href="https://www.skysports.com/football/netherlands-vs-sweden/report/549800">Sky Sports 战报</a> · <a href="https://www.espn.com/soccer/story/_/id/49126635/netherlands-sweden-live-world-cup-2026-latest-updates-commentary-score-result">ESPN 实时战报</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">荷兰的"终结荒"是伪命题——把中锋摆对就解决了</div>首轮 2-2 被诟病终结低效，本场 Brobbey 首发即梅开二度。<b>说明荷兰从不缺机会，缺的是一个稳定的禁区终结点</b>；Brobbey 的支点+抢点解决了首轮"有 xG 无进球"的问题，这是 Koeman 用人调整的直接回报。</div>
+    <div class="insight"><div class="who">Gakpo 是这套荷兰的真正进攻引擎</div>下半场 7 分钟梅开二度、追平范佩西的纪录，Gakpo 的内切抢点与跑位是荷兰打穿瑞典的关键。<b>说明荷兰的进攻火力集中在左路 Gakpo 一侧</b>——对手若能限制他，荷兰威胁会骤降，这是其结构性依赖。</div>
+    <div class="insight"><div class="who">瑞典"多射门"是数据幻觉，进攻缺乏穿透</div>16 射仅 0.99 xG，说明瑞典的射门多为外围低质尝试，Isak+Gyökeres 的双星组合未能转化为高质量机会。<b>说明 Potter 的瑞典在面对组织化防线时缺少打穿手段</b>，首轮 5-1 大胜突尼斯的火力有"对手太弱"的水分。</div>
+    <div class="insight"><div class="who">荷兰防线管理本场不再"被追平"</div>首轮两度领先被日本追平的问题，本场没有重演——4-0 领先后才丢一球，且立即由替补回应。<b>说明荷兰在"大比分领先"下的专注度本场过关</b>，但真正的考验是面对强敌的"小分领先保级"，本场样本说服力有限。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">荷兰胜（共识 ≈56%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>方向正确，但 5-1 的净胜幅度远超共识——荷胜赔 1.67 的"势均力敌"定价被打脸</td></tr>
+      <tr><td class="ht">荷兰"终结低效、5 场不零封"上一场带入</td><td style="color:var(--bad)"><b>✗ 反转</b></td><td>本场荷兰终结效率爆表（5 球/2.47 xG）——证明终结荒是阵容选择问题，换帅式用人即解决</td></tr>
+      <tr><td class="ht">瑞典"5-1 多点开花、防线未受考验"上一场带入</td><td style="color:var(--warn)"><b>~ 修正</b></td><td>本场瑞典防线被打穿 5 球，首轮的火力确含"突尼斯太弱"的水分，攻强守弱被验证</td></tr>
+      <tr><td class="ht">市场过热 3/5（利物浦内战话题）</td><td style="color:var(--good)"><b>✓ 合理</b></td><td>盘口冷静的判读成立，结果一边倒，情绪溢价有限</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f5944f">🇳🇱 荷兰 · 下一场 vs F组第三轮对手（6/25 左右）</h4>
+        <ul class="watch">
+          <li><b>Brobbey 首发解决终结问题</b>：支点中锋的回归是荷兰末轮可复制的得分模板，进攻信心拉满。</li>
+          <li><b>左路 Gakpo 依赖</b>：火力高度集中在 Gakpo 一侧，对手若重点封锁左路，荷兰需要右路与中路提供第二进攻点。</li>
+          <li><b>已占小组主动</b>：登顶 F 组后末轮可控制节奏，但"小分领先守成"的能力仍未被真正检验。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa0e0">🇸🇪 瑞典 · 下一场 vs F组第三轮对手（6/25 左右）</h4>
+        <ul class="watch">
+          <li><b>攻强守弱已暴露</b>：16 射只 0.99 xG，外围远射打不穿组织防线——末轮需要更直接的禁区渗透。</li>
+          <li><b>防线被打穿 5 球</b>：Potter 须重整后防结构，尤其防右路传中与禁区抢点（Brobbey 两球的来源）。</li>
+          <li><b>Isak+Gyökeres 未联动</b>：双星本场仅 Isak 助攻 1 球，如何让两人形成合力是末轮出线的关键。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>身价占优的荷兰 vs 气势正盛的瑞典的"组首争夺战"</b>。瑞典首轮 <b>5-1 血洗突尼斯</b>登顶 F 组（Isak + Gyökeres 双前锋 + Ayari 两记远射世界波 + Svanberg 替补 18 秒闪击），3 分手握两分领先；荷兰则<b>仅 2-2 平日本</b>，两度领先被追平、近 5 场零封挂零，终结与领先后管理双双暴露。但盘口与超算仍明确偏向荷兰——荷兰胜赔 <b>1.67</b>（美式 -150，去水隐含 ≈56%）、平 3.90（≈24%）、瑞典 5.00（≈19%）；<b>Opta 超算 25,000 次模拟给荷兰 55.9% 胜率</b>、平 23.3%、瑞典 20.8%。荷兰的纸面深度（De Jong、Gravenberch、Reijnders、Gakpo 全是欧洲顶级攻击群）与 Opta Power Rating（荷兰 88.7 vs 瑞典 65.4）是其被看好的根基；命门是 Koeman 的<b>保守踢法</b>与<b>防线连续不零封</b>，正撞上瑞典最锋利的双前锋。瑞典的出线钥匙就在脚下：<b>再拿 1 分即基本锁定晋级</b>，可踢得更务实。基准剧本：双方均能进球、3 球+ 的开放对攻，荷兰小胜或被逼平。市场过热指数 ≈ 3/5（话题热、价格清醒）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">荷兰隐含胜率(去水)</div><div class="v" style="color:#f5944f">≈56%</div></div>
+      <div class="key"><div class="k">瑞典隐含胜率(去水)</div><div class="v" style="color:#5aa0e0">≈19%</div></div>
+      <div class="key"><div class="k">Opta超算 荷兰胜</div><div class="v" style="color:var(--warn)">55.9%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--good)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>瑞典双星 Isak + Gyökeres</b>：首轮联手贡献进球+助攻，双前锋阵型一举打爆突尼斯——荷兰近 5 场不零封的防线将面对全组最锋利的锋线组合。</li>
+      <li><b>荷兰的终结与领先管理</b>（上一场带入）：6 射正只进 2 球、两度领先被日本追平，Koeman 求稳踢法被批评——若再现"控球不进球+守不住"，对火力更强的瑞典极危险。</li>
+      <li><b>荷兰防空与定位球漏洞</b>（上一场带入）：被日本角球绝平（Verbruggen 脱手），瑞典有 Gyökeres / Lindelöf 高点 + Ayari 远射，禁区杂乱处理与外围放铲都是隐患。</li>
+      <li><b>当值主裁 Michael Oliver（英格兰）</b>：顶级精英裁判、样本厚（生涯逾 540 场、场均约 3.5–4.0 黄、约 0.36 点/场）——大赛尺度可读性远高于此前几场的小样本裁判。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f5944f;font-weight:700">荷兰 · 上一场带入 · 终结与领先管理 <span style="color:var(--mut);font-weight:400">· 日本战复盘迁移 · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">荷兰首轮 <b>2-2 平日本、两度领先被追平</b>；60% 控球、6 射正只进 2 球——"该赢没赢"</div>
+      <p style="font-size:13.5px">承接日本战复盘的前瞻迁移：荷兰 Van Dijk（50'）、Summerville（64'）两度领先，却在 57' 与 88' 被日本追平（末球为角球摆渡、<b>Verbruggen 脱手入网</b>）。荷兰全场 60% 控球、6 射正仅入 2 球，<b>终结效率与领先后比赛管理</b>双双成为软肋；Koeman 被批"过于被动、横传求稳"。荷兰近 5 场无一零封。出线形势：荷兰 1 分、暂列小组第二，本场必须从瑞典身上抢分以稳住组首/出线。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：荷兰若再像首轮那样"控球不进球+领先守不住"，面对火力远超日本的瑞典双前锋将更危险——这正是盘口虽偏向荷兰、却给出 3.90 的高平赔与"大球"角度的核心依据。Koeman 能否激活前场（Depay 是否顶替 Malen）是本场最大战术变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 荷兰 2-2 日本赛后统计</a> · <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻（Koeman 求稳被批）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5aa0e0;font-weight:700">瑞典 · 上一场带入 · 火力立体 <span style="color:var(--mut);font-weight:400">· 突尼斯战复盘迁移 · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">瑞典首轮 <b>5-1 血洗突尼斯</b>登顶 F 组；得分点多元（双星 + Ayari 远射 + 替补闪击）</div>
+      <p style="font-size:13.5px">承接突尼斯战复盘的前瞻迁移：瑞典 5-1 大胜——Ayari 第 7、90+6 分钟两记远射世界波梅开二度，Isak（30'）进球 + 两助攻、Gyökeres（59'）破门，替补 Svanberg 登场 <b>18 秒</b>闪击。Potter 的双前锋（Isak+Gyökeres）一炮打响，<b>得分来源远超"双星依赖"的赛前画像</b>——封死双星不等于封死瑞典。须注意：突尼斯进攻有限，瑞典后防（仅丢 1 球）尚未受过荷兰级别火力的检验，<b>后防隐患未消</b>。瑞典 3 分领先，本场只需 1 分基本出线。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：瑞典的进攻立体度（运动战、远射、定位球、板凳）直接利好"大球/双方进球"。但其后防本届只被弱攻突尼斯试探过一次，荷兰的攻击群（Gakpo/Reijnders/Gravenberch/Dumfries）将是真正考验——这也是瑞典作为"气势盘"却仍被定价为客队冷门（5.00）的原因。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 瑞典 5-1 突尼斯赛后统计</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/" style="color:var(--accent)">Racing Post — 前瞻/Potter 双前锋</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">荷兰 · 减员 <span style="color:var(--mut);font-weight:400">· 06 月 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">右后卫 <b>Jurriën Timber 整届退出</b>（由 Geertruida 替补入替）；<b>Quinten Timber 因脑震荡缺阵</b></div>
+      <p style="font-size:13.5px">阿森纳的 Jurriën Timber 已退出荷兰原始名单、由 Geertruida 顶替；其弟 Quinten Timber 因脑震荡本场缺阵。荷兰首轮门将 <b>Verbruggen 健康首发</b>（早前髋伤已愈），后防主力 Van Dijk(C)、Van de Ven、Dumfries、Van Hecke 预计续阵。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Timber 缺阵削弱荷兰右路防守的纵深与覆盖；面对 Gyökeres 冲身后与瑞典左路输送（Gudmundsson/Bernhardsson），Dumfries 的攻强守弱属性可能被针对。这与荷兰"近 5 场不零封"的防线隐患叠加，是瑞典反击/远射的潜在切入口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/" style="color:var(--accent)">Racing Post — 队况（Timber 退出/Q.Timber 脑震荡）</a> · <a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 荷兰名单</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5aa0e0;font-weight:700">瑞典 · 阵容延续 <span style="color:var(--mut);font-weight:400">· 预测首发 · 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">大胜后<b>预计原班人马续阵</b>（3-1-4-2 / 双前锋）；Gudmundsson 赛季末曾有腿筋小恙、首轮已能首发</div>
+      <p style="font-size:13.5px">瑞典在 5-1 之后预计抵制大改、延续致胜阵容。预测首发（3-1-4-2）：Nordfeldt；Lagerbielke · Hien · Lindelöf；Karlström；Bernhardsson · Nygren · Ayari · Gudmundsson；Isak · Gyökeres。Gudmundsson 赛季末有腿筋问题但首轮已先发；Svanberg、Elanga 是板凳上的换人爆点。<span style="color:var(--warn)">[双方官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Ayari 居最前的前腰位、远射梅开二度后将"见缝就射"——这恰好打在荷兰外围放铲/补防不及的隐患上；Gudmundsson 左路输送 + 双前锋抢点是瑞典破荷兰高位线的主路径。瑞典只需 1 分即基本出线，意味着 Potter 可在领先后切换务实低位、把比赛拖成荷兰最不擅长的"控球攻坚"。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 预测首发</a> · <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-sweden-prediction-team-news-lineups_599530.html" style="color:var(--accent)">Sports Mole — 前瞻/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· ESPN / FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：英格兰名哨 <b>Michael Oliver</b> 执法——顶级精英裁判、世界杯/欧冠大赛常客</div>
+      <p style="font-size:13.5px">据 ESPN，FIFA 任命英格兰籍 <b>Michael Oliver</b> 执法本场 F 组次轮。他是英超与欧冠的头号主裁之一、2024 欧洲杯与本届世界杯的执法者，生涯逾 540 场、样本厚实（场均约 <b>3.5–4.0 黄、约 0.36 个点球/场</b>）。比赛在休斯顿 NRG 体育场进行，<b>顶棚为保护草皮全程封闭、室内空调环境，无天气/降雨/高温变量</b>（休斯顿 6 月日间体感可达 40℃+，但本届休斯顿所有比赛顶棚封闭）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：与前几场"无大赛样本"的裁判不同，Oliver 拥有大量顶级大赛实际样本，尺度可读性高。其牌量中等偏上、点球率约 0.36/场——在一场"开放对攻+高强度对抗"的比赛里，禁区动作（Dumfries/Van Dijk 的对抗与瑞典反击中的犯规）与黄牌总数都值得关注。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判官宣（Michael Oliver）</a> · <a href="https://www.statshub.com/referee/oliver-michael/65702" style="color:var(--accent)">StatsHub — Oliver 数据</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· F组次轮格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>F 组首轮后积分（越高越好）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇱 荷兰</th><th>🇸🇪 瑞典</th></tr>
+      <tr><td>主教练</td><td class="ht">Ronald Koeman</td><td class="sc">Graham Potter（2025-10 接替 Tomasson）</td></tr>
+      <tr><td>首轮结果</td><td class="ht">2-2 平日本（两度领先被追平）</td><td class="sc">5-1 大胜突尼斯（登顶 F 组）</td></tr>
+      <tr><td>首轮后积分</td><td class="ht">1 分（小组第二）</td><td class="sc"><b>3 分（小组第一）</b></td></tr>
+      <tr><td>本场缺阵</td><td class="ht">J. Timber（整届）、Q. Timber（脑震荡）</td><td class="sc">暂无确认主力停赛/重伤</td></tr>
+      <tr><td>Opta Power Rating</td><td class="ht"><b>88.7</b>（F 组最高）</td><td class="sc">65.4</td></tr>
+      <tr><td>近况画像</td><td class="ht">世界杯正赛 13 场不败；但近 5 场不零封</td><td class="sc">附加赛险过（3-1 乌克兰、3-2 波兰），首轮火力爆发</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.67（隐含≈56%）</td><td class="sc">胜 5.00（≈19%）· 平 3.90（≈24%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大球偏锐（Over 2.5 约 1.83，隐含≈55%）；两队均能进球、对攻预期高</td></tr>
+      <tr><td>核心球员</td><td class="ht">Virgil van Dijk / Frenkie de Jong / Cody Gakpo</td><td class="sc">Alexander Isak / Viktor Gyökeres / Yasin Ayari</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈56/24/19，与 Opta 超算 55.9/23.3/20.8 方向一致）。赔率来源：bet365（荷兰 -150、平 +290、瑞典 +400），美线转十进制：-150→1.67、+290→3.90、+400→5.00（部分书荷兰最优可达 1.73/-137、瑞典 5.40）。Racing Post 引 Ladbrokes 8-11（≈1.73）/平 14-5（≈3.80）/瑞典 15-4（≈4.75）。大小球分界 2.5：Over 2.5 约 1.83（隐含≈55%，偏锐）；BTTS（双方进球）约 1.62（市场主流共识）。让球盘荷兰 -0.5/-0.75 待核以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;border-left:4px solid #10b981;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇳🇱 荷兰 · 进攻 xGF/进球</td><td class="ht">欧预选/欧国联场均进球偏高、攻击群豪华；欧洲杯 2024 打进四强（半决赛负英格兰）</td><td class="ht">首轮 <b>xGF 0.78</b>、实进 2 球（2-2 平日本）</td><td>实进略<b>高于</b> xG（2 球含 Van Dijk 头球 + Summerville 世界波）——但 0.78 的 xG 偏低，印证"控球多、真机会少、终结靠个人闪光"</td></tr>
+      <tr><td class="ht">🇳🇱 荷兰 · 防守 xGA/失球</td><td class="ht">欧洲杯 2024 防线尚可但非铁闸；近年门将出球体系偶有失误</td><td class="ht">首轮被日本打出 <b>xGA≈0.59–0.79</b>、丢 2 球（两个含偶然：折射 + 门将脱手）</td><td>失球数<b>高于</b> xGA：防线非被战术打穿，而是细节/门将处理失分——<b>近 5 场不零封</b>，结构隐患对火力强队会被放大</td></tr>
+      <tr><td class="sc">🇸🇪 瑞典 · 进攻 xGF/进球</td><td class="sc">常规预选垫底（6 战 2 分）、火力平平；附加赛回暖（3-1 乌克兰、3-2 波兰）</td><td class="sc">首轮 <b>xGF 1.36</b>、实进 <b>5 球</b>（大幅 over-perform）</td><td>实进<b>远高于</b> xG（5 vs 1.36）——含 2 记远射世界波 + 替补闪击，属"高效率尾部样本"；<b>陷阱提醒</b>：5-1 难以线性外推，真实进攻基准更接近 1.3–1.6 xG/场</td></tr>
+      <tr><td class="sc">🇸🇪 瑞典 · 防守 xGA/失球</td><td class="sc">常规预选后防起伏、状态不稳是公认短板</td><td class="sc">首轮 <b>xGA 0.28</b>、丢 1 球（突尼斯 Rekik 远射）</td><td>样本<b>偏好</b>但<b>含金量低</b>：突尼斯进攻贫弱（xG 0.28）；瑞典防线尚未受荷兰级别攻击群检验，本场是真正考验</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：荷兰首轮 xG（0.78）<b>低于</b>其豪华攻击群应有水平、防守失球高于 xGA（细节/门将失分）；瑞典首轮 5 球<b>大幅高于</b> xG（1.36），是高效率尾部、不可线性外推，其 0.28 的 xGA 来自弱旅突尼斯、参考意义有限。综合：荷兰"质量被低估、终结靠闪光"，瑞典"结果惊艳、底层 xG 与防守仍待检验"——与"荷兰纸面占优、瑞典气势盘"的主线一致。来源：xGscore（首轮 xG）· Opta Analyst（首轮统计）· FotMob/RealGM xG Tracker。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（综合）</td><td class="ht">荷兰 ≈1.6</td><td class="sc">瑞典 ≈1.1</td><td>荷兰攻击群更深、控球更多 → xG 投射略高；但瑞典转化效率与定位球/远射使其实际进球波动大</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta Power Rating 荷兰 <b>88.7</b> 居 F 组之首、瑞典 65.4；超算给荷兰胜 <b>55.9%</b>、平 23.3%、瑞典 20.8%（与去水赔率一致）</td><td>对手强度校准后，荷兰样本含金量高于瑞典（瑞典 5-1 的对手突尼斯偏弱）</td></tr>
+      <tr><td>每球 xG（xG per shot）· over/under-perform</td><td class="ht">荷兰首轮实进略高于 xG（终结靠个人）</td><td class="sc">瑞典 5 球远超 1.36 xG（远射+替补的高效尾部）</td><td><b>陷阱提醒</b>：瑞典 over-perform 幅度极大，5-1 不代表常态火力；荷兰 xG 偏低但攻击群上限更高</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt · PSxG</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：荷兰中高位控球 + 场面倾斜占优；瑞典让控球、靠转换与定位球/远射</td><td>场面倾斜大概率长时间倒向荷兰；瑞典的威胁集中在反击瞬间</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差（瑞典远射多→该值偏低）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt / PSxG</b>（场面倾斜 / 扑救后预期进球）：前场三区触球占比衡量 territory；PSxG 衡量门将面对的射门质量。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/xGscore/RealGM 等公开来源；国家队在 PPDA/xT/field tilt/PSxG 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">F 组焦点战、双欧强对话——话题热度高（Isak/Gyökeres 双星 + Van Dijk 对位 Isak），但盘口方向清醒：荷兰偏热、大球/双方进球是真共识</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 焦点战流量高 + 价格清醒（荷兰偏热、大球共识）</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">利物浦队友 Van Dijk vs Isak、瑞典双前锋、荷兰"该赢没赢"等叙事拉高关注度；但盘口未被狂热推动——荷兰约 56%、平 24%、瑞典 19%。资金与专家共识集中在 <b>大 2.5 球 / 双方进球（BTTS Yes）</b>，而非单纯胜负盘。值得注意的是<b>部分英系媒体（Racing Post）反向看好"瑞典或平"双重机会盘</b>，认为荷兰未必拿满分。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：荷兰胜/小胜 多数 · 大球/BTTS 强共识 · 瑞典或平 少数逆向）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据机构/超算</td><td>荷兰胜 <b>55.9%</b> / 平 23.3% / 瑞典 20.8%（25,000 次模拟）</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td><b>逆向</b>：主推"瑞典或平"双重机会；Ayari 射正、Gyökeres/Isak 进球建包 + Over 2.5</td></tr>
+      <tr><td>OddsShark</td><td>赔率/预测</td><td>主推 <b>Over 2.5 球</b>；荷兰小胜倾向</td></tr>
+      <tr><td>FanDuel Research</td><td>北美博彩</td><td>荷兰 2-1、Over 2.5（-110）为强价值</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>荷兰阵容深度终将兑现、2-1 小胜</td></tr>
+      <tr><td>Rotowire / ClutchPoints</td><td>预测媒体</td><td>荷兰胜 + 大球 / 双方进球</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中性）</b>：胜负方向多数押荷兰，但<b>真正的强共识是"大球 + 双方进球"</b>——这与两队首轮画像（荷兰防线漏、瑞典火力立体）高度吻合，属合理共识而非过热。逆向分歧在 Racing Post 的"瑞典或平"——依据是荷兰近 5 场不零封 + 瑞典只需 1 分即出线、可踢得务实又凶。无显著推动瑞典直接取胜的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>荷兰胜</th><th>解读</th></tr>
+      <tr><td>赛事开盘区间</td><td>北美主流盘</td><td class="ht">≈1.57–1.62（-175/-160）</td><td>开赛前荷兰被定为本组次轮明显热门（身价 + Power Rating 88.7）</td></tr>
+      <tr><td>首轮后</td><td>bet365</td><td class="ht">1.67（-150）</td><td>荷兰 2-2 平日本 + 瑞典 5-1 大胜后，荷兰侧<b>略走宽</b>（短赔回吐）</td></tr>
+      <tr><td>现盘（06-18/19）</td><td>多平台</td><td class="ht">1.67–1.73（最优 1.73 / 8-11）</td><td>窄幅波动；平 3.80–3.90、瑞典 4.75–5.40</td></tr>
+    </table>
+    <h4>②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口/赔率（DECIMAL）</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前预估区间）</td><td class="ht">荷 ≈1.57–1.62 / 平 ≈3.80 / 瑞 ≈5.50–6.00</td><td>荷兰开为明显热门、瑞典深度冷门——基于身价与 Opta Power Rating（88.7 vs 65.4）</td></tr>
+      <tr><td>开盘（首轮前后）</td><td class="ht">荷 ≈1.62 / 平 ≈3.85 / 瑞 ≈5.50</td><td>基本沿用赛前定位，瑞典作为本组弱旅被低估</td></tr>
+      <tr><td>现盘（首轮结果重定价）</td><td class="ht">荷 <b>1.67–1.73</b> / 平 3.80–3.90 / 瑞 <b>4.75–5.40</b></td><td><b>瑞典侧明显收窄</b>（5.50+→4.75–5.40）：触发事件＝瑞典 5-1 登顶 + 荷兰仅平日本；荷兰短赔小幅回吐（1.62→1.67），平赔基本不动</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：荷兰＝"被首轮平局轻度降温的稳健热门"（仍约 56%，但不再是开赛前的压倒性短赔）；瑞典＝"被 5-1 大胜重定价、从深度冷门上修为有威胁的客队"（赔率自 5.5+ 收窄至 4.75–5.40，但仍是客队冷门）。最活跃的价格发现在<b>大小球（大球偏锐）、双方进球（BTTS Yes 约 1.62）与让球（荷 -0.5/-0.75）</b>，而非 1X2。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（DefiRate 聚合）</b>：F 组<b>出线/夺组</b>市场荷兰约 <b>54–57%</b> 居首、日本 25–28%、瑞典约 26%、突尼斯约 5%——与博彩去水方向一致（注：出线概率与本场胜负盘不同口径）。本场<b>单场 1X2</b> 的预测市场精确价位与成交量、30 天动量细分未单独公开稳定检得，<span style="color:var(--warn)">部分聚合页数据口径混乱（疑与其他场次串台）· 待核</span>；以博彩去水（荷 56/平 24/瑞 19）与 Opta 超算（55.9/23.3/20.8）为主要参考。</li>
+      <li><b>舆论焦点</b>：① <b>Van Dijk vs Isak 的利物浦内战</b>（队友变对手）是最大流量点；② 瑞典双前锋 + Ayari 远射的"惊喜叙事"；③ Koeman 求稳被批、荷兰"是否还是夺冠级球队"的质疑。</li>
+      <li><b>瑞典叙事</b>：常规预选垫底、靠国联进附加赛险过的"低开高走"故事，加上 5-1 大胜，公众好感度上升；但其约 19% 胜率说明市场仍认为这是"气势 > 实力"。</li>
+      <li><b>荷兰叙事</b>：身价与深度仍是被看好的根基，但"不零封 + 终结靠闪光"使其热门成色被打折——属"被质疑的合理热门"。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向偏向荷兰（约 56%，与 Opta 超算一致），但<b>价格清醒、无狂热</b>，过热指数 <b>3/5</b>。话题热度来自 Van Dijk-Isak 内战与瑞典惊喜，最有信息含量的市场是<b>大小球（大球偏锐）、双方进球（BTTS Yes）与荷兰让球（-0.5/-0.75）</b>；逆向角度是 Racing Post 的"瑞典或平"双重机会（荷兰不零封 + 瑞典只需 1 分）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — 超算/前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/">Racing Post — 赔率/逆向 Pick</a> · <a href="https://www.oddsshark.com/soccer/world-cup/netherlands-sweden-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/netherlands-vs-sweden-prediction-preview-picks-lineups-and-best-bets-world-cup-2026">FanDuel Research</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket（F组）</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为英格兰籍 <b>Michael Oliver</b>——英超与欧冠头号主裁之一、2024 欧洲杯与 2026 世界杯执法者。来源：ESPN / FIFA。</div>
+    <h4>近两届大赛 + 国际执法尺度（实际数据）</h4>
+    <ul class="cl">
+      <li><b>大赛男足实际样本（关键）</b>：Oliver 拥有<b>丰富的顶级大赛与欧冠淘汰赛实际样本</b>——执法过欧冠、欧洲杯（含 2024 德国欧洲杯）与本届世界杯，区别于此前几场"无大赛/小样本"的裁判，尺度可读性高、外推风险低。</li>
+      <li><b>出牌/判点尺度（综合样本）</b>：生涯逾 <b>540 场</b>，综合统计口径<b>场均约 3.5–4.0 张黄牌、0.05 红</b>，生涯判罚约 190+ 个点球（约 <b>0.36/场</b>）——属牌量中等偏上、判点中性偏积极的尺度。其执法以"沟通管理强、关键判罚果断"著称。<span style="color:var(--warn)">[不同统计源数值略有出入（3.49–3.97 黄/场），以官方/StatsHub 为准 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：作为英格兰裁判，Oliver 长期执法英超中的荷兰/瑞典球员（如 Van Dijk、Gyökeres、Isak、Gravenberch 等均在英超效力），对球员风格熟悉；但<b>与荷兰、瑞典两支国家队层面无显著公开争议执法史</b>——无明显队伍倾向。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届揭幕周即多次出红、执法环境偏严。本场是"荷兰高位对抗 + 瑞典反击犯规"的高强度结构，禁区动作与黄牌总数有上行空间，但 Oliver 的管理能力通常能避免比赛过碎。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Oliver 牌量中等偏上（约 3.5–4.0 黄/场）、点球率约 0.36/场，在一场开放对攻、对抗升级的比赛里，黄牌总数与禁区判罚值得关注；其点球判罚偏果断，荷兰禁区内对 Isak/Gyökeres 的对抗与瑞典反击中的拉拽都可能成判罚点。鉴于其拥有<b>大量顶级大赛实际样本</b>，本场裁判面是可参考的分析维度——但具体牌数仍随比赛走向波动，尺度外推需留余地。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版，官方版赛前公布</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单以赛前 FIFA 比赛中心为准 · 待核）</div>
+    <h4>🇳🇱 荷兰 预测首发（4-3-3）</h4>
+    <div class="lineup">Verbruggen; Dumfries · Van Hecke · Van Dijk(C) · Van de Ven; De Jong · Gravenberch · Reijnders; Gakpo · Malen · Summerville</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Virgil van Dijk (C)</td><td>中卫 / 利物浦</td><td>队长、防线核心；首轮头球破门（个人大赛首球），定位球攻防两端关键，对位昔日队友 Isak</td></tr>
+      <tr><td class="ht">Frenkie de Jong</td><td>中场 / 巴塞罗那</td><td>持球出球与节奏控制，破解瑞典中场屏障与发起进攻的发动机</td></tr>
+      <tr><td class="ht">Cody Gakpo</td><td>边锋 / 利物浦</td><td>左路爆点与终结点；荷兰运动战创造力的主要来源之一</td></tr>
+      <tr><td class="ht">Ryan Gravenberch</td><td>中场 / 利物浦</td><td>首轮两次助攻（大赛首秀即双助攻）；推进与串联的关键</td></tr>
+    </table>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#f5944f">Memphis Depay</b>（史射手王，或挑战 Malen 首发）· <b style="color:#f5944f">Wout Weghorst</b>（传统中锋后手）· Brobbey · Lang · Koopmeiners</div>
+
+    <h4 style="margin-top:14px">🇸🇪 瑞典 预测首发（3-1-4-2 / 双前锋）</h4>
+    <div class="lineup">Nordfeldt; Lagerbielke · Hien · Lindelöf; Karlström; Bernhardsson · Nygren · Ayari · Gudmundsson; Isak · Gyökeres</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Alexander Isak</td><td>前锋 / 利物浦</td><td>首轮 1 球 2 助；状态在线、为世界杯特意保持健康，瑞典第一终结点</td></tr>
+      <tr><td class="sc">Viktor Gyökeres</td><td>前锋 / 阿森纳</td><td>首轮破门 + 附加赛绝杀波兰；身体与冲身后能力顶级，对位荷兰高大后防</td></tr>
+      <tr><td class="sc">Yasin Ayari</td><td>前腰 / 布莱顿</td><td>首轮两记远射梅开二度当选全场最佳；居最前中场，"见缝就射"是破密集利器</td></tr>
+      <tr><td class="sc">Victor Lindelöf (C)</td><td>中卫 / 队长</td><td>后防组织与经验核心；已从小伤康复</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Racing Post / Sports Mole / Opta），<b>以赛前官方名单为准 · 待核</b>。荷兰锋线 Depay 是否顶替 Malen 是 Koeman 取舍；瑞典预计延续 5-1 致胜阵容、抵制大改，Gudmundsson（腿筋小恙已愈）续守左路。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f5944f">🇳🇱 荷兰 · Ronald Koeman</div>
+        <div class="role">4-3-3 控球 + 后场出球发起；偏保守、运动战终结点存疑</div>
+        <ul class="cl">
+          <li>典型荷兰式控球：De Jong/Reijnders/Gravenberch 在中场掌控节奏，门将参与短传组织，靠 Gakpo/Summerville 的边路冲击与 Van Dijk 的定位球打开局面。</li>
+          <li>交叉参照：<b>欧洲杯 2024 打进四强</b>（半决赛 1-2 负英格兰）证明上限不低；但本届首轮 2-2 平日本，<b>控球多、真机会少（xG 0.78）、领先后守不住</b>的痼疾重现——Koeman 求稳横传被批，是本场最大隐患。</li>
+          <li>本场切入口：必须比首轮更积极、把控球转化为更多禁区机会（Depay 是否首发增加支点是看点）；同时修补近 5 场不零封的防线，否则瑞典双前锋与 Ayari 远射会反复惩罚。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa0e0">🇸🇪 瑞典 · Graham Potter</div>
+        <div class="role">3-1-4-2 双前锋 + 边路宽度 + 立体火力；后防仍待检验</div>
+        <ul class="cl">
+          <li>Potter（2025-10 接手）重塑瑞典——围绕 Isak/Gyökeres 双前锋搭建清晰进攻框架，强调边路输送（Gudmundsson）、Ayari 前插远射与板凳深度（Svanberg）。</li>
+          <li>交叉参照：瑞典近两届大赛<b>连续缺席（2022 世界杯、Euro 2024）</b>，更早的 2018 世界杯八强、Euro 2020 16 强是另一支队的记忆；本届 Isak+Gyökeres 豪华锋线<b>首次大赛同台即打出 5-1</b>，但常规预选垫底暴露的后防起伏尚未在强敌前受检。</li>
+          <li>本场应对：只需 1 分即基本出线，Potter 可在领先后切换务实低位、把比赛拖成荷兰最不擅长的"控球攻坚"；断球后由双前锋冲身后 + Ayari 远射偷袭——这正是荷兰防线隐患的对位克星。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据机构/超算</small></div>超算 25,000 次模拟给荷兰 55.9% 胜率（平 23.3%、瑞典 20.8%），Opta Power Rating 荷兰 88.7 居 F 组之首；荷兰世界杯正赛常规时间已 <b>13 场不败</b>（追平历史最长纪录）。数据认为荷兰深度终将兑现，但瑞典 5 球已追平其 2018 整届小组赛进球数，气势不容小觑。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 英系投注媒体（逆向）</small></div>主推"<b>瑞典或平</b>"双重机会——依据是荷兰<b>近 5 场不零封</b>、Koeman 求稳，而瑞典只需 1 分即出线、可踢得务实又凶；同时建议 Ayari 射正、Gyökeres/Isak 进球与 Over 2.5 建包。</div>
+    <div class="insight"><div class="who">大小球/BTTS 视角 <small>· OddsShark / FanDuel</small></div>多家将 <b>Over 2.5 球与双方进球（BTTS Yes，约 1.62）</b>视为比胜负盘更有共识的角度——两队首轮均失球、瑞典火力立体、荷兰防线漏，5/6 近 6 次交手双方均进球、6/9 近 9 次交手 3 球+。</div>
+    <div class="insight"><div class="who">综合 · 焦点与对位 <small>· ESPN</small></div>本场最大看点是 <b>Van Dijk vs Isak 的利物浦内战</b>，以及 Koeman 能否"激活球队优势"——ESPN 直言荷兰对日本"过于被动横传"，若再缩进壳里，瑞典的攻击手有能力惩罚。真正悬念不在胜负方向，而在荷兰能否守住 + 把控球变成进球。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：荷兰小胜（2-1 / 3-1，深度兑现 + 定位球）是基准剧本；平局（≈24%）是中等概率尾部——荷兰若再现"控球不进球 + 守不住"，瑞典凭双前锋/远射有逼平甚至偷胜机会；瑞典取胜（≈19%）需要 Isak/Gyökeres/Ayari 兑现 + 荷兰防线再失误同时发生。</li>
+      <li><b>关键先生</b>：Van Dijk（荷/防线与定位球，对位 Isak）、De Jong + Gravenberch（荷/中场推进与串联）、Gakpo（荷/边路爆点）、Isak + Gyökeres（瑞/双前锋上限）、Ayari（瑞/远射破密集）、Gudmundsson（瑞/左路输送）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>荷兰能否守住（近 5 场不零封）并把控球转化为进球</b>，以及<b>瑞典双前锋/Ayari 远射能否惩罚荷兰防线隐患</b>——决定让球盘（荷 -0.5/-0.75）、大小球（大球偏锐）与 BTTS（约 1.62）的结算。</li>
+      <li><b>市场视角</b>：博彩与超算方向一致（荷兰约 56% / 55.9%），1X2 价值有限；最有信息含量的市场是<b>大小球、双方进球与荷兰让球</b>。逆向角度＝Racing Post 的"瑞典或平"。过热指数 3/5（话题热、价格清醒，热源是 Van Dijk-Isak 内战与瑞典惊喜）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发名单（以赛前 FIFA 比赛中心为准；荷兰 Depay 是否顶替 Malen、瑞典是否原班续阵）；② 荷兰是否有未公开的新增伤停（J.Timber 整届、Q.Timber 脑震荡已确认）；③ Michael Oliver 各统计源场均出牌数值略有出入（3.49–3.97 黄/场），以官方/StatsHub 为准；④ Kalshi/Polymarket 本场单场 1X2 精确价位与成交量/30 天动量未稳定检得（聚合页疑有串台）；⑤ 亚盘让球线（荷 -0.5/-0.75）、大小球总分线与 BTTS 具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 赛程/首发/裁判（Michael Oliver）</a> · <a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — 超算/前瞻/Power Rating</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021472">FIFA — 比赛中心</a><br>
+      • <a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026">Opta Analyst — 荷兰 2-2 日本（荷兰带入）</a> · <a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026">Opta Analyst — 瑞典 5-1 突尼斯（瑞典带入）</a> · <a href="https://xgscore.io/world-cup/netherlands-japan/xg-statistics">xGscore — 荷兰/日本 xG</a> · <a href="https://xgscore.io/world-cup/sweden-tunisia/xg-statistics">xGscore — 瑞典/突尼斯 xG</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/">Racing Post — 赔率/队况/逆向 Pick</a> · <a href="https://www.oddsshark.com/soccer/world-cup/netherlands-sweden-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/netherlands-vs-sweden-prediction-preview-picks-lineups-and-best-bets-world-cup-2026">FanDuel Research</a> · <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-sweden-prediction-team-news-lineups_599530.html">Sports Mole — 前瞻/首发</a><br>
+      • <a href="https://www.statshub.com/referee/oliver-michael/65702">StatsHub — Michael Oliver 数据</a> · <a href="https://www.squawka.com/en/news/referee-michael-oliver/">Squawka — Oliver 档案</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket（F组）</a> · <a href="https://www.fly2houston.com/iah/related-content/surviving-houston-summer/">fly2houston — 休斯顿天气</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F">Wikipedia — F 组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-19 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f36c21',SC='#1f6fc4',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['荷兰胜','平局','瑞典胜'],datasets:[{data:[56,24,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:65,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[55,45],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞典','荷兰','日本','突尼斯'],datasets:[{data:[3,1,1,0],backgroundColor:[SC,HT,'#e8788a','#e70013'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'F 组首轮后积分'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','个人上限','定位球','大赛经验'],
+  datasets:[
+   {label:'荷兰',data:[6,6.5,8,8.5,7,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'瑞典',data:[5.5,7.5,6,8,6.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

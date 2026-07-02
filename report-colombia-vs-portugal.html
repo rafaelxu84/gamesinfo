@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 哥伦比亚 vs 葡萄牙 · 2026世界杯 K组末轮（争小组头名 · 葡萄牙须取胜方夺头名 / 哥伦比亚平局即头名）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-colombia-vs-portugal.html">
+<link rel="alternate" hreflang="en" href="https://pksport.net/en/report-colombia-vs-portugal.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-colombia-vs-portugal.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-colombia-vs-portugal.html">
+<link rel="alternate" hreflang="x-default" href="https://pksport.net/en/report-colombia-vs-portugal.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://pksport.net/en/report-colombia-vs-portugal.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-colombia-vs-portugal.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-colombia-vs-portugal.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · K组末轮 · 争小组头名（葡须取胜方头名 / 哥伦比亚平局即头名）· Ronaldo vs James</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 比分 0-0</span>
+  <h1>哥伦比亚 vs 葡萄牙</h1>
+  <div class="meta">2026年6月27日（周六）· 迈阿密 Hard Rock Stadium · 19:30 ET / 23:30 UTC · K组末轮 · 同时进行：刚果民主共和国 vs 乌兹别克斯坦（亚特兰大 Mercedes-Benz Stadium）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇨🇴 哥伦比亚</div><div class="rk">3-1 乌兹别克斯坦 + 1-0 刚果民主共和国 · 6 分（净 +3，进 4）· K组头名 · 平局即夺头名 · James Rodríguez 组织 · Jhon Durán 纪律原因缺阵 · Luis Suárez 肩伤疑云（预计出战）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇵🇹 葡萄牙</div><div class="rk">1-1 刚果民主共和国 + 5-0 乌兹别克斯坦 · 4 分（净 +5，进 6）· K组次席 · 须取胜方夺头名 · Ronaldo 本届 2 球 · 本届头名签运更优 · Tomás Araújo 体能疑问</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 哥伦比亚 0-0 葡萄牙（半场 0-0）· 06-27</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">这是一场<b>"无球荒、却充满机会"的 0-0</b>——双方均已锁定 32 强，本场只决头名。<b>哥伦比亚以场面与机会全面压制：全场 24 次射门、7 次射正</b>，却被葡萄牙门将 <b>Diogo Costa 的 6 次扑救一一化解</b>；上半场 <b>Bruno Fernandes 的射门也被哥伦比亚门将 Camilo Vargas 救出</b>。补时阶段 <b>Davinson Sánchez 的头球破门因边裁举旗、VAR 确认越位（仅大脚趾越位、毫厘之差）被吹掉</b>，哥伦比亚痛失绝杀。最终 0-0,<b>哥伦比亚以 7 分夺得 K 组头名，葡萄牙 5 分屈居次席</b>。Ronaldo 全场首发但被哥伦比亚后防彻底锁死、几无机会，每次触球都遭主场球迷嘘声。这是<b>哥伦比亚世界杯历史上的首场 0-0</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 全场无进球 · 半场 0-0｜上半场 Bruno Fernandes 被 Vargas 扑出｜补时 Sánchez 头球破门因毫厘越位被吹（VAR）｜Diogo Costa 6 次扑救</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（ESPN / 365scores / FIFA）</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇴 哥伦比亚</th><th>🇵🇹 葡萄牙</th><th>解读</th></tr>
+      <tr><td class="ht">比分</td><td><b>0</b></td><td><b>0</b></td><td>过程一边倒（哥）但被门将 + 越位线挡下，比分定格平局</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>24 / 7</b></td><td>13 / 2</td><td>哥伦比亚射门数近乎双倍、射正 7 次仍零进球——终结效率是唯一短板</td></tr>
+      <tr><td class="ht">控球率</td><td>约 55%</td><td>约 45%</td><td>哥伦比亚主导节奏（部分来源记 51%，方向一致）<span style="color:var(--warn)"> [控球细分各源略有出入]</span></td></tr>
+      <tr><td class="ht">单场 xG</td><td class="ht"><b>≈1.63</b></td><td>≈0.70</td><td>哥伦比亚机会质量远高（ESPN/365scores 口径）；两队均明显低于 xG 终结</td></tr>
+      <tr><td class="ht">门将扑救</td><td colspan="2"><b>Diogo Costa 6 次扑救（葡）· 全场最佳之一</b></td><td>这是 0-0 的直接原因——葡萄牙靠门将顶住哥伦比亚的高质量射门</td></tr>
+      <tr><td class="ht">禁区内触球 / SoT 分项</td><td colspan="2" style="color:var(--warn)">禁区触球等细分未多源核得 · 待核</td><td>仅以射门/射正/xG 主指标作结，缺失项不编造</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.espn.com/soccer/story/_/id/49200294/colombia-portugal-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — 0-0/Sánchez 越位/Costa 扑救</a> · <a href="https://www.365scores.com/en-us/football/match/fifa-world-cup-5930/colombia-portugal-5028-5071-5930">365scores — 控球/xG/射门</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021505">FIFA Match Centre — Result（Colombia 0-0 Portugal）</a> · <a href="https://www.aljazeera.com/sports/2026/6/28/colombia-wins-world-cup-2026-group-after-breathless-0-0-draw-with-portugal">Al Jazeera — 哥伦比亚夺头名</a>。<span style="color:var(--warn)">[控球细分/禁区触球未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">哥伦比亚"创造机会能力"兑现，但终结效率成唯一软肋——可迁移结论</div>哥伦比亚 24 射 7 正、xG≈1.63 却零进球，<b>说明赛前点名的"James + Luis Díaz 逆袭致命性"在创造层面完全兑现，但临门一脚是其晋级路上的隐患</b>。淘汰赛对阵 Ghana 时，若仍是"高 xG 低转化"，单场容错率将大幅下降。</div>
+    <div class="insight"><div class="who">葡萄牙"门将兜底 + 低位防守"撑起平局——但场面被动是警讯</div>Diogo Costa 6 救、全队 13 射仅 2 正，<b>葡萄牙基本放弃控场、靠门将与防线扛住</b>。这与赛前"葡萄牙更高个人上限 + 持球体系"的预期错位——本场葡萄牙是被动一方。对淘汰赛而言，若 Costa 不在最佳状态，这种打法风险极高。</div>
+    <div class="insight"><div class="who">Ronaldo 被锁死——"对强队的考验有别于乌兹别克斯坦"获印证</div>Ronaldo 首发但被哥伦比亚中卫（含 Sánchez）彻底冻结、几无触球与射门机会。<b>赛前明确点名"对阵强队的考验有别于乌兹别克斯坦"，本场正是兑现</b>——面对组织严密的南美后防，41 岁的他难以靠个人能力撕开空间，葡萄牙需要更多支援与跑动。</div>
+    <div class="insight"><div class="who">毫厘越位吹掉绝杀——半自动越位的"零容差"再次定调比赛结果</div>Sánchez 补时头球因"大脚趾越位"被 VAR 取消，<b>印证本届半自动越位的极端精确度</b>。对所有依赖禁区抢点、卡越位线的球队（哥伦比亚定位球威胁大）而言，淘汰赛里这类毫厘判罚可能直接决定生死。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">哥伦比亚平局即夺头名</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>0-0 平局,哥伦比亚以 7 分如期夺得 K 组头名</td></tr>
+      <tr><td class="ht">葡萄牙被定为热门（超算 51.6% 胜）</td><td style="color:var(--bad)"><b>✗ 落空</b></td><td>热门葡萄牙未能取胜、场面反而被动,沦为次席</td></tr>
+      <tr><td class="ht">James + Luis Díaz 逆袭致命性不可低估</td><td style="color:var(--warn)"><b>~ 部分命中</b></td><td>哥伦比亚创造大量机会(24 射/xG 1.63),但终结环节哑火</td></tr>
+      <tr><td class="ht">Ronaldo 对强队的考验有别于乌兹别克斯坦</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>Ronaldo 被彻底锁死、几无机会,印证赛前判断</td></tr>
+      <tr><td class="ht">基准剧本:真实强度对决</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>双方全力争头名、比赛紧张激烈,只是进球未到</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇨🇴 哥伦比亚 · K 组头名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>32 强对阵 Ghana</b>(堪萨斯城,7 月 3 日 周五)——以头名身份避开了部分更硬路径,签运兑现。</li>
+          <li><b>终结效率是头号待解题</b>:本场 24 射 0 进,淘汰赛单场容错低,James/Luis Díaz 的临门一脚必须升档。</li>
+          <li><b>后防与门将状态是真实利好</b>:Vargas 与中卫连续封锁葡萄牙,防守端是晋级底气。</li>
+          <li><b>定位球与抢点威胁</b>:Sánchez 的越位绝杀说明哥伦比亚定位球有杀伤,但需注意半自动越位的零容差。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇵🇹 葡萄牙 · K 组次席晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>32 强对阵 Croatia</b>(多伦多,7 月 2 日 周四)——次席路径较头名稍硬,克罗地亚经验老到。</li>
+          <li><b>持球体系本场失灵</b>:13 射仅 2 正、靠门将保平,进攻组织需在淘汰赛找回主动权。</li>
+          <li><b>Ronaldo 角色需调整</b>:被强队锁死后,围绕他的支援跑动与第二进攻点(Bruno、边路)是看点 <span style="color:var(--warn)">[首发取舍 · 待核]</span>。</li>
+          <li><b>Diogo Costa 是定海神针</b>:本场 6 救封神,但若过度依赖门将兜底,对阵克罗地亚风险偏高。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 K 组末轮的<b>"头名争夺战，但哥伦比亚已坐拥主动"</b>对决——<b>哥伦比亚 6 分、净胜球 +3；葡萄牙 4 分、净胜球 +5</b>。算术清晰：<b>哥伦比亚只需平局即锁定小组头名，葡萄牙则必须取胜方能反超</b>（同分时先比相互战绩，本场即直接对话，胜者居前；即便同分净胜球，因葡萄牙本轮才达 6 分，相互战绩是决定因素）。头名的现实意义：<b>头名避开了部分更难的淘汰赛路径——次席大概率对阵 L 组第二（英格兰 / 加纳 / 克罗地亚之一）</b>，多家媒体分析认为头名签运较优。两队都已锁定 32 强。Opta 超算：<b>葡萄牙 51.6% 胜 / 平 25.2% / 哥伦比亚 23.9%</b>；盘口方向与之一致，<b>葡萄牙被定为热门（胜约 2.06，DECIMAL），哥伦比亚约 3.70，平局约 3.40</b>——但盘口初开时更接近 Portugal +120（美盘），重定价后移向 Portugal -115，说明市场随 Portugal 5-0 大胜乌兹别克斯坦的气势有所调整。三处核心看点：① <b>葡萄牙 Ronaldo 的竞技状态与首发地位</b>（41 岁、已在本届历史性地连续六届世界杯进球，但对阵强队考验有别于乌兹别克斯坦）；② <b>哥伦比亚"反弓腰守"策略——以平局即满足的心态能否抵挡葡萄牙持球进攻</b>（James + Luis Díaz 的逆袭致命性不可低估）；③ <b>Luis Suárez 肩伤是否影响哥伦比亚锋线深度</b>（另主要替代方案为 Jaminton Campaz / Jhon Arias）。基准剧本：<b>葡萄牙凭借更高个人上限与持球体系争夺头名、比赛将是真实强度对决</b>，过热指数 ≈ 3/5（盘口初开明显动向 + Ronaldo 舆论热度）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">葡萄牙隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈49%</div></div>
+      <div class="key"><div class="k">哥伦比亚隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈27%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈24%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 头名规则（多源确认）</b>：哥伦比亚 6 分（净 +3，进 4）；葡萄牙 4 分（净 +5，进 6）。两队均已出线。<b>葡须取胜方夺头名；哥伦比亚平局或胜即头名。若葡萄牙平局：两队均为 5 分，相互战绩（本场直接对话）决定排名——即葡萄牙必须赢，平局对哥伦比亚有利。</b></li>
+      <li><b>Opta 超算给葡萄牙 51.6%（Opta Analyst · 多源一致）</b>：盘口去水约 49%，方向一致偏葡萄牙，但哥伦比亚隐含胜率约 27%，平局约 24%，说明这不是一边倒的场次——哥伦比亚有真实竞争力。</li>
+      <li><b>Jhon Durán 因纪律问题被排除在大名单外（多源确认）</b>：哥伦比亚最具爆发力的中锋因纪律问题早在集训期即被驱逐出队，大名单完全不含 Durán。Luis Suárez（Sporting CP）顶位，肩伤疑问但预计出战。</li>
+      <li><b>葡萄牙 Ronaldo 历史性 6 届进球 + 状态争议</b>：41 岁 Ronaldo 在第二轮 5-0 大胜乌兹别克斯坦中梅开二度，成为首位在六届不同世界杯进球的球员。但外界对其面对真实高压防守的实际贡献仍存争议——Colombia 绝非乌兹别克斯坦。</li>
+      <li><b>上一场带入——哥伦比亚 1-0 刚果，取胜艰难</b>：Daniel Muñoz 第 76 分钟单刀破门，但 Luis Díaz 两次进球被越位取消，说明其冲击力真实但需警惕越位线；哥伦比亚防守稳固但进攻效率偏低，不是无懈可击的状态。</li>
+      <li><b>上一场带入——葡萄牙 5-0 乌兹别克斯坦，气势如虹但含金量待判</b>：Nuno Mendes 弧线球、Ronaldo 梅开二度、Nematov 自摆乌龙、Leão 替补补刀——5 球大胜提振信心，但对手乌兹别克斯坦实力有限，Colombia 防守质量完全不同级别。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 首发已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Jhon Durán 纪律问题出局 · 全大名单缺阵 <span style="color:var(--mut);font-weight:400">· SportBible / WorldSoccerTalk / ESPN 多源一致</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">哥伦比亚最强中锋 <b>Jhon Durán</b> 因纪律问题在赛前集训期被驱逐，整届大名单不含其人</div>
+      <p style="font-size:13.5px">据 SportBible、WorldSoccerTalk、ESPN 多源一致报道，哥伦比亚 Nestór Lorenzo 在集训期以"纪律问题"为由将 Durán（阿斯顿维拉）驱逐出队。事起于 Durán 擅自离开国家队集中地旁观前东家恩维加多的比赛，被视为与团队价值观严重脱节。<b>哥伦比亚失去本届状态最热、最具禁区爆破力的中锋</b>，由 Luis Suárez（Sporting CP）顶位。<span style="color:var(--warn)">[Luis Suárez 肩伤恢复状态 · 以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Durán 的缺席是哥伦比亚锋线的结构性缺口。Luis Suárez 是合格替代者（葡超金靴，28 联赛球），但类型不同——Durán 的身体对抗与禁区定点更适合面对葡萄牙的高中卫。Suárez 肩伤疑问进一步增加锋线不确定性。若 Suárez 出战受限，James 和 Díaz 需承担更多终结任务。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportbible.com/football/football-news/fifa-world-cup/jhon-duran-colombia-world-cup-squad-376940-20260526" style="color:var(--accent)">SportBible — Durán 排除</a> · <a href="https://worldsoccertalk.com/world-cup/james-rodriguez-and-luis-diaz-headline-colombias-final-26-man-squad-for-the-2026-world-cup/" style="color:var(--accent)">WorldSoccerTalk — 哥伦比亚大名单</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ Luis Suárez 肩伤疑问 · 预计出战但需跟进 <span style="color:var(--mut);font-weight:400">· Sports Mole / ESPN 多源 · 2026-06-26</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">哥伦比亚中锋 Luis Suárez（Sporting CP）对阵刚果时因肩部问题提前换下，<b>列为"疑问"但预计可出战</b></div>
+      <p style="font-size:13.5px">Sports Mole（2026-06-26）最新球队消息将 Luis Suárez 列为"疑问（肩部）"，哥伦比亚方面乐观预估其可出场。Suárez 28 岁，Sporting CP 本赛季葡超 28 球领跑射手，是 Durán 缺阵后哥伦比亚的头号中锋选项。预测首发中他仍排名第一位，但具体出战时间与强度需等赛前确认。<span style="color:var(--warn)">[出战状态 · 以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Suárez 若缺阵或受限出场，哥伦比亚进攻支点缺失，James + Díaz 的创造变得更难转化为进球。葡萄牙的高位逼抢战术针对中锋接球节点，Suárez 的健康状态直接影响哥伦比亚是否能拉住葡萄牙防线做出空间。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/portugal/world-cup-2026/team-news/colombia-vs-portugal-injury-suspension-list-predicted-xis_600100.html" style="color:var(--accent)">Sports Mole — 伤病名单（2026-06-26）</a> · <a href="https://www.espn.com/soccer/story/_/id/49172923/fifa-world-cup-2026-colombia-vs-portugal-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — 赛前前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">葡萄牙 Tomás Araújo 体能疑问 <span style="color:var(--mut);font-weight:400">· Sports Mole · 2026-06-26</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">葡萄牙后卫 <b>Tomás Araújo</b> 列为体能疑问；Ronaldo 预计首发，Leão 替补待机</div>
+      <p style="font-size:13.5px">Sports Mole 将葡萄牙 Tomás Araújo 列为体能疑问，预测首发选 Rúben Dias 与 Renato Veiga 搭档中卫。<b>Ronaldo 预计首发</b>——自第二轮 5-0 大胜乌兹别克斯坦梅开二度后，主帅 Roberto Martínez 没有任何公开信号暗示将轮休他。ESPN 预测首发亦把 Ronaldo 直接列入。<b>Rafael Leão</b> 对阵乌兹别克斯坦替补破门，本场或与 Félix 争抢边路首发位置。<span style="color:var(--warn)">[Araújo 伤情等级 · Ronaldo/Leão 实际首发 · 以官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Araújo 若缺阵，葡萄牙中卫组合的协作磨合度有所不同（Dias+Veiga vs 原班组合）；面对 Luis Díaz 的边路速度，中卫对位和越位线控制是关键。Ronaldo 能否复制第二轮的终结效率——面对 Colombia 有组织的后防——是全场最大焦点，也是葡萄牙争夺头名的首要叙事。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/portugal/world-cup-2026/team-news/colombia-vs-portugal-injury-suspension-list-predicted-xis_600100.html" style="color:var(--accent)">Sports Mole — 伤病名单</a> · <a href="https://www.espn.com/soccer/story/_/id/49172923/fifa-world-cup-2026-colombia-vs-portugal-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — 预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 哥伦比亚 1-0 刚果民主共和国（第 76 分钟 Muñoz）<span style="color:var(--mut);font-weight:400">· FIFA / Al Jazeera / ESPN 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">哥伦比亚艰难 1-0 过关，<b>Luis Díaz 两次进球被越位取消</b>，防守稳固、进攻效率待提升</div>
+      <p style="font-size:13.5px">据 Al Jazeera、ESPN、FIFA 多源一致，哥伦比亚在第二轮 1-0 击败刚果民主共和国，由 Daniel Muñoz 第 76 分钟右路点射破门。<b>Luis Díaz 上半场与下半场各有一球被越位吹销</b>，说明其冲击力真实但需控制越位线——面对葡萄牙的半自动越位判罚这将是持续性变量。James Rodríguez 主控节奏但助攻产出一般，哥伦比亚整体压迫有效但转化率偏低。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：1-0 的险胜透露哥伦比亚进攻火力比积分表显示的更受压，且 Díaz 的越位问题需修正。葡萄牙的逼抢强度与中卫线显著高于刚果，哥伦比亚若想用反击进球，必须在越位线管理上更精准。但守 1-0 的能力也证明 Lorenzo 的防守体系有韧性。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/24/colombia-dr-congo-1-0-fifa-world-cup-2026-knockout-munoz-rodrigruez-arias-mpasi" style="color:var(--accent)">Al Jazeera — 哥伦比亚 1-0 刚果（进球时间轴）</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/colombia-congo-dr-match-report-highlights" style="color:var(--accent)">FIFA 赛报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 葡萄牙 5-0 乌兹别克斯坦（Ronaldo ×2，Nuno Mendes，Nematov OG，Leão）<span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / FIFA 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">5-0 大胜提振士气，Ronaldo 历史性六届进球，<b>但对手质量有限，Colombia 考验截然不同</b></div>
+      <p style="font-size:13.5px">据 ESPN、Al Jazeera、FIFA 多源，葡萄牙第二轮 5-0 大胜乌兹别克斯坦：Nuno Mendes 精准弧线球打门（2-0），Ronaldo 先后两次入网，包括一脚近距离推射（历史性成为首个在六届不同世界杯进球的球员，本届共 2 球、世界杯生涯共 10 球），Nematov 乌龙（4-0），Leão 替补锦上添花（5-0）。Ronaldo 赛后直视镜头"我回来了"——第一轮对刚果失球哑火的压力由此化解。<span style="color:var(--warn)">[葡萄牙对阵强队时 xG 质量的可迁移性 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：5-0 是葡萄牙的信心来源，但乌兹别克斯坦的防守质量与哥伦比亚不可同日而语。Ronaldo 在低压下的爆发与其面对 Davinson Sánchez + Jhon Lucumí 的实际表现，是两件完全不同的事——媒体分析师普遍提示这一"含金量折扣"需被纳入预判。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49153993/portugal-uzbekistan-live-world-cup-2026-latest-updates-commentary-score-result-cristiano-ronaldo" style="color:var(--accent)">ESPN — 葡萄牙 5-0 乌兹别克斯坦全场</a> · <a href="https://www.aljazeera.com/sports/2026/6/23/ronaldo-scores-twice-as-portugal-thrash-uzbekistan-5-0-at-world-cup-2026" style="color:var(--accent)">Al Jazeera — Ronaldo 梅开二度</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/portugal-uzbekistan-match-report-highlights" style="color:var(--accent)">FIFA 赛报</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"明显偏葡萄牙但哥伦比亚拥有强大的平局动机"的场次——市场在葡萄牙热门与哥伦比亚防守纪律之间寻找定价平衡</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Ronaldo 舆论热度 + 盘口明显移动 + 哥伦比亚平局价值被低估争议</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">葡萄牙 5-0 大胜后盘口从初开 +120（约 2.20 DECIMAL）移向约 2.06（-115 美盘），显示资金明显流入葡萄牙一侧；但哥伦比亚持有头名 + 平局即满足，部分逆向资金推高平局价。过热信号主要来自 Ronaldo 个人叙事而非系统性超算优势。</div>
+    </div>
+
+    <h4>① 专家推荐聚合</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>葡萄牙 51.6% 胜 / 平 25.2% / 哥伦比亚 23.9%——葡萄牙热门，但比大众盘口更保守</td></tr>
+      <tr><td>RotoWire</td><td>北美数据媒体</td><td>偏葡萄牙，强调 Bruno Fernandes 的创造力与葡萄牙整体阵容深度；含 Over 2.5 倾向</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>给出含 Ronaldo 进球、Over 2.5 的 Bet Builder 思路；总体偏葡萄牙但不极端</td></tr>
+      <tr><td>Yahoo Sports / ClutchPoints</td><td>综合媒体</td><td>偏葡萄牙小胜；认为哥伦比亚会以防守为重心、葡萄牙的 3-2-5 持球体系是关键</td></tr>
+      <tr><td>TotalFootballAnalysis</td><td>战术分析媒体</td><td>认为哥伦比亚 James + Díaz 的反击价值被低估，建议关注 BTTS（双方均入球）</td></tr>
+      <tr><td>SportsLine（证明过的专家）</td><td>模型/专家综合</td><td>葡萄牙略占优；强调 Ronaldo 当前状态（2 球）与葡萄牙持球体系的结构性优势</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL 欧赔）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>哥伦比亚 / 平局 / 葡萄牙</th><th>解读</th></tr>
+      <tr><td>初盘（赛前数日）</td><td>1X2</td><td class="sc">≈3.80 / 3.40 / 2.20 <span style="color:var(--warn)">[精确初盘待核]</span></td><td>葡萄牙初盘约 +120（美盘），哥伦比亚 +250，赛前市场仍给葡萄牙一定空间</td></tr>
+      <tr><td>第二轮战绩重定价后</td><td>FanDuel/DraftKings</td><td class="sc">≈3.70 / 3.40 / 2.06 <span style="color:var(--warn)">[截至 6/26，以实时盘口为准]</span></td><td>葡萄牙 5-0 大胜后资金流入，盘口从 +120 移向 -115（约 DECIMAL 2.06），显示市场信心上升</td></tr>
+      <tr><td>大/小球 + 让球</td><td colspan="2" class="sc">总分线 O/U 2.5 偏小球（Under 约 -128，Over +110）；葡萄牙让 -0.5/+0（约 -110 vs +110）</td><td>市场预期这是偏谨慎的比赛——哥伦比亚防守纪律 + 平局动机 → 偏小球共识</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（大赛前综合定价）</td><td class="sc">葡萄牙初盘约 +120（美盘 / DECIMAL ≈2.20）；哥伦比亚约 +250（≈3.50）</td><td>以 FIFA 排名（葡萄牙 7 位 vs 哥伦比亚 11 位）+ 历史大赛记录（葡萄牙 2016 欧冠 + 本届夺冠热门）定价；哥伦比亚凭南美双雄资质被尊重，不算深盘冷门 <span style="color:var(--warn)">[精确初盘 · 待核]</span></td></tr>
+      <tr><td>开盘（两轮赛后重定价 · 约 6/24）</td><td class="ht">葡萄牙约 -115（DECIMAL ≈2.06）· 哥 ≈3.70 · 平 ≈3.40</td><td><b>Repricing 驱动因素</b>：① 葡萄牙 5-0 大胜 + Ronaldo 梅开二度 → 气势利多；② 哥伦比亚 1-0 险胜刚果 → 进攻效率低评价 → 资金流向葡萄牙；③ 但哥伦比亚拥有 <b>平局即头名</b> 的结构性优势，平局赔率因此被特别关注（≈3.40，对应隐含 ≈27% 平局概率）</td></tr>
+      <tr><td>现盘（6/26→赛前）</td><td class="sc">葡萄牙约 2.06；总分 O/U 2.5（Under -128 为主流）；让球 -0.5</td><td>市场定位明确：<b>偏葡萄牙但不是碾压级热门</b>——哥伦比亚 ≈27% 胜率真实存在；<b>Under 2.5 为主流</b>，与"哥伦比亚防守为先 + 平局动机 + 葡萄牙难啃低防线"预期一致；Ronaldo 个人进球的 prop 市场依然热门（受大众情绪驱动）。定位档位：<b>中等热门（非狂热），核心博弈在总分线与让球深度</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"葡萄牙结构性偏强、哥伦比亚拥有平局即满足主动权"的场次，过热指数 <b>3/5</b>。Ronaldo 舆论热度可能推高 prop 市场，但超算与让球线揭示葡萄牙优势没有盘口体现的那么绝对——哥伦比亚 +27% 胜率与 ≈24% 平局概率合计约 51%，说明市场存在真实的双向博弈。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi 预测市场</b>：Kalshi 设有本场预测市场（葡萄牙胜 / 哥伦比亚胜 / 平局），方向与 Opta 超算一致偏葡萄牙。<span style="color:var(--warn)">[精确占比 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Ronaldo 的"我回来了"宣言</b>——第一轮对刚果哑火引发质疑，第二轮 5-0 两球后 Ronaldo 直视镜头回击批评。但"面对哥伦比亚能否复制"仍是最大悬念，成为本场最大的舆论叙事锚点。</li>
+      <li><b>舆论焦点 ②</b>：<b>Jhon Durán 缺阵争议</b>——哥伦比亚球迷与媒体普遍认为 Durán 的纪律排除削弱了锋线，但 Luis Suárez 的葡超 28 球经历证明他是合格替代——两种声音并存。</li>
+      <li><b>舆论焦点 ③</b>：<b>James Rodríguez 34 岁的巅峰传球与 Díaz 的速度破门</b>——哥伦比亚舆论把本场定位为"老将导演、年轻人执行"模型的一次真实考验，而 Colombia 媒体（尤其 informador、gazetaesportiva）对主队持谨慎乐观态度。</li>
+      <li><b>公众资金面 / 社媒</b>：公众资金偏葡萄牙（热门 + Ronaldo 个人效应），休闲盘集中在 Ronaldo 进球 prop 和 Over 2.5；机构/职业资金据 RotoWire 侧面信息更偏向关注 Under 和哥伦比亚平局价值。<span style="color:var(--warn)">[量化数据 · 待核]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是"葡萄牙结构偏强、但哥伦比亚有平局主动权"的中等热度场次，过热指数 <b>3/5</b>。Ronaldo 叙事推高情绪面，但盘口总分线 Under 主流揭示市场对比赛低比分的现实预期。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.rotowire.com/soccer/article/colombia-vs-portugal-picks-tips-odds-best-bets-2026-world-cup-group-k-119923">RotoWire — 赔率 / Picks</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-portugal-predictions-team-news-odds-betting-tips-bet-builder-aKyTw0q1oiEh/">Racing Post — Bet Builder</a> · <a href="https://dknetwork.draftkings.com/2026/06/24/opening-odds-for-colombia-vs-portugal-in-the-fifa-2026-world-cup/">DraftKings — 初盘</a> · <a href="https://www.oddsshark.com/soccer/world-cup/portugal-colombia-odds-picks-2026">OddsShark</a> · <a href="https://theanalyst.com/articles/colombia-vs-portugal-prediction-world-cup-2026-match-preview">Opta Analyst — 超算</a></div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇴 哥伦比亚 · 进攻</td><td class="ht">2014 年晋级八强（James Rodríguez 赛事金靴 6 球）；2018 年 1/8 决赛出局；本届仗 James + Díaz + 原应有 Durán 的三叉戟，但 Durán 缺阵</td><td class="ht">2 战 4 球（3-1 乌兹别克、1-0 刚果）；Díaz 1 球、Muñoz 2 球（各场 1）；James 无进球但主控节奏；进攻效率偏低（特别对刚果场）</td><td><b>低于历史预期</b>：进攻产量偏低，Díaz 两球被越位吹销；但防守稳固两场（仅丢 1 球）。体系仍有效，但终结需提升 <span style="color:var(--warn)">（场均 xG 公开数据有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇨🇴 哥伦比亚 · 防守</td><td class="ht">近年南美 CONMEBOL 赛事防守稳健（Lucumí/Sánchez 中卫组）；2021 美洲杯半决赛出局但防守评价不错</td><td class="ht">2 战丢 1 球（对乌兹别克斯坦丢 1）；对刚果 0 封零；整体结构紧凑</td><td><b>防守是亮点</b>：两场仅丢 1 球，后卫组合 Lucumí + Sánchez 稳固。面对葡萄牙的高级进攻将是真实考验</td></tr>
+      <tr><td class="sc">🇵🇹 葡萄牙 · 进攻</td><td class="sc">2016 欧冠冠军；2022 世界杯 1/4 出局；Bruno Fernandes + João Neves + Vitinha 的控球体系为主轴，Ronaldo 在禁区内发挥</td><td class="sc">2 战 6 球（1-1 刚果、5-0 乌兹别克）；Ronaldo 2 球（+1 球被吹）、Nuno Mendes 1 球、Nematov OG、Leão 1 球；xG vs 刚果 仅 0.69（下半场）——低质量机会创造</td><td><b>对刚果明显受挫（1 分、进攻压制有限）</b>；对乌兹别克爆发反弹。两场数据差异极大，说明葡萄牙表现受对手质量波动 <span style="color:var(--warn)">（本届场均 xG 完整数据 · 待核）</span></td></tr>
+      <tr><td class="sc">🇵🇹 葡萄牙 · 防守</td><td class="sc">2022 世界杯防守整体稳健；Rúben Dias 是世界顶级中卫；右后卫 Cancelo 攻守兼备</td><td class="sc">2 战丢 1 球（仅对刚果失 1）；整体后防表现稳定</td><td><b>防守质量良好</b>：Dias + Veiga/Araújo 组合给 Ronaldo 提供稳固后盾；面对 Díaz 的边路速度将是最大考验</td></tr>
+    </table>
+    <div class="note">📌 <b>关键读数</b>：葡萄牙 vs 刚果的 xG 数据（ESPN 战报显示下半场仅 0.69 xG）是重要基准——说明葡萄牙的进攻创造在面对有防守纪律的对手时下降明显。哥伦比亚的 4 球中仅 1 场净胜 3 球（对乌兹别克），对刚果场进攻效率低但防守零失。数据支持"低比分、谨慎博弈"的预期，而非大开大合。来源：ESPN xG 战报 / FIFA / Opta Analyst。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">葡萄牙 ≈1.4–1.7</td><td class="ht">哥伦比亚 ≈0.9–1.3</td><td>葡萄牙持球体系 + 个人质量占优；哥伦比亚反击频率有限但价值高（James→Díaz）——与盘口总分线偏 Under 一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta 超算：葡萄牙 51.6% 胜 / 平 25.2% / 哥伦比亚 23.9%；FIFA 排名葡 7 / 哥 11——葡萄牙整体实力高一档</td><td>超算给出的葡萄牙优势没有盘口体现的那么大——意味着盘口已反映了一定溢价；哥伦比亚的平局动机是超算无法完全量化的战略变量</td></tr>
+      <tr><td>压迫 PPDA / xT / 场面倾斜</td><td colspan="2" class="ht">国家队公开详细数据有限 <span style="color:var(--warn)">（PPDA/xT 待核）</span>——定性：葡萄牙的 3-2-5 持球倾向占据 field tilt；哥伦比亚高压逼抢是干扰葡萄牙持球节奏的关键工具</td><td><b>陷阱提醒</b>：① 哥伦比亚"平局即头名"→ 防守为先、不会冒进，降低开放性；② 葡萄牙须取胜、主动压上 → 暴露身后空间给 Díaz 反击；③ Ronaldo 舆论热度可能导致 prop 市场被高估；④ Suárez 肩伤若影响首发，哥伦比亚进攻支点缺失</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——哥伦比亚对刚果的 Díaz 两次错失说明执行率是问题。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。<span style="color:var(--warn)">待核</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，葡萄牙 3-2-5 持球体系倾向占优。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/ESPN/FIFA 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">1</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>多源确认</b>：据 ESPN 官方赛前前瞻，本场主裁为澳大利亚籍（伊朗裔）国际级名哨 <b>Alireza Faghani</b>（法格哈尼）；场地为迈阿密 <b>Hard Rock Stadium</b>（露天球场，佛罗里达 6 月高温 + 湿度需留意）。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 以 FIFA 官方为准 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Alireza Faghani 连续第四届世界杯执法，是全球最富经验的主裁之一。职业生涯场均黄牌约 3.6 张（440+ 场数据，playerstats.football 来源）；本赛季（2025-26）A-League 场均约 3.13 张黄牌；FIFA 俱乐部世界杯 4 场共出示 19 张黄牌（每场约 4.75 张）——顶级大赛执法偏严。</li>
+      <li><b>本届大赛尺度</b>：2026 世界杯统一执法新规——仅队长可与主裁沟通、门将 8 秒规则、半自动越位（SAOT）精准校准冲刺临界点。Faghani 在顶级国际赛事中有清晰一致的判罚标准，体能型犯规（后场拉扯/飞铲）尤为警觉。</li>
+      <li><b>与两队的历史</b>：Faghani 与哥伦比亚、葡萄牙两队的显著公开执法史样本有限，无可靠大赛细分数据可引用，如实说明、不编数值。<span style="color:var(--warn)">[对两队历史执法记录 · 待核]</span></li>
+      <li><b>两面性</b>：葡萄牙须取胜 → 主动压上，禁区争顶与反抢犯规增多，Ronaldo 的对抗式进球易制造点球机会（利好葡萄牙）；哥伦比亚以 James 为轴的慢节奏传导容易被对手中场切球打反击，其防守体系的合理铲断与粗野动作的尺度是关键观察点。半自动越位将精准裁决 Díaz/Ronaldo 的临界冲刺。佛罗里达高温湿度（6 月 Hard Rock 户外）可能影响末段体能，增加体力消耗型犯规。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Faghani 场均黄牌偏高（3.6+），顶级大赛更严（FIFA CWC 4.75/场）。本场双方博弈激烈、葡须取胜的压力下中场拼抢料激烈——黄牌总数盘可能超过平均。点球方面，Ronaldo 的禁区对抗与 Díaz 的下底强突均有制造点球的能力；但 Faghani 的判罚一致性良好，不属于容易被氛围影响的类型。鉴于大赛与两队历史数据样本有限，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">2</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· K组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>K 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇴 哥伦比亚</th><th>🇵🇹 葡萄牙</th></tr>
+      <tr><td>前两轮</td><td class="ht">3-1 乌兹别克（J.Muñoz, Díaz, Campaz）+ 1-0 刚果（D.Muñoz 76'）· 6 分，净 +3，进 4，失 1</td><td class="sc">1-1 刚果（J.Neves · Wissa 扳平）+ 5-0 乌兹别克（Mendes, Ronaldo×2, OG, Leão）· 4 分，净 +5，进 6，失 1</td></tr>
+      <tr><td>K 组积分（末轮前）</td><td colspan="2">哥伦比亚 6（净 +3）暂列头名；葡萄牙 4（净 +5）次席；刚果 1（平局 1）；乌兹别克 0 已出局</td></tr>
+      <tr><td>头名情景</td><td class="ht">平局或胜即夺头名（积分领先 2 分，即便平局直接对话也胜在相互战绩）</td><td class="sc">必须取胜方夺头名（直接对话若平局则哥伦比亚头名，因本场即相互战绩对决）</td></tr>
+      <tr><td>主教练</td><td class="ht">Néstor Lorenzo（4-2-3-1 / 4-3-3，高压 + 快速反击）</td><td class="sc">Roberto Martínez（3-2-5 持球 / 4-2-3-1，以 Fernandes 为创造核心）</td></tr>
+      <tr><td>核心球员</td><td class="ht">James Rodríguez（34岁，队魂导演）· Luis Díaz（边路速度）· Luis Suárez（中锋，肩伤疑问）</td><td class="sc">Cristiano Ronaldo（41岁，本届 2 球）· Bruno Fernandes（组织/创造）· Vitinha · João Neves · Nuno Mendes</td></tr>
+      <tr><td>重要缺/伤状态</td><td class="ht">Jhon Durán 纪律缺阵（全届）；Luis Suárez 肩伤疑问（预计出战）；Tomás Araújo（葡）体能疑问</td><td class="sc">无正式伤停；Tomás Araújo 体能疑问；Leão 替补压舱</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈3.70（隐含 ≈27%）</td><td class="sc">胜 ≈2.06（隐含 ≈49%）· 平 ≈3.40（≈24%）</td></tr>
+      <tr><td>总分 / 让球</td><td colspan="2" class="sc">O/U 2.5 偏小球（Under 约 -128）；葡萄牙让 -0.5（接近平手盘）· Opta 超算：葡 51.6% / 平 25.2% / 哥 23.9%</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后隐含概率（葡萄牙 2.06 / 平 3.40 / 哥伦比亚 3.70，归一后约 49/24/27），与 Opta 超算（51.6/25.2/23.9）方向一致。大小球主流偏 Under 2.5（Under 约 -128），与哥伦比亚防守为先 + 平局动机的预期吻合。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发（预测版）===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 非官方 · 以赛前 FIFA Match Centre 为准</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / RotoWire 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+
+    <h4>🇨🇴 哥伦比亚 预测首发（4-2-3-1 / 4-3-3）· Néstor Lorenzo</h4>
+    <div class="lineup">Vargas; Muñoz · Sánchez · Lucumí · Mojica; Puerta · Lerma; Arias · J.Rodríguez · Díaz; L.Suárez（肩伤疑问）</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">James Rodríguez</td><td>攻中/队长 / Rayo Vallecano</td><td>本届节奏主控、视野传球仍是核心；无进球但提供关键组织。34 岁体能管理需留意 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Luis Díaz</td><td>左边锋 / 利物浦</td><td>对乌兹别克破门 + 对刚果 2 球被越位取消——冲击力真实、越位线需修正；葡萄牙 Cancelo 侧是被针对边路 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Luis Suárez</td><td>中锋 / Sporting CP</td><td>葡超本赛季 28 球领跑射手；肩部疑问但预计出战，体能状态仍需赛前确认 <span style="color:var(--warn)">[首发 · 肩伤 · 待核]</span></td></tr>
+      <tr><td class="ht">Daniel Muñoz</td><td>右后卫 / 水晶宫</td><td>本届 2 球（vs 乌兹别克+vs 刚果），右路插上是哥伦比亚的进攻活跃点</td></tr>
+    </table>
+
+    <h4>🇵🇹 葡萄牙 预测首发（4-2-3-1 / 3-2-5）· Roberto Martínez</h4>
+    <div class="lineup">D.Costa; Cancelo · R.Dias · Veiga · N.Mendes; Vitinha · J.Neves; P.Neto · B.Fernandes · J.Félix; Ronaldo</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Cristiano Ronaldo</td><td>中锋 / 艾纳斯尔</td><td>本届 2 球；历史性六届世界杯进球；41 岁状态争议——对刚果第一轮 0 球 + 1 球被吹；对哥伦比亚强防线的实际表现是最大悬念 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Bruno Fernandes</td><td>攻中 / 曼联</td><td>葡萄牙进攻大脑；本赛季英超 21 个联赛助攻（纪录）；是连接中场与 Ronaldo 的核心枢纽 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Vitinha</td><td>中场 / 巴黎圣日耳曼</td><td>葡萄牙中场节奏主控；本届未特别突出，但传球准确率与控球维持是葡萄牙体系基础 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Rafael Leão</td><td>边锋 / AC米兰</td><td>对乌兹别克替补破门，本场或与 Félix 争抢边路首发。若首发，边路突破是哥伦比亚 Muñoz 侧的最大考验 <span style="color:var(--warn)">[首发/替补 · 待核]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（ESPN / Sports Mole / RotoWire），各源有出入。葡萄牙 <b>Araújo 体能疑问</b>影响中卫选择（Dias+Veiga 为主流预测）；哥伦比亚 <b>Suárez 肩伤</b>若不能首发，则 Jaminton Campaz（vs 乌兹别克替补入球）或 Jhon Arias 可能顶位。官方名单以赛前 <b>FIFA Match Centre</b> 为准 · 待核。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（2022/2018 世界杯 + 欧洲杯 / 美洲杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇨🇴 哥伦比亚 · Néstor Lorenzo</div>
+        <div class="role">4-2-3-1 / 4-3-3 · James 导演 + Díaz 边路 + 高压反击，防守为先</div>
+        <ul class="cl">
+          <li>Lorenzo 麾下哥伦比亚以 <b>James Rodríguez 为组织核心、Díaz 为边路爆点、后腰 Lerma/Puerta 双枢轴稳固中场</b>。进攻依赖快速纵向转移与 James 的精准传导——不像传统南美球队的慢性控球，而是介于高压和阵地之间的弹性体系。</li>
+          <li>交叉参照：哥伦比亚 2014 世界杯八强（James 6 球金靴）是历史最佳；2018 年 16 强（点球出局 vs 英格兰）；CONMEBOL 2021 美洲杯半决赛出局。Lorenzo 接手后南美区预选赛表现出色（第二名出线）。<b>本届最大缺口是 Durán 的纪律出局</b>，改变了锋线结构。</li>
+          <li>本场应对：<b>平局即头名</b>的逻辑使 Lorenzo 几乎确定选择<b>防守反击</b>为主策略——让出部分球权给葡萄牙，利用 James 的快速转移与 Díaz 的加速冲刺制造葡萄牙后防身后空间。Lerma 双枢轴封锁 Bruno Fernandes 的创造路线是防守关键。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇵🇹 葡萄牙 · Roberto Martínez</div>
+        <div class="role">3-2-5 持球 / 4-2-3-1 · Bruno Fernandes 创造 + Ronaldo 禁区定点 + 边路宽度</div>
+        <ul class="cl">
+          <li>Martínez 的葡萄牙签名在持球阶段呈 <b>3-2-5 形状</b>——中卫持球、双后腰（Vitinha/Neves）降接、三前锋 + 两边卫极致拉宽形成"5"的攻击线，逼迫对手防线拉伸、创造 Ronaldo 禁区的高质量接球机会。<b>Bruno Fernandes 是运转核心，提供视野传球、暗传与组织</b>。</li>
+          <li>交叉参照：2022 世界杯 1/4 决赛出局（对摩洛哥 0-1）；2016 欧冠冠军；Martínez 执教以来（接替 Santos）整体打法更流动、更少依赖 Ronaldo 单点——但 Ronaldo 仍是战术终结支点与公众叙事核心。</li>
+          <li>本场挑战：<b>必须取胜迫使葡萄牙更积极压上</b>，但这会在后防暴露空间给 Díaz 的速度反击。葡萄牙高位逼抢也是重要武器（Fernandes/Félix/Neto 的第一道防线压迫）——哥伦比亚的中后场出球能否撑过葡萄牙的前场压迫是关键。对哥伦比亚低防线：能否打开同样对刚果也打不开的密集防守，是葡萄牙最大战术挑战。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst（超算）<small>· 多源一致</small></div>葡萄牙 51.6% 胜 / 平 25.2% / 哥伦比亚 23.9%——葡萄牙热门，但差距不如盘口看起来那么大。哥伦比亚拥有结构性战略优势（平局即头名），与超算概率叠加，平局 25.2% 并非小概率事件。</div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 综合预测媒体</small></div>葡萄牙的 3-2-5 持球体系能否在哥伦比亚双枢轴面前有效输出，是战术层面的核心问题。对刚果 1-1 的 xG 低谷（下半场仅 0.69）说明密集防守对葡萄牙的创造有效压制；<b>若哥伦比亚以同等密度防守，Bruno Fernandes 的创造效率将面临更严峻的考验</b>。</div>
+    <div class="insight"><div class="who">RotoWire / TotalFootballAnalysis <small>· 数据/战术分析媒体</small></div>Luis Díaz 的越位线问题是哥伦比亚能否打开葡萄牙后防的关键——两次有效进球被越位吹销说明其与前后移动的时机管理需改善。但 <b>Díaz 面对 Cancelo 这一更注重进攻的右后卫，身后空间比任何比赛都大</b>——这是哥伦比亚的反击黄金路线。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源综合</small></div>⚠ 陷阱提醒：① Ronaldo 舆论热度导致个人 prop 市场（进球/助攻）可能溢价，其面对强防线的实际效率历来存在争议；② 哥伦比亚"平局即满足"动机是超算无法完全定价的战略变量；③ 葡萄牙对密集防守体系的穿透能力（参照刚果场 xG）有限，需 Fernandes 制造关键机会；④ 哥伦比亚 Durán 缺阵 + Suárez 肩伤叠加，是锋线不确定性的双重压力——若两人均受限，哥伦比亚的终结端更依赖 Díaz 和 Muñoz 的插上。</div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：葡萄牙实力偏强（Opta 51.6%）但哥伦比亚拥有平局即头名的结构性优势——这是一场战略目标不对等的博弈。葡萄牙须全力求胜，哥伦比亚可以打防守反击。基准剧本：<b>低比分、激烈博弈、总分偏 Under 2.5</b>——葡萄牙有打开局面的能力，但不保证能破哥伦比亚密集防线。反击剧本中 James→Díaz 的快速转移是哥伦比亚进球的最现实路径。</li>
+      <li><b>关键先生</b>：哥伦比亚 — James Rodríguez（组织/控节奏）· Luis Díaz（边路决定性 + 越位线管理）· Jefferson Lerma（双枢轴屏障）；葡萄牙 — Cristiano Ronaldo（禁区终结 + 舆论叙事）· Bruno Fernandes（创造枢纽）· Nuno Mendes（左路进攻出口）。</li>
+      <li><b>胜负手</b>：① 哥伦比亚能否用 Lerma/Puerta 切断 Bruno Fernandes 的创造路线；② 葡萄牙能否通过边路宽度（Neto+Cancelo）拉开哥伦比亚防线创造禁区机会；③ Ronaldo 在有组织防守下的真实效率；④ Luis Díaz 的越位线修正——能否在有效位置完成进球；⑤ Luis Suárez 肩伤是否影响哥伦比亚进攻支点的正常运转。</li>
+      <li><b>市场视角</b>：明显偏葡萄牙（≈49% 去水）但非狂热单边（哥伦比亚 ≈27%、平局 ≈24%），过热指数 3/5。总分线 Under 主流——与预期的低比分对决吻合。Ronaldo prop 市场受情绪驱动，可能存在溢价。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre 为准）——<b>Luis Suárez 肩伤是否影响首发</b>（若不出战需大幅调整哥伦比亚进攻预期）；② Tomás Araújo 体能实际状态（影响葡萄牙中卫组合）；③ <b>Rafael Leão vs João Félix 首发之争</b>（两人均有争议）；④ 裁判 Faghani 完整裁判组 + VAR 组合 · 对两队历史执法细分数据；⑤ 本届前两轮两队场均 xG 完整数据（Opta/FotMob 细分，ESPN 给出葡萄牙对刚果下半场 0.69 xG，哥伦比亚两场完整数值 · 待核）；⑥ 头名精确出线利弊（32 强对阵以 FIFA 官方对阵表为准）；⑦ 精确初盘数值 · 实时赔率以赛前为准；⑧ 哥伦比亚/葡萄牙 PPDA/xT/field tilt 细分——国家队公开样本有限。</div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49172923/fifa-world-cup-2026-colombia-vs-portugal-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — 哥伦比亚vs葡萄牙官方前瞻（裁判/场地/首发/时间）</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup-2026/team-news/colombia-vs-portugal-injury-suspension-list-predicted-xis_600100.html">Sports Mole — 伤病名单 / 预测首发（2026-06-26）</a><br>
+      • <a href="https://theanalyst.com/articles/colombia-vs-portugal-prediction-world-cup-2026-match-preview">Opta Analyst — 超算 51.6/25.2/23.9 + 前瞻</a> · <a href="https://www.rotowire.com/soccer/article/colombia-vs-portugal-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-119775">RotoWire — 预测首发 / 战术分析</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/24/colombia-dr-congo-1-0-fifa-world-cup-2026-knockout-munoz-rodrigruez-arias-mpasi">Al Jazeera — 哥伦比亚 1-0 刚果（进球时间轴）</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/colombia-congo-dr-match-report-highlights">FIFA 赛报 — 哥伦比亚 vs 刚果</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49153993/portugal-uzbekistan-live-world-cup-2026-latest-updates-commentary-score-result-cristiano-ronaldo">ESPN — 葡萄牙 5-0 乌兹别克斯坦全场</a> · <a href="https://www.aljazeera.com/sports/2026/6/23/ronaldo-scores-twice-as-portugal-thrash-uzbekistan-5-0-at-world-cup-2026">Al Jazeera — Ronaldo 梅开二度</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/portugal-uzbekistan-match-report-highlights">FIFA 赛报 — 葡萄牙 5-0 乌兹别克</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49096146/portugal-dr-congo-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — 葡萄牙 1-1 刚果第一轮</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021505">FIFA Match Centre — 哥伦比亚 vs 葡萄牙</a><br>
+      • <a href="https://www.sofascore.com/news/group-k-how-results-from-matchday-1-and-matchday-2-affect-world-cup-standings">Sofascore — K组积分情况</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K">Wikipedia — 2026世界杯 K组</a> · <a href="https://www.skysports.com/football/news/12040/13543106/world-cup-2026-group-k-guide-fixtures-schedule-standings-and-odds-for-portugal-dr-congo-uzbekistan-and-colombia">Sky Sports — K组指南</a><br>
+      • <a href="https://dknetwork.draftkings.com/2026/06/24/opening-odds-for-colombia-vs-portugal-in-the-fifa-2026-world-cup/">DraftKings Network — 初盘</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-portugal-predictions-team-news-odds-betting-tips-bet-builder-aKyTw0q1oiEh/">Racing Post — Bet Builder</a> · <a href="https://www.oddsshark.com/soccer/world-cup/portugal-colombia-odds-picks-2026">OddsShark — 赔率</a><br>
+      • <a href="https://www.sportbible.com/football/football-news/fifa-world-cup/jhon-duran-colombia-world-cup-squad-376940-20260526">SportBible — Jhon Durán 排除</a> · <a href="https://worldsoccertalk.com/world-cup/james-rodriguez-and-luis-diaz-headline-colombias-final-26-man-squad-for-the-2026-world-cup/">WorldSoccerTalk — 哥伦比亚大名单</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49188761/roberto-martinez-portugal-not-thinking-round-32-knockout-world-cup-colombia">ESPN — Martínez 赛前发布会</a> · <a href="https://x.com/Pattystips/status/2066951147114647943">Faghani 裁判数据（X/Twitter）</a> · <a href="https://playerstats.football/referee/661">PlayersStats — Faghani 统计</a><br>
+      • <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/colombia-v-portugal-predictions">TotalFootballAnalysis — 战术分析</a> · <a href="https://www.goal.com/en/news/colombia-portugal-world-cup-preview/blt70537cb1cd3c1ca0">Goal.com — 全面前瞻</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-27 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['哥伦比亚胜','平局','葡萄牙胜'],datasets:[{data:[27,24,49],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[42,58],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['哥伦比亚','葡萄牙','刚果','乌兹别克'],datasets:[{data:[6,4,1,0],backgroundColor:[HT,SC,'#9aa6c0','#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:8,title:{display:true,text:'积分（末轮前 · 哥净+3/葡净+5）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'哥伦比亚',data:[7,6.5,7,7.5,7,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'葡萄牙',data:[7.5,7.5,8,7.5,9,8.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

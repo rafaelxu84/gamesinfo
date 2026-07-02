@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 巴西 vs 海地 · 2026世界杯 C组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-brazil-vs-haiti.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-brazil-vs-haiti.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-brazil-vs-haiti.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-brazil-vs-haiti.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-brazil-vs-haiti.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#1d9e4b;--sc:#2f6ab0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#13632f,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#10241a,#152138);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#5fce8c;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-brazil-vs-haiti.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-brazil-vs-haiti.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-brazil-vs-haiti.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · C组次轮 · 五星巴西首胜在望，海地背水一战</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 巴西 3-0 海地</span>
+  <h1>巴西 vs 海地</h1>
+  <div class="meta">2026年6月19日 · 费城 Lincoln Financial Field · 20:30 ET · C组次轮（同组：摩洛哥、苏格兰）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5fce8c">🇧🇷 巴西</div><div class="rk">FIFA #6 · 5次夺冠 · 安切洛蒂治下，Vinícius 领衔的个人能力流</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇭🇹 海地</div><div class="rk">FIFA #84 · 时隔52年重返世界杯 · 全场最弱档、低位防守 + 反击</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-20） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 巴西 3-0 海地（半场 3-0）· 06-19</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">巴西半场即锁定胜局：Raphinha 早段一粒进球因越位被吹后，<b>Matheus Cunha 第 23 分钟</b>把 Delcroix 的解围折射入网首开纪录；第 36 分钟 Cunha 抢断后被 Vinícius 直塞、抽射上角梅开二度；半场补时（45+3）<b>Vinícius</b> 在 Paquetá 挑传后晃过门将 Placide、推射穿裆 3-0。下半场海地由 5-4-1 改 4-4-2、巴西收力，第 63 分钟 Ricardo Adé 角球争顶头球被 Alisson 反应神扑化解，Endrick 替补登场完成世界杯处子秀（一粒进球因越位无效）。<b>巴西上半场零射门被打——是 1990 年对苏格兰以来世界杯首次单场上半场零封对手射门；海地由此成为本届世界杯首支被淘汰的球队。</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 23' Cunha · 36' Cunha · 45+3' Vinícius｜40' Raphinha 伤退（疑似腿筋）· 63' Alisson 神扑 Adé · 替补 Endrick 处子秀</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / FotMob）</h4>
+    <table>
+      <tr><th>指标</th><th>🇧🇷 巴西</th><th>🇭🇹 海地</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>57%</b></td><td>43%</td><td>巴西掌控但不极端——下半场主动收力让控球差距收窄，符合"3-0 后管理比赛"的节奏</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.5</b></td><td>0.25</td><td>1.5 xG 进 3 球：终结效率超模型（含一粒折射运气球），但创造的机会量并不算多</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>8 / 5</b></td><td>8 / 3</td><td>射门数相同（各 8 次）是关键信号——巴西没有形成压倒性的射门优势，破密集仍非高产</td></tr>
+      <tr><td class="ht">禁区内射门</td><td><b>7（进 3）</b></td><td>4（进 0）</td><td>巴西把射门压进禁区、转化干净；海地禁区内射门稀少，缺乏终结点</td></tr>
+      <tr><td class="ht">传球成功率</td><td><b>≈88%（476/542）</b></td><td>≈82%（337/412）</td><td>巴西控传质量更高，但传球总量未碾压——海地高位收缩、巴西未被迫狂传渗透</td></tr>
+      <tr><td class="ht">角球</td><td>4</td><td>4</td><td>定位球各 4 角持平：海地唯一的真实威胁（63' 头球）正来自角球，是其纸面上最现实的得分路径</td></tr>
+      <tr><td class="ht">犯规 / 黄牌</td><td>13 / 1</td><td>14 / 3</td><td>海地 3 黄反映其用犯规阻断巴西推进；比赛对抗强度可控，无红牌</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/brazil-vs-haiti-stats-fifa-world-cup-2026-live">Opta Analyst — Brazil 3-0 Haiti Stats</a> · <a href="https://www.fotmob.com/news/1bj3jdvqwy4ob1exorixllto0j-brazil-3-0-haiti-cunha-vinicius-lead-charge-ancelottis-side">FotMob 战报</a> · <a href="https://www.espn.com/soccer/story/_/id/49119519/brazil-haiti-live-world-cup-2026-latest-updates-commentary-score-result">ESPN 战报</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021457">FIFA Match Centre</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">大胜是"早进球 + 高效终结"，不是阵地碾压</div>巴西全场射门仅 8 次、xG 仅 1.5，与海地射门数持平，却凭半场 3 球（含一粒折射、一粒抢断转换、一粒直塞反越位）就杀死悬念。<b>说明巴西的破密集问题并未真正解决——这场赢在终结效率与对手开场的注意力漏洞，而非赛前担忧的"阵地解题"得到根治</b>。对位苏格兰这种更有组织的低位块时，8 射 1.5 xG 的产出未必够用。</div>
+    <div class="insight"><div class="who">Cunha 顶替 Igor Thiago 首发立竿见影</div>赛前对账质疑"中锋首发悬念"，安切洛蒂换上 Cunha 后者梅开二度、成为 21 世纪第 5 位在世界杯单场为巴西梅开二度的球员。<b>说明巴西的中锋之争本场有了答案，安帅的轮换赌对了</b>——但两球分别来自折射与抢断转换，作为"支点中锋"的阵地价值仍需更强对手检验。</div>
+    <div class="insight"><div class="who">Vinícius 的左路爆破 = 全场最稳定的结构性优势</div>Vinícius 1 球 1 助，两场世界杯参与 3 球（2 球 1 助），是 21 世纪继 Elano(2010)、Rivaldo(2002) 后第三位达成此数据的巴西球员。赛前指出的"左路对位海地右路是最清晰错配"被完全兑现。<b>说明只要给 Vinícius 面对深防线的纵深空间，他就是巴西最可复制的开张点</b>——这也是对手的首要封堵目标。</div>
+    <div class="insight"><div class="who">后防零封是真，但样本含金量低</div>巴西上半场未让海地形成一次射门（1990 年来世界杯首次），后防一扫对摩洛哥被压制的质疑。<b>但说明这更多是对手量级使然，而非防线问题已修复</b>——海地全场仅 0.25 xG，唯一的威胁（63' Adé 头球）来自定位球、靠 Alisson 神扑化解，定位球防空仍是可被针对的细节。</div>
+    <div class="insight"><div class="who">Raphinha 伤退是真正的代价</div>3-0 大胜中唯一的负面信号：Raphinha 第 40 分钟因疑似腿筋伤退。<b>说明巴西在赢得轻松的同时付出了主力边锋的健康风险</b>——这将直接影响下一场对苏格兰的边路配置与轮换深度（详见下方前瞻迁移）。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">巴西胜（隐含 ≈87%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>3-0 完胜，与 Opta 超算 87.3% 高度一致</td></tr>
+      <tr><td class="ht">基准比分 巴西 3-0</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>共识最高单一比分被一字不差兑现（含半场即 3-0）</td></tr>
+      <tr><td class="ht">大 3.5 球（大/小各 -110）</td><td style="color:var(--bad)"><b>✗ 未中（走小）</b></td><td>仅 3 球，下半场巴西收力 + Endrick 进球被吹，刚好压在 3.5 之下</td></tr>
+      <tr><td class="ht">阵地攻坚解题慢的隐忧</td><td style="color:var(--warn)"><b>~ 部分应验</b></td><td>8 射 1.5 xG、与海地射门持平——大胜靠效率而非阵地碾压，老毛病未根治</td></tr>
+      <tr><td class="ht">Vinícius 左路是最清晰错配</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>1 球 1 助，赛前结构性判断完全成立</td></tr>
+      <tr><td class="ht">市场过热 3/5</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>胜负无分歧、分歧在进球数线——大小球走小印证该线确有张力</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇧🇷 巴西 · 下一场 vs 苏格兰（6/24 迈阿密 · C组末轮）</h4>
+        <ul class="watch">
+          <li><b>Raphinha 伤情待跟踪</b>：40' 疑似腿筋伤退，能否赶上末轮存疑——左右边锋配置与轮换深度直接受影响（必须带入下一场新闻模块）。</li>
+          <li><b>破密集仍是核心考题</b>：8 射 1.5 xG、与海地射门持平。苏格兰比海地更有组织、刚 0-1 小负摩洛哥，巴西需证明阵地解题能力，否则可能重演低效。</li>
+          <li><b>头名之争白热化</b>：巴西、摩洛哥同积 4 分并列，末轮巴西打苏格兰、摩洛哥打海地，净胜球与小分可能决定头名——巴西有动力继续刷分。</li>
+          <li><b>定位球防空细节</b>：本场唯一被威胁来自角球（Adé 头球）。苏格兰高中锋 + 定位球是其强项，须补强禁区防空。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇭🇹 海地 · 下一场 vs 摩洛哥（6/24 亚特兰大 · C组末轮，已无出线可能）</h4>
+        <ul class="watch">
+          <li><b>已数学出局</b>：两连败积 0 分，成为本届首支被淘汰的球队——末轮对摩洛哥是纯荣誉之战，目标是首球/避免大比分。</li>
+          <li><b>5-4-1 低位块被效率打穿</b>：开场注意力松懈直接送给巴西首球。对同样会主动持球的摩洛哥，须从第一分钟保持防守专注。</li>
+          <li><b>角球是唯一现实威胁</b>：全场最佳机会（63' Adé 头球）来自角球——定位球是海地对摩洛哥抢首球最可复制的路径。</li>
+          <li><b>终结力持续缺失</b>：两场至今 0 进球、禁区内射门稀少，需要 Pierrot 等终结点把握住有限机会。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是<b>本届世界杯小组赛排名差距最大的一场对决</b>（巴西 FIFA #6 高出海地 78 位）：五星巴西首轮被摩洛哥 1-1 逼平、积 1 分落后领头羊苏格兰，急需一场大胜重启争冠节奏并刷净胜球；海地首轮 0-1 不敌苏格兰、积 0 分，出线概率已被 Opta 压到仅 5.8%，本场近乎"荣誉之战"。盘口呈现一边倒：巴西胜 moneyline <b>-1000（小数 1.10）</b>，平局 +1000（11.00），海地胜 +2000（21.00），去水隐含约 <b>巴西 87% / 平 8% / 海地 4%</b>，与 Opta 超算 87.3% / 8.4% / 4.3% 几乎完全吻合。市场真正的分歧不在胜负而在<b>"赢几个、几点开张"</b>：大小球线被推高到 3.5（大/小各 -110），巴西让球盘普遍开在 <b>-2.5/-3</b>。基准剧本：<b>巴西 3-0 左右取胜</b>（共识最高单一比分），但需提防"阵地攻坚解题慢"——这正是巴西近两届大赛淘汰赛出局的老毛病。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">巴西隐含胜率(去水)</div><div class="v" style="color:#5fce8c">≈87%</div></div>
+      <div class="key"><div class="k">大小球盘口</div><div class="v" style="color:#7fa6e6">3.5</div></div>
+      <div class="key"><div class="k">海地出线概率(Opta)</div><div class="v" style="color:var(--warn)">5.8%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>巴西的阵地进攻能否解题</b>：对摩洛哥首轮射门 12-14 反被压制（自 2006 年来首次世界杯射门处于劣势），对深守的海地若仍只靠 Vinícius 单点冲击，破密集会重演加拿大/上一场式低效。<span style="color:var(--mut);font-size:12px">（上一场带入）</span></li>
+      <li><b>Vinícius Júnior 的左路爆破</b>：近 5 场世界杯参与 4 球（2 球 2 助），平均每 98 分钟一次进球贡献，是巴西最稳定的开张点，对位海地右路是全场最清晰的结构性错配。</li>
+      <li><b>巴西中锋首发悬念</b>：首轮 Igor Thiago 未立功，安切洛蒂预计轮换，Cunha 可能顶上——本场是确立首发中锋的窗口。<span style="color:var(--mut);font-size:12px">（上一场带入）</span></li>
+      <li><b>海地的终结力与防守专注度</b>：首轮 15 射 0 球（C组最多射门）却颗粒无收，Pierrot 错失绝佳头球；对巴西机会更稀缺，把握度与禁区前沿盯人决定能否避免大比分。<span style="color:var(--mut);font-size:12px">（上一场带入）</span></li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#13231a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含"上一场带入"信号）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 上一场带入 · 巴西攻坚低效 <span style="color:var(--mut);font-weight:400">· Opta / ESPN / Sky Sports · 06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">巴西首轮 1-1 平摩洛哥——<b>射门 12-14 反被压制</b>，系 2006 年世界杯以来首次单场射门处于劣势</div>
+      <p style="font-size:13.5px">巴西首战上半场被摩洛哥压制，第 21 分钟 Saibari 破门落后，靠 Vinícius 第 32 分钟一脚兜射扳平（受 Bruno Guimarães 助攻）。安切洛蒂赛后承认"上半场全队焦虑、神经紧绷"。Opta 指出本场巴西被对手射门数（14）超过自身（12），是自 2006 世界杯 1/4 决赛对法国以来首次，终结了 22 场连续射门占优的纪录；巴西也已连续两场世界杯小组赛不胜（2022 负喀麦隆 0-1 + 本场平局）。<span style="color:var(--warn)">（上一场带入 · 来自巴西 vs 摩洛哥前瞻迁移）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：阵地进攻"解题慢"是巴西当前的核心隐患。对深守且本轮被苏格兰逼到 0 球的海地，若巴西仍只靠 Vinícius 单点而无体系化创造，可能出现"控球碾压但久攻不下"的局面——这会推升早盘小球与"晚开张"的价值，也直接影响让球盘（-2.5/-3）能否打穿。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/brazil-vs-haiti-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 前瞻/数据</a> · <a href="https://www.espn.com/soccer/story/_/id/49054529/brazil-vs-morocco-2026-world-cup-vinicius-junior" style="color:var(--accent)">ESPN — 巴西"紧张"</a> · <a href="https://www.skysports.com/football/brazil-vs-morocco/report/549771" style="color:var(--accent)">Sky Sports — 战报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">巴西 · 安切洛蒂计划轮换 + Neymar 缺席 <span style="color:var(--mut);font-weight:400">· Khel Now / Sports Mole / SI · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Danilo、Alex Sandro、Cunha、Fabinho 有望进首发</b>；Neymar 本场不会出战、甚至不随队</div>
+      <p style="font-size:13.5px">据多家前瞻，安切洛蒂计划对首轮阵容做数处调整：Danilo、Alex Sandro 进入后防，曼联前锋 Matheus Cunha 顶替中锋、Fabinho 进中场，Casemiro、Lucas Paquetá、Igor Thiago 可能让位。Neymar 仍未恢复到比赛状态，本场不会出战、也不会随队，仅本周首次以个人训练形式短暂回归。除 Neymar 外巴西无重大伤情。预测首发（4-2-3-1）：Alisson；Danilo、Marquinhos、Gabriel、Alex Sandro；Bruno Guimarães、Fabinho；Cunha、Raphinha、Vinícius Jr；中锋（Igor Thiago / Luiz Henrique 之一）。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：轮换意味着巴西把首战的"焦虑"重置，用更高位的边后卫（Sandro/Danilo 插上）给海地低位防线施压；Cunha 顶中锋比 Igor Thiago 更具回撤串联与跑动能力，有望缓解"单点依赖 Vinícius"的攻坚瓶颈——若成立，巴西破密集的效率上修，让球盘上行风险增大。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://khelnow.com/football/world-football-brazil-predicted-lineup-vs-haiti-fifa-world-cup-202606" style="color:var(--accent)">Khel Now — 巴西首发</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-haiti-prediction-team-news-lineups_599463.html" style="color:var(--accent)">Sports Mole — 队况/轮换</a> · <a href="https://www.si.com/soccer/brazil-vs-haiti-world-cup-preview-predictions-lineups-6-19-26" style="color:var(--accent)">SI — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">🆕 上一场带入 · 海地终结力危机 <span style="color:var(--mut);font-weight:400">· Opta / ESPN · 06-13/14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">海地首轮 0-1 负苏格兰——<b>15 射 0 球（C组单轮最多射门）</b>，Pierrot 终场前头球错失</div>
+      <p style="font-size:13.5px">海地踢得不怯场：首轮射门数（15）为 C 组各队单场最多，禁区触球（22）与巴西并列居首，但 0 进球；McGinn 第 28 分钟一记折射破门即决定胜负，Pierrot 终场前 5 分钟近距离头球偏出错失扳平。Delcroix 表现亮眼——66 次传球零失误、抢断与解围均居全队第一（创海地世界杯单场传球纪录）。但宏观数据冰冷：海地世界杯历史至今全败、共打入 2 球、丢 15 球，出线概率仅 5.8%。<span style="color:var(--warn)">（上一场带入 · 来自海地 vs 苏格兰前瞻迁移）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：海地"能持球、能创造、但不会终结"的画像在对巴西时被放大——面对世界级门将 Alisson 和更稀缺的机会，海地大概率延续 0 球；同时其禁区前沿盯人若像对苏格兰那样靠一次折射就失守，巴西的个人能力（Vinícius/Raphinha）更可能把"久攻不下"转成"后段连下数城"。这支撑"巴西零封 + 海地难破门"的高置信判读。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/brazil-vs-haiti-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta — 海地数据/射门</a> · <a href="https://www.espn.com/soccer/story/_/id/49055260/haiti-scotland-world-cup-2026-result-score-recap-john-mcginn-ben-gannon-doak-group-c" style="color:var(--accent)">ESPN — 海地 0-1 苏格兰</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">海地 · 历史交锋与档次差 <span style="color:var(--mut);font-weight:400">· Opta · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队世界杯首次交锋；历史 3 战巴西全胜、共进 <b>17 球仅失 1 球</b>，含 2016 美洲杯 7-1</div>
+      <p style="font-size:13.5px">这是巴西与海地在世界杯舞台的首次相遇。两队此前共交手 3 次，巴西全胜、累计打入 17 球仅丢 1 球；最近一次正是在美国举行的 2016 美洲杯，巴西 7-1 大胜（Coutinho 帽子戏法），现役国脚中 Alisson、Marquinhos 当时在场。海地时隔 52 年重返世界杯（上次 1974 年西德），世界杯赛场至今未尝胜绩。<span style="color:var(--warn)">（历史样本久远，仅作档次差参考 · 待核现役阵容差异）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：历史交锋强化"巴西大胜"的先验，但 2016 年 7-1 的样本既有参考性也有迷惑性——它支撑大球/让球盘的情绪，却忽略了巴西本届阵地攻坚不顺、海地防线（Delcroix）尚有韧性的现实。市场可能因这段历史而高估"巴西轻松灌进 3+"，是判读让球盘价值是否被吃掉的关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/brazil-vs-haiti-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta — 历史交锋/7-1</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · C组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 3.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇧🇷 巴西</th><th>🇭🇹 海地</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#6</td><td class="sc">#84</td></tr>
+      <tr><td>世界杯史</td><td class="ht">5 次夺冠（史上最成功球队）</td><td class="sc">时隔 52 年重返（上次 1974）· 世界杯历史全败</td></tr>
+      <tr><td>本届首轮</td><td class="ht">1-1 平摩洛哥（Vinícius 进球；射门 12-14 被压制）</td><td class="sc">0-1 负苏格兰（15 射 0 球，C组最多射门）</td></tr>
+      <tr><td>积分/排位</td><td class="ht">1 分 · C组第 2</td><td class="sc">0 分 · C组第 4（垫底）</td></tr>
+      <tr><td>主教练</td><td class="ht">Carlo Ancelotti</td><td class="sc">Sébastien Migné</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.10（-1000，隐含≈87%）</td><td class="sc">胜 21.00（+2000，≈4%）· 平 11.00（+1000，≈8%）</td></tr>
+      <tr><td>大 / 小 3.5 球</td><td colspan="2" class="sc">大 3.5 @ 1.91（-110）/ 小 3.5 @ 1.91（-110）—— 线被推高至 3.5，反映档次差</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">巴西 3 战全胜，17 球失 1 球（含 2016 美洲杯 7-1）；世界杯首次交锋</td></tr>
+      <tr><td>关键缺阵</td><td class="ht">Neymar（未达比赛状态，不随队）</td><td class="sc">无重大伤停公开（待核）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈87/8/4）。赔率来源：BetOnline / 综合 moneyline 巴西 -1000、平 +1000、海地 +2000，美线转十进制：巴西 1.10、平 11.00、海地 21.00。大小球线 3.5，Over/Under 各约 -110（1.91）。Opta 超算给出巴西胜 87.3%、平 8.4%、海地胜 4.3%——与市场去水概率高度吻合，说明盘口定价合理、无明显情绪溢价；唯让球盘（-2.5/-3）与"开张时间"是真正的价值战场。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（巴西＝2022 世界杯＋2024 美洲杯；海地＝中北美预选 / 大赛新军）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇧🇷 巴西 · 进攻 xG/进球</td><td class="ht">2022 世界杯场均≈2.5 球（淘汰赛前火力旺）；<b>2024 美洲杯却仅 ≈0.86 xG/场</b>、40 射 5 球（终结贫瘠、被淘汰）——近年阵地攻坚已是顽疾；FootyStats 近 10 场 xGF <b>1.39</b>、控球 61%、场均 10.8 射 / 5.4 射正</td><td class="ht">首轮 <b>xG ≈1.23–1.26</b>、实进 1 球（1-1 平摩洛哥，Vinícius 破门，<b>射门 12-14 反被压制</b>）</td><td>本届投射贴近"美洲杯哑火档"而<b>远低于</b> 2022 火力；摩洛哥一战射门反少于对手，<b>阵地攻坚 + 终结效率</b>才是真考验，纸面 xG 1.2 对海地仍偏低</td></tr>
+      <tr><td class="ht">🇧🇷 巴西 · 防守 xGA/失球</td><td class="ht">FootyStats 近 10 场 xGA <b>1.07</b>、场均失 0.7、零封率 30%；2024 美洲杯被打出 3.24 xGA（防线并非铁桶）</td><td class="ht">首轮被摩洛哥打出约 <b>1.37 xGA</b>、丢 1 球（Alisson 终场连扑保平）</td><td>与历史基准基本持平、略偏高——对强队中前场仍会漏机会；但海地终结力远不及摩洛哥，本场失球预期应回落</td></tr>
+      <tr><td class="sc">🇭🇹 海地 · 进攻 xG/进球</td><td class="sc">预选 FootyStats 近 10 场 xGF 高达 <b>2.03</b>、场均 3.9 球、16 射、转化率 24%——<b>但样本对手＝Sint Maarten/Aruba/St Lucia/Barbados 等鱼腩</b>，含金量需大幅折价</td><td class="sc">首轮 <b>xG ≈1.06–1.21</b>、<b>15 射仅 2 射正、0 球</b>（0-1 负苏格兰，C组最多射门）</td><td>面对真正强队，预选刷出的华丽 xGF 立刻<b>腰斩</b>：射门多但质量/射正崩盘——这正是"预选刷弱旅"的陷阱；对巴西防线只会更难</td></tr>
+      <tr><td class="sc">🇭🇹 海地 · 防守 xGA/失球</td><td class="sc">预选 xGA <b>0.96</b>、场均失 1.0、零封率 40%；但全口径预选 xGA 累计居中北美倒数第二，纪律性在弱旅面前才成立</td><td class="sc">首轮仅丢 1 球（顶住苏格兰 1.05 xGA），防守表现尚可</td><td>对苏格兰防守不算崩；但面对巴西的边路爆点（Vinícius/Raphinha），<b>低位块被持续撕扯</b>的强度将远超预选与苏格兰一档</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：巴西本届投射（≈1.23 xG）落在"美洲杯哑火档"、<b>低于</b> 2022 火力，阵地攻坚仍是软肋；海地预选光鲜的 2.03 xGF 面对真实强队（苏格兰）即<b>腰斩</b>到 1 出头且 15 射 0 球，"预选刷弱旅"水分被戳破。结论与主线一致——巴西胜面极大，但"赢几个 / 何时开张"才是真正变量。来源：Opta Analyst（首轮 xG / 赛事统计）· FootyStats（两队球队页近 10 场 xG/射门/控球/零封）· xGscore（首轮 xG）· Opta 美洲杯 2024 复盘。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（xGscore）</td><td class="ht">巴西 ≈2.0–2.4</td><td class="sc">海地 ≈0.4–0.6</td><td>对手强度校准后巴西投射碾压——但"破密集低位 + 终结效率"是巴西近两年顽疾，需关注转化率与首球时间</td></tr>
+      <tr><td>Opta Power Rating / 超算</td><td colspan="2" class="sc">巴西 Power Rating <b>92.2</b> vs 海地 <b>57.1</b>（差 35.1，组内最大档次差，海地为全赛事倒数）；超算给巴西胜 <b>87.3%</b>、平 8.4%、海地胜 4.3%</td><td>对手强度校准后，海地预选样本含金量极低（对鱼腩刷出），巴西胜面与市场去水概率高度吻合</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt · PSxG · 定位球 xG 占比</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：巴西中高位逼抢 + 长时间高 field tilt，海地被迫深度低位、靠反击与定位球零星威胁</td><td>场面倾斜大概率全程倒向巴西，海地的 xT 主要来自反击转换</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差（海地首轮 15 射 0 球即典型）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FootyStats/xGscore 等公开来源；国家队在 PPDA/xT/field tilt/PSxG/定位球 xG 占比等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">巴西胜本身毫无悬念（无人押海地），热门价值早已被吃掉；真正的资金与分歧集中在"赢几个"——让球盘 -2.5/-3 与大小球 3.5</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 胜负无价值（已吃掉）；让球/大小球有真实分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">巴西 1.10 的赔率意味着胜负方向毫无投注价值——这是"热门价值已被吃掉"的典型。情绪资金真正流向"巴西大胜"叙事（让球 -2.5/-3、大球、Vinícius 进球），但巴西首轮攻坚不顺给"晚开张/小净胜"留下反向价值。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：巴西胜 全部 · 海地胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>巴西胜 87.3%；最可能比分倾向巴西大胜；海地出线仅 5.8%</td></tr>
+      <tr><td>Covers / Yahoo</td><td>美系投注媒体</td><td><b>巴西 3-0</b>（最可能单一比分，约 13–15%）；Best Bet 含 U3.5 + 巴西零封</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>巴西胜；Bet Builder 偏向巴西让球 + 进球较多</td></tr>
+      <tr><td>Sportscasting / Lineups</td><td>美系投注媒体</td><td><b>Vinícius 任意时间进球</b>（-110）；大 3.5 球（巴西火力）</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>巴西轮换仍取胜；预测 3-0 级别胜利</td></tr>
+      <tr><td>Squawka / 综合</td><td>数据媒体</td><td>巴西胜；偏大球；关注 Vinícius/Raphinha 解锁海地防线</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向 100% 统一（无人押海地或平局），但这是合理共识而非过热——1.10 的赔率本身就堵死了价值。真正分歧在<b>赢球幅度</b>：Covers 押 3-0/小 3.5（认为巴西攻坚慢、净胜有限）vs 多数押大球/让球 -2.5。情绪资金被 2016 年 7-1 的历史叙事拉向"巴西灌进 3+"，需警惕让球盘价值被高估。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>巴西胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>1X2（moneyline）</td><td class="ht">1.10（-1000）</td><td>压倒性热门；平 11.00 / 海地 21.00</td></tr>
+      <tr><td>06-18/19</td><td>综合多书商</td><td class="ht">1.10–1.11（-900~-1000）</td><td>基本稳定，胜负盘无移动催化</td></tr>
+      <tr><td>06-18/19</td><td>大/小 3.5 球</td><td colspan="2" class="ht">大 3.5 ≈1.91（-110）/ 小 3.5 ≈1.91（-110）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>巴西 -2.5/-3</td><td colspan="2" class="sc">巴西普遍让 2.5–3 球（线非赔率，具体以实时盘口为准 · 待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘毫无浮动空间（巴西 1.10 已封顶）。最活跃的资金在<b>让球盘（-2.5/-3）与大小球 3.5</b>——线被从常规的 2.5 上推至 3.5，本身就是市场对"档次差 + 巴西火力"的定价。但巴西首轮攻坚低效（射门反被压制）使"让 3 球打穿"并非稳妥，亚盘价值偏向"反向小净胜"。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率（DECIMAL）</th><th>定位变化 · 触发</th></tr>
+      <tr><td>赛前（赛事开盘）</td><td>夺冠 futures ≈ 9.00（8/1）；小组头名 ≈ 76–77%（Kalshi/Polymarket）；本场胜负未开</td><td>巴西列夺冠第一梯队、C 组绝对头名热门</td></tr>
+      <tr><td>本场开盘</td><td class="ht">巴西胜 1.10（-1000）/ 平 11.00（+1000）/ 海地 21.00（+2000）；大/小 3.5 ≈1.91（-110）；让球 巴西 -2.5/-3（线·赔率待核）</td><td>胜负即封顶；资金聚焦让球与大小球</td></tr>
+      <tr><td>现盘（06-19）</td><td class="ht">巴西胜 1.10–1.11（-900~-1000）维持；夺冠 futures 放宽至 ≈11.00（10/1）；让球/大球承压（具体让球赔率·待核）</td><td>"只平摩洛哥"重新定价 → 夺冠 futures 拉长、大胜叙事受质疑；胜负盘零移动</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：巴西<b>胜负定位无任何变化</b>——本场仍是 1.10 级"无悬念"热门，胜负方向不存在信息含量。首轮 1-1 平摩洛哥（攻坚低效、未能取胜）的重新定价<b>集中在让球与夺冠 futures</b>而非胜负：夺冠赔率由 ≈9.00 略放宽至 ≈11.00（8/1→10/1），市场对其"大胜/夺冠"叙事略打折扣；让球盘（-2.5/-3）与大球 3.5 因"只平"而面临被收窄/降温压力。一句话定位：<b>巴西赢球无悬念、市场分歧全在赢球幅度（让 2.5 还是让 3）；海地被定位为全赛事最弱之一（+2000~+2500）</b>。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：巴西胜 87.3%、平 8.4%、海地胜 4.3%——与博彩去水概率（87/8/4）几乎完全吻合，两池完全收敛、无情绪偏离。</li>
+      <li><b>核心叙事</b>：媒体焦点是"巴西能否找回火力 + Vinícius 个人秀"，以及"海地会否被血洗"（2016 年 7-1 反复被引用）；这制造了偏向大球与让球的情绪流量。</li>
+      <li><b>反向声音</b>：Covers/Yahoo 等以 3-0 + 小 3.5 为最佳下注，理由正是巴西阵地攻坚慢、海地（Delcroix 领衔）防线有韧性——这是对"血洗叙事"的对冲。</li>
+      <li><b>Kalshi / Polymarket</b>：本场单场胜负/总分细分的公开成交价未检得 <span style="color:var(--warn)">（待核）</span>；鉴于巴西胜近乎确定性事件，预测市场定价信息含量低。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与超算完全收敛，过热指数 <b>3/5</b>。胜负方向无价值（热门已被吃掉）；唯一有信息含量的市场是<b>让球盘（-2.5/-3）与大小球 3.5</b>——巴西首轮攻坚不顺 + 海地防线韧性，令"让 3 球/大球"存在被历史叙事高估的风险。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/brazil-vs-haiti-prediction-world-cup-2026-match-preview">Opta Analyst — 超算/前瞻</a> · <a href="https://www.covers.com/world-cup/brazil-vs-haiti-prediction-picks-odds-friday-6-19-2026">Covers — 预测/3-0</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/brazil-vs-haiti-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aNhQP3k9Gl4Q/">Racing Post — 赔率/Bet Builder</a> · <a href="https://www.sportscasting.com/news/brazil-vs-haiti-odds-world-cup-picks/">Sportscasting — 赔率/Vinícius</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-brazil-vs-haiti-06-19-26-world-cup-2026/">Squawka — 前瞻</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">巴西控球围攻 + 海地低位收缩，角球将明显单边倾向巴西；总角球数因海地解围出底线频繁而偏高；市场数据待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇧🇷 巴西</th><th>🇭🇹 海地</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">高控球围攻；边路传中 + Vinícius/Raphinha 内切；定位球资源丰富</td><td class="sc">低位防守 + 反击；进攻角球稀少</td><td style="color:var(--mut)">角球将单边倾向巴西</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈7–9（围攻型，角球产出高）<span style="color:var(--warn)">待核</span></td><td class="sc">≈2–4（多为反击，进攻角球少）<span style="color:var(--warn)">待核</span></td><td style="color:var(--mut)">差距悬殊</td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Marquinhos/Gabriel 高点 + 一流传中手</td><td class="sc">低：进攻定位球机会有限</td><td style="color:var(--mut)">巴西定位球得分来源之一</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">大幅占优（持球围攻时间长）</td><td class="sc">被迫解围出底线贡献巴西进攻角球</td><td style="color:var(--mut)">总数偏高但有"提前失悬念"下行变量</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：巴西围攻、海地深守解围，总角球数预计落在 9–13 区间，且角球差大幅倾向巴西（巴西独占可能 7+，海地 ≤3）；常见基准线 O/U 10.5 属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>巴西控球与围攻强度远超海地，角球差预计悬殊；角球让球盘大幅倾向巴西，价值取决于具体让球数与海地解围频率。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>海地长时间防守、被迫解围出底线，会推升巴西的进攻角球数；若巴西早早领先转入控制，节奏放缓则角球增速回落。总数大概率偏高（≥10）但存在"巴西早早 3-0 后收油门"的下行变量。</div>
+    <div class="insight"><div class="who">变量与两面性</div>巴西首轮阵地攻坚不顺——若本场仍久攻不下，围攻时间延长反而推高角球数；若 Vinícius/Cunha 早早打穿，比赛提前失去悬念，角球数可能回落。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>主裁：Alejandro Hernández Hernández（西班牙）</b>，1982 年生，2014 年起 FIFA 国际级主裁，曾于 2017 年获西班牙足协技委会评为西甲最佳主裁，是 2026 世界杯西班牙主裁之一。生涯执法尺度：综合多个统计库，<b>场均黄牌约 5.0–5.5 张、红牌约 0.12–0.25 张</b>（西甲样本）；以"出牌频率相对偏高、判罚易引争议"著称，西甲口碑两极。<span style="color:var(--warn)">（数据为联赛样本，见下方大赛说明）</span></div>
+    <h4>大赛执法尺度（关键校准）</h4>
+    <ul class="cl">
+      <li><b>无近期大赛主裁（场上）样本</b>：Hernández 在 <b>欧洲杯 2024 担任的是 VAR 视频裁判而非场上主裁</b>，且因争议（含苏格兰对匈牙利的点球漏判争议）在小组赛阶段被 UEFA 撤换。因此其"大赛场上执法尺度"缺乏可直接对账的样本——本场不能用其西甲均值冒充大赛尺度。</li>
+      <li><b>含义</b>：联赛偏高的牌量未必平移到世界杯（FIFA 大赛通常尺度更克制、强调连续性），但其"判罚易引争议"的特点在一边倒的比赛里影响有限——除非海地后段为保住颜面而战术犯规、或巴西球员（Vinícius 易与对手摩擦）情绪化。</li>
+      <li><b>本届统一新规</b>：门将持球 8 秒、仅队长可与裁判沟通、半自动越位——对一边倒比赛影响轻微；半自动越位会精准捕捉 Vinícius 的临界冲刺，对巴西进球数有轻微抑制。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在巴西压倒性占优的剧本里，裁判对胜负影响极小。唯一可操作的关注点是<b>牌量与点球</b>：Hernández 联赛牌量偏高，若海地下半场靠战术犯规拖延、或 Vinícius 在禁区内被拉扯，黄牌/点球概率会随其尺度上行——但缺乏其大赛场上样本，此判读置信度有限 <span style="color:var(--warn)">（待核其世界杯首场实际尺度）</span>。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:var(--warn);border:1px solid #6b4f1d;background:#3a2a12;border-radius:6px;padding:2px 8px">预测版 · 官方名单见赛前确认</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇧🇷 巴西 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Alisson; Danilo · Marquinhos · Gabriel · Alex Sandro; Bruno Guimarães · Fabinho; Cunha · Raphinha · Vinícius Jr; Igor Thiago</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Vinícius Júnior</td><td>左边锋 / 皇家马德里</td><td>巴西头号进攻出口；近 5 场世界杯参与 4 球（2 球 2 助）；首轮已破门，对位海地右路是全场最大错配</td></tr>
+      <tr><td class="ht">Raphinha</td><td>右边锋 / 巴塞罗那</td><td>另一侧爆点；内切射门 + 定位球主罚者</td></tr>
+      <tr><td class="ht">Matheus Cunha</td><td>前锋/前腰 / 曼联</td><td>预计轮换顶上；回撤串联与跑动有望缓解"单点依赖 Vinícius"</td></tr>
+      <tr><td class="ht">Alisson Becker</td><td>门将 / 利物浦</td><td>世界级国门；海地极难破门，零封概率高</td></tr>
+    </table>
+    <h4>🇭🇹 海地 预测首发（4-4-2 / 4-2-3-1）</h4>
+    <div class="lineup">Placide; Arcus · Adé · Delcroix · Expérience; Deedson · Jean Jacques · Bellegarde · Providence; Pierrot · Isidor</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Hannes Delcroix</td><td>中卫 / 效力欧洲</td><td>首轮最佳：66 传球零失误、抢断+解围双第一；海地防线韧性核心</td></tr>
+      <tr><td class="sc">Frantzdy Pierrot</td><td>前锋</td><td>头号支点；首轮终场前头球错失绝佳机会，终结力是海地生死线</td></tr>
+      <tr><td class="sc">Jean-Ricner Bellegarde</td><td>中场 / 效力欧洲</td><td>海地技术与持球核心，反击发起点</td></tr>
+      <tr><td class="sc">Johny Placide</td><td>门将</td><td>面对巴西围攻，扑救工作量巨大，是海地避免大比分的关键</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Opta / Sports Mole / Khel Now / SI），<b>以赛前官方名单为准</b>。巴西中锋人选（Igor Thiago vs Cunha 顶中锋 vs Luiz Henrique）待官方确认；Neymar 确认不出战（待核是否进大名单）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5fce8c">🇧🇷 巴西 · Carlo Ancelotti</div>
+        <div class="role">4-2-3-1 控球围攻 + 边路个人能力解锁</div>
+        <ul class="cl">
+          <li>安切洛蒂体系倚重边路个人能力（Vinícius/Raphinha）+ 双后腰（Guimarães/Fabinho）控制，靠插上的边后卫（Sandro/Danilo）提供宽度与传中。</li>
+          <li><b>对账近两届大赛</b>：2022 世界杯 1/4 决赛点球负克罗地亚、2024 美洲杯 1/4 决赛点球负乌拉圭——两次都因<b>淘汰赛阵地攻坚乏创造、终结低效</b>出局（对乌拉圭多打一人仍 0-0）。这套"个人能力流但体系化创造不足"的隐患，本届首轮对摩洛哥再度显形（射门反被压制）。</li>
+          <li>风险：对深守的海地若仍只靠 Vinícius 单点、缺乏中路渗透与二点冲击，可能久攻不下、开张偏晚——让球盘 -3 与大球存在落空风险。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇭🇹 海地 · Sébastien Migné</div>
+        <div class="role">4-4-2 / 4-2-3-1 低位防守 + 快速反击</div>
+        <ul class="cl">
+          <li>海地是世界杯新军/中北美区球队，无近两届世界大赛样本可对账；其打法以密集低位、限制空间、依靠 Bellegarde/Pierrot 的反击与零星机会为主。</li>
+          <li>首轮对苏格兰证明：海地<b>能持球、敢压上（15 射 22 次禁区触球）但不会终结</b>，Delcroix 领衔的防线有韧性，靠一次折射才丢球。</li>
+          <li>风险：对巴西机会更稀缺、个人能力差距更大；若防守专注度像首轮那样在禁区前沿松动，巴西的 Vinícius/Raphinha 更可能把"久攻"转成"连下数城"，大比分风险高于对苏格兰。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>巴西胜率 87.3%、海地 4.3%——本届小组赛排名差距最大的一场。Opta 同时点出巴西的隐忧：首轮射门 12-14 被压制（2006 来首次世界杯射门劣势），连续两场小组赛不胜；海地虽射门多（15）却延续世界杯全败、共失 15 球的惨淡，出线概率仅 5.8%。</div>
+    <div class="insight"><div class="who">Covers / Yahoo <small>· 投注媒体</small></div>最佳下注押 <b>巴西 3-0 + 小 3.5 球 + 巴西零封</b>：理由是巴西攻坚慢、净胜可能有限，而海地"对组织防线无法破门"使零封侧高置信。这是对"血洗叙事"的理性对冲。</div>
+    <div class="insight"><div class="who">综合 · 巴西侧画像 <small>· 战术信号</small></div>巴西近两届大赛均倒在淘汰赛点球（克罗地亚、乌拉圭），共同病根是<b>面对密集防守缺乏体系化破局</b>。对海地，巴西的个人能力上限足以取胜，但"赢多少、何时开张"取决于安切洛蒂能否解决阵地创造——这正是本场最有信息量的看点，而非胜负本身。</div>
+    <div class="insight"><div class="who">综合 · 海地侧画像 <small>· 战术信号</small></div>海地时隔 52 年回归、世界杯尚无胜绩，本场出线已近渺茫，更多是"荣誉与经验之战"。Delcroix 的零失误表现说明海地并非送分童子；其现实目标是限制净胜球、争取历史性的世界杯首球，而非爆冷。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：巴西胜是确定性事件（≈87%）；<b>巴西 3-0 是基准/共识最高单一比分</b>；2-0 / 4-0 为相邻高概率比分；平局（8%）与海地胜（4%）是尾部风险，需巴西极端低效 + 海地反击灵光同时发生。</li>
+      <li><b>关键先生</b>：Vinícius（巴/最稳定开张点）、Raphinha（巴/另一侧爆点 + 定位球）、Cunha（巴/中锋串联）、Delcroix（海/防线韧性）、Pierrot（海/反击终结）。</li>
+      <li><b>胜负手</b>：本场真正的看点不是胜负，而是<b>巴西的阵地攻坚效率与开张时间</b>——这是其近两届大赛淘汰赛出局的病根（首轮再现）。若早早打穿，比分滑向 3-0/4-0；若久攻不下，让球 -3 与大球落空。</li>
+      <li><b>市场视角</b>：博彩与 Opta 完全收敛（≈87%），胜负无价值（热门已被吃掉），过热指数 3/5。最有信息含量的市场是<b>让球盘（-2.5/-3）与大小球 3.5</b>——警惕 2016 年 7-1 历史叙事高估"巴西大胜"。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 巴西首发中锋人选（Igor Thiago / Cunha / Luiz Henrique）及轮换最终阵容；② Neymar 是否进大名单；③ 海地是否有未公开的伤停；④ 亚盘让球线（-2.5/-3）具体赔率以赛前实时盘口为准；⑤ Kalshi/Polymarket 单场价格未公开检得；⑥ 角球具体盘口数据未检得；⑦ 主裁 Hernández 世界杯首场实际执法尺度（无大赛场上样本，待其本届实战验证）。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://theanalyst.com/articles/brazil-vs-haiti-prediction-world-cup-2026-match-preview">Opta Analyst — 巴西 vs 海地前瞻/超算/历史交锋</a> · <a href="https://www.covers.com/world-cup/brazil-vs-haiti-prediction-picks-odds-friday-6-19-2026">Covers — 预测/3-0/赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/brazil-vs-haiti-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aNhQP3k9Gl4Q/">Racing Post — 赔率/Bet Builder</a><br>
+      • <a href="https://khelnow.com/football/world-football-brazil-predicted-lineup-vs-haiti-fifa-world-cup-202606">Khel Now — 巴西预测首发</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-haiti-prediction-team-news-lineups_599463.html">Sports Mole — 队况/轮换</a> · <a href="https://www.si.com/soccer/brazil-vs-haiti-world-cup-preview-predictions-lineups-6-19-26">SI — 前瞻/首发</a> · <a href="https://www.sportscasting.com/news/brazil-vs-haiti-odds-world-cup-picks/">Sportscasting — 赔率/Vinícius</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49054529/brazil-vs-morocco-2026-world-cup-vinicius-junior">ESPN — 巴西 1-1 摩洛哥（上一场带入）</a> · <a href="https://www.skysports.com/football/brazil-vs-morocco/report/549771">Sky Sports — 巴西 vs 摩洛哥战报</a> · <a href="https://www.espn.com/soccer/story/_/id/49055260/haiti-scotland-world-cup-2026-result-score-recap-john-mcginn-ben-gannon-doak-group-c">ESPN — 海地 0-1 苏格兰（上一场带入）</a><br>
+      • <a href="https://en.wikipedia.org/wiki/Alejandro_Hern%C3%A1ndez_Hern%C3%A1ndez">Wikipedia — Alejandro Hernández Hernández</a> · <a href="https://khelnow.com/football/world-football-euro-two-laliga-referees-dismissed-from-duty-rest-of-competition-202406">Khel Now — Hernández 欧洲杯 VAR 被撤换</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯裁判名单</a> · <a href="https://valuestats.com/en/referee/16998-alejandro-jose-hernandez-hernandez">ValueStats — Hernández 牌量统计</a><br>
+      • <a href="https://www.espn.com/soccer/report/_/gameId/703949">ESPN — 2024 美洲杯 乌拉圭 0-0 巴西（点球出局）</a> · <a href="https://www.foxnews.com/sports/world-cup-2022-croatia-eliminates-brazil-penalty-shootout-advancing-semifinals">Fox — 2022 世界杯 克罗地亚淘汰巴西</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-brazil-vs-haiti-06-19-26-world-cup-2026/">Squawka — 前瞻</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-19 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#1d9e4b',SC='#2f6ab0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['巴西胜','平局','海地胜'],datasets:[{data:[87,8,4],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 3.5 球','小 3.5 球'],datasets:[{data:[52,48],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，线推高至 3.5）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[6,12,39,84],backgroundColor:[HT,'#c8102e','#1f3a8a',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'巴西',data:[7,7.5,8,7.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'海地',data:[5,3.5,4.5,3.5,4,2.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

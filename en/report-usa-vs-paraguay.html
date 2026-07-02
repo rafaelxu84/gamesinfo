@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Analysis · USA vs Paraguay · 2026 World Cup Group D</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --us:#1f4e9c;--py:#d0312d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f4e9c,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13192b,#251515);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.us{color:#7fa6e6;font-weight:600}td.py{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">⚽ 2026 World Cup · Group D Round 1 · USA's World Cup home debut</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0d3b66,#1d4a2a);margin-left:6px">🏁 FT 4-1</span>
+  <h1>USA vs Paraguay</h1>
+  <div class="meta">June 12, 2026 · Los Angeles, SoFi Stadium (Inglewood) · 21:00 ET / 18:00 local · Group D (also: Australia, Türkiye)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 USA</div><div class="rk">FIFA #16 · Value €410m · Host</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇾 Paraguay</div><div class="rk">FIFA #40 · Value €157.15m · Back after 16 years</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review module ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics & Data <span style="font-size:12px;color:var(--mut);font-weight:500">· FT 4-1 (HT 3-0) · facts and interpretation kept separate</span></h2>
+    <div class="sub">The market gave the USA only ≈49%, yet they tore Paraguay's defense apart for 3-0 by half-time; Balogun bagged a brace and Reyna sealed it with a stoppage-time trivela — this is the product's biggest prediction miss to date.</div>
+
+    <h4 style="margin-top:6px">① Score Progression</h4>
+    <p style="font-size:13.5px">The USA struck early: <b>7′ McKennie cut-back cross, Bobadilla own goal</b> for 1-0; <b>31′ Balogun</b> tucked in a deflected Pulisic ball into the bottom corner for 2-0; <b>45+5′ Balogun</b> added another (Tillman through ball in behind, holding off a tackle to chip into the top corner), HT 3-0 essentially locking it up. In the second half Paraguay's <b>73′ substitute Mauricio</b> pulled one back, finishing first time off an Enciso lay-off; <b>90+8′ Reyna</b> came off the bench to seal 4-1 with a trivela (outside-of-the-boot curler).</p>
+    <div class="lineup">7′ ⚽ Bobadilla OG (USA 1-0)  ·  31′ ⚽ Balogun  ·  45+5′ ⚽ Balogun (HT 3-0)  ·  73′ ⚽ Mauricio (PAR)  ·  90+8′ ⚽ Reyna (trivela)  ·  FT 4-1  ·  🟨 Almirón (PAR, dive, VAR-overturned)</div>
+
+    <h4 style="margin-top:18px">② Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇺🇸 USA</th><th>🇵🇾 Paraguay</th><th>One-line read</th></tr>
+      <tr><td>Possession</td><td class="us">65%</td><td class="py">35%</td><td>The USA controlled, but the key was efficiency, not possession</td></tr>
+      <tr><td>xG (expected goals)</td><td class="us">1.35</td><td class="py">0.47</td><td>The USA's 4 goals far exceeded 1.35 xG — clinical finishing (Balogun/Reyna) was decisive, not "overwhelming chances"</td></tr>
+      <tr><td>Actual goals vs xG</td><td class="us">4 (+2.65)</td><td class="py">1 (+0.53)</td><td>Both beat their xG, but the USA's conversion efficiency was a class apart</td></tr>
+      <tr><td>Goal source</td><td class="us">Open play ×3 + OG</td><td class="py">Substitute transition</td><td>The USA broke the bunker with combination play + individual quality — exactly what was doubted pre-match</td></tr>
+      <tr><td>Referee / discipline</td><td colspan="2" style="color:#cbd5e1">Referee Danny Makkelie (Netherlands) · VAR rescinded Ream's yellow, awarded Almirón a yellow for diving · restrained officiating overall</td><td>No penalty, low-contact — the result decided entirely in open play</td></tr>
+    </table>
+    <div class="note">Data sources: <a href="https://theanalyst.com/articles/united-states-vs-paraguay-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.cbssports.com/soccer/news/usa-paraguay-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS Sports</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021458" style="color:var(--accent)">FIFA Match Centre</a> (score/goals/xG agree across ≥2 sources).</div>
+
+    <h4 style="margin-top:18px">③ Tactical Review</h4>
+    <div class="insight"><div class="who" style="color:#7fa6e6">USA: blitz + individual quality to break the bunker</div>The USA went 3-0 by half-time, all goals from open play (including the OG), built on McKennie's cut-backs, Pulisic/Tillman's passing quality and Balogun's finishing. <b>This shows the USA's ability to break a South American defensive block was badly underrated by the market</b> — the pre-match "≈49%, can they crack the bunker?" pricing was falsified outright by Balogun's form and the wing-to-center combination play.</div>
+    <div class="insight"><div class="who" style="color:var(--good)">Balogun's form = attacking spearhead confirmed</div>Balogun followed up his 5/31 goal against Senegal with a brace, both high quality (deflected finish + chip while holding off a defender). <b>This shows Pochettino's lone-striker pivot has found its answer</b>, the positive feedback loop holds, and it's the biggest certainty in this USA attacking system.</div>
+    <div class="insight"><div class="who" style="color:#f08a82">Paraguay: the structure collapsed fast once behind</div>Defined pre-match as "structurally solid, able to drag matches into the mud", Paraguay instead shipped 3 goals in 45 minutes. <b>This shows that once Alfaro's low block is breached by an early goal and they have to push out, their transition defending is a huge hole</b> — another early concession next time would leave them very exposed.</div>
+    <div class="insight"><div class="who">Reyna's bench impact</div>Reyna came off the bench to seal it in stoppage time with a trivela, <b>showing the USA's second-line creativity depth (Reyna/Tillman) is a real weapon</b> — Pochettino's attacking rotation hand is deeper than expected.</div>
+
+    <h4 style="margin-top:18px">④ Prediction Reconciliation (pre-match conclusions checked item by item)</h4>
+    <table>
+      <tr><th>Pre-match main line</th><th>Result</th><th>Note</th></tr>
+      <tr><td>USA win implied only ≈49%; market deeply doubts USA breaking the bunker</td><td style="color:var(--bad);font-weight:700">✗ Big miss</td><td>The USA won 4-1, 3-0 by half-time — the market pricing was completely falsified; this is the product's biggest directional misjudgment</td></tr>
+      <tr><td>Low-scoring slog / goals market skewing down (Under lean)</td><td style="color:var(--bad);font-weight:700">✗ Miss</td><td>5 goals total, Over 2.5 cruised in; the mud-slog script fell flat entirely</td></tr>
+      <tr><td>Pulisic + Balogun carrying over Senegal form</td><td style="color:var(--good);font-weight:700">✓ Hit</td><td>Balogun's brace, Pulisic assisting the second goal — the breakthrough read was accurate</td></tr>
+      <tr><td>Richards' centre-back start in doubt</td><td style="color:var(--good);font-weight:700">✓ Resolved</td><td>Richards started as expected and was solid; the pre-match concern didn't materialize</td></tr>
+      <tr><td>Paraguay without Enciso, counter downgraded</td><td style="color:var(--warn);font-weight:700">~ Info update</td><td>Enciso actually played and assisted Mauricio's only goal — the pre-match "absent" info was wrong / he recovered, recorded honestly</td></tr>
+    </table>
+    <div class="flag"><b>Reconciliation summary:</b> this is the product's <b>biggest prediction miss to date</b> — the core error was following the market in over-weighting Paraguay's "structural solidity" and underrating Balogun's current form and the USA's home-crowd momentum. The carry-over reads (Pulisic/Balogun) and the resolution of the Richards concern hit, but the result and goals-market direction were both wrong and must be honestly logged in the hit-rate ledger.</div>
+
+    <h4 style="margin-top:18px">⑤ Forward Carry-Over (into the next match)</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🇺🇸 USA → next vs Australia (6/19 Seattle)</div>
+        ① <b>Balogun's hot form</b> is the biggest carried-over asset, and the lone-striker pivot system is now proven;<br>② <b>The "break the bunker" doubt is resolved</b>: Australia will likely also defend deep, but this match proved the USA has a wing-to-center + individual-quality solution;<br>③ <b>Defensive focus needs watching</b>: they slackened after 3-0 and conceded one, so against more dangerous opponents (Australia's aerial and wing play) full-match intensity must hold; Richards being fit and available is a positive.</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇵🇾 Paraguay → next vs Türkiye (6/19-20 Santa Clara)</div>
+        ① <b>Must avoid an early concession</b>: shipping 3 in 45 minutes exposed a glaring flaw in transition defending once breached, a fatal point against an equally attack-minded Türkiye;<br>② <b>Enciso available</b>: he created the only goal here and is the linchpin of Paraguay's counter-attacking creativity — they should build counters around him;<br>③ <b>The low block needs rebuilt confidence</b>: the formation-stretching problem after an early goal must be fixed in training, or their qualification outlook becomes very precarious.</div>
+    </div>
+    <div class="note" style="margin-top:14px">Below is the full <b>pre-match analysis archive</b> (kept verbatim as the basis for prediction reconciliation).</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Take (read this first)</h3>
+    <p class="lead">The highest-pressure opener in US history: hosting the tournament + everything Pochettino has built since taking over is staked on this summer. The on-paper gap is clear — squad value <b>2.6×</b>, FIFA ranking #16 vs #40, and the USA arrives with positive momentum after a <b>3-2 win over Senegal</b> on 5/31 (Pulisic and Balogun scoring). Yet the market's pricing is <b>far cooler: the USA's implied win probability is only ≈49%</b> (1.95; prediction markets 49.5%) — because Alfaro's Paraguay is exactly the type the USA least wants to face: 6th in CONMEBOL qualifying, structurally solid, dragging matches into the mud with a defensive block and set pieces, and they beat Argentina in qualifying. Two US concerns: <b>centre-back Richards only just returned to training from an ankle injury (start in doubt)</b>, and Pulisic's fitness base after a season interrupted by hamstring trouble + bursitis. Paraguay, for its part, is missing <b>Enciso and Balbuena</b>, dulling the counter-attack's fangs.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Nature</div><div class="v" style="color:var(--warn)">Host debut</div></div>
+      <div class="key"><div class="k">Value</div><div class="v">USA ≈2.6×</div></div>
+      <div class="key"><div class="k">USA implied win</div><div class="v" style="color:#7fa6e6">≈49%</div></div>
+      <div class="key"><div class="k">Richards</div><div class="v" style="color:var(--warn)">Doubtful</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>The ≈49% pricing signal</b>: a 2.6× value gap but odds barely better than a coin flip — the market deeply doubts the USA's ability to break a South American defensive block.</li>
+      <li><b>Richards' centre-back slot</b>: if he doesn't make it, whoever partners Ream against Sanabria's hold-up play and set pieces is the USA's thinnest seam.</li>
+      <li><b>Pulisic + Balogun carrying over the Senegal form</b>: both scored on 5/31 — replicating that in settled play is the key to breaking through.</li>
+      <li><b>Paraguay without Enciso/Balbuena</b>: counter-attacking creativity drops a tier, making an all-out bunker even more likely — pushing the goals market further toward the under.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: key late-breaking news ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Late-Breaking News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · With sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals affecting this match, with an item-by-item explanation of how each changes tactics or the result</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">USA · Injury <span style="color:var(--mut);font-weight:400">· Pre-match assessment · Unverified</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">The lone defensive doubt: centre-back <b>Chris Richards says he's healed and returned to full training Monday; his start remains in doubt</b>; rest of the squad healthy</div>
+      <p style="font-size:13.5px">Matchday update (double-sourced): Richards tore ankle ligaments with Crystal Palace in May and missed over a month, <b>only rejoining full training this Monday</b>; he says he's fully fit, but his absence from the Germany friendly had publicly "annoyed" Pochettino. If he doesn't start, <b>Miles Robinson or McKenzie</b> partners Tim Ream (Sports Mole calls it "Pochettino's defensive dilemma").</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Richards is the only right-sided centre-back in the US defense combining physicality and ball-playing. If he's out or off the pace, then against Sanabria's hold-up play and the <b>set-piece attacks</b> Paraguay leans on most, 37-year-old Ream will have a makeshift partner beside him — exactly the kind of weakness Alfaro's teams attack best. <span style="color:var(--warn)">[Start or not to be verified on the official teamsheet 1 hour before kickoff]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48976577/usa-world-cup-chris-richards-injury-mauricio-pochettino-germany" style="color:var(--accent)">ESPN — Richards recovery timeline</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Richards decision/projected XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Paraguay · Absences <span style="color:var(--mut);font-weight:400">· Double-sourced · Enciso status disputed, flagged "unverified"</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Paraguay's key man <b>Julio Enciso all but confirmed out of this match</b> (double thigh contusion) — earliest return in round 3 vs Australia; Balbuena out injured</div>
+      <p style="font-size:13.5px">Matchday update (double-source confirmed): Enciso was <b>stretchered off</b> in the 25th minute of the 6/5 friendly vs Nicaragua (double front/back thigh impact) and has had an MRI; he's expected to stay in the squad but with the <b>earliest return in round 3 vs Australia</b> — effectively out of this match. Qualifying scorer Enciso is precisely the most creative point of Paraguay's counters; Balbuena's injury removes a set-piece aerial target. Beyond that Alfaro has <b>no other injuries</b> and keeps his settled core.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Paraguay had already bet everything on "a handful of counters + set pieces"; without Enciso, the counter degrades from "a creative fang" to a single thread of "Almirón carrying alone + Sanabria attacking crosses"; Balbuena's absence removes an aerial presence at both ends on set pieces. The practical meaning for the USA: <b>the chance of conceding on the break falls, and the game gets closer to a one-half attack-vs-defense drill</b> — whether they actually break through is another matter. <span style="color:var(--warn)">[Whether Enciso makes the squad/bench — official teamsheet decides]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.beinsports.com/en-nz/football/fifa-world-cup-2026/articles/paraguay-s-julio-enciso-injured-ahead-of-world-cup-2026-06-06" style="color:var(--accent)">beIN — Enciso injury</a> · <a href="https://www.si.com/soccer/usmnt-first-world-cup-opponent-injury-blow-star-player" style="color:var(--accent)">SI — Injury confirmation</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — Preview/absences</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">USA · Form <span style="color:var(--mut);font-weight:400">· 05-31 final warm-up</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">USA closes prep with a 3-2 win over Senegal: <b>Pulisic and Balogun both score</b> — the front line enters the World Cup with positive feedback</div>
+      <p style="font-size:13.5px">In the 5/31 closing friendly the USA <b>beat Senegal 3-2</b>, with Pulisic and Balogun each scoring. For Pulisic this is an important signal — his AC Milan season was repeatedly interrupted by <b>hamstring trouble and bursitis</b>, leaving him without direct output for long stretches; Balogun (Monaco, 19 goals in all competitions last season) is locked in as the lone striker.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: the USA's two most realistic channels to break Paraguay's low block are exactly Pulisic's cut-inside spark and Balogun's box finishing — both scoring in the same pre-tournament match effectively lights up "the USA's only clear path to goals". Conversely, if Pulisic's fitness base can't sustain 90 minutes of high output (a season-long injury history), the USA's creativity in settled play falls off a cliff to the Tillman/McKennie second-tier plan.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/" style="color:var(--accent)">Racing Post — 3-2 Senegal/Pulisic's injury season</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — Team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">USA · Goalkeeper signal <span style="color:var(--mut);font-weight:400">· Lineup picture</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">The goalkeeper battle is settled: <b>Matt Freese has displaced Matt Turner as Pochettino's first choice</b></div>
+      <p style="font-size:13.5px">Sports Mole confirms <b>Matt Freese has "definitively taken over"</b> — the NYCFC keeper has outlasted former No. 1 Matt Turner after a year of competition and will guard the net in the opener. Midfield is anchored by Adams + McKennie, with Tillman pushing forward and Pulisic playing off Balogun.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Freese's distribution is the core reason Pochettino picked him — the USA must build from the back under Paraguay's midfield press, and the keeper's involvement is the first link. The risk side: Freese has no World Cup experience, and his first touches under 70,000 home fans + opening-night pressure are the prime target of Paraguay's early high-press probes.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Freese first choice</a> · <a href="https://www.nbcsports.com/soccer/news/usmnt-lineup-versus-paraguay-who-will-pochettino-choose-for-usa-in-world-cup-opener" style="color:var(--accent)">NBC — Lineup discussion</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match referee · Officially announced <span style="color:var(--mut);font-weight:400">· 06-08 FIFA appointment</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: <b>Dutch star official Danny Makkelie</b> — 506 career matches, <b>3.40 yellows/game, 0.32 penalties/game</b>, a lenient flow-friendly style; penalty rate up to 0.50/game this season</div>
+      <p style="font-size:13.5px"><b>Quantified profile (KickoffScore/StatsHub)</b>: 506 career matches, averaging <b>3.40</b> yellows, 0.09 reds, <b>0.32 penalties/game</b>; 2025/26 season over 26 matches: 3.12 yellows/game, <b>0.50 penalties/game</b>, 22.4 fouls/game — among international referees he is the "few cards, let it flow, but willing to point to the spot" type. Deep big-match résumé (Champions League/Euros level). History: <b>refereed the USA in a 2015 friendly vs Germany; no public record officiating Paraguay (not found — stated as is)</b>. VAR is Spain's Carlos del Cerro Grande.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: a lenient standard cuts both ways — last November's USA-Paraguay friendly ended in a melee, and if Makkelie keeps his "few whistles" style, Paraguay's physicality and niggly fouls get waved on more often, and the game can turn scrappy; but his 0.50 penalties/game this season, layered on the USA's frequency of box entries (Pulisic/Balogun/Dest), makes <b>a penalty this match's most underrated breakthrough channel</b>. The "captains only" rule still lands squarely on Paraguay's habit of mobbing the referee.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.statshub.com/referee/makkelie-danny-desmond/72792" style="color:var(--accent)">StatsHub — Makkelie data</a> · <a href="https://kickoffscore.com/referees/danny-makkelie" style="color:var(--accent)">KickoffScore — Season data</a> · <a href="https://sports.yahoo.com/articles/referee-usmnts-opening-world-cup-160003416.html" style="color:var(--accent)">Yahoo — Appointment/VAR</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Off the pitch · Opening ceremony & ticketing <span style="color:var(--mut);font-weight:400">· 06-12 matchday</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">A star-studded SoFi opening ceremony (Katy Perry/Future/Anitta/LISA etc.); but <b>tickets still unsold days before kickoff</b>, with $1,120 starting prices sparking national controversy</div>
+      <p style="font-size:13.5px">The US-leg opening ceremony (one of three across the host nations) features Katy Perry, Future, Anitta, LISA, Rema and Tyla. The flip side: thousands of seats remain on FIFA's site and the secondary market, from $1,120 up to $2,735 — the New York/New Jersey attorneys general have publicly criticized the pricing, and Trump said he "wouldn't pay $1,000 to watch a game".</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: a full house or not affects how much "host-atmosphere dividend" actually materializes — empty patches or neutral-fan filler would discount the home push the US team is counting on; the ticket-price controversy has also become a hotter storyline than the team itself, siphoning emotional energy. Direct impact on the match is limited, but it explains the contrast of "online buzz exploding, stadium not necessarily roaring".</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.cbssports.com/soccer/news/2026-world-cup-opening-ceremony-live-updates/live/" style="color:var(--accent)">CBS — Opening ceremony</a> · <a href="https://www.npr.org/2026/06/08/nx-s1-5849905/fifa-world-cup-tickets-prices" style="color:var(--accent)">NPR — Ticket-price controversy</a> · <a href="https://sports.yahoo.com/articles/thousands-world-cup-tickets-remain-115259383.html" style="color:var(--accent)">Yahoo — Remaining tickets</a></div>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section>
+    <h2><span class="n">1</span> The Data (core)</h2>
+    <div class="sub">Squad value · 1X2 implied probability (de-vigged odds + prediction-market cross-check) · Group D landscape — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Total squad value (€ million, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 implied probability (books de-vigged vs prediction markets)</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group D squad values (€ million)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst rating 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇺🇸 USA</th><th>🇵🇾 Paraguay</th></tr>
+      <tr><td>FIFA ranking</td><td class="us">#16</td><td class="py">#40</td></tr>
+      <tr><td>Total squad value</td><td class="us">≈€410m</td><td class="py">€157.15m</td></tr>
+      <tr><td>Key finishers</td><td class="us">Pulisic (Milan), Balogun (Monaco, 19 goals last season)</td><td class="py">Sanabria (Cremonese, 4 in qualifying: winners vs Bolivia/Venezuela, equalizer vs Argentina)</td></tr>
+      <tr><td>Path here</td><td class="us">Host, automatic</td><td class="py">6th in CONMEBOL qualifying (28 pts), beat Argentina 2-1 at home</td></tr>
+      <tr><td>Final warm-up</td><td class="us">3-2 win vs Senegal (Pulisic/Balogun scored)</td><td class="py">— (Alfaro's settled core, no new injuries)</td></tr>
+      <tr><td>1X2 (books)</td><td class="us">1.95 (implied ≈49%)</td><td class="py">3.95 (≈24%) · Draw 3.45 (≈27%)</td></tr>
+      <tr><td>Prediction markets</td><td class="us">Kalshi/Polymarket USA 49.5%</td><td class="py">Draw 28.5% · Paraguay 23.5% — cross-confirming the books</td></tr>
+    </table>
+    <div class="note">📌 The one number to remember: <b>a 2.6× value gap, yet a win probability of only ≈49%</b>. Books and prediction markets confirm each other (49/27/24 ≈ 49.5/28.5/23.5), so this is not sentiment pricing — the market systematically doubts the USA's ability to crack a South American low block. That's also why the 3.45 draw is listed by several outlets as the "value direction".</div>
+  </section>
+
+  <!-- ===== Betting market heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Celebrity picks / odds / money flow</span></h2>
+    <div class="sub">Nationwide attention maxed out, but prices strikingly calm — the classic hot-buzz, cold-pricing split</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Extreme one-sided public money (raised 06-12)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The core matchday signal: <b>87-94% of public money is one-sided on a USA team priced at only ~50% to win</b> (DraftKings 94% of handle/BetMGM 89%), yet the price barely moves and the draw has quietly been marked up to 29% — a textbook "public money vs unmoving price" divergence, with the books holding a huge positive interest in the draw.</div>
+    </div>
+
+    <h4>① Expert picks aggregated (direction tally: ≈7-0 all on a narrow USA win; about half choosing defensive props)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>VSiN</td><td>Las Vegas betting network</td><td>USA ML 1.91 + BTTS "No" 1.77, parlay 2.90 — low-scoring USA win</td></tr>
+      <tr><td>SportsLine · Jon Eimer</td><td>Verified expert (31-13 in UCL)</td><td>Leans USA-direction best bet (specific pick behind paywall · unverified)</td></tr>
+      <tr><td>CBS / Sports Mole / Goal</td><td>Prediction outlets</td><td>Unanimous USA-win direction; Goal: "USMNT to start strongly in LA"</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>USA win as baseline, "narrow win + low score" the main script</td></tr>
+      <tr><td>Dimers model</td><td>Quant</td><td>USA 51.2% / Draw 25.7% / Paraguay 23.1%, most likely score <b>1-0</b></td></tr>
+      <tr><td>AI panel · ChatGPT</td><td>NYSportsDay three models</td><td>Contrarian cushion: <b>Paraguay +0.5 (1.80)</b> — "USA wins but wins ugly"</td></tr>
+      <tr><td>AI panel · Claude</td><td>Same</td><td>USA ML (2.05) — believes the coin-flip price underrates home advantage</td></tr>
+      <tr><td>AI panel · Gemini</td><td>Same</td><td><b>Under 2.5 goals (1.61)</b>: the three models' most common consensus score is 1-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds & public money flow (US odds converted to decimal)</h4>
+    <table>
+      <tr><th>Market</th><th>USA win</th><th>Draw</th><th>Paraguay win</th></tr>
+      <tr><td>FanDuel</td><td class="us">1.95</td><td>3.40</td><td class="py">4.10</td></tr>
+      <tr><td>Caesars</td><td class="us">1.91</td><td>3.35</td><td class="py">4.05</td></tr>
+      <tr><td>Implied probability (de-vigged)</td><td class="us">≈48.8%</td><td>≈28.0%</td><td class="py">≈23.2%</td></tr>
+      <tr><td>Kalshi / Polymarket</td><td class="us">50%</td><td><b>29%</b></td><td class="py">23-24%</td></tr>
+      <tr><td>O/U 2.5 (FanDuel)</td><td colspan="3">Over 2.28 / Under 1.63 — the under heavily backed; Kalshi/Polymarket give the under 59-60%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>The core matchday divergence</b>: <b>DraftKings 89% of tickets/94% of handle, BetMGM 87%/89%, another major book 90%/82% one-sided on the USA</b> — yet the USA price has actually ticked down vs the 06-11 baseline (49→48.8%) and the draw is up to 28-29%. A tsunami of public money that can't move the price = bookmakers and sharp money taking the other side. Historically, in this structure, "a boring draw" is precisely the books' most profitable outcome. If the USA gets bought down to 1.77 near kickoff with no new positive news, that's pure sentiment money.</div>
+    <div class="note">📌 For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://vsin.com/soccer/usa-vs-paraguay-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN</a> · <a href="https://www.covers.com/industry/usmnt-drawing-massive-betting-action-entering-friday-world-cup-opener-june-11-2026">Covers — Public money split</a> · <a href="https://www.foxsports.com/stories/soccer/2026-world-cup-odds-books-hoping-draw-ahead-usa-paraguay">FOX — Books rooting for the draw</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-paraguay-odds-prediction-time-2026-world-cup-picks-best-bets/">CBS — Odds</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-usa-vs-paraguay-predictions-world-cup-2026/">NYSportsDay — AI panel</a> · <a href="https://www.dimers.com/news/paraguay-vs-united-states-final-prediction-group-d-world-cup-2026-ac">Dimers</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — Kalshi/Polymarket</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-paraguay-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine</a></div>
+  </section>
+
+  <!-- Lineups & recent form -->
+  <section>
+    <h2><span class="n">2</span> Lineups & Key Players</h2>
+    <div class="sub">Projected lineups (analyst estimates, not official; subject to the official pre-match teamsheet)</div>
+    <h4>🇺🇸 USA projected XI (4-3-3, media-consensus version · updated 06-12)</h4>
+    <div class="lineup">Freese; Freeman · Richards(or M.Robinson) · Ream · A.Robinson; Adams · McKennie · Tillman; Dest(new right-side role) · Pulisic; Balogun</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="us">Christian Pulisic</td><td>Attacker / AC Milan</td><td>The program's biggest star; season interrupted by hamstring trouble + bursitis, but scored vs Senegal 5/31 — warming up</td></tr>
+      <tr><td class="us">Folarin Balogun</td><td>Striker / Monaco</td><td>19 goals in all competitions last season; scored vs Senegal, locked in as the lone striker</td></tr>
+      <tr><td class="us">Tyler Adams</td><td>Holding mid / Bournemouth</td><td>Midfield destroyer, the first gate against Almirón's carries</td></tr>
+      <tr><td class="us">Chris Richards</td><td>Centre-back / Crystal Palace</td><td><b>Says he's healed, back in full training Monday, start undecided</b> — his presence changes the USA's aerial defense and build-up structure</td></tr>
+    </table>
+    <h4>🇵🇾 Paraguay key players (XI per official teamsheet; Alfaro favors a settled 4-4-2/5-3-2 core)</h4>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="py">Antonio Sanabria</td><td>Forward / Cremonese</td><td>4 in qualifying (winners vs Bolivia/Venezuela + equalizer vs Argentina) — big-moment pedigree</td></tr>
+      <tr><td class="py">Miguel Almirón</td><td>Attacking mid / Atlanta United</td><td>The counter-attack's engine; with Enciso out, nearly all creativity rests on him</td></tr>
+      <tr><td class="py">Julio Enciso</td><td>Attacker / Strasbourg</td><td><b>All but confirmed out of this match</b> (earliest return round 3); his absence drops the counter a gear</td></tr>
+      <tr><td class="py">Fabián Balbuena</td><td>Centre-back</td><td><b>Out injured</b> — one fewer aerial presence at both ends on set pieces</td></tr>
+    </table>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">3</span> Tactical Styles & Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 USA · Mauricio Pochettino (appointed 2024, ex-Chelsea)</div>
+        <div class="role">3-4-2-1 / 4-2-3-1 · High press + wing-back progression</div>
+        <ul class="cl">
+          <li>Pochettino-grade intensity: a front three pressing the build-up lines, with Dest/A. Robinson as twin wing-backs providing width.</li>
+          <li>The bunker-breaking toolkit: Pulisic cutting inside + Tillman's half-space runs + Balogun attacking the near post, with McKennie crashing set pieces.</li>
+          <li>Achilles heel: centre-back recovery pace against balls in behind (especially without Richards), and the first 15 minutes under home-opener pressure.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇾 Paraguay · Gustavo Alfaro (appointed 2024, ex-Costa Rica)</div>
+        <div class="role">4-4-2 / 5-3-2 · Low block + set pieces + game management</div>
+        <ul class="cl">
+          <li>Alfaro is South America's grandmaster of "underdog point-craft": structural discipline, the art of the foul, set pieces — this formula beat Argentina in qualifying.</li>
+          <li>A settled core with elite chemistry, almost no rotation; never speeds up until behind.</li>
+          <li>Risk: Enciso/Balbuena out means one card fewer in both the counter and the set-piece deck; if pinned back all match, everything rests on one Sanabria header.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Officially announced (06-08)</b>: the referee is <b>Dutch official Danny Makkelie</b>. European referees' low tolerance for niggly fouls and crowding the official + the "captains only" rule doubly squeeze Paraguay's game-management space.</div>
+    <h4>Tournament-wide new rules (impact on this match)</h4>
+    <ul class="cl">
+      <li><b>8-second goalkeeper hold, 5-second countdown on throw-ins/goal kicks</b>: Paraguay's traditional time-wasting craft is specifically blunted.</li>
+      <li><b>Only captains may talk to the referee</b>: the cost of the South American habit of mobbing the referee rises sharply, shifting disciplinary risk upward.</li>
+      <li><b>Upgraded semi-automated offside</b>: Balogun's runs in behind get faster, more accurate marginal calls.</li>
+    </ul>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Racing Post <small>· Grade B betting media</small></div>A USA win is the baseline, but Paraguay's defensive organization (goals conceded in CONMEBOL qualifying second only to the top sides) means "narrow win + low score" is the main script; Pulisic's fitness base is the X factor.</div>
+    <div class="insight"><div class="who">SI / Kalshi / Polymarket <small>· Prediction markets</small></div>Both major prediction markets and the books triangulate around 49/28/23 — at a 2.6× value gap, that pricing is itself the information: the market doubts the USA's historical record against South American low blocks.</div>
+    <div class="insight"><div class="who">Sports Mole <small>· Grade B prediction</small></div>Pochettino's real decision isn't up front but at the back: whether Richards starts decides whether the USA plays "control + dare to push up" or "keep insurance + play it safe" — two different matches.</div>
+  </section>
+
+  <!-- Overall -->
+  <section>
+    <h2><span class="n">6</span> Overall Verdict & Unverified Items</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow USA win (1-0/2-1) is the baseline; Paraguay's most realistic goal is dragging a 0-0 past 70 minutes and stealing a set piece. Enciso's absence significantly narrows Paraguay's path to a win.</li>
+      <li><b>Key men</b>: Pulisic (USA/breakthrough), Balogun (USA/finishing), Sanabria (PAR/the only conversion point), Adams (USA/cutting off Almirón).</li>
+      <li><b>Decisive duel</b>: whether the USA scores inside 30 minutes — a Paraguay trailing early must come out and trade punches (not their game); a 0-0 carried into the second half validates Paraguay's script and the draw probability spikes.</li>
+    </ul>
+    <div class="flag">⚠ <b>Unverified</b>: ① whether Richards starts (official pre-match); ② whether Enciso makes the squad/bench; ③ USA projected XI has competing 3-4-2-1 and 4-2-3-1 versions, official teamsheet decides; ④ re-check live odds movement (1.95 baseline).</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html">Sports Mole — Preview/absences</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html">Sports Mole — USA projected XI</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/">Racing Post — Odds/team news</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — Prediction markets</a><br>
+      • <a href="https://www.fourfourtwo.com/team/paraguay-world-cup-2026-squad">FourFourTwo — Paraguay 26-man squad/Sanabria/Enciso</a> · <a href="https://www.transfermarkt.us/paraguay/marktwertanalyse/verein/3581">Transfermarkt — Paraguay squad value</a> · <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html">Yahoo — Referee appointments</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-12 (matchday) · Charts use verified data; radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',US='#3b6fb0',PY='#d0312d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['USA','Paraguay'],datasets:[{data:[410,157.15],backgroundColor:[US,PY],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ million'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['USA win','Draw','Paraguay win'],datasets:[
+  {label:'Books (de-vigged)',data:[49,27,24],backgroundColor:US,borderRadius:5},
+  {label:'Kalshi/Polymarket',data:[49.5,28.5,23.5],backgroundColor:'#7c92b8',borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Türkiye','USA','Paraguay','Australia'],datasets:[{data:[494.2,410,157.15,null],backgroundColor:['#b91c1c',US,PY,'#446'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ million (Australia pending)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive solidity','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Big-game experience'],
+  datasets:[
+   {label:'USA',data:[6.5,7,7,6.5,8,6.5],borderColor:US,backgroundColor:US+'33',pointBackgroundColor:US},
+   {label:'Paraguay',data:[7.5,5.5,5.5,7,5.5,6],borderColor:PY,backgroundColor:PY+'33',pointBackgroundColor:PY}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise pré-jogo · Côte d'Ivoire vs Equador · Copa 2026 Grupo E</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-cotedivoire-vs-ecuador.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#f7901e;--sc:#ffce00;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a4a0f,#8a6e00);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21180c,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f7b86a;font-weight:600}td.sc{color:#ffe066;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="index.html">← Voltar ao Centro de Análises</a><br>
+  <span class="badge">⚽ Copa 2026 · Grupo E, Rodada 1 · Duas defesas de elite se enfrentam</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 Fim de jogo · Costa do Marfim 1-0 Equador</span>
+  <h1>Côte d'Ivoire vs Equador</h1>
+  <div class="meta">14 de junho de 2026 · Lincoln Financial Field, Filadélfia · 19:00 ET · Grupo E (também: Alemanha, Curaçao)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f7b86a">🇨🇮 Côte d'Ivoire</div><div class="rk">Campeã da África · Eliminatórias CAF 5V 1E · 13 a favor, 0 sofridos</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ffe066">🇪🇨 Equador</div><div class="rk">2.º na CONMEBOL (atrás da Argentina) · só 5 gols sofridos em 18</div></div>
+  </div>
+
+  <!-- ===== Análise pós-jogo (daily-analysis 06-15) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Análise pós-jogo: tática e dados <span style="font-size:12px;color:var(--mut);font-weight:500">· Fim de jogo Costa do Marfim 1-0 Equador · 14/06</span></h2>
+
+    <h4>① Como saíram os gols</h4>
+    <p style="font-size:13.5px">Um duelo travado de placar baixo, como previsto. No 1º tempo, o Equador foi na verdade o lado mais perigoso — John Yeboah e Alan Minda acertaram o travessão duas vezes, mas não conseguiram marcar; a Côte d'Ivoire também não furou o ferrolho adversário (Wahi também acertou a trave). O impasse só foi quebrado aos 90 minutos: Wilfried Singo arrancou pela direita e cruzou, e <b>Amad Diallo (Manchester United), que entrou no banco, finalizou de primeira</b> para o 1-0 nos acréscimos. <b>Esse gol encerrou a invencibilidade de 19 jogos do Equador</b> e foi o gol de reserva mais tardio a decidir um 1-0 em Copas desde o gol de Totti contra a Austrália em 2006 (89:32).</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 1º tempo: Yeboah, Minda (EQU) na trave · Wahi (CIV) na trave · 90' Amad Diallo (reserva, assistência de Singo)</div>
+
+    <h4 style="margin-top:16px">② Comparativo de dados-chave (Opta / ESPN)</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇨🇮 Côte d'Ivoire</th><th>🇪🇨 Equador</th><th>Leitura</th></tr>
+      <tr><td class="ht">Qualidade das chances</td><td colspan="2">Ambos com xG baixo; o Equador criou mais perigo no 1º tempo (duas traves)</td><td>A leitura de "duas defesas de elite" se confirmou, poucas chances e qualidade distribuída no jogo todo</td></tr>
+      <tr><td class="ht">Bolas na trave</td><td>1 (Wahi)</td><td><b>2 (Yeboah, Minda)</b></td><td>O Equador teve azar, foi o lado mais perto do gol mas saiu de mãos vazias</td></tr>
+      <tr><td class="ht">Como veio a vitória</td><td colspan="2">Arranque de Singo pela ponta + finalização de primeira de Amad (reserva)</td><td>A Côte d'Ivoire resolveu pela qualidade individual + explosão pela ponta, confirmando a leitura pré-jogo de que "o 1v1 pelas pontas é a arma mais afiada"</td></tr>
+      <tr><td class="ht">Recorde defensivo</td><td colspan="2">A Côte d'Ivoire manteve o jogo sem sofrer gols (mais um após o 13-0 das eliminatórias da CAF)</td><td>A estrutura defensiva da campeã da África segue sólida diante de um adversário de nível Copa</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Fonte de dados: <a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026">Opta Analyst — Ivory Coast 1-0 Ecuador Stats</a> · <a href="https://www.espn.com/soccer/story/_/id/49064087/ivory-coast-ecuador-live-world-cup-2026-latest-updates-commentary-score-result">Relatório da ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ Análise tática</h4>
+    <div class="insight"><div class="who">O 1v1 pelas pontas + explosão do banco são a resposta da Côte d'Ivoire ao bloco fechado</div>O pré-jogo apontou que "Amad / Adingra diante dos espaços nas alas de uma defesa de três zagueiros" era a arma mais afiada, e o gol da vitória foi exatamente o arranque de Singo pela ponta + a finalização de Amad. <b>Mostra que, diante de um ferrolho estruturado, a forma da Côte d'Ivoire de resolver é a qualidade individual pelas pontas + um trunfo do banco</b> — é um caminho replicável, mas também significa que a infiltração no jogo posicional ainda é fraca.</div>
+    <div class="insight"><div class="who">O Equador é "difícil de furar", mas "ainda mais difícil de fazer gol"</div>O ferrolho de Beccacece deixou a Côte d'Ivoire sem boas chances durante quase todo o jogo, e ele próprio acertou duas traves no 1º tempo. <b>Mostra que a estrutura defensiva do Equador é de classe mundial, mas o poder de finalização é uma carência real</b> — a falta de eficiência em aproveitar chances fez do "não fez o que deveria fazer" a principal causa da derrota.</div>
+    <div class="insight"><div class="who">Num duelo de placar baixo, "quem arrisca primeiro / quem tem o trunfo" decide</div>O pré-jogo previa que "quem quebrar o impasse primeiro assume o risco"; na prática, foi a Côte d'Ivoire que, no fim, quebrou o equilíbrio com um reserva. <b>Mostra que num jogo fechado entre dois fortes, a profundidade do banco e o lance de improviso (Amad reserva) são o divisor de águas</b>, não o plano de formação.</div>
+    <div class="insight"><div class="who">Sorte e traves: há desvio entre resultado e processo</div>O Equador acertou duas traves e foi o lado mais perto do gol, mas saiu com 0 ponto. <b>Mostra que o placar desta partida (1-0) exagera a real vantagem da Côte d'Ivoire</b> — o processo ficou perto do meio a meio, e o resultado foi decidido por um lampejo individual.</div>
+
+    <h4 style="margin-top:16px">④ Balanço da previsão</h4>
+    <table>
+      <tr><th>Linha principal pré-jogo</th><th>Resultado</th><th>Observação</th></tr>
+      <tr><td class="ht">Base 0-0/1-1/vitória por um gol, viés de Menos gols</td><td style="color:var(--good)"><b>✓ Confirmado</b></td><td>1-0, vitória por um gol + Menos gols, o roteiro acertou quase por completo</td></tr>
+      <tr><td class="ht">O 1v1 pelas pontas (Amad/Adingra) é a arma mais afiada</td><td style="color:var(--good)"><b>✓ Preciso</b></td><td>O gol da vitória foi exatamente o arranque de Singo + a finalização de Amad, leitura confirmada com alta qualidade</td></tr>
+      <tr><td class="ht">Nenhum dos dois teme o empate, quem arriscar primeiro assume o risco</td><td style="color:var(--good)"><b>✓ Confirmado</b></td><td>Impasse até os 90', quebrado por um reserva, processo coerente</td></tr>
+      <tr><td class="ht">A bola parada pode ser o divisor de águas</td><td style="color:var(--warn)"><b>~ Desvio</b></td><td>O divisor veio de um arranque pela ponta no jogo aberto, não da bola parada; a direção (um lampejo decide) estava certa</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Projeção para o próximo jogo</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f7b86a">🇨🇮 Côte d'Ivoire · Próximo vs Alemanha (20/jun, Toronto)</h4>
+        <ul class="watch">
+          <li><b>Sem sofrer gols + moral do gol no fim</b>: estrutura defensiva sólida, Amad em grande fase — mas o adversário sobe de Equador para uma Alemanha de fogo total (7-1); a Côte d'Ivoire, forte na defesa, terá o teste de verdade do grupo, num duelo direto pela liderança do Grupo E.</li>
+          <li><b>A explosão pelas pontas é a esperança no contra-ataque</b>: a defesa alemã já mostrou relaxamento após goleadas, e a velocidade de Amad/Adingra/Singo pelas pontas é justamente o tipo de risco que interrompeu o jogo sem sofrer gols da Alemanha.</li>
+          <li><b>O risco da infiltração posicional fraca</b>: se a Alemanha controlar a posse e pressionar, fica a dúvida se a Côte d'Ivoire consegue criar chances a partir de uma postura passiva.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffe066">🇪🇨 Equador · Próximo vs Curaçao (20/jun, Kansas City)</h4>
+        <ul class="watch">
+          <li><b>Invencibilidade encerrada, mas a defesa segue firme</b>: a derrota não foi colapso defensivo, e sim falta de finalização — contra o Curaçao (a defesa mais fraca, levou 7 da Alemanha) é a chance ideal de reencontrar o gol.</li>
+          <li><b>Precisa resolver o aproveitamento de chances</b>: a carência de finalização (duas traves, 0 gol) tem de virar gol de verdade contra o Curaçao, senão o risco é cair de novo num jogo fechado.</li>
+          <li><b>Pressão por pontos</b>: após a derrota na 1ª rodada, contra o mais fraco do grupo, o Curaçao, os 3 pontos são obrigatórios; espera-se que controle o jogo e ataque com iniciativa.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia isto primeiro)</h3>
+    <p class="lead">Um confronto de <b>duas defesas de altíssimo nível</b>, com quase todas as fontes quantitativas apontando para um roteiro de "poucos gols, empate ou vitória apertada". A Côte d'Ivoire chega em ótima fase: 3 vitórias nos últimos 5 jogos, incluindo um <b>2-1 sobre a França (4 de junho)</b> e um 4-0 na Coreia do Sul, além de arrasar nas eliminatórias da CAF (5V 1E, 13 a favor, 0 sofridos). Seu elenco (Sangaré, Kessié, Amad, Adingra, Singo, Ndicka) é um degrau acima. O Equador terminou em <b>2.º na CONMEBOL (atrás da Argentina)</b>, sofrendo apenas 5 gols em 18 jogos; o técnico Beccacece montou um time estruturado e muito difícil de furar. Também venceram 3 dos últimos 5, batendo a Guatemala por 3-0 em 7 de junho. O mercado 1X2 está quase equilibrado — é um jogo de "decidir pelos dados e pela tática". Cenário base: <b>0-0 / 1-1 / vitória por um gol</b>, com viés de Menos gols.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Gols sofridos Equador (elim.)</div><div class="v" style="color:#ffe066">5 em 18</div></div>
+      <div class="key"><div class="k">Gols sofridos Côte d'Ivoire (elim.)</div><div class="v" style="color:#f7b86a">0</div></div>
+      <div class="key"><div class="k">Côte d'Ivoire avança</div><div class="v" style="color:#f7b86a">78%</div></div>
+      <div class="key"><div class="k">Equador avança</div><div class="v" style="color:#ffe066">89%</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Duelo de meio-campo</b>: Caicedo cortando a linha de abastecimento de Kessié/Sangaré ao trio de ataque — o coração tático do jogo.</li>
+      <li><b>Um contra um pelas pontas</b>: Amad Diallo e Adingra atacando os lados da defesa de três é a arma mais afiada da Côte d'Ivoire.</li>
+      <li><b>Quem arrisca primeiro</b>: nenhum teme o empate; quem quebrar o respeito mútuo assume o risco.</li>
+      <li><b>Bola parada</b>: num jogo de poucos gols, uma falta ou escanteio costuma ser o divisor — ambos têm jogo aéreo.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Módulo central: Notícias-chave pré-jogo ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#211a0c,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave pré-jogo <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fonte + por que importa</span></h2>
+    <div class="sub">Notícias de primeira mão e sinais de forma que moldam este jogo, cada um explicado por como muda a tática ou o resultado</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Côte d'Ivoire · Em alta <span style="color:var(--mut);font-weight:400">· junho, várias fontes</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Venceu a França por 2-1 e a Coreia do Sul por 4-0 em amistosos; 13 a favor, 0 sofridos nas eliminatórias — <b>chega com a defesa zerada</b></div>
+      <p style="font-size:13.5px">A Côte d'Ivoire venceu 3 dos últimos 5 jogos, incluindo um badalado 2-1 sobre a França e um 4-0 na Coreia do Sul. Na campanha eliminatória após a Copa Africana de 2023 mantiveram várias defesas zeradas, encerrando o grupo com 13 a favor e 0 sofridos. Escalação prevista em 4-3-3: Y. Fofana no gol; Singo / Kossounou / Ndicka / Konan na defesa; Kessié / Sangaré / S. Fofana no meio; Amad Diallo / Guessand / Adingra no ataque. A escolha do ponta (Adingra vs alternativas) é uma decisão em aberto do técnico Faé.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: derrubar a França em um amistoso mostra que o teto deste time iguala qualquer um; a defesa zerada significa que, mesmo se o bloco do Equador travar seu ataque, eles conseguem segurar atrás e não dar gols de presente — exatamente a base para arrastar o jogo a um empate de poucos gols. <span style="color:var(--warn)">[Condição física jogador a jogador aguardando a convocação oficial · não verificado]</span></div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/predicted-lineups/winger-dilemma-for-fae-predicted-ivory-coast-lineup-vs-ecuador_599037.html" style="color:var(--accent)">Sports Mole — escalação prevista Côte d'Ivoire</a> · <a href="https://www.skysports.com/football/news/12098/13543089/world-cup-2026-group-e-guide-fixtures-schedule-standings-and-odds-for-germany-curacao-ivory-coast-and-ecuador" style="color:var(--accent)">Sky Sports — guia do Grupo E</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Equador · A muralha está pronta <span style="color:var(--mut);font-weight:400">· Escalação prevista</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Apenas 5 sofridos em 18 jogos da CONMEBOL; 3-0 na Guatemala (7 jun); a <b>defesa de três de Beccacece é muito difícil de furar</b></div>
+      <p style="font-size:13.5px">O Equador classificou em 2.º na América do Sul (atrás da Argentina); seus 5 gols sofridos em 18 jogos estão entre os melhores registros defensivos do continente. Venceram 3 dos últimos 5. Escalação prevista em 3-4-3: Galíndez; Pacho / F. Torres / Hincapié como defesa de três; Preciado / Caicedo (capitão) / A. Franco / Estupiñán no meio e nas alas; Plata / Valencia / Páez no ataque. A titularidade/função de Valencia é tema de debate (<b>não verificado</b>).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: uma coluna formada por Pacho (PSG), Hincapié e Caicedo (Chelsea) é um eixo defensivo de nível europeu de elite — não é "meio de tabela sul-americano", e sim um adversário profundamente disciplinado e estruturado. A defesa de três pode superar em número os duelos individuais da Côte d'Ivoire, mas o espaço atrás dos alas é justamente o que Amad/Adingra querem atacar. Se a estrutura do Equador veda essas pontas é o ponto central da expectativa de poucos gols.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/valencia-decision-for-la-tri-predicted-ecuador-lineup-vs-ivory-coast_599039.html" style="color:var(--accent)">Sports Mole — escalação prevista Equador</a> · <a href="https://www.espn.com/soccer/story/_/id/49029367/fifa-world-cup-2026-ivory-coast-vs-ecuador-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — escalações previstas / novidades</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Contexto · O que está em jogo <span style="color:var(--mut);font-weight:400">· formato do Grupo E</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">A Alemanha é a clara favorita do Grupo E — isto é, na prática, um <b>duelo direto pelo 2.º lugar (classificação)</b></div>
+      <p style="font-size:13.5px">O Grupo E é formado por Alemanha, Curaçao, Côte d'Ivoire e Equador. Com a Alemanha amplamente apontada para liderar, este jogo é visto como uma prévia entre dois "candidatos à classificação" — o vencedor dá um grande passo para controlar seu destino. Os mercados de previsão dão à Côte d'Ivoire 78% de avançar / 14% de vencer o grupo, e ao Equador 89% / 23%. Início à noite em Filadélfia; sem clima extremo reportado.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: quando os dois tratam a Alemanha como o time para quem provavelmente perderão pontos, os três pontos entre eles ganham peso — o que tende a deixar a estreia mais cautelosa e conservadora, deprimindo ainda mais a expectativa de gols. Um empate é "aceitável, mas não ideal" para ambos, então psicologicamente nenhum é obrigado a se lançar.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" style="color:var(--accent)">Wikipedia — Grupo E da Copa 2026</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/" style="color:var(--accent)">Squawka — probabilidades de classificação / prévia</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Árbitro da partida · troca de última hora <span style="color:var(--mut);font-weight:400">· FIFA confirmou</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Michael Oliver, originalmente designado, foi vetado por lesão; quem apita é o francês <b>François Letexier</b> (árbitro da final da Euro 2024, da final da Liga Europa 2025-26 — estreia em Copa do Mundo)</div>
+      <p style="font-size:13.5px">A FIFA confirmou que o inglês Oliver saiu por uma lesão leve e foi substituído pelo francês de elite <b>Letexier</b> (37 anos), com os compatriotas Mugnier e Rahmouni como assistentes. O currículo de Letexier é durííssimo: final da Euro 2024 (Espanha vs Inglaterra) e final da Liga Europa 2025-26, mas esta é a sua <b>estreia em Copa do Mundo</b>.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: pelos <b>números reais da última grande competição</b> — na Euro 2024 ele apitou 3 jogos, <b>0 pênaltis, 0 vermelhos, apenas 10 amarelos</b> — e advertiu Mitrović por simulação na área. O perfil é "deixa o jogo fluir, é cauteloso com pênaltis e não tolera simulação", o que favorece este duelo de poucos gols seguir o plano em vez de ser quebrado pelo apito. <b>Ressalva de dois lados</b>: <b>sem histórico com nenhuma das duas seleções</b>, e como é estreia em Copa o critério é incógnito, então os mercados de cartões/pênaltis carecem de base direta.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://worldsoccertalk.com/amp/world-cup/ivory-coast-vs-ecuador-who-will-be-the-referee-for-the-2026-world-cup-group-e-match/" style="color:var(--accent)">World Soccer Talk — troca de árbitro confirmada</a> · <a href="https://www.foxsports.com/articles/soccer/french-referee-francois-letexier-picked-to-handle-spainengland-final-of-euro-2024" style="color:var(--accent)">FOX — Letexier na final da Euro 2024</a></div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Panorama de dados (central)</h2>
+    <div class="sub">Gols sofridos nas eliminatórias · probabilidades implícitas 1X2 (sem margem) · probabilidade de avançar — gráficos com dados verificados / com fonte</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Gols sofridos nas eliminatórias (menos = melhor)</h5><canvas id="defChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (sem margem, estimada)</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Probabilidade de avançar (mercado de previsão Kalshi)</h5><canvas id="qualChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇨🇮 Côte d'Ivoire</th><th>🇪🇨 Equador</th></tr>
+      <tr><td>Caminho até a classificação</td><td class="ht">Elim. CAF 5V 1E · 13 a favor, 0 sofridos</td><td class="sc">CONMEBOL 2.º (atrás da Argentina) · só 5 sofridos em 18</td></tr>
+      <tr><td>Últimos 5</td><td class="ht">3 vitórias (2-1 sobre a França, 4-0 na Coreia)</td><td class="sc">3 vitórias (3-0 na Guatemala, 7 jun)</td></tr>
+      <tr><td>Identidade central</td><td class="ht">Campeã da África · vantagem de elenco</td><td class="sc">Estrutura e disciplina · difícil de furar</td></tr>
+      <tr><td>Odds 1X2 (bet365)</td><td class="ht">3.60 (≈28%)</td><td class="sc">2.37 (≈42%) · empate 2.80 (≈36%)</td></tr>
+      <tr><td>Avançar (Kalshi)</td><td class="ht">78% avança / 14% vence grupo</td><td class="sc">89% avança / 23% vence grupo</td></tr>
+      <tr><td>Técnico</td><td class="ht">Emerse Faé</td><td class="sc">Sebastián Beccacece</td></tr>
+      <tr><td>Leitura de mercado</td><td colspan="2" class="sc">Três vias quase iguais, viés de Menos; consenso = poucos gols, empate ou vitória apertada</td></tr>
+    </table>
+    <div class="note">📌 Probabilidades implícitas estimadas a partir das odds americanas da bet365 (CIV +260 / empate +180 / ECU +137), cerca de 28 / 36 / 42 com ~6pp de margem. As fontes divergem um pouco na ordem das três vias (algumas colocam o Equador como leve favorito), mas todas apontam para "quase igual".</div>
+  </section>
+
+  <!-- ===== Calor do mercado de apostas ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Calor do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· palpites de especialistas / odds / dinheiro / opinião</span></h2>
+    <div class="sub">Três vias quase iguais, sentimento limpo: sem narrativa de hype, o resultado depende de dados e tática</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · três vias quase iguais + sentimento limpo + sem hype</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Duas defesas fortes, baixa expectativa de gols, sem pico de tráfego narrativo — o mercado está equilibrado, os preços refletem um jogo genuinamente parelho, e a decisão deve voltar aos dados e à tática.</div>
+    </div>
+
+    <h4>① Agregação de palpites de especialistas (direção: viés de Equador/empate · Côte d'Ivoire minoria · amplamente Menos)</h4>
+    <table>
+      <tr><th>Quem</th><th>Função</th><th>Visão / Palpite</th></tr>
+      <tr><td>Yahoo Sports</td><td>Mídia de previsão</td><td>Equador leve favorito (+145); empate opção popular</td></tr>
+      <tr><td>Squawka</td><td>Mídia de dados</td><td>Poucos gols, quase três vias iguais</td></tr>
+      <tr><td>Sports Mole</td><td>Mídia de previsão</td><td>Empate cauteloso / vitória por um gol</td></tr>
+      <tr><td>Racing Post</td><td>Tipster britânico clássico</td><td>Viés de Menos; valor no empate / nenhum time marca</td></tr>
+      <tr><td>compare.bet</td><td>Agregador de odds</td><td>Três vias fechadas, inclinação a Menos</td></tr>
+      <tr><td>RotoWire</td><td>Mídia tática</td><td>Batalha estrutural, poucos gols</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Contagem de direção</b>: quem aposta na vitória da Côte d'Ivoire é minoria; Equador/empate é o grupo maior, mas a diferença é pequena. Quase toda fonte <b>se inclina ao Menos (2.5)</b>. Não há narrativa unilateral de "tem que vencer", o que na verdade eleva a credibilidade do empate e dos placares baixos.</div>
+
+    <h4 style="margin-top:20px">② Movimento das odds (as três vias se ajustam, sem corrida unilateral — DECIMAL)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Côte d'Ivoire / Empate / Equador</th><th>Leitura</th></tr>
+      <tr><td>Abertura</td><td>Composto</td><td>≈2.35 / 3.10 / 2.50</td><td>Três vias fechadas, Equador um pouco mais curto</td></tr>
+      <tr><td>06-13</td><td>bet365</td><td class="sc">3.60 / 2.80 / 2.37</td><td>O empate se ajusta, Equador vira leve favorito</td></tr>
+      <tr><td>06-13</td><td>Kalshi (implícita)</td><td>28% / 34% / 41%</td><td>O mercado de previsão também coloca o Equador primeiro, com vantagem limitada</td></tr>
+    </table>
+    <div class="note">📌 <b>Movimento suave</b>: os preços se ajustaram modestamente para "empate + leve vantagem do Equador", sem sinal de dinheiro unilateral. bet365 e Kalshi concordam na ordem (Equador &gt; empate &gt; Côte d'Ivoire) — a diferença é de magnitude, não de direção, consistente com um mercado saudável de baixo calor.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão e ④ Opinião</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>: preços de jogo único Côte d'Ivoire 28% / empate 34% / Equador 41%; mercados de classificação Côte d'Ivoire 78%, Equador 89%.</li>
+      <li><b>Polymarket / tipo DeFi</b>: preço e volume ao vivo para este jogo específico não recuperados (<b>não verificado</b>) — mercados de previsão cripto cobrem pouco os jogos de nicho de uma única Copa.</li>
+      <li><b>Opinião</b>: a conversa gira em torno de "qual sistema defensivo é mais duro" e das interceptações de Caicedo contra o meio-campo marfinense, quase sem narrativa emocional ou polarizadora; volume social estável e de tom profissional.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Síntese</b>: um duelo de "mercado frio, leitura dura" — não há prêmio emocional, e os preços refletem com clareza dois times parelhos e de poucos gols. O bolso ignorado está mais do lado <b>Menos / empate / nenhum time marca</b> do que de uma goleada. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://sports.yahoo.com/articles/c-te-d-ivoire-vs-165408059.html">Yahoo Sports</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/">Squawka</a> · <a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/preview/ivory-coast-vs-ecuador-prediction-team-news-lineups_599029.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ivory-coast-vs-ecuador-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aOFLB3P6BDFL/">Racing Post</a> · <a href="https://www.compare.bet/news/cote-divoire-vs-ecuador-betting-preview-predictions-tips-and-live-odds">compare.bet</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-e-preview-germany-curacao-ivory-coast-ecuador-tactics-lineups-set-pieces-odds-109286">RotoWire</a></div>
+  </section>
+
+  <!-- corners -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> Escanteios: leitura técnica <span style="font-size:12px;color:var(--mut);font-weight:500">· estilo × linhas reais · handicap e total</span></h2>
+    <div class="sub">Duas defesas blindadas mais um roteiro de poucos gols tornam provável um número de escanteios reprimido; o handicap fica perto do empate e o total tende ao under.</div>
+    <h4>① Perfil de escanteios das duas equipes (guiado pelo estilo)</h4>
+    <table>
+      <tr><th>Dimensão</th><th>🇨🇮 Costa do Marfim</th><th>🇪🇨 Equador</th><th>Significado</th></tr>
+      <tr><td>Origem dos escanteios (estilo)</td><td class="ht">1v1 pelas pontas + cruzamento (Amad/Adingra) bloqueado → vira escanteio</td><td class="sc">Jogo central recolhido, raramente abre, gera poucos escanteios proativos</td><td>A Costa do Marfim tem mais recursos para "fabricar" escanteios; o Equador, fechado, não acumula escanteios</td></tr>
+      <tr><td>Bola parada em grandes competições</td><td class="ht">AFCON 2023: várias vezes decidiu na bola parada (Kessié empatou na final)</td><td class="sc">Copa 2022 / Copa América: sobretudo defensivo, ataque de bola parada limitado</td><td>Para a Costa do Marfim a conversão de escanteio é ponto de gol real; o Equador costuma só reagir</td></tr>
+      <tr><td>Foco ofensivo</td><td class="ht">1v1 pelas pontas + cruzamentos (Amad/Adingra)</td><td class="sc">Jogo central compacto + contra-ataques, raramente aberto</td><td>Abrir pelas pontas = mais escanteios por cruzamentos bloqueados para a Costa do Marfim</td></tr>
+      <tr><td>Ameaça em bola parada</td><td class="ht">Muitos alvos aéreos, escanteios aproveitáveis</td><td class="sc">Três zagueiros altos, sobretudo defensivos</td><td>Num jogo de poucos gols, um escanteio é uma via rara para romper o zero</td></tr>
+      <tr><td>Tendência de vantagem em escanteios</td><td class="ht">Leve vantagem (ataque mais amplo)</td><td class="sc">Um pouco menos (estrutura fechada, poucos cruzamentos)</td><td>A Costa do Marfim tem mais chance de superar levemente na contagem de escanteios</td></tr>
+    </table>
+    <h4>② Linhas reais (mercado de escanteios)</h4>
+    <p>Até antes da partida, o mercado independente de escanteios na bet365 e em outras casas grandes ainda não está totalmente aberto; fontes de previsão/agregadoras concentram a linha de referência em torno de um <b>total de 8.5–9.5</b>: Over 7.5 ≈ <b>1.49</b>, Over 8.5 ≈ 20/23 (≈ <b>1.87</b>), Over 9.5 ≈ 6/4 (≈ <b>2.50</b>), Under 12.5 ≈ 1/10 (≈ <b>1.10</b>). O <b>handicap de escanteios não está publicado oficialmente</b>; estimado a partir do perfil de estilo em aproximadamente <b>Costa do Marfim -0.5 / -1.0</b>, perto de uma linha de empate. <span style="color:var(--warn)">[linha independente de escanteios ainda não aberta · o handicap é uma estimativa · a confirmar]</span> (Fontes: Tips.GG / Racing Post)</p>
+    <h4>③ Leitura técnica (handicap e total)</h4>
+    <div class="insight"><div class="who">Handicap (linha de escanteios)</div>O ataque da Costa do Marfim é mais amplo, com mais cruzamentos pelas pontas, o que dá leve vantagem em gerar escanteios, então o handicap pende a seu favor (cerca de -0.5/-1.0); mas o Equador permanece fechado e também sofre poucos escanteios, e com todo o jogo previsto como apertado, o <b>handicap de escanteios fica perto do empate</b> — a leitura técnica não é de um lado só, então trate com cautela.</div>
+    <div class="insight"><div class="who">Total (contagem de escanteios)</div>Chocam-se duas defesas de classe mundial e o consenso é de poucos gols (base 0-0 / 1-1 / vitória por um gol) — no início, os cruzamentos bem-sucedidos e as entradas na área são limitados, então a produção de escanteios fica naturalmente reprimida e a <b>leitura técnica tende ao under</b>. A linha de referência de 8.5–9.5 e o ultracurto Under 12.5 (≈1.10) confirmam a expectativa de que "não haverá muitos escanteios".</div>
+    <div class="insight"><div class="who">Variáveis e dois lados</div>Se o placar for aberto, o lado que estiver atrás (sobretudo a Costa do Marfim, com a ameaça pelas pontas de Amad/Adingra) vai carregar nos cruzamentos e subir, então <b>os escanteios da reta final podem disparar</b> e elevar o total; ao mesmo tempo, quando o jogo aberto é sufocado pela estrutura adversária, os dois se apoiam mais em bolas paradas/escanteios para romper — ambas as variáveis pendem para o "risco de over" e são a principal proteção contra o viés ao under.</div>
+    <div class="note">Apenas para fins de análise — não é recomendação de apostas. Fontes: <a href="https://tips.gg/article/ivory-coast-vs-ecuador-betting-odds/">Tips.GG — escanteios / todos os mercados</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ivory-coast-vs-ecuador-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aOFLB3P6BDFL/">Racing Post — prévia / linhas</a> · <a href="https://footystats.org/clubs/ivory-coast-national-team-8624">FootyStats — Costa do Marfim</a> · <a href="https://footystats.org/clubs/ecuador-national-team-8628">FootyStats — Equador</a></div>
+  </section>
+
+  <!-- ===== Árbitro da partida ===== -->
+  <section>
+    <h2><span class="n">2</span> Árbitro da partida (perfil de arbitragem · números reais de grande competição)</h2>
+    <div class="sub">França · François Letexier (substitui Oliver, vetado por lesão) · com base nos dados reais da última grande competição, sem usar média de liga no lugar</div>
+    <div class="note">✅ <b>Confirmado</b>: Michael Oliver, originalmente designado, saiu por lesão e foi substituído pelo francês <b>François Letexier</b> (37 anos), com Mugnier e Rahmouni como assistentes. Árbitro da final da Euro 2024 e da final da Liga Europa 2025-26, mas é sua <b>estreia em Copa do Mundo</b>.</div>
+    <table>
+      <tr><th>Dimensão (números reais de grande competição)</th><th>Perfil</th></tr>
+      <tr><td>Euro 2024 (última grande competição)</td><td>Apitou 3 jogos: <b>0 pênaltis, 0 vermelhos, 10 amarelos</b> (≈3.3/jogo); advertiu Mitrović por simulação na área</td></tr>
+      <tr><td>Tendência a pênaltis</td><td>Cauteloso, forte uso do VAR; não deu pênaltis leves em grande competição</td></tr>
+      <tr><td>Limite de faltas/cartões</td><td>Incentiva a fluidez, tolera duelos justos; vermelhos raros</td></tr>
+      <tr><td>Grande competição vs liga</td><td>Mais comedido em grande competição (apenas 10 amarelos em 3 jogos da Euro); tipo "controle fluido", não "de muitos cartões"</td></tr>
+      <tr><td>Histórico vs as duas seleções</td><td>Sem amostra de arbitragem com Côte d'Ivoire ou Equador (<b>sem amostra</b>)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Ressalva de dois lados</b>: o acima são <b>dados reais</b> da última grande competição (Euro 2024) e de competições de ponta, mas a estreia em Copa do Mundo somada à ausência de amostra contra as duas seleções deixa o critério em campo incerto; as novas regras unificadas da Copa (8 segundos do goleiro, comunicação só do capitão) podem ajustar seus limites habituais. Os mercados de cartões/pênaltis carecem de base de arbitragem direta contra estas duas seleções.</div>
+  </section>
+
+  <!-- Escalações e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalações e jogadores-chave</h2>
+    <div class="sub">Escalações previstas (estimativas de analistas, não oficiais; vale a convocação oficial pré-jogo)</div>
+    <h4>🇨🇮 Côte d'Ivoire escalação prevista (4-3-3)</h4>
+    <div class="lineup">Y. Fofana; Singo · Kossounou · Ndicka · Konan; Kessié(C) · Sangaré · S. Fofana; Amad Diallo · Guessand · Adingra</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição / Clube</th><th>Forma / Notas</th></tr>
+      <tr><td class="ht">Franck Kessié (C)</td><td>Meio / Al-Ahli</td><td>Capitão e eixo de ida e volta; motor box-to-box</td></tr>
+      <tr><td class="ht">Ibrahim Sangaré</td><td>Meio / Nottingham Forest</td><td>Escudo de contenção; encarregado de sufocar os contra-ataques do Equador</td></tr>
+      <tr><td class="ht">Amad Diallo</td><td>Ponta / Manchester United</td><td>Faísca no um contra um, busca o espaço atrás dos alas do Equador</td></tr>
+      <tr><td class="ht">Simon Adingra</td><td>Ponta / órbita Brighton</td><td>Velocidade e drible; chave para abrir a defesa de três</td></tr>
+    </table>
+    <h4>🇪🇨 Equador escalação prevista (3-4-3)</h4>
+    <div class="lineup">Galíndez; Pacho · F. Torres · Hincapié; Preciado · Caicedo(C) · A. Franco · Estupiñán; Plata · Valencia · Páez</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição / Clube</th><th>Forma / Notas</th></tr>
+      <tr><td class="sc">Moisés Caicedo (C)</td><td>Meio / Chelsea</td><td>Capitão e eixo de desarme; corta a ligação com os atacantes marfinenses</td></tr>
+      <tr><td class="sc">Willian Pacho</td><td>Zagueiro / Paris Saint-Germain</td><td>Coração da defesa de três, valor defensivo de elite</td></tr>
+      <tr><td class="sc">Piero Hincapié</td><td>Zagueiro / órbita Leverkusen</td><td>Saída de bola e cobertura, se mede com os perigos pelas pontas</td></tr>
+      <tr><td class="sc">Kendry Páez</td><td>Atacante / órbita Chelsea</td><td>Criatividade de nova geração; uma das poucas vias do Equador para abrir um bloco fechado</td></tr>
+    </table>
+    <div class="note">Escolhas de goleiro e ponta: os pontas da Côte d'Ivoire (Adingra vs alternativas) são decisão em aberto de Faé; a titularidade/função de Valencia no Equador ainda aguarda confirmação oficial (<b>não verificado</b>). As escalações previstas são estimativas de analistas.</div>
+  </section>
+
+  <!-- Tática + técnicos -->
+  <section>
+    <h2><span class="n">4</span> Estilo tático e técnicos</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f7b86a">🇨🇮 Côte d'Ivoire · Emerse Faé</div>
+        <div class="role">4-3-3 · progressão com bola + faísca no um contra um pelas pontas</div>
+        <ul class="cl">
+          <li>O homem que venceu a Copa Africana de 2023; conhecido por uma linha sólida mais qualidade individual pelos lados.</li>
+          <li>Roteiro: deixar Kessié/Sangaré controlarem o meio e alimentar Amad/Adingra para encarar os alas do Equador nas costas.</li>
+          <li>Risco: contra uma defesa de três compacta, se as pontas forem vedadas e não houver penetração central, o ataque pode emperrar em "posse sem ruptura".</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ffe066">🇪🇨 Equador · Sebastián Beccacece</div>
+        <div class="role">3-4-3 · estrutura e disciplina + muito difícil de furar</div>
+        <ul class="cl">
+          <li>Técnico argentino que montou um time que sofreu apenas 5 em 18 jogos de eliminatória.</li>
+          <li>Roteiro: defesa de três mais duplo volante (Caicedo/Franco) comprimem os espaços centrais, empurram a Côte d'Ivoire para as pontas e depois fecham com ala + zagueiro.</li>
+          <li>Risco: abre-se espaço atrás dos alas adiantados — justamente o terreno de caça de Amad/Adingra; o ataque depende da faísca de Páez/Plata e de Valencia como ponto de apoio.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Insights do analista · com comparação das últimas 2 grandes competições</h2>
+    <div class="insight"><div class="who">Côte d'Ivoire · últimas 2 grandes competições <small>· campeã da AFCON 2023 + 2021 parou nas oitavas</small></div>Na AFCON 2023 a Côte d'Ivoire <b>foi campeã, mas em meio ao caos</b>: na fase de grupos levou um <b>0-4 da Guiné Equatorial</b> e quase caiu, Faé assumiu no meio do torneio, e ela se salvou no mata-mata com <b>empates no fim + pênaltis</b> (eliminou o Mali, passou pelo Senegal nos pênaltis), com Kessié <b>empatando de bola parada</b> e Haller fazendo o gol do título contra a Nigéria — um time "que nem sempre atropela no jogo corrido, mas cujas armas reais são <b>bola parada e resiliência</b>". Em 2021 a AFCON parou nas oitavas (perdeu para o Egito nos pênaltis). Some-se que Haller, herói da final, ficou <b>FORA desta convocação</b>, o que deixa o apoio ofensivo ainda mais dependente das pontas de Amad/Adingra — e esta é a primeira Copa do Mundo da seleção desde 2014. Se as pontas forem fechadas e não vier o dividendo da bola parada, o risco é "ter posse sem ruptura".</div>
+    <div class="insight"><div class="who">Equador · últimas 2 grandes competições <small>· Copa 2022 caiu nos grupos (4 pts) + Copa América 2024 quartas</small></div>Na Copa de 2022 o Equador <b>venceu o Catar por 2-0 e empatou em 1-1 com a Holanda</b>, mas caiu na fase de grupos com 4 pontos, justamente por causa de uma <b>defesa organizada + dependência de Valencia para finalizar</b>; na Copa América 2024 chegou às quartas (perdeu para a Argentina nos pênaltis). As duas competições confirmam o perfil de "<b>defesa dura, dependente de Valencia para abrir</b>" — exatamente alinhado com a leitura de "muralha + poucos gols" deste jogo, e com experiência de torneio mais recente e robusta que a da Côte d'Ivoire.</div>
+    <div class="insight"><div class="who">Ponto tático central <small>· duelo de meio-campo</small></div>A função de Caicedo é cortar a linha de abastecimento de Kessié e Sangaré ao trio de ataque — se vencer essa zona, a Côte d'Ivoire é empurrada para as pontas, direto para a armadilha que a defesa de três do Equador foi feita para acionar.</div>
+    <div class="insight"><div class="who">Síntese · caminho ao resultado <small>· sinal tático</small></div>As duas vias realistas para quebrar o empate: ① os duelos pelas pontas da Côte d'Ivoire (Amad/Adingra) atrás dos alas; ② uma bola parada de qualquer um dos dois (a Côte d'Ivoire foi campeã da AFCON justamente apoiada na bola parada). É provável que os ataques em jogo aberto sejam engolidos pela estrutura — um jogo decidido por um gol ou um 0-0 é o cenário base.</div>
+  </section>
+
+  <!-- Síntese -->
+  <section>
+    <h2><span class="n">6</span> Leitura geral e a verificar</h2>
+    <ul class="cl">
+      <li><b>Tendência do resultado</b>: 0-0 / 1-1 / vitória por um gol é o cenário base; nenhum teme o empate, quem assumir o primeiro risco assume o perigo, no conjunto com viés de Menos.</li>
+      <li><b>Homens-chave</b>: Caicedo (ECU/eixo de desarme), Amad Diallo e Adingra (CIV/faísca pelas pontas), Sangaré (CIV/escudo ao contra), Pacho e Hincapié (ECU/núcleo da defesa de três).</li>
+      <li><b>Fator decisivo</b>: a conversão dos duelos pelas pontas da Côte d'Ivoire vs a disciplina de recomposição da defesa de três do Equador; mais o duelo aéreo na bola parada.</li>
+      <li><b>Visão de mercado</b>: três vias quase iguais, sentimento limpo (calor 2/5); os bolsos ignorados estão do lado Menos / empate / nenhum time marca, não numa goleada de qualquer um.</li>
+    </ul>
+    <div class="flag">⚠ <b>A verificar</b>: ① árbitro já confirmado: Letexier (substitui Oliver, vetado por lesão), sem amostra contra as duas seleções e com critério incógnito na estreia em Copa; ② Ndicka fora e Kossounou entrando já confirmado na Côte d'Ivoire, mas a escalação jogador a jogador vale conforme o oficial; ③ a função de Valencia no Equador aguarda o oficial; ④ todas as escalações são previstas, estimativas de analistas; ⑤ não foram recuperados preço e volume dos mercados cripto para este jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49029367/fifa-world-cup-2026-ivory-coast-vs-ecuador-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — novidades / árbitro / escalações previstas</a> · <a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/predicted-lineups/winger-dilemma-for-fae-predicted-ivory-coast-lineup-vs-ecuador_599037.html">Sports Mole — XI Côte d'Ivoire</a> · <a href="https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/valencia-decision-for-la-tri-predicted-ecuador-lineup-vs-ivory-coast_599039.html">Sports Mole — XI Equador</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/">Squawka — prévia / probabilidades de classificação</a> · <a href="https://sports.yahoo.com/articles/c-te-d-ivoire-vs-165408059.html">Yahoo Sports — odds / prévia</a> · <a href="https://www.skysports.com/football/news/12098/13543089/world-cup-2026-group-e-guide-fixtures-schedule-standings-and-odds-for-germany-curacao-ivory-coast-and-ecuador">Sky Sports — guia do Grupo E</a><br>
+      • <a href="https://www.compare.bet/news/cote-divoire-vs-ecuador-betting-preview-predictions-tips-and-live-odds">compare.bet — agregação de odds</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-e-preview-germany-curacao-ivory-coast-ecuador-tactics-lineups-set-pieces-odds-109286">RotoWire — prévia tática do Grupo E</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — Grupo E</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análises da Copa 2026 · Dados até 2026-06-14 (árbitro alterado para Letexier; inclui comparação das últimas 2 grandes competições) · Os gráficos são dados verificados / com fonte, o radar é uma estimativa composta do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f7901e',SC='#ffce00',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('defChart'),{type:'bar',
+ data:{labels:['Côte d\'Ivoire (sofridos elim.)','Equador (sofridos em 18)'],datasets:[{data:[0,5],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'Gols sofridos (menos = melhor)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória Côte d\'Ivoire','Empate','Vitória Equador'],datasets:[{data:[28,36,42],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:55,title:{display:true,text:'Probabilidade implícita % (est.)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('qualChart'),{type:'bar',
+ data:{labels:['Côte d\'Ivoire','Equador'],datasets:[{label:'Avançar %',data:[78,89],backgroundColor:[HT,SC],borderRadius:6},{label:'Vence grupo %',data:[14,23],backgroundColor:['#7a4a0f','#8a6e00'],borderRadius:6}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Probabilidade % (Kalshi)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez def.','Finalização of.','Controle de meio','Bola parada','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'Côte d\'Ivoire',data:[8,6.5,7,6.5,7.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Equador',data:[8.5,6,7.5,6.5,7,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

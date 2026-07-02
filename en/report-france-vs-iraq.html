@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · France vs Iraq · 2026 World Cup Group I Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-france-vs-iraq.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#5b8def;--sc:#3aa564;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f3f8a,#0f5a32);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#101d3e,#0f152e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc0ee;font-weight:600}td.sc{color:#82d2a0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group I Matchday 2 · A title favourite locks in early qualification</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · France 3-0 Iraq</span>
+  <h1>France vs Iraq</h1>
+  <div class="meta">22 June 2026 · Philadelphia, Lincoln Financial Field · 17:00 ET · Group I (also in group: Senegal, Norway) · Match 42</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5b8def">🇫🇷 France</div><div class="rk">FIFA #2 · Title favourite · MD1 3-1 win over Senegal (Mbappé brace, becomes France's all-time top scorer)</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#3aa564">🇮🇷🇶 Iraq</div><div class="rk">FIFA #58 · Long-awaited World Cup return · MD1 1-4 loss to Norway (goalkeeper error, carved open through the middle)</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (daily-analysis written 06-23) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time France 3-0 Iraq (HT 1-0) · 06-22</span></h2>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">France cruised through and qualified early, in a match that also became <b>this World Cup's first weather-suspended game</b>. In the <b>14th minute</b> Mbappé took a Michael Olise pass from the right and finished left-footed from outside the box for 1-0, which held to half-time. The second half restarted late after lightning + heavy rain forced a stoppage of <b>more than two hours</b> (the big screen advised spectators to seek shelter); after the resumption Mbappé pounced on a <b>botched short-passing goal kick</b> from Iraq — Dembélé intercepted the cross-field pass, Mbappé slotted home for his brace, his individual <b>16th World Cup goal, drawing level with Klose</b> in second on the all-time list (behind only Messi); then <b>Dembélé</b>, set up by Olise, drilled a low shot into the bottom-left corner for 3-0. France, calm and clinical, comfortably exceeded their 2.38 xG and locked up their Group I qualification spot.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 14' Mbappé (Olise assist) · second half kick-off: lightning and heavy rain suspension, 2 hours+ · after restart Mbappé (Dembélé assist, 16th goal level with Klose) · Dembélé (Olise assist) | the first weather-suspended game in World Cup history</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta / ESPN)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇫🇷 France</th><th>🇮🇶 Iraq</th><th>Reading</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>2.38</b></td><td>TBC</td><td>France 2.38 xG, 3 goals — chance volume and finishing both on point, a comprehensive, dominant win</td></tr>
+      <tr><td class="ht">Score / tempo</td><td><b>3-0</b></td><td>0</td><td>France led only 1-0 at the break, then quickly extended after the restart — the stoppage did not disrupt France's rhythm; instead Iraq's goal-kick error on the restart was immediately punished</td></tr>
+      <tr><td class="ht">Mbappé individual</td><td><b>2 goals (16th World Cup goal)</b></td><td>—</td><td>Level with Klose, behind only Messi; his hot streak this tournament continues, the absolute focal point of France's attack</td></tr>
+      <tr><td class="ht">Olise contribution</td><td><b>2 assists</b></td><td>—</td><td>Both goals were created by Olise (assisting Mbappé's first and Dembélé's third) — the right flank was France's most reliable source of creativity in this match</td></tr>
+      <tr><td class="ht">Game control</td><td><b>Dominant</b></td><td>Passive</td><td>Iraq created no real threat all game, 0 goals; ESPN rated it "France well on top, comfortably riding above their xG"</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.espn.com/soccer/report/_/gameId/760457">ESPN — France 3-0 Iraq Analysis</a> · <a href="https://www.espn.com/soccer/story/_/id/49145871/france-vs-iraq-live-world-cup-2026-updates-kylian-mbappe-looks-continue-goal-scoring-charge">ESPN — Match report / Mbappé</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/22/live-france-vs-iraq-world-cup-2026">Al Jazeera — Live match report</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760457/iraq-france">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">The Mbappé + Olise right-flank link-up = France's most efficient goal machine</div>Both the first and the third goal stemmed from Olise's work on the right, with Mbappé completing his brace. <b>This shows that whenever Olise gets space to create on the right, France have a top-tier "pass-and-move + finishing" combination</b> — Mbappé, level with Klose (16 goals), is in superb form and is France's biggest certainty heading into the knockouts. Shutting down that right-flank link-up will be the first task for any opponent trying to contain France.</div>
+    <div class="insight"><div class="who">The 2-hour weather stoppage did not unsettle France — it punished Iraq instead</div>The second half was interrupted by lightning for over two hours; after the restart France quickly extended the lead — including a second goal that came directly from a failed Iraqi short goal kick. <b>This shows France's focus and immediate execution remained intact even after a lengthy stoppage, while Iraq committed a basic error on the restart and were punished</b>, with the gap in psychology and experience magnified in unusual circumstances.</div>
+    <div class="insight"><div class="who">2.38 xG, 3 goals — France were truly dominant across the board</div>Unlike Argentina's economical "3 shots to win" mode, France generated 2.38 xG and converted cleanly. <b>This shows France delivered a complete performance with both chance volume and efficiency on point, while Iraq posed 0 threat all game</b> — the title-favourite billing was validated, and France can preserve form having already qualified early.</div>
+    <div class="insight"><div class="who">Iraq's attack produced nothing, and they fell apart mentally after the restart</div>Iraq created no real threat all game and scored 0, and even gifted a goal away through a goal-kick error after the restart. <b>This shows that against a side of France's calibre, Iraq lack the means to turn defence into attack</b>; in their final match they need to rediscover organisation and a finishing outlet against more evenly matched opposition.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">France win, qualify early</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>3-0 win and qualified; the title-favourite direction was entirely correct</td></tr>
+      <tr><td class="ht">Mbappé continues his hot scoring run</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Brace, drawing level with Klose on 16 World Cup goals</td></tr>
+      <tr><td class="ht">France dominate territorially</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>2.38 xG, Iraq 0 threat — total dominance</td></tr>
+      <tr><td class="ht">Iraq struggle to create threat</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>0 goals, 0 real chances all game</td></tr>
+      <tr><td class="ht">Weather variable (Philadelphia summer thunderstorms)</td><td style="color:var(--warn)"><b>~ Materialised and exceeded expectations</b></td><td>It really happened and became the first weather-suspended game in World Cup history (2 hours+); did not change the result</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇫🇷 France · Next match: final MD vs Norway (battle for Group I top spot)</h4>
+        <ul class="watch">
+          <li><b>Battle for top of Group I</b>: France and Norway are both expected to have qualified, so the final match could directly decide group winner and knockout-bracket half — both have motivation, but may also rotate to protect key men.</li>
+          <li><b>Mbappé+Olise right flank is the template</b>: Norway will study and target the route to both goals here; whether France can open a second line of attack when their right is targeted is the thing to watch.</li>
+          <li><b>The transition battle against Haaland</b>: Norway have Haaland, a top-class finisher (4 goals this tournament), so how France's back line handles quick counters will be key — a completely different calibre from the Iraq they faced here.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇮🇶 Iraq · Next match: final MD vs Senegal (qualification prospects slim)</h4>
+        <ul class="watch">
+          <li><b>Qualification outlook grim</b>: After another loss here, both on points and goal difference they are in a poor position, and the final game against Senegal is virtually a matter of pride (qualification would require multiple conditions to align · exact scenario TBC).</li>
+          <li><b>Must solve defence-to-attack transition</b>: After posing 0 threat against France, in the final match against a more evenly matched Senegal they must find midfield-to-attack link-up and a finishing outlet.</li>
+          <li><b>Avoid basic errors</b>: The post-restart goal-kick error gifted the ball away — in the final match they must stay solid mentally and on fundamentals, and avoid another self-inflicted collapse.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a hugely lopsided <b>"qualification-confirmation" match</b>: France (FIFA #2, title favourite) beat Senegal 3-1 on MD1, with <b>Mbappé scoring a brace and overtaking Giroud as France's all-time top scorer</b>; Iraq (FIFA #58) were thrashed 1-4 by Norway on MD1, their flaws fully exposed — <b>a goalkeeper error + a 4-4-2 carved open through the middle</b>. The market is almost entirely one-sided — France win ~<b>1.08</b> (de-vigged implied ≈90%), draw <b>10.00</b> (≈8%), Iraq win <b>34.00</b> (≈3%); the prediction market (Kalshi) gives France about <b>90%</b>. The real interest is not in the result but in three things: ① <b>can France avoid a "sluggish start"</b> (their MD1 first half was flat), opening the game up early via the Olise-Mbappé axis; ② <b>Mbappé's record chase</b> (already level with Gerd Müller on 14 World Cup goals); ③ <b>Iraq's goals conceded and whether the goalkeeper can stop the bleeding</b>. Base-case script: <b>France win big 3-0 / 4-0 and lock up Group I qualification</b>, with the tension on "how many, who scores, and a clean sheet or not". Market Heat Index ≈ 2/5 (consensus is clean; the Mbappé record is the traffic driver).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">France implied win prob. (de-vigged)</div><div class="v" style="color:#5b8def">≈90%</div></div>
+      <div class="key"><div class="k">Iraq implied win prob. (de-vigged)</div><div class="v" style="color:#3aa564">≈3%</div></div>
+      <div class="key"><div class="k">Mbappé World Cup goals</div><div class="v" style="color:var(--warn)">14 goals</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>France wary of a "sluggish start" (carried over from last match)</b>: against Senegal on MD1 their first half was flat and they only got going in the second half — against Iraq's low block, France need to break it down early via the Olise-Mbappé axis, otherwise it could turn into a patient slog again (affecting the early-goal / overs tempo).</li>
+      <li><b>Mbappé on fire, record within reach (carried over from last match)</b>: Mbappé has already drawn level with Gerd Müller on 14 World Cup goals and overtaken Giroud as France's all-time top scorer — in superb form, he could push the record further here and is the core driver of the overs / player-line markets.</li>
+      <li><b>Iraq's goalkeeper and central holes (carried over from last match)</b>: on MD1 Iraq goalkeeper Jalal Hassan gifted a goal with an error, and a 4-4-2 outnumbered in midfield was carved open by Norway — France's attacking unit is far superior to Norway's, and if these two holes are not fixed they will be magnified without limit.</li>
+      <li><b>Iraq's realistic aim is to limit goals conceded</b>: Hussein's aerial duels are Iraq's only repeatable scoring route (set pieces / crosses), with almost no open-play chance; the realistic aim is to limit the goals-conceded margin and chase a theoretical late-group qualification possibility.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #243f6b;background:linear-gradient(135deg,#121c2b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and status signals affecting this fixture, with item-by-item explanation of how each changes the tactics or the result (including carry-over items from both teams' last match)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc0ee;font-weight:700">France · Carried over from last match · Sluggish start + Mbappé record <span style="color:var(--mut);font-weight:400">· transferred from the Senegal-match review · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">France beat Senegal 3-1 on MD1, <b>Mbappé brace</b>; the first half was flat, they only opened up in the second half</div>
+      <p style="font-size:13.5px">Carrying over the forward transfer from the Senegal-match review: France won 3-1, but <b>the first half was a "sluggish start"</b> and they only got going in the second half via the Olise-Mbappé axis; Mbappé scored a brace, overtook Giroud as France's all-time top scorer, and drew level with Gerd Müller on 14 World Cup goals. Barcola scored off the bench and may be in contention to start, leaving plenty of attacking rotation room. Conceding in stoppage time at the back is a reminder: even against weaker sides, manage concentration well in the closing stages.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: France are the outright favourites (de-vigged ≈90%), the result is not in doubt, and the value is all in <b>goals scored, who scores, and a clean sheet or not</b>. The "sluggish start" is a mild negative for the early overs line — if France are slow to warm up again, the early-goal markets come under pressure; but Mbappé's form and Iraq's fragile defence mean France's chances of a big full-time win remain high.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — France vs Iraq preview</a> · <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d" style="color:var(--accent)">Goal — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#82d2a0;font-weight:700">Iraq · Carried over from last match · Goalkeeper error + central holes <span style="color:var(--mut);font-weight:400">· transferred from the Norway-match review · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Iraq lost 1-4 to Norway on MD1, <b>goalkeeper Jalal Hassan gifted a goal, a 4-4-2 outnumbered in midfield was carved open</b>; Hussein's header is the only scoring route</div>
+      <p style="font-size:13.5px">Carrying over the forward transfer from the Norway-match review: Iraq were thrashed 1-4, Haaland scored a brace, and two major flaws — <b>goalkeeper Jalal Hassan's error</b> and a <b>4-4-2 outnumbered through the middle</b> — must be fixed, or France (with firepower equal to or greater than Norway's) will magnify them again. Hussein's aerial ability is the only repeatable scoring route (set pieces / crosses to win headers); the realistic aim is to limit goals conceded and try to keep a theoretical qualification chance alive late in the group stage.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: These two holes are exactly what France's attacking unit (Mbappé/Olise/Dembélé/Barcola) is best at exploiting. If Casas does not adjust the midfield structure and the goalkeeper falters again, Iraq's goals conceded could slide toward 4-0/5-0, feeding directly into the deep-handicap and overs markets — which is why the market is interested in a deep France handicap (-2/-2.5) and overs.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Preview / team news</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-france-vs-iraq-jun-22-2026-game-boxscore-647657" style="color:var(--accent)">FOX Sports — Match info</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc0ee;font-weight:700">France · Rotation signal <span style="color:var(--mut);font-weight:400">· Racing Post / VSiN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Deschamps has a deep, strong attacking unit, Mbappé fit and in form; Barcola may compete for a start, with rotation room</div>
+      <p style="font-size:13.5px">Per Racing Post / VSiN, Deschamps has a full set of attacking options and Mbappé is fit and on fire. Given France are likely to lock up qualification early and have another tough final match (against Norway/Senegal for a qualification spot), Deschamps may make <b>moderate rotation</b>, giving Barcola, Kolo Muani and others more chances and protecting his key men's fitness. Tchouaméni and Camavinga control midfield, with Saliba/Upamecano/Theo anchoring the defence. <span style="color:var(--warn)">[Official XI per the pre-match FIFA team sheet; rotation extent TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The extent of rotation directly affects the scoring tempo and the overs. If Mbappé is protected and taken off early and France rotate heavily, the winning margin would theoretically be reduced; but even a backup lineup leaves a huge quality gap against Iraq. Whether they let Mbappé chase the record by keeping him on is a thing to watch.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/" style="color:var(--accent)">Racing Post — Team news / prediction</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/" style="color:var(--accent)">VSiN — Prediction</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Environment · Match referee officially confirmed <span style="color:var(--mut);font-weight:400">· All Football / ESPN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Canadian official <b>Drew Fischer</b> to take charge; match played at Philadelphia's Lincoln Financial Field (open-air)</div>
+      <p style="font-size:13.5px">Multiple sources (All Football, ESPN) confirm FIFA has appointed Canadian official <b>Drew Fischer</b> to referee this Group I Matchday 2 fixture. Fischer is a senior MLS and CONCACAF referee, selected for the 2026 World Cup referee list. The match is played at Philadelphia's Lincoln Financial Field (an open-air stadium), so watch the June East Coast afternoon heat/humidity (17:00 ET kick-off), which has a marginal effect on Iraq's fitness and France's tempo management. <span style="color:var(--warn)">[Fischer's assistant/VAR combination for this match and his per-game card breakdown sample at major tournaments are limited · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In a lopsided fixture, the referee has almost no bearing on the result — France need no marginal help. The only value on the officiating angle is in the cards/penalty markets: if France attack ferociously and Iraq foul frequently to break it up, the probability of yellow cards and a penalty rises slightly. See the referee module below for details.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://m.allfootballapp.com/news/Headline/OFFICIAL-Canadian-referee-Drew-Fischer-to-officiate-France-vs.-Iraq-at-2026-FIFA-World-Cup/4664768" style="color:var(--accent)">All Football — Fischer appointment confirmed</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referee list</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed Lineups & What They Mean -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06240f">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· announced pre-kickoff · dual-source verified</span></h2>
+    <div class="sub">Confirmed by two consistent sources (101GreatGoals official lineup with full bench + multi-source aggregation) · The FIFA Match Centre lineup page only lights up just before kick-off, so we use the already-announced official team sheets · <b style="color:var(--good)">✅ Officially confirmed</b></div>
+
+    <h4>🇫🇷 France official XI (4-2-3-1) · Deschamps</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · Digne; Koné · Rabiot; Olise · Dembélé · Barcola; Mbappé(C)</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Key weapons on the bench: Tchouaméni, Cherki, Doué, Mateta, Thuram, Kanté, Theo Hernández, Kolo Muani (15-man bench announced pre-match)</div>
+
+    <h4 style="margin-top:14px">🇮🇶 Iraq official XI (around 4-4-2 / 4-2-3-1) · Casas</h4>
+    <div class="lineup">A. Basil(GK); Ali · Tahseen · A. Hashim · M. Doski; Bayesh · Iqbal · A. Al-Ammari · Ismael; Qasem · A. Hussein</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Key weapons on the bench: Ali Jasim (carrying a knock, on the bench), Jalal Hassan (the originally predicted starting goalkeeper), Rebin Sulaka; positions approximated by team-sheet order</div>
+
+    <h4 style="margin-top:16px">📋 France vs predicted XI</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">Left back</td><td>Theo Hernández</td><td class="sc">Lucas Digne</td><td>More defensively solid, fewer overlaps; limited impact against a weaker side, mainly a solidity/fitness trade-off</td></tr>
+      <tr><td class="ht">Double pivot</td><td>Tchouaméni · Camavinga</td><td class="sc">Koné · Rabiot</td><td>Tchouaméni rested; Koné offers high-intensity interceptions + ball-carrying drive, more vertical thrust through midfield</td></tr>
+      <tr><td class="ht">Front line, left</td><td>Doué (left) / Kolo Muani as lone striker</td><td class="sc">Barcola (left) · Mbappé moved to centre-forward</td><td>Rotation expectation delivered (Barcola starts); Mbappé moved to centre-forward to chase the record, attacking axis pushed forward</td></tr>
+      <tr><td class="ht">Unchanged</td><td colspan="2">Maignan · Koundé · Saliba · Upamecano · Olise · Dembélé · Mbappé</td><td>The core attack-defence spine matches the prediction — the Plan A attacking unit is still close to full strength</td></tr>
+    </table>
+    <div class="note">Iraq's biggest change: goalkeeper <b>Ahmed Basil</b> starts ahead of the originally predicted <b>Jalal Hassan</b>; Ali Jasim (who played hurt against Norway) drops to the bench. The rest is consistent with the "stop the goalkeeping bleeding + fix the midfield" angle.</div>
+
+    <h4 style="margin-top:16px">🎯 Tactical read</h4>
+    <div style="font-size:13.5px;line-height:1.75">
+      ① <b>Mbappé starts and is moved to centre-forward (lone striker)</b> — the Quick Summary's core question, "does Mbappé start?", = <b style="color:var(--good)">confirmed start</b>, the record chase is live, the attacking axis pushed forward, and the big-win + goalscoring lean is <b>maintained</b>.<br>
+      ② <b>Double pivot Koné + Rabiot, Tchouaméni rested</b> — Koné provides high-intensity interceptions and ball-carrying, giving midfield more vertical thrust; the fitness-management intent is clear (a tough final match against Norway/Senegal for a qualification spot).<br>
+      ③ <b>Barcola starts, delivering the rotation expectation, Doué/Kolo Muani to the bench</b> — a pace option on the left, forming a front three with Olise (right) + Dembélé (centre), the attacking unit still close to full strength, so <b>the overs margin should not be markedly downgraded for rotation</b>.<br>
+      ④ <b>Left back Digne in for Theo</b> — more solid, fewer overlaps, limited impact against Iraq, a fitness/solidity trade-off.<br>
+      ⑤ <b>Iraq goalkeeper Basil starts ahead of Jalal Hassan</b> — the goalkeeper switch is Iraq's biggest talking point; against France's attacking waves his shot-stopping reliability is key to limiting goals conceded; Aymen Hussein still leads the line.<br>
+      <span style="display:block;margin-top:8px;padding:9px 11px;background:#0d1526;border-radius:8px">🧭 <b>Quick-take verdict: maintained</b> (France's big-win direction unchanged, Mbappé starts with a goalscoring lean), <b>fine-tune</b>: midfield + left-back rotation has been delivered, but the attacking unit is close to full strength, so <b>do not downgrade the overs expectation</b>.</span>
+    </div>
+
+    <h4 style="margin-top:16px">📈 Market reaction</h4>
+    <p style="font-size:13.5px">This is <b>deep rotation</b> rather than an injury-driven change (Mbappé starts, the attacking unit is intact), the headline man is on the pitch, so in theory it should not trigger a significant move on the favourite's line; France's strong-favourite positioning of 1.08 (≈90%) is expected to hold, with the handicap (-2/-2.5) and goals scored remaining the core markets. <span style="color:var(--warn)">[Real-time line breakdowns before and after the lineup release are limited; exact odds per platform · stated as fact only, not betting advice]</span></p>
+
+    <div style="font-size:12px;margin-top:10px">Sources: <a href="https://www.101greatgoals.com/football/world-cup-news/france-vs-iraq-line-ups-confirmed-world-cup/" style="color:var(--accent)">101GreatGoals — confirmed starting lineups (with bench)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492" style="color:var(--accent)">FIFA — Match Centre (lineup page lights up before kick-off)</a> · <a href="https://www.si.com/soccer/france-vs-iraq-world-cup-preview-predictions-lineups-6-22-26" style="color:var(--accent)">SI — Preview / lineups</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probabilities (de-vigged) · Group I picture · Over/Under market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 3.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group I four teams' FIFA ranking (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇫🇷 France</th><th>🇮🇶 Iraq</th></tr>
+      <tr><td>FIFA ranking</td><td class="ht">#2</td><td class="sc">#58</td></tr>
+      <tr><td>MD1 result</td><td class="ht">3-1 win over Senegal (Mbappé brace)</td><td class="sc">1-4 loss to Norway (goalkeeper error, carved open through the middle)</td></tr>
+      <tr><td>Group I points</td><td colspan="2">France 3 pts (level on points with Norway, ahead on goal difference); Iraq 0 pts, already on the back foot</td></tr>
+      <tr><td>Head coach</td><td class="ht">Didier Deschamps</td><td class="sc">Jesús Casas (Spanish)</td></tr>
+      <tr><td>Key players</td><td class="ht">Mbappé(C), Olise, Dembélé, Tchouaméni</td><td class="sc">Aymen Hussein, Ali Jasim, Jalal Hassan (goalkeeper)</td></tr>
+      <tr><td>Key questions for this match</td><td class="ht">Will the sluggish start return; rotation extent; Mbappé record</td><td class="sc">Stop the goalkeeping bleeding; fix the midfield structure; limit goals conceded</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">World Cup 2022 runners-up (lost final to Argentina) · Euro 2024 semi-finalists</td><td class="sc">Asian Cup 2023 round of 16 · long-awaited World Cup return</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win 1.08 (implied ≈90%)</td><td class="sc">Win 34.00 (≈3%) · Draw 10.00 (≈8%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Totals line set high (Over 3.5 leaning hot) — the core markets are the France handicap (-2/-2.5) and goals scored</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from decimal odds (≈90/8/3, re-normalised). Odds source: bet365 (France -1200 → 1.08, draw +900 → 10.00, Iraq +3300 → 34.00); prediction market Kalshi France 90% / draw 8% / Iraq 4%. France handicap around -2/-2.5; exact odds per the real-time pre-match line. For analysis only, not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actual values · underlying quality signals · sourced</span></h2>
+    <div class="sub">Core method: line up each team's <b>historical baseline (last two major tournaments / qualifiers / friendlies)</b> against <b>this World Cup's actual values</b>, item by item. Public xG samples for national teams are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actual values (per team)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (MD1)</th><th>Gap and reading</th></tr>
+      <tr><td class="ht">🇫🇷 France · Attack</td><td class="ht">2022 World Cup runner-up-level firepower, a world-class attacking unit led by Mbappé</td><td class="ht">MD1 <b>3 goals</b> (Mbappé brace), got going in the second half</td><td><b>In line with</b> top level, with only the "sluggish start" a slow-to-warm-up signal; against Iraq's fragile defence the firepower is likely to be fully unleashed</td></tr>
+      <tr><td class="ht">🇫🇷 France · Defence</td><td class="ht">A Saliba/Upamecano + Tchouaméni shield; reached the final in 2022 on solid defending</td><td class="ht">Conceded 1 on MD1 (stoppage time), overall under control</td><td><b>Continued</b> solidity: the stoppage-time goal is a concentration issue not a structural collapse; high clean-sheet probability against Iraq</td></tr>
+      <tr><td class="sc">🇮🇶 Iraq · Attack</td><td class="sc">A mid-tier Asian side, reliant on Hussein as a focal point and on set pieces, limited open-play creativity</td><td class="sc">MD1 <b>1 goal</b> in a loss to Norway, attack unremarkable</td><td><b>Below</b> what's needed: cannot open teams up in open play, scoring almost only via set pieces / Hussein headers</td></tr>
+      <tr><td class="sc">🇮🇶 Iraq · Defence</td><td class="sc">Should be built on disciplined defending, but the goalkeeper and midfield structure are weak points</td><td class="sc">Conceded 4 on MD1, <b>goalkeeper error + carved open through the middle</b></td><td><b>Far worse than</b> ideal: the core holes against France's attack are a disaster-level risk, and goals conceded could stay high</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: France's attack-defence actuals this tournament <b>continue runner-up level</b> (3 goals, conceded only in stoppage time), with only the "slow start" a tempo signal; Iraq's attack is <b>below what's needed</b> and the defence is <b>far worse than</b> ideal. The deep data is consistent with the main thesis that "France dominate completely, value all in the handicap and goals scored". Sources: Opta Analyst · FotMob/Sofascore (MD1) · FIFA/team major-tournament records. For analysis only, not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model projected xG (magnitude)</td><td class="ht">France ≈2.7</td><td class="sc">Iraq ≈0.4</td><td>After calibration France are overwhelmingly favoured; the only variable is Deschamps's rotation extent and whether the "sluggish start" recurs (affecting the early-goal tempo)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within these systems France sit at the very front of Group I and globally; the prediction market (Kalshi) gives France ≈90% to win, &gt;98% to qualify, and a high probability of winning the group, with Iraq's qualification theoretically alive but very low</td><td>After opponent-strength calibration the France sample is highly meaningful (Iraq FIFA #58 are the weakest in Group I)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public data for national teams is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: France's field tilt will press into Iraq's half for long spells, with a large advantage in xT and box touches</td><td><b>Trap reminder</b>: territorial dominance is barely in doubt; the only handicap/overs risk is France rotating + a slow start suppressing the winning margin</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-style" metrics mean)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; excluding penalties reflects open-play creativity better.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower = more aggressive pressing.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than mere possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">The France-win direction is absolutely unanimous; the real disagreement is all in "handicap margin (-2 vs -2.5) + goals scored + whether Mbappé scores"; consensus is clean, overheating low</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · One-sided consensus, clean sentiment</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">France are the outright favourites (de-vigged ≈90%, Kalshi 90%), with no disagreement on the result and no sentiment premium. The value is all in the <b>handicap margin (-2 vs -2.5), goals scored (Over 3.5) and whether Mbappé scores / clears a player line</b>. Mbappé's record chase is the only sentiment traffic driver.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: France win across the board · draw/Iraq ≈0)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Racing Post</td><td>Established UK outlet</td><td>France big win (5-1 bet builder), leaning on Mbappé to score and France -2 handicap</td></tr>
+      <tr><td>VSiN</td><td>US betting media</td><td>France win + clean sheet + Mbappé anytime scorer (-200), stacked with Over 2.5</td></tr>
+      <tr><td>Goal.com</td><td>Pre-match preview</td><td>France comfortable win, watching the rotation and the final-MD qualification picture</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>France well on top; Iraq with almost no open-play chance</td></tr>
+      <tr><td>Juvefc / TheSportsRush</td><td>Prediction media</td><td>France win + overs, flagging Iraq's high goals conceded</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: the result direction is absolutely unanimous (nobody backs Iraq/the draw) — a one-sided consensus with no sentiment premium. The real disagreement is only in the <b>handicap margin</b> (-2 vs -2.5), <b>goals scored</b> and <b>whether Mbappé scores / clears a player line</b>. The Mbappé record narrative is a traffic driver, not a source of money-flow anomalies.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>France win</th><th>Read</th></tr>
+      <tr><td>Open (multi-book composite)</td><td>1X2</td><td class="ht">≈1.07–1.10</td><td>France overwhelming favourites; draw 10.00 / Iraq 34.00</td></tr>
+      <tr><td>06-20 close</td><td>bet365 / FanDuel</td><td class="ht">1.08 (-1200)</td><td>France's ultra-short price barely moves (held after the 3-1 on MD1)</td></tr>
+      <tr><td>06-20</td><td>Over/Under</td><td colspan="2" class="ht">Totals line set high, Over 3.5 leaning hot (France firepower + Iraq's fragile defence)</td></tr>
+      <tr><td>Handicap (Asian reference)</td><td>France -2 / -2.5</td><td colspan="2" class="ht">France -2/-2.5; exact odds per the real-time line</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement (opening → current)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / Odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening (days before)</td><td class="ht">France win ≈1.10; handicap -2</td><td>Priced on "title favourite + Mbappé vs a mid-tier Asian side", with the opening line already pinning France as an ultra-short favourite at handicap -2</td></tr>
+      <tr><td>Open (re-priced after MD1)</td><td class="ht">France win 1.07–1.08; handicap -2/-2.5 both live</td><td><b>Repricing came from both MD1 results</b>: France's 3-1 confirmed their strength and Iraq's 1-4 exposed their goalkeeper and central holes → the case for the handicap deepening toward -2.5 strengthened, and the overs line was pushed higher</td></tr>
+      <tr><td>Current (06-20→now)</td><td class="ht">France win 1.08; Over 3.5 leaning hot / -2.5 handicap angle</td><td>The 1X2 is locked (pricing already extremely converged); the most active price discovery is in the <b>handicap (-2 vs -2.5) and over/under</b> — "France's rotation extent + whether they start slowly" is the only variable for whether the deep handicap pays off</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's odds were extreme from the opening line (≈1.10, handicap -2), and <b>Iraq's 1-4 collapse</b> further strengthened the case for a deep France handicap and overs. The 1X2 has no value (pricing already saturated); the only thing with information content is the <b>France handicap (-2/-2.5) and goals scored</b> — the risk being Deschamps rotating early + a "sluggish start" suppressing the winning margin. Opening ranges per platform. For analysis only, not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (aggregate)</b>: France about <b>90%</b> to win, draw 8%, Iraq 4% — highly consistent with the bookmaker de-vig, no sentiment premium. Group I qualification: France &gt;98%, Iraq theoretically alive but very low. <span style="color:var(--warn)">[Single-match volume and momentum breakdowns not separately found · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Mbappé's record chase</b> (already level with Gerd Müller on 14 World Cup goals, and past Giroud as France's all-time top scorer) is this match's biggest traffic driver.</li>
+      <li><b>Sentiment focus ②</b>: <b>Deschamps's rotation decision</b> — with early qualification within reach, whether to protect key men and give backups a chance is a focus for French media.</li>
+      <li><b>Iraq narrative</b>: the sentiment of a long-awaited World Cup return + the management of Spanish coach Casas, but the public broadly expect a heavy defeat, with no upset money.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the result direction is absolutely clear (France), bookmakers and prediction markets agree (≈90%), and the heat index is <b>2/5</b>. The traffic comes from the <b>Mbappé record</b> rather than the result line; the most informative angles are the <b>France handicap (-2/-2.5), goals scored and whether Mbappé scores</b>. For analysis only, not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/">Racing Post — Odds / betting</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/">VSiN — Prediction</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-iraq-06-22-26-world-cup-2026/">Squawka — Preview</a> · <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d">Goal — Preview</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is Canadian official <b>Drew Fischer</b> (MLS / CONCACAF, selected for the 2026 World Cup referee list). Sources: All Football, ESPN (referee list). <span style="color:var(--warn)">[The specific assistant/VAR combination for this match · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's unified new rules (actual data + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Officiating profile</b>: Fischer comes from the North American (CONCACAF) officiating system and is a long-time MLS referee — generally with some tolerance for physical contact, and consistent with cards for clear and tactical fouls. His per-game card average sample at major tournaments is limited. <span style="color:var(--warn)">[Yellow-cards-per-game breakdown · TBC]</span></li>
+      <li><b>Officiating history with both teams</b>: no notable public officiating history with either France or Iraq, so no team bias to speak of.</li>
+      <li><b>This tournament's unified new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may address the referee, semi-automated offside; the officiating environment this tournament leans strict. If Iraq foul heavily to break up France's attacks, the risk of accumulated yellows and a box penalty rises.</li>
+      <li><b>Actual impact on this match</b>: in a lopsided fixture the referee has almost no bearing on the result; semi-automated offside will rule faster on Mbappé/Olise's marginal runs, marginally suppressing offside-line goals (a marginal effect on overs).</li>
+    </ul>
+    <div class="flag">⚠ <b>Officiating-angle analysis</b>: this match is a "France's overwhelming attack vs Iraq's compact defence" matchup — the only officiating value is in cards/penalty: the accumulated fouls of Iraqi defenders repeatedly breaking up Mbappé/Dembélé counters, and the penalty threshold for tugging in the box, are things to watch. Given Fischer's limited per-game sample at major tournaments, the cards market is best treated as a "tendency".</div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">predicted version · official version in the ✅ module above</span></h2>
+    <div class="sub">Predicted XI (ESPN / Racing Post projections, not official; official lineup per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇫🇷 France predicted XI (4-2-3-1) · Deschamps</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · Theo Hernández; Tchouaméni · Camavinga; Dembélé · Olise · Mbappé(C); Kolo Muani</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Kylian Mbappé (C)</td><td>Forward / Captain</td><td>MD1 brace, became France's all-time top scorer, level with Gerd Müller on 14 World Cup goals; the focal point of the record chase</td></tr>
+      <tr><td class="ht">Michael Olise</td><td>Winger / Bayern</td><td>His axis with Mbappé is the key to France breaking down a packed defence, the second-half ignition point</td></tr>
+      <tr><td class="ht">Bradley Barcola</td><td>Winger / PSG</td><td>Scored off the bench on MD1, may compete to start; plenty of rotation room</td></tr>
+      <tr><td class="ht">Aurélien Tchouaméni</td><td>Midfielder</td><td>The midfield shield and distributor, controls tempo and protects the defence</td></tr>
+    </table>
+    <h4>🇮🇶 Iraq predicted XI (4-2-3-1 / 4-4-2) · Casas</h4>
+    <div class="lineup">Jalal Hassan; Ayman Hussein · Rebin Sulaka · Merchas Doski · Akam Hashim; Amir Al-Ammari · Bashar Resan; Ali Jasim · Ibrahim Bayesh · Manaf Younis; Aymen Hussein</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Aymen Hussein</td><td>Forward</td><td>A target-man centre-forward; his aerial duels are Iraq's only repeatable scoring route (set pieces / crosses)</td></tr>
+      <tr><td class="sc">Ali Jasim</td><td>Winger / attacking midfielder</td><td>One of Iraq's few technical sparks, links the counter-attack</td></tr>
+      <tr><td class="sc">Jalal Hassan</td><td>Goalkeeper</td><td>Gifted a goal with an MD1 error — whether he stops the bleeding here decides the goals conceded</td></tr>
+      <tr><td class="sc">Bashar Resan</td><td>Midfielder</td><td>Midfield coverage; must fix the MD1 numerical disadvantage of a 4-4-2 being carved open through the middle</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analytical projections (ESPN / Racing Post), <b>subject to the pre-match official team sheet · TBC</b>. France's rotation extent under Deschamps (whether Mbappé starts and plays the full match, and who starts of Barcola/Kolo Muani) and Iraq's goalkeeper/midfield-structure adjustments are the key variables still to confirm.</div>
+  </section>
+
+  <!-- Tactics + head coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Each conclusion is cross-referenced against both teams' actual approach and results in their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5b8def">🇫🇷 France · Didier Deschamps</div>
+        <div class="role">4-2-3-1 pragmatic + world-class transitions, Mbappé as free man, solid counter-attacking base</div>
+        <ul class="cl">
+          <li>France's hallmark is <b>pragmatic control + world-class individual transitions + a solid defence</b> — 2022 World Cup runners-up, Euro 2024 semi-finalists; Deschamps's teams have huge tournament resilience. Although MD1's 3-1 was slow to warm up, the firepower was fully unleashed in the second half.</li>
+          <li>Cross-reference: lost the World Cup 2022 final to Argentina on penalties (Mbappé hat-trick), Euro 2024 semi-finalists (attacking efficiency questioned but the defence solid) — France's floor is extremely high. Against Iraq here, the only variables are rotation and a slow start.</li>
+          <li>This match's entry point: Iraq's goalkeeper and central holes are exactly where France's attacking unit (Mbappé/Olise/Dembélé) does its damage; break it down early via the Olise-Mbappé axis, avoid a repeat "sluggish start", and rotate in the second half to protect key men.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇮🇶 Iraq · Jesús Casas</div>
+        <div class="role">4-2-3-1 low block + set pieces, Hussein as focal point, goalkeeper and midfield the weak points</div>
+        <ul class="cl">
+          <li>Casas (Spanish) brings an organised low-block philosophy, and Iraq's realistic approach is <b>a compact defence + set-piece raids + Hussein headers</b> — they reached the round of 16 at the Asian Cup 2023 on defensive discipline.</li>
+          <li>Cross-reference: knocked out in the round of 16 at the Asian Cup 2023 (eliminated by Jordan); this tournament's MD1 1-4 loss to Norway, with the goalkeeper error and midfield numerical disadvantage the core ills. Against France, these holes will be magnified by a top-class attacking unit.</li>
+          <li>This match's response: the realistic aim is not to win but to <b>limit goals conceded and protect goal difference to chase a theoretical late-group qualification</b>. They must tighten the midfield numbers, get a steady goalkeeping display, and rely on Hussein's set-piece aerial duels to nick a consolation goal.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN <small>· Pre-match preview</small></div>France's quality, clean-sheet potential and scoring outlets are the main thread of this match; Deschamps has a full attacking unit, with Mbappé fit and in form. If Iraq's goalkeeper and central holes are not fixed, France will magnify them.</div>
+    <div class="insight"><div class="who">VSiN <small>· Betting media</small></div>Recommends anchoring on Mbappé anytime scorer (-200), stacked with France win + Over 2.5; views France's clean-sheet potential as high and Iraq's open-play threat as almost nil.</div>
+    <div class="insight"><div class="who">Prediction market (Kalshi) <small>· Market consensus</small></div>France win ≈90% / draw 8% / Iraq 4%, consistent with the bookmaker de-vig and no premium. France &gt;98% to qualify; this match is basically a qualification confirmation + goal-difference accumulation.</div>
+    <div class="insight"><div class="who">Composite · core suspense and trap <small>· Opta / FotMob</small></div>The real suspense is not in the result but in <b>France's goals scored and whether they keep a clean sheet</b>. ⚠ Trap reminder: France's "sluggish start" + early rotation could suppress the winning margin, with a marginal risk of the deep handicap (-2.5) and overs falling short — the only variable to watch.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Verification Checklist</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a France big win (3-0 / 4-0 / 4-1) is the base-case script, locking up Group I qualification; the draw (≈8%) and an Iraq win (≈3%) are tiny tail outcomes that would require France rotating heavily + a slow start + an inspired Iraqi goalkeeper all at once.</li>
+      <li><b>Key men</b>: Mbappé (France / record and finishing), Olise (France / breaking down the packed defence), Barcola (France / rotation spark), Aymen Hussein (Iraq / the only set-piece hope), Jalal Hassan (Iraq / goalkeeping bleeding).</li>
+      <li><b>Match-deciding factor</b>: the real interest here is <b>whether France avoid a slow start, fully unleash the firepower and keep a clean sheet</b>, and <b>whether Mbappé can keep extending the record</b> — which decides the settlement of the handicap (-2/-2.5) and the over/under.</li>
+      <li><b>Market angle</b>: bookmakers and prediction markets agree absolutely (France, ≈90%), the 1X2 has no value; the most informative angles are the <b>France handicap (-2/-2.5), goals scored and Mbappé to score / clear a line</b>. Heat index 2/5 (traffic from the Mbappé record).</li>
+    </ul>
+    <div class="flag">⚠ <b>To verify</b>: ① both teams' official XIs (FIFA Match Centre ~1 hour pre-match); ② France's rotation extent, whether Mbappé starts and plays the full match; ③ Iraq's goalkeeper/midfield-structure adjustments; ④ Fischer's assistant/VAR combination for this match and his per-game card breakdown at major tournaments; ⑤ Kalshi/Polymarket single-match volume and momentum breakdown; ⑥ the Asian handicap line (-2/-2.5) and over/under totals line; exact odds per the real-time pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — Schedule/lineups/referee/preview</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492">FIFA — Match Centre</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/">Racing Post — Odds/team news/prediction</a><br>
+      • <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d">Goal — Preview</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/">VSiN — Prediction</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-iraq-06-22-26-world-cup-2026/">Squawka — Preview</a><br>
+      • <a href="https://m.allfootballapp.com/news/Headline/OFFICIAL-Canadian-referee-Drew-Fischer-to-officiate-France-vs.-Iraq-at-2026-FIFA-World-Cup/4664768">All Football — Fischer appointment confirmed</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referee list</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — Group I</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-21 · Charts use verified data; radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#5b8def',SC='#3aa564',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['France win','Draw','Iraq win'],datasets:[{data:[90,8,3],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 3.5','Under 3.5'],datasets:[{data:[57,43],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, overs lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['France','Senegal','Norway','Iraq'],datasets:[{data:[2,18,30,58],backgroundColor:[HT,'#3b9e6f','#7fa6e6','#82d2a0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wings / counter','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'France',data:[8.5,9,8.5,8.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Iraq',data:[5,4.5,5,5,4.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

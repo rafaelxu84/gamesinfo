@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 英格兰 vs 克罗地亚 · 2026世界杯 L组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-england-vs-croatia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 4-2 · 2026 世界杯 · L组首轮 · 2018 半决赛的复仇之战</span>
+  <h1>英格兰 vs 克罗地亚</h1>
+  <div class="meta">2026年6月17日 · 阿灵顿 AT&amp;T 体育场（达拉斯）· 16:00 ET · L组（同组：加纳、巴拿马）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</div><div class="rk">Tuchel 执教 · 预选赛 8 战全胜进 22 球失 0 球 · 控节奏+组织型防守</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇭🇷 克罗地亚</div><div class="rk">Dalić 执教 · Modrić 黄金中场的最后一舞 · 经验丰富但引擎老化</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 英格兰 4-2 克罗地亚（半场 2-2）· 阿灵顿 AT&amp;T 体育场，70,389 人 · 主裁 Clément Turpin · 数据来源 Sofascore / Opta Analyst / FIFA / ESPN / Sky Sports · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场<b>"上半场对攻、下半场被压制"</b>的两段式比赛。开场仅 12 分钟 <b>Madueke</b> 突入禁区造点、<b>Kane</b> 主罚命中（点球曾因门将出线 + 越线扑出被 VAR 判重罚后命中），英格兰 1-0；但克罗地亚迅速回应，第 <b>36 分钟 Sučić</b> 一记垂直直塞撕开防线、<b>Baturina</b> 推射扳平。第 <b>42 分钟</b> Rice 传中、<b>Kane</b> 再下一城梅开二度（追平 Gary Lineker 英格兰世界杯 10 球纪录），2-1；补时高潮 <b>45+5'</b> <b>Perišić</b> 助攻、<b>Musa</b> 推射再度扳平——半场 2-2，克罗地亚带着气势进入更衣室。但易边后剧本彻底反转：仅 <b>第 47 分钟</b> <b>Anderson</b> 一脚扫传右路、<b>Bellingham</b> 内切打入左下角，3-2；此后英格兰完全掌控，下半场 9 次射正（本届世界杯单半场之最）、禁区触球 12-1 碾压，第 <b>85 分钟</b>替补 <b>Saka</b> 助攻 <b>Rashford</b> 锁定胜局，4-2。全场 xG 2.82-0.53，与下半场的压制走势完全吻合。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 12' Kane（点球，Madueke 造点，1-0）→ 36' Baturina（Sučić 助攻，1-1）→ 42' Kane（Rice 传中，2-1）→ 45+5' Musa（Perišić 助攻，2-2）→ HT 2-2 → 47' Bellingham（Anderson 助攻，3-2）→ 85' Rashford（Saka 助攻，4-2）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</th><th style="padding:6px">🇭🇷 克罗地亚</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">53%</td><td style="text-align:center">47%</td><td style="padding:6px;color:var(--mut)">上半场 48-52 接近均势，下半场升至 58-42——领先后稳稳收紧节奏</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.82</b></td><td style="text-align:center">0.53</td><td style="padding:6px;color:var(--mut)">质量碾压：英格兰下半场独得 1.46 xG，克罗地亚下半场仅 0.12</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>21 / 12</b></td><td style="text-align:center">8 / —</td><td style="padding:6px;color:var(--mut)">下半场 9 次射正为本届世界杯单半场之最；克罗地亚仅 3 射在禁区内</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center"><b>7</b></td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">英格兰 7 次绝佳机会（Konsa、O'Reilly 各错失一次），把握 4 次已足够</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">禁区触球</td><td style="text-align:center"><b>34</b></td><td style="text-align:center">15</td><td style="padding:6px;color:var(--mut)">34-15 是全场最能说明领土差距的单项——英格兰持续把球喂进禁区</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传球成功率</td><td style="text-align:center">—</td><td style="text-align:center">前场 72%（53/74）</td><td style="padding:6px;color:var(--mut)">克罗地亚前场传球效率不低，但前场进入次数（30 对 38）和威胁区维持不足</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">定位球 · 角球</td><td style="text-align:center"><b>角球 8</b></td><td style="text-align:center">角球 1</td><td style="padding:6px;color:var(--mut)">角球 8-1（下半场 5-0）一边倒，Rice 的传中是英格兰第二进球的来源</td></tr>
+      <tr><td style="padding:6px">犯规 · 黄红</td><td style="text-align:center">犯规 9</td><td style="text-align:center">犯规 11</td><td style="padding:6px;color:var(--mut)">Turpin 全程把控干净，未现失控；门将 Livaković 7 次扑救（3 次关键）让比分体面</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 一场被下半场改写的比赛</div>半场 2-2、控球 48-52、英格兰踢得并不流畅；易边后英格兰下半场射正 9 次、xG 1.46 对 0.12、禁区触球 12-1、角球 5-0 完全压制。<b>这说明英格兰</b>：即便开局沉闷、被对攻拖入混战，Tuchel 的球队也具备在中场休息后调整节奏、用控territory 与喂球把对手压垮的能力——这正兑现了赛前"控节奏取胜"的主线，只是过程比预期更曲折。</div>
+    <div class="insight"><div class="who">② Rice / Anderson 双后腰碾压老化中场——赛前核心判读成立</div>赛前最大战术变量是"英格兰提速能否压制 Modrić 老化引擎"。结果：Modrić 第 12 分钟送点、第 58 分钟即被 Kovačić 换下；Anderson 贡献 1 助攻 + 8 抢断 + 4 拦截，下半场英格兰把克罗地亚中场彻底压回。<b>这说明英格兰</b>：Rice-Anderson 这条更年轻、覆盖更广的双后腰，正是相较克罗地亚黄金一代的结构性代差——下半场提速即是利用这一点。</div>
+    <div class="insight"><div class="who">③ Kane 的支点价值与英格兰的喂球流水线</div>Kane 梅开二度、6 射 3 正、0.99 xG、评分 8.3；Rice 9 次传中送出 4 次、4 次关键传球 + 1 助攻。两个英格兰运动战进球都来自"边路传中/扫传 → 中路终结"的流水线（Rice→Kane、Anderson→Bellingham）。<b>这说明英格兰</b>：球队的进攻不依赖单点灵光，而是靠把球量产进禁区（34 次触球）+ Kane 支点串联——这种重复性进攻是可持续的取胜蓝图。</div>
+    <div class="insight"><div class="who">④ 克罗地亚"机会稀缺但能咬住"，靠的是经验与定位球之外的瞬间</div>克罗地亚全场仅 8 射、3 射在禁区内、xG 0.53，两球都来自高质量的瞬间：Sučić 垂直直塞 + Perišić 边路助攻。Baturina（评分 7.9）、Perišić（3 次创造机会 + 4 次争顶）是亮点。<b>这说明克罗地亚</b>：球队仍有用个人质量制造威胁的能力，但赛前判读的"靠经验和定位球求一线生机"只兑现了一半——角球 1-8 完全被压制，终结靠的是运动战灵光而非定位球。</div>
+    <div class="insight"><div class="who">⑤ "英格兰零封不易"被验证——隐患在防守端精确兑现</div>英格兰预选赛 8 场全零封，本场却上半场连丢两球、未能零封，xG 仅让对手 0.53 却仍丢 2 球（终结运气成分）。<b>这说明英格兰</b>：赛前"零封不易、隐患在防守端"的主线精确兑现——面对有个人质量的对手，即便压制全场也难保城门不失，淘汰赛遇强敌时这一漏洞会被放大。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>速览结论"英格兰窄幅控制取胜"→ 实际 4-2 胜</b>：方向完全正确，热门拿下三分、控territory 压制对手。</li>
+      <li>✓ <b>市场隐含英格兰胜 ≈56%（赔率 1.73）→ 实际英格兰胜</b>：基准剧本兑现，热门未爆冷。</li>
+      <li>✓ <b>核心判读"Rice/Anderson 提速碾压 Modrić 老化中场"→ 兑现</b>：Modrić 送点 + 58 分钟被换下，英格兰下半场中场完全压制。</li>
+      <li>✗ <b>"力争零封 / 隐含零封 ≈27%"→ 未零封（丢 2 球）</b>：上半场连丢两球，零封盘落空——但"零封不易、隐患在防守端"的文字判读反而被精确兑现。</li>
+      <li>✓ <b>大小球倾向（Over 2.5）→ 实际 6 球（大球）</b>：半场即 4 球，Over 2.5 轻松兑现。</li>
+      <li>△ <b>比分预期"英格兰窄幅取胜（≈1-0）"→ 实际 4-2</b>：胜负方向对，但分差与总进球远大于"窄幅"预期——过程是混战而非稳控。</li>
+      <li>△ <b>市场过热指数 3/5（2018 复仇叙事驱动）→ 部分成立</b>：英格兰兑现热门身份，但比赛远比预期开放，复仇叙事下的"稳健窄胜"被一场对攻取代。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 → 6/23 vs 加纳（波士顿 Gillette 体育场）</div>① <b>防守端隐患需修补</b>：本场上半场连丢两球、未零封，Tuchel 已暗示后防可能调整（Guéhi 或回归首发）——对加纳的速度型边路冲击，需提防再现"上半场被对攻"；② 进攻蓝图可复制：Rice 传中 + Kane 支点 + 禁区量产触球，对低位防守的加纳同样有效；③ Saka/Rashford 替补建功，可能竞争首发，进攻轮换余地大；④ Kane 已平 Lineker 世界杯 10 球纪录，有望对加纳改写纪录。</div>
+      <div class="insight" style="margin:0"><div class="who">🇭🇷 克罗地亚 → 6/23 vs 巴拿马（多伦多 BMO Field）</div>① 这是<b>出线生死战</b>：首轮输球后，对实力较弱的巴拿马必须全取三分；② 暴露的短板是<b>禁区威胁与定位球</b>：角球 1-8 被完全压制、仅 3 射在禁区内，对巴拿马需把控球转化为禁区触球；③ Modrić 体能管理成关键——58 分钟被换下是信号，对巴拿马或需更早轮换或调整中场结构；④ Baturina、Musa、Perišić 的瞬间质量是球队进球来源，需找回门前效率把握稀缺机会。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Sofascore、Opta Analyst（theanalyst.com）、FIFA、ESPN、Sky Sports、CBS Sports、FOX Sports。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>带强烈历史叙事的不对称对话</b>：2018 世界杯半决赛克罗地亚曾 2-1 加时淘汰英格兰、并一路打进决赛——八年后两队在 L 组首轮重逢，攻守角色已然反转。Thomas Tuchel 治下的英格兰预选赛 <b>8 战全胜、进 22 球零失球</b>，热身 3-0 完胜哥斯达黎加；而 Zlatko Dalić 的克罗地亚在欧洲杯 2024 小组赛一胜未得即出局（2006 后最差大赛表现），赛前热身先负巴西、比利时，仅 2-1 小胜斯洛文尼亚。盘口明确倾向英格兰——英格兰胜赔 <b>1.73</b>（去水隐含 ≈56%）、平局 3.80（≈25%）、克罗地亚胜 4.75（≈19%）。Opta 超算在 25000 次模拟中给英格兰 L 组头名 67.5%。比赛真正的胜负手是：<b>英格兰的节奏控制能否压制 Modrić 这条老化中场</b>。基准剧本：英格兰窄幅控制取胜、力争零封；克罗地亚靠经验和定位球求一线生机。市场过热指数 ≈ 3/5（由 2018 复仇叙事驱动）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">英格兰隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈56%</div></div>
+      <div class="key"><div class="k">克罗地亚隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈19%</div></div>
+      <div class="key"><div class="k">英预选赛失球</div><div class="v" style="color:var(--good)">0</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>2018 半决赛的复仇主线</b>：克罗地亚加时 2-1 逆转、终结英格兰的 1966 之外最佳一届——八年后角色反转，英格兰已成明显热门。</li>
+      <li><b>英格兰的中场节奏 vs Modrić 的老化引擎</b>：Declan Rice + Elliott Anderson 的双后腰能否提速碾压 40 岁的 Modrić 与 Kovačić，是全场战术核心。</li>
+      <li><b>当值主裁 Clément Turpin（法国）</b>：与 Tuchel 有旧怨（2023 拜仁时期被 Tuchel 评为"E 级、10 分给 1 分"），Bellingham 也曾与其冲突——执法情绪线值得关注。</li>
+      <li><b>英格兰零封 vs 克罗地亚定位球</b>：英格兰预选赛 8 场零失球，但大赛淘汰赛屡现脆弱（欧洲杯 2024 决赛负西班牙、世界杯 2022 八强负法国）；克罗地亚的现实希望在经验与定位球。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">裁判 · Tuchel 与 Turpin 的旧怨 <span style="color:var(--mut);font-weight:400">· Yahoo Sports · TimesLIVE · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁 <b>Clément Turpin</b>（法国）执法英格兰揭幕战——曾被 Tuchel 评为"E 级、10 分给 1 分"</div>
+      <p style="font-size:13.5px">法国名哨 Clément Turpin 被任命执法英格兰世界杯首战。三年前 Tuchel 执教拜仁时，Turpin 在 2023 年欧冠对曼城的半场内出示五张黄牌，并向最后一名防守的 Dayot Upamecano 直接红牌（因 Erling Haaland 越位经 VAR 改判），Tuchel 赛后炮轰其执法："场地状态和裁判都跟不上比赛水平，遗憾的是裁判是 E 级，我给 1 分（满分 10）。"此外 Jude Bellingham 也曾在 2024 年欧冠半决赛与 Turpin 冲突——当时 Bellingham 试图干扰主罚点球的 Harry Kane，被 Turpin 推开。如今 Tuchel 已是英格兰主帅，这一执法配对自带情绪张力。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Turpin 是欧洲顶级哨，执法尺度偏严（生涯场均 2.54 黄）。在一场叙事敏感、主帅与裁判有旧怨的比赛里，英格兰若情绪化抗议或克罗地亚老将拖延，黄牌风险上升；Turpin 的点球判罚（生涯 36 球）尺度也会影响禁区对抗的吹罚走向。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/clement-turpin-england-v-croatia-213831845.html" style="color:var(--accent)">Yahoo Sports — Turpin 与 Tuchel 旧怨</a> · <a href="https://www.timeslive.co.za/sport/fifa-world-cup-2026/2026-06-15-tuchels-grade-e-ref-turpin-to-take-charge-of-englands-world-cup-opener/" style="color:var(--accent)">TimesLIVE — "E 级"裁判执法</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">英格兰 · 完美预选赛 + 零封纪录 <span style="color:var(--mut);font-weight:400">· Sports Mole · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tuchel 治下英格兰<b>预选赛 8 战全胜、进 22 球零失球</b>，热身 3-0 胜哥斯达黎加</div>
+      <p style="font-size:13.5px">Thomas Tuchel 治下的英格兰打出完美的欧洲区预选赛——8 战全胜、8 场全部零封，进 22 球、净胜球 22-0；6 月热身又以 3-0 完胜哥斯达黎加，状态、信心与防守组织俱佳。进攻端 Harry Kane、Jude Bellingham、Bukayo Saka 构成真正有威胁的锋线轴心，Tuchel 带来的防守纪律是相较以往的明显进步。<span style="color:var(--warn)">[Saka 伤情与最终首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：英格兰的零封纪录是本场零封盘与小球的结构性支撑——市场给出英格兰零封约 2.75（隐含 ≈27%）。但预选赛对手强度有限，面对克罗地亚的中场经验是首次真正检验；Tuchel 能否把控球转化为进球效率，决定让球盘（-0.5）与大小球的结算。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/england-vs-croatia-prediction-team-news-lineups_599262.html" style="color:var(--accent)">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/" style="color:var(--accent)">Racing Post — 赔率/投注</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">克罗地亚 · 欧洲杯出局 + 临赛状态隐患 <span style="color:var(--mut);font-weight:400">· Sports Mole · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">克罗地亚<b>欧洲杯 2024 小组赛一胜难求即出局</b>；热身先负巴西、比利时，仅 2-1 小胜斯洛文尼亚</div>
+      <p style="font-size:13.5px">Zlatko Dalić 的克罗地亚在欧洲杯 2024 小组赛全程无胜（0-3 负西班牙、2-2 平阿尔巴尼亚、1-1 平意大利，被 98 分钟绝平），小组出局——这是其 2006 后最差大赛表现，也是 2012 后首次欧洲杯小组出局。2026 赛前热身同样不稳：相继负于巴西与比利时，仅以 2-1 小胜斯洛文尼亚。Modrić（已年逾 40）仍是铁定首发与精神领袖，但球队整体引擎明显老化。<span style="color:var(--warn)">[最终首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：克罗地亚的招牌是中场控制与大赛经验，但欧洲杯 2024 的小组出局和临赛连败暴露了节奏与体能下滑。这正是英格兰提速、用 Rice/Anderson 碾压老化中场的切入口——也是英格兰让球（-0.5/-1）被视为较锐角度的依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/croatia/euro-2024/news/croatia-eliminated-dalic-hits-out-after-damaging-draw-with-italy_546776.html" style="color:var(--accent)">Sports Mole — 克罗地亚欧洲杯出局</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/" style="color:var(--accent)">Squawka — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">阵容 · Saka 存疑 + Musa 取代 Kramarić <span style="color:var(--mut);font-weight:400">· Sports Mole · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">英格兰 <b>Saka 体能存疑</b>，Madueke 或顶替；克罗地亚或弃用 Kramarić，由 <b>Musa</b> 任 9 号位</div>
+      <p style="font-size:13.5px">英格兰方面，中卫 Marc Guéhi 被视为铁定首发、预计与 Ezri Konsa 搭档（John Stones 亦在备选）；右路 Bukayo Saka 据报正在争取伤愈复出，若无法首发则 Noni Madueke 顶替，与 Anthony Gordon 共同支援 Harry Kane 与 Jude Bellingham。克罗地亚方面，本地媒体称达拉斯前锋 Petar Musa 有望取代长期主力 Andrej Kramarić 出任 9 号位，由科莫的组织核心 Martin Baturina 与 Modrić 供球。<span style="color:var(--warn)">[双方官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Saka 是否首发直接影响英格兰右路威胁与 Kane 的支援质量；克罗地亚若用 Musa 这一更具冲击力的支点而非 Kramarić，意味着 Dalić 想在反击和定位球中制造高点。两处变动都牵动让球盘与首开纪录盘。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/modric-starts-and-striker-surprise-predicted-croatia-xi-vs-england_599298.html" style="color:var(--accent)">Sports Mole — 克罗地亚首发/Musa 意外</a> · <a href="https://www.squawka.com/en/news/world-cup/england-vs-croatia-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — 队况/预测首发</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 官方确认（≥2 源一致）· T-50 写入</span></h2>
+    <div class="sub">双方官方名单已出。两大爆点：<b style="color:#86efac">英格兰 Guéhi 坐板凳（Stones 搭 Konsa）、Saka 仅替补</b>；<b style="color:#86efac">克罗地亚 Kovačić 替补</b>，Pašalić/Sučić 顶上中场、打 4-3-3。来源：Football Italia（confirmed line-ups 含完整替补席）+ Sporting Life/Paddy Power（英格兰 confirmed XI），双源一致。</div>
+
+    <h4>🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 · 官方首发（4-2-3-1）</h4>
+    <div class="lineup">Pickford; Reece James · Ezri Konsa · John Stones · Nico O'Reilly; Declan Rice · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#cbd5e1">Bukayo Saka</b>（伤后体能存疑，留作右路奇兵）· <b style="color:#cbd5e1">Marc Guéhi</b>（头号中卫之一坐板凳待命）· Marcus Rashford / Eberechi Eze / Ollie Watkins（进攻轮换）· Kobbie Mainoo（中场）</div>
+
+    <h4 style="margin-top:18px">🇭🇷 克罗地亚 · 官方首发（4-3-3）</h4>
+    <div class="lineup">Livaković; Stanišić · Vušković · Gvardiol · Šutalo; Modrić · Mario Pašalić · Petar Sučić; Perišić · Musa · Baturina</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#cbd5e1">Mateo Kovačić</b>（顶级出球手轮换待命）· <b style="color:#cbd5e1">Andrej Kramarić</b>（替补支点）· Ante Budimir（高点）· Nikola Vlašić（进攻轮换）</div>
+
+    <h4 style="margin-top:18px">vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">中卫搭档</td><td>Guéhi + Konsa</td><td><b>Konsa + Stones</b>（Guéhi 替补）</td><td>英格兰首发最大变动：经验更足、出球更稳的 Stones 上位，被视为铁定首发的 Guéhi 坐板凳——更稳健的中卫配置</td></tr>
+      <tr><td class="ht">右后卫</td><td>Walker</td><td>Reece James</td><td>James 进攻属性更强，提供右路推进、内收与传中，攻守兼备</td></tr>
+      <tr><td class="ht">左后卫</td><td>Lewis</td><td>Nico O'Reilly</td><td>年轻边卫上位，体能与前插能力支撑左路宽度</td></tr>
+      <tr><td class="ht">右边锋</td><td>Saka（体能存疑）</td><td><b>Madueke（Saka 替补）</b></td><td>Saka 体能存疑落地为替补——本页临场新闻的最大悬念兑现；右路爆点改由 Madueke 顶替，略降英格兰右路威胁上限</td></tr>
+      <tr><td class="ht">中场/前场轴心</td><td>Rice+Anderson · Bellingham · Gordon · Kane</td><td><b>11/位中 7 与预测一致</b></td><td>双后腰 Rice+Anderson、Bellingham 任 10 号、Gordon 占左、Kane 中锋——计划 A 执行，碾压中场的核心结构未变</td></tr>
+      <tr><td class="sc">克罗地亚中场</td><td>Modrić · Kovačić · Baturina</td><td><b>Modrić · M.Pašalić · P.Sučić</b>（Kovačić 替补）</td><td>本场最大爆点：顶级出球手 Kovačić 坐板凳，中场改由 40 岁 Modrić + 高点型 Pašalić + 年轻 Sučić 组成——出球质量下降、更显老化/生涩</td></tr>
+      <tr><td class="sc">克罗地亚后防</td><td>Stanišić · Šutalo · Erlić · Sosa</td><td><b>Stanišić · Vušković · Gvardiol · Šutalo</b></td><td>Gvardiol 伤愈复出首发是关键加成，年轻中卫 Vušković 上位——后防质量较预测明显提升</td></tr>
+      <tr><td class="sc">9 号位</td><td>Musa 取代 Kramarić</td><td><b>Musa 首发确认</b>（Baturina 提进锋线、Pašalić 回撤）</td><td>预测命中：更具冲击力的 Musa 任支点，Perišić + Baturina 任双宽锋支援，反击与定位球高点保留</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（速览结论：<b style="color:#86efac">维持</b>，微调英格兰右路威胁上限）</h4>
+    <ul class="cl">
+      <li><b>阵型信号</b>：英格兰如期摆 4-2-3-1、Rice+Anderson 双后腰——速览"英格兰提速、用双后腰碾压克罗地亚老化中场"的主线<b>维持</b>。</li>
+      <li><b>Kovačić 替补是克罗地亚最大信号</b>：移除顶级出球与控场点，中场更依赖 40 岁的 Modrić 加上高点型 Pašalić 与年轻的 Sučić——这<b>反而强化</b>了英格兰中场碾压的切入口，支持速览"英格兰可控取胜"判断。</li>
+      <li><b>英格兰防线三处换人 + Saka 替补</b>：Stones/James/O'Reilly 取代预测的 Guéhi/Walker/Lewis，中卫配置更稳健；但 Saka 体能存疑落地为替补，右路爆点由 Madueke 顶替——这对英格兰进攻是<b>小幅下修</b>（与本页"血洗上限有限"的既有判断一致），不改整体优势。</li>
+      <li><b>Gvardiol 伤愈首发 + Vušković 上位</b>：克罗地亚后防质量较预测提升，是英格兰破门效率的主要阻力点；4-3-3 双宽锋（Perišić+Baturina）支援 Musa，使反击与定位球高点得以保留——支持本页"小球/英格兰零封需打折"的谨慎角度。</li>
+      <li><b>速览结论维持</b>：英格兰受青睐、中场碾压角度成立、零封/小球结构获支撑；唯一<b>修正</b>——Saka 替补使英格兰右路威胁与"血洗"上限略降，而 Kovačić 替补则进一步削弱克罗地亚的反制能力。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：暂无首发公布后的独立盘口异动数据；本场唯一爆点（Kovačić 替补）<b>不利于克罗地亚</b>，理论上不支持克胜方向，1X2 预计维持（英 ≈1.73 / 平 ≈3.80 / 克 ≈4.75，欧赔小数盘）。Saka 替补略降英格兰进攻上限，对小球 / 英格兰让球幅度（-0.5 较 -1）一侧边际有利。仅事实陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://football-italia.net/2026-world-cup-england-vs-croatia-line-ups/">Football Italia — Confirmed line-ups（官方首发 + 完整替补席）</a> · <a href="https://www.sportinglife.com/free-bets/news/england-croatia-confirmed-lineup-world-cup-2026/793">Sporting Life / Paddy Power — England Confirmed XI</a> · <a href="https://www.si.com/soccer/england-vs-croatia-world-cup-preview-predictions-lineups-6-17-26">SI — 裁判 Clément Turpin 确认 / 赛前对照</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· L组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>L 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🏴 英格兰</th><th>🇭🇷 克罗地亚</th></tr>
+      <tr><td>主教练</td><td class="ht">Thomas Tuchel（德国籍）</td><td class="sc">Zlatko Dalić</td></tr>
+      <tr><td>晋级方式</td><td class="ht">欧洲区 8 战全胜小组头名直接晋级</td><td class="sc">欧洲区晋级（小组出线）</td></tr>
+      <tr><td>预选赛战绩</td><td class="ht">8 胜 0 平 0 负 · 进 22 球 · 失 0 球</td><td class="sc">出线晋级（引擎老化，火力一般）</td></tr>
+      <tr><td>近期热身</td><td class="ht">3-0 胜哥斯达黎加</td><td class="sc">负巴西、负比利时、2-1 胜斯洛文尼亚</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">欧洲杯 2024 亚军（决赛负西班牙）· 世界杯 2022 八强（负法国）</td><td class="sc">欧洲杯 2024 小组出局 · 世界杯 2022 季军</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.73（隐含≈56%）</td><td class="sc">胜 4.75（≈19%）· 平 3.80（≈25%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">小球为较锐一侧（Under 约 -135）；总分线偏低，源于英格兰防守扎实</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">2018 世界杯半决赛：克罗地亚 2-1（加时）胜，晋级决赛</td></tr>
+      <tr><td>核心球员</td><td class="ht">Harry Kane / Jude Bellingham / Bukayo Saka</td><td class="sc">Luka Modrić / Mateo Kovačić / Martin Baturina</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈56/25/19）。赔率来源：bet365（英格兰 1.73 / -138、平 3.80 / +270、克罗地亚 4.75 / +375），美线转十进制后与十进制报价一致。让球盘英格兰 -0.5 约 -145；大小球小球（Under 2.5）约 -135 为较锐一侧；英格兰零封约 2.75（11/4）、Kane 任意时间进球约 2.75（7/4）。Opta 超算给英格兰 L 组头名 67.5%——与市场去水概率方向一致。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">英格兰是明确热门，但 2018 复仇叙事 + Tuchel/Turpin 旧怨给本场注入额外话题热度；资金集中在英格兰让球、零封盘与 Kane 进球盘</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 胜负倾向明确；热度由 2018 复仇与裁判旧怨叙事推高</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向高度统一押英格兰，1X2 资金平稳；但 2018 半决赛复仇主线 + Tuchel 对 Turpin 的"E 级"旧怨成为媒体焦点，带来高于普通强弱对话的话题流量。资金主要落在<b>英格兰让球、零封盘与 Kane/Bellingham 进球 props</b>，而非单纯胜负盘。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：英格兰胜 全部 · 克罗地亚胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>英格兰 L 组头名 <b>67.5%</b>（超算 25000 次模拟）</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>英格兰取胜</b>、低比分；力争零封</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>英格兰胜 + 小球；6-1 建包侧重英格兰零封</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>英格兰可控取胜；克罗地亚火力下滑</td></tr>
+      <tr><td>Yahoo Sports</td><td>美系投注媒体</td><td>英格兰 -138 为最稳妥选择；低比分</td></tr>
+      <tr><td>Compare.bet / Johnnybet</td><td>预测媒体</td><td>英格兰胜 + 零封角度</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向 100% 统一押英格兰——这是合理共识而非过热。真正分歧在<b>是否零封、是否小球，以及让球幅度</b>（-0.5 vs -1）。话题热度由 2018 复仇与 Tuchel/Turpin 旧怨驱动，但未见显著推动克罗地亚胜的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>英格兰胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="ht">1.73（-138）</td><td>明确倾向英格兰；平 3.80（+270）/ 克罗地亚 4.75（+375）</td></tr>
+      <tr><td>06-16 截止</td><td>多平台</td><td class="ht">1.73–1.74（BetOnline 最优 -135）</td><td>英格兰短赔区间窄幅波动，基本稳定</td></tr>
+      <tr><td>06-16</td><td>大/小球</td><td colspan="2" class="ht">小球为较锐一侧（Under 2.5 约 -135；Over 约 +121）；总分线偏低</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>英格兰 -0.5 / -1</td><td colspan="2" class="ht">英格兰 -0.5 约 -145（克 +0.5 约 +115）；-1 待核</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率基本不动——结果定价稳定。最活跃的价格发现在<b>让球（-0.5/-1）与大小球（小球较锐）</b>，以及英格兰零封与 Kane 进球 props。英格兰零封约 2.75（11/4，隐含≈27%），Kane 任意时间进球约 2.75（7/4，隐含≈36%）。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：英格兰 L 组头名 67.5%、克罗地亚出线概率 76.9%——量化模型与博彩去水方向一致，无明显情绪偏离。</li>
+      <li><b>舆论焦点</b>：高度集中在 <b>2018 半决赛复仇叙事</b> 与 <b>Tuchel 对裁判 Turpin 的"E 级"旧怨</b>——两条情绪线占据大量报道篇幅，但属话题热度而非资金过热。</li>
+      <li><b>克罗地亚叙事</b>：Modrić 的"最后一舞"带来情怀流量，但欧洲杯 2024 小组出局 + 临赛连败削弱了押克罗地亚胜的信心。</li>
+      <li><b>Kalshi / Polymarket / DefiRate</b>：本场单场胜负价格、成交量与 30 天动量数据未公开检得 <span style="color:var(--warn)">（待核）</span>；Kane 进球细分盘成交量亦未见。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（英格兰），博彩与超算方向一致，过热指数 <b>3/5</b>。热度并非来自 1X2，而是来自 <b>2018 复仇叙事 + Tuchel/Turpin 旧怨</b> 的话题流量，以及<b>英格兰零封/小球与 Kane 进球 props</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — L 组前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/england-vs-croatia-picks-predictions-095713430.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.compare.bet/news/england-vs-croatia-betting-preview-predictions-tips-and-live-odds">Compare.bet — 赔率汇总</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为法国籍 <b>Clément Turpin</b>——自 2010 年起的 FIFA 国际裁判、2012 年起的 UEFA 精英组成员，执法过 2021 欧联杯决赛、2022 欧冠决赛（皇马 vs 利物浦）；欧洲杯 2024 担任揭幕战主裁，世界杯 2022 执法两场小组赛 + 一场 16 强（巴西 vs 韩国，其首场世界杯淘汰赛）。来源：WorldReferee / Yahoo Sports / UEFA。</div>
+    <h4>近两届大赛 + 生涯执法尺度（实际数据）</h4>
+    <ul class="cl">
+      <li><b>生涯出牌基准（实际样本充足）</b>：累计 358 黄、26 红，<b>场均 2.54 黄、0.18 红</b>，生涯判罚 36 个点球——属偏严哨，但点球判罚频率适中。这是顶级大样本，参考意义高于多数新晋世界杯裁判。</li>
+      <li><b>近两届大赛履历</b>：世界杯 2022 执法 2 场小组赛 + 1 场 16 强（首次世界杯淘汰赛）；欧洲杯 2024 执法揭幕战（德国 vs 苏格兰）。大赛场景下 Turpin 控场经验充足，UEFA 高度评价其跑位与判罚节奏；惟其大赛单届具体场均出牌细分需以官方记录为准 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>与两队的执法史 + 旧怨</b>：与英格兰主帅 Tuchel 有旧怨（2023 欧冠拜仁 vs 曼城半场五黄 + Upamecano 红牌经 VAR 改判，Tuchel 评其"E 级、10 分给 1 分"）；Bellingham 亦曾在 2024 欧冠半决赛与其冲突。与克罗地亚无显著公开争议史。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——克罗地亚老将若拖延或围堵裁判，受新规与 Turpin 偏严尺度约束，累计黄牌风险上升。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Turpin 大样本场均 2.54 黄、尺度偏严，在一场叙事敏感、主帅与裁判有旧怨的比赛里，黄牌总数与英格兰累计黄牌值得关注；其点球判罚频率适中（生涯 36 球），禁区对抗的吹罚偏向中性。鉴于其拥有充足顶级大赛样本，本场裁判面是可参考的分析维度（区别于无样本的新晋裁判）。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0f2417;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🏴 英格兰 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Pickford; Walker · Guéhi · Konsa · Lewis; Rice · Anderson; Saka · Bellingham · Gordon; Kane</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Harry Kane</td><td>前锋 / 拜仁慕尼黑</td><td>队长与终结核心；任意时间进球约 2.75（隐含≈36%）；支点回撤串联</td></tr>
+      <tr><td class="ht">Jude Bellingham</td><td>前腰 / 皇家马德里</td><td>由守转攻引擎；前插与最后一传，曾与 Turpin 冲突</td></tr>
+      <tr><td class="ht">Bukayo Saka</td><td>边锋 / 阿森纳</td><td>右路爆点；体能存疑，若无法首发由 Madueke 顶替（待核）</td></tr>
+      <tr><td class="ht">Declan Rice</td><td>后腰 / 阿森纳</td><td>中场屏障与提速点；与 Anderson 双后腰锁中路、压制 Modrić</td></tr>
+    </table>
+    <h4>🇭🇷 克罗地亚 预测首发（4-3-3）</h4>
+    <div class="lineup">Livaković; Stanišić · Šutalo · Erlić · Sosa; Modrić · Kovačić · Baturina; Pašalić · Musa · Perišić</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Luka Modrić</td><td>中场 / 队长</td><td>40 岁仍铁定首发与精神领袖；"最后一舞"，但覆盖与提速能力下滑</td></tr>
+      <tr><td class="sc">Mateo Kovačić</td><td>中场 / 曼城</td><td>中场出球与持球；与 Modrić 共担节奏，但对抗英格兰提速吃紧</td></tr>
+      <tr><td class="sc">Martin Baturina</td><td>前腰 / 科莫</td><td>组织核心；为前锋供球的关键创造点</td></tr>
+      <tr><td class="sc">Petar Musa</td><td>前锋 / FC Dallas</td><td>或取代 Kramarić 任 9 号位；更具冲击力的高点（待核）</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Squawka），<b>以赛前官方名单为准 · 待核</b>。英格兰 Saka 体能存疑（若无法首发则 Madueke 顶替）；克罗地亚 9 号位存在 Musa vs Kramarić 抉择（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🏴 英格兰 · Thomas Tuchel</div>
+        <div class="role">4-2-3-1 控球提速 + 组织型防守，求节奏压制</div>
+        <ul class="cl">
+          <li>Tuchel 带来比 Southgate 时代更主动的控球与防守纪律：预选赛 8 场零失球印证了其结构性防守的提升，双后腰 Rice + Anderson 锁中路、由后场快速向 Kane/Bellingham 提速。</li>
+          <li>交叉参照：欧洲杯 2024 英格兰一路晋级却进攻迟滞、决赛 1-2 负西班牙暴露由守转攻迟缓；世界杯 2022 八强 1-2 负法国（Kane 罚失点球）。Tuchel 的任务正是修复这一"控球有余、终结不足 + 淘汰赛脆弱"的痼疾——本场是首次大赛检验。</li>
+          <li>风险：预选赛对手强度有限，零失球未必能直接外推到克罗地亚的中场经验前；若英格兰久攻不下、心态急躁，理论上存在被定位球或反击偷袭的尾部风险（呼应其大赛淘汰赛历史脆弱性）。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇭🇷 克罗地亚 · Zlatko Dalić</div>
+        <div class="role">4-3-3 中场控制 + 经验与定位球求分，引擎老化</div>
+        <ul class="cl">
+          <li>Dalić 的招牌是 Modrić/Kovačić 主导的中场控制与大赛沉稳——这正是 2018 淘汰英格兰、2022 拿到季军的根基；但 2026 这套引擎明显老化，提速与覆盖均不如前。</li>
+          <li>交叉参照：世界杯 2022 季军靠的是点球大战韧性与老练控场；但欧洲杯 2024 小组赛全程无胜出局（被意大利 98 分钟绝平），暴露了体能与攻坚效率的双重下滑——这正是英格兰提速可利用的裂口。</li>
+          <li>应对：Dalić 大概率让 Modrić 居中调度、用 Musa 高点 + Perišić 边路冲击在反击和定位球中求分；现实希望不在控球对攻，而在用经验拖住节奏、抓英格兰淘汰赛式的心态波动偷一球。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>超算 25000 次模拟中英格兰 67.5% 概率拿下 L 组头名，克罗地亚出线概率 76.9%——量化模型确认英格兰是明显热门、但克罗地亚仍有强出线机会。报告将本场视为英格兰夺冠征途的开局，量化与市场赔率方向一致。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>预测英格兰低比分取胜、力争零封，并指出克罗地亚 9 号位可能用 Musa 取代 Kramarić、英格兰 Saka 体能存疑。认为比赛走向取决于英格兰提速破中场的效率与克罗地亚老化引擎能否拖住节奏。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· Racing Post / Yahoo</small></div>多家媒体将 <b>英格兰 -0.5/-1 与小球（Under 2.5）</b> 视为比单纯胜负盘更锐的角度，呼应英格兰预选赛零失球与防守纪律；英格兰零封（约 2.75）与 Kane 进球 props 是话题驱动的散户主战场。</div>
+    <div class="insight"><div class="who">综合 · 叙事与裁判信号 <small>· 战术信号</small></div>本场的情绪叙事浓度远高于普通强弱对话：2018 半决赛复仇 + Tuchel 对主裁 Turpin 的"E 级"旧怨 + Modrić 的"最后一舞"。真正悬念不在胜负，而在英格兰能否兑现零封、以及裁判尺度（Turpin 偏严）是否放大黄牌与禁区对抗的不确定性。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：英格兰窄幅控制取胜（1-0 / 2-0 / 2-1）是基准剧本，力争零封；平局（≈25%）与克罗地亚胜（≈19%）是中等概率尾部风险——克罗地亚爆冷需要 Modrić 拖住节奏 + 定位球/反击偷袭 + 英格兰淘汰赛式心态波动同时发生。</li>
+      <li><b>关键先生</b>：Kane（英/终结与进球 props 核心）、Bellingham + Rice（英/提速破中场）、Modrić（克/拖住节奏的最后引擎）、Musa（克/反击高点）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>英格兰的节奏控制能否压制 Modrić 这条老化中场</b>——决定让球盘（-0.5/-1）与大小球（小球较锐）的结算。英格兰能否兑现零封是零封盘核心；Kane 能否破门是 Kane 进球 props 核心。</li>
+      <li><b>市场视角</b>：博彩与 Opta 超算方向一致（英格兰明显热门），1X2 价值有限；最有信息含量的市场是<b>英格兰让球（-0.5/-1）、小球与零封盘</b>，以及 Kane 进球细分盘。过热指数 3/5（热度来自 2018 复仇与 Tuchel/Turpin 旧怨叙事，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 英格兰 Saka 伤情与是否首发（否则 Madueke）；② 克罗地亚 9 号位（Musa vs Kramarić）；③ 双方官方首发名单；④ Turpin 在本届/近两届大赛单届的具体场均出牌细分（生涯均值已确认 2.54 黄/0.18 红/36 点球）；⑤ Kalshi/Polymarket/DefiRate 单场价格、成交量与 30 天动量未公开检得；⑥ 亚盘让球线（-0.5/-1）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49047660/fifa-world-cup-2026-england-vs-croatia-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — L 组超算前瞻</a> · <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/england-vs-croatia-prediction-team-news-lineups_599262.html">Sports Mole — 前瞻/队况/首发</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/modric-starts-and-striker-surprise-predicted-croatia-xi-vs-england_599298.html">Sports Mole — 克罗地亚首发/Musa</a> · <a href="https://www.squawka.com/en/news/world-cup/england-vs-croatia-team-news-predicted-lineups/">Squawka — 队况/预测首发</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/england-vs-croatia-picks-predictions-095713430.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.compare.bet/news/england-vs-croatia-betting-preview-predictions-tips-and-live-odds">Compare.bet — 赔率汇总</a><br>
+      • <a href="https://sports.yahoo.com/articles/clement-turpin-england-v-croatia-213831845.html">Yahoo Sports — 裁判 Turpin 与 Tuchel 旧怨</a> · <a href="https://www.timeslive.co.za/sport/fifa-world-cup-2026/2026-06-15-tuchels-grade-e-ref-turpin-to-take-charge-of-englands-world-cup-opener/">TimesLIVE — "E 级"裁判</a> · <a href="https://worldreferee.com/referee/clement_turpin">WorldReferee — Turpin 生涯数据</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/croatia/euro-2024/news/croatia-eliminated-dalic-hits-out-after-damaging-draw-with-italy_546776.html">Sports Mole — 克罗地亚欧洲杯 2024 出局</a> · <a href="https://www.givemesport.com/supercomputer-predicts-2026-world-cup-football-soccer/">GiveMeSport — 超算预测</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-16 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['英格兰胜','平局','克罗地亚胜'],datasets:[{data:[56,25,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[45,55],backgroundColor:[DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏向小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['英格兰','克罗地亚','加纳','巴拿马'],datasets:[{data:[4,9,72,40],backgroundColor:[HT,SC,'#1aa84a','#c1440e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强，示意）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'英格兰',data:[8.5,7.5,7.5,7,9,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'克罗地亚',data:[6.5,5.5,7,6.5,6,8.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

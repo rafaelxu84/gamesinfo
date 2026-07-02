@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise pré-jogo aprofundada · México vs Coreia do Sul · Copa do Mundo 2026 · 2ª rodada do Grupo A</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --mx:#16a34a;--kr:#cd2e3a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#7a1f29);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13261b,#21161c);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.mx{color:#34d27b;font-weight:600}td.kr{color:#f0828b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .carry{background:#19233a;border:1px solid #2f4675;border-radius:7px;padding:3px 9px;font-size:11px;font-weight:700;display:inline-block;color:#9fc0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao Centro de Análises</a><br>
+  <span class="badge">🏁 Encerrado 1-0 · Copa do Mundo 2026 · 2ª rodada do Grupo A · Confronto direto pela liderança (ambas com 3 pontos)</span>
+  <h1>México vs Coreia do Sul</h1>
+  <div class="meta">18 de junho de 2026 · 21:00 ET · Guadalajara, Estadio Akron (Zapopan, altitude ≈1.560m) · Grupo A (mesmo grupo: Tchéquia, África do Sul)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 México</div><div class="rk">Anfitrião · 1ª rodada: 2-0 sobre a África do Sul · Montes suspenso, zaga em reformulação</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 Coreia do Sul</div><div class="rk">1ª rodada: virada por 2-1 sobre a Tchéquia · Despedida de Son · Hwang In-beom eleito o melhor</div></div>
+  </div>
+
+  <!-- ===== ANÁLISE PÓS-JOGO ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Análise pós-jogo: tática e dados</h2>
+    <div class="sub">Final México 1-0 Coreia do Sul (intervalo 0-0) · Estadio Akron, Guadalajara · Árbitro Gustavo Tejera (Uruguai, conforme a designação prévia) · Fontes: Opta Analyst / ESPN / CBS Sports / NBC Sports / Bolavip · O conteúdo pré-jogo abaixo é mantido intacto como arquivo de previsão</div>
+
+    <h4>① Andamento do placar</h4>
+    <p style="font-size:14px">Foi um confronto duro e de poucos gols, do tipo <b>"primeiro tempo morno e um erro que decide"</b>. A primeira etapa teve apenas 5 finalizações entre os dois times e um xG combinado de apenas 0,22 — o México levou vantagem no início, mas a Coreia foi assumindo aos poucos o controle do jogo (58% de posse no total), e ninguém abriu a área adversária. A virada veio <b>logo após o reinício</b>: aos <b>50 minutos</b> o goleiro coreano <b>Kim Seung-gyu falhou na saída/condução da bola</b> e <b>Luis Romo</b> roubou e finalizou com frieza para o gol vazio, 1-0. Esse gol "de presente" foi o único da partida. Depois a Coreia teve mais a bola e até superou no xG (0,67 contra 0,48 do México), mas conseguiu apenas 2 finalizações no alvo — uma defendida por <b>Rangel</b> e outra bloqueada em cima da linha por <b>Johan Vásquez</b>. O México se fechou, segurou a vantagem, registrou sua <b>primeira sequência de três vitórias em Copas</b> e se tornou a <b>primeira seleção a garantir a classificação</b> do torneo, liderando o Grupo A de forma antecipada.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 4' amarelo para Romo (falta sobre Lee Kang-in, MEX) → INT 0-0 → 50' <b>Romo</b> (erro de Kim Seung-gyu, 1-0) → 71' alterações MEX: Obed Vargas no lugar de Romo, entra Pineda → alterações COR: Son / Lee Jae-sung → Hwang Hee-chan / Oh Hyeon-gyu, entram Eom Ji-sung e Yang Hyun-jun → Final 1-0</div>
+
+    <h4>② Comparativo de dados principais</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Métrica</th><th style="padding:6px">🇲🇽 México</th><th style="padding:6px">🇰🇷 Coreia do Sul</th><th style="text-align:left;padding:6px">Leitura</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Posse de bola</td><td style="text-align:center">42%</td><td style="text-align:center"><b>58%</b></td><td style="padding:6px;color:var(--mut)">A Coreia dominou a bola mas não venceu — confirma a leitura pré-jogo de que "o jogo posicional coreano evoluiu e o México não é um ônibus", mas a posse não virou gol</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">0,48</td><td style="text-align:center"><b>0,67</b></td><td style="padding:6px;color:var(--mut)">A Coreia até superou no xG; o único gol veio de um erro do goleiro, não de uma chance de qualidade — o resultado foi decidido por um evento "fora do roteiro"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Finalizações no alvo</td><td style="text-align:center">—</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">As 2 da Coreia: uma defendida por Rangel, outra bloqueada na linha por Vásquez; o gol do México veio fora do "circuito de finalização no alvo" — um roubo de bola para o gol vazio</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Finalizações / xG 1º tempo</td><td colspan="2" style="text-align:center">Combinado <b>5 finalizações · xG 0,22</b></td><td style="padding:6px;color:var(--mut)">Um primeiro tempo morno e com poucas chances — o jogo só tomou forma após o erro no início da etapa final</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Erro decisivo</td><td style="text-align:center">—</td><td style="text-align:center"><b>Erro do goleiro → gol</b></td><td style="padding:6px;color:var(--mut)">A falha de Kim Seung-gyu aos 50' presenteou o gol — um "fator X" não previsto, mas decidiu o jogo</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Cartões amarelos</td><td style="text-align:center">Romo 4'</td><td style="text-align:center">Paik Seung-ho</td><td style="padding:6px;color:var(--mut)">Tejera mostrou o primeiro amarelo dentro dos 4 minutos, coincidindo com a leitura pré-jogo de "apito sul-americano rigoroso que impõe autoridade na estreia em Copas"</td></tr>
+      <tr><td style="padding:6px">Outros recortes (escanteios / faltas / acerto de passe)</td><td colspan="2" style="text-align:center;color:var(--warn)">Não há dados públicos completos item a item desta métrica</td><td style="padding:6px;color:var(--mut)">Os relatos publicados não oferecem um comparativo completo de escanteios/faltas/acerto de passe; não inventamos — aguardando as correções do match-centre da Opta</td></tr>
+    </table></div>
+
+    <h4>③ Análise tática</h4>
+    <div class="insight"><div class="who">① México "primeiro garantir não perder, depois aproveitar o erro" — uma classificação pragmática</div>Diante de uma Coreia que dominou a bola, o México não pressionou no campo de ataque como fez contra a África do Sul na 1ª rodada — aceitou os 42% de posse, se fechou e esperou o erro. Uma falha do goleiro bastou. <b>Isto mostra do México</b>: num decisivo confronto pela liderança, a equipe de Aguirre priorizou vencer o resultado em vez de vencer o jogo — um contraste com seu mal histórico de "muita posse, pouca finalização". Vencer com poucas chances e alta eficiência é um modelo sólido e replicável para o mata-mata.</div>
+    <div class="insight"><div class="who">② A maior dúvida pré-jogo — a zaga central reformulada — segurou</div>A maior incógnita pré-jogo era se Álvarez recuando para o miolo da defesa (após a suspensão de Montes) daria conta da ameaça de transição de Son / Oh Hyeon-gyu. Resultado: o México <b>manteve o gol zerado</b>, a Coreia conseguiu apenas 2 finalizações no alvo e uma foi bloqueada na linha por Vásquez. <b>Isto mostra do México</b>: a linha de zaga improvisada passou em seu teste real, e o gol zerado não veio por sorte mas por disciplina e uma forma compacta — reparando a indisciplina exposta pelos 3 vermelhos da 1ª rodada e dando confiança para o mata-mata.</div>
+    <div class="insight"><div class="who">③ Coreia "o jogo posicional evoluiu, mas a finalização segue ineficiente" — o velho mal em forma nova</div>A Coreia superou o México em posse (58%) e xG (0,67), prolongando o estilo de posse e penetração da 1ª rodada contra a Tchéquia e confirmando a leitura pré-jogo de que "seu jogo posicional evoluiu". Mas apenas 2 finalizações no alvo — a capacidade de converter posse em chances de qualidade ainda falta, e o erro do próprio goleiro entregou o jogo. <b>Isto mostra da Coreia do Sul</b>: a equipe controla o jogo mas ainda lhe falta o último passe/finalização — o mal histórico de "criatividade em forma nova mas igualmente ineficiente" reapareceu como "posse dominante mas zero gols", e será amplificado diante de adversários mais fortes no mata-mata.</div>
+    <div class="insight"><div class="who">④ Um erro reescreveu o roteiro — confirma o enquadramento pré-jogo de "duas equipes parelhas, os detalhes decidem"</div>As odds pré-jogo sem margem davam México ≈50%, empate ≈28%, Coreia ≈26%, com o mercado tratando-os como "parelhos, jogo aberto". Em campo, um xG de 0,48-0,67 ficou perto do 50-50, mas o resultado foi decidido por um erro não tático do goleiro. <b>Isto mostra</b>: num confronto de equipes parelhas, o resultado muitas vezes não é decidido pela batalha tática mas por erros individuais e momentos de eficiência — cumprindo com precisão o "cenário-base pré-jogo: vitória apertada do México, total de gols perto da linha" (um gol no fim, Under 2.5).</div>
+
+    <h4>④ Balanço da previsão (revisão item a item das conclusões pré-jogo)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>Conclusão do resumo "vitória apertada do México ou empate" → 1-0 apertado real</b>: o cenário-base se cumpriu com precisão; o México venceu o confronto pela liderança pelo placar mínimo.</li>
+      <li>✓ <b>Mercado implícito México ≈50% (odd ≈2.00) → México venceu</b>: o favorito moderado cumpriu, sem zebra.</li>
+      <li>✓ <b>"A zaga reformulada do México segura as transições de Son / Oh Hyeon-gyu?" → segurou (gol zerado)</b>: a Coreia conseguiu apenas 2 finalizações no alvo; Álvarez no miolo da defesa passou no teste.</li>
+      <li>✓ <b>"Ambos querem vencer → jogo aberto, ganha quem penetrar melhor posicionalmente" → cumprido em parte</b>: a Coreia de fato superou em posse e penetração (58%, xG um pouco maior), mas a penetração não deu gol.</li>
+      <li>✗ <b>"A conversão do México de 4 em 16 no alvo pune a zaga de três coreana?" → o gol não veio de finalização em jogo</b>: o México não venceu por eficiência de finalização; seu único gol veio de um roubo após o erro do goleiro — o teste de conversão foi contornado por um "gol de erro".</li>
+      <li>✓ <b>Gols: cenário-base "total perto da linha" + o lado Under -170 → 1 gol real (Under 2.5)</b>: placar baixo cumprido, o roteiro de jogo fechado se concretizou.</li>
+      <li>✓ <b>Árbitro: "Tejera, apito sul-americano rigoroso, impõe autoridade na estreia em Copas" → primeiro amarelo dentro dos 4 minutos</b>: a leitura sobre seu critério coincidiu; cartão cedo.</li>
+      <li>△ <b>"Hwang In-beom é o fator X da Coreia" (ESPN) → não se cumpriu</b>: o verdadeiro fator X virou o erro do próprio goleiro coreano, não a penetração de Hwang.</li>
+    </ul>
+
+    <h4>⑤ Projeção adiante (o que se leva para o próximo jogo)</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇲🇽 México → 24 de junho, última rodada vs Tchéquia (Cidade do México)</div>① <b>Classificação + liderança garantidas</b>: 6 pontos, líder do Grupo A, já classificado — pode rodar o elenco e descansar contra a Tchéquia no encerramento e poupar energia para o mata-mata; ② Caminho replicável: o modelo de baixo risco deste jogo "recuo pragmático + aproveitar o erro + gol zerado" se adapta melhor ao mata-mata do que a pressão alta usada contra a África do Sul; ③ A preocupação persistente é a finalização — em dois jogos seus gols em jogo se apoiaram em erros adversários e bola parada; precisará recuperar a eficiência em jogo diante de adversários mais fortes; ④ A disciplina merece crédito: apenas 1 amarelo e gol zerado aqui, reparando o problema dos 3 vermelhos da 1ª rodada — mas um apito rigoroso como o de Tejera lembra o custo dos amarelos acumulados.</div>
+      <div class="insight" style="margin:0"><div class="who">🇰🇷 Coreia do Sul → 24 de junho, última rodada vs África do Sul (Guadalajara)</div>① É um <b>decisivo jogo de classificação que não pode perder</b>: após esta derrota a Coreia fica com 3 pontos e precisa pontuar no encerramento (contra uma África do Sul desfalcada e lanterna que levou 3 vermelhos na 1ª rodada); ② As fraquezas expostas são a <b>eficiência de finalização e a confiabilidade do goleiro</b> — posse dominante mas zero gols, com o erro de Kim Seung-gyu presenteando a derrota; contra a África do Sul precisam converter posse em finalizações no alvo e estabilizar a defesa; ③ A via de ataque pode continuar: a penetração central de Lee Kang-in / Hwang In-beom e a posse (58%) seguem funcionando, o que falta é a finalização; ④ A despedida de Son está por um fio — a fadiga do jogo em sequência mais o desfecho do encerramento decidirão se sua Copa continua, e Hong Myung-bo talvez precise lançar mão mais cedo de atacantes como Hwang Hee-chan / Oh Hyeon-gyu.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Fontes: Opta Analyst (theanalyst.com), ESPN, CBS Sports, NBC Sports, Bolavip, Yahoo Sports. Algumas métricas recortadas (escanteios / faltas / acerto de passe) não têm dados públicos completos item a item e são sinalizadas com honestidade. Apenas para fins de análise — não é recomendação de apostas.</p>
+  </section>
+
+  <!-- ===== SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia este trecho primeiro)</h3>
+    <p class="lead">Este é, na prática, o <b>duelo pela liderança</b> do Grupo A: México e Coreia do Sul venceram na 1ª rodada, ambas com 3 pontos, e quem vencer este jogo praticamente garante a liderança do Grupo A e a classificação. O México conta com <b>mando de campo + altitude + vantagem histórica no confronto direto</b> (6 jogos, 4 vitórias, 1 empate e 1 derrota, incluindo o 2-1 sobre a Coreia na Copa de 2018), e o mercado dá vitória do México em odd <b>≈2,00</b> (linha americana -106/+100, prob. implícita sem margem ≈50%), empate em <b>≈3,30</b> (+230, ≈28%) e vitória da Coreia em <b>≈4,25</b> (+325/+333, ≈26%). Mas este não é o roteiro de "anfitrião atropelando" como o jogo de abertura — a virada por 2-1 da Coreia sobre a Tchéquia na 1ª rodada mostrou um <b>jogo posicional comandado por Lee Kang-in + variedade de finalizadores</b>, com Hwang In-beom dando assistência e marcando para ser eleito o melhor, um nível acima da África do Sul. As <b>verdadeiras chaves do jogo</b>: ① se a zaga reformulada do México, forçada pela suspensão de Montes (Álvarez recuando para formar dupla com Vásquez), vai deixar brechas diante das transições de Son/Oh Hyeon-gyu; ② se o México, com seu aproveitamento de 16 finalizações e apenas 4 no alvo, consegue punir o ponto fraco do retorno defensivo da linha de três da Coreia. O mercado de gols está dividido (dois campos brigando entre Over e Under 2.5), com índice de superaquecimento ≈3/5 — o clima do mando de campo eleva o burburinho em torno da vitória do México, mas a linha não chegou ao frenesi unilateral do jogo de abertura. Roteiro-base: vitória apertada do México ou empate, com número de gols rondando a linha de mais/menos.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Vitória do México (implícita, sem margem)</div><div class="v" style="color:#34d27b">≈50%</div></div>
+      <div class="key"><div class="k">Vitória da Coreia (implícita, sem margem)</div><div class="v" style="color:#f0828b">≈26%</div></div>
+      <div class="key"><div class="k">Confronto direto (6 jogos)</div><div class="v" style="color:#34d27b">MEX 4-1-1</div></div>
+      <div class="key"><div class="k">Índice de superaquecimento do mercado</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Confronto direto pela liderança</b>: ambas com 3 pontos, o vencedor praticamente garante a liderança do Grupo A; quem perder/empatar muda de rota na rodada final (o México pega a Tchéquia, a Coreia pega uma África do Sul desfalcada).</li>
+      <li><b>Reformulação da zaga mexicana</b>: <span class="carry">Do jogo anterior</span> Montes expulso com vermelho direto e suspenso, Álvarez muito provavelmente recua para improvisar como zagueiro — é o maior teste da defesa mexicana neste torneio, voltado às bolas nas costas em contra-ataque de Son.</li>
+      <li><b>Son vs sistema</b>: <span class="carry">Do jogo anterior</span> a Coreia provou contra a Tchéquia que "ganha mesmo sem gol de Son" (gols de Hwang In-beom/Oh Hyeon-gyu), mas a velocidade de Son no contra-ataque ainda é a arma mais afiada para castigar a zaga reformulada do México.</li>
+      <li><b>Teste de aproveitamento</b>: <span class="carry">Do jogo anterior</span> o México teve 16 finalizações, 4 no alvo e 1 na trave na 1ª rodada; diante de uma defesa liderada por Kim Min-jae, a falta de eficiência será amplificada.</li>
+    </ul>
+  </div>
+
+  <!-- ===== NOTICIAS-CHAVE ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave de última hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fonte + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que influenciam este jogo, explicando item a item como alteram tática ou resultado (incluindo itens trazidos do jogo anterior de ambas as equipes)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">México · Suspensão e reformulação <span class="carry" style="margin-left:6px">Do jogo anterior</span> <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">O zagueiro <b>César Montes leva vermelho direto e fica suspenso por um jogo</b> — Aguirre muito provavelmente coloca <b>Edson Álvarez recuando para improvisar como zagueiro</b>, ao lado de Johan Vásquez</div>
+      <p style="font-size:13.5px">No fim do 2-0 do México sobre a África do Sul na 1ª rodada houve um colapso disciplinar: César Montes foi expulso aos 90+2 por uma entrada com a sola (vermelho direto polêmico, de natureza DOGSO) e, pelas regras, fica suspenso neste jogo. Sem seu zagueiro titular original, várias previsões apontam de forma unânime para o <b>capitão Edson Álvarez recuando da posição de volante para improvisar como zagueiro ao lado de Johan Vásquez</b>, com Erik Lira sozinho como volante e Gilberto Mora (17 anos) e Fidalgo subindo para o meio-campo ofensivo. <span style="color:var(--warn)">[A escalação titular final fica sujeita à lista oficial da FIFA antes do jogo · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o recuo de Álvarez para cobrir a defesa melhora a saída de bola e o duelo físico da zaga, mas também <b>retira a âncora defensiva do meio-campo mexicano</b> — justamente o que fica exposto diante das infiltrações centrais de Lee Kang-in/Hwang In-beom e das bolas nas costas em contra-ataque de Son. É o maior teste da defesa mexicana neste torneio, e mexe diretamente com a linha de handicap (México -0,5) e com o mercado de quem abre o placar.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html" style="color:var(--accent)">Sports Mole — escalação provável após a suspensão de Montes</a> · <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — situação do elenco/escalação provável/árbitro</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Coreia do Sul · Explosão de Hwang In-beom <span class="carry" style="margin-left:6px">Do jogo anterior</span> <span style="color:var(--mut);font-weight:400">· ESPN · Opta · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Coreia <b>vira por 2-1 sobre a Tchéquia</b>: Hwang In-beom dá assistência e marca, é eleito o melhor da partida, e Lee Kang-in tem produção de elite no jogo posicional (37/37 passes)</div>
+      <p style="font-size:13.5px">Depois de ficar atrás contra a Tchéquia na 1ª rodada, a Coreia empatou aos 67 minutos com Hwang In-beom (assistência de Lee Kang-in) e, aos 80, Hwang In-beom articulou e Oh Hyeon-gyu virou, somando dois gols em 21 minutos para completar a virada. No total, a Coreia teve <b>61,7% de posse, xG de 1,84 e 468 passes certos (o maior de um único jogo de Copa desde 1966)</b> — rasgando o velho rótulo de "falta de criatividade no jogo aberto". Hwang In-beom, do Feyenoord (29 anos), foi eleito o melhor com uma assistência e um gol; Lee Kang-in fez 37/37 passes e criou 3 chances.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a Coreia provou que vence mesmo sem gol de Son, pela infiltração central — o que significa que o México não pode marcar só Son, pois <b>a qualidade de saída de bola de Hwang In-beom/Lee Kang-in é o novo canal ofensivo da Coreia</b>. Se a zaga reformulada do México voltar a ser rasgada por infiltrações no meio, a resposta posicional da Coreia é ainda mais perigosa do que contra a Tchéquia (o México não joga em bloco fechado e deixa mais espaço).</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Hwang In-beom eleito o melhor</a> · <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta — estatísticas pós-jogo/468 passes</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Coreia do Sul · Revisão da situação física dos craques <span class="carry" style="margin-left:6px">Do jogo anterior</span> <span style="color:var(--mut);font-weight:400">· ESPN · imprensa coreana · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lee Kang-in (tornozelo esquerdo) + Kim Min-jae (joelho) basicamente sem problemas antes do jogo; ambos foram titulares na 1ª rodada e tiveram atuações decisivas</div>
+      <p style="font-size:13.5px">As dúvidas do fim de temporada sobre o tornozelo esquerdo de Lee Kang-in e o joelho de Kim Min-jae já foram respondidas na 1ª rodada — ambos foram titulares contra a Tchéquia: Lee Kang-in fez 37/37 passes e criou 3 chances, e Kim Min-jae comandou o centro da linha de três. Neste jogo os dois seguem em forma, sendo os duplos pilares da solução ofensiva (Lee Kang-in) e do domínio aéreo defensivo (Kim Min-jae) da Coreia. <span style="color:var(--warn)">[Condicionamento de última hora e escalação sujeitos ao oficial antes do jogo · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: Lee Kang-in é um dos poucos capazes de produzir criatividade de forma contínua no jogo posicional, e Kim Min-jae é o esteio e o núcleo de saída de bola do sistema de três zagueiros — a saúde dos dois determina diretamente se a Coreia se sustenta tanto na posse quanto na defesa dos contra-ataques do México. Dois jogos de alta intensidade em sequência fazem do condicionamento físico uma variável oculta.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — elenco da Coreia/Lee Kang-in·Kim Min-jae</a> · <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510" style="color:var(--accent)">RotoWire — escalação provável/tática</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Cenário de classificação · Confronto direto pela liderança <span style="color:var(--mut);font-weight:400">· ESPN · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Ambas com 3 pontos: <b>quem vencer praticamente garante a liderança do Grupo A</b>; com duas vitórias o México se classifica antecipadamente</div>
+      <p style="font-size:13.5px">México fez 2-0 sobre a África do Sul e a Coreia virou para 2-1 sobre a Tchéquia na 1ª rodada; ambas com 3 pontos, saldo de gols México +2 / Coreia +1. O vencedor deste jogo praticamente garante a liderança do Grupo A e a vaga nas oitavas; o empate favorece a classificação de ambos, mas deixa suspense para a última rodada; quem perder terá de fazer contas na rodada final (o México pega a Tchéquia, e a Coreia uma África do Sul desfalcada com dois suspensos). É um <b>jogo de verdade, de peso duplo: iniciativa na classificação + posição da chave como líder</b>, e nenhum dos dois tem motivo para ser conservador.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: como o valor de terminar líder é alto e ambos querem vencer, a <b>abertura do jogo é maior do que num "confronto entre forte e fraco" comum</b> — e é exatamente essa a raiz da divisão no mercado de gols (campos Over/Under). O México pode não querer pressionar com risco zero como fez contra a África do Sul, e a Coreia também tem motivo para atacar em vez de só se defender e contra-atacar.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa" style="color:var(--accent)">ESPN — cenário/registros do Grupo A</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/" style="color:var(--accent)">Squawka — prévia</a></div>
+    </div>
+  </section>
+
+  <!-- ===== DADOS ===== -->
+  <section>
+    <h2><span class="n">1</span> Dados (núcleo)</h2>
+    <div class="sub">Probabilidades implícitas de vitória/empate/derrota (odds sem margem) · cenário de classificação do Grupo A · mercado de gols · perfil de força geral — os gráficos são todos de dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (sem margem, calculada a partir das odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos de 2.5 gols (mercado dividido, cerca de meio a meio)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Favoritismo para vencer o grupo/classificar no Grupo A (prob. implícita %)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇲🇽 México</th><th>🇰🇷 Coreia do Sul</th></tr>
+      <tr><td>Técnico</td><td class="mx">Javier Aguirre</td><td class="kr">Hong Myung-bo</td></tr>
+      <tr><td>Resultado na 1ª rodada</td><td class="mx">2-0 sobre a África do Sul (Quiñones 9' / Jiménez 67')</td><td class="kr">Virada por 2-1 sobre a Tchéquia (Hwang In-beom 67' / Oh Hyeon-gyu 80')</td></tr>
+      <tr><td>Dados da 1ª rodada</td><td class="mx">Posse 61% · xG 1,41 · 16 finalizações, 4 no alvo (1 na trave)</td><td class="kr">Posse 61,7% · xG 1,84 · 468 passes (recorde histórico da seleção em Copas)</td></tr>
+      <tr><td>Pontos / saldo de gols</td><td class="mx">3 pontos · +2</td><td class="kr">3 pontos · +1</td></tr>
+      <tr><td>Formação</td><td class="mx">4-3-3 (zaga reformulada após suspensão de Montes)</td><td class="kr">3-4-2-1</td></tr>
+      <tr><td>Odds 1X2 (DECIMAL)</td><td class="mx">Vitória ≈2,00 (-106/+100, implícita ≈50%)</td><td class="kr">Vitória ≈4,25 (+325/+333, ≈26%) · Empate ≈3,30 (+230, ≈28%)</td></tr>
+      <tr><td>Mais / Menos de 2.5 gols</td><td colspan="2" class="kr">Mercado dividido: parte dá Over -120, parte dá Under -170; duas equipes que querem vencer → tendência à abertura</td></tr>
+      <tr><td>Confronto direto (6 jogos)</td><td colspan="2" class="mx">México 4 vitórias, 1 empate e 1 derrota; na Copa de 2018, México 2-1 sobre a Coreia (gol de Son)</td></tr>
+      <tr><td>Jogadores-chave</td><td class="mx">Raúl Jiménez / Julián Quiñones / Edson Álvarez</td><td class="kr">Son Heung-min / Lee Kang-in / Hwang In-beom / Kim Min-jae</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as implícitas após retirar a margem das odds DECIMAIS (≈50/28/26, com cerca de 4% de margem). Fonte das odds: bet365 (MEX -106 / empate +230 / Coreia +333), FanDuel (MEX -105 / empate +230 / Coreia +320). Linha de total de gols 2.5, com mercado dividido em dois campos (Over -120 vs Under -170), refletindo a expectativa de abertura porque "as duas equipes querem vencer". Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados aprofundados · Métricas esperadas -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados aprofundados · Métricas esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· Média histórica vs valor real desta Copa · sinais de qualidade subjacente · com fontes</span></h2>
+    <div class="sub">Método central: confrontar item a item a <b>base histórica de cada time (últimos dois grandes torneios / eliminatórias / amostra de amistosos)</b> com o <b>valor real dos jogos já disputados nesta Copa</b>, para ver "se nesta Copa está acima ou abaixo do nível histórico, e o que isso significa". As amostras públicas de xG das seleções são limitadas; itens ausentes são marcados como "a confirmar", nunca inventados.</div>
+
+    <h4>① Núcleo: Média histórica vs valor real desta Copa (time a time)</h4>
+    <table>
+      <tr><th>Time / métrica</th><th>Base histórica (amostra/fonte)</th><th>Real nesta Copa (1ª rodada)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇲🇽 México · Ataque xG</td><td class="ht">Nível campeão da Copa Ouro 2025 com <b>média de xG 2.41 por jogo</b> (o melhor do torneio)</td><td class="ht">1ª rodada <b>xG 1.41</b>, 61% de posse, 2-0 contra a África do Sul</td><td><b>Abaixo</b> do poder de fogo da Copa Ouro — mas o adversário foi a África do Sul, fechada em 5-3-2 ferrolho e com três cartões vermelhos; a queda é normal; o jogo aberto ainda criou 1.41, eficiência cumprida</td></tr>
+      <tr><td class="ht">🇲🇽 México · Defesa xGA</td><td class="ht">Sob Aguirre, defesa sólida</td><td class="ht">1ª rodada sem sofrer gols, permitiu à África do Sul apenas <b>xGA 0.07</b></td><td><b>Equivalente/melhor</b> que o histórico, mas o ataque da África do Sul ≈ zero, amostra de baixo valor — o jogo posicional contra a Coreia é que será o teste real</td></tr>
+      <tr><td class="sc">🇰🇷 Coreia do Sul · Ataque xG/criatividade</td><td class="sc">Historicamente criticada por "falta de criatividade no jogo posicional, dependência do contra-ataque de Son"</td><td class="sc">1ª rodada <b>xG 1.84</b>, 61,7% de posse, 468 passes, dois gols vindos de penetração pelo meio, 2-1 na virada contra a Tchéquia</td><td><b>Claramente acima</b> da impressão histórica — a resposta no jogo posicional comandada por Lee Kang-in rasga o rótulo de "só contra-ataque", é a maior revisão para cima deste jogo</td></tr>
+      <tr><td class="sc">🇰🇷 Coreia do Sul · Defesa xGA</td><td class="sc">Defesa historicamente intermediária, vulnerável a bolas nas costas</td><td class="sc">1ª rodada só virou depois de a Tchéquia abrir <b>1-0</b>, cedeu gol em bola parada</td><td><b>Equivalente</b> ao risco histórico: a gestão após abrir o placar e a defesa de bola parada continuam pontos fracos, o México pode explorar</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórica</b>: o ataque do México recuou em relação ao poder de fogo da Copa Ouro (1.41 vs 2.41), mas é um ajuste normal diante de um ferrolho, com a eficiência ainda presente; o ataque da Coreia, por sua vez, <b>superou claramente</b> a impressão histórica (1.84 xG + alta posse + penetração no jogo posicional), sendo o lado subestimado deste jogo. Os dois times têm vontade de ter a bola; os dados aprofundados sustentam a linha mestra de "jogo aberto e franco, em que a penetração no jogo posicional de quem for melhor decide", e não um atropelamento unilateral do México. Fontes: Opta (xG/posse/passes da 1ª rodada) · Yahoo box score · dados da Copa Ouro. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção do jogo & calibração Opta</h4>
+    <table>
+      <tr><td>xG projetado pelo modelo deste jogo (xGscore)</td><td class="ht">México ≈1.5</td><td class="sc">Coreia do Sul ≈1.2</td><td>Projeções próximas — a criatividade real de 1.84 da Coreia na 1ª rodada faz com que sua projeção não deva ser muito subestimada</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">Os dois times estão em patamar próximo; odds sem margem México ≈50% / empate ≈28% / Coreia ≈26% (com cerca de 4% de margem)</td><td>Após calibração da força dos adversários, a "vitória sobre a Tchéquia" da Coreia tem mais valor que a "vitória sobre a África do Sul desfalcada" do México</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt</td><td colspan="2" class="sc">Dados públicos de seleções limitados <span style="color:var(--warn)">(a confirmar)</span> — qualitativo: os dois times tendem à posse + pressão no meio-campo ofensivo, a Coreia tem alta eficiência de xT na penetração pelo meio</td><td>O jogo pode ser equilibrado; a chave está em quem primeiro produzir penetração no jogo posicional</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de métricas aprofundadas (o que cada um desses indicadores "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): soma da qualidade das chances de finalização; ao excluir pênaltis, reflete melhor a criatividade no jogo aberto.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que o adversário cria contra você, mede o nível real da defesa em vez de depender de defesas/sorte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo esperado a cada 90 minutos): xG−xGA, o melhor indicador isolado para representar a força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (qualidade média por finalização): se a escolha de finalização é eficiente — valor baixo = muitos chutes de longe / chances ruins.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor o valor, mais intensa a pressão, refletindo a intensidade da marcação.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinação do campo): proporção de toques no terço ofensivo, mede território/domínio de campo em vez de simples posse de bola.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/Sofascore/Understat/xGscore; as seleções têm amostras públicas limitadas em métricas detalhadas como PPDA/xT/field tilt, e os itens ausentes são sempre marcados como "a confirmar", nunca inventando valores.</div>
+  </section>
+
+  <!-- ===== TERMOMETRO DO MERCADO ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Termômetro do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de celebridades / odds / fluxo de dinheiro / opinião pública</span></h2>
+    <div class="sub">O México é um favorito moderado; o clima do mando de campo eleva o volume de discussão, mas nem a linha nem a direção dos especialistas têm o frenesi unilateral do jogo de abertura — quatro sinais + índice sintético de superaquecimento</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · tendência moderada à vitória do México; calor impulsionado pelo clima de Guadalajara + narrativa do duelo pela liderança</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">O México é um favorito moderado de cerca de 50% (longe dos 66-70% do jogo de abertura), os especialistas em sua maioria apostam no México mas não de forma unânime, e há clara divisão no mercado de gols. O burburinho vem de três narrativas: <b>mando de campo em Guadalajara + confronto direto pela liderança do Grupo A + a "despedida" de Son</b> — é alta exposição, não excesso de dinheiro.</div>
+    </div>
+
+    <h4>① Agregação de recomendações de especialistas (estatística de direção: vitória do México maioria · Coreia invicta/com handicap minoria · gols divididos)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Palpite</th></tr>
+      <tr><td>Squawka</td><td>Mídia de dados</td><td>Vitória do México; mando + poder ofensivo fazem da odd 1/1 um bom valor</td></tr>
+      <tr><td>Yahoo Sports</td><td>Mídia de apostas (EUA)</td><td>México -106 como lado seguro; tendência a placar baixo</td></tr>
+      <tr><td>SportsLine (especialista de elite)</td><td>Especialista lucrativo certificado</td><td>Inclina-se à vitória do México com poucos gols, destacando a atmosfera do mando e o teto de aproveitamento</td></tr>
+      <tr><td>Racing Post</td><td>Mídia de apostas (Reino Unido)</td><td>Bet builder 8-1, vitória do México + foco em Jiménez para gols</td></tr>
+      <tr><td>ESPN (Anish Anand)</td><td>Mídia de previsões</td><td>A atmosfera do mando ajuda o México a buscar a vitória; mas Hwang In-beom é o fator X da Coreia</td></tr>
+      <tr><td>OneFootball / TotalFootballAnalysis</td><td>Tática/previsões</td><td>Favoráveis ao México, mas apontam a evolução posicional da Coreia e que Over 2.5 tem fundamento</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de superaquecimento (médio)</b>: a maioria aposta no México na direção do vencedor, mas não 100% unânime — a virada da Coreia sobre a Tchéquia deu base ao campo "Coreia invicta/com handicap". A verdadeira divisão está em <b>gols (Over vs Under 2.5) e na margem do handicap</b>: duas equipes que querem vencer tornam o "jogo aberto e ofensivo" uma expectativa razoável, reduzindo a certeza do Under. O burburinho é movido pelo clima do mando, mas não se vê dinheiro relevante elevando a vitória da Coreia.</div>
+
+    <h4 style="margin-top:20px">② Variação das odds (DECIMAL)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitória do México</th><th>Leitura</th></tr>
+      <tr><td>Abertura (DraftKings 06-12)</td><td>1X2</td><td class="mx">≈2,00 (+100)</td><td>Tendência moderada ao México; empate +230 / Coreia +325</td></tr>
+      <tr><td>06-16, perto do jogo</td><td>Várias casas</td><td class="mx">≈1,95–2,00 (bet365 -106 / FanDuel -105)</td><td>Oscilação estreita, sem compressão unilateral — ao contrário do jogo de abertura</td></tr>
+      <tr><td>06-16</td><td>Gols Mais/Menos</td><td colspan="2" class="mx">Linha total 2.5; mercado em dois campos (Over -120 / Under -170), sem consenso</td></tr>
+      <tr><td>Handicap (referência asiática)</td><td>MEX -0,5</td><td colspan="2" class="mx">MEX -0,5 cerca de -120~-130 (lado da Coreia +0,5 com handicap mais agressivo a confirmar)</td></tr>
+    </table>
+    <div class="note">📌 O preço 1X2 está estável em México ≈2,00, sem movimento unilateral — em forte contraste com a compressão unilateral da vitória do México de 1,48→1,42 no jogo de abertura, indicando que neste jogo <b>a precificação da vitória do México está mais próxima da probabilidade real (≈50%)</b>, sem janela em que o "prêmio de anfitrião" tenha sido consumido. A descoberta de preço mais ativa está nos <b>mercados de gols e de handicap</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ Opinião pública</h4>
+    <ul class="cl">
+      <li><b>Mercados de previsão (Kalshi/Polymarket)</b>: preço de resultado, volume de contratos e momentum de 30 dias deste jogo não foram localizados publicamente <span style="color:var(--warn)">(a confirmar)</span> — após o jogo de abertura, o volume dos mercados de previsão já passou de US$ 2 bilhões; como duelo pela liderança, espera-se volume neste jogo, mas os valores específicos não estão confirmados.</li>
+      <li><b>Foco da opinião pública</b>: altamente concentrado no <b>mando de campo em Guadalajara + confronto direto pela liderança do Grupo A</b> e na narrativa da "possível última Copa do Mundo" de Son; a mídia local mexicana (TUDN/ESTO) tem clima otimista, mas com um alerta disciplinar de "México vs si mesmo" (ecoando os 3 cartões vermelhos da 1ª rodada).</li>
+      <li><b>Sinal de divergência</b>: não se vê uma divergência clara "público vs preço" — ao contrário do superaquecimento generalizado do jogo de abertura, este mercado está relativamente equilibrado, e a virada da Coreia deu certa base à direção contrária.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: tendência moderada à vitória do México (≈50%), sem compressão unilateral nas casas, índice de superaquecimento <b>3/5</b>. O calor vem do volume de discussão de <b>clima do mando + narrativa do duelo pela liderança + despedida de Son</b>, e não de excesso de dinheiro no mercado de resultado. Os mercados de maior conteúdo informativo são os de <b>gols (mercado dividido) e de handicap (México -0,5)</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fonte: <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — prévia/odds</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — previsão/odds</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — especialista de elite</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — bet builder 8-1</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — odds de abertura</a> · <a href="https://onefootball.com/en/news/mexico-vs-south-korea-prediction-world-cup-2026-preview-best-bets-43011422">OneFootball — prévia</a></div>
+  </section>
+
+  <!-- ===== ARBITRO ===== -->
+  <section>
+    <h2><span class="n">2</span> Árbitro da partida & ambiente de arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b> (ESPN 06-16): o árbitro principal será o <b>uruguaio Gustavo Tejera (38 anos, natural de Montevidéu, categoria internacional da CONMEBOL)</b>. Tejera é um dos árbitros internacionais mais ativos da América do Sul, com passagens pela Copa Libertadores/Sul-Americana da CONMEBOL e pelas Eliminatórias sul-americanas, e foi escalado para o quadro de arbitragem da <b>Copa América 2024</b>. Fonte: ESPN / besoccer / football-lineups.</div>
+    <h4>Últimos dois grandes torneios + critério de arbitragem (dados reais de torneio têm prioridade)</h4>
+    <ul class="cl">
+      <li><b>Copa América 2024 (último grande torneio · com amostra)</b>: Tejera apitou na fase de grupos da Copa América 2024 <b>Colômbia vs Costa Rica (Grupo D, 28/6, Glendale)</b> e foi o quarto árbitro na partida das quartas de final Argentina vs Equador. Essa é a amostra real de arbitragem em seu mais recente grande torneio internacional — com poucos jogos como árbitro principal (apenas um da fase de grupos), e o detalhamento de cartões jogo a jogo nesse torneio fica sujeito aos registros oficiais <span style="color:var(--warn)">(a confirmar)</span>.</li>
+      <li><b>Copa do Mundo (esta é a primeira que apita)</b>: Tejera <b>não tem amostra como árbitro principal em Copas do Mundo</b> — este jogo (ou outros desta edição) está entre os primeiros de sua trajetória de arbitragem em Copas adultas. Pelo princípio de "sem amostra de torneio, declarar que não há amostra": no nível de Copa do Mundo ele <b>não tem dados históricos de arbitragem a referenciar</b>, restando aproximar pelo critério da Copa América e da carreira.</li>
+      <li><b>Base de cartões na carreira (amostra grande, como contexto e não como critério de torneio)</b>: cerca de 316 jogos na carreira, acumulando 1.614 amarelos e 36 vermelhos, <b>média de cerca de 5,1–5,24 amarelos por jogo</b> — um estilo sul-americano <b>rígido, com muitos cartões</b> (os campeonatos da CONMEBOL têm duelos intensos, e a média naturalmente sobe). Atenção: esta é a média de liga/escopo total, <b>não extrapolável diretamente para o critério de torneio</b> (os campeonatos sul-americanos são bem mais fragmentados do que a Copa do Mundo).</li>
+      <li><b>Histórico de arbitragem com as duas equipes</b>: <b>amostra zero</b> — não há registro público de Tejera apitando México ou Coreia em qualquer nível. Sem viés por equipe; um árbitro estreante na Copa do Mundo costuma <b>começar rígido para "impor autoridade", apitando pelo manual</b>, e o tratamento da primeira falta tática nos 15 minutos iniciais é o sinalizador do critério do dia.</li>
+      <li><b>Novas regras unificadas desta edição</b>: 8 segundos para o goleiro segurar a bola, só o capitão pode falar com o árbitro, impedimento semiautomático — somados ao ambiente "mais rígido" desta edição (3 vermelhos no jogo de abertura, e também incidentes em Coreia-Tchéquia), as duas equipes devem incluir no cálculo de faltas, neste duelo de alta pressão pela liderança, o custo do acúmulo de amarelos (2 amarelos = suspensão na fase de grupos).</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise da arbitragem</b>: Tejera é um árbitro <b>sem amostra em Copas do Mundo e com apenas um jogo de fase de grupos na Copa América</b> — pela norma, a análise da arbitragem deste jogo <b>não pode usar sua média rígida de liga (≈5,1 amarelos/jogo) para definir o tom</b>, o que superestimaria a expectativa de cartões. Referenciável apenas: ① a <b>tendência de estilo</b> sul-americano de baixa tolerância ao duelo físico e arbitragem mais rígida; ② o vício comum de "impor autoridade no início" de quem estreia na Copa; ③ os sinais de ambiente mais rígido desta edição. Em um duelo de alta intensidade pela liderança, <b>o acúmulo de amarelos e a gestão emocional são variáveis reais</b>, mas o volume específico de cartões carece de âncora de torneio, sendo melhor observar do que concluir.</div>
+    <div class="src" style="margin-top:8px">Fonte: <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — nomeação do árbitro Gustavo Tejera</a> · <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — dados de cartões na carreira de Tejera</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — currículo de Tejera</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">Alamy/AP — Copa América 2024 Colômbia vs Costa Rica</a></div>
+  </section>
+
+  <!-- ===== ESCALACOES ===== -->
+  <section>
+    <h2><span class="n">3</span> Escalações prováveis & jogadores-chave</h2>
+    <div class="sub">Escalações prováveis (estimativa de fontes de análise, não oficial; sujeitas à lista oficial cerca de T-60 antes do jogo · a confirmar) · fonte ESPN / Sports Mole / RotoWire</div>
+    <h4>🇲🇽 México — escalação provável (4-3-3 · zaga reformulada por suspensão de Montes)</h4>
+    <div class="lineup">Rangel; Gallardo · Vásquez · Álvarez · Reyes; Lira; Quiñones · Fidalgo · Alvarado · Gutiérrez; Jiménez</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>Atacante / Fulham</td><td>Núcleo de finalização e pênaltis; gol de cabeça no segundo poste para o 2-0 na 1ª rodada; principal saída em bolas paradas e finalizações na área</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>Ponta / Al-Hilal</td><td>Trunfo naturalizado; abriu o placar aproveitando erro da África do Sul na 1ª rodada (seu primeiro gol no torneio); ameaça no um contra um</td></tr>
+      <tr><td class="mx">Edson Álvarez (C)</td><td>Capitão / volante→zagueiro improvisado</td><td><span class="carry">Do jogo anterior</span> recua após a suspensão de Montes para formar dupla com Vásquez — forte na saída de bola, mas retira a âncora do meio-campo</td></tr>
+      <tr><td class="mx">Johan Vásquez</td><td>Zagueiro / Genoa</td><td>Núcleo da defesa reformulada; precisará encarar as bolas nas costas em contra-ataque de Son e a investida de Oh Hyeon-gyu</td></tr>
+    </table>
+    <h4>🇰🇷 Coreia do Sul — escalação provável (3-4-2-1)</h4>
+    <div class="lineup">Kim Seung-gyu; Lee Han-beom · Kim Min-jae · Lee Gi-hyuk; Seol Young-woo · Hwang In-beom · Paik Seung-ho · Lee Tae-seok; Lee Kang-in · Lee Jae-sung; Son Heung-min(C)</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="kr">Son Heung-min (C)</td><td>Atacante / LAFC</td><td>Capitão, recordista de jogos da história; "despedida"; sua velocidade no contra-ataque é a arma mais afiada para castigar a zaga reformulada do México</td></tr>
+      <tr><td class="kr">Hwang In-beom</td><td>Volante / Feyenoord</td><td><span class="carry">Do jogo anterior</span> assistência e gol na 1ª rodada, eleito o melhor; saída de bola no meio + chegada ao ataque são o novo canal ofensivo da Coreia</td></tr>
+      <tr><td class="kr">Lee Kang-in</td><td>Meia / PSG</td><td><span class="carry">Do jogo anterior</span> 37/37 passes e 3 chances criadas na 1ª rodada; a chave para destravar o jogo posicional</td></tr>
+      <tr><td class="kr">Kim Min-jae</td><td>Zagueiro / Bayern</td><td>Esteio do sistema de três zagueiros, núcleo do jogo aéreo e da saída de bola; maior valor de mercado do grupo (€40 mi)</td></tr>
+    </table>
+    <div class="note">Nota sobre as escalações: ambas as escalações prováveis são estimativas de análise da mídia (ESPN / Sports Mole / RotoWire), <b>sujeitas à lista oficial antes do jogo · a confirmar</b>. A maior variável é a reformulação da zaga do México por causa da suspensão de Montes (Álvarez recuando); a Coreia muito provavelmente mantém o 3-4-2-1 e o esquema titular usado contra a Tchéquia.</div>
+  </section>
+
+  <!-- ===== TATICA + TECNICOS ===== -->
+  <section>
+    <h2><span class="n">4</span> Estilo tático & técnicos</h2>
+    <div class="sub">Cada conclusão é cruzada com o jogo e os resultados reais das duas equipes nos seus últimos dois grandes torneios (México: eliminação na fase de grupos da Copa 2022 + Copa Ouro 2023/Copa América 2024; Coreia: oitavas da Copa 2022 + semifinal da Copa da Ásia 2023/24)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 México · Javier Aguirre</div>
+        <div class="role">4-3-3 de posse e cerco + aceleração no mando; zaga reformulada após suspensão de Montes</div>
+        <ul class="cl">
+          <li>A 1ª rodada contra a África do Sul provou: sem a âncora de Álvarez, o meio-campo de três (Lira-Fidalgo-Gutiérrez) consegue sobrecarregar o bloco fechado (61% de posse, 20 toques na área). Mas <b>neste jogo Álvarez é forçado a recuar para improvisar como zagueiro</b>, e o meio-campo perde sua maior barreira — é uma troca de papel de "furar o bloco" para "defender o jogo aberto", bem mais difícil.</li>
+          <li>Cruzamento: eliminação na fase de grupos da Copa 2022 (dificuldade de furar defesas, eliminado pelo saldo de gols), título na Copa Ouro 2023 (média de 2,41 xG / 0,85 xGA, a melhor do torneio) e eliminação na fase de grupos da Copa América 2024 (baixa eficiência ofensiva) — o <b>mal crônico histórico do México é exatamente "muita posse, pouca finalização"</b>, confirmado de novo pelos 16 chutes e 4 no alvo da 1ª rodada. Diante de uma defesa liderada por Kim Min-jae, esse aproveitamento é um risco real.</li>
+          <li>Risco: com Álvarez recuado, o único volante (Lira) marcando os dois núcleos de infiltração da Coreia (Lee Kang-in/Hwang In-beom) — se o centro for furado, as bolas nas costas em contra-ataque de Son ameaçarão diretamente a zaga reformulada — é o teste mais duro da defesa mexicana neste torneio.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 Coreia do Sul · Hong Myung-bo</div>
+        <div class="role">3-4-2-1 · infiltração no jogo posicional + contra-ataque de Son, modo duplo</div>
+        <ul class="cl">
+          <li>A 1ª rodada contra a Tchéquia rasgou o velho rótulo: 61,7% de posse, 468 passes, infiltração central comandada por Lee Kang-in/Hwang In-beom para virar com dois gols — prova de que <b>a Coreia já tem uma resposta posicional "além de Son"</b>, sem depender só do contra-ataque. É o maior sinal de evolução desta edição.</li>
+          <li>Cruzamento: oitavas da Copa 2022 (vitória dramática por 2-1 sobre Portugal na última rodada do grupo, modelo "matador de gigantes" com contra-ataque em bloco baixo + Son jogando lesionado), semifinal da Copa da Ásia 2023/24 (muito talento individual, mas brechas defensivas recorrentes, eliminada pela Jordânia por 0-2, expondo problemas de sistema) — o <b>ponto fraco da Coreia sempre foi deixar brechas na transição defensiva da linha de três</b>. Vale espelhar o modelo do Japão em 2022 ("contra-ataque em bloco baixo + reservas decisivos (Doan empatou duas vezes contra Alemanha/Espanha vindo do banco)"): neste jogo, se a Coreia se defender com solidez no início, usar o jogo posicional de Lee Kang-in + os contra-ataques de Son/Oh Hyeon-gyu, e depois atacar o condicionamento da zaga reformulada do México com os reservas, é o caminho mais realista para a vitória.</li>
+          <li>Resposta: Hong Myung-bo muito provavelmente mantém a postura sólida usada contra a Tchéquia (Hwang Hee-chan possivelmente segue de prontidão no banco como trunfo para o segundo tempo), usando Lee Kang-in para articular + Son como referência para puxar a zaga reformulada do México, aproveitando os espaços do meio-campo após o recuo de Álvarez.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSIGHTS ===== -->
+  <section>
+    <h2><span class="n">5</span> Insights de analistas</h2>
+    <div class="insight"><div class="who">ESPN · Anish Anand <small>· mídia de previsões</small></div>O mando de campo em Guadalajara dará ao México o reforço de "um jogador a mais", e o México buscará a vitória com alta energia e duelos intensos para garantir a classificação; mas aponta <b>Hwang In-beom como o fator X da Coreia</b> — eleito o melhor com assistência e gol na 1ª rodada, ele pode voltar a decidir o jogo nos espaços abertos pela reformulação do meio mexicano (recuo de Álvarez).</div>
+    <div class="insight"><div class="who">Sports Mole / RotoWire <small>· tática/escalação provável</small></div>Apontam de forma unânime <b>Álvarez recuando para improvisar como zagueiro ao lado de Vásquez</b> para lidar com a suspensão de Montes; consideram que a reformulação da defesa mexicana + o teto de aproveitamento de 16 chutes e 4 no alvo são uma dupla porta de entrada para o jogo posicional e o contra-ataque da Coreia.</div>
+    <div class="insight"><div class="who">Opta (revisão da 1ª rodada)<small>· dados</small></div>Os 468 passes certos da Coreia contra a Tchéquia foram o maior número de um único jogo de Copa desde 1966, com xG de 1,84 — evidência quantitativa de que a criatividade posicional da Coreia evoluiu e não é mais o velho perfil de "só contra-ataque com Son", o que é mais ameaçador diante dos espaços abertos do México, que não joga em bloco fechado.</div>
+    <div class="insight"><div class="who">Geral · sinais de gols e handicap <small>· sinais táticos</small></div>Duas equipes querendo vencer o duelo pela liderança → mercado claramente dividido sobre Over/Under 2.5, com o handicap concentrado em México -0,5. O verdadeiro suspense: se a zaga reformulada do México segura os contra-ataques de Son/Oh Hyeon-gyu + se o México consegue converter posse em gols (ecoando seu mal crônico histórico de "falta de finalização").</div>
+  </section>
+
+  <!-- ===== AVALIACAO GERAL ===== -->
+  <section>
+    <h2><span class="n">6</span> Avaliação geral & itens a confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória apertada do México (1-0 / 2-1) ou empate (≈28%) é o roteiro-base — mando + confronto direto + poder ofensivo dão leve vantagem, mas este jogo está longe de um atropelo como o da abertura; a vitória da Coreia (≈26%) é de probabilidade média, exigindo que a infiltração central de Hwang In-beom/Lee Kang-in rasgue a zaga reformulada do México + os contra-ataques de Son/Oh Hyeon-gyu se concretizem ao mesmo tempo (a virada sobre a Tchéquia na 1ª rodada já provou que a Coreia tem essa capacidade).</li>
+      <li><b>Homens decisivos</b>: Jiménez (MEX/finalização e bolas paradas), Quiñones (MEX/explosão no um contra um), Álvarez + Vásquez (MEX/zaga reformulada), Son (Coreia/contra-ataque e motivação da despedida), Hwang In-beom + Lee Kang-in (Coreia/duplo núcleo de infiltração central), Kim Min-jae (Coreia/jogo aéreo e saída de bola).</li>
+      <li><b>Chaves do jogo</b>: ① <b>se a zaga reformulada do México (recuo de Álvarez) segura as transições de Son/Oh Hyeon-gyu</b> — define o handicap (México -0,5); ② <b>se o aproveitamento de 16 chutes e 4 no alvo do México pune o ponto fraco do retorno da linha de três da Coreia</b>; ③ duas equipes que querem vencer fazem dos <b>gols (Over/Under 2.5) a maior divisão do mercado</b>.</li>
+      <li><b>Visão de mercado</b>: a precificação da vitória do México é moderada (≈50%, sem compressão unilateral), o valor 1X2 está próximo da probabilidade real, sem janela de "prêmio de anfitrião"; os de maior conteúdo informativo são os <b>mercados de gols (mercado dividido) e de handicap (México -0,5)</b>. Índice de superaquecimento 3/5 (o calor vem do clima do mando e da narrativa do duelo pela liderança, e não de dinheiro no mercado de resultado).</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① a escalação titular específica da defesa reformulada do México (se Álvarez recua, e quem será o único volante do meio); ② o condicionamento da Coreia após dois jogos em sequência e a forma de última hora de Lee Kang-in/Kim Min-jae; ③ as listas oficiais das duas equipes (cerca de T-60); ④ o detalhamento específico de cartões do árbitro principal Gustavo Tejera no único jogo da Copa América 2024 (Colômbia vs Costa Rica) (sem amostra em Copas do Mundo, já indicado); ⑤ preço de resultado, volume de contratos e momentum de 30 dias deste jogo na Kalshi/Polymarket não localizados publicamente; ⑥ as odds específicas do handicap asiático (México -0,5/com handicap) e da linha de total de gols ficam sujeitas à linha em tempo real antes do jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — programação/árbitro Tejera/escalação provável/destaques</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html">Sports Mole — escalação provável do México após a suspensão de Montes</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510">RotoWire — escalação provável/análise tática</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — prévia/odds</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — previsão/odds</a><br>
+      • <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — especialista de elite</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — bet builder 8-1</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — odds de abertura</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta — estatísticas da Coreia na 1ª rodada/468 passes</a> · <a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa">ESPN — cenário do Grupo A/confronto direto</a><br>
+      • <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — dados de cartões de Tejera</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — currículo de Tejera</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">AP — Copa América 2024, arbitragem de Tejera</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análises da Copa do Mundo 2026 · dados até 2026-06-17 · os gráficos são de dados verificados, o radar é uma avaliação geral do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',KR='#cd2e3a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória do México','Empate','Vitória da Coreia'],datasets:[{data:[50,28,26],backgroundColor:[MX,DR,KR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Prob. implícita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais de 2.5','Menos de 2.5'],datasets:[{data:[52,48],backgroundColor:[KR,MX],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Prob. implícita % (mercado dividido, cerca de meio a meio)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['México','Coreia do Sul','Tchéquia','África do Sul'],datasets:[{data:[48,30,18,4],backgroundColor:[MX,KR,'#3b6fb0','#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Prob. implícita de vencer o grupo % (ilustrativo)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Bola parada','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'México',data:[6.5,6,7,7,7,7],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'Coreia do Sul',data:[6,6.5,7.5,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

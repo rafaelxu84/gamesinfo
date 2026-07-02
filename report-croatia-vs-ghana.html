@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 克罗地亚 vs 加纳 · 2026世界杯 L组末轮（克须取胜保出线 / 加纳平局即晋级）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="en" href="https://pksport.net/en/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="x-default" href="https://pksport.net/en/report-croatia-vs-ghana.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://pksport.net/en/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · L组末轮 · 出线争夺（克须取胜 / 加纳平局晋级）· 同时：巴拿马 vs 英格兰</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 克罗地亚 2-1 加纳</span>
+  <h1>克罗地亚 vs 加纳</h1>
+  <div class="meta">2026年6月27日（周六）· 费城 Lincoln Financial Field · 17:00 ET / 22:00 BST · L组末轮 · 同时进行：巴拿马 vs 英格兰（东卢瑟福 MetLife Stadium）</div>
+  <div class="vs">
+    <div class="team">
+      <div class="nm" style="color:#e8788a">🇭🇷 克罗地亚</div>
+      <div class="rk">4-2 败于英格兰 + 1-0 胜巴拿马 · 3 分（净 -1，进 3 丢 4）· <b>须取胜方锁定晋级</b> · Modrić 200 帽 · Budimir 老将救主 · 防线被英格兰打穿</div>
+    </div>
+    <div class="x">— VS —</div>
+    <div class="team">
+      <div class="nm" style="color:#5aa8d8">🇬🇭 加纳</div>
+      <div class="rk">0-0 平英格兰 + 0-0 平巴拿马 · 4 分（净 +0，进 0 丢 0）· <b>平局即晋级</b> · Kudus 伤缺整届 · Queiroz 防守体系两场零封 · 压阵反击战术</div>
+    </div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 克罗地亚 2-1 加纳（半场 1-0）· Lincoln Financial · 06-27</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">动机错位下的"必须赢 vs 平局即走"剧本如期高烈度：<b>克罗地亚靠 Petar Sučić 第 31 分钟一记禁区外世界波先拔头筹</b>，半场 1-0。下半场<b>加纳通过定位球由 Derrick Luckassen 第 73 分钟扳平</b>，一度让形势倒向加纳；但<b>克罗地亚第 83 分钟由 Nikola Vlašić 头球完成绝杀，助攻者正是 40 岁的 Luka Modrić（角球）</b>——Modrić 由此成为<b>有记录以来（1966 年起）世界杯送出助攻的最年长球员</b>。最终克罗地亚 2-1 取胜，<b>以 L 组次席晋级 32 强</b>；加纳虽败，<b>仍以最佳第三名之一晋级</b>（4 分），两队携手出线。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 31' Sučić（克 · 禁区外世界波）｜73' Luckassen（加 · 定位球扳平）｜83' Vlašić（克 · 头球绝杀 · Modrić 角球助攻）· 半场 1-0</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Sofascore / Opta）</h4>
+    <table>
+      <tr><th>指标</th><th>🇭🇷 克罗地亚</th><th>🇬🇭 加纳</th><th>解读</th></tr>
+      <tr><td class="ht">比分 / 进球</td><td><b>2</b>（Sučić、Vlašić）</td><td>1（Luckassen）</td><td>克罗地亚靠世界波 + 定位球绝杀拿下必须赢的比赛</td></tr>
+      <tr><td class="ht">单场 xG（Sofascore）</td><td>0.57</td><td class="ht"><b>1.00</b></td><td>耐人寻味：加纳 xG 反而更高，克罗地亚靠射门质量外的"灵光一击"（远射 + 头球）取胜，效率高于过程</td></tr>
+      <tr><td class="ht">射门数（Sofascore）</td><td><b>8</b></td><td>6</td><td>双方射门量都不高，符合赛前"低开分、防守战"的判断</td></tr>
+      <tr><td class="ht">射正（Sofascore）</td><td><b>4</b></td><td>1</td><td>克罗地亚 4 射正进 2 球，终结效率高；加纳仅 1 射正即进 1（定位球）</td></tr>
+      <tr><td class="ht">控球（Sofascore）</td><td><b>53.3%</b></td><td>46.7%</td><td>克罗地亚控球略占优但不悬殊；加纳并非纯摆大巴，仍有持球与还击</td></tr>
+      <tr><td class="ht">禁区触球</td><td colspan="2"><span style="color:var(--warn)">禁区触球分项未多源核得 · 待核</span></td><td>从 xG 与射门看，加纳的机会质量并不逊于克罗地亚</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.sofascore.com/news/croatia-1-0-ghana-at-ht-world-cup-stats-tell-the-story">Sofascore — 克罗地亚 vs 加纳数据（控球 53.3/46.7、xG 0.57/1.00、8-6 射门、4-1 射正）</a> · <a href="https://www.skysports.com/football/news/12098/13556699/world-cup-2026-croatia-x-x-ghana">Sky Sports — 比赛报道（Vlašić 绝杀/Modrić 助攻）</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760480">ESPN — 比赛分析</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021509">FIFA Match Centre — 结果</a>。<span style="color:var(--warn)">[禁区触球分项未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"克须取胜→被迫压上→给加纳防反空间"——动机差剧本如期上演，但克罗地亚靠个人质量破局</div>赛前点名"克罗地亚被迫主动求胜、给加纳防反留空间"。实战中加纳确实深守、并靠定位球一度扳平；但克罗地亚<b>靠 Sučić 远射 + Vlašić 头球（皆非阵地渗透）破局</b>。<b>可迁移结论：面对密防，克罗地亚的稳定破局口是远射与定位球（Modrić 的死球质量），而非阵地穿插——淘汰赛对强队时这套"灵光产出"能否复制是关键变量。</b></div>
+    <div class="insight"><div class="who">加纳"零封堡垒"被攻破——定位球既救命也送命</div>加纳前两场 0-0 零封，本场<b>被两记非运动战进球（远射 + 角球头球）攻破</b>，自身则靠定位球扳平。<b>可迁移结论：加纳的低位防守对运动战仍有效（xG 仅让出 0.57），但防定位球与远射是软肋；R32 对阵 Colombia 需重点补强死球防守，否则会重复被一击致命。</b></div>
+    <div class="insight"><div class="who">Modrić 40 岁仍是死球与领袖价值的天花板</div>赛前提示"Modrić 对巴拿马已显老态，但经验与组织无可替代"。本场他<b>用一记角球助攻 Vlašić 绝杀，成为世界杯最年长助攻者</b>。<b>可迁移结论：运动战中 Modrić 的覆盖与节奏会下滑，但其定位球质量与大赛阅读仍是克罗地亚淘汰赛的决定性武器——围绕其死球设计是高效路径。</b></div>
+    <div class="insight"><div class="who">xG 倒挂（加纳 1.00 &gt; 克 0.57）提醒：克罗地亚赢在效率而非过程</div>加纳的机会质量实际更高，克罗地亚是<b>用更少更高质量的终结（4 射正进 2）赢球</b>。<b>可迁移结论：克罗地亚晋级含真实运气成分，过程数据并不占优；淘汰赛若延续"过程平庸、靠球星灵光"，遇到效率更高的强队（如葡萄牙）风险偏大。</b></div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">克罗地亚被迫求胜、是热门（Opta 56.3%）</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>克罗地亚如期取胜并以次席晋级，热门兑现</td></tr>
+      <tr><td class="ht">克须取胜方锁定晋级 / 加纳平局即晋级</td><td style="color:var(--warn)"><b>~ 方向对、加纳负仍出线</b></td><td>克罗地亚靠赢球晋级（命中）；加纳虽未平、输球，但仍以最佳第三名晋级——比"平局即走"更宽松</td></tr>
+      <tr><td class="ht">加纳防反博冷门或拖平（基准剧本）</td><td style="color:var(--warn)"><b>~ 一度兑现后被绝杀</b></td><td>加纳 73' 定位球扳平、剧本一度成立，但 83' 被 Vlašić 绝杀，冷门/拖平未能保持</td></tr>
+      <tr><td class="ht">小球（O/U 2.5 偏 Under，加纳两场零封）</td><td style="color:var(--bad)"><b>✗ 落空（3 球 · Over）</b></td><td>全场 3 球，Under 2.5 未兑现——加纳零封纪录被打破，小球氛围被打破</td></tr>
+      <tr><td class="ht">Modrić 领袖/死球价值是看点③</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>Modrić 角球助攻绝杀、创最年长助攻纪录，正是其死球价值的兑现</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇭🇷 克罗地亚 · L 组次席晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>R32 对手已定：葡萄牙</b>（7 月 2 日周四 · 多伦多）。作为 L 组次席撞上强敌，签运偏硬——这是真正检验克罗地亚成色的一战。</li>
+          <li><b>破局靠死球/远射的模式带入</b>：对葡萄牙更难有阵地空间，Modrić 的定位球 + Sučić/Vlašić 的远射与抢点，是为数不多的稳定得分路径。</li>
+          <li><b>过程数据偏弱需警惕</b>：本场 xG 倒挂（0.57 vs 1.00）说明运动战创造力有限；对葡萄牙若再靠效率，运气空间会被压缩。</li>
+          <li><b>Modrić 体能管理</b>：40 岁老将死球价值无可替代，但运动战覆盖下滑，淘汰赛强度下的出场时间分配是看点。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇬🇭 加纳 · 最佳第三名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>R32 对手已定：哥伦比亚</b>（7 月 3 日周五 · 堪萨斯城）。加纳以 4 分、最佳第三名之一晋级，避开葡萄牙；哥伦比亚 K 组头名（7 分），实力强劲但非顶级豪门。</li>
+          <li><b>低位防反体系仍可用（核心带入）</b>：Queiroz 的 4-5-1 对运动战有效（本场仅让出 xG 0.57）；对哥伦比亚可延续防反，靠 Williams 速度 + Semenyo 边路反击。</li>
+          <li><b>定位球与远射防守是软肋</b>：本场两球皆失于死球/远射，对哥伦比亚（边路传中 + 定位球能力强）需重点补强。</li>
+          <li><b>Kudus 整届缺阵延续</b>：最大创造力来源缺席（多源确认），进攻仍依赖 Williams/Semenyo/Jordan Ayew，破密防能力有限。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 L 组末轮的<b>出线生死战</b>，动机严重不对等——<b>克罗地亚 3 分第三、必须取胜方锁定晋级；加纳 4 分第二、平局即出线</b>。算术清晰：英格兰已积 4 分头名在握（与加纳积分同为 4，净胜球英格兰 +4 大幅领先加纳 0），巴拿马 0 分出局。<b>加纳如果平局，无论另一场结果如何几乎确定晋级</b>（即便输掉，仍需看进球细节，但净胜球从 0 到负数很可能仍多于克三分的追赶——此处待核最终算术，但主流分析一致：平局即晋级）。克罗地亚若要晋级，最保险路径是赢球；若平局则可能以积 4 分、净 0 的劣势与加纳同分但净胜球不及加纳（加纳两场 0:0 净胜球 0、克罗地亚当前净 -1，须额外进球找平净胜球差距），局面复杂且依赖英格兰vs巴拿马的结果。因此，<b>克罗地亚被迫主动求胜</b>，这为进攻创造了真实的开放空间，同时也给加纳的防反战术提供了理想条件。这不是一场平淡的出线保级局，而是动机错位创造的高烈度对局。Opta 超算给克罗地亚 56.3% 胜率。盘口：克罗地亚胜约 <b>2.00–2.10</b>（-115 至 -134）/ 平 <b>3.30–3.50</b>（+245）/ 加纳胜 <b>3.50–4.50</b>（+280 至 +450）；亚盘偏克罗地亚 -0.75（约 -104）/ 加纳 +0.5（约 +110）；总分线 O/U 2.5 <b>偏小球（Under 约 -155）</b>——加纳两场零封 + 防守体系严密，与大球方向相悖。三处看点：① <b>加纳能否再次零封压阵</b>（对阵比英格兰实力更弱的克罗地亚）；② <b>克罗地亚能否突破 Queiroz 的防守堡垒</b>（两战平均控球与过人均受限）；③ <b>Modrić 40 岁最后一届世界杯的领袖表现</b>（对巴拿马已显老态，但经验与组织无可替代）。基准剧本：<b>低开分、克逼攻、加纳防反博冷门或拖平</b>，过热指数 ≈ 2/5（共识偏克罗地亚但价格反映真实悬念，小球氛围明显）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">克罗地亚隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈44%</div></div>
+      <div class="key"><div class="k">加纳隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈24%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈28%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术（多源确认）</b>：克罗地亚 3 分（净 -1）· 加纳 4 分（净 0）· 英格兰 4 分（净 +4，头名几乎锁定）· 巴拿马 0 分出局。<b>加纳平局即晋级</b>——无需考虑另一场结果（净胜球 0 优于克罗地亚当前 -1，且两队同分时直接对话胜者居前，平局时看净胜球加纳仍占优）；<b>克罗地亚必须赢球</b>方锁定晋级，平局则需靠净胜球比算计进球细节，局面极度复杂。</li>
+      <li><b>加纳防守堡垒：两场零封</b>（0-0 英格兰 + 0-0 巴拿马）。对英格兰 19 射 1 射正防住，深坐 4-5-1 低位，Queiroz 称"一分钟起即封锁对方"。这是本届 L 组出人意料的最大统计亮点。</li>
+      <li><b>克罗地亚：被英格兰打穿（4-2），靠 Budimir 替补一击救巴拿马（1-0）</b>。两场 xG 合计 2.35（vs 英格兰 0.71，vs 巴拿马 1.66），进攻效率平庸；Modrić/Kovačić 高龄可见疲态。</li>
+      <li><b>Kudus 因伤整届缺席</b>（加纳最大创造力来源，伤缺已多源确认）——这是加纳进攻最大减配，进攻主要依赖 Iñaki Williams 速度冲刺 + Semenyo 边路 + Jordan Ayew 拖身后组织。</li>
+      <li><b>动机差是最大的战术入口</b>：克罗地亚必须压上 → 给加纳防反留空间；加纳平局即走 → 可以全力防守不冒险，反击时只需一个快攻即可。这个动机差实际上是为加纳而设的完美剧情。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 临场重大缺阵 · Mohammed Kudus 整届伤缺 <span style="color:var(--mut);font-weight:400">· ESPN / Graphic Online / ESPN Provisional Squad 多源一致 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源确认：<b>Mohammed Kudus 因伤（大腿/肌肉，全赛季西汉姆受困）整届世界杯缺席</b>，未入选最终 26 人名单</div>
+      <p style="font-size:13.5px">据 <b>ESPN 临时名单报道、Graphic Online（加纳本地媒体）</b>等多源一致：加纳灵魂球员、西汉姆联前锋 <b>Mohammed Kudus</b> 因大腿肌肉伤势、俱乐部赛季末已缺阵，加纳临时名单宣布时即已缺席，并未入选最终 26 人世界杯名单。中卫 <b>Mohammed Salisu</b> 同样因伤缺席整届。Iñaki Williams 状态已经过本届两场检验（两场均上场），Jordan Ayew 领队出场。<span style="color:var(--warn)">[其余球员具体健康状况 · 以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Kudus 是加纳最强的<b>创造与终结双面手</b>——在西汉姆的进球与助攻均列加纳队史顶级。没有他，加纳的进攻模式已被迫彻底转型为"防守优先 + Iñaki Williams 速度反击 + Semenyo 边路"，这直接解释了为何 Queiroz 选择 4-5-1 低坐防守、两场零封英格兰和巴拿马。克罗地亚防守可能没有英格兰那么严密，但进攻端的加纳创造力已大幅受限。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/espn/story/_/id/48878999/antoine-semenyo-thomas-partey-headline-ghana-provisional-fifa-world-cup-squad-injured-mohammed-kudus-out" style="color:var(--accent)">ESPN — Kudus 伤缺临时名单</a> · <a href="https://www.graphic.com.gh/sports/sports-news/kudus-and-salisu-miss-world-cup-through-injury-as-ghana-names-provisional-squad.html" style="color:var(--accent)">Graphic Online — Kudus & Salisu 缺席</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 克罗地亚核心球员状态核查 <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / RotoWire 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Modrić（40岁）颧骨骨折术后戴面罩出战；Kovačić 跟腱伤愈复出；Gvardiol 胫骨骨折术后归队；<b>预测首发均已上场两轮</b></div>
+      <p style="font-size:13.5px">克罗地亚核心球员术前状态：<b>Luka Modrić（40 岁）</b>在 AC 米兰赛季末遭遇颧骨骨折，手术后戴保护面罩复出，已先后出战英格兰与巴拿马，对巴拿马完成第 <b>200 顶帽子</b>大关。<b>Mateo Kovačić</b> 跟腱问题困扰其大半个赛季，但已复出，两场均首发。<b>Joško Gvardiol</b>（曼城，24岁）胫骨骨折术后归队，对英格兰、巴拿马均首发主力位置。<b>Ante Budimir</b>（34岁）对巴拿马以替补身份入场破门，是克罗地亚本届唯一进球者。ESPN 预测首发为 <b>3-4-2-1</b>——Livakovic；Sutalo、Vušković、Gvardiol；Stanišić、Pašalić、Modrić、Perišić；Baturina、Sučić；Musa（RotoWire 版本：Kramarić 替换 Sučić 位置）。<span style="color:var(--warn)">[官方首发名单 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Modrić/Kovačić 是克罗地亚组织与节奏的核心，两人年岁渐长但仍是主力；对巴拿马已见疲态（ESPN 评论"巴拿马的进攻也让他们跑得够呛"），加纳若能中场施压并快速转换，克罗地亚的中场年龄劣势会被放大。Gvardiol 是否能在后防稳定是克罗地亚保洁的关键——英格兰 4-2 一役证明其后防有被快速边路打穿的风险，Iñaki Williams 的速度正是对症之药。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups" style="color:var(--accent)">ESPN — 预测首发/团队消息</a> · <a href="https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773" style="color:var(--accent)">RotoWire — 预测首发/战术分析</a> · <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/team-news/croatia-vs-ghana-injury-suspension-list-predicted-xis--world-cup-2026_600079.html" style="color:var(--accent)">Sports Mole — 伤病/停赛名单</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">上一场带入 · 克罗地亚 1-0 胜巴拿马（MD2，2026-06-24）<span style="color:var(--mut);font-weight:400">· Opta Analyst / Al Jazeera / ESPN 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Budimir 替补第 54' 破门；克 xG 1.66（6 射），防守较稳；但巴拿马远比加纳弱</div>
+      <p style="font-size:13.5px">MD2 克罗地亚 1-0 胜巴拿马：全场克罗地亚 xG <b>1.66</b>（6 射），巴拿马 xG 0.62（8 射）。<b>Ante Budimir（34岁337天）替补第 9 分钟进球</b>，成为克罗地亚世界杯史上年龄最大进球者。Stanišić 右路下底传中，Budimir 近端点收割，进球质量不高但解决问题。上半场双方试探性居多，中场 Modrić/Kovačić 控球稳但缺乏突破；Modrić 对阵巴拿马时完成 200 帽里程碑。ESPN 评论克"临时东拼西凑一球就守住"。关键带入：<b>克罗地亚在非强压情况下的进攻效率仍平庸，Budimir 超龄替补救场模式是意外之喜而非常态</b>；正面对阵加纳的防守体系，此次挑战更大。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拿马已是 L 组最弱对手，克罗地亚仍只靠替补临门一脚。面对两场零封、防守质量显著更高的加纳，克罗地亚的进攻创造力是否能升级是核心疑问。Modrić 200 帽里程碑带来积极情绪但高龄疲态也同步显现。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 巴vs克数据</a> · <a href="https://www.aljazeera.com/sports/2026/6/24/budimir-gives-croatia-a-1-0-win-to-eliminate-panama-from-the-world-cup" style="color:var(--accent)">Al Jazeera — 比赛回顾</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">上一场带入 · 加纳 0-0 平英格兰（MD2，2026-06-23）<span style="color:var(--mut);font-weight:400">· Sky Sports / Al Jazeera / NBC 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">19 射 1 射正！英格兰全场无进球；Queiroz 4-5-1 令英格兰束手；Tuchel 称"最有组织的防守之一"</div>
+      <p style="font-size:13.5px">MD2 加纳 0-0 平英格兰：英格兰全场 <b>19 射 1 射正</b>，Kane 末段距离最近但仍未得手。加纳<b>明确坐低 4-5-1</b>，中场五人连线封锁英格兰的中路渗透；Queiroz 赛后表示"一分钟起就按计划封锁"；Tuchel 称"从未见过如此有纪律的防守之一"。加纳 <b>MD1 已 0-0 平巴拿马</b>——两场零封，这在本届 L 组是异数。关键带入：<b>加纳的防守系统性极强，不是侥幸，是计划与执行的高度统一</b>；能封锁英格兰，对克罗地亚的防守压力将更小（克进攻创造力弱于英格兰），加纳本场将复制此模板。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：加纳平局即出线的心态 + Queiroz 成熟防守体系，是当下最合理的市场解释：总分偏小球（Under -155）正反映分析师对加纳复制零封概率的定价。克罗地亚在英格兰一战后才意识到自身防守短板，若本场被加纳防成 0-0，克将出局。这个局面让克罗地亚承担所有的进攻压力。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/england-vs-ghana/report/549812" style="color:var(--accent)">Sky Sports — 英vs加赛报</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/23/england-vs-ghana-live-world-cup-2026" style="color:var(--accent)">Al Jazeera — 直播/回顾</a> · <a href="https://www.nbcnews.com/sports/soccer/england-ghana-draw-world-cup-results-rcna351484" style="color:var(--accent)">NBC News — 比赛报告</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家聚合 / 赔率变动 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"偏克罗地亚但小球氛围鲜明、加纳防反价值被认可"的场次——盘口定价反映了真实的出线情景与加纳防守体系的质量</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 偏克但小球共识强，加纳防守被市场尊重</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向偏克（Opta 超算 56.3%，盘口约 44%），但价格未被狂热推动——加纳仍有 +280～+450 的真实赔率。最大共识是 <b>Under 2.5（-155）</b>，市场认为加纳防守体系即便克逼攻也难轻易破防，小球概率显著。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏克，分歧在能否破门与比分幅度）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>克罗地亚 56.3% / 平 26.2% / 加纳 17.6%——克是热门，但平局概率不低</td></tr>
+      <tr><td>ESPN 分析</td><td>北美媒体</td><td>克罗地亚进攻"平庸"，Queiroz 防守体系令人印象深刻；此战克须大幅提升进攻质量</td></tr>
+      <tr><td>Racing Post</td><td>英系分析</td><td>偏克小胜；看好 Modrić 经验发挥关键；给出 5-1 Bet Builder 组合</td></tr>
+      <tr><td>FanDuel Research</td><td>北美博彩</td><td>克 -115 热门；Under 2.5 方向受追捧；加纳防守价值被认可</td></tr>
+      <tr><td>Covers / Sports Interaction</td><td>赔率分析</td><td>克胜但注意 Under，加纳防守是核心变量</td></tr>
+      <tr><td>Total Football Analysis</td><td>战术媒体</td><td>克罗地亚若能控中场则有机会，但需防范加纳反击</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：方向偏克但<b>不极端</b>，加纳仍有 +280～+450 的真实赔率，且 Under 2.5 是罕见的强共识方向（-155）。这不是单边被狂热推动的场次——平局/小分/加纳博冷门均有真实定价支撑，最大分歧是<b>克罗地亚能否突破 Queiroz 的防守壁垒</b>。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>克罗地亚胜 / 平 / 加纳胜</th><th>解读</th></tr>
+      <tr><td>开档（赛前，多家综合）</td><td>1X2</td><td class="ht">克 ≈2.00–2.10 / 平 ≈3.30–3.50 / 加 ≈3.50–4.50</td><td>克为热门但非大热，加纳在 +280～+450 区间被认可 <span style="color:var(--warn)">[精确初盘 · 待核]</span></td></tr>
+      <tr><td>MD2 结果后重定价</td><td>FanDuel / bet365 / 综合</td><td class="ht">克 -115（FD）～ -134（bet365）/ 平 +245 / 加 +280（FD）～+450（bet365）</td><td>加纳 0-0 平英格兰后防守声誉提升，市场对加纳给予更多尊重，平局赔率收窄</td></tr>
+      <tr><td>06-27 盘前</td><td>大/小球 + 让球</td><td colspan="2" class="ht">克 -0.75（约 -104）/ 加 +0.5（约 +110）；O/U 2.5 Under -155（强势偏小球）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前预期）</td><td class="sc">克罗地亚被定为出线热门（2018 亚军 + 欧洲强队资历），加纳为非洲黑马</td><td>初始定价基于两队资历与 FIFA 排名，克被视为更具大赛经验一方 <span style="color:var(--warn)">[精确初盘 · 待核]</span></td></tr>
+      <tr><td>MD1 后（克 4-2 负英格兰 · 加 0-0 平巴拿马）</td><td class="ht">克罗地亚被重新定价走低；加纳防守价值提升</td><td><b>克 MD1 防线被英格兰打穿（丢 4 球，xG 0.71 却失 4），信心重创</b>；加纳零封巴拿马，防守体系首获印证，盘口偏向保守（平局/小球价值上升）</td></tr>
+      <tr><td>MD2 后（克 1-0 巴拿马 · 加 0-0 英格兰）</td><td class="ht">克克复出线悬念；加纳防英格兰 19 射封堵引发市场重估</td><td><b>关键 repricing</b>：加纳能 0-0 封锁英格兰，市场对其防守体系的信任度大幅提升；加纳 +280 至 +450 的区间分化反映各书对加纳防守价值评估的差异；<b>Under 2.5 的 -155 是本场最强共识</b>，定价含义：市场认为加纳复制低分场面概率显著超越大球路径</td></tr>
+      <tr><td>现盘（赛前）</td><td class="ht">克 -0.75（约 -104）；Under 2.5 -155；加纳 +0.5 +110</td><td>让球深度仅 -0.75（非 -1），说明市场未给克罗地亚碾压式大胜的高概率；<b>平局仍有 +245 的价格</b>——出线动机与防守强度均支持低开分；加纳 +0.5 的亚盘价值（+110）正反映"平局/小负即晋级"的真实出线动机</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"克为热门、加纳被认可、小球为最强共识"的盘。加纳 0-0 平英格兰（19 射被封堵）是本场定价的最大信息来源——Under -155 正是市场对此的直接定价。让球仅 -0.75 而非 -1，说明市场认为单球胜利是最可能结果、大比分克胜概率受限。克如能先发制人、早进球将大幅改变格局；若被加纳逼成 0-0 进入最后 30 分钟，紧张程度将推高。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：方向与 Opta 超算一致（克 56.3% 胜）。平局概率 26.2% 偏高，加纳出线动机使市场高度重视平局路径。预测市场精确占比未检得 <span style="color:var(--warn)">[待核]</span>。</li>
+      <li><b>舆论焦点①</b>：<b>Modrić 40 岁最后一届世界杯</b>——对巴拿马完成 200 帽里程碑，媒体情感共鸣极强，但竞技状态已见年迈痕迹，克罗地亚对其需求与他的衰退速率之间的张力是全场贯穿叙事。</li>
+      <li><b>舆论焦点②</b>：<b>加纳能否创造奇迹晋级</b>（2010 世界杯八强后最好成绩）——Queiroz 防守战术的功过争议持续，但结果说话：两场零封进入出线边缘。</li>
+      <li><b>舆论焦点③</b>：<b>克罗地亚内容与结果的矛盾</b>——两战"一球之差走钢丝"，媒体普遍质疑其本届竞争力，此战是检验其是否真的滑落的时刻。</li>
+      <li><b>公众资金面</b>：定性判断偏克（大赛资历 + 欧洲强队心态），但加纳 Under 路径吸引对冲注意力；精确量化未检得 <span style="color:var(--warn)">[待核]</span>。</li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：过热指数 <b>2/5</b>。盘口最强信号是 Under 2.5（-155）+ 加纳 +0.5 被市场认可——这是对加纳防守系统 + 平局即出线动机的综合定价。克罗地亚偏向热门但克罗地亚的进攻内容尚未令人信服；先进球的一方将极大地主导剧本走向。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.fanduel.com/research/croatia-vs-ghana-prediction-picks-lineups-preview-and-best-bets-for-world-cup-2026">FanDuel Research — 赔率/前瞻</a> · <a href="https://www.covers.com/world-cup/croatia-vs-ghana-prediction-picks-odds-saturday-6-27-2026">Covers — 赔率分析</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/croatia-vs-ghana-betting-tips-predictions-team-news-odds-bet-builder-aw7vT9A0yCpJ/">Racing Post — Bet Builder</a> · <a href="https://theanalyst.com/articles/croatia-vs-ghana-prediction-world-cup-2026-match-preview">Opta Analyst — 超算前瞻</a></div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 本届 L 组前两轮）</b>与<b>本届世界杯实际值</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇭🇷 克罗地亚 · 进攻</td><td class="ht">2018 亚军、2022 季军；以中场为本（Modrić/Kovačić）、稳健传控、少依赖个人，2022 靠 Perišić + Livakovic 扳门将晋级；近年进攻效率非顶尖，依赖整体体系</td><td class="ht">两战 xG 合计约 2.35（vs 英 0.71 / vs 巴 1.66）；3 进球（4-2 负英各 2 球、1-0 胜巴 1 球）；Budimir 替补开账</td><td><b>进攻弱于历史预期</b>：vs 英格兰 0.71 xG 被大幅高估（对手更强），vs 巴拿马 1.66 实际进 1 球，效率平庸；阵容老化（Modrić/Perišić/Kovačić 均 30 岁+）创造力有限 <span style="color:var(--warn)">（场均 xGA 细分 · 待核）</span></td></tr>
+      <tr><td class="ht">🇭🇷 克罗地亚 · 防守</td><td class="ht">2018/2022 防守尚可（Lovren/Vida → Gvardiol/Sutalo 体系），2022 仅进 16 强后防守关键</td><td class="ht">两战丢 4 球（vs 英 4 丢、vs 巴 0 丢）；净胜球 -1；英格兰靠速度边路打穿</td><td><b>防守不稳定</b>：vs 英格兰被快速边路打穿（4 球），Gvardiol 术后状态值得关注；vs 巴拿马保洁但对手弱；加纳 Iñaki Williams 的速度是对症漏洞</td></tr>
+      <tr><td class="sc">🇬🇭 加纳 · 进攻</td><td class="sc">2010 四强（Gyan 领衔）；2022 1-3 负葡萄牙、0-3 负乌拉圭（小组出局）；历史进攻依赖个人天才（Kudus/A.Ayew/J.Ayew）而非体系</td><td class="sc">两战 0 进球（0-0 x 2）；Kudus 整届缺席；进攻几乎无创造，Iñaki Williams 速度是唯一爆点</td><td><b>进攻严重受限</b>：Kudus 缺席使进攻失去核心；Queiroz 战术以防守优先，进攻几乎是副产品。但反击威胁真实存在 <span style="color:var(--warn)">（场均 xG 加纳 · 待核）</span></td></tr>
+      <tr><td class="sc">🇬🇭 加纳 · 防守</td><td class="sc">2022 防守疏松（丢 7 球于 3 场），历史上仅 2 场世界杯零封（15 场前）；2010 系统性较强</td><td class="sc">本届两场零封（0-0 英格兰 + 0-0 巴拿马）；英格兰 19 射仅 1 射正，防守韧性超出历史均值</td><td><b>显著超出历史预期</b>：Queiroz 的 4-5-1 低位防守使本届防守质量飙升；两场零封在 L 组出人意料，定性为系统性提升而非侥幸。这是本场最大的数据亮点</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：克罗地亚进攻低于历史预期（老将疲态 + xG 低）、防守被英格兰打穿但可能因对手变弱而改善；加纳防守显著超历史（2022 丢 7 球 → 本届两场零封）、进攻严重受限（Kudus 缺席）。深度数据支持"小球/低开分"的主线——盘口 Under -155 是合理定价。来源：Opta Analyst（克 xG 合计 2.35 / 巴 xG 0.62）· ESPN（英格兰 19 射加纳 1 射正）· 多源比赛报告。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">克罗地亚 ≈1.2–1.6</td><td class="sc">加纳 ≈0.4–0.7</td><td>克进攻主动但效率存疑；加纳防守若复制英格兰场面，让克产生高质量机会的概率低 <span style="color:var(--warn)">（预测 xG · 待核，参考前述基准推算）</span></td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">克罗地亚 56.3% 胜 / 平 26.2% / 加纳 17.6%（Opta 超算，赛前公开）</td><td>克罗地亚整体实力占优但优势有限；加纳防守逆势强化是超算未必完全定价的"隐变量"</td></tr>
+      <tr><td>PPDA / xT / field tilt</td><td colspan="2" class="ht">国家队细分数据公开有限 <span style="color:var(--warn)">（待核）</span>——定性：克被迫攻、field tilt 高但质量未必高；加纳低坐、PPDA 不高但防守韧性强</td><td><b>陷阱提醒</b>：① 克罗地亚"控球 + 传切"的体系遇加纳低位密防时历史上有卡死先例（2018 + 2022 均遇到过防守型对手）；② Under 2.5 的 -155 说明市场相信低分概率，克破门难度高；③ 加纳 +0.5 亚盘意味着市场认为平局/单球负均有价值；④ 克若焦躁冒进，后防空间被 Iñaki Williams 速度利用的风险上升</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。克本届 2.35 总量（偏低），加纳 <span style="color:var(--warn)">待核</span>。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。加纳本届承受的进攻xG <span style="color:var(--warn)">待核</span>，但英格兰 19 射仅 1 射正是最直观代理。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。克负英格兰时差值为灾难级，加纳两场貌似防强攻弱。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——克在巴拿马场 xG 1.66 仅 6 射，机会质量一般；加纳几乎未制造大机会但防守断链反击仍可触发。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。加纳坐低防守，PPDA 高（允许克传球），但组织防线韧性是其真正优势。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。克被迫攻时 tilt 将高但不代表能形成有效威胁——质量而非量是关键。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 裁判 ===== -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已多源确认</b>：本场主裁为加拿大籍 <b>Drew Thomas Fischer</b>（德鲁·菲舍尔），多源一致（ESPN 官方前瞻 + karlobag.eu 克罗地亚媒体专报）。这是 Fischer 在本届世界杯的第二场执法任务（此前执法法国 vs 伊拉克，据报出示 12 张黄牌）。<span style="color:var(--warn)">[完整裁判组（边裁 Lyes Arfa / Micheal Barwegen）+ VAR 组合 · 多源已提及，完整细节待核]</span></div>
+
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>背景画像</b>：Drew Fischer 来自加拿大，在 MLS 执法已逾 14 年，2015 年起获 FIFA 国际级认证，本届世界杯是其首次以主裁身份出战大赛（此前曾以 VAR 身份参与 2022 世界杯）。据 statshub 统计，职业生涯场均约 <b>3.34 张黄牌</b>。</li>
+      <li><b>本届实际样本</b>：Fischer 执法法国 vs 伊拉克一场，据报出示 12 张黄牌（包含伊拉克第 13 分钟红牌）——属较严厉场次，但与伊拉克退场强相关，非 Fischer 自身固定尺度的代表。单场大赛样本过少，不作稳定可操作推断。<span style="color:var(--warn)">[本届世界杯 Fischer 详细出牌/判点分项 · 待核，大赛样本有限，不编数值]</span></li>
+      <li><b>与两队的执法史</b>：未检得 Fischer 与克罗地亚、加纳的显著先前执法记录（<b>无可靠样本即如实说明</b>）。</li>
+      <li><b>本场执法焦点</b>：加纳低位密防时的身体对抗（克罗地亚中前场推进必然制造身体接触）；克前锋 Budimir/Musa 在禁区内的拉扯与落地；Iñaki Williams 的高速反击中对位克防线的对抗。本届统一新规（仅队长可沟通、门将 8 秒、半自动越位）对克的意义：半自动越位将精准捕捉 Budimir/Musa 的临界越位冲刺。</li>
+      <li><b>两面性</b>：克罗地亚必须频繁进攻 → 更多禁区内对抗与落地，点球机率上升；加纳坐低防守时的拉扯 → 黄牌风险集中在中场。牌数/点球盘宜以倾向看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Fischer 本届大赛样本极少（仅 1 场正式记录），定性分析为主。本场因克需进攻、加纳需对抗，肢体接触会增多，牌数偏多可能。但对胜负面的主要裁判影响有限——克罗地亚若进球，VAR 越位线复查是关键观察点。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://karlobag.eu/en/sports/drew-fischer-to-referee-croatia-vs-ghana-in-philadelphia-as-group-l-world-cup-cl-9kjkb/" style="color:var(--accent)">Karlobag.eu — Fischer 执法指派</a> · <a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups" style="color:var(--accent)">ESPN — 裁判确认</a> · <a href="https://www.statshub.com/referee/drew-fischer/316122" style="color:var(--accent)">Statshub — Fischer 职业统计</a></div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· L组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>L 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇭🇷 克罗地亚</th><th>🇬🇭 加纳</th></tr>
+      <tr><td>前两轮战绩</td><td class="ht">4-2 负英格兰 + 1-0 胜巴拿马（3 分，净 -1，进 3 丢 4）</td><td class="sc">0-0 平巴拿马 + 0-0 平英格兰（4 分，净 0，进 0 丢 0）</td></tr>
+      <tr><td>L 组积分（末轮前）</td><td colspan="2">英格兰 4（净 +4）暂列头名；加纳 4（净 0）次席；克罗地亚 3（净 -1）三席；巴拿马 0 已出局</td></tr>
+      <tr><td>本场出线情景</td><td class="ht"><b>须取胜</b>方锁定晋级；平局需复杂净胜球计算，风险高</td><td class="sc"><b>平局即晋级</b>（净胜球 0 优于克；即便输一球仍有机会，取决于进球细节）</td></tr>
+      <tr><td>主教练</td><td class="ht">Zlatko Dalić（2018 亚军、2022 季军缔造者）</td><td class="sc">Carlos Queiroz（FIFA 经验丰富，防守大师，前伊朗/葡萄牙/埃及主帅）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Modrić（40岁/队长）、Kovačić、Gvardiol、Perišić、Budimir/Musa</td><td class="sc">Jordan Ayew（队长）、Iñaki Williams、Antoine Semenyo、Thomas Partey；<b>Kudus 整届缺席</b></td></tr>
+      <tr><td>关键伤情</td><td class="ht">无官方伤缺上报（Modrić 面罩、Gvardiol 术后均已复出出战两轮）</td><td class="sc"><b>Kudus 整届伤缺（已确认）</b>；Salisu 伤缺整届；其余已出战两场</td></tr>
+      <tr><td>本届 xG（两场合计）</td><td class="ht">约 2.35（vs 英 0.71 + vs 巴 1.66）</td><td class="sc"><span style="color:var(--warn)">待核（加纳进攻 xG 极低，两场 0 进球）</span></td></tr>
+      <tr><td>1X2 赔率（DECIMAL 近似）</td><td class="ht">克胜 ≈2.00–2.10（-115 至 -134）</td><td class="sc">加胜 ≈3.50–4.50（+280～+450）· 平 ≈3.30–3.50（+245）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="ht">克 -0.75（约 -104）/ 加 +0.5（约 +110）；O/U 2.5 <b>Under -155</b>（强势偏小球）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（参考 FanDuel/bet365 综合，克 ≈44% / 平 ≈28% / 加 ≈24%，以各书综合去水后估算），与 Opta 超算（克 56.3% / 平 26.2% / 加 17.6%）方向一致偏克。最强市场共识是 <b>Under 2.5（-155）</b>，定价含义是加纳防守体系 + 低开分环境的市场认可。让球仅 -0.75（非 -1），反映克未获碾压式大胜的高概率，1 球胜是最可能的克胜路径。盘口来源：FanDuel（克 -115 / 平 +245 / 加 +280）、bet365（克 -134 / 平 +230 / 加 +450）、Asian Handicap（克 -0.75 约 -104 / 加 +0.5 约 +110）。以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发预测 ===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 &amp; 近期表现 <span style="font-size:11.5px;background:#1d2a4a;color:#7fb3ec;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 非官方 · 以赛前 FIFA Match Centre 为准</span></h2>
+    <div class="sub">预测首发（ESPN / RotoWire / Sports Mole 综合，多源对照，非官方；以赛前 FIFA Match Centre 官方名单为准 · 待核）</div>
+
+    <h4>🇭🇷 克罗地亚 预测首发（3-4-2-1）· Dalić · ESPN 版本</h4>
+    <div class="lineup">Livakovic; Sutalo · Vušković · Gvardiol; Stanišić · Pašalić · Modrić · Perišić; Baturina · Sučić; Musa</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:4px">注：RotoWire 版本将 Kramarić 替换 Sučić，Kovačić 替换 Pašalić，阵型或为 4-3-3；各源差异在右侧两名攻击中场人选上。<span style="color:var(--warn)">[官方首发 · 待核]</span></div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Luka Modrić（C）</td><td>深度组织 / AC米兰</td><td>40 岁，对巴拿马完成 200 帽里程碑；颧骨骨折术后戴面罩出战；组织核心但高龄疲态可见；本届最后一届世界杯的情感叙事主线</td></tr>
+      <tr><td class="ht">Joško Gvardiol</td><td>左中卫/左后卫 / 曼城</td><td>24 岁，胫骨骨折术后归队；已出战两场；最具潜力的克防守核心，英格兰一战被边路打穿是警示</td></tr>
+      <tr><td class="ht">Mateo Kovačić</td><td>中场 / 曼城</td><td>跟腱伤愈归队，高龄与 Modrić 相近；中场覆盖与传控是克的心脏，但对抗加纳中场压力时体能是疑问 <span style="color:var(--warn)">[首发名单版本各源略有差异 · 待核]</span></td></tr>
+      <tr><td class="ht">Ante Budimir</td><td>前锋 / 奥萨苏纳</td><td>34 岁，对巴拿马替补破门（年龄最大克罗地亚世界杯进球者）；若首发则是标准高点支撑中锋；与 Musa 竞争首发位置</td></tr>
+      <tr><td class="ht">Ivan Perišić</td><td>边翼 / 哈伊杜克</td><td>36 岁老将，边路拉出空间并为 Musa/Budimir 喂球；近年联赛水平已降，世界杯仍具经验价值</td></tr>
+    </table>
+
+    <h4>🇬🇭 加纳 预测首发（4-5-1 / 4-3-3）· Queiroz · 两场零封模板</h4>
+    <div class="lineup">B.Asare; Mensah · Opoku · Adjetey · Senaya; Semenyo · Sibo · Partey · Yirenkyi · I.Williams; J.Ayew(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Jordan Ayew（C）</td><td>中锋/队长 / 水晶宫</td><td>两场 0 进球但防守工作出色（Tuchel 特别提及其压迫贡献）；更多是体系球员而非终结者；缺乏进球的批评声音大但 Queiroz 坚持</td></tr>
+      <tr><td class="sc">Iñaki Williams</td><td>右翼 / 毕尔巴鄂</td><td>加纳进攻第一爆点；高速边路冲刺是反击利器，曾在西甲打出顶级数据；Kudus 缺席后唯一可以单刀破门的球员；能否在克防线漏洞处爆发是加纳最大进攻希望 <span style="color:var(--warn)">[本届具体状态 · 待核]</span></td></tr>
+      <tr><td class="sc">Antoine Semenyo</td><td>左翼 / 伯恩茅斯</td><td>英超速度型边锋；与 Williams 两翼夹击是加纳进攻反击的主要路径；两场 0 进球但本届冲刺次数偏高</td></tr>
+      <tr><td class="sc">Thomas Partey</td><td>后腰 / 阿森纳</td><td>中场锚点；组织与破坏兼备；是加纳中场覆盖与转换启动的枢纽，也是阻截克中场的核心武器</td></tr>
+      <tr><td class="sc">Benjamin Asare</td><td>门将</td><td>两场零封；对英格兰 19 射无失球，展示了极高水准，是加纳防守体系的最后守门人 <span style="color:var(--warn)">[首发状态 · 待核]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（ESPN / RotoWire / Sports Mole 综合），各源略有差异（克罗地亚右侧攻中 Sučić vs Kramarić，阵型 3-4-2-1 vs 4-3-3；加纳中场人选及宽度配置）。<b>以赛前官方名单为准 · 待核</b>。关键变量：克罗地亚 Budimir 能否首发（上轮替补救主，本场需更多中锋支撑）；加纳的整体阵型宽度能否为 Williams/Semenyo 提供更多进攻资源（Queiroz 平局即出线可能微调）。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 &amp; 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 本大洲赛事 / 克 2018+2022 / 加纳 2022+本届）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇭🇷 克罗地亚 · Zlatko Dalić</div>
+        <div class="role">3-4-2-1 / 4-3-3 · Modrić 中场控节奏 + 边路推进 + 中锋高点</div>
+        <ul class="cl">
+          <li>Dalić 带领克罗地亚 2018 <b>打进决赛</b>、2022 <b>获得季军</b>，建立在"中场控制（Modrić/Kovačić/Brozović 体系）+ 坚韧防守 + 标准中锋终结"的体系上。2022 克罗地亚以少进球（平均 1 球/场出局）+ 点球绝技走到季军，体系稳健但进攻爆发力有限。</li>
+          <li>交叉参照：2018/2022 克罗地亚均曾遭遇防守严密对手时"低效推进"的困境（如 2022 决赛被阿根廷打穿体现体系上限），而随着 Modrić/Perišić/Kovačić 的老化，<b>这届克罗地亚的进攻爆发力是近几届最低点</b>——两场 xG 2.35 印证了这一点。</li>
+          <li>本场切入口：克必须主动进攻、不能消极等待。通常战术是 Modrić 深位组织 → 左右翼（Perišić/Baturina）拉宽 → Musa/Budimir 高点终结 + 边路下底传中。面对加纳 4-5-1 密防，需要边路扯动中路、并利用 Partey 等人对位拉开空间。克的执行能力与防守反被 Williams 打穿的风险并存。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇬🇭 加纳 · Carlos Queiroz</div>
+        <div class="role">4-5-1 / 4-3-3 · 低位密防 + 快速反击 + Williams 速度爆破</div>
+        <ul class="cl">
+          <li>Queiroz 是顶级防守大师（葡萄牙助教/伊朗主帅时均以防守著称），此届加纳的 4-5-1 体系是他最典型的战术签名：<b>中场五人连线封锁对手中路，压迫攻方在边路形成传中，然后靠身体对抗赢得二落点，再利用 Williams/Semenyo 的速度发动快速反击</b>。两场零封（英格兰 19 射、巴拿马同样无进球）是体系成功的有力证明。</li>
+          <li>交叉参照：2022 加纳防守崩溃（2-3 负葡萄牙、0-3 负乌拉圭）是 Queiroz 本届所要修复的体系缺陷。他明显改变了人员选择（防守型中场优先、Jordan Ayew 做前锋中的防守闸门而非纯终结者），这是加纳从弱到强防守转型的核心原因——<b>本届防守飞跃是刻意为之，不是侥幸</b>。</li>
+          <li>本场应对：平局即出线 → 加纳几乎不需要主动进攻，完全可以复制对英格兰的低坐模板。唯一风险是若克罗地亚率先进球，加纳才需要被动寻求进球。<b>Iñaki Williams 的速度冲刺是加纳在防守主导模式下偶尔釋放的核武器</b>，克防线的身后空间若被他抓住，加纳将获得决定性机会。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst（超算）<small>· 克 56.3% / 平 26.2% / 加 17.6%</small></div>克罗地亚是胜率热门，但平局概率高达 26.2% 是本场核心数据点——超算认为平局是最常见的第二结果，与加纳的出线动机（平即走）高度一致。克历史上只输过 1 场小组赛（正是 4-2 负英格兰），但加纳防守已两场零封，这场数值对决极具悬念。</div>
+    <div class="insight"><div class="who">ESPN 分析 <small>· Sunaadh Sagar</small></div>克罗地亚"临时东拼西凑"的进攻方式令人担忧，Modrić 和 Kovačić 老态尽显。Queiroz 的加纳防守堪称"奇迹之作"——在如此艰难的小组（英格兰）中守住零封。ESPN 指出若加纳复制对英防守表现，克罗地亚将难以突破；但克防线同样存在被速度打穿的风险（Iñaki Williams 是最大威胁）。</div>
+    <div class="insight"><div class="who">Racing Post / Covers <small>· 综合赔率分析</small></div>偏克小胜（单球）；强调 Under 2.5 的价值（-155 是强共识）——加纳防守系统与克进攻无力的组合，使低分大概率成为市场共识。加纳 +0.5 亚盘的 +110 被多家提及，认为其有价值（平局即出线的出线动机支撑防守意志）。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源整合</small></div>⚠ 陷阱提醒：① 加纳两场零封英格兰（19 射 1 射正）不是侥幸，是系统性防守——克的进攻内容不如英格兰，破防难度更高；② 克罗地亚"必须赢"的动机是双刃剑：推高进攻压力但也暴露身后防守空间给 Williams；③ Under 2.5 的 -155 是强共识，但若克率先进球、加纳被迫反击，局势会骤然打开；④ 注意 Modrić 40 岁年龄与情感叙事对公众盘的影响——克的公众投注可能高于其真实胜率，存在克被过度定价的可能。</div>
+  </section>
+
+  <!-- ===== 综合研判 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 &amp; 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：低分场面是基准剧本，克 1-0 胜是最可能结果（若克能破门），加纳 0-0 平局同样概率不低（Queiroz 防守体系+平局即出线动机）。克进攻内容（xG 2.35 两战）远弱于英格兰（xG 2.8 单场），面对同一加纳防守，克破防难度更高。加纳的全部希望在于拖平或靠 Iñaki Williams 反击一击。</li>
+      <li><b>关键先生</b>：克方——Modrić（组织节奏，情感主线）、Iñaki Williams（加纳最大进攻威胁，克方最大防守隐患）、Gvardiol（防守是否稳定，英格兰一战已见漏洞）；加纳方——Partey（中场锚点阻截克推进）、Benjamin Asare（门将，两场零封的最后防线）；Jordan Ayew（队长，防守闸门但无进球压力）。</li>
+      <li><b>胜负手</b>：① 克罗地亚能否在加纳密防体系中创造高质量机会（历史上 2.35 xG 两战数据不支持乐观）；② 加纳能否再次把克逼攻限制在低质量射门中（对英格兰 19 射仅 1 射正，标准更高）；③ Iñaki Williams 的速度能否在克后防身后空间复制冲刺进球；④ 先进球的一方将极大主导剧本——先进的克罗地亚扑分保出线、先进的加纳则锁出线并守优势。</li>
+      <li><b>市场视角</b>：偏克但价格反映真实悬念（2/5 过热）；最强共识是 Under 2.5（-155）。加纳 +0.5 亚盘（+110）是"平局价值"的最直接定价。Opta 超算 56.3%/26.2%/17.6% 与盘口方向一致。克不是大热，加纳防守被市场尊重。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：
+      ① <b>双方官方首发</b>（赛前约 1 小时 FIFA Match Centre）——克右侧攻中 Sučić vs Kramarić，Kovačić 是否首发，Budimir vs Musa 先发之争；加纳阵型宽度微调 <span style="color:var(--warn)">[待核]</span>；
+      ② <b>出线情景精确算术</b>——加纳若输，是否仍能以净胜球超过克罗地亚晋级（需看进球数）；英格兰 vs 巴拿马的结果若出现意外对 L 组格局的影响 <span style="color:var(--warn)">[待核，以 FIFA 官方为准]</span>；
+      ③ <b>Drew Fischer 本届完整裁判组 + VAR 名单细节</b>、其本届及大赛场均出牌细分（样本极少）<span style="color:var(--warn)">[待核]</span>；
+      ④ <b>加纳本届 xG 进攻细分数据</b>（两场 0 进球，公开 xG 样本有限）<span style="color:var(--warn)">[待核]</span>；
+      ⑤ <b>Iñaki Williams 本届具体状态</b>（两场均出场，但是否全场及创造次数未详细检得）<span style="color:var(--warn)">[待核]</span>；
+      ⑥ 精确初盘数值以赛前实时盘口为准；预测市场占比/公众投注%未检得 <span style="color:var(--warn)">[待核]</span>。
+    </div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups">ESPN — 克vs加官方前瞻（裁判/场地/预测首发/谈判点）</a> · <a href="https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773">RotoWire — 预测首发/战术分析</a> · <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/team-news/croatia-vs-ghana-injury-suspension-list-predicted-xis--world-cup-2026_600079.html">Sports Mole — 伤病/停赛/预测首发</a><br>
+      • <a href="https://theanalyst.com/articles/croatia-vs-ghana-prediction-world-cup-2026-match-preview">Opta Analyst — 超算 56.3/26.2/17.6 + 前瞻</a> · <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst — 巴vs克数据（xG 1.66）</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L">Wikipedia — L组积分/规则</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543108/world-cup-2026-group-l-guide-fixtures-schedule-standings-and-odds-for-england-croatia-ghana-and-panama">Sky Sports — L组指南/形势</a> · <a href="https://www.skysports.com/football/england-vs-ghana/report/549812">Sky Sports — 英格兰 0-0 加纳赛报</a> · <a href="https://www.nbcnews.com/sports/soccer/england-ghana-draw-world-cup-results-rcna351484">NBC News — 英加平局报告</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/24/budimir-gives-croatia-a-1-0-win-to-eliminate-panama-from-the-world-cup">Al Jazeera — 克罗地亚 1-0 巴拿马</a> · <a href="https://www.espn.com/soccer/story/_/id/49157167/panama-croatia-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — 克vs巴即时</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/23/england-vs-ghana-live-world-cup-2026">Al Jazeera — 英vs加直播/回顾</a><br>
+      • <a href="https://www.fanduel.com/research/croatia-vs-ghana-prediction-picks-lineups-preview-and-best-bets-for-world-cup-2026">FanDuel Research — 赔率/前瞻</a> · <a href="https://www.covers.com/world-cup/croatia-vs-ghana-prediction-picks-odds-saturday-6-27-2026">Covers — 赔率分析</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/croatia-vs-ghana-betting-tips-predictions-team-news-odds-bet-builder-aw7vT9A0yCpJ/">Racing Post — Bet Builder/赔率</a><br>
+      • <a href="https://www.espn.com/espn/story/_/id/48878999/antoine-semenyo-thomas-partey-headline-ghana-provisional-fifa-world-pdf-squad-injured-mohammed-kudus-out">ESPN — Kudus 伤缺临时名单</a> · <a href="https://www.graphic.com.gh/sports/sports-news/kudus-and-salisu-miss-world-cup-through-injury-as-ghana-names-provisional-squad.html">Graphic Online — Kudus & Salisu 缺席</a><br>
+      • <a href="https://karlobag.eu/en/sports/drew-fischer-to-referee-croatia-vs-ghana-in-philadelphia-as-group-l-world-cup-cl-9kjkb/">Karlobag.eu — Fischer 执法指派（克方媒体）</a> · <a href="https://www.statshub.com/referee/drew-fischer/316122">Statshub — Fischer 职业统计（场均 3.34 张黄牌）</a><br>
+      • <a href="https://xgscore.io/world-cup/england-croatia/xg-statistics">xGscore — 英 4-2 克 xG 统计（英 2.8 / 克 0.71）</a> · <a href="https://theanalyst.com/articles/england-vs-croatia-stats-world-cup-2026">Opta Analyst — 英vs克数据回顾</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-27 赛前 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['克罗地亚胜','平局','加纳胜'],datasets:[{data:[44,28,24],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水，综合盘口）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[36,64],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'隐含概率 %（去水，Under -155 强势）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['英格兰','加纳','克罗地亚','巴拿马'],datasets:[{data:[4,4,3,0],backgroundColor:[SC,SC,HT,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'积分（末轮前 · 英净+4/加净0/克净-1）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻创造','中场控制','边路速度','个人上限','大赛经验'],
+  datasets:[
+   {label:'克罗地亚',data:[6,5.5,7.5,6,7,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'加纳',data:[8.5,4,5.5,7,6.5,4.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

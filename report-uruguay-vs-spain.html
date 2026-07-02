@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 乌拉圭 vs 西班牙 · 2026世界杯 H组末轮（西班牙平局即夺头名 · 乌拉圭须取胜出线）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-uruguay-vs-spain.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-uruguay-vs-spain.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-uruguay-vs-spain.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-uruguay-vs-spain.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-uruguay-vs-spain.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-uruguay-vs-spain.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-uruguay-vs-spain.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-uruguay-vs-spain.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · H组末轮 · 西班牙平局即夺头名 vs 乌拉圭须取胜出线</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 西班牙 1-0 乌拉圭</span>
+  <h1>乌拉圭 vs 西班牙</h1>
+  <div class="meta">2026年6月26日 · 墨西哥 瓜达拉哈拉 Estadio Akron（Guadalajara Stadium）· 约18:00本地 / 20:00 ET · H组末轮（同时进行：佛得角 vs 沙特阿拉伯 @ 休斯顿 NRG Stadium）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇺🇾 乌拉圭</div><div class="rk">1-1 沙特 + 2-2 佛得角 · 2 分（净 0、3-3）· 须取胜方稳出线、平局只剩第三名渺茫尾部 · 缺 Araújo / De Arrascaeta（双伤）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇪🇸 西班牙</div><div class="rk">0-0 佛得角 + 4-0 沙特 · 4 分（净 +4，零失球）· 平局即锁头名（除非佛得角净胜沙特 5+）· Pedri 累计黄牌停赛</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 西班牙 1-0 乌拉圭（半场 1-0）· 06-26</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">瓜达拉哈拉 Estadio Akron：西班牙以一记上半场进球带走三分、<b>以全胜不败 + 零失球之姿锁定 H 组头名</b>，同时把两届冠军乌拉圭送出局。<b>Álex Baena 第 42 分钟</b>在禁区弧顶的一次流畅配合后低射钻入死角、骗过 Muslera——这也是全场唯一进球。乌拉圭主帅 Bielsa 半场即用 <b>Rochet 换下门将 Muslera</b>（自 1970 年世界杯引入换人以来，乌拉圭首次在世界杯中场换门将），但下半场仍难以撼动西班牙的防线。<b>Ferran Torres 第 86 分钟</b>过掉 Olivera 后的射门击中横梁、差点扩大比分；补时阶段 <b>Canobbio 因蹬踏 Cubarsí 直接红牌</b>，乌拉圭以 10 人收场。结合同时进行的佛得角 0-0 沙特，<b>西班牙头名、佛得角凭积分列次席晋级，乌拉圭与沙特出局</b>——乌拉圭连续两届世界杯小组出局。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 42' Baena（西 · 禁区弧顶低射）｜HT 乌拉圭换门将 Muslera→Rochet｜86' Ferran Torres 中梁｜90+ Canobbio 直红（乌 · 10 人）· 半场 1-0</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / FIFA）</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇸 西班牙</th><th>🇺🇾 乌拉圭</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>0.86</b>（6 射）</td><td>0.20（5 射）</td><td>两队 xG 都不高，但西班牙机会质量明显占优；乌拉圭 0.20 说明其"必须取胜"却几乎造不出像样威胁——锋无力是出局主因</td></tr>
+      <tr><td class="ht">控球</td><td><b>57%</b></td><td>33%</td><td>（另约 11% 争夺中）西班牙照常控球主导，乌拉圭须压上却未能把球权转成威胁</td></tr>
+      <tr><td class="ht">射门</td><td>6</td><td>5</td><td>低射门量的闷局，符合赛前"偏小球、BTTS-No"的判读</td></tr>
+      <tr><td class="ht">关键里程碑</td><td colspan="2"><b>西班牙队史首次世界杯小组赛零封收官；自 2010 年以来首次单届小组赛至少 2 胜</b></td><td>防线整届零失球，是其夺冠级别成色的硬指标</td></tr>
+      <tr><td class="ht">红牌</td><td colspan="2"><b>90+ Canobbio（乌）直红——蹬踏 Cubarsí</b></td><td>已出局的乌拉圭情绪失控，也将影响其公平竞赛分排名</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/uruguay-vs-spain-stats-fifa-world-cup-2026">Opta Analyst — Uruguay 0-1 Spain Stats（xG 0.86 vs 0.20 · 控球 57/33）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021484">FIFA Match Centre — Result & Stats</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-uruguay-vs-spain-jun-26-2026-game-boxscore-647678">FOX Sports — Box Score</a>。<span style="color:var(--warn)">[射正、角球、禁区触球分项未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"动机差"如赛前所判：求胜的乌拉圭反而喂给从容的西班牙</div>乌拉圭必须取胜、被迫压上，却把空间留给了已锁定出线、心态从容的西班牙。<b>西班牙不必冒进，靠控球消耗 + 一次高质量阵地配合（Baena 42'）解决战斗</b>——这正是赛前"求胜烈度全压乌拉圭一侧、喂给西班牙防反与控球消耗"的剧本兑现。</div>
+    <div class="insight"><div class="who">Pedri 停赛未动摇西班牙——中场重组经受住考验</div>赛前最大疑问是 Pedri 累计黄牌停赛后的中场重组。结果<b>西班牙仍控球 57%、零失球、把乌拉圭压到 0.20 xG</b>，说明 De la Fuente 的中场板凳深度足以吸收单核缺阵——这对淘汰赛是正向信号。</div>
+    <div class="insight"><div class="who">乌拉圭双伤减员 + 锋无力，是出局的结构主因</div>缺 Araújo（后防）与 De Arrascaeta（创造）后，乌拉圭全场仅 0.20 xG、5 射。<b>Núñez/Valverde 未能打穿西班牙的零失球防线</b>——赛前点名的"能否打穿"问号给出否定答案，机会创造的枯竭让其连续两届小组出局。</div>
+    <div class="insight"><div class="who">西班牙整届零失球——后防硬度是真正的夺冠成色</div>三场不丢球收官、队史首次。<b>说明这支西班牙不只是控球漂亮，防守端同样扎实</b>，是淘汰赛深跑的根基；但进攻端单届进球效率（本场仅 0.86 xG）偏低，遇强队阵地解题仍需观察。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">西班牙控制取胜或闷平夺头名（基准剧本）</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>西班牙 1-0 控制性取胜、夺头名，正是基准剧本</td></tr>
+      <tr><td class="ht">求胜烈度压乌拉圭、喂给西班牙防反/消耗</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>乌拉圭压上无果（0.20 xG），西班牙一次阵地配合制胜</td></tr>
+      <tr><td class="ht">Pedri 停赛后西班牙中场能否撑住</td><td style="color:var(--good)"><b>✓ 撑住</b></td><td>仍控球 57%、零失球，中场重组经受考验</td></tr>
+      <tr><td class="ht">大/小 2.5 球（偏小、BTTS-No）</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>全场仅 1 球、乌拉圭零进球，小球 + BTTS-No 双中</td></tr>
+      <tr><td class="ht">Núñez/Valverde 能否打穿西班牙防线</td><td style="color:var(--good)"><b>✓ 否定如判</b></td><td>未能破门，西班牙保持零失球</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fb3ec">🇪🇸 西班牙 · H 组头名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>以全胜不败 + 零失球夺 H 组头名晋级 32 强</b>，下一场作为头名对阵相应小组对手（待 FIFA 对阵表确定）。</li>
+          <li><b>后防硬度是带入资本</b>：整届零失球，淘汰赛防守基本盘稳固——对手须靠定位球或转换偷袭。</li>
+          <li><b>进攻效率待提升（核心带入）</b>：本场仅 0.86 xG，Pedri 复出后中场创造力回归是看点；遇强队阵地解题能力仍需验证。</li>
+          <li><b>Pedri 停赛结束、可回归</b>；Cubarsí 被蹬踏后的状态、Baena 的状态是淘汰赛奇兵 <span style="color:var(--warn)">[首发与轮换 · 待核]</span>。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8788a">🇺🇾 乌拉圭 · 小组出局</h4>
+        <ul class="watch">
+          <li><b>连续两届世界杯小组阶段出局</b>，Bielsa 治下的进攻产出（本场 0.20 xG）成为复盘焦点。</li>
+          <li><b>双核缺阵暴露阵容厚度问题</b>：Araújo + De Arrascaeta 缺席后，球队既缺后防领袖也缺创造力。</li>
+          <li><b>Canobbio 红牌 + 中场换门将</b>：临场情绪与决策（首次世界杯中场换门将）将是赛后争议点。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 H 组末轮的<b>两届世界杯冠军之争</b>（也是本届小组赛唯一的"前冠军对决"），且与<b>佛得角-沙特同时进行</b>。西班牙 4 分（0-0 平佛得角 + 4-0 屠沙特、净胜球 +4、两战零失球）<b>一场平局即可锁定小组头名</b>（理论上仅"佛得角同场净胜沙特 5 球或以上"才可能凭净胜球反超，几率极低），取胜则彻底无悬念；乌拉圭 2 分（1-1 沙特 + 2-2 佛得角、净胜球 0）<b>必须取胜才能稳出线</b>（取胜并满足佛得角不胜沙特即可夺头名），<b>平局只剩第三名靠净胜球比较的渺茫尾部</b>。这把"必须求胜的烈度"完全压在乌拉圭一侧——它得主动压上，而这正喂给已锁定出线、心态从容的西班牙打防反与控球消耗。盘口与超算把西班牙定为大热门：西班牙胜约 <b>1.50–1.57</b>、平 <b>3.40–4.40</b>、乌拉圭胜 <b>5.50–7.52</b>（Opta 超算 62.2% / 22.1% / 15.8%、Sofascore 58/24/18）；让球线为西班牙让 <b>-1 / -1.5</b>，总分线 O/U <b>2.5</b> 近乎平水（略偏小球，BTTS 偏 No）。最大不确定因素是<b>双方核心缺阵</b>：西班牙中场枢纽 <b>Pedri 因两轮累计黄牌停赛</b>（多源确认），De la Fuente 须改造中场；乌拉圭则<b>双伤减员——后防中坚 Ronald Araújo（小腿）与攻击型中场 De Arrascaeta（小腿）双双缺阵</b>（多源确认），Bielsa 可能祭出 Darwin Núñez 顶 9 号位赌一把。三处看点：① <b>乌拉圭须取胜 vs 西班牙零失球+防反陷阱</b>（动机差）；② <b>Pedri 停赛后西班牙中场如何重组</b>（Rodri 单后腰是否够稳）；③ <b>Núñez/Valverde 能否打穿西班牙零失球防线</b>。基准剧本：<b>有球、西班牙控制取胜或闷平夺头名</b>，过热指数 ≈ 3/5（共识偏强、单边压向西班牙，信息集中在让球深度与小球/BTTS）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">乌拉圭隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈16%</div></div>
+      <div class="key"><div class="k">西班牙隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈62%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈22%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称</b>：西班牙 4 分、净 +4、两战零失球，<b>平局即锁头名</b>（仅佛得角同场净胜沙特 5+ 这一极端情形会凭净胜球反超）、胜则彻底无忧；乌拉圭 2 分、净 0，<b>必须取胜</b>才能稳进前二（胜 + 佛得角不胜沙特可夺头名），<b>平局只剩第三名靠净胜球比较的渺茫尾部</b>。求胜压力倒向乌拉圭——它得压上，而这正喂给西班牙的控球消耗与防反。</li>
+      <li><b>西班牙 Pedri 累计黄牌停赛（多源确认）</b>：据 Al Jazeera 等报道，巴萨中场 <b>Pedri 在前两轮各领一黄、累计停赛本场</b>，De la Fuente 必须改造中场——可能 Rodri 单后腰 + Fabián Ruiz/Olmo 推进，或调整结构。这是西班牙本场组织与节奏控制的关键变量。</li>
+      <li><b>乌拉圭双伤减员（多源确认）</b>：后防中坚 <b>Ronald Araújo（小腿撕裂）</b> 与攻击型中场 <b>Giorgian de Arrascaeta（小腿）</b> 双双缺阵——Araújo 是 18 场预选仅丢 12 球的防线支柱，De Arrascaeta 贡献了乌拉圭预选近三分之一进球。两人缺阵让乌拉圭"既缺防守压舱、又缺创造"，Bielsa 或推 Darwin Núñez 顶 9 号。</li>
+      <li><b>西班牙两战零失球、Yamal 伤愈火力归位</b>：本届仅 4 支零失球球队之一；次轮 4-0 沙特由 Oyarzabal 梅开二度 + Yamal 破门，Yamal 赛季末腿筋伤已愈、次轮首发并进球。乌拉圭须在缺 Araújo/De Arrascaeta 下打穿这条零封防线，难度极高——这是"动机差使比分差大于实力差"的方向。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · 西班牙 Pedri 停赛 <span style="color:var(--mut);font-weight:400">· Al Jazeera / Sports Mole / RotoWire 多源一致 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：中场枢纽 <b>Pedri 因前两轮累计两张黄牌、本场停赛</b>，De la Fuente 须改造中场结构</div>
+      <p style="font-size:13.5px">关键球员出缺多源交叉：<b>Al Jazeera</b> 明确指出 23 岁的巴萨中场 <b>Pedri 在西班牙前两场小组赛各领一张黄牌、累计停赛本场</b>，"De la Fuente 须微调中场"；<b>Sports Mole</b> 与 <b>RotoWire</b> 的西班牙预测首发也均未列入 Pedri，并讨论以 Fabián Ruiz / Dani Olmo 补位。<span style="color:var(--warn)">[替补人选与最终首发以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Pedri 是西班牙<b>控球节奏与由守转攻的中场指挥棒</b>，停赛迫使 De la Fuente 在 Rodri 身旁重组——若改单后腰（Rodri）+ Ruiz/Olmo 双推进，中场屏障与出球质量会有所变化。这是西班牙能否延续"控球消耗 + 零失球"剧本的关键变量，也间接影响让球深度盘口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups" style="color:var(--accent)">Al Jazeera — Pedri 停赛/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/uruguay-vs-spain-prediction-team-news-lineups_599989.html" style="color:var(--accent)">Sports Mole — 预测首发（无 Pedri）</a> · <a href="https://www.rotowire.com/soccer/article/uruguay-vs-spain-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119634" style="color:var(--accent)">RotoWire — 阵容分析</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · 乌拉圭 Araújo + De Arrascaeta 双伤缺阵 <span style="color:var(--mut);font-weight:400">· Sports Mole / Rio Times / Yahoo / Barça Blaugranes 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">后防中坚 <b>Ronald Araújo（小腿撕裂）</b> 与攻击核心 <b>De Arrascaeta（小腿）</b> 双双确认缺阵</div>
+      <p style="font-size:13.5px">多家媒体一致报道，乌拉圭本场将<b>无缘 Ronald Araújo（小腿肌肉撕裂，训练中受伤）与 Giorgian de Arrascaeta（小腿）</b>。Araújo 是乌拉圭 18 场世预赛仅丢 12 球的防线支柱；De Arrascaeta 在预选贡献了球队近三分之一的进球——"双伤"同时削弱了乌拉圭的防守压舱与进攻创造。Bielsa 在两场平局后或调整人员，<b>Darwin Núñez（替补登场有效、国家队 13 球）有望顶上 9 号位</b>。<span style="color:var(--warn)">[最终首发以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：乌拉圭必须取胜、必然压上，但<b>同时失去最稳后卫与最佳创造点</b>意味着它既难在压上后守住身后，又缺打穿西班牙零失球防线的灵感。这放大了"乌拉圭压上→西班牙防反"的剧本，也是大小球/让球盘的核心变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/predicted-lineups/double-injury-blow-for-uruguay-how-bielsas-side-could-line-up-vs-spain_599996.html" style="color:var(--accent)">Sports Mole — 乌拉圭双伤</a> · <a href="https://www.riotimesonline.com/uruguay-arrascaeta-araujo-injury-cost-spain-world-cup-2026/" style="color:var(--accent)">Rio Times — 缺阵代价</a> · <a href="https://sports.yahoo.com/articles/ronald-ara-jo-injury-why-215341397.html" style="color:var(--accent)">Yahoo — Araújo 伤情</a> · <a href="https://www.barcablaugranes.com/world-cup-2026/123773/barcelona-star-ronald-araujo-could-miss-uruguays-world-cup-clash-with-spain-due-to-injury" style="color:var(--accent)">Barça Blaugranes</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">关键球员核查 · 西班牙 Yamal 伤愈、Oyarzabal 火热 <span style="color:var(--mut);font-weight:400">· Al Jazeera / Sports Mole 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lamine Yamal 腿筋伤已愈、次轮首发并破门；Oyarzabal 对沙特梅开二度，状态正佳</div>
+      <p style="font-size:13.5px">18 岁的 <b>Lamine Yamal</b> 赛季末受腿筋伤困扰、首战仅替补登场，<b>次轮已首发并打入一球</b>，确认恢复并预计继续首发；<b>Mikel Oyarzabal</b> 对沙特梅开二度、卷入金靴争夺，亦将继续在锋线出战。Nico Williams 此前两场替补登场，本场有望进入首发。<span style="color:var(--warn)">[首发以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在 Pedri 停赛削弱中场的同时，西班牙锋线火力（Yamal + Oyarzabal + N. Williams）健康且火热，足以惩罚乌拉圭压上后暴露的身后空间。这是西班牙打防反、扩大比分（让 -1.5）的现实武器。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups" style="color:var(--accent)">Al Jazeera — Yamal 伤愈/Oyarzabal</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/uruguay-vs-spain-prediction-team-news-lineups_599989.html" style="color:var(--accent)">Sports Mole — 西班牙团队消息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 同时进行的另一场 + 当值裁判 <span style="color:var(--mut);font-weight:400">· Sofascore / Al Jazeera · 06-25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">本场 @ 瓜达拉哈拉 Estadio Akron；同时进行 佛得角 vs 沙特 @ 休斯顿 NRG · 主裁组待核</div>
+      <p style="font-size:13.5px">本场在墨西哥<b>瓜达拉哈拉 Estadio Akron（Guadalajara Stadium，位于 Zapopan）</b>进行，约 20:00 ET 开球，与 H 组另一场 <b>佛得角 vs 沙特（休斯顿 NRG Stadium）同时进行</b>——这意味着两队都能实时知晓另一场比分，出线算术会随场上动态变化（尤其影响西班牙是否需要"防住净胜球"以及乌拉圭第三名的尾部希望）。<span style="color:var(--warn)">[当值主裁与完整裁判组/VAR 组合暂无可靠报道 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：同步进行使"动态出线"成真——若另一场佛得角领先沙特，西班牙更需稳守净胜球、乌拉圭第三名希望进一步收窄；这会反过来影响两队末段的攻守取舍与比赛开放度。本届统一新规偏严（仅队长可沟通、门将 8 秒、半自动越位），将精准捕捉乌拉圭压上时的越位线与 Yamal 反击的临界冲刺。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sofascore.com/news/group-h-qualification-scenarios-explained-can-spain-uruguay-cape-verde-or-saudi-arabia-still-make-the-round-of-32" style="color:var(--accent)">Sofascore — H组情景/对阵地点</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups" style="color:var(--accent)">Al Jazeera — 地点/出线</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· H组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>H 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇾 乌拉圭</th><th>🇪🇸 西班牙</th></tr>
+      <tr><td>前两轮</td><td class="ht">1-1 沙特 + 2-2 佛得角（2 分，净 0、3-3）</td><td class="sc">0-0 佛得角 + 4-0 沙特（4 分，净 +4、零失球）</td></tr>
+      <tr><td>H 组积分（末轮前）</td><td colspan="2">西班牙 4(净 +4，零失球) 领跑；乌拉圭 2(净 0、进 3)、佛得角 2(净 0、进 2) 并列第二；沙特 1(净 -4) 垫底。乌、佛因净胜球同为 0、进球数乌拉圭略多</td></tr>
+      <tr><td>出线情景</td><td class="ht">须取胜方稳出线（胜 + 佛得角不胜沙特可夺头名）；平局只剩第三名渺茫尾部</td><td class="sc">平局即锁头名（仅佛得角净胜沙特 5+ 可反超）；胜则彻底无忧</td></tr>
+      <tr><td>主教练</td><td class="ht">Marcelo Bielsa（阿根廷籍）</td><td class="sc">Luis de la Fuente</td></tr>
+      <tr><td>核心球员</td><td class="ht">Valverde、Núñez、Ugarte、Bentancur、Muslera（缺 Araújo/De Arrascaeta）</td><td class="sc">Yamal、Oyarzabal、Rodri、N. Williams、Cubarsí（Pedri 停赛）</td></tr>
+      <tr><td>重要缺阵</td><td class="ht">Araújo（小腿/伤）、De Arrascaeta（小腿/伤）</td><td class="sc">Pedri（累计黄牌停赛）、Víctor Muñoz（可能仍缺）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">压上求胜 vs 防反陷阱；双伤后能否打穿零封防线</td><td class="sc">Pedri 停赛后中场重组；控球消耗 + 防反扩比分</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈5.50–7.52（隐含≈16%）</td><td class="sc">胜 ≈1.50–1.57（隐含≈62%）· 平 ≈3.40–4.40（≈22%）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="sc">西班牙让 -1 / -1.5（-1.5 @≈+135）；总分线 O/U 2.5 近平水（Under @+107 / Over @-118）、BTTS 偏 No（-159）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈62/22/16，归一后），与 Opta 超算（西班牙 62.2% / 平 22.1% / 乌拉圭 15.8%）、Sofascore（58 / 24 / 18）方向一致。盘口来源：FanDuel/DraftKings/bet365/Racing Post 综合；让球为西班牙 -1/-1.5、总分线 O/U 2.5 近平水偏小球、BTTS 偏 No。Pedri 停赛 vs 乌拉圭双伤压上是大小球与让球深度的核心变量。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇺🇾 乌拉圭 · 进攻</td><td class="ht">2022 卡塔尔小组出局；Bielsa 时代强调高位与纵向，但终结依赖 Núñez/Valverde 个人能力</td><td class="ht">2 战 3 球（1-1 沙特、2-2 佛得角）；两场均被逼平、把握机会不稳</td><td><b>未达标</b>：两场只取 2 分、未尝胜绩；缺 De Arrascaeta 后创造力下降，Núñez 替补有效但首发供给存疑 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇺🇾 乌拉圭 · 防守</td><td class="ht">18 场预选仅丢 12 球（Araújo 领衔的稳固防线）</td><td class="ht">2 战丢 3 球（被沙特绝平、被佛得角远射任意球 + 失误送礼 2-2）</td><td><b>明显退步</b>：Bielsa 自承"组织性失误"代价高昂；缺 Araújo 让防线压舱缺失，压上后身后空间是命门</td></tr>
+      <tr><td class="sc">🇪🇸 西班牙 · 进攻</td><td class="sc">2010 冠军、tiki-taka 控球传统；本代 Yamal/Oyarzabal/N. Williams 年轻锋线火力足</td><td class="sc">2 战 4 球（0-0 佛得角"有控球无转化"，4-0 沙特火力全开）</td><td><b>两极但向好</b>：首战被 Vozinha 扑到 0-0、控球难转化；次轮 4-0 兑现，Yamal 伤愈 + Oyarzabal 双响，进攻已"点火" <span style="color:var(--warn)">（xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="sc">🇪🇸 西班牙 · 防守</td><td class="sc">控球压制减少被攻次数；本代后防 Cubarsí/Laporte/Cucurella 年轻但稳</td><td class="sc">2 战丢 0 球（本届仅 4 支零失球球队之一）</td><td><b>顶级下限</b>：两战零封是本场最硬的底牌；面对缺 Araújo/De Arrascaeta 的乌拉圭，零失球延续概率高，正是 BTTS-No 与让深盘的依据</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：西班牙首战"有控球无转化"、次轮 4-0 点火，且两战零失球——下限与上限都在抬升；乌拉圭两场被逼平、防守退步且双核心伤缺，攻守两端都被削弱。深度数据支持"乌拉圭被迫压上、西班牙控球消耗 + 防反扩比分"的主线。来源：Opta Analyst · FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">西班牙 ≈1.6–2.0</td><td class="ht">乌拉圭 ≈0.7–1.1</td><td>西班牙控球 + 锋线火力占优；乌拉圭压上能换来零星机会但也露后防——与盘口"西班牙重让 + 偏小球/BTTS-No"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta 超算给西班牙 62.2% 胜 / 平 22.1% / 乌拉圭 15.8%；Sofascore 模型 58 / 24 / 18，方向一致大幅偏西班牙</td><td>西班牙在体系、状态（两战零失球 + 4-0）、人员可用度上全面占优；乌拉圭双伤 + 两场未胜，差距被进一步拉大</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：西班牙控球率与 field tilt 通常高企（首战对佛得角控球压制但未转化）；乌拉圭须取胜会主动施压、PPDA 降低，但缺 De Arrascaeta 削弱前场 xT</td><td><b>陷阱提醒</b>：① 西班牙平局即夺头名，可能"控球管理比赛"压低节奏 → 偏小球；② 乌拉圭必须取胜、末段会孤注一掷压上 → 西班牙防反空间放大、可能扩比分（让 -1.5 的价值）；③ "动机差"在此<b>顺向放大</b>实力差——乌拉圭压上露后防、缺 Araújo 守不住，正中西班牙防反</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"明显偏西班牙"的单边场次——西班牙重让 -1/-1.5、胜负方向悬念有限；信息含量集中在让球深度、小球/BTTS 与"乌拉圭必须压上"的战术后果</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 共识强偏西班牙、近单边，信息集中在让球深度/小球/BTTS</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向几乎一致偏西班牙（≈62% 去水、超算 62.2%），胜负方向悬念有限。真正的分歧在<b>让球深度</b>（西班牙能否让赢 -1.5）与<b>小球/BTTS</b>（西班牙控球管理 + 零失球 vs 乌拉圭压上）。Racing Post 等给出 Bet Builder 而非反推冷门。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏西班牙，分歧在让球幅度与小球/BTTS）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>乌拉圭 1-2 西班牙，"西班牙拿下头名、乌拉圭恐出局"</td></tr>
+      <tr><td>Al Jazeera</td><td>赛前预览</td><td>引 Opta 西班牙 62.2% 胜；西班牙两战零失球、Yamal 伤愈</td></tr>
+      <tr><td>RotoWire / Lineups</td><td>北美数据媒体</td><td>西班牙 ML（-205）；Under 2.5 / BTTS-No 有价值</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>西班牙胜 + 控球压制；乌拉圭缺创造点难破局</td></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>西班牙 62.2% / 平 22.1% / 乌拉圭 15.8%</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>Bet Builder（含西班牙侧）；未明确反推乌拉圭冷门</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：方向高度偏西班牙、近单边，但价格仍在合理区间（西班牙未被压到极端短赔，仍有 ≈1.50–1.57）。这<b>不是真正的对攻悬念场</b>——悬念主要在让球深度与小球/BTTS。最大的不确定性是<b>Pedri 停赛对西班牙中场控制的削弱</b>与<b>乌拉圭末段孤注一掷压上的开放性</b>，而非胜负方向。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>乌拉圭胜 / 平 / 西班牙胜</th><th>解读</th></tr>
+      <tr><td>开档（赛前/多家综合）</td><td>1X2</td><td class="sc">≈6.50 / 3.60 / 1.55</td><td>西班牙大热门、乌拉圭深盘冷门 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>06-25 截止</td><td>FanDuel/bet365/Racing Post</td><td class="sc">乌拉圭 5.50–7.52 / 平 3.40–4.40 / 西班牙 1.50–1.57</td><td>各书略有差异，整体把西班牙定为强热门、乌拉圭 ≈16%</td></tr>
+      <tr><td>06-25</td><td>大/小球 + 让球</td><td colspan="2" class="sc">西班牙让 -1 / -1.5（-1.5 @≈+135）；O/U 2.5 近平水（Under @+107 / Over @-118）；BTTS 偏 No（-159）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日 / 赛季前预期）</td><td class="sc">西班牙以欧洲一流强队受敬重；与乌拉圭有明显档次差</td><td>赛前即把西班牙定为明显热门（2010 冠军、年轻天才一代），乌拉圭虽有历史底蕴但被视为下风 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>开盘（次轮赛后 + 净胜球重定价）</td><td class="sc">西班牙收紧为强热门（≈1.55）；乌拉圭走宽至 ≈6–7</td><td><b>repricing 来自次轮战绩</b>：西班牙 4-0 屠沙特 + 两战零失球（净 +4），乌拉圭两场被逼平（净 0），市场把西班牙定为强热门；<b>关键逻辑：乌拉圭"必须取胜→被迫压上"反而强化西班牙</b>，因压上正喂给西班牙防反与控球消耗</td></tr>
+      <tr><td>现盘（06-25→现）</td><td class="sc">西班牙 -1/-1.5；O/U 2.5 近平水偏小球；乌拉圭 ≈6.50</td><td>价格发现集中在 <b>让球深度</b>（西班牙能否让赢 -1.5 / 乌拉圭 +1.5 的拖住价值）与<b>小球/BTTS</b>（西班牙零失球 + 控球管理 → 偏小球、BTTS-No）；Pedri 停赛略压西班牙中场控制、乌拉圭双伤略压其进攻，是微调变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"明显偏西班牙的单边盘"，与近硬币盘不同——1X2 方向悬念有限，价格发现主要在让球深度与小球/BTTS。关键变量是<b>Pedri 停赛后的中场控制</b>与<b>乌拉圭末段孤注一掷的开放性</b>。核心反直觉点：乌拉圭的"必须取胜"是市场更看好西班牙的原因（压上露后防、缺 Araújo 守不住、喂给防反），而非更看好乌拉圭。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：单场胜平负与 Opta/Sofascore 超算高度一致、强偏西班牙（≈58–62% 胜）。出线市场：西班牙 ≈99% 出线（且大概率头名）、乌拉圭出线概率明显偏低（须取胜或赌第三名净胜球）。<span style="color:var(--warn)">[Kalshi/Polymarket 单场精确占比 · 待核]</span>。</li>
+      <li><b>舆论焦点 ①</b>：<b>西班牙"已基本锁定出线、是否提前为淘汰赛留力"</b>——De la Fuente 是否轮换、Pedri 停赛后中场重组是最大流量点。</li>
+      <li><b>舆论焦点 ②</b>：<b>乌拉圭与 Bielsa 的窘境</b>——两场被逼平、双核心伤缺，"必须取胜才出线"的生存压力，以及若取胜可能避开淘汰赛强敌（英格兰若占 L 组头名将在淘汰赛等候第三名球队，故乌拉圭更有动力争胜而非保第三）。</li>
+      <li><b>公众资金面 / 社媒声量细分</b>：未检得量化数据 <span style="color:var(--warn)">[公众投注% / 社媒量化 · 待核]</span>；定性：公众资金偏西班牙（强热门 + 状态），休闲盘倾向 Under 2.5 / 西班牙让球。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"明显偏西班牙的单边盘"，过热指数 <b>3/5</b>。1X2 方向悬念有限，核心变量是<b>Pedri 停赛后的中场控制</b>与<b>乌拉圭末段压上的开放性</b>（影响让球深度 / 小球 / BTTS）。反直觉点：乌拉圭的求胜压力是市场更看好西班牙的原因。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/uruguay-vs-spain-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-af11j2h7nZPv/">Racing Post — 赔率/Bet Builder</a> · <a href="https://www.rotowire.com/soccer/article/uruguay-vs-spain-picks-tips-odds-best-bets-2026-world-cup-group-h-119769">RotoWire — 赔率/Best Bets</a> · <a href="https://www.lineups.com/betting/uruguay-vs-spain-world-cup-match-preview-picks-odds-for-friday-june-26-2026/">Lineups — 赔率</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups">Al Jazeera — Opta 超算</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/uruguay-vs-spain-prediction-team-news-lineups_599989.html">Sports Mole — 预测</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">⚠ <b>暂无可靠报道</b>：截至发稿，本场当值主裁与完整裁判组/VAR 组合暂无可靠媒体确认。<span style="color:var(--warn)">[主裁姓名/裁判组/VAR · 待核，以赛前 FIFA 官方公布为准]</span> 比赛地点为墨西哥瓜达拉哈拉 Estadio Akron。</div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像（待核）</b>：当值主裁未确认前不臆测来源体系或风格。本届世界杯执法环境偏严（仅队长可与裁判沟通、门将持球 8 秒规则、半自动越位技术）。</li>
+      <li><b>本届/近两届实际样本</b>：在主裁未确认前，单场出牌/判点的精确场均细分无从给出。<span style="color:var(--warn)">[大赛单场黄牌/判点率细分 · 待主裁确认后再核 · 待核]</span>。</li>
+      <li><b>与两队的执法史</b>：待主裁确认后再行核查（<b>无样本，如实说明</b>）。注意：Pedri 已因累计黄牌停赛，本场两队的牌面管理（尤其乌拉圭压上时的战术犯规）将影响潜在的后续停赛与点球风险。</li>
+      <li><b>两面性</b>：乌拉圭须取胜 → 高位施压与禁区争抢增多、易制造任意球；西班牙控球 + 防反，乌拉圭末段压上时的战术犯规与禁区对抗是黄牌/点球观察点。半自动越位将精准捕捉乌拉圭压上的越位线与西班牙反击的临界冲刺。牌数/点球盘宜以倾向看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场实力差距明显，裁判对胜负影响有限，主要价值在牌数/点球：乌拉圭压上后的禁区对抗与战术犯规是黄牌/点球观察点。鉴于主裁尚未确认、缺乏单场大赛细分样本，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（Al Jazeera / Sports Mole / RotoWire 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇺🇾 乌拉圭 预测首发（≈4-2-3-1）· Bielsa · 缺 Araújo / De Arrascaeta</h4>
+    <div class="lineup">Muslera; Varela · Giménez · Cáceres · Olivera; Ugarte · Bentancur; Canobbio · Valverde · M. Araújo; Núñez</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Federico Valverde</td><td>中场 / 皇马</td><td>乌拉圭中场引擎与进攻发动机；缺 De Arrascaeta 后创造担子更重</td></tr>
+      <tr><td class="ht">Darwin Núñez</td><td>中锋</td><td>两轮替补登场有效、国家队 13 球；预计顶上 9 号位赌一把打穿西班牙防线</td></tr>
+      <tr><td class="ht">Manuel Ugarte</td><td>后腰</td><td>防守屏障；压上求胜时须兼顾身后保护（缺 Araújo 后压力更大）</td></tr>
+      <tr><td class="ht">Fernando Muslera</td><td>门将</td><td>老将门将；须应对 Yamal/Oyarzabal/N. Williams 的火力</td></tr>
+    </table>
+    <h4>🇪🇸 西班牙 预测首发（≈4-3-3）· De la Fuente · Pedri 停赛</h4>
+    <div class="lineup">Simón; Porro · Cubarsí · Laporte · Cucurella; Rodri · F. Ruiz · Olmo; Yamal · Oyarzabal · N. Williams</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Lamine Yamal</td><td>右边锋 / 巴萨</td><td>腿筋伤已愈、次轮首发并破门；金靴候选，打穿乌拉圭右路的爆点</td></tr>
+      <tr><td class="sc">Mikel Oyarzabal</td><td>前锋 / 皇家社会</td><td>对沙特梅开二度、金靴争夺者；锋线终结点</td></tr>
+      <tr><td class="sc">Rodri</td><td>后腰 / 曼城</td><td>Pedri 停赛后中场定海神针；单后腰或双后腰的结构选择是焦点</td></tr>
+      <tr><td class="sc">Pau Cubarsí</td><td>中卫 / 巴萨</td><td>年轻中卫，两战零失球后防一员；防乌拉圭压上与 Núñez 冲击</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（Al Jazeera / Sports Mole / RotoWire），<b>以赛前官方名单为准 · 待核</b>。<b>各源对西班牙中场补 Pedri 的方案不一</b>（Sports Mole 给 Pedri/Rodri/Olmo 三中场含 Pedri 似为笔误、Al Jazeera 明确无 Pedri 并用 Rodri + Ruiz + Olmo）——<span style="color:var(--warn)">[Pedri 已确认停赛、替补人选与中场结构 · 待核]</span>；乌拉圭焦点是 Bielsa 缺 Araújo/De Arrascaeta 后的具体补位与是否 Núñez 首发 <span style="color:var(--warn)">[首发组合 · 待核]</span>。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 本大洲赛事 / 2018+2022 与近期）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇺🇾 乌拉圭 · Marcelo Bielsa</div>
+        <div class="role">≈4-2-3-1 / 高位压迫 + 纵向直接 + 强对抗，但终结依赖个人</div>
+        <ul class="cl">
+          <li>Bielsa 的招牌是<b>高位压迫 + 快速纵向 + 全场高强度对抗</b>。但本届两场都被逼平（1-1 沙特、2-2 佛得角），Bielsa 自承"组织性失误"代价高昂——<b>压迫体系一旦失位、转换防守的衔接就露馅</b>，这正是乌拉圭丢分的根源。</li>
+          <li>交叉参照：乌拉圭 2022 卡塔尔小组出局、本届两轮未胜；预选靠 Araújo 领衔的稳固防线（18 场仅丢 12）撑起，但本场<b>恰恰缺 Araújo 与 De Arrascaeta</b>——攻守两端的压舱与创造同时缺位。必须取胜意味着它得更激进地压上，风险随之放大。</li>
+          <li>本场切入口：靠 Valverde 的纵向带动 + Núñez 的支点冲击 + Canobbio/M. Araújo 的边路速度求胜；定位球是打破西班牙的现实武器。但压上必然露出身后空间，正中西班牙 Yamal/N. Williams 的反击口子——这是乌拉圭"必须取胜"的最大代价。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇪🇸 西班牙 · Luis de la Fuente</div>
+        <div class="role">4-3-3 · 控球压制 + 年轻锋线爆点 + 两战零失球的稳固后防</div>
+        <ul class="cl">
+          <li>De la Fuente 的西班牙延续<b>控球压制 + 高位逼抢 + 边路爆点</b>的传统骨架。首战对佛得角"有控球无转化"被逼平 0-0（被门将 Vozinha 高接低挡），但次轮 4-0 屠沙特点火——<b>下限是两战零失球，上限随锋线火力释放而抬升</b>。</li>
+          <li>交叉参照：西班牙近期 W-D-W-D-D、本届两战零失球（本届仅 4 队做到）；2010 冠军底蕴 + Yamal 一代的年轻天赋。对<b>压上求胜的对手尤其舒服</b>——控球消耗 + 防反，正是惩罚乌拉圭压上的最佳剧本。Pedri 停赛是唯一减分项，迫使中场重组。</li>
+          <li>本场应对：用控球与高 field tilt 压低乌拉圭的压迫窗口、消耗其体能与心态；Yamal/N. Williams 的边路速度打乌拉圭压上后的身后空间；Oyarzabal 终结。平局即夺头名给了它"控球管理比赛"的安全垫——若领先可放缓节奏、把比赛带进小球区间，或在确保头名后为淘汰赛留力。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Al Jazeera <small>· 赛前前瞻</small></div>引 Opta 超算给西班牙 62.2% 胜；西班牙两战零失球、Yamal 伤愈火力归位，须应对 Pedri 停赛；乌拉圭须至少拿 1 分确保出线、争胜动机更强（避开淘汰赛潜在的英格兰）。</div>
+    <div class="insight"><div class="who">Sports Mole / RotoWire <small>· 预测媒体</small></div>多家给出乌拉圭 1-2 西班牙；核心逻辑是西班牙质量与控制力占优、乌拉圭双伤（Araújo/De Arrascaeta）削弱攻守，"两点不足以从第三名出线"。RotoWire 看好 Under 2.5 / BTTS-No。</div>
+    <div class="insight"><div class="who">Sofascore <small>· 模型派</small></div>胜平负 58 / 24 / 18 偏西班牙；乌拉圭仅 18% 胜率，须"爆冷"才能在自己掌控下出线；佛得角凭气势同场对沙特被给到约 52% 胜率，使 H 组出线动态更复杂。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / Sofascore</small></div>超算与模型均强偏西班牙（≈58–62%）。⚠ 陷阱提醒：① 西班牙平局即夺头名，可能控球管理、压低节奏 → 偏小球；② 乌拉圭必须压上 → 末段开放、但更利西班牙防反扩比分（让 -1.5）；③ Pedri 停赛是西班牙中场控制的微调变量；④ 同步进行的佛得角-沙特会带来动态出线，影响末段攻守取舍。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：西班牙控制取胜或闷平夺头名是基准剧本。实力与状态天平明显偏西班牙（净 +4、两战零失球、Yamal 伤愈、控球压制）；乌拉圭必须取胜、被迫压上，且<b>同时缺 Araújo（防守压舱）与 De Arrascaeta（创造核心）</b>，攻守两端被削弱，正喂给西班牙防反。但乌拉圭 Valverde/Núñez 的个人能力 + Bielsa 的高位赌博是真实变量，可制造一定混乱或定位球冷门。</li>
+      <li><b>关键先生</b>：Valverde（乌/中场引擎）、Núñez（乌/支点终结）、Ugarte（乌/屏障）、Muslera（乌/门将）；Yamal、Oyarzabal（西/锋线爆点+终结）、Rodri（西/中场定海神针）、Cubarsí（西/后防）。<b>西班牙 Pedri 停赛、乌拉圭 Araújo + De Arrascaeta 伤缺</b>。</li>
+      <li><b>胜负手</b>：① 西班牙 Pedri 停赛后能否用 Rodri/Ruiz/Olmo 维持中场控制与零失球；② 乌拉圭缺 Araújo/De Arrascaeta 后能否打穿西班牙零封防线、又在压上时守住身后；③ 西班牙"平局即夺头名"心态会否使其控球管理、压低节奏（偏小球），或在确保头名后轮换留力。</li>
+      <li><b>市场视角</b>：明显偏西班牙的单边盘（≈62/22/16、超算 62.2% / Sofascore 58%），过热指数 3/5；1X2 方向悬念有限。核心变量是 Pedri 停赛后的中场控制 + 乌拉圭末段压上的开放性（影响让球深度 / 小球 / BTTS）。反直觉点：乌拉圭的求胜压力是市场更看好西班牙的原因。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>西班牙 Pedri 停赛后的中场结构</b>（Rodri 单/双后腰、Ruiz vs Olmo vs Baena 取舍，各源不一，但 Pedri 停赛已多源确认）；③ 乌拉圭缺 Araújo/De Arrascaeta 后的具体补位、是否 Núñez 首发（双伤已多源确认）；④ <b>当值主裁与完整裁判组/VAR 组合</b>（暂无可靠报道，主裁确认后再核单场出牌/判点细分）；⑤ 出线/头名的精确净胜球与并列规则（积分→净胜球→进球数→相互战绩→公平竞赛分→抽签）、西班牙"佛得角净胜沙特 5+ 才被反超头名"的极端尾部、乌拉圭第三名出线的净胜球比较条件（以 FIFA 官方判定为准）；⑥ 让球线（西班牙 -1/-1.5）与大小球总分线（O/U 2.5）、精确初盘数值以赛前实时盘口为准；⑦ Kalshi/Polymarket 单场精确占比、公众投注%/社媒量化未检得。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H">Wikipedia — H组/并列规则/出线情景</a> · <a href="https://www.sofascore.com/news/group-h-qualification-scenarios-explained-can-spain-uruguay-cape-verde-or-saudi-arabia-still-make-the-round-of-32">Sofascore — H组出线情景/对阵地点</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups">Al Jazeera — 前瞻/Pedri 停赛/Opta 超算</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/uruguay-vs-spain-prediction-team-news-lineups_599989.html">Sports Mole — 预测/团队消息/出线</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/predicted-lineups/double-injury-blow-for-uruguay-how-bielsas-side-could-line-up-vs-spain_599996.html">Sports Mole — 乌拉圭双伤</a> · <a href="https://www.rotowire.com/soccer/article/uruguay-vs-spain-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119634">RotoWire — 阵容/战术分析</a><br>
+      • <a href="https://www.riotimesonline.com/uruguay-arrascaeta-araujo-injury-cost-spain-world-cup-2026/">Rio Times — Araújo/De Arrascaeta 缺阵代价</a> · <a href="https://sports.yahoo.com/articles/ronald-ara-jo-injury-why-215341397.html">Yahoo — Araújo 伤情</a> · <a href="https://www.barcablaugranes.com/world-cup-2026/123773/barcelona-star-ronald-araujo-could-miss-uruguays-world-cup-clash-with-spain-due-to-injury">Barça Blaugranes — Araújo</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/uruguay-vs-spain-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-af11j2h7nZPv/">Racing Post — 赔率/Bet Builder</a> · <a href="https://www.rotowire.com/soccer/article/uruguay-vs-spain-picks-tips-odds-best-bets-2026-world-cup-group-h-119769">RotoWire — 赔率/Best Bets</a> · <a href="https://www.lineups.com/betting/uruguay-vs-spain-world-cup-match-preview-picks-odds-for-friday-june-26-2026/">Lineups — 赔率/预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-uruguay-vs-spain-06-26-26-world-cup-2026/">Squawka — 预测</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-26 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['乌拉圭胜','平局','西班牙胜'],datasets:[{data:[16,22,62],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['西班牙','乌拉圭','佛得角','沙特'],datasets:[{data:[4,2,2,1],backgroundColor:[SC,HT,'#f0a04b','#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'积分（末轮前）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'乌拉圭',data:[5.5,6.5,6,6.5,7,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'西班牙',data:[8.5,7.5,8.5,8,8,8],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

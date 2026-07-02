@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 墨西哥 vs 韩国 · 2026世界杯 A组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-mexico-vs-korea.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-mexico-vs-korea.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --mx:#16a34a;--kr:#cd2e3a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#7a1f29);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13261b,#21161c);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.mx{color:#34d27b;font-weight:600}td.kr{color:#f0828b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .carry{background:#19233a;border:1px solid #2f4675;border-radius:7px;padding:3px 9px;font-size:11px;font-weight:700;display:inline-block;color:#9fc0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-mexico-vs-korea.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-0 · 2026 世界杯 · A组次轮 · 头名直接对话（两队同积3分）</span>
+  <h1>墨西哥 vs 韩国</h1>
+  <div class="meta">2026年6月18日 · 21:00 ET · 瓜达拉哈拉 Estadio Akron（Zapopan，海拔≈1,560m）· A组（同组：捷克、南非）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 墨西哥</div><div class="rk">东道主 · 首轮 2-0 南非 · Montes 停赛重组中卫</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0828b">🇰🇷 韩国</div><div class="rk">首轮 2-1 逆转捷克 · Son 谢幕之旅 · 黄仁范当选最佳</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 墨西哥 1-0 韩国（半场 0-0）· 瓜达拉哈拉 Estadio Akron · 主裁 Gustavo Tejera（乌拉圭，与赛前任命一致）· 数据来源 Opta Analyst / ESPN / CBS Sports / NBC Sports / Bolavip · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场<b>"半场闷战、一记失误定胜负"</b>的低比分硬仗。上半场两队合计只有 5 脚射门、合计 xG 仅 0.22——墨西哥开场占优后，韩国逐渐用控球（全场 58%）拿回场面，但谁都没能撕开对方禁区。真正的转折发生在<b>下半场刚开场</b>：第 <b>50 分钟</b>韩国门将 <b>金承奎（Kim Seung-gyu）出球/处理失误</b>，<b>Luis Romo</b> 抢断后冷静推射空门，1-0。这粒"礼物球"成了全场唯一进球。此后韩国虽控球更多、xG 反而略高（0.67 对墨 0.48），但仅 2 脚射正——一次被门将 <b>Rangel</b> 扑出、一次被 <b>Johan Vásquez</b> 门线前封堵。墨西哥则收缩阵型、保住胜果，<b>队史首次世界杯三连胜</b>，并<b>成为本届第一支锁定出线的球队</b>、提前登顶 A 组。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 4' Romo 黄牌（对位 Lee Kang-in，墨）→ HT 0-0 → 50' <b>Romo</b>（金承奎失误送礼，1-0）→ 71' 墨换人 Obed Vargas 换下 Romo、Pineda 登场 → 韩换人 Son / Lee Jae-sung → Hwang Hee-chan / Oh Hyeon-gyu，Eom Ji-sung、Yang Hyun-jun 登场 → 终场 1-0</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇲🇽 墨西哥</th><th style="padding:6px">🇰🇷 韩国</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">42%</td><td style="text-align:center"><b>58%</b></td><td style="padding:6px;color:var(--mut)">韩国控球占优却没赢——印证赛前"韩国阵地战已进化、墨非铁桶留空间"的判读，但控球未转化为破门</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">0.48</td><td style="text-align:center"><b>0.67</b></td><td style="padding:6px;color:var(--mut)">韩国 xG 反而略高，全场唯一进球来自门将失误而非高质量机会——比分被"非预期事件"决定</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射正</td><td style="text-align:center">—</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">韩国 2 射正：1 次被 Rangel 扑出、1 次被 Vásquez 门线封堵；墨西哥进球即"非射正流程"的抢断空门</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">上半场射门 / xG</td><td colspan="2" style="text-align:center">两队合计 <b>5 射 · xG 0.22</b></td><td style="padding:6px;color:var(--mut)">半场闷战、机会稀缺——比赛在下半场开场的一次失误后才真正分出走向</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">关键失误</td><td style="text-align:center">—</td><td style="text-align:center"><b>门将失误 →丢球</b></td><td style="padding:6px;color:var(--mut)">金承奎 50' 出球处理失误直接送礼——这是赛前未列入的"X 因素"，却成了胜负手</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">黄牌</td><td style="text-align:center">Romo 4'</td><td style="text-align:center">Paik Seung-ho</td><td style="padding:6px;color:var(--mut)">Tejera 开场 4 分钟即出示首黄，与赛前"南美哨偏严、首次世界杯立威"判读吻合</td></tr>
+      <tr><td style="padding:6px">其他细分（角球/犯规/传球成功率）</td><td colspan="2" style="text-align:center;color:var(--warn)">该指标暂无完整公开逐项数据</td><td style="padding:6px;color:var(--mut)">公开战报未给出双方角球/犯规/传球成功率的完整对照，不编造；以 Opta 比赛中心后续校正为准</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 墨西哥"先求不输、再抓失误"——务实拿下出线</div>面对控球占优的韩国，墨西哥并未像首轮对南非那样压着打，而是接受 42% 控球、收缩防线，等对手犯错。结果一次门将失误就够了。<b>这说明墨西哥</b>：Aguirre 的球队在高权重的头名战里展现了"赢下结果优先于赢下场面"的务实——这与其历史"控球有余、终结不足"的痼疾形成对照，本场反而靠少机会高效率取胜，是淘汰赛可复制的稳健模板。</div>
+    <div class="insight"><div class="who">② 重组中卫这道赛前最大问号——被验证守住了</div>赛前最大悬念是 Montes 停赛、Álvarez 回撤客串中卫能否扛住 Son/吴贤揆的反击。结果墨西哥<b>零封过关</b>、韩国全场仅 2 射正，且其中一次还是 Vásquez 门线封堵。<b>这说明墨西哥</b>：临时重组的中卫线在实战中经受住了考验，零封不是靠运气而是靠纪律收缩——这修补了首轮 3 红牌暴露的纪律隐患，给淘汰赛后防注入信心。</div>
+    <div class="insight"><div class="who">③ 韩国"阵地战进化但门前依旧低效"——旧命门换了形式重现</div>韩国控球 58%、xG 0.67 均压过墨西哥，延续了首轮对捷克的控球+渗透风格，证明赛前"阵地战已进化"判读成立。但全场只有 2 射正、把控球转化为高质量机会的能力仍不足，且自家门将的失误送掉比赛。<b>这说明韩国</b>：球队能控场却仍欠"最后一传/一射"的杀伤——历史"创造力换了形式却仍低效"的命门，这次以"控球占优却 0 进球"的方式重现，淘汰赛遇强敌会被放大。</div>
+    <div class="insight"><div class="who">④ 一记失误改写剧本——印证"两队接近、胜负在细节"的赛前定调</div>赛前去水赔率墨胜≈50%、平≈28%、韩≈26%，市场视两队为"同档接近、开放对攻"。实战 xG 0.48-0.67 几乎五五，最终却由一次非战术性的门将失误定胜负。<b>这说明</b>：在实力接近的对话里，决定结果的往往不是战术博弈而是个体失误与瞬间效率——这正是赛前"基准剧本：墨窄幅小胜、进球数在大小球分界附近"的精确兑现（终场 1 球，Under 2.5）。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>速览结论"墨西哥窄幅小胜或平局"→ 实际 1-0 窄胜</b>：基准剧本精确兑现，墨西哥以最小分差拿下头名战。</li>
+      <li>✓ <b>市场隐含墨胜≈50%（赔率≈2.00）→ 实际墨胜</b>：温和热门兑现，无爆冷。</li>
+      <li>✓ <b>"墨重组中卫能否守住 Son/吴贤揆反击"→ 守住（零封）</b>：韩国全场仅 2 射正，Álvarez 回撤客串中卫经受住考验。</li>
+      <li>✓ <b>"两队都想赢→开放对攻、谁阵地战渗透更利"→ 部分兑现</b>：韩国确实控球渗透占优（58% 控球、xG 略高），但渗透没换来进球。</li>
+      <li>✗ <b>"墨 16 射 4 正的转化率能否惩罚韩三后卫"→ 进球非来自运动战终结</b>：墨西哥本场没靠射门效率取胜，唯一进球来自抢断对方门将失误——转化率检验题被"失误球"绕过。</li>
+      <li>✓ <b>大小球：基准"进球在分界线附近"+ Under -170 一侧 → 实际 1 球（Under 2.5）</b>：低比分兑现，闷战剧本落地。</li>
+      <li>✓ <b>裁判面"Tejera 南美哨偏严、首次世界杯开场立威"→ 4 分钟即首黄</b>：尺度判读吻合，开场即出牌。</li>
+      <li>△ <b>"黄仁范是韩国 X 因素"（ESPN）→ 未兑现</b>：本场真正的 X 因素变成了韩国自家门将的失误，而非黄仁范的渗透。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇲🇽 墨西哥 → 6/24 末轮 vs 捷克（墨西哥城）</div>① <b>已锁定出线 + 头名</b>：6 分登顶 A 组、提前出线，末轮对捷克可轮换休整、为淘汰赛蓄力；② 可复制路径：本场"务实收缩 + 抓失误 + 零封"的低风险模板，比首轮对南非的压制更适合淘汰赛；③ 隐患仍在终结端——两战合计运动战进球依赖对手失误与定位球，淘汰赛遇强敌需找回运动战效率；④ 纪律值得肯定：本场仅 1 黄、零封，修补了首轮 3 红牌的隐患，但 Tejera 式严哨提醒累积黄牌成本。</div>
+      <div class="insight" style="margin:0"><div class="who">🇰🇷 韩国 → 6/24 末轮 vs 南非（瓜达拉哈拉）</div>① 这是<b>出线生死战</b>：本场告负后积 3 分，末轮必须拿分（对手是首轮三红、积分垫底的残阵南非）；② 暴露的短板是<b>门前效率与门将稳定</b>——控球占优却 0 进球、金承奎失误送分，对南非需把控球转化为射正并稳住后防；③ 进攻通道可延续：李刚仁/黄仁范的中路渗透与控球（58%）依然有效，缺的是终结那一下；④ Son 谢幕之旅悬于一线——背靠背后体能 + 末轮成败将决定其世界杯是否延续，洪明甫或需更早投入 Hwang Hee-chan/Oh Hyeon-gyu 等攻击手。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst（theanalyst.com）、ESPN、CBS Sports、NBC Sports、Bolavip、Yahoo Sports。部分细分指标（角球/犯规/传球成功率）暂无完整公开逐项数据，已如实标注。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <!-- ===== 速览 SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 A 组实质上的<b>头名争夺战</b>：墨西哥与韩国首轮各自取胜、同积 3 分，赢下本场基本锁定 A 组头名与出线。墨西哥占<b>主场 + 海拔 + H2H 历史优势</b>（6 次交锋 4 胜 1 平 1 负，含 2018 世界杯 2-1 胜韩），市场给出墨胜赔率 <b>≈2.00</b>（美线 -106/+100，去水隐含 ≈50%）、平局 <b>≈3.30</b>（+230，≈28%）、韩胜 <b>≈4.25</b>（+325/+333，≈26%）。但本场不是揭幕战那种"东道主碾压"的剧本——韩国首轮 2-1 逆转捷克展现了<b>李刚仁主导的阵地战 + 多点开花</b>，黄仁范一传一射当选最佳，比南非强出一档。<b>真正的胜负手</b>：① 墨西哥因 Montes 停赛被迫重组中卫（Álvarez 回撤搭档 Vásquez），面对 Son/吴贤揆的转换冲击是否漏人；② 墨西哥 16 射仅 4 正的转化率，能否惩罚韩国三后卫的回防软肋。大小球市场分歧（Over 与 Under 2.5 两派打架），过热指数 ≈3/5——主场情绪推高墨胜话题热度，但盘口未到揭幕战那种单边狂热。基准剧本：墨西哥窄幅小胜或平局，进球数在大小球分界线附近。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">墨胜隐含(去水)</div><div class="v" style="color:#34d27b">≈50%</div></div>
+      <div class="key"><div class="k">韩胜隐含(去水)</div><div class="v" style="color:#f0828b">≈26%</div></div>
+      <div class="key"><div class="k">H2H（6战）</div><div class="v" style="color:#34d27b">墨4-1-1</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>头名直接对话</b>：两队同积 3 分，赢者基本锁定 A 组头名；输/平的一方末轮命运转向（墨末轮碰捷克，韩末轮碰残阵南非）。</li>
+      <li><b>墨西哥中卫重组</b>：<span class="carry">上一场带入</span> Montes 直红停赛，Álvarez 大概率回撤客串中卫——这是墨防线本届最大测试，针对 Son 的反击身后球。</li>
+      <li><b>Son vs 体系</b>：<span class="carry">上一场带入</span> 韩国对捷克证明"Son 不进球也能赢"（黄仁范/吴贤揆破门），但 Son 的反击速度仍是制裁墨重组中卫的最锋利武器。</li>
+      <li><b>转化率检验</b>：<span class="carry">上一场带入</span> 墨西哥首轮 16 射 4 正、1 中柱，面对金玟哉领衔的防线，效率不足将被放大。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">墨西哥 · 停赛重组 <span class="carry" style="margin-left:6px">上一场带入</span> <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中卫 <b>César Montes 直红停赛一场</b>——Aguirre 大概率让 <b>Edson Álvarez 回撤客串中卫</b>，搭档 Johan Vásquez</div>
+      <p style="font-size:13.5px">墨西哥首轮 2-0 南非的尾声纪律崩盘，César Montes 在 90+2 因蹬踏（DOGSO 性质的争议直红）被罚下，按规则停赛本场。Aguirre 失去原定主力中卫后，多家预测一致指向<b>队长 Edson Álvarez 从后腰位置回撤、客串中卫与 Johan Vásquez 搭档</b>，后腰由 Erik Lira 单独坐镇、Gilberto Mora（17 岁）与 Fidalgo 顶上中前场。<span style="color:var(--warn)">[最终首发以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Álvarez 回撤补防虽然提升了中卫的出球与对抗，但也<b>抽走了墨中场的防守锚点</b>——正好暴露在韩国李刚仁/黄仁范的中路渗透与 Son 的反击身后球面前。这是墨西哥本届防线的最大测试，直接牵动让球盘（墨 -0.5）与首开纪录盘。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html" style="color:var(--accent)">Sports Mole — Montes 停赛后预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 队况/预测首发/裁判</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">韩国 · 黄仁范爆发 <span class="carry" style="margin-left:6px">上一场带入</span> <span style="color:var(--mut);font-weight:400">· ESPN · Opta · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">韩国 <b>2-1 逆转捷克</b>：黄仁范一传一射当选全场最佳，李刚仁阵地战输出顶级（37/37 传球）</div>
+      <p style="font-size:13.5px">韩国首轮落后捷克后，于第 67 分钟由黄仁范扳平（李刚仁助攻）、第 80 分钟黄仁范策动、吴贤揆反超，21 分钟内连扳两球完成逆转。全场韩国 <b>61.7% 控球、xG 1.84、468 次成功传球（1966 年以来世界杯单场最高）</b>——撕掉了"运动战创造力不足"的旧标签。Feyenoord 的黄仁范（29 岁）以一传一射当选最佳，李刚仁 37/37 传球、3 次创造机会。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：韩国证明了即便 Son 不破门也能靠中路渗透取胜——这意味着墨西哥不能只盯 Son，<b>黄仁范/李刚仁的中场出球质量是韩国新的进攻通道</b>。墨西哥重组后的中卫前若再被中场渗透撕开，韩国的阵地战答案比对捷克时更危险（墨非铁桶阵，留出空间更多）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 黄仁范当选最佳</a> · <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta — 赛后统计/468 传球</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">韩国 · 核心伤情复核 <span class="carry" style="margin-left:6px">上一场带入</span> <span style="color:var(--mut);font-weight:400">· ESPN · 韩媒 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">李刚仁（左踝）+ 金玟哉（膝）赛前伤情已基本无碍，首轮均首发并贡献关键表现</div>
+      <p style="font-size:13.5px">赛季末李刚仁左踝、金玟哉膝伤的隐忧，在首轮已得到回答——两人均首发对捷克，李刚仁 37/37 传球、3 次创造机会，金玟哉镇守三后卫中路。本场两人状态延续，是韩国进攻解题（李刚仁）与防守制空（金玟哉）的双支点。<span style="color:var(--warn)">[临场体能与首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：李刚仁是少数能在阵地战里持续输出创造力的人，金玟哉是三后卫体系的定海神针与出球核心——两人健康直接决定韩国能否在控球和防墨反击两端都站住。背靠背两场高强度，体能是隐性变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48788433/son-heung-min-south-korea-world-cup-squad-lee-kang-kim-min-jae" style="color:var(--accent)">ESPN — 韩国名单/李刚仁·金玟哉</a> · <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510" style="color:var(--accent)">RotoWire — 预测首发/战术</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">出线形势 · 头名直接对话 <span style="color:var(--mut);font-weight:400">· ESPN · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队同积 3 分，<b>赢者基本锁定 A 组头名</b>；墨西哥两连胜可提前出线</div>
+      <p style="font-size:13.5px">墨西哥首轮 2-0 南非、韩国 2-1 逆转捷克，两队同积 3 分、净胜球墨 +2 / 韩 +1。本场胜者基本锁定 A 组头名与 16 强席位；平局对双方出线均有利但留尾轮悬念；输的一方末轮必须算分（墨末轮碰捷克，韩末轮碰已两人停赛的残阵南非）。这是一场<b>"出线主动权 + 头名签位"双重权重的真硬仗</b>，双方都没有保守的理由。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：因为头名签位价值高、双方都想赢，比赛的<b>开放性高于一般"强弱对话"</b>——这正是大小球市场分歧（Over/Under 两派）的根源。墨西哥未必愿意像对南非那样压着打容错为零，韩国也有动力对攻而非纯防反。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa" style="color:var(--accent)">ESPN — A组形势/记录</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/" style="color:var(--accent)">Squawka — 前瞻</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· A组出线格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（市场分歧，约五五）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>A组夺组/出线热度（隐含概率%）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇲🇽 墨西哥</th><th>🇰🇷 韩国</th></tr>
+      <tr><td>主教练</td><td class="mx">Javier Aguirre</td><td class="kr">洪明甫（Hong Myung-bo）</td></tr>
+      <tr><td>首轮战绩</td><td class="mx">2-0 胜南非（Quiñones 9' / Jiménez 67'）</td><td class="kr">2-1 逆转胜捷克（黄仁范 67' / 吴贤揆 80'）</td></tr>
+      <tr><td>首轮数据</td><td class="mx">控球 61% · xG 1.41 · 16 射 4 正（1 中柱）</td><td class="kr">控球 61.7% · xG 1.84 · 468 传（世界杯队史最高）</td></tr>
+      <tr><td>积分 / 净胜球</td><td class="mx">3 分 · +2</td><td class="kr">3 分 · +1</td></tr>
+      <tr><td>阵型</td><td class="mx">4-3-3（Montes 停赛后中卫重组）</td><td class="kr">3-4-2-1</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="mx">胜 ≈2.00（-106/+100，隐含≈50%）</td><td class="kr">胜 ≈4.25（+325/+333，≈26%）· 平 ≈3.30（+230，≈28%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="kr">市场分歧：部分给 Over -120、部分给 Under -170；两支想赢的队 → 偏向开放</td></tr>
+      <tr><td>历史交锋（6 场）</td><td colspan="2" class="mx">墨西哥 4 胜 1 平 1 负；2018 世界杯墨西哥 2-1 胜韩（Son 进球）</td></tr>
+      <tr><td>核心球员</td><td class="mx">Raúl Jiménez / Julián Quiñones / Edson Álvarez</td><td class="kr">Son Heung-min / Lee Kang-in / Hwang In-beom / Kim Min-jae</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈50/28/26，含约 4% 水位）。赔率来源：bet365（墨 -106 / 平 +230 / 韩 +333）、FanDuel（墨 -105 / 平 +230 / 韩 +320）。大小球总分线 2.5，市场两派分歧（Over -120 vs Under -170），反映"两队都想赢"的开放性预期。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇲🇽 墨西哥 · 进攻 xG</td><td class="ht">金杯 2025 夺冠级别 <b>场均 xG 2.41</b>（全场最佳）</td><td class="ht">首轮 <b>xG 1.41</b>、61% 控球，2-0 胜南非</td><td><b>低于</b>金杯火力——但对手是摆 5-3-2 铁桶且三红牌的南非，回落属正常；运动战仍打开 1.41，效率达标</td></tr>
+      <tr><td class="ht">🇲🇽 墨西哥 · 防守 xGA</td><td class="ht">Aguirre 治下防守稳健</td><td class="ht">首轮零封，仅让南非 <b>xGA 0.07</b></td><td><b>持平/优于</b>历史，但南非进攻≈零、样本含金量低——面对韩国阵地战才是真考验</td></tr>
+      <tr><td class="sc">🇰🇷 韩国 · 进攻 xG/创造力</td><td class="sc">历史被诟病"阵地战创造力不足、靠 Son 反击"</td><td class="sc">首轮 <b>xG 1.84</b>、61.7% 控球、468 传，两球来自中路渗透，2-1 逆转捷克</td><td><b>明显高于</b>历史观感——李刚仁主导的阵地战答案撕掉"只靠反击"标签，是本场最大上修</td></tr>
+      <tr><td class="sc">🇰🇷 韩国 · 防守 xGA</td><td class="sc">历史防线中游、易被打身后</td><td class="sc">首轮被捷克打出 <b>1-0 领先</b>后才逆转，让出定位球失球</td><td><b>持平</b>历史隐患：领先后管理与定位球防守仍是软肋，墨西哥可针对</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：墨西哥进攻较金杯火力回落（1.41 vs 2.41），但属面对铁桶的正常调节、效率仍在；韩国进攻则<b>显著超出</b>历史观感（1.84 xG + 高控球 + 阵地战渗透），是本场被低估的一极。两队都有控球意愿，深度数据支持"开放对攻、谁的阵地战渗透更利"的主线，而非单边墨西哥碾压。来源：Opta（首轮 xG/控球/传球）· Yahoo box score · 金杯赛事数据。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（xGscore）</td><td class="ht">墨西哥 ≈1.5</td><td class="sc">韩国 ≈1.2</td><td>投射接近——韩国首轮 1.84 的真实创造力使其投射不应被大幅低估</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">两队同档接近；去水赔率墨 ≈50% / 平 ≈28% / 韩 ≈26%（含约 4% 水位）</td><td>对手强度校准后，韩国"胜捷克"含金量高于墨西哥"胜残阵南非"</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：两队都偏控球+中前场逼抢，韩国中路渗透 xT 效率高</td><td>场面可能拉锯，关键在谁先在阵地战里打出渗透</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/xGscore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">墨西哥是温和热门，主场情绪推高话题流量，但盘口与专家方向均无揭幕战那种单边狂热 — 四个信号 + 合成过热指数</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 墨胜倾向温和；热度由瓜达拉哈拉主场情绪 + 头名战叙事推高</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">墨西哥是约 50% 的温和热门（远非揭幕战的 66-70%），专家方向多数押墨但不一边倒，且对大小球分歧明显。话题热度来自<b>瓜达拉哈拉主场 + A 组头名直接对话 + Son 的"谢幕之旅"</b>三条叙事，属高曝光而非资金过热。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：墨胜 多数 · 韩不败/受让 少数 · 大小球分裂）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>墨西哥取胜，主场 + 火力是 1/1 的价值价</td></tr>
+      <tr><td>Yahoo Sports</td><td>美系投注媒体</td><td>墨西哥 -106 为稳妥侧；低比分倾向</td></tr>
+      <tr><td>SportsLine（精英专家）</td><td>认证盈利专家</td><td>偏墨胜小球，强调墨主场氛围与转化率天花板</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>8-1 建包，墨胜 + 进球点侧重 Jiménez</td></tr>
+      <tr><td>ESPN（Anish Anand）</td><td>预测媒体</td><td>主场氛围助墨求胜；但黄仁范是韩国 X 因素</td></tr>
+      <tr><td>OneFootball / TotalFootballAnalysis</td><td>战术/预测</td><td>看好墨胜但点出韩国阵地战进化、Over 2.5 有理</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向多数押墨，但非 100% 一边倒——韩国对捷克的逆转给了"韩不败/受让"一派底气。真正分歧在<b>大小球（Over vs Under 2.5）与让球幅度</b>：两支都想赢的球队让"开放对攻"成为合理预期，压低了 Under 的确定性。话题热度由主场情绪驱动，但未见显著推高韩胜的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>墨西哥胜</th><th>解读</th></tr>
+      <tr><td>开盘（DraftKings 06-12）</td><td>1X2</td><td class="mx">≈2.00（+100）</td><td>温和倾向墨；平 +230 / 韩 +325</td></tr>
+      <tr><td>06-16 临场</td><td>多平台</td><td class="mx">≈1.95–2.00（bet365 -106 / FanDuel -105）</td><td>窄幅波动，无单边压缩——区别于揭幕战</td></tr>
+      <tr><td>06-16</td><td>大/小球</td><td colspan="2" class="mx">总分线 2.5；市场两派（Over -120 / Under -170），无共识</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>墨 -0.5</td><td colspan="2" class="mx">墨 -0.5 约 -120~-130（韩 +0.5 受让较锐一侧待核）</td></tr>
+    </table>
+    <div class="note">📌 1X2 价格稳定在墨 ≈2.00、无单边移动——这与揭幕战墨胜 1.48→1.42 的单边压缩形成鲜明对比，说明本场<b>墨胜定价更接近真实概率（≈50%）</b>，没有"东道主溢价"被吃掉的窗口。最活跃的价格发现在<b>大小球与让球盘</b>。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（Kalshi/Polymarket）</b>：本场单场胜负价格、合约量与 30 天动量数据未公开检得 <span style="color:var(--warn)">（待核）</span>——揭幕战后预测市场体量已破 $20 亿，本场作为头名战预计有量但具体数值未确认。</li>
+      <li><b>舆论焦点</b>：高度集中在<b>瓜达拉哈拉主场 + A 组头名直接对话</b>，以及 Son 的"可能是最后一届世界杯"叙事；墨西哥本地媒体（TUDN/ESTO）情绪偏乐观但带"墨西哥 vs 自己"的纪律警惕（呼应首轮 3 红牌）。</li>
+      <li><b>背离信号</b>：未见明显"公众 vs 价格"背离——与揭幕战的全民过热不同，本场市场相对均衡，韩国的逆转给了反方向一定底气。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：墨胜方向温和（≈50%），博彩无单边压缩，过热指数 <b>3/5</b>。热度来自<b>主场情绪 + 头名战叙事 + Son 谢幕</b>的话题流量，而非胜负盘资金过热。最有信息含量的市场是<b>大小球（两派分歧）与让球盘（墨 -0.5）</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — 前瞻/赔率</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 精英专家</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — 8-1 建包</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — 开盘赔率</a> · <a href="https://onefootball.com/en/news/mexico-vs-south-korea-prediction-world-cup-2026-preview-best-bets-43011422">OneFootball — 前瞻</a></div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>（ESPN 06-16）：本场主裁为<b>乌拉圭籍 Gustavo Tejera（38 岁，蒙得维的亚出身，CONMEBOL 国际级）</b>。Tejera 是南美最活跃的国际级主裁之一，执法过 CONMEBOL 解放者杯/南美杯、世预赛南美区，并入选 <b>2024 美洲杯</b>裁判组。来源：ESPN / besoccer / football-lineups。</div>
+    <h4>近两届大赛 + 执法尺度（大赛实际优先）</h4>
+    <ul class="cl">
+      <li><b>2024 美洲杯（最近一届大赛 · 有样本）</b>：Tejera 执法 2024 美洲杯小组赛 <b>哥伦比亚 vs 哥斯达黎加（D 组，6/28，格伦代尔）</b>，并担任阿根廷 vs 厄瓜多尔 1/4 决赛的第四官员。这是其最近一届国际大赛的实际执法样本——主哨场次有限（单场小组赛），单届大赛逐场出牌细分需以官方记录为准 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>世界杯（本届为首次执法世界杯）</b>：Tejera <b>无世界杯主哨样本</b>——本场（或本届其他场次）为其成年世界杯执法序列的早期场次。按"无大赛样本即说无样本"的纪律：世界杯层级他<b>无历史执法数据可参照</b>，只能用美洲杯与生涯尺度近似。</li>
+      <li><b>生涯出牌基准（大样本，作背景而非大赛口径）</b>：生涯约 316 场累计 1,614 黄、36 红，<b>场均约 5.1–5.24 黄</b>——属<b>偏严、出牌偏多</b>的南美哨风（CONMEBOL 联赛对抗激烈，均值天然偏高）。注意：这是联赛/全口径均值，<b>不可直接外推为大赛尺度</b>（南美联赛远比世界杯碎）。</li>
+      <li><b>对两队执法史</b>：<b>零样本</b>——未见 Tejera 执法过墨西哥或韩国任何级别比赛的公开记录。无队伍倾向；首次世界杯主哨通常<b>开场偏严"立威"、按规则手册吹</b>，开场 15 分钟的第一次战术犯规处理是当天尺度的信号弹。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——叠加本届揭幕战 3 红牌、韩捷场亦有事件的"从严"环境，两队在这场高压头名战里都要把累积黄牌（小组赛 2 黄停赛）成本计入犯规决策。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Tejera 是<b>世界杯无样本、美洲杯仅单场小组赛样本</b>的主裁——按规范，本场裁判面<b>不能用其联赛偏严均值（≈5.1 黄/场）直接定调</b>，那会高估出牌预期。可参考的只有：① 南美哨整体对身体对抗容忍度偏低、判罚偏严的<b>流派倾向</b>；② 首次世界杯执法的"开场立威"通病；③ 本届整体从严的环境信号。在一场高强度头名战里，<b>累积黄牌与情绪管理是真实变量</b>，但具体出牌量级缺乏大赛锚点，宜留观察而非定论。</div>
+    <div class="src" style="margin-top:8px">来源：<a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 裁判任命 Gustavo Tejera</a> · <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — Tejera 生涯出牌数据</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — Tejera 履历</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">Alamy/AP — 美洲杯 2024 哥伦比亚vs哥斯达黎加</a></div>
+  </section>
+
+  <!-- ===== 预测首发 ===== -->
+  <section>
+    <h2><span class="n">3</span> 预测首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前约 T-60 官方名单为准 · 待核）· 来源 ESPN / Sports Mole / RotoWire</div>
+    <h4>🇲🇽 墨西哥 预测首发（4-3-3 · Montes 停赛重组）</h4>
+    <div class="lineup">Rangel; Gallardo · Vásquez · Álvarez · Reyes; Lira; Quiñones · Fidalgo · Alvarado · Gutiérrez; Jiménez</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>前锋 / 富勒姆</td><td>终结与点球核心；首轮远点头球破门 2-0；定位球与禁区终结的主破局点</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>边锋 / 利雅得新月</td><td>归化爆点，首轮抓南非失误首开纪录（本届首球）；一对一冲击</td></tr>
+      <tr><td class="mx">Edson Álvarez (C)</td><td>队长 / 后腰→客串中卫</td><td><span class="carry">带入</span> Montes 停赛后回撤搭档 Vásquez——出球强但抽走中场锚点</td></tr>
+      <tr><td class="mx">Johan Vásquez</td><td>中卫 / 热那亚</td><td>重组后防核心，需直面 Son 反击身后球与吴贤揆冲击</td></tr>
+    </table>
+    <h4>🇰🇷 韩国 预测首发（3-4-2-1）</h4>
+    <div class="lineup">金承奎; 李韩范 · 金玟哉 · 李基赫; 薛英佑 · 黄仁范 · 白升浩 · 李泰锡; 李刚仁 · 李在城; 孙兴慜(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="kr">孙兴慜 Son Heung-min (C)</td><td>前锋 / LAFC</td><td>队长、史上出场纪录；"谢幕之旅"；反击速度是制裁墨重组中卫的最锋利武器</td></tr>
+      <tr><td class="kr">黄仁范 Hwang In-beom</td><td>后腰 / 费耶诺德</td><td><span class="carry">带入</span> 首轮一传一射当选最佳；中场出球+后插上是韩国新进攻通道</td></tr>
+      <tr><td class="kr">李刚仁 Lee Kang-in</td><td>中场 / PSG</td><td><span class="carry">带入</span> 首轮 37/37 传球、3 次创造机会；阵地战解题钥匙</td></tr>
+      <tr><td class="kr">金玟哉 Kim Min-jae</td><td>中卫 / 拜仁</td><td>三后卫定海神针、制空与出球核心；本组身价最高（€40m）</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Sports Mole / RotoWire），<b>以赛前官方名单为准 · 待核</b>。墨西哥因 Montes 停赛重组中卫（Álvarez 回撤）是最大变量；韩国大概率沿用对捷克的 3-4-2-1 与首发框架。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队最近两届大赛的实际打法与结果（墨：世界杯 2022 小组出局 + 金杯 2023/美洲杯 2024；韩：世界杯 2022 16 强 + 亚洲杯 2023/24 半决赛）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 墨西哥 · Javier Aguirre</div>
+        <div class="role">4-3-3 控球围攻 + 主场提速；Montes 停赛后中卫重组</div>
+        <ul class="cl">
+          <li>首轮对南非证明：无 Álvarez 锚点的三中场（Lira-Fidalgo-Gutiérrez）能过载铁桶阵（61% 控球、20 次禁区触球）。但<b>本场 Álvarez 被迫回撤客串中卫</b>，中场失去最强屏障——这是从"破铁桶"到"防对攻"的角色切换，难度更高。</li>
+          <li>交叉参照：世界杯 2022 墨西哥小组出局（攻坚乏力、净胜球劣势出局）、金杯 2023 夺冠（场均 2.41 xG / 0.85 xGA 全场最佳）、美洲杯 2024 小组出局（进攻效率低）——墨西哥的<b>历史痼疾正是"控球有余、终结不足"</b>，首轮 16 射 4 正再次印证。面对金玟哉领衔的防线，这个转化率是真隐患。</li>
+          <li>风险：Álvarez 回撤后中场单后腰（Lira）对位韩国李刚仁/黄仁范的双核渗透，若被中路打穿，Son 的反击身后球将直接威胁重组中卫——这是墨本届防线最硬的一次测试。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0828b">🇰🇷 韩国 · 洪明甫（Hong Myung-bo）</div>
+        <div class="role">3-4-2-1 · 阵地战渗透 + Son 反击双模式</div>
+        <ul class="cl">
+          <li>首轮对捷克撕掉旧标签：61.7% 控球、468 传、李刚仁/黄仁范主导中路渗透连扳两球——证明<b>韩国已有"Son 之外"的阵地战答案</b>，不再只靠反击。这是本届最大的增量信号。</li>
+          <li>交叉参照：世界杯 2022 韩国 16 强（小组末轮 2-1 绝杀葡萄牙、低位反击 + Son 带伤拼搏的"巨人杀手"模板）、亚洲杯 2023/24 半决赛（个人天赋强但屡现防守漏洞、被约旦 0-2 淘汰暴露体系问题）——韩国的<b>命门始终是三后卫转换防守漏人</b>。可借鉴日本 2022"低位反击 + 板凳奇兵（Doan 替补两度扳平德/西）"模板：本场韩国若开局稳守、用李刚仁阵地战 + Son/吴贤揆反击，再以替补冲击墨重组中卫的体能，是最现实的取胜路径。</li>
+          <li>应对：洪明甫大概率沿用对捷克的稳健姿态（黄喜灿可能仍替补待命作下半场奇兵），用李刚仁串联 + Son 顶中锋拉扯墨重组中卫，抓 Álvarez 回撤后中场的空当。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN · Anish Anand <small>· 预测媒体</small></div>瓜达拉哈拉主场会给墨西哥"多一个人"的助力，墨将以高能量、强对抗求胜以锁定出线；但点名<b>黄仁范是韩国 X 因素</b>——首轮一传一射当选最佳的他，在墨中场重组（Álvarez 回撤）后的空当里可能再次决定比赛。</div>
+    <div class="insight"><div class="who">Sports Mole / RotoWire <small>· 战术/预测首发</small></div>一致指向 <b>Álvarez 回撤客串中卫搭档 Vásquez</b> 应对 Montes 停赛；认为墨防线重组 + 16 射 4 正的转化率天花板，是韩国阵地战与反击的双重切入口。</div>
+    <div class="insight"><div class="who">Opta（首轮复盘）<small>· 数据</small></div>韩国对捷克 468 次成功传球为 1966 年以来世界杯单场最高、xG 1.84——量化证据显示韩国阵地战创造力已进化，不再是"只靠 Son 反击"的旧画像，对墨非铁桶的开放空间更具威胁。</div>
+    <div class="insight"><div class="who">综合 · 大小球与让球信号 <small>· 战术信号</small></div>两支都想赢头名战 → 市场对 Over/Under 2.5 分歧明显，让球聚焦墨 -0.5。真正悬念：墨重组中卫能否守住 Son/吴贤揆反击 + 墨能否把控球转化为进球（呼应其历史"终结不足"痼疾）。</div>
+  </section>
+
+  <!-- ===== 综合研判 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：墨西哥窄幅小胜（1-0 / 2-1）或平局（≈28%）是基准剧本——主场 + H2H + 火力略占优，但本场远非揭幕战式碾压；韩胜（≈26%）是中等概率，需要黄仁范/李刚仁的中路渗透撕开墨重组中卫 + Son/吴贤揆反击兑现同时发生（首轮逆转捷克已证明韩有此能力）。</li>
+      <li><b>关键先生</b>：Jiménez（墨/终结与定位球）、Quiñones（墨/一对一爆点）、Álvarez + Vásquez（墨/重组中卫防线）、Son（韩/反击与谢幕动机）、黄仁范 + 李刚仁（韩/中路渗透双核）、金玟哉（韩/制空与出球）。</li>
+      <li><b>胜负手</b>：① <b>墨重组中卫（Álvarez 回撤）能否守住 Son/吴贤揆的转换冲击</b>——决定让球盘（墨 -0.5）；② <b>墨 16 射 4 正的转化率能否惩罚韩三后卫回防软肋</b>；③ 两支想赢的队让<b>大小球（Over/Under 2.5）成市场最大分歧</b>。</li>
+      <li><b>市场视角</b>：墨胜定价温和（≈50%、无单边压缩），1X2 价值接近真实概率，无"东道主溢价"窗口；最有信息含量的是<b>大小球（两派分歧）与让球盘（墨 -0.5）</b>。过热指数 3/5（热度来自主场情绪与头名战叙事，而非胜负盘资金）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 墨西哥重组后防具体首发（Álvarez 是否回撤、中场单后腰人选）；② 韩国背靠背两场后体能与李刚仁/金玟哉临场状态；③ 双方官方首发名单（约 T-60）；④ 主裁 Gustavo Tejera 在 2024 美洲杯单场（哥伦比亚vs哥斯达黎加）的具体出牌细分（世界杯无样本，已注明）；⑤ Kalshi/Polymarket 本场单场价格、合约量与 30 天动量未公开检得；⑥ 亚盘让球（墨 -0.5/受让）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079638/mexico-vs-south-korea-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 赛程/裁判 Tejera/预测首发/看点</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/who-replaces-montes-after-red-card-predicted-mexico-xi-for-world-cup-2026-clash_599404.html">Sports Mole — Montes 停赛后墨西哥预测首发</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/mexico-vs-south-korea-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-a-118510">RotoWire — 预测首发/战术分析</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-mexico-vs-south-korea-06-18-26-world-cup-2026/">Squawka — 前瞻/赔率</a> · <a href="https://sports.yahoo.com/articles/mexico-vs-south-korea-picks-111336082.html">Yahoo Sports — 预测/赔率</a><br>
+      • <a href="https://www.sportsline.com/insiders/mexico-vs-south-korea-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 精英专家</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/mexico-vs-south-korea-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-avQBM7X4bg7j/">Racing Post — 8-1 建包</a> · <a href="https://dknetwork.draftkings.com/2026/06/12/opening-odds-for-mexico-vs-south-korea-in-the-fifa-2026-world-cup/">DK Network — 开盘赔率</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta — 韩国首轮统计/468 传球</a> · <a href="https://www.espn.com/soccer/story/_/id/48957098/group-2026-world-cup-teams-records-stats-know-mexico-south-korea-czechia-south-africa">ESPN — A组形势/H2H</a><br>
+      • <a href="https://www.statshub.com/es/referee/tejera-gustavo/786563">StatsHub — Tejera 出牌数据</a> · <a href="https://m.football-lineups.com/referee/4363/Gustavo-Tejera">football-lineups — Tejera 履历</a> · <a href="https://www.alamy.com/referee-gustavo-tejera-during-a-copa-america-group-d-soccer-match-between-colombia-and-costa-rica-in-glendale-ariz-friday-june-28-2024-ap-photorick-scuteri-image612629913.html">AP — 美洲杯 2024 Tejera 执法</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-17 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',KR='#cd2e3a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['墨西哥胜','平局','韩国胜'],datasets:[{data:[50,28,26],backgroundColor:[MX,DR,KR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[52,48],backgroundColor:[KR,MX],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（市场分歧，约五五）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['墨西哥','韩国','捷克','南非'],datasets:[{data:[48,30,18,4],backgroundColor:[MX,KR,'#3b6fb0','#e0ad1a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'夺组隐含概率 %（示意）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'墨西哥',data:[6.5,6,7,7,7,7],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'韩国',data:[6,6.5,7.5,5.5,8.5,7.5],borderColor:KR,backgroundColor:KR+'33',pointBackgroundColor:KR}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

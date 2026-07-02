@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Pré-Jogo · Equador vs Curaçao · Copa do Mundo 2026 · 2ª Rodada do Grupo E</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-ecuador-vs-curacao.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-ecuador-vs-curacao.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-ecuador-vs-curacao.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-ecuador-vs-curacao.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-ecuador-vs-curacao.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#ffce00;--sc:#2f6fe0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a6e00,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21180c,#0e1f3a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ffe066;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-ecuador-vs-curacao.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-ecuador-vs-curacao.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-ecuador-vs-curacao.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao Centro de Análise</a><br>
+  <span class="badge">⚽ Copa do Mundo 2026 · 2ª Rodada do Grupo E · Batalha de sobrevivência na "véspera da eliminação" entre duas seleções derrotadas na 1ª rodada</span>
+  <h1>Equador vs Curaçao</h1>
+  <div class="meta">20 de junho de 2026 · Kansas City · GEHA Field at Arrowhead Stadium · 19:00 ET · Grupo E (mesmo grupo: Alemanha, Costa do Marfim)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ffe066">🇪🇨 Equador</div><div class="rk">Comandado por Beccacece · 1ª rodada: derrota por 0-1 para a Costa do Marfim (fim de 19 jogos de invencibilidade) · 1.01 xG, 3 bolas na trave · a finalização é o ponto fraco</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇼 Curaçao</div><div class="rk">Comandado por Advocaat · 1ª rodada: derrota por 1-7 para a Alemanha · menor país a participar de uma Copa na história (população de cerca de 156 mil) · gol de estreia de Comenencia</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 Resumo Rápido (leia este parágrafo primeiro)</h3>
+    <p class="lead">Este é um <b>jogo de vida ou morte ("perder é ser eliminado") entre duas seleções derrotadas na 1ª rodada</b>, mas com enorme diferença de grandeza: o Equador perdeu apertado por 0-1 para a Costa do Marfim na estreia — <b>1.01 xG no total, 12 finalizações, 3 na trave, mas apenas 1 no alvo</b> — "não converteu o que deveria", o que encerrou 19 jogos de invencibilidade; o Curaçao foi goleado por 1-7 pela Alemanha em sua estreia (xG 0.40 no total), mas Comenencia marcou o primeiro gol da história do país em Copas e chegou a empatar em 1-1 no início. As linhas são díspares — vitória do Equador a apenas <b>1.10</b> (probabilidade implícita sem margem ≈86%), empate 11.00 (≈8%), vitória do Curaçao em até 20.00–27.00 (≈4%); o supercomputador da Opta dá ao Equador <b>86,1%</b> de chance de vitória, empate 9,2% e Curaçao apenas 4,7%. O ponto fraco do Equador é a <b>eficiência de finalização</b>: desde a vitória por 4-0 sobre a Bolívia em novembro de 2024, são 16 jogos sem nenhum com 4 gols e 12 jogos com ≤1 gol — favorito no papel, mas "incapaz de balançar a rede" é o maior risco. O roteiro realista do Curaçao: compactar o bloco baixo, controlar o número de gols sofridos, apostar nos contra-ataques de Comenencia/Chong. Roteiro base: <b>vitória magra do Equador por 2-0 / 1-0</b>, com a tensão concentrada em "se o Equador converte suas chances e quantos gols faz". Índice de superaquecimento do mercado ≈ 2/5 (confronto entre azarões, baixo tráfego).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita de vitória do Equador (sem margem)</div><div class="v" style="color:#ffe066">≈86%</div></div>
+      <div class="key"><div class="k">Prob. implícita de vitória do Curaçao (sem margem)</div><div class="v" style="color:#7fa6e6">≈4%</div></div>
+      <div class="key"><div class="k">Jogos do Equador com ≥4 gols nos últimos 16</div><div class="v" style="color:var(--warn)">0</div></div>
+      <div class="key"><div class="k">Índice de superaquecimento do mercado</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>A seca de gols do Equador (trazido do jogo anterior)</b>: na 1ª rodada, 1.01 xG, 12 finalizações, 3 na trave e só 1 no alvo — a capacidade de aproveitar chances é uma deficiência real; nos últimos 16 jogos, nenhum com 4 gols. Contra o Curaçao, a defesa mais frágil, se consegue ou não "abrir as comportas" decide o handicap e a liquidação de over/under.</li>
+      <li><b>A resistência defensiva do Curaçao (trazido do jogo anterior)</b>: na 1ª rodada levou 7 gols da Alemanha e em 2026 sofreu 18 gols em 5 amistosos internacionais; mas nas eliminatórias sofreu apenas 6 em 10 jogos — contra o Equador deve abrir mão do duelo aberto, recuar mais e focar em controlar os gols sofridos.</li>
+      <li><b>Comenencia é o único ponto de explosão do Curaçao</b>: marcou o gol de estreia contra a Alemanha, eleito melhor em campo pela ESPN; ele e Chong (o mais sofrido em faltas) são a única fonte de surpresa no contra-ataque do Curaçao.</li>
+      <li><b>Árbitro principal Ma Ning (China)</b>: o primeiro árbitro chinês a apitar uma Copa do Mundo desde 2002, apelidado de "Mestre dos Cartões" (Card Master); na Super Liga Chinesa a média de cartões amarelos é elevada, e o risco de cartões acumulados deve ser observado caso a intensidade do jogo aumente.</li>
+    </ul>
+  </div>
+
+  <!-- Notícias-chave de última hora -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#211a0c,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-Chave de Última Hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fontes + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que afetam este jogo, explicando ponto a ponto como cada um altera a tática ou o resultado (inclui itens trazidos do jogo anterior de ambas as seleções)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ffe066;font-weight:700">Equador · Trazido do jogo anterior · Seca de gols <span style="color:var(--mut);font-weight:400">· Transferência da análise do jogo contra a Costa do Marfim · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Equador perde por 0-1 para a Costa do Marfim na 1ª rodada, <b>fim de 19 jogos de invencibilidade</b>; defesa em dia, mas a finalização é o verdadeiro ponto fraco</div>
+      <p style="font-size:13.5px">Dando sequência à transferência prospectiva da análise do jogo contra a Costa do Marfim: o Equador foi, na verdade, o lado mais perigoso na estreia — <b>1.01 xG no total, 12 chutes, 3 bolas na trave</b> (Yeboah e Minda acertaram duas traves no primeiro tempo), mas foi derrotado por Amad Diallo aos 90 minutos, com <b>apenas 1 finalização no alvo</b> (Plata). A derrota não veio de um colapso defensivo, mas da falta de capacidade de aproveitar as chances. Essa derrota encerrou uma sequência de 19 jogos de invencibilidade do Equador (desde novembro de 2024). E o retrato mais decisivo: <b>nos últimos 16 jogos internacionais, nenhum com 4 gols e 12 com ≤1 gol</b> — favorito no papel, mas "incapaz de balançar a rede".</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: contra o Curaçao (que levou 7 gols da Alemanha na estreia, a defesa mais frágil), a qualidade ofensiva do Equador é suficiente para criar muitas chances — mas se ele converte o xG em gols é a maior incógnita do jogo. Se for como na 1ª rodada ("trave, chute para fora"), a diferença de nível no papel será comprimida em uma vitória magra de poucos gols, afetando diretamente o handicap (Equador -1.5/-2) e a liquidação de over/under.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo Costa do Marfim 1-0 Equador</a> · <a href="https://www.espn.com/soccer/story/_/id/49108038/ecuador-curacao-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — prévia/1.01 xG/3 traves</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">Curaçao · Trazido do jogo anterior · Defesa perfurada <span style="color:var(--mut);font-weight:400">· Transferência da análise do jogo contra a Alemanha · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Curaçao perde por 1-7 para a Alemanha na estreia, <b>Comenencia marca o primeiro gol do país em Copas</b>; defesa perfurada, mas com pontos positivos</div>
+      <p style="font-size:13.5px">Dando sequência à transferência prospectiva da análise do jogo contra a Alemanha: o Curaçao, como <b>o menor país a participar de uma Copa na história</b> (população de cerca de 156 mil) em sua estreia, chegou a empatar em 1-1 aos 21 minutos com Comenencia (único ponto positivo do jogo, melhor em campo pela ESPN), mas acabou goleado por 1-7 pela Alemanha (xG total do Curaçao de apenas 0.40, 8 chutes e 2 no alvo). Em <b>2026 já sofreu 18 gols em 5 amistosos internacionais</b>, e no aquecimento pré-Copa também perdeu por 1-4 para a Escócia. Mas a equipe de Advocaat <b>sofreu apenas 6 gols em 10 jogos das eliminatórias</b> — a base do bloco baixo ainda está lá, e o ponto-chave é que contra o Equador precisa abrir mão do duelo aberto e recuar mais.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o único objetivo realista do Curaçao é limitar os gols sofridos e focar em controlar o placar. Se for perfurado cedo como contra Alemanha/Escócia, o placar pode escorregar para 3-0/4-0, conectando-se ao over/under (over) e ao handicap do Equador (-1.5/-2); se conseguir compactar a estrutura e arrastar o jogo para um duelo de poucos gols, a seca de gols do Equador tornará uma vitória magra de poucos gols uma realidade. Comenencia e Chong são os únicos pontos de surpresa no contra-ataque.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://theanalyst.com/articles/germany-vs-curacao-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo Alemanha 7-1 Curaçao</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ecuador-vs-curacao-predictions-team-news-odds-betting-tips-bet-builder-anHRj5I7yf2y/" style="color:var(--accent)">Racing Post — Curaçao sofreu 18 gols em 2026/situação da equipe</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Escalação · Provável escalação <span style="color:var(--mut);font-weight:400">· ESPN · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Equador deve recuperar Estupiñán, Páez indefinido; Advocaat pode mudar o Curaçao para 4-5-1 com Gorre entrando</div>
+      <p style="font-size:13.5px">Provável escalação do Equador (ESPN, 4-2-3-1 / 4-4-1-1): Galíndez; Pacho · Ordóñez · A. Franco; Hincapié · Vite · Caicedo · Yeboah; Minda · E. Valencia · Plata — Estupiñán (AC Milan, ausente surpresa na 1ª rodada) deve retornar, e o capitão Valencia, de 36 anos, lidera o ataque. Provável escalação do Curaçao (Racing Post, 4-5-1): Room; Floranus · Bazoer · Obispo · Fonville; Comenencia · L. Bacuna · Chong · J. Bacuna · Gorre; Locadia — recuando um atacante em relação ao jogo contra a Alemanha e reforçando o meio-campo. <span style="color:var(--warn)">[A escalação oficial de ambos os lados depende da lista da FIFA antes do jogo · A confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: se Estupiñán e Páez retornarem ao Equador, a criatividade pela esquerda e no setor de meio-ataque aumenta, elevando a capacidade de furar o bloco baixo do Curaçao — justamente a chave para converter o xG; se o Curaçao mudar para 4-5-1 e fechar o meio-campo, puxa o jogo para poucos gols, aumentando a probabilidade de vitória magra de placar baixo. Ambas as mudanças mexem com o handicap e o over/under.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://www.espn.com/soccer/story/_/id/49108038/ecuador-curacao-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — provável escalação</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ecuador-vs-curacao-predictions-team-news-odds-betting-tips-bet-builder-anHRj5I7yf2y/" style="color:var(--accent)">Racing Post — situação da equipe/provável escalação</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Ambiente de jogo · Árbitro já oficializado <span style="color:var(--mut);font-weight:400">· FIFA / ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro definido: o renomado apitador chinês <b>Ma Ning</b> apita o jogo — o <b>primeiro árbitro chinês a apitar uma Copa do Mundo desde 2002</b>, apelidado de "Mestre dos Cartões"</div>
+      <p style="font-size:13.5px">A FIFA designou o chinês <b>Ma Ning</b> para apitar esta 2ª rodada do Grupo E; ele é o <b>primeiro árbitro chinês escolhido como árbitro central de uma Copa do Mundo desde Pei Pan em 2002</b> (a China não se classificou nesta edição, mas os torcedores acompanham este jogo por causa de Ma Ning). Seu currículo inclui a final da Copa da Ásia de 2023 (primeira vez que um árbitro chinês apitou uma final de Copa da Ásia), o Mundial de Clubes de 2025 (quarto árbitro em vários jogos) e a Copa do Mundo Sub-20 de 2025. Por ter mostrado 9 amarelos e 3 vermelhos em um jogo da liga doméstica em 2015, recebeu na China o apelido de "Mestre dos Cartões". O jogo será ao ar livre no Arrowhead Stadium, em Kansas City, com início à noite em junho, sem informações de clima extremo.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o critério de Ma Ning é mais rigoroso na distribuição de cartões (média de cerca de 4,13 amarelos por jogo na Super Liga Chinesa de 2025), somado ao ambiente de arbitragem mais severo desta edição; em um jogo de "perder é ser eliminado", com possível escalada de intensidade, o total de cartões amarelos e os cartões acumulados (2 amarelos suspendem para o próximo jogo) têm o risco amplificado — se o Curaçao recorrer a faltas para ganhar tempo ou interromper o ataque do Equador, o custo de cartões é maior. Veja mais no módulo de arbitragem abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fonte: <a href="https://edition.cnn.com/2026/06/15/sport/china-world-cup-referee-ma-ning-intl-hnk" style="color:var(--accent)">CNN — Ma Ning, o "Mestre dos Cartões"</a> · <a href="https://www.chinadailyasia.com/hk/article/635152" style="color:var(--accent)">China Daily — primeiro árbitro chinês de Copa em 24 anos</a></div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Dados (Central)</h2>
+    <div class="sub">Probabilidade implícita de vitória/empate/derrota (odds sem margem) · panorama do Grupo E · mercado de over/under · retrato de força geral — todos os gráficos usam dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (sem margem, calculada por odds decimais)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos de 3.5 (sem margem)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Pontos/saldo de gols das 4 seleções do Grupo E após a R1</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Retrato de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇪🇨 Equador</th><th>🇨🇼 Curaçao</th></tr>
+      <tr><td>Técnico</td><td class="ht">Sebastián Beccacece (argentino)</td><td class="sc">Dick Advocaat (renomado técnico holandês)</td></tr>
+      <tr><td>Resultado da 1ª rodada</td><td class="ht">0-1 para a Costa do Marfim (1.01 xG, 3 traves, fim de 19 jogos de invencibilidade)</td><td class="sc">1-7 para a Alemanha (Comenencia marca o primeiro gol do país em Copas)</td></tr>
+      <tr><td>Pontos/saldo de gols após a R1</td><td class="ht">0 pontos / -1</td><td class="sc">0 pontos / -6 (lanterna do grupo)</td></tr>
+      <tr><td>Forma de classificação</td><td class="ht">2º da zona sul-americana (atrás apenas da Argentina) · apenas 5 gols sofridos em 18 jogos</td><td class="sc">Classificou-se invicto nas eliminatórias da CONCACAF · menor país a participar da história (cerca de 156 mil habitantes)</td></tr>
+      <tr><td>Retrato ofensivo</td><td class="ht"><b>Nenhum jogo com ≥4 gols e 12 jogos com ≤1 gol nos últimos 16</b> — a finalização é o ponto fraco</td><td class="sc">6 gols sofridos em 10 jogos das eliminatórias; <b>18 gols sofridos em 5 amistosos internacionais em 2026</b></td></tr>
+      <tr><td>Probabilidade de classificação (supercomputador Opta)</td><td class="ht">≈86,9% de avanço</td><td class="sc">≈19,0% de avanço</td></tr>
+      <tr><td>Odds 1X2 (decimais)</td><td class="ht">Vitória 1.10 (implícita ≈86%)</td><td class="sc">Vitória 20.00–27.00 (≈4%) · empate 11.00 (≈8%)</td></tr>
+      <tr><td>Jogadores-chave</td><td class="ht">Moisés Caicedo / Enner Valencia / Piero Hincapié</td><td class="sc">Livano Comenencia / Leandro Bacuna / Tahith Chong</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as probabilidades implícitas após remover a margem das odds decimais (≈86/8/4, em alta consonância com o supercomputador da Opta de 86,1/9,2/4,7). Fonte das odds: bet365 / Paddy Power / oddschecker (Equador 1/10–1/12 ≈ 1.08–1.10, empate 9/1–10/1 ≈ 10.00–11.00, Curaçao 19/1–26/1 ≈ 20.00–27.00). A linha de over/under deste jogo subiu para 3.5 (grande disparidade de nível): puxado pela seca de gols do Equador, o mercado não está unilateralmente no Over 3.5; a Racing Post recomenda principalmente "vitória do Equador + menos de 3.5 gols". O handicap do Equador -1.5/-2 fica a confirmar conforme a linha em tempo real antes do jogo. Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados avançados · métricas esperadas -->
+  <section style="border:1px solid #14503f;border-left:4px solid #10b981;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados Avançados: Métricas Esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· médias históricas vs valores reais desta Copa · sinais de qualidade subjacentes · com fontes</span></h2>
+    <div class="sub">Método central: comparar item a item a <b>referência histórica de cada seleção (últimos dois grandes torneios / eliminatórias / amostra de amistosos)</b> com os <b>valores reais dos jogos já disputados nesta Copa</b>, para ver "se nesta edição está acima ou abaixo do nível histórico e o que isso indica". A história do Curaçao em grandes torneios é praticamente nula, então usa-se a <b>amostra de eliminatórias / Liga das Nações / amistosos</b>, com indicação clara de que a amostra é fraca; a amostra pública de xG de seleções é limitada, e itens faltantes são marcados como "A confirmar", nunca inventados.</div>
+
+    <h4>① Central: médias históricas vs valores reais desta Copa (comparativo por seleção)</h4>
+    <table>
+      <tr><th>Seleção / indicador</th><th>Referência histórica (amostra de origem)</th><th>Real desta Copa (1ª rodada)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇪🇨 Equador · ataque xG/gols</td><td class="ht">Baixa produção de gols nas eliminatórias sul-americanas (sustenta-se no 1-0); <b>nenhum jogo com ≥4 gols e 12 com ≤1 gol nos últimos 16</b>, ataque pobre é um retrato de longo prazo</td><td class="ht">1ª rodada: <b>xG 1.01</b>, 3 traves, 12 chutes e só 1 no alvo, 0 gols de fato</td><td>O xG desta Copa (1.01) está <b>acima</b> da impressão histórica conservadora (mais proativo, mais perigoso), mas <b>converteu em 0 gols</b> — "criação melhorou, finalização permanece", o ponto fraco não mudou</td></tr>
+      <tr><td class="ht">🇪🇨 Equador · defesa xGA/gols sofridos</td><td class="ht">Apenas 5 gols sofridos em 18 jogos das eliminatórias sul-americanas — uma das melhores defesas do continente, disciplina estrutural extrema</td><td class="ht">1ª rodada: forçou baixo xGA da Costa do Marfim, sofreu 1 gol (gol decisivo de capacidade individual aos 90')</td><td><b>Alinhado</b> com a história: estrutura defensiva em dia, o gol veio de um lampejo individual pela ponta e não de um colapso de sistema</td></tr>
+      <tr><td class="sc">🇨🇼 Curaçao · ataque xG/gols</td><td class="sc"><span style="color:var(--warn)">Amostra de grandes torneios praticamente nula (estreia)</span>; na fase de eliminatórias a produção de gols foi razoável (22 gols em 10 jogos), mas com adversários de nível baixo</td><td class="sc">1ª rodada: <b>xG 0.40</b>, 8 chutes e 2 no alvo, Comenencia marcou 1 gol</td><td>Diante de adversários de nível de Copa, o ataque foi reduzido ao mínimo (0.40 xG) — os números brilhantes das eliminatórias <b>não</b> se extrapolaram ao palco de elite, amostra fraca exige cautela</td></tr>
+      <tr><td class="sc">🇨🇼 Curaçao · defesa xGA/gols sofridos</td><td class="sc">Apenas 6 gols sofridos em 10 jogos das eliminatórias (base de bloco baixo); mas <b>18 gols sofridos em 5 amistosos internacionais em 2026</b>, derrota de 1-4 para a Escócia no aquecimento</td><td class="sc">1ª rodada: Alemanha gerou 3.91 xGA, 7 gols sofridos</td><td><b>Muito pior</b> que a referência das eliminatórias: ao subir de nível a defesa foi perfurada, o "poucos gols sofridos" das eliminatórias falha diante do poder de fogo de nível de Copa — a defesa-base deste jogo ainda precisa ser revisada para baixo</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórica</b>: a criatividade do Equador nesta edição está <b>acima</b> da histórica (1.01 xG), mas a finalização permanece igual (0 gols), o ponto fraco é aproveitar as chances; o ataque do Curaçao foi reduzido a 0.40 xG e a defesa gerou 3.91 xGA, <b>a amostra das eliminatórias teve adversários de nível baixo e não pode ser extrapolada ao nível de Copa</b> (amostra fraca, como dito). Os dados avançados estão alinhados com a linha principal de "Equador domina no papel, mas a seca de gols pode comprimir a diferença". Fonte: Opta Analyst (xG/estatísticas da 1ª rodada) · FootyStats/FotMob (histórico/eliminatórias) · registros públicos de jogos internacionais. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção do jogo & calibração Opta</h4>
+    <table>
+      <tr><td>xG projetado pelo modelo para o jogo (xGscore)</td><td class="ht">Equador ≈1.9</td><td class="sc">Curaçao ≈0.4</td><td>Após calibração, a projeção do Equador é claramente superior — mas "transformar xG em gols" sempre foi o calcanhar de Aquiles do Equador, atenção à taxa de conversão (alerta de armadilha abaixo)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">No sistema, o Equador fica firme na parte de cima do Grupo E e o Curaçao na lanterna; o supercomputador dá ao Equador vitória de <b>86,1%</b>, empate 9,2%, Curaçao 4,7% (consistente com as odds sem margem)</td><td>Após calibrar a força do adversário, a amostra de eliminatórias do Curaçao teve adversários mais fracos e pouco valor; o teste real de nível de Copa (0.40 xG) é a referência verdadeira</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt</td><td colspan="2" class="sc">Dados públicos de seleções são limitados <span style="color:var(--warn)">(A confirmar)</span> — qualitativamente: o meio-campo do Equador (Caicedo) controla o jogo + bola parada com Hincapié no alto, e o Curaçao é forçado a um bloco baixo profundo</td><td>A inclinação de campo provavelmente penderá para o Equador por muito tempo</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Alerta de armadilha (descompasso entre xG e gols reais)</b>: o modelo projeta ≈1.9 xG para o Equador, contra a defesa mais frágil, e a lógica de "goleada" no papel é tentadora; mas a seca de gols dele — <b>nenhum jogo com ≥4 gols nos últimos 16, 1.01 xG na 1ª rodada e 0 gols</b> — é real e persistente. "Alto xG ≠ placar alto" se confirma repetidamente no Equador — over/handicaps altos (-2 ou mais) exigem atenção a esse descompasso.</div>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de métricas avançadas (o que cada uma dessas métricas "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): a soma da qualidade das chances de finalização; removendo os pênaltis, reflete melhor a criatividade em jogo corrido.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que o adversário cria contra você, mede o nível defensivo real e não a sorte/defesas do goleiro.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo esperado por 90 minutos): xG−xGA, o melhor indicador isolado de força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG por chute</b> (qualidade média por finalização): se a escolha de finalização é eficiente — valor baixo = muitos chutes de longe/chances ruins (as 3 traves do Equador na 1ª rodada já são um sinal de ineficiência).</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor o valor = pressão mais agressiva, reflete a intensidade da marcação.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinação de campo): proporção de toques no terço ofensivo, mede territory/controle de jogo em vez da simples posse de bola.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/Sofascore/Understat/xGscore; em métricas detalhadas como PPDA/xT/field tilt as seleções têm amostra pública limitada, e itens faltantes são sempre marcados como "A confirmar", nunca com valores inventados. A história do Curaçao em grandes torneios é praticamente nula, então foi substituída por amostras de eliminatórias/Liga das Nações com indicação de sua fragilidade.</div>
+  </section>
+
+  <!-- Termômetro do mercado de apostas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Termômetro do Mercado de Apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de especialistas / odds / fluxo de capital / opinião pública</span></h2>
+    <div class="sub">Um confronto entre azarões extremamente assimétrico em grandeza — o resultado é certo, e todo o capital e divergência estão no over/under e na margem do handicap</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · frio; resultado sem suspense, sem prêmio emocional</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Duas seleções derrotadas na 1ª rodada + grande disparidade de nível + odds curtas do Equador a 1.10 — ninguém questiona a direção do resultado, e tanto o interesse quanto o capital de apostas estão escassos. O capital se concentra no <b>handicap do Equador (-1.5/-2) e no over/under (3.5)</b>, além de props relacionados a Comenencia/Chong e linhas de escanteios/cartões.</div>
+    </div>
+
+    <h4>① Agregação de recomendações de especialistas (estatística de direção: vitória do Equador unânime · empate raríssimo · vitória do Curaçao 0)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>instituto de dados/supercomputador</td><td>Vitória do Equador <b>86,1%</b> / empate 9,2% / Curaçao 4,7%</td></tr>
+      <tr><td>Racing Post</td><td>mídia de apostas britânica</td><td>Recomenda principalmente <b>vitória do Equador + menos de 3.5 gols</b> (com base na seca de gols); no Bet Builder aposta em Chong sofrendo faltas e Curaçao levando cartão</td></tr>
+      <tr><td>Yahoo Sports</td><td>mídia de previsões</td><td>Vitória do Equador; a finalização é o ponto a observar</td></tr>
+      <tr><td>Goal.com</td><td>mídia de previsões</td><td>O Equador deve "reencontrar os gols" aproveitando a defesa frágil do Curaçao</td></tr>
+      <tr><td>Sports Illustrated</td><td>mídia de previsões</td><td>Vitória magra do Equador, o Curaçao não será facilmente goleado de novo</td></tr>
+      <tr><td>Compare.bet</td><td>agregador de odds</td><td>Vitória do Equador + ângulo de handicap</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de superaquecimento (baixo)</b>: a direção do resultado aposta de forma unânime no Equador — consenso razoável, não superaquecimento. A verdadeira divergência está no <b>over/under (3.5) e na margem do handicap</b> (-1.5 vs -2), e o ponto central de disputa é se a seca de gols do Equador fará com que "a goleada que deveria acontecer não aconteça". Não há nenhum capital empurrando a vitória do Curaçao, e o interesse no tema é, no geral, baixo.</div>
+
+    <h4 style="margin-top:20px">②-b Posicionamento e Movimento das Linhas (Abertura → Atual)</h4>
+    <table>
+      <tr><th>Momento</th><th>Linha / odds (decimais)</th><th>Mudança de posicionamento · gatilho</th></tr>
+      <tr><td>Linha inicial (faixa de abertura pré-jogo)</td><td class="ht">Vitória do Equador ≈1.12 · empate ≈10.00 · Curaçao ≈23.00</td><td>A abertura já precificou o Equador como amplo favorito — 2º das eliminatórias sul-americanas vs o menor país a participar da história, enorme disparidade de nível</td></tr>
+      <tr><td>Abertura (após a R1 em 06-15)</td><td class="ht">Vitória do Equador ≈1.10 · empate ≈11.00 · Curaçao ≈22.00</td><td><b>Reprecificação pelo resultado da R1</b>: Curaçao goleado por 1-7 pela Alemanha → odds de vitória do Curaçao se alongam ainda mais; o Equador, embora derrotado por 0-1, com 1.01 xG/3 traves, segue visto como o lado dominante</td></tr>
+      <tr><td>Linha atual (06-19)</td><td class="ht">Vitória do Equador ≈1.08–1.10 · empate ≈10.00–11.00 · Curaçao ≈20.00–27.00</td><td>A linha de resultado quase não se move (já no fundo); a descoberta de preço migra para o <b>handicap (-1.5/-2) e o over/under (3.5)</b> — o mercado duvida que o Equador "consiga golear" (seca de gols)</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura do posicionamento do mercado</b>: o 1X2 já não tem espaço (Equador no fundo ≈1.10), e a descoberta de preço mais ativa está no <b>handicap (-1.5 vs -2) e no over/under (3.5)</b>. Após a R1, o Curaçao levar 7 gols da Alemanha deveria empurrar o over/handicaps altos, mas a própria seca de gols do Equador (16 jogos sem ≥4 gols, 0 gols na 1ª rodada) forma um hedge — é justamente a lógica pela qual a Racing Post recomenda "vitória do Equador + menos de 3.5 gols". <span style="color:var(--warn)">[As odds específicas da linha de handicap e da linha total de over/under dependem da linha em tempo real antes do jogo · A confirmar]</span> Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ Opinião pública</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregação DefiRate)</b>: a direção é consistente com as odds sem margem e o supercomputador da Opta (Equador cerca de 86%); probabilidade de classificação no Grupo E: Alemanha ≈96%, Costa do Marfim ≈64%, Equador ≈87%, Curaçao ≈19% — o Curaçao já está à beira da eliminação. <span style="color:var(--warn)">[O volume de transações deste jogo isolado e o detalhamento de momentum de 30 dias não foram verificados separadamente em fonte pública · A confirmar]</span></li>
+      <li><b>Foco da opinião pública</b>: ① <b>Ma Ning se torna o primeiro árbitro chinês a apitar uma Copa do Mundo em 24 anos</b> — a China não se classificou e os torcedores passaram a acompanhar o "Mestre dos Cartões", a maior fonte de tráfego de tema deste jogo; ② a narrativa inspiradora do Curaçao como "menor país a participar da história"; ③ a pressão sobre o Equador de "ganhar é obrigação, e ainda precisa melhorar o saldo de gols".</li>
+      <li><b>Narrativa do Curaçao</b>: após a goleada da Alemanha, a confiança do público em sua vitória é baixíssima, mas há alta dose de "torcida solidária" por "não levar outra goleada, jogar de forma digna"; há uma pequena aposta de "bilhete de loteria" no Curaçao, sem alta de preço.</li>
+      <li><b>Narrativa do Equador</b>: precisa vencer e precisa de saldo de gols (na disputa de classificação com Alemanha/Costa do Marfim), a direção dos especialistas é concentrada mas o interesse é baixo — um "favorito razoável de baixa atenção".</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: a direção do resultado não tem suspense (Equador), com casas de apostas, mercados de previsão e supercomputador da Opta alinhados nos três, e o índice de superaquecimento em <b>2/5</b> (frio). O interesse no tema vem principalmente do <b>significado histórico de Ma Ning como árbitro chinês</b> e do contexto inspirador do Curaçao, e não do jogo em si; os mercados com mais conteúdo informativo são o <b>handicap do Equador (-1.5/-2), o over/under (3.5) e os props de escanteios do Equador / cartões do Curaçao</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fonte: <a href="https://theanalyst.com/articles/ecuador-vs-curacao-prediction-world-cup-2026-match-preview">Opta Analyst — previsão Equador vs Curaçao</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ecuador-vs-curacao-predictions-team-news-odds-betting-tips-bet-builder-anHRj5I7yf2y/">Racing Post — odds/apostas</a> · <a href="https://sports.yahoo.com/articles/ecuador-vs-cura-ao-prediction-092000474.html">Yahoo Sports — prévia</a> · <a href="https://www.goal.com/en/news/ecuador-curacao-world-cup-preview/bltf1db9902de34c7ea">Goal — prévia</a> · <a href="https://www.compare.bet/news/ecuador-vs-curacao-betting-preview-predictions-tips-and-live-odds">Compare.bet — agregador de odds</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- Árbitro -->
+  <section>
+    <h2><span class="n">2</span> Árbitro & Ambiente de Arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b>: o árbitro principal deste jogo é o chinês <b>Ma Ning</b> — o <b>primeiro árbitro chinês a apitar uma partida oficial de Copa do Mundo desde Pei Pan em 2002</b>. Fonte: ESPN (prévia) / CNN / China Daily.</div>
+    <h4>Grandes torneios recentes + critério de arbitragem internacional (dados reais)</h4>
+    <ul class="cl">
+      <li><b>Amostra real em grandes torneios (chave)</b>: Ma Ning tem amostra real de arbitragem em grandes torneios de elite — árbitro principal da <b>final da Copa da Ásia de 2023</b> (primeira vez de um árbitro chinês em uma final de Copa da Ásia), quarto árbitro em vários jogos do <b>Mundial de Clubes de 2025</b> e árbitro na <b>Copa do Mundo Sub-20 de 2025</b>. Isso o distingue de um árbitro estreante sem qualquer amostra em grandes torneios, e o valor de referência é maior; mas a amostra por jogo em grandes torneios masculinos de elite (Copa do Mundo/Mundial de Clubes oficial) ainda é pequena, e a estreia em Copa exige margem na leitura do critério.</li>
+      <li><b>Critério de cartões (amostra de liga/geral)</b>: usando como referência a temporada 2025 da Super Liga Chinesa que ele apitou, a liga teve <b>média de cerca de 4,13 amarelos e 0,22 vermelho por jogo</b>, um critério de muitos cartões; seu apelido de "Mestre dos Cartões" vem de uma atuação extrema de 9 amarelos e 3 vermelhos em um jogo da liga doméstica em 2015. <span style="color:var(--warn)">[A amostra detalhada de média de cartões/pênaltis por edição em grandes torneios masculinos é pequena, conforme registros oficiais · A confirmar]</span></li>
+      <li><b>Histórico de arbitragem com as duas seleções</b>: como árbitro chinês que apita há muito tempo competições asiáticas, <b>não tem histórico de arbitragem registrável com Equador ou Curaçao</b> — não há tendência a favor de nenhuma equipe.</li>
+      <li><b>Novas regras unificadas desta edição + sinais de ambiente</b>: 8 segundos de posse do goleiro, apenas o capitão pode falar com o árbitro, impedimento semiautomático; o ambiente de arbitragem mais severo desta edição já começa a aparecer. Se o Curaçao recorrer a faltas para interromper o ataque do Equador ou ganhar tempo, sob as novas regras e o critério mais rigoroso de Ma Ning, o custo dos cartões acumulados (2 amarelos suspendem para o próximo jogo) e das faltas na área é amplificado — foi com base nisso que a Racing Post incluiu "Juninho Bacuna levando cartão" em seu Bet Builder.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise de arbitragem</b>: o critério de cartões de Ma Ning é elevado (cerca de 4,13 amarelos/jogo na liga); em um jogo de "perder é ser eliminado", com possível escalada de intensidade, o total de amarelos e os cartões acumulados do Curaçao merecem atenção; ele tem amostra real em grandes torneios como a final da Copa da Ásia (diferente de um perfil puramente de liga), e a arbitragem é uma dimensão de referência neste jogo — mas a estreia em Copa + a pequena amostra por jogo em grandes torneios masculinos de elite ainda exigem margem na extrapolação do critério. Com a grande disparidade de nível neste jogo, o árbitro quase não influencia o resultado, e o valor está principalmente nas linhas de cartões/escanteios/pênaltis.</div>
+  </section>
+
+  <!-- Escalações e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalações & Forma Recente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Versão prevista, versão oficial divulgada em T-60 antes do jogo</span></h2>
+    <div class="sub">Escalação provável (estimativa de fontes de análise, não oficial; depende da lista oficial da FIFA antes do jogo · A confirmar)</div>
+    <h4>🇪🇨 Equador escalação provável (4-2-3-1 / 4-4-1-1)</h4>
+    <div class="lineup">Galíndez; Pacho · Ordóñez · A. Franco; Hincapié · Vite · Caicedo · Yeboah; Minda · E. Valencia · Plata</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="ht">Moisés Caicedo (C)</td><td>meio-campo / Chelsea</td><td>Capitão e eixo de transição defesa-ataque; núcleo de controle e desarmes na 1ª rodada, neste jogo encarregado de alimentar o ataque para furar o bloco baixo do Curaçao</td></tr>
+      <tr><td class="ht">Enner Valencia</td><td>atacante / maior artilheiro da história do país</td><td>Aos 36 anos ainda afiado, 3 gols em Copas; contra a defesa mais frágil é o maior antídoto para a seca de gols</td></tr>
+      <tr><td class="ht">Piero Hincapié</td><td>defensor / sistema do Arsenal</td><td>Líder da equipe com 5 desarmes na 1ª rodada (empatado); ponto de ameaça ofensiva no bombardeio aéreo de bola parada (protagonista dos props da Racing Post)</td></tr>
+      <tr><td class="ht">Gonzalo Plata</td><td>ponta / explosão pela ponta</td><td>Único a finalizar no alvo na 1ª rodada; o drible e o cruzamento pela ponta são a chave para abrir o Curaçao</td></tr>
+    </table>
+    <h4>🇨🇼 Curaçao escalação provável (4-5-1, recuado)</h4>
+    <div class="lineup">Room; Floranus · Bazoer · Obispo · Fonville; Comenencia · L. Bacuna(C) · Chong · J. Bacuna · Gorre; Locadia</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="sc">Livano Comenencia</td><td>meio-campo / sistema da Juventus</td><td>Marcou o primeiro gol do país em Copas contra a Alemanha, melhor em campo pela ESPN; único ponto de explosão no contra-ataque do Curaçao</td></tr>
+      <tr><td class="sc">Leandro Bacuna (C)</td><td>meio-campo / ex-Aston Villa</td><td>Capitão e núcleo de resistência no meio-campo; a experiência dos irmãos Bacuna é o pilar do bloco baixo</td></tr>
+      <tr><td class="sc">Tahith Chong</td><td>ponta / ex-Manchester United</td><td>Sofreu 8 faltas na 1ª rodada (o mais da rodada); a capacidade de se livrar com a bola é uma das poucas saídas ofensivas do Curaçao</td></tr>
+      <tr><td class="sc">Eloy Room</td><td>goleiro</td><td>Os 7 gols sofridos contra a Alemanha não foram falha individual; suas defesas e comando neste jogo são a linha de base para o Curaçao controlar os gols sofridos</td></tr>
+    </table>
+    <div class="note">Nota sobre as listas: as escalações prováveis de ambos os lados são estimativas de análise da mídia (ESPN / Racing Post), <b>dependendo da lista oficial antes do jogo · A confirmar</b>. O Equador deve recuperar Estupiñán, com Páez indefinido; Advocaat pode mudar o Curaçao de 4-4-2 para 4-5-1, com Gorre entrando para reforçar o meio-campo e fechar a defesa.</div>
+  </section>
+
+  <!-- Tática + técnico -->
+  <section>
+    <h2><span class="n">4</span> Estilo Tático & Técnico</h2>
+    <div class="sub">Cada conclusão cruza referências com o estilo real e os resultados das duas seleções nos últimos dois grandes torneios (o Curaçao, sem história em grandes torneios, usa eliminatórias/amistosos)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ffe066">🇪🇨 Equador · Sebastián Beccacece</div>
+        <div class="role">Disciplina estrutural + muito difícil de furar, escasso em pontos de finalização</div>
+        <ul class="cl">
+          <li>O jovem técnico argentino transformou o Equador em uma defesa de ferro que <b>sofreu apenas 5 gols em 18 jogos das eliminatórias sul-americanas</b>, sustentando-se no 1-0; o eixo defensivo de Caicedo/Pacho/Hincapié é de configuração de elite europeia. Na 1ª rodada contra a Costa do Marfim a defesa esteve em dia (o gol veio de um lampejo individual aos 90').</li>
+          <li>Referência cruzada: na Copa de 2022 o Equador venceu o Catar por 2-0, empatou em 1-1 com a Holanda e caiu na fase de grupos (4 pontos), apoiando-se justamente em defesa organizada + finalização de Valencia; quartas de final na Copa América de 2024 (eliminado nos pênaltis pela Argentina) — os dois grandes torneios confirmam o retrato de "<b>defesa sólida, depende de Valencia para arrancar gols</b>". O maior risco deste jogo é o outro lado desse retrato: a <b>seca de gols</b> (1.01 xG e 0 gols na 1ª rodada, nenhum jogo com ≥4 gols nos últimos 16).</li>
+          <li>Ponto de entrada deste jogo: o Curaçao recua em bloco baixo e carece de intensidade defensiva de nível de Copa; o controle de jogo do Equador (Caicedo) + a ponta (Plata) + a bola parada (Hincapié no alto) bastam para criar muitas chances — a chave é se a eficiência de finalização consegue converter o xG.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇼 Curaçao · Dick Advocaat</div>
+        <div class="role">Bloco baixo pragmático + contra-ataque, forçado a ser conservador com elenco limitado, intensidade defensiva de nível de Copa insuficiente</div>
+        <ul class="cl">
+          <li>O renomado técnico holandês de 78 anos, Advocaat, levou a equipe a fazer história — o Curaçao se classificou <b>invicto nas eliminatórias da CONCACAF, sofrendo apenas 6 gols em 10 jogos</b>, com elenco vindo principalmente da base holandesa (irmãos Bacuna, Bazoer, Chong, etc., com experiência em ligas europeias). A marca registrada é o bloco baixo disciplinado + contra-ataque rápido.</li>
+          <li>Referência cruzada: o <b>Curaçao não tem história em grandes torneios (estreia nesta edição)</b>, então usa eliminatórias/amistosos como amostra — derrota de 1-7 para a Alemanha na 1ª rodada, 1-4 para a Escócia no aquecimento e 18 gols sofridos em 5 jogos de 2026 confirmam a "<b>queda abrupta de intensidade defensiva ao subir de nível</b>": o "poucos gols sofridos" das eliminatórias não se extrapola ao poder de fogo de nível de Copa. Mas o gol de Comenencia contra a Alemanha mostra que a equipe não é totalmente incapaz no contra-ataque.</li>
+          <li>Resposta deste jogo: o único caminho realista é abrir mão do duelo aberto, recuar mais (4-5-1), arrastar o jogo para um duelo de poucos gols e focar em controlar os gols sofridos e o saldo; a esperança real está nas defesas de Room, na continuidade da seca de gols do Equador e nos contra-ataques esporádicos de surpresa de Comenencia/Chong.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights do analista -->
+  <section>
+    <h2><span class="n">5</span> Insights do Analista · com Balanço dos Grandes Torneios Recentes</h2>
+    <div class="insight"><div class="who">Equador · Grande torneio mais recente <small>· Copa 2022 eliminado na fase de grupos (4 pts) + quartas da Copa América 2024</small></div>Na Copa de 2022 o Equador venceu o anfitrião Catar por 2-0, segurou a Holanda em 1-1 e caiu na fase de grupos (4 pontos), apoiando-se em defesa organizada + finalização de Valencia; na Copa América de 2024 chegou às quartas de final (eliminado nos pênaltis pela Argentina). Os dois grandes torneios confirmam o retrato de "defesa sólida, depende de Valencia para arrancar gols" — totalmente coerente com o posicionamento deste jogo de "domínio no papel, mas finalização duvidosa". Os 1.01 xG e 0 gols da 1ª rodada são a continuidade desse retrato nesta edição.</div>
+    <div class="insight"><div class="who">Curaçao · Estreia histórica do menor país participante <small>· sem história em grandes torneios, balanço pelas eliminatórias/estreia</small></div>O Curaçao tem população de cerca de 156 mil, é o menor país a participar de uma Copa na história; classificou-se invicto nas eliminatórias da CONCACAF, sofrendo apenas 6 gols em 10 jogos, mas na estreia foi goleado por 1-7 pela Alemanha (xG 0.40 contra 3.91), com o gol de Comenencia, o primeiro do país, como único ponto positivo. <b>Isso mostra que sua amostra de eliminatórias teve adversários de nível baixo e não pode ser extrapolada ao nível de Copa</b> — neste jogo contra o Equador, conseguir compactar o bloco baixo e evitar ser perfurado de novo é a régua do "progresso".</div>
+    <div class="insight"><div class="who">Opta Analyst <small>· instituto de dados/supercomputador</small></div>O supercomputador dá ao Equador vitória de 86,1% / empate 9,2% / Curaçao 4,7%, com probabilidade de classificação Equador ≈87% e Curaçao ≈19% — direção totalmente consistente com as odds sem margem. O modelo considera o Equador muito superior, mas a verdadeira incerteza deste jogo não está no resultado e sim em "quantos gols ele faz" (eficiência de finalização).</div>
+    <div class="insight"><div class="who">Perspectiva de handicap/over-under <small>· Racing Post / Compare.bet</small></div>Várias mídias veem o <b>Equador -1.5/-2 e o over/under (3.5)</b> como mais interessantes que a simples linha de resultado. A Racing Post recomenda explicitamente "<b>vitória do Equador + menos de 3.5 gols</b>", com base justamente na seca de gols do Equador de nenhum jogo com ≥4 gols nos últimos 16 — o descompasso entre a diferença de nível no papel e a finalização real é o ponto de julgamento com mais conteúdo informativo deste jogo.</div>
+  </section>
+
+  <!-- Avaliação geral -->
+  <section>
+    <h2><span class="n">6</span> Avaliação Geral & A Confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória magra do Equador (2-0 / 1-0 / 2-1) é o roteiro base; se a seca de gols continuar + o Curaçao compactar o bloco baixo, sobe a probabilidade de 1-0/vitória magra de placar baixo. O empate (≈8%) exige que o Equador desperdice muitas chances + defesaças de Room; a vitória do Curaçao (≈4%) é uma cauda extrema, exigindo Room inspirado + contra-ataque de surpresa + o Equador "errando tudo que deveria entrar" ao mesmo tempo.</li>
+      <li><b>Homens-chave</b>: Caicedo (Equador/núcleo de controle e desarmes), Valencia + Plata (Equador/finalização e explosão pela ponta), Hincapié (Equador/bola parada no alto), Comenencia + Chong (Curaçao/única surpresa no contra-ataque), Room (Curaçao/linha de base para controlar os gols sofridos).</li>
+      <li><b>Fator decisivo</b>: o verdadeiro ponto a observar é <b>se a eficiência de finalização do Equador converte o xG e quantos gols ele faz contra a defesa mais frágil</b> — decide a liquidação do handicap (-1.5/-2) e do over/under (3.5). O número de escanteios do Equador e as finalizações no alvo de Hincapié, e os cartões do Curaçao (relacionados a Bacuna/Chong) são o núcleo dos respectivos props.</li>
+      <li><b>Perspectiva de mercado</b>: casas de apostas, mercados de previsão e supercomputador da Opta alinhados nos três (Equador cerca de 86%), o 1X2 tem valor limitado; os mercados com mais conteúdo informativo são o <b>handicap do Equador (-1.5/-2), o over/under (3.5) e as linhas detalhadas de escanteios / cartões</b>. Índice de superaquecimento 2/5 (frio, o interesse no tema vem do significado histórico de Ma Ning como árbitro chinês e do contexto inspirador do Curaçao, e não da linha de resultado).</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① as escalações oficiais de ambos os lados (divulgadas em T-60 antes do jogo, a escalação provável é estimativa de fontes de análise); ② se Estupiñán e Páez serão titulares/entrarão em campo pelo Equador; ③ se o Curaçao confirmará a mudança para 4-5-1 e se Gorre está totalmente recuperado para ser titular; ④ o detalhamento específico de média de cartões/pênaltis por edição de Ma Ning em grandes torneios masculinos de elite (a referência de liga de cerca de 4,13 amarelos/jogo já confirmada); ⑤ o volume de transações deste jogo isolado e o detalhamento de momentum de 30 dias no Kalshi/Polymarket não verificados separadamente; ⑥ as odds específicas da linha de handicap asiático (-1.5/-2) e da linha total de over/under (3.5) dependem da linha em tempo real antes do jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49108038/ecuador-curacao-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — calendário/escalações/árbitro/1.01 xG</a> · <a href="https://theanalyst.com/articles/ecuador-vs-curacao-prediction-world-cup-2026-match-preview">Opta Analyst — previsão Equador vs Curaçao/supercomputador</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ecuador-vs-curacao-predictions-team-news-odds-betting-tips-bet-builder-anHRj5I7yf2y/">Racing Post — odds/apostas/situação da equipe</a><br>
+      • <a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026">Opta Analyst — Costa do Marfim 1-0 Equador (trazido do Equador)</a> · <a href="https://theanalyst.com/articles/germany-vs-curacao-stats-world-cup-2026">Opta Analyst — Alemanha 7-1 Curaçao (trazido do Curaçao)</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — Grupo E da Copa do Mundo 2026</a><br>
+      • <a href="https://sports.yahoo.com/articles/ecuador-vs-cura-ao-prediction-092000474.html">Yahoo Sports — prévia/odds</a> · <a href="https://www.goal.com/en/news/ecuador-curacao-world-cup-preview/bltf1db9902de34c7ea">Goal — prévia</a> · <a href="https://www.si.com/soccer/ecuador-vs-curacao-world-cup-preview-predictions-lineups-6-20-26">Sports Illustrated — prévia/escalações</a> · <a href="https://www.compare.bet/news/ecuador-vs-curacao-betting-preview-predictions-tips-and-live-odds">Compare.bet — agregador de odds</a><br>
+      • <a href="https://edition.cnn.com/2026/06/15/sport/china-world-cup-referee-ma-ning-intl-hnk">CNN — Ma Ning, o "Mestre dos Cartões"</a> · <a href="https://www.chinadailyasia.com/hk/article/635152">China Daily — primeiro árbitro chinês de Copa em 24 anos</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — mercados de previsão</a><br>
+      • <a href="https://www.gehafieldatarrowhead.com/events/detail/fifa-world-cup-26-group-stage-ecuador-vs-curacao">GEHA Field at Arrowhead — estádio/evento</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/ecuador-curacao-preview-live-stream-team-news-tickets">FIFA — prévia do jogo</a> · <a href="https://footystats.org/clubs/ecuador-national-team-8628">FootyStats — Equador</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análise de Jogos da Copa do Mundo 2026 · dados até 2026-06-19 · os gráficos usam dados verificados, o gráfico de radar é uma avaliação geral do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#ffce00',SC='#2f6fe0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória Equador','Empate','Vitória Curaçao'],datasets:[{data:[86,8,4],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Probabilidade implícita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais de 3.5','Menos de 3.5'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (sem margem, leve viés ao under · hedge da seca de gols)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Alemanha','Costa do Marfim','Equador','Curaçao'],datasets:[{label:'Pontos',data:[3,3,0,0],backgroundColor:['#7fa6e6','#f7901e',HT,SC],borderRadius:6},{label:'Saldo de gols',data:[6,1,-1,-6],backgroundColor:['#3a5e8a','#7a4a0f','#8a6e00','#1d3a63'],borderRadius:6}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'Pontos / saldo de gols após a R1'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Bola parada','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'Equador',data:[8,5.5,7.5,6.5,7,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Curaçao',data:[4.5,4,5,4.5,5,2.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

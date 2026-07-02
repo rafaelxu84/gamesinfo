@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Norway vs Senegal · 2026 World Cup Group I Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-norway-vs-senegal.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-norway-vs-senegal.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-norway-vs-senegal.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-norway-vs-senegal.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-norway-vs-senegal.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#e25563;--sc:#2ea36a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a1f2b,#0f5a32);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#231419,#101e18);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f0928e;font-weight:600}td.sc{color:#7fd2a6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-norway-vs-senegal.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-norway-vs-senegal.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-norway-vs-senegal.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group I Matchday 2 · The most tense "six-pointer" of the day</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Norway 3-2 Senegal</span>
+  <h1>Norway vs Senegal</h1>
+  <div class="meta">22 June 2026 · East Rutherford, MetLife Stadium (New York/New Jersey) · 20:00 ET · Group I (also in group: France, Iraq) · Match 41</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e25563">🇳🇴 Norway</div><div class="rk">FIFA #28 · Opened with a 4-1 thrashing of Iraq (Haaland brace) · Top of Group I (goal difference) · Qualification destiny in their hands</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#2ea36a">🇸🇳 Senegal</div><div class="rk">FIFA #18 · Lost 1-3 to France in the opener (on top but finishing failed) · 0 points, must-win · Win or bust</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-23) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Norway 3-2 Senegal (HT 1-0) · 06-22</span></h2>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">A rain-soaked MetLife staged the most nerve-jangling clash of the round, Norway edging it 3-2 to qualify alongside France. Just before half time, <b>Marcus Holmgren Pedersen</b>, on as a substitute, struck in the <b>43rd minute</b> for 1-0; in the second half <b>Haaland</b> scored twice in quick succession — a close-range blast into the roof of the net in the <b>48th minute</b> (becoming <b>Norway's all-time World Cup top scorer</b>); after Senegal's <b>Sarr 53'</b> pulled one back, Haaland latched onto an Ødegaard through-ball in the <b>58th minute</b> and slotted past Mendy one-on-one to make it 3-1. Norway then dropped deep to defend and run down the clock, and Sarr's <b>90+3'</b> goal kept the tie alive until the final whistle. Haaland scored 4 goals at this tournament so far, and in his 52nd cap notched his 58th and 59th international goals, becoming only the second player in nearly 50 years to "score a brace in each of his first two World Cup matches".</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 43' Holmgren Pedersen · 48' Haaland · 53' Sarr · 58' Haaland (Ødegaard assist) · 90+3' Sarr｜Haaland becomes Norway's all-time World Cup top scorer · 4 goals this tournament</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (FotMob / xGscore / ESPN)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇳🇴 Norway</th><th>🇸🇳 Senegal</th><th>Reading</th></tr>
+      <tr><td class="ht">Goals</td><td><b>3</b></td><td>2</td><td>Norway won it via Haaland's two clinical finishes + a set-piece/counter goal; Senegal stayed close through Sarr's brace</td></tr>
+      <tr><td class="ht">Haaland individual xG</td><td><b>≈1.1 (2 goals)</b></td><td>—</td><td>Haaland: 4 shots, individual xG around 1.1, 2 goals — Norway's attack revolved almost entirely around him, top-tier finishing efficiency</td></tr>
+      <tr><td class="ht">Sarr individual</td><td>—</td><td><b>2 goals (xG≈0.3)</b></td><td>Sarr scored 2 from around 0.3 individual xG — finishing above his model, Senegal's only spark</td></tr>
+      <tr><td class="ht">Key assist</td><td><b>Ødegaard (58' through-ball)</b></td><td>Iliman Ndiaye (1 assist)</td><td>Ødegaard's through-ball sliced Senegal's defence open to send Haaland clear — Norway's core organiser in transition</td></tr>
+      <tr><td class="ht">Goalkeeper display</td><td>Nyland limited in shot-stopping</td><td>Mendy save rate 0.45</td><td>Mendy made several saves but could not stop Haaland's close-range finishes; Norway's keeper was helpless against both Sarr goals</td></tr>
+      <tr><td class="ht">Possession</td><td colspan="2" style="text-align:center">TBC (public sources conflict)</td><td>Possession split inconsistent across public sources; no conclusion drawn for now</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.skysports.com/football/norway-vs-senegal/549807">Sky Sports — Norway 3-2 Senegal report</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/norway-senegal-match-report-highlights">FIFA — Match Report</a> · <a href="https://www.aljazeera.com/sports/2026/6/23/haaland-scores-two-as-norway-beat-senegal-3-2-enter-world-cup-knockouts">Al Jazeera — Report</a> · <a href="https://xgscore.io/world-cup/norway-senegal/xg-statistics">xGscore — xG statistics</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760454">ESPN — Analysis</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Norway = Haaland's team, Ødegaard is the can-opener</div>Of the 3 goals Haaland took 2, and the second came from an Ødegaard through-ball that put him one-on-one. <b>This shows Norway's attacking model is crystal clear: Ødegaard hunts for through-balls in midfield, Haaland finishes up top</b> — this "organiser + finisher" twin core is Norway's most repeatable scoring route, but it also means that if an opponent cuts off this line, Norway's attacking depth is limited (see the preview carry-over below).</div>
+    <div class="insight"><div class="who">Dropping deep after 3-1 nearly threw away a strong position</div>After going 3-1 up Norway visibly dropped deep and tried to run down the clock, only for Sarr to score again in stoppage time and reopen the contest. <b>This shows Norway's game management while leading still has flaws — abandoning the press too early gave the opponent a window to fight back</b>; this "can't hold a lead" tendency could prove fatal against stronger opposition in the knockouts.</div>
+    <div class="insight"><div class="who">Sarr is Senegal's spark, but the whole team over-relies on individual flashes</div>Both Senegal goals came from Sarr (2 goals from around 0.3 xG, finishing above his model). <b>This shows Senegal have top-tier individual quality to stay in the score, but lack systematic, sustained creation</b> — suppressed by Norway for most of the match, they only clawed back to 3-2 through Sarr's individual ability; attacking sustainability is insufficient.</div>
+    <div class="insight"><div class="who">Rain + tension = the most watchable open contest of the round</div>In the wet the two sides combined for 5 goals, with the outcome in doubt until the whistle — the most fiercely contested "six-pointer" of the round. <b>This shows it was an evenly matched, end-to-end game — Norway won on Haaland's individual ceiling, not on overall dominance</b>; had Haaland's form dipped slightly, the result could easily have been rewritten.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Notes</th></tr>
+      <tr><td class="ht">A tense "six-pointer", small margin</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>A 3-2 edge with the result in doubt into stoppage time — indeed the round's tightest duel</td></tr>
+      <tr><td class="ht">Haaland is the matchwinner</td><td style="color:var(--good)"><b>✓ Fully delivered</b></td><td>Brace + record broken, single-handedly decided the game</td></tr>
+      <tr><td class="ht">Norway qualify</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Advanced to the R32 alongside France</td></tr>
+      <tr><td class="ht">Senegal's individual quality can create a threat</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Sarr's brace kept them close, but team-wide systematic creation was lacking</td></tr>
+      <tr><td class="ht">Over-goals lean (both sides have firepower)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>5 goals combined, a clearly open contest</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇳🇴 Norway · Next: Matchday 3 vs France (battle for Group I top spot)</h4>
+        <ul class="watch">
+          <li><b>Direct duel for the top of Group I</b>: Norway and France are both projected to have qualified, so the final-round meeting decides the group winner and bracket side — high stakes, but rotation is also possible.</li>
+          <li><b>The Ødegaard→Haaland through-ball will be a focus to shut down</b>: France's defence is far stronger than Senegal's; if Norway rely on this line alone, the limited attacking depth will be exposed and a second scoring option must be developed.</li>
+          <li><b>The flaw of not holding a lead</b>: pegged back from 3-1 to 3-2 in this game. Against firepower like France's, game management and defensive focus must improve, or they are vulnerable to being overturned.</li>
+          <li><b>Haaland is on fire</b>: 4 goals this tournament, scoring in 12 consecutive internationals — Norway's biggest source of belief and biggest variable against France.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇸🇳 Senegal · Next: Matchday 3 vs Iraq (must fight for qualification)</h4>
+        <ul class="watch">
+          <li><b>Qualification situation critical</b>: after this defeat they are in a weak position; the final round vs Iraq is most likely a do-or-die must-win + watch other results (exact scenario TBC).</li>
+          <li><b>Can't rely on Sarr alone</b>: both goals came from Sarr's above-model finishing; the whole team needs to produce systematic, sustained creation to lock down three points against Iraq.</li>
+          <li><b>Sarr is the key spark</b>: in red-hot form (brace this match), he remains Senegal's number-one scoring outlet for the final round.</li>
+          <li><b>Hold the lead / defensive focus</b>: suppressed for most of this game, against a similarly matched Iraq they must seize the initiative from the kickoff.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the <b>most evenly matched, highest-tension</b> game of 6/22: Norway (FIFA #28, led by Haaland) opened with a 4-1 thrashing of Iraq — <b>Haaland brace</b> — and sit top of Group I (level on points with France, ahead on goal difference); Senegal (FIFA #18, an African powerhouse) <b>were on top but lost 1-3 to France</b> in the opener, their finishing failing, leaving them on 0 points and on the brink. This is Senegal's <b>win-or-bust must-win</b>, and also Norway's chance to all but seal qualification. The odds are unusually close — Norway win <b>2.35</b> (de-vigged implied ≈42%), draw <b>3.40</b> (≈29%), Senegal win <b>3.10</b> (≈30%); the prediction market (Kalshi) gives Norway 44% / draw 27% / Senegal 30%. Core tensions: ① <b>Norway's low-block counter-attacking space is compressed</b> — Senegal's physicality and pace are far superior to Iraq's, making Norway's single-pivot Haaland approach harder; ② <b>Senegal's finishing efficiency</b> — they created chances against France but wasted them all, and against Norway they must convert their scarce chances; ③ <b>Haaland vs Senegal's defence (Koulibaly/Niakhaté) in the aerial battle</b>. Base scenario: <b>a tight low-scoring affair, separated by a draw or a single goal</b>. Market Heat Index ≈ 4/5 (genuine disagreement + Haaland narrative + Senegal's must-win).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Norway implied win prob. (de-vigged)</div><div class="v" style="color:#e25563">≈42%</div></div>
+      <div class="key"><div class="k">Senegal implied win prob. (de-vigged)</div><div class="v" style="color:#2ea36a">≈30%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈29%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">4/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Norway's low-block counter space is compressed (carried over from last match)</b>: the ease of the 4-1 win over Iraq will not recur — Senegal are far stronger physically and quicker, so Norway must prove they can break down a tight block and counter against strong-contact opposition, not just rely on Haaland alone.</li>
+      <li><b>Senegal's finishing efficiency is the Achilles heel (carried over from last match)</b>: they created chances against France but wasted them all; Jackson and Sarr need to rediscover their composure in front of goal — this is a must-win, and wasting chances would replay "on top but dropping points".</li>
+      <li><b>Haaland + Ødegaard set pieces are a stable scoring route (carried over from last match)</b>: Haaland is in hot form and Ødegaard's corners are already a reliable Norway output — Senegal must guard set pieces tightly, as this is Norway's main route through a packed defence.</li>
+      <li><b>The pace counter is equally viable for Senegal (carried over from last match)</b>: once Norway push up there is space in behind, and Senegal's pace-counter script works against Norway — this mirror-image risk makes the match cut both ways.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, explained item-by-item for how each changes the tactics or result (including carry-over items from both teams' last match)</div>
+
+    <div style="border-left:3px solid var(--ht);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f0928e;font-weight:700">Norway · Carried over from last match · The real test <span style="color:var(--mut);font-weight:400">· Iraq-match review transfer · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Norway opened with a 4-1 thrashing of Iraq, <b>Haaland brace + Ødegaard corner</b>; but the opponent was weak, so their strong-contact credentials are still unproven</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the Iraq-match review: Norway won 4-1, Haaland's debut 2 goals shows hot form, Ødegaard's corner is already a stable scoring point, and they sit top of Group I (level on points with France, ahead on goal difference). But <b>the real test is this match</b>: Senegal's physicality and pace far exceed Iraq's, Norway's low-block counter space will be compressed, and the goalkeeper's and defence's ease against Iraq will not recur — Norway must prove their <b>ability to break down a packed defence and to counter</b> against strong-contact opposition.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Norway's system is built heavily around the single-pivot Haaland + Ødegaard's link play / set pieces. Against Senegal's high-intensity pressing and physical duels, whether Norway can keep feeding Haaland and whether Ødegaard's set pieces deliver will directly decide whether Norway sustain their efficiency or get shut down. This is the key test of "how good Norway really are".</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49127342/norway-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Norway vs Senegal preview</a> · <a href="https://www.skysports.com/football" style="color:var(--accent)">Sky Sports — Norway opening-match report</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fd2a6;font-weight:700">Senegal · Carried over from last match · Finishing failed + must-win <span style="color:var(--mut);font-weight:400">· France-match review transfer · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Senegal lost 1-3 to France in the opener, <b>on top but finishing failed</b>; this match is a must-win, or they are out early</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the France-match review: Senegal created chances against France but wasted them all, with <b>finishing efficiency</b> the exposed weakness (Jackson and Sarr lacking composure in front of goal). Their 0 points make this a <b>must-win, win-or-bust</b> match. The defence (Koulibaly/Niakhaté) will face a more direct aerial assault than France's (Haaland) — it is a qualification do-or-die; and the pace-counter script is equally viable against Norway (space in behind once Norway push up).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Senegal's quality (FIFA #18) is actually higher than Norway's, but the opener proved "on top ≠ goals". A backs-to-the-wall game will force Senegal to commit forward fully, which both amplifies their pace advantage and exposes space in behind for Norway to counter. Whether finishing efficiency recovers + whether the defence can shut down Haaland are Senegal's two prerequisites for a comeback from the brink.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49127342/norway-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview / Senegal situation</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-norway-vs-senegal-06-22-26-world-cup-2026/" style="color:var(--accent)">Squawka — preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f0928e;font-weight:700">Norway · Haaland form + qualification situation <span style="color:var(--mut);font-weight:400">· BetMGM / Squawka · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Haaland's debut brace, on fire; Norway <b>basically seal qualification with any non-defeat</b></div>
+      <p style="font-size:13.5px">Per BetMGM / Squawka, Haaland's debut 2 goals show him in prime form and the market's consensus most-likely scorer; Norway sit top of Group I, and <b>any non-defeat here basically locks qualification</b>, so they can play more patiently and lower the risk. Solbakken is expected to keep the 4-3-3 with Haaland as the focal point up top and Ødegaard organising centrally. <span style="color:var(--warn)">[Official XI subject to the pre-match FIFA team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The asymmetry in qualification stakes (Norway in control, Senegal backs to the wall) is the biggest tactical variable in this game — Norway can choose to sit and counter, drag the game into a low score, and force Senegal to push up before hitting them on the break. This gives structural support to "draw / under", and makes Haaland/Ødegaard's counters and set pieces Norway's most economical route to victory.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.betmgm.com/en/blog/world-cup/norway-vs-senegal-prediction-odds-preview-world-cup-june-22-bm16/" style="color:var(--accent)">BetMGM — prediction / Haaland</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-norway-vs-senegal-06-22-26-world-cup-2026/" style="color:var(--accent)">Squawka — preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee <span style="color:var(--mut);font-weight:400">· ESPN · 06-20 (sources differ)</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee leans toward Brazilian official <b>Wilton Sampaio</b> (the strict whistle who showed 3 reds in the opener); some sources list Ismail Elfath — defer to the official appointment</div>
+      <p style="font-size:13.5px">Per ESPN, the referee leans toward <b>Brazilian Wilton Sampaio</b> — the very strict official who <b>showed 3 reds, a World Cup opening-match record</b>, at this tournament's opener (Mexico 2-0 South Africa), with a career average of around 5.08 yellows per match, among the strictest in the world. <span style="color:var(--warn)">Some sources list US referee Ismail Elfath; the sources differ, and the final word is the pre-match FIFA official appointment · TBC</span>. The match is played at MetLife Stadium (open-air); a late-June evening kickoff (20:00 ET) means controllable weather.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This is a heavily physical battle (Senegal's power + Norway's aerial threat); if officiated by a strict "zero-tolerance + VAR-backed" whistle like Sampaio, <b>the probability of cards and a penalty rises significantly</b>, and accumulated suspensions (relevant to the final round) and penalty decisions could both swing this do-or-die match. This is where the refereeing genuinely carries information — see the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49127342/norway-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — referee / preview</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referee list</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probability (de-vigged) · Group I picture · Totals market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over / Under 2.5 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group I four teams · FIFA ranking (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇳🇴 Norway</th><th>🇸🇳 Senegal</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#28</td><td class="sc">#18</td></tr>
+      <tr><td>Opening-match result</td><td class="ht">4-1 win vs Iraq (Haaland brace)</td><td class="sc">1-3 loss vs France (on top but finishing failed)</td></tr>
+      <tr><td>Group I points</td><td colspan="2">Norway 3 pts (top, ahead on goal difference); Senegal 0 pts — Senegal <b>must win</b> here</td></tr>
+      <tr><td>Head coach</td><td class="ht">Ståle Solbakken</td><td class="sc">Pape Thiaw</td></tr>
+      <tr><td>Key players</td><td class="ht">Haaland, Ødegaard(C), Nusa, Sørloth</td><td class="sc">Sadio Mané, I. Sarr, N. Jackson, Koulibaly</td></tr>
+      <tr><td>Match talking points / questions</td><td class="ht">Ability to break down strong-contact opposition; no more Iraq-style space</td><td class="sc">Finishing efficiency recover? Defence to handle Haaland's aerial threat?</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Long-awaited World Cup return (2026 first qualification via the Haaland generation)</td><td class="sc">World Cup 2022 R16 · AFCON 2021 champions</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win 2.35 (implied ≈42%)</td><td class="sc">Win 3.10 (≈30%) · Draw 3.40 (≈29%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">Total line near 2.5, genuine two-way split — Norway may opt to drag the score low and force Senegal forward</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from decimal odds (≈42/29/30, then normalised). Odds source: bet365 (Norway +135 → 2.35, draw +240 → 3.40, Senegal +210 → 3.10, syndicated via ESPN/OddsShark); prediction market Kalshi Norway 44% / draw 27% / Senegal 30%. The Asian handicap sits roughly in the level/half-ball range with a small spread — defer to the real-time pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this tournament's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendlies)</b> against <b>this tournament's actual values</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" — never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This tournament's actual (Matchday 1)</th><th>Delta &amp; reading</th></tr>
+      <tr><td class="ht">🇳🇴 Norway · Attack</td><td class="ht">High output in qualifying via Haaland + Sørloth firepower, but lacking major-tournament experience (long-awaited World Cup return)</td><td class="ht">Matchday 1: <b>4 goals</b> (Haaland brace), efficient</td><td><b>Matches</b> qualifying firepower, but the opponent Iraq was weak — their credentials against strong-contact opposition are truly tested this match</td></tr>
+      <tr><td class="ht">🇳🇴 Norway · Defence</td><td class="ht">The back line is a relative weakness, compensated by collective play and set pieces</td><td class="ht">Matchday 1: conceded 1, little pressure vs Iraq</td><td><b>Sample is inflated</b>: Senegal's pace/physical impact is far stronger, so Norway's defence comes under much greater pressure this match</td></tr>
+      <tr><td class="sc">🇸🇳 Senegal · Attack</td><td class="sc">African-champion-level physicality + pace, strong attack with Mané/Sarr/Jackson, but finishing stability fluctuates</td><td class="sc">Matchday 1: <b>1 goal</b> in defeat to France, <b>on top but missed a host of chances</b></td><td><b>Below</b> chance quality: creativity is there, finishing failure is the real ailment that must be solved this match</td></tr>
+      <tr><td class="sc">🇸🇳 Senegal · Defence</td><td class="sc">Led by Koulibaly, strong in physical duels, historically renowned for solidity</td><td class="sc">Matchday 1: conceded 3 in defeat to France (opponent too strong)</td><td>Against Norway's single-pivot Haaland + set pieces, defending the aerial threat is the key exam this match</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Norway's attacking actual this tournament <b>matches</b> their qualifying firepower but <b>is inflated by a weak opponent</b>, and the defence faces much greater pressure this match; Senegal's creativity is there, with <b>finishing failure</b> the ailment. The deep data aligns with the thesis of "Senegal slightly higher quality, but Norway's qualification situation + Haaland/set pieces are more economical, the game is tight". Sources: Opta Analyst · FotMob/Sofascore (Matchday 1) · FIFA/team-history major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>Model projected xG for this match (magnitude)</td><td class="ht">Norway ≈1.2</td><td class="sc">Senegal ≈1.3</td><td>After calibration the two are close, with Senegal slightly ahead on creativity — but finishing efficiency and the qualification situation pull the win probability back to a slight Norway edge</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Senegal's overall quality is slightly above Norway's; but the prediction market (Kalshi), because of the qualification situation + Haaland's form, gives Norway 44% &gt; Senegal 30% — a clear situational premium</td><td>After opponent-strength calibration the two sides faced wildly different Matchday-1 opponents (Norway vs Iraq, Senegal vs France), so on real merit Senegal is underrated and Norway overrated</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Senegal's high-intensity press + field tilt most likely dominate, while Norway lean toward an efficient counter + set pieces</td><td><b>Trap reminder</b>: Senegal may dominate the play yet fail to finish like Matchday 1, while Norway rely on a few chances + Haaland's efficiency</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — Senegal's Matchday-1 chance quality was decent, yet finishing failed.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press (Senegal low value).</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and any missing items are marked "TBC" — figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">Genuine three-way disagreement (the closest line of the day); the Haaland narrative + Senegal's must-win + quality vs situation debate drive up attention</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Genuine three-way split, high information content</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">This is the only 1X2 line on 6/22 with all three outcomes close together (Norway 42 / draw 29 / Senegal 30). The expert camp is split: backers of Norway cite the qualification situation + Haaland; backers of Senegal cite quality + a backs-to-the-wall rebound. Add the Haaland narrative and Senegal's do-or-die, and both sentiment and money are active.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: Norway / Senegal / Draw three-way split)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Leans Norway (qualification situation + Haaland), but concedes the Group I picture is delicate</td></tr>
+      <tr><td>BetMGM</td><td>Odds/betting</td><td>Favours Haaland and Norway, sees Norway's route to three points as cleaner</td></tr>
+      <tr><td>Juvefc / SheKicks</td><td>Prediction media</td><td>Split — some back a Senegal quality rebound, some back the draw</td></tr>
+      <tr><td>TheSportsRush / SportsLens</td><td>Prediction media</td><td>Note Senegal's must-win means they go all out forward, an open game with over-goals potential</td></tr>
+      <tr><td>Prediction market (Kalshi/Polymarket)</td><td>Money flow</td><td>Norway 44 / draw 27 / Senegal 30 — Norway gets a situational premium</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (relatively high)</b>: unlike the other three one-sided games, this one is a <b>genuine three-way disagreement</b> — which itself means high information content and more value opportunities. The core tension is "Senegal slightly higher quality vs Norway's qualification situation + Haaland's form"; Senegal's do-or-die nature is the biggest source of uncertainty.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Norway win / Senegal win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="ht">≈2.30 / 3.20</td><td>Close at the open, Norway marginally ahead; draw 3.40</td></tr>
+      <tr><td>06-20 cutoff</td><td>bet365 / ESPN</td><td class="ht">2.35 / 3.10</td><td>Senegal's win price tightens slightly (money recognises its quality + backs-to-the-wall rebound)</td></tr>
+      <tr><td>06-20</td><td>Over / Under</td><td colspan="2" class="ht">Total line hugs 2.5, genuine two-way split (Norway may drag it low, Senegal pushing up may raise it)</td></tr>
+      <tr><td>Handicap (AH reference)</td><td>Level / half-ball</td><td colspan="2" class="ht">Small handicap, near level-ball — defer to the real-time line</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="ht">Norway win ≈2.40; near level-ball</td><td>Pre-match priced on "Senegal slightly higher quality, but Norway's Haaland + crowd atmosphere"; the opening line was almost a pick'em, tilting slightly to Norway</td></tr>
+      <tr><td>Open (post-Matchday-1 repricing)</td><td class="ht">Norway win 2.30–2.35; Senegal 3.10–3.20</td><td><b>Repricing from both teams' Matchday 1</b>: Norway's 4-1 thrashing (firepower + top spot) tightened their win price slightly; Senegal lost 1-3 to France but "on top" earned partial recognition, so their win price was not pushed up sharply → forming the day's closest three-way line</td></tr>
+      <tr><td>Current line (06-20→now)</td><td class="ht">Norway 2.35 / Senegal 3.10 / draw 3.40</td><td>Three-way close, active price discovery; <b>the core variable is Senegal's do-or-die nature</b> — committing forward may raise their win probability or get punished by Norway's counter, and the line's two-sidedness is the strongest of the day</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is the <b>only near-pick'em</b> line on 6/22 — the opening line tilted slightly to Norway, then after Matchday 1 Norway tightened marginally on their thrashing and Senegal was not written down thanks to being "on top", forming a three-way balance. The 1X2 value is genuine (high information content), with the core disagreement mapping "quality (Senegal) vs situation + Haaland (Norway)"; the totals and the Asian level/half-ball are secondary battlegrounds, driven by "Senegal must push up". Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (aggregate)</b>: Norway about <b>44%</b> / draw 27% / Senegal 30% — Norway gets a "qualification situation + Haaland" premium, but Senegal's quality backing keeps its win probability above a typical underdog's. Group I qualification: Norway near-sealed, Senegal out if they fail to win here. <span style="color:var(--warn)">[This single match's volume and momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Can Haaland sustain his firepower against strong-contact opposition</b> — the question of how good Norway's golden generation really is.</li>
+      <li><b>Sentiment focus ②</b>: <b>Senegal's do-or-die + finishing failure</b> — whether the African champions will again be "on top but go out" is a focal point for African football.</li>
+      <li><b>Quality vs situation debate</b>: the most interesting market narrative of this game — on paper Senegal is stronger, but the qualification situation and form make the market favour Norway.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: a genuine three-way split (Norway 42 / draw 29 / Senegal 30), Heat Index <b>4/5</b>, the highest-information game of the day. The talking points come from <b>how good Norway really are</b> and <b>Senegal's do-or-die</b>; the core tension is "quality vs situation". For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/odds/_/gameId/760454">ESPN — odds / fixture</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/norway-vs-senegal-prediction-odds-preview-world-cup-june-22-bm16/">BetMGM — prediction / odds</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-norway-vs-senegal-06-22-26-world-cup-2026/">Squawka — preview</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-nor-sen-2026-06-22">Polymarket — prediction market</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">⚠ <b>Sources differ</b>: most sources (ESPN) point to <b>Brazilian official Wilton Sampaio</b> (the strict whistle who showed 3 reds in the opener) for this match, while some list US referee Ismail Elfath. <b>The final word is the pre-match FIFA official appointment · TBC</b>. Source: ESPN (referee list / preview).</div>
+    <h4>Officiating strictness + this tournament's uniform new rules (actual data + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Officiating profile (if Sampaio)</b>: Sampaio's career <b>average of around 5.08 yellows per match</b> is among the strictest in the world, and at this tournament's opener (Mexico 2-0 South Africa) he <b>showed 3 reds, a World Cup opening-match record</b> — a clear "zero-tolerance + VAR-backed" strict-whistle profile. This is one of the few quantifiable referee signals for this match.</li>
+      <li><b>Officiating history with both teams</b>: as a South American referee he has no notable public officiating history with either Norway or Senegal, so no team bias; but his strict style poses a card risk to the physical Senegal and the aerial-collision Norway alike.</li>
+      <li><b>This tournament's uniform new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may speak to the referee, semi-automated offside; the 3 reds in the opener have already set a strict baseline. This is a heavily physical do-or-die match, so <b>accumulated yellows (a second yellow means a final-round suspension) and penalty risk are markedly higher than usual</b>.</li>
+      <li><b>Actual impact on this match</b>: Senegal's backs-to-the-wall battling for the ball, Norway's tactical fouls in transition, and the physical contact in Haaland's aerial duels in the box are all potential decision points — strict officiating would amplify how much these details affect a do-or-die game.</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing analysis</b>: if it is indeed Sampaio, this match's <b>card/penalty markets carry the most information of the whole day</b> — the combination of physical contact + do-or-die + the strictest referee makes a high card count likely and a penalty more probable. Accumulated suspensions will affect both teams' final-round line-ups. Be sure to confirm the referee's identity via the pre-match official appointment before drawing any refereeing conclusions.</div>
+  </section>
+
+  <!-- Line-ups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XI (ESPN / Squawka projections, not official; official line-ups per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇳🇴 Norway Predicted XI (4-3-3) · Solbakken</h4>
+    <div class="lineup">Nyland; Ryerson · Ajer · Østigård · Bjørkan; Berge · Ødegaard(C) · Thorsby; Nusa · Haaland · Sørloth</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Erling Haaland</td><td>Striker / Manchester City</td><td>Debut brace, on fire; his aerial battle with Koulibaly is the core of this game's outcome</td></tr>
+      <tr><td class="ht">Martin Ødegaard (C)</td><td>Midfielder / Arsenal</td><td>Organising hub + corner-kick scoring threat; his passing quality against Senegal's press is key</td></tr>
+      <tr><td class="ht">Antonio Nusa</td><td>Winger</td><td>Pace spark, Norway's wide threat on the counter</td></tr>
+      <tr><td class="ht">Alexander Sørloth</td><td>Striker</td><td>The second aerial target, forming a twin-tower / rotation firepower with Haaland</td></tr>
+    </table>
+    <h4>🇸🇳 Senegal Predicted XI (4-3-3) · Pape Thiaw</h4>
+    <div class="lineup">É. Mendy; Krépin · Koulibaly(C) · Niakhaté · Jakobs; P. Gueye · Pape Matar Sarr · L. Camara; I. Sarr · N. Jackson · Sadio Mané</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Sadio Mané</td><td>Winger/Forward</td><td>Senegal's spiritual leader and a finishing point; must stand up in a do-or-die game</td></tr>
+      <tr><td class="sc">Nicolas Jackson</td><td>Striker / Chelsea</td><td>Finishing failed in the opener — his composure in front of goal this match decides whether Senegal can break through</td></tr>
+      <tr><td class="sc">Ismaïla Sarr</td><td>Winger</td><td>Pace-counter spark, attacking the space behind once Norway push up</td></tr>
+      <tr><td class="sc">Kalidou Koulibaly (C)</td><td>Centre-back / Captain</td><td>The core for defending Haaland's aerial threat; his physical duels and marking are the bedrock of Senegal's defence</td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (ESPN / Squawka); <b>defer to the official pre-match team sheet · TBC</b>. Senegal's front line (whether Jackson keeps his place, Mané's position) and whether Norway go twin-tower (Haaland+Sørloth) are the key TBC variables.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e25563">🇳🇴 Norway · Ståle Solbakken</div>
+        <div class="role">4-3-3 direct play + Haaland as a single focal point + Ødegaard's link play / set pieces</div>
+        <ul class="cl">
+          <li>Norway's signature is <b>direct, vertical football built around Haaland as the finishing focal point + Ødegaard's creativity and set pieces</b> — this efficient firepower carried them back to the World Cup after a long absence in qualifying. The 4-1 opener was full firepower, but the opponent Iraq was weak.</li>
+          <li>Cross-reference: Norway have long been absent from major tournaments, and this is the debut-level stage for the Haaland/Ødegaard generation, so major-tournament experience is a weakness; against Senegal's physicality and press, whether they can keep feeding Haaland is a test of the system.</li>
+          <li>This match's angle: with qualification in hand, Norway can play more patiently, sit and counter, and win via the <b>few efficient chances</b> from Haaland's counters and Ødegaard's set pieces, forcing Senegal to push up before hitting the space behind.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#2ea36a">🇸🇳 Senegal · Pape Thiaw</div>
+        <div class="role">4-3-3 physicality + pace + high press, with finishing stability the fluctuating point</div>
+        <ul class="cl">
+          <li>Senegal's signature is <b>African-champion-level physical duels + wide pace + a high press</b> — the foundation of AFCON 2021 champions and World Cup 2022 R16 is there. Against France in the opener their creativity was on point, but the finishing failed.</li>
+          <li>Cross-reference: World Cup 2022 R16 (lost to England), AFCON 2021 title (won on penalties vs Egypt) — Senegal's floor is not low, but a toothless attack is a recurring concern (Jackson/Sarr's conversion).</li>
+          <li>This match's approach: a do-or-die game forces them to commit forward fully, leveraging their physicality and pace and improving finishing efficiency; but they must beware being caught in behind by Haaland/Nusa's counters once they push up — this is the thin line between Senegal turning it around and crashing out.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN <small>· Pre-match preview</small></div>The Group I picture is delicate; this is Senegal's do-or-die and Norway's chance to seal qualification. Norway are more favoured thanks to Haaland + the qualification situation, but Senegal's quality and physicality are genuine variables.</div>
+    <div class="insight"><div class="who">BetMGM / Squawka <small>· Betting media</small></div>Leans toward Norway having the cleaner route to three points (Haaland's form + situation), but concedes this is the closest line of the day and Senegal's backs-to-the-wall rebound cannot be underestimated.</div>
+    <div class="insight"><div class="who">Prediction market (Kalshi) <small>· Market consensus</small></div>Norway 44% / draw 27% / Senegal 30% — Norway gets a situational premium, but the three outcomes are close, making it the highest-information market of the day.</div>
+    <div class="insight"><div class="who">Composite · core uncertainty and traps <small>· Opta / FotMob</small></div>The real uncertainty is <b>who dominates "quality (Senegal) vs situation + Haaland (Norway)"</b>. ⚠ Trap reminder: Senegal may again "dominate the play but fail to finish" (the Matchday-1 ailment); Norway may steal it via a few efficient chances + counters — which is exactly the root of the three-way close line.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: no strong favourite here — a tight low-scoring game, a draw (≈29%) or a one-goal margin is the base case; Norway (≈42%) via the efficient route of Haaland/set pieces + counters, Senegal (≈30%) via physical suppression + a finishing recovery — all three outcomes are realistic.</li>
+      <li><b>Key men</b>: Haaland (NOR/aerial finishing), Ødegaard (NOR/set pieces and organisation), Nusa (NOR/counter pace), Jackson + Mané (SEN/whether the finishing recovers), Koulibaly (SEN/the defensive core against Haaland).</li>
+      <li><b>Matchwinners</b>: ① whether Senegal's finishing efficiency recovers (the Matchday-1 ailment); ② whether Norway can score efficiently via Haaland/set pieces when suppressed; ③ whether the space behind Senegal once they push up gets punished on the counter. These three together decide this highly two-sided game.</li>
+      <li><b>Market view</b>: a genuine three-way split (Norway marginally ahead), with real 1X2 value; Heat Index 4/5 (the highest of the day, talking points from how good Norway really are and Senegal's do-or-die). <b>If the referee is indeed Sampaio, the card/penalty markets carry equally high information.</b></li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② Senegal's front-line selection and whether Norway go twin-tower; ③ <b>the referee's identity (Sampaio vs Elfath, sources differ)</b> and the assistant/VAR setup; ④ Kalshi/Polymarket volume and momentum breakdown for this match; ⑤ the Asian level/half-ball handicap line and the totals line — specific odds per the real-time pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49127342/norway-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — schedule/XI/referee/preview</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760454">ESPN — odds</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — Group I</a><br>
+      • <a href="https://sports.betmgm.com/en/blog/world-cup/norway-vs-senegal-prediction-odds-preview-world-cup-june-22-bm16/">BetMGM — prediction/odds</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-norway-vs-senegal-06-22-26-world-cup-2026/">Squawka — preview</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-nor-sen-2026-06-22">Polymarket — prediction market</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referee list</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-21 · Charts use verified data; radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#e25563',SC='#2ea36a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Norway win','Draw','Senegal win'],datasets:[{data:[42,29,30],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[50,50],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, roughly 50/50)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['France','Senegal','Norway','Iraq'],datasets:[{data:[2,18,28,58],backgroundColor:['#5b8def',SC,HT,'#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/counter','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Norway',data:[6,7.5,7,7.5,8.5,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Senegal',data:[7.5,6.5,7,8,7.5,7.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

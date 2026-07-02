@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Belgium vs Senegal · 2026 World Cup Round of 32 (Winner advances to Round of 16 · Lumen Field, Seattle · Group G winners Belgium vs Senegal's 5-0 final-round surge)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-belgium-vs-senegal.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-belgium-vs-senegal.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-belgium-vs-senegal.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-belgium-vs-senegal.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-belgium-vs-senegal.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#e30613;--sc:#00853f;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#e30613,#00853f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#160a0c,#0c2014);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f0707a;font-weight:600}td.sc{color:#4fc07f;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-belgium-vs-senegal.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="https://pksport.net/es/report-belgium-vs-senegal.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-belgium-vs-senegal.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🏁 Full-time · Belgium 3-2 Senegal (AET · 2-2 after 90) · Tielemans 124'44" — latest winning goal in World Cup history · Belgium's stoppage-time turnaround, advance vs USA · 2026 World Cup · Round of 32</span>
+  <h1>Belgium vs Senegal</h1>
+  <div class="meta">Wednesday, 1 July 2026 · Lumen Field, Seattle (USA) · 4:00pm ET · Round of 32 · Winner advances to Round of 16 · Draw goes to extra time / penalties</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0707a">🇧🇪 Belgium</div><div class="rk">Won Group G · 1-1 Egypt, 0-0 Iran, 5-1 New Zealand · Coach Rudi Garcia · Captain Tielemans (not De Bruyne) · Doku recovered, expected to start · Lukaku fitness lagging, Debast a doubt</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#4fc07f">🇸🇳 Senegal</div><div class="rk">Through as 3rd in Group I (3 pts) · 0-3 France, 2-3 Norway, then 5-0 rout of Iraq · Coach Pape Thiaw · Captain Koulibaly (may be rotated to bench) · GK Mendy confirmed out with a knee injury, Diaw confirmed deputizing 🔁</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (written by daily-analysis 07-02) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#0e1626,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics & Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full-time Belgium 3-2 Senegal (AET · 2-2 reg) · 07-01</span></h2>
+
+    <h4>① Score Progression</h4>
+    <p style="font-size:13.5px">Seattle, Lumen Field: <b>one of the epic comebacks in World Cup knockout history</b>. Senegal at one point held a two-goal lead—<b>Habib Diarra and Ismaïla Sarr scored in turn to put Belgium 0-2 down</b>, with only about 5 minutes of regulation left. In that desperate moment, substitute <b>Romelu Lukaku scored in the 86th minute to pull one back</b>, and just 3 minutes later <b>captain Youri Tielemans headed in a Leandro Trossard cross to make it 2-2 in the 89th minute</b>, forcing extra time. Extra time stayed deadlocked until the final moment, when <b>Tielemans coolly slotted home a penalty in the 125th minute (official time 124:44) to seal it 3-2—considered the latest winning goal in World Cup history</b>. Belgium advance to the Round of 16 with a stunning comeback and will face the USA; Senegal, sitting on 3.54 xG for the match (far above Belgium's 1.80), threw away a strong position and go out at the Round of 32.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ Diarra (SEN · opened the scoring) · Sarr (SEN · doubled to 2-0) · 86' Lukaku (BEL · sub goal) · 89' Tielemans (BEL · header equalizer, Trossard assist) · AET 124'44" Tielemans (BEL · penalty winner) · reg 2-2 · FT Belgium 3-2 Senegal (AET)</div>
+
+    <h4 style="margin-top:16px">② Key Data Comparison (Sofascore / FotMob / ESPN)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇪 Belgium</th><th>🇸🇳 Senegal</th><th>Read</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td>1.80</td><td><b>3.54</b></td><td><b>Senegal's 3.54 xG was almost double Belgium's</b>—the chance quality was entirely dominated by Senegal; Belgium's progression owed more to in-game finishing and luck than to territorial dominance</td></tr>
+      <tr><td class="ht">Big chances (created / missed)</td><td>created 2 / missed 0</td><td>created 0 / <b>missed 2</b></td><td>The key divide: <b>Senegal missed 2 big chances</b> (matching their inflated xG), failing to kill the game after going 2-0 up; Belgium converted both of their 2 big chances—efficiency decided the outcome</td></tr>
+      <tr><td class="ht">Possession</td><td><b>52%</b></td><td>48%</td><td>Possession was nearly even, Belgium slightly ahead but not converting it into territorial control—Senegal's high-intensity midfield (Gueye/Camara/Diarra) and Sarr/Mané transitions dragged Belgium into a mire</td></tr>
+      <tr><td class="ht">Shots on target</td><td>5</td><td>5</td><td>Shots on target level, but Senegal's chance quality was higher (xG 3.54)—Belgium's keeper and defense survived multiple scares</td></tr>
+      <tr><td class="ht">Passes completed</td><td><b>602 (86%)</b></td><td>536 (84%)</td><td>Belgium's pass volume and accuracy were slightly higher, but "control without penetration"—the pre-match read of "Belgium's shaky attack" was validated</td></tr>
+      <tr><td class="ht">Match-winner</td><td colspan="2"><b>Tielemans header equalizer + 124'44" penalty winner (a brace) · sub Lukaku's 86' goal ignited the comeback</b></td><td>Captain Tielemans (the team's true captain, not De Bruyne) scored twice in the darkest moment—Belgium's <b>bench (Lukaku) + leadership quality (Tielemans)</b> were the core assets of the comeback</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.sofascore.com/news/belgium-vs-senegal-ht-senegal-hold-the-lead-after-a-tight-first-half">Sofascore — Belgium vs Senegal xG (1.80 vs 3.54), big chances, possession 52/48</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium">ESPN — Final Score & Match Report</a> · <a href="https://www.aljazeera.com/sports/2026/7/2/belgium-stage-3-2-comeback-win-over-senegal-to-enter-world-cup-last">Al Jazeera — Comeback report (Tielemans 124'44" winner)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289287/400021525">FIFA Match Centre</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical Review</h4>
+    <div class="insight"><div class="who">The pre-match warning "Belgium's attack is shaky, don't underestimate a draw/extra time" landed precisely</div>The pre-match snapshot clearly noted Belgium had misfired in the first two rounds with a shaky attack, and that low-scoring and draw/extra-time probabilities were not low (Belgium no-vig ≈46% / draw 30%). The result: <b>Belgium went 0-2 down, didn't equalize until the 89th minute, forced extra time and edged it only via a 125th-minute penalty</b>. Transferable takeaway: <b>Belgium's attacking output is extremely unstable and tends to get bogged down against high-pressing opponents; their progression relied on leaders delivering in the moment rather than systemic stability—this is the biggest uncertainty against the USA</b>.</div>
+    <div class="insight"><div class="who">Senegal's 3.54 xG + 2 missed big chances = a textbook case of "playing a great hand badly"</div>Pre-match we singled out Sarr/Mané's transition pace as the key tool to wear Belgium down and create counters—the result: <b>Senegal went 2-0 up precisely on Diarra's and Sarr's efficient raids, with a match xG of 3.54 completely suppressing Belgium</b>. Transferable takeaway: <b>Senegal have the chance-creation to beat any strong side, but their "kill the game" efficiency and mental management are a fatal weakness—unable to add another after 2-0, missing 2 big chances, they were ultimately overturned</b>.</div>
+    <div class="insight"><div class="who">Belgium's aging defense was cut open twice by Sarr/Mané's transition pace</div>Pre-match we warned that Belgium's aging defense + Mendy's absence left soft spots at both ends, and flagged "if Belgium over-commit, beware Sarr/Mané in-behind transitions." The result: <b>Belgium conceded twice on exactly Senegal's two fast transitions</b>. Transferable takeaway: <b>Belgium's back line is extremely fragile against balls in behind for pacey wingers—the USA's Pulisic/Weah/Tillman wide pace will directly replicate this soft spot</b>.</div>
+    <div class="insight"><div class="who">Super-sub Lukaku + Tielemans's leadership are Belgium's hidden depth</div>Garcia bringing on Lukaku immediately changed the comeback's tempo, while Tielemans scored a brace with a header + a penalty. Transferable takeaway: <b>Belgium's bench and leadership quality can bail them out when behind, but they over-rely on "individual moments" rather than a system—if those players are shut down, Belgium's attacking ceiling collapses quickly</b>.</div>
+
+    <h4 style="margin-top:16px">④ Prediction Reconciliation</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Belgium slight favorites (no-vig ≈46% / draw 30% / SEN 27%)</td><td style="color:var(--good)"><b>✓ Direction hit</b></td><td>Belgium advanced, but through an extremely tense process—0-2 down, equalized at 89', penalty winner at 125', far harder than the "slight favorite" 46% implied</td></tr>
+      <tr><td class="ht">Belgium's attack shaky, don't underestimate a draw/extra time</td><td style="color:var(--good)"><b>✓ Precisely hit</b></td><td>2-2 in regulation, into extra time—the "low-scoring/draw/extra-time" warning fully delivered, the most accurate read of this match</td></tr>
+      <tr><td class="ht">Sarr/Mané transition pace creates counters, Belgium's defense must watch balls in behind</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>Senegal went 2-0 up on exactly Diarra's and Sarr's two fast transitions—Belgium's in-behind soft spot was cut open precisely</td></tr>
+      <tr><td class="ht">Senegal's 5-0 stats must be discounted for the opponent being down to 10</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>Senegal showed real attacking quality (xG 3.54) but lacked efficiency and were overturned—the cautious pre-match read on the "quality of their final-round 5-0" holds</td></tr>
+      <tr><td class="ht">Base scenario: Belgium win steadily on individual ceiling</td><td style="color:var(--bad)"><b>✗ Miss</b></td><td>Belgium didn't "win steadily" but staged a last-gasp comeback—0-2 down, the latest winning goal in history; the process far exceeded the base scenario's level of suspense</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward Migration</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f0707a">🇧🇪 Belgium · through to the Round of 16 (vs USA · Lumen Field, Seattle · 4–7 July)</h4>
+        <ul class="watch">
+          <li><b>Round-of-16 opponent confirmed as hosts USA</b>, and <b>they stay at Lumen Field, Seattle</b> (Belgium's run of quasi-home games there)—but the USA get the nationwide home atmosphere.</li>
+          <li><b>The in-behind soft spot is the biggest risk</b>: cut open twice here by Sarr/Mané transitions, <b>the USA's Pulisic/Weah/Tillman wide pace will directly replicate this break point</b>—the next preview must focus on Belgium's defensive matchups.</li>
+          <li><b>Positive: the USA's top scorer Balogun is suspended and misses this tie</b> (see the USA vs Bosnia review)—the USA's attacking firepower is dented, an important pressure-reliever for Belgium.</li>
+          <li><b>Shaky attack + fitness burden</b>: having played 120+ minutes of extra time, fatigue is carried into the Round of 16; the attack still relies on Tielemans/Lukaku bailing them out individually.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#4fc07f">🇸🇳 Senegal · out at the Round of 32 (season summary)</h4>
+        <ul class="watch">
+          <li><b>Chance-creation good enough to beat any strong side</b> (xG 3.54 suppressed Belgium); the Sarr/Mané/Diarra transition system is a tactical asset for the Thiaw cycle.</li>
+          <li><b>The ceiling is "efficiency and mental management"</b>: after a 2-0 lead they missed 2 big chances, failed to kill the game and were overturned—finishing and game management after taking the lead are core weaknesses that must be reinforced.</li>
+          <li><b>What they take away</b>: young midfielder Diarra's breakout + Sarr's wide pace are the foundation for Senegal to push into deeper rounds; they need to reinforce a center-forward who can finish reliably.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Snapshot Summary ===== -->
+  <div class="summary">
+    <h3>📋 Snapshot Summary (read this first)</h3>
+    <p class="lead">This is a Round-of-32 clash of <b>"European pedigree vs African pace"</b>—<b>Belgium advance as Group G winners (1-1 Egypt, 0-0 Iran, 5-1 thrashing of New Zealand), while Senegal qualified 3rd in Group I on 3 points (0-3 to France, 2-3 to Norway, then a 5-0 rout of Iraq)</b>. The winner goes straight to the Round of 16; a draw goes to extra time / penalties. Odds and fundamentals align: <b>Belgium are favorites but only modestly so</b>—1X2 decimal odds are Belgium 2.15 (American +115), Draw 3.20 (+220), Senegal 3.70 (+270); de-vigged that's roughly Belgium ≈46%, Draw ≈28%, Senegal ≈26%. The match has four storylines: ① <b>Doku's form is a genuine tactical debate—his respiratory illness has resolved and he started the final group game vs New Zealand, but Belgian outlet Sporza (6/29-30) reports he "performed particularly poorly" and "struggled physically" in that match, so whether Garcia starts him or holds him for impact off the bench is unsettled (most predicted-XIs still list him starting)</b>; ② <b>Belgium's attacking corps—De Bruyne, Lukaku and Courtois are all confirmed fully fit, no issues</b>; ③ <b>Senegal GK Mendy is confirmed OUT with a knee injury (possible medial ligament damage per Koulibaly), with Mory Diaw confirmed starting in goal instead (Washington Post/ESPN/RTS Sénégal, three independent sources)</b>; ④ <b>Belgium defender Zeno Debast has a positive MRI and resumed partial training this week, but coach Garcia said "tomorrow is still too soon"—expected to miss (AP wire, corroborated by Sports Mole)</b>. The two nations have <b>never met before (a first-ever meeting)</b>. Base script: <b>Belgium control possession and grind out a win, while Senegal use pace in transition (Sarr/Mané) to attack the space behind a high Belgian line, chasing an upset or extra time</b>. Hype index ≈ 3/5 (Belgium's star names + Senegal's 5-0 surge narrative, but the total lean is Under).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Belgium implied win % (de-vig)</div><div class="v" style="color:#f0707a">≈46%</div></div>
+      <div class="key"><div class="k">Senegal implied win % (de-vig)</div><div class="v" style="color:#4fc07f">≈26%</div></div>
+      <div class="key"><div class="k">Draw implied prob.</div><div class="v" style="color:var(--draw)">≈28%</div></div>
+      <div class="key"><div class="k">Market hype index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Advancement math (multi-source)</b>: Belgium won Group G (1-1 Egypt, 0-0 Iran, 5-1 New Zealand, leapfrogging Egypt in the final round); Senegal qualified 3rd in Group I on 3 points as one of the best third-placed teams (0-3 France, 2-3 Norway, 5-0 Iraq). <b>This is a single-elimination knockout—the winner advances to the Round of 16</b>; a draw goes to extra time / penalties.</li>
+      <li><b>Doku status VERIFIED but a tactical debate (🔁 updated · key · multi-source)</b>: Doku missed the 6/21 Iran game with a recurring respiratory infection, has since recovered and <b>started the 5-1 final group game vs New Zealand</b>. ESPN/Sports Mole/Rotowire currently still list him in their predicted XI vs Senegal—<b>do NOT carry over the "out" status from the Iran preview</b>. But Belgian outlet <b>Sporza (6/29-30) reports he "performed particularly poorly" and "struggled physically"</b> in the New Zealand game, making whether Garcia starts him or holds him for impact a genuine open question, not settled.</li>
+      <li><b>Head-to-head (confirmed)</b>: per Opta and Seattle Sounders, Belgium and Senegal have <b>never met before</b> (no fixtures at any level)—a first-ever meeting with no historical baggage.</li>
+      <li><b>Senegal GK Mendy CONFIRMED out with a knee injury (🔁 updated · three independent sources)</b>: Édouard Mendy hurt his left knee vs Norway, missed the Iraq game and returned to his club for assessment — possibly medial ligament damage per captain Koulibaly's comments; <b>Washington Post, ESPN and Senegalese outlet RTS Sénégal all independently confirm he is out for the Belgium game too</b>, with <b>Mory Diaw confirmed starting in goal</b> instead (a clean sheet vs Iraq).</li>
+      <li><b>Belgium's Debast resumed partial training but expected to miss (🆕 new · multi-source)</b>: defender <b>Zeno Debast</b> had a positive MRI (no structural damage) and resumed partial training this week, but coach <b>Garcia said "tomorrow is still too soon"</b> — expected to miss this match. Sources: AP wire (via dailyunion.com/kvue.com), corroborated by Sports Mole.</li>
+      <li><b>Senegal's 5-0 surge (confirmed · with a caveat)</b>: the 5-0 rout of Iraq was Senegal's best attacking display of the tournament (Opta: 28 shots, 12 on target, 3.01 xG); but Iraq were reduced to 10 men in the 13th minute—so that surge must be discounted.</li>
+      <li><b>Referee confirmed</b>: the match referee is <b>Saíd Martínez (Honduras)</b>, a strict, card-ready official; the VAR crew is still awaiting full FIFA confirmation. <span style="color:var(--warn)">[VAR crew · unconfirmed]</span></li>
+    </ul>
+  </div>
+
+  <!-- ===== Key Team News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Team News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and status signals that shape this match, each explained for how it changes tactics or the result (key players / lineups / injuries cross-checked across ≥2 sources; <b>as of publication, coach Garcia has not announced an official lineup (per ESPN/Sports Mole) — everything below is media-predicted/team-news, not official confirmation</b>)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🔁 UPDATED · Doku recovered but his form is a tactical debate (previously missed Iran) <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / Rotowire / Sporza</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Belgium's <b>Jérémy Doku</b> has recovered from a respiratory infection and <b>started</b> the final group game vs New Zealand, but Belgian outlet Sporza reports he <b>"performed particularly poorly"</b>—whether he starts is a genuine open question</div>
+      <p style="font-size:13.5px">Doku missed the 6/21 Iran game (0-0) with a <b>recurring respiratory infection</b>, then briefly left the camp (the birth of his son) before returning to Seattle and <b>starting the 6/26/27 final group game vs New Zealand</b> in a 5-1 win (ESPN's report states: "Doku started for Belgium after missing Sunday's scoreless draw with Iran with an illness"). ESPN (6/29), Sports Mole (6/30) and Rotowire currently still include him in their predicted attacking line vs Senegal. But <b>Belgian outlet Sporza (6/29-30) reports he "performed particularly poorly" and "struggled physically"</b> in the New Zealand game, making whether coach Garcia starts him or holds him for impact off the bench a genuine tactical debate — not yet settled. <span style="color:var(--warn)">[Exact XI per FIFA Match Centre pre-kickoff · unconfirmed]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Doku is Belgium's flank dynamite for unlocking packed defenses—his one-v-one dribbling and pace are key to opening up Senegal's physical midfield. <b>This correction is critical: analyzing the game with Doku simply "out" (the Iran-era read) is wrong, but so is assuming he's automatically sharp</b>. Sporza's fitness/form concern means even if he starts, his threat level may be reduced — watch whether and when Garcia substitutes him.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49214195/" style="color:var(--accent)">ESPN — Belgium vs Senegal preview / predicted XIs</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760477" style="color:var(--accent)">ESPN — Belgium vs New Zealand report (Doku started)</a> · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/predicted-lineups/is-debast-back-for-the-knockouts-predicted-belgium-xi-vs-senegal_600367.html" style="color:var(--accent)">Sports Mole — Belgium predicted XI</a> · Sporza — report on Doku's poor showing vs New Zealand</div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ Belgium's attacking core all fully fit · De Bruyne, Lukaku, Courtois no issues <span style="color:var(--mut);font-weight:400">· ESPN / Washington Post multi-source</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">De Bruyne scored vs New Zealand and is sharp; <b>Lukaku and Courtois are both confirmed fully fit</b>, no fitness concerns</div>
+      <p style="font-size:13.5px">Per ESPN, <b>Kevin De Bruyne</b> scored vs New Zealand and features as the No.10 in every predicted XI, sharp and undoubted. <b>Romelu Lukaku</b> also scored vs New Zealand; earlier reports that his fitness was still catching up to club form (only 7 appearances for Napoli) have been superseded — <b>De Bruyne, Lukaku and goalkeeper Courtois are all confirmed fully fit with no issues</b>. Belgium have <b>no suspensions</b>. <span style="color:var(--warn)">[Whether Lukaku starts or comes off the bench · per pre-match FIFA Match Centre · unconfirmed]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b>Why it matters</b>: De Bruyne's playmaking and through-balls are Belgium's engine, combining with the flank pace of Doku/Trossard for a layered threat; with Lukaku and Courtois both confirmed fit, Belgium's finishing and goalkeeping are not weighed down by fitness questions — the squad's remaining uncertainty has narrowed to Doku's form and Debast's fitness (see next item).</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49214195/" style="color:var(--accent)">ESPN — preview / predicted XIs</a> · <a href="https://www.washingtonpost.com/sports/soccer/2026/06/29/world-cup-belgium-lukaku-fitness/" style="color:var(--accent)">Washington Post — Lukaku/De Bruyne/Courtois fitness update</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 Belgium's Zeno Debast — positive MRI, resumed partial training, but expected to miss <span style="color:var(--mut);font-weight:400">· AP wire / corroborated by Sports Mole</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Defender <b>Zeno Debast</b> had a positive MRI and resumed partial training this week, but coach <b>Garcia said "tomorrow is still too soon"</b> — expected to miss</div>
+      <p style="font-size:13.5px">Per an AP wire report (via dailyunion.com/kvue.com), <b>Zeno Debast's MRI came back positive</b> (no structural damage) and he has <b>resumed partial training</b> this week, but coach <b>Rudi Garcia said plainly that "tomorrow [vs Senegal] is still too soon"</b>, signaling he is likely to miss this match; Sports Mole's reporting is consistent with this. <span style="color:var(--warn)">[Whether Debast makes the matchday squad · per pre-match FIFA Match Centre · unconfirmed]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Debast is one of Belgium's rotation options at the back; his absence means Garcia's back line (Castagne/Theate/Mechele/De Cuyper) is very likely to stay unchanged with no new variable — this update mainly confirms the status quo rather than introducing a disruption, with defensive responsibility for Senegal's Sarr/Mané pace remaining with the established back four.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: AP wire (via dailyunion.com / kvue.com) — Debast MRI and training status · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/predicted-lineups/is-debast-back-for-the-knockouts-predicted-belgium-xi-vs-senegal_600367.html" style="color:var(--accent)">Sports Mole — is Debast back for the knockouts</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">🔁 UPDATED · Senegal GK Mendy CONFIRMED out with a knee injury · Diaw confirmed deputizing <span style="color:var(--mut);font-weight:400">· Washington Post / ESPN / RTS Sénégal (Senegalese outlet), three independent sources</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Édouard Mendy</b>'s knee injury (possibly medial ligament damage) is <b>confirmed to rule him out</b> of this match; <b>Mory Diaw confirmed starting</b> in goal instead</div>
+      <p style="font-size:13.5px">The Washington Post, ESPN, and Senegalese outlet <b>RTS Sénégal</b> all independently confirm that Senegal's first-choice keeper <b>Édouard Mendy</b>, who hurt his left knee vs Norway and missed the Iraq game — with captain Koulibaly's comments suggesting possible medial ligament damage — <b>is confirmed out for the Belgium game too</b>. Backup <b>Mory Diaw</b> (a clean sheet vs Iraq) is <b>confirmed to start</b> in goal. Separately, captain <b>Koulibaly</b> is fit but was rested vs Iraq (unused sub), and whether he starts here remains to be seen. <span style="color:var(--warn)">[Whether Koulibaly starts · per pre-match FIFA Match Centre · unconfirmed]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b>Why it matters</b>: Mendy is the commander and psychological anchor of Senegal's back line; his confirmed absence weakens organization and set-piece handling—against De Bruyne's crosses/set-pieces and Doku's dribbling (if he starts), the goalkeeping experience gap could decide the game. Diaw kept a clean sheet vs Iraq, but that came against 10 men — facing a Belgium-level attack at full strength is a real test.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: Washington Post — Mendy's knee injury / Koulibaly's comments · <a href="https://www.espn.com/espn/story/_/id/49160006/" style="color:var(--accent)">ESPN — Mendy knee injury</a> · RTS Sénégal (Senegalese outlet) — Diaw confirmed deputizing · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/predicted-lineups/can-senegal-build-on-iraq-romp-predicted-senegal-xi-vs-belgium_600368.html" style="color:var(--accent)">Sports Mole — Senegal predicted XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 Carry-over · Senegal's 5-0 final-round rout of Iraq (with caveat) <span style="color:var(--mut);font-weight:400">· ESPN / Opta / Sky multi-source</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Senegal <b>routed Iraq 5-0</b> to qualify—their best attacking night of the tournament, but the opponent was down to 10 men from the 13th minute</div>
+      <p style="font-size:13.5px">After two defeats (0-3 France, 2-3 Norway), Senegal <b>routed Iraq 5-0</b> in the final round, becoming the <b>first team ever to reach the World Cup knockouts after losing their first two group games</b>. Opta logged 28 shots, 12 on target and 3.01 xG—Senegal's best of the edition—led by <b>Ismaïla Sarr (3 goals + 1 assist this tournament)</b>. But <b>Iraq were sent down to 10 men in the 13th minute</b>—so that attacking surge must be discounted.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b>Why it matters</b>: the 5-0 lifts morale, but numbers against 10 men don't equate to output against a full-strength Belgium. Senegal's real weapons are <b>pace and transition</b> (Sarr/Mané) plus a physical midfield (Gueye/Camara/Diarra) to disrupt; their realistic path vs Belgium is a low block plus counters into the space behind a high line—not sustained possession-based attacking.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://theanalyst.com/articles/belgium-vs-senegal-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — preview</a> · <a href="https://sports.yahoo.com/articles/senegal-seized-last-3rd-place-040339344.html" style="color:var(--accent)">Yahoo — Senegal seized last 3rd-place spot</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Betting Market Heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / odds / money flow / public opinion</span></h2>
+    <div class="sub">This is a "Belgium favored but only modestly, Senegal riding their 5-0 surge" fixture—the market is pricing the balance between star names and counter-attacking pace</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market hype index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Belgium star names + Senegal's 5-0 surge narrative (total leans Under)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Belgium opened as favorites (around 2.15, American +115), but relatively close odds (Senegal +270, Draw +220) show the market doesn't see a one-sided game—Belgium's to-advance line (-175) is far shorter than their 90-minute line, signaling the market expects Belgium may win in extra time. Under 2.5 is the market lean.</div>
+    </div>
+
+    <h4>① Expert pick aggregation</h4>
+    <table>
+      <tr><th>Who</th><th>Type</th><th>View / Pick</th></tr>
+      <tr><td>BetMGM</td><td>Sportsbook analysis</td><td>Leans Belgium to win (+115), eyeing a 2-1 scoreline; notes Senegal's Mendy out (knee)</td></tr>
+      <tr><td>DraftKings (Dan Johnson)</td><td>Sportsbook analysis</td><td>Early lean = Both Teams To Score Yes (-105); projects 1-1, Belgium advancing in extra time</td></tr>
+      <tr><td>Racing Post</td><td>UK veteran</td><td>Offers a 6-1 Bet Builder with a Belgium angle; overall leans Belgium</td></tr>
+      <tr><td>Opta Analyst</td><td>Data model</td><td>Belgium favored but acknowledges Senegal's counter-attacking pace; first-ever meeting between the sides</td></tr>
+      <tr><td>ESPN Power Rankings</td><td>Power ranking</td><td>Belgium new entry at #15 (after 5-1 over New Zealand); Senegal unranked (not in the top 15)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL European odds)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Belgium / Draw / Senegal</th><th>Read</th></tr>
+      <tr><td>Open (DraftKings · 6/28)</td><td>1X2 · composite</td><td class="sc">2.15 / 3.20 / 3.70</td><td>Belgium +115 (American) favorites; Draw +220, Senegal +270—relatively close, the market respects Senegal's counter pace and 5-0 momentum</td></tr>
+      <tr><td>Current (pre-match · across books)</td><td>1X2 · composite</td><td class="sc">≈2.10–2.18 / ≈3.20 / 3.50–3.75</td><td>Slight book-to-book variance (Belgium +110~+118, Senegal +250~+275); no confirmed one-way open→now move, just inter-book spread</td></tr>
+      <tr><td>O/U + handicap</td><td colspan="2" class="sc">Total O/U 2.5 leans Under (Over +130 / Under -160); spread Belgium -0.5 (+110), Senegal +0.5 (-140); BTTS Yes -105 / No -120</td><td>Market expects low scoring—both sides may be cautious, Under 2.5 the lean; shallow handicap</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning & trend (open → current)</h4>
+    <table>
+      <tr><th>Time</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Open (DraftKings 6/28)</td><td class="sc">Belgium +115 (DECIMAL ≈2.15); Senegal +270 (≈3.70); Draw +220 (≈3.20); to-advance Belgium -175 (≈1.57) / Senegal +140 (≈2.40)</td><td>Priced as favorites on Belgium's overall squad (De Bruyne/Doku/Courtois) + Group G title + ESPN #15; but Senegal's counter pace + 5-0 momentum kept them from being marked down deep</td></tr>
+      <tr><td>Post-open positioning (pre-match)</td><td class="ht">Belgium ≈ +110~+118 (DECIMAL ≈2.10–2.18) · Senegal ≈3.50–3.75 · Draw ≈3.20</td><td><b>Positioning drivers</b>: ① Belgium's star names + Doku's return → favorite tailwind; ② but Senegal's Sarr/Mané pace + 5-0 surge are priced in → Belgium not pushed lower; ③ both may be cautious → total leans Under, draw value watched</td></tr>
+      <tr><td>Current (pre-match)</td><td class="sc">Belgium ≈2.15; total O/U 2.5 (leans Under); to-advance Belgium -175 vs 90-min +115 (big gap)</td><td>Clear market positioning: <b>Belgium are favorites but not dominant</b>—Senegal's ≈26% win + ≈28% draw sum to about 54%, so a single-game knockout has real upset/draw room; <b>the to-advance -175 being far shorter than the win line +115 signals the market expects Belgium may win in extra time</b>. Positioning tier: <b>favorite (modest edge), with the core battle in draw/extra-time and the total</b></td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a "Belgium favored but only modestly, Senegal riding their 5-0 surge + counter pace" fixture, hype index <b>3/5</b>. Belgium's star names and Doku's return may inflate home-win sentiment, but the relatively close odds (Senegal +270, Draw +220), the Under 2.5 lean, and the <b>to-advance line (Belgium -175) being far shorter than the 90-minute win line (+115)</b> reveal that the market isn't convinced of an "easy Belgium win in 90 minutes"—it expects something lower-scoring, perhaps decided in extra time. Open is per DraftKings 6/28; current is a slight inter-book spread · live prices per pre-match · unconfirmed. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ public opinion</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (implied probability)</b>: multiple sources cite trader-implied probabilities of about <b>Belgium 46% / Draw 30% / Senegal 27%</b>, leaning Belgium; but the specific platform was not named (not confirmed as Kalshi or Polymarket). <span style="color:var(--warn)">[Platform / exact split · unconfirmed]</span></li>
+      <li><b>Talking point ①</b>: <b>Doku's return and Belgium's star names</b>—Doku recovered and starting, De Bruyne sharp—are the core reasons opinion favors Belgium to advance.</li>
+      <li><b>Talking point ②</b>: <b>Senegal's 5-0 surge and counter pace</b>—routing Iraq (albeit vs 10 men) + Sarr's 3 goals & 1 assist this edition—is seen as upset fuel; opinion focuses on whether their pace can hurt Belgium.</li>
+      <li><b>Talking point ③</b>: <b>a cautious, low-scoring duel</b>—Belgium's attack is strong but Senegal's physical midfield disrupts, and Mendy's absence pressures the back line/keeping—so opinion broadly expects low scoring, with a draw/extra time not to be dismissed.</li>
+      <li><b>Public money / social</b>: DraftKings public money is 73% on Belgium (star-name effect); some money, per sportsbook-media color, leans toward Under and Senegal +270 / draw value. <span style="color:var(--warn)">[Quantified data · unconfirmed]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is a "Belgium stronger, but Senegal have counter pace and 5-0 momentum" medium-heat fixture, hype index <b>3/5</b>. The star-name narrative lifts sentiment, but the Under lean on the total, the relatively close odds and the shorter to-advance line reveal the market's realistic expectation of a low-scoring / non-blowout result. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-belgium-vs-senegal-in-the-2026-fifa-world-cup-round-of-32/">DraftKings — opening odds</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/belgium-vs-senegal-prediction-odds-preview-world-cup-july-1-bm16/">BetMGM — preview / odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-senegal-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-azTBX1a2EaMp/">Racing Post — Bet Builder</a> · <a href="https://theanalyst.com/articles/belgium-vs-senegal-prediction-world-cup-2026-match-preview">Opta Analyst — preview</a></div>
+  </section>
+
+  <!-- ===== Deep Data ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· historical baseline vs this World Cup's actuals · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: line up each team's <b>historical baseline (last two majors)</b> against their <b>actuals at this World Cup (group stage)</b>, item by item. Public national-team xG samples are limited; missing items are marked "unconfirmed"—never fabricated.</div>
+
+    <h4>① Core: historical baseline vs this World Cup's actuals (by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup (group stage)</th><th>Delta & read</th></tr>
+      <tr><td class="ht">🇧🇪 Belgium · attack</td><td class="ht">Twilight of a golden generation: 2018 WC 3rd, 2022 group exit; high individual ceiling (De Bruyne / Doku / Lukaku / Trossard)</td><td class="ht">Group G: 1-1 Egypt, 0-0 Iran (two drab draws, incl. a red card), then 5-1 over New Zealand; the attack only fully fired in the final round <span style="color:var(--warn)">(full per-game xG · unconfirmed)</span></td><td><b>Misfired in the first two, exploded in the third</b>: high ceiling but questionable consistency, needing De Bruyne's playmaking + the finishing of Doku/Trossard <span style="color:var(--warn)">(exact xG · unconfirmed)</span></td></tr>
+      <tr><td class="ht">🇧🇪 Belgium · defense</td><td class="ht">Courtois is an elite keeper; an experienced but ageing back line (ESPN: "older legs")</td><td class="ht">Group: 1-1, 0-0, 5-1—clean sheets/just 1 goal conceded in the first two, keeper in form; but slow defenders are a concern</td><td><b>Solid overall but with a pace concern</b>: Courtois is the anchor, but an ageing back line must beware the space behind vs Sarr/Mané pace</td></tr>
+      <tr><td class="sc">🇸🇳 Senegal · attack</td><td class="sc">2022 WC last-16 (lost to England); pace and transition (Sarr/Mané), finishing hot-and-cold</td><td class="sc">0-3 France, 2-3 Norway (created chances but poor efficiency), then 5-0 Iraq (28 shots, 3.01 xG, but vs 10 men); Sarr 3 goals + 1 assist <span style="color:var(--warn)">(per-game xG · unconfirmed)</span></td><td><b>Transition-based + variable efficiency</b>: "creates chances but struggles to convert" vs strong sides; the Iraq surge must be discounted (10 men) <span style="color:var(--warn)">(per-game xG this edition · unconfirmed)</span></td></tr>
+      <tr><td class="sc">🇸🇳 Senegal · defense</td><td class="sc">Traditional physical defensive strength; led by Koulibaly, but conceded 3 in each game vs France/Norway this edition</td><td class="sc">3 conceded vs France, 3 vs Norway (Koulibaly exposed by Haaland before being subbed), clean sheet vs Iraq (10 men); Mendy's knee doubt weakens the back line</td><td><b>Back line under pressure vs strong sides</b>: 3 conceded in each game exposes fragility vs pace/strong attacks; Mendy's absence further weakens organization—the key weak point of this match</td></tr>
+    </table>
+    <div class="note">📌 <b>Key read</b>: Belgium have a high attacking ceiling but questionable consistency (two drab draws then a 5-1 surge), with Courtois as anchor and an ageing back line. Senegal's defense is under pressure vs strong sides (3 conceded each vs France/Norway), and Mendy's knee doubt weakens it further—the key asymmetric factor of this match. Senegal's 5-0 over Iraq must be discounted (10 men). Public national-team xG breakdowns are limited; exact per-game data · unconfirmed. Sources: Opta Analyst / ESPN / Sports Mole.</div>
+
+    <h4>② This-match projection & Opta calibration + trap reminder</h4>
+    <table>
+      <tr><td>This-match model xG projection (magnitude)</td><td class="sc">Belgium ≈1.3–1.6</td><td class="ht">Senegal ≈0.9–1.2</td><td>Belgium's attacking corps + Doku's return edge it; Senegal's counters are infrequent but high-value (Sarr/Mané transitions)—consistent with the Under lean on the total <span style="color:var(--warn)">[exact xG · unconfirmed]</span></td></tr>
+      <tr><td>Opta Power Ranking / power rankings</td><td colspan="2" class="sc">ESPN power rankings: Belgium #15 (new entry), Senegal unranked; Opta: Senegal have lost their last 4 WC games vs European teams (Netherlands/England 2022, France/Norway 2026), Belgium have lost only 1 of 6 WC games vs African teams (W3 D2)</td><td>Belgium edge it overall and have a decent record vs African sides; but Senegal's counter pace + a first-ever meeting with no baggage are upset variables the model can't fully price</td></tr>
+      <tr><td>Pressing PPDA / xT / field tilt</td><td colspan="2" class="ht">Public detailed national-team data is limited <span style="color:var(--warn)">(PPDA/xT unconfirmed)</span>—qualitatively: Belgium project to dominate possession and field tilt; Senegal's physical midfield (Gueye/Camara/Diarra) high-intensity disruption + Sarr/Mané fast transitions are the key tools to wear Belgium down and create counters</td><td><b>Trap reminders</b>: ① Belgium misfiring in the first two rounds shows their breakdown play is shaky—a low-scoring/draw/extra-time outcome is far from unlikely; ② Senegal's 5-0 numbers must be discounted (10 men); ③ Belgium's ageing back line + Mendy's absence leave both ends with soft spots; ④ if Belgium over-commit, beware the space behind for Sarr/Mané's transition pace</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-like" metrics mean)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: quality of chances conceded—gauges true defensive level. Senegal's xGA vs France/Norway is high.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Big chance</b>: high-probability scoring chance—Belgium's attack creates more, but Senegal's transitions can also manufacture big chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower = more aggressive pressing. <span style="color:var(--warn)">unconfirmed</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; Belgium project to dominate possession, Senegal rely on fast transition rather than holding the ball.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources like Opta/ESPN/FIFA; national-team public samples for PPDA/xT/field tilt are limited, so missing items are always marked "unconfirmed" and never fabricated.</div>
+  </section>
+
+  <!-- ===== Referee ===== -->
+  <section>
+    <h2><span class="n">1</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Referee confirmed</b>: the referee for this Round-of-32 game is <b>Saíd Martínez (Honduras)</b> (per the Law5 / referee-appointments tracker, matching multiple search sources). Assistant referees Walter López (HON), Christian Ramírez (HON); fourth official Andrés Rojas (Colombia); reserve AR Alexander Guzmán (COL). The <b>VAR crew is still awaiting full FIFA confirmation</b>. Venue: <b>Lumen Field, Seattle (USA)</b>. <span style="color:var(--warn)">[VAR crew · per FIFA official · unconfirmed]</span></div>
+    <h4>Officiating tendencies + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>Referee profile</b>: Saíd Martínez is the <b>first Honduran referee to officiate a World Cup</b>, a FIFA international since 2017. His career average is about <b>4.16 yellows/game</b> (691 YC, 30 RC in 166 matches; secondary-aggregator figure, career not this tournament)—generally strict and card-ready. <span style="color:var(--warn)">[Exact career data · unconfirmed]</span></li>
+      <li><b>This tournament's sample</b>: Martínez officiated <b>Qatar 1-1 Switzerland</b> this edition (3 yellows, 1 penalty awarded), and was also assigned England vs Ghana. The single-match sample is thin—treat as a lean.</li>
+      <li><b>This major's unified rules</b>: 2026 World Cup unified officiating rules—only the captain may speak with the referee, the goalkeeper 8-second rule, and semi-automated offside (SAOT) precisely calibrating the sprint threshold. In the knockouts, referees are generally stricter on time-wasting and tactical fouls.</li>
+      <li><b>Two-sidedness</b>: Senegal's physical midfield (Gueye/Camara/Diarra) high-intensity dueling + knockout tactical fouls, combined with Martínez's strict card threshold, could push the yellow count up. Semi-automated offside will precisely rule on the marginal sprints of Belgium's attack and Senegal's counters—affecting both teams' high/low lines. Martínez has awarded a penalty this edition, so penalty-box duels are worth watching.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: referee Saíd Martínez is strict and card-ready (career ~4.16 yellows/game); Senegal's physical midfield + fierce knockout dueling → the total yellows could run high. On penalties, both Belgium's crossing/dribbling under pressure and Senegal's counter duels in the box can manufacture penalties, and Martínez has awarded one this edition; semi-automated offside is a double-edged sword for both back lines. The VAR crew awaits official confirmation; treat related markets as a lean, not actionable.</div>
+  </section>
+
+  <!-- ===== Data Panel ===== -->
+  <section>
+    <h2><span class="n">2</span> Data Panel (core)</h2>
+    <div class="sub">1X2 implied probabilities (de-vigged) · advancement picture · totals market · overall quality profile — all charts are verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (analyst estimate)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group-stage points (both teams)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall quality profile (analyst rating 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇪 Belgium</th><th>🇸🇳 Senegal</th></tr>
+      <tr><td>Group-stage path</td><td class="ht">Won Group G · 1-1 Egypt, 0-0 Iran, 5-1 New Zealand (leapfrogged Egypt in the final round)</td><td class="sc">3rd in Group I (3 pts, through as a best third-placed team) · 0-3 France, 2-3 Norway, 5-0 Iraq</td></tr>
+      <tr><td>Match nature</td><td colspan="2">Single-elimination Round of 32 · winner advances to Round of 16 · draw goes to extra time / penalties · Lumen Field, Seattle</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2" class="ht">The two nations have <b>never met</b> (no fixtures at any level)—a first-ever meeting (Opta / Seattle Sounders)</td></tr>
+      <tr><td>Head coach</td><td class="ht">Rudi Garcia (4-2-3-1, possession + De Bruyne playmaking + Doku/Trossard flanks)</td><td class="sc">Pape Thiaw (4-3-3, physical midfield disruption + Sarr/Mané transition pace)</td></tr>
+      <tr><td>Key players</td><td class="ht">Kevin De Bruyne (No.10) · Jérémy Doku (winger, recovered) · Youri Tielemans (captain/midfield) · Thibaut Courtois (GK) · Romelu Lukaku (fitness lagging)</td><td class="sc">Ismaïla Sarr (winger, 3 goals & 1 assist this edition) · Sadio Mané (winger) · Kalidou Koulibaly (captain/CB, may be benched) · Pape Gueye / Lamine Camara (midfield) · Mory Diaw (GK)</td></tr>
+      <tr><td>Key absences / injuries</td><td class="ht">Doku recovered, expected to start; Lukaku fitness lagging (maybe sub); Debast leg-injury doubt; no suspensions</td><td class="sc">GK Mendy a knee-injury doubt (Diaw deputizes); captain Koulibaly fit but may be rotated to bench</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win 2.15 (implied ≈46%)</td><td class="sc">Win 3.70 (implied ≈26%) · Draw 3.20 (≈28%)</td></tr>
+      <tr><td>Total / handicap</td><td colspan="2" class="sc">O/U 2.5 leans Under (Over 2.30 / Under 1.63); spread Belgium -0.5 / Senegal +0.5; to-advance Belgium 1.57 / Senegal 2.40</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are implied from de-vigged DECIMAL odds (Belgium 2.15 / Draw 3.20 / Senegal 3.70, normalized to about 46/28/26), leaning Belgium but with a modest edge. The total leans Under 2.5 (both cautious, low-scoring expectation). American conversion: Belgium +115, Draw +220, Senegal +270; to-advance Belgium -175 (≈1.57), Senegal +140 (≈2.40) (positive: 1+x/100; negative: 1+100/|x|). For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- ===== Lineups (predicted) ===== -->
+  <section>
+    <h2><span class="n">3</span> Lineups & Recent Form <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · unofficial · per FIFA Match Centre pre-kickoff</span></h2>
+    <div class="sub">Predicted XIs (ESPN / Sports Mole / Rotowire estimates, unofficial; sources differ on defense/midfield; official lists per FIFA Match Centre pre-kickoff · unconfirmed)</div>
+
+    <h4>🇧🇪 Belgium predicted XI (4-2-3-1) · Rudi Garcia</h4>
+    <div class="lineup">Courtois; Castagne · Theate · Mechele · De Cuyper; Tielemans · Onana/Vanaken; Trossard · De Bruyne · Doku; De Ketelaere</div>
+    <table>
+      <tr><th>Player</th><th>Position/club</th><th>Recent / note</th></tr>
+      <tr><td class="ht">Jérémy Doku</td><td>Winger</td><td><b>Recovered from a respiratory infection</b>, started the final group game vs New Zealand; flank dynamite and dribbling, key to unlocking Senegal's defense <span style="color:var(--warn)">[XI per FIFA]</span></td></tr>
+      <tr><td class="ht">Kevin De Bruyne</td><td>No.10</td><td>The attacking engine, scored vs New Zealand; playmaking and through-balls are Belgium's core <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="ht">Youri Tielemans</td><td>Midfield / captain</td><td><b>Captain</b> (Garcia gave him the armband over De Bruyne); double-pivot tempo controller <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="ht">Romelu Lukaku</td><td>Striker</td><td>Fitness still lagging (missed most of the club season); scored vs New Zealand but <b>maybe an impact sub</b>; start in doubt <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="ht">GK / defense</td><td>Goalkeeper / back line</td><td>Courtois nailed-on; <b>back-four combination differs by source</b> (ESPN: Meunier/Ngoy/Mechele/Castagne + Onana; Sports Mole: Castagne/Theate/Mechele/De Cuyper + Vanaken) <span style="color:var(--warn)">[unconfirmed]</span></td></tr>
+    </table>
+
+    <h4>🇸🇳 Senegal predicted XI (4-3-3) · Pape Thiaw</h4>
+    <div class="lineup">Diaw; Diatta · Seck · Niakhaté · Jakobs/M.Diouf; Gueye · L.Camara · H.Diarra; I.Sarr · Jackson/Mbaye · Mané</div>
+    <table>
+      <tr><th>Player</th><th>Position/club</th><th>Recent / note</th></tr>
+      <tr><td class="sc">Ismaïla Sarr</td><td>Winger</td><td>Leads with <b>3 goals + 1 assist</b> this edition, the pace-and-transition finisher; key to exploiting space behind Belgium <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="sc">Sadio Mané</td><td>Winger</td><td>Flank dynamite and experienced leader, big-game composure; left-side threat <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="sc">Mory Diaw</td><td>Goalkeeper</td><td>Deputizing for the injured Mendy, clean sheet vs Iraq (10 men); facing Belgium's attack is the real test <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="sc">Kalidou Koulibaly</td><td>CB / captain</td><td><b>Captain</b>, fit but rested vs Iraq; <b>may stay on the bench</b> (in-form Seck preferred) <span style="color:var(--warn)">[XI unconfirmed]</span></td></tr>
+      <tr><td class="sc">Mid/forward group</td><td>Midfield / attack</td><td>Midfield Gueye/Camara/Diarra is a physical disruptor; the third forward <b>Jackson vs Mbaye differs by source</b>, and LB Jakobs vs M.Diouf is also TBD <span style="color:var(--warn)">[unconfirmed]</span></td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media estimates (ESPN / Sports Mole / Rotowire) and sources differ on defense and individual forward/midfield slots. Belgium's Doku is <b>recovered, expected to start</b>; whether Lukaku/Debast start is unconfirmed. Senegal's GK <b>Mendy is a knee-injury doubt (Diaw deputizes)</b>, and Koulibaly may be benched. Official lists per the <b>FIFA Match Centre</b> pre-kickoff · unconfirmed. The captain (C) is per FIFA's official armband position—for Belgium it is Tielemans.</div>
+  </section>
+
+  <!-- ===== Tactics + Managers ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles & Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references each team's actual approach and results across the last two majors (2022 World Cup + this group stage)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0707a">🇧🇪 Belgium · Rudi Garcia</div>
+        <div class="role">4-2-3-1 possession progression · De Bruyne playmaking + Doku/Trossard flanks · Courtois anchoring</div>
+        <ul class="cl">
+          <li>Garcia's Belgium are built on <b>4-2-3-1 possession progression + a high individual ceiling</b>—Tielemans + Onana/Vanaken as the double pivot, De Bruyne as the No.10, <b>Doku/Trossard pace out wide</b>, De Ketelaere (or Lukaku) up top. Doku's return here sharply boosts the flank-breaking threat.</li>
+          <li>Cross-reference: twilight of a golden generation—2018 WC 3rd, 2022 group exit; this edition misfired 1-1, 0-0 in the first two rounds before unleashing a 5-1 over New Zealand. That shows <b>breaking down packed defenses is inconsistent</b>, but the ceiling is high. An ageing back line (ESPN: "older legs") is a concern.</li>
+          <li>This match: Belgium project to <b>control possession and use Doku/De Bruyne to prise open the space behind Senegal's physical midfield</b>. But they must beware Sarr/Mané's fast transitions if they over-commit—Senegal's pace is a genuine threat. Garcia's knockout game-management (controlling a lead, timing of subs, when to bring on Lukaku) is key.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#4fc07f">🇸🇳 Senegal · Pape Thiaw</div>
+        <div class="role">4-3-3 physical midfield disruption + transition pace · Sarr/Mané counters · back line under pressure vs strong sides</div>
+        <ul class="cl">
+          <li>Thiaw's Senegal play a signature <b>4-3-3 with a physical midfield (Gueye/Camara/Diarra) for high-intensity disruption + Sarr/Mané transition pace</b>—emphasizing physical dueling, disrupting the opponent's rhythm and pouncing on transitions. The edition has been built on pace and directness rather than ball control.</li>
+          <li>Cross-reference: 2022 WC last-16 (lost to England); this edition conceded <b>3 in each game vs France and Norway</b>, "created chances but with poor efficiency," then routed Iraq 5-0 (vs 10 men). That shows the <b>back line is under pressure vs strong sides and the finishing is hot-and-cold</b>—the 5-0 surge must be discounted.</li>
+          <li>This match: <b>facing Belgium's attack and possession, Senegal must balance physical disruption and defensive discipline (marking Doku/De Bruyne) against counter efficiency</b>. Mendy's knee absence weakening the back line is a concern. Whether they can spring an upset hinges on capturing the space behind a high Belgian line (Sarr/Mané) while limiting goals conceded.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Analyst Insights ===== -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN Power Rankings / Opta angle <small>· multi-source agreement</small></div>Belgium are a new entry at ESPN #15 (after the 5-1 over New Zealand), Senegal are unranked; Opta notes Senegal have lost their last 4 WC games vs European teams while Belgium have lost only 1 of 6 WC games vs African sides. Belgium clearly edge it but only modestly—<b>Senegal's counter pace + a first-ever meeting with no baggage</b> are upset variables the model can't fully quantify, and a single-game knockout has real draw/extra-time room.</div>
+    <div class="insight"><div class="who">Doku's return · key correction <small>· ESPN / Sports Mole / Rotowire multi-source</small></div><b>🔁 Key correction</b>: Doku missed the Iran game with a respiratory infection but has recovered, started vs New Zealand and is expected to start here—<b>do NOT carry over the "Doku out" read</b>. His return sharply boosts Belgium's flank-breaking threat, and combined with De Bruyne's playmaking is the main weapon for breaking down Senegal. Lukaku's lagging fitness means he may feature more as an impact sub.</div>
+    <div class="insight"><div class="who">Mendy's absence · defensive weak point <small>· ESPN / BetMGM multi-source</small></div>Senegal's GK Mendy is a knee-injury doubt with Diaw deputizing, on top of conceding 3 in each game vs France/Norway—this is the match's key asymmetric factor. Against De Bruyne's crosses/set-pieces and Doku's dribbling, the goalkeeping and back-line experience gap could decide the game.</div>
+    <div class="insight"><div class="who">Composite · core questions and traps <small>· multi-source</small></div>⚠ Trap reminders: ① Belgium misfiring in the first two rounds shows shaky breakdown play, so a low-scoring/draw/extra-time result is far from unlikely (the to-advance -175 being far shorter than the win line +115 confirms this); ② Senegal's 5-0 numbers must be discounted (10 men); ③ Belgium's ageing back line + Senegal's Mendy absence leave both ends with soft spots; ④ if Belgium over-commit, beware Sarr/Mané's transition pace in behind.</div>
+  </section>
+
+  <!-- ===== Verdict & To-Confirm ===== -->
+  <section>
+    <h2><span class="n">6</span> Verdict & To-Confirm</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: Belgium edge it (de-vigged ≈46%, high individual ceiling, ESPN #15, Doku's return) and have a decent record vs African sides—a reasonable favorite. But Senegal have counter pace (Sarr/Mané) and 5-0 momentum—this is a "favorite, but low-scoring and possibly extra-time" knockout. Base script: <b>Belgium control possession and grind out a win, with the total leaning Under 2.5</b>; Senegal's most realistic scoring path is fast transitions into the space behind a high Belgian line. In a single-game knockout, a Senegal draw or extra time has real room (the to-advance -175 being far shorter than the win line +115 confirms the market's expectation).</li>
+      <li><b>Key men</b>: Belgium — Kevin De Bruyne (playmaking engine) · Jérémy Doku (flank dynamite · recovered, starting) · Youri Tielemans (captain/midfield) · Thibaut Courtois (GK); Senegal — Ismaïla Sarr (pace finisher · 3 goals & 1 assist this edition) · Sadio Mané (flank dynamite) · Pape Gueye / Lamine Camara (midfield disruptors) · Mory Diaw (deputy GK).</li>
+      <li><b>Swing factors</b>: ① can Belgium use Doku/De Bruyne to prise open Senegal's physical midfield and convert possession into goals; ② can Senegal use counter pace (Sarr/Mané) to capture the space behind a high Belgian line; ③ can Senegal's back line (Diaw + Seck/Niakhaté) hold up without Mendy; ④ can Belgium's ageing back line contain Senegal's pace; ⑤ when Lukaku comes on, and Belgium's choice of focal striker.</li>
+      <li><b>Market view</b>: leans Belgium (≈46% de-vig) but not one-sided (Senegal ≈26%, Draw ≈28%, summing to about 54% non-Belgium-win), hype index 3/5. The Under lean on the total + relatively close odds + a to-advance line far shorter than the win line align with "Belgium are strong but may not win easily in 90 minutes." The draw / Senegal +270 are respected by the market.</li>
+    </ul>
+    <div class="flag">⚠ <b>To-confirm checklist</b>: ① both official XIs (per FIFA Match Centre about 1 hour pre-kickoff)—<b>Belgium's back-four combination</b> (ESPN vs Sports Mole differ), <b>whether Lukaku/Debast start</b>, <b>whether Senegal's Mendy is definitively out</b>, <b>whether Koulibaly starts</b>, <b>the third forward Jackson vs Mbaye</b>; ② the captain (C) per FIFA's official armband (Belgium = Tielemans); ③ <b>the VAR crew still awaits full FIFA confirmation</b> (referee Saíd Martínez confirmed); ④ full per-game xG for both teams this edition (Opta/FotMob breakdown · unconfirmed); ⑤ current live odds across books · exact total/handicap prices per pre-match; ⑥ Belgium/Senegal PPDA/xT/field tilt breakdown—public national-team samples limited; ⑦ the prediction-market split (46/30/27) platform was not named (not confirmed Kalshi/Polymarket); ⑧ Martínez's exact career officiating data (secondary aggregator · unconfirmed).</div>
+  </section>
+
+  <!-- ===== Sources ===== -->
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49214195/">ESPN — Belgium vs Senegal preview / predicted XIs / referee</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760477">ESPN — Belgium vs New Zealand report (Doku started)</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/predicted-lineups/is-debast-back-for-the-knockouts-predicted-belgium-xi-vs-senegal_600367.html">Sports Mole — Belgium predicted XI</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/predicted-lineups/can-senegal-build-on-iraq-romp-predicted-senegal-xi-vs-belgium_600368.html">Sports Mole — Senegal predicted XI</a><br>
+      • <a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-belgium-vs-senegal-in-the-2026-fifa-world-cup-round-of-32/">DraftKings — opening odds</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/belgium-vs-senegal-prediction-odds-preview-world-cup-july-1-bm16/">BetMGM — preview / odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-senegal-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-azTBX1a2EaMp/">Racing Post — Bet Builder</a><br>
+      • <a href="https://theanalyst.com/articles/belgium-vs-senegal-prediction-world-cup-2026-match-preview">Opta Analyst — preview (first meeting / history)</a> · <a href="https://www.espn.com/espn/story/_/id/49160006/">ESPN — Mendy knee injury</a> · <a href="https://www.washingtonpost.com/sports/soccer/2026/06/29/world-cup-belgium-lukaku-fitness/">Washington Post — Lukaku fitness</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49196824/fifa-world-cup-power-rankings-spain-brazil-germany-usa-mexico-england-argentina-france">ESPN — World Cup power rankings</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G">Wikipedia — Group G</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — Group I</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-30 · Charts are verified data; the radar is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#e30613',SC='#00853f',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Belgium win','Draw','Senegal win'],datasets:[{data:[46,28,26],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (de-vig)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[42,58],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (analyst est., leans Under)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Belgium (Group G winners)','Senegal (3rd in Group I)'],datasets:[{data:[5,3],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:9,title:{display:true,text:'Group-stage points'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive solidity','Attacking finish','Midfield control','Wing pace','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Belgium',data:[7.5,8,8,8,9,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Senegal',data:[6.5,7,7.5,8.5,7.5,7.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

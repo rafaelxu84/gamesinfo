@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 瑞士 vs 加拿大 · 2026世界杯 B组末轮（头名决战）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-switzerland-vs-canada.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d52b1e;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b81c25,#9c1420);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241317,#0e1f2a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#f0a3a3;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · B组末轮 · 两支同积 4 分球队的"头名直接决战"</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 瑞士 2-1 加拿大</span>
+  <h1>瑞士 vs 加拿大</h1>
+  <div class="meta">2026年6月24日 · 温哥华 BC Place · 15:00 ET（12:00 PT）· B组（同组：波黑、卡塔尔）· 末轮</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇭 瑞士</div><div class="rk">FIFA #20 区间 · 1-1 卡塔尔 + 4-1 波黑 · 4 分（净+3）· 旅欧硬骨架</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0a3a3">🇨🇦 加拿大</div><div class="rk">FIFA #30 区间 · 1-1 波黑 + 6-0 卡塔尔 · 4 分（净+6）· 东道主 · Davies 回归在即</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-25） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 瑞士 2-1 加拿大（半场 0-0） · 06-24</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">温哥华 BC Place 的"头名直接决战"：半场闷平，瑞士下半场两记快速打击锁定胜局。第 <b>46 分钟</b> Manzambi 送球、<b>Ruben Vargas</b> 推射 1-0；第 <b>57 分钟</b> Embolo 利用加拿大后防失误做球，<b>Johan Manzambi</b> 再下一城 2-0。第 <b>76 分钟</b> 替补登场的 <b>Promise David</b> 凌空抽射扳回一球，但加拿大未能逆转。瑞士夺 B 组头名，加拿大屈居小组第 2。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 46' Vargas · 57' Manzambi（Embolo 助攻）· 76' David（加）｜瑞士两记快速打击 · 加拿大后防失误送礼</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Squawka / FIFA）</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇭 瑞士</th><th>🇨🇦 加拿大</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td>48%</td><td><b>52%</b></td><td>加拿大控球略多，主导比赛却输球——典型"控而不胜"</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td>1.06</td><td><b>1.34</b></td><td>加拿大 xG 反而更高，创造机会不输——输在终结与防守失误</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>6 / <b>4</b></td><td>13 / 7</td><td>瑞士 6 射 4 正、效率极高；加拿大 13 射 7 正却只进 1 球，把握不足</td></tr>
+      <tr><td class="ht">射正转化</td><td><b>2/4</b></td><td>1/7</td><td>瑞士冷血、加拿大空有射正数——这是 2-1 与"理应平局"的差距来源</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.squawka.com/en/news/world-cup/switzerland-canada-stats-report-24-06-2026/">Squawka — Switzerland 2-1 Canada Stats</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451">FIFA Match Centre</a> · <a href="https://www.cbc.ca/sports/livestory/canada-vs-switzerland-june-24-live-updates-fifa-world-cup-2026-9.7222405">CBC</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">瑞士的冷血效率 = 老牌强队的淘汰赛底色</div>6 射 4 正进 2 球，xG 反低于对手。<b>说明瑞士不需要场面占优就能赢球——抓住对手失误、把有限机会转化干净</b>，这正是其历届世界杯能稳定出线的特质，淘汰赛极具威胁。</div>
+    <div class="insight"><div class="who">加拿大"控球+射门双优却输球"暴露防守与终结两头漏</div>52% 控球、13 射 7 正、xG 1.34 全面占优，却因后防失误（第 2 球）和把握不足落败。<b>说明加拿大有创造力但缺乏"关门"能力与冷静终结者</b>——这是其晋级后淘汰赛的最大隐患。</div>
+    <div class="insight"><div class="who">Promise David 替补建功，给加拿大锋线一个答案</div>替补登场即凌空抽射破门。<b>说明 David 可能是加拿大更可靠的终结点</b>，主帅或考虑下一场提他首发以解决把握不足的问题。</div>
+    <div class="insight"><div class="who">Alphonso Davies 健康状况是加拿大的悬念</div>多家媒体提到对 Davies 的担忧。<b>说明加拿大左路核心的状态将直接决定其淘汰赛攻防上限</b>（需带入下一场新闻模块跟踪）。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">瑞士胜（隐含 ≈39%，三方接近）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>盘口三方极接近（39/31/30），瑞士小胜兑现微弱favorite</td></tr>
+      <tr><td class="ht">"同积 4 分头名直接决战"</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>胜者瑞士夺头名、加拿大第 2，定位完全准确</td></tr>
+      <tr><td class="ht">市场过热 3/5</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>分歧大、悬念足，符合 3/5 的均衡对决判读</td></tr>
+      <tr><td class="ht">加拿大主场优势</td><td style="color:var(--warn)"><b>~ 未转化</b></td><td>主场控球/射门占优却因失误丢分——主场优势未敌瑞士效率</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#d23f4a">🇨🇭 瑞士 · 晋级 32 强（B组头名）</h4>
+        <ul class="watch">
+          <li><b>B 组头名晋级，6/28 起对阵某组第三名</b>——签运相对友好。</li>
+          <li><b>冷血效率是淘汰赛资本</b>：不依赖控球、抓失误能力强，对阵强队也有偷分能力。</li>
+          <li><b>Vargas / Manzambi / Embolo 锋线串联成型</b>：本场两球均来自快速二过一与做球，进攻套路清晰。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#c63b46">🇨🇦 加拿大 · 晋级 32 强 vs 南非（6/28 起 · B组第2 对 A组第2）</h4>
+        <ul class="watch">
+          <li><b>32 强对手已明朗——A 组亚军南非</b>（爆冷淘汰韩国、极端低控反击打法）。加拿大需警惕被反击打身后。</li>
+          <li><b>后防失误必须修正</b>：本场第 2 球源于后防失误，对手反击犀利时是致命漏洞（带入下一场分析）。</li>
+          <li><b>Promise David 或扶正</b>：替补建功，可能解决把握不足问题。</li>
+          <li><b>Davies 健康待跟踪</b>：左路核心状态决定攻防上限（带入下一场新闻模块）。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 B 组<b>真正的"头名决战"</b>：瑞士与加拿大双双 4 分领跑（瑞士 1-1 卡塔尔 + 4-1 波黑、净胜球 +3；加拿大 1-1 波黑 + <b>6-0 血洗卡塔尔</b>、净胜球 +6），波黑与卡塔尔仅 1 分。两队几乎都已锁定出线，本场<b>直接决定小组头名归属</b>——头名大概率换来更友好的 R32 对位与半区。算术上加拿大握有<b>净胜球优势（+6 vs +3）</b>：平局即可凭净胜球压瑞士夺头名；瑞士则需取胜才能登顶。盘口接近、瑞士略占优——胜赔约 <b>2.50</b>（去水隐含 ≈39%）、平局 <b>3.15</b>（≈31%）、加拿大胜 <b>3.25</b>（≈30%）；总分线 O/U <b>2.5</b>、两支务实球队对决略偏小球。三处看点：① <b>Alphonso Davies 能否本届首次登场</b>（Marsch 称其有望复出，是加拿大左路最大变量）；② <b>瑞士经验骨架（Xhaka/Akanji/Embolo）vs 加拿大主场气势 + 运动能力</b>；③ <b>两队是否都已心安、会否管理体能</b>——已基本出线让比赛存在"点到为止"的可能。基准剧本：<b>一球分胜负或平局</b>，含金量在头名与净胜球，过热指数 ≈ 3/5（真实三向分歧、信息含量较高）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">瑞士隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈39%</div></div>
+      <div class="key"><div class="k">加拿大隐含胜率(去水)</div><div class="v" style="color:#f0a3a3">≈30%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈31%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>头名直接决战 + 净胜球天平（出线算术）</b>：两队同积 4 分，胜者夺 B 组头名；若打平，加拿大凭净胜球 +6（瑞士 +3）夺头名。两队预计均已晋级 R32，争的是头名带来的对位优势——这让"求胜动机"在加拿大一侧略低（平局即够头名）。</li>
+      <li><b>Alphonso Davies 本届首秀可能性（加拿大·关键变量）</b>：主帅 Jesse Marsch 表示 Davies 有望在末轮首次具备出场条件——若复出，加拿大左路的推进与防守覆盖将大幅升级，是本场最大的人员变量（可用性须赛前多源复核）。</li>
+      <li><b>瑞士的旅欧硬骨架（上一场带入）</b>：4-1 大胜波黑展示了 Embolo 的支点终结与 Xhaka/Freuler/Zakaria 的中场控制；瑞士的下限来自旅欧球员的比赛阅读与定位球，是加拿大需要破解的结构。</li>
+      <li><b>加拿大 6-0 的水分（上一场带入）</b>：6-0 血洗卡塔尔虚高了净胜球，但对手是全组最弱、状态崩盘的一方；面对瑞士这种结构完整的对手，加拿大的真实进攻效率会被重新检验——这也是市场未把加拿大定为主场热门的原因。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项；关键球员可用性已多源交叉）</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ 关键球员核查 · Alphonso Davies 复出在即 <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / bet365 · 2026-06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：Marsch 预计 <b>Davies 本届首次具备出战条件</b>（此前因伤缺席前两轮），末轮对瑞士有望登场</div>
+      <p style="font-size:13.5px">关键球员可用性多源交叉：ESPN、Sports Mole、bet365 均报道主帅 <b>Jesse Marsch</b> 预计 Alphonso Davies（拜仁左后卫/左路爆点）将在末轮<b>首次具备出场条件</b>——前两轮因伤缺阵。其登场形式（首发或替补、出场时长）仍是变量，多家预测首发将其列入加拿大 4-3-3 左路（Davies 队长）。<span style="color:var(--warn)">[首发/出场时长以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Davies 是加拿大最高个人上限的球员，左路推进、转换速度与防守覆盖直接改变加拿大能否压制瑞士。若他首发，加拿大主场夺头名的概率上修；若仅替补登场或继续缺阵，加拿大进攻仍主要依赖 Buchanan/David 与 Marsch 的高强度逼抢。这是本场最大的单点变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49141389/fifa-world-cup-2026-switzerland-vs-canada-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/预测首发/Davies 状态</a> · <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html" style="color:var(--accent)">Sports Mole — 团队消息</a> · <a href="https://news.bet365.com/en-us/article/canada-switzerland-preview-and-lineup-predictions/2026062216422510645" style="color:var(--accent)">bet365 — 阵容预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">出线算术 · 头名与净胜球 <span style="color:var(--mut);font-weight:400">· Sky Sports / FanSided · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队同积 4 分；加拿大净胜球 +6 领先瑞士 +3——<b>平局即加拿大夺头名</b></div>
+      <p style="font-size:13.5px">B 组次轮后：加拿大 4 分（+6）、瑞士 4 分（+3）、波黑 1 分（-3）、卡塔尔 1 分（-6）。末轮瑞士-加拿大直接决定头名：瑞士需取胜方能登顶；加拿大平局即可凭净胜球优势夺头名。两队大概率均已确保出线名额（波黑/卡塔尔最多升至 4 分且净胜球处于劣势）——争夺集中在头名带来的对位/半区优势上。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：净胜球天平直接影响双方的"求胜烈度"。加拿大有"平局即够"的安全垫，可能更务实；瑞士必须赢才能夺头名，进攻动机更强——这与盘口"瑞士略占优"的定价方向一致。但若两队都满足于出线、点到为止，平局与小球概率上升。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland" style="color:var(--accent)">Sky Sports — B组指南/积分</a> · <a href="https://fansided.com/soccer/world-cup-group-b-standings-canada-and-switzerland-well-placed-how-bosnia-and-qatar-can-advance" style="color:var(--accent)">FanSided — B组形势</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· Sports Mole / ESPN · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：巴西籍 <b>Ramon Abatti</b>（本届曾执法 G 组比利时-埃及）；温哥华 BC Place（室内/可控顶棚）</div>
+      <p style="font-size:13.5px">据 Sports Mole，本场主裁为巴西籍 <b>Ramon Abatti Abel</b>。Abatti 系 CONMEBOL 体系国际级裁判、本届已有执法记录（G 组比利时-埃及）。BC Place 为带顶棚球场、温哥华 6 月气候温和，环境对体能影响小。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是一场实力接近、强度高的头名决战，裁判尺度对牌数与潜在点球有实际影响。南美体系裁判通常对身体对抗有一定容忍但对战术犯规管理严格；瑞士中场的拦截与加拿大的高位逼抢都可能积累黄牌。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html" style="color:var(--accent)">Sports Mole — 裁判/前瞻</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — 世界杯裁判名单</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 & 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA Match Centre 官方名单 · 多源确认</span></h2>
+    <div class="sub">数据源：<b>FIFA 官方 Match Centre</b>（赛前约 1 小时公布）+ SI / World Soccer Talk / Sports Interaction 多源一致 → <b style="color:var(--good)">✅ 官方确认</b>。本场最大新闻：<b style="color:#fca5a5">Alphonso Davies 未首发（替补席）</b>，加拿大大幅轮换。</div>
+
+    <h4>① 双方官方首发 XI</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:13px;color:#f08a82;font-weight:700;margin-bottom:4px">🇨🇭 瑞士 · 4-1-2-3 · Murat Yakin</div>
+        <div class="lineup">Kobel; Jaquez · Akanji · Elvedi · Rodríguez; Xhaka(C); Freuler · Sow; Manzambi · Embolo · Vargas</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补关键武器：Dan Ndoye（边路爆点）、Noah Okafor、Denis Zakaria、Ardon Jashari、Zeki Amdouni。<b>Xhaka 戴队长袖标（FIFA C 徽标确认）</b>。</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:#f0a3a3;font-weight:700;margin-bottom:4px">🇨🇦 加拿大 · 4-4-2 · Jesse Marsch</div>
+        <div class="lineup">Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Choinière · Saliba · Ahmed; David(C) · Larin</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补关键武器：<b style="color:#fca5a5">Alphonso Davies（本届仍未首发，替补待命）</b>、Stephen Eustáquio、Jonathan Osorio、Liam Millar、Tani Oluwaseyi。<b>Jonathan David 戴队长袖标（FIFA C 徽标确认，非 Davies）</b>。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② vs 预测首发对照（逐条：为什么重要）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="sc"><b>加 · Davies 位置</b></td><td>预测首发左路（队长）</td><td class="sc">替补席（未首发）</td><td>本场头号主线被<b>修正</b>：Davies 本届仍未首发，加拿大左路最大爆点只能替补登场——左路推进/防守覆盖的上限开关未开启</td></tr>
+      <tr><td class="sc"><b>加 · 阵型</b></td><td>4-3-3（David 单箭头）</td><td class="sc">4-4-2（David + Larin 双前锋）</td><td>Marsch 弃高位 4-3-3 改双前锋，Larin 顶上与 David 搭档——既保留进攻点，也更易回收两条线（务实信号）</td></tr>
+      <tr><td class="sc"><b>加 · 门将</b></td><td>St. Clair</td><td class="sc">Crépeau</td><td>Marsch 改用 Crépeau，门将位置同样轮换</td></tr>
+      <tr><td class="sc"><b>加 · 中场/后防</b></td><td>Eustáquio · Osorio · Koné；Bombito</td><td class="sc">Choinière · Saliba · Ahmed；De Fougerolles · Laryea</td><td>中后场大面积换人（Eustáquio/Osorio 同坐板凳）——<b>大幅轮换坐实"平局即头名"的安全垫心态</b></td></tr>
+      <tr><td class="ht"><b>瑞 · 阵型/中场</b></td><td>4-3-3（Freuler·Xhaka·Zakaria）</td><td class="ht">4-1-2-3（Xhaka 单后腰 + Freuler·Sow）</td><td>Yakin 改用 Xhaka 单支点、Sow 顶替 Zakaria；结构更进攻、把控制权压在 Xhaka 一人脚下</td></tr>
+      <tr><td class="ht"><b>瑞 · 边路/后卫</b></td><td>Widmer（右后卫）、Ndoye（边锋）</td><td class="ht">Jaquez（后卫）、Manzambi（前场）</td><td>瑞士同样换人但保留核心骨架（Akanji/Xhaka/Embolo/Vargas）；年轻的 Manzambi 顶替 Ndoye 进入前场三人组</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 战术解读（速览结论：部分修正）</h4>
+    <ul class="cl">
+      <li><b style="color:#fca5a5">主线修正 ①（Davies）</b>：赛前最大流量点"Davies 本届首秀首发"<b>未兑现</b>——他被列入替补席，加拿大左路爆点上限的"开关"未在首发开启。速览看点 ① 由"是否首发"修正为"<b>能否替补登场改变战局</b>"。</li>
+      <li><b style="color:#fca5a5">主线强化 ②（务实轮换）</b>：加拿大门将 + 中后场 + Davies/Eustáquio/Osorio 多名主力同坐板凳的<b>大幅轮换</b>，印证速览"加拿大握有平局即头名安全垫、可能点到为止"的判断——这进一步<b>压低大球、抬升平局/小球尾部</b>。改 4-4-2 双前锋虽保留进攻点，但整体阵容质量较预测下降。</li>
+      <li><b>瑞士求胜动机更明确</b>：瑞士虽有轮换（Sow/Manzambi/Jaquez 进入），但保留 Kobel-Akanji-Elvedi-Rodríguez-Xhaka-Freuler-Embolo-Vargas 这条骨架，且改 4-1-2-3 更具进攻倾向——与"须取胜方夺头名"的处境一致，求胜烈度高于轮换更多的加拿大。</li>
+      <li><b>关键对位变化</b>：Davies 不首发 → 瑞士右路（Vargas/Manzambi 一侧）压力骤减，无需再防 Davies 的纵深爆点；加拿大左路改由 Laryea 覆盖，推进与回追质量下降，瑞士边路有机会反向施压。</li>
+      <li><b>净胜球天平不变</b>：加拿大仍凭净胜球 +6（瑞士 +3）握有"平局即头名"。官方阵容（瑞士求胜骨架 vs 加拿大务实轮换）整体<b>微调向瑞士取胜/平局两端</b>，与速览"瑞士略占优 + 小球/平局风险高于盘面"的基准一致。</li>
+    </ul>
+
+    <h4 style="margin-top:18px">④ 市场反应</h4>
+    <div class="note">首发公布前瑞士胜约 <b>2.50</b>（欧赔小数）。本场出现轻度"首发利空于加拿大"信号——<b>Davies 未首发 + 加拿大大幅轮换</b>，方向上利于瑞士胜赔小幅收紧、平局获净胜球逻辑支撑；总分线 O/U 2.5 在双方务实阵容下偏小球。<span style="color:var(--warn)">[公布后具体盘口数值 · 待核，以赛前实时盘口为准]</span> 仅作事实陈述，非投注建议。</div>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451" style="color:var(--accent)">FIFA Match Centre — 官方首发 XI（含 C 队长徽标）</a> · <a href="https://www.si.com/soccer/switzerland-vs-canada-world-cup-preview-predictions-lineups-6-24-26" style="color:var(--accent)">Sports Illustrated</a> · <a href="https://worldsoccertalk.com/amp/world-cup/is-alphonso-davis-playing-switzerland-vs-canada-projected-lineups-for-the-2026-world-cup-group-b-game/" style="color:var(--accent)">World Soccer Talk — Davies 是否出场</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· B组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>B 组四队 FIFA 排名（越低越强 · 近似）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇭 瑞士</th><th>🇨🇦 加拿大</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#20 区间</td><td class="sc">#30 区间</td></tr>
+      <tr><td>前两轮</td><td class="ht">1-1 卡塔尔 + 4-1 波黑（4 分，净 +3）</td><td class="sc">1-1 波黑 + 6-0 卡塔尔（4 分，净 +6）</td></tr>
+      <tr><td>B 组积分（末轮前）</td><td colspan="2">加拿大 4(+6)、瑞士 4(+3) 并列领跑；波黑 1(-3)、卡塔尔 1(-6)——本场决定头名，两队大概率均已出线</td></tr>
+      <tr><td>主教练</td><td class="ht">Murat Yakin（瑞士）</td><td class="sc">Jesse Marsch（美国籍）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Xhaka(C)、Akanji、Embolo、Ndoye、Freuler</td><td class="sc">Davies(C，伤愈在即)、A.David、Buchanan、Eustáquio</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">能否取胜夺头名；锋线终结；定位球</td><td class="sc">Davies 是否首发；6-0 的真实成色；主场转化</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">Euro 2024 八强（点球负英格兰）· WC 2022 十六强（1-6 负葡萄牙）</td><td class="sc">WC 2022 小组三连败（净 -5）· 美洲杯 2024 殿军（半决赛）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈2.50（隐含≈39%）</td><td class="sc">胜 ≈3.25（≈30%）· 平 3.15（≈31%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线 O/U 2.5（两支务实球队，略偏小球）——核心市场是 1X2 与让球（小盘口）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈39/31/30，归一后）。赔率来源：Betfair（瑞士 7/5→2.40、平 85/40→3.13、加拿大 9/4→3.25）；最优价瑞士 +150→2.50、加拿大 +225→3.25、平 +215→3.15。让球盘接近平手/小让，总分线 O/U 2.5。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇭 瑞士 · 进攻</td><td class="ht">大赛进攻产出中游、靠 Embolo 支点与边路 + 定位球</td><td class="ht">2 战 5 球（其中 4-1 波黑爆发），Embolo 进球</td><td><b>达标偏上</b>：4-1 波黑释放了火力，但对卡塔尔仅 1-1，运动战效率随对手强度波动</td></tr>
+      <tr><td class="ht">🇨🇭 瑞士 · 防守</td><td class="ht">旅欧后防（Akanji/Elvedi/Rodríguez）+ Xhaka 屏障，历来稳健</td><td class="ht">2 战丢 2 球（净 +3），结构完整</td><td><b>达标</b>：防线是瑞士下限来源；面对加拿大的转换速度是真正考验</td></tr>
+      <tr><td class="sc">🇨🇦 加拿大 · 进攻</td><td class="sc">美洲杯 2024 殿军、转换与高位逼抢见长，终结点偏分散</td><td class="sc">2 战 7 球（含 6-0 卡塔尔），净 +6</td><td><b>数据虚高</b>：6 球多来自卡塔尔崩盘，对波黑仅 1-1；对结构完整的瑞士需重新检验真实终结</td></tr>
+      <tr><td class="sc">🇨🇦 加拿大 · 防守</td><td class="sc">Marsch 体系强调高压与紧凑，WC2022 曾连失球</td><td class="sc">2 战丢 1 球（仅波黑进 1）</td><td><b>偏好</b>：失球少，但样本含卡塔尔这一弱攻；Davies 回归将增强左路防守覆盖</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：加拿大净胜球 +6 含明显"卡塔尔水分"，真实进攻效率待瑞士检验；瑞士火力随对手强度波动（4-1 波黑 vs 1-1 卡塔尔）。深度数据支持"两队接近、瑞士结构略稳、加拿大上限靠 Davies/转换"的主线。来源：Opta Analyst · FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">瑞士 ≈1.3</td><td class="sc">加拿大 ≈1.2</td><td>校准后接近、瑞士微弱占优；与盘口"瑞士略热"一致，是低分差对决</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内瑞士整体略高于加拿大（旅欧密度与大赛经验），但加拿大有主场加成与运动能力上限；超算给瑞士小幅占优、双方均高概率晋级</td><td>对手强度校准后两队样本含金量中等（均混入对弱旅卡塔尔的极端比分）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：加拿大 Marsch 体系 PPDA 偏低（逼抢凶），瑞士更重控形与阵地；Davies 若首发将抬升加拿大 field tilt 与左路 xT</td><td><b>陷阱提醒</b>：两队"已出线"心态 + 净胜球安全垫，可能压低强度，让小球/平局风险高于盘口表面</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是本日少有的"真实三向分歧"场次——瑞士略热、加拿大主场被低估、平局有净胜球逻辑支撑；信息含量高于一边倒场次</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 三向真实分歧、无情绪溢价、含金量高</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">没有一边倒共识：瑞士因旅欧质量略热（≈39%），加拿大主场 + Davies 回归被部分专家看高，平局有"加拿大净胜球即够头名"的博弈逻辑支撑。分歧来自<b>双方求胜烈度</b>（加拿大可满足于平局）与 <b>Davies 是否首发</b>。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向分散：瑞士胜 / 平局 / 加拿大主场各有拥趸）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Betfair</td><td>交易所</td><td>瑞士略热（7/5），平局有支撑；视为低分差对决</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>偏瑞士 / 平局，强调两队均已基本出线、强度可能下调</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>预测接近、低比分；关注 Davies 复出对加拿大的提升</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>瑞士结构更稳，但加拿大主场 + 运动能力使分差很小</td></tr>
+      <tr><td>bet365</td><td>预览/阵容</td><td>给出双方预测首发，认为头名之争胶着</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：与本日其它"一边倒"场次不同，本场<b>三向都有真实拥趸</b>，无情绪溢价。最大的不确定性是<b>两队的求胜动机</b>（加拿大平局即头名）与 <b>Davies 是否首发</b>——这两点会同时影响 1X2 与大小球。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>瑞士胜 / 平 / 加拿大胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈2.45 / 3.15 / 3.25</td><td>瑞士略热、加拿大主场被定价为非热门</td></tr>
+      <tr><td>06-22 截止</td><td>Betfair / 最优价</td><td class="ht">2.40–2.50 / 3.13–3.15 / 3.25</td><td>头名之争胶着，三向赔率接近、波动小</td></tr>
+      <tr><td>06-22</td><td>大/小球</td><td colspan="2" class="ht">总分线 O/U 2.5、略偏小球（两支务实球队 + 出线安全垫）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">瑞士胜 ≈2.40；让球平手/小让；O/U 2.5</td><td>以"瑞士旅欧硬骨架 vs 加拿大主场 + 运动能力"定价，初盘即把它定为接近的对决、瑞士微热</td></tr>
+      <tr><td>开盘（次轮赛后重定价）</td><td class="ht">瑞士胜 2.40–2.50；平 3.13；加拿大 3.25</td><td><b>repricing 来自双方次轮</b>：瑞士 4-1 波黑证明火力可释放、加拿大 6-0 卡塔尔虚高净胜球——市场没有因比分把加拿大推成主场热门，反而认定"卡塔尔水分"，维持瑞士微热；同时"两队均近出线"的安全垫支撑平局与小球</td></tr>
+      <tr><td>现盘（06-22→现）</td><td class="ht">三向 2.45/3.15/3.25 胶着；O/U 2.5 略偏小</td><td>价格发现集中在 <b>Davies 是否首发</b>（影响加拿大赔率）与<b>求胜烈度</b>（影响大小球）；这是本日唯一 1X2 本身具信息含量、而非只看让球/进球数的场次</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：与法/葡式"血洗盘"完全不同，本场是<b>定价接近、三向分歧</b>的头名决战。关键变量是双方求胜动机（加拿大净胜球安全垫）与 Davies 出场情况——这让 1X2 与大小球都有真实价格发现空间。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（聚合）</b>：与博彩去水一致给瑞士小幅占优、双方均高概率晋级；本场更多是头名归属的博弈，而非晋级悬念。<span style="color:var(--warn)">[本场单场成交量/动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Davies 的回归</b>——加拿大主场 + 当家球星伤愈，是本场最大流量点与情绪面。</li>
+      <li><b>舆论焦点 ②</b>：<b>加拿大能否首夺世界杯小组头名</b>——WC2022 三连败的阴影对比本届出线，主场叙事浓厚。</li>
+      <li><b>瑞士叙事</b>：低调但稳健的旅欧军团，Xhaka/Akanji 的大赛经验是夺头名底气；市场对其结构性下限有信心。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是本日信息含量最高的场次之一——三向分歧、定价接近、过热指数 <b>3/5</b>。1X2 本身有价格发现空间（少见），核心变量是<b>双方求胜动机 + Davies 是否首发</b>，并连带影响大小球（出线安全垫 → 偏小球/平局）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://betting.betfair.com/football/predictions/fifa-world-cup/switzerland-vs-canada/5irko4jg9o9ixmfz8cu3oxjpw/">Betfair — 赔率/预测</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a3SeE5N0GPTV/">Racing Post — 赔率/投注</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/switzerland-v-canada-predictions">Total Football Analysis — 预测</a> · <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — B组指南/赔率</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：本场主裁为巴西籍 <b>Ramon Abatti Abel</b>（CONMEBOL 国际级、本届曾执法 G 组比利时-埃及）。来源：Sports Mole、ESPN 裁判名单。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Abatti 来自巴西足坛、CONMEBOL 执法体系——南美裁判通常对身体对抗有一定容忍，但对战术犯规、拖延与累积管理较为到位。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届实际样本</b>：已执法 G 组比利时-埃及一场，控场表现需结合赛后细分评估；其大赛单场出牌/点球的精确场均细分公开样本有限。<span style="color:var(--warn)">[场均黄牌/判点率细分 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：与瑞士、加拿大两队均无显著公开执法史，无队伍倾向可言。</li>
+      <li><b>两面性</b>：这是一场强度高、双方都想夺头名的对抗——加拿大的高位逼抢与瑞士中场的拦截都可能累积黄牌；半自动越位将精准捕捉瑞士边路与 Davies/Buchanan 的临界冲刺。牌数盘宜以倾向性看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在实力接近、出线安全垫存在的格局下，裁判对胜负影响有限，主要价值在牌数/点球：高强度对抗与可能的边路突破拉扯是黄牌/点球观察点。鉴于 Abatti 本届单场细分样本有限，相关盘口以倾向看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 官方首发模块</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / bet365 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇨🇭 瑞士 预测首发（4-3-3）· Murat Yakin</h4>
+    <div class="lineup">Kobel; Widmer · Akanji · Elvedi · Rodríguez; Freuler · Xhaka(C) · Zakaria; Ndoye · Embolo · Vargas</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Granit Xhaka (C)</td><td>后腰 / 队长</td><td>中场节拍器与领袖，瑞士控形与定位球的轴心；大赛经验是夺头名底气</td></tr>
+      <tr><td class="ht">Manuel Akanji</td><td>中卫 / 曼城</td><td>防线领袖，出球与速度兼备；遏制加拿大转换的关键</td></tr>
+      <tr><td class="ht">Breel Embolo</td><td>中锋</td><td>本届已破门，支点终结点；瑞士进攻的最高确定性来源</td></tr>
+      <tr><td class="ht">Dan Ndoye</td><td>边锋</td><td>边路爆点与纵深，撕开加拿大边后卫身后的速度选项</td></tr>
+    </table>
+    <h4>🇨🇦 加拿大 预测首发（4-3-3）· Jesse Marsch · Davies 有望首发</h4>
+    <div class="lineup">St. Clair; Johnston · Cornelius · Bombito · Davies(C); Eustáquio · Osorio · Koné; Buchanan · David · Shaffelburg</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Alphonso Davies (C)</td><td>左后卫/左路 / 拜仁</td><td>伤愈在即、本届首秀可能性高；左路推进与防守覆盖的最大变量 <span style="color:var(--warn)">首发/时长待核</span></td></tr>
+      <tr><td class="sc">Jonathan David</td><td>中锋</td><td>加拿大头号终结点；面对瑞士完整后防的把握能力是胜负关键</td></tr>
+      <tr><td class="sc">Tajon Buchanan</td><td>边锋/翼卫</td><td>速度与突破，制造加拿大转换威胁的主要爆点</td></tr>
+      <tr><td class="sc">Stephen Eustáquio</td><td>中场 / 组织</td><td>加拿大中场的串联与节奏，对位 Xhaka 的中场博弈</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Sports Mole / bet365），<b>以赛前官方名单为准 · 待核</b>。加拿大焦点是 Davies 是否首发及出场时长；瑞士焦点是 Yakin 是否因"已基本出线"做轮换、锋线 Embolo/Ndoye/Vargas 的组合。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 各自洲际杯/美洲杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇭 瑞士 · Murat Yakin</div>
+        <div class="role">4-3-3 控形 + 旅欧硬骨架 + 定位球，Embolo 单箭头</div>
+        <ul class="cl">
+          <li>瑞士的招牌是<b>结构完整 + 旅欧球员比赛阅读 + 定位球</b>——大赛下限极高：Euro 2024 八强（点球负英格兰）、WC 2022 十六强；很少被弱旅爆冷，靠的是 Xhaka/Akanji 的稳定。</li>
+          <li>交叉参照：Euro 2024 八强对英格兰 120 分钟 1-1 点球出局、WC 2022 被葡萄牙 1-6 打崩——<b>对顶级球队上限不足，但对中游球队下限稳</b>。加拿大恰属"运动能力强但结构不如顶级"的对手，是瑞士能掌控的类型。</li>
+          <li>本场切入口：用控形与 Xhaka 的节奏压制加拿大转换、靠 Embolo/Ndoye 的边中结合与定位球求胜；须警惕 Davies/Buchanan 的速度反击身后空当。出线已基本到手，是否全力取胜取决于对头名的重视程度。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0a3a3">🇨🇦 加拿大 · Jesse Marsch</div>
+        <div class="role">4-3-3 高位逼抢 + 转换提速，David 终结、Davies 左路爆点</div>
+        <ul class="cl">
+          <li>Marsch 的体系核心是<b>高位逼抢 + 快速转换 + 边路速度</b>——美洲杯 2024 闯入殿军（半决赛负阿根廷）是其执教加拿大的最佳样本，证明这套打法能咬住强队。</li>
+          <li>交叉参照：WC 2022 三连败（内容不差但终结与经验欠费）是阴影；美洲杯 2024 殿军则是质变信号——<b>加拿大已能用强度与速度对抗中上游</b>，但终结效率仍是天花板。6-0 卡塔尔虚高了数据。</li>
+          <li>本场应对：主场 + 高压逼抢制造瑞士出球失误、用 Buchanan/David 的速度打瑞士边后卫身后；Davies 若首发将大幅提升左路。但加拿大握有"平局即头名"的安全垫，可能更务实、不必冒进——这也压低了大球概率。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 赛前前瞻</small></div>头名之争胶着、低比分对决；Davies 复出是加拿大最大利好。瑞士结构更稳、加拿大主场 + 运动能力使分差很小。</div>
+    <div class="insight"><div class="who">Betfair / Racing Post <small>· 投注媒体</small></div>瑞士略热（≈39%），平局有"加拿大净胜球即够头名"的逻辑支撑；两队均已基本出线，强度与大球概率或被压低。</div>
+    <div class="insight"><div class="who">Total Football Analysis <small>· 数据媒体</small></div>瑞士旅欧密度与大赛经验略胜，但加拿大的逼抢与转换可咬住；本场是真正的低分差对决，胜负取决于细节与求胜动机。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念是<b>头名归属</b>与<b>两队是否全力</b>。⚠ 陷阱提醒：双方均已近出线 + 加拿大平局即够头名，"点到为止"风险使小球/平局概率高于盘口表面；Davies 是否首发是加拿大上限的唯一开关。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：一球分胜负或平局是基准剧本。瑞士求胜动机更强（须赢方夺头名）、结构略稳；加拿大主场 + Davies 回归有上限，但握有"平局即头名"的安全垫，可能更务实。大胜任一方的概率低于一边倒场次。</li>
+      <li><b>关键先生</b>：Xhaka（瑞/节拍与领袖）、Akanji（瑞/遏制转换）、Embolo（瑞/支点终结）；Davies（加/左路变量，待核）、J.David（加/终结）、Buchanan（加/速度爆点）。</li>
+      <li><b>胜负手</b>：① 加拿大能否用高压 + 速度打穿瑞士边后卫身后；② 瑞士能否用控形与定位球掌控节奏；③ 双方对头名的重视程度（决定强度与大小球）。</li>
+      <li><b>市场视角</b>：本日少见的三向真实分歧场（≈39/31/30），1X2 本身有价格发现空间；过热指数 3/5。核心变量是求胜动机 + Davies 出场情况，并连带影响大小球（偏小球/平局）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>Davies 是否首发及出场时长</b>（赛日再核，与官方 XI 对齐）；③ 瑞士是否因已基本出线而轮换；④ Abatti 完整裁判组与 VAR 组合、其本届单场出牌/判点细分；⑤ 出线/头名的精确净胜球与并列规则细节（以 FIFA 官方判定为准）；⑥ 让球线与大小球总分线（O/U 2.5）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49141389/fifa-world-cup-2026-switzerland-vs-canada-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 前瞻/裁判/预测首发/Davies</a> · <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html">Sports Mole — 前瞻/团队消息/裁判</a> · <a href="https://news.bet365.com/en-us/article/canada-switzerland-preview-and-lineup-predictions/2026062216422510645">bet365 — 阵容预测</a><br>
+      • <a href="https://betting.betfair.com/football/predictions/fifa-world-cup/switzerland-vs-canada/5irko4jg9o9ixmfz8cu3oxjpw/">Betfair — 赔率/预测</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a3SeE5N0GPTV/">Racing Post — 赔率/投注</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/switzerland-v-canada-predictions">Total Football Analysis — 预测</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — B组指南/积分/赔率</a> · <a href="https://fansided.com/soccer/world-cup-group-b-standings-canada-and-switzerland-well-placed-how-bosnia-and-qatar-can-advance">FanSided — B组形势</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B">Wikipedia — B组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-23 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d52b1e',SC='#c8102e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['瑞士胜','平局','加拿大胜'],datasets:[{data:[39,31,30],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[47,53],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞士','加拿大','卡塔尔','波黑'],datasets:[{data:[20,31,36,75],backgroundColor:[HT,SC,'#e8cd6b','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强 · 近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'瑞士',data:[7.5,6.5,7.5,6.5,7,8],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'加拿大',data:[6.5,6.5,6.5,8,7,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

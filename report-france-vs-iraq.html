@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 法国 vs 伊拉克 · 2026世界杯 I组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-france-vs-iraq.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-france-vs-iraq.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#5b8def;--sc:#3aa564;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f3f8a,#0f5a32);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#101d3e,#0f152e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc0ee;font-weight:600}td.sc{color:#82d2a0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-france-vs-iraq.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · I组次轮 · 夺冠大热提前锁定出线之战</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 法国 3-0 伊拉克</span>
+  <h1>法国 vs 伊拉克</h1>
+  <div class="meta">2026年6月22日 · 费城 Lincoln Financial Field · 17:00 ET · I组（同组：塞内加尔、挪威）· 第 42 场</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5b8def">🇫🇷 法国</div><div class="rk">FIFA #2 · 夺冠大热 · 首轮 3-1 胜塞内加尔（Mbappé 梅开二度、登顶队史射手王）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#3aa564">🇮🇷🇶 伊拉克</div><div class="rk">FIFA #58 · 世界杯久违回归 · 首轮 1-4 负挪威（门将失误、中路被打穿）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-23） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 法国 3-0 伊拉克（半场 1-0）· 06-22</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">法国轻松过关、提前出线，并经历了<b>本届世界杯首次因天气中断的比赛</b>。第 <b>14 分钟</b> Mbappé 接 Michael Olise 右路传球、禁区外左脚抽射破门 1-0，半场结束保持。下半场开场因雷电+暴雨被迫中断 <b>超过两小时</b>（大屏提示观众避险）；复赛后 Mbappé 抓住伊拉克一次<b>失败的短传开球门球</b>——Dembélé 断下横传，Mbappé 推射梅开二度，这是他个人世界杯第 <b>16 球，追平克洛泽</b>历史第二（仅次于 Messi）；随后 <b>Dembélé</b> 由 Olise 做球、低射球门左下角 3-0。法国全场远超 2.38 的 xG 表现冷静高效，锁定 I 组出线席位。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 14' Mbappé（Olise 助攻）· 下半场开场 雷电暴雨中断 2 小时+ · 复赛后 Mbappé（Dembélé 助攻，第 16 球追平克洛泽）· Dembélé（Olise 助攻）｜世界杯史上首场天气中断</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇫🇷 法国</th><th>🇮🇶 伊拉克</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>2.38</b></td><td>待核</td><td>法国 2.38 xG 进 3 球——机会量与终结同时在线，是一场全面压制的胜利</td></tr>
+      <tr><td class="ht">比分 / 节奏</td><td><b>3-0</b></td><td>0</td><td>法国半场仅 1-0、复赛后两球迅速扩大——中断未打乱法国节奏，反而伊拉克复赛后开球失误立刻被惩罚</td></tr>
+      <tr><td class="ht">Mbappé 个人</td><td><b>2 球（世界杯第 16 球）</b></td><td>—</td><td>追平克洛泽，仅次于 Messi；本届火热延续，是法国进攻的绝对核心</td></tr>
+      <tr><td class="ht">Olise 贡献</td><td><b>2 助攻</b></td><td>—</td><td>两球均由 Olise 策动（助攻 Mbappé 首球、Dembélé 第三球）——右路是法国本场最稳定的创造源</td></tr>
+      <tr><td class="ht">控场</td><td><b>压制</b></td><td>被动</td><td>伊拉克全场未形成实质威胁，0 进球；ESPN 评"法国远占上风、从容凌驾于 xG 之上"</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.espn.com/soccer/report/_/gameId/760457">ESPN — France 3-0 Iraq Analysis</a> · <a href="https://www.espn.com/soccer/story/_/id/49145871/france-vs-iraq-live-world-cup-2026-updates-kylian-mbappe-looks-continue-goal-scoring-charge">ESPN — 战报/Mbappé</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/22/live-france-vs-iraq-world-cup-2026">Al Jazeera — 实时战报</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760457/iraq-france">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">Mbappé + Olise 的右路联动 = 法国最高效的得分机器</div>首球与第三球都源自 Olise 右路做球，Mbappé 完成梅开二度。<b>说明只要 Olise 在右路获得做球空间，法国就有顶级的"传切+终结"组合</b>——Mbappé 追平克洛泽（16 球）状态正盛，是法国冲击淘汰赛的最大确定性。对手封堵右路联动将成为限制法国的首要课题。</div>
+    <div class="insight"><div class="who">天气中断 2 小时未打乱法国、反而惩罚了伊拉克</div>下半场开场被雷电中断逾两小时，复赛后法国迅速扩大比分——其中第二球直接来自伊拉克一次失败的短传门球。<b>说明法国的专注度与即时执行力在长时间中断后依然在线，而伊拉克在重启后立刻出现低级失误被惩罚</b>，心理与经验的差距在非常规情境下被放大。</div>
+    <div class="insight"><div class="who">2.38 xG 进 3 球——法国是真正的全面压制</div>不同于阿根廷"3 射赢球"的省力模式，法国创造了 2.38 xG 并干净转化。<b>说明法国本场是机会量与效率双在线的完整表现，伊拉克全场 0 威胁</b>——夺冠大热的成色得到验证，提前出线后仍可保留状态。</div>
+    <div class="insight"><div class="who">伊拉克进攻零产出，重启后心态崩盘</div>伊拉克全场未制造实质威胁、0 进球，复赛后还因开球失误送礼。<b>说明面对法国这种量级，伊拉克缺乏由守转攻的手段</b>，末轮需要在更对等的对手身上找回组织度与终结点。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">法国胜、提前锁定出线</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>3-0 完胜并出线，夺冠大热方向完全正确</td></tr>
+      <tr><td class="ht">Mbappé 进球延续火热</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>梅开二度、追平克洛泽世界杯第 16 球</td></tr>
+      <tr><td class="ht">法国阵地压制对手</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>2.38 xG、伊拉克 0 威胁，全面压制</td></tr>
+      <tr><td class="ht">伊拉克难以制造威胁</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>全场 0 进球、0 实质机会</td></tr>
+      <tr><td class="ht">天气变量（费城夏季雷暴）</td><td style="color:var(--warn)"><b>~ 应验且超预期</b></td><td>真的发生且成为世界杯史上首场天气中断（2 小时+），未改变结果</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇫🇷 法国 · 下一场 末轮 vs 挪威（I组头名之争）</h4>
+        <ul class="watch">
+          <li><b>I 组头名之争</b>：法国、挪威预计均已出线，末轮对决很可能直接决定小组头名与淘汰赛半区——两队都有动力，但也可能轮换保护主力。</li>
+          <li><b>Mbappé+Olise 右路是模板</b>：本场两球路径会被挪威重点研究封堵；法国能否在被针对右路时打开第二条进攻线是看点。</li>
+          <li><b>对位 Haaland 的攻防转换</b>：挪威有 Haaland 这一顶级终结点（本届 4 球），法国后防对快速反击的处理将是关键，与本场面对的伊拉克完全不同量级。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇮🇶 伊拉克 · 下一场 末轮 vs 塞内加尔（出线前景渺茫）</h4>
+        <ul class="watch">
+          <li><b>出线形势严峻</b>：本场再负，积分与净胜球都处于劣势，末轮对塞内加尔几乎是荣誉之战（出线需多重条件配合 · 具体形势待核）。</li>
+          <li><b>需解决由守转攻</b>：对法国全场 0 威胁，末轮面对实力更接近的塞内加尔，必须找到中前场的串联与终结点。</li>
+          <li><b>避免低级失误</b>：复赛后开球失误直接送球——末轮需在心态与基本功上稳住，避免再次自我崩盘。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>量级悬殊的"出线确认"之战</b>：法国（FIFA #2、夺冠大热）首轮 3-1 力克塞内加尔、<b>Mbappé 梅开二度并超越吉鲁成为队史第一射手</b>；伊拉克（FIFA #58）首轮 1-4 惨败挪威，<b>门将失误 + 4-4-2 中路被打穿</b>暴露无遗。盘口几乎一边倒——法国胜赔约 <b>1.08</b>（去水隐含 ≈90%）、平局 <b>10.00</b>（≈8%）、伊拉克胜 <b>34.00</b>（≈3%）；预测市场（Kalshi）给法国约 <b>90%</b>。真正的看点不在胜负，而在三处：① <b>法国能否避免"沉闷开局"</b>（首轮上半场偏闷），尽早通过 Olise-Mbappé 轴线打开局面；② <b>Mbappé 的纪录追逐</b>（已平 Gerd Müller 世界杯 14 球）；③ <b>伊拉克的失球数与门将能否止血</b>。基准剧本：<b>法国 3-0 / 4-0 大胜并锁定 I 组出线</b>，张力压在"进几个、谁破门、能否零封"。市场过热指数 ≈ 2/5（共识干净，Mbappé 纪录是流量点）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">法国隐含胜率(去水)</div><div class="v" style="color:#5b8def">≈90%</div></div>
+      <div class="key"><div class="k">伊拉克隐含胜率(去水)</div><div class="v" style="color:#3aa564">≈3%</div></div>
+      <div class="key"><div class="k">Mbappé 世界杯进球</div><div class="v" style="color:var(--warn)">14 球</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>法国警惕"沉闷开局"（上一场带入）</b>：首轮对塞内加尔上半场偏闷、下半场才发力——面对伊拉克的低位密集，法国需尽早通过 Olise-Mbappé 轴线破局，否则可能再现耐心拉锯（影响早进球/大球节奏）。</li>
+      <li><b>Mbappé 状态炸裂、纪录在望（上一场带入）</b>：Mbappé 已平 Gerd Müller 的世界杯 14 球、且超越吉鲁成为法国队史第一射手——状态正盛，本场有望继续刷新，是大球/越线市场的核心驱动。</li>
+      <li><b>伊拉克门将与中路漏洞（上一场带入）</b>：伊拉克首轮门将 Jalal Hassan 失误送礼、4-4-2 中场人数劣势被挪威打穿——法国攻击群质量远超挪威，这两处漏洞若不修正会被无限放大。</li>
+      <li><b>伊拉克的现实目标是控失球</b>：Hussein 的头球争顶是伊拉克唯一可复制的得分路径（定位球/传中），运动战几无机会；现实目标是限制净失球、力争小组赛尾声的理论出线可能。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #243f6b;background:linear-gradient(135deg,#121c2b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc0ee;font-weight:700">法国 · 上一场带入 · 沉闷开局 + Mbappé 纪录 <span style="color:var(--mut);font-weight:400">· 塞内加尔战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">法国首轮 3-1 胜塞内加尔、<b>Mbappé 梅开二度</b>；上半场偏闷、下半场才打开局面</div>
+      <p style="font-size:13.5px">承接塞内加尔战复盘的前瞻迁移：法国 3-1 取胜，但<b>上半场"沉闷开局"</b>、下半场依靠 Olise-Mbappé 轴线才发力；Mbappé 梅开二度、超越吉鲁登顶法国队史射手王，且追平 Gerd Müller 的世界杯 14 球。Barcola 替补建功、可能竞争首发，进攻轮换余地大。后防补时丢球提醒：即便对弱旅也要管理好比赛末段注意力。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：法国是绝对热门（去水≈90%），胜负无悬念，价值全在<b>进球数、谁破门、能否零封</b>。"沉闷开局"是大球早盘的轻微利空——若法国又慢热，早进球市场承压；但 Mbappé 的状态与伊拉克的脆弱后防，意味着法国全场大胜概率仍高。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 法国 vs 伊拉克前瞻</a> · <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d" style="color:var(--accent)">Goal — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#82d2a0;font-weight:700">伊拉克 · 上一场带入 · 门将失误 + 中路漏洞 <span style="color:var(--mut);font-weight:400">· 挪威战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">伊拉克首轮 1-4 负挪威、<b>门将 Jalal Hassan 失误送礼、4-4-2 中场人数劣势被打穿</b>；Hussein 头球是唯一得分路径</div>
+      <p style="font-size:13.5px">承接挪威战复盘的前瞻迁移：伊拉克 1-4 惨败、Haaland 梅开二度，两大漏洞——<b>门将 Jalal Hassan 的失误</b>与 <b>4-4-2 中路人数劣势</b>——必须修正，否则会被法国（火力与挪威同级甚至更强）再次放大。Hussein 的头球能力是唯一可复制的得分路径（定位球/传中争顶）；现实目标是控失球、力争小组赛尾声搏取理论出线机会。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这两处漏洞正是法国攻击群（Mbappé/Olise/Dembélé/Barcola）最擅长打击的环节。若 Casas 不调整中场结构、门将再失常，伊拉克的失球数可能滑向 4-0/5-0，直接对接大让球与大球市场——这也是为什么市场对法国让深盘（-2/-2.5）与大球有兴趣。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/队况</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-france-vs-iraq-jun-22-2026-game-boxscore-647657" style="color:var(--accent)">FOX Sports — 比赛信息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc0ee;font-weight:700">法国 · 阵容轮换信号 <span style="color:var(--mut);font-weight:400">· Racing Post / VSiN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Deschamps 攻击群兵强马壮、Mbappé 健康在状态；Barcola 或竞争首发，存在轮换空间</div>
+      <p style="font-size:13.5px">据 Racing Post / VSiN，Deschamps 拥有齐整的进攻选择，Mbappé 健康且状态火热。鉴于法国大概率提前锁定出线、且末轮还有硬仗（对挪威/塞内加尔出线席位），Deschamps 可能进行<b>适度轮换</b>，给 Barcola、Kolo Muani 等更多机会、保护主力体能。中场 Tchouaméni、Camavinga 把控，后防 Saliba/Upamecano/Theo 坐镇。<span style="color:var(--warn)">[官方首发以赛前 FIFA 名单为准；轮换幅度待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：轮换幅度直接影响进球节奏与大球。若 Mbappé 早早被保护下场、法国大面积轮换，理论上会压低大胜幅度；但即便替补阵容，法国对伊拉克的实力差仍巨大。是否让 Mbappé 追逐纪录而保留其在场时间，是观察点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/" style="color:var(--accent)">Racing Post — 队况/预测</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/" style="color:var(--accent)">VSiN — 预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· All Football / ESPN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：加拿大籍 <b>Drew Fischer</b> 执法；比赛在费城 Lincoln Financial Field（露天）进行</div>
+      <p style="font-size:13.5px">多源（All Football、ESPN）确认 FIFA 任命加拿大籍 <b>Drew Fischer</b> 执法本场 I 组次轮。Fischer 系 MLS 与 CONCACAF 资深主裁、入选 2026 世界杯裁判名单。比赛在费城 Lincoln Financial Field（露天球场）进行，需关注 6 月东海岸午后的高温/湿度（17:00 ET 场），对伊拉克的体能消耗与法国的节奏管理都有边际影响。<span style="color:var(--warn)">[Fischer 本场助理/VAR 组合与其大赛单场出牌细分样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在一场实力悬殊的比赛里，裁判对胜负几乎无影响——法国不需要任何边际帮助。裁判面的唯一价值在牌数/点球盘：若法国攻势凶猛、伊拉克频繁犯规拦截，黄牌与点球概率会略升。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://m.allfootballapp.com/news/Headline/OFFICIAL-Canadian-referee-Drew-Fischer-to-officiate-France-vs.-Iraq-at-2026-FIFA-World-Cup/4664768" style="color:var(--accent)">All Football — Fischer 执法官宣</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — 世界杯裁判名单</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06240f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 赛前官宣名单 · 双源一致</span></h2>
+    <div class="sub">两源一致确认（101GreatGoals 官宣名单含完整替补席 + 多源汇总）· FIFA Match Centre 名单页开赛前才点亮，故以已官宣的官方队表为准 · <b style="color:var(--good)">✅ 官方确认</b></div>
+
+    <h4>🇫🇷 法国 官方首发（4-2-3-1）· Deschamps</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · Digne; Koné · Rabiot; Olise · Dembélé · Barcola; Mbappé(C)</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：Tchouaméni、Cherki、Doué、Mateta、Thuram、Kanté、Theo Hernández、Kolo Muani（赛前公布 15 人替补）</div>
+
+    <h4 style="margin-top:14px">🇮🇶 伊拉克 官方首发（约 4-4-2 / 4-2-3-1）· Casas</h4>
+    <div class="lineup">A. Basil(GK); Ali · Tahseen · A. Hashim · M. Doski; Bayesh · Iqbal · A. Al-Ammari · Ismael; Qasem · A. Hussein</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">替补席关键武器：Ali Jasim（带伤退替补）、Jalal Hassan（原预测首发门将）、Rebin Sulaka；位置依名单顺序近似排列</div>
+
+    <h4 style="margin-top:16px">📋 法国 vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">左后卫</td><td>Theo Hernández</td><td class="sc">Lucas Digne</td><td>防守更稳、插上减少；对弱旅影响有限，主要是稳健/体能取舍</td></tr>
+      <tr><td class="ht">双后腰</td><td>Tchouaméni · Camavinga</td><td class="sc">Koné · Rabiot</td><td>Tchouaméni 轮休；Koné 高强度拦截+带球推进，中场纵向冲击更强</td></tr>
+      <tr><td class="ht">前场左路</td><td>Doué（左）/ Kolo Muani 单箭头</td><td class="sc">Barcola（左）· Mbappé 改打中锋</td><td>轮换预期兑现（Barcola 首发）；Mbappé 移中锋追逐纪录、进攻轴线前移</td></tr>
+      <tr><td class="ht">不变</td><td colspan="2">Maignan · Koundé · Saliba · Upamecano · Olise · Dembélé · Mbappé</td><td>核心攻防骨架与预测一致——计划 A 攻击群仍接近全主力</td></tr>
+    </table>
+    <div class="note">伊拉克侧最大变动：门将 <b>Ahmed Basil</b> 替原预测首发 <b>Jalal Hassan</b> 先发；Ali Jasim（对挪威带伤）退替补。其余与"门将止血+中场修正"看点方向一致。</div>
+
+    <h4 style="margin-top:16px">🎯 战术解读</h4>
+    <div style="font-size:13.5px;line-height:1.75">
+      ① <b>Mbappé 首发且改打中锋（单箭头）</b>——速览此前的核心疑问"Mbappé 是否首发"= <b style="color:var(--good)">确认首发</b>，纪录追逐在场，进攻轴线前移，大胜+破门倾向<b>维持</b>。<br>
+      ② <b>双后腰 Koné + Rabiot，Tchouaméni 轮休</b>——Koné 提供高强度拦截与带球推进，中场更具纵向冲击；体能管理意图清晰（末轮对挪威/塞内加尔出线硬仗）。<br>
+      ③ <b>Barcola 首发兑现轮换预期，Doué/Kolo Muani 退替补</b>——左路速度型，与 Olise（右）+Dembélé（中）组成三叉戟，攻击群仍接近全主力，<b>大球幅度不应因轮换显著下调</b>。<br>
+      ④ <b>左后卫 Digne 替 Theo</b>——更稳健、插上减少，对阵伊拉克影响有限，属体能/稳健取舍。<br>
+      ⑤ <b>伊拉克门将 Basil 替 Jalal Hassan 先发</b>——门将变阵是伊方最大看点，面对法国攻势其扑救稳定性是控失球关键；Aymen Hussein 仍领衔锋线。<br>
+      <span style="display:block;margin-top:8px;padding:9px 11px;background:#0d1526;border-radius:8px">🧭 <b>速览结论：维持</b>（法国大胜方向不变、Mbappé 首发破门倾向在），<b>微调</b>：中场+左后卫轮换已兑现，但攻击群接近全主力，<b>不下调大球预期</b>。</span>
+    </div>
+
+    <h4 style="margin-top:16px">📈 市场反应</h4>
+    <p style="font-size:13.5px">本场为<b>深度轮换</b>而非伤退型变动（Mbappé 首发、攻击群齐整），头号爆点在场，理论上不触发热门盘口显著移动；法国 1.08（≈90%）的强热门定位预计维持，让球盘（-2/-2.5）与进球数仍是核心市场。<span style="color:var(--warn)">[首发公布前后实时盘口细分数据有限；具体赔率以平台为准 · 仅作事实陈述、非投注建议]</span></p>
+
+    <div style="font-size:12px;margin-top:10px">来源：<a href="https://www.101greatgoals.com/football/world-cup-news/france-vs-iraq-line-ups-confirmed-world-cup/" style="color:var(--accent)">101GreatGoals — 官宣首发名单（含替补席）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492" style="color:var(--accent)">FIFA — 比赛中心（名单页开赛前点亮）</a> · <a href="https://www.si.com/soccer/france-vs-iraq-world-cup-preview-predictions-lineups-6-22-26" style="color:var(--accent)">SI — 前瞻/阵容</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· I组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 3.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>I 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇫🇷 法国</th><th>🇮🇶 伊拉克</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#2</td><td class="sc">#58</td></tr>
+      <tr><td>首轮结果</td><td class="ht">3-1 胜塞内加尔（Mbappé 梅开二度）</td><td class="sc">1-4 负挪威（门将失误、中路被打穿）</td></tr>
+      <tr><td>I 组积分</td><td colspan="2">法国 3 分（与挪威同积分、靠净胜球）；伊拉克 0 分，已陷被动</td></tr>
+      <tr><td>主教练</td><td class="ht">Didier Deschamps</td><td class="sc">Jesús Casas（西班牙籍）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Mbappé(C)、Olise、Dembélé、Tchouaméni</td><td class="sc">Aymen Hussein、Ali Jasim、Jalal Hassan（门将）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">沉闷开局是否再现；轮换幅度；Mbappé 纪录</td><td class="sc">门将止血；中场结构修正；控失球</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">世界杯 2022 亚军（决赛负阿根廷）· 欧洲杯 2024 四强</td><td class="sc">亚洲杯 2023 16 强 · 久违重返世界杯</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.08（隐含≈90%）</td><td class="sc">胜 34.00（≈3%）· 平 10.00（≈8%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线高挂（大 3.5 偏热）——核心市场是法国让球（-2/-2.5）与进球数</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈90/8/3，再归一）。赔率来源：bet365（法国 -1200 → 1.08、平 +900 → 10.00、伊拉克 +3300 → 34.00）；预测市场 Kalshi 法国 90% / 平 8% / 伊拉克 4%。让球盘法国约 -2/-2.5，具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选 / 热身）</b>与<b>本届世界杯实际值</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇫🇷 法国 · 进攻</td><td class="ht">2022 世界杯亚军级火力，Mbappé 领衔的世界级攻击群</td><td class="ht">首轮 <b>3 球</b>（Mbappé 梅开二度），下半场发力</td><td><b>符合</b>顶级水准，唯"沉闷开局"是慢热信号；面对伊拉克脆弱后防，火力大概率充分释放</td></tr>
+      <tr><td class="ht">🇫🇷 法国 · 防守</td><td class="ht">Saliba/Upamecano + Tchouaméni 屏障，2022 以稳守晋级决赛</td><td class="ht">首轮丢 1 球（补时），整体可控</td><td><b>延续</b>稳健：补时丢球是注意力问题非结构崩盘，对伊拉克零封概率高</td></tr>
+      <tr><td class="sc">🇮🇶 伊拉克 · 进攻</td><td class="sc">亚洲中游强队，依赖 Hussein 支点与定位球，运动战创造力有限</td><td class="sc">首轮 <b>1 球</b>负挪威，进攻乏善可陈</td><td><b>低于</b>需要：运动战打不开，得分几乎只能靠定位球/Hussein 头球</td></tr>
+      <tr><td class="sc">🇮🇶 伊拉克 · 防守</td><td class="sc">立身本应是纪律防守，但门将与中场结构是隐患</td><td class="sc">首轮丢 4 球、<b>门将失误 + 中路被打穿</b></td><td><b>远劣于</b>理想：核心漏洞对位法国攻击群是灾难级风险，失球数恐继续偏高</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：法国攻防本届实际值<b>延续亚军水准</b>（3 球、仅补时丢 1），唯"慢热"是节奏信号；伊拉克进攻<b>低于需要</b>、防守<b>远劣于</b>理想。深度数据与"法国全面碾压、价值全在让球与进球数"主线一致。来源：Opta Analyst · FotMob/Sofascore（首轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">法国 ≈2.7</td><td class="sc">伊拉克 ≈0.4</td><td>校准后法国压倒性占优；唯一变量是 Deschamps 的轮换幅度与"沉闷开局"是否再现（影响早进球节奏）</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内法国居 I 组及全球最前列；预测市场（Kalshi）给法国胜≈90%、出线＞98%、夺组高概率，伊拉克出线理论尚存但极低</td><td>对手强度校准后法国样本含金量极高（伊拉克 FIFA #58 为 I 组最弱）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：法国 field tilt 将长时间压向伊拉克半场，xT 与禁区触球大幅占优</td><td><b>陷阱提醒</b>：场面碾压几无悬念，唯一让球/大球的风险是法国轮换 + 慢热压低净胜幅度</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">法国胜方向绝对统一；真实分歧全在"让球幅度（-2 vs -2.5）+ 进球数 + Mbappé 是否破门"；共识干净、过热低</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · 一边倒共识、情绪干净</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">法国是绝对热门（去水≈90%、Kalshi 90%），胜负无分歧、无情绪溢价。价值全在<b>让球幅度（-2 vs -2.5）、进球数（大 3.5）与 Mbappé 是否破门/越线</b>。Mbappé 纪录追逐是唯一的舆论流量点。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向：法国胜 全数 · 平/伊 ≈0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>法国大胜（5-1 建包），侧重 Mbappé 进球、法国 -2 让球</td></tr>
+      <tr><td>VSiN</td><td>美系投注媒体</td><td>法国胜 + 零封 + Mbappé 任意时间破门（-200），叠加大 2.5</td></tr>
+      <tr><td>Goal.com</td><td>赛前预览</td><td>法国轻松取胜，关注轮换与末轮出线形势</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>法国全面占优；伊拉克运动战几无机会</td></tr>
+      <tr><td>Juvefc / TheSportsRush</td><td>预测媒体</td><td>法国胜 + 大球，提示伊拉克失球数偏高</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（低）</b>：胜负方向绝对统一（无人押伊拉克/平）——一边倒共识、无情绪溢价。真正分歧只在<b>让球幅度</b>（-2 vs -2.5）、<b>进球数</b>与<b>Mbappé 是否破门/越线</b>。Mbappé 纪录叙事是流量点而非资金异动来源。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>法国胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈1.07–1.10</td><td>法国压倒性热门；平 10.00 / 伊拉克 34.00</td></tr>
+      <tr><td>06-20 截止</td><td>bet365 / FanDuel</td><td class="ht">1.08（-1200）</td><td>法国超短赔基本不动（首轮 3-1 后维持）</td></tr>
+      <tr><td>06-20</td><td>大/小球</td><td colspan="2" class="ht">总分线高挂、大 3.5 偏热（法国火力 + 伊拉克脆弱后防）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>法国 -2 / -2.5</td><td colspan="2" class="ht">法国 -2/-2.5 具体赔率以实时盘口为准</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">法国胜 ≈1.10；让球 -2</td><td>以"夺冠大热 + Mbappé vs 亚洲中游"定价，初盘即把法国压成超短热门、让球 -2</td></tr>
+      <tr><td>开盘（首轮赛后重定价）</td><td class="ht">法国胜 1.07–1.08；让球 -2/-2.5 并存</td><td><b>repricing 来自双方首轮</b>：法国 3-1 确认强势、伊拉克 1-4 暴露门将与中路漏洞 → 让球向 -2.5 加深的角度增强，大球线进一步抬高</td></tr>
+      <tr><td>现盘（06-20→现）</td><td class="ht">法国胜 1.08；大 3.5 偏热 / 让球 -2.5 角度</td><td>胜负盘锁死（定价已极端收敛）；最活跃的价格发现在<b>让球（-2 vs -2.5）与大小球</b>——"法国轮换幅度 + 是否慢热"是让深盘能否兑现的唯一变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场赔率从初盘起就极端（≈1.10、让 -2），<b>伊拉克 1-4 的崩盘</b>进一步强化法国让深盘与大球的角度。1X2 毫无价值（定价已饱和），唯一有信息含量的是<b>法国让球（-2/-2.5）与进球数</b>——风险点是 Deschamps 提前轮换 + "沉闷开局"压低净胜幅度。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（聚合）</b>：本场法国约 <b>90%</b> 胜率、平 8%、伊拉克 4%——与博彩去水高度一致，无情绪溢价。I 组出线：法国＞98%、伊拉克理论尚存但极低。<span style="color:var(--warn)">[本场单场成交量与动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Mbappé 的纪录追逐</b>（已平 Gerd Müller 世界杯 14 球、超越吉鲁登顶法国队史射手王）是本场最大流量点。</li>
+      <li><b>舆论焦点 ②</b>：<b>Deschamps 的轮换抉择</b>——提前出线在望，是否保护主力、给替补机会，是法系媒体焦点。</li>
+      <li><b>伊拉克叙事</b>：久违重返世界杯的情怀 + 西班牙名帅 Casas 的执教，但公众普遍预期大比分失利，无冷门资金。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向绝对明确（法国），博彩与预测市场一致（≈90%），过热指数 <b>2/5</b>。流量来自 <b>Mbappé 纪录</b>而非胜负盘；最有信息含量的是<b>法国让球（-2/-2.5）、进球数与 Mbappé 是否破门</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/">Racing Post — 赔率/投注</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/">VSiN — 预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-iraq-06-22-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d">Goal — 前瞻</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为加拿大籍 <b>Drew Fischer</b>（MLS / CONCACAF，入选 2026 世界杯裁判名单）。来源：All Football、ESPN（裁判名单）。<span style="color:var(--warn)">[本场助理/VAR 具体组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（实际数据 + 定性）</h4>
+    <ul class="cl">
+      <li><b>执法体系画像</b>：Fischer 来自北美（CONCACAF）执法体系，MLS 长期主哨——通常对身体对抗有一定容忍，对明显犯规与战术犯规出牌稳定。其大赛单场出牌均值样本有限。<span style="color:var(--warn)">[场均黄牌细分 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：与法国、伊拉克两队均无显著公开执法史，无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届执法环境偏严。伊拉克若大量犯规拦截法国攻势，累积黄牌与禁区点球风险上升。</li>
+      <li><b>对本场的实际影响</b>：在量级悬殊的比赛里裁判几乎不影响胜负；半自动越位会更快判定 Mbappé/Olise 的临界冲刺，对越位边缘的进球有轻微抑制（影响大球边际）。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场是"法国压倒性进攻 vs 伊拉克密集防守"的对位——裁判面唯一价值在牌数/点球：伊拉克后卫频繁拦截 Mbappé/Dembélé 反击的累积犯规、禁区内拉扯的点球尺度是观察点。鉴于 Fischer 大赛单场样本有限，牌数盘宜以"倾向性"看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（ESPN / Racing Post 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇫🇷 法国 预测首发（4-2-3-1）· Deschamps</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · Theo Hernández; Tchouaméni · Camavinga; Dembélé · Olise · Mbappé(C); Kolo Muani</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Kylian Mbappé (C)</td><td>前锋 / 队长</td><td>首轮梅开二度、登顶法国队史射手王、平 Gerd Müller 世界杯 14 球；纪录追逐核心</td></tr>
+      <tr><td class="ht">Michael Olise</td><td>边锋 / 拜仁</td><td>与 Mbappé 的轴线是法国破密集的关键，下半场发力点</td></tr>
+      <tr><td class="ht">Bradley Barcola</td><td>边锋 / 巴黎</td><td>首轮替补建功，或竞争首发；轮换余地大</td></tr>
+      <tr><td class="ht">Aurélien Tchouaméni</td><td>中场</td><td>中场屏障与出球，控制节奏、保护后防</td></tr>
+    </table>
+    <h4>🇮🇶 伊拉克 预测首发（4-2-3-1 / 4-4-2）· Casas</h4>
+    <div class="lineup">Jalal Hassan; Ayman Hussein · Rebin Sulaka · Merchas Doski · Akam Hashim; Amir Al-Ammari · Bashar Resan; Ali Jasim · Ibrahim Bayesh · Manaf Younis; Aymen Hussein</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Aymen Hussein</td><td>前锋</td><td>支点中锋，头球争顶是伊拉克唯一可复制得分路径（定位球/传中）</td></tr>
+      <tr><td class="sc">Ali Jasim</td><td>边锋/前腰</td><td>伊拉克为数不多的技术爆点，反击端串联</td></tr>
+      <tr><td class="sc">Jalal Hassan</td><td>门将</td><td>首轮失误送礼——本场能否止血决定失球数</td></tr>
+      <tr><td class="sc">Bashar Resan</td><td>中场</td><td>中场覆盖，需修正首轮 4-4-2 中路被打穿的人数劣势</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Racing Post），<b>以赛前官方名单为准 · 待核</b>。法国 Deschamps 的轮换幅度（Mbappé 是否首发全场、Barcola/Kolo Muani 谁先发）与伊拉克门将/中场结构调整，是关键待核变量。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5b8def">🇫🇷 法国 · Didier Deschamps</div>
+        <div class="role">4-2-3-1 务实 + 世界级转换，Mbappé 自由人，稳守反击底盘</div>
+        <ul class="cl">
+          <li>法国的招牌是<b>务实控制 + 世界级个人转换 + 稳固后防</b>——2022 世界杯亚军、欧洲杯 2024 四强，Deschamps 的球队大赛韧性极强。首轮 3-1 虽慢热，但下半场火力释放充分。</li>
+          <li>交叉参照：世界杯 2022 决赛点球惜败阿根廷（Mbappé 帽子戏法）、欧洲杯 2024 四强（进攻效率受质疑但防守稳固）——法国的下限极高。本场对伊拉克，唯一变量是轮换与慢热。</li>
+          <li>本场切入口：伊拉克门将与中路漏洞正是法国攻击群（Mbappé/Olise/Dembélé）的打击点；尽早通过 Olise-Mbappé 轴线破局，避免重演"沉闷开局"，下半场轮换保护主力。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇮🇶 伊拉克 · Jesús Casas</div>
+        <div class="role">4-2-3-1 低位防守 + 定位球，Hussein 支点，门将与中场是隐患</div>
+        <ul class="cl">
+          <li>Casas（西班牙籍）带来组织化的低位防守理念，伊拉克的现实打法是<b>密集防守 + 定位球偷袭 + Hussein 头球</b>——亚洲杯 2023 闯入 16 强靠的是防守纪律。</li>
+          <li>交叉参照：亚洲杯 2023 16 强出局（被约旦淘汰）；本届首轮 1-4 负挪威，门将失误与中路人数劣势是核心病灶。对阵法国，这些漏洞会被顶级攻击群放大。</li>
+          <li>本场应对：现实目标不是取胜而是<b>控制失球数、保住净胜球以争取小组赛尾声的理论出线</b>。须收紧中场人数、门将稳定发挥，靠 Hussein 的定位球争顶搏取扳回颜面的进球。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN <small>· 赛前前瞻</small></div>法国质量、零封潜力与得分点是本场主线；Deschamps 拥有齐整攻击群，Mbappé 健康在状态。伊拉克的门将与中路漏洞若不修正，将被法国放大。</div>
+    <div class="insight"><div class="who">VSiN <small>· 投注媒体</small></div>建议以 Mbappé 任意时间破门（-200）为锚，叠加法国胜 + 大 2.5；认为法国零封潜力高、伊拉克运动战几无威胁。</div>
+    <div class="insight"><div class="who">预测市场（Kalshi） <small>· 市场共识</small></div>法国胜≈90% / 平 8% / 伊拉克 4%，与博彩去水一致、无溢价。法国出线＞98%；本场基本是出线确认 + 净胜球积累。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念不在胜负，而在<b>法国的进球数与是否零封</b>。⚠ 陷阱提醒：法国"沉闷开局"+ 提前轮换可能压低净胜幅度，让深盘（-2.5）与大球有边际落空风险——这是唯一需要警惕的变量。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：法国大胜（3-0 / 4-0 / 4-1）是基准剧本，锁定 I 组出线；平局（≈8%）与伊拉克取胜（≈3%）是极小尾部，需要法国大面积轮换 + 慢热 + 伊拉克门将神勇同时发生。</li>
+      <li><b>关键先生</b>：Mbappé（法/纪录与终结）、Olise（法/破密集轴线）、Barcola（法/轮换爆点）、Aymen Hussein（伊/定位球唯一希望）、Jalal Hassan（伊/门将止血）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>法国能否避免慢热、充分释放火力并零封</b>，以及<b>Mbappé 能否继续刷新纪录</b>——决定让球盘（-2/-2.5）与大小球的结算。</li>
+      <li><b>市场视角</b>：博彩与预测市场绝对一致（法国，≈90%），1X2 毫无价值；最有信息含量的是<b>法国让球（-2/-2.5）、进球数与 Mbappé 破门/越线</b>。过热指数 2/5（流量来自 Mbappé 纪录）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② 法国轮换幅度、Mbappé 是否首发全场；③ 伊拉克门将/中场结构调整；④ Fischer 本场助理/VAR 组合与大赛单场出牌细分；⑤ Kalshi/Polymarket 本场成交量与动量细分；⑥ 亚盘让球线（-2/-2.5）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49123829/fifa-world-cup-2026-france-vs-iraq-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判/前瞻</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021492">FIFA — 比赛中心</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/france-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aYhPe6u3dWgr/">Racing Post — 赔率/队况/预测</a><br>
+      • <a href="https://www.goal.com/en/news/france-iraq-fifa-world-cup-preview/blt7799929ae5686d5d">Goal — 前瞻</a> · <a href="https://vsin.com/soccer/france-vs-iraq-prediction-2026-fifa-world-cup-preview-and-best-bets/">VSiN — 预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-iraq-06-22-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://m.allfootballapp.com/news/Headline/OFFICIAL-Canadian-referee-Drew-Fischer-to-officiate-France-vs.-Iraq-at-2026-FIFA-World-Cup/4664768">All Football — Fischer 执法官宣</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯裁判名单</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — I组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-21 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#5b8def',SC='#3aa564',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['法国胜','平局','伊拉克胜'],datasets:[{data:[90,8,3],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 3.5 球','小 3.5 球'],datasets:[{data:[57,43],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['法国','塞内加尔','挪威','伊拉克'],datasets:[{data:[2,18,30,58],backgroundColor:[HT,'#3b9e6f','#7fa6e6','#82d2a0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/反击','个人上限','大赛经验'],
+  datasets:[
+   {label:'法国',data:[8.5,9,8.5,8.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'伊拉克',data:[5,4.5,5,5,4.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

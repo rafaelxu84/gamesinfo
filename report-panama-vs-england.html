@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 巴拿马 vs 英格兰 · 2026世界杯 L组末轮（英格兰争小组头名 · 巴拿马已出局）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-panama-vs-england.html">
+<link rel="alternate" hreflang="en" href="https://pksport.net/en/report-panama-vs-england.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-panama-vs-england.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-panama-vs-england.html">
+<link rel="alternate" hreflang="x-default" href="https://pksport.net/en/report-panama-vs-england.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://pksport.net/en/report-panama-vs-england.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-panama-vs-england.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-panama-vs-england.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · L组末轮 · 英格兰争头名 / 巴拿马已出局 · Kane 追金靴</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 巴拿马 0-2 英格兰</span>
+  <h1>巴拿马 vs 英格兰</h1>
+  <div class="meta">2026年6月27日（周六）· MetLife Stadium（东卢瑟福，新泽西）· 17:00 ET / 22:00 BST · L组末轮 · 同组同时：克罗地亚 vs 加纳（费城 Lincoln Financial Field，争第二名）</div>
+
+  <div class="vs">
+    <div class="team">
+      <div class="nm" style="color:#e8788a">🇵🇦 巴拿马</div>
+      <div class="rk">0-1 加纳 + 0-1 克罗地亚 · 0 分 · 积分垫底已出局 · Carrasquilla/Godoy 双缺 · 无失分压力，打荣誉之战</div>
+    </div>
+    <div class="x">— VS —</div>
+    <div class="team">
+      <div class="nm" style="color:#5aa8d8">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</div>
+      <div class="rk">4-2 克罗地亚 + 0-0 加纳 · 4 分（+2）· 已出线，胜或平即争前两名 · Reece James 伤退 · 预计多处轮换 · Kane 平 Lineker 世界杯纪录（10 球）</div>
+    </div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 巴拿马 0-2 英格兰（半场 0-0）· MetLife · 06-27</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">这是一场"职业但乏味"（ESPN 称 limp display）的过程胜利：<b>大轮换的英格兰在多雨的新泽西半场零封无果，下半场靠 Jude Bellingham 与 Harry Kane 各入一球拿下 2-0</b>，以 7 分锁定 L 组头名。<b>Bellingham 第 62 分钟由 Saka 角球做出、近距离凌空垫射破门</b>；五分钟后（67'）<b>Bellingham 反过来传中助攻 Kane 头球</b>——这是 Kane 的世界杯第 11 球，<b>超越 Gary Lineker（10 球）独享英格兰世界杯历史射手王</b>。Tuchel 较上一场对加纳轮换 5 人，包括 Rogers、Rashford、Saka 在北美的首次首发；Reece James 因腘绳肌伤缺阵（预计缺两场）。巴拿马 0 分垫底告别本届世界杯。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 62' Bellingham（英 · Saka 角球后凌空垫射）｜67' Kane（英 · Bellingham 传中头球 · 世界杯第 11 球破纪录）· 半场 0-0</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</th><th>🇵🇦 巴拿马</th><th>解读</th></tr>
+      <tr><td class="sc">比分 / 进球</td><td><b>2</b>（Bellingham、Kane）</td><td>0</td><td>下半场两球解决战斗；半场 0-0 印证"过程低效"</td></tr>
+      <tr><td class="sc">单场 xG（Opta）</td><td><b>1.40</b></td><td>0.59</td><td>英格兰 17 射仅 2 射正、xG 1.40 偏低——质量未随射门量上来，与"limp display"一致</td></tr>
+      <tr><td class="sc">射门数（Opta）</td><td><b>17</b></td><td>13</td><td>英格兰射门量占优但效率不高；巴拿马 13 射亦有一定还击</td></tr>
+      <tr><td class="sc">射正（Opta）</td><td><b>2</b></td><td colspan="2"><span style="color:var(--warn)">巴拿马射正分项未多源核得 · 待核</span></td></tr>
+      <tr><td class="sc">控球 / 禁区触球</td><td colspan="2"><span style="color:var(--warn)">单场控球%与禁区触球分项未多源核得 · 待核</span></td><td>从过程看英格兰持续控球压制，但禁区终结质量不足（半场 xG 仅 0.49）</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/panama-vs-england-stats-world-cup-2026-live">Opta Analyst — 巴拿马 vs 英格兰数据（xG 1.40/0.59、17 射 2 射正）</a> · <a href="https://www.espn.com/soccer/story/_/id/49200292/england-panama-world-cup-2026-result-score-recap-harry-kane-jude-bellingham">ESPN — 比赛复盘（limp display）</a> · <a href="https://www.skysports.com/football/panama-vs-england/549837">Sky Sports — 比赛报道</a> · <a href="https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/World-Cup/panama-v-england-fifa-world-cup-saturday-27-june-2026-match-centre">England Football — 官方比赛中心</a>。<span style="color:var(--warn)">[控球%/禁区触球/巴拿马射正分项未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"对加纳 0 进球的创造力危机"延续到上半场——低防线仍是英格兰的难题</div>赛前点名英格兰对加纳 19 射 0 球暴露创造力问题。本场对巴拿马<b>半场仍 0-0（半场 xG 仅 0.49）</b>，直到下半场才靠定位球（Saka 角球）+ 个人能力破局。<b>可迁移结论：英格兰对深位密防的破局仍依赖定位球与球星灵光，运动战阵地破密集防守的稳定方案尚未建立——淘汰赛遇到摆大巴的对手仍是隐患。</b></div>
+    <div class="insight"><div class="who">Bellingham 是破局开关——既是终结点也是制造点</div>Bellingham 62' 进球、67' 又助攻 Kane，<b>一人直接参与两球</b>。说明在前场轮换（Rogers/Rashford/Saka 首发）磨合不足时，Bellingham 的个人质量是英格兰最可靠的产出来源。<b>可迁移结论：当体系运转不畅，Bellingham 的箱内嗅觉与串联是英格兰的"保底产出"，淘汰赛值得围绕其设计终结。</b></div>
+    <div class="insight"><div class="who">Kane 破纪录但球队"职业而乏味"——胜利含金量需看对手</div>Kane 第 11 球独享英格兰世界杯射手王，里程碑意义重大；但<b>对手是 0 分已出局、双核心（Carrasquilla/Godoy）缺阵的巴拿马</b>。<b>可迁移结论：2-0 是干净的职业胜利（零封 + 拿头名），但 xG 1.40、半场 0-0 说明进攻流畅度未解决——这场不足以作为评估英格兰淘汰赛成色的样本。</b></div>
+    <div class="insight"><div class="who">轮换达成"保体能 + 拿头名"双目标，但前场磨合是代价</div>Tuchel 轮换 5 人、Rogers/Rashford/Saka 首发，既给主力轮休又锁定头名。<b>可迁移结论：头名晋级让英格兰在 R32 获得相对更优签运（避开部分强队一侧），但前场新组合的化学反应仍需在淘汰赛快速成型，否则"低效破密防"的问题会被放大。</b></div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="sc">英格兰 2-0 或 3-0 胜（基准剧本）</td><td style="color:var(--good)"><b>✓ 命中（2-0）</b></td><td>正是基准比分之一，英格兰零封取胜锁头名</td></tr>
+      <tr><td class="sc">Kane 进球概率高（追金靴/纪录）</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>Kane 67' 头球破门，独享英格兰世界杯射手王（第 11 球）</td></tr>
+      <tr><td class="sc">主力踢约 60-70 分钟后换人</td><td style="color:var(--good)"><b>✓ 大体命中</b></td><td>两球均在 62'/67' 后由 Tuchel 推进，符合"60-70 分钟节点"管理</td></tr>
+      <tr><td class="sc">Saka/Rashford 在宽松环境恢复进攻活力（看点②）</td><td style="color:var(--warn)"><b>~ 部分</b></td><td>两人首发但未直接进球/亮眼；破局靠 Bellingham + 定位球，活力恢复有限</td></tr>
+      <tr><td class="sc">大球（Over 2.5 / 历史 6 球情绪溢价）</td><td style="color:var(--bad)"><b>✗ 落空（仅 2 球）</b></td><td>全场仅 2 球，Over 2.5 未兑现——印证"轮换 + 低效"对 2018 年 6-1 历史溢价的修正提醒</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fb3ec">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 · L 组头名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>R32 对手已定：DR 刚果</b>（7 月 1 日周三 · 亚特兰大）。作为 L 组头名对阵 D 组次席 DR 刚果——后者本届首次闯进 32 强，是相对可争取的签。</li>
+          <li><b>破密防方案待解（核心带入）</b>：对加纳、对巴拿马半场都难破深位防守；DR 刚果若低位防反，英格兰需比本场更高效，建议围绕 Bellingham + 定位球设计。</li>
+          <li><b>Reece James 复出存疑</b>：本场因腘绳肌缺阵、预计缺两场，右路推进与防守覆盖受影响 <span style="color:var(--warn)">[淘汰赛复出时间 · 待核]</span>；右后卫由 Quansah/Spence 类方案过渡。</li>
+          <li><b>Kane 状态与轮换红利</b>：里程碑入账、信心充足；主力本场获轮休保体能，是淘汰赛的正向资本。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇵🇦 巴拿马 · 0 分出局 · 本届结束</h4>
+        <ul class="watch">
+          <li><b>三战全负、0 分垫底出局</b>，本届世界杯之旅结束（0-1 加纳、0-1 克罗地亚、0-2 英格兰）。</li>
+          <li><b>双核心缺阵是硬伤</b>：Carrasquilla（内收肌）全程缺阵、队长 Godoy 几乎未上场——中路创造力与经验严重不足，是出局的结构性原因。</li>
+          <li><b>进攻质量是根本短板</b>：三战进 0 球，反击与定位球未能转化；后续周期需补强中前场终结点。</li>
+          <li><b>无后续赛事</b>：本届无淘汰赛任务，焦点转向新周期重建与年轻球员积累大赛经验。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概</h3>
+    <p class="lead">L 组末轮，英格兰（4 分，+2）对阵零分已出局的巴拿马。<b>出线算术：英格兰无论本场结果均已安全晋级；但与同积分的加纳（+1）争夺头名——英格兰胜则以 7 分锁定头名，平局则须看克罗地亚 vs 加纳结果（加纳须同时败，否则可能凭净胜球超越）</b>。Tuchel 面临抉择：全力赢球争头名，还是大面积轮换为淘汰赛保存体力，Reece James 伤退后后防名单再添变数。巴拿马核心 Carrasquilla（内收肌伤、全程缺阵）与队长 Godoy（几乎未上场）双重缺席，加上两连败士气低落，已是名副其实的"告别战"。盘口共识：英格兰赢球赔率 1.15 左右（-700 美线），为本届单场最大热门之一。三个看点：①Kane 能否突破 Lineker 纪录拿第 11 球；②Saka/Rashford 能否在宽松环境下恢复进攻活力；③克罗地亚 vs 加纳结果是否逼迫英格兰头名之争。基准剧本：英格兰 2-0 或 3-0 胜，主力踢约 60-70 分钟后换人；Kane 进球概率高。过热指数：2/5（纯技术层面无悬念，唯出线名次机制带来边际张力）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">英格兰赔率</div><div class="v" style="color:var(--good)">1.15</div></div>
+      <div class="key"><div class="k">平局赔率</div><div class="v" style="color:var(--draw)">8.00</div></div>
+      <div class="key"><div class="k">巴拿马胜赔率</div><div class="v" style="color:var(--bad)">17.00</div></div>
+      <div class="key"><div class="k">过热指数</div><div class="v" style="color:var(--warn)">2/5 🔥🔥</div></div>
+    </div>
+    <ul class="watch">
+      <li>Kane 金靴之战：本届已 4 球，世界杯历届合计 10 球（平 Lineker 英格兰纪录）；本场若再进可独享纪录</li>
+      <li>英格兰进攻创造力：前两场 xG 合计 ~3.4，对加纳 0 进球——Saka/Rashford 能否激活宽松空间是质量验证</li>
+      <li>同时进行：克罗地亚 vs 加纳（争 L 组第二名）——英格兰如平局须关注加纳结果</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section>
+    <h2><span class="n">🔴</span> 关键临场新闻</h2>
+    <div class="sub">多源交叉核验 · 存疑标注待核</div>
+
+    <h4>① Reece James 因腘绳肌伤缺阵，淘汰赛资格存疑</h4>
+    <p style="font-size:14px;margin-bottom:8px">Tuchel 官方确认 Reece James 因对加纳一役（6/23）拉伤腘绳肌，本场无缘出战，已进入加速康复计划。他同时面临淘汰赛首战（32 强）能否及时复出的双重不确定性。James 腘绳肌反复伤史令人担忧——2022 年卡塔尔世界杯、2024 年欧洲杯均因同一部位落选。右后卫位置将由 Djed Spence 或其他替代方案顶替。</p>
+    <div class="note">🔑 <b>为什么重要：</b>James 是 Tuchel 体系中主要的右路推进力，其缺阵不只是本场替换，更可能影响英格兰在整个淘汰赛阶段的右翼组织链。多源确认（ESPN / Goal / Yahoo Sports）：本场缺阵已核实；淘汰赛复出时间线 <span style="color:var(--warn)">待核</span>。</div>
+    <div class="src" style="margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49191072/world-cup-2026-reece-james-miss-england-vs-panama-injury-declan-rice-elliot-anderson-fit">ESPN — Reece James 确认缺阵</a> · <a href="https://www.goal.com/en/lists/reece-james-ruled-out-england-panama-world-cup-thomas-tuchel-injury/blt05e30a9a52e4975e">Goal.com — 伤情详报</a> · <a href="https://sports.yahoo.com/articles/reece-james-could-miss-england-212749250.html">Yahoo Sports — 淘汰赛存疑</a></div>
+
+    <h4>② Tuchel 大面积轮换：Saka 首发、Rashford 重回先发、Rice 状态评估</h4>
+    <p style="font-size:14px;margin-bottom:8px">Tuchel 赛前暗示 Saka 终于准备好先发（前两场均以替补出场），同时 Rashford 预计重回先发取代 Gordon/Madueke；Declan Rice 黄牌累计在身（再累积将停淘汰赛首场），Tuchel 表示将谨慎管理——据 Sports Mole 报道可能以 Elliot Anderson 搭档或旋转。Eze 或出现于中场或 10 号位以填补创造力缺口。</p>
+    <div class="note">🔑 <b>为什么重要：</b>对加纳一役 0 进球（含 19 次射门）已暴露创造力问题，Tuchel 若换入 Saka+Rashford+Eze 将测试进攻火力；Rice 黄牌管理是纪律博弈的典型案例——在小组赛末轮赌保镖还是换人休息，直接影响淘汰赛阵容完整度。首发 <span style="color:var(--warn)">待核</span>，以官方名单为准。</div>
+    <div class="src" style="margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/predicted-lineups/rice-dropped-rashford-starts-predicted-england-xi-vs-panama_600070.html">Sports Mole — 预测首发（含 Rice 策略）</a> · <a href="https://www.espn.com/soccer/story/_/id/49173382/panama-vs-england-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — Tuchel 轮换计划</a></div>
+
+    <h4>③ 上一场带入（英格兰）：对加纳 0-0 — 19 次射门换 0 进球，进攻有效性危机</h4>
+    <p style="font-size:14px;margin-bottom:8px">英格兰在波士顿与加纳战至 0-0，控球与射门数占优但无果而终。Declan Rice 给出首张黄牌；腘绳肌拉伤也发生在这场。Ghana 主教练 Otto Addo 部署低位密集防线，令 Bellingham/Madueke/Gordon 集体沉默。Tuchel 赛后表示将"改变进入禁区的路线"并"投入更多中路人员"。</p>
+    <div class="note">🔑 <b>为什么重要：</b>巴拿马的防守设计与加纳不同，但"坐低守反"同样可能是策略选择。若英格兰换入 Saka+Rashford，空间更宽裕下能否破局是本场最重要的进攻质量检验。</div>
+    <div class="src" style="margin-top:6px">来源：<a href="https://www.lockedinsportstape.co.uk/blogs/posts/england-ghana-three-lions-frustrated-as-ghana-stand-firm-in-world-cup-2026-stalemate">Locked In Sports Tape — 英格兰 vs 加纳战术复盘</a></div>
+
+    <h4>④ 上一场带入（巴拿马）：0-1 负于克罗地亚 — Budimir 替补致命一击，Livaković 三扑</h4>
+    <p style="font-size:14px;margin-bottom:8px">巴拿马第二场 0-1 负于克罗地亚，Ante Budimir 替补上场后第 54 分钟踢入致命球。巴拿马本场反抽 8 次（xG 0.62）；克罗地亚 xG 1.66，Livaković 67' 连续三次关键扑救拒绝扳平。核心中场 Carrasquilla 全程缺阵，队长 Godoy 几乎未能上场——两名关键球员均伤在末班车前。</p>
+    <div class="note">🔑 <b>为什么重要：</b>巴拿马两场合计 xG 仅 1.24，进攻质量极低；缺乏两名组织核心的情况下，对阵实力更强的英格兰几乎没有转化空间。同时本场已无积分利益，士气和精力管理成为巴拿马教练组的首要议题。</div>
+    <div class="src" style="margin-top:6px">来源：<a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst — 巴拿马 vs 克罗地亚数据</a> · <a href="https://www.skysports.com/football/news/11095/13554940/world-cup-2026-panama-0-1-croatia-ante-budimir-scores-from-bench-to-kickstart-2018-finalists-tournament">Sky Sports — 比赛报道</a></div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section>
+    <h2><span class="n">🔥</span> 投注市场热度</h2>
+    <div class="sub">欧赔小数盘 · 专家聚合 · 资金面 · 盘口走势</div>
+
+    <h4>① 赔率与市场共识</h4>
+    <table>
+      <tr><th>结果</th><th>欧赔（小数）</th><th>隐含概率</th><th>市场解读</th></tr>
+      <tr><td class="sc"><b>英格兰胜</b></td><td><b>1.15</b></td><td>~87%</td><td>本届单场最大热门之一；赔率结构接近"走过场"</td></tr>
+      <tr><td class="ht">平局</td><td>8.00</td><td>~12.5%</td><td>市场认为平局几乎不可能，除非英格兰大面积轮换后主动降速</td></tr>
+      <tr><td>巴拿马胜</td><td>17.00</td><td>~5.9%</td><td>主流资金几乎不覆盖，为本届最低胜率之一</td></tr>
+    </table>
+
+    <h4>② 让球与大小球市场</h4>
+    <table>
+      <tr><th>盘口</th><th>欧赔 / 说明</th></tr>
+      <tr><td>英格兰 -2.5（让球）</td><td>~2.00 · 2018 年世界杯同组英格兰 6-1 大胜巴拿马 · 历史参照但样本不同队</td></tr>
+      <tr><td>大球 2.5（Over 2.5）</td><td>初盘约 1.55 · 市场认为进球数 3+ 概率逾六成</td></tr>
+      <tr><td>大球 3.5（Over 3.5）</td><td>约 2.15 · 2018年6球场景令"大球派"有历史依托</td></tr>
+    </table>
+
+    <h4 style="border-top:1px solid var(--line);padding-top:14px;margin-top:18px">②-b 盘口定位与变化趋势（初盘→现盘）</h4>
+    <table>
+      <tr><th>时间节点</th><th>英格兰赔率</th><th>平局</th><th>巴拿马胜</th><th>说明</th></tr>
+      <tr><td>初盘（6/25 发布）</td><td>~1.18</td><td>~7.50</td><td>~15.00</td><td>DraftKings 开盘英格兰 -488 美线（≈1.20 小数）</td></tr>
+      <tr><td>近期（6/26-27）</td><td>~1.15</td><td>~8.00</td><td>~17.00</td><td>英格兰略压缩（更热）；巴拿马赔率略拉开</td></tr>
+      <tr><td>大小球走势</td><td colspan="3">Over 2.5 从约 1.65 压缩至 1.55</td><td>进球市场持续升温</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">
+      <b>定价逻辑解读：</b>巴拿马第一轮即 0-1 负加纳后（时间较早），市场已反映出局预期；第二轮再 0-1 负克罗地亚后 Carrasquilla 受伤消息传出，英格兰端赔率从约 1.18 进一步向 1.15 压缩（更热），说明大资金在确认核心伤情后加码押注英格兰。让球端 -2.5 维持稳定，暗示市场并不预期英格兰轮换会导致大分差失守。<br>
+      <b>定位档位：</b>英格兰赔率 1.15 属于"准绝对热门"区间（隐含胜率 87%），与世界杯此类强弱分明末轮相符；但轮换不确定性阻止了赔率进一步压缩至 1.10 以下。
+    </div>
+
+    <h4>③ 资金面与社媒</h4>
+    <p style="font-size:14px">英格兰投注量远超巴拿马，进球数市场（Over 3.5）有"情绪性"资金涌入，可能受 2018 年 6-1 历史数据影响；但须注意本场英格兰大概率轮换，进球节奏与当年不完全可比。社媒热度以 Kane 追金靴叙事为主，部分观点认为 Tuchel 会在上半场替换主力，降低大球实现概率。<br><b>综合过热指数：2/5 🔥🔥</b>（结果层面几无悬念，唯分差/金靴子话题带来局部热度）。</p>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border-color:#1d6b3a;background:linear-gradient(135deg,#0b2416,#0d1e2a)">
+    <h2 style="color:var(--good)"><span class="n" style="background:var(--good);color:#06121c">📈</span> 深度数据 · 预期指标</h2>
+    <div class="sub" style="color:#6bd98a">FootyStats / Opta Analyst · 无公开数据项标注待核</div>
+
+    <h4 style="color:var(--good)">① 本届 xG 均值与实际产出对照</h4>
+    <table>
+      <tr><th>队伍</th><th>场次</th><th>xG For（合计）</th><th>xG Against（合计）</th><th>实际进球</th><th>实际失球</th><th>效率解读</th></tr>
+      <tr>
+        <td class="sc">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</td>
+        <td>2</td>
+        <td>~3.4（场均 1.7）</td>
+        <td>~1.0</td>
+        <td>4</td>
+        <td>2</td>
+        <td>vs 克罗地亚超兑现（2.80 xG→4 球）；vs 加纳严重低效（1.28+ xG→0 球）；总体过程良好但稳定性存疑</td>
+      </tr>
+      <tr>
+        <td class="ht">🇵🇦 巴拿马</td>
+        <td>2</td>
+        <td>~1.24（场均 0.62）</td>
+        <td>~2.90</td>
+        <td>0</td>
+        <td>2</td>
+        <td>进攻质量全组最低；xGA 2.90 而实际仅失 2 球——曾受 Livaković 超神扑救庇护，英格兰面前大概率回归均值</td>
+      </tr>
+    </table>
+    <div class="src" style="margin-top:6px">数据来源：<a href="https://soccer.realgm.com/analysis/559/2026-FIFA-World-Cup-xG-Tracker-Results-Expected-Goals-Of-Every-Match">RealGM xG Tracker</a> · <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst（巴拿马 vs 克罗地亚）</a> · 英格兰 xG 分项来源：<span style="color:var(--warn)">待核（多源交叉中）</span></div>
+
+    <h4 style="color:var(--good);margin-top:16px">② 本场投射预测与 Opta Power Ranking 校准</h4>
+    <table>
+      <tr><th>指标</th><th>预测值</th><th>备注</th></tr>
+      <tr><td>英格兰预期射门数</td><td>15-22 次</td><td>对阵低防线球队，过程数据应大幅改善（类比克罗地亚场）</td></tr>
+      <tr><td>巴拿马预期射门数</td><td>3-6 次</td><td>两场合计仅 14 次射门，Carrasquilla 缺阵后中路创造力更低</td></tr>
+      <tr><td>本场 xG（英格兰）</td><td>~2.5-3.0</td><td>面对低防线，质量应优于加纳场；但轮换后节奏可能偏慢</td></tr>
+      <tr><td>本场 xG（巴拿马）</td><td>~0.3-0.6</td><td>反击威胁有限，主要靠定球和失误机会</td></tr>
+      <tr><td>Opta Power Ranking</td><td><span style="color:var(--warn)">待核</span></td><td>本届 Opta 分项排名未查到公开完整表，英格兰预估前 8，巴拿马垫底</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">⚠️ <b>陷阱提醒：</b>2018 年英格兰 6-1 大胜巴拿马的历史数据不宜直接映射——本场英格兰将轮换多名主力，且巴拿马整体水平相近但阵容大变（Carrasquilla/Godoy 均缺阵，双缺核心是本届巴拿马真实水平的下限）；Over 3.5 大球具有历史情绪溢价，需结合轮换深度谨慎评估。</div>
+
+    <h4 style="color:var(--good);margin-top:16px">③ 深度指标速查</h4>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px">
+      <div class="key"><div class="k">英格兰控球率（场均）</div><div class="v" style="color:var(--sc)">~62%</div></div>
+      <div class="key"><div class="k">巴拿马控球率（场均）</div><div class="v" style="color:var(--ht)">~38%</div></div>
+      <div class="key"><div class="k">英格兰射正率</div><div class="v" style="color:var(--sc)">~34%</div></div>
+      <div class="key"><div class="k">巴拿马射正率</div><div class="v" style="color:var(--ht)">~21%</div></div>
+      <div class="key"><div class="k">英格兰场均犯规</div><div class="v" style="color:var(--mut)"><span style="color:var(--warn)">待核</span></div></div>
+      <div class="key"><div class="k">PPDA/xT</div><div class="v" style="color:var(--mut);font-size:13px"><span style="color:var(--warn)">待核</span></div></div>
+    </div>
+    <div class="src" style="margin-top:10px">注：控球/射正率为本届前两场综合估算；PPDA/xT 需专业数据订阅，当前无公开来源可核实，不编数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">⚖️</span> 当值裁判 & 执法环境</h2>
+    <div class="sub">Abdulrahman Al-Jassim · 卡塔尔 AFC · FIFA 精英裁判</div>
+
+    <p style="font-size:14px;margin-bottom:10px">Abdulrahman Al-Jassim（卡塔尔，AFC）为本届 FIFA 世界杯认证裁判之一。职业生涯执法超过 108 场国际比赛，场均出牌约 4.5 张，场均犯规约 22.8 次（footymetrics.com 数据，大赛与联赛尺度存差异，具体场次结构 <span style="color:var(--warn)">待核</span>）。Al-Jassim 系 2022 年卡塔尔世界杯东道主裁判代表，具大赛执法经验，风格相对稳健，不以频繁出牌著称。</p>
+
+    <table>
+      <tr><th>指标</th><th>数值 / 说明</th><th>备注</th></tr>
+      <tr><td>场均黄牌</td><td>~4.5 张</td><td>职业生涯综合，大赛可能偏低</td></tr>
+      <tr><td>场均犯规</td><td>~22.8 次</td><td>职业生涯综合</td></tr>
+      <tr><td>判点率</td><td><span style="color:var(--warn)">待核</span></td><td>无足够大赛专项样本可引用</td></tr>
+      <tr><td>对英格兰历史</td><td><span style="color:var(--warn)">待核</span></td><td>未找到明确记录</td></tr>
+      <tr><td>对巴拿马历史</td><td><span style="color:var(--warn)">待核</span></td><td>未找到明确记录</td></tr>
+      <tr><td>倾向与两面性</td><td>经验丰富、风格稳健</td><td>2022 年世界杯执法经历系主要依据；本届大赛场次尺度变化尚无足够样本</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">本场两队强弱悬殊，裁判因素对结果影响相对有限；主要关注：英格兰是否有球员因黄牌管理而提前换人（Rice 已累一黄）；巴拿马反击若偏激进，犯规数可能偏高。</div>
+    <div class="src" style="margin-top:6px">来源：<a href="https://www.footymetrics.com/world-cup-2026/referees">FootyMetrics — 2026 世界杯裁判统计</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 2026 FIFA 世界杯裁判名单</a></div>
+  </section>
+
+  <!-- ===== 数据面 Chart.js ===== -->
+  <section>
+    <h2><span class="n">📊</span> 数据面（核心）</h2>
+    <div class="sub">本届小组赛前两场数据对照 · Chart.js 可视化</div>
+
+    <div class="grid2">
+      <div class="chartbox">
+        <h5>xG 产出对比（本届两场）</h5>
+        <canvas id="xgChart"></canvas>
+      </div>
+      <div class="chartbox">
+        <h5>进/失球 & 射门对比</h5>
+        <canvas id="shotsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="chartbox" style="margin-top:12px">
+      <h5>各场 xG 分布（按场次）</h5>
+      <canvas id="perMatchChart"></canvas>
+    </div>
+
+    <h4 style="margin-top:18px">核心数据对照表</h4>
+    <table>
+      <tr><th>指标</th><th class="sc">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</th><th class="ht">🇵🇦 巴拿马</th><th>差值</th></tr>
+      <tr><td>本届进球</td><td class="sc">4</td><td class="ht">0</td><td>+4</td></tr>
+      <tr><td>本届失球</td><td class="sc">2</td><td class="ht">2</td><td>0</td></tr>
+      <tr><td>xG For（合计）</td><td class="sc">~3.4</td><td class="ht">~1.24</td><td>+2.16</td></tr>
+      <tr><td>xG Against（合计）</td><td class="sc">~1.0</td><td class="ht">~2.90</td><td>-1.90</td></tr>
+      <tr><td>射门数（合计）</td><td class="sc">~41</td><td class="ht">~14</td><td>+27</td></tr>
+      <tr><td>积分</td><td class="sc">4（2胜0负）</td><td class="ht">0（0胜2负）</td><td>+4</td></tr>
+      <tr><td>净胜球</td><td class="sc">+2</td><td class="ht">-2</td><td>+4</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://soccer.realgm.com/analysis/559/2026-FIFA-World-Cup-xG-Tracker-Results-Expected-Goals-Of-Every-Match">RealGM xG Tracker 2026</a> · <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst</a> · <span style="color:var(--warn)">部分数值为多源交叉估算，精确分项待官方数据释出核实</span></div>
+  </section>
+
+  <!-- ===== 预测首发 ===== -->
+  <section>
+    <h2><span class="n">📋</span> 首发 & 近期表现（预测版）</h2>
+    <div class="sub">媒体综合推测 · 非官方 · <b>以赛前 FIFA Match Centre 官方首发为准 · 待核</b></div>
+
+    <div class="twocol">
+      <div>
+        <h4>🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰 预测首发（多源综合）</h4>
+        <div class="lineup">
+GK: Jordan Pickford（常规主力）
+
+RB: Djed Spence <span style="color:var(--warn)">[Reece James 伤退 → Spence 顶替 · 待核]</span>
+CB: Ezri Konsa
+CB: Marc Guehi（或 John Stones）
+LB: Nico O'Reilly
+
+CM: Elliot Anderson <span style="color:var(--warn)">[Rice 黄牌管理→可能轮换 · 待核]</span>
+CM: Eberechi Eze（或 Declan Rice）
+
+RW: Bukayo Saka <span style="color:var(--good)">[ESPN/SportsMole 均预测首发]</span>
+AM: Jude Bellingham
+LW: Marcus Rashford
+
+ST: Harry Kane（追金靴，极可能主打）
+
+<span style="color:var(--mut)">队形：4-2-3-1（Tuchel 惯用）</span>
+<span style="color:var(--warn)">注：以上为媒体推测综合，必须以 FIFA Match Centre 官方首发为准</span>
+        </div>
+        <h4 style="margin-top:12px">关键球员</h4>
+        <ul class="cl">
+          <li><b>Harry Kane</b> — 本届 4 球，世界杯历届合计 10 球（平 Lineker 英格兰纪录）；本场若进球可独享纪录</li>
+          <li><b>Jude Bellingham</b> — vs 克罗地亚首球，vs 加纳沉寂；本场空间更宽裕，能否恢复是攻势核心问题</li>
+          <li><b>Bukayo Saka</b> — 前两场均以替补出场；Tuchel 暗示本场将首发，右路爆破力是最大变量</li>
+          <li><b>Marcus Rashford</b> — 对克罗地亚进球；对加纳出场效果平平，预计本场首发验证状态</li>
+        </ul>
+      </div>
+      <div>
+        <h4>🇵🇦 巴拿马 预测首发（ESPN/Sports Mole 综合）</h4>
+        <div class="lineup">
+GK: Orlando Mosquera
+
+RB: Andrés Andrade
+CB: José Córdoba
+CB: Jiovany Ramos
+LB: César Blackman
+
+CM: Amir Murillo（右路中场/边翼）
+CM: Carlos Harvey
+CM: Yoel Bárcenas
+
+AM: Cristian Martínez
+
+ST: Cecilio Waterman
+ST: José Luis Rodríguez
+
+<span style="color:var(--mut)">队形：4-3-3 / 4-4-2（可能根据轮换调整）</span>
+<span style="color:var(--warn)">注：以上为媒体推测，须以 FIFA Match Centre 官方首发为准</span>
+        </div>
+        <h4 style="margin-top:12px">关键球员与缺阵</h4>
+        <ul class="cl">
+          <li><b>Adalberto Carrasquilla</b> — <span style="color:var(--bad)">全程缺阵</span>（内收肌伤），系巴拿马组织核心，缺席严重削弱中路创造力</li>
+          <li><b>Aníbal Godoy</b> — <span style="color:var(--bad)">几乎未上场</span>（体能/伤势），160 帽老队长，缺席即失去经验支柱</li>
+          <li><b>Amir Murillo</b> — 曾效力马赛/贝西克塔斯，右路最强单点，进攻推进主要依赖</li>
+          <li><b>Cecilio Waterman</b> — 快速反击锋线，速度是巴拿马仅有的主动威胁手段</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 战术风格 & 主教练 ===== -->
+  <section>
+    <h2><span class="n">🧠</span> 战术风格 & 主教练</h2>
+    <div class="sub">战术剖析 · 教练背景</div>
+
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm">Thomas Tuchel</div>
+        <div class="role">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰主教练 · 执掌自 2025 年 1 月</div>
+        <ul class="cl">
+          <li>擅长高压、强度足球，要求全线逼抢与快速过渡</li>
+          <li>惯用 4-2-3-1 / 4-3-3，强调边路与中路联动</li>
+          <li>本届前两场：进攻有效性参差（vs 克罗地亚爆发 / vs 加纳哑火），防线偶有漏洞（克罗地亚打进2球）</li>
+          <li>本场核心挑战：在保证赢球锁头名的前提下合理轮换保存淘汰赛体能；Reece James 伤缺后右翼防守链如何重组</li>
+          <li>表示"将让更多人从中路进入"——暗示 Eze 可能入场填补创造力</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm">Thomas Christiansen</div>
+        <div class="role">🇵🇦 巴拿马主教练</div>
+        <ul class="cl">
+          <li>西班牙裔丹麦人，职业球员（曾踢西甲），擅长结构化防守</li>
+          <li>巴拿马体系：低位坚守、反击为主，依赖快速侧翼推进（Waterman/Murillo）</li>
+          <li>两场均 0-1 落败，进攻创造极为有限；Carrasquilla/Godoy 双缺让进攻体系近乎崩解</li>
+          <li>本场面对英格兰，优先考虑体面收场而非激进押注，可能保持低位 5-4-1 结构防止大比分溃败</li>
+          <li>队内有报道称训练中出现球员冲突——内部氛围 <span style="color:var(--warn)">待核</span>（ESPN 报道，具体细节未多源确认）</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">战术对抗预判</h4>
+    <p style="font-size:14px">英格兰将在巴拿马低位防守下尝试用边路速度（Saka/Rashford）撕开空间，而非依赖中路渗透。Kane 将面对集中防守，但可利用身体和定球机会。巴拿马最现实的威胁路径是：英格兰轮换后注意力下降的短暂窗口，或定球局面。若英格兰在前 45 分钟内领先 2-3 球，大面积换人几乎确定——下半场节奏将明显放缓，进球节奏和大小球市场需随之调整。</p>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">💡</span> 分析师洞察</h2>
+
+    <div class="insight">
+      <div class="who">Kane 金靴叙事 vs 轮换博弈 <small>· 最大不确定性交叉点</small></div>
+      Kane 已平 Lineker 世界杯 10 球纪录，第 11 球将独享英格兰历史第一。但 Tuchel 的轮换考量可能让 Kane 只打约 60-70 分钟——这为他进球保留了足够窗口，但若英格兰早早大比分领先后换人，Kane 可能提前下场。金靴叙事为本场创造了额外收视张力，但不影响结果预测。
+    </div>
+
+    <div class="insight">
+      <div class="who">英格兰进攻质量验证窗口 <small>· 对阵弱旅的"放大镜效果"</small></div>
+      前两场 xG ~3.4 仅转化为 4 球（且主要集中于克罗地亚场），对加纳 0-0 暴露创造力短板。巴拿马虽弱，但面对低防线的"放松场"正是检验 Saka/Rashford 是否找回手感、Bellingham 是否能在宽松环境下主导节奏的绝佳机会。若英格兰在宽松空间下仍无法高效终结，将是淘汰赛前的警示信号。
+    </div>
+
+    <div class="insight">
+      <div class="who">同时进行的加纳 vs 克罗地亚 — 出线名次连锁效应 <small>· 英格兰头名算术</small></div>
+      英格兰（4分+2）与加纳（4分+1）积分相同，净胜球英格兰领先 1 球。英格兰胜则以 7 分锁定头名；若英格兰平或意外输，需看加纳结果。加纳对阵克罗地亚同样面临三分生死战——两场同时进行，英格兰队内可能会关注边场结果以决定是否"降速"。若头名归属对淘汰赛签位影响重大，Tuchel 实际可能不敢过度轮换。
+    </div>
+
+    <div class="insight">
+      <div class="who">巴拿马内部紧张？训练场冲突报道 <small>· 影响待观察</small></div>
+      ESPN 报道称巴拿马球员在训练中发生冲突，但细节未被多家媒体独立确认。若属实，可能对已出局的巴拿马士气和团结造成进一步影响。高影响信息 · <span style="color:var(--warn)">待多源核实</span>。
+    </div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">🔮</span> 综合研判 & 待核</h2>
+
+    <h4>关键先生</h4>
+    <p style="font-size:14px">英格兰方面：<b>Bukayo Saka</b> — 首发终于到来，在充足空间内的右路发挥是英格兰进攻成色最直接的观察窗口。巴拿马方面：<b>Cecilio Waterman</b> — 唯一速度型威胁，若能在英格兰轮换后的防线上找到机会，是巴拿马偷分的唯一可能路径。</p>
+
+    <h4 style="margin-top:14px">市场视角</h4>
+    <p style="font-size:14px">英格兰 1.15 的赔率已充分 price in 胜局。投注英格兰赢球已无价值优势；让球 -2.5 或 Over 3.5 需要对轮换深度做出判断——若 Kane+Saka+Rashford 均首发并打满约 70 分钟，大球概率较高；若英格兰上半场建立大优势后大面积换人，下半场可能节奏放缓。<b>仅供分析参考，非投注建议。</b></p>
+
+    <div class="flag">
+      <b>📌 待核清单（赛前务必更新）</b><br>
+      • <b>英格兰官方首发：</b><span style="color:var(--warn)">待 FIFA Match Centre 赛前公布 · 重点关注 Declan Rice（黄牌/轮换）、Djed Spence vs 其他右后卫人选、Eze 是否先发</span><br>
+      • <b>Reece James 淘汰赛复出时间：</b><span style="color:var(--warn)">待医疗评估更新 · 本场缺阵已确认，但下一轮状态尚不明朗</span><br>
+      • <b>巴拿马训练场冲突：</b><span style="color:var(--warn)">ESPN 单源报道 · 待第二家独立媒体确认才可定性</span><br>
+      • <b>裁判 Al-Jassim 本届执法数据：</b><span style="color:var(--warn)">黄牌/判点专项大赛数据无公开来源</span><br>
+      • <b>英格兰 vs 加纳单场 xG 精确分项：</b><span style="color:var(--warn)">待 Opta/FotMob 官方数据确认</span><br>
+      • <b>Opta Power Ranking 本届数值：</b><span style="color:var(--warn)">待公开源核实</span>
+    </div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2><span class="n">🔗</span> 来源</h2>
+    <div class="src">
+      <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021508">FIFA Match Centre — Panama v England（首发/实时更新）</a><br>
+      <a href="https://www.espn.com/soccer/story/_/id/49173382/panama-vs-england-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 比赛信息 / 裁判 / 预测首发（Anish Anand, Jun 25 2026）</a><br>
+      <a href="https://www.espn.com/soccer/story/_/id/49191072/world-cup-2026-reece-james-miss-england-vs-panama-injury-declan-rice-elliot-anderson-fit">ESPN — Reece James 确认缺阵报道</a><br>
+      <a href="https://www.goal.com/en/lists/reece-james-ruled-out-england-panama-world-cup-thomas-tuchel-injury/blt05e30a9a52e4975e">Goal.com — James 腘绳肌伤情</a><br>
+      <a href="https://sports.yahoo.com/articles/reece-james-could-miss-england-212749250.html">Yahoo Sports — James 淘汰赛存疑</a><br>
+      <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/predicted-lineups/rice-dropped-rashford-starts-predicted-england-xi-vs-panama_600070.html">Sports Mole — 英格兰预测首发（Rice 轮换分析）</a><br>
+      <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/predicted-lineups/double-fitness-doubt-predicted-panama-xi-vs-england_600069.html">Sports Mole — 巴拿马预测首发</a><br>
+      <a href="https://www.espn.com/soccer/story/_/id/49099495/england-croatia-world-cup-2026-recap-score-harry-kane-jude-bellingham-marcus-rashford">ESPN — 英格兰 4-2 克罗地亚战报</a><br>
+      <a href="https://theanalyst.com/articles/england-vs-croatia-stats-world-cup-2026">Opta Analyst — 英格兰 vs 克罗地亚数据（xG 2.80）</a><br>
+      <a href="https://www.lockedinsportstape.co.uk/blogs/posts/england-ghana-three-lions-frustrated-as-ghana-stand-firm-in-world-cup-2026-stalemate">Locked In Sports Tape — 英格兰 vs 加纳战术复盘</a><br>
+      <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst — 巴拿马 vs 克罗地亚数据（xG：0.62 / 1.66）</a><br>
+      <a href="https://www.skysports.com/football/news/11095/13554940/world-cup-2026-panama-0-1-croatia-ante-budimir-scores-from-bench-to-kickstart-2018-finalists-tournament">Sky Sports — 巴拿马 0-1 克罗地亚比赛报道</a><br>
+      <a href="https://soccer.realgm.com/analysis/559/2026-FIFA-World-Cup-xG-Tracker-Results-Expected-Goals-Of-Every-Match">RealGM — 2026 世界杯 xG Tracker</a><br>
+      <a href="https://www.espn.com/soccer/story/_/id/49189459/panama-players-clash-training-england-world-cup-game">ESPN — 巴拿马训练场冲突报道</a><br>
+      <a href="https://dknetwork.draftkings.com/2026/06/24/opening-odds-for-panama-vs-england-in-the-fifa-2026-world-cup/">DraftKings Network — 初盘赔率（-488 美线）</a><br>
+      <a href="https://www.footymetrics.com/world-cup-2026/referees">FootyMetrics — 2026 世界杯裁判统计</a><br>
+      <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 2026 FIFA 世界杯裁判名单</a><br>
+      <a href="https://www.espn.com/soccer/story/_/id/49096580/group-l-2026-world-cup-teams-records-stats-know-england-panama-ghana-croatia">ESPN — L 组指南（Teams, Records, Stats）</a><br>
+      <a href="https://www.skysports.com/football/news/12098/13543108/world-cup-2026-group-l-guide-fixtures-schedule-standings-and-odds-for-england-croatia-ghana-and-panama">Sky Sports — L 组综合指南</a>
+    </div>
+  </section>
+
+  <div class="foot">仅供分析参考，非投注建议 · tipster-24.com · 2026-06-27 · 数据截至赛前，待核项请以赛前官方信息为准</div>
+</div>
+
+<script>
+// xG Chart
+const xgCtx = document.getElementById('xgChart').getContext('2d');
+new Chart(xgCtx, {
+  type: 'bar',
+  data: {
+    labels: ['xG For', 'xG Against'],
+    datasets: [
+      {
+        label: '英格兰',
+        data: [3.4, 1.0],
+        backgroundColor: 'rgba(90,168,216,0.7)',
+        borderColor: 'rgba(90,168,216,1)',
+        borderWidth: 1
+      },
+      {
+        label: '巴拿马',
+        data: [1.24, 2.90],
+        backgroundColor: 'rgba(232,120,138,0.7)',
+        borderColor: 'rgba(232,120,138,1)',
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#93a1c4', font: { size: 11 } } }
+    },
+    scales: {
+      x: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' } },
+      y: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' }, beginAtZero: true }
+    }
+  }
+});
+
+// Shots/Goals Chart
+const shotsCtx = document.getElementById('shotsChart').getContext('2d');
+new Chart(shotsCtx, {
+  type: 'bar',
+  data: {
+    labels: ['进球', '失球', '射门数'],
+    datasets: [
+      {
+        label: '英格兰',
+        data: [4, 2, 41],
+        backgroundColor: 'rgba(90,168,216,0.7)',
+        borderColor: 'rgba(90,168,216,1)',
+        borderWidth: 1
+      },
+      {
+        label: '巴拿马',
+        data: [0, 2, 14],
+        backgroundColor: 'rgba(232,120,138,0.7)',
+        borderColor: 'rgba(232,120,138,1)',
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#93a1c4', font: { size: 11 } } }
+    },
+    scales: {
+      x: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' } },
+      y: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' }, beginAtZero: true }
+    }
+  }
+});
+
+// Per Match xG Chart
+const perMatchCtx = document.getElementById('perMatchChart').getContext('2d');
+new Chart(perMatchCtx, {
+  type: 'line',
+  data: {
+    labels: ['第1场', '第2场'],
+    datasets: [
+      {
+        label: '英格兰 xG For',
+        data: [2.80, 1.28],
+        borderColor: 'rgba(90,168,216,1)',
+        backgroundColor: 'rgba(90,168,216,0.1)',
+        tension: 0.3,
+        fill: true
+      },
+      {
+        label: '巴拿马 xG For',
+        data: [0.75, 0.62],
+        borderColor: 'rgba(232,120,138,1)',
+        backgroundColor: 'rgba(232,120,138,0.1)',
+        tension: 0.3,
+        fill: true
+      },
+      {
+        label: '英格兰 xG Against',
+        data: [0.71, 0.50],
+        borderColor: 'rgba(56,189,248,0.5)',
+        borderDash: [5,5],
+        tension: 0.3
+      },
+      {
+        label: '巴拿马 xG Against',
+        data: [1.66, 1.24],
+        borderColor: 'rgba(239,68,68,0.5)',
+        borderDash: [5,5],
+        tension: 0.3
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#93a1c4', font: { size: 11 } } }
+    },
+    scales: {
+      x: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' } },
+      y: { ticks: { color: '#93a1c4' }, grid: { color: '#2a3450' }, beginAtZero: true }
+    }
+  }
+});
+</script>
+</body>
+</html>

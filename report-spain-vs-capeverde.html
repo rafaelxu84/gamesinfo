@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 西班牙 vs 佛得角 · 2026世界杯 H组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-spain-vs-capeverde.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-spain-vs-capeverde.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-spain-vs-capeverde.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-spain-vs-capeverde.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-spain-vs-capeverde.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-spain-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-spain-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-spain-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 0-0 · 2026 世界杯 · H组首轮 · 佛得角铁桶逼平卫冕欧洲冠军（赛会最大冷门之一）</span>
+  <h1>西班牙 vs 佛得角</h1>
+  <div class="meta">2026年6月15日 · 亚特兰大 Mercedes-Benz Stadium · 12:00 ET · H组（同组：乌拉圭、沙特阿拉伯）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇪🇸 西班牙</div><div class="rk">FIFA #1 · 卫冕欧洲杯冠军 · 预选赛6场21球</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇻 佛得角</div><div class="rk">FIFA #67 · 世界杯处子秀 · 非洲区预选不败晋级</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 西班牙 0-0 佛得角 · 数据来源 Opta Analyst / ESPN / Sky Sports · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">没有进球，但满是故事。西班牙全场如预期单边压制，<b>27 次射门、7 射正</b>、控球 <b>74%</b>，上半场就轰出 12 脚射门（1966 年对瑞士 14 射后，西班牙世界杯单上半场颗粒无收的次高射门数）——却被佛得角 <b>40 岁门将 Vozinha</b> 用 <b>7 次扑救</b>挡出，他成为世界杯史上"处子秀即零封"的最年长门将。佛得角全场仅 6 射、<b>只犯 1 次规</b>（1966 年有记录以来世界杯单场最少犯规），用纪律与站位完成了赛会最大冷门之一。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 全场无进球 · 西班牙 27 射 7 正 0 球 · Vozinha 7 扑救零封 · FT 0-0</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇪🇸 西班牙</th><th style="padding:6px">🇨🇻 佛得角</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center"><b>74%</b></td><td style="text-align:center">26%</td><td style="padding:6px;color:var(--mut)">西班牙完全掌控却无法转化</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>27 / 7</b></td><td style="text-align:center">6 / —</td><td style="padding:6px;color:var(--mut)">27 射 0 球——终结效率彻底失灵</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">门将扑救</td><td style="text-align:center">—</td><td style="text-align:center"><b>7（Vozinha）</b></td><td style="padding:6px;color:var(--mut)">40 岁门将处子秀零封，赛会级表现</td></tr>
+      <tr><td style="padding:6px">犯规</td><td style="text-align:center">多</td><td style="text-align:center"><b>1</b></td><td style="padding:6px;color:var(--mut)">佛得角靠站位而非犯规防守，几乎不送定位球</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 量大 ≠ 质优：西班牙缺"B 计划"</div>27 射 0 球，多为外围与传中后的二点，缺少撕开密集防线的直塞与肋部渗透。<b>这说明西班牙</b>：面对纪律性低位铁桶，若 Yamal 式个人爆点不在状态，传控容易沦为"无效控球"，急需定位球与禁区内冷静度作为破局开关。</div>
+    <div class="insight"><div class="who">② 佛得角：处子秀却战术成熟</div>全场只犯 1 次规——不靠拉拽、靠提前卡位与协防保持队形，既不送西班牙定位球，也避免吃牌减员。<b>这说明佛得角</b>：低位防守执行力极高、情绪稳定，是可以靠"零失误防守 + 门将神扑"偷分的硬骨头，绝非陪练。</div>
+    <div class="insight"><div class="who">③ 门将是单场最大胜负手</div>Vozinha 7 扑救把一场预期的 0-3 改写成 0-0。<b>这说明</b>：处子秀球队的爆冷往往押注在门将神勇 + 整体零失误两件事同时发生，复制难度高但本场确凿发生。</div>
+    <div class="insight"><div class="who">④ 西班牙的"83% 共识"被现实击穿</div>赛前市场过热指数仅 2/5（"共识强无溢价"），但正是这种一边倒让佛得角 +2.5 让球与小球成为被低估的价值侧。<b>这说明</b>：极端单边盘里，冷门方的受让/平局价格常被情绪压宽。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>西班牙胜（去水 83%）+ 让 -2.5 → 实际 0-0 平</b>：胜负与让球双双落空，本场是赛会级误判方向。</li>
+      <li>✗ <b>基准剧本"西班牙 3-0/4-0"</b>：进球总数 0，与"大球潜力"完全相反。</li>
+      <li>✓ <b>"佛得角防线能否撑住开场"的隐患被点名</b>：赛前已列为关键观察项，结果防线不仅撑住、还零封。</li>
+      <li>△ <b>"市场过热 2/5、共识强无溢价"</b>：读数本身没错，但提示的"价值在冷门侧"未被赛前充分强调——记录在册。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇪🇸 西班牙 → 6/21 vs 沙特（亚特兰大 12:00 ET）</div>沙特首轮同样摆五后卫低位防守——西班牙将<b>连续面对密集铁桶</b>，丢分压力下必须解决"控球无渗透"的破局问题；定位球质量与中锋把握度是重点，急需进球止血。</div>
+      <div class="insight" style="margin:0"><div class="who">🇨🇻 佛得角 → 6/21 vs 乌拉圭（迈阿密 18:00 ET）</div>"零失误低位 + 门将神勇"模板已验证可行，但乌拉圭(首轮 67% 控球)同样擅长围攻——Vozinha 状态与防线纪律能否连续两场拉满是关键；体能与吃牌管理需留意。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst（theanalyst.com）、ESPN、Sky Sports、FIFA。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>重量级碾压</b>的开幕战：FIFA排名第一的西班牙（卫冕欧洲杯冠军、预选赛6场21球）对阵<b>世界杯处子秀</b>佛得角（FIFA #67、非洲区不败晋级、史上首次登上世界杯舞台）。盘口给出西班牙极端单边优势——胜赔 <b>1.10</b>（去水隐含 ≈83%），佛得角胜赔 <b>32.00</b>（≈4%），平局 <b>7.50</b>（≈13%）。真正有看点的不是胜负，而是<b>进球总数市场</b>：大 3.5 球 @ ≈2.01、小 3.5 球 @ ≈1.91，亚盘西班牙让球线 -2.5。预测共识指向 <b>西班牙 3-0 至 4-0</b>。Lamine Yamal 带伤出场（预计仅上 15–20 分钟）是本场最大新闻，亦是胜负手之外唯一的情绪焦点。基准剧本：<b>西班牙 3-0 大胜</b>，进球总数是盘口分歧核心。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">西班牙隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈83%</div></div>
+      <div class="key"><div class="k">西班牙预选赛进球</div><div class="v">21球/6场</div></div>
+      <div class="key"><div class="k">佛得角FIFA排名</div><div class="v" style="color:#7fa6e6">#67</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Lamine Yamal 的出场时间</b>：带伤参赛，预计仅上 15–20 分钟——这是本场唯一的悬念与媒体焦点，也是大球潜力的开关。</li>
+      <li><b>进球总数才是盘口核心</b>：胜负几乎无悬念，资金与分歧全在大/小 3.5 球（≈2.01 / ≈1.91）这条线和亚盘 -2.5 上。</li>
+      <li><b>佛得角的防线能否撑住开场30分钟</b>：Vozinha（39岁老将门将）+ Logan Costa 领衔的防线若早早被撕开，比分可能迅速滑向 5-0。</li>
+      <li><b>西班牙的阵型与Oyarzabal单箭头效率</b>：无 Yamal 先发，Olmo、Williams、Oyarzabal 的三人进攻组合是破密集低位防守的关键。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:4px solid var(--warn);background:linear-gradient(135deg,#2a1d0e,#1c2540);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 赛前最新 · 西班牙轮换 <span style="color:var(--mut);font-weight:400">· SI / Sports Mole / ESPN · 06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">De la Fuente 预计同时轮休 Lamine Yamal 与 Nico Williams（两人均有腿筋隐患）</div>
+      <p style="font-size:13.5px">据 SI、Sports Mole、ESPN 赛前消息，西班牙主帅 De la Fuente 预计让两名当家边锋 Lamine Yamal 与 Nico Williams 同时坐替补席，对腿筋问题进行管理保护。预测首发 4-3-3：Unai Simón；Porro、Cubarsí、Laporte、Cucurella；Fabián、Rodri、Pedri；Ferran Torres、Oyarzabal、Baena。<span style="color:var(--warn)">（预测首发，以赛前官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：对手是世界杯处子秀的佛得角，西班牙有充足轮换余裕；但若两翼尖刀同缺，西班牙边路爆点下降，理论上为佛得角的密集低位防守减压。不过 Rodri-Pedri-Fabián 的中场控制力足以主导，基准剧本（西班牙大胜）不变——只是进球可能更多来自中路渗透与定位球，而非边路一对一。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.si.com/soccer/spain-predicted-lineup-vs-cabo-verde-world-cup-6-15-26" style="color:var(--accent)">SI — 西班牙预测首发</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/spain-vs-cape-verde-prediction-team-news-lineups_599107.html" style="color:var(--accent)">Sports Mole — 赛前前瞻</a> · <a href="https://www.espn.com/soccer/story/_/id/49047205" style="color:var(--accent)">ESPN — 预测首发/裁判</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">西班牙 · Lamine Yamal 伤情 <span style="color:var(--mut);font-weight:400">· 06-13 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">🌟 Lamine Yamal 带伤出战：预计仅替补上场 15–20 分钟，本场不首发</div>
+      <p style="font-size:13.5px">巴塞罗那天才边锋在赛季末遭受腘绳肌损伤，错过了西班牙全部热身赛，但已归队训练。据 Sports Mole、SI.com、Goal.com 等多源报道，主帅路易斯·德拉富恩特确认 Yamal"可以参赛"，计划在本场替补出场约 15–20 分钟，对阵沙特时上场约 30 分钟，最后一场对阵乌拉圭时争取首发。西班牙管理层承认"将评估风险"，无 Yamal 先发的 3-0 友谊赛负伊拉克（赛前热身）显示西班牙在没有这名球员时攻势明显下降。<span style="color:var(--warn)">[具体出场时间以赛前官方名单及赛中换人为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Yamal 是西班牙的进攻引擎与宽度来源。无他先发意味着对佛得角低位密集防守的破解难度上升；若他替补登场并且直接影响节奏，进球潜力瞬间放大。这是大球市场（大 3.5 / 大 2.5）的关键变量，也是本场唯一有情绪温度的新闻。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/news/yamal-injury-update-as-spain-sweat-on-barca-stars-fitness-before-group-opener_599004.html" style="color:var(--accent)">Sports Mole — Yamal 伤情</a> · <a href="https://www.si.com/soccer/new-lamine-yamal-injury-update-spain-world-cup-opener" style="color:var(--accent)">SI.com — 最新伤情更新</a> · <a href="https://www.goal.com/en-us/lists/barcelona-lamine-yamal-spain-world-cup-availability-hamstring-injury/blt2e6ee87f5776fd24" style="color:var(--accent)">Goal.com — 巴萨与西班牙风险</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">西班牙 · 预测首发阵容 <span style="color:var(--mut);font-weight:400">· 06-13 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Raya 门将；Rodri-Pedri 中场双核；Oyarzabal 单箭头；Nico Williams 左翼</div>
+      <p style="font-size:13.5px">据 ESPN、Sports Mole 预测，西班牙本场可能摆 4-3-3：Raya；Porro、Cubarsi、Laporte、Cucurella；Zubimendi、Rodri、Pedri；Dani Olmo、Oyarzabal（或 Morata）、Nico Williams。Yamal 不先发，Dani Olmo 填右翼。本届西班牙首次无皇马球员。队长 Rodri（曼城）是中场核心与定位球组织者。<span style="color:var(--warn)">[预测首发为媒体分析推测，非官方 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：无 Yamal 先发使西班牙右侧宽度减弱，Olmo 填位则更依赖中路渗透。Rodri 作为中枢的组织质量和 Pedri 的传球节奏将决定西班牙能否早早打开局面。Oyarzabal 的单箭头终结效率是比分膨胀速度的关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49047205/fifa-world-cup-2026-spain-vs-cape-verde-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 预测首发/裁判</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/spain-vs-cape-verde-prediction-team-news-lineups_599107.html" style="color:var(--accent)">Sports Mole — 赛前前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">佛得角 · 历史性处子秀 <span style="color:var(--mut);font-weight:400">· 06-10 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">39岁门将 Vozinha + 队长 Ryan Mendes（97次出场/22球）领衔世界杯首秀阵容</div>
+      <p style="font-size:13.5px">主帅 Bubista 率领佛得角（Blue Sharks）以非洲区不败战绩晋级，成为首次参加世界杯的非洲球队之一。26人名单中核心：老将门将 Vozinha（39岁，精神领袖）、队长 Ryan Mendes（历史最多出场/进球）、维拉雷亚尔中卫 Logan Costa、边锋 Garry Rodrigues 与 Jovane Cabral、进球手 Dailon Livramento。西班牙预测主帅预测他们将摆 5-4-1 或 4-4-2 低位防守阵型，最大限度减少西班牙的突入空间。<span style="color:var(--warn)">[预测首发为分析源推测，非官方 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：佛得角的目标是组织低位密集防守、限制失球。Logan Costa 的对抗能力是防线中唯一具备欧洲高水平联赛经验的质量支撑。Mendes 和 Livramento 是唯一可能发动反击的进攻点。若防线在开场 30 分钟内被打穿，比分滑向 4-0、5-0 的概率大幅上升，直接影响亚盘 -2.5 与大 3.5 球市场。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.cafonline.com/news/cape-verde-name-historic-world-cup-squad-as-blue-sharks-prepare-for-debut/" style="color:var(--accent)">CAF Online — 佛得角历史性名单</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/predicted-lineups/bubista-looking-to-star-man-mendes-how-cape-verde-could-line-up-vs-spain_599110.html" style="color:var(--accent)">Sports Mole — 佛得角预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">约旦裁判 <b>Adham Makhadmeh</b> 执法——职业生涯场均 3.4 张黄牌，首次执法世界杯</div>
+      <p style="font-size:13.5px">FIFA 官方任命约旦人 <b>Adham Makhadmeh</b>（AFC 国际级裁判）执法本场，助理为 <b>Mohammad Alkalaf</b> 与 <b>Ahmad Alroalle</b>，第四官员为哥伦比亚人 <b>Andrés Rojas</b>。Makhadmeh 曾执法 AFC 亚洲杯，本场属其首批世界杯执法之一，因此可查的黄牌/点球倾向样本有限。<span style="color:var(--warn)">[本届世界杯执法量化倾向样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在量级极端不对称的比赛中，裁判对胜负几乎没有影响。作为 AFC 体系裁判且首批登上世界杯，其判罚尺度的样本有限，无法构成强信号；理论上若他对佛得角防守球员在压力下的拉拽、铲球判罚从严，黄牌盘与点球盘略有参考价值，但仅作背景，不宜据此下重注。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/spain-v-cape-verde-now-135800875.html" style="color:var(--accent)">Yahoo Sports — Makhadmeh 官宣</a> · <a href="https://worldreferee.com/referee/adham_makhadmeh" style="color:var(--accent)">WorldReferee — 裁判档案</a> · <a href="https://www.footymetrics.com/world-cup-2026/referees" style="color:var(--accent)">FootyMetrics — 本届裁判数据</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06231a">✅</span> 官方首发 & 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 已官宣 · 双源验证 + vs 预测对照</span></h2>
+    <div class="sub">主帅已公布首发（开球前约 1 小时）。来源：ESPN 比赛页 + Football Italia 官方阵容 + World Soccer Talk 已证实名单 + Yahoo/Barça Universal（西班牙细节）一致。两套阵容均 <b style="color:var(--good)">✅ 多源官方确认</b>。</div>
+
+    <h4>🇪🇸 西班牙 官方首发（4-3-3 / 实为 4-2-3-1）</h4>
+    <div class="lineup">Simón; Llorente · Cubarsí · Laporte · Cucurella; Rodri · F. Ruiz · Pedri; Ferran · Oyarzabal · Gavi</div>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">ESPN 标注 4-3-3；按 Yahoo/WST 描述实为 4-2-3-1：<b>Rodri + Fabián 双后腰</b>，Pedri 提到 10 号位；前场 Ferran 右路、Gavi 左路、Oyarzabal 单箭头。替补席关键武器：<b>Lamine Yamal</b>、<b>Nico Williams</b>（两名招牌边锋同坐板凳）、Dani Olmo、Mikel Merino、Pedro Porro。</p>
+
+    <h4 style="margin-top:16px">🇨🇻 佛得角 官方首发（4-2-3-1）</h4>
+    <div class="lineup">Vozinha; Moreira · R. Lopes · D. Borges · S. Cabral; L. Duarte · K. Pina; Mendes · Monteiro · J. Cabral; Livramento</div>
+    <p style="font-size:13px;color:var(--mut);margin-top:6px">Bubista 摆 4-2-3-1：Duarte + Pina 双后腰（WST 将第二后腰记为 Kevin Lenine），Jamiro Monteiro 任 10 号，Mendes/Jovane Cabral 分居两翼，Livramento 单箭头。替补席：<b>Logan Costa</b>（赛前预测的防线核心、唯一顶级联赛中卫——意外落选先发）、Garry Rodrigues、Willy Semedo。</p>
+
+    <h4 style="margin-top:18px">vs 预测首发对照（逐条：为什么重要）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">西·门将</td><td>Raya</td><td><b>Unai Simón</b></td><td>de la Fuente 维持对 Simón 的信任；纯人员修正，对大局影响极小</td></tr>
+      <tr><td class="ht">西·右后卫</td><td>Porro</td><td><b>Llorente</b></td><td>防守型边卫取代进攻型 Porro → 右路下底/助攻减少，呼应整体宽度下降（亦下修原"Porro 重叠下底"的角球来源判断）</td></tr>
+      <tr><td class="ht">西·中场结构</td><td>Zubimendi 单后腰 + 三中场</td><td><b>Rodri+Fabián 双后腰，Pedri 提到 10</b></td><td>控球更稳、Pedri 更高位专责撕开密集低位防守——破弱旅大巴的针对性布置</td></tr>
+      <tr><td class="ht">西·左翼</td><td>Nico Williams</td><td><b>Gavi</b></td><td>招牌边锋落选，改由中场属性的 Gavi 顶左路 → 自然边路宽度明显下降</td></tr>
+      <tr><td class="ht">西·右翼</td><td>Dani Olmo</td><td><b>Ferran Torres</b></td><td>Yamal 缺阵下 Ferran 顶右路，终结点前移；Olmo 退居替补</td></tr>
+      <tr><td class="sc">佛·中卫</td><td>Logan Costa 先发</td><td><b>Costa 替补；Lopes+Borges 先发</b></td><td>本场最大冷门：佛得角唯一顶级联赛经验中卫坐板凳，后防质量低于赛前假设 → 利好西班牙进球数</td></tr>
+      <tr><td class="sc">佛·边锋/阵型</td><td>Rodrigues 先发 · 4-4-2</td><td><b>Jovane Cabral · 4-2-3-1</b></td><td>Rodrigues 落选；Monteiro 任 10 号，前场更集中于 Livramento 单箭头</td></tr>
+      <tr><td>西·Yamal</td><td>替补</td><td>替补 ✅一致</td><td>与预测一致——招牌边锋不首发本身就是计划 A 的执行</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（3 条）</h4>
+    <div class="insight"><div class="who">① 速览结论：<span style="color:var(--good)">维持</span> 西班牙 3-0 基准 <small>· 两个相互抵消的微调</small></div>官方名单带来两股方向相反的力量：<b>西班牙先发宽度比原假设更弱</b>（Yamal+Nico Williams 双双替补、Gavi 非边锋顶左路、Llorente 防守型右卫）→ 开场强攻爆发力可能低于预选赛标准，轻微偏"小/慢热"；但 <b>佛得角后防比原假设更弱</b>（Logan Costa 意外落选）→ 轻微偏"大"。两者抵消，<b>3-0 仍是基准剧本，大/小 3.5 这条线依旧是真正的硬币</b>——原结论无需推翻，仅作细化。</div>
+    <div class="insight"><div class="who">② 修正：原"Nico Williams 是无 Yamal 时的宽度主来源"判断 <small>· 明确修正</small></div>赛前速览与关键新闻假设"Yamal 不首发 → Nico Williams 扛起左路宽度"。实际 <b>两名招牌边锋同时坐板凳</b>，先发边路由 Gavi（中场属性）+ Ferran 提供，自然下底与一对一爆点减少。西班牙将更依赖 Pedri 提到 10 号位的中路渗透与 Rodri-Fabián 的控球碾压，而非边路速度——这对"早进球/大球"是轻微利空，对角球大盘（原假设边路下底为主要来源）亦需下修。</div>
+    <div class="insight"><div class="who">③ 佛得角 Logan Costa 落选是本场最大冷门 <small>· 战术信号</small></div>赛前分析把 Costa 列为佛得角"防线核心、唯一具备西班牙顶级联赛（维拉雷亚尔）经验"的支柱。官方先发中卫为 Roberto Lopes + Diney Borges，Costa 在替补席。佛得角"不崩盘"的对抗质量因此打折，西班牙中路渗透与定位球（Laporte/Cubarsí 高点）面对的争顶强度下降 → 失球早破、比分滑向 4-0 的概率较原评估略升。</div>
+
+    <h4 style="margin-top:18px">市场反应</h4>
+    <p style="font-size:13.5px">胜负盘已在地板价（西班牙胜 ≈<b>1.10</b> 欧赔），名单公布无实质移动空间。理论上"双星边锋同时替补"属于会压向<b>大球反向（偏小 3.5）</b>的消息，而"Costa 落选"则反向托高总分——两者方向相反，故对大/小 3.5（大 ≈2.01 / 小 ≈1.91 欧赔）未见单边的确定性推动。<span style="color:var(--mut)">[名单公布后的具体盘口移动未检得确切数值 · 仅作事实陈述，非投注建议]</span></p>
+
+    <div style="font-size:12px;margin-top:12px;color:var(--mut)">来源：<a href="https://www.espn.com/soccer/match/_/gameId/760428" style="color:var(--accent)">ESPN — 比赛页/首发</a> · <a href="https://football-italia.net/world-cup-2026-spain-vs-cape-verde/" style="color:var(--accent)">Football Italia — 官方阵容</a> · <a href="https://worldsoccertalk.com/world-cup/is-lamine-yamal-playing-spain-vs-cape-verde-projected-lineups-for-the-2026-world-cup-group-h-game/" style="color:var(--accent)">World Soccer Talk — 已证实名单</a> · <a href="https://sports.yahoo.com/articles/confirmed-four-barcelona-stars-named-141500871.html" style="color:var(--accent)">Yahoo/Barça Universal — 西班牙细节</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · H组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 3.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>H 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇸 西班牙</th><th>🇨🇻 佛得角</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#1（世界第一）</td><td class="sc">#67</td></tr>
+      <tr><td>世界杯史</td><td class="ht">1次冠军（2010）· 卫冕欧洲杯</td><td class="sc">史上首次参赛（处子秀）</td></tr>
+      <tr><td>近期战绩</td><td class="ht">预选赛6场21球；无 Yamal 3-0 负伊拉克（热身）</td><td class="sc">非洲区不败晋级；首次世界杯参赛</td></tr>
+      <tr><td>主教练</td><td class="ht">Luis de la Fuente</td><td class="sc">Bubista</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.10（隐含≈83%）</td><td class="sc">胜 32.00（≈4%）· 平 7.50（≈13%）</td></tr>
+      <tr><td>大 / 小 3.5 球</td><td colspan="2" class="sc">大 3.5 ≈2.01 / 小 3.5 ≈1.91 · 亚盘西班牙让球 -2.5（线，非赔率）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">史上首次正式交手</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈83/13/4）。Opta 超算给西班牙 87.2% 胜率、平局 8.1%、佛得角 4.8%——与博彩盘口高度吻合。本届赛事最不对称对位之一：西班牙身价、经验、战力全面领先，分歧集中于进球总数与亚盘让球线。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">胜负冷、总分热：西班牙胜几无悬念，资金与分歧全挤进进球数和亚盘市场</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识极强、无情绪溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">胜负几乎没有情绪溢价——西班牙 1.10 已定价极低。媒体唯一的情绪热点是 Yamal 的出场时间，但这更多是舆论叙事而非真正推动盘口的力量。唯一活跃的市场是<b>大/小 3.5 球</b>和<b>亚盘 -2.5</b>——这里才是分歧和资金所在。整体过热度低。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：西班牙胜 全部 · 佛得角 0 · 平 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>西班牙 3-0 大胜</b></td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>西班牙大胜；推荐 Spain Win + Over 3.5</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>西班牙控球碾压；两半场均胜@ 1.65</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>西班牙胜；Martin Green 有具体 Pick</td></tr>
+      <tr><td>Oddspedia SmartBet</td><td>AI 模型</td><td><b>小 3.5 球 @ 1.91</b>（模型给 74% 命中率）</td></tr>
+      <tr><td>Opta 超算</td><td>模型</td><td>西班牙 87.2% 胜率；平 8.1%；佛得角 4.8%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（其实很低）</b>：0 信源押佛得角、0 信源押平——但这是"共识极强、无情绪溢价"的表现，不是过热。真正的分歧在总分：Racing Post/SportsLine 偏大，Oddspedia AI 模型偏小，争议恰好卡在 3.5 这条线上。换言之，<b>3-0 是基准、4-0 是上行、2-0 是下行</b>——进球总数才是本场的实质博弈。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（胜负盘极端单边，DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>西班牙胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>多家综合（FanDuel/BetOnline）</td><td class="ht">≈1.08–1.10</td><td>极端单边，几无移动空间</td></tr>
+      <tr><td>06-13/14</td><td>主流博彩综合</td><td class="ht">1.10（约 1/10）</td><td>稳定；佛得角 32.00、平 7.50</td></tr>
+      <tr><td>06-13/14</td><td>大 3.5 球</td><td class="ht">≈2.01</td><td>对应小 3.5 ≈1.91 —— 唯一有双向资金的市场</td></tr>
+      <tr><td>06-13/14</td><td>亚盘西班牙 -2.5</td><td class="ht">≈1.90</td><td>线为让球线（非赔率）；提示市场认为3球差较合理</td></tr>
+    </table>
+    <div class="note">📌 <b>胜负盘没有"钱在移动"可言</b>：1.10 已近地板价，几乎没有变动空间。所有真实的价格发现都发生在<b>总分与亚盘市场</b>：大/小 3.5 球几乎五五开，亚盘 -2.5 定在合理区间。资金的实质博弈是"3-0 还是 4-0"。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：西班牙约 91%、平约 7%、佛得角约 4%——博彩去水概率（≈83/13/4）与预测市场存在约 8% 差值，说明 Kalshi 市场对西班牙胜率略高于博彩定价，两池间温差极小，整体收敛。Kalshi 另给西班牙 99% 出线率、79% 小组第一概率。</li>
+      <li><b>DefiRate</b>：西班牙整体夺冠赔率已纳入 Yamal 伤情折扣（<span style="color:var(--warn)">单场价格及成交量未检得 · 待核</span>）。</li>
+      <li><b>舆论</b>：媒体叙事 90% 集中在 Yamal 的出场时间与西班牙的"无皇马球员"新试验；佛得角的"非洲小国处子秀"有温情叙事但不产生投注情绪。社交讨论中等，情绪积极无对抗性，没有推动盘口的力量。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场博彩与预测市场高度收敛（≈83–91%）、Yamal 伤情是唯一情绪噪音的比赛，过热指数 <b>2/5</b>。胜负无实质价值，唯一有信息含量的是<b>总分 3.5 球</b>这条线与<b>亚盘 -2.5</b>——专家偏大，模型偏小，中枢卡在 3-4 球区间。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/spain-vs-cape-verde-prediction-team-news-lineups_599107.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/spain-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aicRQ8L439n7/">Racing Post</a> · <a href="https://www.sportsline.com/insiders/spain-vs-cabo-verde-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine</a> · <a href="https://oddspedia.com/football/spain-cape-verde-1654574/predictions">Oddspedia SmartBet</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-spain-vs-cape-verde-06-15-26-world-cup-2026/">Squawka</a> · <a href="https://theanalyst.com/articles/spain-vs-cape-verde-prediction-world-cup-2026-match-preview">The Analyst / Opta</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/spain/">DefiRate</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:11px;font-weight:600;background:#1d4a2a;color:#86efac;border-radius:6px;padding:2px 8px;vertical-align:middle">预测版 · 官方首发见上方 ✅ 模块</span></h2>
+    <div class="sub">以下为<b>赛前预测首发</b>（媒体分析推测，非官方）。<b style="color:var(--good)">官方名单已公布，请见本页上方"✅ 官方首发 &amp; 解读"模块</b>——预测内容保留以作对照。</div>
+    <h4>🇪🇸 西班牙 预测首发（4-3-3）</h4>
+    <div class="lineup">Raya; Porro · Cubarsi · Laporte · Cucurella; Zubimendi · Rodri(C) · Pedri; Dani Olmo · Oyarzabal · Nico Williams</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Rodri (C)</td><td>中场 / 曼城</td><td>世界足球先生；中场组织枢纽、定位球输送</td></tr>
+      <tr><td class="ht">Pedri</td><td>中场 / 巴塞罗那</td><td>传球节奏控制；与 Rodri 共同主导中场走廊</td></tr>
+      <tr><td class="ht">Nico Williams</td><td>左翼 / 毕尔巴鄂</td><td>左侧突破核心；无 Yamal 时进攻宽度主要来源</td></tr>
+      <tr><td class="ht">Lamine Yamal</td><td>右翼（替补） / 巴塞罗那</td><td><b>带伤</b>；预计替补出场 15–20 分钟 · 待核</td></tr>
+    </table>
+    <h4>🇨🇻 佛得角 预测首发（4-4-2 或 5-4-1 低位）</h4>
+    <div class="lineup">Vozinha; S. Moreira · L. Costa · Diney · Paolo; K. Pina · D. Duarte · J. Cabral · Mendes(C); Rodrigues · Livramento</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Ryan Mendes (C)</td><td>进攻中场/边锋 / 职业生涯97帽</td><td>队长；历史出场/进球（22球）双料纪录保持者</td></tr>
+      <tr><td class="sc">Vozinha</td><td>门将（39岁）</td><td>精神领袖；老将门将，本场将承受最高强度射门压力</td></tr>
+      <tr><td class="sc">Logan Costa</td><td>中卫 / 维拉雷亚尔</td><td>防线核心；唯一具备西班牙顶级联赛经验的球员</td></tr>
+      <tr><td class="sc">Dailon Livramento</td><td>前锋</td><td>预选赛进球手；反击端唯一的威胁来源</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Sports Mole），<b>以赛前官方名单为准</b>。Yamal 出场与否及时长以赛前和赛中官方公告为准（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇪🇸 西班牙 · Luis de la Fuente</div>
+        <div class="role">4-3-3 / 4-2-3-1 高位控球 + 边路宽度 + 中路渗透</div>
+        <ul class="cl">
+          <li>卫冕欧洲杯冠军，预选赛 6 场进 21 球——攻势极为犀利，尤其依赖边路速度（Nico Williams / Yamal）拉开防守后中路渗透。</li>
+          <li>本场无 Yamal 先发，Dani Olmo 填右翼，攻势宽度略受限；Rodri-Pedri 双核确保控球率在 60%+，逼迫佛得角始终处于被动。</li>
+          <li>风险（极低）：唯一变量是无 Yamal 先发导致的最终进球数是否达到大 3.5；若 Yamal 替补上场并影响节奏，比分可能迅速膨胀。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇻 佛得角 · Bubista</div>
+        <div class="role">4-4-2 / 5-4-1 低位密集防守 + 快速反击</div>
+        <ul class="cl">
+          <li>带领佛得角完成非洲区预选不败晋级的历史壮举，执教风格偏向组织纪律性；本场目标是低位密集防守、限制失球、争取"有尊严地输"。</li>
+          <li>剧本：双中卫压缩禁区空间，Logan Costa 对位西班牙中锋，Mendes/Livramento 在抢断后利用西班牙高线发动反击。</li>
+          <li>风险：球员个人能力与西班牙差距悬殊，一旦后防被撕开，比分可能快速滑向 4-0/5-0。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">西班牙控球碾压、把佛得角压在半场 → 角球大概率单边倾斜；市场角球大 9.5 @ ≈1.85（约 8/10 折算），西班牙角球让分线约 -5.5 至 -6.5（待核）。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇪🇸 西班牙</th><th>🇨🇻 佛得角</th><th>含义</th></tr>
+      <tr><td>场均获得角球</td><td class="ht">≈6–8（碾压弱旅时可冲 9+）<span style="color:var(--warn)">待核</span></td><td class="sc">≈2–3（弱旅、少持球）<span style="color:var(--warn)">待核</span></td><td>西班牙持球围攻 → 角球产出显著高于对手</td></tr>
+      <tr><td>场均被迫角球</td><td class="ht">≈2–3（高线被反击有限）</td><td class="sc">≈5–7（长期挨打、解围出底线多）<span style="color:var(--warn)">待核</span></td><td>密集防守频繁解围 → 佛得角"送"出大量角球</td></tr>
+      <tr><td>进攻侧重</td><td class="ht">边路下底：Nico Williams + Porro 的重叠；Olmo 中路</td><td class="sc">几乎无组织进攻，仅 Mendes/Livramento 零星反击</td><td>西班牙边路下底是角球主要来源</td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Rodri 输送 + Laporte/Cubarsi 高点</td><td class="sc">低：身高与组织均不占优</td><td>角球不仅多，且转化威胁大</td></tr>
+      <tr><td>角球占优倾向</td><td class="ht">压倒性占优（预计 7–9:2–3）</td><td class="sc">明显劣势</td><td>角球差与控球/射门差同向放大</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球<b>总数</b>：<b>大 9.5 @ ≈1.85</b>（8/10 英赔折合欧赔，来源 Racing Post）；西班牙近5场正式比赛中有4场产生 10+ 角球。对应小 9.5 ≈1.92（<span style="color:var(--warn)">待核</span>，抽水反推）。角球<b>让分</b>：公开源未给确切线，按打法画像合理推断<b>西班牙 -5.5 / -6.5</b>（<span style="color:var(--warn)">待核</span>）。来源：Racing Post Bet Builder、Tips.GG。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>西班牙角球占优几乎是确定性事件——围攻一支低位弱旅，7–9:2–3 是常见区间。但 <b>-5.5/-6.5 的让球线已把这种碾压定价进去</b>：西班牙要赢盘需净多 6–7 角。若佛得角全场摆大巴、频繁解围出底线，佛得角这一侧的角球可能比想象多（被迫角球），压缩净角球差——让球盘并非"白送"。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>西班牙围攻推高总角球数；密集防守解围也"贡献"角球，两股力量都指向<b>偏大</b>。Racing Post 数据显示西班牙近 5 场正式赛 4 场产生 10+ 角球，线偏向大 9.5。但若西班牙早早 3-0 后降速、倒脚而非强攻，角球数会回落。净倾向：温和偏大，但非高确定性。</div>
+    <div class="insight"><div class="who">变量与两面性</div>若西班牙半场前 2-0 领先 → 后段适度收力、De la Fuente 轮换 → 角球产出趋缓；反之若佛得角死守至终场、西班牙持续强攻，角球可能堆叠到 12+。Yamal 替补上场后边路急攻时间点、领先时间点、佛得角的解围方式是三大变量。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/spain-vs-cape-verde-world-cup-bet-builder-tips-picks-and-odds-aMRTp5E5XFBM/">Racing Post — Bet Builder/角球</a> · <a href="https://tips.gg/article/spain-vs-cape-verde-betting-odds/">Tips.GG — 赔率与市场</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：主裁约旦 <b>Adham Makhadmeh</b>（AFC 国际级裁判，曾执法 AFC 亚洲杯）；助理 <b>Mohammad Alkalaf</b> 与 <b>Ahmad Alroalle</b>；第四官员哥伦比亚 <b>Andrés Rojas</b>。本场属 Makhadmeh 首批世界杯执法之一，可查的黄牌/点球倾向样本有限 <span style="color:var(--warn)">[待核]</span>。与两队均无执法历史。</div>
+    <div class="flag">⚠ <b>两面看</b>：在如此悬殊的对位里，裁判对胜负几乎零影响。Makhadmeh 出自 AFC 体系且首登世界杯，判罚尺度样本有限、<b>不构成强信号</b>。理论上若他对佛得角防守球员的拉拽铲球判罚从严，黄牌盘与点球盘有微弱参考价值，但仅作背景。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：佛得角若想靠 Vozinha 拖延节奏，工具被砍——在 0-2/0-3 的局面下意义有限。</li>
+      <li><b>仅队长可与裁判沟通</b>：双方队长 Rodri / Ryan Mendes 经验都不缺。</li>
+      <li><b>半自动越位</b>：西班牙持续高位压迫时越位临界球判得更快——对总分市场略有抑制，但对最终比分影响极小。</li>
+    </ul>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Racing Post <small>· 英系投注媒体</small></div>"西班牙对佛得角是一场几乎没有悬念的比赛"，明确推荐 Spain Win + Over 3.5 Goals 的 Bet Builder 组合，认为西班牙预选赛进球火力在本场有充足释放空间。</div>
+    <div class="insight"><div class="who">Opta / The Analyst <small>· 数据模型</small></div>超算给西班牙 87.2% 胜率；模型中枢比分在 3-0 区间——显示市场共识高度一致，唯一分歧是进球总数是否突破 3.5 这条线。</div>
+    <div class="insight"><div class="who">Oddspedia SmartBet <small>· AI 模型，反向视角</small></div>逆势选小 3.5 球 @ 1.91，给出 74% 命中率——理由是西班牙无 Yamal 先发、进攻效率可能低于预选赛标准；提示这条线并非单边定价，存在真实的"小球"逻辑。</div>
+    <div class="insight"><div class="who">综合 · 佛得角侧画像 <small>· 战术信号</small></div>佛得角不是来抢分的——它的历史已经在出线那一刻完成。本场的"胜利"是体面：把失球控制在个位数低端，避免大崩盘。Logan Costa 和 Vozinha 是"不崩盘"的两根支柱；Ryan Mendes 的经验是中场抗压的精神纽带。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：西班牙 3-0 是基准剧本；4-0 是上行（佛得角防线早破 + Yamal 替补发挥）；2-0 是下行（无 Yamal 先发 + 佛得角低位顽强 + 进球效率偏低）。佛得角取分概率可忽略（≈4%）。</li>
+      <li><b>关键先生</b>：Rodri（西/组织）、Nico Williams（西/左侧突破）、Oyarzabal（西/终结效率）、Logan Costa（佛/防线支柱）、Vozinha（佛/承压门将）。</li>
+      <li><b>胜负手</b>：胜负无悬念；真正的"胜负手"是西班牙的<b>进球节奏与总数</b>——Yamal 替补上场的时机、是否快速破门、De la Fuente 的轮换节点，共同决定最终比分落在 3.5 线哪一侧。</li>
+      <li><b>市场视角</b>：博彩与预测市场高度收敛（≈83–91%），无情绪溢价，过热指数 2/5。唯一有信息含量的市场是<b>大/小 3.5 球</b>；亚盘让球线约 -2.5（线非赔率，保留原值）；角球大 9.5 @ ≈1.85。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Yamal 具体出场时间与健康状态（赛前最终确认）；② 西班牙首发阵型（4-3-3 或 4-2-3-1）；③ 双方预测首发均为媒体分析推测，非官方名单；④ Makhadmeh 本届赛事执法量化数据有限（仅职业历史数据，无本届样本）；⑤ DefiRate / Polymarket 单场价格与成交量未检得；⑥ 佛得角准确 FIFA 排名以 2026 年 6 月最新榜为准（本文用 #67，另有 #69 说法）；⑦ 角球让分线由分析推断，未获博彩商明确报价。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49047205/fifa-world-cup-2026-spain-vs-cape-verde-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 收看方式/裁判/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/spain-vs-cape-verde-prediction-team-news-lineups_599107.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/predicted-lineups/bubista-looking-to-star-man-mendes-how-cape-verde-could-line-up-vs-spain_599110.html">Sports Mole — 佛得角预测首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/spain-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aicRQ8L439n7/">Racing Post — 赔率/投注/前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/spain-vs-cape-verde-world-cup-bet-builder-tips-picks-and-odds-aMRTp5E5XFBM/">Racing Post — Bet Builder/角球</a> · <a href="https://www.sportsline.com/insiders/spain-vs-cabo-verde-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a><br>
+      • <a href="https://theanalyst.com/articles/spain-vs-cape-verde-prediction-world-cup-2026-match-preview">The Analyst / Opta — 超算模型</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-spain-vs-cape-verde-06-15-26-world-cup-2026/">Squawka — 赛前预测</a> · <a href="https://oddspedia.com/football/spain-cape-verde-1654574/predictions">Oddspedia SmartBet — AI 模型</a><br>
+      • <a href="https://www.si.com/soccer/new-lamine-yamal-injury-update-spain-world-cup-opener">SI.com — Yamal 伤情</a> · <a href="https://www.sportsmole.co.uk/football/spain/world-cup-2026/news/yamal-injury-update-as-spain-sweat-on-barca-stars-fitness-before-group-opener_599004.html">Sports Mole — Yamal 伤情</a> · <a href="https://www.goal.com/en-us/lists/barcelona-lamine-yamal-spain-world-cup-availability-hamstring-injury/blt2e6ee87f5776fd24">Goal.com — Yamal 可参赛</a><br>
+      • <a href="https://sports.yahoo.com/articles/spain-v-cape-verde-now-135800875.html">Yahoo Sports — 裁判官宣</a> · <a href="https://worldreferee.com/referee/adham_makhadmeh">WorldReferee — Makhadmeh 档案</a> · <a href="https://www.footymetrics.com/world-cup-2026/referees">FootyMetrics — 裁判数据</a><br>
+      • <a href="https://www.cafonline.com/news/cape-verde-name-historic-world-cup-squad-as-blue-sharks-prepare-for-debut/">CAF Online — 佛得角名单</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/spain/">DefiRate — 预测市场</a> · <a href="https://tips.gg/article/spain-vs-cape-verde-betting-odds/">Tips.GG — 赔率</a> · <a href="https://www.livefootballtickets.com/us/fixtures/match-14-group-h-spain-vs-cabo-verde-tickets-world-cup.html">LiveFootballTickets — H 组确认</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['西班牙胜','平局','佛得角胜'],datasets:[{data:[83,13,4],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 3.5 球','小 3.5 球'],datasets:[{data:[47,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，专家分歧）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['西班牙','乌拉圭','沙特阿拉伯','佛得角'],datasets:[{data:[1,18,56,67],backgroundColor:[HT,'#16a34a','#c1272d',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'西班牙',data:[8,9,9.5,8.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'佛得角',data:[4.5,3.5,3.5,3,4,2],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

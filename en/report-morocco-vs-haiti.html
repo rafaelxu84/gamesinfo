@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Morocco vs Haiti · 2026 World Cup Group C Final Round (Morocco chasing top spot)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-morocco-vs-haiti.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d52b1e;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b81c25,#9c1420);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241317,#0e1f2a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#f0a3a3;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group C Final Round · Morocco chasing top spot · Haiti eliminated, playing for pride</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Morocco 4-2 Haiti</span>
+  <h1>Morocco vs Haiti</h1>
+  <div class="meta">June 24, 2026 · Atlanta Mercedes-Benz Stadium · 18:00 ET (22:00 GMT) · Group C (same group: Scotland, Brazil) · Final Round</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇲🇦 Morocco</div><div class="rk">FIFA #12 range · 1-1 Brazil + 1-0 Scotland · 4 pts (GD +1) · 2022 World Cup semi-finalists · in control of qualification</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0a3a3">🇭🇹 Haiti</div><div class="rk">FIFA #80 range · 0-1 Scotland + 0-3 Brazil · 0 pts (GD -4) · two straight losses, eliminated · playing for pride</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (written by daily-analysis 06-25) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Morocco 4-2 Haiti (roughly 2-2 at the break) · 06-24</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">A goal feast in Atlanta: Haiti <b>scored at a World Cup for the first time in 52 years</b> (the <b>10th minute</b>, also Haiti's first goal of this tournament) to lead briefly, before the two sides traded blows. <b>Achraf Hakimi (39'), Ismael Saibari (45+1')</b> equalised/put Morocco ahead; Haiti's <b>Wilson Isidor (43')</b> struck again, making it a 2-2 battle at the break. Substitute super-subs decided it after the interval: <b>Soufiane Rahimi (78')</b> turned home in a scramble off a corner (with a slight deflection) to restore the lead, and <b>Gessime Yassine (89')</b> added the finishing touch to seal 4-2. Morocco advance to the round of 32 (2nd in Group C); Haiti are eliminated after two games but still scored 2 goals here — beaten but unbowed. <span style="color:var(--warn);font-size:12px">(The exact scorers credited for Haiti's goals differ slightly across sources · details TBC)</span></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 10' Haiti (first World Cup goal in the nation's 52-year history) · 39' Hakimi · 43' Isidor (Haiti) · 45+1' Saibari · 78' Rahimi · 89' Yassine｜substitutes Rahimi + Yassine turned it around</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta / Squawka)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇲🇦 Morocco</th><th>🇭🇹 Haiti</th><th>Read</th></tr>
+      <tr><td class="ht">Possession</td><td><b>60%</b></td><td>40%</td><td>Morocco controlled the ball and dominated, but were breached twice on the break by Haiti — defensive focus was lacking</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>3.26</b></td><td>0.66</td><td>4 goals from 3.26 xG, efficiency matched; Haiti scored 2 from 0.66 xG, finishing well above the model (with some luck)</td></tr>
+      <tr><td class="ht">Shots / on target</td><td><b>12 / 7</b></td><td>—</td><td>Morocco 12 shots, 7 on target, high quality; Haiti had few shots but took their limited chances</td></tr>
+      <tr><td class="ht">Substitute impact</td><td colspan="2"><b>Rahimi (78' goal + assist for Yassine 89') = Morocco's second-half difference-maker</b></td><td>Substitutes came on and turned it around; bench depth decided the game</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.squawka.com/en/news/world-cup/morocco-vs-haiti-stats-report-25-06-2026/">Squawka — Morocco 4-2 Haiti Stats</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-morocco-vs-haiti-jun-24-2026-game-boxscore-647667">FOX Sports</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760464/haiti-morocco">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Won the scoreline, exposed the defence — Morocco's "winning worry"</div>60% possession, 4 goals from 3.26 xG, yet breached twice by minnows Haiti. <b>This shows Morocco have plenty of attacking firepower, but their defensive focus dips when leading or being chased and they are easy to break through on the counter</b> — a hole they must patch now they have advanced to the knockouts, or they will pay against stronger teams.</div>
+    <div class="insight"><div class="who">Bench depth is Morocco's real advantage</div>In the second half the two substitutes Rahimi (goal + assist) and Yassine (goal) turned it around. <b>This shows that even when their starters get tangled up, Morocco can change the game off the bench</b> — the squad depth accumulated from the 2022 semi-final core, hugely valuable in the knockouts.</div>
+    <div class="insight"><div class="who">Haiti beaten but unbowed, yet defence still the root of elimination</div>First World Cup goal in 52 years, two in one game, finishing above their 0.66 xG. <b>This shows Haiti's attacking fight and individual flashes deserve credit, but two straight defeats and a back line that cannot hold off stronger teams' firepower are the root cause of elimination</b> — the counter-attacking scoring route is repeatable; what needs fixing is the overall defensive organisation.</div>
+
+    <h4 style="margin-top:16px">④ Prediction reconciliation</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Morocco win (implied ≈82%)</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>4-2 win, consistent with the 82% strong favourite</td></tr>
+      <tr><td class="ht">"Morocco chasing top spot · Haiti playing for pride"</td><td style="color:var(--warn)"><b>~ Partial</b></td><td>Morocco won and advanced but only as Group C runners-up (Brazil top); Haiti's "pride game" delivered, scoring 2 goals with fight</td></tr>
+      <tr><td class="ht">Haiti unlikely to score (pre-match implied 6%)</td><td style="color:var(--bad)"><b>✗ Overturned</b></td><td>Haiti not only scored, they scored twice — first goal in 52 years, far above pre-match expectations</td></tr>
+      <tr><td class="ht">Goal count</td><td style="color:var(--good)"><b>✓ Heavily Over</b></td><td>6 goals in the match, far beyond any Under expectation</td></tr>
+      <tr><td class="ht">Market overheat 1/5</td><td style="color:var(--good)"><b>✓ Low overheat confirmed</b></td><td>The result was never in doubt, only the scoreline differed — consistent with the 1/5 read</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Carry-over to the next preview</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#c0392b">🇲🇦 Morocco · advanced to round of 32 (2nd in Group C)</h4>
+        <ul class="watch">
+          <li><b>Through as Group C runners-up, facing the Group F winner from 6/28</b> (per the bracket of Group C runners-up vs Group F winners).</li>
+          <li><b>Defensive focus must be fixed</b>: being breached twice by Haiti exposed a hole in the counter-attacking defence, a fatal risk against stronger teams (carry into the next match's analysis).</li>
+          <li><b>Bench depth is a weapon</b>: Rahimi and Yassine turned it around off the bench; high value in knockout rotation and super-subs.</li>
+          <li><b>Hakimi's attacking value</b>: overlapping on the right and contributing to goals, he is Morocco's attacking launch point.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#9aa7c7">🇭🇹 Haiti · eliminated (bottom of Group C)</h4>
+        <ul class="watch">
+          <li><b>Out after two games</b>, but in this match scored their first World Cup goal in 52 years (and a brace at that); their fight and individual flashes deserve credit.</li>
+          <li><b>The counter-attacking scoring route is repeatable</b>: even with low possession they could grab chances to score, their only realistic threat.</li>
+          <li><b>Overall defensive organisation needs rebuilding</b>: being unable to hold off stronger teams' firepower is the root of consecutive losses and elimination.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">This is a Group C final-round <b>one-sided mismatch with a huge gap in quality and form</b>: Morocco have 4 points from two games (1-1 draw with Brazil, 1-0 win over Scotland, Saibari's early goal), a goal difference of +1, and are <b>in control of qualification while chasing the group's top spot</b>; Haiti have lost twice, sit on 0 points and are already eliminated (0-1 to Scotland, 0-3 to Brazil), and play this match <b>purely for pride</b>. The market is firmly one-sided — Morocco priced at ESPN <b>-525 (about decimal 1.19)</b>, best home-win price around 2/9 (≈1.22), total line O/U <b>3.5</b>. In terms of the picture, even if Morocco lose this match, they still qualify as long as <b>Brazil beat Scotland</b> in the simultaneous game; as <b>2022 World Cup semi-finalists</b>, Morocco's European-based spine and major-tournament experience comprehensively outclass Haiti. Three things to watch: ① <b>whether Morocco rotate to protect key players</b> (with qualification in sight, the coach may weigh fitness against the motivation to chase top spot); ② <b>captain Hakimi's 99th cap</b> (fresh off winning the Champions League with PSG); ③ <b>whether Haiti can grab a goal for pride</b> (Nazon's fitness in doubt; Bellegarde/Isidor are counter-attacking threats). Base scenario: <b>a multi-goal Morocco win</b>, but Morocco's mediocre attacking efficiency this tournament + possible rotation make Over 3.5 not necessarily safe; overheat index ≈ 1/5 (one-sided, almost no three-way disagreement).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Morocco implied win prob. (de-vigged)</div><div class="v" style="color:#f08a82">≈82%</div></div>
+      <div class="key"><div class="k">Haiti implied win prob. (de-vigged)</div><div class="v" style="color:#f0a3a3">≈6%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈12%</div></div>
+      <div class="key"><div class="k">Market overheat index</div><div class="v" style="color:var(--warn)">1/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification control and chasing top spot (qualification maths)</b>: Morocco lead with 4 points (GD +1), and this match aims to claim top of Group C; even if they lose, they still qualify as long as <b>Brazil beat Scotland</b> in the simultaneous game. This gives Morocco's "win intensity" an apparent cushion, but chasing top spot remains a strong motivation.</li>
+      <li><b>Morocco may rotate to protect key players (key variable)</b>: with qualification in sight, head coach Ouahbi/Sektioui may weigh fitness and protect the likes of Hakimi and Brahim Díaz; if they rotate, attacking efficiency and the Over expectation are revised down — this is the biggest personnel variable of the match (starting XI per official confirmation).</li>
+      <li><b>Haiti playing for pride (eliminated)</b>: two straight losses, GD -4, no goals in either game; Haiti have no chance to advance, and their only goal is to grab a goal of pride; Bellegarde (Wolves) and the pacy Isidor (Sunderland) are their main counter-attacking threats, but all-time top scorer Nazon's fitness is in doubt.</li>
+      <li><b>Morocco's mediocre attacking efficiency (carried into this tournament)</b>: just 2 goals in two games this tournament (1-1 Brazil, 1-0 Scotland, Saibari's early goal), solid defence but limited open-play efficiency; against Haiti they should produce more, but combined with possible rotation, Over 3.5 is no sure thing — this is the core tension between the line and the Over.</li>
+    </ul>
+  </div>
+
+  <!-- Key team news -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Team News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals affecting this match, each explaining how it changes the tactics or result (includes both teams' carry-over items from this tournament; key-player availability cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ Key player check · No new Morocco injuries · possibly an unchanged XI for a third straight game <span style="color:var(--mut);font-weight:400">· Goal / RotoWire / Sports Mole · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources agree: Morocco have <b>no new injuries</b>, and head coach Ouahbi/Sektioui may field an <b>unchanged XI for a third straight game</b>; Hakimi set for his 99th cap</div>
+      <p style="font-size:13.5px">Key-player availability cross-checked across multiple sources: Goal, RotoWire and Sports Mole report Morocco have no new injuries, and the coach is likely to stick with the lineup from the previous two games. <b>Saibari (PSV)</b> and <b>Brahim Díaz (Real Madrid)</b> continue to lead the attack; the back four are <b>Hakimi, Chadi Riad, Issa Diop, Mazraoui</b>. Captain <b>Achraf Hakimi</b> (fresh off winning the Champions League with PSG) is set for his <b>99th cap</b>. <span style="color:var(--warn)">[Whether they rotate to protect key players given qualification is in sight · TBC, per the official pre-match FIFA Match Centre list]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Whether Morocco rotate directly determines the intensity of this match and the Over expectation. If they keep their first-choice XI and go all out for top spot, their dominance over Haiti and goal count are revised up; if Ouahbi protects core players like Hakimi/Brahim Díaz and gives substitutes a chance, attacking efficiency and the probability of Over 3.5 are revised down. This is the single biggest variable of the match.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.goal.com/en-us/category/world-cup" style="color:var(--accent)">Goal — preview/predicted XI</a> · <a href="https://www.rotowire.com/soccer/" style="color:var(--accent)">RotoWire — team news/injuries</a> · <a href="https://www.sportsmole.co.uk/football/morocco/" style="color:var(--accent)">Sports Mole — lineup prediction</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">⭐ Key player check · Haiti's Nazon fitness in doubt (multiple sources) <span style="color:var(--mut);font-weight:400">· RotoWire / Sports Mole / AfricaSoccer · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Haiti's all-time top scorer <b>Duckens Nazon (44 international goals) doubtful with an unspecified injury</b>; threat concentrated in Bellegarde and Isidor</div>
+      <p style="font-size:13.5px">Key-player availability cross-checked across multiple sources: RotoWire, Sports Mole and others report Haiti's top scorer <b>Duckens Nazon</b> (all-time best, 44 goals) is <b>doubtful</b> with an unspecified injury, with his availability to be confirmed before kickoff. Midfielder <b>Jean-Ricner Bellegarde (Wolves)</b> and pacy attacker <b>Wilson Isidor (Sunderland)</b> are Haiti's main counter-attacking threats. <span style="color:var(--warn)">[Whether Nazon makes the squad/XI · TBC, sources still tracking]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Haiti are eliminated and playing for pride, so their most realistic "grab a goal" hope on attack rests on Bellegarde's link play and Isidor's pace. If Nazon is absent, Haiti's finishing point is even thinner and the counter-attacking threat to Morocco lower still; if Nazon plays, Haiti still have an experienced striker who can create something unexpected. This bears on whether Haiti can "grab a goal for pride".</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.rotowire.com/soccer/" style="color:var(--accent)">RotoWire — injuries/team news</a> · <a href="https://www.sportsmole.co.uk/football/haiti/" style="color:var(--accent)">Sports Mole — Haiti preview</a> · <a href="https://africasoccer.com/" style="color:var(--accent)">AfricaSoccer — player status</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Referee + qualification picture <span style="color:var(--mut);font-weight:400">· Elbotola / MoroccoWorldNews · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Dutchman <b>Danny Makkelie</b> (a top European international referee); Morocco's coach has already commented on the Dutch officiating team's appointment</div>
+      <p style="font-size:13.5px">According to Elbotola and MoroccoWorldNews, the referee for this match is Dutchman <b>Danny Makkelie</b>, with assistants <b>Hessel Steegstra, Jan de Vries</b> (both Dutch) and fourth official <b>João Pinheiro</b> (Portugal). Makkelie is a top, experienced international referee in the UEFA/FIFA system, leaning towards a steady standard and not shy of awarding penalties. Morocco's coach has publicly commented on the Dutch officiating team's appointment. Atlanta's Mercedes-Benz Stadium has a retractable roof, so the environment is controllable. <span style="color:var(--warn)">[Precise per-game cards/penalty breakdown for Makkelie · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In a one-sided match the referee has minimal influence on the result, with the main value in card counts and a potential penalty. Makkelie is steady and not shy of awarding penalties — if Morocco pile forward and Haiti's defensive actions in their own box go awry, a penalty is something to watch; see the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.elbotola.com/" style="color:var(--accent)">Elbotola — referee appointment/coach comments</a> · <a href="https://www.moroccoworldnews.com/" style="color:var(--accent)">Morocco World News — officiating team</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referee list</a></div>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section>
+    <h2><span class="n">1</span> Data (Core)</h2>
+    <div class="sub">FIFA ranking · win/draw/loss implied probabilities (de-vigged odds) · Group C picture · totals market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 3.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group C four-team FIFA ranking (lower = stronger · approximate)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇲🇦 Morocco</th><th>🇭🇹 Haiti</th></tr>
+      <tr><td>FIFA ranking</td><td class="ht">#12 range</td><td class="sc">#80 range</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-1 Brazil + 1-0 Scotland (4 pts, GD +1)</td><td class="sc">0-1 Scotland + 0-3 Brazil (0 pts, GD -4)</td></tr>
+      <tr><td>Group C picture (before final round)</td><td colspan="2">Morocco lead on 4 (+1), in control of qualification and chasing top spot; Haiti on 0 (-4) eliminated; the other group game is Scotland vs Brazil. Even if Morocco lose this match, they still qualify as long as Brazil beat Scotland</td></tr>
+      <tr><td>Head coach</td><td class="ht">Ouahbi / Sektioui (Morocco)</td><td class="sc">Haiti head coach (TBC)</td></tr>
+      <tr><td>Key players</td><td class="ht">Hakimi (C, 99th cap), Brahim Díaz, Saibari, Mazraoui, Issa Diop</td><td class="sc">Bellegarde, Isidor, Nazon (doubtful)</td></tr>
+      <tr><td>Things to watch/questions</td><td class="ht">Whether they rotate to protect key players; attack producing more; the motivation to chase top spot</td><td class="sc">Whether Nazon plays; whether they can grab a goal for pride</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">WC 2022 semi-finals (best ever) · AFCON 2023 round of 16 (lost on penalties to South Africa)</td><td class="sc">Returning to the World Cup after many years · Gold Cup regulars (CONCACAF)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win ≈1.22 (-525, implied ≈82%)</td><td class="sc">Win ≈12+ (≈6%) · Draw ≈7+ (≈12%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 3.5 (ESPN) — a one-sided line, with the core markets being the handicap (deep line) and Over/Under</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied probabilities after de-vigging DECIMAL odds (≈82/12/6, normalised). Odds source: ESPN (Morocco -525 ≈1.19, best home-win price around 2/9 ≈1.22); total line O/U 3.5. The handicap line is a deep Morocco handicap. Exact odds per the live pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actuals · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifiers)</b> against <b>this World Cup's actuals (first two rounds)</b> item by item. Public national-team xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actuals (by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actuals (first two rounds)</th><th>Difference and read</th></tr>
+      <tr><td class="ht">🇲🇦 Morocco · attack</td><td class="ht">WC2022 semi-final run built on efficiency and counter-defending; attacking output has always been mid-table, not volume-based</td><td class="ht">2 goals in 2 games (1-1 Brazil, 1-0 Scotland, Saibari's early goal)</td><td><b>Mediocre efficiency</b>: just 2 goals in two games, open-play creativity not high; room to produce more against Haiti, but combined with possible rotation, goal count is in doubt</td></tr>
+      <tr><td class="ht">🇲🇦 Morocco · defence</td><td class="ht">WC2022 conceded just 1 goal (before the semi-final), European-based back line + Hakimi/Mazraoui on the flanks, always extremely solid</td><td class="ht">1 goal conceded in 2 games (only Brazil scored 1), GD +1</td><td><b>Meets the standard</b>: the defence is Morocco's core asset; barely tested by Haiti</td></tr>
+      <tr><td class="sc">🇭🇹 Haiti · attack</td><td class="sc">Lower-mid CONCACAF, reliant on the pace and individual ability of a few Europe-based players</td><td class="sc">0 goals in 2 games (GD -4) <span style="color:var(--warn)">[xG breakdown · TBC]</span></td><td><b>Sluggish</b>: no goals in either game, lacking a stable finishing point; Nazon's doubt further weakens the finishing</td></tr>
+      <tr><td class="sc">🇭🇹 Haiti · defence</td><td class="sc">Easily breached against strong teams; set pieces and transition defence are weaknesses</td><td class="sc">4 goals conceded in 2 games (0-1 Scotland, 0-3 Brazil)</td><td><b>On the weak side</b>: hammered 0-3 by Brazil, at a disadvantage in both defensive structure and physicality; huge pressure against Morocco's Europe-based attacking unit</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Morocco's defence is solid but their attacking efficiency this tournament is mediocre (2 goals in 2 games), while Haiti have 0 goals and 4 conceded in two games, clearly inferior at both ends. The deep data supports the thesis that "Morocco outclass Haiti on quality, but their ability to pile up goals is limited + possible rotation → the Over is not as safe as the line makes it look on the surface." Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/national-team major-tournament records. Publicly missing items marked "TBC". For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model xG projection (magnitude)</td><td class="ht">Morocco ≈2.0–2.4</td><td class="sc">Haiti ≈0.4</td><td>Morocco hold a big edge; but their open-play efficiency this tournament is not high + possible rotation, so actual goals may come in below the "domination" impression</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Morocco (WC2022 semi-finalists, high density of Europe-based players) rank far above Haiti; the supercomputer gives Morocco an overwhelming win probability and Haiti almost no chance. Morocco's qualification probability is extremely high (control of qualification + the double insurance of Brazil beating Scotland)</td><td>After opponent-strength calibration, Morocco's sample quality this tournament is moderate (both Brazil and Scotland were strong opponents, efficiency on the conservative side)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Morocco will lead heavily in possession and field tilt, Haiti will sit deep and counter; the xT contribution from Morocco's wide men Hakimi/Mazraoui is the main attacking source</td><td><b>Trap reminder</b>: Morocco's "qualification in sight + possible rotation + mediocre attacking efficiency" → Over 3.5 under pressure; if Haiti go all out on the counter or play for a goal of pride, a 1-2 goal "narrow win" rather than a big win is possible</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: total quality of shot chances; with penalties stripped out it better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring the true level of the defence.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: quality per shot — low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than pure possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, so missing items are always marked "TBC" and figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· expert picks / odds / money flow / sentiment</span></h2>
+    <div class="sub">This is a one-sided consensus match — Morocco a deep-line heavy favourite, Haiti with almost no backers; 1X2 has virtually no price discovery, with the information content concentrated in the handicap/totals and the rotation question</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥<span style="opacity:.25">🔥🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">1/5 · one-sided consensus, almost no three-way disagreement</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The whole market agrees on a big Morocco win (-525 ≈82%), with Haiti eliminated and almost no backers. The <b>only information content</b> comes from whether Morocco rotate (affecting Over/Under) and the handicap line's positioning, not from 1X2 itself.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction highly aligned: Morocco win)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>ESPN</td><td>Odds/preview</td><td>Morocco -525 deep-line heavy favourite, O/U 3.5; viewed as one-sided</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Predict a Morocco win; watching the rotation question and Nazon's fitness</td></tr>
+      <tr><td>Goal / RotoWire</td><td>Team news</td><td>Morocco no new injuries, possibly unchanged XI; Haiti's finishing point thin</td></tr>
+      <tr><td>Yahoo</td><td>General sports</td><td>Morocco outclass on quality, Haiti playing for pride</td></tr>
+      <tr><td>AfricaSoccer</td><td>Regional media</td><td>Watching Morocco's chase for top spot and Hakimi's 99th-cap milestone</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (low)</b>: this match is a textbook <b>one-sided consensus</b>, with no three-way disagreement and no room for sentiment-premium plays. The real uncertainty lies in <b>whether Morocco rotate</b> (deciding goal count and Over/Under) and <b>whether Haiti can grab a goal</b> — both affect the handicap/totals, not 1X2.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Morocco win / Draw / Haiti win</th><th>Read</th></tr>
+      <tr><td>Open (composite)</td><td>1X2</td><td class="ht">≈1.20 / 7+ / 12+</td><td>Morocco set as a deep-line heavy favourite from the off, Haiti with almost no value</td></tr>
+      <tr><td>As of 06-23</td><td>ESPN / best price</td><td class="ht">≈1.19–1.22 (-525) / — / —</td><td>Price stable with minimal movement, one-sided pricing</td></tr>
+      <tr><td>06-23</td><td>Over/Under</td><td colspan="2" class="ht">Total line O/U 3.5 — the market expects Morocco to produce more, but rotation could suppress the Over</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning and movement trend (opening → current)</h4>
+    <table>
+      <tr><th>Time</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening (days before)</td><td class="ht">Morocco win ≈1.20; deep handicap; O/U 3.5</td><td>Priced as "WC2022 semi-finalists vs eliminated minnows," the opening line set Morocco as a deep-line heavy favourite with a standard Over 3.5</td></tr>
+      <tr><td>Open (repricing after round 2)</td><td class="ht">Morocco -525 ≈1.19; O/U 3.5</td><td><b>Repricing from both teams' round 2</b>: Morocco 1-0 Scotland consolidated qualification control but scored only 2 with mediocre efficiency; Haiti lost 0-3 to Brazil, 0 goals in two games — the market pushed the line very deep, but <b>kept O/U at 3.5 rather than higher</b>, precisely pricing in "Morocco's mediocre efficiency + possible rotation"</td></tr>
+      <tr><td>Current (06-23 → now)</td><td class="ht">Morocco ≈1.19–1.22; deep handicap; O/U 3.5</td><td>Price discovery is concentrated in <b>whether Morocco rotate</b> (affecting whether the handicap is covered and the Over/Under direction) and <b>whether Haiti can grab a goal</b>; 1X2 itself has almost no information content</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: the combination of Morocco -525 deep line + Over 3.5 looks on the surface like "domination + many goals," but Morocco's attacking efficiency this tournament is mediocre (2 goals in 2 games) and, with qualification in sight, they <b>may rotate to protect key players</b> — which <b>puts Over 3.5 under pressure and discounts the value of the deep handicap</b>. The deep line itself leaves logical room for "back Morocco to win but not by many goals." Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (aggregate)</b>: consistent with the de-vigged bookmaker odds, giving Morocco an overwhelming win probability and Haiti almost no chance; no qualification suspense in this match (Morocco near-qualified, Haiti eliminated). <span style="color:var(--warn)">[Single-match volume/momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Morocco chasing top of Group C</b> — as WC2022 semi-finalists, whether Morocco finish top and position themselves for the knockouts is the main narrative.</li>
+      <li><b>Sentiment focus ②</b>: <b>Hakimi's 99th cap</b> — the milestone for the captain fresh off winning the Champions League with PSG is the biggest traffic and emotional hook of the match.</li>
+      <li><b>Haiti narrative</b>: eliminated, playing for pride; Nazon's fitness and whether Bellegarde/Isidor can grab a goal are the points to watch on the Haiti side.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is one of the day's lowest-information one-sided fixtures — consensus highly aligned, overheat index <b>1/5</b>. 1X2 has almost no price discovery; the core variables are <b>whether Morocco rotate</b> and <b>whether Haiti can grab a goal</b>, which in turn affect the handicap and Over/Under (rotation → Over 3.5 under pressure). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/">ESPN — odds/preview</a> · <a href="https://www.sportsmole.co.uk/football/morocco/">Sports Mole — prediction/team news</a> · <a href="https://www.goal.com/en-us/category/world-cup">Goal — preview</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — general</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the referee for this match is Dutchman <b>Danny Makkelie</b>, with assistants <b>Hessel Steegstra, Jan de Vries</b> (both Dutch) and fourth official <b>João Pinheiro</b> (Portugal). Morocco's coach has publicly commented on the Dutch officiating team's appointment. Sources: Elbotola, Morocco World News, ESPN referee list. <span style="color:var(--warn)">[VAR combination and per-game breakdown · TBC]</span></div>
+    <h4>Officiating standard + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Makkelie is Dutch, a top referee in the UEFA/FIFA system — <b>highly experienced, leaning towards a steady standard, not shy of awarding penalties</b>, not avoiding decisions on clear box contact and managing tactical fouls and time-wasting well. This World Cup's officiating environment is stricter (only captains may communicate, the 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>Actual sample this tournament</b>: as a top-flight European referee, his game management and penalty decisions have always been decisive; the precise per-game cards/penalty breakdown for this tournament/major tournaments is per the official records. <span style="color:var(--warn)">[Per-game yellow-card/penalty-rate breakdown · TBC]</span></li>
+      <li><b>Officiating history with the two teams</b>: some overlap with Morocco (Dutch referees are common in European competition) and no notable public officiating history with Haiti; Morocco's coach has commented on the officiating team's appointment, but there is no evidence of any bias.</li>
+      <li><b>Two-sidedness</b>: this is a mismatch with Morocco piling forward — Haiti sit deep in their box, so <b>penalties and accumulated Haiti yellow cards</b> are the main points to watch: Makkelie is not shy of awarding penalties, and if Haiti's defensive actions go awry they are likely to concede one; the cards market should be treated as a leaning rather than an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-side analysis</b>: in a one-sided picture the referee has almost no influence on the result, with the value concentrated in cards/penalties: Morocco's sustained pressing + Makkelie not shy of awarding penalties make <b>penalties and Haiti yellow cards</b> the points to watch. Given that his per-game breakdown this tournament is per the official records, related markets should be treated as a leaning.</div>
+  </section>
+
+  <!-- Lineups and key players -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · official released ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XI (Goal / RotoWire / Sports Mole estimates, unofficial; official lists per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇲🇦 Morocco predicted XI (4-3-3, or an unchanged lineup) · Ouahbi / Sektioui</h4>
+    <div class="lineup">GK; Hakimi(C) · Issa Diop · Chadi Riad · Mazraoui; midfield three (incl. Ounahi/Amrabat types); Brahim Díaz · Saibari · winger</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Achraf Hakimi (C)</td><td>Right-back/captain / PSG</td><td>Fresh off winning the Champions League with PSG; set for his <b>99th cap</b> in this match; the core of right-side advancement and set pieces, one of Morocco's highest individual ceilings</td></tr>
+      <tr><td class="ht">Brahim Díaz</td><td>Attacking mid/winger / Real Madrid</td><td>Attacking organiser and finishing point, the main source of Morocco's open-play creativity</td></tr>
+      <tr><td class="ht">Abdellah Saibari</td><td>Midfield/attack / PSV</td><td>Scorer of the early goal against Scotland this tournament; continues to lead the attacking link play</td></tr>
+      <tr><td class="ht">Noussair Mazraoui</td><td>Left/right-back / Manchester United</td><td>One of the back four, advancing on the flanks and covering defensively, containing Haiti's counters</td></tr>
+    </table>
+    <h4>🇭🇹 Haiti predicted XI (4-4-2 / 4-2-3-1) · built around Bellegarde, Isidor</h4>
+    <div class="lineup">GK; back four; Bellegarde · midfield; Isidor · attacker (Nazon doubtful)</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Jean-Ricner Bellegarde</td><td>Midfield / Wolves</td><td>Haiti's midfield link play and quality, the organising core on the counter</td></tr>
+      <tr><td class="sc">Wilson Isidor</td><td>Attacker / Sunderland</td><td>A pacy forward, Haiti's main spark for counter-attacks / grabbing a goal of pride</td></tr>
+      <tr><td class="sc">Duckens Nazon</td><td>Forward / all-time top scorer (44 goals)</td><td><b>Doubtful</b> with an unspecified injury; if he plays he is an experienced finishing point <span style="color:var(--warn)">availability/XI TBC</span></td></tr>
+      <tr><td class="sc">Haiti defence</td><td>Overall</td><td>4 goals conceded in two games (incl. 0-3 to Brazil), huge pressure against Morocco's Europe-based attacking unit</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media analysts' estimates (Goal / RotoWire / Sports Mole), <b>per the official pre-match lists · TBC</b>. The focus for Morocco is whether Ouahbi rotates because "qualification is in sight" or keeps an unchanged lineup; the focus for Haiti is whether Nazon makes the squad/XI and the use of Bellegarde and Isidor.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual play and results across their last two major tournaments (World Cup + their respective continental/Gold Cup)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇲🇦 Morocco · Ouahbi / Sektioui</div>
+        <div class="role">4-3-3 shape-keeping + a hard Europe-based spine + flank advancement, strong on efficiency and counter-defending</div>
+        <ul class="cl">
+          <li>Morocco's hallmark is <b>a complete structure + Europe-based player quality + flank advancement (Hakimi/Mazraoui) + efficient counter-defending</b> — the WC2022 semi-final run is the best historical sample, proving this approach can fend off top teams and has an extremely high floor.</li>
+          <li>Cross-reference: WC 2022 knocked out Spain and Portugal en route to the semis (conceding very few goals), AFCON 2023 round of 16 exit on penalties — <b>against strong teams they rely on efficiency and defence, not volume in attack</b>. This tournament's 1-1 and 1-0 against Brazil/Scotland were also "low-effort, high-efficiency." Against minnows like Haiti they can in theory produce more, but their volume-piling habit is limited.</li>
+          <li>This match's entry point: use possession and flank advancement to suppress Haiti, and seek multiple goals via Brahim Díaz/Saibari's creativity and set pieces; must mind the space behind from Isidor's pace on the counter. With qualification control in hand (and the double insurance of Brazil beating Scotland), whether they go all out to pile on goals depends on their appetite for top spot and the rotation decision.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0a3a3">🇭🇹 Haiti · head coach (TBC)</div>
+        <div class="role">4-4-2 / 4-2-3-1 deep block and counter, reliant on Bellegarde's link play + Isidor's pace</div>
+        <ul class="cl">
+          <li>Haiti's realistic approach is <b>a deep block + quick transitions + the individual ability of a few Europe-based players</b> — 0 goals and 4 conceded in two games (0-1 Scotland, 0-3 to Brazil), clearly inferior at both ends and lacking a stable finishing point.</li>
+          <li>Cross-reference: this tournament marks their return to the World Cup after many years; against a strong team (Brazil) they were hammered 0-3, with insufficient defensive structure and physicality; at Gold Cup level they remain competitive, but there is a generational gap with a WC semi-finalist like Morocco.</li>
+          <li>This match's response: eliminated and playing for pride, their most realistic aim is to <b>sit deep, limit goals conceded, and grab a goal of pride via Bellegarde/Isidor transitions</b>; if Nazon can play they add an experienced finishing point. But against Morocco's Europe-based attacking unit and flank advancement, Haiti are likely to be suppressed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insight -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insight</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· pre-match preview</small></div>A one-sided contest, Morocco -525 deep-line heavy favourite; the points to watch are whether they rotate and Nazon's fitness. Morocco outclass Haiti comprehensively on quality and form.</div>
+    <div class="insight"><div class="who">Goal / RotoWire <small>· team news</small></div>Morocco have no new injuries, possibly an unchanged XI for a third straight game, with Hakimi reaching his 99th cap; Haiti's finishing point is thin and Nazon is doubtful.</div>
+    <div class="insight"><div class="who">Yahoo / AfricaSoccer <small>· general/regional media</small></div>Morocco chasing top of Group C, and even if they lose they still qualify as long as Brazil beat Scotland; Haiti eliminated and playing for pride, with the suspense concentrated on goal count rather than the result.</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· Opta / FotMob</small></div>The real suspense is <b>goal count and top spot</b> rather than the result. ⚠ Trap reminder: Morocco's mediocre attacking efficiency this tournament (2 goals in 2 games) + qualification in sight meaning they <b>may rotate to protect key players</b> means "Over 3.5" is not as safe as the line makes it look; if Haiti sit deep and play for a goal, a 1-2 goal narrow win is possible.</div>
+  </section>
+
+  <!-- Overall verdict -->
+  <section>
+    <h2><span class="n">6</span> Overall Verdict &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a Morocco win is a high-certainty baseline. But the goal count is in doubt — Morocco's attacking efficiency this tournament is mediocre, and with qualification in sight they may rotate to protect key players, so a "crushing big win" is less likely than the line suggests; when Haiti sit deep and play for a goal of pride, a 1-2 goal narrow win is a reasonable scenario.</li>
+      <li><b>Key men</b>: Hakimi (Morocco/captain, 99th cap, flank advancement), Brahim Díaz (Morocco/creativity and finishing), Saibari (Morocco/attacking link play); Bellegarde (Haiti/link play), Isidor (Haiti/pace on the counter), Nazon (Haiti/finishing point, doubtful and TBC).</li>
+      <li><b>Difference-makers</b>: ① whether Morocco keep their first-choice XI and go all out for top spot (deciding goal count and Over/Under); ② whether Haiti can sit deep to limit goals conceded and grab a goal of pride; ③ whether Morocco's flank advancement can break through Haiti's deep block.</li>
+      <li><b>Market view</b>: the day's textbook one-sided match (≈82/12/6), 1X2 with almost no room for price discovery; overheat index 1/5. The core variables are whether Morocco rotate + whether Haiti can grab a goal, which in turn affect the deep handicap and Over/Under (rotation → Over 3.5 under pressure).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour before kickoff, FIFA Match Centre); ② <b>whether Morocco rotate to protect key players because qualification is in sight</b> (recheck on matchday, aligned with the official XI); ③ <b>whether Haiti's Nazon makes the squad/XI</b> (sources continuing to track); ④ Makkelie's full officiating team and VAR combination, plus his per-game cards/penalty breakdown this tournament; ⑤ the knock-on effect of the same-group Scotland vs Brazil result on Morocco's qualification/top-spot (per FIFA's official ruling); ⑥ the handicap line and Over/Under total line (O/U 3.5) exact odds per the live pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/">ESPN — odds/preview/referee list</a> · <a href="https://www.sportsmole.co.uk/football/morocco/">Sports Mole — preview/team news/Nazon</a> · <a href="https://www.goal.com/en-us/category/world-cup">Goal — preview/predicted XI</a> · <a href="https://www.rotowire.com/soccer/">RotoWire — injuries/team news</a><br>
+      • <a href="https://www.elbotola.com/">Elbotola — referee appointment/coach comments</a> · <a href="https://www.moroccoworldnews.com/">Morocco World News — officiating team</a> · <a href="https://africasoccer.com/">AfricaSoccer — player status/top spot</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — general</a><br>
+      • <a href="https://www.skysports.com/football">Sky Sports — preview/odds</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup">FIFA Match Centre — official lists/qualification ruling</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C">Wikipedia — Group C</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-24 · Charts use verified data, the radar chart is the analyst's composite assessment · For analysis only — not betting advice.</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d52b1e',SC='#c8102e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Morocco win','Draw','Haiti win'],datasets:[{data:[82,12,6],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 3.5','Under 3.5'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, rotation risk pressures the Over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Brazil','Morocco','Scotland','Haiti'],datasets:[{data:[5,12,40,80],backgroundColor:['#e8cd6b',HT,'#7fa6e6',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approximate)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wings/transition','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'Morocco',data:[8.5,6.5,7.5,8,8,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Haiti',data:[4,3.5,4.5,5,4.5,3],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

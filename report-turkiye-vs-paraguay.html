@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 土耳其 vs 巴拉圭 · 2026世界杯 D组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-turkiye-vs-paraguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-turkiye-vs-paraguay.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-turkiye-vs-paraguay.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-turkiye-vs-paraguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-turkiye-vs-paraguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-turkiye-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-turkiye-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-turkiye-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · D组次轮 · 两支首轮失利队的生死战</span>
+  <span class="badge" style="background:linear-gradient(90deg,#14532d,#1d3a63);margin-left:6px">🏁 已完赛 · 比分 土耳其 0-1 巴拉圭</span>
+  <h1>土耳其 vs 巴拉圭</h1>
+  <div class="meta">2026年6月19日 · 圣克拉拉 Levi's 体育场 · 21:00 当地 / 12:00 ET（北京时间 6/20 凌晨）· D组（同组：美国、澳大利亚）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇹🇷 土耳其</div><div class="rk">欧洲杯2024八强 · Montella 高位逼抢 · Güler/Çalhanoğlu 领衔技术流</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇵🇾 巴拉圭</div><div class="rk">时隔16年重返世界杯 · Alfaro 纪律防反 · Almirón/Enciso 反击支点</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-20） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 土耳其 0-1 巴拉圭 · 06-19</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">巴拉圭用 <b>71 秒</b> 改写了整场比赛：Galarza 接 Enciso 做球在禁区外一脚远射破门（ESPN 计时 1:05），<b>本届世界杯迄今最快进球</b>。此后土耳其全面掌控球权却始终无法将控球转化为破门。半场补时（45+3'）巴拉圭核心 <b>Almirón 因"冲突中捂嘴"被红牌罚下</b>——这是 IFAB 新规（"Prestianni 条款"）在世界杯首次落地，萨尔瓦多主裁 Iván Barton 经 VAR 复核出牌。<b>巴拉圭由此用 10 人苦撑整个下半场并 1-0 守住</b>：门将 Orlando Gill 接连扑出 Demiral、Bardakcı、Can Uzun 的射门，配合 Alderete、Gustavo Gómez 的禁区封堵零封过关。该结果直接<b>淘汰土耳其（两战皆负、提前出局）</b>，并<b>确认美国锁定 D 组头名</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 1' Galarza(巴, 助攻 Enciso) · 45+3' 🟥 Almirón(巴, 捂嘴冲突/VAR) · 半场 0-1 · 下半场巴拉圭 10 人防守 · 终场 0-1</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇹🇷 土耳其</th><th>🇵🇾 巴拉圭</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>81%</b></td><td>19%</td><td>极端控球碾压却 0 球——控球完全没换来破门，验证了赛前"破密集是唯一胜负手"的隐忧</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>2.10</b></td><td>0.32</td><td>2.10 xG 颗粒无收，终结与最后一传严重低效；巴拉圭 0.32 xG 进 1 球＝把唯一机会一击致命</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>32 / 5</b></td><td>7 / 2</td><td>32 射仅 5 中靶——大量低质远射与被封堵，缺乏穿透禁区的高质量机会</td></tr>
+      <tr><td class="ht">传球 / 成功率</td><td><b>704 / 90%</b></td><td colspan="1">—</td><td>513 脚传向对方半场——横传倒脚多、纵向直塞少，典型"控而不破"</td></tr>
+      <tr><td class="ht">角球</td><td><b>11</b></td><td>少</td><td>11 角球未转化，定位球同样哑火；巴拉圭高大中卫把第二落点全部清空</td></tr>
+      <tr><td class="ht">红牌</td><td>0</td><td><b>1（Almirón 45+3'）</b></td><td>巴拉圭少打一人 45+ 分钟仍零封——防守纪律是本场真正的 MVP</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/turkiye-vs-paraguay-stats-fifa-world-cup-2026-live">Opta Analyst — 赛后 stats</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760443/paraguay-turkiye">ESPN 比赛页</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-turkiye-vs-paraguay-jun-19-2026-game-boxscore-647644">FOX Sports Boxscore</a>（≥2 源核验）</div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"控而不破"从隐忧变成定局</div>赛前主线就点名土耳其"首轮控球 64% 却 0-2 负澳大利亚、纵向穿透缺失"。本场 81% 控球、32 射、2.10 xG 仍 0 球——横传倒脚多、纵向直塞少。<b>说明 Montella 这套以 Güler/Çalhanoğlu 为轴的技术流，面对收缩低位块缺少决定性的最后一传与禁区终结手段</b>，是结构性而非偶然问题。</div>
+    <div class="insight"><div class="who">巴拉圭把"防反"做到了极致版本</div>71 秒闪击 + 0.32 xG 进 1 球 + 少打一人零封——这是 Alfaro 纪律防反体系的理想剧本：早进球锁住比赛、低位块吸收压力、门将 Gill 高光收尾。<b>说明这支巴拉圭的上限不在控球或创造，而在"抓住一次机会 + 集体防守抗压"</b>，与首轮 1-4 负美国（被对攻打穿）形成镜像对照——他们打弱于自己的对手会吃亏，打需要他们防守的对手反而舒服。</div>
+    <div class="insight"><div class="who">一张"规则红牌"反而成全了防守剧本</div>Almirón 因捂嘴被罚下看似灾难，但巴拉圭少打一人后被迫全员退防、彻底放弃控球野心，反而让低位块更纯粹。<b>说明在领先且擅长防守的球队身上，减员有时会"简化任务"</b>——但这也暴露纪律隐患：新规下任何冲突中的捂嘴动作都是直红，球员情绪管理成为新课题。</div>
+    <div class="insight"><div class="who">土耳其的定位球与边路是空白点</div>11 个角球 + 大量传中全部被巴拉圭高大中卫（Alderete/Gómez）清空，Plan B 完全失效。<b>说明土耳其除了中路技术渗透外，没有可靠的"破铁桶"备用方案</b>——下一场即便对手换成美国，这个短板依旧存在。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">土耳其窄胜（隐含 ≈47%）</td><td style="color:var(--bad)"><b>✗ 落空</b></td><td>市场与站内均看好土耳其，结果 0-1 输球——本场是<b>对账中的明显冷门</b>，赔率约 +280/+320 的巴拉圭兑现</td></tr>
+      <tr><td class="ht">基准比分 土耳其 1-0 / 2-1</td><td style="color:var(--bad)"><b>✗ 落空</b></td><td>方向与比分双错，土耳其颗粒无收</td></tr>
+      <tr><td class="ht">小 2.5 球（≈58%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>全场仅 1 球，小球读数正确——这是本场对账中唯一命中的主线</td></tr>
+      <tr><td class="ht">第一胜负手＝土耳其能否破密集</td><td style="color:var(--good)"><b>✓ 判断正确</b></td><td>正是这一点决定了比赛：81% 控球破不了门，赛前点名的暴露点完全应验</td></tr>
+      <tr><td class="ht">巴拉圭早失球硬伤</td><td style="color:var(--warn)"><b>~ 反转</b></td><td>赛前担心巴拉圭早丢球，实战却是<b>巴拉圭 71 秒早进球</b>——攻守身份互换</td></tr>
+    </table>
+    <div class="note" style="margin-top:10px">📌 诚实标注：胜负与比分主线落空，这是一场<b>市场冷门</b>。命中的是"小球"与"破密集是胜负手"两条战术读数——方向判断对，结果押错。长期对账只陈述兑现/偏差。</div>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f08a82">🇹🇷 土耳其 · 下一场 vs 美国（6/25 英格尔伍德 SoFi 球场）</h4>
+        <ul class="watch">
+          <li><b>已数学出局</b>：两战皆负、提前淘汰，对美国之战已是荣誉之战（美国已锁 D 组头名，大概率轮换）——比赛性质决定双方投入度。</li>
+          <li><b>破密集短板待解</b>：81% 控球 0 球的问题若不修正，面对可能退防的美国轮换阵容仍会重演；定位球/边路 Plan B 缺失是核心待补点。</li>
+          <li><b>Yıldız 体能与阵容试验</b>：出局后 Montella 或借此场试验 Yıldız、年轻球员，为后续周期练兵。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇵🇾 巴拉圭 · 下一场 vs 澳大利亚（6/25 圣克拉拉 Levi's 球场）· 出线生死战</h4>
+        <ul class="watch">
+          <li><b style="color:var(--warn)">Almirón 停赛缺阵</b>：红牌导致他无缘对澳大利亚的关键战——反击体系失去做球/突击支点，Alfaro 须重新搭配 Enciso 周边的进攻终端。</li>
+          <li><b>同积 3 分的直接对话</b>：巴拉圭（3 分、净胜球 -2）vs 澳大利亚（3 分、净胜球 0）是 D 组次名之争，平局对净胜球占优的澳大利亚更有利，巴拉圭可能需要取胜。</li>
+          <li><b>防反剧本可复制但需进球</b>：低位块 + 一击致命本场奏效，但缺 Almirón 且必须主动拿分时，能否在"既要防守又要进球"间平衡是最大考题。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是<b>两支首轮失利队的生死战</b>：土耳其（欧洲杯2024八强、Montella 的高位逼抢 + Güler/Çalhanoğlu 技术流）首轮 <b>0-2 爆冷负澳大利亚</b>，巴拉圭（时隔16年重返世界杯、Alfaro 纪律防反）首轮 <b>1-4 惨负美国</b>——两队同积 0 分，本场告负基本提前出局。盘口倾向土耳其但非碾压：土耳其胜约 <b>1.95–2.00</b>（美线 -105/+100），平局 <b>3.40</b>（+240），巴拉圭胜约 <b>3.80–4.20</b>（+280/+320）；去水隐含约 <b>土耳其 47% / 平 28% / 巴拉圭 25%</b>。最大共识仍在<b>小球方向</b>：小 2.5 球 <b>1.71</b>（-140）/ 大 2.5 球 <b>2.15</b>（+115），市场模型给小球约 55–62%。基准剧本：<b>土耳其凭个人质量窄胜（1-0/2-1）</b>，但巴拉圭的 Enciso 反击 + Alfaro 低位块若稳住，平局是真实尾部风险。胜负手是土耳其能否破巴拉圭的密集防守——这恰是其首轮对澳大利亚最大的暴露点。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">土耳其隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈47%</div></div>
+      <div class="key"><div class="k">小球隐含概率</div><div class="v" style="color:#7fa6e6">≈58%</div></div>
+      <div class="key"><div class="k">两队首轮积分</div><div class="v" style="color:var(--warn)">0 / 0</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>土耳其能否破密集（上一场带入）</b>：首轮控球 64% 却 0-2 负澳大利亚，纵向穿透缺失——对同样低位死守的巴拉圭若不解决，剧本恐重演，是本场第一胜负手。</li>
+      <li><b>Kenan Yıldız 体能存疑</b>：小腿伤令其首轮无法首发，本场仍可能仅替补登场——他在不在，直接决定土耳其进攻上限，担子或落到 Güler 身上。</li>
+      <li><b>Julio Enciso 的反击创造力（上一场带入）</b>：巴拉圭首轮唯一进球由他做球，是 Alfaro 反击体系的支点；土耳其须避免"被反击打反击"。</li>
+      <li><b>巴拉圭早失球硬伤（上一场带入）</b>：首轮 45 分钟内连丢 3 球，被打穿后转换防守崩盘——对擅长前场施压的土耳其是致命点，开局 20 分钟决定走向。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 赛前最新 · 出线生死战 <span style="color:var(--mut);font-weight:400">· Sky Sports / MLSSoccer / Yahoo · 06-18/19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">两队首轮双双告负、同积 0 分——<b>本场负者基本提前出局</b>；土耳其主场（圣克拉拉）以微弱让球热门姿态出战</div>
+      <p style="font-size:13.5px">D 组首轮战罢，美国 4-1 巴拉圭、澳大利亚 2-0 土耳其，美澳两队 6 分领跑，土耳其与巴拉圭 0 分垫底。次轮这场直接对话中，告负一方几乎注定出局，逼平也将令出线形势岌岌可危——这是一场必须抢分的生死战。盘口上土耳其凭整体技术优势成微弱热门（美线 -105/+100，约合欧赔 1.95–2.00），但鉴于双方均需进取、巴拉圭擅长反击，盘口比一般"强弱对话"更接近。<span style="color:var(--warn)">（赔率随盘口实时变动，以开赛前为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：生死战属性意味着双方都不能保守——这对一向偏防反的巴拉圭是两难（必须冒险前压，却又最怕被反击），对控球但缺穿透的土耳其则是考验（必须打破对手密集防守）。两队都需赢的结构，使比赛可能比纸面盘口更开放，也放大了先进球一方的心理与战术优势。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13543088/world-cup-2026-group-d-guide-fixtures-schedule-standings-and-odds-for-usa-paraguay-australia-and-turkey" style="color:var(--accent)">Sky Sports — D 组形势/赔率</a> · <a href="https://www.mlssoccer.com/news/2026-fifa-world-cup-group-d-preview-usa-australia-paraguay-turkey" style="color:var(--accent)">MLSSoccer — D 组前瞻</a> · <a href="https://sports.yahoo.com/articles/turkey-vs-paraguay-prediction-world-145000483.html" style="color:var(--accent)">Yahoo — 前瞻/最佳投注</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">🔁 上一场带入 · 土耳其 0-2 负澳大利亚 <span style="color:var(--mut);font-weight:400">· Sky Sports / ESPN / FIFA · 06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>控球占优却无穿透</b>——首轮 0-2 爆冷负澳大利亚，破密集是必须解决的硬伤</div>
+      <p style="font-size:13.5px">土耳其首轮在温哥华 BC Place 0-2 不敌澳大利亚（Irankunda 27'、Metcalfe 75'），尽管控球与场面占优，但缺乏纵向穿透、终结低效，澳门将 Patrick Beach 一人 8 次扑救。<b>「上一场带入」</b>：本页对土耳其首轮赛后的前瞻迁移已点名——① 必须解决破密集（对同样会低位死守的巴拉圭恐重演）；② Yıldız 伤情是进攻上限的关键变量；③ 心理重整、避免被反击打反击。这些问题在本场对巴拉圭直接复现。<span style="color:var(--warn)">（首轮数据来自 Sky/ESPN 报道 · 待核细项）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拉圭的看家本领正是低位密集块（Alfaro 体系），与击败土耳其的澳大利亚高度同构。若土耳其拿不出比首轮更利落的破密集手段（Güler 直塞、边路一对一、定位球），极可能再度陷入"控而不破"的困局，平局风险随之上升。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver" style="color:var(--accent)">Sky Sports — 澳 2-0 土战报</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760421" style="color:var(--accent)">ESPN — 比赛分析</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/australia-turkiye-highlights-match-report" style="color:var(--accent)">FIFA — 官方战报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">🔁 上一场带入 · 巴拉圭 1-4 负美国 <span style="color:var(--mut);font-weight:400">· Al Jazeera / Sports Mole · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>45 分钟连丢 3 球</b>——被打穿后转换防守崩盘是致命点；唯一进球出自 Enciso 做球</div>
+      <p style="font-size:13.5px">巴拉圭首轮 1-4 惨负美国，上半场即连丢 3 球，被打穿后阵型拉扯、转换防守失控；全场唯一亮点是 Julio Enciso 做球制造的进球。<b>「上一场带入」</b>：本页对巴拉圭首轮赛后前瞻迁移已点名——① 必须避免早失球（对同样擅攻的土耳其是致命点）；② Enciso 可用，应围绕他建立反击；③ 低位块需重建信心，否则出线形势极被动。Alfaro 预计回归更保守的 4-4-2、加强中场屏障止血。<span style="color:var(--warn)">（首轮细项以 Al Jazeera/Sports Mole 报道为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴拉圭的出线命脉在于把比赛拖入低分、靠 Enciso/Almirón 反击偷分。但首轮证明，一旦早早丢球，其低位块会崩。土耳其若能延续场面压制并率先破门，巴拉圭被迫压上、反而暴露反击空当——这正是土耳其个人质量最能兑现的剧本。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/12/usa-vs-paraguay-world-cup-2026-group-match-trump-schedule-lineups" style="color:var(--accent)">Al Jazeera — 美 vs 巴拉圭</a> · <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/predicted-lineups/almiron-and-enciso-lead-la-albirroja-lineup-predicted-paraguay-xi-vs-turkey_599450.html" style="color:var(--accent)">Sports Mole — 巴拉圭首发/队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">土耳其 · Kenan Yıldız 体能 + 预测首发 <span style="color:var(--mut);font-weight:400">· Sports Mole / Rotowire / beIN · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Yıldız 小腿伤未完全康复</b>，本场或仍仅替补登场；Çalhanoğlu、Güler 健康可用</div>
+      <p style="font-size:13.5px">尤文图斯边锋 Kenan Yıldız 赛季末受小腿伤困扰，首轮无法首发，本场能否打满 90 分钟仍存疑，可能再次以替补身份登场。队长 Çalhanoğlu（中场组织 + 定位球）与 Arda Güler 健康可用。Montella 预计沿用 4-2-3-1：Çakır；Çelik、Demiral、Bardakcı、Kadıoğlu；Çalhanoğlu、Yüksek；Barış Alper Yılmaz、Güler、（Yıldız 或 Kökçü）；Aktürkoğlu/Gül 居锋线。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Yıldız 是土耳其前场最具突破与终结上限的点。若其继续受限，破巴拉圭密集防守的担子将更多压在 Güler 的组织与 Çalhanoğlu 的定位球上——这恰是首轮"控而不破"问题的延续，Yıldız 能否首发是本场进攻上限的直接开关。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/turkey/world-cup-2026/predicted-lineups/yildiz-doubt-persists-for-montella-predicted-turkey-lineup-vs-paraguay_599445.html" style="color:var(--accent)">Sports Mole — Yıldız 存疑/首发</a> · <a href="https://www.rotowire.com/soccer/article/turkey-vs-paraguay-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-118661" style="color:var(--accent)">Rotowire — 首发/战术</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/t%C3%BCrkiye-s-possible-lineup-to-face-paraguay-in-the-fifa-world-cup-2026-2026-06-18" style="color:var(--accent)">beIN — 土耳其可能首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">巴拉圭 · 伤情 + 预测首发 <span style="color:var(--mut);font-weight:400">· Sports Mole / Khel Now · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Ramón Sosa 脚踝伤、Gustavo Caballero 肌肉伤存疑；<b>Almirón + Enciso 领衔反击</b></div>
+      <p style="font-size:13.5px">巴拉圭面临多处体能/伤情隐患：Ramón Sosa 受脚踝伤困扰、Gustavo Caballero 因肌肉问题已缺首轮、本场仍存疑。Alfaro 预计回归务实 4-4-2：Gill；Alonso、Alderete、Gustavo Gómez、Cáceres；Almirón、Bobadilla、Cubas、Diego Gómez；Sanabria、Enciso。核心是 Newcastle 出身的 Almirón 作为体系支点 + Enciso 的反击创造力。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Sosa 若缺阵会削弱巴拉圭边路速度（反击宽度），令进攻更集中于 Enciso 与 Almirón 的中路串联。Alfaro 的 4-4-2 双中场屏障（Cubas + Bobadilla）是首轮崩盘后的止血方案——能否锁住中路、保护转换防守，决定巴拉圭能否把比赛拖进低分区。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/predicted-lineups/almiron-and-enciso-lead-la-albirroja-lineup-predicted-paraguay-xi-vs-turkey_599450.html" style="color:var(--accent)">Sports Mole — 巴拉圭首发/伤情</a> · <a href="https://khelnow.com/football/world-football-paraguay-predicted-lineup-vs-turkiye-fifa-world-cup-202606" style="color:var(--accent)">Khel Now — 巴拉圭预测首发</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水） · D组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>D 组四队首轮积分</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇹🇷 土耳其</th><th>🇵🇾 巴拉圭</th></tr>
+      <tr><td>首轮结果 / 积分</td><td class="ht">0-2 负澳大利亚 · 0 分</td><td class="sc">1-4 负美国 · 0 分</td></tr>
+      <tr><td>近两届大赛</td><td class="ht">欧洲杯2024 八强（负荷兰）· 欧预赛附加晋级</td><td class="sc">美洲杯2024 小组出局（3 负）· 南美预选第 6 晋级</td></tr>
+      <tr><td>大赛体系</td><td class="ht">4-2-3-1 / 3-4-3 高位逼抢、技术流</td><td class="sc">4-4-2 纪律防反（Alfaro 上任后重塑）</td></tr>
+      <tr><td>主教练</td><td class="ht">Vincenzo Montella</td><td class="sc">Gustavo Alfaro</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈1.95–2.00（隐含≈47%）</td><td class="sc">胜 ≈3.80–4.20（≈25%）· 平 3.40（≈28%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 @ 2.15（+115）/ 小 2.5 @ 1.71（-140）—— 市场偏向小球（隐含≈58%）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Çalhanoğlu · Güler · Yıldız（体能存疑）</td><td class="sc">Almirón · Enciso · Sanabria</td></tr>
+      <tr><td>关键伤停 / 存疑</td><td class="ht">Kenan Yıldız（小腿伤·或仅替补，待核）</td><td class="sc">Sosa（脚踝）· Caballero（肌肉，待核）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈47/28/25）。赔率来源（06-18/19 多平台聚合）：土耳其约 -105/+100（DraftKings +105、FanDuel +100、BetMGM +100、Caesars -102），换算欧赔约 1.95–2.00；平局 +240（3.40）；巴拉圭 +280~+320（3.80–4.20）。大小球线 2.5：Over +115（2.15）/ Under -140~-160（1.71–1.63）。多模型给小球概率约 55–62%，与市场去水概率（≈58%）一致。赔率随盘口实时变动，以开赛前为准（待核）。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（土耳其＝欧预选 / 欧洲杯2024；巴拉圭＝南美预选 / 美洲杯2024 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限且 PPDA/xT 等不公开，缺失项标"待核"，绝不编造数值。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇹🇷 土耳其 · 进攻 xGF/进球</td><td class="ht">欧预选 10 场 <b>xGF 1.59/场</b>、实进 <b>1.8/场</b>（射门 13.2、射正 6.2、控球 55%、转化 14%）——终结<b>过表现</b>（进球 &gt; xG）</td><td class="ht">首轮 0-2 负澳：<b>30 脚射门、0 进球</b>（2006 后世界杯单场不进球射门最多），Güler 一人 8 射</td><td>射门量爆表但<b>本届进攻效率塌方</b>：从"过表现"跌到"控而不破"。预选光鲜的进球数（1.8）很大程度靠弱旅 + 终结运，本场 30 射 0 球暴露真实终结软肋</td></tr>
+      <tr><td class="ht">🇹🇷 土耳其 · 防守 xGA/失球</td><td class="ht">欧预选 <b>xGA 1.22/场</b>、丢 1.0/场、零封率 40%（但曾 0-6 负西班牙、0-3 负匈牙利）</td><td class="ht">首轮被澳打入 2 球（无运动战进球，靠定位/转换）</td><td><b>贴近历史中游水平</b>：防线非顽疾但也非长板，对手一旦高效转换即被惩罚——与"领先后管理崩盘"无关，本场失球更多源于进攻无果后的失衡</td></tr>
+      <tr><td class="sc">🇵🇾 巴拉圭 · 进攻 xGF/进球</td><td class="sc">2025 热身 10 场 <b>xGF 1.12/场</b>、实进 1.1/场（射门 10.5、射正 3.6、控球仅 38%、转化 10%）——终结轻微<b>欠表现</b></td><td class="sc">首轮 1-4 负美：<b>xG ≈0.47</b>、1 球（Enciso 做球）</td><td><b>远低于</b>本就不高的历史基准（0.47 vs 1.12）——这是被美国压制下的低产；但热身样本含金量需打折（见②）</td></tr>
+      <tr><td class="sc">🇵🇾 巴拉圭 · 防守 xGA/失球</td><td class="sc">立身之本＝防守纪律：<b>18 场南美预选无一场丢 2+ 球</b>，含击败阿根廷、巴西；热身 xGA 1.11/场、零封率 40%</td><td class="sc">首轮 <b>半场即 0-3</b>（追平此前 16 场世界杯上半场总失球）、全场丢 4；16 次高位被断（1966 后最多）</td><td><b>剧烈劣于</b>历史长板：转换防守与高位被压全面崩盘。这是"被强强对手打穿"的崩盘，并非常态——Alfaro 体系的真实底色仍是低失球（陷阱提醒见②）</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：两队本届实际值都<b>低于</b>各自历史基准——土耳其从预选的"终结过表现"跌到 30 射 0 球的效率塌方；巴拉圭则在防守端（半场 0-3）崩出历史最差。<b>但样本对手强弱迥异</b>：土耳其 1.59 xGF 多来自弱旅欧预选（曾 0-6 负西班牙），巴拉圭的真实底色来自 18 场南美预选无一场丢 2+ 球（含赢阿根廷/巴西）——首轮 1-4 是被东道主美国打穿的极端值，<b>陷阱提醒：勿用这一场给巴拉圭防守定性</b>。来源：FootyStats 球队页（<a href="https://footystats.org/clubs/turkey-national-team-8002" style="color:var(--accent)">土耳其</a>／<a href="https://footystats.org/clubs/paraguay-national-team-8678" style="color:var(--accent)">巴拉圭</a>，xGF/xGA/射门/控球/零封）· <a href="https://theanalyst.com/articles/turkiye-vs-paraguay-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst</a>（首轮 xG/30 射 0 球/半场 0-3/16 次高位被断）。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>Opta 超算 胜/平/负</td><td class="ht">土耳其 <b>49.4%</b></td><td class="sc">平 26.9% / 巴拉圭 <b>23.7%</b></td><td>与去水赔率（≈47/28/25）高度一致；土耳其微弱热门，但"平局对谁都不利"使双方都需进取</td></tr>
+      <tr><td>本场投射 xG（基准画像）</td><td class="ht">土耳其 ≈<b>1.4–1.6</b></td><td class="sc">巴拉圭 ≈<b>0.8–1.0</b></td><td>按两队历史 xGF/xGA 交叉（土耳其攻 1.59 vs 巴拉圭守 1.11；巴拉圭攻 1.12 vs 土耳其守 1.22）校准——土耳其投射占优但非碾压<span style="color:var(--warn)">（模型投射·待核官方 xGscore）</span></td></tr>
+      <tr><td>样本对手强弱校准</td><td colspan="2" class="sc">土耳其 xGF 1.59 含弱旅红利（欧预选小分队多）；巴拉圭 1.12 来自强敌热身（巴西/墨西哥/日韩）+ 含金量高的南美预选</td><td><b>陷阱提醒</b>：巴拉圭原始数据被低估——其 38% 控球下仍能压住失球，是务实防反的"质量信号"，非单纯弱</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt · PSxG · 定位球 xG 占比</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性代理：土耳其高控球（55%）+ 高位逼抢主导 field tilt；巴拉圭低控球（38%）被迫低位、靠转换偷分；土耳其定位球（Çalhanoğlu 主罚 + Demiral/G.Gómez 争顶）是双方共同的 xG 放大器</td><td>场面倾斜大概率长时间倒向土耳其；但巴拉圭转换威胁不可忽视</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理（土耳其 ≈+0.37、巴拉圭 ≈+0.01）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差（土耳其 ≈0.12、巴拉圭 ≈0.11）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 FootyStats（球队页 xGF/xGA/射门/控球/零封）+ Opta Analyst（首轮 xG/超算）等公开来源；国家队在 PPDA/xT/field tilt/PSxG/定位球 xG 占比等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。衍生指标（xGD/90、xG per shot）由公开 xGF/xGA 与场均射门推算。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">土耳其胜方向获多数专家支持但非碾压（两队均需赢、盘口接近）；真正的共识在小球；巴拉圭"以小博大"是反向资金的主要切入点</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 偏好土耳其但盘口接近、无单边过热</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">两队均需取胜的生死战属性，使盘口比一般"强弱对话"更接近（土耳其仅 -105/+100），专家方向温和倾向土耳其、并无狂热单边资金；唯一较硬的共识在小球（Under 2.5）。情绪不高，过热指数 2/5。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：土耳其胜 多数 · 平局 部分 · 巴拉圭胜 少数）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>土耳其窄胜</b>（个人质量决定）</td></tr>
+      <tr><td>Yahoo Sports</td><td>预测/投注媒体</td><td>土耳其抢分续命；巴拉圭可凭 Enciso 反击偷分</td></tr>
+      <tr><td>Sports Interaction</td><td>投注媒体</td><td>土耳其胜；倾向<b>小 2.5 球</b></td></tr>
+      <tr><td>Sportscasting（超算）</td><td>模型聚合</td><td>土耳其微弱热门；小球概率 55–62%</td></tr>
+      <tr><td>BetMGM</td><td>博彩前瞻</td><td>土耳其 +100；Under 2.5 -140</td></tr>
+      <tr><td>Total Football Analysis</td><td>战术媒体</td><td>土耳其高位压、巴拉圭低位反击；进球数有限</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：胜负方向温和倾向土耳其，但因双方均需赢、盘口接近，无单边狂热。最一致的共识在 <b>小 2.5 球</b>；分歧主要在"土耳其能否净胜"（让球盘）与"巴拉圭能否守平"。属合理定价、低情绪溢价。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL / 美线对照）</h4>
+    <table>
+      <tr><th>时点 / 平台</th><th>市场</th><th>土耳其胜</th><th>解读</th></tr>
+      <tr><td>开档聚合</td><td>1X2（ML）</td><td class="ht">-105/+100 ≈ 1.95–2.00</td><td>微弱热门；平 +240（3.40）/ 巴拉圭 +280~+320（3.80–4.20）</td></tr>
+      <tr><td>DraftKings</td><td>1X2</td><td class="ht">+105 ≈ 2.05</td><td>个别平台土耳其甚至非热门，印证盘口接近</td></tr>
+      <tr><td>多平台</td><td>大 / 小 2.5 球</td><td colspan="2" class="ht">Over +115（2.15）/ Under -140~-160（1.71–1.63）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>土耳其 -0.5</td><td colspan="2" class="sc">土耳其 -0.5 约对应主盘水位（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘在 -105 与 +105 之间游走，几乎是掷硬币级别的微弱倾斜，说明市场认为这是一场接近的生死战。最有共识的资金在 <b>小 2.5 球</b>（Under -140~-160）——两队首轮共丢 6 球但本场都更需谨慎，模型与盘口都倾向低进球。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率（DECIMAL）</th><th>定位变化 · 触发</th></tr>
+      <tr><td>赛前（赛事开盘）</td><td class="ht">小组头名：土耳其 +175（2.75）· 美国 +125（2.25）· 巴拉圭 +400（5.00）· 澳大利亚 +850（9.50）</td><td>土耳其为该组明显热门档（仅次于东道主美国），"黑马"标签；出线概率约 73%</td></tr>
+      <tr><td>本场开盘（次轮 6/19）</td><td class="ht">1X2（ML）：土耳其 +105/-105（1.95–2.05）· 平 +230（3.30）· 巴拉圭 +280（3.80）</td><td>受首轮 <b>土耳其 0-2 负澳大利亚</b>（爆冷）冲击，已从"明显热门"被压到接近平盘（准 pick'em）</td></tr>
+      <tr><td>目前现盘</td><td class="ht">1X2：土耳其约 -105/+100（1.95–2.00）· 出线 futures：巴拉圭约 +130（2.30，扩军三名出线红利）· 小组头名：巴拉圭已跌至 +2800（29.00，<4%）</td><td>土耳其仅微弱受捧；巴拉圭 <b>1-4 负美国</b> 后小组头名定位进一步坍塌，仅靠扩军后第三名出线通道续命</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：土耳其经历了一次清晰的"明显热门 → 准平盘"重新定价——赛前以 +175（2.75）领跑小组头名（仅次美国），0-2 不敌澳大利亚后，本场胜负盘被压到 -105/+100 的掷硬币区间。巴拉圭则在 1-4 惨败美国后，小组头名赔率崩到 +2800、转而依赖 48 队扩军格式下的第三名出线红利（出线 ≈+130）。两队目前在市场眼中同处"生死战、互不让步"档：<b>土耳其仅微弱受捧，市场已不再视其为稳赢方</b>，巴拉圭则是定价更低但并未被判出局的搏命方。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>超算/模型</b>：Sportscasting 等模型给土耳其微弱胜率优势、小球概率 55–62%，与博彩去水概率（≈47/28/25 + 小球 58%）方向一致，无明显偏离。</li>
+      <li><b>舆论焦点</b>：两队"首轮爆冷/惨败 + 生死战"叙事是主线；土耳其的 Yıldız 体能、巴拉圭首轮防线崩盘是被讨论最多的变量；未见显著推动盘口的单边资金。</li>
+      <li><b>反向视角</b>：部分投注媒体点出巴拉圭 +1.5 让球 / 平局有价值——基于"两队均需赢、巴拉圭擅守反击、土耳其破密集存疑"的逻辑。</li>
+      <li><b>Kalshi / Polymarket</b>：具体单场胜负概率与成交量未公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与模型方向收敛但倾斜温和，过热指数 <b>2/5</b>。土耳其因整体技术优势被列微弱热门，但盘口接近反映出"生死战 + 巴拉圭擅守反击 + 土耳其破密集存疑"的真实不确定性。最有信息含量的市场是<b>小球 2.5</b>（偏 Under）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://sports.yahoo.com/articles/turkey-vs-paraguay-prediction-world-145000483.html">Yahoo — 前瞻/最佳投注</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/turkiye-vs-paraguay-odds-prediction-062026-217111">Sports Interaction — 赔率/预测</a> · <a href="https://www.sportscasting.com/news/turkey-vs-paraguay-predictions-world-cup-betting-picks-odds/">Sportscasting — 超算预测</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/turkey-vs-paraguay-prediction-odds-preview-world-cup-june-19-bm16/">BetMGM — 赔率/前瞻</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/turkey-v-paraguay-predictions">Total Football Analysis — 战术预测</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">土耳其持球与前场施压会主导角球产出，巴拉圭低位防守、解围出底线频繁；按近两届大赛打法画像估算，市场具体盘口待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇹🇷 土耳其</th><th>🇵🇾 巴拉圭</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">控球 + 高位逼抢；边路推进与传中较多（首轮控球 64%）</td><td class="sc">低位防反；直接长传找 Sanabria/Enciso；主动进攻少</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈5–7（控球围攻型，角球产出偏高）<span style="color:var(--warn)">待核</span></td><td class="sc">≈3–5（多数时间防守，解围出底线常见）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Çalhanoğlu 顶级主罚 + Demiral/Bardakcı 争顶</td><td class="sc">中：Gustavo Gómez 头球点；任意球输送一般</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显占优（持球围攻、对方收缩解围）</td><td class="sc">被迫失角较多（长时间防守解围出底线）</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：土耳其控球围攻 + 巴拉圭被动收缩，土耳其角球数预计明显多于巴拉圭；总角球数可能落在 8–11 区间，常见基准线 O/U 9.5 或 10.5 均属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>土耳其控球与施压优势明确，角球让球（如土耳其 -1.5/-2）有现实基础——巴拉圭主动进攻少、角球来源主要是反击与零星传中。若巴拉圭被迫长时间防守，土耳其角球占优会更明显。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>土耳其的围攻属性会推升总角球数（高于双防守型对话）；但巴拉圭进攻产出极低，会压低己方一侧。综合预期总角球数中等偏上（约 9–11），若土耳其早早破门、巴拉圭被迫压上，反击转换增多，角球数可能进一步上行。</div>
+    <div class="insight"><div class="who">变量与两面性</div>比分进程是最大变量：若土耳其 1-0 领先后收紧、控制节奏，角球数趋稳；若久攻不下持续围攻（首轮"控而不破"剧本重演），土耳其一侧角球会堆高但转化率低。Çalhanoğlu 的定位球质量是土耳其把角球转化为进球的关键放大器。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>当值主裁</b>：<b>Iván Barton</b>（萨尔瓦多，1991 年生于 Santa Ana，2018 年成为 FIFA 国际级裁判）。最近两届大赛画像：① <b>2022 卡塔尔世界杯</b>执法两场——小组赛英格兰 vs 塞内加尔、巴西 vs 瑞士，是当届来自 CONCACAF 的代表性主裁；② 长期执法美洲金杯、CONCACAF 国家联赛、CONCACAF 冠军联赛（2022 冠军联赛决赛首回合 西雅图海湾人 vs UNAM 一场判给 3 个点球，显示对禁区接触判罚不手软）。其针对土耳其、巴拉圭两队的具体执法样本有限 <span style="color:var(--warn)">（待核）</span>。</div>
+    <h4>本届统一执法新规（对本场参考意义）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：巴拉圭若领先想拖延、收缩防守，拖延工具有限；土耳其需赢、急于推进，反而受益于快节奏新规。</li>
+      <li><b>仅队长可与裁判沟通</b>：土耳其队长 Çalhanoğlu、巴拉圭队长 Gustavo Gómez——两人均资深、适应新规无压力。</li>
+      <li><b>半自动越位</b>：判罚更快更准，巴拉圭防线越位陷阱与土耳其的临界前插都将被精准捕捉。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Barton 有金杯/冠军联赛执法南美与北中美球队的丰富经验，对身体对抗的判罚（冠军联赛决赛 3 点球样本）相对果断——这对一场<b>必有身体对抗（巴拉圭防反）+ 禁区拉扯（土耳其定位球围攻）</b>的生死战有现实意义：若土耳其在禁区前沿/角球混战中被犯规，点球/黄牌概率会随其尺度而上升，对急需进球的土耳其相对有利。但无两队直接大赛样本，裁判面仅作参考、不构成可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇹🇷 土耳其 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Çakır; Çelik · Demiral · Bardakcı · Kadıoğlu; Çalhanoğlu · Yüksek; B. A. Yılmaz · Güler · Yıldız/Kökçü; Aktürkoğlu</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Hakan Çalhanoğlu (C)</td><td>中场 / 国际米兰</td><td>队长、节拍器；定位球主罚；土耳其攻防转换的轴心</td></tr>
+      <tr><td class="ht">Arda Güler</td><td>前腰/边 / 皇家马德里</td><td>欧洲杯2024 既进球又助攻的天才；Yıldız 受限时进攻创造担子加重</td></tr>
+      <tr><td class="ht">Kenan Yıldız</td><td>边锋 / 尤文图斯</td><td>进攻上限点；小腿伤令首轮无法首发，本场或仅替补（待核）</td></tr>
+      <tr><td class="ht">Merih Demiral</td><td>中卫 / 利雅得新月</td><td>后防核心；高空争顶与定位球进攻威胁兼备</td></tr>
+    </table>
+    <h4>🇵🇾 巴拉圭 预测首发（4-4-2）</h4>
+    <div class="lineup">Gill; Alonso · Alderete · G. Gómez (C) · Cáceres; Almirón · Bobadilla · Cubas · D. Gómez; Sanabria · Enciso</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Miguel Almirón</td><td>中场 / 亚特兰大联</td><td>Alfaro 体系支点；前 Newcastle 球员；预选赛标志性人物</td></tr>
+      <tr><td class="sc">Julio Enciso</td><td>前锋/前腰 / 布莱顿</td><td>反击创造引擎；首轮做球制造唯一进球；围绕他建立反击</td></tr>
+      <tr><td class="sc">Andrés Cubas</td><td>后腰 / 温哥华白浪</td><td>中场拦截屏障；首轮崩盘后止血、保护转换防守的关键</td></tr>
+      <tr><td class="sc">Gustavo Gómez (C)</td><td>中卫 / 帕尔梅拉斯</td><td>队长、防线领袖；定位球头球威胁点</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / Khel Now / beIN），<b>以赛前官方名单为准</b>。Kenan Yıldız 体能存疑、或仅替补（待核）；巴拉圭 Sosa（脚踝）、Caballero（肌肉）出战存疑（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇹🇷 土耳其 · Vincenzo Montella</div>
+        <div class="role">4-2-3-1（必要时变 3-4-3）高位逼抢 + 技术流控制</div>
+        <ul class="cl">
+          <li>欧洲杯2024 带队闯入八强（小组次名出线、16 强 2-1 险胜奥地利、八强 1-2 负荷兰），打出全场最具观赏性的高强度进攻足球；当时让多名 00 后（Güler、Yıldız）挑大梁，淘汰赛一度改打 3-4-3、Güler 充当伪九号。</li>
+          <li>核心是 Çalhanoğlu 在中场的组织与定位球、Güler/Yıldız 的个人突破与最后一传，依靠控球 + 高位逼抢压制对手（首轮控球 64%）。</li>
+          <li>风险（上一场带入）：首轮 0-2 负澳大利亚暴露"控球无穿透"——对同样低位死守的巴拉圭若不解决破密集（Yıldız 体能又存疑），剧本恐重演，最怕急躁压上后被反击。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇵🇾 巴拉圭 · Gustavo Alfaro</div>
+        <div class="role">4-4-2 纪律防反 + Almirón/Enciso 反击决胜</div>
+        <ul class="cl">
+          <li>"教授" Alfaro 于 2024 年 8 月接手（前任 Garnero 在美洲杯2024 小组三连败后下课），迅速把混乱的阵容重塑为高度组织的防守整体，靠纪律防守在南美预选以第 6 名（7 胜 7 平 4 负）拿下时隔 16 年的世界杯门票。</li>
+          <li>体系以 Almirón 为支点的 4-4-2，中场双屏障（Cubas + Bobadilla）保护防线，靠 Enciso 的反击创造力与 Sanabria 的支点偷分。</li>
+          <li>风险（上一场带入）：首轮 1-4 负美国、45 分钟连丢 3 球，证明一旦早失球低位块会崩——本场必须避免早失球、重建低位块信心，否则被逼上后反击空当致命。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Total Football Analysis <small>· 战术媒体</small></div>定位为"土耳其高位压 vs 巴拉圭低位反击"的经典对话——土耳其个人质量更高、控球占优，但巴拉圭的纪律防守 + Enciso 反击具威胁，进球数预计有限，倾向小球。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>认为土耳其拥有 Güler、Yıldız、Çalhanoğlu 等更具天赋的阵容、且坐镇圣克拉拉，应能在一个紧张之夜以个人质量险胜续命；但点名 Yıldız 体能是关键变量，担子或落到 Güler 身上。</div>
+    <div class="insight"><div class="who">反向视角 · 巴拉圭让球/平局 <small>· 投注媒体</small></div>基于"两队均需赢、盘口接近（土耳其仅 -105）、巴拉圭擅守反击、土耳其破密集存疑（首轮 0-2）"的逻辑，部分媒体认为巴拉圭 +1.5 让球或平局有价值——这与 Alfaro 上任后的纪律防守底色一致。</div>
+    <div class="insight"><div class="who">综合 · 近两届大赛对账 <small>· 战术信号</small></div>对账两队最近两届大赛实际：土耳其在欧洲杯2024 证明了进攻天赋与高强度，但首轮"控而不破"暴露了对密集防守的老问题；巴拉圭在美洲杯2024 小组三连败、靠 Alfaro 上任后的纪律防守才挤进世界杯，但首轮 1-4 又证明其低位块在早失球后会崩。结论：土耳其个人质量更高、应为微弱热门，但这是一场"谁先破僵谁掌控节奏"的接近生死战，绝非单边碾压。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：土耳其窄胜（1-0 / 2-1）是基准剧本；1-1 / 0-0 平局是真实风险（巴拉圭低位块若稳住 + Enciso 反击偷分）；巴拉圭胜（约 25%）是中等尾部风险——两队均需赢使比赛比纸面更开放。</li>
+      <li><b>关键先生</b>：Çalhanoğlu（土/组织 + 定位球）、Güler（土/破密集创造，Yıldız 受限时尤甚）、Enciso（巴/反击引擎）、Cubas（巴/中场止血屏障）。</li>
+      <li><b>胜负手</b>：真正的胜负手是<b>土耳其能否破巴拉圭的密集防守</b>（首轮对澳大利亚最大暴露点）+ <b>巴拉圭能否避免早失球</b>（首轮 45 分钟丢 3 球的硬伤）。谁先破僵谁掌控节奏；Yıldız 体能是土耳其进攻上限的开关。</li>
+      <li><b>市场视角</b>：博彩与模型方向收敛但倾斜温和（土耳其去水≈47%），过热指数 <b>2/5</b>，无情绪溢价。最有信息含量的市场是<b>小球 2.5</b>（偏 Under ≈58%）；亚盘土耳其 -0.5 是基准线。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Kenan Yıldız 是否首发（小腿伤·体能存疑）；② 巴拉圭 Sosa（脚踝）、Caballero（肌肉）出战情况；③ 两队官方首发名单（以赛前 FIFA Match Centre 为准）；④ Iván Barton 针对两队的具体大赛执法样本有限；⑤ Kalshi/Polymarket 单场价格与成交量未公开检得；⑥ 角球具体盘口数据未检得；⑦ 亚盘具体赔率及让球线、最终 1X2 赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — D组（美国、墨西哥… 土耳其、巴拉圭、澳大利亚）</a> · <a href="https://www.skysports.com/football/news/12098/13543088/world-cup-2026-group-d-guide-fixtures-schedule-standings-and-odds-for-usa-paraguay-australia-and-turkey">Sky Sports — D组形势/赔率</a> · <a href="https://www.mlssoccer.com/news/2026-fifa-world-cup-group-d-preview-usa-australia-paraguay-turkey">MLSSoccer — D组前瞻</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/turkey/world-cup-2026/preview/turkey-vs-paraguay-prediction-team-news-lineups_599370.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/turkey/world-cup-2026/predicted-lineups/yildiz-doubt-persists-for-montella-predicted-turkey-lineup-vs-paraguay_599445.html">Sports Mole — 土耳其首发/Yıldız</a> · <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/predicted-lineups/almiron-and-enciso-lead-la-albirroja-lineup-predicted-paraguay-xi-vs-turkey_599450.html">Sports Mole — 巴拉圭首发</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/turkey-vs-paraguay-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-118661">Rotowire — 首发/战术</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/t%C3%BCrkiye-s-possible-lineup-to-face-paraguay-in-the-fifa-world-cup-2026-2026-06-18">beIN — 土耳其可能首发</a> · <a href="https://khelnow.com/football/world-football-paraguay-predicted-lineup-vs-turkiye-fifa-world-cup-202606">Khel Now — 巴拉圭预测首发</a><br>
+      • <a href="https://sports.yahoo.com/articles/turkey-vs-paraguay-prediction-world-145000483.html">Yahoo — 前瞻/最佳投注</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/turkiye-vs-paraguay-odds-prediction-062026-217111">Sports Interaction — 赔率/预测</a> · <a href="https://www.sportscasting.com/news/turkey-vs-paraguay-predictions-world-cup-betting-picks-odds/">Sportscasting — 超算预测</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/turkey-vs-paraguay-prediction-odds-preview-world-cup-june-19-bm16/">BetMGM — 赔率/前瞻</a><br>
+      • 上一场带入：<a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver">Sky Sports — 澳 2-0 土战报</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/australia-turkiye-highlights-match-report">FIFA — 澳土战报</a> · <a href="https://www.aljazeera.com/sports/2026/6/12/usa-vs-paraguay-world-cup-2026-group-match-trump-schedule-lineups">Al Jazeera — 美 4-1 巴拉圭</a><br>
+      • 近两届大赛：<a href="https://www.squawka.com/en/outright-markets/turkey-euro-2024-outright-odds-tactics-squad-path-to-final-quarter-final/">Squawka — 土耳其欧洲杯2024 战术/晋级路</a> · <a href="https://worldsoccertalk.com/world-cup/paraguay-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — 巴拉圭体系/Alfaro</a> · 裁判 <a href="https://en.wikipedia.org/wiki/Iv%C3%A1n_Barton">Wikipedia — Iván Barton</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-19 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['土耳其胜','平局','巴拉圭胜'],datasets:[{data:[47,28,25],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[42,58],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏向小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['美国','澳大利亚','土耳其','巴拉圭'],datasets:[{data:[3,3,0,0],backgroundColor:['#3b6fb0','#f4c20d',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,ticks:{stepSize:1},title:{display:true,text:'D 组首轮积分'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'土耳其',data:[6,7,7.5,7,8,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'巴拉圭',data:[7,5.5,6,6,6,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

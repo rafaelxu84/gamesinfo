@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 葡萄牙 vs 乌兹别克斯坦 · 2026世界杯 K组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-portugal-vs-uzbekistan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#1fa67a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#15724f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#0e2a20);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#5fd3ab;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · K组次轮 · 葡萄牙慢热后的"出线生死战" vs 乌兹别克斯坦背水退守</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 葡萄牙 5-0 乌兹别克斯坦</span>
+  <h1>葡萄牙 vs 乌兹别克斯坦</h1>
+  <div class="meta">2026年6月23日 · 休斯顿 NRG Stadium · 13:00 ET · K组（同组：哥伦比亚、刚果(金)）· 次轮</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇹 葡萄牙</div><div class="rk">FIFA #6 · 卫冕欧国联冠军 · 首轮 1-1 平刚果(金)（Ronaldo 哑火、"控而不破"）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fd3ab">🇺🇿 乌兹别克斯坦</div><div class="rk">队史首次世界杯 · 首轮 1-3 负哥伦比亚（上半场零次禁区触球、门将脱手送礼）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-24） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 葡萄牙 5-0 乌兹别克斯坦（半场 3-0）· K组次轮 · 06-23</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">葡萄牙在休斯顿完成一场冷静而响亮的碾压,上半场即 3-0 锁定胜局。<b>6'</b> C罗(Ronaldo)首开纪录,<b>17'</b> 努诺·门德斯(Nuno Mendes)远射扩大,<b>39'</b> C罗梅开二度 3-0 进半场。下半场 <b>60'</b> 乌兹门将 Nematov 自摆乌龙 4-0,<b>87'</b> 拉斐尔·莱昂(Rafael Leão)替补建功 5-0 定格。C罗成为<b>史上首位在 6 届世界杯均有进球的球员</b>,并以世界杯总第 10 球<b>超越尤西比奥(Eusébio)登顶葡萄牙世界杯射手王</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 6' C罗 · 17' N.门德斯 · 39' C罗(梅开二度) · 60' Nematov 乌龙 · 87' R.莱昂｜C罗:6 届世界杯连续破门历史第一人 + 葡萄牙世界杯射手王(10 球)</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照(Opta / Sofascore)</h4>
+    <table>
+      <tr><th>指标</th><th>🇵🇹 葡萄牙</th><th>🇺🇿 乌兹别克斯坦</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>2.41</b></td><td>0.25</td><td>5 球进 2.41 xG——高效转化,机会量与终结同时在线</td></tr>
+      <tr><td class="ht">控球</td><td><b>66%</b></td><td>34%</td><td>葡萄牙完全掌控territory,乌兹全场被压制</td></tr>
+      <tr><td class="ht">射门(命中率)</td><td><b>多次、9 射正级压制</b></td><td>仅 2 射</td><td>乌兹进攻几乎零产出</td></tr>
+      <tr><td class="ht">个人</td><td><b>C罗 2 球;N.门德斯 Sofascore 8.8</b></td><td>—</td><td>门德斯远射 + 助攻级输出全场最佳;C罗双响刷新多项纪录</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源:<a href="https://theanalyst.com/articles/portugal-vs-uzbekistan-stats-world-cup-2026">Opta Analyst — Portugal 5-0 Uzbekistan Stats</a> · <a href="https://www.sofascore.com/news/portugal-5-0-uzbekistan-clinical-controlled-and-loud-in-houston">Sofascore — Match Report</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760461/uzbekistan-portugal">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">C罗的纪录之夜:6 届世界杯连续破门 + 登顶队史</div>C罗梅开二度,成为史上首位连续 6 届世界杯均破门的球员,并超越尤西比奥成葡萄牙世界杯第一射手(10 球)。<b>可迁移结论:即便年龄增长,C罗在禁区内的终结嗅觉仍是葡萄牙的稳定得分来源,末轮对强敌仍需重点保护其射门空间。</b></div>
+    <div class="insight"><div class="who">努诺·门德斯左路:攻防一体的全场最佳(Sofascore 8.8)</div>门德斯不仅远射建功,左路插上与回追均顶级。<b>可迁移结论:葡萄牙的进攻宽度高度依赖两名边后卫前插,左路门德斯是最稳定的第二进攻发起点。</b></div>
+    <div class="insight"><div class="who">2.41 xG 进 5 球——效率与机会量双在线的完整压制</div>葡萄牙不是"少机会多进球"的运气流,而是真正创造了大量优质机会并干净转化。<b>可迁移结论:葡萄牙进攻火力成色得到验证,淘汰赛仍具上限。</b></div>
+    <div class="insight"><div class="who">乌兹别克斯坦 0.25 xG、仅 2 射——进攻彻底哑火</div>世界杯新军面对欧洲强队缺乏由守转攻手段。<b>可迁移结论:乌兹末轮需在更对等对手身上找回组织度,否则难求一胜。</b></div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">葡萄牙大胜</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>5-0,胜负与净胜幅度均兑现</td></tr>
+      <tr><td class="ht">C罗破门 / 纪录追逐</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>梅开二度,刷新多项世界杯纪录</td></tr>
+      <tr><td class="ht">大球倾向</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>5 球远超 2.5 大球线</td></tr>
+      <tr><td class="ht">葡萄牙阵地压制</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>66% 控球、2.41 xG,乌兹 0.25</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇵🇹 葡萄牙 · 下一场 末轮 vs 哥伦比亚(K组头名之争)</h4>
+        <ul class="watch">
+          <li><b>K 组头名决战</b>:哥伦比亚已 6 分提前出线,葡萄牙本场取胜后紧追,末轮两队直接对话很可能决定小组头名与淘汰赛半区。</li>
+          <li><b>边后卫前插是模板</b>:门德斯左路本场两端表现顶级,但对哥伦比亚(Luis Díaz 一侧)需平衡攻守。</li>
+          <li><b>C罗状态正盛</b>:破门倾向维持,但哥伦比亚防线强度远高于乌兹,需要更耐心的机会创造。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇺🇿 乌兹别克斯坦 · 下一场 末轮 vs 刚果(DR)(争首胜/荣誉)</h4>
+        <ul class="watch">
+          <li><b>出线基本无望</b>:两连败、净胜球落后,末轮对刚果(DR)更多是争取世界杯首胜与荣誉。</li>
+          <li><b>需解决由守转攻</b>:本场仅 2 射、0.25 xG,必须找到中前场串联与终结点。</li>
+          <li><b>对位更对等</b>:刚果(DR)实力与乌兹接近,是检验组织度的更合适对手。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>量级悬殊、但被葡萄牙"出线压力"重新定调</b>的次轮对话：葡萄牙（FIFA #6、卫冕欧国联冠军）首轮意外被刚果(金) <b>1-1</b> 逼平、控球高达约 80% 却"<b>控而不破</b>"、41 岁的 Ronaldo 延续大赛连续不进球——如今哥伦比亚已 3 分领跑 K 组，葡萄牙只剩 1 分，本场<b>几乎必须取胜</b>才能掌握出线主动；乌兹别克斯坦（队史首次世界杯）首轮 1-3 负哥伦比亚、<b>上半场零次禁区触球（本届唯一）、门将脱手送礼</b>，0 分背水。盘口一边倒——葡萄牙胜赔约 <b>1.18</b>（去水隐含 ≈80%）、平局 <b>7.00</b>（≈13%）、乌兹别克斯坦胜 <b>15.00</b>（≈7%）；让球盘葡萄牙约 <b>-2</b>、总分线 O/U <b>2.5</b>。真正的看点不在胜负，而在三处：① <b>葡萄牙能否修正"控而不破"</b>——Martínez 预计召回 Dias、放 Leão/Conceição 首发增强爆点；② <b>Ronaldo 能否止住进球荒</b>（散户资金最大入口）；③ <b>乌兹别克斯坦敢不敢压出</b>——若再像首轮死守 90 分钟，葡萄牙控球更易转化、但乌兹也彻底放弃爆冷。基准剧本：<b>葡萄牙 2-0 / 3-1 取胜</b>并扳回出线主动权，张力压在"赢几个、谁破门、能否零封"。市场过热指数 ≈ 2.5/5（共识干净，看点在让球幅度 + Ronaldo props）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">葡萄牙隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈80%</div></div>
+      <div class="key"><div class="k">乌兹隐含胜率(去水)</div><div class="v" style="color:#5fd3ab">≈7%</div></div>
+      <div class="key"><div class="k">葡萄牙首轮积分</div><div class="v" style="color:var(--warn)">仅 1 分</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>葡萄牙"控而不破"必须修正（上一场带入）</b>：首轮对刚果(金)控球约 80%、传球 94%，却只 7 射、11 次禁区触球，xG 仅 0.64 反被 0.82 超过——缺乏打身后的纵向穿透与禁区终结点。本场预计 Martínez 召回 Dias、让 Leão/Conceição 首发增加爆点，否则面对又一支低位密集会再陷拉锯。</li>
+      <li><b>Ronaldo 的进球荒与告别叙事（上一场带入）</b>：41 岁、第六届世界杯、大赛连续 10 场不进球（首轮再哑火、被 FOX 点名一次跑位"葬送"机会）——Ronaldo 进球盘仍是散户资金核心，但把破铁桶寄托在站桩中锋身上的风险已被首轮验证。</li>
+      <li><b>乌兹别克斯坦"零进攻产出"的结构短板（上一场带入）</b>：首轮上半场零次禁区触球、半场 xG 仅 0.02（本届唯一），纯退守可限制射正、却也放弃了爆冷；本场对星光更盛的葡萄牙若仍不敢压出，更难制造威胁。门将首轮脱手送礼的大舞台稳定性必须改善。</li>
+      <li><b>出线算术陡变天平</b>：哥伦比亚 3 分领跑，葡萄牙 1 分、刚果(金) 1 分、乌兹 0 分——葡萄牙本场不胜则出线告急，Martínez 大概率<b>不再轮休核心</b>（Dias/Leão 回归），全力强攻；这把比赛推向"葡萄牙必须赢、且想赢得漂亮"的格局。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项；关键球员可用性已多源交叉）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">葡萄牙 · 上一场带入 · "控而不破" + 出线压力 <span style="color:var(--mut);font-weight:400">· 刚果(金)战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">葡萄牙首轮 <b>1-1</b> 被刚果(金)逼平、约 80% 控球却零突破；哥伦比亚领跑下出线压力陡增</div>
+      <p style="font-size:13.5px">承接刚果(金)战复盘的前瞻迁移：葡萄牙坐拥约 80% 控球、94% 传球成功率，却只 7 射、11 次禁区触球，xG 仅 0.64 反被对手 0.82 超过——传导大量停留在禁区外围、缺少打身后的纵向穿透。Martínez 首轮轮休 Rúben Dias（赛后称其"非 100% 健康"）与 Rafael Leão，改打 4-2-3-1，破铁桶奇兵来得太晚。如今哥伦比亚 3 分领跑、葡萄牙仅 1 分，<b>本场近乎必须取胜</b>。多家媒体（Goal、Yahoo、AOL）预计 Martínez 将做出明显调整：<b>召回 Dias 与 Inácio 坐镇后防、放 Leão 与 Conceição 上边路</b>增加爆点。<span style="color:var(--warn)">[官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：葡萄牙是绝对热门（去水≈80%），胜负无悬念，价值全在<b>能否赢、赢几个、能否零封</b>。"控而不破"是让深盘（-2）的核心利空——若葡萄牙又对一支低位密集球队拉锯，让 2 球与大球承压；但召回 Leão/Conceição 增加纵深爆点，正是针对这一病灶的修正。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en/news/portugal-uzbekistan-world-cup-preview/bltf65b8be15166aad7" style="color:var(--accent)">Goal — 前瞻/队况</a> · <a href="https://www.aol.com/news/portugal-vs-uzbekistan-world-cup-124718457.html" style="color:var(--accent)">AOL/Yahoo — 预测首发/团队消息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5fd3ab;font-weight:700">乌兹别克斯坦 · 上一场带入 · 零进攻产出 + 门将失稳 <span style="color:var(--mut);font-weight:400">· 哥伦比亚战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">乌兹首轮 1-3 负哥伦比亚、<b>上半场零次禁区触球（本届唯一）、门将脱手送礼</b>；Fayzullaev 打入队史世界杯首球</div>
+      <p style="font-size:13.5px">承接哥伦比亚战复盘的前瞻迁移：乌兹别克斯坦首轮几乎放弃进攻、全力退守——上半场零次禁区触球、半场 xG 仅 0.02（本届至今唯一一队），首次禁区触球迟至 60' 才出现并立刻由 Fayzullaev 补射换来队史世界杯首球；但 65' 门将对 Díaz 一记力量不足的射门脱手漏过，直接放大比分。本场对星光更盛、控球与压迫强度更高的葡萄牙，乌兹的纯退守剧本将承受更大压力，是出线生死战。<span style="color:var(--warn)">[官方首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：乌兹"零进攻产出 + 大舞台门将失稳"正是葡萄牙攻击群（Ronaldo/Leão/Pedro Neto/B.Fernandes 定位球）最擅长打击的环节。若 Kapadze 仍摆深度退守、门将再失常，失球数可能滑向 3-0/4-0，直接对接让深盘（-2）与大球；唯一的两面性是若乌兹敢压出，反而给葡萄牙留出转化空间但身后也露空当。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/portugal/world-cup/preview/portugal-vs-uzbekistan-prediction-team-news-lineups_599765.html" style="color:var(--accent)">Sports Mole — 前瞻/团队消息</a> · <a href="https://khelnow.com/football/world-football-portugal-vs-uzbekistan-preview-fifa-world-cup-202606-2" style="color:var(--accent)">Khel Now — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ 关键球员核查 · Ronaldo 健康首发 <span style="color:var(--mut);font-weight:400">· ESPN · 101GreatGoals · FOX · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源确认：<b>Ronaldo 已完全康复、首轮已首发出战刚果(金)</b>，本场可用——无新伤情，主线无需 🔁 更新</div>
+      <p style="font-size:13.5px">关键球员可用性多源交叉核查：Ronaldo 二月底在 Al Nassr 训练中右大腿肌肉受伤、缺席对墨西哥与美国的热身，但赛前已分别在对智利（45 分钟）、对尼日利亚（65 分钟）的两场热身赛中以队长身份复出，并已<b>首发出战首轮对刚果(金)全场</b>——证明其健康无虞。Martínez 表示 Ronaldo 仍是核心，但可能"有选择地使用"（参照 2022 年 Santos 的轮换）。综合 ESPN、101GreatGoals、FOX 三源：<b>无新增伤情/停赛，本场预计首发</b>，唯一变量是 Martínez 是否中途换下以保护体能。<span style="color:var(--good)">[多源一致：可用 ✓]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Ronaldo 是 Ronaldo 进球盘（首开/任意时间）的资金核心，告别叙事是散户最大入口。鉴于首轮已哑火（大赛连续不进球），他能否在面对乌兹脆弱后防时止血，是个人盘的最大悬念；但即便他被保护下场，葡萄牙整体火力（Leão/B.Fernandes/Ramos）对乌兹的实力差仍巨大。<b>无人员利空，主线维持。</b></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49040297/cristiano-ronaldo-world-cup-fitness-portugal-not-seen-play" style="color:var(--accent)">ESPN — Ronaldo 世界杯健康表态</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/cristiano-ronaldo-world-cup-2026-schedule-fixtures-kick-off-times-where-to-watch-news-updates-portugal/" style="color:var(--accent)">101GreatGoals — 赛程/状态更新</a> · <a href="https://www.foxsports.com/articles/soccer/cristiano-ronaldo-fitness-concerns-addressed-by-roberto-martinez-as-portugal-boss-demands-highest-standards-for-everyone-ahead-of-2026-world-cup" style="color:var(--accent)">FOX — Martínez 谈 Ronaldo 健康</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· Morocco World News / UzDaily / Elbotola · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：摩洛哥籍 <b>Jalal Jayed</b> 执法（首位主哨世界杯的摩洛哥裁判自 2002 年以来）；比赛在休斯顿 NRG Stadium</div>
+      <p style="font-size:13.5px">多源（Morocco World News、UzDaily、Elbotola、Dailysports）确认 FIFA 任命摩洛哥籍 <b>Jalal Jayed</b> 执法本场 K 组次轮，助理裁判为同胞 Zakaria Brinsi 与 Mustapha Akarkad，第四/第五官员为南非籍 Abongile Tom 与 Zakhele Siwela。Jayed 系 2019 年起的 FIFA 国际级裁判、执法过 AFCON 2023 与 2025（含 2025 三四名决赛 埃及 vs 尼日利亚），是 2002 年 Mohamed Guezzaz 之后首位入选世界杯主哨的摩洛哥裁判。NRG Stadium 为可开合顶棚球场（休斯顿 6 月酷热，预计闭顶/空调环境，对体能影响小于露天）。<span style="color:var(--warn)">[Jayed 本场 VAR 组合与其大赛单场出牌/点球细分样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在一场实力悬殊的比赛里，裁判对胜负几乎无影响——葡萄牙不需要任何边际帮助。裁判面的唯一价值在牌数/点球盘：若葡萄牙攻势凶猛、乌兹频繁犯规拦截，黄牌与禁区点球概率会略升。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.moroccoworldnews.com/2026/06/323071/world-cup-2026-moroccan-referee-jalal-jayed-to-officiate-portugal-vs-uzbekistan-clash/" style="color:var(--accent)">Morocco World News — Jayed 执法官宣</a> · <a href="https://www.uzdaily.uz/en/moroccan-officials-appointed-for-uzbekistan-portugal-world-cup-match/" style="color:var(--accent)">UzDaily — 裁判组任命</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed" style="color:var(--accent)">Wikipedia — Jalal Jayed 档案</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2018,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 赛前约 1 小时官宣 · 与预测对照 + 速览结论是否修正</span></h2>
+    <div class="sub">数据源：媒体级官方 teamsheet（Oddschecker 含完整替补席 + WebSearch 聚合，双源逐人一致 ✅ 官方确认）；FIFA 比赛中心 LINE UP 控件仍在加载。队长以既定袖标计（Ronaldo / Shomurodov），<span style="color:var(--warn)">FIFA C 徽标待核</span>。</div>
+
+    <h4>🇵🇹 葡萄牙 官方首发（4-2-3-1）· Martínez</h4>
+    <div class="lineup">Diogo Costa; João Cancelo · Rúben Dias · Renato Veiga · Nuno Mendes; Vitinha · João Neves; Pedro Neto · Bruno Fernandes · João Félix; Cristiano Ronaldo(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补关键武器：Rafael Leão、Bernardo Silva、Gonçalo Ramos、Francisco Conceição、Diogo Dalot、Gonçalo Inácio、Rúben Neves、Trincão</div>
+
+    <h4 style="margin-top:16px">🇺🇿 乌兹别克斯坦 官方首发（3-4-2-1）· Kapadze</h4>
+    <div class="lineup">Nematov; Ashurmatov · Abdullaev · Khusanov; Karimov · Shukurov · Khamrobekov · Nasrullaev; Fayzullaev · G'aniev; Shomurodov(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补：Oston Urunov、Igor Sergeev、Dostonbek Khamdamov、Jamshid Iskanderov、Utkir Yusupov（门将）等</div>
+
+    <h4 style="margin-top:18px">vs 预测首发对照（逐条「为什么重要」）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">葡 · 左前场</td><td>Rafael Leão 召回首发</td><td><b>Leão 坐替补</b>，João Félix 首发</td><td>预测主线"召回 Leão 增爆点修正控而不破"<b>未执行</b>——Martínez 选择 Félix/Pedro Neto 的技术流前场，Leão 留作奇兵。破密集的爆点来得仍可能偏晚，是让深盘的关注点</td></tr>
+      <tr><td class="ht">葡 · 中卫搭档</td><td>Gonçalo Inácio 配 Dias</td><td><b>Renato Veiga</b> 配 Dias</td><td>Dias 回归如预期（防守增稳 ✓），但搭档是 Veiga 而非 Inácio——对乌兹零进攻威胁影响很小，零封概率仍高</td></tr>
+      <tr><td class="ht">葡 · 单箭头</td><td>Ronaldo 首发</td><td>Ronaldo(C) 首发 ✓</td><td>与预测一致——Ronaldo 进球荒/告别叙事仍是个人盘最大入口</td></tr>
+      <tr><td class="sc">乌 · 门将</td><td>Yusupov 首发</td><td><b>Nematov 首发</b>（Yusupov 替补）</td><td>首轮脱手送礼后换门将，是 Kapadze 对"大舞台失稳"的直接回应；门将能否止稳影响失球数与大球结算</td></tr>
+      <tr><td class="sc">乌 · 体系</td><td>3-4-2-1 / 4-2-3-1 低位</td><td><b>3-4-2-1</b> 低位铁桶 ✓</td><td>三中卫 + 双翼卫的密集退守如预期，Khusanov 居中——主线（纯退守搏反击）成立</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（速览结论：部分修正）</h4>
+    <ul class="cl">
+      <li><b>🔁 速览结论修正一处</b>：原"Martínez 召回 Leão 首发以修正控而不破"<b>未兑现</b>——Leão 在替补席。实际前场是 <b>Félix（左）+ Bruno（中）+ Pedro Neto（右）</b>的技术、跑动与传切组合，而非 Leão 的 1v1 直接爆点。含义：破乌兹低位铁桶更依赖"传导渗透 + 定位球 + Ronaldo 禁区终结"，纵向直接性下降，<b>让深盘（-2）的兑现节奏可能更靠后</b>，Leão/Ramos/Bernardo 是预期中的"下半场加力"奇兵。</li>
+      <li><b>防守增稳如期</b>：Dias 回归坐镇（搭 Renato Veiga），对手是本届半场 xG 仅 0.02、零进攻产出的乌兹——葡萄牙零封概率仍高，主线"价值在让球与进球数、非胜负"维持不变。</li>
+      <li><b>乌兹换门将 = 对首轮病灶的针对性修补</b>：Nematov 取代首轮脱手的 Yusupov，配合三中卫 + 双翼卫的 3-4-2-1，目标仍是"控制失球、靠 Shomurodov/Fayzullaev 反击搏分"。若门将止稳、铁桶不漏，失球更可能停在 1-2 球而非滑向 3-4 球——对大球与让深盘是边际利空。</li>
+      <li><b>Ronaldo 首发 = 个人盘主线不变</b>：Ronaldo(C) 领衔锋线，面对乌兹脆弱后防是其止住大赛进球荒的最好窗口；变量仍是 Martínez 是否在大比分后提前换下保护体能（影响其个人 props 与净胜幅度）。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：官方名单出炉后 1X2 无实质波动（葡萄牙胜≈1.18 早已饱和定价）。唯一与盘口相关的信息是 <b>Leão 未首发</b>——理论上略微削弱"早段打爆"的预期、对让深盘（-2）的即时热情有轻微抑制，但替补席火力（Leão/Bernardo/Ramos）仍充足，方向不变。<span style="color:var(--warn)">[具体让球/大小球线官宣前后逐档变动 · 待核]</span> 仅供分析参考，非投注建议。</div>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">来源：<a href="https://www.oddschecker.com/insight/football/20260623-portugal-vs-uzbekistan-confirmed-lineups" style="color:var(--accent)">Oddschecker — 官方首发（含完整替补）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021503" style="color:var(--accent)">FIFA 比赛中心</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· K组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>K 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇵🇹 葡萄牙</th><th>🇺🇿 乌兹别克斯坦</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#6 区间</td><td class="sc">#50 区间</td></tr>
+      <tr><td>首轮结果</td><td class="ht">1-1 平刚果(金)（控而不破、Ronaldo 哑火）</td><td class="sc">1-3 负哥伦比亚（上半场零禁区触球、门将脱手）</td></tr>
+      <tr><td>K 组积分（次轮前）</td><td colspan="2">哥伦比亚 3 分领跑；葡萄牙 1 分、刚果(金) 1 分、乌兹别克斯坦 0 分——葡萄牙本场近乎必胜以掌握出线</td></tr>
+      <tr><td>主教练</td><td class="ht">Roberto Martínez（西班牙籍）</td><td class="sc">Timur Kapadze（乌兹本土）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Ronaldo(C)、Bruno Fernandes、Leão、Vitinha</td><td class="sc">Shomurodov(C)、Fayzullaev、Khusanov（曼城）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">能否破"控而不破"；Ronaldo 止荒；零封</td><td class="sc">敢不敢压出；门将止稳；控失球</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">Euro 2024 八强（点球负法国）· WC 2022 八强（负摩洛哥）· 欧国联 2025 冠军</td><td class="sc">亚洲杯 2023 八强 · 队史首次世界杯</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.18（隐含≈80%）</td><td class="sc">胜 15.00（≈7%）· 平 7.00（≈13%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线 O/U 2.5（偏大球）——核心市场是葡萄牙让球（-2）与进球数</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈80/13/7，归一后）。赔率来源：FanDuel（葡萄牙 -550 → 1.18、平 +600 → 7.00、乌兹 +1400 → 15.00）；BetOnline 葡萄牙 -450 → 1.22。让球盘葡萄牙约 -2（-102），总分线 O/U 2.5（大球为市场主导）。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选 / 热身）</b>与<b>本届世界杯实际值（首轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇵🇹 葡萄牙 · 进攻</td><td class="ht">欧国联冠军级火力、预选高产出（约 71% 控球）、攻击群豪华</td><td class="ht">首轮 <b>1 球</b>、xG 仅 <b>0.64</b>、11 次禁区触球，"控而不破"</td><td><b>远低于</b>预期：控球海量却零穿透，缺纵深与禁区终结点——本场召回 Leão/Conceição 正为修正这一病灶</td></tr>
+      <tr><td class="ht">🇵🇹 葡萄牙 · 防守</td><td class="ht">旅欧后卫为主、Dias 领衔，整体稳健</td><td class="ht">首轮 xGA <b>0.82</b>、被对手射门数反超（7 vs 8）</td><td><b>略劣于</b>预期：年轻中卫面对反击露怯；本场召回 Dias 增稳，对乌兹零封概率回升</td></tr>
+      <tr><td class="sc">🇺🇿 乌兹别克斯坦 · 进攻</td><td class="sc">亚洲中游、依赖 Shomurodov 支点与反击，创造力有限</td><td class="sc">首轮 <b>1 球</b>、半场 xG 仅 <b>0.02</b>、上半场零禁区触球</td><td><b>极低</b>：本届唯一上半场零禁区触球的球队，纯退守几乎放弃进攻，仅靠 Fayzullaev 补射换来队史首球</td></tr>
+      <tr><td class="sc">🇺🇿 乌兹别克斯坦 · 防守</td><td class="sc">AFC 预选 16 战仅负 1、失球少、低位防守组织扎实</td><td class="sc">首轮丢 3 球（含门将脱手）、让对手 15 射</td><td><b>承压</b>：退守可限制射正（仅让 4 射正），但门将大舞台失稳放大比分——对位葡萄牙攻击群风险更高</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：葡萄牙首轮进攻<b>远低于</b>欧国联冠军水准（xG 0.64、控而不破），是本场召回爆点的直接动因；乌兹进攻<b>极低</b>（半场 xG 0.02）、防守靠纯退守但门将失稳。深度数据与"葡萄牙必须修正破防效率、价值在让球与进球数"主线一致。来源：Opta Analyst · Sofascore/FotMob（首轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">葡萄牙 ≈2.2</td><td class="sc">乌兹别克斯坦 ≈0.5</td><td>校准后葡萄牙压倒性占优；变量是"控而不破"是否再现 + Martínez 是否中途保护 Ronaldo（影响净胜幅度）</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内葡萄牙居全球前列、为 K 组最强；乌兹 FIFA #50 区间为亚洲中游。预测市场与博彩去水一致给葡萄牙胜≈80%、出线概率仍高（但首轮平局后较赛前下降）</td><td>对手强度校准后葡萄牙样本含金量高（乌兹首秀、大舞台样本极少）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：葡萄牙 field tilt 将长时间压向乌兹半场、xT 与禁区触球大幅占优，唯首轮证明"高 field tilt ≠ 高 xG"</td><td><b>陷阱提醒</b>：场面碾压几无悬念，让球/大球的真实风险正是葡萄牙"控而不破"复发 + Ronaldo 被提前换下压低净胜幅度</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">葡萄牙胜方向绝对统一；真实分歧全在"让球幅度（-1.5 vs -2）+ 进球数 + Ronaldo 是否破门"；首轮平局后让深盘略受质疑、过热中等偏低</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · 一边倒共识、但首轮"控而不破"让让深盘存疑</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">葡萄牙是绝对热门（去水≈80%），胜负无分歧、无情绪溢价。价值全在<b>让球幅度（-1.5 vs -2）、进球数（O/U 2.5）与 Ronaldo 是否破门/越线</b>。葡萄牙首轮"控而不破"+ 出线压力，使市场对"让 2 球"既有动机（必须强攻）也有疑虑（破铁桶效率），是热度落在 2.5/5 而非更低的原因。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向：葡萄牙胜 全数 · 平/乌 ≈0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>葡萄牙大胜（5-1 建包），侧重 Ronaldo/Leão 进球、葡萄牙 -2 让球</td></tr>
+      <tr><td>SportsLine</td><td>美系投注媒体</td><td>葡萄牙胜 + 大 2.5 / 大 3.0；看好攻击群火力释放</td></tr>
+      <tr><td>Yahoo / The Sports Rush</td><td>预测媒体</td><td>预测 3-1 葡萄牙胜（乌兹尾段压上抢回安慰球）</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>葡萄牙全面占优；乌兹运动战创造力极弱</td></tr>
+      <tr><td>Goal / Sports Mole</td><td>赛前预览</td><td>葡萄牙胜 + 关注 Martínez 调整（Dias/Leão 回归）与出线形势</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等偏低）</b>：胜负方向绝对统一（无人押乌兹/平）——一边倒共识、无情绪溢价。真正分歧只在<b>让球幅度</b>（-1.5 vs -2）、<b>进球数</b>与<b>Ronaldo 是否破门/越线</b>。Ronaldo 告别叙事是流量点而非资金异动来源；首轮"控而不破"让部分分析师对 -2 持保留。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>葡萄牙胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈1.18–1.22</td><td>葡萄牙压倒性热门；平 7.00 / 乌兹 15.00</td></tr>
+      <tr><td>06-20 截止</td><td>FanDuel / BetOnline</td><td class="ht">1.18（-550）/ 1.22（-450）</td><td>葡萄牙超短赔基本不动（首轮平局未撼动胜负盘定价）</td></tr>
+      <tr><td>06-20</td><td>大/小球</td><td colspan="2" class="ht">总分线 O/U 2.5、大球为市场主导（部分平台挂大 3.0）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>葡萄牙 -2（-102）</td><td colspan="2" class="ht">葡萄牙 -2 为锐侧；-1.5 因首轮"控而不破"更受谨慎青睐</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">葡萄牙胜 ≈1.20；让球 -1.5/-2</td><td>以"卫冕欧国联 + Ronaldo 一代 vs 亚洲首秀"定价，初盘即把葡萄牙压成超短热门、让球挂在 -1.5/-2 之间</td></tr>
+      <tr><td>开盘（首轮赛后重定价）</td><td class="ht">葡萄牙胜 1.18–1.22；让球 -2 但 -1.5 受青睐</td><td><b>repricing 来自双方首轮</b>：葡萄牙 1-1"控而不破"暴露破铁桶效率问题 → 让球虽因"出线压力 + 召回 Leão"维持 -2 锐侧，但盘口对"让 2 球能否兑现"明显更谨慎；乌兹 1-3 暴露门将与零进攻，大球线得到支撑</td></tr>
+      <tr><td>现盘（06-20→现）</td><td class="ht">葡萄牙胜 1.18；O/U 2.5 偏大 / 让球 -2 vs -1.5 拉锯</td><td>胜负盘锁死（定价已极端收敛）；最活跃的价格发现在<b>让球（-1.5 vs -2）与大小球</b>——"葡萄牙能否修正控而不破 + Ronaldo 状态 + 是否提前轮换"是让深盘能否兑现的核心变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场赔率从初盘起就极端（≈1.20、让 -1.5/-2），但与法国/伊拉克式"血洗盘"不同——<b>葡萄牙首轮的"控而不破"</b>使让深盘（-2）的定价更谨慎，-1.5 一侧获得更多保护。1X2 毫无价值（定价已饱和），唯一有信息含量的是<b>葡萄牙让球（-1.5/-2）与进球数</b>——风险点是 Martínez 强攻却破不开 + 提前换下 Ronaldo 压低净胜幅度。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（聚合）</b>：本场葡萄牙约 <b>80%</b> 胜率、平 13%、乌兹 7%——与博彩去水高度一致，无情绪溢价。K 组出线：葡萄牙仍居优但首轮平局后较赛前下降，本场不胜则告急。<span style="color:var(--warn)">[本场单场成交量与动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Martínez 受到的批评</b>——首轮 1-1 平刚果(金)、轮休 Dias/Leão 被广泛质疑，本场调整与回应是焦点。</li>
+      <li><b>舆论焦点 ②</b>：<b>Ronaldo 的进球荒与告别叙事</b>——41 岁、第六届、大赛连续不进球，Ronaldo 进球 props 仍是散户流量主入口。</li>
+      <li><b>乌兹叙事</b>：队史首次世界杯的情怀 + Fayzullaev 队史首球的亮点，但公众普遍预期再负，无冷门资金；Khusanov（曼城）对位葡萄牙锋线是技术看点。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向绝对明确（葡萄牙），博彩与预测市场一致（≈80%），过热指数 <b>2.5/5</b>。流量来自 <b>Ronaldo 进球 props + Martínez 调整</b>而非胜负盘；最有信息含量的是<b>葡萄牙让球（-1.5/-2）、进球数与 Ronaldo 是否破门</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-uzbekistan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a260w1C6DOJl/">Racing Post — 赔率/投注</a> · <a href="https://www.sportsline.com/insiders/portugal-vs-uzbekistan-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 预测/赔率</a> · <a href="https://www.squawka.com/ca/news/world-cup/match-preview-portugal-vs-uzbekistan-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://sports.yahoo.com/articles/portugal-vs-uzbekistan-picks-predictions-090406819.html">Yahoo Sports — 预测/赔率</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为摩洛哥籍 <b>Jalal Jayed</b>（FIFA 国际级 2019 起、AFCON 2023/2025），助理 Zakaria Brinsi 与 Mustapha Akarkad（均摩洛哥），第四/第五官员南非籍 Abongile Tom 与 Zakhele Siwela。来源：Morocco World News、UzDaily、Elbotola、Wikipedia。<span style="color:var(--warn)">[本场 VAR 具体组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（近两届大赛实际样本 + 定性）</h4>
+    <ul class="cl">
+      <li><b>近两届大赛实际样本（AFCON 2023 + 2025）</b>：Jayed 执法过 AFCON 2023 与 2025，并被指派 AFCON 2025 三四名决赛（埃及 vs 尼日利亚，卡萨布兰卡 Stade Mohammed V）——这是对其控场能力的认可。其大赛单场出牌/点球的精确场均细分公开样本有限。<span style="color:var(--warn)">[场均黄牌/点球率细分 · 无公开大赛逐场样本 · 待核]</span></li>
+      <li><b>执法体系画像</b>：来自 CAF（非洲）执法体系、摩洛哥 Botola 顶级联赛长期主哨（含卡萨/拉巴特德比、2023-24 摩洛哥王室杯决赛）——通常对身体对抗有一定容忍，对战术犯规与累积管理到位。是 2002 年以来首位主哨世界杯的摩洛哥裁判，世界杯单场样本为零（首次）。</li>
+      <li><b>与两队的执法史</b>：与葡萄牙、乌兹别克斯坦两队均无显著公开执法史，无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届执法环境偏严。乌兹若大量犯规拦截葡萄牙攻势，累积黄牌与禁区点球风险上升；半自动越位将精准捕捉 Ronaldo/Leão 的越位临界冲刺（对越位边缘进球有轻微抑制）。NRG 可闭顶/空调，体能受高温影响小。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场是"葡萄牙压倒性进攻 vs 乌兹密集防守"的对位——裁判面唯一价值在牌数/点球：乌兹后卫频繁拦截 Leão/Pedro Neto 突破的累积犯规、禁区内拉扯的点球尺度是观察点。鉴于 Jayed 大赛单场出牌/点球细分样本有限、且世界杯首秀，牌数/点球盘宜以"倾向性"看待，不作可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 官方首发模块</span></h2>
+    <div class="sub">预测首发（Goal / Sports Mole / Yahoo 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇵🇹 葡萄牙 预测首发（4-2-3-1）· Martínez · 预计召回 Dias/Inácio + 放 Leão/Conceição</h4>
+    <div class="lineup">Diogo Costa; João Cancelo · Rúben Dias · Gonçalo Inácio · Nuno Mendes; João Neves · Vitinha; Pedro Neto · Bruno Fernandes · Rafael Leão; Cristiano Ronaldo(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Cristiano Ronaldo (C)</td><td>前锋 / 队长</td><td>226 场 143 球双纪录；第六届世界杯；首轮哑火（大赛连续不进球），健康首发可用；Ronaldo 进球 props 核心</td></tr>
+      <tr><td class="ht">Bruno Fernandes</td><td>中场 / 组织核心</td><td>88 场 29 球，Martínez 的创造引擎与定位球主罚；撕开密集防线的关键</td></tr>
+      <tr><td class="ht">Rafael Leão</td><td>边锋 / AC米兰</td><td>首轮轮休、本场预计召回首发——破铁桶最强 1v1 爆点，针对"控而不破"的修正</td></tr>
+      <tr><td class="ht">Rúben Dias</td><td>中卫 / 曼城</td><td>首轮因"非 100% 健康"轮休、本场预计回归坐镇后防，增稳零封概率</td></tr>
+    </table>
+    <h4>🇺🇿 乌兹别克斯坦 预测首发（3-4-2-1 / 4-2-3-1，倾向低位）· Kapadze</h4>
+    <div class="lineup">Yusupov; Sayfiev · Khusanov · Ashurmatov · Nasrullaev; Shukurov · Mozgovoy; Khamdamov · Fayzullaev · Urunov; Shomurodov(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Eldor Shomurodov (C)</td><td>前锋 / 队长</td><td>队史头号射手（92 场 44 球）；支点中锋，反击与争顶是乌兹主要终结点</td></tr>
+      <tr><td class="sc">Abbosbek Fayzullaev</td><td>攻击中场 / 创造核心</td><td>首轮打入队史世界杯首球；持球推进与由守转攻的关键</td></tr>
+      <tr><td class="sc">Abdukodir Khusanov</td><td>中卫 / 曼城</td><td>22 岁、阵中最高身价；身体与对抗出色，遏制葡萄牙锋线的核心 <span style="color:var(--warn)">位置/阵型待核</span></td></tr>
+      <tr><td class="sc">Jaloliddin Masharipov</td><td>中场 / 赛前伤情</td><td>经验型中场，赛前一度有伤；据报仍在名单、可用性待核 <span style="color:var(--warn)">待核</span></td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Goal / Sports Mole / Yahoo），<b>以赛前官方名单为准 · 待核</b>。葡萄牙焦点是 Martínez 的调整幅度（Dias/Leão 是否如预期回归、Ronaldo 是否首发全场）；乌兹焦点是阵型（3-4-2-1 vs 4-2-3-1）、门将人选与 Masharipov 可用性。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 各自洲际杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇹 葡萄牙 · Roberto Martínez</div>
+        <div class="role">4-2-3-1 控球压迫 + 个人爆点，Ronaldo 单箭头，定位球资源丰富</div>
+        <ul class="cl">
+          <li>葡萄牙的招牌是<b>高控球 + 顶级旅欧个人能力 + 丰富定位球</b>——欧国联 2025 冠军、Euro 2024 八强（点球负法国）、WC 2022 八强（负摩洛哥），下限极高但破铁桶效率时有起伏。</li>
+          <li>交叉参照：WC 2022 八强被摩洛哥铁桶 0-1 淘汰、Euro 2024 八强对法国 120 分钟 0-0 点球出局——<b>两届大赛淘汰赛都栽在"控而不破"的密集防守前</b>。首轮 1-1 平刚果(金)正是同一病灶复发，这是结构性风险而非偶然。</li>
+          <li>本场切入口：乌兹的零进攻产出与门将失稳是葡萄牙攻击群（Leão/Pedro Neto/B.Fernandes 定位球）的打击点；必须增加打身后的纵向穿透、尽早投入 Leão 爆点，而非依赖 Ronaldo 站桩——出线压力下不再轮休核心。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fd3ab">🇺🇿 乌兹别克斯坦 · Timur Kapadze</div>
+        <div class="role">3-4-2-1 / 4-2-3-1 低位防守 + 反击与定位球，Shomurodov 支点</div>
+        <ul class="cl">
+          <li>本土主帅 Kapadze 带来纪律型低位防守理念，乌兹的现实打法是<b>密集退守 + 反击/定位球求分 + Shomurodov 支点</b>——亚洲杯 2023 闯入八强靠的是防守纪律与反击效率。</li>
+          <li>交叉参照：亚洲杯 2023 八强出局（被卡塔尔淘汰）是其近期最佳大舞台样本；本届首轮 1-3 负哥伦比亚，上半场零禁区触球、门将脱手是核心病灶。无世界杯历史样本，临场心理是未知数。</li>
+          <li>本场应对：现实目标不是取胜而是<b>控制失球、争取理论出线机会</b>。须收紧三中卫/双后腰锁中路、压缩 Leão/B.Fernandes 的接球空间，门将稳定发挥，靠 Shomurodov 的支点与 Fayzullaev 的反击搏取扳回颜面的进球；若仍像首轮全程死守，将彻底放弃爆冷可能。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Goal / Sports Mole <small>· 赛前前瞻</small></div>葡萄牙质量与个人上限是本场主线；Martínez 预计召回 Dias、放 Leão/Conceição 首发以修正首轮"控而不破"。乌兹的零进攻产出与门将失稳若不改善，将被葡萄牙放大。</div>
+    <div class="insight"><div class="who">SportsLine / Racing Post <small>· 投注媒体</small></div>建议葡萄牙胜 + 大 2.5/3.0，关注 Ronaldo/Leão 进球与葡萄牙 -2 让球；认为葡萄牙零封潜力高、乌兹运动战几无威胁。</div>
+    <div class="insight"><div class="who">预测市场（Kalshi/Polymarket） <small>· 市场共识</small></div>葡萄牙胜≈80% / 平 13% / 乌兹 7%，与博彩去水一致、无溢价。葡萄牙出线仍居优但首轮平局后下降，本场基本是出线主动权的争夺战。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念不在胜负，而在<b>葡萄牙能否修正破防效率、赢几个、是否零封</b>。⚠ 陷阱提醒：葡萄牙"控而不破"是结构性病灶（WC2022 + Euro2024 淘汰赛皆栽于此），若复发 + 提前换下 Ronaldo 可能压低净胜幅度，让深盘（-2）与大球有边际落空风险——这是唯一需要警惕的变量。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：葡萄牙取胜（2-0 / 3-1 / 2-1）是基准剧本，扳回出线主动权；平局（≈13%）与乌兹取胜（≈7%）是尾部，需要葡萄牙再陷"控而不破" + 乌兹门将神勇 + 退守得当同时发生。鉴于首轮已平、出线压力大，葡萄牙强攻动机充分。</li>
+      <li><b>关键先生</b>：Ronaldo（葡/纪录与终结，进球荒待止）、Leão（葡/破密集最强爆点）、Bruno Fernandes（葡/组织与定位球）、Shomurodov（乌/支点唯一希望）、Khusanov（乌/遏制葡锋线）、门将（乌/止血关键）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>葡萄牙能否修正破防效率、充分释放火力并零封</b>，以及<b>Ronaldo 能否止住进球荒</b>——决定让球盘（-1.5/-2）与大小球的结算。</li>
+      <li><b>市场视角</b>：博彩与预测市场绝对一致（葡萄牙，≈80%），1X2 毫无价值；最有信息含量的是<b>葡萄牙让球（-1.5/-2）、进球数与 Ronaldo 破门/越线</b>。过热指数 2.5/5（流量来自 Ronaldo props + Martínez 调整）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② 葡萄牙调整幅度（Dias/Leão 是否回归、Ronaldo 是否首发全场/中途被换）；③ 乌兹阵型（3-4-2-1 vs 4-2-3-1）、门将人选与 Masharipov 可用性；④ Jayed 本场 VAR 组合与其大赛单场出牌/点球细分（世界杯首秀、无逐场样本）；⑤ Kalshi/Polymarket 本场成交量与动量细分；⑥ 亚盘让球线（-1.5/-2）与大小球总分线（O/U 2.5）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.goal.com/en/news/portugal-uzbekistan-world-cup-preview/bltf65b8be15166aad7">Goal — 前瞻/首发/出线</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup/preview/portugal-vs-uzbekistan-prediction-team-news-lineups_599765.html">Sports Mole — 前瞻/团队消息/首发</a> · <a href="https://www.aol.com/news/portugal-vs-uzbekistan-world-cup-124718457.html">AOL/Yahoo — 预测/团队消息/赔率</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-uzbekistan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a260w1C6DOJl/">Racing Post — 赔率/投注</a> · <a href="https://www.sportsline.com/insiders/portugal-vs-uzbekistan-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 预测/赔率</a> · <a href="https://www.squawka.com/ca/news/world-cup/match-preview-portugal-vs-uzbekistan-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.skysports.com/football/news/12040/13543106/world-cup-2026-group-k-guide-fixtures-schedule-standings-and-odds-for-portugal-dr-congo-uzbekistan-and-colombia">Sky Sports — K组指南/积分</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49040297/cristiano-ronaldo-world-cup-fitness-portugal-not-seen-play">ESPN — Ronaldo 健康表态</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/cristiano-ronaldo-world-cup-2026-schedule-fixtures-kick-off-times-where-to-watch-news-updates-portugal/">101GreatGoals — Ronaldo 状态/赛程</a> · <a href="https://www.foxsports.com/articles/soccer/cristiano-ronaldo-fitness-concerns-addressed-by-roberto-martinez-as-portugal-boss-demands-highest-standards-for-everyone-ahead-of-2026-world-cup">FOX — Martínez 谈 Ronaldo</a><br>
+      • <a href="https://www.moroccoworldnews.com/2026/06/323071/world-cup-2026-moroccan-referee-jalal-jayed-to-officiate-portugal-vs-uzbekistan-clash/">Morocco World News — 裁判 Jayed 官宣</a> · <a href="https://www.uzdaily.uz/en/moroccan-officials-appointed-for-uzbekistan-portugal-world-cup-match/">UzDaily — 裁判组</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed">Wikipedia — Jalal Jayed</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K">Wikipedia — K组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-22 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#1fa67a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['葡萄牙胜','平局','乌兹别克斯坦胜'],datasets:[{data:[80,13,7],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['葡萄牙','哥伦比亚','乌兹别克斯坦','刚果(金)'],datasets:[{data:[6,14,50,60],backgroundColor:[HT,'#e8cd6b','#5fd3ab','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/反击','个人上限','大赛经验'],
+  datasets:[
+   {label:'葡萄牙',data:[8,7.5,8.5,8.5,9,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'乌兹别克斯坦',data:[5.5,4.5,5,5,4.5,4],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

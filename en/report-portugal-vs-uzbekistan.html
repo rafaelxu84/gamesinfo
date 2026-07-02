@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Portugal vs Uzbekistan · 2026 World Cup Group K Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-portugal-vs-uzbekistan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-portugal-vs-uzbekistan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#1fa67a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#15724f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#0e2a20);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#5fd3ab;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-portugal-vs-uzbekistan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group K Matchday 2 · Portugal's "qualification do-or-die" after a slow start vs Uzbekistan retreating with their backs to the wall</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Portugal 5-0 Uzbekistan</span>
+  <h1>Portugal vs Uzbekistan</h1>
+  <div class="meta">23 June 2026 · Houston, NRG Stadium · 13:00 ET · Group K (also in group: Colombia, DR Congo) · Matchday 2</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇹 Portugal</div><div class="rk">FIFA #6 · Reigning Nations League champions · Opened with a 1-1 draw vs DR Congo (Ronaldo blank, "control without breakthrough")</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fd3ab">🇺🇿 Uzbekistan</div><div class="rk">First-ever World Cup · Lost 1-3 to Colombia in the opener (zero box touches in the first half, goalkeeper spilled a gift)</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-24) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Portugal 5-0 Uzbekistan (HT 3-0) · Group K Matchday 2 · 06-23</span></h2>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Portugal delivered a composed, emphatic rout in Houston, sealing the win 3-0 by half time. <b>6'</b> Ronaldo opened the scoring, <b>17'</b> Nuno Mendes extended it with a long-range strike, and <b>39'</b> Ronaldo's brace made it 3-0 at the break. In the second half, <b>60'</b> Uzbekistan goalkeeper Nematov turned the ball into his own net for 4-0, and <b>87'</b> Rafael Leão came off the bench to seal 5-0. Ronaldo became the <b>first player ever to score at six different World Cups</b>, and with his 10th World Cup goal overall <b>overtook Eusébio to become Portugal's all-time World Cup top scorer</b>.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 6' Ronaldo · 17' N. Mendes · 39' Ronaldo (brace) · 60' Nematov own goal · 87' R. Leão｜Ronaldo: first player to score at six straight World Cups + Portugal's World Cup top scorer (10 goals)</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta / Sofascore)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇵🇹 Portugal</th><th>🇺🇿 Uzbekistan</th><th>Reading</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>2.41</b></td><td>0.25</td><td>5 goals from 2.41 xG — efficient conversion, with chance volume and finishing both on point</td></tr>
+      <tr><td class="ht">Possession</td><td><b>66%</b></td><td>34%</td><td>Portugal completely controlled territory, Uzbekistan suppressed all match</td></tr>
+      <tr><td class="ht">Shots (accuracy)</td><td><b>Many; on-target-level domination</b></td><td>Only 2 shots</td><td>Uzbekistan's attack produced almost nothing</td></tr>
+      <tr><td class="ht">Individual</td><td><b>Ronaldo 2 goals; N. Mendes Sofascore 8.8</b></td><td>—</td><td>Mendes's long-range strike + assist-level output was the match best; Ronaldo's brace set several records</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://theanalyst.com/articles/portugal-vs-uzbekistan-stats-world-cup-2026">Opta Analyst — Portugal 5-0 Uzbekistan Stats</a> · <a href="https://www.sofascore.com/news/portugal-5-0-uzbekistan-clinical-controlled-and-loud-in-houston">Sofascore — Match Report</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760461/uzbekistan-portugal">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Ronaldo's record night: six straight World Cups scoring + Portugal's all-time top</div>Ronaldo scored a brace, becoming the first player ever to score at six consecutive World Cups, and overtook Eusébio as Portugal's all-time World Cup top scorer (10 goals). <b>Transferable conclusion: even as he ages, Ronaldo's finishing instinct in the box remains a stable source of Portugal goals; against stronger opponents in the final round they must still protect his shooting space.</b></div>
+    <div class="insight"><div class="who">Nuno Mendes on the left: a two-way match best (Sofascore 8.8)</div>Mendes not only scored from distance, his overlapping runs and recovery work on the left were both top-tier. <b>Transferable conclusion: Portugal's attacking width relies heavily on both full-backs overlapping, and Mendes on the left is the most reliable second attacking outlet.</b></div>
+    <div class="insight"><div class="who">2.41 xG for 5 goals — a complete domination with both efficiency and chance volume</div>Portugal were not a "few chances, many goals" lucky run; they genuinely created plenty of quality chances and converted them cleanly. <b>Transferable conclusion: Portugal's attacking firepower has been validated, and they retain a high ceiling for the knockouts.</b></div>
+    <div class="insight"><div class="who">Uzbekistan 0.25 xG, just 2 shots — attack completely silenced</div>The World Cup newcomers lacked means to transition from defence to attack against a European power. <b>Transferable conclusion: Uzbekistan need to rediscover their organisation against a more even opponent in the final round, otherwise a win will be hard to come by.</b></div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Notes</th></tr>
+      <tr><td class="ht">Portugal big win</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>5-0, both the result and the winning margin delivered</td></tr>
+      <tr><td class="ht">Ronaldo scores / record chase</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Brace, setting several World Cup records</td></tr>
+      <tr><td class="ht">Over lean</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>5 goals far beyond the 2.5 line</td></tr>
+      <tr><td class="ht">Portugal positional dominance</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>66% possession, 2.41 xG, Uzbekistan 0.25</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇵🇹 Portugal · Next: Matchday 3 vs Colombia (battle for the top of Group K)</h4>
+        <ul class="watch">
+          <li><b>The Group K top-spot decider</b>: Colombia have qualified early on 6 points, and after this win Portugal are close behind; the final-round head-to-head very likely decides the group winner and the bracket side.</li>
+          <li><b>Overlapping full-backs are the template</b>: Mendes was top-tier at both ends on the left this match, but against Colombia (the Luis Díaz side) he must balance attack and defence.</li>
+          <li><b>Ronaldo in prime form</b>: his scoring tendency holds, but Colombia's defensive strength far exceeds Uzbekistan's, requiring more patient chance creation.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇺🇿 Uzbekistan · Next: Matchday 3 vs DR Congo (chasing a first win / pride)</h4>
+        <ul class="watch">
+          <li><b>Qualification basically gone</b>: two straight defeats and trailing on goal difference, the final round vs DR Congo is more about a first-ever World Cup win and pride.</li>
+          <li><b>Must solve the transition from defence to attack</b>: just 2 shots and 0.25 xG this match; they must find midfield-to-attack link play and a finishing point.</li>
+          <li><b>A more even matchup</b>: DR Congo are close to Uzbekistan in quality, a more suitable opponent to test their organisation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a Matchday 2 fixture <b>with a huge gap in class, but recast by Portugal's "qualification pressure"</b>: Portugal (FIFA #6, reigning Nations League champions) were surprisingly held to <b>1-1</b> by DR Congo in the opener, with possession around 80% but "<b>control without breakthrough</b>", and 41-year-old Ronaldo extending his major-tournament scoreless run — now Colombia lead Group K on 3 points and Portugal have just 1, so this match is <b>almost a must-win</b> to take control of qualification; Uzbekistan (their first-ever World Cup) lost 1-3 to Colombia in the opener, with <b>zero box touches in the first half (the only such team this tournament), and the goalkeeper spilling a gift</b>, on 0 points with their backs to the wall. The odds are one-sided — Portugal win around <b>1.18</b> (de-vigged implied ≈80%), draw <b>7.00</b> (≈13%), Uzbekistan win <b>15.00</b> (≈7%); the handicap is around Portugal <b>-2</b> and the total line O/U <b>2.5</b>. The real talking points are not the result but three things: ① <b>can Portugal fix the "control without breakthrough"</b> — Martínez expected to recall Dias and field Leão/Conceição to add a spark; ② <b>can Ronaldo end his scoring drought</b> (the biggest entry for retail money); ③ <b>will Uzbekistan dare to push up</b> — if they sit back and defend for 90 minutes again like the opener, Portugal's possession converts more easily, but Uzbekistan also wholly abandon an upset. Base scenario: <b>Portugal win 2-0 / 3-1</b> and reclaim qualification control, with the tension on "by how many, who scores, and a clean sheet". Market Heat Index ≈ 2.5/5 (clean consensus, the talking points being the handicap size + Ronaldo props).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Portugal implied win prob. (de-vigged)</div><div class="v" style="color:#f08a82">≈80%</div></div>
+      <div class="key"><div class="k">Uzbekistan implied win prob. (de-vigged)</div><div class="v" style="color:#5fd3ab">≈7%</div></div>
+      <div class="key"><div class="k">Portugal opening-match points</div><div class="v" style="color:var(--warn)">just 1 pt</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Portugal's "control without breakthrough" must be fixed (carried over from last match)</b>: against DR Congo around 80% possession and 94% passing, yet only 7 shots, 11 box touches and just 0.64 xG, beaten on xG by 0.82 — lacking vertical penetration in behind and a box finisher. This match Martínez is expected to recall Dias and field Leão/Conceição for a spark, otherwise facing yet another deep packed defence they will be drawn into a slog again.</li>
+      <li><b>Ronaldo's scoring drought and farewell narrative (carried over from last match)</b>: 41 years old, a sixth World Cup, 10 consecutive major-tournament games without a goal (blank again in the opener, named by FOX for one run that "buried" a chance) — Ronaldo's goal markets remain the core of retail money, but the risk of pinning the breaking of a packed defence on a static centre-forward was validated in the opener.</li>
+      <li><b>Uzbekistan's "zero attacking output" structural weakness (carried over from last match)</b>: zero box touches in the first half of the opener, with first-half xG of just 0.02 (the only such team this tournament); pure retreating can limit shots on target but also abandons an upset; if they still dare not push up against a more star-studded Portugal, threats are even harder to create. The goalkeeper's big-stage stability after spilling a gift in the opener must improve.</li>
+      <li><b>Qualification arithmetic tilts the scales sharply</b>: Colombia lead on 3 points, Portugal on 1, DR Congo on 1, Uzbekistan on 0 — anything but a Portugal win here and qualification is in jeopardy, so Martínez will most likely <b>no longer rest his core players</b> (Dias/Leão return) and attack all-out; this pushes the game toward "Portugal must win, and want to win well".</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, explained item-by-item for how each changes the tactics or result (including carry-over items from both teams' last match; key players' availability cross-checked from multiple sources)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Portugal · Carried over from last match · "Control without breakthrough" + qualification pressure <span style="color:var(--mut);font-weight:400">· DR Congo-match review transfer · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Portugal were held <b>1-1</b> by DR Congo in the opener, around 80% possession yet zero breakthrough; with Colombia leading, qualification pressure rose sharply</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the DR Congo-match review: Portugal enjoyed around 80% possession and a 94% passing accuracy, yet managed only 7 shots, 11 box touches and just 0.64 xG, beaten on xG by their opponent's 0.82 — much of the circulation stayed on the edge of the box, lacking vertical penetration in behind. Martínez rested Rúben Dias in the opener (saying afterwards he was "not 100% fit") and Rafael Leão, switching to a 4-2-3-1, and the packed-defence-breaking sparks came too late. Now with Colombia on 3 points and Portugal on just 1, this match is <b>almost a must-win</b>. Several outlets (Goal, Yahoo, AOL) expect Martínez to make clear changes: <b>recall Dias and Inácio to anchor the defence, and field Leão and Conceição on the wings</b> to add a spark. <span style="color:var(--warn)">[Official XI per the pre-match FIFA team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Portugal are overwhelming favourites (de-vig ≈80%), the result is not in doubt, and all the value is in <b>whether they win, by how many, and whether they keep a clean sheet</b>. "Control without breakthrough" is the core negative for the deeper handicap (-2) — if Portugal slog against another deep packed defence, the -2 and the over come under pressure; but recalling Leão/Conceição for vertical sparks is precisely the fix for this ailment.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.goal.com/en/news/portugal-uzbekistan-world-cup-preview/bltf65b8be15166aad7" style="color:var(--accent)">Goal — preview/team news</a> · <a href="https://www.aol.com/news/portugal-vs-uzbekistan-world-cup-124718457.html" style="color:var(--accent)">AOL/Yahoo — predicted XI/team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5fd3ab;font-weight:700">Uzbekistan · Carried over from last match · Zero attacking output + unstable goalkeeper <span style="color:var(--mut);font-weight:400">· Colombia-match review transfer · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Uzbekistan lost 1-3 to Colombia in the opener, <b>zero box touches in the first half (the only such team this tournament), goalkeeper spilled a gift</b>; Fayzullaev scored their first-ever World Cup goal</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the Colombia-match review: Uzbekistan all but abandoned attacking in the opener and defended in numbers — zero box touches in the first half, first-half xG of just 0.02 (the only team so far this tournament), their first box touch not coming until the 60th minute, immediately yielding Fayzullaev's tap-in for their first-ever World Cup goal; but in the 65th minute the goalkeeper spilled an underpowered Díaz shot, directly widening the score. This match, against a more star-studded Portugal with higher possession and pressing intensity, Uzbekistan's pure-retreat script will face greater pressure — it is a qualification do-or-die. <span style="color:var(--warn)">[Official XI per the official pre-match team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Uzbekistan's "zero attacking output + big-stage goalkeeper instability" is exactly what Portugal's attack (Ronaldo/Leão/Pedro Neto/B. Fernandes set pieces) is best at exploiting. If Kapadze again sets up a deep retreat and the goalkeeper falters again, the goals conceded could slide toward 3-0/4-0, directly tying into the deeper handicap (-2) and the over; the only two-sidedness is that if Uzbekistan dare to push up, it gives Portugal conversion space but also leaves gaps in behind.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/portugal/world-cup/preview/portugal-vs-uzbekistan-prediction-team-news-lineups_599765.html" style="color:var(--accent)">Sports Mole — preview/team news</a> · <a href="https://khelnow.com/football/world-football-portugal-vs-uzbekistan-preview-fifa-world-cup-202606-2" style="color:var(--accent)">Khel Now — preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ Key player check · Ronaldo fit and starting <span style="color:var(--mut);font-weight:400">· ESPN · 101GreatGoals · FOX · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multi-source confirmation: <b>Ronaldo is fully recovered, already started against DR Congo in the opener</b>, available this match — no new injury, no 🔁 update needed to the thesis</div>
+      <p style="font-size:13.5px">Key-player availability cross-checked from multiple sources: Ronaldo strained a right-thigh muscle in training at Al Nassr in late February and missed the warm-ups against Mexico and the USA, but had already returned as captain in two warm-ups before the tournament (45 minutes vs Chile, 65 minutes vs Nigeria), and <b>started the full match vs DR Congo in the opener</b> — proving he is fit. Martínez says Ronaldo remains the core but may be "used selectively" (referencing Santos's rotation in 2022). Across ESPN, 101GreatGoals and FOX: <b>no new injury/suspension, expected to start this match</b>, the only variable being whether Martínez substitutes him to preserve fitness. <span style="color:var(--good)">[Multi-source agreement: available ✓]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Ronaldo is the core of his goal markets (first scorer/anytime), and the farewell narrative is the biggest retail entry. Given he blanked in the opener (a major-tournament scoreless run), whether he can stop the bleeding against Uzbekistan's fragile defence is the biggest uncertainty in the player markets; but even if he is protected and taken off, Portugal's overall firepower (Leão/B. Fernandes/Ramos) still holds a huge quality gap over Uzbekistan. <b>No personnel negative, the thesis holds.</b></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49040297/cristiano-ronaldo-world-cup-fitness-portugal-not-seen-play" style="color:var(--accent)">ESPN — Ronaldo World Cup fitness remarks</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/cristiano-ronaldo-world-cup-2026-schedule-fixtures-kick-off-times-where-to-watch-news-updates-portugal/" style="color:var(--accent)">101GreatGoals — schedule/form update</a> · <a href="https://www.foxsports.com/articles/soccer/cristiano-ronaldo-fitness-concerns-addressed-by-roberto-martinez-as-portugal-boss-demands-highest-standards-for-everyone-ahead-of-2026-world-cup" style="color:var(--accent)">FOX — Martínez on Ronaldo's fitness</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee announced <span style="color:var(--mut);font-weight:400">· Morocco World News / UzDaily / Elbotola · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Moroccan official <b>Jalal Jayed</b> to take charge (the first Moroccan referee to officiate a World Cup match since 2002); the match is at Houston's NRG Stadium</div>
+      <p style="font-size:13.5px">Multiple sources (Morocco World News, UzDaily, Elbotola, Dailysports) confirm FIFA has appointed Moroccan official <b>Jalal Jayed</b> for this Group K Matchday 2 game, with compatriots Zakaria Brinsi and Mustapha Akarkad as assistants and South Africa's Abongile Tom and Zakhele Siwela as fourth/fifth officials. Jayed has been a FIFA international referee since 2019, officiating AFCON 2023 and 2025 (including the 2025 third-place play-off Egypt vs Nigeria), and is the first Moroccan referee selected to officiate a World Cup match since Mohamed Guezzaz in 2002. NRG Stadium is a retractable-roof venue (Houston is scorching in June, expected to be closed-roof/air-conditioned, less of a fitness impact than open-air). <span style="color:var(--warn)">[Jayed's VAR setup for this match and his per-match card/penalty breakdown at major tournaments have limited sample · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: in a game with such a quality gap, the referee has almost no impact on the result — Portugal need no marginal help. The refereeing's only value is in the card/penalty markets: if Portugal attack fiercely and Uzbekistan foul frequently to intercept, the yellow-card and box-penalty probability rises slightly. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.moroccoworldnews.com/2026/06/323071/world-cup-2026-moroccan-referee-jalal-jayed-to-officiate-portugal-vs-uzbekistan-clash/" style="color:var(--accent)">Morocco World News — Jayed appointment announced</a> · <a href="https://www.uzdaily.uz/en/moroccan-officials-appointed-for-uzbekistan-portugal-world-cup-match/" style="color:var(--accent)">UzDaily — officiating crew appointed</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed" style="color:var(--accent)">Wikipedia — Jalal Jayed profile</a></div>
+    </div>
+  </section>
+
+  <!-- Official Lineups & Reading -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2018,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Official Lineups &amp; Reading <span style="font-size:12px;color:var(--mut);font-weight:500">· Announced ~1 hour pre-match · Compared with the prediction + whether the Quick Summary is revised</span></h2>
+    <div class="sub">Data sources: media-level official team sheet (Oddschecker with the full bench + WebSearch aggregation, two sources agreeing player-by-player ✅ officially confirmed); the FIFA Match Centre LINE UP widget is still loading. Captains per the established armband (Ronaldo / Shomurodov), <span style="color:var(--warn)">FIFA C badge TBC</span>.</div>
+
+    <h4>🇵🇹 Portugal official XI (4-2-3-1) · Martínez</h4>
+    <div class="lineup">Diogo Costa; João Cancelo · Rúben Dias · Renato Veiga · Nuno Mendes; Vitinha · João Neves; Pedro Neto · Bruno Fernandes · João Félix; Cristiano Ronaldo(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: Rafael Leão, Bernardo Silva, Gonçalo Ramos, Francisco Conceição, Diogo Dalot, Gonçalo Inácio, Rúben Neves, Trincão</div>
+
+    <h4 style="margin-top:16px">🇺🇿 Uzbekistan official XI (3-4-2-1) · Kapadze</h4>
+    <div class="lineup">Nematov; Ashurmatov · Abdullaev · Khusanov; Karimov · Shukurov · Khamrobekov · Nasrullaev; Fayzullaev · G'aniev; Shomurodov(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Bench: Oston Urunov, Igor Sergeev, Dostonbek Khamdamov, Jamshid Iskanderov, Utkir Yusupov (goalkeeper) and others</div>
+
+    <h4 style="margin-top:18px">vs predicted XI (item-by-item "Why it matters")</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">POR · Left attack</td><td>Rafael Leão recalled to the XI</td><td><b>Leão on the bench</b>, João Félix starts</td><td>The predicted thesis of "recall Leão to add a spark and fix control-without-breakthrough" <b>was not executed</b> — Martínez chose a technical front line of Félix/Pedro Neto, keeping Leão as an impact sub. The spark to break a packed defence may still come late, a point to watch for the deeper handicap</td></tr>
+      <tr><td class="ht">POR · Centre-back pairing</td><td>Gonçalo Inácio alongside Dias</td><td><b>Renato Veiga</b> alongside Dias</td><td>Dias's return as expected (steadier defence ✓), but the partner is Veiga not Inácio — little impact against Uzbekistan's zero attacking threat, the clean-sheet probability still high</td></tr>
+      <tr><td class="ht">POR · Lone striker</td><td>Ronaldo starts</td><td>Ronaldo(C) starts ✓</td><td>Consistent with the prediction — Ronaldo's scoring drought/farewell narrative remains the biggest entry for the player markets</td></tr>
+      <tr><td class="sc">UZB · Goalkeeper</td><td>Yusupov starts</td><td><b>Nematov starts</b> (Yusupov on the bench)</td><td>Changing goalkeeper after the gift in the opener is Kapadze's direct response to "big-stage instability"; whether the keeper steadies affects the goals conceded and the over settlement</td></tr>
+      <tr><td class="sc">UZB · System</td><td>3-4-2-1 / 4-2-3-1 low block</td><td><b>3-4-2-1</b> low bunker ✓</td><td>A back three + two wing-backs in a dense retreat as expected, Khusanov central — the thesis (pure retreat to chase a counter) holds</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">Tactical read (Quick Summary conclusion: partly revised)</h4>
+    <ul class="cl">
+      <li><b>🔁 One revision to the Quick Summary conclusion</b>: the original "Martínez recalls Leão to the XI to fix control-without-breakthrough" <b>did not happen</b> — Leão is on the bench. The actual front line is a combination of technique, running and passing in <b>Félix (left) + Bruno (centre) + Pedro Neto (right)</b>, rather than Leão's direct 1-v-1 spark. The implication: breaking Uzbekistan's low bunker relies more on "circulation/penetration + set pieces + Ronaldo's box finishing", with reduced vertical directness, so <b>the deeper handicap (-2) may land later in the game</b>, with Leão/Ramos/Bernardo the expected "second-half reinforcement" sparks.</li>
+      <li><b>Defence steadier as expected</b>: Dias returns to anchor (alongside Renato Veiga), against an Uzbekistan side with first-half xG of just 0.02 and zero attacking output this tournament — Portugal's clean-sheet probability remains high, and the thesis "the value is in the handicap and goals, not the result" holds.</li>
+      <li><b>Uzbekistan's goalkeeper change = a targeted fix for the opener's ailment</b>: Nematov replaces Yusupov, who spilled the gift in the opener, paired with a back three + two wing-backs in a 3-4-2-1, the goal still being "control the goals conceded, chase points via Shomurodov/Fayzullaev counters". If the keeper steadies and the bunker does not leak, the goals conceded are more likely to stop at 1-2 rather than slide to 3-4 — a marginal negative for the over and the deeper handicap.</li>
+      <li><b>Ronaldo starting = the player-market thesis unchanged</b>: Ronaldo(C) leads the line, against Uzbekistan's fragile defence his best window to end the major-tournament scoring drought; the variable is still whether Martínez takes him off early after a big lead to preserve fitness (affecting his player props and the winning margin).</li>
+    </ul>
+
+    <div class="note">📊 <b>Market reaction</b>: after the official line-ups, the 1X2 saw no material move (Portugal win ≈1.18 was long saturated). The only line-relevant information is <b>Leão not starting</b> — in theory slightly weakening the "blow them away early" expectation and modestly dampening immediate enthusiasm for the deeper handicap (-2), but the bench firepower (Leão/Bernardo/Ramos) remains ample and the direction is unchanged. <span style="color:var(--warn)">[The specific tick-by-tick movement of the handicap/totals around the announcement · TBC]</span> For analysis only — not betting advice.</div>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">Sources: <a href="https://www.oddschecker.com/insight/football/20260623-portugal-vs-uzbekistan-confirmed-lineups" style="color:var(--accent)">Oddschecker — official XI (with full bench)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021503" style="color:var(--accent)">FIFA Match Centre</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probability (de-vigged) · Group K picture · totals market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over / Under 2.5 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group K four teams · FIFA ranking (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇵🇹 Portugal</th><th>🇺🇿 Uzbekistan</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#6 range</td><td class="sc">#50 range</td></tr>
+      <tr><td>Opening-match result</td><td class="ht">1-1 draw vs DR Congo (control without breakthrough, Ronaldo blank)</td><td class="sc">1-3 loss vs Colombia (zero first-half box touches, goalkeeper spill)</td></tr>
+      <tr><td>Group K points (before Matchday 2)</td><td colspan="2">Colombia 3 pts lead; Portugal 1, DR Congo 1, Uzbekistan 0 — Portugal almost must win here to control qualification</td></tr>
+      <tr><td>Head coach</td><td class="ht">Roberto Martínez (Spanish)</td><td class="sc">Timur Kapadze (Uzbek)</td></tr>
+      <tr><td>Key players</td><td class="ht">Ronaldo(C), Bruno Fernandes, Leão, Vitinha</td><td class="sc">Shomurodov(C), Fayzullaev, Khusanov (Manchester City)</td></tr>
+      <tr><td>Match talking points / questions</td><td class="ht">Can they fix "control without breakthrough"; Ronaldo end the drought; clean sheet</td><td class="sc">Will they dare push up; goalkeeper steady; control the goals conceded</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 quarter-finals (lost on penalties to France) · WC 2022 quarter-finals (lost to Morocco) · Nations League 2025 champions</td><td class="sc">Asian Cup 2023 quarter-finals · first-ever World Cup</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win 1.18 (implied ≈80%)</td><td class="sc">Win 15.00 (≈7%) · Draw 7.00 (≈13%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5 (leans Over) — the core markets are the Portugal handicap (-2) and goals</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from decimal odds (≈80/13/7, after normalising). Odds source: FanDuel (Portugal -550 → 1.18, draw +600 → 7.00, Uzbekistan +1400 → 15.00); BetOnline Portugal -450 → 1.22. Handicap around Portugal -2 (-102), total line O/U 2.5 (the Over leads the market). Specific odds per the real-time pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this tournament's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendlies)</b> against <b>this tournament's actual values (Matchday 1)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" — never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This tournament's actual (Matchday 1)</th><th>Delta &amp; reading</th></tr>
+      <tr><td class="ht">🇵🇹 Portugal · Attack</td><td class="ht">Nations League champion-level firepower, high qualifying output (around 71% possession), a luxurious attack</td><td class="ht">Matchday 1: <b>1 goal</b>, xG just <b>0.64</b>, 11 box touches, "control without breakthrough"</td><td><b>Far below</b> expectation: huge possession yet zero penetration, lacking depth and a box finisher — recalling Leão/Conceição this match is precisely to fix this ailment</td></tr>
+      <tr><td class="ht">🇵🇹 Portugal · Defence</td><td class="ht">Mostly Europe-based defenders, led by Dias, solid overall</td><td class="ht">Matchday 1: xGA <b>0.82</b>, out-shot by the opponent (7 vs 8)</td><td><b>Slightly below</b> expectation: young centre-backs looked shaky against the counter; recalling Dias this match steadies it, and the clean-sheet probability against Uzbekistan rises</td></tr>
+      <tr><td class="sc">🇺🇿 Uzbekistan · Attack</td><td class="sc">Mid-table in Asia, reliant on Shomurodov as a focal point and counters, limited creativity</td><td class="sc">Matchday 1: <b>1 goal</b>, first-half xG just <b>0.02</b>, zero first-half box touches</td><td><b>Extremely low</b>: the only team this tournament with zero first-half box touches, a pure retreat almost abandoning attack, scoring their first-ever goal only via a Fayzullaev tap-in</td></tr>
+      <tr><td class="sc">🇺🇿 Uzbekistan · Defence</td><td class="sc">Lost just 1 of 16 in AFC qualifying, few goals conceded, solid low-block organisation</td><td class="sc">Matchday 1: conceded 3 (including a goalkeeper spill), allowed 15 shots</td><td><b>Under pressure</b>: retreating can limit shots on target (allowing only 4 on target), but big-stage goalkeeper instability widened the score — higher risk against Portugal's attack</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Portugal's attacking output in the opener was <b>far below</b> Nations League champion level (xG 0.64, control without breakthrough), the direct reason for recalling sparks this match; Uzbekistan's attack is <b>extremely low</b> (first-half xG 0.02), with defence reliant on a pure retreat but the goalkeeper unstable. The deep data aligns with the thesis of "Portugal must fix their breakdown efficiency, value in the handicap and goals". Sources: Opta Analyst · Sofascore/FotMob (Matchday 1) · FIFA/team-history major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>Model projected xG for this match (magnitude)</td><td class="ht">Portugal ≈2.2</td><td class="sc">Uzbekistan ≈0.5</td><td>After calibration Portugal are overwhelmingly dominant; the variables are whether "control without breakthrough" recurs + whether Martínez protects Ronaldo midway (affecting the winning margin)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Portugal rank among the world's top and are the strongest in Group K; Uzbekistan's FIFA #50 range is mid-table in Asia. The prediction markets and bookmaker de-vig agree in giving Portugal a win prob. of ≈80%, with their qualification probability still high (but lower than pre-tournament after the opening draw)</td><td>After opponent-strength calibration Portugal's sample is high-quality (Uzbekistan's debut, with very little big-stage sample)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Portugal's field tilt will press into Uzbekistan's half for long spells, with a big xT and box-touch advantage, except the opener proved "high field tilt ≠ high xG"</td><td><b>Trap reminder</b>: the territorial dominance is barely in doubt, and the real risk for the handicap/over is exactly a relapse of Portugal's "control without breakthrough" + Ronaldo taken off early compressing the winning margin</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = many long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and any missing items are marked "TBC" — figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">The Portugal-win direction is absolutely uniform; the genuine disagreement is all in "handicap size (-1.5 vs -2) + goals + whether Ronaldo scores"; after the opening draw the deeper handicap is slightly doubted, heat moderate-to-low</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · One-sided consensus, but the opener's "control without breakthrough" casts doubt on the deeper handicap</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Portugal are overwhelming favourites (de-vig ≈80%), no disagreement on the result, no sentiment premium. All the value is in the <b>handicap size (-1.5 vs -2), goals (O/U 2.5) and whether Ronaldo scores/over a line</b>. Portugal's opener "control without breakthrough" + qualification pressure leave the market with both motive (must attack) and doubt (breakdown efficiency) on "-2", the reason the heat sits at 2.5/5 rather than lower.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: Portugal win unanimous · Draw/Uzbekistan ≈0)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Racing Post</td><td>Established UK outlet</td><td>Portugal big win (a 5-1 bet builder), focused on Ronaldo/Leão goals and the Portugal -2 handicap</td></tr>
+      <tr><td>SportsLine</td><td>US betting media</td><td>Portugal win + Over 2.5 / Over 3.0; backs the attack unleashing its firepower</td></tr>
+      <tr><td>Yahoo / The Sports Rush</td><td>Prediction media</td><td>Predict a 3-1 Portugal win (Uzbekistan pushing up late for a consolation)</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Portugal fully dominant; Uzbekistan's open-play creativity extremely weak</td></tr>
+      <tr><td>Goal / Sports Mole</td><td>Pre-match preview</td><td>Portugal win + watch Martínez's tweaks (Dias/Leão return) and the qualification situation</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (moderate-to-low)</b>: the result direction is absolutely uniform (no one backs Uzbekistan/the draw) — one-sided consensus, no sentiment premium. The real disagreement is only in the <b>handicap size</b> (-1.5 vs -2), <b>goals</b> and <b>whether Ronaldo scores/over a line</b>. Ronaldo's farewell narrative is a traffic angle, not a source of money movement; the opener's "control without breakthrough" leaves some analysts reserved on -2.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Portugal win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="ht">≈1.18–1.22</td><td>Portugal overwhelming favourites; draw 7.00 / Uzbekistan 15.00</td></tr>
+      <tr><td>06-20 cutoff</td><td>FanDuel / BetOnline</td><td class="ht">1.18 (-550) / 1.22 (-450)</td><td>Portugal's ultra-short price barely moved (the opening draw did not shake the 1X2 pricing)</td></tr>
+      <tr><td>06-20</td><td>Over / Under</td><td colspan="2" class="ht">Total line O/U 2.5, the Over leads the market (some platforms list Over 3.0)</td></tr>
+      <tr><td>Handicap (AH reference)</td><td>Portugal -2 (-102)</td><td colspan="2" class="ht">Portugal -2 is the sharp side; -1.5 is favoured more cautiously due to the opener's "control without breakthrough"</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="ht">Portugal win ≈1.20; handicap -1.5/-2</td><td>Priced on "reigning Nations League + the Ronaldo generation vs an Asian debutant", the opening line already pressed Portugal into ultra-short favourites with the handicap between -1.5/-2</td></tr>
+      <tr><td>Open (post-Matchday-1 repricing)</td><td class="ht">Portugal win 1.18–1.22; handicap -2 but -1.5 favoured</td><td><b>Repricing from both teams' Matchday 1</b>: Portugal's 1-1 "control without breakthrough" exposed a packed-defence-breaking efficiency problem → the handicap stayed -2 on the sharp side thanks to "qualification pressure + recalling Leão", but the market became clearly more cautious on whether "-2 will land"; Uzbekistan's 1-3 exposed the goalkeeper and zero attack, supporting the over line</td></tr>
+      <tr><td>Current line (06-20→now)</td><td class="ht">Portugal win 1.18; O/U 2.5 leaning Over / handicap -2 vs -1.5 in tug-of-war</td><td>The 1X2 is locked (pricing extremely converged); the most active price discovery is on the <b>handicap (-1.5 vs -2) and the totals</b> — "whether Portugal fix control-without-breakthrough + Ronaldo's form + whether they rotate early" is the core variable for whether the deeper handicap lands</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's odds were extreme from the opening line (≈1.20, -1.5/-2), but unlike a France/Iraq-style "blowout line" — <b>Portugal's opener "control without breakthrough"</b> makes the deeper handicap (-2) more cautiously priced, with the -1.5 side gaining more protection. The 1X2 has no value (saturated pricing), the only information-rich markets being the <b>Portugal handicap (-1.5/-2) and goals</b> — the risk point is Martínez attacking but failing to break through + taking Ronaldo off early compressing the winning margin. Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (aggregate)</b>: Portugal about <b>80%</b> win prob., draw 13%, Uzbekistan 7% — highly consistent with the bookmaker de-vig, no premium. Group K qualification: Portugal still favoured but lower than pre-tournament after the opening draw, in jeopardy if they fail to win here. <span style="color:var(--warn)">[This single match's volume and momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>the criticism of Martínez</b> — the 1-1 draw with DR Congo and resting Dias/Leão were widely questioned, so his tweaks and response are a focal point.</li>
+      <li><b>Sentiment focus ②</b>: <b>Ronaldo's scoring drought and farewell narrative</b> — 41 years old, a sixth World Cup, a major-tournament scoreless run, Ronaldo's goal props remain the main retail traffic entry.</li>
+      <li><b>Uzbekistan narrative</b>: the sentiment of a first-ever World Cup + the highlight of Fayzullaev's first-ever goal, but the public broadly expects another defeat with no upset money; Khusanov (Manchester City) against Portugal's attack is a technical talking point.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the result direction is absolutely clear (Portugal), with bookmakers and prediction markets aligned (≈80%), Heat Index <b>2.5/5</b>. The traffic comes from <b>Ronaldo goal props + Martínez's tweaks</b> rather than the 1X2; the most information-rich are the <b>Portugal handicap (-1.5/-2), goals and whether Ronaldo scores</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-uzbekistan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a260w1C6DOJl/">Racing Post — odds/betting</a> · <a href="https://www.sportsline.com/insiders/portugal-vs-uzbekistan-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — prediction/odds</a> · <a href="https://www.squawka.com/ca/news/world-cup/match-preview-portugal-vs-uzbekistan-world-cup-2026/">Squawka — preview</a> · <a href="https://sports.yahoo.com/articles/portugal-vs-uzbekistan-picks-predictions-090406819.html">Yahoo Sports — prediction/odds</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is Moroccan official <b>Jalal Jayed</b> (FIFA international since 2019, AFCON 2023/2025), with assistants Zakaria Brinsi and Mustapha Akarkad (both Moroccan) and South Africa's Abongile Tom and Zakhele Siwela as fourth/fifth officials. Sources: Morocco World News, UzDaily, Elbotola, Wikipedia. <span style="color:var(--warn)">[This match's specific VAR setup · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's uniform new rules (actual samples from the last two major tournaments + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Actual major-tournament samples (AFCON 2023 + 2025)</b>: Jayed officiated AFCON 2023 and 2025 and was assigned the AFCON 2025 third-place play-off (Egypt vs Nigeria, Casablanca's Stade Mohammed V) — a recognition of his game management. His precise per-match card/penalty breakdown at major tournaments has limited public sample. <span style="color:var(--warn)">[Yellow-card/penalty-rate breakdown · no public game-by-game major-tournament sample · TBC]</span></li>
+      <li><b>Officiating profile</b>: from the CAF (African) system, a long-time top-flight whistle in Morocco's Botola (including Casa/Rabat derbies, the 2023-24 Moroccan Throne Cup final) — typically somewhat tolerant of physical contact, well-managed on tactical fouls and accumulation. He is the first Moroccan referee to officiate a World Cup match since 2002, with zero World Cup single-match sample (a debut).</li>
+      <li><b>Officiating history with both teams</b>: no notable public officiating history with either Portugal or Uzbekistan, so no team bias to speak of.</li>
+      <li><b>This tournament's uniform new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may speak to the referee, semi-automated offside; this tournament's officiating environment is strict. If Uzbekistan foul heavily to intercept Portugal's attacks, accumulated yellows and box-penalty risk rise; semi-automated offside will precisely catch Ronaldo/Leão's borderline offside sprints (a slight dampener on marginal-offside goals). NRG is closed-roof/air-conditioned, so the heat has little fitness impact.</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing analysis</b>: this match is "Portugal's overwhelming attack vs Uzbekistan's packed defence" — the refereeing's only value is in cards/penalties: Uzbekistan defenders frequently fouling to halt Leão/Pedro Neto's breaks (accumulating fouls) and the penalty threshold for box grappling are the points to watch. Given Jayed's major-tournament per-match card/penalty breakdown has limited sample and this is his World Cup debut, treat the card/penalty markets as a "tendency", not an actionable basis.</div>
+  </section>
+
+  <!-- Line-ups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version in the ✅ Official Lineups module above</span></h2>
+    <div class="sub">Predicted XI (Goal / Sports Mole / Yahoo projections, not official; official line-ups per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇵🇹 Portugal Predicted XI (4-2-3-1) · Martínez · expected to recall Dias/Inácio + field Leão/Conceição</h4>
+    <div class="lineup">Diogo Costa; João Cancelo · Rúben Dias · Gonçalo Inácio · Nuno Mendes; João Neves · Vitinha; Pedro Neto · Bruno Fernandes · Rafael Leão; Cristiano Ronaldo(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Cristiano Ronaldo (C)</td><td>Striker / Captain</td><td>226 caps, 143 goals, both records; a sixth World Cup; blanked in the opener (a major-tournament scoreless run), fit and available to start; the core of Ronaldo goal props</td></tr>
+      <tr><td class="ht">Bruno Fernandes</td><td>Midfield / organising hub</td><td>88 caps, 29 goals, Martínez's creative engine and set-piece taker; key to prising open a packed defence</td></tr>
+      <tr><td class="ht">Rafael Leão</td><td>Winger / AC Milan</td><td>Rested in the opener, expected to be recalled to the XI this match — the strongest 1-v-1 spark to break a packed defence, the fix for "control without breakthrough"</td></tr>
+      <tr><td class="ht">Rúben Dias</td><td>Centre-back / Manchester City</td><td>Rested in the opener as "not 100% fit", expected to return to anchor the defence this match, raising the clean-sheet probability</td></tr>
+    </table>
+    <h4>🇺🇿 Uzbekistan Predicted XI (3-4-2-1 / 4-2-3-1, leaning low) · Kapadze</h4>
+    <div class="lineup">Yusupov; Sayfiev · Khusanov · Ashurmatov · Nasrullaev; Shukurov · Mozgovoy; Khamdamov · Fayzullaev · Urunov; Shomurodov(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position/Role</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Eldor Shomurodov (C)</td><td>Striker / Captain</td><td>Their all-time top scorer (92 caps, 44 goals); a focal-point centre-forward, counters and aerial duels are Uzbekistan's main finishing outlet</td></tr>
+      <tr><td class="sc">Abbosbek Fayzullaev</td><td>Attacking midfielder / creative core</td><td>Scored their first-ever World Cup goal in the opener; key to carrying the ball forward and transitioning from defence to attack</td></tr>
+      <tr><td class="sc">Abdukodir Khusanov</td><td>Centre-back / Manchester City</td><td>22 years old, the squad's highest market value; excellent physically and in duels, the core for containing Portugal's attack <span style="color:var(--warn)">position/system TBC</span></td></tr>
+      <tr><td class="sc">Jaloliddin Masharipov</td><td>Midfielder / pre-match injury</td><td>An experienced midfielder, with a pre-match injury at one point; reportedly still in the squad, availability TBC <span style="color:var(--warn)">TBC</span></td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (Goal / Sports Mole / Yahoo); <b>defer to the official pre-match team sheet · TBC</b>. The Portugal focus is the scale of Martínez's tweaks (whether Dias/Leão return as expected, whether Ronaldo starts the full match); the Uzbekistan focus is the formation (3-4-2-1 vs 4-2-3-1), the goalkeeper choice and Masharipov's availability.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments (the World Cup + their respective continental cups)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇹 Portugal · Roberto Martínez</div>
+        <div class="role">4-2-3-1 possession press + individual sparks, Ronaldo as the lone striker, rich set-piece resources</div>
+        <ul class="cl">
+          <li>Portugal's signature is <b>high possession + top-tier Europe-based individual quality + rich set pieces</b> — Nations League 2025 champions, Euro 2024 quarter-finals (lost on penalties to France), WC 2022 quarter-finals (lost to Morocco), a very high floor but with fluctuating efficiency at breaking a packed defence.</li>
+          <li>Cross-reference: knocked out 0-1 by Morocco's bunker at the WC 2022 quarter-finals, and out on penalties to France after a 120-minute 0-0 at the Euro 2024 quarter-finals — <b>knocked out at both major tournaments by "control without breakthrough" against a packed defence</b>. The opener's 1-1 with DR Congo is a relapse of the same ailment, a structural risk rather than a fluke.</li>
+          <li>This match's angle: Uzbekistan's zero attacking output and goalkeeper instability are targets for Portugal's attack (Leão/Pedro Neto/B. Fernandes set pieces); they must add vertical penetration in behind and deploy Leão's spark early rather than relying on a static Ronaldo — under qualification pressure they no longer rest the core players.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fd3ab">🇺🇿 Uzbekistan · Timur Kapadze</div>
+        <div class="role">3-4-2-1 / 4-2-3-1 low-block defence + counters and set pieces, Shomurodov as the focal point</div>
+        <ul class="cl">
+          <li>Local coach Kapadze brings a disciplined low-block philosophy, and Uzbekistan's realistic style is <b>a dense retreat + chasing points via counters/set pieces + Shomurodov as the focal point</b> — reaching the Asian Cup 2023 quarter-finals on defensive discipline and counter-attacking efficiency.</li>
+          <li>Cross-reference: the Asian Cup 2023 quarter-final exit (knocked out by Qatar) is their best recent big-stage sample; this tournament's 1-3 loss to Colombia, with zero first-half box touches and a goalkeeper spill, is the core ailment. With no World Cup history sample, their big-stage psychology is an unknown.</li>
+          <li>This match's approach: the realistic goal is not to win but to <b>control the goals conceded and chase a theoretical qualification chance</b>. They must tighten the back three/double pivot to lock the centre, compress Leão/B. Fernandes's receiving space, have the goalkeeper steady, and chase a face-saving goal via Shomurodov's hold-up and Fayzullaev's counters; if they sit and defend for 90 minutes again like the opener, they wholly abandon any chance of an upset.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Goal / Sports Mole <small>· Pre-match preview</small></div>Portugal's quality and individual ceiling are the main thread; Martínez is expected to recall Dias and field Leão/Conceição to fix the opener's "control without breakthrough". If Uzbekistan's zero attacking output and goalkeeper instability are not fixed, Portugal will amplify them.</div>
+    <div class="insight"><div class="who">SportsLine / Racing Post <small>· Betting media</small></div>Recommend a Portugal win + Over 2.5/3.0, watching Ronaldo/Leão goals and the Portugal -2 handicap; see Portugal's clean-sheet potential as high and Uzbekistan's open-play threat as almost nil.</div>
+    <div class="insight"><div class="who">Prediction market (Kalshi/Polymarket) <small>· Market consensus</small></div>Portugal win ≈80% / draw 13% / Uzbekistan 7%, consistent with the bookmaker de-vig, no premium. Portugal's qualification is still favoured but lower after the opening draw, this match essentially a fight for control of qualification.</div>
+    <div class="insight"><div class="who">Composite · core uncertainty and traps <small>· Opta / FotMob</small></div>The real uncertainty is not the result but <b>whether Portugal fix their breakdown efficiency, by how many they win, and whether they keep a clean sheet</b>. ⚠ Trap reminder: Portugal's "control without breakthrough" is a structural ailment (knocked out at both WC2022 + Euro2024 by it), and if it relapses + Ronaldo is taken off early, the winning margin could be compressed, giving the deeper handicap (-2) and the over a marginal risk of failing — the one variable to watch.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a Portugal win (2-0 / 3-1 / 2-1) is the base scenario, reclaiming qualification control; the draw (≈13%) and an Uzbekistan win (≈7%) are tail outcomes, requiring Portugal to relapse into "control without breakthrough" + Uzbekistan's goalkeeper being heroic + the retreat working all at once. Given the opening draw and the qualification pressure, Portugal's motive to attack is ample.</li>
+      <li><b>Key men</b>: Ronaldo (POR/records and finishing, drought to end), Leão (POR/the strongest spark to break a packed defence), Bruno Fernandes (POR/organisation and set pieces), Shomurodov (UZB/the focal point and only hope), Khusanov (UZB/containing Portugal's attack), the goalkeeper (UZB/key to stopping the bleeding).</li>
+      <li><b>Matchwinners</b>: this match's real talking point is <b>whether Portugal can fix their breakdown efficiency, fully unleash their firepower and keep a clean sheet</b>, and <b>whether Ronaldo can end his scoring drought</b> — deciding the settlement of the handicap (-1.5/-2) and the totals.</li>
+      <li><b>Market view</b>: bookmakers and prediction markets are absolutely aligned (Portugal, ≈80%), the 1X2 has no value; the most information-rich are the <b>Portugal handicap (-1.5/-2), goals and whether Ronaldo scores/over a line</b>. Heat Index 2.5/5 (traffic from Ronaldo props + Martínez's tweaks).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② the scale of Portugal's tweaks (whether Dias/Leão return, whether Ronaldo starts the full match/is substituted midway); ③ Uzbekistan's formation (3-4-2-1 vs 4-2-3-1), the goalkeeper choice and Masharipov's availability; ④ Jayed's VAR setup for this match and his major-tournament per-match card/penalty breakdown (a World Cup debut, no game-by-game sample); ⑤ Kalshi/Polymarket volume and momentum breakdown for this match; ⑥ the Asian handicap line (-1.5/-2) and the totals line (O/U 2.5) — specific odds per the real-time pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.goal.com/en/news/portugal-uzbekistan-world-cup-preview/bltf65b8be15166aad7">Goal — preview/XI/qualification</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup/preview/portugal-vs-uzbekistan-prediction-team-news-lineups_599765.html">Sports Mole — preview/team news/XI</a> · <a href="https://www.aol.com/news/portugal-vs-uzbekistan-world-cup-124718457.html">AOL/Yahoo — prediction/team news/odds</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-uzbekistan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a260w1C6DOJl/">Racing Post — odds/betting</a> · <a href="https://www.sportsline.com/insiders/portugal-vs-uzbekistan-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — prediction/odds</a> · <a href="https://www.squawka.com/ca/news/world-cup/match-preview-portugal-vs-uzbekistan-world-cup-2026/">Squawka — preview</a> · <a href="https://www.skysports.com/football/news/12040/13543106/world-cup-2026-group-k-guide-fixtures-schedule-standings-and-odds-for-portugal-dr-congo-uzbekistan-and-colombia">Sky Sports — Group K guide/standings</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49040297/cristiano-ronaldo-world-cup-fitness-portugal-not-seen-play">ESPN — Ronaldo fitness remarks</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/cristiano-ronaldo-world-cup-2026-schedule-fixtures-kick-off-times-where-to-watch-news-updates-portugal/">101GreatGoals — Ronaldo form/schedule</a> · <a href="https://www.foxsports.com/articles/soccer/cristiano-ronaldo-fitness-concerns-addressed-by-roberto-martinez-as-portugal-boss-demands-highest-standards-for-everyone-ahead-of-2026-world-cup">FOX — Martínez on Ronaldo</a><br>
+      • <a href="https://www.moroccoworldnews.com/2026/06/323071/world-cup-2026-moroccan-referee-jalal-jayed-to-officiate-portugal-vs-uzbekistan-clash/">Morocco World News — referee Jayed announced</a> · <a href="https://www.uzdaily.uz/en/moroccan-officials-appointed-for-uzbekistan-portugal-world-cup-match/">UzDaily — officiating crew</a> · <a href="https://en.wikipedia.org/wiki/Jalal_Jayed">Wikipedia — Jalal Jayed</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K">Wikipedia — Group K</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-22 · Charts use verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#1fa67a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Portugal win','Draw','Uzbekistan win'],datasets:[{data:[80,13,7],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, leaning Over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Portugal','Colombia','Uzbekistan','DR Congo'],datasets:[{data:[6,14,50,60],backgroundColor:[HT,'#e8cd6b','#5fd3ab','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/counter','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Portugal',data:[8,7.5,8.5,8.5,9,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Uzbekistan',data:[5.5,4.5,5,5,4.5,4],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 乌兹别克斯坦 vs 哥伦比亚 · 2026世界杯 K组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-uzbekistan-vs-colombia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-uzbekistan-vs-colombia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-uzbekistan-vs-colombia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-uzbekistan-vs-colombia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-uzbekistan-vs-colombia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#1fa67a;--sc:#d4af37;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#15724f,#8a6d1c);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0e2a20,#1a2410);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#5fd3ab;font-weight:600}td.sc{color:#e8cd6b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-uzbekistan-vs-colombia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-uzbekistan-vs-colombia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-uzbekistan-vs-colombia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 乌兹别克斯坦 1-3 哥伦比亚 · 2026 世界杯 · K组首轮 · 乌兹别克斯坦队史首次晋级 vs 哥伦比亚错过卡塔尔后强势回归</span>
+  <h1>乌兹别克斯坦 vs 哥伦比亚</h1>
+  <div class="meta">2026年6月17日 · 墨西哥城 Estadio Azteca（海拔约 2,250 米）· 22:00 ET · K组</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5fd3ab">🇺🇿 乌兹别克斯坦</div><div class="rk">队史首次闯入世界杯 · 亚洲区直接晋级 · 大赛大舞台样本极少</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e8cd6b">🇨🇴 哥伦比亚</div><div class="rk">美洲杯 2024 亚军 · 缺席卡塔尔 2022 后回归 · 旅欧人才济济</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 乌兹别克斯坦 1-3 哥伦比亚（半场 0-1）· 数据来源 Sofascore / Opta Analyst / ESPN / FIFA · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">上半场完全是<b>哥伦比亚</b>的：他们控球 61% 以上、压制对手，乌兹别克斯坦成为本届世界杯<b>唯一上半场零次禁区触球</b>的球队（半场 xG 仅 <b>0.02</b>）——但哥伦比亚长时间缺乏临门一击，直到第 <b>40 分钟</b>才由 <b>Luis Díaz</b> 一脚精妙的团队配合喂球、<b>Daniel Muñoz</b> 凌空垫射打破僵局。易边后剧情骤变：第 <b>60 分钟</b> 乌兹别克斯坦迎来全场第一次禁区触球，<b>Abbosbek Fayzullaev</b> 抢点补射打入<b>队史世界杯首球</b>，将比分扳为 1-1；但好景仅维持 5 分钟——第 <b>65 分钟</b> Díaz 一记看似力量不足的射门被乌兹门将脱手漏过，<b>2-1</b>。此后哥伦比亚控制局面，补时阶段第 <b>90+9'</b> 替补 <b>Jaminton Campaz</b> 接 <b>Juan Hernández</b> 传中头球破门，锁定 <b>3-1</b>。Díaz 一人贡献 1 球 1 助攻并击中门框，成为本届世界杯首位"单场进球+助攻+中框"的球员。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ HT 0-1（哥伦比亚控场、乌兹上半场零禁区触球）→ 40' Muñoz（Díaz 助攻，0-1）→ 60' Fayzullaev（队史世界杯首球，1-1）→ 65' Díaz（门将脱手，1-2）→ 90+9' Campaz（Hernández 助攻，1-3）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇺🇿 乌兹别克斯坦</th><th style="padding:6px">🇨🇴 哥伦比亚</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">39%</td><td style="text-align:center"><b>61%</b></td><td style="padding:6px;color:var(--mut)">哥伦比亚控球占优（上半场一度逾 70%），但久攻不下，符合"赢得不轻松"的预判</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG（半场）</td><td style="text-align:center">0.02（半场）</td><td style="text-align:center"><b>领先</b></td><td style="padding:6px;color:var(--mut)">乌兹上半场 xG 仅 0.02、零次禁区触球——本届至今唯一一队，显示其退守之深</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">8 / 2</td><td style="text-align:center"><b>15 / 4</b></td><td style="padding:6px;color:var(--mut)">哥伦比亚射门近乎两倍，但射正仅 4 次、转化效率一般，部分进球靠门将失误</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center">—</td><td style="text-align:center"><b>3（错失 1）</b></td><td style="padding:6px;color:var(--mut)">哥伦比亚创造 3 次绝佳机会、错失 1 次；乌兹基本靠死球与一次补射制造威胁</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">禁区触球</td><td style="text-align:center">上半场 0</td><td style="text-align:center"><b>持续施压</b></td><td style="padding:6px;color:var(--mut)">乌兹首次禁区触球迟至 60' 才出现——并直接转化为队史首球</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传球成功率</td><td style="text-align:center">76%（318 脚）</td><td style="text-align:center"><b>86%（520 脚）</b></td><td style="padding:6px;color:var(--mut)">哥伦比亚传球量与质量全面占优，掌控比赛节奏</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">定位球 · 角球</td><td style="text-align:center">角球 3</td><td style="text-align:center">角球 4</td><td style="padding:6px;color:var(--mut)">角球接近持平；哥伦比亚补时绝杀正来自传中头球（其预选赛强项）</td></tr>
+      <tr><td style="padding:6px">犯规 · 黄红</td><td style="text-align:center">14 · 黄 1</td><td style="text-align:center">11 · 黄 1</td><td style="padding:6px;color:var(--mut)">乌兹犯规更多但比赛整体不脏，双方各 1 黄、无红牌</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 控场≠高效：哥伦比亚被低位防线憋了 40 分钟</div>哥伦比亚上半场控球逾 70%、却长时间缺乏穿透，直到 40' 才靠 Díaz 的一脚精妙喂球打破僵局。<b>这说明哥伦比亚</b>：面对摆大巴的弱旅，其控球优势不会自动转化为进球，需要 Díaz/James 级别的个人灵光来撬开铁桶——这正是赛前"赢但赢得不轻松、比分不大"主线的兑现。</div>
+    <div class="insight"><div class="who">② Luis Díaz 是真正的胜负手</div>Díaz 全场 6 次禁区触球领跑全场，1 球 1 助攻 + 中框，几乎以一己之力决定比赛走向。<b>这说明哥伦比亚</b>：进攻命脉高度依赖 Díaz 的边路爆点与终结——正如赛前所判"Díaz 的边路爆点是撕开低位防线的主要出口"，他在状态时哥伦比亚无需体系完美也能取胜。</div>
+    <div class="insight"><div class="who">③ 高原变量被部分证伪：哥伦比亚下半场仍能补时绝杀</div>赛前主线认为约 2,250 米高原会在下半场抽干哥伦比亚的压迫节奏、压低比分。实际上哥伦比亚虽一度被扳平，却在 90+9' 仍有体能与组织完成传中头球绝杀。<b>这说明哥伦比亚</b>：高原确实让比赛一度胶着（半场 0-0 般的沉闷 + 被扳平），但顶级旅欧球员的体能储备足以撑到终场，高原"压低比分"的效应弱于预期。</div>
+    <div class="insight"><div class="who">④ 乌兹别克斯坦：退守可行，但缺乏进攻产出</div>乌兹上半场零次禁区触球、xG 仅 0.02，几乎放弃进攻、全力退守；他们唯一的进球来自下半场放开后的一次补射。<b>这说明乌兹别克斯坦</b>：纯退守能限制哥伦比亚的射正与绝佳机会数（仅让对手 4 射正），但完全不制造威胁也就放弃了爆冷可能——队史首秀经验不足、不敢与强队对攻，是其结构性短板。</div>
+    <div class="insight"><div class="who">⑤ 门将失误放大比分——但不改实力差</div>哥伦比亚第二球源自乌兹门将对 Díaz 一记力量不足射门的脱手。<b>这说明乌兹别克斯坦</b>：与顶级对手的差距不仅在战术，也体现在大舞台的临场稳定性（门将处理球失误）；这类失误在面对哥伦比亚这种个人能力强的队伍时会被直接放大成失球。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>哥伦比亚胜（去水 ≈68% / Kalshi 72%）→ 实际 3-1 胜</b>：基准剧本兑现，热门拿下三分并登顶 K 组。</li>
+      <li>✓ <b>"控制型小胜、赢得不轻松"主线 → 实际控场逾 60% 却被憋 40 分钟、还一度被扳平</b>：判读精确兑现。</li>
+      <li>✓ <b>Díaz 的边路爆点是主要进攻出口 → 1 球 1 助攻 + 中框、6 次禁区触球领跑</b>：核心看点完美落地。</li>
+      <li>△ <b>倾向小 2.5 球 → 实际 4 球（大球）</b>：方向偏差——补时绝杀把总进球推过 2.5，高原"压低比分"的预期未完全兑现。</li>
+      <li>△ <b>比分预期 1-0 控制型小胜 → 实际 3-1</b>：方向对（哥伦比亚有球胜），但乌兹进球 + 补时再下一城使分差大于预期。</li>
+      <li>✗ <b>"双方不同时进球（BTTS 否）" → 实际两队均破门</b>：乌兹 60' 的队史首球使该判读落空。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇴 哥伦比亚 → 6/23 vs 刚果民主共和国（瓜达拉哈拉 22:00 ET）</div>① 刚果（DRC）首轮逼平葡萄牙、防守组织不弱，哥伦比亚再次会面对低位密集防线——<b>需提防重演"控场却久攻不下"的沉闷开局</b>，尽早通过 Díaz/James 轴线打开局面是关键；② Díaz 状态火热，是持续的进攻保障；③ Campaz 替补建功、展现板凳深度与定位球/传中头球的得分能力（预选赛头球与角球均为强项）；④ 不能依赖对手门将再次送礼，射正转化效率（15 射仅 4 正）需提升。</div>
+      <div class="insight" style="margin:0"><div class="who">🇺🇿 乌兹别克斯坦 → 6/23 vs 葡萄牙（休斯顿 13:00 ET）</div>① 葡萄牙星光更盛、控球与压迫强度高于哥伦比亚——乌兹的纯退守剧本将承受更大压力，是出线生死战；② 暴露的最大短板是<b>进攻产出几乎为零</b>（上半场零禁区触球），对葡萄牙若再不敢压出就更难制造威胁；③ Fayzullaev 的抢点嗅觉（队史首球）是为数不多的亮点，可作为反击/死球的支点；④ 门将的大舞台稳定性必须改善，否则面对 C 罗一代的射手群，失误会被更狠地惩罚。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Sofascore、Opta Analyst（theanalyst.com）、ESPN、FIFA、VAVEL。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>实力倾向明确、但被高原放大不确定性</b>的比赛：哥伦比亚（美洲杯 2024 亚军、决赛 0-1 惜败阿根廷、大量旅欧主力）面对队史<b>首次</b>闯入世界杯的乌兹别克斯坦。盘口明显倾向哥伦比亚——哥伦比亚胜赔 <b>1.43</b>、平局 4.50、乌兹别克斯坦 7.50；去水隐含 ≈ 哥伦比亚 68 / 平 22 / 乌兹别克斯坦 10。Kalshi 预测市场共识：哥伦比亚 72% / 平 20% / 乌兹别克斯坦 10%。真正的变量不在"谁更强"，而在 <b>Estadio Azteca 约 2,250 米高原</b>——它会在下半场抽干腿部、削弱热门球队的压迫节奏，是把比分压低的现实因素。市场基准剧本：<b>哥伦比亚控制型 1-0 小胜</b>，倾向小 2.5 球、双方不同时进球。市场过热指数 ≈ 2.5/5（哥伦比亚共识 + 高原变量）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">哥伦比亚隐含胜率(去水)</div><div class="v" style="color:#e8cd6b">≈68%</div></div>
+      <div class="key"><div class="k">乌兹别克斯坦隐含胜率(去水)</div><div class="v" style="color:#5fd3ab">≈10%</div></div>
+      <div class="key"><div class="k">球场海拔</div><div class="v" style="color:var(--warn)">≈2,250m</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Estadio Azteca 高原（约 2,250 米）</b>：稀薄空气抽干腿部、抑制高强度压迫与跑动，下半场易出现节奏放缓与体能崩塌——这是把比分压低、削弱哥伦比亚控场能力的核心变量。</li>
+      <li><b>乌兹别克斯坦的历史性首秀</b>：队史第一次站上世界杯舞台，缺乏大赛大舞台样本（最佳近期成绩仅亚洲杯 2023 八强），临场心理与经验是未知数。</li>
+      <li><b>哥伦比亚的旅欧中前场</b>：James Rodríguez 的组织、Luis Díaz 的边路爆点与 Jhon Córdoba/Luis Suárez 的终结，是撕开乌兹别克斯坦低位防线的主要出口。</li>
+      <li><b>双方伤情与首发</b>：乌兹别克斯坦中场 Masharipov 因背伤存疑；哥伦比亚据报有 Muñoz、Lucumí 等防线伤情待核——最终名单以赛前官方为准。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">场地 · Estadio Azteca 高原 <span style="color:var(--mut);font-weight:400">· 地理 · 赛程资料 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>比赛在海拔约 2,250 米的墨西哥城阿兹台克球场进行</b>，高原是本场最大的非实力变量</div>
+      <p style="font-size:13.5px">本场在墨西哥城 Estadio Azteca 进行，海拔约 2,250 米。高原空气稀薄，会显著降低有氧供能效率，使高强度跑动、反复压迫与快速攻防转换更难持续，尤其在下半场易出现集体降速与体能下滑。这对依赖控球压迫、跑动量大的球队（哥伦比亚）是更明显的制约；对退守、跑动相对节省的球队（乌兹别克斯坦）相对友好。<span style="color:var(--warn)">[两队近期在高原比赛的具体适应数据有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：高原是把比分"压低"的现实因素——它削弱哥伦比亚的压迫节奏与下半场冲击力，支持小球与低进球数剧本，也给乌兹别克斯坦退守反击保留了一线机会。这是大小球盘与让球盘最重要的环境变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49069699/uzbekistan-vs-colombia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 赛事信息/场地</a> · <a href="https://www.sportsmole.co.uk/football/uzbekistan/world-cup-2026/preview/uzbekistan-vs-colombia-prediction-team-news-lineups_599296.html" style="color:var(--accent)">Sports Mole — 前瞻/场地</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">哥伦比亚 · 美洲杯亚军底蕴 + 缺席卡塔尔 <span style="color:var(--mut);font-weight:400">· 美洲杯资料 · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">哥伦比亚是<b>美洲杯 2024 亚军</b>（决赛 0-1 加时负阿根廷），错过卡塔尔 2022 后强势回归</div>
+      <p style="font-size:13.5px">哥伦比亚在美洲杯 2024 一路杀入决赛，加时 0-1 不敌阿根廷屈居亚军，赛事中曾创下长时间不败的强势状态；这与他们缺席卡塔尔 2022 世界杯形成鲜明对比，凸显了 James Rodríguez 领衔的这批旅欧球员近年的成长。中前场拥有 Luis Díaz（边路）、Jhon Córdoba、Luis Suárez 等终结点，整体技术与个人能力明显高于对手。<span style="color:var(--warn)">[最终首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：哥伦比亚的大赛经验与个人能力是支持其胜盘的结构性依据；但美洲杯的成功建立在控球与高强度压迫之上，而高原恰好削弱这一点——这是"哥伦比亚赢但赢得不轻松/比分不大"的逻辑来源。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://ca.sports.yahoo.com/news/official-colombia-opener-now-referee-135000277.html" style="color:var(--accent)">Yahoo Sports — 哥伦比亚揭幕战</a> · <a href="https://www.espn.com/soccer/story/_/id/49069699/uzbekistan-vs-colombia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/首发预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">乌兹别克斯坦 · 队史首次晋级 + 伤情 <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">乌兹别克斯坦<b>队史第一次闯入世界杯</b>；中场 Masharipov 因背伤可能缺阵</div>
+      <p style="font-size:13.5px">乌兹别克斯坦通过亚洲区预选赛历史性地首次晋级世界杯决赛圈，这是该国足球的里程碑。球队以 Eldor Shomurodov（前锋）与 Abbosbek Fayzullaev（攻击中场）为核心。临赛伤情方面，经验丰富的中场 Jaloliddin Masharipov 因背伤很可能无缘对阵哥伦比亚，削弱其中场创造力。<span style="color:var(--warn)">[最终首发与伤情以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：首次参赛意味着乌兹别克斯坦缺乏世界杯级别的临场样本，心理与经验是未知数；Masharipov 若缺阵，则其本就有限的进攻创造力进一步下降，更倾向于退守反击——这强化了小球与低控球的预期。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/uzbekistan/world-cup-2026/preview/uzbekistan-vs-colombia-prediction-team-news-lineups_599296.html" style="color:var(--accent)">Sports Mole — 前瞻/队况/伤情</a> · <a href="https://www.espn.com/soccer/story/_/id/49069699/uzbekistan-vs-colombia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 首发预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8cd6b;font-weight:700">哥伦比亚 · 防线伤情待核 <span style="color:var(--mut);font-weight:400">· Sports Mole · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">据报哥伦比亚防线存在伤情（<b>Muñoz、Lucumí 等</b>），最终可用阵容待核</div>
+      <p style="font-size:13.5px">媒体前瞻提及哥伦比亚部分球员存在出战疑问，包括边后卫 Daniel Muñoz、中卫 Jhon Lucumí 等防线球员（另有报道称队内健康状况整体良好）。具体缺阵名单各源不一致，需以赛前官方名单确认。若关键防守球员缺阵，哥伦比亚的防线稳定性与定位球防守可能受到影响。<span style="color:var(--warn)">[伤情与最终首发各源说法不一 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：哥伦比亚在这场比赛大概率长时间持球压制，防守端被考验的时间不多；但若主力后卫缺阵，叠加高原下半场体能下滑，乌兹别克斯坦的反击与定位球偷袭概率会被小幅放大——这是让球盘的两面性所在。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/uzbekistan/world-cup-2026/preview/uzbekistan-vs-colombia-prediction-team-news-lineups_599296.html" style="color:var(--accent)">Sports Mole — 队况/伤情</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水） · 大小球市场 · 综合实力画像 — 图表均为已核实/明确标注的评估数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水，偏小球）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>预测市场 vs 赔率去水（哥伦比亚胜 %）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇿 乌兹别克斯坦</th><th>🇨🇴 哥伦比亚</th></tr>
+      <tr><td>世界杯史</td><td class="ht">队史首次晋级（历史性首秀）</td><td class="sc">缺席卡塔尔 2022 后回归</td></tr>
+      <tr><td>近两届大赛</td><td class="ht">无世界杯/重大决赛圈底蕴；亚洲杯 2023 八强为近期最佳</td><td class="sc">美洲杯 2024 亚军（决赛 0-1 负阿根廷）；美洲杯 2021 季军</td></tr>
+      <tr><td>晋级方式</td><td class="ht">亚洲区预选赛直接晋级</td><td class="sc">南美区预选赛晋级</td></tr>
+      <tr><td>核心球员</td><td class="ht">Eldor Shomurodov / Abbosbek Fayzullaev</td><td class="sc">James Rodríguez / Luis Díaz / Jhon Córdoba</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 7.50（隐含≈10%）</td><td class="sc">胜 1.43（≈68%）· 平 4.50（≈22%）</td></tr>
+      <tr><td>预测市场（Kalshi 共识）</td><td class="ht">10%</td><td class="sc">72% · 平 20%</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">小球为较倾向一侧（高原 + 哥伦比亚控制型打法压低进球）</td></tr>
+      <tr><td>场地/环境</td><td colspan="2">Estadio Azteca · 海拔约 2,250 米（高原变量）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查的正式交锋记录</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（哥伦比亚 1.43 / 平 4.50 / 乌兹别克斯坦 7.50 → 去水 ≈68/22/10）。Kalshi 预测市场共识：哥伦比亚 72% / 平 20% / 乌兹别克斯坦 10%——与赔率去水高度吻合，说明定价合理、无明显情绪偏离。基准剧本为<b>哥伦比亚控制型小胜（1-0）</b>，高原与控制型打法共同压低预期进球数。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· xG 与进阶指标 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">不只看赔率与赛果，更看"双方实际创造/限制了多少机会质量"。国家队公开样本有限，逐项标注来源与待核。</div>
+
+    <h4>① 本场 & 近期预期指标对照</h4>
+    <table>
+      <tr><th>指标（含义）</th><th>🇺🇿 乌兹别克斯坦</th><th>🇨🇴 哥伦比亚</th><th>解读</th></tr>
+      <tr><td>本场模型预期进球 xG（xGscore 投射）</td><td class="ht">≈0.6</td><td class="sc">≈2.0</td><td>投射 xG 差距明显（0.6 vs 2.0）——量化了哥伦比亚的机会质量优势，但合计≈2.6 受高原压制偏向边缘</td></tr>
+      <tr><td>超算胜平负概率（Opta，25,000 次模拟）</td><td class="ht">11.7%</td><td class="sc">67.7%（平 20.6%）</td><td>Opta 模型与博彩去水（10/22/68）高度一致——哥伦比亚是清晰热门，无定价分歧</td></tr>
+      <tr><td>Opta Power Ranking（全球实力评级）</td><td class="ht">FIFA 第50 · Opta 评级待核</td><td class="sc">Opta 第6 · 评级 90.1（全球前十）</td><td>实力评级断层——哥伦比亚是 Opta 全球前 6 的强队，纸面优势真实而非情绪</td></tr>
+      <tr><td>防守质量 xGA / 预选失球（防守底子）</td><td class="ht">AFC 预选 16 场仅负 1，失球少、防守组织扎实</td><td class="sc">待核（旅欧后卫为主，个体质量高）</td><td>乌兹别克斯坦的"低位铁桶"是真实可依的数据底色——支持"哥伦比亚难大胜、低比分"</td></tr>
+      <tr><td>进攻终结 vs 预期（状态信号）</td><td class="ht">大赛大舞台样本极少（最佳：亚洲杯 2023 八强）</td><td class="sc">旅欧前场质量高（J.Rodríguez / L.Díaz / Córdoba）</td><td>哥伦比亚把 xG 转化为进球的能力更强；乌兹临场心理是未知数</td></tr>
+      <tr><td>压迫强度 PPDA · 控球倾向 · xT 推进</td><td colspan="2" class="sc">国家队层面公开数据有限 <span style="color:var(--warn)">（待核）</span>——<b>高原（约 2,250 米）会抽干下半场压迫与跑动</b>，PPDA 类高强度指标实际值会被环境压低</td><td>这是把哥伦比亚控场能力打折、压低比分的核心变量</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 预期判读</b>：投射 xG（0.6 vs 2.0）、超算（11.7/20.6/67.7）、Opta 评级（第50 vs 第6）三组深度数据方向完全一致——哥伦比亚机会质量与实力均显著占优；但乌兹别克斯坦预选 16 战仅负 1 的防守底子 + Estadio Azteca 高原，共同把剧本压向"<b>哥伦比亚控制型小胜（1-0）、小 2.5 球</b>"，而非大胜。来源：xGscore（投射 xG）· Opta Analyst/theanalyst.com（超算与 Power Ranking）· kun.uz（乌兹预选数据）。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:18px">② 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xT（expected threat）</b>：每次推进/传球带来的威胁增量，衡量"推进质量"而非数量。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">定位球 xG 占比 · PSxG/xGOT</b>：定位球依赖度；射正后预期进球衡量终结/门将表现。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Understat/FBref/xGscore 等公开来源；国家队（尤其非五大联赛球员占比高的队）在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">哥伦比亚胜盘共识明确但赔率不极端（1.43），热度集中在"赢多少"与大小球；高原是引发分歧、压制热度极端化的关键变量</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · 哥伦比亚共识但赔率不极端；高原构成实质分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">哥伦比亚胜被广泛看好，但 1.43 的赔率并非"碾压"级别，留出了平局（22%）的现实空间。资金主要落在<b>哥伦比亚让球（-1）与大小球（小 2.5）</b>，而非单纯胜负。高原变量让一部分分析师对"哥伦比亚轻松大胜"持保留态度，抑制了热度走向极端。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：哥伦比亚胜 多数 · 平局 少数 · 乌兹别克斯坦胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>哥伦比亚小胜</b>（如 1-0 / 2-0），看好控场</td></tr>
+      <tr><td>ESPN</td><td>综合体育媒体</td><td>哥伦比亚为明显热门；乌兹别克斯坦力求稳守</td></tr>
+      <tr><td>Yahoo Sports</td><td>美系体育媒体</td><td>哥伦比亚胜 + 关注首战环境（裁判/场地）</td></tr>
+      <tr><td>市场共识（Kalshi）</td><td>预测市场</td><td>哥伦比亚 72% · 平 20% · 乌兹别克斯坦 10%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等偏低）</b>：胜负方向偏向哥伦比亚，但赔率不极端、平局空间真实存在；无明显单边过热。真正分歧在<b>"赢多少"（哥伦比亚 -1 让球）与小球</b>，以及高原是否削弱哥伦比亚控场。情绪资金有限，整体偏理性。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>哥伦比亚胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>1X2</td><td class="sc">1.43</td><td>明显倾向哥伦比亚；平 4.50 / 乌兹别克斯坦 7.50</td></tr>
+      <tr><td>06-16/17 截止</td><td>多平台</td><td class="sc">1.40–1.45</td><td>窄幅波动，基本稳定；无明显资金一边倒</td></tr>
+      <tr><td>06-16/17</td><td>大/小球</td><td colspan="2" class="sc">小 2.5 球为较倾向一侧（高原 + 控制型打法压低进球）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>哥伦比亚 -1</td><td colspan="2" class="sc">主流让球约在哥伦比亚 -1 一带（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率窄幅稳定——定价合理。最活跃的价格发现在<b>让球（哥伦比亚 -1）与大小球（小 2.5）</b>。多数分析将本场视为"哥伦比亚控制型小胜"，高原是支持小球与抑制让球幅度的关键依据。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi 共识</b>：哥伦比亚 72% / 平 20% / 乌兹别克斯坦 10%——与博彩去水（≈68/22/10）高度吻合，两池收敛、无情绪偏离。</li>
+      <li><b>Polymarket / DefiRate</b>：本场单场具体价格、成交量与 30 日资金动能数据未公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>舆论焦点</b>：围绕乌兹别克斯坦<b>历史性首秀</b>的话题性，以及哥伦比亚 James/Díaz 旅欧核心的状态；高原对体能的影响是技术讨论的高频词。</li>
+      <li><b>情绪资金</b>：有限——哥伦比亚胜被视为合理共识而非过热；无明显押乌兹别克斯坦的散户资金浪潮。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：哥伦比亚胜共识明确、博彩与预测市场收敛，但赔率不极端（1.43）、平局空间真实，加之高原变量，过热指数 <b>2.5/5</b>。热度集中在<b>让球幅度（-1）与小球</b>，而非胜负本身。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/story/_/id/49069699/uzbekistan-vs-colombia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 前瞻/赔率/裁判</a> · <a href="https://www.sportsmole.co.uk/football/uzbekistan/world-cup-2026/preview/uzbekistan-vs-colombia-prediction-team-news-lineups_599296.html">Sports Mole — 前瞻/预测</a> · <a href="https://ca.sports.yahoo.com/news/official-colombia-opener-now-referee-135000277.html">Yahoo Sports — 揭幕战/裁判</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为英格兰籍 <b>Anthony Taylor</b>，助理裁判 Gary Beswick 与 Adam Nunn（均英格兰籍），第四官员为哥斯达黎加籍 Juan Calderón，预备助理 Juan Carlos Mora。来源：Zamin.uz / UzDaily / ESPN / Yahoo Sports。</div>
+    <h4>裁判背景与执法尺度（近两届大赛 + 顶级样本）</h4>
+    <ul class="cl">
+      <li><b>顶级经验丰富</b>：Taylor 是英超与欧足联体系的顶级主裁，执法过 2023 欧联杯决赛；在 <b>Euro 2024</b> 执法（含 Spain–England 决赛），并入选 <b>WC 2022</b> 裁判组（主要担任 VAR/第四官员，主哨大赛淘汰赛样本相对有限）。</li>
+      <li><b>出牌尺度（综合样本）</b>：Taylor 整体属"相对克制但中规中矩"一档，公开统计其场均黄牌约 <b>3.8 张</b>（部分样本约 4.1）、红牌约 0.10–0.12 张/场。换言之，他不是动辄狂发牌的裁判，但对持续犯规的累计管理到位。<span style="color:var(--warn)">[其在两届大赛"主哨"单场的精确场均出牌样本有限 · 据实标注]</span></li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——半自动越位将精准捕捉 Díaz/Córdoba 的越位临界跑动；新规对拖延与控场节奏的管理更严。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：以 Taylor 的中等偏克制尺度，本场不太可能出现牌满天飞；但高原下半场体能下滑、动作变形时，乌兹别克斯坦的防守犯规与哥伦比亚的反越位临界球都可能成为关键判罚点。鉴于其大赛"主哨"单场样本有限，裁判面更多是参考而非可操作依据，主要影响在累计黄牌与潜在点球/越位边界判定。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准 · 待核）</div>
+    <h4>🇺🇿 乌兹别克斯坦 预测首发（4-2-3-1，倾向低位）</h4>
+    <div class="lineup">Nematov; Khojimatov · Abdullaev · Egamberdiev · Saidov; Khusanov · Iskanderov; Urunov · Fayzullaev · Masharipov(存疑); Shomurodov</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Eldor Shomurodov</td><td>前锋 / 单箭头</td><td>乌兹别克斯坦头号射手与支点；旅欧经历，反击与争顶的主要终结点</td></tr>
+      <tr><td class="ht">Abbosbek Fayzullaev</td><td>攻击中场 / 创造核心</td><td>球队最具创造力的年轻核心；持球推进与由守转攻的关键</td></tr>
+      <tr><td class="ht">Jaloliddin Masharipov</td><td>中场 / 背伤存疑</td><td>经验型中场，若缺阵将削弱中场创造力 <span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td class="ht">Abdukodir Khusanov</td><td>后腰/后卫 / 旅欧</td><td>身体与对抗出色，中场屏障与防线串联的关键 <span style="color:var(--warn)">位置待核</span></td></tr>
+    </table>
+    <h4>🇨🇴 哥伦比亚 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Vargas; Muñoz(存疑) · Cuesta · Lucumí(存疑) · Mojica; Lerma · R. Ríos; J. Arias · James Rodríguez · Luis Díaz; Jhon Córdoba</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">James Rodríguez</td><td>前腰 / 队长核心</td><td>美洲杯 2024 助攻王级表现；由守转攻节拍器，撕开低位防线的关键</td></tr>
+      <tr><td class="sc">Luis Díaz</td><td>边锋 / 旅欧</td><td>边路爆点；速度与突破撕开宽度，本场主要进攻威胁</td></tr>
+      <tr><td class="sc">Jhon Córdoba</td><td>前锋 / 单箭头</td><td>身体型终结点；支点与禁区终结</td></tr>
+      <tr><td class="sc">Daniel Muñoz / Jhon Lucumí</td><td>后卫 / 伤情待核</td><td>防线主力，出战存疑 <span style="color:var(--warn)">待核</span></td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / ESPN），<b>以赛前官方名单为准 · 待核</b>。乌兹别克斯坦 Masharipov（背伤）与哥伦比亚 Muñoz、Lucumí（防线伤情）出战均存疑，各源说法不一。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <p class="sub">交叉对照两队近两届大赛的<b>实际</b>打法：哥伦比亚以美洲杯 2024（亚军）与 2021（季军）为参照；乌兹别克斯坦无世界杯级别样本，以亚洲杯 2023（八强）为最近的可参照大舞台。</p>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5fd3ab">🇺🇿 乌兹别克斯坦</div>
+        <div class="role">4-2-3-1 低位防守 + 反击与定位球求分</div>
+        <ul class="cl">
+          <li>近两届大舞台参照有限——<b>亚洲杯 2023</b> 八强是其最近的高水平样本：彼时乌兹别克斯坦以纪律性中低位防守、依靠 Shomurodov 支点与快速反击为主，控球与高位压迫并非强项。</li>
+          <li>本场大概率延续低位退守：双后腰锁中路、压缩 James/Díaz 的接球与突破空间，靠 Fayzullaev 的个人推进与反击/定位球求分。Masharipov 若缺阵，进攻创造力进一步下降。</li>
+          <li>高原对其相对友好——退守、跑动节省的打法在稀薄空气中更易维持；但缺乏世界杯临场样本，心理与经验是真实未知数。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e8cd6b">🇨🇴 哥伦比亚</div>
+        <div class="role">4-2-3-1 控球压迫 + James 组织、Díaz 边路爆点</div>
+        <ul class="cl">
+          <li>近两届大赛打法清晰——<b>美洲杯 2024</b>（亚军）哥伦比亚以 James 为中场大脑、高强度压迫与边路（Díaz）冲击立足，决赛 0-1 加时负阿根廷前曾长时间不败；<b>美洲杯 2021</b>（季军）同样依赖中前场个人能力与反击效率。</li>
+          <li>本场预计长时间控球、压迫围攻乌兹别克斯坦低位防线，靠 James 的输送与 Díaz/Arias 的边路突破制造机会，Córdoba 完成终结。</li>
+          <li>关键风险即<b>高原</b>：美洲杯赖以成功的高强度压迫与跑动量在约 2,250 米将更难持续，下半场节奏放缓可能让"控而不破"，把比分压在小胜区间——这正是市场看小球、看哥伦比亚 -1 而非大幅让球的原因。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>看好哥伦比亚凭借个人能力与大赛经验取胜，但提示乌兹别克斯坦的纪律性低位防守与高原环境会压低进球数，基准为哥伦比亚小胜（1-0 / 2-0），并提示双方伤情（Masharipov / 哥伦比亚防线）需待核。</div>
+    <div class="insight"><div class="who">环境视角 <small>· 高原变量</small></div>约 2,250 米海拔削弱哥伦比亚的压迫节奏与下半场冲击力，是支持小球、抑制让球幅度的核心环境依据；对退守的乌兹别克斯坦相对友好，为其反击/定位球偷袭保留一线尾部机会。</div>
+    <div class="insight"><div class="who">实力对照 <small>· 近两届大赛</small></div>哥伦比亚（美洲杯 2024 亚军 / 2021 季军）在大赛大舞台的个人能力与战术成熟度明显领先；乌兹别克斯坦无世界杯样本、亚洲杯 2023 八强为近期最佳——大舞台经验差距客观存在，这是支持哥伦比亚胜盘的基本面。</div>
+    <div class="insight"><div class="who">综合 · 比分剧本 <small>· 战术信号</small></div>本场真正悬念不是"谁赢"，而是<b>哥伦比亚能否在高原高效转化控球优势</b>。基准 1-0 哥伦比亚；平局（22%）是真实尾部，乌兹别克斯坦爆冷（10%）需要极致铁桶 + 反击/定位球偷袭 + 高原拖垮哥伦比亚同时发生。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：哥伦比亚控制型 <b>1-0 小胜</b>是基准剧本；2-0 同样合理。平局（≈22%）是真实尾部风险（高原拖慢节奏 + 乌兹别克斯坦铁桶）；乌兹别克斯坦胜（≈10%）为小概率，需多重条件叠加。</li>
+      <li><b>关键先生</b>：James Rodríguez（哥/组织核心）、Luis Díaz（哥/边路爆点）、Eldor Shomurodov（乌/反击支点）、Abbosbek Fayzullaev（乌/创造力出口）。</li>
+      <li><b>胜负手</b>：高原下哥伦比亚<b>破密集防守的效率与体能管理</b>——决定让球（-1）与大小球（小 2.5）的结算。哥伦比亚若早进球，可降速控场、规避高原风险；久攻不下则平局/被偷袭风险上升。</li>
+      <li><b>市场视角</b>：博彩去水（≈68/22/10）与 Kalshi（72/20/10）收敛，1X2 定价合理、价值有限；信息含量最高的是<b>哥伦比亚 -1 让球与小 2.5 球</b>。过热指数 2.5/5（哥伦比亚共识 + 高原变量）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 乌兹别克斯坦 Masharipov 背伤能否出战；② 哥伦比亚 Muñoz、Lucumí 等防线伤情（各源说法不一）；③ 双方官方首发名单；④ Taylor 在 Euro 2024 / WC 2022 "主哨"单场的精确场均出牌样本（公开数据有限）；⑤ Polymarket/DefiRate 单场价格、成交量与 30 日动能未公开检得；⑥ 两队近期高原比赛的具体适应数据；⑦ 亚盘让球（哥伦比亚 -1）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49069699/uzbekistan-vs-colombia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.sportsmole.co.uk/football/uzbekistan/world-cup-2026/preview/uzbekistan-vs-colombia-prediction-team-news-lineups_599296.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://ca.sports.yahoo.com/news/official-colombia-opener-now-referee-135000277.html">Yahoo Sports — 揭幕战/裁判</a><br>
+      • <a href="https://zamin.uz/en/sport/207076-anthony-taylor-to-officiate-uzbekistan-vs-colombia-match.html">Zamin.uz — 裁判 Anthony Taylor 任命</a> · <a href="https://www.uzdaily.uz/en/anthony-taylor-to-officiate-uzbekistan-vs-colombia/">UzDaily — 裁判任命</a> · <a href="https://www.squawka.com/en/news/referee-anthony-taylor/">Squawka — Taylor 裁判档案/出牌数据</a><br>
+      • <a href="https://bolavip.com/en/world-cup/who-are-the-referees-of-the-2026-world-cup">Bolavip — 2026 世界杯裁判名单</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-16 · 图表为已核实/明确标注的评估数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#1fa67a',SC='#d4af37',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['哥伦比亚胜','平局','乌兹别克斯坦胜'],datasets:[{data:[68,22,10],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[40,60],backgroundColor:[DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Kalshi 共识','赔率去水'],datasets:[{data:[72,68],backgroundColor:[SC,'#b9962f'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:90,title:{display:true,text:'哥伦比亚胜概率 %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'乌兹别克斯坦',data:[6,4.5,5,5,5,3.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'哥伦比亚',data:[6.5,7,7.5,6.5,8,7.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

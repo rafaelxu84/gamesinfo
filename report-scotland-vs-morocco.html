@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 苏格兰 vs 摩洛哥 · 2026世界杯 C组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-scotland-vs-morocco.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-scotland-vs-morocco.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-scotland-vs-morocco.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-scotland-vs-morocco.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-scotland-vs-morocco.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#005eb8;--sc:#c1272d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a2a52,#5a1216);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#10203a,#2a1116);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#6fa8e6;font-weight:600}td.sc{color:#e8888c;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-scotland-vs-morocco.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-scotland-vs-morocco.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-scotland-vs-morocco.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · C组次轮 · 领头羊苏格兰 vs 抢分的摩洛哥（同组：巴西、海地）</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0a3a2a,#14503f);margin-left:6px">🏁 已完赛 比分 0-1</span>
+  <h1>苏格兰 vs 摩洛哥</h1>
+  <div class="meta">2026年6月19日 · 福克斯堡 Gillette 体育场（波士顿） · 18:00 ET · C组（同组：巴西、海地）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#6fa8e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</div><div class="rk">FIFA #39 · 时隔28年重返世界杯 · 首轮 1-0 胜海地、暂列小组第一</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e8888c">🇲🇦 摩洛哥</div><div class="rk">FIFA #12 · 2022世界杯四强 · 本组次种子 · 首轮 1-1 平巴西</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-20） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 苏格兰 0-1 摩洛哥 · 06-19</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">摩洛哥<b>开场 70 秒（官方计 2'）即一击致命</b>：Brahim Díaz 一脚挑传越过苏格兰造越位防线，<b>Ismael Saibari</b> 在禁区内小角度劲射入网顶角——这是本届世界杯<b>迄今最快进球</b>、也是摩洛哥世界杯史上最快进球，Saibari 由此成为首位连续两届世界杯均破门的摩洛哥球员。苏格兰临场把首轮的 4-4-2 改为<b>五后卫</b>、雪藏首轮表现最佳的 Gannon-Doak 改用 Patterson，求稳的计划被这粒闪电球彻底打乱。此后摩洛哥控场，下半场 Saibari 再中门框（被 Hendry 封堵后击柱）、迫 Gunn 做出关键扑救；苏格兰全场<b>0 射正</b>，第 88 分钟 McTominay 禁区内倒地申诉点球被主裁 Ilgiz Tantashev 拒绝、VAR 未介入（赛后裁判专家 Christina Unkel 认为「应判点」，名宿意见分裂）。终场 0-1，摩洛哥<b>从首分钟领先到终场</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 2' Saibari（Brahim Díaz 助攻，全场唯一进球） · 23' 黄牌 I. Diop(摩) · 60' Tierney↓Gannon-Doak · 65' 黄牌 Robertson(苏) · 70'-71' 苏双换(Dykes/McLean) · 88' McTominay 点球申诉被拒(无 VAR) · HT 0-1 · FT 0-1</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta，经 Squawka/FotMob 核验）</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>🇲🇦 摩洛哥</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td>41.1%</td><td><b>58.9%</b></td><td>摩洛哥控场但并非碾压式压迫——苏格兰让出球权是主动选择，问题在落后后没有反扑火力</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td>1.02</td><td><b>1.25</b></td><td>净 xG 差仅 0.23，远小于比分张力——0-1 是「效率差」而非「机会差」：摩洛哥用一脚高质量射门解决战斗，苏格兰 1.02 xG 全是 0 射正的无效堆积</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>6 / <b>0</b></td><td>12 / 2</td><td>苏格兰<b>0 射正</b>——队史世界杯第二次（上次 1986 对丹麦），是「无 Plan B」最刺眼的注脚；摩洛哥 12 射含中柱，威胁更集中</td></tr>
+      <tr><td class="ht">角球</td><td>2</td><td><b>5</b></td><td>赛前把定位球列为苏格兰唯一稳定得分通道，结果仅得 2 角且毫无产出——预设的「定位球偷袭摩洛哥减员后防」彻底落空</td></tr>
+      <tr><td class="ht">传球（完成数）</td><td colspan="2">摩洛哥完成 <b>601 脚传球</b>——1966 年以来非洲球队世界杯单场最多</td><td>说明摩洛哥即便无正印中锋，仍能用控球把苏格兰钉在低位、消耗其反扑窗口</td></tr>
+      <tr><td class="ht">黄 / 红牌</td><td>1 / 0</td><td>1 / 0</td><td>比赛纪律平稳，无红牌；争议点是第 88 分钟那次未判的点球申诉</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.squawka.com/en/news/world-cup/scotland-vs-morocco-result-stats-19-06-26/">Squawka（Opta 供数）— 比赛数据</a> · <a href="https://theanalyst.com/articles/scotland-vs-morocco-stats-fifa-world-cup-2026-live">Opta Analyst — 赛后统计</a> · <a href="https://www.espn.com/soccer/story/_/id/49119389/scotland-0-1-morocco-world-cup-2026-result-score-recap">ESPN 战报</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021454">FIFA 比赛中心</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">摩洛哥的「开场风暴」这次直接终结了比赛</div>赛前把摩洛哥的隐患读为「开场强、后段哑火」，但本场<b>70 秒的闪电球反而成了全场最优解</b>——一击得手后摩洛哥转入控球管理，不再需要续航火力。<b>说明摩洛哥具备「用一次高质量爆发解决弱于自己对手」的效率型赢球能力</b>，无需打满 90 分钟高强度，这对体能轮换是利好，但也意味着遇到能扛住开场的对手（如海地末轮缩防）需要第二种破局方式。</div>
+    <div class="insight"><div class="who">苏格兰临场变阵五后卫＝战术自伤</div>Clarke 把首轮的 4-4-2 改为五后卫、雪藏对海地表现最佳的 Gannon-Doak 改上 Patterson，本意是「冻结」摩洛哥；但 70 秒丢球后球队被迫追分，<b>却没有相应的进攻工具</b>，全场 6 射 0 射正。<b>说明这支苏格兰一旦先失球就缺乏 Plan B</b>——务实低位反击的剧本只在「不丢球」前提下成立，落后即崩，这是其冲击淘汰赛的结构性天花板。</div>
+    <div class="insight"><div class="who">「无正印中锋伪九」不但没拖累摩洛哥，反而更灵活</div>赛前判断摩洛哥 Brahim Díaz 伪九「面对密集低位缺禁区终结点、易陷无支点横传、强化小球」。实战中<b>摩洛哥确实低分取胜（印证小球）、但破局靠的正是伪九体系的流动性</b>：Díaz 回撤做球、Saibari 自中场前插完成「无中锋的纵向打击」。<b>说明摩洛哥的进攻威胁来自中场前插与跑动，而非站桩支点</b>——对手若只盯防禁区，反被二线插上惩罚。</div>
+    <div class="insight"><div class="who">苏格兰的造越位防线是被精确针对的命门</div>失球源于一记简单的过顶直塞打穿造越位线。<b>说明苏格兰的高位造越位在面对 Díaz/Saibari 这种传跑默契的组合时风险极高</b>——末轮对巴西（Vinícius/Raphinha 的冲击与传跑）这条线只会更危险，防线要么压实站位、要么放弃造越位改回收。</div>
+    <div class="insight"><div class="who">定位球神话破灭：苏格兰的「唯一武器」哑火</div>赛前反复强调「摩洛哥 Aguerd 缺阵→苏格兰定位球高点偷袭」是其得分指望，结果<b>苏格兰仅 2 角球、定位球零产出、0 射正</b>。<b>说明把得分希望全押在定位球上是脆弱的单点战略</b>——当对手率先得分迫使你需要更多运动战创造时，这套依赖被动机会的体系无法兑现。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">摩洛哥胜（隐含 ≈59% / 超算 54.2%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>摩洛哥 1-0 取胜，方向完全正确</td></tr>
+      <tr><td class="ht">基准比分 摩洛哥控场窄胜（1-0 / 2-1）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>1-0 精确命中「控场窄胜」剧本，连比分都落在预设区间</td></tr>
+      <tr><td class="ht">小 2.5 球（隐含 ≈60%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>全场仅 1 球，小球轻松成立；「无正印中锋→低分」逻辑兑现</td></tr>
+      <tr><td class="ht">平局是真实风险</td><td style="color:var(--warn)"><b>~ 偏差</b></td><td>未出现平局；70 秒闪电球让「苏格兰扛住开场」的前提从未成立，平局窗口瞬间关闭</td></tr>
+      <tr><td class="ht">苏格兰定位球可惩罚摩洛哥减员后防</td><td style="color:var(--bad)"><b>✗ 落空</b></td><td>苏格兰仅 2 角、定位球零产出、0 射正——预设的「唯一得分通道」完全失效</td></tr>
+      <tr><td class="ht">胜负枢纽（修正后）：无支点伪九能否破密集低位</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>修正后的判断成立：摩洛哥伪九体系靠中场前插破局，未受无中锋拖累</td></tr>
+    </table>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">总评：核心主线（摩洛哥窄胜 + 小球）<b>高命中</b>，连基准比分 1-0 都精确兑现；唯一明显偏差是高估了苏格兰「先扛住、再靠定位球搅局」的可行性——70 秒丢球与 0 射正证明，苏格兰一旦失去「不丢球」前提便毫无还手之力。</div>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#6fa8e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 下一场 vs 巴西（6/24 迈阿密）</h4>
+        <ul class="watch">
+          <li><b>出线命悬一线</b>：3 分暂列，末轮对五星巴西，须取分否则只能寄望「12 组中 8 个最佳第三」的算术——心态从「守榜首」转为「背水一战」。</li>
+          <li><b>0 射正＝进攻工具危机</b>：对摩洛哥全场 0 射正暴露无 Plan B，对巴西更难创造；Gannon-Doak（被雪藏后替补登场）是否重回首发、能否提供运动战爆点是关键。</li>
+          <li><b>造越位防线被针对的隐患加剧</b>：本场被一记过顶直塞打穿；面对 Vinícius/Raphinha 的传跑，这条线必须压实或放弃造越位改深度回收。</li>
+          <li><b>停赛风险可控</b>：Robertson(C)、本场 65' 染黄，需留意累积黄牌；无红牌、无新增重大伤情。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8888c">🇲🇦 摩洛哥 · 下一场 vs 海地（6/24 亚特兰大）</h4>
+        <ul class="watch">
+          <li><b>出线主动权在手</b>：4 分领跑（与巴西同分），末轮对小组最弱的海地，<b>大概率以小组头名/前二出线</b>；可适度轮换保护主力。</li>
+          <li><b>效率型赢球可复制，但海地或缩防</b>：本场靠 70 秒闪电球 + 控球管理取胜；海地若摆深度低位，摩洛哥需要第二种破局方式——El Kaabi（正印中锋）是否首发增强禁区终结值得关注。</li>
+          <li><b>伪九 + 中场前插是可带走的得分模板</b>：Saibari（连续两届破门）自中场插上的纵向打击、Brahim Díaz 回撤组织，是面对密集防守的有效路径。</li>
+          <li><b>后防减员仍在</b>：Aguerd（耻骨骨折）+ Ezzalzouli（膝伤）持续缺阵，Diop/Riad 中卫组合延续——对海地反击/定位球仍是潜在漏洞。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>「领头羊守成」对阵「夺标级别次种子追分」</b>的次轮关键战：首轮苏格兰 1-0 爆冷胜海地、以 3 分独占 C 组榜首（28 年来首胜世界杯比赛）；摩洛哥则 1-1 逼平巴西、与巴西同积 1 分。盘口与超算<b>明确看好摩洛哥</b>，但都认定这会是一场<b>窄胜/低分</b>的拉锯：摩洛哥胜赔约 <b>1.70</b>（隐含 ≈59%）、平局 <b>3.30</b>（≈30%）、苏格兰胜约 <b>5.00+</b>（≈18%）。Opta 超算（10000 次模拟）：摩洛哥胜 <b>54.2%</b>、平局 <b>24.9%</b>、苏格兰胜 <b>20.9%</b>。大小球共识压向小球——大 2.5 球约 <b>2.30</b>（+130）/ 小 2.5 球约 <b>1.65</b>（约 -150），市场隐含小球 ≈60%。基准剧本：<b>摩洛哥控场窄胜（1-0 / 2-1）</b>，但苏格兰防守纪律 + 定位球可能搅局逼平。真正的看点是<b>麦克托米奈 vs 阿姆拉巴特</b>的中场博弈，以及摩洛哥后防减员能否被苏格兰定位球惩罚。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">摩洛哥隐含胜率(去水)</div><div class="v" style="color:#e8888c">≈59%</div></div>
+      <div class="key"><div class="k">小球隐含概率</div><div class="v" style="color:#6fa8e6">≈60%</div></div>
+      <div class="key"><div class="k">苏格兰离开世界杯</div><div class="v" style="color:var(--warn)">28年</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>麦克托米奈 vs 阿姆拉巴特的中场对决</b>：苏格兰前插得分点（15 球/70 场）撞上 2022 世界杯成名的摩洛哥中场绞肉机，谁掌控节奏，谁掌控比赛。</li>
+      <li><b>摩洛哥后防减员（上一场带入）</b>：核心中卫 Aguerd（耻骨骨折）与边锋 Ezzalzouli（膝伤）赛前已被剔出大名单，并未出战巴西——摩洛哥后防与边路深度被削弱，恰是苏格兰定位球的攻击点。</li>
+      <li><b>苏格兰的定位球＝得分指望（上一场带入）</b>：对海地运动战 xG 仅约 1.05、全场仅靠 McGinn 一次折射破门；面对身体强硬的摩洛哥，McGinn/罗伯逊传中 + Adams 的二点球仍是最现实路径。</li>
+      <li><b>摩洛哥「开场风暴后哑火」隐患（上一场带入）</b>：对巴西前段强度极高、Saibari 21 分钟先拔头筹，但后段续航下滑；若苏格兰扛过开场，下半场有抢分窗口。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含上一场带入）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">🔁 上一场带入 · 摩洛哥后防/边路双减员 <span style="color:var(--mut);font-weight:400">· ESPN / Washington Post / Ahram · 06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Aguerd（耻骨骨折）+ Ezzalzouli（膝伤）赛前被剔出大名单</b>，未出战巴西，本场同样缺阵</div>
+      <p style="font-size:13.5px">摩洛哥在开赛前的最后时刻调整名单：2022 世界杯四强主力中卫 <b>Nayef Aguerd</b> 因耻骨骨折 + 骨炎（3 月手术后康复受阻）被剔出，边锋 <b>Abde Ezzalzouli</b> 则在对挪威热身赛中右膝受伤同样落选。两人均未出战首轮 1-1 平巴西的比赛。摩洛哥对巴西的实际中卫组合是 <b>Issa Diop + Chadi Riad</b>。<span style="color:var(--warn)">[注意：部分预测首发媒体（如 ESPN 列出 Aguerd/Ezzalzouli 首发）系套用旧名单，与已确认的伤退事实矛盾，本页以「两人缺阵」为准 · 已交叉核实]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Aguerd 是摩洛哥定位球防守与高空对抗的支柱，他缺阵令 Diop/Riad 这对组合的空中协防与默契成为问号——这正是苏格兰（McGinn/罗伯逊传中 + Adams/Dykes 抢点）唯一稳定的得分通道。Ezzalzouli 缺阵则削弱摩洛哥左路爆破深度，进攻更依赖 Hakimi 右路与中路渗透。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49027277/morocco-cut-injured-aguerd-ezzalzouli-last-minute-world-cup-reshuffle" style="color:var(--accent)">ESPN — Aguerd/Ezzalzouli 被剔出</a> · <a href="https://www.washingtonpost.com/sports/soccer/2026/06/11/world-cup-morocco-injuries-ezzalzouli/" style="color:var(--accent)">Washington Post — 伤情</a> · <a href="https://english.ahram.org.eg/WorldCup2026/AfricaInner.aspx?NewsContentID=570607" style="color:var(--accent)">Ahram — 双减员</a></div>
+    </div>
+
+    <div style="border-left:3px solid #6fa8e6;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#6fa8e6;font-weight:700">🔁 上一场带入 · 苏格兰全员可用 + 定位球依赖 <span style="color:var(--mut);font-weight:400">· Sports Mole / RotoWire · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">赛前最后一练<b>全队到齐</b>（McKenna 周三缺训后回归）；本场预计延续低位防反 + 定位球路线</div>
+      <p style="font-size:13.5px">苏格兰赛前最后一次合练全员可用，此前周三缺训的中卫 Scott McKenna 已归队，主帅 Clarke 阵容无新增伤情。上一场 1-0 胜海地，苏格兰运动战创造有限（运动战 xG 约 1.05），唯一进球来自 <b>McGinn 第 28 分钟的折射入网</b>；McTominay 早段两次良机（头球偏出、中柱）未把握。本场预计仍走 <b>务实低位防反 + 定位球</b> 路线（与预选赛掀翻西班牙、丹麦同款剧本），求一分亦可接受。预测首发存在 3-5-2 与 4-2-3-1 两版本，差异主要在边翼卫/边锋取舍。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：苏格兰无伤情意味着 Clarke 可摆出最强防守结构来「冻结」摩洛哥；但运动战创造力不足的老问题仍在——若定位球不进，苏格兰极难从运动战撕开摩洛哥。「扛住开场 + 定位球偷袭」是其抢分的清晰剧本。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/scotland/world-cup-2026/preview/scotland-vs-morocco-prediction-team-news-lineups_599454.html" style="color:var(--accent)">Sports Mole — 苏格兰队况/首发</a> · <a href="https://www.rotowire.com/soccer/article/scotland-vs-morocco-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-c-118659" style="color:var(--accent)">RotoWire — 前瞻/首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49055260/haiti-scotland-world-cup-2026-result-score-recap-john-mcginn-ben-gannon-doak-group-c" style="color:var(--accent)">ESPN — 苏格兰 1-0 胜海地</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🔁 上一场带入 · 摩洛哥「开场风暴后哑火」 <span style="color:var(--mut);font-weight:400">· Opta Analyst / Sky Sports · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">对巴西<b>前段强度极高、Saibari 21' 先拔头筹</b>；但后段续航下滑、被 Vinícius 32' 扳平、终场被 Alisson 双扑救保平</div>
+      <p style="font-size:13.5px">摩洛哥首轮以开场高强度逼抢压制巴西，<b>Ismael Saibari 第 21 分钟</b>挑射越过出击迟缓的 Alisson 破门；但巴西很快由 <b>Vinícius Júnior 第 32 分钟</b>一记世界波扳平，比赛后段摩洛哥进攻效率下滑，终场前 Alisson 的连续扑救保住平局。摩洛哥对巴西实际阵型为 4-2-3-1（Bounou；Hakimi、Diop、Riad、Mazraoui；El Aynaoui、Bouaddi；Brahim Diaz、Ounahi、El Khannouss；Saibari），头号射手 El Kaabi 当场替补待命。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：摩洛哥开场高压是可复制武器，对组织偏慢的苏格兰前 30 分钟最危险；但若苏格兰像自己之于海地那样「先扛住」，摩洛哥后段续航与终结的老问题会放大，平局窗口因此存在。Ouahbi 是否把 El Kaabi 提上首发以增强中锋终结，是本场关键变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/brazil-vs-morocco-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 巴西1-1摩洛哥数据</a> · <a href="https://www.skysports.com/football/news/32461/13552632/world-cup-2026-brazil-1-1-morocco-vinicius-junior-scores-beauty-but-carlo-ancelottis-side-held-in-new-york" style="color:var(--accent)">Sky Sports — 比赛复盘</a> · <a href="https://khelnow.com/football/world-football-morocco-lineup-vs-brazil-fifa-world-cup-202606" style="color:var(--accent)">Khel Now — 摩洛哥首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">小组形势 · 出线算术 <span style="color:var(--mut);font-weight:400">· ESPN / Sky Sports · 06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">苏格兰胜或平即占据出线主动；摩洛哥若不胜，出线压力骤增</div>
+      <p style="font-size:13.5px">首轮过后 C 组：苏格兰 3 分（榜首）、巴西 1 分、摩洛哥 1 分、海地 0 分。本场若<b>苏格兰拿分</b>，将以最少 4 分大幅领先，末轮对海地有望锁定出线；若<b>摩洛哥取胜</b>则反超追平巴西、把压力甩给末轮对海地的苏格兰。摩洛哥作为夺标级别球队，被普遍视为必须在此役拿下 3 分以扭转「四强黑马却开局仅 1 分」的尴尬。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：出线算术决定双方心态——摩洛哥必须进攻取胜（更可能压上、给苏格兰反击/定位球空间）；苏格兰则可极致务实求一分（强化低位防守）。这放大了「摩洛哥控球、苏格兰摆铁桶 + 偷袭」的比赛形态。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13543087/world-cup-2026-group-c-guide-fixtures-schedule-standings-and-odds-for-scotland-brazil-morocco-and-haiti" style="color:var(--accent)">Sky Sports — C组形势</a> · <a href="https://www.espn.com/soccer/story/_/id/48975967/group-c-2026-world-cup-teams-records-stats-know-brazil-morocco-haiti-scotland" style="color:var(--accent)">ESPN — C组数据</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA 官方比赛中心 + Morocco World News 双源一致 · ✅ 官方确认</span></h2>
+    <div class="sub">开球前官方名单已公布并交叉核实（FIFA 比赛中心 + 跟队媒体）。下方区分「事实（名单）」与「解读（对本场主线的影响）」。</div>
+
+    <h4>① 双方官方首发 XI</h4>
+    <h5 style="margin:6px 0 0;color:#6fa8e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 3-5-2（与预测同框架）</h5>
+    <div class="lineup">Gunn; Hendry · Hanley · Tierney; Patterson(右翼卫) · McTominay · Ferguson · McGinn · Robertson(C·左翼卫); Christie · Adams</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Dykes</b>（高点中锋）· <b>Gannon-Doak</b>（速度边锋）· <b>Shankland / Hirst / Ross Stewart</b>（攻坚备选）· McKenna / Souttar（中卫）· Gordon / Kelly（门将）。</div>
+    <h5 style="margin:14px 0 0;color:#e8888c">🇲🇦 摩洛哥 · 4-2-3-1（无正印中锋 · Brahim Díaz 伪九）</h5>
+    <div class="lineup">Bounou; Hakimi(C) · Issa Diop · Chadi Riad · Mazraoui; Bouaddi · El Aynaoui; Saibari · Ounahi · El Khannouss; Brahim Díaz</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>El Kaabi</b>（头号射手·正印中锋）· <b>Amrabat</b>（2022 成名「中场绞肉机」）· <b>Rahimi / Talbi</b>（攻击爆点）· El Ouahdi / Salah-Eddine（边路）· El Kajoui / Tagnaouti（门将）。<span style="color:var(--warn)">把 El Kaabi 与 Amrabat 同时摁在替补席，是本场最大首发信号。</span></div>
+
+    <h4 style="margin-top:18px">② 官方 vs 预测对照（逐条「为什么重要」）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="sc">摩·后腰 ⚠重磅</td><td>Amrabat + Bouaddi</td><td>Bouaddi + El Aynaoui<br><small>（Amrabat 替补）</small></td><td>2022 成名的中场屏障 Amrabat 被摁替补；双后腰更年轻、更出球、<b>绞杀力下降</b>——直接作废「McTominay vs Amrabat」这条预设胜负枢纽</td></tr>
+      <tr><td class="sc">摩·中锋 ⚠重磅</td><td>El Kaabi（正印中锋）</td><td>无正印中锋<br>Brahim Díaz 伪九<br><small>（El Kaabi 替补）</small></td><td>放弃禁区终结点与高空支点，改打技术流伪九；面对密集低位易陷「无支点横传」——强化「破不开→低分」读数</td></tr>
+      <tr><td class="sc">摩·攻击中场</td><td>（未列 Saibari）</td><td>Saibari 进首发</td><td>首轮对巴西 21' 破门者回到首发，增强中路前插与二点冲击</td></tr>
+      <tr><td class="ht">苏·左中卫</td><td>McKenna</td><td>Tierney</td><td>Tierney 出任左中卫，提升左路出球与定位球第二输送点、防守更稳</td></tr>
+      <tr><td class="ht">苏·中场+锋线</td><td>Christie 居中场<br>Adams + Dykes 锋线</td><td>Ferguson 进中场<br>Christie 提为 Adams 锋线搭档</td><td>中场三人 McTominay+Ferguson+McGinn 跑动覆盖更强；锋线放弃 Dykes 高点改用更灵活的 Christie（机动升、空中支点略降）</td></tr>
+      <tr><td class="ht">苏·队长</td><td>McGinn (C)</td><td>Robertson (C)</td><td>袖标在罗伯逊（二人均首发，象征意义为主）</td></tr>
+      <tr><td colspan="4">其余约 <b>8/11（摩）· 9/11（苏）与预测一致</b>——大框架即「苏格兰低位防守块 + 定位球 vs 摩洛哥控球渗透」，计划 A 执行，本身就是信息。</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 战术解读</h4>
+    <ul class="cl">
+      <li><b>阵型信号 · 速览主结论维持</b>：双方阵型与预测大框一致（苏 3-5-2、摩 4-2-3-1），比赛形态确认为「苏摆铁桶 + 偷袭 vs 摩控场渗透」——速览主结论（<b>摩洛哥占优、平局是真实风险、偏小球</b>）维持。</li>
+      <li><b>关键对位 · 修正</b>：预测把胜负枢纽定在「McTominay vs Amrabat」，但 <b>Amrabat 被摁替补</b>，该对位作废。摩双后腰改 Bouaddi(18 岁)+El Aynaoui，绞杀力下降、出球提升；McTominay 后插上被锁死的概率随之降低，<b>苏格兰反击/二点威胁边际上调</b>——对苏格兰是利好。</li>
+      <li><b>摩洛哥无正印中锋（伪九）· 强化小球/平局尾部</b>：El Kaabi 替补、Brahim Díaz 伪九，面对苏格兰密集低位缺少禁区终结点与高空支点，易陷「无支点横向倒脚」；与「破不开密集→低分」逻辑一致，<b>强化小 2.5 球读数、抬高平局尾部</b>，并进一步印证「摩洛哥即便取胜也多为受控窄胜」。</li>
+      <li><b>苏格兰防线/定位球执行力升级</b>：Tierney 入替 McKenna 出任左中卫，左路出球与定位球输送增厚；Ferguson 进中场添跑动。「扛住开场 + 定位球偷袭 Aguerd 缺阵的中卫线(Diop+Riad)」剧本完整保留且执行更强。</li>
+      <li><b>替补 Plan B 清晰</b>：摩洛哥手握 <b>El Kaabi（正印中锋增强终结）+ Amrabat（稳中场）</b>两张奇兵，久攻不下时是明确变招；苏格兰端 Dykes/Shankland 高点 + Gannon-Doak 速度，用于守领先或最后偷袭。</li>
+    </ul>
+    <div class="flag" style="border-color:#1d4a2a;background:#0e2218">✅ <b>速览结论：维持</b>（摩洛哥控场占优、平局是真实风险、偏小球）。<b>修正点</b>＝关键胜负手由「McTominay vs Amrabat」转为「<b>摩洛哥无支点伪九能否破苏格兰密集低位</b>」；Amrabat + El Kaabi 双双替补，边际抬高了平局 / 小球的概率。</div>
+
+    <h4 style="margin-top:18px">④ 市场反应（事实陈述，非投注建议）</h4>
+    <table>
+      <tr><th>市场</th><th>首发公布前后</th><th>解读</th></tr>
+      <tr><td>1X2（聚合，DECIMAL）</td><td class="sc">摩 1.70 · 平 3.30 · 苏 5.00</td><td>与开档基本持平，无剧烈跳动</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td class="sc">小 2.5 收紧至约 1.63（−158）</td><td>较开档 1.65 略紧、多家专家明确押 Under；与摩洛哥「无正印中锋」首发的小球叙事方向一致</td></tr>
+    </table>
+    <div class="note">📌 未检得首发公布后明确的实时 1X2 重定价报价；让球线 / in-play movement <span style="color:var(--warn)">待核</span>。本块仅作事实陈述，不构成投注建议。</div>
+
+    <h4 style="margin-top:18px">⑤ 来源</h4>
+    <div style="font-size:12.5px">
+      <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021454/line-up" style="color:var(--accent)">FIFA 官方比赛中心 — 首发 / 阵型 / 裁判(Tantashev)</a> ·
+      <a href="https://www.moroccoworldnews.com/2026/06/322355/morocco-lineup-vs-scotland-confirmed-for-world-cup-2026-clash/" style="color:var(--accent)">Morocco World News — 摩洛哥官方首发(含号码/替补)</a> ·
+      <a href="https://www.moroccoworldnews.com/2026/06/322348/scotland-lineup-vs-morocco-confirmed-for-world-cup-2026-clash/" style="color:var(--accent)">Morocco World News — 苏格兰官方首发</a> ·
+      <a href="https://sports.yahoo.com/articles/morocco-vs-scotland-predictions-picks-113000927.html" style="color:var(--accent)">Yahoo / Covers / CBS — 赔率与 Under 2.5 盘口</a>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · C组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>🇲🇦 摩洛哥</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#39</td><td class="sc">#12</td></tr>
+      <tr><td>世界杯史</td><td class="ht">时隔 28 年重返（1998 后首次）· 历史从未小组出线</td><td class="sc">2022 世界杯四强（非洲/阿拉伯首次）· 本组次种子</td></tr>
+      <tr><td>首轮战绩</td><td class="ht">1-0 胜海地（McGinn 28'）· 暂列小组第一</td><td class="sc">1-1 平巴西（Saibari 21'）· 与巴西同积 1 分</td></tr>
+      <tr><td>主教练</td><td class="ht">Steve Clarke</td><td class="sc">Mohamed Ouahbi</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈5.00（隐含≈18%）</td><td class="sc">胜 1.70（≈59%）· 平 3.30（≈30%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 @ ≈2.30 / 小 2.5 @ ≈1.65 —— 市场明显偏向小球（隐含≈60%）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查世界杯正式交锋记录（罕见对阵）</td></tr>
+      <tr><td>关键缺阵</td><td class="ht">无重大伤停（赛前全员可用）</td><td class="sc">Aguerd（耻骨骨折）· Ezzalzouli（膝伤）—— 均已剔出大名单</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈59/30/18，已重整为约 100%）。赔率来源：Oddschecker / compare.bet / Yahoo（摩洛哥约 1.70 即 -130、平 3.30、苏格兰约 5.00+）。大小球线 2.5：Over 约 +130（2.30）/ Under 约 -150（1.65）。Opta 超算 10000 次模拟：摩洛哥胜 54.2%、平 24.9%、苏格兰胜 20.9%——与市场去水概率高度吻合，说明盘口定价合理，无明显情绪溢价。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史/预选基准样本</b>与<b>本届世界杯首轮实际值</b>逐项对照，看"本届高于还是低于历史水平、说明什么"。<b>关键校准</b>：FootyStats 上摩洛哥"近 10 场"实际是 2026 世预选非洲区，对手是科摩罗/乌干达/赞比亚等弱旅——数字光鲜但样本含金量低，须以 Opta Power Ranking 重新校准；苏格兰"近 10 场"是世预选欧洲区（葡萄牙/克罗地亚/希腊/丹麦），样本对手更强。国家队公开 xG 细分有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史/预选均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史/预选基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 进攻 xGF</td><td class="ht">世预选欧洲区 10 场 <b>xGF 1.01/场</b>、场均进球仅 0.90、射门 7.9/场（SoT 3.7）、控球 49%、转化率 11%</td><td class="ht">首轮 <b>xG 1.05</b>、实进 1 球（1-0 胜海地，靠 McGinn 折射）</td><td>首轮 xG（1.05）几乎贴合预选基准（1.01）——苏格兰本届进攻<b>持平</b>历史的"低产"档；运动战创造力天花板就在 1.0 上下，得分高度依赖定位球/折射</td></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 防守 xGA</td><td class="ht">世预选欧洲区 <b>xGA 1.70/场</b>（客场高达 2.11）、场均失球 1.30、零封率仅 30%——防线是结构短板</td><td class="ht">首轮被海地打出 <b>1.21 xGA</b>、被射 15 脚（多于自己 9 脚），但 0 失球</td><td><b>优于</b>预选基准（1.21 vs 1.70）但仍被弱旅海地压着打——0 失球含一定门将/运气成分；面对摩洛哥更高质量的渗透，防线被打穿风险高于首轮</td></tr>
+      <tr><td class="sc">🇲🇦 摩洛哥 · 进攻 xGF</td><td class="sc">FootyStats 近 10 场（世预选非洲区，<b>对手偏弱</b>）<b>xGF 1.69/场</b>、场均进球 1.70、射门 15.5/场（SoT 5.2）、控球 56%</td><td class="sc">首轮对巴西 <b>xG ≈1.37（Opta）/ 1.53（xGscore）</b>、实进 1 球（Saibari 21' 先进后被扳平）</td><td>对世界级巴西仍打出 1.37+ xG，<b>高于</b>预选"对弱旅"基准的运动战质量含金量——证明摩洛哥进攻在强强对话中并未失真；但"开场风暴后哑火"（30 分钟内 12 脚射门、之后近乎断流）是续航隐患</td></tr>
+      <tr><td class="sc">🇲🇦 摩洛哥 · 防守 xGA</td><td class="sc">FootyStats 近 10 场 <b>xGA 0.72/场</b>、场均失球 0.10、<b>零封率 90%</b>（对手弱，数据被美化）</td><td class="sc">首轮对巴西 <b>xGA ≈1.23–1.26</b>、丢 1 球（Vinícius 32' 世界波），终场靠 Bounou/Alisson 级扑救保平</td><td><b>远高于</b>预选基准（1.23 vs 0.72）——对手强度一上来防守 xGA 翻倍，印证 0.72 是"弱旅红利"；叠加 <b>Aguerd（中卫）+ Ezzalzouli 缺阵</b>，对苏格兰定位球高点防空是真实漏洞</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：苏格兰进攻本届<b>持平</b>其低产基准（xG≈1.0 是天花板）、防守虽优于纸面但仍被弱旅压制；摩洛哥进攻在强强对话中<b>保持质量</b>（vs 巴西 1.37 xG），但防守 xGA 因对手升级而<b>翻倍</b>（0.72→1.23），证明预选"90% 零封"是弱旅红利、并非铁闸——这与"摩洛哥控场占优、但其减员后防 + 苏格兰定位球＝平局窗口"的主线一致。来源：FootyStats（两队队页 xG/控球/射门/零封）· Opta Analyst（首轮 xG/统计）· xGscore（首轮 xG）。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（基于两队首轮 + 打法）</td><td class="sc">摩洛哥 ≈1.4</td><td class="ht">苏格兰 ≈0.7</td><td>校准后摩洛哥控场投射占优——但"破密集低位 + 终结续航"是其软肋，苏格兰定位球可缩小净 xG 差</td></tr>
+      <tr><td>Opta 超算（10000 次模拟）</td><td colspan="2" class="sc">摩洛哥胜 54.2% · 平 24.9% · 苏格兰胜 20.9%</td><td>与去水赔率（≈59/30/18）高度收敛，无情绪溢价</td></tr>
+      <tr><td>Opta Power Ranking / 样本对手强弱</td><td colspan="2" class="sc">体系内摩洛哥（FIFA #12、2022 四强）远高于苏格兰（FIFA #39）；<b>但摩洛哥预选样本对手＝非洲弱旅，苏格兰预选样本对手＝葡/克/希/丹</b></td><td><b>陷阱提醒</b>：摩洛哥 FootyStats 的 0.72 xGA / 90% 零封被弱旅样本严重高估，对巴西已回归 1.23 xGA；勿据预选数字高估其防守铁闸成色</td></tr>
+      <tr><td>PPDA · xT · field tilt · PSxG · 定位球 xG 占比</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：摩洛哥中高位 + field tilt 长时间倒向自己；苏格兰被迫低位、xT 主要来自定位球与反击二点；摩洛哥 <b>Aguerd/Ezzalzouli 缺阵</b>抬高其被对方定位球打穿的 xGA 风险</td><td>场面倾斜大概率倒向摩洛哥，但定位球 xT 是苏格兰唯一能逆转倾斜的杠杆</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 FootyStats/Opta/xGscore 等公开来源；摩洛哥预选样本对手偏弱，其 xGA/零封率经 Opta Power Ranking 校准后下修；国家队在 PPDA/xT/field tilt/PSxG/定位球 xG 占比等细分上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">摩洛哥胜方向共识清晰，但「胜幅」与「能否进球」存在分歧：小球方向受多数专家支持；苏格兰榜首身份带来一定情绪流量</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 摩洛哥胜 + 小球方向统一；让球幅度有分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">摩洛哥胜方向基本收敛（专家罕有押苏格兰赢），但摩洛哥后防减员 + 苏格兰刚爆冷胜海地，给「平局/苏格兰 +1.5」带来真实的逆向情绪资金；小 2.5 球是最有共识的切入点。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：摩洛哥胜 多数 · 平局 少数 · 苏格兰胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>摩洛哥胜率 54.2%（10000 次模拟）；平 24.9%；苏格兰胜 20.9%</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>摩洛哥窄胜（1-0 类）</b>；苏格兰防守纪律使其难以大胜</td></tr>
+      <tr><td>RotoWire</td><td>前瞻/战术</td><td>摩洛哥占优；中场 McTominay vs Amrabat 是胜负枢纽</td></tr>
+      <tr><td>Total Football Analysis</td><td>战术媒体</td><td>摩洛哥胜 + <b>小 2.5 球</b>；控制型窄胜</td></tr>
+      <tr><td>Yahoo Sports</td><td>美系投注媒体</td><td>倾向平局 — 摩洛哥被看好但苏格兰足以搅局</td></tr>
+      <tr><td>Racing Post</td><td>投注媒体</td><td>摩洛哥让球 / 小球向的 Bet Builder 组合</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向高度统一（无人押苏格兰赢），但这是合理共识而非过热。真正的分歧在<b>胜幅</b>（摩洛哥能否赢 2 球，对应让球盘）与是否「平局」。情绪资金集中在 <b>小 2.5 球 + 摩洛哥胜</b>两侧；摩洛哥 -1 让球受后防减员消息压制。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>摩洛哥胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>1X2</td><td class="sc">1.70</td><td>明显倾斜摩洛哥；平局 3.30 / 苏格兰约 5.00+</td></tr>
+      <tr><td>06-18/19</td><td>1X2（聚合）</td><td class="sc">1.70（约 -130）</td><td>稳定；后防减员消息未明显推高赔率</td></tr>
+      <tr><td>06-18/19</td><td>大/小 2.5 球</td><td colspan="2" class="sc">大 2.5 约 2.30（+130）；小 2.5 约 1.65（约 -150）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>摩洛哥 -0.5/-1</td><td colspan="2" class="ht">摩洛哥 -0.75 区间（线非赔率，待核实时盘）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘趋于稳定，最活跃资金在 <b>大小球 2.5 线</b>（偏 Under）。亚盘层面体现「摩洛哥须胜出且可能赢 1 球」的基准预期；摩洛哥 -1 因后防减员而不被市场充分信任。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td><b>赛前（赛事/小组赛开盘初盘）</b></td><td class="sc">出线 futures：摩洛哥约 1/12（出线隐含≈92%）· 苏格兰约 1/4（出线隐含≈80%）<span style="color:var(--warn)">（赛事开盘区间）</span></td><td>开赛前定位：摩洛哥＝该组次种子、2022 四强，被列为出线大热（仅次于巴西）；苏格兰被定为「能出线但偏弱」一档</td></tr>
+      <tr><td><b>本场开盘（赛前对位）</b></td><td class="sc">1X2：摩洛哥约 1.70 · 平 3.30 · 苏格兰约 5.00</td><td>本场作为「夺标级别次种子 vs 较弱对手」开出——摩洛哥明显受让方，欧赔即把摩洛哥定为强势主胜方</td></tr>
+      <tr><td><b>现盘（次轮·首轮已踢后）</b></td><td class="sc">1X2：摩洛哥约 1.70（≈ -145，moneyline 换算 1.69）· 平约 3.30–3.60 · 苏格兰约 5.00–5.50 ｜ 让球：摩洛哥 -0.75 ｜ 出线 futures：摩洛哥赢组约 9/4（2.25）、出线进一步收窄；苏格兰首胜后出线赔收紧但仍非组首热门</td><td><b>摩洛哥</b>：1-1 逼平巴西（表现亮眼）后市场信心上升——赢组/出线 futures 收窄、夺冠赔率被砍至约 40–50/1（非洲最短价）；但 <b>Aguerd（中卫）+ Ezzalzouli 缺阵</b>压制了本场让球的收窄幅度，<b>-1 让球不被充分信任</b>，胜赔仍停在 1.70 未进一步压低。<br><b>苏格兰</b>：1-0 胜海地、登顶榜首，出线赔被收紧（开赛前 1/4 → 现更被看好出线）；但本场面对夺标级别摩洛哥，其客胜/取胜赔仍维持在 5.00 高位——市场认可其出线前景，却不认为它能在本场击败摩洛哥</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：经首轮后重新定价，<b>摩洛哥被坐实为该组与巴西并列的出线＋赢组热门</b>（逼平巴西＝信心兑现，但后防减员封住了本场让球的进一步收窄）；<b>苏格兰</b>凭首胜登顶、出线前景被上调，但在本场对位上仍被定为<b>明显弱势的搏冷一方</b>（胜赔 5.00 档、靠定位球偷袭求分）。本场欧赔三选项稳定（1.70 / 3.30 / 5.00），最活跃的重新定价发生在<b>两队的出线/赢组 futures</b> 而非本场胜负盘。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：摩洛哥 54.2% / 平 24.9% / 苏格兰 20.9%——与博彩去水概率（≈59/30/18，重整后接近）基本收敛，无显著情绪偏离。</li>
+      <li><b>舆论焦点</b>：摩洛哥的「四强黑马却开局仅 1 分」叙事 + 后防减员是主线；苏格兰「28 年首胜、登顶榜首」的故事带来情绪流量，但未见显著推动盘口的单边资金。</li>
+      <li><b>逆向情绪资金</b>：摩洛哥减员 + 苏格兰防守口碑，使「平局 / 苏格兰 +1.5」成为部分散户与价值党的切入点；但 1.65 的小球赔率说明定价已反映共识，额外边际有限。</li>
+      <li><b>Kalshi / Polymarket</b>：本场单场胜负概率与成交量数据未公开检得 <span style="color:var(--warn)">（待核）</span>；总分细分深度数据亦未见。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与超算高度收敛，过热指数 <b>3/5</b>。摩洛哥胜方向统一；真正的价值分歧集中在<b>胜幅（让球）</b>与<b>小球 2.5 球</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/scotland-vs-morocco-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/scotland-v-morocco-predictions">Total Football Analysis — 预测</a> · <a href="https://sports.yahoo.com/articles/scotland-vs-morocco-picks-predictions-140309697.html">Yahoo Sports — Picks/赔率</a> · <a href="https://www.oddschecker.com/football/world-cup/scotland-v-morocco/winner">Oddschecker — 赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/scotland-vs-morocco-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aTSK61a9KSIm/">Racing Post — 赔率/投注</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">摩洛哥控球占优、传中渗透多，角球产出预计高于苏格兰；苏格兰被动防守 + 解围出底线会贡献被迫角球；市场盘口数据待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>🇲🇦 摩洛哥</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">低位防反；罗伯逊/McGinn 传中；定位球抢点（Adams/Dykes/Hanley）</td><td class="sc">控球渗透 + Hakimi 右路传中；中路 El Khannouss/Ounahi 输送</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈3–5（防守为主，但定位球是武器）<span style="color:var(--warn)">待核</span></td><td class="sc">≈5–7（控球/围攻时间多）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：罗伯逊优质传中 + 多名高点（Hanley/Hendry/Adams）</td><td class="sc">中高：Hakimi/El Khannouss 输送；但 Aguerd 缺阵削弱争顶高点</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">较少（持球时间少），但单次质量高</td><td class="sc">占优（控球围攻 + 苏格兰被迫解围出底线）</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像：摩洛哥控球围攻 + 苏格兰被迫解围，总角球数可能落在 8–11 区间；常见基准线 O/U 9.5 或 10.5 均属正常，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>摩洛哥控球占优，角球数大概率多于苏格兰，角球让球预计倾向摩洛哥；但苏格兰定位球质量高、单次威胁不小，角球「质」上不落下风。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>摩洛哥围攻 + 苏格兰深度防守解围，被迫角球会推升总数；若摩洛哥久攻不下、苏格兰摆铁桶，总角球数可能向上靠近 10–11。若苏格兰早进定位球迫使摩洛哥更压上，角球数同样偏高。</div>
+    <div class="insight"><div class="who">变量与两面性</div>摩洛哥后防减员（Aguerd 缺阵）令其防苏格兰定位球更吃力——苏格兰的角球「转化威胁」是本场角球格局中最值得关注的变量。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>裁判委任已确认</b>：主裁 <b>Ilgiz Tantashev</b>（乌兹别克斯坦）；助理裁判 Andrey Tsapenko &amp; Timur Gaynullin（乌兹别克斯坦）；第四官员 Adham Makhadmeh（约旦）；备用助理 Mohammad Al-Khalaf（约旦）。Tantashev 2008 年起为乌兹别克顶级主裁、2013 年入列 FIFA，拥有奥运会与亚洲杯执法经验，2022 世界杯亚洲区预选赛（含 UAE vs 澳大利亚附加赛）、2023 亚洲杯、2024 亚冠精英联赛决赛均有执法，是 AFC 选派的 8 名 2026 世界杯主裁之一。</div>
+    <h4>执法画像（近 15 场 + 大赛样本）</h4>
+    <ul class="cl">
+      <li><b>尺度偏严、牌量偏高</b>：据赛前媒体统计，Tantashev 最近 15 场出示 63 张黄牌（场均约 <b>4.2 张</b>），且最近两场比赛累计出示 3 张红牌——属本届相对严厉的一档。<span style="color:var(--warn)">[该 15 场为综合赛事样本，非世界杯正赛；其执法两队的世界杯正赛样本为 0 · 无大赛正赛样本]</span></li>
+      <li><b>大赛背景</b>：奥运会 + 亚洲杯 + 世预赛 + 亚冠决赛级别经验充足，但<b>无男足世界杯正赛执法样本</b>，对欧洲/非洲顶级对抗的临场尺度需以本场为首例观察。</li>
+    </ul>
+    <h4>本届统一执法新规（对本场参考意义）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：苏格兰若领先想拖延，工具有限；摩洛哥若久攻不下，节奏管理同样受约束。</li>
+      <li><b>仅队长可与裁判沟通</b>：苏格兰队长 McGinn（若首发）；摩洛哥队长 Hakimi——两人均有大赛经验，适应新规无压力。</li>
+      <li><b>半自动越位</b>：Hakimi 套边 + El Kaabi 抢点的越位临界将被精准捕捉，对进球数有轻微抑制。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Tantashev 牌量偏高的画像，对一场预期身体对抗激烈（苏格兰肉搏式防守 vs 摩洛哥技术渗透）的比赛意味着<b>黄牌、累黄停赛、乃至点球的概率高于平均</b>——苏格兰禁区内对 El Kaabi/Saibari 的拉扯、以及摩洛哥反抢中的战术犯规，都可能被从严判罚。但因其无世界杯正赛样本，本场尺度仍需临场验证，裁判面不构成可操作的确定依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:#4ade80;border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 预测首发（3-5-2 / 4-2-3-1 两版本）</h4>
+    <div class="lineup">3-5-2：Gunn; Hendry · Hanley · McKenna; Patterson · McGinn(C) · McTominay · Christie · Robertson; Adams · Dykes</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Scott McTominay</td><td>中场 / 那不勒斯</td><td>苏格兰中场引擎；70 场 15 球，后插上得分点；对海地两次良机未把握</td></tr>
+      <tr><td class="ht">John McGinn (C)</td><td>中场 / 阿斯顿维拉</td><td>队长；上一场折射制胜球；定位球与二点串联核心</td></tr>
+      <tr><td class="ht">Andrew Robertson</td><td>左后卫/翼卫 / 利物浦</td><td>定位球与传中的主要输送手，苏格兰得分套路依赖其左路传中</td></tr>
+      <tr><td class="ht">Che Adams</td><td>前锋 / 效力英超/欧洲</td><td>支点中锋；负责拉扯摩洛哥（减员的）中卫线、争抢二点</td></tr>
+    </table>
+    <h4>🇲🇦 摩洛哥 预测首发（4-2-3-1 / 4-3-3）</h4>
+    <div class="lineup">Bounou; Hakimi(C) · Diop · Riad · Mazraoui; Amrabat · Bouaddi; Brahim Diaz · Ounahi · El Khannouss; El Kaabi</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Achraf Hakimi (C)</td><td>右后卫 / 巴黎圣日耳曼</td><td>队长；摩洛哥右路进攻发动机，套边传中是主要威胁源</td></tr>
+      <tr><td class="sc">Sofyan Amrabat</td><td>后腰 / 效力欧洲</td><td>2022 世界杯成名的中场屏障；75 场国脚，绞杀对方组织</td></tr>
+      <tr><td class="sc">Brahim Díaz</td><td>前腰/边锋 / 皇家马德里</td><td>技术核心；摩洛哥中路渗透与个人创造的主要来源</td></tr>
+      <tr><td class="sc">Ayoub El Kaabi</td><td>中锋 / 效力欧洲</td><td>头号射手；对巴西替补待命，本场是否提上首发增强终结是关键变量</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / RotoWire / ESPN / SI），<b>以赛前官方名单为准</b>。<b style="color:var(--warn)">重要：ESPN 一版预测 XI 仍列 Aguerd/Ezzalzouli 首发，但二人已确认伤退剔出大名单——本页摩洛哥后防以 Diop+Riad 为准（与对巴西实际首发一致）。</b>苏格兰阵型在 3-5-2 与 4-2-3-1 间存在不确定（待核）；El Kaabi 是否首发（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#6fa8e6">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · Steve Clarke</div>
+        <div class="role">低位密集防守 + 定位球决胜（曾以此掀翻西班牙/丹麦）</div>
+        <ul class="cl">
+          <li>Clarke 的核心是纪律严明的中低位防守块，压缩摩洛哥渗透空间，依靠 McTominay 后插上、罗伯逊传中与定位球抢点制造得分机会——这是对抗实力更强球队的标准剧本，预选赛已多次奏效。</li>
+          <li>对海地一役印证：运动战创造力有限（xG≈1.05），得分高度依赖定位球与个人折射；本场对身体强硬但<b>后防减员</b>的摩洛哥，定位球价值进一步上升。</li>
+          <li>风险：若被摩洛哥开场高压打穿、早早落后，苏格兰运动战追分能力薄弱；中场若被 Amrabat 锁死 McTominay，进攻出口会大幅减少。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e8888c">🇲🇦 摩洛哥 · Mohamed Ouahbi</div>
+        <div class="role">4-2-3-1 控球渗透 + Hakimi 边路爆破（U20 世界杯冠军教头）</div>
+        <ul class="cl">
+          <li>Ouahbi 三月接替 Regragui 上任、曾率队夺 2025 U20 世界杯，延续摩洛哥的技术控球 + 边路（Hakimi）爆破体系，中路靠 Brahim Díaz/Ounahi/El Khannouss 渗透，开场高压是招牌武器（对巴西已验证）。</li>
+          <li>对巴西 1-1 暴露两点：① 后段续航/终结效率下滑（先进球未能扩大）；② <b>Aguerd 缺阵后的中卫组合（Diop+Riad）</b>防空与默契是隐患——恰是苏格兰定位球的攻击点。</li>
+          <li>风险：面对摆铁桶的苏格兰，破密集是难题；若开场风暴未转化、被苏格兰定位球偷袭，「夺标级别却连续不胜」的心理压力会放大。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>摩洛哥在 10000 次模拟中胜率 54.2%，苏格兰 20.9%、平局 24.9%——量化模型与市场赔率高度吻合。报告强调即便摩洛哥取胜，也大概率是<b>受控的窄胜</b>，因苏格兰防守组织扎实。结合两队最近 2 届大赛实际：摩洛哥 2022 世界杯四强（淘汰西班牙、葡萄牙）+ 2023 非洲杯 16 强出局（点球负南非），其上限远高、但近年大赛稳定性已不如卡塔尔那届；苏格兰欧洲杯 2024 小组垫底出局（净胜球 -6），大赛进攻乏力是结构性问题。</div>
+    <div class="insight"><div class="who">中场博弈 · McTominay vs Amrabat <small>· RotoWire</small></div>本场胜负枢纽在中场：McTominay 的后插上前冲（苏格兰主要得分来源）撞上 Amrabat 这位 2022 世界杯成名的「中场绞肉机」。若 Amrabat 成功锁死 McTominay，苏格兰运动战几近哑火、只剩定位球；反之 McTominay 若能挣脱，苏格兰反击与二点球将有真实威胁。</div>
+    <div class="insight"><div class="who">摩洛哥侧画像 · 黑马成色与减员 <small>· 战术信号</small></div>摩洛哥是本组实力天花板（2022 四强），但本届开局仅 1 分、且<b>后防核心 Aguerd 与边锋 Ezzalzouli 双双伤退</b>，黑马成色被打折。新帅 Ouahbi（U20 冠军）尚在磨合，对巴西的「开场风暴后哑火」说明体系续航存疑——这给纪律型的苏格兰留出了「先扛后偷」的现实空间。</div>
+    <div class="insight"><div class="who">苏格兰侧画像 · 28 年一胜的资本 <small>· 历史信号</small></div>苏格兰 1-0 胜海地是其世界杯历史性一胜（此前从未小组出线），手握 3 分让 Clarke 可以极致务实。对身体强硬的摩洛哥，苏格兰的肉搏式低位防守 + 罗伯逊/McGinn 的定位球，是「以弱搏强」最现实的剧本——求一分即占据出线主动，这会让比赛更可能走向低分拉锯。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：摩洛哥控场窄胜（1-0 / 2-1）是基准剧本；<b>平局（1-1 / 0-0）是最大风险</b>——苏格兰定位球 + 摩洛哥后防减员 + 摩洛哥续航存疑共同支撑；苏格兰胜（约 18–21%）是小概率尾部风险。</li>
+      <li><b>关键先生</b>：Hakimi（摩/右路爆破）、Amrabat（摩/中场绞杀）、El Kaabi（摩/终结）、McTominay（苏/前插得分）、罗伯逊 + McGinn（苏/定位球决胜）。</li>
+      <li><b>胜负手</b>：真正胜负手是<b>「摩洛哥能否在续航下滑前用控球/开场高压破密集」 vs 「苏格兰能否用定位球惩罚 Aguerd 缺阵的中卫线」</b>。Amrabat 对 McTominay 的锁定程度是天平砝码。</li>
+      <li><b>市场视角</b>：博彩与 Opta 超算高度收敛（摩洛哥 ≈54–59%），过热指数 3/5。最有信息含量的市场是<b>小球 2.5 球</b>（偏 Under）与<b>让球幅度</b>（摩洛哥 -1 因减员不被充分信任）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 苏格兰最终阵型（3-5-2 还是 4-2-3-1）；② 摩洛哥 El Kaabi 是否首发、中场是 Bouaddi 还是 Saibari 搭 Amrabat；③ 摩洛哥替补深度受 Aguerd/Ezzalzouli 缺阵的实际影响；④ Kalshi/Polymarket 单场价格与成交量未公开检得；⑤ 角球具体盘口数据未检得；⑥ 亚盘具体赔率及让球线以赛前实时盘口为准；⑦ Tantashev 无世界杯正赛样本，临场尺度待验证。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C">Wikipedia — C组确认（巴西、摩洛哥、苏格兰、海地）</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/group-c-focus-teams-fixtures-standings">FIFA — C组形势/赛程</a> · <a href="https://www.espn.com/soccer/story/_/id/49107538/scotland-morocco-line-ups-world-cup-predicted-xis">ESPN — 预测首发</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/scotland/world-cup-2026/preview/scotland-vs-morocco-prediction-team-news-lineups_599454.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.rotowire.com/soccer/article/scotland-vs-morocco-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-c-118659">RotoWire — 首发/战术</a> · <a href="https://www.si.com/soccer/scotland-vs-morocco-world-cup-preview-predictions-lineups-6-19-26">SI — 前瞻/首发</a><br>
+      • <a href="https://theanalyst.com/articles/scotland-vs-morocco-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/scotland-v-morocco-predictions">Total Football Analysis — 预测</a> · <a href="https://sports.yahoo.com/articles/scotland-vs-morocco-picks-predictions-140309697.html">Yahoo Sports — Picks/赔率</a> · <a href="https://www.oddschecker.com/football/world-cup/scotland-v-morocco/winner">Oddschecker — 赔率</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49027277/morocco-cut-injured-aguerd-ezzalzouli-last-minute-world-cup-reshuffle">ESPN — Aguerd/Ezzalzouli 伤退剔出</a> · <a href="https://www.washingtonpost.com/sports/soccer/2026/06/11/world-cup-morocco-injuries-ezzalzouli/">Washington Post — 摩洛哥伤情</a> · <a href="https://www.espn.com/soccer/story/_/id/49055260/haiti-scotland-world-cup-2026-result-score-recap-john-mcginn-ben-gannon-doak-group-c">ESPN — 苏格兰 1-0 胜海地</a><br>
+      • <a href="https://theanalyst.com/articles/brazil-vs-morocco-stats-world-cup-2026">Opta — 巴西 1-1 摩洛哥数据</a> · <a href="https://www.skysports.com/football/news/32461/13552632/world-cup-2026-brazil-1-1-morocco-vinicius-junior-scores-beauty-but-carlo-ancelottis-side-held-in-new-york">Sky Sports — 巴西1-1摩洛哥</a> · <a href="https://khelnow.com/football/world-football-morocco-lineup-vs-brazil-fifa-world-cup-202606">Khel Now — 摩洛哥对巴西首发</a><br>
+      • <a href="https://www.moroccoworldnews.com/2026/06/320630/fifa-appoints-uzbek-referee-ilgiz-tantashev-for-morocco-scotland-world-cup-clash/">Morocco World News — 裁判委任</a> · <a href="https://www.the-afc.com/en/national/fifa_world_cup.html/news/fifa-world-cup-2026-spotlight-ilgiz-tantashev-%E2%80%93-afc-referee">AFC — Tantashev 画像</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mohamed-ouahbi-replaces-walid-regragui-morocco">FIFA — Ouahbi 接任摩洛哥主帅</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-19 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#005eb8',SC='#c1272d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['苏格兰胜','平局','摩洛哥胜'],datasets:[{data:[18,30,52],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[40,60],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，明显偏向小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[3,12,39,83],backgroundColor:['#f4a61b',SC,HT,'#1d3a8f'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'苏格兰',data:[7,5,6,7.5,5.5,4.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'摩洛哥',data:[6.5,6.5,7.5,6,8,8],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Pré-Jogo · Alemanha vs Costa do Marfim · Copa do Mundo 2026 Grupo E Rodada 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-germany-vs-cotedivoire.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-germany-vs-cotedivoire.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-germany-vs-cotedivoire.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-germany-vs-cotedivoire.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-germany-vs-cotedivoire.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#f7901e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#7a4a0f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#21180c);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#f7b86a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-germany-vs-cotedivoire.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-germany-vs-cotedivoire.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-germany-vs-cotedivoire.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="index.html">← Voltar ao Centro de Análise</a><br>
+  <span class="badge">⚽ Copa do Mundo 2026 · Grupo E Rodada 2 · Duelo direto pela liderança entre duas seleções que venceram a 1ª rodada</span>
+  <h1>Alemanha vs Costa do Marfim</h1>
+  <div class="meta">20 de junho de 2026 · BMO Field, Toronto (Toronto Stadium) · 16:00 ET · Grupo E (também: Curaçao, Equador)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇩🇪 Alemanha</div><div class="rk">FIFA #9 · 10 vitórias seguidas em todas as competições · 1ª rodada 7-1 Curaçao · líder do Grupo E (saldo +6)</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f7b86a">🇨🇮 Costa do Marfim</div><div class="rk">Campeã africana · 1ª rodada 1-0 Equador (Amad 90' decisivo) · 4 vitórias seguidas · amistoso 2-1 sobre a França</div></div>
+  </div>
+
+  <!-- ===== Resumo ===== -->
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia isto primeiro)</h3>
+    <p class="lead">Este é o <b>"duelo direto pela liderança"</b> da 2ª rodada do Grupo E: duas seleções que venceram a 1ª rodada se enfrentam, e o vencedor praticamente garante a classificação (avançar aos 32 melhores), além de assumir a dianteira na disputa pela liderança do grupo. A Alemanha goleou por <b>7-1 o Curaçao</b> na estreia, soma <b>10 vitórias seguidas</b> em todas as competições (desde setembro de 2025) e, com esta partida, chegou a 239 gols, superando o Brasil como a maior artilheira da história das Copas — está em forma máxima; mas há uma <b>fragilidade estrutural clara — 7 jogos seguidos de Copa sem manter o gol fechado (a maior sequência desde 1970), sendo o último jogo de Copa sem sofrer gols a final de 2014</b>. A Costa do Marfim segue outro roteiro: na 1ª rodada foi sufocada pelo Equador (três bolas na trave), mas roubou os três pontos por <b>1-0 com o gol decisivo de Amad Diallo, entrando aos 90 minutos</b>; pouco antes ainda havia <b>batido por 2-1 a França, terceira do mundo</b>, em amistoso — disciplina defensiva e explosão pelas pontas são qualidades reais. As odds pendem claramente para a Alemanha — vitória alemã a cerca de <b>1.55</b> (implícita de-vigged ≈60%), empate <b>4.20</b> (≈22%), vitória da Costa do Marfim <b>5.75</b> (≈16%); o supercomputador da Opta dá à Alemanha <b>44,4%</b>, empate 25,6%, Costa do Marfim 30,0% (o modelo é bem mais otimista com a Costa do Marfim que as casas). Cenário base: <b>a Alemanha domina a posse e vence por margem estreita, ou é arrastada a um jogo travado pela disciplina + contra-ataque pelas pontas da Costa do Marfim</b>. Índice de superaquecimento do mercado ≈ 2/5 (duelo de gigantes, mas calor concentrado, sem prêmio emocional).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Implícita Alemanha (de-vigged)</div><div class="v" style="color:#f08a82">≈60%</div></div>
+      <div class="key"><div class="k">Vitória Costa do Marfim (de-vigged)</div><div class="v" style="color:#f7b86a">≈16%</div></div>
+      <div class="key"><div class="k">Opta supercomp. vitória Alemanha</div><div class="v" style="color:var(--warn)">44,4%</div></div>
+      <div class="key"><div class="k">Superaquecimento</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Alemanha: 7 jogos seguidos de Copa sem manter o gol fechado</b>: o último jogo de Copa sem sofrer gols foi a final de 2014 — esta é a porta de entrada mais realista para os pontos de explosão pelas pontas da Costa do Marfim (Amad / Y. Diomande / Adingra), e o argumento central para os mercados de total de gols e "ambas marcam".</li>
+      <li><b>Costa do Marfim: confusão com a entrada de Wahi + lesão de N'Dicka</b>: Wahi chegou a ter a entrada negada (depois conseguiu o visto); na prática, Bonny deve assumir como centroavante único; o zagueiro N'Dicka (posterior da coxa) é dúvida — a escalação jogador a jogador fica sujeita à relação oficial pré-jogo da FIFA.</li>
+      <li><b>A maneira da Alemanha de romper um bloco baixo organizado será testada</b>: os 7 gols da 1ª rodada vieram muito da qualidade individual (chutes de fora + tabelas), e o adversário sobe de Curaçao para um ferrolho que não sofre gols (a Costa do Marfim segurou 12 finalizações sem ser vazada na estreia); saber se conseguem repetir é a chave da disputa pela liderança.</li>
+      <li><b>Árbitro central: Juan Benítez (Paraguai)</b>: na amostra internacional média de cerca de <b>3,7 amarelos, 0,17 vermelhos, 23,5 faltas</b> por jogo — um critério de cartões mais alto; avaliações dizem que ele "controla melhor os jogos tranquilos e gera mais polêmica nas partidas pegadas", o que merece atenção num duelo pegado pela liderança.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Notícias-chave do dia ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-Chave do Dia <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fonte + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de status que moldam o jogo, cada um explicado conforme muda a tática ou o resultado (inclui os itens trazidos do jogo anterior de cada seleção)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Alemanha · Trazido do jogo anterior · fragilidade defensiva <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra o Curaçao · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">A Alemanha goleou por <b>7-1 o Curaçao</b> na estreia, com fogo máximo; mas <b>a defesa apresentou problemas após a meia hora inicial e a sequência sem sofrer gols foi interrompida</b> — isto é fragilidade estrutural, não acaso</div>
+      <p style="font-size:13.5px">Dando sequência à projeção transferida da análise do jogo contra o Curaçao: no 7-1, Havertz marcou duas vezes e Nmecha/Schlotterbeck/Musiala/Brown/Undav também balançaram as redes, com a confiança ofensiva nas alturas. Mas a análise já apontou duas fragilidades — ① <b>romper o bloco fechado dependeu da qualidade individual (chutes de fora + tabelas), não da infiltração posicional</b>, e é duvidoso se isso se repete contra uma defesa do próximo patamar; ② <b>queda de atenção após abrir vantagem</b> — o único gol do Curaçao veio justamente de um breve relaxamento da Alemanha na saída de bola. A Opta confirma ainda mais: a Alemanha está há <b>7 jogos seguidos de Copa sem manter o gol fechado (a maior sequência desde 1970), e o último jogo de Copa sem sofrer gols foi a final de 2014 contra a Argentina</b>.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: os pontos de explosão velozes pelas pontas da Costa do Marfim (Amad, Y. Diomande, Adingra) são exatamente o tipo de fragilidade que está por trás da "interrupção da sequência sem sofrer gols" da Alemanha — o Curaçao já abusou disso uma vez, e contra uma campeã africana capaz de virar a França por 2-1, o relaxamento da Alemanha após abrir vantagem será punido com mais eficiência. Este é o argumento central para os mercados de "ambas marcam (BTTS)" e Mais gols, e também reduz a probabilidade de uma goleada esmagadora da Alemanha.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/germany-vs-curacao-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — estatísticas do 7-1 da Alemanha sobre o Curaçao</a> · <a href="https://theanalyst.com/articles/germany-vs-ivory-coast-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — prévia desta partida (7 jogos sem manter o gol fechado)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f7b86a;font-weight:700">Costa do Marfim · Trazido do jogo anterior · gol fechado + gol decisivo <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra o Equador · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">A Costa do Marfim venceu o <b>Equador por 1-0 com gol decisivo</b> na estreia (Amad 89'32" como reserva); a defesa segurou 12 finalizações sem ser vazada, mas a infiltração no jogo posicional foi fraca</div>
+      <p style="font-size:13.5px">Dando sequência à projeção transferida da análise do jogo contra o Equador: a Costa do Marfim, num duelo travado de placar baixo, venceu por 1-0 graças a <b>uma jogada de Singo pela ponta + o primeiro toque de Amad como reserva, com um chute</b> — o caminho do gol foi exatamente o "1v1 pela ponta + estopim vindo do banco" apontado na prévia. Dois itens trazidos da análise: ① <b>a habilidade individual pelas pontas + o reserva surpresa são a resposta replicável para furar o bloco fechado</b>, mas a infiltração no jogo posicional segue fraca; ② <b>estrutura defensiva de nível mundial</b> (segurou as três bolas na trave do Equador, recorde de finalizações sofridas num jogo de Copa sem ser vazada, 12). Segundo a Opta, esta seria a <b>primeira vez na história da Copa que a Costa do Marfim pode manter o gol fechado em dois jogos seguidos</b>, e eles nunca venceram dois jogos numa única Copa.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o roteiro realista da Costa do Marfim é "defesa disciplinada + roubar pontos no contra-ataque pelas pontas" — contra a Alemanha, eles podem <b>precisar só de um empate para muito provavelmente se classificar</b> (o regulamento é amigável ao terceiro do grupo), então não precisam partir para o ataque a todo custo. Se o contra-ataque pelas pontas for eficiente e ainda explorarem o relaxamento da Alemanha, empatar ou até roubar a vitória não é fantasia — é exatamente o que sustenta os 30% de chance de vitória que o supercomputador da Opta lhes dá (bem acima dos 16% das casas).</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — Costa do Marfim 1-0 Equador</a> · <a href="https://www.espn.com/soccer/story/_/id/49064087/ivory-coast-ecuador-live-world-cup-2026-latest-updates-commentary-score-result" style="color:var(--accent)">Relatório da ESPN</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f7b86a;font-weight:700">Costa do Marfim · sinal de escalação <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera · 2026-06-18/19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Confusão na entrada de Wahi</b> (negada e depois liberada com visto), <b>N'Dicka dúvida por posterior da coxa</b>; Bonny deve assumir como centroavante único, Amad empurra para titular</div>
+      <p style="font-size:13.5px">O atacante <b>Elye Wahi teve a entrada no Canadá negada por um caso anterior</b>; embora tenha conseguido o visto horas antes do jogo e, em tese, possa jogar, a imprensa em geral prevê que <b>Ange-Yoan Bonny</b> (cujo porte físico é útil contra os zagueiros alemães) assuma como centroavante único; o zagueiro <b>Evan N'Dicka é dúvida com lesão no posterior da coxa</b>, e Agbadou/Kossounou podem entrar. Amad, após o gol decisivo, pede vaga de titular com força; o jovem Yan Diomande (que joga no RB Leipzig, "voltando a se exibir em casa na Bundesliga") teve grande atuação na estreia, e Seko Fofana pode ir para o banco. Escalação prevista (4-2-3-1): Y. Fofana; Doué · Singo · Agbadou/Kossounou · Konan; Kessié · Sangaré; Amad · B. Touré · Y. Diomande; Bonny. <span style="color:var(--warn)">[A escalação jogador a jogador fica sujeita à relação oficial pré-jogo da FIFA · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: se N'Dicka faltar, isso enfraquece a dureza do eixo defensivo da Costa do Marfim, indo contra o capital deles de "manter o gol fechado em jogos seguidos"; trocar Wahi por Bonny no ataque, por outro lado, agrega um ponto de referência físico, favorecendo jogo de costas e bolas paradas. Amad ser titular ou não determina diretamente a intensidade da explosão pelas pontas, e é a chave para que a Costa do Marfim consiga explorar o relaxamento da Alemanha.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49103529/fifa-world-cup-2026-germany-vs-ivory-coast-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — novidades/escalação prevista/árbitro</a> · <a href="https://www.aljazeera.com/sports/2026/6/19/germany-and-ivory-coast-aim-to-seal-world-cup-knockout-place" style="color:var(--accent)">Al Jazeera — novidades/visto de Wahi</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Alemanha · sinal de escalação <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Nagelsmann deve manter o mesmo onze do 7-1; a única variável é a lateral (Raum para o duelo de velocidade com os pontas marfinenses), Undav segue no banco</div>
+      <p style="font-size:13.5px">A imprensa prevê que Nagelsmann tenda a <b>não mexer muito e manter os 11 da estreia</b>, para não tropeçar no duelo pela liderança. Escalação prevista (4-2-3-1): Neuer; Kimmich(C) · Tah · Schlotterbeck · Brown/Raum; Pavlovic · Nmecha; Sané · Musiala · Wirtz; Havertz. <b>Diante da velocidade e do drible dos pontas marfinenses, a lateral esquerda pode ter Raum no lugar de Brown para aumentar a estabilidade defensiva</b>. Undav entrou como reserva na estreia e fez 1 gol + 2 assistências, mas ainda pode ficar no banco; Neuer (40 anos) segue no gol. <span style="color:var(--warn)">[A escalação oficial fica sujeita à relação pré-jogo da FIFA · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a fluidez de Wirtz–Musiala–Sané no meio-ataque é o motor da Alemanha para furar o bloco fechado, mas contra uma linha baixa de verdade organizada, a escolha na lateral (Brown vs Raum) afeta diretamente a capacidade da Alemanha de segurar as costas ao subir — este é justamente o campo de caça do contra-ataque marfinense pelas pontas, e o ponto estrutural de "se a Alemanha vai relaxar de novo após abrir vantagem".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49103529/fifa-world-cup-2026-germany-vs-ivory-coast-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — escalação prevista da Alemanha</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-ivory-coast-prediction-team-news-lineups_599489.html" style="color:var(--accent)">Sports Mole — prévia/novidades</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Contexto da partida · árbitro central já oficializado <span style="color:var(--mut);font-weight:400">· ESPN / FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro definido: o paraguaio <b>Juan Gabriel Benítez Mareco</b> apita; o palco é o <b>BMO Field</b>, em Toronto (gramado ao ar livre)</div>
+      <p style="font-size:13.5px">A FIFA designou o árbitro paraguaio <b>Juan Gabriel Benítez (Mareco)</b>, nascido em 1982 e na Lista Internacional da FIFA desde 2019, para esta partida da 2ª rodada do Grupo E. Em seu critério estatístico internacional combinado (amostra de cerca de 35 jogos), ele tem média de <b>cerca de 3,7 amarelos, 0,17 vermelhos e 23,5 faltas por jogo</b> — um critério de cartões mais alto; avaliações externas dizem que ele "controla melhor os jogos tranquilos e gera mais polêmica em partidas pegadas/de alta intensidade". A partida será ao ar livre no BMO Field, em Toronto; em junho o clima do Canadá é ameno, sem informação de tempo extremo. <span style="color:var(--warn)">[A amostra detalhada da média de cartões por jogo em grandes torneios masculinos numa única edição é pequena · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: este é um jogo pegado de valor duplo "classificação + liderança", e os 1v1 pelas pontas da Costa do Marfim, somados ao recuo da Alemanha após subir, vão gerar muito contato físico. O perfil de Benítez — cartões mais altos (3,7 amarelos/jogo) + tendência a perder o controle em partidas pegadas — sugere atenção ao total de amarelos, ao acúmulo de amarelos (2 amarelos = suspensão no próximo jogo) e à probabilidade de pênalti por agarrão na área. Veja o módulo do árbitro abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49103529/fifa-world-cup-2026-germany-vs-ivory-coast-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — designação do árbitro</a> · <a href="https://en.wikipedia.org/wiki/Juan_Gabriel_Ben%C3%ADtez" style="color:var(--accent)">Wikipedia — currículo de Benítez</a> · <a href="https://www.footymetrics.com/world-cup-2026/referees" style="color:var(--accent)">FootyMetrics — dados de arbitragem</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Escalações oficiais e leitura ===== -->
+  <section style="border:1px solid #1d4a2a;border-left:4px solid var(--good);background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· relações oficiais pré-jogo · confirmadas por duas fontes · com comparação ante o previsto e análise</span></h2>
+    <div class="sub">As escalações oficiais das duas equipes saíram ~1 hora antes do início, confirmadas por duas fontes coincidentes — Bulinews ("confirmed") e Bolavip <span style="color:var(--good);font-weight:700">✅ confirmação oficial</span>. Abaixo: os XI oficiais, comparação ante o previsto e leitura tática (o resumo rápido é corrigido?).</div>
+
+    <h4>① Os XI oficiais das duas equipes</h4>
+    <div style="font-size:13px;color:#f08a82;font-weight:700;margin-top:6px">🇩🇪 Alemanha · XI oficial (4-2-3-1) · 11/11 conforme o previsto</div>
+    <div class="lineup">Neuer; Kimmich(C) · Tah · Schlotterbeck · Brown; Nmecha · Pavlovic; Sané · Musiala · Wirtz; Havertz</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:4px">Armas-chave no banco: Undav (1 gol + 2 assistências saindo do banco na 1.ª rodada) · Woltemade (centroavante de referência) · Rüdiger (solidez defensiva) · Raum (lateral-esquerdo defensivo).</div>
+    <div style="font-size:13px;color:#f7b86a;font-weight:700;margin-top:12px">🇨🇮 Costa do Marfim · XI oficial (4-3-3) · mudou do 4-2-3-1 previsto para três meio-campistas</div>
+    <div class="lineup">Y. Fofana; Singo · Kossounou · Agbadou · Konan; Kessié(C) · Sangaré · Oulai; Amad · Bonny · Y. Diomande</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:4px">Armas-chave no banco: Wahi (com visto liberado mas no banco, opção de referência) · Adingra (velocidade pelas pontas) · Pépé (ponta experiente). N'Dicka (posterior da coxa) ficou fora do XI.</div>
+
+    <h4 style="margin-top:18px">② Ante as escalações previstas</h4>
+    <table>
+      <tr><th>Mudança</th><th>Previsto</th><th>Oficial</th><th>Por que importa</th></tr>
+      <tr><td class="ht">Alemanha no geral</td><td>Manter o XI do 7-1, dúvida Brown/Raum na lateral</td><td class="ht">11/11 conforme o previsto, <b>Brown</b> titular (Raum no banco)</td><td>Plano A executado — Nagelsmann mantém a confiança. Escolher o ofensivo Brown em vez do defensivo Raum sinaliza que ele <b>prioriza o controle em vez de reforçar a ponta</b>, deixando o espaço nas costas para os pontas marfinenses — um sinal por si só</td></tr>
+      <tr><td class="sc">Esquema da Costa do Marfim</td><td>4-2-3-1 (duplo volante)</td><td class="sc"><b>4-3-3 (três meio-campistas: Kessié·Sangaré·Oulai)</b></td><td><b>Corrigido</b>: um meio-campista a mais (o jovem Oulai no lugar do #10 previsto B. Touré) lota o meio para sufocar a ligação Wirtz–Musiala, deixando apenas três à frente — uma montagem de manual de "bloco baixo, contente com o empate"</td></tr>
+      <tr><td class="sc">Zagueiros da Costa do Marfim</td><td>Agbadou/Kossounou (N'Dicka em dúvida)</td><td class="sc"><b>Dupla Kossounou + Agbadou</b>, N'Dicka fora</td><td><b>Dúvida resolvida</b>: N'Dicka (posterior da coxa) descartado — o eixo central fica um pouco menos calejado que com N'Dicka, enfraquecendo levemente o capital de "jogo sem sofrer gols consecutivo" e favorecendo o lado "ambos marcam (BTTS)"</td></tr>
+      <tr><td class="sc">Lado direito da Costa do Marfim</td><td>Doué titular na lateral direita</td><td class="sc">Singo deslocado para a lateral direita</td><td>Singo (o ponto de ruptura da assistência decisiva da 1.ª rodada) cobre a direita, contribuindo nas duas fases — duelos de maior intensidade por aquele lado</td></tr>
+      <tr><td class="sc">Ataque da Costa do Marfim</td><td>Amad · B. Touré · Y. Diomande apoiando Bonny</td><td class="sc">Trio Amad · Bonny · Y. Diomande</td><td>Mesma direção do previsto, agora confirmado: <b>Amad (autor do gol aos 90') + o jovem Y. Diomande ("retorno a solo alemão") ambos titulares</b>, Bonny na referência — a combinação de contra-ataque pelas pontas mais perigosa, toda em campo</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Leitura tática (resumo rápido: mantido)</h4>
+    <ul class="cl">
+      <li><b>Resumo rápido mantido, e reforçado pelas escalações</b>: a ideia prévia era "Alemanha favorita, mas a defesa disciplinada + os contra-ataques pelas pontas da Costa do Marfim para 'não perder / roubar pontos' estão subvalorizados pelo mercado (Opta 30% vs casas 16%)." Os XI oficiais <b>confirmam em positivo</b> essa ideia em várias frentes — sem necessidade de correção.</li>
+      <li><b>O trio de meio da Costa do Marfim = feito sob medida para contra-atacar e roubar</b>: passar de 4-2-3-1 para 4-3-3 acrescenta um corpo no meio (Kessié·Sangaré·Oulai) para travar a penetração central da Alemanha mantendo a velocidade de Amad/Y. Diomande como saídas de transição — exatamente o "roteiro realista" apontado no pré-jogo.</li>
+      <li><b>Sinal de vulnerabilidade pela ponta da Alemanha reforçado</b>: Nagelsmann recusar reforçar a esquerda com o defensivo Raum e manter o ofensivo Brown significa que deixa de propósito o espaço nas costas do lateral como custo do ataque — e esse é justamente o coto de caça de Amad/Singo pela direita. Somado aos "7 jogos de Copa sem passar em branco" da Alemanha, os argumentos de BTTS e over se reforçam.</li>
+      <li><b>A ausência de N'Dicka enfraquece levemente a muralha</b>: o maior capital da Costa do Marfim é a estrutura defensiva; com N'Dicka (posterior da coxa) fora e Agbadou dentro, a experiência e a dureza centrais caem um ponto — em sintonia com a dúvida de se a Costa do Marfim consegue repetir jogos sem sofrer gols consecutivos, favorecendo marginalmente a finalização alemã.</li>
+      <li><b>A Alemanha guarda um trunfo</b>: Undav (1 gol + 2 assistências na 1.ª rodada) e o centroavante de referência Woltemade estão ambos no banco — se a muralha aguentar no primeiro tempo, essa é a alavanca de Nagelsmann durante o jogo, coerente com a ideia de que romper um bloco baixo de verdade exige paciência + impacto do banco.</li>
+    </ul>
+
+    <h4 style="margin-top:18px">④ Reação do mercado</h4>
+    <div class="note">As escalações oficiais não trouxeram <b>nenhuma grande surpresa</b>: o XI titular da Alemanha foi mantido por inteiro (sem rodízio-chave/desfalque por lesão) e a mudança da Costa do Marfim é <b>tática (trio de meio, o jovem Oulai titular) e não uma ausência de estrela</b>. Sem um catalisador de "rodízio-chave repentino", o preço 1X2 pré-jogo (Alemanha 1.55 / empate 4.20 / Costa do Marfim 5.75, DECIMAL) provavelmente se mantém; a Costa do Marfim escalar com um trio de meio defensivo apoia marginalmente o lado "under / Costa do Marfim não perde". <span style="color:var(--warn)">[O movimento pontual de linhas ao vivo após o anúncio não foi verificado de forma independente · a confirmar]</span> Apenas para análise — não é recomendação de apostas.</div>
+
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://bulinews.com/confirmed-lineups-germany-ivory-coast">Bulinews — Escalações confirmadas (anunciadas ~1 hora antes do início)</a> · <a href="https://bolavip.com/en/world-cup/lineups-referee-and-uniforms-for-germany-vs-ivory-coast-today-at-the-2026-world-cup">Bolavip — ambas as escalações / árbitro / uniformes</a></div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Dados (núcleo)</h2>
+    <div class="sub">Probabilidades implícitas 1X2 (odds de-vigged) · cenário do Grupo E · mercado de totais · perfil de força geral — todos os gráficos usam dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (de-vigged, a partir de odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos 2.5 gols (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Rankings FIFA das quatro do Grupo E (menor é mais forte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇩🇪 Alemanha</th><th>🇨🇮 Costa do Marfim</th></tr>
+      <tr><td>Ranking FIFA</td><td class="ht">#9</td><td class="sc">≈#42</td></tr>
+      <tr><td>Treinador</td><td class="ht">Julian Nagelsmann</td><td class="sc">Emerse Faé</td></tr>
+      <tr><td>Resultado da 1ª rodada</td><td class="ht">7-1 goleada sobre o Curaçao (3-1 no 1º tempo)</td><td class="sc">1-0 sobre o Equador com gol decisivo (Amad 90')</td></tr>
+      <tr><td>Posição no Grupo E (antes da 2ª rodada)</td><td class="ht">1º (3 pontos, saldo +6)</td><td class="sc">2º (3 pontos, saldo +1)</td></tr>
+      <tr><td>Forma recente</td><td class="ht">10 vitórias seguidas em todas as competições (últimas 5 todas vitórias)</td><td class="sc">4 vitórias seguidas; amistosos 2-1 sobre a França, 4-0 sobre a Coreia do Sul</td></tr>
+      <tr><td>Fragilidade/capital defensivo</td><td class="ht"><b>7 jogos seguidos de Copa sem manter o gol fechado</b> (maior sequência desde 1970)</td><td class="sc">Segurou 12 finalizações sem ser vazada na 1ª rodada; nunca manteve o gol fechado em jogos seguidos numa única Copa</td></tr>
+      <tr><td>Ausências/dúvidas para o jogo</td><td class="ht">Sem suspensões de titulares confirmadas</td><td class="sc">Wahi (confusão na entrada, depois liberado) · N'Dicka dúvida por posterior da coxa</td></tr>
+      <tr><td>Confronto direto</td><td colspan="2">Apenas 1 vez (amistoso de 2009, 2-2); primeiro encontro em Copas</td></tr>
+      <tr><td>Odds 1X2 (DECIMAIS)</td><td class="ht">Vence 1.55 (implícita ≈60%)</td><td class="sc">Vence 5.75 (≈16%) · Empate 4.20 (≈22%)</td></tr>
+      <tr><td>Mais / Menos 2.5 gols</td><td colspan="2" class="sc">Mais 2.5 cerca de 2.50 (≈40%) / Menos 2.5 cerca de 1.50 (≈60%) — o mercado tende ao Menos, apostando na defesa marfinense para baixar os gols</td></tr>
+      <tr><td>Jogadores-chave</td><td class="ht">Wirtz / Musiala / Havertz / Kimmich</td><td class="sc">Amad Diallo / Y. Diomande / Kessié / Sangaré</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são números implícitos de-vigged a partir de odds DECIMAIS (≈60/22/16, com margem de cerca de 2pp). Fonte das odds: bet365 (Alemanha -182, empate +320, Costa do Marfim +475) / BetOnline (Alemanha -180). Conversão da linha americana para decimal: -182→1.55, +320→4.20, +475→5.75; Mais 2.5 cerca de +150→2.50, Menos 2.5 cerca de 1.50; handicap Alemanha -1.5 cerca de +145→2.45. <b>Tensão-chave</b>: o supercomputador da Opta dá à Costa do Marfim 30% de chance de vitória (bem acima dos 16% de-vigged das casas), uma diferença térmica notável — o modelo é mais otimista com a Costa do Marfim "não perder/roubar pontos". Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados Avançados · Métricas Esperadas -->
+  <section style="border:1px solid #14503f;border-left:4px solid #10b981;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados Avançados: Métricas Esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· média histórica vs valor real desta Copa · sinais de qualidade subjacente · com fonte</span></h2>
+    <div class="sub">Método central: comparar item a item a <b>base histórica de cada seleção (últimas duas grandes competições / eliminatórias / amostra de amistosos)</b> com o <b>valor real dos jogos já disputados nesta Copa</b>, para ver "se nesta edição está acima ou abaixo do nível histórico e o que isso diz". As amostras públicas de xG de seleções são limitadas; os itens faltantes são marcados "a confirmar" e nunca são inventados.</div>
+
+    <h4>① Núcleo: média histórica vs valor real desta Copa (comparativo por seleção)</h4>
+    <table>
+      <tr><th>Seleção / indicador</th><th>Base histórica (amostra de fonte)</th><th>Real desta Copa (1ª rodada)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇩🇪 Alemanha · ataque xGF/gols</td><td class="ht">Vitória nos últimos 10 jogos em todas as competições, 9 com 2+ gols; ataque consistentemente prolífico</td><td class="ht">1ª rodada <b>xGF 3.91</b>, 7 gols reais (26 finalizações, 12 no alvo)</td><td>O ataque desta edição está <b>bem acima</b> da média histórica, e os 7 gols vs 3.91 xG superam o modelo na finalização — mas o adversário Curaçao era muito fraco, e a qualidade da amostra ainda precisa ser calibrada contra um rival forte (ou seja, esta partida)</td></tr>
+      <tr><td class="ht">🇩🇪 Alemanha · defesa xGA/gols sofridos</td><td class="ht">Ataque forte, defesa instável: <b>7 jogos seguidos de Copa sem manter o gol fechado</b>, último gol fechado na final de 2014</td><td class="ht">1ª rodada sofreu 1 gol do Curaçao (xGA 0.40), sequência sem sofrer gols interrompida</td><td><b>Abaixo</b> da expectativa de elite: sofre gol até do adversário mais fraco, e o relaxamento após abrir vantagem é uma fragilidade estrutural real — o ponto fraco mais digno de atenção neste jogo</td></tr>
+      <tr><td class="sc">🇨🇮 Costa do Marfim · ataque xGF/gols</td><td class="sc">Campeã africana, mas criatividade média no jogo de movimento; na CAF 2023 dependeu muito de bola parada e resiliência; eliminatórias 13 gols (com inflação de adversários fracos)</td><td class="sc">1ª rodada <b>xG baixo</b>, 1 gol real (decisivo de reserva aos 90', sem conseguir furar o ferrolho do Equador o jogo todo)</td><td>O ataque desta edição está <b>próximo do perfil histórico de "jogo de movimento fraco, dependente de lampejos individuais"</b> — infiltração posicional fraca, furar o bloco fechado depende de 1v1 pela ponta + banco</td></tr>
+      <tr><td class="sc">🇨🇮 Costa do Marfim · defesa xGA/gols sofridos</td><td class="sc">A base é a estrutura defensiva (eliminatórias CAF 13 gols feitos, 0 sofridos; defesa elogiável no 2-1 sobre a França)</td><td class="sc">1ª rodada segurou <b>12 finalizações sem ser vazada</b> (mais finalizações sofridas num jogo de Copa sem ser vazada)</td><td><b>Cumpre e até supera</b> o perfil defensivo histórico — este é o maior capital da Costa do Marfim contra a Alemanha, mas a dúvida de N'Dicka enfraquece o eixo</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórico</b>: o ataque da Alemanha nesta edição está <b>acima</b> do histórico, a defesa <b>abaixo</b> da expectativa de elite (a fragilidade dos 7 jogos sem manter o gol fechado se confirma); o ataque da Costa do Marfim está próximo do perfil médio "dependente de lampejos individuais", e a defesa <b>cumpre e até supera</b> o histórico. Os dados avançados batem com a linha principal de "a Alemanha leva vantagem, mas furar um ferrolho de verdade ainda exige qualidade individual, e a própria defesa pode ser punida pelos pontos de explosão pelas pontas da Costa do Marfim". Fontes: Opta Analyst (xG/estatísticas da 1ª rodada) · FootyStats (perfil das seleções) · registros públicos de grandes competições/eliminatórias das seleções. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção desta partida & calibração Opta</h4>
+    <table>
+      <tr><td>Projeção de xG do modelo para esta partida (direção)</td><td class="ht">Alemanha ≈1.8–2.2</td><td class="sc">Costa do Marfim ≈0.8–1.1</td><td>Após calibração, a Alemanha leva vantagem na projeção, mas bem abaixo do seu 3.91 da 1ª rodada — a força do adversário (o ferrolho marfinense) puxa para baixo a qualidade esperada da Alemanha</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">O supercomputador dá <b>vitória Alemanha 44,4% / empate 25,6% / vitória Costa do Marfim 30,0%</b> (25.000 simulações); a Alemanha é favorita do grupo e à liderança, mas a chance da Costa do Marfim "não perder" chega a ≈55,6%</td><td>Após calibrar pela força do adversário, a qualidade da amostra da Costa do Marfim é maior que a precificação das casas — a diferença térmica entre supercomputador e casas é o maior ponto de informação deste jogo</td></tr>
+      <tr><td>Perfil FootyStats das seleções (forma recente)</td><td class="ht">Últimos 10 jogos: 9 vitórias 1 derrota, 19 gols feitos 2 sofridos (incluindo 19 em 5 jogos em casa); cerca de 50% de jogos sem sofrer gols</td><td class="sc">75% de aproveitamento em casa, xGF≈1.64 / xGA≈0.87; forma recente 4 vitórias seguidas</td><td>A Alemanha está em forma quente, mas a amostra de gols sofridos persiste; os dados de xGA da defesa marfinense sustentam o perfil de "difícil de furar"</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt · PSxG</td><td colspan="2" class="sc">Dados públicos de seleções são limitados <span style="color:var(--warn)">(a confirmar)</span> — qualitativo: a Alemanha controla a posse alta + field tilt pendendo a seu favor por muito tempo; a Costa do Marfim é forçada à linha baixa, criando xT pela transição pelas pontas</td><td>A inclinação do jogo deve pender para a Alemanha por muito tempo, mas a "qualidade da ameaça (PSxG/xT)" não necessariamente lidera na mesma proporção — os poucos contra-ataques da Costa do Marfim podem ser de alta qualidade</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Alerta de armadilha</b>: os dados brilhantes do 7-1 da Alemanha (xGF 3.91) na 1ª rodada foram construídos sobre <b>o Curaçao, um adversário extremamente fraco</b>; extrapolar isso direto para a Costa do Marfim superestima a eficiência de finalização da Alemanha; por outro lado, o "xG baixo" da Costa do Marfim na estreia também veio em parte da marcação de alta intensidade do Equador, e contra a Alemanha eles não necessariamente vão se calar do mesmo jeito. As amostras de ambos os lados precisam ser recalibradas pela <b>força do adversário</b> — é justamente essa a raiz da diferença térmica entre o supercomputador da Opta (Costa do Marfim 30% de vitória) e as casas (16%).</div>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de indicadores avançados (o que cada uma dessas métricas "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): a soma da qualidade das chances de finalização; descontados os pênaltis, reflete melhor a criatividade no jogo de movimento.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que o adversário cria contra você; mede o nível real da defesa, não a sorte/as defesas do goleiro.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo de gols esperados por 90 min): xG−xGA, o melhor indicador único como proxy da força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG por finalização</b> (qualidade média de cada chute): se a escolha de finalização é eficiente — valor baixo = muitos chutes de longe/chances ruins.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor, mais agressiva a marcação, refletindo a intensidade da pressão.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinação do jogo): proporção de toques no terço ofensivo, mede território/controle de campo em vez da posse pura.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/Sofascore/Understat/FootyStats; as seleções têm amostras públicas limitadas em indicadores detalhados como PPDA/xT/field tilt/PSxG, e os itens faltantes são sempre marcados "a confirmar", sem nunca inventar valores.</div>
+  </section>
+
+  <!-- Calor do mercado de apostas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Calor do Mercado de Apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· palpites de especialistas / odds / dinheiro / opinião</span></h2>
+    <div class="sub">Duelo de gigantes, atenção maior que no jogo contra o Curaçao, mas direção clara (Alemanha), sem prêmio emocional; a divergência do dinheiro está principalmente em "a Costa do Marfim consegue não perder" e nos totais</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · direção pende à Alemanha, mas precificação racional, sem prêmio emocional</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Este é o duelo pela liderança entre dois vencedores da 1ª rodada, e o fluxo de assunto é nitidamente maior que no jogo da Alemanha contra o Curaçao, mas a precificação do mercado é racional — a vitória alemã a 1.55 já incorporou "o fogo + as 10 vitórias seguidas". A divergência real está em <b>se a Costa do Marfim consegue não perder (handicap +1.5 / empate)</b> e nos <b>totais (o mercado tende ao Menos)</b>. O supercomputador da Opta dá à Costa do Marfim 30% de vitória, bem acima dos 16% das casas — este é o sinal de "subvalorizado" mais digno de atenção neste jogo.</div>
+    </div>
+
+    <h4>① Agregado de palpites de especialistas (contagem de direção: vence Alemanha = maioria · empate/Costa do Marfim não perde = minoria, mas com voz)</h4>
+    <table>
+      <tr><th>Quem</th><th>Papel</th><th>Visão / palpite</th></tr>
+      <tr><td>Opta Analyst (supercomputador)</td><td>instituição de dados</td><td>Vitória Alemanha <b>44,4%</b> / empate 25,6% / Costa do Marfim 30,0%; Alemanha favorita às 11 vitórias seguidas, mas alta chance de a Costa do Marfim "não perder"</td></tr>
+      <tr><td>Racing Post</td><td>veículo de apostas britânico</td><td>Vence a Alemanha; bet builder com foco em gol de Havertz/da Alemanha + tendência a haver gols (ângulo BTTS)</td></tr>
+      <tr><td>Squawka</td><td>mídia de dados</td><td>A Alemanha é o lado mais limpo; a Costa do Marfim tem defesa dura e pode baixar o placar</td></tr>
+      <tr><td>Sports Mole</td><td>mídia de palpites</td><td>Vitória estreita da Alemanha (comum 2-0 / 2-1)</td></tr>
+      <tr><td>compare.bet / GamblingNews</td><td>agregadores de odds</td><td>Vence a Alemanha + tendência ao Menos (Menos de 2.5) / cuidado com o handicap</td></tr>
+      <tr><td>Sports Interaction</td><td>mídia de apostas norte-americana</td><td>Vence a Alemanha, mas aponta a velocidade marfinense pelas pontas + os 7 jogos da Alemanha sem manter o gol fechado como fragilidade</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinais de superaquecimento (baixos)</b>: a maioria aponta a Alemanha no resultado — isto é consenso razoável, não superaquecimento. A divergência real está no <b>handicap (se o Alemanha -1.5 é fundo demais), nos totais (a maioria tende ao Menos) e em a Costa do Marfim não perder</b>. A diferença térmica entre o supercomputador da Opta (Costa do Marfim 30%) e as casas (Costa do Marfim 16%) é o bolso de valor ignorado de "a Costa do Marfim não perder". Não há dinheiro emocional significativo impulsionando um lado só.</div>
+
+    <h4 style="margin-top:20px">② Movimento das odds (DECIMAIS)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vence Alemanha / empate / vence Costa do Marfim</th><th>Leitura</th></tr>
+      <tr><td>Abertura (dias antes)</td><td>geral</td><td class="ht">≈1.50 / 4.20 / 6.00</td><td>A Alemanha abriu curta, coerente com a posição de favorita das 10 vitórias seguidas + 7-1</td></tr>
+      <tr><td>06-19/20</td><td>bet365 / BetOnline</td><td class="ht">1.55 / 4.20 / 5.75</td><td>A Alemanha recua de leve (o gol fechado da Costa do Marfim + a vitória sobre a França são precificados), a Costa do Marfim aperta um pouco</td></tr>
+      <tr><td>06-20</td><td>Mais/Menos & handicap</td><td colspan="2" class="ht">Mais 2.5 cerca de 2.50, Menos 2.5 cerca de 1.50 (tende ao Menos); handicap Alemanha -1.5 cerca de 2.45 (+145)</td></tr>
+    </table>
+    <h4>②-b Posicionamento e Movimento da Linha (Abertura → Atual)</h4>
+    <table>
+      <tr><th>Momento</th><th>Linha / odds</th><th>Mudança de posicionamento · gatilho</th></tr>
+      <tr><td>Linha inicial (pré-abertura antes da fase de grupos)</td><td>Faixa de vitória da Alemanha ≈1.45–1.55 (faixa de abertura do torneio)</td><td>Antes do torneio, a Alemanha era listada como grande favorita à liderança do Grupo E (já era favorita antes do seu 7-1); a linha inicial precificou "as quatro estrelas + a profundidade do elenco" como odds curtas</td></tr>
+      <tr><td>Abertura (publicada para a 2ª rodada, dias antes)</td><td>Alemanha ≈1.50 / empate 4.20 / Costa do Marfim 6.00</td><td><b>Reprecificação pelo resultado da 1ª rodada</b>: o 7-1 da Alemanha (saldo +6, maior número de gols da história) reforça a narrativa da liderança → preço da vitória alemã baixa; mas o 1-0 com gol fechado da Costa do Marfim + o 2-1 sobre a França antes fazem o "não perder" deles ser levado a sério pelo mercado</td></tr>
+      <tr><td>Linha atual (06-19/20)</td><td>Alemanha 1.55 / empate 4.20 / Costa do Marfim 5.75</td><td>O preço da vitória alemã <b>recua de leve em relação à abertura</b> (1.50→1.55), o preço da vitória marfinense <b>aperta</b> (6.00→5.75), e o handicap -1.5 tem preço mais alto — o mercado reconhece o capital defensivo da Costa do Marfim, a profundidade do handicap não é vista como "de graça"</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura do posicionamento do mercado</b>: o preço da vitória alemã não baixou mais, e até recuou de leve em relação à abertura (1.50→1.55), o que mostra que o "bônus de fogo" do 7-1 não fez o mercado dobrar cegamente na goleada alemã — <b>o gol fechado da Costa do Marfim + a vitória sobre a França foram incorporados à precificação</b>, sendo essa a correção-chave desta linha. A descoberta de preço mais ativa está no <b>handicap (se o Alemanha -1.5 é fundo demais), nos totais (tende ao Menos) e em "a Costa do Marfim não perder / ambas marcam"</b>. A diferença térmica entre o supercomputador da Opta (Costa do Marfim 30% de vitória) e as casas (16%) aponta para "a Costa do Marfim não perder" como o bolso subvalorizado. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ opinião</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregação DefiRate)</b>: a probabilidade de liderança do Grupo E dá à Alemanha cerca de <b>67%–75%</b> e à Costa do Marfim cerca de 21%; a chance de a Alemanha avançar aos 32 melhores ≈97%+. Ambos os reservatórios apontam na mesma direção das casas (Alemanha na frente), mas o volume em tempo real do resultado deste jogo isolado e o detalhe do momentum de 30 dias não foram encontrados publicamente em separado. <span style="color:var(--warn)">[Detalhe de volume deste jogo isolado · a confirmar]</span></li>
+      <li><b>Foco da opinião</b>: ① <b>os "7 jogos da Alemanha sem manter o gol fechado" vs o "gol fechado em jogos seguidos" da Costa do Marfim</b> — este é o cerne da narrativa, e a maioria das discussões aposta na vitória alemã, mas admite que "haverá gols"; ② a voz de "zebra" trazida pela Costa do Marfim com o <b>2-1 sobre a França + o gol decisivo contra o Equador</b>, sendo Amad e o jovem Y. Diomande pontos de assunto; ③ a confusão na entrada de Wahi é tráfego de bastidor.</li>
+      <li><b>Narrativa da Alemanha</b>: após o 7-1 da estreia + 10 vitórias seguidas, a confiança do público está alta, mas a imprensa lembra repetidamente que "o Curaçao era um adversário de nível amistoso" (até Robson chamou aquilo de "treino"), e este jogo é o teste de verdade.</li>
+      <li><b>Narrativa da Costa do Marfim</b>: nunca venceram dois jogos numa única Copa, nunca mantiveram o gol fechado em dois jogos seguidos — o peso histórico convive com a dupla narrativa de "fazer história"; um empate já é muito provavelmente suficiente para a classificação, então, psicologicamente, não precisam forçar o ataque.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: a direção do resultado é clara (Alemanha), casas e mercados de previsão apontam no mesmo sentido, índice de superaquecimento <b>2/5</b> (duelo de gigantes, mas precificação racional, sem prêmio emocional). O que tem mais informação não é o 1X2, e sim o <b>handicap (se o Alemanha -1.5 é fundo demais), os totais (tende ao Menos) e "a Costa do Marfim não perder"</b> — a diferença térmica entre o supercomputador da Opta (Costa do Marfim 30%) e as casas (Costa do Marfim 16%) é o bolso de valor subvalorizado. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://theanalyst.com/articles/germany-vs-ivory-coast-prediction-world-cup-2026-match-preview">Opta Analyst — previsão do supercomputador</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/germany-vs-ivory-coast-world-cup-bet-builder-tips-picks-and-odds-aULXI1K4etiP/">Racing Post — apostas/odds</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-germany-vs-ivory-coast-06-20-26-world-cup-2026/">Squawka — prévia</a> · <a href="https://www.gamblingnews.com/news/germany-vs-ivory-coast-odds-prediction-picks-2026-fifa-world-cup-group-stage/">GamblingNews — odds/previsão</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/germany/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- Árbitro -->
+  <section>
+    <h2><span class="n">2</span> Árbitro da Partida & Contexto de Arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b>: o árbitro central desta partida é o paraguaio <b>Juan Gabriel Benítez (Mareco)</b> (nascido em 1982, Internacional FIFA desde 2019; apita a primeira divisão paraguaia desde 2015), selecionado para arbitrar esta Copa. Fontes: ESPN / FIFA / Wikipedia / FootyMetrics.</div>
+    <h4>Critério de arbitragem internacional (com base em dados reais)</h4>
+    <ul class="cl">
+      <li><b>Critério de cartões/pênaltis (amostra internacional combinada, cerca de 35 jogos)</b>: média de <b>cerca de 3,7 amarelos, 0,17 vermelhos e 23,5 faltas por jogo</b> — um critério de <b>cartões mais alto</b>. <span style="color:var(--warn)">[A amostra detalhada da média de cartões por jogo em grandes torneios masculinos numa única edição é pequena, sujeita aos registros oficiais · a confirmar]</span></li>
+      <li><b>Perfil de estilo</b>: avaliações externas dizem que ele "<b>controla melhor os jogos tranquilos e gera mais polêmica em partidas pegadas/de alta intensidade</b>" — num jogo de valor duplo classificação + liderança, em que a intensidade do confronto pode subir, esse perfil merece cautela.</li>
+      <li><b>Histórico com as duas seleções</b>: como árbitro sul-americano (CONMEBOL), <b>não tem histórico público relevante de arbitragem com Alemanha nem com Costa do Marfim</b> — não há tendência a favor de nenhuma, mas também significa que não há precedente de critério para nenhuma das duas.</li>
+      <li><b>Novas regras unificadas do torneio + sinais de contexto</b>: 8 segundos de retenção do goleiro, só o capitão pode falar com o árbitro, impedimento semiautomático; o jogo de abertura desta Copa já teve 3 vermelhos seguidos, evidência de um ambiente de arbitragem mais rígido. Os 1v1 pelas pontas da Costa do Marfim e o recuo da Alemanha ao subir vão gerar muito contato físico; somado ao critério mais alto de Benítez, o risco de total de amarelos e de acúmulo de amarelos (2 amarelos = suspensão no próximo jogo) sobe.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise do lado da arbitragem</b>: o critério mais alto de cartões de Benítez (cerca de 3,7 amarelos/jogo) + o perfil de "gera polêmica em partidas pegadas", neste duelo pegado pela liderança, fazem o total de amarelos e o pênalti por agarrão na área merecerem atenção; a consistência das decisões dele oscila em jogos de alta intensidade, e a ausência de amostra de arbitragem com as duas seleções significa que extrapolar o critério exige margem. Ressalva dos dois lados: os árbitros sul-americanos costumam tolerar mais o contato físico que os europeus, não necessariamente "apitam todo agarrão", e os mercados de cartões/pênaltis carecem de base direta para as duas equipes.</div>
+  </section>
+
+  <!-- Escalações e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalações & Forma Recente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Versão prevista → versão oficial no módulo ✅ acima</span></h2>
+    <div class="sub">Escalações previstas (projeção de fontes de análise, não oficial; sujeitas à relação oficial pré-jogo da FIFA · a confirmar)</div>
+    <h4>🇩🇪 Escalação prevista da Alemanha (4-2-3-1)</h4>
+    <div class="lineup">Neuer; Kimmich(C) · Tah · Schlotterbeck · Brown/Raum; Pavlovic · Nmecha; Sané · Musiala · Wirtz; Havertz</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma / nota</th></tr>
+      <tr><td class="ht">Florian Wirtz</td><td>meio-campo / Liverpool</td><td>o núcleo de criatividade ofensiva da Alemanha; o motor para furar o bloco fechado e explorar o espaço nas costas</td></tr>
+      <tr><td class="ht">Jamal Musiala</td><td>meio-campo / Bayern de Munique</td><td>ponto de saída no drible, marcou na 1ª rodada; a chave para desmontar a linha baixa</td></tr>
+      <tr><td class="ht">Kai Havertz</td><td>atacante / Arsenal</td><td>marcou duas vezes na 1ª rodada; marcou em 4 grandes competições seguidas, núcleo de finalização</td></tr>
+      <tr><td class="ht">Joshua Kimmich (C)</td><td>lateral direito/meio-campo / Bayern de Munique</td><td>capitão; eixo de organização e envio na bola parada, o metrônomo da transição</td></tr>
+    </table>
+    <h4>🇨🇮 Escalação prevista da Costa do Marfim (4-2-3-1)</h4>
+    <div class="lineup">Y. Fofana; Doué · Singo · Agbadou/Kossounou · Konan; Kessié(C) · Sangaré; Amad · B. Touré · Y. Diomande; Bonny</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma / nota</th></tr>
+      <tr><td class="sc">Amad Diallo</td><td>ponta/meia-atacante / Manchester United</td><td>gol decisivo aos 90' como reserva; ponto de explosão no 1v1 pela ponta, pede vaga de titular com força, focado nas costas dos laterais alemães</td></tr>
+      <tr><td class="sc">Yan Diomande</td><td>ponta / RB Leipzig</td><td>jovem revelação, "melhor em campo" na 1ª rodada; cheio de motivação por "voltar para casa na Bundesliga", é a maior variável da Costa do Marfim</td></tr>
+      <tr><td class="sc">Franck Kessié (C)</td><td>meio-campo / Al-Ahli</td><td>capitão e eixo entre ataque e defesa; progressão box-to-box, referência aérea na bola parada</td></tr>
+      <tr><td class="sc">Ibrahim Sangaré</td><td>volante / Nottingham Forest</td><td>escudo defensivo; encarregado de cortar as ligações do meio-ataque alemão e proteger as costas no contra-ataque</td></tr>
+    </table>
+    <div class="note">Nota de escalação: ambas as escalações previstas são projeções de análises da imprensa (ESPN / Al Jazeera / Sports Mole), <b>sujeitas à relação oficial pré-jogo da FIFA · a confirmar</b>. Na Costa do Marfim, <b>Wahi foi liberado com visto após a confusão na entrada</b>, mas Bonny deve assumir como centroavante único; <b>N'Dicka (posterior da coxa) é dúvida</b>, com Agbadou/Kossounou na zaga; a Alemanha deve manter o onze do 7-1, e a lateral esquerda Brown vs Raum é o único suspense.</div>
+  </section>
+
+  <!-- Tática + treinadores -->
+  <section>
+    <h2><span class="n">4</span> Estilo Tático & Treinadores</h2>
+    <div class="sub">Cada conclusão cruza referências com o estilo e os resultados reais das duas seleções nas últimas duas grandes competições</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇩🇪 Alemanha · Julian Nagelsmann</div>
+        <div class="role">4-2-3-1 de posse alta + penetração técnica combinando pontas e meio; ataque forte, defesa instável</div>
+        <ul class="cl">
+          <li>Soma 10 vitórias seguidas em todas as competições e venceu os últimos 5; o trio Wirtz/Musiala/Sané tem a missão de desmontar a defesa fechada e Havertz é o ponto de referência — o 7-1 da estreia levou esse fogo ao extremo (a seleção assumiu o topo de gols em Copas da história).</li>
+          <li>Referência cruzada: <b>nas Copas de 2018 e 2022 a Alemanha caiu na fase de grupos</b>, e na Euro 2024 em casa parou nas quartas (derrota nos pênaltis para a Espanha) — o mal crônico de "ataque forte, mas não segurar após abrir vantagem/quando sofre contra-ataque" atravessa as últimas duas grandes competições; nesta edição, os <b>7 jogos seguidos de Copa sem manter o gol fechado</b> quantificam e confirmam essa fragilidade. É justamente o maior risco deste jogo — contra o contra-ataque pelas pontas de uma Costa do Marfim capaz de vencer a França por 2-1, o relaxamento será punido.</li>
+          <li>Porta de entrada neste jogo: usar a posse e o field tilt para prender a Costa do Marfim no campo de defesa, e furar o ferrolho com qualidade individual (Wirtz/Musiala) + bola parada (envio de Kimmich); a dificuldade é que a Costa do Marfim já provou na 1ª rodada que segura 12 finalizações sem ser vazada, então a Alemanha precisa de paciência + eficiência na conversão.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f7b86a">🇨🇮 Costa do Marfim · Emerse Faé</div>
+        <div class="role">4-2-3-1 / 4-3-3 · defesa disciplinada + explosão no 1v1 pela ponta + reserva surpresa</div>
+        <ul class="cl">
+          <li>Faé é o treinador artífice do título da Copa Africana de 2023, e sua marca é <b>defesa sólida + habilidade individual pelas pontas + resiliência</b> — na 1ª rodada desta edição segurou as três bolas na trave do Equador sem ser vazado e roubou pontos com o gol decisivo de Amad como reserva, justamente a continuação desse estilo.</li>
+          <li>Referência cruzada: <b>a campanha do título na CAF 2023 foi muito sofrida</b> (0-4 humilhante para a Guiné Equatorial na fase de grupos, à beira da eliminação, salvando-se com empate nos acréscimos do mata-mata + pênaltis + bolas paradas), e na CAF 2025 parou nas oitavas — "o jogo de movimento não necessariamente atropela, mas <b>bola parada e resiliência</b> são armas de verdade". O perfil desta seleção bate perfeitamente com o "linha baixa + contra-ataque + roubar pontos na bola parada" deste jogo, e o <b>2-1 sobre a França</b> antes prova que o teto de intensidade deles dá conta de rivais fortes.</li>
+          <li>Resposta neste jogo: usar Kessié/Sangaré para abafar o meio e alimentar Amad/Y. Diomande no 1v1 pelas pontas, nas costas dos laterais alemães (acertando em cheio o ponto fraco da Alemanha de "não segurar após subir"); um empate já é muito provavelmente suficiente para a classificação, então <b>não precisam forçar o ataque e podem esperar com paciência o relaxamento da Alemanha</b> — esta é a base tática dos 30% de vitória que o supercomputador da Opta lhes dá.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Análise de especialistas -->
+  <section>
+    <h2><span class="n">5</span> Análise de Especialistas · com balanço das últimas 2 grandes competições</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· instituição de dados</small></div>O supercomputador dá à Alemanha 44,4% de chance de chegar às 11 vitórias seguidas, à Costa do Marfim 30,0% e ao empate 25,6%; mas aponta duas tendências históricas que pesam contra a Alemanha — <b>7 jogos seguidos de Copa sem manter o gol fechado (a maior sequência desde 1970) e nenhuma dupla vitória no início desde 2006</b>; e a Costa do Marfim nunca venceu dois jogos numa única Copa nem manteve o gol fechado em dois jogos seguidos. Os dados apontam para "a Alemanha leva vantagem, mas dificilmente manterá o gol fechado com facilidade, e a chance de a Costa do Marfim não perder está subvalorizada".</div>
+    <div class="insight"><div class="who">Alemanha · últimas 2 grandes competições <small>· WC2018 / WC2022 ambas eliminadas na fase de grupos + quartas na Euro 2024</small></div>A Alemanha caiu na fase de grupos <b>em duas Copas seguidas</b> (2018 perdeu para México/Coreia do Sul, 2022 perdeu para o Japão) e parou nas quartas da Euro 2024 em casa (derrota nos pênaltis para a Espanha) — "ataque forte, mas não segurar quando sofre contra-ataque de rival intenso/após abrir vantagem" é o mal que atravessa tudo. O fogo do 7-1 da estreia foi forte, mas a interrupção da sequência sem sofrer gols + a tendência dos 7 jogos sem manter o gol fechado mostram que o problema antigo não foi curado, sendo um risco real contra uma Costa do Marfim que sabe contra-atacar.</div>
+    <div class="insight"><div class="who">Costa do Marfim · últimas 2 grandes competições <small>· CAF 2023 campeã (muito sofrida) + CAF 2025 parou nas oitavas</small></div>Na Copa Africana de 2023, a Costa do Marfim <b>foi campeã, mas com um caminho muito sofrido</b>: à beira da eliminação na fase de grupos, salvando-se com empate nos acréscimos do mata-mata + pênaltis + empate de Kessié na bola parada + gol decisivo de Haller — "o jogo de movimento não necessariamente atropela, mas bola parada e resiliência são armas de verdade". Isso bate perfeitamente com a função deste jogo de "linha baixa + contra-ataque + roubar pontos na bola parada"; somado ao 2-1 sobre a França, o teto de intensidade dá para segurar a Alemanha. Mas a <b>ausência de Haller, herói do título, + a confusão de Wahi</b> fazem o ponto de finalização do ataque depender mais do pivô Bonny e dos lampejos de Amad/Y. Diomande pelas pontas.</div>
+    <div class="insight"><div class="who">Núcleo tático <small>· Alemanha furando o ferrolho vs contra-ataque marfinense pelas pontas</small></div>Os dois grandes suspenses deste jogo: ① <b>se a Alemanha consegue furar o bloco baixo organizado da Costa do Marfim com qualidade individual + bola parada</b> (a 1ª rodada já provou que a Costa do Marfim segura 12 finalizações sem ser vazada); ② <b>se a Costa do Marfim consegue, no 1v1 pelas pontas (Amad/Y. Diomande), explorar o "relaxamento da Alemanha após abrir vantagem + os espaços nas costas ao subir"</b>. Esses dois pontos definem o resultado do handicap (Alemanha -1.5), dos totais (tende ao Menos) e de "ambas marcam".</div>
+  </section>
+
+  <!-- Leitura geral -->
+  <section>
+    <h2><span class="n">6</span> Leitura Geral & A Verificar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: a Alemanha dominando a posse e vencendo por margem estreita (1-0 / 2-0 / 2-1) é o cenário base; <b>o empate (≈22%–26%) é uma cauda que não se pode ignorar</b> — se a Costa do Marfim firmar a linha baixa, contra-atacar com eficiência pelas pontas e ainda explorar o relaxamento da Alemanha, empatar ou até roubar a vitória (a Opta dá 30%) não é fantasia; a probabilidade de uma goleada esmagadora da Alemanha (4+ gols) é bem reduzida pelo ferrolho marfinense.</li>
+      <li><b>Homens-chave</b>: Wirtz / Musiala (ALE/furar o bloco fechado), Havertz (ALE/finalização), Kimmich (ALE/envio na bola parada); Amad Diallo & Yan Diomande (CDM/explosão pelas pontas), Kessié & Sangaré (CDM/escudo de meio-campo e referência aérea na bola parada), Y. Fofana e o eixo defensivo (CDM/sustentáculo do gol fechado).</li>
+      <li><b>Fator decisivo</b>: o verdadeiro ponto deste jogo é a <b>eficiência da Alemanha em furar o bloco baixo organizado vs a punição do contra-ataque marfinense pelas pontas ao relaxamento da defesa alemã</b> — define o resultado do handicap (se o Alemanha -1.5 é fundo demais), dos totais (tende ao Menos) e de "ambas marcam". Se a Alemanha rompe ou não os "7 jogos sem manter o gol fechado" é o cerne do mercado BTTS.</li>
+      <li><b>Visão de mercado</b>: casas e mercados de previsão apontam no mesmo sentido (tendência à Alemanha, de-vigged ≈60%, supercomputador 44,4%), com valor limitado no 1X2; o que tem mais informação é o <b>handicap (Alemanha -1.5), os totais (tende ao Menos) e "a Costa do Marfim não perder"</b> — a diferença térmica entre o supercomputador da Opta (Costa do Marfim 30%) e as casas (Costa do Marfim 16%) é o bolso de valor subvalorizado. Índice de superaquecimento 2/5 (duelo de gigantes, mas precificação racional).</li>
+    </ul>
+    <div class="flag">⚠ <b>A verificar</b>: ① as escalações oficiais das duas seleções (Brown vs Raum na Alemanha, se N'Dicka joga na Costa do Marfim, se Wahi entra na relação) ficam sujeitas à relação pré-jogo da FIFA; ② o grau exato da lesão de N'Dicka no posterior da coxa; ③ o detalhe da média de cartões por jogo de Benítez numa única edição de grande torneio masculino (a amostra internacional combinada de cerca de 3,7 amarelos/jogo já está confirmada); ④ o volume deste jogo isolado na Kalshi/Polymarket e o detalhe do momentum de 30 dias não foram encontrados em separado; ⑤ a linha de handicap asiático (Alemanha -1 / -1.5) e a linha de total de gols ficam sujeitas às odds em tempo real pré-jogo; ⑥ o ranking FIFA exato da Costa do Marfim fica sujeito à lista mais recente de junho.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49103529/fifa-world-cup-2026-germany-vs-ivory-coast-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — programação/escalações/árbitro</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021469">FIFA — Centro de Jogos</a> · <a href="https://theanalyst.com/articles/germany-vs-ivory-coast-prediction-world-cup-2026-match-preview">Opta Analyst — prévia desta partida/supercomputador</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/19/germany-and-ivory-coast-aim-to-seal-world-cup-knockout-place">Al Jazeera — novidades/significado da classificação/visto de Wahi</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/germany-vs-ivory-coast-prediction-team-news-lineups_599489.html">Sports Mole — prévia/novidades</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/germany-vs-ivory-coast-world-cup-bet-builder-tips-picks-and-odds-aULXI1K4etiP/">Racing Post — odds/apostas</a><br>
+      • <a href="https://theanalyst.com/articles/germany-vs-curacao-stats-world-cup-2026">Opta Analyst — Alemanha 7-1 Curaçao (item trazido da Alemanha)</a> · <a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026">Opta Analyst — Costa do Marfim 1-0 Equador (item trazido da Costa do Marfim)</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-germany-vs-ivory-coast-06-20-26-world-cup-2026/">Squawka — prévia</a><br>
+      • <a href="https://www.gamblingnews.com/news/germany-vs-ivory-coast-odds-prediction-picks-2026-fifa-world-cup-group-stage/">GamblingNews — odds/previsão</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/germany/">DefiRate — Kalshi/Polymarket</a> · <a href="https://en.wikipedia.org/wiki/Juan_Gabriel_Ben%C3%ADtez">Wikipedia — currículo de Benítez</a> · <a href="https://www.footymetrics.com/world-cup-2026/referees">FootyMetrics — dados de arbitragem</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — Grupo E</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análise da Copa do Mundo 2026 · Dados até 2026-06-20 (inclui itens trazidos das análises da 1ª rodada das duas seleções + balanço das últimas 2 grandes competições) · Os gráficos usam dados verificados, o radar é avaliação composta do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#f7901e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vence Alemanha','Empate','Vence Costa do Marfim'],datasets:[{data:[60,22,16],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Probabilidade implícita % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais 2.5','Menos 2.5'],datasets:[{data:[40,60],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Probabilidade implícita % (de-vigged, tende ao Menos)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Alemanha','Equador','Costa do Marfim','Curaçao'],datasets:[{data:[9,23,42,82],backgroundColor:[HT,'#16a34a',SC,'#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (menor é mais forte)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Bola parada','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'Alemanha',data:[6.5,9,9,8,9.5,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Costa do Marfim',data:[8,6,7,7,7.5,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

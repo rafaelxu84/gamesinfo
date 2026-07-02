@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 阿根廷 vs 佛得角 · 2026世界杯 32强淘汰赛（胜者晋级16强 · 卫冕冠军阿根廷大热门 · Messi 复出首发 · 佛得角世界杯处子淘汰赛）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-argentina-vs-capeverde.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-argentina-vs-capeverde.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-argentina-vs-capeverde.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-argentina-vs-capeverde.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-argentina-vs-capeverde.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#6c9bd8;--sc:#1f6f4a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#75aadb,#0d3a6e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0e1a2a,#0e2018);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#8fc0f0;font-weight:600}td.sc{color:#5fc494;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-argentina-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-argentina-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-argentina-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔜 赛前分析 · 2026 世界杯 · 32强淘汰赛 · 胜者晋级16强 · 迈阿密 Hard Rock Stadium</span>
+  <h1>阿根廷 vs 佛得角</h1>
+  <div class="meta">2026年7月3日（周五）· 迈阿密花园 Hard Rock Stadium（佛罗里达）· 18:00 ET（下午6点 ET）· 32强淘汰赛 · 胜者晋级16强（平局进加时 / 点球）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#8fc0f0">🇦🇷 阿根廷</div><div class="rk">卫冕冠军 · J组头名 · 三战全胜 9 分（3-0 阿尔及利亚、2-0 奥地利、3-1 约旦）· 主帅 Lionel Scaloni · ⭐ Messi 本届 6 球（男子世界杯历史射手榜纪录）· 末轮轮休后本场复出首发 · Romero 膝伤康复回归</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fc494">🇨🇻 佛得角</div><div class="rk">世界杯处子秀 · H组第二 · 三战不败全平出线（0-0 西班牙、0-0 沙特、2-2 乌拉圭）· 主帅 Bubista · 门将 Vozinha（39 岁精神领袖）+ 队长 Ryan Mendes · ⭐ 边锋 Jovane Cabral 带伤存疑</div></div>
+  </div>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 32 强淘汰赛中<b>"实力极端分级、大卫对歌利亚"</b>的一战——<b>卫冕冠军阿根廷 J 组三战全胜头名（9 分，进 8 失 1）</b>，而<b>世界杯处子秀的佛得角以 H 组三战全平不败、历史性闯入淘汰赛</b>（含 0-0 逼平西班牙的惊天冷门），胜者直接晋级 16 强、平局进加时 / 点球。盘口与超算口径高度一致：<b>阿根廷是压倒性大热门</b>，1X2 给出阿根廷胜 1.15（美盘 -650 折算）、佛得角胜 20.00（+1900）、平局 8.50（+750）；市场定价约为阿根廷 87% / 平局 12% / 佛得角 5%，去水后约 <b>阿根廷 84% / 平局 11% / 佛得角 5%</b>。晋级盘：<b>阿根廷晋级 -600、佛得角晋级 +1400</b>。本场最大看点：① <b>Messi 复出首发</b>——末轮轮休后回归，本届已 6 球刷新男子世界杯历史射手榜纪录，与 Lautaro 组成锋线（Julián Álvarez 让出首发）；② <b>佛得角能否复制"逼平西班牙"的密集低位防守 + Vozinha 神扑</b>，把比赛拖入低比分甚至加时；③ <b>阿根廷会否轻敌 / 何时打开局面</b>。基准剧本：<b>阿根廷凭个人质量与整体强度掌控全场、力争多球取胜晋级；佛得角寄望于低位铁桶 + Vozinha + 零星反击（Ryan Mendes / Livramento）偷袭或死守拖时间</b>，过热指数 ≈ 2/5（盘口极端悬殊、胜负方向几无悬念，热度主要来自 Messi 磁石与佛得角"再爆冷"的情绪买盘）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">阿根廷隐含胜率(去水)</div><div class="v" style="color:#8fc0f0">≈84%</div></div>
+      <div class="key"><div class="k">佛得角隐含胜率(去水)</div><div class="v" style="color:#5fc494">≈5%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈11%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>晋级算术（多源确认）</b>：阿根廷 J 组头名（9 分，三战全胜），佛得角 H 组第二（3 分，三战全平、不败出线）；<b>本场为单场淘汰赛，胜者晋级 16 强</b>，平局进加时 / 点球（淘汰赛规则）。晋级盘：阿根廷 -600、佛得角 +1400。</li>
+      <li><b>阿根廷全胜碾压（ESPN / DraftKings 多源）</b>：阿根廷 J 组三战全胜（9 分），<b>3-0 阿尔及利亚、2-0 奥地利、3-1 约旦，进 8 失 1</b>；FIFA 世界排名第 2、夺冠赔率领跑（+360）。<b>Messi 本届 6 球（含一次替补登场破门），刷新男子世界杯历史射手榜纪录、金靴热门</b>。</li>
+      <li><b>⭐ Messi 复出首发（Goal / World Soccer Talk / Sports Mole 多源）</b>：末轮对约旦 Scaloni 轮休 Messi（其替补登场任意球破门），<b>本场 Messi 回归首发、搭档 Lautaro Martínez</b>；Julián Álvarez 让出首发席位。<span style="color:var(--warn)">[实际首发 · 以赛前 FIFA Match Centre 为准 · 待核]</span></li>
+      <li><b>上一场带入 · Romero 膝伤康复回归（World Soccer Talk / OneFootball 多源）</b>：中卫 Cristian "Cuti" Romero 对奥地利右膝伤退、缺席末轮约旦；Scaloni 赛前确认"Cuti 没事了……伤没想象中严重"，<b>本场预计复出首发</b>。<span style="color:var(--warn)">[伤情与首发 · 待核]</span></li>
+      <li><b>⭐ 佛得角 Jovane Cabral 带伤存疑（Racing Post）</b>：边锋 <b>Jovane Cabral</b> 带伤、自小组赛首战后未再出场，出战成疑；左后卫 Sidny Cabral 停赛结束回归。中卫 Logan Costa（比利亚雷亚尔）从十字韧带伤康复入选。<span style="color:var(--warn)">[佛得角实际首发 · 待核]</span></li>
+      <li><b>佛得角"逼平西班牙"框架（ESPN / Al Jazeera 多源）</b>：佛得角三场全平（0-0 西班牙、0-0 沙特、2-2 乌拉圭），<b>Vozinha 对西班牙的神扑成为全球话题</b>；Bubista 的低位密集防守 + 反击是唯一现实的爆冷蓝本。佛得角是史上人口最少的晋级淘汰赛球队。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #23405a;background:linear-gradient(135deg,#131d29,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 首发 / 伤情已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 阿根廷 Messi 复出首发 · 本届 6 球金靴热门 <span style="color:var(--mut);font-weight:400">· Goal / World Soccer Talk / Sports Mole 多源 · 赛前更新</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">末轮轮休后，<b>Lionel Messi 回归阿根廷首发</b>，搭档 Lautaro Martínez 组成锋线，Julián Álvarez 让出首发</div>
+      <p style="font-size:13.5px">据 Goal、World Soccer Talk、Sports Mole 多源，Scaloni 末轮对约旦轮休 Messi（其替补登场任意球破门，成为连续 7 场世界杯均进球的历史第一人）；<b>淘汰赛首战 Messi 回归首发，与 Lautaro 组双前锋</b>。Messi 本届已入 6 球，刷新男子世界杯历史射手榜纪录并领跑金靴。<span style="color:var(--warn)">[实际首发 / 出场时长 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：面对佛得角预计摆出的低位密集铁桶，破局最需要的是定位球质量与个人瞬间创造力——而这正是 Messi 的招牌武器（末轮任意球即为例证）。Messi 首发意味着阿根廷把最强的"破铁桶钥匙"从一开始就放在场上，密集防守被撬开的时间点将明显提前，也直接抬高阿根廷的让球深度与总分预期。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en/lists/lionel-messi-bench-argentina-lionel-scaloni-world-cup-rotation-jordan/bltcdd93980de979c15" style="color:var(--accent)">Goal — Messi 轮休 / 复出</a> · <a href="https://worldsoccertalk.com/amp/world-cup/report-cristian-romero-returns-julian-alvarez-set-to-lose-spot-alongside-lionel-messi-in-argentinas-projected-lineup-vs-cape-verde/" style="color:var(--accent)">World Soccer Talk — 阿根廷预测首发</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-cape-verde-prediction-team-news-lineups_600481.html" style="color:var(--accent)">Sports Mole — 前瞻 / 首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 阿根廷 Romero 膝伤康复回归 <span style="color:var(--mut);font-weight:400">· World Soccer Talk / OneFootball 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中卫 <b>Cristian "Cuti" Romero</b> 对奥地利膝伤退场、缺席约旦，<b>Scaloni 确认已康复、本场预计复出首发</b></div>
+      <p style="font-size:13.5px">Romero 曾在对奥地利时右膝伤退（Otamendi 顶替）、缺席末轮约旦一役。据 World Soccer Talk、OneFootball，Scaloni 赛前表态："Cuti 没事了……他今天没和大队合练，但单独进行了高强度训练，伤情没想象中严重"，<b>本场预计恢复首发、与 Lisandro Martínez 组中卫</b>。<span style="color:var(--warn)">[伤情与首发强度 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Romero 是阿根廷后防第一中卫。本场佛得角进攻威胁极低（预计以防守为主），Romero 出战与否对失球端影响有限；但淘汰赛深处对手升级，其膝伤能否稳定复出、避免二次刺激，才是真正的观察点——本场更像"低风险复出练兵"。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://worldsoccertalk.com/amp/world-cup/report-cristian-romero-returns-julian-alvarez-set-to-lose-spot-alongside-lionel-messi-in-argentinas-projected-lineup-vs-cape-verde/" style="color:var(--accent)">World Soccer Talk — Romero 回归</a> · <a href="https://onefootball.com/en/news/back-in-action-cuti-over-injury-starts-for-argentina-v-cape-verde-43076745" style="color:var(--accent)">OneFootball — Cuti 伤愈首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 佛得角 Jovane Cabral 带伤存疑 · 边路反击点受影响 <span style="color:var(--mut);font-weight:400">· Racing Post / ESPN 交叉</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">边锋 <b>Jovane Cabral</b> 带伤、自小组赛首战后未再登场，本场出战成疑；左后卫 Sidny Cabral 停赛结束回归</div>
+      <p style="font-size:13.5px">据 Racing Post，Jovane Cabral 带伤、自 H 组首战后一直缺阵，出战存疑——他是佛得角为数不多能发动边路反击的攻击点之一。左后卫 <b>Sidny Cabral</b> 累计停赛结束、本场可回归。中卫 <b>Logan Costa</b>（比利亚雷亚尔，佛得角最佳后卫）此前从十字韧带伤及时康复入选大名单。<span style="color:var(--warn)">[Jovane 是否出战 / 佛得角实际首发 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：佛得角唯一现实的进球路径是抓住阿根廷压上后的反击空间。Jovane Cabral / Ryan Mendes / Livramento 是屈指可数的反击出球点，若 Jovane 缺阵，佛得角反击威胁进一步下降，只能更彻底地退守铁桶、把希望寄托在 Vozinha 的神扑与拖时间上——这会压低总分预期、抬高"0 失球守到点球"这一小概率剧本的相对权重。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aurGJ5y7Avbh/" style="color:var(--accent)">Racing Post — 前瞻 / 球队消息</a> · <a href="https://www.espn.com/soccer/story/_/id/49234020/fifa-world-cup-2026-argentina-vs-cape-verde-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups-lionel-messi" style="color:var(--accent)">ESPN — 前瞻 / 预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 佛得角带入 · 三战全平不败 · 逼平西班牙的历史处子秀 <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / DraftKings 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">佛得角以 <b>H 组第二、三战全平（0-0 西班牙、0-0 沙特、2-2 乌拉圭）</b> 不败出线，成为史上人口最少的晋级淘汰赛国家</div>
+      <p style="font-size:13.5px">据 ESPN、Al Jazeera、DraftKings 多源，佛得角世界杯处子秀即闯入淘汰赛：小组三战全平拿 3 分列第二，其中 <b>0-0 逼平西班牙</b>——Vozinha 的多次神扑成为全球话题，把一场预期完败改写成零封。Bubista 的战术核心是低位密集防守 + 快速反击。<span style="color:var(--warn)">[佛得角逐场数据细节 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：逼平西班牙证明佛得角的低位铁桶 + Vozinha 神扑是"能兑现的真实工具"，而非纸面口号。ESPN 指出阿根廷面对的"未知"是——佛得角对西班牙极端死守、对乌拉圭却相对开放进攻，Scaloni 需防两种剧本。这是本场唯一现实的爆冷 / 拖加时变量，也是佛得角受让盘与总分 Under 的价值来源。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49234020/fifa-world-cup-2026-argentina-vs-cape-verde-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups-lionel-messi" style="color:var(--accent)">ESPN — 前瞻 / Vozinha</a> · <a href="https://www.aljazeera.com/sports/2026/6/27/cape-verde-qualify-for-world-cup-round-of-32-set-up-date-with-argentina" style="color:var(--accent)">Al Jazeera — 佛得角晋级</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"阿根廷结构性大热门、盘口极端悬殊"的场次——市场博弈几乎全部集中在让球深度、总分线与 Messi 个人 prop，而非胜负方向</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 阿根廷极端大热门 + Messi prop 磁石（盘口悬殊，胜负无悬念）</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">阿根廷开盘即被定为极端大热门（1.15，美盘 -650），佛得角 20.00（+1900）显示市场对爆冷给出极低概率。热度并非来自胜负方向，而是 Messi 任意时间进球 prop、阿根廷让球深度（-2.5 让球）与佛得角"再爆冷"的情绪彩票买盘。</div>
+    </div>
+
+    <h4>① 专家推荐聚合</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta / 超算（综合）</td><td>模型派</td><td>压倒性偏阿根廷晋级——卫冕冠军、三战全胜、FIFA 排名第 2、夺冠赔率领跑；佛得角处子秀实力分级低数档 <span style="color:var(--warn)">[精确晋级概率 · 待核]</span></td></tr>
+      <tr><td>ESPN</td><td>综合预测媒体</td><td>偏阿根廷取胜；强调 Messi 复出与整体质量，同时提醒阿根廷需防轻敌、佛得角有两种剧本（对西班牙死守 / 对乌拉圭进攻）</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>给出含阿根廷取胜的 23-1 Bet Builder 思路；点出佛得角 Jovane Cabral 伤缺、Sidny Cabral 停赛回归</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>偏阿根廷大胜；强调个人质量碾压，承认佛得角低位密集防守可拖慢节奏、复制"逼平西班牙"框架</td></tr>
+      <tr><td>Yahoo Sports / Ladbrokes</td><td>综合 / 博彩</td><td>阿根廷压倒性大热门，聚焦让球深度与总分 Over；佛得角 +1900 含真实爆冷溢价但概率极低</td></tr>
+      <tr><td>DraftKings</td><td>赔率 / 盘口媒体</td><td>开出阿根廷 1.15（-650）、平局 8.50（+750）、佛得角 20.00（+1900）；让球阿根廷 -2.5（+130）；总分 O/U 2.5 偏 Over（-165）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL 欧赔）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>阿根廷 / 平局 / 佛得角</th><th>解读</th></tr>
+      <tr><td>初盘（对阵确定后 · 约 6/28）</td><td>1X2 · DraftKings</td><td class="sc">1.15 / 8.50 / 20.00</td><td>阿根廷开盘 -650（美盘）即结构性大热门；佛得角 +1900，市场给爆冷极低概率</td></tr>
+      <tr><td>现盘（6/28→赛前）</td><td>1X2 · 综合</td><td class="sc">≈1.15 / ≈8.50 / ≈15.00–20.00 <span style="color:var(--warn)">[以实时盘口为准]</span></td><td>bet365 一度开出阿根廷 -600、平 +700、佛得角 +1400（20.00→15.00 略收窄）；盘口极端悬殊稳定，无单边冲击</td></tr>
+      <tr><td>大/小球 + 让球</td><td colspan="2" class="sc">总分线 O/U 2.5 偏大球（Over -165）；阿根廷 -2.5 让球（+130）为核心博弈</td><td>市场预期偏高比分——阿根廷进攻火力 vs 佛得角铁桶；让球深度是"阿根廷大胜几球"的核心定价点</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（对阵确定 · 约 6/28 · DraftKings）</td><td class="sc">阿根廷 -650（DECIMAL 1.15）；平局 +750（8.50）；佛得角 +1900（20.00）</td><td>以实力分级（阿根廷卫冕冠军、夺冠赔率领跑 +360、FIFA 第 2 vs 佛得角世界杯处子秀）+ J 组三战全胜 9 分 vs 佛得角最低分出线定价；阿根廷结构性极端大热门、盘口极端悬殊</td></tr>
+      <tr><td>开盘后重定价（约 6/28→赛前）</td><td class="ht">阿根廷 ≈1.15 · 平局 ≈8.00–8.50 · 佛得角 ≈15.00–20.00</td><td><b>Repricing 驱动因素</b>：① Messi 复出首发 + 本届 6 球 → 阿根廷进攻端利多；② Romero 伤愈回归 → 后防稳定；③ 佛得角"逼平西班牙"故事使部分平台把佛得角胜从 20.00 略收至 15.00（bet365 +1400），受让盘 / 平局出现情绪买盘</td></tr>
+      <tr><td>现盘（6/28→赛前）</td><td class="sc">阿根廷约 1.15；总分 O/U 2.5（偏 Over -165）；阿根廷 -2.5 让球（+130）；Messi 进球 prop 为大众磁石</td><td>市场定位明确：<b>阿根廷结构性极端大热门、接近碾压级</b>——佛得角 ≈5% 胜率 + ≈11% 平局合计约 16%，爆冷空间很小；<b>总分线偏 Over、让球深度为核心</b>；Oddschecker 出现"66% 注单押佛得角"的逆向情绪买盘。定位档位：<b>极端明显热门，核心博弈在让球深度、总分线与 Messi prop</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"阿根廷结构性极端大热门、盘口极端悬殊"的场次，过热指数 <b>2/5</b>（热度来自 Messi prop 磁石与佛得角"再爆冷"情绪买盘，而非胜负不确定性）。佛得角 ≈5% 胜率 + ≈11% 平局合计约 16%，淘汰赛单场仍有理论爆冷 / 拖加时空间但概率偏低；总分线偏 Over 与让球深度是核心定价点。注意 Oddschecker 显示 66% 注单押佛得角（受让 / 情绪盘）但 94% 押阿根廷（胜负单），这是极端盘口下常见的散户逆向噪音。精确总分价 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket 预测市场</b>：主流预测市场普遍给阿根廷晋级极高概率，方向与盘口 / 超算一致明显偏阿根廷。<span style="color:var(--warn)">[精确占比 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Messi 历史时刻</b>——本届 6 球刷新男子世界杯历史射手榜纪录、连续 7 场世界杯进球，复出首发让"Messi 能否再进球 / 冲金靴"成为全球话题，其进球 prop 受大众追捧。</li>
+      <li><b>舆论焦点 ②</b>：<b>佛得角的童话</b>——处子秀闯入淘汰赛、逼平西班牙、Vozinha 神扑走红；佛得角总统喊话"可以 1-0 赢阿根廷"，"再爆冷"叙事吸引情绪买盘。</li>
+      <li><b>舆论焦点 ③</b>：<b>阿根廷会否轻敌 / 何时打开局面</b>——ESPN 指出淘汰赛"风险不值得回报"，Scaloni 须上最强阵；舆论关注阿根廷能否早早破铁桶，避免被拖入加时的心理消耗。</li>
+      <li><b>公众资金面 / 社媒</b>：公众资金偏阿根廷（大热门 + Messi 效应），休闲盘集中在 Messi 进球 prop 与阿根廷让球；佛得角受让盘 / 平局出现"童话续写"的情绪彩票买盘（Oddschecker 66% 注单押佛得角）。<span style="color:var(--warn)">[量化数据 · 待核]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是"阿根廷结构性极端大热门、盘口极端悬殊"的低热度场次，过热指数 <b>2/5</b>。Messi 磁石与佛得角童话推高情绪面，但盘口方向几无悬念——核心博弈在让球深度、总分线（偏 Over）与个人 prop。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-argentina-vs-cape-verde-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 初盘</a> · <a href="https://www.oddschecker.com/us/soccer/world-cup/argentina-v-cape-verde">Oddschecker — 赔率 / 注单占比</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-cape-verde-07-03-26-world-cup-2026-round-of-32/">Squawka — 盘口 / 前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aurGJ5y7Avbh/">Racing Post — Bet Builder</a></div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛）</b>与<b>本届世界杯实际值（小组赛）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（小组赛）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇦🇷 阿根廷 · 进攻</td><td class="ht">2022 世界杯冠军（决赛点球胜法国）；2024 美洲杯冠军；Scaloni 长期掌舵、Messi 领衔的传控 + 个人质量体系</td><td class="ht">J 组头名 9 分（三战全胜）；<b>进 8 失 1</b>（3-0 阿尔及利亚、2-0 奥地利、3-1 约旦）；<b>Messi 本届 6 球</b>、刷新男子世界杯历史射手榜纪录</td><td><b>符合甚至高于卫冕预期</b>：进攻产量与个人上限均在线，Messi 状态火热。深度充足（Julián Álvarez / Lautaro / Almada / Nico Paz 等）<span style="color:var(--warn)">（逐场 xG 完整数据 · 待核）</span></td></tr>
+      <tr><td class="ht">🇦🇷 阿根廷 · 防守</td><td class="ht">世界级门将 E.Martínez（2022 金手套）；Romero / L.Martínez / Otamendi 一线，防守纪律与经验俱佳</td><td class="ht">小组赛仅失 1 球；整体结构紧凑；Romero 对奥地利伤退后 Otamendi 顶上不失稳</td><td><b>防守稳固、Romero 伤愈回归</b>：面对佛得角极低进攻威胁，本场失球风险很小；主要看点是复出练兵与体能管理</td></tr>
+      <tr><td class="sc">🇨🇻 佛得角 · 进攻</td><td class="sc">世界杯处子秀，无大赛淘汰赛历史；非洲区不败晋级；核心为队长 Ryan Mendes（97 次出场 / 22 球）、Livramento、Jovane Cabral</td><td class="sc">H 组第二、三战全平出线；进攻依赖零星反击（2-2 乌拉圭时相对开放，0-0 西班牙 / 沙特时极端死守）<span style="color:var(--warn)">（逐场 xG · 待核）</span></td><td><b>低于阿根廷多档</b>：进攻火力有限，唯一现实路径是反击偷袭；Jovane Cabral 伤缺将进一步削弱反击出球</td></tr>
+      <tr><td class="sc">🇨🇻 佛得角 · 防守</td><td class="sc">低位密集防守体系；39 岁老将门将 Vozinha 是精神与扑救支柱；Logan Costa（比利亚雷亚尔）+ Roberto Lopes 领衔防线</td><td class="sc"><b>0-0 逼平西班牙、0-0 平沙特</b>——两场零封是本届最大亮点；Vozinha 神扑把预期完败改写成平局</td><td><b>防守是全队基石、且已被大场面验证</b>：低位铁桶 + Vozinha 是"能守出零封"的真实工具，但面对 Messi 定位球与阿根廷持续压迫，连续零封难度极高</td></tr>
+    </table>
+    <div class="note">📌 <b>关键读数</b>：阿根廷 J 组三战全胜、进 8 失 1，Messi 本届 6 球刷新历史射手榜纪录——攻防两端均处于高位。佛得角以最低分（3 分全平）出线、实力分级低数档，但其低位铁桶 + Vozinha 已用"逼平西班牙"证明可兑现，是唯一现实的拖时间 / 爆冷工具。数据支持"阿根廷压倒性大热但佛得角能拖低比分"的预期。来源：ESPN / DraftKings / Al Jazeera（逐场 xG · 待核）。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">阿根廷 ≈2.2–2.8</td><td class="ht">佛得角 ≈0.3–0.6</td><td>阿根廷个人质量 + 持续压迫占优；佛得角反击频率极低、价值有限（Jovane 伤缺后更低）——与盘口总分线偏 Over 一致 <span style="color:var(--warn)">[精确 xG · 待核]</span></td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">压倒性偏阿根廷晋级——阿根廷卫冕冠军、FIFA 第 2、夺冠赔率领跑；佛得角处子秀、分级低数档 <span style="color:var(--warn)">[精确晋级概率 · 待核]</span></td><td>阿根廷优势极明确，但淘汰赛单场样本下，佛得角若复制"逼平西班牙"式死守 + Vozinha 神扑，理论上可把比赛拖入加时——超算难完全量化"铁桶 + 神扑守 90 分钟"的方差</td></tr>
+      <tr><td>压迫 PPDA / xT / 场面倾斜</td><td colspan="2" class="ht">国家队公开详细数据有限 <span style="color:var(--warn)">（PPDA/xT 待核）</span>——定性：阿根廷控球与 field tilt 将极端占优；佛得角靠低位密集防守而非持球，目标是限制阿根廷创造质量、抓住零星转换</td><td><b>陷阱提醒</b>：① 阿根廷若轻敌 / 破铁桶不顺，可能久攻不下被拖入加时；② Vozinha 神扑方差极大，能把 xG 2.5 守成 0-0；③ Messi prop（进球 / 助攻）市场可能因品牌与状态热度被高估；④ 佛得角受让盘 / 平局受"童话"情绪买盘影响，价格可能偏离真实概率</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——阿根廷预计将创造大量高质量机会，转化率是关键。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">扑救成功率(Save%)</b>：门将扑救效率——Vozinha 对西班牙的超高扑救率是佛得角零封的直接支柱。<span style="color:var(--warn)">待核</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，阿根廷控球体系将极端占优；佛得角靠低位死守而非持球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/ESPN/DraftKings 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">1</span> 当值裁判 & 执法环境</h2>
+    <div class="note">⏳ <b>主裁待官方确认</b>：截至 2026-07-02，FIFA 及 ESPN 前瞻均标注本场 32 强淘汰赛主裁为 <b>TBC（待定）</b>（FIFA 通常在赛前约 24–48 小时公布淘汰赛裁判任命）。<b>本场主裁、助理裁判与 VAR 组合均待官方确认 · 待核</b>，我们不臆测裁判人选。场地为迈阿密花园 <b>Hard Rock Stadium</b>（佛罗里达）。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 以 FIFA 官方为准 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>本届大赛尺度</b>：2026 世界杯统一执法新规——仅队长可与主裁沟通（阿根廷队长 Messi、佛得角队长 Ryan Mendes）、门将 8 秒规则、半自动越位（SAOT）精准校准冲刺临界点。淘汰赛阶段裁判普遍对拖延时间与战术犯规更严。</li>
+      <li><b>对阿根廷的影响</b>：Messi / Lautaro 在禁区内的持球与突破易在密集防守中制造犯规与任意球 / 点球机会（利好阿根廷）；门将 8 秒规则将限制 Vozinha 的拖延战术——这对企图"死守拖时间"的佛得角是不利因素。</li>
+      <li><b>对佛得角的影响</b>：佛得角须在淘汰赛低位死守 + 密集封堵 → 禁区内拉扯、战术犯规增多，点球 / 黄牌风险上升；若累计黄牌 / 停赛管理不当（Sidny Cabral 刚停赛结束回归），防线深度会被进一步侵蚀。</li>
+      <li><b>裁判待确认</b>：鉴于主裁尚未公布，本场无法给出具体裁判画像或场均黄牌数据，如实说明、绝不编造。裁判任命公布后将更新。<span style="color:var(--warn)">[主裁 / 裁判组 / VAR · 待核]</span></li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场主裁尚未官方公布（FIFA 通常赛前 24–48 小时公布，ESPN 前瞻仍标 TBC），相关裁判画像 / 黄牌倾向暂无可靠依据，待确认后更新。一般而言，面对佛得角低位铁桶，阿根廷在禁区的强突使点球有出现空间；门将 8 秒规则限制 Vozinha 拖时间；半自动越位对佛得角高位反击的越位判罚是双刃剑。在主裁与 VAR 组合确认前，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">2</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· 晋级格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>晋级 16 强赔率（DECIMAL）</h5><canvas id="advChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（含贴水，DraftKings）</h5><canvas id="totalChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇷 阿根廷</th><th>🇨🇻 佛得角</th></tr>
+      <tr><td>小组赛进程</td><td class="ht">J 组头名 · 9 分（三战全胜，进 8 失 1）；3-0 阿尔及利亚、2-0 奥地利、3-1 约旦</td><td class="sc">H 组第二 · 3 分（三战全平，不败出线）；0-0 西班牙、0-0 沙特、2-2 乌拉圭</td></tr>
+      <tr><td>本场性质</td><td colspan="2">32 强单场淘汰赛 · 胜者晋级 16 强 · 平局进加时 / 点球</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="ht">两队此前无正式交锋记录（佛得角世界杯处子秀）<span style="color:var(--warn)">[精确 H2H · 待核]</span></td></tr>
+      <tr><td>主教练</td><td class="ht">Lionel Scaloni（4-4-2 / 4-3-3，传控 + 个人质量主导）</td><td class="sc">Bubista（低位密集防守 + 快速反击）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Messi（队长，6 球）· Lautaro Martínez · Enzo Fernández · Mac Allister · De Paul · Romero</td><td class="sc">Vozinha（门将，精神领袖）· Ryan Mendes（队长）· Logan Costa（中卫）· Livramento · Jamiro Monteiro</td></tr>
+      <tr><td>重要缺/伤状态</td><td class="ht">Romero 膝伤康复回归（预计首发）；Messi 末轮轮休后复出首发；Julián Álvarez 让出首发</td><td class="sc">Jovane Cabral 带伤存疑；Sidny Cabral 停赛结束回归；Logan Costa 十字韧带伤康复入选</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.15（隐含 ≈84% 去水）</td><td class="sc">胜 20.00（隐含 ≈5% 去水）· 平 8.50（≈11%）</td></tr>
+      <tr><td>晋级 16 强赔率</td><td class="ht">阿根廷晋级 -600（DECIMAL ≈1.17）</td><td class="sc">佛得角晋级 +1400（DECIMAL ≈15.00）</td></tr>
+      <tr><td>总分 / 让球 / prop</td><td colspan="2" class="sc">O/U 2.5 偏 Over（Over -165 / Under +135，DraftKings）；阿根廷 -2.5 让球（+130）为核心；Messi 任意时间进球 prop 为大众磁石 <span style="color:var(--warn)">[Messi prop 精确价 · 待核]</span></td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后隐含概率（阿根廷 1.15 / 平 8.50 / 佛得角 20.00，市场约 87/12/5，去水后约 84/11/5），方向压倒性偏阿根廷。大小球偏 Over 2.5（DraftKings Over -165 ≈ 62% 含水 / Under +135 ≈ 43% 含水）。晋级盘：阿根廷 -600、佛得角 +1400。美盘换算：阿根廷 -650、平局 +750、佛得角 +1900。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发（预测版）===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 非官方 · 以赛前 FIFA Match Centre 为准</span></h2>
+    <div class="sub">预测首发（ESPN / World Soccer Talk / Sports Mole 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+
+    <h4>🇦🇷 阿根廷 预测首发（4-4-2）· Lionel Scaloni</h4>
+    <div class="lineup">E.Martínez; Molina · Romero · L.Martínez · Medina; De Paul · Enzo · Mac Allister · Almada; Messi(C) · Lautaro</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Lionel Messi</td><td>前锋/队长 / 迈阿密国际</td><td>本届 6 球、刷新男子世界杯历史射手榜纪录、连续 7 场世界杯进球；末轮轮休后本场复出首发，是破铁桶的第一钥匙 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Lautaro Martínez</td><td>中锋 / 国际米兰</td><td>三场小组赛全部首发，与 Messi 组双前锋；禁区终结点，Julián Álvarez 让出首发 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Cristian Romero</td><td>中卫 / 托特纳姆</td><td>对奥地利膝伤退、缺席约旦；Scaloni 确认已康复、预计复出首发搭档 L.Martínez <span style="color:var(--warn)">[首发 · 膝伤 · 待核]</span></td></tr>
+      <tr><td class="ht">Enzo Fernández</td><td>中场 / 切尔西</td><td>中场组织核心，与 Mac Allister / De Paul 掌控节奏；面对铁桶需要其调度撕开肋部 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+    </table>
+
+    <h4>🇨🇻 佛得角 预测首发（4-3-3）· Bubista</h4>
+    <div class="lineup">Vozinha; S.Moreira · R.Lopes · D.Borges · S.Cabral; L.Duarte · K.Pina · J.Monteiro; R.Mendes(C) · Livramento · J.Cabral</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Vozinha</td><td>门将 / —</td><td>39 岁老将、精神领袖；对西班牙 / 沙特两场零封，神扑走红全球；能否连续第三场拉满是佛得角守铁桶的核心 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Ryan Mendes</td><td>边锋/队长 / —</td><td>历史最多出场（97 次）/ 进球（22 球），中场抗压与反击出球的精神纽带 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Logan Costa</td><td>中卫 / 比利亚雷亚尔</td><td>佛得角最佳后卫，十字韧带伤康复入选；盯防 Messi / Lautaro 的对抗核心 <span style="color:var(--warn)">[首发 / 出场时长 · 待核]</span></td></tr>
+      <tr><td class="sc">Jovane Cabral</td><td>边锋 / —</td><td>带伤存疑、自小组赛首战后未出场；若缺阵佛得角反击出球进一步削弱，可能由替补 / 变阵顶替 <span style="color:var(--warn)">[出战 · 待核]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（ESPN / World Soccer Talk / Sports Mole），各源有出入。阿根廷 <b>Messi 复出首发</b>、<b>Romero 膝伤康复回归</b>、Julián Álvarez 让出首发。佛得角 <b>Jovane Cabral 带伤存疑</b>、Sidny Cabral 停赛结束回归、Logan Costa 韧带伤康复入选（首发 / 出场时长待核）。官方名单以赛前 <b>FIFA Match Centre</b> 为准 · 待核。队长（C）以 FIFA 官方袖标位置为准（阿根廷 Messi、佛得角 Ryan Mendes）· 待核。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（2022 世界杯 + 2024 美洲杯 / 非洲区预选赛 + 本届小组赛）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#8fc0f0">🇦🇷 阿根廷 · Lionel Scaloni</div>
+        <div class="role">4-4-2 / 4-3-3 · 传控 + 个人质量主导 · Messi 自由人 + 中场三角掌控</div>
+        <ul class="cl">
+          <li>Scaloni 麾下阿根廷以 <b>大赛务实主义 + 顶级个人质量</b>为基底——Enzo / Mac Allister / De Paul 中场三角控制节奏，<b>Messi 作为自由人组织 + 终结，Lautaro 在禁区抢点</b>。J 组进 8 球、Messi 6 球体现进攻创造力与个人上限均在线。</li>
+          <li>交叉参照：2022 世界杯冠军（决赛点球胜法国）；2024 美洲杯冠军。Scaloni 长期强调控制 + 关键球质量，本届<b>进攻深度充足（Julián Álvarez / Almada / Nico Paz）</b>，Romero 伤愈回归后后防同样稳固。</li>
+          <li>本场应对：预计<b>控球压迫、用 Messi 的定位球与个人创造撕开佛得角低位铁桶</b>，Lautaro 抢点终结。关键变量是<b>破铁桶效率与耐心</b>——一旦久攻不下、被 Vozinha 神扑挡住，须防被拖入加时的心理消耗；Scaloni 手握 Julián Álvarez 等换人牌可变阵加压。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fc494">🇨🇻 佛得角 · Bubista</div>
+        <div class="role">低位密集防守 + 快速反击 · Vozinha 神扑 + Mendes/Livramento 零星反击</div>
+        <ul class="cl">
+          <li>Bubista 的佛得角以 <b>低位密集防守 + 快速纵向转换</b>为蓝本——后防低位收缩、中场密集封堵，<b>依靠 Vozinha 的神扑守住零封、Ryan Mendes / Livramento 抓反击</b>。目标是限制阿根廷创造质量、把比赛拖进低比分甚至加时 / 点球。</li>
+          <li>交叉参照：世界杯处子秀、非洲区不败晋级；本届三战全平（0-0 西班牙、0-0 沙特、2-2 乌拉圭）。ESPN 指出佛得角有两种面孔——<b>对西班牙极端死守、对乌拉圭相对开放</b>，Scaloni 需防两种剧本。</li>
+          <li>本场挑战：<b>面对 Messi 与阿根廷更高个人上限，佛得角需在防守纪律（禁区盯防、避免拉扯送点）与体能 / 吃牌管理间取得平衡</b>。Jovane Cabral 伤缺削弱反击出球，Sidny Cabral 刚停赛回归。能否复制"逼平西班牙"、由 Vozinha 连续第三场神扑，是其唯一现实的爆冷 / 拖加时路径。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta / 超算（综合）<small>· 多源一致</small></div>压倒性偏阿根廷晋级——阿根廷卫冕冠军、J 组三战全胜（进 8 失 1）、FIFA 第 2、夺冠赔率领跑；佛得角处子秀、以最低分全平出线、分级低数档。阿根廷是合理的极端大热门，但<b>淘汰赛单场样本下，佛得角若复制"逼平西班牙"式死守 + Vozinha 神扑，理论上可拖入加时</b>——超算难完全量化"铁桶守 90 分钟"的方差。<span style="color:var(--warn)">[精确晋级概率 · 待核]</span></div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 综合预测媒体</small></div>Messi 复出首发（本届 6 球、历史射手榜纪录）是核心引擎，Romero 伤愈回归稳固后防。ESPN 强调阿根廷须防轻敌、上最强阵，并点出<b>佛得角有两种剧本（对西班牙死守 / 对乌拉圭进攻）</b>与 Vozinha 神扑的爆冷潜力；Jovane Cabral 伤缺削弱佛得角反击。</div>
+    <div class="insight"><div class="who">Squawka / DraftKings <small>· 数据/盘口分析媒体</small></div>盘口极端悬殊（阿根廷 1.15 vs 佛得角 20.00），总分线偏 Over，揭示市场预期"阿根廷火力碾压 + 佛得角铁桶"的高比分倾向。<b>Messi 任意时间进球 prop 与阿根廷 -2.5 让球是大众资金集中点</b>——核心博弈在让球深度与个人 prop，而非胜负方向。Oddschecker 出现 66% 注单押佛得角的情绪逆向噪音。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源综合</small></div>⚠ 陷阱提醒：① Messi 状态与品牌效应导致个人 prop 市场（进球/助攻）可能溢价；② Vozinha 神扑方差极大，可把阿根廷 2.5+ 的 xG 守成低比分甚至 0-0；③ 阿根廷若久攻不下 / 轻敌，存在被拖入加时的心理消耗风险；④ 佛得角"童话"情绪买盘可能扭曲受让盘与平局价格——若阿根廷耐心破铁桶、Messi 早开纪录，佛得角爆冷 / 拖加时空间有限。</div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：阿根廷实力压倒性偏强（盘口去水 ≈84%、三战全胜进 8 失 1）且状态火热（Messi 6 球复出首发），是结构性极端大热门。佛得角以最低分全平出线、分级低数档，但拥有 Vozinha 神扑 + 低位铁桶这一被"逼平西班牙"验证过的真实工具——这是一场"实力极端分级但佛得角能拖低比分"的大卫对歌利亚淘汰赛。基准剧本：<b>阿根廷控制比赛、耐心破铁桶、力争多球取胜晋级，总分偏 Over 2.5</b>；佛得角最现实的路径是低位死守 + Vozinha 神扑拖时间、零星反击偷袭。淘汰赛单场样本下，佛得角爆冷或拖入加时空间有限但非零。</li>
+      <li><b>关键先生</b>：阿根廷 — Messi（队长，破铁桶第一钥匙 + 定位球）· Lautaro（抢点终结）· Enzo / Mac Allister（中场调度撕肋部）· Romero / E.Martínez（后防）；佛得角 — Vozinha（神扑守零封）· Logan Costa（盯防 Messi/Lautaro）· Ryan Mendes / Livramento（反击出球）。</li>
+      <li><b>胜负手</b>：① 阿根廷能否耐心破佛得角低位铁桶、把 xG 优势转化为进球（Messi 定位球是关键）；② Vozinha 能否连续第三场神扑、佛得角能否守出零封拖时间；③ 阿根廷会否轻敌 / 久攻不下的心理消耗；④ Jovane Cabral 伤缺后佛得角反击出球是否进一步下降；⑤ 阿根廷领先后的淘汰赛节奏管理与 Romero 复出体能。</li>
+      <li><b>市场视角</b>：压倒性偏阿根廷（≈84% 去水）且接近碾压单边（佛得角 ≈5%、平局 ≈11%，合计约 16% 非阿根廷胜），过热指数 2/5。总分线偏 Over + 阿根廷 -2.5 让球深度是核心定价点。Messi prop 市场受情绪驱动，可能存在溢价；佛得角受让盘 / 平局有"童话"情绪买盘（Oddschecker 66% 注单押佛得角）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre 为准）——<b>Messi 首发与出场时长</b>、<b>Romero 膝伤是否影响首发</b>、<b>佛得角 Jovane Cabral 是否出战 / Logan Costa 出场时长</b>；② 队长（C）以 FIFA 官方袖标位置为准（阿根廷 Messi、佛得角 Ryan Mendes）；③ <b>本场主裁 / 完整裁判组 / VAR 组合（ESPN 前瞻仍标 TBC · FIFA 通常赛前 24–48 小时公布）</b>；④ 本届两队逐场 xG 完整数据（Opta/FotMob 细分 · 待核）；⑤ <b>精确总分线与 Messi prop 价格</b>；⑥ 实时赔率以赛前为准；⑦ 阿根廷/佛得角 PPDA/xT/field tilt 细分——国家队公开样本有限；⑧ Kalshi/Polymarket 预测市场精确占比；⑨ 精确历史交锋（H2H · 佛得角处子秀预计无正式交锋）；⑩ 佛得角小组赛逐场 xG 与 Vozinha 扑救明细。</div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49234020/fifa-world-cup-2026-argentina-vs-cape-verde-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups-lionel-messi">ESPN — 阿根廷vs佛得角前瞻 / 转播 / 裁判 / 预测首发</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-cape-verde-prediction-team-news-lineups_600481.html">Sports Mole — 前瞻 / 球队消息 / 首发</a><br>
+      • <a href="https://worldsoccertalk.com/amp/world-cup/report-cristian-romero-returns-julian-alvarez-set-to-lose-spot-alongside-lionel-messi-in-argentinas-projected-lineup-vs-cape-verde/">World Soccer Talk — Romero 回归 / Messi 首发 / 预测阵</a> · <a href="https://www.goal.com/en/lists/lionel-messi-bench-argentina-lionel-scaloni-world-cup-rotation-jordan/bltcdd93980de979c15">Goal — Messi 轮休 / 复出</a><br>
+      • <a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-argentina-vs-cape-verde-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 初盘赔率</a> · <a href="https://www.oddschecker.com/us/soccer/world-cup/argentina-v-cape-verde">Oddschecker — 赔率 / 注单占比</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-cape-verde-07-03-26-world-cup-2026-round-of-32/">Squawka — 前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aurGJ5y7Avbh/">Racing Post — 前瞻 / Bet Builder</a> · <a href="https://www.aljazeera.com/sports/2026/6/27/cape-verde-qualify-for-world-cup-round-of-32-set-up-date-with-argentina">Al Jazeera — 佛得角晋级</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-07-02 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#6c9bd8',SC='#1f9d63',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['阿根廷胜','平局','佛得角胜'],datasets:[{data:[84,11,5],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:95,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('advChart'),{type:'bar',
+ data:{labels:['阿根廷晋级','佛得角晋级'],datasets:[{data:[1.17,15.00],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},type:'logarithmic',title:{display:true,text:'晋级 DECIMAL 赔率（对数轴）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[62,43],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'隐含概率 %（含贴水，DraftKings）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路速度','个人上限','大赛经验'],
+  datasets:[
+   {label:'阿根廷',data:[8.5,9,9,8,9.5,9.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'佛得角',data:[6.5,4.5,5.5,6,5,4],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

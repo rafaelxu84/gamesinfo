@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 奥地利 vs 约旦 · 2026世界杯 J组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-austria-vs-jordan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 3-1 · 2026 世界杯 · J组首轮 · Schmid 世界波 + 末段两记 VAR 点球争议，奥地利后程拿下</span>
+  <h1>奥地利 vs 约旦</h1>
+  <div class="meta">2026年6月17日 00:00 ET（美东周三凌晨 / 美西周二晚 21:00 PT）· 圣克拉拉 Levi's Stadium · J组（同组：阿根廷、阿尔及利亚）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇦🇹 奥地利</div><div class="rk">FIFA #24 · 时隔28年重返世界杯 · Rangnick 高压逼抢体系</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇯🇴 约旦</div><div class="rk">FIFA #63 · 世界杯历史首秀 · 2023亚洲杯亚军底蕴</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 奥地利 3-1 约旦（半场 1-0）· 数据来源 Opta / FIFA / Yahoo Sports / Deccan Chronicle · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场比比分更跌宕的比赛。奥地利第 <b>20 分钟</b>由 <b>Romano Schmid</b> 在禁区外一脚世界波破门——这是奥地利<b>自 1998 年以来的首个世界杯进球</b>。但约旦下半场开局便强势回应：第 <b>50 分钟</b> <b>Ali Olwan</b> 一条龙连过数人攻入<b>约旦世界杯历史首球</b>，扳成 1-1。第 <b>67 分钟</b> Arnautović 抢点破门，但 <b>69 分钟 VAR 判 Posch 手球、进球无效</b>；奥地利的"球不会说谎"时刻在第 <b>76 分钟</b>到来——一记角球造成 <b>Yazan Al-Arab 自摆乌龙</b>（本届第 5 个乌龙），2-1。此后火气上升、Sabitzer 第 77 分钟染黄。补时长达 10 分钟，第 <b>90+12 分钟</b> Arnautović 再凭 VAR 判罚的点球一蹴而就锁定 3-1。值得注意：约旦全场<b>射门与射正数均多于奥地利</b>，奥地利赢在机会质量与终结效率。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 20' Schmid 世界波（1-0）→ HT 1-0 → 50' Olwan 单刀（约旦首球 1-1）→ 67' Arnautović 进球 → 69' VAR 判 Posch 手球无效 → 76' Al-Arab 乌龙（2-1）→ 77' Sabitzer 黄牌 → 90+12' Arnautović 点球（3-1）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇦🇹 奥地利</th><th style="padding:6px">🇯🇴 约旦</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center"><b>≈58%</b></td><td style="text-align:center">≈42%</td><td style="padding:6px;color:var(--mut)">奥地利掌握皮球，但控球未直接转化为压制</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门</td><td style="text-align:center">少于约旦 <span style="color:var(--warn)">待核</span></td><td style="text-align:center"><b>更多</b></td><td style="padding:6px;color:var(--mut)">约旦射门数更多——绝非被动挨打的弱旅</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射正</td><td style="text-align:center">少于约旦 <span style="color:var(--warn)">待核</span></td><td style="text-align:center"><b>更多</b></td><td style="padding:6px;color:var(--mut)">约旦射正也更多，奥地利赢在机会质量而非数量</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传球成功率</td><td style="text-align:center"><b>≈88%</b></td><td style="text-align:center"><span style="color:var(--warn)">待核</span></td><td style="padding:6px;color:var(--mut)">奥地利传球质量高，后场出球稳定</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">运动战进球</td><td style="text-align:center">1（Schmid）</td><td style="text-align:center"><b>1（Olwan）</b></td><td style="padding:6px;color:var(--mut)">运动战 1-1，奥地利另两球来自乌龙 + 点球</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">定位球得分</td><td style="text-align:center"><b>1（角球致乌龙）</b></td><td style="text-align:center">0</td><td style="padding:6px;color:var(--mut)">赛前主打的"定位球破密集"兑现为致胜一击</td></tr>
+      <tr><td style="padding:6px">点球 / 黄牌</td><td style="text-align:center">点球 1 / 黄 1</td><td style="text-align:center">0 / <span style="color:var(--warn)">待核</span></td><td style="padding:6px;color:var(--mut)">两次 VAR 手球判罚（一负一正）是比赛转折</td></tr>
+    </table></div>
+    <p style="font-size:12px;color:var(--mut);margin-top:4px">注：本场逐项技术统计（精确射门/射正/xG/禁区触球/角球数）的赛后完整公开数据未能全部检得，控球 ≈58% 与传球 ≈88% 来自 Opta/FotMob 报道，约旦射门与射正数更多为多家战报一致表述；具体数值标注<span style="color:var(--warn)">待核</span>。</p>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 高压体系是双刃剑：约旦靠反击咬住了比赛</div>奥地利的 Rangnick 高压逼抢确实控制了球权（≈58%），但也把后场空间留给了约旦的快速转换——Olwan 的单刀世界杯首球正是反击产物，约旦全场射门与射正均多于奥地利。<b>这说明奥地利</b>：gegenpressing 在面对有反击獠牙的对手时会暴露身后空当，赢球更多靠个人质量与终结效率，而非体系性碾压。</div>
+    <div class="insight"><div class="who">② 定位球如赛前所料成为破局钥匙</div>赛前判断"破密集防守要靠定位球与传中质量"，结果致胜的 2-1 正是一记角球造成 Al-Arab 乌龙——Alaba/Sabitzer 的定位球输送 + 高大球员争顶制造混乱。<b>这说明奥地利</b>：运动战久攻不下时，定位球是其最可靠的得分来源，这一战术资产名副其实。</div>
+    <div class="insight"><div class="who">③ Arnautović 的终结价值：从被吹到罚进</div>37 岁的 Arnautović 一球被 VAR 吹（Posch 手球），却在补时顶住压力罚进制胜点球。<b>这说明奥地利</b>：在缺乏稳定运动战火力的情况下，老将的大心脏与支点作用仍是球队的关键先生，赛前对其"支点 + 终结者"的定位准确。</div>
+    <div class="insight"><div class="who">④ 约旦并非纸老虎：首秀打出超出排名的内容</div>FIFA #63 的约旦在双前锋（Al-Naimat / Sabra）伤缺、Al-Tamari 仅替补登场的情况下，依然射门更多、攻入世界杯首球、把比赛拖入十分钟补时的胶着。<b>这说明约旦</b>：是一支敢于压上、反击犀利的组织型球队，远非赛前市场预期的"深度退守保失球数"，把它当鱼腩会吃亏。</div>
+    <div class="insight"><div class="who">⑤ 两次 VAR 手球判罚定义了比赛走向</div>69' 吹掉奥地利进球、90+12' 判给奥地利点球——VAR 在十几分钟内两度改变比分，并引发球员冲突与 Sabitzer 黄牌。<b>这说明</b>：在实力接近、运动战僵持的比赛里，定位球与判罚细节（手球尺度）的权重被放大，奥地利的 3-1 比分掩盖了过程的胶着。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>基准剧本"奥地利获胜"→ 实际 3-1 取胜</b>：胜负方向兑现，奥地利如预期拿下三分。</li>
+      <li>✗ <b>比分预期"奥地利 2-0 从容获胜（零封）"→ 实际 3-1（被进 1 球）</b>：净胜 2 球的幅度对了，但<b>未能零封</b>——约旦攻入首球，"从容"二字落空，过程相当胶着。</li>
+      <li>✓ <b>大 2.5 球 / 总分线 3.0 → 实际 4 球（大球）</b>：市场偏向有球、看好大球的判断兑现。</li>
+      <li>✓ <b>奥地利 -1.5 让球 → 净胜 2 球，让分打出</b>：让球盘基准预期兑现。</li>
+      <li>✗ <b>"约旦深度退守、力保不大败"→ 实际约旦主动压上、射门更多</b>：约旦没有摆大巴，反而打出反击与进攻，与赛前"放弃控球退守"的画像偏差明显。</li>
+      <li>△ <b>"Al-Tamari 是约旦唯一进攻火种"→ 实际 Al-Tamari 仅第 88 分钟替补登场</b>：约旦进攻并不只靠他，Olwan 的单刀才是亮点，赛前对其依赖度的判断需修正。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇦🇹 奥地利 → 6/22 vs 阿根廷（阿灵顿 AT&T 体育场）</div>同组阿根廷首轮 3-0 大胜阿尔及利亚（Messi 帽子戏法），奥地利与其同积 3 分但将面对降维打击。本场暴露的<b>高压留身后空当</b>问题，遇上阿根廷的纵向速度会被无限放大；运动战火力不足、过度依赖定位球与老将终结的短板也更危险。Sabitzer 已背一张黄牌需注意累积停赛风险。这是争夺小组第二的关键卡位战。</div>
+      <div class="insight" style="margin:0"><div class="who">🇯🇴 约旦 → 6/22 vs 阿尔及利亚（圣克拉拉 Levi's 体育场，原地再战）</div>约旦虽败但首秀打出超预期内容（射门更多、攻入首球），面对首轮 0-3 负于阿根廷的阿尔及利亚，这是约旦<b>小组出线/抢分最现实的一场</b>。可复制的得分路径是 Olwan 式的快速反击；若 Al-Tamari 能进入首发，进攻层次会更足。需补强的是定位球防守——本场致命的乌龙正来自角球，对位阿尔及利亚的高点需格外警惕。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst、FIFA、Yahoo Sports、Deccan Chronicle、Sports Illustrated。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>欧洲中坚对阵亚洲黑马的明确实力错位之战</b>：FIFA #24 的奥地利（Rangnick 打造的高压逼抢体系、阵中拥有 Alaba、Sabitzer、Arnautović 等欧洲一线联赛主力）对阵首次踏上世界杯舞台的约旦（FIFA #63、2023 亚洲杯亚军，但进攻端因伤大幅削弱）。盘口倾向极为明确——奥地利胜赔约 <b>1.34</b>（去水隐含 ≈71%），平局约 5.25–5.50（≈17%），约旦胜 <b>8.00–9.50</b>（≈12%）。预测市场 Kalshi 给奥地利 73%、平局 17%、约旦 11%，与博彩去水概率高度吻合。约旦头号射手 Yazan Al-Naimat（膝伤）与新星前锋 Ibrahim Sabra（脚踝韧带断裂）双双因伤缺阵，进攻火力遭重创。基准剧本：<b>奥地利 2-0 从容获胜</b>，约旦深度退守、力保不大败；奥地利作为小组出线热门，有动力赢球扩大净胜球。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">奥地利隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈71%</div></div>
+      <div class="key"><div class="k">约旦隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈12%</div></div>
+      <div class="key"><div class="k">奥地利离开世界杯</div><div class="v" style="color:var(--warn)">28年</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>约旦双前锋同时伤缺</b>：头号射手 Yazan Al-Naimat（资格赛 8 球）与新星 Ibrahim Sabra 双双因伤无缘，约旦最锋利的两把尖刀同时折损，攻击线被迫重组。</li>
+      <li><b>Mousa Al-Tamari 的个人能力</b>：效力法甲雷恩的边路核心是约旦剩余进攻火力的绝对支点，能否在奥地利高压下创造机会，决定约旦能否抢分。</li>
+      <li><b>Rangnick 高压体系的效率</b>：奥地利的 gegenpressing 旨在高位夺回球权、快速打穿对手；面对退守的约旦，关键在于破密集防守的耐心与定位球质量。</li>
+      <li><b>奥地利核心缺阵</b>：Christoph Baumgartner 赛前热身赛肌肉伤退出大名单，奥地利损失一名机动性极强的进攻选项，进攻组合略受影响。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">约旦 · 进攻线双重伤缺 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Yazan Al-Naimat（膝伤）与 Ibrahim Sabra（脚踝韧带断裂）双双退出</b>，约旦世界杯首秀攻击线遭重创</div>
+      <p style="font-size:13.5px">约旦头号射手 Yazan Al-Naimat 自 2025 年阿拉伯杯起因膝伤长期缺阵——他在世界杯预选赛打入 8 球，是约旦晋级的关键功臣。雪上加霜的是，20 岁新星前锋 Ibrahim Sabra 在训练中遭遇左脚踝韧带断裂被迫退出大名单，由 Mohammad Taha 顶替入选。两名最具威胁的前锋同时缺阵，意味着约旦在世界杯首秀就必须临时重组攻击线，可能由 Ali Olwan 顶在最前。<span style="color:var(--warn)">[最终首发与具体伤情恢复以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：约旦本就属于本组实力最弱的一档，进攻端再失去两名主力射手，对阵奥地利时几乎只能依赖 Al-Tamari 的个人能力和零星反击。这进一步抬高了奥地利的赢球与扩大净胜球预期，也强化了市场对奥地利让球盘与大球方向的兴趣。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://newsable.asianetnews.com/sports/jordan-world-cup-2026-squad-al-tamari-leads-al-naimat-out-injured-articleshow-yp25sgh" style="color:var(--accent)">Asianet — Al-Naimat 伤缺</a> · <a href="https://onefootball.com/en/news/ibrahim-sabra-out-mohammad-taha-completes-jordans-2026-world-cup-squad-42984089" style="color:var(--accent)">OneFootball — Sabra 退出</a> · <a href="https://www.aljazeera.com/sports/2026/6/6/jordan-world-cup-2026-preview-players-to-watch-group-matches-and-squad" style="color:var(--accent)">Al Jazeera — 约旦前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">奥地利 · Baumgartner 赛前伤退 <span style="color:var(--mut);font-weight:400">· FourFourTwo · Sports Mole · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">奥地利在对突尼斯热身赛前<b>失去 Christoph Baumgartner</b>（肌肉伤），退出世界杯大名单</div>
+      <p style="font-size:13.5px">奥地利在世界杯前夕遭遇打击：莱比锡中场 Christoph Baumgartner 在对突尼斯的热身赛前拉伤肌肉，被迫退出大名单。Baumgartner 是 Rangnick 体系中机动性极强的进攻 / 边前卫选项，能在高压逼抢和最后三分之一区域提供能量。不过奥地利攻击线深度尚可，Schmid、Wimmer、Gregoritsch 等仍可填补该位置。<span style="color:var(--warn)">[替补人选与最终首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Baumgartner 缺阵削弱了奥地利在前场的跑动与渗透层次，但面对深度退守的约旦，这一影响相对有限——奥地利仍坐拥明显的人员与体系优势。该消息更多影响奥地利赢球的"过程是否漂亮"，而非赢球本身。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fourfourtwo.com/team/austria-world-cup-2026-squad" style="color:var(--accent)">FourFourTwo — 奥地利大名单</a> · <a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html" style="color:var(--accent)">Sports Mole — 队况/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">奥地利 · 资格赛强势 + 28年后重返 <span style="color:var(--mut);font-weight:400">· UEFA · Squawka · 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">奥地利领跑 UEFA H 组（8 场积 19 分），自 1998 年来<b>首次重返世界杯决赛圈</b></div>
+      <p style="font-size:13.5px">奥地利在 Rangnick 治下打出强势资格赛：UEFA H 组 8 场拿下 19 分高居榜首，比波黑多 2 分，8 场 6 胜，仅客场负罗马尼亚、主场被波黑逼平。Rangnick 自 2022 年接手以来已连续带队晋级两届大赛（欧洲杯 + 世界杯），把奥地利锻造成欧洲最具凝聚力与侵略性的中坚力量之一。队长 Alaba 领衔，近 5 场保持不败。<span style="color:var(--warn)">[临场状态与首发组合以赛前热身与官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：奥地利不仅实力占优，状态与体系成熟度也明显领先。在与阿根廷同组的格局下，奥地利争夺小组第二（出线）的现实目标，要求他们在面对约旦时尽量赢球、并扩大净胜球——这构成强烈的取胜动机。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.uefa.com/european-qualifiers/news/02a6-20d159406296-f54718194327-1000--austria-at-the-world-cup-2026-squad-fixtures-group-and-hi/" style="color:var(--accent)">UEFA — 奥地利资格赛/概览</a> · <a href="https://www.squawka.com/en/news/world-cup/austria-world-cup-2026-fixtures-squad-analysis/" style="color:var(--accent)">Squawka — 奥地利分析</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">约旦 · 防守状态信号 <span style="color:var(--mut);font-weight:400">· Sports Mole · 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">约旦近 5 场<b>每场至少失 2 球</b>；亚洲杯亚军底蕴遇上世界杯级别对手的现实落差</div>
+      <p style="font-size:13.5px">约旦虽有 2023 亚洲杯亚军底蕴（点球惜败卡塔尔），但近期防守状态令人担忧——其最近 5 场比赛每场至少失 2 球。从亚洲赛场跃升到与阿根廷、奥地利同组的世界杯舞台，对抗强度与对手质量的落差巨大。约旦赛前最后一场热身于 6 月 7 日对阵哥伦比亚，作为世界杯前的最终检验。<span style="color:var(--warn)">[热身赛对手与轮换背景，近期失球数是否具代表性 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：约旦近期防线漏球频繁，再叠加进攻端双前锋伤缺，市场普遍预期约旦会主动放弃控球、深度退守保平失球数。这强化了对奥地利让球盘（-1.5 / -2）与大球（总分 3.0）方向的关注。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html" style="color:var(--accent)">Sports Mole — 约旦近期失球</a> · <a href="https://www.goal.com/en/world-cup-teams/group-j/world-cup-2026-guide-jordan/O~blt19bcc56475c3253f" style="color:var(--accent)">Goal — 约旦指南</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · J组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>J 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇹 奥地利</th><th>🇯🇴 约旦</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#24</td><td class="sc">#63</td></tr>
+      <tr><td>世界杯史</td><td class="ht">时隔 28 年重返（1998 后首次）</td><td class="sc">世界杯历史首秀（4 支首秀队之一）</td></tr>
+      <tr><td>近期战绩</td><td class="ht">近 5 场不败；资格赛 8 战仅 1 负</td><td class="sc">2023 亚洲杯亚军；近 5 场每场失 ≥2 球</td></tr>
+      <tr><td>主教练</td><td class="ht">Ralf Rangnick</td><td class="sc">Jamal Sellami</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.34（隐含≈71%）</td><td class="sc">胜 8.00–9.50（≈12%）· 平 5.25–5.50（≈17%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">总分线 3.0，大球 @ 约 2.10（+110）受青睐 —— 市场偏向有球</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查正式交锋记录（两队此前无世界杯交手）</td></tr>
+      <tr><td>关键缺阵</td><td class="ht">Christoph Baumgartner（肌肉伤）</td><td class="sc">Yazan Al-Naimat（膝伤）· Ibrahim Sabra（脚踝韧带断裂）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈71/17/12）。赔率来源：美线 -290/-300 → 奥地利 1.34/1.33；平局 +425/+450 → 5.25/5.50；约旦 +700/+800/+950 → 8.00/9.00/9.50。总分线 3.0，大球 +110（约 2.10）受青睐。预测市场 Kalshi：奥地利 73%、平 17%、约旦 11%——与博彩去水概率高度吻合，说明盘口定价合理，无明显情绪溢价。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">奥地利胜共识压倒性清晰；真正的分歧在"赢多少"——让球盘（-1.5/-2）与大小球（总分 3.0）是市场关注焦点</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.45">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · 奥地利胜方向统一；缺乏叙事溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">这是一场关注度偏低的比赛——奥地利胜的共识极强，几乎没有叙事溢价；约旦世界杯首秀带来轻微新鲜感。情绪资金有限，主要集中在奥地利让球盘与大球方向。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：奥地利胜 全部 · 约旦胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>奥地利 2-0</b> 或类似从容获胜</td></tr>
+      <tr><td>Rotowire</td><td>预测/阵容媒体</td><td>奥地利胜；约旦双前锋伤缺、进攻乏力</td></tr>
+      <tr><td>VSiN</td><td>美系投注媒体</td><td>奥地利胜 + <b>倾向让球 / 大球</b></td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>奥地利胜；实力差距明显</td></tr>
+      <tr><td>Racing Post</td><td>投注媒体</td><td>奥地利胜；Bet Builder 偏向奥地利净胜 + 有球</td></tr>
+      <tr><td>101 Great Goals</td><td>前瞻媒体</td><td>奥地利胜；约旦退守保平失球数</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：胜负方向高度统一，无人押约旦赢——这是合理共识而非过热。真正的分歧在<b>让球幅度</b>（奥地利能否赢 2 球以上）与<b>大小球</b>（总分 3.0 是否打出）。情绪资金有限，无单边异常资金流。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>奥地利胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>1X2</td><td class="ht">1.34（约 -290）</td><td>强烈倾斜；平局 5.25 / 约旦 8.00–9.50</td></tr>
+      <tr><td>06-15/16 截止</td><td>BetOnline 等</td><td class="ht">1.34（-295）</td><td>基本稳定；约旦最高报价 +950（9.50）</td></tr>
+      <tr><td>06-15/16</td><td>总分线 3.0</td><td colspan="2" class="ht">大球 +110（约 2.10）；小球略偏低赔</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>奥地利 -1.5 / -2</td><td colspan="2" class="sc">奥地利 -1.5 为基准让球区间（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘几乎无浮动，市场定价高度稳定。最活跃的资金在<b>让球盘与总分 3.0 线</b>——约旦双前锋伤缺 + 近期失球频繁，强化大球与奥地利让分的预期。亚盘 -1.5/-2 体现"奥地利须明显赢球"的基准预期。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi 预测市场</b>：奥地利 73%、平 17%、约旦 11%——与博彩去水概率（71/17/12）几乎完全吻合，说明两池完全收敛、无情绪偏离。</li>
+      <li><b>专家方向</b>：所有检得的预测媒体一致看好奥地利，分歧仅在赢球幅度与是否打出大球；无人押约旦取胜或平局。</li>
+      <li><b>舆论焦点</b>：约旦的"世界杯历史首秀"叙事带来一定情绪流量（亚洲足球里程碑），奥地利的"时隔 28 年重返"亦是看点；但作为本组关注度低于阿根廷相关场次的对决，整体热度有限。</li>
+      <li><b>资金面</b>：未见显著推动盘口的单边异常资金；让球与大球是少数有讨论度的市场。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与 Kalshi 预测市场完全收敛（奥地利 ≈71–73%），过热指数 <b>2.5/5</b>。奥地利胜方向高度统一；真正的价值分歧集中在<b>让球幅度（-1.5/-2）</b>与<b>总分 3.0</b>这两条线。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://vsin.com/soccer/austria-vs-jordan-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — 预测/盘口</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/austria-vs-jordan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aM2Ss5f0OfG4/">Racing Post — 赔率/投注</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-austria-vs-jordan-06-17-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://sports.yahoo.com/articles/austria-vs-jordan-picks-predictions-141729026.html">Yahoo Sports — 预测/盘口</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">奥地利持球与高压围攻预计带来较高角球产出；约旦深度退守、频繁解围出底线，可能进一步推高奥地利的角球数；市场具体盘口待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇦🇹 奥地利</th><th>🇯🇴 约旦</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">高压逼抢 + 持球围攻；边路传中与渗透并重</td><td class="sc">低位退守为主；依赖 Al-Tamari 反击</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈6–8（围攻型，对阵弱旅角球偏多）<span style="color:var(--warn)">待核</span></td><td class="sc">≈2–4（多数时间防守，进攻角球稀少）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Alaba/Sabitzer 输送 + 高大中卫争顶</td><td class="sc">中低：进攻定位球机会有限</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显占优（持球围攻 + 约旦被迫解围）</td><td class="sc">被迫角球为主，进攻角球极少</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：奥地利围攻、约旦退守的格局通常带来一边倒的角球分布，奥地利角球数可能落在 6–9 区间，总角球数常见基准线 O/U 9.5 或 10.5 属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>奥地利的持球与高压围攻预计带来明显的角球差，角球让球盘大概率倾向奥地利一侧。若约旦早早落后并全线退守，被迫解围会进一步推高奥地利的角球产出。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>奥地利的围攻型打法叠加约旦的密集防守，总角球数可能偏中高（接近或略高于 10）。但若奥地利早早 2-0 领先后放慢节奏、降低强度，下半场角球产出可能回落，总数趋于基准线附近。</div>
+    <div class="insight"><div class="who">变量与两面性</div>比赛比分状态是角球数的主要驱动：若奥地利领先后追求净胜球持续施压，角球数走高；若早早锁定胜局后控场降速，角球数趋稳。约旦进攻角球贡献极少，对总数影响有限。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：FIFA 已确认本场主裁为<b>毛里塔尼亚籍 Dahane Beida</b>，这是毛里塔尼亚裁判史上首次出现在世界杯舞台。Beida 生于 1991 年 12 月，自 2018 年起为 FIFA 国际级裁判，是 CAF（非洲足联）赛事的资深裁判，曾执法 2023 非洲杯决赛（科特迪瓦 vs 尼日利亚）。<span style="color:var(--warn)">[顶级洲际 / 世界杯级别样本有限，其判罚尺度与场均牌数在世界杯环境下的表现 · 待核]</span></div>
+    <h4>裁判画像与本场参考意义</h4>
+    <ul class="cl">
+      <li><b>CAF 背景、首次执法世界杯</b>：Beida 在非洲赛场经验丰富，但缺乏可直接对照的世界杯 / 顶级洲际公开数据，其牌数与判罚风格在本届的具体表现仍待观察。<span style="color:var(--warn)">（场均牌数 · 待核）</span></li>
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：若约旦落后想拖延，工具有限；奥地利领先后的节奏管理同样受新规约束。</li>
+      <li><b>仅队长可与裁判沟通</b>：奥地利队长 David Alaba、约旦队长 Ehsan Haddad（若首发）——两人均有大赛经验，适应新规无压力。</li>
+      <li><b>半自动越位</b>：判罚更快更准，奥地利前锋的越位临界冲刺将被精准捕捉。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在一场实力悬殊、奥地利持球占优的比赛中，犯规与对抗大概率集中在约旦半场，约旦累计黄牌风险略高。Beida 的非洲杯决赛执法履历显示其能驾驭大场面，但其具体尺度与场均牌数在世界杯样本下尚无可靠参照——在未获知更多数据前，裁判面不构成强可操作的分析依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇦🇹 奥地利 预测首发（4-2-3-1）</h4>
+    <div class="lineup">A. Schlager; Laimer · Lienhart · Alaba · Mwene; Seiwald · X. Schlager; Schmid · Sabitzer · Gregoritsch; Arnautović</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Marko Arnautović</td><td>前锋 / 效力欧洲</td><td>经验丰富的单箭头；支点与终结者，破密集防守的关键</td></tr>
+      <tr><td class="ht">David Alaba (C)</td><td>后卫 / 皇家马德里</td><td>队长与精神领袖；后场出球与定位球输送核心</td></tr>
+      <tr><td class="ht">Marcel Sabitzer</td><td>中场 / 多特蒙德</td><td>进攻中场引擎；远射与组织的主要发起者</td></tr>
+      <tr><td class="ht">Konrad Laimer</td><td>右后卫·中场 / 拜仁慕尼黑</td><td>Rangnick 高压体系的覆盖与逼抢支柱</td></tr>
+    </table>
+    <h4>🇯🇴 约旦 预测首发（4-3-3 / 3-4-3）</h4>
+    <div class="lineup">Abulaila; Nasib · Al-Arab · Marei; Abu Hashish · Al-Rashdan · Al-Rawabdeh · Taha; Tamari · Olwan · Fakhouri</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Mousa Al-Tamari</td><td>边锋 / 雷恩（法甲）</td><td>约旦头号球星；本赛季雷恩 7 球 11 助攻；进攻绝对支点</td></tr>
+      <tr><td class="sc">Ali Olwan</td><td>前锋 / 效力海外</td><td>两名主力前锋伤缺后顶在最前的可能人选</td></tr>
+      <tr><td class="sc">Nizar Al-Rashdan</td><td>中场 / 效力海外</td><td>中场组织与覆盖；连接 Al-Tamari 的关键一环</td></tr>
+      <tr><td class="sc">Yazeed Abulaila</td><td>门将 / 效力本土</td><td>面对奥地利围攻，门将的扑救表现至关重要</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / ESPN），<b>以赛前官方名单为准</b>。约旦因 Al-Naimat、Sabra 双双伤缺，攻击线人选存在变数（待核）；奥地利 Baumgartner 伤退后前场组合略有调整（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇦🇹 奥地利 · Ralf Rangnick</div>
+        <div class="role">4-2-3-1 高压逼抢（gegenpressing）+ 快速纵向推进</div>
+        <ul class="cl">
+          <li>Rangnick 把奥地利打造成欧洲最具侵略性的逼抢球队之一：高位夺回球权后快速纵向打穿，强调前场压迫与转换速度。</li>
+          <li>面对深度退守的约旦，关键在于破密集防守——耐心的边路传中、Sabitzer 的远射与二点球、以及 Alaba 主罚的定位球，是主要破局手段。</li>
+          <li>风险：约旦全线退守时，奥地利若缺乏耐心、急于强攻，可能被反击或定位球偷袭；Baumgartner 缺阵略降前场渗透层次。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇯🇴 约旦 · Jamal Sellami</div>
+        <div class="role">低位密集防守 + 依托 Al-Tamari 的快速反击</div>
+        <ul class="cl">
+          <li>摩洛哥籍主帅 Sellami 2024 年接手后率队历史性晋级世界杯。面对奥地利，约旦预计组织密集防线、压缩空间，力求减少失球。</li>
+          <li>进攻几乎完全依赖 Al-Tamari 的个人能力与边路反击；两名主力前锋伤缺后，约旦在最后一传与终结环节明显吃紧。</li>
+          <li>风险：近 5 场每场失 ≥2 球的防守状态，叠加奥地利的持续施压，约旦保持零失球的难度极大；一旦先失球，比赛可能走向大比分。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>指出约旦近 5 场每场至少失 2 球，叠加 Al-Naimat、Sabra 双双伤缺，奥地利在进攻端应能轻松获益，预计 2-0 从容取胜。约旦的现实目标是控制失球数。</div>
+    <div class="insight"><div class="who">Kalshi · 预测市场 <small>· 概率聚合</small></div>奥地利 73%、平 17%、约旦 11%——与博彩去水概率几乎完全一致，量化共识与市场定价高度收敛，说明这是一场被精准定价、缺乏情绪偏离的比赛。</div>
+    <div class="insight"><div class="who">综合 · 奥地利侧画像 <small>· 战术信号</small></div>奥地利与阿根廷同组，争夺小组第二的现实目标要求他们在面对约旦时不仅要赢，还要尽量扩大净胜球——这构成强烈的取胜与进攻动机，支持大球与让球方向。</div>
+    <div class="insight"><div class="who">综合 · 约旦侧画像 <small>· 历史里程碑</small></div>约旦的世界杯首秀本身就是亚洲足球的里程碑（2023 亚洲杯亚军底蕴）。但进攻线双前锋伤缺让 Sellami 的攻击计划被迫重组，Al-Tamari 几乎是唯一的进攻火种——约旦更现实的目标是在三场小组赛中力争抢分，而非在首战强攻奥地利。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：奥地利 2-0 是基准剧本；1-0 / 3-0 同属高概率区间；平局（约 17%）与约旦胜（约 12%）属小概率尾部风险（约旦深度退守 + Al-Tamari 反击偷袭是唯一抢分路径）。</li>
+      <li><b>关键先生</b>：Arnautović（奥/支点终结）、Sabitzer（奥/组织与远射）、Alaba（奥/定位球与领袖）、Al-Tamari（约/唯一进攻火种）。</li>
+      <li><b>胜负手</b>：奥地利破密集防守的耐心与定位球质量是关键；约旦的防守韧性（近期失球频繁）与 Al-Tamari 的反击效率决定能否抢分。约旦先失球后崩盘的风险，是大比分情景的主要来源。</li>
+      <li><b>市场视角</b>：博彩与 Kalshi 完全收敛（奥地利 ≈71–73%），无情绪溢价，过热指数 2.5/5。最有信息含量的市场是<b>让球幅度（-1.5/-2）</b>与<b>总分 3.0</b>；亚盘层面奥地利 -1.5 是基准线。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 约旦攻击线最终首发（Al-Naimat / Sabra 伤缺后的重组方案）；② 奥地利 Baumgartner 替补人选与前场组合；③ 裁判 Beida 的具体执法尺度与世界杯环境下的场均牌数；④ 约旦近期失球数据的轮换背景与代表性；⑤ 角球具体盘口数据未检得；⑥ 亚盘具体赔率及让球线以赛前实时盘口为准；⑦ 总分 3.0 的大小球最终定价。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — J组确认（阿根廷、奥地利、阿尔及利亚、约旦）</a> · <a href="https://www.espn.com/soccer/story/_/id/49058237/fifa-world-cup-2026-austria-vs-jordan-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html">Sports Mole — 前瞻/队况/首发</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/austria-vs-jordan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-118225">Rotowire — 首发/战术</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-austria-vs-jordan-06-17-26-world-cup-2026/">Squawka — 前瞻分析</a> · <a href="https://www.101greatgoals.com/match-previews/world-cup-matches/austria-v-jordan-world-cup-2026-line-ups-stats-preview-tv-channel-live-online-stream-prediction/">101 Great Goals — 前瞻/盘口</a><br>
+      • <a href="https://vsin.com/soccer/austria-vs-jordan-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — 预测/盘口</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/austria-vs-jordan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aM2Ss5f0OfG4/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/austria-vs-jordan-picks-predictions-141729026.html">Yahoo Sports — 预测/盘口</a><br>
+      • <a href="https://newsable.asianetnews.com/sports/jordan-world-cup-2026-squad-al-tamari-leads-al-naimat-out-injured-articleshow-yp25sgh">Asianet — 约旦大名单 / Al-Naimat 伤缺</a> · <a href="https://onefootball.com/en/news/ibrahim-sabra-out-mohammad-taha-completes-jordans-2026-world-cup-squad-42984089">OneFootball — Sabra 退出 / Taha 顶替</a> · <a href="https://www.aljazeera.com/sports/2026/6/6/jordan-world-cup-2026-preview-players-to-watch-group-matches-and-squad">Al Jazeera — 约旦前瞻</a><br>
+      • <a href="https://www.goal.com/en/world-cup-teams/group-j/world-cup-2026-guide-jordan/O~blt19bcc56475c3253f">Goal — 约旦指南 / 主帅 Sellami</a> · <a href="https://www.fourfourtwo.com/team/austria-world-cup-2026-squad">FourFourTwo — 奥地利大名单 / Baumgartner 伤退</a> · <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d159406296-f54718194327-1000--austria-at-the-world-cup-2026-squad-fixtures-group-and-hi/">UEFA — 奥地利资格赛/概览</a><br>
+      • <a href="https://ghanasoccernet.com/world-cup-2026-mauritanian-referee-dahane-beida-appointed-for-austria-vs-jordan-clash">GHANAsoccernet — 裁判 Beida 委任</a> · <a href="https://en.wikipedia.org/wiki/Dahane_Beida">Wikipedia — Dahane Beida 简历</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯裁判名单</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-15 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['奥地利胜','平局','约旦胜'],datasets:[{data:[71,17,12],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:85,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏向大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['阿根廷','奥地利','阿尔及利亚','约旦'],datasets:[{data:[1,24,28,63],backgroundColor:['#6cadde',HT,'#1f7a3d',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'奥地利',data:[7.5,7,8,7.5,7.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'约旦',data:[5,4.5,5,4.5,6,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Croatia vs Ghana · 2026 World Cup Group L Final Round (Croatia must win to advance / Ghana through with a draw)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-croatia-vs-ghana.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-croatia-vs-ghana.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="https://tipster-24.com/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="https://pksport.net/es/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-croatia-vs-ghana.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group L Final Round · Qualification battle (Croatia must win / Ghana through with a draw) · Simultaneously: Panama vs England</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Croatia 2-1 Ghana</span>
+  <h1>Croatia vs Ghana</h1>
+  <div class="meta">Saturday, 27 June 2026 · Philadelphia, Lincoln Financial Field · 17:00 ET / 22:00 BST · Group L final round · Played simultaneously: Panama vs England (East Rutherford, MetLife Stadium)</div>
+  <div class="vs">
+    <div class="team">
+      <div class="nm" style="color:#e8788a">🇭🇷 Croatia</div>
+      <div class="rk">4-2 loss to England + 1-0 win over Panama · 3 pts (GD -1, 3 scored 4 conceded) · <b>Must win to secure progress</b> · Modrić 200 caps · Budimir the veteran saviour · defence carved open by England</div>
+    </div>
+    <div class="x">— VS —</div>
+    <div class="team">
+      <div class="nm" style="color:#5aa8d8">🇬🇭 Ghana</div>
+      <div class="rk">0-0 draw with England + 0-0 draw with Panama · 4 pts (GD +0, 0 scored 0 conceded) · <b>Through with a draw</b> · Kudus out for the whole tournament · Queiroz's defensive system two clean sheets · sit-deep counter-attack tactics</div>
+    </div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis, written 06-27) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Croatia 2-1 Ghana (HT 1-0) · Lincoln Financial · 06-27</span></h2>
+    <h4>① How the Score Unfolded</h4>
+    <p style="font-size:13.5px">The "must-win vs through-with-a-draw" script delivered the high intensity expected from the motivation mismatch: <b>Croatia went ahead through Petar Sučić's stunner from outside the box in the 31st minute</b>, leading 1-0 at the break. After halftime <b>Ghana levelled through Derrick Luckassen in the 73rd minute from a set piece</b>, briefly tilting things their way; but <b>Croatia won it in the 83rd minute as Nikola Vlašić headed home — assisted by 40-year-old Luka Modrić from a corner</b>, making Modrić the <b>oldest player on record (since 1966) to provide a World Cup assist</b>. Croatia won 2-1 and <b>qualify as Group L runners-up to the round of 32</b>; Ghana, despite the defeat, <b>still go through as one of the best third-placed teams</b> (4 points), so both sides advance.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 31' Sučić (CRO · stunner from outside the box) | 73' Luckassen (GHA · set-piece equaliser) | 83' Vlašić (CRO · header winner · Modrić corner assist) · HT 1-0</div>
+
+    <h4 style="margin-top:16px">② Core Data Comparison (Sofascore / Opta)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇭🇷 Croatia</th><th>🇬🇭 Ghana</th><th>Read</th></tr>
+      <tr><td class="ht">Score / goals</td><td><b>2</b> (Sučić, Vlašić)</td><td>1 (Luckassen)</td><td>Croatia won a must-win game via a stunner + a set-piece winner</td></tr>
+      <tr><td class="ht">Match xG (Sofascore)</td><td>0.57</td><td class="ht"><b>1.00</b></td><td>Intriguingly, Ghana's xG was actually higher; Croatia won on a "moment of magic" (long-range + header) beyond chance quality — efficiency above process</td></tr>
+      <tr><td class="ht">Shots (Sofascore)</td><td><b>8</b></td><td>6</td><td>Neither side's shot count was high, in line with the pre-match "low-scoring, defensive" read</td></tr>
+      <tr><td class="ht">Shots on target (Sofascore)</td><td><b>4</b></td><td>1</td><td>Croatia scored 2 from 4 on target — high finishing efficiency; Ghana scored 1 from their only shot on target (set piece)</td></tr>
+      <tr><td class="ht">Possession (Sofascore)</td><td><b>53.3%</b></td><td>46.7%</td><td>Croatia edged possession but not by much; Ghana were not parking the bus outright and still kept the ball and countered</td></tr>
+      <tr><td class="ht">Box touches</td><td colspan="2"><span style="color:var(--warn)">Box-touch split not multi-source confirmed · TBC</span></td><td>By xG and shots, Ghana's chance quality was not inferior to Croatia's</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.sofascore.com/news/croatia-1-0-ghana-at-ht-world-cup-stats-tell-the-story">Sofascore — Croatia vs Ghana stats (possession 53.3/46.7, xG 0.57/1.00, 8-6 shots, 4-1 on target)</a> · <a href="https://www.skysports.com/football/news/12098/13556699/world-cup-2026-croatia-x-x-ghana">Sky Sports — Match report (Vlašić winner / Modrić assist)</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760480">ESPN — Game analysis</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021509">FIFA Match Centre — Result</a>. <span style="color:var(--warn)">[Box-touch split not multi-source confirmed · TBC]</span></div>
+
+    <h4 style="margin-top:16px">③ Tactical Review</h4>
+    <div class="insight"><div class="who">"Croatia must win → forced to push up → space for Ghana's counter" — the motivation-gap script played out, but Croatia broke through on individual quality</div>The preview flagged "Croatia forced to chase the win, leaving space for Ghana's counter". In the event Ghana did sit deep and even levelled from a set piece; but Croatia <b>broke through via Sučić's long-range shot + Vlašić's header (neither from open-play penetration)</b>. <b>Transferable conclusion: against a low block, Croatia's stable scoring outlets are long shots and set pieces (Modrić's dead-ball quality), not positional combinations — whether this "moment-of-magic output" repeats against stronger knockout sides is the key variable.</b></div>
+    <div class="insight"><div class="who">Ghana's "clean-sheet fortress" was breached — set pieces both saved and sank them</div>Ghana kept clean sheets in their first two games (0-0, 0-0); here they were <b>breached by two non-open-play goals (a long shot + a corner header)</b>, while levelling via a set piece themselves. <b>Transferable conclusion: Ghana's low block still works against open play (conceding just 0.57 xG), but defending set pieces and long shots is the weak spot; for the R32 vs Colombia they must shore up dead-ball defending, or they'll repeat being caught by a single decisive moment.</b></div>
+    <div class="insight"><div class="who">Modrić at 40 remains the ceiling for dead-ball and leadership value</div>The preview noted "Modrić looked his age vs Panama, but his experience and organisation are irreplaceable". Here he <b>set up Vlašić's winner from a corner, becoming the oldest World Cup assist provider on record</b>. <b>Transferable conclusion: Modrić's open-play coverage and tempo will dip, but his set-piece quality and big-game reading remain a decisive Croatia weapon in the knockouts — building around his dead balls is an efficient route.</b></div>
+    <div class="insight"><div class="who">The xG inversion (Ghana 1.00 &gt; Croatia 0.57) is a warning: Croatia won on efficiency, not process</div>Ghana's chance quality was actually higher; Croatia won <b>with fewer, higher-quality finishes (4 on target, 2 goals)</b>. <b>Transferable conclusion: Croatia's progress carries a genuine slice of luck, with the process data not in their favour; if they keep relying on "mediocre process + star magic" in the knockouts, the risk against more efficient strong sides (e.g. Portugal) is elevated.</b></div>
+
+    <h4 style="margin-top:16px">④ Prediction Reconciliation</h4>
+    <table>
+      <tr><th>Pre-match line</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Croatia forced to chase, the favourites (Opta 56.3%)</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>Croatia won as expected and qualified as runners-up; the favourite delivered</td></tr>
+      <tr><td class="ht">Croatia must win to secure progress / Ghana through with a draw</td><td style="color:var(--warn)"><b>~ Direction right, Ghana through despite a loss</b></td><td>Croatia qualified by winning (hit); Ghana, though they lost rather than drew, still advanced as a best third-placed team — even more lenient than "a draw is enough"</td></tr>
+      <tr><td class="ht">Ghana counter for an upset or to grind out a draw (base case)</td><td style="color:var(--warn)"><b>~ Briefly delivered, then undone by the winner</b></td><td>Ghana's 73' set-piece equaliser briefly made the script hold, but Vlašić's 83' winner meant the upset/draw did not last</td></tr>
+      <tr><td class="ht">Under (O/U 2.5 leaning Under, Ghana two clean sheets)</td><td style="color:var(--bad)"><b>✗ Missed (3 goals · Over)</b></td><td>3 goals total, Under 2.5 did not land — Ghana's clean-sheet record was broken and the Under atmosphere with it</td></tr>
+      <tr><td class="ht">Modrić's leadership/dead-ball value (watch ③)</td><td style="color:var(--good)"><b>✓ Precisely hit</b></td><td>Modrić's corner assist for the winner, plus the oldest-assist record, was exactly the dead-ball value paying off</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Looking Ahead</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇭🇷 Croatia · through as Group L runners-up (R32)</h4>
+        <ul class="watch">
+          <li><b>R32 opponent confirmed: Portugal</b> (Thursday 2 July · Toronto). As Group L runners-up they run into a strong side — a tough draw, and the real test of Croatia's credentials.</li>
+          <li><b>Carrying the dead-ball/long-range scoring model</b>: positional space will be even harder to find against Portugal, so Modrić's set pieces + Sučić/Vlašić's long shots and runs are among the few stable scoring routes.</li>
+          <li><b>Weak process data is a warning</b>: the xG inversion here (0.57 vs 1.00) shows limited open-play creativity; relying on efficiency again vs Portugal squeezes the room for luck.</li>
+          <li><b>Modrić's fitness management</b>: the 40-year-old's dead-ball value is irreplaceable but his open-play coverage is dipping, so his minutes under knockout intensity are one to watch.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇬🇭 Ghana · through as a best third-placed team (R32)</h4>
+        <ul class="watch">
+          <li><b>R32 opponent confirmed: Colombia</b> (Friday 3 July · Kansas City). Ghana advance as one of the best third-placed teams on 4 points, avoiding Portugal; Colombia topped Group K (7 points), strong but not an elite heavyweight.</li>
+          <li><b>The low-block counter system still works (carry-over)</b>: Queiroz's 4-5-1 is effective against open play (conceding just 0.57 xG here); vs Colombia they can keep countering, using Williams's pace + Semenyo down the flanks.</li>
+          <li><b>Set-piece and long-range defending are the weak spots</b>: both goals here were conceded from dead balls/long shots, so they must shore this up against Colombia (strong on crosses + set pieces).</li>
+          <li><b>Kudus's tournament-long absence continues</b>: their biggest creative source is out (multi-source confirmed), so the attack still leans on Williams/Semenyo/Jordan Ayew, with limited ability to break down a low block.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quick Summary ===== -->
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the <b>do-or-die qualification game</b> of the Group L final round, with severely asymmetric motivation — <b>Croatia on 3 points sit third and must win to lock up progress; Ghana on 4 points sit second and go through with a draw</b>. The arithmetic is clear: England already have 4 points and top spot in hand (level on 4 with Ghana, but England's GD +4 leads Ghana's 0 by a wide margin), Panama on 0 points are out. <b>If Ghana draw, they are all but certain to qualify regardless of the other result</b> (even if they lose, it still depends on goal details, but going from GD 0 to a negative figure would most likely still beat Croatia's catch-up on three points — the final arithmetic here is TBC, but the mainstream analysis is unanimous: a draw is enough to go through). For Croatia to qualify, the safest route is to win; a draw could leave them level on 4 points with GD 0 but behind Ghana on goal difference (Ghana's two 0-0s give them GD 0; Croatia are currently GD -1 and would need extra goals to close the goal-difference gap), a complex situation dependent on the England-vs-Panama result. So <b>Croatia are forced to chase the win</b>, which creates genuine open space for attacking and at the same time gives Ghana's counter-attacking tactics ideal conditions. This is not a flat dead-rubber survival game but a high-intensity contest created by mismatched motivation. The Opta supercomputer gives Croatia a 56.3% win probability. Odds: Croatia win around <b>2.00–2.10</b> (-115 to -134) / Draw <b>3.30–3.50</b> (+245) / Ghana win <b>3.50–4.50</b> (+280 to +450); the Asian handicap leans Croatia -0.75 (around -104) / Ghana +0.5 (around +110); the total line O/U 2.5 <b>leans Under (Under around -155)</b> — Ghana's two clean sheets + tight defensive system run counter to the Over. Three things to watch: ① <b>can Ghana keep another clean sheet sitting deep</b> (against a Croatia weaker than England); ② <b>can Croatia break down Queiroz's defensive fortress</b> (their average possession and dribbling have both been limited across two games); ③ <b>Modrić's leadership at 40 in his last World Cup</b> (he looked his age against Panama, but his experience and organisation are irreplaceable). Base-case script: <b>a low-scoring open, Croatia chasing the win, Ghana playing on the counter for an upset or to grind out a draw</b>, market heat index ≈ 2/5 (consensus leans Croatia but the price reflects genuine suspense, with an obvious Under atmosphere).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Croatia implied win prob. (de-vigged)</div><div class="v" style="color:#e8788a">≈44%</div></div>
+      <div class="key"><div class="k">Ghana implied win prob. (de-vigged)</div><div class="v" style="color:#5aa8d8">≈24%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈28%</div></div>
+      <div class="key"><div class="k">Market heat index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic (multiple sources confirm)</b>: Croatia 3 points (GD -1) · Ghana 4 points (GD 0) · England 4 points (GD +4, top spot all but locked) · Panama 0 points, out. <b>Ghana go through with a draw</b> — no need to consider the other result (GD 0 beats Croatia's current -1, and if the two sides finish level on points the head-to-head winner ranks higher, while if it is a draw Ghana still hold the goal-difference edge); <b>Croatia must win</b> to lock up progress, with a draw leaving them dependent on goal-difference and goals-scored calculations — an extremely complex situation.</li>
+      <li><b>Ghana's defensive fortress: two clean sheets</b> (0-0 England + 0-0 Panama). They held England to 19 shots, 1 on target, sitting deep in a low 4-5-1, with Queiroz saying they "shut the opponent down from minute one". This is the biggest statistical surprise of Group L this tournament.</li>
+      <li><b>Croatia: carved open by England (4-2), saved against Panama by a Budimir substitute strike (1-0)</b>. Their combined xG across two games is 2.35 (vs England 0.71, vs Panama 1.66), attacking efficiency mediocre; Modrić/Kovačić showing visible signs of fatigue at their age.</li>
+      <li><b>Kudus out for the whole tournament through injury</b> (Ghana's biggest source of creativity, the absence confirmed by multiple sources) — this is Ghana's biggest attacking downgrade, with the attack now relying mainly on Iñaki Williams's pace bursts + Semenyo down the flank + Jordan Ayew dropping deep to organise.</li>
+      <li><b>The motivation gap is the biggest tactical entry point</b>: Croatia must push up → leaving space for Ghana's counters; Ghana go through with a draw → they can defend with everything and take no risks, needing only one quick break to score. This motivation gap is in effect a perfect script built for Ghana.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Key Team News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Team News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, with item-by-item explanation of how each changes the tactics or result (key players cross-verified across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Major absence · Mohammed Kudus out for the whole tournament <span style="color:var(--mut);font-weight:400">· ESPN / Graphic Online / ESPN Provisional Squad agree · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources confirm: <b>Mohammed Kudus is out of the entire World Cup through injury (thigh/muscle, troubled all season at West Ham)</b>, and was not named in the final 26-man squad</div>
+      <p style="font-size:13.5px">Per <b>ESPN's provisional-squad reporting, Graphic Online (a Ghanaian outlet)</b> and other agreeing sources: Ghana's talisman and West Ham forward <b>Mohammed Kudus</b> is out with a thigh muscle injury, having already missed the end of the club season; he was absent when the provisional squad was announced and was not included in the final 26-man World Cup squad. Centre-back <b>Mohammed Salisu</b> is likewise out for the whole tournament through injury. Iñaki Williams's fitness has been tested across both games this tournament (he played in both), with Jordan Ayew leading the side out. <span style="color:var(--warn)">[The specific fitness of the other players · subject to the official FIFA Match Centre team sheet before kickoff · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Kudus is Ghana's strongest <b>two-way creator and finisher</b> — his goals and assists at West Ham rank among the very best in Ghana's squad. Without him, Ghana's attacking model has been forced into a full transition to "defence first + Iñaki Williams's pace on the counter + Semenyo down the flank", which directly explains why Queiroz has chosen a deep-sitting 4-5-1 and kept clean sheets against both England and Panama. Croatia's defence may not be as tight as England's, but Ghana's attacking creativity is already heavily curtailed.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/espn/story/_/id/48878999/antoine-semenyo-thomas-partey-headline-ghana-provisional-fifa-world-cup-squad-injured-mohammed-kudus-out" style="color:var(--accent)">ESPN — Kudus injured, provisional squad</a> · <a href="https://www.graphic.com.gh/sports/sports-news/kudus-and-salisu-miss-world-cup-through-injury-as-ghana-names-provisional-squad.html" style="color:var(--accent)">Graphic Online — Kudus & Salisu out</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ Croatia key-player fitness check <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / RotoWire · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Modrić (40) playing in a mask after cheekbone-fracture surgery; Kovačić back from an Achilles issue; Gvardiol back after shin-fracture surgery; <b>the projected starters have all played both rounds</b></div>
+      <p style="font-size:13.5px">Croatia's key players' pre-match status: <b>Luka Modrić (40)</b> suffered a cheekbone fracture at the end of his AC Milan season and returned in a protective mask after surgery, having played both England and Panama, reaching his <b>200th cap</b> milestone against Panama. <b>Mateo Kovačić</b> was troubled by an Achilles problem for much of the season but is back and started both games. <b>Joško Gvardiol</b> (Manchester City, 24) returned after shin-fracture surgery and started in his regular role against both England and Panama. <b>Ante Budimir</b> (34) came off the bench to score against Panama and is Croatia's only scorer this tournament. ESPN's projected XI is a <b>3-4-2-1</b> — Livakovic; Sutalo, Vušković, Gvardiol; Stanišić, Pašalić, Modrić, Perišić; Baturina, Sučić; Musa (RotoWire's version: Kramarić replacing Sučić). <span style="color:var(--warn)">[The official starting XI · subject to the FIFA Match Centre before kickoff · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Modrić/Kovačić are the core of Croatia's organisation and tempo, both ageing but still mainstays; they already looked tired against Panama (ESPN noting "Panama's attack also ran them ragged"), and if Ghana can press in midfield and transition quickly, Croatia's midfield age disadvantage will be magnified. Whether Gvardiol can stay steady at the back is key to Croatia's clean sheet — the 4-2 against England showed their defence is at risk of being carved open by quick wide play, and Iñaki Williams's pace is precisely the remedy for that.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups" style="color:var(--accent)">ESPN — predicted XI / team news</a> · <a href="https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773" style="color:var(--accent)">RotoWire — predicted XI / tactical analysis</a> · <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/team-news/croatia-vs-ghana-injury-suspension-list-predicted-xis--world-cup-2026_600079.html" style="color:var(--accent)">Sports Mole — injury/suspension list</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Last-game carry-over · Croatia 1-0 win over Panama (MD2, 2026-06-24) <span style="color:var(--mut);font-weight:400">· Opta Analyst / Al Jazeera / ESPN agree</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Budimir off the bench scored on 54'; Croatia xG 1.66 (6 shots), defence fairly solid; but Panama are far weaker than Ghana</div>
+      <p style="font-size:13.5px">MD2 Croatia 1-0 win over Panama: Croatia posted an xG of <b>1.66</b> (6 shots), Panama xG 0.62 (8 shots). <b>Ante Budimir (34 years 337 days) scored as a substitute nine minutes after coming on</b>, becoming the oldest scorer in Croatia's World Cup history. Stanišić got to the byline on the right and crossed, with Budimir finishing at the near post — not a high-quality goal but it did the job. The first half was mostly tentative, with Modrić/Kovačić keeping the ball steadily in midfield but lacking penetration; Modrić reached his 200-cap milestone against Panama. ESPN noted Croatia "cobbled together a starting XI and held on once they had a goal". Key carry-over: <b>Croatia's attacking efficiency remains mediocre when not under heavy pressure, and the over-age Budimir substitute-rescue mode is a happy accident rather than a norm</b>; facing Ghana's defensive system head-on, this challenge is greater.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Panama are already the weakest opponent in Group L, and Croatia still needed only a substitute's finish. Against a Ghana side with two clean sheets and a markedly higher defensive quality, whether Croatia's attacking creativity can step up is the central question. The Modrić 200-cap milestone brings positive sentiment, but his advanced-age fatigue is showing in step.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — Panama vs Croatia stats</a> · <a href="https://www.aljazeera.com/sports/2026/6/24/budimir-gives-croatia-a-1-0-win-to-eliminate-panama-from-the-world-cup" style="color:var(--accent)">Al Jazeera — match review</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Last-game carry-over · Ghana 0-0 draw with England (MD2, 2026-06-23) <span style="color:var(--mut);font-weight:400">· Sky Sports / Al Jazeera / NBC agree</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">19 shots, 1 on target! England scoreless all game; Queiroz's 4-5-1 left England stumped; Tuchel called it "one of the most organised defences"</div>
+      <p style="font-size:13.5px">MD2 Ghana 0-0 draw with England: England had <b>19 shots, 1 on target</b>, with Kane closest late but still unable to convert. Ghana <b>clearly sat deep in a 4-5-1</b>, the midfield five locking down England's central penetration; Queiroz said afterwards they "shut it down to plan from minute one"; Tuchel called it "one of the most disciplined defences I've seen". Ghana <b>had already drawn 0-0 with Panama on MD1</b> — two clean sheets, an outlier in Group L this tournament. Key carry-over: <b>Ghana's defensive system is extremely systematic, not luck — a tight unity of plan and execution</b>; if they can lock down England, the defensive pressure against Croatia (whose attacking creativity is weaker than England's) will be even lower, and Ghana will replicate this template here.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Ghana's "through with a draw" mindset + Queiroz's mature defensive system is the most reasonable current market read: the total leaning Under (Under -155) precisely reflects analysts pricing in the probability of Ghana repeating the clean sheet. Croatia only realised their own defensive shortcomings after the England game; if Ghana hold them to 0-0 here, Croatia go out. This situation places all the attacking pressure on Croatia.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.skysports.com/football/england-vs-ghana/report/549812" style="color:var(--accent)">Sky Sports — England vs Ghana report</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/23/england-vs-ghana-live-world-cup-2026" style="color:var(--accent)">Al Jazeera — live blog / review</a> · <a href="https://www.nbcnews.com/sports/soccer/england-ghana-draw-world-cup-results-rcna351484" style="color:var(--accent)">NBC News — match report</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Betting Market Heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert aggregation / Odds movement / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a "leans Croatia but with a clear Under atmosphere, Ghana's counter-attacking value recognised" fixture — the line pricing reflects the genuine qualification scenario and the quality of Ghana's defensive system</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · Leans Croatia but strong Under consensus, Ghana's defence respected by the market</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Expert direction leans Croatia (Opta supercomputer 56.3%, market around 44%), but the price has not been driven by a frenzy — Ghana still hold genuine odds of +280 to +450. The biggest consensus is <b>Under 2.5 (-155)</b>, the market judging that Ghana's defensive system is hard to break even if Croatia push up, with a notably high probability of an Under.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction leans Croatia, disagreement over whether they can score and the scoreline margin)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst (supercomputer)</td><td>Model camp</td><td>Croatia 56.3% / Draw 26.2% / Ghana 17.6% — Croatia favourites, but the draw probability is far from low</td></tr>
+      <tr><td>ESPN analysis</td><td>North American media</td><td>Croatia's attack "mediocre", Queiroz's defensive system impressive; Croatia must sharply raise their attacking quality here</td></tr>
+      <tr><td>Racing Post</td><td>UK analysis</td><td>Lean Croatia narrow win; back Modrić's experience to be key; offer a 5-1 Bet Builder combo</td></tr>
+      <tr><td>FanDuel Research</td><td>North American sportsbook</td><td>Croatia -115 favourites; the Under 2.5 direction popular; Ghana's defensive value recognised</td></tr>
+      <tr><td>Covers / Sports Interaction</td><td>Odds analysis</td><td>Croatia win but mind the Under, Ghana's defence is the core variable</td></tr>
+      <tr><td>Total Football Analysis</td><td>Tactics media</td><td>Croatia have a chance if they control midfield, but must guard against Ghana's counters</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (low)</b>: the direction leans Croatia but <b>not to an extreme</b> — Ghana still hold genuine odds of +280 to +450, and Under 2.5 is a rare strong-consensus direction (-155). This is not a one-sided fixture driven by frenzy — the draw / Under / Ghana upset all have genuine pricing support, and the biggest disagreement is <b>whether Croatia can break down Queiroz's defensive wall</b>.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time point</th><th>Market</th><th>Croatia win / Draw / Ghana win</th><th>Reading</th></tr>
+      <tr><td>Opening (pre-match, composite of books)</td><td>1X2</td><td class="ht">Croatia ≈2.00–2.10 / Draw ≈3.30–3.50 / Ghana ≈3.50–4.50</td><td>Croatia favourites but not heavy ones; Ghana recognised in the +280 to +450 range <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>After MD2 repricing</td><td>FanDuel / bet365 / composite</td><td class="ht">Croatia -115 (FD) to -134 (bet365) / Draw +245 / Ghana +280 (FD) to +450 (bet365)</td><td>After Ghana's 0-0 with England their defensive reputation rose, the market gave Ghana more respect, and the draw odds tightened</td></tr>
+      <tr><td>06-27 pre-match</td><td>Totals + handicap</td><td colspan="2" class="ht">Croatia -0.75 (around -104) / Ghana +0.5 (around +110); O/U 2.5 Under -155 (strongly leaning Under)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line Positioning & Movement (opening → current)</h4>
+    <table>
+      <tr><th>Time point</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening (pre-match expectation)</td><td class="sc">Croatia cast as qualification favourites (2018 runners-up + a top European pedigree), Ghana as African dark horses</td><td>Initial pricing based on both sides' pedigree and FIFA ranking, with Croatia seen as the more big-tournament-experienced side <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>After MD1 (Croatia 4-2 loss to England · Ghana 0-0 Panama)</td><td class="ht">Croatia repriced lower; Ghana's defensive value rose</td><td><b>Croatia's defence carved open by England on MD1 (4 conceded, xG 0.71 yet shipped 4), a serious blow to confidence</b>; Ghana's clean sheet against Panama gave their defensive system its first endorsement, with the line turning conservative (draw / Under value rose)</td></tr>
+      <tr><td>After MD2 (Croatia 1-0 Panama · Ghana 0-0 England)</td><td class="ht">Croatia's qualification suspense revived; Ghana's 19-shot shutout of England triggered a market re-rating</td><td><b>Key repricing</b>: Ghana being able to lock England down to 0-0 sharply raised market trust in their defensive system; the +280 to +450 spread reflects books' differing assessments of Ghana's defensive value; <b>the -155 on Under 2.5 is this game's strongest consensus</b>, the pricing implying the market believes the probability of Ghana repeating a low-scoring game clearly exceeds the Over route</td></tr>
+      <tr><td>Current (pre-match)</td><td class="ht">Croatia -0.75 (around -104); Under 2.5 -155; Ghana +0.5 +110</td><td>The handicap depth being only -0.75 (not -1) shows the market does not give a high probability of a Croatia rout; <b>the draw still holds a price of +245</b> — both the qualification motivation and the defensive intensity support a low-scoring open; the value of Ghana's +0.5 Asian line (+110) precisely reflects the genuine qualification motivation of "a draw or a one-goal loss is enough to go through"</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a "Croatia favourites, Ghana recognised, Under the strongest consensus" line. Ghana's 0-0 with England (19 shots shut out) is the biggest information source for this game's pricing — Under -155 is the market's direct pricing of it. The handicap being only -0.75 rather than -1 shows the market sees a one-goal win as the most likely outcome, with a limited probability of a big Croatia win. If Croatia strike first and score early, the picture changes dramatically; if Ghana hold them to 0-0 into the final 30 minutes, tension will rise sharply. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets</b>: direction consistent with the Opta supercomputer (Croatia 56.3% win). The draw probability of 26.2% is on the high side, with Ghana's qualification motivation making the market value the draw route highly. Exact prediction-market shares not found <span style="color:var(--warn)">[TBC]</span>.</li>
+      <li><b>Sentiment focus ①</b>: <b>Modrić's last World Cup at 40</b> — reaching his 200-cap milestone against Panama drew strong emotional resonance in the media, but his competitive form is showing signs of age, and the tension between Croatia's need for him and his rate of decline is a narrative running through the whole game.</li>
+      <li><b>Sentiment focus ②</b>: <b>can Ghana pull off a miracle to qualify</b> (their best showing since the 2010 World Cup quarter-final) — the merits of Queiroz's defensive tactics remain debated, but the results speak: two clean sheets and on the brink of qualifying.</li>
+      <li><b>Sentiment focus ③</b>: <b>Croatia's contradiction between content and results</b> — two games of "tightrope-walking by a single goal", with the media broadly questioning their competitiveness this tournament; this game is the test of whether they have genuinely declined.</li>
+      <li><b>Public money flow</b>: qualitatively leans Croatia (big-tournament pedigree + a top-European mentality), but Ghana's Under route attracts hedging attention; exact quantification not found <span style="color:var(--warn)">[TBC]</span>.</li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: heat index <b>2/5</b>. The line's strongest signal is Under 2.5 (-155) + Ghana +0.5 being recognised by the market — a composite pricing of Ghana's defensive system + the "through with a draw" motivation. Croatia lean favourite but their attacking content is not yet convincing; the side that scores first will heavily dictate how the script unfolds. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.fanduel.com/research/croatia-vs-ghana-prediction-picks-lineups-preview-and-best-bets-for-world-cup-2026">FanDuel Research — odds / preview</a> · <a href="https://www.covers.com/world-cup/croatia-vs-ghana-prediction-picks-odds-saturday-6-27-2026">Covers — odds analysis</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/croatia-vs-ghana-betting-tips-predictions-team-news-odds-bet-builder-aw7vT9A0yCpJ/">Racing Post — Bet Builder</a> · <a href="https://theanalyst.com/articles/croatia-vs-ghana-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputer preview</a></div>
+  </section>
+
+  <!-- ===== Deep Data ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this tournament's actuals · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical benchmark (last two major tournaments / first two rounds of this Group L)</b> with <b>this tournament's actuals</b>, item by item. Public international-team xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this tournament's actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical benchmark (source sample)</th><th>This tournament's actual (first two rounds)</th><th>Difference and reading</th></tr>
+      <tr><td class="ht">🇭🇷 Croatia · Attack</td><td class="ht">2018 runners-up, 2022 third place; built on midfield (Modrić/Kovačić), steady possession, little individual reliance, reaching the 2022 semis via Perišić + Livakovic shootout heroics; recent attacking efficiency not top-tier, relying on the collective system</td><td class="ht">Combined xG across two games ≈2.35 (vs England 0.71 / vs Panama 1.66); 3 goals (2 each in the 4-2 loss to England, 1 in the 1-0 win over Panama); Budimir off the bench to open the account</td><td><b>Attack below historical expectation</b>: the 0.71 xG vs England is heavily inflated (a stronger opponent), the 1.66 vs Panama produced just 1 goal, efficiency mediocre; an ageing squad (Modrić/Perišić/Kovačić all 30+) with limited creativity <span style="color:var(--warn)">(per-game xGA breakdown · TBC)</span></td></tr>
+      <tr><td class="ht">🇭🇷 Croatia · Defence</td><td class="ht">2018/2022 defence decent (the Lovren/Vida → Gvardiol/Sutalo system), defence key to reaching the last 16+ in 2022</td><td class="ht">4 conceded across two games (4 vs England, 0 vs Panama); GD -1; England carved them open with pace down the flanks</td><td><b>Unstable defence</b>: carved open by quick wide play vs England (4 goals), Gvardiol's post-surgery form worth watching; clean sheet vs Panama but a weak opponent; Ghana's Iñaki Williams's pace is the matching vulnerability</td></tr>
+      <tr><td class="sc">🇬🇭 Ghana · Attack</td><td class="sc">2010 semi-finalists (led by Gyan); 2022 1-3 loss to Portugal, 0-3 loss to Uruguay (group exit); attack historically reliant on individual talents (Kudus/A.Ayew/J.Ayew) rather than a system</td><td class="sc">0 goals across two games (0-0 x 2); Kudus out for the whole tournament; almost no creativity in attack, Iñaki Williams's pace the only spark</td><td><b>Severely curtailed attack</b>: Kudus's absence robs the attack of its core; Queiroz's tactics put defence first, with attack almost a by-product. But the counter-attacking threat is genuine <span style="color:var(--warn)">(Ghana per-game xG · TBC)</span></td></tr>
+      <tr><td class="sc">🇬🇭 Ghana · Defence</td><td class="sc">2022 defence leaky (7 conceded in 3 games), only 2 World Cup clean sheets in their history (across the previous 15 games); 2010 more systematic</td><td class="sc">Two clean sheets this tournament (0-0 England + 0-0 Panama); England 19 shots, only 1 on target, defensive resilience above the historical average</td><td><b>Markedly above historical expectation</b>: Queiroz's deep-sitting 4-5-1 has lifted the defensive quality sharply this tournament; two clean sheets are a surprise in Group L, defined as a systematic improvement rather than luck. This is the biggest data highlight of the game</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical reading</b>: Croatia's attack is below historical expectation (veteran fatigue + low xG), their defence was carved open by England but may improve against a weaker opponent; Ghana's defence is markedly above historical (2022: 7 conceded → two clean sheets this tournament), their attack severely curtailed (Kudus's absence). The deep data supports the "Under / low-scoring open" main thread — the Under -155 line is reasonable pricing. Sources: Opta Analyst (Croatia combined xG 2.35 / Panama xG 0.62) · ESPN (England 19 shots, Ghana 1 on target) · multiple match reports. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection & Opta calibration + trap reminders</h4>
+    <table>
+      <tr><td>Model-projected xG for this match (magnitude)</td><td class="ht">Croatia ≈1.2–1.6</td><td class="sc">Ghana ≈0.4–0.7</td><td>Croatia attack-minded but efficiency in doubt; if Ghana replicate the England game, the probability of Croatia generating high-quality chances is low <span style="color:var(--warn)">(projected xG · TBC, derived from the benchmarks above)</span></td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="ht">Croatia 56.3% win / Draw 26.2% / Ghana 17.6% (Opta supercomputer, publicly available pre-match)</td><td>Croatia hold an overall quality edge but a limited one; Ghana's against-the-grain defensive surge is a "hidden variable" the supercomputer may not fully price in</td></tr>
+      <tr><td>PPDA / xT / field tilt</td><td colspan="2" class="ht">Public international-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Croatia forced to attack, field tilt high but not necessarily high-quality; Ghana sitting deep, PPDA not low (allowing Croatia to pass) but with strong defensive resilience</td><td><b>Trap reminders</b>: ① Croatia's "possession + tiki-taka" system has historically been jammed by deep, packed defences (they ran into defensive opponents in both 2018 and 2022); ② the -155 on Under 2.5 shows the market believes in a low-scoring probability, with a high difficulty for Croatia to score; ③ Ghana's +0.5 Asian line implies the market sees value in a draw / one-goal loss; ④ if Croatia get anxious and over-commit, the risk of the space behind being exploited by Iñaki Williams's pace rises</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what each of these "xG-family" metrics means)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity. Croatia's tournament total 2.35 (on the low side), Ghana <span style="color:var(--warn)">TBC</span>.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you; measures real defensive level. The attacking xG Ghana have conceded this tournament is <span style="color:var(--warn)">TBC</span>, but England's 19 shots for 1 on target is the most intuitive proxy.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength. Croatia's differential against England was catastrophic; Ghana's two games look strong-defence, weak-attack.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Big Chance</b>: high-probability scoring chances — Croatia's xG 1.66 from just 6 shots vs Panama is average chance quality; Ghana created almost no big chances but a defensive breakdown into a counter can still trigger one.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press. Ghana sit deep, so their PPDA is high (allowing Croatia to pass), but the resilience of their organised defensive line is their real strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession. Croatia's tilt will be high when forced to attack, but that does not mean an effective threat — quality, not quantity, is key.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; international teams have limited public samples for breakdown metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- ===== Referee ===== -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed by multiple sources</b>: the referee for this match is Canadian <b>Drew Thomas Fischer</b>, agreed across sources (ESPN's official preview + karlobag.eu, a Croatian outlet's dedicated report). This is Fischer's second officiating assignment of the tournament (he previously refereed France vs Iraq, reportedly showing 12 yellow cards). <span style="color:var(--warn)">[Full officiating team (assistants Lyes Arfa / Micheal Barwegen) + VAR combination · mentioned across sources, full details TBC]</span></div>
+
+    <h4>Officiating standard + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>Background profile</b>: Drew Fischer is Canadian, with over 14 years officiating in MLS, FIFA international accreditation since 2015, and this World Cup is his first major-tournament outing as a referee (he previously served as a VAR at the 2022 World Cup). Per statshub, his career average is around <b>3.34 yellow cards per game</b>.</li>
+      <li><b>This tournament's actual sample</b>: Fischer refereed France vs Iraq, reportedly showing 12 yellow cards (including an Iraq red on 13'') — a fairly strict game, but strongly correlated with Iraq's dismissal rather than representative of Fischer's own fixed standard. A single major-tournament sample is too small to draw stable, actionable inferences. <span style="color:var(--warn)">[Fischer's detailed card/penalty breakdown this tournament · TBC, major-tournament sample limited, no fabricated figures]</span></li>
+      <li><b>Officiating history with the two teams</b>: no notable prior officiating record found between Fischer and Croatia or Ghana (<b>no reliable sample, stated honestly</b>).</li>
+      <li><b>Officiating focus for this game</b>: the physical duels when Ghana sit deep (Croatia's advance through the middle and front inevitably creating contact); the tugging and landing of Croatia's forwards Budimir/Musa in the box; the duels on Croatia's back line in Iñaki Williams's high-speed counters. The significance of this tournament's unified new rules (only captains may speak, the 8-second keeper rule, semi-automated offside) for Croatia: semi-automated offside will precisely catch the marginal offside sprints of Budimir/Musa.</li>
+      <li><b>Two-sidedness</b>: Croatia must attack frequently → more box duels and landings, raising the penalty probability; the tugging when Ghana sit deep → yellow-card risk concentrated in midfield. Card/penalty lines are best treated as tendencies, not actionable bases.</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing-angle analysis</b>: Fischer's major-tournament sample is very small (just 1 official record), so the analysis is mainly qualitative. With Croatia needing to attack and Ghana needing to compete physically here, contact will increase, making a higher card count possible. But the referee's impact on the result is limited — if Croatia score, the VAR offside-line review is the key thing to watch.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://karlobag.eu/en/sports/drew-fischer-to-referee-croatia-vs-ghana-in-philadelphia-as-group-l-world-cup-cl-9kjkb/" style="color:var(--accent)">Karlobag.eu — Fischer appointment</a> · <a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups" style="color:var(--accent)">ESPN — referee confirmed</a> · <a href="https://www.statshub.com/referee/drew-fischer/316122" style="color:var(--accent)">Statshub — Fischer career stats</a></div>
+  </section>
+
+  <!-- ===== Data Panel ===== -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Win/draw/loss implied probability (vig-removed) · Group L picture · Totals market · Composite strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group L standings (before the final round)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Composite strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇭🇷 Croatia</th><th>🇬🇭 Ghana</th></tr>
+      <tr><td>First two rounds</td><td class="ht">4-2 loss to England + 1-0 win over Panama (3 pts, GD -1, 3 scored 4 conceded)</td><td class="sc">0-0 draw with Panama + 0-0 draw with England (4 pts, GD 0, 0 scored 0 conceded)</td></tr>
+      <tr><td>Group L points (before final round)</td><td colspan="2">England 4 (GD +4) lead; Ghana 4 (GD 0) second; Croatia 3 (GD -1) third; Panama 0, already out</td></tr>
+      <tr><td>Qualification scenarios</td><td class="ht"><b>Must win</b> to lock up progress; a draw needs complex goal-difference calculations, high risk</td><td class="sc"><b>Through with a draw</b> (GD 0 beats Croatia; even a one-goal loss still leaves a chance, depending on goal details)</td></tr>
+      <tr><td>Head coach</td><td class="ht">Zlatko Dalić (architect of 2018 runners-up, 2022 third place)</td><td class="sc">Carlos Queiroz (vastly FIFA-experienced, a defensive master, former Iran/Portugal/Egypt coach)</td></tr>
+      <tr><td>Key players</td><td class="ht">Modrić (40/captain), Kovačić, Gvardiol, Perišić, Budimir/Musa</td><td class="sc">Jordan Ayew (captain), Iñaki Williams, Antoine Semenyo, Thomas Partey; <b>Kudus out for the whole tournament</b></td></tr>
+      <tr><td>Key injuries</td><td class="ht">No official absences reported (Modrić in a mask, Gvardiol post-surgery, both back and have played both rounds)</td><td class="sc"><b>Kudus out for the whole tournament through injury (confirmed)</b>; Salisu out for the whole tournament; the rest have played both games</td></tr>
+      <tr><td>This tournament's xG (two-game total)</td><td class="ht">≈2.35 (vs England 0.71 + vs Panama 1.66)</td><td class="sc"><span style="color:var(--warn)">TBC (Ghana's attacking xG extremely low, 0 goals in two games)</span></td></tr>
+      <tr><td>1X2 odds (DECIMAL approx.)</td><td class="ht">Croatia win ≈2.00–2.10 (-115 to -134)</td><td class="sc">Ghana win ≈3.50–4.50 (+280 to +450) · Draw ≈3.30–3.50 (+245)</td></tr>
+      <tr><td>Handicap / totals</td><td colspan="2" class="ht">Croatia -0.75 (around -104) / Ghana +0.5 (around +110); O/U 2.5 <b>Under -155</b> (strongly leaning Under)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied figures after de-vigging the DECIMAL odds (composite of FanDuel/bet365, Croatia ≈44% / Draw ≈28% / Ghana ≈24%, estimated after de-vigging each book's composite), aligned in direction toward Croatia with the Opta supercomputer (Croatia 56.3% / Draw 26.2% / Ghana 17.6%). The strongest market consensus is <b>Under 2.5 (-155)</b>, the pricing implying market recognition of Ghana's defensive system + a low-scoring environment. The handicap being only -0.75 (not -1) reflects the low probability of a Croatia rout, with a one-goal win the most likely Croatia route. Odds sources: FanDuel (Croatia -115 / Draw +245 / Ghana +280), bet365 (Croatia -134 / Draw +230 / Ghana +450), Asian Handicap (Croatia -0.75 around -104 / Ghana +0.5 around +110). Subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- ===== Lineups ===== -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d2a4a;color:#7fb3ec;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · Unofficial · Subject to the FIFA Match Centre before kickoff</span></h2>
+    <div class="sub">Predicted XIs (ESPN / RotoWire / Sports Mole composite, cross-referenced, unofficial; subject to the official FIFA Match Centre team sheets before kickoff · TBC)</div>
+
+    <h4>🇭🇷 Croatia predicted XI (3-4-2-1) · Dalić · ESPN version</h4>
+    <div class="lineup">Livakovic; Sutalo · Vušković · Gvardiol; Stanišić · Pašalić · Modrić · Perišić; Baturina · Sučić; Musa</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:4px">Note: RotoWire's version swaps Kramarić for Sučić and Kovačić for Pašalić, with the formation perhaps a 4-3-3; sources differ on the two attacking-midfield slots on the right. <span style="color:var(--warn)">[official XI · TBC]</span></div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Luka Modrić (C)</td><td>Deep playmaker / AC Milan</td><td>40 years old, reached his 200-cap milestone against Panama; playing in a mask after cheekbone-fracture surgery; the organisational core but visibly tiring with age; the emotional narrative thread of his last World Cup</td></tr>
+      <tr><td class="ht">Joško Gvardiol</td><td>Left centre-back/left-back / Manchester City</td><td>24, back after shin-fracture surgery; has played both games; Croatia's most promising defensive core, with the England game's wide breakthroughs a warning</td></tr>
+      <tr><td class="ht">Mateo Kovačić</td><td>Midfield / Manchester City</td><td>Back from an Achilles injury, of similar age to Modrić; midfield cover and ball circulation are Croatia's heart, but his stamina against Ghana's midfield press is a question <span style="color:var(--warn)">[XI version differs slightly across sources · TBC]</span></td></tr>
+      <tr><td class="ht">Ante Budimir</td><td>Forward / Osasuna</td><td>34, scored off the bench against Panama (the oldest Croatian World Cup scorer); if he starts he is a standard target-man No. 9; competing with Musa for a starting place</td></tr>
+      <tr><td class="ht">Ivan Perišić</td><td>Wing-back / Hajduk</td><td>36-year-old veteran, pulling space out wide and feeding Musa/Budimir; his league level has dropped in recent years but his experience still has World Cup value</td></tr>
+    </table>
+
+    <h4>🇬🇭 Ghana predicted XI (4-5-1 / 4-3-3) · Queiroz · the two-clean-sheet template</h4>
+    <div class="lineup">B.Asare; Mensah · Opoku · Adjetey · Senaya; Semenyo · Sibo · Partey · Yirenkyi · I.Williams; J.Ayew(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Jordan Ayew (C)</td><td>Centre-forward/captain / Crystal Palace</td><td>0 goals in two games but excellent defensive work (Tuchel specifically noted his pressing contribution); more a system player than a finisher; criticism over the lack of goals is loud but Queiroz persists</td></tr>
+      <tr><td class="sc">Iñaki Williams</td><td>Right winger / Athletic Bilbao</td><td>Ghana's top attacking spark; his high-speed wide bursts are a counter-attacking weapon, having posted top numbers in La Liga; the only player who can finish one-on-one with Kudus absent; whether he can erupt at the holes in Croatia's defence is Ghana's biggest attacking hope <span style="color:var(--warn)">[his exact form this tournament · TBC]</span></td></tr>
+      <tr><td class="sc">Antoine Semenyo</td><td>Left winger / Bournemouth</td><td>A pacy Premier League winger; the twin-flank pincer with Williams is Ghana's main counter-attacking route; 0 goals in two games but a high sprint count this tournament</td></tr>
+      <tr><td class="sc">Thomas Partey</td><td>Holding midfielder / Arsenal</td><td>The midfield anchor; organisation and disruption combined; the hub for Ghana's midfield cover and transition triggers, and the core weapon to intercept Croatia's midfield</td></tr>
+      <tr><td class="sc">Benjamin Asare</td><td>Goalkeeper</td><td>Two clean sheets; kept out England's 19 shots, showing a very high level; the last line of Ghana's defensive system <span style="color:var(--warn)">[starting status · TBC]</span></td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analyst projections (ESPN / RotoWire / Sports Mole composite), with slight differences across sources (Croatia's right-side attacking midfield Sučić vs Kramarić, formation 3-4-2-1 vs 4-3-3; Ghana's midfield personnel and width configuration). <b>Subject to the official team sheets before kickoff · TBC</b>. Key variables: whether Croatia's Budimir starts (a substitute saviour last round, needing more target-man support here); whether Ghana's overall formation width can give Williams/Semenyo more attacking resources (Queiroz may tweak slightly with qualification secured by a draw).</div>
+  </section>
+
+  <!-- ===== Tactics + Coaches ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual approaches and results across their last two major tournaments (World Cup + their continental competition / Croatia 2018+2022 / Ghana 2022+this tournament)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇭🇷 Croatia · Zlatko Dalić</div>
+        <div class="role">3-4-2-1 / 4-3-3 · Modrić controlling tempo in midfield + wide advances + a target-man up top</div>
+        <ul class="cl">
+          <li>Dalić led Croatia to the <b>2018 final</b> and <b>2022 third place</b>, built on "midfield control (the Modrić/Kovačić/Brozović system) + resilient defence + standard target-man finishing". In 2022 Croatia reached third place on few goals (averaging 1 goal/game) + shootout mastery, a steady system but with limited attacking firepower.</li>
+          <li>Cross-reference: Croatia ran into "inefficient advances against tightly defending opponents" in both 2018 and 2022 (the 2022 final, carved open by Argentina, exposing the system's ceiling), and as Modrić/Perišić/Kovačić age, <b>this Croatia side's attacking explosiveness is the lowest of recent editions</b> — the two-game xG of 2.35 confirms it.</li>
+          <li>This match's entry point: Croatia must attack proactively, not wait passively. The usual tactic is Modrić organising from deep → the wings (Perišić/Baturina) stretching play → Musa/Budimir finishing aerially + crosses from the byline. Against Ghana's 4-5-1 packed defence, they need the wings to drag the centre about and use the likes of Partey's positioning to open space. Croatia's execution coexists with the risk of being carved open on the counter by Williams.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇬🇭 Ghana · Carlos Queiroz</div>
+        <div class="role">4-5-1 / 4-3-3 · deep packed defence + quick counters + Williams's pace bursts</div>
+        <ul class="cl">
+          <li>Queiroz is a top defensive master (known for defence both as a Portugal assistant and an Iran head coach), and this Ghana side's 4-5-1 is his most typical tactical signature: <b>a midfield five locking down the opponent's central channel, forcing the attack to cross from wide, then winning the second balls through physicality before launching quick counters via the pace of Williams/Semenyo</b>. The two clean sheets (England's 19 shots, Panama likewise scoreless) are powerful proof of the system's success.</li>
+          <li>Cross-reference: Ghana's defensive collapse in 2022 (2-3 loss to Portugal, 0-3 loss to Uruguay) is the system flaw Queiroz has set out to repair this tournament. He has clearly changed his personnel choices (prioritising defensive midfielders, using Jordan Ayew as a defensive gate among the forwards rather than a pure finisher), the core reason for Ghana's defensive transformation from weak to strong — <b>this tournament's defensive leap is deliberate, not luck</b>.</li>
+          <li>This match's response: through with a draw → Ghana barely need to attack proactively and can fully replicate the deep-sit template from the England game. The only risk is that if Croatia score first, Ghana then have to chase a goal passively. <b>Iñaki Williams's pace bursts are the nuclear weapon Ghana occasionally unleash from a defence-dominant mode</b> — if he seizes the space behind Croatia's defence, Ghana will get a decisive chance.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Analyst Insights ===== -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst (supercomputer) <small>· Croatia 56.3% / Draw 26.2% / Ghana 17.6%</small></div>Croatia are win favourites, but the 26.2% draw probability is the core data point of the game — the supercomputer sees the draw as the most common second outcome, in close alignment with Ghana's qualification motivation (a draw is enough). Croatia have lost only 1 group game in their history (precisely this 4-2 to England), but Ghana have two clean sheets, making this clash of numbers full of suspense.</div>
+    <div class="insight"><div class="who">ESPN analysis <small>· Sunaadh Sagar</small></div>Croatia's "cobbled-together" attacking approach is worrying, with Modrić and Kovačić showing their age. Queiroz's Ghana defence is a "work of wonder" — keeping a clean sheet in such a tough group (England). ESPN notes that if Ghana replicate their defensive showing against England, Croatia will struggle to break through; but Croatia's defence is likewise at risk of being carved open by pace (Iñaki Williams the biggest threat).</div>
+    <div class="insight"><div class="who">Racing Post / Covers <small>· composite odds analysis</small></div>Lean Croatia narrow win (single goal); emphasise the value of Under 2.5 (-155 is a strong consensus) — the combination of Ghana's defensive system and Croatia's attacking impotence makes a low-scoring game the likely market consensus. Ghana's +0.5 Asian line at +110 is cited by several as having value (the qualification motivation of "through with a draw" backing their defensive resolve).</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· multi-source synthesis</small></div>⚠ Trap reminders: ① Ghana's two clean sheets including England (19 shots, 1 on target) are not luck but a systematic defence — Croatia's attacking content is weaker than England's, making it harder to break through; ② Croatia's "must win" motivation is double-edged: it raises the attacking pressure but also exposes the space behind to Williams; ③ the -155 on Under 2.5 is a strong consensus, but if Croatia score first and Ghana are forced to counter, the situation will open up suddenly; ④ note the impact of Modrić's age-40 emotional narrative on the public market — Croatia's public betting may exceed their true win probability, with a chance Croatia are over-priced.</div>
+  </section>
+
+  <!-- ===== Overall Assessment ===== -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Items to Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a low-scoring game is the base-case script, with a Croatia 1-0 win the most likely outcome (if Croatia can score), and a Ghana 0-0 draw also far from improbable (Queiroz's defensive system + the through-with-a-draw motivation). Croatia's attacking content (xG 2.35 across two games) is far weaker than England's (xG 2.8 in a single game), so against the same Ghana defence, Croatia's difficulty in breaking through is higher. Ghana's entire hope lies in grinding out a draw or a single Iñaki Williams counter-attack strike.</li>
+      <li><b>Key men</b>: for Croatia — Modrić (organisation, the emotional thread), Iñaki Williams (Ghana's biggest attacking threat, Croatia's biggest defensive worry), Gvardiol (whether the defence stays steady, the England game already showed cracks); for Ghana — Partey (midfield anchor intercepting Croatia's advances), Benjamin Asare (goalkeeper, the last line of two clean sheets); Jordan Ayew (captain, defensive gate but no goal pressure).</li>
+      <li><b>Decisive factors</b>: ① whether Croatia can create high-quality chances against Ghana's packed defence (the historical 2.35 xG across two games does not support optimism); ② whether Ghana can again limit Croatia's pushed-up attack to low-quality shots (against England 19 shots for just 1 on target, a higher bar); ③ whether Iñaki Williams's pace can replicate a sprint goal in the space behind Croatia's defence; ④ the side that scores first will heavily dictate the script — a Croatia that scores first plays for the points to secure progress, a Ghana that scores first locks up qualification and protects the lead.</li>
+      <li><b>Market view</b>: leans Croatia but the price reflects genuine suspense (2/5 heat); the strongest consensus is Under 2.5 (-155). Ghana's +0.5 Asian line (+110) is the most direct pricing of "draw value". The Opta supercomputer 56.3% / 26.2% / 17.6% is aligned in direction with the line. Croatia are not heavy favourites, and Ghana's defence is respected by the market.</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>:
+      ① <b>both official XIs</b> (FIFA Match Centre ~1 hour before kickoff) — Croatia's right-side attacking midfield Sučić vs Kramarić, whether Kovačić starts, the Budimir vs Musa starting battle; Ghana's formation-width tweaks <span style="color:var(--warn)">[TBC]</span>;
+      ② <b>the exact qualification arithmetic</b> — if Ghana lose, can they still qualify above Croatia on goal difference (depends on goals scored); the impact on the Group L picture if the England vs Panama result throws up a surprise <span style="color:var(--warn)">[TBC, subject to FIFA's official ruling]</span>;
+      ③ <b>Drew Fischer's full officiating team + VAR list details</b>, his per-game card breakdown this tournament and at majors (very small sample) <span style="color:var(--warn)">[TBC]</span>;
+      ④ <b>Ghana's attacking xG breakdown this tournament</b> (0 goals in two games, limited public xG sample) <span style="color:var(--warn)">[TBC]</span>;
+      ⑤ <b>Iñaki Williams's exact form this tournament</b> (played both games, but whether full matches and his chance-creation count not found in detail) <span style="color:var(--warn)">[TBC]</span>;
+      ⑥ exact opening figures subject to the live pre-match market; prediction-market shares / public betting % not found <span style="color:var(--warn)">[TBC]</span>.
+    </div>
+  </section>
+
+  <!-- ===== Sources ===== -->
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49172894/fifa-world-cup-2026-croatia-vs-ghana-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups">ESPN — Croatia vs Ghana official preview (referee/venue/predicted XI/talking points)</a> · <a href="https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773">RotoWire — predicted XI / tactical analysis</a> · <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/team-news/croatia-vs-ghana-injury-suspension-list-predicted-xis--world-cup-2026_600079.html">Sports Mole — injury/suspension/predicted XI</a><br>
+      • <a href="https://theanalyst.com/articles/croatia-vs-ghana-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputer 56.3/26.2/17.6 + preview</a> · <a href="https://theanalyst.com/articles/panama-vs-croatia-stats-world-cup-2026">Opta Analyst — Panama vs Croatia stats (xG 1.66)</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L">Wikipedia — Group L standings/rules</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543108/world-cup-2026-group-l-guide-fixtures-schedule-standings-and-odds-for-england-croatia-ghana-and-panama">Sky Sports — Group L guide/scenario</a> · <a href="https://www.skysports.com/football/england-vs-ghana/report/549812">Sky Sports — England 0-0 Ghana report</a> · <a href="https://www.nbcnews.com/sports/soccer/england-ghana-draw-world-cup-results-rcna351484">NBC News — England-Ghana draw report</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/24/budimir-gives-croatia-a-1-0-win-to-eliminate-panama-from-the-world-cup">Al Jazeera — Croatia 1-0 Panama</a> · <a href="https://www.espn.com/soccer/story/_/id/49157167/panama-croatia-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — Croatia vs Panama live</a> · <a href="https://www.aljazeera.com/sports/liveblog/2026/6/23/england-vs-ghana-live-world-cup-2026">Al Jazeera — England vs Ghana live/review</a><br>
+      • <a href="https://www.fanduel.com/research/croatia-vs-ghana-prediction-picks-lineups-preview-and-best-bets-for-world-cup-2026">FanDuel Research — odds/preview</a> · <a href="https://www.covers.com/world-cup/croatia-vs-ghana-prediction-picks-odds-saturday-6-27-2026">Covers — odds analysis</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/croatia-vs-ghana-betting-tips-predictions-team-news-odds-bet-builder-aw7vT9A0yCpJ/">Racing Post — Bet Builder/odds</a><br>
+      • <a href="https://www.espn.com/espn/story/_/id/48878999/antoine-semenyo-thomas-partey-headline-ghana-provisional-fifa-world-pdf-squad-injured-mohammed-kudus-out">ESPN — Kudus injured, provisional squad</a> · <a href="https://www.graphic.com.gh/sports/sports-news/kudus-and-salisu-miss-world-cup-through-injury-as-ghana-names-provisional-squad.html">Graphic Online — Kudus & Salisu out</a><br>
+      • <a href="https://karlobag.eu/en/sports/drew-fischer-to-referee-croatia-vs-ghana-in-philadelphia-as-group-l-world-cup-cl-9kjkb/">Karlobag.eu — Fischer appointment (Croatian outlet)</a> · <a href="https://www.statshub.com/referee/drew-fischer/316122">Statshub — Fischer career stats (3.34 yellows/game)</a><br>
+      • <a href="https://xgscore.io/world-cup/england-croatia/xg-statistics">xGscore — England 4-2 Croatia xG stats (England 2.8 / Croatia 0.71)</a> · <a href="https://theanalyst.com/articles/england-vs-croatia-stats-world-cup-2026">Opta Analyst — England vs Croatia stats review</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of pre-match 2026-06-27 · Charts use verified data; radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Croatia win','Draw','Ghana win'],datasets:[{data:[44,28,24],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (de-vigged, composite line)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[36,64],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Implied probability % (de-vigged, Under -155 strong)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['England','Ghana','Croatia','Panama'],datasets:[{data:[4,4,3,0],backgroundColor:[SC,SC,HT,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'Points (before final round · ENG GD+4/GHA GD0/CRO GD-1)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking creativity','Midfield control','Wide pace','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Croatia',data:[6,5.5,7.5,6,7,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Ghana',data:[8.5,4,5.5,7,6.5,4.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

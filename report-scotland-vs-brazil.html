@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 苏格兰 vs 巴西 · 2026世界杯 C组末轮（苏格兰背水一战）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-scotland-vs-brazil.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-scotland-vs-brazil.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#005eb8;--sc:#ffdf00;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a4f9c,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0e1f2a,#1a1c10);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fb3ec;font-weight:600}td.sc{color:#f0d869;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-scotland-vs-brazil.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · C组末轮 · 苏格兰背水一战 vs 基本出线的巴西</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 苏格兰 0-3 巴西</span>
+  <h1>苏格兰 vs 巴西</h1>
+  <div class="meta">2026年6月24日 · 迈阿密 Hard Rock Stadium · 18:00 ET · C组（同组：摩洛哥、海地）· 末轮（同时进行：摩洛哥 vs 海地）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</div><div class="rk">1-0 海地 + 0-1 摩洛哥 · 3 分（净 0）· 必须取胜方有出线机会 · 12 届大赛从未小组出线</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0d869">🇧🇷 巴西</div><div class="rk">1-1 摩洛哥 + 3-0 海地 · 4 分（净+3）· 基本出线、争头名 · 历史从未负于苏格兰</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-25） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 苏格兰 0-3 巴西（半场 0-2 左右） · 06-24</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">迈阿密 Hard Rock：巴西彻底掌控、苏格兰的世界杯出线梦遭重创。<b>Vinícius Júnior 梅开二度</b>、<b>Matheus Cunha</b> 第 60 分钟（"on the hour"）锁定胜局。巴西上半场即轰出 <b>2.78 xG——本届世界杯单半场最高</b>。巴西以头名晋级 32 强；苏格兰积 3 分排 C 组第 3，出线需看最佳第三名排名（12 届大赛仍未能确定能否首次小组出线）。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ Vinícius ×2 · 60' Cunha｜巴西上半场 2.78 xG（本届单半场最高）· Vinícius 全场 8 射正</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / Sofascore）</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>🇧🇷 巴西</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td>46%</td><td><b>54%</b></td><td>巴西控球占优但不极端——真正的差距在威胁创造而非控球</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td>1.13</td><td><b>4.46</b></td><td>4.46 xG（含上半场 2.78，本届单半场最高）——巴西本场是真正的阵地碾压，破密集隐忧本场被打消</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>14 / 5</td><td><b>21 / 9</b></td><td>21 射 9 正全面压制，且把射门压进高质量区域</td></tr>
+      <tr><td class="ht">绝佳机会 / 直塞</td><td>2 / 0</td><td><b>6 / 3</b></td><td>6 次绝佳机会、3 次成功直塞——巴西的渗透与纵深传球本场终于打开</td></tr>
+      <tr><td class="ht">Vinícius 个人</td><td colspan="2"><b>12 射 8 射正 · 5 次创造机会 · 梅开二度 + 助攻</b></td><td>左路爆破点全面爆发，是全场胜负手</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/scotland-vs-brazil-stats-world-cup-2026">Opta Analyst — Scotland 0-3 Brazil Stats</a> · <a href="https://www.sofascore.com/news/brazil-3-0-scotland-vinicius-jr-shines-in-group-c">Sofascore</a> · <a href="https://www.espn.com/soccer/story/_/id/49167442/scotland-0-3-brazil-vinicius-junior-leaves-tartan-army-2026-world-cup-hopes-serious-jeopardy-miami">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">破密集隐忧本场被打消——这才是巴西的真实上限</div>4.46 xG、21 射、6 次绝佳机会、3 次成功直塞，上半场 2.78 xG 为本届单半场最高。<b>说明此前对摩洛哥/海地"控球碾压却低效"的问题，本场在面对苏格兰低位块时通过纵深直塞与边路爆破得到解决</b>——巴西证明了自己能阵地解题，淘汰赛威胁陡增。</div>
+    <div class="insight"><div class="who">Vinícius 是无可争议的胜负手</div>12 射 8 射正、5 次创造机会、梅开二度 + 助攻。<b>说明只要给 Vinícius 面对深防线的纵深空间，他就是巴西最稳定、最致命的开张点</b>——对手淘汰赛的首要封堵目标，但封住他的成本极高。</div>
+    <div class="insight"><div class="who">Cunha 延续中锋答卷</div>第 60 分钟锁定胜局。<b>说明 Cunha 顶替中锋的轮换持续奏效</b>，巴西锋线在 Vinícius 之外有了第二个稳定终结点。</div>
+    <div class="insight"><div class="who">苏格兰 12 届大赛魔咒仍未破</div>1.13 xG、被压制，输给历史从未战胜的巴西。<b>说明苏格兰面对顶级个人能力时缺乏限制手段</b>，其出线命运被迫交给最佳第三名排名。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">巴西胜（隐含 ≈70%）</td><td style="color:var(--good)"><b>✓ 兑现（且压制级）</b></td><td>3-0 完胜，强于"控制性小胜"的基准剧本</td></tr>
+      <tr><td class="ht">基准"巴西小胜/控制性胜利"</td><td style="color:var(--warn)"><b>~ 低估了压制程度</b></td><td>4.46 xG、21 射是碾压而非小胜——担心的"轮换保守"未拖累表现</td></tr>
+      <tr><td class="ht">Raphinha 缺阵削弱破密集上限</td><td style="color:var(--bad)"><b>✗ 未应验</b></td><td>Vinícius 一人扛起爆破，破密集上限不降反升</td></tr>
+      <tr><td class="ht">大/小 2.5 球</td><td style="color:var(--good)"><b>✓ 走大</b></td><td>3 球，越过 2.5 线</td></tr>
+      <tr><td class="ht">市场过热 2/5</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>一边倒共识被验证，无冷门</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#3fae6a">🇧🇷 巴西 · 晋级 32 强（C组头名）</h4>
+        <ul class="watch">
+          <li><b>C 组头名晋级，6/28 起对阵 F 组亚军</b>（按 C 组头名对 F 组亚军的赛制）。</li>
+          <li><b>阵地解题能力本场兑现</b>：4.46 xG、3 次成功直塞，破密集隐忧消除——淘汰赛威胁顶级。</li>
+          <li><b>Vinícius 是最可复制的开张点</b>，但也会被对手重点围剿，需要 Cunha/Raphinha（伤愈后）分担。</li>
+          <li><b>Raphinha 伤情仍需跟踪</b>：本场缺阵下巴西依旧碾压，但淘汰赛恢复其边路深度更佳。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · C组第 3 · 出线待最佳第三名排名</h4>
+        <ul class="watch">
+          <li><b>3 分小组第 3</b>：能否首次大赛小组出线，取决于各组最佳第三名比较。</li>
+          <li><b>缺乏限制顶级个人能力的手段</b>：对 Vinícius 式爆点束手无策，若晋级仍需解决防守针对性。</li>
+          <li><b>进攻贫乏（1.13 xG）</b>：背水一战仍难创造威胁，终结点不足是长期短板。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 C 组末轮的<b>"动机不对称"对决</b>：巴西 4 分（1-1 平摩洛哥 + 3-0 胜海地、净胜球 +3）<b>基本出线、目标是争小组头名</b>；苏格兰 3 分（1-0 胜海地 + 0-1 负摩洛哥、净胜球 0）<b>必须战胜巴西才有出线机会</b>，且还需看同时进行的摩洛哥-海地结果。历史维度对苏格兰极不友好——<b>苏格兰从未在大赛战胜巴西，巴西历史上从未输给苏格兰</b>（1982 年 David Narey 那记"拽虎尾"惊世远射仍以巴西 4-1 取胜告终），且苏格兰<b>征战 12 届世界杯/欧洲杯从未小组出线</b>。盘口一边倒：巴西 <b>-275</b>（约欧赔 1.36）、巴西让盘、总分线 O/U <b>2.5</b>。最大不确定因素是<b>巴西的人员与心态</b>：Raphinha 确认因右大腿肌肉伤缺阵、Neymar 已可出战但预计替补、Ancelotti 可能因已基本出线而轮换保守，而苏格兰则是背水一战的"全力一搏"。三处看点：① <b>Raphinha 缺阵 + 巴西可能轮换</b>对其破密集防守上限的影响；② <b>苏格兰深蹲反击 + 定位球</b>的背水一战能否制造冷门；③ <b>动机差</b>——巴西保守 vs 苏格兰拼命。基准剧本：<b>巴西小胜或控制性胜利</b>，过热指数 ≈ 2/5（一边倒共识、信息含量集中在"巴西阵容与让球深度"）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">巴西隐含胜率(去水)</div><div class="v" style="color:#f0d869">≈70%</div></div>
+      <div class="key"><div class="k">苏格兰隐含胜率(去水)</div><div class="v" style="color:#7fb3ec">≈12%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈18%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称</b>：巴西 4 分基本出线、争头名（平局或小负在多数情形下仍可能出线）；苏格兰 3 分必须取胜，且还要看摩洛哥-海地结果才有出线希望。这让"求胜烈度"完全倒向苏格兰，但实力天平倒向巴西。</li>
+      <li><b>Raphinha 确认缺阵（巴西·已多源确认）</b>：右大腿肌肉伤（对海地一战上半场被 Rayan 换下），不会出战苏格兰，留队康复争淘汰赛复出。这削弱巴西右路破密集防守的上限，最可能由 19 岁的 Rayan（伯恩茅斯）顶替——详见关键临场新闻。</li>
+      <li><b>Neymar 可用但预计替补（巴西）</b>：Ancelotti 确认 Neymar "will be available"（刚从小腿伤恢复），但预计不首发、作为替补选项——是巴西打开僵局的奇兵，也是叙事流量点。</li>
+      <li><b>苏格兰背水一战的深蹲反击 + 定位球</b>：苏格兰 12 届大赛从未小组出线，唯一活路是低位防守 + McTominay/Robertson 的反击与定位球；面对可能轮换+缺 Raphinha 的巴西，是否能制造 1982 式的"虽败犹荣"甚至冷门，是本场最大悬念。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · Raphinha 确认缺阵 <span style="color:var(--mut);font-weight:400">· ESPN / Bolavip / Sports Mole / Goal 多源一致 · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：Raphinha <b>因右大腿肌肉伤确认不会出战苏格兰</b>（对海地一战上半场被 Rayan 换下），但未退出本届，留队康复争淘汰赛复出</div>
+      <p style="font-size:13.5px">关键球员出缺多源交叉：<b>ESPN、Bolavip、Sports Mole、Goal</b> 均报道巴西边锋 <b>Raphinha</b> 在对海地的小组次轮上半场因右大腿肌肉伤被 19 岁的 Rayan 换下，确认缺席末轮对苏格兰，但仍留队接受康复、争取淘汰赛阶段复出。顶替其右路位置的最可能人选是<b>伯恩茅斯 19 岁的 Rayan</b>。<span style="color:var(--warn)">[首发与伤情等级以赛前 FIFA Match Centre 官方名单 / 巴西足协通报为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Raphinha 是巴西本届右路最稳定的创造与终结点。他的缺阵叠加巴西"已基本出线"的可能轮换，会<b>降低巴西破苏格兰密集防守的上限</b>——对一支预计深蹲防守的对手，巴西需要更多个人灵光（Vinícius/Neymar）或定位球来打开。这是本场进球数与让球深度盘口的关键变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Raphinha 伤情/缺阵</a> · <a href="https://bolavip.com/" style="color:var(--accent)">Bolavip — Raphinha 伤退</a> · <a href="https://www.sportsmole.co.uk/" style="color:var(--accent)">Sports Mole — 团队消息</a> · <a href="https://www.goal.com/" style="color:var(--accent)">Goal — 巴西伤情</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">关键球员核查 · Neymar 已可出战（预计替补） <span style="color:var(--mut);font-weight:400">· Ancelotti 确认 · ESPN / Goal · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Ancelotti 确认 Neymar <b>"will be available"</b>（刚从小腿伤恢复），但预计<b>不首发、作为替补选项</b></div>
+      <p style="font-size:13.5px">主帅 <b>Carlo Ancelotti</b> 确认 Neymar 已从小腿伤恢复、本场可供调遣（"will be available"），但预计不进入首发、作为替补奇兵使用。这给巴西在面对深蹲防守、僵局难破时提供了一张创造力换人牌。<span style="color:var(--warn)">[是否登场及时长以赛前官方名单 / 临场调度为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在 Raphinha 缺阵、对手深蹲的背景下，Neymar 的替补登场是巴西"破密集"的潜在解法之一。若上半场久攻不下，他的出场会抬升巴西后段的创造力与定位球质量——对大小球与下半场进球时间有实际影响。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Ancelotti/Neymar 可用</a> · <a href="https://www.goal.com/" style="color:var(--accent)">Goal — Neymar 恢复</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">苏格兰团队消息 · McKenna 伤愈 / Patterson 右后卫 <span style="color:var(--mut);font-weight:400">· Sky Sports / Sports Mole · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Scott McKenna 小腿伤周一恢复合练、可能顶替 Grant Hanley；Nathan Patterson 预计踢右后卫</div>
+      <p style="font-size:13.5px">据 Sky Sports / Sports Mole，苏格兰中卫 <b>Scott McKenna</b> 小腿伤周一恢复合练，可能顶替 Grant Hanley 进入首发；<b>Nathan Patterson</b> 预计出任右后卫/右翼卫。苏格兰大概率以三中卫或低位四后卫深蹲、靠 McTominay/Robertson 的反击与定位球求一线生机。<span style="color:var(--warn)">[首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：苏格兰唯一活路是防守结构不崩 + 定位球/反击偷袭。McKenna 的回归增强后防对抗，Patterson 的体能覆盖关系到能否限制 Vinícius 一侧。人员可用性决定苏格兰能否把比赛拖入低分差、制造冷门窗口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football" style="color:var(--accent)">Sky Sports — 苏格兰团队消息</a> · <a href="https://www.sportsmole.co.uk/" style="color:var(--accent)">Sports Mole — 前瞻/阵容</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· ESPN / SI · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：墨西哥籍 <b>César Arturo Ramos</b>；第四官员 Espen Eskås（挪威）；迈阿密 Hard Rock Stadium</div>
+      <p style="font-size:13.5px">本场主裁为墨西哥籍 <b>César Arturo Ramos</b>，CONCACAF 体系经验丰富、执法过多届世界杯与美洲杯的资深主裁；第四官员为挪威籍 <b>Espen Eskås</b>。迈阿密 Hard Rock Stadium 为大型现代化球场，6 月迈阿密高温高湿，对体能消耗大。<span style="color:var(--warn)">[完整裁判组与 VAR 组合、Ramos 本届/近两届大赛单场出牌细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：苏格兰必然会用身体对抗与战术犯规延缓巴西，裁判尺度对牌数与潜在点球有实际影响。Ramos 系经验丰富的墨西哥主裁，对大场面控制力强；高温高湿环境 + 苏格兰深蹲也可能拉长比赛、增加补时。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — 世界杯裁判名单</a> · <a href="https://www.si.com/soccer" style="color:var(--accent)">SI — 赛前裁判/前瞻</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· C组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队 FIFA 排名（越低越强 · 近似）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰</th><th>🇧🇷 巴西</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#40 区间</td><td class="sc">#5 区间（世界一线）</td></tr>
+      <tr><td>前两轮</td><td class="ht">1-0 海地 + 0-1 摩洛哥（3 分，净 0）</td><td class="sc">1-1 摩洛哥 + 3-0 海地（4 分，净 +3）</td></tr>
+      <tr><td>C 组积分（末轮前）</td><td colspan="2">巴西 4(+3)、摩洛哥 4(+1) 领先；苏格兰 3(0) 须取胜+看摩洛哥-海地；海地 0 已出局</td></tr>
+      <tr><td>主教练</td><td class="ht">Steve Clarke（苏格兰）</td><td class="sc">Carlo Ancelotti（意大利籍）</td></tr>
+      <tr><td>核心球员</td><td class="ht">McTominay、Robertson、Ché Adams、McGinn</td><td class="sc">Vinícius Jr、Matheus Cunha、Paquetá、Casemiro</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">深蹲反击 + 定位球能否制造冷门；动机优势</td><td class="sc">Raphinha 缺阵 + 是否轮换；破密集上限；保守风险</td></tr>
+      <tr><td>历史交锋</td><td class="ht">大赛从未战胜巴西（1982 名局 1-4）</td><td class="sc">历史从未负于苏格兰</td></tr>
+      <tr><td>大赛履历</td><td class="ht">12 届世界杯/欧洲杯均未小组出线</td><td class="sc">五届世界杯冠军、世界一线常客</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈8.00（隐含≈12%）</td><td class="sc">胜 ≈1.36（-275，隐含≈70%）· 平 ≈4.80（≈18%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线 O/U 2.5；巴西让盘——核心市场是让球与大小球，而非 1X2（一边倒）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈70/18/12，归一后）。盘口来源：ESPN（巴西 -275 ≈ 欧赔 1.36）；让球方向为巴西让盘，总分线 O/U 2.5。Raphinha 缺阵 + 巴西可能轮换是让球深度的不确定因素。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="sc">🇧🇷 巴西 · 进攻</td><td class="sc">世界一线进攻、个人能力顶级，破密集偶有卡壳</td><td class="sc">2 战 4 球（1-1 摩洛哥、3-0 海地），net +3；对强中游摩洛哥仅平</td><td><b>达标但有保留</b>：对海地火力顺畅，对摩洛哥这种结构完整的对手仅 1-1，破密集的运动战上限随对手强度回落 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="sc">🇧🇷 巴西 · 防守</td><td class="sc">后防个人质量高、Alisson 把关、Casemiro 屏障</td><td class="sc">2 战丢 1 球（仅摩洛哥进 1），结构稳健</td><td><b>达标</b>：防线是巴西高下限来源；苏格兰运动战威胁有限，主要风险来自定位球</td></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 进攻</td><td class="ht">进攻产出偏低、依赖 McTominay 后插上与定位球</td><td class="ht">2 战 1 球（1-0 海地、0-1 摩洛哥），运动战创造有限</td><td><b>偏弱</b>：面对巴西后防，运动战机会稀少，唯一现实路径是定位球与反击的零星灵光 <span style="color:var(--warn)">（xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · 防守</td><td class="ht">Clarke 体系强调三中卫/低位紧凑、防守纪律</td><td class="ht">2 战丢 1 球（0-1 摩洛哥），结构尚可但缺进攻</td><td><b>下限在防守</b>：失球不多，但本场要长时间承压；能否不崩盘决定比赛是否被拖入低分差</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：巴西火力随对手强度波动（3-0 海地 vs 1-1 摩洛哥），叠加 Raphinha 缺阵 + 可能轮换，破苏格兰深蹲的上限略降；苏格兰运动战创造稀缺、活路集中在定位球/反击。深度数据支持"巴西控制性占优、但进球数受阵容与对手深蹲压制"的主线。来源：Opta Analyst · FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">巴西 ≈1.8–2.1</td><td class="ht">苏格兰 ≈0.5</td><td>巴西明显占优但因 Raphinha 缺阵 + 苏格兰深蹲，上限略受压；与盘口"巴西重让"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内巴西远高于苏格兰（世界一线 vs 大赛从未出线），超算给巴西高概率取胜+出线；苏格兰胜出属冷门区间</td><td>对手强度校准后巴西样本含金量受"对海地灌水"影响，对摩洛哥的 1-1 更具参考性</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：巴西 field tilt 与控球将压倒性领先、苏格兰 PPDA 偏高（被动深蹲、不逼抢）；Raphinha 缺阵降低巴西右路 xT</td><td><b>陷阱提醒</b>：① 巴西已基本出线、可能轮换保守，进攻烈度或低于实力；② 苏格兰背水一战会全力一搏——"动机差"使比分差可能小于实力差；③ 这压低大球的稳健性，让球深盘存在被苏格兰拖住的风险</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是典型的"一边倒"场次——巴西 -275 重让，1X2 几无悬念；信息含量集中在让球深度、大小球与巴西的阵容/心态</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 一边倒共识、无三向分歧，信息集中在让球/大小球</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">共识压倒性偏巴西（≈70%），1X2 几无价格发现空间。真正的分歧在<b>让球深度</b>（Raphinha 缺阵 + 巴西可能轮换 vs 苏格兰深蹲）与<b>大小球</b>（动机差 + 破密集难度）。情绪面集中在 Neymar 复出与 1982 名局怀旧。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向一致：巴西胜，分歧在比分幅度与让球）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>ESPN</td><td>赛前前瞻</td><td>巴西明显占优；关注 Raphinha 缺阵与 Ancelotti 是否轮换</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>预测巴西取胜、苏格兰深蹲；给出双方预测首发</td></tr>
+      <tr><td>Sky Sports</td><td>英系媒体</td><td>苏格兰背水一战，须取胜+看他场，整体看好巴西控制比赛</td></tr>
+      <tr><td>SI / Yahoo</td><td>综合媒体</td><td>巴西争头名、基本出线；苏格兰冷门概率低，叙事在 1982 怀旧</td></tr>
+      <tr><td>Bolavip</td><td>南美媒体</td><td>聚焦 Raphinha 伤退与 Rayan 顶替、Neymar 替补待命</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：与"头名决战"型场次不同，本场是<b>一边倒共识</b>，无情绪溢价、无三向分歧。最大的不确定性是<b>巴西的让球深度</b>（缺 Raphinha + 可能轮换 + 已出线心态）与<b>苏格兰能否拖住比分</b>——这影响让球与大小球，而非 1X2 胜负。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>苏格兰胜 / 平 / 巴西胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="sc">≈8.50 / 4.80 / 1.34</td><td>巴西一边倒热门、苏格兰深盘冷门</td></tr>
+      <tr><td>06-23 截止</td><td>ESPN / 最优价</td><td class="sc">≈8.00 / 4.80 / 1.36（-275）</td><td>Raphinha 缺阵 + 可能轮换使巴西胜赔微回弹（1.34→1.36）</td></tr>
+      <tr><td>06-23</td><td>大/小球</td><td colspan="2" class="sc">总分线 O/U 2.5；巴西让盘——大球承压（缺 Raphinha + 苏格兰深蹲 + 巴西可能保守）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="sc">巴西胜 ≈1.34；巴西重让（约 1.5 球级别）；O/U 2.5</td><td>以"巴西世界一线 vs 苏格兰大赛从未出线"定价，初盘即把巴西定为压倒性热门、重让深盘</td></tr>
+      <tr><td>开盘（次轮赛后 + 伤情重定价）</td><td class="sc">巴西胜 1.34→1.36；让球深度承压；O/U 2.5 偏小</td><td><b>repricing 来自次轮战绩 + 伤情</b>：巴西对摩洛哥仅 1-1 暴露破密集卡壳、对海地 3-0 顺畅；<b>Raphinha 确认缺阵 + Ancelotti 可能轮换</b>让市场对巴西"大胜"的信心略降，巴西胜赔微回弹、让球深盘价值下移；同时"巴西已基本出线"心态支撑小球</td></tr>
+      <tr><td>现盘（06-23→现）</td><td class="sc">巴西 -275（≈1.36）；让盘维持但深度争议；O/U 2.5 偏小</td><td>价格发现集中在 <b>让球深度</b>（苏格兰背水深蹲能否拖住）与<b>大小球</b>（缺 Raphinha + 动机差 → 大球承压）；1X2 无信息含量，<b>苏格兰让深盘的拖住价值</b>与小球是本场仅有的博弈点</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是一边倒的"重让盘"，与瑞士-加拿大式"三向分歧"完全不同。1X2 几无价格发现，关键变量是<b>巴西让球深度</b>（Raphinha 缺阵 + 可能轮换 + 已出线心态）与<b>苏格兰能否拖住比分使大球承压</b>。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（聚合）</b>：与博彩去水一致给巴西压倒性占优、高概率取胜+出线+争头名；苏格兰胜出属低概率冷门。本场无晋级悬念意义上的博弈，资金集中在让球/大小球衍生盘。<span style="color:var(--warn)">[本场单场成交量/动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Neymar 的复出</b>——能否替补登场、是否上演个人秀，是本场最大流量点与情绪面。</li>
+      <li><b>舆论焦点 ②</b>：<b>1982 名局怀旧</b>——David Narey 的"拽虎尾"远射与巴西 4-1 的经典对照，苏格兰能否再续"虽败犹荣"或制造冷门。</li>
+      <li><b>苏格兰叙事</b>：12 届大赛从未小组出线的"魔咒"，背水一战对阵五星巴西，主基调是悲情与拼搏；市场对其冷门概率信心极低。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是典型一边倒场次——巴西重让、过热指数 <b>2/5</b>。1X2 无价格发现空间，核心变量是<b>巴西让球深度 + 苏格兰拖住比分的能力</b>，并连带影响大小球（缺 Raphinha + 动机差 + 已出线心态 → 大球承压、小球与苏格兰让深盘的拖住价值上升）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/">ESPN — 盘口/前瞻/伤情</a> · <a href="https://www.si.com/soccer">SI — 前瞻</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — 综合</a> · <a href="https://www.sportsmole.co.uk/">Sports Mole — 预测/阵容</a> · <a href="https://www.skysports.com/football">Sky Sports — 苏格兰前瞻</a> · <a href="https://bolavip.com/">Bolavip — 巴西伤情</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：本场主裁为墨西哥籍 <b>César Arturo Ramos</b>（CONCACAF 资深国际级、执法过多届世界杯/美洲杯）；第四官员为挪威籍 <b>Espen Eskås</b>。来源：ESPN 裁判名单、SI 前瞻。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Ramos 来自墨西哥足坛、CONCACAF 执法体系——经验丰富、对大场面控制力强，对身体对抗有一定容忍但对战术犯规、拖延、累积管理较为到位。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届/近两届实际样本</b>：Ramos 系执法过多届大赛的资深主裁；其本届/近两届世界杯单场出牌/判点的精确场均细分公开样本有限。<span style="color:var(--warn)">[场均黄牌/判点率细分 · 待核]</span>。定性判断：这是一名尺度稳定、敢吹关键判罚的主裁。</li>
+      <li><b>与两队的执法史</b>：与苏格兰、巴西两队均无显著公开倾向性执法史可言。</li>
+      <li><b>两面性</b>：苏格兰深蹲必然伴随大量身体对抗与战术犯规（延缓巴西），巴西的突破拉扯易制造点球/任意球；高温高湿 + 苏格兰拖节奏可能拉长补时。半自动越位将精准捕捉 Vinícius 一侧的临界冲刺。牌数/点球盘宜以倾向性看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在实力差距明显的格局下，裁判对胜负影响有限，主要价值在牌数/点球：苏格兰的战术犯规与巴西边路突破拉扯是黄牌/点球观察点。鉴于 Ramos 本届单场细分样本有限，相关盘口以倾向看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 预测首发（3-5-2 / 4-3-3）· Steve Clarke</h4>
+    <div class="lineup">Gunn; Patterson · McKenna · Hendry · Robertson; McGinn · Ferguson · McTominay; Christie · Ché Adams · Gannon-Doak</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Scott McTominay</td><td>中场 / 那不勒斯</td><td>苏格兰最高能量点，后插上与定位球争顶；制造冷门的最大单点</td></tr>
+      <tr><td class="ht">Andy Robertson</td><td>左后卫/左翼 / 队史代表</td><td>左路推进与传中质量，定位球助攻源；须兼顾防 Vinícius 一侧</td></tr>
+      <tr><td class="ht">Ché Adams</td><td>中锋</td><td>苏格兰前场支点与反击终结点；运动战机会稀少需高效把握</td></tr>
+      <tr><td class="ht">Scott McKenna</td><td>中卫</td><td>小腿伤周一恢复合练、可能顶替 Hanley；后防对抗与防空 <span style="color:var(--warn)">首发待核</span></td></tr>
+    </table>
+    <h4>🇧🇷 巴西 预测首发（4-2-3-1）· Carlo Ancelotti · Raphinha 缺阵、Neymar 替补</h4>
+    <div class="lineup">Alisson; Danilo · Marquinhos · Gabriel Magalhães · Douglas Santos; Casemiro · Bruno Guimarães; Rayan · Paquetá · Vinícius Jr; Matheus Cunha</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Vinícius Jr</td><td>左边锋 / 皇马</td><td>巴西反击爆点与个人破局核心；对位苏格兰右路、深蹲下的最大威胁</td></tr>
+      <tr><td class="sc">Matheus Cunha</td><td>中锋</td><td>单箭头终结与跑动；破密集时的支点与二点进攻</td></tr>
+      <tr><td class="sc">Rayan</td><td>右边锋 / 伯恩茅斯</td><td>19 岁新星，预计顶替缺阵的 Raphinha 出任右路 <span style="color:var(--warn)">首发待核</span></td></tr>
+      <tr><td class="sc">Lucas Paquetá</td><td>前腰 / 组织</td><td>巴西中前场串联与节奏，破密集的关键传导点</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Sports Mole），<b>以赛前官方名单为准 · 待核</b>。巴西焦点是 <b>Raphinha 确认缺阵</b>（Rayan 顶替）、Ancelotti 是否因"已基本出线"做更大轮换、Neymar 何时替补登场；苏格兰焦点是 McKenna 是否首发、Clarke 选三中卫还是四后卫深蹲。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 欧洲杯 / 美洲杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fb3ec">🏴󠁧󠁢󠁳󠁣󠁴󠁿 苏格兰 · Steve Clarke</div>
+        <div class="role">三中卫 / 低位四后卫深蹲 + 反击 + 定位球，McTominay 后插上</div>
+        <ul class="cl">
+          <li>Clarke 的招牌是<b>防守纪律 + 紧凑结构 + 定位球</b>——但苏格兰在 Euro 2024、本届前两轮都暴露了进攻产出不足、难以面对强队主导比赛；12 届大赛从未小组出线是结构性天花板。</li>
+          <li>交叉参照：Euro 2024 小组出局（0 胜、对德国 1-5 惨败暴露面对强队的脆弱）、本届 0-1 负摩洛哥延续"运动战创造稀缺"——<b>面对世界一线只能深蹲求和/偷袭，正面对攻必崩</b>。这决定本场苏格兰只能放弃控球、押注定位球与反击。</li>
+          <li>本场切入口：低位密集 + 长时间承压不崩、用 McTominay/Robertson 的定位球与零星反击偷袭；须严防 Vinícius 一侧的速度。背水一战的动机是其唯一筹码——全力一搏 + 巴西可能保守，是制造低分差/冷门的窗口。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0d869">🇧🇷 巴西 · Carlo Ancelotti</div>
+        <div class="role">4-2-3-1 控球主导 + 个人能力破局，Vinícius/Cunha 终结</div>
+        <ul class="cl">
+          <li>Ancelotti 入主后强调<b>控球主导 + 双后腰平衡 + 边路个人能力破局</b>——巴西本届对海地 3-0 顺畅，但对结构完整的摩洛哥仅 1-1，暴露了破密集的卡壳，这与巴西历届大赛"遇深蹲偶尔难产"的老问题一致。</li>
+          <li>交叉参照：WC 2022 八强点球负克罗地亚（120 分钟难破对方铁桶）、美洲杯系列对密集防守的卡壳——<b>巴西对会深蹲的中下游对手并非每场都能高效破门</b>。Raphinha 缺阵 + 可能轮换进一步削弱破密集的右路上限。</li>
+          <li>本场应对：用控球与 Vinícius/Cunha/Paquetá 的个人能力撬开苏格兰低位、靠定位球与二点进攻补充；Neymar 可作破僵局奇兵。但巴西握有"基本出线、争头名"的安全垫，可能控制节奏、保留体能，进攻烈度未必拉满——这压低了大胜与大球概率。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 赛前前瞻</small></div>巴西明显占优、控制比赛；Raphinha 缺阵 + Ancelotti 是否轮换是破密集上限的关键，苏格兰只能深蹲反击求冷门。</div>
+    <div class="insight"><div class="who">Sky Sports / SI <small>· 综合媒体</small></div>苏格兰背水一战须取胜+看他场，冷门概率极低；叙事集中在 1982 名局怀旧与 12 届大赛未出线的悲情。</div>
+    <div class="insight"><div class="who">Bolavip <small>· 南美媒体</small></div>聚焦 Raphinha 右大腿肌肉伤退、Rayan 顶替右路、Neymar 替补待命；巴西阵容深度足以掌控，但破深蹲需个人灵光。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念是<b>巴西的让球深度</b>与<b>是否全力</b>。⚠ 陷阱提醒：巴西已基本出线 + 缺 Raphinha + 可能轮换，叠加苏格兰全力深蹲，"动机差"使比分差可能小于实力差——大球承压、苏格兰让深盘有拖住价值；Neymar 替补登场是巴西破僵局的唯一开关。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：巴西小胜或控制性胜利是基准剧本。实力天平压倒性偏巴西（世界一线、历史从未负于苏格兰）；但 Raphinha 缺阵 + 可能轮换 + 已出线心态 vs 苏格兰背水一战的全力深蹲，使比分差可能小于实力差。大胜概率低于巴西平日水平，苏格兰取胜属低概率冷门。</li>
+      <li><b>关键先生</b>：Vinícius Jr（巴/反击爆点）、Matheus Cunha（巴/终结）、Paquetá（巴/破密集传导）、Neymar（巴/替补奇兵）；McTominay（苏/后插上与定位球）、Robertson（苏/左路+定位球）、Ché Adams（苏/反击终结）。</li>
+      <li><b>胜负手</b>：① 巴西能否在缺 Raphinha 下用个人能力 + 定位球撬开苏格兰低位；② 苏格兰能否长时间深蹲不崩 + 用定位球/反击偷袭；③ 巴西对头名的重视程度与轮换幅度（决定进攻烈度与大小球）。</li>
+      <li><b>市场视角</b>：典型一边倒场次（≈70/18/12），1X2 无价格发现空间；过热指数 2/5。核心变量是巴西让球深度 + 苏格兰拖住比分的能力，并连带影响大小球（缺 Raphinha + 动机差 → 偏小球、苏格兰让深盘有拖住价值）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>Raphinha 伤情等级与确切缺阵</b>（已多源确认缺阵，等级以巴西足协通报为准）、Rayan 是否顶替首发；③ <b>Neymar 是否登场及时长</b>；④ 巴西是否因已基本出线做更大轮换、苏格兰 McKenna 是否首发；⑤ Ramos 完整裁判组与 VAR 组合、其本届/近两届单场出牌/判点细分；⑥ 出线/头名的精确净胜球与并列规则、苏格兰出线所需的摩洛哥-海地结果组合（以 FIFA 官方判定为准）；⑦ 让球线与大小球总分线（O/U 2.5）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/">ESPN — 前瞻/盘口/裁判/Raphinha 伤情/Neymar</a> · <a href="https://www.sportsmole.co.uk/">Sports Mole — 前瞻/团队消息/预测首发</a> · <a href="https://www.goal.com/">Goal — 巴西伤情/Neymar 恢复</a><br>
+      • <a href="https://bolavip.com/">Bolavip — Raphinha 伤退/Rayan 顶替</a> · <a href="https://www.skysports.com/football">Sky Sports — 苏格兰前瞻/团队消息</a> · <a href="https://www.si.com/soccer">SI — 前瞻/裁判</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — 综合</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C">Wikipedia — C组</a> · <a href="https://en.wikipedia.org/wiki/Brazil_v_Scotland_(1982_FIFA_World_Cup)">Wikipedia — 1982 巴西 4-1 苏格兰（Narey 名局）</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#005eb8',SC='#e0c020',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['苏格兰胜','平局','巴西胜'],datasets:[{data:[12,18,70],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[44,56],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[5,12,40,80],backgroundColor:[SC,'#c1632e',HT,'#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强 · 近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'苏格兰',data:[6.5,4.5,5.5,5,4.5,5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'巴西',data:[8.5,8.5,8.5,9,9.5,9.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

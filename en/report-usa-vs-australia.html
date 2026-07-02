@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In-Depth Pre-Match Analysis · USA vs Australia · 2026 World Cup Group D Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-australia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-australia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#3b6fb0;--sc:#d4a017;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#6b5418);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13202e,#1a1a13);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#e6c45a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">ZH</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-usa-vs-australia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge" style="background:linear-gradient(90deg,#14532d,#3b6fb0)">🏁 Full time · USA 2-0 Australia</span>
+  <span class="badge">⚽ 2026 World Cup · Group D Matchday 2 · Both teams won their openers and are level on points · A six-pointer for top spot</span>
+  <h1>USA vs Australia</h1>
+  <div class="meta">June 19, 2026 · Seattle Lumen Field · 15:00 ET (local noon) · Group D (also in group: Paraguay, Türkiye)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 USA</div><div class="rk">FIFA #17 · Hosts · Matchday 1: 4-1 Paraguay · Pochettino's high-press system</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e6c45a">🇦🇺 Australia</div><div class="rk">FIFA #27 · Matchday 1: 2-0 upset over Türkiye · Popovic's low-block counter + set pieces</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (written 06-20) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review: Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time USA 2-0 Australia · 06-19</span></h2>
+
+    <h4>① Scoreline Progression</h4>
+    <p style="font-size:13.5px">The United States settled it before half-time at Lumen Field in Seattle. In the <b>11th minute</b> Balogun accelerated down the left and drove the ball across the box, with Australia center-back <b>Cameron Burgess turning it into his own net</b>. In the <b>43rd minute</b> a Dest shot from a corner deflected to <b>Alex Freeman</b>, who calmly headed home (allowed after a VAR offside check — the first World Cup goal for the 21-year-old). After the break the U.S. switched from a 4-2-3-1 to a 3-5-2 to manage the game; Australia's late surge, with Irankunda introduced (he raced past Ream once and Volpato shot over), never produced anything. <b>The U.S. kept a clean sheet without star man Pulisic (calf) — their first shutout in 10 games (since the September friendly vs Japan), and their first back-to-back World Cup wins since the inaugural 1930 edition — clinching a Round of 32 spot with a game to spare.</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 11' Burgess own goal (USA · created by Balogun) · 43' Freeman (USA · off a deflected Dest shot) · 56' Robinson yellow (USA) · HT 2-0 · FT 2-0</div>
+
+    <h4 style="margin-top:16px">② Key Data Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇺🇸 USA</th><th>🇦🇺 Australia</th><th>Read</th></tr>
+      <tr><td class="ht">Possession</td><td><b>70%</b></td><td>30%</td><td>Up to 70-71% in the first half — exactly the "USA on the ball, Australia in a deep block" shape the preview projected</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.17</b></td><td>0.12</td><td>2 goals vs 1.17 xG = finishing slightly above chance quality; Australia's 0.12 xG shows the low block barely conceded any clear look, and the 2 goals owed much to a set piece and a deflection</td></tr>
+      <tr><td class="ht">Shots / on target</td><td><b>9 / —</b></td><td>2 / —</td><td>7 of USA's 9 shots came inside the box, but open-play breakthroughs were rare; "breaking the block via wide individual quality" was clearly diluted without Pulisic</td></tr>
+      <tr><td class="ht">Passes / accuracy</td><td><b>531 / ≈88%</b></td><td>308 / ≈77%</td><td>Total passing dominance, yet high possession did not convert to high xG — proof Australia's "concede the ball, protect the box" plan held up</td></tr>
+      <tr><td class="ht">Corners</td><td><b>7</b></td><td>4</td><td>USA's siege produced the corner edge, and the second goal came from a corner second phase — matching the preview's "USA control, corners skew high" profile</td></tr>
+      <tr><td class="ht">Fouls / cards</td><td>12 / 1 (Robinson 56')</td><td>16 / —</td><td>Australia fouled more (tactical fouls to break rhythm); USA's only booking was Robinson's dangerous tackle — the referee angle ("Australia's deep block risks cards") partly landed, though overall card count stayed modest</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA Match Centre — USA 2-0 Australia</a> · <a href="https://www.sofascore.com/news/usa-2-0-australia-at-ht-world-cup-group-d-report">Sofascore — possession/xG/shots</a> · <a href="https://www.espn.com/soccer/story/_/id/49118816/usmnt-player-ratings-freeman-surprise-hero-7-10-performance-stonewall-australia">ESPN — player ratings/flow</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-united-states-vs-australia-jun-19-2026-game-boxscore-647645">FOX Sports — corners/fouls/passes</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical Review</h4>
+    <div class="insight"><div class="who">Without Pulisic, the U.S. struggled to break the block</div>The preview flagged Pulisic as the U.S.'s best individual solution against a low block. In reality, 70% possession produced just 1.17 xG, with few clear open-play looks — the two goals came from an own goal and a corner deflection. Pepi at LW earned a 3/10, Pochettino drifted Balogun wide, and ultimately switched to a 3-5-2. <b>This shows a U.S. side that relies heavily on individual quality (Pulisic/Reyna) to unlock organized low blocks, lacking a repeatable positional pattern</b> — a structural weakness against the tougher bunkers of the knockouts.</div>
+    <div class="insight"><div class="who">Set pieces and second balls are this team's realistic scoring path</div>Both goals came from non-open-play chaos (own goal + corner second-phase header). <b>This shows that when the individual spark is missing, the U.S. can reliably lean on aerial duels and second balls from set pieces (Freeman/Richards/Ream)</b> — a path that is repeatable and does not depend on Pulisic, a valuable weapon for tight knockout games.</div>
+    <div class="insight"><div class="who">Pochettino's in-game adjustment (4-2-3-1 → 3-5-2) is a real asset</div>Facing a block he couldn't open and a malfunctioning Pepi on the left, the manager decisively went to a back three after the break, freed Balogun, and used substitutions (Berhalter/Scally/Trusty) to protect the shutout. <b>This shows a U.S. side with an executable plan B when plan A stalls</b> — a more convincing sign of knockout potential than the smooth 4-1 over Paraguay.</div>
+    <div class="insight"><div class="who">Australia's low block worked, but the attack was non-existent</div>30% possession and just 0.12 xG: keeping the U.S. to 1.17 xG counts as a defensive success, but apart from one Irankunda burst late, Australia created nothing. <b>This shows Popovic's system is "defensively disciplined, offensively thin" — once it concedes first (even an own goal), it has no second solution to transition</b>; the counter template indeed failed against a side that wants the ball, just as the preview's transfer note warned.</div>
+
+    <h4 style="margin-top:16px">④ Prediction Reconciliation</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">USA win (no-vig ≈60% / Opta 58.5%)</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>USA controlled throughout and won to nil, never in doubt</td></tr>
+      <tr><td class="ht">Base scoreline USA 2-0 (most common expert call)</td><td style="color:var(--good)"><b>✓ Exact hit</b></td><td>Final was exactly 2-0, the most-cited pre-match score</td></tr>
+      <tr><td class="ht">Under 2.5 lean strengthened (post-Pulisic)</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>2 total goals, Under 2.5 cashed; the "USA besiege but struggle to score efficiently, goals delayed" read was correct</td></tr>
+      <tr><td class="ht">Handicap USA -1.5 (experts flagged poor value)</td><td style="color:var(--warn)"><b>~ Borderline hit</b></td><td>USA won by 2, so -1.5 lands; but 1.17 xG shows it was far from comfortable — the experts' caution ("won't win by 2") was well-founded</td></tr>
+      <tr><td class="ht">Risk: Australia stealing one via set piece/counter</td><td style="color:var(--good)"><b>✓ Risk avoided</b></td><td>Irankunda benched, Australia's xG only 0.12 — the preview's revision ("Irankunda on the bench lowers the early counter threat") held</td></tr>
+      <tr><td class="ht">Concern: USA slacking off after leading (carry-over)</td><td style="color:var(--good)"><b>✓ Did not recur</b></td><td>Switched to 3-5-2 and shut it out; the late Ream slip vs Irankunda was isolated and unpunished — discipline clearly improved on Matchday 1</td></tr>
+    </table>
+    <div class="note" style="margin-top:8px">📌 <b>Reconciliation summary</b>: the base scenario (USA 2-0 control win + Under) was a <b>precise hit</b>; the only deviation is that the process was tighter than the scoreline (xG 1.17 vs 2 actual), confirming the "home public-money premium, but the game won't necessarily be easy" caveat. The site's pre-match thesis broadly landed.</div>
+
+    <h4 style="margin-top:16px">⑤ Forward Transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fa6e6">🇺🇸 USA · Next vs Türkiye (6/25, Inglewood/LA)</h4>
+        <ul class="watch">
+          <li><b>Pulisic's return is the top variable</b>: with a Round of 32 spot already secured and no pressure to win, Pulisic's calf timeline was aimed at this round — if he returns, the "break-the-block" weakness eases; Pochettino may also rotate to test combinations.</li>
+          <li><b>Positional attack still to be proven</b>: 70% possession yielded just 1.17 xG, so breaking a block in open play is discounted; Türkiye are stronger than Australia and, after losing 0-2 to them, will push hard for points, truly testing the U.S.'s positional play.</li>
+          <li><b>Repeatable scoring path = set pieces</b>: aerial duels and second balls from Freeman/Richards/Ream were the only reliable output — a key weapon against Türkiye too.</li>
+          <li><b>No new suspensions/injuries</b>: Robinson's single yellow does not accumulate to a ban; squad healthy, Pulisic's return is the only question mark.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e6c45a">🇦🇺 Australia · Next vs Paraguay (6/25, Santa Clara)</h4>
+        <ul class="watch">
+          <li><b>Win-or-go-home</b>: 1 win, 1 loss, level on goal difference against an equally needy Paraguay — this is the real qualification decider, and Australia can no longer get through on a draw.</li>
+          <li><b>The attack must produce</b>: an 0.12 xG with zero threat exposed the "solid defense, thin attack" problem; against Paraguay they must open up — Irankunda likely returns to the XI, and the finishing of Toure/Velupillay is key.</li>
+          <li><b>Set pieces remain the calling card</b>: 8 goals in qualifying plus the Souttar/Circati aerial threat — in a low-scoring duel with Paraguay, one set piece could be the qualification swing.</li>
+          <li><b>No new suspensions/injuries</b>: no red cards, no injuries here; Beach is settled in goal, the squad is available — the issue is approach, not personnel.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">This is a <b>direct showdown for top spot between two opening-round winners</b>: hosts USA (FIFA #17, Pochettino's high press + Balogun as lone striker, who beat Paraguay 4-1 in their opener) face surprise winners Australia (FIFA #27, Popovic's disciplined low-block counter, who toppled Türkiye 2-0 and fielded the youngest starting XI in World Cup history). The market leans clearly but not overwhelmingly: USA win <b>1.61</b> (American odds -165, de-vig implied ≈60%), draw <b>4.20</b> (+320, ≈23%), Australia win <b>5.50</b> (+450, ≈17%). Totals line 2.5: Over <b>1.96</b> (-104) / Under <b>1.82</b> (-122), the market slightly favoring the Under. Handicap line <b>USA -1.5 / Australia +1.5</b> (Australia +1.5 about -127). Opta supercomputer: USA win <b>58.5%</b>, draw 20.9%, Australia win 20.6%. Base scenario: <b>USA 2-0 / 2-1, controlling the game to win</b>, but Australia's low block + counter + set pieces have already been proven capable of hurting opponents in the opener — they are by no means a soft touch. <b>🆕 Official XIs are out (see the ✅ module below): top star Pulisic is ruled out with his calf injury — USA start Pepi and switch to a 3-4-1-2 two-striker shape; Australia's counter spearhead Irankunda is surprisingly benched. The summary base case (USA control to win) holds, with Under logic slightly stronger.</b></p>
+    <div class="keyrow">
+      <div class="key"><div class="k">USA implied win % (de-vig)</div><div class="v" style="color:#7fa6e6">≈60%</div></div>
+      <div class="key"><div class="k">Under implied probability</div><div class="v" style="color:#e6c45a">≈52%</div></div>
+      <div class="key"><div class="k">Opta USA win %</div><div class="v" style="color:var(--good)">58.5%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">3.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Pulisic ruled out (official)</b>: calf not healed, not in the squad (targeting the next round vs Türkiye); USA start Pepi and switch to a 3-4-1-2 two-striker shape — losing his set-piece/penalty delivery and individual spark, but more direct in attack.</li>
+      <li><b>Balogun's hot form (carried from last match)</b>: scored a brace in the opener; the lone-striker pivot system is up and running, and he is USA's main tool for breaking down a packed defense.</li>
+      <li><b>Australia's set pieces + counters (official adjustment)</b>: the qualifying trademark (8 goals; tall CBs Souttar/Circati) remains, but counter spearhead <b>Irankunda is benched</b> — early direct-transition point-stealing threat drops, Velupillay is more of a build-up player; Irankunda becomes a second-half ace.</li>
+      <li><b>USA's defensive focus once ahead (carried from last match)</b>: after going 3-0 up in the opener they switched off and conceded; Irankunda's absence from the XI lowers the early counter risk, but once he comes on (60-70') the transition-speed threat returns, so recovery still needs care.</li>
+    </ul>
+  </div>
+
+  <!-- Key matchday news -->
+  <section style="border:1px solid #234a5a;background:linear-gradient(135deg,#13202b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Matchday News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · With sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals affecting this match, each explaining how it changes the tactics or outcome (includes carry-over from the last match)</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">🆕 Pre-match latest · USA's top question resolved <span style="color:var(--mut);font-weight:400">· NBC / CBS / SI / FanDuel · 06-18/19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Pulisic's calf injury confirmed; he is available to start</b> — both Pochettino and captain Adams stated "Pulisic is ready"<span style="font-size:12px;color:var(--warn)">(carried from last match)</span></div>
+      <p style="font-size:13.5px">According to pre-match reports from NBC Sports, CBS Sports, SI and FanDuel, Pulisic's halftime substitution against Paraguay in the opener was a "calf discomfort, precautionary withdrawal" rather than a worsening injury; pre-match, head coach Pochettino and captain Tyler Adams both confirmed he is "ready," and the entire attacking line, Pulisic included, is confirmed available and starting. If he cannot play at the last moment, Timothy Weah would take his place on the left. Predicted lineup: USA (4-3-3) Freese; Freeman, Richards, Ream, Robinson; Adams, Tillman; Dest, McKenzie, Pulisic; Balogun. <span style="color:var(--warn)">(Predicted lineup, subject to the official team sheet · TBC)</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: this is the match's biggest matchday variable. ① Pulisic is USA's left-sided solution with the most individual quality for breaking down a packed defense, and also the primary set-piece / penalty taker — with him on the pitch, USA's success rate at "tearing open a low block with wing-and-center combinations" rises significantly; ② resolving the question means the market's pricing of the USA win and handicap (-1.5) will not loosen on an injury withdrawal, but instead reinforces the main line.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start" style="color:var(--accent)">NBC Sports — Lineup/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/" style="color:var(--accent)">CBS — Pulisic injury</a> · <a href="https://www.si.com/soccer/usmnt-predicted-lineup-vs-australia-world-cup-group-d-6-19-26" style="color:var(--accent)">SI — Predicted lineup</a></div>
+    </div>
+
+    <div style="border-left:3px solid #7fa6e6;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">USA · Assets carried from the opener <span style="color:var(--mut);font-weight:400">· This site's report-usa-vs-paraguay · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Balogun's brace, lone-striker system up and running</b>; but after going 3-0 up the defense slackened and conceded one back <span style="font-size:12px;color:var(--warn)">(carried from last match)</span></div>
+      <p style="font-size:13.5px">USA beat Paraguay 4-1 in the opener, with Balogun's brace + Reyna's trivela screamer; the lone-striker pivot system is up and running, and doubts about "breaking down a packed defense" were answered through wing-and-center combinations + individual quality. But this site's carry-over from the last preview flagged it: after going 3-0 up, USA's defensive focus slackened and they conceded one back — a hidden risk that is especially critical against a more dynamic opponent. Chris Richards being fit and available is a plus.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Australia is exactly the "low block + direct counter + aerial/set-piece" type, precisely matching the template by which USA concedes after going ahead. If USA cannot maintain full-match intensity, Australia's Irankunda counters and set pieces could entirely replicate the clean-sheet logic from the Türkiye match and steal points the other way.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.aol.com/articles/haji-wright-delivers-as-usmnt-beats-australia-2-1-but-christian-pulisics-injury-clouds-win" style="color:var(--accent)">AOL — USA recent form</a> · <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26" style="color:var(--accent)">SI — Opener review/preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid #e6c45a;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e6c45a;font-weight:700">Australia · Carry-over + team news <span style="color:var(--mut);font-weight:400">· This site's report-australia-vs-turkiye · Sky / Goal · 06-14~18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>2-0 upset of Türkiye, fully fit, confidence sky-high</b>; Mohamed Toure cramped against Türkiye, his condition is being monitored <span style="font-size:12px;color:var(--warn)">(carried from last match)</span></div>
+      <p style="font-size:13.5px">In the opener Australia toppled Türkiye 2-0 in Vancouver (Irankunda's first-half counter goal, Metcalfe extending the lead in the second half); 22-year-old goalkeeper Patrick Beach started in place of veteran Mat Ryan and made 8 saves to become the tournament's leading shot-stopper so far, while Popovic fielded "the youngest starting XI in World Cup history." No injury absences confirmed; only striker Mohamed Toure cramped badly against Türkiye and his availability is being monitored (TBC). This site's carry-over flagged it: Australia's <b>counter template may not work as well against a USA side that actively keeps the ball, requiring stronger defensive resilience than against Türkiye</b>; but set pieces (8 goals in qualifying) are a repeatable weapon. Expected to retain the opener's XI, with Irankunda again starting as the spearhead of the counter.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: ① Beach's heroics and the whole team's clean-sheet confidence are real assets — Australia will not be overawed; ② but the opener's clean sheet was fed by "Türkiye keeping the ball without penetration" — USA are faster and more multidimensional than Türkiye, and if Australia's backline is half a beat slow recovering in transition, the speed of Balogun/Pulisic will punish them directly; ③ if Toure plays injured or is rotated out, Australia's attacking pivot weakens, leaving them more reliant on Irankunda's single-point counters and set pieces.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver" style="color:var(--accent)">Sky Sports — 2-0 review/Beach</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c" style="color:var(--accent)">Goal — Preview/Toure cramp</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19" style="color:var(--accent)">FanDuel — Team news/lineup</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Background · Qualification picture and stakes <span style="color:var(--mut);font-weight:400">· Opta / ESPN · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Both teams have 3 points from the opener; the <b>winner here will very likely lock up top spot</b> early, while the loser faces sharply rising pressure to advance</div>
+      <p style="font-size:13.5px">Group D opening results: USA 4-1 Paraguay, Australia 2-0 Türkiye, leaving both teams tied at the top on 3 points each; Paraguay and Türkiye meet in the group's other fixture on the same day (6/19-20, Santa Clara). A single USA win would all but book their progression ahead of the third round and put them in command of top spot; Opta gives USA a 32.83% chance of finishing first (Türkiye 29.04%, Paraguay 20.51%, Australia 17.62%). Hosts, and a home crowd of 69,000 (Lumen Field). <span style="color:var(--warn)">(Qualification scenarios are subject to the other match's score and the final standings · TBC)</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: both sides have a "must-win" motive but differing risk appetites — USA at home must win to secure top spot and will actively control the game and apply pressure; Australia have already exceeded their opener expectations, can stomach a draw, and would more willingly sit deep and steal points on the counter. This difference in motivation reinforces the "USA on the ball, Australia counter-attacking" shape of the match.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Supercomputer/group probabilities</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries" style="color:var(--accent)">ESPN — Group D picture</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed lineups -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· two-source confirmed · summary recheck</span></h2>
+    <div class="note" style="background:#0e2218;border-color:#1d4a2a;color:#bff0d0">✅ <b>Officially confirmed</b> (≥2 sources agree: Yahoo Sports live team sheet + CNN/ESPN team news, released ~75 min before kickoff). <b>Two bombshells</b>: USA captain-level core <b>Pulisic ruled out (calf)</b> — Pepi starts, shape switches to two strikers; Australia's counter spearhead <b>Irankunda surprisingly benched</b>.</div>
+
+    <h4>🇺🇸 USA official XI (3-4-1-2 · two strikers vs the predicted)</h4>
+    <div class="lineup">Freese; Richards · Ream(C) · Freeman; Robinson · McKennie · Adams · Dest; Tillman; Balogun · Pepi</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Key bench weapons: Tim Weah (wing spark), Gio Reyna (creativity), Haji Wright (target rotation). <b>Pulisic is not in the squad (resting; targeting next round vs Türkiye).</b></div>
+
+    <h4 style="margin-top:14px">🇦🇺 Australia official XI (3-4-2-1 · same template that beat Türkiye)</h4>
+    <div class="lineup">Beach; Burgess · Circati · Souttar(C); Bos · O'Neill · Leckie · Italiano; Velupillay · Okon-Engstler; Toure</div>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">Key bench weapons: <b>Nestory Irankunda</b> (the biggest impact sub — youngest scorer in World Cup history, most direct counter speed, held in reserve), Mathew Ryan (keeper experience), Connor Metcalfe (late runs).</div>
+
+    <h4 style="margin-top:16px">vs predicted lineup · comparison</h4>
+    <table>
+      <tr><th>Team</th><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">USA</td><td>Spearhead</td><td>Pulisic starts (LW)</td><td>Pepi starts (second striker)</td><td>Calf injury confirmed out; not a winger-for-winger swap but a switch to two strikers — more direct central pressure on the low block, but loses Pulisic's individual quality and set-piece/penalty duty</td></tr>
+      <tr><td class="ht">USA</td><td>Shape</td><td>4-3-3 flat back four</td><td>3-4-1-2 three CBs, two strikers</td><td>From wing penetration to a strike pair; Dest/Robinson become wing-backs for width, Tillman as the No.10 linking Balogun+Pepi</td></tr>
+      <tr><td class="ht">USA</td><td>Rest</td><td>—</td><td>10/11 retained from the Paraguay win</td><td>Everyone but Pulisic unchanged — coach trusts the opener's XI</td></tr>
+      <tr><td class="sc">AUS</td><td>Counter spearhead</td><td>Irankunda starts</td><td>Irankunda benched / Velupillay starts</td><td>The "most direct counter weapon" this page's risk scenario leaned on is on the bench — Australia's early fast-transition point-stealing threat drops; Irankunda becomes a late-game ace</td></tr>
+      <tr><td class="sc">AUS</td><td>Midfield</td><td>Metcalfe starts</td><td>Leckie starts</td><td>Veteran Leckie replaces opener-scorer Metcalfe; experience/discipline over forward runs</td></tr>
+      <tr><td class="sc">AUS</td><td>Shape</td><td>4-2-3-1</td><td>3-4-2-1 (same as vs Türkiye)</td><td>Three CBs + wing-backs low block, Burgess/Circati/Souttar denser in the air — same template that shut out Türkiye</td></tr>
+      <tr><td class="sc">AUS</td><td>Striker</td><td>Toure (cramp · TBC)</td><td>Toure starts</td><td>Cramp doubt cleared, confirmed leading the line — clears this page's pending item ①</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">Tactical read (summary recheck)</h4>
+    <ul class="cl">
+      <li><b>Shape signal (USA)</b>: 4-3-3 → 3-4-1-2 two strikers. With Pulisic out, Pochettino adds a striker (Pepi alongside Balogun) rather than a winger, aiming to crack Australia's low block with directness, giving width to the wing-backs. The summary's "USA control and besiege" main line <b>holds</b>; the breakthrough method shifts from "wing individual quality + set pieces" to "central strike pair + wing-back crosses."</li>
+      <li><b>Key downgrade (USA)</b>: losing Pulisic = losing the best set-piece/penalty delivery and an individual spark. Against Souttar/Circati's tall CBs in the two-way set-piece matchup, USA's threat on one end drops — a <b>revision</b> nudging the "set-piece quality" decider slightly toward Australia.</li>
+      <li><b>Key downgrade (Australia)</b>: Irankunda on the bench is the biggest single change. This page's 1-1 risk was driven precisely by "Irankunda counter point-stealing"; his absence from the XI clearly weakens Australia's early direct transition (Velupillay/Okon-Engstler are more about build-up than raw speed) — the "caught while leading" risk <b>drops a notch</b> (but Irankunda remains a 60-70' ace, so the second-half risk returns).</li>
+      <li><b>Net conclusion</b>: the summary base case (USA control to win) <b>holds</b>; the two changes pull in opposite directions — USA more direct but weaker on set pieces/individual quality, Australia's template unchanged but its early counter threat reduced. The likely shape is "USA sustained siege + Australia pure deep defending," goals possibly later, <b>Under 2.5 logic slightly strengthened</b>. The risk structure is re-priced from "Irankunda counter" to "USA set-piece downgrade + Australia's overall resilience."</li>
+    </ul>
+
+    <div class="note" style="margin-top:12px">📊 <b>Market reaction</b>: post-lineup consensus USA <b>-170 (≈1.59 decimal)</b> · draw ≈4.0 · Australia <b>+410 (≈5.10)</b>. Note: despite top star Pulisic confirmed out, USA remain clear favorites (≈1.59) and did not lengthen materially on the injury news — the market judges Pepi+Balogun two-striker as adequate compensation, consistent with this page's "host public-money premium" read. (No timestamped tick-by-tick pre/post movement available; this states only the post-announcement price; not betting advice.)</div>
+
+    <div class="src" style="margin-top:10px">Sources: <a href="https://sports.yahoo.com/soccer/live/usmnt-vs-australia-score-live-updates-where-to-watch-world-cup-2026-christian-pulisic-injury-news-lineups-170000908.html">Yahoo Sports — live official XIs + odds</a> · <a href="https://www.cnn.com/2026/06/19/sport/soccer-world-cup-usa-australia">CNN — Pulisic ruled out</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-118651">RotoWire — shape/team news</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA official match centre</a></div>
+  </section>
+
+  <!-- Data side -->
+  <section>
+    <h2><span class="n">1</span> Data (Core)</h2>
+    <div class="sub">FIFA ranking · Win/draw/loss implied probabilities (de-vig odds) · Group D landscape · Totals market — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probabilities (de-vig, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probabilities (de-vig)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group D four-team FIFA rankings (lower is stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇺🇸 USA</th><th>🇦🇺 Australia</th></tr>
+      <tr><td>FIFA ranking (2026/06)</td><td class="ht">#17</td><td class="sc">#27</td></tr>
+      <tr><td>Opening result</td><td class="ht">4-1 win over Paraguay (Balogun brace)</td><td class="sc">2-0 win over Türkiye (Irankunda, Metcalfe)</td></tr>
+      <tr><td>Recent major-tournament form</td><td class="ht">2022 World Cup Round of 16; 2024 Copa América (home) group-stage exit</td><td class="sc">2022 World Cup Round of 16; 2023 Asian Cup quarter-finals</td></tr>
+      <tr><td>Head coach</td><td class="ht">Mauricio Pochettino</td><td class="sc">Tony Popovic</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win 1.61 (-165, implied ≈60%)</td><td class="sc">Win 5.50 (+450, ≈17%) · Draw 4.20 (+320, ≈23%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">Over 2.5 @ 1.96 (-104) / Under 2.5 @ 1.82 (-122) — market slightly favors the Under</td></tr>
+      <tr><td>Handicap (Asian-line reference)</td><td colspan="2">USA -1.5 (about +170) / Australia +1.5 (about -127)</td></tr>
+      <tr><td>Head-to-head (recent)</td><td colspan="2">2025/10/15 friendly USA 2-1 Australia (no competitive World Cup meeting)</td></tr>
+      <tr><td>Top question</td><td class="ht">Pulisic calf injury → confirmed starting</td><td class="sc">Mohamed Toure cramp (condition being monitored · TBC)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vig implied probabilities from DECIMAL odds (≈60/23/17). Odds source: DraftKings/consensus line (USA -165, draw +320, Australia +450), American odds to decimal: USA 1.61, draw 4.20, Australia 5.50. Totals line 2.5, Over -104 (1.96) / Under -122 (1.82). Handicap USA -1.5 (about +170) / Australia +1.5 (about -127). Opta supercomputer: USA win 58.5%, draw 20.9%, Australia win 20.6% — closely matching the market's de-vig probabilities, with reasonable pricing.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this World Cup actual · underlying quality signals · sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last 10 qualifying / friendly matches)</b> against their <b>actual values from the first round of this World Cup</b>, asking "is this tournament above or below historical level, and what does it mean". Public national-team xG samples are limited; missing items are marked "pending" and never fabricated.</div>
+
+    <h4>① Core: historical average vs this World Cup actual (team by team)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (last 10 · FootyStats)</th><th>This World Cup actual (round 1)</th><th>Delta & read</th></tr>
+      <tr><td class="ht">🇺🇸 USA · attack xG/goals</td><td class="ht">Last 10: <b>xGF 1.23/match</b>, 1.30 goals/match, 58% possession, 8.3 shots (4.6 on target), 16% conversion</td><td class="ht">Round 1 <b>xG 1.35</b>, scored <b>4 goals</b> (4-1 Paraguay, opponent only 0.47 xG)</td><td>This tournament's xG (1.35) is <b>slightly above</b> the historical average (1.23), but 4 goals vs 1.35 xG = <b>heavy finishing overperformance (+2.65)</b> — including 1 own goal + Reyna's stoppage-time screamer; <b>unsustainable</b>, true creativity ≈1.3–1.4</td></tr>
+      <tr><td class="ht">🇺🇸 USA · defense xGA/conceded</td><td class="ht">Last 10: <b>xGA 1.20/match</b>, 1.10 conceded/match, 30% clean-sheet rate</td><td class="ht">Round 1 held Paraguay to <b>0.47 xG</b>, conceded just 1 (slackened after 3-0)</td><td>Round-1 xGA (0.47) is <b>clearly better</b> than the historical baseline (1.20) — but the opponent was weak and the lapse came only after leading; defensive quality is masked by the scoreline, still to be tested against more multi-dimensional attacks</td></tr>
+      <tr><td class="sc">🇦🇺 Australia · attack xG/goals</td><td class="sc">Last 10: <b>xGF 0.83/match</b> (low), 1.60 goals/match, only 39% possession, <b>23% conversion (very high)</b></td><td class="sc">Round 1 <b>xG 0.77</b>, scored 2 (2-0 Türkiye, 28.3% possession = lowest in their history)</td><td>This tournament's xG (0.77) <b>matches</b> the low historical average (0.83) — output is inherently few-but-sharp; the 2 goals came from Irankunda's counter + Metcalfe's long-range strike via <b>high conversion</b>, a stylistic trait not luck, but low xG means goal output swings easily</td></tr>
+      <tr><td class="sc">🇦🇺 Australia · defense xGA/conceded</td><td class="sc">Last 10: <b>xGA 1.39/match (high)</b>, 0.90 conceded/match, 40% clean-sheet rate</td><td class="sc">Round 1 conceded <b>1.33 xGA</b> to Türkiye (30 shots) yet kept a <b>clean sheet</b> (Beach 8 saves)</td><td>History and round 1 agree: <b>xGA high, actual conceded low</b> — chronic "defensive luck / keeper overperformance" (xGA−conceded ≈+0.49/match). If Beach's heroics fade, that 1.3+ xGA converts into goals; the <b>clean sheet is unsustainable</b></td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: ① <b>USA finishing overheated</b> — round-1 4 goals far exceeded 1.35 xG via an own goal + stoppage-time screamer; on regression true attack ≈1.3–1.4, the "4-1 rout" overstates the gap; ② <b>Australia's defense rides luck + keeper</b> — historical xGA 1.39 / round-1 xGA 1.33 both far exceed actual conceded, the clean sheet was built on Beach's 8 saves and is unsustainable; ③ both teams' round 1 was "result better than process". Sources: FootyStats (both teams' last-10 xGF/xGA/possession/shots) · Opta Analyst (round-1 xG: USA 1.35-0.47, AUS 0.77-1.33). For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection & Opta calibration</h4>
+    <table>
+      <tr><td>This-match model projected xG (xGscore)</td><td class="ht">USA ≈1.5</td><td class="sc">Australia ≈0.8</td><td>After calibration USA's possession-led projection leads — but Australia's low block + Beach's ability to compress opponent xG into actual conceded is the key variable that narrows the margin</td></tr>
+      <tr><td>Opta supercomputer W/D/L</td><td colspan="2" class="sc">USA win <b>58.5%</b> / draw 20.9% / Australia win 20.6% (25,000 simulations, opponent-adjusted)</td><td>Closely matches the de-vig odds (60/23/17); the supercomputer does not take the USA's 4-1 finishing overperformance at face value, giving Australia a 20%+ steal chance</td></tr>
+      <tr><td>Opta Power Ranking · sample strength</td><td colspan="2" class="sc">Both teams' system ratings are close <span style="color:var(--warn)">(exact figures pending)</span>; <b>trap reminder</b>: the USA's last 10 (incl. friendlies/qualifiers) faced weaker opponents, so the xG figures need a discount</td><td>USA's xGF 1.23 came mostly against weaker opposition; whether "breaking a block + finishing" stays efficient against a strong side that presses is the real question</td></tr>
+      <tr><td>PPDA · xT · field tilt · PSxG · set-piece xG share</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(pending)</span> — qualitative proxies: USA 58% possession + high-press tendency (field tilt strongly toward USA); Australia 39% possession, forced low, relying on Beach's shot-stopping value (PSxG−conceded positive) to suppress actual conceded</td><td>Field tilt likely leans toward USA for long stretches; Australia's game is "concede few + counter efficiency"</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-family" metrics mean)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (expected goals / non-penalty xG): total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (expected goals against): the quality of chances opponents create against you, measuring true defending rather than saves/luck.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (expected goal difference per 90): xGF−xGA, the single best proxy for overall strength. USA last 10 +0.03, Australia −0.56.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (avg chance quality per shot): whether shot selection is efficient — low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PSxG</b> (post-shot xG / save difficulty faced by keeper): minus actual conceded quantifies a keeper's shot-stopping added value — Beach's 8 saves in round 1 were a positive contribution.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territory/control rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources — FootyStats (both teams' last-10 measured xG/xGA/possession/shots) + Opta Analyst (round-1 xG/supercomputer). National-team public samples for PPDA/xT/field tilt/PSxG/set-piece xG share are limited; missing items are always marked "pending" and never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Celebrity picks / odds / money / sentiment</span></h2>
+    <div class="sub">The USA-win direction is highly unanimous (hosts + a clear public-money lean at home); the real divergence is on "can they win by 2 goals (handicap -1.5)" and the "Under" — most experts favor the Under</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.6">🔥</span><span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3.5/5 · Host public money runs hot; genuine divergence on handicap and Under</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The USA-win direction has converged, and as hosts at home there is a clear public-money pileup (the opening -165 was pushed at one point to -185), implying a sentiment premium; experts, meanwhile, broadly caution that "the win is there but the -1.5 lacks value" — because Australia proved tough to break down in the opener.</div>
+    </div>
+
+    <h4>① Aggregated expert picks (direction tally: USA win all · Australia win 0 · Draw 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>Data/stats firm</td><td>USA win <b>58.5%</b> (supercomputer simulation); draw 20.9% / Australia win 20.6%</td></tr>
+      <tr><td>RotoWire</td><td>Prediction media</td><td>USA win, but the -160 handicap (-1.5) lacks value (Australia tough); leans <b>USA 2-0</b></td></tr>
+      <tr><td>SportsLine (Green)</td><td>US betting media</td><td>USA win + headline pick <b>Under 2.5</b></td></tr>
+      <tr><td>Covers / Yahoo</td><td>Prediction media</td><td>Unanimous USA win; <b>2-0</b> the most common scoreline</td></tr>
+      <tr><td>CBS Sports</td><td>Player-prop view</td><td><b>Pulisic to score or assist +110</b> (premised on him playing)</td></tr>
+      <tr><td>FanDuel Research</td><td>Odds media</td><td>USA win; flags the hedging value of Australia +1.5 and the Under</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (medium-high)</b>: the result direction being highly unanimous (nobody picking Australia to win) is a reasonable consensus; but <b>hosts + home advantage have public money piling one-sidedly on USA</b>, pushing the odds low (-165→-185) — this is a genuine sentiment premium. Experts' contrarian value concentrates on <b>Australia +1.5 / Under 2.5</b> — i.e. "USA will win but not necessarily by 2 goals."</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>USA win</th><th>Interpretation</th></tr>
+      <tr><td>Open (DraftKings)</td><td>1X2</td><td class="ht">1.61 (-165)</td><td>Draw 4.20 / Australia 5.50; clearly leaning USA but not a rout</td></tr>
+      <tr><td>06-18 public money</td><td>1X2</td><td class="ht">about 1.54 (-185)</td><td>Host money pileup pushed the USA win lower → sentiment-premium signal</td></tr>
+      <tr><td>06-18/19</td><td>Over/Under 2.5</td><td colspan="2" class="sc">Over 2.5 @ 1.96 (-104); Under 2.5 @ 1.82 (-122) — slight Under lean</td></tr>
+      <tr><td>Handicap (Asian-line reference)</td><td>USA -1.5</td><td colspan="2" class="sc">USA -1.5 about +170; Australia +1.5 about -127 (experts prefer Australia +1.5)</td></tr>
+    </table>
+    <div class="note">📌 The USA win being pushed by public money from -165 to -185 is a classic host public-money heat signal — the price has already overdrawn the consensus. The most information-rich markets are <b>the handicap -1.5 and the Under 2.5</b>: most experts believe "USA win but unlikely to win by 2," so the Under and Australia +1.5 are where the divergence/value lie. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">②-b Line Positioning &amp; Movement (Open → Now)</h4>
+    <table>
+      <tr><th>Time</th><th>Line / odds (USA win)</th><th>Positioning shift · trigger</th></tr>
+      <tr><td>Tournament open (pre-group-stage · DraftKings)</td><td class="ht">about 1.74 (-135)<br><span style="font-size:11.5px;color:var(--mut)">Draw ≈4.70 (+270) / Australia ≈4.50 (+350)</span></td><td>USA set as a mild favorite, not a rout; Australia briefly viewed as the least likely Group D side to advance.</td></tr>
+      <tr><td>After USA 4-1 Paraguay (peak)</td><td class="ht">about 1.51 (-195)<br><span style="font-size:11.5px;color:var(--mut)">Draw ≈4.60 (+360) / Australia ≈6.00 (+500)</span></td><td><b>Trigger: USA's big win + host sentiment</b>. USA win shortened all the way to -195, Australia away win drifted to +500 — a brief market overreaction.</td></tr>
+      <tr><td>After Australia 2-0 Türkiye (this match's open)</td><td class="ht">about 1.61 (-165)<br><span style="font-size:11.5px;color:var(--mut)">Draw ≈4.20 (+320) / Australia ≈5.50 (+450)</span></td><td><b>Trigger: Australia's upset clean sheet over Türkiye</b>. USA pulled back in from -195 to -165, Australia away win tightened from +500 to +450 — Australia <b>repriced as a difficult opponent</b>.</td></tr>
+      <tr><td>06-18/19 current line (public money)</td><td class="ht">about 1.54 (-185) → 1.61 (-170)<br><span style="font-size:11.5px;color:var(--mut)">91% of money on USA win</span></td><td><b>Trigger: one-sided host home-crowd public-money pileup</b>. USA win shortened again (sentiment premium); meanwhile Australia +1.5 drew support and Australia's advancement / Group D top-spot futures tightened (off the bottom).</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's line ran through a full cycle — open → pushed up by the USA blowout → reeled back by the Australia upset → squeezed again by public money. <b>USA</b> remains a clear favorite, but after two rounds of pushing the price has overdrawn the consensus and carries a host sentiment premium (current -185/-170 vs a fair -165); <b>Australia</b> has completed the repricing from "bottom-of-the-table minnow" to "difficult second-seed-level opponent" — its away-win price is still long (≈5.50), but its advancement / group top-spot futures tightened materially after the 2-0, and the +1.5 line is the consensus value side among experts. In other words: the market is increasingly sure of the outcome direction (USA win) but less confident in the margin (-1.5). Sources: DraftKings (open/movement/money flow) · ESPN (live line) · Squawka (Australia advancement/outright futures). For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Opta supercomputer</b>: USA win 58.5%, draw 20.9%, Australia win 20.6% — closely matching the de-vig odds (60/23/17), with the two pools essentially converged.</li>
+      <li><b>Sentiment focus</b>: Pulisic's injury was the biggest pre-match talking point (now confirmed available); Australia's "youngest XI in history + goalkeeper Beach's heroics" upset narrative draws some emotional attention; hosts + the Seattle home atmosphere amplify the public-money lean toward USA.</li>
+      <li><b>Expert consensus vs public money divergence</b>: experts caution "USA win but -1.5 has no value," contrasting with public money pushing the USA win ever lower — the main reason the heat index rises to 3.5/5.</li>
+      <li><b>Kalshi / Polymarket</b>: public traded prices and money-flow data for this single match's result were not found <span style="color:var(--warn)">(TBC)</span>.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the bookmakers and the Opta supercomputer fully converge on the result direction (USA ≈58–60%), heat index <b>3.5/5</b> — slightly above a purely converged match, because host public money has pushed the USA-win price low, implying a sentiment premium. The genuine value divergence concentrates on <b>the handicap -1.5 (whether USA can win by 2 goals) and the Under 2.5</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputer simulation</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — betting/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — expert prediction</a> · <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — prediction/odds</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — opening odds</a></div>
+  </section>
+
+  <!-- Corner technical side -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> Corner Technical Side <span style="font-size:12px;color:var(--mut);font-weight:500">· Style × market · handicap/totals technical analysis</span></h2>
+    <div class="sub">USA actively keep the ball and besiege the low block → the side with higher corner output; Australia forced to clear out for goal kicks/touchlines also contributes corners; specific market lines TBC.</div>
+    <h4>① The two teams' corner profile (style-driven)</h4>
+    <table><tr><th>Dimension</th><th>🇺🇸 USA</th><th>🇦🇺 Australia</th><th>Meaning</th></tr>
+      <tr><td>Attacking style</td><td class="ht">High press + active possession; many wing-and-center crosses; Pulisic takes set pieces</td><td class="sc">Low-block counter; Irankunda direct counters; set-piece finishing (8 goals in qualifying)</td></tr>
+      <tr><td>Estimated corners per game</td><td class="ht">≈6–8 (possession + besieging the low block, high corner output)<span style="color:var(--warn)">TBC</span></td><td class="sc">≈3–4 (mostly defending, forced clearances out for corners)<span style="color:var(--warn)">TBC</span></td></tr>
+      <tr><td>Set-piece threat</td><td class="ht">High: Pulisic delivery + tall center-backs (Richards/Ream) attacking</td><td class="sc">High: Souttar/Circati aerial targets + free-kick routines, a trademark weapon</td></tr>
+      <tr><td>Corner-edge prediction</td><td class="ht">Clear edge (possession + siege)</td><td class="sc">Few but precise, relying on set-piece quality rather than quantity</td></tr>
+    </table>
+    <h4>② Actual market lines (corner market)</h4>
+    <p>Total-corners lines and corner-handicap quotes were not found publicly in this search <span style="color:var(--warn)">(TBC)</span>. By style profile: USA keep the ball and besiege, with markedly higher corner output, while Australia mainly clear defensively, so total corners may land in the 9–12 range; a common baseline line O/U 9.5 or 10.5 falls in the normal range, and a USA corner handicap (e.g. -2.5/-3) fits the possession-edge profile — specific odds subject to the live market.</p>
+    <h4>③ Technical read (handicap & totals)</h4>
+    <div class="insight"><div class="who">Handicap (corner handicap)</div>USA actively keep the ball and besiege Australia's low block for long stretches; the corner differential is expected to lean clearly toward USA; if USA take the lead early and ease off, the differential narrows. The USA corner handicap line is highly correlated with the main line's trajectory.</div>
+    <div class="insight"><div class="who">Totals (total corners)</div>USA pushing the total up (possession + crosses), with Australia forced to clear out for corners raising the baseline further — total corners lean medium-high (≥9); if the match is decided early and the tempo slows, it falls back to 8–9.</div>
+    <div class="insight"><div class="who">Variables and two-way risk</div>The key variable is the match shape: if Australia stick to sitting deep, USA's siege time lengthens → corner count rises; if Australia are forced to chase the game and push up (two goals down), both sides attack and both set pieces and corners may increase. Set-piece quality (Pulisic vs Souttar/Circati aerial targets) is a two-way variable.</div>
+    <div class="note">Specific corner market data was not found; the above is style-driven qualitative analysis. For reference only — not betting advice.</div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Referee appointment confirmed</b>: head referee <b>Felix Zwayer</b> (Germany, 43); assistant referees Robert Kempter & Christian Dietz (Germany). This World Cup is Zwayer's first as head referee at a World Cup (he served as VAR at the 2018 Russia World Cup); he became an international referee in 2012 and has officiated 7 Champions League matches this season. His career has a historical link to the 2005 German Hoyzer match-fixing scandal (he was once suspended for 6 months), but he has since officiated top-flight Bundesliga and European matches for years.</div>
+    <h4>Officiating profile (most recent seasons' actual data)</h4>
+    <ul class="cl">
+      <li><b>High card count, strict style</b>: career average about <b>4.63 yellow cards, 0.09 red cards</b> per game; 2024/25 Bundesliga about 4.06 yellows per game, Champions League about 5.14 cards per game, and his Champions League red-card total that season (4) was the highest of any referee — his card threshold is lower in big-match/high-intensity settings, with strict duel management and rigid rule enforcement.</li>
+      <li><b>Big-match vs league threshold gap</b>: Champions League cards are markedly higher than the Bundesliga, indicating that in high-duel, high-profile matches Zwayer tends to reach for cards earlier — with this being a key host fixture with high duel and emotional intensity, there is support for the yellow-card-totals (Over) direction. <span style="color:var(--warn)">(World Cup head-referee sample is 0, needs to be observed in combination with new big-match rules · TBC)</span></li>
+      <li><b>Officiating history with the two teams</b>: no public sample was found of Zwayer previously officiating the USA or Australia national teams <span style="color:var(--warn)">(no sample · TBC)</span>, so there is no prior tendency to reference.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-side analysis</b>: Zwayer is a German head referee who shows many cards and has a strict style, reaching for cards earlier in high-duel matches. Implications for this match: ① Australia's low-block defending + tactical fouls to break up USA counters raise booking risk, and the danger of accumulated yellows or even suspensions should be noted; ② USA's high-press pressing fouls will likewise be strictly punished; ③ in a semi-automated offside + strict-officiating environment, the penalty threshold for shirt-pulling in the box (set-piece aerial duels Richards/Souttar) is lower. Overall the referee side slightly lifts "yellow-card Over" and "potential penalty," but does not constitute the main factor changing the result.</div>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — Zwayer appointment/profile</a> · <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — Zwayer card data</a> · <a href="https://www.whoscored.com/articles/yxmRCZUvL0qaJvEz8-CWlQ/show/who-is-felix-zwayer-europa-league-final-referee-stats-tottenham-man-united">WhoScored — Zwayer officiating style</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — World Cup referee list</a></div>
+  </section>
+
+  <!-- Lineups and key players -->
+  <section>
+    <h2><span class="n">2</span> Lineups &amp; Key Players <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">Predicted · official version in the ✅ module above</span></h2>
+    <div class="sub">Predicted lineups (inferred by analysis sources, not official; subject to the pre-match official team sheet)</div>
+    <h4>🇺🇸 USA predicted lineup (4-3-3)</h4>
+    <div class="lineup">Freese; Freeman · Richards · Ream · Robinson; Adams · Tillman; Dest · McKenzie · Pulisic; Balogun</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Folarin Balogun</td><td>Striker / Monaco</td><td>Brace in the opener; core of the lone-striker pivot system, the breakthrough point against a low block</td></tr>
+      <tr><td class="ht">Christian Pulisic</td><td>Left winger / AC Milan</td><td>Captain-level core; calf injury confirmed available to start; set-piece/penalty taker</td></tr>
+      <tr><td class="ht">Tyler Adams</td><td>Defensive midfielder / Bournemouth</td><td>Midfield shield and trigger for the press; the metronome of attack-defense transitions</td></tr>
+      <tr><td class="ht">Chris Richards</td><td>Center-back / Crystal Palace</td><td>Fit and available; key to aerial defending and set-piece duels</td></tr>
+    </table>
+    <h4>🇦🇺 Australia predicted lineup (4-2-3-1, retained from the opener)</h4>
+    <div class="lineup">Beach; Italiano · Circati · Souttar · Burgess; Bos · Metcalfe · O'Neill · Okon-Engstler; Irankunda; Toure</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Nestory Irankunda</td><td>Winger/forward / Watford</td><td>20; counter goal in the opener, the youngest World Cup goalscorer in history; the most direct counter-attacking weapon</td></tr>
+      <tr><td class="sc">Patrick Beach</td><td>Goalkeeper / 22</td><td>Stood in for Ryan in the opener with 8 brilliant saves, the tournament's leading shot-stopper so far; the last line of insurance for the low block</td></tr>
+      <tr><td class="sc">Harry Souttar / A. Circati</td><td>Center-backs</td><td>Tall center-back pairing; the pillar of aerial defending and set-piece duels (two-way)</td></tr>
+      <tr><td class="sc">Connor Metcalfe</td><td>Midfielder</td><td>Second-half goal in the opener; a source of midfield coverage and forward runs</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted lineups are media analysis estimates (SI / NBC / RotoWire / FanDuel), <b>subject to the pre-match official team sheet</b>. USA's Pulisic is confirmed available (if he cannot play at the last moment, Weah takes the left); Australia's Mohamed Toure has his condition monitored after cramping (TBC), with the rest expected to retain the opener's XI.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">3</span> Tactical Style & Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 USA · Mauricio Pochettino</div>
+        <div class="role">4-3-3 high press + active possession · Balogun lone-striker pivot</div>
+        <ul class="cl">
+          <li>The hosts' core is high-press pressing + active possession, locking the center with Adams, linking through Tillman/McKenzie, leaning on Balogun as the lone-striker pivot and Pulisic/Dest to stretch width on the flanks.</li>
+          <li>The solution against a low block was delivered in the opener (4-1 Paraguay): wing-and-center combinations + individual quality + set pieces (Pulisic delivery, Richards/Ream attacking).</li>
+          <li>Risk (carried from last match): after going 3-0 up the defense slackened and conceded one back — against Irankunda's counter-attacking speed, slow recovery in the attack-to-defense transition can be punished on the counter.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e6c45a">🇦🇺 Australia · Tony Popovic</div>
+        <div class="role">4-2-3-1 disciplined low-block counter + set-piece edge</div>
+        <ul class="cl">
+          <li>The tactical focus is organizing a packed low block, compressing space, and creating chances through Irankunda's direct counters and set pieces (8 goals in qualifying) — the standard script against a stronger opponent, already validated by the 2-0 over Türkiye in the opener.</li>
+          <li>Goalkeeper Beach + tall center-backs (Souttar/Circati) form a double insurance of aerial defending and shot-stopping; midfield Bos/Metcalfe/O'Neill provide coverage and forward runs.</li>
+          <li>Risk (carried from last match): the counter template may not work as well against a USA side that actively keeps the ball, requiring stronger defensive resilience than against Türkiye; the backline must recover faster in transition, or Balogun/Pulisic's speed will punish them. Toure's status TBC.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· supercomputer model</small></div>USA win 58.5%, draw 20.9%, Australia win 20.6% — the quantitative model and market odds fully match. Opta also gives USA a 32.83% chance of finishing first (higher than Türkiye's 29.04%). The report emphasizes that USA as hosts + strength edge are clear favorites, but Australia's low-block counter structure gives them a 20%+ chance of stealing points.</div>
+    <div class="insight"><div class="who">RotoWire <small>· betting media</small></div>Explicitly cautions "USA will win, but the -160 handicap (-1.5) lacks value, because Australia proved a tough opponent against Türkiye in the opener" — leaning toward a 2-0 scoreline but opposing chasing the handicap, the most important risk reminder within the expert consensus.</div>
+    <div class="insight"><div class="who">Last two major tournaments cross-check <small>· USA vs Australia</small></div>USA: reached the Round of 16 at the 2022 World Cup (advanced from the group, lost to the Netherlands in the knockouts), but exited in the group stage at the 2024 home Copa América (early red card + toothless attack, followed by a coaching change) — hosting ≠ inevitably excelling, and <b>focus once ahead and patience against a packed defense</b> are historical weaknesses. Australia: reached the Round of 16 at the 2022 World Cup on disciplined defending + efficient counters, and the 2023 Asian Cup quarter-finals — <b>low-block counter + set pieces</b> is their repeatable scoring path at major tournaments, and the 2-0 over Türkiye in the opener was exactly this template. Conclusion: USA hold the strength and home edge, but Australia's style counters the "possession-based but switches off once ahead" type of opponent — precisely the biggest source of uncertainty in this match.</div>
+    <div class="insight"><div class="who">Composite · match-shape profile <small>· tactical signals</small></div>The difference in motivation reinforces the shape: USA (must win at home, secure top spot) actively control and apply pressure; Australia (already overachieved, can accept a draw) sit deep + steal points on counters/set pieces. The most realistic script is USA keeping the ball and besieging, looking to break the deadlock, while Australia create a chance or two of high quality through Irankunda's counters and set pieces — the decisive factors are whether USA can score early and whether they can maintain discipline once ahead and avoid being caught on the counter.</div>
+  </section>
+
+  <!-- Composite read -->
+  <section>
+    <h2><span class="n">6</span> Composite Read & TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: USA 2-0 / 2-1 controlling the game to win is the base script (experts' most common 2-0); a 1-1 draw is the biggest risk (Australia stealing points on a set piece/counter); an Australia win (about 17–20%) is the tail risk. 0-0 has a low probability (USA's active attack + home advantage).</li>
+      <li><b>Key men</b>: Balogun (USA/breakthrough pivot), Pulisic (USA/wing quality + set pieces, confirmed starting), Irankunda (Australia/counter spearhead), Beach + Souttar/Circati (Australia/aerial-defense and shot-stopping insurance).</li>
+      <li><b>Decisive factors</b>: ① whether USA can score early to open up the low block; ② whether USA can stay disciplined once ahead and avoid being caught by Irankunda (the focus risk carried from the last match); ③ two-way set-piece quality (Pulisic vs Australia's tall center-backs). Australia's willingness to accept a draw + counter resilience is the basis for their upset/point-stealing.</li>
+      <li><b>Market view</b>: bookmakers and the Opta supercomputer fully converge (USA ≈58–60%), but host public money pushed the USA win from -165 to -185, heat index <b>3.5/5</b> — there is a sentiment premium. The most information-rich markets are <b>the handicap -1.5 (whether USA can win by 2 goals) and the Under 2.5</b>, with experts leaning toward the Under / Australia +1.5.</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① whether Pulisic actually starts on the day (strongly confirmed, but still subject to the official team sheet); ② whether Australia's Mohamed Toure starts or is rotated after cramping; ③ both teams' official XI (announced pre-match); ④ no public sample of Zwayer's officiating history with USA/Australia; ⑤ Kalshi/Polymarket single-match prices and volumes not found publicly; ⑥ specific corner market data not found; ⑦ specific Asian-line odds and handicap lines, and the impact of Group D's other match (Paraguay vs Türkiye) result on qualification scenarios, subject to live pre-match data.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — Group D (USA, Australia, Paraguay, Türkiye)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021462">FIFA official schedule — USA vs Australia</a> · <a href="https://www.espn.com/soccer/story/_/id/49093966/fifa-world-cup-2026-usmnt-vs-australia-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — Schedule/lineups/referee</a><br>
+      • <a href="https://www.si.com/soccer/usmnt-vs-australia-world-cup-preview-predictions-lineups-6-19-26">SI — Preview/prediction/lineups</a> · <a href="https://www.nbcsports.com/soccer/news/how-will-usa-line-up-against-australia-in-second-game-of-their-2026-world-cup-as-pochettinos-usmnt-seek-2-0-start">NBC Sports — USA lineup/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-projected-world-cup-lineup-australia-christian-pulisic-injury-usa-soccer/">CBS — Pulisic injury</a><br>
+      • <a href="https://theanalyst.com/articles/usa-vs-australia-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputer simulation</a> · <a href="https://www.rotowire.com/soccer/article/usa-vs-australia-picks-tips-odds-best-bets-2026-world-cup-group-d-118787">RotoWire — betting/best bets</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — expert prediction</a><br>
+      • <a href="https://www.covers.com/world-cup/usa-vs-australia-prediction-picks-odds-friday-6-19-2026">Covers — prediction/odds</a> · <a href="https://dknetwork.draftkings.com/2026/06/14/opening-odds-for-usa-vs-australia-in-the-fifa-2026-world-cup/">DraftKings — opening odds</a> · <a href="https://www.fanduel.com/research/usa-vs-australia-lineups-predictions-availability-and-best-bets-for-world-cup-2026-june-19">FanDuel — team news/lineup/best bets</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13552630/world-cup-2026-australia-2-0-turkey-socceroos-make-winning-start-to-group-d-campaign-in-vancouver">Sky Sports — Australia 2-0 Türkiye review</a> · <a href="https://www.goal.com/en-us/news/usa-australia-world-cup-preview/blt5390354708818a6c">Goal — Preview/Toure</a> · <a href="https://www.foxsports.com/stories/soccer/usa-australia-referee-felix-zwayer-what-know">FOX Sports — referee Zwayer</a><br>
+      • <a href="https://www.statshub.com/referee/zwayer-felix/52417">StatsHub — Zwayer card data</a> · <a href="https://www.espn.com/soccer/story/_/id/48940468/usa-world-cup-2026-schedule-fixtures-results-scores-group-d-how-watch-news-analysis-injuries">ESPN — Group D picture/injuries</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — World Cup referee list</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-19 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#d4a017',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['USA win','Draw','Australia win'],datasets:[{data:[60,23,17],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vig)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vig, slight Under lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['USA','Türkiye','Australia','Paraguay'],datasets:[{data:[17,26,27,40],backgroundColor:[HT,'#c8102e',SC,'#d52b1e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower is stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'USA',data:[6.5,7.5,7.5,6.5,7.5,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Australia',data:[7,5.5,5.5,7,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 摩洛哥 vs 海地 · 2026世界杯 C组末轮（摩洛哥争头名）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-morocco-vs-haiti.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-morocco-vs-haiti.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d52b1e;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b81c25,#9c1420);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241317,#0e1f2a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#f0a3a3;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-morocco-vs-haiti.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · C组末轮 · 摩洛哥争小组头名 · 海地已出局为荣誉而战</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 摩洛哥 4-2 海地</span>
+  <h1>摩洛哥 vs 海地</h1>
+  <div class="meta">2026年6月24日 · 亚特兰大 Mercedes-Benz Stadium · 18:00 ET（22:00 GMT）· C组（同组：苏格兰、巴西）· 末轮</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇲🇦 摩洛哥</div><div class="rk">FIFA #12 区间 · 1-1 巴西 + 1-0 苏格兰 · 4 分（净+1）· 2022 世界杯四强 · 掌握出线主动权</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0a3a3">🇭🇹 海地</div><div class="rk">FIFA #80 区间 · 0-1 苏格兰 + 0-3 巴西 · 0 分（净-4）· 两连败已出局 · 为荣誉而战</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-25） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 摩洛哥 4-2 海地（半场 2-2 左右） · 06-24</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">亚特兰大的进球大战：海地<b>时隔 52 年首次在世界杯破门</b>（第 <b>10 分钟</b>，亦是海地本届首球）一度领先，随后双方互交火力。<b>Achraf Hakimi（39'）、Ismael Saibari（45+1'）</b>为摩洛哥追平/反超；海地 <b>Wilson Isidor（43'）</b>再入一球，半场 2-2 鏖战。下半场替补奇兵建功：<b>Soufiane Rahimi（78'）</b>角球乱战中（略有折射）破门反超，<b>Gessime Yassine（89'）</b>补刀锁定 4-2。摩洛哥晋级 32 强（C 组第 2）；海地两战出局、本场仍打入 2 球虽败犹荣。<span style="color:var(--warn);font-size:12px">（海地进球的具体射手归属各源略有出入 · 待核细节）</span></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 10' 海地（队史 52 年来世界杯首球）· 39' Hakimi · 43' Isidor（海）· 45+1' Saibari · 78' Rahimi · 89' Yassine｜替补 Rahimi+Yassine 逆转</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / Squawka）</h4>
+    <table>
+      <tr><th>指标</th><th>🇲🇦 摩洛哥</th><th>🇭🇹 海地</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>60%</b></td><td>40%</td><td>摩洛哥掌控球权，主导但被海地反击两度破门——防守专注度不足</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>3.26</b></td><td>0.66</td><td>3.26 xG 进 4 球，效率匹配；海地 0.66 xG 进 2 球，终结效率超模型（含运气成分）</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>12 / 7</b></td><td>—</td><td>摩洛哥 12 射 7 正、质量高；海地射门少但抓住了有限机会</td></tr>
+      <tr><td class="ht">替补影响</td><td colspan="2"><b>Rahimi（78' 球+助攻 Yassine 89'）= 摩洛哥下半场胜负手</b></td><td>替补登场逆转，板凳深度决定比赛</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.squawka.com/en/news/world-cup/morocco-vs-haiti-stats-report-25-06-2026/">Squawka — Morocco 4-2 Haiti Stats</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-morocco-vs-haiti-jun-24-2026-game-boxscore-647667">FOX Sports</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760464/haiti-morocco">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">赢了比分、暴露了防守——摩洛哥的"赢球隐忧"</div>60% 控球、3.26 xG 进 4 球，却被弱旅海地两度破门。<b>说明摩洛哥进攻火力充足，但防守在领先/被追时专注度不足、易被反击打穿</b>——这是其晋级淘汰赛后必须修补的漏洞，否则对强队会付出代价。</div>
+    <div class="insight"><div class="who">板凳深度是摩洛哥的真正优势</div>下半场 Rahimi（球 + 助攻）、Yassine（进球）双替补逆转。<b>说明摩洛哥即使首发被纠缠，也能靠板凳改变比赛</b>——这是 2022 四强班底沉淀下来的阵容厚度，淘汰赛极宝贵。</div>
+    <div class="insight"><div class="who">海地虽败犹荣，但防守仍是出局根源</div>52 年来首次世界杯破门、单场两球、0.66 xG 超效率。<b>说明海地的进攻拼劲与个人闪光值得肯定，但两战连负、防线挡不住强队火力是出局根本</b>——可复制的是反击得分路径，需补的是整体防守组织。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">摩洛哥胜（隐含 ≈82%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>4-2 取胜，与 82% 的强favorite一致</td></tr>
+      <tr><td class="ht">"摩洛哥争头名 · 海地为荣誉而战"</td><td style="color:var(--warn)"><b>~ 部分</b></td><td>摩洛哥获胜晋级但仅 C 组第 2（巴西头名）；海地"荣誉战"打入 2 球兑现拼劲</td></tr>
+      <tr><td class="ht">海地难破门（赛前隐含 6%）</td><td style="color:var(--bad)"><b>✗ 被推翻</b></td><td>海地不仅破门、还梅开两度——52 年首球，远超赛前预期</td></tr>
+      <tr><td class="ht">进球数</td><td style="color:var(--good)"><b>✓ 大幅走大</b></td><td>全场 6 球，远超任何小球预期</td></tr>
+      <tr><td class="ht">市场过热 1/5</td><td style="color:var(--good)"><b>✓ 低过热兑现</b></td><td>胜负无悬念，分歧仅在比分——符合 1/5 判读</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#c0392b">🇲🇦 摩洛哥 · 晋级 32 强（C组第2）</h4>
+        <ul class="watch">
+          <li><b>C 组亚军晋级，6/28 起对阵 F 组头名</b>（按 C 组亚军对 F 组头名的赛制）。</li>
+          <li><b>防守专注度必须修补</b>：被海地两度破门暴露反击防线漏洞，对强队是致命隐患（带入下一场分析）。</li>
+          <li><b>板凳深度是杀招</b>：Rahimi、Yassine 替补逆转，淘汰赛轮换与奇兵价值高。</li>
+          <li><b>Hakimi 攻击端价值</b>：右路插上参与进球，是摩洛哥进攻发起点。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#9aa7c7">🇭🇹 海地 · 已出局（C组垫底）</h4>
+        <ul class="watch">
+          <li><b>两战出局</b>，但本场打入 52 年来世界杯首球（且梅开两度），拼劲与个人闪光值得肯定。</li>
+          <li><b>反击得分路径可复制</b>：低控球下仍能抓机会破门，是其唯一现实威胁。</li>
+          <li><b>整体防守组织待重建</b>：挡不住强队火力是连负出局的根本。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 C 组末轮一场<b>实力与状态差距巨大的一边倒对决</b>：摩洛哥两战 4 分（1-1 平巴西、1-0 胜苏格兰、Saibari 早段进球），净胜球 +1、<b>掌握出线主动权并争小组头名</b>；海地则两连败、0 分已提前出局（0-1 负苏格兰、0-3 负巴西），本场<b>纯为荣誉而战</b>。盘口呈现明显一边倒——摩洛哥 ESPN 报价 <b>-525（约欧赔 1.19）</b>、最佳主胜价约 2/9（≈1.22），总分线 O/U <b>3.5</b>。形势上，摩洛哥即便本场失利，只要同时进行的<b>巴西击败苏格兰</b>，仍能出线；作为 <b>2022 世界杯四强</b>，摩洛哥的旅欧骨架与大赛经验对海地形成全面碾压。三处看点：① <b>摩洛哥是否轮换保护主力</b>（出线在望，主帅可能权衡体能与争头名动机）；② <b>队长 Hakimi 第 99 次国家队出场</b>（刚随巴黎夺欧冠）；③ <b>海地能否为荣誉博进一球</b>（Nazon 伤情存疑、Bellegarde/Isidor 是反击威胁）。基准剧本：<b>摩洛哥多球取胜</b>，但本届摩洛哥进攻效率一般 + 可能轮换，让大 3.5 未必稳；过热指数 ≈ 1/5（一边倒、几乎无三向分歧）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">摩洛哥隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈82%</div></div>
+      <div class="key"><div class="k">海地隐含胜率(去水)</div><div class="v" style="color:#f0a3a3">≈6%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈12%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">1/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线主动权与争头名（出线算术）</b>：摩洛哥 4 分（净 +1）领跑，本场目标是夺 C 组头名；即便本场失利，只要同时进行的<b>巴西击败苏格兰</b>，摩洛哥也能出线。这让摩洛哥的"求胜烈度"看似有保险垫，但争头名仍是强动机。</li>
+      <li><b>摩洛哥可能轮换保护主力（关键变量）</b>：主帅 Ouahbi/Sektioui 出线在望，可能权衡体能、保护 Hakimi、Brahim Díaz 等核心；若轮换，进攻效率与大球预期下修——这是本场最大的人员变量（首发以官方为准）。</li>
+      <li><b>海地为荣誉而战（已出局）</b>：两连败、净 -4、两场未进球，海地已无晋级可能，唯一目标是博一球荣誉；Bellegarde（狼队）与速度型 Isidor（桑德兰）是其反击端主要威胁，但历史最佳射手 Nazon 伤情存疑。</li>
+      <li><b>摩洛哥进攻效率一般（本届带入）</b>：本届两战仅 2 球（1-1 巴西、1-0 苏格兰，Saibari 早段破门），防守稳但运动战效率不高；面对海地有望放量，但叠加可能轮换，大 3.5 并非稳赢——这是盘口与大球的核心矛盾。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队本届带入项；关键球员可用性已多源交叉）</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ 关键球员核查 · 摩洛哥无新增伤病 · 或连续第三场不变首发 <span style="color:var(--mut);font-weight:400">· Goal / RotoWire / Sports Mole · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：摩洛哥<b>无新增伤病</b>，主帅 Ouahbi/Sektioui 可能<b>连续第三场排出不变首发</b>；Hakimi 将迎第 99 次国家队出场</div>
+      <p style="font-size:13.5px">关键球员可用性多源交叉：Goal、RotoWire、Sports Mole 报道摩洛哥无新增伤病，主帅有望延续前两场阵容。<b>Saibari（PSV）</b>与 <b>Brahim Díaz（皇马）</b>继续担纲进攻；后防四人为 <b>Hakimi、Chadi Riad、Issa Diop、Mazraoui</b>。队长 <b>Achraf Hakimi</b>（刚随巴黎夺欧冠）将迎来<b>第 99 次国家队出场</b>。<span style="color:var(--warn)">[是否因出线在望而轮换保护主力 · 待核，以赛前 FIFA Match Centre 官方名单为准]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：摩洛哥是否轮换直接决定本场强度与大球预期。若延续主力阵容、全力争头名，对海地的压制与进球量上修；若 Ouahbi 保护 Hakimi/Brahim Díaz 等核心、给替补机会，进攻效率与大 3.5 概率下修。这是本场最大的单点变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en-us/category/world-cup" style="color:var(--accent)">Goal — 前瞻/预测首发</a> · <a href="https://www.rotowire.com/soccer/" style="color:var(--accent)">RotoWire — 团队消息/伤情</a> · <a href="https://www.sportsmole.co.uk/football/morocco/" style="color:var(--accent)">Sports Mole — 阵容预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">⭐ 关键球员核查 · 海地 Nazon 伤情存疑（多源） <span style="color:var(--mut);font-weight:400">· RotoWire / Sports Mole / AfricaSoccer · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">海地历史最佳射手 <b>Duckens Nazon（国家队 44 球）因不明伤病存疑（doubtful）</b>；威胁集中于 Bellegarde 与 Isidor</div>
+      <p style="font-size:13.5px">关键球员可用性多源交叉：RotoWire、Sports Mole 等报道海地头号射手 <b>Duckens Nazon</b>（队史最佳，44 球）因不明伤病<b>存疑（doubtful）</b>，能否出战待赛前确认。中场 <b>Jean-Ricner Bellegarde（狼队）</b>与速度型攻击手 <b>Wilson Isidor（桑德兰）</b>是海地反击端主要威胁。<span style="color:var(--warn)">[Nazon 是否进入名单/首发 · 待核，多源仍在跟踪]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：海地已出局、为荣誉而战，进攻端最现实的"博一球"指望落在 Bellegarde 的串联与 Isidor 的速度上。Nazon 若缺阵，海地的终结点更稀薄，对摩洛哥的反击威胁进一步降低；若 Nazon 能上，海地仍有一名经验射手可制造意外。这关系到海地能否"为荣誉博进一球"。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rotowire.com/soccer/" style="color:var(--accent)">RotoWire — 伤情/团队消息</a> · <a href="https://www.sportsmole.co.uk/football/haiti/" style="color:var(--accent)">Sports Mole — 海地前瞻</a> · <a href="https://africasoccer.com/" style="color:var(--accent)">AfricaSoccer — 球员状态</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 + 出线形势 <span style="color:var(--mut);font-weight:400">· Elbotola / MoroccoWorldNews · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：荷兰籍 <b>Danny Makkelie</b>（欧洲顶级国际级主裁）；摩洛哥主帅已就荷兰裁判组任命表态</div>
+      <p style="font-size:13.5px">据 Elbotola、MoroccoWorldNews，本场主裁为荷兰籍 <b>Danny Makkelie</b>，助理 <b>Hessel Steegstra、Jan de Vries</b>（均荷兰），第四官员 <b>João Pinheiro</b>（葡萄牙）。Makkelie 系 UEFA/FIFA 体系顶级、经验丰富的国际级主裁，尺度偏稳健、敢吹点球。摩洛哥主帅已就荷兰裁判组任命公开表态。亚特兰大 Mercedes-Benz Stadium 为可开闭顶棚球场，环境可控。<span style="color:var(--warn)">[Makkelie 场均出牌/判点精确细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：一边倒比赛里裁判对胜负影响极小，主要价值在牌数与潜在点球。Makkelie 尺度稳健、敢吹点球——摩洛哥若大举压上、海地禁区内防守动作变形，点球是观察点；详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.elbotola.com/" style="color:var(--accent)">Elbotola — 裁判任命/主帅表态</a> · <a href="https://www.moroccoworldnews.com/" style="color:var(--accent)">Morocco World News — 裁判组</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — 世界杯裁判名单</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· C组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 3.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队 FIFA 排名（越低越强 · 近似）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇲🇦 摩洛哥</th><th>🇭🇹 海地</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#12 区间</td><td class="sc">#80 区间</td></tr>
+      <tr><td>前两轮</td><td class="ht">1-1 巴西 + 1-0 苏格兰（4 分，净 +1）</td><td class="sc">0-1 苏格兰 + 0-3 巴西（0 分，净 -4）</td></tr>
+      <tr><td>C 组形势（末轮前）</td><td colspan="2">摩洛哥 4(+1) 领跑、掌握出线主动权争头名；海地 0(-4) 已出局；同组另一场 苏格兰 vs 巴西。摩洛哥即便本场失利，只要巴西胜苏格兰仍出线</td></tr>
+      <tr><td>主教练</td><td class="ht">Ouahbi / Sektioui（摩洛哥）</td><td class="sc">海地主帅（待核）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Hakimi(C，第99次出场)、Brahim Díaz、Saibari、Mazraoui、Issa Diop</td><td class="sc">Bellegarde、Isidor、Nazon（存疑）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">是否轮换保护主力；锋线放量；争头名动机</td><td class="sc">Nazon 是否出战；能否为荣誉博一球</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">WC 2022 四强（历史最佳）· 非洲杯 2023 十六强（点球负南非）</td><td class="sc">本届为时隔多年重返世界杯 · 金杯赛常客（中北美区）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈1.22（-525，隐含≈82%）</td><td class="sc">胜 ≈12+（≈6%）· 平 ≈7+（≈12%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线 O/U 3.5（ESPN）——一边倒盘口，核心市场是让球（深盘）与大小球</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈82/12/6，归一后）。赔率来源：ESPN（摩洛哥 -525 ≈1.19、最佳主胜价约 2/9 ≈1.22）；总分线 O/U 3.5。让球盘为摩洛哥深让。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇲🇦 摩洛哥 · 进攻</td><td class="ht">WC2022 四强靠效率与防反，进攻产出向来中游、不靠堆量</td><td class="ht">2 战 2 球（1-1 巴西、1-0 苏格兰，Saibari 早段破门）</td><td><b>效率一般</b>：两战仅 2 球，运动战创造力不算高；面对海地有放量空间，但叠加可能轮换，进球量存疑</td></tr>
+      <tr><td class="ht">🇲🇦 摩洛哥 · 防守</td><td class="ht">WC2022 仅失 1 球（半决赛前），旅欧后防 + Hakimi/Mazraoui 两翼，历来极稳</td><td class="ht">2 战丢 1 球（仅巴西进 1），净 +1</td><td><b>达标</b>：防线是摩洛哥的核心资产；对海地几乎不构成考验</td></tr>
+      <tr><td class="sc">🇭🇹 海地 · 进攻</td><td class="sc">中北美区中下游，依赖个别旅欧球员的速度与个人能力</td><td class="sc">2 战 0 球（净 -4）<span style="color:var(--warn)">[xG 细分 · 待核]</span></td><td><b>低迷</b>：两场未进球，缺乏稳定终结点；Nazon 存疑进一步削弱终结</td></tr>
+      <tr><td class="sc">🇭🇹 海地 · 防守</td><td class="sc">面对强队易被打穿，定位球与转换防守是弱点</td><td class="sc">2 战丢 4 球（0-1 苏格兰、0-3 巴西）</td><td><b>偏弱</b>：对巴西被打出 0-3，防线结构与对抗均处劣势；对摩洛哥的旅欧攻击群压力巨大</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：摩洛哥防守稳但本届进攻效率一般（2 战 2 球），海地两战 0 球失 4 球、攻防两端均处明显劣势。深度数据支持"摩洛哥实力碾压、但其堆量能力有限 + 可能轮换 → 大球未必如盘口表面那么稳"的主线。来源：Opta Analyst · FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。公开缺失项标"待核"。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">摩洛哥 ≈2.0–2.4</td><td class="sc">海地 ≈0.4</td><td>摩洛哥大幅占优；但本届其运动战效率不高 + 可能轮换，实际进球可能低于"碾压"印象</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内摩洛哥（WC2022 四强、旅欧密度高）远高于海地；超算给摩洛哥压倒性胜率、海地几无机会。摩洛哥晋级概率极高（出线主动权 + 巴西胜苏格兰的双保险）</td><td>对手强度校准后摩洛哥本届样本含金量中等（对巴西/苏格兰均为强对手，效率偏保守）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：摩洛哥控球与 field tilt 将大幅领先、海地深守反击；摩洛哥边路 Hakimi/Mazraoui 的 xT 贡献是主要进攻来源</td><td><b>陷阱提醒</b>：摩洛哥"出线在望 + 可能轮换 + 进攻效率一般" → 大 3.5 承压；海地若全力反击或博一球荣誉，可能形成 1-2 球的"小胜"而非大胜</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是一场一边倒共识场——摩洛哥深盘大热、海地几无拥趸；1X2 几乎无价格发现，信息含量集中在让球/大小球与轮换博弈</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥<span style="opacity:.25">🔥🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">1/5 · 一边倒共识、几乎无三向分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">全市场共识摩洛哥大胜（-525 ≈82%），海地已出局几无拥趸。<b>唯一信息含量</b>来自摩洛哥是否轮换（影响大小球）与让球线定位，而非 1X2 本身。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向高度一致：摩洛哥取胜）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>ESPN</td><td>赔率/前瞻</td><td>摩洛哥 -525 深盘大热，O/U 3.5；视为一边倒</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>预测摩洛哥取胜；关注是否轮换与 Nazon 伤情</td></tr>
+      <tr><td>Goal / RotoWire</td><td>团队消息</td><td>摩洛哥无新增伤病、或不变首发；海地终结点稀薄</td></tr>
+      <tr><td>Yahoo</td><td>综合体育</td><td>摩洛哥实力碾压，海地为荣誉而战</td></tr>
+      <tr><td>AfricaSoccer</td><td>地区媒体</td><td>关注摩洛哥争头名与 Hakimi 第 99 次出场里程碑</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（低）</b>：本场是典型<b>一边倒共识</b>，无三向分歧、无情绪溢价博弈空间。真正的不确定性在<b>摩洛哥是否轮换</b>（决定进球量与大小球）与<b>海地能否博进一球</b>——这两点影响让球/大小球，而非 1X2。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>摩洛哥胜 / 平 / 海地胜</th><th>解读</th></tr>
+      <tr><td>开档（综合）</td><td>1X2</td><td class="ht">≈1.20 / 7+ / 12+</td><td>摩洛哥即被定为深盘大热，海地几无价值</td></tr>
+      <tr><td>06-23 截止</td><td>ESPN / 最优价</td><td class="ht">≈1.19–1.22（-525）/ — / —</td><td>价格稳定、波动极小，一边倒定价</td></tr>
+      <tr><td>06-23</td><td>大/小球</td><td colspan="2" class="ht">总分线 O/U 3.5——市场对摩洛哥放量有预期，但轮换可能压制大球</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">摩洛哥胜 ≈1.20；深让；O/U 3.5</td><td>以"WC2022 四强 vs 已出局弱旅"定价，初盘即把摩洛哥定为深盘大热、大 3.5 标准盘</td></tr>
+      <tr><td>开盘（次轮赛后重定价）</td><td class="ht">摩洛哥 -525 ≈1.19；O/U 3.5</td><td><b>repricing 来自双方次轮</b>：摩洛哥 1-0 苏格兰巩固出线主动权但进攻仅 2 球、效率一般；海地 0-3 负巴西、两战 0 球——市场把盘口推向极深，但<b>O/U 维持 3.5 而非更高</b>，正是计入"摩洛哥效率一般 + 可能轮换"</td></tr>
+      <tr><td>现盘（06-23→现）</td><td class="ht">摩洛哥 ≈1.19–1.22；让球深盘；O/U 3.5</td><td>价格发现集中在<b>摩洛哥是否轮换</b>（影响让球能否打出、大小球方向）与<b>海地能否博一球</b>；1X2 本身几无信息含量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：摩洛哥 -525 深盘 + 大 3.5 的组合，表面是"碾压 + 多球"，但本届摩洛哥进攻效率一般（2 战 2 球）、且出线在望<b>可能轮换保护主力</b>——这让<b>大 3.5 承压、深盘的让球价值打折</b>。深盘本身留给"博摩洛哥赢但球数不多"的逻辑空间。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（聚合）</b>：与博彩去水一致给摩洛哥压倒性胜率、海地几无机会；本场无晋级悬念（摩洛哥近出线、海地已出局）。<span style="color:var(--warn)">[本场单场成交量/动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>摩洛哥争 C 组头名</b>——作为 WC2022 四强，摩洛哥是否以头名出线、为淘汰赛卡位是主叙事。</li>
+      <li><b>舆论焦点 ②</b>：<b>Hakimi 第 99 次国家队出场</b>——刚随巴黎夺欧冠的队长里程碑，是本场最大流量与情绪点。</li>
+      <li><b>海地叙事</b>：已出局、为荣誉而战；Nazon 伤情与 Bellegarde/Isidor 能否博进一球是海地侧的看点。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是本日信息含量最低的一边倒场次之一——共识高度一致、过热指数 <b>1/5</b>。1X2 几无价格发现，核心变量是<b>摩洛哥是否轮换</b>与<b>海地能否博一球</b>，并连带影响让球与大小球（轮换 → 大 3.5 承压）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/">ESPN — 赔率/前瞻</a> · <a href="https://www.sportsmole.co.uk/football/morocco/">Sports Mole — 预测/团队消息</a> · <a href="https://www.goal.com/en-us/category/world-cup">Goal — 前瞻</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — 综合</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：本场主裁为荷兰籍 <b>Danny Makkelie</b>，助理 <b>Hessel Steegstra、Jan de Vries</b>（均荷兰），第四官员 <b>João Pinheiro</b>（葡萄牙）。摩洛哥主帅已就荷兰裁判组任命公开表态。来源：Elbotola、Morocco World News、ESPN 裁判名单。<span style="color:var(--warn)">[VAR 组合与场均细分 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Makkelie 来自荷兰、UEFA/FIFA 体系顶级主裁——<b>经验丰富、尺度偏稳健、敢吹点球</b>，对清晰的禁区接触不回避判罚，对战术犯规与拖延管理到位。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届实际样本</b>：作为欧洲一线主裁，其控场与点球判罚向来果断；本届/大赛单场出牌/判点的精确场均细分公开样本以官方为准。<span style="color:var(--warn)">[场均黄牌/判点率细分 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：与摩洛哥（欧洲赛事中常见荷兰裁判）有一定交集，与海地无显著公开执法史；摩洛哥主帅已就裁判组任命表态，但无证据显示存在倾向。</li>
+      <li><b>两面性</b>：这是一场实力悬殊、摩洛哥大举压上的比赛——海地深守禁区，<b>点球与累积黄牌</b>是主要观察点：Makkelie 敢吹点球，海地若防守动作变形易送点；牌数盘宜以倾向性看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在一边倒格局下，裁判对胜负几乎无影响，价值集中在牌数/点球：摩洛哥的持续压迫 + Makkelie 敢吹点球，使<b>点球与海地黄牌</b>成为观察点。鉴于其本届单场细分样本以官方为准，相关盘口以倾向看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（Goal / RotoWire / Sports Mole 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇲🇦 摩洛哥 预测首发（4-3-3，或延续不变阵容）· Ouahbi / Sektioui</h4>
+    <div class="lineup">门将; Hakimi(C) · Issa Diop · Chadi Riad · Mazraoui; 中场三人(含 Ounahi/Amrabat 类); Brahim Díaz · Saibari · 边锋</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Achraf Hakimi (C)</td><td>右后卫/队长 / 巴黎</td><td>刚随巴黎夺欧冠；本场将迎<b>第 99 次国家队出场</b>；右路推进与定位球的核心，摩洛哥最高个人上限之一</td></tr>
+      <tr><td class="ht">Brahim Díaz</td><td>前腰/边锋 / 皇马</td><td>进攻组织与终结点，摩洛哥运动战创造力的主要来源</td></tr>
+      <tr><td class="ht">Abdellah Saibari</td><td>中场/进攻 / PSV</td><td>本届对苏格兰早段破门者；继续担纲进攻串联</td></tr>
+      <tr><td class="ht">Noussair Mazraoui</td><td>左/右后卫 / 曼联</td><td>后防四人之一，两翼推进与防守覆盖，遏制海地反击</td></tr>
+    </table>
+    <h4>🇭🇹 海地 预测首发（4-4-2 / 4-2-3-1）· 以 Bellegarde、Isidor 为核心</h4>
+    <div class="lineup">门将; 后防四人; Bellegarde · 中场; Isidor · 攻击手（Nazon 存疑）</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Jean-Ricner Bellegarde</td><td>中场 / 狼队</td><td>海地中场的串联与质量，反击端组织核心</td></tr>
+      <tr><td class="sc">Wilson Isidor</td><td>攻击手 / 桑德兰</td><td>速度型前锋，海地打反击/博一球荣誉的主要爆点</td></tr>
+      <tr><td class="sc">Duckens Nazon</td><td>前锋 / 队史最佳射手(44 球)</td><td>因不明伤病<b>存疑（doubtful）</b>；若能上是经验终结点 <span style="color:var(--warn)">出战/首发待核</span></td></tr>
+      <tr><td class="sc">海地后防</td><td>整体</td><td>两战失 4 球（含 0-3 负巴西），面对摩洛哥旅欧攻击群压力巨大</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（Goal / RotoWire / Sports Mole），<b>以赛前官方名单为准 · 待核</b>。摩洛哥焦点是 Ouahbi 是否因"出线在望"轮换、或延续不变阵容；海地焦点是 Nazon 是否进入名单/首发及 Bellegarde、Isidor 的使用。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 各自洲际杯/金杯赛）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇲🇦 摩洛哥 · Ouahbi / Sektioui</div>
+        <div class="role">4-3-3 控形 + 旅欧硬骨架 + 两翼推进，效率与防反见长</div>
+        <ul class="cl">
+          <li>摩洛哥的招牌是<b>结构完整 + 旅欧球员质量 + 两翼（Hakimi/Mazraoui）推进 + 高效防反</b>——WC2022 四强是历史最佳样本，证明这套打法能击退顶级强队、下限极高。</li>
+          <li>交叉参照：WC 2022 一路淘汰西班牙、葡萄牙进四强（防守仅失少量球）、非洲杯 2023 十六强点球出局——<b>对强队靠效率与防守，进攻不靠堆量</b>。本届对巴西/苏格兰也是 1-1 与 1-0 的"低耗高效"。面对海地这种弱旅，理论上可放量，但其堆量习惯有限。</li>
+          <li>本场切入口：用控球与两翼推进压制海地、靠 Brahim Díaz/Saibari 的创造与定位球求多球；须留意海地 Isidor 的速度反击身后空当。出线主动权在手（且有巴西胜苏格兰的双保险），是否全力堆量取决于争头名意愿与轮换决定。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0a3a3">🇭🇹 海地 · 主帅（待核）</div>
+        <div class="role">4-4-2 / 4-2-3-1 深守反击，依赖 Bellegarde 串联 + Isidor 速度</div>
+        <ul class="cl">
+          <li>海地的现实打法是<b>深守 + 快速转换 + 个别旅欧球员个人能力</b>——两战 0 球失 4 球（0-1 苏格兰、0-3 负巴西），攻防两端均处明显劣势，缺乏稳定终结点。</li>
+          <li>交叉参照：本届为时隔多年重返世界杯，面对强队（巴西）被打出 0-3，防线结构与对抗不足；金杯赛层面尚有竞争力，但与摩洛哥这种 WC 四强存在代差。</li>
+          <li>本场应对：已出局、为荣誉而战，最现实目标是<b>收缩防线、限制失球、靠 Bellegarde/Isidor 的转换博一球荣誉</b>；Nazon 若能上多一名经验终结点。但面对摩洛哥的旅欧攻击群与两翼推进，海地大概率被压制。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 赛前前瞻</small></div>一边倒对决，摩洛哥 -525 深盘大热；看点在是否轮换与 Nazon 伤情。摩洛哥实力与状态全面碾压海地。</div>
+    <div class="insight"><div class="who">Goal / RotoWire <small>· 团队消息</small></div>摩洛哥无新增伤病、或连续第三场不变首发，Hakimi 迎第 99 次出场；海地终结点稀薄、Nazon 存疑。</div>
+    <div class="insight"><div class="who">Yahoo / AfricaSoccer <small>· 综合/地区媒体</small></div>摩洛哥争 C 组头名，即便失利只要巴西胜苏格兰仍出线；海地已出局为荣誉而战，悬念集中在球数而非胜负。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念是<b>球数与头名</b>而非胜负。⚠ 陷阱提醒：摩洛哥本届进攻效率一般（2 战 2 球）+ 出线在望<b>可能轮换保护主力</b>，"大 3.5"未必如盘口表面那么稳；海地若深守博一球，可能是 1-2 球的小胜。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：摩洛哥取胜是高确定性基准。但球数存疑——本届摩洛哥进攻效率一般、且出线在望可能轮换保护主力，"碾压式大胜"概率低于盘口表面；海地深守博一球荣誉时，1-2 球的小胜是合理剧本。</li>
+      <li><b>关键先生</b>：Hakimi（摩/队长、第99次出场、两翼推进）、Brahim Díaz（摩/创造与终结）、Saibari（摩/进攻串联）；Bellegarde（海/串联）、Isidor（海/速度反击）、Nazon（海/终结点，存疑待核）。</li>
+      <li><b>胜负手</b>：① 摩洛哥是否延续主力、全力争头名（决定球数与大小球）；② 海地能否收缩限制失球并博一球荣誉；③ 摩洛哥两翼推进能否打穿海地深守。</li>
+      <li><b>市场视角</b>：本日典型一边倒场（≈82/12/6），1X2 几无价格发现空间；过热指数 1/5。核心变量是摩洛哥是否轮换 + 海地能否博一球，并连带影响让球深盘与大小球（轮换 → 大 3.5 承压）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>摩洛哥是否因出线在望而轮换保护主力</b>（赛日再核，与官方 XI 对齐）；③ <b>海地 Nazon 是否进入名单/首发</b>（多源持续跟踪）；④ Makkelie 完整裁判组与 VAR 组合、其本届单场出牌/判点细分；⑤ 同组 苏格兰 vs 巴西 结果对摩洛哥出线/头名的连带影响（以 FIFA 官方判定为准）；⑥ 让球线与大小球总分线（O/U 3.5）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/">ESPN — 赔率/前瞻/裁判名单</a> · <a href="https://www.sportsmole.co.uk/football/morocco/">Sports Mole — 前瞻/团队消息/Nazon</a> · <a href="https://www.goal.com/en-us/category/world-cup">Goal — 前瞻/预测首发</a> · <a href="https://www.rotowire.com/soccer/">RotoWire — 伤情/团队消息</a><br>
+      • <a href="https://www.elbotola.com/">Elbotola — 裁判任命/主帅表态</a> · <a href="https://www.moroccoworldnews.com/">Morocco World News — 裁判组</a> · <a href="https://africasoccer.com/">AfricaSoccer — 球员状态/头名</a> · <a href="https://sports.yahoo.com/soccer/">Yahoo — 综合</a><br>
+      • <a href="https://www.skysports.com/football">Sky Sports — 前瞻/赔率</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup">FIFA Match Centre — 官方名单/出线判定</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_C">Wikipedia — C组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d52b1e',SC='#c8102e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['摩洛哥胜','平局','海地胜'],datasets:[{data:[82,12,6],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 3.5 球','小 3.5 球'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，轮换风险使大球承压）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[5,12,40,80],backgroundColor:['#e8cd6b',HT,'#7fa6e6',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强 · 近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'摩洛哥',data:[8.5,6.5,7.5,8,8,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'海地',data:[4,3.5,4.5,5,4.5,3],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

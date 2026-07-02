@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Aprofundada Pré-Jogo · Países Baixos vs Suécia · Copa do Mundo 2026 · 2ª rodada do Grupo F</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-netherlands-vs-sweden.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-netherlands-vs-sweden.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#f36c21;--sc:#1f6fc4;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b5500f,#16467e);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#2a1709,#10243e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f5944f;font-weight:600}td.sc{color:#5aa0e0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-netherlands-vs-sweden.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao Centro de Análise</a><br>
+  <span class="badge">⚽ Copa do Mundo 2026 · 2ª rodada do Grupo F · "Disputa pela liderança" entre a líder Suécia e os tropeçados Países Baixos</span>
+  <h1>Países Baixos vs Suécia</h1>
+  <div class="meta">20 de junho de 2026 · NRG Stadium, Houston (teto fechado · ambiente fechado) · 13:00 ET · Grupo F (mesmo grupo: Japão, Tunísia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f5944f">🇳🇱 Países Baixos</div><div class="rk">Comandados por Koeman · 1ª rodada: 2-2 contra o Japão (saiu na frente duas vezes e foi alcançado) · sem clean sheet nos últimos 5 jogos · finalização e gestão da defesa são os pontos fracos</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa0e0">🇸🇪 Suécia</div><div class="rk">Comandados por Potter · 1ª rodada: goleada de 5-1 sobre a Tunísia (liderança do Grupo F) · dupla Isak+Gyökeres + Ayari com dois golaços de fora da área</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 Resumo Rápido (leia primeiro este trecho)</h3>
+    <p class="lead">Este é um confronto entre os <b>Países Baixos, superiores no valor de elenco, e uma Suécia em alta moral — uma "disputa pela liderança do grupo"</b>. A Suécia <b>atropelou a Tunísia por 5-1</b> na 1ª rodada e lidera o Grupo F (dois atacantes, Isak + Gyökeres + dois golaços de longe de Ayari + Svanberg marcando 18 segundos após entrar como reserva), somando 3 pontos e dois de vantagem; já os Países Baixos <b>apenas empataram em 2-2 com o Japão</b>, saíram na frente duas vezes e foram alcançados, sem clean sheet nos últimos 5 jogos, expondo problemas tanto na finalização quanto na gestão do placar. Ainda assim, as casas de apostas e os supercomputadores apontam claramente para os Países Baixos — vitória dos neerlandeses a <b>1.67</b> (americana -150, probabilidade implícita descontada a margem ≈56%), empate 3.90 (≈24%), Suécia 5.00 (≈19%); o <b>supercomputador da Opta, com 25.000 simulações, dá 55,9% de chance de vitória aos Países Baixos</b>, 23,3% de empate e 20,8% à Suécia. A profundidade no papel dos Países Baixos (De Jong, Gravenberch, Reijnders, Gakpo — um grupo ofensivo de elite europeia) e o Opta Power Rating (Países Baixos 88,7 vs Suécia 65,4) são a base do favoritismo; o calcanhar de Aquiles é o <b>jogo conservador</b> de Koeman e a <b>defesa que não consegue zerar</b>, justo diante da dupla de atacantes mais afiada da Suécia. A chave da classificação da Suécia está em seus pés: <b>basta mais 1 ponto para praticamente garantir a vaga</b>, podendo jogar de forma mais pragmática. Cenário base: ambas as equipes marcam, jogo aberto e ofensivo com 3+ gols, vitória magra dos Países Baixos ou empate forçado. Índice de sobreaquecimento do mercado ≈ 3/5 (tema quente, preços racionais).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita Países Baixos (descontada a margem)</div><div class="v" style="color:#f5944f">≈56%</div></div>
+      <div class="key"><div class="k">Prob. implícita Suécia (descontada a margem)</div><div class="v" style="color:#5aa0e0">≈19%</div></div>
+      <div class="key"><div class="k">Supercomputador Opta · vitória Países Baixos</div><div class="v" style="color:var(--warn)">55.9%</div></div>
+      <div class="key"><div class="k">Índice de Sobreaquecimento do Mercado</div><div class="v" style="color:var(--good)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>A dupla sueca Isak + Gyökeres</b>: na 1ª rodada combinaram gols + assistências e o esquema com dois atacantes destruiu a Tunísia — a defesa neerlandesa, sem clean sheet há 5 jogos, enfrentará a dupla de ataque mais afiada do grupo.</li>
+      <li><b>Finalização e gestão da vantagem dos Países Baixos</b> (trazido do jogo anterior): 6 chutes a gol e apenas 2 marcados, saíram na frente duas vezes e foram alcançados pelo Japão, o jogo cauteloso de Koeman foi criticado — se repetirem o "ter a bola mas não fazer gol + não segurar o resultado", isso é muito perigoso diante de uma Suécia de poder de fogo maior.</li>
+      <li><b>Vulnerabilidade aérea e em bolas paradas dos Países Baixos</b> (trazido do jogo anterior): foram empatados por escanteio diante do Japão (Verbruggen falhou ao tentar segurar), a Suécia tem Gyökeres / Lindelöf no jogo aéreo + Ayari nos chutes de longe; a confusão na área e a marcação frouxa no perímetro são riscos.</li>
+      <li><b>Árbitro do jogo: Michael Oliver (Inglaterra)</b>: árbitro de elite, amostra robusta (mais de 540 jogos na carreira, média de cerca de 3,5–4,0 amarelos por jogo, cerca de 0,36 pênaltis/jogo) — o critério em grandes torneios é muito mais previsível do que o dos árbitros de pequena amostra das partidas anteriores.</li>
+    </ul>
+  </div>
+
+  <!-- Notícias-chave de última hora -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave de Última Hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fontes + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que impactam este jogo, com explicação item a item de como alteram a tática ou o resultado (inclui itens trazidos do jogo anterior de ambas as equipes)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f5944f;font-weight:700">Países Baixos · trazido do jogo anterior · finalização e gestão da vantagem <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra o Japão · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Países Baixos na 1ª rodada: <b>2-2 com o Japão, saíram na frente duas vezes e foram alcançados</b>; 60% de posse, 6 chutes a gol e apenas 2 marcados — "deveriam ter vencido e não venceram"</div>
+      <p style="font-size:13.5px">Transferência prospectiva da análise do jogo contra o Japão: os Países Baixos saíram na frente com Van Dijk (50') e Summerville (64'), mas foram alcançados aos 57' e 88' pelo Japão (o último gol veio de um desvio em escanteio, com <b>Verbruggen falhando ao tentar segurar e a bola entrando</b>). Os neerlandeses tiveram 60% de posse na partida toda, mas só converteram 2 dos 6 chutes a gol; tanto a <b>eficiência de finalização quanto a gestão do jogo após abrir vantagem</b> viraram pontos fracos; Koeman foi criticado por ser "passivo demais, jogando lateralmente para se proteger". Os Países Baixos não fizeram um único clean sheet nos últimos 5 jogos. Situação na classificação: 1 ponto, atualmente em segundo no grupo; precisam pontuar diante da Suécia para garantir a liderança/classificação.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: se os Países Baixos repetirem o "ter a bola sem fazer gol + não segurar a vantagem" da 1ª rodada, será ainda mais perigoso diante da dupla de atacantes sueca, de poder de fogo muito superior ao do Japão — e é exatamente essa a base do empate alto a 3.90 e do ângulo do "mais gols", mesmo com o mercado favorecendo os Países Baixos. Se Koeman conseguirá ativar o ataque (Depay substituindo ou não Malen) é a maior variável tática do jogo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo Países Baixos 2-2 Japão</a> · <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — prévia (Koeman criticado pela cautela)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5aa0e0;font-weight:700">Suécia · trazido do jogo anterior · poder de fogo multidimensional <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra a Tunísia · 2026-06-14</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Suécia na 1ª rodada: <b>goleada de 5-1 sobre a Tunísia</b> e liderança do Grupo F; fontes de gols variadas (a dupla + chutes de longe de Ayari + gol-relâmpago de reserva)</div>
+      <p style="font-size:13.5px">Transferência prospectiva da análise do jogo contra a Tunísia: a Suécia venceu por 5-1 — Ayari fez dois golaços de longe aos 7' e 90+6' marcando duas vezes, Isak (30') fez um gol + duas assistências, Gyökeres (59') balançou as redes, e o reserva Svanberg marcou <b>18 segundos</b> após entrar. A dupla de atacantes (Isak+Gyökeres) de Potter brilhou de cara, e as <b>fontes de gols foram muito além do retrato pré-jogo de "dependência da dupla"</b> — anular a dupla não significa anular a Suécia. Atenção: o ataque da Tunísia é limitado e a defesa sueca (apenas 1 gol sofrido) ainda não foi testada por um poder de fogo do nível dos Países Baixos, então <b>os riscos defensivos não foram dissipados</b>. A Suécia lidera com 3 pontos e basta 1 ponto neste jogo para praticamente se classificar.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a multidimensionalidade ofensiva da Suécia (jogo corrido, chutes de longe, bolas paradas, banco) favorece diretamente o "mais gols / ambas marcam". Mas sua defesa só foi sondada uma vez nesta edição, pela frágil Tunísia, e o grupo ofensivo dos Países Baixos (Gakpo/Reijnders/Gravenberch/Dumfries) será o verdadeiro teste — e é por isso que a Suécia, mesmo sendo a "equipe da empolgação", segue precificada como azarão visitante (5.00).</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo Suécia 5-1 Tunísia</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/" style="color:var(--accent)">Racing Post — prévia/dupla de atacantes de Potter</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">Países Baixos · desfalques <span style="color:var(--mut);font-weight:400">· junho · múltiplas fontes</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lateral-direito <b>Jurriën Timber fora de toda a edição</b> (substituído por Geertruida); <b>Quinten Timber ausente por concussão</b></div>
+      <p style="font-size:13.5px">Jurriën Timber, do Arsenal, já saiu da lista original dos Países Baixos e foi substituído por Geertruida; seu irmão Quinten Timber está fora deste jogo por concussão. O goleiro titular da 1ª rodada, <b>Verbruggen, começa saudável</b> (a lesão no quadril anterior já cicatrizou) e os titulares da defesa Van Dijk(C), Van de Ven, Dumfries e Van Hecke devem ser mantidos.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a ausência de Timber enfraquece a profundidade e a cobertura defensiva da direita neerlandesa; diante das infiltrações de Gyökeres e da munição pela esquerda sueca (Gudmundsson/Bernhardsson), o perfil de Dumfries — forte no ataque, fraco na defesa — pode ser explorado. Isso, somado ao risco da defesa dos Países Baixos que "não zera há 5 jogos", é uma possível porta de entrada para os contra-ataques/chutes de longe da Suécia.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/" style="color:var(--accent)">Racing Post — situação do elenco (Timber fora/Q.Timber concussão)</a> · <a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — lista dos Países Baixos</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5aa0e0;font-weight:700">Suécia · continuidade da escalação <span style="color:var(--mut);font-weight:400">· escalação provável · múltiplas fontes</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Após a goleada, <b>espera-se a mesma equipe titular</b> (3-1-4-2 / dois atacantes); Gudmundsson teve um leve problema muscular no fim da temporada, mas já foi titular na 1ª rodada</div>
+      <p style="font-size:13.5px">Após o 5-1, espera-se que a Suécia evite grandes mudanças e mantenha a escalação vencedora. Escalação provável (3-1-4-2): Nordfeldt; Lagerbielke · Hien · Lindelöf; Karlström; Bernhardsson · Nygren · Ayari · Gudmundsson; Isak · Gyökeres. Gudmundsson teve um problema muscular no fim da temporada, mas já foi titular na 1ª rodada; Svanberg e Elanga são os trunfos explosivos do banco. <span style="color:var(--warn)">[As escalações oficiais de ambas as equipes dependem da lista da FIFA pré-jogo · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: Ayari, no vértice mais adiantado do meio-campo, após marcar duas vezes de longe vai "chutar em qualquer brecha" — e isso acerta justo no ponto fraco dos Países Baixos, com marcação frouxa e cobertura tardia no perímetro; a munição pela esquerda de Gudmundsson + a dupla de atacantes brigando pela bola é o principal caminho da Suécia para furar a linha alta neerlandesa. Como a Suécia precisa de apenas 1 ponto para praticamente se classificar, Potter pode, após abrir vantagem, recuar para um bloco pragmático e arrastar o jogo para aquilo em que os Países Baixos são piores: o "ataque posicional contra defesa fechada".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — escalação provável</a> · <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-sweden-prediction-team-news-lineups_599530.html" style="color:var(--accent)">Sports Mole — prévia/escalação</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Ambiente do jogo · árbitro do jogo já anunciado <span style="color:var(--mut);font-weight:400">· ESPN / FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro definido: o renomado inglês <b>Michael Oliver</b> apita — árbitro de elite, presença frequente em Copas do Mundo / Champions League</div>
+      <p style="font-size:13.5px">Segundo a ESPN, a FIFA designou o inglês <b>Michael Oliver</b> para apitar esta 2ª rodada do Grupo F. Ele é um dos principais árbitros da Premier League e da Champions League, atuou na Eurocopa 2024 e nesta Copa do Mundo, com mais de 540 jogos na carreira e amostra robusta (média de cerca de <b>3,5–4,0 amarelos e cerca de 0,36 pênalti por jogo</b>). O jogo será no NRG Stadium, em Houston, com o <b>teto fechado durante toda a partida para proteger o gramado, em ambiente fechado e climatizado, sem variáveis de clima/chuva/calor</b> (a sensação térmica diurna em Houston em junho pode chegar a 40 °C+, mas todos os jogos de Houston nesta edição têm o teto fechado).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: diferentemente dos árbitros "sem amostra em grandes torneios" das partidas anteriores, Oliver tem uma grande amostra real de jogos de elite, com critério altamente previsível. Sua quantidade de cartões é média para alta e a taxa de pênaltis é de cerca de 0,36/jogo — em um jogo de "ataque aberto + alta intensidade de duelos", tanto as ações na área (duelos de Dumfries/Van Dijk e faltas nos contra-ataques suecos) quanto o total de amarelos merecem atenção. Veja mais no módulo do árbitro abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — anúncio do árbitro (Michael Oliver)</a> · <a href="https://www.statshub.com/referee/oliver-michael/65702" style="color:var(--accent)">StatsHub — dados de Oliver</a></div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Dados (Central)</h2>
+    <div class="sub">Probabilidades implícitas de vitória/empate/derrota (odds descontada a margem) · panorama da 2ª rodada do Grupo F · mercado de gols · perfil de força geral — todos os gráficos usam dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (descontada a margem, calculada a partir das odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos de 2.5 gols (descontada a margem)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Pontos após a 1ª rodada do Grupo F (quanto maior, melhor)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação do analista 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇳🇱 Países Baixos</th><th>🇸🇪 Suécia</th></tr>
+      <tr><td>Treinador</td><td class="ht">Ronald Koeman</td><td class="sc">Graham Potter (substituiu Tomasson em out/2025)</td></tr>
+      <tr><td>Resultado da 1ª rodada</td><td class="ht">2-2 com o Japão (saiu na frente duas vezes e foi alcançado)</td><td class="sc">vitória de 5-1 sobre a Tunísia (liderança do Grupo F)</td></tr>
+      <tr><td>Pontos após a 1ª rodada</td><td class="ht">1 ponto (2º do grupo)</td><td class="sc"><b>3 pontos (1º do grupo)</b></td></tr>
+      <tr><td>Ausências neste jogo</td><td class="ht">J. Timber (toda a edição), Q. Timber (concussão)</td><td class="sc">sem suspensões/lesões graves confirmadas entre os titulares</td></tr>
+      <tr><td>Opta Power Rating</td><td class="ht"><b>88,7</b> (o mais alto do Grupo F)</td><td class="sc">65,4</td></tr>
+      <tr><td>Perfil de forma recente</td><td class="ht">13 jogos invicto em fases finais de Copa; mas sem clean sheet nos últimos 5 jogos</td><td class="sc">passou apertada na repescagem (3-1 Ucrânia, 3-2 Polônia), explosão ofensiva na 1ª rodada</td></tr>
+      <tr><td>Odds 1X2 (DECIMAL)</td><td class="ht">vitória 1.67 (implícita ≈56%)</td><td class="sc">vitória 5.00 (≈19%) · empate 3.90 (≈24%)</td></tr>
+      <tr><td>Mais / Menos de 2.5 gols</td><td colspan="2" class="sc">tendência ao mais gols (Mais de 2.5 a cerca de 1.83, implícita ≈55%); ambas marcam, alta expectativa de jogo ofensivo</td></tr>
+      <tr><td>Jogadores-chave</td><td class="ht">Virgil van Dijk / Frenkie de Jong / Cody Gakpo</td><td class="sc">Alexander Isak / Viktor Gyökeres / Yasin Ayari</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as implícitas das odds DECIMAIS descontada a margem (≈56/24/19, na mesma direção do supercomputador da Opta 55,9/23,3/20,8). Fonte das odds: bet365 (Países Baixos -150, empate +290, Suécia +400), conversão da linha americana para decimal: -150→1.67, +290→3.90, +400→5.00 (em algumas casas, a melhor cotação dos Países Baixos chega a 1.73/-137 e a Suécia a 5.40). O Racing Post cita a Ladbrokes em 8-11 (≈1.73)/empate 14-5 (≈3.80)/Suécia 15-4 (≈4.75). Linha de gols em 2.5: Mais de 2.5 a cerca de 1.83 (implícita ≈55%, com tendência ao mais gols); BTTS (ambas marcam) a cerca de 1.62 (consenso de mercado dominante). Handicap dos Países Baixos -0,5/-0,75 a confirmar, conforme a linha em tempo real pré-jogo. Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados Avançados · Métricas Esperadas -->
+  <section style="border:1px solid #14503f;border-left:4px solid #10b981;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados Avançados: Métricas Esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· média histórica vs valores reais desta Copa · sinais de qualidade subjacente · com fontes</span></h2>
+    <div class="sub">Método central: comparar item a item a <b>base histórica de cada equipe (últimos dois grandes torneios / eliminatórias / amistosos)</b> com os <b>valores reais dos jogos já disputados nesta Copa</b>, para ver "se nesta edição está acima ou abaixo do nível histórico e o que isso indica". As amostras públicas de xG de seleções são limitadas; os itens ausentes são marcados como "a confirmar" e jamais inventados.</div>
+
+    <h4>① Central: média histórica vs valores reais desta Copa (comparativo por equipe)</h4>
+    <table>
+      <tr><th>Equipe / indicador</th><th>Base histórica (amostra de origem)</th><th>Real desta Copa (1ª rodada)</th><th>Diferença e interpretação</th></tr>
+      <tr><td class="ht">🇳🇱 Países Baixos · ataque xGF/gols</td><td class="ht">média de gols alta nas eliminatórias/Liga das Nações da Europa, grupo ofensivo luxuoso; semifinal da Eurocopa 2024 (eliminado pela Inglaterra)</td><td class="ht">1ª rodada: <b>xGF 0,78</b>, 2 gols reais (2-2 com o Japão)</td><td>gols reais um pouco <b>acima</b> do xG (os 2 gols incluem o de cabeça de Van Dijk + golaço de Summerville) — mas o xG de 0,78 é baixo, confirmando "muita posse, poucas chances reais, finalização dependente de lampejos individuais"</td></tr>
+      <tr><td class="ht">🇳🇱 Países Baixos · defesa xGA/gols sofridos</td><td class="ht">defesa razoável na Eurocopa 2024, mas não impenetrável; o sistema de saída de bola do goleiro às vezes falha</td><td class="ht">1ª rodada: sofreu do Japão <b>xGA≈0,59–0,79</b>, 2 gols sofridos (dois com elemento de acaso: desvio + falha do goleiro)</td><td>gols sofridos <b>acima</b> do xGA: a defesa não foi furada taticamente, mas perdeu pontos em detalhes/no manejo do goleiro — <b>sem clean sheet há 5 jogos</b>, e o risco estrutural se amplia diante de equipes de poder de fogo forte</td></tr>
+      <tr><td class="sc">🇸🇪 Suécia · ataque xGF/gols</td><td class="sc">lanterna nas eliminatórias regulares (2 pontos em 6 jogos), poder de fogo mediano; recuperação na repescagem (3-1 Ucrânia, 3-2 Polônia)</td><td class="sc">1ª rodada: <b>xGF 1,36</b>, <b>5 gols</b> reais (over-performance enorme)</td><td>gols reais <b>muito acima</b> do xG (5 vs 1,36) — incluem 2 golaços de fora da área + gol-relâmpago de reserva, uma "amostra de cauda de alta eficiência"; <b>alerta de armadilha</b>: o 5-1 é difícil de extrapolar linearmente, a base ofensiva real está mais próxima de 1,3–1,6 xG/jogo</td></tr>
+      <tr><td class="sc">🇸🇪 Suécia · defesa xGA/gols sofridos</td><td class="sc">defesa instável nas eliminatórias regulares, forma irregular é um ponto fraco reconhecido</td><td class="sc">1ª rodada: <b>xGA 0,28</b>, 1 gol sofrido (chute de longe de Rekik, da Tunísia)</td><td>amostra <b>favorável</b>, mas de <b>baixo valor</b>: o ataque da Tunísia é fraco (xG 0,28); a defesa sueca ainda não foi testada por um grupo ofensivo do nível dos Países Baixos, e este jogo é o verdadeiro teste</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórica</b>: o xG dos Países Baixos na 1ª rodada (0,78) é <b>inferior</b> ao nível esperado de seu grupo ofensivo luxuoso e os gols sofridos ficaram acima do xGA (perda de pontos em detalhes/no goleiro); os 5 gols da Suécia na 1ª rodada ficaram <b>muito acima</b> do xG (1,36), uma cauda de alta eficiência não extrapolável linearmente, e seu xGA de 0,28 veio da fraca Tunísia, com valor de referência limitado. Em síntese: os Países Baixos têm "qualidade subestimada, finalização dependente de lampejos" e a Suécia tem "resultado impressionante, mas xG e defesa de base ainda por testar" — alinhado à linha central de "Países Baixos superiores no papel, Suécia da empolgação". Fontes: xGscore (xG da 1ª rodada) · Opta Analyst (estatísticas da 1ª rodada) · FotMob/RealGM xG Tracker. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção deste jogo & calibração Opta</h4>
+    <table>
+      <tr><td>xG projetado deste jogo pelo modelo (geral)</td><td class="ht">Países Baixos ≈1,6</td><td class="sc">Suécia ≈1,1</td><td>o grupo ofensivo dos Países Baixos é mais profundo e a posse maior → projeção de xG um pouco mais alta; mas a eficiência de conversão e as bolas paradas/chutes de longe da Suécia tornam seus gols reais muito voláteis</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">Opta Power Rating: Países Baixos <b>88,7</b>, líder do Grupo F, Suécia 65,4; o supercomputador dá 55,9% de vitória aos Países Baixos, 23,3% de empate e 20,8% à Suécia (alinhado às odds descontada a margem)</td><td>após a calibração pela força do adversário, a amostra dos Países Baixos tem mais valor do que a da Suécia (o adversário da Suécia no 5-1, a Tunísia, é fraco)</td></tr>
+      <tr><td>xG por chute (xG per shot) · over/under-performance</td><td class="ht">na 1ª rodada, os Países Baixos marcaram um pouco acima do xG (finalização individual)</td><td class="sc">os 5 gols da Suécia superaram em muito o xG de 1,36 (cauda eficiente de chutes de longe + reserva)</td><td><b>Alerta de armadilha</b>: a magnitude da over-performance da Suécia é enorme, o 5-1 não representa o poder de fogo normal; o xG dos Países Baixos é baixo, mas o teto do grupo ofensivo é mais alto</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt · PSxG</td><td colspan="2" class="sc">dados públicos de seleções são limitados <span style="color:var(--warn)">(a confirmar)</span> — qualitativamente: os Países Baixos controlam com posse média-alta + vantagem no domínio territorial; a Suécia cede a posse e aposta em transições e bolas paradas/chutes de longe</td><td>o domínio territorial provavelmente penderá para os Países Baixos por longos períodos; a ameaça da Suécia se concentra nos instantes de contra-ataque</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de métricas avançadas (o que cada uma dessas métricas "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): soma da qualidade das chances de chute; ao excluir os pênaltis, reflete melhor a criatividade no jogo corrido.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que o adversário cria contra você, medindo o nível real da defesa, não dependente de defesas/sorte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo esperado por 90 minutos): xG−xGA, o melhor indicador único como proxy da força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG por chute</b> (qualidade média por chute): se a escolha de chute é eficiente — valor baixo = muitos chutes de longe/chances ruins (a Suécia chuta muito de longe → esse valor é baixo).</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor o valor, mais intensa a marcação, refletindo a intensidade da pressão.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt / PSxG</b> (domínio territorial / gols esperados pós-chute): a proporção de toques no terço ofensivo mede o território; o PSxG mede a qualidade dos chutes enfrentados pelo goleiro.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/xGscore/RealGM; as seleções têm amostras públicas limitadas em métricas detalhadas como PPDA/xT/field tilt/PSxG, e os itens ausentes são sempre marcados como "a confirmar", jamais inventando valores.</div>
+  </section>
+
+  <!-- Temperatura do mercado de apostas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Temperatura do Mercado de Apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de especialistas / odds / fluxo de dinheiro / opinião pública</span></h2>
+    <div class="sub">Jogo de destaque do Grupo F, confronto entre duas potências europeias — alto interesse público (a dupla Isak/Gyökeres + Van Dijk marcando Isak), mas a direção das odds é racional: os Países Baixos um pouco superaquecidos, mais gols/ambas marcam é o consenso real</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de Sobreaquecimento do Mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · alto tráfego de jogo de destaque + preços racionais (Países Baixos um pouco superaquecidos, consenso de mais gols)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">As narrativas de Van Dijk (companheiro no Liverpool) vs Isak, a dupla de atacantes sueca e o "deveriam ter vencido e não venceram" dos Países Baixos elevam a atenção; mas as odds não foram impulsionadas por euforia — Países Baixos cerca de 56%, empate 24%, Suécia 19%. O dinheiro e o consenso dos especialistas se concentram em <b>Mais de 2.5 gols / ambas marcam (BTTS Sim)</b>, e não no mercado puro de vencedor. Vale notar que <b>parte da mídia britânica (Racing Post) vê de forma contrária a dupla chance "Suécia ou empate"</b>, considerando que os Países Baixos não necessariamente farão os 3 pontos.</div>
+    </div>
+
+    <h4>① Agregação das recomendações de especialistas (estatística de direção: maioria em vitória/vitória magra dos Países Baixos · forte consenso em mais gols/BTTS · minoria contrária em "Suécia ou empate")</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>instituição de dados/supercomputador</td><td>vitória Países Baixos <b>55,9%</b> / empate 23,3% / Suécia 20,8% (25.000 simulações)</td></tr>
+      <tr><td>Racing Post</td><td>mídia de apostas britânica</td><td><b>Contrária</b>: aposta principal na dupla chance "Suécia ou empate"; combinação de chute a gol de Ayari, gol de Gyökeres/Isak + Mais de 2.5</td></tr>
+      <tr><td>OddsShark</td><td>odds/previsões</td><td>aposta principal em <b>Mais de 2.5 gols</b>; tendência a vitória magra dos Países Baixos</td></tr>
+      <tr><td>FanDuel Research</td><td>casa de apostas norte-americana</td><td>Países Baixos 2-1, Mais de 2.5 (-110) como forte valor</td></tr>
+      <tr><td>Squawka</td><td>mídia de dados</td><td>a profundidade de elenco dos Países Baixos acabará se concretizando, vitória magra de 2-1</td></tr>
+      <tr><td>Rotowire / ClutchPoints</td><td>mídia de previsões</td><td>vitória dos Países Baixos + mais gols / ambas marcam</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de sobreaquecimento (neutro)</b>: na direção do vencedor a maioria aposta nos Países Baixos, mas o <b>verdadeiro forte consenso é "mais gols + ambas marcam"</b> — o que coincide fortemente com o retrato da 1ª rodada de ambas (defesa furada dos Países Baixos, poder de fogo multidimensional da Suécia), sendo um consenso razoável e não sobreaquecimento. A divergência contrária está no "Suécia ou empate" do Racing Post — baseada no fato de os Países Baixos não zerarem há 5 jogos + a Suécia precisar de apenas 1 ponto para se classificar, podendo jogar de forma pragmática e agressiva. Não há fluxo de dinheiro significativo impulsionando a vitória direta da Suécia.</div>
+
+    <h4 style="margin-top:20px">② Variação das odds (DECIMAL)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitória Países Baixos</th><th>Interpretação</th></tr>
+      <tr><td>Faixa de abertura do evento</td><td>linha norte-americana dominante</td><td class="ht">≈1.57–1.62 (-175/-160)</td><td>antes do início, os Países Baixos foram definidos como claro favorito da 2ª rodada do grupo (valor de elenco + Power Rating 88,7)</td></tr>
+      <tr><td>Após a 1ª rodada</td><td>bet365</td><td class="ht">1.67 (-150)</td><td>após o 2-2 dos Países Baixos com o Japão + o 5-1 da Suécia, o lado dos Países Baixos <b>abriu um pouco</b> (devolução da cotação curta)</td></tr>
+      <tr><td>Linha atual (18/19-06)</td><td>múltiplas plataformas</td><td class="ht">1.67–1.73 (melhor 1.73 / 8-11)</td><td>oscilação de faixa estreita; empate 3.80–3.90, Suécia 4.75–5.40</td></tr>
+    </table>
+    <h4>②-b Posicionamento e evolução da linha (abertura → atual)</h4>
+    <table>
+      <tr><th>Momento</th><th>Linha/odds (DECIMAL)</th><th>Mudança de posicionamento · gatilho</th></tr>
+      <tr><td>Linha de abertura (faixa estimada pré-jogo)</td><td class="ht">P.B. ≈1.57–1.62 / empate ≈3.80 / Suécia ≈5.50–6.00</td><td>Países Baixos abertos como claro favorito, Suécia azarão profundo — com base no valor de elenco e no Opta Power Rating (88,7 vs 65,4)</td></tr>
+      <tr><td>Abertura (em torno da 1ª rodada)</td><td class="ht">P.B. ≈1.62 / empate ≈3.85 / Suécia ≈5.50</td><td>basicamente mantendo o posicionamento pré-jogo, a Suécia subestimada como a equipe mais fraca do grupo</td></tr>
+      <tr><td>Linha atual (reprecificação pelo resultado da 1ª rodada)</td><td class="ht">P.B. <b>1.67–1.73</b> / empate 3.80–3.90 / Suécia <b>4.75–5.40</b></td><td><b>lado da Suécia encurtou claramente</b> (5.50+→4.75–5.40): evento gatilho = a Suécia liderando com o 5-1 + os Países Baixos só empatando com o Japão; a cotação curta dos Países Baixos devolveu um pouco (1.62→1.67), com o empate praticamente parado</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura do posicionamento do mercado</b>: Países Baixos = "favorito sólido levemente esfriado pelo empate na 1ª rodada" (ainda cerca de 56%, mas já não a cotação curta esmagadora de antes do início); Suécia = "visitante reprecificado pela goleada de 5-1, de azarão profundo para visitante ameaçador" (as odds encurtaram de 5.5+ para 4.75–5.40, mas ainda é azarão visitante). A descoberta de preço mais ativa está em <b>gols (tendência ao mais gols), ambas marcam (BTTS Sim a cerca de 1.62) e handicap (P.B. -0,5/-0,75)</b>, e não no 1X2. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ opinião pública</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregação DefiRate)</b>: no mercado de <b>classificação/vencedor do grupo</b> do Grupo F, os Países Baixos lideram com cerca de <b>54–57%</b>, Japão 25–28%, Suécia cerca de 26%, Tunísia cerca de 5% — alinhado à direção das odds descontada a margem (obs.: a probabilidade de classificação tem critério diferente do mercado de vencedor deste jogo). Os preços exatos e o volume do <b>1X2 deste jogo isolado</b> nos mercados de previsão, bem como o detalhamento de momentum de 30 dias, não foram verificados de forma estável e isolada, <span style="color:var(--warn)">com algumas páginas de agregação com critério de dados confuso (suspeita de mistura com outros jogos) · a confirmar</span>; tome como referência principal as odds descontada a margem (P.B. 56/empate 24/Suécia 19) e o supercomputador da Opta (55,9/23,3/20,8).</li>
+      <li><b>Foco da opinião pública</b>: ① o <b>clássico interno do Liverpool entre Van Dijk vs Isak</b> (companheiros que viram adversários) é o maior ponto de tráfego; ② a "narrativa surpresa" da dupla de atacantes sueca + os chutes de longe de Ayari; ③ Koeman criticado pela cautela e o questionamento sobre se os Países Baixos "ainda são uma equipe de nível de título".</li>
+      <li><b>Narrativa da Suécia</b>: a história de "começar mal e terminar bem" — lanterna nas eliminatórias regulares, passando apertada na repescagem via Liga das Nações — somada à goleada de 5-1, eleva a simpatia do público; mas sua taxa de vitória de cerca de 19% mostra que o mercado ainda vê isso como "empolgação > força real".</li>
+      <li><b>Narrativa dos Países Baixos</b>: o valor de elenco e a profundidade seguem sendo a base do favoritismo, mas o "não zerar + finalização dependente de lampejos" desconta seu status de favorito — é um "favorito legítimo, porém questionado".</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: a direção do vencedor pende para os Países Baixos (cerca de 56%, alinhado ao supercomputador da Opta), mas os <b>preços são racionais, sem euforia</b>, com índice de sobreaquecimento <b>3/5</b>. O interesse no tema vem do clássico interno Van Dijk-Isak e da surpresa sueca, e o mercado com mais conteúdo informativo é o de <b>gols (tendência ao mais gols), ambas marcam (BTTS Sim) e handicap dos Países Baixos (-0,5/-0,75)</b>; o ângulo contrário é a dupla chance "Suécia ou empate" do Racing Post (Países Baixos não zeram + a Suécia precisa de apenas 1 ponto). Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputador/prévia</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/">Racing Post — odds/Pick contrário</a> · <a href="https://www.oddsshark.com/soccer/world-cup/netherlands-sweden-picks-odds-2026">OddsShark — Mais de 2.5</a> · <a href="https://www.fanduel.com/research/netherlands-vs-sweden-prediction-preview-picks-lineups-and-best-bets-world-cup-2026">FanDuel Research</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket (Grupo F)</a></div>
+  </section>
+
+  <!-- Árbitro -->
+  <section>
+    <h2><span class="n">2</span> Árbitro do Jogo & Ambiente de Arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b>: o árbitro deste jogo é o inglês <b>Michael Oliver</b> — um dos principais árbitros da Premier League e da Champions League, atuou na Eurocopa 2024 e na Copa do Mundo 2026. Fontes: ESPN / FIFA.</div>
+    <h4>Últimos dois grandes torneios + critério de arbitragem internacional (dados reais)</h4>
+    <ul class="cl">
+      <li><b>Amostra real em grandes torneios masculinos (chave)</b>: Oliver tem <b>amostra real abundante em grandes torneios de elite e mata-mata de Champions League</b> — apitou Champions League, Eurocopa (inclusive a Euro 2024 na Alemanha) e esta Copa do Mundo, diferente dos árbitros de "sem grande torneio/pequena amostra" das partidas anteriores; critério altamente previsível, baixo risco de extrapolação.</li>
+      <li><b>Critério de cartões/pênaltis (amostra geral)</b>: mais de <b>540 jogos</b> na carreira, com critério geral de média de cerca de <b>3,5–4,0 amarelos e 0,05 vermelho por jogo</b>, e cerca de 190+ pênaltis na carreira (cerca de <b>0,36/jogo</b>) — quantidade de cartões média para alta, critério de pênaltis neutro a levemente assertivo. Sua arbitragem é conhecida por "forte gestão de comunicação, decisões firmes nos lances-chave". <span style="color:var(--warn)">[Os valores variam um pouco entre as fontes (3,49–3,97 amarelos/jogo); tome como referência a fonte oficial/StatsHub · a confirmar]</span></li>
+      <li><b>Histórico de arbitragem com as duas equipes</b>: como árbitro inglês, Oliver arbitra há tempos jogadores neerlandeses/suecos na Premier League (Van Dijk, Gyökeres, Isak, Gravenberch etc. atuam na Premier League), conhecendo bem seus estilos; mas <b>não há histórico de arbitragem com controvérsia pública relevante no nível das seleções dos Países Baixos e da Suécia</b> — sem viés evidente por equipe.</li>
+      <li><b>Novas regras unificadas desta edição + sinais de ambiente</b>: 8 segundos de posse para o goleiro, apenas o capitão pode falar com o árbitro, impedimento semiautomático; já na semana de abertura desta edição houve vários vermelhos, com ambiente de arbitragem mais rigoroso. Este jogo tem estrutura de alta intensidade com "duelos da linha alta dos Países Baixos + faltas em contra-ataques suecos", então as ações na área e o total de amarelos têm espaço para subir, mas a capacidade de gestão de Oliver costuma evitar que o jogo fique muito picotado.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise da arbitragem</b>: Oliver tem quantidade de cartões média para alta (cerca de 3,5–4,0 amarelos/jogo) e taxa de pênaltis de cerca de 0,36/jogo; em um jogo aberto e ofensivo, com escalada de duelos, o total de amarelos e os lances de pênalti merecem atenção; seu critério de pênaltis é assertivo, e tanto os duelos na área dos Países Baixos contra Isak/Gyökeres quanto as puxadas nos contra-ataques suecos podem virar lances de marcação. Como ele tem <b>grande amostra real em grandes torneios de elite</b>, a arbitragem é uma dimensão de análise confiável neste jogo — mas a contagem específica de cartões ainda oscila com o rumo do jogo, e a extrapolação do critério exige margem.</div>
+  </section>
+
+  <!-- Escalações e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalações & Forma Recente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">versão provável, oficial divulgada pré-jogo</span></h2>
+    <div class="sub">Escalação provável (estimativa de fontes de análise, não oficial; a lista oficial depende do centro de jogo da FIFA pré-jogo · a confirmar)</div>
+    <h4>🇳🇱 Escalação provável dos Países Baixos (4-3-3)</h4>
+    <div class="lineup">Verbruggen; Dumfries · Van Hecke · Van Dijk(C) · Van de Ven; De Jong · Gravenberch · Reijnders; Gakpo · Malen · Summerville</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="ht">Virgil van Dijk (C)</td><td>zagueiro / Liverpool</td><td>capitão, pilar da defesa; gol de cabeça na 1ª rodada (seu primeiro gol em grandes torneios), peça-chave nos dois lados das bolas paradas, marca o ex-companheiro Isak</td></tr>
+      <tr><td class="ht">Frenkie de Jong</td><td>meio-campo / Barcelona</td><td>condução e saída de bola e controle de ritmo, o motor para furar o bloqueio do meio-campo sueco e iniciar o ataque</td></tr>
+      <tr><td class="ht">Cody Gakpo</td><td>ponta / Liverpool</td><td>explosão e ponto de finalização pela esquerda; uma das principais fontes de criatividade dos Países Baixos no jogo corrido</td></tr>
+      <tr><td class="ht">Ryan Gravenberch</td><td>meio-campo / Liverpool</td><td>duas assistências na 1ª rodada (duas assistências já em sua estreia em grandes torneios); peça-chave na progressão e na ligação</td></tr>
+    </table>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Trunfos-chave do banco: <b style="color:#f5944f">Memphis Depay</b> (maior artilheiro da história, pode disputar a titularidade com Malen) · <b style="color:#f5944f">Wout Weghorst</b> (centroavante clássico como alternativa) · Brobbey · Lang · Koopmeiners</div>
+
+    <h4 style="margin-top:14px">🇸🇪 Escalação provável da Suécia (3-1-4-2 / dois atacantes)</h4>
+    <div class="lineup">Nordfeldt; Lagerbielke · Hien · Lindelöf; Karlström; Bernhardsson · Nygren · Ayari · Gudmundsson; Isak · Gyökeres</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="sc">Alexander Isak</td><td>atacante / Liverpool</td><td>1 gol e 2 assistências na 1ª rodada; em ótima forma, se manteve saudável especialmente para a Copa, o principal ponto de finalização da Suécia</td></tr>
+      <tr><td class="sc">Viktor Gyökeres</td><td>atacante / Arsenal</td><td>gol na 1ª rodada + gol decisivo na repescagem contra a Polônia; físico e capacidade de infiltração de elite, marca a defesa alta dos Países Baixos</td></tr>
+      <tr><td class="sc">Yasin Ayari</td><td>meia-atacante / Brighton</td><td>dois golaços de longe na 1ª rodada, eleito o melhor da partida; no vértice mais adiantado do meio-campo, "chutar em qualquer brecha" é sua arma para furar a defesa fechada</td></tr>
+      <tr><td class="sc">Victor Lindelöf (C)</td><td>zagueiro / capitão</td><td>pilar de organização e experiência da defesa; já recuperado de uma pequena lesão</td></tr>
+    </table>
+    <div class="note">Obs. das listas: as escalações prováveis de ambas as equipes são estimativas de análise da mídia (ESPN / Racing Post / Sports Mole / Opta), <b>e a lista oficial pré-jogo prevalece · a confirmar</b>. Se Depay substituirá Malen no ataque dos Países Baixos é uma escolha de Koeman; a Suécia deve manter a escalação vencedora do 5-1 e evitar grandes mudanças, com Gudmundsson (já recuperado do leve problema muscular) seguindo na esquerda.</div>
+  </section>
+
+  <!-- Tática + treinadores -->
+  <section>
+    <h2><span class="n">4</span> Estilo Tático & Treinadores</h2>
+    <div class="sub">Cada conclusão cruza referências com o estilo e os resultados reais de ambas as equipes nos últimos dois grandes torneios</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f5944f">🇳🇱 Países Baixos · Ronald Koeman</div>
+        <div class="role">4-3-3 de posse + início da jogada na saída de bola; tende ao conservador, ponto de finalização no jogo corrido duvidoso</div>
+        <ul class="cl">
+          <li>Posse típica neerlandesa: De Jong/Reijnders/Gravenberch controlam o ritmo no meio-campo, o goleiro participa da construção de passes curtos, e abrem o jogo com a infiltração pelas pontas de Gakpo/Summerville e as bolas paradas de Van Dijk.</li>
+          <li>Referência cruzada: a <b>semifinal da Eurocopa 2024</b> (1-2 contra a Inglaterra na semifinal) prova que o teto não é baixo; mas na 1ª rodada desta edição, o 2-2 com o Japão fez ressurgir o mal crônico de <b>muita posse, poucas chances reais (xG 0,78), sem segurar a vantagem</b> — Koeman foi criticado pelos passes laterais cautelosos, o maior risco deste jogo.</li>
+          <li>Ponto de entrada deste jogo: precisam ser mais agressivos do que na 1ª rodada e converter a posse em mais chances na área (se Depay será titular para dar mais apoio é um ponto a observar); ao mesmo tempo, devem consertar a defesa que não zera há 5 jogos, senão a dupla de atacantes e os chutes de longe de Ayari os punirão repetidamente.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa0e0">🇸🇪 Suécia · Graham Potter</div>
+        <div class="role">3-1-4-2 com dois atacantes + amplitude pelas pontas + poder de fogo multidimensional; defesa ainda por testar</div>
+        <ul class="cl">
+          <li>Potter (assumiu em out/2025) reformulou a Suécia — montou uma estrutura ofensiva clara em torno da dupla Isak/Gyökeres, enfatizando a munição pelas pontas (Gudmundsson), as infiltrações com chutes de longe de Ayari e a profundidade do banco (Svanberg).</li>
+          <li>Referência cruzada: a Suécia <b>ficou de fora dos dois últimos grandes torneios (Copa de 2022, Euro 2024)</b>, e as quartas da Copa de 2018 e o oitavos da Euro 2020 são memória de outra equipe; nesta edição, a luxuosa dupla de ataque Isak+Gyökeres <b>fez 5-1 já na primeira aparição conjunta em grande torneio</b>, mas a defesa instável exposta pela campanha de lanterna nas eliminatórias regulares ainda não foi testada diante de adversários fortes.</li>
+          <li>Resposta deste jogo: como basta 1 ponto para praticamente se classificar, Potter pode, após abrir vantagem, recuar para um bloco pragmático e arrastar o jogo para aquilo em que os Países Baixos são piores: o "ataque posicional contra defesa fechada"; após recuperar a bola, a dupla de atacantes infiltra e Ayari surpreende de longe — exatamente o antídoto que explora os riscos da defesa neerlandesa.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights dos analistas -->
+  <section>
+    <h2><span class="n">5</span> Insights dos Analistas</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· instituição de dados/supercomputador</small></div>O supercomputador, com 25.000 simulações, dá 55,9% de chance de vitória aos Países Baixos (empate 23,3%, Suécia 20,8%), e o Opta Power Rating dos Países Baixos de 88,7 lidera o Grupo F; os Países Baixos já estão <b>13 jogos invictos</b> no tempo normal de fases finais de Copa (igualando o recorde histórico mais longo). Os dados consideram que a profundidade dos Países Baixos acabará se concretizando, mas os 5 gols da Suécia já igualaram o total de gols dela em toda a fase de grupos de 2018, e sua moral não pode ser subestimada.</div>
+    <div class="insight"><div class="who">Racing Post <small>· mídia de apostas britânica (contrária)</small></div>Aposta principal na dupla chance "<b>Suécia ou empate</b>" — baseada no fato de os Países Baixos <b>não zerarem há 5 jogos</b> e na cautela de Koeman, enquanto a Suécia precisa de apenas 1 ponto para se classificar, podendo jogar de forma pragmática e agressiva; sugere também a combinação de chute a gol de Ayari, gol de Gyökeres/Isak e Mais de 2.5.</div>
+    <div class="insight"><div class="who">Perspectiva de gols/BTTS <small>· OddsShark / FanDuel</small></div>Várias fontes veem <b>Mais de 2.5 gols e ambas marcam (BTTS Sim, cerca de 1.62)</b> como um ângulo de mais consenso do que o mercado de vencedor — ambas sofreram gols na 1ª rodada, a Suécia tem poder de fogo multidimensional e a defesa dos Países Baixos é furada, ambas marcaram em 5 dos últimos 6 confrontos e houve 3+ gols em 6 dos últimos 9 confrontos.</div>
+    <div class="insight"><div class="who">Geral · destaque e confrontos <small>· ESPN</small></div>O maior destaque deste jogo é o <b>clássico interno do Liverpool entre Van Dijk vs Isak</b> e se Koeman conseguirá "ativar as vantagens da equipe" — a ESPN afirmou diretamente que os Países Baixos foram "passivos demais com passes laterais" contra o Japão, e se voltarem a se fechar na casca, os atacantes da Suécia têm capacidade de punir. O verdadeiro suspense não está na direção do vencedor, mas em se os Países Baixos conseguem segurar a defesa + transformar a posse em gols.</div>
+  </section>
+
+  <!-- Avaliação geral -->
+  <section>
+    <h2><span class="n">6</span> Avaliação Geral & A Confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória magra dos Países Baixos (2-1 / 3-1, com a profundidade se concretizando + bolas paradas) é o cenário base; o empate (≈24%) é uma cauda de probabilidade média — se os Países Baixos repetirem o "ter a bola sem fazer gol + não segurar", a Suécia tem chance de empatar ou até roubar a vitória com a dupla de atacantes/chutes de longe; a vitória da Suécia (≈19%) exige que Isak/Gyökeres/Ayari se concretizem + que a defesa dos Países Baixos volte a falhar simultaneamente.</li>
+      <li><b>Homens-chave</b>: Van Dijk (P.B./defesa e bolas paradas, marca Isak), De Jong + Gravenberch (P.B./progressão e ligação no meio), Gakpo (P.B./explosão pela ponta), Isak + Gyökeres (Suécia/teto da dupla de atacantes), Ayari (Suécia/chutes de longe contra defesa fechada), Gudmundsson (Suécia/munição pela esquerda).</li>
+      <li><b>Fatores decisivos</b>: o verdadeiro destaque deste jogo é se os <b>Países Baixos conseguem segurar (não zeram há 5 jogos) e transformar a posse em gols</b>, e se a <b>dupla de atacantes/chutes de longe de Ayari da Suécia consegue punir os riscos da defesa neerlandesa</b> — o que decide a liquidação do handicap (P.B. -0,5/-0,75), dos gols (tendência ao mais gols) e do BTTS (cerca de 1.62).</li>
+      <li><b>Perspectiva de mercado</b>: as casas de apostas e o supercomputador apontam na mesma direção (Países Baixos cerca de 56% / 55,9%), com valor limitado no 1X2; o mercado com mais conteúdo informativo é o de <b>gols, ambas marcam e handicap dos Países Baixos</b>. O ângulo contrário = "Suécia ou empate" do Racing Post. Índice de sobreaquecimento 3/5 (tema quente, preços racionais, com a fonte de calor no clássico interno Van Dijk-Isak e na surpresa sueca).</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① as escalações oficiais de ambas (o centro de jogo da FIFA pré-jogo prevalece; se Depay substituirá Malen nos Países Baixos, se a Suécia manterá a mesma equipe); ② se há novas lesões/suspensões não divulgadas nos Países Baixos (J.Timber toda a edição, Q.Timber concussão já confirmados); ③ os valores de média de cartões de Michael Oliver variam um pouco entre as fontes (3,49–3,97 amarelos/jogo), tome como referência a fonte oficial/StatsHub; ④ os preços exatos e o volume/momentum de 30 dias do 1X2 deste jogo isolado na Kalshi/Polymarket não foram verificados de forma estável (suspeita de mistura nas páginas de agregação); ⑤ a linha de handicap asiático (P.B. -0,5/-0,75), a linha total de gols e as odds específicas de BTTS dependem da linha em tempo real pré-jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49105032/netherlands-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — programação/escalações/árbitro (Michael Oliver)</a> · <a href="https://theanalyst.com/articles/netherlands-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — supercomputador/prévia/Power Rating</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021472">FIFA — centro de jogo</a><br>
+      • <a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026">Opta Analyst — Países Baixos 2-2 Japão (trazido dos Países Baixos)</a> · <a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026">Opta Analyst — Suécia 5-1 Tunísia (trazido da Suécia)</a> · <a href="https://xgscore.io/world-cup/netherlands-japan/xg-statistics">xGscore — xG Países Baixos/Japão</a> · <a href="https://xgscore.io/world-cup/sweden-tunisia/xg-statistics">xGscore — xG Suécia/Tunísia</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-awlZS3M1PcnW/">Racing Post — odds/situação do elenco/Pick contrário</a> · <a href="https://www.oddsshark.com/soccer/world-cup/netherlands-sweden-picks-odds-2026">OddsShark — Mais de 2.5</a> · <a href="https://www.fanduel.com/research/netherlands-vs-sweden-prediction-preview-picks-lineups-and-best-bets-world-cup-2026">FanDuel Research</a> · <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-sweden-prediction-team-news-lineups_599530.html">Sports Mole — prévia/escalação</a><br>
+      • <a href="https://www.statshub.com/referee/oliver-michael/65702">StatsHub — dados de Michael Oliver</a> · <a href="https://www.squawka.com/en/news/referee-michael-oliver/">Squawka — perfil de Oliver</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-f/">DefiRate — Kalshi/Polymarket (Grupo F)</a> · <a href="https://www.fly2houston.com/iah/related-content/surviving-houston-summer/">fly2houston — clima de Houston</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F">Wikipedia — Grupo F</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análise da Copa do Mundo 2026 · dados até 19-06-2026 · gráficos com dados verificados, gráfico de radar é avaliação geral do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f36c21',SC='#1f6fc4',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Países Baixos','Empate','Suécia'],datasets:[{data:[56,24,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:65,title:{display:true,text:'Probabilidade implícita % (descontada a margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais de 2.5','Menos de 2.5'],datasets:[{data:[55,45],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (descontada a margem, tende ao mais gols)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Suécia','Países Baixos','Japão','Tunísia'],datasets:[{data:[3,1,1,0],backgroundColor:[SC,HT,'#e8788a','#e70013'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'Pontos após a 1ª rodada do Grupo F'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Teto individual','Bola parada','Experiência em torneios'],
+  datasets:[
+   {label:'Países Baixos',data:[6,6.5,8,8.5,7,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Suécia',data:[5.5,7.5,6,8,6.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

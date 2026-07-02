@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 瑞典 vs 突尼斯 · 2026世界杯 F组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-sweden-vs-tunisia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-sweden-vs-tunisia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-sweden-vs-tunisia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-sweden-vs-tunisia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-sweden-vs-tunisia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#0066b3;--sc:#e70013;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#003d6b,#7a0a10);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13203a,#241114);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#5aa6e0;font-weight:600}td.sc{color:#f0857f;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-sweden-vs-tunisia.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-sweden-vs-tunisia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-sweden-vs-tunisia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · F组首轮 · 顶级锋线 vs 滴水不漏的防线</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 已完赛 · 瑞典 5-1 突尼斯</span>
+  <h1>瑞典 vs 突尼斯</h1>
+  <div class="meta">2026年6月14日 · 蒙特雷 Estadio BBVA · 22:00 ET · F组 · 墨西哥</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5aa6e0">🇸🇪 瑞典</div><div class="rk">锋线双星 Isak + Gyökeres · 2018年后首次重返 · 附加赛惊险晋级</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0857f">🇹🇳 突尼斯</div><div class="rk">本组唯一预选零失球晋级 · 全员健康 · 防反劲旅</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-15） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 瑞典 5-1 突尼斯 · 06-14</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">瑞典开场即压制：Yasin Ayari 第 7 分钟一记远射世界波破门，Isak 第 30 分钟接 Gyökeres 反击直塞低射扩大领先（2-0）。突尼斯 Omar Rekik 第 43 分钟扳回一球（2-1），但下半场瑞典彻底拉开——Gyökeres（59'）、替补登场仅 16 秒的 Mattias Svanberg（84'）、Ayari 补时第二记远射（90+6'）锁定 5-1。<b>Ayari 的远射梅开二度当选全场最佳</b>，瑞典登顶 F 组。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 7' Ayari · 30' Isak · 43' Rekik(突) · 59' Gyökeres · 84' Svanberg · 90+6' Ayari</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇸🇪 瑞典</th><th>🇹🇳 突尼斯</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td>≈54%</td><td>≈46%</td><td>控球接近五五，但瑞典把有限机会几乎全转化——效率碾压</td></tr>
+      <tr><td class="ht">进球质量</td><td colspan="2">瑞典 5 球含 Ayari 两记远射世界波 + Svanberg 替补 16 秒闪击</td><td>说明瑞典的得分来源多元（运动战、反击、远射、板凳），不只靠双星</td></tr>
+      <tr><td class="ht">锋线双星</td><td colspan="2">Isak 进球 + Gyökeres 进球并助攻 Isak</td><td>赛前"上限全系于双星"的判断成立，二人直接/间接参与多球</td></tr>
+      <tr><td class="ht">突尼斯零封基因</td><td colspan="2">预选 6 场 0 失球 → 本场单场丢 5</td><td>铁桶在顶级锋线 + 远射面前彻底失效，结构被打穿</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/sweden-vs-tunisia-stats-world-cup-2026">Opta Analyst — Sweden 5-1 Tunisia Stats</a> · <a href="https://www.espn.com/soccer/story/_/id/49064457/sweden-tunisia-live-world-cup-2026-latest-updates-commentary-score-result">ESPN 战报</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">瑞典的进攻上限远超"双星依赖"的赛前画像</div>赛前主线是"全部上限系于 Isak + Gyökeres"，实战中中场 Ayari 两记远射 + Svanberg 替补闪击说明<b>瑞典的得分点比预期更分散、更立体</b>。这对后续对手是坏消息：封死双星不等于封死瑞典。</div>
+    <div class="insight"><div class="who">远射是破铁桶的有效解药</div>面对突尼斯低位密集，瑞典没有一味强攻禁区，而是用 Ayari 的远射直接解题（两球皆是）。<b>说明当对手收缩禁区时，瑞典具备从外围惩罚的能力</b>——这是破密集防守的可复制路径。</div>
+    <div class="insight"><div class="who">突尼斯"零失球神话"在真正顶级火力前破产</div>预选 6 场 0 失球的铁桶单场丢 5。<b>说明 Lamouchi 的低位块对阵预选级对手有效，但缺乏应对世界级个人能力（Isak/Gyökeres/远射手）的二级防御</b>——一旦先失球被迫前压，结构崩塌速度极快。</div>
+    <div class="insight"><div class="who">板凳深度兑现：Svanberg 16 秒闪击</div>替补登场 16 秒即破门，是高效轮换的极致样本。<b>说明瑞典这套阵容在 48 队扩军赛制（密集赛程）下具备轮换抢分的资本</b>，不必每场押上全部主力。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">瑞典胜（隐含 ≈50%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>5-1 大胜，热门兑现且远超预期幅度</td></tr>
+      <tr><td class="ht">基准 1-0/1-1 低比分缠斗</td><td style="color:var(--bad)"><b>✗ 重大偏差</b></td><td>严重低估瑞典火力与突尼斯防线崩塌速度——预测最大失误项</td></tr>
+      <tr><td class="ht">突尼斯零失球铁桶难破</td><td style="color:var(--bad)"><b>✗ 偏差</b></td><td>"滴水不漏"被打成 5 球，对突尼斯防线韧性的判断过于乐观</td></tr>
+      <tr><td class="ht">上限系于 Isak+Gyökeres</td><td style="color:var(--warn)"><b>~ 部分对</b></td><td>双星确实进球，但低估了 Ayari/Svanberg 等次级火力点</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5aa6e0">🇸🇪 瑞典 · 下一场 vs 荷兰（6/20 休斯顿）</h4>
+        <ul class="watch">
+          <li><b>火力全面开火</b>：双星 + Ayari 远射 + 板凳深度，5 球登顶 F 组——对荷兰（首战 2-2 被日本逼平、终结低效）是真正考验，瑞典攻强守弱的剧本将放大。</li>
+          <li><b>远射武器可复制</b>：荷兰若也收缩，Ayari 的外围打击仍是钥匙。</li>
+          <li><b>后防隐患未消</b>：仅丢 1 球但突尼斯进攻有限；荷兰锋线火力更强，瑞典后防漏洞会被更严厉试探。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#f0857f">🇹🇳 突尼斯 · 下一场 vs 日本（6/21 瓜达拉哈拉）</h4>
+        <ul class="watch">
+          <li><b>零失球神话已破</b>：单场丢 5、心理与结构均需重建；对日本（2-2 逼平荷兰、定位球有威胁）须重新组织低位块。</li>
+          <li><b>先失球即崩的隐患</b>：本场 2-1 后被连追说明被迫前压时极脆弱——对日本须避免早早落后。</li>
+          <li><b>反击端乏力</b>：除 Rekik 一球外进攻贫瘠，须找到由守转攻的出球点才能从日本身上拿分。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">一场"矛与盾"的开门红：瑞典<b>时隔2018年后</b>重返世界杯（常规预选小组垫底，靠国联排名进附加赛，再3-1乌克兰、3-2波兰惊险晋级），手握全场最锋利的<b>双前锋</b>——利物浦的 Alexander Isak 与阿森纳的 Viktor Gyökeres；但常规预选垫底已暴露其<b>状态起伏与后防漏洞</b>，作为热门并不让人安心。对面是 Sabri Lamouchi 1月接手后焕然一新的突尼斯——<b>本组乃至全世界唯一一支预选赛零失球晋级的球队</b>（6战全胜、进16球丢0球），全员健康、无伤病困扰，是一支极擅长摆铁桶+反击的硬骨头。盘口（欧赔）：瑞典胜 <b>1.95</b>（去水<b>≈50%</b>，明显热门）、平 3.55（≈28%）、突尼斯胜 4.44（≈22%）——瑞典是清晰热门，但平＋突合计约一半，价格仍尊重突尼斯的防线。基准剧本：<b>瑞典 1-0 / 1-1 的低比分缠斗</b>。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">瑞典隐含胜率(去水)</div><div class="v" style="color:#5aa6e0">≈50%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈28%</div></div>
+      <div class="key"><div class="k">突尼斯预选失球</div><div class="v" style="color:#f0857f">0</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Isak + Gyökeres 的合体</b>：瑞典进攻的全部上限都系于这对双星能否撕开突尼斯的低位密集——他俩在不在状态直接决定盘口走向。</li>
+      <li><b>突尼斯的零封基因</b>：预选6场0失球绝非偶然，三中卫+五后卫的低位块是为顶级锋线量身设防——瑞典能否破密集是本场最大悬念。</li>
+      <li><b>Gudmundsson 的病毒困扰</b>：瑞典左路 Gabriel Gudmundsson 周内受病毒影响、能否首发待定，左路输送是瑞典进攻的一条命脉。</li>
+      <li><b>瑞典的后防隐患</b>：常规预选垫底暴露的防守问题，遇上突尼斯的反击会被反复试探——一次失误就可能改写低比分剧本。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">瑞典 · 队况 <span style="color:var(--mut);font-weight:400">· 06-12 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Gudmundsson 受病毒影响、首发存疑</b>；Lindelöf、Elanga、Nygren、Bernhardsson 已从小伤中康复</div>
+      <p style="font-size:13.5px">据预测媒体，左路的 Gabriel Gudmundsson 周内一直在与病毒作斗争，能否赶上突尼斯一战处于"待定"状态，替补人选可能是 Daniel Svensson 或 Elliot Stroud。好消息是队长 Victor Lindelöf、边锋 Anthony Elanga、Benjamin Nygren 与 Alexander Bernhardsson 都已从小伤病中完全恢复。Isak 与 Gyökeres 双双健康、状态在线。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：面对突尼斯的密集低位，瑞典需要边路的宽度与传中来撬开禁区——Gudmundsson 的左路输送正是这条通道。若他缺阵，瑞典的边路威胁与定位球质量都会降一档，更要依赖 Isak/Gyökeres 在狭小空间里的个人能力。<span style="color:var(--warn)">[Gudmundsson 首发与否以赛前官方名单为准 · 待核]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/sweden/world-cup-2026/predicted-lineups/the-sickness-bug-strikes-predicted-sweden-xi-vs-tunisia_599046.html" style="color:var(--accent)">Sports Mole — 瑞典预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49038031/sweden-vs-tunisia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 队况/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">突尼斯 · 队况 <span style="color:var(--mut);font-weight:400">· 满员可战</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">突尼斯<b>全员健康、无显著伤病</b>；Hannibal Mejbri 预计回归首发，料摆出五后卫</div>
+      <p style="font-size:13.5px">突尼斯带着一份完整可用的名单进入本届世界杯，没有值得标注的伤情。中场核心 Ellyes Skhiri 必首发；曾效力曼联、现在伯恩利的 Hannibal Mejbri 预计回到首发担任组织者。多方分析判断 Lamouchi 本夏会切换到五后卫，以求面对强队时的防守稳定性。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：满员意味着突尼斯能摆出理论最强的三中卫/五后卫低位块——这正是为 Isak+Gyökeres 这类顶级锋线量身定做的封锁。Skhiri 在身前扫荡、Talbi 居中坐镇，瑞典想要的"双前锋冲身后"会被人数与纵深反复挤压；一旦断球，Hannibal 的推进与边翼卫的前插就是反击的发起点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/tunisia/world-cup-2026/predicted-lineups/hope-for-hannibal-predicted-tunisia-xi-vs-sweden_599050.html" style="color:var(--accent)">Sports Mole — 突尼斯预测首发</a> · <a href="https://www.squawka.com/en/news/world-cup/tunisia-world-cup-2026-fixtures-squad-analysis/" style="color:var(--accent)">Squawka — 突尼斯阵容分析</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">突尼斯 · 数据基因 <span style="color:var(--mut);font-weight:400">· CAF 预选</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">突尼斯是<b>全世界首支预选零失球晋级</b>的球队：CAF 末轮6战全胜、进16球丢0球</div>
+      <p style="font-size:13.5px">"迦太基之鹰"以 6 战全胜、净胜 16 球、<b>一球未失</b>的方式完成 CAF 预选，成为本届首支零失球晋级的国家队。这不是一场比赛的偶然，而是贯穿整个预选周期的结构性稳健。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场的核心矛盾就是"瑞典顶级锋线"对"突尼斯零封防线"。一支整轮预选不丢球的队，开局往往优先求稳、压低比赛节奏——这会把瑞典拖进它最不擅长的"耐心攻坚"，也直接利好<b>小球/低比分</b>方向的市场画像。须注意：预选对手强度低于世界杯，零封纪录在 Isak/Gyökeres 面前会受到真正的检验。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en-us/news/sweden-tunisia-world-cup-preview/blt584be5c94454e77c" style="color:var(--accent)">Goal — 赛前前瞻</a> · <a href="https://www.juvefc.com/sweden-v-tunisia-predictions/" style="color:var(--accent)">Juvefc — 预选零失球</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿根廷裁判 <b>Yael Falcón Pérez</b> 执法（2022年起 FIFA 国际级，以严厉著称）</div>
+      <p style="font-size:13.5px">FIFA 任命阿根廷裁判 <b>Yael Falcón Pérez</b>（1988年生，2022年入列 FIFA 国际级）执法本场，候补裁判为其同胞 Maximiliano Del Vesso、Facundo Rodríguez，第四官员为哥斯达黎加的 Juan Calderón。其曾执法 2024 年阿根廷杯决赛，南美履历丰富。详见下文裁判模块。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：其大赛样本极少——最高级别仅 <b>2024美洲杯1场小组赛</b>，无世界杯经历。阿甲场均≈5.86黄看似偏多，但<b>阿甲本身是高牌联赛、不能直接搬到世界杯</b>（这正是用联赛均值预判牌盘的陷阱）。本场是高对抗结构、牌数可能偏多，但因无大赛/两队样本，应视为变量而非定数。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://foot-africa.com/en/news/2026-world-cup-yael-falcon-perez-to-referee-tunisia-vs-sweden-1240405/" style="color:var(--accent)">Foot Africa — 裁判官宣</a> · <a href="https://swedenherald.com/article/argentine-referee-to-officiate-swedens-world-cup-debut-against-tunisia" style="color:var(--accent)">Sweden Herald — 裁判</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（欧赔去水） · 预选失球对比 · 综合画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（欧赔去水 %）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>预选阶段进/失球对比</h5><canvas id="qualChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>欧赔（小数）三项对比</h5><canvas id="oddsChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇸🇪 瑞典</th><th>🇹🇳 突尼斯</th></tr>
+      <tr><td>晋级之路</td><td class="ht">常规预选垫底 → 国联排名进附加赛 → 3-1乌克兰、3-2波兰晋级</td><td class="sc">CAF 预选6战全胜、进16球、<b>0失球</b></td></tr>
+      <tr><td>世界杯史</td><td class="ht">老牌劲旅；2018年后首次重返</td><td class="sc">常客；防守见长的非洲代表</td></tr>
+      <tr><td>头号武器</td><td class="ht">Isak + Gyökeres 双前锋（全场最锋利锋线）</td><td class="sc">三中卫/五后卫低位块 + 快速反击</td></tr>
+      <tr><td>核心短板</td><td class="ht">后防起伏、状态不稳（常规预选垫底）</td><td class="sc">面对顶级锋线，零封纪录尚未受过最高级别检验</td></tr>
+      <tr><td>主帅</td><td class="ht">Graham Potter</td><td class="sc">Sabri Lamouchi（2026年1月接手）</td></tr>
+      <tr><td>1X2 欧赔（小数）</td><td class="ht">1.95（隐含≈50%）</td><td class="sc">4.44（≈22%）· 平 3.55（≈28%）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">近年友谊赛有交手记录（突尼斯曾1-0小胜）；正式大赛交集有限</td></tr>
+    </table>
+    <div class="note">📌 概率为欧赔（小数）去水后的隐含概率（约 <b>50 / 28 / 22</b>）。瑞典是<b>明显热门</b>（≈50%），但平局（≈28%）＋突尼斯胜（≈22%）合计约一半——正是突尼斯零封防线被市场定价的体现，而非"势均力敌"。原始美式赔率（瑞典 -107、平 +250、突尼斯 +360）已按规则换算为小数。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">名气热、盘口冷：Isak/Gyökeres 拉高关注，价格仍尊重突尼斯的防线</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 名气拉热度 + 盘口克制</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Isak（利物浦）+ Gyökeres（阿森纳）的明星效应让舆论和关注度走高，瑞典被定价为明显热门（约50%）；但平局（约28%）＋突尼斯胜（约22%）合计约一半，盘口对突尼斯零封防线保持尊重。没有非理性的单边狂热。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：瑞典胜/小球 多数 · 突尼斯胜 少数 · 平 个别）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>瑞典小胜、低比分</td></tr>
+      <tr><td>OneFootball</td><td>预测媒体</td><td>瑞典胜 + 倾向小2.5</td></tr>
+      <tr><td>Juvefc</td><td>预测媒体</td><td>看好瑞典锋线、提示突尼斯防线难破</td></tr>
+      <tr><td>VSiN</td><td>美系投注媒体</td><td>瑞典让球价值有限、倾向低比分</td></tr>
+      <tr><td>Sports Interaction</td><td>博彩方</td><td>瑞典开盘小热门</td></tr>
+      <tr><td>Canada Sports Betting</td><td>预测媒体</td><td>瑞典胜 / BTTS 偏 No</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（轻度）</b>：方向高度趋同于"瑞典胜 + 小球"，几乎无人押突尼斯赢球——这种一致性本身就是<b>价值被挤压</b>的信号。被忽略的口袋：平局（隐含≈34%却鲜有人主推）与"突尼斯零封/不丢球"型市场，正是突尼斯结构所支持、但被锋线名气盖过的方向。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（欧赔 · 小数）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>瑞典胜</th><th>平</th><th>突尼斯胜</th></tr>
+      <tr><td>当前</td><td>综合欧赔</td><td class="ht">1.95</td><td>3.55</td><td class="sc">4.44</td></tr>
+      <tr><td>去水隐含</td><td>—</td><td class="ht">≈50%</td><td>≈28%</td><td class="sc">≈22%</td></tr>
+      <tr><td>原始美式</td><td>另一盘口</td><td class="ht">-107</td><td>+250</td><td class="sc">+360</td></tr>
+    </table>
+    <div class="note">📌 瑞典明显领先（约 50/28/22）——"明显热门但低净胜、低进球预期"的定价：热门胜率高，但因预期进球少、对手防线硬，平与负合计仍接近一半。原始美式赔率已按规则换算（负数=1+100/|x|，正数=1+x/100）：瑞典 -107→1.95、平 +250→3.55、突尼斯 +360→4.44。亚盘让球/大小线（如有）保持原样、不换算。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：Kalshi / Polymarket / DefiRate 的本场单市场成交未检得明确数据——价位预计贴近博彩侧的 ~50/28/22 区间。</li>
+      <li><b>舆论</b>：话题集中在 Isak 转会利物浦、Gyökeres 加盟阿森纳与附加赛绝杀波兰的故事线，明星叙事带动流量；突尼斯侧讨论更聚焦"零失球"与五后卫战术，受众较窄。</li>
+      <li><b>名气错觉提醒</b>：瑞典约50%是清晰热门，但常规预选小组垫底、靠附加赛险过——这约50%里其实含着对突尼斯防线的尊重（平＋突合计约一半）；"锋线强、整体不稳"是其真实画像。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：盘口约 50/28/22，瑞典是明显热门、热源是明星锋线而非新信息。市场盲点更可能在<b>突尼斯不败/零封型与小球</b>——突尼斯 WC2022 曾以同样结构掀翻法国，其低位块足以把比赛拖进低比分。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/sweden/world-cup-2026/preview/sweden-vs-tunisia-prediction-team-news-lineups_599031.html">Sports Mole</a> · <a href="https://onefootball.com/en/news/sweden-vs-tunisia-prediction-world-cup-2026-preview-best-bets-42995613">OneFootball</a> · <a href="https://www.juvefc.com/sweden-v-tunisia-predictions/">Juvefc</a> · <a href="https://vsin.com/soccer/sweden-vs-tunisia-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN</a> · <a href="https://news.sportsinteraction.com/soccer/fifa-world-cup/story/sweden-vs-tunisia-odds-prediction-061526-217162">Sports Interaction</a> · <a href="https://www.canadasportsbetting.ca/news/world-cup/tunisia-sweden-june-14-world-cup-prediction/">Canada Sports Betting</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇸🇪 瑞典 预测首发（4-4-1-1 / 双前锋）</h4>
+    <div class="lineup">Nordfeldt; Hien · Lindelöf(C) · Lagerbielke; Bernhardsson · Karlström · Ayari · Gudmundsson(待核); Nygren; Isak · Gyökeres</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Alexander Isak</td><td>前锋 / 利物浦</td><td>近期国家队进球状态强劲；瑞典进攻第一终结点</td></tr>
+      <tr><td class="ht">Viktor Gyökeres</td><td>前锋 / 阿森纳</td><td>附加赛建功（含绝杀波兰）；身体与冲击力顶级，已完全康复</td></tr>
+      <tr><td class="ht">Victor Lindelöf (C)</td><td>中卫 / 队长</td><td>已从小伤康复；后防组织与经验核心</td></tr>
+      <tr><td class="ht">Gabriel Gudmundsson</td><td>左路 / 受病毒影响</td><td>首发待定；左路输送是瑞典进攻命脉，替补为 Svensson / Stroud</td></tr>
+    </table>
+    <h4>🇹🇳 突尼斯 预测首发（3-5-2 / 五后卫）</h4>
+    <div class="lineup">Dahmen; Valery · Meriah · Bronn · Talbi · Abdi; Hannibal · Skhiri · Sassi; Mastouri · Msakni</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Ellyes Skhiri</td><td>中场 / 球队核心</td><td>首发铁定；身前扫荡+串联，零封防线的发动机</td></tr>
+      <tr><td class="sc">Hannibal Mejbri</td><td>中场 / 伯恩利</td><td>前曼联新星；预计回归首发担任组织者</td></tr>
+      <tr><td class="sc">Montassar Talbi</td><td>中卫 / 洛里昂</td><td>赛季出场密集；后防中坚</td></tr>
+      <tr><td class="sc">Yan Valery / Ali Abdi</td><td>边翼卫 / 年轻男孩、尼斯</td><td>五后卫体系下兼顾防守与边路前插，反击发起点</td></tr>
+    </table>
+    <div class="note">阵型注：瑞典多源给出 4-4-1-1（Nygren 居 Isak/Gyökeres 之后），亦可读作双前锋的 4-4-2 变体。突尼斯预计由四后卫转为<b>三中卫/五后卫</b>以增强对强队的防守稳定性。两份首发均为分析源推测，<b>以赛前官方名单为准</b>。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5aa6e0">🇸🇪 瑞典 · Graham Potter</div>
+        <div class="role">双前锋 + 边路宽度 + 攻强守弱</div>
+        <ul class="cl">
+          <li>围绕 Isak/Gyökeres 搭建清晰的进攻框架，强调边路输送与前场两点的纵深冲击。</li>
+          <li>剧本：用 Gudmundsson/Bernhardsson 的边路传中喂给两中锋，外加 Gyökeres 冲身后——专打对手防线身后空间。</li>
+          <li>风险：常规预选垫底暴露的后防起伏，遇上突尼斯的快速反击容易被反复试探，一次失位即可能丢球。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0857f">🇹🇳 突尼斯 · Sabri Lamouchi（2026年1月接手）</div>
+        <div class="role">3-5-2/5-3-2 低位块 + 快速反击</div>
+        <ul class="cl">
+          <li>1月接手后重塑防守结构，预选零失球是其体系的最佳背书。</li>
+          <li>剧本：让出控球、收缩低位块，用 Skhiri 屏障+三中卫纵深限制 Isak/Gyökeres，断球后由 Hannibal 与边翼卫快速发起反击。</li>
+          <li>风险：若瑞典定位球或边路传中兑现，五后卫的禁区拥挤反而可能制造混乱；进攻端火力有限，难以扩大比分。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">瑞典靠边路传中冲吊撬密集、必然多吃角球；突尼斯摆铁桶让控球，少得多吃——角球占优明显倾向瑞典，但总数受"低位密集 + 突尼斯求稳压节奏"两面拉扯。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table>
+      <tr><th>维度</th><th>🇸🇪 瑞典</th><th>🇹🇳 突尼斯</th><th>含义</th></tr>
+      <tr><td>角球来源（打法）</td><td class="ht">持续压上＋边路冲吊（Gudmundsson 传中）→ 获角偏多</td><td class="sc">让控球、五后卫死守→ 主动获角少、被迫解围角偏多</td><td>角球差天然倾向瑞典（无精确大赛角球样本，按打法判断）</td></tr>
+      <tr><td>大赛防守实绩</td><td class="ht">附加赛冲击力强，但首发不稳</td><td class="sc">WC2022 靠低位块封堵法国等强队，被动角球多却很少失球</td><td>突尼斯多送角≠多失球：Talbi/Bronn 高空能消化角球</td></tr>
+      <tr><td>进攻侧重（边路/中路/高压）</td><td class="ht">边路宽度 + 传中（Gudmundsson 左路输送）</td><td class="sc">放弃控球、断球快速反击</td><td>瑞典的边路传中正是角球的主要来源；突尼斯几乎不主动制造角球</td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高（Gyökeres/Lindelöf 头球点 + Isak 抢点）</td><td class="sc">以防为主、定位球进攻有限</td><td>瑞典把角球当作破密集的实质武器，突尼斯多是被动应对</td></tr>
+      <tr><td>角球占优倾向</td><td class="ht" colspan="2" style="text-align:center;font-weight:700">明显倾向 🇸🇪 瑞典</td><td>打法决定角球的非对称：瑞典攻、突尼斯守，角球差几乎一边倒</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>各大博彩（bet365 / Oddschecker / Sofascore）<b>本场专项角球盘口未检得公开明确数据</b>。基于打法的合理推断（<span style="color:var(--warn)">待核</span>）：角球<b>总数大小球线 ≈ 9.5</b>，大 ≈ <b>1.90</b> / 小 ≈ <b>1.90</b>（欧赔·小数）；角球<b>让球线 ≈ 瑞典 −2.5</b>（瑞典让 2.5 个角球）。线值一经官方上线请以实际为准——以上为方向性估计，非已核实盘口。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>瑞典靠 Gudmundsson/Bernhardsson 的边路传中持续冲吊突尼斯的五后卫低位块，角球供给天然占优；突尼斯放弃控球、几乎不主动制造角球，进攻端角球稀少。<b>角球让球明显偏向瑞典</b>——瑞典 −2.5 一类的让球，逻辑上有打法支撑（待核线值）。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>瑞典持续压上 → 角球供给抬高总数；但突尼斯<b>预选零失球、开局求稳压节奏</b>的基因会压低整体比赛速度，且其低位死守虽多送角球、却也降低瑞典进入危险传中区的频率。两股力量对冲：上限受瑞典进攻拉高，下限受突尼斯控节奏压低。基准倾向中性偏<b>小球</b>（与全场"低比分缠斗"的画像一致），但若瑞典早早压不开、转为大量边路传中与远射，角球数也可能被推高——<b>大小球两面性强</b>。</div>
+    <div class="insight"><div class="who">变量与两面性</div>突尼斯摆铁桶必然多送角球，利好瑞典角球占优；但其五后卫的禁区人数与 Talbi/Bronn 的高空防守，意味着瑞典即便多拿角球，<b>定位球转化未必高效</b>。比分状态是关键变量：若突尼斯先丢球被迫前压，角球供给结构会逆转；若维持 0-0，突尼斯会更深地龟缩、把角球差进一步拉大但比赛节奏更慢。Gudmundsson 能否首发直接影响瑞典的传中质量与角球产出。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://corner-stats.com/sweden/national/team/1122">Corner-Stats — 瑞典数据</a> · <a href="https://www.oddschecker.com/football/world-cup/sweden-v-tunisia/winner">Oddschecker — 赔率</a> · <a href="https://www.sofascore.com/football/team/sweden/4688">Sofascore — 瑞典</a>（专项角球盘口未检得，估计值标 <span style="color:var(--warn)">待核</span>）</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境（大赛实际口径）</h2>
+    <div class="note">✅ <b>已官宣</b>：阿根廷 <b>Yael Falcón Pérez</b>（1988年生，2022年起 FIFA 国际级）。候补 Del Vesso、Rodríguez（均阿根廷），第四官员哥斯达黎加 Calderón。</div>
+    <h4>量化倾向（以大赛实际为准 · 双向提醒）</h4>
+    <ul class="cl">
+      <li><b>大赛样本极少</b>：最高级别仅 <b>2024 美洲杯 1 场小组赛</b>（哥斯达黎加 vs 巴拉圭）；无世界杯执法经验。仅此一场不足以推断其大赛尺度。</li>
+      <li><b>不能用联赛均值冒充</b>：其阿甲场均偏高（2024/25 约 <b>5.86 黄/场</b>、生涯约 4.71）——但<b>阿甲本就是公认的高牌联赛</b>，这一数字<b>不能直接搬到世界杯</b>（大赛通常更早警示、更少滥发，尺度差异大）。把联赛均值当大赛预期，正是最容易在牌/点盘误判的陷阱。</li>
+      <li><b>与两队历史</b>：与瑞典、突尼斯国家队均<b>无可查执法样本</b>（如实说明）。</li>
+      <li><b>本场影响</b>："瑞典冲吊 + 突尼斯密集反抢"的高对抗结构确实可能多牌，但因无大赛/两队样本，牌数与判点应视为<b>变量而非定数</b>；不建议据联赛均值下注牌盘。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察 · 含近2届大赛对账</h2>
+    <div class="insight"><div class="who">瑞典 · 最近2届大赛 <small>· WC2018 八强 + Euro2020 16强，此后连续缺席</small></div>瑞典上一次踏上大赛是 <b>2018世界杯（八强）</b>与 <b>Euro 2020（16强，加时负乌克兰）</b>——那是 Forsberg 时代的防反铁军，与今天这支不是一支队；他们随后<b>连续缺席 2022世界杯与 Euro2024（28年来首次无缘欧洲杯）</b>。全队仅 <b>Lindelöf（2018，4场）</b>与 <b>Isak（Euro2020，4场）</b>有大赛经验，<b>Isak+Gyökeres 的豪华锋线从未在大赛同台</b>。火力顶级，但大赛级别的临场抗压与控节奏经验近乎空白，又是经附加赛险过——这是热门身价下的真实隐患。</div>
+    <div class="insight"><div class="who">突尼斯 · 最近2届大赛 <small>· WC2022 胜法国仍出局 + AFCON2023 小组出局</small></div>突尼斯两届大赛是同一剧本的两面：<b>2022世界杯 1-0 掀翻卫冕的法国</b>（Khazri 进球）证明其铁桶能单场掀翻顶级强队，但仍小组出局，延续<b>世界杯从未小组出线</b>的尴尬；<b>AFCON 2023 更惨</b>，小组 0 胜出局、被纳米比亚爆冷。画像清晰——"<b>能守、能偷一场，但攻不开、出不了线</b>"。对瑞典，这既是它最擅长的剧本（守强队、伺机偷一球），也是它的天花板（很难赢下整场）。</div>
+    <div class="insight"><div class="who">市场视角 <small>· 价格信号</small></div>瑞典约50%是明显热门，但平（约28%）＋突尼斯胜（约22%）合计约一半——市场用一半概率为"突尼斯防线＋瑞典整体不稳"定价。被低估的更可能是<b>突尼斯不败/零封型与小球</b>，而非瑞典大胜。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：瑞典 1-0 / 1-1 的低比分缠斗是基准剧本；突尼斯的现实路径是顶住前段压制、用反击换一分甚至偷一球。</li>
+      <li><b>关键先生</b>：Isak、Gyökeres（瑞/进攻全部上限）、Gudmundsson（瑞/左路输送·首发待核）、Skhiri（突/防线发动机）、Hannibal（突/反击起点）。</li>
+      <li><b>胜负手</b>：瑞典边路传中与双前锋的破密集效率 vs 突尼斯五后卫的纵深封锁与反击转化；Gudmundsson 能否首发是边路威胁的单点变量。</li>
+      <li><b>市场视角</b>：瑞典明显热门（约50/28/22），热源是明星锋线；被忽略的口袋是<b>突尼斯不败/零封型与小球</b>（突尼斯 WC2022 曾以同结构胜法国）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Gudmundsson 首发与否以赛前官方为准；② 两队预测首发均为分析源推测；③ Falcón Pérez 量化数据来自公开第三方统计、口径不一且无大赛/两队样本；④ Kalshi/Polymarket/DefiRate 本场单市场价格与成交量未检得；⑤ 历史交锋以正式数据为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/sweden/world-cup-2026/preview/sweden-vs-tunisia-prediction-team-news-lineups_599031.html">Sports Mole — 前瞻/队况/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/sweden/world-cup-2026/predicted-lineups/the-sickness-bug-strikes-predicted-sweden-xi-vs-tunisia_599046.html">Sports Mole — 瑞典首发</a> · <a href="https://www.sportsmole.co.uk/football/tunisia/world-cup-2026/predicted-lineups/hope-for-hannibal-predicted-tunisia-xi-vs-sweden_599050.html">Sports Mole — 突尼斯首发</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49038031/sweden-vs-tunisia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 收看/队况/裁判</a> · <a href="https://www.goal.com/en-us/news/sweden-tunisia-world-cup-preview/blt584be5c94454e77c">Goal — 前瞻</a> · <a href="https://www.squawka.com/en/news/world-cup/tunisia-world-cup-2026-fixtures-squad-analysis/">Squawka — 突尼斯阵容分析</a> · <a href="https://www.juvefc.com/sweden-v-tunisia-predictions/">Juvefc — 预选零失球</a><br>
+      • <a href="https://foot-africa.com/en/news/2026-world-cup-yael-falcon-perez-to-referee-tunisia-vs-sweden-1240405/">Foot Africa — 裁判官宣</a> · <a href="https://swedenherald.com/article/argentine-referee-to-officiate-swedens-world-cup-debut-against-tunisia">Sweden Herald — 裁判</a> · <a href="https://www.footymetrics.com/referees/4811-yael-falcon-perez">FootyMetrics — 裁判统计</a> · <a href="https://www.besoccer.com/referee/yael-falcon-perez-31733">BeSoccer — 裁判履历</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14（概率口径修正、含近2届大赛对账） · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#0066b3',SC='#e70013',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['瑞典胜','平局','突尼斯胜'],datasets:[{data:[50,28,22],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('qualChart'),{type:'bar',
+ data:{labels:['进球','失球'],datasets:[
+   {label:'瑞典(附加赛+预选示意)',data:[null,null],backgroundColor:HT,borderRadius:6,hidden:true},
+   {label:'突尼斯(CAF末轮6场)',data:[16,0],backgroundColor:SC,borderRadius:6}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'球数（突尼斯 CAF 预选末轮）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('oddsChart'),{type:'bar',
+ data:{labels:['瑞典胜','平局','突尼斯胜'],datasets:[{data:[1.95,3.55,4.44],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'欧赔（小数）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','个人上限','反击效率','大赛经验'],
+  datasets:[
+   {label:'瑞典',data:[5.5,8,6.5,8.5,6,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'突尼斯',data:[8.5,5,6.5,5.5,7,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

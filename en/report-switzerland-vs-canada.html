@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Switzerland vs Canada · 2026 World Cup Group B Final Round (Top-Spot Showdown)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-switzerland-vs-canada.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-switzerland-vs-canada.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d52b1e;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#b81c25,#9c1420);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241317,#0e1f2a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#f0a3a3;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-switzerland-vs-canada.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group B Final Round · A "top-spot showdown" between two teams level on 4 points</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Switzerland 2-1 Canada</span>
+  <h1>Switzerland vs Canada</h1>
+  <div class="meta">24 June 2026 · Vancouver, BC Place · 15:00 ET (12:00 PT) · Group B (also in group: Bosnia &amp; Herzegovina, Qatar) · Final round</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇭 Switzerland</div><div class="rk">FIFA #20 range · 1-1 Qatar + 4-1 Bosnia · 4 pts (GD +3) · A hardened Europe-based core</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0a3a3">🇨🇦 Canada</div><div class="rk">FIFA #30 range · 1-1 Bosnia + 6-0 Qatar · 4 pts (GD +6) · Hosts · Davies return imminent</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-25) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time: Switzerland 2-1 Canada (HT 0-0) · 06-24</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">The "top-spot showdown" at Vancouver's BC Place: a goalless first half, then two quick second-half strikes from Switzerland sealed the win. In the <b>46th minute</b> Manzambi laid it off and <b>Ruben Vargas</b> tucked home for 1-0; in the <b>57th minute</b> Embolo made the goal off a Canada defensive lapse and <b>Johan Manzambi</b> added a second for 2-0. In the <b>76th minute</b> substitute <b>Promise David</b> volleyed one back, but Canada could not turn it around. Switzerland take top spot in Group B, Canada finish second.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 46' Vargas · 57' Manzambi (assist Embolo) · 76' David (CAN) | Two quick Switzerland strikes · a Canada defensive error gifted the second</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Squawka / FIFA)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇭 Switzerland</th><th>🇨🇦 Canada</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td>48%</td><td><b>52%</b></td><td>Canada saw slightly more of the ball, dominated yet lost — a classic case of "control without reward"</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td>1.06</td><td><b>1.34</b></td><td>Canada's xG was actually higher and they created no fewer chances — they lost on finishing and defensive errors</td></tr>
+      <tr><td class="ht">Shots / on target</td><td>6 / <b>4</b></td><td>13 / 7</td><td>Switzerland were ruthlessly efficient with 6 shots / 4 on target; Canada had 13 shots / 7 on target but scored only once — wasteful</td></tr>
+      <tr><td class="ht">On-target conversion</td><td><b>2/4</b></td><td>1/7</td><td>Switzerland cold-blooded, Canada all volume and no end product — this is the gap between 2-1 and "should have been a draw"</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.squawka.com/en/news/world-cup/switzerland-canada-stats-report-24-06-2026/">Squawka — Switzerland 2-1 Canada Stats</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451">FIFA Match Centre</a> · <a href="https://www.cbc.ca/sports/livestory/canada-vs-switzerland-june-24-live-updates-fifa-world-cup-2026-9.7222405">CBC</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Switzerland's cold-blooded efficiency = the knockout-stage hallmark of an established side</div>6 shots, 4 on target, 2 goals — with a lower xG than their opponent. <b>It shows Switzerland do not need territorial dominance to win — they punish mistakes and convert limited chances cleanly</b>, exactly the trait that lets them reach the knockouts reliably tournament after tournament, and a real threat in the knockout rounds.</div>
+    <div class="insight"><div class="who">Canada's "superior in possession and shots yet defeated" exposes leaks at both ends — defence and finishing</div>52% possession, 13 shots / 7 on target, xG 1.34 across the board, yet they lost to a defensive lapse (the second goal) and poor finishing. <b>It shows Canada have creativity but lack the ability to "shut the door" and a composed finisher</b> — their biggest worry heading into the knockouts.</div>
+    <div class="insight"><div class="who">Promise David's substitute goal gives Canada's attack an answer</div>Came off the bench and immediately volleyed home. <b>It suggests David may be Canada's more reliable finishing outlet</b>, and the head coach could consider starting him next time to address the wastefulness.</div>
+    <div class="insight"><div class="who">Alphonso Davies's fitness is the open question for Canada</div>Multiple outlets flagged concerns over Davies. <b>It means the form of Canada's left-flank talisman will directly determine their attacking and defensive ceiling in the knockouts</b> (to be tracked in the next match's news module).</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Notes</th></tr>
+      <tr><td class="ht">Switzerland win (implied ≈39%, three-way close)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Three-way prices very close (39/31/30); a narrow Switzerland win delivered for the marginal favourite</td></tr>
+      <tr><td class="ht">"Top-spot showdown between two sides level on 4 points"</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Winner Switzerland take top spot, Canada finish second — the positioning was exactly right</td></tr>
+      <tr><td class="ht">Market overheating 3/5</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Wide disagreement, plenty of suspense — consistent with the 3/5 balanced-contest read</td></tr>
+      <tr><td class="ht">Canada home advantage</td><td style="color:var(--warn)"><b>~ Not converted</b></td><td>Home side edged possession/shots but dropped points to errors — home advantage no match for Switzerland's efficiency</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#d23f4a">🇨🇭 Switzerland · Into the round of 32 (Group B winners)</h4>
+        <ul class="watch">
+          <li><b>Through as Group B winners, facing a third-placed team from 6/28</b> — a relatively friendly draw.</li>
+          <li><b>Cold-blooded efficiency is knockout-stage capital</b>: not reliant on possession, strong at punishing mistakes, capable of nicking results even against stronger sides.</li>
+          <li><b>The Vargas / Manzambi / Embolo front-line link-up is taking shape</b>: both goals came from quick one-twos and lay-offs — a clear attacking pattern.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#c63b46">🇨🇦 Canada · Into the round of 32 vs South Africa (from 6/28 · Group B runners-up vs Group A runners-up)</h4>
+        <ul class="watch">
+          <li><b>The round-of-32 opponent is now clear — Group A runners-up South Africa</b> (a shock win over South Korea, with an extreme low-possession counter-attacking style). Canada must beware being caught in behind on the break.</li>
+          <li><b>The defensive error must be fixed</b>: this match's second goal came from a defensive lapse — a fatal weakness against a sharp counter-attacking opponent (carried into the next analysis).</li>
+          <li><b>Promise David may be promoted</b>: a substitute goal could solve the wastefulness problem.</li>
+          <li><b>Davies's fitness to be tracked</b>: the left-flank talisman's condition sets the attacking and defensive ceiling (carried into the next match's news module).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is Group B's <b>genuine "top-spot showdown"</b>: Switzerland and Canada both lead on 4 points (Switzerland 1-1 Qatar + 4-1 Bosnia, GD +3; Canada 1-1 Bosnia + <b>6-0 demolition of Qatar</b>, GD +6), with Bosnia and Qatar on just 1 point. Both teams have all but secured qualification, so this match <b>directly decides who finishes top of the group</b> — and top spot most likely buys a friendlier R32 matchup and bracket. Arithmetically Canada hold a <b>goal-difference advantage (+6 vs +3)</b>: a draw is enough to pip Switzerland to top spot on goal difference; Switzerland must win to finish first. The prices are close with Switzerland marginally favoured — to win ≈ <b>2.50</b> (de-vigged implied ≈39%), draw <b>3.15</b> (≈31%), Canada win <b>3.25</b> (≈30%); the total line is O/U <b>2.5</b>, with a contest between two pragmatic sides leaning slightly Under. Three things to watch: ① <b>whether Alphonso Davies makes his first appearance of the tournament</b> (Marsch says he could return — Canada's biggest left-flank variable); ② <b>Switzerland's experienced spine (Xhaka/Akanji/Embolo) vs Canada's home momentum + athleticism</b>; ③ <b>whether both teams are content and will manage their legs</b> — having all but qualified leaves room for the match to be "just enough". Base scenario: <b>decided by a single goal, or a draw</b>, with the stakes being top spot and goal difference; overheating index ≈ 3/5 (genuine three-way disagreement, relatively high information content).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Switzerland implied win prob. (de-vigged)</div><div class="v" style="color:#f08a82">≈39%</div></div>
+      <div class="key"><div class="k">Canada implied win prob. (de-vigged)</div><div class="v" style="color:#f0a3a3">≈30%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈31%</div></div>
+      <div class="key"><div class="k">Market overheating index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Top-spot showdown + the goal-difference balance (qualification arithmetic)</b>: the two teams are level on 4 points and the winner takes Group B; if it ends level, Canada take top spot on goal difference, +6 (Switzerland +3). Both are expected to be through to the R32, so they are fighting over the matchup advantage that comes with top spot — which makes the "will to win" slightly lower on Canada's side (a draw is enough for top spot).</li>
+      <li><b>Possibility of Alphonso Davies's tournament debut (Canada · key variable)</b>: head coach Jesse Marsch has said Davies could be in a position to feature for the first time in the final round — if he returns, Canada's left-side progression and defensive coverage upgrade significantly, the single biggest personnel variable of the match (availability to be cross-checked across multiple sources pre-match).</li>
+      <li><b>Switzerland's hardened Europe-based spine (carried over from the last match)</b>: the 4-1 win over Bosnia showcased Embolo's hold-up finishing and the midfield control of Xhaka/Freuler/Zakaria; Switzerland's floor comes from the game-reading and set-piece quality of their Europe-based players — the structure Canada need to crack.</li>
+      <li><b>The inflation in Canada's 6-0 (carried over from the last match)</b>: the 6-0 thrashing of Qatar inflated the goal difference, but the opponent was the group's weakest and in free fall; against a structurally complete side like Switzerland, Canada's true attacking efficiency will be re-examined — which is why the market has not made Canada the home favourite.</li>
+    </ul>
+  </div>
+
+  <!-- Key match news -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, with item-by-item explanation of how each changes the tactics or result (including carry-over items from each team's last match; key-player availability cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ Key-player check · Alphonso Davies return imminent <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / bet365 · 2026-06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources agree: Marsch expects <b>Davies to be in a position to feature for the first time this tournament</b> (out injured for the first two rounds), with a chance of appearing in the final round vs Switzerland</div>
+      <p style="font-size:13.5px">Key-player availability cross-checked across sources: ESPN, Sports Mole and bet365 all report that head coach <b>Jesse Marsch</b> expects Alphonso Davies (Bayern left back / left-flank threat) to be <b>available for the first time</b> in the final round — having missed the opening two rounds through injury. How he features (starter or substitute, minutes) remains a variable, with several predicted XIs placing him on Canada's left in a 4-3-3 (Davies as captain). <span style="color:var(--warn)">[Starter / minutes subject to the official FIFA Match Centre team sheet pre-match · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Davies is Canada's highest-ceiling individual; his left-side progression, transition speed and defensive coverage directly change whether Canada can suppress Switzerland. If he starts, Canada's probability of taking top spot at home is revised up; if he only comes off the bench or remains out, Canada's attack still leans mainly on Buchanan/David and Marsch's high-intensity pressing. This is the match's single biggest variable.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49141389/fifa-world-cup-2026-switzerland-vs-canada-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Preview / predicted XI / Davies status</a> · <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html" style="color:var(--accent)">Sports Mole — Team news</a> · <a href="https://news.bet365.com/en-us/article/canada-switzerland-preview-and-lineup-predictions/2026062216422510645" style="color:var(--accent)">bet365 — Lineup predictions</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Qualification arithmetic · Top spot and goal difference <span style="color:var(--mut);font-weight:400">· Sky Sports / FanSided · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Both teams level on 4 points; Canada lead on goal difference +6 to Switzerland's +3 — <b>a draw is enough for Canada to take top spot</b></div>
+      <p style="font-size:13.5px">After Group B's second round: Canada 4 points (+6), Switzerland 4 points (+3), Bosnia 1 point (-3), Qatar 1 point (-6). The final-round Switzerland–Canada match directly decides top spot: Switzerland must win to finish first; a draw is enough for Canada to take top spot on their goal-difference advantage. Both teams have very likely secured their qualification places (Bosnia/Qatar can climb to 4 points at most and sit at a goal-difference disadvantage) — the fight is concentrated on the matchup/bracket advantage that top spot brings.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: the goal-difference balance directly affects each side's "intensity of will to win". Canada have the "a draw is enough" safety cushion and may be more pragmatic; Switzerland must win to take top spot, so their attacking motivation is greater — consistent with the market's "Switzerland marginally favoured" pricing direction. But if both teams are content to qualify and play it safe, the probability of a draw and Under rises.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland" style="color:var(--accent)">Sky Sports — Group B guide / standings</a> · <a href="https://fansided.com/soccer/world-cup-group-b-standings-canada-and-switzerland-well-placed-how-bosnia-and-qatar-can-advance" style="color:var(--accent)">FanSided — Group B picture</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Referee <span style="color:var(--mut);font-weight:400">· Sports Mole / ESPN · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Brazil's <b>Ramon Abatti</b> (officiated Belgium–Egypt in Group G this tournament); Vancouver BC Place (indoor / retractable roof)</div>
+      <p style="font-size:13.5px">According to Sports Mole, the referee for this match is Brazilian official <b>Ramon Abatti Abel</b>. Abatti is an international referee from the CONMEBOL system with an officiating record this tournament (Group G Belgium–Egypt). BC Place is a roofed stadium and Vancouver's June climate is mild, so the environment has little impact on fitness. <span style="color:var(--warn)">[Full officiating crew and VAR pairing · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: this is a closely matched, high-intensity top-spot showdown, and the referee's threshold has a real impact on cards and potential penalties. South American referees usually tolerate physical contact to a degree but manage tactical fouls strictly; Switzerland's midfield interceptions and Canada's high press could both rack up yellows. See the referee module below for detail.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html" style="color:var(--accent)">Sports Mole — Referee / preview</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referee list</a></div>
+    </div>
+  </section>
+
+  <!-- Official lineups & analysis -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; Analysis <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA Match Centre official sheet · Multi-source confirmed</span></h2>
+    <div class="sub">Data sources: <b>FIFA official Match Centre</b> (announced ~1 hour pre-kickoff) + SI / World Soccer Talk / Sports Interaction multi-source agreement → <b style="color:var(--good)">✅ Officially confirmed</b>. The day's biggest news: <b style="color:#fca5a5">Alphonso Davies not starting (on the bench)</b>, with Canada rotating heavily.</div>
+
+    <h4>① Both official starting XIs</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:13px;color:#f08a82;font-weight:700;margin-bottom:4px">🇨🇭 Switzerland · 4-1-2-3 · Murat Yakin</div>
+        <div class="lineup">Kobel; Jaquez · Akanji · Elvedi · Rodríguez; Xhaka(C); Freuler · Sow; Manzambi · Embolo · Vargas</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: Dan Ndoye (wide threat), Noah Okafor, Denis Zakaria, Ardon Jashari, Zeki Amdouni. <b>Xhaka wears the captain's armband (confirmed by FIFA's C badge)</b>.</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:#f0a3a3;font-weight:700;margin-bottom:4px">🇨🇦 Canada · 4-4-2 · Jesse Marsch</div>
+        <div class="lineup">Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Choinière · Saliba · Ahmed; David(C) · Larin</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: <b style="color:#fca5a5">Alphonso Davies (still not starting this tournament, on standby on the bench)</b>, Stephen Eustáquio, Jonathan Osorio, Liam Millar, Tani Oluwaseyi. <b>Jonathan David wears the captain's armband (confirmed by FIFA's C badge, not Davies)</b>.</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② vs Predicted XI comparison (item by item: why it matters)</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="sc"><b>CAN · Davies position</b></td><td>Predicted starting on the left (captain)</td><td class="sc">Bench (not starting)</td><td>The match's headline thread is <b>revised</b>: Davies still not starting this tournament, Canada's biggest left-flank threat can only come off the bench — the left-side progression/defensive-coverage ceiling switch stays off</td></tr>
+      <tr><td class="sc"><b>CAN · Formation</b></td><td>4-3-3 (David lone striker)</td><td class="sc">4-4-2 (David + Larin twin strikers)</td><td>Marsch drops the high 4-3-3 for two up front, with Larin alongside David — keeps the attacking outlets while making it easier to recover both lines (a pragmatic signal)</td></tr>
+      <tr><td class="sc"><b>CAN · Goalkeeper</b></td><td>St. Clair</td><td class="sc">Crépeau</td><td>Marsch switches to Crépeau — the goalkeeper position rotates too</td></tr>
+      <tr><td class="sc"><b>CAN · Midfield/defence</b></td><td>Eustáquio · Osorio · Koné; Bombito</td><td class="sc">Choinière · Saliba · Ahmed; De Fougerolles · Laryea</td><td>Wholesale changes through midfield and defence (Eustáquio/Osorio both on the bench) — <b>heavy rotation cements the "a draw is enough for top spot" safety-cushion mindset</b></td></tr>
+      <tr><td class="ht"><b>SUI · Formation/midfield</b></td><td>4-3-3 (Freuler·Xhaka·Zakaria)</td><td class="ht">4-1-2-3 (Xhaka as lone holder + Freuler·Sow)</td><td>Yakin switches to Xhaka as the single pivot, Sow replacing Zakaria; a more attacking structure that places control at Xhaka's feet alone</td></tr>
+      <tr><td class="ht"><b>SUI · Wing/defence</b></td><td>Widmer (right back), Ndoye (winger)</td><td class="ht">Jaquez (defender), Manzambi (attacking)</td><td>Switzerland also rotate but keep the core spine (Akanji/Xhaka/Embolo/Vargas); the young Manzambi replaces Ndoye in the front three</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Tactical read (quick-take verdict: partly revised)</h4>
+    <ul class="cl">
+      <li><b style="color:#fca5a5">Thread revision ① (Davies)</b>: the pre-match biggest traffic point "Davies's first start of the tournament" <b>did not materialise</b> — he is named on the bench, and the switch for Canada's left-flank threat ceiling is not turned on in the starting XI. Quick-summary watch point ① is revised from "will he start" to "<b>can he change the game off the bench</b>".</li>
+      <li><b style="color:#fca5a5">Thread reinforcement ② (pragmatic rotation)</b>: Canada's <b>heavy rotation</b> — goalkeeper + midfield/defence + several first-choice players (Davies/Eustáquio/Osorio) on the bench — confirms the quick-summary read that "Canada hold the a-draw-is-enough cushion and may play it safe", which further <b>lowers the Over and lifts the draw/Under tail</b>. The switch to a 4-4-2 with twin strikers keeps the attacking outlets but lowers overall squad quality versus the prediction.</li>
+      <li><b>Switzerland's will to win is clearer</b>: although Switzerland rotate too (Sow/Manzambi/Jaquez come in), they keep the Kobel-Akanji-Elvedi-Rodríguez-Xhaka-Freuler-Embolo-Vargas spine and switch to a more attacking 4-1-2-3 — consistent with the "must win to take top spot" situation, their will to win is higher than the more heavily rotated Canada.</li>
+      <li><b>Key matchup change</b>: Davies not starting → pressure on Switzerland's right (the Vargas/Manzambi side) drops sharply, with no need to defend Davies's penetrating threat; Canada's left is now covered by Laryea, with lower progression and recovery quality, and Switzerland's wide play has a chance to apply reverse pressure.</li>
+      <li><b>The goal-difference balance is unchanged</b>: Canada still hold "a draw is enough for top spot" on goal difference +6 (Switzerland +3). The official lineups (Switzerland's win-focused spine vs Canada's pragmatic rotation) <b>nudge things toward the Switzerland-win / draw ends</b>, consistent with the quick summary's "Switzerland marginally favoured + Under/draw risk above the market line".</li>
+    </ul>
+
+    <h4 style="margin-top:18px">④ Market reaction</h4>
+    <div class="note">Before the lineups were announced, Switzerland to win was around <b>2.50</b> (decimal). A mild "lineups negative for Canada" signal emerged in this match — <b>Davies not starting + heavy Canada rotation</b> — pointing toward a small tightening of the Switzerland win price, with the draw supported by the goal-difference logic; the O/U 2.5 total line leans Under given both sides' pragmatic lineups. <span style="color:var(--warn)">[Specific post-announcement odds values · TBC, subject to live pre-match prices]</span> Stated as fact only, not betting advice.</div>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">Sources: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451" style="color:var(--accent)">FIFA Match Centre — Official starting XIs (incl. C captain badge)</a> · <a href="https://www.si.com/soccer/switzerland-vs-canada-world-cup-preview-predictions-lineups-6-24-26" style="color:var(--accent)">Sports Illustrated</a> · <a href="https://worldsoccertalk.com/amp/world-cup/is-alphonso-davis-playing-switzerland-vs-canada-projected-lineups-for-the-2026-world-cup-group-b-game/" style="color:var(--accent)">World Soccer Talk — Is Davies playing</a></div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · win/draw/loss implied probability (de-vigged) · Group B picture · totals market · composite strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group B four-team FIFA ranking (lower = stronger · approx.)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Composite strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇭 Switzerland</th><th>🇨🇦 Canada</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#20 range</td><td class="sc">#30 range</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-1 Qatar + 4-1 Bosnia (4 pts, GD +3)</td><td class="sc">1-1 Bosnia + 6-0 Qatar (4 pts, GD +6)</td></tr>
+      <tr><td>Group B points (before final round)</td><td colspan="2">Canada 4(+6), Switzerland 4(+3) leading jointly; Bosnia 1(-3), Qatar 1(-6) — this match decides top spot, both teams very likely already through</td></tr>
+      <tr><td>Head coach</td><td class="ht">Murat Yakin (Switzerland)</td><td class="sc">Jesse Marsch (American)</td></tr>
+      <tr><td>Key players</td><td class="ht">Xhaka(C), Akanji, Embolo, Ndoye, Freuler</td><td class="sc">Davies(C, return imminent), A.David, Buchanan, Eustáquio</td></tr>
+      <tr><td>Match watch points / questions</td><td class="ht">Can they win for top spot; front-line finishing; set pieces</td><td class="sc">Will Davies start; the true quality of the 6-0; home conversion</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 quarter-finals (lost on penalties to England) · WC 2022 round of 16 (1-6 loss to Portugal)</td><td class="sc">WC 2022 three straight group defeats (GD -5) · Copa América 2024 fourth place (semi-finalists)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win ≈2.50 (implied ≈39%)</td><td class="sc">Win ≈3.25 (≈30%) · Draw 3.15 (≈31%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5 (two pragmatic sides, leaning slightly Under) — the core markets are 1X2 and the handicap (small line)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied probabilities after de-vigging DECIMAL odds (≈39/31/30, normalised). Odds sources: Betfair (Switzerland 7/5→2.40, draw 85/40→3.13, Canada 9/4→3.25); best prices Switzerland +150→2.50, Canada +225→3.25, draw +215→3.15. The handicap line is around level/small, the total line O/U 2.5. Specific odds subject to live pre-match prices. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actuals · underlying quality signals · sourced</span></h2>
+    <div class="sub">Core method: contrast each team's <b>historical baseline (last two majors / qualifying)</b> with <b>this World Cup's actuals (first two rounds)</b> item by item. Public national-team xG samples are limited; missing items are marked "TBC", never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (first two rounds)</th><th>Difference &amp; reading</th></tr>
+      <tr><td class="ht">🇨🇭 Switzerland · Attack</td><td class="ht">Mid-tier major-tournament output, reliant on Embolo as a focal point and the wings + set pieces</td><td class="ht">5 goals in 2 matches (incl. the 4-1 burst vs Bosnia), Embolo on the scoresheet</td><td><b>Above target</b>: the 4-1 vs Bosnia released the firepower, but only 1-1 vs Qatar — open-play efficiency fluctuates with opponent strength</td></tr>
+      <tr><td class="ht">🇨🇭 Switzerland · Defence</td><td class="ht">Europe-based back line (Akanji/Elvedi/Rodríguez) + Xhaka as a shield, historically solid</td><td class="ht">2 goals conceded in 2 matches (GD +3), structure intact</td><td><b>On target</b>: the defence is Switzerland's floor; Canada's transition speed is the real test</td></tr>
+      <tr><td class="sc">🇨🇦 Canada · Attack</td><td class="sc">Copa América 2024 fourth place, strong in transition and high pressing, finishing outlets dispersed</td><td class="sc">7 goals in 2 matches (incl. 6-0 vs Qatar), GD +6</td><td><b>Inflated data</b>: most of the 6 goals came from Qatar's collapse, only 1-1 vs Bosnia; the true finishing needs re-examining against a structurally complete Switzerland</td></tr>
+      <tr><td class="sc">🇨🇦 Canada · Defence</td><td class="sc">Marsch's system stresses high pressing and compactness, conceded repeatedly at WC2022</td><td class="sc">1 goal conceded in 2 matches (only Bosnia scored 1)</td><td><b>Favourable</b>: few goals conceded, but the sample includes weak-attacking Qatar; Davies's return will strengthen left-side defensive coverage</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Canada's goal difference +6 carries clear "Qatar inflation", with the true attacking efficiency awaiting Switzerland's test; Switzerland's firepower fluctuates with opponent strength (4-1 vs Bosnia vs 1-1 vs Qatar). The deep data supports the main thread of "two close teams, Switzerland structurally a touch steadier, Canada's ceiling reliant on Davies/transition". Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model projected xG (magnitude)</td><td class="ht">Switzerland ≈1.3</td><td class="sc">Canada ≈1.2</td><td>Close after calibration, Switzerland marginally ahead; consistent with the market's "Switzerland slightly hot", a low-margin contest</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Switzerland are slightly above Canada overall (Europe-based density and major-tournament experience), but Canada have the home bonus and an athleticism ceiling; the supercomputer gives Switzerland a small edge with both highly likely to advance</td><td>After opponent-strength calibration, both teams' samples are of medium quality (each contaminated by an extreme scoreline vs the weak Qatar)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Canada's Marsch system runs a low PPDA (aggressive press), Switzerland lean more on controlling shape and territory; if Davies starts he lifts Canada's field tilt and left-side xT</td><td><b>Trap reminder</b>: both teams' "already through" mindset + the goal-difference safety cushion could lower intensity, leaving the Under/draw risk higher than the market line suggests</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-style" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — low value = lots of long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower value = more aggressive press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than mere possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a rare "genuine three-way disagreement" fixture for the day — Switzerland slightly hot, Canada's home advantage underrated, the draw supported by goal-difference logic; higher information content than a one-sided fixture</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Genuine three-way disagreement, no sentiment premium, high information content</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">There is no one-sided consensus: Switzerland are slightly hot on Europe-based quality (≈39%), Canada's home + Davies's return are rated higher by some experts, and the draw is supported by the "a draw is enough for Canada to take top spot" game-theory logic. The disagreement stems from <b>both sides' intensity of will to win</b> (Canada can be content with a draw) and <b>whether Davies starts</b>.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction dispersed: Switzerland win / draw / Canada home each have backers)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Betfair</td><td>Exchange</td><td>Switzerland slightly hot (7/5), the draw supported; viewed as a low-margin contest</td></tr>
+      <tr><td>Racing Post</td><td>Established UK outlet</td><td>Leans Switzerland / draw, stressing both teams are all but through and intensity may dip</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Predicts a close, low-scoring match; watching Davies's return as a boost for Canada</td></tr>
+      <tr><td>Total Football Analysis</td><td>Data media</td><td>Switzerland are structurally steadier, but Canada's home + athleticism keep the margin small</td></tr>
+      <tr><td>bet365</td><td>Preview / lineups</td><td>Gives both sides' predicted XIs, sees the top-spot fight as tight</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (moderate)</b>: unlike the day's other "one-sided" fixtures, this match has <b>genuine backers across all three outcomes</b>, with no sentiment premium. The biggest uncertainty is <b>both teams' will to win</b> (a draw is enough for Canada to take top spot) and <b>whether Davies starts</b> — both of which simultaneously affect the 1X2 and the totals.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Switzerland win / Draw / Canada win</th><th>Read</th></tr>
+      <tr><td>Open (multi-source composite)</td><td>1X2</td><td class="ht">≈2.45 / 3.15 / 3.25</td><td>Switzerland slightly hot, Canada's home advantage priced as non-favourite</td></tr>
+      <tr><td>06-22 close</td><td>Betfair / best price</td><td class="ht">2.40–2.50 / 3.13–3.15 / 3.25</td><td>The top-spot fight is tight, three-way prices close with little movement</td></tr>
+      <tr><td>06-22</td><td>Over/Under</td><td colspan="2" class="ht">Total line O/U 2.5, leaning slightly Under (two pragmatic sides + qualification safety cushion)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning and movement trend (open → current)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / Odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Open (days before)</td><td class="ht">Switzerland win ≈2.40; handicap level/small; O/U 2.5</td><td>Priced on "Switzerland's hardened Europe-based spine vs Canada's home + athleticism"; the open already framed it as a close contest with Switzerland marginally hot</td></tr>
+      <tr><td>Open (repricing after round 2)</td><td class="ht">Switzerland win 2.40–2.50; draw 3.13; Canada 3.25</td><td><b>Repricing comes from both teams' round 2</b>: Switzerland's 4-1 over Bosnia proved the firepower can be released, and Canada's 6-0 over Qatar inflated the goal difference — the market did not push Canada into the home favourite on the scoreline, instead reading "Qatar inflation" and keeping Switzerland marginally hot; meanwhile the "both teams nearly through" cushion supports the draw and Under</td></tr>
+      <tr><td>Current (06-22→now)</td><td class="ht">Three-way 2.45/3.15/3.25 tight; O/U 2.5 leaning slightly Under</td><td>Price discovery concentrates on <b>whether Davies starts</b> (affecting Canada's odds) and <b>the will to win</b> (affecting the totals); this is the day's only fixture where the 1X2 itself carries information content, rather than just the handicap/goals</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: completely unlike the French/Portuguese "demolition lines", this is a <b>closely priced, three-way disagreement</b> top-spot showdown. The key variables are both sides' will to win (Canada's goal-difference safety cushion) and Davies's availability — leaving both the 1X2 and the totals with genuine price-discovery room. Opening ranges subject to each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (aggregate)</b>: consistent with de-vigged bookmaker pricing, giving Switzerland a small edge with both highly likely to advance; this match is more a game over top spot than a question of qualification. <span style="color:var(--warn)">[Single-match volume/momentum breakdown not separately found in public sources · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Davies's return</b> — Canada's home + the talisman back from injury is the match's biggest traffic point and the emotional angle.</li>
+      <li><b>Sentiment focus ②</b>: <b>whether Canada can win a World Cup group for the first time</b> — the shadow of WC2022's three straight defeats contrasted with this tournament's qualification, a strong home narrative.</li>
+      <li><b>Switzerland narrative</b>: a low-key but solid Europe-based outfit, with Xhaka/Akanji's major-tournament experience the backbone for taking top spot; the market is confident in their structural floor.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is one of the day's highest-information fixtures — three-way disagreement, close pricing, overheating index <b>3/5</b>. The 1X2 itself has price-discovery room (rare); the core variables are <b>both sides' will to win + whether Davies starts</b>, which also feed into the totals (qualification cushion → leaning Under/draw). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://betting.betfair.com/football/predictions/fifa-world-cup/switzerland-vs-canada/5irko4jg9o9ixmfz8cu3oxjpw/">Betfair — Odds/prediction</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a3SeE5N0GPTV/">Racing Post — Odds/betting</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/switzerland-v-canada-predictions">Total Football Analysis — Prediction</a> · <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — Group B guide/odds</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the referee for this match is Brazilian official <b>Ramon Abatti Abel</b> (CONMEBOL international, officiated Belgium–Egypt in Group G this tournament). Sources: Sports Mole, ESPN referee list. <span style="color:var(--warn)">[Full officiating crew and VAR pairing · TBC]</span></div>
+    <h4>Officiating threshold + tournament-wide new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Abatti comes from Brazilian football, the CONMEBOL officiating system — South American referees usually tolerate physical contact to a degree but manage tactical fouls, time-wasting and accumulation well. This World Cup's officiating environment leans strict (only captains may communicate, the 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>This tournament's actual sample</b>: he has officiated one match (Group G Belgium–Egypt), with game-management performance to be assessed alongside post-match breakdowns; the precise per-match card/penalty breakdown of his major-tournament games has limited public sample. <span style="color:var(--warn)">[Yellows per match / penalty-award rate breakdown · TBC]</span></li>
+      <li><b>Officiating history with the two teams</b>: no significant public officiating history with either Switzerland or Canada, so no team bias to speak of.</li>
+      <li><b>Two-sidedness</b>: this is a high-intensity contest with both teams wanting top spot — Canada's high press and Switzerland's midfield interceptions could both rack up yellows; semi-automated offside will precisely catch the marginal sprints of Switzerland's wings and Davies/Buchanan. The cards market is best viewed as a tendency, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-angle analysis</b>: in a closely matched picture with a qualification safety cushion, the referee's impact on the result is limited; the main value is in cards/penalties: high-intensity duels and possible wide-area tussles are the yellow-card/penalty watch points. Given Abatti's limited per-match breakdown this tournament, the relevant lines are best viewed as a tendency.</div>
+  </section>
+
+  <!-- Lineups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting XI &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">predicted version · official version in the ✅ Confirmed Lineups module above</span></h2>
+    <div class="sub">Predicted XI (ESPN / Sports Mole / bet365 projections, not official; official sheet subject to the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇨🇭 Switzerland predicted XI (4-3-3) · Murat Yakin</h4>
+    <div class="lineup">Kobel; Widmer · Akanji · Elvedi · Rodríguez; Freuler · Xhaka(C) · Zakaria; Ndoye · Embolo · Vargas</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Granit Xhaka (C)</td><td>Holding midfielder / Captain</td><td>Midfield metronome and leader, the axis of Switzerland's shape-keeping and set pieces; major-tournament experience is the backbone for taking top spot</td></tr>
+      <tr><td class="ht">Manuel Akanji</td><td>Centre-back / Man City</td><td>Defensive leader, combining ball-playing and pace; the key to shutting down Canada's transitions</td></tr>
+      <tr><td class="ht">Breel Embolo</td><td>Striker</td><td>Already on the scoresheet this tournament, a focal-point finisher; Switzerland's highest source of attacking certainty</td></tr>
+      <tr><td class="ht">Dan Ndoye</td><td>Winger</td><td>A wide threat with penetration, a pace option to expose space behind Canada's full backs</td></tr>
+    </table>
+    <h4>🇨🇦 Canada predicted XI (4-3-3) · Jesse Marsch · Davies in line to start</h4>
+    <div class="lineup">St. Clair; Johnston · Cornelius · Bombito · Davies(C); Eustáquio · Osorio · Koné; Buchanan · David · Shaffelburg</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Alphonso Davies (C)</td><td>Left back/left flank / Bayern</td><td>Return imminent, high chance of a tournament debut; the biggest variable for left-side progression and defensive coverage <span style="color:var(--warn)">start/minutes TBC</span></td></tr>
+      <tr><td class="sc">Jonathan David</td><td>Striker</td><td>Canada's top finishing outlet; his finishing against Switzerland's complete back line is decisive</td></tr>
+      <tr><td class="sc">Tajon Buchanan</td><td>Winger/wing-back</td><td>Pace and dribbling, the main spark for Canada's transition threat</td></tr>
+      <tr><td class="sc">Stephen Eustáquio</td><td>Midfield / playmaker</td><td>Canada's midfield link and rhythm, the midfield battle against Xhaka</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media analytical projections (ESPN / Sports Mole / bet365), <b>subject to the official pre-match sheet · TBC</b>. Canada's focus is whether Davies starts and his minutes; Switzerland's focus is whether Yakin rotates due to "all but through", and the Embolo/Ndoye/Vargas front-line combination.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual style and results across their last two major tournaments (World Cup + their respective continental/Copa América)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇭 Switzerland · Murat Yakin</div>
+        <div class="role">4-3-3 shape-keeping + a hardened Europe-based spine + set pieces, Embolo as lone striker</div>
+        <ul class="cl">
+          <li>Switzerland's hallmark is <b>structural completeness + Europe-based players' game-reading + set pieces</b> — an extremely high major-tournament floor: Euro 2024 quarter-finals (lost on penalties to England), WC 2022 round of 16; rarely upset by minnows, thanks to the stability of Xhaka/Akanji.</li>
+          <li>Cross-reference: Euro 2024 quarter-final 1-1 with England over 120 minutes before a penalty exit, and a 1-6 dismantling by Portugal at WC 2022 — <b>a limited ceiling against elite sides, but a steady floor against mid-tier teams</b>. Canada are precisely the "athletic but structurally below elite" type Switzerland can control.</li>
+          <li>This match's entry point: use shape-keeping and Xhaka's rhythm to suppress Canada's transitions, and seek the win via the Embolo/Ndoye wide-and-central combination and set pieces; beware the space behind from Davies/Buchanan's pace on the break. Qualification is all but secured, so whether they go all out for the win depends on how much they value top spot.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0a3a3">🇨🇦 Canada · Jesse Marsch</div>
+        <div class="role">4-3-3 high pressing + faster transitions, David finishing, Davies the left-flank threat</div>
+        <ul class="cl">
+          <li>The core of Marsch's system is <b>high pressing + quick transitions + wide pace</b> — Copa América 2024's run to fourth place (semi-final loss to Argentina) is the best sample of his Canada tenure, proving this style can stay with strong sides.</li>
+          <li>Cross-reference: WC 2022's three straight defeats (not poor in content but lacking finishing and experience) is the shadow; Copa América 2024's fourth place is the qualitative-leap signal — <b>Canada can now use intensity and pace to compete with upper-mid sides</b>, but finishing efficiency is still the ceiling. The 6-0 over Qatar inflated the data.</li>
+          <li>This match's response: home + a high press to force Switzerland into build-up errors, and use Buchanan/David's pace to attack behind Switzerland's full backs; if Davies starts he hugely lifts the left flank. But Canada hold the "a draw is enough for top spot" cushion and may be more pragmatic and not over-commit — which also lowers the Over probability.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· pre-match preview</small></div>The top-spot fight is tight, a low-scoring contest; Davies's return is Canada's biggest boost. Switzerland are structurally steadier, but Canada's home + athleticism keep the margin small.</div>
+    <div class="insight"><div class="who">Betfair / Racing Post <small>· betting media</small></div>Switzerland slightly hot (≈39%), the draw supported by the "Canada's goal difference is enough for top spot" logic; both teams all but through, so intensity and the Over probability may be lowered.</div>
+    <div class="insight"><div class="who">Total Football Analysis <small>· data media</small></div>Switzerland's Europe-based density and major-tournament experience give a slight edge, but Canada's press and transitions can stay with them; this is a genuine low-margin contest, with the result hinging on the details and the will to win.</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· Opta / FotMob</small></div>The true suspense is <b>who finishes top</b> and <b>whether both teams go all out</b>. ⚠ Trap reminder: both are nearly through + a draw is enough for Canada's top spot, so the "just enough" risk makes the Under/draw probability higher than the market line; whether Davies starts is the sole switch for Canada's ceiling.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Items to Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: decided by a single goal or a draw is the base scenario. Switzerland's will to win is greater (must win to take top spot) and their structure a touch steadier; Canada's home + Davies's return offer a ceiling, but they hold the "a draw is enough for top spot" cushion and may be more pragmatic. The probability of a big win for either side is lower than in a one-sided fixture.</li>
+      <li><b>Key men</b>: Xhaka (SUI / rhythm and leader), Akanji (SUI / shutting down transitions), Embolo (SUI / focal-point finishing); Davies (CAN / left-flank variable, TBC), J.David (CAN / finishing), Buchanan (CAN / pace spark).</li>
+      <li><b>Deciding factors</b>: ① whether Canada can break through behind Switzerland's full backs with high pressing + pace; ② whether Switzerland can control the rhythm with shape-keeping and set pieces; ③ how much each side values top spot (sets the intensity and the totals).</li>
+      <li><b>Market view</b>: a rare genuine three-way disagreement fixture for the day (≈39/31/30), with the 1X2 itself carrying price-discovery room; overheating index 3/5. The core variables are the will to win + Davies's availability, which also feed into the totals (leaning Under/draw).</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>: ① both official starting XIs (FIFA Match Centre ~1 hour pre-match); ② <b>whether Davies starts and his minutes</b> (re-check on match day, aligned to the official XI); ③ whether Switzerland rotate because they are all but through; ④ Abatti's full officiating crew and VAR pairing, and his per-match card/penalty breakdown this tournament; ⑤ the precise goal-difference and tie-break detail for qualification/top spot (subject to FIFA's official ruling); ⑥ the handicap line and the over/under total line (O/U 2.5) specific odds subject to live pre-match prices.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49141389/fifa-world-cup-2026-switzerland-vs-canada-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — Preview/referee/predicted XI/Davies</a> · <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-canada-prediction-team-news-lineups_599751.html">Sports Mole — Preview/team news/referee</a> · <a href="https://news.bet365.com/en-us/article/canada-switzerland-preview-and-lineup-predictions/2026062216422510645">bet365 — Lineup predictions</a><br>
+      • <a href="https://betting.betfair.com/football/predictions/fifa-world-cup/switzerland-vs-canada/5irko4jg9o9ixmfz8cu3oxjpw/">Betfair — Odds/prediction</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a3SeE5N0GPTV/">Racing Post — Odds/betting</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/switzerland-v-canada-predictions">Total Football Analysis — Prediction</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — Group B guide/standings/odds</a> · <a href="https://fansided.com/soccer/world-cup-group-b-standings-canada-and-switzerland-well-placed-how-bosnia-and-qatar-can-advance">FanSided — Group B picture</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B">Wikipedia — Group B</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-23 · Charts use verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d52b1e',SC='#c8102e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Switzerland win','Draw','Canada win'],datasets:[{data:[39,31,30],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[47,53],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, leaning slightly Under)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Switzerland','Canada','Qatar','Bosnia'],datasets:[{data:[20,31,36,75],backgroundColor:[HT,SC,'#e8cd6b','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approx.)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wing/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Switzerland',data:[7.5,6.5,7.5,6.5,7,8],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Canada',data:[6.5,6.5,6.5,8,7,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

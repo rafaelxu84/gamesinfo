@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 日本 vs 瑞典 · 2026世界杯 F组末轮（瑞典背水一战 · 日本平局即出线）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-japan-vs-sweden.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · F组末轮 · 瑞典背水一战 vs 平局即出线的日本</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 日本 1-1 瑞典</span>
+  <h1>日本 vs 瑞典</h1>
+  <div class="meta">2026年6月25日 · 阿灵顿 AT&amp;T Stadium · 约18:00本地 / 19:00 ET · F组末轮（同时进行：荷兰 vs 突尼斯）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇯🇵 日本</div><div class="rk">2-2 荷兰 + 4-0 突尼斯 · 4 分（净 +4）· 平局即出线、胜则争头名 · 缺 Mitoma / Endo · Kubo 伤缺</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇸🇪 瑞典</div><div class="rk">5-1 突尼斯 + 1-5 荷兰 · 3 分（净 0）· 须取胜方能锁定前二 · Isak + Gyökeres 双星 · 缺 Kulusevski / Forsberg</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-26） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 日本 1-1 瑞典（半场 0-0） · 06-25</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">阿灵顿 Dallas Stadium：上半场两队 0-0 互交白卷，日本掌控但缺乏破门。<b>下半场第 56 分钟 Daizen Maeda</b> 接 <b>Ritsu Doan</b> 一记穿越瑞典防线的直塞，推射左下角破门——本场<b>唯一一次绝佳机会的转化</b>。仅 6 分钟后（<b>第 62 分钟</b>），<b>Anthony Elanga</b> 一记左脚弧线远射越过门将 Suzuki 扳平，这是他<b>两届世界杯比赛中的第二球</b>。终场 <b>1-1</b>。这个比分让<b>两队携手晋级</b>：日本以 5 分（2 胜 1 平、全程不败）力压压哨平局、列 <b>F 组第 2（亚军）</b>，荷兰以小组头名出线；瑞典积 4 分，作为<b>成绩较好的第三名</b>挤进 32 强。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 56' Maeda（Doan 助攻）· 62' Elanga（左脚远射扳平）｜半场 0-0 · 全场唯一绝佳机会被日本转化 · Elanga 两射两正</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / Sofascore）</h4>
+    <table>
+      <tr><th>指标</th><th>🇯🇵 日本</th><th>🇸🇪 瑞典</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>52.3%</b></td><td>47.7%</td><td>日本控球略占优（注：FIFA 官方口径为日 44%/瑞 56%，此处采用 Opta/Squawka 口径）——控球差距不大，分野在威胁质量</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.31</b></td><td>0.42</td><td>日本 1.31 xG 含全场唯一绝佳机会；瑞典 0.42 几乎全部来自 Elanga 的远射运气球——日本是配得上的领先方</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>8 / 3</td><td><b>10 / 5</b></td><td>瑞典射门略多但质量低（多为远射）；日本射门少而精，把球压进高质量区域</td></tr>
+      <tr><td class="ht">绝佳机会</td><td><b>2 / 进 1</b></td><td>0</td><td>日本 2 次绝佳机会、转化 1 次；瑞典全场 0 次绝佳机会——Elanga 的世界波是非结构性得分</td></tr>
+      <tr><td class="ht">角球</td><td><b>8</b></td><td>1</td><td>日本 8 角球 vs 瑞典 1——日本持续的阵地压迫，瑞典几乎无定位球进攻</td></tr>
+      <tr><td class="ht">传球成功率 / 黄牌</td><td>待核 / 0</td><td>待核 / Gyökeres 1 黄</td><td>日本延续全程零黄牌的纪律性；瑞典 Gyökeres 吃牌</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/japan-vs-sweden-stats-2026-world-cup">Opta Analyst — Japan 1-1 Sweden Stats</a> · <a href="https://www.sofascore.com/news/japan-1-1-sweden-maeda-shines-in-group-f-draw">Sofascore</a> · <a href="https://www.squawka.com/en/news/world-cup/japan-vs-sweden-result-stats/">Squawka</a> · <a href="https://www.fotmob.com/news/v7sf1t1pa8fl1tboxkn6ql0f8-japan-1-1-sweden-elanga-equaliser-sends-both-sides-into-world-cup-knockout-phase">FotMob</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021471">FIFA 官方</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">日本"低位+精准反击"剧本如期兑现——缺创造力仍能解题</div>日本 1.31 xG、2 次绝佳机会、8 角球，全场唯一绝佳机会由 Maeda 接 Doan 直塞完成。<b>说明即便 Kubo/Mitoma/Endo 三大创造点缺阵，日本仍能靠纪律性阵地压迫 + 一次致命纵深直塞解题</b>——这正是赛前"动机差喂给日本反击"判断的兑现，淘汰赛对深防线球队这套依然有效。</div>
+    <div class="insight"><div class="who">瑞典的进攻仅靠个人灵光——结构性创造为 0</div>瑞典全场 0 次绝佳机会、0.42 xG，扳平球是 Elanga 一记非结构性的远射世界波。<b>说明 Isak+Gyökeres 双星在被日本三中卫低位封锁后无法形成体系化威胁</b>，Kulusevski/Forsberg 缺阵导致的中场创造真空在此暴露——这支瑞典靠个人能力闯关，体系脆弱。</div>
+    <div class="insight"><div class="who">Maeda 是本场胜负手与最稳定输出点</div>Maeda 进球 + 全场不知疲倦的跑动，Sofascore 全场最佳（评分 7.9，0.72 xG / 0.75 xGOT）。<b>说明 Kubo 缺阵后，日本的得分重担可由前场跑动型终结者 Maeda 接管</b>，配合 Doan 的传球视野构成最可靠的得分路径。</div>
+    <div class="insight"><div class="who">日本全程不败收官——纪律性是隐形资产</div>日本 2 胜 1 平、零黄牌过组（仅本场前两轮 0 黄），以小组第 2 晋级。<b>说明日本是本届少数兼具战术纪律与零失控成本的球队</b>，淘汰赛无停赛累积风险，阵容可用度满格。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">日本微弱热门（隐含 ≈49%）/ 基准"日本小胜或平局"</td><td style="color:var(--good)"><b>✓ 平局兑现</b></td><td>1-1 落入"平局"基准分支，日本平局即达成出线目标</td></tr>
+      <tr><td class="ht">"瑞典必须压上 → 喂给日本反击"</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>日本唯一绝佳机会正是一次由守转攻的纵深直塞，剧本如期</td></tr>
+      <tr><td class="ht">Kubo 缺阵削弱日本创造力上限</td><td style="color:var(--warn)"><b>~ 部分应验</b></td><td>日本确实仅 1.31 xG、进球数有限，但仍靠 Doan-Maeda 解题，未被拖垮</td></tr>
+      <tr><td class="ht">瑞典后防被荷兰 5-1 撕碎、是软肋</td><td style="color:var(--warn)"><b>~ 仅丢 1</b></td><td>瑞典本场后防收紧、只丢 1 球——动机差使其压上烈度低于预期，反而更稳</td></tr>
+      <tr><td class="ht">大/小 2.5 球</td><td style="color:var(--bad)"><b>✗ 走小</b></td><td>仅 2 球，落在 2.5 线下——赛前"偏大球"判断未应验，反击对决进球受限</td></tr>
+      <tr><td class="ht">市场过热 2/5</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>温和共识、无冷门，结果落在预期区间内</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇯🇵 日本 · 晋级 32 强（F组亚军）</h4>
+        <ul class="watch">
+          <li><b>F 组第 2 晋级，进入 32 强淘汰赛</b>：据多家赛后报道，对手大概率为巴西——以巴西式个人爆破能力，日本的低位三中卫将面临严峻考验（具体对阵与时间以 FIFA 官方对阵表为准，<b>待核</b>）。</li>
+          <li><b>反击+一次致命直塞的得分模型可复制</b>：但面对淘汰赛强队需更多创造点，Kubo 能否伤愈复出是上限关键。</li>
+          <li><b>Kubo 伤情仍需跟踪</b>：本场缺阵下日本靠 Doan-Maeda 解题，淘汰赛若 Kubo 复出可显著提升破密集上限。</li>
+          <li><b>纪律性资产</b>：零黄牌过组、无停赛累积，阵容可用度满格，可放心配置最强阵。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇸🇪 瑞典 · 以最佳第三名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>积 4 分、作为成绩较好的第三名晋级</b>：1-1 平局已足够保住第三名出线资格，闯进 32 强淘汰赛（多家报道指其对手为法国，<b>具体对阵与时间以 FIFA 官方为准，待核</b>）。</li>
+          <li><b>体系创造力是硬伤</b>：本场 0 次绝佳机会，Kulusevski/Forsberg 缺阵下中场无法喂饼，淘汰赛若仍只靠 Isak/Gyökeres 个人能力，面对强队恐难破局。</li>
+          <li><b>Elanga 的远射是隐藏武器</b>：两届赛事 2 球、本场世界波，是瑞典在阵地战受阻时的非结构性得分点。</li>
+          <li><b>Gyökeres 1 黄需留意累积</b>：淘汰赛阶段牌面管理影响排兵。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 F 组末轮的<b>"动机不对称"对决</b>，且与<b>荷兰-突尼斯同时进行</b>。日本 4 分（2-2 平荷兰 + 4-0 胜突尼斯、净胜球 +4）<b>一场平局即可锁定出线、取胜则争小组头名</b>；瑞典 3 分（5-1 屠突尼斯 + 1-5 惨负荷兰、净胜球 0）<b>必须取胜才能稳进前二</b>（理论上平局仍有第三名出线的渺茫尾部，但已不在自己掌控）。这反而把"求胜烈度"完全倒向瑞典——它必须压上进攻，而这正<b>喂给日本擅长的低位反击</b>。盘口与超算均把日本定为微弱热门：日本胜约 <b>1.90</b>、平 <b>3.55</b>、瑞典胜 <b>4.33</b>（Opta 超算 51.9% / 25.9% / 22.2%）；让球线为日本让 <b>-0.5</b>（约等于胜负盘）、总分线 O/U <b>2.5</b> 偏大球。最大不确定因素是<b>日本核心 Kubo 因膝伤确认缺阵</b>（对荷兰一战与 Dumfries 相撞致伤）、叠加 Mitoma/Endo 整届缺席，日本创造力被压缩；而瑞典 <b>Isak + Gyökeres 双前锋</b>火力是其唯一筹码，但其后防刚被荷兰 5-1 撕碎。三处看点：① <b>瑞典必须压上 vs 日本反击陷阱</b>（动机差）；② <b>Kubo 缺阵后日本破/反击的创造力上限</b>；③ <b>Isak/Gyökeres 双星能否打穿日本三中卫低位</b>。基准剧本：<b>有球、日本小胜或平局</b>，过热指数 ≈ 2/5（共识温和偏日本、信息集中在"瑞典让深盘与大小球"）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">日本隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈49%</div></div>
+      <div class="key"><div class="k">瑞典隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈22%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈26%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称</b>：日本 4 分、净 +4，<b>平局即出线、胜则争头名</b>（头名还须看同时进行的荷兰-突尼斯结果与净胜球）；瑞典 3 分、净 0，<b>必须取胜</b>才能稳进前二，平局基本只剩第三名出线的渺茫尾部。求胜压力倒向瑞典——它得压上，而这正喂给日本的低位反击。</li>
+      <li><b>Kubo 确认伤缺（日本·多源确认）</b>：对荷兰一战第 75 分钟与 Dumfries 相撞致左膝受损（MRI 确认），<b>官方确认缺席本场</b>、留队康复争淘汰赛复出。叠加 Mitoma（腿筋整届报销）、Endo（脚伤退队），日本前场创造力被进一步压缩——详见关键临场新闻。</li>
+      <li><b>瑞典双星 Isak + Gyökeres 健康首发（瑞典·多源确认）</b>：两人对突尼斯各入一球、Gyökeres 对荷兰也破门，Potter 明言这对英超级前锋是瑞典最大威胁；但 Kulusevski（膝伤未入选）、Forsberg（膝伤未入选）双双缺阵，瑞典中场创造与边路深度受损。</li>
+      <li><b>瑞典后防刚被荷兰 5-1 撕碎</b>：上一轮被 Brobbey 梅开二度 + Gakpo 双响打穿，三中卫衔接与防快速转换是软肋。日本若把比赛拖入由守转攻，正中其下怀——这是本场"动机差使比分差小于实力差"反向被日本利用的关键。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · 日本 Kubo 确认缺阵 <span style="color:var(--mut);font-weight:400">· ESPN / RotoWire / OneFootball + 日媒 多源一致 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：Takefusa Kubo <b>因左膝伤确认不会出战瑞典</b>（对荷兰第 75 分钟与 Dumfries 相撞致伤、MRI 确认），留队康复争淘汰赛复出</div>
+      <p style="font-size:13.5px">关键球员出缺多源交叉：<b>ESPN、RotoWire、OneFootball</b> 及日本媒体均报道，日本头号创造点 <b>久保建英（Kubo）</b>在对荷兰一战第 75 分钟与 Dumfries 相撞造成左膝损伤（MRI 确认），<b>已被排除出本场</b>，留在基地接受个人/轻量康复训练，若日本出线有望淘汰赛阶段复出。<span style="color:var(--warn)">[首发与伤情等级以赛前 FIFA Match Centre 官方名单 / 日本足协通报为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在 Mitoma（整届报销）、Endo（退队）已缺的背景下，Kubo 是日本前场<b>最稳定的内切组织与破密集发动机</b>。他的缺阵让日本进攻更依赖 Kamada 的串联、Junya Ito 的边路与 Ueda 的支点终结，破/反击的创造力上限下降。这是本场进球数与日本让球深度盘口的关键变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rotowire.com/soccer/headlines/takefusa-kubo-injury-ruled-out-against-sweden-520669" style="color:var(--accent)">RotoWire — Kubo 确认缺席瑞典</a> · <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — 赛前前瞻/团队消息</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515" style="color:var(--accent)">OneFootball — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">关键球员核查 · 瑞典 Isak + Gyökeres 健康首发 <span style="color:var(--mut);font-weight:400">· ESPN / Flashscore 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">英超级双前锋 <b>Isak + Gyökeres 均健康、预计首发</b>；Potter 明言这对组合是瑞典最大威胁</div>
+      <p style="font-size:13.5px">瑞典两大前锋 <b>Alexander Isak</b>（伤愈归队、对突尼斯首发并进球）与 <b>Viktor Gyökeres</b>（对突尼斯、对荷兰均破门）均健康，ESPN 预测首发把两人并列锋线。主帅 Graham Potter 公开把这对前锋设为瑞典的核心威胁。但中场创造核心 <b>Dejan Kulusevski</b>（膝/髌骨伤、未入 26 人名单）与 <b>Emil Forsberg</b>（膝伤、未入名单）双双缺阵，瑞典中前场串联与边路深度受损。<span style="color:var(--warn)">[首发以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：瑞典必须取胜、必然压上，<b>Isak/Gyökeres 的双高点</b>是其打穿日本三中卫低位的唯一筹码，定位球与禁区高空球尤其值得警惕（对突尼斯 5 球多来自前场施压）。但 Kulusevski/Forsberg 缺阵削弱了喂球与二线创造——双星能否被有效供给，决定瑞典进攻是否"有牙无嘴"。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — 瑞典阵容/前瞻</a> · <a href="https://www.goal.com/en/lists/world-cup-dejan-kulusevski-injury-tottenham-sweden-viktor-gyokeres-alexander-isak/bltd56651aa57664624" style="color:var(--accent)">Goal — Kulusevski 缺阵</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">日本 · 攻击线长期减员 <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / FIFA 多源 · 05–06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">边锋 <b>Mitoma 腿筋整届报销</b>；老队长 <b>Endo</b> 脚伤退队（赛后宣布退出国家队）</div>
+      <p style="font-size:13.5px">布莱顿边锋 <b>三笘薫（Mitoma）</b>5 月 9 日重伤腿筋（约 8 周），未入选本届世界杯名单，Tomiyasu 顶替入队；中场核心、老队长 <b>远藤航（Endo）</b>在赛前因脚伤退出、随后宣布退出国家队。这两项叠加 Kubo 本场伤缺，使日本本届前场与中场的创造主轴大幅缩水。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Mitoma 是左路一对一爆点、Endo 是中场屏障与节奏，二人缺阵 + Kubo 伤缺，意味着日本的破密集与由守转攻更依赖 Kamada 的组织、Junya Ito 的边路速度与 Ueda 的支点。好在对突尼斯 4-0（Ueda 梅开二度、Kamada、Ito 建功）证明替代方案能跑通——但面对必须压上的瑞典，反击效率是关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48775615/" style="color:var(--accent)">ESPN — Mitoma 报销</a> · <a href="https://www.fifa.com/en/articles/japan-captain-endo-ruled-out-injury" style="color:var(--accent)">FIFA — Endo 退出</a> · <a href="https://www.aljazeera.com/sports/2026/6/21/japan-tunisia-4-0-fifa-world-cup-2026-ayase-ueda-daichi-kamada-junya-ito" style="color:var(--accent)">Al Jazeera — 日本 4-0 突尼斯</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· ESPN 官方前瞻 · 06-24</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：萨尔瓦多籍 <b>Ivan Barton</b>（伊万·巴顿）；阿灵顿 AT&amp;T Stadium（有顶/可控温）</div>
+      <p style="font-size:13.5px">据 ESPN 官方赛前前瞻，本场主裁为萨尔瓦多籍 <b>Ivan Barton</b>，CONCACAF 体系国际级主裁。AT&amp;T Stadium 为带顶可控温的现代化球场，6 月得州高温对体能影响相对可控。<span style="color:var(--warn)">[完整裁判组与 VAR 组合、Barton 本届/近两届大赛单场出牌/判点细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：瑞典必须压上、日本反击拉扯，禁区内外的对抗与战术犯规会增多，裁判尺度对牌数与潜在点球有实际影响。本届统一新规偏严（仅队长可沟通、门将 8 秒规则、半自动越位）——半自动越位将精准捕捉 Isak/Gyökeres 的临界冲刺与日本反击的越位线。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49155285/fifa-world-cup-2026-japan-vs-sweden-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 日本vs瑞典官方前瞻（裁判/首发）</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· F组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>F 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇯🇵 日本</th><th>🇸🇪 瑞典</th></tr>
+      <tr><td>前两轮</td><td class="ht">2-2 荷兰 + 4-0 突尼斯（4 分，净 +4）</td><td class="sc">5-1 突尼斯 + 1-5 荷兰（3 分，净 0）</td></tr>
+      <tr><td>F 组积分（末轮前）</td><td colspan="2">荷兰 4(净+4，进 7)、日本 4(净+4，进 6) 领先；瑞典 3(净 0)；突尼斯 0 已出局。荷兰因进球数暂列头名</td></tr>
+      <tr><td>出线情景</td><td class="ht">平局即出线、胜则争头名（头名还看荷-突结果）</td><td class="sc">必须取胜方稳进前二；平局仅剩第三名渺茫尾部</td></tr>
+      <tr><td>主教练</td><td class="ht">森保一 Hajime Moriyasu</td><td class="sc">Graham Potter（英格兰籍）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Kamada、Junya Ito、Ueda、Z. Suzuki（Kubo 伤缺）</td><td class="sc">Isak、Gyökeres、Elanga、Lindelöf</td></tr>
+      <tr><td>重要缺阵</td><td class="ht">Mitoma（整届）、Endo（退队）、Kubo（本场伤缺）</td><td class="sc">Kulusevski（膝/未入选）、Forsberg（膝/未入选）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">反击效率 + 拖住比分；Kubo 缺阵后创造力</td><td class="sc">必须压上 vs 反击陷阱；后防能否堵漏</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈1.90（隐含≈49%）</td><td class="sc">胜 ≈4.33（隐含≈22%）· 平 ≈3.55（≈26%）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="sc">日本让 -0.5（约等于胜负盘）；总分线 O/U 2.5 偏大球（双方均进 6 球、瑞典 2 战丢 6）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈49/26/22，归一后），与 Opta 超算（日本 51.9% / 平 25.9% / 瑞典 22.2%）方向一致。盘口来源：FanDuel/DraftKings/bet365/Paddy Power 综合；让球为日本 -0.5、总分线 O/U 2.5 偏大球。Kubo 缺阵 vs 瑞典必须压上是大小球与让球深度的核心变量。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇯🇵 日本 · 进攻</td><td class="ht">2022"巨人杀手"低位反击 + 板凳奇兵（Doan 替补两扳德/西）；运动战创造依赖边锋</td><td class="ht">2 战 6 球（2-2 荷兰、4-0 突尼斯）；对突尼斯由 Ueda/Kamada/Ito 火力顺畅</td><td><b>达标但有保留</b>：对突尼斯铁桶 4-0 证明替代方案跑通，但 Kubo 本场缺阵削弱内切组织上限 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇯🇵 日本 · 防守</td><td class="ht">森保一三中卫低位紧凑、由守转攻；2022 限制德/西高质量进攻</td><td class="ht">2 战丢 2 球（荷兰角球绝平 + ）；结构稳、抗压能力强</td><td><b>下限在防守</b>：低位块 + 快速回防是其稳定来源；面对瑞典双高点，定位球与禁区高空球是主要风险点</td></tr>
+      <tr><td class="sc">🇸🇪 瑞典 · 进攻</td><td class="sc">Isak/Gyökeres 个人能力顶级；预选/热身依赖双星终结</td><td class="sc">2 战 6 球（5-1 突尼斯顺畅；1-5 荷兰仅 Elanga 1 球）</td><td><b>两极</b>：碾压突尼斯但对荷兰只进 1 球，火力随对手强度回落；缺 Kulusevski/Forsberg 喂球，双星供给存疑 <span style="color:var(--warn)">（xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="sc">🇸🇪 瑞典 · 防守</td><td class="sc">三中卫体系，Lindelöf 领衔；近年防快速转换不稳</td><td class="sc">2 战丢 6 球（被荷兰 5-1 撕碎、被突尼斯也进 1）</td><td><b>明显软肋</b>：被 Brobbey 双响 + Gakpo 双响打穿，三中卫衔接与防反击是命门，日本反击正可利用</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：日本延续 2022"低位 + 反击"主线，对突尼斯火力顺畅证明 Kubo 之外仍有解法，但本场缺 Kubo 后创造力上限下降；瑞典火力两极（5-1 突 vs 1-5 荷），后防刚被荷兰打穿。深度数据支持"瑞典被迫压上、日本反击效率 + 拖住比分"的主线。来源：Opta Analyst · FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">日本 ≈1.4–1.7</td><td class="sc">瑞典 ≈1.1–1.4</td><td>日本略占优但因 Kubo 缺阵上限略受压；瑞典压上会换来机会但也露后防——与盘口"日本微让 + 偏大球"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="ht">Opta 超算给日本 51.9% 胜 / 平 25.9% / 瑞典 22.2%；预测市场 Kalshi 约 53/27/21，方向一致偏日本</td><td>体系内两队接近"硬币偏向日本"；日本状态（9 场不败含胜巴/英）与净胜球优势加分</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="ht">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：瑞典须取胜会主动施压、field tilt 升高，日本则倾向让出球权打反击、PPDA 在中后段升高（被动深蹲）；Kubo 缺阵降低日本前场 xT</td><td><b>陷阱提醒</b>：① 瑞典必须压上 → 双方都有空间，大球概率上升、双方进球（BTTS）受青睐；② 日本平局即出线，若早早领先可能转守、压低己方进球；③ "动机差"在此反向——瑞典压上露后防，使日本反击效率可能放大比分</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"温和偏日本"的近硬币场次——日本微让 -0.5，胜平负有真实悬念；信息含量集中在让球深度、大小球与"瑞典必须压上"的战术后果</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识温和偏日本、无狂热单边，信息集中在让球/大小球</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向几乎一致偏日本（≈49% 去水、超算 ≈52%），但价格未被狂热推动——Sweden 仍有 4.33 的真实赔率。真正的分歧在<b>瑞典必须压上后的开放性</b>（大小球/BTTS）与<b>Kubo 缺阵对日本进攻上限</b>。Racing Post 是唯一明确反推瑞典的声音。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏日本，分歧在比分幅度与是否反推瑞典）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>日本 2-1，"瑞典惜败"</td></tr>
+      <tr><td>OneFootball</td><td>聚合媒体</td><td>日本胜 @1.95"真有价值"——状态/防守/纪律均胜瑞典</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>日本险胜一场进球大战；Over 2.5 + Gyökeres 任意时间进球</td></tr>
+      <tr><td>Yahoo / SportsRush</td><td>北美媒体</td><td>日本 2-1；Over 2.5；Gyökeres 任意时间进球</td></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>日本 51.9% / 平 25.9% / 瑞典 22.2%</td></tr>
+      <tr><td>Racing Post（反向）</td><td>英系老牌</td><td><b>反推瑞典 @4.33</b>——价值价 + 质疑日本难维持高光、防线偏开放</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：方向偏日本但<b>不极端</b>，且有 Racing Post 明确反推瑞典、有"大球/BTTS"的强共识支流。这不是一边倒场次——胜平负有真实悬念。最大的不确定性是<b>瑞典压上后的开放性</b>（推高大小球）与<b>日本缺 Kubo 的进攻上限</b>，而非胜负方向被狂热定价。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>日本胜 / 平 / 瑞典胜</th><th>解读</th></tr>
+      <tr><td>开档（赛前/多家综合）</td><td>1X2</td><td class="ht">≈1.90 / 3.55 / 4.33</td><td>日本微弱热门、瑞典深盘冷门 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>06-24 截止</td><td>FanDuel/bet365/Paddy Power</td><td class="ht">日本 1.83–1.95 / 平 3.40–3.60 / 瑞典 4.20–4.40</td><td>各书略有差异，整体把日本定为微弱热门、瑞典 ≈22%</td></tr>
+      <tr><td>06-24</td><td>大/小球 + 让球</td><td colspan="2" class="ht">日本让 -0.5（≈胜负盘）；O/U 2.5 偏大球（Over @≈1.80）；BTTS 偏 Yes</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日 / 赛季前预期）</td><td class="sc">瑞典曾因 Isak/Gyökeres 双星受敬重；两队接近</td><td>赛前以"瑞典双星 vs 日本巨人杀手"定价，两队定位接近、未一边倒 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>开盘（次轮赛后 + 净胜球重定价）</td><td class="ht">日本收紧为微弱热门（≈1.90）；瑞典走宽至 ≈4.33</td><td><b>repricing 来自次轮战绩</b>：瑞典被荷兰 <b>5-1</b> 暴露后防，日本 2-2 荷兰 + 4-0 突尼斯（净 +4 vs 瑞典 0），市场把日本定为微弱热门、瑞典深盘；<b>关键逻辑：瑞典"必须取胜→被迫压上"反而强化日本而非瑞典</b>，因压上正喂给日本反击</td></tr>
+      <tr><td>现盘（06-24→现）</td><td class="ht">日本 -0.5（≈1.90）；O/U 2.5 偏大球；瑞典 ≈4.33</td><td>价格发现集中在 <b>让球深度</b>（日本能否净胜瑞典 / 瑞典 +0.5 的拖住价值）与<b>大小球/BTTS</b>（瑞典压上 + 双方都能进 → 偏大球）；Kubo 缺阵略压日本进攻上限，是大球/让深盘的微调变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"温和偏日本的近硬币盘"，与一边倒重让盘不同——1X2 仍有真实价格发现。关键变量是<b>瑞典被迫压上后的开放性</b>（推高大小球/BTTS）与<b>日本缺 Kubo 的进攻上限</b>。核心反直觉点：瑞典的"必须取胜"是市场更看好日本的原因（压上露后防、喂给反击），而非更看好瑞典。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（Kalshi）</b>：胜平负约 <b>日本 53% / 平 27% / 瑞典 21%</b>，与 Opta 超算高度一致、较博彩去水更偏日本。出线市场：日本 ≈99% 出线、瑞典 ≈91%（48 队赛制下第三名仍有出线尾部）。Polymarket 有相关市场但单场各结果精确占比未检得 <span style="color:var(--warn)">[Polymarket 精确占比 · 待核]</span>。</li>
+      <li><b>舆论焦点 ①</b>：<b>Isak + Gyökeres 双英超前锋被迫"为生存而战"</b>——"当这样的锋线必须取胜时，值得关注"是最大流量点。</li>
+      <li><b>舆论焦点 ②</b>：<b>日本能否延续高光</b>——9 场不败（含胜巴西、英格兰），但缺 Kubo/Mitoma/Endo，疑问在创造力是否仍足。</li>
+      <li><b>公众资金面 / 社媒声量细分</b>：未检得量化数据 <span style="color:var(--warn)">[公众投注% / 社媒量化 · 待核]</span>；定性：公众资金偏日本（状态 + 热门），休闲盘倾向 Over 2.5 / BTTS。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"温和偏日本的近硬币盘"，过热指数 <b>2/5</b>。1X2 有真实价格发现，核心变量是<b>瑞典被迫压上的开放性</b>（推高大小球/BTTS）与<b>日本缺 Kubo 的进攻上限</b>。反直觉点：瑞典的求胜压力是市场更看好日本的原因。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/odds/_/gameId/760471">ESPN — 盘口</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/japan-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aKsXj1J6aMIS/">Racing Post — 反推瑞典</a> · <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/preview/japan-vs-sweden-prediction-team-news-lineups_599879.html">Sports Mole — 预测</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515">OneFootball</a> · <a href="https://theanalyst.com/articles/japan-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — 超算</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：据 ESPN 官方赛前前瞻，本场主裁为萨尔瓦多籍 <b>Ivan Barton</b>（CONCACAF 体系国际级）；阿灵顿 AT&amp;T Stadium（带顶可控温）。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Barton 来自萨尔瓦多、CONCACAF 执法体系——执法过本大洲（金杯赛/世预区）赛事的国际级主裁。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届/近两届实际样本</b>：Barton 本届/近两届世界杯单场出牌/判点的精确场均细分公开样本有限。<span style="color:var(--warn)">[大赛单场黄牌/判点率细分 · 无可靠大赛样本，不编数值 · 待核]</span>。定性判断：CONCACAF 体系主裁对身体对抗有一定容忍。</li>
+      <li><b>与两队的执法史</b>：与日本、瑞典两队均无显著公开执法史可言（<b>无样本，如实说明</b>）。</li>
+      <li><b>两面性</b>：瑞典必须压上 → 高位施压与禁区争顶增多，Isak/Gyökeres 的对抗与拉扯易制造任意球/点球；日本反击与战术犯规延缓也会增加牌点观察点。半自动越位将精准捕捉双方临界冲刺。牌数/点球盘宜以倾向看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场实力接近，裁判对胜负影响有限，主要价值在牌数/点球：瑞典压上后的禁区对抗与日本的战术犯规是黄牌/点球观察点。鉴于 Barton 本届单场大赛细分样本有限，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（ESPN / RotoWire 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇯🇵 日本 预测首发（3-4-2-1）· 森保一 · Kubo 伤缺</h4>
+    <div class="lineup">Z. Suzuki; Tomiyasu · Itakura · H. Ito; Doan · Sano · Tanaka · K. Nakamura; J. Ito · Kamada; Ueda</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Daichi Kamada</td><td>前腰 / 串联</td><td>对荷兰 89' 绝平、对突尼斯 4' 破门；Kubo 缺阵后日本组织核心</td></tr>
+      <tr><td class="ht">Ayase Ueda</td><td>中锋</td><td>对突尼斯梅开二度（31'、83'），状态火热；破瑞典三中卫的支点终结</td></tr>
+      <tr><td class="ht">Junya Ito</td><td>右边锋/翼卫</td><td>对突尼斯 69' 破门；Mitoma 缺阵下的边路速度与传中源</td></tr>
+      <tr><td class="ht">Zion Suzuki</td><td>门将 / 帕尔马</td><td>新生代门将，扑救与出球均衡；须应对 Isak/Gyökeres 的禁区高空球</td></tr>
+    </table>
+    <h4>🇸🇪 瑞典 预测首发（3-5-2）· Graham Potter · Isak + Gyökeres 双星</h4>
+    <div class="lineup">Nordfeldt; Lagerbielke · Hien · Lindelöf(C); Elanga · Karlström · Bergvall · Ayari · Gudmundsson; Gyökeres · Isak</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Alexander Isak</td><td>前锋</td><td>伤愈归队、对突尼斯首发并破门；打穿日本低位的双高点之一</td></tr>
+      <tr><td class="sc">Viktor Gyökeres</td><td>前锋</td><td>对突尼斯、对荷兰均破门；任意时间进球是市场最爱的瑞典侧选项</td></tr>
+      <tr><td class="sc">Anthony Elanga</td><td>右路 / 边锋</td><td>对荷兰替补登场 59' 破门；ESPN 力主其首发，提供边路速度</td></tr>
+      <tr><td class="sc">Victor Lindelöf (C)</td><td>中卫 / 队长</td><td>三中卫领袖；后防刚被荷兰 5-1 打穿，衔接与防反击是命门</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / RotoWire），<b>以赛前官方名单为准 · 待核</b>。日本焦点是 <b>Kubo 确认缺阵</b>后由 Kamada/J. Ito 扛创造、森保一是否维持 3 中卫；瑞典焦点是 Isak/Gyökeres 双星 + <b>门将 Nordfeldt 与 Johansson 的取舍各源不一</b> <span style="color:var(--warn)">[门将人选 · 待核]</span>、缺 Kulusevski/Forsberg 后中场如何供给双星。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 本大洲赛事 / 2018+2022）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇯🇵 日本 · 森保一 Hajime Moriyasu</div>
+        <div class="role">3-4-2-1 / 三中卫低位紧凑 + 快速由守转攻 + 板凳奇兵</div>
+        <ul class="cl">
+          <li>森保一的招牌是<b>低位紧凑 + 高强度逼抢 + 由守转攻的快速直传</b>——2022 卡塔尔以此模板两度从落后掀翻德国、西班牙（Doan 替补两度参与扳平），是"巨人杀手"主线。本届对荷兰 2-2（88' 角球绝平）、对突尼斯 4-0 延续这套下限稳、抓机会强的打法。</li>
+          <li>交叉参照：WC 2022 逆转德/西、本届 2-2 荷兰（被角球绝平也由角球扳平）——<b>日本面对压上的强队尤其舒服</b>，给它转换空间就会被反击与定位球惩罚。瑞典必须压上正中此意。</li>
+          <li>本场切入口：让出部分球权、用 Kamada 组织 + J. Ito 边路速度 + Ueda 支点打反击与定位球；缺 Kubo 削弱内切创造，但对突尼斯证明替代方案可行。平局即出线给了它"先稳后伺机"的安全垫——若早领先可能转守。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇸🇪 瑞典 · Graham Potter</div>
+        <div class="role">3-5-2 · 双前锋 Isak/Gyökeres + 边翼宽度，须主动施压</div>
+        <ul class="cl">
+          <li>Potter 麾下瑞典以<b>三中卫 + 双前锋</b>为骨架，依赖 Isak/Gyökeres 的个人能力终结。本届对突尼斯 5-1 火力顺畅，但对荷兰 1-5 被打穿——<b>对结构完整、能反击的对手，瑞典后防衔接立刻露馅</b>。</li>
+          <li>交叉参照：对荷兰被 Brobbey 双响 + Gakpo 双响（防反击与衔接全面失守）、缺 Kulusevski/Forsberg 削弱中场供给——<b>瑞典的下限在后防、上限系于双星个人灵光</b>。必须取胜意味着它不能像对荷兰那样被动，得主动压上。</li>
+          <li>本场应对：高位施压 + 喂给 Isak/Gyökeres 的高空球与二点进攻、靠 Elanga 的边路速度；定位球是其打破日本低位的现实武器。但压上必然露出身后空间，给日本反击与 Ueda/Ito 的纵向冲击留口子——这是瑞典必须取胜的最大代价。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">OneFootball / Total Football Analysis <small>· 赛前前瞻</small></div>日本胜被视为"真有价值"——状态、防守纪律均胜瑞典；多数预期是一场有球的进球大战，看好 Over 2.5 + Gyökeres 任意时间进球。</div>
+    <div class="insight"><div class="who">Sports Mole / Yahoo <small>· 预测媒体</small></div>多家给出日本 2-1，"瑞典惜败"；核心逻辑是瑞典必须压上、后防刚被荷兰 5-1 打穿，正喂给日本反击。</div>
+    <div class="insight"><div class="who">Racing Post（反向）<small>· 英系老牌</small></div>反推瑞典 @4.33："价值价"——质疑日本难维持赛季初高光、其偏开放的打法会让后防暴露在 Isak/Gyökeres 面前；Bet Builder 含 Isak 进球。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / Kalshi</small></div>超算与预测市场均偏日本（≈52% / 53%）。⚠ 陷阱提醒：① 日本平局即出线，若早领先或转守、压低己方进球；② 瑞典必须压上 → 大球/BTTS 概率上升，但也露后防给日本反击；③ Kubo 缺阵降低日本进攻上限，是大球/让深盘的微调变量；④ 瑞典双星仍是制造冷门的开关。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：日本小胜或平局是基准剧本。实力与状态天平温和偏日本（净 +4、9 场不败、低位反击克制压上型对手）；瑞典必须取胜、被迫压上，后防刚被荷兰 5-1 打穿，正喂给日本反击。但瑞典 Isak/Gyökeres 双星是真实变量，可制造冷门或迫使日本陷入对攻。</li>
+      <li><b>关键先生</b>：Kamada（日/组织核心）、Ueda（日/支点终结）、Junya Ito（日/边路速度）、Z. Suzuki（日/门将）；Isak、Gyökeres（瑞/双高点）、Elanga（瑞/边路速度）、Lindelöf（瑞/后防领袖）。<b>日本 Kubo 因伤缺阵</b>。</li>
+      <li><b>胜负手</b>：① 瑞典能否在压上的同时不被日本反击打穿后防；② 日本缺 Kubo 后能否用 Kamada/Ito 维持创造力 + 把握反击/定位球；③ 日本"平局即出线"心态会否使其早早转守、压低进攻烈度。</li>
+      <li><b>市场视角</b>：温和偏日本的近硬币盘（≈49/26/22、超算 ≈52%），过热指数 2/5；1X2 有真实价格发现。核心变量是瑞典压上后的开放性（推高大小球/BTTS）+ 日本缺 Kubo 的进攻上限。反直觉点：瑞典的求胜压力是市场更看好日本的原因。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>瑞典门将人选</b>（Nordfeldt vs Johansson 各源不一）与缺 Kulusevski/Forsberg 后的中场搭配；③ 日本是否维持 3 中卫、Kubo 缺阵后前场具体组合（已多源确认 Kubo 缺阵）；④ Barton 完整裁判组与 VAR 组合、其本届/近两届单场出牌/判点细分（无可靠大赛样本即如实说明）；⑤ 出线/头名的精确净胜球与并列规则（积分→净胜球→进球数→相互战绩→公平竞赛分→抽签）、日本争头名所需的荷兰-突尼斯结果组合、瑞典第三名出线的尾部条件（以 FIFA 官方判定为准）；⑥ 让球线（日本 -0.5）与大小球总分线（O/U 2.5）、精确初盘数值以赛前实时盘口为准；⑦ Polymarket 单场精确占比、公众投注%/社媒量化未检得。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49155285/fifa-world-cup-2026-japan-vs-sweden-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 日本vs瑞典官方前瞻（裁判/首发/教练）</a> · <a href="https://www.rotowire.com/soccer/headlines/takefusa-kubo-injury-ruled-out-against-sweden-520669">RotoWire — Kubo 确认缺席</a> · <a href="https://www.goal.com/en/lists/world-cup-dejan-kulusevski-injury-tottenham-sweden-viktor-gyokeres-alexander-isak/bltd56651aa57664624">Goal — Kulusevski 缺阵</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48775615/">ESPN — Mitoma 报销</a> · <a href="https://www.fifa.com/en/articles/japan-captain-endo-ruled-out-injury">FIFA — Endo 退出</a> · <a href="https://www.aljazeera.com/sports/2026/6/21/japan-tunisia-4-0-fifa-world-cup-2026-ayase-ueda-daichi-kamada-junya-ito">Al Jazeera — 日本 4-0 突尼斯</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543097/world-cup-2026-group-f-guide-fixtures-schedule-standings-and-odds-for-netherlands-japan-sweden-and-tunisia">Sky Sports — F组形势/积分</a> · <a href="https://theanalyst.com/articles/japan-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — 超算预测</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/japan-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aKsXj1J6aMIS/">Racing Post — 赔率/反推瑞典</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/preview/japan-vs-sweden-prediction-team-news-lineups_599879.html">Sports Mole — 预测/阵容</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515">OneFootball — 前瞻</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F">Wikipedia — F组/并列规则</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['日本胜','平局','瑞典胜'],datasets:[{data:[49,26,22],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[56,44],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['荷兰','日本','瑞典','突尼斯'],datasets:[{data:[4,4,3,0],backgroundColor:['#f0a04b',HT,SC,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'积分（末轮前）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'日本',data:[7.5,6.5,7,7.5,6.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'瑞典',data:[5,7,5.5,6.5,8,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

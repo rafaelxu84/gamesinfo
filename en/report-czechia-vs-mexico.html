@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Czechia vs Mexico · 2026 World Cup · Group A Final Round</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-czechia-vs-mexico.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-czechia-vs-mexico.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-czechia-vs-mexico.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-czechia-vs-mexico.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-czechia-vs-mexico.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#11457e;--sc:#006847;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d4e89,#0a5236);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#101f33,#0c2419);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#5fd3ab;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-czechia-vs-mexico.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-czechia-vs-mexico.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-czechia-vs-mexico.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group A Final Round · Already-Qualified Mexico vs Must-Win Czechia</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Czechia 0-3 Mexico</span>
+  <h1>Czechia vs Mexico</h1>
+  <div class="meta">24 June 2026 · Mexico City, Estadio Banorte (Azteca) · 21:00 ET (19:00 local) · Group A (also in group: South Korea, South Africa) · Final round</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇿 Czechia</div><div class="rk">FIFA #40 range · 1-2 loss to South Korea + 1-1 draw with South Africa · Just 1 point · Only a win keeps them alive</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fd3ab">🇲🇽 Mexico</div><div class="rk">FIFA #14 range · 2-0 South Africa + 1-0 South Korea · 6 points, qualified · Two clean sheets · Home</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (daily-analysis written 06-25) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Czechia 0-3 Mexico (HT 0-0) · 06-24</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">A clean sheet in the first half, with all the drama held over to the second: 39-year-old goalkeeper <b>Ochoa</b> made a record sixth World Cup appearance, and the two sides cancelled each other out at the break. In the <b>55th minute</b> Romo threaded a pass and <b>Mateo Chávez</b> slotted into the far corner to break the deadlock; in the <b>61st minute</b> <b>Julián Quiñones</b> netted his second goal of the tournament to double the lead; in stoppage time Alvarado set it up and <b>Álvaro Fidalgo</b> sealed 3-0 in the <b>90+ minute</b>. Mexico won all three matches, finished on <b>9 points</b> to top Group A, and <b>became the first Mexico side ever to win all their group-stage matches</b>; Czechia finished bottom (1 point) and were eliminated.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 55' Chávez · 61' Quiñones · 90+' Fidalgo｜Ochoa's 6th World Cup appearance (record) · Mexico's first-ever group-stage clean sweep</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta / FotMob)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇿 Czechia</th><th>🇲🇽 Mexico</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td>46%</td><td><b>54%</b></td><td>Mexico edged possession but not by much — home control achieved through efficiency, not suffocation</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td>0.47</td><td><b>1.79</b></td><td>3 goals from 1.79 xG — finishing efficiency beat the model; Czechia's 0.47 reflects a barren attack</td></tr>
+      <tr><td class="ht">Shots / on target</td><td>13 / 1</td><td>11 / <b>5</b></td><td>Czechia had more shots (13) but only 1 on target — quantity over quality; all 5 of Mexico's on-target efforts were high-quality</td></tr>
+      <tr><td class="ht">On-target conversion</td><td>0/1</td><td><b>3/5</b></td><td>Mexico's clinical finishing is the root cause of a "level possession but 3-0" scoreline</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://theanalyst.com/articles/czechia-vs-mexico-stats-2026-world-cup-group-a-live">Opta Analyst — Czechia 0-3 Mexico Stats</a> · <a href="https://www.fotmob.com/news/1j2039kf7o6fu11ssnblgj3wn9-czechia-0-3-mexico-co-hosts-stay-perfect-ochoa-makes-milestone-world-cup-appearance">FotMob match report</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760467/mexico-czechia">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Winning on efficiency, not by storming — but that is exactly Mexico's repeatable model this tournament</div>Just 54% possession and actually fewer shots than Czechia (11 vs 13), yet Mexico scored 3 from 5 on-target efforts. <b>This shows this Mexico side has settled into a stable approach of "patient control + high-quality finishing"</b>, winning all three not on spectacle but on taking their chances — heading into the knockouts, that is a more sustainable way to win.</div>
+    <div class="insight"><div class="who">Stepping on the gas only in the second half = a sign of fitness and bench depth</div>All three goals came after the 55th minute, with two substitute/rotation players (Chávez, Fidalgo) involved. <b>This shows Aguirre's rotation and second-half tempo lift were deliberate, and Mexico can wear opponents down late in the game</b> — especially lethal against minnows running on empty.</div>
+    <div class="insight"><div class="who">Czechia's "quantity over quality" exposed a missing finisher</div>13 shots, only 1 on target, 0.47 xG. <b>This shows Czechia lack a finisher who can turn chances into threats</b>, which is the core reason they finished bottom and went out — long-range, hopeful shooting is almost useless against a high-quality defensive line.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Note</th></tr>
+      <tr><td class="ht">Mexico win (implied ≈48%)</td><td style="color:var(--good)"><b>✓ Delivered (and exceeded)</b></td><td>A 3-0 win, well beyond the modest favourite tag of 48% — already qualified, they still went full out to top the group</td></tr>
+      <tr><td class="ht">Czechia all-out to win</td><td style="color:var(--good)"><b>✓ Reflected in the data</b></td><td>Czechia's 13 shots showed the desire to win, but the quality fell short — 0 goals, eliminated</td></tr>
+      <tr><td class="ht">Market heat 2.5/5</td><td style="color:var(--warn)"><b>~ Slightly underrated Mexico</b></td><td>Mexico's actual control was higher than the handicap implied — a 3-0 scoreline outperformed the "modest favourite" read</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#3fae6a">🇲🇽 Mexico · Through to the Round of 32 (Group A winners · 9 points, perfect record)</h4>
+        <ul class="watch">
+          <li><b>Round of 32 starts 6/28, opponent depends on the best-third-place rankings</b> (Group A winners face a third-placed side from groups C/E/F/H/I) — currently the first team to lock up qualification.</li>
+          <li><b>The "control + clinical finishing" model is set</b>: three wins, 9 points, a healthy goal difference; they can keep the patient approach into the knockouts without forcing things.</li>
+          <li><b>The second-half tempo lift is the killer move</b>: all 3 goals here came after 55', the bench (Chávez/Fidalgo) was effective — rotation depth is an asset in the knockouts.</li>
+          <li><b>Ochoa is steady</b>: a 6th World Cup, and his goal-line experience is a potential plus in a knockout shootout.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#9aa7c7">🇨🇿 Czechia · Eliminated (Group A bottom · 1 point)</h4>
+        <ul class="watch">
+          <li><b>Out at the group stage</b>: 1 draw, 2 losses, bottom on 1 point — their World Cup journey is over.</li>
+          <li><b>A missing finisher is a structural weakness</b>: plenty of shots across three matches but persistently low shots on target and xG — they need to rebuild their final-third conversion in attack.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a final round of Group A with <b>severely asymmetric motivation</b>: Mexico (FIFA #14, co-hosts) have won both matches and <b>not conceded a goal</b> (2-0 South Africa, 1-0 South Korea), and have <b>qualified early</b>; a win or even a draw here <b>secures top spot in Group A</b>. Czechia (FIFA #40 range) lost 1-2 to South Korea and drew 1-1 with South Africa for just 1 point, and <b>only a win</b> keeps their qualification hopes alive (and even then they still need to watch the South Africa–South Korea result). The market favours home side Mexico but not heavily — win odds around <b>1.95</b> (de-vigged implied ≈48%), draw <b>3.40</b> (≈27%), Czechia win <b>3.70</b> (≈25%); total line O/U <b>2.5</b>. The biggest uncertainty is that <b>Mexico may rotate heavily</b> (no qualification pressure left, conserving energy for the knockouts), which would close the gap and lift Czechia's chances of winning and scoring. Three things to watch: ① <b>How much Mexico rotate</b> (how many regulars Aguirre keeps); ② <b>whether Czechia can break Mexico's clean-sheet run</b> — Patrik Schick is Czechia's sharpest finisher; ③ <b>the Azteca's altitude + home atmosphere</b> bearing down on Czechia. Base case: <b>a narrow Mexico win or a draw</b>, but if Mexico rotate heavily, Czechia's "all-out attack" lifts the odds of an upset and a high-scoring game. Market heat index ≈ 2.5/5 (Mexico consensus, but a large rotation variable).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Mexico implied win prob. (de-vigged)</div><div class="v" style="color:#5fd3ab">≈48%</div></div>
+      <div class="key"><div class="k">Czechia implied win prob. (de-vigged)</div><div class="v" style="color:#7fa6e6">≈25%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈27%</div></div>
+      <div class="key"><div class="k">Market heat index</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Asymmetric motivation + Mexico rotation (the core variable)</b>: Mexico are through, and a win/draw here means top spot; multiple outlets expect Aguirre to <b>rotate heavily</b> to rest his regulars for the knockouts, while Czechia must win to stay alive. This narrows the talent gap and is Czechia's most realistic window to grab points — and the reason the market on Mexico is "not extreme".</li>
+      <li><b>Mexico's two clean sheets (carried over from the last match)</b>: 2-0 South Africa, 1-0 South Korea — defence is this Mexico side's biggest asset (finishing efficiency isn't high but it's enough). If the first-choice back line plays, Czechia will struggle to score; if Mexico rotate, the clean-sheet record comes under pressure.</li>
+      <li><b>Czechia's finisher = Patrik Schick (carried over from the last match)</b>: Schick is Czechia's most dangerous centre-forward, but Hašek's team relies more on tactical resilience than individual quality to prise open a disciplined Mexico defence — Czechia's 1-2 loss to South Korea and 1-1 draw with South Africa exposed a lack of cutting edge.</li>
+      <li><b>Qualification arithmetic: a Czechia win alone is not enough</b>: on 1 point, Czechia need a win + a favourable South Africa–South Korea result (South Korea 3 points, South Africa 1) to sneak into second/best-third. Mexico, by contrast, are all but locked into top spot — which further magnifies the gulf in motivation between the two.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, with item-by-item explanation of how each changes the tactics or result (includes both teams' carry-over items from the last match; key-player availability is cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5fd3ab;font-weight:700">Mexico · Carried over from last match · Qualified + heavy-rotation expected <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / SportsLine · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mexico won both matches, kept clean sheets and have qualified; a win/draw here means top spot, and multiple sources expect Aguirre to <b>rotate heavily</b></div>
+      <p style="font-size:13.5px">Following the 2-0 over South Africa and 1-0 over South Korea: Mexico have already locked up the R32, and a win or draw here secures top spot in Group A. ESPN, Sports Mole and SportsLine all note that Mexico may <b>rotate their regulars heavily</b> to conserve energy for the knockouts — meaning Czechia may not face a full-strength Mexico. <span style="color:var(--warn)">[Exact rotation line-up and extent subject to the official FIFA team sheet pre-match · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Mexico's rotation is the biggest variable in this match. Heavy rotation → talent gap narrows, Czechia's win/score chances rise, and Mexico's handicap (-0.5) and clean sheet come under pressure; if Aguirre still fields his strongest XI (to grab top spot + home pride), Mexico's narrow-win and clean-sheet probabilities recover. This directly drives the pricing of the 1X2, the handicap and the over/under.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49142462/czechia-vs-mexico-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Preview/rotation/predicted XI</a> · <a href="https://www.sportsmole.co.uk/football/czech-republic/world-cup-2026/preview/czech-republic-vs-mexico-prediction-team-news-lineups_599786.html" style="color:var(--accent)">Sports Mole — Team news</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-czechia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/" style="color:var(--accent)">SportsLine — Prediction/odds</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--ht);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">Czechia · Carried over from last match · No cutting edge + must win <span style="color:var(--mut);font-weight:400">· Sports Mole / Yahoo · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Czechia lost 1-2 to South Korea and drew 1-1 with South Africa for just 1 point; <b>only a win</b> keeps them alive, but a lack of cutting edge is their Achilles heel</div>
+      <p style="font-size:13.5px">Carried over from the first two rounds: Czechia's tactical resilience is decent but their individual quality is limited, and they can't prise open a disciplined defence (1-2 loss to South Korea, 1-1 draw with South Africa, limited attacking output). They must win here to keep their qualification hopes alive, so Hašek's team will be forced to push forward and attack — not a comfort zone for a Czechia side that relies on defensive organisation, and one that leaves space for Mexico's counter-attacks (even a rotated side). <span style="color:var(--warn)">[Starting XI subject to the official team sheet pre-match · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Czechia's "must win but no cutting edge" is the core tension. If Mexico rotate and Czechia dare to push up, the game opens up (good for the over and a Czechia goal); but pushing up also leaves space behind, and Mexico's counter is just as lethal. Whether Schick can break Mexico's clean-sheet run is the sole pivot for Czechia's survival.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/czech-republic/world-cup-2026/preview/czech-republic-vs-mexico-prediction-team-news-lineups_599786.html" style="color:var(--accent)">Sports Mole — Preview/Czechia situation</a> · <a href="https://sports.yahoo.com/articles/czech-republic-vs-mexico-prediction-092000737.html" style="color:var(--accent)">Yahoo Sports — Prediction</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee <span style="color:var(--mut);font-weight:400">· ESPN / FIFA Match Centre · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Argentina's <b>Yael Falcón Pérez</b>; the Azteca (Estadio Banorte) — altitude + home atmosphere</div>
+      <p style="font-size:13.5px">According to ESPN's preview, the referee for this match is Argentina's <b>Yael Falcón Pérez</b> (CONMEBOL international). The game is played at Mexico City's Azteca (now named Estadio Banorte) — <b>roughly 2,200 m altitude + a packed home atmosphere</b>, an added challenge for fitness and for a Czechia side that has travelled a long way. <span style="color:var(--warn)">[Full refereeing crew and VAR pairing · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Altitude amplifies energy expenditure and saps Czechia's stamina for a late onslaught; a full house is a morale boost for Mexico (even a rotated side). The referee's value lies in cards/penalties: Czechia must push up and attack and Mexico will counter — box scuffles and accumulating fouls are the things to watch. See the referee module below for details.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49142462/czechia-vs-mexico-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Referee/preview</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021444" style="color:var(--accent)">FIFA — Match Centre</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probability (de-vigged) · Group A landscape · Over/under market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group A FIFA rankings (lower = stronger · approx.)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇿 Czechia</th><th>🇲🇽 Mexico</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#40 range</td><td class="sc">#14 range</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-2 loss to South Korea + 1-1 draw with South Africa (1 point)</td><td class="sc">2-0 South Africa + 1-0 South Korea (6 points, no goals conceded)</td></tr>
+      <tr><td>Group A standings (before final round)</td><td colspan="2">Mexico lead on 6 points, qualified; South Korea 2nd on 3 points; Czechia 1 point, South Africa 1 point — Czechia only have a chance with a win + a favourable South Africa–South Korea result</td></tr>
+      <tr><td>Head coach</td><td class="ht">Ivan Hašek (Czech)</td><td class="sc">Javier Aguirre (Mexican)</td></tr>
+      <tr><td>Key players</td><td class="ht">Schick, Hložek, Provod, Souček, Coufal</td><td class="sc">Edson Álvarez, R. Jiménez, H. Lozano, Gilberto Mora</td></tr>
+      <tr><td>Watch points / questions</td><td class="ht">Can they break Mexico's clean sheet; does the attack leave gaps behind</td><td class="sc">Rotation extent; motivation to top the group; can the clean-sheet run continue</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 group exit · Euro 2020 quarter-finals</td><td class="sc">WC 2022 group exit (eliminated on goal difference) · Gold Cup 2023 champions · Copa América 2024 group exit</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win ≈3.70 (implied ≈25%)</td><td class="sc">Win ≈1.95 (≈48%) · Draw 3.40 (≈27%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5 — the core variable is the extent of Mexico's rotation (heavy rotation → more open, good for the over)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from decimal odds (≈48/27/25, normalised). Odds source: SportsLine/market (Mexico -105→1.95, Czechia +270→3.70, draw ≈+240→3.40). Handicap roughly Mexico -0.5, total line O/U 2.5. Mexico's rotation is the biggest uncertainty for the odds. Specific odds subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actuals · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying)</b> against <b>this World Cup's actuals (first two rounds)</b>, item by item. Public xG samples for national teams are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (sample source)</th><th>This World Cup actual (first two rounds)</th><th>Gap and reading</th></tr>
+      <tr><td class="sc">🇲🇽 Mexico · Attack</td><td class="sc">Upper-mid home firepower, historically inconsistent finishing (WC2022 eliminated on goal difference)</td><td class="sc">3 goals in 2 matches (2-0, 1-0), efficiency not high but enough</td><td><b>Steadily on target</b>: not many goals but two wins, victory built on defence rather than firepower; if they rotate here, finishing certainty drops</td></tr>
+      <tr><td class="sc">🇲🇽 Mexico · Defence</td><td class="sc">Tournament defensive organisation usually solid, the keeper and centre-backs are assets</td><td class="sc">2 matches, <b>no goals conceded</b> (one of the few clean records this tournament)</td><td><b>Clearly on target</b>: the clean sheet is this Mexico side's biggest asset; with the first-choice XI Czechia will struggle badly to score, with rotation it comes under pressure</td></tr>
+      <tr><td class="ht">🇨🇿 Czechia · Attack</td><td class="ht">Reliant on Schick's finishing + wide crosses, mid-table creativity</td><td class="ht">2 goals in 2 matches, no cutting edge, couldn't win the 1-1 draw with South Africa</td><td><b>Below par</b>: lacking the individual quality to unlock a packed defence; must win yet attacking output is limited — the biggest weakness</td></tr>
+      <tr><td class="ht">🇨🇿 Czechia · Defence</td><td class="ht">Euro 2020 quarter-finals built on defensive resilience, mid-table overall</td><td class="ht">3 goals conceded in 2 matches (loss to South Korea, draw with South Africa)</td><td><b>Average</b>: defence not enough for a clean sheet and an anaemic attack left them on just 1 point; being forced to push up in the final round will further expose the space behind</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Mexico took maximum points on clean sheets with ordinary firepower; Czechia fell short of the output needed to win at both ends. The deep data supports the "Mexico steady, Czechia must go all-out" thesis — but <b>Mexico's rotation</b> will rewrite how applicable the defensive sample is. Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② Match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This match's model-projected xG (magnitude)</td><td class="ht">Czechia ≈1.0</td><td class="sc">Mexico ≈1.4 (first XI) / ≈1.0 (heavy rotation)</td><td>A first-choice Mexico is clearly on top; with heavy rotation the two sides converge and Czechia's win/score probability rises</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Mexico rank well above Czechia, with home advantage + already qualified; the supercomputer gives Mexico a very high probability of topping the group, but this match's outcome is significantly affected by the rotation extent</td><td>Opponent-strength calibration: Mexico's defensive sample is high-value, but may not apply here (rotation)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Mexico's home field tilt is dominant, and the Azteca altitude saps Czechia's late stamina; Czechia must rely on set pieces and Schick getting on the end of them</td><td><b>Trap alert</b>: the real risk to Mexico's handicap (-0.5) and clean sheet hinges entirely on the rotation extent — heavy rotation + Czechia going all-out = higher probability of an over/draw/upset</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what each of these "xG-like" metrics means)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: total quality of shot chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = lots of long-range/poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">Home-side Mexico consensus, but the odds aren't extreme — because "already qualified + heavy rotation" makes Mexico's true strength a mystery; both the value and the risk hinge on the rotation extent</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · Mexico consensus, but a large rotation variable and odds not extreme</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Home side Mexico are favoured (≈48%), but because they've qualified and are expected to rotate heavily, the odds haven't been crushed into a short-priced favourite — both the draw and Czechia prices have support. The real disagreement is over <b>how strong an XI Mexico field</b> — which also drives the 1X2, the handicap (-0.5) and the over/under.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: Mexico win mostly, but with a rotation caveat)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>SportsLine</td><td>US betting media</td><td>Mexico narrow win/unbeaten, stressing home advantage + clean sheets; flags rotation risk</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Mexico win or draw, Czechia must win but lack cutting edge</td></tr>
+      <tr><td>Yahoo Sports</td><td>Prediction media</td><td>Low-scoring, Mexico on top; a Czechia goal depends on Schick</td></tr>
+      <tr><td>Juvefc</td><td>Prediction media</td><td>Mexico unbeaten at home as the main line, watching the openness once they rotate</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Heat signal (moderate-to-low)</b>: the direction leans Mexico but isn't extreme. The biggest uncertainty is <b>the extent of Mexico's rotation</b> — heavy rotation closes the gap and lifts Czechia and the over; with the first XI out, Mexico's narrow-win + clean-sheet probabilities recover. This is the master switch for every market in this game.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Mexico win / Draw / Czechia win</th><th>Reading</th></tr>
+      <tr><td>Open (multi-source composite)</td><td>1X2</td><td class="sc">≈1.90 / 3.40 / 3.70</td><td>Home side Mexico favoured, but not crushed into a short price given rotation expectations</td></tr>
+      <tr><td>As of 06-22</td><td>SportsLine / market</td><td class="sc">1.95 (-105) / 3.40 / 3.70 (+270)</td><td>Odds stable, price discovery focused on the handicap and rotation</td></tr>
+      <tr><td>06-22</td><td>Over/Under</td><td colspan="2" class="sc">Total line O/U 2.5, direction depends on rotation (heavy rotation + Czechia all-out → lean over)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Handicap positioning &amp; movement trend (opening → current)</h4>
+    <table>
+      <tr><th>Time</th><th>Handicap / odds</th><th>Positioning shift · trigger</th></tr>
+      <tr><td>Opening line (days before the match)</td><td class="sc">Mexico win ≈1.85; handicap -0.5/-1; O/U 2.5</td><td>Priced as "co-host at home vs mid-table Czechia"; the opening line cast Mexico as a clear home favourite</td></tr>
+      <tr><td>Open (re-priced after round 2)</td><td class="sc">Mexico win 1.90–1.95; handicap -0.5; draw/Czechia supported</td><td><b>Repricing from the qualification picture</b>: Mexico qualified early + expected to rotate heavily → odds <b>retreated</b> (no longer a short price), handicap narrowed to -0.5, draw and Czechia-win prices gained support; Czechia's "must-win all-out" also supports the over and a Czechia goal</td></tr>
+      <tr><td>Current (06-22→now)</td><td class="sc">Mexico win 1.95; handicap -0.5; O/U 2.5</td><td>Price discovery focused on <b>Mexico's rotation extent</b> — a rare case of "fundamentals (rotation) driving the odds" rather than scoreline-driven; the handicap and over/under fluctuate with the news flow</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: Mexico are cast as the home favourite but the odds are <b>not extreme because of the rotation expectation</b> (≈1.95, -0.5 handicap) — entirely different from a "full-strength home rout". The 1X2 value is limited; the most information-rich angle is the <b>handicap (-0.5) and the over/under</b>, both highly dependent on Mexico's rotation decision. Opening-line ranges subject to each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (aggregate)</b>: Mexico's probability of topping Group A is very high, consistent with the de-vigged bookmaker odds; this match's suspense is created mainly by the rotation, not by relative strength. <span style="color:var(--warn)">[Single-match volume/momentum breakdown not separately found in public sources · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Aguirre's rotation call</b> — balancing top spot + home pride against resting his regulars for the knockouts is the biggest talking point in the Mexican media.</li>
+      <li><b>Sentiment focus ②</b>: <b>whether Mexico keep the clean sheet</b> — one of the few unblemished records this tournament, with strong symbolic value at home.</li>
+      <li><b>Czechia narrative</b>: a must-win all-out game; whether Schick can break Mexico's clean-sheet run is the only suspense for Czechia's survival; the consensus is that Czechia will struggle to win.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite read</b>: a home-side Mexico consensus but odds that aren't extreme, heat index <b>2.5/5</b>. This is a textbook "fundamentals-driven" game — <b>the extent of Mexico's rotation</b> is the master switch for every market (1X2 / -0.5 handicap / over-under / clean sheet). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.sportsline.com/insiders/mexico-vs-czechia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Prediction/odds</a> · <a href="https://www.sportsmole.co.uk/football/czech-republic/world-cup-2026/preview/czech-republic-vs-mexico-prediction-team-news-lineups_599786.html">Sports Mole — Preview</a> · <a href="https://sports.yahoo.com/articles/czech-republic-vs-mexico-prediction-092000737.html">Yahoo Sports — Prediction</a> · <a href="https://www.juvefc.com/czech-republic-v-mexico-predictions/">Juvefc — Prediction</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the referee for this match is Argentina's <b>Yael Falcón Pérez</b> (CONMEBOL international). Source: ESPN preview. <span style="color:var(--warn)">[Full refereeing crew and VAR pairing · TBC]</span></div>
+    <h4>Officiating tendencies + this tournament's uniform new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: from the Argentine/CONMEBOL officiating tradition — South American referees have some tolerance for physical contact but manage tactical fouls and time-wasting well. This World Cup's officiating environment leans strict (only captains may speak to the referee, 8-second goalkeeper limit, semi-automated offside).</li>
+      <li><b>Tournament sample</b>: public per-match card/penalty-rate breakdowns for Falcón Pérez at the World Cup are limited. <span style="color:var(--warn)">[Per-match yellow-card/penalty-rate breakdown · TBC]</span></li>
+      <li><b>Officiating history with the two teams</b>: no significant public officiating history with either Czechia or Mexico; the environmental pressure when officiating a Mexico home game is a general variable.</li>
+      <li><b>Two-sided</b>: Czechia must push up and attack while Mexico (even rotated) counter — box scuffles, sprints to the offside edge and accumulating tactical fouls are the things to watch; semi-automated offside will precisely catch the marginal moments of Schick/Mexico's counters.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: Mexico's intensity is set by the rotation, and the referee has limited bearing on the result; the value lies in cards/penalties — the tussle between Czechia going all-out and Mexico's counters is the yellow-card/penalty watch point. Given the limited single-match sample, treat related markets as leanings.</div>
+  </section>
+
+  <!-- Lineups and key players -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · Official version announced ~1 hour pre-kickoff</span></h2>
+    <div class="sub">Predicted lineups (ESPN / Sports Mole / Yahoo projections, unofficial; Mexico may rotate heavily; official lists subject to the FIFA Match Centre pre-match · TBC)</div>
+    <h4>🇲🇽 Mexico predicted XI (4-3-3 · possibly several changes) · Javier Aguirre</h4>
+    <div class="lineup">Malagón; Sánchez · Montes · Vásquez · Gallardo; E.Álvarez(C) · E.Sánchez · Gilberto Mora; H.Lozano · R.Jiménez · A.Vega</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Edson Álvarez (C)</td><td>Holding midfielder / captain</td><td>Midfield shield and leader; if rested, Mexico's midfield steel drops <span style="color:var(--warn)">starting status TBC</span></td></tr>
+      <tr><td class="sc">Raúl Jiménez</td><td>Centre-forward</td><td>Mexico's finisher; ordinary efficiency this tournament but vastly experienced</td></tr>
+      <tr><td class="sc">Gilberto Mora</td><td>Rising-star midfielder</td><td>Mexico's most-watched young creator, providing vertical imagination</td></tr>
+      <tr><td class="sc">GK Malagón / back line</td><td>Defence</td><td>The core of two clean sheets; with the first-choice XI Czechia will struggle to score, with rotation it comes under pressure</td></tr>
+    </table>
+    <h4>🇨🇿 Czechia predicted XI (4-2-3-1 / 4-3-3) · Ivan Hašek</h4>
+    <div class="lineup">Staněk; Coufal · Krejčí · Hranáč · Doudera; Souček · Provod; Černý · Šulc · Hložek; Schick</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Patrik Schick</td><td>Centre-forward / Leverkusen</td><td>Czechia's sharpest finisher; the sole pivot for breaking Mexico's clean sheet and keeping Czechia alive</td></tr>
+      <tr><td class="ht">Tomáš Souček</td><td>Midfielder / West Ham</td><td>Box-to-box steel and set-piece presence, Czechia's in-the-box threat when attacking</td></tr>
+      <tr><td class="ht">Lukáš Provod</td><td>Midfielder / creator</td><td>Link-up play and long-range shooting, Czechia's limited source of creativity to unlock a packed defence</td></tr>
+      <tr><td class="ht">Adam Hložek</td><td>Winger/forward</td><td>Pace and running, Czechia's wide attacking outlet</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media projections (ESPN / Sports Mole / Yahoo), <b>subject to the official team sheets pre-match · TBC</b>. Mexico's focus is the extent of Aguirre's rotation (whether regulars like Edson Álvarez/Jiménez play); Czechia's focus is Hašek's attacking setup and Schick's support.</div>
+  </section>
+
+  <!-- Tactics + Coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments (World Cup + their respective continental/European championship)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5fd3ab">🇲🇽 Mexico · Javier Aguirre</div>
+        <div class="role">Pragmatic 4-3-3 + defensive organisation + home atmosphere, Jiménez as the focal point</div>
+        <ul class="cl">
+          <li>Aguirre is in his second (in fact multiple) stint, with a pragmatic style — this tournament he took two wins on <b>defensive organisation + clean sheets</b>, ordinary finishing efficiency but winning by not conceding. Mexico's floor comes from discipline and the keeper/back line.</li>
+          <li>Cross-reference: the WC 2022 group exit (eliminated on goal difference, toothless attack) is a shadow; the Gold Cup 2023 title shows dominance at the CONCACAF level. <b>Against mid-table European teams Mexico are solid enough but the firepower ceiling is limited</b> — consistent with this tournament's clean-sheets-but-few-goals profile.</li>
+          <li>This match's angle: already qualified + home + win/draw means top spot, so Aguirre is likely to rotate to rest his regulars. If he still fields his strongest XI, defence + home atmosphere should edge a narrow win over Czechia; with heavy rotation, beware Czechia's all-out attack opening things up.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇿 Czechia · Ivan Hašek</div>
+        <div class="role">4-2-3-1 tactical resilience + set pieces, Schick as the lone striker</div>
+        <ul class="cl">
+          <li>Hašek's Czechia stress <b>tactical discipline and defensive resilience</b>, with the attack relying on Schick's finishing and Souček getting on the end of set pieces — limited individual quality, struggling to unlock a packed defence (the 1-2 loss to South Korea and 1-1 draw with South Africa prove it).</li>
+          <li>Cross-reference: the Euro 2024 group exit (no cutting edge), the Euro 2020 quarter-finals (built on defence and Schick's heroics) — <b>Czechia's ceiling rides on Schick's form</b>, and the lack of systemic creativity is a structural problem.</li>
+          <li>This match's response: must win → forced to push up and attack, which is not Czechia's comfort zone. They must rely on set pieces (Souček arriving) + Schick's box finishing to nick a goal, while withstanding Mexico's counters (even rotated) and the altitude stamina test.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">SportsLine / Sports Mole <small>· Pre-match preview</small></div>Home side Mexico + clean sheets are favoured, but already-qualified and an expected heavy rotation is the biggest variable; Czechia must win but lack cutting edge.</div>
+    <div class="insight"><div class="who">Yahoo / Juvefc <small>· Prediction media</small></div>Low-scoring, Mexico on top as the main line; a Czechia goal hinges heavily on Schick. The game may open up once Mexico rotate.</div>
+    <div class="insight"><div class="who">Prediction markets <small>· Market consensus</small></div>Mexico's probability of topping Group A is very high, consistent with the de-vigged odds; this match's suspense is created by rotation, not relative strength.</div>
+    <div class="insight"><div class="who">Composite · Core suspense and traps <small>· Opta / FotMob</small></div>The real suspense is <b>how strong an XI Mexico field, and whether Czechia can break the clean sheet</b>. ⚠ Trap alert: a heavily-rotated Mexico + Czechia going all-out = higher probability of an over/draw/upset; the real risk to the handicap (-0.5) and clean sheet hinges entirely on the rotation extent — the one variable to keep a close eye on (re-check the official XI on match day).</div>
+  </section>
+
+  <!-- Composite assessment -->
+  <section>
+    <h2><span class="n">6</span> Composite Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow Mexico win or a draw is the base case (with the first XI out, a narrow win + clean sheet is likely); with heavy rotation, Czechia going all-out lifts the tail probabilities of a draw and a narrow Czechia win. Even a Czechia win requires a favourable South Africa–South Korea result for them to qualify.</li>
+      <li><b>Key men</b>: Edson Álvarez (Mex/midfield steel, starting status TBC), R. Jiménez (Mex/finishing), Gilberto Mora (Mex/creativity); Schick (Cze/sole pivot to break the clean sheet), Souček (Cze/set-piece presence), Provod (Cze/creativity).</li>
+      <li><b>Deciding factors</b>: ① the extent of Mexico's rotation (the master switch); ② whether Czechia can break Mexico's clean sheet via set pieces + Schick; ③ the Azteca altitude sapping Czechia's stamina for a late onslaught.</li>
+      <li><b>Market view</b>: a home-side Mexico consensus but odds that aren't extreme (≈48/27/25), heat index 2.5/5. The 1X2 value is limited; the most information-rich angle is the handicap (-0.5) and the over/under, both highly dependent on the rotation decision.</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② <b>the extent of Mexico's rotation</b> (whether regulars like Edson Álvarez/Jiménez play; re-check against the official XI on match day); ③ Czechia's attacking setup; ④ Falcón Pérez's full crew and VAR, plus his per-match card/penalty breakdown this tournament; ⑤ the precise Group A qualification/best-third arithmetic (subject to FIFA's official determination); ⑥ specific odds for the handicap (-0.5) and the total line (O/U 2.5) subject to the live pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49142462/czechia-vs-mexico-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — Preview/referee/rotation/predicted XI</a> · <a href="https://www.sportsmole.co.uk/football/czech-republic/world-cup-2026/preview/czech-republic-vs-mexico-prediction-team-news-lineups_599786.html">Sports Mole — Preview/team news</a> · <a href="https://sports.yahoo.com/articles/czech-republic-vs-mexico-prediction-092000737.html">Yahoo Sports — Prediction</a><br>
+      • <a href="https://www.sportsline.com/insiders/mexico-vs-czechia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Prediction/odds</a> · <a href="https://www.juvefc.com/czech-republic-v-mexico-predictions/">Juvefc — Prediction</a> · <a href="https://www.skysports.com/football/news/12098/13540670/world-cup-2026-group-a-guide-fixtures-schedule-standings-and-odds-for-mexico-south-africa-south-korea-and-czech-republic">Sky Sports — Group A guide/standings</a><br>
+      • <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021444">FIFA — Match Centre</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A">Wikipedia — Group A</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-23 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice.</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#7fa6e6',SC='#2bbd8a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Mexico win','Draw','Czechia win'],datasets:[{data:[48,27,25],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[48,52],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, fluctuates with rotation)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Mexico','South Korea','Czechia','South Africa'],datasets:[{data:[14,23,40,60],backgroundColor:[SC,'#e8cd6b',HT,'#f0a3a3'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approx.)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive solidity','Attacking finishing','Midfield control','Wide play/counter','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Mexico',data:[8,6.5,7,6.5,6.5,7.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC},
+   {label:'Czechia',data:[6,5.5,6,5.5,6,6],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

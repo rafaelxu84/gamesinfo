@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Pré-Jogo · México vs África do Sul · Abertura da Copa do Mundo 2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/mexico-vs-south-africa.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/mexico-vs-south-africa.html">
+<style>
+  :root{
+    --bg:#0d1220; --card:#161d2e; --card2:#1c2540; --line:#2a3450;
+    --txt:#e9eef8; --mut:#93a1c4; --mx:#16a34a; --sa:#e0ad1a; --draw:#64748b;
+    --accent:#38bdf8; --warn:#f59e0b; --good:#22c55e; --bad:#ef4444; --purp:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#16a34a);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  /* summary */
+  .summary{background:linear-gradient(135deg,#13261b,#152138);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}
+  .watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  /* grids */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  @media(max-width:680px){.grid2,.grid3{grid-template-columns:1fr}}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .stat .k{color:var(--mut);font-size:12px}.stat .v{font-size:22px;font-weight:800;margin-top:3px}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.3px}
+  td.mx{color:#34d27b;font-weight:600}td.sa{color:#ecc24a;font-weight:600}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700}
+  .pmx{background:#16a34a33;color:#4ade80}.psa{background:#e0ad1a33;color:#f0cf6b}
+  details{background:var(--card2);border:1px solid var(--line);border-radius:10px;margin-top:12px;overflow:hidden}
+  summary{cursor:pointer;padding:12px 16px;font-weight:700;font-size:14px;color:var(--accent);list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary:before{content:"＋ ";font-weight:800}
+  details[open] summary:before{content:"− "}
+  details .body{padding:0 16px 16px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}
+  .insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}
+  .flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .tag{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:1px 6px;margin-left:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/mexico-vs-south-africa.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <span class="badge">⚽ Copa do Mundo 2026 · Jogo de Abertura · Relatório Detalhado · 🏁 Final 2-0</span>
+  <h1>México vs África do Sul</h1>
+  <div class="meta">11 de junho de 2026 · Cidade do México — Estádio Azteca (altitude ~2.250m) · Grupo A — 1ª Rodada · Revivendo o roteiro da abertura de 2010</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇲🇽 México</div><div class="rk">FIFA #15 · Anfitrião · Valor €194,6m</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 África do Sul</div><div class="rk">FIFA #60 · Retorno após 16 anos · Valor €52,7m</div></div>
+  </div>
+
+  <!-- ===== ANÁLISE PÓS-JOGO ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101b30,#161d2e)">
+    <h2><span class="n">📊</span> Análise pós-jogo: tática e dados <span style="font-size:12px;color:var(--mut);font-weight:500">· Com referência de transferência para a próxima partida</span></h2>
+    <div class="sub">Resultado final: México 2-0 África do Sul (HT 1-0) · Fontes: Opta/FotMob/Sofascore · A análise pré-jogo permanece abaixo como arquivo de previsões</div>
+
+    <h4>① Desenvolvimento do placar</h4>
+    <p style="font-size:14px">9' Quiñones aproveitou o <b>erro fatal de Sithole no campo defensivo</b> para abrir o placar (primeiro gol do torneio); 67' Jiménez cabeceou no segundo poste para selar o 2-0. O fim do jogo virou um caos disciplinar: <b>50' Sithole derrubou Gutiérrez em chance clara de gol — vermelho direto (DOGSO) → 82' Zwane deu um tapa em Alvarado, VAR interveio — vermelho direto → 90+2' Montes pisou em Mudau — vermelho direto (polêmico, parecia amarelo)</b> — primeiro jogo da Copa do Mundo em 20 anos com 3 vermelhos diretos.</p>
+
+    <h4>② Comparativo de dados principais</h4>
+    <table>
+      <tr><th>Métrica</th><th>🇲🇽 México</th><th>🇿🇦 África do Sul</th><th>Leitura</th></tr>
+      <tr><td>Posse de bola</td><td class="mx">61%</td><td class="sa">39%</td><td>Domínio esperado, mas sem chegar ao "sufocamento total"</td></tr>
+      <tr><td>xG</td><td class="mx"><b>1.41</b></td><td class="sa"><b>0.07</b></td><td>África do Sul não criou praticamente nada — o preço do 5-3-2 puramente defensivo</td></tr>
+      <tr><td>Chutes / no alvo</td><td class="mx">16 / 4 (1 na trave)</td><td class="sa">3 / 0</td><td><b>Taxa de conversão fraca do México</b>: 16 chutes, apenas 4 no alvo; 2-0 estava perto do limite de eficiência</td></tr>
+      <tr><td>Toques na área</td><td class="mx">20</td><td class="sa">2</td><td>Dez vezes mais penetração; o contra-ataque sul-africano nunca se materializou</td></tr>
+      <tr><td>Cartões vermelhos</td><td class="mx">1 (Montes 90+2)</td><td class="sa">2 (Sithole 50' / Zwane 82')</td><td>Todos foram diretos — primeira evidência concreta do arbitragem rigorosa neste torneio</td></tr>
+    </table>
+
+    <h4>③ Revisão tática (real vs. avaliação pré-jogo)</h4>
+    <ul class="watch">
+      <li><b>O esquema de três meias do México sem Álvarez funcionou</b>: Lira–Fidalgo–Gutiérrez superaram numericamente o trio do meio-campo sul-africano; 61% de posse + 20 toques na área validaram a leitura prévia de "trocar a âncora por mais criação". <b>Conclusão transferível</b>: o México tem um manual testado para romper blocos baixos, embora contra equipes que contra-atacam (Coreia do Sul) o retorno de Álvarez ainda seja necessário.</li>
+      <li><b>A eficiência ofensiva continua sendo o teto do México</b>: 16 chutes, 4 no alvo, 1 na trave — a avaliação prévia de "além de Jiménez, o México carece de finalizadores de impacto" se cumpriu pela metade. O gol de Quiñones veio de um presente do adversário, não de uma jogada construída. Diante de uma defesa de maior qualidade, essa taxa de conversão seria punida.</li>
+      <li><b>O plano 5-3-2 da África do Sul durou 9 minutos</b>: O gol foi resultado de um erro próprio, não de uma penetração forçada — confirma o perfil pré-jogo de "gols sofridos tendem a ser erros individuais"; as substituições ofensivas de Broos (Zwane/Mofokeng depois dos 60') renderam um vermelho em vez de um gol.</li>
+      <li><b>A rota aérea se confirmou</b>: O segundo gol decisivo foi cruzamento + cabeçada no segundo poste — a indicação prévia de "maior peso das jogadas aéreas" estava correta na direção (a chuva em si não foi protagonista).</li>
+      <li><b>A disciplina foi a maior surpresa</b>: O histórico de Sampaio como árbitro "permissivo no contato" foi por terra — 3 vermelhos diretos + VAR proativo indicam um ambiente arbitral significativamente mais rígido em todo o torneio; o custo das faltas em todas as partidas seguintes precisa ser reavaliado.</li>
+    </ul>
+
+    <h4>④ Balanço de previsões</h4>
+    <ul class="cl">
+      <li>Resultado: Vitória do México ✓ (consenso de mercado 66–70%, confirmado); placar 2-0 = um dos mais prováveis pelo supercomputador ✓</li>
+      <li>Total de gols: Menos de 2,5 ✓ (direção principal; xG combinado de 1,48 confirma a natureza de poucos gols)</li>
+      <li>Temperatura do mercado: "Calor justificado — valor já consumido" ✓ — o favorito se confirmou mas não houve vantagem informacional</li>
+      <li>Leitura da escalação oficial: Quiñones adiciona perigo ✓ (marcou); "Álvarez no banco é uma escolha" ✓ (três meias funcionou normalmente)</li>
+      <li>Erros: Colapso disciplinar (3 vermelhos) não foi antecipado; o risco de Rangel sob chuva nunca foi testado (África do Sul 0 chutes no alvo)</li>
+    </ul>
+
+    <h4>⑤ Transferência → referência para a próxima partida de cada equipe</h4>
+    <table>
+      <tr><th>Equipe</th><th>Próximo jogo</th><th>Informação transferida</th></tr>
+      <tr><td class="mx">🇲🇽 México</td><td>18/6 vs Coreia do Sul (Guadalajara)</td><td>① <b>Montes suspenso</b> — falta um zagueiro titular; quem joga ao lado de Vásquez é a maior dúvida; ② Álvarez provavelmente retorna ao time titular para lidar com a velocidade de transição sul-coreana; ③ uma taxa de conversão de 16 chutes a 4 no alvo diante de uma defesa liderada por Kim Min-jae é uma vulnerabilidade real; ④ Para a Coreia do Sul: o trio de volantes da África do Sul travou o meio-campo do México por 9 minutos — mas um único erro de saída de bola bastou para desmoronar; <b>a pressão alta contra o México tem recompensa alta e margem de erro zero</b>.</td></tr>
+      <tr><td class="sa">🇿🇦 África do Sul</td><td>18/6 vs Tchéquia</td><td>① <b>Sithole + Zwane, ambos suspensos</b> — o destruidor do meio-campo e o principal impacto ofensivo do banco estão fora; ② xG total de 0,07: a defesa pura não traz pontos, e com um elenco desfalcado o risco de ser obrigado a jogar mais aberto é maior; ③ para a Tchéquia, isso é um benefício enorme no cálculo de classificação (e eleva levemente o valor do empate no jogo de hoje Coreia–Tchéquia).</td></tr>
+    </table>
+
+    <div style="font-size:12px;margin-top:10px">Fontes: <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — Estatísticas pós-jogo</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — Relatório / 3 vermelhos</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760415/south-africa-mexico" style="color:var(--accent)">ESPN — Estatísticas finais</a> · <a href="https://www.fotmob.com/news/10lkoinljn1hg1808rdcu23cff-mexico-2-0-south-africa-three-players-sent-off-world-cup-co-hosts-start-style" style="color:var(--accent)">FotMob</a> · <a href="https://www.sofascore.com/news/mexico-2-0-south-africa-world-cup-opener-report" style="color:var(--accent)">Sofascore</a></div>
+  </section>
+
+  <!-- ===== RESUMO ===== -->
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia isto primeiro)</h3>
+    <p class="lead">O México parte como favorito claro com a quádrupla vantagem de <b>mandante + altitude + valor de mercado (3,7×) + forma</b>; a probabilidade implícita das odds aponta para aproximadamente <b>64%</b> de vitória. No torneio da CONCACAF Gold Cup, os dados do México foram excepcionais (média de <b>2,41 xG</b> de ataque e apenas <b>0,85 xGA</b> de defesa, ambos os melhores da edição), com a organização defensiva como base. A África do Sul confirmou um <b>5-3-2 com cinco defensores</b>, ainda mais conservador do que o previsto (ver o módulo ✅ de escalações oficiais abaixo), apostando em contra-ataques rápidos; sua maior fraqueza, além de Foster, é a falta de um finalizador confiável. A partida deve terminar em <b>poucos gols</b> (mercado aponta Menos de 2,5), sendo a vitória por margem mínima do México o roteiro principal — <b>as duas escalações oficiais reforçam essa conclusão</b>.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Handicap/Prob. vitória (sem vig)</div><div class="v" style="color:#34d27b">≈64%</div></div>
+      <div class="key"><div class="k">Proporção de valor</div><div class="v">3,7×</div></div>
+      <div class="key"><div class="k">xG/jogo México (Gold Cup)</div><div class="v" style="color:#34d27b">2,41</div></div>
+      <div class="key"><div class="k">Histórico de confrontos</div><div class="v">0 vit. México</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Primeiros 30 minutos</b>: a África do Sul consegue resistir à atmosfera do Azteca e à altitude? Esta é a única janela para a surpresa.</li>
+      <li><b>México no 2º tempo</b>: vício antigo é perder o ritmo após substituições, abrindo espaço para o contra-ataque sul-africano.</li>
+      <li><b>Bolas paradas</b>: provável fonte de gols num jogo de baixo placar — ambos os times têm esquemas de bola parada.</li>
+      <li><b>Novas regras</b>: 8 segundos para o goleiro, 5 segundos para tiro lateral, apenas o capitão pode falar com o árbitro — comprimem as táticas de cansaço, o que prejudica levemente a África do Sul quando quer "fechar o time e ganhar tempo".</li>
+    </ul>
+  </div>
+
+  <!-- ===== MÓDULO PRINCIPAL: NOTÍCIAS PRÉ-JOGO ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias Pré-Jogo <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo principal · Com fontes + por que é importante</span></h2>
+    <div class="sub">Informações de primeira mão que afetam esta partida, com explicação de como cada uma muda a tática ou o resultado</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Dia do jogo · 11/06 <span style="color:var(--mut);font-weight:400">· Cerimônia de abertura + escalação prevista</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Abertura hoje: cerimônia de 90 min (homenagem a Pelé/Maradona, início às 11h30 local); escalação prevista indica <b>Rangel no gol</b> e Modiba recuperado de lesão retornando à esquerda na África do Sul</div>
+      <p style="font-size:13.5px">O Azteca se torna hoje <b>o único estádio a sediar três jogos de abertura de Copa do Mundo</b> (1970/1986/2026). A cerimônia começa às 11h30 (horário local), dura cerca de 90 minutos, inclui homenagens a Pelé e Maradona, com Shakira, J Balvin, Andrea Bocelli e Maná no palco; pontapé inicial às 13h local (15h ET). Escalação prevista do dia: México com <b>Raúl Rangel no gol</b> (confirma o suspense após a exclusão de Malagón), esquema 4-3-3/4-2-3-1 com Jiménez como centroavante; África do Sul com <b>Modiba recuperado como titular na esquerda</b> e Foster na ponta do ataque.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: ① A cerimônia de 90 min + estádio lotado + homenagens elevam ao máximo o emocional da torcida em casa — o México deve apertar forte nos primeiros 15 minutos, que serão o momento mais perigoso para a África do Sul; ② Rangel no gol confirma que o México entra na abertura com um goleiro sem experiência em Copas — somado à previsão de chuva forte, seu desempenho em bolas aéreas e sob pressão é a única brechai realista da África do Sul em bolas paradas; ③ O retorno de Modiba dá à África do Sul a faixa esquerda completa, permitindo que Broos arme seu melhor bloco defensivo teórico. <span style="color:var(--warn)">[Escalações oficiais sujeitas à confirmação pré-jogo]</span></div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://uk.sports.yahoo.com/news/estadio-azteca-break-world-cup-131523407.html" style="color:var(--accent)">Yahoo — Azteca e os três jogos de abertura</a> · <a href="https://sport.quotidiano.net/en/calcio/mondiali/cerimonia-apertura-2026-nyq96hsg" style="color:var(--accent)">QN — Horário/programa da cerimônia</a> · <a href="https://www.sportsmole.co.uk/football/mexico/world-cup-2026/preview/mexico-vs-south-africa-prediction-team-news-lineups_598850.html" style="color:var(--accent)">Sports Mole — Escalação prevista do dia</a> · <a href="https://www.si.com/soccer/mexico-predicted-lineup-vs-south-africa-world-cup-6-11-26" style="color:var(--accent)">SI — Escalação prevista do México</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">México · Lesões/Elenco <span style="color:var(--mut);font-weight:400">· 09/06 confirmado pré-jogo</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Goleiro Malagón e o meia Marcel Ruiz fora por lesão; Montes/Álvarez/Chávez/Vega lesionados mas jogaram no último amistoso</div>
+      <p style="font-size:13.5px">De acordo com a ESPN, na lista final de 26 convocados de Aguirre <b>faltam o goleiro titular Luis Ángel Malagón e o meia Marcel Ruiz, ambos por lesão</b>. Por outro lado, os jogadores com status de dúvida — <b>César Montes, Edson Álvarez, Luis Chávez e Alexis Vega — todos jogaram no amistoso contra a Sérvia em 5/6</b> e estão liberados. O goleiro de 36 anos Guillermo Ochoa é o único jogador das duas seleções presente nas Copas de 2010 e de 2026.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: A ausência de Malagón deixa o gol sem o titular previsto, com Rangel assumindo como favorito — esta é uma das poucas incógnitas do jogo de abertura. Mas os pilares do meio-campo e defesa (Álvarez/Montes/Chávez) superaram suas dúvidas com minutos de jogo, mantendo o esquema principal intacto e sem abalar a condição de favorito do México. <span style="color:var(--warn)">[Goleiro titular sujeito à confirmação oficial pré-jogo]</span></div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — México vs África do Sul: notícias do elenco pré-jogo</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">México · Forma <span style="color:var(--mut);font-weight:400">· 04/06 último amistoso</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">México vence a Sérvia por 5 a 1, encerrando a preparação com virada</div>
+      <p style="font-size:13.5px">Último amistoso antes da Copa: o México saiu perdendo aos 19 minutos (Stanic), mas Johan Vázquez empatou aos 34', e gols de dois contra, uma finalização tranquila de Raúl Jiménez e um belo chute de longa distância de Luis Chávez aos 90' garantiram a <b>virada por 5 a 1 sobre a Sérvia</b>. Foi o encerramento de <b>8 jogos consecutivos sem derrota em 2026</b> (últimos três: Gana 2-0, Austrália 1-0, Sérvia 5-1). O goleiro de 36 anos <b>Guillermo Ochoa foi convocado para sua 6ª Copa do Mundo</b>, sendo o único jogador de ambas as seleções presente nas listas de 2010 e 2026.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: Encerrar a preparação com uma goleada <b>retroalimenta positivamente a moral e o poder de fogo ofensivo</b> — a forma de Jiménez, o chute de longa distância e a capacidade de Chávez em bolas paradas são exatamente os fatores de desempate mais realistas nesse jogo de baixo placar esperado. Sair perdendo e virar também demonstra que o time consegue reagir em desvantagem, reforçando ainda mais o favoritismo do México.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.washingtonpost.com/sports/soccer/2026/06/05/mexico-world-cup-2026-raul-jimenez/bbbe7fe4-60a0-11f1-9c46-d6211372eede_story.html" style="color:var(--accent)">Washington Post — México 5-1 Sérvia</a> · <a href="https://www.outlookindia.com/sports/football/mexico-vs-serbia-live-score-international-friendly-2026-updates-highlights-toluca" style="color:var(--accent)">Outlook — Detalhes do jogo</a> · <a href="https://www.aljazeera.com/sports/2026/5/23/mexico-beat-ghana-as-world-cup-co-hosts-lay-down-early-warm-up-marker" style="color:var(--accent)">Al Jazeera — Vitória sobre Gana</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">México · Escalação confirmada <span style="color:var(--mut);font-weight:400">· Convocação de 26 jogadores oficializada</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Aguirre divulga lista de 26; último amistoso com <b>4-2-3-1</b>; Edson Álvarez saudável mantém a braçadeira</div>
+      <p style="font-size:13.5px">O México publicou oficialmente sua lista de 26 convocados para a Copa. Pelo último amistoso, Aguirre parece preferir o <b>4-2-3-1</b>: Edson Álvarez (capitão) e Luis Romo como dupla de volantes, com Luis Chávez e Erik Lira como alternativas; faixas com velocidade de Alvarado e Huerta; Raúl Jiménez de 35 anos como centroavante. <b>A preocupação anterior com a lesão de Álvarez não se refletiu na convocação — ele entrou saudável e manteve a braçadeira de capitão.</b></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: A mudança do 4-3-3 anteriormente especulado para o 4-2-3-1 com dois volantes é mais defensiva e focada no controle do jogo — combinada com casa + altitude, é mais adequada ao roteiro de "controlar o ritmo e bloquear os contra-ataques sul-africanos"; Álvarez saudável como âncora resolve a principal variável em aberto, tornando a defesa do México mais sólida. Jiménez permanece como principal executor de bolas paradas e cobranças de pênalti.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-squad-announced" style="color:var(--accent)">FIFA — Lista de 26 do México</a> · <a href="https://www.aljazeera.com/sports/2026/6/5/mexico-world-cup-2026-preview-players-to-watch-group-matches-and-squad" style="color:var(--accent)">Al Jazeera — Elenco/destaques</a> · <a href="https://www.prizepicks.com/playbook-article/mexico-world-cup-roster-announced-projected-starting-lineup" style="color:var(--accent)">PrizePicks — Escalação prevista 4-2-3-1</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Ambiente do jogo · Decisão relevante <span style="color:var(--mut);font-weight:400">· 02/06 decisão do TAS</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">TAS mantém multa da FIFA à federação mexicana, mas <b>revoga o fechamento parcial do estádio — Azteca receberá o jogo de abertura com capacidade máxima</b></div>
+      <p style="font-size:13.5px">Sobre o cântico homofóbico da torcida, o Tribunal Arbitral do Esporte (TAS) manteve as multas da FIFA de 140.000 francos suíços (cerca de US$ 178.000) aplicadas à federação mexicana, mas <b>revogou a punição de fechamento parcial das arquibancadas em jogos da FIFA</b>. Isso significa que o jogo de abertura no Azteca em 11/6 será disputado com a arena totalmente lotada.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: O "parcialmente vazio" teria diretamente reduzido a <b>vantagem de jogar em casa + altitude</b> do México; com a punição revogada, o jogo de abertura acontece com estádio lotado e o maior ativo intangível do México está intacto — o que prejudica ainda mais a África do Sul, que tenta buscar o empate com defesa compacta. (Obs: a multa foi mantida, e o cântico homofóbico "tem ocorrido repetidamente" no Azteca — ainda é um risco disciplinar potencial.)</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/06/02/ahead-of-world-cup-mexico-soccer-body-loses-appeals-against-fifa-fines-for-fans-anti-gay-chant" style="color:var(--accent)">AP / NY1 — Decisão do TAS</a> · <a href="https://www.outlookindia.com/sports/football/fifa-world-cup-2026-mexico-loses-appeal-against-anti-gay-chant-fine" style="color:var(--accent)">Outlook — Detalhes do recurso</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">África do Sul · Amistoso final <span style="color:var(--mut);font-weight:400">· 06/06 Pachuca (portões fechados)</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">África do Sul empata 1-1 com a Jamaica no último treino, <b>Foster marca mas vai 5 jogos sem vencer</b>; Broos insatisfeito</div>
+      <p style="font-size:13.5px">Em 6/6 no Estádio Hidalgo (Pachuca), em jogo fechado ao público, a África do Sul <b>empatou 1-1 com a Jamaica</b> — Lyle Foster marcou no 2º tempo, mas Dwayne Atkinson empatou logo depois. Antes disso, 0-0 com a Nicarágua; <b>os últimos 5 amistosos antes da Copa terminaram sem vitória</b>. Broos disse após o jogo que não ficou satisfeito com o desempenho da equipe no Hidalgo e que continuará trabalhando nos dias seguintes.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: O gol de Foster alivia um pouco a ansiedade com a finalização, mas a tendência de "5 jogos sem vitória + ataque apagado" não se reverteu antes da abertura — somada à missão de jogar fora de casa no Azteca, com altitude e atmosfera, fica mais difícil para a África do Sul criar a surpresa. A boa notícia é que o período de aclimatação em altitude compensou os atrasos causados pelos problemas de visto — mas aproveitar as chances limitadas continua sendo o problema clássico de uma equipe sem um finalizador confiável além de Foster.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.goal.com/en-za/lists/jamaica-1-1-south-africa-confusion-reigns-after-bafana-bafana-s-behind-closed-doors-fifa-world-cup-warm-up/blt5b925bdb40e375d3" style="color:var(--accent)">Goal — Jamaica 1-1 África do Sul</a> · <a href="https://www.safa.net/general-news/bafana-continue-with-their-world-cup-preparations-after-jamaica-friendly/" style="color:var(--accent)">SAFA — Preparação pós-jogo</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">África do Sul · Boas notícias de lesão <span style="color:var(--mut);font-weight:400">· 09/06 pré-jogo</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lateral-esquerdo Modiba recuperado de lesão muscular e treinou normalmente, deve ser titular; Morena e Nkota fora da lista</div>
+      <p style="font-size:13.5px">Informações pré-jogo confirmam que <b>Aubrey Modiba se recuperou de uma lesão muscular, treinou normalmente esta semana e disputa vaga no time titular</b>; <b>toda a equipe da África do Sul está livre da lista de lesionados</b> antes da abertura. Os pontas Thapelo Morena e Mohau Nkota ficaram fora da convocação.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: O retorno de Modiba reforça a faixa esquerda — ele precisa participar dos contra-ataques pelos lados com Mofokeng/Appollis e ao mesmo tempo aguentar a pressão dos cruzamentos do México pela direita. Com o elenco todo saudável, Broos pode montar seu bloco defensivo mais compacto teoricamente possível para essa batalha cujo objetivo é um resultado positivo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://khelnow.com/football/world-football-south-africa-injury-news-ahead-world-cup-opener-vs-mexico-202606" style="color:var(--accent)">Khel Now — Boas notícias de lesão da África do Sul</a> · <a href="https://www.espn.com/soccer/story/_/id/49007230/world-cup-2026-mexico-vs-south-africa-kickoff-how-watch-stats-team-news-fifa-opener" style="color:var(--accent)">ESPN — Situação do elenco pré-jogo</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Condições do jogo · Alerta meteorológico <span style="color:var(--mut);font-weight:400">· Previsão de 09/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Previsão para 11/6 na Cidade do México: <b>tempestade + chuva forte + rajadas de até 50 km/h</b>, possível granizo — justo na janela da cerimônia e do jogo de abertura</div>
+      <p style="font-size:13.5px">O serviço meteorológico mexicano e vários meios de comunicação preveem para a tarde de quinta-feira, 11/6, <b>tempestade elétrica, chuva intensa e ventos fortes</b> (rajadas de até ~50 km/h) na Cidade do México, com possibilidade de granizo; a janela de tempo coincide diretamente com a cerimônia e o jogo de abertura às 15h ET.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: Chuva + gramado escorregadio costuma <b>reduzir a qualidade do toque de bola e elevar o peso das bolas paradas e dos chutes de longe</b> — reforçando a leitura principal de "poucos gols + bola parada como fator decisivo" (favorável ao Menos de 2,5); ao mesmo tempo, bolas aéreas em campo molhado são um teste para o goleiro, e tanto o novato Rangel (México) quanto Williams (África do Sul) tornam-se variáveis sob chuva. O ambiente altitude + tempestade é ainda mais hostil para os sul-africanos, que vêm do nível do mar.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.tudn.com/mundial-2026/mexico-vs-sudafrica/se-pronostican-lluvias-y-tormenta-dia-de-la-inauguracion-y-partido-mexico-vs-sudafrica-mundial-2026" style="color:var(--accent)">TUDN — Previsão de chuva no dia de abertura</a> · <a href="https://www.cronista.com/mexico/actualidad-mx/un-gran-muro-de-agua-caera-durante-la-inauguracion-del-mundial-advierten-tormenta-electrica-vientos-de-hasta-50-kmh-y-posible-granizada-el-jueves-11/" style="color:var(--accent)">El Cronista — Alerta de tempestade/vento/granizo</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Árbitro · Confirmado <span style="color:var(--mut);font-weight:400">· 08/06 nomeação FIFA</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro do jogo de abertura confirmado: o brasileiro <b>Wilton Sampaio</b>; VAR o colombiano Nicolás Gallo</div>
+      <p style="font-size:13.5px">A FIFA nomeou oficialmente o <b>árbitro brasileiro Wilton Sampaio</b> para o jogo de abertura no Azteca em 11/6, com os auxiliares brasileiros Bruno Pires e Bruno Boschilia, e o colombiano Nicolás Gallo como VAR. Esta é a <b>segunda vez que Sampaio apita o México</b> (a primeira foi na Copa América do Centenário de 2016), sendo também um dos árbitros internacionais mais experientes da América do Sul, com participação na Copa de 2022.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que é importante</b>: Árbitros sul-americanos costumam ter maior tolerância ao contato físico e tendem a deixar o jogo fluir — teoricamente mais favorável ao anfitrião México, que quer impor sua fisicalidade; combinado às novas regras do torneio (8s goleiro, 5s lateral, só o capitão fala), aumenta ainda mais a pressão sobre a estratégia de "fechar e ganhar tempo" da África do Sul. A experiência de Sampaio e o sistema de impedimento semiautomático vão tornar as decisões mais rápidas e precisas.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html" style="color:var(--accent)">Yahoo/OneFootball — Nomeação do árbitro da abertura</a> · <a href="https://ghanasoccernet.com/world-cup-2026-brazilian-referee-wilton-sampaio-to-officiate-mexico-south-africa-opener" style="color:var(--accent)">GhanaSoccernet — Sampaio apita a abertura</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Escalações oficiais (lineup-watch auto-insert) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130b">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· anunciadas antes do apito inicial · verificação com duas fontes</span></h2>
+    <div class="sub">Anunciadas por volta de T-65 (~14h00 ET) · Fontes: The South African (nota de confirmação) + Khel Now / blog ao vivo do Bolavip, cruzadas</div>
+
+    <h4>🇲🇽 XI oficial do México (4-3-3) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Confirmado oficialmente (duas fontes coincidem)</span></h4>
+    <div class="lineup">Rangel; Reyes · Montes(C) · Vásquez · Gallardo; Lira · Fidalgo · Gutiérrez; Alvarado · Jiménez · Quiñones</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: Ochoa (40 anos, à espera da histórica 6.ª Copa em campo), <b style="color:#e2e8f0">Edson Álvarez (o capitão, surpreendentemente no banco)</b>, Santiago Giménez e Gilberto Mora, de 17 anos.</p>
+
+    <h4>🇿🇦 XI oficial da África do Sul (5-3-2) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Confirmado oficialmente (duas fontes coincidem)</span></h4>
+    <div class="lineup">Williams(C); Mudau · Okon · Mbokazi · Sibisi · Modiba; Mokoena · Sithole · Adams; Rayners · Foster</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: Zwane, Mofokeng, Appollis e Moremi — todos os criadores de lado previstos ficam na reserva.</p>
+
+    <h4>Oficial vs previsto</h4>
+    <table>
+      <tr><th>Mudança</th><th>Previsto</th><th>Oficial</th><th>Por que importa</th></tr>
+      <tr><td class="mx">MEX · Estrutura do meio</td><td>Duplo pivô Álvarez+Romo</td><td><b>Trio Lira · Fidalgo · Gutiérrez</b></td><td><b>A maior surpresa do dia: o capitão Edson Álvarez no banco</b> — contra um bloco baixo, Aguirre troca a âncora defensiva por progressão com a bola.</td></tr>
+      <tr><td class="mx">MEX · Lateral direito</td><td>Sánchez</td><td>Reyes</td><td>Mantém o lado direito do 5 a 1 sobre a Sérvia; mais mobilidade para vigiar a saída de contra-ataque sul-africana.</td></tr>
+      <tr><td class="mx">MEX · Ponta esquerda</td><td>Huerta</td><td>Quiñones</td><td>Artilheiro da liga saudita (33 gols) em grande fase, soma drible no 1 contra 1 e presença de área.</td></tr>
+      <tr><td class="mx">MEX · Goleiro</td><td>Rangel</td><td>Rangel</td><td><b>Como previsto</b>: o recorde da 6.ª Copa de Ochoa fica em espera; confirma a leitura após a lesão de Malagón.</td></tr>
+      <tr><td class="sa">RSA · Esquema</td><td>Linha de quatro, 4-3-2-1</td><td><b>Linha de cinco, 5-3-2 (+Sibisi)</b></td><td>Broos fica ainda mais conservador do que qualquer previsão — objetivo claro: segurar o 0 a 0 ou roubar um ponto em bola parada.</td></tr>
+      <tr><td class="sa">RSA · Ataque</td><td>Appollis · Mofokeng · Moremi</td><td><b>Todos no banco</b>; Rayners ao lado de Foster</td><td>Sacrifica os criadores de lado por uma dupla de atacantes direta — a rota de contra-ataque muda completamente.</td></tr>
+      <tr><td class="sa">RSA · Meio-campo</td><td>Mbatha+Mokoena</td><td>Mokoena · Sithole · Adams</td><td>Três operários povoando o centro, especificamente para fechar as zonas de recepção de Fidalgo.</td></tr>
+    </table>
+
+    <h4>Leitura tática</h4>
+    <ul class="watch">
+      <li><b>Veredicto do resumo rápido: mantido e reforçado</b> — cerco 4-3-3 do México vs retranca 5-3-2 da África do Sul; os dois lados dobram a aposta no roteiro de poucos gols, então a linha "vitória do México + menos de 2,5" segue de pé.</li>
+      <li><b>Álvarez no banco é escolha, não lesão</b>: contra retranca não há necessidade de duplo pivô; se sofrer um contra-ataque, Aguirre ainda tem o capitão e S. Giménez como cartas durante o jogo.</li>
+      <li><b>A África do Sul poupa todos os seus criadores</b>: o roteiro é arrastar o 0 a 0 além da hora de jogo e soltar Zwane/Mofokeng — a janela mais perigosa para o México passa do início para o pós-substituições.</li>
+      <li><b>A variável do clima continua</b>: na altitude e com tempestade provável, a via aérea Rayners+Foster é a única arma sul-africana; o jogo aéreo de Rangel na chuva segue como a maior incógnita mexicana (em linha com as notícias do dia acima).</li>
+    </ul>
+
+    <div style="font-size:12px;margin-top:10px">Fontes: <a href="https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/bafana-bafana-starting-11-vs-mexico/" style="color:var(--accent)">The South African — Confirmado: os dois XI titulares</a> · <a href="https://khelnow.com/football/world-football-mexico-starting-lineup-vs-south-africa-202606" style="color:var(--accent)">Khel Now — XI do México + banco completo</a> · <a href="https://bolavip.com/en/world-cup/mexico-vs-south-africa-live-2026-world-cup-opening-game" style="color:var(--accent)">Bolavip — blog ao vivo (escalações confirmadas)</a></div>
+  </section>
+
+  <!-- ===== 1 DADOS ===== -->
+  <!-- ===== Escalações oficiais e leitura (lineup-watch) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06130b">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· Anunciadas antes do apito inicial · Verificação em duas fontes</span></h2>
+    <div class="sub">Anunciadas ~T-65 (por volta das 14h ET) · Fontes: The South African (confirmação oficial) + Khel Now / Bolavip ao vivo, cruzadas</div>
+
+    <h4>🇲🇽 XI oficial do México (4-3-3) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Confirmado oficialmente (duas fontes coincidem)</span></h4>
+    <div class="lineup">Rangel; Reyes · Montes(C) · Vásquez · Gallardo; Lira · Fidalgo · Gutiérrez; Alvarado · Jiménez · Quiñones</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: Ochoa (40 anos, à espera da histórica 6ª Copa), <b style="color:#e2e8f0">Edson Álvarez (capitão — surpresa no banco)</b>, Santiago Giménez e Gilberto Mora (17 anos).</p>
+
+    <h4>🇿🇦 XI oficial da África do Sul (5-3-2) <span class="tag" style="color:#4ade80;border-color:#1d4a2a">✅ Confirmado oficialmente (duas fontes coincidem)</span></h4>
+    <div class="lineup">Williams(C); Mudau · Okon · Mbokazi · Sibisi · Modiba; Mokoena · Sithole · Adams; Rayners · Foster</div>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0 14px">Armas no banco: Zwane, Mofokeng, Appollis, Moremi — toda a criatividade prevista pelos lados fica de reserva.</p>
+
+    <h4>Oficial vs Previsto</h4>
+    <table>
+      <tr><th>Mudança</th><th>Previsto</th><th>Oficial</th><th>Por que importa</th></tr>
+      <tr><td class="mx">MEX · Estrutura do meio</td><td>Dupla de volantes Álvarez+Romo</td><td><b>Trio Lira · Fidalgo · Gutiérrez</b></td><td><b>A maior surpresa do dia: o capitão Edson Álvarez no banco</b> — contra um bloco baixo, Aguirre troca a âncora defensiva por progressão de bola.</td></tr>
+      <tr><td class="mx">MEX · Lateral-direito</td><td>Sánchez</td><td>Reyes</td><td>Mantém o lado direito do 5 a 1 sobre a Sérvia; mais mobilidade para vigiar a saída do contra-ataque sul-africano.</td></tr>
+      <tr><td class="mx">MEX · Ponta esquerda</td><td>Huerta</td><td>Quiñones</td><td>Artilheiro do Campeonato Saudita (33 gols) em grande fase; agrega drible no 1 contra 1 e finalização na área.</td></tr>
+      <tr><td class="mx">MEX · Goleiro</td><td>Rangel</td><td>Rangel</td><td><b>Como previsto</b>: o recorde da 6ª Copa de Ochoa segue em espera; confirma a leitura após a lesão de Malagón.</td></tr>
+      <tr><td class="sa">RSA · Esquema</td><td>Linha de quatro 4-3-2-1</td><td><b>Linha de cinco 5-3-2 (+Sibisi)</b></td><td>Broos mais conservador do que todas as previsões — objetivo claro: segurar o 0-0 ou roubar um ponto em bola parada.</td></tr>
+      <tr><td class="sa">RSA · Ataque</td><td>Appollis · Mofokeng · Moremi</td><td><b>Todos no banco</b>; Rayners ao lado de Foster</td><td>Abre mão da velocidade pelos lados por bolas longas em dois atacantes de referência — a rota do contra-ataque muda completamente.</td></tr>
+      <tr><td class="sa">RSA · Meio-campo</td><td>Mbatha+Mokoena</td><td>Mokoena · Sithole · Adams</td><td>Três operários lotam o meio, montados para negar as zonas de recepção de Fidalgo.</td></tr>
+      
+    </table>
+
+    <h4>Leitura tática</h4>
+    <ul class="watch">
+      <li><b>Veredicto do resumo: mantido e reforçado</b> — cerco 4-3-3 do México vs retranca 5-3-2 da África do Sul; os dois lados dobram a aposta no roteiro de poucos gols. Vitória do México + menos de 2,5 segue como cenário base.</li>
+      <li><b>Álvarez no banco é escolha, não lesão</b>: não precisa de dupla de volantes contra retranca; se sofrer um contra-ataque, Aguirre guarda o capitão + S. Giménez como cartas do jogo.</li>
+      <li><b>África do Sul poupa todos os seus criadores</b>: o roteiro é 0-0 até depois da hora de jogo, e então soltar Zwane/Mofokeng — a janela de perigo do México desloca-se do início para depois das substituições.</li>
+      <li><b>A variável chuva permanece</b>: com altitude e tempestade, a via aérea direta de Rayners+Foster é a única arma; o jogo aéreo de Rangel com bola molhada segue como a maior incógnita do México (consistente com o módulo de notícias).</li>
+      
+    </ul>
+
+    <div style="font-size:12px;margin-top:10px">Fontes: <a href="https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/bafana-bafana-starting-11-vs-mexico/" style="color:var(--accent)">The South African — Confirmado: as duas escalações oficiais</a> · <a href="https://khelnow.com/football/world-football-mexico-starting-lineup-vs-south-africa-202606" style="color:var(--accent)">Khel Now — XI do México + banco completo</a> · <a href="https://bolavip.com/en/world-cup/mexico-vs-south-africa-live-2026-world-cup-opening-game" style="color:var(--accent)">Bolavip — página ao vivo (escalações confirmadas)</a></div>
+  </section>
+
+  <section>
+    <h2><span class="n">1</span> Análise de Dados (Principal)</h2>
+    <div class="sub">Valor de mercado · xG · Gols marcados/sofridos · Ranking · Probabilidade implícita das odds — todos os gráficos são dados verificados</div>
+
+    <div class="grid2">
+      <div class="chartbox"><h5>Comparação de valor total do elenco (€ milhões, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de xG do México — Gold Cup 2025 (por jogo)</h5><canvas id="xgChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Probabilidade implícita das odds (sem a margem/vig)</h5><canvas id="oddsChart"></canvas></div>
+      <div class="chartbox"><h5>Calor para liderança do Grupo A (probabilidade implícita %)</h5><canvas id="groupChart"></canvas></div>
+    </div>
+
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇲🇽 México</th><th>🇿🇦 África do Sul</th></tr>
+      <tr><td>Ranking FIFA</td><td class="mx">15</td><td class="sa">60</td></tr>
+      <tr><td>Valor total do elenco</td><td class="mx">€194,6m</td><td class="sa">€52,7m (lista final de 26 ~€45,3m)</td></tr>
+      <tr><td>xG (últimas partidas oficiais)</td><td class="mx">2,41 / jogo (Gold Cup, melhor do torneio)</td><td class="sa">Dados limitados (poucas chances nas eliminatórias)</td></tr>
+      <tr><td>xGA (gols esperados sofridos)</td><td class="mx">0,85 / jogo (Gold Cup, melhor do torneio)</td><td class="sa">Defesa sólida, gols sofridos geralmente por erros individuais</td></tr>
+      <tr><td>Forma recente</td><td class="mx">Últimos 5 sem derrota, apenas 1 gol sofrido; março: 0-0 Portugal, 1-1 Bélgica</td><td class="sa">10 jogos nas eliminatórias: 5V-3E-2D (passou sobre a Nigéria); março: 1-1, 1-2 Panamá</td></tr>
+      <tr><td>Odds 1X2 (bet365 08/06)</td><td class="mx">1.48</td><td class="sa">Empate 4.33 / Vitória 6.50</td></tr>
+      <tr><td>Prob. vitória implícita (sem vig)</td><td class="mx">≈63,7% <span class="tag">Subiu para 66-70%, ver 🔥 Calor do mercado</span></td><td class="sa">Empate 21,8% / Vitória 14,5%</td></tr>
+      <tr><td>Histórico de confrontos</td><td colspan="2" class="mx">2 jogos, México 0 vitórias (inclui abertura da Copa 2010: 1-1)</td></tr>
+    </table>
+    <div class="note">📌 Perspectiva de gols: o México tem ataque sem grandes pontas além de Jiménez + a África do Sul "cria chances mas desperdiça muito" — os dois perfis apontam para <b>placar baixo</b>, consistente com a tendência do mercado de Menos de 2,5.</div>
+  </section>
+
+  <!-- ===== 1B CALOR DO MERCADO DE APOSTAS ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Índice de Calor do Mercado de Apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· Novo módulo · Recomendações / Movimentos de odds / Volume / Sentimento</span></h2>
+    <div class="sub">Quanto das odds é "prêmio emocional"? Quatro sinais + índice composto de superaquecimento — todos com dados reais e fontes</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de Superaquecimento do Mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Significativamente aquecido (direção México)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Sentimento quase unânime + odds comprimindo continuamente para o México (1.48→1.42). Mas os fundamentos também sustentam a vitória mexicana — é "calor justificado, valor já precificado", não euforia irracional.</div>
+    </div>
+
+    <h4>① Agregado de recomendações de especialistas/personalidades (14 fontes · Direções: México 9 · Menos gols 3 · África do Sul -1,5 gols 1 · Surpresa África do Sul 1)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th><th>Direção</th></tr>
+      <tr><td>David Faitelson</td><td>TUDN (um dos comentaristas mais influentes do México)</td><td>"Em condições normais, o México deveria vencer claramente", mas alerta que o jogo é "México contra si mesmo" — controle emocional é crucial</td><td><span class="pill pmx">México · c/ ressalva</span></td></tr>
+      <tr><td>Alex Blowers</td><td>VSiN (rede de apostas de Las Vegas)</td><td>Mexico Win to Zero 2.00: "O ataque da África do Sul não sustenta uma virada"</td><td><span class="pill pmx">México zerou</span></td></tr>
+      <tr><td>Martin Green</td><td>Especialista certificado SportsLine</td><td>Principal aposta em Menos de 2,5: "6 dos últimos 7 jogos do México tiveram menos de 2,5 gols"</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">Menos gols</span></td></tr>
+      <tr><td>Equipe SportsGambler</td><td>Site de análise de apostas</td><td>O mais agressivo: México <b>handicap -1,25</b>, vence por 2+, placar exato 2-0 (5.40)</td><td><span class="pill pmx">México por goleada</span></td></tr>
+      <tr><td>OddsShark</td><td>Mídia de odds norte-americana</td><td>México marca pelo menos 2 gols</td><td><span class="pill pmx">México ofensivo</span></td></tr>
+      <tr><td>LiveScore / Squawka</td><td>Mídia britânica de dados/resultados</td><td>Anfitrião vence com tranquilidade; modelos repetem 1-0 / 2-0</td><td><span class="pill pmx">México</span></td></tr>
+      <tr><td>Bleacher Report</td><td>Previsão completa da fase de grupos</td><td>Vitória do México</td><td><span class="pill pmx">México</span></td></tr>
+      <tr><td>SuperComp SportsCasting</td><td>Modelo</td><td>Prob. de vitória do México 67,7%; jogo mais unilateral do Grupo A; placar mais provável 1-0</td><td><span class="pill pmx">México</span></td></tr>
+      <tr><td>Modelo Nate Silver</td><td>100.000 simulações do torneio</td><td>México como favorito para liderar o grupo (Elo 1800 vs 1526, prob. de classificação 95% vs 35%)</td><td><span class="pill pmx">México dominante</span></td></tr>
+      <tr><td>RotoWire · Courtin</td><td>Analista tático</td><td>"África do Sul pode incomodar por ~30 minutos, depois qualidade e ambiente falam mais alto"</td><td><span class="pill pmx">México</span></td></tr>
+      <tr><td>Painel IA · Claude</td><td>Experimento com 3 modelos — NYSportsDay</td><td>México 1.44 é "defensável, não inflado"; 10 modelos integrados: 100% consenso México (xG 1,80 vs 0,50)</td><td><span class="pill pmx">México</span></td></tr>
+      <tr><td>Painel IA · ChatGPT</td><td>Mesmo experimento</td><td>Posição contrária: <b>África do Sul +1,5 (1.57)</b> — "México vence, mas não por 2"; cita abertura 2010 (1-1)</td><td><span class="pill psa">África do Sul -1,5</span></td></tr>
+      <tr><td>Painel IA · Gemini</td><td>Mesmo experimento</td><td>Ignora 1X2, aposta direto em <b>Menos de 2,5 (1.71)</b>: estrutura conservadora de jogo de abertura</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">Menos gols</span></td></tr>
+      <tr><td>Steven Pienaar e outros</td><td>Lenda da África do Sul (ex-Everton) + veteranos</td><td>Preveem que a África do Sul vai criar a surpresa "Aztecazo" — única voz contrária de nome (com viés pelo país de origem)</td><td><span class="pill psa">Surpresa África do Sul</span></td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de superaquecimento</b>: 0 das 14 fontes neutras aposta na África do Sul — o consenso na direção 1X2 chegou ao extremo. As divergências relevantes estão todas na <b>margem</b>: SportsGambler prevê vitória por 2+, mas ChatGPT/mercado de handicap (México -1,5 rende apenas 2.25~+130, implícito 43%) diz "vence, mas por pouco". Em resumo: o mercado está superaquecido para "vitória do México" e cauteloso para "vitória do México por goleada".</div>
+
+    <h4 style="margin-top:20px">② Rastreamento de movimento de odds (dinheiro fluindo para o México)</h4>
+    <table>
+      <tr><th>Momento</th><th>Bookmaker/Mercado</th><th>México vitória</th><th>Prob. implícita</th><th>Leitura</th></tr>
+      <tr><td>08/06 início</td><td>bet365</td><td class="mx">1.48</td><td>≈63,7% (sem vig)</td><td>Snapshot original do relatório</td></tr>
+      <tr><td>08/06</td><td>DraftKings / Lucky Rebel</td><td class="mx">1.44</td><td>≈66%</td><td>Começa a comprimir</td></tr>
+      <tr><td>09-10/06</td><td>DraftKings (atual)</td><td class="mx">1.42</td><td>≈68-70%</td><td>Volume pré-jogo continua fluindo para o México</td></tr>
+      <tr><td>10/06</td><td>Mercados de previsão (VWAP)</td><td colspan="2" class="mx">69,0¢ · +4,5¢ em 30 dias</td><td>Momentum confirmado: aquecimento unilateral</td></tr>
+    </table>
+    <div class="note">📌 <b>Movimento unilateral consistente</b> (1.48 → -240, ~+5pp; mercados de previsão: México +4,5¢ em 30 dias, África do Sul -3,6¢) indica que o público e o dinheiro graúdo estão do mesmo lado — sem sinais de "dinheiro inteligente na direção oposta"; a janela de valor para apostar no México já fechou, enquanto os preços do empate (4.20/4.40) e da África do Sul (6.50/8.00) ficaram "largos" passivamente por falta de interesse.</div>
+
+    <h4 style="margin-top:20px">③ Volume nos mercados de previsão (Kalshi / Polymarket / Gemini — 3 plataformas, agregado DefiRate a cada 30 min)</h4>
+    <table>
+      <tr><th>Resultado</th><th>Preço agg. (VWAP)</th><th>Kalshi</th><th>Polymarket</th><th>Gemini</th><th>Volume total</th><th>Momentum 30 dias</th></tr>
+      <tr><td class="mx">México vence</td><td class="mx"><b>69,0%</b></td><td>69,5¢ ($216,4K)</td><td>68,5¢ ($333,0K)</td><td>69,5¢</td><td><b>$549,3K</b></td><td style="color:#4ade80">↑ +4,5</td></tr>
+      <tr><td>Empate</td><td>20,5%</td><td>20,5¢ ($10,8K)</td><td>20,5¢ ($28,9K)</td><td>20,5¢</td><td>$39,7K</td><td>↓ -0,3</td></tr>
+      <tr><td class="sa">África do Sul vence</td><td class="sa">10,5%</td><td>10,5¢ ($53,9K)</td><td>10,5¢ ($127,3K)</td><td>10,5¢</td><td>$181,2K</td><td style="color:#f87171">↓ -3,6</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>Força do consenso</b>: spread de apenas 1¢ entre as três plataformas, arbitragem "inoperável" — mercado global (Polymarket) e mercado americano (Kalshi) têm <b>zero divergência</b> nesta partida; precificação altamente eficiente.</li>
+      <li><b>Estrutura de volume atípica</b>: volume em contratos da África do Sul ($181K) é 4,6× o do empate ($39,7K) — típica <b>mentalidade de loteria</b> (pequenas apostas por um sonho); mas o preço ainda caiu 3,6¢, sinalizando que a pressão vendedora é maior. O empate é a "opção chata" ignorada por ambos os lados.</li>
+      <li><b>Mercado derivado</b>: Kalshi dá ao México 57% de chance de liderar o Grupo A e 84% de classificação; o volume total dos mercados de previsão da Copa já ultrapassou <b>US$ 2 bilhões</b> antes do início (o maior evento de mercado de previsão esportiva da história) — e o volume desta partida ainda vai crescer.</li>
+    </ul>
+
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Comparativo de probabilidade de vitória do México (%) — Consenso: 64-70</h5><canvas id="mktChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">④ Sentimento nas redes sociais</h4>
+        <ul class="cl">
+          <li>A Cidade do México entrou em modo de "semiparlização": escolas fechadas, empresas em home office, 87.000 torcedores no estádio — evento emocional de escala nacional.</li>
+          <li>Partida de lendas México 5-2 África do Sul (viralizada pela TUDN) reforça ainda mais a narrativa de "vitória garantida".</li>
+          <li>O único ruído contrário vem do ecossistema midiático sul-africano (SuperSport/iDiski com o tema "Aztecazo").</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura integrada</b>: este é o caso clássico de "jogo de abertura do anfitrião superaquecido" — especialistas unânimes, emoção popular e compressão unilateral das odds ressoando juntos. Para fins de análise: <b>64% não é o teto, é o piso</b>; o consenso do mercado já subiu para 66-70%; para quem busca ângulos menos explorados, o empate e o cenário de "derrota por 0-1" da África do Sul são os pontos cegos deixados pelo sentimento do mercado. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://vsin.com/soccer/mexico-vs-south-africa-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Pick Blowers/odds DK</a> · <a href="https://www.sportsline.com/insiders/mexico-vs-south-africa-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Green</a> · <a href="https://www.infobae.com/mexico/deportes/2026/06/07/david-faitelson-brinda-su-pronostico-para-la-inauguracion-del-mundial-2026-entre-mexico-y-sudafrica/">Infobae — Faitelson</a> · <a href="https://oem.com.mx/esto/mundial-2026/leyendas-de-sudafrica-predicen-una-victoria-sobre-mexico-para-hacer-un-aztecazo-en-el-mundial-2026-30405431">ESTO — Pienaar/veteranos africanos</a> · <a href="https://www.sportscasting.com/news/supercomputer-mexico-vs-south-africa-betting-picks/">SportsCasting supercomp</a> · <a href="https://bleacherreport.com/articles/25435511-world-cup-2026-match-predictions-all-group-fixtures">B/R previsão jogo a jogo</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/mexico/">DefiRate — Kalshi/Polymarket</a> · <a href="https://www.kucoin.com/news/flash/polymarket-and-kalshi-see-2-billion-in-fifa-world-cup-bets-before-kickoff">Volume de US$2B nos mercados de previsão</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760415">ESPN Odds</a> · <a href="https://www.oddschecker.com/us/soccer/world-cup/mexico-v-south-africa">oddschecker</a> · <a href="https://www.sportsgambler.com/betting-tips/football/mexico-vs-south-africa-prediction-lineups-odds-2026-06-11/">SportsGambler</a> · <a href="https://www.oddsshark.com/soccer/world-cup/mexico-south-africa-odds-picks-2026">OddsShark</a> · <a href="https://www.livescore.com/en/news/football/world-cup/predictions/mexico-vs-south-africa-predictions-co-hosts-to-claim-win-in-world-cup-opener/">LiveScore</a> · <a href="https://www.nysportsday.com/2026/06/08/chatgpt-claude-gemini-mexico-vs-south-africa-predictions-world-cup-2026/">NYSportsDay — Painel com 3 IAs</a> · <a href="https://www.natesilver.net/p/world-cup-2026-odds-predictions">Nate Silver</a></div>
+  </section>
+
+  <!-- ===== 2 ESCALAÇÃO E FORMA ===== -->
+  <section>
+    <h2><span class="n">2</span> Escalação &amp; Forma Recente <span class="tag">versão prevista — veja o módulo oficial ✅ acima</span></h2>
+    <div class="sub">Escalação prevista (projeção analítica, não oficial) · Valor de mercado e forma — jogadores-chave detalhados</div>
+
+    <h4>🇲🇽 México — Escalação prevista (4-2-3-1, esquema do último amistoso de Aguirre)</h4>
+    <div class="lineup">Rangel; Sánchez · Montes · Vásquez · Gallardo; Álvarez · Romo; Alvarado · Fidalgo · Huerta; Jiménez</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição</th><th>Clube</th><th>Valor</th><th>Forma / Obs.</th></tr>
+      <tr><td class="mx">Raúl Jiménez</td><td>Centroavante</td><td>Fulham</td><td>€5,0m</td><td>Finalizador mais confiável do time; 4 gols na fase final da Nations League 2025; principal cobrador de falta e pênalti</td></tr>
+      <tr><td class="mx">Julián Quiñones</td><td>Ponta</td><td>Al-Qadsiah</td><td>€12,0m</td><td>Temporada prolífica na Arábia (superou Toney/CR7); melhor em campo contra a Bélgica</td></tr>
+      <tr><td class="mx">Álvaro Fidalgo</td><td>Meio-campo</td><td>América</td><td>€9,0m</td><td>Meia naturalizado; excelente controle de jogo na janela de março; deve ser titular</td></tr>
+      <tr><td class="mx">Edson Álvarez</td><td>Volante / Capitão</td><td>Fenerbahçe</td><td>€25,0m</td><td>Maior valor do elenco; <b>saudável e mantém a braçadeira</b>, âncora do duplo-volante no 4-2-3-1</td></tr>
+      <tr><td class="mx">César Montes / J. Vásquez</td><td>Zagueiro</td><td>Lokomotiv / Genoa</td><td>€4,5m / €14m</td><td>Experiência europeia; dupla estável</td></tr>
+      <tr><td class="mx">Jesús Gallardo</td><td>Lateral-esquerdo</td><td>—</td><td>—</td><td>Um dos mais veteranos do time (100+ jogos); responsável pelos cruzamentos pela esquerda</td></tr>
+      <tr><td class="mx">Raúl Rangel</td><td>Goleiro</td><td>Guadalajara</td><td>—</td><td><b>Malagón fora por lesão</b>; Rangel ascende como principal candidato ao gol (boa atuação nos 2 amistosos de março); escalação sujeita à confirmação oficial</td></tr>
+    </table>
+
+    <h4>🇿🇦 África do Sul — Escalação prevista (4-3-2-1)</h4>
+    <div class="lineup">Williams; Mudau · Okon · Mbokazi · Modiba; Mbatha · Mokoena; Appollis · Mofokeng · Moremi; Foster</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição</th><th>Clube</th><th>Valor</th><th>Forma / Obs.</th></tr>
+      <tr><td class="sa">Lyle Foster</td><td>Centroavante</td><td>Burnley</td><td>€10–12m</td><td>Maior valor do elenco; 10 gols em 24 jogos pela seleção; oscilações de forma são o calcanhar de Aquiles do time</td></tr>
+      <tr><td class="sa">Oswin Appollis</td><td>Ponta</td><td>Orlando Pirates</td><td>€2m</td><td>Mais em evidência; 4 assistências nas eliminatórias (melhor do time); 8 gols pela seleção</td></tr>
+      <tr><td class="sa">Relebohile Mofokeng</td><td>Ponta</td><td>Orlando Pirates</td><td>€2m</td><td>21 anos; o Sub-23 mais caro de África (R68,6m); corajoso no um a um</td></tr>
+      <tr><td class="sa">Teboho Mokoena</td><td>Pivô do meio</td><td>Mamelodi Sundowns</td><td>—</td><td>Conecta ataque e defesa; distribui o jogo + cobra bolas paradas</td></tr>
+      <tr><td class="sa">Mbekezeli Mbokazi</td><td>Zagueiro</td><td>Orlando Pirates</td><td>—</td><td>Pilar defensivo + chute de longa distância de altíssimo nível (golaço de classe mundial contra o Panamá)</td></tr>
+      <tr><td class="sa">Ronwen Williams</td><td>Goleiro</td><td>Mamelodi Sundowns</td><td>—</td><td>Capitão, 60+ jogos; parou 4 pênaltis consecutivos na Copa Africana de 2023 — pode decidir sozinho</td></tr>
+    </table>
+    <div class="note">Observação: "—" em valor indica que o dado preciso não foi obtido nesta versão; o agente de produção complementará automaticamente os valores, clube, minutos/gols/assistências/notas para todos os 26 jogadores via Transfermarkt/FotMob.</div>
+  </section>
+
+  <!-- ===== 3 ANÁLISE DO ELENCO ===== -->
+  <section>
+    <h2><span class="n">3</span> Análise do Elenco</h2>
+    <div class="sub">Profundidade · Estrutura etária · Experiência · Ausências importantes</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇲🇽 México</div>
+        <div class="role">Veteranos + nova geração · 3ª passagem de Aguirre</div>
+        <ul class="cl">
+          <li><b>Experiência</b>: Ochoa pode chegar à sua 6ª Copa (ao lado de Messi/CR7 no recorde); Gallardo com mais de 100 jogos.</li>
+          <li><b>Profundidade</b>: ataque com Jiménez / Quiñones / Alvarado / Lozano / S.Giménez — qualidade e volume esmagadores no grupo.</li>
+          <li><b>Pontos de atenção</b>: goleiro titular Malagón fora por lesão, Rangel assume; lateral-direito lesionado (Huescas); pouco tempo de entrosamento com o time completo (março sem 12 titulares). Álvarez/Montes/Chávez liberados após o último amistoso.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 África do Sul</div>
+        <div class="role">Predominância da Liga Sul-Africana (PSL) + poucos na Europa · Temporada de despedida de Broos</div>
+        <ul class="cl">
+          <li><b>Destaque europeu</b>: Foster (Burnley, Premier League) é o único titular regular em liga de alto nível; os demais vêm de Orlando Pirates / Sundowns.</li>
+          <li><b>Impacto jovem</b>: Mofokeng (21) e Appollis são os gatilhos do contra-ataque pelas faixas.</li>
+          <li><b>Fraqueza</b>: sem finalizador confiável além de Foster; rotatividade na lateral-esquerda; valor total 1/4 do México — desvantagem enorme em duelo aberto.</li>
+          <li><b>Episódio</b>: problemas de visto para entrada no México atrasaram a chegada, perturbando parte da preparação.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4 ESTILO TÁTICO ===== -->
+  <section>
+    <h2><span class="n">4</span> Estilo Tático &amp; Confronto Direto</h2>
+    <div class="sub">Formação · Estrutura de ataque/defesa · Duelos diretos</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Perfil geral de força (avaliação composta do analista, 0–10)</h5><canvas id="radarChart"></canvas></div>
+      <div>
+        <h4 style="margin-top:0">Duelos-chave</h4>
+        <ul class="cl">
+          <li><b>Posse do México vs bloco baixo da África do Sul</b>: México sai do fundo, Quiñones/Alvarado tentam romper pelas faixas; a África do Sul fecha no <b>5-3-2</b> confirmado (mais conservador do que o previsto), Mokoena varrendo pelo centro.</li>
+          <li><b>Contra-ataque da África do Sul vs transição do México</b>: a escalação oficial muda para a dupla Rayners+Foster de bola longa e segunda bola, com Appollis/Mofokeng guardados como cartas para os 60 minutos; o México precisa fechar a retranca no momento da perda da bola.</li>
+          <li><b>Bolas paradas</b>: ambos os times dependem das bolas paradas para romper defesas compactas — é a forma mais realista de marcar nesse roteiro de poucos gols.</li>
+        </ul>
+      </div>
+    </div>
+    <details>
+      <summary>Expandir: detalhes táticos de cada equipe</summary>
+      <div class="body">
+        <h4>🇲🇽 México 4-3-3</h4>
+        <p style="font-size:14px">O sistema de Aguirre enfatiza <b>saída de bola pelo fundo + transição rápida + disciplina defensiva</b>; Edson Álvarez (quando saudável) como volante âncora, controlando o ritmo e protegendo a linha. Jogar em casa + altitude historicamente favorece o México contra adversários europeus/asiáticos. Fraqueza: erros de saída de bola sob pressão intensa; queda de ritmo no 2º tempo após as substituições.</p>
+        <h4>🇿🇦 África do Sul 4-3-2-1 <span class="tag">projeção pré-jogo; o esquema oficial é 5-3-2 — ver módulo ✅ acima</span></h4>
+        <p style="font-size:14px">Broos preza por <b>identidade coletiva, bloco defensivo compacto + contra-ataque rápido + bolas paradas</b>; Williams é a âncora da linha de gol, Mbokazi uma carta na manga no chute de longe. O problema é a eficiência de finalização — em março contra o Panamá, desperdiçou várias chances claras.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ===== 5 TREINADORES ===== -->
+  <section>
+    <h2><span class="n">5</span> Estilo dos Treinadores</h2>
+    <div class="sub">Filosofia de treino · Tendências táticas · Gestão durante o jogo</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">Javier Aguirre</div>
+        <div class="role">México · 3ª passagem (treinador veterano)</div>
+        <ul class="cl">
+          <li>Taticamente <b>versátil</b>, difícil de antecipar para os adversários (já usou 5-3-2/3-5-2 em clubes, na seleção estabeleceu o 4-3-3).</li>
+          <li>Núcleo: equilíbrio em vez de espetáculo; saída de bola pelo fundo; mudança de sistema conforme o placar/adversário.</li>
+          <li>Histórico recente: conquistou Liga das Nações CONCACAF 2025 + Gold Cup desde que assumiu, reconstruindo a identidade da seleção.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">Hugo Broos</div>
+        <div class="role">África do Sul · Mestre belga de 74 anos · Temporada de despedida</div>
+        <ul class="cl">
+          <li>Frase famosa: "Gosto de futebol ofensivo, não vou me recolher a 60 metros do gol para contra-atacar" — mas na prática o modelo ainda se baseia em <b>defesa sólida + contra-ataque eficiente + bolas paradas</b>.</li>
+          <li>Prioriza <b>identidade e estilo uniformes</b> para o time; coletivo acima do individual (dispensa grandes nomes sem hesitar).</li>
+          <li>Currículo: levou Camarões ao título da Copa Africana de 2017; levou África do Sul ao 4º lugar na Copa Africana de 2023.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6 ÁRBITRO ===== -->
+  <section>
+    <h2><span class="n">6</span> Árbitro &amp; Contexto de Arbitragem</h2>
+    <div class="sub">Wilton Sampaio: rigor quantificado · tendência para cada equipe · padrão de arbitragem em grandes jogos — dados com fontes</div>
+    <div class="note">✅ <b>Confirmado (08/06)</b>: árbitro da abertura é o <b>brasileiro Wilton Sampaio (44 anos)</b>, assistentes Bruno Pires e Bruno Boschilia (ambos brasileiros), VAR o colombiano Nicolás Gallo. Apitou 4 jogos na Copa de 2022 (incluindo a quartas de final Inglaterra vs França).</div>
+
+    <h4>Perfil de rigor (dados)</h4>
+    <div class="grid3">
+      <div class="stat"><div class="k">Cartões amarelos / jogo (311–341 jogos de carreira)</div><div class="v" style="color:var(--warn)">≈5,0</div><div class="k">Temporada atual: 33 jogos — 5,27 + 8 vermelhos</div></div>
+      <div class="stat"><div class="k">Taxa de pênaltis</div><div class="v" style="color:var(--warn)">0,22–0,24/jogo</div><div class="k">Pênalti marcado em ~19–24% dos jogos</div></div>
+      <div class="stat"><div class="k">Faltas apitadas / jogo</div><div class="v" style="color:var(--warn)">≈27,9</div><div class="k">Apito frequente · Vermelho em ~16% dos jogos</div></div>
+    </div>
+    <table>
+      <tr><th>Dimensão</th><th>Dados / Fatos</th><th>Impacto neste jogo</th></tr>
+      <tr><td>Padrão doméstico (Brasileirão)</td><td>5,3 amarelos/jogo, 27,9 faltas/jogo, 0,29 pênaltis/jogo — <b>um dos mais rígidos no Brasileirão</b></td><td>Nesse padrão: o custo para a África do Sul "acumular faltas táticas para quebrar o ritmo" seria altíssimo; os cartões acumulados também afetam as rodadas seguintes do grupo</td></tr>
+      <tr><td>Padrão em grandes torneios (Copa 2022)</td><td>Apenas <b>3,33 amarelos/jogo</b> em 4 partidas — redução notável; <b>não marcou pênalti para Kane derrubado</b> na Inglaterra vs França (VAR manteve); Maguire/Bellingham criticaram publicamente os "erros</td><td>Em grandes jogos tende a "deixar o jogo fluir" — maior tolerância ao contato físico; vai beneficiar a África do Sul nas disputas de bola em bolas paradas e na marcação corporal</td></tr>
+      <tr><td>Histórico com o México</td><td>Apitou o México 1 vez: Copa América do Centenário 2016, <b>México 2-0 Jamaica</b> (este é o 2º jogo); nunca apitou a África do Sul</td><td>Amostra pequena, <b>sem tendência comprovável para alguma equipe</b> — julgamento de tendência deve ser baseado no estilo, não no histórico</td></tr>
+      <tr><td>Tendência geral (combinada)</td><td>Árbitro sul-americano + 87.000 torcedores em casa. A literatura acadêmica documenta amplamente o "viés de arbitragem para o time da casa" (tempo extra, cartões, pênaltis) — é um desvio sistêmico pequeno, não um problema individual</td><td>Decisões de 50/50 tendem a favorecer o anfitrião; combinado à taxa de pênaltis de 19–24% e à pressão do México na área adversária, <b>a probabilidade de pênalti para o México fica duplamente elevada</b> (Jiménez seria o cobrador)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Duas faces da moeda</b>: a arbitragem não é má notícia total para a África do Sul — se Sampaio usar o padrão de grandes torneios ("deixa o jogo fluir"), o duelo físico e a marcação intensa sul-africana serão menos punidos; o verdadeiro risco de cauda é ele <b>retornar ao padrão rigoroso do Brasileirão</b> — nesse caso, a África do Sul, que depende de faltas táticas como ferramenta de sobrevivência, pode ter 2–3 amarelos em 20 minutos e ser forçada a recuar ainda mais cedo. Fique de olho no tratamento da primeira falta tática nos 15 minutos iniciais — é o termômetro da arbitragem do dia.</div>
+    <div class="src" style="margin-top:8px">Fontes: <a href="https://kickoffscore.com/referees/wilton-pereira-sampaio">KickoffScore — dados de carreira/temporada atual</a> · <a href="https://www.statshub.com/referee/pereira-sampaio-wilton/243701">StatsHub — 5,08 amarelos/jogo</a> · <a href="https://corner-stats.com/wilton-pereira-sampaio/brazil/referee/1624">Corner-Stats — pênaltis/vermelhos</a> · <a href="https://www.nationalworld.com/sport/football/wilton-sampaio-who-england-vs-france-referee-french-world-cup-games-3949736">NationalWorld — Copa 2022</a> · <a href="http://law5-theref.blogspot.com/2022/12/wilton-sampaio-in-quarterfinal-england.html">Law5 — Revisão da arbitragem Inglaterra vs França</a> · <a href="https://www.gettyimages.com/detail/news-photo/referee-wilton-sampaio-in-actionduring-a-group-c-match-news-photo/539157100">Copa América do Centenário 2016 México vs Jamaica</a></div>
+    <h4>Novas regras de arbitragem desta edição (impacto nesta partida)</h4>
+    <ul class="cl">
+      <li><b>8 segundos para o goleiro segurar a bola</b>: se ultrapassar, cobrança de falta indireta na área — reduz o espaço para o goleiro ganhar tempo.</li>
+      <li><b>5 segundos para tiro lateral/tiro de meta</b>: se ultrapassar, a bola passa para o adversário — também prejudica o "jogo lento para segurar o resultado".</li>
+      <li><b>Somente o capitão pode falar com o árbitro</b>: outros jogadores que cercarem o árbitro recebem amarelo — controle emocional ainda mais importante.</li>
+      <li><b>Sistema semiautomático de impedimento aprimorado</b>: sensor na bola + modelagem 3D dos jogadores; decisões de impedimento mais rápidas e precisas.</li>
+      <li><b>Regras de substituição/tratamento mais rígidas</b>: jogador substituído deve sair em 10 segundos; jogador que recebeu atendimento deve ficar fora pelo menos 1 minuto.</li>
+    </ul>
+    <div class="note">Impacto geral: as novas regras <b>reduzem a perda de tempo e recompensam o ataque contínuo</b>, o que favorece relativamente o México — que tem maior posse e quer controlar o ritmo; para a África do Sul, que quer "fechar o time + consumir tempo" para conquistar um resultado positivo, o regulamento eleva ainda mais a dificuldade.</div>
+  </section>
+
+  <!-- ===== 7 ANÁLISES DO REPÓRTER/ANALISTA ===== -->
+  <section>
+    <h2><span class="n">7</span> Repórteres de campo / Análises de especialistas</h2>
+    <div class="sub">Distinguindo "fatos de primeira mão" de "opiniões analíticas", com classificação de fonte</div>
+    <div class="insight"><div class="who">RotoWire · Pierre Courtin <small>· Nível B — análise tática · raspagem de site</small></div>"O México vai vencer o grupo sem dúvida; a vantagem de jogar em casa + altitude não é totalmente quantificada pelas odds; a África do Sul pode incomodar por ~30 minutos, depois qualidade e ambiente começam a falar mais alto."</div>
+    <div class="insight"><div class="who">Tom Marshall · ESPN <small>· Nível A — repórter de campo (sediado na Cidade do México)</small></div>Usado para confirmar escalação do México, a disputa pelo gol (Rangel/Malagón) e informações duras sobre a situação de Álvarez.</div>
+    <div class="insight"><div class="who">iDiski Times / SuperSport <small>· Nível A/C — mídia sul-africana de campo</small></div>Usado para escalação da África do Sul, situação de Foster/Appollis e o episódio dos vistos.</div>
+    <div class="insight"><div class="who">FIFA Technical Study Group <small>· Oficial · liderado por Wenger com análise jogo a jogo</small></div>Revisão tática autorizada pós-jogo, usada como insumo para a próxima previsão.</div>
+  </section>
+
+  <!-- ===== 8 CONCLUSÃO ===== -->
+  <section>
+    <h2><span class="n">8</span> Conclusão &amp; Checklist de Verificação</h2>
+    <ul class="cl">
+      <li><b>Conclusão final (atualizada após o anúncio): ✅ mantida e reforçada</b> — as duas escalações oficiais (México com meio-campo de posse no 4-3-3, África do Sul com ônibus 5-3-2) dobram a aposta no roteiro de "poucos gols + vitória apertada do México"; a única variável nova é o risco na transição defensiva com Álvarez no banco.</li>
+      <li><b>Tendência de resultado</b>: vitória do México, placar conservador (1-0 / 2-0); a janela de surpresa sul-africana desloca-se dos minutos iniciais para depois dos 60 minutos, com as entradas de Zwane/Mofokeng.</li>
+      <li><b>Jogador decisivo</b>: Jiménez (México/pivô + bolas paradas), Williams (África do Sul/goleiro capaz de mudar o jogo sozinho).</li>
+      <li><b>Fator X</b>: altitude impactando o condicionamento físico da África do Sul (atletas do nível do mar + Europa); possível queda de rendimento do México no 2º tempo.</li>
+      <li><b>Mercado</b>: vitória do México + Menos de 2,5 é o roteiro principal; se a África do Sul sair sem perder por muito (derrota pequena ou empate), já é um êxito.</li>
+    </ul>
+    <div class="flag">
+      ⚠ <b>Checklist de verificação (itens para cruzamento)</b>:<br>
+      ① Goleiro — <b style="color:#4ade80">✅ resolvido: Rangel confirmado como titular</b>, Ochoa no banco (o recorde da sexta Copa fica em espera).<br>
+      ② <b style="color:#4ade80">✅ Escalações oficiais publicadas e verificadas em duas fontes (ver módulo ✅)</b>: México 4-3-3 (não o 4-2-3-1 previsto; Álvarez no banco), África do Sul 5-3-2 (não o 4-3-2-1 previsto).<br>
+      ③ Árbitro confirmado: <b>Wilton Sampaio (Brasil)</b>.<br>
+      ④ Dados de xG da África do Sul são limitados (fora do sistema CONCACAF); versão de produção deve integrar dados de jogos internacionais do FBref/Understat.
+    </div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369">RotoWire — Grupo A: táticas/escalação/odds (raspagem de site)</a><br>
+      • <a href="https://footystats.org/international/concacaf-gold-cup/xg">FootyStats — Gold Cup xG (México 2,41/0,85)</a> · <a href="https://www.transfermarkt.us/mexico/startseite/verein/6303">Transfermarkt — México €194,6m</a> · <a href="https://www.transfermarkt.us/south-africa/kader/verein/3806">Transfermarkt — África do Sul €52,7m</a><br>
+      • <a href="https://www.transfermarkt.us/lyle-foster/profil/spieler/467623">Transfermarkt — Lyle Foster</a> · <a href="https://www.kickoff.com/psl/orlando-pirates/where-appollis-and-mofokeng-rank-in-highest-valued-players-in-psl">KickOff — Valor de mercado de Appollis/Mofokeng</a><br>
+      • <a href="https://www.theifab.com/news/the-ifab-introduces-further-measures-to-improve-match-flow-and-player-behaviour/">IFAB — Novas regras de arbitragem 2026</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Árbitros da Copa do Mundo 2026</a><br>
+      • <a href="https://www.mykhel.com/cricket/mexico-fifa-world-cup-2026-tactics-how-javier-aguirre-s-4-3-3-shapes-el-tri-s-identity-430709.html">Táticas de Aguirre</a> · <a href="https://www.news24.com/sport/soccer/bafanabafana/no-favouritism-attacking-football-with-results-hugo-broos-outlines-bafana-bafana-philosophy-20210511">Filosofia de Broos</a> · <a href="https://www.aljazeera.com/sports/2026/5/31/south-africas-world-cup-2026-departure-delayed-over-mexican-visa-debacle">Caso dos vistos da África do Sul</a>
+    </div>
+  </section>
+
+  <div class="foot">"Cadastro de fontes → coleta de dados (busca online + raspagem web) → análise" · amostra completa · Dados até 11/06/2026 · Gráficos baseados em dados verificados; gráfico de radar é avaliação composta do analista · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',MX='#16a34a',SA='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['México','África do Sul'],datasets:[{data:[194.6,52.7],backgroundColor:[MX,SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ milhões'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('xgChart'),{type:'bar',
+ data:{labels:['xG médio (ataque)','xGA médio (defesa)'],datasets:[{data:[2.41,0.85],backgroundColor:['#34d27b','#38bdf8'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:3,title:{display:true,text:'Gold Cup 2025 · Maior=ataque forte/defesa vazada'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('oddsChart'),{type:'doughnut',
+ data:{labels:['México vence','Empate','África do Sul vence'],datasets:[{data:[63.7,21.8,14.5],backgroundColor:[MX,DR,SA],borderColor:'#161d2e',borderWidth:2}]},
+ options:{plugins:{legend:{position:'bottom'}},cutout:'58%'}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['México','Tchéquia','Coreia do Sul','África do Sul'],datasets:[{data:[52,24,22,8],backgroundColor:[MX,'#7dd3fc','#a78bfa',SA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Prob. implícita liderança do grupo %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('mktChart'),{type:'bar',
+ data:{labels:['bet365 sem vig (08/06)','Supercomp modelo','Polymarket (10/06)','Kalshi/Gemini (10/06)','DraftKings (10/06)'],datasets:[{data:[63.7,67.7,68.5,69.5,69.5],backgroundColor:['#64748b','#7dd3fc','#a78bfa','#c4b5fd',MX],borderRadius:6}]},
+ options:{...noLeg,indexAxis:'y',scales:{x:{grid:{color:grid},min:55,max:75,title:{display:true,text:'Prob. vitória México % · Mais à direita = mercado mais aquecido'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Estabilidade defensiva','Finalização ofensiva','Controle do meio','Bolas paradas','Profundidade do elenco','Ambiente do jogo'],
+  datasets:[
+   {label:'México',data:[8.5,6.5,7.5,7,9,9],borderColor:MX,backgroundColor:MX+'33',pointBackgroundColor:MX},
+   {label:'África do Sul',data:[7,5,6.5,7,4,4],borderColor:SA,backgroundColor:SA+'33',pointBackgroundColor:SA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

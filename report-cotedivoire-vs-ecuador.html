@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 科特迪瓦 vs 厄瓜多尔 · 2026世界杯 E组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-cotedivoire-vs-ecuador.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-cotedivoire-vs-ecuador.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#f7901e;--sc:#ffce00;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a4a0f,#8a6e00);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#21180c,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f7b86a;font-weight:600}td.sc{color:#ffe066;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-cotedivoire-vs-ecuador.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · E组首轮 · 两支防守劲旅的低分较量</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 已完赛 · 科特迪瓦 1-0 厄瓜多尔</span>
+  <h1>科特迪瓦 vs 厄瓜多尔</h1>
+  <div class="meta">2026年6月14日 · 费城 Lincoln Financial Field · 19:00 ET · E组（同组：德国、库拉索）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f7b86a">🇨🇮 科特迪瓦</div><div class="rk">非洲冠军 · CAF预选5胜1平 · 13球进 0球失</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ffe066">🇪🇨 厄瓜多尔</div><div class="rk">南美预选第2（仅次阿根廷） · 18场仅丢5球</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-15） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 科特迪瓦 1-0 厄瓜多尔 · 06-14</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">一场预测中的低比分缠斗。上半场厄瓜多尔反而是更具威胁的一方——John Yeboah、Alan Minda 两度击中横梁，但破门乏术；科特迪瓦同样难破对方铁桶（Wahi 亦中梁）。僵局直到第 90 分钟才被打破：Wilfried Singo 右路突破传中，<b>替补登场的 Amad Diallo（曼联）首触抽射破门</b>，1-0 绝杀。<b>这粒进球终结了厄瓜多尔长达 19 场的不败纪录</b>，也是自 2006 年托蒂绝杀澳大利亚以来世界杯 1-0 比赛中最晚的替补制胜球（89:32）。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 上半场：Yeboah、Minda（厄）中梁 · Wahi（科）中梁 · 90' Amad Diallo（替补，Singo 助攻）</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇮 科特迪瓦</th><th>🇪🇨 厄瓜多尔</th><th>解读</th></tr>
+      <tr><td class="ht">机会质量</td><td colspan="2">双方均为低 xG；厄瓜多尔上半场创造更多威胁（两中梁）</td><td>"两支顶级防守球队"判断成立，全场机会稀少、质量分散</td></tr>
+      <tr><td class="ht">门框</td><td>1（Wahi）</td><td><b>2（Yeboah、Minda）</b></td><td>厄瓜多尔运气欠佳，是更接近进球的一方却空手而归</td></tr>
+      <tr><td class="ht">制胜方式</td><td colspan="2">Singo 边路突破 + Amad 替补首触抽射</td><td>科特迪瓦靠个人能力 + 边路爆点解题，符合赛前"边路 1v1 是最锋利武器"判断</td></tr>
+      <tr><td class="ht">防守纪录</td><td colspan="2">科特迪瓦延续零封（CAF 预选 13-0 之后再添一场）</td><td>非洲冠军的防守结构在世界杯级对手前依旧稳固</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/ivory-coast-vs-ecuador-stats-world-cup-2026">Opta Analyst — Ivory Coast 1-0 Ecuador Stats</a> · <a href="https://www.espn.com/soccer/story/_/id/49064087/ivory-coast-ecuador-live-world-cup-2026-latest-updates-commentary-score-result">ESPN 战报</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">边路 1v1 + 板凳爆点是科特迪瓦的破密集答案</div>赛前点名"Amad / Adingra 面对三中卫边翼空当"是最锋利武器，制胜球正是 Singo 边路突破 + Amad 抽射。<b>说明面对结构型铁桶，科特迪瓦的解题方式是边路个人能力 + 替补奇兵</b>——这是可复制路径，但也意味着阵地战渗透仍偏弱。</div>
+    <div class="insight"><div class="who">厄瓜多尔"难攻不下"但"破门更难"</div>Beccacece 的铁桶让科特迪瓦全场难有良机，自身上半场反而两中梁。<b>说明厄瓜多尔的防守结构世界级，但进攻终结力是真实短板</b>——把握机会能力不足，让"该进的没进"成为输球主因。</div>
+    <div class="insight"><div class="who">低比分对话里"谁先冒险/谁有奇兵"决定胜负</div>赛前判断"谁先打破僵局谁承担风险"，实际是科特迪瓦在最后时刻用替补打破平衡。<b>说明在两强相持的闷局中，板凳深度与临场变招（Amad 替补）是分水岭</b>，而非阵型层面的胜负。</div>
+    <div class="insight"><div class="who">运气与门框：结果与过程存在偏差</div>厄瓜多尔两中梁、是更接近进球的一方，却 0 分离场。<b>说明本场比分（1-0）夸大了科特迪瓦的实际优势</b>——过程接近五五，结果由一次个人闪光决定。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">基准 0-0/1-1/一球小胜，偏小球</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>1-0 一球小胜 + 小球，剧本几乎完全命中</td></tr>
+      <tr><td class="ht">边路 1v1（Amad/Adingra）是最锋利武器</td><td style="color:var(--good)"><b>✓ 精准</b></td><td>制胜球正是 Singo 边路突破 + Amad 终结，临场判断高质量兑现</td></tr>
+      <tr><td class="ht">两队都不怕平、谁先冒险担风险</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>僵持到 90' 才由替补打破，过程吻合</td></tr>
+      <tr><td class="ht">定位球可能是分水岭</td><td style="color:var(--warn)"><b>~ 偏差</b></td><td>分水岭来自运动战边路突破，非定位球；方向（一次闪光定胜负）对</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f7b86a">🇨🇮 科特迪瓦 · 下一场 vs 德国（6/20 多伦多）</h4>
+        <ul class="watch">
+          <li><b>零封延续 + 绝杀士气</b>：防守结构稳固、Amad 状态火热——但对手从厄瓜多尔升级为火力爆表的德国（7-1），守强的科特迪瓦将迎来本组真正考验，E 组头名直接对话。</li>
+          <li><b>边路爆点是反击希望</b>：德国后防大胜后有松懈先例，Amad/Adingra/Singo 的边路速度正是德国零封中断的那类隐患。</li>
+          <li><b>阵地战渗透偏弱的隐患</b>：若德国控球压制，科特迪瓦能否从被动中创造机会是问号。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffe066">🇪🇨 厄瓜多尔 · 下一场 vs 库拉索（6/20 堪萨斯城）</h4>
+        <ul class="watch">
+          <li><b>不败纪录终结但防守仍在线</b>：输球非防守崩盘而是终结乏力——对库拉索（被德国灌 7 球的最弱防线）正是找回进球的良机。</li>
+          <li><b>必须解决把握机会问题</b>：两中梁却 0 进球的终结短板，对库拉索须转化为实际进球，否则恐再陷闷局。</li>
+          <li><b>抢分压力</b>：首轮失利后，对小组最弱的库拉索是必须拿下的 3 分，预计主动控场强攻。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>两支顶级防守球队</b>的对撞，几乎所有量化源都指向"低比分、平局或一球小胜"的剧本。科特迪瓦近期状态火热：最近5场赢3场，包括<b>6月4日2-1击败法国</b>、4-0横扫韩国，CAF预选赛5胜1平、13球进0球失横扫小组；阵容深度（Sangaré、Kessié、Amad、Adingra、Singo、Ndicka）整体高出一档。厄瓜多尔在<b>南美预选拿第2（仅次阿根廷）</b>，18场只丢5球，主帅 Beccacece 把球队打造成极难攻破的结构型铁桶；近5场也赢3场，6月7日3-0胜危地马拉。盘口三方接近——市场把这当成"先看数据与战术再决定"的一场。基准剧本：<b>0-0 / 1-1 / 一球小胜</b>，偏小球。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">厄瓜多尔预选失球</div><div class="v" style="color:#ffe066">18场5球</div></div>
+      <div class="key"><div class="k">科特迪瓦预选失球</div><div class="v" style="color:#f7b86a">0</div></div>
+      <div class="key"><div class="k">科特迪瓦出线概率</div><div class="v" style="color:#f7b86a">78%</div></div>
+      <div class="key"><div class="k">厄瓜多尔出线概率</div><div class="v" style="color:#ffe066">89%</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>中场缠斗</b>：Caicedo 切断 Kessié/Sangaré 到前场三叉戟的供给线——这是全场战术核心。</li>
+      <li><b>边路1v1</b>：Amad Diallo 与 Adingra 面对厄瓜多尔三中卫的边翼空当，是科特迪瓦最锋利的武器。</li>
+      <li><b>谁先冒险</b>：两队都不怕踢成平局，谁先打破"互相尊重"的僵局谁就承担风险。</li>
+      <li><b>定位球</b>：低比分对话里，一次任意球/角球往往就是分水岭——双方都有高点。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#211a0c,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">科特迪瓦 · 状态火热 <span style="color:var(--mut);font-weight:400">· 06月多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">热身击败法国（2-1）、横扫韩国（4-0）；预选赛阶段 13 球进 0 球失，<b>带着零失球的防线进入世界杯</b></div>
+      <p style="font-size:13.5px">科特迪瓦最近5场赢3场，含一场被广泛报道的 2-1 胜法国、4-0 胜韩国。2023年非洲杯夺冠后的预选赛阶段他们多场比赛保持零封，整组13球进0球失。预测首发为 4-3-3：Y. Fofana 把门，Singo / Kossounou / Ndicka / Konan 组成后防，Kessié / Sangaré / S. Fofana 中场，Amad Diallo / Guessand / Adingra 前场。边锋人选（Adingra vs 其他）是主帅 Faé 的临场抉择。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：能在热身赛掀翻法国，说明这支科特迪瓦的强度天花板足以应付任何对手；零失球的防线意味着即便进攻被厄瓜多尔的铁桶卡住，他们也能稳住后场不送礼——这正是把比赛拖入低分僵局的资本。<span style="color:var(--warn)">[逐人伤情以赛前官方名单为准·待核]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/predicted-lineups/winger-dilemma-for-fae-predicted-ivory-coast-lineup-vs-ecuador_599037.html" style="color:var(--accent)">Sports Mole — 科特迪瓦预测首发</a> · <a href="https://www.skysports.com/football/news/12098/13543089/world-cup-2026-group-e-guide-fixtures-schedule-standings-and-odds-for-germany-curacao-ivory-coast-and-ecuador" style="color:var(--accent)">Sky Sports — E组指南</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">厄瓜多尔 · 铁桶就位 <span style="color:var(--mut);font-weight:400">· 预测首发</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">南美预选 18 场仅丢 5 球；6月7日 3-0 胜危地马拉；Beccacece 的 <b>三中卫结构极难攻破</b></div>
+      <p style="font-size:13.5px">厄瓜多尔以南美区第2（仅次阿根廷）出线，18场只丢5球是全大洲最佳防守之一。近5场赢3场。预测首发为 3-4-3：Galíndez；Pacho / F. Torres / Hincapié 三中卫；Preciado / Caicedo（队长）/ A. Franco / Estupiñán 中场与翼卫；Plata / Valencia / Páez 前场。Valencia 的首发/出场角色是热议点（<b>待核</b>）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Pacho（巴黎圣日耳曼）、Hincapié、Caicedo（切尔西）构成的防守中轴是欧洲顶级配置——这不是"南美中游"，而是结构纪律极强的硬骨头。三中卫体系能用人数压住科特迪瓦的边路1v1，但翼卫身后的空当正是 Amad/Adingra 想冲的点。这场低分预期的核心，就是厄瓜多尔的结构能否封死科特迪瓦的边路爆点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/valencia-decision-for-la-tri-predicted-ecuador-lineup-vs-ivory-coast_599039.html" style="color:var(--accent)">Sports Mole — 厄瓜多尔预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49029367/fifa-world-cup-2026-ivory-coast-vs-ecuador-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 预测首发/队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">赛事背景 · 出线含义 <span style="color:var(--mut);font-weight:400">· E组格局</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">德国是 E 组头名大热——这场实质是<b>争小组第二（晋级附加位）</b>的关键直接对话</div>
+      <p style="font-size:13.5px">E组四队为德国、库拉索、科特迪瓦、厄瓜多尔。普遍认为德国领跑，因此本场被视为两支"出线候选"之间的提前对决——胜者在出线主动权上领先一大步。预测市场给科特迪瓦78%出线/14%夺组，厄瓜多尔89%/23%。费城本场为晚间开球，无极端天气信息。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：当两队都把德国默认成"丢分对象"时，彼此之间的这3分价值被放大——这往往让首战更谨慎、更不愿冒险，进一步压低进球预期。一场平局对两队都"可接受但不理想"，心理上没有谁被逼着大举压上。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E" style="color:var(--accent)">Wikipedia — 2026世界杯E组</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/" style="color:var(--accent)">Squawka — 出线概率/预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 临阵换人 <span style="color:var(--mut);font-weight:400">· FIFA 确认</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">原定 Michael Oliver 因伤退出，改由法国 <b>François Letexier</b> 执法（欧洲杯2024决赛、2025-26欧联杯决赛主裁，世界杯首秀）</div>
+      <p style="font-size:13.5px">FIFA 确认英格兰 Oliver 因小伤退出，由法国名哨 <b>Letexier</b>（37岁）顶替，助理为同胞 Mugnier、Rahmouni。Letexier 履历极硬：欧洲杯2024决赛（西班牙vs英格兰）、2025-26欧联杯决赛主裁，但这是他的<b>世界杯首秀</b>。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：以<b>最近1届大赛实际执法</b>看——欧洲杯2024他执法3场，<b>0点球、0红牌、仅10黄</b>，并果断对 Mitrović 的禁区假摔出牌。画像="放比赛流动、慎判点、对假摔零容忍"，利于这场低分对抗按计划进行而非被哨声打碎。<b>两面提醒</b>：与科特迪瓦、厄瓜多尔<b>均无执法样本</b>，且世界杯首秀尺度未知，牌/点盘缺乏直接依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://worldsoccertalk.com/amp/world-cup/ivory-coast-vs-ecuador-who-will-be-the-referee-for-the-2026-world-cup-group-e-match/" style="color:var(--accent)">World Soccer Talk — 换裁确认</a> · <a href="https://www.foxsports.com/articles/soccer/french-referee-francois-letexier-picked-to-handle-spainengland-final-of-euro-2024" style="color:var(--accent)">FOX — Letexier 欧洲杯决赛执法</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">预选失球 · 1X2 隐含概率（去水） · 出线概率 — 图表均为已核实/已标注来源数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>预选阶段失球对比（越低越强）</h5><canvas id="defChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（赔率去水，估算）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>出线概率（预测市场 Kalshi）</h5><canvas id="qualChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇮 科特迪瓦</th><th>🇪🇨 厄瓜多尔</th></tr>
+      <tr><td>晋级之路</td><td class="ht">CAF预选 5胜1平 · 13球进 0球失</td><td class="sc">CONMEBOL 第2（仅次阿根廷）· 18场仅丢5球</td></tr>
+      <tr><td>近5场</td><td class="ht">赢3场（2-1胜法国、4-0胜韩国）</td><td class="sc">赢3场（6/7 3-0胜危地马拉）</td></tr>
+      <tr><td>核心标签</td><td class="ht">非洲冠军 · 阵容深度优势</td><td class="sc">结构纪律 · 极难攻破</td></tr>
+      <tr><td>1X2 赔率（bet365）</td><td class="ht">3.60（隐含≈28%）</td><td class="sc">2.37（≈42%）· 平 2.80（≈36%）</td></tr>
+      <tr><td>出线概率（Kalshi）</td><td class="ht">78% 晋级 / 14% 夺组</td><td class="sc">89% 晋级 / 23% 夺组</td></tr>
+      <tr><td>主帅</td><td class="ht">Emerse Faé</td><td class="sc">Sebastián Beccacece</td></tr>
+      <tr><td>市场画像</td><td colspan="2" class="sc">三方接近、偏小球；共识=低比分、平局或一球小胜</td></tr>
+    </table>
+    <div class="note">📌 隐含概率为 bet365 美式赔率（CIV +260 / 平 +180 / ECU +137）换算后估算（约 28 / 36 / 42，含水分约6pp）。不同信源在三方排序上略有差异（部分把厄瓜多尔列为微弱热门），但一致指向"接近三平"。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">三方近乎持平、情绪干净：没有狂热叙事，胜负更多看数据与战术</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 三方近平 + 情绪干净 + 无狂热</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">两支防守强队、低进球预期、没有故事性流量爆点——市场不偏不倚，价格反映的是真实的"难分高下"，应回到数据与战术层面定夺。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：厄瓜多尔/平 偏多 · 科特迪瓦少数 · 普遍偏小球）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Yahoo Sports</td><td>预测媒体</td><td>厄瓜多尔微弱热门（+145）；平局是热门选项</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>低比分、接近三平</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>谨慎的平局/一球小胜</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>偏小球、价值在平局/双方都不丢球</td></tr>
+      <tr><td>compare.bet</td><td>赔率聚合</td><td>三方接近、Under 倾向</td></tr>
+      <tr><td>RotoWire</td><td>战术媒体</td><td>结构对抗、进球稀少</td></tr>
+    </table>
+    <div class="flag">⚠ <b>方向统计</b>：押科特迪瓦取胜的少数，押厄瓜多尔/平局的偏多，但分歧不大；几乎所有源都<b>偏向小球（Under 2.5）</b>。没有一边倒的"必胜"叙事，这反而提高了平局型与小比分的可信度。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（三方收紧但无单边狂奔，DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>科特迪瓦 / 平 / 厄瓜多尔</th><th>解读</th></tr>
+      <tr><td>开档</td><td>综合</td><td>≈2.35 / 3.10 / 2.50</td><td>三方接近，厄瓜多尔微贵</td></tr>
+      <tr><td>06-13</td><td>bet365</td><td class="sc">3.60 / 2.80 / 2.37</td><td>平局收紧、厄瓜多尔成微弱热门</td></tr>
+      <tr><td>06-13</td><td>Kalshi（隐含）</td><td>28% / 34% / 41%</td><td>预测市场也把厄瓜多尔列前，但优势有限</td></tr>
+    </table>
+    <div class="note">📌 <b>变动温和</b>：价格向"平局 + 厄瓜多尔微弱领先"小幅收紧，无单边资金狂奔迹象。bet365 与 Kalshi 在排序上一致（厄＞平＞科），差异在量级而非方向，属健康的低热度盘。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：单场胜负价 科特迪瓦 28% / 平 34% / 厄瓜多尔 41%；出线市场 科特迪瓦 78%、厄瓜多尔 89%。</li>
+      <li><b>Polymarket / DeFi 类</b>：本场单独市场的实时价格与成交量未检得（<b>待核</b>）——加密预测盘对小众世界杯单场覆盖有限。</li>
+      <li><b>舆论</b>：讨论集中在"两套防守体系谁更硬"与 Caicedo 对科特迪瓦中场的拦截，几乎没有情绪化或对立叙事；社媒声量平稳、偏专业向。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场"盘冷、料硬"的对话——市场没有给出任何情绪溢价，价格干净地反映了两队实力接近、进球稀少的现实。被忽略的口袋更可能在 <b>小球 / 平局 / 双方都不进球</b> 一侧，而非任何一方的大胜。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://sports.yahoo.com/articles/c-te-d-ivoire-vs-165408059.html">Yahoo Sports</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/">Squawka</a> · <a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/preview/ivory-coast-vs-ecuador-prediction-team-news-lineups_599029.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ivory-coast-vs-ecuador-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aOFLB3P6BDFL/">Racing Post</a> · <a href="https://www.compare.bet/news/cote-divoire-vs-ecuador-betting-preview-predictions-tips-and-live-odds">compare.bet</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-e-preview-germany-curacao-ivory-coast-ecuador-tactics-lineups-set-pieces-odds-109286">RotoWire</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">两条铁桶防线＋低进球剧本，角球数被压低概率高；让分接近平手，大小球技术面偏小。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table>
+      <tr><th>维度</th><th>🇨🇮 科特迪瓦</th><th>🇪🇨 厄瓜多尔</th><th>含义</th></tr>
+      <tr><td>角球来源（打法）</td><td class="ht">边路 1v1＋传中（Amad/Adingra）受阻→转角球</td><td class="sc">中路内收、少走两翼，主动获角少</td><td>科特迪瓦"造角"手段更多，厄瓜多尔结构内收不刷角球</td></tr>
+      <tr><td>大赛定位球实绩</td><td class="ht">AFCON2023 多次靠定位球（决赛 Kessié 扳平）</td><td class="sc">WC2022/美洲杯以防为主、定位球进攻有限</td><td>科特迪瓦角球转化是真实得分点，厄瓜多尔多被动应对</td></tr>
+      <tr><td>进攻侧重</td><td class="ht">边路 1v1＋传中（Amad/Adingra）</td><td class="sc">中路紧凑＋反击，少走两翼</td><td>科特迪瓦走边＝更多传中被封后的角球来源</td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高点充足、角球可转化</td><td class="sc">三中卫身材好、主防为主</td><td>低分对话里角球＝难得的破局点</td></tr>
+      <tr><td>角球占优倾向</td><td class="ht">略占优（进攻更外扩）</td><td class="sc">略少（结构内收、少传中）</td><td>科特迪瓦更可能在角球数上小幅领先</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>截至赛前，bet365 等主流盘口的角球独立市场尚未完整开出；预测/聚合源给出的参考线集中在 <b>大小球总数 8.5–9.5</b> 一带：Over 7.5 ≈ <b>1.49</b>、Over 8.5 ≈ 20/23（≈ <b>1.87</b>）、Over 9.5 ≈ 6/4（≈ <b>2.50</b>）、Under 12.5 ≈ 1/10（≈ <b>1.10</b>）。<b>角球让分（角球让球）官方未见挂出</b>，按打法画像估算约为 <b>科特迪瓦 -0.5 / -1.0</b>，接近平手盘。<span style="color:var(--warn)">[角球独立盘待开·让分线为估算·待核]</span>（来源：Tips.GG / Racing Post）</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>科特迪瓦进攻更外扩、边路传中多，制造角球上略占优，让分倾向落在科特迪瓦一侧（约 -0.5/-1.0）；但厄瓜多尔结构内收、被迫角球同样少，加上整场预期胶着，<b>角球让分接近平手</b>，技术面没有清晰的一边倒，谨慎对待。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>两条全球顶级防线相撞、共识低比分（基准 0-0 / 1-1 / 一球小胜）——开局阶段成功传中与攻入禁区的次数受限，角球产出自然被压低，<b>技术面偏小（Under）</b>。市场参考线 8.5–9.5 与 Under 12.5 的极短赔（≈1.10）也印证"角球不会太多"的预期。</div>
+    <div class="insight"><div class="who">变量与两面性</div>若比分被打破，落后一方（尤其科特迪瓦凭借 Amad/Adingra 的边路爆点）会加大传中与压上，<b>末段角球可能集中爆发</b>，推高总数；同时，当运动战被对方结构吞掉时，双方都更依赖定位球/角球破局——这两个变量都偏向"上盘风险"，是 Under 倾向的主要对冲点。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://tips.gg/article/ivory-coast-vs-ecuador-betting-odds/">Tips.GG — 角球/全市场</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/ivory-coast-vs-ecuador-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aOFLB3P6BDFL/">Racing Post — 前瞻/盘口</a> · <a href="https://footystats.org/clubs/ivory-coast-national-team-8624">FootyStats — 科特迪瓦</a> · <a href="https://footystats.org/clubs/ecuador-national-team-8628">FootyStats — 厄瓜多尔</a></div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判（执法画像 · 大赛实际口径）</h2>
+    <div class="sub">法国 François Letexier（顶替伤退的 Oliver）· 以最近大赛实际数据为准，不用联赛均值冒充</div>
+    <div class="note">✅ <b>已确认</b>：原定 Michael Oliver 因伤退出，改由法国 <b>François Letexier</b>（37岁）执法，助理 Mugnier、Rahmouni。欧洲杯2024决赛、2025-26欧联杯决赛主裁，<b>世界杯首秀</b>。</div>
+    <table>
+      <tr><th>维度（大赛实际口径）</th><th>画像</th></tr>
+      <tr><td>欧洲杯 2024（最近一届大赛）</td><td>执法 3 场：<b>0 点球、0 红牌、10 黄</b>（≈3.3/场）；对 Mitrović 禁区假摔果断出牌</td></tr>
+      <tr><td>判点倾向</td><td>慎判、重 VAR 复核；大赛中未送软点</td></tr>
+      <tr><td>犯规/牌尺度</td><td>鼓励比赛流动、容忍合理对抗；红牌罕见</td></tr>
+      <tr><td>大赛 vs 联赛</td><td>大赛执法更克制（欧洲杯3场仅10黄）；属"控场流畅型"而非高牌型</td></tr>
+      <tr><td>对阵两队历史</td><td>与科特迪瓦、厄瓜多尔<b>均无执法样本（无样本）</b></td></tr>
+    </table>
+    <div class="flag">⚠ <b>两面性提醒</b>：以上为最近一届大赛（欧洲杯2024）与顶级赛事的<b>实际数据</b>，但世界杯首秀＋对两队无样本，临场尺度仍有不确定；世界杯统一新规（门将8秒、仅队长沟通）可能微调其惯常尺度。牌/点盘缺乏针对两队的裁判面直接依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇨🇮 科特迪瓦 预测首发（4-3-3）</h4>
+    <div class="lineup">Y. Fofana; Singo · Kossounou · Ndicka · Konan; Kessié(C) · Sangaré · S. Fofana; Amad Diallo · Guessand · Adingra</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Franck Kessié (C)</td><td>中场 / Al-Ahli</td><td>队长与攻防枢纽；箱到箱推进的发动机</td></tr>
+      <tr><td class="ht">Ibrahim Sangaré</td><td>中场 / 诺丁汉森林</td><td>防守型中场屏障；负责挡住厄瓜多尔的反击</td></tr>
+      <tr><td class="ht">Amad Diallo</td><td>边锋 / 曼联</td><td>1v1 爆点，专冲厄瓜多尔翼卫身后</td></tr>
+      <tr><td class="ht">Simon Adingra</td><td>边锋 / 布莱顿系</td><td>速度与突破，边路拉扯三中卫的关键</td></tr>
+    </table>
+    <h4>🇪🇨 厄瓜多尔 预测首发（3-4-3）</h4>
+    <div class="lineup">Galíndez; Pacho · F. Torres · Hincapié; Preciado · Caicedo(C) · A. Franco · Estupiñán; Plata · Valencia · Páez</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Moisés Caicedo (C)</td><td>中场 / 切尔西</td><td>队长与拦截核心；切断科特迪瓦中前场连线</td></tr>
+      <tr><td class="sc">Willian Pacho</td><td>中卫 / 巴黎圣日耳曼</td><td>三中卫核心，欧洲顶级防守身价</td></tr>
+      <tr><td class="sc">Piero Hincapié</td><td>中卫 / 勒沃库森系</td><td>出球与协防兼备，对位边路爆点</td></tr>
+      <tr><td class="sc">Kendry Páez</td><td>前场 / 切尔西系</td><td>新生代创造力；厄瓜多尔为数不多的破密集手段</td></tr>
+    </table>
+    <div class="note">门将与边锋选择：科特迪瓦边锋（Adingra 与其他人选）为 Faé 的临场抉择；厄瓜多尔 Valencia 的首发/出场角色仍待官方揭示（<b>待核</b>）。预测首发均为分析源推测。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f7b86a">🇨🇮 科特迪瓦 · Emerse Faé</div>
+        <div class="role">4-3-3 · 控球推进 + 边路1v1爆点</div>
+        <ul class="cl">
+          <li>2023非洲杯夺冠的功勋主帅；以稳固后防＋边路个人能力见长。</li>
+          <li>剧本：用 Kessié/Sangaré 控住中场，把球喂给 Amad/Adingra 在边路单挑厄瓜多尔翼卫身后。</li>
+          <li>风险：面对厄瓜多尔密集三中卫，若边路被封死、缺乏中路穿透，进攻容易停滞成"控而不破"。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ffe066">🇪🇨 厄瓜多尔 · Sebastián Beccacece</div>
+        <div class="role">3-4-3 · 结构纪律 + 极难攻破</div>
+        <ul class="cl">
+          <li>阿根廷籍少帅，把球队打造成预选18场仅丢5球的铁桶。</li>
+          <li>剧本：三中卫＋双后腰（Caicedo/Franco）压缩中路空间，逼科特迪瓦走边路再用翼卫＋中卫合围。</li>
+          <li>风险：翼卫前插后身后留空，正是 Amad/Adingra 的猎场；进攻端依赖 Páez/Plata 的灵光与 Valencia 的支点。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察 · 含近2届大赛对账</h2>
+    <div class="insight"><div class="who">科特迪瓦 · 最近2届大赛 <small>· AFCON 2023 冠军 + 2021 止步16强</small></div>2023 非洲杯科特迪瓦<b>夺冠但过程极险</b>：小组 0-4 惨负赤道几内亚濒临出局、Faé 中途接帅，靠淘汰赛多次<b>读秒扳平＋点球</b>（绝杀马里、点球淘汰塞内加尔），决赛 Kessié <b>定位球扳平</b>＋Haller 绝杀逆转尼日利亚——这支队"运动战未必碾压，但<b>定位球与韧性</b>是真实武器"。2021 非洲杯则止步 16 强（点球负埃及，Bailly 射失）。叠加本届夺冠功臣 Haller 落选，进攻支点更依赖 Amad/Adingra 的边路个人能力——本场若边路被封、又拿不到定位球红利，最易"控而不破"。</div>
+    <div class="insight"><div class="who">厄瓜多尔 · 最近2届大赛 <small>· WC2022 小组出局(4分) + 美洲杯2024八强</small></div>2022 世界杯厄瓜多尔<b>2-0 胜东道主卡塔尔、1-1 逼平荷兰</b>、惜败塞内加尔小组出局（4 分），靠的正是<b>组织化防守＋Valencia 终结</b>；2024 美洲杯打进八强（点球负阿根廷）。两届大赛都印证其"<b>防线硬、靠 Valencia 抠球</b>"的画像——与本场"铁桶＋低分"的定位完全一致，且其大赛级别经验比科特迪瓦更新更足、更抗压。</div>
+    <div class="insight"><div class="who">战术核心 <small>· 中场对位</small></div>Caicedo 切断 Kessié/Sangaré 通往三叉戟的供给线是全场枢纽——他赢下这片区域，科特迪瓦进攻会被逼到边路，正中厄瓜多尔三中卫合围。</div>
+    <div class="insight"><div class="who">胜负空间 <small>· 战术信号</small></div>破僵局最现实两条路：①科特迪瓦边路 1v1（Amad/Adingra）冲翼卫身后；②任意一方定位球（科特迪瓦 AFCON 夺冠靠的就是定位球）。常规流动进攻多被结构吞掉，一球决胜或 0-0 是基准。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：0-0 / 1-1 / 一球小胜是基准剧本；两队都不怕踢平，谁先冒险谁担风险，整体偏小球。</li>
+      <li><b>关键先生</b>：Caicedo（厄/拦截核心）、Amad Diallo & Adingra（科/边路爆点）、Sangaré（科/反击屏障）、Pacho & Hincapié（厄/三中卫核心）。</li>
+      <li><b>胜负手</b>：科特迪瓦边路1v1的兑现效率 vs 厄瓜多尔三中卫的合围纪律；以及双方定位球的高点对决。</li>
+      <li><b>市场视角</b>：三方近平、情绪干净（热度2/5）；被忽略口袋偏向 Under / 平局 / 双方不进球一侧，而非任一方大胜。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 主裁已确认 Letexier（顶替伤退的 Oliver），与两队无执法样本、世界杯首秀尺度未知；② 科特迪瓦 Ndicka 缺阵、Kossounou 顶上已确认，逐人首发以官方为准；③ 厄瓜多尔 Valencia 出场角色待官方；④ 预测首发为分析源推测；⑤ 加密预测盘本场单独成交未检得。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49029367/fifa-world-cup-2026-ivory-coast-vs-ecuador-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 队况/裁判/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/predicted-lineups/winger-dilemma-for-fae-predicted-ivory-coast-lineup-vs-ecuador_599037.html">Sports Mole — 科特迪瓦首发</a> · <a href="https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/valencia-decision-for-la-tri-predicted-ecuador-lineup-vs-ivory-coast_599039.html">Sports Mole — 厄瓜多尔首发</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-ivory-coast-vs-ecuador-06-14-26-world-cup-2026/">Squawka — 预测/出线概率</a> · <a href="https://sports.yahoo.com/articles/c-te-d-ivoire-vs-165408059.html">Yahoo Sports — 赔率/前瞻</a> · <a href="https://www.skysports.com/football/news/12098/13543089/world-cup-2026-group-e-guide-fixtures-schedule-standings-and-odds-for-germany-curacao-ivory-coast-and-ecuador">Sky Sports — E组指南</a><br>
+      • <a href="https://www.compare.bet/news/cote-divoire-vs-ecuador-betting-preview-predictions-tips-and-live-odds">compare.bet — 赔率聚合</a> · <a href="https://www.rotowire.com/soccer/article/2026-world-cup-group-e-preview-germany-curacao-ivory-coast-ecuador-tactics-lineups-set-pieces-odds-109286">RotoWire — E组战术前瞻</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — E组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14（裁判改判 Letexier、含近2届大赛对账） · 图表为已核实/已标注来源数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f7901e',SC='#ffce00',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('defChart'),{type:'bar',
+ data:{labels:['科特迪瓦(预选失球)','厄瓜多尔(18场失球)'],datasets:[{data:[0,5],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'失球数（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['科特迪瓦胜','平局','厄瓜多尔胜'],datasets:[{data:[28,36,42],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:55,title:{display:true,text:'隐含概率 %（估算）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('qualChart'),{type:'bar',
+ data:{labels:['科特迪瓦','厄瓜多尔'],datasets:[{label:'晋级%',data:[78,89],backgroundColor:[HT,SC],borderRadius:6},{label:'夺组%',data:[14,23],backgroundColor:['#7a4a0f','#8a6e00'],borderRadius:6}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'概率 %（Kalshi）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'科特迪瓦',data:[8,6.5,7,6.5,7.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'厄瓜多尔',data:[8.5,6,7.5,6.5,7,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

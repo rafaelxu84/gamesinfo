@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 阿根廷 vs 阿尔及利亚 · 2026世界杯 J组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-argentina-vs-algeria.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-argentina-vs-algeria.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#75aadb;--sc:#0a7a3f;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d4e89,#0a7a3f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13243a,#0e2a1c);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc4ee;font-weight:600}td.sc{color:#5fc28b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-argentina-vs-algeria.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 3-0 · 2026 世界杯 · J组首轮 · Messi 帽子戏法（17'/60'/76'）追平 Klose 成世界杯历史第一射手</span>
+  <h1>阿根廷 vs 阿尔及利亚</h1>
+  <div class="meta">2026年6月16日 · 堪萨斯城 Arrowhead Stadium · 21:00 ET · J组（同组：奥地利、约旦）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#9cc4ee">🇦🇷 阿根廷</div><div class="rk">FIFA #1 · 卫冕世界杯冠军 · Messi 领衔 · 五连胜入冬</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fc28b">🇩🇿 阿尔及利亚</div><div class="rk">FIFA #28 · 非洲劲旅 · Mahrez 队长 · 转换反击犀利</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 阿根廷 3-0 阿尔及利亚（半场 1-0）· 数据来源 Sofascore / Opta / FotMob / FIFA / ESPN · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场"剧本如约、细节超预期"的开门战。<b>Messi</b> 第 <b>8 分钟</b>近距离打进一球但越位被吹；第 <b>17 分钟</b>他用一记标志性的盘带后禁区前沿左脚抽射穿过 Luca Zidane 十指关，半场 1-0。下半场第 <b>60 分钟</b>，<b>Mac Allister</b> 远射被门将扑出，Messi 跟上补射推空门完成梅开二度；第 <b>76 分钟</b>他在禁区外低射死角再下一城，<b>追平 Klose 的 16 球、成为世界杯历史并列第一射手</b>，并超越 Mbappé 成为现役世界杯进球最多者。第 <b>79 分钟</b> Messi 在全场起立鼓掌中被换下休息（备战淘汰赛）。阿尔及利亚仅 Chaibi 第 9 分钟一次进球（同样越位无效），全场未给阿根廷防线制造像样威胁。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 8' Messi 进球（越位无效）· 9' Chaibi 进球（越位无效）→ 17' Messi（1-0）→ HT 1-0 → 60' Messi（补射，2-0）→ 76' Messi（低射死角，3-0）→ 79' Messi 被换下 → FT 3-0</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇦🇷 阿根廷</th><th style="padding:6px">🇩🇿 阿尔及利亚</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.00</b></td><td style="text-align:center">≈0.6 <span style="color:var(--warn)">待核</span></td><td style="padding:6px;color:var(--mut)">阿根廷机会质量碾压；3 球甚至略超 xG</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球</td><td style="text-align:center">≈48%</td><td style="text-align:center"><b>≈52%</b></td><td style="padding:6px;color:var(--mut)">阿尔及利亚控球更多却毫无产出——典型"无效控球"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>10 / 6</b></td><td style="text-align:center">7 / 1</td><td style="padding:6px;color:var(--mut)">阿根廷射正 6 次效率极高；阿尔及利亚仅 1 次射正</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">角球</td><td style="text-align:center">2</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">定位球均未成威胁，阿根廷靠运动战取胜</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">黄 / 红牌</td><td style="text-align:center">0 / 0</td><td style="text-align:center">0 / 0</td><td style="padding:6px;color:var(--mut)">Marciniak 全场零牌——比赛毫无火药味，强弱分明</td></tr>
+      <tr><td style="padding:6px">运动战进球</td><td style="text-align:center"><b>3（全 Messi）</b></td><td style="text-align:center">0</td><td style="padding:6px;color:var(--mut)">阿根廷进攻全部由 Messi 个人终结，核心依赖度极高</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 38 岁 Messi 仍是阿根廷的"天花板与发动机"</div>三球全部出自 Messi 个人（一记盘带抽射、一次门前嗅觉补射、一记禁区外冷射），他在 79 分钟被保护性换下前已锁定比赛。<b>这说明阿根廷</b>：即便兵强马壮，进攻的上限与下限仍高度系于 Messi 一人——他状态在线就足以单核解决中下游对手，但这也意味着淘汰赛遇强敌时，对手只要冻结 Messi 就能压低阿根廷的进球期望。</div>
+    <div class="insight"><div class="who">② 精英防线"零封"如期兑现，但靠的是对手太弱</div>阿根廷让阿尔及利亚全场仅 1 次射正、xG 约 0.6，延续了"近 7 场仅失 1 球"的防守状态。<b>这说明阿根廷</b>：后防纪律确实顶级，但本场零封含金量受限于对手的无威胁——真正的防线考验要等到面对有终结点的强队，本场不能据此高估其防空与反击防守已被验证。</div>
+    <div class="insight"><div class="who">③ 阿尔及利亚"控球 52% 却零射正"——赛前的反击獠牙没咬出来</div>赛前主线把 Mahrez 创造力 + Amoura 速度列为"活 underdog"的现实抢分路径，实战中阿尔及利亚拿到更多控球，却完全无法把球权转化为危险——只有 Chaibi 一次越位进球。<b>这说明阿尔及利亚</b>：面对收缩纪律严密的强队，他们缺少打破铁桶的最后一传与终结效率，个人能力上限在体系性防守前被大幅压缩；其反击模式需要对手压上留空间才奏效，对方不冒进时他们就哑火。</div>
+    <div class="insight"><div class="who">④ Scaloni 的"分钟管理"执行到位</div>Messi 完成帽子戏法、2-0 安全后第 79 分钟即被换下，全程未冒不必要受伤风险。<b>这说明阿根廷</b>：教练组对腿筋隐患的管理是"够用即收"——在能赢的比赛里榨取核心价值后立即保护，这套节奏控制力正是卫冕级球队应对漫长赛程的成熟标志。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>阿根廷胜（去水 ≈68%、基准剧本 2-0/2-1）→ 实际 3-0</b>：胜负方向完全兑现，比分甚至比基准更干脆（净胜 3 球，让球 -1.5 / -2 均过关）。</li>
+      <li>✓ <b>本报告"略偏大球"（大 2.5）→ 实际 3 球，大 2.5 兑现</b>：火力派研判压过超算的小球倾向，大球一侧命中。</li>
+      <li>✓ <b>"Messi 腿筋管理 + 出场时间是最大变量"→ 首发、帽子戏法、79' 被保护性换下</b>：核心故事线精准命中。</li>
+      <li>✗ <b>"Mahrez/Amoura 转换反击保持一线威胁"→ 阿尔及利亚全场仅 1 射正、0 运动战威胁</b>：高估了阿尔及利亚的抢分能力，"活 underdog"被证伪。</li>
+      <li>~ <b>超算"阿根廷 2-0、小球为最可能"</b>：胜方对、比分与大小球方向偏差（实际 3-0、大球）。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇦🇷 阿根廷 → 6/22 vs 奥地利（阿灵顿 AT&T Stadium 13:00 ET）</div>① <b>无停赛/伤病新增</b>：全场零牌，Messi 被提前保护，主力体能充足。② <b>可复制的得分路径</b>：Messi 禁区外远射 + 门前补射的"二点终结"本场两度奏效，奥地利若同样收缩需警惕。③ <b>暴露的隐患</b>：进攻过度依赖 Messi 个人终结——奥地利（FIFA #24，组织性强于阿尔及利亚）若敢于贴身冻结 Messi，阿根廷的第二终结点（Lautaro 本场未进球）能否站出来是看点。</div>
+      <div class="insight" style="margin:0"><div class="who">🇩🇿 阿尔及利亚 → 6/22 vs 约旦（旧金山湾区 Levi's Stadium 21:00 ET）</div>① <b>无停赛/伤病新增</b>：零牌收场。② <b>暴露的致命短板</b>：控球 52% 却零射正，缺破密集防守的最后一传与终结——约旦（FIFA #63）实力更弱、会给出更多空间，正是阿尔及利亚验证进攻能否兑现的关键场。③ <b>可期待的转机</b>：Amoura 速度对位弱队后防更有利，这是阿尔及利亚小组出线最现实的一场胜机，必须把握。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Al Jazeera、ESPN、Yahoo Sports、FotMob、Sofascore、FIFA Match Centre、Goal.com。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>卫冕冠军的开门战，剧本明确但暗藏一个核心悬念</b>：FIFA #1、2022 世界杯冠军阿根廷（Messi 领衔、Lautaro 单箭头、五连胜入冬、6 场预选赛仅失 3 球的精英防线）对阵 FIFA #28 的阿尔及利亚（非洲劲旅，队长 Mahrez 为进攻轴心、Amoura 边路速度与直接性是头号得分威胁）。盘口高度倾斜——阿根廷胜赔 <b>1.38–1.42</b>（去水隐含 ≈68%），平局 <b>4.50–4.60</b>（≈20%），阿尔及利亚胜 <b>7.00–9.00</b>（≈12%）。预测市场（Kalshi/Polymarket）给阿根廷 71% 击败阿尔及利亚、约 71.5% 从 J 组出线、约 10% 夺冠。<b>真正的故事线是 Messi（38 岁）的腿筋管理</b>——他确认入选、预计首发，但 Scaloni 如何分配其上场时间，是本场最大的不确定性。基准剧本：<b>阿根廷 2-0 / 2-1 取胜</b>；阿尔及利亚作为活underdog，凭 Mahrez/Amoura 的转换反击保持一线威胁。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">阿根廷隐含胜率(去水)</div><div class="v" style="color:#9cc4ee">≈68%</div></div>
+      <div class="key"><div class="k">阿尔及利亚隐含胜率</div><div class="v" style="color:#5fc28b">≈12%</div></div>
+      <div class="key"><div class="k">预测市场 · 阿根廷夺冠</div><div class="v" style="color:var(--warn)">≈10%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Messi 的腿筋状态与出场时间</b>：38 岁的 Messi 确认入选、预计首发，但带伤管理中——Scaloni 是否限制其分钟数、何时换下，是决定阿根廷进攻火力与本场观赏性的最大变量。</li>
+      <li><b>阿根廷的精英防线</b>：6 场世界杯预选赛仅失 3 球，近期更是 7 场仅失 1 球；Romero + Lisandro Martínez 的中卫组合是阿尔及利亚必须破解的难题。</li>
+      <li><b>Mahrez 与 Amoura 的转换威胁</b>：Mahrez（队长、113 场国家队 38 球）是定位与组织核心；Amoura（预选赛 8 场 10 球的头号射手）的速度与直接性，是阿尔及利亚抢分的最现实路径。</li>
+      <li><b>大小球方向的分歧</b>：超算偏向小球（阿根廷 2-0 为最可能比分），但阿根廷火力 + 阿尔及利亚开放打法令部分专家看好大球——这是本场最具两面性的市场。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #1d4e6b;background:linear-gradient(135deg,#13202f,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--accent);background:#0d1526;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🆕 晨间临场更新（6/16） <span style="color:var(--mut);font-weight:400">· ESPN · Sports Mole · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿根廷"无伤报平安"：Messi、Emi Martínez、Julián Álvarez 均健康；Messi 将迎第 200 场国家队</div>
+      <p style="font-size:13.5px">ESPN 报道阿根廷阵中"心态平静"，Messi（对冰岛热身踢 20 分钟后已完全康复）、门将 Emiliano Martínez（欧联杯决赛前曾断指，已通过体检复出）、Julián Álvarez 全员可用。Messi 本场将完成第 200 场国家队出场、并成为史上首位征战 6 届世界杯的球员，预计与 Lautaro Martínez 搭档锋线。卫冕冠军以最强阵容开局，与本页"阿根廷大热、阿尔及利亚靠 Amoura/Mahrez 反击搏冷"的主线一致。<span style="color:var(--warn)">[最终首发以赛前 T-60 官方名单为准 · 待核]</span></p>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49075716/argentina-calm-lionel-messi-emiliano-martinez-julian-alvarez-fit-ahead-algeria" style="color:var(--accent)">ESPN — 阿根廷无伤</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html" style="color:var(--accent)">Sports Mole — 预测XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">阿根廷 · Messi 腿筋管理 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Messi（38 岁）确认入选、预计首发，但带腿筋隐患管理出场时间</b>；本场将迎来其第 200 场国家队比赛、连续第六届世界杯</div>
+      <p style="font-size:13.5px">Lionel Messi 将创造历史，成为首位踢满六届世界杯的球员，本场也是他的第 200 次国家队出场（第 27 场世界杯赛事）。他确认进入阵容并预计首发，但赛前一直在管理一处腿筋问题——Scaloni 如何安排其分钟数（是否减少出场、何时换下以保护其状态备战后续淘汰赛）成为框定整场比赛的故事线。<span style="color:var(--warn)">[Messi 的确切首发与出场时长以赛前官方名单及临场决定为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Messi 仍是阿根廷进攻组织与定位球的最高输出点。若他被限制分钟数或提前换下，阿根廷的创造力与终结效率会出现波动，给阿尔及利亚的反击留出空间——这直接关系到比赛悬念与大小球走向。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/preview-argentina-vs-algeria-team-010500837.html" style="color:var(--accent)">Yahoo Sports — 前瞻/Messi 故事线</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html" style="color:var(--accent)">Sports Mole — 阿根廷预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">阿根廷 · 状态与防守数据 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>阿根廷带着五连胜（近 7 场仅失 1 球）进入世界杯</b>，预选赛 6 场仅失 3 球，CONMEBOL 区头名</div>
+      <p style="font-size:13.5px">卫冕冠军以极佳状态登场：南美区预选赛登顶、近期保持五连胜，近七场比赛仅丢一球，攻守两端均处于顶级水准。Lautaro Martínez 领衔锋线，Julián Álvarez 提供多功能选项，中场由 De Paul、Mac Allister、Enzo Fernández 构成的冠军班底坐镇。<span style="color:var(--warn)">[最终首发与轮换以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：阿根廷的防守数据是其市场地位的根基——它压低了阿尔及利亚的得分预期，也是超算给出"阿根廷 2-0、小球"为最可能结果的核心依据。若防线延续此状态，阿尔及利亚抢分难度极大。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-algeria-prediction-team-news-lineups_599163.html" style="color:var(--accent)">Sports Mole — 阿根廷前瞻/状态</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/" style="color:var(--accent)">Racing Post — 赔率/数据</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--sc);font-weight:700">阿尔及利亚 · Petković 阵容与核心 <span style="color:var(--mut);font-weight:400">· FIFA · beIN Sports · 2026-05/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Petković 公布阵容：Mahrez 领衔，Amoura 为头号射手，门将启用 Luca Zidane</b></div>
+      <p style="font-size:13.5px">主帅 Vladimir Petković 公布了 27 人初选名单。队长兼绝对领袖 Riyad Mahrez（113 场国家队 38 球）回归领衔；VfL Wolfsburg 前锋 Mohamed Amoura 以预选赛 8 场 10 球成为球队头号射手；勒沃库森年轻中场 Ibrahim Maza 是球队未来的关键拼图；门将位置启用法国传奇 Zidane 之子、格拉纳达门将 Luca Zidane。<span style="color:var(--warn)">[首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：阿尔及利亚拥有真正的个人能力上限（Mahrez 创造力 + Amoura 速度），这令其成为"活的"underdog 而非陪跑者。若阿根廷在 Messi 状态管理或防线注意力上出现松动，Amoura 的转换冲击足以制造冷门进球。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-squad-announcement-vladimir-petkovic" style="color:var(--accent)">FIFA — 阿尔及利亚名单（Petković）</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/vladimir-petkovi-s-official-algeria-squad-for-the-2026-fifa-world-cup-2026-05-31" style="color:var(--accent)">beIN Sports — 阿尔及利亚阵容</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">大小球方向 · 市场分歧 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">超算偏向小球（阿根廷 2-0 为最可能比分），但部分专家看好大球——这是本场最两面的市场</div>
+      <p style="font-size:13.5px">大小球 2.5 双向接近：Over 2.5 约 10/11（最优 -105，BetOnline），Under 2.5 约 1/1（去水后两侧接近五五）。看小球的理由：阿根廷近 7 场仅失 1 球、阿尔及利亚近 6 场仅失 2 球，双方防守均紧（某超算预测阿根廷 2-0 为最可能比分、推荐小球）；看大球的理由：阿根廷火力强劲（近 6 场有 4 场打出大 2.5）、阿尔及利亚倾向开放打法。本报告综合给出<b>略偏大球</b>的研判。<span style="color:var(--warn)">[各平台具体盘口以赛前实时为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：与胜负盘的高度共识不同，大小球是本场唯一存在真实分歧的市场。它的走向高度依赖两个变量——Messi 的出场时间（影响阿根廷进攻产出）与阿尔及利亚是否敢于压上（影响双方对攻空间）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html" style="color:var(--accent)">Yahoo Sports — 大小球预测</a> · <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/" style="color:var(--accent)">Sportscasting — 超算/最可能比分</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · J组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>J 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇷 阿根廷</th><th>🇩🇿 阿尔及利亚</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#1</td><td class="sc">#28</td></tr>
+      <tr><td>世界杯史</td><td class="ht">卫冕冠军（2022 夺冠）· 传统强队</td><td class="sc">非洲劲旅（1982/1986/2010/2014 参赛）</td></tr>
+      <tr><td>近期状态</td><td class="ht">五连胜入冬；近 7 场仅失 1 球；预选赛 6 场仅失 3 球</td><td class="sc">预选赛防守同样紧凑（近 6 场失 2 球）；Amoura 8 场 10 球</td></tr>
+      <tr><td>主教练</td><td class="ht">Lionel Scaloni</td><td class="sc">Vladimir Petković</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.38–1.42（隐含≈68%）</td><td class="sc">胜 7.00–9.00（≈12%）· 平 4.50–4.60（≈20%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 ≈ 1.91（-105，BetOnline）/ 小 2.5 ≈ 2.00 —— 双向接近，本报告略偏大球</td></tr>
+      <tr><td>预测市场</td><td colspan="2">Kalshi/Polymarket：阿根廷 71% 击败阿尔及利亚 · ≈71.5% 出线 · ≈10% 夺冠</td></tr>
+      <tr><td>关键看点</td><td class="ht">Messi 腿筋管理（待核）</td><td class="sc">Mahrez/Amoura 转换威胁</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈68/20/12）。美线转十进制：阿根廷 bet365 -239→1.42 / BetOnline -245→1.41 / FanDuel -270→1.37；平局 +350→4.50 / +360→4.60；阿尔及利亚 bet365 +600→7.00 / FanDuel +800→9.00。预测市场（Kalshi/Polymarket，经 DefiRate 汇总）与博彩去水方向一致：阿根廷 71% 胜、≈71.5% 出线、≈10% 夺冠——市场定价合理，仅在阿根廷一侧有轻度叙事溢价。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">阿根廷胜共识压倒性；真正的分歧在大小球与让球幅度。Messi 卫冕首秀叙事带来一定情绪流量，但盘口仍属合理</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 阿根廷胜方向统一；大小球/让球有真实分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">阿根廷胜方向高度收敛（无专家押阿尔及利亚赢），属于合理共识。Messi 卫冕首秀的叙事吸引大量关注，在阿根廷一侧形成轻度情绪溢价，但去水概率与预测市场吻合。真正的价值分歧在大小球（双向接近）与让球幅度。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：阿根廷胜 全部 · 阿尔及利亚胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>阿根廷取胜</b>（约 2-0 / 2-1）</td></tr>
+      <tr><td>Sportscasting 超算</td><td>数据模型</td><td>阿根廷 2-0 为最可能比分（14.1%）；推荐<b>小 2.5 球</b>（-110）</td></tr>
+      <tr><td>Yahoo Sports</td><td>预测媒体</td><td>阿根廷胜；部分情形下倾向<b>大 2.5 球</b>（阿根廷火力 + 阿尔及利亚开放）</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>阿根廷胜；小球 1/1 被视为价值（双方防守均紧）</td></tr>
+      <tr><td>Squawka / Forebet</td><td>数据媒体</td><td>阿根廷胜；比分窄幅；阿尔及利亚反击保留威胁</td></tr>
+      <tr><td>Rotowire</td><td>战术/首发媒体</td><td>阿根廷 4-3-3 控场；阿尔及利亚 4-2-3-1 防反</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向高度统一，无人押阿尔及利亚赢——这是合理共识而非过热。真正的分歧在<b>大小球 2.5</b>（超算偏小球 vs 火力派看大球）以及<b>让球幅度</b>（-1.5 是否成立取决于 Messi 出场时间与阿根廷是否轮换）。情绪资金更多集中在"阿根廷胜 + 大球"的卫冕首秀叙事侧。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>阿根廷胜</th><th>解读</th></tr>
+      <tr><td>主流区间</td><td>1X2</td><td class="ht">1.38–1.42</td><td>高度倾斜；平局 4.50–4.60 / 阿尔及利亚 7.00–9.00</td></tr>
+      <tr><td>各平台</td><td>1X2（举例）</td><td class="ht">bet365 1.42 · BetOnline 1.41 · FanDuel 1.37</td><td>FanDuel 最看好阿根廷（-270）</td></tr>
+      <tr><td>大小球</td><td>大 2.5 / 小 2.5</td><td colspan="2" class="ht">大 2.5 ≈ 1.91（-105）；小 2.5 ≈ 2.00（1/1）—— 双向接近</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>阿根廷 -1 / -1.5</td><td colspan="2" class="sc">阿根廷 -1 为基准；-1.5 取决于 Messi 时长与轮换（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘高度倾斜且稳定，说明市场对阿根廷取胜几无异议。资金博弈集中在<b>大小球 2.5</b>（双向接近，定价已反映分歧）与<b>让球幅度</b>。亚盘层面阿根廷 -1 体现"须净胜一球"的基准预期，-1.5 则是真正有争议的价值点。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（经 DefiRate 汇总）</b>：阿根廷 71% 击败阿尔及利亚——与博彩去水概率（≈68%）方向一致、略高，反映卫冕首秀的轻度叙事溢价。</li>
+      <li><b>出线 & 夺冠</b>：阿根廷 ≈71.5% 从 J 组出线、≈10% 夺得整届冠军——夺冠概率在一众豪强中属第一集团但非压倒。</li>
+      <li><b>舆论焦点</b>：Messi 第六届世界杯、第 200 场国家队、腿筋管理三大叙事占据绝大多数报道篇幅；卫冕冠军登场天然吸引关注，是阿根廷一侧情绪溢价的来源。</li>
+      <li><b>大小球争议</b>：超算/防守派看小球 vs 火力/开放派看大球，是舆论场中最实质的分歧点。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与预测市场在胜负方向上完全收敛（阿根廷 ≈68–71%），过热指数 <b>3/5</b>——共识稳健，仅在阿根廷一侧有轻度叙事溢价。最有信息含量的市场是<b>大小球 2.5</b>（本报告略偏大球）与<b>让球幅度</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/">Racing Post — 赔率/投注</a> · <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/">Sportscasting — 超算预测</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html">Yahoo Sports — 预测/最佳投注</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-algeria-06-16-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://tips.gg/article/argentina-algeria-predicted-lineups-story/">Tips.GG — 预测首发</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">阿根廷控球与持续围攻倾向高，角球产出预计偏高；阿尔及利亚多数时间防守、被迫解围出底线，亦会贡献角球；市场具体盘口待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇦🇷 阿根廷</th><th>🇩🇿 阿尔及利亚</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">控球主导；边路渗透 + 持续围攻；Messi 定位球输送</td><td class="sc">防守反击；Amoura 边路速度直接性；Mahrez 内切创造</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈6–8（控球型、围攻时间多）<span style="color:var(--warn)">待核</span></td><td class="sc">≈3–5（防守为主，但被迫解围出底线频繁）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：Messi 主罚，多名高点中卫前压</td><td class="sc">中：Mahrez 输送，但终结点有限</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显占优（控球与围攻时间长）</td><td class="sc">较少主动角球，多为被动失角</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：阿根廷控球围攻型、阿尔及利亚被动防守，总角球数可能落在 9–12 区间，且阿根廷一侧占明显多数；常见基准线 O/U 9.5 或 10.5 均属正常范围，角球让球（阿根廷 -2 / -3）亦有讨论空间，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>阿根廷控球与围攻优势明显，角球差有望偏大；若阿尔及利亚长时间龟缩防守、被迫解围出底线，阿根廷一侧角球数会进一步累积，角球让球（-2/-3）具备讨论价值。但 Messi 若被提前换下、阿根廷收力，差距会收窄。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>阿根廷主导比赛节奏，预期总角球数偏高（≥10 的概率不低）。若阿尔及利亚全场深度防守，被动失角推升总数；若阿根廷早早领先后收力轮换，则总数回落。</div>
+    <div class="insight"><div class="who">变量与两面性</div>核心变量仍是 Messi 出场时间与阿根廷是否轮换：若主力打满、持续施压，角球高位运行；若早早 2-0 后保护 Messi、降速控场，角球数趋于中位。阿尔及利亚的反击若奏效令比分接近，阿根廷后段加强攻势也会推高角球。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为 <b>Szymon Marciniak（波兰）</b>——当今顶级裁判之一，曾执法 2022 世界杯决赛与 2023 欧冠决赛。助理裁判 Tomasz Listkiewicz 与 Adam Kupsik；第四官员 Campbell Kirk Kawana-Waugh。<span style="color:var(--warn)">[本届赛事场均出牌/判罚数据 · 待核]</span></div>
+    <h4>裁判画像 & 风格</h4>
+    <ul class="cl">
+      <li><b>大赛权威与气场控制</b>：Marciniak 以强大的临场掌控力和大场面执法权威著称，让顶级比赛"流动"起来，但对异议（dissent）态度坚决。卫冕冠军开门战这类高关注度比赛，正是他擅长的场景。</li>
+      <li><b>对 Messi 与 Mahrez 的意义</b>：两位队长（Messi / Mahrez）均为大赛老将，Marciniak 倾向让明星球员在公平范围内自由发挥；这对阿根廷的进攻流动性有利，也意味着 Amoura 突破被侵犯时更可能获得有效判罚。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——Marciniak 的执法尺度成熟，对这些新规的把握不会成为争议来源。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：顶级主裁 + 实力悬殊的对阵，意味着裁判大概率不会成为决定性因素。但若阿尔及利亚深度防守、禁区内对 Messi/Lautaro 有拉扯接触，Marciniak 的果断判罚可能带来点球；反之他对 Amoura 反击中的犯规也会保护。整体上裁判面有利于让强队的技术优势充分释放。本届场均牌数 <span style="color:var(--warn)">（待核）</span>。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员</h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇦🇷 阿根廷 预测首发（4-3-3）</h4>
+    <div class="lineup">E. Martínez; Molina · Romero · L. Martínez · Tagliafico; De Paul · Mac Allister · Almada; Messi · Lautaro Martínez · Enzo Fernández</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Lionel Messi</td><td>前锋/组织 / Inter Miami</td><td>队长；38 岁；第六届世界杯、第 200 场国家队；带腿筋隐患管理出场时间（待核）</td></tr>
+      <tr><td class="ht">Lautaro Martínez</td><td>中锋 / 国际米兰</td><td>锋线箭头；终结点核心</td></tr>
+      <tr><td class="ht">Emiliano Martínez</td><td>门将 / Aston Villa</td><td>2022 世界杯金手套；点球大战与关键扑救能力顶级</td></tr>
+      <tr><td class="ht">Cristian Romero / Lisandro Martínez</td><td>中卫 / 英超</td><td>中卫组合；阿根廷精英防线核心（近 7 场仅失 1 球）</td></tr>
+    </table>
+    <h4>🇩🇿 阿尔及利亚 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Zidane; Belghali · Mandi · Chergui · Ait-Nouri; Bentaleb · Boudaoui; Mahrez · Maza · Amoura; Gouiri</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Riyad Mahrez</td><td>边锋/组织 / Al-Ahli</td><td>队长；35 岁；113 场国家队 38 球；进攻轴心与定位输送</td></tr>
+      <tr><td class="sc">Mohamed Amoura</td><td>前锋/边锋 / VfL Wolfsburg</td><td>预选赛 8 场 10 球的头号射手；速度与直接性是反击利刃</td></tr>
+      <tr><td class="sc">Ibrahim Maza</td><td>中场 / Bayer Leverkusen</td><td>年轻天才中场；连接前后场的技术枢纽</td></tr>
+      <tr><td class="sc">Luca Zidane</td><td>门将 / Granada</td><td>Zidane 之子；阿尔及利亚国门</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / Tips.GG），<b>以赛前官方名单为准</b>。Messi 的首发与出场时长存在腿筋管理变数（待核）；阿尔及利亚锋线 Gouiri/Amoura 的具体站位以临场为准（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#9cc4ee">🇦🇷 阿根廷 · Lionel Scaloni</div>
+        <div class="role">4-3-3 控球主导 + 精英防线 + Messi 自由组织</div>
+        <ul class="cl">
+          <li>阿根廷以控球与高位组织主导比赛，De Paul/Mac Allister/Enzo 的中场三角负责出球与覆盖，Messi 在右侧或自由位获得创造空间，Lautaro 担任终结点。</li>
+          <li>防守端是其真正根基——Romero + Lisandro Martínez 中卫组合 + E. Martínez 把关，近 7 场仅失 1 球；面对阿尔及利亚反击时，整体回防与边后卫回收是关键。</li>
+          <li>核心抉择：Scaloni 对 Messi 分钟数的管理。若 2-0 领先后提前换下 Messi、引入 Julián Álvarez 等多功能选项，可在保护核心的同时维持控场。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fc28b">🇩🇿 阿尔及利亚 · Vladimir Petković</div>
+        <div class="role">4-2-3-1 紧凑防守 + Mahrez/Amoura 转换反击</div>
+        <ul class="cl">
+          <li>阿尔及利亚的剧本是组织紧凑的中低位防守、压缩阿根廷的渗透空间，依靠 Bentaleb/Boudaoui 的双后腰保护，再通过 Amoura 的速度与 Mahrez 的创造力发动快速反击。</li>
+          <li>Ait-Nouri 的左路插上与 Belghali 的右路是边路活力来源；Maza 在前腰位连接，Gouiri 担任支点。</li>
+          <li>风险：面对阿根廷的控球围攻，若防线注意力下降或反击转化不足，长时间被压制可能导致失球累积；个人能力（Mahrez/Amoura）是其制造冷门的唯一现实路径。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Sportscasting 超算 <small>· 数据模型</small></div>模型给出阿根廷 2-0 为最可能比分（14.1%），并推荐小 2.5 球——其逻辑建立在阿根廷精英防线（近 7 场仅失 1 球）与阿尔及利亚同样紧凑的防守之上，认为这是一场阿根廷控制、低失球的比赛。</div>
+    <div class="insight"><div class="who">Sports Mole / Racing Post <small>· 预测媒体</small></div>一致看好阿根廷取胜（约 2-0/2-1）；Racing Post 视小 2.5 球（1/1）为价值，强调双方防守均紧。两家均把 Messi 状态与出场时间列为最大不确定性。</div>
+    <div class="insight"><div class="who">Yahoo Sports <small>· 故事线视角</small></div>聚焦 Messi 的历史时刻（首位踢满六届世界杯、第 200 场国家队），指出 Scaloni 对其分钟数的管理是"框定整场比赛的故事线"；并提示阿根廷火力 + 阿尔及利亚开放可能令大球成立。</div>
+    <div class="insight"><div class="who">综合 · 阿尔及利亚侧画像 <small>· 战术信号</small></div>阿尔及利亚不是来陪跑的——Mahrez 的创造力与 Amoura 的速度构成真实的个人能力上限。本场对其而言抢分难度极大，但只要阿根廷在 Messi 管理或防线注意力上出现松动，一次成功反击就足以让比分接近，制造真实的竞争张力。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：阿根廷 2-0 / 2-1 是基准剧本；阿根廷 1-0 窄胜（若 Messi 早下、收力）亦合理；平局（约 20%）是中等尾部风险；阿尔及利亚胜（约 12%）为小概率冷门，需依赖 Amoura 反击 + 阿根廷防线失常。</li>
+      <li><b>关键先生</b>：Messi（阿/组织与定位球，出场时间是变量）、Lautaro（阿/终结）、Romero+Lisandro（阿/防线）、Mahrez（阿尔/创造）、Amoura（阿尔/反击速度）。</li>
+      <li><b>胜负手</b>：真正的胜负手不是实力差距（差距明确），而是<b>阿根廷能否在保护 Messi 的同时维持施压强度</b>，以及<b>阿尔及利亚的反击转化效率</b>。阿根廷防线状态延续则比赛悬念有限。</li>
+      <li><b>市场视角</b>：胜负盘高度共识（阿根廷 ≈68–71%），过热指数 3/5，仅轻度叙事溢价。最有信息含量的市场是<b>大小球 2.5</b>（本报告略偏大球）与<b>让球幅度</b>（-1.5 取决于 Messi 时长与轮换）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Messi 的确切首发与出场时长（腿筋管理）；② 阿尔及利亚锋线站位（Gouiri/Amoura）与最终首发；③ 当值裁判 Marciniak 本届赛事场均牌数/判罚数据；④ 大小球与让球的各平台实时盘口；⑤ Kalshi/Polymarket 单场成交量与价格细分；⑥ 角球具体盘口数据未检得；⑦ 双方临场轮换以官方名单为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — J组确认（阿根廷、阿尔及利亚、奥地利、约旦）</a> · <a href="https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings">ESPN — FIFA 排名（2026-06）</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-algeria-preview-full-squad-list-key-stats-schedule">Olympics.com — 阿尔及利亚前瞻/赛程</a><br>
+      • <a href="https://sports.yahoo.com/articles/preview-argentina-vs-algeria-team-010500837.html">Yahoo Sports — 前瞻/首发/Messi</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-algeria-prediction-team-news-lineups_599163.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/messi-makes-more-history-emi-returns-predicted-argentina-lineup-vs-algeria_599169.html">Sports Mole — 阿根廷预测首发</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/argentina-vs-algeria-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-118222">Rotowire — 首发/战术</a> · <a href="https://tips.gg/article/argentina-algeria-predicted-lineups-story/">Tips.GG — 预测首发</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-akzia3G1tqGe/">Racing Post — 赔率/投注</a><br>
+      • <a href="https://www.sportscasting.com/news/argentina-vs-algeria-world-cup-betting-picks-predictions-odds/">Sportscasting — 超算预测</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-algeria-prediction-world-142500041.html">Yahoo Sports — 大小球预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-algeria-06-16-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-squad-announcement-vladimir-petkovic">FIFA — 阿尔及利亚名单（Petković）</a> · <a href="https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/vladimir-petkovi-s-official-algeria-squad-for-the-2026-fifa-world-cup-2026-05-31">beIN Sports — 阿尔及利亚阵容</a> · <a href="https://www.aljazeera.com/sports/2026/6/5/ranking-the-2026-world-cup-groups-which-teams-are-favourites-to-progress">Al Jazeera — J组形势</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-15 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#75aadb',SC='#0a7a3f',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['阿根廷胜','平局','阿尔及利亚胜'],datasets:[{data:[68,20,12],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[52,48],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，双向接近，略偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['阿根廷','奥地利','阿尔及利亚','约旦'],datasets:[{data:[1,24,28,63],backgroundColor:[HT,'#ed2939',SC,'#007a3d'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'阿根廷',data:[9,8.5,8.5,8,9.5,9.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'阿尔及利亚',data:[6.5,6.5,6,5.5,7.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

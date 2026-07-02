@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Analysis · Austria vs Jordan · 2026 World Cup Group J</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-austria-vs-jordan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-austria-vs-jordan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI",sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-austria-vs-jordan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">&#x1F3C1; FULL TIME 3-1 · 2026 World Cup · Group J Match 1 · Schmid screamer + two late VAR penalty calls, Austria edge it</span>
+  <h1>Austria vs Jordan</h1>
+  <div class="meta">June 17, 2026 · 00:00 ET (late Tue night US East / 21:00 PT Tue) · Levi's Stadium, Santa Clara, CA · Group J (also: Argentina, Algeria)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">&#x1F1E6;&#x1F1F9; Austria</div><div class="rk">FIFA #24 · First WC since 1998 · Rangnick high-press / gegenpressing system</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">&#x1F1EF;&#x1F1F4; Jordan</div><div class="rk">FIFA #63 · First-ever World Cup appearance · 2023 Asian Cup runners-up pedigree</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">&#x1F4CA;</span> Post-Match Review: Tactics & Data</h2>
+    <div class="sub">Full time Austria 3-1 Jordan (HT 1-0) · Data via Opta / FIFA / Yahoo Sports / Deccan Chronicle · The pre-match content below is preserved as a prediction archive</div>
+
+    <h4>① How the Score Unfolded</h4>
+    <p style="font-size:14px">This was a far more turbulent game than the scoreline suggests. Austria struck in the <b>20th minute</b> through <b>Romano Schmid</b>, a screamer from outside the box — Austria's <b>first World Cup goal since 1998</b>. But Jordan hit back early in the second half: in the <b>50th minute</b> <b>Ali Olwan</b> weaved through several defenders for <b>Jordan's first-ever World Cup goal</b>, levelling at 1-1. Austria appeared to retake the lead in the <b>67th minute</b> via Arnautovic, but <b>VAR ruled it out for a Posch handball in the 69th minute</b>; Austria got their "ball don't lie" moment in the <b>76th minute</b> when a corner forced a <b>Yazan Al-Arab own goal</b> (the 5th OG of the tournament), 2-1. Tempers then flared and Sabitzer was booked on 77'. With 10 minutes of stoppage time, Arnautovic converted a <b>VAR-awarded penalty in the 90+12th minute</b> to seal 3-1. Notably, Jordan recorded <b>more shots and shots on target</b> than Austria — the favourites won on chance quality and finishing.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 20' Schmid screamer (1-0) → HT 1-0 → 50' Olwan solo run (Jordan's first goal, 1-1) → 67' Arnautovic goal → 69' VAR rules out for Posch handball → 76' Al-Arab own goal (2-1) → 77' Sabitzer yellow → 90+12' Arnautovic penalty (3-1)</div>
+
+    <h4>② Key Data Comparison</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metric</th><th style="padding:6px">&#x1F1E6;&#x1F1F9; Austria</th><th style="padding:6px">&#x1F1EF;&#x1F1F4; Jordan</th><th style="text-align:left;padding:6px">Read</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Possession</td><td style="text-align:center"><b>≈58%</b></td><td style="text-align:center">≈42%</td><td style="padding:6px;color:var(--mut)">Austria held the ball but possession did not translate into control</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots</td><td style="text-align:center">fewer than Jordan <span style="color:var(--warn)">TBC</span></td><td style="text-align:center"><b>more</b></td><td style="padding:6px;color:var(--mut)">Jordan had more shots — far from a passive minnow</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots on target</td><td style="text-align:center">fewer than Jordan <span style="color:var(--warn)">TBC</span></td><td style="text-align:center"><b>more</b></td><td style="padding:6px;color:var(--mut)">Jordan also had more on target; Austria won on quality, not volume</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Pass accuracy</td><td style="text-align:center"><b>≈88%</b></td><td style="text-align:center"><span style="color:var(--warn)">TBC</span></td><td style="padding:6px;color:var(--mut)">High Austrian passing quality, stable build-up from the back</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Open-play goals</td><td style="text-align:center">1 (Schmid)</td><td style="text-align:center"><b>1 (Olwan)</b></td><td style="padding:6px;color:var(--mut)">Open play 1-1; Austria's other two came from an OG and a penalty</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Set-piece goals</td><td style="text-align:center"><b>1 (corner → OG)</b></td><td style="text-align:center">0</td><td style="padding:6px;color:var(--mut)">The pre-match "set-pieces to break a low block" thesis delivered the winner</td></tr>
+      <tr><td style="padding:6px">Penalties / Cards</td><td style="text-align:center">Pen 1 / Yellow 1</td><td style="text-align:center">0 / <span style="color:var(--warn)">TBC</span></td><td style="padding:6px;color:var(--mut)">Two VAR handball calls (one against, one for) were the turning points</td></tr>
+    </table></div>
+    <p style="font-size:12px;color:var(--mut);margin-top:4px">Note: full post-match technical stats (exact shots/SoT/xG/box touches/corners) were not all publicly retrievable; possession ≈58% and pass ≈88% come from Opta/FotMob reporting, and "Jordan more shots and SoT" is consistent across match reports; specific figures are marked <span style="color:var(--warn)">TBC</span>.</p>
+
+    <h4>③ Tactical Review</h4>
+    <div class="insight"><div class="who">① The high press is a double-edged sword: Jordan stayed in it via the counter</div>Austria's Rangnick high press did control the ball (≈58%), but it also left space behind for Jordan's quick transitions — Olwan's first-ever World Cup goal came on the break, and Jordan finished with more shots and SoT than Austria. <b>This tells you Austria</b>: gegenpressing exposes space behind against a team with counter-attacking teeth; they won on individual quality and finishing, not systemic dominance.</div>
+    <div class="insight"><div class="who">② Set-pieces were the key to breaking through, as predicted</div>The pre-match read was "to break a packed block you need set-pieces and crossing quality" — and the decisive 2-1 came from a corner forcing the Al-Arab own goal, Alaba/Sabitzer delivery plus aerial presence creating chaos. <b>This tells you Austria</b>: when open play stalls, set-pieces are their most reliable source of goals — a genuine tactical asset.</div>
+    <div class="insight"><div class="who">③ Arnautovic's finishing value: from chalked off to converted</div>The 37-year-old had one goal disallowed (Posch handball) yet held his nerve to convert the stoppage-time penalty. <b>This tells you Austria</b>: lacking a steady open-play threat, the veteran's big-game temperament and target-man role remain the team's match-winner — the pre-match "fulcrum + finisher" billing was accurate.</div>
+    <div class="insight"><div class="who">④ Jordan are no pushovers: a debut beyond their ranking</div>FIFA #63 Jordan — without injured strikers (Al-Naimat / Sabra) and with Al-Tamari only a sub — still out-shot Austria, scored their first World Cup goal and dragged the game into 10 minutes of stoppage-time tension. <b>This tells you Jordan</b>: they are a willing-to-press, sharp-on-the-break organised side, not the "sit deep and limit damage" minnow the market expected. Underestimate them at your peril.</div>
+    <div class="insight"><div class="who">⑤ Two VAR handball calls defined the game's arc</div>69' chalked off an Austria goal; 90+12' awarded Austria a penalty — VAR shifted the score twice within minutes, sparking a player clash and Sabitzer's yellow. <b>This tells you</b>: in an evenly matched, open-play stalemate, set-pieces and refereeing detail (handball thresholds) carry outsized weight — the 3-1 scoreline masks how tight the contest was.</div>
+
+    <h4>④ Prediction Reconciliation (checking each pre-match call)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>Baseline "Austria win" → actual 3-1 victory</b>: outcome confirmed, Austria took the three points as expected.</li>
+      <li>✗ <b>Scoreline "Austria win 2-0 comfortably (clean sheet)" → actual 3-1 (conceded 1)</b>: the 2-goal margin was right, but <b>no clean sheet</b> — Jordan scored, "comfortable" did not hold, the game was a grind.</li>
+      <li>✓ <b>Over 2.5 / total line 3.0 → actual 4 goals (Over)</b>: the lean towards goals/Over was confirmed.</li>
+      <li>✓ <b>Austria -1.5 handicap → won by 2, handicap covered</b>: the handicap baseline came in.</li>
+      <li>✗ <b>"Jordan sit deep, lose narrowly" → actual Jordan pressed and out-shot Austria</b>: Jordan didn't park the bus; they attacked and countered, a clear miss versus the "give up possession and defend" profile.</li>
+      <li>△ <b>"Al-Tamari is Jordan's only attacking spark" → he only came on in the 88th minute</b>: Jordan's attack wasn't all about him; Olwan's solo goal was the highlight, so the dependence call needs revising.</li>
+    </ul>
+
+    <h4>⑤ Carry-over to the Next Match</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇦🇹 Austria → 6/22 vs Argentina (AT&T Stadium, Arlington)</div>Group rivals Argentina won 3-0 over Algeria in Round 1 (Messi hat-trick); Austria sit level on 3 points but face a step up in class. The <b>space-behind-the-press</b> problem exposed here will be magnified against Argentina's vertical speed; the thin open-play threat and over-reliance on set-pieces and the veteran finisher are even riskier. Sabitzer is on a yellow and must mind accumulation/suspension risk. A pivotal jostle for second place.</div>
+      <div class="insight" style="margin:0"><div class="who">🇯🇴 Jordan → 6/22 vs Algeria (Levi's Stadium, Santa Clara — same venue again)</div>Beaten but with a debut beyond expectations (more shots, first goal), Jordan face an Algeria side that lost 0-3 to Argentina — this is Jordan's <b>most realistic match to take points / chase advancement</b>. The repeatable scoring route is the Olwan-style fast break; if Al-Tamari starts, the attack gains more layers. The fix needed is set-piece defending — the fatal own goal came from a corner, so beware Algeria's aerial threat.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Sources: Opta Analyst, FIFA, Yahoo Sports, Deccan Chronicle, Sports Illustrated. For analysis only — not betting advice.</p>
+  </section>
+
+  <div class="summary">
+    <h3>&#x1F4CB; QUICK SUMMARY (Read this first)</h3>
+    <p class="lead">This is a <b>clear talent mismatch between an established European side and an Asian debutant</b>: FIFA #24 Austria (Rangnick's high-press system, packed with top-five-league regulars in Alaba, Sabitzer and Arnautovic) vs Jordan (FIFA #63, 2023 Asian Cup runners-up, but with a badly depleted attack) making their first-ever World Cup appearance. The market tilts heavily towards Austria — Austria win &#x2248;1.34 (de-vigged implied &#x2248;71%), draw &#x2248;5.25-5.50 (&#x2248;17%), Jordan win &#x2248;8.00-9.50 (&#x2248;12%). Prediction market Kalshi gives Austria 73%, draw 17%, Jordan 11% — near-identical to the de-vigged odds. Jordan's top scorer Yazan Al-Naimat (knee) and rising forward Ibrahim Sabra (ankle ligament rupture) are both ruled out through injury, gutting their attack. Baseline script: <b>Austria win 2-0</b> comfortably; Jordan sit deep to limit the damage; with a route to second place (advancing) on the line, Austria are motivated to win and pad their goal difference.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Austria de-vigged win prob.</div><div class="v" style="color:#f08a82">&#x2248;71%</div></div>
+      <div class="key"><div class="k">Jordan de-vigged win prob.</div><div class="v" style="color:#7fa6e6">&#x2248;12%</div></div>
+      <div class="key"><div class="k">Austria last World Cup</div><div class="v" style="color:var(--warn)">28 yrs ago</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Jordan's two strikers both injured out</b>: Top scorer Yazan Al-Naimat (8 goals in qualifying) and rising talent Ibrahim Sabra are both unavailable — Jordan's two sharpest attacking weapons gone at once, forcing a reshuffled front line.</li>
+      <li><b>Mousa Al-Tamari's individual quality</b>: The Rennes (Ligue 1) winger is the absolute fulcrum of Jordan's remaining attack — whether he can create under Austria's press will determine if Jordan steal anything.</li>
+      <li><b>Efficiency of Rangnick's high press</b>: Austria's gegenpressing aims to win the ball high and break through quickly; against a deep-sitting Jordan, the key is patience versus a packed block and set-piece quality.</li>
+      <li><b>Austria's own absence</b>: Christoph Baumgartner withdrew from the squad with a muscle injury before the warm-up, costing Austria a highly mobile attacking option and slightly altering their front-line mix.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">&#x1F534;</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · Sourced + Why it matters</span></h2>
+    <div class="sub">First-hand signals affecting this match — each item explained for tactical or outcome impact</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">Jordan · Dual Attacking Absence <span style="color:var(--mut);font-weight:400">· Multiple sources · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Yazan Al-Naimat (knee) and Ibrahim Sabra (ankle ligament rupture) both ruled out</b> — Jordan's World Cup debut attack is gutted</div>
+      <p style="font-size:13.5px">Jordan's top scorer Yazan Al-Naimat has been sidelined with a knee injury sustained at the 2025 Arab Cup — he scored 8 goals in World Cup qualifying and was central to their historic qualification. Compounding the blow, 20-year-old forward Ibrahim Sabra suffered a left-ankle ligament rupture in training and withdrew from the squad, with Mohammad Taha called up as his replacement. Losing both of their most threatening forwards means Jordan must improvise a front line on their World Cup debut, likely with Ali Olwan leading the line. <span style="color:var(--warn)">[Final lineup and recovery details subject to official pre-match squad sheet — TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Jordan were already the weakest side in this group; losing two front-line scorers leaves them almost entirely reliant on Al-Tamari's individual quality and sporadic counters against Austria. This further inflates Austria's win-and-pad-the-margin expectation and reinforces market interest in the Austria handicap and the Over.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://newsable.asianetnews.com/sports/jordan-world-cup-2026-squad-al-tamari-leads-al-naimat-out-injured-articleshow-yp25sgh" style="color:var(--accent)">Asianet — Al-Naimat out</a> · <a href="https://onefootball.com/en/news/ibrahim-sabra-out-mohammad-taha-completes-jordans-2026-world-cup-squad-42984089" style="color:var(--accent)">OneFootball — Sabra out</a> · <a href="https://www.aljazeera.com/sports/2026/6/6/jordan-world-cup-2026-preview-players-to-watch-group-matches-and-squad" style="color:var(--accent)">Al Jazeera — Jordan preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Austria · Baumgartner Pre-Tournament Injury <span style="color:var(--mut);font-weight:400">· FourFourTwo · Sports Mole · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Austria <b>lose Christoph Baumgartner</b> (muscle injury) before the Tunisia friendly — out of the World Cup squad</div>
+      <p style="font-size:13.5px">Austria took a knock on the eve of the tournament: Leipzig midfielder Christoph Baumgartner pulled a muscle ahead of the warm-up friendly against Tunisia and was forced to withdraw from the squad. Baumgartner is one of Rangnick's most mobile attacking / advanced-midfield options, providing energy in the press and in the final third. That said, Austria's attacking depth is solid — Schmid, Wimmer and Gregoritsch can fill the role. <span style="color:var(--warn)">[Replacement and final lineup subject to official pre-match squad sheet — TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Baumgartner's absence reduces Austria's running and penetration layers in the final third, but against a deep-sitting Jordan the impact is limited — Austria retain a clear personnel and structural edge. The news affects how convincing the win looks more than the win itself.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.fourfourtwo.com/team/austria-world-cup-2026-squad" style="color:var(--accent)">FourFourTwo — Austria squad</a> · <a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html" style="color:var(--accent)">Sports Mole — Team news / lineups</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Austria · Strong Qualifying + Return After 28 Years <span style="color:var(--mut);font-weight:400">· UEFA · Squawka · 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Austria topped UEFA Group H (19 pts in 8 games), <b>their first World Cup finals since 1998</b></div>
+      <p style="font-size:13.5px">Austria delivered a strong qualifying campaign under Rangnick: top of UEFA Group H with 19 points from 8 games, two clear of Bosnia and Herzegovina, winning six and losing only away to Romania and drawing at home with Bosnia. Since taking over in 2022, Rangnick has qualified Austria for back-to-back major tournaments (Euros + World Cup), forging one of Europe's most cohesive and aggressive mid-tier sides. Captained by Alaba, they are unbeaten in their last 5. <span style="color:var(--warn)">[Match-day form and starting XI subject to warm-ups and official squad — TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Austria not only have the talent edge but also clear advantages in form and systemic maturity. With Argentina in the group, Austria's realistic goal of finishing second (advancing) demands they win and pad their goal difference against Jordan — a strong incentive to win convincingly.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d159406296-f54718194327-1000--austria-at-the-world-cup-2026-squad-fixtures-group-and-hi/" style="color:var(--accent)">UEFA — Austria qualifying / overview</a> · <a href="https://www.squawka.com/en/news/world-cup/austria-world-cup-2026-fixtures-squad-analysis/" style="color:var(--accent)">Squawka — Austria analysis</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Jordan · Defensive Form Signal <span style="color:var(--mut);font-weight:400">· Sports Mole · Multiple sources · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Jordan have <b>conceded at least 2 goals in each of their last 5</b>; Asian Cup pedigree meets a World Cup-level reality gap</div>
+      <p style="font-size:13.5px">Despite their 2023 Asian Cup runners-up pedigree (lost the final to Qatar), Jordan's recent defensive form is worrying — they have conceded at least 2 goals in each of their last 5 matches. The jump from the Asian stage to a World Cup group with Argentina and Austria is a huge step up in intensity and opponent quality. Jordan's final tune-up was against Colombia on June 7. <span style="color:var(--warn)">[Friendly opposition and rotation context — whether recent goals-against figures are representative is TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Jordan's leaky recent defending, layered on top of the dual striker absence, has the market broadly expecting Jordan to cede possession and sit deep to limit goals conceded. This reinforces attention on the Austria handicap (-1.5 / -2) and the Over (total line 3.0).</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html" style="color:var(--accent)">Sports Mole — Jordan recent goals conceded</a> · <a href="https://www.goal.com/en/world-cup-teams/group-j/world-cup-2026-guide-jordan/O~blt19bcc56475c3253f" style="color:var(--accent)">Goal — Jordan guide</a></div>
+    </div>
+  </section>
+
+  <!-- Data Section -->
+  <section>
+    <h2><span class="n">1</span> Data (Core)</h2>
+    <div class="sub">FIFA rankings · 1X2 de-vigged implied probabilities · Group J picture · Goals market — all charts based on verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 Implied Probabilities (de-vigged, DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 Goals Implied Probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group J — FIFA Rankings (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall Strength Profile (analyst assessment 0-10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Data Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>&#x1F1E6;&#x1F1F9; Austria</th><th>&#x1F1EF;&#x1F1F4; Jordan</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#24</td><td class="sc">#63</td></tr>
+      <tr><td>World Cup History</td><td class="ht">First WC since 1998 (28-year absence)</td><td class="sc">First-ever appearance (one of four debutants)</td></tr>
+      <tr><td>Recent Form</td><td class="ht">Unbeaten in last 5; lost only 1 of 8 in qualifying</td><td class="sc">2023 Asian Cup runners-up; conceded &#x2265;2 in last 5</td></tr>
+      <tr><td>Head Coach</td><td class="ht">Ralf Rangnick</td><td class="sc">Jamal Sellami</td></tr>
+      <tr><td>1X2 Odds (DECIMAL)</td><td class="ht">Win 1.34 (implied &#x2248;71%)</td><td class="sc">Win 8.00-9.50 (&#x2248;12%) · Draw 5.25-5.50 (&#x2248;17%)</td></tr>
+      <tr><td>Over / Under (total 3.0)</td><td colspan="2" class="sc">Total line 3.0; Over @ approx. 2.10 (+110) favored — market leans to goals</td></tr>
+      <tr><td>Head-to-Head</td><td colspan="2">No traceable competitive record (no prior World Cup meeting)</td></tr>
+      <tr><td>Key Absences</td><td class="ht">Christoph Baumgartner (muscle injury)</td><td class="sc">Yazan Al-Naimat (knee) · Ibrahim Sabra (ankle ligament rupture)</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; Probabilities are de-vigged implied values from DECIMAL odds (&#x2248;71/17/12). Odds source: moneyline -290/-300 &#x2192; Austria 1.34/1.33; +425/+450 &#x2192; Draw 5.25/5.50; +700/+800/+950 &#x2192; Jordan 8.00/9.00/9.50. Total line 3.0, Over +110 (approx. 2.10) favored. Prediction market Kalshi: Austria 73%, Draw 17%, Jordan 11% — near-perfect alignment with market de-vigged odds, suggesting fair pricing and no significant emotional premium. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">&#x1F525;</span> Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / odds / money / sentiment</span></h2>
+    <div class="sub">Consensus on an Austria win is overwhelming; the real division is by how much — the handicap (-1.5/-2) and the total (3.0) are the markets in focus</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">&#x1F525;&#x1F525;<span style="opacity:.45">&#x1F525;</span><span style="opacity:.25">&#x1F525;&#x1F525;</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · Austria win direction unified; little narrative premium</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">This is a lower-profile fixture — consensus on an Austria win is very strong with almost no narrative premium; Jordan's debut adds mild novelty. Emotional money is limited, mostly clustered on the Austria handicap and the Over.</div>
+    </div>
+
+    <h4>&#x2460; Expert Aggregate (Direction count: Austria win All · Jordan win 0 · Draw 0)</h4>
+    <table>
+      <tr><th>Source</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td><b>Austria 2-0</b> or similar comfortable win</td></tr>
+      <tr><td>Rotowire</td><td>Prediction / lineup media</td><td>Austria win; Jordan strikers out, blunt attack</td></tr>
+      <tr><td>VSiN</td><td>US betting media</td><td>Austria win + <b>lean handicap / Over</b></td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Austria win; clear quality gap</td></tr>
+      <tr><td>Racing Post</td><td>Betting media</td><td>Austria win; Bet Builder leans Austria margin + goals</td></tr>
+      <tr><td>101 Great Goals</td><td>Preview media</td><td>Austria win; Jordan sit deep to limit goals conceded</td></tr>
+    </table>
+    <div class="flag">&#x26A0; <b>Heat signal (low)</b>: Directional consensus on an Austria win is absolute — but this is reasonable consensus, not over-heat. The real division is the <b>handicap margin</b> (can Austria win by 2+) and the <b>total</b> (does the 3.0 line cash). Emotional money is limited; no single-direction anomaly flows.</div>
+
+    <h4 style="margin-top:20px">&#x2461; Odds Movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Timestamp</th><th>Market</th><th>Austria Win</th><th>Reading</th></tr>
+      <tr><td>Open</td><td>1X2</td><td class="ht">1.34 (approx. -290)</td><td>Strong tilt; Draw 5.25 / Jordan 8.00-9.50</td></tr>
+      <tr><td>Jun 15-16 close</td><td>BetOnline et al.</td><td class="ht">1.34 (-295)</td><td>Stable; Jordan best price +950 (9.50)</td></tr>
+      <tr><td>Jun 15-16</td><td>Total line 3.0</td><td colspan="2" class="ht">Over +110 (approx. 2.10); Under slightly shorter</td></tr>
+      <tr><td>Asian handicap (ref.)</td><td>Austria -1.5 / -2</td><td colspan="2" class="sc">Austria -1.5 is the baseline handicap band (line not odds — TBC)</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; The 1X2 line has barely moved — pricing is highly stable. The most active money is on the <b>handicap and the 3.0 total</b> — Jordan's dual striker absence plus leaky recent defending reinforce the Over and the Austria handicap. The -1.5/-2 band captures the "Austria must win clearly" baseline. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">&#x2462; Prediction Markets &amp; &#x2463; Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi prediction market</b>: Austria 73%, Draw 17%, Jordan 11% — near-identical to de-vigged market odds (71/17/12), confirming both pools have fully converged with no emotional gap.</li>
+      <li><b>Expert direction</b>: Every prediction outlet retrieved favors Austria; the only disagreement is winning margin and whether the Over hits. No one picks Jordan to win or draw.</li>
+      <li><b>Sentiment focus</b>: Jordan's "first-ever World Cup appearance" narrative generates some emotional traffic (an Asian football milestone); Austria's "back after 28 years" is also a storyline — but as a fixture less in the spotlight than Argentina's, overall heat is modest.</li>
+      <li><b>Money flow</b>: No observed single-direction anomaly money; the handicap and the Over are the few markets with real discussion.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">&#x1F9ED; <b>Summary read</b>: Betting markets and the Kalshi prediction market have fully converged (Austria &#x2248;71-73%) — Heat Index <b>2.5/5</b>. Austria win direction is unified; the only value-relevant divisions are the <b>handicap margin (-1.5/-2)</b> and the <b>3.0 total</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://vsin.com/soccer/austria-vs-jordan-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Prediction/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/austria-vs-jordan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aM2Ss5f0OfG4/">Racing Post — Odds/Betting</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-austria-vs-jordan-06-17-26-world-cup-2026/">Squawka — Preview</a> · <a href="https://sports.yahoo.com/articles/austria-vs-jordan-picks-predictions-141729026.html">Yahoo Sports — Predictions/odds</a></div>
+  </section>
+
+  <!-- Corners -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">&#x1F6A9;</span> Corner Analysis <span style="font-size:12px;color:var(--mut);font-weight:500">· Style vs. market · Handicap/total technical breakdown</span></h2>
+    <div class="sub">Austria's possession and high-press siege should produce a fairly high corner output; Jordan sitting deep and clearing frequently may push Austria's count higher; specific market lines TBC.</div>
+    <h4>&#x2460; Corner Profile (style-driven)</h4>
+    <table><tr><th>Dimension</th><th>&#x1F1E6;&#x1F1F9; Austria</th><th>&#x1F1EF;&#x1F1F4; Jordan</th><th>Implication</th></tr>
+      <tr><td>Attacking style</td><td class="ht">High press + possession siege; crossing and penetration both</td><td class="sc">Low-block defense; reliant on Al-Tamari counters</td></tr>
+      <tr><td>Est. corners per game</td><td class="ht">&#x2248;6-8 (siege side, more corners vs weaker teams) <span style="color:var(--warn)">TBC</span></td><td class="sc">&#x2248;2-4 (defending most of the time, few attacking corners) <span style="color:var(--warn)">TBC</span></td></tr>
+      <tr><td>Set-piece threat</td><td class="ht">High: Alaba/Sabitzer delivery + tall center-backs</td><td class="sc">Low-medium: limited attacking set-piece chances</td></tr>
+      <tr><td>Corner advantage</td><td class="ht">Clear edge (siege + Jordan forced clearances)</td><td class="sc">Mostly conceded corners, very few attacking</td></tr>
+    </table>
+    <h4>&#x2461; Live Market (corner lines)</h4>
+    <p>Corner total line and specific handicap odds were not retrieved in public sources at time of writing. <span style="color:var(--warn)">(TBC)</span> Based on playing-style analysis: an Austria-siege / Jordan-deep dynamic usually skews corner distribution one way; Austria's count could land in the 6-9 range, with typical benchmark totals of O/U 9.5 or 10.5 plausible — confirm actual odds on live markets.</p>
+    <h4>&#x2462; Technical Assessment</h4>
+    <div class="insight"><div class="who">Corner Handicap</div>Austria's possession and high-press siege should yield a marked corner differential, so the corner handicap likely leans to Austria's side. If Jordan fall behind early and sit everyone back, forced clearances push Austria's corner output higher still.</div>
+    <div class="insight"><div class="who">Corner Total (Over/Under)</div>Austria's siege style plus Jordan's packed defense could push the total to the mid-to-high range (near or slightly above 10). But if Austria lead 2-0 early and ease off, second-half corner output may drop, settling the total near the benchmark line.</div>
+    <div class="insight"><div class="who">Variables &amp; Two-Sided Risk</div>Match state is the main driver of corner count: if Austria keep pressing for goal difference, corners climb; if they control and slow the tempo after locking up the win, corners stabilize. Jordan contribute very few attacking corners, with limited impact on the total.</div>
+    <div class="note">Corner-specific market data not retrieved — above is qualitative, style-driven analysis. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">4</span> Referee &amp; Officiating Environment</h2>
+    <div class="note">&#x2705; <b>Confirmed</b>: FIFA has appointed <b>Mauritanian referee Dahane Beida</b> for this match — the first match official from Mauritania ever to appear at a World Cup. Beida was born in December 1991, has been a FIFA-listed international referee since 2018, is a senior official in CAF (African) competitions, and refereed the 2023 Africa Cup of Nations final (Ivory Coast vs Nigeria). <span style="color:var(--warn)">[Limited top-tier intercontinental / World Cup sample — his card discipline and average cards in a World Cup environment are TBC]</span></div>
+    <h4>Referee profile &amp; relevance to this match</h4>
+    <ul class="cl">
+      <li><b>CAF background, first World Cup</b>: Beida is experienced on the African stage but lacks directly comparable World Cup / top-tier intercontinental public data; his card counts and style at this tournament remain to be seen. <span style="color:var(--warn)">(Average cards — TBC)</span></li>
+      <li><b>Goalkeeper 8-second hold / 5-second throw-in limit</b>: If Jordan trail and try to time-waste, tools are restricted; Austria's lead management is similarly constrained.</li>
+      <li><b>Only captains can speak to referees</b>: Austria captain David Alaba; Jordan captain Ehsan Haddad (if starting) — both experienced enough to adapt without issue.</li>
+      <li><b>Semi-automated offside</b>: Faster, more precise; Austria forwards' borderline runs will be captured accurately.</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>Referee assessment</b>: In a lopsided match with Austria dominating the ball, fouls and duels will likely concentrate in Jordan's half, with a slightly elevated Jordan booking risk. Beida's AFCON-final résumé shows he can handle a big occasion, but his specific tolerance and average cards have no reliable World Cup reference point yet — until more data is available, the officiating angle is not strongly actionable.</div>
+  </section>
+
+  <!-- Lineups -->
+  <section>
+    <h2><span class="n">2</span> Starting Lineups &amp; Key Players</h2>
+    <div class="sub">Predicted lineups (media analysis — not official; subject to pre-match squad announcements)</div>
+    <h4>&#x1F1E6;&#x1F1F9; Austria Predicted Lineup (4-2-3-1)</h4>
+    <div class="lineup">A. Schlager; Laimer · Lienhart · Alaba · Mwene; Seiwald · X. Schlager; Schmid · Sabitzer · Gregoritsch; Arnautovic</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Form / Notes</th></tr>
+      <tr><td class="ht">Marko Arnautovic</td><td>Striker / European club</td><td>Experienced lone striker; fulcrum and finisher; key to unlocking a packed block</td></tr>
+      <tr><td class="ht">David Alaba (C)</td><td>Defender / Real Madrid</td><td>Captain and leader; deep buildup and set-piece delivery hub</td></tr>
+      <tr><td class="ht">Marcel Sabitzer</td><td>Midfielder / Borussia Dortmund</td><td>Attacking-midfield engine; primary source of long shots and chance creation</td></tr>
+      <tr><td class="ht">Konrad Laimer</td><td>Right-back / Midfield / Bayern Munich</td><td>Coverage and pressing pillar of Rangnick's high-press system</td></tr>
+    </table>
+    <h4>&#x1F1EF;&#x1F1F4; Jordan Predicted Lineup (4-3-3 / 3-4-3)</h4>
+    <div class="lineup">Abulaila; Nasib · Al-Arab · Marei; Abu Hashish · Al-Rashdan · Al-Rawabdeh · Taha; Tamari · Olwan · Fakhouri</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Form / Notes</th></tr>
+      <tr><td class="sc">Mousa Al-Tamari</td><td>Winger / Rennes (Ligue 1)</td><td>Jordan's star man; 7 goals, 11 assists for Rennes this season; the attacking fulcrum</td></tr>
+      <tr><td class="sc">Ali Olwan</td><td>Striker / Overseas club</td><td>Likely to lead the line after the two first-choice strikers' injuries</td></tr>
+      <tr><td class="sc">Nizar Al-Rashdan</td><td>Midfielder / Overseas club</td><td>Midfield organization and coverage; key link to Al-Tamari</td></tr>
+      <tr><td class="sc">Yazeed Abulaila</td><td>Goalkeeper / Domestic club</td><td>His shot-stopping will be critical against an Austria siege</td></tr>
+    </table>
+    <div class="note">Lineups note: Both predicted lineups are media analysis estimates (Sports Mole / Rotowire / ESPN). <b>Subject to official pre-match squad sheets.</b> Jordan's front-line selection is uncertain given the Al-Naimat and Sabra absences (TBC); Austria's front-line mix is slightly adjusted after Baumgartner's withdrawal (TBC).</div>
+  </section>
+
+  <!-- Tactics -->
+  <section>
+    <h2><span class="n">3</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">&#x1F1E6;&#x1F1F9; Austria · Ralf Rangnick</div>
+        <div class="role">4-2-3-1 high-press (gegenpressing) + rapid vertical progression</div>
+        <ul class="cl">
+          <li>Rangnick has built Austria into one of Europe's most aggressive pressing sides: win the ball high, then break through quickly, emphasizing front-foot pressure and transition speed.</li>
+          <li>Against a deep-sitting Jordan, the key is breaking down a packed block — patient wide crossing, Sabitzer's long shots and second balls, plus Alaba's set-piece delivery are the main tools.</li>
+          <li>Risk: With Jordan dropping everyone back, if Austria lack patience and force the issue, they could be caught on the counter or by set pieces; Baumgartner's absence slightly thins their final-third penetration.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">&#x1F1EF;&#x1F1F4; Jordan · Jamal Sellami</div>
+        <div class="role">Low-block compact defense + counters via Al-Tamari</div>
+        <ul class="cl">
+          <li>Moroccan coach Sellami, in charge since 2024, led Jordan to historic World Cup qualification. Against Austria, Jordan are expected to set up a compact block, compress space and limit goals conceded.</li>
+          <li>The attack relies almost entirely on Al-Tamari's individual quality and wide counters; with both first-choice strikers out, Jordan are visibly short in the final pass and finishing.</li>
+          <li>Risk: A defense that has conceded &#x2265;2 in each of its last 5, layered on top of sustained Austrian pressure, makes a clean sheet very hard; conceding first could open the door to a heavy scoreline.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Sports Mole <small>· Prediction media</small></div>Notes that Jordan have conceded at least 2 goals in each of their last 5, and with Al-Naimat and Sabra both out, Austria should profit easily going forward — projecting a comfortable 2-0. Jordan's realistic goal is to manage the goals conceded.</div>
+    <div class="insight"><div class="who">Kalshi · Prediction market <small>· Probability aggregation</small></div>Austria 73%, Draw 17%, Jordan 11% — almost identical to the de-vigged odds; quantitative consensus and market pricing are tightly converged, indicating a precisely-priced match with no emotional drift.</div>
+    <div class="insight"><div class="who">Combined · Austria profile <small>· Tactical signal</small></div>With Argentina in the group, Austria's realistic goal of finishing second means that against Jordan they must not only win but also pad their goal difference — a strong incentive to attack, supporting the Over and the handicap.</div>
+    <div class="insight"><div class="who">Combined · Jordan profile <small>· Historic milestone</small></div>Jordan's World Cup debut is itself a milestone for Asian football (built on their 2023 Asian Cup runners-up run). But the dual striker absence forces Sellami to rebuild the attacking plan, with Al-Tamari nearly the only spark — Jordan's more realistic aim is to fight for points across their three group games rather than going at Austria in the opener.</div>
+  </section>
+
+  <!-- Summary -->
+  <section>
+    <h2><span class="n">6</span> Summary Assessment &amp; TBC Items</h2>
+    <ul class="cl">
+      <li><b>Outcome lean</b>: Austria 2-0 is the baseline; 1-0 / 3-0 are also high-probability; a draw (&#x2248;17%) and a Jordan win (&#x2248;12%) are tail-end risks (Jordan sitting deep + Al-Tamari counters being the only route to points).</li>
+      <li><b>Key players</b>: Arnautovic (Austria / fulcrum-finisher), Sabitzer (Austria / creation and long shots), Alaba (Austria / set pieces and leadership), Al-Tamari (Jordan / sole attacking spark).</li>
+      <li><b>Match-deciding factor</b>: Austria's patience and set-piece quality in breaking down a packed block; Jordan's defensive resilience (leaky recently) and Al-Tamari's counter efficiency decide whether they steal anything. The risk of Jordan collapsing after conceding first is the main source of a heavy-scoreline scenario.</li>
+      <li><b>Market view</b>: Markets and Kalshi fully converged (Austria &#x2248;71-73%), no emotional premium — Heat Index 2.5/5. Most information-rich markets are the <b>handicap margin (-1.5/-2)</b> and the <b>3.0 total</b>; Asian handicap Austria -1.5 is the baseline line.</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>TBC items</b>: &#x2460; Jordan's final attacking lineup (reshuffle after Al-Naimat / Sabra absences); &#x2461; Austria's Baumgartner replacement and front-line mix; &#x2462; Referee Beida's specific tolerance and average cards in a World Cup environment; &#x2463; Rotation context and representativeness of Jordan's recent goals-against figures; &#x2464; Specific corner market odds not retrieved; &#x2465; Asian handicap exact line and odds — check live market before kick-off; &#x2466; Final Over/Under pricing on the 3.0 total.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — Group J confirmed (Argentina, Austria, Algeria, Jordan)</a> · <a href="https://www.espn.com/soccer/story/_/id/49058237/fifa-world-cup-2026-austria-vs-jordan-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — Schedule/Lineups/Referee</a> · <a href="https://www.sportsmole.co.uk/football/austria/world-cup-2026/preview/austria-vs-jordan-prediction-team-news-lineups_599171.html">Sports Mole — Preview/Team news/Lineups</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/austria-vs-jordan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-118225">Rotowire — Lineups/Tactics</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-austria-vs-jordan-06-17-26-world-cup-2026/">Squawka — Preview analysis</a> · <a href="https://www.101greatgoals.com/match-previews/world-cup-matches/austria-v-jordan-world-cup-2026-line-ups-stats-preview-tv-channel-live-online-stream-prediction/">101 Great Goals — Preview/Odds</a><br>
+      • <a href="https://vsin.com/soccer/austria-vs-jordan-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Prediction/Odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/austria-vs-jordan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aM2Ss5f0OfG4/">Racing Post — Odds/Betting</a> · <a href="https://sports.yahoo.com/articles/austria-vs-jordan-picks-predictions-141729026.html">Yahoo Sports — Predictions/Odds</a><br>
+      • <a href="https://newsable.asianetnews.com/sports/jordan-world-cup-2026-squad-al-tamari-leads-al-naimat-out-injured-articleshow-yp25sgh">Asianet — Jordan squad / Al-Naimat out</a> · <a href="https://onefootball.com/en/news/ibrahim-sabra-out-mohammad-taha-completes-jordans-2026-world-cup-squad-42984089">OneFootball — Sabra out / Taha in</a> · <a href="https://www.aljazeera.com/sports/2026/6/6/jordan-world-cup-2026-preview-players-to-watch-group-matches-and-squad">Al Jazeera — Jordan preview</a><br>
+      • <a href="https://www.goal.com/en/world-cup-teams/group-j/world-cup-2026-guide-jordan/O~blt19bcc56475c3253f">Goal — Jordan guide / coach Sellami</a> · <a href="https://www.fourfourtwo.com/team/austria-world-cup-2026-squad">FourFourTwo — Austria squad / Baumgartner out</a> · <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d159406296-f54718194327-1000--austria-at-the-world-cup-2026-squad-fixtures-group-and-hi/">UEFA — Austria qualifying / overview</a><br>
+      • <a href="https://ghanasoccernet.com/world-cup-2026-mauritanian-referee-dahane-beida-appointed-for-austria-vs-jordan-clash">GHANAsoccernet — Referee Beida appointment</a> · <a href="https://en.wikipedia.org/wiki/Dahane_Beida">Wikipedia — Dahane Beida profile</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referee list</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-15 · Charts based on verified data; radar chart reflects analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'Segoe UI',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Austria Win','Draw','Jordan Win'],datasets:[{data:[71,17,12],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:85,title:{display:true,text:'Implied Probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied Probability % (de-vigged, Over lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Argentina','Austria','Algeria','Jordan'],datasets:[{data:[1,24,28,63],backgroundColor:['#6cadde',HT,'#1f7a3d',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA Ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive Stability','Attack Finishing','Midfield Control','Set Pieces','Individual Ceiling','Tournament Exp.'],
+  datasets:[
+   {label:'Austria',data:[7.5,7,8,7.5,7.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Jordan',data:[5,4.5,5,4.5,6,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

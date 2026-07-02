@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 厄瓜多尔 vs 德国 · 2026世界杯 E组末轮（德国已出线轮换 · 厄瓜多尔背水求生）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-ecuador-vs-germany.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-ecuador-vs-germany.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-ecuador-vs-germany.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-ecuador-vs-germany.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-ecuador-vs-germany.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#ffd000;--sc:#111111;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a4f9c,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0e1f2a,#1a1c10);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ffe066;font-weight:600}td.sc{color:#cbd5e1;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-ecuador-vs-germany.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-ecuador-vs-germany.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-ecuador-vs-germany.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · E组末轮 · 已出线的德国（争头名 + 大概率轮换） vs 背水求生的厄瓜多尔</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 厄瓜多尔 2-1 德国</span>
+  <h1>厄瓜多尔 vs 德国</h1>
+  <div class="meta">2026年6月25日 · 东卢瑟福 MetLife Stadium（新泽西）· 约 16:00 ET 开球 · E组（同组：科特迪瓦、库拉索）· 末轮（同时进行：库拉索 vs 科特迪瓦）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ffe066">🇪🇨 厄瓜多尔</div><div class="rk">0-1 科特迪瓦 + 0-0 库拉索 · 1 分（净 -1，两轮 0 进球）· 必须取胜方有出线机会（争第三名最佳席位）· 第 5 次参赛</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e9eef8">🇩🇪 德国</div><div class="rk">7-1 库拉索 + 2-1 科特迪瓦 · 6 分（净 +7）· 已锁定 32 强、争小组头名 · 大概率轮换</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-26） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 厄瓜多尔 2-1 德国（半场 1-1） · 06-25</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">新泽西 MetLife：厄瓜多尔上演逆转，<b>掀翻已出线的德国、爆冷晋级 32 强</b>。德国开场闪击——<b>Leroy Sané 第 2 分钟（109 秒）</b>抢开纪录（厄瓜多尔曾抗议建队过程中 Pavlović 对 Vite 抬脚犯规、VAR 检查后进球有效）；但厄瓜多尔仅 7 分钟后回应，<b>Nilson Angulo 第 9 分钟</b>一记禁区外弧线远射扳平——<b>这是厄瓜多尔本届首球（全队第 40 次尝试才打破零进球魔咒）</b>。下半场德国一度获点球（Ordóñez 对 Havertz 犯规），但主裁 Tori Penso 经场边 VAR 回看（判定 Sané 在此前犯规于 Vite）<b>取消点球</b>；随后 <b>Gonzalo Plata 第 77 分钟</b>在角球中由 Rodríguez 头球摆渡、抢在 Neuer 出击失误前捅射锁定胜局。<b>德国虽负但凭净胜球 +7（6 分）仍夺 E 组头名</b>，科特迪瓦居次，库拉索出局；厄瓜多尔升至 4 分、以最佳第三名之一晋级——<b>队史自 2006 年以来首次进入世界杯淘汰赛</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 2' Sané（德 · VAR 检查后有效）｜9' Angulo（厄 · 本届首球、远射）｜下半场初德国点球被 VAR 取消｜77' Plata（厄 · 角球捅射绝杀）· 半场 1-1</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇨 厄瓜多尔</th><th>🇩🇪 德国</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.51</b></td><td>0.65</td><td>厄瓜多尔 xG 反超德国——这不是"运气球"逆转，机会质量本就占优；德国 0.65 是阵地战创造的彻底哑火</td></tr>
+      <tr><td class="ht">射门（本场）</td><td><b>7</b>（本届单场最少）</td><td>待核</td><td>厄瓜多尔仅 7 射却高效（1.51 xG），印证其"少机会、高质量"的反击模型——把稀缺射门转成进球</td></tr>
+      <tr><td class="ht">控球</td><td>待核</td><td>待核</td><td>本场单场控球分项未多源核得；定性：德国控球但缺穿透，厄瓜多尔放弃球权打反击与定位球</td></tr>
+      <tr><td class="ht">关键进球方式</td><td colspan="2"><b>9' Angulo 远射（首球破魔咒）· 77' Plata 角球二点捅射</b></td><td>两球分别来自"远射灵光"与"定位球二点"——正是赛前判定的厄瓜多尔唯二现实得分路径</td></tr>
+      <tr><td class="ht">VAR 关键判罚</td><td colspan="2"><b>下半场德国点球（Ordóñez 对 Havertz）经 Penso 场边回看取消</b>（认定 Sané 此前犯规于 Vite）</td><td>关键转折点：若点球判罚，德国可能 2-1 领先；VAR 改判直接保住厄瓜多尔的逆转窗口</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/ecuador-vs-germany-stats-2026-world-cup">Opta Analyst — Ecuador vs Germany Stats（xG 1.51 vs 0.65 · 厄 7 射）</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760468/germany-ecuador">ESPN — Final Score / Game Info（gameId 760468）</a> · <a href="https://www.skysports.com/football/news/12098/13556661/world-cup-2026-ecuador-2-1-germany-south-american-side-stun-four-time-winners-to-reach-knockout-stages">Sky Sports — 战报（进球时间/VAR/角球过程）</a>。<span style="color:var(--warn)">[单场控球、射正、角球、黄红牌分项未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">德国"最强阵 + 零轮换"仍被逆转——这暴露的是阵地解题，不是轮换</div>赛前最大变量"德国轮换"实际落定为<b>零轮换、最强 XI（Neuer + Sané/Musiala/Wirtz/Havertz）</b>，开场 2 分钟即由 Sané 闪击破门，但全场 xG 仅 <b>0.65</b>。<b>说明德国在派出全主力的前提下，仍无法持续撕开一支纪律严明的低位防线——这是结构性的阵地解题问题，而非疲劳或练兵所致</b>，对其淘汰赛前景是真正的警钟。</div>
+    <div class="insight"><div class="who">厄瓜多尔零进球魔咒一破即逆转——"少机会高质量"模型奏效</div>全场仅 7 射（本届单场最少）却打出 1.51 xG、攻入 2 球。<b>说明 Beccacece 的体系不靠控球与射门量，而靠把稀缺机会转成高质量射门</b>——Angulo 的远射与 Plata 的定位球二点，正是赛前点名的唯二现实得分路径，本场两条都兑现。</div>
+    <div class="insight"><div class="who">改打 4-4-2 是逆转的结构前提</div>厄瓜多尔放弃赛前预测的 3-5-2 翼卫体系、官方首发改 <b>4-4-2 双前锋</b>，Angulo 进 XI 增加边路与远射直接性（9' 远射即出自这套更进攻的结构）。<b>说明 Beccacece 在背水一战下主动加码进攻冒险，而非纯深蹲——这是其敢于"求胜而非求和"的战术选择</b>。</div>
+    <div class="insight"><div class="who">VAR 取消德国点球是胜负手级别的临场转折</div>下半场初德国获点球、随即被 Penso 经场边回看取消（认定 Sané 此前犯规于 Vite）。<b>说明本场胜负的天平在一次关键判罚上发生倾斜</b>——若点球成立，德国大概率重夺领先，逆转剧本可能改写；Penso 敢吹敢改的执法尺度与赛前画像一致。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">德国控制性小胜（基准剧本）</td><td style="color:var(--bad)"><b>✗ 落空（爆冷输球）</b></td><td>厄瓜多尔 2-1 逆转，基准剧本被推翻——这是赛前已标注"平局尾部偏厚、厄取胜中等概率（≈27%）"的尾部情形落地</td></tr>
+      <tr><td class="ht">德国胜率不到 50%、平/厄尾部具博弈价值</td><td style="color:var(--good)"><b>✓ 预警兑现</b></td><td>赛前明确"德国胜率不到 50%、非一边倒"，并点出厄瓜多尔取胜出线是中等概率事件——结果落入此尾部</td></tr>
+      <tr><td class="ht">"德国大概率轮换"假设</td><td style="color:var(--warn)"><b>~ 被官方修正</b></td><td>官方首发模块已修正为"零轮换/最强阵"；这反而强化了结论的分量——满血德国仍被逆转</td></tr>
+      <tr><td class="ht">厄瓜多尔零进球魔咒是最大障碍</td><td style="color:var(--good)"><b>✓ 命中且被打破</b></td><td>赛前反复强调零进球是其最大问号；本场第 40 次尝试破门、且一破即逆转</td></tr>
+      <tr><td class="ht">唯一活路=反击 + 定位球</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>两球分别来自远射反击（9'）与角球二点（77'）——正是赛前点名的两条路径</td></tr>
+      <tr><td class="ht">大/小 2.5 球</td><td style="color:var(--warn)"><b>~ 走小（3 球压线但实为 2-1）</b></td><td>共 3 球恰好越 2.5，但过程为低 xG 的"效率球"，与"大球承压"判读方向一致</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#3fae6a">🇪🇨 厄瓜多尔 · 晋级 32 强（最佳第三名）</h4>
+        <ul class="watch">
+          <li><b>以最佳第三名之一晋级 32 强</b>，<b>队史自 2006 年以来首次进入世界杯淘汰赛</b>——下一场对手与时间取决于淘汰赛对阵表（最佳第三名席位匹配，待 FIFA 官方对阵确定）。</li>
+          <li><b>可复制的得分路径已验证</b>：远射灵光（Angulo）+ 定位球二点（Plata）——但运动战创造仍稀缺（全场仅 7 射），淘汰赛对强队需继续靠这两条路径偷分。</li>
+          <li><b>防守纪律是晋级根基</b>：低位紧凑限制了满血德国到 0.65 xG；下一场仍将以此为基本盘，需提防对手定位球与边路。</li>
+          <li><b>无伤停 carry-over</b>：本场无红牌/重大伤情多源报道，阵容大体可延续；Angulo（Sunderland）的远射、Plata 的状态是淘汰赛奇兵 <span style="color:var(--warn)">[累计黄牌停赛风险 · 待核]</span>。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fb3ec">🇩🇪 德国 · 晋级 32 强（E组头名）</h4>
+        <ul class="watch">
+          <li><b>凭净胜球 +7（6 分）仍夺 E 组头名、以头名晋级 32 强</b>——末轮输球不影响出线位次，下一场作为 E 组头名对阵相应小组的对手（待对阵表确定）。</li>
+          <li><b>阵地解题漏洞被暴露（核心带入）</b>：派最强阵仍只造 0.65 xG、被纪律型低位防线限制并逆转——<b>对手淘汰赛会复制"深蹲低位 + 远射/定位球偷袭"的厄瓜多尔剧本</b>。</li>
+          <li><b>开场闪击≠全场掌控</b>：Sané 2' 进球后德国未能维持威胁，需解决"领先后创造力骤降"的问题。</li>
+          <li><b>中卫线 + Schlotterbeck 报销的隐忧延续</b>：本场定位球失球（Plata 角球二点、Neuer 出击失误）暴露禁区防空与门将沟通问题，淘汰赛需修正 <span style="color:var(--warn)">[具体首发与轮换调整 · 待核]</span>。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 E 组末轮的<b>"动机不对称"对决</b>：德国 6 分（7-1 大胜库拉索 + 2-1 逆转科特迪瓦、净胜球 +7）<b>已提前锁定 32 强出线，本场目标只是确保小组头名与种子身份</b>，主帅 Nagelsmann 已公开表示首发"大概率是一套混合阵容"（a mix），<b>大幅轮换是本场最大变量</b>；厄瓜多尔 1 分（0-1 负科特迪瓦 + 0-0 平库拉索、净胜球 -1、<b>两轮 0 进球</b>）已被逼至悬崖——<b>必须战胜德国升到 4 分，才有望以"最佳第三名"之一搭上 32 强末班车</b>（48 队新赛制：每组前二直接晋级 + 8 支最佳第三名补位），平或负基本出局。最大不确定因素是<b>德国的轮换幅度与心态</b>：已出线 + 中卫 Schlotterbeck 因脚踝伤确认赛季报销（强制变动、Rüdiger 顶替），Nagelsmann 可能让 Wirtz/Musiala 等核心轮休、给 Undav 等替补首发机会；而厄瓜多尔则是背水一战、求胜烈度拉满，且本届防守扎实（两轮仅丢 1 球、对库拉索门将 Eloy Room 狂扑 15 次仍 0-0）。三处看点：① <b>德国轮换深度</b>对其控场与破密集上限的影响；② <b>厄瓜多尔的低位防守 + 反击/定位球</b>能否在零进球魔咒下抓住一线生机；③ <b>动机差</b>——德国保留体能 vs 厄瓜多尔拼命。基准剧本：<b>德国控制性小胜</b>，过热指数 ≈ 2/5（共识偏德国但因轮换+动机差而非一边倒深盘，信息含量集中在"德国轮换幅度与让球深度"）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">德国隐含胜率(去水)</div><div class="v" style="color:#e9eef8">≈50%</div></div>
+      <div class="key"><div class="k">厄瓜多尔隐含胜率(去水)</div><div class="v" style="color:#ffe066">≈27%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈23%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称</b>：德国 6 分已出线、本场只为头名/种子，可保守可轮换；厄瓜多尔 1 分必须取胜升到 4 分，才能争"最佳第三名"8 个补位席之一（还要看其他组第三名得失球比较）。这让"求胜烈度"完全倒向厄瓜多尔，但实力天平倒向德国。</li>
+      <li><b>德国大幅轮换（核心看点 · Nagelsmann 已确认"混合阵容"）</b>：已锁定头名争夺主动权，Nagelsmann 公开称首发"probably a mix"，Wirtz/Musiala 可能轮休、Undav（替补三球、含对科特迪瓦 94 分钟绝杀）有望首发。轮换幅度直接决定德国本场进攻烈度与让球深度——详见关键临场新闻。</li>
+      <li><b>Schlotterbeck 确认赛季报销（德国·已多源确认）</b>：对科特迪瓦一战脚踝韧带伤，确认无缘本届剩余赛程，这是德国唯一的"强制变动"，最可能由 Rüdiger 搭档 Tah 顶上中卫。</li>
+      <li><b>厄瓜多尔背水一战的低位防守 + 反击/定位球</b>：本届两轮 0 进球但仅丢 1 球、防守纪律出色（对库拉索三中柱 + 门将 Eloy Room 神扑），唯一活路是顶住德国 + 靠 36 岁射手 Enner Valencia、Caicedo 推进与定位球偷袭；面对可能大幅轮换的德国，是否能制造冷门，是本场最大悬念。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 关键球员核查 · 德国大幅轮换（Nagelsmann 确认"混合阵容"） <span style="color:var(--mut);font-weight:400">· Bundesliga 官网 / Sports Mole / RotoWire 多源一致 · 2026-06-23/24</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：德国已锁定出线，Nagelsmann 表示首发<b>"probably be a mix"（大概率混合阵容）</b>，Wirtz/Musiala 可能轮休、Undav 有望首发</div>
+      <p style="font-size:13.5px">关键球员状态多源交叉：<b>Bundesliga 官网、Sports Mole、RotoWire</b> 均报道德国主帅 <b>Julian Nagelsmann</b> 在已提前出线的背景下，确认末轮首发"大概率是一套混合阵容"——既给部分核心轮休、又保留竞争力。具体到核心：Musiala 或 Wirtz 可能被轮休（也可能继续出战以积累节奏迎接淘汰赛），有报道给出 <b>Amiri 顶替 Musiala 出任 10 号位</b>的版本；状态火热的 <b>Deniz Undav</b>（本届替补登场 3 球，含对科特迪瓦 68 分钟扳平 + 94 分钟绝杀）有望从一开始就顶替 Havertz 首发。<span style="color:var(--warn)">[确切首发与轮换幅度以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：德国"已出线、只为头名"的安全垫使其有充分轮换空间。轮换幅度越大，<b>德国破厄瓜多尔低位防守的上限与进攻烈度越可能回落</b>——对一支预计深蹲防守、本届两轮仅丢 1 球的对手，德国若派出半套替补，进球数与让球深度盘口都会承压。这是本场最大的单一变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.bundesliga.com/en/bundesliga/news/germany-options-rotate-against-ecuador-world-cup-2026-37935" style="color:var(--accent)">Bundesliga — 德国轮换选项</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/wholesale-changes-including-one-enforced-move-predicted-germany-lineup-vs-ecuador_599882.html" style="color:var(--accent)">Sports Mole — 大幅变动预测首发</a> · <a href="https://www.rotowire.com/soccer/article/ecuador-vs-germany-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-e-119485" style="color:var(--accent)">RotoWire — 战术/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">关键球员核查 · Schlotterbeck 确认赛季报销 <span style="color:var(--mut);font-weight:400">· Sports Mole / Bundesliga / ESPN 多源一致 · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：中卫 <b>Nico Schlotterbeck 脚踝韧带伤、确认无缘本届剩余赛程</b>（强制变动），Rüdiger 最可能顶替搭档 Tah</div>
+      <p style="font-size:13.5px">据 <b>Sports Mole、Bundesliga、ESPN</b>，多特蒙德中卫 <b>Nico Schlotterbeck</b> 在对科特迪瓦的 2-1 逆转中脚踝韧带受伤，已确认无缘本届世界杯剩余比赛——这是德国本场唯一的"强制变动"。最可能由 <b>Antonio Rüdiger</b> 顶替、搭档 <b>Jonathan Tah</b> 镇守中卫；Waldemar Anton、Malick Thiaw 是备选。<span style="color:var(--warn)">[具体首发中卫组合以官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在德国大概率全面轮换的背景下，中卫线的强制调整叠加可能的轮休，会让德国后防组合相对临时；但厄瓜多尔运动战威胁有限（两轮 0 进球），主要风险来自定位球与反击。这条更多影响淘汰赛阶段德国的后防稳定性，对本场则与"轮换幅度"叠加判读。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/ecuador-vs-germany-prediction-team-news-lineups_599880.html" style="color:var(--accent)">Sports Mole — 团队消息/伤情</a> · <a href="https://www.bundesliga.com/en/bundesliga/news/germany-options-rotate-against-ecuador-world-cup-2026-37935" style="color:var(--accent)">Bundesliga — 后防选项</a> · <a href="https://www.espn.com/soccer/story/_/id/49155323/ecuador-germany-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">厄瓜多尔团队消息 · 无伤停隐忧、阵容稳定 <span style="color:var(--mut);font-weight:400">· FIFA / Sports Mole / Olympics.com · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：厄瓜多尔<b>无伤病/停赛隐忧</b>，Beccacece 预计延续 3-5-2、Enner Valencia 继续首发领衔</div>
+      <p style="font-size:13.5px">据 <b>FIFA 球队页、Sports Mole、Olympics.com</b>，厄瓜多尔本届世界杯伤病表上无人在列、无停赛隐忧，主帅 <b>Sebastián Beccacece</b> 不会因 1 分的开局做大改动，预计沿用 <b>3-5-2</b>：36 岁的 <b>Enner Valencia</b>（世界杯生涯 6 球、队史头号射手）继续领衔，Gonzalo Plata 与 Jordy Caicedo 争另一前锋位，John Yeboah、Pervis Estupiñán 出任两翼卫；中场枢纽 <b>Moisés Caicedo</b>（切尔西）。<span style="color:var(--warn)">[首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：厄瓜多尔阵容齐整、防守纪律强（两轮仅丢 1 球），唯一短板是<b>零进球</b>——必须靠 Valencia 的支点与 Caicedo 推进、定位球把握稀有机会。对手德国若大幅轮换，正是厄瓜多尔制造冷门、抢分出线的窗口。人员可用性决定其能否把比赛拖入可控分差。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/ecuador/team-news" style="color:var(--accent)">FIFA — 厄瓜多尔球队消息</a> · <a href="https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/valencia-aiming-for-goalscoring-milestone-predicted-ecuador-lineup-vs-germany_599881.html" style="color:var(--accent)">Sports Mole — 厄瓜多尔预测首发</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-ecuador-players-squad-list-key-stats-schedule" style="color:var(--accent)">Olympics.com — 阵容/数据</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· ESPN / Wikipedia / 厄瓜多尔媒体 · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：美国籍 <b>Tori Penso</b>（世界杯史上第二位执法男足正赛的女主裁、2023 女足世界杯决赛主裁）；新泽西 MetLife Stadium</div>
+      <p style="font-size:13.5px">本场主裁为美国籍 <b>Tori Penso</b>——<b>首位执法男足世界杯正赛的美国女主裁</b>、世界杯史上继 Frappart 之后第二位。她曾执法 2023 女足世界杯决赛（西班牙 vs 英格兰），有 MLS、奥运会、世俱杯、世预赛丰富经验；助理裁判 Brooke Mayo、Kathryn Nesbitt 组成本届唯一全女性场上裁判组。MetLife Stadium 为大型现代化球场，6 月美东高温高湿，对体能消耗大。<span style="color:var(--warn)">[完整裁判组与 VAR 组合、Penso 本届/近两届大赛单场出牌/判点细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：厄瓜多尔为求生必然用身体对抗与战术犯规延缓德国，裁判尺度对牌数与潜在点球有影响。Penso 系经验丰富、执法过女足世界杯决赛的资深主裁，对大场面控制力强；高温高湿 + 厄瓜多尔深蹲也可能拉长比赛、增加补时。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49082394/us-tori-penso-second-woman-officiate-men-world-cup-game" style="color:var(--accent)">ESPN — Penso 执法男足世界杯</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso" style="color:var(--accent)">Wikipedia — Tori Penso</a></div>
+    </div>
+  </section>
+
+  <!-- ✅ 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 多源确认（FIFA Match Centre / Sports Mole confirmed / 开赛验证）</span></h2>
+    <div class="sub">官方名单已公布并开赛验证（Sané 2′、Angulo 9′ 进球印证）。事实=名单，解读=对赛前主线的修正。✅ 官方确认</div>
+
+    <h4>🇪🇨 厄瓜多尔 官方首发（<b>4-4-2</b>）· Sebastián Beccacece · 队长 Moisés Caicedo (©)</h4>
+    <div class="lineup">Galíndez; Hincapié · Pacho · Ordóñez · Franco; Angulo · Caicedo (©) · Vite · Yeboah; Valencia · Plata</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:4px">替补席关键武器：Pervis Estupiñán、Jeremy Sarmiento（均由预测首发退居替补）、Kendry Páez。</div>
+
+    <h4 style="margin-top:14px">🇩🇪 德国 官方首发（<b>4-2-3-1 · 最强阵 · 零轮换</b>）· Julian Nagelsmann · 队长 Joshua Kimmich (©)</h4>
+    <div class="lineup">Neuer; Kimmich (©) · Tah · Rüdiger · Raum; Pavlović · Nmecha; Sané · Musiala · Wirtz; Havertz</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:4px">替补席关键武器：Deniz Undav（本届替补 3 球，原被预测首发）、Nick Woltemade、Marc-André ter Stegen。</div>
+
+    <h4 style="margin-top:16px">📋 vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">厄瓜多尔阵型</td><td>3-5-2（翼卫体系）</td><td><b>4-4-2</b>（双前锋）</td><td>Beccacece 弃翼卫、改四后卫双前锋，前场更直接敢压上反击；Angulo 9′ 远射扳平正出自这套更进攻的结构</td></tr>
+      <tr><td class="ht">厄瓜多尔人员</td><td>Torres·Sarmiento·Estupiñán 首发</td><td>Ordóñez·Vite·Angulo 顶上</td><td>中卫 Joel Ordóñez 进 XI、Vite 增加中场创造、Angulo 提供边路冲击；Sarmiento/Estupiñán 退居替补</td></tr>
+      <tr><td class="sc"><b>⭐ 德国轮换幅度</b></td><td>大幅轮换"混合阵容"（ter Stegen + Undav/Amiri/Leweling/Beier）</td><td><b>零轮换 · 最强 XI</b>（Neuer + Sané/Musiala/Wirtz/Havertz）</td><td>本场赛前最大变量直接落定：Nagelsmann 放弃练兵，派最强阵冲击 E 组头名——破密集上限不降反升（Sané 2′ 闪击印证）</td></tr>
+      <tr><td class="sc">德国门将</td><td>ter Stegen</td><td>Neuer</td><td>Neuer 重掌一号位，ter Stegen 退居替补</td></tr>
+      <tr><td class="sc">德国中卫（强制变动）</td><td>Rüdiger 顶替报销的 Schlotterbeck</td><td>Rüdiger · Tah</td><td><b>与预测一致</b>——Schlotterbeck 脚踝报销，Rüdiger 搭档 Tah 落实</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">🧠 战术解读（速览结论：<span style="color:var(--warn)">修正</span>）</h4>
+    <ul>
+      <li><b>⭐ 速览主线修正</b>：赛前主线建立在"德国大幅轮换 → 进攻烈度回落、破密集上限下降"之上。官方<b>零轮换、最强阵</b>出战，这条主线<b>需向上修正</b>——德国攻击火力与让球/大球方向的下行压力消失（Sané 2′ 即破门、半场 1-1 系厄瓜多尔远射，非德国疲软）。</li>
+      <li><b>厄瓜多尔转 4-4-2 更主动</b>：弃 3-5-2 翼卫体系、改双前锋（Valencia + Plata），Angulo 进 XI 增加边路直接性（9′ 远射扳平）。代价是中场少一人面对德国控球压力，攻守更趋开放。</li>
+      <li><b>德国意图明确</b>：Neuer + 全主力中前场，说明这不是"练兵末轮"，而是争 E 组头名、保持淘汰赛竞技节奏——对厄瓜多尔的"抢分出线窗口"是明显收窄。</li>
+      <li><b>强制变动如期落实</b>：Schlotterbeck 报销由 Rüdiger 顶替搭档 Tah，与赛前多源预测一致，后防组合无意外。</li>
+    </ul>
+
+    <h4 style="margin-top:14px">📊 市场反应（事实陈述 · 不构成投注建议）</h4>
+    <p style="font-size:13.5px">赛前最大变量"德国轮换幅度"向<b>零轮换/最强阵</b>落定，方向上通常使德国让球与大球一侧的临场支撑回升、平局尾部回落；具体盘口以实时为准（本站赔率一律欧赔小数盘）。</p>
+
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021466">FIFA Match Centre — 官方首发/比分</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/news/ecuador-vs-germany-confirmed-xis-nagelsmann-opts-against-rotation-as-caicedo-earns-captaincy-for-world-cup-clash_600098.html">Sports Mole — 官方 XI（零轮换 · Caicedo 队长）</a> · <a href="https://worldsoccertalk.com/world-cup/ecuador-vs-germany-live-updates-minute-by-minute-coverage-of-the-2026-world-cup-group-e-game/">World Soccer Talk — 现场直播（Angulo 扳平）</a> · <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d1594eb137-0095e9baf9f5-1000--germany-at-the-world-cup-2026-squad-fixtures-group-and-hi/">UEFA — 德国队长 Kimmich</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· E组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>E 组四队 FIFA 排名（越低越强 · 近似）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇨 厄瓜多尔</th><th>🇩🇪 德国</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#20-25 区间</td><td class="sc">#9-12 区间（世界一线）</td></tr>
+      <tr><td>前两轮</td><td class="ht">0-1 科特迪瓦 + 0-0 库拉索（1 分，净 -1，0 进球）</td><td class="sc">7-1 库拉索 + 2-1 科特迪瓦（6 分，净 +7）</td></tr>
+      <tr><td>E 组积分（末轮前）</td><td colspan="2">德国 6(+7) 已出线领跑；科特迪瓦 3(0) 第二；厄瓜多尔 1(-1) 第三、库拉索 1(-6) 第四</td></tr>
+      <tr><td>主教练</td><td class="ht">Sebastián Beccacece（阿根廷籍）</td><td class="sc">Julian Nagelsmann（德国）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Moisés Caicedo、Enner Valencia、Estupiñán、Pacho、Hincapié</td><td class="sc">Musiala、Wirtz、Undav、Havertz、Kimmich、Rüdiger</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">零进球能否破门；低位防守+反击/定位球能否制造冷门；动机优势</td><td class="sc">轮换幅度（Nagelsmann"混合阵容"）；Schlotterbeck 报销；破密集上限</td></tr>
+      <tr><td>本届进攻信号</td><td class="ht">两轮 0 球（创造有限、三中柱+被神扑）</td><td class="sc">两轮 9 球但 xG 仅 ≈2.05 — 终结效率极高、运动战质量未必匹配比分</td></tr>
+      <tr><td>本届防守信号</td><td class="ht">两轮仅丢 1 球（防守纪律出色）</td><td class="sc">两轮丢 2 球（对科一度落后），中卫被迫调整</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈3.50-4.00（隐含≈27%）</td><td class="sc">胜 ≈1.85-2.00（隐含≈50%）· 平 ≈3.40（≈23%）</td></tr>
+      <tr><td>大 / 小球</td><td colspan="2" class="sc">总分线 O/U 2.5（大球最优价 ≈1.80）；德国让盘——核心市场是让球深度与大小球（轮换+动机差使盘口非一边倒）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈50/23/27，与 Opta 超算 48.8% / 23% / 28.2% 高度吻合）。盘口来源：ESPN / Yahoo / Opta；德国让盘方向，总分线 O/U 2.5。德国大概率轮换 + Schlotterbeck 报销是让球深度的不确定因素。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="sc">🇩🇪 德国 · 进攻</td><td class="sc">世界一线进攻、个人能力顶级，遇密集偶有卡壳</td><td class="sc">2 战 9 球，但 <b>xG 仅 ≈2.05</b>（Opta）— 7-1 大胜库拉索 + 2-1 逆转科</td><td><b>达标但有保留</b>：9 球建立在极高终结效率上，xG 仅 2.05 说明运动战创造质量未必匹配比分；对结构完整的科特迪瓦一度落后到 68 分钟才扳平、靠 Undav 替补绝杀 <span style="color:var(--warn)">（per-game xG 来源 Opta · 已核）</span></td></tr>
+      <tr><td class="sc">🇩🇪 德国 · 防守</td><td class="sc">后防个人质量高，但本届中卫线临时调整</td><td class="sc">2 战丢 2 球（对科一度落后），Schlotterbeck 报销、Rüdiger 顶替</td><td><b>有隐忧</b>：对科一度落后暴露防线非铁桶；但厄瓜多尔运动战威胁有限，主要风险来自定位球</td></tr>
+      <tr><td class="ht">🇪🇨 厄瓜多尔 · 进攻</td><td class="ht">进攻产出偏低、依赖 Valencia 支点与定位球；预选赛创造力中游</td><td class="ht">2 战 <b>0 球</b>（三中柱、对库拉索被门将神扑 15 次），创造稀缺</td><td><b>明显偏弱</b>：面对德国后防，运动战机会更少，唯一现实路径是定位球与反击的零星灵光；零进球魔咒是最大问号 <span style="color:var(--warn)">（xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇪🇨 厄瓜多尔 · 防守</td><td class="ht">Beccacece 体系强调紧凑结构、防守纪律（曾逼平/胜巴西、哥伦比亚）</td><td class="ht">2 战仅丢 1 球（0-1 科、0-0 库），结构稳健</td><td><b>下限在防守</b>：失球极少、纪律出色，但本场要长时间承压；能否不崩盘决定比赛是否被拖入低分差</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：德国 9 球的火力被 2.05 的 xG 大幅"打折"——终结效率超高但运动战质量未必持续，叠加大概率轮换 + Schlotterbeck 报销，破厄瓜多尔深蹲的上限略降；厄瓜多尔防守扎实但进攻枯竭、活路集中在定位球/反击。深度数据支持"德国控制性占优、但进球数受轮换与对手深蹲压制、比分差可能小于实力差"的主线。来源：Opta Analyst（xG 2.05）· FotMob/Sofascore（前两轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">德国 ≈1.5–1.9</td><td class="ht">厄瓜多尔 ≈0.6–0.8</td><td>德国占优但因大概率轮换 + 厄瓜多尔深蹲，上限受压；与盘口"德国让盘但非深盘"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">超算给德国胜 <b>48.8%</b>、平 ≈23%、厄瓜多尔胜 <b>28.2%</b>；德国出线概率 96.1%、夺头名 ≈59.9%。注意：德国胜率<b>不到 50%</b>，远非一边倒——反映轮换 + 厄瓜多尔防守的真实拉扯</td><td>对手强度校准后，德国"对库拉索 7-1"含金量受灌水影响，对科特迪瓦的 2-1 更具参考性</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：德国 field tilt 与控球占优、厄瓜多尔 PPDA 偏高（被动深蹲、选择性逼抢）；德国若轮换则中前场 xT 创造下降</td><td><b>陷阱提醒</b>：① 德国已出线、大概率轮换保守，进攻烈度或低于实力；② 厄瓜多尔背水一战会全力一搏 + 防守扎实——"动机差 + 防守纪律"使比分差可能小于实力差；③ 这压低大球的稳健性，德国让深盘存在被拖住的风险，平局尾部不可忽视（超算平 ≈23%）</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源（德国本届 xG 2.05 来自 Opta）；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这不是"重让一边倒"场次——德国让盘但仅约 1.85-2.00 的胜赔（超算胜率不到 50%），信息含量集中在轮换幅度、让球深度与大小球</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识偏德国但非深盘一边倒，信息集中在轮换/让球/大小球</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">共识偏德国（≈50%），但因<b>已出线 + 大概率轮换 + 厄瓜多尔防守扎实</b>，德国胜赔并不深（≈1.85-2.00、超算胜率不到 50%），平局尾部偏厚（≈23%）。真正的分歧在<b>德国轮换幅度</b>与<b>大小球</b>（厄瓜多尔零进球 + 德国可能保守）。情绪面集中在德国"巨星轮休"与厄瓜多尔的出线悬念。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏德国胜，分歧在比分幅度与让球深度）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>ESPN</td><td>赛前前瞻</td><td>德国占优但已出线、关注 Nagelsmann 轮换幅度与 Schlotterbeck 缺阵</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>预测德国"大幅变动"取胜、厄瓜多尔深蹲求分；给出双方预测首发</td></tr>
+      <tr><td>Opta Analyst</td><td>数据模型</td><td>德国胜 48.8%、厄瓜多尔胜 28.2%、平 ≈23%；德国头名 ≈59.9%</td></tr>
+      <tr><td>Yahoo / Covers</td><td>综合 + picks</td><td>多数倾向德国小胜（2-0 / 2-1），大小球分歧（大 2.5 ≈1.80）</td></tr>
+      <tr><td>Racing Post / Squawka</td><td>英系前瞻</td><td>关注德国轮换 + Undav 状态；厄瓜多尔须取胜争最佳第三名</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：与"头名决战"型场次不同，本场是<b>偏德国但非深盘的共识</b>，情绪溢价有限。最大的不确定性是<b>德国的轮换幅度</b>（已出线 + 巨星轮休）与<b>厄瓜多尔能否在零进球魔咒下取胜出线</b>——这影响让球与大小球，而非简单的 1X2 胜负（德国胜率不到 50%、平局尾部偏厚）。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>厄瓜多尔胜 / 平 / 德国胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="sc">≈3.80 / 3.40 / 1.80</td><td>德国热门但非深盘冷门、厄瓜多尔中等冷门</td></tr>
+      <tr><td>06-23 截止</td><td>ESPN / Opta 校准</td><td class="sc">≈3.50-4.00 / 3.40 / 1.85-2.00</td><td>德国出线确认 + 大概率轮换使德国胜赔回弹（更接近 2.00）、平局/厄瓜多尔尾部走厚</td></tr>
+      <tr><td>06-23</td><td>大/小球</td><td colspan="2" class="sc">总分线 O/U 2.5（大球最优 ≈1.80）；德国让盘——大球有分歧（德国效率高 vs 轮换+厄零进球+防守扎实）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="sc">德国胜 ≈1.80；德国让球（约半球/一球级别）；O/U 2.5</td><td>以"德国世界一线 vs 厄瓜多尔中游"定价，初盘把德国定为热门但<b>非重让深盘</b>（厄瓜多尔实力非鱼腩、防守扎实）</td></tr>
+      <tr><td>开盘（次轮赛后 + 出线/轮换重定价）</td><td class="sc">德国胜 1.80→1.85-2.00；让球深度承压；O/U 2.5 有分歧</td><td><b>repricing 来自次轮战绩 + 出线确认</b>：德国 7-1 库拉索灌水、对科 2-1 一度落后暴露非铁桶；<b>德国已锁定出线 + Nagelsmann 确认大概率轮换 + Schlotterbeck 报销</b>，让市场对德国"控制性大胜"的信心下降，德国胜赔回弹、让球深盘价值下移；厄瓜多尔"背水必拼 + 防守扎实"支撑其让深盘拖住与平局尾部</td></tr>
+      <tr><td>现盘（06-23→现）</td><td class="sc">德国 ≈1.85-2.00；让盘维持但深度争议；O/U 2.5 分歧</td><td>价格发现集中在 <b>德国轮换幅度 + 让球深度</b>（厄瓜多尔背水深蹲能否拖住、甚至偷胜）与<b>大小球</b>（厄零进球 + 动机差 → 大球有承压、但德国效率高使大球不被一边倒看小）；<b>德国胜率不到 50% 使平局/厄瓜多尔尾部具博弈价值</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"热门但非重让"的盘口，与苏格兰-巴西式"一边倒深让"不同。德国胜赔仅 ≈1.85-2.00（超算胜率不到 50%），关键变量是<b>德国轮换幅度</b>（已出线 + 巨星轮休）与<b>厄瓜多尔能否取胜出线</b>（平/负基本出局，求胜烈度拉满）。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（聚合）</b>：与博彩去水及 Opta 超算一致——德国占优但非压倒（≈50% vs 厄 ≈27%、平 ≈23%），德国高概率出线+争头名。厄瓜多尔取胜出线属中等概率事件，资金分歧在让球深度/大小球。<span style="color:var(--warn)">[本场单场成交量/动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>德国巨星轮休</b>——Wirtz/Musiala 是否轮休、Undav 能否首发延续替补奇兵状态，是本场最大流量点与情绪面。</li>
+      <li><b>舆论焦点 ②</b>：<b>厄瓜多尔的出线悬念与零进球魔咒</b>——必须击败已出线的德国，且要看其他组第三名得失球比较；36 岁 Valencia 能否在世界杯再进球（生涯第 7 球）是叙事点。</li>
+      <li><b>历史裁判叙事</b>：Tori Penso 成为<b>首位执法男足世界杯正赛的美国女主裁</b>，本身就是本场的额外话题度。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"热门但非深让"场次——德国让盘、过热指数 <b>2/5</b>。1X2 有一定价格发现空间（德国胜率不到 50%、平局尾部偏厚），核心变量是<b>德国轮换幅度 + 厄瓜多尔拼分出线的能力</b>，并连带影响大小球（轮换 + 厄零进球 + 动机差 → 大球承压，但德国效率高使大球不被一边倒看小）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/story/_/id/49155323/ecuador-germany-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 盘口/前瞻/裁判/伤情</a> · <a href="https://theanalyst.com/articles/ecuador-vs-germany-prediction-world-cup-2026-match-preview">Opta Analyst — 超算/xG</a> · <a href="https://sports.yahoo.com/articles/ecuador-vs-germany-picks-predictions-080506762.html">Yahoo — picks/赔率</a> · <a href="https://www.covers.com/world-cup/germany-vs-ecuador-prediction-picks-odds-thursday-6-25-2026">Covers — picks/赔率</a> · <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/ecuador-vs-germany-prediction-team-news-lineups_599880.html">Sports Mole — 前瞻/阵容</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：本场主裁为美国籍 <b>Tori Penso</b>——首位执法男足世界杯正赛的美国女主裁、世界杯史上第二位（继 Frappart 之后）；曾执法 2023 女足世界杯决赛。助理裁判 Brooke Mayo、Kathryn Nesbitt，组成本届唯一全女性场上裁判组。来源：ESPN、Wikipedia、厄瓜多尔媒体。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Penso 来自美国裁判体系、由 NWSL/MLS 起步——经验丰富、对大场面控制力强（执法过女足世界杯决赛、奥运会、世俱杯、世预赛）。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届/近两届实际样本</b>：Penso 本届首秀为 06-18 捷克 vs 南非；其本届/近两届男足大赛单场出牌/判点的精确场均细分公开样本有限。<span style="color:var(--warn)">[场均黄牌/判点率细分 · 待核 — 已尝试 ESPN/Wikipedia/区域媒体，未检得男足大赛单场量化]</span>。定性判断：这是一名尺度稳定、敢吹关键判罚的资深主裁。</li>
+      <li><b>与两队的执法史</b>：与厄瓜多尔、德国两队均无显著公开倾向性执法史可言。</li>
+      <li><b>两面性</b>：厄瓜多尔深蹲必然伴随身体对抗与战术犯规（延缓德国），德国边路突破拉扯易制造点球/任意球；高温高湿 + 厄瓜多尔拖节奏可能拉长补时。半自动越位将精准捕捉德国前插的临界冲刺。牌数/点球盘宜以倾向性看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在德国占优但已出线轮换的格局下，裁判对胜负影响有限，主要价值在牌数/点球：厄瓜多尔的战术犯规与德国边路突破拉扯是黄牌/点球观察点。鉴于 Penso 本届男足单场细分样本有限，相关盘口以倾向看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / RotoWire 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇪🇨 厄瓜多尔 预测首发（3-5-2）· Sebastián Beccacece</h4>
+    <div class="lineup">Galíndez; Pacho · Torres · Hincapié; Yeboah · Caicedo · Franco · Sarmiento · Estupiñán; Plata · Enner Valencia</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Moisés Caicedo</td><td>中场 / 切尔西</td><td>厄瓜多尔中场枢纽，预选赛队内最高 3 助攻；推进与防守拦截核心</td></tr>
+      <tr><td class="ht">Enner Valencia</td><td>中锋 / 队史头号射手</td><td>36 岁、世界杯生涯 6 球（2014+2022），第三届参赛；前场支点与反击终结点 <span style="color:var(--warn)">首发待核</span></td></tr>
+      <tr><td class="ht">Pervis Estupiñán</td><td>左翼卫</td><td>左路推进与传中、定位球源；须兼顾防守覆盖</td></tr>
+      <tr><td class="ht">Willian Pacho / Piero Hincapié</td><td>中卫 / 巴黎·勒沃库森</td><td>厄瓜多尔后防对抗与防空支柱，两轮仅丢 1 球的结构基础</td></tr>
+    </table>
+    <h4>🇩🇪 德国 预测首发（4-2-3-1 / 大概率轮换版）· Julian Nagelsmann · Schlotterbeck 报销、可能多处轮休</h4>
+    <div class="lineup">ter Stegen; Kimmich · Tah · Rüdiger · Raum; Groß · Stiller; Leweling · Amiri · Beier; Undav</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Deniz Undav</td><td>中锋 / 斯图加特</td><td>本届替补登场 3 球（含对科 68'扳平 + 94'绝杀），有望顶替 Havertz 首发 <span style="color:var(--warn)">首发待核</span></td></tr>
+      <tr><td class="sc">Antonio Rüdiger</td><td>中卫 / 皇马</td><td>顶替报销的 Schlotterbeck、搭档 Tah 镇守中卫（强制变动）</td></tr>
+      <tr><td class="sc">Nadiem Amiri / (Musiala / Wirtz)</td><td>前腰 / 中前场</td><td>Nagelsmann"混合阵容"——Musiala/Wirtz 可能轮休，Amiri 顶 10 号位的版本流传 <span style="color:var(--warn)">轮换待核</span></td></tr>
+      <tr><td class="sc">Jamie Leweling / Maximilian Beier</td><td>边路 / 攻击手</td><td>可能替下 Sané/Wirtz 提供边路宽度，是轮换深度的体现</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Sports Mole / RotoWire），<b>以赛前官方名单为准 · 待核</b>。德国焦点是 <b>Nagelsmann 的轮换幅度</b>（Wirtz/Musiala 是否轮休、Undav 是否首发）、Schlotterbeck 报销后的中卫组合（Rüdiger 顶替）；厄瓜多尔焦点是 Beccacece 是否延续 3-5-2、Valencia 继续领衔、零进球下是否调整前场组合。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 美洲杯 / 欧洲杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ffe066">🇪🇨 厄瓜多尔 · Sebastián Beccacece</div>
+        <div class="role">3-5-2 紧凑结构 + 防守纪律 + 反击/定位球，Valencia 支点</div>
+        <ul class="cl">
+          <li>Beccacece 的招牌是<b>紧凑结构 + 防守纪律 + 选择性反击</b>——执教 16 场仅 1 负、曾击败/逼平巴西与哥伦比亚，证明其低位组织能限制强队；但本届前两轮暴露了<b>进攻产出枯竭（0 球、三中柱、被库拉索门将神扑）</b>，运动战创造力是结构性短板。</li>
+          <li>交叉参照：2022 世界杯小组阶段（揭幕战胜东道主卡塔尔、平荷兰、负塞内加尔遗憾出局）、2024 美洲杯（防守强、进攻效率不足）——<b>面对强队能深蹲求和/偷袭，但攻坚乏力</b>。这决定本场厄瓜多尔只能放弃控球、押注定位球与反击，靠 Valencia/Caicedo 的零星灵光。</li>
+          <li>本场切入口：低位紧凑 + 长时间承压不崩、用 Estupiñán/Caicedo 的定位球与反击偷袭；须警惕德国边路与前插。背水一战的动机 + 德国可能大幅轮换，是制造低分差/冷门、抢分出线的窗口——但零进球魔咒是最大现实障碍。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e9eef8">🇩🇪 德国 · Julian Nagelsmann</div>
+        <div class="role">4-2-3-1 控球主导 + 中前场创造力，Undav/Havertz 终结</div>
+        <ul class="cl">
+          <li>Nagelsmann 强调<b>控球主导 + 双后腰平衡 + Musiala/Wirtz 的中前场创造</b>——本届对库拉索 7-1 火力顺畅，但对结构完整的科特迪瓦一度落后到 68 分钟才扳平、靠 Undav 替补绝杀，且 xG 仅 2.05，暴露遇硬骨头时的运动战卡壳。</li>
+          <li>交叉参照：Euro 2024 八强加时惜败西班牙（主场遗憾出局）、WC 2022 小组未出线的低谷——<b>德国近两届大赛对结构完整的对手并非每场高效破门</b>。本场已出线 + 大概率轮换 + Schlotterbeck 报销，进一步削弱破密集的稳定上限。</li>
+          <li>本场应对：用控球与个人能力撬开厄瓜多尔低位、靠定位球与二点进攻补充；Undav 的状态、轮换上场的 Amiri/Leweling/Beier 是变量。但德国握有"已出线、争头名"的安全垫，可能控制节奏、保留体能给淘汰赛，进攻烈度未必拉满——这压低了大胜与大球概率，也解释了为何德国胜率不到 50%。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· 赛前前瞻</small></div>德国占优但已出线，Nagelsmann 大概率轮换是破密集上限的关键；Schlotterbeck 报销、Rüdiger 顶替；厄瓜多尔只能深蹲反击、必须取胜才有出线机会。</div>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据模型</small></div>德国胜 48.8%、厄瓜多尔胜 28.2%、平 ≈23%；德国头名 ≈59.9%。德国本届 9 球但 xG 仅 2.05——终结效率超高、运动战质量未必匹配比分，胜率不到 50% 反映轮换 + 厄防守的真实拉扯。</div>
+    <div class="insight"><div class="who">Bundesliga 官网 <small>· 跟队 / 轮换分析</small></div>详列德国轮换选项：Undav 有望首发、Musiala/Wirtz 可能轮休、Amiri 顶 10 号位、Leweling/Beier 提供边路宽度——轮换幅度是本场进攻烈度的关键开关。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念是<b>德国的轮换幅度</b>与<b>厄瓜多尔能否破门取胜出线</b>。⚠ 陷阱提醒：德国已出线 + 大概率轮换 + Schlotterbeck 报销，叠加厄瓜多尔全力深蹲 + 防守扎实，"动机差 + 防守纪律"使比分差可能小于实力差——大球承压、平局尾部偏厚（≈23%）；但厄瓜多尔两轮 0 进球是其取胜的最大现实障碍。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：德国控制性小胜是基准剧本。实力天平偏德国（世界一线、超算胜 48.8%）；但德国已出线 + 大概率轮换 + Schlotterbeck 报销 vs 厄瓜多尔背水一战的全力深蹲 + 防守纪律（两轮仅丢 1 球），使比分差可能小于实力差。大胜概率低于德国平日，厄瓜多尔取胜属中等概率事件（≈27%）、平局尾部偏厚（≈23%）。厄瓜多尔零进球是其抢分出线的最大障碍。</li>
+      <li><b>关键先生</b>：Undav（德/替补奇兵·有望首发）、Musiala/Wirtz（德/中前场创造·是否轮休待核）、Rüdiger/Tah（德/中卫）；Moisés Caicedo（厄/中场枢纽与推进）、Enner Valencia（厄/前场支点与终结）、Estupiñán（厄/左路+定位球）、Pacho/Hincapié（厄/防守支柱）。</li>
+      <li><b>胜负手</b>：① 德国轮换幅度（决定进攻烈度与让球深度、大小球）；② 厄瓜多尔能否长时间深蹲不崩 + 在零进球魔咒下用定位球/反击破门并取胜；③ 德国对头名的重视程度（已锁定主动权，可能保留体能给淘汰赛）。</li>
+      <li><b>市场视角</b>：热门但非深让场次（≈50/23/27），1X2 仍有价格发现空间（德国胜率不到 50%、平局尾部偏厚）；过热指数 2/5。核心变量是德国轮换幅度 + 厄瓜多尔拼分出线的能力，并连带影响大小球（轮换 + 厄零进球 + 动机差 → 大球承压，但德国效率高使大球不被一边倒看小）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>德国轮换幅度</b>（Wirtz/Musiala 是否轮休、Undav 是否首发，已多源确认 Nagelsmann"混合阵容"意向，确切名单待核）；③ Schlotterbeck 报销后的中卫组合（已多源确认报销，Rüdiger 顶替待官方确认）；④ 厄瓜多尔是否延续 3-5-2、前场组合是否调整；⑤ Penso 完整裁判组与 VAR 组合、其本届/近两届男足大赛单场出牌/判点细分（已尝试 ESPN/Wikipedia/区域媒体，未检得男足大赛量化样本）；⑥ 出线/头名与"最佳第三名"8 席的精确净胜球与跨组比较规则、厄瓜多尔出线所需的其他组结果组合（以 FIFA 官方判定为准）；⑦ 让球线与大小球总分线（O/U 2.5）具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49155323/ecuador-germany-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 前瞻/盘口/裁判/Schlotterbeck/预测首发</a> · <a href="https://theanalyst.com/articles/ecuador-vs-germany-prediction-world-cup-2026-match-preview">Opta Analyst — 超算胜率/xG 2.05</a> · <a href="https://www.bundesliga.com/en/bundesliga/news/germany-options-rotate-against-ecuador-world-cup-2026-37935">Bundesliga — 德国轮换选项</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/germany/world-cup-2026/preview/ecuador-vs-germany-prediction-team-news-lineups_599880.html">Sports Mole — 前瞻/团队消息/预测首发</a> · <a href="https://www.rotowire.com/soccer/article/ecuador-vs-germany-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-e-119485">RotoWire — 战术/预测首发</a> · <a href="https://www.skysports.com/football/news/12098/13543089/world-cup-2026-group-e-guide-fixtures-schedule-standings-and-odds-for-germany-curacao-ivory-coast-and-ecuador">Sky Sports — E组指南/积分/赔率</a><br>
+      • <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021466">FIFA Match Centre — 厄瓜多尔 vs 德国</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_E">Wikipedia — E组（积分/比分）</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso">Wikipedia — 主裁 Tori Penso</a> · <a href="https://sports.yahoo.com/articles/ecuador-vs-germany-picks-predictions-080506762.html">Yahoo — picks/赔率</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#ffd000',SC='#cbd5e1',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['厄瓜多尔胜','平局','德国胜'],datasets:[{data:[27,23,50],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水 · 与 Opta 超算吻合）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[52,48],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水 · 市场有分歧）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['德国','科特迪瓦','厄瓜多尔','库拉索'],datasets:[{data:[10,42,23,90],backgroundColor:[SC,'#f97316',HT,'#60a5fa'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强 · 近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'厄瓜多尔',data:[7,3.5,6,5.5,5.5,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'德国',data:[7,8,8.5,8,9,8.5],borderColor:'#cbd5e1',backgroundColor:'#cbd5e133',pointBackgroundColor:'#cbd5e1'}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

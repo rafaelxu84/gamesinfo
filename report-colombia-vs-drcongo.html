@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 哥伦比亚 vs 刚果(金) · 2026世界杯 K组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-colombia-vs-drcongo.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d4af37;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a6d1c,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a2410,#152138);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8cd6b;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · K组次轮 · 哥伦比亚一胜即提前出线 vs 刚果(金)逼平葡萄牙后乘势而上</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 哥伦比亚 1-0 刚果(DR)</span>
+  <h1>哥伦比亚 vs 刚果(金)</h1>
+  <div class="meta">2026年6月23日（周二）· 瓜达拉哈拉 Estadio Akron · 22:00 ET（周三 03:00 BST）· K组（同组：葡萄牙、乌兹别克斯坦）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8cd6b">🇨🇴 哥伦比亚</div><div class="rk">美洲杯 2024 亚军 · 首轮 3-1 胜乌兹别克斯坦（Díaz 1 球 1 助攻）· K 组领头羊 3 分</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇩 刚果(金)</div><div class="rk">FIFA #60 区间 · 时隔52年回归 · 首轮 1-1 逼平葡萄牙（Wissa 队史世界杯首球）· 1 分</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-24） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 哥伦比亚 1-0 刚果(DR)(半场 0-0)· K组次轮 · 06-23</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">哥伦比亚凭借 <b>Daniel Muñoz</b> 第 <b>76 分钟</b>的进球 1-0 小胜刚果(DR),提前锁定淘汰赛席位(积 6 分)。水晶宫后卫 Muñoz 抓住对方一次防守失误破门,此前哥伦比亚长时间被对手顽强防守压制。刚果(DR)门将 <b>Lionel Mpasi 贡献 8 次扑救</b>力保球门,而哥伦比亚门将 Vargas 几乎无事可做(仅 1 扑救)。James Rodríguez 全场<b>创造 5 次机会</b>——自 1998 年 Valderrama 对英格兰以来首位单场世界杯创造 5 次机会的哥伦比亚球员。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 76' Muñoz｜哥伦比亚 20 射、9 射正 vs 刚果 1 射正｜Mpasi 8 扑救｜哥伦比亚 6 分出线</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照(Opta / FotMob)</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇴 哥伦比亚</th><th>🇨🇩 刚果(DR)</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.03</b></td><td>0.39</td><td>20 射仅 1.03 xG——机会量大但质量一般,终结靠对方失误</td></tr>
+      <tr><td class="ht">控球</td><td><b>64%</b></td><td>36%</td><td>哥伦比亚掌控但难破密集</td></tr>
+      <tr><td class="ht">射门(射正)</td><td><b>20(9)</b></td><td>8(1)</td><td>射正 9-1 压制,Mpasi 8 扑救成最大障碍</td></tr>
+      <tr><td class="ht">创造机会</td><td><b>James 5 次</b></td><td>—</td><td>James 串联核心,追平 1998 年 Valderrama 纪录</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源:<a href="https://www.fotmob.com/news/1o7goj90pr1gy10kjqyw44266a-colombia-1-0-dr-congo-munoz-steps-up-again-secure-knockout-spot">FotMob — Colombia 1-0 DR Congo</a> · <a href="https://www.espn.com/soccer/story/_/id/49157815/colombia-congo-dr-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — 实时战报</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-colombia-vs-dr-congo-jun-23-2026-game-boxscore-647663">FOX Sports — Box Score</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">Muñoz 再次建功:边后卫前插的得分价值</div>水晶宫后卫 Muñoz 抓住失误破门,延续其进攻贡献。<b>可迁移结论:哥伦比亚的边后卫前插是重要的"第二攻击线",淘汰赛仍可作为破密集的奇兵。</b></div>
+    <div class="insight"><div class="who">James Rodríguez 创造 5 次机会:进攻命脉</div>James 串联全队、追平 1998 年 Valderrama 的队史纪录。<b>可迁移结论:哥伦比亚进攻高度依赖 James 的组织,对手限制其拿球将直接削弱哥伦比亚的创造力。</b></div>
+    <div class="insight"><div class="who">20 射 1.03 xG:破密集效率仍是课题</div>哥伦比亚射门虽多但机会质量一般,制胜球更多靠对方失误。<b>可迁移结论:面对深蹲防守,哥伦比亚需要更多禁区内优质机会而非外围远射。</b></div>
+    <div class="insight"><div class="who">刚果(DR)门将 Mpasi 8 扑救:虽败犹荣的防线</div>刚果(DR)靠门将神勇坚持到 76 分钟才失球。<b>可迁移结论:刚果(DR)防守韧性可圈可点,但进攻仅 0.39 xG,末轮想取分必须解决终结点。</b></div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">哥伦比亚取胜出线</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>1-0 取胜,6 分锁定淘汰赛</td></tr>
+      <tr><td class="ht">哥伦比亚控场压制</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>64% 控球、20 射、射正 9-1</td></tr>
+      <tr><td class="ht">小球倾向</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>仅 1 球,小球兑现</td></tr>
+      <tr><td class="ht">刚果(DR)防守顽强</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>Mpasi 8 扑救、坚持到 76'</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇨🇴 哥伦比亚 · 下一场 末轮 vs 葡萄牙(K组头名之争)</h4>
+        <ul class="watch">
+          <li><b>K 组头名决战</b>:哥伦比亚已出线,末轮对葡萄牙直接决定小组头名与半区,两队均有动力但也可能轮换。</li>
+          <li><b>James + Muñoz 是破局点</b>:面对葡萄牙需 James 组织 + 边后卫前插,但要防范葡萄牙的反击火力。</li>
+          <li><b>提升终结质量</b>:本场 20 射仅 1 球,对葡萄牙级别后防需要更高把握度。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇨🇩 刚果(DR) · 下一场 末轮 vs 乌兹别克斯坦(争首胜)</h4>
+        <ul class="watch">
+          <li><b>对位更对等</b>:末轮对同样两连败的乌兹别克斯坦,是争取世界杯积分/首胜的机会。</li>
+          <li><b>需解决终结</b>:本场仅 0.39 xG,必须找到中前场威胁来源。</li>
+          <li><b>门将仍是底牌</b>:Mpasi 状态出色,防线韧性可延续,但要靠进攻取分。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>实力倾向明确、但被"破密集防守效率"放大悬念</b>的次轮关键战：哥伦比亚（美洲杯 2024 亚军、首轮 3-1 胜乌兹别克斯坦、K 组 3 分领跑）一场胜利即可<b>提前锁定 16 强</b>；刚果(金)（时隔 52 年回归、首轮 1-1 逼平葡萄牙、Wissa 打入队史世界杯首球）若取胜则反超登顶。盘口明显倾向哥伦比亚——哥伦比亚胜赔约 <b>1.51</b>（8/15）、平局 <b>4.20</b>（10/3）、刚果(金) <b>7.20</b>（13/2）；去水隐含 ≈ 哥伦比亚 64 / 平 23 / 刚果(金) 13。Opta 超算给哥伦比亚出线 <b>84.9%</b>。真正的看点不在 1X2，而在三处：① <b>哥伦比亚能否高效转化控球</b>（上一场带入：3-1 看似舒服，实则被乌兹的低位铁桶憋了 40 分钟）；② <b>刚果(金)的防反与 Wissa/Bakambu 反击</b>（上一场带入：25% 控球却 8 射、xG 反超葡萄牙）；③ <b>大小球——多家更倾向小 2.5 球</b>。基准剧本：<b>哥伦比亚控制型小胜（1-0 / 2-1）</b>，张力在"能否早进球、刚果(金)能否偷袭"。市场过热指数 ≈ 2.5/5（哥伦比亚共识 + 刚果(金)防反压低血洗预期）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">哥伦比亚隐含胜率(去水)</div><div class="v" style="color:#e8cd6b">≈64%</div></div>
+      <div class="key"><div class="k">刚果(金)隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈13%</div></div>
+      <div class="key"><div class="k">哥伦比亚 Opta 出线率</div><div class="v" style="color:var(--good)">84.9%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>哥伦比亚警惕"控而不破"（上一场带入）</b>：首轮对乌兹别克斯坦控球逾 60%、一度逼近 70%，却被低位铁桶憋到第 40 分钟才由 Díaz 喂球破门、还一度被扳平——面对刚果(金)同样纪律严整的低位防线，哥伦比亚需尽早通过 Díaz/James 轴线打开局面，否则可能重演沉闷开局（影响早进球/小球节奏）。</li>
+      <li><b>刚果(金)的防反成色已验证（上一场带入）</b>：首轮对葡萄牙仅 25% 控球，却 8 射、xG 反超（0.82 vs 0.64），靠 Wissa 单点速度反击打入队史世界杯首球——同一套"低位铁桶 + 单点速度"剧本对压上的哥伦比亚身后空间同样可行，是冷平/爆冷的现实蓝本。</li>
+      <li><b>哥伦比亚的旅欧中前场</b>：Luis Díaz（首轮 1 球 1 助攻、6 次禁区触球领跑）的边路爆点 + James Rodríguez 的组织 + Luis Suárez/Córdoba 的终结，是撕开刚果(金)低位防线的主要出口。</li>
+      <li><b>两队均无新增伤情，刚果(金) Mbemba 黄牌累积风险</b>：哥伦比亚 3-1 后无伤停、有望沿用同一阵容；刚果(金)亦报告无新伤。队长 Mbemba 首轮吃黄，<b>累积停赛风险指向末轮对乌兹别克斯坦、非本场</b>，但其动作管理仍是观察点。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a4a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项 + 关键球员可用性多源核验）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8cd6b;font-weight:700">哥伦比亚 · 上一场带入 · "控而不破"的沉闷开局 <span style="color:var(--mut);font-weight:400">· 乌兹别克斯坦战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">哥伦比亚首轮 3-1 胜乌兹别克斯坦，但<b>控球逾 60% 却被铁桶憋到第 40 分钟</b>、还一度被扳平</div>
+      <p style="font-size:13.5px">承接乌兹别克斯坦战复盘的前瞻迁移：哥伦比亚 3-1 取胜、登顶 K 组，但比分flatter了过程——上半场控球逾 60%、一度近 70%，却久攻不下，直到 40' 才由 <b>Luis Díaz</b> 的精妙喂球、Daniel Muñoz 凌空垫射打破僵局；下半场一度被扳为 1-1，靠 Díaz（门将脱手）与补时 Campaz 头球才拉开。射正转化偏低（15 射仅 4 正），部分进球靠对手门将失误。Díaz 1 球 1 助攻、6 次禁区触球领跑，是真正的胜负手。<span style="color:var(--warn)">[官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：刚果(金)首轮把葡萄牙憋成"80% 控球零突破"，是比乌兹别克斯坦更成熟的低位铁桶。哥伦比亚若再现"控而不破"的慢热开局，<b>小 2.5 球与冷平的尾部风险会上升</b>；能否尽早靠 Díaz/James 轴线破局，是让球盘（-1）与大小球结算的关键。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/首发/裁判</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview" style="color:var(--accent)">Opta Analyst — K 组前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">刚果(金) · 上一场带入 · 防反成色已验证 <span style="color:var(--mut);font-weight:400">· 葡萄牙战复盘迁移 · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">刚果(金)首轮 1-1 逼平葡萄牙、<b>仅 25% 控球却 8 射、xG 反超（0.82 vs 0.64）</b>，Wissa 打入队史世界杯首球</div>
+      <p style="font-size:13.5px">承接葡萄牙战复盘的前瞻迁移：Desabre 用 5-3-2 把葡萄牙挡在禁区外（葡萄牙 80% 控球、94% 传球成功率却零突破），并在反击中机会质量反超——<b>Arthur Masuaku 助攻、Yoane Wissa 在 45+5' 冷静推射</b>打入队史世界杯首球。这套"低位铁桶 + 单点速度反击"已被证明对豪门可行，是刚果(金)对阵哥伦比亚的现实蓝本。ESPN 甚至提示：哥伦比亚的流动体系会留下身后空间，刚果(金)或可更主动出击。<span style="color:var(--warn)">[阵型 5-3-2 vs 四后卫 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：刚果(金)并非鱼腩——它能限制强队、把比赛拖入低比分，并靠 Wissa/Bakambu 的速度直接威胁。这意味着哥伦比亚"赢但赢得不轻松"，是小球一侧与让球盘（-1 而非更深）两面性的核心来源，也是冷平资金的唯一逻辑。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/Talking Points</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html" style="color:var(--accent)">Sports Mole — 前瞻/队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8cd6b;font-weight:700">⭐ 关键球员可用性 · 哥伦比亚核心健康（多源核验）<span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / World Soccer Talk · 06-20→21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Díaz 状态火热、James 健康首发；哥伦比亚 3-1 后<b>无新增伤停</b>，有望沿用同一阵容</div>
+      <p style="font-size:13.5px">多源一致（ESPN 前瞻、Sports Mole、World Soccer Talk）：哥伦比亚在 3-1 胜乌兹别克斯坦后<b>无新增伤情或停赛</b>，预计基本沿用首轮阵容。<b>Luis Díaz</b> 健康、状态火热（首轮 1 球 1 助攻），是哥伦比亚最佳进攻出口；<b>James Rodríguez</b>（34 岁、队长、世界杯队史射手王、预选赛 7 助攻）健康首发——赛前曾有"轻微伤情缺席两次训练"的报道，主帅 Lorenzo 已表态其状态良好；ESPN 同时点出 James 影响力略有下滑、Lorenzo 打造的是不依赖单一球员的流动体系。<span style="color:var(--warn)">[官方首发以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：核心无伤、Díaz 在状态，直接支撑哥伦比亚胜盘的基本面。ESPN 的观点是：与其依赖渐入暮年的 James，不如更彻底地围绕 Díaz 的速度与终结来调度——这是哥伦比亚能否避免重演"控而不破"的关键变量，也决定让球盘与进球数。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Talking Points（Díaz/James）</a> · <a href="https://worldsoccertalk.com/world-cup/colombia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/" style="color:var(--accent)">World Soccer Talk — 哥伦比亚阵容/James 伤情</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html" style="color:var(--accent)">Sports Mole — 队况（无新伤）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">⭐ 关键球员可用性 · 刚果(金)无新伤、Mbemba 黄牌累积（多源核验）<span style="color:var(--mut);font-weight:400">· Sports Mole / ESPN · 06-20→21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Wissa、Bakambu 均健康可用；<b>队长 Mbemba 首轮吃黄</b>，累积停赛风险指向末轮、非本场</div>
+      <p style="font-size:13.5px">多源一致：刚果(金)首轮逼平葡萄牙后<b>无新增伤情</b>，可沿用同一套人马。<b>Yoane Wissa</b>（布伦特福德，刚打入队史世界杯首球）健康、是反击核心；<b>Cédric Bakambu</b>（35 岁，本组国脚进球纪录保持者，70 场 21 球）健康可用，但年龄因素下出场时间或被管理。后防领袖、队长 <b>Chancel Mbemba</b> 在对葡萄牙一战吃到黄牌——多家媒体指出其<b>累积停赛风险针对末轮对乌兹别克斯坦</b>，本场仍可出战，但需控制动作避免再吃牌。<span style="color:var(--warn)">[阵型 5-3-2 与首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Wissa + Bakambu 双前锋健康，意味着刚果(金)的反击威胁完整，足以在哥伦比亚身后空间制造杀机——这是冷平/爆冷的现实条件。Mbemba 若因黄牌而动作保守，刚果(金)后防领导力与对抗强度可能边际下降，是哥伦比亚定位球/边路冲击的潜在突破口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/predicted-lineups/history-maker-wissa-to-lead-attack-predicted-congo-dr-xi-vs-colombia_599767.html" style="color:var(--accent)">Sports Mole — 刚果(金)预测首发/Mbemba 黄牌</a> · <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 刚果(金)队况/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· ESPN / Dailysports · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：意大利籍 <b>Maurizio Mariani</b> 执法；比赛在瓜达拉哈拉 Estadio Akron 进行</div>
+      <p style="font-size:13.5px">多源（ESPN、Dailysports）确认 FIFA 任命意大利籍 <b>Maurizio Mariani</b> 执法本场 K 组次轮，助理为同胞 Daniele Bindoni 与 Alberto Tegoni，第四/第五官员为 Juan Calderón、Juan Mora。Mariani 系 FIFA 国际级（2019 起）、UEFA 精英级（2024 起）主裁，曾参与 2024 美洲杯（UEFA–CONMEBOL 交换计划），对南美球队不陌生。比赛在瓜达拉哈拉 Estadio Akron 进行（海拔约 1,560 米，远低于墨西哥城阿兹台克的 2,250 米，高原效应明显更弱）。<span style="color:var(--warn)">[Mariani 本场助理/VAR 组合与其大赛单场出牌细分样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Mariani 公开统计的出牌偏多（约 4.1–4.8 黄/场，意甲样本），在一场哥伦比亚长时间控球、刚果(金)频繁防守犯规的比赛里，<b>累积黄牌与潜在点球</b>是裁判面的主要价值；对胜负影响有限。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://dailysports.net/news/the-match-officials-for-colombia-v-dr-congo-are-known/" style="color:var(--accent)">Dailysports — Mariani 执法官宣</a> · <a href="https://en.wikipedia.org/wiki/Maurizio_Mariani" style="color:var(--accent)">Wikipedia — Mariani 档案</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· K组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实/明确标注的评估数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水，偏小球）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>K 组次轮前积分（首轮后）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇴 哥伦比亚</th><th>🇨🇩 刚果(金)</th></tr>
+      <tr><td>FIFA / 实力</td><td class="ht">美洲杯 2024 亚军 · Opta 全球前十级</td><td class="sc">FIFA #60 区间 · 时隔 52 年回归</td></tr>
+      <tr><td>首轮结果</td><td class="ht">3-1 胜乌兹别克斯坦（控而不破、Díaz 1+1）</td><td class="sc">1-1 平葡萄牙（25% 控球、xG 反超、Wissa 首球）</td></tr>
+      <tr><td>K 组积分（首轮后）</td><td colspan="2">哥伦比亚 3 分（领头羊）· 葡萄牙 1 · 刚果(金) 1 · 乌兹别克斯坦 0</td></tr>
+      <tr><td>本场意义</td><td class="ht">一胜即提前锁定 16 强</td><td class="sc">取胜则反超登顶；负则出线需靠末轮</td></tr>
+      <tr><td>主教练</td><td class="ht">Néstor Lorenzo（阿根廷籍）</td><td class="sc">Sébastien Desabre（法国籍）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Luis Díaz、James Rodríguez(C)、Luis Suárez/Córdoba</td><td class="sc">Yoane Wissa、Cédric Bakambu、Chancel Mbemba(C)</td></tr>
+      <tr><td>近两届大赛</td><td class="ht">美洲杯 2024 亚军 · 美洲杯 2021 季军 · 缺席卡塔尔 2022</td><td class="sc">AFCON 2023 第四名 · AFCON 2025 16 强</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.51（隐含≈64%）</td><td class="sc">胜 7.20（≈13%）· 平 4.20（≈23%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">小 2.5 球为较倾向一侧（刚果(金)铁桶 + 哥伦比亚控制型打法压低进球）</td></tr>
+      <tr><td>场地 / 历史交锋</td><td colspan="2">Estadio Akron（瓜达拉哈拉，海拔约 1,560 米）· 无可查正式交锋记录</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（哥伦比亚 1.51 / 平 4.20 / 刚果(金) 7.20 → 去水 ≈64/23/13）。赔率来源：多平台综合（哥伦比亚 8/15、-192；平 10/3；刚果(金) 13/2）。Opta 超算：哥伦比亚出线 84.9%、刚果(金)出线难度大。基准剧本为<b>哥伦比亚控制型小胜</b>，刚果(金)的低位铁桶与哥伦比亚的"控而不破"风险共同压低预期进球数。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（首轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇴 哥伦比亚 · 进攻</td><td class="ht">美洲杯 2024 亚军级、Díaz/James 领衔，预选 James 7 助攻、Díaz 7 球</td><td class="ht">首轮 <b>3 球</b>，但 15 射仅 4 正、被铁桶憋 40 分钟</td><td><b>略低于</b>预期效率：控球占优却转化偏慢，部分进球靠门将失误——破密集防守效率是隐忧</td></tr>
+      <tr><td class="ht">🇨🇴 哥伦比亚 · 防守</td><td class="ht">旅欧后卫为主，个体质量高，美洲杯防线扎实</td><td class="ht">首轮丢 1 球（下半场放开后被补射）</td><td><b>延续</b>稳健：长时间控球下后防被考验有限，对刚果(金)失球可控</td></tr>
+      <tr><td class="sc">🇨🇩 刚果(金) · 进攻</td><td class="sc">依赖 Wissa 速度 + Bakambu 支点的反击与定位球，运动战阵地战创造力有限</td><td class="sc">首轮 <b>1 球</b>、8 射、xG <b>0.82</b> 反超葡萄牙</td><td><b>高于</b>纸面：反击效率极高、机会质量真实，单点速度能直接致命</td></tr>
+      <tr><td class="sc">🇨🇩 刚果(金) · 防守</td><td class="sc">Desabre 体系招牌（AFCON 2023 点球淘汰埃及、2025 平塞内加尔）</td><td class="sc">首轮把葡萄牙限制到 xG <b>0.64</b>、零突破</td><td><b>延续</b>顶级：低位铁桶把豪门挡在禁区外，是把比分压低的真实数据底色</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：哥伦比亚首轮进攻<b>效率略低于</b>其个人能力应有的水准（控而不破），防守延续稳健；刚果(金)进攻反击<b>高于</b>纸面、防守<b>延续</b>顶级铁桶。深度数据与"哥伦比亚有球小胜、但赢得不轻松、偏小球"主线一致。来源：Opta Analyst（theanalyst.com，xG 0.82/0.64/0.65）· Sofascore（首轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">哥伦比亚 ≈1.7</td><td class="sc">刚果(金) ≈0.8</td><td>哥伦比亚机会质量占优，但合计偏低——刚果(金)铁桶把总分压向小 2.5 球边缘；哥伦比亚若慢热则差距收窄</td></tr>
+      <tr><td>Opta 出线概率 / 超算</td><td colspan="2" class="sc">Opta 给哥伦比亚出线 <b>84.9%</b>，刚果(金)与乌兹别克斯坦出线均偏难（约 22%）；哥伦比亚是 K 组次强、仅次于葡萄牙的实力评级</td><td>对手强度校准后哥伦比亚胜盘基本面真实；但刚果(金)对葡萄牙的 xG 反超提醒：让球不宜过深</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：哥伦比亚 field tilt 将长时间压向刚果(金)半场，但禁区内终结质量受铁桶压制</td><td><b>陷阱提醒</b>：场面占优≠高效，哥伦比亚"控而不破"+ 刚果(金) Wissa/Bakambu 反击身后空间，是让球/大球落空的主要风险</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">哥伦比亚胜方向共识明确但赔率不极端（1.51）；真实分歧在"赢多少（让球 -1）+ 大小球（小 2.5）+ 刚果(金)能否再爆冷平"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · 哥伦比亚共识但赔率不极端；刚果(金)防反构成实质分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">哥伦比亚胜被广泛看好，但 1.51 并非"碾压"级别，留出了平局（23%）的现实空间——刚果(金)刚刚逼平葡萄牙、xG 反超，市场对"哥伦比亚轻松大胜"持保留。资金主要落在<b>哥伦比亚让球（-1）与大小球（小 2.5）</b>，而非单纯胜负。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向：哥伦比亚胜 多数 · 平局 少数 · 刚果(金)胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>ESPN</td><td>综合体育媒体</td><td>哥伦比亚胜；提示其流动体系留身后空间，刚果(金)或更主动出击</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>哥伦比亚小胜（如 2-0 / 2-1），看好 Díaz/James 撬开铁桶</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>哥伦比亚胜 + 比分建包（4-1 类 bet builder），看好 Díaz 进球</td></tr>
+      <tr><td>OneFootball / Covers</td><td>预测/投注媒体</td><td>哥伦比亚胜为价值锚（8/15），多家倾向小 2.5 球</td></tr>
+      <tr><td>Opta Analyst</td><td>数据媒体</td><td>哥伦比亚出线 84.9%；刚果(金)中卫面对哥伦比亚速度将被拉扯</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等偏低）</b>：胜负方向偏向哥伦比亚，但赔率不极端、平局空间真实（刚果(金)刚逼平葡萄牙）。无明显单边过热。真正分歧在<b>"赢多少"（哥伦比亚 -1 让球）与小 2.5 球</b>，以及刚果(金)的防反能否再造冷平。情绪资金有限，整体偏理性。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>哥伦比亚胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈1.50–1.53</td><td>明显倾向哥伦比亚；平 ≈4.20 / 刚果(金) ≈7.20</td></tr>
+      <tr><td>06-20→21 截止</td><td>多平台</td><td class="ht">1.51（8/15、-192）</td><td>窄幅波动、基本稳定；无明显资金一边倒</td></tr>
+      <tr><td>06-20→21</td><td>大/小球</td><td colspan="2" class="ht">小 2.5 球为较倾向一侧（小约 -150 / 大约 +130；刚果(金)铁桶压低进球）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>哥伦比亚 -1</td><td colspan="2" class="ht">主流让球约在哥伦比亚 -1 一带（线非赔率，待核）</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">哥伦比亚胜 ≈1.50；让球 -1</td><td>以"美洲杯亚军 + Díaz/James vs 时隔 52 年回归弱旅"定价，初盘即把哥伦比亚压成短热门、让球 -1</td></tr>
+      <tr><td>开盘（首轮赛后重定价）</td><td class="ht">哥伦比亚胜 1.51；小 2.5 偏热</td><td><b>repricing 来自双方首轮</b>：哥伦比亚 3-1 确认领跑但"控而不破"，刚果(金) 1-1 平葡萄牙、xG 反超暴露其防反成色 → 让球未向 -1.5 加深、小球角度增强</td></tr>
+      <tr><td>现盘（06-21→现）</td><td class="ht">哥伦比亚胜 1.51；让球 -1 / 小 2.5</td><td>胜负盘稳定（定价合理收敛）；最活跃的价格发现在<b>让球（-1 而非 -1.5）与大小球（小 2.5）</b>——"哥伦比亚能否早进球、刚果(金)能否偷袭"是让盘与大小球的核心变量</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场赔率从初盘起即倾向哥伦比亚但<b>不极端</b>（≈1.50、让 -1），<b>刚果(金)逼平葡萄牙 + xG 反超</b>进一步抑制了"哥伦比亚大胜/深让球"的角度，并强化小球一侧。1X2 价值有限（定价合理），最有信息含量的是<b>哥伦比亚让球（-1）与小 2.5 球</b>——风险点是哥伦比亚"控而不破"慢热 + 刚果(金) Wissa/Bakambu 反击。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算 / 博彩去水</b>：哥伦比亚出线 84.9%（Opta）、本场胜去水 ≈64%——与博彩高度一致，无明显情绪偏离。<span style="color:var(--warn)">[Kalshi/Polymarket 本场单场价格与成交量未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Luis Díaz 能否接管哥伦比亚</b>——ESPN 直言 Lorenzo 应更彻底围绕 Díaz 的速度与终结调度，而非依赖渐入暮年的 James，这是本场最大技术话题。</li>
+      <li><b>舆论焦点 ②</b>：<b>刚果(金)是否该更主动出击</b>——ESPN/Desabre 的取舍：继续防反求平，还是利用哥伦比亚身后空间主动打反击。</li>
+      <li><b>刚果(金)叙事</b>：时隔 52 年回归 + 逼平葡萄牙的历史性首分带来情绪流量，但公众普遍预期哥伦比亚有球小胜，无明显押刚果(金)胜的资金浪潮。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：哥伦比亚胜共识明确、博彩与超算收敛（≈64% / 出线 84.9%），但赔率不极端（1.51）、平局空间真实，过热指数 <b>2.5/5</b>。热度集中在<b>让球幅度（-1）、小 2.5 球与 Díaz 是否破门</b>，而非胜负本身。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 前瞻/赔率/裁判</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aJpLK9k1G604/">Racing Post — 赔率/投注</a> · <a href="https://onefootball.com/en/news/colombia-vs-dr-congo-prediction-world-cup-2026-preview-best-bets-43034382">OneFootball — 预测/赔率</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview">Opta Analyst — K 组前瞻</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为意大利籍 <b>Maurizio Mariani</b>，助理裁判 Daniele Bindoni 与 Alberto Tegoni（均意大利籍），第四官员 Juan Calderón、第五官员 Juan Mora。来源：ESPN / Dailysports / Wikipedia。<span style="color:var(--warn)">[本场 VAR 具体组合 · 待核]</span></div>
+    <h4>裁判背景与执法尺度（含近两届大赛 + 顶级样本）</h4>
+    <ul class="cl">
+      <li><b>资历画像</b>：Mariani 自 2019 年成为 FIFA 国际级裁判、2024 年 12 月被 UEFA 升入精英级，意甲长期主哨；曾入选 <b>2024 美洲杯</b>（UEFA–CONMEBOL 交换计划），对南美球队（含哥伦比亚同源风格）有一定执法经验。<span style="color:var(--warn)">[其在 2024 美洲杯/世预赛的逐场出牌细分样本有限 · 待核]</span></li>
+      <li><b>出牌尺度（公开统计）</b>：多源统计显示 Mariani 出牌偏多——意甲/全样本约 <b>4.1–4.8 张黄牌/场</b>、红牌约 0.13–0.18 张/场。换言之他属"敢吹敢发"一档，对持续犯规与战术拦截管理较严，但红牌不频繁。</li>
+      <li><b>与两队的执法史</b>：与哥伦比亚、刚果(金)两队均无显著公开执法史，无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——半自动越位将精准捕捉 Díaz/Suárez 的越位临界冲刺，对越位边缘进球有轻微抑制（影响大球边际）；瓜达拉哈拉海拔约 1,560 米，高原效应远弱于墨西哥城，体能拖累比首轮哥伦比亚那场轻。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场是"哥伦比亚有球围攻 vs 刚果(金)纪律退守"的对位——以 Mariani 偏多的出牌尺度，<b>刚果(金)频繁防守拦截 Díaz/Arias 的累积黄牌、禁区内拉扯的点球</b>是主要观察点；CAF 风格的刚果(金)身体对抗强，黄牌数有上行倾向。鉴于其大赛"主哨"单场样本有限，牌数盘宜以"倾向性"看待，对胜负几乎无影响。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / Opta 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇨🇴 哥伦比亚 预测首发（4-2-3-1）· Lorenzo</h4>
+    <div class="lineup">Vargas; Muñoz · Davinson Sánchez · Lucumí · Mojica; Lerma · Puerta; J. Arias · James Rodríguez(C) · Luis Díaz; Luis Suárez</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Luis Díaz</td><td>边锋 / 旅欧</td><td>首轮 1 球 1 助攻、6 次禁区触球领跑——撕开低位铁桶的最佳出口；ESPN 呼吁更彻底围绕其调度</td></tr>
+      <tr><td class="ht">James Rodríguez (C)</td><td>前腰 / 队长</td><td>34 岁、世界杯队史射手王、预选 7 助攻；健康首发，但影响力略有下滑</td></tr>
+      <tr><td class="ht">Luis Suárez / Jhon Córdoba</td><td>前锋 / 单箭头</td><td>禁区终结点；ESPN 预测版列 Suárez 首发，Córdoba 为另一选项</td></tr>
+      <tr><td class="ht">Jhon Arias</td><td>边锋 / 前腰</td><td>边路串联与压上宽度，制造刚果(金)身后空间的关键</td></tr>
+    </table>
+    <h4>🇨🇩 刚果(金) 预测首发（5-3-2 / 4-5-1）· Desabre</h4>
+    <div class="lineup">Mpasi; Wan-Bissaka · Mbemba(C) · Tuanzebe · Masuaku; Moutoussamy · Kayembe/Sadiki · Mukau; Wissa · Bakambu</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Yoane Wissa</td><td>前锋 / 布伦特福德</td><td>队史世界杯首球功臣；速度是反击与偷袭核心，对哥伦比亚身后空间威胁大</td></tr>
+      <tr><td class="sc">Cédric Bakambu</td><td>前锋 / 支点</td><td>35 岁、本组国脚进球纪录（70 场 21 球）；支点与第二终结点，出场时间或被管理</td></tr>
+      <tr><td class="sc">Chancel Mbemba (C)</td><td>中后卫 / 队长</td><td>防线领袖与经验；首轮吃黄，累积停赛风险指向末轮、本场可出战 <span style="color:var(--warn)">动作管理待观察</span></td></tr>
+      <tr><td class="sc">Aaron Wan-Bissaka</td><td>右后卫/翼卫 / 旅欧</td><td>防守强硬，限制 Díaz/Arias 左路冲击的关键</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Sports Mole / Opta），<b>以赛前官方名单为准 · 待核</b>。哥伦比亚 Lorenzo 是否沿用首轮阵容（Suárez vs Córdoba、Puerta vs R. Ríos）、刚果(金)阵型（5-3-2 还是改四后卫、Sadiki 是否回归首发）是关键待核变量。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（哥伦比亚：美洲杯 2024 亚军 / 2021 季军；刚果(金)：AFCON 2023 第四 / AFCON 2025 16 强）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8cd6b">🇨🇴 哥伦比亚 · Néstor Lorenzo</div>
+        <div class="role">4-2-3-1 控球压迫 + James 组织、Díaz 边路爆点</div>
+        <ul class="cl">
+          <li><b>近两届大赛交叉对照</b>：美洲杯 2024（亚军）哥伦比亚以 James 为中场大脑、高强度压迫与边路（Díaz）冲击立足，决赛前曾长时间不败；美洲杯 2021（季军）同样依赖中前场个人能力与反击效率——大赛成熟度与个人上限明显领先刚果(金)。</li>
+          <li>交叉参照本届首轮：3-1 胜乌兹别克斯坦，但被低位铁桶憋了 40 分钟、一度被扳平——印证"控球优势不会自动转化为进球"，需 Díaz/James 级别的灵光撬开铁桶。ESPN 认为 Lorenzo 应更彻底平台化 Díaz。</li>
+          <li>本场切入口：刚果(金)是比乌兹别克斯坦更成熟的铁桶（把葡萄牙憋成零突破），哥伦比亚须尽早通过 Díaz 边路爆点 + 定位球（首轮补时绝杀正来自传中头球）破局，避免重演慢热；同时提防压上后被 Wissa/Bakambu 反击身后。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇩 刚果(金) · Sébastien Desabre</div>
+        <div class="role">5-3-2 / 低位铁桶 + 快速反击与定位球</div>
+        <ul class="cl">
+          <li><b>近两届大赛交叉对照</b>：AFCON 2023 <b>点球淘汰埃及、最终列第四名</b>——证明 Desabre 防反体系能在淘汰赛限制强队、把比赛拖入低比分；AFCON 2025 不败晋级（1-0 胜贝宁、1-1 平塞内加尔、3-0 胜博茨瓦纳），对强队能守住平局。</li>
+          <li>交叉参照本届首轮：5-3-2 把葡萄牙挡在禁区外（葡 80% 控球零突破），25% 控球却 8 射、xG 反超，Wissa 单点速度打入队史首球——这套剧本对压上的哥伦比亚同样可行，甚至 ESPN 建议可更主动利用哥伦比亚身后空间。</li>
+          <li>本场应对：三/五后卫（Mbemba 领衔）压缩 Díaz/Arias 的边路传中与突破空间，靠 Wissa 速度反击与 Bakambu 支点求分，定位球是补充手段。风险是哥伦比亚个人能力比葡萄牙更直接犀利、且无高原拖累——若专注力下滑，失球数可能放大。但其 AFCON 履历说明大概率不会被血洗。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN <small>· 赛前前瞻 / Talking Points</small></div>哥伦比亚的流动体系留有身后空间，刚果(金)在 Wissa/Bakambu 处具备打击点，或可更主动出击；同时建议 Lorenzo 更彻底围绕 Díaz 的速度与终结调度，而非依赖渐入暮年的 James——Díaz 是哥伦比亚破铁桶的最佳解。</div>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据媒体</small></div>哥伦比亚出线概率 84.9%，是 K 组仅次于葡萄牙的实力评级；刚果(金)中卫面对哥伦比亚的速度将被拉扯，机会对 Wissa/Bakambu 而言"come at a premium"，但仍有能力威胁哥伦比亚后防。</div>
+    <div class="insight"><div class="who">Sports Mole / Racing Post <small>· 预测/投注媒体</small></div>基准为哥伦比亚小胜（2-0 / 2-1），看好 Díaz/James 撬开铁桶与 Díaz 进球；让球以哥伦比亚 -1 为锐侧，多家倾向小 2.5 球——刚果(金)的防反让"血洗式深让球"更谨慎。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 跨大赛对照</small></div>关键交叉点：哥伦比亚首轮已显<b>"控而不破"</b>，而刚果(金) AFCON 2023 又恰恰<b>点球淘汰过埃及</b>、首轮 xG 反超葡萄牙——这类对位对哥伦比亚并非送分。⚠ 陷阱提醒：哥伦比亚慢热 + 刚果(金) Wissa 反击偷袭，是让球（-1）与大球落空、甚至再造冷平的尾部风险。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：哥伦比亚控制型小胜（<b>1-0 / 2-1 / 2-0</b>）是基准剧本，一胜即提前锁定 16 强；平局（≈23%）是真实尾部风险（刚果(金)铁桶 + 哥伦比亚控而不破），刚果(金)取胜（≈13%）需极致防守 + Wissa/Bakambu 反击偷袭 + 哥伦比亚终结低迷同时发生。</li>
+      <li><b>关键先生</b>：Luis Díaz（哥/边路爆点与终结）、James Rodríguez（哥/组织与定位球）、Luis Suárez/Córdoba（哥/禁区终结）、Yoane Wissa（刚/反击偷袭核心）、Cédric Bakambu（刚/支点与第二终结点）、Chancel Mbemba（刚/防线领导，决定失球数）。</li>
+      <li><b>胜负手</b>：本场真正看点不是"谁赢"，而是<b>哥伦比亚破密集防守的效率与能否早进球</b>，以及<b>刚果(金)的防反能否再造杀机</b>——决定让球盘（-1）与大小球（小 2.5）的结算。哥伦比亚若早进球可降速控场；久攻不下则平局/被偷袭风险上升。</li>
+      <li><b>市场视角</b>：博彩去水（≈64/23/13）与 Opta 超算（出线 84.9%）收敛，1X2 定价合理、价值有限；信息含量最高的是<b>哥伦比亚 -1 让球与小 2.5 球</b>。过热指数 2.5/5（哥伦比亚共识 + 刚果(金)防反压低血洗预期）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② 哥伦比亚 Suárez vs Córdoba、Puerta vs R. Ríos 的取舍；③ 刚果(金)阵型（5-3-2 还是改四后卫、Sadiki 是否回归）；④ Mbemba 黄牌下的动作管理；⑤ Mariani 在 2024 美洲杯/世预赛的逐场出牌细分与本场 VAR 组合；⑥ Kalshi/Polymarket 本场成交量与动量细分；⑦ 亚盘让球（哥伦比亚 -1）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判/前瞻</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021501">FIFA — 比赛中心</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview">Opta Analyst — K 组前瞻/超算</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/predicted-lineups/history-maker-wissa-to-lead-attack-predicted-congo-dr-xi-vs-colombia_599767.html">Sports Mole — 刚果(金)预测首发/Mbemba 黄牌</a> · <a href="https://worldsoccertalk.com/world-cup/colombia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — 哥伦比亚阵容/James 伤情</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aJpLK9k1G604/">Racing Post — 赔率/投注</a> · <a href="https://onefootball.com/en/news/colombia-vs-dr-congo-prediction-world-cup-2026-preview-best-bets-43034382">OneFootball — 预测/赔率</a> · <a href="https://www.goal.com/en-us/news/colombia-dr-congo-world-cup-preview/blt2f05808271536e66">Goal — 前瞻</a><br>
+      • <a href="https://dailysports.net/news/the-match-officials-for-colombia-v-dr-congo-are-known/">Dailysports — Mariani 执法官宣</a> · <a href="https://en.wikipedia.org/wiki/Maurizio_Mariani">Wikipedia — 裁判 Mariani 档案</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K">Wikipedia — K 组</a> · <a href="https://www.skysports.com/football/news/12040/13543106/world-cup-2026-group-k-guide-fixtures-schedule-standings-and-odds-for-portugal-dr-congo-uzbekistan-and-colombia">Sky Sports — K 组指南/积分</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-21 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d4af37',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['哥伦比亚胜','平局','刚果(金)胜'],datasets:[{data:[64,23,13],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[42,58],backgroundColor:[DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['哥伦比亚','葡萄牙','刚果(金)','乌兹别克斯坦'],datasets:[{data:[3,1,1,0],backgroundColor:[HT,'#d21034',SC,'#1aa84a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'K 组积分（首轮后）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/反击','个人上限','大赛经验'],
+  datasets:[
+   {label:'哥伦比亚',data:[7,7.5,7.5,8,8.5,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'刚果(金)',data:[7.5,5.5,5.5,7,5.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

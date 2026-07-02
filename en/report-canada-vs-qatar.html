@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Analysis · Canada vs Qatar · 2026 World Cup Group B Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-canada-vs-qatar.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ca:#d52b1e;--qa:#8a1538;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f18,#8a1538);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1f1513,#152138);border:1px solid var(--line);border-left:4px solid var(--ca);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ca{color:#f08a82;font-weight:600}td.qa{color:#e08aa0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .carry{background:#10243a;border:1px solid #1e466b;border-radius:6px;font-size:11px;font-weight:700;color:#7dd3fc;padding:2px 8px;display:inline-block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🏁 Full-time 6-0 · 2026 World Cup · Group B Matchday 2 · The Host's Do-or-Die Qualifier</span>
+  <h1>Canada vs Qatar</h1>
+  <div class="meta">June 18, 2026 · Vancouver BC Place (sold out) · 18:00 ET / 15:00 PT · Group B (with Switzerland, Bosnia & Herzegovina · all four teams level on 1 point after Matchday 1)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇦 Canada</div><div class="rk">FIFA #30 · Host · MD1 1-1 Bosnia (68% possession, only 1 point)</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e08aa0">🇶🇦 Qatar</div><div class="rk">FIFA #55 · Asian Cup holders · MD1 1-1 Switzerland (90+4′ equalizer for their first-ever World Cup point)</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Post-Match Review: Tactics &amp; Data</h2>
+    <div class="sub">Full-time Canada 6-0 Qatar (HT 3-0) · Vancouver BC Place · Referee Cristián Garay (Chile) · Jonathan David hat-trick · Qatar finished 9 v 11 after two red cards · Sources: FIFA / ESPN / Opta / FotMob / Global News · The pre-match content below is preserved as a prediction archive</div>
+
+    <h4>① Scoreline progression</h4>
+    <p style="font-size:14px">A one-sided rout in which the host <b>both got the win it missed on Matchday 1 and set national World Cup records</b>. In the <b>16'</b> Jonathan David's volley was punched out by keeper Abunada and <b>Cyle Larin</b> followed up to score, 1-0; in the <b>29'</b> David added a right-footed volley (his first open-play goal in over a year), 2-0. The turning point came in the <b>33'</b>: Qatar's <b>Homam Ahmed</b> fouled Buchanan on the edge of the box; the referee first pointed to the spot and showed yellow, but after VAR review it became a free kick just outside the area and the yellow was <b>upgraded to red</b> — Qatar down to 10 men and a starter lost. In first-half stoppage time, <b>45+3'</b>, David poked home a rebound in a goalmouth scramble (the shot had clipped the crossbar) for his brace, <b>3-0 at the break</b>. The second half was harsher: around <b>55'</b> Canada midfielder <b>Ismaël Koné was scythed down by Assim Madibo, fracturing his tibia and fibula and being stretchered off</b> (confirmed post-match to need surgery); Madibo's yellow was upgraded to red, leaving <b>Qatar 9 v 11</b>. His replacement <b>Nathan Saliba</b> scored a direct free kick in the <b>64'</b> for 4-0, lifting Koné's shirt in tribute. Then <b>75'</b> Mohamed Al Mannai (Manai) deflected a shot into his own net for 5-0, and <b>90+2'</b> David completed his <b>hat-trick</b> to seal 6-0. Full-match xG 2.68-0.18, possession around 79%, shots 33-2, corners 19-1 — the numbers match the scoreline exactly. David became the <b>first player to score a World Cup hat-trick on home soil since Geoff Hurst in 1966</b>, and Canada equaled the record host margin of victory (matching the six-goal wins of Italy 1934, Brazil 1950 and Argentina 1978).</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 16' Larin (rebound off David's parried volley, 1-0) → 29' J. David (right-footed volley, 2-0) → 🟥 33' Homam Ahmed red card (foul on Buchanan, VAR removes penalty for a free kick, yellow upgraded to red) → 45+3' J. David (goalmouth rebound, ball clipped the bar, 3-0) → HT 3-0 → ~55' Koné serious injury, 🟥 Madibo red card (yellow upgraded, Qatar down to 9) → 64' Saliba (direct free kick, scored off the bench, 4-0) → 75' Al Mannai own goal (5-0) → 90+2' J. David (hat-trick, 6-0)</div>
+
+    <h4>② Key data comparison</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metric</th><th style="padding:6px">🇨🇦 Canada</th><th style="padding:6px">🇶🇦 Qatar</th><th style="text-align:left;padding:6px">Read</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Possession</td><td style="text-align:center"><b>≈79%</b></td><td style="text-align:center">≈21%</td><td style="padding:6px;color:var(--mut)">Even higher than MD1's 68% — Qatar's six-back block plus two red cards meant they conceded nearly all the ball</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.68</b></td><td style="text-align:center">0.18</td><td style="padding:6px;color:var(--mut)">A quality blowout, and the 6 goals beat the xG — the finishing finally clicked, a mirror image of MD1's "13 shots, 1 goal"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots / on target</td><td style="text-align:center"><b>33 / 10</b></td><td style="text-align:center">2 / —</td><td style="padding:6px;color:var(--mut)">33 shots is nearly triple MD1's 13; Qatar managed just 2 shots, their attack strangled</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Corners</td><td style="text-align:center"><b>19</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">19-1 corners, a picture of Canada's relentless territory beyond just Saliba's free kick</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Red cards</td><td style="text-align:center">0</td><td style="text-align:center"><b>2</b> (33' Ahmed · ~55' Madibo)</td><td style="padding:6px;color:var(--mut)">Qatar down to 10 from the 33', then to 9 after the foul that injured Koné — the man advantage amplified the collapse</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Goal distribution</td><td style="text-align:center"><b>David ×3 · Larin · Saliba · OG</b></td><td style="text-align:center">—</td><td style="padding:6px;color:var(--mut)">Open play, set piece (free kick), own goal, rebounds — far more varied ways to break a low block than on MD1</td></tr>
+      <tr><td style="padding:6px">Injuries · cards</td><td style="text-align:center">Koné tibia/fibula fracture</td><td style="text-align:center">2 reds</td><td style="padding:6px;color:var(--mut)">The rout was overshadowed by Koné's serious injury (needs surgery) — the real price Canada paid</td></tr>
+    </table></div>
+
+    <h4>③ Tactical review</h4>
+    <div class="insight"><div class="who">① Finishing finally delivered — the chronic "final ball" problem was cured, for one night</div>MD1: 68% possession, 13 shots, 1 goal; here: 79% possession, 33 shots, 6 goals, with 2.68 xG efficiently converted. Larin (starting) on the rebound, David with a volley + rebound + closer, Saliba's free kick, an own goal — Canada solved its biggest MD1 ailment with <b>multiple finishers and multiple ways to score</b>. <b>What this says about Canada</b>: promoting MD1 super-sub Larin to the XI alongside a central David — the "add finishing" idea — was right; once shot volume and quality both rose, possession finally turned into goals.</div>
+    <div class="insight"><div class="who">② The win must be discounted — Qatar collapsed from the 33rd minute</div>At 2-0 Homam Ahmed's red left Qatar 10 v 11; in the second half Madibo's red made it 9, and an already-modest side parked behind a six-back block lost all capacity to resist. <b>What this says about Canada</b>: a sizeable chunk of the 6-0 came from the opponent's numerical and psychological collapse. Canada did fully exploit its man and quality advantage (which is what good teams do), but <b>whether it can replicate this efficiency against a full-strength, more disciplined side (such as Switzerland next) remains an open question</b> — the blowout shouldn't be over-extrapolated.</div>
+    <div class="insight"><div class="who">③ Jonathan David is this team's true ceiling</div>David delivered the hat-trick (open play, rebound, closer) and indirectly created Larin's opener (the parried volley that fell loose). It was his first open-play goal in over a year, and his form is now fully unlocked. <b>What this says about Canada</b>: with Davies out, David is the attacking engine and top finisher — whether his hot streak carries into the heavyweight clash with Switzerland directly decides Canada's chance at top spot and how far it goes in the knockouts.</div>
+    <div class="insight"><div class="who">④ Qatar's "park-and-set-piece" template was debunked — no repeat of the Switzerland equalizer</div>On MD1 Qatar stole a point off Switzerland via a low block and a 90+4' set piece; here it set up the same six-back, but lost its structure to a red card in the 33', finishing with just 0.18 xG and 2 shots. <b>What this says about Qatar</b>: its only realistic weapon (resilience + stealing points from set pieces) depends heavily on two preconditions — 11 men and a tight scoreline. Concede early and lose a man, and the disciplined defense disintegrates instantly; the gap in quality and squad depth is magnified in adversity.</div>
+    <div class="insight"><div class="who">⑤ The cost of the rout: Koné's injury is a real tactical subtraction</div>Midfielder Koné was scythed down by Madibo, fracturing his tibia and fibula, and is confirmed to need surgery — effectively done for this tournament. <b>What this says about Canada</b>: while banking a first-ever win and a goal-difference bonus, it loses a midfield rotation option — against a stronger passing side like Switzerland, the screen alongside Eustáquio is thinned. That is the substantive loss underrated beneath the 6-0 (Saliba scoring off the bench is consolation, but the thinner depth is a fact).</div>
+
+    <h4>④ Prediction reconciliation (checking the pre-match conclusions)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>Summary "Canada is an overwhelming favorite, ≈70% no-vig implied" → Canada won</b>: direction completely correct, and the favorite delivered far beyond expectation.</li>
+      <li>✗ <b>Summary "Canada wins low-scoring (1-0 / 2-0)" → actual 6-0</b>: result direction right, but the margin far exceeded the "low-scoring" call — MD1 ailments plus two Qatar reds produced the big score.</li>
+      <li>✗ <b>"Hasn't scored 3 in a game in 11 outings, wins-but-not-by-much, BTTS No / Under" → actual 6 goals, +6 GD</b>: the goal-shy historical baseline was shattered; Canada -1.5 (needing +2) cashed easily, and the "not-by-much" read was overturned by the red-card script.</li>
+      <li>✓ <b>Core read "Canada's efficiency at breaking the low block is the decider" → confirmed</b>: shot volume and finishing both rose, possession became goals — exactly what MD1 lacked and this match delivered.</li>
+      <li>✓ <b>"Qatar's only weapons are parking the bus + set pieces + resilience" → partially delivered then collapsed</b>: the read of Qatar's approach was right, but its weapons died after the 33' red — this site had already flagged that template's fragility ("needs 11 men + a tight game").</li>
+      <li>△ <b>"Davies most likely out" → actually in the squad but unused</b>: his return process reached the squad list, but with a 6-0 lead Marsch didn't risk him, so the left-side spark still didn't appear — broadly right, slightly off on detail.</li>
+      <li>△ <b>Market overheat 3/5 (driven by qualification stakes + Davies suspense) → partially holds</b>: the result delivered, but the flow (red cards + rout) was far more open than "narrow control"; the overheat landed more on the reverse settlement of handicap and totals.</li>
+    </ul>
+
+    <h4>⑤ Forward transfer (carry into the next match)</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇦 Canada → 6/24 vs Switzerland (Vancouver BC Place · battle for top spot)</div>① <b>Win in hand, 4 points and leading</b>: top of the group on goal difference over Switzerland, all but qualified, and the finale is a straight fight for first (Switzerland beat Bosnia 4-1 the same day); ② <b>David's form must continue</b>: fully unlocked after the hat-trick, he remains the top finisher against a more disciplined Switzerland; ③ <b>discount the rout</b>: the 6-0 had an opponent-down element — whether the break-the-block efficiency replicates against a full-strength, better-passing Switzerland is the real test; ④ <b>Koné's injury is a subtraction</b>: thinner midfield rotation, with Saliba/Ali Ahmed needing to step in and the screen beside Eustáquio under pressure; ⑤ if available, Davies could provide left-side width for the first time.</div>
+      <div class="insight" style="margin:0"><div class="who">🇶🇦 Qatar → 6/24 vs Bosnia & Herzegovina (Seattle · qualification all but gone)</div>① <b>Two red-card suspensions carry over</b>: both Homam Ahmed (33' red) and Madibo (~55' red) are <b>suspended</b> for the finale, piling onto an already-thin squad and forcing a reshuffle at the back and the lone holding role; ② <b>exposed flaws</b>: the park-the-bus template crumbles once a man down, and the open-play creativity was almost nil (2 shots, 0.18 xG) — against a Bosnia side also needing points, Qatar must rediscover its MD1 low-block discipline and set-piece height; ③ <b>morale dented</b>: from the high of equalizing Switzerland to its heaviest-ever defeat, Lopetegui must rebuild confidence; ④ proper No.9s like Almoez Ali may return to the XI as Qatar opens up to chase a win.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Sources: FIFA Match Centre, ESPN, Opta Analyst, FotMob, Global News, Yahoo Sports, CBC, FOX Sports, TSN. For analysis only — not betting advice.</p>
+  </section>
+
+  <!-- ===== Quick Summary ===== -->
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">After two Matchday 1 draws, <b>all four Group B teams are level on 1 point</b>, and this is the game Canada sees as "the most winnable in the group" — a win puts one foot into the round of 32. Canada are overwhelming favorites: bookmaker no-vig implied win probability is about <b>70%</b> (bet365 Canada 1.29 / US line −370~−385), draw 5.50, Qatar win about 9.50~10.75. The script mirrors Matchday 1 closely: <b>Canada possession siege vs Qatar low-block bus + set-pieces/counters to steal a point</b>. Each side exposed the same kind of flaw in MD1 — Canada had 68% possession and 13 shots for just 1 goal (rescued by super-subs Larin/David); finishing is their ceiling. Qatar were peppered by Switzerland with 26 shots and 3.24 xG, yet equalized in the 90+4′ off a set-piece header — <b>parking the bus + set-pieces + resilience</b> is their only realistic weapon. The biggest single variable remains <b>Alphonso Davies</b>: as of 6/15 he is still in the return-to-play process and <b>most likely still out for this match</b> (a pre-match game-time decision). Baseline script: a low-scoring narrow Canada win (1-0 / 2-0), pushing to claim the three points they missed in MD1; Market Overheat Index ≈ <b>3/5</b>.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Canada implied win % (no-vig)</div><div class="v" style="color:#f08a82">≈70%</div></div>
+      <div class="key"><div class="k">Group tie</div><div class="v" style="color:var(--warn)">All four on 1 pt</div></div>
+      <div class="key"><div class="k">Davies</div><div class="v" style="color:var(--bad)">Likely out</div></div>
+      <div class="key"><div class="k">Market Overheat Index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Canada's efficiency against a packed defense</b>: 68% possession and 17 touches in the box for only 1 goal in MD1 — against a Qatar bus that will sit even deeper than Bosnia, the finishing must improve, or it's another uncomfortable stalemate.</li>
+      <li><b>Qatar's set-pieces and goalkeeper Abunada</b>: Khoukhi's header (the MD1 equalizer) plus in-form goalkeeper Abunada (5 key saves vs Switzerland) are the two pillars of Qatar holding the draw or even stealing a point.</li>
+      <li><b>Will Davies return</b>: if the Bayern wing-back returns, it directly solves the "no width" problem Canada exposed in MD1; if he's out again, the burden of breaking down the block stays on David/Buchanan.</li>
+      <li><b>Tiebreaker math</b>: with all four level, goal difference and goals scored become sensitive — Canada have an incentive to win by more, but they haven't scored 3 in a single game in their last 11, so "win but not by much" is the market baseline.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core Module: Key Late-Breaking News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Late-Breaking News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and form signals affecting this match, each explaining how it changes tactics or outcome (includes items carried over from last match)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">Canada · Major injury <span style="color:var(--mut);font-weight:400">· ESPN / CBC · 06-15 · two sources</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Captain Alphonso Davies <b>most likely still out for this match</b>: still in the return-to-play process on Monday, "almost impossible to reach match fitness by Thursday"</div>
+      <p style="font-size:13.5px">Canada captain Davies only warmed up with the team on Monday and has not resumed full training, remaining in the protected return-to-play recovery process. Both CBC and ESPN report that, although Marsch previously called him "close to fit," <b>he is almost certain to be unable to face Qatar on Thursday</b>, with very low odds of reaching match fitness within the week — a pre-match game-time decision. Davies strained his hamstring on 5/6 in Bayern's Champions League semifinal against PSG, and had not appeared for the national team since his ACL tear in March 2025.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: <span class="carry">carried over from last match</span> our post-MD1 takeaway clearly stated "if Davies returns it directly solves the no-width problem" — but if he's out again, Canada's left-side spark and defense-to-attack transition speed remain absent, with the burden of breaking down the block concentrated on David (central muscle) + Buchanan (right-side one-on-one). This is the single biggest variable of the match and the underlying logic behind the market pricing "Canada win but not by much." <span style="color:var(--warn)">[Final squad inclusion to be confirmed by the official lineup before kickoff · TBC]</span></div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.cbc.ca/sports/soccer/worldcup/fifa-canada-world-cup-ali-ahmed-chris-jones-june-15-9.7236016" style="color:var(--accent)">CBC Sports — Davies likely out vs Qatar</a> · <a href="https://www.espn.com/soccer/story/_/id/49076456/alphonso-davies-injury-canada-world-cup-qatar" style="color:var(--accent)">ESPN — still not back in full training</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Canada · Carried over from last match <span style="color:var(--mut);font-weight:400">· our MD1 review · 06-12</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>MD1 1-1 vs Bosnia: 68% possession, 13 shots only 1 goal</b>, rescued by super-sub Larin's 78′ equalizer; the set-piece concession exposed box marking</div>
+      <p style="font-size:13.5px"><span class="carry">carried over from last match</span> Canada's home debut saw Bosnia strike first from a corner (Lukic header); Canada dominated throughout but couldn't break through until Marsch brought on Cyle Larin in the 76′, with Larin equalizing in the 78′ off a Promise David through ball. Possession 68% vs 32%, xG 1.25 vs 0.98, 17 touches in the box — <b>plenty of the ball but no penetration, with inefficient finishing</b> is the core problem to solve here. The takeaways carried over from our MD1 review: ① Davies could return (now most likely still out); ② breaking down the block remains the core task, with Larin pushed up or a two-striker setup worth considering; ③ set-piece defending needs shoring up (tighten box marking against taller opponents).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Qatar will sit even deeper than Bosnia (just 31% possession and 0.76 xG vs Switzerland in MD1), so Canada's MD1 ailment of "inefficiency against a packed defense" will only be magnified here. The ESPN preview bluntly says Canada's priority is to "take higher-quality shots while maintaining intensity" — exactly what they failed to do in MD1.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview / MD1 data</a> · <a href="https://theanalyst.com/articles/canada-vs-bosnia-herzegovina-stats-world-cup-2026" style="color:var(--accent)">Opta — Canada-Bosnia data</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Qatar · Carried over from last match <span style="color:var(--mut);font-weight:400">· our MD1 review · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>MD1 1-1 vs Switzerland: peppered with 26 shots and 3.24 xG, 90+4′ Khoukhi header equalizer</b> earning their first-ever World Cup point; goalkeeper Abunada with 5 key saves</div>
+      <p style="font-size:13.5px"><span class="carry">carried over from last match</span> Qatar defended deep in a low block, took a battering for nearly the whole game, yet stole a historic point off one stoppage-time set-piece. The takeaways carried over from our MD1 review: ① <b>low block + set-pieces = a repeatable template</b> — Canada's 68% possession only drew with Bosnia in MD1, so Qatar's bus script could equally work against Canada; ② <b>set-piece aerial threat is the scoring hope</b> — Khoukhi's header is a double-edged sword against a Canada side reliant on corners; ③ <b>morale bonus</b> — after earning their first-ever point, the team's confidence and defensive discipline will be steadier. In the second half Lopetegui pushed the line higher, demanded a more advanced midfield press and more runs in behind from his forwards — ESPN believes Qatar are "used to attacking at continental level, and they are at their best when they open up to play," and against a Canada side that struggled even with Bosnia's counters, "attack may be the best defense."</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Qatar proved in MD1 that parking the bus + set-pieces can steal points off strong sides. But their MD1 squad was made up entirely of domestic-league players, the technical gap is clear, and they recorded "the lowest pressing intensity of all participating teams" in MD1 (letting Switzerland make 34.7 passes per defensive action on average) — meaning Canada will dominate the ball, and the decider is whether <b>Canada can convert possession into high-quality shots and contain Qatar's set-pieces</b>.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://theanalyst.com/articles/qatar-vs-switzerland-stats-world-cup-2026" style="color:var(--accent)">Opta — Qatar-Switzerland data</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/qatar-canada-lopetegui/" style="color:var(--accent)">101GG — Lopetegui: "one point is a dream, we'll keep dreaming"</a> · <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Qatar need to open up</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Lineup signals · Both sides' predicted XIs <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole · 06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Canada may revert to 4-4-2 (David + Promise David/Oluwaseyi up top); Qatar <b>Almoez Ali in line to start</b> replacing the mobile front-three striker</div>
+      <p style="font-size:13.5px">For Canada, ESPN predicts they stick with the MD1 lineup's 4-4-2 framework (Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Koné · Eustáquio · Millar; Promise David · Jonathan David); if Davies happens to be available, some predictions slot him onto the left to switch to a 4-2-3-1. For Qatar, Sports Mole reports that all-time top scorer <b>Almoez Ali</b> (55~60 national-team goals, a sub in MD1) is in line to return to the starting XI, forming Lopetegui's most threatening attacking pairing with Afif; Khoukhi continues to anchor the defense. <span style="color:var(--warn)">[Both official starting XIs to be confirmed by the FIFA squad list before kickoff · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: if Canada keep the 4-4-2 two-striker shape, it shows Marsch is continuing the MD1 thinking of "adding a finisher rather than width" (echoing the reality of no Davies); if Qatar use a true target-man in Almoez Ali to replace the MD1 mobile front three, it means Lopetegui wants an extra aerial presence in the box on set-pieces and counters — this affects the reading of both the handicap line (Canada −1.5) and the both-teams-to-score market.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — both sides' predicted XIs</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html" style="color:var(--accent)">Sports Mole — Qatar predicted XI / Almoez Ali</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups ===== -->
+  <section style="border:1px solid #1d4a2a;border-radius:12px;padding:16px 16px 4px;margin:18px 0;background:linear-gradient(180deg,rgba(22,74,42,.18),transparent 60%)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA official match centre · released T-60 · incl. vs-predicted diff</span></h2>
+
+    <h4 style="margin-bottom:4px">🇨🇦 Canada confirmed XI (GK + 4 def + 2 mid + 4 fwd → 4-2-3-1)<span style="font-size:11px;color:var(--good);font-weight:700;margin-left:6px">✅ Official</span></h4>
+    <div class="lineup">Crépeau; Johnston · de Fougerolles · Cornelius · Laryea; Eustáquio(C) · Koné; Buchanan · J. David · Ali Ahmed; Larin</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">Key bench weapons: Promise David (MD1 assist provider), Liam Millar (left-side width), Alphonso Davies (<b>not in the XI, still in his return-to-play process</b>). Coach: Jesse Marsch.</div>
+
+    <h4 style="margin-bottom:4px">🇶🇦 Qatar confirmed XI (GK + 6 def + 1 mid + 3 fwd → a back-five lockdown, ≈5-3-2/5-4-1)<span style="font-size:11px;color:var(--good);font-weight:700;margin-left:6px">✅ Official</span></h4>
+    <div class="lineup">Abunada; Pedro Miguel · Issa · Jassem Gaber · Ayoub Aloui · Homam Ahmed · Khoukhi(C); Madibo; Edmilson Jr. · Afif · Abdurisag</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">Key bench weapon: Almoez Ali (the national-team's all-time top scorer, <b>predicted to start but left out, kept in reserve</b>). Coach: Julen Lopetegui.</div>
+
+    <h4 style="margin-bottom:4px">vs Predicted XI · changes</h4>
+    <table>
+      <tr><th>Team</th><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td>🇨🇦</td><td>Forward</td><td>Promise David</td><td class="ca">Larin</td><td>The MD1 super-sub Larin starts outright alongside J. David — a twin finishing threat; Marsch keeps the "add a finisher, not width" idea (echoing no Davies)</td></tr>
+      <tr><td>🇨🇦</td><td>Wide</td><td>Millar</td><td class="ca">Ali Ahmed</td><td>The runner/direct Ali Ahmed comes in for Millar, adding some left-side punch — partly covering the width void left by Davies</td></tr>
+      <tr><td>🇨🇦</td><td>Shape</td><td>4-4-2</td><td class="ca">4-2-3-1</td><td>Eustáquio + Koné double pivot, David up top, Buchanan/Ahmed wide — better for possession to pick a low block than a flat two up front</td></tr>
+      <tr><td>🇨🇦</td><td>Davies</td><td>Likely out</td><td class="ca">Confirmed out</td><td>The biggest single variable lands: Davies not named, Laryea stays at LB, the left-side burst is still missing, and breaking the block falls to David/Buchanan/Larin</td></tr>
+      <tr><td>🇶🇦</td><td>Striker</td><td>Almoez Ali to start</td><td class="qa">Almoez Ali dropped</td><td>The big surprise: the predicted target-man Almoez Ali is benched; Qatar abandon an orthodox No.9 for a <b>strikerless lockdown-and-counter</b>, with Afif to seize moments</td></tr>
+      <tr><td>🇶🇦</td><td>Shape</td><td>Back four</td><td class="qa">Back five/six</td><td>Lopetegui sets up an extreme defensive block (six defensive-profile players + lone pivot Madibo) — openly parking the bus and looking to steal via set pieces/counters against the host</td></tr>
+    </table>
+
+    <h4 style="margin-bottom:4px">Tactical read</h4>
+    <ul style="font-size:13.5px;line-height:1.6;margin:4px 0 10px;padding-left:18px">
+      <li><b>Canada starting Larin = front-loaded firepower</b>: the man who scored within 2 minutes off the bench in MD1 now starts beside J. David, directly answering the MD1 "68% possession, 13 shots, 1 goal" finishing problem. <b>Snapshot verdict "low-scoring Canada win" holds.</b></li>
+      <li><b>4-2-3-1 over a flat two</b>: Eustáquio + Koné screen behind, David central with Buchanan/Ali Ahmed wide — better suited to besiege with possession and prise open the block from the flanks; a structural upgrade for breaking the low block.</li>
+      <li><b>Davies confirmed out</b>: the biggest carried-over variable lands on the "absent" side — left-side width and transition speed still missing, Laryea stays at LB, and the load falls on David (central), Buchanan (right 1v1) and Larin (box finishing).</li>
+      <li><b>Qatar drop Almoez Ali and park a back-five bus</b>: Lopetegui ditches an orthodox striker and stuffs the back line, betting on set-piece resilience (the 90+4' header that drew Switzerland in MD1) and Afif's individual moments — which further cements the "Canada win but not big + under / BTTS No" narrative.</li>
+      <li><b>Overall verdict: holds, not revised.</b> Canada's first-choice framework is intact and Larin+David both starting means more firepower than predicted, so the ~70% win basis is unchanged; but Qatar's back-five bus with no striker makes <b>the handicap (can Canada cover −1.5 by 2 goals) and the over / BTTS the real questions</b> → snapshot "low-scoring win (1-0/2-0)" holds, under / BTTS-No value reinforced.</li>
+    </ul>
+
+    <h4 style="margin-bottom:4px">Market reaction</h4>
+    <p style="font-size:13px;color:#cbd5e1;margin:4px 0 10px">Pre-match prices (decimal): Canada <b>1.29</b> · Draw <b>5.50</b> · Qatar <b>≈9.50~10.75</b>; Canada −1.5 handicap ≈ <b>1.83</b>. The confirmed XIs carry <b>no shock injury withdrawal</b> (Canada actually add firepower by starting Larin, while Qatar voluntarily de-tool their attack), so the 1X2 is unmoved; Qatar dropping Almoez Ali for a back-six lockdown leans <b>slightly toward the under / BTTS No and raises the bar for Canada to cover −1.5 by two goals</b>. Factual note only — not betting advice.</p>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:2px">Sources: FIFA official match centre — confirmed starting XI (authoritative official source, pre-match screenshot provided by user) · predicted comparison: <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html" style="color:var(--accent)">Sports Mole</a></div>
+  </section>
+
+  <!-- ===== 1 Data ===== -->
+  <section>
+    <h2><span class="n">1</span> Data (Core)</h2>
+    <div class="sub">Win-draw-loss implied probabilities (no-vig odds) · Group B level standings · over/under market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (no-vig, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (no-vig)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group B standings after MD1 (all four on 1 point)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇦 Canada</th><th>🇶🇦 Qatar</th></tr>
+      <tr><td>FIFA ranking</td><td class="ca">#30</td><td class="qa">#55</td></tr>
+      <tr><td>Head coach</td><td class="ca">Jesse Marsch (ex-Leeds United)</td><td class="qa">Julen Lopetegui (ex-Real Madrid/Spain)</td></tr>
+      <tr><td>MD1 result</td><td class="ca">1-1 Bosnia (68% possession · xG 1.25 · 13 shots, 1 goal)</td><td class="qa">1-1 Switzerland (31% possession · xG 0.76 · faced 26 shots)</td></tr>
+      <tr><td>Form</td><td class="ca">Unbeaten in last 9; but no 3-goal game in last 11, averaging just 1.0 goal over last 9</td><td class="qa">After 6 winless games before the tournament, a stoppage-time equalizer in MD1 earned their first-ever World Cup point</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ca">World Cup 2022: lost all three group games (0 points) · Copa América 2024: 4th place (semifinal loss to Argentina, third-place playoff lost on penalties to Uruguay)</td><td class="qa">World Cup 2022: host's three straight losses (0 points) · Asian Cup 2023: defending champions (3-1 over Jordan in the final, Afif hat-trick)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ca">Win 1.29 (implied ≈70%)</td><td class="qa">Win ≈9.50~10.75 (≈10%) · Draw 5.50 (≈18%)</td></tr>
+      <tr><td>Handicap / over-under</td><td colspan="2" class="ca">Canada −1.5 about 1.83 (−120); Over 2.5 marginally favored (about −125) but at odds with "Canada's lack of goals"; BTTS No about −175 is the sharper side</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2">No verifiable official meetings — this is the two teams' first-ever encounter (TBC)</td></tr>
+      <tr><td>Key players</td><td class="ca">Jonathan David / Tajon Buchanan / Stephen Eustáquio</td><td class="qa">Akram Afif / Almoez Ali / Boualem Khoukhi / goalkeeper Abunada</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are no-vig implied probabilities from DECIMAL odds (≈70/18/10). Odds sources: bet365 (Canada 1.29 / −370), bet99 (Canada −370, draw +450, Qatar +975), other books pricing Qatar up to +1050. Canada handicap −1.5 about 1.83 (−120, needs to win by 2); over/under leans marginally to the over (Over 2.5 about −125), but this clashes with Canada's recent lack of goals, so <b>BTTS No (about −175) is the sharper side</b>. The data model gives Canada 69.8% / draw 19.4% / Qatar 10.8%, expected goals Canada 1.93, Qatar 0.59, total 2.53 — aligning with the no-vig odds direction. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this-tournament actual · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendly samples)</b> with its <b>actual values from matches already played at this World Cup</b>, item by item, to see "whether this tournament is above or below the historical level, and what that tells us." Public xG samples for national teams are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: Historical average vs this World Cup actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (Round 1)</th><th>Delta &amp; read</th></tr>
+      <tr><td class="ht">🇨🇦 Canada · Attack xG/penetration</td><td class="ht">Under Marsch relies on Davies's width + high-press transitions; decent goals in friendlies/qualifying</td><td class="ht">Round 1 <b>xG 1.25</b>, 68% possession, 17 box touches yet a 1-1 draw with Bosnia</td><td>Possession surged but <b>penetration below</b> potential — without Davies the attack passes sideways and breaks down a packed defence inefficiently, confirming "possession without penetration"</td></tr>
+      <tr><td class="ht">🇨🇦 Canada · Defence xGA</td><td class="ht">Historically a mid-table back line</td><td class="ht">Round 1 allowed Bosnia <b>xGA 0.98</b> (on only 1/3 possession), conceded 1 goal</td><td>The defence let a low-possession opponent generate near-comparable threat, <b>level-to-slightly-weak</b> versus history — counter protection is a concern</td></tr>
+      <tr><td class="sc">🇶🇦 Qatar · Attack xG</td><td class="sc">Back-to-back Asian Cup champions (2019/2023) with an efficient attack, but slumped at the 2022 home World Cup, scoring 1 goal in three games</td><td class="sc">Round 1 <b>xG 0.76</b>, 31% possession, 1-1 draw with Switzerland</td><td>Against a strong opponent it reverts to the "low-block survival" tier, <b>close to</b> the 2022 World Cup slump baseline — likely similarly low possession against Canada</td></tr>
+      <tr><td class="sc">🇶🇦 Qatar · Defence / set pieces</td><td class="sc">At the Asian Cup known for low goals conceded + set pieces (won 2023 on defence)</td><td class="sc">Round 1 withstood 26 shots and held until 90+4′, <b>stealing 1 point off a set piece (Khoukhi header)</b></td><td><b>Delivered</b> the historical strength: disciplined low block + set-piece aerial threat + resilience, a realistic template for the host-region side</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Canada this tournament has more possession but less penetration (missing Davies), so its actual attack is <b>below</b> potential; Qatar's attack has reverted to the 2022 World Cup slump tier, but its defence + set-piece resilience <b>delivered</b> its historical strength. The deep data supports the main line that "Canada dominates territory but its efficiency at breaking the low block is in doubt, and Qatar has fertile ground to steal points from set pieces" — and also explains why the BTTS-No side is the sharper one. Sources: Opta Analyst (Round 1 xG/shots) · ESPN/NBC (Round 1 data) · team major-tournament/qualifying records. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model-projected xG (data model)</td><td class="ht">Canada ≈1.93</td><td class="sc">Qatar ≈0.59</td><td>Total ≈2.53, in line with the no-vig direction; but Canada's "inefficiency at breaking a packed defence" will drag down actual conversion</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the system Canada is clearly above Qatar; the supercomputer gives Canada 69.8% / draw 19.4% / Qatar 10.8%</td><td>After opponent-strength calibration, Qatar's draw with Switzerland carries high weight (Switzerland had 26 shots), so the defensive sample is credible</td></tr>
+      <tr><td>Pressing PPDA · xT · Field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Canada high press + possession, Qatar deep low block + set pieces</td><td>The territory will lean toward Canada for long stretches; the result hinges on whether it can break the bus</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric glossary (what these "xG-type" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (expected goals / non-penalty expected goals): the total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (expected goals against): the quality of chances opponents create against you, measuring true defensive level rather than saves/luck.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (expected goal difference per 90): xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (average shot quality): whether shot selection is efficient — a low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes allowed per defensive action): the lower the value, the more aggressive the press, reflecting pressing intensity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of touches in the attacking third, measuring territory/game control rather than mere possession share.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources such as Opta/FotMob/Sofascore/Understat/xGscore; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are always marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- ===== Betting Market Heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· celebrity tips / odds / money flow / public sentiment</span></h2>
+    <div class="sub">Four signals → composite overheat index. Canada are clear favorites, but the sentiment premium is below an opening-match level — the consensus is "Canada unbeaten," the disagreement is "by how many" and "whether it stays low-scoring"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Overheat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · clear outcome lean; heat driven by do-or-die qualification + home narrative</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Experts are highly unified backing a Canada win, and the line is stable (Canada 1.29 short price). But <b>the money disagreement is all on the handicap (−1.5) and over/under</b>: Canada haven't scored 3 in their last 11 and average 1.0 goal over their last 9, making "win but not by much + Under/BTTS No" the more accepted angle. The heat comes from <b>the host's do-or-die qualification + the suspense over Davies' return</b>, not from the straight match line.</div>
+    </div>
+
+    <h4>① Expert tip aggregation (direction tally: Canada win — all · Qatar win — 0 · Draw — 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>CanadaSportsBetting (data model)</td><td>North American betting media</td><td>Canada win (−370); model gives Canada <b>69.8%</b>, expected goals 1.93 vs 0.59; main pick "Canada win + total goals under 3.5" (+130)</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>Canada win + low score; Bet Builder leans on Canada controlling and breaking down the block</td></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td>Canada to win; Qatar will sit deep and rely on set-pieces for a sliver of hope</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Controlled Canada win; Qatar's firepower is limited</td></tr>
+      <tr><td>SportsGambler</td><td>Betting analysis site</td><td>Canada handicap; expects a low-scoring 1-2 goal win</td></tr>
+      <tr><td>bet365 News</td><td>Bookmaker preview</td><td>Canada home win, low score; names Abunada's form as Qatar's basis for holding the draw</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (moderate)</b>: 100% unified on the outcome backing Canada — this is reasonable consensus, not overheating. The real disagreement is on <b>whether it stays low-scoring, BTTS, and the handicap size</b> (−1 vs −1.5). Topic heat is driven by do-or-die qualification + the suspense over Davies' return, but there is no notable money pushing a Qatar win.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time</th><th>Market</th><th>Canada win</th><th>Reading</th></tr>
+      <tr><td>Open (bet365)</td><td>1X2</td><td class="ca">1.29 (−370)</td><td>Clear lean to Canada; draw 5.50 (+450) / Qatar 9.50~10.75 (+850~+1050)</td></tr>
+      <tr><td>06-16</td><td>Multiple books</td><td class="ca">1.27~1.29</td><td>Canada's short price drifts narrowly, basically stable (bet99 −370)</td></tr>
+      <tr><td>06-16</td><td>Over/Under</td><td colspan="2" class="ca">Over 2.5 marginally favored (about −125); but BTTS No about −175 is the sharper side</td></tr>
+      <tr><td>Handicap (Asian line reference)</td><td>Canada −1.5</td><td colspan="2" class="ca">Canada −1.5 about 1.83 (−120), needs to win by 2; −1 TBC</td></tr>
+    </table>
+    <div class="note">📌 The 1X2 odds barely move — outcome pricing is stable. The most active price discovery is on the <b>handicap (−1/−1.5) and over/under</b>, plus BTTS. Canada haven't scored 3 in their last 11 and average 1.0 goal over their last 9, which combined with Qatar's deep defending is the structural basis for "Under / BTTS No" being repeatedly named. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Public sentiment</h4>
+    <ul class="cl">
+      <li><b>Data model</b>: the CanadaSportsBetting model gives Canada 69.8%, draw 19.4%, Qatar 10.8% — the quant aligns with the no-vig odds direction, with no clear sentiment deviation.</li>
+      <li><b>Sentiment focus</b>: highly concentrated on two threads — <b>Canada's do-or-die qualification (a win means leading the group, one step closer to the round of 32)</b> and <b>whether Davies can return</b> — this is topic heat rather than money overheating.</li>
+      <li><b>Qatar narrative</b>: the sentimental traffic from the 90+4′ equalizer against Switzerland and earning their first-ever World Cup point is still there; Lopetegui's rallying cry "one point is a dream, we'll keep dreaming," but the technical gap and an all-domestic squad limit confidence in backing a Qatar win.</li>
+      <li><b>Kalshi / Polymarket / DefiRate</b>: single-match outcome prices, volumes and 30-day momentum data not publicly available <span style="color:var(--warn)">(TBC)</span>.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite reading</b>: the outcome direction is clear (Canada), bookmakers and the model agree, overheat index <b>3/5</b>. The heat does not come from the 1X2 but from the topic traffic of <b>do-or-die qualification + the suspense over Davies' return</b>, as well as the <b>handicap (−1/−1.5), Under and BTTS No</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.canadasportsbetting.ca/news/world-cup/canada-qatar-june-18-world-cup-prediction/">CanadaSportsBetting — model/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/canada-vs-qatar-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-acVXW4O79F8N/">Racing Post — odds/betting</a> · <a href="https://www.sportsgambler.com/betting-tips/football/canada-vs-qatar-prediction-lineups-odds-2026-06-18/">SportsGambler</a> · <a href="https://news.bet365.com/en-us/article/canada-qatar-preview-and-lineup-predictions/2026061615094532979">bet365 News — preview</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760440">ESPN Odds</a></div>
+  </section>
+
+  <!-- ===== 2 Match Referee ===== -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Officially announced</b> (ESPN, 06-16): the match referee is Chile's <b>Cristián Garay</b> (37). This is his <b>first-ever World Cup finals assignment</b>. Sources: ESPN / WorldReferee.</div>
+    <h4>Last two major tournaments + verifiable officiating tendencies (actual data, limited sample)</h4>
+    <ul class="cl">
+      <li><b>Extremely limited major-tournament sample</b>: Garay's continental major-tournament résumé is just one Copa América 2024 group game (Ecuador vs Jamaica, Group B), plus 2026 World Cup CONMEBOL qualifiers (including one in October 2024 at Buenos Aires' Monumental). <b>No World Cup finals sample at all — this is his World Cup debut</b>, so the predictability of this match's officiating is significantly lower than for European veterans with a large major-tournament sample.</li>
+      <li><b>Verifiable card baseline (small sample, for reference only)</b>: WorldReferee records 7 games, 29 yellows, 0 reds, 1 penalty cumulatively, <b>about 4.14 yellows and 0 reds per game</b>. The sample is far too small to serve as a stable tendency profile — per the section 8 standard, <b>this is explicitly flagged as "no large major-tournament sample."</b></li>
+      <li><b>Officiating history with the two teams</b>: as a CONMEBOL (South American) referee, he has <b>no verifiable officiating history with either Canada or Qatar (no sample)</b>.</li>
+      <li><b>This tournament's unified new rules</b>: goalkeeper 8-second hold, only the captain may speak with the referee, semi-automated offside — within the "Canada siege vs Qatar deep defending" structure, the space for Qatar to hold the draw via goalkeeper ball control/time-wasting is squeezed by the new rules; but new World Cup referees usually tend to play it safe and avoid extreme calls, making this match's foul-calling threshold a genuine blind spot.</li>
+    </ul>
+    <div class="flag">⚠ <b>Officiating analysis</b>: unlike the "top large-sample European referee" type as in England-Croatia, Garay's World Cup debut + tiny verifiable sample means <b>the officiating angle is not a reliable analytical dimension for this match</b> — it can't be used to judge card trends or the penalty threshold. For the record: South American referees usually have a higher tolerance for physical contests (in theory favoring the attacking side), but 4.14 yellows/game (7-game sample) is not enough to confirm this, so <b>this match should be treated as "no large major-tournament sample, awaiting live observation."</b></div>
+  </section>
+
+  <!-- ===== 3 Starting XI & Key Players ===== -->
+  <section>
+    <h2><span class="n">3</span> Starting XI & Key Players <span style="font-size:11px;font-weight:700;color:var(--good);border:1px solid #1d4a2a;border-radius:6px;padding:2px 7px;margin-left:8px;vertical-align:middle">Predicted version — official XI in the ✅ module above</span></h2>
+    <div class="sub">Predicted XIs (analyst-source projections, unofficial; to be confirmed by the official pre-match lineup · TBC)</div>
+    <h4>🇨🇦 Canada predicted XI (4-4-2 · no Davies)</h4>
+    <div class="lineup">Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Koné · Eustáquio · Millar; J. David · P. David</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ca">Jonathan David</td><td>Striker / Juventus</td><td>National-team all-time top scorer, penalty taker; provided the equalizing assist in MD1, still the top finisher for breaking down the block here</td></tr>
+      <tr><td class="ca">Tajon Buchanan</td><td>Winger / Villarreal</td><td>The biggest spark without Davies; right-side one-on-one is the main route through the bus</td></tr>
+      <tr><td class="ca">Stephen Eustáquio</td><td>Holding mid/captain / Porto</td><td>Pairs with Koné as a double pivot, the metronome in possession; against a deep block, the quality of his final-third supply decides siege efficiency</td></tr>
+      <tr><td class="ca">Cyle Larin</td><td>Substitute striker</td><td>Super-sub in MD1, scored within 2 minutes — bench finishing is Marsch's ace in the hole for breaking down the block</td></tr>
+    </table>
+    <h4>🇶🇦 Qatar predicted XI (4-3-3 / low block)</h4>
+    <div class="lineup">Abunada; Al Oui · Pedro Miguel · Khoukhi(C) · Homam Ahmed; Gaber · Madibo · Laye; Edmilson Junior · Almoez Ali · Afif</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="qa">Akram Afif</td><td>Winger / Al Sadd</td><td>Core of two Asian Cups, hat-trick in the 2023 final; Qatar's only counter-attacking outlet who can change the scoreline</td></tr>
+      <tr><td class="qa">Almoez Ali</td><td>Striker / Al-Duhail</td><td>National-team all-time top scorer (55~60 goals); a sub in MD1, in line to start here to add aerial presence in the box</td></tr>
+      <tr><td class="qa">Boualem Khoukhi</td><td>Center-back/captain</td><td>35-year-old veteran; scored the 90+4′ header equalizer in MD1, key on set-pieces at both ends</td></tr>
+      <tr><td class="qa">Mahmoud Abunada</td><td>Goalkeeper</td><td>Hero of 5 key saves vs Switzerland in MD1; expected to face plenty of shots again here, the bottom line for holding the draw</td></tr>
+    </table>
+    <div class="note">Lineup note: both predicted XIs are media analyst projections (ESPN / Sports Mole / bet365), <b>to be confirmed by the official pre-match lineup · TBC</b>. Whether Davies makes the Canada squad/XI is the biggest suspense; for Qatar there's a choice at the No. 9 between Almoez Ali and a mobile front three (TBC).</div>
+  </section>
+
+  <!-- ===== 4 Tactics + Coaches ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles & Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual play and results in their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇦 Canada · Jesse Marsch</div>
+        <div class="role">4-4-2 / 4-2-3-1 · high press + fast transitions, seeking tempo dominance</div>
+        <ul class="cl">
+          <li>Red Bull-style play: high-intensity pressing, fast forward play after winning the ball — but 68% possession and 13 shots for just 1 goal in MD1 proved that, <b>against a deep bus, the pressing payoff is limited, and breaking down the block is the real task</b>.</li>
+          <li>Cross-reference: at World Cup 2022 Canada lost all three games and didn't score (weakest in the group); yet at Copa América 2024 they reached the semifinals (a group upset over Panama in a 1-0 grind, knocking out Venezuela on penalties, a narrow semifinal loss to Argentina) — showing <b>this Canada side can scrap in tough games, but finishing efficiency is always the ceiling</b>, just like MD1.</li>
+          <li>Response: with the width gap from no Davies, Marsch will most likely continue the 4-4-2 two-striker "add a finisher" approach, keeping Larin as a block-breaking bench surprise; set-piece play at both ends (MD1's concession came from a corner) needs shoring up too.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e08aa0">🇶🇦 Qatar · Julen Lopetegui</div>
+        <div class="role">4-3-3 / 5-4-1 · low block + Afif as the lone counter outlet, seeking to hold the draw and steal points</div>
+        <ul class="cl">
+          <li>The ex-Real Madrid/Spain coach takes a realistic stance: cede possession, compress the center, hand counters to Afif; 31% possession and 0.76 xG vs Switzerland in MD1 is his ceiling profile.</li>
+          <li>Cross-reference: at World Cup 2022 the host suffered three straight losses, 0 points and 0 goal difference (long-running 0 wins in World Cup finals); but at Asian Cup 2023 they <b>defended their title</b> (3-1 over Jordan in the final, Afif hat-trick) — <b>Qatar are at their best when they open up at continental level</b>, exactly the basis for ESPN's advice that "attack is the best defense."</li>
+          <li>Response: in the MD1 second half they already pushed the line higher and demanded a more advanced press; if they use Almoez Ali here to add an aerial presence in the box, the intent is to create real threat on set-pieces and counters rather than purely park the bus — this is the only realistic path to an upset.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5 Analyst Insights ===== -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">CanadaSportsBetting <small>· data model</small></div>The model gives Canada a 69.8% win probability, expected goals 1.93 vs 0.59, and notes Canada haven't scored 3 in a single game over their last 11 and average just 1.0 goal over their last 9 — hence the main pick "Canada win + total goals under 3.5." The quant aligns with the no-vig odds direction: Canada should win, but the lack of goals lowers the probability of a big win or a high-scoring game.</div>
+    <div class="insight"><div class="who">ESPN <small>· preview</small></div>Canada's priority is to "take higher-quality shots while maintaining intensity" (in MD1, 13 shots only 4 on target, rescued by luck and subs); Qatar are advised to "open up" — a Qatar side used to attacking at continental level, facing a Canada side that struggled even with Bosnia's counters, may find attack the best defense.</div>
+    <div class="insight"><div class="who">Cross-reference of last two major tournaments <small>· tactical signal</small></div>At World Cup 2022 both teams equally struggled at the group stage (Canada 0 points, Qatar 0 points), but each proved their ceiling at their continental cup: Canada reached the Copa América 2024 semifinals, Qatar were Asian Cup 2023 champions. This match is "the host's do-or-die scrapping efficiency vs the defending champions' bus-parking resilience" — Canada's efficiency at breaking down the block and Qatar's set-piece conversion rate are the real deciders.</div>
+    <div class="insight"><div class="who">Composite · referee and line signals <small>· risk note</small></div>Referee Garay's World Cup debut + no large major-tournament sample means the officiating angle can't be a reliable dimension here. The information content of the lines is concentrated on the handicap (−1/−1.5), Under and BTTS No — consistent with the two-way profile of "Canada win but not by much, Qatar struggle to score."</div>
+  </section>
+
+  <!-- ===== 6 Overall Assessment & TBC ===== -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment & TBC</h2>
+    <ul class="cl">
+      <li><b>Outcome lean</b>: a low-scoring narrow Canada win (1-0 / 2-0) is the baseline script, pushing to claim the three points they missed in MD1; a draw (≈18%) and a Qatar win (≈10%) are tail risks — for Qatar to steal points it would need Abunada heroics + a set-piece (Khoukhi) converted + Canada being inefficient against the block again, all at once (consistent with their MD1 script of equalizing against Switzerland).</li>
+      <li><b>Key men</b>: David (Canada/top finisher), Buchanan + Larin (Canada/breaking the block / bench surprise without Davies), Afif (Qatar/lone counter outlet), Khoukhi (Qatar/set-pieces at both ends), Abunada (Qatar/the bottom line for holding the draw).</li>
+      <li><b>Decider</b>: the true watch-point of this match is <b>Canada's efficiency at breaking down the block (set-pieces + David/Larin getting on the end of chances) vs Qatar's set-piece conversion rate and goalkeeper form</b> — which decides the settlement of the handicap (−1/−1.5) and the over-under/BTTS.</li>
+      <li><b>Market view</b>: bookmakers and the data model agree (Canada clear favorites), so 1X2 value is limited; the most information-rich markets are <b>Canada handicap (−1/−1.5), Under and BTTS No</b>. Overheat index 3/5 (heat comes from do-or-die qualification and the suspense over Davies' return, not from the match line).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① whether Davies makes the Canada squad/XI (a pre-match game-time decision, most likely still out); ② Qatar's No. 9 (Almoez Ali vs mobile front three); ③ both official starting XIs; ④ referee Garay's specific per-game card breakdown for each single edition of the World Cup / last two major tournaments (no large major-tournament sample, only 7 verifiable games ≈4.14 yellows/0 reds/1 penalty); ⑤ Kalshi/Polymarket/DefiRate single-match prices, volumes and 30-day momentum not publicly available; ⑥ the two teams' head-to-head record (suspected first-ever official meeting); ⑦ Asian handicap line (−1/−1.5) and over-under total line, exact odds to be confirmed by the live pre-match lines.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — schedule/referee/predicted XIs/watch-points</a> · <a href="https://www.cbc.ca/sports/soccer/worldcup/fifa-canada-world-cup-ali-ahmed-chris-jones-june-15-9.7236016">CBC Sports — Davies likely out</a> · <a href="https://www.espn.com/soccer/story/_/id/49076456/alphonso-davies-injury-canada-world-cup-qatar">ESPN — Davies injury</a><br>
+      • <a href="https://www.canadasportsbetting.ca/news/world-cup/canada-qatar-june-18-world-cup-prediction/">CanadaSportsBetting — model/odds/predicted XIs</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html">Sports Mole — Qatar predicted XI/Almoez Ali</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/canada-vs-qatar-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-acVXW4O79F8N/">Racing Post — odds/betting</a><br>
+      • <a href="https://www.101greatgoals.com/football/world-cup-news/qatar-canada-lopetegui/">101GreatGoals — Lopetegui's rallying cry</a> · <a href="https://theanalyst.com/articles/qatar-vs-switzerland-stats-world-cup-2026">Opta — Qatar-Switzerland MD1 data</a> · <a href="https://theanalyst.com/articles/canada-vs-bosnia-herzegovina-stats-world-cup-2026">Opta — Canada-Bosnia MD1 data</a><br>
+      • <a href="https://worldreferee.com/referee/cristian_garay">WorldReferee — Garay career data</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup 2026 referee list</a> · <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — Group B guide</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-16 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',CA='#d52b1e',QA='#8a1538',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Canada win','Draw','Qatar win'],datasets:[{data:[70,18,10],backgroundColor:[CA,DR,QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied probability % (no-vig)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[53,47],backgroundColor:[QA,CA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (no-vig; line leans slightly to over; BTTS No sharper)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Canada','Switzerland','Bosnia','Qatar'],datasets:[{data:[1,1,1,1],backgroundColor:[CA,'#b91c1c','#3b6fb0',QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:3,title:{display:true,text:'Points after MD1 (all four on 1 point)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Set-pieces','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Canada',data:[6.5,6,6.5,6,7.5,5.5],borderColor:CA,backgroundColor:CA+'33',pointBackgroundColor:CA},
+   {label:'Qatar',data:[6.5,5,5,6.5,5.5,6],borderColor:QA,backgroundColor:QA+'33',pointBackgroundColor:QA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

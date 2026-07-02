@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Colombia vs DR Congo · 2026 World Cup Group K Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-colombia-vs-drcongo.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-colombia-vs-drcongo.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d4af37;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a6d1c,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a2410,#152138);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8cd6b;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-colombia-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group K Matchday 2 · Colombia one win from early qualification vs DR Congo riding momentum after holding Portugal</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Colombia 1-0 DR Congo</span>
+  <h1>Colombia vs DR Congo</h1>
+  <div class="meta">Tuesday, June 23, 2026 · Guadalajara, Estadio Akron · 22:00 ET (Wed 03:00 BST) · Group K (also in group: Portugal, Uzbekistan)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8cd6b">🇨🇴 Colombia</div><div class="rk">Copa América 2024 runners-up · MD1 3-1 win over Uzbekistan (Díaz 1 goal, 1 assist) · Group K leaders, 3 pts</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇩 DR Congo</div><div class="rk">FIFA #60 range · return after 52 years · MD1 1-1 draw with Portugal (Wissa's first-ever World Cup goal for the nation) · 1 pt</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-24) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics & Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Final Colombia 1-0 DR Congo (HT 0-0) · Group K Matchday 2 · 06-23</span></h2>
+
+    <h4>① Scoring Sequence</h4>
+    <p style="font-size:13.5px">Colombia edged DR Congo 1-0 thanks to a <b>Daniel Muñoz</b> goal in the <b>76th minute</b>, sealing a knockout-stage berth ahead of schedule (6 pts). The Crystal Palace defender pounced on an opposition defensive lapse to score, after Colombia had been bottled up for a long stretch by their opponents' resolute defending. DR Congo keeper <b>Lionel Mpasi made 8 saves</b> to keep the score down, while Colombia keeper Vargas had almost nothing to do (just 1 save). James Rodríguez <b>created 5 chances</b> across the match — the first Colombian to create 5 chances in a single World Cup game since Valderrama against England in 1998.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 76' Muñoz｜Colombia 20 shots, 9 on target vs DR Congo 1 on target｜Mpasi 8 saves｜Colombia through on 6 pts</div>
+
+    <h4 style="margin-top:16px">② Core Data Comparison (Opta / FotMob)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇴 Colombia</th><th>🇨🇩 DR Congo</th><th>Read</th></tr>
+      <tr><td class="ht">Expected Goals xG</td><td><b>1.03</b></td><td>0.39</td><td>20 shots for just 1.03 xG — high volume, average quality; the winner came off an opposition error</td></tr>
+      <tr><td class="ht">Possession</td><td><b>64%</b></td><td>36%</td><td>Colombia in control but struggled to break the block</td></tr>
+      <tr><td class="ht">Shots (on target)</td><td><b>20 (9)</b></td><td>8 (1)</td><td>Dominant 9-1 on target; Mpasi's 8 saves were the biggest obstacle</td></tr>
+      <tr><td class="ht">Chances created</td><td><b>James 5</b></td><td>—</td><td>James the playmaking hub, matching Valderrama's 1998 record</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://www.fotmob.com/news/1o7goj90pr1gy10kjqyw44266a-colombia-1-0-dr-congo-munoz-steps-up-again-secure-knockout-spot">FotMob — Colombia 1-0 DR Congo</a> · <a href="https://www.espn.com/soccer/story/_/id/49157815/colombia-congo-dr-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — Live Report</a> · <a href="https://www.foxsports.com/soccer/fifa-world-cup-men-colombia-vs-dr-congo-jun-23-2026-game-boxscore-647663">FOX Sports — Box Score</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical Review</h4>
+    <div class="insight"><div class="who">Muñoz scores again: the goal value of an overlapping full-back</div>Crystal Palace defender Muñoz seized on an error to score, continuing his attacking output. <b>Transferable takeaway: Colombia's overlapping full-backs are an important "second line of attack" and remain a useful weapon to unlock a low block in the knockouts.</b></div>
+    <div class="insight"><div class="who">James Rodríguez creates 5 chances: the attacking lifeblood</div>James linked the whole side and matched Valderrama's 1998 national record. <b>Transferable takeaway: Colombia's attack leans heavily on James's playmaking; limiting his time on the ball directly weakens their creativity.</b></div>
+    <div class="insight"><div class="who">20 shots, 1.03 xG: breaking down a block remains a challenge</div>Colombia took plenty of shots but chance quality was average, and the winner owed more to an opposition error. <b>Transferable takeaway: against a deep block, Colombia needs more high-quality chances inside the box rather than shots from range.</b></div>
+    <div class="insight"><div class="who">DR Congo keeper Mpasi's 8 saves: a defense that earned credit in defeat</div>DR Congo relied on a heroic goalkeeper to hold out until the 76th minute. <b>Transferable takeaway: DR Congo's defensive resilience is commendable, but with just 0.39 xG in attack they must solve their finishing if they want points in the final round.</b></div>
+
+    <h4 style="margin-top:16px">④ Prediction Reconciliation</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Colombia win and qualify</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>1-0 win, 6 pts to lock up the knockouts</td></tr>
+      <tr><td class="ht">Colombia control and dominate</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>64% possession, 20 shots, 9-1 on target</td></tr>
+      <tr><td class="ht">Lean toward the Under</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>just 1 goal, Under cashed</td></tr>
+      <tr><td class="ht">DR Congo defend stubbornly</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>Mpasi 8 saves, held out until 76'</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward Carry-Over</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇨🇴 Colombia · Next: final round vs Portugal (battle for Group K top spot)</h4>
+        <ul class="watch">
+          <li><b>Group K top-spot showdown</b>: Colombia are already through; the final round against Portugal directly decides group winner and bracket half — both sides are motivated but may also rotate.</li>
+          <li><b>James + Muñoz are the unlocking points</b>: against Portugal they need James's playmaking plus overlapping full-backs, but must guard against Portugal's counter-attacking firepower.</li>
+          <li><b>Improve finishing quality</b>: 20 shots for 1 goal this time; against a Portugal-level back line they need a higher conversion rate.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇨🇩 DR Congo · Next: final round vs Uzbekistan (chasing a first win)</h4>
+        <ul class="watch">
+          <li><b>A more even matchup</b>: the final round against Uzbekistan, also on two losses, is their chance to grab World Cup points / a first win.</li>
+          <li><b>Need to solve finishing</b>: just 0.39 xG this time; they must find a source of threat in the middle and final third.</li>
+          <li><b>The keeper remains the trump card</b>: Mpasi is in fine form and the defensive resilience can carry over, but they must score to take points.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (read this first)</h3>
+    <p class="lead">This is a Matchday 2 key fixture with a <b>clear talent lean, but with the suspense amplified by "efficiency in breaking down a packed defense"</b>: Colombia (Copa América 2024 runners-up, MD1 3-1 win over Uzbekistan, Group K leaders on 3 pts) can <b>lock up a last-16 spot ahead of schedule</b> with a single win; DR Congo (back after 52 years, MD1 1-1 draw with Portugal, Wissa scoring the nation's first World Cup goal) would leapfrog to the top with a win. The market clearly favors Colombia — Colombia to win at around <b>1.51</b> (8/15), draw <b>4.20</b> (10/3), DR Congo <b>7.20</b> (13/2); vig-stripped implied ≈ Colombia 64 / draw 23 / DR Congo 13. Opta's supercomputer gives Colombia a <b>84.9%</b> chance to qualify. The real talking points aren't the 1X2 but three things: ① <b>whether Colombia can convert possession efficiently</b> (carry-over from last game: a 3-1 that looked comfortable but was actually bottled up by Uzbekistan's low block for 40 minutes); ② <b>DR Congo's counter-attacking and the Wissa/Bakambu break</b> (carry-over: 25% possession yet 8 shots, out-xG'ing Portugal); ③ <b>Over/Under — multiple sources lean toward Under 2.5</b>. Base scenario: <b>a controlled narrow Colombia win (1-0 / 2-1)</b>, with the tension being "can they score early, can DR Congo sneak one?" Market overheating index ≈ 2.5/5 (Colombia consensus + DR Congo's counter dampening rout expectations).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Colombia implied win % (vig-stripped)</div><div class="v" style="color:#e8cd6b">≈64%</div></div>
+      <div class="key"><div class="k">DR Congo implied win % (vig-stripped)</div><div class="v" style="color:#7fa6e6">≈13%</div></div>
+      <div class="key"><div class="k">Colombia Opta qualification %</div><div class="v" style="color:var(--good)">84.9%</div></div>
+      <div class="key"><div class="k">Market overheating index</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Colombia beware "control without breakthrough" (carry-over)</b>: in MD1 against Uzbekistan they had over 60% possession, briefly near 70%, yet were bottled up by a low block until Díaz set up the 40th-minute opener — and were even pegged back to level. Against DR Congo's equally disciplined low block, Colombia need to open the game early through the Díaz/James axis, or risk a repeat of a dull start (affecting early goal / Under tempo).</li>
+      <li><b>DR Congo's counter-attacking pedigree already proven (carry-over)</b>: in MD1 against Portugal they had just 25% possession yet 8 shots and out-xG'd them (0.82 vs 0.64), scoring the nation's first World Cup goal via Wissa's single-point pace on the break — the same "low block + single-point pace" script is just as viable against the space behind a pushed-up Colombia, a realistic blueprint for an upset draw / shock.</li>
+      <li><b>Colombia's Europe-based attacking core</b>: Luis Díaz (MD1 1 goal, 1 assist, leading with 6 box touches) breaking on the wing + James Rodríguez's playmaking + Luis Suárez/Córdoba finishing are the main outlets to prise open DR Congo's low block.</li>
+      <li><b>Neither side reports new injuries; DR Congo's Mbemba carries a yellow-card accumulation risk</b>: Colombia have no suspensions after the 3-1 and look likely to keep the same XI; DR Congo also report no new injuries. Captain Mbemba was booked in MD1, with the <b>accumulation suspension risk pointing to the final round against Uzbekistan, not this match</b>, but his challenge management remains a watch point.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a4a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and status signals shaping this match, each explaining how it changes tactics or the outcome (including both teams' carry-over items from their last game + multi-source verification of key player availability)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8cd6b;font-weight:700">Colombia · Carry-over · the dull "control without breakthrough" start <span style="color:var(--mut);font-weight:400">· Uzbekistan-match review carry-over · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Colombia won MD1 3-1 vs Uzbekistan, but <b>had over 60% possession yet were bottled up by a low block until the 40th minute</b> — and were briefly pegged back to level</div>
+      <p style="font-size:13.5px">Carrying over the preview from the Uzbekistan-match review: Colombia won 3-1 and topped Group K, but the scoreline flattered the performance — over 60% possession in the first half, briefly near 70%, yet sustained attacking pressure brought no breakthrough until 40', when <b>Luis Díaz</b>'s exquisite assist let Daniel Muñoz volley home to break the deadlock; in the second half they were pegged back to 1-1 and only pulled clear via Díaz (a keeper fumble) and a Campaz header in stoppage time. On-target conversion was low (4 on target from 15 shots) and some goals owed to the opposition keeper's errors. Díaz led with 1 goal, 1 assist and 6 box touches — the true difference-maker. <span style="color:var(--warn)">[Confirmed lineups subject to the pre-match FIFA squad · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: DR Congo bottled Portugal into "80% possession, zero breakthrough" in MD1 — a more mature low block than Uzbekistan's. If Colombia reproduce a slow, "control without breakthrough" start, <b>the tail risk of Under 2.5 and an upset draw rises</b>; whether they can crack the block early through the Díaz/James axis is the key to the handicap (-1) and totals settlement.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview/lineups/referee</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview" style="color:var(--accent)">Opta Analyst — Group K preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">DR Congo · Carry-over · counter-attacking pedigree proven <span style="color:var(--mut);font-weight:400">· Portugal-match review carry-over · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">DR Congo drew MD1 1-1 with Portugal, <b>just 25% possession yet 8 shots and out-xG'd them (0.82 vs 0.64)</b>, Wissa scoring the nation's first World Cup goal</div>
+      <p style="font-size:13.5px">Carrying over the preview from the Portugal-match review: Desabre used a 5-3-2 to keep Portugal outside the box (Portugal 80% possession, 94% pass completion yet zero breakthrough), and edged the chance quality on the counter — <b>Arthur Masuaku assisted and Yoane Wissa coolly slotted home in 45+5'</b> for the nation's first World Cup goal. This "low block + single-point pace on the break" script has proven viable against an elite side and is a realistic blueprint for DR Congo against Colombia. ESPN even noted: Colombia's fluid system leaves space behind, and DR Congo could push out more proactively. <span style="color:var(--warn)">[Formation 5-3-2 vs back four · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: DR Congo are no pushover — they can stifle strong sides, drag games into low scores, and directly threaten via Wissa/Bakambu's pace. That means Colombia "win but win the hard way," the core source of the two-sidedness on the Under and the handicap (-1 rather than deeper), and the only logic behind upset-draw money.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — preview/Talking Points</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html" style="color:var(--accent)">Sports Mole — preview/team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e8cd6b;font-weight:700">⭐ Key player availability · Colombia's core fit (multi-source verified)<span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / World Soccer Talk · 06-20→21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Díaz in red-hot form, James fit to start; Colombia have <b>no new injuries or suspensions</b> after the 3-1 and look set to keep the same XI</div>
+      <p style="font-size:13.5px">Multi-source agreement (ESPN preview, Sports Mole, World Soccer Talk): Colombia have <b>no new injuries or suspensions</b> after the 3-1 win over Uzbekistan and are expected to largely keep the MD1 XI. <b>Luis Díaz</b> is fit and in hot form (1 goal, 1 assist in MD1), Colombia's best attacking outlet; <b>James Rodríguez</b> (34, captain, the nation's all-time World Cup top scorer, 7 assists in qualifying) is fit to start — there had been pre-match reports of "a minor issue causing him to miss two training sessions," but head coach Lorenzo has said he is in good shape; ESPN also notes James's influence has dipped slightly, and the fluid system Lorenzo has built does not rely on a single player. <span style="color:var(--warn)">[Confirmed lineups subject to the pre-match FIFA Match Centre · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: With the core fit and Díaz in form, the fundamentals directly support Colombia on the win line. ESPN's view: rather than leaning on an aging James, build the side more thoroughly around Díaz's pace and finishing — the key variable for whether Colombia can avoid a repeat of "control without breakthrough," and a determinant of the handicap and goal count.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Talking Points (Díaz/James)</a> · <a href="https://worldsoccertalk.com/world-cup/colombia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/" style="color:var(--accent)">World Soccer Talk — Colombia squad/James injury</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html" style="color:var(--accent)">Sports Mole — team news (no new injuries)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">⭐ Key player availability · DR Congo no new injuries, Mbemba yellow-card accumulation (multi-source verified)<span style="color:var(--mut);font-weight:400">· Sports Mole / ESPN · 06-20→21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Wissa and Bakambu both fit and available; <b>captain Mbemba booked in MD1</b>, accumulation suspension risk points to the final round, not this match</div>
+      <p style="font-size:13.5px">Multi-source agreement: DR Congo have <b>no new injuries</b> after holding Portugal in MD1 and can keep the same group. <b>Yoane Wissa</b> (Brentford, fresh from scoring the nation's first World Cup goal) is fit and the counter-attacking hub; <b>Cédric Bakambu</b> (35, the group's record international scorer with 21 goals in 70 caps) is fit and available, though his minutes may be managed given his age. Defensive leader and captain <b>Chancel Mbemba</b> picked up a yellow against Portugal — multiple outlets note his <b>accumulation suspension risk targets the final round against Uzbekistan</b>, so he can still play here but needs to manage his challenges to avoid another booking. <span style="color:var(--warn)">[Formation 5-3-2 and starting XI subject to the pre-match official · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: With both strikers Wissa + Bakambu fit, DR Congo's counter-attacking threat is intact, enough to create danger in the space behind Colombia — the realistic condition for an upset draw / shock. If Mbemba plays cautiously due to the booking, DR Congo's defensive leadership and physical intensity could dip at the margin, a potential opening for Colombia's set pieces / wing attacks.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/predicted-lineups/history-maker-wissa-to-lead-attack-predicted-congo-dr-xi-vs-colombia_599767.html" style="color:var(--accent)">Sports Mole — DR Congo predicted XI/Mbemba booking</a> · <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — DR Congo team news/lineups</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · referee announced <span style="color:var(--mut);font-weight:400">· ESPN / Dailysports · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Italy's <b>Maurizio Mariani</b> in charge; match played at Guadalajara's Estadio Akron</div>
+      <p style="font-size:13.5px">Multiple sources (ESPN, Dailysports) confirm FIFA has appointed Italy's <b>Maurizio Mariani</b> to officiate this Group K Matchday 2 fixture, with compatriots Daniele Bindoni and Alberto Tegoni as assistants and Juan Calderón and Juan Mora as fourth/fifth officials. Mariani has been a FIFA international referee (since 2019) and a UEFA elite referee (since 2024), and was part of the 2024 Copa América (the UEFA–CONMEBOL exchange program), so he is no stranger to South American sides. The match is played at Guadalajara's Estadio Akron (altitude about 1,560 m, well below Mexico City's Azteca at 2,250 m, so the altitude effect is markedly weaker). <span style="color:var(--warn)">[Mariani's assistant/VAR combination for this match and his per-game card breakdown sample at major tournaments are limited · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Mariani's public stats lean card-heavy (about 4.1–4.8 yellows/game, Serie A sample). In a match with Colombia holding possession for long stretches and DR Congo committing frequent defensive fouls, <b>card accumulation and a potential penalty</b> are the main referee-side value; the impact on the result is limited. See the referee module below for detail.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://dailysports.net/news/the-match-officials-for-colombia-v-dr-congo-are-known/" style="color:var(--accent)">Dailysports — Mariani appointment announced</a> · <a href="https://en.wikipedia.org/wiki/Maurizio_Mariani" style="color:var(--accent)">Wikipedia — Mariani profile</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">1X2 implied probabilities (vig-stripped) · Group K picture · Over/Under market · composite strength profile — all charts use verified / explicitly labeled assessment data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 Implied Probability (vig-stripped, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 Implied Probability (vig-stripped, Under-leaning)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group K Points Before MD2 (after MD1)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Composite Strength Profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Data Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇨🇴 Colombia</th><th>🇨🇩 DR Congo</th></tr>
+      <tr><td>FIFA / strength</td><td class="ht">Copa América 2024 runners-up · Opta global top-ten tier</td><td class="sc">FIFA #60 range · return after 52 years</td></tr>
+      <tr><td>MD1 result</td><td class="ht">3-1 win over Uzbekistan (control without breakthrough, Díaz 1+1)</td><td class="sc">1-1 draw with Portugal (25% possession, out-xG'd them, Wissa's first goal)</td></tr>
+      <tr><td>Group K points (after MD1)</td><td colspan="2">Colombia 3 (leaders) · Portugal 1 · DR Congo 1 · Uzbekistan 0</td></tr>
+      <tr><td>Stakes</td><td class="ht">a win locks up the last 16 early</td><td class="sc">a win leapfrogs to top; a loss leaves qualification to the final round</td></tr>
+      <tr><td>Head coach</td><td class="ht">Néstor Lorenzo (Argentine)</td><td class="sc">Sébastien Desabre (French)</td></tr>
+      <tr><td>Key players</td><td class="ht">Luis Díaz, James Rodríguez (C), Luis Suárez/Córdoba</td><td class="sc">Yoane Wissa, Cédric Bakambu, Chancel Mbemba (C)</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Copa América 2024 runners-up · Copa América 2021 third place · absent from Qatar 2022</td><td class="sc">AFCON 2023 fourth place · AFCON 2025 last 16</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">win 1.51 (implied ≈64%)</td><td class="sc">win 7.20 (≈13%) · draw 4.20 (≈23%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">Under 2.5 is the more favored side (DR Congo's block + Colombia's control-style play suppress goals)</td></tr>
+      <tr><td>Venue / head-to-head</td><td colspan="2">Estadio Akron (Guadalajara, altitude about 1,560 m) · no on-record official head-to-head</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the implied probabilities after stripping the vig from DECIMAL odds (Colombia 1.51 / draw 4.20 / DR Congo 7.20 → vig-stripped ≈64/23/13). Odds source: composite across multiple platforms (Colombia 8/15, -192; draw 10/3; DR Congo 13/2). Opta supercomputer: Colombia 84.9% to qualify, DR Congo a tougher path. The base scenario is a <b>controlled narrow Colombia win</b>, with DR Congo's low block and Colombia's "control without breakthrough" risk jointly suppressing the expected goal count. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· historical averages vs this World Cup's actuals · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying)</b> against <b>this World Cup's actuals (MD1)</b>, item by item. Public national-team xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actuals (per-team comparison)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (MD1)</th><th>Delta & read</th></tr>
+      <tr><td class="ht">🇨🇴 Colombia · attack</td><td class="ht">Copa América 2024 runners-up tier, led by Díaz/James; in qualifying James 7 assists, Díaz 7 goals</td><td class="ht">MD1 <b>3 goals</b>, but 4 on target from 15 shots, bottled up by the block for 40 minutes</td><td><b>Slightly below</b> expected efficiency: possession dominant but conversion slow, some goals via keeper errors — efficiency at breaking down a block is a concern</td></tr>
+      <tr><td class="ht">🇨🇴 Colombia · defense</td><td class="ht">mainly Europe-based defenders, high individual quality, a solid Copa América back line</td><td class="ht">MD1 conceded 1 (a tap-in after opening up in the second half)</td><td><b>Continues</b> steady: with long spells of possession the back line was little tested, the goal conceded to DR Congo manageable</td></tr>
+      <tr><td class="sc">🇨🇩 DR Congo · attack</td><td class="sc">reliant on Wissa's pace + Bakambu's hold-up on the break and set pieces; limited open-play, set-piece creativity</td><td class="sc">MD1 <b>1 goal</b>, 8 shots, xG <b>0.82</b> out-xG'ing Portugal</td><td><b>Above</b> paper: counter-attacking efficiency extremely high, chance quality real, single-point pace can be directly lethal</td></tr>
+      <tr><td class="sc">🇨🇩 DR Congo · defense</td><td class="sc">Desabre's signature (AFCON 2023 knocked out Egypt on penalties, 2025 drew Senegal)</td><td class="sc">MD1 limited Portugal to xG <b>0.64</b>, zero breakthrough</td><td><b>Continues</b> elite: a low block kept the elite side outside the box, the real data underpinning a low-scoring game</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Colombia's MD1 attack was <b>slightly below</b> the level their individual ability warrants (control without breakthrough), the defense continued steady; DR Congo's counter-attack was <b>above</b> paper and the defense <b>continued</b> as an elite block. The deep data is consistent with the "Colombia win on the ball but win the hard way, lean Under" thesis. Sources: Opta Analyst (theanalyst.com, xG 0.82/0.64/0.65) · Sofascore (MD1) · FIFA/national major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This-Match Projection & Opta Calibration</h4>
+    <table>
+      <tr><td>This-match model projected xG (magnitude)</td><td class="ht">Colombia ≈1.7</td><td class="sc">DR Congo ≈0.8</td><td>Colombia holds the chance-quality edge, but the combined total is low — DR Congo's block pushes the total toward the Under 2.5 edge; if Colombia start slow the gap narrows</td></tr>
+      <tr><td>Opta qualification probability / supercomputer</td><td colspan="2" class="sc">Opta gives Colombia <b>84.9%</b> to qualify, with both DR Congo and Uzbekistan facing tough paths (about 22%); Colombia is the second strongest in Group K, rated only behind Portugal</td><td>after opponent-strength calibration, Colombia's win-line fundamentals are real; but DR Congo's out-xG of Portugal is a reminder: the handicap should not run too deep</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">limited public national-team data <span style="color:var(--warn)">(TBC)</span> — qualitatively: Colombia's field tilt will press into DR Congo's half for long stretches, but finishing quality inside the box is suppressed by the block</td><td><b>Trap reminder</b>: dominating the run of play ≠ efficiency; Colombia's "control without breakthrough" + the space behind for DR Congo's Wissa/Bakambu counters is the main risk of the handicap/Over busting</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each mean)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: total quality of shooting chances; stripping penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: quality per shot — low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than mere possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· expert picks / odds / money flow / public sentiment</span></h2>
+    <div class="sub">Clear consensus on a Colombia win but the odds aren't extreme (1.51); the real disagreement is in "by how much (handicap -1) + Over/Under (Under 2.5) + whether DR Congo can pull off another upset draw"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheating index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · Colombia consensus but odds not extreme; DR Congo's counter is a substantive disagreement</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">A Colombia win is widely favored, but 1.51 is not "blowout" level and leaves realistic room for the draw (23%) — DR Congo just held Portugal and out-xG'd them, so the market is reserved on a "comfortable Colombia rout." Money mainly sits on the <b>Colombia handicap (-1) and Over/Under (Under 2.5)</b> rather than the straight result.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: Colombia win majority · draw minority · DR Congo win 0)</h4>
+    <table>
+      <tr><th>Who</th><th>Identity</th><th>View / Pick</th></tr>
+      <tr><td>ESPN</td><td>General sports media</td><td>Colombia win; notes their fluid system leaves space behind, DR Congo could push out more proactively</td></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td>narrow Colombia win (e.g. 2-0 / 2-1), backing Díaz/James to prise open the block</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>Colombia win + scoreline bet builder (4-1 type), backing Díaz to score</td></tr>
+      <tr><td>OneFootball / Covers</td><td>Prediction/betting media</td><td>Colombia win as the value anchor (8/15), several lean toward Under 2.5</td></tr>
+      <tr><td>Opta Analyst</td><td>Data media</td><td>Colombia 84.9% to qualify; DR Congo's center-backs will be stretched by Colombia's pace</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (moderate-low)</b>: the result direction leans Colombia, but the odds aren't extreme and the draw room is real (DR Congo just held Portugal). No clear one-sided overheating. The real disagreement is <b>"by how much" (Colombia -1 handicap) and Under 2.5</b>, plus whether DR Congo's counter can engineer another upset draw. Sentiment money is limited and overall leans rational.</div>
+
+    <h4 style="margin-top:20px">② Odds Movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Timepoint</th><th>Market</th><th>Colombia win</th><th>Read</th></tr>
+      <tr><td>Open (composite)</td><td>1X2</td><td class="ht">≈1.50–1.53</td><td>clearly favors Colombia; draw ≈4.20 / DR Congo ≈7.20</td></tr>
+      <tr><td>06-20→21 cutoff</td><td>multi-platform</td><td class="ht">1.51 (8/15, -192)</td><td>narrow movement, basically stable; no clear one-sided money</td></tr>
+      <tr><td>06-20→21</td><td>Over/Under</td><td colspan="2" class="ht">Under 2.5 the more favored side (Under about -150 / Over about +130; DR Congo's block suppresses goals)</td></tr>
+      <tr><td>Handicap (Asian reference)</td><td>Colombia -1</td><td colspan="2" class="ht">mainstream handicap around Colombia -1 (line not odds, TBC)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line Positioning & Movement Trend (opening → current)</h4>
+    <table>
+      <tr><th>Timepoint</th><th>Line / odds</th><th>Positioning shift · trigger</th></tr>
+      <tr><td>Opening (days before)</td><td class="ht">Colombia win ≈1.50; handicap -1</td><td>priced on "Copa América runners-up + Díaz/James vs a returning minnow after 52 years," with the open already pressing Colombia into a short favorite, handicap -1</td></tr>
+      <tr><td>Open (re-priced after MD1)</td><td class="ht">Colombia win 1.51; Under 2.5 leaning hot</td><td><b>repricing from both teams' MD1</b>: Colombia's 3-1 confirmed their lead but "control without breakthrough," DR Congo's 1-1 with Portugal and out-xG exposed their counter pedigree → handicap not deepened toward -1.5, the Under angle strengthened</td></tr>
+      <tr><td>Current (06-21→now)</td><td class="ht">Colombia win 1.51; handicap -1 / Under 2.5</td><td>1X2 stable (pricing reasonably converged); the most active price discovery is in the <b>handicap (-1 rather than -1.5) and Over/Under (Under 2.5)</b> — "can Colombia score early, can DR Congo sneak one" is the core variable for handicap and totals</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: the odds have favored Colombia from the open but <b>not extremely</b> (≈1.50, -1 handicap), and <b>DR Congo holding Portugal + out-xG</b> further suppressed the "big Colombia win / deep handicap" angle while reinforcing the Under side. 1X2 value is limited (pricing reasonable); the most informative are the <b>Colombia handicap (-1) and Under 2.5</b> — the risk points being Colombia's slow "control without breakthrough" start + DR Congo's Wissa/Bakambu counters. Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction Markets & ④ Public Sentiment</h4>
+    <ul class="cl">
+      <li><b>Opta supercomputer / bookmaker vig-stripped</b>: Colombia 84.9% to qualify (Opta), match win vig-stripped ≈64% — highly consistent with bookmakers, no clear sentiment divergence. <span style="color:var(--warn)">[Kalshi/Polymarket single-match prices and volume for this game not separately found in public · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>can Luis Díaz take over for Colombia</b> — ESPN explicitly argues Lorenzo should build more thoroughly around Díaz's pace and finishing rather than leaning on an aging James, the biggest technical talking point this match.</li>
+      <li><b>Sentiment focus ②</b>: <b>should DR Congo push out more proactively</b> — the ESPN/Desabre trade-off: keep defending and counter for a draw, or use the space behind Colombia to break more aggressively.</li>
+      <li><b>DR Congo narrative</b>: the return after 52 years + the historic first point from holding Portugal brings emotional traffic, but the public broadly expects a narrow Colombia win on the ball, with no clear wave of money on a DR Congo win.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite read</b>: clear consensus on a Colombia win, with bookmakers and the supercomputer converging (≈64% / 84.9% to qualify), but the odds aren't extreme (1.51) and the draw room is real, putting the overheating index at <b>2.5/5</b>. The heat concentrates on the <b>handicap margin (-1), Under 2.5, and whether Díaz scores</b>, rather than the result itself. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — preview/odds/referee</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aJpLK9k1G604/">Racing Post — odds/betting</a> · <a href="https://onefootball.com/en/news/colombia-vs-dr-congo-prediction-world-cup-2026-preview-best-bets-43034382">OneFootball — prediction/odds</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview">Opta Analyst — Group K preview</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee & Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is Italy's <b>Maurizio Mariani</b>, with assistant referees Daniele Bindoni and Alberto Tegoni (both Italian), fourth official Juan Calderón and fifth official Juan Mora. Sources: ESPN / Dailysports / Wikipedia. <span style="color:var(--warn)">[the specific VAR combination for this match · TBC]</span></div>
+    <h4>Referee background & officiating tendencies (including last two major tournaments + top-flight sample)</h4>
+    <ul class="cl">
+      <li><b>Pedigree profile</b>: Mariani became a FIFA international referee in 2019 and was promoted to UEFA elite in December 2024, a long-time Serie A whistle; he was selected for the <b>2024 Copa América</b> (UEFA–CONMEBOL exchange program), giving him some experience officiating South American sides (including Colombia's stylistically related style). <span style="color:var(--warn)">[his per-game card breakdown at the 2024 Copa América / qualifiers is a limited sample · TBC]</span></li>
+      <li><b>Card tendency (public stats)</b>: multiple sources show Mariani leans card-heavy — about <b>4.1–4.8 yellows/game</b> across the Serie A/full sample, with reds around 0.13–0.18/game. In other words he is a "ready to blow, ready to book" referee, fairly strict on persistent fouling and tactical fouls, but reds are infrequent.</li>
+      <li><b>Officiating history with both teams</b>: no significant public officiating history with either Colombia or DR Congo, so no team lean to speak of.</li>
+      <li><b>This tournament's uniform new rules + environmental signals</b>: keeper 8-second hold, only the captain may speak with the referee, semi-automated offside — semi-automated offside will precisely catch the offside-edge sprints of Díaz/Suárez, with a slight dampening effect on marginal-offside goals (affecting the Over at the margin); Guadalajara's altitude of about 1,560 m makes the altitude effect far weaker than Mexico City, with less of a fitness drag than Colombia's MD1 match.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-side analysis</b>: this is a "Colombia attacking on the ball vs DR Congo defending with discipline" matchup — given Mariani's card-heavy tendency, <b>card accumulation from DR Congo's frequent tackles on Díaz/Arias, and a penalty for grappling in the box</b> are the main watch points; CAF-style DR Congo are physical, so card numbers lean upward. Given his limited single-game sample as a major-tournament whistle, treat the cards line as a "tendency" and note its near-zero impact on the result.</div>
+  </section>
+
+  <!-- Lineups & Key Players -->
+  <section>
+    <h2><span class="n">3</span> Lineups & Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · official version released about 1 hour pre-match</span></h2>
+    <div class="sub">Predicted lineups (ESPN / Sports Mole / Opta projections, not official; official squad subject to the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇨🇴 Colombia predicted XI (4-2-3-1) · Lorenzo</h4>
+    <div class="lineup">Vargas; Muñoz · Davinson Sánchez · Lucumí · Mojica; Lerma · Puerta; J. Arias · James Rodríguez(C) · Luis Díaz; Luis Suárez</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Luis Díaz</td><td>Winger / Europe-based</td><td>MD1 1 goal, 1 assist, leading with 6 box touches — the best outlet to prise open a low block; ESPN calls for building more thoroughly around him</td></tr>
+      <tr><td class="ht">James Rodríguez (C)</td><td>Attacking mid / captain</td><td>34, the nation's all-time World Cup top scorer, 7 assists in qualifying; fit to start, though his influence has dipped slightly</td></tr>
+      <tr><td class="ht">Luis Suárez / Jhon Córdoba</td><td>Forward / lone striker</td><td>the box finisher; ESPN's predicted version lists Suárez to start, with Córdoba as the alternative</td></tr>
+      <tr><td class="ht">Jhon Arias</td><td>Winger / attacking mid</td><td>wing link play and width when pushing up, key to creating space behind DR Congo</td></tr>
+    </table>
+    <h4>🇨🇩 DR Congo predicted XI (5-3-2 / 4-5-1) · Desabre</h4>
+    <div class="lineup">Mpasi; Wan-Bissaka · Mbemba(C) · Tuanzebe · Masuaku; Moutoussamy · Kayembe/Sadiki · Mukau; Wissa · Bakambu</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Yoane Wissa</td><td>Forward / Brentford</td><td>scorer of the nation's first World Cup goal; his pace is the hub of the counter and the sneak attack, a big threat to the space behind Colombia</td></tr>
+      <tr><td class="sc">Cédric Bakambu</td><td>Forward / hold-up</td><td>35, the group's record international scorer (21 goals in 70 caps); the hold-up and second finisher, minutes may be managed</td></tr>
+      <tr><td class="sc">Chancel Mbemba (C)</td><td>Center-back / captain</td><td>defensive leader and experience; booked in MD1, accumulation suspension risk points to the final round, available this match <span style="color:var(--warn)">challenge management to be watched</span></td></tr>
+      <tr><td class="sc">Aaron Wan-Bissaka</td><td>Right-back/wing-back / Europe-based</td><td>tough defender, key to limiting Díaz/Arias's left-side attacks</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted lineups are media analytical projections (ESPN / Sports Mole / Opta), <b>subject to the pre-match official squad · TBC</b>. Whether Colombia's Lorenzo keeps the MD1 XI (Suárez vs Córdoba, Puerta vs R. Ríos) and DR Congo's formation (5-3-2 or switch to a back four, whether Sadiki returns to the XI) are the key items TBC.</div>
+  </section>
+
+  <!-- Tactics + Coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles & Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments (Colombia: Copa América 2024 runners-up / 2021 third place; DR Congo: AFCON 2023 fourth / AFCON 2025 last 16)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8cd6b">🇨🇴 Colombia · Néstor Lorenzo</div>
+        <div class="role">4-2-3-1 possession press + James playmaking, Díaz the wing spark</div>
+        <ul class="cl">
+          <li><b>Cross-reference of last two major tournaments</b>: at Copa América 2024 (runners-up) Colombia built around James as the midfield brain, high-intensity pressing and wing (Díaz) attacking, going long unbeaten before the final; Copa América 2021 (third place) likewise leaned on individual quality in the middle and final third and counter-attacking efficiency — their tournament maturity and individual ceiling clearly lead DR Congo.</li>
+          <li>Cross-reference this tournament's MD1: a 3-1 win over Uzbekistan, but bottled up by a low block for 40 minutes and even pegged back to level — confirming that "a possession advantage does not automatically convert into goals," and that Díaz/James-level brilliance is needed to crack the block. ESPN believes Lorenzo should platform Díaz more thoroughly.</li>
+          <li>This match's entry point: DR Congo are a more mature block than Uzbekistan (they bottled Portugal into zero breakthrough), so Colombia must break through early via Díaz's wing spark + set pieces (the MD1 stoppage-time winner came from a crossed header) to avoid another slow start; meanwhile they must guard against Wissa/Bakambu counters in behind after pushing up.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇩 DR Congo · Sébastien Desabre</div>
+        <div class="role">5-3-2 / low block + fast counters and set pieces</div>
+        <ul class="cl">
+          <li><b>Cross-reference of last two major tournaments</b>: at AFCON 2023 they <b>knocked out Egypt on penalties and finished fourth</b> — proving Desabre's counter system can limit strong sides in the knockouts and drag games into low scores; at AFCON 2025 they advanced unbeaten (1-0 over Benin, 1-1 with Senegal, 3-0 over Botswana), able to hold draws against strong sides.</li>
+          <li>Cross-reference this tournament's MD1: a 5-3-2 kept Portugal outside the box (Portugal 80% possession, zero breakthrough), 25% possession yet 8 shots and out-xG, with Wissa's single-point pace scoring the nation's first goal — this script is just as viable against a pushed-up Colombia, and ESPN even suggests they could more proactively exploit the space behind Colombia.</li>
+          <li>This match's response: a three/five-man back line (led by Mbemba) compresses the space for Díaz/Arias's wing crosses and dribbles, seeking points via Wissa's pace on the break and Bakambu's hold-up, with set pieces a supplementary route. The risk is that Colombia's individual ability is more direct and incisive than Portugal's, and there is no altitude drag — if concentration drops, the goals conceded could be amplified. But their AFCON record suggests they are unlikely to be routed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN <small>· pre-match preview / Talking Points</small></div>Colombia's fluid system leaves space behind, and DR Congo have a striking point in Wissa/Bakambu and could push out more proactively; ESPN also suggests Lorenzo build more thoroughly around Díaz's pace and finishing rather than leaning on an aging James — Díaz is Colombia's best solution to breaking the block.</div>
+    <div class="insight"><div class="who">Opta Analyst <small>· data media</small></div>Colombia 84.9% to qualify, the second strongest rating in Group K behind only Portugal; DR Congo's center-backs will be stretched by Colombia's pace, and chances will "come at a premium" for Wissa/Bakambu, though they still have the ability to threaten Colombia's back line.</div>
+    <div class="insight"><div class="who">Sports Mole / Racing Post <small>· prediction/betting media</small></div>the base is a narrow Colombia win (2-0 / 2-1), backing Díaz/James to prise open the block and Díaz to score; the sharp side of the handicap is Colombia -1, with several leaning toward Under 2.5 — DR Congo's counter makes a "rout-style deep handicap" more cautious.</div>
+    <div class="insight"><div class="who">Composite · core suspense & traps <small>· cross-tournament comparison</small></div>Key cross-point: Colombia already showed <b>"control without breakthrough"</b> in MD1, while DR Congo precisely <b>knocked out Egypt on penalties</b> at AFCON 2023 and out-xG'd Portugal in MD1 — this matchup is no gimme for Colombia. ⚠ Trap reminder: a slow-starting Colombia + a Wissa counter-sneak from DR Congo is the tail risk of the handicap (-1) and Over busting, or even another upset draw.</div>
+  </section>
+
+  <!-- Composite Assessment -->
+  <section>
+    <h2><span class="n">6</span> Composite Assessment & TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a controlled narrow Colombia win (<b>1-0 / 2-1 / 2-0</b>) is the base scenario, with a win locking up the last 16 early; the draw (≈23%) is a real tail risk (DR Congo's block + Colombia's control without breakthrough), and a DR Congo win (≈13%) requires extreme defending + Wissa/Bakambu counter-sneaks + a slump in Colombia's finishing all at once.</li>
+      <li><b>Key men</b>: Luis Díaz (COL / wing spark and finishing), James Rodríguez (COL / playmaking and set pieces), Luis Suárez/Córdoba (COL / box finishing), Yoane Wissa (DRC / counter-sneak hub), Cédric Bakambu (DRC / hold-up and second finisher), Chancel Mbemba (DRC / defensive leader, decisive for the goals conceded).</li>
+      <li><b>Decisive factor</b>: the real talking point this match isn't "who wins" but <b>Colombia's efficiency at breaking down a packed defense and whether they can score early</b>, plus <b>whether DR Congo's counter can create another danger</b> — which decides the settlement of the handicap (-1) and Over/Under (Under 2.5). If Colombia score early they can slow down and control; if they can't break through, the risk of a draw / being sneaked rises.</li>
+      <li><b>Market view</b>: the bookmaker vig-stripped (≈64/23/13) and the Opta supercomputer (84.9% to qualify) converge, the 1X2 is reasonably priced with limited value; the most informative are the <b>Colombia -1 handicap and Under 2.5</b>. Overheating index 2.5/5 (Colombia consensus + DR Congo's counter dampening rout expectations).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official lineups (about 1 hour pre-match, FIFA Match Centre); ② Colombia's Suárez vs Córdoba, Puerta vs R. Ríos choices; ③ DR Congo's formation (5-3-2 or switch to a back four, whether Sadiki returns); ④ Mbemba's challenge management under the booking; ⑤ Mariani's per-game card breakdown at the 2024 Copa América / qualifiers and the VAR combination for this match; ⑥ Kalshi/Polymarket volume and momentum breakdown for this game; ⑦ specific odds for the Asian handicap (Colombia -1) and the Over/Under total line, subject to the live pre-match line.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49135872/fifa-world-cup-2026-colombia-vs-congo-dr-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — schedule/lineups/referee/preview</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021501">FIFA — Match Centre</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-k-predictions-preview">Opta Analyst — Group K preview/supercomputer</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-congo-dr-prediction-team-news-lineups_599761.html">Sports Mole — preview/team news/lineups</a> · <a href="https://www.sportsmole.co.uk/football/colombia/world-cup-2026/predicted-lineups/history-maker-wissa-to-lead-attack-predicted-congo-dr-xi-vs-colombia_599767.html">Sports Mole — DR Congo predicted XI/Mbemba booking</a> · <a href="https://worldsoccertalk.com/world-cup/colombia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — Colombia squad/James injury</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/colombia-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aJpLK9k1G604/">Racing Post — odds/betting</a> · <a href="https://onefootball.com/en/news/colombia-vs-dr-congo-prediction-world-cup-2026-preview-best-bets-43034382">OneFootball — prediction/odds</a> · <a href="https://www.goal.com/en-us/news/colombia-dr-congo-world-cup-preview/blt2f05808271536e66">Goal — preview</a><br>
+      • <a href="https://dailysports.net/news/the-match-officials-for-colombia-v-dr-congo-are-known/">Dailysports — Mariani appointment announced</a> · <a href="https://en.wikipedia.org/wiki/Maurizio_Mariani">Wikipedia — referee Mariani profile</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K">Wikipedia — Group K</a> · <a href="https://www.skysports.com/football/news/12040/13543106/world-cup-2026-group-k-guide-fixtures-schedule-standings-and-odds-for-portugal-dr-congo-uzbekistan-and-colombia">Sky Sports — Group K guide/standings</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-21 · Charts use verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d4af37',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Colombia win','Draw','DR Congo win'],datasets:[{data:[64,23,13],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied probability % (vig-stripped)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[42,58],backgroundColor:[DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied probability % (vig-stripped, Under-leaning)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Colombia','Portugal','DR Congo','Uzbekistan'],datasets:[{data:[3,1,1,0],backgroundColor:[HT,'#d21034',SC,'#1aa84a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'Group K points (after MD1)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wing/counter','Individual ceiling','Tournament experience'],
+  datasets:[
+   {label:'Colombia',data:[7,7.5,7.5,8,8.5,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'DR Congo',data:[7.5,5.5,5.5,7,5.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

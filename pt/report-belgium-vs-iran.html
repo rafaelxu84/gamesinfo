@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Pré-Jogo · Bélgica vs Irã · Copa do Mundo 2026 Grupo G 2ª Rodada</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-belgium-vs-iran.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-belgium-vs-iran.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-belgium-vs-iran.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-belgium-vs-iran.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-belgium-vs-iran.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#5a0f1f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#1f0f14);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#ec6f7c;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-belgium-vs-iran.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-belgium-vs-iran.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-belgium-vs-iran.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao Centro de Análise</a><br>
+  <span class="badge">🔮 Prévia Pré-Jogo · Copa do Mundo 2026 · Grupo G 2ª Rodada · Duas seleções que empataram na estreia disputam a "vantagem na classificação"</span>
+  <h1>Bélgica vs Irã</h1>
+  <div class="meta">21 de junho de 2026 · Los Angeles, SoFi Stadium (Inglewood) · 15:00 ET (12:00 PT) · Grupo G (mesmo grupo: Egito, Nova Zelândia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇧🇪 Bélgica</div><div class="rk">FIFA #9 · 14 jogos invicta · Estreia 1-1 com o Egito (empate via gol contra, 0 gols em jogada de bola rolando) · Despedida da "geração de ouro"</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇮🇷 Irã</div><div class="rk">FIFA #20 · Estreia 2-2 com a Nova Zelândia (esteve atrás duas vezes e empatou duas) · Transição defensiva furada duas vezes · Taremi como referência</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia este parágrafo primeiro)</h3>
+    <p class="lead">Este é um <b>jogo decisivo por pontos no cenário em que as quatro seleções do Grupo G têm 1 ponto</b>: a Bélgica (FIFA #9, 14 jogos invicta, último suspiro da "geração de ouro") empatou em 1-1 com o Egito na estreia, com <b>0 gols em jogada de bola rolando, salvando-se apenas por um gol contra</b>; o Irã (FIFA #20) empatou em 2-2 com a Nova Zelândia na estreia, com a <b>transição defensiva furada duas vezes por lançamentos de Wood</b>. O handicap pende claramente para a Bélgica — vitória em torno de <b>1.44</b> (≈64% implícito sem margem), empate <b>4.50</b> (≈20%), vitória do Irã <b>7.00</b> (≈13%); o mercado de previsão (Kalshi) dá à Bélgica cerca de <b>68%</b>. A tensão central do jogo vem de dois confrontos estruturais: ① a <b>doença crônica da Bélgica de "abrir defesas compactas sem um centroavante de área"</b> (De Ketelaere de falso 9, Lukaku só como reserva após lesão) contra o bloco baixo 4-4-2 do Irã; ② a <b>vulnerabilidade do Irã na transição defensiva</b> (os dois gols sofridos na estreia foram no momento da transição de defesa para ataque) contra os lançamentos e a explosão pelas pontas de De Bruyne + Doku. Cenário base: <b>vitória apertada da Bélgica por 1-0 / 2-0</b>, abrindo o bloco baixo do Irã pela qualidade individual de De Bruyne/Doku, mas se a finalização falhar de novo como contra o Egito, as presas de contra-ataque do Irã (Rezaeian, Taremi) têm chance de roubar pontos. Índice de superaquecimento do mercado ≈ 3/5 (narrativa belga + tema geopolítico do Irã).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita Bélgica (sem margem)</div><div class="v" style="color:#f08a82">≈64%</div></div>
+      <div class="key"><div class="k">Prob. implícita Irã (sem margem)</div><div class="v" style="color:#ec6f7c">≈13%</div></div>
+      <div class="key"><div class="k">Jogos invicta da Bélgica</div><div class="v" style="color:var(--warn)">14 jogos</div></div>
+      <div class="key"><div class="k">Índice de superaquecimento do mercado</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Bélgica "sem centroavante para abrir defesas compactas" testada de novo (trazido do jogo anterior)</b>: na estreia foram 15 finalizações, 0 gols em jogada de bola rolando e xG de apenas 1.32, salvando-se por gol contra — diante do bloco baixo 4-4-2 organizado do Irã, essa doença crônica será ampliada, e a qualidade nas bolas paradas e nos cruzamentos pelas pontas decidirá se levam os três pontos.</li>
+      <li><b>Vulnerabilidade do Irã na transição defensiva vs lançamentos da Bélgica (trazido do jogo anterior)</b>: os dois gols sofridos pelo Irã na estreia vieram no momento da transição de defesa para ataque (dois lançamentos de Wood para assistências a Just) — os lançamentos de De Bruyne e a velocidade de Doku atacam exatamente esse ponto fraco.</li>
+      <li><b>Duelo de ponta Doku vs Rezaeian</b>: Doku é a explosão mais afiada da Bélgica; Rezaeian, com "gol + assistência" na estreia, está em grande fase e é o ponto de partida do contra-ataque do Irã — esse lado é o confronto localizado mais decisivo do jogo.</li>
+      <li><b>Turbulência logística do Irã pré-jogo</b>: forçado a voar de volta ao acampamento de Tijuana, no México, logo após o jogo, só retornando a Los Angeles no dia da partida; o técnico afirma que o Irã é "a seleção mais perseguida" e fez queixa à FIFA sobre as restrições de deslocamento — a interferência marginal na condição física e na concentração merece atenção.</li>
+    </ul>
+  </div>
+
+  <!-- Notícias-chave pré-jogo -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave pré-jogo <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fontes + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que afetam este jogo, com explicação item a item de como mudam a tática ou o resultado (inclui os itens trazidos do jogo anterior de ambas as seleções)</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Bélgica · trazido do jogo anterior · sem centroavante para abrir defesas compactas <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra o Egito · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Bélgica empatou em 1-1 com o Egito na estreia, com <b>15 finalizações, 0 gols em jogada de bola rolando, xG de apenas 1.32, salvando-se por gol contra</b> — a doença crônica do "sem centroavante de área" encontra o bloco baixo do Irã</div>
+      <p style="font-size:13.5px">Transferência da análise do jogo contra o Egito para esta prévia: a Bélgica jogou com De Ketelaere de falso 9 na frente; após a entrada de Lukaku, em menos de 1 minuto ele forçou o gol contra de Hany para empatar, mas no jogo inteiro foram 15 finalizações, só 3 no alvo, 0 gols em jogada de bola rolando, e o xG de 1.32 contra 1.07 do Egito mal mostrou superioridade. <b>O problema da reta final da geração de ouro, de não ter um verdadeiro ponto de apoio na área</b>, foi totalmente exposto pela defesa compacta do Egito. O adversário deste jogo, o Irã, tem um bloco baixo 4-4-2 mais típico, forte no jogo aéreo e bem organizado — a ESPN afirmou diretamente que "De Ketelaere como ponto de apoio não é eficaz o suficiente contra equipes de bloco baixo compacto"; sem um Plano B, a Bélgica dependerá de novo principalmente das bolas paradas e da qualidade individual de Doku para furar o bloqueio.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: este é o maior suspense tático do jogo. A Bélgica é favorita clara (≈64% sem margem), mas sua eficiência em "abrir blocos baixos compactos" já se mostrou instável na estreia. Se o Irã montar bem o bloco baixo 4-4-2 e Beiranvand for confiável, a Bélgica pode cair de novo no "domínio de posse sem solução" — isso decide diretamente se o handicap (-1/-1.5) e o total de gols (tendência ao menos) se concretizam, e é a condição para o Irã roubar pontos.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49117734/belgium-iran-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — prévia Bélgica vs Irã</a> · <a href="https://theanalyst.com/articles/belgium-vs-egypt-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — pós-jogo Bélgica vs Egito</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">Irã · trazido do jogo anterior · vulnerabilidade na transição defensiva <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra a Nova Zelândia · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Irã empatou em 2-2 com a Nova Zelândia na estreia; <b>a imagem de "bloco baixo de ferro" foi desmentida, com a defesa furada duas vezes por lançamentos em contra-ataque</b>; mas a reação foi forte, com gol + assistência de Rezaeian</div>
+      <p style="font-size:13.5px">Transferência da análise do jogo contra a Nova Zelândia para esta prévia: o Irã contrariou a expectativa pré-jogo de "bloco baixo de ferro, jogo travado de poucos gols" e fez um 2-2 de ataque contra ataque — os <b>dois gols sofridos vieram no momento da transição de defesa para ataque</b> (dois lançamentos de Wood para assistências a Just), e a marcação e o recuo na transição defensiva são falhas evidentes. O destaque foi a capacidade de reação: Rezaeian sozinho fez "gol + assistência", Mohebbi marcou no rebote para empatar, e o Irã esteve atrás duas vezes e empatou duas, com um ataque mais vivo do que sugere o papel. Cenário de classificação: as quatro seleções do Grupo G terminaram a primeira rodada empatadas com 1 ponto; este é o jogo-chave para conquistar a "vantagem na classificação".</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a vulnerabilidade do Irã na transição defensiva é exatamente o que os lançamentos de De Bruyne + a velocidade de Doku melhor atacam — esse é o caminho concreto para o cenário de vitória apertada da Bélgica. Mas, por outro lado, as presas de contra-ataque do Irã (Rezaeian/Taremi) também miram exatamente o que a Bélgica expôs na estreia: "ser pega no contra-ataque ao subir, defesa sem experiência com a ausência de Debast" — se a Bélgica atacar com afobação e se desposicionar, a chance do Irã de roubar pontos não pode ser subestimada. Os dois sinais trazidos, um de ataque e um de defesa, apontam juntos para "Bélgica em vantagem, mas não em superioridade esmagadora".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/iran-vs-new-zealand-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — pós-jogo Irã vs Nova Zelândia</a> · <a href="https://www.espn.com/soccer/story/_/id/49117734/belgium-iran-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — prévia/forma de Rezaeian</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Bélgica · sinal de escalação · forma física de Lukaku em dúvida <span style="color:var(--mut);font-weight:400">· Racing Post / ESPN · 06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Lukaku sem forma física plena após lesão, deve seguir no banco; Debast ainda fora; De Ketelaere previsto para seguir de falso 9</div>
+      <p style="font-size:13.5px">Segundo Racing Post / ESPN, Zeno Debast segue indisponível na Bélgica, e <b>Lukaku, sem recuperar a forma física na pós-temporada por lesão, pode continuar apenas como arma do banco</b> (entrou na estreia e logo forçou o gol contra, mas claramente sem estar a 100%). Rudi Garcia deve usar um 4-2-3-1: Courtois; Meunier · Ngoy · Mechele · De Cuyper (ou Castagne); Onana/Raskin · Tielemans; Trossard · De Bruyne(C) · Doku; De Ketelaere de falso 9. Doku foi limitado pela marcação "fisicalizada" do Egito na estreia, e diante de um Irã mais fácil de enfrentar deve concretizar seu poder de penetração. <span style="color:var(--warn)">[As escalações oficiais de ambos seguem a lista FIFA pré-jogo · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: se Lukaku ainda só puder ser reserva, a Bélgica não terá referência de área no primeiro tempo, e furar o bloco baixo do Irã seguirá dependendo dos passes de De Bruyne e das pontas com Doku — em linha com a doença crônica do "sem centroavante para abrir defesas compactas" da estreia, o que é levemente negativo para "Bélgica marcar cedo / muitos gols", mas Lukaku como arma do segundo tempo segue sendo o ponto de finalização. Quando Garcia colocará Lukaku é uma variável-chave.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a1cEc7G1Wv8u/" style="color:var(--accent)">Racing Post — situação do elenco/escalação prevista</a> · <a href="https://www.espn.com/soccer/story/_/id/49117734/belgium-iran-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — escalação prevista</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">Irã · turbulência logística pré-jogo + Ezatolahi a ser avaliado <span style="color:var(--mut);font-weight:400">· ESPN · 06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Irã forçado a voltar ao acampamento de Tijuana, no México, logo após o jogo, <b>só retornando a Los Angeles no dia da partida</b>; o técnico fala em "a seleção mais perseguida" e faz queixa à FIFA sobre as restrições de deslocamento</div>
+      <p style="font-size:13.5px">Segundo a ESPN, após empatar com a Nova Zelândia na estreia, o Irã foi obrigado a deixar imediatamente os EUA e voltar ao acampamento em Tijuana, no México, devendo <b>só retornar a Los Angeles no dia da partida</b>. O técnico Amir Ghalenoei afirmou que o Irã talvez seja "a seleção mais perseguida de toda a Copa do Mundo", e a federação iraniana já apresentou queixa à FIFA sobre as restrições de deslocamento; antes disso, a confusão com vistos e a expulsão de Azmoun por indisciplina já haviam atrapalhado a preparação. No nível dos jogadores: Ezatolahi recebeu atendimento em campo na estreia e precisa ser avaliado pré-jogo; Cheshmi, Jahanbakhsh, Torabi e outros ausentes na estreia têm condição indefinida. <span style="color:var(--warn)">[Se Ezatolahi será titular segue a lista oficial · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o trajeto de só chegar de voo longo no próprio dia do jogo comprime a janela de recuperação e adaptação do Irã, e para uma equipe centrada em defesa disciplinada e cobertura física, a fadiga e a queda de concentração são justamente o gatilho dos dois gols sofridos na estreia (falhas na transição defensiva). Essa interferência marginal, somada à qualidade individual da Bélgica, em tese reforça levemente "vitória da Bélgica / colapso físico do Irã no fim"; mas também pode despertar a coesão do Irã na adversidade de "ser injustiçado", então a direção não é totalmente única.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/49117734/belgium-iran-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — prévia/declarações de Ghalenoei</a> · <a href="https://www.espn.com/soccer/story/_/id/49120177/iran-fifa-complaint-world-cup-travel-usa" style="color:var(--accent)">ESPN — Irã faz queixa à FIFA sobre restrições de deslocamento</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Ambiente do jogo · árbitro já anunciado <span style="color:var(--mut);font-weight:400">· ESPN / Tehran Times · 06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro definido: o argentino <b>Dario Herrera</b> apita; o jogo será no estádio fechado do SoFi, sem variável climática</div>
+      <p style="font-size:13.5px">Múltiplas fontes (ESPN, Tehran Times, Voice of Emirates) confirmam que a FIFA designou o argentino <b>Dario Herrera</b> para apitar esta 2ª rodada do Grupo G. Herrera é árbitro experiente da primeira divisão argentina e da CONMEBOL, foi selecionado para a lista de árbitros da Copa do Mundo 2026 e vem do sistema de arbitragem sul-americano (alguma tolerância ao contato físico, mas faltas táticas e acúmulo de faltas ainda rendem cartão facilmente). O jogo será no SoFi Stadium, em Los Angeles (estádio fechado e coberto), <b>sem variáveis climáticas de vento/chuva/calor</b>. <span style="color:var(--warn)">[A combinação específica de assistentes/VAR deste jogo e a amostra detalhada de cartões por jogo em grandes torneios são limitadas · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: em um jogo de Bélgica atacando forte e Irã interceptando em bloco baixo compacto, o critério sul-americano costuma tolerar o contato mas punir severamente faltas contínuas/táticas — as interceptações frequentes dos zagueiros do Irã sobre os contra-ataques de De Bruyne/Doku e as reações exageradas dos jogadores belgas às marcações são pontos de risco de cartão amarelo. A abertura desta edição já teve 3 vermelhos seguidos, com ambiente de arbitragem mais rígido; o acúmulo de amarelos do Irã (2 amarelos = suspensão no jogo seguinte, decisivo para a última rodada) merece atenção. Veja o módulo de árbitro abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.tehrantimes.com/news/527452/Dario-Herrera-to-officiate-Iran-vs-Belgium" style="color:var(--accent)">Tehran Times — designação de Herrera</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — lista de árbitros da Copa do Mundo</a></div>
+    </div>
+  </section>
+
+  <!-- Escalações oficiais (lineup-watch auto · FIFA Match Centre) -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#13201a)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA Match Centre oficial · 06-21 · T-60</span></h2>
+    <div class="sub">Os dois onzes oficiais já foram divulgados pelo centro de partidas da FIFA (~60 min antes do início). Abaixo: as escalações + comparação vs o previsto + leitura tática + nota de mercado — este módulo é a versão definitiva e substitui as menções de escalação baseadas em previsões nas "Notícias-chave pré-jogo" acima.</div>
+
+    <h4>🇧🇪 Escalação oficial da Bélgica (4-2-3-1) · Garcia　<span style="color:#4ade80;font-size:12px">✅ Confirmado pela FIFA</span></h4>
+    <div class="lineup">Courtois; Meunier · Mechele · Ngoy · De Cuyper; Tielemans(C) · Raskin; Saelemaekers · De Bruyne · Trossard; Lukaku</div>
+    <div class="note">Armas-chave no banco: <b>De Ketelaere</b> (o falso 9 previsto, hoje no banco) · <b>Lukebakio / Fernandez-Pardo</b> (ameaças pelas pontas) · Vanaken / Witsel (controle do meio) · Onana / Castagne / Theate (rodízio). Goleiros reservas Lammens, Penders.</div>
+
+    <h4>🇮🇷 Escalação oficial do Irã (a FIFA marca como 4-3-3 · elenco nitidamente defensivo) · Ghalenoei　<span style="color:#4ade80;font-size:12px">✅ Confirmado pela FIFA</span></h4>
+    <div class="lineup">Beiranvand; Hardani · Hajisafi(C) · Khalilzadeh · Kanani · Nemati · Rezaeian; Ezatolahi · Mohebbi · Ghoddos; Taremi</div>
+    <div class="note">Armas-chave no banco: <b>Jahanbakhsh</b> (velocidade pelas pontas) · <b>Moghanloo</b> (o segundo atacante previsto, hoje no banco) · Ghayedi / Hosseinzadeh / Alipour (finalização em contra-ataque) · Torabi / Cheshmi. Goleiros reservas Niazmand, Hosseini. <span style="color:var(--warn)">[A FIFA marca o esquema como 4-3-3, mas até 6 jogadores aparecem como defensores — na prática, espere um bloco baixo compacto com Taremi como única referência; confirmar pelo posicionamento em jogo.]</span></div>
+
+    <div style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--accent)">📋 Escalação oficial vs prevista · ponto a ponto</div>
+    <table>
+      <tr><th>Mudança</th><th>Previsto (mídia)</th><th>Oficial (FIFA)</th><th>Por que importa</th></tr>
+      <tr><td class="ht">Atacante belga ⚠</td><td>De Ketelaere (falso 9)</td><td><b>Lukaku (9 de ofício)</b></td><td>A Bélgica passa a um atacante de referência para atacar o bloco baixo iraniano — presença na área e alvo de cruzamentos, então o mal do "sem atacante de ofício" some hoje; mas a forma física de Lukaku após a lesão é uma aposta (apenas reserva na 1ª rodada)</td></tr>
+      <tr><td class="ht">Lado direito belga</td><td>Fernandez-Pardo (jovem)</td><td><b>Saelemaekers (experiência)</b></td><td>Um finalizador mais maduro pela direita, aliviando a preocupação prévia com um ponta reserva sem experiência</td></tr>
+      <tr><td class="ht">Duplo volante belga</td><td>Onana + Tielemans</td><td><b>Raskin + Tielemans</b></td><td>Desarme + saída de bola de Raskin; Onana no banco. O meio pende para o corte e a defesa de transição contra os contra-ataques diretos do Irã</td></tr>
+      <tr><td class="ht">Lateral esq. belga</td><td>Castagne</td><td><b>De Cuyper</b></td><td>Um lateral ofensivo, reforçando as subidas pela esquerda enquanto Trossard se fecha</td></tr>
+      <tr><td>Ponta esq. belga</td><td>Trossard pela esquerda</td><td>Trossard pela esquerda ✓</td><td>Como previsto — o ajuste definido após a ausência de Doku; o plano A executado</td></tr>
+      <tr><td class="sc">Nº de atacantes Irã ⚠</td><td>Dois atacantes Moghanlou + Taremi</td><td><b>Taremi como único atacante</b></td><td>O Irã é mais conservador que o previsto: um atacante a menos, meio/zaga mais povoados — confirma um plano de "ônibus + única saída em contra-ataque" para buscar o empate</td></tr>
+      <tr><td class="sc">Defesa/capitão Irã</td><td>Mohammadi etc.</td><td><b>Hajisafi(C) · Kanani · Hardani</b></td><td>Defensores experientes com Hajisafi de âncora; a retaguarda está claramente reforçada, priorizando a densidade defensiva</td></tr>
+      <tr><td class="sc">Ezatolahi (Irã)</td><td>A confirmar (tratado na 1ª rodada)</td><td><b>Confirmado como titular</b></td><td>Passou no teste físico — o volante de marcação/cobertura do meio está disponível</td></tr>
+    </table>
+
+    <div style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--accent)">🧠 Leitura tática · veredito rápido: parcialmente revisado</div>
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:11px 13px;margin:8px 0;font-size:13.5px">
+      <p style="margin:0 0 8px"><b>① Sinal de esquema — a Bélgica recupera um "atacante de referência" (linha principal revisada).</b> A maior mudança da escalação oficial é Lukaku titular no lugar de De Ketelaere, levando a Bélgica de um "falso 9 sem apoio" para uma rota mais direta de "referência na área + cruzamentos". A linha principal prévia — "a Bélgica não tem atacante de ofício para romper o bloco, e o teto cai após a ausência de Doku" — recebe hoje uma resposta concreta de Garcia com Lukaku (um 9 de verdade) + Saelemaekers (uma direita com experiência): <b>o teto para romper o bloco sobe e a vantagem belga se recupera um pouco do pessimismo pós-Doku</b>. A única variável é quanto a forma física de Lukaku após a lesão vai aguentar.</p>
+      <p style="margin:0 0 8px"><b>② Risco de rebaixamento pela direita eliminado.</b> O previsto "Fernandez-Pardo (cru) pela direita" é substituído por Saelemaekers, tornando a criação e a finalização belga por esse lado mais confiáveis e aumentando a pressão sobre a esquerda iraniana (o lado de Hajisafi).</p>
+      <p style="margin:0 0 8px"><b>③ Irã mais conservador, ônibus com um só atacante (linha principal mantida e reforçada).</b> Apenas Taremi na frente oficialmente (o segundo atacante previsto, Moghanloo, no banco), com uma zaga mais povoada — confirma o plano de "bloco baixo compacto + única saída em contra-ataque" para buscar o empate, e mantém/reforça a inclinação prévia para o under / um placar baixo, com os pontos do Irã vindo de bola parada e transições.</p>
+      <p style="margin:0 0 8px"><b>④ A Bélgica reforça a defesa de transição.</b> Raskin no lugar de Onana ao lado de Tielemans dá um duplo volante mais focado no desarme e nas segundas bolas, blindando contra os contra-ataques diretos do Irã (a raiz dos dois gols sofridos na 1ª rodada) e respondendo ao risco de "ser pego no contra ao subir".</p>
+      <p style="margin:0"><b>⑤ Pontos a confirmar resolvidos.</b> Ezatolahi confirmado como titular (apto após o tratamento na 1ª rodada); a cobertura do meio iraniano está no lugar; a ausência de Doku finalmente confirmada. No geral: continua sendo "<b>Bélgica favorita, mas sem goleada</b>", mas a rota ao gol muda dos "1v1 pelas pontas (Doku)" para "Lukaku como referência de área + o desenho de passe de De Bruyne + bola parada".</p>
+    </div>
+
+    <div style="font-size:13px;font-weight:700;margin:14px 0 4px;color:var(--warn)">📉 Nota de mercado (afirmação factual, não é dica de aposta)</div>
+    <div class="note">Odds decimais pré-jogo (aprox. sem margem): vitória da Bélgica <b>1.44</b> · empate <b>4.50</b> · vitória do Irã <b>7.00</b>; handicap asiático Bélgica -1/-1.5. Leitura: a surpresa de Lukaku titular (um atacante de verdade) é logicamente um leve positivo para o handicap da Bélgica / o over (um finalizador a mais na área), enquanto o ônibus do Irã com um só atacante dá leve apoio ao under / à cauda do empate — este módulo é apenas uma afirmação factual; as odds ao vivo são as do início e nenhuma dica de aposta é dada.</div>
+
+    <div style="font-size:12px;margin-top:10px">Fontes: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021477" style="color:var(--accent)">FIFA Match Centre — escalações oficiais Bélgica v IR Irã</a> · <a href="https://www.espn.com/soccer/story/_/id/49128265/jeremy-doku-belgium-world-cup-game-iran" style="color:var(--accent)">ESPN — ausência de Doku</a> · <a href="https://www.cbssports.com/soccer/news/belgium-vs-iran-world-cup-2026-preview-predictions-watch/" style="color:var(--accent)">CBS — prévia/escalação prevista</a></div>
+  </section>
+
+  <!-- Panorama de dados -->
+  <section>
+    <h2><span class="n">1</span> Panorama de dados (núcleo)</h2>
+    <div class="sub">Ranking FIFA · probabilidades implícitas de vitória/empate/derrota (odds sem margem) · cenário do Grupo G · mercado de total de gols · perfil de força geral — os gráficos são todos de dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidades implícitas 1X2 (sem margem, calculadas a partir das odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos de 2.5 gols (sem margem)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Ranking FIFA das quatro seleções do Grupo G (quanto menor, mais forte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação dos analistas 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇧🇪 Bélgica</th><th>🇮🇷 Irã</th></tr>
+      <tr><td>Ranking FIFA</td><td class="ht">#9</td><td class="sc">#20</td></tr>
+      <tr><td>Resultado da estreia</td><td class="ht">1-1 com o Egito (0 gols em jogada de bola rolando, empate por gol contra)</td><td class="sc">2-2 com a Nova Zelândia (esteve atrás duas vezes e empatou duas)</td></tr>
+      <tr><td>Pontos no Grupo G</td><td colspan="2">Após a primeira rodada, as quatro seleções estão <b>todas empatadas com 1 ponto</b> — este é o jogo-chave pela vantagem na classificação</td></tr>
+      <tr><td>Treinador</td><td class="ht">Rudi Garcia</td><td class="sc">Amir Ghalenoei</td></tr>
+      <tr><td>Jogadores-chave</td><td class="ht">De Bruyne(C), Doku, Courtois, Lukaku (deve ser reserva)</td><td class="sc">Taremi, Rezaeian, Ghoddos, Beiranvand</td></tr>
+      <tr><td>Ausências/dúvidas neste jogo</td><td class="ht">Debast fora; Lukaku sem forma física plena (deve ser reserva)</td><td class="sc">Azmoun (expulso por indisciplina); Ezatolahi a avaliar</td></tr>
+      <tr><td>Últimos dois grandes torneios</td><td class="ht">Copa 2022 eliminada na fase de grupos · Euro 2024 oitavas (derrota para a França)</td><td class="sc">Copa 2022 eliminada na fase de grupos · Copa da Ásia 2023 semifinal (derrota para a Jordânia)</td></tr>
+      <tr><td>Odds 1X2 (DECIMAL)</td><td class="ht">Vitória 1.44 (implícito ≈64%)</td><td class="sc">Vitória 7.00 (≈13%) · Empate 4.50 (≈20%)</td></tr>
+      <tr><td>Mais / Menos de 2.5 gols</td><td colspan="2" class="sc">Mais de 2.5 ≈1.83 (implícito ≈53%) / Menos de 2.5 ≈1.95 — mercado levemente inclinado ao mais, mas o bloco baixo do Irã torna a divergência real</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as implícitas após remover a margem das odds DECIMAIS (≈64/20/13, renormalizadas). Fonte das odds: bet365 (Bélgica 4-9 → 1.44, empate 7-2 → 4.50, Irã 6-1 → 7.00, reproduzido pela Racing Post); linha americana da FanDuel: Bélgica -250 (1.40), empate +370 (4.70), Irã +650 (7.50). A linha de total fica em 2.5: a ESPN marca Mais de 2.5 em cerca de -120 (1.83), Menos de 2.5 em cerca de -105 (1.95); o mercado pende levemente ao mais, mas o potencial do bloco baixo do Irã de reduzir os gols torna a divergência real. Handicap da Bélgica em torno de -1/-1.5, com odds específicas a confirmar conforme a linha em tempo real pré-jogo. Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados Avançados · Métricas Esperadas -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados Avançados: Métricas Esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· média histórica vs valor real desta Copa · sinais de qualidade subjacente · com fontes</span></h2>
+    <div class="sub">Método central: comparar item a item a <b>base histórica de cada seleção (últimos dois grandes torneios / eliminatórias / amostra de amistosos)</b> com o <b>valor real dos jogos já disputados nesta Copa</b>, para ver "se nesta edição está acima ou abaixo do nível histórico e o que isso indica". A amostra pública de xG de seleções é limitada; itens faltantes são marcados como "a confirmar", jamais inventados.</div>
+
+    <h4>① Núcleo: média histórica vs valor real desta Copa (comparativo por seleção)</h4>
+    <table>
+      <tr><th>Seleção / indicador</th><th>Base histórica (amostra de fonte)</th><th>Real desta Copa (1ª rodada)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇧🇪 Bélgica · ataque xG/gols</td><td class="ht">8 jogos das eliminatórias europeias, 29 gols (3,6 por jogo), mas com adversários fracos; 14 jogos invicta por coletivo, não por superioridade esmagadora</td><td class="ht">Estreia <b>xG 1.32</b>, 0 gols em jogada de bola rolando (1-1 com o Egito, por gol contra)</td><td><b>Muito abaixo</b> do número vistoso de gols das eliminatórias — diante de defesas organizadas, a falta de ponto de apoio no centroavante trava a finalização em jogada de bola rolando, e as bolas paradas e a qualidade individual de Doku viram quase o único ponto de ruptura</td></tr>
+      <tr><td class="ht">🇧🇪 Bélgica · defesa xGA/gols sofridos</td><td class="ht">Defesa da geração de ouro envelhecida; jogos sem sofrer gols nas eliminatórias foram medianos, não se destaca pela solidez defensiva</td><td class="ht">Na estreia o Egito gerou <b>1.07 xGA</b>, 1 gol sofrido (Debast ausente, defesa sem experiência)</td><td>Em linha com a impressão histórica: insegura diante de adversários com presas de contra-ataque; o duelo dos zagueiros Ngoy/Mechele contra a velocidade/jogo de costas de Taremi precisa ser confirmado</td></tr>
+      <tr><td class="sc">🇮🇷 Irã · ataque xG/gols</td><td class="sc">A marca é Taremi como único atacante + contra-ataque de bloco baixo, com gols sempre escassos; o 5-0 na Costa Rica em amistoso é o ápice</td><td class="sc">Estreia <b>2 gols</b> (Rezaeian, Mohebbi), ataque mais vivo do que no papel</td><td><b>Acima</b> da expectativa pessimista — capacidade de reação suficiente, com Rezaeian perigoso ao subir pela ponta; mas é duvidoso se replica a eficiência de contra-ataque diante de uma Bélgica mais forte</td></tr>
+      <tr><td class="sc">🇮🇷 Irã · defesa xGA/gols sofridos</td><td class="sc">A base histórica é a defesa disciplinada de bloco baixo (na Copa 2022 competiu por sofrer poucos gols)</td><td class="sc">Estreia 2 gols sofridos, <b>ambos no momento da transição defensiva</b>, furada por lançamentos</td><td><b>Pior</b> que a imagem de "bloco baixo de ferro": a marcação/recuo na transição defensiva é uma falha, justamente o ponto de ataque dos lançamentos de De Bruyne + a velocidade de Doku</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórico</b>: o ataque da Bélgica nesta edição (1.32 xG, 0 gols em jogada de bola rolando) está <b>muito abaixo</b> dos números vistosos das eliminatórias, e abrir blocos baixos compactos é o ponto fraco; o ataque do Irã está levemente <b>acima</b> da expectativa pessimista, mas a transição defensiva está <b>pior</b> que a imagem de ferro. Os dados avançados estão em linha com o eixo central de "Bélgica em vantagem no papel, mas precisando de um ponto de finalização estável além de De Bruyne/Doku para abrir o bloco baixo". Fontes: Opta Analyst (xG/estatísticas da 1ª rodada) · FotMob/Sofascore (dados da 1ª rodada) · FIFA/registros históricos das seleções em grandes torneios. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção do jogo & calibração Opta</h4>
+    <table>
+      <tr><td>Projeção de xG do modelo para o jogo (escala xGscore)</td><td class="ht">Bélgica ≈1.6</td><td class="sc">Irã ≈0.7</td><td>Após calibração, a projeção da Bélgica é claramente superior — mas "abrir blocos baixos compactos" é o ponto fraco já exposto pela Bélgica na estreia, e é preciso atenção à eficiência de conversão (a mesma armadilha do jogo contra o Egito)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">No sistema, a Bélgica está em 1º no Grupo G e o Irã no meio; o mercado de previsão (Kalshi) dá à Bélgica vitória ≈68%, classificação ≈95%, título do grupo ≈64%, e ao Irã classificação ≈41%, título do grupo ≈9%</td><td>Após calibração pela força do adversário, o peso da amostra da Bélgica é maior que o do Irã (o adversário do Irã na estreia, a Nova Zelândia FIFA #85, é mais fraco)</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt</td><td colspan="2" class="sc">Dados públicos de seleções limitados <span style="color:var(--warn)">(a confirmar)</span> — qualitativo: Bélgica com pressão média-alta + penetração pelas pontas + bolas paradas de De Bruyne, Irã forçado ao bloco baixo mas com execução instável na transição defensiva</td><td>O domínio territorial provavelmente penderá por muito tempo para a Bélgica; ⚠ <b>aviso de armadilha</b>: domínio de campo ≠ domínio de eficiência; a Bélgica teve ~62% de posse na estreia e ainda assim 0 gols em jogada de bola rolando</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Guia rápido de métricas avançadas (o que cada uma dessas métricas "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): soma da qualidade das chances de finalização; ao excluir pênaltis, reflete melhor a criação em jogada de bola rolando.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): qualidade das chances que o adversário cria contra você; mede o nível defensivo real, não dependente de defesas/sorte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo esperado por 90 minutos): xG−xGA, o melhor indicador único como proxy da força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG por finalização</b> (qualidade média por chute): se a escolha de finalização é eficiente — valor baixo = muitos chutes de longe/chances ruins (a Bélgica teve 15 chutes e xG de só 1.32 na estreia, justamente um alerta de valor baixo).</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor, mais intensa a marcação sob pressão, refletindo a força da pressão.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinação de campo): proporção de toques no terço ofensivo, mede território/domínio de campo em vez da mera posse de bola.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/Sofascore/Understat/xGscore; em métricas detalhadas como PPDA/xT/field tilt, a amostra pública de seleções é limitada, e os itens faltantes são todos marcados como "a confirmar", jamais com números inventados.</div>
+  </section>
+
+  <!-- Calor do mercado de apostas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Calor do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de especialistas / odds / fluxo de capital / opinião pública</span></h2>
+    <div class="sub">A direção da vitória belga é altamente unânime; a real divergência está em "consegue manter a meta zerada + número de gols + tamanho do handicap"; o tema geopolítico do Irã traz tráfego extra de opinião pública</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · direção da vitória belga unânime, tema do Irã traz tráfego</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">A Bélgica é favorita clara (≈64% sem margem, 68% na Kalshi), e os especialistas quase todos apostam na Bélgica — um consenso razoável. A real divergência está em <b>se a Bélgica mantém a meta zerada + tamanho do handicap (-1 vs -1.5) + total de gols</b>. A confusão geopolítica/logística do Irã traz tráfego de opinião pública acima de um jogo de grupo comum, mas o capital das casas não mostra movimento unilateral empurrando o Irã.</div>
+    </div>
+
+    <h4>① Agregação de recomendações de especialistas (estatística de direção: vitória da Bélgica maioria · empate minoria · vitória do Irã 0)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Racing Post (Dan Childs)</td><td>Tradicional britânica</td><td>Vitória da Bélgica + ambas marcam (BTTS); acha que a Bélgica dificilmente manterá a meta zerada e que o Irã marca 1 gol</td></tr>
+      <tr><td>Especialistas da SportsLine</td><td>Mídia de apostas americana</td><td>Vitória apertada da Bélgica (1-0 / 2-0), momento Lukaku/De Bruyne; bloco baixo do Irã pressiona o total para baixo</td></tr>
+      <tr><td>Yahoo Sports</td><td>Mídia de previsão</td><td>Vitória magra da Bélgica; as casas dão Bélgica 68% / empate 21% / Irã 13%</td></tr>
+      <tr><td>Squawka</td><td>Mídia de dados</td><td>Bélgica é o lado mais limpo; o Irã tem contra-ataque, mas com qualidade inferior à da Bélgica</td></tr>
+      <tr><td>OddsShopper / Compare.bet</td><td>Agregador de odds</td><td>Vitória da Bélgica + atenção ao ângulo de handicap/total de gols</td></tr>
+      <tr><td>Total Football Analysis</td><td>Mídia de dados</td><td>Vitória da Bélgica; alerta que a vulnerabilidade do Irã na transição defensiva pode ser atacada</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de superaquecimento (médio)</b>: a direção de resultado é altamente unânime (ninguém aposta na vitória do Irã) — consenso razoável, não superaquecimento. A real divergência está em <b>se mantém a meta zerada</b> (Racing Post aposta em BTTS, SportsLine em menos gols/meta zerada), no <b>tamanho do handicap</b> (-1 vs -1.5) e no <b>total de gols</b>. A narrativa geopolítica do Irã é a fonte do tráfego de opinião pública, mas não há capital relevante empurrando a vitória do Irã.</div>
+
+    <h4 style="margin-top:20px">② Movimento das odds (DECIMAL)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitória da Bélgica</th><th>Leitura</th></tr>
+      <tr><td>Abertura (consolidado de várias casas)</td><td>1X2</td><td class="ht">≈1.44–1.50</td><td>Bélgica favorita clara; empate 4.50 / Irã 7.00</td></tr>
+      <tr><td>Fechamento 06-19</td><td>bet365 / FanDuel</td><td class="ht">1.40–1.44</td><td>Odds curta da Bélgica oscila pouco, leve aperto (após o empate com o Egito, a precificação quase não muda)</td></tr>
+      <tr><td>06-19</td><td>Mais/Menos de gols</td><td colspan="2" class="ht">Mais de 2.5 cerca de 1.83 (-120) / Menos de 2.5 cerca de 1.95 (-105), levemente inclinado ao mais</td></tr>
+      <tr><td>Handicap (referência asiática)</td><td>Bélgica -1 / -1.5</td><td colspan="2" class="ht">Odds específicas da Bélgica -1/-1.5 a confirmar conforme a linha em tempo real</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Posicionamento e movimento da linha (abertura → atual)</h4>
+    <table>
+      <tr><th>Momento</th><th>Linha / odds</th><th>Mudança de posicionamento · gatilho</th></tr>
+      <tr><td>Linha inicial (dias antes do jogo)</td><td class="ht">Vitória da Bélgica ≈1.40; handicap Bélgica -1.5</td><td>Antes do início, precificada por "FIFA #9 + geração de ouro + confronto com seleção fraca"; a linha inicial colocou a Bélgica como favorita forte, com handicap profundo de -1.5 — o mercado supunha domínio esmagador da Bélgica sobre o Irã</td></tr>
+      <tr><td>Abertura (reprecificação pós-1ª rodada)</td><td class="ht">Vitória da Bélgica ≈1.44–1.50; handicap ajustado para -1/-1.5</td><td><b>Reprecificação a partir do resultado da 1ª rodada</b>: a Bélgica só empatou em 1-1 com o Egito, com 0 gols em jogada de bola rolando, salvando-se por gol contra → a expectativa de domínio foi revista para baixo, a odds de vitória afrouxou um pouco, e o handicap recuou de -1.5 para -1; ao mesmo tempo, o 2-2 com 2 gols do Irã mostrou vivacidade ofensiva, comprimindo ainda mais o ângulo de handicap profundo da Bélgica</td></tr>
+      <tr><td>Linha atual (06-19 → agora)</td><td class="ht">Vitória da Bélgica 1.40–1.44; Mais de 2.5 ≈1.83 / Menos ≈1.95</td><td>A linha de resultado está basicamente estável (a precificação pelo resultado já convergiu); a descoberta de preço mais ativa está no <b>handicap (-1 vs -1.5) e no total de gols</b> — o bloco baixo do Irã + a Bélgica "sem centroavante para abrir defesas compactas" tornam real a bilateralidade do total, e a turbulência logística do Irã é um sinal marginal negativo para o Irã</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura do posicionamento do mercado</b>: as odds deste jogo "primeiro apertaram, depois afrouxaram levemente" — a linha inicial precificou domínio no papel (Bélgica ≈1.40, handicap -1.5), mas <b>na 1ª rodada a Bélgica só empatou com o Egito e o Irã marcou 2 gols</b>, disparando a reprecificação, com o handicap recuando de -1.5 para -1 e a odds de vitória afrouxando um pouco. O valor no 1X2 é limitado (direção clara, precificação convergida), e o mais informativo é o <b>handicap da Bélgica (-1/-1.5), se mantém a meta zerada e o total de gols</b> — que é justamente o reflexo no mercado do suspense central de "se a Bélgica consegue abrir o bloco baixo do Irã". A faixa específica da linha inicial segue cada plataforma (onde faltar, toma-se a faixa de abertura do evento). Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercado de previsão & ④ Opinião pública</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregação DefiRate)</b>: neste jogo, a Bélgica tem cerca de <b>68%</b> de chance de vitória, empate 21%, Irã 13% — cerca de 4 pontos percentuais acima da odds sem margem das casas (≈64/20/13), com leve prêmio emocional, mas não extremo. Probabilidade de classificação no Grupo G: Bélgica ≈95%, Irã ≈41%; título do grupo Bélgica ≈64%, Irã ≈9%. <span style="color:var(--warn)">[O volume deste jogo específico e o detalhamento do momentum de 30 dias não foram encontrados publicamente em separado · a confirmar]</span></li>
+      <li><b>Foco da opinião pública ①</b>: a <b>confusão geopolítica e logística do Irã</b> (forçado a voltar ao México, só retornando a LA no dia do jogo, queixa à FIFA, declaração de "a seleção mais perseguida") é a maior fonte de tráfego de narrativa não esportiva do jogo.</li>
+      <li><b>Foco da opinião pública ②</b>: se a <b>"geração de ouro" da Bélgica consegue interromper a sequência de 3 jogos de Copa sem vitória</b> (sombra da eliminação na fase de grupos em 2022 + empate com o Egito na estreia) — a pressão sobre Garcia é foco da mídia britânica.</li>
+      <li><b>Narrativa do Irã</b>: o desempenho ofensivo do 2-2 na estreia elevou um pouco a confiança do público em seu "roubo de pontos/empate", mas poucos apostam na vitória do Irã; o capital de "loteria de azarão" é limitado, e o preço não mostra alta clara.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: a direção do resultado é clara (Bélgica), e casas e mercado de previsão concordam na direção (≈64–68%), com índice de superaquecimento <b>3/5</b>. O calor do tema vem da <b>narrativa geopolítica do Irã</b> e da <b>despedida da geração de ouro da Bélgica</b>, não da própria linha de resultado; o mercado mais informativo é o <b>handicap da Bélgica (-1/-1.5), se mantém a meta zerada e o total de gols (levemente ao mais)</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a1cEc7G1Wv8u/">Racing Post — odds/apostas</a> · <a href="https://sports.yahoo.com/articles/belgium-vs-iran-picks-predictions-151728772.html">Yahoo Sports — previsão/probabilidades das casas</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-belgium-vs-iran-06-21-26-world-cup-2026/">Squawka — prévia</a> · <a href="https://www.sportsline.com/insiders/belgium-vs-iran-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — previsão de especialista</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-g/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- Árbitro -->
+  <section>
+    <h2><span class="n">2</span> Árbitro e arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b>: o árbitro deste jogo é o argentino <b>Dario Herrera</b> (primeira divisão argentina / CONMEBOL, selecionado para a lista de árbitros da Copa do Mundo 2026). Fontes: ESPN (lista de árbitros da Copa / prévia), Tehran Times, Voice of Emirates. <span style="color:var(--warn)">[A combinação específica de assistentes/VAR deste jogo · a confirmar]</span></div>
+    <h4>Critério de arbitragem + novas regras unificadas desta edição (dados reais + qualitativo)</h4>
+    <ul class="cl">
+      <li><b>Perfil do sistema de arbitragem</b>: Herrera vem do sistema sul-americano (CONMEBOL) — em geral <b>com alguma tolerância ao contato físico, mas ainda propenso a dar cartão em faltas contínuas/táticas e no acúmulo de faltas</b>. A amostra de sua média de cartões por jogo em grandes torneios é limitada, e a extrapolação quantitativa exige cautela. <span style="color:var(--warn)">[Detalhamento de cartões amarelos por jogo · a confirmar]</span></li>
+      <li><b>Histórico de arbitragem com as duas seleções</b>: como árbitro argentino que há muito apita competições sul-americanas, não há histórico ou polêmica pública relevante com Bélgica ou Irã — sem tendência identificável por nenhuma delas.</li>
+      <li><b>Novas regras unificadas desta edição + sinais de ambiente</b>: 8 segundos de posse de bola pelo goleiro, apenas o capitão pode falar com o árbitro, impedimento semiautomático; a abertura desta edição já teve 3 vermelhos seguidos (inédito em 20 anos de Copa), com evidência de ambiente de arbitragem mais rígido. Se o Irã interceptar com frequência em bloco baixo ou disputar com emoção, sob as novas regras e o critério sul-americano, o risco de acúmulo de amarelos (2 amarelos = suspensão no jogo seguinte, decisivo para a última rodada) aumenta.</li>
+      <li><b>Impacto real neste jogo</b>: o capitão belga De Bruyne e o capitão iraniano (se Hajsafi for titular) são líderes experientes, e se adaptam sem problema à nova regra de "só o capitão fala"; o impedimento semiautomático julgará mais rápido os sprints no limite de Taremi/Doku, com leve inibição sobre gols de contra-ataque.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise de arbitragem</b>: este é um confronto de embate "Bélgica atacando forte vs Irã interceptando em bloco baixo compacto"; o critério sul-americano tolera o contato mas pune severamente faltas contínuas — o acúmulo de faltas dos zagueiros do Irã após interceptar os contra-ataques de De Bruyne/Doku e a reação exagerada da Bélgica a marcações polêmicas são pontos de risco de cartão amarelo; o critério para marcar pênalti em puxões na área (sobre Taremi / sobre De Bruyne em bolas paradas) merece atenção. Dado que a amostra de Herrera por jogo em grandes torneios é limitada, a linha de cartões deve ser vista por "tendência" e não por "média precisa".</div>
+  </section>
+
+  <!-- Escalações e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalações e forma recente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Versão prevista · versão oficial no módulo ✅ acima</span></h2>
+    <div class="sub">Escalações previstas (estimativa ESPN / Racing Post, não oficial; a lista oficial segue o FIFA Match Centre pré-jogo · a confirmar)</div>
+    <h4>🇧🇪 Escalação prevista da Bélgica (4-2-3-1) · Garcia</h4>
+    <div class="lineup">Courtois; Meunier · Ngoy · Mechele · De Cuyper; Onana · Tielemans; Trossard · De Bruyne(C) · Doku; De Ketelaere</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="ht">Kevin De Bruyne (C)</td><td>Meio-campo / capitão</td><td>Núcleo ofensivo e distribuidor de bolas paradas; o principal ponto de desenho para abrir o bloco baixo do Irã; na estreia chegou várias vezes a boas posições, mas não marcou</td></tr>
+      <tr><td class="ht">Jérémy Doku</td><td>Ponta / Manchester City</td><td>Explosão de velocidade pela esquerda; na estreia foi limitado pela marcação fisicalizada do Egito, neste jogo enfrenta Rezaeian e, diante de um Irã mais fácil, deve concretizar a penetração</td></tr>
+      <tr><td class="ht">Charles De Ketelaere</td><td>Atacante (falso 9) / Atalanta</td><td>Falso 9 móvel sem ponto de apoio de centroavante; é justamente a dúvida do "não ser eficaz o suficiente para abrir defesas compactas baixas"</td></tr>
+      <tr><td class="ht">Romelu Lukaku</td><td>Atacante / Napoli</td><td>Sem forma física plena após lesão, deve ser reserva; ponto de finalização como arma do segundo tempo, na estreia entrou e logo forçou o gol contra</td></tr>
+    </table>
+    <h4>🇮🇷 Escalação prevista do Irã (4-4-2 / 4-2-3-1) · Ghalenoei</h4>
+    <div class="lineup">Beiranvand; Rezaeian · Khalilzadeh · Nemati · Mohammadi; Mohebbi · Ghoddos · Ezatolahi · Yousefi; Moghanlou · Taremi</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/clube</th><th>Forma recente / observações</th></tr>
+      <tr><td class="sc">Mehdi Taremi</td><td>Atacante / Inter de Milão</td><td>Maior saída ofensiva do Irã; ponto de apoio de costas + finalizador de contra-ataque, se sozinho consegue rasgar a defesa belga é decisivo</td></tr>
+      <tr><td class="sc">Ramin Rezaeian</td><td>Lateral-direito</td><td>"Gol + assistência" na estreia, em grande fase; o duelo de ponta com Doku é o confronto localizado mais decisivo do jogo</td></tr>
+      <tr><td class="sc">Saman Ghoddos</td><td>Meio-campo</td><td>Meio-campista que atua na Europa, organização e condução; ponto de ligação do Irã na transição de defesa para ataque</td></tr>
+      <tr><td class="sc">Alireza Beiranvand</td><td>Goleiro</td><td>O maior trunfo do Irã para buscar o empate; suas defesas nas fases de ataque forte da Bélgica são a última linha</td></tr>
+    </table>
+    <div class="note">Nota sobre as escalações: as escalações previstas de ambos são estimativas de análise da mídia (ESPN / Racing Post), <b>prevalecendo a lista oficial pré-jogo · a confirmar</b>. Se Lukaku será titular na Bélgica e se Ezatolahi poderá jogar no Irã são duas variáveis a confirmar; como o Irã só chega a LA no dia do jogo, vale atenção se haverá rodízio na escalação por causa da condição física.</div>
+  </section>
+
+  <!-- Tática + treinadores -->
+  <section>
+    <h2><span class="n">4</span> Estilo tático e treinadores</h2>
+    <div class="sub">Cada conclusão é cruzada com o estilo de jogo e os resultados reais das duas seleções nos últimos dois grandes torneios</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇧🇪 Bélgica · Rudi Garcia</div>
+        <div class="role">4-2-3-1 de progressão com posse + penetração pelas pontas + bolas paradas de De Bruyne, sem ponto de apoio de centroavante de área</div>
+        <ul class="cl">
+          <li>A marca da Bélgica é a <b>progressão com posse movida pela qualidade individual + explosão pelas pontas (Doku) + os passes e bolas paradas de De Bruyne</b> — 14 jogos invicta pelo coletivo e pelo teto dos craques. Mas a estreia contra o Egito expôs a doença crônica do <b>"sem centroavante de área para abrir blocos baixos compactos"</b>: 15 finalizações, 0 gols em jogada de bola rolando, empate por gol contra.</li>
+          <li>Referência cruzada: na Copa 2022 a Bélgica foi <b>eliminada na fase de grupos</b> (o início do declínio da geração de ouro); na Euro 2024, oitavas com derrota magra de 1 gol para a França, expondo igualmente a falta de finalização diante de defesas organizadas. O empate com o Egito na estreia é a continuação do mesmo mal — neste jogo, contra o bloco baixo 4-4-2 do Irã, esse risco é ampliado de novo.</li>
+          <li>Caminho de entrada do jogo: o Irã teve a transição defensiva furada duas vezes por lançamentos na estreia — os lançamentos de De Bruyne + a velocidade de Doku atacam exatamente esse ponto fraco; Lukaku como arma do segundo tempo é a garantia de finalização. Se o Irã montar bem o bloco baixo e Beiranvand for confiável, a Bélgica pode cair de novo no "domínio de posse sem solução".</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇮🇷 Irã · Amir Ghalenoei</div>
+        <div class="role">4-4-2 de bloco baixo + contra-ataque rápido, Taremi como único ponto de apoio, execução instável na transição defensiva</div>
+        <ul class="cl">
+          <li>A marca de Ghalenoei é o <b>bloco baixo disciplinado + Taremi como ponto de apoio de costas + contra-ataque rápido pelas pontas</b> — a cultura defensiva coletiva de uma tradicional potência asiática. Mas a estreia contrariou a imagem de "bloco baixo de ferro" e virou um 2-2 de ataque contra ataque, com os <b>dois gols sofridos no momento da transição defensiva</b>, e a marcação e o recuo são falhas.</li>
+          <li>Referência cruzada: na Copa 2022 o Irã foi eliminado na fase de grupos (o 6-2 sofrido para a Inglaterra expôs o risco de colapso após ser aberto); na Copa da Ásia 2023 chegou às semifinais, perdendo por 2-3 para a Jordânia (gol no fim), mostrando resiliência defensiva mas finalização/fechamento limitados. Neste jogo precisa escolher entre "segurar para empatar" e "ser forçado a se abrir".</li>
+          <li>Plano para o jogo: a esperança real está em apertar a transição defensiva, nas defesas de Beiranvand, nos contra-ataques de Rezaeian/Taremi, e em segurar o placar caso a Bélgica falhe de novo no "sem centroavante para abrir defesas compactas" — mas abrir o jogo dá mais chances à Bélgica, e a condição física de chegar a LA no dia do jogo também é um risco oculto.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perspectivas dos analistas -->
+  <section>
+    <h2><span class="n">5</span> Perspectivas dos analistas</h2>
+    <div class="insight"><div class="who">ESPN (Anirudh Menon) <small>· prévia pré-jogo</small></div>"A Bélgica precisa urgentemente encontrar afiação no ataque" — De Ketelaere como ponto de apoio à frente de De Bruyne/Doku/Trossard não é eficaz o suficiente contra uma equipe de bloco baixo compacto, dura no jogo aéreo e bem organizada (justamente o perfil do Irã); Lukaku só pode ser reserva após lesão, e Garcia precisa pensar numa alternativa. Cita também o <b>duelo de ponta Doku vs Rezaeian</b> como o ponto-chave a observar.</div>
+    <div class="insight"><div class="who">Racing Post (Dan Childs) <small>· mídia de apostas</small></div>Recomenda principalmente <b>vitória da Bélgica + ambas marcam (BTTS)</b>: os jogadores belgas são mais fortes e devem conseguir a primeira vitória, mas a defesa instável dificulta manter a meta zerada; o Irã teve defesa ruim no 2-2, mas com ataque vivo, capaz de marcar 1 gol no jogo mais difícil. A montagem do bilhete enfatiza assistência de Doku, gol de De Bruyne e escanteios do Irã.</div>
+    <div class="insight"><div class="who">Mercado de previsão (Kalshi / DefiRate) <small>· consenso de mercado</small></div>Vitória da Bélgica ≈68% / empate 21% / Irã 13%, cerca de 4 pontos percentuais acima da odds sem margem das casas — leve prêmio emocional, mas não extremo. Classificação da Bélgica ≈95%, título do grupo ≈64%; classificação do Irã ≈41% — o peso deste jogo para a classificação do Irã é muito alto.</div>
+    <div class="insight"><div class="who">Geral · suspense central e armadilha <small>· Opta / FotMob</small></div>O verdadeiro suspense não está na direção do resultado, mas em <b>se a Bélgica consegue abrir o bloco baixo do Irã e manter a meta zerada</b>. ⚠ Aviso de armadilha: a Bélgica dominou o campo na estreia e mesmo assim teve 0 gols em jogada de bola rolando — "domínio de campo ≠ domínio de eficiência". Se isso se repetir aqui (De Bruyne/Doku criam chances mas ninguém finaliza com regularidade), tanto o handicap profundo (-1.5) quanto o mais de gols correm risco de não bater, e as presas de contra-ataque do Irã (Rezaeian/Taremi) têm janela para roubar pontos.</div>
+  </section>
+
+  <!-- Leitura geral -->
+  <section>
+    <h2><span class="n">6</span> Leitura geral e a confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória apertada da Bélgica (1-0 / 2-0 / 2-1, abrindo o bloco baixo via De Bruyne/Doku) é o cenário base; o empate (≈20%) é uma cauda de probabilidade média — se a Bélgica falhar na finalização como na estreia e for travada por Beiranvand, o Irã tem chance de empatar; a vitória do Irã (≈13%) exige que defesas geniais de Beiranvand + roubo em contra-ataque (Rezaeian/Taremi) + Bélgica no "domínio de posse sem solução" aconteçam ao mesmo tempo.</li>
+      <li><b>Homens decisivos</b>: De Bruyne (BEL/desenho de ruptura e finalização), Doku (BEL/explosão pelas pontas, contra Rezaeian), Lukaku (BEL/arma de finalização do segundo tempo), Taremi + Rezaeian (IRN/trunfo de contra-ataque e roubo de pontos), Beiranvand (IRN/maior trunfo para buscar o empate).</li>
+      <li><b>Fator decisivo</b>: o verdadeiro ponto deste jogo é <b>se a qualidade individual da Bélgica consegue abrir o bloco baixo 4-4-2 do Irã e manter a meta zerada</b> — o que decide a liquidação do handicap (-1/-1.5) e do total de gols (levemente ao mais). ⚠ Atenção também a qual dos dois sinais opostos se concretiza primeiro: a vulnerabilidade do Irã na transição defensiva ser atacada (favorece a Bélgica) e a Bélgica sem centroavante para abrir defesas compactas (favorece o Irã).</li>
+      <li><b>Perspectiva de mercado</b>: casas e mercado de previsão concordam na direção (tendência à Bélgica, ≈64–68%), com valor limitado no 1X2; o mercado mais informativo é o <b>handicap da Bélgica (-1/-1.5), se mantém a meta zerada e o total de gols</b>. Índice de superaquecimento 3/5 (o tema vem da narrativa geopolítica do Irã e da despedida da geração de ouro da Bélgica, não da linha de resultado).</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① as escalações oficiais de ambos (divulgadas no FIFA Match Centre ~1h antes do jogo); ② se Lukaku será titular na Bélgica e se Ezatolahi poderá jogar no Irã; ③ o impacto real de o Irã chegar a LA no dia do jogo sobre a condição física/rodízio da escalação; ④ a combinação de assistentes/VAR de Herrera neste jogo e o detalhamento de seus cartões por jogo em grandes torneios (o perfil do sistema de arbitragem sul-americano já está confirmado); ⑤ o volume deste jogo específico e o detalhamento do momentum de 30 dias na Kalshi/Polymarket não foram encontrados em separado; ⑥ a linha de handicap asiática (-1/-1.5) e a linha de total de gols, com odds específicas conforme a linha em tempo real pré-jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49117734/belgium-iran-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — programação/escalações/árbitro/prévia</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021477">FIFA — Match Centre</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a1cEc7G1Wv8u/">Racing Post — odds/situação do elenco/previsão</a><br>
+      • <a href="https://theanalyst.com/articles/belgium-vs-egypt-stats-2026-world-cup">Opta Analyst — Bélgica vs Egito (trazido da Bélgica)</a> · <a href="https://theanalyst.com/articles/iran-vs-new-zealand-stats-2026-world-cup">Opta Analyst — Irã vs Nova Zelândia (trazido do Irã)</a> · <a href="https://sports.yahoo.com/articles/belgium-vs-iran-picks-predictions-151728772.html">Yahoo Sports — previsão/probabilidades das casas</a><br>
+      • <a href="https://www.tehrantimes.com/news/527452/Dario-Herrera-to-officiate-Iran-vs-Belgium">Tehran Times — designação de Herrera</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — lista de árbitros da Copa do Mundo</a> · <a href="https://www.espn.com/soccer/story/_/id/49120177/iran-fifa-complaint-world-cup-travel-usa">ESPN — Irã faz queixa à FIFA sobre restrições de deslocamento</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-belgium-vs-iran-06-21-26-world-cup-2026/">Squawka — prévia</a> · <a href="https://www.sportsline.com/insiders/belgium-vs-iran-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — previsão de especialista</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-g/">DefiRate — Kalshi/Polymarket</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G">Wikipedia — Grupo G</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de Análise da Copa do Mundo 2026 · dados até 2026-06-20 · gráficos com dados verificados, radar é avaliação geral dos analistas · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f08a82',SC='#ec6f7c',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória Bélgica','Empate','Vitória Irã'],datasets:[{data:[64,20,13],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Probabilidade implícita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais de 2.5 gols','Menos de 2.5 gols'],datasets:[{data:[53,47],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (sem margem, leve tendência ao mais)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Bélgica','Irã','Egito','Nova Zelândia'],datasets:[{data:[9,20,29,85],backgroundColor:[HT,SC,'#3b6fb0','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (quanto menor, mais forte)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Pontas/contra-ataque','Teto individual','Experiência em grandes torneios'],
+  datasets:[
+   {label:'Bélgica',data:[6,6,8,7.5,8.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Irã',data:[6,5.5,6,6.5,6,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

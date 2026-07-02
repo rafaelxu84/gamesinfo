@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 法国 vs 塞内加尔 · 2026世界杯 I组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-france-vs-senegal.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-france-vs-senegal.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-france-vs-senegal.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-france-vs-senegal.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-france-vs-senegal.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-france-vs-senegal.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-france-vs-senegal.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-france-vs-senegal.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 3-1 · 2026 世界杯 · I组首轮 · Mbappé 梅开二度刷新法国队史射手纪录（58 球）、补时绝杀</span>
+  <h1>法国 vs 塞内加尔</h1>
+  <div class="meta">2026年6月16日 · 东卢瑟福 MetLife Stadium · 15:00 ET · I组（同组：伊拉克、挪威）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇫🇷 法国</div><div class="rk">FIFA #3 · 2022 亚军 · Mbappé / Dembélé 领衔的顶级攻击群</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇸🇳 塞内加尔</div><div class="rk">FIFA #15 · 连续三届世界杯 · 物理强、速度快的非洲头牌</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 法国 3-1 塞内加尔（半场 0-0）· 数据来源 Sofascore / Opta Analyst / FIFA / Sky Sports · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">前 45 分钟是<b>塞内加尔</b>的：他们以 5-1 的射门压制法国（法国上半场仅 1 射、xG 仅 <b>0.02</b>），<b>Nicolas Jackson 击中立柱</b>、<b>Ismaïla Sarr 错失绝佳机会</b>——爆冷的剧本一度近在眼前。但下半场风向骤变，法国 10-1 完全压制。第 <b>60 分钟</b> VAR 检视 Mbappé 疑似点球未判；第 <b>66 分钟</b> <b>Olise</b> 直塞撕开防线、<b>Mbappé</b> 一脚抽射破门（追平 Giroud 的 57 球队史纪录）；第 <b>82 分钟</b> Rabiot 直传、替补 <b>Barcola</b> 单刀挑射 2-0。补时高潮迭起：<b>90+5'</b> Iliman Ndiaye 助攻、替补 <b>Ibrahim Mbaye</b> 挑射扳回 2-1，仅 1 分钟后 <b>90+6'</b> Mbappé 再受 Olise 喂球、一记 30 码外远射绝杀——以 58 球成为法国队史第一射手。3-1，与下半场的走势完全吻合。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ HT 0-0（塞内加尔上半场 5-1 射门占优、Jackson 中柱）→ 60' VAR 检视点球未判 → 66' Mbappé（Olise 助攻，1-0）→ 82' Barcola（Rabiot 助攻，2-0）→ 90+5' Mbaye（Ndiaye 助攻，2-1）→ 90+6' Mbappé（Olise 助攻，3-1）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇫🇷 法国</th><th style="padding:6px">🇸🇳 塞内加尔</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">54%</td><td style="text-align:center">46%</td><td style="padding:6px;color:var(--mut)">法国控球小幅占优，但上半场没把控球转化成威胁</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>1.89</b></td><td style="text-align:center">0.50</td><td style="padding:6px;color:var(--mut)">下半场法国独得 1.87 xG——机会几乎全在易边后产生</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>11 / 8</b></td><td style="text-align:center">6 / 2</td><td style="padding:6px;color:var(--mut)">射正 8-2 碾压；但上半场射门是塞内加尔 5-1 领先</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center">4</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">塞内加尔上半场 2 次绝佳机会（含中柱）全部错失，是转折点</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">禁区触球</td><td style="text-align:center"><b>19</b></td><td style="text-align:center">—</td><td style="padding:6px;color:var(--mut)">法国 19 次禁区触球，下半场持续施压逼出 Mendy 5 次扑救</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">门将扑救</td><td style="text-align:center">Maignan 1</td><td style="text-align:center">Mendy 5</td><td style="padding:6px;color:var(--mut)">Mendy 5 救让比分体面，Maignan 几乎无事可做</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传中成功</td><td style="text-align:center">—</td><td style="text-align:center">1 / 7</td><td style="padding:6px;color:var(--mut)">塞内加尔传中 7 中 1，速度反击未能转化为有效传中</td></tr>
+      <tr><td style="padding:6px">越位 / 解围</td><td style="text-align:center">解围 12</td><td style="text-align:center">越位 3 · 解围 17</td><td style="padding:6px;color:var(--mut)">塞内加尔 3 次越位掐断反击、17 次解围印证其承压之重</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 一场被下半场改写的比赛</div>上半场法国 xG 仅 0.02、全场仅 1 射，塞内加尔以 5-1 射门、2 次绝佳机会 + 中柱占尽上风；易边后法国 10-1 射门、1.87 xG 完全反转。<b>这说明法国</b>：豪华攻击群即便开局沉闷，也具备凭个人能力（Mbappé/Olise）在任意时刻撕开比赛的上限——但也暴露其需要时间进入状态的隐患。</div>
+    <div class="insight"><div class="who">② Mbappé + Olise 的终结-创造轴心</div>Mbappé 4 射全中、2 球 0.79 xG、评分 8.2；Olise 两次助攻、4 次关键传球、0.95 预期助攻、评分 7.9。两球均出自 Olise 直塞 + Mbappé 终结。<b>这说明法国</b>：进攻命脉高度集中在 Mbappé-Olise 这条轴线上，他们在状态时法国无需体系完美也能取胜——但若被针对切断，火力会骤减。</div>
+    <div class="insight"><div class="who">③ 塞内加尔"差临门一脚"，不是被碾压</div>塞内加尔上半场 5-1 射门、2 次绝佳机会、Jackson 中柱、Sarr 错失空门，xG 0.50 中含早段 0.44——他们离爆冷只差把握住那几次稀缺机会。<b>这说明塞内加尔</b>：速度反击 + 紧凑中场的剧本对法国行得通（正是赛前 2002 现代翻版的判读），真正的短板是终结效率，而非战术或斗志。</div>
+    <div class="insight"><div class="who">④ 换人决定胜负——Deschamps 的板凳深度</div>替补 Barcola 用唯一一脚射门打进 2-0、带来左路速度；塞内加尔替补 Mbaye 也凭个人能力扳回一城。<b>这说明法国</b>：奢侈的进攻替补深度（Barcola/Thuram/Cherki 级别）是其与对手拉开差距的结构性优势，比赛越往后越能放大。</div>
+    <div class="insight"><div class="who">⑤ "零封不易"被验证，但无伤大局</div>法国全场仅让 Maignan 扑救 1 次，却仍在补时丢球未能零封——正是赛前主线"法国进球无虞、隐患在防守端"的精确兑现。<b>这说明法国</b>：即便后防大体稳健，面对有速度的对手仍难保零封，淘汰赛遇强敌时这一漏洞会被放大。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>法国胜（去水 ≈64%）→ 实际 3-1 胜</b>：基准剧本兑现，热门拿下三分。</li>
+      <li>✓ <b>"零封不易"主线 → 实际补时丢球、未零封</b>：贯穿全页的判读精确兑现。</li>
+      <li>✓ <b>大 2.5 球倾向 → 实际 4 球（大球）</b>：多源看好的 Over 2.5 兑现（OneFootball/Football365 判断正确）。</li>
+      <li>✓ <b>Mbappé 是最大进攻出口 / 追逐队史纪录 → 梅开二度，以 58 球刷新纪录</b>：核心看点完美落地。</li>
+      <li>✗ <b>"塞内加尔身体速度足以制造威胁、一场势均力敌苦战" → 部分兑现但偏差</b>：塞内加尔上半场确实占优、Jackson 中柱，但终结乏力 + 下半场被反转，结果分差大于"势均力敌"预期。</li>
+      <li>△ <b>比分预期 2-1 → 实际 3-1</b>：方向对（法国有球胜、塞内加尔进球），分差略大于预期。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇫🇷 法国 → 6/22 vs 伊拉克（费城 17:00 ET）</div>① 伊拉克首轮 1-4 惨败挪威、后防脆弱，法国攻击群面对低位密集防线时<b>需提防再现上半场"沉闷开局"</b>——尽早通过 Olise-Mbappé 轴线打开局面是关键；② Mbappé 状态火热（已平 Gerd Müller 世界杯 14 球），有望继续刷新纪录；③ Barcola 替补建功，可能竞争首发，进攻轮换余地大；④ 后防补时丢球提醒：即便对弱旅也要管理好比赛末段注意力。</div>
+      <div class="insight" style="margin:0"><div class="who">🇸🇳 塞内加尔 → 6/22 vs 挪威（东卢瑟福 20:00 ET）</div>① 挪威首轮 4-1 大胜伊拉克、<b>Haaland 梅开二度</b>状态炸裂——塞内加尔后防（Koulibaly/Niakhaté）将面对比法国更直接的高点冲击，是出线生死战；② 暴露的短板是<b>终结效率</b>：对法国制造了机会却全部错失，对挪威必须把握稀缺机会；③ 速度反击剧本对挪威同样可行（挪威压上后身后有空间）；④ Jackson、Sarr 需找回门前冷静，否则又将重演"占优却丢分"。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Sofascore、Opta Analyst（theanalyst.com）、FIFA、Sky Sports、ESPN、Al Jazeera。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>顶级夺冠热门对阵非洲最强劲旅</b>的开门硬仗：FIFA #3 的法国（2022 世界杯亚军，Mbappé、Dembélé、Olise 组成的恐怖攻击线）对阵 FIFA #15 的塞内加尔（连续三届世界杯、阵中遍布五大联赛球员的非洲头牌）。盘口倾向明确但<b>绝非碾压</b>——法国胜赔 <b>1.44</b>（-225，去水隐含 ≈64%），平局 4.50（≈22%），塞内加尔胜 7.50（+700，≈14%）。预测市场（Kalshi / Polymarket）将法国列为夺冠头号热门之一（≈16% 夺冠，与西班牙并列前茅）。最大的历史叙事是 <b>2002 年世界杯揭幕战——塞内加尔曾 1-0 爆冷击败卫冕冠军法国</b>（Papa Bouba Diop 进球）。基准剧本：<b>法国 90 分钟内占优、但零封不易</b>；塞内加尔身体与速度足以制造威胁，一场势均力敌的苦战是合理预期。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">法国隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈64%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:#7fa6e6">≈22%</div></div>
+      <div class="key"><div class="k">塞内加尔胜隐含</div><div class="v" style="color:var(--warn)">≈14%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Kylian Mbappé 的历史时刻</b>：现有 52 球，距离 Giroud 的法国队史纪录（57 球）仅差 5 球；本届亦在追逐世界杯历史射手纪录的路上。法国最大的进攻出口。</li>
+      <li><b>法国防线的零封隐患</b>：法国后防被普遍评价为"略显漏风"，面对 Nicolas Jackson 与 Sadio Mané 的速度，零封并无保障——这是塞内加尔抢分的最大机会窗口。</li>
+      <li><b>William Saliba 伤情</b>：法国中卫 Saliba 对北爱尔兰热身赛已踢满 45 分钟、随队全面训练，预计首发与 Upamecano 搭档。<span style="color:var(--warn)">[首发与否以赛前官方为准 · 待核]</span></li>
+      <li><b>2002 历史心理战</b>：揭幕战爆冷的记忆是塞内加尔的精神资本；法国则背负"不可重蹈覆辙"的压力，开局阶段的心理博弈值得关注。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--accent);background:#0d1526;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🆕 晨间临场更新（6/16） <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Saliba 全面合练、预计首发再获确认；Koundé 带肌肉小恙但预计仍首发</div>
+      <p style="font-size:13.5px">赛前最新：William Saliba 在 3-1 胜北爱一役踢满 45 分钟后已全面合练，预计首发坐镇中卫；Jules Koundé 被列入世界杯伤病观察名单（肌肉问题），但媒体预计其仍将右后卫首发。这意味着法国后防大体齐整——与本页"法国进球无虞、隐患在防守端"的主线一致。<span style="color:var(--warn)">[最终首发以赛前 T-60 官方名单为准 · 待核]</span></p>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/france/world-cup-2026/team-news/france-vs-senegal-injury-suspension-list-predicted-xis_599161.html" style="color:var(--accent)">Sports Mole — 伤停/预测XI</a> · <a href="https://www.sportsmole.co.uk/football/world-cup/france-vs-senegal_game_248738.html" style="color:var(--accent)">Sports Mole — 赛事指南</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">法国 · William Saliba 伤愈 + 攻击群完整 <span style="color:var(--mut);font-weight:400">· Sports Mole · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Saliba 预计可首发</b>；Mbappé、Dembélé、Olise 攻击三叉戟悉数在列</div>
+      <p style="font-size:13.5px">法国中卫 William Saliba 此前受伤情困扰，但在 6 月 9 日 3-1 胜北爱尔兰的热身赛中踢满 45 分钟，并已随队全面合练，预计将与 Dayot Upamecano 搭档中卫、Maignan 镇守球门。攻击端，Mbappé 领衔，Dembélé（两脚均能踢的边路威胁）、Olise（北爱尔兰一役上演帽子戏法）状态在线，Deschamps 拥有奢侈的进攻选择。<span style="color:var(--warn)">[Saliba 是否首发以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Saliba 是法国后防最稳健的中卫，他的回归直接关系到法国能否限制 Jackson/Mané 的速度冲击。攻击群完整意味着法国进球能力毋庸置疑——真正的问题不在能否进球，而在能否守住。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/france/world-cup-2026/predicted-lineups/saliba-status-doue-decision-predicted-france-xi-vs-senegal_599158.html" style="color:var(--accent)">Sports Mole — Saliba 状态/法国首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49059260/france-vs-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 伤情/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">塞内加尔 · Sadio Mané 回归 + 黄金一代齐整 <span style="color:var(--mut);font-weight:400">· FIFA · Al Jazeera · 2026-05</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Sadio Mané 入选 Pape Thiaw 的世界杯名单</b>；Mendy、Koulibaly、Pape Matar Sarr、Nicolas Jackson 均在列</div>
+      <p style="font-size:13.5px">主帅 Pape Thiaw 公布的名单中，Sadio Mané 领衔回归，门将 Édouard Mendy 把守最后一关，Kalidou Koulibaly 坐镇后防，中场有 Pape Matar Sarr、Lamine Camara、Habib Diarra、Pape Gueye，锋线则由拜仁慕尼黑前锋 Nicolas Jackson（速度型支点）与埃弗顿的 Iliman Ndiaye（#10 角色）领衔。塞内加尔以连续第三届世界杯、被普遍视为非洲最强的姿态出战。<span style="color:var(--warn)">[最终 26 人名单与首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：塞内加尔并非鱼腩——这是一支阵容深度、球员身价、五大联赛履历俱佳的硬骨头。Mané 的经验与 Jackson 的速度，使其完全有能力打穿法国略显漏风的防线，这正是 +700 赔率背后真实存在的爆冷土壤。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/senegal-world-cup-squad-announcement-pape-thiaw" style="color:var(--accent)">FIFA — 塞内加尔名单</a> · <a href="https://www.aljazeera.com/sports/2026/5/30/senegals-world-cup-2026-team-preview-players-to-watch-group-squad-list" style="color:var(--accent)">Al Jazeera — 塞内加尔前瞻/名单</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">双方 · 热身赛状态信号 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">法国 0-1→2-1 负科特迪瓦后 3-1 胜北爱；塞内加尔 0-0 平沙特、3-2 负美国，但<b>预选赛 5 胜 1 平不败</b></div>
+      <p style="font-size:13.5px">法国近期热身赛表现两面：6 月 5 日在南特 1-2 不敌科特迪瓦，但 6 月 9 日在里尔 3-1 完胜北爱尔兰（Olise 帽子戏法），整体进攻火力无虞。塞内加尔近期热身则较为低调——0-0 闷平沙特阿拉伯（Nicolas Jackson 该场被红牌罚下）、最终热身赛 3-2 负美国；但其世界杯预选赛战绩极为出色（5 胜 1 平不败、进 16 球仅失 2 球），暗示热身赛结果未必反映真实战力。<span style="color:var(--warn)">[热身赛阵容轮换、代表性以正式比赛验证 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：法国 3-1 胜北爱展现攻击火力，但负科特迪瓦也暴露防线松弛——这与"零封不易"的判读一致。塞内加尔 Jackson 在沙特一役染红，需注意其纪律风险（裁判 Faghani 场均约 3.6 黄牌，尺度不算松）；但预选赛不败说明其正赛态度与法国热身赛态度不可同日而语。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en/news/france-senegal-world-cup-preview/blt57c148cbbe5bd343" style="color:var(--accent)">Goal — 法塞前瞻</a> · <a href="https://www.espn.com/soccer/match/_/gameId/401871362/senegal-saudi-arabia" style="color:var(--accent)">ESPN — 塞内加尔 0-0 沙特</a> · <a href="https://www.outlookindia.com/sports/football/france-vs-northern-ireland-live-score-international-friendly-updates-highlights-lille" style="color:var(--accent)">Outlook — 法国 3-1 北爱</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">历史 · 2002 揭幕战爆冷的心理资本 <span style="color:var(--mut);font-weight:400">· FIFA · Planet Football · 2002</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>2002 世界杯揭幕战：塞内加尔 1-0 击败卫冕冠军法国</b>（Papa Bouba Diop 第 30 分钟破门）</div>
+      <p style="font-size:13.5px">2002 年韩日世界杯揭幕战，塞内加尔首次参赛便 1-0 爆冷击败卫冕冠军兼夺冠热门法国，Papa Bouba Diop 利用法国后防 Petit 与门将 Barthez 之间的混乱近距离破门，打入当届世界杯第一球。塞内加尔最终一路杀入八强。这是世界杯历史上最经典的爆冷之一。24 年后两队世界杯小组赛再度相遇，叙事张力十足。<span style="color:var(--warn)">[属历史事实，非本场预测依据]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：历史不会自动重演，但它塑造叙事与心理。塞内加尔会把 2002 当作"我们能做到"的精神锚点；法国则需警惕轻敌。对开盘热度与舆论流量而言，这一叙事是本场被反复引用的核心情绪点。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-upsets-france-senegal" style="color:var(--accent)">FIFA — 2002 爆冷</a> · <a href="https://www.planetfootball.com/nostalgia/senegal-2002-world-cup-france-denmark-shock-quarter-final-diouf-bouba-diop" style="color:var(--accent)">Planet Football — 2002 回顾</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2118,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· T-60 官方名单已公布 · 两源一致确认</span></h2>
+    <div class="sub">FIFA T-60 名单已出，两家赛前确认源（Bulinews / Bolavip）逐人一致 — 标 <b style="color:var(--good)">✅ 官方确认</b>。事实（名单）与解读（影响）分列。</div>
+
+    <h4>🇫🇷 法国 官方首发（4-2-3-1） <span style="color:var(--good);font-size:12px">✅ 官方确认</span></h4>
+    <div class="lineup">Maignan; Koundé · Upamecano · Saliba · T. Hernández; Tchouaméni · Rabiot; Olise · Dembélé · Doué; Mbappé (C)</div>
+    <div class="note" style="margin-top:6px">替补席关键武器：Marcus Thuram、Bradley Barcola、Rayan Cherki、Jean-Philippe Mateta（进攻替补深度奢侈）；Manu Koné、Ibrahima Konaté（中场/后防轮换）。</div>
+
+    <h4 style="margin-top:14px">🇸🇳 塞内加尔 官方首发（4-3-3） <span style="color:var(--good);font-size:12px">✅ 官方确认</span></h4>
+    <div class="lineup">Mendy; Diatta · Koulibaly · Niakhaté · El H. M. Diouf; I. Gueye · L. Camara · P. Gueye; I. Sarr · Jackson · Mané</div>
+    <div class="note" style="margin-top:6px">替补席关键武器：Habib Diarra、Pape Matar Sarr（中场创造/活力）、Iliman Ndiaye（#10 串联）、Ismail Jakobs（边路）。</div>
+
+    <h4 style="margin-top:16px">官方 vs 预测对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">法国 · 阵容</td><td>11 人预测组合</td><td>同 11 人</td><td>11/11 人选与预测一致——计划 A 完整执行，无伤退无爆点。</td></tr>
+      <tr><td class="ht">法国 · Saliba</td><td>预计首发（待核）</td><td>✅ 首发</td><td>本页最大待核项落地：Saliba 伤愈坐镇中卫，法国后防为最优配置。</td></tr>
+      <tr><td class="ht">法国 · 中锋角色</td><td>Dembélé 顶中锋</td><td>Mbappé 顶中锋(C)</td><td>位置微调：Mbappé 居中、Dembélé 拉入攻击带；不改攻击群质量。</td></tr>
+      <tr><td class="sc">塞 · 中场</td><td>Habib Diarra</td><td>Idrissa Gueye</td><td>老将拦截手换下活力型 → 中场更偏经验与对抗，强化与法国双后腰的肉搏。</td></tr>
+      <tr><td class="sc">塞 · 锋线</td><td>Iliman Ndiaye(#10)</td><td>Ismaïla Sarr</td><td>放弃串联型 #10、换上直接的速度边锋 → 锋线更快、更冲，瞄准法国边路反击空当。</td></tr>
+      <tr><td class="sc">塞 · 保留项</td><td>Mendy/Koulibaly/Camara/P.Gueye/Jackson/Mané</td><td>悉数首发</td><td>核心骨架与预测一致；Jackson 居中支点不变。</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">战术解读</h4>
+    <div class="insight"><div class="who">法国 · 全主力开张</div>Saliba 首发使后防为 best-available 配置，本页"零封不易"主线的前提（防线松弛）有所缓解——但这是"最优"而非"无懈可击"，面对速度反击仍有风险。Mbappé 顶中锋、Dembélé/Olise/Doué 三线支援，进攻火力满配。<b>速览结论：维持</b>（法国胜为基准，零封不保险）。</div>
+    <div class="insight"><div class="who">塞内加尔 · 中场换血信号</div>Idrissa Gueye 换 Habib Diarra：三中场偏向经验与拦截，意在先在中路顶住 Tchouaméni/Rabiot，再伺机反击——正是 2002 现代剧本的执行版。</div>
+    <div class="insight"><div class="who">塞内加尔 · 锋线提速信号</div>Ismaïla Sarr 换 Iliman Ndiaye：用边路速度替代 #10 串联，主动放弃控球创造、换取反击直接性，直指法国边后卫（Koundé 带恙、Théo 压上后的身后）的空当。Jackson 居中支点不变。</div>
+    <div class="insight"><div class="who">综合 · 结论是否修正</div>塞内加尔阵型信号 = 防守稳固 + 速度反击 ＞ 控球创造，counter 威胁较预测版（创造型）不降反升；法国全主力但仍非铁桶。<b>速览结论维持，不修正</b>：法国胜基准、"零封不易"、Over 2.5 倾向三条判读全部成立，且塞内加尔反击进球路径较预测更清晰。</div>
+
+    <h4 style="margin-top:16px">市场反应</h4>
+    <div class="note">名单公布时点（赛前约 1 小时）ESPN 报价：法国胜 <b>1.41</b>（美线 -245）/ 平 <b>4.20</b>（+320）/ 塞内加尔胜 <b>7.00</b>（+600）；大小球 大2.5 <b>1.74</b>（-135）/ 小2.5 <b>2.05</b>（+105）；让球 法国 -1.5。两队均按预期主力出战（法国全主力含 Saliba，塞内加尔仅 2 处非降级换人），名单未构成爆点，盘口未现冲击性移动，法国仍为重压热门。赔率为欧洲小数盘；仅事实陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:10px">来源：<a href="https://bulinews.com/world-cup-olise-and-upamecano-start-for-france-against-senegal">Bulinews — 官方首发确认</a> · <a href="https://bolavip.com/en/world-cup/france-vs-senegal-live-kylian-mbappe-makes-2026-world-cup-debut">Bolavip US — Lineups confirmed</a> · <a href="https://lastwordonsports.com/football/2026/06/16/france-vs-senegal-confirmed-lineups/">Last Word on Football — 队况/名单</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760432/senegal-france">ESPN — 赔率</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · I组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>I 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇫🇷 法国</th><th>🇸🇳 塞内加尔</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#3</td><td class="sc">#15</td></tr>
+      <tr><td>世界杯史</td><td class="ht">多次参赛（1998、2018 冠军；2022 亚军）</td><td class="sc">连续第 3 届；最佳：2002 八强</td></tr>
+      <tr><td>近期战绩（热身赛）</td><td class="ht">3-1 胜北爱尔兰；1-2 负科特迪瓦</td><td class="sc">0-0 平沙特；3-2 负美国（预选赛 5 胜 1 平不败）</td></tr>
+      <tr><td>主教练</td><td class="ht">Didier Deschamps</td><td class="sc">Pape Thiaw</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.44（隐含≈64%）</td><td class="sc">胜 7.50（≈14%）· 平 4.50（≈22%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 约 @2.00（+100）/ 小 2.5 约 @1.80 —— 法国攻击力使市场轻度偏向大球（隐含≈55%）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>历史交锋</td><td colspan="2">2002 世界杯揭幕战：塞内加尔 1-0 法国（经典爆冷）</td></tr>
+      <tr><td>关键看点</td><td class="ht">Mbappé 距队史射手纪录仅 5 球</td><td class="sc">Mané 回归 · Jackson 速度 · 后防 Koulibaly</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈64/22/14）。赔率来源：bet365 美线 -225 / +350 / +550，转十进制：法国 1.44、平 4.50、塞内加尔 7.50（去水前合计约 105% 水位）。预测市场（Kalshi/Polymarket，DefiRate 汇总）显示法国夺冠概率 ≈16%，与西班牙并列头号热门。大小球 2.5 线市场报价随平台浮动，本场因法国攻击群豪华而轻度偏向大球。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">法国胜方向共识清晰；真正的分歧在"胜负幅度（让球）"与"大小球方向"：法国攻击力支持大球，但塞内加尔的防守韧性与 2002 叙事为爆冷与小球提供两面性</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 法国胜方向统一；2002 叙事带来情绪流量</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">法国胜的方向基本收敛（专家罕有押塞内加尔赢），盘口定价（≈64%）属合理共识而非过热。强强对话 + 2002 历史爆冷叙事推升了关注度与情绪流量，但市场对法国的定价稳健，溢价空间有限。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：法国胜 多数 · 塞内加尔胜 少数 · 平局 少数）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>法国窄胜</b>（1-0 或 2-0 剧本）</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>法国胜；指出塞内加尔仍具竞争力</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>法国胜 + 关注大小球价值</td></tr>
+      <tr><td>Racing Post</td><td>投注媒体</td><td>法国 -1 让球 / Bet Builder 思路</td></tr>
+      <tr><td>OneFootball / Football365</td><td>预测媒体</td><td>法国胜；多源认为塞内加尔会前压求历史结果，<b>大 2.5 球</b>有价值</td></tr>
+      <tr><td>Juvefc / Total Football Analysis</td><td>分析媒体</td><td>法国胜；强调法国攻击深度与塞内加尔放手一搏的两面性</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向高度统一（法国），但这是合理共识而非情绪过热——盘口去水 ≈64% 与预测市场夺冠热度互相印证。真正的分歧集中在<b>让球幅度</b>（法国 -1 / -1.5 能否覆盖）与<b>大小球方向</b>（法国攻击力 vs 塞内加尔防守韧性）。2002 叙事带来情绪流量，但未见显著单边推动法国盘口的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>法国胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="ht">1.44（-225）</td><td>明显倾斜法国；平 4.50 / 塞内加尔 7.50（+550）</td></tr>
+      <tr><td>06-15/16</td><td>1X2（共识区间）</td><td class="ht">1.40–1.50</td><td>稳定；各平台塞胜在 7.50–8.00（+700 级）浮动</td></tr>
+      <tr><td>06-15/16</td><td>大 2.5 球</td><td colspan="2" class="ht">大 2.5 约 2.00（+100）；多源认为有价值 <span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>让球（亚盘参考）</td><td>法国 -1 / -1.5</td><td colspan="2" class="sc">法国 -1.5 是核心分歧点（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘赔率浮动有限，市场对法国胜的定价稳定。最活跃的价格发现在<b>让球盘（-1 / -1.5）</b>与<b>大小球 2.5 线</b>。多源（OneFootball/Football365）指出大 2.5 球（约 +100）具价值——逻辑是法国攻击群豪华 + 塞内加尔会前压求结果。亚盘 -1 / -1.5 层面体现"法国须净胜"的预期分歧。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（DefiRate 汇总）</b>：法国夺冠概率 ≈16%，与西班牙并列头号热门；两平台 2026 世界杯冠军盘成交量已突破 20 亿美元。单场胜负细分价格未公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>专家面板</b>：方向几乎一致看法国，分歧集中在让球幅度与大小球；少数观点提示塞内加尔的爆冷价值（基于 2002 叙事 + 阵容质量）。</li>
+      <li><b>舆论焦点</b>：① 2002 揭幕战爆冷的历史回顾；② Mbappé 追逐法国队史 / 世界杯射手纪录；③ Sadio Mané 的世界杯回归故事。三条叙事共同推高关注度。</li>
+      <li><b>I 组"死亡之组"标签</b>：多家媒体将 I 组（法、塞、挪、伊）列为本届平均 FIFA 排名最高的小组之一，强强对话进一步放大本场关注。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与预测市场对法国胜方向高度收敛，过热指数 <b>3/5</b>。法国胜方向统一且定价合理；真正的价值分歧集中在<b>让球幅度（-1.5 能否覆盖）</b>与<b>大小球 2.5 球</b>（偏向 Over）。2002 叙事制造情绪但未扭曲盘口。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/france/world-cup-2026/preview/france-vs-senegal-prediction-team-news-lineups_599156.html">Sports Mole — 前瞻/预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-senegal-06-16-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.sportsline.com/insiders/france-vs-senegal-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://onefootball.com/en/news/france-vs-senegal-prediction-world-cup-2026-preview-best-bets-43004303">OneFootball — 最佳投注</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/">DefiRate — 预测市场赔率</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">法国持球与边路传中优势预期更多角球；塞内加尔退守解围亦可能贡献被迫角球；市场具体盘口待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇫🇷 法国</th><th>🇸🇳 塞内加尔</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">控球 + 边路爆点（Dembélé/Olise）+ 频繁传中</td><td class="sc">速度反击 + Jackson 支点；中前场冲击</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈5–7（持球与传中型，角球产出偏高）<span style="color:var(--warn)">待核</span></td><td class="sc">≈3–5（更多退守，但反击与解围出底线兼有）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：边路传中 + 中卫 Upamecano/Saliba 头球</td><td class="sc">中高：Koulibaly 高空争顶；Mané/Jackson 抢点</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显占优（持球与边路压制）</td><td class="sc">较少主动角球；防守解围或推升被迫失角</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：法国持球与边路传中型打法通常带来较高角球产出，塞内加尔退守解围亦贡献部分被迫角球，总角球数可能落在 9–12 区间；常见基准线 O/U 9.5 或 10.5 均属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>法国边路与控球优势明显，角球差有望向法国倾斜。若法国早早领先并持续围攻，角球让球（法国占优）的逻辑成立；但若塞内加尔退守反击成功、比赛偏开放，双方角球可能更接近。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>法国传中与边路爆点 + 塞内加尔退守解围，总角球数预期偏中高（9–12）。若法国持续压制，角球数易上行；若塞内加尔以快速反击为主、减少被围攻时间，则总数承压。</div>
+    <div class="insight"><div class="who">变量与两面性</div>比分走向是最大变量：法国若早早 1-0 领先，塞内加尔被迫前压、法国反击与定位球增多，角球可能上升；若塞内加尔顽强守住僵局，比赛节奏放缓，角球数趋于中位。Faghani 让比赛流动的执法风格也利于回合数与角球积累。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：本场主裁判为澳大利亚籍的 <b>Alireza Faghani</b>，助理裁判为其同胞 George Lakrindis 与 Andrew Lindsay。Faghani 自 2008 年起为 FIFA 国际级裁判，这是他执法的<b>第三届世界杯</b>（2018、2022 之后），曾执法奥运会决赛与亚洲杯决赛，是高级别大赛的资深裁判。</div>
+    <h4>裁判画像与执法风格</h4>
+    <ul class="cl">
+      <li><b>经验丰富、镇得住大场面</b>：Faghani 以执法高规格、高对抗比赛见长，临场权威与情绪管理能力强，适合法塞这样关注度高的强强对话。</li>
+      <li><b>整体让比赛流动但执法坚决</b>：风格倾向让回合延续，但对明显犯规毫不手软；其职业生涯场均约 <b>3.6–3.7 张黄牌、0.11 张红牌</b>（生涯统计，非本届实时）<span style="color:var(--warn)">[本届/本场尺度以临场为准 · 待核]</span>。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、掷界 5 秒、仅队长可与裁判沟通、半自动越位——对双方拖延与越位临界跑动均有约束，Mbappé/Jackson 的反越位冲刺将被精准判定。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Faghani 的资历意味着比赛纪律管理稳定，不太可能出现失控场面。需关注的两点：① 塞内加尔 Nicolas Jackson 热身赛曾染红，在 Faghani 不算松的尺度下需控制纪律；② 法国边路突破若在禁区前沿/内被犯规，点球与黄牌概率随其尺度而定。整体上裁判面对赛果影响中性偏小，但对牌数/点球市场有参考意义。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span class="tag">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方）— <b style="color:var(--good)">官方名单已公布，对照见上方"✅ 官方首发 &amp; 解读"模块</b></div>
+    <h4>🇫🇷 法国 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · T. Hernández; Tchouaméni · Rabiot; Olise · Doué · Mbappé; Dembélé</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Kylian Mbappé</td><td>前锋 / 皇家马德里</td><td>队长与头号攻击点；52 球距队史纪录仅 5 球；速度与终结俱佳</td></tr>
+      <tr><td class="ht">Ousmane Dembélé</td><td>边锋 / 巴黎圣日耳曼</td><td>两脚均衡的边路威胁；制造与终结兼备</td></tr>
+      <tr><td class="ht">Michael Olise</td><td>边锋 / 拜仁慕尼黑</td><td>北爱热身赛帽子戏法；右路创造力核心</td></tr>
+      <tr><td class="ht">William Saliba</td><td>中卫 / 阿森纳</td><td>后防稳健核心；伤愈预计首发，限制塞内加尔速度的关键 <span style="color:var(--warn)">待核</span></td></tr>
+    </table>
+    <h4>🇸🇳 塞内加尔 预测首发（4-3-3）</h4>
+    <div class="lineup">Mendy; El Hadji Malick Diouf · Koulibaly · Niakhaté · Krépin Diatta; Lamine Camara · Pape Gueye · Habib Diarra; Sadio Mané · Nicolas Jackson · Iliman Ndiaye</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Nicolas Jackson</td><td>前锋 / 拜仁慕尼黑</td><td>速度型单箭头；冲击法国防线的主要威胁；纪律需注意（热身染红）</td></tr>
+      <tr><td class="sc">Sadio Mané</td><td>边锋 / 经验领袖</td><td>回归名单的精神领袖；速度与大赛经验</td></tr>
+      <tr><td class="sc">Iliman Ndiaye</td><td>前腰/边锋 / 埃弗顿</td><td>#10 角色；串联与盘带</td></tr>
+      <tr><td class="sc">Édouard Mendy</td><td>门将 / 效力中东/欧洲</td><td>最后一关；面对法国攻击群的扑救负担巨大</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Rotowire / Squawka / Sports Mole），<b>以赛前官方名单为准</b>。Saliba 是否首发待核；Pape Matar Sarr、Ismaïla Sarr 等亦在名单中，首发组合可能调整（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇫🇷 法国 · Didier Deschamps</div>
+        <div class="role">4-2-3-1 控球压制 + 边路爆点与快速转换</div>
+        <ul class="cl">
+          <li>Deschamps 的法国以务实著称：双后腰（Tchouaméni/Rabiot）保障平衡，边路 Dembélé/Olise 拉扯创造，Mbappé 居中冲击，强调由守转攻的瞬时杀伤。</li>
+          <li>进攻深度是法国最大资本——任意一名攻击手都具世界级终结力；定位球方面 Upamecano/Saliba 的头球是额外得分点。</li>
+          <li>风险：后防被普遍评价"略显漏风"（热身负科特迪瓦暴露松弛），面对 Jackson/Mané 的速度冲击，零封并无保障；轻敌与 2002 心理阴影是隐性变量。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇸🇳 塞内加尔 · Pape Thiaw</div>
+        <div class="role">4-3-3 中场扎实 + 速度反击 / 定位球决胜</div>
+        <ul class="cl">
+          <li>塞内加尔以扎实的三中场（Camara/Gueye/Diarra）控制中路，依托 Jackson 的速度与 Mané 的经验打反击，Koulibaly 坐镇后防提供高空与对抗。</li>
+          <li>对抗法国，标准剧本是压缩空间、限制法国边路爆点，伺机用速度反击与定位球制造冷门——这正是 2002 剧本的现代翻版。</li>
+          <li>风险：与法国攻击群对攻并不明智；若中场被 Tchouaméni/Rabiot 压制，Mendy 将承受持续火力；Jackson 的纪律（染红史）在 Faghani 尺度下需谨慎。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>预测法国窄胜（1-0 或 2-0 剧本），强调 Deschamps 拥有奢侈的攻击选择（Mbappé/Dembélé/Olise），但塞内加尔的阵容质量使其不会束手就擒——一场可控但需要耐心的胜利。</div>
+    <div class="insight"><div class="who">OneFootball / Football365 <small>· 预测媒体</small></div>多源指出<b>大 2.5 球</b>具价值：逻辑是法国攻击深度 + 塞内加尔为追逐历史结果而前压、易留出反击空间，双方都具备进球能力，比赛走向不一定是闷平的小球。</div>
+    <div class="insight"><div class="who">综合 · 塞内加尔侧画像 <small>· 战术信号</small></div>塞内加尔不是来"陪太子读书"的——这是连续三届世界杯、被普遍视为非洲最强的球队，预选赛 5 胜 1 平不败、进 16 失 2。2002 的揭幕战奇迹是其精神图腾。要复制历史，塞内加尔需要在中场站稳并把握住反击/定位球的稀缺机会。</div>
+    <div class="insight"><div class="who">综合 · 法国侧画像 <small>· 风险提示</small></div>法国的实力毋庸置疑，但"零封不易"是贯穿全场的判读主线——后防松弛 + 对手速度，使 1-1 或 2-1 这类有球比分比 1-0 闷胜更可能。Mbappé 的个人时刻（追逐纪录）可能成为打破僵局的钥匙，但法国需提防开局阶段被塞内加尔的能量冲击。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：法国胜是基准剧本（≈64%），但<b>零封不易</b>——2-1 / 1-1 这类有球比分概率不低；塞内加尔胜（≈14%）是真实存在的尾部风险（阵容质量 + 2002 心理）。纯 0-0 闷平为低概率（双方均有进球能力）。</li>
+      <li><b>关键先生</b>：Mbappé（法/进攻决定者、追逐纪录）、Dembélé/Olise（法/边路爆点）、Saliba/Upamecano（法/后防与零封关键）、Jackson（塞/速度冲击）、Mané（塞/经验领袖）、Koulibaly（塞/防守屏障）。</li>
+      <li><b>胜负手</b>：法国能否限制塞内加尔的速度反击并守住零封，是本场真正的胜负手；塞内加尔能否在中场站稳并把握稀缺机会，决定其能否复制 2002。</li>
+      <li><b>市场视角</b>：博彩与预测市场对法国胜方向收敛（≈64% / 夺冠 ≈16%），无显著情绪溢价，过热指数 3/5。最有信息含量的市场是<b>让球幅度（-1.5 能否覆盖）</b>与<b>大小球 2.5 球</b>（偏向 Over）。仅供分析参考，非投注建议。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① William Saliba 是否首发（伤愈进度）；② 塞内加尔最终首发组合（Pape Matar Sarr / Ismaïla Sarr 等的取舍）；③ 大小球 2.5 与让球（-1.5）具体实时赔率；④ 角球具体盘口数据未检得；⑤ Kalshi/Polymarket 单场胜负细分价格未公开检得；⑥ Faghani 本届/本场实时执法尺度（生涯均值 ≈3.6 黄牌）；⑦ 各项预测首发以赛前官方名单为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — I组确认（法国、塞内加尔、伊拉克、挪威）</a> · <a href="https://www.espn.com/soccer/story/_/id/49059260/france-vs-senegal-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/senegal-world-cup-squad-announcement-pape-thiaw">FIFA — 塞内加尔名单</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/france/world-cup-2026/preview/france-vs-senegal-prediction-team-news-lineups_599156.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.sportsmole.co.uk/football/france/world-cup-2026/predicted-lineups/saliba-status-doue-decision-predicted-france-xi-vs-senegal_599158.html">Sports Mole — Saliba 状态/法国首发</a> · <a href="https://www.rotowire.com/soccer/article/france-vs-senegal-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-118219">Rotowire — 首发/战术</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-france-vs-senegal-06-16-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://news.bet365.com/en-us/article/france-vs-senegal-odds-picks-predictions/2026061506405445079">bet365 — 赔率/预测</a> · <a href="https://www.sportsline.com/insiders/france-vs-senegal-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://onefootball.com/en/news/france-vs-senegal-prediction-world-cup-2026-preview-best-bets-43004303">OneFootball — 最佳投注</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/">DefiRate — 预测市场赔率</a><br>
+      • <a href="https://ghanasoccernet.com/world-cup-2026-fifa-appoints-australian-referee-alireza-faghani-to-officiate-senegals-opener-against-france">GhanaSoccernet — Faghani 委任</a> · <a href="https://en.wikipedia.org/wiki/Alireza_Faghani">Wikipedia — Faghani 简介</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯裁判名单</a><br>
+      • <a href="https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-upsets-france-senegal">FIFA — 2002 爆冷</a> · <a href="https://www.planetfootball.com/nostalgia/senegal-2002-world-cup-france-denmark-shock-quarter-final-diouf-bouba-diop">Planet Football — 2002 回顾</a> · <a href="https://www.goal.com/en-us/lists/france-leading-all-time-top-goal-scorer-henry-giroud-les-bleus/blt6c3c7eb0962eb536">Goal — 法国队史射手榜（Mbappé 追逐 Giroud）</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/5/30/senegals-world-cup-2026-team-preview-players-to-watch-group-squad-list">Al Jazeera — 塞内加尔前瞻</a> · <a href="https://www.espn.com/soccer/match/_/gameId/401871362/senegal-saudi-arabia">ESPN — 塞内加尔 0-0 沙特</a> · <a href="https://www.outlookindia.com/sports/football/france-vs-northern-ireland-live-score-international-friendly-updates-highlights-lille">Outlook — 法国 3-1 北爱</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-15 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['法国胜','平局','塞内加尔胜'],datasets:[{data:[64,22,14],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[55,45],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，轻度偏向大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['法国','塞内加尔','挪威','伊拉克'],datasets:[{data:[3,15,32,57],backgroundColor:[HT,SC,'#f4a61b','#c8102e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'法国',data:[7,9,8.5,7.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'塞内加尔',data:[7,6.5,7,6.5,7,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

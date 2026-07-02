@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 南非 vs 加拿大 · 2026世界杯 32强首战（胜者晋级16强 · Davies 伤愈复出 · 南非首次世界杯淘汰赛）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-southafrica-vs-canada.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-southafrica-vs-canada.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-southafrica-vs-canada.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-southafrica-vs-canada.html" style="color:#92a0c2;text-decoration:none">EN</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · 32 强首战 · 胜者晋级 16 强 · Davies 复出 vs 南非首次淘汰赛</span>
+  <h1>南非 vs 加拿大</h1>
+  <div class="meta">2026年6月28日（周日）· 洛杉矶 Inglewood · SoFi Stadium · 15:00 ET / 12:00 PT · 32 强阶段 · 本日唯一一场 32 强淘汰赛 · 胜者晋级 16 强</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇿🇦 南非</div><div class="rk">A 组次席 · 4 分（0-2 墨西哥、1-1 捷克、1-0 韩国）· 末轮爆冷 1-0 击败韩国 · 队史首次进入男足世界杯淘汰赛 · 防守反击、谨慎低比分 · Mokoena 停赛归位 · Zwane 仍停赛</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇨🇦 加拿大</div><div class="rk">B 组次席 · 4 分（1-1 波黑、6-0 卡塔尔、1-2 瑞士）· 净胜球居次 · Alphonso Davies 伤愈回归（小组赛全程缺阵）· 主帅 Jesse Marsch · 对瑞士后防显慌乱</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-29） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 南非 0-1 加拿大（半场 0-0）· 06-28</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">洛杉矶 SoFi Stadium：一场<b>"压着踢却踢不进、读秒被绝杀"的 0-1</b>。南非延续小组赛的谨慎打法、坐拥多数球权，但全场几乎无法把控球转化为真正的威胁；加拿大则更耐心、更有质量，反复用定位球与边路制造机会。僵局一直持续到补时——<b>第 90 分钟，Stephen Eustáquio（斯蒂芬·尤斯塔基奥）打入制胜球</b>，加拿大 1-0 绝杀南非。<b>加拿大队史首次跻身世界杯 16 强</b>，将于 7 月 4 日在休斯顿对阵今日（6/29）荷兰 vs 摩洛哥的胜者；南非则在队史首次世界杯淘汰赛之旅止步 32 强、遗憾出局。值得一提：Eustáquio 这粒第 90 分钟的制胜球，是<b>自 2018 年 Chadli（比利时 3-2 日本）以来世界杯淘汰赛首个第 90 分钟绝杀球</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 90' Eustáquio（加 · 制胜球，2018 年以来世界杯淘汰赛首个 90 分钟绝杀）· 半场 0-0 · 终场 南非 0-1 加拿大</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / FIFA）</h4>
+    <table>
+      <tr><th>指标</th><th>🇿🇦 南非</th><th>🇨🇦 加拿大</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td>0.13</td><td><b>1.32</b></td><td>差距悬殊：南非 0.13 的 xG 几乎为零，说明其控球完全没有转化为威胁；加拿大 1.32 配合 12 射 7 正，是机会质量明显更高的一方——绝杀并非偶然</td></tr>
+      <tr><td class="ht">控球率</td><td><b>58%</b></td><td>42%</td><td>南非控球占优却"无效控球"——<b>全场仅 9 次触球进入加拿大禁区</b>，把球权握在了无威胁区域</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>6 / 1</td><td><b>12 / 7</b></td><td>加拿大射门与射正全面碾压（12-6、7-1），持续施压终在补时收获回报</td></tr>
+      <tr><td class="ht">关键先生</td><td colspan="2"><b>Stephen Eustáquio（加）：90' 制胜球 + 单场 5 次定位球创造机会</b></td><td>Eustáquio 成为<b>1966 年有记录以来第二位在世界杯淘汰赛单场由定位球创造 5 次机会的球员</b>（前一位是 2006 年半决赛对德国的 Pirlo）——定位球是加拿大破密集防守的核心武器</td></tr>
+      <tr><td class="ht">历史里程碑</td><td colspan="2"><b>加拿大队史首次晋级世界杯 16 强</b></td><td>两队赛前均从未赢过世界杯淘汰赛；加拿大改写历史，南非的队史首次淘汰赛之旅则告终</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/south-africa-vs-canada-stats-world-cup-2026">Opta Analyst — South Africa 0-1 Canada Stats（xG 0.13 vs 1.32 · 射门 6/12 · Eustáquio 定位球 5 次创造）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289287/400021518">FIFA Match Centre — Result & Stats</a> · <a href="https://www.nbcsports.com/soccer/live/south-africa-vs-canada-live-updates-score-goals-highlights-stats-from-2026-fifa-world-cup">NBC Sports — 赛报（Eustáquio 补时绝杀）</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"加拿大个人质量 + 净胜球势头占优"剧本兑现——但赢得比预期更艰难</div>赛前判断加拿大是合理热门（去水 ≈55%）。结果加拿大确实掌控了机会质量（xG 1.32 vs 0.13、射正 7-1），<b>但直到第 90 分钟才打破僵局</b>——可迁移结论：<b>加拿大的进攻在阵地战中并不流畅，破密集防守高度依赖定位球与个人灵光，运动战创造力是其淘汰赛上限的隐忧</b>。</div>
+    <div class="insight"><div class="who">南非"无效控球"是出局主因：58% 控球 vs 9 次禁区触球</div>赛前看点是南非的低位防守反击能否守住。防守端南非确实组织有度（把加拿大压到 xG 1.32、一度逼平至补时），<b>但进攻端彻底哑火——58% 控球却仅 1 次射正、9 次禁区触球、xG 0.13</b>。可迁移结论：<b>南非有防守纪律但缺乏由守转攻的终结手段，控球率是"账面繁荣"，对强队几乎构不成威胁</b>。</div>
+    <div class="insight"><div class="who">定位球是破局钥匙——Eustáquio 的 5 次定位球创造定义了比赛</div>面对收缩防线，加拿大把定位球当作主武器，<b>Eustáquio 单场由定位球创造 5 次机会（追平 2006 Pirlo 的淘汰赛纪录），并亲自完成绝杀</b>。可迁移结论：<b>对阵摆大巴的球队，定位球质量往往是打破僵局的决定性变量——加拿大已找到这把钥匙</b>。</div>
+    <div class="insight"><div class="who">Davies 替补登场：加拿大未押首发、留作奇兵</div>赛前最大悬念"Davies 首发还是替补"揭晓——<b>Davies 坐镇替补席、伤愈后未冒险首发</b>，加拿大靠原有阵容磨到补时取胜。可迁移结论：<b>Davies 体能仍在管理中，其完全融入将是加拿大 16 强提升左路冲击力的关键增量</b>。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">加拿大热门取胜（去水 ≈55%）</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>加拿大 1-0 取胜晋级，机会质量全面占优（xG 1.32 vs 0.13）——但赢在补时，过程比预期艰难</td></tr>
+      <tr><td class="ht">Under 2.5 偏小球</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>全场仅 1 球，Under 2.5 / Under 1.5 均命中——与"南非低比分、加拿大稳健淘汰赛打法"判断一致</td></tr>
+      <tr><td class="ht">南非低位防守反击、谨慎低比分</td><td style="color:var(--good)"><b>✓ 大体命中</b></td><td>南非防守组织有度、把比赛拖到补时，但反击端 0.13 xG / 1 射正——防守兑现、进攻完全落空</td></tr>
+      <tr><td class="ht">加拿大对瑞士暴露的后防慌乱被南非利用</td><td style="color:var(--bad)"><b>✗ 未发生</b></td><td>加拿大零封过关，南非全场仅 9 次禁区触球——后防隐忧本场未被惩罚</td></tr>
+      <tr><td class="ht">Davies 首发 / 出场时间悬念</td><td style="color:var(--warn)"><b>~ 揭晓</b></td><td>Davies 未首发、替补出场——加拿大选择稳妥、未冒险，与"出场时间待官方确认"一致</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5aa8d8">🇨🇦 加拿大 · 晋级 16 强（队史首次，对阵荷/摩胜者）</h4>
+        <ul class="watch">
+          <li><b>队史首进 16 强</b>，7 月 4 日休斯顿对阵今日（6/29）荷兰 vs 摩洛哥的胜者——无论碰谁都是更硬的对手，须提升运动战创造力。</li>
+          <li><b>定位球是已验证的破局武器</b>：Eustáquio 的定位球质量（单场 5 次创造）应作为对阵强队的核心战术资产继续放大。</li>
+          <li><b>Davies 的完全融入是最大增量</b>：本场替补登场、体能仍在管理；若 16 强能首发，其左路冲击力将显著提升加拿大的进攻上限。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8788a">🇿🇦 南非 · 止步 32 强（队史首次淘汰赛之旅结束）</h4>
+        <ul class="watch">
+          <li><b>队史首次世界杯淘汰赛即止步 32 强</b>，但闯入淘汰赛本身已是历史性突破，防守纪律性获得验证。</li>
+          <li><b>结构性短板：由守转攻与终结</b>——58% 控球仅换来 0.13 xG、1 射正，进攻端缺乏穿透与终结手段是未来必须解决的问题。</li>
+          <li><b>带走的资本</b>：年轻阵容 + 防守组织度，是后续大赛周期可延续的基础；需补强能将控球转化为威胁的创造型与终结型球员。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 2026 世界杯 <b>32 强阶段的揭幕战，也是本日唯一一场淘汰赛</b>——单场定生死，<b>胜者晋级 16 强</b>。两队都来自小组次席：<b>南非（A 组次席，4 分）</b>末轮爆冷 1-0 掀翻韩国，史上首次闯入世界杯淘汰赛；<b>加拿大（B 组次席，4 分）</b>凭净胜球力压出线（1-1 波黑、6-0 卡塔尔、1-2 瑞士）。最大临场变量：<b>队长 Alphonso Davies 伤愈回归</b>——他因腿筋伤势缺席全部小组赛，主帅 Marsch 承认曾用他作"诱饵"扰乱对手部署，如今官方确认其可出战（ESPN / CBC / FOX 三源一致），是加拿大的重大利好，但<b>首发与否、出场时间未获官方确认</b>。盘口方向明确偏加拿大：<b>加拿大 -140（DECIMAL ≈1.71）· 平 +250（≈3.50）· 南非 +450（≈5.50）</b>（FanDuel，多源一致；部分平台加拿大约 -145）。三处核心看点：① <b>Davies 是首发还是下半场登场</b>（决定加拿大左路冲击力释放节奏）；② <b>南非的低位防守反击能否守住</b>（本届从未单场进球超过 1 个，谨慎为王）；③ <b>加拿大对瑞士暴露的后防慌乱是否被南非利用</b>。两国都从未赢过世界杯淘汰赛——历史在此被改写。基准剧本：<b>加拿大个人质量与净胜球势头占优、南非以纪律性低比分对抗</b>，专家普遍倾向 Under 2.5，过热指数 ≈ 3/5（Davies 复出叙事 + 主队加拿大热度）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">加拿大隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈55%</div></div>
+      <div class="key"><div class="k">南非隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈17%</div></div>
+      <div class="key"><div class="k">平局隐含概率(去水)</div><div class="v" style="color:var(--draw)">≈27%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>赛制（多源确认）</b>：32 强单场淘汰，90 分钟平局进加时，仍平则点球。胜者晋级 16 强。这是 6 月 28 日唯一一场 32 强淘汰赛。</li>
+      <li><b>Alphonso Davies 伤愈可出战（ESPN / CBC / FOX 三源一致）</b>：25 岁队长自 5 月初拜仁欧冠半决赛腿筋受伤后未上场，缺席全部三场小组赛；Marsch 周六确认其"健康、准备好出战"，但拒绝确认首发、出场时间或位置——多家预测为下半场登场。</li>
+      <li><b>南非 Mokoena 停赛归位、Zwane 仍停赛（多源确认）</b>：队长兼主罚点球手 Teboho Mokoena 累积黄牌停赛一场后回归，是中场重大利好；Themba Zwane 因对墨西哥红牌的三场停赛被 FIFA 维持原判，本场继续缺阵，削弱南非进攻组织。</li>
+      <li><b>上一场带入——加拿大 1-2 不敌瑞士，后防显慌乱</b>：下半场 40 秒被 Vargas 闪击、随后 Manzambi 利用防守失误扩大比分，加拿大"被打懵"；Marsch 赛后坦言中场应改打五后卫稳住防线。后防协防与门将状态是隐患。</li>
+      <li><b>上一场带入——南非 1-0 韩国，Maseko 制胜</b>：Thapelo Maseko 第 63 分钟左脚冷静推射，南非把握住韩国弃用 Son Heung-Min 首发的机会，史上首次小组出线。防守纪律 + 一击致命是其打法标签。</li>
+      <li><b>历史新篇</b>：两国均从未赢过世界杯淘汰赛。南非 1998/2002/2010（东道主）三度小组出局；加拿大本届前世界杯六战全负。无论谁赢，都是队史里程碑。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 首发已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">⭐ Alphonso Davies 伤愈、确认可出战 · 首发存疑 <span style="color:var(--mut);font-weight:400">· ESPN / CBC / FOX 三源一致 · 2026-06-27</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">加拿大队长 <b>Alphonso Davies</b> 腿筋伤愈，主帅 Marsch 确认其可出战南非，但<b>是否首发、出场时间、位置均未公开</b></div>
+      <p style="font-size:13.5px">据 ESPN、CBC Sports、FOX Sports 多源一致报道，主帅 Jesse Marsch 在周六确认 25 岁的 Davies "健康、准备好出战"，称"我们把 Alphonso 拿回来了……这对球队是个重要时刻、重大提振"。Davies 自 5 月初在拜仁慕尼黑欧冠半决赛中拉伤腿筋后再未出场，缺席加拿大全部三场小组赛——过去四个月内他三度腿筋受伤，团队决定不让他冒险走完康复流程。Marsch 还坦言小组赛期间他把 Davies 用作"诱饵"，迫使对手为一个其实尚未能出场的球员做针对部署。但 Marsch <b>拒绝确认 Davies 是否首发、能踢多少分钟、踢什么位置</b>，多家预测认为他更可能下半场替补登场。<span style="color:var(--warn)">[首发 / 出场时间 / 位置 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Davies 是加拿大最具决定性的球员——拜仁主力左后卫，速度与纵向突破是加拿大左路最大武器。他的回归直接提升加拿大的反击锐度与边路宽度。但若只是下半场登场，加拿大上半场的进攻威胁将明显低于满血状态；南非则可能在前 60 分钟更敢压上。他何时上场、踢左后卫还是更靠前，是决定本场节奏的最大临场变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49201528/canada-star-alphonso-davies-ready-world-cup-knockouts-decoy-role" style="color:var(--accent)">ESPN — Davies 准备好出战、"诱饵"角色</a> · <a href="https://www.cbc.ca/sports/soccer/canada-captain-davies-ready-to-play-world-cup-2026-9.7251595" style="color:var(--accent)">CBC — Marsch 确认 Davies 可出战</a> · <a href="https://www.foxsports.com/stories/soccer/alphonso-davies-playing-today-canada-stars-status-vs-south-africa" style="color:var(--accent)">FOX Sports — Davies 出战状态</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 南非 Mokoena 停赛归位、Zwane 三场停赛维持 <span style="color:var(--mut);font-weight:400">· AfricaSoccer / Briefly / Dailysports 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">南非队长、主罚点球手 <b>Teboho Mokoena</b> 累黄停赛一场后回归；<b>Themba Zwane</b> 红牌三场停赛被 FIFA 维持，本场仍缺阵</div>
+      <p style="font-size:13.5px">据 AfricaSoccer、Briefly、Dailysports 多源报道，中场核心 Teboho Mokoena 因对墨西哥与捷克累积黄牌缺席末轮对韩国之战，现已解禁，可出战加拿大——主帅 Hugo Broos 确认其归位。但老将组织者 Themba Zwane 因对墨西哥的红牌被处三场停赛，FIFA 驳回南非上诉、维持原判，本场继续缺阵。Zwane 缺席迫使 Broos 重新调整前场组织，Thalente Mbatha 或 Sphephelo Sithole 中将有一人因 Mokoena 回归而落选首发。<span style="color:var(--warn)">[南非首发细节 · 以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Mokoena 是南非中场的稳定器与定位球/点球执行者，他的回归显著加固南非的防守屏障与由守转攻的出球质量——对一支靠纪律和低比分立足的球队尤为关键。Zwane 的缺阵则削弱南非的创造力，使其更依赖 Maseko、Appollis、Mofokeng 的边路冲击与 Makgopa 的支点作用。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://africasoccer.com/world-cup-2026-teboho-mokoena-returns-for-canada-clash-as-fifa-upholds-themba-zwanes-suspension/" style="color:var(--accent)">AfricaSoccer — Mokoena 回归、Zwane 停赛维持</a> · <a href="https://dailysports.net/news/hugo-broos-confirms-the-availability-of-teboho-mokoena-and-the-absence-of-themba-zwane/" style="color:var(--accent)">Dailysports — Broos 确认</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 加拿大 1-2 瑞士（Vargas、Manzambi；David 替补建功）<span style="color:var(--mut);font-weight:400">· Sky Sports / ESPN / FIFA 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">加拿大末轮 1-2 负瑞士、屈居小组次席，<b>下半场后防被瑞士连续打穿、显出慌乱</b></div>
+      <p style="font-size:13.5px">据 Sky Sports、ESPN、FIFA 多源，加拿大在温哥华 1-2 不敌瑞士、痛失头名（也失去部分主场之利）。下半场仅 40 秒 Ruben Vargas 闪击破门，10 分钟后 Johan Manzambi 利用加拿大后防失误扩大比分——门将 Maxime Crépeau 在第二球处理上也有责任，加拿大"被打懵"。Promise David 替补登场首次触球即扳回一球，但无力回天。Marsch 赛后坦言中场应改打五后卫稳住防线。<span style="color:var(--warn)">[本场加拿大中卫组合与门将取舍 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这暴露了加拿大在高强度对抗下的后防协防与门将稳定性短板。若南非用 Maseko / Appollis 的边路速度和定位球冲击，加拿大的后防组织是真实风险点。Marsch 是否吸取教训、调整防守结构（甚至五后卫），是本场看点之一。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/switzerland-vs-canada/549817" style="color:var(--accent)">Sky Sports — 瑞士 2-1 加拿大</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451" style="color:var(--accent)">FIFA 赛报 — 瑞士 vs 加拿大</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 上一场带入 · 南非 1-0 韩国（Maseko 63'）· 史上首次小组出线 <span style="color:var(--mut);font-weight:400">· ESPN / FIFA 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">南非末轮 1-0 爆冷掀翻韩国，<b>Thapelo Maseko 第 63 分钟左脚制胜</b>，Bafana Bafana 史上首次闯入世界杯淘汰赛</div>
+      <p style="font-size:13.5px">据 ESPN、FIFA 多源，南非在蒙特雷 1-0 击败韩国，Maseko 第 63 分钟左脚冷静推射制胜。韩国主帅洪明甫令人意外地让队长孙兴慜替补，半场才登场仍无法挽回。南非以 4 分名列 A 组次席（前两轮 0-2 负墨西哥、1-1 平捷克），打破 1998/2002/2010 三度小组出局的历史。<span style="color:var(--warn)">[南非本届完整场均 xG · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这场胜利印证南非的打法基因——防守纪律 + 把握少数机会一击致命。南非本届至今单场从未进球超过 1 个，是典型的低比分、谨慎球队。面对个人质量更高的加拿大，南非大概率继续以低位防守 + 快速反击为主，这与专家普遍倾向 Under 2.5 的判断一致。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/match/_/gameId/760466/south-korea-south-africa" style="color:var(--accent)">ESPN — 南非 1-0 韩国</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A" style="color:var(--accent)">Wikipedia — 2026 世界杯 A 组</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 & 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 官宣名单 · 双源确认 · 带解读</span></h2>
+    <div class="sub">两队官方首发已公布并经 ≥2 独立源交叉确认（CBC Sports 现场 + Oddschecker Confirmed Lineups）。下方为事实名单 + 对预测的对照 + 战术解读。<b style="color:#86efac">速览基准剧本维持不变</b>，无爆点级意外。</div>
+
+    <h4>🇿🇦 南非 官方首发（4-2-3-1）· Hugo Broos <span style="font-size:11px;color:#86efac">✅ 官方确认</span></h4>
+    <div class="lineup">Williams; Mudau · Okon · Mbokazi · Modiba; Mokoena · Sithole; Maseko · Mofokeng · Appollis; Makgopa</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">替补席关键武器：<b style="color:#cbd5e1">Lyle Foster</b>（头号锋线变招）· <b style="color:#cbd5e1">Iqraam Rayners</b>（中锋后手）· <b style="color:#cbd5e1">Thalente Mbatha</b>（中场轮换）· Tshepang Moremi</div>
+
+    <h4>🇨🇦 加拿大 官方首发（4-4-2）· Jesse Marsch <span style="font-size:11px;color:#86efac">✅ 官方确认</span></h4>
+    <div class="lineup">Crépeau; Johnston · Cornelius · Bombito · Laryea; Buchanan · Saliba · Eustáquio · Millar; David · Oluwaseyi</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">替补席关键武器：<b style="color:#fbbf24">Alphonso Davies</b>（伤愈复出，本场坐替补席）· <b style="color:#cbd5e1">Cyle Larin</b>（支点型抢点）· Luc de Fougerolles（中卫轮换）· Jonathan Osorio</div>
+
+    <h5 style="margin:14px 0 6px;font-size:13.5px;color:var(--accent)">📋 vs 预测首发 · 逐条对照</h5>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht" style="color:#fbbf24">加拿大 · Davies</td><td>伤愈、或下半场登场</td><td><b>坐替补席</b></td><td>预测已押注他不首发——官方坐实，<b>速览主线证实而非修正</b>；加拿大上半场左路纵向爆点暂收，南非右路前 60 分钟压力下降、敢压上空间变大（与"南非前 60 分钟更敢压上"预判一致）。</td></tr>
+      <tr><td class="ht">加拿大 · 中卫</td><td>de Fougerolles</td><td><b>Bombito</b> 搭 Cornelius</td><td>直接回应对瑞士暴露的后防慌乱——Bombito 力量对抗型，上修加拿大防定位球与身后球能力，南非定位球破局难度提高。</td></tr>
+      <tr><td class="ht">加拿大 · 第二前锋</td><td>Larin</td><td><b>Oluwaseyi</b> 搭 David</td><td>双前锋仍在，但 Oluwaseyi 更具速度跑动（开赛对波黑后首次首发），强化反击与肋部纵深，而非 Larin 的支点抢点——对南非低位防线施加纵深压力。</td></tr>
+      <tr><td class="ht">南非 · 后腰</td><td>Mbatha 或 Sithole 二选一</td><td><b>Sithole</b> 搭 Mokoena</td><td>预测已明示二选一——Sithole 入选、Mbatha 落替补，<b>10/11 与预测一致 = 计划 A 执行</b>。Mokoena 停赛归来坐镇双后腰，南非维持低位防反结构。</td></tr>
+      <tr><td>其余</td><td colspan="3">南非另 10 人、加拿大另 8 人与预测一致——两队基本按预演阵容出场，无人员爆点。</td></tr>
+    </table>
+
+    <h5 style="margin:14px 0 6px;font-size:13.5px;color:var(--accent)">🧠 战术解读 · 速览结论：<b style="color:#86efac">维持</b></h5>
+    <div class="note" style="line-height:1.85">
+      <b>① Davies 替补 = 主线证实。</b>预测押注他不首发，官方坐实。加拿大左路宽度上半场交给 Millar（左中场）+ Laryea（左后卫），纵向冲击力按预测打折扣；南非右路前 60 分钟压力下降，敢压上空间变大，与赛前"南非前 60 分钟更敢压上"的判断吻合。<br>
+      <b>② Bombito 补强中卫。</b>顶替 de Fougerolles 搭 Cornelius，针对性修补对瑞士暴露的中卫慌乱，强化身体对抗与高空——南非靠定位球/身后球破密集的路径被压窄。<br>
+      <b>③ Oluwaseyi 提速。</b>顶 Larin 搭 David，加拿大保留双前锋但更偏速度跑动型，反击与肋部纵深压力上升，契合"个人质量 + 反击"破低位的基准思路。<br>
+      <b>④ 南非计划 A 执行。</b>4-2-3-1 双后腰 Mokoena + Sithole，Mofokeng 居 10 号位、Maseko/Appollis 拉边，Makgopa 单箭头；Foster、Rayners 留作锋线后手。10/11 与预测一致，低比分防反基因不变。<br>
+      <b>⑤ 综合。</b>阵型对位 4-2-3-1（南非）vs 4-4-2（加拿大）与赛前预测基本吻合，Davies 替补属预期内、无爆点级意外。<b>速览基准剧本（加拿大个人质量 + 净胜球势头占优、南非低比分纪律对抗、专家普遍倾向 Under 2.5）维持不变。</b>
+    </div>
+
+    <h5 style="margin:14px 0 6px;font-size:13.5px;color:var(--accent)">📉 市场反应</h5>
+    <div class="note">现行盘口（赛前）：<b>加胜 1.71 · 平 3.50 · 南非 5.50</b>（欧洲小数盘）。Davies 坐替补虽属利空信号，但赛前预测已普遍计入"他大概率仅替补登场"，名单公布未触发剧烈盘口移动；Oddschecker 在确认名单后给出 <b>1-1</b> 比分预测，延续"低比分胶着"市场共识。<span style="color:var(--mut)">（仅事实陈述，不构成投注建议。）</span></div>
+
+    <div style="font-size:12px;margin-top:10px">来源：<a href="https://www.cbc.ca/sports/livestory/canada-vs-south-africa-june-28-live-updates-fifa-world-cup-2026-9.7249028" style="color:var(--accent)">CBC Sports — 现场首发直播</a> · <a href="https://www.oddschecker.com/insight/football/20260628-south-africa-vs-canada-confirmed-lineups" style="color:var(--accent)">Oddschecker — Confirmed Lineups</a> · <a href="https://khelnow.com/football/world-football-south-africa-starting-lineup-vs-canada-fifa-world-cup-202606" style="color:var(--accent)">Khel Now — 南非官方首发</a> · <a href="https://www.si.com/soccer/south-africa-vs-canada-world-cup-preview-predictions-lineups-6-28-26" style="color:var(--accent)">Sports Illustrated — 预览/名单</a></div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"明显偏加拿大、但南非以防守纪律具备搅局能力"的场次——市场在加拿大热门与低比分共识之间寻找定价平衡</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Davies 复出叙事 + 主队加拿大热度 + 南非冷门搅局空间争议</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">加拿大被定为明显热门（-140，DECIMAL ≈1.71），但盘口并非碾压级——南非 +450 折合 ≈17% 胜率仍是真实搅局变量。专家几乎一致倾向 Under 2.5（两队都偏稳、南非本届单场最多进 1 球），过热信号主要来自 Davies 复出与主队情绪面而非系统性强弱差。</div>
+    </div>
+
+    <h4>① 专家推荐聚合</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>SportsLine（证明过的专家）</td><td>模型/专家综合</td><td>偏加拿大晋级；强调 Davies 回归提振 + 个人质量优势，关注总分线</td></tr>
+      <tr><td>CBS Sports（18-8 状态专家）</td><td>北美综合媒体</td><td>给出本场 picks，偏加拿大；含 Under 倾向</td></tr>
+      <tr><td>RotoWire</td><td>北美数据媒体</td><td>偏加拿大；战术分析指出南非防守纪律 + 加拿大对瑞士后防隐患</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>给出 4-1 思路的 Bet Builder；总体偏加拿大但点出南非韧性</td></tr>
+      <tr><td>Martin Green（专家）</td><td>专家撰稿</td><td>明确倾向 Under 2.5（约 -151）：两队节奏偏慢、均喜防守回收，南非本届单场最多 1 球</td></tr>
+      <tr><td>FanDuel Research</td><td>博彩研究</td><td>偏加拿大；预测 Davies 大概率下半场替补，强调 David / Larin 的世界杯进球记录</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL 欧赔）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>南非 / 平局 / 加拿大</th><th>解读</th></tr>
+      <tr><td>初盘（对阵确定后）</td><td>1X2</td><td class="sc">≈5.50 / 3.50 / 1.71 <span style="color:var(--warn)">[精确初盘 · 待核]</span></td><td>对阵一出即把加拿大列为明显热门（南非 +450 / 平 +250 / 加拿大 -140，美盘）</td></tr>
+      <tr><td>Davies 确认可出战后</td><td>FanDuel/多平台</td><td class="sc">≈5.50 / 3.50 / 1.71 <span style="color:var(--warn)">[截至赛前 · 部分平台加 ≈-145(1.69)]</span></td><td>Davies 复出消息基本符合市场预期、盘口波动有限；晋级盘加拿大 ≈-310、南非 ≈+245</td></tr>
+      <tr><td>大/小球 + 让球</td><td colspan="2" class="sc">总分线 O/U 2.5 偏小球（Under 约 -151 为主流）；加拿大让 -0.5 左右</td><td>市场预期偏谨慎低比分——南非低位防守 + 加拿大稳健 → 偏小球共识</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（对阵确定 · 约 6/25）</td><td class="sc">加拿大约 -140（DECIMAL ≈1.71）；南非约 +450（≈5.50）；平 +250（≈3.50）</td><td>以净胜球势头（加拿大 6-0 屠卡塔尔）+ 个人质量（David、Larin、Davies）+ 主场（美加墨东道主之一）定价；南非凭爆冷掀翻韩国获尊重，但仍是明显劣势方 <span style="color:var(--warn)">[精确初盘 · 待核]</span></td></tr>
+      <tr><td>重定价（Davies 利好 + 小组复盘 · 约 6/27）</td><td class="ht">加拿大约 -140~-145（DECIMAL ≈1.69-1.71）· 南非 ≈5.50 · 平 ≈3.50</td><td><b>Repricing 驱动因素</b>：① Davies 确认可出战 → 加拿大利好，但市场已部分计价、波动有限；② 加拿大对瑞士 1-2 暴露后防慌乱 → 抑制加拿大盘口进一步走低；③ 南非防守纪律 + 平局动机弱（淘汰赛无平局价值，平进加时）→ 平局赔率 ≈3.50 对应隐含 ≈27%</td></tr>
+      <tr><td>现盘（赛前）</td><td class="sc">加拿大约 1.71；总分 O/U 2.5（Under -151 为主流）；让球 -0.5</td><td>市场定位明确：<b>加拿大明显热门但非碾压</b>——南非 ≈17% 胜率真实存在；<b>Under 2.5 为强共识</b>，与"两队均偏防守、南非低比分基因"高度一致；Davies 复出 prop（出场/进球/助攻）成情绪热点。定位档位：<b>中等偏强热门，核心博弈在总分线与让球深度</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"加拿大结构性偏强、南非以纪律性低比分搅局"的场次，过热指数 <b>3/5</b>。Davies 复出可能推高个人 prop 市场，但总分线 Under 强共识揭示市场对低比分的现实预期；南非 ≈17% 胜率与 ≈27% 平局概率合计约 44%，说明加拿大优势明显但非绝对。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：主流预测市场方向与盘口一致偏加拿大晋级（约 -310 晋级盘）。<span style="color:var(--warn)">[精确占比 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Davies 的"诱饵"故事与复出</b>——Marsch 承认小组赛把伤缺的 Davies 当诱饵迫使对手做无用部署，加之复出消息，成为本场最大舆论叙事锚点。</li>
+      <li><b>舆论焦点 ②</b>：<b>南非的历史性时刻</b>——队史首次世界杯淘汰赛，Broos 麾下的纪律性低比分打法获舆论尊重；南非媒体谨慎乐观。</li>
+      <li><b>舆论焦点 ③</b>：<b>"两国均从未赢过世界杯淘汰赛"</b>——这一历史叙事被广泛引用，给本场增添里程碑色彩，也强化了双方的谨慎心态。</li>
+      <li><b>公众资金面 / 社媒</b>：公众资金偏加拿大（热门 + 主队 + Davies 效应），休闲盘集中在加拿大让球与 Davies/David 进球 prop；专家撰稿更偏向 Under 与南非搅局价值。<span style="color:var(--warn)">[量化数据 · 待核]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是"加拿大结构偏强、南非以低比分纪律搅局"的中等偏强热度场次，过热指数 <b>3/5</b>。Davies 复出推高情绪面，但总分线 Under 强共识揭示市场对低比分的现实预期。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsline.com/insiders/south-africa-vs-canada-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 赔率 / Picks</a> · <a href="https://www.cbssports.com/soccer/news/canada-vs-south-africa-odds-prediction-time-2026-world-cup-round-of-32-picks/">CBS Sports — Picks</a> · <a href="https://www.rotowire.com/soccer/article/south-africa-vs-canada-picks-tips-odds-best-bets-2026-world-cup-round-of-32-120060">RotoWire — 赔率 / 战术</a> · <a href="https://www.fanduel.com/research/south-africa-vs-canada-prediction-picks-lineups-preview-and-best-bets-for-round-of-32">FanDuel Research</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/south-africa-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-alPw44j6W3i3/">Racing Post — Bet Builder</a></div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛）</b>与<b>本届世界杯实际值（小组赛）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（小组赛）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇿🇦 南非 · 进攻</td><td class="ht">1998/2002/2010 三度小组出局；本届前队史从未进入淘汰赛；进攻历来非强项，依赖反击与定位球</td><td class="ht">3 战 2 球（0-2 墨西哥、1-1 捷克、1-0 韩国）；<b>本届单场从未进球超过 1 个</b>；Maseko 制胜韩国</td><td><b>低产但高效</b>：进攻产量低，但末轮一击致命掀翻韩国。典型低比分、谨慎球队 <span style="color:var(--warn)">（场均 xG 公开数据有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇿🇦 南非 · 防守</td><td class="ht">Broos 麾下非洲杯/预选赛防守纪律突出（2023 非洲杯季军）；以低位防守 + 整体性著称</td><td class="ht">3 战丢 3 球（墨西哥 2、捷克 1、韩国 0）；对韩国零封；Mokoena 回归加固屏障</td><td><b>防守是立身之本</b>：随赛事推进防守愈稳，末轮零封。面对加拿大个人质量是真实考验</td></tr>
+      <tr><td class="sc">🇨🇦 加拿大 · 进攻</td><td class="sc">2022 世界杯三战全负、零进球；本届为质变；David（里尔/转会）、Larin、Davies 构成进攻核心</td><td class="sc">3 战 7 球（1-1 波黑、6-0 卡塔尔、1-2 瑞士）；6-0 屠卡塔尔为非 UEFA/CONMEBOL 球队世界杯最大胜差；David / Larin 均有进球</td><td><b>较历史大幅跃升</b>：6-0 体现进攻上限，但对瑞士仅 1 球——面对组织严密的防线产量回落 <span style="color:var(--warn)">（本届场均 xG 完整数据 · 待核）</span></td></tr>
+      <tr><td class="sc">🇨🇦 加拿大 · 防守</td><td class="sc">Marsch 麾下整体强度与逼抢有提升；但缺乏顶级中卫深度</td><td class="sc">3 战丢 3 球（波黑 1、卡塔尔 0、瑞士 2）；<b>对瑞士下半场被连下两城、显慌乱</b></td><td><b>防守是隐患</b>：对瑞士暴露协防与门将稳定性问题；南非的反击与定位球可针对 <span style="color:var(--warn)">（本场中卫组合 · 待核）</span></td></tr>
+    </table>
+    <div class="note">📌 <b>关键读数</b>：南非本届单场最多进 1 球、防守随赛事走稳（末轮零封）——是典型低比分球队；加拿大 6-0 屠卡塔尔展示进攻上限，但对强防线（瑞士）产量回落、后防显慌乱。两组数据共同支持"低比分、谨慎博弈"的预期（专家普遍 Under 2.5），而非大开大合。来源：FIFA / ESPN 赛报 / Wikipedia 小组数据。国家队场均 xG 公开样本有限，相关项标"待核"。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="sc">加拿大 ≈1.2–1.6</td><td class="ht">南非 ≈0.6–1.0</td><td>加拿大个人质量 + 进攻上限占优；南非反击频率有限但讲求效率——与盘口总分线偏 Under 一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta 赛前预测南非晋级淘汰赛概率约 48.9%（小组阶段口径），整体把南非列为 A 组弱旅；本场加拿大被多数模型/盘口列为明显热门 <span style="color:var(--warn)">[本场单场超算精确分布 · 待核]</span></td><td>加拿大整体实力与势头占优，但南非的防守纪律是模型不易完全量化的变量；淘汰赛单场容错低</td></tr>
+      <tr><td>压迫 PPDA / xT / 场面倾斜</td><td colspan="2" class="ht">国家队公开详细数据有限 <span style="color:var(--warn)">（PPDA/xT 待核）</span>——定性：加拿大在 Marsch 体系下倾向高强度逼抢与纵向推进、占据 field tilt；南非以低位防守 + 快速反击为主，主动让出球权</td><td><b>陷阱提醒</b>：① Davies 若仅下半场登场，加拿大上半场威胁打折；② 加拿大对瑞士暴露的后防慌乱 → 南非定位球/反击有机会；③ 南非本届单场最多 1 球 → Under 强共识但需防加拿大单边爆发；④ Davies 复出 prop 受情绪驱动可能溢价</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——南非的少机会高把握是其晋级路径核心。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。<span style="color:var(--warn)">待核</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，加拿大高强度推进体系倾向占优。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/ESPN/FIFA 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">1</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>多源确认</b>：据 Foot Africa、The Portugal Post、FIFA 官方，本场主裁为<b>葡萄牙籍国际级名哨 João Pinheiro（若昂·皮涅罗）</b>，搭配全葡萄牙裁判组——助理 1 Bruno Jesus、助理 2 Luciano Maia；第四官员为沙特籍 Omar Alali，候补助理为阿联酋籍 Mohamed Alhammadi。这是 12 年来首次有葡萄牙主裁执法世界杯淘汰赛。场地为洛杉矶 Inglewood 的 <b>SoFi Stadium</b>（带可开合顶棚的室内/半室内球场，6 月炎热但环境可控）。<span style="color:var(--warn)">[VAR 组完整名单 · 以 FIFA 官方为准 · 待核]</span></div>
+    <h4>执法尺度 + 数据画像（来源：playerstats / whoscored / corner-stats）</h4>
+    <ul class="cl">
+      <li><b>数据画像</b>：João Pinheiro 职业生涯执法约 323 场，<b>场均黄牌约 4.74 张（明显高于平均，属偏严类型）</b>；生涯共出示约 1,530 张黄牌、37 张直接红牌（+25 张两黄变一红）；累计判罚点球约 125 个，<b>场均约 0.39 个点球</b>。多家统计站点把他列为"严厉"类主裁。</li>
+      <li><b>本届大赛尺度</b>：2026 世界杯统一执法新规——仅队长可与主裁沟通、门将 8 秒规则、半自动越位（SAOT）精准校准冲刺临界点。以皮涅罗偏高的黄牌均值看，淘汰赛高强度对抗下出牌料不少；对拉扯、战术犯规与禁区内动作较为警觉。</li>
+      <li><b>与两队的历史</b>：皮涅罗与南非、加拿大两队的显著公开执法史样本有限，无可靠大赛细分数据可引用——如实说明、不编数值。作为葡萄牙裁判，他主要执法欧洲俱乐部与欧战赛事。<span style="color:var(--warn)">[对两队历史执法记录 · 待核]</span></li>
+      <li><b>两面性</b>：加拿大须主动压上求胜 → 由攻转守的反抢与战术犯规增多，可能吃牌；南非低位防守 + 反击，下底强突（Maseko/Appollis）与禁区争顶易制造定位球与点球场景。半自动越位将精准裁决加拿大反击与南非反击的临界冲刺。皮涅罗黄牌均值偏高，黄牌总数盘值得关注。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Pinheiro 场均黄牌约 4.74、点球率约 0.39，属偏严且敢吹点球的类型。本场淘汰赛压力大、加拿大须求胜、南非密集防守——中场拼抢与禁区动作料频繁，黄牌总数盘可能偏高、点球出现概率不低于平均。鉴于其对两队历史数据样本有限，相关盘口以倾向看待、不作可操作依据。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">2</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· 小组战绩 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>两队小组赛进球 / 失球</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇿🇦 南非</th><th>🇨🇦 加拿大</th></tr>
+      <tr><td>小组赛</td><td class="ht">0-2 墨西哥 + 1-1 捷克 + 1-0 韩国（Maseko 63'）· 4 分，净 -1，进 2，失 3 · A 组次席</td><td class="sc">1-1 波黑（Larin 78'）+ 6-0 卡塔尔 + 1-2 瑞士 · 4 分，净 +4，进 7，失 3 · B 组次席（净胜球出线）</td></tr>
+      <tr><td>晋级身份</td><td colspan="2">两队均为小组次席；32 强单场淘汰，胜者晋级 16 强（90 分钟平局进加时，仍平点球）</td></tr>
+      <tr><td>历史里程碑</td><td class="ht">队史首次进入世界杯淘汰赛（1998/2002/2010 三度小组出局）</td><td class="sc">本届前世界杯六战全负、本届首次出线；两国均从未赢过世界杯淘汰赛</td></tr>
+      <tr><td>主教练</td><td class="ht">Hugo Broos（4-2-3-1，低位防守 + 快速反击）</td><td class="sc">Jesse Marsch（高强度逼抢 + 纵向推进；对瑞士曾欲改五后卫）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Teboho Mokoena（队长/中场/点球，停赛归位）· Thapelo Maseko（边路/制胜球）· Evidence Makgopa（中锋）</td><td class="sc">Alphonso Davies（队长/左路，伤愈复出，首发存疑）· Jonathan David（中锋，本届进球）· Cyle Larin（前锋，本届进球）</td></tr>
+      <tr><td>重要缺/伤状态</td><td class="ht">Themba Zwane 红牌三场停赛（FIFA 维持，本场缺阵）；Mokoena 停赛归位</td><td class="sc">Davies 伤愈可出战、首发/出场时间未定（待核）；后防对瑞士显慌乱</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈5.50（隐含 ≈17%）</td><td class="sc">胜 ≈1.71（隐含 ≈55%）· 平 ≈3.50（≈27%）</td></tr>
+      <tr><td>总分 / 让球</td><td colspan="2" class="sc">O/U 2.5 偏小球（Under 约 -151 为主流）；加拿大让 -0.5 · 晋级盘：加拿大 ≈-310 / 南非 ≈+245</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后隐含概率（加拿大 1.71 / 平 3.50 / 南非 5.50，归一后约 55/27/17），与"加拿大明显热门、南非搅局"的市场定位一致。大小球主流偏 Under 2.5（Under 约 -151），与两队偏防守、南非低比分基因的预期吻合。美盘换算：加拿大 -140→1.71、平 +250→3.50、南非 +450→5.50。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发（预测版）===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#0e2218;color:#86efac;font-weight:600;padding:3px 9px;border-radius:20px;border:1px solid #1d4a2a">预测版 · 官方版见上方 ✅ 官方首发 & 解读 模块</span></h2>
+    <div class="sub">预测首发（RotoWire / Sports Mole / FanDuel 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+
+    <h4>🇿🇦 南非 预测首发（4-2-3-1）· Hugo Broos</h4>
+    <div class="lineup">Williams; Mudau · Okon · Mbokazi · Modiba; Mokoena · Sithole; Maseko · Mofokeng · Appollis; Makgopa</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Teboho Mokoena</td><td>后腰/队长 · 点球手</td><td>累黄停赛一场后回归，中场屏障与出球核心；定位球/点球执行者 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Thapelo Maseko</td><td>边路/前腰</td><td>末轮对韩国第 63 分钟左脚制胜，是南非把握机会能力的代表 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Evidence Makgopa</td><td>中锋</td><td>南非锋线支点，承担背身做球与反击终结任务 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Oswin Appollis · Relebohile Mofokeng</td><td>边路/前场</td><td>南非边路冲击与创造来源；Zwane 缺阵后前场组织更依赖二人 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+    </table>
+
+    <h4>🇨🇦 加拿大 预测首发（4-4-2，Davies 或下半场登场）· Jesse Marsch</h4>
+    <div class="lineup">Crépeau; (RB) · (CB) · (CB) · (LB); (RM) · (CM) · (CM) · (LM); David · Larin　【Davies 预计替补 · 视情况左路登场】</div>
+    <table>
+      <tr><th>球员</th><th>位置/角色</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Alphonso Davies</td><td>左后卫/左路 · 队长</td><td>腿筋伤愈、确认可出战；多家预测下半场替补登场；拜仁主力，速度+纵向突破是加拿大左路最大武器 <span style="color:var(--warn)">[首发/出场时间/位置 · 待核]</span></td></tr>
+      <tr><td class="sc">Jonathan David</td><td>中锋</td><td>本届世界杯进球（多家媒体记其本届 3 球量级）；加拿大终结点 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Cyle Larin</td><td>前锋</td><td>对波黑第 78 分钟扳平、本届有进球；与 David 组成锋线组合 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Maxime Crépeau</td><td>门将</td><td>对瑞士第二失球处理被指有责；门将稳定性是本场看点 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（RotoWire / Sports Mole / FanDuel），各源有出入。南非 <b>Zwane 停赛缺阵</b>、<b>Mokoena 回归</b>影响前场与中场取舍（Mbatha 或 Sithole 中一人落选）；加拿大 <b>Davies 首发存疑</b>，多源预测下半场登场，具体后防四人组合与门将取舍待定。官方名单以赛前 <b>FIFA Match Centre</b> 为准 · 待核。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（2022 世界杯 + 非洲杯 / 美洲杯·金杯）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇿🇦 南非 · Hugo Broos</div>
+        <div class="role">4-2-3-1 · 低位防守 + 整体性 + 快速反击，纪律为先</div>
+        <ul class="cl">
+          <li>Broos（2017 非洲杯冠军教头，执教喀麦隆夺冠）麾下南非以 <b>纪律性低位防守 + 整体压缩空间 + 把握少数反击机会</b> 立足。中场 Mokoena 是屏障与出球核心，边路 Maseko/Appollis/Mofokeng 提供反击速度，Makgopa 做支点。</li>
+          <li>交叉参照：南非 1998/2002/2010 三度小组出局，本届史上首次淘汰赛；Broos 时代防守评价突出（2023 非洲杯季军）。<b>本届至今单场从未进球超过 1 个</b>，进攻产量低但末轮一击致命掀翻韩国——典型低比分球队。</li>
+          <li>本场应对：面对个人质量更高的加拿大，南非大概率<b>继续低位防守 + 反击</b>，主动让出球权，靠 Mokoena 的中场屏障与定位球寻找机会。Zwane 缺阵削弱创造力，更依赖 Maseko/Appollis 的边路突破与定位球。能否守住加拿大的进攻上限是晋级关键。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇨🇦 加拿大 · Jesse Marsch</div>
+        <div class="role">高强度逼抢 + 纵向推进 · David/Larin 锋线 + Davies 左路爆点</div>
+        <ul class="cl">
+          <li>Marsch 的加拿大签名是 <b>高强度逼抢、快速纵向推进、边路宽度与转换速度</b>。David 与 Larin 提供终结，Davies（健康时）的左路速度是最大爆点。6-0 屠卡塔尔展示了进攻上限。</li>
+          <li>交叉参照：加拿大 2022 世界杯三战全负、零进球，本届为质变（首次出线、首胜、首次大胜）。但对瑞士 1-2 暴露后防：下半场被连下两城、Marsch 赛后坦言应改五后卫——<b>防守稳定性是体系软肋</b>。</li>
+          <li>本场挑战：<b>面对南非的密集低位防守，如何打开</b>是首要课题——这正是加拿大需要 Davies 边路爆破与 David/Larin 终结的场景。但若 Davies 仅下半场登场，加拿大上半场威胁打折；同时须防南非反击与定位球针对其后防慌乱。Marsch 是否调整防守结构是看点。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">盘口 / 模型综合 <small>· 多源一致</small></div>加拿大被列为明显热门（去水 ≈55%），但非碾压——南非去水 ≈17% 胜率 + ≈27% 平局概率合计约 44%，淘汰赛单场容错低，南非的低位防守纪律是模型不易完全量化的搅局变量。专家几乎一致倾向 Under 2.5。</div>
+    <div class="insight"><div class="who">ESPN / FanDuel <small>· 综合预测媒体</small></div>Davies 是否首发是本场最大临场变量。多源预测其下半场替补登场——若如此，加拿大上半场进攻威胁将明显低于满血状态，南非可能在前 60 分钟更敢压上。David / Larin 的终结效率是加拿大破密集防守的关键。</div>
+    <div class="insight"><div class="who">Sky Sports / RotoWire <small>· 战术分析媒体</small></div>加拿大对瑞士暴露的后防慌乱（下半场被连下两城、门将处理失误）是真实风险点——南非若用 Maseko/Appollis 的边路速度与定位球冲击，加拿大的后防协防是被针对环节。Marsch 是否改打更稳的防守结构（甚至五后卫）值得观察。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源综合</small></div>⚠ 陷阱提醒：① Davies 复出 prop（出场/进球/助攻）受情绪驱动可能溢价，其实际出场时间未确认；② 南非本届单场最多 1 球 → Under 强共识，但需防加拿大单边爆发（6-0 屠卡塔尔的上限真实存在）；③ 南非 Zwane 停赛削弱创造力，进攻更依赖反击与定位球；④ 加拿大后防慌乱 + 门将稳定性是南非搅局的最现实路径。</div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：加拿大实力与势头偏强（盘口去水 ≈55%、净胜球 +4），但南非的纪律性低位防守 + Mokoena 回归使其具备真实搅局能力。基准剧本：<b>低比分、谨慎博弈、总分偏 Under 2.5</b>——加拿大有打开局面的个人质量（David/Larin/复出的 Davies），但不保证能破南非密集防线；南非的进球最现实路径是反击与定位球。淘汰赛单场，平局进加时、点球收场的可能性需纳入考量。</li>
+      <li><b>关键先生</b>：南非 — Teboho Mokoena（中场屏障/点球）· Thapelo Maseko（边路/把握机会）· Ronwen Williams（门将，南非防线最后一道）；加拿大 — Alphonso Davies（左路爆点，若登场）· Jonathan David（终结）· Cyle Larin（终结）。</li>
+      <li><b>胜负手</b>：① Davies 何时登场、踢什么位置（决定加拿大左路威胁释放节奏）；② 南非能否守住加拿大的进攻上限并通过反击/定位球抓住机会；③ 加拿大对瑞士暴露的后防慌乱是否被南非利用；④ Mokoena 回归后南非中场的屏障与出球质量；⑤ 淘汰赛压力下两队的心态与体能（皮涅罗偏严的执法尺度叠加）。</li>
+      <li><b>市场视角</b>：明显偏加拿大（≈55% 去水）但非碾压单边（南非 ≈17%、平局 ≈27%），过热指数 3/5。总分线 Under 强共识——与预期的低比分对决吻合。Davies 复出 prop 受情绪驱动，可能存在溢价。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre 为准）——<b>Alphonso Davies 是否首发、出场时间、位置</b>（若仅下半场登场需调整加拿大上半场进攻预期）；② 加拿大本场后防四人组合与门将取舍（对瑞士后防慌乱后是否调整）；③ 南非 Zwane 缺阵后的前场组织安排（Mbatha vs Sithole）；④ 裁判 Pinheiro 完整 VAR 组合 · 对两队历史执法细分数据；⑤ 本届两队场均 xG 完整数据（Opta/FotMob 细分 · 待核）；⑥ 本场单场超算精确分布（Opta · 待核）；⑦ 精确初盘数值 · 实时赔率以赛前为准；⑧ 两队 PPDA/xT/field tilt 细分——国家队公开样本有限。</div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49201528/canada-star-alphonso-davies-ready-world-cup-knockouts-decoy-role">ESPN — Davies 准备好出战、"诱饵"角色</a> · <a href="https://www.cbc.ca/sports/soccer/canada-captain-davies-ready-to-play-world-cup-2026-9.7251595">CBC — Marsch 确认 Davies 可出战</a> · <a href="https://www.foxsports.com/stories/soccer/alphonso-davies-playing-today-canada-stars-status-vs-south-africa">FOX Sports — Davies 出战状态</a><br>
+      • <a href="https://www.espn.com/espn/story/_/id/49185469/south-africa-vs-canada-kick-team-news-how-watch-world-cup-round-32-clash">ESPN — 南非vs加拿大开球时间/球队消息/收看</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289287/400021518">FIFA Match Centre — 南非 vs 加拿大</a><br>
+      • <a href="https://africasoccer.com/world-cup-2026-teboho-mokoena-returns-for-canada-clash-as-fifa-upholds-themba-zwanes-suspension/">AfricaSoccer — Mokoena 回归 / Zwane 停赛维持</a> · <a href="https://dailysports.net/news/hugo-broos-confirms-the-availability-of-teboho-mokoena-and-the-absence-of-themba-zwane/">Dailysports — Broos 确认 Mokoena/Zwane</a> · <a href="https://briefly.co.za/sports/football/245019-teboho-mokoena-set-return-bafana-bafanas-canada-clash-suspension-ends/">Briefly — Mokoena 解禁</a><br>
+      • <a href="https://www.espn.com/soccer/match/_/gameId/760466/south-korea-south-africa">ESPN — 南非 1-0 韩国（Maseko 63'）</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A">Wikipedia — 2026 世界杯 A 组</a><br>
+      • <a href="https://www.skysports.com/football/switzerland-vs-canada/549817">Sky Sports — 瑞士 2-1 加拿大</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021451">FIFA 赛报 — 瑞士 vs 加拿大</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B">Wikipedia — 2026 世界杯 B 组</a><br>
+      • <a href="https://foot-africa.com/en/news/2026-world-cup-joao-pinheiro-appointed-to-referee-south-africa-vs-canada-in-the-round-of-32-1257439/">Foot Africa — Pinheiro 执法本场</a> · <a href="https://theportugalpost.com/posts/portuguese-referee-ends-12-year-world-cup-drought-with-historic-knockout-appointment">The Portugal Post — Pinheiro 历史性任命</a> · <a href="https://www.statshub.com/referee/joao-pedro-pinheiro/222742">StatsHub — Pinheiro 4.74 黄牌/场</a> · <a href="https://corner-stats.com/joao-pedro-pinheiro/portugal/referee/2459">Corner-Stats — Pinheiro 黄牌/点球</a><br>
+      • <a href="https://www.sportsline.com/insiders/south-africa-vs-canada-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — 赔率 / Picks</a> · <a href="https://www.cbssports.com/soccer/news/canada-vs-south-africa-odds-prediction-time-2026-world-cup-round-of-32-picks/">CBS Sports — Picks</a> · <a href="https://www.rotowire.com/soccer/article/south-africa-vs-canada-picks-tips-odds-best-bets-2026-world-cup-round-of-32-120060">RotoWire — 赔率 / 战术</a> · <a href="https://www.fanduel.com/research/south-africa-vs-canada-prediction-picks-lineups-preview-and-best-bets-for-round-of-32">FanDuel Research</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/south-africa-vs-canada-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-alPw44j6W3i3/">Racing Post — Bet Builder</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/south-africa-vs-canada-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-119937">RotoWire — 预测首发 / 战术分析</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/preview/south-africa-vs-canada-prediction-team-news-lineups_600163.html">Sports Mole — 预测首发</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-a-predictions-preview">Opta Analyst — A 组预测</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-28 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['南非胜','平局','加拿大胜'],datasets:[{data:[17,27,55],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[40,60],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['南非 进','南非 失','加拿大 进','加拿大 失'],datasets:[{data:[2,3,7,3],backgroundColor:[HT,'#9aa6c0',SC,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:8,title:{display:true,text:'小组赛进/失球（南非净-1 / 加净+4）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'南非',data:[7,5,6.5,6.5,5.5,5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'加拿大',data:[6,7,6.5,7.5,7.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

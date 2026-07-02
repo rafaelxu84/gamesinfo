@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · England vs Ghana · 2026 World Cup Group L Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-england-vs-ghana.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-england-vs-ghana.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3aa564;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#0f5a32);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#0f152e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#82d2a0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-england-vs-ghana.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group L Matchday 2 · A top-of-the-group clash between two sides on 3 points</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · England 0-0 Ghana</span>
+  <h1>England vs Ghana</h1>
+  <div class="meta">23 June 2026 · Foxborough, Gillette Stadium (Boston) · 16:00 ET · Group L (also in group: Croatia, Panama)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div><div class="rk">FIFA #4 · Third favourites for the title (Opta 11.2%) · Beat Croatia 4-2 in MD1 (Kane brace) · Top of Group L for now (goal difference)</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#3aa564">🇬🇭 Ghana</div><div class="rk">FIFA #73 · "Black Stars" · Beat Panama 1-0 in MD1 (Yirenkyi 90+5) · Second in Group L</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (daily-analysis inserted 06-24) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time England 0-0 Ghana (HT 0-0) · Group L Matchday 2 · 06-23</span></h2>
+
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Tuchel's England were held in Boston by a tightly organised Ghana, falling foul of the "second-match curse". England <b>fired off 19 shots with possession as high as 78.8%</b> (England's highest in a single World Cup match since records began in 1966, and the highest possession ever recorded by a team that failed to score at a World Cup), yet never broke open Ghana's low block. They did not register a shot on target until the second half, with Kane spurning a glorious late chance. Ghana managed <b>just 2 shots all match</b> (one of the lowest single-game totals of this tournament so far) yet held on for a point — a crucial draw for the Black Stars.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ Full time 0-0 · England 19 shots but only 14 box touches, 0 shots on target in the first half · Kane missed a late chance · Ghana low block + 2 shots earn a draw</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (Opta)</h4>
+    <table>
+      <tr><th>Metric</th><th>🏴 England</th><th>🇬🇭 Ghana</th><th>Reading</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.28</b></td><td>0.29</td><td>19 shots for only 1.28 xG — high volume, low quality, mostly poor long-range efforts / wide crosses</td></tr>
+      <tr><td class="ht">Possession</td><td><b>78.8%</b></td><td>21.2%</td><td>England's highest-ever World Cup possession, yet it yielded 0 goals — a textbook case of "sterile possession"</td></tr>
+      <tr><td class="ht">Shots / box touches</td><td><b>19 shots / 14 box touches</b></td><td>2 shots</td><td>Few box touches show the ball circulated on the outside and rarely penetrated the heart of the area</td></tr>
+      <tr><td class="ht">Big chances</td><td>Kane missed late</td><td>—</td><td>The biggest single chance went unconverted — the perfect microcosm of the draw</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://theanalyst.com/articles/england-vs-ghana-stats-world-cup-2026">Opta Analyst — England 0-0 Ghana Stats</a> · <a href="https://www.espn.com/soccer/story/_/id/49156953/england-0-0-ghana-world-cup-2026-result-score-recap-frustrated-resolute-defence-harry-kane-chance">ESPN — Match Recap</a> · <a href="https://www.cbssports.com/soccer/news/england-ghana-live-updates-world-cup-2026-score-result/live/">CBS Sports — Result</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">78.8% possession + 0 goals: a textbook case of England's "sterile possession"</div>England set the record for the highest possession by a team failing to score at a World Cup, yet managed only 14 box touches. <b>Transferable conclusion: against a low block, England lacked the means to turn possession into quality chances inside the box (not enough half-space through-balls / vertical penetration), with the ball held mostly on the outside. This is the attacking malaise Tuchel must solve for the final match.</b></div>
+    <div class="insight"><div class="who">Ghana's low block + 2 shots: a victory for defensive discipline</div>Ghana managed just 2 shots all match yet held on for a point, with a disciplined back line and well-organised cover. <b>Transferable conclusion: for mid-to-lower-tier sides against strong teams, "park the bus + occasional counter" remains an effective strategy, and possession-heavy sides like England need a dedicated plan for breaking down a packed defence.</b></div>
+    <div class="insight"><div class="who">Kane's late miss: a microcosm of England's "second-match curse"</div>England again ground to a stale draw in their second group match, with Kane spurning the best chance. <b>Transferable conclusion: England's finishing is over-reliant on Kane, and when there is no second focal point they are very easy to neutralise.</b></div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Note</th></tr>
+      <tr><td class="ht">England dominate possession / pressure</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>78.8% possession, 19 shots, total dominance</td></tr>
+      <tr><td class="ht">England to win</td><td style="color:var(--bad)"><b>✗ Missed</b></td><td>Held 0-0 by Ghana, the result prediction fell flat</td></tr>
+      <tr><td class="ht">Lean towards Over</td><td style="color:var(--bad)"><b>✗ Missed</b></td><td>0-0, the Over completely failed</td></tr>
+      <tr><td class="ht">Ghana to struggle to respond</td><td style="color:var(--warn)"><b>~ Partial</b></td><td>Their attack was indeed toothless (2 shots), but the defence successfully held for a draw, against consensus</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🏴 England · Next: final MD vs Panama (qualification / top spot)</h4>
+        <ul class="watch">
+          <li><b>Breaking down a packed defence is the priority</b>: against Panama this will very likely be another game of a deep-sitting opponent, and England need a plan for half-space penetration and set pieces.</li>
+          <li><b>A second focal point</b>: someone besides Kane needs to step up (a Bellingham/Foden-type runner from deep) to avoid a one-dimensional attack.</li>
+          <li><b>Qualification picture</b>: only a draw this time, so a win in the final match is needed to secure qualification and chase top spot (exact picture depends on the rest of the group's results).</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇬🇭 Ghana · Next: final MD vs Croatia (decisive qualification clash)</h4>
+        <ul class="watch">
+          <li><b>The low block is repeatable</b>: holding England proved the bunker + counter works, but Croatia control midfield more strongly, so a more proactive counter-attacking design is needed.</li>
+          <li><b>Goals required</b>: 0 goals this time — to qualify in the final match they will most likely need to score themselves, and finishing is the soft spot.</li>
+          <li><b>Fitness and discipline</b>: sustained low-block defending is draining, and the back line's concentration in the final match is key.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is an <b>asymmetric "both on 3 points, top-spot decider"</b>: England (FIFA #4, Opta's third title favourites at 11.2%) beat Croatia <b>4-2</b> in MD1 with a Kane brace (now level with Lineker's England World Cup record of 10 goals), plus goals from Bellingham and Rashford, and <b>20 shots inside the box — a single-game tournament record</b>; Ghana beat Panama <b>1-0</b> in MD1 (Yirenkyi 90+5', their latest-ever goal), but were dominated for 90 minutes and earned the points thanks to substitute keeper Asare's heroics and individual inspiration. Both sides have 3 points, with England top on goal difference — this is effectively a <b>top-spot decider</b>, but the gulf in class is huge. The market is one-sided: England win at around <b>1.22</b> (de-vigged implied ≈80%), draw <b>7.00</b> (≈14%), Ghana win <b>15.00</b> (≈6%); Over 2.5 is leaning hot (about -145). Three things to watch: ① <b>can England replicate the "feed-the-machine + Kane focal point" blueprint and patch the defensive vulnerability from MD1's two first-half goals conceded</b> (Guéhi may return to the XI); ② <b>🔁 Partey's major return</b> — absent for MD1 after being denied a Canadian visa, he can play this time in the US, boosting Ghana's midfield interceptions and ball progression; ③ <b>can Ghana avoid a repeat of being dominated for 90 minutes</b>, leaning on Semenyo/Kudus wide counters to scrap for a lifeline. Base case: <b>England win 2-0 / 3-0 and lock up the top-spot advantage</b>. Market Heat Index ≈ 2/5 (clean consensus).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">England implied win prob. (de-vigged)</div><div class="v" style="color:#f08a82">≈80%</div></div>
+      <div class="key"><div class="k">Ghana implied win prob. (de-vigged)</div><div class="v" style="color:#3aa564">≈6%</div></div>
+      <div class="key"><div class="k">England prob. of topping Group L (Opta)</div><div class="v" style="color:var(--warn)">67.5%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>England defensive vulnerability to patch (carried over)</b>: in MD1 they conceded two first-half goals and failed to keep a clean sheet (ending a run of 8 clean sheets in 8 qualifiers), with Konsa blamed for both Croatia goals — this time <b>Guéhi may return to the XI</b> in place of Konsa. Against Ghana's pace on the flanks (Semenyo/Sulemana), they must guard against another "first-half open game".</li>
+      <li><b>England's attacking blueprint is repeatable (carried over)</b>: the MD1 production line of "Rice/Anderson crosses + Kane focal point + mass box touches (a record 20 box shots)" is equally effective against a deep-sitting Ghana; Kane is now level with Lineker's World Cup record of 10 goals and could rewrite it here. Rashford/Saka scored off the bench, so there is plenty of attacking rotation.</li>
+      <li><b>🔁 Ghana's Partey returns in a big way (carried over + updated)</b>: absent for MD1 after being denied a visa by the Canadian government (the Toronto venue), but Ghana have now secured US visas, so <b>Partey can play</b> in Foxborough this time — a key upgrade over MD1 that patches their Achilles heel of "no midfield metronome, dominated for 90 minutes".</li>
+      <li><b>Ghana goalkeeper variable (carried over)</b>: first-choice keeper Ati-Zigi was injured and went off in the first half of MD1, with substitute Asare making his World Cup debut and pulling off 3 saves. <b>Asare is expected to continue in goal</b> this time, and whether he can repeat the heroics against England's firepower directly determines the goals conceded.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and status signals affecting this fixture, each explaining how it changes the tactics or result (including carry-over items from both teams' MD1 + multi-source verification of key players)</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">🔁 Updated · Ghana · Partey returns (carried over)<span style="color:var(--mut);font-weight:400">· Sky Sports · ESPN · 2026-06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Midfield linchpin <b>Thomas Partey has secured a US visa and can face England</b> — he missed MD1 after being denied a Canadian visa for the Toronto game</div>
+      <p style="font-size:13.5px">Continuing and <b>updating</b> the forward transfer from the Panama review: Partey was unable to travel to Toronto with the squad for MD1 after the Canadian government denied his visa, and missed the Panama match; but Sky Sports and ESPN both confirm he <b>has secured a US visa and will be available for the England game in Foxborough, Boston, on 23 June</b>. Partey is Ghana's metronome in transition and their midfield shield, and his return directly patches the Achilles heel of MD1 — "no midfield organiser, dominated for 90 minutes by Panama, just 38% possession" — boosting Ghana's intensity in the tackle and quality on the ball. <span style="color:var(--warn)">[Final XI subject to the pre-match FIFA team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This is a <b>substantive upgrade</b> over MD1 and a key adjustment to the main read — with Partey, Ghana can in theory better absorb England's midfield pressure and reduce the risk of being "dominated for the full 90". Even so, England's overall quality remains decisively superior; Partey's value lies more in "reducing the risk of collapse, controlling goals conceded" than in turning the tie around.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.skysports.com/football/news/11095/13554814/thomas-partey-ghana-midfielder-loses-appeal-for-canadian-visa-ahead-of-opening-world-cup-fixture" style="color:var(--accent)">Sky Sports — Partey visa / available vs England</a> · <a href="https://www.espn.com/soccer/story/_/id/49086399/thomas-partey-miss-ghana-world-cup-opener-visa-appeal-rejected" style="color:var(--accent)">ESPN — Partey misses MD1 / secures US visa</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">England · Three key injuries (multi-source verified)<span style="color:var(--mut);font-weight:400">· Sports Mole · Goal · Yahoo Sports · 2026-06-20/21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Rashford, Rice <b>have passed fitness tests and joined full training on Saturday</b>; <b>Saka (Achilles) almost certain to be on the bench again</b></div>
+      <p style="font-size:13.5px">Multi-source verification of key players (Sports Mole / Goal / Yahoo Sports all agree): ① <b>Declan Rice</b> was taken off against Croatia in MD1 with a tight hamstring, but has recovered to do <b>full training</b> in Kansas City and is expected to be cleared; ② <b>Marcus Rashford</b> had a minor muscle issue but likewise took part in full training on Saturday — a false alarm; ③ <b>Bukayo Saka</b> continues to be troubled by an Achilles problem, has not trained on the grass with the main group and is doing bespoke rehab on his own, and is <b>almost certain to be on the bench again</b> — if Rice's fitness is in doubt, <b>Kobbie Mainoo</b> would partner Anderson in a double pivot. England have also lost full-back Tino Livramento (withdrawn with a calf strain, replaced by Chelsea's Chalobah).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The result is not in doubt, so the value lies entirely in <b>the number of goals, who scores, and whether England keep a clean sheet</b>. Rice/Rashford passing fit means England's midfield and front line are essentially at full strength; Saka on the bench slightly lowers the right-side threat ceiling (as in MD1), but Madueke deputising is still high quality. If Mainoo deputises for Rice, midfield ball progression and coverage shift slightly, but the overall dominance is unchanged.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/injuries-and-suspensions/rice-saka-rashford-latest-england-injury-suspension-list-vs-ghana_599679.html" style="color:var(--accent)">Sports Mole — England injury / suspension list</a> · <a href="https://www.goal.com/en-ca/lists/thomas-tuchel-england-marcus-rashford-declan-rice-fitness-bukayo-saka-bench/blt572afb621d608389" style="color:var(--accent)">Goal — Rice/Rashford pass tests, Saka benched</a> · <a href="https://sports.yahoo.com/articles/england-face-fitness-concerns-over-214214938.html" style="color:var(--accent)">Yahoo Sports — three injuries</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">England · Defensive vulnerability + Guéhi may return (carried over)<span style="color:var(--mut);font-weight:400">· Croatia-match review transfer · Sports Mole · 2026-06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Conceded <b>two first-half goals and failed to keep a clean sheet</b> in MD1, with Konsa blamed — this time <b>Guéhi may replace Konsa</b>, and the attacking blueprint (a record 20 box shots) is repeatable</div>
+      <p style="font-size:13.5px">Continuing the forward transfer from the Croatia review: England won 4-2 but <b>conceded two first-half goals</b>, ending a run of 8 clean sheets in 8 qualifiers; Tuchel has hinted at a defensive reshuffle — <b>Guéhi could return to the XI</b> in place of Konsa, who was blamed for both Croatia goals. The attacking blueprint is clear: Rice crosses + Kane focal point + mass box touches (a tournament single-game record 20 shots inside the box in MD1), and it works equally well against a deep-sitting Ghana. Kane, level with Lineker's England World Cup record of 10 goals after his brace, could rewrite it here.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Ghana's route to points is the pacey wide bursts and counters of Semenyo/Sulemana — which is exactly the matchup against England's MD1 weaknesses of "being countered in the first half, defensive attention". If Guéhi returns and the defence tightens, England's clean-sheet odds rise; if they are slow to start again, Ghana's wide outlets in theory have a window to create danger (affecting clean-sheet markets and the handicap line).</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/predicted-lineups/will-saka-start-predicted-england-xi-vs-ghana_599722.html" style="color:var(--accent)">Sports Mole — England predicted XI / Guéhi</a> · <a href="https://www.espn.com/soccer/story/_/id/49125237/england-vs-ghana-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Preview / line-ups</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#82d2a0;font-weight:700">Ghana · Goalkeeper variable + risk of being dominated (carried over)<span style="color:var(--mut);font-weight:400">· Panama-match review transfer · ESPN · 2026-06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">First-choice keeper <b>Ati-Zigi injured off</b>, substitute <b>Asare expected to keep starting</b>; dominated for 90 minutes in MD1, won it with individual inspiration</div>
+      <p style="font-size:13.5px">Continuing the forward transfer from the Panama review: Ghana's Ati-Zigi went off injured in the first half of MD1, with substitute Asare making a World Cup debut of 3 saves to preserve the clean sheet, and he is <b>expected to continue in goal</b> here. But Ghana were dominated for the full match by Panama's 62% possession, holding just 38% themselves, with the attack leaning on individual inspiration and impact substitutes (Yirenkyi's stoppage-time winner). Against an England side with far more firepower than Panama, Ghana's model of "low possession, leaning on counters and a goalkeeper holding firm" will be under far greater strain. Partey's return is a buffer, but they remain on the back foot overall.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: England's feed-the-machine production line (20 box shots in MD1) is exactly the high-intensity test Ghana's keeper and defence must withstand. If Asare repeats the heroics and Ghana tighten the low block + Partey strangles midfield, the goals conceded stay manageable (the 0-2 / 0-3 range); if the keeper's form dips or England break through early, the goals conceded could slide deeper, feeding directly into the England handicap (-1.5/-2) and Over markets.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49116820/kick-team-news-how-watch-fifa-world-cup-clash" style="color:var(--accent)">ESPN — Team news / Asare in goal</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b" style="color:var(--accent)">Goal — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Referee officially announced <span style="color:var(--mut);font-weight:400">· ESPN / Wikipedia (2026 officials) · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Honduras's <b>Saíd Martínez</b> takes charge (the first Honduran ever to referee a World Cup); the match is played at Gillette Stadium, Foxborough</div>
+      <p style="font-size:13.5px">ESPN and the 2026 World Cup officials list confirm FIFA has appointed Honduras's <b>Saíd Martínez</b> for this Group L Matchday 2 fixture, with assistant referees Walter López and Christian Ramírez (both Honduran). Martínez is the <b>first Honduran ever to referee a World Cup as the lead official</b>; he served as an assistant referee for 9 matches at Qatar 2022 and officiated two Gold Cup finals (2021 and 2023, including the 2023 final Mexico vs Panama). The match is played at Gillette Stadium, Foxborough (open-air), so watch the marginal impact of June afternoon temperature and humidity in New England (16:00 ET kick-off) on Ghana's fitness drain. <span style="color:var(--warn)">[Martínez's per-match card and penalty-rate breakdown at major tournaments not fully verified item-by-item · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In a heavily lopsided match, the referee has almost no impact on the result. The referee's only value is in cards/penalties: if England attack ferociously and Ghana repeatedly foul to break up Bellingham/Madueke runs, the probability of yellow cards and a penalty in the box rises slightly. Martínez comes from the CONCACAF system with a certain tolerance for physical contact — see the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L" style="color:var(--accent)">Wikipedia — Group L (referee Saíd Martínez)</a> · <a href="https://www.concacaf.com/competitions/fifa-world-cup/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup" style="color:var(--accent)">CONCACAF — Martínez, first Honduran lead referee</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed Lineups & What They Mean -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Dual-source confirmed (England/Ghana official + Oddschecker + PrizePicks) · 2026-06-23 pre-kickoff</span></h2>
+    <div class="sub">Official lineups announced (England/Ghana official social media + Oddschecker + PrizePicks all agree). Below: both official XIs, vs predicted comparison, tactical read and the impact on the Quick Summary conclusion.</div>
+
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England official XI (4-2-3-1) · Tuchel</div>
+        <div class="lineup">Pickford; Reece James · Ezri Konsa · Marc Guéhi · Djed Spence; Declan Rice · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">Key weapons on the bench: Bukayo Saka, Eberechi Eze, Marcus Rashford, Ollie Watkins, Kobbie Mainoo, John Stones, Dan Burn. <b style="color:#f08a82">Two changes from MD1 (Croatia), both in defence</b>: Guéhi replaces Stones, Spence replaces O'Reilly.</div>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇬🇭 Ghana official XI (4-3-3) · Addo</div>
+        <div class="lineup">Asare; Senaya · Adjetey · Opoku · Mensah; Partey · Kwasi Sibo · Yirenkyi; Semenyo · Iñaki Williams · Jordan Ayew(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">Key weapons on the bench: Kamaldeen Sulemana, Ernest Nuamah, Abdul Fatawu, Brandon Thomas-Asante. <b style="color:#82d2a0">Partey's return to the XI is confirmed</b>; <b style="color:var(--warn)">Mohammed Kudus did not make the matchday squad (neither XI nor bench, per Oddschecker/PrizePicks)</b>.</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">Official vs predicted</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">ENG · Centre-back</td><td>Guéhi replaces Konsa</td><td><b>Konsa + Guéhi pairing</b>, Stones benched</td><td>In reality Guéhi replaces Stones and <b>Konsa keeps his place</b> (the opposite of the "drop Konsa" prediction) — Tuchel adds depth to address MD1's two first-half goals conceded, but did not ditch Konsa</td></tr>
+      <tr><td class="ht">ENG · Left-back</td><td>Nico O'Reilly</td><td><b>Djed Spence</b></td><td>A more athletic / attacking full-back, strengthening the left and the overlap with Gordon — both changes are in defence, the clean-sheet intent is clear</td></tr>
+      <tr><td class="ht">ENG · Holding mid</td><td>Rice (/Mainoo TBC)</td><td><b>Rice starts</b></td><td>Fitness cleared, the strongest midfield setup, the "Rice/Anderson crosses + Kane focal point" production line at full strength</td></tr>
+      <tr><td class="ht">ENG · Saka</td><td>Bench</td><td>Bench (Madueke on the right)</td><td>As predicted — the right-side threat ceiling drops slightly but Madueke is still high quality</td></tr>
+      <tr><td class="sc">GHA · Midfield</td><td>Sulemana wide + Partey/Yirenkyi</td><td><b>Partey · Sibo · Yirenkyi midfield three</b></td><td>Kwasi Sibo into the XI, a more functional / interception-minded midfield — Addo prioritises <b>strangling midfield and avoiding being dominated</b> over creativity</td></tr>
+      <tr><td class="sc">GHA · Front line</td><td>Williams + Ayew front two</td><td><b>Semenyo · Williams · Ayew front three (4-3-3)</b></td><td>Keeps the wide pace-and-counter matchup (Semenyo vs England's MD1 slow-start risk) but leans more on Williams/Semenyo bursts</td></tr>
+      <tr><td class="sc">GHA · Kudus</td><td>Selection in doubt</td><td><b>Not in the matchday squad</b></td><td>Ghana's most explosive individual counter outlet is absent, <b>lowering the counter-attacking creativity ceiling</b> — a mild boost to England's clean-sheet / deep-handicap angle</td></tr>
+      <tr><td class="sc">GHA · Partey</td><td>🔁 Returns (TBC)</td><td><b>Confirmed in the XI</b></td><td>The midfield shield is confirmed, patching MD1's Achilles heel of "no metronome, dominated for 90 minutes" (consistent with the "updated" main read)</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">Tactical read (after official lineup confirmation)</h4>
+    <ul class="cl">
+      <li><b>England: attacking blueprint replicated at full strength + targeted defensive reinforcement.</b> Rice + Anderson double pivot, Bellingham as the free man, Madueke/Gordon out wide, Kane as the focal point — the MD1 "mass box touches" production line is kept intact; both changes are in defence (Guéhi, Spence), directly addressing MD1's two first-half goals conceded, so <b>the "can they keep a clean sheet" thread holds and the clean-sheet angle slightly improves</b>.</li>
+      <li><b>Konsa keeping his place is the biggest departure from the predictions.</b> The market/media broadly expected Guéhi to replace the under-fire Konsa, but in reality Tuchel chose Guéhi to replace Stones with Konsa continuing — the signal is "add recovery pace / physicality" rather than a vote against Konsa, with the defence still using pace to handle Semenyo on the wing.</li>
+      <li><b>Ghana: functional midfield + losing their best spark.</b> The Partey-Sibo-Yirenkyi three leans towards an interception shield, with Addo's realistic goal being to <b>control goals conceded and avoid being dominated</b> rather than to win — consistent with the Summary read of "Ghana scrap for a lifeline, protect goal difference". But <b>Kudus's absence from the matchday squad</b> markedly weakens Ghana's counter-attacking creativity, lowering the upset probability further.</li>
+      <li><b>Summary conclusion: maintained.</b> The official lineups contain no game-changing surprise; the base case of <b>England winning 2-0 / 3-0 and locking up the top-spot advantage</b> is unchanged; the two defensive changes + Ghana without Kudus modestly <b>strengthen the "England clean sheet / deep handicap (-2)" angle</b>, but Ghana's Partey+Sibo double shield + a packed low block remain the risk to whether the deep handicap pays off (the existing Summary read is unchanged).</li>
+    </ul>
+
+    <div class="note">📊 <b>Market reaction</b>: The official lineups are broadly in line with the pre-match consensus (England's two defensive changes were within expectation, Saka benched as expected, Partey's return delivered), with <b>no surprise to trigger a line move</b>, so England's win price holds at ≈1.22. The only new information is <b>Kudus missing the matchday squad</b> — in theory a mild boost to England's clean sheet and deep handicap (-2), but not enough to move an already extremely tight market. For information only, not betting advice.</div>
+
+    <div class="src" style="margin-top:10px">Sources: <a href="https://x.com/England/status/2069489479656628316">England official — XI (two changes)</a> · <a href="https://x.com/GhanaBlackstars/status/2069491934620524808">Ghana Black Stars official — XI</a> · <a href="https://www.oddschecker.com/insight/football/20260623-england-vs-ghana-confirmed-lineups">Oddschecker — Confirmed Lineups</a> · <a href="https://www.prizepicks.com/playbook-article/england-vs-ghana-lineups-confirmed-starting-xi-world-cup-tuesday-june-23">PrizePicks — Lineups Confirmed</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · Win/draw/loss implied probability (de-vigged) · Group L picture · Over/Under market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probability (de-vigged, leaning Over)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group L FIFA rankings (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</th><th>🇬🇭 Ghana</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#4</td><td class="sc">#73</td></tr>
+      <tr><td>MD1 result</td><td class="ht">Beat Croatia 4-2 (Kane brace, Bellingham, Rashford; record 20 box shots)</td><td class="sc">Beat Panama 1-0 (Yirenkyi 90+5', their latest-ever goal)</td></tr>
+      <tr><td>Group L points</td><td colspan="2">England 3 pts (GD +2, top for now) · Ghana 3 pts (GD +1, second) — this is a top-spot decider</td></tr>
+      <tr><td>Head coach</td><td class="ht">Thomas Tuchel (German)</td><td class="sc">Otto Addo (with foreign advisory support)</td></tr>
+      <tr><td>Key players</td><td class="ht">Kane(C), Bellingham, Rice, Saka (bench)</td><td class="sc">Partey (🔁 return), Semenyo, Kudus, Ayew(C)</td></tr>
+      <tr><td>Key questions for this match</td><td class="ht">Patch the defensive vulnerability (Guéhi return?); can they keep a clean sheet; how much rotation</td><td class="sc">Impact of Partey's return; can the keeper stop the bleeding; control goals conceded</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 runners-up (final loss to Spain) · World Cup 2022 quarter-finals (lost to France)</td><td class="sc">AFCON 2023 group-stage exit (no win) · World Cup 2022 group-stage exit</td></tr>
+      <tr><td>Title probability (Opta)</td><td class="ht">11.2% (third favourites worldwide)</td><td class="sc">Very low (knockout qualification still mathematically alive)</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win 1.22 (implied ≈80%)</td><td class="sc">Win 15.00 (≈6%) · Draw 7.00 (≈14%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">Over 2.5 leaning hot (about -145) — the core markets are the England handicap (-1.5/-2) and goal count</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from decimal odds (≈80/14/6, normalised). Odds sources: BetOnline / Lucky Rebel (England -450 → 1.22, Ghana +1400 → 15.00, draw +600 → 7.00 / BetNow +550 → 6.50); Over 2.5 about -145 (de-vigged implied ≈59%). Opta's supercomputer gives England a <b>67.5%</b> chance of topping Group L (25,000 simulations) and 11.2% to win the title (third favourites worldwide). The England handicap is about -1.5/-2, with exact prices subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical baseline vs this tournament's actuals · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two majors / qualifiers / warm-ups)</b> against <b>this tournament's actuals</b>, item by item. Public national-team xG samples are limited; missing items are marked "TBC", never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This tournament actual (MD1)</th><th>Delta and reading</th></tr>
+      <tr><td class="ht">🏴 England · Attack</td><td class="ht">Tuchel's qualifiers scored 22 (2.75/game); Kane/Bellingham/Saka the attacking axis</td><td class="ht">MD1 <b>4 goals</b>, <b>xG 2.82</b>, record 20 box shots</td><td><b>Above</b> qualifying level: quality overwhelmed Croatia (their xG only 0.53), an efficient production line</td></tr>
+      <tr><td class="ht">🏴 England · Defence</td><td class="ht">8 clean sheets in 8 qualifiers, GD 22-0</td><td class="ht">MD1 conceded <b>2 goals</b> (first half, no clean sheet)</td><td><b>Below</b> the record: the clean-sheet run ended, Konsa blamed — Guéhi may return to tighten the defence</td></tr>
+      <tr><td class="sc">🇬🇭 Ghana · Attack</td><td class="sc">"Black Stars" individual technique + wide spark, but winless since Oct 2025, short on creativity</td><td class="sc">MD1 <b>1 goal</b>, xG 1.25 (few but clinical), stoppage-time winner</td><td><b>Below</b> what is needed: dominated for 90 minutes, just 38% possession; attack relies on inspiration and impact subs</td></tr>
+      <tr><td class="sc">🇬🇭 Ghana · Defence</td><td class="sc">Defence flagged by several outlets as a concern; goalkeeping depth fragile</td><td class="sc">MD1 clean sheet (Asare 3 saves), but the keeper change was forced</td><td><b>Just about passable</b>: held thanks to the substitute keeper's heroics; against England's firepower it is a higher-level test</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical reading</b>: England's attacking actuals this tournament are <b>above</b> qualifying level (4 goals, xG 2.82), but the defence is <b>below</b> its clean-sheet record (2 conceded) — which is the root of why "can they keep a clean sheet" is the core question this match; Ghana's attack is <b>below what is needed</b>, and the defence is <b>just about passable and reliant on goalkeeper luck</b>. The deep data is consistent with the main read of "England fully on top, value in the handicap and goal count, clean sheet to be discounted". Sources: Opta Analyst · Sofascore (MD1 xG) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This-match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>This-match model projection xG (magnitude)</td><td class="ht">England ≈2.3</td><td class="sc">Ghana ≈0.6</td><td>After calibration England are overwhelmingly on top; the variable is whether Tuchel's defensive adjustment delivers a clean sheet and whether Partey's return reduces Ghana being dominated</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">England to top Group L <b>67.5%</b>, win the title 11.2% (third favourites worldwide); Ghana's qualification still theoretical but low-probability (FIFA #73 vs England #4)</td><td>After opponent-strength calibration, England's sample carries high quality (Ghana FIFA #73, one of the weakest in Group L)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: England's field tilt will press into Ghana's half for long spells, with a large box-touch advantage (cf. MD1 vs Croatia 34-15)</td><td><b>Trap reminder</b>: territorial dominance is barely in doubt; but Ghana's Partey return + Asare in goal + a packed low block could suppress the winning margin (the risk to a -2 deep handicap)</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring the true level of your defence.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower = more aggressive pressing.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples for breakdown metrics like PPDA/xT/field tilt, so missing items are marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">The England-win direction is absolutely unanimous; the real disagreement is all in "handicap size (-1.5 vs -2) + goal count + whether England keep a clean sheet + whether Kane scores"; the consensus is clean and the overheating is low</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · One-sided consensus, clean sentiment</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">England are absolute favourites (de-vigged ≈80%, -450), with no disagreement on the result and no sentiment premium. The value is all in the <b>handicap size (-1.5 vs -2), goal count (Over 2.5), whether England keep a clean sheet and whether Kane scores / crosses the line</b>. Kane's record chase (now level with Lineker's World Cup 10 goals) is the only narrative traffic point.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: England win across the board · draw/Ghana ≈0)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>Data / statistics firm</td><td>England to top Group L <b>67.5%</b> (supercomputer, 25,000 simulations), title 11.2%</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>England win + Over bet builder (9-2 Bet Builder), focused on Kane scoring and the England handicap</td></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td>Comfortable England win; Saka benched, Guéhi may return in defence</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>England fully on top; Ghana toothless in attack once dominated</td></tr>
+      <tr><td>Goal / The Sports Rush</td><td>Preview / prediction media</td><td>England win + Over 2.5 (England already over 2.5 in MD1, qualifiers averaged 2.75/game)</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: the result direction is absolutely unanimous (nobody backs Ghana/the draw) — a one-sided consensus with no sentiment premium. The only genuine disagreement is over <b>handicap size</b> (-1.5 vs -2), <b>goal count</b>, <b>whether England keep a clean sheet</b> and <b>whether Kane scores / crosses the line</b>. The Kane record narrative is a traffic point rather than a source of money movement.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>England win</th><th>Read</th></tr>
+      <tr><td>Open (multi-book composite)</td><td>1X2</td><td class="ht">≈1.20–1.25</td><td>England overwhelming favourites; draw 7.00 / Ghana 15.00</td></tr>
+      <tr><td>06-20 close</td><td>BetOnline / Lucky Rebel</td><td class="ht">1.22 (-450)</td><td>England's short price barely moves (held after MD1's 4-2, and Ghana being dominated in MD1 does not support an upset)</td></tr>
+      <tr><td>06-20</td><td>Over/Under</td><td colspan="2" class="ht">Over 2.5 leaning hot (about -145, de-vigged ≈59%) — England firepower + Ghana's fragile defence</td></tr>
+      <tr><td>Handicap (Asian reference)</td><td>England -1.5 / -2</td><td colspan="2" class="ht">England -1.5/-2, exact prices subject to the live market</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Open (days before)</td><td class="ht">England win ≈1.20–1.25; handicap -1.5</td><td>Priced on "FIFA #4, third title favourites vs a mid-tier African side #73", the open already had England as a very short favourite with a -1.5 handicap</td></tr>
+      <tr><td>Opening (repricing after MD1)</td><td class="ht">England win 1.22; -1.5/-2 angle strengthened; Over 2.5 lifted</td><td><b>Repricing came from both teams' MD1</b>: England's 4-2 + 20 box shots confirmed attacking strength, Ghana being dominated by Panama for 90 minutes exposed a lack of creativity → the angle of the handicap deepening towards -2 strengthened and the Over line lifted further; but England conceding 2 ended the clean-sheet record, so the clean-sheet market's value is discounted</td></tr>
+      <tr><td>Now (06-20→now)</td><td class="ht">England win 1.22; Over 2.5 leaning hot / -2 handicap angle</td><td>The 1X2 is locked (pricing already extremely tight); the most active price discovery is in <b>the handicap (-1.5 vs -2), Over/Under and an England clean sheet</b> — "England's defensive adjustment + whether Ghana concede fewer with Partey back" is the key variable for whether the deep handicap pays off</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's odds have been extreme from the open (≈1.22, -1.5 handicap), and <b>England's strong 4-2 + Ghana being dominated for 90 minutes</b> further strengthened the deep-handicap and Over angles, but <b>England conceding 2 in MD1</b> cooled the clean-sheet market. The 1X2 has zero value (pricing already saturated); the only information-rich angle is <b>the England handicap (-1.5/-2), goal count and whether they keep a clean sheet</b> — the risk being Tuchel rotation + Partey's return reducing Ghana being dominated and suppressing the winning margin. Opening ranges per individual books. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Opta supercomputer</b>: England to top Group L <b>67.5%</b>, win the title 11.2% (third favourites worldwide, only behind Spain and the France/Argentina tier) — consistent with the de-vigged bookmaker direction, no sentiment premium. This match is essentially the accumulation of a top-spot advantage.</li>
+      <li><b>Sentiment focus ①</b>: <b>Kane's record chase</b> (now level with Lineker's England World Cup record of 10 goals after his MD1 brace) is the biggest traffic point this match.</li>
+      <li><b>Sentiment focus ②</b>: <b>🔁 Partey's return</b> — after the dramatic Canadian visa denial in MD1, he can face England in the US, the biggest twist in Ghana's narrative.</li>
+      <li><b>Kalshi / Polymarket (aggregate)</b>: this match's single-game price, volume and momentum breakdown not separately verified <span style="color:var(--warn)">[TBC]</span>; prediction markets like CryptoSlate point the same way as the bookmakers (England overwhelming).</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the result direction is absolutely clear (England), bookmakers and the supercomputer agree (top spot 67.5%, win ≈80%), Heat Index <b>2/5</b>. The traffic comes from <b>Kane's record</b> and <b>Partey's return</b> rather than the result market; the most information-rich angle is <b>the England handicap (-1.5/-2), goal count, whether they keep a clean sheet and whether Kane scores</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-ghana-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZ9G29x8YvMg/">Racing Post — Odds / betting / Bet Builder</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — Group L preview</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-ghana-06-23-26-world-cup-2026/">Squawka — Preview</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b">Goal — Preview</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee is Honduras's <b>Saíd Martínez</b> (the first Honduran ever to referee a World Cup as the lead official), with assistant referees Walter López and Christian Ramírez (both Honduran). Sources: ESPN, the 2026 World Cup officials list (Wikipedia), CONCACAF. <span style="color:var(--warn)">[This match's specific VAR team · TBC]</span></div>
+    <h4>Last two majors + officiating strictness (actual sample + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Major-tournament sample exists</b>: Martínez was an assistant referee for 9 matches at Qatar 2022 (this is his first appearance as lead referee) and officiated <b>two Gold Cup finals, 2021 and 2023</b> (including the 2023 final Mexico vs Panama) — a top CONCACAF referee with plenty of major-tournament game-management experience. <span style="color:var(--warn)">[Per-match yellow-card average and penalty rate at this/recent majors, by item · TBC]</span></li>
+      <li><b>Officiating-system profile</b>: from the CONCACAF system, where the Gold Cup environment generally allows a degree of physical contact, with cards given as merited for clear and tactical fouls. His per-match card average as a lead referee at a World Cup has no sample yet (his first World Cup as lead official).</li>
+      <li><b>Officiating history with the two teams</b>: no significant public officiating history with either England or Ghana (both have had limited prior contact with this Honduran referee), so no team lean to speak of <span style="color:var(--warn)">(TBC)</span>.</li>
+      <li><b>Tournament-wide new rules + environmental signals</b>: 8-second goalkeeper hold, only captains may address the referee, semi-automated offside; the officiating environment this tournament leans strict. If Ghana commit numerous fouls to break up England's attacks, the risk of accumulated yellows and a box penalty rises.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: this match is the matchup of "England's overwhelming attack vs Ghana's packed defence + physical contact" — the referee's only value is in cards/penalties: Ghana's defenders accumulating fouls to break up Bellingham/Madueke runs, and the standard for box tussles, are the points to watch. As a Gold Cup-final-level referee Martínez's game management is mature, but his per-match card breakdown as a World Cup lead official has no sample, so card markets are best treated as "tendency". Semi-automated offside will rule faster on Kane/Madueke's borderline runs, slightly suppressing marginal-offside goals.</div>
+  </section>
+
+  <!-- Starting XI & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting XI &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">predicted version · see the ✅ official XI module above</span></h2>
+    <div class="sub">Predicted XI (ESPN / Sports Mole / Ladbrokes projections, not official; official lineups subject to the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🏴󠁧󠁢󠁥󠁮󠁧󠁿 England predicted XI (4-2-3-1) · Tuchel</h4>
+    <div class="lineup">Pickford; Reece James · John Stones · Marc Guéhi · Nico O'Reilly; Declan Rice(/Mainoo) · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position / club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Harry Kane (C)</td><td>Striker / Bayern Munich</td><td>Brace in MD1, now level with Lineker's England World Cup record of 10 goals; could rewrite it here, anytime-scorer is a core prop</td></tr>
+      <tr><td class="ht">Jude Bellingham</td><td>Attacking midfielder / Real Madrid</td><td>Cut-in goal inside 47 minutes in MD1 (3-2); the transition engine, the free man at No. 10</td></tr>
+      <tr><td class="ht">Declan Rice</td><td>Holding midfielder / Arsenal</td><td>Taken off in MD1 with a tight hamstring, recovered to full training and expected to be cleared; if fitness is in doubt Mainoo deputises</td></tr>
+      <tr><td class="ht">Marc Guéhi</td><td>Centre-back / Crystal Palace</td><td>Benched in MD1, may return to the XI this time in place of Konsa (blamed for both Croatia goals) to tighten the defence</td></tr>
+      <tr><td class="ht">Bukayo Saka</td><td>Winger / Arsenal</td><td>Achilles problem, training alone, almost certain to be on the bench again; Madueke deputises on the right</td></tr>
+    </table>
+    <h4>🇬🇭 Ghana predicted XI (4-4-1-1 / 4-3-3) · Addo</h4>
+    <div class="lineup">Asare; Senaya · Adjetey · Opoku · Mensah; Semenyo · Partey(🔁) · Yirenkyi · Sulemana; Williams(/Nuamah); Ayew(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position / club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Thomas Partey 🔁</td><td>Midfielder / free agent</td><td>Secured a US visa and is available; missed MD1 after a Canadian visa denial — the midfield interceptor and metronome, his return is a key upgrade</td></tr>
+      <tr><td class="sc">Antoine Semenyo</td><td>Winger / Bournemouth</td><td>Pacy wide spark, Ghana's main hope to break open England's defence (matchup against MD1's slow-start risk)</td></tr>
+      <tr><td class="sc">Mohammed Kudus</td><td>Attacking winger / midfielder</td><td>Technical spark (subject to fitness / selection); links the counter, one of Ghana's few high-quality individuals</td></tr>
+      <tr><td class="sc">Benjamin Asare</td><td>Goalkeeper</td><td>Came off the bench in MD1 with 3 saves (MVP 8.2), expected to continue in goal — whether he repeats the heroics determines the goals conceded</td></tr>
+      <tr><td class="sc">Jordan Ayew (C)</td><td>Striker / captain</td><td>Major-tournament experience, a focal point and set-piece aerial threat; one of Ghana's repeatable scoring routes</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media analytical projections (ESPN / Sports Mole / Ladbrokes), <b>subject to the pre-match official lineups · TBC</b>. England's Guéhi return, Rice's fitness (Mainoo deputy?), Saka on the bench; Ghana's Partey starting, Kudus's selection and the goalkeeper choice are the key items to verify.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual play and results at their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England · Thomas Tuchel</div>
+        <div class="role">4-2-3-1 tempo control + organised defence + feed-the-machine, Kane as the focal point, Bellingham as the free man</div>
+        <ul class="cl">
+          <li>Tuchel brings a system of <b>pragmatic control + defensive discipline + mass-producing the ball into the box</b> — 8 wins in 8 qualifiers, 22 scored, none conceded, with the MD1 4-2 delivering the "control territory + Kane focal-point linking" blueprint (9 shots on target in the second half, box touches 34-15 overwhelming Croatia).</li>
+          <li>Cross-reference: <b>Euro 2024 runners-up</b> (final loss to Spain, attacking efficiency questioned but a high floor), <b>World Cup 2022 quarter-finals</b> (lost to France, Kane missed a penalty) — England's major-tournament floor is very high, but attacking efficiency and defensive focus against strong opponents in the knockouts are a historical concern. Against Ghana, the only variable is rotation and the MD1 "first-half open game".</li>
+          <li>This match's angle: Ghana's goalkeeper and the risk of being dominated are exactly the points England's production line can attack; replicate Rice crosses + Kane focal point + mass box touches, while using Guéhi's return to tighten the defence and avoid another slow start and conceded goals.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#3aa564">🇬🇭 Ghana · Otto Addo</div>
+        <div class="role">4-4-1-1/4-3-3 low possession + wide counters, Semenyo/Kudus the individual spark, Partey the metronome</div>
+        <ul class="cl">
+          <li>Addo's Ghana is a side built on <b>individual technique + wide spark + low-possession counters</b>, holding just 38% possession against Panama in MD1 and winning it in stoppage time with a few-but-clinical 1.25-xG counter and impact subs — the realisation of their realistic style.</li>
+          <li>Cross-reference: <b>AFCON 2023 group-stage exit</b> (no win), <b>World Cup 2022 group-stage exit</b> ("revenge match" 0-2 loss to Uruguay) — Ghana's last two majors lacked both attacking creativity and defensive stability, relying on individual inspiration. Against England this shortcoming is magnified.</li>
+          <li>This match's response: the realistic goal is not to win but to <b>control the goals conceded and protect goal difference to stay in the qualification race</b>. They must tighten the low block, strangle England's midfield with Partey back, and use the wide pace of Semenyo/Sulemana to scrap for counters and set pieces, avoiding a repeat of being "dominated for 90 minutes".</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· Data / statistics</small></div>England to top Group L 67.5%, win the title 11.2% (third favourites worldwide). This match is essentially the accumulation of a top-spot advantage — England's quality, scoring outlets and box pressure are the main thread; Ghana are toothless in attack once dominated and need Partey's return and a steady keeper to limit the goals conceded.</div>
+    <div class="insight"><div class="who">Racing Post <small>· Betting media</small></div>Recommends England win + Over bet builder (9-2 Bet Builder), focused on Kane scoring and the England handicap; sees Ghana as short on creativity against quality opponents, with Over 2.5 easily cleared (England already over 2.5 in MD1, qualifiers averaged 2.75 goals/game).</div>
+    <div class="insight"><div class="who">Sports Mole / Goal <small>· Prediction / preview</small></div>Comfortable England win; Saka on the bench again with an Achilles problem, Guéhi may return in defence in place of the under-fire Konsa; Rice/Rashford have passed fitness tests. Ghana's Partey return is a midfield boost, Asare continues in goal.</div>
+    <div class="insight"><div class="who">Composite · Core question and trap <small>· Opta / Sofascore</small></div>The real question is not the result but <b>England's goal count and whether they keep a clean sheet</b>. ⚠ Trap reminder: ① England conceded 2 in MD1 and the clean-sheet record is over, so the clean-sheet market should be discounted; ② Partey's return + Asare in goal + possible Tuchel rotation could suppress the winning margin, so a deep handicap (-2) has marginal miss risk — the only variable to be wary of.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Items to Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: an England win (2-0 / 3-0 / 3-1) is the base case, cementing the Group L top-spot advantage; a draw (≈14%) and a Ghana win (≈6%) are small tails, requiring heavy England rotation + a slow start + Ghana goalkeeper heroics + Partey locking down midfield all at once.</li>
+      <li><b>Key men</b>: Kane (Eng / record and finishing), Bellingham (Eng / transition), Madueke (Eng / right-side spark with Saka out), Partey (Gha / 🔁 midfield metronome), Semenyo (Gha / wide counters), Asare (Gha / keeper stopping the bleeding).</li>
+      <li><b>The decider</b>: the real story this match is <b>whether England can replicate the production line, patch the defensive vulnerability and keep a clean sheet</b>, and <b>whether Ghana with Partey back can reduce being dominated and control goals conceded</b> — which decides the settlement of the handicap (-1.5/-2) and the Over/Under.</li>
+      <li><b>Market view</b>: bookmakers and the supercomputer agree absolutely (England, win ≈80%, top spot 67.5%), the 1X2 has zero value; the most information-rich angle is <b>the England handicap (-1.5/-2), goal count, whether they keep a clean sheet and whether Kane scores / crosses the line</b>. Heat Index 2/5 (traffic from Kane's record and Partey's return).</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>: ① both official lineups (FIFA Match Centre about 1 hour pre-match); ② England's Guéhi return, Rice's fitness (Mainoo deputy?), Saka on the bench; ③ Ghana's Partey starting, Kudus's selection, the goalkeeper choice (Asare/Ati-Zigi fitness); ④ Martínez's VAR team this match and his per-match card breakdown as a World Cup lead official; ⑤ Kalshi/Polymarket volume and momentum breakdown for this match; ⑥ the Asian handicap line (-1.5/-2) and the Over/Under total line, exact prices subject to the live pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49125237/england-vs-ghana-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — Schedule / line-ups / injuries / preview</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_L">Wikipedia — Group L (incl. referee Saíd Martínez)</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-ghana-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZ9G29x8YvMg/">Racing Post — Odds / team news / Bet Builder</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/injuries-and-suspensions/rice-saka-rashford-latest-england-injury-suspension-list-vs-ghana_599679.html">Sports Mole — England injuries / suspensions</a> · <a href="https://www.goal.com/en-ca/lists/thomas-tuchel-england-marcus-rashford-declan-rice-fitness-bukayo-saka-bench/blt572afb621d608389">Goal — Rice/Rashford pass tests, Saka benched</a> · <a href="https://sports.yahoo.com/articles/england-face-fitness-concerns-over-214214938.html">Yahoo Sports — three injuries verified</a><br>
+      • <a href="https://www.skysports.com/football/news/11095/13554814/thomas-partey-ghana-midfielder-loses-appeal-for-canadian-visa-ahead-of-opening-world-cup-fixture">Sky Sports — Partey visa / available vs England</a> · <a href="https://www.espn.com/soccer/story/_/id/49086399/thomas-partey-miss-ghana-world-cup-opener-visa-appeal-rejected">ESPN — Partey misses MD1 / secures US visa</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — Group L preview / supercomputer</a><br>
+      • <a href="https://www.concacaf.com/competitions/fifa-world-cup/news/said-martinez-set-to-make-history-as-first-honduran-lead-referee-at-a-fifa-world-cup">CONCACAF — Saíd Martínez referee background</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-ghana-06-23-26-world-cup-2026/">Squawka — Preview</a> · <a href="https://www.goal.com/en/news/england-ghana-world-cup-preview/blt6f2afac2802d128b">Goal — Preview</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/group-l-focus-teams-fixtures-standings">FIFA — Group L focus / standings</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-22 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3aa564',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['England win','Draw','Ghana win'],datasets:[{data:[80,14,6],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:100,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[59,41],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, leaning Over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['England','Croatia','Panama','Ghana'],datasets:[{data:[4,9,48,73],backgroundColor:[HT,'#7fa6e6','#9cc6ea','#82d2a0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play / counters','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'England',data:[8,8.5,8.5,8,9,8.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Ghana',data:[5.5,5.5,6,6.5,6.5,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

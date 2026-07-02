@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 乌拉圭 vs 佛得角 · 2026世界杯 H组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-uruguay-vs-capeverde.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-uruguay-vs-capeverde.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-uruguay-vs-capeverde.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-uruguay-vs-capeverde.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-uruguay-vs-capeverde.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#3b6fb0;--sc:#1c7a4a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#14502f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#122438,#13261a);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#5fc28f;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-uruguay-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-uruguay-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-uruguay-vs-capeverde.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 2-2 · 🟢 赛前前瞻 · 2026 世界杯 · H组次轮 · 乌拉圭"必须取胜止血"对阵处子秀逼平西班牙的铁桶佛得角</span>
+  <span class="badge" style="background:linear-gradient(90deg,#7a1f2b,#5a0f1f)">🔁 已更新（06-21）· Araújo 确认缺阵、De Arrascaeta 缺阵——多源复核</span>
+  <h1>乌拉圭 vs 佛得角</h1>
+  <div class="meta">2026年6月21日 · 迈阿密 Hard Rock Stadium（硬石球场）· 18:00 ET <span style="color:#6b7794">[ESPN 赛事页另列 5:00 PM ET，以官方为准]</span> · H组（同组：西班牙、沙特阿拉伯）· 当值主裁 Espen Eskås（挪威）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇾 乌拉圭</div><div class="rk">FIFA #16 · Bielsa 强压逼抢 · 首轮 1-1 平沙特（27 射 10 正、xG 1.54 仅入 1 球）· 必须取胜</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5fc28f">🇨🇻 佛得角</div><div class="rk">FIFA #67 · 世界杯处子秀 · 首轮 0-0 平西班牙（赛会最大冷门之一）· 低位铁桶 + Vozinha 神扑</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 乌拉圭 2-2 佛得角 · 数据来源 Opta / ESPN / Sky Sports · 下方赛前内容完整保留作预测存档</div>
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">佛得角第 <b>21'</b> 由 <b>Kevin Pina 一记约 32 米惊艳任意球</b>直挂死角先入一球（本届世界杯迄今最远进球）。乌拉圭随后在半场结束前 5 分钟连下两城完成逆转：<b>Maxi Araújo 44'</b> 扳平、<b>Agustín Canobbio 45+6'</b> 反超，半场 <b>2-1</b> 领先。下半场佛得角换人调整，替补登场的 <b>Hélio Varela 61'</b> 攻入扳平球，最终 <b>2-2</b>。全场黄牌 4 张：佛得角 Sidny Lopes Cabral（5'）、乌拉圭 Bentancur（20'）、乌拉圭 Olivera（58'）、佛得角 Diney Borges（90+3'），无红牌、无点球。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 21' Pina（任意球，佛 0-1）→ 44' M. Araújo（乌 1-1）→ 45+6' Canobbio（乌 2-1）→ HT 2-1 → 61' H. Varela（替补，佛 2-2）→ FT 2-2</div>
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇺🇾 乌拉圭</th><th style="padding:6px">🇨🇻 佛得角</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center"><b>54%</b></td><td style="text-align:center">33%</td><td style="padding:6px;color:var(--mut)">乌控场但控球优势远小于首轮（首轮 67%）</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>待核</b></td><td style="text-align:center">待核</td><td style="padding:6px;color:var(--mut)">Opta 单场 xG 数值未公开检得，标待核不编造</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>17 / 2</b></td><td style="text-align:center">12 / 4</td><td style="padding:6px;color:var(--mut)">乌量多正少（2/17），佛少而准（4/12）——终结效率再成命门</td></tr>
+      <tr><td style="padding:6px">角球 / 犯规</td><td style="text-align:center">待核 / 待核</td><td style="text-align:center">待核 / 待核</td><td style="padding:6px;color:var(--mut)">角球/犯规明细未单独检得，标待核</td></tr>
+    </table></div>
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 破铁桶效率顽疾再现，且这次还被反咬</div>乌拉圭全场 17 射仅 2 射正，射门转化依旧低效；与首轮 27 射 1 球如出一辙。<b>这说明…</b>：赛前主线"乌造得出、进不去"被彻底坐实——连续两场把海量射门打成低质量机会，是 Bielsa 锋线（Núñez 等）把握度的结构性问题，下一场对西班牙将更致命。</div>
+    <div class="insight"><div class="who">② 佛得角不再是纯铁桶，本场敢于反击得分</div>与首轮 0-0、xG 0.07 的"纯死守"不同，本场佛得角靠 Pina 远射与 Varela 替补建功打入 2 球。<b>这说明…</b>：佛得角防守纪律之外具备一击致命的定位球/反击威胁；把对手当"零进攻陪练"是危险预设。</div>
+    <div class="insight"><div class="who">③ 替补 Hélio Varela 改变比赛——换人深度被低估</div>佛得角 59' 用 Varela 换下 Garry Rodrigues，两分钟后 61' 即由其扳平。<b>这说明…</b>：佛得角板凳具备改变战局的即战力，赛前对其"进攻贫瘠"的画像需修正——其偷分能力不只靠门将。</div>
+    <div class="insight"><div class="who">④ 伤病潮后破密集上限确实下降，验证赛前修正</div>赛前 Araújo、De Arrascaeta 缺阵、Giménez 替补的判断兑现：乌拉圭控球优势缩水至 54%、未能把领先守住。<b>这说明…</b>：定位球高点与最后一传的双重缺失，让乌拉圭"领先后扩大比分/守住胜果"的能力明显下降。</div>
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>赛前基准剧本：乌拉圭 1-0/2-0 窄幅取胜</b>：未兑现——最终 2-2 平局，乌拉圭未能取胜。</li>
+      <li>✓ <b>"破铁桶终结效率不足"是最大风险</b>：兑现——17 射仅 2 射正，再度低效，正是丢分主因。</li>
+      <li>△ <b>平局尾部概率因伤病潮上调（约 21%→略升）</b>：方向正确——赛前已上修平局概率，结果即为平局，但仍属相对冷门。</li>
+      <li>✗ <b>让球盘乌 -1/-1.5、偏小球</b>：让球盘未兑现（平局）；大小球本场 4 球，<b>大球</b>兑现，与赛前"略偏小"判断相反。</li>
+    </ul>
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇺🇾 乌拉圭 → 西班牙 · 6月26日 · 瓜达拉哈拉(Zapopan)</div>① 两场不胜（积 2 分），末轮碰小组头号种子西班牙已成生死战，必须取胜或寄望算分；② 连续两场终结低效 + 伤病潮未愈，面对西班牙控球碾压风险极高；③ 防守端 Pina 远射暴露定位球与外围放空问题，对位 Yamal 等需警惕。</div>
+      <div class="insight" style="margin:0"><div class="who">🇨🇻 佛得角 → 沙特阿拉伯 · 6月26日 · 休斯顿</div>① 两轮 2 平积 2 分、成处子秀以来连续两战不败（追平 2002 塞内加尔），出线主动权在握，末轮对同积分的沙特是出线关键战；② 已证明不只会死守，Varela 替补奇兵 + Pina 定位球是真实武器；③ 对沙特无需死守，可更主动，但需防注意力松懈与累计黄牌。</div>
+    </div>
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：<a href="https://theanalyst.com/articles/uruguay-vs-cape-verde-stats-world-cup-group-h-live" style="color:var(--accent)">Opta Analyst — 赛后统计</a> · <a href="https://www.espn.com/soccer/story/_/id/49138051/uruguay-cape-verde-live-world-cup-2026-latest-updates-commentary-score-result" style="color:var(--accent)">ESPN — 比赛进程/球员数据</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021487" style="color:var(--accent)">FIFA — 官方赛果与数据</a>。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">乌拉圭 · 上一场带入 · 终结效率危机 <span style="color:var(--mut);font-weight:400">· 沙特战复盘迁移 · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">乌拉圭首轮 <b>27 射 10 正、xG 1.54 却只进 1 球</b>，被沙特五后卫低位块逼平——本场<b>连续第二次</b>面对深蹲铁桶</div>
+      <p style="font-size:13.5px">承接沙特战复盘的前瞻迁移：乌拉圭控球 67%、全场 27 脚射门（10 中目标）、下半场单场 22 射追平 1974 年以来世界杯单半场纪录，xG 高达 1.54，却苦等到第 81 分钟才由 Maxi Araújo 抢二点扳平。<b>破密集低位的终结效率不足</b>是赛前已点名、首轮被彻底坐实的命门；更关键的是，Bielsa <b>半场就把 Darwin Núñez 换下</b>（对其表现不满），本场是否首发成疑。佛得角首轮正是用同一套低位铁桶 0-0 逼平西班牙——乌拉圭迎来"破铁桶 2.0"考题。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这把"乌控对方守、低开放度、破密集低效"的主线从首轮直接搬到本场。乌拉圭让球盘（-1/-1.5）与大小球的结算，几乎全押在"能否把 xG 转化为进球"上；若再像首轮那样把对方门将打成全场最佳，平局/小胜的尾部概率会被显著抬高，这也是市场没把乌拉圭赔率压得更低的根本原因。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/saudi-arabia-vs-uruguay-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst — 沙特 vs 乌拉圭赛后统计（xG 1.54 / 28 射）</a> · <a href="https://www.espn.com/soccer/story/_/id/49106772/fifa-world-cup-2026-uruguay-vs-cape-verde-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻（27 射 10 正、Núñez 半场被换）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">佛得角 · 上一场带入 · 铁桶模板已验证 <span style="color:var(--mut);font-weight:400">· 西班牙战复盘迁移 · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">佛得角 0-0 逼平西班牙、<b>全场仅犯规 1 次</b>、Vozinha 7 扑 3 摘高空球——"零失误低位 + 门将神勇"模板可连续复用？</div>
+      <p style="font-size:13.5px">承接西班牙战复盘的前瞻迁移：处子秀的佛得角把卫冕欧洲冠军逼成 0-0，创下世界杯史上"高排名方未取胜的最大排名差"（第 2 对第 67）。<b>全场仅 1 次犯规</b>——靠提前卡位与协防而非拉拽防守，既不送定位球、也不吃牌减员；40 岁老门将 <b>Vozinha 7 次扑救 + 3 次高空摘球</b>，一战封神。但代价是佛得角<b>全场禁区触球仅 6 次、xG 仅 0.07</b>，几乎零进攻。本场对手乌拉圭同样擅长围攻（首轮 67% 控球），且 Bielsa 体系出球更快、不会像西班牙那样让佛得角防线从容落位。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：佛得角的全部"现实希望"＝把上一场的零失误纪律与 Vozinha 状态<b>连续两场拉满</b>。这套打法对大小球（偏小）、佛得角 +1/+1.5 受让盘、以及"乌拉圭能否首开纪录/进球数"是直接决定项。隐患在于体能与吃牌管理：连续两场低位死守，第二场的注意力滑档与累计黄牌风险上升，这正是乌拉圭"末段加速"可乘之机（首轮沙特就是扛到 80' 才崩）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/spain-vs-cape-verde-stats-world-cup-group-h" style="color:var(--accent)">Opta Analyst — 西班牙 vs 佛得角赛后统计（xG 0.07 / 4 射）</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/uruguay-vs-cape-verde-prediction-team-news-lineups_599604.html" style="color:var(--accent)">Sports Mole — 前瞻（1 犯规、6 禁区触球、Vozinha 7 扑）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:#241016;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ff8a8a;font-weight:700">乌拉圭 · 🔁 伤病更新（多源交叉求证）<span style="color:var(--mut);font-weight:400">· Rio Times / IBTimes / Sports Mole / Racing Post · 2026-06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中卫 <b>Ronald Araújo 确认缺阵</b>（肌肉撕裂/腓肠肌）、创造核心 <b>De Arrascaeta 缺阵</b>、队长 <b>Giménez 体能仅替补</b>、左卫 <b>Piquerez 缺阵</b>——Bielsa 遭遇"伤病潮"</div>
+      <p style="font-size:13.5px">多源一致（Rio Times "Bielsa's Injury Crisis"、IBTimes "Two Key Absences"、Sports Mole、Racing Post）：原本"存疑"的 <b>Ronald Araújo 已确认无缘本场</b>（肌肉撕裂/小腿伤）；更关键的是<b>头号创造者 Giorgian de Arrascaeta（赛前小腿伤）整届缺阵</b>、队长中卫 <b>José Giménez 仅能替补（体能未满）</b>、左后卫 <b>Piquerez 也缺阵</b>。<b>Darwin Núñez</b>（首轮半场被 Bielsa 换下）预计仍首发，Bielsa 不会轻易弃用。预测 XI（4-3-3）：Muslera；Varela、Cáceres、Olivera、Sanabria；Valverde、Bentancur、Ugarte；M. Araújo、Núñez、Canobbio/Viñas。<span style="color:var(--warn)">[官方首发以赛前 FIFA 名单为准；个别源对 Giménez 是"缺阵"还是"替补"措辞略有出入]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是对赛前主线的<b>实质修正</b>。① <b>破铁桶的两大现实武器同时削弱</b>：定位球高点（Araújo + Giménez 双中卫的争顶）几乎全失，De Arrascaeta 的最后一传/定位球开球也没了——乌拉圭面对佛得角低位铁桶的"破密集"上限明显下降；② 后防被迫重组（Cáceres + Olivera 中卫、Sanabria 左路），对佛得角零星反击的稳定性下降。对盘口含义：乌拉圭<b>让深盘（-1.5）与大球兑现概率下调、平局/小胜尾部上调、小球与佛得角受让盘价值上升</b>——这正是"疑似伤病须主动多源求证"的价值，原页只标 Araújo"存疑"是不够的。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.riotimesonline.com/uruguay-world-cup-injuries-arrascaeta-araujo-cape-verde-june-2026/" style="color:var(--accent)">Rio Times — Bielsa 伤病潮（Araújo/De Arrascaeta 缺阵）</a> · <a href="https://www.ibtimes.com.au/uruguay-cape-verde-world-cup-miami-1871014" style="color:var(--accent)">IBTimes — 两大关键缺阵</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/uruguay-vs-cape-verde-prediction-team-news-lineups_599604.html" style="color:var(--accent)">Sports Mole — 队况/预测 XI</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/uruguay-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-axk8h6E5o4Xt/" style="color:var(--accent)">Racing Post — 伤停表</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 + 出线形势 <span style="color:var(--mut);font-weight:400">· ESPN / FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：挪威名哨 <b>Espen Eskås</b>；H组四队首轮全平、<b>全部同积 1 分</b>，本场是乌拉圭"抢身位"关键战</div>
+      <p style="font-size:13.5px">ESPN 确认 FIFA 任命挪威籍 <b>Espen Eskås</b>（UEFA 精英级、2017 国际级）执法本场。H组首轮两场均 0-0/1-1 收场，<b>四队全部 1 分</b>（西班牙、沙特、乌拉圭、佛得角并列，按净胜球与进球数微分），格局完全开放。乌拉圭末轮才碰小组头号种子西班牙，因此本场<b>必须拿下佛得角</b>才能掌握出线主动、避免末战生死。比赛在迈阿密硬石球场进行（室外、6 月南佛州高温高湿，午后/傍晚体感闷热，是低位死守一方的体能放大器）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Eskås 国际样本<b>场均约 3.4 张黄牌</b>（偏多档），在一场"乌强攻、佛死守"的比赛里，佛得角后卫的战术犯规与累计黄牌（2 黄即停下一场）成本会被放大；其生涯判点频率不低（生涯 76 个点球）——乌拉圭围攻下禁区对抗的吹罚尺度值得关注。高温高湿则进一步压缩佛得角连续第二场低位死守的体能窗口。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49106772/fifa-world-cup-2026-uruguay-vs-cape-verde-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判 Espen Eskås 官宣/赛事资讯</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H" style="color:var(--accent)">Wikipedia — H组积分榜（四队全 1 分）</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· H组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>H 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇺🇾 乌拉圭</th><th>🇨🇻 佛得角</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#16</td><td class="sc">#67</td></tr>
+      <tr><td>主教练</td><td class="ht">Marcelo Bielsa（阿根廷名帅 · 强压逼抢）</td><td class="sc">Bubista（佛得角本土 · 纪律性低位块）</td></tr>
+      <tr><td>首轮结果</td><td class="ht">1-1 平沙特（xG 1.54、27 射、81' 才进球）</td><td class="sc">0-0 平西班牙（xG 0.07、Vozinha 7 扑）</td></tr>
+      <tr><td>出线形势</td><td class="ht">1 分；末轮碰西班牙，本场必须取胜</td><td class="sc">1 分；处子秀；需两轮至少 1 胜</td></tr>
+      <tr><td>世界杯史</td><td class="ht">2 次冠军（1930/1950）；2022 小组出局</td><td class="sc"><b>首次参赛</b>（世界杯处子秀，非洲岛国）</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">2022 世界杯小组出局 · 2024 美洲杯季军</td><td class="sc"><b>2023 非洲杯八强</b>（队史最佳）· 此前无世界杯样本</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.46（隐含≈65%）</td><td class="sc">胜 7.20（≈13%）· 平 4.50（≈21%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">线在 2.5，大/小约 1.91/1.91（近五五开，略偏小）；BTTS 否 ≈1.67</td></tr>
+      <tr><td>核心球员</td><td class="ht">Federico Valverde / Darwin Núñez / Manuel Ugarte / Bentancur <b style="color:#ff8a8a">· Araújo、De Arrascaeta 缺阵、Giménez 替补</b></td><td class="sc">Vozinha（门将）/ Roberto "Pico" Lopes / Ryan Mendes</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈65/21/13）。赔率来源：SportyTrader 多平台聚合（乌拉圭 1.42–1.47、平 4.30–4.60、佛得角 7.00–7.75；最优 888Starz 乌拉圭 1.47、Stake 平 4.60、LSbet 佛得角 7.75）。Kalshi 预测市场给乌拉圭约 67% / 平 23% / 佛得角 11%，与博彩去水方向一致。大小球线压在 2.5、大/小约 1.91/1.91（近五五开、略偏小）；BTTS 否（不双进球）约 1.67——市场预判这是"乌控佛守、低开放度"的硬仗。让球盘乌拉圭 -1/-1.5 待核以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。佛得角为世界杯处子秀、大赛历史样本极薄，缺失项标"待核"并使用限定词说明，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇺🇾 乌拉圭 · 进攻 xG/进球</td><td class="ht">南美预选进攻流畅；但近 8 场有 7 场进球 ≤1，近 9 场世界杯小组赛仅 10 球——大赛终结力一向偏低</td><td class="ht">首轮 <b>xG 1.54</b>、27 射 10 正，实进 1 球</td><td>本届创造力（xG/射门量）<b>高于</b>历史观感，但<b>转化率远低于 xG</b>——"造得出、进不去"的老问题在大赛再现，正是破铁桶的最大风险点</td></tr>
+      <tr><td class="ht">🇺🇾 乌拉圭 · 防守 xGA/失球</td><td class="ht">近 8 场仅 1 场丢 ≥2 球；Bielsa 体系防守纪律不错，但高位线身后有隐患</td><td class="ht">首轮被沙特打出 <b>xGA≈0.99</b>、丢 1 球（80' 二点补射）</td><td>与历史一致：防守整体稳健、丢球多来自死球/二点保护松动——对几乎不进攻的佛得角，失球风险本场进一步下降</td></tr>
+      <tr><td class="sc">🇨🇻 佛得角 · 进攻 xG/进球</td><td class="sc">大赛历史极薄（处子秀）；预选有亮点（5/31 客胜塞尔维亚 3-0），但属低强度对手样本，<b>限定参考</b></td><td class="sc">首轮 <b>xG 0.07</b>、4 射、禁区触球仅 6 次</td><td><b>远低于</b>任何可比基准——0.07 近乎零威胁；这是"纯防守换分"的极端画像，本场进攻预期同样极低</td></tr>
+      <tr><td class="sc">🇨🇻 佛得角 · 防守 xGA/失球</td><td class="sc">立身之本＝低位纪律：10 场预选 <b>7 场零封</b>（含对塞尔维亚等）——防守是真本事，非偶然</td><td class="sc">首轮 <b>0 失球</b>、仅犯规 1 次、Vozinha 7 扑 3 摘</td><td><b>高于</b>预期兑现：零失误执行力 + 门将神勇是可复制的偷分模板；但样本仅 1 场顶级对手，能否连续复用是本场最大悬念</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：乌拉圭本届<b>创造力高于、终结率低于</b>历史——破铁桶的瓶颈在"把 1.54 的 xG 变成进球"；佛得角进攻（0.07 xG）创历史最低、防守（7/10 预选零封）则是真本事并已在首轮兑现。深度数据与"乌拉圭纸面碾压、但破密集低位需中锋把握度与定位球高点"主线一致。<b>陷阱提醒</b>：把乌拉圭赔率当"稳赢"会忽视其大赛终结顽疾——首轮把对方门将打成全场最佳，本场对状态封神的 Vozinha 仍可能重演。来源：Opta Analyst（首轮 xG/统计）· Sports Mole（佛得角预选零封/触球）· FotMob/Sofascore。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（xGscore 量级）</td><td class="ht">乌拉圭 ≈1.8–2.2</td><td class="sc">佛得角 ≈0.3–0.5</td><td>校准后乌拉圭投射明显占优——但"破密集低位"是其软肋，关注转化效率（首轮 xG 1.54→1 球的折损若重演，比分会卡在 1-0/2-0 甚至平局）</td></tr>
+      <tr><td>Opta 超算 / Power Ranking</td><td colspan="2" class="sc">Opta 总排名乌拉圭第 13 位、夺冠概率 1.7%；H组出线概率乌拉圭 <b>84.3%</b>、佛得角 <b>32.9%</b>；本场乌拉圭为明显胜方</td><td>对手强度校准后，乌拉圭样本含金量远高于佛得角（佛得角预选对手偏弱）；Kalshi 给乌拉圭≈67% 与去水赔率一致</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：乌拉圭 Bielsa 体系高位压迫 + 快速出球（区别于西班牙的慢控），佛得角被迫长时间低位</td><td>场面倾斜大概率长时间倒向乌拉圭；Bielsa 的快节奏不给佛得角从容落位的时间，是比西班牙更难防的一点</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——乌拉圭首轮 27 射仅 1.54 xG，每射质量偏低（远射/低质机会多）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/xGscore 等公开来源；国家队（尤其佛得角处子秀）在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">乌拉圭压倒性共识，但佛得角逼平西班牙的"灰姑娘叙事"带来真实话题流量；资金分歧集中在大小球与让球幅度</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 胜负方向共识极强，但佛得角"灰姑娘"叙事 + 乌拉圭终结隐患制造真实分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">胜负方向几乎一边倒押乌拉圭（去水 ≈65%、Kalshi ≈67%），属"合理共识"。但两条信息把热度抬到 3/5：① 佛得角 0-0 逼平西班牙后成全球话题，Vozinha 走红，吸引"再爆冷"彩票买盘；② 乌拉圭首轮 xG 1.54 仅入 1 球，市场对其"破铁桶效率"存疑，资金集中在<b>大小球（偏小）与乌拉圭让球幅度（-1 vs -1.5）</b>而非单纯胜负。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：乌拉圭胜 多数 · 平局 少数 · 佛得角胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>乌拉圭胜，预测比分 <b>2-0</b>；提醒乌拉圭勿轻敌、否则恐成队史最大尴尬</td></tr>
+      <tr><td>Opta 超算</td><td>数据模型</td><td>乌拉圭明显胜方；H组出线乌拉圭 84.3% / 佛得角 32.9%</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>乌拉圭胜；11-2 建包侧重乌拉圭控盘 + 进球数</td></tr>
+      <tr><td>SportsLine</td><td>美系投注媒体</td><td>倾向乌拉圭让球 + 偏小球（佛得角铁桶压低进球）</td></tr>
+      <tr><td>BetMGM / Squawka</td><td>赔率/数据媒体</td><td>乌拉圭为更干净一侧；佛得角进攻乏力（首轮 xG 0.07）</td></tr>
+      <tr><td>Kalshi（预测市场）</td><td>事件合约</td><td>乌拉圭 ≈67% / 平 ≈23% / 佛得角 ≈11%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中）</b>：胜负方向多数押乌拉圭——属合理共识。真正分歧在<b>大小球（线 2.5、近五五开略偏小）与让球幅度（-1 vs -1.5）</b>，以及佛得角能否靠 Vozinha 与低位块再偷 1 分。佛得角逼平西班牙带来的"再爆冷"情绪推高了受让盘与平局的散户买盘，但无显著推动佛得角直赢的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>乌拉圭胜</th><th>解读</th></tr>
+      <tr><td>赛事开盘区间</td><td>1X2</td><td class="ht">≈1.40–1.45</td><td>乌拉圭强热；平 ≈4.30 / 佛得角 ≈7.00 起步</td></tr>
+      <tr><td>06-19/20 现盘</td><td>多平台聚合</td><td class="ht">1.42–1.47（最优 1.47）</td><td>乌拉圭短赔区间窄幅波动，基本稳定；佛得角升至 7.00–7.75</td></tr>
+      <tr><td>06-20</td><td>大/小球</td><td colspan="2" class="ht">线 2.5；大/小约 1.91/1.91（近五五开，略偏小）；BTTS 否 ≈1.67</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>乌拉圭 -1 / -1.5</td><td colspan="2" class="ht">乌拉圭 -1/-1.5 具体赔率待核以实时盘口为准</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛事开盘区间）</td><td class="ht">乌 1.40–1.45 / 平 4.30 / 佛 7.00</td><td>开在"强队主场级别热门"——乌拉圭 #16 对处子秀 #67，纸面碾压定价</td></tr>
+      <tr><td>开盘（首轮后重定价）</td><td class="ht">乌 ≈1.45 / 平 ≈4.40 / 佛 ≈7.2；大小球收紧到 2.5</td><td><b>repricing 关键</b>：佛得角 0-0 逼平西班牙 → 市场不再把佛得角当"鱼腩"，受让盘与平局价格收窄、总分线从更高位下压到 2.5（铁桶 = 低进球预期）；乌拉圭 xG 1.54 仅 1 球 → 短赔未进一步压低</td></tr>
+      <tr><td>现盘（06-19/20）</td><td class="ht">乌 1.42–1.47 / 平 4.30–4.60 / 佛 7.00–7.75；大/小 1.91/1.91</td><td>稳定窄幅；最活跃价格发现在<b>让球（-1 vs -1.5）与大小球（略偏小）</b>，而非 1X2</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：1X2 自首轮后基本不动——乌拉圭胜方定价稳定、价值有限。真正的价格发现集中在<b>两个由"两队首轮表现"重定价出来的市场</b>：① 总分线被佛得角的铁桶（xG 0.07）+ 乌拉圭的终结折损（xG 1.54→1 球）共同压到 2.5、略偏小；② 让球 -1 vs -1.5 的分歧，本质是"乌拉圭能否破开连续第二场低位铁桶、并赢 2 球以上"。佛得角逼平西班牙后，受让盘与平局获得情绪溢价。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（DefiRate 聚合）</b>：本场 Kalshi 给乌拉圭约 <b>67%</b> / 平 ≈23% / 佛得角 ≈11%——与博彩去水方向一致。<span style="color:var(--warn)">[Polymarket 本场单场成交量与 30 天动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点</b>：① <b>佛得角逼平西班牙</b>是本届最大话题之一，40 岁门将 Vozinha 走红社媒、成国家英雄——"能否连续再爆冷"是叙事核心；② 乌拉圭"把对方门将打成全场最佳"的自我批评（"We made their goalkeeper the star"）引发对其终结力的舆论质疑。</li>
+      <li><b>佛得角叙事</b>：处子秀 + 逼平卫冕欧冠，公众情绪极高，少量"再爆冷彩票"资金押佛得角受让/平局；但价格未见单边异动。</li>
+      <li><b>乌拉圭叙事</b>：两届冠军 + 必须取胜，专家方向集中押乌拉圭，但因首轮终结低效，热度并非"无脑碾压"型共识。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（乌拉圭），博彩与预测市场方向一致，过热指数 <b>3/5</b>。话题热度主要来自<b>佛得角逼平西班牙的灰姑娘叙事</b>与<b>乌拉圭终结隐患</b>，而非胜负盘本身；最有信息含量的市场是<b>乌拉圭让球（-1/-1.5）、大小球（略偏小）与首开纪录 / 乌拉圭中卫定位球争顶 props</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/uruguay-vs-cape-verde-prediction-team-news-lineups_599604.html">Sports Mole — 前瞻/预测 2-0</a> · <a href="https://www.sportytrader.com/en/odds/uruguay-cape-verde-isl-7937418/">SportyTrader — 多平台赔率（DECIMAL）</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-h-predictions-preview">Opta Analyst — H组出线概率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/uruguay-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-axk8h6E5o4Xt/">Racing Post — 投注/建包</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/uruguay-vs-cape-verde-prediction-odds-preview-world-cup-june-21-bm16/">BetMGM — 预测/赔率</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为挪威籍 <b>Espen Eskås</b>（UEFA 精英级裁判，2017 年获 FIFA 国际级）。来源：ESPN 赛事页 / FIFA。</div>
+    <h4>近两届大赛 + 国际执法尺度（实际数据）</h4>
+    <ul class="cl">
+      <li><b>大赛/国际样本（关键）</b>：Eskås 拥有<b>多项国际大赛实际样本</b>——执法 2023 U17 世界杯<b>决赛</b>（法国 vs 德国）、2024 巴黎奥运男足赛、并在 2024 欧洲杯担任第四官员。这区别于无任何国际大赛样本的新晋裁判，参考意义较高；但<b>成年男足顶级大赛（世界杯/欧洲杯正赛主裁）单场样本仍偏少</b>——本届是其世界杯首秀。<span style="color:var(--warn)">[其成年世界杯单届场均出牌细分样本为零，以本场实际为准 · 待核]</span></li>
+      <li><b>出牌/判点尺度（国际综合样本）</b>：综合统计口径其<b>场均约 3.24–3.42 张黄牌、约 0.04 红</b>，生涯判罚约 <b>76 个点球</b>——属出牌偏多、判点不吝啬的尺度。在一场"乌强攻、佛死守"的比赛里，禁区对抗与战术犯规的吹罚值得关注。</li>
+      <li><b>与两队的执法史</b>：作为长期执法挪超 / UEFA 赛事的北欧裁判，<b>与乌拉圭、佛得角两队均无显著公开执法史与争议</b>——无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届揭幕周即多场出红、执法环境偏严。佛得角若连续第二场低位死守、拖延或情绪化对抗，受新规与 Eskås 偏多出牌尺度约束，累计黄牌（2 黄即停下一场）风险上升；乌拉圭高位逼抢下的边路越位将由半自动系统更快裁定。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Eskås 出牌尺度偏多（约 3.24–3.42 黄/场）、判点不吝啬（生涯 76 点球）——在乌拉圭围攻、佛得角禁区内频繁解围/卡位的格局下，<b>点球与佛得角累计黄牌</b>值得关注，这与首轮佛得角"靠站位而非犯规、全场仅 1 犯规"的纪律能否连续两场维持直接相关。鉴于其拥有国际大赛实际样本（U17 世界杯决赛 + 奥运），本场裁判面是可参考的分析维度——但成年世界杯单场样本仍少，尺度外推需留余地。来源：StatsHub / KickoffScore / Wikipedia。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方名单赛前以 FIFA 为准</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方 FIFA 名单为准 · 待核）</div>
+    <h4>🇺🇾 乌拉圭 预测首发（4-3-3 / 4-4-2）</h4>
+    <div class="lineup">Muslera; Varela · Cáceres · Olivera · Sanabria; Valverde · Ugarte · Bentancur; Canobbio · Núñez · M. Araújo</div>
+    <div style="font-size:12.5px;color:#ff8a8a;margin-top:6px">🔁 已更新：Araújo（伤）、De Arrascaeta（伤）确认缺阵、Giménez 体能仅替补、Piquerez 缺阵——后防与定位球高点被削弱、创造力下降。Núñez（首轮半场被换）预计仍首发；右锋 Canobbio/Viñas 待定。以官方为准 · 待核</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Federico Valverde (C)</td><td>中场 / 皇家马德里</td><td>队长与发动机；跑动覆盖与前插是乌拉圭破密集的核心引擎</td></tr>
+      <tr><td class="ht">Darwin Núñez</td><td>前锋 / 利物浦</td><td>主要终结点，但首轮被 Bielsa 半场换下——把握度是乌拉圭破铁桶的胜负手</td></tr>
+      <tr><td class="ht">Manuel Ugarte</td><td>后腰 / 曼联</td><td>拦截 + 出球枢纽；对位佛得角 Monteiro/Duarte 的中场争夺是控盘关键</td></tr>
+      <tr><td class="ht" style="color:#ff8a8a">Ronald Araújo ❌</td><td>中卫 / 巴塞罗那</td><td><b>确认缺阵（肌肉撕裂/小腿伤，多源）</b>——乌拉圭失去破铁桶的头号定位球争顶高点</td></tr>
+      <tr><td class="ht" style="color:#ff8a8a">De Arrascaeta ❌</td><td>前腰 / 弗拉门戈</td><td><b>整届缺阵（赛前小腿伤）</b>——乌拉圭最具创造力的传球者/定位球开球点缺席，破密集的最后一传锐减</td></tr>
+      <tr><td class="ht" style="color:#fbbf77">José Giménez（替补）</td><td>中卫 / 马竞</td><td>队长，体能未满仅替补——又一中卫高点缺席，进一步削弱定位球争顶</td></tr>
+    </table>
+    <h4>🇨🇻 佛得角 预测首发（4-2-3-1 / 4-4-2，低位铁桶）</h4>
+    <div class="lineup">Vozinha; Moreira · R. Lopes · D. Borges · S. Cabral; Duarte · Lenini · Monteiro; Mendes · Livramento · J. Cabral</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Vozinha</td><td>门将（40 岁）</td><td>逼平西班牙的国家英雄（7 扑 3 摘）；佛得角偷分的最大依仗，状态能否连续两场拉满是关键</td></tr>
+      <tr><td class="sc">Roberto "Pico" Lopes</td><td>中卫 / 矿工沙姆罗克</td><td>对西班牙中卫表现出色；低位块的指挥与卡位核心</td></tr>
+      <tr><td class="sc">Kevin Lenini</td><td>后腰</td><td>对西班牙屏蔽后防出色，确定首发；切断乌拉圭通往禁区的线路</td></tr>
+      <tr><td class="sc">Ryan Mendes / Jovane Cabral</td><td>边锋</td><td>反击与定位球出球点；佛得角有限的前场威胁来源</td></tr>
+    </table>
+    <div class="note">名单注：<b style="color:#ff8a8a">🔁 已多源确认：乌拉圭 Araújo、De Arrascaeta 缺阵、Giménez 仅替补、Piquerez 缺阵</b>——Bielsa 后防与创造力双双承压；Núñez 预计仍首发。佛得角预计沿用首轮逼平西班牙的低位铁桶班底（Jovane Cabral 体能测试、Logan Costa 是否回归先发待核）。其余以赛前官方 FIFA 名单为准。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇾 乌拉圭 · Marcelo Bielsa</div>
+        <div class="role">4-3-3 / 4-4-2 高压逼抢 + 快速出球，破密集低位的终结力存疑</div>
+        <ul class="cl">
+          <li>Bielsa 的招牌是<b>极高跑动量的强压逼抢 + 快节奏出球</b>——这套体系让乌拉圭在南美预选表现优异，与西班牙的"慢控渗透"不同，不给对手从容落位的时间，这是本场比西班牙更难被佛得角防的关键。</li>
+          <li>交叉参照：<b>2022 世界杯小组出局</b>（终结低效的痼疾已现）、<b>2024 美洲杯季军</b>（防守稳健但锋无力）——首轮 27 射只进 1 球、把沙特门将打成全场最佳，正是"造得出、进不去"的同一病灶重演。这正是本场最大风险：对状态封神的 Vozinha，若再浪费海量机会，比分可能卡在 1-0、甚至被逼平。</li>
+          <li>本场切入口：用比西班牙更快的节奏 + Núñez 的速度冲击佛得角低位块；末段加速针对佛得角连续第二场死守的体能临界点（首轮沙特扛到 80' 才崩）。<b style="color:#ff8a8a">🔁 但 Araújo + Giménez 两名定位球高点同时缺阵/替补、De Arrascaeta 的定位球开球与最后一传也缺席</b>——乌拉圭原本最现实的"定位球破铁桶"路径被大幅削弱，破密集更依赖运动战的 Valverde 前插与 Núñez 个人，难度上升。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5fc28f">🇨🇻 佛得角 · Bubista</div>
+        <div class="role">低位铁桶 + 零失误纪律 + Vozinha 兜底，进攻几乎放弃</div>
+        <ul class="cl">
+          <li>Bubista 的招牌是<b>纪律性低位块 + 提前卡位协防（而非拉拽犯规）+ 门将兜底</b>——逼平西班牙时全场仅犯规 1 次、不送定位球也不吃牌减员，是这套打法的极致兑现；预选 10 场 7 次零封说明这是真本事。</li>
+          <li>交叉参照：佛得角<b>无世界杯历史样本</b>（处子秀，限定参考），可比基准是 <b>2023 非洲杯八强</b>（队史最佳，亦以纪律防守见长）+ 本届对西班牙的零封。画像一致：<b>防守扎实、进攻极度贫瘠</b>（首轮 xG 0.07、禁区触球仅 6）。</li>
+          <li>本场应对：现实希望＝把"零失误低位 + Vozinha 神勇"连续第二场拉满，靠定位球/反击偷袭与拖时间求 1 分。隐患：连续两场死守的体能与注意力滑档、累计黄牌风险，以及乌拉圭比西班牙更快的出球节奏会压缩其落位时间——这是佛得角能否复制奇迹的最大不确定性。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据机构</small></div>乌拉圭首轮 xG 1.54、28 射只进 1 球，佛得角 xG 0.07、4 射——两组数据量化了本场的核心矛盾：乌拉圭造得出机会但终结低效，佛得角几乎不进攻但防守扎实（预选 7/10 零封）。H组出线乌拉圭 84.3% / 佛得角 32.9%，乌拉圭是明显胜方但"破铁桶效率"是变量。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>预测乌拉圭 2-0，但明确警告乌拉圭"勿把胜利视为理所当然，否则恐酿队史最大尴尬之一"——佛得角对西班牙的韧性已证明其绝非陪练，乌拉圭需把首轮的射门转化为清晰机会并终结。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· SportsLine / Racing Post</small></div>多家媒体将<b>乌拉圭让球（-1/-1.5）与偏小球</b>视为比单纯胜负盘更有角度：佛得角铁桶压低进球预期（线 2.5、略偏小），而乌拉圭能否赢 2 球以上取决于其破密集低位的终结度——这是本场真正的博弈点。</div>
+    <div class="insight"><div class="who">综合 · 灰姑娘叙事与裁判信号 <small>· ESPN / FIFA</small></div>本场话题流量主要来自<b>佛得角逼平西班牙的灰姑娘叙事</b>（Vozinha 走红）与乌拉圭"把对方门将打成全场最佳"的终结质疑。真正悬念不在胜负方向，而在<b>乌拉圭能否用更快的节奏 + 定位球破开佛得角连续第二场的低位铁桶</b>，以及 Eskås（出牌偏多、判点不吝啬）的尺度是否在围攻下放大点球与累计黄牌。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：乌拉圭取胜（1-0 / 2-0，破铁桶窄幅取胜）仍是基准剧本；<b style="color:#ff8a8a">🔁 但 Araújo/De Arrascaeta 缺阵、Giménez 替补后，破铁桶上限下降、净胜幅度承压</b>，平局（≈21%→略升）的尾部概率较赛前增大——若乌拉圭像首轮那样把 xG 浪费、又被状态封神的 Vozinha 化解，佛得角连续偷分的现实机会上升；佛得角取胜（≈13%）需 Vozinha 神扑 + 反击/定位球偷袭 + 乌拉圭"控球无解"同时发生。</li>
+      <li><b>关键先生</b>：Valverde（乌/中场引擎，创造责任更重）、Núñez（乌/终结，预计首发）、Bentancur + Ugarte（乌/中场控制）、Vozinha（佛/求分最大依仗）、Lopes + Lenini（佛/低位块指挥与屏蔽）。<b style="color:#ff8a8a">Araújo、De Arrascaeta 缺阵、Giménez 替补</b>。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>乌拉圭在失去 Araújo/De Arrascaeta/Giménez 后、能否仍用更快节奏破开佛得角连续第二场的低位铁桶</b>——决定让球盘（-1/-1.5，深盘风险上升）与大小球（更偏小）的结算。乌拉圭首开纪录的时间、以及佛得角能否把体能/纪律拉满到 80 分钟后，是相应 props 的核心。</li>
+      <li><b>市场视角</b>：博彩与预测市场方向一致（乌拉圭倾向，约 65–67%），1X2 价值有限；最有信息含量的市场是<b>乌拉圭让球（-1/-1.5）、大小球（略偏小）与首开纪录 / 乌拉圭中卫定位球争顶 props</b>。过热指数 3/5（话题热度来自佛得角灰姑娘叙事与乌拉圭终结隐患，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">⚠ <b>已确认（原待核更新）</b>：<b style="color:#ff8a8a">Araújo、De Arrascaeta 缺阵、Giménez 仅替补、Piquerez 缺阵已多源交叉确认</b>；Núñez 预计首发。<b>仍待核</b>：① 乌拉圭最终官方 XI（中卫/边卫重组人选）；② 佛得角 Jovane Cabral 体能测试、Logan Costa 是否回归先发；④ Eskås 在成年世界杯的具体场均出牌细分（国际综合样本约 3.24–3.42 黄/场已确认）；⑤ Polymarket 本场单场成交量与 30 天动量细分未单独检得；⑥ 亚盘让球线（-1/-1.5）与大小球总分线具体赔率以赛前实时盘口为准；⑦ 本场确切开球时间（ESPN 赛事页另列 5:00 PM ET，与 18:00 ET 存在出入，以官方/FIFA 为准）。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49106772/fifa-world-cup-2026-uruguay-vs-cape-verde-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判（Espen Eskås）</a> · <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/preview/uruguay-vs-cape-verde-prediction-team-news-lineups_599604.html">Sports Mole — 前瞻/队况/预测 2-0</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_H">Wikipedia — H组积分榜</a><br>
+      • <a href="https://theanalyst.com/articles/saudi-arabia-vs-uruguay-stats-world-cup-2026">Opta Analyst — 沙特 vs 乌拉圭（乌拉圭带入，xG 1.54）</a> · <a href="https://theanalyst.com/articles/spain-vs-cape-verde-stats-world-cup-group-h">Opta Analyst — 西班牙 vs 佛得角（佛得角带入，xG 0.07）</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-h-predictions-preview">Opta Analyst — H组出线概率（乌 84.3% / 佛 32.9%）</a><br>
+      • <a href="https://www.sportytrader.com/en/odds/uruguay-cape-verde-isl-7937418/">SportyTrader — 多平台赔率（DECIMAL）</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/uruguay-vs-cape-verde-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-axk8h6E5o4Xt/">Racing Post — 赔率/投注</a> · <a href="https://sports.betmgm.com/en/blog/world-cup/uruguay-vs-cape-verde-prediction-odds-preview-world-cup-june-21-bm16/">BetMGM — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-uruguay-vs-cape-verde-06-21-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/uruguay/world-cup-2026/predicted-lineups/is-ronald-araujo-fit-to-play-predicted-uruguay-xi-vs-cape-verde_599621.html">Sports Mole — Araújo 是否可战/预测首发</a> · <a href="https://www.statshub.com/referee/espen-eskas">StatsHub — Eskås 裁判数据（3.42 黄/场）</a> · <a href="https://en.wikipedia.org/wiki/Espen_Esk%C3%A5s">Wikipedia — Eskås 履历（U17 世界杯决赛/奥运）</a><br>
+      • <a href="https://www.foxsports.com/stories/soccer/cape-verde-world-cup-2026-schedule-locations-dates-times">FOX Sports — 佛得角赛程/场馆</a> · <a href="https://theanalyst.com/articles/how-cape-verde-frustrated-spain-world-cup-history-draw-shock">Opta Analyst — 佛得角逼平西班牙（历史冷门解析）</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-20 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#1c7a4a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['乌拉圭胜','平局','佛得角胜'],datasets:[{data:[65,21,13],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，近五五开略偏小）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['西班牙','乌拉圭','沙特','佛得角'],datasets:[{data:[6,16,61,67],backgroundColor:['#f59e0b',HT,'#d21034',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'乌拉圭',data:[6.5,6,8,7,8.5,8],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'佛得角',data:[7.5,3.5,5,4.5,5,4],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

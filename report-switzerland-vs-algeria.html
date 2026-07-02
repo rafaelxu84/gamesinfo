@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 瑞士 vs 阿尔及利亚 · 2026世界杯 32强淘汰赛（胜者晋级16强 · 瑞士B组头名 · 阿尔及利亚凭最佳第三晋级 · Petkovic对阵亲手带过的瑞士）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-switzerland-vs-algeria.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-switzerland-vs-algeria.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-switzerland-vs-algeria.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-switzerland-vs-algeria.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-switzerland-vs-algeria.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#e30613;--sc:#006233;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#e30613,#063a1f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e0e,#0e201a);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f0616c;font-weight:600}td.sc{color:#2ea86b;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-switzerland-vs-algeria.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-switzerland-vs-algeria.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-switzerland-vs-algeria.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · 32强淘汰赛 · 胜者晋级16强 · 瑞士 B 组头名 · 阿尔及利亚凭最佳第三晋级</span>
+  <h1>瑞士 vs 阿尔及利亚</h1>
+  <div class="meta">2026年7月2日（周四）· 加拿大温哥华 BC Place · 23:00 ET / 20:00 PT · 32强淘汰赛 · 胜者晋级16强 · 90分钟平局进入加时/点球</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0616c">🇨🇭 瑞士</div><div class="rk">B 组头名 · 2-1-0（7 分）· 胜波黑 4-1、胜加拿大 2-1、平卡塔尔 1-1 · 净胜球 +4、进 7 球 · 主帅 Murat Yakin · 追求 72 年来首次八强 · 右后卫 Widmer 髋部存疑</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#2ea86b">🇩🇿 阿尔及利亚</div><div class="rk">J 组第三（最佳第三之一晋级 32 强）· 4 分 · 负阿根廷 0-3、胜约旦 2-1、末轮 3-3 战平奥地利（读秒染色）· 主帅 Vladimir Petkovic（前瑞士主帅 2014-2021）· 锋线 Amoura 大腿伤存疑</div></div>
+  </div>
+
+  <!-- ===== 速览梗概 ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 32 强淘汰赛中<b>"稳健小组头名 vs 惊魂晋级的最佳第三"、并叠加"主帅认祖归宗"叙事的一场</b>——<b>瑞士以 B 组头名（2-1-0、7 分：胜波黑 4-1、胜加拿大 2-1、平卡塔尔 1-1，净胜球 +4、进 7 球）晋级，阿尔及利亚则在 J 组排名第三、以最佳第三之一（4 分：负阿根廷 0-3、胜约旦 2-1、末轮读秒战平奥地利 3-3）晋级 32 强</b>，胜者直接晋级 16 强、90 分钟平局进入加时/点球。最大的故事线是：<b>阿尔及利亚主帅 Vladimir Petkovic 曾在 2014-2021 年执教瑞士整整七年，带队打入 2018 世界杯 16 强、2020 欧洲杯八强（点球击败法国）</b>——本场他将在温哥华迎战自己一手打造的球队，瑞士阵中 Xhaka、Akanji 等多人正是当年他的爱将。盘口层面：DraftKings 开盘瑞士 +105、平局 +235、阿尔及利亚 +300；随后市场向瑞士further收紧，Racing Post 现盘瑞士已到<b>平手盘（Evens）</b>、阿尔及利亚 3-1、平局 23-10；Kalshi 预测市场给瑞士 52%、平局 28%、阿尔及利亚 22%（晋级概率）。本场最大张力来自两条线：① <b>阿尔及利亚锋线核心 Amoura 大腿伤势存疑</b>（Sports Mole/Racing Post/dailysports 多源，若缺阵将削弱其反击速度维度）；② <b>阿尔及利亚防线是本届 32 支球队中失球最差之一（3 战失 7 球，从未零封）</b>，末轮对奥地利 3-3 平局充分暴露其防守脆弱性——这正是瑞士本场最大的机会窗口。瑞士方面，右后卫 <b>Silvan Widmer 髋部不适、周日缺席合练但未被排除出战</b>（Sports Mole/Yahoo 多源），Luca Jaquez 或顶替。基准剧本：<b>瑞士凭借更均衡的阵容、更稳的后防（3 战仅失 3 球）与状态火热的锋线（Manzambi、Vargas、Embolo）逐步压制阿尔及利亚，力争稳健取胜</b>；阿尔及利亚则寄望 Mahrez 的经验与反击效率制造惊喜，但其"从未零封"的防守韧性是最大隐患。过热指数 ≈ 4/5（Petkovic 认祖归宗叙事 + 阿尔及利亚戏剧性晋级带来的高关注度，且盘口已从瑞士适度热门收紧至接近均衡，悬念度上升）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">瑞士隐含胜率(去水,现盘)</div><div class="v" style="color:#f0616c">≈48%</div></div>
+      <div class="key"><div class="k">阿尔及利亚隐含胜率(去水,现盘)</div><div class="v" style="color:#2ea86b">≈29%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈23%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">4/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>晋级算术（多源确认）</b>：瑞士 B 组头名（2-1-0、7 分，净胜球 +4），阿尔及利亚 J 组第三、以最佳第三之一晋级 32 强；<b>本场为单场淘汰赛，胜者晋级 16 强</b>，90 分钟平局则进入加时 / 点球（淘汰赛规则）。</li>
+      <li><b>核心叙事：Petkovic 对阵亲手带过的瑞士（多源确认）</b>：<b>Vladimir Petkovic 于 2014-2021 年执教瑞士整整七年</b>，带队打入 2018 世界杯 16 强、2020 欧洲杯八强（点球击败卫冕冠军法国），2024 年 2 月起执教阿尔及利亚。本场是他 12 年后带队重返世界杯、并与自己一手打造的瑞士队正面对决——瑞士阵中 Xhaka、Akanji 等多名球员正是当年他的爱将（Wikipedia/FOX Sports/Racing Post 多源确认）。</li>
+      <li><b>阿尔及利亚锋线核心 Amoura 大腿伤存疑（多源未定论）</b>：<b>Mohamed El Amine Amoura（大腿伤）</b>大概率缺阵，但部分报道称他数日内可能复出——Sports Mole、Racing Post、dailysports 均报道其伤情，但具体是否首发/出战仍<span style="color:var(--warn)">存在分歧，未获一致确认</span>。若缺阵，阿尔及利亚将失去锋线唯一的高速跑动维度。</li>
+      <li><b>瑞士右后卫 Widmer 髋部存疑（多源）</b>：<b>Silvan Widmer</b> 因髋部不适周日缺席合练，但<b>未被正式排除出战</b>（Sports Mole/Yahoo 多源）；预测首发中 Luca Jaquez 或 Ricardo Rodríguez 是潜在顶替人选，具体尚未敲定。瑞士整体阵容健康，此为唯一伤情观察项。</li>
+      <li><b>阿尔及利亚防守是全场最大隐患（确认 · 关键数据）</b>：<b>阿尔及利亚是本届 32 支晋级球队中失球最差之一（3 战失 7 球），小组赛尚未取得一次零封</b>——负阿根廷 0-3、胜约旦 2-1（先失球后逆转）、末轮 3-3 战平奥地利（读秒送出扳平球）。这一"陷阱"信号与瑞士稳健防守（3 战仅失 3 球）形成鲜明对比。</li>
+      <li><b>当值主裁已确认（确认）</b>：FIFA 已任命阿根廷籍主裁 <b>Yael Falcón Pérez</b> 执法本场——他自 2022 年起进入 FIFA 国际裁判名单，本届世界杯此前已执法瑞典 vs 突尼斯、捷克 vs 墨西哥两场小组赛。</li>
+      <li><b>盘口收紧、悬念上升（盘口共识）</b>：开盘瑞士适度热门（DraftKings +105），现盘已收紧至瑞士平手盘（Racing Post Evens）——市场认为这是一场比预期更接近的较量，核心博弈在结果方向本身，而非让球深度。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 首发 / 伤情已多源交叉核查；<b>截至发稿，FIFA Match Centre 尚未公布两队官方首发，以下均为媒体预测/球队消息，非官方确认</b>）</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">⭐ 核心叙事 · Petkovic 率阿尔及利亚对阵亲手带过 7 年的瑞士 <span style="color:var(--mut);font-weight:400">· Wikipedia / FOX Sports / Racing Post 多源一致</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿尔及利亚主帅 <b>Vladimir Petkovic 曾在 2014-2021 年执教瑞士整整七年</b>，本场是他与亲手打造的球队正面对决</div>
+      <p style="font-size:13.5px">Petkovic 于 2014 年 7 月上任瑞士主帅，带队打入 <b>2018 世界杯 16 强、2020 欧洲杯八强</b>（点球淘汰卫冕冠军法国，先 3-3 逼入加时），执教至 2021 年。<b>2024 年 2 月 29 日，他就任阿尔及利亚主帅</b>，本场率队时隔 12 年重返世界杯、并在 32 强淘汰赛首轮就遭遇自己一手带过的瑞士队。瑞士现役阵容中 <b>Granit Xhaka、Manuel Akanji</b> 等多名球员正是 Petkovic 时代的核心爱将——Racing Post 指出，2020 欧洲杯点球击败法国一战的七名瑞士首发球员仍在现役名单中。赛后（对奥地利战)新闻发布会上 Petkovic 表示"还没来得及去想下一个对手"，但这场"认祖归宗"对决的情感张力毋庸置疑。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Petkovic 对瑞士球员的性格、习惯与体系了如指掌，可能针对性布置战术弱化 Xhaka 的组织与 Akanji 的出球；反过来，瑞士球员对 Petkovic 的执教哲学（纪律防守 + 由攻转守的快速衔接）同样熟稔。这种"知己知彼"的双向透明度，是本场区别于典型实力悬殊淘汰赛的核心变量，也解释了为何盘口从开盘的瑞士适度热门收紧至接近均衡。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://en.wikipedia.org/wiki/Vladimir_Petkovi%C4%87" style="color:var(--accent)">Wikipedia — Vladimir Petković</a> · <a href="https://www.foxsports.com/articles/soccer/former-switzerland-coach-vladimir-petkovic-hired-by-algeria-for-2026-world-cup-qualifying" style="color:var(--accent)">FOX Sports — Petkovic 受聘阿尔及利亚</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWSbQ6W3SF6O/" style="color:var(--accent)">Racing Post — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⚠ 阿尔及利亚锋线核心 Amoura 大腿伤存疑 · 首发未定 <span style="color:var(--mut);font-weight:400">· Sports Mole / Racing Post / dailysports 多源，具体出战状态未获一致</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Mohamed El Amine Amoura（大腿伤）</b>大概率缺阵本场，但部分报道认为他数日内可能恢复，出战状态<b>暂无一致结论</b></div>
+      <p style="font-size:13.5px">Sports Mole 报道阿尔及利亚"很可能"在对瑞士一役缺少 Amoura，伤情未具体说明；Racing Post 则称 Amoura 在经历大腿伤后"可能可以出战"；dailysports 早前报道其伤病曾让他缺席对约旦一役。综合三源交叉验证，<b>可以确认 Amoura 存在真实伤情且此前已影响出场</b>，但<b>本场是否首发/出战时长仍存在媒体分歧，尚无一致结论</b>——Racing Post 预测首发未将其列入，Sports Mole 称其"竞争锋线位置"。<span style="color:var(--warn)">[Amoura 本场出战状态 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Amoura 是阿尔及利亚锋线唯一具备高速冲击、能在瑞士高位防线身后制造威胁的球员，与 Mahrez 的组织型进攻形成互补。若他缺阵或状态受限，阿尔及利亚的反击维度将进一步收窄，更依赖 Mahrez/Gouiri 的个人处理球——对瑞士本就占优的防守稳定性是利好。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/algeria/world-cup-2026/predicted-lineups/forward-dilemma-predicted-algeria-xi-vs-switzerland_600427.html" style="color:var(--accent)">Sports Mole — 阿尔及利亚预测首发（锋线抉择）</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWSbQ6W3SF6O/" style="color:var(--accent)">Racing Post — 前瞻 / 首发</a> · dailysports — Amoura 伤病报道（对约旦一役缺阵）</div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 瑞士右后卫 Widmer 髋部存疑 · 未被排除出战 <span style="color:var(--mut);font-weight:400">· Sports Mole / Yahoo Sports 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Silvan Widmer（髋部不适）</b>周日缺席合练，<b>未被正式排除出战</b>，Jaquez/Rodríguez 是潜在顶替人选</div>
+      <p style="font-size:13.5px">据 Sports Mole、Yahoo Sports 报道，瑞士右后卫 <b>Silvan Widmer 因髋部不适（部分报道称为大腿）周日未参与合练</b>，但<b>官方尚未将其排除在本场大名单之外</b>。若他无法出战，<b>Luca Jaquez</b>（对加拿大一役替补登场表现出色）或 <b>Ricardo Rodríguez</b> 是潜在顶替人选。除此之外，<b>瑞士小组赛阶段无重大伤情报告</b>，阵容整体健康。<span style="color:var(--warn)">[Widmer 是否首发 · 以赛前 FIFA Match Centre 为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：右后卫是瑞士阵容中唯一的不确定点。Widmer 经验丰富、助攻插上是瑞士边路进攻的重要出口；若由 Jaquez 顶替，瑞士右路的进攻属性会有所变化但防守稳定性预计不受明显影响——瑞士阵容深度足以吸收这一变动，整体风险可控。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/predicted-lineups/right-back-options-predicted-switzerland-xi-vs-algeria_600426.html" style="color:var(--accent)">Sports Mole — 瑞士预测首发（右后卫选项）</a> · Yahoo Sports — 世界杯伤情动态追踪</div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">📉 阿尔及利亚防守脆弱性是本场最大隐患 <span style="color:var(--mut);font-weight:400">· ESPN / Racing Post / Opta Analyst 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿尔及利亚<b>本届 32 支晋级球队中失球最差之一（3 战失 7 球）</b>，小组赛尚未零封一次</div>
+      <p style="font-size:13.5px">阿尔及利亚小组赛<b>0-3 负于阿根廷、2-1 险胜约旦（先失球后逆转）、末轮 3-3 战平奥地利</b>（读秒送出扳平球，此前一度以为已锁定胜局）——三场比赛<b>合计失球 7 个，与本届晋级 32 强球队中失球最差球队并列</b>，且<b>从未取得零封</b>。Racing Post 直言阿尔及利亚"在后场看起来足够容易被打穿"。相较之下，<b>瑞士三战仅失 3 球</b>，防守稳定性明显占优。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是本场最重要的底层信号——阿尔及利亚即便锋线有 Mahrez 的经验与威胁，其防守端的系统性脆弱（尤其体能下降后的读秒失球模式，如对奥地利一役）意味着瑞士只需保持耐心和效率，便有较大机会通过多次机会打破比赛。这也是市场悬念收窄但基本面仍偏向瑞士的关键原因。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49203568/algeria-austria-iran-2026-world-cup-draw-advance-eliminated" style="color:var(--accent)">ESPN — 阿尔及利亚 vs 奥地利战报</a> · <a href="https://theanalyst.com/articles/algeria-vs-austria-stats-world-cup-2026-live" style="color:var(--accent)">Opta Analyst — 阿尔及利亚 vs 奥地利数据</a> · Racing Post — 前瞻</div>
+    </div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"瑞士基本面占优、但盘口从适度热门收紧至接近均衡"的场次——Petkovic 叙事 + 阿尔及利亚戏剧性晋级推高关注度，悬念度上升</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Petkovic 认祖归宗叙事 + 阿尔及利亚戏剧性晋级 + 盘口收紧带来的悬念上升</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">开盘瑞士 +105 适度热门，现盘已收紧至瑞士平手盘（Evens）——市场认为这是一场比预期更接近的对决。加上主帅认祖归宗的情感叙事与阿尔及利亚末轮惊魂晋级的话题性，关注度显著高于常规淘汰赛首轮。</div>
+    </div>
+
+    <h4>① 专家推荐聚合</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>最佳推荐：瑞士取胜（1pt，21-20 general）；指出瑞士"淘汰赛魔咒"（5 次进 32 强、5 次首轮出局）不会一直延续，阿尔及利亚看起来后防容易被打穿；同时给出 Bet Builder（Xhaka 2+抢断 + Manzambi 进球或助攻 + 角球大于 7.5，5-1）</td></tr>
+      <tr><td>DraftKings Network</td><td>北美博彩媒体</td><td>最佳早期倾向：大小球小 2.5（-135）；预测比分瑞士 1-0 阿尔及利亚；强调瑞士"结构、休息与信任"对阿尔及利亚"热度、危险与赛程混乱"的对比，市场喜欢瑞士但未将其定为压倒性热门</td></tr>
+      <tr><td>Yahoo Sports / OneFootball</td><td>综合媒体</td><td>知识库对比预测（Total Football Analysis 联合发布）：瑞士整体更平衡，但阿尔及利亚有制造麻烦的能力；预测偏瑞士但强调防守两端质量差距是关键</td></tr>
+      <tr><td>ESPN</td><td>综合媒体</td><td>指出瑞士"没有大牌明星或华丽足球，但状态火热、气势在握"；点出阿尔及利亚门将人选未定（Zidane / Benbot competition）与后防"需要大幅改善"</td></tr>
+      <tr><td>公众资金（DraftKings）</td><td>下注分布</td><td>瑞士占 94% 的胜负盘下注量，阿尔及利亚仅 6%——公众资金高度集中在瑞士，但书商未将赔率定得过于悬殊，为均衡对决留出空间</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② 赔率变动（美式赔率）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>瑞士 / 平局 / 阿尔及利亚</th><th>解读</th></tr>
+      <tr><td>开盘（6月28日 · DraftKings）</td><td>90分钟胜负盘</td><td class="ht">+105 / +235 / +300</td><td>瑞士开盘为适度热门（非深盘），公众资金 94% 集中于瑞士，但书商定价留出阿尔及利亚爆冷与平局的合理空间</td></tr>
+      <tr><td>现盘（6月30日 17:00 · Racing Post 综合）</td><td>90分钟胜负盘</td><td class="ht">Evens（≈+100） / 23-10（≈+230） / 3-1（≈+300）</td><td>瑞士赔率从 +105 进一步收紧至平手盘，平局与阿尔及利亚赔率基本持平——市场明确认为这场比赛比开盘时预期的更接近</td></tr>
+      <tr><td>大/小球 + 让球（DraftKings 开盘）</td><td colspan="2" class="ht">总分线 O/U 2.5（大 +110 / 小 -135）；让球瑞士 -0.5（-105）/ 阿尔及利亚 +0.5（-125）</td><td>浅盘让球反映"瑞士小胜但比分未必大"的预期；大小球方向倾向小球，与阿尔及利亚"从未零封但也难以打开局面"的画像一致</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（6月28日 · 对阵确定后）</td><td class="ht">瑞士 +105 · 平局 +235 · 阿尔及利亚 +300</td><td>以瑞士 B 组头名、净胜球 +4、进攻火力（7 球 3 战）与阿尔及利亚仅险险晋级（负阿根廷、末轮读秒平奥地利）的基本面差距定价；瑞士适度热门但未被定为深盘，反映阿尔及利亚锋线（Mahrez/Amoura）的真实威胁得到市场认可</td></tr>
+      <tr><td>开盘后定位（赛前中段）</td><td class="ht">瑞士 ≈+100～+105 · 阿 ≈+280～+300 · 平 ≈+230～+235</td><td><b>定位驱动因素</b>：① 瑞士阵容健康、状态延续（Manzambi/Vargas/Embolo 火热）→ 支撑热门地位；② 但 <b>Petkovic 对瑞士体系的深度了解</b> + 阿尔及利亚末轮读秒逼平奥地利显示的韧性与士气 → 阻止赔率进一步拉开；③ Widmer 伤情观察项使瑞士让球深盘未被推高</td></tr>
+      <tr><td>现盘（6月30日 · Racing Post）</td><td class="ht">瑞士 Evens（≈+100）· 阿尔及利亚 3-1（≈+300）· 平局 23-10（≈+230）</td><td>市场定位已从"瑞士适度热门"进一步收紧至<b>近乎均衡</b>——瑞士赔率相比开盘轻微收紧、阿尔及利亚与平局基本持平，核心博弈已从"让球深度"转向<b>结果方向本身</b>。定位档位：<b>轻微热门，接近均衡的三项对决</b></td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"瑞士基本面占优、但盘口持续收紧"的场次，过热指数 <b>4/5</b>（Petkovic 叙事 + 阿尔及利亚戏剧性晋级带来的高关注度，叠加赔率收紧后的方向性悬念）。瑞士 3 战仅失 3 球的防守稳定性 + 锋线状态（Manzambi 3 球、Vargas 2 球）是基本面支撑；阿尔及利亚"从未零封、3 战失 7 球"的防守脆弱性是重要反向信号，但其末轮读秒逼平奥地利展现的士气与 Mahrez 的大赛经验，让市场不敢将瑞士定为深盘热门。精确的实时赔率、总分/让球精确价格以各平台赛前更新为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi 预测市场</b>：Kalshi 交易员给瑞士 <b>52%</b> 晋级概率，平局隐含 <b>28%</b>、阿尔及利亚 <b>22%</b>（晋级概率，非 90 分钟胜负概率，故与欧赔去水口径略有差异）——方向偏瑞士但幅度温和，与 Racing Post 现盘（近乎均衡）的收紧趋势相互印证。</li>
+      <li><b>舆论焦点 ①</b>：<b>Petkovic 认祖归宗</b>——媒体与球迷高度关注这位带领瑞士打入两届大赛淘汰赛的功勋教头，如何率阿尔及利亚对阵自己一手打造的球队；瑞士队内 Xhaka、Akanji 等老将与恩师重逢的情感线也是报道焦点。</li>
+      <li><b>舆论焦点 ②</b>：<b>瑞士的"淘汰赛魔咒"</b>——Racing Post 指出瑞士自 1994 年以来五次晋级淘汰赛、五次止步首轮，本场是打破魔咒、时隔 72 年首次晋级八强的机会，舆论普遍讨论这一心理因素。</li>
+      <li><b>舆论焦点 ③</b>：<b>阿尔及利亚的戏剧性晋级</b>——末轮对奥地利读秒送出扳平球、双双晋级并送走伊朗的剧情性结果，让阿尔及利亚成为本轮淘汰赛话题度最高的球队之一，媒体聚焦其能否延续"惊魂但顽强"的势头。</li>
+      <li><b>公众资金面</b>：DraftKings 数据显示瑞士占胜负盘下注量的 <b>94%</b>，阿尔及利亚仅 <b>6%</b>——公众资金高度一致偏向瑞士，但书商未将赔率拉至与该下注比例匹配的悬殊程度，反映专业/庄家侧对阿尔及利亚反击效率与瑞士体能损耗风险的谨慎评估。</li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是"瑞士基本面占优但盘口持续收紧"的中高热度场次，过热指数 <b>4/5</b>。Petkovic 叙事与阿尔及利亚的戏剧性晋级推高关注度，市场也用实际赔率变动（+105 → Evens）确认了悬念度的上升。真正的价值判断需结合双方防守质量的巨大落差（瑞士失 3 球 vs 阿尔及利亚失 7 球）与阿尔及利亚锋线 Amoura 状态的不确定性。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-switzerland-vs-algeria-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 开盘赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWSbQ6W3SF6O/">Racing Post — 前瞻 / 现盘赔率</a> · <a href="https://onefootball.com/en/news/world-cup-2026-r32-switzerland-vs-algeria-prediction-knockout-preview-best-bets-43072417">OneFootball — 前瞻</a> · <a href="https://www.espn.com/soccer/story/_/id/49223711/fifa-world-cup-2026-switzerland-vs-algeria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — 观赛指南 / 主裁 / 预测首发</a> · Kalshi — 预测市场晋级概率</div>
+  </section>
+
+  <!-- ===== 深度数据 ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛）</b>与<b>本届世界杯实际值（小组赛，Opta/RealGM xG 数据）</b>逐项对照。缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（小组赛）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇭 瑞士 · 进攻</td><td class="ht">2022 世界杯 16 强（负葡萄牙 1-6）、2024 欧洲杯八强（点球负英格兰）；本届前追求 72 年来首次八强</td><td class="ht">B 组头名 7 分：胜波黑 4-1（xG 2.06）、胜加拿大 2-1（xG 1.11）、平卡塔尔 1-1（xG 3.24）；3 战进 7 球，逐场 xG 合计约 6.41、场均 ≈2.14</td><td><b>进攻效率高于预期</b>：对卡塔尔一役 xG 3.24 但仅打入 1 球，说明射门转化率有波动空间；Manzambi（3 球）+ Vargas（2 球）+ Embolo 的三点开花是本届亮点</td></tr>
+      <tr><td class="ht">🇨🇭 瑞士 · 防守</td><td class="ht">Yakin 时期整体稳健，2024 欧洲杯八强阶段防守组织良好</td><td class="ht">小组赛 3 战仅失 3 球（各战均失 1 球）；门将 Kobel 保持稳定，后防核心 Akanji/Elvedi 组合稳固</td><td><b>防守稳健、无重大失误</b>：每场恰好失 1 球的模式说明防线整体扎实但并非零封型；右后卫 Widmer 伤情是唯一观察点 <span style="color:var(--warn)">（逐场 xGA 精确数据 · 待核）</span></td></tr>
+      <tr><td class="sc">🇩🇿 阿尔及利亚 · 进攻</td><td class="sc">2014 世界杯 16 强（历史最佳战绩，加时负德国）；此后缺席 2018/2022，12 年后重返</td><td class="sc">J 组第三（最佳第三）；3 战进 6 球（负阿根廷 0-3、胜约旦 2-1、平奥地利 3-3），逐场 xG：阿根廷战 0.31、约旦战 1.89、奥地利战 1.67（合计 ≈3.87、场均 ≈1.29）</td><td><b>反击效率型进攻，依赖 Mahrez 核心创造</b>：对约旦、奥地利两战产量尚可，但对阿根廷一役 xG 仅 0.31，说明对强队缺乏有效控制与创造 <span style="color:var(--warn)">（细分数据 · 待核）</span></td></tr>
+      <tr><td class="sc">🇩🇿 阿尔及利亚 · 防守</td><td class="sc">2014 大赛以纪律防守闻名，与德国鏖战至加时</td><td class="sc">小组赛 <b>3 战失 7 球，未取得一次零封</b>——与本届晋级 32 强球队中失球最差球队并列；末轮对奥地利读秒送出扳平球，暴露体能下降后的防线纪律问题</td><td><b>防守脆弱性是最大隐患</b>：无论对强队（阿根廷 3 球）还是相对均势对手（奥地利读秒失球），防线稳定性均明显不及历史标准，是本场最大的"陷阱"变量</td></tr>
+    </table>
+    <div class="note">📌 <b>关键读数</b>：瑞士的进攻效率（场均 xG ≈2.14）与防守稳健（场均失 1 球）形成均衡画像，是其 B 组头名的底层支撑；阿尔及利亚则呈现"进攻依赖 Mahrez 个人创造 + 防守系统性脆弱（3 战失 7 球、从未零封）"的画像——<b>末轮 3-3 战平奥地利正是这一脆弱性的直接体现，是本场最重要的"陷阱提醒"</b>：阿尔及利亚具备制造惊喜的锋线质量（Mahrez），但其防线在体能下降阶段的纪律问题，意味着瑞士若保持耐心、拖入下半场乃至加时，胜率会进一步上升。逐场精确 xGA / 射正数据 · 待核。来源：RealGM xG Tracker / Opta Analyst / ESPN。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">瑞士 ≈1.6–2.2</td><td class="sc">阿尔及利亚 ≈0.9–1.4</td><td>瑞士进攻多点开花 + 防守稳健占优；阿尔及利亚反击效率有限但 Mahrez 的个人处理球具备制造机会的真实价值 <span style="color:var(--warn)">[精确 xG · 待核]</span></td></tr>
+      <tr><td>Opta Power Ranking / 实力榜</td><td colspan="2" class="ht">瑞士整体实力评估高于阿尔及利亚，但差距<b>并非悬殊</b>——瑞士的均衡阵容与阿尔及利亚的锋线质量（Mahrez）+ 大赛经验（2014 年历史最佳战绩班底传承）使实力差距被盘口市场评估为"轻微热门"而非"深盘大热"</td><td>与英格兰 vs 刚果（金）等悬殊对决不同，本场是"中等差距 + 情感叙事叠加"的类型，超算模型对 Petkovic 因素（战术透明度）难以完全量化</td></tr>
+      <tr><td>压迫 PPDA / xT / 场面倾斜</td><td colspan="2" class="ht">国家队公开详细数据有限 <span style="color:var(--warn)">（PPDA/xT 待核）</span>——定性：瑞士预计控球与三区触球占比略优，但阿尔及利亚在中场由 Boudaoui/Zerrouki 组织后场出球、依托 Mahrez 的持球突破制造威胁，并非纯防守反击队</td><td><b>陷阱提醒</b>：① <b>阿尔及利亚末轮 3-3 战平奥地利暴露的防守脆弱性（3 战失 7 球，从未零封）是本场核心陷阱信号</b>——瑞士若能保持耐心攻坚，胜率将高于盘口"接近均衡"的定价；② Petkovic 对瑞士体系的深度了解可能带来针对性布置，抵消部分实力差距；③ Amoura 出战状态未定，若缺阵将进一步削弱阿尔及利亚反击维度；④ Widmer 伤情下瑞士右路可能出现小幅调整，需关注对位表现</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力——瑞士对卡塔尔一役 xG 3.24 但仅入 1 球，是转化率波动的典型样本。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平——阿尔及利亚 3 战失 7 球的实际表现值得与其 xGA 对照，待核。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标，瑞士预计显著为正，阿尔及利亚预计为负或接近零。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——瑞士预计创造更多，但阿尔及利亚防线体能下降后的失位（如对奥地利末轮）也会为对手创造绝佳机会。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。<span style="color:var(--warn)">待核</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，瑞士预计小幅占优，但阿尔及利亚并非纯防反队，Mahrez/Boudaoui 具备一定控球组织能力。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 RealGM xG Tracker / Opta Analyst / ESPN 等公开来源；PPDA/xT/field tilt 等细分指标国家队公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">1</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>主裁已官方确认</b>：FIFA 已任命阿根廷籍主裁 <b>Yael Falcón Pérez</b> 执法本场 32 强淘汰赛——他自 <b>2022 年起进入 FIFA 国际裁判名单</b>，长期执法南美解放者杯（Copa Libertadores）、南美杯（Copa Sudamericana）及南美区世预赛，被视为南美足联最优秀的裁判之一。本届世界杯此前已执法<b>瑞典 vs 突尼斯</b>、<b>捷克 vs 墨西哥</b>两场小组赛。助理裁判：Facundo Rodríguez、Maximiliano Del Yesso（均阿根廷）。场地为加拿大温哥华 <b>BC Place</b>（可开合顶球场）。<span style="color:var(--warn)">[第四官员 / VAR 组合 · 以 FIFA 官方为准 · 待核]</span></div>
+    <h4>执法画像 + 本届统一新规</h4>
+    <ul class="cl">
+      <li><b>主裁画像</b>：Falcón Pérez 长期效力于 CONMEBOL 赛事体系，执法风格以稳健为主；本届世界杯此前两场执法样本（瑞典vs突尼斯、捷克vs墨西哥）均未出现重大争议判罚。<span style="color:var(--warn)">[场均出牌数据 / 对瑞士与阿尔及利亚历史执法样本 · 待核]</span></li>
+      <li><b>本届大赛尺度</b>：2026 世界杯统一执法新规——仅队长可与主裁沟通、门将 8 秒规则、半自动越位（SAOT）精准校准冲刺临界点。淘汰赛阶段裁判普遍对拖延时间与战术犯规更严。</li>
+      <li><b>本场倾向</b>：阿尔及利亚中场 Boudaoui/Zerrouki 的对抗强度与瑞士 Xhaka/Freuler 的经验型拖节奏打法，可能在中场产生较多战术犯规；半自动越位将精准裁决瑞士反击线（Manzambi/Ndoye）与阿尔及利亚防线的越位临界点，鉴于阿尔及利亚防线体能下降后易失位（末轮对奥地利案例），越位判罚可能成为本场的关键技术变量。</li>
+      <li><b>点球角度</b>：瑞士压上后的禁区渗透与阿尔及利亚防线在高压下的身体对抗，均有制造点球的潜在可能；阿尔及利亚门将人选（Zidane 或 Benbot）尚未敲定，若替补门将出战，禁区内决策失误风险也需关注。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：主裁 Falcón Pérez 已确认，但其详细出牌尺度数据与对两队的历史执法样本 · 待核，不作可操作依据。半自动越位技术对本场阿尔及利亚防线的越位风险判罚将是重要技术变量，结合其体能下降后失位的历史模式，值得赛中重点关注。</div>
+  </section>
+
+  <!-- ===== 数据面 ===== -->
+  <section>
+    <h2><span class="n">2</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· 晋级格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，现盘美式赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（DraftKings 开盘）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>小组赛积分 & 失球对比</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇭 瑞士</th><th>🇩🇿 阿尔及利亚</th></tr>
+      <tr><td>小组赛进程</td><td class="ht">B 组头名 · 7 分（2-1-0）；胜波黑 4-1、胜加拿大 2-1、平卡塔尔 1-1；净胜球 +4，进 7 球失 3 球</td><td class="sc">J 组第三（最佳第三之一）· 4 分（1-0-2）；负阿根廷 0-3、胜约旦 2-1、平奥地利 3-3；进 6 球失 7 球</td></tr>
+      <tr><td>本场性质</td><td colspan="2">32 强单场淘汰赛 · 胜者晋级 16 强 · 90 分钟平局进加时 / 点球 · 中立场地（温哥华 BC Place）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="ht">两队近年几无正式交锋史；瑞士本届大赛经验略占优，阿尔及利亚拥有 2014 年世界杯 16 强的历史最佳战绩传承</td></tr>
+      <tr><td>主教练</td><td class="ht">Murat Yakin（灵活阵型 · 攻守平衡 · Xhaka/Freuler 中场经验）</td><td class="sc">Vladimir Petkovic（前瑞士主帅 2014-2021 · 纪律防守理念 · 但本届实际防守表现波动）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Granit Xhaka（中场核心/队长）· Johan Manzambi（前锋，小组 3 球）· Ruben Vargas（边锋，2 球）· Breel Embolo（前锋）· Manuel Akanji（中卫）· Gregor Kobel（门将）</td><td class="sc">Riyad Mahrez（队长/前腰-边锋，小组 2 球）· Mohamed Amoura（前锋，伤情存疑）· Aissa Mandi（中卫）· Ramy Bensebaini（左后卫）</td></tr>
+      <tr><td>重要缺/伤状态</td><td class="ht">Silvan Widmer（髋部/大腿）存疑，未被排除出战；其余阵容健康</td><td class="sc">Mohamed Amoura（大腿伤）大概率缺阵或状态受限，具体出战未定；门将人选（Zidane/Benbot）竞争未定</td></tr>
+      <tr><td>1X2 赔率（美式，现盘）</td><td class="ht">Evens（隐含 ≈48%）</td><td class="sc">+300（隐含 ≈29%）· 平 +230（≈23%）</td></tr>
+      <tr><td>总分 / 让球（DraftKings 开盘）</td><td colspan="2" class="ht">O/U 2.5（大 +110 / 小 -135）；让球瑞士 -0.5（-105）/ 阿尔及利亚 +0.5（-125）</td></tr>
+    </table>
+    <div class="note">📌 概率为美式赔率去水后隐含概率（瑞士 Evens / 平 +230 / 阿尔及利亚 +300，归一后约 48/23/29，方向温和偏瑞士）。开盘 DraftKings 数值为瑞士 +105 / 平 +235 / 阿尔及利亚 +300，现盘（Racing Post）已收紧。大小球开盘倾向小球（2.5 一线，小盘 -135）。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- ===== 首发（预测版）===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 非官方 · 以赛前 FIFA Match Centre 为准</span></h2>
+    <div class="sub">预测首发（ESPN / Sports Mole / Racing Post 推测，各源出入较大，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+
+    <h4>🇨🇭 瑞士预测首发（4-2-3-1 / 4-4-2，各源不一致）· Murat Yakin</h4>
+    <div class="lineup">Kobel; Widmer(存疑)/Jaquez · Akanji · Elvedi · Rodriguez/Muheim; Freuler · Xhaka(C); Ndoye · Manzambi · Vargas; Embolo</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Granit Xhaka</td><td>后腰 / 队长</td><td>33 岁，中场节奏掌控者，Petkovic 时代的爱将，本场对阵恩师意义特殊 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Johan Manzambi</td><td>前锋 / 弗赖堡</td><td>20 岁新星，小组赛独中 3 球（对波黑梅开二度 + 对加拿大破门），从替补一路打成首发主力 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Ruben Vargas</td><td>边锋</td><td>小组赛 2 球，与 Manzambi、Embolo 形成三点开花的锋线火力 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Silvan Widmer</td><td>右后卫</td><td><b>髋部/大腿不适，周日缺席合练，未被排除出战</b>；若缺阵 Jaquez 或 Rodriguez 顶替 <span style="color:var(--warn)">[出战状态待核]</span></td></tr>
+    </table>
+
+    <h4>🇩🇿 阿尔及利亚预测首发（4-3-3，各源不一致）· Vladimir Petkovic</h4>
+    <div class="lineup">Zidane/Benbot; Belghali · Mandi · Bensebaini · Ait-Nouri; Boudaoui · Zerrouki/Bentaleb · Maza; Mahrez(C) · Gouiri/Amoura(存疑) · Chaibi</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Riyad Mahrez</td><td>队长 / 前腰-边锋</td><td>小组赛贡献 2 球（末轮对奥地利梅开二度，含读秒一度锁定胜局的进球），大赛经验丰富，是阿尔及利亚的绝对核心 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Mohamed Amoura</td><td>前锋</td><td><b>大腿伤存疑，出战状态未获一致确认</b>；若出战将提供高速冲击维度 <span style="color:var(--warn)">[出战状态待核]</span></td></tr>
+      <tr><td class="sc">Aissa Mandi</td><td>中卫</td><td>后防经验球员，但本届小组赛三战球队合计失球 7 个，防线整体稳定性存疑 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Luca Zidane</td><td>门将</td><td>小组前两战首发，末轮被 Benbot 替换（表现不佳），门将人选<b>竞争仍未有定论</b> <span style="color:var(--warn)">[首发待核]</span></td></tr>
+    </table>
+    <div class="note">名单注：两队预测首发为媒体分析推测（ESPN / Sports Mole / Racing Post），各源阵型与人选出入较大（例如瑞士右后卫、左后卫人选，阿尔及利亚锋线 Amoura/Gouiri 搭档方式及门将归属均存在分歧）。瑞士<b>右后卫 Widmer 存疑</b>，其余阵容健康；阿尔及利亚<b>锋线 Amoura 状态存疑 + 门将竞争未定</b>。官方名单以赛前 <b>FIFA Match Centre</b> 为准 · 待核。队长（C）以 FIFA 官方袖标位置为准（瑞士通常为 Xhaka，阿尔及利亚通常为 Mahrez）· 待核。</div>
+  </section>
+
+  <!-- ===== 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（2022 世界杯 / 2024 欧洲杯 + 本届小组赛）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0616c">🇨🇭 瑞士 · Murat Yakin</div>
+        <div class="role">阵型灵活（四后卫/三中卫切换）· Xhaka/Freuler 中场经验 · 锋线多点开花</div>
+        <ul class="cl">
+          <li>Yakin 麾下瑞士以<b>阵型灵活性</b>著称——曾在四后卫与三中卫体系间多次切换（Euro 2024 期间使用过七种不同阵型），本届世界杯预测首发多为 4-2-3-1/4-4-2 变体。<b>Xhaka + Freuler（33/34岁）的中场经验组合</b>负责节奏掌控，年轻的 Manzambi、Vargas、Embolo 提供锋线冲击力。</li>
+          <li>交叉参照：瑞士 2022 世界杯止步 16 强（负葡萄牙 1-6，Ramos 帽子戏法）；2024 欧洲杯打入八强（点球负英格兰，此前 1-1 常规时间战平），过程中曾以 3-4-2-1 体系爆冷淘汰意大利。本届小组赛<b>3 战仅失 3 球</b>展现出比过往更扎实的防守基础。</li>
+          <li>本场应对：瑞士预计<b>控球主导 + 多点开花的锋线（Manzambi/Vargas/Embolo）耐心冲击阿尔及利亚防线</b>，利用其"从未零封"的脆弱性寻求多次机会。须警惕：① Widmer 伤情下右路组合的磨合度；② Petkovic 对瑞士体系了如指掌，可能针对性布置弱化 Xhaka 的出球线路。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#2ea86b">🇩🇿 阿尔及利亚 · Vladimir Petkovic</div>
+        <div class="role">纪律防守理念（但本届表现波动）· Mahrez 核心创造 · 快速由攻转守衔接</div>
+        <ul class="cl">
+          <li>Petkovic 执教哲学以<b>纪律严明的防守组织 + 由攻转守的快速衔接</b>著称——这正是他执教瑞士七年（2014-2021）打入 2018 世界杯 16 强、2020 欧洲杯八强的体系基石。在阿尔及利亚，他延续 4-3-3 框架，<b>Mahrez 作为战术核心串联进攻</b>，Boudaoui/Zerrouki 组织中场出球。</li>
+          <li>交叉参照：阿尔及利亚 2014 世界杯打入 16 强（历史最佳战绩，加时惜败德国），此后缺席两届大赛、12 年后重返；<b>本届小组赛暴露的"从未零封、3 战失 7 球"防守脆弱性，与 Petkovic 的防守理念形成反差</b>——末轮对奥地利读秒送出扳平球是最直接的例证。</li>
+          <li>本场挑战：<b>面对亲手带过的瑞士，Petkovic 需要解决阿尔及利亚体能下降后防线纪律松动的系统性问题</b>，同时寄望 Mahrez 的个人能力与经验制造威胁。他对瑞士体系的深度了解（多名瑞士球员是其爱将）是唯一可能抵消实力差距的战术资产，但阿尔及利亚防守端的稳定性才是决定晋级与否的核心变量。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Racing Post <small>· 数据/盘口分析媒体</small></div>最佳推荐为瑞士取胜——指出瑞士的"淘汰赛魔咒"（五次晋级 32 强、五次首轮出局）该被打破，本届锋线火力（Manzambi 尤为亮眼）足以攻破<b>"看起来足够容易被打穿"</b>的阿尔及利亚后防。同时点出 Petkovic 对瑞士阵中多名老将的深厚渊源，是本场情感张力的核心来源。</div>
+    <div class="insight"><div class="who">DraftKings Network <small>· 北美博彩媒体</small></div>将本场定性为"结构、休息、信任" vs "热度、危险、赛程混乱"的对比——瑞士的清晰晋级路径（B 组头名 + 七天调整）对阵阿尔及利亚惊魂晋级后的情绪起伏。最佳早期倾向为小球（2.5 之下），预测比分瑞士 1-0 小胜，强调这将是一场"精确打击"而非"爆炸性进球盛宴"的比赛。</div>
+    <div class="insight"><div class="who">ESPN <small>· 综合媒体 + Opta 角度</small></div>点出瑞士"没有大牌明星或华丽足球，但状态在握"，Yakin 需要三名攻击手延续火热状态；同时明确指出阿尔及利亚<b>后防需要大幅改善</b>，门将人选（Zidane 或 Benbot）仍待 Petkovic 拍板，这一不确定性本身即是阿尔及利亚防守脆弱性的直接体现。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· 多源综合</small></div>⚠ 陷阱提醒：① <b>阿尔及利亚 3 战失 7 球、从未零封的防守脆弱性</b>是本场最重要的基本面信号，瑞士只要保持耐心大概率能通过多次机会破局；② <b>Petkovic 对瑞士体系的深度了解</b>是抵消实力差距的关键变量，不可低估其针对性布置的效果；③ Amoura 出战状态与 Widmer 伤情均为待核项，任一缺阵都会小幅改变双方进攻/防守的具体形态；④ 阿尔及利亚末轮读秒送出扳平球的模式提示，体能下降阶段（70分钟后）是阿尔及利亚防线最脆弱的窗口，值得关注瑞士换人与加时阶段的表现。</div>
+  </section>
+
+  <!-- ===== 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：瑞士基本面小幅占优（盘口去水 ≈48% vs 29%，防守稳健 3 战仅失 3 球，锋线三点开花），是合理的轻微热门，但<b>并非深盘大热</b>——盘口从开盘 +105 收紧至现盘 Evens 反映了 Petkovic 认祖归宗叙事与阿尔及利亚戏剧性晋级带来的真实竞争力认可。基准剧本：<b>瑞士控球主导、耐心攻坚阿尔及利亚"从未零封"的脆弱防线，力争稳健取胜（1-0 或 2-1 一类的窄margin 胜利是市场共识倾向）</b>；阿尔及利亚最现实的路径是依托 Mahrez 的个人能力制造惊喜，若能全场保持防守纪律（尤其 70 分钟后），有真实的爆冷或拖入加时的空间。</li>
+      <li><b>关键先生</b>：瑞士 — Granit Xhaka（中场核心/队长，Petkovic 爱将）· Johan Manzambi（新星前锋，小组 3 球）· Ruben Vargas（边路 2 球）· Manuel Akanji（后防核心）；阿尔及利亚 — Riyad Mahrez（队长/绝对核心，小组 2 球）· Mohamed Amoura（前锋，状态存疑）· Aissa Mandi（后防经验）。</li>
+      <li><b>胜负手</b>：① 瑞士能否用多点开花的锋线打破阿尔及利亚"从未零封"的防线；② Petkovic 对瑞士体系的针对性布置能在多大程度上抵消实力差距；③ Amoura 的出战状态对阿尔及利亚反击维度的影响；④ Widmer 伤情下瑞士右路的稳定性；⑤ 阿尔及利亚防线在体能下降阶段（70分钟后/加时）的纪律性，参照末轮对奥地利读秒失球的模式；⑥ 主裁 Falcón Pérez 的半自动越位判罚对双方反击线的影响。</li>
+      <li><b>市场视角</b>：温和偏瑞士（≈48% 去水），阿尔及利亚 ≈29%、平局 ≈23%，过热指数 4/5（Petkovic 叙事 + 阿尔及利亚戏剧性晋级带来高关注度，且盘口持续收紧）。真正的价值判断需结合双方防守质量的巨大落差（瑞士失 3 球 vs 阿尔及利亚失 7 球）与阿尔及利亚锋线 Amoura 状态的不确定性权衡。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核清单</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre 为准）——<b>瑞士右后卫人选（Widmer 是否出战）</b>、<b>阿尔及利亚门将归属（Zidane vs Benbot）与 Amoura 出战状态</b>；② 队长（C）以 FIFA 官方袖标位置为准（瑞士通常为 Xhaka，阿尔及利亚通常为 Mahrez）；③ 第四官员 / VAR 组合 · 以 FIFA 官方为准（主裁 Falcón Pérez 已确认）；④ 本届两队逐场精确 xGA / 射正数据（Opta/FotMob 细分 · 待核）；⑤ 现盘之后的实时赔率变动、总分/让球精确价格以赛前各平台为准；⑥ 瑞士/阿尔及利亚 PPDA/xT/field tilt 细分——国家队公开样本有限；⑦ Kalshi/Polymarket 预测市场实时占比变动。</div>
+  </section>
+
+  <!-- ===== 来源 ===== -->
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49223711/fifa-world-cup-2026-switzerland-vs-algeria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — 瑞士vs阿尔及利亚观赛指南 / 主裁 / 预测首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/switzerland-vs-algeria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWSbQ6W3SF6O/">Racing Post — 瑞士vs阿尔及利亚前瞻 / 赔率 / Bet Builder</a> · <a href="https://dknetwork.draftkings.com/2026/06/28/opening-odds-for-switzerland-vs-algeria-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — 开盘赔率</a><br>
+      • <a href="https://onefootball.com/en/news/world-cup-2026-r32-switzerland-vs-algeria-prediction-knockout-preview-best-bets-43072417">OneFootball — 前瞻 / 最佳推荐</a> · <a href="https://www.sportsmole.co.uk/football/algeria/world-cup-2026/predicted-lineups/forward-dilemma-predicted-algeria-xi-vs-switzerland_600427.html">Sports Mole — 阿尔及利亚预测首发（Amoura 存疑）</a> · <a href="https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/predicted-lineups/right-back-options-predicted-switzerland-xi-vs-algeria_600426.html">Sports Mole — 瑞士预测首发（Widmer 存疑）</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49203568/algeria-austria-iran-2026-world-cup-draw-advance-eliminated">ESPN — 阿尔及利亚 vs 奥地利 3-3 战报</a> · <a href="https://theanalyst.com/articles/algeria-vs-austria-stats-world-cup-2026-live">Opta Analyst — 阿尔及利亚 vs 奥地利数据统计</a><br>
+      • <a href="https://en.wikipedia.org/wiki/Vladimir_Petkovi%C4%87">Wikipedia — Vladimir Petković（前瑞士主帅背景）</a> · <a href="https://www.foxsports.com/articles/soccer/former-switzerland-coach-vladimir-petkovic-hired-by-algeria-for-2026-world-cup-qualifying">FOX Sports — Petkovic 受聘阿尔及利亚</a><br>
+      • <a href="https://en.wikipedia.org/wiki/Yael_Falc%C3%B3n">Wikipedia — 主裁 Yael Falcón Pérez</a> · soccer.realgm.com — 2026 世界杯 xG Tracker（瑞士/阿尔及利亚逐场数据）· <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B">Wikipedia — 2026世界杯 B 组</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — 2026世界杯 J 组</a><br>
+      • Kalshi — 瑞士vs阿尔及利亚预测市场晋级概率
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-07-01 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#e30613',SC='#006233',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['瑞士胜','平局','阿尔及利亚胜'],datasets:[{data:[48,23,29],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水，现盘）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[47,53],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（DraftKings 开盘推算，约 2.5 一带）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['瑞士(B组头名,7分)','阿尔及利亚(最佳第三,4分)'],datasets:[
+  {label:'积分',data:[7,4],backgroundColor:[HT,SC],borderRadius:6},
+  {label:'失球',data:[3,7],backgroundColor:['#f0616c88','#2ea86b88'],borderRadius:6}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:9,title:{display:true,text:'小组赛积分 / 失球数'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路速度','个人上限','大赛经验'],
+  datasets:[
+   {label:'瑞士',data:[7.5,7.5,7.5,7,7,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'阿尔及利亚',data:[4.5,6.5,6,7,7.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Analysis · England vs Croatia · 2026 World Cup Group L</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-england-vs-croatia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-england-vs-croatia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI",sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-england-vs-croatia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">&#x1F3C1; Full Time 4-2 · 2026 World Cup · Group L Match 1 · Revenge for the 2018 semifinal</span>
+  <h1>England vs Croatia</h1>
+  <div class="meta">June 17, 2026 · AT&amp;T Stadium, Arlington (Dallas) · 16:00 ET · Group L (also: Ghana, Panama)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; England</div><div class="rk">Tuchel-coached · Perfect qualifying: 8W, 22 scored, 0 conceded · Tempo control + organized defense</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">&#x1F1ED;&#x1F1F7; Croatia</div><div class="rk">Dalić-coached · Modrić's golden midfield, last dance · Experienced but aging engine</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">&#x1F4CA;</span> Post-Match Review: Tactics &amp; Data</h2>
+    <div class="sub">Full time England 4-2 Croatia (HT 2-2) · AT&amp;T Stadium, Arlington, 70,389 · Referee Clément Turpin · Data: Sofascore / Opta Analyst / FIFA / ESPN / Sky Sports · The pre-match content below is preserved as a prediction archive</div>
+
+    <h4>&#x2460; How the Score Unfolded</h4>
+    <p style="font-size:14px">This was a <b>two-act match: an open first-half shootout, then second-half suffocation</b>. After just 12 minutes Madueke won a penalty and <b>Kane</b> converted (a retake, after the keeper came off his line and a player encroached on the original VAR-reviewed effort) for 1-0; but Croatia hit straight back as <b>Sučić</b> threaded a vertical pass on 36 minutes and <b>Baturina</b> finished for 1-1. On <b>42'</b> Rice delivered the cross for <b>Kane</b>'s second (equalling Gary Lineker's record of 10 England World Cup goals), 2-1; then in stoppage time <b>45+5'</b> <b>Perišić</b> assisted <b>Musa</b> to level again — half-time 2-2, with Croatia walking off with the momentum. But the script flipped after the break: only the <b>47th minute</b> in, <b>Anderson</b> swept the ball wide right and <b>Bellingham</b> cut inside to finish low for 3-2. From there England took complete control — 9 shots on target in the second half (the most by any team in a single half at this World Cup) and a 12-1 edge in box touches — before substitute <b>Saka</b> set up <b>Rashford</b> on <b>85'</b> to seal it, 4-2. The full-time xG of 2.82-0.53 matches the second-half story perfectly.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">&#x23F1; 12' Kane (penalty, won by Madueke, 1-0) → 36' Baturina (Sučić assist, 1-1) → 42' Kane (Rice cross, 2-1) → 45+5' Musa (Perišić assist, 2-2) → HT 2-2 → 47' Bellingham (Anderson assist, 3-2) → 85' Rashford (Saka assist, 4-2)</div>
+
+    <h4>&#x2461; Key Data Comparison</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Metric</th><th style="padding:6px">England</th><th style="padding:6px">Croatia</th><th style="text-align:left;padding:6px">Read</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Possession</td><td style="text-align:center">53%</td><td style="text-align:center">47%</td><td style="padding:6px;color:var(--mut)">A near-even 48-52 first half rose to 58-42 after the break — England tightened control once ahead</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.82</b></td><td style="text-align:center">0.53</td><td style="padding:6px;color:var(--mut)">A quality gulf: England added 1.46 xG in the second half to Croatia's 0.12</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Shots / on target</td><td style="text-align:center"><b>21 / 12</b></td><td style="text-align:center">8 / —</td><td style="padding:6px;color:var(--mut)">9 shots on target in the second half is a single-half high for this World Cup; Croatia had only 3 shots inside the box</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Big chances</td><td style="text-align:center"><b>7</b></td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">England created 7 big chances (Konsa and O'Reilly each spurned one); converting 4 was enough</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Box touches</td><td style="text-align:center"><b>34</b></td><td style="text-align:center">15</td><td style="padding:6px;color:var(--mut)">34-15 is the single stat that best captures the territorial gap — England kept feeding the box</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Pass accuracy</td><td style="text-align:center">—</td><td style="text-align:center">Final third 72% (53/74)</td><td style="padding:6px;color:var(--mut)">Croatia's final-third passing was efficient, but they made fewer entries (30 to 38) and couldn't sustain threat</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Set pieces · Corners</td><td style="text-align:center"><b>Corners 8</b></td><td style="text-align:center">Corners 1</td><td style="padding:6px;color:var(--mut)">An 8-1 corner count (5-0 in the second half); Rice's cross was the source of England's second goal</td></tr>
+      <tr><td style="padding:6px">Fouls · Cards</td><td style="text-align:center">Fouls 9</td><td style="text-align:center">Fouls 11</td><td style="padding:6px;color:var(--mut)">Turpin managed it cleanly with no flashpoints; keeper Livaković made 7 saves (3 big) to keep the score respectable</td></tr>
+    </table></div>
+
+    <h4>&#x2462; Tactical Review</h4>
+    <div class="insight"><div class="who">&#x2460; A game rewritten by the second half</div>Half-time 2-2, possession 48-52, and England were far from fluent; after the break England posted 9 shots on target, 1.46 xG to 0.12, a 12-1 edge in box touches and 5-0 on corners. <b>This shows England</b>: even after a flat, scrappy opening dragged into a shootout, Tuchel's side can reset the tempo at the interval and grind opponents down through territory and box service — fulfilling the pre-match "win by controlling the rhythm" theme, just via a bumpier path than expected.</div>
+    <div class="insight"><div class="who">&#x2461; The Rice/Anderson double pivot overran an ageing midfield — the core pre-match read held</div>The biggest pre-match variable was whether England's tempo could suppress Modrić's ageing engine. The answer: Modrić conceded the 12th-minute penalty and was withdrawn for Kovačić on 58 minutes; Anderson contributed 1 assist + 8 ball recoveries + 4 interceptions, and England pinned Croatia's midfield back after the break. <b>This shows England</b>: the younger, higher-coverage Rice-Anderson pivot is the structural gap over Croatia's golden generation — the second-half surge exploited exactly that.</div>
+    <div class="insight"><div class="who">&#x2462; Kane as the focal point and England's delivery production line</div>Kane scored twice from 6 shots (3 on target), 0.99 xG and an 8.3 rating; Rice hit 4 of 9 crosses with 4 key passes and an assist. Both of England's open-play goals came off the same production line: wide delivery/sweep → central finish (Rice→Kane, Anderson→Bellingham). <b>This shows England</b>: the attack isn't reliant on a single spark but on mass-producing entries into the box (34 touches) with Kane linking play — a repeatable, sustainable blueprint for winning.</div>
+    <div class="insight"><div class="who">&#x2463; Croatia stayed in it on scarce chances — through moments rather than set pieces</div>Croatia managed just 8 shots, only 3 inside the box, and 0.53 xG; both goals came from high-quality moments: Sučić's vertical through-ball and Perišić's wing assist. Baturina (7.9 rating) and Perišić (3 chances created + 4 aerials won) were the bright spots. <b>This shows Croatia</b>: the team can still create through individual quality, but the pre-match read of "clinging on via experience and set pieces" only half came true — they were beaten 1-8 on corners, and their goals came from open-play flashes, not dead balls.</div>
+    <div class="insight"><div class="who">&#x2464; "A clean sheet won't come easy" was validated — the soft spot is the defence, exactly as flagged</div>England kept 8 clean sheets across qualifying, yet here conceded twice in the first half and failed to keep one, shipping 2 goals despite holding the opponent to just 0.53 xG (a slice of finishing luck for Croatia). <b>This shows England</b>: the pre-match line of "a clean sheet won't come easy, the risk is at the back" was precisely fulfilled — against opponents with individual quality, even total dominance won't guarantee a shut-out, and that flaw will be magnified against stronger sides in the knockouts.</div>
+
+    <h4>&#x2463; Prediction Reconciliation (checking each pre-match conclusion)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>&#x2713; <b>Summary conclusion "England win narrowly by control" → actual 4-2 win</b>: direction fully correct; the favourite took three points and dominated territory.</li>
+      <li>&#x2713; <b>Market implied England win ≈56% (odds 1.73) → England won</b>: the base scenario landed, no upset.</li>
+      <li>&#x2713; <b>Core read "Rice/Anderson tempo overruns Modrić's ageing midfield" → fulfilled</b>: Modrić conceded the penalty and was subbed on 58; England controlled the midfield after the break.</li>
+      <li>&#x2717; <b>"Aim for a clean sheet / implied clean sheet ≈27%" → no clean sheet (2 conceded)</b>: two first-half goals sank the clean-sheet line — but the written read "a clean sheet won't come easy, risk at the back" was precisely confirmed.</li>
+      <li>&#x2713; <b>Over/Under lean (Over 2.5) → actual 6 goals (Over)</b>: 4 goals by half-time, Over 2.5 cleared comfortably.</li>
+      <li>&#x25B3; <b>Scoreline expectation "England narrow win (≈1-0)" → actual 4-2</b>: result direction correct, but the margin and total goals far exceeded "narrow" — the game was a shootout, not a steady hold.</li>
+      <li>&#x25B3; <b>Market overheat index 3/5 (driven by the 2018 revenge narrative) → partly held</b>: England honoured their favourite status, but the match was far more open than expected; the "solid narrow win" gave way to an end-to-end affair.</li>
+    </ul>
+
+    <h4>&#x2464; Carry-Over to the Next Match</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">England → 6/23 vs Ghana (Gillette Stadium, Boston)</div>&#x2460; <b>The defence needs patching</b>: two first-half goals and no clean sheet here; Tuchel has hinted the back line may change (Guéhi could return to the XI) — against Ghana's pacy wide threat, beware another "first-half shootout"; &#x2461; the attacking blueprint is repeatable: Rice crosses + Kane as focal point + mass box touches works against a low block like Ghana's; &#x2462; Saka/Rashford scored off the bench and may push for starts — plenty of rotation room up front; &#x2463; Kane has equalled Lineker's record of 10 England World Cup goals and could rewrite it against Ghana.</div>
+      <div class="insight" style="margin:0"><div class="who">Croatia → 6/23 vs Panama (BMO Field, Toronto)</div>&#x2460; This is a <b>must-win for survival</b>: after losing the opener, three points against the weaker Panama is essential; &#x2461; the exposed weakness is <b>box threat and set pieces</b>: beaten 1-8 on corners with only 3 shots inside the box, they must turn possession into box touches against Panama; &#x2462; managing Modrić's stamina is key — the 58th-minute substitution was a signal, and an earlier rotation or a reshaped midfield may be needed; &#x2463; the moments of quality from Baturina, Musa and Perišić are the source of goals — they need to rediscover their finishing edge to convert scarce chances.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Sources: Sofascore, Opta Analyst (theanalyst.com), FIFA, ESPN, Sky Sports, CBS Sports, FOX Sports. For analysis only — not betting advice.</p>
+  </section>
+
+  <div class="summary">
+    <h3>&#x1F4CB; QUICK SUMMARY (Read this first)</h3>
+    <p class="lead">This is an <b>asymmetric clash with a heavy historical narrative</b>: at the 2018 World Cup semifinal Croatia beat England 2-1 (AET) and went on to the final — eight years on, the two meet again in their Group L opener with the roles reversed. Thomas Tuchel's England posted a <b>perfect qualifying run — 8 wins, 22 scored, 0 conceded</b> — and a 3-0 friendly win over Costa Rica; Zlatko Dalić's Croatia exited Euro 2024 in the group stage without a single win (their worst major-tournament showing since 2006), then lost pre-tournament friendlies to Brazil and Belgium before edging Slovenia 2-1. The market clearly favors England — England win <b>1.73</b> (de-vigged implied &#x2248;56%), Draw 3.80 (&#x2248;25%), Croatia 4.75 (&#x2248;19%). The Opta supercomputer has England topping Group L in 67.5% of 25,000 simulations. The real swing factor: <b>can England's tempo control overwhelm Modrić's aging midfield?</b> Baseline script: a controlled, narrow England win with a clean-sheet push; Croatia lean on experience and set pieces for a lifeline. Market Heat &#x2248; 3/5, driven by the 2018 revenge storyline.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">England de-vigged win prob.</div><div class="v" style="color:#f08a82">&#x2248;56%</div></div>
+      <div class="key"><div class="k">Croatia de-vigged win prob.</div><div class="v" style="color:#7fa6e6">&#x2248;19%</div></div>
+      <div class="key"><div class="k">England qualifying conceded</div><div class="v" style="color:var(--good)">0</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>The 2018 semifinal revenge thread</b>: Croatia's 2-1 AET comeback ended England's best run since 1966 — eight years on the roles are reversed, with England the clear favorite.</li>
+      <li><b>England's midfield tempo vs Modrić's aging engine</b>: whether the Rice + Anderson double pivot can speed past the 40-year-old Modrić and Kovačić is the central tactical battle.</li>
+      <li><b>Referee Clément Turpin (France)</b>: he has history with Tuchel (graded "E, a 1 out of 10" during Tuchel's Bayern days in 2023) and clashed with Bellingham too — an officiating storyline worth watching.</li>
+      <li><b>England's clean sheet vs Croatia's set pieces</b>: England conceded zero in eight qualifiers, but their major-tournament knockout fragility recurs (Euro 2024 final loss to Spain, WC 2022 QF loss to France); Croatia's realistic hope is experience and set pieces.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">&#x1F534;</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · Sourced + Why it matters</span></h2>
+    <div class="sub">First-hand signals affecting this match — each item explained for tactical or outcome impact</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Referee · Tuchel's history with Turpin <span style="color:var(--mut);font-weight:400">· Yahoo Sports · TimesLIVE · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee <b>Clément Turpin</b> (France) takes England's opener — once graded "E, a 1 out of 10" by Tuchel</div>
+      <p style="font-size:13.5px">French elite referee Clément Turpin has been appointed for England's World Cup opener. Three years ago, during Tuchel's time as Bayern Munich boss, Turpin showed five first-half yellow cards in the 2023 Champions League tie against Manchester City and gave a straight red to last man Dayot Upamecano (later reversed by VAR for an Erling Haaland offside). Tuchel blasted him afterwards: "Two things couldn't keep up with the level — the pitch wasn't in good condition and also the referee, unfortunately, was Grade E. I'd give him a one out of 10." Jude Bellingham also clashed with Turpin in a 2024 Champions League semifinal, when the referee pushed him away as he tried to distract penalty-taker Harry Kane. With Tuchel now England's coach, the pairing carries built-in tension.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Turpin is a strict top-level whistle (career 2.54 yellows per game). In a narrative-charged match where coach and referee have history, England risk cards if they protest emotionally or Croatia's veterans time-waste; Turpin's penalty threshold (36 awarded in his career) also shapes how box duels are called.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.yahoo.com/articles/clement-turpin-england-v-croatia-213831845.html" style="color:var(--accent)">Yahoo Sports — Turpin & Tuchel history</a> · <a href="https://www.timeslive.co.za/sport/fifa-world-cup-2026/2026-06-15-tuchels-grade-e-ref-turpin-to-take-charge-of-englands-world-cup-opener/" style="color:var(--accent)">TimesLIVE — "Grade E" referee</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">England · Perfect qualifying + clean-sheet record <span style="color:var(--mut);font-weight:400">· Sports Mole · Racing Post · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tuchel's England <b>won all 8 qualifiers, scoring 22 and conceding 0</b>, then beat Costa Rica 3-0 in a friendly</div>
+      <p style="font-size:13.5px">Thomas Tuchel's England delivered a flawless UEFA qualifying campaign — eight wins from eight, a clean sheet in every match, 22 scored and 0 conceded — and followed it with a confident 3-0 friendly win over Costa Rica in June. Form, confidence and defensive organization all look strong. Up top, Harry Kane, Jude Bellingham and Bukayo Saka form a genuinely dangerous attacking spine, and Tuchel's defensive discipline is a clear step up from before. <span style="color:var(--warn)">[Saka's fitness and the final XI — subject to official pre-match confirmation (TBC)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: England's clean-sheet record is the structural basis for the clean-sheet and Under markets — England clean sheet is priced around 2.75 (implied &#x2248;27%). But qualifying opposition was limited, so Croatia's midfield experience is the first real test; whether Tuchel converts possession into goals drives the handicap (-0.5) and goals settlement.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/england-vs-croatia-prediction-team-news-lineups_599262.html" style="color:var(--accent)">Sports Mole — Preview/Team news/Lineups</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/" style="color:var(--accent)">Racing Post — Odds/Betting</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Croatia · Euro 2024 exit + shaky pre-match form <span style="color:var(--mut);font-weight:400">· Sports Mole · Squawka · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Croatia <b>exited Euro 2024 in the group stage without a win</b>; warm-ups: lost to Brazil and Belgium, edged Slovenia 2-1</div>
+      <p style="font-size:13.5px">Zlatko Dalić's Croatia went winless through the Euro 2024 group stage (0-3 to Spain, 2-2 with Albania, 1-1 with Italy after a 98th-minute equalizer) and crashed out — their worst major-tournament showing since 2006 and their first Euro group-stage exit since 2012. Their 2026 pre-tournament form was also unconvincing: losses to Brazil and Belgium, then a narrow 2-1 win over Slovenia. Modrić (now past 40) remains a guaranteed starter and spiritual leader, but the team's overall engine has clearly aged. <span style="color:var(--warn)">[Final XI — subject to official pre-match confirmation (TBC)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Croatia's calling card is midfield control and tournament nous, but the Euro 2024 group exit and shaky warm-ups expose declining tempo and legs. That is exactly the gap England can exploit by speeding play through Rice/Anderson — and the basis for England's handicap (-0.5/-1) being seen as a sharper angle.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/croatia/euro-2024/news/croatia-eliminated-dalic-hits-out-after-damaging-draw-with-italy_546776.html" style="color:var(--accent)">Sports Mole — Croatia Euro 2024 exit</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/" style="color:var(--accent)">Squawka — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">Lineups · Saka doubt + Musa over Kramarić <span style="color:var(--mut);font-weight:400">· Sports Mole · Squawka · June 2026</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">England's <b>Saka a fitness doubt</b>, Madueke may deputize; Croatia may drop Kramarić for <b>Musa</b> at No.9</div>
+      <p style="font-size:13.5px">For England, center-back Marc Guéhi looks a certain starter, expected to partner Ezri Konsa (John Stones also in the mix); on the right, Bukayo Saka is reportedly racing to prove his fitness, with Noni Madueke ready to deputize alongside Anthony Gordon in support of Harry Kane and Jude Bellingham. For Croatia, local reports suggest FC Dallas striker Petar Musa may be handed the No.9 role over long-time starter Andrej Kramarić, fed by Como playmaker Martin Baturina and the iconic Modrić. <span style="color:var(--warn)">[Both official XIs — subject to the pre-match FIFA team sheets (TBC)]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">&#x1F511; <b style="color:var(--accent)">Why it matters</b>: Whether Saka starts directly affects England's right-side threat and the quality of service to Kane; if Croatia pick the more physical Musa over Kramarić, Dalić is signaling an intent to create aerial targets on the counter and from set pieces. Both calls move the handicap and first-goalscorer markets.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/modric-starts-and-striker-surprise-predicted-croatia-xi-vs-england_599298.html" style="color:var(--accent)">Sports Mole — Croatia XI / Musa surprise</a> · <a href="https://www.squawka.com/en/news/world-cup/england-vs-croatia-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — Team news / predicted lineups</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed Lineups -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Officially confirmed (≥2 sources) · written at T-50</span></h2>
+    <div class="sub">Both official teamsheets are in. Two headline surprises: <b style="color:#86efac">England — Guéhi benched (Stones partners Konsa), Saka only a sub</b>; <b style="color:#86efac">Croatia — Kovačić benched</b>, Pašalić/Sučić step into midfield in a 4-3-3. Sources: Football Italia (confirmed line-ups incl. full bench) + Sporting Life/Paddy Power (England confirmed XI), two sources in agreement.</div>
+
+    <h4>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; England · Confirmed XI (4-2-3-1)</h4>
+    <div class="lineup">Pickford; Reece James · Ezri Konsa · John Stones · Nico O'Reilly; Declan Rice · Elliot Anderson; Noni Madueke · Jude Bellingham · Anthony Gordon; Harry Kane</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key options off the bench: <b style="color:#cbd5e1">Bukayo Saka</b> (fitness doubt — held back as a wide impact sub) · <b style="color:#cbd5e1">Marc Guéhi</b> (one of the first-choice CBs starts on the bench) · Marcus Rashford / Eberechi Eze / Ollie Watkins (attacking rotation) · Kobbie Mainoo (midfield)</div>
+
+    <h4 style="margin-top:18px">&#x1F1ED;&#x1F1F7; Croatia · Confirmed XI (4-3-3)</h4>
+    <div class="lineup">Livaković; Stanišić · Vušković · Gvardiol · Šutalo; Modrić · Mario Pašalić · Petar Sučić; Perišić · Musa · Baturina</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key options off the bench: <b style="color:#cbd5e1">Mateo Kovačić</b> (elite progressor in reserve) · <b style="color:#cbd5e1">Andrej Kramarić</b> (sub striker) · Ante Budimir (aerial target) · Nikola Vlašić (attacking rotation)</div>
+
+    <h4 style="margin-top:18px">vs Predicted Lineups</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">CB pairing</td><td>Guéhi + Konsa</td><td><b>Konsa + Stones</b> (Guéhi benched)</td><td>England's biggest change: the more experienced, calmer-on-the-ball Stones starts; the supposedly nailed-on Guéhi sits — a steadier CB setup</td></tr>
+      <tr><td class="ht">Right-back</td><td>Walker</td><td>Reece James</td><td>James is the bigger attacking threat — carries, inverts and crosses; two-way value</td></tr>
+      <tr><td class="ht">Left-back</td><td>Lewis</td><td>Nico O'Reilly</td><td>Younger full-back gets the nod; energy and overlaps to give the left side width</td></tr>
+      <tr><td class="ht">Right wing</td><td>Saka (fitness doubt)</td><td><b>Madueke (Saka benched)</b></td><td>The page's biggest pre-match doubt resolved: Saka starts on the bench, Madueke deputizes — trims England's right-side ceiling</td></tr>
+      <tr><td class="ht">Midfield/attack spine</td><td>Rice+Anderson · Bellingham · Gordon · Kane</td><td><b>7 of 11 as predicted</b></td><td>Rice+Anderson double pivot, Bellingham at 10, Gordon left, Kane up top — Plan A; the midfield-overrun structure is intact</td></tr>
+      <tr><td class="sc">Croatia midfield</td><td>Modrić · Kovačić · Baturina</td><td><b>Modrić · M.Pašalić · P.Sučić</b> (Kovačić benched)</td><td>The match's biggest surprise: the elite progressor Kovačić sits; midfield now leans on 40-year-old Modrić plus the aerial Pašalić and young Sučić — lower passing quality</td></tr>
+      <tr><td class="sc">Croatia back line</td><td>Stanišić · Šutalo · Erlić · Sosa</td><td><b>Stanišić · Vušković · Gvardiol · Šutalo</b></td><td>Gvardiol back from injury is a key boost; young CB Vušković steps in — a clearly stronger defense than predicted</td></tr>
+      <tr><td class="sc">No.9</td><td>Musa over Kramarić</td><td><b>Musa confirmed</b> (Baturina pushed up, Pašalić drops in)</td><td>Prediction landed: the more physical Musa leads the line, Perišić + Baturina as wide forwards — counters and set-piece height retained</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">Tactical read (snap verdict: <b style="color:#86efac">held</b>, with England's right-side ceiling trimmed)</h4>
+    <ul class="cl">
+      <li><b>Shape signal</b>: England line up as expected in a 4-2-3-1 with the Rice+Anderson double pivot — the snap verdict that "England raise the tempo and overrun an aging Croatia midfield" <b>holds</b>.</li>
+      <li><b>Kovačić benched is Croatia's biggest signal</b>: removing their top progressor leaves midfield reliant on 40-year-old Modrić plus the aerial Pašalić and young Sučić — which actually <b>reinforces</b> England's midfield-overrun angle and supports the "comfortable England win" read.</li>
+      <li><b>Three England defensive changes + Saka benched</b>: Stones/James/O'Reilly replace the predicted Guéhi/Walker/Lewis for a steadier back line; but with Saka only a sub and Madueke deputizing, England's right-side threat is <b>marginally downgraded</b> (consistent with this page's "limited blow-out ceiling" view) — without changing the overall edge.</li>
+      <li><b>Gvardiol back + Vušković in</b>: Croatia's defense is better than predicted and is the main brake on England's scoring efficiency; the 4-3-3 with wide forwards (Perišić+Baturina) behind Musa keeps counters and set-piece height alive — supporting the cautious "discount the clean sheet / under" angle.</li>
+      <li><b>Snap verdict held</b>: England favored, the midfield-overrun angle stands, the clean-sheet/under structure is supported; the only <b>tweak</b> — Saka on the bench lowers England's right-wing threat and blow-out ceiling, while Kovačić benched further weakens Croatia's response.</li>
+    </ul>
+
+    <div class="note">📊 <b>Market reaction</b>: No independent post-lineup line moves captured; the only surprise (Kovačić benched) is <b>negative for Croatia</b> and doesn't support a Croatia-win move, so 1X2 should hold (Eng ≈1.73 / Draw ≈3.80 / Cro ≈4.75, decimal odds). Saka benched slightly lowers England's attacking ceiling — marginally favorable to the under / the smaller England handicap (-0.5 over -1). Factual statement only — not betting advice.</div>
+
+    <div class="src" style="margin-top:12px">Sources: <a href="https://football-italia.net/2026-world-cup-england-vs-croatia-line-ups/">Football Italia — Confirmed line-ups (official XIs + full bench)</a> · <a href="https://www.sportinglife.com/free-bets/news/england-croatia-confirmed-lineup-world-cup-2026/793">Sporting Life / Paddy Power — England Confirmed XI</a> · <a href="https://www.si.com/soccer/england-vs-croatia-world-cup-preview-predictions-lineups-6-17-26">SI — Referee Clément Turpin confirmed / pre-match comparison</a></div>
+  </section>
+
+  <!-- Data Section -->
+  <section>
+    <h2><span class="n">1</span> Data (Core)</h2>
+    <div class="sub">1X2 de-vigged implied probabilities · Group L picture · goals market · strength profile — all charts based on verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 Implied Probabilities (de-vigged, DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 Goals Implied Probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group L — FIFA Rankings (lower = stronger)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall Strength Profile (analyst assessment 0-10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Data Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; England</th><th>&#x1F1ED;&#x1F1F7; Croatia</th></tr>
+      <tr><td>Head Coach</td><td class="ht">Thomas Tuchel (German)</td><td class="sc">Zlatko Dalić</td></tr>
+      <tr><td>Route to qualification</td><td class="ht">UEFA group winners, perfect 8-from-8</td><td class="sc">UEFA qualification (group route)</td></tr>
+      <tr><td>Qualifying record</td><td class="ht">8W 0D 0L · 22 scored · 0 conceded</td><td class="sc">Qualified (aging engine, modest firepower)</td></tr>
+      <tr><td>Recent friendlies</td><td class="ht">3-0 vs Costa Rica</td><td class="sc">Lost to Brazil, lost to Belgium, 2-1 vs Slovenia</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Euro 2024 runners-up (lost final to Spain) · WC 2022 QF (lost to France)</td><td class="sc">Euro 2024 group-stage exit · WC 2022 third place</td></tr>
+      <tr><td>1X2 Odds (DECIMAL)</td><td class="ht">Win 1.73 (implied &#x2248;56%)</td><td class="sc">Win 4.75 (&#x2248;19%) · Draw 3.80 (&#x2248;25%)</td></tr>
+      <tr><td>Over / Under 2.5 Goals</td><td colspan="2" class="ht">Under is the sharper side (Under &#x2248; -135); low total line, driven by England's solid defense</td></tr>
+      <tr><td>Head-to-Head</td><td colspan="2">2018 WC semifinal: Croatia won 2-1 (AET), reached the final</td></tr>
+      <tr><td>Key Players</td><td class="ht">Harry Kane / Jude Bellingham / Bukayo Saka</td><td class="sc">Luka Modrić / Mateo Kovačić / Martin Baturina</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; Probabilities are de-vigged implied values from DECIMAL odds (&#x2248;56/25/19). Odds source: bet365 (England 1.73 / -138, Draw 3.80 / +270, Croatia 4.75 / +375). Handicap: England -0.5 &#x2248; -145; goals Under 2.5 &#x2248; -135 is the sharper side; England clean sheet &#x2248; 2.75 (11/4), Kane anytime scorer &#x2248; 2.75 (7/4). Opta supercomputer has England topping Group L in 67.5% of simulations — directionally aligned with the de-vigged market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">&#x1F525;</span> Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / odds / money / sentiment</span></h2>
+    <div class="sub">England are clear favorites, but the 2018 revenge angle plus the Tuchel/Turpin history inject extra storyline heat; money clusters on the England handicap, clean sheet and Kane goal props</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">&#x1F525;&#x1F525;&#x1F525;<span style="opacity:.25">&#x1F525;&#x1F525;</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Outcome lean is clear; heat lifted by the 2018 revenge and referee history</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Expert direction is heavily on England and 1X2 money is steady — but the 2018 semifinal revenge thread plus Tuchel's "Grade E" history with Turpin dominate coverage, generating more storyline traffic than a typical favorite-vs-underdog. Money sits mostly on the <b>England handicap, clean sheet and Kane/Bellingham goal props</b> rather than the straight result.</div>
+    </div>
+
+    <h4>&#x2460; Expert Aggregate (Direction count: England win All · Croatia win 0 · Draw 0)</h4>
+    <table>
+      <tr><th>Source</th><th>Role</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>Data/stats body</td><td>England top Group L <b>67.5%</b> (25,000 simulations)</td></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td><b>England win</b>, low-scoring; clean-sheet push</td></tr>
+      <tr><td>Racing Post</td><td>UK betting media</td><td>England win + Under; 6-1 bet builder leans on England clean sheet</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Comfortable England win; Croatia firepower declining</td></tr>
+      <tr><td>Yahoo Sports</td><td>US betting media</td><td>England -138 the most grounded call; low-scoring</td></tr>
+      <tr><td>Compare.bet / Johnnybet</td><td>Prediction media</td><td>England win + clean-sheet angle</td></tr>
+    </table>
+    <div class="flag">&#x26A0; <b>Heat signal (moderate)</b>: Directional consensus on an England win is 100% — reasonable consensus rather than over-heat. The real division is <b>whether England keep a clean sheet, whether it goes Under, and the handicap margin</b> (-0.5 vs -1). Storyline heat is driven by the 2018 revenge and the Tuchel/Turpin history, with no notable money on a Croatia win.</div>
+
+    <h4 style="margin-top:20px">&#x2461; Odds Movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Timestamp</th><th>Market</th><th>England Win</th><th>Reading</th></tr>
+      <tr><td>Open (bet365)</td><td>1X2</td><td class="ht">1.73 (-138)</td><td>Clear England lean; Draw 3.80 (+270) / Croatia 4.75 (+375)</td></tr>
+      <tr><td>Jun 16 close</td><td>Multiple books</td><td class="ht">1.73-1.74 (best -135 at BetOnline)</td><td>Narrow movement on England's short price; stable</td></tr>
+      <tr><td>Jun 16</td><td>Over / Under</td><td colspan="2" class="ht">Under is the sharper side (Under 2.5 &#x2248; -135; Over &#x2248; +121); low total line</td></tr>
+      <tr><td>Asian handicap (ref.)</td><td>England -0.5 / -1</td><td colspan="2" class="ht">England -0.5 &#x2248; -145 (Croatia +0.5 &#x2248; +115); -1 line TBC</td></tr>
+    </table>
+    <div class="note">&#x1F4CC; The 1X2 barely moves — outcome pricing is stable. The most active price discovery is on the <b>handicap (-0.5/-1) and goals (Under the sharper side)</b>, plus England clean sheet and Kane goal props. England clean sheet &#x2248; 2.75 (11/4, implied &#x2248;27%), Kane anytime scorer &#x2248; 2.75 (7/4, implied &#x2248;36%). For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">&#x2462; Prediction Markets &amp; &#x2463; Sentiment</h4>
+    <ul class="cl">
+      <li><b>Opta supercomputer</b>: England top Group L 67.5%, Croatia qualify 76.9% — the quantitative model and de-vigged market are directionally aligned, with no clear emotional gap.</li>
+      <li><b>Sentiment focus</b>: Heavily on the <b>2018 semifinal revenge narrative</b> and <b>Tuchel's "Grade E" history with referee Turpin</b> — two emotional threads dominate coverage, but this is storyline heat rather than money over-heat.</li>
+      <li><b>Croatia narrative</b>: Modrić's "last dance" draws sentimental traffic, but the Euro 2024 group exit plus shaky warm-ups undercut confidence in a Croatia win.</li>
+      <li><b>Kalshi / Polymarket / DefiRate</b>: Per-match price, volume and 30-day momentum data not publicly retrieved <span style="color:var(--warn)">(TBC)</span>; Kane goal-prop volume also not seen.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">&#x1F9ED; <b>Summary read</b>: The outcome lean is clear (England), markets and the Opta model are directionally aligned — Heat Index <b>3/5</b>. The heat comes not from the 1X2 but from the <b>2018 revenge and Tuchel/Turpin storyline</b>, plus the <b>England clean-sheet/Under and Kane goal props</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — Group L</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/">Racing Post</a> · <a href="https://sports.yahoo.com/articles/england-vs-croatia-picks-predictions-095713430.html">Yahoo Sports</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/">Squawka</a> · <a href="https://www.compare.bet/news/england-vs-croatia-betting-preview-predictions-tips-and-live-odds">Compare.bet</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Referee &amp; Officiating Environment</h2>
+    <div class="note">&#x2705; <b>Confirmed</b>: The referee is <b>Clément Turpin</b> (France) — a FIFA international referee since 2010 and a UEFA elite-group member since 2012, who officiated the 2021 Europa League final and the 2022 Champions League final (Real Madrid vs Liverpool). He took the Euro 2024 opener and refereed two group games plus a Round of 16 tie (Brazil vs South Korea, his first WC knockout) at the 2022 World Cup. Sources: WorldReferee / Yahoo Sports / UEFA.</div>
+    <h4>Last two majors + career officiating profile (actuals)</h4>
+    <ul class="cl">
+      <li><b>Career card baseline (ample actual sample)</b>: 358 yellows and 26 reds across his career — <b>2.54 yellows and 0.18 reds per game</b> — with 36 penalties awarded. A strict whistle, but a moderate penalty rate. This is a large top-tier sample, far more reference value than most debutant World Cup referees.</li>
+      <li><b>Last two majors</b>: At the 2022 World Cup he took two group games plus a Round of 16 tie (his first WC knockout); at Euro 2024 he refereed the opener (Germany vs Scotland). He has ample big-stage game management, and UEFA rates his movement and rhythm highly; exact per-tournament card splits should be confirmed against official records <span style="color:var(--warn)">(TBC)</span>.</li>
+      <li><b>History with the teams + bad blood</b>: He has history with England coach Tuchel (the 2023 Bayern vs Man City tie — five first-half yellows plus the VAR-reversed Upamecano red — after which Tuchel graded him "E, a 1 out of 10"); Bellingham also clashed with him in a 2024 Champions League semifinal. No notable public dispute history with Croatia.</li>
+      <li><b>2026 unified rules</b>: GK 8-second hold, only captains speak to referees, semi-automated offside — if Croatia's veterans time-waste or crowd the referee, Turpin's strict threshold plus the new rules raise their cumulative-card risk.</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>Referee assessment</b>: With a large-sample 2.54 yellows per game and a strict bent, in a narrative-charged match where coach and referee have history, total cards and England's cumulative cards are worth watching; his moderate penalty rate (36 in his career) keeps box duels broadly neutral. Because he has an ample top-tier sample, the officiating angle here is a usable analysis dimension (unlike a no-sample debutant referee).</div>
+  </section>
+
+  <!-- Lineups -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0f2417;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle">Predicted · see the ✅ confirmed module above</span></h2>
+    <div class="sub">Predicted lineups (media analysis — not official; official teamsheets now published, see the "✅ Confirmed Lineups &amp; What They Mean" module above)</div>
+    <h4>&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; England Predicted Lineup (4-2-3-1)</h4>
+    <div class="lineup">Pickford; Walker · Guéhi · Konsa · Lewis; Rice · Anderson; Saka · Bellingham · Gordon; Kane</div>
+    <table>
+      <tr><th>Player</th><th>Position / Club</th><th>Form / Notes</th></tr>
+      <tr><td class="ht">Harry Kane</td><td>Striker / Bayern Munich</td><td>Captain and finisher; anytime scorer &#x2248; 2.75 (implied &#x2248;36%); drops to link play</td></tr>
+      <tr><td class="ht">Jude Bellingham</td><td>Attacking midfielder / Real Madrid</td><td>Transition engine; runs and final passes; has history with Turpin</td></tr>
+      <tr><td class="ht">Bukayo Saka</td><td>Winger / Arsenal</td><td>Right-side threat; fitness doubt — Madueke deputizes if he can't start (TBC)</td></tr>
+      <tr><td class="ht">Declan Rice</td><td>Defensive midfielder / Arsenal</td><td>Midfield screen and tempo-setter; with Anderson locks the center and presses Modrić</td></tr>
+    </table>
+    <h4>&#x1F1ED;&#x1F1F7; Croatia Predicted Lineup (4-3-3)</h4>
+    <div class="lineup">Livaković; Stanišić · Šutalo · Erlić · Sosa; Modrić · Kovačić · Baturina; Pašalić · Musa · Perišić</div>
+    <table>
+      <tr><th>Player</th><th>Position / Role</th><th>Form / Notes</th></tr>
+      <tr><td class="sc">Luka Modrić</td><td>Midfield / Captain</td><td>Guaranteed starter at 40 and spiritual leader; "last dance," but coverage and tempo have declined</td></tr>
+      <tr><td class="sc">Mateo Kovačić</td><td>Midfield / Manchester City</td><td>Ball progression and retention; shares tempo with Modrić, but stretched against England's pace</td></tr>
+      <tr><td class="sc">Martin Baturina</td><td>Attacking midfielder / Como</td><td>Creative hub; the key supplier to the forwards</td></tr>
+      <tr><td class="sc">Petar Musa</td><td>Striker / FC Dallas</td><td>May take the No.9 over Kramarić; a more physical aerial target (TBC)</td></tr>
+    </table>
+    <div class="note">Lineups note: Both predicted lineups are media analysis estimates (Sports Mole / Squawka). <b>Subject to official pre-match squad sheets — TBC.</b> England's Saka is a fitness doubt (Madueke deputizes if he can't start); Croatia have a Musa vs Kramarić call at No.9 (TBC).</div>
+  </section>
+
+  <!-- Tactics -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references each team's actual play and results at their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">&#x1F3F4;&#xE0067;&#xE0062;&#xE0065;&#xE006E;&#xE0067;&#xE007F; England · Thomas Tuchel</div>
+        <div class="role">4-2-3-1 possession with tempo + organized defense to control rhythm</div>
+        <ul class="cl">
+          <li>Tuchel brings more proactive possession and defensive discipline than the Southgate era: eight clean sheets in qualifying confirm a structural upgrade, with the Rice + Anderson double pivot locking the center and springing play quickly to Kane/Bellingham.</li>
+          <li>Cross-reference: at Euro 2024 England reached the final but were attacking-stodgy and lost it 1-2 to Spain, exposing slow transitions; at WC 2022 they lost the QF 1-2 to France (Kane missed a penalty). Tuchel's brief is precisely to fix this "plenty of possession, not enough end product + knockout fragility" — and this is his first major-tournament test.</li>
+          <li>Risk: qualifying opposition was limited, so the clean-sheet record may not extrapolate cleanly against Croatia's midfield experience; if England are frustrated and grow anxious, there is a tail risk of conceding from a set piece or counter (echoing their knockout fragility).</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">&#x1F1ED;&#x1F1F7; Croatia · Zlatko Dalić</div>
+        <div class="role">4-3-3 midfield control + experience and set pieces to scrape goals, aging engine</div>
+        <ul class="cl">
+          <li>Dalić's calling card is Modrić/Kovačić-led midfield control and tournament composure — the foundation of beating England in 2018 and finishing third in 2022; but in 2026 this engine has clearly aged, with less pace and coverage than before.</li>
+          <li>Cross-reference: the 2022 third place was built on shootout resilience and savvy game-control; but the winless Euro 2024 group exit (a 98th-minute Italy equalizer) exposed a double decline in legs and chance-creation — exactly the seam England's tempo can exploit.</li>
+          <li>Response: Dalić likely uses Modrić to dictate centrally and the Musa aerial target plus Perišić's wide thrust to threaten on the counter and from set pieces; the realistic hope is not open possession football but using experience to slow the rhythm and steal a goal off England's knockout-style wobble.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst Insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· Supercomputer model</small></div>Across 25,000 simulations, England top Group L 67.5% of the time, with Croatia qualifying 76.9% — the model confirms England as clear favorites while Croatia retain a strong qualification chance. The report frames this as the opening test of England's title run, with the quantitative read aligned to the market direction.</div>
+    <div class="insight"><div class="who">Sports Mole <small>· Prediction media</small></div>Predicts a low-scoring England win with a clean-sheet push, and notes Croatia may use Musa over Kramarić at No.9 while England's Saka is a fitness doubt. Concludes the match hinges on England's efficiency speeding through the midfield and whether Croatia's aging engine can slow the rhythm.</div>
+    <div class="insight"><div class="who">Handicap / Goals view <small>· Racing Post / Yahoo</small></div>Several outlets view <b>England -0.5/-1 and the Under (Under 2.5)</b> as sharper than the straight 1X2, echoing England's zero goals conceded in qualifying; England clean sheet (&#x2248; 2.75) and Kane goal props are the storyline-driven retail battleground.</div>
+    <div class="insight"><div class="who">Combined · Narrative & referee signal <small>· Tactical signal</small></div>The emotional density here far exceeds a routine favorite-vs-underdog tie: 2018 semifinal revenge + Tuchel's "Grade E" history with referee Turpin + Modrić's "last dance." The genuine question is not the result but whether England deliver the clean sheet, and whether the referee's threshold (strict Turpin) amplifies card and box-duel uncertainty.</div>
+  </section>
+
+  <!-- Summary -->
+  <section>
+    <h2><span class="n">6</span> Summary Assessment &amp; TBC Items</h2>
+    <ul class="cl">
+      <li><b>Outcome lean</b>: A controlled, narrow England win (1-0 / 2-0 / 2-1) is the baseline, with a clean-sheet push. The draw (&#x2248;25%) and a Croatia win (&#x2248;19%) are moderate tail risks — a Croatia upset needs Modrić slowing the rhythm + a set-piece/counter steal + an England knockout-style wobble all at once.</li>
+      <li><b>Key players</b>: Kane (England / finishing and goal-prop centerpiece), Bellingham + Rice (England / speeding through midfield), Modrić (Croatia / the last engine slowing the rhythm), Musa (Croatia / aerial target on the counter).</li>
+      <li><b>Match-deciding factor</b>: The real swing is <b>whether England's tempo control overwhelms Modrić's aging midfield</b> — driving the handicap (-0.5/-1) and goals (Under the sharper side) settlement. Whether England keep a clean sheet is the core of that market; whether Kane scores is the core of the Kane goal props.</li>
+      <li><b>Market view</b>: Markets and the Opta model are directionally aligned (England clear favorites); the 1X2 has limited value. The most information-rich markets are the <b>England handicap (-0.5/-1), the Under and the clean sheet</b>, plus Kane goal props. Heat Index 3/5 (heat from the 2018 revenge and Tuchel/Turpin storyline, not the result).</li>
+    </ul>
+    <div class="flag">&#x26A0; <b>TBC items</b>: &#x2460; England's Saka fitness and whether he starts (else Madueke); &#x2461; Croatia's No.9 (Musa vs Kramarić); &#x2462; both official starting XIs; &#x2463; Turpin's per-tournament card splits at this/the last two majors (career averages confirmed: 2.54 yellows / 0.18 reds / 36 penalties); &#x2464; Kalshi/Polymarket/DefiRate per-match prices, volume and 30-day momentum not publicly retrieved; &#x2465; Asian handicap lines (-0.5/-1) and goals total exact odds — check live market before kick-off.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49047660/fifa-world-cup-2026-england-vs-croatia-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — Schedule/Lineups/Referee</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — Group L supercomputer preview</a> · <a href="https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/england-vs-croatia-prediction-team-news-lineups_599262.html">Sports Mole — Preview/Team news/Lineups</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/modric-starts-and-striker-surprise-predicted-croatia-xi-vs-england_599298.html">Sports Mole — Croatia XI/Musa</a> · <a href="https://www.squawka.com/en/news/world-cup/england-vs-croatia-team-news-predicted-lineups/">Squawka — Team news/predicted lineups</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-england-vs-croatia-06-17-26-world-cup-2026/">Squawka — Preview</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/england-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agmd28D2S6Cm/">Racing Post — Odds/Betting</a> · <a href="https://sports.yahoo.com/articles/england-vs-croatia-picks-predictions-095713430.html">Yahoo Sports — Picks/Odds</a> · <a href="https://www.compare.bet/news/england-vs-croatia-betting-preview-predictions-tips-and-live-odds">Compare.bet — Odds aggregation</a><br>
+      • <a href="https://sports.yahoo.com/articles/clement-turpin-england-v-croatia-213831845.html">Yahoo Sports — Referee Turpin & Tuchel history</a> · <a href="https://www.timeslive.co.za/sport/fifa-world-cup-2026/2026-06-15-tuchels-grade-e-ref-turpin-to-take-charge-of-englands-world-cup-opener/">TimesLIVE — "Grade E" referee</a> · <a href="https://worldreferee.com/referee/clement_turpin">WorldReferee — Turpin career data</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/croatia/euro-2024/news/croatia-eliminated-dalic-hits-out-after-damaging-draw-with-italy_546776.html">Sports Mole — Croatia Euro 2024 exit</a> · <a href="https://www.givemesport.com/supercomputer-predicts-2026-world-cup-football-soccer/">GiveMeSport — Supercomputer prediction</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-16 · Charts based on verified data; radar chart reflects analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'Segoe UI',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['England Win','Draw','Croatia Win'],datasets:[{data:[56,25,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied Probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[45,55],backgroundColor:[DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied Probability % (de-vigged, Under lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['England','Croatia','Panama','Ghana'],datasets:[{data:[4,9,40,72],backgroundColor:[HT,SC,'#c1440e','#1aa84a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA Ranking (lower = stronger, indicative)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive Stability','Attack Finishing','Midfield Control','Set Pieces','Individual Ceiling','Tournament Exp.'],
+  datasets:[
+   {label:'England',data:[8.5,7.5,7.5,7,9,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Croatia',data:[6.5,5.5,7,6.5,6,8.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

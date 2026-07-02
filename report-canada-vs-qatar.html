@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 加拿大 vs 卡塔尔 · 2026世界杯 B组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-canada-vs-qatar.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-canada-vs-qatar.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ca:#d52b1e;--qa:#8a1538;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f18,#8a1538);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1f1513,#152138);border:1px solid var(--line);border-left:4px solid var(--ca);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ca{color:#f08a82;font-weight:600}td.qa{color:#e08aa0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .carry{background:#10243a;border:1px solid #1e466b;border-radius:6px;font-size:11px;font-weight:700;color:#7dd3fc;padding:2px 8px;display:inline-block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-canada-vs-qatar.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 6-0 · 2026 世界杯 · B组次轮 · 东道主的出线生死战</span>
+  <h1>加拿大 vs 卡塔尔</h1>
+  <div class="meta">2026年6月18日 · 温哥华 BC Place（满座） · 18:00 ET / 15:00 PT · B组（同组：瑞士、波黑 · 首轮后四队全部 1 分同分）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇨🇦 加拿大</div><div class="rk">FIFA #30 · 东道主 · 首轮 1-1 波黑（68% 控球只换 1 分）</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e08aa0">🇶🇦 卡塔尔</div><div class="rk">FIFA #55 · 亚洲杯卫冕冠军 · 首轮 1-1 瑞士（90+4′ 绝平拿队史世界杯首分）</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 加拿大 6-0 卡塔尔（半场 3-0）· 温哥华 BC Place · 主裁 Cristián Garay（智利）· Jonathan David 帽子戏法 · 卡塔尔两黄变红收场 9 打 11 · 数据来源 FIFA / ESPN / Opta / FotMob / Globalnews · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场<b>"东道主提前下班、对手雪上加霜"</b>的一边倒大胜——加拿大不仅兑现了首轮没拿到的三分，还创下队史世界杯纪录。开场 <b>16′</b> Jonathan David 凌空垫射被门将 Abunada 击出、<b>Cyle Larin</b> 跟上补射破门，1-0；<b>29′</b> David 右脚凌空抽射再下一城（这是他一年多来首个运动战进球），2-0。比赛转折点在 <b>33′</b>：卡塔尔 <b>Homam Ahmed</b> 在禁区边缘对 Buchanan 犯规，主裁起初判点球 + 黄牌，VAR 复核后改判禁区外任意球、并将黄牌升级为<b>红牌</b>——卡塔尔 10 打 11、且丢掉一名主力。半场补时 <b>45+3′</b> David 在门前混战中补射（皮球先中横梁）完成梅开二度，<b>半场即 3-0</b>。下半场剧本更残酷：约 <b>55′</b> 加拿大中场 <b>Ismaël Koné 被 Assim Madibo 凶狠铲断、胫腓骨骨折被担架抬出</b>（赛后确认需手术），Madibo 由黄牌升级为红牌，<b>卡塔尔 9 打 11</b>；换上的 <b>Nathan Saliba</b> 第 <b>64′</b> 直接任意球破门 4-0、并掀起 Koné 球衣致意。此后 <b>75′</b> Mohamed Al Mannai（Manai）解围打入<b>乌龙</b>5-0，<b>90+2′</b> David 完成<b>帽子戏法</b>锁定 6-0。全场 xG 2.68-0.18、控球约 79%、射门 33-2、角球 19-1，过程与比分完全吻合。David 成为<b>自 1966 年 Geoff Hurst 以来首位在本土世界杯上演帽子戏法的球员</b>，加拿大也追平东道主世界杯最大分差纪录（1934 意大利、1950 巴西、1978 阿根廷的 6 球大胜）。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 16' Larin（补射 David 凌空被扑出的脱手球，1-0）→ 29' J. David（右脚凌空抽射，2-0）→ 🟥 33' Homam Ahmed 红牌（犯 Buchanan，VAR 撤点改任意球+黄变红）→ 45+3' J. David（门前补射，皮球先中梁，3-0）→ HT 3-0 → ~55' Koné 重伤离场，🟥 Madibo 红牌（黄变红，卡塔尔 9 人）→ 64' Saliba（直接任意球，替补登场即破门，4-0）→ 75' Al Mannai 乌龙（5-0）→ 90+2' J. David（帽子戏法，6-0）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇨🇦 加拿大</th><th style="padding:6px">🇶🇦 卡塔尔</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center"><b>≈79%</b></td><td style="text-align:center">≈21%</td><td style="padding:6px;color:var(--mut)">比首轮 68% 还高——卡塔尔六后卫死守 + 两度少打一人，主动让出几乎全部球权</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>2.68</b></td><td style="text-align:center">0.18</td><td style="padding:6px;color:var(--mut)">质量碾压，且实际 6 球高于 xG——终结效率终于兑现，与首轮"13 射 1 球"形成镜像</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center"><b>33 / 10</b></td><td style="text-align:center">2 / —</td><td style="padding:6px;color:var(--mut)">33 射几乎是首轮 13 射的三倍；卡塔尔全场仅 2 射，进攻被彻底掐死</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">角球</td><td style="text-align:center"><b>19</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">角球 19-1 一边倒，正是 Saliba 任意球之外加拿大持续施压的territory 写照</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">红牌</td><td style="text-align:center">0</td><td style="text-align:center"><b>2</b>（33' Ahmed · ~55' Madibo）</td><td style="padding:6px;color:var(--mut)">卡塔尔 33' 起 10 人、下半场又因铲伤 Koné 变 9 人——人数劣势把溃败放大</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">进球分布</td><td style="text-align:center"><b>David ×3 · Larin · Saliba · OG</b></td><td style="text-align:center">—</td><td style="padding:6px;color:var(--mut)">运动战、定位球（任意球）、乌龙、补射多点开花——破密集的方式比首轮丰富得多</td></tr>
+      <tr><td style="padding:6px">伤情 · 黄红</td><td style="text-align:center">Koné 胫腓骨骨折</td><td style="text-align:center">2 红</td><td style="padding:6px;color:var(--mut)">大胜被 Koné 重伤蒙上阴影（赛后需手术）——这是加拿大付出的真实代价</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 终结效率终于兑现——破密集的"临门一脚"病灶被根治了一场</div>首轮 68% 控球、13 射只入 1 球；本场 79% 控球、33 射、6 球，xG 2.68 高效转化。Larin（首发）补射、David 凌空 + 补射 + 收尾、Saliba 任意球、对手乌龙——加拿大用<b>多终结点 + 多得分方式</b>解决了首轮最大顽疾。<b>这说明加拿大</b>：把首轮超级替补 Larin 提到首发、David 居中的"加终结力"思路是对的，当射门量与质量同时上来，控球终于换成了进球。</div>
+    <div class="insight"><div class="who">② 这场大胜含金量需打折——卡塔尔自第 33 分钟起就崩了</div>2-0 时 Homam Ahmed 红牌让卡塔尔 10 打 11，下半场 Madibo 再染红变 9 人，原本就是六后卫死守的弱旅彻底失去抵抗能力。<b>这说明加拿大</b>：6-0 的分差有相当比重来自对手减员与心态崩盘，加拿大确实把人数与质量优势吃干抹净（这正是强队该做的），但面对<b>满员、纪律更好的对手（如下一场瑞士）能否复制如此效率，仍是问号</b>——大胜不宜过度外推。</div>
+    <div class="insight"><div class="who">③ Jonathan David 是这支球队真正的上限</div>David 一人贡献帽子戏法（含运动战、补射、收尾），还间接制造了 Larin 的首球（凌空被扑出后的脱手球）。这是他一年多来首个运动战进球，状态彻底打开。<b>这说明加拿大</b>：在 Davies 缺阵期，David 才是球队的进攻引擎与最高终结点——他的火热状态能否延续到与瑞士的强强对话，直接决定加拿大的小组头名与淘汰赛走得多远。</div>
+    <div class="insight"><div class="who">④ 卡塔尔的"死守 + 定位球"模板被证伪——这次没能复制绝平瑞士的剧本</div>首轮卡塔尔靠低位块 + 90+4′ 定位球从瑞士偷到 1 分；本场同样摆出六后卫，却在 33′ 就因红牌失去结构，xG 仅 0.18、全场 2 射。<b>这说明卡塔尔</b>：其唯一现实武器（韧性 + 定位球偷分）高度依赖"11 人完整 + 比分胶着"两个前提，一旦早早丢球 + 减员，纪律性防守瞬间瓦解——技术与人员深度的代差在逆境中被放大。</div>
+    <div class="insight"><div class="who">⑤ 大胜的代价：Koné 重伤是真实的战术减项</div>中场 Koné 被 Madibo 铲断致胫腓骨骨折、赛后确认需手术，本届基本报销。<b>这说明加拿大</b>：在收获队史首胜与净胜球红利的同时，失去一名中场轮换——对阵控传更强的瑞士时，Eustáquio 身边的中场屏障厚度被削弱，这是 6-0 光环下被低估的实质损失（Saliba 替补即破门是宽慰，但深度变薄是事实）。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>速览"加拿大是压倒性热门、去水隐含 ≈70%"→ 实际加拿大胜</b>：基准方向完全正确，热门兑现且远超预期。</li>
+      <li>✗ <b>速览"加拿大低分小胜（1-0 / 2-0）"→ 实际 6-0</b>：胜负方向对，但分差远大于"低分小胜"预期——首轮病灶 + 对手两张红牌共同制造了大比分。</li>
+      <li>✗ <b>"近 11 场未单场进 3 球、赢但赢不大、BTTS No / 小球"→ 实际 6 球、净胜 6 球</b>：进球乏力的历史基准被彻底打破；让球加 −1.5（需净胜 2 球）轻松兑现，"赢不大"判读被红牌剧本推翻。</li>
+      <li>✓ <b>核心判读"加拿大破密集的效率是胜负手"→ 兑现</b>：射门量与终结效率同时上来，控球转化为进球，正是首轮没做到、本场做到的事。</li>
+      <li>✓ <b>"卡塔尔唯一武器是死守 + 定位球 + 韧性"→ 部分兑现后崩盘</b>：判读对了卡塔尔的打法，但其武器在 33′ 红牌后失效——本站早已点出该模板"依赖 11 人 + 胶着"的脆弱性。</li>
+      <li>△ <b>"Davies 大概率缺席"→ 实际进入名单但未登场</b>：复出流程赶上了名单，但 Marsch 在 6-0 占优下未冒险使用，左路爆点仍未亮相——方向基本成立、细节略有出入。</li>
+      <li>△ <b>市场过热指数 3/5（出线生死 + Davies 悬念驱动）→ 部分成立</b>：胜负兑现，但比赛走向（红牌 + 大胜）远比"窄幅控制"开放，过热点更多落在让球与大小球的反向兑现。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇦 加拿大 → 6/24 vs 瑞士（温哥华 BC Place · 小组头名之争）</div>① <b>胜局在手、积 4 分领跑</b>：凭净胜球反超瑞士居小组第一，出线几近锁定，末轮直接争头名（瑞士同日 4-1 大胜波黑）；② <b>David 火热须延续</b>：帽子戏法后状态全开，对纪律更好的瑞士，他仍是最高终结点；③ <b>大胜含金量需校准</b>：6-0 有对手减员成分，面对满员、控传更强的瑞士，破密集效率能否复制是真考；④ <b>Koné 重伤是减项</b>：中场轮换变薄，Saliba/Ali Ahmed 需顶上，Eustáquio 身边屏障厚度受考验；⑤ Davies 若能登场将首度提供左路宽度。</div>
+      <div class="insight" style="margin:0"><div class="who">🇶🇦 卡塔尔 → 6/24 vs 波黑（西雅图 · 出线已基本无望）</div>① <b>两红牌停赛 carry-over</b>：Homam Ahmed（33' 红）与 Madibo（~55' 红）末轮均<b>停赛</b>，本就薄弱的阵容雪上加霜，后防与单后腰位置须重组；② <b>暴露的漏洞</b>：死守模板一旦减员即瓦解、运动战创造力几乎为零（全场 2 射 0.18 xG），对同样需要分数的波黑需找回首轮的低位纪律与定位球高点；③ <b>士气重挫</b>：从首轮绝平瑞士的高点跌入队史最惨失利，Lopetegui 需重建信心；④ Almoez Ali 等正统中锋或回归首发，为求一胜放开打。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：FIFA 官方比赛中心、ESPN、Opta Analyst、FotMob、Global News、Yahoo Sports、CBC、FOX Sports、TSN。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <!-- ===== 速览 SUMMARY ===== -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">B 组首轮两场平局后<b>四队全部 1 分同分</b>，这场是加拿大眼中"全组最可赢的一场"——拿下即一只脚踏进 32 强。加拿大是压倒性热门：博彩去水隐含胜率约 <b>70%</b>（bet365 加胜 1.29 / 美线 −370~−385），平局 5.50、卡塔尔胜约 9.50~10.75。剧本与首轮高度一致：<b>加拿大控球围攻 vs 卡塔尔低位铁桶 + 定位球/反击偷分</b>。两支球队首轮各自暴露了同一类病灶——加拿大 68% 控球、13 射只入 1 球（靠超级替补 Larin/David 救场），临门一脚是天花板；卡塔尔被瑞士 26 射 3.24 xG 狂轰却用一次定位球头球 90+4′ 绝平，<b>死守 + 定位球 + 韧性</b>是其唯一现实武器。最大单点变量仍是 <b>Alphonso Davies</b>：截至 6/15 仍在 return-to-play 流程，<b>本场大概率仍缺席</b>（赛前临场决定）。基准剧本：加拿大低分小胜（1-0 / 2-0），力争兑现首轮没拿到的三分；市场过热指数 ≈ <b>3/5</b>。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">加拿大隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈70%</div></div>
+      <div class="key"><div class="k">小组同分</div><div class="v" style="color:var(--warn)">四队均 1 分</div></div>
+      <div class="key"><div class="k">Davies</div><div class="v" style="color:var(--bad)">大概率缺席</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>加拿大破密集的效率</b>：首轮 68% 控球、17 次禁区触球只换 1 球——面对会比波黑更深的卡塔尔铁桶，临门一脚必须改进，否则又是一场难受的胶着。</li>
+      <li><b>卡塔尔的定位球与门将 Abunada</b>：Khoukhi 的头球（首轮绝平者）+ 状态火热的门将 Abunada（对瑞士 5 次关键扑救）是卡塔尔守平甚至偷分的两大支柱。</li>
+      <li><b>Davies 是否复出</b>：若这位拜仁边翼复出，直接解决加拿大首轮暴露的"无宽度"问题；若再缺席，破局重担继续压在 David/Buchanan 两点上。</li>
+      <li><b>出线算分</b>：四队同分下，净胜球与进球数变得敏感——加拿大有动机赢得更多，但其近 11 场未尝单场进 3 球，"赢但赢不大"是市场基准。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">加拿大 · 重大伤停 <span style="color:var(--mut);font-weight:400">· ESPN / CBC · 06-15 · 双源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">队长 Alphonso Davies <b>本场大概率仍缺席</b>：周一仍处 return-to-play 流程，"几乎不可能在周四达到比赛状态"</div>
+      <p style="font-size:13.5px">加拿大队长 Davies 周一仅与队伍热身、仍未恢复完整合练，处于伤愈复出（return-to-play）保护流程中。CBC 与 ESPN 均报道：尽管 Marsch 此前称其"接近健康"，<b>他几乎确定无法出战周四对卡塔尔</b>，本周内升上比赛状态的可能性极低，属赛前临场决定。Davies 5/6 在拜仁欧冠半决赛对巴黎拉伤腿筋，此前自 2025 年 3 月十字韧带撕裂后一直未为国家队出场。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：<span class="carry">上一场带入</span> 首轮赛后迁移点明确写道"Davies 若复出可直接解决无宽度问题"——但若他再度缺席，加拿大的左路爆点与由守转攻速度继续缺位，破密集重担集中在 David（中路硬解）+ Buchanan（右路一对一）两点。这是本场最大的单点变量，也是市场对"加拿大赢但赢不大"定价的底层逻辑。<span style="color:var(--warn)">[最终是否进名单以开球前官方为准 · 待核]</span></div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.cbc.ca/sports/soccer/worldcup/fifa-canada-world-cup-ali-ahmed-chris-jones-june-15-9.7236016" style="color:var(--accent)">CBC Sports — Davies 大概率缺席卡塔尔</a> · <a href="https://www.espn.com/soccer/story/_/id/49076456/alphonso-davies-injury-canada-world-cup-qatar" style="color:var(--accent)">ESPN — 仍未恢复完整合练</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">加拿大 · 上一场带入 <span style="color:var(--mut);font-weight:400">· 本站首轮复盘 · 06-12</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>首轮 1-1 平波黑：68% 控球、13 射只入 1 球</b>，靠超级替补 Larin 78′ 扳平救场；定位球丢球暴露禁区盯人</div>
+      <p style="font-size:13.5px"><span class="carry">上一场带入</span> 加拿大主场首秀被波黑一次角球（Lukic 头球）先声夺人，全场压制却久攻不下，直到 Marsch 第 76′ 换上 Cyle Larin、78′ Larin 接 Promise David 直塞扳平。控球 68% vs 32%、xG 1.25 vs 0.98、17 次禁区触球——<b>有球权没纵深、临门一脚低效</b>是本场必须解决的核心课题。本站首轮复盘的迁移结论：① Davies 有望回归（现已大概率仍缺）；② 破密集仍是核心课题，Larin 前置或双前锋值得考虑；③ 定位球防守要补（对身高占优的对手加强禁区盯人）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：卡塔尔会比波黑摆得更深（首轮对瑞士只有 31% 控球、0.76 xG），加拿大首轮"破密集低效"的病灶在本场只会被放大。ESPN 前瞻直言加拿大的当务之急是"在维持强度的同时把握更高质量的射门"——这正是首轮没做到的事。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/首轮数据</a> · <a href="https://theanalyst.com/articles/canada-vs-bosnia-herzegovina-stats-world-cup-2026" style="color:var(--accent)">Opta — 加拿大-波黑数据</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">卡塔尔 · 上一场带入 <span style="color:var(--mut);font-weight:400">· 本站首轮复盘 · 06-13</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>首轮 1-1 平瑞士：被 26 射 3.24 xG 狂轰，90+4′ Khoukhi 头球绝平</b>拿到队史世界杯首分；门将 Abunada 5 次关键扑救</div>
+      <p style="font-size:13.5px"><span class="carry">上一场带入</span> 卡塔尔死守低位、几乎全程挨打，却用一次补时定位球偷到历史性 1 分。本站首轮复盘的迁移结论：① <b>低位块 + 定位球 = 可复制模板</b>，加拿大首轮 68% 控球只逼平波黑，卡塔尔的死守剧本对加拿大同样可能奏效；② <b>定位球高点是得分指望</b>，Khoukhi 的头球对依赖角球的加拿大是双刃；③ <b>士气红利</b>，拿到队史首分后球队信心与防守纪律会更稳。下半场 Lopetegui 把防线压高、要求中场更高位逼抢、前锋更多跑身后——ESPN 认为卡塔尔"在洲际赛场习惯主动进攻、放开打才是最佳状态"，对一支连波黑反击都吃力的加拿大，"进攻或许是最好的防守"。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：卡塔尔首轮证明了死守 + 定位球能从强队身上偷分。但其首轮全队本土联赛球员、技术差距明显，且首轮录得"全部参赛队中最低的逼抢强度"（让瑞士场均 34.7 脚传球才做一次防守动作）——这意味着加拿大会拿到大量球权，胜负手在于<b>加拿大能否把球权转化为高质量射门、并守住卡塔尔的定位球</b>。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/qatar-vs-switzerland-stats-world-cup-2026" style="color:var(--accent)">Opta — 卡塔尔-瑞士数据</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/qatar-canada-lopetegui/" style="color:var(--accent)">101GG — Lopetegui："1 分是梦想，会继续做梦"</a> · <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 卡塔尔需放开打</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">阵容信号 · 双方预测首发 <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole · 06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">加拿大或回 4-4-2（David + Promise David/Oluwaseyi 双前锋）；卡塔尔 <b>Almoez Ali 有望首发</b>顶替三叉戟跑动型中锋</div>
+      <p style="font-size:13.5px">加拿大方面，ESPN 预测沿用首轮班底的 4-4-2 框架（Crépeau；Johnston·De Fougerolles·Cornelius·Laryea；Buchanan·Koné·Eustáquio·Millar；Promise David·Jonathan David）；若 Davies 万一可用，部分预测把他放进左路改打 4-2-3-1。卡塔尔方面，Sports Mole 称队史头号射手 <b>Almoez Ali</b>（国家队 55~60 球，首轮替补）有望回归首发，与 Afif 组成 Lopetegui 最具威胁的攻击组合；Khoukhi 继续领衔后防。<span style="color:var(--warn)">[双方官方首发以开球前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：加拿大若维持 4-4-2 双前锋，说明 Marsch 延续首轮"加终结点而非加宽度"的思路（呼应无 Davies 的现实）；卡塔尔若用 Almoez Ali 这一真正的支点中锋取代首轮的跑动型三叉戟，意味着 Lopetegui 想在定位球和反击中增加一个禁区抢点高度——这会同时影响让球盘（加 −1.5）与"双方进球"盘的判读。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 双方预测首发</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html" style="color:var(--accent)">Sports Mole — 卡塔尔预测首发/Almoez Ali</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;border-radius:12px;padding:16px 16px 4px;margin:18px 0;background:linear-gradient(180deg,rgba(22,74,42,.18),transparent 60%)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA 官方比赛中心 · T-60 公布 · 含 vs 预测对照</span></h2>
+
+    <h4 style="margin-bottom:4px">🇨🇦 加拿大 官方首发（GK + 4 后卫 + 2 中场 + 4 前锋，实战 4-2-3-1）<span style="font-size:11px;color:var(--good);font-weight:700;margin-left:6px">✅ 官方确认</span></h4>
+    <div class="lineup">Crépeau; Johnston · de Fougerolles · Cornelius · Laryea; Eustáquio(C) · Koné; Buchanan · J. David · Ali Ahmed; Larin</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">替补席关键武器：Promise David（首轮助攻者）、Liam Millar（左路宽度）、Alphonso Davies（<b>未进首发，仍在复出流程</b>）。主帅 Jesse Marsch。</div>
+
+    <h4 style="margin-bottom:4px">🇶🇦 卡塔尔 官方首发（GK + 6 后卫 + 1 中场 + 3 前锋，五后卫死守阵，≈5-3-2/5-4-1）<span style="font-size:11px;color:var(--good);font-weight:700;margin-left:6px">✅ 官方确认</span></h4>
+    <div class="lineup">Abunada; Pedro Miguel · Issa · Jassem Gaber · Ayoub Aloui · Homam Ahmed · Khoukhi(C); Madibo; Edmilson Jr. · Afif · Abdurisag</div>
+    <div style="font-size:12.5px;color:var(--mut);margin:4px 0 10px">替补席关键武器：Almoez Ali（队史头号射手，<b>预测首发却落选、留作后手</b>）。主帅 Julen Lopetegui。</div>
+
+    <h4 style="margin-bottom:4px">vs 预测首发 · 变化对照</h4>
+    <table>
+      <tr><th>队</th><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td>🇨🇦</td><td>前锋</td><td>Promise David</td><td class="ca">Larin</td><td>首轮超级替补 Larin 直接首发，与 J. David 组双终结点——Marsch 延续"加终结力而非加宽度"思路（呼应无 Davies）</td></tr>
+      <tr><td>🇨🇦</td><td>边路</td><td>Millar</td><td class="ca">Ali Ahmed</td><td>用跑动/直接的 Ali Ahmed 换 Millar，给左路补一点冲击——部分弥补 Davies 缺阵的宽度真空</td></tr>
+      <tr><td>🇨🇦</td><td>阵型</td><td>4-4-2</td><td class="ca">4-2-3-1</td><td>Eustáquio + Koné 双后腰，David 顶在最前、Buchanan/Ahmed 拉边——比双前锋更利于控球破低位块</td></tr>
+      <tr><td>🇨🇦</td><td>Davies</td><td>大概率缺席</td><td class="ca">证实缺席</td><td>最大单点变量落地：Davies 未进名单，Laryea continue 左后卫，左路爆点继续缺位，破密集压在 David/Buchanan/Larin</td></tr>
+      <tr><td>🇶🇦</td><td>锋线/中锋</td><td>Almoez Ali 回归首发</td><td class="qa">Almoez Ali 落选</td><td>本场最大爆点：预测的支点中锋 Almoez Ali 被弃用，卡塔尔放弃正统 9 号，改为<b>无中锋的死守反击</b>，Afif 单点把握机会</td></tr>
+      <tr><td>🇶🇦</td><td>阵型</td><td>四后卫</td><td class="qa">五/六后卫</td><td>Lopetegui 摆出极端防守阵（六名后卫属性球员 + 单后腰 Madibo），明摆着对东道主"摆大巴 + 定位球/反击偷分"</td></tr>
+    </table>
+
+    <h4 style="margin-bottom:4px">战术解读</h4>
+    <ul style="font-size:13.5px;line-height:1.6;margin:4px 0 10px;padding-left:18px">
+      <li><b>加拿大 Larin 首发 = 火力前置</b>：把首轮 2 分钟破门的超级替补提到首发，与 J. David 组双终结点，正面回应首轮"68% 控球、13 射仅 1 球"的临门一脚顽疾——<b>速览"加拿大低分小胜"结论维持</b>。</li>
+      <li><b>4-2-3-1 取代双前锋</b>：Eustáquio + Koné 双后腰兜底，David 居中、Buchanan/Ali Ahmed 拉边，比纯双前锋更能控球围攻、从两翼撬开铁桶——破密集的结构性升级。</li>
+      <li><b>Davies 证实缺席</b>：本站"上一场带入"的最大变量落地于"缺席"一侧，左路宽度与由守转攻速度继续缺位，Laryea 留守左后卫——破局重担集中在 David（中路）+ Buchanan（右路一对一）+ Larin（禁区终结）。</li>
+      <li><b>卡塔尔弃用 Almoez Ali、摆五后卫大巴</b>：Lopetegui 放弃正统中锋、塞满后场，赌的是定位球韧性（首轮 90+4′ 头球绝平瑞士的剧本）与 Afif 的单点灵光——这把"加拿大赢但赢不大 + 小球 / BTTS No"的叙事进一步坐实。</li>
+      <li><b>速览总结论：维持，不修正</b>。加拿大主力框架齐整、且 Larin+David 同时首发使火力强于预测，~70% 胜率基本面未被推翻；但卡塔尔六后卫死守 + 无中锋，使<b>让球盘（加 −1.5 能否净胜 2 球）与大球 / BTTS 成为真正的悬念</b> → 速览"低分小胜（1-0/2-0）"结论维持，BTTS No / 小球价值强化。</li>
+    </ul>
+
+    <h4 style="margin-bottom:4px">市场反应</h4>
+    <p style="font-size:13px;color:#cbd5e1;margin:4px 0 10px">赛前盘口（欧洲小数盘）：加胜 <b>1.29</b> · 平 <b>5.50</b> · 卡胜 <b>≈9.50~10.75</b>；让球加 −1.5 约 <b>1.83</b>。官方首发<b>无核心伤退式爆冷</b>（加拿大反而以 Larin 首发增强火力，卡塔尔则主动减配进攻），1X2 方向不受冲击；卡塔尔弃用 Almoez Ali、六后卫死守，方向上<b>小幅利好小球 / BTTS No，并增加加拿大 −1.5 净胜 2 球的难度</b>。仅作事实陈述，非投注建议。</p>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:2px">来源：FIFA 官方比赛中心 — 官方首发 XI（权威官方源，用户提供赛前截图）· 对照预测：<a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html" style="color:var(--accent)">Sports Mole</a></div>
+  </section>
+
+  <!-- ===== 1 数据面 ===== -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· B组同分格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>B 组首轮后积分（四队全部 1 分）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇦 加拿大</th><th>🇶🇦 卡塔尔</th></tr>
+      <tr><td>FIFA 排名</td><td class="ca">#30</td><td class="qa">#55</td></tr>
+      <tr><td>主教练</td><td class="ca">Jesse Marsch（前利兹联）</td><td class="qa">Julen Lopetegui（前皇马/西班牙）</td></tr>
+      <tr><td>首轮战绩</td><td class="ca">1-1 波黑（68% 控球 · xG 1.25 · 13 射 1 球）</td><td class="qa">1-1 瑞士（31% 控球 · xG 0.76 · 被 26 射）</td></tr>
+      <tr><td>状态</td><td class="ca">近 9 场不败；但近 11 场未单场进 3 球，近 9 场场均仅 1.0 球</td><td class="qa">大赛前 6 场不胜后，首轮绝平拿队史世界杯首分</td></tr>
+      <tr><td>上两届大赛</td><td class="ca">世界杯 2022 小组三战全负（0 分）· 美洲杯 2024 殿军（四强负阿根廷、季军战点球负乌拉圭）</td><td class="qa">世界杯 2022 东道主三连败（0 分）· 亚洲杯 2023 卫冕冠军（决赛 3-1 约旦，Afif 帽子戏法）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ca">胜 1.29（隐含≈70%）</td><td class="qa">胜 ≈9.50~10.75（≈10%）· 平 5.50（≈18%）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="ca">加拿大 −1.5 约 1.83（−120）；大 2.5 略占优（约 −125）但与"加拿大进球乏力"矛盾；BTTS No 约 −175 为较锐一侧</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查正式交手记录——本场为两队首次交锋（待核）</td></tr>
+      <tr><td>核心球员</td><td class="ca">Jonathan David / Tajon Buchanan / Stephen Eustáquio</td><td class="qa">Akram Afif / Almoez Ali / Boualem Khoukhi / 门将 Abunada</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈70/18/10）。赔率来源：bet365（加 1.29 / −370）、bet99（加 −370、平 +450、卡 +975）、其他书商卡塔尔报至 +1050。让球加拿大 −1.5 约 1.83（−120，需净胜 2 球）；大小球小幅偏大（Over 2.5 约 −125），但与加拿大近况进球乏力矛盾，故 <b>BTTS No（约 −175）才是较锐一侧</b>。数据模型给加拿大 69.8% / 平 19.4% / 卡塔尔 10.8%，预期进球加 1.93、卡 0.59、合计 2.53——与博彩去水方向一致。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇦 加拿大 · 进攻 xG/纵深</td><td class="ht">Marsch 治下靠 Davies 宽度 + 高位反击，热身/预选进球尚可</td><td class="ht">首轮 <b>xG 1.25</b>、68% 控球、17 次禁区触球却 1-1 平波黑</td><td>控球大涨但<b>纵深低于</b>潜力——失去 Davies 后进攻横向倒脚、破密集低效，"有球权没纵深"被坐实</td></tr>
+      <tr><td class="ht">🇨🇦 加拿大 · 防守 xGA</td><td class="ht">历史防线中游</td><td class="ht">首轮让波黑 <b>xGA 0.98</b>（仅 1/3 控球下）丢 1 球</td><td>防守端被低控球对手造出近似威胁，<b>持平偏弱</b>于历史——反击防护是隐患</td></tr>
+      <tr><td class="sc">🇶🇦 卡塔尔 · 进攻 xG</td><td class="sc">亚洲杯两连冠（2019/2023）进攻高效，但 2022 世界杯主场三战低迷、进 1 球</td><td class="sc">首轮 <b>xG 0.76</b>、31% 控球，1-1 平瑞士</td><td>面对强队回到"低位求生"档，<b>接近</b>2022 世界杯低迷基准——对加拿大或同样低控球</td></tr>
+      <tr><td class="sc">🇶🇦 卡塔尔 · 防守 / 定位球</td><td class="sc">亚洲杯以低失球+定位球见长（2023 夺冠靠防守）</td><td class="sc">首轮挨 26 射仍撑到 90+4′，<b>靠定位球（Khoukhi 头球）偷 1 分</b></td><td><b>兑现</b>历史长板：纪律低位 + 定位球高点 + 韧性，是东道区球队的现实模板</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：加拿大本届控球升、纵深降（缺 Davies），实际进攻<b>低于</b>潜力；卡塔尔进攻回到 2022 世界杯低迷档，但防守+定位球韧性<b>兑现</b>历史长板。深度数据支持"加拿大控场占优、但破低位块效率存疑，卡塔尔有定位球偷分土壤"的主线——也解释了为何 BTTS-No 一侧较锐。来源：Opta Analyst（首轮 xG/射门）· ESPN/NBC（首轮数据）· 队史大赛/预选记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（数据模型）</td><td class="ht">加拿大 ≈1.93</td><td class="sc">卡塔尔 ≈0.59</td><td>合计 ≈2.53，与博彩去水方向一致；但加拿大"破密集低效"会压低实际转化</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内加拿大明显高于卡塔尔；超算给加拿大 69.8% / 平 19.4% / 卡 10.8%</td><td>对手强度校准后，卡塔尔逼平瑞士含金量高（瑞士 26 射），防守样本可信</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：加拿大高位逼抢+控球，卡塔尔深度低位+定位球</td><td>场面将长时间倒向加拿大，胜负在其能否打穿铁桶</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/xGscore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">四个信号 → 合成过热指数。加拿大是明确热门，但情绪溢价低于揭幕战级别——共识在"加拿大不败"，分歧在"赢几个"与"是否小球"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 胜负倾向明确；热度由出线生死 + 主场叙事推高</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向高度统一押加拿大胜，盘口稳定（加 1.29 短赔）。但<b>资金分歧全在让球（−1.5）与大小球</b>：加拿大近 11 场未进 3 球、近 9 场场均 1.0 球，让"赢但赢不大 + 小球/BTTS No"成为更被认可的角度。热度来自<b>东道主出线生死 + Davies 复出悬念</b>，而非单纯胜负盘。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：加拿大胜 全部 · 卡塔尔胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>CanadaSportsBetting（数据模型）</td><td>北美投注媒体</td><td>加拿大胜（−370）；模型给加 <b>69.8%</b>、预期进球 1.93 vs 0.59；主推"加胜 + 总进球小于 3.5"（+130）</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>加拿大胜 + 低比分；Bet Builder 侧重加拿大控场破密集</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>加拿大取胜；卡塔尔会摆深、靠定位球求一线生机</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>加拿大可控取胜；卡塔尔火力有限</td></tr>
+      <tr><td>SportsGambler</td><td>投注分析站</td><td>加拿大让球；看赢 1-2 球的低分局</td></tr>
+      <tr><td>bet365 News</td><td>书商前瞻</td><td>加拿大主胜、低比分；点名 Abunada 状态是卡塔尔守平底气</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向 100% 统一押加拿大——这是合理共识而非过热。真正分歧在<b>是否小球、BTTS 与让球幅度</b>（−1 vs −1.5）。话题热度由出线生死 + Davies 复出悬念驱动，但未见显著推动卡塔尔胜的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>加拿大胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="ca">1.29（−370）</td><td>明确倾向加拿大；平 5.50（+450）/ 卡塔尔 9.50~10.75（+850~+1050）</td></tr>
+      <tr><td>06-16</td><td>多平台</td><td class="ca">1.27~1.29</td><td>加拿大短赔窄幅波动，基本稳定（bet99 −370）</td></tr>
+      <tr><td>06-16</td><td>大/小球</td><td colspan="2" class="ca">大 2.5 略占优（约 −125）；但 BTTS No 约 −175 为更锐一侧</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>加拿大 −1.5</td><td colspan="2" class="ca">加 −1.5 约 1.83（−120），需净胜 2 球；−1 待核</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率基本不动——结果定价稳定。最活跃的价格发现在<b>让球（−1/−1.5）与大小球</b>，以及 BTTS。加拿大近 11 场未进 3 球、近 9 场场均 1.0 球，与卡塔尔深守相叠，是"小球 / BTTS No"被反复点名的结构性依据。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>数据模型</b>：CanadaSportsBetting 模型给加拿大 69.8%、平 19.4%、卡塔尔 10.8%——量化与博彩去水方向一致，无明显情绪偏离。</li>
+      <li><b>舆论焦点</b>：高度集中在 <b>加拿大的出线生死（赢即领跑、近一步晋级 32 强）</b> 与 <b>Davies 能否复出</b> 两条线——属话题热度而非资金过热。</li>
+      <li><b>卡塔尔叙事</b>：90+4′ 绝平瑞士、拿到队史世界杯首分的情怀流量仍在；Lopetegui 喊话"1 分是梦想，会继续做梦"，但技术差距与全本土阵容限制了押卡塔尔胜的信心。</li>
+      <li><b>Kalshi / Polymarket / DefiRate</b>：本场单场胜负价格、成交量与 30 天动量数据未公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（加拿大），博彩与模型方向一致，过热指数 <b>3/5</b>。热度并非来自 1X2，而是来自 <b>出线生死 + Davies 复出悬念</b> 的话题流量，以及<b>让球（−1/−1.5）、小球与 BTTS No</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.canadasportsbetting.ca/news/world-cup/canada-qatar-june-18-world-cup-prediction/">CanadaSportsBetting — 模型/赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/canada-vs-qatar-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-acVXW4O79F8N/">Racing Post — 赔率/投注</a> · <a href="https://www.sportsgambler.com/betting-tips/football/canada-vs-qatar-prediction-lineups-odds-2026-06-18/">SportsGambler</a> · <a href="https://news.bet365.com/en-us/article/canada-qatar-preview-and-lineup-predictions/2026061615094532979">bet365 News — 前瞻</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760440">ESPN Odds</a></div>
+  </section>
+
+  <!-- ===== 2 当值裁判 ===== -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>（ESPN，06-16）：本场主裁为智利籍 <b>Cristián Garay</b>（37 岁）。这是其个人<b>首次执法世界杯正赛</b>。来源：ESPN / WorldReferee。</div>
+    <h4>近两届大赛 + 可查执法尺度（实际数据，样本有限）</h4>
+    <ul class="cl">
+      <li><b>大赛样本极有限</b>：Garay 的洲际大赛履历仅美洲杯 2024 一场小组赛（厄瓜多尔 vs 牙买加，B 组），此外为 2026 世界杯南美区预选赛（含 2024-10 在布宜诺斯艾利斯纪念碑球场的一场）。<b>世界杯正赛无任何执法样本——这是其世界杯首秀</b>，因此本场裁判面的可预测性显著低于拥有大赛大样本的欧洲名哨。</li>
+      <li><b>可查出牌基准（小样本，仅供参考）</b>：WorldReferee 收录其 7 场、累计 29 黄、0 红、1 点球，<b>场均约 4.14 黄、0 红</b>。样本量太小，不足以作为稳定的尺度画像——按 section 八规范，<b>明确标注"无大赛大样本"</b>。</li>
+      <li><b>与两队的执法史</b>：作为 CONMEBOL（南美）系裁判，与加拿大、卡塔尔两队<b>均无可查的执法历史（无样本）</b>。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——在"加拿大围攻 vs 卡塔尔深守"的结构里，卡塔尔靠门将控球/拖延保平的空间被新规压缩；但新晋世界杯裁判通常倾向求稳、少给极端判罚，本场的犯规吹罚尺度是真正的盲区。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：与英格兰-克罗地亚那种"顶级大样本欧洲哨"不同，Garay 的世界杯首秀 + 极小可查样本意味着<b>本场裁判面不构成可靠的分析维度</b>——既无法据此判断黄牌走势，也无法判断点球尺度。如实记录：南美裁判通常对身体对抗容忍度较高（理论上利于强攻一方），但 4.14 黄/场（7 场样本）不足以印证，<b>本场以"无大赛大样本、待实战观察"对待</b>。</div>
+  </section>
+
+  <!-- ===== 3 首发与关键球员 ===== -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 关键球员 <span style="font-size:11px;font-weight:700;color:var(--good);border:1px solid #1d4a2a;border-radius:6px;padding:2px 7px;margin-left:8px;vertical-align:middle">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方 ✅ 模块）</div>
+    <h4>🇨🇦 加拿大 预测首发（4-4-2 · 无 Davies）</h4>
+    <div class="lineup">Crépeau; Johnston · De Fougerolles · Cornelius · Laryea; Buchanan · Koné · Eustáquio · Millar; J. David · P. David</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ca">Jonathan David</td><td>中锋 / 尤文图斯</td><td>国家队历史射手王、点球主罚；首轮送出扳平助攻，本场仍是破密集的最高终结点</td></tr>
+      <tr><td class="ca">Tajon Buchanan</td><td>边锋 / 比利亚雷亚尔</td><td>无 Davies 后的最大爆点；右路一对一是破铁桶的主通道</td></tr>
+      <tr><td class="ca">Stephen Eustáquio</td><td>后腰/队长 / 波尔图</td><td>与 Koné 组双后腰、出球节拍器；面对深守，前场供球质量决定围攻效率</td></tr>
+      <tr><td class="ca">Cyle Larin</td><td>替补前锋</td><td>首轮超级替补、2 分钟内破门——板凳终结力是 Marsch 解密集的后手牌</td></tr>
+    </table>
+    <h4>🇶🇦 卡塔尔 预测首发（4-3-3 / 低位块）</h4>
+    <div class="lineup">Abunada; Al Oui · Pedro Miguel · Khoukhi(C) · Homam Ahmed; Gaber · Madibo · Laye; Edmilson Junior · Almoez Ali · Afif</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="qa">Akram Afif</td><td>边锋 / Al Sadd</td><td>两届亚洲杯核心、2023 决赛帽子戏法；卡塔尔唯一能改变比分的反击单点</td></tr>
+      <tr><td class="qa">Almoez Ali</td><td>中锋 / Al-Duhail</td><td>国家队历史射手王（55~60 球）；首轮替补，本场有望首发增加禁区抢点高度</td></tr>
+      <tr><td class="qa">Boualem Khoukhi</td><td>中卫/队长</td><td>35 岁老将；首轮 90+4′ 头球绝平者，攻防两端定位球都是关键</td></tr>
+      <tr><td class="qa">Mahmoud Abunada</td><td>门将</td><td>首轮对瑞士 5 次关键扑救的功臣；本场预期再面对大量射门，是守平底线</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Sports Mole / bet365），<b>以赛前官方名单为准 · 待核</b>。加拿大 Davies 是否进名单/首发是最大悬念；卡塔尔 9 号位存在 Almoez Ali vs 跑动型三叉戟的抉择（待核）。</div>
+  </section>
+
+  <!-- ===== 4 战术 + 主帅 ===== -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇨🇦 加拿大 · Jesse Marsch</div>
+        <div class="role">4-4-2 / 4-2-3-1 · 高位逼抢 + 快速转换，求节奏压制</div>
+        <ul class="cl">
+          <li>红牛系打法：高强度逼抢、抢断后快速向前——但首轮 68% 控球、13 射只入 1 球证明，<b>面对深守的铁桶，逼抢收益有限、破密集才是真课题</b>。</li>
+          <li>交叉参照：世界杯 2022 加拿大三战全负、一球未得（小组最弱）；美洲杯 2024 却踢进四强（小组爆冷 1-0 巴拿马式硬仗、点球淘汰委内瑞拉、四强惜败阿根廷）——说明 <b>这支加拿大在硬仗中能咬、但终结效率始终是天花板</b>，与首轮如出一辙。</li>
+          <li>应对：无 Davies 的宽度缺口下，Marsch 大概率延续 4-4-2 双前锋"加终结点"，并保留 Larin 作解密集的板凳奇兵；定位球攻防（首轮丢球来自角球）需同时补强。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e08aa0">🇶🇦 卡塔尔 · Julen Lopetegui</div>
+        <div class="role">4-3-3 / 5-4-1 · 低位块 + Afif 反击单点，求守平偷分</div>
+        <ul class="cl">
+          <li>前皇马/西班牙主帅定位现实：让出控球、压缩中路，把反击交给 Afif；首轮对瑞士 31% 控球、0.76 xG 是其上限画像。</li>
+          <li>交叉参照：世界杯 2022 东道主三连败、0 分 0 净胜球（队史世界杯正赛长期 0 胜）；但亚洲杯 2023 <b>卫冕夺冠</b>（决赛 3-1 约旦、Afif 帽子戏法）——<b>洲际赛场放开打才是卡塔尔最佳状态</b>，这正是 ESPN 建议其"进攻是最好的防守"的依据。</li>
+          <li>应对：首轮下半场已把防线压高、要求更高位逼抢；本场若用 Almoez Ali 增加禁区高点，意图是在定位球和反击中真正制造威胁，而非纯摆大巴——这是冷门的唯一现实路径。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5 分析师洞察 ===== -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">CanadaSportsBetting <small>· 数据模型</small></div>模型给加拿大 69.8% 胜率、预期进球 1.93 vs 0.59，并指出加拿大近 11 场未单场进 3 球、近 9 场场均仅 1.0 球——因此主推"加胜 + 总进球小于 3.5"。量化与博彩去水方向一致：加拿大该赢，但进球乏力压低了大胜与大球的概率。</div>
+    <div class="insight"><div class="who">ESPN <small>· 前瞻</small></div>加拿大的当务之急是"在维持强度的同时把握更高质量的射门"（首轮 13 射仅 4 正、靠运气与替补救场）；卡塔尔则被建议"放开打"——洲际赛场习惯主动进攻的卡塔尔，面对连波黑反击都吃力的加拿大，进攻或许是最好的防守。</div>
+    <div class="insight"><div class="who">两届大赛交叉参照 <small>· 战术信号</small></div>世界杯 2022 两队同样小组阶段挣扎（加 0 分、卡 0 分），但各自的洲际杯赛证明了上限：加拿大美洲杯 2024 四强、卡塔尔亚洲杯 2023 卫冕。本场是"东道主出线生死的硬仗效率 vs 卫冕冠军班底的死守韧性"——加拿大破密集效率与卡塔尔定位球兑现率，是真正的胜负手。</div>
+    <div class="insight"><div class="who">综合 · 裁判与盘口信号 <small>· 风险提示</small></div>裁判 Garay 世界杯首秀 + 无大赛大样本，本场裁判面不可作为可靠维度。盘口的信息含量集中在让球（−1/−1.5）、小球与 BTTS No——与"加拿大赢但赢不大、卡塔尔难进球"的双向画像一致。</div>
+  </section>
+
+  <!-- ===== 6 综合研判 & 待核 ===== -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：加拿大低分小胜（1-0 / 2-0）是基准剧本，力争兑现首轮没拿到的三分；平局（≈18%）与卡塔尔胜（≈10%）是尾部风险——卡塔尔偷分需要 Abunada 高接低挡 + 定位球（Khoukhi）兑现 + 加拿大破密集再次低效同时发生（与其首轮绝平瑞士的剧本一致）。</li>
+      <li><b>关键先生</b>：David（加/最高终结点）、Buchanan + Larin（加/无 Davies 后的破密集/板凳奇兵）、Afif（卡/反击单点）、Khoukhi（卡/定位球攻防）、Abunada（卡/守平底线）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>加拿大破密集的效率（定位球 + David/Larin 抢点） vs 卡塔尔的定位球兑现率与门将状态</b>——决定让球盘（−1/−1.5）与大小球/BTTS 的结算。</li>
+      <li><b>市场视角</b>：博彩与数据模型方向一致（加拿大明显热门），1X2 价值有限；最有信息含量的市场是<b>加拿大让球（−1/−1.5）、小球与 BTTS No</b>。过热指数 3/5（热度来自出线生死与 Davies 复出悬念，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 加拿大 Davies 是否进名单/首发（赛前临场决定，大概率仍缺）；② 卡塔尔 9 号位（Almoez Ali vs 跑动型三叉戟）；③ 双方官方首发名单；④ 主裁 Garay 在世界杯/近两届大赛单届的具体场均出牌细分（无大赛大样本，仅 7 场可查 ≈4.14 黄/0 红/1 点球）；⑤ Kalshi/Polymarket/DefiRate 单场价格、成交量与 30 天动量未公开检得；⑥ 两队历史交锋记录（疑似首次正式交手）；⑦ 亚盘让球线（−1/−1.5）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49080149/canada-vs-qatar-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/裁判/预测首发/看点</a> · <a href="https://www.cbc.ca/sports/soccer/worldcup/fifa-canada-world-cup-ali-ahmed-chris-jones-june-15-9.7236016">CBC Sports — Davies 大概率缺席</a> · <a href="https://www.espn.com/soccer/story/_/id/49076456/alphonso-davies-injury-canada-world-cup-qatar">ESPN — Davies 伤情</a><br>
+      • <a href="https://www.canadasportsbetting.ca/news/world-cup/canada-qatar-june-18-world-cup-prediction/">CanadaSportsBetting — 模型/赔率/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/canada/world-cup-2026/predicted-lineups/almoez-ali-aiming-to-return-to-the-lineup-predicted-qatar-lineup-vs-canada_599332.html">Sports Mole — 卡塔尔预测首发/Almoez Ali</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/canada-vs-qatar-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-acVXW4O79F8N/">Racing Post — 赔率/投注</a><br>
+      • <a href="https://www.101greatgoals.com/football/world-cup-news/qatar-canada-lopetegui/">101GreatGoals — Lopetegui 喊话</a> · <a href="https://theanalyst.com/articles/qatar-vs-switzerland-stats-world-cup-2026">Opta — 卡塔尔-瑞士首轮数据</a> · <a href="https://theanalyst.com/articles/canada-vs-bosnia-herzegovina-stats-world-cup-2026">Opta — 加拿大-波黑首轮数据</a><br>
+      • <a href="https://worldreferee.com/referee/cristian_garay">WorldReferee — Garay 生涯数据</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯 2026 裁判名单</a> · <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — B 组指南</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-16 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',CA='#d52b1e',QA='#8a1538',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['加拿大胜','平局','卡塔尔胜'],datasets:[{data:[70,18,10],backgroundColor:[CA,DR,QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[53,47],backgroundColor:[QA,CA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，盘面略偏大球；BTTS No 较锐）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['加拿大','瑞士','波黑','卡塔尔'],datasets:[{data:[1,1,1,1],backgroundColor:[CA,'#b91c1c','#3b6fb0',QA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:3,title:{display:true,text:'首轮后积分（四队全部 1 分）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'加拿大',data:[6.5,6,6.5,6,7.5,5.5],borderColor:CA,backgroundColor:CA+'33',pointBackgroundColor:CA},
+   {label:'卡塔尔',data:[6.5,5,5,6.5,5.5,6],borderColor:QA,backgroundColor:QA+'33',pointBackgroundColor:QA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

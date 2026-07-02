@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 荷兰 vs 日本 · 2026世界杯 F组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-netherlands-vs-japan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-netherlands-vs-japan.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-netherlands-vs-japan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-netherlands-vs-japan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-netherlands-vs-japan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#bc002d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#c47e1d,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#2a1d12,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f0a04b;font-weight:600}td.sc{color:#e8788a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-netherlands-vs-japan.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-netherlands-vs-japan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-netherlands-vs-japan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · F组首轮 · 当日最难预测的一场</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">🏁 已完赛 · 荷兰 2-2 日本</span>
+  <h1>荷兰 vs 日本</h1>
+  <div class="meta">2026年6月14日 · 阿灵顿 AT&amp;T Stadium · 16:00 ET · F组 · 排名更高的反而是日本</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f0a04b">🇳🇱 荷兰</div><div class="rk">FIFA #18 · 近13场仅1负 · 缺 Timber（整届）· Verbruggen 伤愈✅首发</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e8788a">🇯🇵 日本</div><div class="rk">FIFA #8（高于荷兰） · 6连胜进11球 · 缺 Mitoma + Endo</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-15） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 荷兰 2-2 日本 · 06-14</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">荷兰两度领先、日本两度追平。Van Dijk 第 50 分钟头球破门（1-0），Keito Nakamura 第 57 分钟在 van Hecke 身上折射扳平（1-1），Summerville 第 64 分钟再下一城（2-1）；日本第 88 分钟由 Ogawa 角球头球摆渡、<b>Kamada 头部蹭入、Verbruggen 扑救脱手入网（2-2）</b>——这是日本队史世界杯最晚进球。日本完成两度落后两度追平的逆境抢分。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 50' Van Dijk · 57' Nakamura(日) · 64' Summerville · 88' Kamada(日)</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta）</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇱 荷兰</th><th>🇯🇵 日本</th><th>解读</th></tr>
+      <tr><td class="ht">控球</td><td><b>60%</b></td><td>40%</td><td>荷兰掌控球权但未能转化为胜势——控球优势是"账面"的</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>10 / 6</b></td><td>9 / 2</td><td>荷兰 6 射正只进 2 球；日本 2 射正全部转化（且均带折射/脱手运气成分）</td></tr>
+      <tr><td class="ht">预期进球 xG</td><td colspan="2" style="text-align:center">双方均未造出一个完整 xG（日本 xGC ≈0.79）</td><td>低质量机会 + 高转化：日本两球质量低于均值，属"抓住对手失误"</td></tr>
+      <tr><td class="ht">失球性质</td><td colspan="2">荷兰两个失球均含偶然性（折射 + 门将脱手）</td><td>荷兰防线非被战术打穿，而是细节/门将处理失分</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/netherlands-vs-japan-stats-world-cup-2026">Opta Analyst — Netherlands 2-2 Japan Stats</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760425/japan-netherlands">ESPN 比赛页</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">日本的"巨人杀手"成色再次兑现，但靠韧性而非压制</div>对德/西/巴的近年战绩之后，日本又一次从落后中抢分。<b>但本场不同于 2022 逆转德西时的"低位反击 + 板凳奇兵"高质量套路</b>——这次是低 xG、靠对手失误与定位球抓机会。说明日本的下限（不输强队的韧性）很稳，但大轮换确实削弱了进攻创造力。</div>
+    <div class="insight"><div class="who">森保一大轮换的代价与红利同时显现</div>Itakura、Tomiyasu、Tanaka 集体轮休，进攻端创造力下降（仅 9 射 2 正、低 xG）印证了市场赛前对"日本攻防力下降"的读法；<b>但新鲜度让球队在 88 分钟仍有体能完成绝平。说明森保一押注的是"分组长线体能管理"</b>，MD1 抢到 1 分即达成保底目标。</div>
+    <div class="insight"><div class="who">荷兰的"该赢没赢"暴露终结与防线细节问题</div>60% 控球、6 射正只换来 2 球，且两度领先被追平。<b>说明这支荷兰进攻转化效率与领先后的比赛管理是软肋</b>——身价更高、被视为夺冠热门之一，却没能拿下轮换后的日本，是值得警惕的信号。</div>
+    <div class="insight"><div class="who">定位球（角球）成为破局点</div>日本第二个进球来自角球摆渡。<b>说明在运动战难破荷兰时，定位球是日本的有效补充武器</b>，也再次暴露荷兰防空在杂乱禁区里的不稳。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">基准：低比分，平局或荷兰小胜</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>2-2 平局，正是"最难预测→平局可能"的判读方向</td></tr>
+      <tr><td class="ht">日本大轮换→攻防力下降</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>低 xG、仅 2 射正，进攻创造力确实下滑；与市场盘口收紧方向一致</td></tr>
+      <tr><td class="ht">荷兰小胜（隐含 ≈47%）</td><td style="color:var(--warn)"><b>✗ 偏差</b></td><td>荷兰两度领先却被追平，"该赢没赢"——高估了荷兰的终结与比赛管理</td></tr>
+      <tr><td class="ht">日本"巨人杀手"韧性</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>两度落后追平，逆境成色再获印证</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f0a04b">🇳🇱 荷兰 · 下一场 vs 瑞典（6/20 休斯顿）</h4>
+        <ul class="watch">
+          <li><b>终结效率是隐患</b>：6 射正 2 球、两度被追平——对手瑞典 MD1 进 5 球（Isak+Gyökeres 双星），荷兰若再现"控球不进球"会很危险。</li>
+          <li><b>防空与定位球须补强</b>：被日本角球绝平，瑞典有高点与定位球能力，禁区杂乱处理要改善。</li>
+          <li><b>领先后比赛管理</b>：两度领先被扳平，关闭比赛的能力是 MD2 必须解决的课题。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8788a">🇯🇵 日本 · 下一场 vs 突尼斯（6/21 瓜达拉哈拉）</h4>
+        <ul class="watch">
+          <li><b>体能红利延续</b>：MD1 轮换保鲜，对突尼斯（铁桶反击型）可启用更多主力（Itakura/Kubo 创造力），进攻端有提升空间。</li>
+          <li><b>定位球是破密集钥匙</b>：本场角球建功，面对突尼斯零失球级低位块，定位球将是关键得分路径。</li>
+          <li><b>运动战创造力待解</b>：低 xG 暴露的进攻乏力，对更难攻的突尼斯须解决，否则又是低比分缠斗。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">当日<b>最难预测</b>的一场：纸面"强弱"与 FIFA 排名彻底打架——<b>日本排名 #8，反而高于荷兰 #18</b>。荷兰是传统强权、阵容身价高出一截，且近13场仅1负；日本则带着<b>6连胜（进11失2）</b>和近年掀翻德/西/巴/英的"巨人杀手"成色而来，志在突破"四度止步16强"的天花板。<b>首发已公布（见下方✅模块）</b>：荷兰门将 <b>Verbruggen 伤愈赶上、官方首发</b>——赛前"门将危机"剧本作废；日本祭出<b>大轮换</b>，核心中卫 Itakura、Tomiyasu 与中场 Tanaka 同坐替补、<b>Doan 改打翼卫并戴队长袖标</b>，森保一押注新鲜度与前场速度（Maeda 首发）。两队仍各有整届/赛季级缺阵（荷缺 Timber；日缺 Mitoma、Endo）。<b>首发公布后盘口向荷兰收紧</b>：荷兰胜 <b>+112→+100（2.12→2.00，去水隐含 ≈47%）</b>，日本侧走宽至 ≈26%，平局稳定 ≈27%——市场把日本的大轮换读作攻防力下降。基准剧本：低比分、可能平局或荷兰小胜。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">日本 FIFA 排名</div><div class="v" style="color:#e8788a">#8</div></div>
+      <div class="key"><div class="k">荷兰 FIFA 排名</div><div class="v" style="color:#f0a04b">#18</div></div>
+      <div class="key"><div class="k">日本近况</div><div class="v" style="color:var(--good)">6连胜</div></div>
+      <div class="key"><div class="k">荷兰胜赔(隐含)</div><div class="v" style="color:#f0a04b">≈47%↑</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>荷兰门将（已定）</b>：Verbruggen 伤愈官方首发，"门将危机"作废；后场出球体系按计划运转。</li>
+      <li><b>Mitoma 缺阵后的日本攻击</b>：边路爆点没了，Kubo 要扛起更多创造责任，进攻能否兑现是悬念核心。</li>
+      <li><b>排名错位的心理学</b>：荷兰是被看好一方但身背"应该赢"的压力；日本零包袱、且有掀翻强队的近期记忆。</li>
+      <li><b>"16强魔咒" vs 历史交锋</b>：日本四次止步16强；荷兰近3次交手 2胜1平，但两队自2013年起未交手。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 临场最新（首发公布后）===== -->
+  <div class="summary" style="background:linear-gradient(135deg,#10243a,#152138);border-left:4px solid var(--accent);margin-bottom:20px">
+    <h3 style="color:var(--accent)">🆕 临场最新 · 首发公布后更新（6/14 赛前）</h3>
+    <ul class="watch">
+      <li><b>荷兰门将危机解除</b>：Verbruggen 伤愈、<b>官方首发</b>——赛前"Flekken 临时顶替"剧本作废，荷兰后场出球体系无需磨合。</li>
+      <li><b>日本大轮换</b>：核心中卫 Itakura、Tomiyasu 与中场 Tanaka 均坐替补，<b>Doan 改打右翼卫并戴队长袖标</b>，Maeda 首发提速——森保一以新鲜度+前场速度对冲荷兰控球，代价是后防经验与制空下降（荷兰定位球隐患）。</li>
+      <li><b>盘口向荷兰收紧</b>：荷兰胜 +112→+100（小数 2.12→2.00，去水隐含 42%→<b>≈47%</b>），日本侧走宽至 ≈26%，平局稳 ≈27%——市场把日本大轮换读作攻防力下降。</li>
+      <li><b>基准剧本维持</b>：荷兰无传统中锋首发（Depay/Weghorst 替补）改打流动前三 + 日本攻强守新——<b>低比分、可能闷平或荷兰小胜</b>不变，悬念仍在大小球/双方进球。</li>
+    </ul>
+    <div style="font-size:12px;color:var(--mut);margin-top:6px">来源：FIFA 官方比赛中心首发 · FanDuel/bet365 当前赔率 · World Soccer Talk / lineups.com 首发确认。仅供分析参考，非投注建议。</div>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">荷兰 · 门将危机解除 <span style="color:var(--mut);font-weight:400">· 首发已官宣</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">原伤兵门将 <b>Verbruggen 伤愈赶上、官方首发</b>——"Flekken 临时顶替"剧本作废；Flekken/Roefs 坐替补</div>
+      <p style="font-size:13.5px">布莱顿门将 Bart Verbruggen 在 6/8 对乌兹别克斯坦热身中髋部挫伤一度存疑，但 FIFA 官方首发名单确认其<b>伤愈首发</b>。Bayer Leverkusen 的 Flekken 与 Roefs 同坐替补。另：Arsenal 的 <b>Jurriën Timber</b> 仍确认整届缺席。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：荷兰体系依赖门将参与后场出球。Verbruggen 健康首发意味着这一环<b>无需临时磨合</b>，赛前列为"风险点"的门将变量被移除——面对日本高位逼抢，荷兰安全出球的把握更高。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470" style="color:var(--accent)">FIFA 官方比赛中心 — 首发名单</a> · <a href="https://worldsoccertalk.com/amp/world-cup/netherlands-vs-japan-confirmed-lineups-for-2026-world-cup-group-f-game/" style="color:var(--accent)">World Soccer Talk — 确认首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">日本 · 大轮换 <span style="color:var(--mut);font-weight:400">· 首发已官宣</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">核心中卫 <b>Itakura、Tomiyasu</b> 与中场 <b>Tanaka</b> 同坐替补，<b>Doan 改打右翼卫并戴队长袖标</b>，Maeda 首发提速</div>
+      <p style="font-size:13.5px">官方首发：Z. Suzuki；Taniguchi·Watanabe·Itō；Doan(C)·Kamada·Sano·Nakamura；Kubo·Ueda·Maeda。被传接任队长的 Itakura、老将 Tomiyasu、中场 Tanaka 均被按在替补席，森保一选择更年轻、更具速度的组合。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是一次<b>豪赌新鲜度与前场速度</b>的轮换——Maeda 的纵向冲击弥补 Mitoma 缺阵的边路爆点；代价是后防经验与制空下降，面对 Van Dijk 领衔的荷兰<b>定位球</b>是隐患。市场据此把日本胜赔走宽（≈31%→≈26%）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.lineups.com/betting/netherlands-vs-japan-starting-lineups-6-14-2026" style="color:var(--accent)">lineups.com — 确认首发</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470" style="color:var(--accent)">FIFA 官方比赛中心</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">日本 · 攻击线减员 <span style="color:var(--mut);font-weight:400">· 05 月 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">关键边锋 <b>Mitoma 因腿筋伤整届报销</b>（手术后或休养至 6 个月）；老队长 <b>Endo</b> 因伤退出国家队——Kubo 创造责任加重</div>
+      <p style="font-size:13.5px">布莱顿边锋 Kaoru Mitoma 在赛季后段腿筋受伤，未入选日本世界杯名单，主帅森保一称之为"巨大打击"。中场核心、老队长 Wataru Endo 也因脚伤未能康复、宣布退出国家队。预测日本以 3-4-2-1 出战，<b>Kubo 与 Doan</b> 任两个前腰位、<b>Ueda</b> 单箭头；Endo 的位置预计由 Kamada/Tanaka 顶上。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Mitoma 是日本左路最稳定的"一对一过人+造杀机"来源，他的缺席让日本的边路爆点骤减，进攻更依赖 Kubo 的内切组织与 Ueda 的支点。对位荷兰的高大后防（Van Dijk 领衔），日本若无 Mitoma 的纵向冲击，破密集的手段被压缩——这正是"日本排名更高但进攻能否兑现"的最大问号。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48775615/kaoru-mitoma-ruled-world-cup-injury-takehiro-tomiyasu-recalled-japan-squad" style="color:var(--accent)">ESPN — Mitoma 报销</a> · <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/predicted-lineups/will-tanaka-step-up-in-endos-absence-predicted-japan-lineup-vs-netherlands_599063.html" style="color:var(--accent)">Sports Mole — 日本预测首发 / Endo 缺阵</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">状态对照 · 形势 <span style="color:var(--mut);font-weight:400">· 赛前数据</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">荷兰<b>近13场仅1负</b>（唯一败仗 0-1 阿尔及利亚热身）；日本带<b>6连胜（进11失2）</b>且新近掀翻过德/西/巴/英</div>
+      <p style="font-size:13.5px">两队状态都极佳：荷兰近13场只输过一次（赛前对阿尔及利亚 0-1）；日本则是 6 连胜、进 11 球只失 2 球，且近两年有击败德国、西班牙、巴西、英格兰的"巨人杀手"履历。日本的历史性目标是<b>首次突破16强</b>——此前四度止步该轮。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：当"强弱"无法用排名简单切分时，状态与心态成了最重要的可读信号。日本零包袱+巨人杀手记忆是软实力加分；荷兰则被期待"应该赢"，首战求稳的传统可能让比赛变闷。这解释了为何盘口三分天下而非一边倒。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-japan-prediction-team-news-lineups_599059.html" style="color:var(--accent)">Sports Mole — 前瞻/状态</a> · <a href="https://www.aljazeera.com/sports/2026/5/22/japans-world-cup-2026-team-preview-players-to-watch-group-squad" style="color:var(--accent)">Al Jazeera — 日本队预览</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">美国裁判 <b>Ismail Elfath</b>（得州奥斯汀居民、得州大学毕业）执法；2022 世界杯执法经历</div>
+      <p style="font-size:13.5px">主裁为美国名哨 <b>Ismail Elfath</b>，2022 卡塔尔世界杯执法者之一，MLS 主力裁判（曾执法 2022 MLS 杯决赛、2023 联盟杯决赛）。生涯数据：约 <b>3.6 张牌/场、0.26 个点球/场、约 21.6 次犯规/场</b>（多源统计）。与荷兰、日本国家队均无可查执法历史（<b>无样本，如实说明</b>）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Elfath 的牌量属中等偏上、点球率不高，整体执法风格在 MLS 偏放任身体对抗。世界杯首战裁判通常吹罚更谨慎，本场结构（日本快速转换 vs 荷兰高大对抗）双向都有接触点；若延续其常规尺度，比赛不至于过碎。<b>两面提醒</b>：MLS 样本与世界杯尺度不完全可比，且对两队均无历史样本，牌数/点球类盘口缺乏裁判面直接依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.wfaa.com/article/sports/soccer/world-cup/ismail-elfath-austin-texas-netherlands-japan-world-cup-ref/287-539728bf-30cc-4450-a371-90fbaca3ac97" style="color:var(--accent)">WFAA — Elfath 任命</a> · <a href="https://kickoffscore.com/referees/ismail-elfath" style="color:var(--accent)">KickoffScore — Elfath 数据</a> · <a href="https://worldreferee.com/referee/ismail_elfath" style="color:var(--accent)">WorldReferee — Elfath 档案</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA 官方名单 · 已官宣</span></h2>
+    <div class="sub">来源：FIFA 官方比赛中心（match centre）赛前公布的首发名单——权威单一来源，标 <b style="color:var(--good)">✅ 官方确认</b></div>
+
+    <!-- ① 双方官方 XI -->
+    <h4>🇳🇱 荷兰 · 官方首发（4-1-2-3）</h4>
+    <div class="lineup">Verbruggen; Dumfries · Van Hecke · Van Dijk(C) · Van de Ven; De Jong; Gravenberch · Reijnders; Gakpo · Malen · Summerville</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#f0a04b">Memphis Depay</b>（#10）、<b style="color:#f0a04b">Wout Weghorst</b>（#9，传统中锋）、Brian Brobbey（#19）；门将 Flekken/Roefs 均坐替补。</div>
+
+    <h4 style="margin-top:16px">🇯🇵 日本 · 官方首发（3-4-3）</h4>
+    <div class="lineup">Z. Suzuki; Taniguchi · Watanabe · Itō; Doan(C) · Kamada · Sano · Nakamura; Kubo · Ueda · Maeda</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#e8788a">Kou Itakura</b>（#4，原被传接任队长，本场坐替补）、<b style="color:#e8788a">Takehiro Tomiyasu</b>（#22）、Junya Itō（#14）、Ao Tanaka（#7）、Koki Ogawa（#19）。</div>
+
+    <!-- ② vs 预测对照 -->
+    <h4 style="margin-top:18px">② 官方 vs 本站预测 · 逐条对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">荷·门将</td><td>Flekken（顶替伤兵）</td><td><b>Verbruggen</b></td><td>Verbruggen 伤愈赶上首发——"<b>门将危机</b>"剧本作废，荷兰后场出球体系无需临时磨合</td></tr>
+      <tr><td class="ht">荷·中卫</td><td>De Ligt</td><td><b>Van Hecke</b></td><td>年轻的 Van Hecke 搭档 Van Dijk，制空与对位 Ueda 的经验略降</td></tr>
+      <tr><td class="ht">荷·锋线</td><td>Depay 领衔</td><td><b>Summerville</b>（Depay+Weghorst 同坐替补）</td><td>无传统中锋首发，改打<b>流动型前三/伪九</b>——强调跑动与控球，禁区终结点存疑</td></tr>
+      <tr><td class="sc">日·阵型</td><td>3-4-2-1</td><td><b>3-4-3</b></td><td>更靠前的三前锋结构，进攻意图比"双影锋单箭头"更直接</td></tr>
+      <tr><td class="sc">日·队长/中卫</td><td>Itakura 首发并接任队长</td><td><b>Itakura 坐替补，Doan 戴袖标</b></td><td>重大轮换——核心中卫与新任队长被按在替补席，防线经验下降</td></tr>
+      <tr><td class="sc">日·中场</td><td>Tanaka · Sugawara · Seko</td><td><b>Sano · Kamada</b>（三人均替补）</td><td>中场组合大改，Sano 顶上拦截/出球，Tanaka/Tomiyasu 都未首发</td></tr>
+      <tr><td class="sc">日·锋线</td><td>Kubo+Doan 双影锋</td><td><b>Kubo · Maeda · Ueda</b>（Doan 下放右翼卫）</td><td>Maeda 入替带来纵向冲击，弥补 Mitoma 缺阵的边路速度</td></tr>
+      <tr><td>一致项</td><td colspan="2">荷：Dumfries/Van de Ven/De Jong/Reijnders/Gravenberch/Malen/Gakpo；日：Z. Suzuki/Taniguchi/Itō/Ueda/Kubo</td><td>两队中轴与多名主力与预测一致——计划 A 大体执行</td></tr>
+    </table>
+
+    <!-- ③ 战术解读 -->
+    <h4 style="margin-top:18px">③ 战术解读（官宣后）</h4>
+    <div class="insight"><div class="who">速览结论 · 维持（基准不变）<small>· 低比分仍是基准</small></div>荷兰无传统中锋首发（Depay/Weghorst 同坐替补）、改打流动前三，禁区终结点被弱化；叠加日本 3-4-3 的攻强守新——<b>低比分、可能闷平或荷兰小胜的基准剧本维持</b>，悬念仍在大小球/双方进球而非胜平负。</div>
+    <div class="insight"><div class="who">关键修正 · 门将危机作废 <small>· 风险点移除</small></div>赛前主线之一"Verbruggen 伤退、Flekken 临时顶替"已被官方名单<b>推翻——Verbruggen 健康首发</b>。荷兰依赖门将参与出球的体系不再有临时变量，这一项<b>由"风险"修正为"非问题"</b>。</div>
+    <div class="insight"><div class="who">荷兰 · 伪九信号 <small>· 阵型信号</small></div>4-1-2-3 配 Gakpo/Malen/Summerville 的无中锋前三，意在用跑动与短传压缩日本转换空间；但缺支点意味着<b>定位球与传中的头球终结威胁下降</b>（Van Dijk 仍是定位球点）——若久攻不下，Depay/Weghorst 是后手强心针。</div>
+    <div class="insight"><div class="who">日本 · 轮换豪赌 <small>· 体能/新鲜度意图</small></div>Itakura、Tomiyasu、Tanaka 均坐替补，Doan 改打翼卫并戴袖标——森保一押注<b>新鲜度与前场速度（Maeda）</b>对冲荷兰控球。代价是后防线经验与制空下降，面对荷兰定位球是隐患。</div>
+
+    <!-- ④ 市场反应 -->
+    <h4 style="margin-top:18px">④ 市场反应</h4>
+    <div class="note">首发公布后<b>盘口向荷兰收紧</b>：荷兰胜 +112→+100（小数 2.12→2.00，去水隐含 42%→≈47%），日本胜走宽至 ≈26%、平局稳 ≈27%。市场把<b>日本大轮换</b>（Itakura/Tomiyasu/Tanaka 替补）读作攻防力下降；荷兰无传统中锋首发属轻度利空，但被门将危机解除对冲。仅作事实陈述，非投注建议。</div>
+
+    <!-- ⑤ 来源 -->
+    <div class="src" style="margin-top:14px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021470">FIFA 官方比赛中心 — Netherlands vs Japan 首发名单</a>（✅ 官方确认）</div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · 近期状态 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>FIFA 排名对比（数字越小越强）</h5><canvas id="rankChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（赔率去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>近期战绩（最近若干场，胜/平/负）</h5><canvas id="formChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇱 荷兰</th><th>🇯🇵 日本</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#18</td><td class="sc">#8（高于荷兰）</td></tr>
+      <tr><td>近期状态</td><td class="ht">近13场仅1负（唯一败 0-1 阿尔及利亚）</td><td class="sc">6连胜 · 进11失2</td></tr>
+      <tr><td>近年标志战</td><td class="ht">传统强权；阵容身价占优</td><td class="sc">曾胜德国、西班牙、巴西、英格兰</td></tr>
+      <tr><td>世界杯目标</td><td class="ht">争冠级常客</td><td class="sc">志在首次突破16强（四度止步）</td></tr>
+      <tr><td>重要缺阵 / 轮换</td><td class="ht">Timber（整届）；Verbruggen 伤愈✅首发</td><td class="sc">Mitoma（报销）、Endo（退队）；Itakura/Tomiyasu/Tanaka 轮换坐替补</td></tr>
+      <tr><td>1X2 赔率（去水隐含）</td><td class="ht">2.00（≈47%）↑</td><td class="sc">≈3.55（≈26%）↓ · 平 ≈3.50（≈27%）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">近3次荷兰 2胜1平；两队自2013年起未交手</td></tr>
+    </table>
+    <div class="note">📌 概率为赔率去水后的隐含概率（荷兰≈47% / 平≈27% / 日本≈26%；荷兰胜赔由 +112/2.12 收紧至 <b>+100/2.00</b>）。首发公布后荷兰侧收紧、日本侧走宽，但仍<b>价格相对分裂</b>——这正是"当日最难预测"的量化体现：FIFA 排名（日本更高）与市场定价（荷兰略被看好）方向相反。<span style="color:var(--warn)">[平局与日本胜的精确小数赔率为三角估算，待核]</span></div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">话题热、价格不偏：流量满格，但盘口三分天下、悬念真实</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 重磅对决 + 舆论量大但价格真正分裂</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">两支知名球队、巨人杀手叙事拉满，报道密度高；但盘口三分天下（荷兰≈47% / 平≈27% / 日本≈26%），没有一边被狂热推动——属于"故事热、价格清醒"的一场，判断应回到数据与战术。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：荷兰胜/小胜 多数 · 平 部分 · 日本胜 少数）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>荷兰小胜（低比分）</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>荷兰胜 + 偏向小球</td></tr>
+      <tr><td>Yahoo Sports</td><td>北美媒体</td><td>看好荷兰（点名 +112 价值不足以反映级别差）</td></tr>
+      <tr><td>OneFootball</td><td>聚合媒体</td><td>荷兰小胜 / 双方进球存疑</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>低比分、可能平局</td></tr>
+      <tr><td>Deadspin</td><td>北美媒体</td><td>荷兰让步偏紧，倾向小球</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号</b>：方向并不极端——多数押荷兰但比分预期偏低，且有<b>平局/小球</b>的明显支流。与当日其他场不同，这里<b>没有一边倒共识</b>，反而是"低比分"成了真正的共识。这与盘口三分天下一致：本场的可读性更多在<b>大小球/双方进球</b>而非胜平负。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（荷兰胜，小数赔率）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>荷兰胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>北美主流盘</td><td class="ht">2.12（+112）</td><td>美式 +112 换算所得</td></tr>
+      <tr><td>首发公布后</td><td>FanDuel/bet365</td><td class="ht">2.00（+100）↓</td><td>荷兰收紧——去水隐含 42%→≈47%</td></tr>
+      <tr><td>首发公布后</td><td>平 / 日本胜</td><td class="ht">≈3.50 / ≈3.55</td><td>日本走宽至 ≈26%，平稳 ≈27%</td></tr>
+    </table>
+    <div class="note">📌 <b>首发后温和单边移动</b>：荷兰胜由 2.12 收紧至 2.00，平与日本胜小幅走宽（≈3.50/3.55）。仍非稳赢盘——市场认为荷兰略占优、但日本 FIFA #8 与轮换后的不确定性相互制衡。<span style="color:var(--warn)">[各书具体小数线随时变动，以下单时为准·待核]</span></div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（Kalshi / Polymarket / DeFi 类）</b>：本场单场价格与成交量未检得明确公开数据（<b>待核</b>）；以博彩三分盘为主要参考。</li>
+      <li><b>舆论</b>：英媒与北美媒体围绕"排名错位"（日本 #8 vs 荷兰 #18）与"巨人杀手日本"做了大量内容；社媒讨论量大但情绪分散，未见对某一方的非理性押注。</li>
+      <li><b>排名错觉提醒</b>：日本 FIFA #8 高于荷兰，但荷兰阵容身价与硬仗厚度更深；排名与身价两套指标在本场指向相反方向，是悬念的根源。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"故事热、价格清醒"——舆论量大但盘口三分天下，无狂热推动。判断重心应落在<b>低比分 / 双方进球与否 / 大小球</b>，而非胜平负方向。市场盲点更可能在"低比分平局"被名人推荐低估的一侧。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-japan-prediction-team-news-lineups_599059.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-japan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aHebD0x5a8Gy/">Racing Post</a> · <a href="https://sports.yahoo.com/articles/netherlands-vs-japan-picks-predictions-164551362.html">Yahoo Sports</a> · <a href="https://onefootball.com/en/news/netherlands-vs-japan-prediction-world-cup-2026-preview-best-bets-42993964">OneFootball</a> · <a href="https://totalfootballanalysis.com/competitions/fifa-world-cup-2026/netherlands-v-japan-predictions">Total Football Analysis</a> · <a href="https://deadspin.com/betting/netherlands-vs-japan-world-cup-preview-picks-preview-odds-6-14-2026/">Deadspin</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span class="tag" style="font-size:11px;font-weight:600;background:#0f2417;border:1px solid #1d4a2a;color:var(--good);padding:2px 8px;border-radius:10px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单见上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🇳🇱 荷兰 预测首发（4-3-3）</h4>
+    <div class="lineup">Flekken(待核); Dumfries · De Ligt · Van Dijk(C) · Van de Ven; De Jong · Reijnders · Gravenberch; Malen · Depay · Gakpo</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Virgil van Dijk (C)</td><td>中卫 / 利物浦</td><td>队长、防线核心，对位日本支点 Ueda 的关键防守者</td></tr>
+      <tr><td class="ht">Frenkie de Jong</td><td>中场 / 巴塞罗那</td><td>持球出球与节奏控制，破解日本逼抢的发动机</td></tr>
+      <tr><td class="ht">Memphis Depay</td><td>前锋 / 国家队史射手王</td><td>料领衔锋线（首发存在 Koeman 取舍·待核）</td></tr>
+      <tr><td class="ht">Mark Flekken</td><td>门将 / 勒沃库森</td><td>赛前预测顶替；<b>官方为 Verbruggen 伤愈首发</b>，Flekken 实际坐替补</td></tr>
+    </table>
+    <h4>🇯🇵 日本 预测首发（3-4-2-1）</h4>
+    <div class="lineup">Suzuki; Itakura · Itō · Taniguchi; Sugawara · Tanaka · Kamada · Seko; Kubo · Doan; Ueda</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Takefusa Kubo</td><td>前腰 / 皇家社会</td><td>Mitoma 缺阵后创造责任加重，内切组织的核心</td></tr>
+      <tr><td class="sc">Ayase Ueda</td><td>前锋 / 单箭头</td><td>赛季状态出色，料首发支点；破荷兰高大防线的支点</td></tr>
+      <tr><td class="sc">Ritsu Doan</td><td>前腰/边路 / 弗赖堡</td><td>两个影锋位之一；远射与逼抢贡献</td></tr>
+      <tr><td class="sc">Zion Suzuki</td><td>门将 / 帕尔马</td><td>日本新生代门将，扑救与出球均衡</td></tr>
+    </table>
+    <div class="note">阵型注：日本以 3-4-2-1 出战，Endo 退队后中场预计由 Kamada/Tanaka 顶上（具体搭配各源不一·待核）；荷兰锋线 Depay 是否首发存在 Koeman 取舍（Malen 首发为一种主流预测）。所有预测首发均为分析源推测，以官方名单为准。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f0a04b">🇳🇱 荷兰 · Ronald Koeman</div>
+        <div class="role">4-3-3 控球 + 后场出球发起</div>
+        <ul class="cl">
+          <li>典型荷兰式控球：De Jong/Reijnders 在中场掌控节奏，门将参与短传组织。</li>
+          <li>剧本：用控球压缩日本的转换空间，靠 Depay/Gakpo 的禁区终结与定位球打开局面。</li>
+          <li>风险：高位防线 + 年轻中卫 Van Hecke（顶替 De Ligt）的衔接，可能被日本快速转换打身后；首战求稳易踢闷（门将 Verbruggen 已伤愈首发，非变量）。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇯🇵 日本 · Hajime Moriyasu（森保一）</div>
+        <div class="role">3-4-2-1 · 紧凑+快速转换</div>
+        <ul class="cl">
+          <li>近年"巨人杀手"打法：高强度逼抢 + 由守转攻的快速直传，曾以此掀翻德/西/巴/英。</li>
+          <li>进攻依赖 Kubo 内切组织、两影锋穿插与 Ueda 支点；Mitoma 缺阵削弱了左路一对一爆点。</li>
+          <li>心理变量：零包袱+巨人杀手记忆是软实力；目标是首次突破16强，首战拿分即破局。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+<section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+  <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+  <div class="sub">两队都属"主动获角"型，但本场基准为低比分谨慎对攻——总角球落在中性 9 球线附近，让分接近平手（荷兰 -1.0）。</div>
+  <h4>① 两队角球画像（打法驱动）</h4>
+  <table><tr><th>维度</th><th>🇳🇱 荷兰</th><th>🇯🇵 日本</th><th>含义</th></tr>
+    <tr><td>场均获得角球</td><td class="ht">≈6.3（世预欧区）</td><td class="sc">≈6.8–7.0（世预亚区）</td><td>两队都偏向主动施压，获角数接近</td></tr>
+    <tr><td>场均被迫角球</td><td class="ht">≈2.3</td><td class="sc">≈1.8–2.1</td><td>两队防守端被压时间都不多，被迫角球都偏低</td></tr>
+    <tr><td>进攻侧重（边路/中路/高压）</td><td class="ht">边路传中为主：Dumfries 右路套上、Gakpo/Malen 拉宽，传中受阻易转角球</td><td class="sc">技术型快速短传渗透 + 高位逼抢，逼抢断球+边路内切制造角球</td><td>荷兰靠边路宽度与传中"造角"，日本靠逼抢与渗透"挤角"</td></tr>
+    <tr><td>定位球威胁</td><td class="ht">高：Van Dijk / De Ligt 头球争顶身高占优，角球是真实得分点</td><td class="sc">中：身高劣势，角球更多用于二次进攻而非直接头槌</td><td>荷兰角球转化威胁明显高于日本</td></tr>
+    <tr><td>角球占优倾向</td><td class="ht">略占优（传中体系 + 对手退防）</td><td class="sc">接近，转换快时也能压出角球</td><td>整体接近，荷兰因传中打法略多——与让分 -1.0 一致</td></tr>
+  </table>
+  <h4>② 实际盘口（角球市场）</h4>
+  <p><b>角球总数（大小球）</b>：Pinnacle 开 <b>总角球 9 球线</b>——<b>大 9：1.81 / 小 9：1.99</b>（欧洲小数）。<b>角球让分（让球）</b>：<b>荷兰 -1.0：1.83 / 日本 +1.0：1.96</b>。<b>球队单边角球</b>：荷兰 大4.5：1.62 / 小4.5：2.21（即市场预期荷兰约 5 个角球）。来源：Pinnacle 角球市场。<span style="color:var(--warn)">[各书具体线随时变动，以下单时为准·待核]</span></p>
+  <h4>③ 技术面研判（让分 & 大小球）</h4>
+  <div class="insight"><div class="who">让分（角球让球）</div>荷兰 <b>-1.0</b> 是"接近平手、略偏荷兰"的设定，与 1X2 三分盘口逻辑一致：荷兰传中体系 + 日本退防回收，理应给荷兰带来略多角球；但日本世预亚区场均获角更高，且本场对手是荷兰而非弱队，<b>让 1 个并非稳吃</b>。两侧赔率（1.83 / 1.96）几乎对称，正是"接近平手"的量化体现。</div>
+  <div class="insight"><div class="who">大小球（角球总数）</div>两队历史场均"获角"都在 6–7、合计常超 9，理论上偏大；但本场基准剧本是<b>低比分、谨慎对攻</b>——荷兰首战求稳、日本失 Mitoma 后边路爆点减少，<b>压制时间与传中频率都可能低于其常规水平</b>。因此 9 球线属<b>中性偏温和的大球</b>：打法支持小幅偏大，但闷战风险压制上限——不宜把它当强力大球看。</div>
+  <div class="insight"><div class="who">变量与两面性</div>荷兰整届缺 <b>Timber</b>（门将 Verbruggen 已伤愈首发，非变量）、官方以无传统中锋的流动前三出战——传中支点减少可能略压低其角球转化；日本缺 <b>Mitoma</b>，左路一对一造杀机与"传中受阻转角球"的来源减少，可能压低日本的获角数。<b>比分走向</b>放大一切：若荷兰早早领先并退防，后段角球会向日本倾斜（利好日本 +1.0 与大球）；若全场闷平，总角球更可能落在 9 线下方。</div>
+  <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.pinnacle.com/en/soccer/fifa-world-cup/netherlands-vs-japan/1620849619/" style="color:var(--accent)">Pinnacle — 角球市场</a> · <a href="https://www.apwin.com/team/netherlands-national-team/standings/corners/" style="color:var(--accent)">APWin — 荷兰角球数据</a> · <a href="https://www.apwin.com/team/japan-national-team/corners/" style="color:var(--accent)">APWin — 日本角球数据</a></div>
+</section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：美国 <b>Ismail Elfath</b>（得州奥斯汀居民、2022 世界杯执法者、MLS 主力）。生涯约 <b>3.6 牌/场、0.26 点球/场、约 21.6 犯规/场</b>。<b>两面提醒</b>：MLS 尺度偏放任身体对抗，但世界杯首战通常更谨慎；与两队均无执法历史（无样本），牌数/点球盘缺乏裁判面直接依据。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球规则</b>：荷兰若领先求稳、门将拖时间的空间被压缩——Verbruggen 需注意。</li>
+      <li><b>仅队长可与裁判沟通</b>：Van Dijk 的队长经验是荷兰的隐形资产。</li>
+      <li><b>半自动越位</b>：日本快速转换冲身后（Ueda/Doan）的临界球判得更快——双刃剑。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">综合 · 排名错位 <small>· 核心矛盾</small></div>FIFA 排名（日本 #8 > 荷兰 #18）与市场定价（荷兰略被看好）方向相反——这正是"当日最难预测"的本质：纸面强弱无法被单一指标拍板。</div>
+    <div class="insight"><div class="who">综合 · 日本进攻 <small>· 战术信号</small></div>Mitoma 报销让日本失去左路一对一爆点，进攻更依赖 Kubo 内切与 Ueda 支点；面对 Van Dijk 领衔的高大防线，日本能否兑现攻势是悬念核心。</div>
+    <div class="insight"><div class="who">综合 · 日本轮换 <small>· 战术信号</small></div>日本大轮换（Itakura/Tomiyasu/Tanaka 替补、Doan 翼卫戴袖标、Maeda 首发）押注新鲜度与前场速度，但后防经验与制空下降——面对 Van Dijk 领衔的荷兰定位球，是被低估的胜负细节。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：低比分基准——荷兰小胜或平局都在合理区间；日本若快速转换兑现，爆冷/拿分并非意外。</li>
+      <li><b>关键先生</b>：Van Dijk（荷/防线核心）、De Jong（荷/出球节拍）、Kubo（日/创造核心）、Ueda（日/支点）、Doan（日/翼卫兼队长）。</li>
+      <li><b>胜负手</b>：荷兰控球压缩转换 vs 日本逼抢+快速直传打身后；荷兰临时门将与高位防线的衔接是最敏感细节。</li>
+      <li><b>市场视角</b>：首发后盘口向荷兰收紧（≈47/27/26），仍属"故事热、价格相对清醒"；可读性更多在大小球/双方进球，而非胜平负方向。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方首发已由 FIFA 官方公布（见上方✅模块）；② 平局与日本胜的精确小数赔率为三角估算；③ 各书具体小数线随时变动，以下单时为准；④ Kalshi/Polymarket 单场价格与成交量未检得；⑤ Elfath 与两队无执法样本，MLS 数据与世界杯尺度不完全可比。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-japan-prediction-team-news-lineups_599059.html">Sports Mole — 前瞻/队况/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/predicted-lineups/koemans-big-depay-doubt-malen-starts-predicted-netherlands-lineup-vs-japan_599062.html">Sports Mole — 荷兰首发</a> · <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/predicted-lineups/will-tanaka-step-up-in-endos-absence-predicted-japan-lineup-vs-netherlands_599063.html">Sports Mole — 日本首发</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49038195/fifa-world-cup-2026-netherlands-vs-japan-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 转播/裁判/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/48775615/kaoru-mitoma-ruled-world-cup-injury-takehiro-tomiyasu-recalled-japan-squad">ESPN — Mitoma 报销</a> · <a href="https://www.aljazeera.com/sports/2026/5/22/japans-world-cup-2026-team-preview-players-to-watch-group-squad">Al Jazeera — 日本预览</a><br>
+      • <a href="https://www.wfaa.com/article/sports/soccer/world-cup/ismail-elfath-austin-texas-netherlands-japan-world-cup-ref/287-539728bf-30cc-4450-a371-90fbaca3ac97">WFAA — 裁判 Elfath</a> · <a href="https://kickoffscore.com/referees/ismail-elfath">KickoffScore — Elfath 数据</a> · <a href="https://sports.yahoo.com/articles/netherlands-vs-japan-picks-predictions-164551362.html">Yahoo — 赔率/预测</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/netherlands-vs-japan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aHebD0x5a8Gy/">Racing Post</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14（首发公布后更新） · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#f0a04b',SC='#e8788a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('rankChart'),{type:'bar',
+ data:{labels:['荷兰','日本'],datasets:[{data:[18,8],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越小越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['荷兰胜','平局','日本胜'],datasets:[{data:[47,27,26],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:55,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('formChart'),{type:'bar',
+ data:{labels:['荷兰(近13)','日本(近6)'],datasets:[
+   {label:'胜',data:[10,6],backgroundColor:'#22c55e',borderRadius:4,stack:'s'},
+   {label:'平',data:[2,0],backgroundColor:DR,borderRadius:4,stack:'s'},
+   {label:'负',data:[1,0],backgroundColor:'#ef4444',borderRadius:4,stack:'s'}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},title:{display:true,text:'场次'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','转换速度','个人上限','大赛经验'],
+  datasets:[
+   {label:'荷兰',data:[7.5,7,7.5,6.5,8,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'日本',data:[7,6.5,7,8,7,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

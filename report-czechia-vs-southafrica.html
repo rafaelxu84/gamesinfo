@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 捷克 vs 南非 · 2026世界杯 A组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#c8102e;--sc:#e0ad1a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#8a6a13);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#1f1a08);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ec6f7c;font-weight:600}td.sc{color:#ecc24a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-1 · 2026 世界杯 · A组次轮 · 两支首轮失利队的"出局前夜"对决</span>
+  <h1>捷克 vs 南非</h1>
+  <div class="meta">2026年6月18日 · 亚特兰大 梅赛德斯-奔驰球场（室内）· 12:00 ET · A组（同组：墨西哥、韩国）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇨🇿 捷克</div><div class="rk">Koubek 执教 · 首轮 1-2 负韩国 · 全欧最强定位球（预选 11 球）· 运动战创造力不足</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 南非</div><div class="rk">Broos 执教 · 首轮 0-2 负墨西哥 · Sithole+Zwane 双停赛 · 全场 xG 仅 0.07</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 捷克 1-1 南非（半场 1-0）· 亚特兰大 梅赛德斯-奔驰球场，67,442 人 · 主裁 Tori Penso（美国，男足世界杯史上第二位女性主裁）· 数据来源 Sofascore / Opta Analyst / FIFA / ESPN · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">这是一场<b>"捷克闪击早进、南非控场补平"的两段式比赛</b>。开场仅 <b>6 分钟</b>，捷克由一次边线球做球发起、Sojka 直塞、<b>Sadílek</b> 杀入禁区左脚推射破门，1-0——这是本届世界杯目前最早的进球。但此后剧本完全倒向南非：Bafana Bafana 全场控球 <b>62%</b>、传球 508/563，靠耐心倒脚把捷克压回半场，逐渐把场面"做实"。捷克则延续赛前画像——运动战打不开，进攻几乎只剩定位球与传中喂禁区，Schick 两次绝佳机会均未把握。下半场南非射门 12-9 反超、xG 从半场 0.21 飙到 1.14；第 <b>83 分钟</b>，Maseko 的一记远射打在捷克替补 <b>Šulc</b> 的手臂上，裁判判罚点球，<b>Mokoena</b> 主罚命中扳平，1-1。全场 xG 捷克 1.02 对南非 1.35-1.37——质量与场面均势，分差却被一次手球点球抹平。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 6' Sadílek（Sojka 助攻，边线球做球，左脚推射，1-0）→ 33' Mokoena 吃黄（南非首张）→ HT 1-0 → 83' Mokoena（点球，Maseko 远射打中 Šulc 手臂判点，1-1）→ FT 1-1</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇨🇿 捷克</th><th style="padding:6px">🇿🇦 南非</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">38%</td><td style="text-align:center"><b>62%</b></td><td style="padding:6px;color:var(--mut)">南非用控球与倒脚（508/563 传球）掌控场面——与赛前"捷克运动战瓶颈、南非可被迫开放"的判读相反，是南非而非捷克拿到了球权</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">1.02</td><td style="text-align:center"><b>1.35</b></td><td style="padding:6px;color:var(--mut)">南非 xG 下半场从 0.21 涨到 1.14——彻底走出首轮 0.07 的进攻荒；捷克质量略低但更靠近球门</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">14 / 3</td><td style="text-align:center"><b>17 / 4</b></td><td style="padding:6px;color:var(--mut)">射门总量南非更多；但捷克禁区内射门 11-6 占优，"量在南非、质在捷克"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center"><b>3</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">捷克 3-1 占优却只进 1 球——Schick 两次绝佳机会未进，是捷克未能拿下比赛的直接原因</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传中（成功/尝试）</td><td style="text-align:center"><b>7/16（44%）</b></td><td style="text-align:center">4/17（24%）</td><td style="padding:6px;color:var(--mut)">捷克传中质量明显更高、空中对抗 59% 占优——定位球/传中喂禁区的赛前主线兑现，但终结掉链子</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">角球</td><td style="text-align:center">5</td><td style="text-align:center">5</td><td style="padding:6px;color:var(--mut)">5-5 持平——捷克"角球轰炸"未能转化为进球，赛前最锐的破局点本场哑火</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">扑救 · 门将</td><td style="text-align:center">Kovář 3 扑（+0.11 GP）</td><td style="text-align:center">Williams 2 扑</td><td style="padding:6px;color:var(--mut)">Kovář 多次化解南非下半场攻势；点球非扑救可挡，与赛前"Williams 是南非求平依仗"的剧本相反，反成捷克门将救场</td></tr>
+      <tr><td style="padding:6px">犯规 · 黄牌</td><td style="text-align:center">黄 1</td><td style="text-align:center">黄 2</td><td style="padding:6px;color:var(--mut)">Penso 上半场对南非出 2 黄（含 Mokoena 33'）、下半场对捷克 1 黄——与赛前"残阵南非累计黄牌风险"判读方向一致，但全场未失控</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 角色完全反转：南非控球、捷克挨打</div>赛前主线是"捷克纸面占优、南非被迫低位死守"，实际却是南非控球 62%、传球 508 次、前场进入 58 次完全主导场面，捷克仅 38% 控球、被压回半场。<b>这说明南非</b>：失去 Sithole 后 Broos 没有龟缩死守，反而让 Mokoena（119 触球、97 传球、5 关键传球、评分 8.0）做轴心主动控球——这是对赛前"残阵只能死守"判读的最大颠覆，南非用控球而非纯防守拿到了 1 分。</div>
+    <div class="insight"><div class="who">② 捷克的"质在禁区"成立，但终结掉链子</div>捷克禁区内射门 11-6、绝佳机会 3-1、传中成功率 44% 对 24%、空中对抗 59% 全面占优——"把球喂进禁区、靠传中/定位球制造质量"的赛前主线确实兑现。但 Schick 两次绝佳机会均未把握，全队 14 射仅 3 正。<b>这说明捷克</b>：进攻框架对路（质量集中在禁区），但缺乏稳定终结点的老问题再次致命——有机会却进不去，正是 0 分变 1 分、未能拿下残阵的根因。</div>
+    <div class="insight"><div class="who">③ 定位球红利本场未兑现——角球 5-5、轰炸哑火</div>赛前把捷克"全欧最强定位球（预选 11 球、7 角球）"列为最锐破局点，本场角球却打成 5-5，且没有一个定位球转化为进球。Krejčí（评分 7.5、5 次争顶、4 射）是高点威胁，但 Souček 替补、最高空霸缺阵，轰炸强度如赛前"官方首发模块"已下修的判断。<b>这说明捷克</b>：定位球是纸面长板，但当对手（即便残阵）空中防守站位得当、且自身缺最高点时，这一武器并非稳定出球口——赛前"强度下修"的微调被精确验证。</div>
+    <div class="insight"><div class="who">④ Mokoena 一人扛起南非——既是节拍器又是终结者</div>Mokoena 全场 119 触球（全场最高）、93/97 传球、5 关键传球（全场最多）、8 长传成 8、8 次抢回，并主罚命中点球，拿到 Sofascore 全场最佳 8.0。<b>这说明南非</b>：在失去 Sithole 的中场，Mokoena 独力承担了组织、推进与终结三重角色——这与赛前"Mokoena 需独力承担拦截与出球"的判读完全吻合，他把一场预期的"挨打死守"打成了"控球逼平"。</div>
+    <div class="insight"><div class="who">⑤ 一次手球点球决定平局——捷克"领先后守不住"的痼疾再现</div>捷克第 6 分钟就 1-0 领先，却在 83 分钟因替补 Šulc 禁区手球送点被扳平。这与首轮"1-0 领先被韩国 2-1 逆转"如出一辙。<b>这说明捷克</b>：领先后无法用运动战扩大优势、又难以全场守住的结构隐患连续两场兑现——区别只是首轮丢两球被逆转、本场丢一球被逼平。对手段单一（靠定位球/传中、缺 Plan B）使其每次领先都处于"守不住"的风险中。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>△ <b>速览结论"捷克靠定位球窄幅取胜"→ 实际 1-1 平</b>：方向（捷克占主动、率先进球）部分对，但"取胜"落空——定位球轰炸哑火、终结掉链子，被一次手球点球逼平。</li>
+      <li>✗ <b>市场隐含捷克胜 ≈49%（赔率 1.75）/ 预测市场 ≈56% → 实际未胜（平局）</b>：热门未能兑现，落入平局（赛前隐含 ≈32%）这一中等概率尾部。</li>
+      <li>✗ <b>核心判读"捷克定位球破南非残阵低位块"→ 未兑现</b>：角球 5-5、无定位球进球；南非也并非死守低位，而是控球 62% 主动掌控——破局路径与场面均与预期相反。</li>
+      <li>✓ <b>"捷克运动战创造力不足、缺 Plan B"→ 精确兑现</b>：捷克控球仅 38%、Schick 两次绝佳机会未进，领先后无法用运动战扩大优势，老问题再次致命。</li>
+      <li>✓ <b>"南非首轮 xG 0.07 的进攻荒"→ 本场显著改善</b>：南非 xG 回升至 1.35（下半场 1.14），靠 Mokoena 控场走出进攻荒，与"残阵只能死守"的悲观预期相反。</li>
+      <li>△ <b>大小球倾向（Over 2.5 略锐 ≈53%）→ 实际 2 球（小球）</b>：总进球 2，未过 2.5，Over 落空但接近分界。</li>
+      <li>✓ <b>裁判面"Penso 出牌偏多、南非累计黄牌风险"→ 部分兑现</b>：上半场南非即吃 2 黄（含 Mokoena），全场 3 黄，方向一致但未升级失控。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇿 捷克 → 6/24 vs 墨西哥（末轮 · 墨西哥城）</div>① 这是<b>出线生死战</b>：1 分排名落后，末轮必须从小组头名墨西哥身上抢分才有出线/争小组第三希望，难度陡增；② <b>终结效率是命门</b>：本场绝佳机会 3-1 却只进 1 球、Schick 两次未进，对更强的墨西哥若再浪费机会将更难补救；③ 定位球仍是纸面武器但本场哑火（角球 5-5），需找回轰炸强度（Souček 是否回归首发是看点）；④ <b>"领先后守不住"连续两场兑现</b>，对墨西哥的边路与个人能力，禁区手球/失位的风险需重点修补。</div>
+      <div class="insight" style="margin:0"><div class="who">🇿🇦 南非 → 6/24 vs 韩国（末轮 · 蒙特雷 Estadio Monterrey）</div>① 同为<b>出线生死战</b>：1 分需末轮击败首轮取胜的韩国（同积 3 分一档）才有机会；② <b>Mokoena 是发动机</b>：本场控球与组织全靠他（8.0 评分），对节奏更快的韩国需继续依赖其调度，但也需分散对他的依赖；③ <b>进攻荒已缓解</b>（xG 1.35）：Broos 敢于控球而非死守的转变，对韩国可延续，但需把控球转化为更多禁区机会（本场禁区内射门仅 6）；④ 双停赛的 Sithole/Zwane 本场结束停赛、末轮可回归，中场拦截与后手爆点有望补强。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Sofascore（赛后统计/评分）、Opta Analyst（theanalyst.com）、FIFA（比赛中心）、ESPN、Sky Sports。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>两支首轮失利队的"输球即出局"生死战</b>：捷克首轮 1-0 领先却被韩国 2-1 逆转，南非则在揭幕战 0-2 负墨西哥且<b>吃了三红牌中的两张</b>（Sithole、Zwane 本场双双停赛）。盘口明确倾向捷克——捷克胜赔 <b>1.75</b>（去水隐含 ≈49%）、平局 3.80（≈32%）、南非胜 5.00（≈19%）；预测市场给捷克约 <b>56%</b> 胜率。捷克的结构性王牌是<b>定位球</b>：欧预选赛 11 个定位球进球为全欧最多（其中 7 个来自角球，占总进球 50%），附加赛对爱尔兰、丹麦的 4 个进球也全部来自定位球——面对失去中场绞杀器 Sithole 的南非残阵高空防守，这是最锐利的破局点。命门同样清楚：捷克<b>运动战创造力不足</b>（首轮已被韩国低位块暴露），Schick 之外缺乏 Plan B；南非则是<b>残阵 + 全场 xG 0.07 的进攻荒</b>。基准剧本：捷克靠定位球窄幅取胜；南非靠纪律性低位块和反击求一线生机。市场过热指数 ≈ 2/5（两支弱旅、话题流量低）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">捷克隐含胜率(去水)</div><div class="v" style="color:#ec6f7c">≈49%</div></div>
+      <div class="key"><div class="k">南非隐含胜率(去水)</div><div class="v" style="color:#ecc24a">≈19%</div></div>
+      <div class="key"><div class="k">捷克预选定位球</div><div class="v" style="color:var(--warn)">11（全欧最多）</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>南非的双停赛</b>：中场绞杀器 Sithole + 头号后手爆点 Zwane 同时缺席（首轮红牌）——这是 Broos 排兵的最大裂口，也是捷克提速与定位球的切入口。</li>
+      <li><b>捷克定位球 vs 南非空中防守</b>：捷克预选 11 个定位球进球全欧第一（7 个来自角球）、附加赛 4 球全是定位球；Schick + Souček + Krejčí 的高点轰炸是全场战术核心。</li>
+      <li><b>捷克的运动战瓶颈</b>：首轮领先后被韩国低位块化解、运动战创造力枯竭最终被逆转——若南非摆稳低位块，捷克可能再次陷入"控球无解"。</li>
+      <li><b>当值主裁 Tori Penso（美国）</b>：男足世界杯史上第二位女性主裁（继 2022 Frappart 之后）；其国际样本场均黄牌偏高（约 3.3–3.4 张），叠加本届从严执法环境，残阵南非的累计黄牌风险需关注。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">南非 · 上一场带入 · 双停赛 <span style="color:var(--mut);font-weight:400">· 揭幕战复盘迁移 · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">南非首轮 0-2 负墨西哥、<b>Sithole + Zwane 双双红牌停赛</b>，残阵迎捷克</div>
+      <p style="font-size:13.5px">承接揭幕战复盘的前瞻迁移：南非 0-2 负墨西哥一役 <b>Sithole（50' 放倒单刀直红）与 Zwane（82' 掌掴对手 VAR 直红）双双停赛本场</b>——前者是中场绞杀与封锁对方组织点的工兵，后者是 Broos 落后时的头号后手爆点。更严峻的是该役南非<b>全场 xG 仅 0.07</b>（3 射 0 正、禁区触球仅 2 次），纯防守换不来分数的画像被彻底坐实。残阵下被迫开放比赛，风险更大。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Sithole 缺席直接削弱南非的中场覆盖与拦截，捷克的 Souček/Provod 推进与定位球第二落点争夺更顺；Zwane 缺席则抽走 Broos 落后时唯一的高质量反击爆点。这两处停赛把南非从"密集防守 + 反击偷分"压成"几乎只能死守"，是捷克让球盘（-0.5/-1）被视为较锐角度的核心依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — 墨西哥 vs 南非赛后统计</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — 3 红牌战报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">捷克 · 上一场带入 · 运动战瓶颈 <span style="color:var(--mut);font-weight:400">· 韩国战复盘迁移 · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">捷克首轮 1-0 领先<b>被韩国 2-1 逆转</b>；定位球武器已验证，但运动战创造力不足</div>
+      <p style="font-size:13.5px">承接韩国战复盘的前瞻迁移：捷克首轮先取得 1-0 领先，随后被韩国 2-1 逆转——定位球武器（早段进球来自套路）已验证，但<b>领先后运动战创造力枯竭</b>、面对韩国的逼抢与控场逐渐失势，Schick 之外缺乏第二破局手段的老问题再次暴露。出线形势：捷克 0 分，但末轮才碰墨西哥，本场先打残阵南非，命运仍在自己手里——必须拿 3 分。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：捷克对南非低位块的破解效率，是本场最大的战术悬念。若像首轮那样运动战打不开，定位球（角球）就成了几乎唯一的进球来源——这恰好是捷克的强项、也是南非残阵的弱项，两条信号叠加共同指向捷克"靠定位球取胜"的主线剧本。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — 韩国 vs 捷克赛后统计</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">捷克 · 结构性王牌 <span style="color:var(--mut);font-weight:400">· Opta Analyst · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">捷克<b>欧预选 11 个定位球进球为全欧最多</b>（7 个来自角球，占总进球 50%）；附加赛 4 球全是定位球</div>
+      <p style="font-size:13.5px">据 Opta，捷克在 2026 世界杯欧洲区预选赛中打入的定位球进球（11 个）为全欧之最，其中角球进球 7 个为单项最高，定位球占全部进球的 50%；通往世界杯的两场附加赛点球大战之外，对爱尔兰与丹麦的全部 4 个运动战进球同样全部来自定位球。Schick（前点冲击 + 终结）、Souček（高点）、Krejčí 是主要的高空武器；Provod 是套路设计的主罚与传中点。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：南非首轮失球本就半源于自身出球失误，而本场又失去 Sithole 这一中路拦截/第二落点争夺者——捷克的角球与定位球轰炸正好打在南非残阵最薄弱的环节。这是本场比"运动战对攻"信息含量高得多的破局路径，也支撑了捷克让球盘的角度。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats" style="color:var(--accent)">Opta Analyst — 捷克定位球数据</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history" style="color:var(--accent)">FIFA — 捷克队史</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">阵容 · 预测首发 <span style="color:var(--mut);font-weight:400">· Wincomparator · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">捷克预计沿用定位球阵容（Schick 单箭头）；南非被迫重组中场，Makgopa/Foster 任锋线</div>
+      <p style="font-size:13.5px">捷克预测首发：Kovář；Coufal · Chaloupek · Hranáč · Krejčí · Zelený；Souček · Sojka；Provod · Šulc · Schick——延续预选赛的定位球框架，Schick 担任终结核心。南非因 Sithole/Zwane 停赛被迫重组：Williams（C）；Mudau · Sibisi · Mbokazi · Modiba；Mokoena · Moremi · Appollis；Makgopa · Foster——中场由 Moremi 顶替 Sithole 的位置，锋线 Makgopa 搭档 Foster。<span style="color:var(--warn)">[双方官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：南非中场失去 Sithole 后，Mokoena/Moremi 的拦截与第二落点争夺质量下降，正是捷克定位球与 Souček 前插的目标区；捷克若 Schick 状态在线、Provod 传中精准，破残阵的概率显著上升。两处变动都牵动让球盘与首开纪录盘。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/" style="color:var(--accent)">Wincomparator — 预测首发/赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/" style="color:var(--accent)">Racing Post — 队况/投注</a> · <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· FIFA / ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：美国名哨 <b>Tori Penso</b> 执法——男足世界杯史上<b>第二位女性主裁</b></div>
+      <p style="font-size:13.5px">FIFA 任命美国籍 <b>Tori Penso</b> 执法本场 A 组次轮，她将成为<b>男足世界杯历史上第二位执法正赛的女性主裁</b>（继 2022 卡塔尔 Frappart 之后）；助理裁判为美国的 Brooke Mayo 与 Kathryn Nesbitt，第四官员为新西兰的 Campbell-Kirk Kawana-Waugh。Penso 曾执法 2023 女足世界杯决赛（首位美国裁判执法世界杯决赛），并在 2024 巴黎奥运男足、2025 世俱杯（执法 Al Ain vs Juventus、Dortmund vs Ulsan 两场）有男足大赛实际样本。比赛在亚特兰大梅赛德斯-奔驰球场室内进行，无天气变量。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Penso 国际样本场均黄牌偏高（约 3.3–3.4 张），叠加本届揭幕战即出 3 红的从严执法环境，残阵南非若拖延或情绪化对抗，累计黄牌（2 黄即停下一场）与禁区犯规的成本会被放大；其点球判罚频率约 0.36/场，禁区对抗的吹罚尺度值得关注。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/" style="color:var(--accent)">TelecomAsia — Penso 执法任命</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa" style="color:var(--accent)">FIFA — Penso 世俱杯执法</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2014,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认（FIFA 官方 + 101GreatGoals）· 开球前约 50 分钟公布</span></h2>
+    <div class="sub">两队各做 <b>5 处变动</b>，均为教练主动轮换（非伤退爆冷）。<span style="color:var(--good)">✅ 官方确认</span></div>
+
+    <div class="twocol">
+      <div>
+        <h4>🇨🇿 捷克 官方首发 <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA 标记 5-2-3</span></h4>
+        <div class="lineup">Kovář(1); Holeš(3) · Hranáč(4) · Coufal(5) · Krejčí(7,C); Darida(8) · Červ(12) · Sadílek(18) · Sojka(24); Hložek(9) · Schick(10)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Souček(22)</b>（定位球高点/绞杀器，被弃用）· <b>Provod(17)</b>（左路创造力）· <b>Šulc(15)</b>（前场自由人）</div>
+      </div>
+      <div>
+        <h4>🇿🇦 南非 官方首发 <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA 标记 4-2-3-1</span></h4>
+        <div class="lineup">Williams(1,C); Mudau(20) · Mbokazi(14) · Okon(21) · Modiba(6); Mokoena(4) · Mbatha(5); Appollis(7) · Adams(23) · Maseko(12); Rayners(15)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Foster(9)</b>（英超级射手，下半场重炮）· <b>Mofokeng(10)</b>（爆点）· <b>Makgopa(17)</b>（高点）· <b>Moremi(8)</b></div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">📋 vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">捷·后腰</td><td>Souček 首发</td><td>Souček 替补</td><td>最强空霸坐板凳，定位球高点轰炸的"质"下降——这是速览核心论点需微调的点。</td></tr>
+      <tr><td class="ht">捷·中场</td><td>Provod · Šulc</td><td>Darida · Červ · Sadílek</td><td>换成跑动/出球型三人组，直指首轮"运动战创造力枯竭、被低位块绞杀"的命门。</td></tr>
+      <tr><td class="ht">捷·锋线</td><td>Schick 单箭头</td><td>Hložek + Schick</td><td>双前锋纵深增加，对南非残阵高位线施压，反击空间更大。</td></tr>
+      <tr><td class="sc">南·中卫</td><td>Sibisi</td><td>Okon</td><td>后防轮换；Okon 顶替中卫位置。</td></tr>
+      <tr><td class="sc">南·中前场</td><td>Moremi / Makgopa · Foster</td><td>Mbatha · Adams / Rayners 单箭头</td><td>Broos 弃英超射手 Foster，改用控制力更强的中场 + Rayners 单箭头——务实的"低位块+反击"延续。</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">🧠 战术解读</h4>
+    <ul class="watch">
+      <li><b>速览结论：维持，但定位球项微调</b>——速览把"Schick + Souček + Krejčí 高点轰炸"列为破局核心，而 Souček 替补，捷克最高空霸缺阵，角球/定位球轰炸的强度较预期下调；不过 Krejčí、Hranáč、Holeš、Hložek 仍提供制空，Souček 可作下半场奇兵。<b>定位球优势主线不变，强度下修</b>。</li>
+      <li><b>捷克中场"换血"是对命门的直接回应</b>：Darida + Červ + Sadílek 替代 Souček/Provod/Šulc，增加跑动、出球与前插，试图解决首轮被韩国低位块绞杀、控球无解的问题——恰好对冲速览点出的"运动战创造力不足"。</li>
+      <li><b>Hložek 搭 Schick（FIFA 5-2-3）</b>：由单箭头改双点，纵深冲击力提升；若南非压出，捷克获得更大反击空间。</li>
+      <li><b>南非 Rayners 单箭头、弃 Foster</b>：Broos 选控制力中场（Mbatha + Adams）+ Rayners 而非英超级别 Foster，延续"纪律性低位块 + 反击"务实剧本，呼应速览"靠低位块求一线生机"的判断；但首轮 xG 0.07 的进攻荒未因换人显著缓解，Foster/Mofokeng 留作下半场追分手段。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：截至模块写入（开球前约 50 分钟），未检得首发公布后明显的 1X2／大小球盘口移动。两队关注度低、且名单变动均属教练轮换而非伤退爆冷，盘口预计反应有限。仅作事实陈述，非投注建议。</div>
+
+    <div style="font-size:12px;margin-top:12px;color:var(--mut)">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440" style="color:var(--accent)">FIFA 官方 Match Centre — Line Up</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/world-cup-2026-live-czechia-vs-south-africa-teams-line-ups-tv-channel-live-online-stream/" style="color:var(--accent)">101GreatGoals — confirmed teams</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· A组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>A 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇨🇿 捷克</th><th>🇿🇦 南非</th></tr>
+      <tr><td>主教练</td><td class="ht">Miroslav Koubek（2025-12 接替 Hašek）</td><td class="sc">Hugo Broos（比利时籍）</td></tr>
+      <tr><td>首轮结果</td><td class="ht">1-2 负韩国（1-0 领先被逆转）</td><td class="sc">0-2 负墨西哥（吃 2 红牌）</td></tr>
+      <tr><td>本场停赛/缺阵</td><td class="ht">暂无确认主力停赛</td><td class="sc"><b>Sithole + Zwane 双停赛</b>（首轮红牌）</td></tr>
+      <tr><td>晋级方式</td><td class="ht">欧预选小组第二（居克罗地亚之后）+ 附加赛点球淘汰爱尔兰、丹麦</td><td class="sc">非洲区预选小组头名出线</td></tr>
+      <tr><td>定位球画像</td><td class="ht">欧预选 <b>11 个定位球进球全欧最多</b>（7 角球，占进球 50%）</td><td class="sc">首轮 xG 0.07，运动战与定位球均哑火</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">欧洲杯 2024 小组垫底出局 · 欧洲杯 2020 16 强（负丹麦）</td><td class="sc">非洲杯 2023 季军 · 非洲杯 2025 16 强（负喀麦隆）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.75（隐含≈49%）</td><td class="sc">胜 5.00（≈19%）· 平 3.80（≈32%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大球略锐（Over 2.5 约 1.88，隐含≈53%）；双方均需进球求生，比分波动空间上升</td></tr>
+      <tr><td>核心球员</td><td class="ht">Patrik Schick / Tomáš Souček / Lukáš Provod</td><td class="sc">Ronwen Williams / Lyle Foster / Evidence Makgopa</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈49/32/19）。赔率来源：bet365（捷克 1.75 / -143、平 3.80 / +280、南非 5.00 / +400），美线转十进制：-143→1.70、+280→3.80、+400→5.00（市场最优报价捷克可达 1.82、南非 4.00）。大小球小球/大球分界在 2.5：Over 2.5 约 1.88（隐含≈53%，略锐），双方均"输球即出局"使开放程度上升；BTTS（双方进球）约 2.00。让球盘捷克 -0.5/-1 待核以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 热身样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇨🇿 捷克 · 进攻 xG/进球</td><td class="ht">欧预选场均进球偏高但<b>50% 来自定位球</b>（11 个定位球进球全欧最多）；欧洲杯 2024 决赛圈 3 场仅 2 球</td><td class="ht">首轮 <b>xG 0.81</b>、实进 1 球（1-2 负韩国，曾 1-0 领先）</td><td>本届运动战创造力贴近"决赛圈哑火"档（≈0.8 xG），<b>低于</b>预选光鲜的进球数——定位球红利本场未兑现，运动战缺 Plan B</td></tr>
+      <tr><td class="ht">🇨🇿 捷克 · 防守 xGA/失球</td><td class="ht">欧预选防线中游；附加赛靠点球过关，并非以零封见长</td><td class="ht">首轮被韩国打出 <b>1.84 xGA</b>、丢 2 球（领先后被逆转）</td><td><b>劣于</b>历史观感：中路渗透防不住，领先后管理崩盘——这是面对有阵地战能力对手的结构隐患</td></tr>
+      <tr><td class="sc">🇿🇦 南非 · 进攻 xG/进球</td><td class="sc">非洲杯 2023 季军即以"低进球+点球"晋级，进攻贫瘠；预选与热身（近 5 场不胜、1-1 牙买加、0-0 尼加拉瓜）场均进球低</td><td class="sc">首轮 <b>xG 0.07</b>（全场≈零威胁）、0 球</td><td><b>远低于</b>本就贫瘠的历史基准——0.07 是球队史上最差级别；<b>Sithole+Zwane 双停赛</b>后进攻更无解</td></tr>
+      <tr><td class="sc">🇿🇦 南非 · 防守 xGA/失球</td><td class="sc">历史立身之本＝纪律性低位防守（非洲杯靠少失球走远）</td><td class="sc">首轮丢 2 球、吃 2 红牌后防线被打穿</td><td>红牌让"唯一的长板"也失效；少一人 + 主力停赛使本场防守基准进一步下修</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：两队本届实际值都<b>低于</b>各自历史基准——捷克运动战回落到决赛圈哑火档（0.81 xG）、定位球未兑现；南非进攻（0.07 xG）创历史新低且防守因红牌+双停赛雪上加霜。深度数据与"捷克纸面占优、但破低位块仍需 Schick 之外的 Plan B"主线一致。来源：Opta Analyst（首轮 xG/统计）· FotMob/Sofascore（首轮数据）· 队史大赛/预选公开记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（xGscore）</td><td class="ht">捷克 ≈1.4</td><td class="sc">南非 ≈0.6</td><td>校准后捷克投射明显占优——但"破密集低位"历来是捷克软肋，需关注转化效率</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内捷克稳居 A 组前列、南非垫底；超算给捷克胜≈49%（与去水赔率一致）</td><td>对手强度校准后，捷克的样本含金量高于南非（南非样本对手更弱）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：捷克中高位 + 定位球轰炸，南非被迫低位但少一档执行力</td><td>场面倾斜大概率长时间倒向捷克</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/xGscore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">两支首轮失利的弱旅对话——话题流量低、资金薄，但方向上一致倾向捷克；资金主要落在捷克让球与大小球</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · 偏冷；方向倾向捷克但流量低、无情绪溢价</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">两支低关注度球队 + 非热门时段（12:00 ET）+ 双方均刚失利——话题热度与博彩资金都偏薄。专家方向多数押捷克（依据：定位球优势 + 南非双停赛），但属"合理共识"而非过热。资金集中在<b>捷克让球与大小球</b>，而非单纯胜负盘。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：捷克胜 多数 · 平局 少数 · 南非胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Wincomparator</td><td>预测/赔率模型</td><td>捷克胜 <b>49.2%</b> / 平 31.6% / 南非 19.2%；主推 Over 2.5（55.2%）</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>捷克胜；7-2 建包侧重 Schick 进球 + 捷克控盘</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>捷克为更干净一侧；南非残阵进攻乏力</td></tr>
+      <tr><td>Goal.com</td><td>预测媒体</td><td>"输球即出局"——捷克凭定位球与 Schick 占优</td></tr>
+      <tr><td>Compare.bet</td><td>赔率汇总</td><td>捷克胜 + 大球角度</td></tr>
+      <tr><td>Johnnybet / TFA</td><td>预测媒体</td><td>捷克胜；南非需 Williams 高接低挡才有平局机会</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（低）</b>：胜负方向多数押捷克——这是合理共识而非过热。真正分歧在<b>大小球（Over vs Under）与让球幅度</b>（-0.5 vs -1），以及南非能否凭 Williams 与低位块逼平。无显著推动南非胜的资金，话题热度整体偏低。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>捷克胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="ht">1.75（-143）</td><td>明确倾向捷克；平 3.80（+280）/ 南非 5.00（+400）</td></tr>
+      <tr><td>06-17 截止</td><td>多平台</td><td class="ht">1.70–1.82（市场最优 1.82）</td><td>捷克短赔区间窄幅波动，基本稳定</td></tr>
+      <tr><td>06-17</td><td>大/小球</td><td colspan="2" class="ht">大球略锐（Over 2.5 约 1.88，隐含≈53%）；双方均需进球求生</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>捷克 -0.5 / -1</td><td colspan="2" class="ht">捷克 -0.5/-1 具体赔率待核以实时盘口为准</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率基本不动——结果定价稳定。最活跃的价格发现在<b>让球（-0.5/-1）与大小球（大球略锐）</b>，以及 Schick 任意时间进球与捷克角球数 props。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（DefiRate 聚合）</b>：本场捷克约 <b>56%</b> 胜率——与博彩去水方向一致；A 组夺组概率墨西哥 62.5%、韩国 35%、捷克 3.4%、南非 0.5%，两队出线均已濒临边缘。<span style="color:var(--warn)">[本场单场成交量与 30 天动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点</b>：① <b>Tori Penso 成为男足世界杯第二位女性主裁</b>——这是本场最大的话题流量来源（叙事价值高于比赛本身）；② 南非的双停赛与"出局前夜"求生。</li>
+      <li><b>南非叙事</b>：残阵 + 揭幕战 xG 0.07，公众对南非取胜信心极低；少量"长射彩票"资金押南非赢，但价格未见明显上扬。</li>
+      <li><b>捷克叙事</b>：定位球强队 + 必须取胜，专家方向集中但热度低——属"低关注度的合理热门"。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（捷克），博彩与预测市场方向一致，过热指数 <b>2/5</b>（偏冷）。话题热度主要来自 <b>Penso 女性主裁的历史意义</b>，而非比赛本身；最有信息含量的市场是<b>捷克让球（-0.5/-1）、大小球与 Schick 进球 / 捷克角球 props</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — 预测/赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — 赔率/投注</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — 预测</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为美国籍 <b>Tori Penso</b>——男足世界杯历史上<b>第二位执法正赛的女性主裁</b>（继 2022 卡塔尔 Frappart 之后）；助理为美国 Brooke Mayo、Kathryn Nesbitt，第四官员为新西兰 Campbell-Kirk Kawana-Waugh。来源：FIFA / ESPN / TelecomAsia。</div>
+    <h4>近两届大赛 + 国际执法尺度（实际数据）</h4>
+    <ul class="cl">
+      <li><b>大赛男足实际样本（关键）</b>：Penso 拥有<b>男足大赛实际执法样本</b>——2024 巴黎奥运男足执法 1 场小组赛；2025 世俱杯执法 2 场（Al Ain vs Juventus、Dortmund vs Ulsan）并 2 次担任第四官员；2023 女足世界杯执法决赛（首位美国裁判执法世界杯决赛）。这区别于无任何大赛样本的新晋裁判，参考意义较高，但男足顶级大赛单场样本仍偏少。</li>
+      <li><b>出牌/判点尺度（国际综合样本）</b>：综合统计口径其<b>场均约 3.3–3.4 张黄牌、0.04 红</b>，生涯判罚约 25 个点球（约 <b>0.36/场</b>）——属出牌偏多的尺度。<span style="color:var(--warn)">[其男足大赛单届的场均出牌细分样本偏小，以官方记录为准 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：作为长期执法 CONCACAF / MLS / 女足赛事的美国裁判，<b>与捷克、南非两队均无显著公开执法史与争议</b>——无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；本届揭幕战即连出 3 红（世界杯 20 年首见），执法环境偏严的实证已现。残阵南非若拖延或围堵裁判，受新规与 Penso 偏多出牌尺度约束，累计黄牌（2 黄即停下一场）风险上升。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：Penso 出牌尺度偏多（约 3.3–3.4 黄/场），在一场"输球即出局"、对抗强度可能升级的比赛里，黄牌总数与南非累计黄牌值得关注；其点球判罚频率适中（约 0.36/场），禁区对抗吹罚偏向中性。鉴于其拥有男足大赛实际样本（区别于纯女足/联赛背景），本场裁判面是可参考的分析维度——但男足顶级大赛单场样本仍较少，尺度外推需留余地。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🇨🇿 捷克 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Patrik Schick</td><td>前锋 / 勒沃库森</td><td>终结核心与定位球前点；俱乐部进球状态在线，是捷克破残阵的头号武器</td></tr>
+      <tr><td class="ht">Tomáš Souček</td><td>中场 / 西汉姆</td><td>定位球高点与第二落点争夺者；角球进攻的关键插上点</td></tr>
+      <tr><td class="ht">Lukáš Provod</td><td>边前卫 / 布拉格斯拉维亚</td><td>定位球主罚与传中设计点；运动战创造力的主要来源</td></tr>
+      <tr><td class="ht">Ladislav Krejčí</td><td>中卫 / 维拉利尔</td><td>后场出球 + 定位球进攻高点，攻防两端的轴心</td></tr>
+    </table>
+    <h4>🇿🇦 南非 预测首发（5-3-2 / 4-3-3，残阵）</h4>
+    <div class="lineup">Williams(C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Ronwen Williams</td><td>门将 / 队长</td><td>非洲杯 2023 点球大战英雄；南非求平的最大依仗，扑救与指挥是底线</td></tr>
+      <tr><td class="sc">Lyle Foster</td><td>前锋 / 伯恩利</td><td>南非主要终结点，但 Foster 之外缺稳定爆点（首轮 xG 0.07 印证）</td></tr>
+      <tr><td class="sc">Evidence Makgopa</td><td>前锋</td><td>非洲杯 2025 对喀麦隆有进球；或顶上锋线增加冲击</td></tr>
+      <tr><td class="sc">Teboho Mokoena</td><td>中场</td><td>Sithole 停赛后中场核心；需独力承担拦截与出球</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Wincomparator / Racing Post / ESPN），<b>以赛前官方名单为准 · 待核</b>。南非因 <b>Sithole + Zwane 双停赛</b>被迫重组中场与后手攻击组；捷克预计延续定位球框架，Schick 单箭头。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇨🇿 捷克 · Miroslav Koubek</div>
+        <div class="role">4-2-3-1 定位球立足 + 苦力跑动 + 整体性，运动战创造力有限</div>
+        <ul class="cl">
+          <li>捷克的招牌是 <b>Opta 认证的全欧最强定位球</b>（预选 11 球、7 角球；附加赛 4 球全定位球）+ 苦力跑动 + 团队凝聚——Koubek 自 2025-12 接手后正是靠这套打法点球淘汰爱尔兰、丹麦闯入世界杯。Schick/Souček/Krejčí 的高点是核心武器。</li>
+          <li>交叉参照：欧洲杯 2024 捷克<b>小组垫底出局</b>（负葡萄牙、平格鲁吉亚、10 人负土耳其），暴露运动战创造力枯竭、领先后守不住的痼疾；首轮 1-0 领先被韩国 2-1 逆转是同一病灶的重演。这正是本场最大风险——若南非低位块站稳，捷克可能再次"控球无解"。</li>
+          <li>本场切入口：南非失去 Sithole 的中场拦截与第二落点争夺，捷克的角球与定位球轰炸正中残阵软肋；Schick 在线 + Provod 传中精准，是窄幅取胜的现实路径。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 南非 · Hugo Broos</div>
+        <div class="role">5-3-2 / 低位块 + 反击，残阵下被迫保守，终结点匮乏</div>
+        <ul class="cl">
+          <li>Broos 的招牌是<b>纪律性低位块 + 快速反击 + 年轻化的整体防守文化</b>——非洲杯 2023 靠这套打进四强、点球淘汰刚果(金)拿到季军（Williams 是点球英雄），是球队的高光模板。</li>
+          <li>交叉参照：非洲杯 2025 南非以小组第二出线、16 强 1-2 负喀麦隆（Makgopa 进球），延续"防守扎实但终结点匮乏"的画像；揭幕战 0-2 负墨西哥更把这一短板放大到极致——<b>全场 xG 仅 0.07</b>，5-3-2 只守不攻的代价彻底兑现。</li>
+          <li>本场应对：失去中场绞杀器 Sithole 与后手爆点 Zwane 后，Broos 的低位块韧性下降，被迫在"死守逼平"与"开放求胜"间两难；现实希望在 Williams 的扑救、定位球偷袭与捷克运动战打不开时的拖时间——但残阵开放比赛只会喂给捷克更多定位球机会。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据机构</small></div>捷克欧预选 11 个定位球进球为全欧最多（7 个来自角球，占进球 50%），附加赛 4 个运动战进球全是定位球——量化数据确认定位球是捷克最可靠的进球来源；面对失去 Sithole 第二落点争夺的南非残阵，这一优势被进一步放大。</div>
+    <div class="insight"><div class="who">Wincomparator <small>· 预测模型</small></div>捷克胜 49.2% / 平 31.6% / 南非 19.2%，主推 Over 2.5（55.2%，1.88）——模型认为两队均"输球即出局"会推高开放度与进球数，方向与博彩去水一致。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· Racing Post / Compare.bet</small></div>多家媒体将 <b>捷克 -0.5/-1 与 Over 2.5</b> 视为比单纯胜负盘更有角度，依据是捷克定位球优势 + 南非双停赛残阵；Schick 进球与捷克角球数是话题驱动的散户主战场。</div>
+    <div class="insight"><div class="who">综合 · 历史意义与裁判信号 <small>· FIFA / ESPN</small></div>本场比赛本身关注度低，但 <b>Tori Penso 成为男足世界杯第二位女性主裁</b> 带来历史叙事流量。真正悬念不在胜负方向，而在<b>捷克能否用定位球破开南非低位块</b>、以及裁判尺度（Penso 出牌偏多）是否在"出局前夜"的高对抗下放大黄牌与禁区争议。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：捷克窄幅取胜（1-0 / 2-0 / 2-1，定位球破局）是基准剧本；平局（≈32%）是中等概率尾部——若捷克像首轮那样运动战打不开、又被 Williams 化解定位球，南非有逼平机会；南非取胜（≈19%）需要 Williams 神扑 + 定位球/反击偷袭 + 捷克"控球无解"同时发生。</li>
+      <li><b>关键先生</b>：Schick（捷/终结与定位球前点核心）、Souček + Provod（捷/角球高点与传中）、Williams（南非/求平的最大依仗）、Foster/Makgopa（南非/有限反击爆点）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>捷克的定位球能否破开南非失去 Sithole 的低位块</b>——决定让球盘（-0.5/-1）与大小球（大球略锐）的结算。捷克角球数与 Schick 能否破门是相应 props 的核心。</li>
+      <li><b>市场视角</b>：博彩与预测市场方向一致（捷克倾向，约 56%），1X2 价值有限；最有信息含量的市场是<b>捷克让球（-0.5/-1）、大小球与 Schick 进球 / 捷克角球细分盘</b>。过热指数 2/5（偏冷，话题热度来自 Penso 女性主裁的历史意义，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① <s>双方官方首发名单</s> <span style="color:var(--good)">✅ 已官宣（双源确认，见上方"官方首发 &amp; 解读"模块；两队各 5 处轮换，Souček 替补）</span>；② 捷克是否有未公开的伤停；③ Penso 在男足大赛单届的具体场均出牌细分（国际综合样本约 3.3–3.4 黄/场已确认）；④ Kalshi/Polymarket 本场单场成交量与 30 天动量细分未单独检得；⑤ 亚盘让球线（-0.5/-1）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440">FIFA — 比赛中心</a> · <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — 预测/赔率</a><br>
+      • <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats">Opta Analyst — 捷克定位球数据</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history">FIFA — 捷克队史/晋级</a> · <a href="https://worldsoccertalk.com/world-cup/czechia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — 捷克战术</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta Analyst — 韩国 vs 捷克（捷克带入）</a> · <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup">Opta Analyst — 墨西哥 vs 南非（南非带入/双停赛）</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — 赔率/投注</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — 预测</a> · <a href="https://www.compare.bet/news/czech-republic-vs-south-africa-betting-preview-predictions-tips-and-live-odds">Compare.bet — 赔率汇总</a><br>
+      • <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/">TelecomAsia — Penso 执法任命</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa">FIFA — Penso 世俱杯</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso">Wikipedia — Penso 履历</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — 预测市场</a><br>
+      • <a href="https://www.cafonline.com/afcon2025/news/cameroon-charge-into-the-quarter-finals-south-africa-fall-short-2-1/">CAF — 南非非洲杯 2025（16 强出局）</a> · <a href="https://www.flashscore.com/news/soccer-euro-euro-2024-talking-points-portugal-impress-czech-regret-group-e-set-for-epic-end/ERs5dn9k">Flashscore — 捷克欧洲杯 2024 出局</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-17 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#c8102e',SC='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['捷克胜','平局','南非胜'],datasets:[{data:[49,32,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[53,47],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['墨西哥','韩国','捷克','南非'],datasets:[{data:[15,23,42,60],backgroundColor:['#16a34a','#3b6fb0',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强，示意）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'捷克',data:[6.5,6,6,9,7,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'南非',data:[6,4.5,5.5,5,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 阿根廷 vs 奥地利 · 2026世界杯 J组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-argentina-vs-austria.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-argentina-vs-austria.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#6cace4;--sc:#e23b3b;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f4f8a,#7a4a0f);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#10243e,#0f1a2e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc7ee;font-weight:600}td.sc{color:#f0928e;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-argentina-vs-austria.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · J组次轮 · 两支首轮全胜队的"组首决战"</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 阿根廷 2-0 奥地利</span>
+  <h1>阿根廷 vs 奥地利</h1>
+  <div class="meta">2026年6月22日 · 阿灵顿 AT&T Stadium（达拉斯）· 13:00 ET（12:00 CT）· J组（同组：阿尔及利亚、约旦）· 第 43 场</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#6cace4">🇦🇷 阿根廷</div><div class="rk">FIFA #1 · 卫冕世界杯冠军 · 首轮 3-0 胜阿尔及利亚（Messi 帽子戏法）· 零牌、体能充足</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e23b3b">🇦🇹 奥地利</div><div class="rk">FIFA #22 · Rangnick 高位逼抢 · 首轮 3-1 胜约旦（过程比比分胶着）· Sabitzer 背 1 黄</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-23） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 阿根廷 2-0 奥地利（半场 1-0）· 06-22</span></h2>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">阿根廷不温不火地拿下出线：开场 VAR 介入判给阿根廷点球（Lautaro 被侵犯），<b>Messi 主罚被扑出</b>；但球王没让悬念延续多久——第 <b>38 分钟</b> Messi 接 Facundo Medina 的低平传中推射破门 1-0；下半场阿根廷收力控场、奥地利始终无法把场面优势转化为射正，补时 <b>90+5'</b> Messi 再下一城锁定 2-0。两球让 Messi 升至个人世界杯第 <b>17、18</b> 球，<b>独享男足世界杯历史射手王（超越克洛泽 16 球）</b>，本届个人第 5 球。阿根廷两连胜提前锁定出线（基本确保 J 组头名）。<b>全场阿根廷"never out of second gear"——没全力就赢下。</b></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 早段 Messi 罚失点球（VAR 判点）· 38' Messi（Medina 助攻）· 90+5' Messi｜Messi 第 17、18 球独享世界杯射手王 · 本届第 5 球</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇷 阿根廷</th><th>🇦🇹 奥地利</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td><b>1.05</b></td><td>0.24</td><td>机会质量差距明显——阿根廷 1.05 xG 进 2 球（含一粒罚失的点球未计入运动战 xG），终结效率高；奥地利 0.24 xG 几乎没有真正威胁</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td><b>3 / 2</b></td><td>2 / 0</td><td>阿根廷全场仅 3 射却 2 射正全部转化——极致效率，但创造量并不大，印证"二档巡航"</td></tr>
+      <tr><td class="ht">角球</td><td>0</td><td><b>2</b></td><td>奥地利角球占优、却 0 射正——定位球这件"现实武器"本场完全没能兑现，赛前担忧落空</td></tr>
+      <tr><td class="ht">界外球 / 区域推进</td><td>3</td><td><b>10</b></td><td>奥地利多次把球推进到阿根廷半场边路，但缺乏穿透——高压+边路传中难破阿根廷低位防线</td></tr>
+      <tr><td class="ht">抢断 / 抢回球</td><td><b>12 / 17</b></td><td>6 / 11</td><td>阿根廷拦截与二点保护更积极，牢牢掐住奥地利的高压转换</td></tr>
+      <tr><td class="ht">过人成功</td><td>2/3（67%）</td><td>2/11（18%）</td><td>奥地利 11 次过人仅 2 成——个人持球突破被完全限制，进攻被迫走传中</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.cbssports.com/soccer/news/argentina-austria-live-updates-world-cup-2026-score-result/live/">CBS Sports — 战报/数据</a> · <a href="https://www.skysports.com/football/argentina-vs-austria/report/549808">Sky Sports — Messi 破纪录战报</a> · <a href="https://bleacherreport.com/articles/25444004-messi-argentina-beat-austria-final-match-stats-highlights-world-cup-group-j-scenarios">B/R — Final Match Stats</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina">ESPN — Final Score</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"Messi 依赖症"被字面意义兑现——但这次是优点</div>赛前主线点名"阿根廷进攻过度依赖 Messi、第二终结点 Lautaro 须站出来"。结果两球全部来自 Messi（含罚失的点球也由他主罚），<b>依赖度达到 100%</b>。但球王状态炸裂下，这种依赖成了确定性资产而非风险。<b>说明只要 Messi 在场且火热，阿根廷不需要解决"第二爆点"也能赢中下游对手；可一旦遇到能真正冻结 Messi 的强队，缺乏第二终结点的隐患仍未被回答（本场 Lautaro 再度未破门）。</b></div>
+    <div class="insight"><div class="who">阿根廷 3 射 2 进——赢在效率而非压制</div>全场阿根廷射门仅 3 次（射正 2、全进），xG 1.05。<b>说明这场"省力的胜利"靠的是 Messi 的个人上限与极致终结，而非阵地碾压</b>——淘汰赛遇到组织更强、能压住转换的对手，这套低产出的进攻模式风险会放大。卫冕冠军提前出线后有资本继续藏牌。</div>
+    <div class="insight"><div class="who">Rangnick 的高压被"低位+反插"化解，定位球武器哑火</div>奥地利 10 次界外球推进、2 角球占优，却 0 射正、0.24 xG。<b>说明阿根廷面对高压时主动收缩低位、用抢断（12 次）和二点保护切断奥地利转换，让其高压无法形成射门</b>；奥地利赛前最被看好的"定位球+老将终结"路径完全没能兑现，运动战火力不足的老问题暴露无遗。</div>
+    <div class="insight"><div class="who">奥地利个人持球被冻结（过人 2/11）</div>奥地利全场 11 次过人仅成功 2 次（18%）。<b>说明在阿根廷的密集低位前，奥地利既无法靠个人突破制造错位、又缺乏穿透性传球</b>——这支 Rangnick 球队一旦高压不奏效、就缺乏 B 计划，末轮对阿尔及利亚需要找到阵地破密集的办法。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">阿根廷胜（去水 ≈62%）</td><td style="color:var(--good)"><b>✓ 兑现</b></td><td>2-0 稳胜、提前出线，热门方向完全正确</td></tr>
+      <tr><td class="ht">基准比分 阿根廷 2-0</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>基准剧本"2-0/2-1"中的 2-0 一字不差兑现</td></tr>
+      <tr><td class="ht">进攻过度依赖 Messi</td><td style="color:var(--good)"><b>✓ 完全兑现</b></td><td>两球全部 Messi——依赖度 100%，但本场转为优势</td></tr>
+      <tr><td class="ht">第二终结点须站出来（Lautaro）</td><td style="color:var(--bad)"><b>✗ 未兑现</b></td><td>Lautaro 再度未破门，第二爆点问题仍悬而未决</td></tr>
+      <tr><td class="ht">奥地利定位球是冷门武器</td><td style="color:var(--bad)"><b>✗ 哑火</b></td><td>2 角球 0 射正，定位球与老将终结完全没兑现</td></tr>
+      <tr><td class="ht">市场过热指数 3/5</td><td style="color:var(--good)"><b>✓ 合理</b></td><td>Messi 叙事推热、结果如盘口预期，无过度泡沫</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5fce8c">🇦🇷 阿根廷 · 下一场 末轮 vs 约旦（J组末轮）</h4>
+        <ul class="watch">
+          <li><b>已提前出线、料大幅轮换</b>：两连胜锁定头名在望，Scaloni 大概率保护 Messi 与主力体能、给 J. Álvarez/Tagliafico 等替补机会——末轮战意与首发强度会下降。</li>
+          <li><b>第二终结点仍是淘汰赛隐患</b>：两场仅 Messi 进球、Lautaro 连续哑火。末轮轮换正是检验 J. Álvarez 等替补终结点的窗口，也关系淘汰赛 B 计划。</li>
+          <li><b>低产出进攻模式</b>：本场 3 射赢球靠效率，淘汰赛遇强队风险会放大——值得跟踪阿根廷能否在末轮提升阵地创造量。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#7fa6e6">🇦🇹 奥地利 · 下一场 末轮 vs 阿尔及利亚（J组末轮，出线生死战）</h4>
+        <ul class="watch">
+          <li><b>出线压力陡增</b>：负于阿根廷后，末轮对阿尔及利亚很可能是出线生死战（含最佳第三名竞争），必须拿分。</li>
+          <li><b>高压失效需 B 计划</b>：本场高压被低位+反插化解、运动战 0.24 xG。对同样可能低位防守的阿尔及利亚，须解决"阵地破密集"问题。</li>
+          <li><b>定位球须激活</b>：占据 2 角球却 0 射正，赛前看好的定位球武器哑火——末轮要靠 Arnautović 等高点把定位球转化为实质威胁。</li>
+          <li><b>Sabitzer 黄牌包袱已解除</b>：本场未再领黄，末轮可正常使用其串联与战术犯规。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>J 组"事实上的小组决赛"</b>：阿根廷（卫冕冠军、FIFA #1）首轮 3-0 完胜阿尔及利亚、<b>Messi 上演帽子戏法</b>；奥地利（FIFA #22、Rangnick 执教）3-1 力克约旦、但过程比比分胶着。两队同积 3 分，胜者基本锁定小组头名与更有利的淘汰赛半区。盘口明确倾向阿根廷——胜赔约 <b>1.60</b>（去水隐含 ≈62%）、平局 <b>4.00</b>（≈24%）、奥地利胜 <b>5.75</b>（≈15%）；预测市场（Kalshi）给阿根廷约 <b>62%</b>。核心张力在两处对位：① <b>Rangnick 的高位逼抢留出身后空当</b>（奥地利对约旦时已暴露）正撞上阿根廷的纵向速度与 Messi/Julián 的直塞终结；② <b>阿根廷进攻是否过度依赖 Messi</b>——奥地利组织性远强于阿尔及利亚，若敢于贴身冻结 Messi，阿根廷的第二终结点（Lautaro 首轮未进球）须站出来。基准剧本：<b>阿根廷 2-0 / 2-1 取胜</b>，靠转换速度与球星上限拿下；但奥地利的定位球与老将终结（Arnautović/Sabitzer）有制造冷门的能力。市场过热指数 ≈ 3/5（Messi 叙事 + 组首决战）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">阿根廷隐含胜率(去水)</div><div class="v" style="color:#6cace4">≈62%</div></div>
+      <div class="key"><div class="k">奥地利隐含胜率(去水)</div><div class="v" style="color:#e23b3b">≈15%</div></div>
+      <div class="key"><div class="k">Messi 近5场进球</div><div class="v" style="color:var(--warn)">9 球</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>奥地利高压留身后空当（上一场带入）</b>：奥地利对约旦的高位逼抢虽奏效，但身后空间被多次打透——阿根廷的纵向速度（Julián Álvarez、Nico González）与 Messi 直塞恰好打这条软肋，这是阿根廷取胜剧本的现实路径。</li>
+      <li><b>阿根廷过度依赖 Messi（上一场带入）</b>：3-0 的进球高度集中在 Messi 个人终结（禁区外远射 + 门前补射的"二点终结"），Lautaro 首轮未破门——奥地利组织性强、会贴身冻结 Messi，阿根廷第二终结点能否兑现是看点。</li>
+      <li><b>Sabitzer 累积黄牌风险（上一场带入）</b>：奥地利核心 Sabitzer 已背 1 黄，本场再领黄将停末轮——对一支中场依赖他串联的球队是隐性减分项，临场拦截阿根廷反击时尤需谨慎。</li>
+      <li><b>定位球是奥地利的现实武器</b>：奥地利运动战火力不足，过度依赖定位球与老将终结（Arnautović/Sabitzer）——阿根廷后防对高点争顶的处理是冷门与否的关键。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #2a4a6b;background:linear-gradient(135deg,#131e2b,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc7ee;font-weight:700">阿根廷 · 上一场带入 · 过度依赖 Messi <span style="color:var(--mut);font-weight:400">· 阿尔及利亚战复盘迁移 · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">阿根廷首轮 3-0 阿尔及利亚、<b>Messi 帽子戏法</b>；但进攻高度集中于 Messi 个人终结、Lautaro 未破门</div>
+      <p style="font-size:13.5px">承接阿尔及利亚战复盘的前瞻迁移：阿根廷 3-0 取胜、Messi 一人包办进球（"禁区外远射 + 门前补射"的二点终结两度奏效），全场零牌、Messi 被提前换下保护、主力体能充足。阿尔及利亚控球 52% 却 0 射正，说明阿根廷防守稳固、终结高效。但隐患是<b>进攻过度依赖 Messi 个人</b>——奥地利（FIFA #22，组织性远强于阿尔及利亚）若敢于贴身冻结 Messi，阿根廷的第二终结点（Lautaro、Julián Álvarez）能否站出来，是本场最大悬念。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：阿根廷是明确热门（去水 ≈62%），但其"Messi 依赖症"在面对组织型防守时是真实风险。若奥地利成功限制 Messi、阿根廷又像首轮那样缺乏第二爆点，比分可能被压低（利好奥地利让球 +1/+1.5 与小球）。Lautaro 的状态是阿根廷能否舒适取胜的关键变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 阿根廷 vs 奥地利前瞻</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/" style="color:var(--accent)">Squawka — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f0928e;font-weight:700">奥地利 · 上一场带入 · 高压留身后空当 + Sabitzer 黄牌 <span style="color:var(--mut);font-weight:400">· 约旦战复盘迁移 · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">奥地利首轮 3-1 胜约旦、过程比比分胶着；<b>高位逼抢身后留空</b>、Sabitzer 已背 1 黄</div>
+      <p style="font-size:13.5px">承接约旦战复盘的前瞻迁移：奥地利 3-1 取胜但<b>过程胶着</b>（约旦射门更多、攻入首球），Rangnick 的高位逼抢虽奏效，但<b>身后空当问题</b>已暴露；运动战火力不足、过度依赖定位球与老将终结。关键人 Sabitzer 已吃到一张黄牌，本场再领黄将停下一场（末轮）。对阵阿根廷这种纵向速度极强的对手，高压留下的身后空间会被无限放大。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Rangnick 的高压是奥地利的体系核心，但也是双刃剑——阿根廷的 Julián Álvarez、Nico González 的纵深跑动 + Messi 的直塞，正是打高压身后空当的顶级配置。奥地利能否在"压上逼抢"与"防身后"间找到平衡，直接决定比赛走向；Sabitzer 的黄牌则限制了他临场战术犯规的空间。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/队况</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/" style="color:var(--accent)">Racing Post — 队况/预测</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc7ee;font-weight:700">阿根廷 · Messi 状态火热 <span style="color:var(--mut);font-weight:400">· Yahoo / Racing Post · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Messi 帽子戏法后状态炸裂、<b>近 5 场打入 9 球</b>；Scaloni 料沿用首胜阵容</div>
+      <p style="font-size:13.5px">据 Yahoo / Racing Post，Messi 首轮帽子戏法后近 5 场各项赛事打入 9 球，状态正盛；这可能是 Messi 的最后一届世界杯，个人荣誉驱动力极强。Scaloni 预计沿用 4-3-3 / 4-4-2，Julián Álvarez、Lautaro Martínez、Nico González 等围绕 Messi 构筑攻击群，中场 De Paul、Mac Allister、Enzo Fernández 把控节奏。<span style="color:var(--warn)">[官方首发以赛前 FIFA 名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Messi 的火热状态是阿根廷最大的确定性资产，也是奥地利防守的头号难题。奥地利大概率会安排专人盯防 Messi——这会释放阿根廷其他攻击点的空间（Julián/Lautaro），形成"按下葫芦浮起瓢"的局面，对阿根廷整体进攻反而有利。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html" style="color:var(--accent)">Yahoo Sports — 预测/Messi 状态</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/" style="color:var(--accent)">Racing Post — 队况</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· ESPN · 06-20</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：埃及名哨 <b>Amin Mohamed Omar</b> 执法；比赛在 AT&T 室内可开合顶棚球场进行</div>
+      <p style="font-size:13.5px">据 ESPN，FIFA 任命埃及籍 <b>Amin Mohamed Omar</b> 执法本场。他此前已在本届世界杯执法韩国 2-1 捷克（6/12），控场平稳、未现重大争议。比赛在阿灵顿 AT&T Stadium（可开合顶棚）进行，6 月达拉斯酷热下大概率<b>闭顶空调</b>，无极端天气变量但需关注体能（白天 13:00 ET 场）。<span style="color:var(--warn)">[本场助理/VAR 组合与 Omar 大赛单场出牌细分样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在一场阿根廷主攻、奥地利高压对抗的比赛里，裁判尺度影响牌数与点球盘。Omar 首秀控场平稳，但本届揭幕战即连出 3 红、整体执法偏严；奥地利高压逼抢的战术犯规、Sabitzer 的累积黄牌风险（2 黄停赛）都是观察点。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判/前瞻</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — 世界杯裁判名单</a></div>
+    </div>
+  </section>
+
+  <!-- ✅ 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;border-radius:14px;padding:16px 16px 18px;margin:14px 0;background:rgba(34,197,94,0.04)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 赛前官宣名单 + 对预测的修正</span></h2>
+    <div class="sub">阿根廷：多家阿根廷媒体（365scores/Río Negro/Infobae）一致「formación confirmada」<b style="color:var(--good)">✅ 官方确认</b>；奥地利：足协官方账号 @oefb1904 公布 <b style="color:var(--good)">✅ 官方确认</b>。事实与解读分述。</div>
+
+    <h4 style="margin-top:14px">① 双方官方首发</h4>
+    <h4 style="font-size:14px;margin-top:10px">🇦🇷 阿根廷（4-4-2 / 4-2-3-1，Almada 居中串联、Messi 自由）· Scaloni</h4>
+    <div class="lineup">E. Martínez; Molina · C. Romero · L. Martínez · Medina; De Paul · Enzo Fernández · Mac Allister · Almada; Messi(C) · Lautaro</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:5px">替补关键武器：J. Álvarez（禁区终结手·奇兵）、Tagliafico（伤愈复出）、Paredes、N. González。</div>
+    <h4 style="font-size:14px;margin-top:12px">🇦🇹 奥地利（4-2-3-1）· Rangnick</h4>
+    <div class="lineup">A. Schlager; Laimer · Posch · Danso · Alaba(C); Seiwald · X. Schlager; Schmid · Wanner · Sabitzer; Gregoritsch</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:5px">替补关键武器：Arnautović（老将终结点）、Kalajdzic、Wimmer、Prass、Lienhart。</div>
+
+    <h4 style="margin-top:16px">② vs 预测首发对照</h4>
+    <table style="width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px">
+      <thead><tr style="text-align:left;color:var(--mut)">
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">变化</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">预测</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">官方</th>
+        <th style="padding:6px 6px;border-bottom:1px solid var(--line)">为什么重要</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 中卫</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Otamendi</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">L. Martínez</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">左脚出球+回追更快，针对奥地利转换提速</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 左后卫</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Tagliafico</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Medina</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Tagliafico 刚伤愈仅进替补，Medina 续任左路</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 锋线</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">J. Álvarez 首发</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Almada（居中）+ Messi/Lautaro 双前锋</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Álvarez 轮休坐板凳，二号终结点压力全压 Lautaro</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇷 右后卫</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">（首轮 Montiel）</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Molina</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">相比首轮胜阿尔及利亚的唯一变化，攻强守略减</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 门将</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Pentz</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">A. Schlager</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">预测踏空，Rangnick 用更稳健的 A. Schlager 把门</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 队长/左卫</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">（预测漏列）</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Alaba(C) 首发</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">组织核心+定位球主罚回归，建造与死球威胁↑</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 右后卫</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Laimer（中场）</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Laimer（拉边卫）</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">预测放中场，实际拉到右后卫，攻守跑动量大</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:1px solid var(--line)">🇦🇹 中场</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">Baumgartner 等</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">X. Schlager 双后腰 + Wanner/Schmid 前置</td><td style="padding:6px 6px;border-bottom:1px solid var(--line)">改双后腰更护身后，年轻创造力顶替</td></tr>
+        <tr><td style="padding:6px 6px;border-bottom:0">🇦🇹 锋线</td><td style="padding:6px 6px;border-bottom:0">Arnautović + Gregoritsch 双前锋</td><td style="padding:6px 6px;border-bottom:0">单箭头 Gregoritsch（Arnautović 替补）</td><td style="padding:6px 6px;border-bottom:0">头号老将终结点首发坐板凳，开局火力点减一</td></tr>
+      </tbody>
+    </table>
+
+    <h4 style="margin-top:16px">③ 战术解读</h4>
+    <div style="font-size:13.5px;color:var(--txt);line-height:1.7">
+      <p style="margin:6px 0">• <b>阵型信号</b>：奥地利由「预测 4-2-2-2 双前锋」实际改 <b>4-2-3-1 单箭头 + Seiwald/X. Schlager 双后腰</b>——Rangnick 面对卫冕冠军选择更克制、先稳住身后。速览主线「阿根廷靠转换速度打身后空当」<b>维持</b>，但双后腰意味着身后空当或不如奥地利对约旦时那么大，阿根廷提速更要靠 Messi/Almada 的瞬间直塞，而非对手大举压上后的开阔地。</p>
+      <p style="margin:6px 0">• <b>关键对位修正</b>：阿根廷 J. Álvarez 轮休、Almada 居中串联 → 「二号终结点」从「待观察」<b>升级为「必须由 Lautaro 兑现」</b>（Lautaro 首轮未进球）；Álvarez 这种禁区终结手留作下半场奇兵。</p>
+      <p style="margin:6px 0">• <b>后防适配</b>：阿根廷以 L. Martínez + Medina（双左脚、回追快）替预测的 Otamendi + Tagliafico，对奥地利的转换与边路提速做了速度化处理；Tagliafico 刚伤愈进替补，符合赛前「循序渐进」信号。</p>
+      <p style="margin:6px 0">• <b>奥地利冷门武器变化</b>：赛前点名的「Arnautović/Sabitzer 老将终结制造冷门」——Sabitzer 首发（拉边）但 <b>Arnautović 退居替补</b>，开局奇兵威胁减一，更可能被 Rangnick 留作 60 分钟后的抢分变招；Alaba 首发则强化定位球这条既有冷门通道。</p>
+      <p style="margin:6px 0">• <b>速览结论：维持</b>（阿根廷小胜基准 2-0 / 2-1）。两边名单都无撼动胜负方向的爆点：阿根廷主力尽出（仅 Álvarez 轮休、Messi 领衔），奥地利换的是人不是结构——反而更具组织性。微调：Álvarez 替补使阿根廷「零封+多进球」确定性略降，奥地利双后腰令「大球」上限略受压。</p>
+    </div>
+
+    <h4 style="margin-top:14px">④ 市场反应</h4>
+    <p style="font-size:13px;color:var(--mut);margin:6px 0">截至首发公布（T-60 前后），头部 1X2 赔率（阿根廷胜≈<b>1.60</b> / 平≈<b>4.00</b> / 奥地利胜≈<b>5.75</b>，欧赔小数盘）未见明显异动——阿根廷阵容基本符合预期（Álvarez 轮休属可接受范围），奥地利变阵为「人员」而非「放弃式大轮换」，不足以撬动胜负盘；边际影响更可能落在让球（-1/-1.5）与大小球，但未捕捉到实时盘口的显著位移。仅作事实陈述，非投注建议。</p>
+
+    <div class="src" style="margin-top:12px;font-size:12px">来源：<a href="https://www.365scores.com/es/news/formacion-de-argentina-vs-austria-oficial/" style="color:var(--accent)">365scores — 阿根廷 formación confirmada</a> · <a href="https://www.rionegro.com.ar/deportes/la-formacion-de-argentina-vs-austria-confirmada-scaloni-aposto-por-la-base-del-ultimo-partido-4620526/" style="color:var(--accent)">Diario Río Negro — confirmada</a> · <a href="https://www.infobae.com/deportes/2026/06/22/argentina-vs-austria-en-vivo-por-el-mundial-2026-hora-formaciones-tv-y-todo-lo-que-hay-que-saber/" style="color:var(--accent)">Infobae — confirmó la formación</a> · <a href="https://khelnow.com/football/world-football-austria-starting-lineup-vs-argentina-fifa-world-cup-2026-clash" style="color:var(--accent)">Khel Now — 奥地利官方 XI（转 @oefb1904）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494" style="color:var(--accent)">FIFA — 比赛中心</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· J组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>J 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇦🇷 阿根廷</th><th>🇦🇹 奥地利</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#1</td><td class="sc">#22</td></tr>
+      <tr><td>首轮结果</td><td class="ht">3-0 胜阿尔及利亚（Messi 帽子戏法）</td><td class="sc">3-1 胜约旦（过程胶着）</td></tr>
+      <tr><td>J 组积分</td><td colspan="2">两队<b>同积 3 分</b>——本场胜者基本锁定小组头名与更优淘汰赛半区</td></tr>
+      <tr><td>主教练</td><td class="ht">Lionel Scaloni</td><td class="sc">Ralf Rangnick</td></tr>
+      <tr><td>核心球员</td><td class="ht">Messi(C)、Julián Álvarez、Lautaro、De Paul</td><td class="sc">Sabitzer（背1黄）、Arnautović、Baumgartner、Laimer</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">第二终结点（Lautaro 未破门）；Messi 被盯防后的破局</td><td class="sc">高压身后空当；Sabitzer 黄牌；运动战火力不足</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">世界杯 2022 冠军 · 美洲杯 2024 冠军</td><td class="sc">欧洲杯 2024 小组头名出线（16 强负土耳其）· 世界杯 1998 后再回</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.60（隐含≈62%）</td><td class="sc">胜 5.75（≈15%）· 平 4.00（≈24%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">市场轻度偏大（阿根廷火力 + 奥地利攻强守不稳），但若 Messi 被冻结、奥地利收缩，分歧真实</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈62/24/15，再归一）。赔率来源：bet365（阿根廷 -167 → 1.60、平 +300 → 4.00、奥地利 +475 → 5.75，Yahoo/Racing Post 转载）；预测市场 Kalshi 阿根廷 62% / 平 24% / 奥地利 15%。让球盘阿根廷约 -1/-1.5，具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选 / 热身）</b>与<b>本届世界杯实际值</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇦🇷 阿根廷 · 进攻</td><td class="ht">2022 世界杯 + 2024 美洲杯冠军级火力，Messi/Julián/Lautaro 终结群成熟</td><td class="ht">首轮 <b>3 球</b>（Messi 帽子戏法），高效但集中于个人</td><td><b>符合</b>冠军级水准，但终结过度集中于 Messi——第二爆点的稳定性是隐患（Lautaro 未破门）</td></tr>
+      <tr><td class="ht">🇦🇷 阿根廷 · 防守</td><td class="ht">夺冠靠后防纪律（Otamendi/Romero）+ 中场屏障，少失球见长</td><td class="ht">首轮<b>零封</b>、阿尔及利亚 52% 控球却 0 射正</td><td><b>延续</b>稳守传统：让对手控而不透，防守质量是阿根廷的底盘</td></tr>
+      <tr><td class="sc">🇦🇹 奥地利 · 进攻</td><td class="sc">Rangnick 体系强调转换与定位球，运动战创造力一般、欧预选靠整体</td><td class="sc">首轮 <b>3 球</b>胜约旦，但对手弱、过程胶着</td><td><b>含水分</b>：3 球数据光鲜但对手是 J 组最弱，运动战火力对位阿根廷将打折</td></tr>
+      <tr><td class="sc">🇦🇹 奥地利 · 防守</td><td class="sc">高位逼抢 + 紧凑中场，但后防线身后空间是体系固有代价</td><td class="sc">首轮被约旦<b>攻入 1 球</b>、身后多次被打透</td><td><b>劣于</b>理想：高压留空恰是阿根廷纵向速度的打击点，零封难度大</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：阿根廷攻防本届实际值<b>延续冠军水准</b>（3 球零封），唯一隐患是进攻过度依赖 Messi；奥地利进攻数据<b>含对手偏弱的水分</b>、防守身后空当<b>劣于</b>理想。深度数据与"阿根廷纸面与实际双重占优、奥地利高压双刃剑"的主线一致。来源：Opta Analyst · FotMob/Sofascore（首轮）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">阿根廷 ≈1.9</td><td class="sc">奥地利 ≈0.9</td><td>校准后阿根廷明显占优——但奥地利组织性强于阿尔及利亚，阿根廷转化效率需关注（Messi 被盯防的陷阱）</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">体系内阿根廷居 J 组及全球最前列；预测市场（Kalshi）给阿根廷胜≈62%、出线＞95%、夺组高概率，奥地利出线仍有戏但夺组难</td><td>对手强度校准后阿根廷样本含金量高于奥地利（奥地利首轮对手约旦 FIFA #62 更弱）</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：奥地利 PPDA 极低（高压逼抢），阿根廷更偏控制 + 致命转换；field tilt 大概率均衡略偏阿根廷</td><td>奥地利高压会制造场面焦灼，但<b>陷阱提醒</b>：阿根廷擅长用一次转换解决战斗，场面≠效率</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶（奥地利低值）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">阿根廷胜方向高度统一；真实分歧在"让球幅度（-1 vs -1.5）+ 能否零封 + 进球数"；Messi 叙事带来额外流量</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 阿根廷胜方向统一，Messi 叙事带流量</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">阿根廷是明确热门（去水≈62%、Kalshi 62%），专家方向几乎全押阿根廷——属合理共识。真正分歧在<b>让球幅度（-1 vs -1.5）+ 能否零封 + 大小球</b>。Messi"可能的最后一届世界杯 + 帽子戏法"带来高于普通小组赛的舆论流量。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向：阿根廷胜 多数 · 平局 少数 · 奥地利胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>阿根廷胜；建包侧重 Messi 进球/助攻，提示奥地利难零封但能进 1 球</td></tr>
+      <tr><td>Yahoo Sports</td><td>预测媒体</td><td>阿根廷小胜；交易商给阿根廷 62% / 平 24% / 奥地利 15%</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>阿根廷为更干净一侧；奥地利高压有反扑但质量不及</td></tr>
+      <tr><td>OneFootball / BetMGM</td><td>赔率聚合</td><td>阿根廷胜 + 关注让球/大小球角度</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>阿根廷取胜，Messi 时刻；奥地利定位球是唯一冷门通道</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向高度统一（无人押奥地利赢）——合理共识而非过热。真正分歧在<b>让球幅度</b>（-1 vs -1.5）、<b>能否零封</b>与<b>大小球</b>。Messi 叙事是舆论流量来源，但无显著推动奥地利胜的资金。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>阿根廷胜</th><th>解读</th></tr>
+      <tr><td>开档（多家综合）</td><td>1X2</td><td class="ht">≈1.55–1.62</td><td>阿根廷明确热门；平 4.00 / 奥地利 5.75</td></tr>
+      <tr><td>06-20 截止</td><td>bet365 / FanDuel</td><td class="ht">1.60（-167）</td><td>阿根廷短赔稳定（首轮 3-0 帽子戏法后定价基本不动）</td></tr>
+      <tr><td>06-20</td><td>大/小球</td><td colspan="2" class="ht">市场轻度偏大球（阿根廷火力 + 奥地利攻强守不稳）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>阿根廷 -1 / -1.5</td><td colspan="2" class="ht">阿根廷 -1/-1.5 具体赔率以实时盘口为准</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td class="ht">阿根廷胜 ≈1.55；让球 -1.5</td><td>以"卫冕冠军 + FIFA #1 + Messi"定价，初盘把阿根廷压到强热门、让球深至 -1.5——市场假设阿根廷碾压</td></tr>
+      <tr><td>开盘（首轮赛后重定价）</td><td class="ht">阿根廷胜 1.58–1.62；让球 -1/-1.5 并存</td><td><b>repricing 来自双方首轮</b>：阿根廷 3-0 帽子戏法确认强势（胜赔维持低位），但奥地利同样 3-1 取胜证明非鱼腩 → 让球从纯 -1.5 向 -1 适度回拉，胜赔小幅微调</td></tr>
+      <tr><td>现盘（06-20→现）</td><td class="ht">阿根廷胜 1.60；大球轻热 / 让球 -1 为主</td><td>胜负盘稳定（结果定价已收敛）；最活跃的价格发现在<b>让球（-1 vs -1.5）与是否零封</b>——"Messi 是否被冻结、阿根廷第二爆点能否兑现"是让深盘成立与否的关键</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：本场赔率"先压后微调"——初盘按卫冕冠军碾压定价（≈1.55、让 -1.5），但<b>奥地利首轮同样 3 分</b>触发对让球深度的重定价，从 -1.5 向 -1 回拉。1X2 价值有限（方向明确），最有信息含量的是<b>阿根廷让球（-1/-1.5）、能否零封与大小球</b>——映射"阿根廷能否在被针对 Messi 的情况下舒适取胜"这一核心悬念。初盘区间以各平台为准。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket（聚合）</b>：本场阿根廷约 <b>62%</b> 胜率、平 24%、奥地利 15%——与博彩去水高度一致，无明显情绪溢价。J 组出线：阿根廷＞95%、奥地利仍占优（首轮取胜打下基础）。<span style="color:var(--warn)">[本场单场成交量与动量细分未单独公开检得 · 待核]</span></li>
+      <li><b>舆论焦点 ①</b>：<b>Messi 可能的最后一届世界杯 + 帽子戏法</b>是本场最大流量来源，个人荣誉叙事推高关注度。</li>
+      <li><b>舆论焦点 ②</b>：<b>Rangnick 的奥地利能否爆冷卫冕冠军</b>——欧洲媒体关注其高压体系对阵顶级球队的成色。</li>
+      <li><b>奥地利叙事</b>：首轮取胜让公众对其"抢分/逼平"信心略升，但少有人押奥地利取胜；冷门资金有限。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：胜负方向明确（阿根廷），博彩与预测市场一致（≈62%），过热指数 <b>3/5</b>。话题热度来自 <b>Messi 叙事</b>与<b>组首决战</b>，而非胜负盘本身；最有信息含量的是<b>阿根廷让球（-1/-1.5）、能否零封与大小球</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html">Yahoo Sports — 预测/交易商概率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://onefootball.com/en/news/argentina-vs-austria-prediction-world-cup-2026-preview-best-bets-43029991">OneFootball — 预测</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为埃及籍 <b>Amin Mohamed Omar</b>（入选 2026 世界杯裁判名单，本届已执法韩国 2-1 捷克）。来源：ESPN（裁判名单 / 前瞻）。<span style="color:var(--warn)">[本场助理/VAR 具体组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（实际数据 + 定性）</h4>
+    <ul class="cl">
+      <li><b>执法体系画像</b>：Omar 来自非洲（CAF）执法体系，本届首秀（韩-捷）<b>控场平稳、未现重大争议</b>。其大赛单场出牌均值样本有限，量化外推需留余地。<span style="color:var(--warn)">[场均黄牌细分 · 待核]</span></li>
+      <li><b>与两队的执法史</b>：作为非洲裁判，与阿根廷、奥地利两队均无显著公开执法史，无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位；揭幕战即连出 3 红，执法环境偏严的实证已现。奥地利高压逼抢的战术犯规、以及 Sabitzer 的累积黄牌（2 黄即停下一场、事关末轮）风险上升。</li>
+      <li><b>对本场的实际影响</b>：半自动越位会更快判定阿根廷反击中 Julián/Lautaro 的临界冲刺，对越位边缘的反击进球有轻微抑制；Messi 作为队长适应"仅队长沟通"无压力。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场是"阿根廷主攻 + 奥地利高压对抗"的对位，关注点：① 奥地利拦截阿根廷反击的战术犯规累积（Sabitzer 黄牌敏感）；② 禁区内对 Messi/Lautaro 的拉扯点球尺度；③ 半自动越位对阿根廷快速转换的判定。鉴于 Omar 大赛单场样本有限，牌数盘宜以"倾向性"而非"精确均值"看待。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（ESPN / Racing Post 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇦🇷 阿根廷 预测首发（4-3-3）· Scaloni</h4>
+    <div class="lineup">E. Martínez; Molina · Romero · Otamendi · Tagliafico; De Paul · Enzo Fernández · Mac Allister; Messi(C) · J. Álvarez · Lautaro</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Lionel Messi (C)</td><td>前锋 / 队长</td><td>首轮帽子戏法、近 5 场 9 球，状态炸裂；奥地利头号防守难题，被盯防后将释放队友空间</td></tr>
+      <tr><td class="ht">Julián Álvarez</td><td>前锋 / 马竞</td><td>纵深跑动与终结，打奥地利高压身后空当的理想配置</td></tr>
+      <tr><td class="ht">Lautaro Martínez</td><td>前锋 / 国米</td><td>首轮未破门——本场是否找回门前效率，决定阿根廷第二爆点是否成立</td></tr>
+      <tr><td class="ht">Rodrigo De Paul</td><td>中场</td><td>攻防转换发动机，连接 Messi 与中场，反击推进核心</td></tr>
+    </table>
+    <h4>🇦🇹 奥地利 预测首发（4-2-2-2 / 4-3-3）· Rangnick</h4>
+    <div class="lineup">Pentz; Posch · Danso · Wöber · Mwene; Seiwald · Sabitzer · Laimer; Baumgartner; Arnautović · Gregoritsch</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Marcel Sabitzer</td><td>中场 / 多特蒙德</td><td>奥地利中场串联核心；<b>已背 1 黄</b>，再领黄停末轮，临场拦截需谨慎</td></tr>
+      <tr><td class="sc">Marko Arnautović</td><td>前锋</td><td>经验型支点与终结点；定位球争顶是奥地利冷门通道</td></tr>
+      <tr><td class="sc">Konrad Laimer</td><td>中场 / 拜仁</td><td>高压逼抢的覆盖与跑动引擎，Rangnick 体系执行者</td></tr>
+      <tr><td class="sc">Christoph Baumgartner</td><td>前腰</td><td>前插与二点包抄，奥地利运动战为数不多的纵深威胁</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Racing Post），<b>以赛前官方名单为准 · 待核</b>。阿根廷 Scaloni 是否轮换、Lautaro 与 Julián 的搭配，以及奥地利后卫线人选是两处待核变量。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#6cace4">🇦🇷 阿根廷 · Lionel Scaloni</div>
+        <div class="role">4-3-3 控制 + 致命转换，Messi 自由人，后防纪律是底盘</div>
+        <ul class="cl">
+          <li>阿根廷的招牌是<b>中场控制 + 一次转换解决战斗 + Messi 的自由创造</b>——2022 世界杯、2024 美洲杯双冠靠的是攻守平衡与大赛气质。首轮 3-0 零封，防守端让阿尔及利亚控而不透。</li>
+          <li>交叉参照：世界杯 2022 夺冠（决赛点球胜法国）、美洲杯 2024 卫冕——阿根廷在硬仗中的比赛管理与终结效率是顶级。隐患是进攻对 Messi 的依赖，本场若被针对，需要 Julián/Lautaro 顶上。</li>
+          <li>本场切入口：奥地利高压留下的身后空间，正是阿根廷转换速度与 Messi 直塞的打击点；用控制消耗奥地利的高压体能，下半段往往是阿根廷扩大优势的窗口。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e23b3b">🇦🇹 奥地利 · Ralf Rangnick</div>
+        <div class="role">高位逼抢（gegenpressing）+ 快速转换 + 定位球，身后留空是固有代价</div>
+        <ul class="cl">
+          <li>Rangnick 的招牌是<b>极致高位逼抢 + 夺回球权后的快速转换 + 定位球得分</b>——欧洲杯 2024 奥地利以小组头名（力压法国、荷兰）出线，靠的正是这套强度足球。</li>
+          <li>交叉参照：欧洲杯 2024 小组头名、16 强 1-2 惜败土耳其（define：高压体系遇对手定位球与韧性时翻车）；本届首轮 3-1 胜约旦但过程胶着，身后空当已暴露。对阵阿根廷，这一代价会被放大。</li>
+          <li>本场应对：奥地利的现实希望在用高压打乱阿根廷出球节奏、靠定位球（Arnautović 争顶）偷袭，以及在 Messi 被限制时把比赛拖入低比分。但若高压被一次转换打穿先丢球，奥地利的运动战火力很难逆转卫冕冠军。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN <small>· 赛前前瞻</small></div>本场被定义为"J 组事实上的决赛"，胜者基本锁定头名与更优淘汰赛半区。阿根廷的纵向速度对位奥地利的高压身后空当是关键；Messi 的火热状态是阿根廷最大确定性。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 投注媒体</small></div>主推阿根廷胜，建包侧重 Messi 进球/助攻；认为奥地利后防难零封但有定位球反扑能力，提示双方进球（BTTS）有一定价值。</div>
+    <div class="insight"><div class="who">预测市场（Kalshi） <small>· 市场共识</small></div>阿根廷胜≈62% / 平 24% / 奥地利 15%，与博彩去水高度一致、无明显溢价。阿根廷出线＞95%；本场对夺组与半区归属权重很高。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / FotMob</small></div>真正悬念不在胜负方向，而在<b>阿根廷能否在 Messi 被针对时仍舒适取胜并零封</b>。⚠ 陷阱提醒：若奥地利成功冻结 Messi、阿根廷第二爆点又像首轮那样哑火，让深盘（-1.5）与大球有落空风险，奥地利的定位球反扑则是冷门窗口。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：阿根廷取胜（2-0 / 2-1，靠转换速度与 Messi 撬开）是基准剧本；平局（≈24%）是中等尾部——若奥地利冻结 Messi、阿根廷第二爆点哑火，奥地利有逼平机会；奥地利取胜（≈15%）需要高压打乱 + 定位球偷袭 + 阿根廷罕见低效同时发生。</li>
+      <li><b>关键先生</b>：Messi（阿/创造与终结）、Julián Álvarez（阿/打身后空当）、Lautaro（阿/第二爆点）、Sabitzer（奥/中场串联，黄牌敏感）、Arnautović（奥/定位球冷门通道）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>奥地利高压身后空当 vs 阿根廷转换速度</b>谁先兑现，以及<b>Messi 被盯防后阿根廷的第二终结点</b>——决定让球盘（-1/-1.5）与大小球的结算。</li>
+      <li><b>市场视角</b>：博彩与预测市场方向一致（阿根廷，≈62%），1X2 价值有限；最有信息含量的是<b>阿根廷让球（-1/-1.5）、能否零封与大小球</b>。过热指数 3/5（话题来自 Messi 叙事与组首决战）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② 阿根廷是否轮换、Lautaro 状态；③ 奥地利后卫线人选与 Sabitzer 是否因黄牌保护；④ Omar 本场助理/VAR 组合与大赛单场出牌细分；⑤ Kalshi/Polymarket 本场成交量与动量细分；⑥ 亚盘让球线（-1/-1.5）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49120325/fifa-world-cup-2026-argentina-vs-austria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判/前瞻</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021494">FIFA — 比赛中心</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/argentina-vs-austria-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aWWEq1g5Sj8t/">Racing Post — 赔率/队况/预测</a><br>
+      • <a href="https://sports.yahoo.com/articles/argentina-vs-austria-picks-predictions-094816496.html">Yahoo Sports — 预测/交易商概率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-argentina-vs-austria-06-22-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://onefootball.com/en/news/argentina-vs-austria-prediction-world-cup-2026-preview-best-bets-43029991">OneFootball — 预测</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — 世界杯裁判名单</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_J">Wikipedia — J组</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-21 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#6cace4',SC='#e23b3b',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['阿根廷胜','平局','奥地利胜'],datasets:[{data:[62,24,15],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[54,46],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，略偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['阿根廷','奥地利','阿尔及利亚','约旦'],datasets:[{data:[1,22,43,62],backgroundColor:[HT,SC,'#3b6fb0','#7fa6e6'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/反击','个人上限','大赛经验'],
+  datasets:[
+   {label:'阿根廷',data:[8.5,8.5,8.5,7.5,9.5,9.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'奥地利',data:[6.5,6,7,7,6.5,6.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

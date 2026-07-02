@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 挪威 vs 法国 · 2026世界杯 I组末轮（争小组头名 · 法国平局即夺头名 / 挪威须取胜）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-norway-vs-france.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-norway-vs-france.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-norway-vs-france.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-norway-vs-france.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-norway-vs-france.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-norway-vs-france.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · I组末轮 · 争小组头名（法国平局即头名 / 挪威须取胜）· Mbappé vs Haaland</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 法国 4-1 挪威</span>
+  <h1>挪威 vs 法国</h1>
+  <div class="meta">2026年6月26日（周五）· 福克斯堡 Boston Stadium（Gillette Stadium）· 15:00 本地 / 15:00 ET / 20:00 BST / 19:00 GMT · I组末轮 · 同组对手：塞内加尔、伊拉克（两队均已出局，0 分）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇳🇴 挪威</div><div class="rk">4-1 伊拉克 + 3-2 塞内加尔 · 6 分（净 +4，进 7）· 已出线，须取胜方夺头名 · Haaland 两连"梅开二度" · Ryerson 伤情待跟踪 · 预计轮换</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇫🇷 法国</div><div class="rk">3-1 塞内加尔 + 3-0 伊拉克 · 6 分（净 +5，进 6）· 已出线，平局即夺头名 · Mbappé 4 球 · 主帅 Deschamps 因故缺席（Stéphan 代理）· 预计轮换</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 法国 4-1 挪威（半场 3-1）· 06-26</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">本场最大故事不是 Mbappé vs Haaland，而是<b>挪威主帅 Solbakken 在已锁定出线后做出 10 处变阵——Haaland、队长 Ødegaard、锋线 Sørloth 全部轮休</b>，把核心留给淘汰赛。结果<b>法国靠 Ousmane Dembélé 的上半场帽子戏法摧毁挪威二线阵</b>：Dembélé 第 7 分钟、第 20 分钟、第 32 分钟连入三球，半场即 3-1（Thelo Aasgaard 为挪威扳回一球）；补时 Désiré Doué 头球锁定 4-1。<b>Mbappé 与 Haaland 双双未能再添入球、金靴之争本场停滞</b>。法国以小组头名晋级 32 强，挪威（凭此前击败伊拉克、塞内加尔锁定的积分）以次席晋级——双方出线身份在赛前已定，本场只决头名归属，法国如愿夺魁。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 7' Dembélé（法）｜20' Dembélé（法）｜32' Dembélé（法 · 帽子戏法）｜Aasgaard（挪 · 扳回一球）｜90+ Doué（法 · 头球）· 半场 3-1</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（FIFA / Al Jazeera / ESPN）</h4>
+    <table>
+      <tr><th>指标</th><th>🇫🇷 法国</th><th>🇳🇴 挪威</th><th>解读</th></tr>
+      <tr><td class="ht">比分 / 进球</td><td><b>4</b>（Dembélé×3、Doué）</td><td>1（Aasgaard）</td><td>法国半场即 3-1 杀死悬念；Dembélé 帽子戏法是决定性产出</td></tr>
+      <tr><td class="ht">单场 xG</td><td class="ht" colspan="2">单场 xG 分项未多源核得 · <span style="color:var(--warn)">待核</span></td><td>从进球与过程看，法国机会质量与终结效率全面碾压二线挪威</td></tr>
+      <tr><td class="ht">阵容强度</td><td>非全主力但保留前场核心</td><td><b>10 处变阵、核心全休</b></td><td>这是本场结果的根本解释——强度严重不对等</td></tr>
+      <tr><td class="ht">金靴之争</td><td colspan="2"><b>Mbappé、Haaland 本场均未进球（Haaland 轮休未登场/有限出场）</b></td><td>金靴战线本场停滞，悬念延至淘汰赛</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://www.aljazeera.com/sports/2026/6/26/dembele-scores-hat-trick-as-france-beat-norway-4-1-at-world-cup-2026">Al Jazeera — Dembélé 帽子戏法/10 处变阵</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-france-v-norway-mbappe-haaland-battle-golden-boot-live">Olympics.com — 进球时间轴 live</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489">FIFA Match Centre — Result（Norway 1-4 France）</a> · <a href="https://www.espn.com/soccer/story/_/id/49188543/norway-france-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — 反应/细节</a>。<span style="color:var(--warn)">[单场 xG/控球/射门分项未多源核得 · 待核]</span></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"轮换力度"是赛前点名的头号变量——挪威 10 处变阵直接定调</div>赛前明确"双方轮换力度是最不确定、最影响盘口的变量，单一预测不可尽信、须以官方名单为准"。<b>挪威把 Haaland/Ødegaard/Sørloth 全部留给淘汰赛、10 处变阵</b>，正是这一变量向极端兑现——官方首发模块已修正"双星对轰"主线，本场实质是法国主力梯队打挪威二线。</div>
+    <div class="insight"><div class="who">Dembélé 上半场帽子戏法——法国边路爆破在弱防线前的极致兑现</div>面对挪威二线后防，Dembélé 7'/20'/32' 三连击。<b>说明赛前点名的"法国速度与终结（Mbappé/Dembélé/Olise/Barcola）可利用挪威后防口子"被放大兑现</b>——当挪威主力中卫缺阵，这条逻辑变成压倒性优势。</div>
+    <div class="insight"><div class="who">金靴叙事让位于团队结果——Mbappé/Haaland 双双哑火</div>本场被包装为 Mbappé vs Haaland，但 Haaland 轮休、Mbappé 未进球，<b>反而是 Dembélé 抢镜</b>。说明在已出线的低压情境 + 阵容取舍下，巨星个人数据让位于球队战略（保体能/争头名）——金靴悬念留到淘汰赛。</div>
+    <div class="insight"><div class="who">法国夺头名但含金量需打折——对手是二线挪威</div>4-1 大胜锁定头名，但<b>对手是 10 处变阵的挪威二队</b>，这场胜利对评估法国淘汰赛成色的参考价值有限。Deschamps 缺席、Stéphan 代理下球队运转顺畅是正向信号，但真正的考验在 32 强。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">有球、法国小胜或平局即可夺头名（基准剧本）</td><td style="color:var(--warn)"><b>~ 方向对、幅度超出</b></td><td>法国如期夺头名，但因挪威大轮换，结果是 4-1 大胜而非"小胜"</td></tr>
+      <tr><td class="ht">轮换力度是头号变量、须以官方名单为准</td><td style="color:var(--good)"><b>✓ 精准命中</b></td><td>挪威 10 处变阵、核心全休——变量向极端兑现，官方首发模块已修正主线</td></tr>
+      <tr><td class="ht">法国速度/终结可利用挪威后防口子</td><td style="color:var(--good)"><b>✓ 放大命中</b></td><td>Dembélé 帽子戏法正出自此逻辑（二线后防下被放大）</td></tr>
+      <tr><td class="ht">大/小 2.5 球（偏大球）</td><td style="color:var(--good)"><b>✓ 命中（大球）</b></td><td>全场 5 球，Over 2.5 轻松兑现</td></tr>
+      <tr><td class="ht">Mbappé vs Haaland 金靴对轰推高大球</td><td style="color:var(--bad)"><b>✗ 落空（双双未进）</b></td><td>大球由 Dembélé 而非两位金靴热门贡献——叙事与结果错位</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fb3ec">🇫🇷 法国 · I 组头名晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>以 I 组头名晋级 32 强</b>，作为头名对阵相应小组对手（待 FIFA 对阵表确定）。</li>
+          <li><b>头名签运优势兑现（核心带入）</b>：赛前点名头名一侧路径更优；下一场对手与潜在 16 强分区按头名匹配。</li>
+          <li><b>胜利含金量打折</b>：对手是挪威二队，Dembélé 状态火热是真实利好，但后防与中场的强强对抗成色待 32 强检验。</li>
+          <li><b>Deschamps 缺席延续</b>：Stéphan 代理下运转顺畅，但主帅何时归队、淘汰赛指挥是看点 <span style="color:var(--warn)">[Deschamps 归队时间 · 待核]</span>。Mbappé 金靴动机仍在。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇳🇴 挪威 · I 组次席晋级 32 强</h4>
+        <ul class="watch">
+          <li><b>以 I 组次席晋级 32 强</b>，本场大轮换不影响出线位次——核心已养精蓄锐。</li>
+          <li><b>Haaland/Ødegaard/Sørloth 满血回归（核心带入）</b>：淘汰赛首战三核归位，是挪威真正的战力基准；本场二线 1-4 不代表主力成色。</li>
+          <li><b>后防是隐忧延续</b>：二线后防被 Dembélé 打爆，主力中卫的稳定性在淘汰赛对强攻击线时仍需观察。</li>
+          <li><b>次席签运</b>：作为亚军对阵相应分区对手，路径较头名稍硬 <span style="color:var(--warn)">[32 强对阵 · 待官方对阵表]</span>。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 I 组末轮的<b>"头名生死战、但双方都已出线"</b>对决，也是本届世界杯的话题焦点——<b>Mbappé vs Haaland</b>（两人均已 4 球、与 Messi 争金靴）。算术清晰：<b>法国 6 分、净胜球 +5（进 6）；挪威 6 分、净胜球 +4（进 7）</b>。两队 I 组前两轮都击败了同样的对手（塞内加尔、伊拉克），唯一差别是法国净胜球多一个——<b>因此法国只需一场平局即可锁定小组头名，挪威则必须取胜才能反超夺头名</b>（同分时先比相互战绩、本场即直接对话，胜者居前）。头名的现实意义：<b>头名进 32 强对阵一支成绩较好的第三名（被认为相对好打，可能遇瑞典，且 16 强潜在对手为德国一侧）；亚军则大概率对阵 E 组第二（科特迪瓦 / 厄瓜多尔），且后续可能撞上巴西 / 荷兰、八强遇英格兰一侧——多家媒体认为头名签运更优</b>。但两队都已晋级 + 赛程间隔短，<b>双方都明言会轮换</b>：挪威主帅 Solbakken 公开表示"会有一些变化"（对塞一战末段多人抽筋、9 人结束）；法国 Deschamps 因母亲离世返回法国、由助教 Guy Stéphan 代理带队，阵容深度足以轮换中场。模型与盘口一致把法国定为明显热门：Opta 超算<b>法国 55.4% 胜 / 平 21.6% / 挪威 23.0%</b>；盘口法国胜约 <b>1.62</b>（FanDuel -160）、平 <b>4.50</b>、挪威胜 <b>4.50</b>（+360～+400）；亚盘<b>法国 -1（约 2.05）/ 挪威 +1（约 1.80）</b>，总分线 <b>O/U 2.5 偏大球</b>（Over 约 -150）。三处看点：① <b>双方轮换力度</b>（决定强度与冷门概率）；② <b>Haaland/Mbappé 金靴之争是否让双方仍全力进攻</b>（推高大球）；③ <b>挪威必须取胜 vs 法国平局即满足</b>的动机差。基准剧本：<b>有球、法国小胜或平局即可夺头名</b>，过热指数 ≈ 2/5（共识偏法国但价格未被狂热推动，分歧在轮换与大小球）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">法国隐含胜率(去水)</div><div class="v" style="color:#5aa8d8">≈58%</div></div>
+      <div class="key"><div class="k">挪威隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈21%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈21%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 头名规则（多源确认）</b>：法国 6 分、净 +5（进 6）；挪威 6 分、净 +4（进 7）。两队均已锁定 32 强。<b>同分时先看相互战绩——本场即直接对话，胜者居前</b>；因法国净胜球已领先，<b>法国平局即夺头名、挪威须取胜方反超</b>。突破口在于：挪威必须主动求胜，可能给法国留出反击 / 阵地空间。</li>
+      <li><b>法国 Deschamps 缺席、Stéphan 代理（多源确认）</b>：据 ESPN、Al Jazeera、Opta Analyst，法国主帅 <b>Didier Deschamps 因母亲离世返回法国奔丧</b>，本场由助教 <b>Guy Stéphan</b> 代理带队。法足协公开表态致以慰问。这是临场最大的非竞技变量——可能影响排兵与临场调度。</li>
+      <li><b>双方均明言轮换（多源确认）</b>：挪威 Solbakken 直言"会有一些变化"（对塞末段多人抽筋、用满换人、9 人结束）；法国阵容深度足以轮换中场，Theo Hernández 预计替下 Digne。<span style="color:var(--warn)">Haaland / Ødegaard 是否首发各源略有出入（多数预测首发仍含两人，但有来源指可能轮休）· 待核 · 以官方名单为准。</span></li>
+      <li><b>金靴之争是隐藏的"全力进攻"开关</b>：Mbappé（16 场 16 球，追平 Klose）与 Haaland（连续两场梅开二度）均在追 Messi 的金靴。<b>即便已出线、即便轮换，两位巨星个人荣誉动机仍可能让比赛保持开放、推高大球与双方进球</b>——这是与一般"出线后摆烂"剧本的关键区别。</li>
+      <li><b>挪威进攻火力真实但后防有口子</b>：挪威两战进 7 球（多于法国），但两场都丢球（共丢 3）；Haaland 的爆点 + Nusa/Sørloth 的支援是真实威胁，但其后防质量不及中前场。法国 Mbappé / Dembélé / Olise / Barcola 的速度与终结正可利用——详见关键临场新闻。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员 / 轮换已多源交叉核查）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 临场重大变量 · 法国主帅 Deschamps 缺席 <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / Opta Analyst 多源一致 · 2026-06-24/25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：<b>Didier Deschamps 因母亲离世返回法国奔丧</b>，本场由助教 <b>Guy Stéphan</b> 代理带队</div>
+      <p style="font-size:13.5px">据 <b>ESPN、Al Jazeera、Opta Analyst（Tom Webber）</b> 一致报道，法国主帅 Deschamps 于本周二（6/23）获悉母亲离世的消息，已离开训练营返回法国参加葬礼。法国足协公开表态："在这个无比痛苦的时刻，我们祝愿主教练坚强，并保证全队的支持。"助教 <b>Guy Stéphan</b> 已被任命为临时主帅、将带队出战挪威，直至 Deschamps 归队。<span style="color:var(--warn)">[排兵与临场调度的实际影响 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是本场最大的<b>非竞技变量</b>。Deschamps 是法国 2018 夺冠、2022 亚军的战术与更衣室核心，临时换帅 + 球队情绪因素，可能影响首发取舍、临场调整与比赛专注度。叠加"已出线 + 平局即头名"的低压情境，法国可能更倾向稳妥轮换而非全力争胜——这是挪威争头名的潜在窗口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 挪威vs法国官方前瞻</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — 团队消息</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ 关键球员核查 · 双方均预告轮换（含巨星去留疑问）<span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / RotoWire / Opta 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">挪威 Solbakken 明言"会有变化"；法国阵容深度足以轮换中场；<b>Haaland / Ødegaard 是否首发各源略有出入</b></div>
+      <p style="font-size:13.5px">挪威主帅 <b>Ståle Solbakken</b> 在对塞内加尔（末段多人抽筋、9 人结束）后明确表示："会有一些变化……更短的赛程间隔与球员状态意味着另一些人会获得机会……下一次你们更难猜出首发。"<b>Al Jazeera / ESPN / Opta 给出的预测首发多数仍把 Haaland、Ødegaard 列入</b>（金靴动机 + 头名诱因），但<b>另有来源（RotoWire 团队消息口径）指出在已出线背景下两人有被轮休以备淘汰赛的可能</b>——口径不一。法国方面，阵容深度足以轮换中场，<b>Theo Hernández 预计替下 Digne</b>，Malo Gusto（伤愈复出）冲击 Koundé 的右后卫位置。<span style="color:var(--warn)">[Haaland / Ødegaard 是否首发、双方具体轮换名单 · 以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：轮换力度直接决定<b>比赛强度、冷门概率与大小球走向</b>。若两队都大幅轮换，强度下降、剧本更开放、冷门空间上升；若 Haaland/Mbappé 因金靴照常首发，则进攻火力维持、大球概率升高。这是本场最不确定、也是最影响盘口的变量——单一预测不可尽信，须以官方名单为准。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — Solbakken 预告轮换</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — 预测首发/团队消息</a> · <a href="https://www.rotowire.com/soccer/article/norway-vs-france-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119630" style="color:var(--accent)">RotoWire — 预测首发/团队消息</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">挪威 · Ryerson 伤情 <span style="color:var(--mut);font-weight:400">· Al Jazeera / Opta 多源 · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">右后卫 <b>Julian Ryerson</b> 对塞内加尔第 13 分钟因大腿伤下场，本场<b>大概率由 Marcus Pedersen 顶替</b></div>
+      <p style="font-size:13.5px">挪威 <b>Julian Ryerson</b> 在对塞内加尔一战仅 13 分钟便因大腿问题伤退，替补登场的 <b>Marcus Pedersen</b> 随后还打入首球。多家报道指本场 Ryerson 很可能继续缺席、由 Pedersen 顶替；后防 Leo Østigård 可能顶替 Heggem 或 Ajer，中场 Aursnes 可能被轮休、给 Thorstvedt 机会。<span style="color:var(--warn)">[Ryerson 伤情等级与确切首发 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：挪威后防本就不及中前场，右路换人 + 轮换会进一步影响其防守稳定性。面对 Mbappé / Dembélé / Barcola 的边路速度，挪威的边后卫与三/四后卫衔接是被针对的薄弱环节。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups" style="color:var(--accent)">Al Jazeera — Ryerson 伤退</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 监测 Ryerson 状态</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 + 天气 <span style="color:var(--mut);font-weight:400">· ESPN 官方前瞻 / Opta · 06-24/25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：英格兰籍 <b>Michael Oliver</b>（迈克尔·奥利弗）；福克斯堡 Boston Stadium（Gillette）· 天气预报或有雷暴</div>
+      <p style="font-size:13.5px">据 ESPN 官方赛前前瞻，本场主裁为英格兰籍国际级名哨 <b>Michael Oliver</b>。场地为新英格兰爱国者主场 <b>Gillette Stadium（赛事名 Boston Stadium）</b>，露天球场。Opta 提到天气预报显示本场<b>可能受雷暴影响</b>（法国上一场对伊拉克即因雷暴中断约 130 分钟）。<span style="color:var(--warn)">[完整裁判组与 VAR 组合、Oliver 本届 / 近两届大赛单场出牌/判点细分 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Oliver 是经验丰富、判罚果断的顶级主裁，对身体对抗有清晰尺度。本届统一新规偏严（仅队长可沟通、门将 8 秒规则、半自动越位）——半自动越位将精准捕捉 Haaland / Mbappé 的临界冲刺。若遇雷暴中断，比赛节奏与球员体能管理会被打乱，对轮换阵容影响更大。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判/场地</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 天气提示</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读（lineup-watch 写入） ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 官方确认（football-italia 官方名单 + Yahoo/World Soccer Talk 多源一致）· T-50 写入</span></h2>
+
+    <h4>🇳🇴 挪威 官方首发（4-3-3）· Solbakken · <b style="color:var(--good)">大轮换兑现</b></h4>
+    <div class="lineup">Selvik; Aursnes · Falchener · Östigård · Bjørkan; Berg(C) · Thorstvedt · Aasgaard; Bobb · Strand Larsen · Schjelderup</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:var(--txt)">Erling Haaland</b>（本届 4 球·金靴竞争者，坐替补）、<b style="color:var(--txt)">Martin Ødegaard</b>（队长/组织核心，坐替补）、Alexander Sørloth、Antonio Nusa、Sander Berge。本场队长改由 <b>Patrick Berg</b> 佩戴。</div>
+
+    <h4>🇫🇷 法国 官方首发（4-2-3-1）· Guy Stéphan 代理 · <b>仅动 2 人</b></h4>
+    <div class="lineup">Maignan; Koundé · Upamecano · Lacroix · T. Hernández; Tchouaméni · Koné; Olise · Doué · Dembélé; Mbappé(C)</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：Adrien Rabiot（轮休）、N'Golo Kanté、Bradley Barcola、Marcus Thuram、Rayan Cherki、William Saliba、Ibrahima Konaté。Mbappé 续任队长；全队佩黑色臂章（Deschamps 丧母返国，FIFA 据报拒绝佩臂章申请仍获队内默哀）。</div>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">vs 预测首发对照</h5>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">挪威·大爆点</td><td>Haaland + Ødegaard 首发</td><td><b style="color:var(--good)">双双替补</b></td><td>原预览主线"Haaland vs 法国中卫""Mbappé vs Haaland 对轰"直接作废——挪威把核心留给淘汰赛</td></tr>
+      <tr><td class="ht">挪威·整体</td><td>Nyland/Pedersen/Ajer/Heggem/Nusa/Sørloth/Berge…</td><td><b>10/11 换人，仅 Aursnes 保留</b>（且改打右后卫）</td><td>进攻三叉戟换成 Bobb-Strand Larsen-Schjelderup，爆点与终结力大幅下降</td></tr>
+      <tr><td class="sc">法国·中卫</td><td>Saliba</td><td>Lacroix</td><td>Saliba 轮休，Lacroix 搭 Upamecano；后防硬度略降但仍足以应对挪威替补锋线</td></tr>
+      <tr><td class="sc">法国·后腰</td><td>Rabiot</td><td>Koné</td><td>Rabiot 休战，Koné 连续第二场首发搭 Tchouaméni；Mbappé/Dembélé/Olise/Doué 前场全数保留</td></tr>
+    </table>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">战术解读</h5>
+    <ul style="font-size:13.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><b>阵型信号</b>：挪威名义仍 4-3-3，但这是一套近乎"二队"的阵容——对挪威进攻火力的赛前预期需<b>大幅下调</b>；法国仅动 2 人、保留全部前场核心，求胜与夺头名意愿明显强于挪威。</li>
+      <li><b>关键对位重置</b>：法国 Lacroix/Upamecano 面对的是 Strand Larsen 而非 Haaland，防守对抗等级下降；法国边路 Dembélé/Olise/Doué + Koundé/Theo 套上，可压制挪威两名替补边后卫（Aursnes/Bjørkan）。</li>
+      <li><b>轮换意图对比</b>：双方均已出线、本场争头名（法国平局即头名），但挪威轮换力度远超法国，近乎"半让头名、保淘汰赛体能"；法国主力压阵，争头名更积极。</li>
+      <li><b>X 因素</b>：Haaland/Ødegaard 在替补席待命，若挪威落后、或法国下半场体能下滑（叠加场地潜在雷暴中断），二人登场仍是变数。</li>
+      <li><b style="color:var(--good)">速览结论·修正</b>：原结论基于"挪威火力真实、双星对轰"。现<b>修正为</b>——挪威主力尽墨，法国实力 + 求胜欲双重占优，偏法国一侧的逻辑增强；但法国亦非全主力、阵容磨合 + 雷暴风险使爆冷/失常仍存尾部概率。</li>
+    </ul>
+
+    <div class="note" style="background:#10243a;border-color:#1e466b"><b>市场反应（定性）</b>：开盘 法胜 <b>1.62</b> / 平 <b>4.50</b> / 挪 <b>4.50</b>（欧赔）。挪威主力大面积轮休（Haaland、Ødegaard、Nusa、Sørloth 同坐替补）属重大利空信号，此类名单公布后通常推动盘口进一步偏向法国（法胜下探、挪威上行）。仅为事实陈述，非投注建议；精确盘口移动以实时为准。</div>
+
+    <div style="font-size:12px;margin-top:10px;color:var(--mut)">来源：<a href="https://football-italia.net/world-cup-2026-norway-france-senegal-iraq/" style="color:var(--accent)">Football Italia — 官方首发</a> · <a href="https://sports.yahoo.com/articles/france-vs-norway-starting-lineups-130000933.html" style="color:var(--accent)">Yahoo Sports — 确认首发</a> · <a href="https://worldsoccertalk.com/world-cup/are-haaland-and-mbappe-playing-norway-vs-france-projected-lineups-for-the-2026-world-cup-group-i-game/" style="color:var(--accent)">World Soccer Talk — Confirmed lineups</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489" style="color:var(--accent)">FIFA Match Centre</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· I组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>I 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇴 挪威</th><th>🇫🇷 法国</th></tr>
+      <tr><td>前两轮</td><td class="ht">4-1 伊拉克 + 3-2 塞内加尔（6 分，净 +4，进 7）</td><td class="sc">3-1 塞内加尔 + 3-0 伊拉克（6 分，净 +5，进 6）</td></tr>
+      <tr><td>I 组积分（末轮前）</td><td colspan="2">法国 6（净 +5，进 6）暂列头名、挪威 6（净 +4，进 7）次席；塞内加尔 0、伊拉克 0 均已出局。两队均已锁定 32 强</td></tr>
+      <tr><td>头名情景</td><td class="ht">必须取胜方反超夺头名（直接对话即相互战绩）</td><td class="sc">平局即夺头名（净胜球已领先）；胜亦头名</td></tr>
+      <tr><td>主教练</td><td class="ht">Ståle Solbakken（已预告轮换）</td><td class="sc">Didier Deschamps（因故缺席）· Guy Stéphan 代理</td></tr>
+      <tr><td>核心球员</td><td class="ht">Haaland、Ødegaard、Nusa、Sørloth、Berge</td><td class="sc">Mbappé、Dembélé、Olise、Tchouaméni、Saliba/Upamecano</td></tr>
+      <tr><td>重要状态</td><td class="ht">Ryerson 大腿伤（大概率缺）；多人对塞抽筋 → 轮换</td><td class="sc">无伤病上报；Gusto 伤愈复出冲击首发</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">必须取胜 vs 轮换；Haaland 金靴动机能否撬动头名</td><td class="sc">平局即满足 + 轮换 vs 全力争胜；Mbappé 是否首发</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈4.50（隐含≈21%）</td><td class="sc">胜 ≈1.62（隐含≈58%）· 平 ≈4.50（≈21%）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="sc">法国让 -1（约 2.05）/ 挪威 +1（约 1.80）；总分线 O/U 2.5 偏大球（Over 约 -150）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（法国 1.62 / 平 4.50 / 挪威 4.50，归一后约 58/21/21），与 Opta 超算（法国 55.4% / 平 21.6% / 挪威 23.0%）方向一致。盘口来源：FanDuel（法国 -160 / 平 +350 / 挪威 +360）、DraftKings（法国 -160 / 挪威 +400）、Sofascore/Lineups 综合；亚盘法国 -1、总分线 O/U 2.5 偏大球。<b>双方轮换力度 + 巨星金靴动机</b>是大小球与让球深度的核心变量。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇳🇴 挪威 · 进攻</td><td class="ht">28 年来首次世界杯（上次 1998 进 16 强）；预选 / 热身依赖 Haaland 终结 + Ødegaard 组织、Nusa/Sørloth 支援</td><td class="ht">2 战 7 球（4-1 伊拉克、3-2 塞内加尔）；Haaland 连续两场梅开二度（本届 4 球）</td><td><b>火力超预期</b>：Opta 指挪威本届已制造 10 次绝佳机会（I 组最多、且已超过 1998 全程的 9 次）。Haaland 是真实爆点 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇳🇴 挪威 · 防守</td><td class="ht">三/四后卫体系，后防质量不及中前场；大赛经验稀缺（球队近 28 年首次踢世界杯）</td><td class="ht">2 战丢 3 球（两场都丢球）；对塞末段多人抽筋、9 人结束</td><td><b>明显短板</b>：两场均失球，后防衔接与体能是软肋；Ryerson 伤退进一步削弱右路，面对法国边路速度是命门</td></tr>
+      <tr><td class="sc">🇫🇷 法国 · 进攻</td><td class="sc">2018 夺冠、2022 亚军；Mbappé 领衔的转换与个人爆破是招牌；阵容深度全球顶级</td><td class="sc">2 战 6 球（3-1 塞、3-0 伊）；Mbappé 4 球（16 场 16 球追平 Klose）、Dembélé 开张</td><td><b>稳定且深</b>：火力均衡、板凳（Barcola/Doué/Thuram/Cherki 等）质量极高，轮换不掉档 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="sc">🇫🇷 法国 · 防守</td><td class="sc">2018/2022 后防硬度顶级（Saliba/Upamecano/Koundé/T.Hernández + Maignan）</td><td class="sc">2 战丢 1 球（仅对塞失 1）；结构稳固</td><td><b>下限极高</b>：法国是本组防守最稳一方，丢球最少；即便轮换，后防深度仍优于挪威</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：挪威进攻火力超出历史预期（Haaland + 10 次绝佳机会），但后防是软肋、两场都丢球；法国延续 2018/2022 的"火力均衡 + 后防硬度 + 阵容深度"主线，丢球最少。深度数据支持"法国小胜或平局夺头名、挪威靠 Haaland 个人能力搏冷门 + 大球倾向"的主线。来源：Opta Analyst（10 次绝佳机会）· FotMob/Sofascore（前两轮）· FIFA / 队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级 · 受轮换影响波动大）</td><td class="ht">挪威 ≈1.1–1.5</td><td class="sc">法国 ≈1.5–1.9</td><td>法国略占优但因双方均可能轮换，量级波动较大；挪威靠 Haaland 个人能力可制造高质量机会——与盘口"法国微让 + 偏大球"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">Opta 超算给法国 55.4% 胜 / 平 21.6% / 挪威 23.0%；盘口去水约 58/21/21，方向一致偏法国</td><td>法国整体实力与阵容深度明显高一档；挪威本届状态火热 + Haaland 是制造冷门的开关</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="ht">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：挪威必须取胜会主动施压、field tilt 升高；法国平局即满足、可能让出部分球权打转换；轮换会同时压低双方逼抢强度</td><td><b>陷阱提醒</b>：① 双方都已出线 + 都预告轮换 → 强度可能下降、剧本开放，<b>但 Mbappé/Haaland 金靴动机是反向"全力进攻"开关</b>，使大球/BTTS 仍受青睐；② 法国平局即头名，若早早领先可能转守、压低己方进球；③ 挪威必须压上 → 露出后防给法国转换；④ Deschamps 缺席 + 可能雷暴中断，是难以量化的扰动</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">绝佳机会(Big Chance)</b>：高概率进球机会——挪威本届 10 次，I 组最多。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"明显偏法国但价格未被狂热推动"的场次——法国微让 -1，胜平负仍有真实悬念；信息含量集中在轮换力度、大小球与金靴动机</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识偏法国但无狂热单边，信息集中在轮换/大小球/金靴</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向一致偏法国（≈58% 去水、超算 55.4%），但价格未被狂热推动——挪威仍有 4.50（+360～+400）的真实赔率，且博彩/媒体普遍强推 <b>Over 2.5</b>（两队都能进、金靴动机）。真正的分歧在<b>双方轮换力度</b>与<b>挪威能否靠 Haaland 搏冷门</b>。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏法国，分歧在比分幅度与大小球）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>法国 55.4% / 平 21.6% / 挪威 23.0%——法国是热门</td></tr>
+      <tr><td>SI（Sports Illustrated）</td><td>北美媒体</td><td>法国胜；超算曾给 France 59.4% 版本，看好法国夺头名</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>偏法国小胜；强调法国阵容深度即便轮换仍占优</td></tr>
+      <tr><td>OddsShark / Total Football Analysis</td><td>数据媒体</td><td><b>The Total Will Go OVER</b>——力推 Over 2.5（两队都能进 + 金靴动机）</td></tr>
+      <tr><td>FanDuel Research / DraftKings</td><td>北美博彩研报</td><td>法国 -160 热门；含 Mbappé / Haaland 进球类玩法</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>给出 6-1 Bet Builder 思路（含进球大战倾向）；尊重挪威进攻但仍偏法国</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：方向偏法国但<b>不极端</b>，挪威仍有 4.50 的真实赔率，且有"大球/BTTS"的强共识支流。这不是一边倒被狂热定价的场次——胜平负有真实悬念，最大不确定性是<b>双方轮换力度</b>与<b>巨星金靴动机是否让比赛保持开放</b>，而非胜负方向被狂热推动。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>挪威胜 / 平 / 法国胜</th><th>解读</th></tr>
+      <tr><td>开档（赛前/多家综合）</td><td>1X2</td><td class="ht">≈4.50 / 4.50 / 1.62</td><td>法国明显热门、挪威深盘冷门 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>06-25 截止</td><td>FanDuel/DraftKings/Sofascore</td><td class="ht">挪威 4.50–5.00（+360～+400）/ 平 4.50（+350）/ 法国 1.62（-160）</td><td>各书略有差异，整体把法国定为明显热门、挪威 ≈21–23%</td></tr>
+      <tr><td>06-25</td><td>大/小球 + 让球</td><td colspan="2" class="ht">法国让 -1（约 2.05）/ 挪威 +1（约 1.80）；O/U 2.5 偏大球（Over 约 -150）；BTTS 偏 Yes</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛季前 / 赛前数日预期）</td><td class="sc">法国被定为夺冠级热门、挪威新军受敬重但被低看</td><td>赛前以"夺冠热门法国 vs 28 年首回世界杯的挪威"定价，法国深贴 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>开盘（次轮赛后 + 净胜球重定价）</td><td class="ht">法国稳居热门（≈1.62）；挪威 ≈4.50</td><td><b>repricing 来自次轮战绩</b>：法国两战净 +5、丢 1 球（防守最稳），挪威虽进 7 球但两场都丢球（净 +4）；市场把法国定为明显热门。<b>关键逻辑：法国"平局即头名"反而降低其全力争胜的必要性，叠加 Deschamps 缺席 + 轮换预告——这是挪威争头名/搏冷门的窗口</b></td></tr>
+      <tr><td>现盘（06-25→现）</td><td class="ht">法国 -1（约 2.05）；O/U 2.5 偏大球；挪威 +1（约 1.80）</td><td>价格发现集中在 <b>让球深度</b>（法国能否净胜挪威 1 球以上 / 挪威 +1 的拖住价值）与<b>大小球/BTTS</b>（两队都能进 + 金靴动机 → 偏大球）；双方轮换力度与巨星去留是让球深度与大球的微调变量；媒体指 France 临场盘口在终场前 48 小时常因公众资金而收窄</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"明显偏法国、但价格未被狂热推动"的盘——1X2 仍有真实价格发现，挪威 4.50 反映了"必须取胜 + 火力火热 + Haaland 搏冷门"的真实尾部。关键变量是<b>双方轮换力度</b>（决定强度与冷门概率）与<b>巨星金靴动机</b>（推高大球/BTTS）。核心反直觉点：法国的"平局即头名"+ Deschamps 缺席 + 轮换预告，是挪威能争头名/搏冷门的现实理由。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场</b>：方向与 Opta 超算 / 博彩去水高度一致（偏法国 ≈55–58%）。头名市场：法国夺头名概率显著高于挪威（平局即足）。Kalshi/Polymarket 单场各结果的精确占比未检得 <span style="color:var(--warn)">[预测市场精确占比 · 待核]</span>。</li>
+      <li><b>舆论焦点 ①</b>：<b>Mbappé vs Haaland 金靴对决</b>——两人均 4 球、追 Messi（5 球），Mbappé 16 场 16 球追平 Klose。这是本场最大流量点，也是"即便轮换仍可能全力进攻"的关键。</li>
+      <li><b>舆论焦点 ②</b>：<b>Haaland 的"我不太在乎这场"言论</b>——他对 Fox Sports 直言"我们已经出线了……我不太在乎这场比赛……他们（法国）大概会赢，也大概会赢下整届世界杯。"这被广泛解读为挪威心态放松、可能轮换的信号。</li>
+      <li><b>舆论焦点 ③</b>：<b>Deschamps 缺席</b>——法国主帅奔丧、Stéphan 代理，是非竞技层面的关注点。</li>
+      <li><b>公众资金面 / 社媒声量细分</b>：未检得量化数据 <span style="color:var(--warn)">[公众投注% / 社媒量化 · 待核]</span>；定性：公众资金偏法国（热门 + 阵容），休闲盘倾向 Over 2.5 / BTTS / 巨星进球。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"明显偏法国、但价格未被狂热推动"的盘，过热指数 <b>2/5</b>。1X2 有真实价格发现，核心变量是<b>双方轮换力度</b>与<b>巨星金靴动机</b>。反直觉点：法国"平局即头名"+ Deschamps 缺席 + 轮换预告，是挪威能争头名/搏冷门的理由。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/odds/_/gameId/760475">ESPN — 盘口</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview">Opta Analyst — 超算/前瞻</a> · <a href="https://www.oddsshark.com/soccer/world-cup/norway-france-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/norway-vs-france-prediction-picks-lineups-preview-and-best-bets-world-cup-2026-group-i">FanDuel Research</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/norway-vs-france-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aMxIm1b66uT1/">Racing Post — Bet Builder</a> · <a href="https://www.si.com/soccer/norway-vs-france-world-cup-preview-predictions-lineups-6-26-26">SI — 预测</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：据 ESPN 官方赛前前瞻，本场主裁为英格兰籍国际级名哨 <b>Michael Oliver</b>；场地为福克斯堡 <b>Gillette Stadium（赛事名 Boston Stadium）</b>，露天球场，Opta 提示<b>或受雷暴影响</b>。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Michael Oliver 来自英格兰、英超与欧冠 / 欧洲赛事的顶级主裁——经验丰富、判罚果断、对身体对抗有清晰一致的尺度。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届/近两届实际样本</b>：Oliver 本届/近两届世界杯单场出牌/判点的精确场均细分公开样本有限。<span style="color:var(--warn)">[大赛单场黄牌/判点率细分 · 无可靠大赛样本，不编数值 · 待核]</span>。定性判断：顶级英系主裁对战术犯规与禁区拉扯有较强识别。</li>
+      <li><b>与两队的执法史</b>：与挪威、法国两队的显著公开执法史样本有限（<b>无可靠样本即如实说明</b>）。</li>
+      <li><b>两面性</b>：挪威必须取胜 → 高位施压与禁区争顶增多，Haaland 的对抗与拉扯易制造任意球/点球；法国转换与战术犯规延缓也会增加牌点观察点。半自动越位将精准捕捉双方临界冲刺（Haaland / Mbappé 的越位线）。若遇雷暴中断，比赛节奏被打乱、对轮换阵容影响更大。牌数/点球盘宜以倾向看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场法国实力明显占优，裁判对胜负影响有限，主要价值在牌数/点球：挪威压上后的禁区对抗与法国的战术犯规是黄牌/点球观察点。鉴于 Oliver 本届单场大赛细分样本有限，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（ESPN / Al Jazeera / Opta / RotoWire 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核；两队均预告轮换）</div>
+    <h4>🇳🇴 挪威 预测首发（4-3-3 / 4-2-3-1）· Solbakken · 预告轮换</h4>
+    <div class="lineup">Nyland; Pedersen · Ajer · Heggem · Møller Wolfe; Aursnes · Berge · Ødegaard; Nusa · Haaland · Sørloth</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Erling Haaland</td><td>中锋 / 曼城</td><td>本届 4 球（连续两场梅开二度）；金靴有力争夺者；挪威唯一最强爆点，去留是焦点 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Martin Ødegaard</td><td>前腰/队长 / 阿森纳</td><td>挪威组织核心与队魂；喂球 Haaland 的主轴；是否轮休各源不一 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="ht">Antonio Nusa</td><td>边锋</td><td>边路爆点与纵深，年轻速度型；为 Haaland 拉开空间</td></tr>
+      <tr><td class="ht">Ørjan Nyland</td><td>门将</td><td>须应对 Mbappé / Dembélé 的速度冲击与法国的转换终结</td></tr>
+    </table>
+    <h4>🇫🇷 法国 预测首发（4-2-3-1 / 4-3-3）· Guy Stéphan 代理 · 可能轮换中场</h4>
+    <div class="lineup">Maignan; Koundé · Saliba · Upamecano · T. Hernández; Tchouaméni · Rabiot; Dembélé · Olise · Doué/Barcola; Mbappé</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Kylian Mbappé</td><td>前锋/队长 / 皇马</td><td>本届 4 球、16 场 16 球追平 Klose；金靴争夺者；即便轮换也几乎必首发 <span style="color:var(--warn)">[首发待核]</span></td></tr>
+      <tr><td class="sc">Ousmane Dembélé</td><td>边锋 / 巴黎</td><td>对伊拉克开张破门；边路一对一与速度，是打挪威边路的利器</td></tr>
+      <tr><td class="sc">Michael Olise</td><td>边锋/前腰 / 拜仁</td><td>状态出色；创造与终结兼备，法国前场轮换的重要拼图</td></tr>
+      <tr><td class="sc">William Saliba / Upamecano</td><td>中卫 / 阿森纳·拜仁</td><td>法国后防硬度核心；两战仅丢 1 球，遏制 Haaland 的关键</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Al Jazeera / Opta / RotoWire），各源版本略有差异（如法国中场 Kanté 与 Tchouaméni/Rabiot 的取舍、边路 Doué 与 Barcola 的取舍；挪威 Østigård 是否替 Heggem/Ajer），<b>以赛前官方名单为准 · 待核</b>。两队焦点均是<b>轮换力度</b>：挪威 Solbakken 已预告变化、Ryerson 伤退由 Pedersen 顶替、Haaland/Ødegaard 去留待核；法国由 Stéphan 代理、Theo Hernández 替 Digne、Gusto 冲击 Koundé、中场可能轮换 <span style="color:var(--warn)">[首发 · 待核]</span>。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 本大洲赛事 / 2018+2022 与挪威 1998+本届）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇳🇴 挪威 · Ståle Solbakken</div>
+        <div class="role">4-3-3 / 4-2-3-1 · Haaland 支点 + Ødegaard 组织 + 边路速度，须主动施压</div>
+        <ul class="cl">
+          <li>Solbakken 麾下挪威以<b>Haaland 为终结支点、Ødegaard 为组织核心、Nusa/Sørloth 提供边路与二点</b>。本届对伊拉克 4-1、对塞内加尔 3-2 火力顺畅（两战 7 球、Opta 称 10 次绝佳机会、I 组最多），但两场都丢球——<b>进攻火热、后防有口子</b>。</li>
+          <li>交叉参照：挪威近 28 年首次世界杯（1998 进 16 强、之后长期缺席），<b>大赛经验稀缺</b>；Opta 指出挪威此前从未在世界杯击败过欧洲球队（P5 D2 L3）。这支挪威靠 Haaland 的个人能力与火热状态闯关，体系与大赛抗压是未知数。</li>
+          <li>本场切入口：必须取胜意味着挪威得主动压上、用 Haaland 的禁区高点 + Ødegaard 的喂球 + Nusa 的速度撕开法国。但压上必然露出身后空间，给法国 Mbappé / Dembélé 的转换留口子——加之 Ryerson 伤退、可能轮换，后防是被针对的命门。Haaland 的金靴动机是其"即便轮换也全力进攻"的理由。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇫🇷 法国 · Didier Deschamps（缺席）· Guy Stéphan 代理</div>
+        <div class="role">4-2-3-1 / 4-3-3 · Mbappé 领衔的转换 + 个人爆破 + 顶级阵容深度</div>
+        <ul class="cl">
+          <li>Deschamps 的法国是<b>2018 夺冠、2022 亚军</b>的现代豪强模板：后防硬度顶级（Saliba/Upamecano/Koundé/T.Hernández + Maignan）、中场屏障（Tchouaméni/Rabiot/Kanté）、前场靠 Mbappé 的速度与个人爆破 + Dembélé/Olise 的边路创造。本届两战 6 球、仅丢 1 球，火力与防守均衡。</li>
+          <li>交叉参照：2018/2022 法国均擅长<b>"让出部分球权、用世界级转换与个人能力终结"</b>，对压上型对手尤其致命——这正是挪威必须压上时的风险。<b>阵容深度全球顶级</b>（板凳有 Barcola/Doué/Thuram/Cherki/Mateta 等），即便轮换也几乎不掉档，这是其他球队难以企及的资本。</li>
+          <li>本场应对：平局即夺头名 → 法国没有全力死拼的必要，可稳妥轮换中场、控制节奏、伺机用 Mbappé / Dembélé 的转换收割挪威压上后的空间。<b>最大变量是 Deschamps 缺席（Stéphan 代理）</b>——临时换帅 + 低压情境，可能让法国更保守，给挪威争头名留窗口。若遇雷暴中断，对轮换阵容的节奏管理是额外考验。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst（Tom Webber）<small>· 超算 / 前瞻</small></div>法国 55.4% 胜 / 平 21.6% / 挪威 23.0%——挪威可能多处轮换，法国是热门。但挪威本届已制造 10 次绝佳机会（I 组最多、超过 1998 全程的 9 次），Haaland 火力真实；这不是死气沉沉的"垃圾时间"对决。</div>
+    <div class="insight"><div class="who">SI / Sports Mole <small>· 北美/预测媒体</small></div>多家偏法国小胜、看好其夺头名：法国阵容深度即便轮换仍占优，挪威后防（两场都丢球）是软肋，Mbappé/Dembélé/Olise/Barcola 的速度正可利用。</div>
+    <div class="insight"><div class="who">OddsShark / Total Football Analysis <small>· 数据媒体</small></div>强推 <b>Over 2.5</b>：两队都能进球（BTTS 偏 Yes），加上 Mbappé/Haaland 的金靴动机，即便轮换比赛也可能保持开放、进球偏多。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / Al Jazeera</small></div>⚠ 陷阱提醒：① 双方都已出线 + 都预告轮换 → 强度可能下降、冷门空间上升；② 但 Mbappé/Haaland 金靴动机是反向"全力进攻"开关，推高大球/BTTS；③ 法国平局即头名，若早领先可能转守、压低己方进球；④ Deschamps 缺席（Stéphan 代理）+ 可能雷暴中断，是难以量化的扰动；⑤ Haaland 是制造冷门的开关。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：法国小胜或平局（平局即夺头名）是基准剧本。实力与阵容深度明显偏法国（净 +5、丢球最少、2018/2022 豪强底蕴、板凳质量碾压）；挪威必须取胜、被迫压上，后防两场都丢球 + Ryerson 伤退，正可被法国转换利用。但挪威火力火热（两战 7 球、10 次绝佳机会）、Haaland 是真实变量，可制造冷门或迫使比赛开放。</li>
+      <li><b>关键先生</b>：Haaland（挪/终结爆点 + 金靴动机）、Ødegaard（挪/组织队魂）、Nusa（挪/边路速度）；Mbappé（法/速度与个人爆破 + 金靴）、Dembélé/Olise（法/边路创造）、Saliba/Upamecano（法/后防硬度）。<b>法国主帅 Deschamps 因故缺席、Stéphan 代理</b>。</li>
+      <li><b>胜负手</b>：① 双方轮换力度——决定强度与冷门概率；② 挪威能否在压上的同时不被法国转换打穿后防；③ 法国"平局即头名"+ Deschamps 缺席会否使其更保守、给挪威争头名留窗口；④ Mbappé/Haaland 金靴动机是否让比赛保持开放（推高大球/BTTS）。</li>
+      <li><b>市场视角</b>：明显偏法国但价格未被狂热推动的盘（≈58/21/21、超算 55.4%），过热指数 2/5；1X2 有真实价格发现。核心变量是双方轮换力度 + 巨星金靴动机。反直觉点：法国的"平局即头名"+ 主帅缺席 + 轮换预告，是挪威能争头名/搏冷门的现实理由。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）——<b>Haaland / Ødegaard 是否首发各源不一</b>、法国中场（Kanté vs Tchouaméni/Rabiot）与边路（Doué vs Barcola）取舍、挪威后防（Østigård 是否替 Heggem/Ajer）；② Ryerson 伤情等级（大概率由 Pedersen 顶替，已多源）；③ Deschamps 缺席对排兵与临场调度的实际影响（缺席本身已多源确认）；④ Oliver 完整裁判组与 VAR 组合、其本届/近两届单场出牌/判点细分（无可靠大赛样本即如实说明）；⑤ 头名/亚军的精确净胜球与并列规则（积分→相互战绩→相互净胜球→相互进球→全组净胜球→全组进球→公平竞赛分→抽签）、32 强具体对阵与时间（以 FIFA 官方对阵表为准）；⑥ 让球线（法国 -1）与大小球总分线（O/U 2.5）、精确初盘数值以赛前实时盘口为准；⑦ 预测市场单场精确占比、公众投注%/社媒量化未检得；⑧ 雷暴是否实际影响比赛（仅预报）。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 挪威vs法国官方前瞻（裁判/场地/首发/Deschamps 缺席）</a> · <a href="https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups">Al Jazeera — 团队消息/出线情景/Haaland 言论</a> · <a href="https://theanalyst.com/articles/norway-vs-france-prediction-world-cup-2026-match-preview">Opta Analyst — 超算 55.4/21.6/23.0 + 轮换预告 + 天气</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — I组积分/并列规则</a> · <a href="https://www.skysports.com/football/news/12098/13543102/world-cup-2026-group-i-guide-fixtures-schedule-standings-and-odds-for-france-senegal-iraq-and-norway">Sky Sports — I组指南/形势</a> · <a href="https://www.espn.com/soccer/story/_/id/49082534/group-2026-world-cup-teams-records-stats-know-france-senegal-iraq-norway">ESPN — I组数据</a> · <a href="https://sports.yahoo.com/articles/france-vs-norway-scenarios-explained-070002551.html">Yahoo — 头名/对阵情景</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/norway-vs-france-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119630">RotoWire — 预测首发/团队消息</a> · <a href="https://www.si.com/soccer/norway-vs-france-world-cup-preview-predictions-lineups-6-26-26">SI — 预测/阵容</a> · <a href="https://www.sportsmole.co.uk/football/norway/world-cup-2026/preview/norway-vs-france-prediction-team-news-lineups_600014.html">Sports Mole — 预测/阵容</a><br>
+      • <a href="https://www.espn.com/soccer/odds/_/gameId/760475">ESPN — 盘口</a> · <a href="https://www.oddsshark.com/soccer/world-cup/norway-france-picks-odds-2026">OddsShark — Over 2.5</a> · <a href="https://www.fanduel.com/research/norway-vs-france-prediction-picks-lineups-preview-and-best-bets-world-cup-2026-group-i">FanDuel Research — 赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/norway-vs-france-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aMxIm1b66uT1/">Racing Post — Bet Builder</a> · <a href="https://www.sofascore.com/news/norway-vs-france-preview-form-odds-lineups">Sofascore — 赔率/阵容</a><br>
+      • <a href="https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup">Wikipedia — 法国世界杯史（2018冠/2022亚）</a> · <a href="https://en.wikipedia.org/wiki/Norway_at_the_FIFA_World_Cup">Wikipedia — 挪威世界杯史（1998 16强）</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-25 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['挪威胜','平局','法国胜'],datasets:[{data:[21,21,58],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[60,40],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，偏大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['法国','挪威','塞内加尔','伊拉克'],datasets:[{data:[6,6,0,0],backgroundColor:[SC,HT,'#9aa6c0','#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:8,title:{display:true,text:'积分（末轮前 · 法国净+5/挪威净+4）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'挪威',data:[5.5,8,6.5,7,8.5,4.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'法国',data:[8.5,8.5,8,8.5,9,9],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

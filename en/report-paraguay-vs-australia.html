@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Paraguay vs Australia · 2026 World Cup Group D Final Round (a direct qualification do-or-die)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-paraguay-vs-australia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-paraguay-vs-australia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d11f33;--sc:#f9c00c;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a4f9c,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241016,#1a1c10);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a96;font-weight:600}td.sc{color:#f0d869;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-paraguay-vs-australia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group D Final Round · A direct qualification do-or-die (Paraguay must win vs Australia qualify with a draw)</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Paraguay 0-0 Australia</span>
+  <h1>Paraguay vs Australia</h1>
+  <div class="meta">25 June 2026 · Santa Clara, California · Levi's Stadium · 19:00 local (PT) / 22:00 ET · Group D (also in group: USA, Türkiye) · Final round (simultaneous: Türkiye vs USA)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a96">🇵🇾 Paraguay</div><div class="rk">1-4 USA + 1-0 Türkiye · 3 points (GD -2) · <b>basically must win</b> to qualify safely; a draw/loss leaves them to the best-third-placed picture</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f0d869">🇦🇺 Australia</div><div class="rk">2-0 Türkiye + 0-2 USA · 3 points (GD 0) · <b>qualify with a draw</b> (goal-difference edge)</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-26) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Paraguay 0-0 Australia (HT 0-0) · 06-25</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Santa Clara, California · Bay Area Stadium (Levi's Stadium): a <b>cautious tactical duel</b>, <b>0-0 at full time</b> and 0-0 at the break, with barely a clear-cut chance. Australia held the ball for long spells (56%), their best chance coming from <b>Jordan Bos's 90th-minute long-range effort from the right edge of the box that drifted wide</b>, plus an earlier long-range shot that drew a save from goalkeeper <b>Orlando Gill</b>; Paraguay, missing top scorer Almirón, threatened mainly on the counter, with substitutes <b>Mauricio</b> and <b>Julio Enciso</b> as their forward runners. Neither back line was truly tested all match. <b>Result: Australia, with this 1 point, went through as Group D runners-up (2nd) to the Round of 32; Paraguay on 4 points enter the "best third-placed" contest.</b> The USA, despite losing the final round to Türkiye, still advanced as group winners. <span style="color:var(--warn)">[Whether Paraguay qualify as a best third-placed team depends on other groups' results and goal difference · TBC]</span></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 46' yellow Irvine (AUS) · 77' yellow Diego Gómez (PAR, his 2nd of the group → suspended for the Round of 32 if Paraguay advance) · 90' Bos long-range effort wide (Australia's best chance) ｜goalkeeper Gill 5 saves</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (ESPN / FotMob)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇵🇾 Paraguay</th><th>🇦🇺 Australia</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td>44%</td><td><b>56%</b></td><td>Australia had possession dominance but not extreme — matching the pre-match read that "Australia control the tempo, Paraguay cede the ball to counter"</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td>0.25</td><td><b>0.57</b></td><td>Both xG figures extremely low (combined &lt;0.85), confirming the pre-match thesis of "low-scoring + neither side strong at creation"; Australia slightly higher but nowhere near enough to score</td></tr>
+      <tr><td class="ht">Shots on target</td><td>2</td><td><b>5</b></td><td>Australia had more on target but of average quality (xG just 0.57), mostly long-range; without Almirón, Paraguay's open-play creation was scarce</td></tr>
+      <tr><td class="ht">Passes (completed / accuracy)</td><td>330 / 77%</td><td><b>438 / 82%</b></td><td>Australia high on both volume and accuracy, dominating possession; but control without penetration, failing to prise open Paraguay's low block</td></tr>
+      <tr><td class="ht">Goalkeeper saves / duels won</td><td><b>Gill 5 saves</b> / 55</td><td>2 saves / <b>62</b></td><td>Gill's 5 saves (including denying Bos's long shot) earned Paraguay the draw; Australia won slightly more duels, fitting their physical low-block style</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.espn.com/soccer/match/_/gameId/760469">ESPN — Paraguay 0-0 Australia</a> · <a href="https://www.fotmob.com/matches/australia-vs-paraguay/1hs39g">FotMob</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021461">FIFA Match Centre</a> · <a href="https://www.aljazeera.com/sports/2026/6/26/australia-paraguay-fifa-world-cup-2026-score-report-socceroos">Al Jazeera report</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">"Asymmetric motivation" fully delivered: Australia got the result they needed, Paraguay failed to win</div>Australia, qualifying with a draw, controlled the ball (56%) + ran down time with low-block discipline throughout; Paraguay, who needed to win, mustered just 0.25 xG and 2 shots on target. <b>This shows Australia are a battle-hardened side that can precisely manage a game to its qualification needs — give them a "draw will do" scenario, and their back-three deep block + time management barely err</b>, exactly the core script predicted pre-match.</div>
+    <div class="insight"><div class="who">The cost of Almirón's suspension confirmed: Paraguay lack means to break a deep block</div>Without their top scorer, Paraguay's open-play xG was only 0.25, the threat coming mainly from scattered counters by substitutes Mauricio/Enciso rather than positional penetration. <b>This shows that once this Paraguay side is forced to attack and lack their core creator, the ceiling for breaking down a packed low block clearly tops out</b> — the pre-match risk of "the will to win not matching the means to break a packed defence" played out precisely.</div>
+    <div class="insight"><div class="who">Australia: control without penetration — possession dominance ≠ chance creation</div>Australia made 438 passes / 82% complete, with 56% possession, but only 0.57 xG, their best chance being Bos's 90th-minute long-range effort wide. <b>This shows Australia's attack still relies on the wings and long-range shots, lacking the final ball to break a low block</b> — a weakness that will be amplified in the knockouts against opponents more willing to push up.</div>
+    <div class="insight"><div class="who">Goalkeeping and defensive resilience are both sides' shared "floor"</div>Gill's 5 saves earned the draw and neither back line was truly tested all match. <b>This shows the competitive base of both teams lies in defensive discipline rather than attacking firepower</b> — to go further after qualifying, attacking finishing is a shared bottleneck.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Outcome</th><th>Notes</th></tr>
+      <tr><td class="ht">Base "low-scoring, evenly matched; Australia lean to securing a draw/narrow win"</td><td style="color:var(--good)"><b>✓ Precisely delivered</b></td><td>0-0, combined xG &lt;0.85 — exactly the predicted low-scoring even contest</td></tr>
+      <tr><td class="ht">Australia qualify 2nd with a draw (goal-difference edge)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>1 point sealed Group D runners-up, advance to the Round of 32</td></tr>
+      <tr><td class="ht">Paraguay basically need to win to qualify safely</td><td style="color:var(--warn)"><b>~ Did not win, pivot to best third-placed</b></td><td>0-0 for just 1 point (4 total), fate handed to the uncontrollable best-third-placed ranking — consistent with the pre-match read</td></tr>
+      <tr><td class="ht">Almirón's suspension weakens the deep-block-breaking ceiling</td><td style="color:var(--good)"><b>✓ Played out</b></td><td>Paraguay 0.25 xG, 2 on target, needed to win but had no answer to the deep block</td></tr>
+      <tr><td class="ht">Over/Under 2.0 → Under lean</td><td style="color:var(--good)"><b>✓ Went Under</b></td><td>0 goals, far below the 2.0 line, the Under script fully delivered</td></tr>
+      <tr><td class="ht">Market heat 3/5 (draw the shortest price)</td><td style="color:var(--good)"><b>✓ The shortest draw price validated</b></td><td>The lowest-priced draw was exactly the result, no upset</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#f0d869">🇦🇺 Australia · Advance to the Round of 32 (Group D runners-up)</h4>
+        <ul class="watch">
+          <li><b>Advance as Group D runners-up, projected to face the Group G runners-up on 7/3</b> (per format D runners-up vs G runners-up; the current G runners-up are Iran). <span style="color:var(--warn)">[Group G's final ranking and the opponent per that group's conclusion · TBC]</span></li>
+          <li><b>Control without penetration is a concern to carry into the next game</b>: 56% possession for only 0.57 xG, reliant on long-range shots, lacking the final ball to break a low block — opponents will cede possession to lure them into going round in circles in the final third.</li>
+          <li><b>The low deep-block + counter + set-piece battle template works</b>: this match again proved their ability to manage a game to need, and in single-game knockout duels it remains their most reliable route.</li>
+          <li><b>Discipline risk</b>: Irvine already booked; in the do-or-die intensity of the knockouts they must control the accumulation of tactical fouls to avoid suspending key players.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#f08a96">🇵🇾 Paraguay · 3rd in Group D · qualification pending the best-third-placed ranking</h4>
+        <ul class="watch">
+          <li><b>3rd in the group on 4 points</b>: whether they advance depends on the comparison of best third-placed teams across groups and goal difference, <b>out of their own hands</b>. <span style="color:var(--warn)">[The final ranking for the 8 best-third-placed spots pending the other groups' conclusion · TBC]</span></li>
+          <li><b>⭐ Diego Gómez suspension risk (transfers to the next game)</b>: he picked up his 2nd cumulative yellow of the group in the 77th minute, so <b>if Paraguay advance, he is suspended for the Round of 32</b> — another loss for midfield progression and creation, a key news item to enter the next preview.</li>
+          <li><b>Almirón's suspension ends, available again</b>: if they advance, the top scorer and right-side creator returns, clearly lifting the deep-block-breaking ceiling — his absence was the main cause of the attacking impotence exposed this match.</li>
+          <li><b>Lacking means to break a deep block is a structural weakness</b>: 0.25 xG shows that without their core creator the positional game is almost unsolvable; in the knockouts they must address finishing and the final ball.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a Group D final round, a <b>direct do-or-die with "asymmetric qualification motivation"</b>. The USA have sealed top spot on 6 points and Türkiye are out on 0; Paraguay and Australia are <b>level on 3 points</b> contesting the second direct qualification ticket. The two teams have not met across the first two rounds, but <b>on goal difference Australia are 0 and Paraguay -2</b> — so if the two draw and both reach 4 points, the first tiebreaker (head-to-head) is null because this match is the head-to-head and a draw makes no difference, so it <b>goes straight to goal difference, where Australia have the edge</b>. Hence <b>a draw favours Australia and secures their 2nd-place qualification</b>; <b>Paraguay basically must win</b> (a win means 2nd-place qualification; a draw or narrow loss leaves them hoping for one of the 8 "best third-placed" spots, dependent on other groups' results, out of their hands). <span style="color:var(--warn)">[Note: some media (SportsLine/Yahoo) project that a draw could still let Paraguay qualify as a best third-placed team, but that scenario depends on other groups and is uncontrollable; defer to FIFA's official determination · TBC]</span> The biggest matchday variable: <b>Paraguay's star man and top scorer Miguel Almirón is absent through a red-card suspension</b> (against Türkiye he became the first player sent off under this tournament's new rule for "talking while covering his mouth"; FIFA officially confirmed a one-match ban, not appealable), weakening Paraguay's right-side attack and finishing ceiling — and Paraguay are precisely the side that needs to score more; Australia's winger <b>Mathew Leckie has a muscle-injury doubt</b>, and with a draw enough to qualify they may rotate conservatively. Three talking points: ① <b>who breaks the game open for Paraguay after Almirón's suspension</b> (needing to win but missing their top scorer); ② <b>can Australia's back-three deep block + the "a draw will do" conservative mindset</b> stall the game; ③ <b>the late-game gambit under the goal-difference rule</b> — once Paraguay fall behind or struggle to break through they will push up fully, so the second-half plot could turn extreme. Base scenario: <b>low-scoring, evenly matched; Australia lean to securing a draw/narrow win, Paraguay forced to take risks</b>, Market Heat Index ≈ 3/5 (three-way odds close together, information content concentrated in the suspension and qualification arithmetic).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Paraguay implied win prob. (de-vigged)</div><div class="v" style="color:#f08a96">≈33%</div></div>
+      <div class="key"><div class="k">Draw implied probability (de-vigged)</div><div class="v" style="color:var(--draw)">≈42%</div></div>
+      <div class="key"><div class="k">Australia implied win prob. (de-vigged)</div><div class="v" style="color:#f0d869">≈25%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic + asymmetric motivation (core)</b>: both teams on 3 points. <b>Australia's GD is 0, Paraguay's -2.</b> This match is the head-to-head, so a draw cannot separate them, meaning a tie goes straight to goal difference — <b>Australia qualify 2nd with a draw</b>; <b>Paraguay basically must win</b> to qualify safely, otherwise they can only bet on the uncontrollable "best third-placed". The intensity of the chase tilts to Paraguay, but the safety cushion tilts to Australia.</li>
+      <li><b>⭐ Almirón's suspension (Paraguay · multi-source + FIFA official confirmation)</b>: the squad's top scorer and right-side hub Miguel Almirón was sent off with a straight red against Türkiye under the new "talking with hand over mouth" rule, and FIFA confirmed a <b>one-match ban, not appealable</b>, ruling him out of this match. This weakens Paraguay's attack and finishing ceiling in the game they most need to score in — see Key Match News.</li>
+      <li><b>Australia's Leckie injury doubt + conservative rotation risk</b>: winger Mathew Leckie strained a muscle against the USA, not yet ruled out, but with "a draw enough to qualify" the team may choose to rest him, bringing in Volpato/Irankunda. Australia will most likely deep-block with a back three, relying on set pieces and counters to drag the game into a tight margin.</li>
+      <li><b>Late-game plot under the goal-difference rule</b>: because a draw favours Australia, if Paraguay are 0-0 or behind they will push up fully in the second half — opening up space and increasing the late-game swings of an Australia counter landing or Paraguay being hit on the break. The "goal timing / who scores first" weight is higher than in most matches.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, explained item-by-item for how each changes the tactics or result (key players' absences cross-confirmed from multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Key player check · Almirón confirmed suspended <span style="color:var(--mut);font-weight:400">· FIFA official / ESPN / Al Jazeera / FOX / Business Standard multi-source agreement · 2026-06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multi-source + FIFA official confirmation: Miguel Almirón is <b>banned one match, not appealable, and definitely misses Australia</b> (the squad's top scorer)</div>
+      <p style="font-size:13.5px">Key-player absence cross-checked: <b>FIFA officially</b> confirmed on 6-23 that Almirón is banned one match, missing this game, and the ban is <b>not appealable</b>; <b>ESPN, Al Jazeera, FOX Sports and Business Standard</b> all reported it — Paraguay's right-side hub and top scorer Almirón, just before half time against Türkiye (Paraguay won 1-0), became the <b>first player in World Cup history to be sent off with a straight red</b> under this tournament's new rule for "talking with hand over mouth during an altercation", after which Paraguay held on with 10 men. The most likely replacement on the right flank is <b>Mauricio</b> (who scored against the USA in the opener), with <b>Damián Bobadilla</b> also a candidate. <span style="color:var(--warn)">[The substitute and starting XI per the pre-match FIFA Match Centre official line-up · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Paraguay are the side that <b>needs to score more</b> this match (basically must win), yet they lose exactly their top scorer and right-side creator. This <b>directly lowers Paraguay's ceiling for breaking Australia's back-three deep block</b> — a structural blow to a team needing to attack, raising the probability of the "low-scoring + draw" script, and a key variable for the totals and handicap.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.aljazeera.com/sports/2026/6/23/paraguays-almiron-suspended-for-one-game-after-red-card-for-covering-mouth" style="color:var(--accent)">Al Jazeera — FIFA confirm one-match ban</a> · <a href="https://www.espn.com/soccer/story/_/id/49123197/" style="color:var(--accent)">ESPN — sent off for covering mouth</a> · <a href="https://www.business-standard.com/sports/fifa-world-cup/" style="color:var(--accent)">Business Standard — one-match ban</a> · <a href="https://www.foxsports.com/stories/soccer/2026-fifa-world-cup-paraguay-miguel-almiron-red-card" style="color:var(--accent)">FOX Sports</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Key player check · Leckie injury doubt (not ruled out / possibly rested) <span style="color:var(--mut);font-weight:400">· Sports Mole / Squawka · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mathew Leckie had muscle discomfort against the USA, <b>not yet ruled out</b>, but with "a draw enough to qualify" the team may choose to rest him, bringing in <b>Volpato/Irankunda</b></div>
+      <p style="font-size:13.5px">Per Sports Mole/Squawka, Australia winger <b>Mathew Leckie</b> strained a muscle against the USA on 6-19 and has not been officially ruled out, but with the team highly likely to qualify and looking to preserve fitness for the knockouts (Round of 32), the manager has incentive to rest him and use Cristian Volpato instead; meanwhile the manager admitted leaving out <b>Nestory Irankunda</b> against the USA was a mistake, and the 20-year-old Watford forward is expected to return to the XI this match. <span style="color:var(--warn)">[Whether Leckie plays and the XI per the pre-match official line-up · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Leckie's absence or rest has limited impact in itself, but it reflects Australia's <b>"a draw will do" mindset and rotation tendency</b> — if they deep-block even more conservatively, match intensity and goals drop, reinforcing the low-scoring/draw script; while Irankunda's return offers a counter-attacking spark, key to Australia stealing a goal when Paraguay push up.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/australia/world-cup-2026/predicted-lineups/will-leckie-play-predicted-australia-xi-vs-paraguay_599929.html" style="color:var(--accent)">Sports Mole — Australia predicted XI / Leckie</a> · <a href="https://www.squawka.com/en/news/world-cup/paraguay-vs-australia-team-news-predicted-lineups/" style="color:var(--accent)">Squawka — team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee <span style="color:var(--mut);font-weight:400">· OneFootball / ESPN / Wikipedia · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: French official <b>Clément Turpin</b> (his second match this tournament, his first being England-Croatia); Santa Clara, California · Levi's Stadium</div>
+      <p style="font-size:13.5px">The referee for this match is the French international Clément Turpin, his <b>second match</b> at this World Cup (his first being England vs Croatia), and he also officiated the 2018 and 2022 World Cups. His career average is around <b>3.36 yellows</b> and around 0.19 reds per match — a relatively restrained, senior official who is willing to make big calls. <span style="color:var(--warn)">[The full officiating crew and VAR setup, and Turpin's per-match card breakdown at this/the last two World Cups · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: this tournament's new rules have already cost Paraguay Almirón's red card, and Turpin is a referee who manages discipline and tactical fouls well; with do-or-die + goal-difference pressure, both sides' duels and time-wasting will increase, so the refereeing threshold has a real impact on cards, a potential penalty and the length of stoppage time. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://onefootball.com/en/news/clement-turpin-to-referee-england-v-croatia-in-first-2026-world-cup-assignment-43010694" style="color:var(--accent)">OneFootball — Turpin appointment</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/" style="color:var(--accent)">ESPN — World Cup referee list</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials" style="color:var(--accent)">Wikipedia — officials list</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">1X2 implied probability (de-vigged) · Group D picture · totals market · overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over / Under 2.0 implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group D four teams · points before the final round</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇵🇾 Paraguay</th><th>🇦🇺 Australia</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#40 range</td><td class="sc">#27 range</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-4 USA + 1-0 Türkiye (3 pts, GD -2)</td><td class="sc">2-0 Türkiye + 0-2 USA (3 pts, GD 0)</td></tr>
+      <tr><td>Group D points (before the final round)</td><td colspan="2">USA 6 pts seal top spot; Paraguay 3(-2), Australia 3(0) contest 2nd; Türkiye 0, already out</td></tr>
+      <tr><td>Qualification conditions</td><td class="ht"><b>Basically must win</b> to qualify safely; a draw/loss only via the uncontrollable best third-placed</td><td class="sc"><b>Qualify with a draw</b> (goal-difference edge); a win is safer</td></tr>
+      <tr><td>Head coach</td><td class="ht">Gustavo Alfaro (Argentine)</td><td class="sc">Tony Popovic (Australian)</td></tr>
+      <tr><td>Key players</td><td class="ht">Almirón (suspended), Gustavo Gómez, Diego Gómez, Galarza, Sanabria</td><td class="sc">Souttar, Irankunda, Bos, O'Neill, Volpato</td></tr>
+      <tr><td>Match talking points / questions</td><td class="ht">Missing top scorer but must win, who breaks the deep block</td><td class="sc">The "draw will do" conservative mindset + can the back-three deep block stall it</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Missed the 2018/2022 World Cups (two straight qualifying eliminations)</td><td class="sc">2022 World Cup Round of 16 (qualified 2nd in the group), 2023 Asian Cup quarter-finals</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win ≈2.88 (+188, implied ≈33%)</td><td class="sc">Win ≈3.93 (+293, ≈25%) · Draw ≈2.30 (+130, ≈42%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">The total line is low (O/U between 1.5–2.0); the handicap is near level (Australia +0.5 / Paraguay -0.5); the market reads it as a low-scoring even contest</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from decimal odds (≈33/42/25, after normalising). Line source: ESPN/SportsLine (Paraguay +188≈2.88, draw +130≈2.30, Australia +293≈3.93; O/U 2.0: Over +128≈2.28, Under -145≈1.69; handicap Australia +0.5 / Paraguay -0.5). Almirón's suspension is the core uncertainty for Paraguay's attacking ceiling and the handicap depth. Specific odds per the real-time pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this tournament's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline</b> against <b>this tournament's actual values (the first two rounds)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" — never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline</th><th>This tournament's actual (first two rounds)</th><th>Delta &amp; reading</th></tr>
+      <tr><td class="ht">🇵🇾 Paraguay · Attack</td><td class="ht">Mid-table attacking output in South American qualifying, reliant on Almirón's right side and Sanabria's finishing, set pieces</td><td class="ht">2 games, 2 goals (1-4 USA, 1-0 Türkiye), <b>cumulative two-round xG on the low side</b></td><td><b>Weak and made worse</b>: only ≈0.32 xG against Türkiye yet won 1-0 (efficient but scarce creation); this tournament's xG delta <b>≈-1.37 (two games)</b>. <b>Almirón's suspension further weakens the deep-block-breaking ceiling</b>, needing to win but missing their best point <span style="color:var(--warn)">(FotMob/xGscore public sample, PPDA/xT breakdown · TBC)</span></td></tr>
+      <tr><td class="ht">🇵🇾 Paraguay · Defence</td><td class="ht">Led by Gustavo Gómez, robust in duels, strong aerially</td><td class="ht">2 games, conceded 6 (including a 1-4 collapse vs the USA), but a 10-vs-11 clean sheet vs Türkiye</td><td><b>Two-sided</b>: the USA game exposed a fragility to being torn open by high-intensity pressing; but holding a clean sheet vs Türkiye with a man down shows the floor of their low-block defending and combativeness is acceptable</td></tr>
+      <tr><td class="sc">🇦🇺 Australia · Attack</td><td class="sc">Reached the 2022 World Cup Round of 16 via discipline + counters; limited attacking output, reliant on the wings and set pieces</td><td class="sc">2 games, 2 goals (2-0 Türkiye, 0-2 USA), blank against the strong side</td><td><b>Average</b>: fluent vs Türkiye (Irankunda+Metcalfe), suppressed vs the USA for 0 goals; this tournament's xG delta <b>≈-0.65 (two games)</b>, mediocre open-play creation, counters and set pieces the main route <span style="color:var(--warn)">(xG public sample, breakdown · TBC)</span></td></tr>
+      <tr><td class="sc">🇦🇺 Australia · Defence</td><td class="sc">Popovic emphasises a compact back three + low-block discipline, Souttar aerially</td><td class="sc">2 games, conceded 2 (both vs the USA), a clean sheet vs Türkiye</td><td><b>The floor is in defence</b>: the back-three structure is solid against lower-mid opponents; this match's "a draw will do" means a more proactive deep block, and defensive resilience is the core of their stalling the game</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: both teams' tournament xG deltas are negative (Paraguay ≈-1.37, Australia ≈-0.65, two-game cumulative), confirming "neither side is strong at creation, this match leans low-scoring". Paraguay must win but are missing Almirón, with scarce open-play creation; Australia only need a draw, with defensive resilience + counters/set pieces the main thread. The deep data supports the thesis of "low-scoring + draw lean, Paraguay forced to take risks". Sources: xGscore / FootyStats / RealGM xG Tracker (first two rounds) · FotMob · ESPN. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration + trap reminder</h4>
+    <table>
+      <tr><td>Model projected xG for this match (magnitude)</td><td class="ht">Paraguay ≈1.0–1.3</td><td class="sc">Australia ≈0.9–1.1</td><td>The two are close with a low total; Almirón's absence lowers Paraguay's ceiling, consistent with the line's "low-scoring + level handicap"</td></tr>
+      <tr><td>Opta / supercomputer / strength rating</td><td colspan="2" class="sc">Within the system the two are close (FIFA ranking Australia #27 slightly above Paraguay #40), with the supercomputer giving "draw/Australia slightly favoured" the highest probability; consistent with the bookmakers' lowest-priced draw</td><td>Opponent-strength calibration: both were suppressed against the USA and performed more fluently vs Türkiye — the more informative sample is the game "against a mid-table Türkiye"</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Australia lean toward a low deep block with high PPDA (not pressing proactively); Paraguay, needing to win, will raise possession and push up, with field-tilt dominance but lacking a finishing point (Almirón's suspension lowers right-side xT)</td><td><b>Trap reminder</b>: ① Australia's "a draw will do" may turn extremely conservative, proactively ceding possession → small margin, over under pressure; ② Paraguay pushing up late opens space → amplifying late-game swings of an Australia counter landing or Paraguay being countered; ③ the goal-difference rule makes "who scores first / goal timing" carry more weight than "who is better over the full game"</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = many long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/xGscore; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and any missing items are marked "TBC" — figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is an evenly matched "do-or-die" fixture — three-way odds close together, the draw the shortest price; information content concentrated in the qualification arithmetic, Almirón's suspension and the low-scoring lean</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Three-way odds close, draw the shortest price, no one-sided consensus; sentiment focused on the qualification do-or-die and the suspension</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The three prices are relatively close (Paraguay ≈2.88 / draw ≈2.30 / Australia ≈3.93), with <b>the draw the shortest</b>, reflecting the consensus of "asymmetric motivation → low-scoring → draw lean". The real price discovery is in the <b>totals (low line)</b> and the <b>handicap (near level)</b>, plus the discount on Paraguay's attacking ceiling from Almirón's suspension.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction leans low-scoring/draw, win-loss split)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>SportsLine (Martin Green)</td><td>Professional analyst</td><td>Leans Under (Under 3.5 / low line); reads it as a low-scoring even contest</td></tr>
+      <tr><td>ESPN</td><td>Pre-match preview</td><td>Australia qualify with a draw and may be conservative; Paraguay missing Almirón face a harder must-win</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Favours Australia winning narrowly on quality or taking a draw; provides both predicted XIs</td></tr>
+      <tr><td>Sky Sports</td><td>UK media</td><td>The battle for Group D 2nd, stressing Australia's favourable position under the goal-difference rule</td></tr>
+      <tr><td>Racing Post / Yahoo</td><td>General media</td><td>Mostly lean low-scoring; some give a "both need points → draw" script, with the Under (Under 2) the value angle</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (moderate)</b>: unlike "one-sided" fixtures, this is an <b>evenly matched do-or-die with the draw the shortest price</b>. The biggest uncertainty is the <b>actual impact of Almirón's suspension on Paraguay's attacking ceiling</b>, and <b>how conservative Australia will be</b> (a draw will do) — which affects the totals and handicap rather than a clear 1X2 direction. The sentiment is focused on the "covering-mouth red card" new-rule controversy and the drama of a do-or-die.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Paraguay win / Draw / Australia win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="sc">≈2.75 / 2.30 / 3.80</td><td>Three-way close at the open with the draw shortest, reflecting an even contest + draw lean</td></tr>
+      <tr><td>06-23 cutoff</td><td>ESPN / SportsLine</td><td class="sc">≈2.88 / 2.30 / 3.93 (+188 / +130 / +293)</td><td>After Almirón's suspension was confirmed, Paraguay's win price drifted slightly (a harder deep block to break), the draw stays the shortest</td></tr>
+      <tr><td>06-23</td><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.0 (Over +128≈2.28 / Under -145≈1.69) — the Under is favoured (no Almirón + Australia conservative + both teams' low xG)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="sc">Handicap near level (Australia +0.5 / Paraguay -0.5); 1X2 three-way close, draw shortest; O/U around 2.0</td><td>Priced on "two teams level on points, close in quality, the goal-difference rule lets Australia qualify with a draw" — the opening line already framed this as an <b>even contest + draw lean</b>, not one-sided either way</td></tr>
+      <tr><td>Open (post-second-round + suspension repricing)</td><td class="sc">Paraguay win ≈2.75→2.88; handicap stays near level; O/U 2.0 leaning Under</td><td><b>Repricing from the second round + the suspension</b>: Australia's 0-2 loss to the USA and Paraguay's narrow 1-0 over Türkiye exposed both sides' attacking impotence; <b>Almirón's confirmed suspension</b> lowered the market's confidence in "Paraguay winning on the front foot", drifting their win price slightly and further favouring the Under; the "Australia a draw will do" mindset supports the Under and the level handicap</td></tr>
+      <tr><td>Current line (06-23→now)</td><td class="sc">Paraguay ≈2.88 / draw ≈2.30 / Australia ≈3.93; level handicap; O/U 2.0 leaning Under</td><td>Price discovery is concentrated in the <b>totals (low line)</b> (no Almirón + Australia conservative → the Under absorbs it) and <b>fine-tuning around the level handicap</b>; the draw is the shortest, the 1X2 directional play is limited, and the <b>Under and draw-related derivative markets</b> are this match's main playing field</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is an evenly matched "level handicap + low line" do-or-die, completely different from a "one-sided heavy handicap". The 1X2 draw is the shortest with limited directional play, and the key variables are <b>Paraguay's attacking ceiling after Almirón's suspension</b> and <b>how conservative Australia are</b> (a draw will do), together depressing the goal expectation. Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction market (aggregate)</b>: consistent with the bookmaker de-vig in giving "draw/Australia qualify" a higher probability (goal-difference edge + a draw will do); Paraguay's qualification probability is suppressed by "must win yet missing Almirón". Crypto prediction venues such as CryptoSlate have also listed contracts for this match. <span style="color:var(--warn)">[This single match's volume/momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>the "covering-mouth red card" new-rule controversy</b> — Almirón becoming the first player sent off under it has sparked wide debate over the rule's threshold, this match's biggest traffic angle and sentiment point.</li>
+      <li><b>Sentiment focus ②</b>: <b>the qualification drama under the goal-difference rule</b> — Australia qualifying with a draw vs Paraguay needing to win, the do-or-die drama of "who scores first / whether they push up late" is the narrative core.</li>
+      <li><b>Team narratives</b>: Paraguay returning to the World Cup after several missed editions yet with their backs to the wall and missing their top scorer, a mix of pathos and grit; Australia continuing the 2022 "discipline + counters" to qualify safely.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is an evenly matched do-or-die — a level handicap, the draw the shortest price, Heat Index <b>3/5</b>. The 1X2 directional play is limited, and the core variables are <b>Paraguay's deep-block-breaking ceiling after Almirón's suspension</b> and <b>how conservative Australia are</b>, together depressing the goal expectation (no top scorer + Australia a draw will do → the Under absorbs it, draw-related markets favoured). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49155739/">ESPN — preview/lines/referee/predicted XI</a> · <a href="https://www.sportsline.com/insiders/paraguay-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — odds/picks</a> · <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/preview/paraguay-vs-australia-prediction-team-news-lineups_599899.html">Sports Mole — preview/line-ups</a> · <a href="https://www.skysports.com/football/news/12098/13543088/">Sky Sports — Group D guide</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/">Racing Post — odds/team news</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the referee for this match is the French international Clément Turpin, his <b>second match</b> at this World Cup (his first being England vs Croatia), who has also officiated the 2018 and 2022 World Cups and Champions League final-level fixtures. Sources: OneFootball, the ESPN referee list, the Wikipedia officials list. <span style="color:var(--warn)">[The full officiating crew and VAR setup · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's uniform new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Turpin comes from the UEFA system and is hugely experienced — somewhat tolerant of physical contact, but well-managed on tactical fouls, time-wasting and altercation control, and willing to make big calls (including penalties and reds). His career average is around <b>3.36 yellows</b> and around 0.19 reds per match, an overall "moderate-but-restrained yet authoritative" threshold. <span style="color:var(--warn)">[This is a career average; the precise major-tournament breakdown of his per-match cards/penalties at this/the last two World Cups has limited public sample · TBC]</span></li>
+      <li><b>This tournament's new-rule context</b>: this World Cup's officiating environment is strict (only the captain may speak to the referee, the 8-second goalkeeper rule, semi-automated offside, the <b>"talking with hand over mouth = red card" new rule</b>). In this group's second round, Paraguay's Almirón was already sent off under that rule — meaning both teams' players will be more careful about altercation management, but the do-or-die emotion and physicality could still create card points.</li>
+      <li><b>Officiating history with both teams</b>: Turpin mainly officiates European fixtures and has no notable public tendency in his officiating history with either Paraguay or Australia.</li>
+      <li><b>Two-sided</b>: Australia's deep block will inevitably bring plenty of physical duels and tactical fouls (slowing Paraguay), and Paraguay needing to win will increase box grappling and pushing-up challenges — Turpin's threshold has a real impact on cards, a potential penalty and the length of stoppage time; under goal-difference pressure late-game time-wasting will increase, and semi-automated offside will precisely catch the counter-attacking offside line. The card/penalty markets should be viewed as a tendency, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing analysis</b>: in an evenly matched do-or-die framework, the referee's impact on cards/penalties is worth watching: Australia's tactical fouls and Paraguay's box grappling when pushing up are the yellow-card/penalty points to watch. Given Turpin's major-tournament per-match card breakdown at this/the last two World Cups has limited sample, treat the related markets as a tendency, not a quantified basis.</div>
+  </section>
+
+  <!-- Line-ups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XI (ESPN / Sports Mole / Squawka projections, not official; official line-ups per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇵🇾 Paraguay Predicted XI (4-4-2 / 4-2-3-1) · Gustavo Alfaro · Almirón suspended/absent</h4>
+    <div class="lineup">Gill; Cáceres · Gustavo Gómez · Alderete · Junior Alonso; Mauricio · Cubas · Diego Gómez · Galarza; Sanabria · Enciso</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Gustavo Gómez</td><td>Centre-back/Captain / Palmeiras</td><td>Paraguay's defensive core and leader, robust in duels, strong aerially and in set-piece challenges; the pillar of the 10-man clean sheet vs Türkiye</td></tr>
+      <tr><td class="ht">Diego Gómez</td><td>Midfield / Brighton</td><td>Midfield progression and running, may start carrying a knock; without Almirón he must take on more creation <span style="color:var(--warn)">fitness TBC</span></td></tr>
+      <tr><td class="ht">Matías Galarza</td><td>Midfielder</td><td>Scored the 3rd-minute goal vs Türkiye; may start carrying a knock, a midfield link and long-range threat <span style="color:var(--warn)">fitness TBC</span></td></tr>
+      <tr><td class="ht">Mauricio</td><td>Forward / replacing Almirón</td><td>Scored against the USA in the opener, the most likely replacement for the suspended Almirón on the right/in attack <span style="color:var(--warn)">start TBC</span></td></tr>
+    </table>
+    <h4>🇦🇺 Australia Predicted XI (3-4-3 / back three) · Tony Popovic · Irankunda returns</h4>
+    <div class="lineup">Beach; Circati · Souttar · Burgess; Italiano · O'Neill · Okon-Engstler · Bos; Volpato · Touré · Irankunda</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Harry Souttar</td><td>Centre-back</td><td>Australia's aerial and duelling core, the pillar of the back-three structure; key at both ends on set pieces</td></tr>
+      <tr><td class="sc">Nestory Irankunda</td><td>Winger / Watford</td><td>A 20-year-old spark, scored against Türkiye; the manager admitted dropping him vs the USA was a mistake, expected to return to the XI <span style="color:var(--warn)">start TBC</span></td></tr>
+      <tr><td class="sc">Jordan Bos</td><td>Left wing-back</td><td>Left-side progression and crossing, the source of width in the back-three system; key coverage in transition</td></tr>
+      <tr><td class="sc">Aiden O'Neill</td><td>Midfielder</td><td>Midfield shield and tempo, expected to start for a third game running; the midfield hub of Australia's low block</td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (ESPN / Sports Mole / Squawka); <b>defer to the official pre-match team sheet · TBC</b>. The Paraguay focus is <b>who replaces the suspended Almirón</b> (Mauricio/Bobadilla) and the fitness of Diego Gómez and Galarza; the Australia focus is <b>whether Leckie plays or is rested</b>, whether Irankunda returns to the XI, and how deep Popovic's back-three block sits.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments/qualifying</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a96">🇵🇾 Paraguay · Gustavo Alfaro</div>
+        <div class="role">Pragmatic 4-4-2/4-2-3-1, robust defence + set pieces + wide (Almirón) creation</div>
+        <ul class="cl">
+          <li>Alfaro's signature is <b>organisational discipline + robust duels + set pieces</b> — the first two rounds of this tournament confirm it: torn open 1-4 by the USA's high-intensity press, but a 10-vs-11 1-0 win over Türkiye via Galarza's 3rd-minute goal + a full-game backs-to-the-wall defence, showing their <b>low-block defending and combative floor are acceptable but open-play creation is scarce</b>.</li>
+          <li>Cross-reference: Paraguay missed the 2018/2022 World Cups (eliminated in South American qualifying), and this tournament is a return after years, lacking recent major-tournament samples; their style is closer to a "South American qualifying" pragmatic battle — <b>limited scoring efficiency against opponents who deep-block</b>, especially after losing Almirón.</li>
+          <li>This match's angle: needing to win but missing their top scorer and right-side creator, they can only prise open Australia's back-three low block via <b>Sanabria/Enciso's finishing + Diego Gómez/Galarza's midfield progression + set pieces (Gustavo Gómez's challenges)</b>; if they have not scored in the second half they will push up fully, but this exposes counter-attacking space. <b>This match's biggest risk is "the will to win not matching the means to break a packed defence".</b></li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f0d869">🇦🇺 Australia · Tony Popovic</div>
+        <div class="role">Compact back-three 3-4-3 low block + counters + set pieces, Souttar aerially</div>
+        <ul class="cl">
+          <li>Popovic emphasises <b>a compact back three, low-block discipline + wing-back progression + counters/set pieces</b> — this tournament's 2-0 over Türkiye (Irankunda+Metcalfe) was fluent, and the 0-2 suppression by the USA fits the profile of "can beat lower-mid sides, more passive against strong ones".</li>
+          <li>Cross-reference: Australia broke out of the group of death to the 2022 World Cup Round of 16 via <b>discipline + counters + set pieces</b> (beating Tunisia, Denmark), reaching the 2023 Asian Cup quarter-finals — <b>a battle-hardened side that can stall, defend and steal goals on the counter</b>, a strong fit for this match's "qualify with a draw" need.</li>
+          <li>This match's approach: most likely <b>a low back-three deep block + Souttar aerially + Irankunda/Volpato counters</b>, dragging the game into a tight margin; "a draw will do" gives them the safety cushion to proactively cede possession and run down time. The matchwinner lies in <b>whether they can steal a goal via a counter or set piece when Paraguay push up late, or simply hold the draw</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">SportsLine (Martin Green) <small>· Professional analyst</small></div>Leans Under (a low-scoring even contest); both teams need a result and neither wants to risk being caught on the break, the structural reason for a low score.</div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· Pre-match preview</small></div>Australia have the goal-difference edge and qualify with a draw, leaning to a solid defence; Paraguay missing Almirón must win, with a lower ceiling to break a packed defence, favouring Australia getting the result they need.</div>
+    <div class="insight"><div class="who">Sky Sports / Racing Post <small>· General media</small></div>Stress Australia's favourable position under the goal-difference rule and the weight of "who scores first"; mostly lean low-scoring, draw-related scripts.</div>
+    <div class="insight"><div class="who">Composite · core uncertainty and traps <small>· Opta / FotMob / xGscore</small></div>The real uncertainty is <b>whether Paraguay can proactively break the deep block after Almirón's suspension</b> and <b>how conservative Australia are</b>. ⚠ Trap reminder: both teams' xG is on the low side, and the asymmetric motivation leans the game low-scoring; the goal-difference rule makes "goal timing / who concedes first" decide the plot — the counter-attacking space behind Paraguay when they push up late is the two-way switch between an Australia steal and a Paraguay collapse.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: low-scoring, evenly matched is the base scenario. Australia, with the goal-difference advantage + the "qualify with a draw" safety cushion, lean to a solid defence, while Paraguay must win but are missing top scorer Almirón with limited means to break a deep block — a draw or a one-goal narrow win (either side) is the high-probability range, with Australia more likely than Paraguay to get the result they need to qualify.</li>
+      <li><b>Key men</b>: Paraguay — Sanabria/Enciso (finishing), Diego Gómez/Galarza (midfield progression), Gustavo Gómez (defence + set-piece challenges); Australia — Souttar (aerial), Irankunda (counter spark), Bos (left-side width), O'Neill (midfield shield). <b>Paraguay missing their top scorer through Almirón's suspension is this match's biggest single-point change.</b></li>
+      <li><b>Matchwinners</b>: ① whether Paraguay can proactively break Australia's back-three low block without Almirón (finishing + set pieces); ② whether Australia can deep-block for long without collapsing + steal on the counter/set piece; ③ <b>who scores first and the goal timing</b> — under the goal-difference rule, the side that scores first (especially Australia) hugely changes the game's direction.</li>
+      <li><b>Market view</b>: an evenly matched do-or-die (≈33/42/25), the draw the shortest price, Heat Index 3/5. The core variables are Paraguay's attacking ceiling after Almirón's suspension + how conservative Australia are, together depressing the goal expectation (leaning Under, draw-related markets favoured).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② <b>Almirón's suspension is multi-source + FIFA-officially confirmed as an absence</b>, whether Mauricio or Bobadilla starts in his place is TBC; ③ Australia's <b>whether Leckie plays or is rested</b>, whether Irankunda returns to the XI, how deep Popovic's back three sits; ④ Paraguay's Diego Gómez/Galarza fitness; ⑤ Turpin's full officiating crew and VAR setup, and his major-tournament per-match card/penalty breakdown at this/the last two World Cups; ⑥ <b>the precise goal-difference and tiebreaker rules for qualification/best third-placed</b> — this match is the head-to-head, so a draw goes straight to goal difference (Australia ahead); Paraguay's "best third-placed" scenario after a draw/loss depends on other groups and is uncontrollable (some media project a draw could still let Paraguay through; defer to FIFA's official determination); ⑦ the handicap line (near level) and the totals line (O/U 2.0) — specific odds per the real-time pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49155739/">ESPN — preview/lines/referee/predicted XI</a> · <a href="https://www.aljazeera.com/sports/2026/6/23/paraguays-almiron-suspended-for-one-game-after-red-card-for-covering-mouth">Al Jazeera — FIFA confirm Almirón ban</a> · <a href="https://www.espn.com/soccer/story/_/id/49123197/">ESPN — Almirón covering-mouth red card</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/paraguay/world-cup-2026/preview/paraguay-vs-australia-prediction-team-news-lineups_599899.html">Sports Mole — preview/predicted XI/team news</a> · <a href="https://www.sportsline.com/insiders/paraguay-vs-australia-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — odds/picks</a> · <a href="https://www.skysports.com/football/news/12098/13543088/">Sky Sports — Group D guide/standings</a><br>
+      • <a href="https://onefootball.com/en/news/clement-turpin-to-referee-england-v-croatia-in-first-2026-world-cup-assignment-43010694">OneFootball — Turpin appointment</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — Group D</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — officials list</a> · <a href="https://soccer.realgm.com/analysis/559/">RealGM / xGscore — this tournament's xG</a> · <a href="https://www.business-standard.com/sports/fifa-world-cup/">Business Standard — Almirón ban</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-24 · Charts use verified data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',PAR='#d11f33',AUS='#e0c020',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Paraguay win','Draw','Australia win'],datasets:[{data:[33,42,25],backgroundColor:[PAR,DR,AUS],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:55,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.0','Under 2.0'],datasets:[{data:[43,57],backgroundColor:[AUS,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, leaning Under)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['USA','Australia','Paraguay','Türkiye'],datasets:[{data:[6,3,3,0],backgroundColor:['#3b5bdb',AUS,PAR,'#9aa3b2'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:7,title:{display:true,text:'Points (before the final round · GD USA +5 / AUS 0 / PAR -2 / TUR -3)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Paraguay',data:[6.5,5,6,5.5,5.5,4.5],borderColor:PAR,backgroundColor:PAR+'33',pointBackgroundColor:PAR},
+   {label:'Australia',data:[7,5.5,5.5,6.5,5,7],borderColor:AUS,backgroundColor:AUS+'33',pointBackgroundColor:AUS}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Senegal vs Iraq · 2026 World Cup Group I Final Round (both on 0 points · only Senegal keeps a faint third-place tail · a fight for pride and to avoid the bottom)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-senegal-vs-iraq.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-senegal-vs-iraq.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-senegal-vs-iraq.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-senegal-vs-iraq.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-senegal-vs-iraq.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-senegal-vs-iraq.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-senegal-vs-iraq.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-senegal-vs-iraq.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group I Final Round · both on 0 points · a fight for pride and to avoid the bottom</span>
+  <h1>Senegal vs Iraq</h1>
+  <div class="meta">26 June 2026 · Toronto, BMO Field · 15:00 ET (UK 20:00 / Beijing 03:00 on the 27th) · Group I final round (played simultaneously: Norway vs France)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇸🇳 Senegal</div><div class="rk">1-3 France + 2-3 Norway · 0 points (GD −3) · only a heavy win + best-third-place hunt keeps a sliver of hope · without goalkeeper Mendy (knee injury) · Mané/Sarr/Jackson front line</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇮🇶 Iraq</div><div class="rk">1-4 Norway + 0-3 France · 0 points (GD −6) · qualification all but gone (deep goal-difference hole) · captain and top scorer Aymen Hussein very likely injured out</div></div>
+  </div>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a Group I final-round <b>"end of the road and the bottom" clash between two sides on 0 points</b>, played <b>simultaneously with Norway-France</b>. France and Norway, both on 6 points, have locked up the top two and qualified together — <b>this match is meaningless for the top two</b>; all that remains to be contested is "the faint tail of third-place qualification + avoiding the bottom + ranking/morale". <b>Key correction</b>: the earlier media claim that "both teams are already eliminated" is inaccurate — under FIFA's 48-team format, <b>the best 8 of the 12 third-placed teams advance to the round of 32</b>, so both teams are <b>not yet mathematically eliminated</b>; but Senegal's goal difference is −3 and Iraq's is −6, so <b>only Senegal, via a heavy win, retains an extremely slim third-place chance, while Iraq is all but hopeless</b> (even a win can hardly fill a −6 hole). This pushes the nature of the match toward "Senegal must win big, Iraq plays for pride". The odds are completely one-sided: Senegal to win around <b>1.27</b> (American −375), Draw <b>4.50</b> (+350), Iraq to win <b>10.00</b> (+900), de-vigged and normalised to roughly <b>71% / 20% / 9%</b>; the handicap projects Senegal as a heavy favourite (around −1.5 / −2), and the totals line O/U mostly sits at <b>2.5</b>. The biggest uncertainties: ① Senegal goalkeeper <b>Mendy confirmed out with a knee injury</b>, replaced by <b>Mory Diaw</b>; ② Iraq captain and top scorer <b>Aymen Hussein</b> (limped off in the 26th minute against France) very likely absent, with <b>Mohanad Ali</b> also expected to miss out, leaving the line led by <b>Ali Al-Hamadi</b>. Three things to watch: ① <b>can Senegal produce a "heavy win"</b> (just 2.25 total xG in their first two games — efficiency is the soft spot); ② <b>how much attack does Iraq have left without its key striker</b>; ③ <b>motivation mismatch</b> — Senegal must take risks chasing more goals, Iraq sit deep for pride and counter. Base-case script: <b>Senegal win (most likely 2-0 / 3-1 level), Market Heat Index ≈ 2/5</b> (direction one-sided but low attention, low information content).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Senegal implied win prob. (de-vigged)</div><div class="v" style="color:#e8788a">≈71%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈20%</div></div>
+      <div class="key"><div class="k">Iraq implied win prob. (de-vigged)</div><div class="v" style="color:#5aa8d8">≈9%</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic (correction: not mathematically eliminated, but only Senegal has a faint tail)</b>: France 6 points and Norway 6 points have locked the top two; Senegal sit third on 0 points (GD −3) and Iraq are bottom on 0 points (GD −6). Under the 48-team format the best 8 third-placed teams advance, so <b>Senegal must win big and rely on goal difference to sneak into a best-third-place spot</b> (an extremely slim chance); <b>even with a win, Iraq can hardly fill a −6 goal-difference hole and are all but hopeless</b>. The match is effectively about pride, avoiding the bottom and FIFA ranking/morale.</li>
+      <li><b>Senegal's Mendy confirmed injured out (multi-source: ESPN / Sports Mole agree)</b>: goalkeeper Édouard Mendy injured his knee against Norway and is <b>confirmed unavailable for this match</b>, replaced by <b>Mory Diaw</b> — Senegal's back line had already conceded 6 in two games (Mbappé and Haaland each scored a brace), so the goalkeeper change is a vulnerability. See the key match news below.</li>
+      <li><b>Iraq top scorer Aymen Hussein very likely out (multi-source: ESPN / Sports Mole agree)</b>: captain Aymen Hussein limped off with a muscle injury in the 26th minute against France and is <b>doubtful, expected to miss</b>; he scored 8 goals in qualifying and netted Iraq's <b>only goal</b> at this World Cup. With Mohanad Ali also expected to miss, head coach Arnold will lean more heavily on <b>Ali Al-Hamadi</b>.</li>
+      <li><b>Both sides are attack-strong, defence-weak "leaky" sides</b>: Senegal have <b>not kept a World Cup clean sheet since their 1-0 win over France in 2002</b> and have conceded 6 in two games this tournament; Iraq have conceded 7 in two games, repeatedly cut open behind by pace. Senegal must take risks chasing more goals, further amplifying this match's <b>possession-heavy but uneven-quality</b> nature.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: Key Match News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and status signals affecting this match, with item-by-item explanation of how each changes the tactics or result (key player absences cross-verified from multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Key player check · Iraq captain and top scorer Aymen Hussein very likely out <span style="color:var(--mut);font-weight:400">· ESPN + Sports Mole multi-source agreement · 2026-06-25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multi-source agreement: Aymen Hussein <b>limped off with a muscle injury in the 26th minute against France, doubtful / expected to miss this match</b>; he is Iraq's only goalscorer and an 8-goal qualifying scorer</div>
+      <p style="font-size:13.5px">Key player absence cross-checked from multiple sources: <b>ESPN (official pre-match preview)</b> and <b>Sports Mole</b> both report that Iraq captain and 30-year-old centre-forward <b>Aymen Hussein</b> <b>limped off with a muscle injury in the 26th minute</b> against France, is doubtful for this match and expected to be unavailable; he <b>scored 8 goals in qualifying</b> and netted Iraq's <b>only goal</b> at this World Cup, his primary attacking outlet. Multiple sources also indicate that <b>Mohanad Ali</b> is expected to be absent, with head coach Graham Arnold leaning more heavily on <b>Ali Al-Hamadi</b> and Ali Youssef. <span style="color:var(--warn)">[Starting XI and injury severity subject to the official pre-match FIFA Match Centre team sheet / Iraq FA announcement · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Iraq already live on a low block + counter-attacks, and <b>losing their only scorer Aymen Hussein</b> means they all but abandon the fantasy of "chasing the goal difference via a win" and are more likely to <b>retreat for a draw, defending grimly for pride</b>. This lowers Iraq's goal expectation, raises Senegal's handicap depth and possession, and makes the match more likely to become a "Senegal one-way siege".</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — Senegal vs Iraq official preview (injuries/XI/referee)</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/team-news/senegal-vs-iraq-injury-suspension-lists-predicted-xis_599962.html" style="color:var(--accent)">Sports Mole — Injury/suspension lists / predicted XIs</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Key player check · Senegal goalkeeper Mendy confirmed out, Diaw deputises <span style="color:var(--mut);font-weight:400">· ESPN + Sports Mole multi-source agreement · 2026-06-25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multi-source agreement: Édouard Mendy <b>injured his knee against Norway, confirmed unavailable for this match</b>; the goalkeeping spot goes to <b>Mory Diaw</b></div>
+      <p style="font-size:13.5px">Key player absence cross-checked from multiple sources: <b>ESPN</b> and <b>Sports Mole</b> both report that Senegal's first-choice goalkeeper <b>Édouard Mendy</b> injured his knee against Norway and has <b>been ruled out of this match</b>, with <b>Mory Diaw</b> expected to take the line. Senegal's front line — <b>Sadio Mané, Ismaïla Sarr, Nicolas Jackson</b> — are all expected to start fit (Jackson assisted against Norway), and 18-year-old prospect <b>Ibrahim Mbaye</b> (who scored against France) is a potential rotation option / impact card. <span style="color:var(--warn)">[Starting XI subject to the official pre-match FIFA team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Senegal have <b>never kept a World Cup clean sheet since 2002</b> and have already conceded 6 goals in two games this tournament; the goalkeeper change is especially sensitive given they must "win big + mind the goal difference" — they need to commit fully forward in attack while not conceding again on the counter, so <b>Diaw's distribution and shot-stopping reliability</b> directly bears on whether Senegal can produce a clean, big scoreline.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — Official preview (Mendy out / Diaw deputises)</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/preview/senegal-vs-iraq-prediction-team-news-lineups_599956.html" style="color:var(--accent)">Sports Mole — Preview / team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Qualification scenario · Correcting the "both eliminated" claim <span style="color:var(--mut);font-weight:400">· Wikipedia / FIFA / ESPN multi-source · 06-25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Both teams are <b>not yet mathematically eliminated</b>, but the top two are locked — only Senegal keeps a sliver of a third-place tail via a heavy win, Iraq are all but hopeless</div>
+      <p style="font-size:13.5px">Per Wikipedia "2026 World Cup Group I", FIFA standards and ESPN's qualification-scenario read: France 6 points and Norway 6 points <b>have locked the top two and qualified together</b>; Senegal (0 points, GD −3) and Iraq (0 points, GD −6) <b>cannot reach the top two</b>. But under the 48-team format <b>the best 8 of the 12 groups' third-placed teams advance to the round of 32</b>, so neither team is <b>"mathematically eliminated"</b> — ESPN is explicit: Senegal <b>"must win and repair their negative goal difference"</b> to have a third-place chance, while for Iraq <b>"even beating Senegal can hardly reverse the −6 goal difference; qualification is a distant hope"</b>.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Motivation drives the approach — <b>Senegal must take risks chasing more goals</b> (to secure the win and also build goal difference for a best-third-place place), which amplifies their attacking intensity but also opens counter-attacking space; <b>Iraq, without their key striker and with qualification all but hopeless</b>, are more likely to defend grimly and counter for pride. The motivation mismatch is the core variable for the handicap depth and totals in this match.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I" style="color:var(--accent)">Wikipedia — 2026 World Cup Group I (points / tie-break rules)</a> · <a href="https://www.skysports.com/football/news/12098/13543102/world-cup-2026-group-i-guide-fixtures-schedule-standings-and-odds-for-france-senegal-iraq-and-norway" style="color:var(--accent)">Sky Sports — Group I outlook</a> · <a href="https://www.espn.com/soccer/story/_/id/49031236/2026-world-cup-group-stage-clinching-scenarios-knockout-rounds-elimination" style="color:var(--accent)">ESPN — Qualification scenarios</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Match referee <span style="color:var(--mut);font-weight:400">· ESPN official preview · 06-25</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: England's <b>Anthony Taylor</b>; Toronto BMO Field</div>
+      <p style="font-size:13.5px">Per ESPN's official pre-match preview, the referee for this match is England's international-level whistle <b>Anthony Taylor</b>, vastly experienced in the Premier League and European competition, a UEFA Elite-level referee. BMO Field is Toronto's dedicated football stadium (open-air grass). <span style="color:var(--warn)">[Full officiating team and VAR pairing, plus Taylor's per-game cards/penalties breakdown for this and the last two major tournaments · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Senegal must commit forward to lay siege and Iraq retreat and counter, so box duels and tactical fouls will increase. Taylor is known in the Premier League for <b>allowing physical contact and being restrained on small offences</b>; this tournament's unified new rules lean stricter (only captains may communicate, the goalkeeper 8-second rule, semi-automated offside) — semi-automated offside will precisely catch the marginal offsides of Senegal's front line as they push up. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — Senegal vs Iraq official preview (referee Anthony Taylor)</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Confirmed Lineups & What They Mean (lineup-watch) ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; What They Mean <span style="font-size:12px;color:var(--mut);font-weight:500">· Officially confirmed (Football Italia official sheet + Yahoo/ESPN agree) · written T-45</span></h2>
+
+    <h4>🇸🇳 Senegal Confirmed XI (4-3-3) · Pape Thiaw · <b style="color:var(--good)">two bombshells: Koulibaly + Jackson both benched</b></h4>
+    <div class="lineup">Diaw; Diatta · Seck · Niakhaté · Jakobs; I. Gueye · Camara · Diarra; I. Mbaye · I. Sarr · Mané</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: <b style="color:var(--txt)">Kalidou Koulibaly</b> (regular captain — benched), <b style="color:var(--txt)">Nicolas Jackson</b> (first-choice striker — benched), Pape Gueye, Iliman Ndiaye, Pape Matar Sarr, Assane Diao. With Koulibaly out, the armband passes to a senior on-pitch player (Mané / I. Gueye — not separately listed as C on the official sheet). Diaw continues in goal for the injured Mendy.</div>
+
+    <h4>🇮🇶 Iraq Confirmed XI (4-1-4-1) · Graham Arnold · <b>sit deep and counter</b></h4>
+    <div class="lineup">Basil; Sulaka · Putros · Hashem · Doski; Al-Ammari; Qasem · Jasim · Iqbal · Bayesh; Al-Hamadi</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key bench weapons: Aymen Hussein (captain/striker · injury doubt — benched), Mohanad Ali, Zaid Tahseen, Hussein Ali. Ahmed Basil in goal; Al-Hamadi as the lone striker, Al-Ammari single pivot shielding a back four.</div>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">vs Predicted XI</h5>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht">Sen · CB/captain</td><td>Koulibaly starts</td><td><b style="color:var(--good)">benched</b> (Seck in)</td><td>The regular captain is dropped — a clear "accountability" signal after his costly error vs Norway; the back line gets younger</td></tr>
+      <tr><td class="ht">Sen · striker</td><td>Jackson as lone 9</td><td><b style="color:var(--good)">benched</b> (18yo I. Mbaye starts)</td><td>Breaking down a low block shifts from "target-man pivot" to Mané central + wide speed; less box presence for tap-ins</td></tr>
+      <tr><td class="sc">Sen · MID/LB</td><td>P. Gueye · M. Diouf</td><td>Diarra · Jakobs</td><td>More forward energy in midfield, change at left-back; a younger, more dynamic shape overall</td></tr>
+      <tr><td class="sc">Iraq · GK/back</td><td>J. Hassan · H. Ali · Tahseen · Ismael</td><td>Basil · Sulaka · Putros · Qasem</td><td>Goalkeeper and back/wide tweaks; Arnold's sit-and-counter framework unchanged</td></tr>
+    </table>
+
+    <h5 style="margin:16px 0 6px;font-size:13.5px;color:var(--txt)">Tactical read</h5>
+    <ul style="font-size:13.5px;line-height:1.7;margin:0;padding-left:18px">
+      <li><b>Formation signal</b>: Senegal still set up 4-3-3 to press, but benching both Koulibaly and Jackson is the headline — against an all-but-eliminated Iraq, Thiaw picks a younger, faster, higher-pressing shape (Mbaye starts, Mané drifts central).</li>
+      <li><b>How they break the block</b>: without Jackson's target-man presence, Senegal rely on Mané/Sarr/Mbaye's dribbling and speed to unpick the low block rather than central tap-ins — a <b>detail correction</b> to the original "target-man breaks the bus" idea.</li>
+      <li><b>Iraq</b>: Arnold keeps the sit-and-counter setup — Basil in goal, Al-Ammari single pivot, Al-Hamadi alone up top; with Aymen Hussein (injury doubt) and Mohanad Ali both benched, the counter outlet is weaker.</li>
+      <li><b>X-factor</b>: Koulibaly/Jackson wait on the bench — if Senegal can't break through, both coming on for a second-half push / set-piece presence is the obvious plan.</li>
+      <li><b style="color:var(--good)">Snapshot verdict · held</b>: the main read (Senegal must win big for the faint third-place tail; Iraq bus-and-counter) <b>holds</b>; only the means of breaking the block is revised from "target-man pivot" to "wide speed + Mané central".</li>
+    </ul>
+
+    <div class="note"><b>Market reaction (qualitative)</b>: opening Senegal <b>1.27</b> / draw <b>4.50</b> / Iraq <b>10.0</b> (decimal). Senegal still clearly favoured despite rotating its core, so the 1X2 direction is unchanged; but losing Jackson's target presence could mildly dampen the "Senegal big-win deep handicap / over" side. Factual statement only — not betting advice; exact movement per the live market.</div>
+
+    <div style="font-size:12px;margin-top:10px;color:var(--mut)">Sources: <a href="https://football-italia.net/world-cup-2026-norway-france-senegal-iraq/" style="color:var(--accent)">Football Italia — official lineups</a> · <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups" style="color:var(--accent)">ESPN — Senegal vs Iraq</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021493" style="color:var(--accent)">FIFA Match Centre</a></div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Win/draw/loss implied probability (de-vigged) · Group I picture · Totals market · Composite strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group I four-team points (before the final round)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Composite strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇸🇳 Senegal</th><th>🇮🇶 Iraq</th></tr>
+      <tr><td>First two rounds</td><td class="ht">1-3 France + 2-3 Norway (0 points, GD −3)</td><td class="sc">1-4 Norway + 0-3 France (0 points, GD −6)</td></tr>
+      <tr><td>Group I points (before final round)</td><td colspan="2">France 6 (GD +6), Norway 6 (GD +5) have locked the top two and qualified together; Senegal 0 (GD −3) third, Iraq 0 (GD −6) bottom</td></tr>
+      <tr><td>Qualification scenario</td><td class="ht">Must win big + hunt a best-third-place spot (extremely slim, not mathematically eliminated)</td><td class="sc">Even a win can hardly fill the −6 goal difference; all but hopeless</td></tr>
+      <tr><td>Head coach</td><td class="ht">Pape Thiaw (Senegalese)</td><td class="sc">Graham Arnold (Australian)</td></tr>
+      <tr><td>Key players</td><td class="ht">Mané, I. Sarr, Jackson, Koulibaly, P. Gueye (Mendy injured out)</td><td class="sc">Ali Al-Hamadi, Zidane Iqbal, Amir Al-Ammari, Ali Jasim (Aymen Hussein expected out)</td></tr>
+      <tr><td>Significant absences</td><td class="ht">Mendy (goalkeeper / knee injury, out this match)</td><td class="sc">Aymen Hussein (captain / top scorer · expected out), Mohanad Ali (expected out)</td></tr>
+      <tr><td>This match's watch points / questions</td><td class="ht">Can they produce a heavy win (just 2.25 total xG in their first two games — efficiency is the soft spot)</td><td class="sc">How much attack is left without their striker; defending grimly and countering for pride</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win ≈1.27 (implied ≈71%)</td><td class="sc">Win ≈10.00 (implied ≈9%) · Draw ≈4.50 (≈20%)</td></tr>
+      <tr><td>Handicap / totals</td><td colspan="2" class="sc">Senegal heavy handicap (around −1.5 / −2); totals line O/U mostly at 2.5 (Senegal must take risks chasing more goals vs Iraq expected to defend grimly)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from DECIMAL odds (≈71/20/9 after normalisation), converted from the American line (Senegal −375 / Draw +350 / Iraq +900). Odds sources: a composite of FanDuel/Racing Post/Sports Mole etc.; the handicap is a heavy Senegal handicap (around −1.5 / −2), totals line O/U 2.5. Senegal "must win big to chase goal difference" vs Iraq defending grimly without their striker is the core variable for the handicap depth and totals. Exact odds subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · Expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two majors / continental competition)</b> against <b>this World Cup's actual values (first two rounds)</b> item by item. Public national-team xG samples are limited; missing items are marked "TBC", never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actual values (team-by-team comparison)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (sourced sample)</th><th>This World Cup actual (first two rounds)</th><th>Gap & reading</th></tr>
+      <tr><td class="ht">🇸🇳 Senegal · Attack</td><td class="ht">2026 AFCON champions' pedigree; Mané/Sarr/Jackson top individual quality, group-stage qualification at the 2022 World Cup, relied on set pieces/counters vs Ecuador</td><td class="ht">2 games, 3 goals (1-3 France, 2-3 Norway; Mbaye, Sarr×2); <b>just ~2.25 combined xG over the two games</b> (ESPN)</td><td><b>Efficiency is the soft spot</b>: a top African front line yet low-quality chance creation — strong opposition is part of the reason, but against weaker opponents this match they must lift both xG and conversion <span style="color:var(--warn)">(per-game xG public sample limited · TBC)</span></td></tr>
+      <tr><td class="ht">🇸🇳 Senegal · Defence</td><td class="ht">Koulibaly-led, traditionally physically tough; but <b>never a World Cup clean sheet since 2002</b></td><td class="ht">2 games, 6 conceded (Mbappé and Haaland each scored a brace); goalkeeper Mendy injured out this match</td><td><b>Floor overestimated</b>: space in behind repeatedly exposed by pace, and the goalkeeper change adds uncertainty; against Iraq's sharply reduced attacking firepower, the defensive pressure eases relatively</td></tr>
+      <tr><td class="sc">🇮🇶 Iraq · Attack</td><td class="sc">Asian low-block counter type; Aymen Hussein (8 qualifying goals) the finisher, overall reliant on individual moments of inspiration</td><td class="sc">2 games, 1 goal (only Aymen Hussein scored, vs Norway); ~<b>1.43 xG</b> over two games, ~40% possession (ESPN)</td><td><b>All but extinguished with the key man out</b>: their only goalscorer Aymen Hussein is expected to miss, the attack relies more on Al-Hamadi's individual thrust, and the goal expectation dips further <span style="color:var(--warn)">(xG public sample limited · TBC)</span></td></tr>
+      <tr><td class="sc">🇮🇶 Iraq · Defence</td><td class="sc">Arnold's system stresses discipline and a collective retreat; reasonable resilience in Asia</td><td class="sc">2 games, 7 conceded (4 to Norway, 3 to France); cut open behind by pace</td><td><b>Exposed against top opposition</b>: but against Senegal (low efficiency) the defensive pressure is relatively bearable, and defending grimly to counter is their only realistic script</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Senegal have a top African front line yet are mired in "low xG / low conversion"; with the need to win big, whether their efficiency rebounds is the focus; Iraq's attack is all but extinguished without their only scorer, more likely to defend grimly for a draw / for pride. The deep data supports the "Senegal one-way siege, Iraq retreat and counter" main thread, but whether Senegal can produce a clean big scoreline is in doubt. Sources: ESPN (xG/possession) · FotMob/Sofascore (first two rounds) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection & Opta calibration + trap reminder</h4>
+    <table>
+      <tr><td>This match's model xG projection (order of magnitude)</td><td class="ht">Senegal ≈1.8–2.3</td><td class="sc">Iraq ≈0.5–0.9</td><td>Senegal clearly on top (quality + must push forward), but their historically low conversion may depress the actual goals; Iraq, short of a striker, see xG dip further — consistent with the odds "Senegal heavy handicap + leaning 2.5"</td></tr>
+      <tr><td>Opta Power Ranking / strength positioning</td><td colspan="2" class="ht">Senegal (FIFA ranking 19, AFCON champions) are markedly stronger than Iraq (FIFA ranking 58, first World Cup return since 1986); the odds implying ≈71% / 20% / 9% fit the strength gap</td><td>A clear "strong vs weak" matchup beyond systems; Senegal's individual quality (Mané/Sarr/Jackson) is the biggest deciding factor <span style="color:var(--warn)">[exact Opta Power figures for this match · TBC]</span></td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="ht">Public national-team data limited <span style="color:var(--warn)">(TBC)</span> — qualitative: Senegal will dominate possession and field tilt (siege), with low PPDA (high press to smother a weaker side); Iraq high PPDA (passive retreat), low xT (lacking a key finisher)</td><td><b>Trap reminder</b>: ① Senegal's chronically low efficiency + goalkeeper change mean a "heavy win" may not materialise, and the heavy handicap carries a non-cover risk; ② Iraq defend grimly without a striker, the match may go "Senegal control without breaking through" toward the under; ③ the motivation mismatch may instead suppress goals (Senegal play safe fearing a counter, Iraq park the bus) — the totals direction is not simply one-sided toward the over</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; excluding penalties, it better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = lots of long shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than mere possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/ESPN; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a "lopsided mismatch" — direction one-sided, attention low — Senegal heavy handicap, little suspense over the result; the information content is concentrated in the handicap depth, the totals and the "can Senegal win big" efficiency question</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · Direction one-sided but low attention, low information content, no frenzied money flow</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Experts are near-unanimous in backing Senegal to win (≈71% de-vigged), but these are two teams with no real qualification chance left, so market attention and traffic are low. The real disagreement is over <b>whether Senegal can win big enough to cover the heavy handicap</b> (their efficiency is chronically low) and the <b>totals direction</b> (Senegal hold possession but Iraq defend grimly, so the over is not assured).</div>
+    </div>
+
+    <h4>① Expert pick aggregation (unanimously backing Senegal; disagreement over margin and totals)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>ESPN (official preview)</td><td>Pre-match preview</td><td>Senegal "must not just win, but win big"; Iraq, without Aymen Hussein, "play for pride"</td></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Senegal 3-1, Sarr + Mané/Jackson on the scoresheet, Iraq grab a consolation in stoppage time</td></tr>
+      <tr><td>FanDuel Research</td><td>North American betting research</td><td>Senegal −375 heavy favourite; suggests watching Senegal handicap and goal-count markets</td></tr>
+      <tr><td>Racing Post</td><td>Established UK title</td><td>Leans toward a 6-1 Bet Builder (Senegal big-win script), backing Senegal to score through multiple players</td></tr>
+      <tr><td>Total Football Analysis</td><td>Data media</td><td>Senegal control and win; cautions that their conversion efficiency is a variable</td></tr>
+      <tr><td>Daily Sabah / Shafaq</td><td>Regional media</td><td>"A must-win for Senegal"; Iraq's qualification hopes "slim", playing mostly for pride</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: direction one-sided toward Senegal, but <b>attention and money volume are low</b> (neither team has a real qualification chance). Little suspense over the result; the real uncertainty is <b>whether Senegal can win big enough to cover the heavy handicap</b> (just 2.25 xG over their two games this tournament — low efficiency) and the <b>totals direction</b> (Iraq, short of a striker, defend grimly, possibly going under). This is not a high-heat fixture.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Senegal win / Draw / Iraq win</th><th>Read</th></tr>
+      <tr><td>Opening (pre-match / composite)</td><td>1X2</td><td class="ht">≈1.27 / 4.50 / 10.00</td><td>Senegal heavy favourite, Iraq a deep-priced longshot <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>As of 06-25</td><td>FanDuel/books composite</td><td class="ht">Senegal −375 (≈1.27) / Draw +350 (≈4.50) / Iraq +900 (≈10.00)</td><td>Books vary slightly, but overall price Senegal as a heavy favourite and Iraq ≈9%</td></tr>
+      <tr><td>06-25</td><td>Totals + handicap</td><td colspan="2" class="ht">Senegal heavy handicap (around −1.5 / −2); O/U mostly at 2.5; Senegal goal count / both teams to score (BTTS) are popular derivative markets</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Handicap positioning and movement trend (opening line → current line)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Handicap / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before / pre-season expectation)</td><td class="sc">Senegal were originally seen as a qualification favourite (AFCON champions, FIFA 19); Iraq the group's whipping boy</td><td>Pre-match priced as "African power vs World-Cup-returning Iraq", Senegal markedly favoured, Iraq deep-priced <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>Open (after the second round + goal-difference repricing)</td><td class="ht">Senegal tightened further into a heavy favourite (≈1.27); Iraq drifted out to ≈10.00</td><td><b>Repricing comes from the two rounds of results</b>: despite consecutive defeats, Senegal's quality and front line still overwhelm Iraq; Iraq conceded 7 in two games and are short of their key striker; the market prices Senegal as a heavy favourite and deepens the handicap (driven jointly by the need to win big and the strength gap)</td></tr>
+      <tr><td>Current line (06-25 → now)</td><td class="ht">Senegal −1.5/−2 heavy handicap; O/U 2.5; Iraq ≈10.00</td><td>Price discovery is concentrated on the <b>handicap depth</b> (whether Senegal win by 2 to cover −1.5/−2, or efficiency drags them to a narrow win) and the <b>totals</b> (Senegal lay siege but Iraq defend grimly + are short of a striker → the over is not assured); Aymen Hussein's absence lowers Iraq's goals and Mendy's absence slightly raises Senegal's conceding uncertainty — fine-tuning variables</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a "lopsided mismatch with direction one-sided and attention low" — the 1X2 has almost no suspense, and price discovery is concentrated on the <b>handicap depth</b> and the <b>totals</b>. The core variables are <b>Senegal's conversion efficiency</b> (just 2.25 xG over their two games this tournament — the heavy handicap carries a non-cover risk) and <b>how grimly Iraq defend without their striker</b>. The counter-intuitive point: Senegal's motivation to "win big and chase goal difference" may instead produce "control without breaking through" or reckless concessions, making the margin hard to call. Exact opening figures subject to each platform · TBC. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (Kalshi / Polymarket)</b>: exact single-match shares for each outcome not retrieved <span style="color:var(--warn)">[prediction-market exact shares · TBC]</span>; consistent with the de-vigged bookmaker prices, Senegal's win probability should be in the 70% range. Qualification market: both teams' advancement probabilities are extremely low (Senegal must win big + hunt a best-third-place spot, Iraq near zero).</li>
+      <li><b>Sentiment focus ①</b>: <b>Senegal's "fell at the final hurdle" narrative</b> — AFCON champions, boasting Mané/Sarr/Jackson, yet two straight group defeats and out of the top two early, the biggest traffic point; this match is seen as "saving face + a sliver of a third-place chance".</li>
+      <li><b>Sentiment focus ②</b>: <b>Iraq "play for pride"</b> — first World Cup return since 1986, short of key striker Aymen Hussein, with head coach Arnold himself admitting the team is "playing almost purely for pride".</li>
+      <li><b>Public money flow / social-media volume breakdown</b>: quantitative data not retrieved <span style="color:var(--warn)">[public betting % / social-media quantification · TBC]</span>; qualitative: casual money leans toward a Senegal big win and the handicap, with attention generally low.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is a "lopsided mismatch with direction one-sided and attention low", Market Heat Index <b>2/5</b>. The 1X2 has almost no suspense, and the core variables are <b>Senegal's conversion efficiency (can they cover the heavy handicap)</b> and <b>how grimly Iraq defend without their striker</b>. The counter-intuitive point: Senegal's motivation to "win big" may instead lead to reckless concessions or control without breaking through, making both the margin and the totals direction uncertain. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.fanduel.com/research/senegal-vs-iraq-prediction-picks-preview-lineups-and-best-bets-world-cup-2026-group-i">FanDuel — Odds / prediction</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/senegal-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-abzLt2O2GKan/">Racing Post — Odds / Bet Builder</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/preview/senegal-vs-iraq-prediction-team-news-lineups_599956.html">Sports Mole — Prediction</a> · <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — Official preview</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media report</b>: per ESPN's official pre-match preview, the referee for this match is England's <b>Anthony Taylor</b> (UEFA Elite level, vastly experienced in the Premier League and European competition); Toronto BMO Field (open-air dedicated football stadium). <span style="color:var(--warn)">[Full officiating team and VAR pairing · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Taylor is from England and has long officiated in the Premier League and European competition (including the Champions League/Europa League/national-team majors), one of the most experienced international whistles. This World Cup's officiating environment leans strict (only captains may communicate, the goalkeeper 8-second rule, semi-automated offside).</li>
+      <li><b>This / last two majors' actual sample</b>: Taylor's exact per-game cards/penalty breakdown for this and the last two World Cups has a limited public sample. <span style="color:var(--warn)">[major-tournament per-game yellow / penalty rate breakdown · no reliable major-tournament sample, no fabricated figures · TBC]</span>. Qualitative read: a Premier League system whistle has a degree of tolerance for physical contact, prioritising flow, but is decisive on clear box fouls.</li>
+      <li><b>Officiating history with the two teams</b>: no notable public officiating history with either Senegal or Iraq (<b>no sample, stated honestly</b>).</li>
+      <li><b>Two-sidedness</b>: Senegal must push forward to lay siege → more high pressing and box aerial duels; Iraq retreat and counter + tactical fouls to slow the tempo, a yellow-card watch point. Semi-automated offside will precisely catch Senegal's front line's marginal sprints as they push up. The cards/penalty market is best treated as a tendency, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-angle analysis</b>: this match is a heavy mismatch, so the referee's influence on the result is limited; the main value is in cards/penalties: Iraq's defensive tactical fouls and Senegal's box duels in their siege are the yellow-card/penalty watch points. Given Taylor's limited per-game major-tournament breakdown, related markets should be treated as a tendency, not an actionable basis.</div>
+  </section>
+
+  <!-- Starting XIs and key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">predicted version · official version in the ✅ module above</span></h2>
+    <div class="sub">Predicted XI (ESPN / Sports Mole projection, not official; official line-up subject to the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇸🇳 Senegal predicted XI (4-3-3) · Pape Thiaw · Mendy injured out</h4>
+    <div class="lineup">Diaw; Diatta · Koulibaly · Niakhaté · M. Diouf; P. Gueye · I. Gueye · Camara; I. Sarr · Jackson · Mané</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Ismaïla Sarr</td><td>Winger / Crystal Palace</td><td>Brace against Norway (53', 90+3'); Senegal's most consistent output at this tournament, key to breaking down Iraq's low block</td></tr>
+      <tr><td class="ht">Sadio Mané</td><td>Winger / forward</td><td>Talisman-level individual quality; still needs to find a higher gear in open play this tournament, the core threat-magnifier against weaker sides</td></tr>
+      <tr><td class="ht">Nicolas Jackson</td><td>Centre-forward / Chelsea</td><td>Assisted against Norway; a pivot + running finisher, needs to raise his conversion to deliver a heavy win</td></tr>
+      <tr><td class="ht">Mory Diaw</td><td>Goalkeeper (deputising for Mendy)</td><td>Steps in after Mendy's knee injury; his distribution and shot-stopping reliability is Senegal's hidden variable for a "clean big win"</td></tr>
+    </table>
+    <h4>🇮🇶 Iraq predicted XI (4-5-1) · Graham Arnold · Aymen Hussein expected out</h4>
+    <div class="lineup">J. Hassan; H. Ali · Z. Tahseen · A. Hashim · M. Doski; I. Bayesh · Z. Ismael · Z. Iqbal · A. Al-Ammari · A. Jasim; Al-Hamadi</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Ali Al-Hamadi</td><td>Centre-forward / English league</td><td>Lone striker with Aymen Hussein out; one of Iraq's few box finishers</td></tr>
+      <tr><td class="sc">Zidane Iqbal</td><td>Midfielder / Europe-based</td><td>Manchester United academy product, a technical organiser; Iraq's link in transition from defence to attack</td></tr>
+      <tr><td class="sc">Amir Al-Ammari</td><td>Midfielder / Sweden-based</td><td>Midfield coverage and long shots; a key piece of the defensive system</td></tr>
+      <tr><td class="sc">Ali Jasim</td><td>Wide player / Italy-based</td><td>Wide pace and counter spark; one of the few Iraqi players who can threaten in behind Senegal</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media analytical projections (ESPN / Sports Mole), <b>subject to the official pre-match line-up · TBC</b>. Senegal's focus is <b>Mendy injured out, Diaw deputising</b>, and whether Thiaw uses 18-year-old prospect <b>Ibrahim Mbaye</b> to add thrust; Iraq's focus is the personnel setup after <b>Aymen Hussein expected out</b> (along with Mohanad Ali), with Al-Hamadi as lone striker and Arnold retreating to counter. <span style="color:var(--warn)">[both sides' exact goalkeeper / front-line starters · TBC]</span></div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual approaches and results at their last two majors (World Cup + continental competition / AFCON / Asian Cup·qualifying)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇸🇳 Senegal · Pape Thiaw</div>
+        <div class="role">4-3-3 · individual-quality driven + wide spark + set pieces, must lay siege this match</div>
+        <ul class="cl">
+          <li>Senegal's trademark is <b>physicality + wide individual quality (Mané/Sarr) + a centre-forward pivot (Jackson) + set pieces</b>. <b>AFCON champions in early 2026</b>, group-stage qualification at the 2022 World Cup (via the penalty/set piece vs Ecuador), a traditional African power. Yet this tournament they have two straight defeats and a sluggish attacking efficiency (just ~2.25 xG over the two games).</li>
+          <li>Cross-reference: the 2022 World Cup group stage, the 2026 AFCON title — <b>Senegal are good at solving problems with wide thrusts + set pieces when opponents retreat</b>, but their open-play chance quality fluctuates greatly. This match against an Iraq side certain to defend grimly tests their patience and efficiency in "breaking down a compact block".</li>
+          <li>This match's entry point: they must take the initiative in possession and lay siege, prising open Iraq's low block with Sarr/Mané in wide 1-v-1s + set pieces; needing both the win and goal difference (to hunt a best-third-place place) may lead to <b>over-committing forward and being caught on the counter</b> — back-line stability with Mendy out is a vulnerability.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇮🇶 Iraq · Graham Arnold</div>
+        <div class="role">4-5-1 / low-block retreat + counter · more pragmatic without their key striker</div>
+        <ul class="cl">
+          <li>Arnold (long-time Australia head coach) is known for <b>discipline, a collective retreat and counter-attacks</b>. Iraq, on their first World Cup return since 1986, conceded 7 in two games this tournament and were repeatedly cut open behind by pace, but still kept ~40% possession with a degree of organisation (~1.43 xG).</li>
+          <li>Cross-reference: Asian qualifying and this tournament's two games — <b>against strong teams Iraq look for a sliver of hope via a low block + counters/set pieces</b>, with the attack heavily reliant on Aymen Hussein's finishing (he scored Iraq's only goal this tournament). Without him the attack is all but extinguished.</li>
+          <li>This match's approach: most likely to <b>sit in a low block and compress Senegal's space in depth</b>, playing limited counters via Ali Jasim's wide pace + Al-Hamadi's pivot; with qualification all but hopeless, <b>playing for pride and to avoid a heavy defeat</b> is their realistic goal — which directly clashes with Senegal's "must win big" motivation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN (official preview)<small>· pre-match</small></div>Senegal "must not just win, but win big" to keep a sliver of a third-place chance; but their two games produced just ~2.25 xG, so <b>efficiency is the biggest question mark</b>. Iraq, without Aymen Hussein and with qualification a "distant hope", look more like they are "playing for pride".</div>
+    <div class="insight"><div class="who">Sports Mole / Racing Post <small>· prediction media</small></div>Multiple outlets give Senegal the win (Sports Mole 3-1, Racing Post leaning toward a 6-1 Bet Builder big-win script), the core logic being individual-quality dominance + Iraq short of a striker; Sarr/Mané/Jackson scoring across the board is the main thread.</div>
+    <div class="insight"><div class="who">Daily Sabah / Shafaq <small>· regional media</small></div>Seen as "a must-win for Senegal"; Iraq's qualification hopes "slim", with Arnold admitting the team plays mostly for pride. They stress that under the motivation mismatch, Senegal must take risks and Iraq defend grimly.</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· ESPN / FanDuel</small></div>Direction one-sided toward Senegal. ⚠ Trap reminders: ① Senegal's chronically low efficiency + goalkeeper change mean a "heavy win" may not materialise, and the heavy handicap carries a non-cover risk; ② Iraq defend grimly without a striker, the match may go "Senegal control without breaking through" toward the under; ③ Senegal's motivation to "win big and chase goal difference" may instead lead to reckless concessions; ④ both teams are in a low-attention fixture with no real qualification chance.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; To Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: a Senegal win is the base-case script (most likely 2-0 / 3-1 level). Quality, individual ability (Mané/Sarr/Jackson) and form are comprehensively on top; Iraq are short of their key striker, qualification all but hopeless, and expected to defend grimly and counter. But Senegal's attacking efficiency has been sluggish this tournament (2.25 xG over two games) + goalkeeper Mendy out, so a "heavy win" may not materialise, with a risk of "control without breaking through" or reckless concessions.</li>
+      <li><b>Key men</b>: I. Sarr (Sen / wide spark and finishing), Mané (Sen / individual quality), Jackson (Sen / pivot), Diaw (Sen / goalkeeper); Al-Hamadi (Irq / lone striker), Z. Iqbal (Irq / link play), Ali Jasim (Irq / counter pace). <b>Senegal's Mendy injured out, Iraq's Aymen Hussein expected out</b>.</li>
+      <li><b>Deciding factors</b>: ① can Senegal cure their low-xG "efficiency illness" and produce a clean big scoreline; ② can Iraq, short of a striker, hold the score down with a low block and defend grimly for pride; ③ will Senegal's "must win big to chase goal difference" motivation lead them to over-commit and be ambushed by Iraq on the counter.</li>
+      <li><b>Market view</b>: a lopsided mismatch with direction one-sided and attention low (≈71/20/9), Market Heat Index 2/5; the 1X2 has almost no suspense, with price discovery in the handicap depth and the totals. The core variables are Senegal's conversion efficiency and how grimly Iraq defend. The counter-intuitive point: Senegal's "must win big" motivation may instead produce reckless concessions or control without breaking through.</li>
+    </ul>
+    <div class="flag">⚠ <b>To verify</b>: ① both sides' official line-ups (FIFA Match Centre ~1 hour before kickoff), especially whether Senegal's goalkeeper Diaw is confirmed and whether Mbaye is used; whether Iraq's Aymen Hussein/Mohanad Ali absences are confirmed; ② Anthony Taylor's full officiating team and VAR pairing, plus his per-game cards/penalty breakdown for this and the last two majors (state honestly if there is no reliable major-tournament sample); ③ the exact goal-difference and tie-break rules for qualification / best third place (points → goal difference → goals scored → head-to-head → fair-play points → draw), the specific goal-difference threshold Senegal must reach with a heavy win, and Iraq's near-zero chance (subject to FIFA's official determination); ④ the handicap line (Senegal −1.5/−2) and the totals line (O/U 2.5), with exact opening figures subject to the live pre-match market; ⑤ prediction markets' (Kalshi/Polymarket) exact single-match shares, public betting % / social-media quantification not retrieved; ⑥ both sides' per-game xG / PPDA / xT / field tilt and other granular public samples are limited.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups">ESPN — Senegal vs Iraq official preview (referee/XI/injuries/xG)</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/team-news/senegal-vs-iraq-injury-suspension-lists-predicted-xis_599962.html">Sports Mole — Injury/suspension lists / predicted XIs</a> · <a href="https://www.sportsmole.co.uk/football/senegal/world-cup-2026/preview/senegal-vs-iraq-prediction-team-news-lineups_599956.html">Sports Mole — Prediction</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_I">Wikipedia — 2026 World Cup Group I (points / tie-break rules / head-to-head history)</a> · <a href="https://www.skysports.com/football/news/12098/13543102/world-cup-2026-group-i-guide-fixtures-schedule-standings-and-odds-for-france-senegal-iraq-and-norway">Sky Sports — Group I outlook / points / odds</a> · <a href="https://www.espn.com/soccer/story/_/id/49031236/2026-world-cup-group-stage-clinching-scenarios-knockout-rounds-elimination">ESPN — Qualification scenarios</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/23/haaland-scores-two-as-norway-beat-senegal-3-2-enter-world-cup-knockouts">Al Jazeera — Norway 3-2 Senegal (Sarr brace)</a> · <a href="https://www.aljazeera.com/sports/2026/6/16/mbappe-brace-fires-france-to-3-1-win-over-senegal-in-world-cup-2026-opener">Al Jazeera — France 3-1 Senegal (Mbaye goal)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021493">FIFA official — Senegal v Iraq Match Centre</a><br>
+      • <a href="https://www.fanduel.com/research/senegal-vs-iraq-prediction-picks-preview-lineups-and-best-bets-world-cup-2026-group-i">FanDuel — Odds / prediction</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/senegal-vs-iraq-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-abzLt2O2GKan/">Racing Post — Odds / Bet Builder</a> · <a href="https://www.dailysabah.com/sports/football/senegal-face-must-win-test-against-iraq-to-keep-world-cup-bid-alive">Daily Sabah — A must-win for Senegal</a> · <a href="https://shafaq.com/en/sport/World-Cup-2026-June-26-preview-Iraq-s-hopes-hang-on-Senegal">Shafaq — Iraq preview</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-25 · Charts use verified data; radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Senegal win','Draw','Iraq win'],datasets:[{data:[71,20,9],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:85,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[50,50],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, near 50/50)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['France','Norway','Senegal','Iraq'],datasets:[{data:[6,6,0,0],backgroundColor:['#f0a04b','#9aa6c0',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:8,title:{display:true,text:'Points (before final round)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide / individual','Major-tournament experience','This-tournament form'],
+  datasets:[
+   {label:'Senegal',data:[5.5,6.5,6,8,7,4.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Iraq',data:[5,3.5,5,4.5,4,3.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

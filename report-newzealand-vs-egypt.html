@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 新西兰 vs 埃及 · 2026世界杯 G组次轮</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-newzealand-vs-egypt.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-newzealand-vs-egypt.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-newzealand-vs-egypt.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-newzealand-vs-egypt.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-newzealand-vs-egypt.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#1d3a63;--sc:#c8102e;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#7a1f2b);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0f1c30,#241318);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#7fa6e6;font-weight:600}td.sc{color:#ec6f7c;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-newzealand-vs-egypt.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-newzealand-vs-egypt.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-newzealand-vs-egypt.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-3 · 🔮 赛前前瞻 · 2026 世界杯 · G组次轮 · 两支首轮战平队的"准生死战"——胜者基本锁定出线</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d633a,#1d3a63)">✅ 已多源复核（06-21）· 萨拉赫确认首发、两队无新增伤停</span>
+  <h1>新西兰 vs 埃及</h1>
+  <div class="meta">2026年6月21日 21:00 ET（温哥华当地 18:00 PT）· 温哥华 BC Place（室内）· G组（同组：比利时、伊朗）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇳🇿 新西兰</div><div class="rk">FIFA #85（赛会最低）· 首轮 2-2 平伊朗 · Wood+Just 直接打法 · 近 12 场零封挂零</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇪🇬 埃及</div><div class="rk">FIFA #29 · 首轮 1-1 平比利时 · 萨拉赫领衔 · 近 6 场仅丢 2 球</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 新西兰 1-3 埃及 · 数据来源 Opta / ESPN / Sky Sports · 下方赛前内容完整保留作预测存档</div>
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">新西兰开局反客为主：第 <b>15 分钟</b>后卫 <b>Finn Surman</b> 头球攻入——接 Tim Payne 角球的定位球破门，正是赛前点名的新西兰唯一稳定出口（Wood 高空 + 定位球），新西兰半场 <b>1-0</b> 领先。但埃及随后凭控场与个人能力完成 <b>3 球逆转</b>：下半场第 <b>58 分钟</b> Mostafa <b>Zico</b> 扳平，第 <b>67 分钟</b>队长 <b>萨拉赫</b>反超（34 岁，成为埃及世界杯史上最年长进球者、并送出助攻），第 <b>82 分钟</b> <b>Trezeguet</b> 替补登场后锁定胜局，终场 <b>新西兰 1-3 埃及</b>——埃及队史首胜世界杯。萨拉赫、Zico 均完成"进球 + 助攻"（埃及世界杯首例）。<span style="color:var(--warn)">[本场红黄牌精确张数与换人完整名单公开样本有限 · 待核]</span></p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 15' Surman（头球·Payne 角球助攻，🇳🇿）→ 58' Zico（🇪🇬）→ 67' 萨拉赫（🇪🇬）→ 82' Trezeguet（🇪🇬）｜半场 1-0｜终场 1-3</div>
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇳🇿 新西兰</th><th style="padding:6px">🇪🇬 埃及</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">44%</td><td style="text-align:center"><b>56%</b></td><td style="padding:6px;color:var(--mut)">埃及如赛前预期掌控场面，但优势不算悬殊</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">1.47</td><td style="text-align:center"><b>1.96</b></td><td style="padding:6px;color:var(--mut)">埃及机会质量更高；新西兰 xG 不低但多来自定位球</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">12 / 5</td><td style="text-align:center"><b>19 / 7</b></td><td style="padding:6px;color:var(--mut)">埃及射门量与射正双双领先，终结效率兑现</td></tr>
+      <tr><td style="padding:6px">角球 / 犯规</td><td style="text-align:center">待核</td><td style="text-align:center">待核</td><td style="padding:6px;color:var(--mut)">公开样本有限；新西兰进球即来自角球定位球</td></tr>
+    </table></div>
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 定位球先声夺人，印证赛前"唯一出口"判断</div>新西兰第 15 分钟正是靠 Payne 角球、Surman 头球破门，与赛前"新西兰运动战乏力、进攻几乎只剩 Wood 高空 + 定位球"的画像完全吻合。<b>这说明…</b>：对阵控场型对手，新西兰的得分概率高度集中在定位球，下一场对比利时仍将是其最现实的得分手段。</div>
+    <div class="insight"><div class="who">② 埃及"防反 + 个人能力"逆转，主线兑现</div>埃及让出开局后由控球（56%）、射门（19 次）逐步压制，靠 Zico、萨拉赫、Trezeguet 三名不同球员破门完成逆转，1.96 的 xG 高于新西兰。<b>这说明…</b>：埃及的进攻并非只有萨拉赫单点——本场进球点分散，反而比赛前"过度依赖萨拉赫"的担忧更健康。</div>
+    <div class="insight"><div class="who">③ 新西兰"领先后守不住"再度上演</div>这是连续第二场领先后被逆转/追平的剧本（首轮两度领先伊朗被追平，本场领先后被连入三球）。<b>这说明…</b>：新西兰的比赛管理与防守转换仍是结构性命门，赛前点名的"领先后守不住"被精准验证，末轮对比利时若再取得领先，能否守住是其出线关键。</div>
+    <div class="insight"><div class="who">④ 萨拉赫核心地位用数据坐实</div>萨拉赫本场全场最多射门（5 次）、最多禁区内触球（13 次）、最多创造机会（5 次），并贡献 1 球 1 助。<b>这说明…</b>：赛前"限制住萨拉赫≈限制住埃及"成立但不够——新西兰未能冻结他，他直接决定了比赛走向，对手需在禁区前沿对其重点保护。</div>
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>埃及胜（市场 ≈59%）</b>：完全兑现，埃及 3-1 取胜并登顶 G 组。</li>
+      <li>✓ <b>埃及让球 -1（Racing Post 最佳推荐）</b>：兑现，埃及净胜 2 球，-1 盘轻松打过。</li>
+      <li>✓ <b>大球 2.5 + 双方进球 BTTS（Squawka/Yahoo 方向）</b>：兑现，全场 4 球、两队均破门；Racing Post"埃及零封/小球"方向落空。</li>
+      <li>△ <b>新西兰失球概率偏高（连续 12 场未零封）</b>：兑现失球（丢 3 球），但赛前低估了其先进球能力——新西兰先拔头筹后才被逆转。</li>
+      <li>✓ <b>"新西兰领先后守不住"为命门</b>：精准兑现——1-0 领先后被连入 3 球。</li>
+    </ul>
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇳🇿 新西兰 → vs 比利时（6 月 26 日 · 温哥华 BC Place）</div>已两战不胜（1 平 1 负）、出线告急，末轮需击败 G 组头号种子比利时才有机会；定位球仍是其最现实武器（本场进球即来自此），但必须先解决"领先后守不住"的老问题，否则面对比利时进攻火力凶多吉少。</div>
+      <div class="insight" style="margin:0"><div class="who">🇪🇬 埃及 → vs 伊朗（6 月 26 日 · 西雅图 Lumen Field）</div>豪取队史世界杯首胜并登顶 G 组，末轮对伊朗只需不败大概率即可锁定出线；本场进球点分散（3 人破门）说明不止靠萨拉赫，防守若延续纪律（运动战仍较扎实）出线形势乐观，可视情轮换保护萨拉赫体能。</div>
+    </div>
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：<a href="https://theanalyst.com/articles/new-zealand-vs-egypt-stats-world-cup-2026-live" style="color:var(--accent)">Opta Analyst — NZ 1-3 埃及数据</a> · <a href="https://www.skysports.com/football/new-zealand-vs-egypt/549803" style="color:var(--accent)">Sky Sports — 战报</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-zealand-egypt-match-report-highlights" style="color:var(--accent)">FIFA — 战报/集锦</a>。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <!-- 速览 -->
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">G 组首轮四队全部 1 分同分，本场因此变成<b>一场"准生死战"</b>：盘口与媒体口径高度一致——<b>谁赢谁就基本锁定出线，谁输谁就被逼到末轮必胜</b>。盘口明确倾向埃及：埃及胜赔 <b>1.60</b>（6-10，去水隐含 ≈59%）、平局 <b>4.00</b>（3-1，≈24%）、新西兰胜 <b>5.50</b>（9-2，≈17%）；Kalshi 预测市场给埃及 <b>61%</b>、平 24%、新西兰 17%——两池完全收敛。埃及的依仗是<b>萨拉赫 + Marmoush 的攻击线与扎实防守</b>：预选萨拉赫独揽 60% 进球参与（9 球 3 助），且埃及近 6 场只丢 2 球、近 13 场仅负 2 场（负巴西、塞内加尔）。新西兰则是<b>赛会排名最低（#85）、近 12 场 9 负、连续 12 场未零封</b>，进攻几乎只剩 Wood 支点 + Just 边路冲击与定位球。基准剧本：<b>埃及凭防反与个人能力小胜（1-0 / 2-0 / 2-1）</b>；新西兰若想偷分，得靠 Wood 的高空与定位球、外加埃及终结掉链子。市场过热指数 ≈ 3/5——萨拉赫叙事带来话题流量，但盘口未到极端，真实分歧在让球幅度（埃及 -1）与大小球方向。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">埃及隐含胜率(去水)</div><div class="v" style="color:#ec6f7c">≈59%</div></div>
+      <div class="key"><div class="k">新西兰隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈17%</div></div>
+      <div class="key"><div class="k">新西兰未零封场次</div><div class="v" style="color:var(--warn)">12 场</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>萨拉赫 + Marmoush vs 新西兰漏风防线</b>：埃及双星对位一条 12 场未零封、首轮被伊朗两度反击打穿的后防——这是本场最核心、也最利埃及的对位。</li>
+      <li><b>新西兰"领先后守不住"的上一场带入</b>：首轮两度领先伊朗却被两度追平（防守转换漏防），对手换成有萨拉赫獠牙的埃及，比赛管理是其偷分的最大命门。</li>
+      <li><b>埃及上一场带入：防反成立、终结靠萨拉赫</b>：首轮与比利时 xG 1.07、射门 14 次不落下风，靠萨拉赫做球 Ashour 破门；限制住萨拉赫≈限制住埃及。</li>
+      <li><b>当值主裁 Omar Al Ali（阿联酋）</b>：AFC 资深主裁、本届 52 人裁判组之一；其个人世界杯单场出牌/判点公开样本有限（待核），裁判面以"倾向性"看待。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（含两队上一场带入项）</div>
+
+    <div style="border-left:3px solid var(--good);background:#0e2218;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#86efac;font-weight:700">✅ 关键球员状态·多源复核（06-21）<span style="color:var(--mut);font-weight:400">· ESPN / SI / Goal / Sports Mole / Voice of Emirates</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">萨拉赫（Salah）<b>确认首发</b>（边路常规位置）；埃及沿用平比利时的同一 XI、<b>两队均无新增伤停</b></div>
+      <p style="font-size:13.5px">多源一致：埃及无伤病/停赛新增，主帅 Hossam Hassan 料沿用首轮逼平比利时的阵容，<b>Salah 确认首发</b>（其个人距埃及国家队进球纪录仅差 2 球，动力十足）；Marmoush 继续居锋线。新西兰<b>全队健康、无伤停</b>，Chris Wood 领衔，沿用首轮逼平伊朗的班底。<span style="color:var(--warn)">[官方 XI 以赛前 FIFA 名单为准；若 Salah 体能管理改为部分时段出战，Hamza Abdelkarim 是替补预案]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：本场赛前主线高度围绕 Salah 的反击终结与纪录追逐——<b>主动多源核验确认其首发、且两队无突发伤停，意味着赛前研判（埃及反击 vs 新西兰防转换漏洞）无需修正</b>。这条"无变动"本身也是信息：盘口（埃胜 1.60、让球、大小球）维持赛前判断，没有因伤停而重新定价的隐藏变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49115519/new-zealand-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 队况/预测首发</a> · <a href="https://www.si.com/soccer/new-zealand-vs-egypt-world-cup-preview-predictions-lineups-6-21-26" style="color:var(--accent)">SI — 阵容/无伤停</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/salah-record-chase-marmoush-or-trezeguet-predicted-egypt-xi-vs-new-zealand_599608.html" style="color:var(--accent)">Sports Mole — Salah 首发/埃及 XI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">新西兰 · 上一场带入 · 防守转换漏洞 <span style="color:var(--mut);font-weight:400">· 伊朗战复盘迁移 · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">新西兰首轮 2-2 平伊朗，<b>两度领先被两度追平</b>——后防对快速反击的保护不足</div>
+      <p style="font-size:13.5px">承接伊朗战复盘的前瞻迁移：新西兰靠 Wood 两度做球助攻 Just 在第 7、54 分钟两度领先，却均被伊朗在防守转换中追平（32' Rezaeian、64' Mohebbi）。<b>"领先后的比赛管理 + 后防对快速反击的保护"</b>被点名为本场出线关键。更宏观地看，新西兰<b>近 12 场 9 负、连续 12 场未零封、近 6 次失利中 5 场零射建功</b>，是赛会排名最低（#85）的球队。本场对手埃及恰恰拥有萨拉赫 + Marmoush 的反击獠牙——上一场的漏洞若不修补，会被精准利用。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：新西兰首轮证明"Wood 支点 + Just 直接打法"能进球，但两度领先都没守住。埃及不像伊朗那样在防守转换中犹豫——萨拉赫的内切直塞与 Marmoush 的纵深冲击是顶级水准。新西兰若再像首轮那样在由攻转守瞬间盯人脱节，丢球概率显著高于伊朗一战，这是埃及让球盘（-1）被视为较锐角度的核心依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/iran-vs-new-zealand-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 伊朗 vs 新西兰</a> · <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/16/iran-play-out-entertaining-world-cup-draw-with-new-zealand-as-elijah-just-lights-up-la/" style="color:var(--accent)">The National — 伊朗 2-2 新西兰战报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">埃及 · 上一场带入 · 防反成立、终结靠萨拉赫 <span style="color:var(--mut);font-weight:400">· 比利时战复盘迁移 · 2026-06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">埃及首轮 1-1 平比利时（被乌龙扳平），<b>萨拉赫做球 Ashour 破门</b>；xG 1.07、14 射不落下风</div>
+      <p style="font-size:13.5px">承接比利时战复盘的前瞻迁移：埃及不是摆大巴硬扛，而是中场紧凑、由萨拉赫领衔快速反击——首球即来自此（19' 萨拉赫 34 岁生日做球、Ashour 捅射）。全场射门 14-15、xG 1.07-1.32、绝佳机会 2-2，与豪门旗鼓相当，只是被 Hany 乌龙扳平。前瞻迁移明确指出：<b>新西兰首轮被伊朗灌入 2 球、防线偏软，萨拉赫领衔的反击对位非常有利，这是埃及小组出线最现实的一场胜机</b>。命门同样清楚——埃及进攻高度依赖萨拉赫的串联与终结参与，<b>限制住他≈限制住埃及</b>。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：埃及的防反体系在面对压上的对手时最危险，而新西兰恰恰需要主动进攻（出线压力大、必须求胜）。这正中埃及下怀——新西兰一旦压出，萨拉赫/Marmoush 的反击空间放大。埃及首轮证明能与比利时掰手腕，面对档次更低的新西兰，胜率自然更高，这是市场把埃及定在 ≈59% 的根本逻辑。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/belgium-vs-egypt-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 比利时 vs 埃及</a> · <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/15/mohamed-salahs-egypt-denied-first-world-cup-win-after-own-goal-earns-belgium-a-point/" style="color:var(--accent)">The National — 比利时 1-1 埃及战报</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">新西兰 · 阵容信号 <span style="color:var(--mut);font-weight:400">· Racing Post / ESPN · 06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中场 Matt Garbett 因伤<b>整届报销</b>，奥克兰边锋 Logan Rogerson 顶替入队；Wood/Just 延续直接打法</div>
+      <p style="font-size:13.5px">据 Racing Post，新西兰中场 Matt Garbett 已确认本届世界杯报销，奥克兰城边锋 Logan Rogerson 被征召顶替。Bazeley 预计沿用首轮的 4-2-3-1：Crocombe；Payne · Surman · Boxall · Cacace；Bell · Stamenic；McCowatt · S. Singh · E. Just；Wood——延续"Wood 单箭头支点 + Just 左路冲击 + 定位球"的直接打法。ESPN 同样给出近似首发。<span style="color:var(--warn)">（预测首发，以赛前 FIFA 官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Garbett 报销使新西兰中场创造力进一步收窄，进攻更依赖 Wood 的高空策应与 Just 的个人突破，以及定位球。面对埃及紧凑中场，新西兰运动战打开难度更大——这强化了"埃及控场、新西兰被动反击"的基准画像，也支撑新西兰失球概率偏高的判断。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/new-zealand-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-abyHq6P5efqn/" style="color:var(--accent)">Racing Post — 队况/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49115519/new-zealand-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">埃及 · 核心与历史纪录 <span style="color:var(--mut);font-weight:400">· Opta / Racing Post / Sports Mole · 06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">埃及无新增伤情；<b>萨拉赫 67 球冲国家队历史射手王（差 3 球追平主帅 Hassan 的 69 球）</b></div>
+      <p style="font-size:13.5px">据 Opta 与多源，埃及无新增伤停。萨拉赫已为国家队打入 67 球，距离追平现任主帅 Hossam Hassan 的 69 球纪录仅差 3 球——他在预选赛打进 9 球、贡献 3 助，进球参与占全队 60%，是球队进攻发动机。Marmoush 首轮对比利时射门 5 次、是第二攻击点（Racing Post 列其"任意时间进球" 7-4 为推荐）。预测首发（ESPN/Racing Post 口径，4-2-3-1）：Shobeir；Hany · Ibrahim · Fathy · Fatouh；Attia · Lasheen；Zico · Salah · Ashour；Marmoush——延续首轮的双后腰防反结构，萨拉赫居中/右、Marmoush 单箭头。<span style="color:var(--warn)">（各源在萨拉赫居中还是踢右、Trezeguet 是否首发上略有分歧；以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：萨拉赫面对赛会最弱防线、又有刷新国家队射手王纪录的个人驱动，"任意时间进球"叙事价值极高（散户主战场）。Marmoush 的纵深冲击是第二威胁点，对位新西兰首轮已暴露的转换防守漏洞。两个攻击点同时在线，是埃及让球盘（-1）与萨拉赫/Marmoush 进球 props 的核心支撑。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://theanalyst.com/articles/world-cup-2026-group-g-predictions-preview" style="color:var(--accent)">Opta Analyst — G组前瞻/萨拉赫数据</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/salah-record-chase-marmoush-or-trezeguet-predicted-egypt-xi-vs-new-zealand_599608.html" style="color:var(--accent)">Sports Mole — 埃及预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判已官宣 <span style="color:var(--mut);font-weight:400">· FIFA / The National · 06-19</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁敲定：阿联酋名哨 <b>Omar Al Ali（奥马尔·阿里）</b>执法，助理为同胞 Mohammed Al Hammadi</div>
+      <p style="font-size:13.5px">据 FIFA / The National，本场由阿联酋籍主裁 <b>Omar Al Ali</b> 执法，助理裁判为同胞 Mohammed Al Hammadi；他是本届 52 人裁判组中代表阿联酋的 AFC 资深主裁，2014 年起执法阿联酋职业联赛。比赛在温哥华 BC Place 室内场进行，无天气变量。<span style="color:var(--warn)">[其本人世界杯/洲际大赛单场出牌、判点的公开量化样本有限 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在一场实力分层明确、对抗烈度未必很高的比赛里，裁判对结果影响通常较小。但若新西兰在禁区前沿对萨拉赫/Marmoush 拉扯犯规，点球/黄牌尺度会随裁判风格而异。鉴于 Al Ali 本人的世界杯单场牌数样本公开有限，本场裁判面宜以"倾向性"而非"精确均值"看待。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/19/uaes-omar-al-ali-to-officiate-new-zealand-v-egypt-match-at-world-cup-2026/" style="color:var(--accent)">The National — Al Ali 执法任命</a> · <a href="https://www.espn.com/soccer/story/_/id/49115519/new-zealand-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 裁判/赛程</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水）· G组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>G 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇳🇿 新西兰</th><th>🇪🇬 埃及</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#85（赛会最低）</td><td class="sc">#29</td></tr>
+      <tr><td>首轮结果</td><td class="ht">2-2 平伊朗（两度领先被追平）</td><td class="sc">1-1 平比利时（被乌龙扳平）</td></tr>
+      <tr><td>出线形势</td><td class="ht">1 分；胜则基本出线，负则末轮必胜</td><td class="sc">1 分；胜则基本出线，负则末轮必胜</td></tr>
+      <tr><td>近期防守</td><td class="ht"><b>连续 12 场未零封</b>；近 12 场 9 负</td><td class="sc"><b>近 6 场仅丢 2 球</b>；近 13 场仅负 2</td></tr>
+      <tr><td>主教练</td><td class="ht">Darren Bazeley（英格兰籍）</td><td class="sc">Hossam Hassan（埃及传奇前锋）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Chris Wood（C）· Elijah Just · Marko Stamenic</td><td class="sc">Mohamed Salah（C）· Omar Marmoush · Emam Ashour</td></tr>
+      <tr><td>上两届大赛</td><td class="ht">2010 世界杯小组赛 3 平不败出局 · 时隔 16 年重返</td><td class="sc">非洲杯 2023 亚军（点球负科特迪瓦）· 非洲杯 2021 亚军</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 5.50（隐含≈17%）</td><td class="sc">胜 1.60（≈59%）· 平 4.00（≈24%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">市场分歧真实：Racing Post 偏小球/埃及零封；Squawka/Yahoo 偏大球+双方进球（埃及须压上、新西兰可反击）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">据 Racing Post，三次交手埃及 2 胜 1 平（新西兰未尝胜绩）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈59/24/17）。赔率来源：bet365/Racing Post（埃及 6-10→1.60、平 3-1→4.00、新西兰 9-2→5.50）；FanDuel（埃及 -170→1.59、平 +300→4.00、新西兰 +490→5.90）。去水：1/1.60+1/4.00+1/5.50≈1.085，归一后≈59/24/17。让球盘埃及 -1（Racing Post 列为最佳推荐，对应威廉希尔 9-5）。大小球 2.5 分歧真实（详见热度模块）。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队的<b>历史基准（近两届大赛 / 预选 / 近 10 场样本）</b>与<b>本届世界杯已踢比赛的实际值</b>逐项对照，看"本届是高于还是低于历史水平、说明什么"。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（首轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇳🇿 新西兰 · 进攻 xG/进球</td><td class="ht">近 12 场 9 负、5 次失利零射；进攻贫瘠，主要靠 Wood 支点 + 定位球；3 月 4-1 胜智利是少有亮点</td><td class="ht">首轮 <b>2 球</b>（Just 梅开二度，均 Wood 助攻）vs 伊朗</td><td><b>高于</b>历史进攻基准：直接打法在伊朗的开放对攻中奏效——但样本特殊（伊朗防守转换失位）；面对收缩稳健的埃及难复制</td></tr>
+      <tr><td class="ht">🇳🇿 新西兰 · 防守 xGA/失球</td><td class="ht"><b>连续 12 场未零封</b>；后防对快速反击保护薄弱，热身 0-4 负海地</td><td class="ht">首轮丢 <b>2 球</b>（两度领先被追平，均在防守转换）</td><td><b>劣于</b>需要：两个失球都在由攻转守瞬间——这正是埃及反击最擅长打的环节，本届防守基准进一步看空</td></tr>
+      <tr><td class="sc">🇪🇬 埃及 · 进攻 xG/进球</td><td class="sc">预选萨拉赫独揽 60% 进球参与（9 球 3 助）；进攻高度依赖萨拉赫串联 + Marmoush 第二点</td><td class="sc">首轮 <b>xG 1.07</b>、14 射 3 正、1 球（萨拉赫助攻 Ashour）vs 比利时</td><td><b>符合</b>历史画像：与豪门旗鼓相当、靠萨拉赫制造质量；对档次更低的新西兰，进攻产出预期上修</td></tr>
+      <tr><td class="sc">🇪🇬 埃及 · 防守 xGA/失球</td><td class="sc"><b>近 6 场仅丢 2 球、4 场零封</b>；预选 6 场零失球；防守是立身之本</td><td class="sc">首轮被比利时打出 xG 1.32、丢 1 球（乌龙，非运动战）</td><td><b>符合</b>历史：运动战未被打穿，丢球来自乌龙；防守纪律是埃及锁定胜局的底座</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：两队本届首轮实际值都<b>贴近各自历史画像</b>——埃及防守扎实（运动战 0 丢球）、进攻靠萨拉赫；新西兰进攻靠直接打法偶有亮点、但防守转换是结构漏洞。深度数据与"埃及凭防反 + 个人能力小胜、新西兰失球概率偏高"的主线一致。来源：Opta Analyst（首轮 xG/统计）· Racing Post（近期战绩/零封数据）· FootyStats/队史公开记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准</h4>
+    <table>
+      <tr><td>本场模型投射 xG（定性）</td><td class="ht">新西兰 ≈0.8</td><td class="sc">埃及 ≈1.6</td><td>校准后埃及投射明显占优——但"破深位 + 终结依赖萨拉赫"是其变量，转化效率需关注</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="sc">超算（赛前 25000 次模拟）：埃及出线 68.2%、新西兰仅 47.8% 且 52.2% 概率小组出局——新西兰是赛会最弱档之一</td><td>对手强度校准后，埃及样本含金量高于新西兰（新西兰对手更弱、近期战绩差）</td></tr>
+      <tr><td>xGD/90 · xG per shot · 压迫 PPDA</td><td colspan="2" class="sc">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：埃及中场紧凑控场 + 反击效率高；新西兰被迫长传冲吊、射门质量偏低（远射/定位球占比高）</td><td>场面倾斜大概率长时间倒向埃及</td></tr>
+    </table>
+    <div class="flag">⚠ <b>陷阱提醒</b>：新西兰首轮打进 2 球容易让人高估其进攻——但那是建立在伊朗防守转换失位、比赛极度开放的特殊样本上。埃及防守纪律远胜伊朗（近 6 场 4 零封），不会给新西兰同样的反击空间；新西兰<b>连续 12 场未零封</b>意味着它大概率会丢球，"双方进球（BTTS）"与"埃及 -1"的张力都来自这里——别把首轮的 2 球当成可持续输出。</div>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>（预期进球 / 去点球预期进球）：射门机会的质量总和，剔除点球后更能反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>（预期失球）：对手对你创造的机会质量，衡量防守真实水平而非靠扑救/运气。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>（每 90 分钟预期净胜）：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>（场均每脚射门质量）：射门选择是否高效——低值=远射多/机会差（新西兰倾向于此）。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>（每次防守动作允许的传球数）：值越低=逼抢越凶，反映压迫强度。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>（场面倾斜）：前场三区触球占比，衡量 territory/控场而非单纯控球率。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore/Understat/FootyStats 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">萨拉赫叙事 + "准生死战"带来话题流量；胜负方向高度统一倾向埃及，真实分歧在让球幅度（-1）与大小球方向</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 埃及方向统一；萨拉赫叙事有情绪流量</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">萨拉赫冲国家队射手王 + "胜者基本出线"的六分之战，叙事热度高于一般小组赛；但盘口仍给新西兰 17%（非极端压水），不存在情绪溢价。专家方向几乎一边倒押埃及（合理共识），资金集中在<b>埃及让球（-1）与萨拉赫/Marmoush 进球 props</b>。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：埃及胜 多数 · 平局 少数 · 新西兰胜 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>埃及出线 68.2% / 新西兰 47.8%（赛前超算）；埃及为本场明显占优一方</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td><b>埃及 -1</b> 最佳推荐；Marmoush 任意时间进球（7-4）；建包含"双方不进球"（埃及零封）</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>埃及胜（价值价 -159）；萨拉赫/Marmoush 威胁新西兰</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>埃及胜；倾向 <b>Over 2.5 + 双方进球</b>（埃及须压上、新西兰可反击拖出进球）</td></tr>
+      <tr><td>Yahoo Sports</td><td>预测媒体</td><td>埃及为锚，叠加 Over 2.5 与 BTTS Yes；萨拉赫任意时间进球作单独价值</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>埃及凭实力与萨拉赫取胜；新西兰难获首轮那样的进攻空间</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向几乎一边倒押埃及——但这是合理共识而非过热。真正的分歧在<b>大小球（Racing Post 偏小/埃及零封 vs Squawka·Yahoo 偏大+BTTS）</b>与<b>让球幅度（-1 是否打得过）</b>。无显著推动新西兰胜的资金；散户热度主要来自萨拉赫"任意时间进球/破纪录"叙事。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>埃及胜</th><th>解读</th></tr>
+      <tr><td>开档（赛事开盘区间）</td><td>1X2</td><td class="sc">≈1.62</td><td>埃及明确热门；平 ≈4.00 / 新西兰 ≈5.50</td></tr>
+      <tr><td>06-19 现盘（bet365/Racing Post）</td><td>1X2</td><td class="sc">1.60（6-10）</td><td>埃及短赔小幅收紧；新西兰 9-2、平 3-1 基本稳定</td></tr>
+      <tr><td>06-19/20</td><td>大/小球 &amp; 让球</td><td colspan="2" class="sc">大小球 2.5 分歧真实；让球埃及 -1（威廉希尔 9-5）被列为最佳角度</td></tr>
+    </table>
+    <h4>②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口/赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日）</td><td>埃及让 -0.5/-1，胜赔 ≈1.62</td><td>开盘即把埃及定为明确热门——基于 #29 vs #85 的实力分层与近期战绩反差</td></tr>
+      <tr><td>开盘（首轮战罢后重定价）</td><td>埃及胜 ≈1.60；让球向 -1 倾斜</td><td>首轮印证两队画像（埃及与比利时不落下风、新西兰防守漏风），市场把埃及让球上抬到 -1 仍被看好</td></tr>
+      <tr><td>现盘（06-19/20）</td><td>埃及 1.60 / 平 4.00 / 新西兰 5.50；埃及 -1 为推荐角度</td><td>价格稳定无单边异动；最活跃的价格发现在<b>埃及让球（-1）与大小球（2.5）</b>，胜负盘价值有限</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：1X2 定价从初盘到现盘基本不动，说明结果方向（埃及胜）定价稳定、被市场充分消化。<b>真正的价格发现集中在埃及让球（-1）能否打过、以及大小球 2.5（偏小/埃及零封 vs 偏大/BTTS）</b>——这两条线信息含量高于胜负盘；萨拉赫/Marmoush 任意时间进球是散户主战场。初盘具体开盘赔率以赛事开盘区间估计，精确开盘值<span style="color:var(--warn)">待核</span>。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi（预测市场）</b>：埃及 <b>61%</b>、平 24%、新西兰 17%——与博彩去水（59/24/17）方向完全一致，两池收敛、无情绪偏离。Kalshi 已清算超 2 亿美元世界杯成交量。<span style="color:var(--warn)">[本场单场成交量与 Polymarket 价差细分未单独检得 · 待核]</span></li>
+      <li><b>DefiRate 聚合（Kalshi/Polymarket/Gemini）</b>：G 组场次价格逐场更新，方向与上一致；本场独立盘 30 天动量与套利扫描未单独公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>舆论焦点</b>：① <b>萨拉赫冲国家队历史射手王（差 3 球）+ "任意时间进球"</b>是最大话题流量来源；② "胜者基本锁定出线"的六分之战属性提升关注度。</li>
+      <li><b>新西兰叙事</b>：赛会最低排名 + 近 12 场 9 负，公众对其取胜信心极低；首轮 2-2 平伊朗带来一点"全白军团能进球"的情绪，但未见推动盘口的单边资金。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与预测市场方向完全收敛（埃及倾向，约 59–61%），过热指数 <b>3/5</b>。话题热度主要来自<b>萨拉赫破纪录叙事</b>；最有信息含量的市场是<b>埃及让球（-1）、大小球 2.5 与萨拉赫/Marmoush 进球 props</b>，而非已被定价的胜负盘。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/new-zealand-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-abyHq6P5efqn/">Racing Post — 赔率/投注/让球</a> · <a href="https://www.sportsline.com/insiders/egypt-vs-new-zealand-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-new-zealand-vs-egypt-06-21-26-world-cup-2026/">Squawka — 前瞻/Kalshi</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-g-predictions-preview">Opta Analyst — 超算</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-g/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁为阿联酋籍 <b>Omar Al Ali（奥马尔·阿里）</b>，助理裁判为同胞 Mohammed Al Hammadi；他是本届 52 人裁判组中代表阿联酋的 AFC 资深主裁。来源：FIFA / The National。</div>
+    <h4>近两届大赛 + 国际执法尺度（实际数据）</h4>
+    <ul class="cl">
+      <li><b>背景与样本</b>：Al Ali 自 2014 年起执法阿联酋职业联赛、长期是 AFC 国际级主裁，2026 是其首届世界杯。阿联酋裁判此前在世界杯有传统（Ali Bujsaim 曾连续执法 1994–2002 三届）。但 <b>Al Ali 本人的世界杯/洲际大赛单场出牌、判点的公开量化样本有限</b> <span style="color:var(--warn)">[待核]</span>——按本站纪律，无大赛量化样本即以"倾向性"判读，不以联赛均值冒充大赛尺度。</li>
+      <li><b>与两队的执法史</b>：作为 AFC 主裁，他对亚洲球队较熟，<b>与埃及（非洲队）、新西兰（大洋洲队）均无显著公开执法史与争议</b>——无队伍倾向可言。</li>
+      <li><b>本届统一新规 + 环境信号</b>：门将 8 秒持球、仅队长可与裁判沟通（埃及 Salah / 新西兰 Wood 均为经验型队长）、半自动越位——后者会更快更准地判定 Marmoush/萨拉赫的反击越位，对埃及进攻有轻微抑制。本届揭幕周即出现多张红牌，整体执法环境偏严。</li>
+      <li><b>对本场的含义</b>：实力分层明确、对抗烈度未必很高，裁判对结果影响通常较小；真正的变量是禁区内对萨拉赫/Marmoush 的拉扯是否被吹点。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：鉴于 Al Ali 本人缺乏世界杯单场牌数的公开量化样本，本场<b>不宜以"精确均值"操作牌数盘</b>，宜以倾向性看待。最值得关注的是禁区对抗尺度——新西兰若靠身体对抗封堵埃及反击，萨拉赫/Marmoush 在禁区内被放倒的判点概率，是裁判面唯一可能影响结果的支点。半自动越位则对埃及的纵深反击有轻微抑制。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#3a2a12;color:#f0c674;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版以赛前 FIFA 名单为准</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单约开球前公布，以 FIFA 比赛中心为准）</div>
+    <h4>🇳🇿 新西兰 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Crocombe; Payne · Surman · Boxall · Cacace; Bell · Stamenic; McCowatt · S. Singh · E. Just; Wood(C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Chris Wood (C)</td><td>前锋 / 诺丁汉森林</td><td>队长与支点；首轮 2 次助攻 Just，高空策应是新西兰唯一稳定出口</td></tr>
+      <tr><td class="ht">Elijah Just</td><td>边锋 / Motherwell</td><td>首轮梅开二度（左路内切）；新西兰最锋利的个人爆点</td></tr>
+      <tr><td class="ht">Marko Stamenic</td><td>中场</td><td>双后腰之一；定位球输送与中场覆盖的关键</td></tr>
+      <tr><td class="ht">Max Crocombe</td><td>门将</td><td>连续 12 场未零封背景下，本场扑救量与出击决策是新西兰能否守住的底线</td></tr>
+    </table>
+    <h4>🇪🇬 埃及 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Shobeir; Hany · Ibrahim · Fathy · Fatouh; Attia · Lasheen; Zico · Salah(C) · Ashour; Marmoush</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Mohamed Salah (C)</td><td>前锋 / 利物浦</td><td>国家队 67 球（差 3 球追平主帅 Hassan）；预选进球参与 60%；头号威胁与发动机</td></tr>
+      <tr><td class="sc">Omar Marmoush</td><td>前锋 / 曼城</td><td>首轮 5 射；纵深冲击是第二攻击点，Racing Post 列其任意时间进球 7-4</td></tr>
+      <tr><td class="sc">Emam Ashour</td><td>中场 / 吉达联合</td><td>首轮进球者（萨拉赫助攻）；前腰串联，反击发起点</td></tr>
+      <tr><td class="sc">Hamdy Fathy / Marwan Attia</td><td>中场（双后腰）</td><td>中场紧凑切断对方直塞、保护防线——埃及防反结构的轴</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（ESPN / Racing Post / Sports Mole），<b>以赛前 FIFA 官方名单为准 · 待核</b>。新西兰 Garbett 整届报销、Rogerson 顶替入队；埃及无新增伤情，各源在萨拉赫居中/踢右、Trezeguet 是否首发上略有分歧。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇳🇿 新西兰 · Darren Bazeley</div>
+        <div class="role">4-2-3-1 直接打法：Wood 支点 + Just 冲击 + 定位球；被动反击为主，防守转换薄弱</div>
+        <ul class="cl">
+          <li>Bazeley 的招牌是<b>务实直接</b>——不靠控球，靠纵向长传找 Wood 做球、二点冲击与定位球。首轮 2-2 平伊朗证明这套在开放对攻中能进球（Just 梅开二度）。他 2024 年带队夺 OFC 大洋洲国家杯。</li>
+          <li>交叉参照：2010 世界杯新西兰 3 平不败（平意大利等）小组出局，靠的正是<b>纪律性防守 + 定位球偷分</b>；但这套依赖防线零封——而本队<b>连续 12 场未零封</b>，与 2010 的"防守立身"已不可同日而语。首轮两度领先被伊朗追平，暴露同一漏洞。</li>
+          <li>本场难题：出线压力要求新西兰主动求胜，但主动压上会把后场空间喂给埃及反击。Bazeley 大概率仍先稳守反击、靠 Wood 定位球与 Just 个人能力博一城——但面对近 6 场 4 零封的埃及，机会比伊朗一战少得多。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇪🇬 埃及 · Hossam Hassan</div>
+        <div class="role">4-2-3-1 紧凑防反：双后腰保护 + 萨拉赫/Marmoush 反击；防守纪律 + 个人能力终结</div>
+        <ul class="cl">
+          <li>Hassan（埃及传奇前锋、国家队历史射手王 69 球）的招牌是<b>紧凑中场 + 快速由守转攻</b>——首轮对比利时不摆大巴、敢压上，靠萨拉赫做球终结，xG 1.07 与豪门掰手腕。预选全程不败、近 6 场仅丢 2 球印证防守底座。</li>
+          <li>交叉参照：埃及近两届非洲杯<b>连续打进决赛（2021、2023 两届亚军，均点球惜败）</b>——靠的就是扎实防守 + 萨拉赫的关键球与点球大战韧性。这套"少丢球 + 萨拉赫决定比赛"的模板，本场对新西兰高度适配。</li>
+          <li>本场应对：面对必须求胜、会压上的新西兰，埃及的防反空间反而更大——这正是 Hassan 想要的剧本。控场 + 等萨拉赫/Marmoush 抓机会，是埃及锁定胜局的最现实路径；唯一风险是终结过度依赖萨拉赫，若他被冻结、埃及可能像首轮那样进球数受限。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 数据机构</small></div>赛前超算给埃及出线 68.2%、新西兰仅 47.8%（52.2% 概率小组出局）——新西兰是赛会最弱档之一。萨拉赫预选独揽 60% 进球参与（9 球 3 助），是埃及无可争议的发动机；面对赛会最低排名（#85）、连续 12 场未零封的新西兰防线，埃及的个人能力优势被进一步放大。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 英系老牌</small></div>主推<b>埃及 -1</b>：新西兰近 12 场 9 负、连续 12 场未零封，而埃及近 6 场仅丢 2 球——"埃及赢两球或以上"被视为比单纯胜负盘更有角度。Marmoush 任意时间进球（7-4）是其球员推荐，建包甚至纳入"双方不进球"（押埃及零封）。</div>
+    <div class="insight"><div class="who">大小球分歧 <small>· Squawka / Yahoo vs Racing Post</small></div>大小球是本场最大价值争议：Squawka/Yahoo 偏 <b>Over 2.5 + 双方进球</b>（埃及须压上、新西兰可反击拖出进球，且新西兰连续 12 场未零封）；Racing Post 偏 <b>小球/埃及零封</b>（埃及近 6 场 4 零封、防守纪律强）。两种逻辑都成立——取决于埃及是早早 1-0 后收紧，还是被迫打开。</div>
+    <div class="insight"><div class="who">综合 · 上一场带入的对撞 <small>· 复盘迁移</small></div>本场是两条"上一场带入"主线的直接对撞：新西兰<b>"领先后守不住、防守转换漏防"</b> vs 埃及<b>"防反成立、萨拉赫制造质量"</b>。前者是新西兰的命门、后者是埃及的强项——两条信号叠加共同指向埃及"凭防反 + 个人能力取胜"的主线，新西兰偷分需要 Wood 定位球 + 埃及终结掉链子同时发生。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：埃及小胜（1-0 / 2-0 / 2-1，防反 + 萨拉赫/Marmoush 终结）是基准剧本；平局（≈24%）是中等概率尾部——若埃及终结掉链子（过度依赖萨拉赫）、又被 Wood 定位球偷袭，新西兰有逼平机会；新西兰取胜（≈17%）需要 Wood/Just 复制首轮神勇 + 埃及罕见失常同时发生。</li>
+      <li><b>关键先生</b>：萨拉赫（埃/发动机与终结、冲历史射手王）、Marmoush（埃/第二攻击点）、Ashour（埃/反击发起）、Wood（新/支点与定位球）、Just（新/个人爆点）。</li>
+      <li><b>胜负手</b>：本场真正看点是<b>埃及防反能否打穿新西兰防守转换的漏洞</b>——决定埃及让球盘（-1）与大小球的结算。新西兰能否靠 Wood 定位球先得手、把埃及拖入开放对攻，是其偷分的唯一路径。</li>
+      <li><b>市场视角</b>：博彩与预测市场方向完全收敛（埃及倾向，约 59–61%），1X2 价值有限；最有信息含量的市场是<b>埃及让球（-1）、大小球 2.5 与萨拉赫/Marmoush 进球 props</b>。过热指数 3/5（萨拉赫破纪录叙事带来话题流量，但非情绪溢价）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发名单（约开球前公布，以 FIFA 比赛中心为准；新西兰 Garbett 报销已确认，埃及萨拉赫居中/踢右与 Trezeguet 是否首发待定）；② 埃及是否有未公开的临场伤停；③ Omar Al Ali 在世界杯/洲际大赛的单场出牌/判点量化样本（公开有限）；④ Kalshi/Polymarket 本场单场成交量、价差与 30 天动量细分未单独检得；⑤ 让球（-1）与大小球总分线的精确开盘赔率与初盘值以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49115519/new-zealand-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021480">FIFA — 比赛中心</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/new-zealand-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-abyHq6P5efqn/">Racing Post — 赔率/投注/队况</a><br>
+      • <a href="https://theanalyst.com/articles/world-cup-2026-group-g-predictions-preview">Opta Analyst — G组前瞻/超算/萨拉赫</a> · <a href="https://theanalyst.com/articles/belgium-vs-egypt-prediction-world-cup-2026-match-preview">Opta Analyst — 比利时 vs 埃及（埃及带入）</a> · <a href="https://theanalyst.com/articles/iran-vs-new-zealand-prediction-world-cup-2026-match-preview">Opta Analyst — 伊朗 vs 新西兰（新西兰带入）</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/salah-record-chase-marmoush-or-trezeguet-predicted-egypt-xi-vs-new-zealand_599608.html">Sports Mole — 埃及预测首发</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-new-zealand-vs-egypt-06-21-26-world-cup-2026/">Squawka — 前瞻/Kalshi</a> · <a href="https://www.sportsline.com/insiders/egypt-vs-new-zealand-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 专家预测</a><br>
+      • <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/19/uaes-omar-al-ali-to-officiate-new-zealand-v-egypt-match-at-world-cup-2026/">The National — Al Ali 执法任命</a> · <a href="https://www.thenationalnews.com/sport/world-cup-2026/2026/06/15/mohamed-salahs-egypt-denied-first-world-cup-win-after-own-goal-earns-belgium-a-point/">The National — 比利时 1-1 埃及</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-g/">DefiRate — Kalshi/Polymarket</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-20 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#c8102e',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['埃及胜','平局','新西兰胜'],datasets:[{data:[59,24,17],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[50,50],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水，市场分歧·五五开）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['比利时','埃及','伊朗','新西兰'],datasets:[{data:[9,29,20,85],backgroundColor:['#f08a82',SC,'#e0ad1a',HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'新西兰',data:[4.5,5,5,7,5.5,4.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'埃及',data:[7,7,6.5,5.5,8,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

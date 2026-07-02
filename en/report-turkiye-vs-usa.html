@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Türkiye vs USA · 2026 World Cup Group D Final Round (Dead Rubber · USA heavily rotated vs Türkiye's match of pride)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-turkiye-vs-usa.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-turkiye-vs-usa.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-turkiye-vs-usa.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-turkiye-vs-usa.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-turkiye-vs-usa.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#e23b4e;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#8a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#161d2e);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a96;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-turkiye-vs-usa.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-turkiye-vs-usa.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-turkiye-vs-usa.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">⚽ 2026 World Cup · Group D Final Round · Dead Rubber · USA already top of the group, heavily rotated vs Türkiye's match of pride</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 FT · Türkiye 3-2 USA</span>
+  <h1>Türkiye vs USA</h1>
+  <div class="meta">25 June 2026 · Inglewood, Los Angeles · SoFi Stadium · ~19:00 local / 22:00 ET · Group D (also in the group: Paraguay, Australia) · Final round (kicking off simultaneously: Paraguay vs Australia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a96">🇹🇷 Türkiye</div><div class="rk">FIFA #26 range · 0-2 Australia + 0-1 Paraguay · 0 pts (GD -3) · Eliminated · Montella's creative midfield lacks a genuine No. 9</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 USA</div><div class="rk">FIFA #17 · Host · 4-1 Paraguay + 2-0 Australia · 6 pts (GD +5) · Already secured top of group · Pochettino expected to rotate heavily</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-26) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Türkiye 3-2 USA (HT 2-1) · 06-25</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">SoFi Stadium, Los Angeles — a "dead rubber" final round whose script flipped completely: <b>the USA, heavily rotated and already top of the group with no winning incentive; Türkiye going all out for redemption, finally scoring their first goal and recording their first win of the tournament in a match of pride</b>. The USA struck early — <b>Auston Trusty headed in on the 3rd minute</b> (Sebastian Berhalter corner assist, two shots inside a single minute); but Türkiye replied quickly, <b>Arda Güler levelling on the 10th minute</b> (their first goal of the tournament) and <b>Orkun Kökçü putting them ahead on the 31st minute</b>, 2-1 at the break. In the second half <b>Berhalter headed in to make it 2-2 on the 49th minute</b>; the deadlock lasted into stoppage time, when substitute <b>Kaan Ayhan scored a winner from close range on 90+8</b> for a 3-2 Türkiye victory. <b>Key qualification conclusion: despite the defeat the USA still progress to the Round of 32 as Group D winners</b> (goal difference / head-to-head keep them top); Türkiye go out with dignity — having scored 0 goals in their first two matches, they scored 3 in this one.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 3' Trusty (corner header) · 10' Güler · 31' Kökçü ｜ 49' Berhalter (header) · 90+8' Kaan Ayhan (winner)｜HT 2-1 · FT 3-2｜Pulisic came on as a substitute on the 58th minute</div>
+
+    <h4 style="margin-top:16px">② Key data comparison (ESPN / Opta · cross-checked with NBC match report)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇹🇷 Türkiye</th><th>🇺🇸 USA</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td>42%</td><td><b>58%</b></td><td>The USA (including after Pulisic came on) dominated possession, but were inefficient at converting that possession into high-quality chances — possession ≠ threat</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.30</b></td><td>0.67</td><td>Türkiye's xG was nearly double the USA's — the "chance quality" in the match of pride was actually higher, so the 3 goals were not pure luck; the rotated USA side showed a clear drop in creativity</td></tr>
+      <tr><td class="ht">Shots on target (% of shots)</td><td>2 (50%)</td><td><b>4 (50%)</b></td><td>The USA had more shots on target but lower per-shot quality; Türkiye's shooting was more refined (the high-xGOT efforts from Güler/Kökçü)</td></tr>
+      <tr><td class="ht">Big chances (created / missed)</td><td><b>2 / 0</b></td><td>2 / 1</td><td>Türkiye took their big chances with zero waste; the USA missed one — that is where the micro-margin of 3-2 lay</td></tr>
+      <tr><td class="ht">Passes (completion %)</td><td>130 (72%)</td><td><b>212 (86%)</b></td><td>The USA had a higher passing volume and completion rate (the possession side), but lacked penetration; Türkiye were more direct and more efficient at creating danger</td></tr>
+      <tr><td class="ht">Saves / fouls</td><td>3 / 7</td><td>0 / 8</td><td>Çakir made 3 saves to keep his goal; the USA goalkeeper's zero saves reflect the trickier nature of Türkiye's shots</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://www.espn.com/soccer/match/_/gameId/760470">ESPN Gamecast — Türkiye 3-2 USA (Team Stats / Shot Map / xG)</a> · <a href="https://www.nbcsports.com/soccer/live/usa-vs-turkiye-live-updates-score-goals-highlights-stats-from-2026-fifa-world-cup">NBC Sports — match report / stats</a> · <a href="https://www.turkiyetoday.com/sports/turkiye-3-2-usa-turkiye-ends-world-cup-campaign-with-late-win-over-hosts-3222677">Türkiye Today — goals and substitution timeline</a><br><span style="color:var(--warn)">[ESPN full-match total shots, corners and certain breakdown metrics were limited to scrape · TBC; xG/possession/shots on target/big chances/passes per the ESPN Opta panel, with the NBC match report consistent in direction (USA possession ≈60%, slightly more shots, Türkiye xG nearly double)]</span></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">The motivation inversion was fully realised — in a dead rubber, "rotation vs full effort" was the real decider here</div>The USA rotated heavily (Turner started instead of Freese, most regulars rested, Pulisic not on until the 58th minute), with low winning intensity; Türkiye, though also rotated (Calhanoglu/Demiral/Kadioglu/Akturkoglu on the bench), went all out for redemption. <b>This shows that in a final round with nothing at stake, the motivation gap can directly cancel out or even reverse the paper-quality gap — the pre-match "glued-together" pricing of "USA win ≈49%, draw / Türkiye steal a result probability raised" was validated as the correct direction, and tilted toward the Türkiye side.</b></div>
+    <div class="insight"><div class="who">The "no centre-forward" ailment persists, but the creative midfield finally converted chances into goals</div>Türkiye's 3 goals came from forward Güler, midfielder Kökçü and holding midfielder Kaan Ayhan respectively — <b>none from a genuine No. 9</b>. <b>This shows the pre-match structural read of "lacking a genuine centre-forward" has not gone away, but the creativity of Montella's system (Güler's linking, set pieces and second-ball arrivals) was enough, against a rotated USA back line, to have midfield/wide finishers fill in and score</b> — the 0 goals in the first two matches were more "poor luck + strong opposition" than a creativity collapse.</div>
+    <div class="insight"><div class="who">The stability of the USA's reserve back line dropped, breached twice — on a set piece and in stoppage-time management</div>The goals conceded came from an open-play go-ahead (Kökçü 31') and a stoppage-time winner (Ayhan on as a sub 88', scored 90+8'). <b>This shows the rotated back line of Trusty/McKenzie/M.Robinson/Scally was clearly weaker than the first-choice line in understanding and game management (especially marking and second-ball protection in stoppage time)</b> — exactly the pre-match call that "regulars rested → drop in back-line quality is a window for Türkiye to steal a result".</div>
+    <div class="insight"><div class="who">Pulisic's arrival raised the attacking ceiling, but could not cover for the rotated side defensively</div>Pulisic came on as a substitute on the 58th minute and found his rhythm (the knockout-stage warm-up purpose achieved), after which the USA held 2-2 and held the possession edge. <b>This shows Pulisic is unmistakably the switch for the USA attack, but in an overall-rotated reserve side with discounted defending and game management, a single-point attacking upgrade is not enough to avoid conceding in stoppage time</b> — in the knockouts the USA need their first-choice unit fully in place, not to be rescued by individual stars.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Three-way glued odds, USA win not the default result (USA ≈49%)</td><td style="color:var(--good)"><b>✓ Delivered (and tilted toward Türkiye)</b></td><td>The result landed on the significantly raised "Türkiye steal a result" side — the glued-odds direction was entirely correct</td></tr>
+      <tr><td class="ht">Motivation inversion: USA rest-and-protect vs Türkiye all-out redemption</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>The USA rotated heavily, Pulisic on the bench; Türkiye went all out and took their first win of the tournament</td></tr>
+      <tr><td class="ht">The "no centre-forward" ailment suppresses Türkiye's scoring</td><td style="color:var(--warn)"><b>~ Partial miss</b></td><td>The structural issue remains (all 3 goals from non-strikers), but the creative midfield converted chances into 3 goals — the "0-goal" curse was broken</td></tr>
+      <tr><td class="ht">Over/Under 2.5 goals (low intensity → leaning Under)</td><td style="color:var(--bad)"><b>✗ Went Over</b></td><td>A combined 5 goals far exceeded 2.5 — the dead rubber turned into an end-to-end game, the Under read missed</td></tr>
+      <tr><td class="ht">Market overheating 2/5 (low signal)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Low signal + three-way tight pricing was reasonable, with no emotional premium</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#7fb3ec">🇺🇸 USA · Through to the Round of 32 (Group D winners)</h4>
+        <ul class="watch">
+          <li><b>Despite the defeat, still through to the Round of 32 as Group D winners</b>: this match had no impact on the final standings; the USA enter the first knockout round (Round of 32) as group winners, with their opponent determined by other groups' rankings.</li>
+          <li><b>Regulars will return, yellow cards now wiped</b>: the rested Adams/Balogun/Richards/A.Robinson had their yellow cards cleared after the group stage and are available for the knockouts — that was the core purpose of the rotation, now achieved.</li>
+          <li><b>Exposed vulnerabilities: the reserve back line + stoppage-time management</b>: opponents will target the USA's set-piece defending and late-game marking; the knockouts require the first-choice line fully in place, with no reliance on single-point rescue.</li>
+          <li><b>Pulisic has regained match rhythm</b>: coming on for the 58th minute completed his warm-up; he is expected to return to the starting XI and play longer in the knockouts — the switch for the USA attacking ceiling.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#f08a96">🇹🇷 Türkiye · Group D 4th · Eliminated (no next match)</h4>
+        <ul class="watch">
+          <li><b>Eliminated from the tournament, no knockouts</b>: 0 pts → 3 pts in the final round, still bottom; the campaign, after a 24-year World Cup absence, ends with a win of pride; the following are long-term carry-over, not next-match situational intel.</li>
+          <li><b>Creativity is top-tier, the finishing point still needs reinforcing</b>: the midfield creativity of Güler/Kökçü/Yildiz converted into goals in this match, but the "no genuine top-class No. 9" structural shortfall ran throughout — the priority area to reinforce in the next cycle (with EURO 2028 in sight).</li>
+          <li><b>A repeatable scoring route</b>: set-piece second-ball arrivals + direct penetration from the creative midfield is Türkiye's most reliable source of goals against an organised defence.</li>
+          <li><b>Montella stays, long-term target EURO 2028</b>: the Turkish FA has voiced support and the head coach has made clear he will not resign — continuity of the system is the foundation for the subsequent rebuild.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is a classic Group D final-round <b>"dead rubber"</b>, but <b>the motivation direction is the reverse of a usual strong-vs-weak matchup</b>: host nation USA (6 pts, GD +5) <b>have already secured top spot and progressed early</b>, and this match has no bearing on the final standings or their Round-of-32 opponent — multiple sources confirm Pochettino <b>will rotate heavily, rest his regulars and avoid yellow-card suspensions</b>; Türkiye (0 pts, GD -3) are <b>already eliminated after two defeats</b>, and this is a <b>match of pride</b> after a 24-year World Cup absence, in which they will field something close to a first-choice XI to fight for their <b>first point/first win of the tournament</b> and salvage their reputation. For exactly this reason, the odds are far more <b>glued together</b> than "host nation playing an eliminated opponent" would suggest: USA win around <b>2.05</b> (US line -110, de-vigged implied ≈49%), draw around <b>4.10</b> (+310, ≈23%), Türkiye win around <b>3.40-3.60</b> (+250/+260, ≈28%); the Kalshi prediction market goes even further at <b>USA 53% / Draw 23% / Türkiye 26%</b>. Total line O/U <b>2.5</b>. The biggest uncertainties are <b>the depth of the USA's rotation and how the new line-up gels</b> (a reserve side vs a near-first-choice Türkiye) plus <b>whether Pulisic plays briefly to find form</b>. Three things to watch: ① <b>how deep the USA rotate + yellow-card avoidance</b> (Adams/Balogun/Richards/A.Robinson named by multiple sources to be rested); ② <b>whether Türkiye's Calhanoglu/Guler/Yildiz creative midfield can finally deliver a first goal in this match of pride</b> (the tournament's biggest ailment = no genuine centre-forward); ③ <b>the motivation inversion</b> — USA resting to stay safe vs Türkiye all-out redemption is the window for an upset/draw. Base scenario: <b>a low-intensity contest, close scoreline, with the probability of a draw and Under significantly raised</b>; a narrow USA win is no longer the default result, overheating index ≈ <b>2/5</b> (consensus broken up by "rotation + dead rubber", the information content concentrated in the team sheets).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">USA implied win prob. (de-vigged)</div><div class="v" style="color:#7fa6e6">≈49%</div></div>
+      <div class="key"><div class="k">Türkiye implied win prob. (de-vigged)</div><div class="v" style="color:#f08a96">≈28%</div></div>
+      <div class="key"><div class="k">Draw implied prob.</div><div class="v" style="color:var(--draw)">≈23%</div></div>
+      <div class="key"><div class="k">Market overheating index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Dead rubber + motivation inversion (core)</b>: the USA have secured top spot and this match has zero impact on the standings, so they are expected to rotate heavily and protect yellow-carded players; Türkiye are eliminated but fighting for pride, chasing their first point of the tournament. This means the "intensity to win" rises rather than falls on the Türkiye side, while the probability the USA field their strongest XI is at its lowest — the quality gap is significantly compressed by motivation and rotation.</li>
+      <li><b>USA rotation / yellow-card avoidance (multi-source confirmed)</b>: ESPN/CBS/FOX/Stars and Stripes agree — Pochettino will rotate, and <b>Adams, Balogun, Richards, Antonee Robinson</b>, each on 1 yellow card and facing a suspension for the first knockout match if booked again, are highly likely to be rested; Aaronson, Arfsten, McKenzie, M.Robinson, Roldan, Zendejas, Pepi, Berhalter, Scally and other reserve/fringe players to get minutes — see the Key Match News below.</li>
+      <li><b>Pulisic's fitness (multi-source · cautiously optimistic)</b>: the talisman did not even make the bench against Australia due to a calf injury, but has resumed individual training and may play briefly in the final round to find match rhythm as a knockout-stage warm-up; whether he plays and for how long is unknown. <span style="color:var(--warn)">[Whether he plays subject to the official pre-match team sheet · TBC]</span></li>
+      <li><b>Türkiye's creative midfield vs the no-centre-forward ailment</b>: Calhanoglu (set pieces), Arda Guler, Kenan Yildiz (recovered from a calf injury, played 90 vs Paraguay) have ample individual quality, but the 0 goals in two matches exposed the <b>structural shortfall of lacking a genuine No. 9</b> (with only the likes of Deniz Gul deputising). The match of pride against a rotated USA side is their last chance to prove their "creativity can be converted into goals".</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, with item-by-item explanation of how each changes the tactics or result (key player absences/rotation cross-confirmed by multiple sources)</div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">⭐ Core · USA heavy rotation + yellow-card avoidance <span style="color:var(--mut);font-weight:400">· ESPN / CBS / FOX Sports / Stars and Stripes FC multi-source agreement · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources agree: the USA have already secured top spot, this match is irrelevant to the standings, and Pochettino is expected to <b>rotate heavily</b>; <b>Adams, Balogun, Richards, Antonee Robinson</b> will be rested because they each carry 1 yellow card (another booking means missing the first knockout match)</div>
+      <p style="font-size:13.5px">Key player absence/rotation cross-checked across sources: <b>ESPN, CBS Sports, FOX Sports, Stars and Stripes FC</b> report consistently — after back-to-back wins (4-1 Paraguay + 2-0 Australia) the USA have <b>secured top spot in Group D early</b>, this match has no bearing on the final standings or Round-of-32 opponent, and Pochettino has a "rare opportunity to rest the whole squad". FOX/ESPN explicitly name <b>Tyler Adams, Folarin Balogun, Chris Richards, Antonee Robinson</b>, each on 1 yellow card and suspended for the first knockout match if booked again, as <b>highly likely to be protected and not feature</b> (yellow cards are wiped after the group stage). Goalkeeper <b>Matt Freese</b> is one of the few regulars who may keep his starting place (to accumulate World Cup experience). Players expected to get minutes: <b>Brenden Aaronson, Max Arfsten, Mark McKenzie, Miles Robinson, Cristian Roldan, Álex Zendejas, Ricardo Pepi, Sebastian Berhalter, Joe Scally</b>. <span style="color:var(--warn)">[The exact starting XI and depth of rotation subject to the official pre-match FIFA Match Centre team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This is the <b>number-one variable</b> in the match, and the fundamental reason the odds are far more glued together than "host nation playing an eliminated side" would suggest. ① The USA will most likely field a reserve/fringe line-up, with overall quality and cohesion dropping, so scoring efficiency and defensive stability are both discounted; ② regulars rested + an already-qualified mindset means winning intensity is lower than usual; ③ this compresses the USA's de-vigged win probability from "dominance" to ≈49%, with the draw and Türkiye-steal-a-result probabilities significantly raised — the core pricing logic of the match.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49140112/usmnt-faces-world-cup-dilemma-vs-turkiye-rotate-squad-keep-same-xi" style="color:var(--accent)">ESPN — Rotation dilemma</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-lineup-uncertainty-turkiye-game-world-cup-knockouts/" style="color:var(--accent)">CBS — Line-up uncertainty</a> · <a href="https://www.foxsports.com/stories/soccer/usmnt-world-cup-pulisic-turkiye-lineup-changes" style="color:var(--accent)">FOX — Yellow-card avoidance/changes</a> · <a href="https://www.starsandstripesfc.com/usmnt-news/44548/2026-world-cup-previewing-usa-vs-turkiye-new-territory" style="color:var(--accent)">Stars and Stripes FC — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ Key player check · Pulisic's fitness (cautiously optimistic) <span style="color:var(--mut);font-weight:400">· ESPN / CBS / Goal / Sports Mole · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Multiple sources agree: Pulisic (calf injury) has resumed individual training and <b>may play briefly in the final round to find rhythm</b> as a knockout-stage warm-up; he did not even make the bench against Australia</div>
+      <p style="font-size:13.5px">Key player absence cross-checked across sources: <b>ESPN, CBS, Goal, Sports Mole</b> agree — the USA's talisman <b>Christian Pulisic</b> <b>did not even make the bench</b> in the second match against Australia due to a calf injury, but has resumed individual training; multiple analysts see this match (a dead rubber) as the logical window to give him brief minutes, recover his match rhythm and ensure he can last 90 minutes in the knockouts — though some voices argue for "full rest to maximise knockout success". Midfielder <b>Cristian Roldan</b> is separately listed as a fitness doubt (strain). Whether he plays and for how long are genuinely disputed. <span style="color:var(--warn)">[Whether Pulisic/Roldan are in the squad and their minutes subject to the official pre-match team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Against the backdrop of the USA's heavy rotation, whether Pulisic plays briefly is the <b>switch for the USA's attacking ceiling</b>. If he plays, even 30 minutes can significantly raise the USA's ability to break a low block and create threat; if he rests fully, the reserve side's creativity falls mainly on Gio Reyna/Aaronson/Zendejas, further lowering scoring efficiency — directly affecting the totals line and the handicap depth.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49151521/turkiye-vs-usmnt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — Preview/predicted XI/injuries</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-coach-mauricio-pochettino-lineup-decisions-christian-pulisic-world-cup/" style="color:var(--accent)">CBS — Pulisic decision</a> · <a href="https://www.goal.com/en-us/news/turkiye-usa-world-cup-preview/bltf76a14c4a45f5680" style="color:var(--accent)">Goal — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid #f08a96;background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a96;font-weight:700">Türkiye · Match of pride + team news <span style="color:var(--mut);font-weight:400">· RotoWire / Sports Mole / Sky / Yahoo · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Already eliminated but fighting for pride, chasing a first point of the tournament; <b>generally healthy</b>, only Yunus Akgun a doubt with a minor knock (not expected to start anyway); Kenan Yildiz fit again, played 90 vs Paraguay</div>
+      <p style="font-size:13.5px">Key players verified one by one: Türkiye, beaten 0-2 by Australia + 0-1 by Paraguay, are bottom on 0 points after two defeats and already eliminated (the bitter end after a 24-year World Cup absence), but this is a <b>match of pride, fighting for a first point/first win of the tournament</b>. The squad is <b>generally healthy</b> per RotoWire/Sports Mole: only winger <b>Yunus Akgun</b> is listed as a doubt with a minor knock, and was not expected to start anyway; <b>Kenan Yildiz</b> has fully recovered from a calf strain and <b>played 90 minutes vs Paraguay</b>; <b>Hakan Calhanoglu</b> (started every match and played full time, the set-piece linchpin) and <b>Arda Guler</b> are both fit and available. Montella is expected to field a near-first-choice creative midfield, with the forward line deputised by the likes of <b>Deniz Gul</b> (no genuine top-class No. 9). <span style="color:var(--warn)">[Starting XI subject to the official pre-match team sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The other half of the motivation inversion — the USA rest, Türkiye go all out. Türkiye, fielding a near-first-choice side with the individual quality of Calhanoglu/Guler/Yildiz against a USA reserve line-up, see the <b>quality gap significantly narrowed</b>. Türkiye's calling card is Calhanoglu's set pieces and wide creativity, but the "no centre-forward" ailment behind 0 goals in two matches remains the biggest question over whether they can turn territory into goals.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.rotowire.com/soccer/article/turkiye-vs-usa-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-119483" style="color:var(--accent)">RotoWire — Team news/predicted XI</a> · <a href="https://www.sportsmole.co.uk/football/predicted-lineups/calhanoglu-can-surpass-turkish-legend-predicted-turkey-lineup-vs-usa_599852.html" style="color:var(--accent)">Sports Mole — Türkiye predicted XI</a> · <a href="https://www.skysports.com/football/news/17251/13553626/world-cup-2026-turkey-0-1-paraguay-vincenzo-montellas-side-eliminated-from-world-cup-after-back-to-back-defeats" style="color:var(--accent)">Sky — 0-1 elimination/no centre-forward</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee <span style="color:var(--mut);font-weight:400">· ESPN / Türkiye Today / Wikipedia officials list · 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Algeria's <b>Mustapha Ghorbal</b> (second World Cup); fourth official Omar Al Ali (UAE); SoFi Stadium</div>
+      <p style="font-size:13.5px">The match referee is Algeria's <b>Mustapha Ghorbal</b> (born 1985, FIFA international since 2014, his second time officiating a World Cup after Qatar 2022, having taken charge of the CAF Champions League final, two Club World Cups/U20 World Cups, and two consecutive Africa Cups of Nations); the fourth official is the UAE's <b>Omar Al Ali</b>. Career average of about <b>3.87 yellow cards/match</b> (716 yellows, 22 reds in 185 matches). The match is played at the SoFi Stadium in Inglewood (a modern stadium with an enclosed/adjustable environment). <span style="color:var(--warn)">[Full officiating team and VAR combination, and Ghorbal's per-match card/penalty breakdown at this/2022 World Cup · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Dead rubber + a USA reserve side usually means low contact intensity, so the referee's influence on the result is limited, his main value being card/penalty tendency. Ghorbal is an experienced top African referee with a moderately-high career card rate (≈3.87/match); but with no direct stakes in this match, players' incentive to pick up bookings is already low. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.turkiyetoday.com/sports/mustapha-ghorbal-veteran-referee-taking-charge-of-turkiye-vs-usa-3222462" style="color:var(--accent)">Türkiye Today — Ghorbal appointment</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — World Cup referees list</a> · <a href="https://en.wikipedia.org/wiki/Mustapha_Ghorbal" style="color:var(--accent)">Wikipedia — Ghorbal profile</a></div>
+    </div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probability (de-vigged) · Group D landscape · Totals market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group D FIFA rankings (lower = stronger · approximate)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10 · rotation factored in)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇹🇷 Türkiye</th><th>🇺🇸 USA</th></tr>
+      <tr><td>FIFA ranking (2026/06)</td><td class="ht">#26 range</td><td class="sc">#17 (host)</td></tr>
+      <tr><td>First two rounds</td><td class="ht">0-2 Australia + 0-1 Paraguay (0 pts, GD -3, eliminated)</td><td class="sc">4-1 Paraguay + 2-0 Australia (6 pts, GD +5, top spot secured)</td></tr>
+      <tr><td>Group D standings (before final round)</td><td colspan="2">USA 6 (+5) top spot secured and through; Paraguay 3, Australia 3 (head-to-head played simultaneously for second place); Türkiye 0, eliminated</td></tr>
+      <tr><td>Significance of this match</td><td class="ht">Match of pride, fighting for a first point/first win of the tournament for redemption</td><td class="sc">Dead rubber (zero impact on standings), expected to rotate heavily + protect yellow-carded players</td></tr>
+      <tr><td>Head coach</td><td class="ht">Vincenzo Montella (Italy)</td><td class="sc">Mauricio Pochettino (Argentina)</td></tr>
+      <tr><td>Key players</td><td class="ht">Calhanoglu, Arda Guler, Kenan Yildiz, Kadioglu</td><td class="sc">Pulisic (fitness TBC), Pepi, Aaronson, Zendejas, Reyna</td></tr>
+      <tr><td>Things to watch / questions</td><td class="ht">Can the creative midfield break the USA reserve side and fix the "no centre-forward" ailment</td><td class="sc">How deep the rotation goes, whether Pulisic plays briefly, how the new line-up gels</td></tr>
+      <tr><td>Goals scored/conceded this tournament</td><td class="ht">2 matches, 0 goals / 3 conceded (no genuine No. 9)</td><td class="sc">2 matches, 6 goals / 1 conceded (only 1 conceded by the back line)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win ≈3.40-3.60 (+250/+260, implied ≈28%)</td><td class="sc">Win ≈2.05 (-110, implied ≈49%) · Draw ≈4.10 (+310, ≈23%)</td></tr>
+      <tr><td>Prediction market (Kalshi)</td><td colspan="2" class="sc">USA 53% / Draw 23% / Türkiye 26% — more glued together than "host playing an eliminated side", with USA rotation already priced in</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">Total line O/U 2.5 (Over around +100/2.00) — dead rubber + USA rotation puts pressure on the Over</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from DECIMAL odds (≈49/23/28, normalised to roughly 49/23/28 → after de-vig ≈49/22/29). Odds sources: bet365/FanDuel (USA -110≈2.05, Türkiye +250/+260≈3.40-3.60, draw +310≈4.10); Kalshi prediction market USA 53% / Draw 23% / Türkiye 26%. Total line O/U 2.5 (Over around +100). <b>The 1X2 here is far more glued together than "host nation playing an eliminated opponent" would suggest, the fundamental reason being the USA's heavy rotation + dead-rubber mindset</b>. Specific odds subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying sample)</b> with <b>this World Cup's actual values (first two rounds)</b> item by item. National-team public xG breakdown samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actual values (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (first two rounds)</th><th>Difference and reading</th></tr>
+      <tr><td class="sc">🇺🇸 USA · Attack</td><td class="sc">Host nation, Pochettino's high press + wide-and-central combination; qualifying/warm-up firepower moderate-to-high</td><td class="sc">2 matches, 6 goals (4-1 Paraguay incl. 1 own goal, 2-0 Australia), net +5</td><td><b>Result better than process</b>: vs Australia, 70% possession yielded only ≈1.17 xG, with open-play penetration of the low block discounted, the goals mostly from set pieces/switches of play; if heavily rotated here, attacking efficiency drops further <span style="color:var(--warn)">(reserve-side xG public sample unavailable · TBC)</span></td></tr>
+      <tr><td class="sc">🇺🇸 USA · Defence</td><td class="sc">Richards/Ream centre-back line + Adams shield, the first-choice line structurally solid</td><td class="sc">Only 1 conceded in 2 matches (clean sheet vs Australia), the back line a high-floor source</td><td><b>But this match is different</b>: Richards/Adams/A.Robinson named by multiple sources to be rested, with the reserve back line (McKenzie/M.Robinson/Scally/Arfsten) dropping in cohesion and quality — a realistic window for Türkiye to steal a result</td></tr>
+      <tr><td class="ht">🇹🇷 Türkiye · Attack</td><td class="ht">Euro 2024 quarter-final (strong creative midfield, sharp set pieces, Guler/Calhanoglu); top-tier individual quality</td><td class="ht">2 matches, 0 goals (0-2 Australia, 0-1 Paraguay), plenty of creation but no finishing</td><td><b>The ailment is at No. 9</b>: Calhanoglu's set pieces (a free kick off the bar and post vs Paraguay), Yildiz/Guler's creativity were all on point, but the lack of a genuine centre-forward means "chances at the lips can't be swallowed" — the biggest variable over whether they score in the match of pride <span style="color:var(--warn)">(xG breakdown TBC)</span></td></tr>
+      <tr><td class="ht">🇹🇷 Türkiye · Defence</td><td class="ht">Demiral/Bardakci centre-backs, Montella's system has mediocre defensive discipline and is vulnerable to counters</td><td class="ht">3 conceded in 2 matches (Australia 2, Paraguay 1), two defeats</td><td><b>Unstable floor</b>: somewhat high goals conceded, but the pressure eases against a USA reserve side; this match is more likely about "who takes the few chances first"</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical reading</b>: the USA's first two rounds were "result better than process" (6 goals incl. own goal/switches of play, discounted open-play creation vs Australia), and with <b>heavy rotation</b> here, scoring efficiency and defensive stability both drop; Türkiye's individual quality is on point but <b>0 goals in two matches exposes the no-centre-forward ailment</b>, and whether they can convert the creativity of Calhanoglu/Guler/Yildiz into goals is key. The deep data support the main thesis of "low intensity, close scoreline, raised draw and Under probabilities" — this is not a routine strong-over-weak rout. Sources: FootyStats/Opta Analyst (first-two-round xG, USA ≈1.17 xG vs Australia) · FIFA/team major-tournament records (Türkiye Euro 2024 quarter-final). For analysis only — not betting advice.</div>
+
+    <h4>② Match projection &amp; Opta calibration + trap reminder</h4>
+    <table>
+      <tr><td>This match model projected xG (magnitude · rotation factored in)</td><td class="sc">USA ≈1.2–1.5 (reserve side)</td><td class="ht">Türkiye ≈1.0–1.3</td><td>The two teams' xG magnitudes are significantly narrowed — USA rotation lowers efficiency, Türkiye go all out + individual quality; consistent with the "glued-together" odds</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Pre-match Group-D-top probability USA 32.83% > Türkiye 29.04% — within the model the two teams are <b>not far apart</b>; Türkiye's 0 points this tournament is purely "no centre-forward + poor luck", not a quality collapse; USA rotation narrows the gap further</td><td>Kalshi USA 53%/Draw 23%/Türkiye 26% is consistent with the supercomputer's "two teams close"; this is the core of the dead-rubber pricing</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: a USA reserve side likely drops in high-press intensity, with its field-tilt advantage narrowing; Türkiye going all out + the midfield creativity of Calhanoglu/Guler could play the game even, or even invert it</td><td><b>Trap reminder</b>: ① with the USA heavily rotated + an already-qualified mindset, there is a risk the "quality gap" is severely overestimated; ② Türkiye will go all out for redemption in a match of pride, with the draw/steal-a-result probability priced in by the market but still possibly underestimated; ③ this lowers the robustness of the Over, making "Under + draw/Türkiye unbeaten" the only edge in this match</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the sum of shot-chance quality; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the chance quality opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = many long-range efforts/poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial tilt rather than mere possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; for national teams, public samples on breakdown metrics such as PPDA/xT/field tilt, especially for "reserve sides", are limited, so missing items are all marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a "low-signal" dead-rubber fixture (dead rubber + USA rotation) — the 1X2 is unusually glued together, with the information content concentrated in the team sheets (USA rotation depth + whether Pulisic plays) and the totals market</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheating index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · Dead rubber, consensus broken up by rotation, no emotional premium</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">The complete opposite of a "win-or-go-home decider" — this match has no qualification stakes, the USA are expected to rotate heavily, and the market is highly unsure "which line-up", causing the 1X2 to be unusually glued together (USA win only ≈49%). The real uncertainty is in the <b>team sheets</b> (how deep the rotation, whether Pulisic plays briefly) and the <b>totals market</b> (low intensity → pressure on the Over). Sentiment is concentrated on "USA blooding players/Pulisic's return" and "Türkiye's redemption".</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction leans USA but not strongly, some lean to draw/Under/Türkiye unbeaten)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Opta / Kalshi</td><td>Supercomputer / prediction market</td><td>The two teams close: supercomputer Group-D-top USA 32.83% ≈ Türkiye 29.04%; Kalshi USA 53%/Draw 23%/Türkiye 26%</td></tr>
+      <tr><td>SportsLine</td><td>US betting media</td><td>Gives an expert pick on the dead rubber/rotation; focused on the impact of the USA team sheet on handicap value</td></tr>
+      <tr><td>RotoWire</td><td>Prediction media</td><td>Gives predicted XIs for both sides; stresses USA rotation, Türkiye near-first-choice, the scoreline will be narrowed</td></tr>
+      <tr><td>Racing Post</td><td>UK betting</td><td>Offers a Bet Builder idea (13-1 combination), a derivative play for a glued-together fixture</td></tr>
+      <tr><td>Sports Mole / Goal</td><td>Pre-match previews</td><td>The USA are still the nominal favourite (home + overall stronger), but admit rotation + dead rubber increases the suspense</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: this is a <b>low-signal dead rubber</b>, with no emotional premium and no extreme three-way disagreement. The biggest uncertainty is the <b>USA team sheet</b> (rotation depth + whether Pulisic plays) and <b>whether low intensity suppresses goals</b> — affecting the handicap and totals rather than pure 1X2. The consensus itself acknowledges that "a USA win is not the default result".</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Türkiye win / Draw / USA win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="sc">≈3.40 / 4.00 / 1.90</td><td>Initially still priced the USA (home + overall stronger) as a clear favourite</td></tr>
+      <tr><td>As of 06-23</td><td>bet365/FanDuel etc.</td><td class="sc">≈3.40-3.60 / 4.10 / 2.05 (-110)</td><td>After the USA's qualification was secured + rotation news became clear, the USA win price was pushed out (1.90→2.05), with Türkiye and the draw prices closing in</td></tr>
+      <tr><td>06-23</td><td>Over/Under</td><td colspan="2" class="sc">Total line O/U 2.5 (Over around +100/2.00); the handicap is shallow or tending flat — the Over is under pressure (USA rotation + low intensity)</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → current)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="sc">USA win ≈1.90; USA shallow handicap; O/U 2.5</td><td>Priced on "USA home + overall stronger vs Türkiye struggling", the opening line set the USA as a clear (but not dominant) favourite on a shallow handicap</td></tr>
+      <tr><td>Open (post-second-round + qualification/rotation repricing)</td><td class="sc">USA win 1.90→2.05; handicap toward flat; O/U 2.5 leaning Under</td><td><b>Repricing came from the qualification picture + rotation</b>: after the USA beat Australia 2-0 they <b>secured top spot early and this became a dead rubber</b>, and with multiple sources confirming Pochettino will <b>rotate heavily and rest yellow-carded players</b>, the market pushed the USA win price out significantly and pulled the handicap in toward level; Türkiye's "all-out redemption in a match of pride" and "near-first-choice XI" support their win/unbeaten prices drifting lower; the low-intensity expectation pressures the Over</td></tr>
+      <tr><td>Current (06-23 → now)</td><td class="sc">USA -110 (≈2.05); Türkiye +250/+260 (≈3.40-3.60); Draw +310 (≈4.10); O/U 2.5</td><td>Price discovery is concentrated on the <b>USA team sheet</b> (how deep the rotation, whether Pulisic plays → directly affecting handicap value) and the <b>totals market</b> (low intensity + USA lower efficiency → pressure on the Under); the 1X2 is rarely <b>three-way level</b>, with <b>Türkiye unbeaten/draw</b> and the <b>Under</b> the main edges in this match</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is not a routine "heavy home-favourite handicap" but a <b>three-way glued line</b> shaped by dead rubber + rotation. The key variables are <b>USA rotation depth + whether Pulisic plays</b> (determining handicap value) and <b>whether low intensity suppresses goals</b> (the Under). Opening-line ranges subject to each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction market (Kalshi)</b>: USA 53% / Draw 23% / Türkiye 26% — consistent with the supercomputer's "two teams close", clearly pricing in USA rotation + dead rubber; with no qualification suspense in the betting sense, money is concentrated on the handicap/totals and "Türkiye unbeaten" derivatives. <span style="color:var(--warn)">[Single-match volume/momentum breakdown not separately publicly retrievable · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>USA blooding players and Pulisic's return</b> — how deep Pochettino rotates, whether Pulisic comes on briefly to find form, is the biggest traffic point and sentiment driver of the match.</li>
+      <li><b>Sentiment focus ②</b>: <b>Türkiye's redemption and a Calhanoglu first goal</b> — after a 24-year absence, two matches and 0 points and elimination, whether Calhanoglu and the other core players can deliver a first goal of the tournament in the match of pride and save face is the keynote of the Turkish media.</li>
+      <li><b>USA narrative</b>: with the host nation through early and sitting top, the talk has shifted from "qualification anxiety" to "how to prepare for the knockouts + testing squad depth"; the market's confidence in their result this match has actually fallen.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is a low-signal dead rubber — three-way level, overheating index <b>2/5</b>. The 1X2 price-discovery space is limited, the core variables being <b>USA rotation depth + whether Pulisic plays</b>, which knock on to the totals market (low intensity + USA lower efficiency → leaning Under, Türkiye unbeaten has value). For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://theanalyst.com/articles/fifa-world-cup-2026-groups-predictions-previews">Opta — Supercomputer/Group D probabilities</a> · <a href="https://www.sportsline.com/insiders/turkiye-vs-united-states-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Odds/experts</a> · <a href="https://www.rotowire.com/soccer/article/turkiye-vs-usa-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-119483">RotoWire — Predictions/line-ups</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/turkey-vs-usa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a6NGI2A8vfOC/">Racing Post — Bet Builder</a> · <a href="https://www.cbssports.com/prediction/news/kalshi-world-cup-2026/">CBS — Kalshi money flow</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media reports</b>: the match referee is Algeria's <b>Mustapha Ghorbal</b> (FIFA international since 2014, his second time officiating a World Cup after Qatar 2022); the fourth official is the UAE's <b>Omar Al Ali</b>. Sources: Türkiye Today (appointment), ESPN referees list, Wikipedia/FIFA officials list. <span style="color:var(--warn)">[Full officiating team and VAR combination · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Ghorbal comes from the Algeria/CAF officiating system — experienced, having taken charge of the CAF Champions League final, two Club World Cups, two consecutive Africa Cups of Nations and Qatar 2022, and once nominated for the IFFHS "World's Best Referee". Career average of about <b>3.87 yellow cards/match</b> (716 yellows, 22 reds in 185 matches), a moderately-high card volume. This World Cup's officiating environment is on the strict side (only captains may speak, 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>This/last two tournaments' actual sample</b>: Ghorbal is a veteran referee who officiated at the 2022 World Cup; precise per-match card/penalty breakdowns at this/2022 World Cup have limited public samples. <span style="color:var(--warn)">[2022 World Cup per-match yellow card/penalty breakdown · TBC]</span>. Qualitative read: a stable threshold, willing to make key calls, but this match lacks stakes and contact intensity is usually low.</li>
+      <li><b>Officiating history with both teams</b>: no significant public officiating bias to speak of with either Türkiye or the USA.</li>
+      <li><b>Two-sidedness</b>: dead rubber + a USA reserve side means players' incentive for bookings/fierce challenges is already low; but Türkiye will fight for pride and the tempo may not be slow. Ghorbal's career card rate is moderately-high, so if the match unexpectedly heats up (emotion/redemption psychology) card numbers have upside, otherwise it will most likely be calm. Semi-automated offside will precisely capture both sides' marginal sprints. Card/penalty markets are best viewed as a tendency, not an actionable basis.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee analysis</b>: against a dead rubber + rotation backdrop, the referee's influence on the result is limited, his main value being cards/penalties. Ghorbal's career card rate is moderately-high (≈3.87/match), but with low stakes and weak contact incentive in this match, card tendency leans neutral. Given the limited per-match breakdown sample at this tournament, treat related markets as a tendency.</div>
+  </section>
+
+  <!-- Starting XIs and key players -->
+  <section>
+    <h2><span class="n">3</span> Starting XIs &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XIs (ESPN / RotoWire / Sports Mole projections, not official; official team sheets per the pre-match FIFA Match Centre · TBC). <b>The USA's rotation is extensive, so the predicted XI carries more uncertainty than usual</b></div>
+    <h4>🇹🇷 Türkiye predicted XI (4-2-3-1) · Vincenzo Montella · near-first-choice</h4>
+    <div class="lineup">Cakir; Muldur · Demiral · Bardakci · Kadioglu; Calhanoglu · Yuksek; Akturkoglu · Guler · Yildiz; Deniz Gul</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Hakan Calhanoglu</td><td>DM/playmaker / Inter Milan</td><td>Türkiye's captain-class core, a set-piece master; a free kick off the bar and post vs Paraguay, the biggest single-point weapon to break the USA (set pieces)</td></tr>
+      <tr><td class="ht">Arda Guler</td><td>AM/wide / Real Madrid</td><td>The creativity hub this tournament, linking and final-ball play in tight spaces; the hope of breaking through in the match of pride</td></tr>
+      <tr><td class="ht">Kenan Yildiz</td><td>Winger / Juventus</td><td>Fully recovered from a calf strain, played 90 vs Paraguay; the individual quality outlet on the left <span style="color:var(--warn)">starting place TBC</span></td></tr>
+      <tr><td class="ht">Deniz Gul</td><td>Striker</td><td>Deputising for the forward line that lacks a top-class No. 9; Türkiye's "no centre-forward" ailment behind 0 goals in two matches falls exactly on this position <span style="color:var(--warn)">starting place TBC</span></td></tr>
+    </table>
+    <h4>🇺🇸 USA predicted XI (heavily rotated · formation TBD) · Mauricio Pochettino · most regulars rested, yellow-carded players protected</h4>
+    <div class="lineup">Freese; Ream · McKenzie · M.Robinson; Scally · Berhalter · Roldan · Arfsten; Zendejas · Aaronson; Pepi</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Christian Pulisic</td><td>Winger / Milan</td><td>The talisman, recovering from a calf injury; may play briefly to find rhythm (could also rest fully) <span style="color:var(--warn)">whether he plays/minutes TBC</span></td></tr>
+      <tr><td class="sc">Ricardo Pepi</td><td>Striker / PSV</td><td>The focal finishing point of the reserve side; the first-choice No. 9 after first-choice striker Balogun is rested for yellow cards</td></tr>
+      <tr><td class="sc">Brenden Aaronson</td><td>Attacking midfield / Premier League</td><td>A Premier League regular, the creativity and running of the reserve side; the key passing link to break a low block</td></tr>
+      <tr><td class="sc">Matt Freese</td><td>Goalkeeper</td><td>One of the few regulars who may keep his starting place (to accumulate World Cup experience) <span style="color:var(--warn)">starting place TBC</span></td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (ESPN / RotoWire / Sports Mole), <b>subject to the official pre-match team sheet · TBC</b>. The USA focus is <b>how deep the rotation</b> (Adams/Balogun/Richards/A.Robinson highly likely rested for yellow cards), <b>whether Pulisic plays briefly</b>, and what formation Pochettino uses to blood players; the Türkiye focus is whether Montella fields a near-first-choice side, whether Yildiz/Gul start, and whether they can fix the "no centre-forward" shortfall.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Each conclusion cross-references both teams' actual play and results across their last two major tournaments (World Cup + Euros / Copa América)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a96">🇹🇷 Türkiye · Vincenzo Montella</div>
+        <div class="role">4-2-3-1 creative midfield + set pieces; Calhanoglu/Guler linking, forward line on the weak side</div>
+        <ul class="cl">
+          <li>Montella's signature is a <b>balanced double pivot + creative midfield + set pieces</b> — but Türkiye's long-standing structural shortfall is the <b>lack of a genuine top-class No. 9</b>, and this tournament's 0 goals in two matches is exactly the concentrated eruption of that flaw (plenty of creation, no finishing).</li>
+          <li>Cross-reference: <b>Euro 2024 quarter-final</b> (1-2 to the Netherlands, where Samet Akaydin's header came precisely from a Guler set-piece assist — set pieces are their real weapon; but open-play finishing is equally laboured), and this tournament's 0-2 Australia + 0-1 Paraguay continued "creation at the lips, finishing not swallowed". <b>Set pieces are Türkiye's most repeatable scoring route, while open-play goals rely on individual flashes from Guler/Yildiz</b>.</li>
+          <li>This match's entry point: against a USA reserve side, Türkiye will go all out for victory and redemption, using Calhanoglu's set pieces + Guler/Yildiz creativity to prise open the USA reserve back line; whether they can finally score this tournament depends on the finishing ability of strikers such as Deniz Gul. The motivation of a match of pride + a near-first-choice side is their most realistic window to take points this tournament.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 USA · Mauricio Pochettino</div>
+        <div class="role">High press + wide-and-central combination (first choice); expected heavy rotation here, mainly blooding players</div>
+        <ul class="cl">
+          <li>Since taking over, Pochettino has emphasised <b>high press + possession dominance + individual quality on the wings to break through</b> — but vs Australia, 70% possession yielded only ≈1.17 xG, exposing the structural problem that <b>without Pulisic, open-play penetration of a low block is discounted and there is over-reliance on individual quality and set pieces</b> (2 goals from an own goal + a corner switch).</li>
+          <li>Cross-reference: <b>WC 2022 Round of 16</b> (1-3 to the Netherlands, dominating possession but being man-marked in midfield + breached on the counter, unable to break an organised defence), 2024 Copa América group-stage exit on home soil — <b>the USA are not efficient every match against organised mid-and-lower-tier opponents, lacking a stable settled-attack penetration routine</b>. Add heavy rotation + a dead-rubber mindset here, and attacking intensity and quality drop further.</li>
+          <li>This match's response: Pochettino has said he wants to "keep the momentum", but the more realistic goal is <b>blooding players + protecting yellow-carded players + getting Pulisic up to speed</b>. The reserve side's creativity falls mainly on Reyna/Aaronson/Zendejas, with Pepi leading the line. The USA hold the safety cushion of "top spot secured", with a lower desire to win than usual — exactly the root of the raised draw/steal-a-result probabilities.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">ESPN / CBS / FOX <small>· Pre-match preview</small></div>The USA have secured top spot and this match is irrelevant to the standings, so Pochettino faces a rotation dilemma; Adams/Balogun/Richards/A.Robinson highly likely rested for yellow cards, Pulisic may play briefly to find form — the team sheet is the biggest variable of the match.</div>
+    <div class="insight"><div class="who">Sky Sports / Sports Mole <small>· Türkiye side</small></div>Türkiye are eliminated after two defeats, the "no genuine centre-forward" fatal at the worst moment; in the match of pride they rely on Calhanoglu's set pieces and Guler/Yildiz creativity to fight for a first point of the tournament — whether they can finally score is the watch point.</div>
+    <div class="insight"><div class="who">Opta / Kalshi <small>· Data / prediction market</small></div>Within the model the two teams are not far apart (Group-D-top USA 32.83% ≈ Türkiye 29.04%); Kalshi USA 53%/Draw 23%/Türkiye 26% — already pricing in USA rotation and the dead rubber, with the 1X2 rarely level.</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· Opta / FotMob</small></div>The real suspense is <b>USA rotation depth + whether Pulisic plays</b> and <b>whether low intensity suppresses goals</b>. ⚠ Trap reminder: USA heavy rotation + an already-qualified mindset vs Türkiye all-out redemption — the "motivation inversion" can make the score margin far smaller than the paper-quality gap, with the draw/Türkiye unbeaten probability priced in by the market but still possibly underestimated; the Over is under pressure, the Under has value.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Items to Verify</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: low intensity and a close scoreline is the base scenario. The USA are the nominal favourite (host + overall stronger, only 1 conceded in two matches), but <b>heavy rotation + a top-spot-secured mindset</b> compresses their win probability to de-vigged ≈49%; Türkiye's all-out redemption in a match of pride + a near-first-choice side significantly raises the draw and steal-a-result probabilities. A narrow USA win is no longer the default result; <b>a draw/Türkiye unbeaten is a real tail</b>.</li>
+      <li><b>Key men</b>: Calhanoglu (Türkiye/set pieces and organisation), Arda Guler (Türkiye/creativity), Kenan Yildiz (Türkiye/wide individual quality), Deniz Gul (Türkiye/centre-forward finishing); Pulisic (USA/the attacking switch if he plays), Pepi (USA/the reserve side's focal point), Aaronson/Reyna/Zendejas (USA/reserve creativity).</li>
+      <li><b>Deciders</b>: ① how deep the USA rotate, whether Pulisic plays (determining the USA attacking ceiling); ② whether Türkiye can finally convert Calhanoglu/Guler's creativity (incl. set pieces) into a first goal of the tournament and fix the "no centre-forward" shortfall; ③ the motivation inversion — the intensity gap between USA blooding players to stay safe vs Türkiye fighting for pride.</li>
+      <li><b>Market view</b>: a low-signal dead rubber (≈49/23/28), with the 1X2 rarely three-way level; overheating index 2/5. The core variables are the USA team sheet + the suppression of goals by low intensity, which knock on to the totals market (leaning Under, Türkiye unbeaten has value).</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify</b>: ① both sides' official starting XIs (FIFA Match Centre ~1 hour before kickoff), <b>especially the depth of the USA rotation (whether Adams/Balogun/Richards/A.Robinson are rested as multiple sources expect)</b>; ② <b>whether Pulisic is in the squad and his minutes</b>, Roldan's fitness; ③ Yunus Akgun's fitness (not expected to start anyway), whether Türkiye field a near-first-choice side; ④ whether Montella fixes the centre-forward shortfall (whether Deniz Gul starts); ⑤ Ghorbal's full officiating team and VAR combination, and his per-match card/penalty breakdown at this/2022 World Cup; ⑥ the simultaneous Paraguay-Australia result has no impact on this match's atmosphere (this match is a pure dead rubber), but Group D's second-place placement is per FIFA's official ruling; ⑦ the handicap line and the totals line (O/U 2.5) — specific odds subject to the live pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49140112/usmnt-faces-world-cup-dilemma-vs-turkiye-rotate-squad-keep-same-xi">ESPN — USA rotation dilemma/predicted XI/Pulisic</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-lineup-uncertainty-turkiye-game-world-cup-knockouts/">CBS — Line-up uncertainty/yellow cards</a> · <a href="https://www.foxsports.com/stories/soccer/usmnt-world-cup-pulisic-turkiye-lineup-changes">FOX Sports — Changes/yellow-card avoidance</a><br>
+      • <a href="https://www.rotowire.com/soccer/article/turkiye-vs-usa-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-d-119483">RotoWire — Both predicted XIs/team news</a> · <a href="https://www.sportsmole.co.uk/football/predicted-lineups/calhanoglu-can-surpass-turkish-legend-predicted-turkey-lineup-vs-usa_599852.html">Sports Mole — Türkiye predicted XI</a> · <a href="https://www.goal.com/en-us/news/turkiye-usa-world-cup-preview/bltf76a14c4a45f5680">Goal — Preview</a> · <a href="https://www.skysports.com/football/news/17251/13553626/world-cup-2026-turkey-0-1-paraguay-vincenzo-montellas-side-eliminated-from-world-cup-after-back-to-back-defeats">Sky — Türkiye 0-1 elimination/no centre-forward</a><br>
+      • <a href="https://www.turkiyetoday.com/sports/mustapha-ghorbal-veteran-referee-taking-charge-of-turkiye-vs-usa-3222462">Türkiye Today — Ghorbal appointment</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referees list</a> · <a href="https://en.wikipedia.org/wiki/Mustapha_Ghorbal">Wikipedia — Ghorbal profile</a> · <a href="https://theanalyst.com/articles/fifa-world-cup-2026-groups-predictions-previews">Opta — Supercomputer/Group D probabilities</a> · <a href="https://www.cbssports.com/prediction/news/kalshi-world-cup-2026/">CBS — Kalshi prediction market</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D">Wikipedia — Group D</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021459">FIFA official Match Centre — Türkiye vs USA</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-24 · Charts use verified data, radar chart is an analyst composite assessment (USA rotation factored in) · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#e23b4e',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Türkiye win','Draw','USA win'],datasets:[{data:[28,23,49],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[46,54],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, slight lean to Under)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['USA','Türkiye','Paraguay','Australia'],datasets:[{data:[17,26,46,27],backgroundColor:[SC,HT,'#888','#e6c45a'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approximate)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Türkiye (first choice)',data:[6,4.5,8,7,7.5,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'USA (reserve side)',data:[6.5,6,6,6.5,6,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

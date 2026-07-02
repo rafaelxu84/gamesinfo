@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 伊拉克 vs 挪威 · 2026世界杯 I组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-iraq-vs-norway.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-iraq-vs-norway.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-iraq-vs-norway.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-iraq-vs-norway.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-iraq-vs-norway.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-iraq-vs-norway.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-iraq-vs-norway.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-iraq-vs-norway.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-4 · 2026 世界杯 · I组首轮 · Haaland 世界杯首秀梅开二度，挪威碾压伊拉克</span>
+  <h1>伊拉克 vs 挪威</h1>
+  <div class="meta">2026年6月16日 · 福克斯堡 Gillette Stadium · 18:00 ET · I组（同组：法国、塞内加尔）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇮🇶 伊拉克</div><div class="rk">FIFA #57 · 时隔40年重返世界杯（1986后首次）· 纪律型低位防守</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇳🇴 挪威</div><div class="rk">FIFA #32 · 时隔28年回归（1998后首次）· Haaland + Ødegaard 黄金一代</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 伊拉克 1-4 挪威（半场 1-2）· 数据来源 Opta Analyst / Sofascore / FOX Sports · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">挪威按剧本碾压。第 <b>29 分钟</b> Nusa 内切做球、David Møller Wolfe 边路插上低传，<b>Haaland</b> 大力捅射破门（世界杯首秀首球）。伊拉克并未崩盘，第 <b>38 分钟</b> Amir Al-Ammari 禁区内传中，<b>Aymen Hussein</b> 高高跃起头槌将比分扳成 1-1——这是伊拉克全场唯一的高光。但好景不长，门将 <b>Jalal Hassan</b> 处理回传迟疑、解围踢在 Haaland 小腿上弹入空门，半场前 <b>Haaland</b> 梅开二度（国家队 51 场 57 球）。下半场挪威彻底锁死比赛：第 <b>76 分钟</b>替补登场的 <b>Leo Østigård</b> 顶进 Ødegaard 角球；补时阶段 Haaland 的回做头球折射 <b>Hussein 自摆乌龙</b>，终场 1-4。射门 11-11 看似接近，但射正 <b>1-5</b>、控球 <b>34%-57%</b> 揭示了真实差距。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 29' Haaland（Wolfe 助攻，0-1）→ 38' Aymen Hussein 头球（1-1）→ 42' 前后 Haaland（门将失误，1-2）→ HT 1-2 → 76' Østigård（Ødegaard 角球，1-3）→ 90'+ Hussein 乌龙（1-4）</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇮🇶 伊拉克</th><th style="padding:6px">🇳🇴 挪威</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center">34%</td><td style="text-align:center"><b>57%</b></td><td style="padding:6px;color:var(--mut)">挪威如赛前预期掌控节奏，伊拉克被迫退守</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">11 / 1</td><td style="text-align:center">11 / <b>5</b></td><td style="padding:6px;color:var(--mut)">射门总数对等，但射正 1-5 暴露机会质量鸿沟</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">进球</td><td style="text-align:center">1（运动战）</td><td style="text-align:center"><b>4</b></td><td style="padding:6px;color:var(--mut)">挪威多点开花（2 Haaland + Østigård + 乌龙）</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">定位球得分</td><td style="text-align:center">0</td><td style="text-align:center"><b>1</b>（角球）</td><td style="padding:6px;color:var(--mut)">Ødegaard 角球 → Østigård 头槌，定位球如期奏效</td></tr>
+      <tr><td style="padding:6px">xG（预期进球）</td><td colspan="2" style="text-align:center;color:var(--warn)">公开 xG 明细未检得 · 待核</td><td style="padding:6px;color:var(--mut)">射正 5-1 与 4 球产出指向挪威 xG 明显占优</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① Haaland 兑现"破密集防线"的核心命题</div>赛前 Opta 把比赛归结为"伊拉克能否阻止 Haaland"——答案是不能。他世界杯首秀即梅开二度，一球来自边路低传的禁区抢点、一球来自门将失误的把握。<b>这说明挪威</b>：只要有人把球送进禁区，Haaland 的终结效率就是低位防线无法承受的，他是挪威碾压级火力的最直接出口。</div>
+    <div class="insight"><div class="who">② 挪威多点开花，不止 Haaland</div>4 球分别来自 Haaland(2)、替补 Østigård 的角球头槌、以及逼出的乌龙——Wolfe 助攻、Nusa 串联、Ødegaard 角球输送各显其能。<b>这说明挪威</b>：进攻结构是多通道的，即便对手专门盯 Haaland，边路（Nusa/Wolfe）与定位球（Ødegaard/Østigård）依旧能撕开防线，这正是赛前"多个得分出口"判读的兑现。</div>
+    <div class="insight"><div class="who">③ 伊拉克 4-4-2 中路被打穿，门将成胜负手</div>Arnold 排出 4-4-2 双前锋而非纯铁桶，中路只有两名中场，面对挪威三中场处于人数劣势——赛前"结构利好挪威破防"的担忧应验。更致命的是门将 Jalal Hassan 处理回传的低级失误直接送礼第二球。<b>这说明伊拉克</b>：进攻端有过头球扳平的高光（Hussein），但防守组织与门将稳定性不足，是被强队放大失球数的根源。</div>
+    <div class="insight"><div class="who">④ 伊拉克并非毫无还手之力</div>Hussein 的头球扳平、Bayesh 被门线封堵、Hashim 一记凌空抽射擦横梁而出——伊拉克全场 11 次射门并非纯挨打。<b>这说明伊拉克</b>：有反击与争顶的獠牙，问题在于把握度与个人失误，而非完全没有进攻能力；面对中下游对手时这套打法仍有竞争力。</div>
+    <div class="insight"><div class="who">⑤ 1-4 比分超出让球预期，证伪"伊拉克守住失球数"</div>赛前市场围绕挪威 -1.5/-2.5 让球与失球数博弈，伊拉克的现实目标是压低失球——结果丢 4 球（含 1 乌龙）彻底失守。<b>这说明</b>：当低位球队的门将与防守组织出现失误时，铁桶剧本会迅速瓦解，强弱差在大赛高压下被进一步放大。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✓ <b>挪威胜（去水≈79%，Opta 77.4%）→ 实际 1-4 完胜</b>：基准剧本"挪威 2-0/3-0"方向完全兑现，且<b>净胜 3 球超出预期</b>。</li>
+      <li>✓ <b>"Haaland 大概率破门" → 梅开二度</b>：世界杯首秀即 2 球，核心进球盘判断兑现。</li>
+      <li>✓ <b>大 2.5 球（Over 约 -170）→ 实际 5 球</b>：大球轻松兑现，市场偏向正确。</li>
+      <li>✓ <b>挪威 -1.5 / -2.5 让球被视为更锐角度 → 1-4 全数覆盖</b>：让球盘判读应验，挪威火力呼应预选赛场均 4.6 球。</li>
+      <li>✗ <b>"伊拉克力求控制失球数"</b>：丢 4 球，门将失误 + 定位球失守，控失球目标落空。</li>
+      <li>△ <b>"伊拉克全员退守铁桶" 预判被官方 4-4-2 微调</b>：双前锋让比赛更开放，中路空间确实利好挪威——赛前微调判读正确。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇳🇴 挪威 → 6/22 vs 塞内加尔（新泽西 MetLife · 20:00 ET）</div>下一场是真正的硬仗：塞内加尔虽首轮 1-3 负法国，但身体与速度远强于伊拉克，挪威的低位反击空间会被压缩。Haaland 状态火热（首秀 2 球）+ Ødegaard 角球已是稳定得分点；但本场门将与后防对位伊拉克的轻松不会重现，<b>挪威需证明对强对抗球队的破密集与防反能力</b>。位列 I 组榜首（与法国同积分、靠净胜球），出线主动权在握。</div>
+      <div class="insight" style="margin:0"><div class="who">🇮🇶 伊拉克 → 6/22 vs 法国（费城 · 17:00 ET）</div>更艰难的考验：法国首轮 3-1 胜塞内加尔、Mbappé 梅开二度，火力与挪威同级甚至更强。本场暴露的两大漏洞——<b>门将 Jalal Hassan 的失误</b>与<b>4-4-2 中路人数劣势</b>——必须修正，否则会被法国再次放大。Hussein 的头球能力是唯一可复制的得分路径（定位球/传中争顶）；现实目标仍是控失球、力争小组赛尾声搏取理论出线机会。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst、Al Jazeera/AFP、ESPN、France 24、Sky Sports、FOX Sports、FIFA 官方比赛中心。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>悬殊明确的强弱对话</b>：时隔 28 年重返世界杯的挪威（FIFA #32、Haaland + Ødegaard 领衔的黄金一代、预选赛 8 战全胜进 37 球）对阵时隔 40 年回归的伊拉克（FIFA #57、铁血防守、靠附加赛险胜玻利维亚晋级）。盘口几乎一边倒——挪威胜赔约 <b>1.22</b>（去水隐含 ≈79%），平局约 7.00（≈14%），伊拉克胜约 14.00（≈7%）。Opta 超算给挪威胜率 <b>77.4%</b>。比赛真正的看点不在 1X2，而在<b>胜负差与 Haaland 进球盘</b>：挪威 -1.5 / -2.5 让球、大球、以及 Haaland 是否破门，是市场最活跃的资金入口。基准剧本：<b>挪威 2-0 / 3-0 取胜</b>，Haaland 大概率破门；伊拉克全员退守、力求把失球数压到最低。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">挪威隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈79%</div></div>
+      <div class="key"><div class="k">伊拉克隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈7%</div></div>
+      <div class="key"><div class="k">伊拉克离开世界杯</div><div class="v" style="color:var(--warn)">40年</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Erling Haaland 的世界杯首秀</b>：预选赛 8 战 16 球（与 Lewandowski 并列单届预选赛历史纪录），市场资金集中在他的进球盘与首开纪录盘。</li>
+      <li><b>伊拉克能否守住失球数</b>：Graham Arnold 的伊拉克会摆出低位铁桶阵，赢球无望、求的是把比分差与 Haaland 进球数压到最低——这是让球盘的核心变量。</li>
+      <li><b>Martin Ødegaard 的中场组织</b>：阿森纳队长是挪威由守转攻的节拍器，撕开伊拉克密集防线、为 Haaland/Sørloth 输送的关键。</li>
+      <li><b>伊拉克临赛状态隐患</b>：6 月热身 1-1 平西班牙展现韧性，但随后 0-2 负委内瑞拉，进攻乏力、定位球与个人能力均处下风。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--accent);background:#0d1526;border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🆕 晨间临场更新（6/16） <span style="color:var(--mut);font-weight:400">· Solbakken 赛前 · 2026-06-16</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主帅 Solbakken 确认 Haaland"完全健康"；赔率深度倾向挪威</div>
+      <p style="font-size:13.5px">挪威主帅 Ståle Solbakken 赛前确认 Erling Haaland 完全健康——其在曼城赛季末获得短暂休整，训练中状态逐场提升。挪威预选赛 8 战全胜、进 37 球（含客场 4-1 胜意大利），Sørloth 本赛季西甲 13 球。盘口方面 bet365 给挪威 1.22（-450）、平 6.25（+525）、伊拉克 12.00（+1100），深度押挪威——与本页"挪威大热、伊拉克 28 年/40 年后回归搏冷"的判读一致。<span style="color:var(--warn)">[最终首发以赛前 T-60 官方名单为准 · 待核]</span></p>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.india.com/sports/fifa-world-cup-2026-erling-haaland-in-focus-as-norway-lock-horns-with-iraq-after-nearly-3-decades-of-absence-8448158/" style="color:var(--accent)">India.com — Haaland 体能</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/iraq-vs-norway-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aaXwW1a7805C/" style="color:var(--accent)">Racing Post — 团队消息/赔率</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">挪威 · Haaland 世界杯首秀 + 历史级预选赛 <span style="color:var(--mut);font-weight:400">· ESPN · Opta · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Haaland 预选赛 8 战狂轰 16 球</b>，平 Lewandowski 单届预选赛历史纪录；这是他的世界杯首秀</div>
+      <p style="font-size:13.5px">Erling Haaland 在挪威 2026 世界杯预选赛中 8 场打入 16 球，是全球进球最多的球员，比第二名多出 8 球，追平 Robert Lewandowski 保持的单届预选赛进球纪录。挪威是欧洲区唯一与英格兰一起 8 战全胜的球队，两回合双杀意大利（均净胜 3 球），8 场轰入 37 球仅失 5 球，场均 4.6 球——这是欧洲球队在单届世预赛（4 场以上）的历史最高场均进球。Haaland 现役国家队 50 场 55 球。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：挪威的进攻火力是本场的绝对主轴。市场对 1X2 几无悬念，真正的资金博弈集中在 Haaland 的进球盘与挪威让球幅度上。Haaland 面对伊拉克这类低位密集防线，能否高效转化机会，直接决定大小球与让球盘的结算。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49040890/world-cup-norway-erling-haaland-best-player-interview" style="color:var(--accent)">ESPN — Haaland 专访</a> · <a href="https://theanalyst.com/articles/iraq-vs-norway-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 超算前瞻</a> · <a href="https://www.olympics.com/en/news/fifa-world-cup-2026-norway-all-players-full-squad-list-key-stats-and-schedule" style="color:var(--accent)">Olympics.com — 挪威阵容/数据</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">伊拉克 · 附加赛晋级 + 临赛状态 <span style="color:var(--mut);font-weight:400">· FIFA · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">伊拉克<b>附加赛 2-1 险胜玻利维亚</b>，终结 40 年等待；热身 1-1 平西班牙、0-2 负委内瑞拉</div>
+      <p style="font-size:13.5px">伊拉克在墨西哥蒙特雷的洲际附加赛决赛中 2-1 击败玻利维亚，成为第 48 支也是最后一支锁定 2026 世界杯名额的球队，终结自 1986 年以来 40 年的世界杯缺席。此前他们靠 Amir Al-Ammari 在补时第 17 分钟的点球绝杀阿联酋（两回合总比分 3-2）才挺进附加赛。临赛热身赛韧性与隐患并存：6 月 4 日在拉科鲁尼亚 1-1 逼平西班牙令人印象深刻，但 6 月 9 日 0-2 负委内瑞拉后跌至 FIFA 第 57 位，进攻端持续低迷。<span style="color:var(--warn)">[最终首发与状态以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：伊拉克是靠惊险附加赛挤进世界杯的纯防守型球队，进攻产出有限。面对挪威的火力，他们唯一现实的目标是控制失球数。1-1 平西班牙说明他们能在强队面前组织起防线，但 0-2 负委内瑞拉又暴露了韧性与体能的不稳定——这正是让球盘的两面性所在。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://inside.fifa.com/news/world-cup-2026-line-up-complete-iraq-bolivia-play-off-fixtures" style="color:var(--accent)">FIFA — 伊拉克晋级</a> · <a href="https://www.espn.com/soccer/match/_/gameId/401871471/iraq-spain" style="color:var(--accent)">ESPN — 西班牙 1-1 伊拉克</a> · <a href="https://www.iraqinews.com/iraq/iraq-football-live-fifa-ranking-drop-venezuela-loss-2026/" style="color:var(--accent)">Iraqi News — FIFA 排名/委内瑞拉负</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">伊拉克 · 门将抉择 + 主帅 Arnold <span style="color:var(--mut);font-weight:400">· Sports Mole · Al Jazeera · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主帅 <b>Graham Arnold</b> 率队首秀；门将位置存在抉择（Jalal Hassan 预计首发）</div>
+      <p style="font-size:13.5px">澳大利亚籍主帅 Graham Arnold 于 2025 年 5 月接手伊拉克，曾率澳大利亚闯入 2022 世界杯 16 强。他带队穿越战区、外交混乱与最后时刻的附加赛，为伊拉克赢得 40 年来首张世界杯门票，归国时在悉尼受到英雄般欢迎。门将方面，35 岁的 Jalal Hassan 预计获得首发（媒体标注存在门将抉择）。Arnold 公开表示球队具备"震惊世界"的韧性。<span style="color:var(--warn)">[门将最终人选以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Arnold 的执教风格务实，擅长用低位防守与纪律性对抗强队（澳大利亚 2022 即如此）。伊拉克本场大概率摆出 4-2-3-1 / 5-4-1 的低位铁桶，门将的扑救表现将直接影响 Haaland 进球盘与大小球的结算结果。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/iraq/world-cup-2026/predicted-lineups/goalkeeper-change-predicted-iraq-xi-vs-norway_599208.html" style="color:var(--accent)">Sports Mole — 伊拉克首发/门将抉择</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/graham-arnold-appointed-iraq-coach" style="color:var(--accent)">FIFA — Arnold 任命</a> · <a href="https://www.aljazeera.com/sports/2026/4/6/world-cup-qualification-earns-iraq-coach-arnold-a-heros-welcome-in-sydney" style="color:var(--accent)">Al Jazeera — Arnold 英雄归国</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">挪威 · 主帅 Solbakken + 黄金一代 <span style="color:var(--mut);font-weight:400">· Goal · UEFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Solbakken 完美预选赛带队出线；Ødegaard、Sørloth、Nusa、Berge 撑起豪华阵容</div>
+      <p style="font-size:13.5px">主帅 Ståle Solbakken 以预选赛 8 战全胜的完美战绩带领挪威时隔 28 年（自 1998 后）重返世界杯。除 Haaland 外，阿森纳队长 Martin Ødegaard 司职中场核心，Alexander Sørloth（高中锋）、Antonio Nusa（边路爆点）、Sander Berge（富勒姆）、Kristoffer Ajer（布伦特福德）均效力五大联赛或英超，整体阵容深度与个人上限远超伊拉克。Solbakken 明确表示 Haaland 是球队历史性回归的最大驱动力。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：挪威不仅有 Haaland 的终结能力，还有 Ødegaard 的组织与 Sørloth 的支点——这意味着即便伊拉克专门盯防 Haaland，挪威仍有多个得分出口。这是支持大球与挪威让球的结构性依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.goal.com/en/originals/world-cup-2026-guide-norway/bltc3092e8066696cc2" style="color:var(--accent)">Goal — 挪威世界杯指南</a> · <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d1592b3f90-2ef16e2c5255-1000--norway-at-the-world-cup-2026-squad-fixtures-group-and-hi/" style="color:var(--accent)">UEFA — 挪威阵容/赛程</a> · <a href="https://leadership.ng/2026-world-cup-haaland-is-norways-secret-weapon-solbakken/" style="color:var(--accent)">Leadership — Solbakken 谈 Haaland</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· FIFA 官方比赛中心确认（开球前 T-60 公布）</span></h2>
+    <div class="sub">名单已由 FIFA 官方比赛中心 LINE UP 确认（双源一致，标 ✅ 官方确认）。事实（名单）与解读（影响）分列；解读落到速览主线上。</div>
+
+    <h4>🇮🇶 伊拉克 官方首发（4-4-2）<span class="tag" style="background:var(--good);color:#06210f">✅ 官方确认</span></h4>
+    <div class="lineup">Jalal Hassan (C); Hussein Ali · Zaid Tahseen · Akam Hashim · Merchas Doski; Ibrahim Bayesh · Amir Al-Ammari · Zaid Ismael · Ali Jasim; Ali Al-Hamadi · Aymen Hussein</div>
+    <div class="note">替补席关键武器：Mohanad Ali（前锋/奇兵）、Ahmed Qasem（边路）、Zidane Iqbal（技术型中场）。</div>
+
+    <h4>🇳🇴 挪威 官方首发（4-3-3）<span class="tag" style="background:var(--good);color:#06210f">✅ 官方确认</span></h4>
+    <div class="lineup">Nyland; Ryerson · Ajer · Heggem · Møller Wolfe; Berge · Ødegaard (C) · Aursnes; Sørloth · Haaland · Nusa</div>
+    <div class="note">替补席关键武器：Jørgen Strand Larsen（高中锋）、Oscar Bobb（边路突破）、Andreas Schjelderup（前场创造）。</div>
+
+    <h4 style="margin-top:14px">📊 vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">伊拉克阵型</td><td>4-2-3-1（单箭头）</td><td>4-4-2（双前锋）</td><td>Arnold 没摆纯铁桶——保留 Al-Hamadi + Aymen Hussein 两个反击/争顶出球点，但中路只剩两名中场，面对挪威三中场存在人数劣势</td></tr>
+      <tr><td class="ht">伊拉克中卫</td><td>Rebin Sulaka</td><td>Akam Hashim</td><td>中卫轮换，Hashim 顶替 Sulaka 搭档防线</td></tr>
+      <tr><td class="ht">伊拉克中场</td><td>Zidane Iqbal</td><td>Zaid Ismael</td><td>用更偏拦截/跑动的 Ismael 顶替技术型的 Iqbal，强化中路硬度而非出球</td></tr>
+      <tr><td class="ht">伊拉克门将</td><td>Jalal Hassan（预计·待核）</td><td>Jalal Hassan (C) ✅</td><td>门将抉择尘埃落定，且戴队长袖标——待核①清除</td></tr>
+      <tr><td class="sc">挪威全员</td><td colspan="2" style="text-align:center">11 / 11 与预测一致</td><td>本身就是信息：Solbakken 计划 A 执行、不留力不轮换，Ødegaard 戴队长袖标，Sørloth-Haaland-Nusa 三叉戟如期</td></tr>
+    </table>
+
+    <h4 style="margin-top:14px">🧭 战术解读</h4>
+    <ul class="cl">
+      <li><b>阵型信号（伊拉克）</b>：4-4-2 双前锋而非预想的 4-2-3-1/5-4-1 单箭头铁桶——Arnold 没有彻底龟缩，意在留两把反击尖刀、不被完全压死。代价是中路只有 Al-Ammari + Ismael 两名中场（Bayesh/Ali Jasim 偏边路），面对挪威 Berge-Ødegaard-Aursnes 三中场处于人数劣势。</li>
+      <li><b>关键对位</b>：肋部与中路空间会让给 Ødegaard。伊拉克无专职后腰保护，阿森纳队长找前插与直塞的窗口比对纯 5-4-1 更大——<b>结构上利好挪威破防效率</b>。</li>
+      <li><b>门将悬念落地</b>：Jalal Hassan 确认首发并戴队长袖标，其扑救稳定性仍是 Haaland 进球盘与大小球的结算变量。</li>
+      <li><b>挪威计划 A</b>：11/11 与预测一致，主力尽出、不轮换，印证赛前"全力拿下小组开门红"的判读。</li>
+      <li><b style="color:var(--good)">速览结论：维持</b>。挪威 2-0/3-0、Haaland 大概率破门的基准剧本不变。<b>微调</b>：伊拉克双前锋让比赛比预想更开放，中路空间利好挪威让球（-1.5）与大球一侧；同时给伊拉克留了一条极细的反击尾部线（不改变胜负判断）。</li>
+    </ul>
+
+    <h4 style="margin-top:14px">📈 市场反应</h4>
+    <p style="font-size:13.5px;margin:6px 0">首发与预测高度吻合——挪威 11/11 一致、伊拉克无核心伤退或重大意外，通常不触发明显盘口移动。赛前结构预计维持稳定：挪威胜 <b>1.22</b> / 平 ≈6.25–7.00 / 伊拉克胜 ≈12.00–14.00（bet365 口径，欧洲小数盘）。本场首发无爆点，无新增实时盘口异动数据。<span style="color:var(--mut)">（仅作事实陈述，不构成投注建议。）</span></p>
+
+    <div style="font-size:12px;margin-top:8px">来源：<a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021488" style="color:var(--good)">FIFA 官方比赛中心 — LINE UP</a> · <a href="https://khelnow.com/football/world-football-iraq-starting-lineup-vs-norway-fifa-world-cup-202606" style="color:var(--good)">Khel Now — 伊拉克首发</a> · <a href="https://onefootball.com/en/news/world-cup-2026-iraq-vs-norway-lineups-five-serie-a-stars-in-norway-squad-43018206" style="color:var(--good)">OneFootball — 挪威首发</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · I组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>I 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇮🇶 伊拉克</th><th>🇳🇴 挪威</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#57</td><td class="sc">#32</td></tr>
+      <tr><td>世界杯史</td><td class="ht">时隔 40 年重返（1986 后首次）</td><td class="sc">时隔 28 年回归（1998 后首次）</td></tr>
+      <tr><td>晋级方式</td><td class="ht">洲际附加赛 2-1 胜玻利维亚</td><td class="sc">欧洲区 8 战全胜小组头名直接晋级</td></tr>
+      <tr><td>近期战绩（热身赛）</td><td class="ht">1-1 平西班牙；0-2 负委内瑞拉；1-0 胜安道尔</td><td class="sc">预选赛 8 战全胜进 37 球；双杀意大利（净胜各 3 球）</td></tr>
+      <tr><td>主教练</td><td class="ht">Graham Arnold（澳大利亚籍）</td><td class="sc">Ståle Solbakken</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈14.00（隐含≈7%）</td><td class="sc">胜 ≈1.22（≈79%）· 平 ≈7.00（≈14%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大球为较锐一侧（Over 约 -175）；挪威 -1.5 让球（约 -175）是更锐的角度</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查世界杯正式交锋记录</td></tr>
+      <tr><td>核心球员</td><td class="ht">Aymen Hussein / Ali Jasim / Amir Al-Ammari</td><td class="sc">Erling Haaland（国家队 50 场 55 球）/ Martin Ødegaard</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈79/14/7）。赔率来源：bet365 / FanDuel（挪威 -450、平 +525、伊拉克 +1100 区间），美线转十进制：挪威约 1.22、平约 7.00、伊拉克约 14.00。Opta 超算模拟 25000 场：挪威胜 <b>77.4%</b>——与市场去水概率高度吻合，说明盘口定价合理。大小球与让球盘是本场最活跃的市场。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">挪威取胜几无悬念，1X2 本身不产生热度；真正的资金博弈在 Haaland 进球盘、挪威 -1.5/-2.5 让球与大球——这是 Haaland 首秀热度驱动的市场</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 胜负无悬念；热度集中在 Haaland 进球与让球幅度</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">由于结果近乎注定，1X2 资金平淡；但 Haaland 世界杯首秀的话题性带来大量进球props资金（首开纪录、任意时间进球、梅开二度等），加上挪威让球盘（-1.5/-2.5）与大球，整体成交量被推高。热度落在<b>边际市场而非胜负盘</b>。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：挪威胜 全部 · 伊拉克胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>挪威胜率 <b>77.4%</b>（超算 25000 次模拟）</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>挪威取胜</b>（多球差），Haaland 破门</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>挪威 -1.5 让球 + Haaland 进球盘</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>挪威轻松取胜；伊拉克力求控制失球</td></tr>
+      <tr><td>Yahoo Sports / ATS</td><td>美系投注媒体</td><td>大球为较锐一侧；挪威 -1.5 价值角度</td></tr>
+      <tr><td>Juve FC / FootItalia</td><td>预测媒体</td><td>挪威胜 + 大球；看好 Haaland 进球</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向 100% 统一，无人押伊拉克——这是合理共识而非过热。真正分歧在<b>让球幅度</b>（-1.5 vs -2.5）与 Haaland 进球数细分盘。情绪资金主要由 Haaland 首秀话题驱动，集中在进球 props 一侧。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>挪威胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="sc">≈1.22（-450）</td><td>重度倾斜；平 ≈7.00（+525）/ 伊拉克 ≈12.00（+1100）</td></tr>
+      <tr><td>06-15/16 截止</td><td>多平台</td><td class="sc">1.15–1.22（-650→-450）</td><td>挪威短赔区间窄幅波动，基本稳定</td></tr>
+      <tr><td>06-15/16</td><td>大/小球</td><td colspan="2" class="sc">大球为较锐一侧（Over 约 -175）；总分线偏高</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>挪威 -1.5 / -2.5</td><td colspan="2" class="sc">挪威 -1.5 约对应 -175 级别（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率几乎不动——结果定价稳定。最活跃的价格发现在<b>让球（-1.5/-2.5）与大小球</b>线，以及 Haaland 进球 props。挪威 -1.5 被多家视为更锐的角度（呼应其预选赛 8 场 37 球的火力）。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：挪威胜 77.4%——与博彩去水概率（≈79%）高度吻合，说明两池收敛、无情绪偏离。</li>
+      <li><b>舆论焦点</b>：几乎全部围绕 <b>Haaland 的世界杯首秀</b>——预选赛 16 球、平 Lewandowski 纪录的叙事占据绝大多数报道篇幅，进球 props 因此获得大量散户资金。</li>
+      <li><b>伊拉克叙事</b>：40 年等待 + Arnold 的"震惊世界"言论带来一定情绪流量，但未见显著推动胜负盘的资金（无人相信伊拉克会赢）。</li>
+      <li><b>Kalshi / 预测市场</b>：具体单场胜负概率数据未公开检得 <span style="color:var(--warn)">（待核）</span>；Haaland 进球细分盘成交量数据亦未见。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场胜负近乎注定、博彩与超算完全收敛的比赛，过热指数 <b>3/5</b>。热度并非来自 1X2，而是来自 <b>Haaland 首秀的进球 props</b> 与<b>挪威让球幅度</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://theanalyst.com/articles/iraq-vs-norway-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/iraq-vs-norway-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aaXwW1a7805C/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/iraq-vs-norway-picks-predictions-142115269.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iraq-vs-norway-06-16-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://tips.gg/article/iraq-vs-norway-betting-odds/">Tips.GG — 赔率汇总</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">挪威长时间控球、持续围攻伊拉克低位防线，角球大概率呈现明显的单边占优；伊拉克被迫解围出底线也会推升总角球数；市场数据待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇮🇶 伊拉克</th><th>🇳🇴 挪威</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">低位铁桶；反击与定位球为主；持球时间极少</td><td class="sc">高位控球围攻；边路传中 + Haaland/Sørloth 高空终结</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈2–4（多数时间防守，反击产出极低）<span style="color:var(--warn)">待核</span></td><td class="sc">≈6–9（持续围攻、边路传中频繁）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">低：缺乏顶级输送与制空点</td><td class="sc">极高：Haaland/Sørloth/Ajer 制空；Ødegaard 输送</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">明显劣势（被动防守、被迫失角）</td><td class="sc">明显占优（围攻型，角球主要由挪威获得）</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：挪威持球围攻、伊拉克被动解围，总角球数可能落在 9–13 区间，且<b>挪威方角球占比偏高</b>；常见基准线 O/U 10.5 或 11.5 均属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>挪威持球与压制优势明显，角球差大概率单边倾斜。若伊拉克全场退守、被迫不断解围出底线，挪威角球数会被进一步推高，角球让球盘与主盘走势高度联动。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>挪威围攻型打法支持总角球数偏高（≥10）；但若挪威早早大比分领先后降速控场，下半场角球产出可能回落。整体仍偏向"挪威方角球多、总数中高"的格局。</div>
+    <div class="insight"><div class="who">变量与两面性</div>若伊拉克铁桶成功、把比分压在 1-0 / 2-0，挪威会持续围攻、角球数高；若挪威早早 3-0 领先后大幅轮换降速，角球与进攻强度都会下降。比赛比分状态是角球总数的主要驱动。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为加蓬籍 <b>Pierre Atcho</b>，助理裁判 Boris Ditsoga 与 Amos Abeigne（均加蓬籍），第四官员 Amin Mohamed——全非洲执法团队。这是 Atcho 的<b>首届世界杯</b>。来源：ESPN / Dailysports / GHANAsoccernet。</div>
+    <h4>裁判背景与执法尺度（参考意义）</h4>
+    <ul class="cl">
+      <li><b>顶级赛事公开样本有限</b>：Atcho 的国际顶级大赛执法数据公开可查样本较少，其黄牌/点球倾向与控场风格<span style="color:var(--warn)">大部分待核</span>；其背景为 CAF（非洲足联）体系，通常对身体对抗的容忍度相对较高。</li>
+      <li><b>大赛单场场均出牌（本届实际）</b><span style="color:var(--warn)">待核</span>：缺乏 Atcho 在两届大赛级别的稳定执法样本，无法据此给出可靠的出牌均值预期。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——挪威领先后若降速控场，节奏管理受新规约束；半自动越位将精准捕捉 Haaland 的越位临界冲刺。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在一场强弱悬殊、挪威长时间控球的比赛中，犯规多集中在伊拉克半场的防守动作。若伊拉克在禁区内对 Haaland/Sørloth 的高空争顶或突破犯规，点球与黄牌概率随 Atcho 的尺度而异——但鉴于其顶级样本有限，裁判面不构成可操作的分析依据，主要影响在伊拉克累计黄牌与潜在点球风险。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span class="tag">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已确认，见上方"✅ 官方首发 &amp; 解读"模块）</div>
+    <h4>🇮🇶 伊拉克 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Jalal Hassan; Hussein Ali · Zaid Tahseen · Rebin Sulaka · Merchas Doski; Amir Al-Ammari · Zidane Iqbal; Ibrahim Bayesh · Ali Jasim · Ali Al-Hamadi; Aymen Hussein</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Aymen Hussein</td><td>前锋 / 单箭头</td><td>伊拉克进攻支点；身体对抗与争顶是有限的得分手段</td></tr>
+      <tr><td class="ht">Ali Jasim</td><td>前腰 / 进攻核心</td><td>伊拉克最具创造力的球员；前场组织与反击发起</td></tr>
+      <tr><td class="ht">Zidane Iqbal</td><td>中场 / 效力欧洲</td><td>技术型中场；持球与出球能力是中场屏障的关键</td></tr>
+      <tr><td class="ht">Amir Al-Ammari</td><td>中场 / 附加赛绝杀功臣</td><td>补时点球淘汰阿联酋；中场覆盖与定位球执行</td></tr>
+    </table>
+    <h4>🇳🇴 挪威 预测首发（4-3-3）</h4>
+    <div class="lineup">Nyland; Ryerson · Ajer · Heggem · Wolfe; Berge · Aursnes · Ødegaard; Nusa · Haaland · Sørloth</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Erling Haaland</td><td>前锋 / 曼城</td><td>世界杯首秀；预选赛 8 战 16 球（平 Lewandowski 纪录）；国家队 50 场 55 球</td></tr>
+      <tr><td class="sc">Martin Ødegaard</td><td>前腰 / 阿森纳</td><td>队长兼中场核心；由守转攻节拍器，撕开密集防线的关键</td></tr>
+      <tr><td class="sc">Alexander Sørloth</td><td>前锋 / 马竞</td><td>高中锋；第二制空点与终结者，分担 Haaland 的盯防压力</td></tr>
+      <tr><td class="sc">Antonio Nusa</td><td>边锋 / 莱比锡</td><td>边路爆点；速度与突破撕开伊拉克防线宽度</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / Tips.GG），<b>以赛前官方名单为准 · 待核</b>。伊拉克门将位置存在抉择（35 岁 Jalal Hassan 预计首发，待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇮🇶 伊拉克 · Graham Arnold</div>
+        <div class="role">4-2-3-1 / 5-4-1 低位铁桶 + 反击与定位球求分</div>
+        <ul class="cl">
+          <li>Arnold（曾率澳大利亚闯入 2022 世界杯 16 强）的招牌是务实纪律的低位防守：双后腰锁中路、全员退守压缩空间，专门盯防 Haaland 的接球区域。</li>
+          <li>进攻依赖 Ali Jasim 的个人创造与 Aymen Hussein 的支点争顶；反击与定位球是为数不多的得分手段，整体进攻产出有限。</li>
+          <li>风险：面对挪威多点进攻（Haaland + Sørloth + Nusa + Ødegaard），单纯盯人难以全面覆盖；体能与专注力若在下半场下滑，失球数可能放大。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇳🇴 挪威 · Ståle Solbakken</div>
+        <div class="role">4-3-3 控球围攻 + Haaland/Sørloth 双高点终结</div>
+        <ul class="cl">
+          <li>挪威以控球与高位围攻为主，Ødegaard 在中场组织、边路 Nusa 提供宽度与突破，再通过传中与直塞喂给 Haaland、Sørloth 两个制空与终结点。</li>
+          <li>预选赛 8 战 37 球的火力说明其进攻多点开花——即便对手专门盯防 Haaland，仍有 Sørloth、Nusa、Ødegaard 多个出口。</li>
+          <li>风险：面对低位铁桶，破密集防守需要耐心；若久攻不下、心态急躁，理论上存在被反击或定位球偷袭的小概率尾部风险（但概率极低）。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>挪威在 25000 次模拟中胜率 77.4%，量化模型与市场赔率高度吻合。报告将比赛核心问题归结为一句话："伊拉克能否阻止 Erling Haaland？"——强调挪威预选赛 8 场 37 球的历史级火力，以及伊拉克作为纯防守型升班马的明显技术差距。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>预测挪威多球差取胜、Haaland 破门，同时指出伊拉克门将位置存在抉择（35 岁 Jalal Hassan 预计首发）。认为伊拉克唯一现实目标是控制失球数，比赛走向取决于挪威破密集防守的效率。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· Racing Post / ATS</small></div>多家美/英系媒体将 <b>挪威 -1.5</b> 视为比单纯胜负盘更锐的角度，呼应挪威预选赛场均 4.6 球的火力；大球同样被视为较锐一侧。Haaland 进球 props 是 Haaland 首秀话题驱动的散户主战场。</div>
+    <div class="insight"><div class="who">综合 · 伊拉克侧画像 <small>· 战术信号</small></div>伊拉克是靠惊险附加赛挤进世界杯的纯防守队——40 年等待、Arnold 的"震惊世界"言论是情绪叙事，但实力差距客观存在。1-1 平西班牙说明他们能在强队前组织防线；0-2 负委内瑞拉又暴露不稳定。本场真正悬念是失球数，而非胜负。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：挪威 2-0 / 3-0 取胜是基准剧本；Haaland 大概率破门。平局（约 14%）与伊拉克胜（约 7%）均为小概率尾部风险，伊拉克爆冷需要极致铁桶 + 反击/定位球偷袭 + 门将神勇同时发生。</li>
+      <li><b>关键先生</b>：Haaland（挪/终结与进球 props 核心）、Ødegaard（挪/破密集防守的组织者）、Ali Jasim（伊/唯一创造力出口）、Jalal Hassan（伊/门将扑救决定失球数）。</li>
+      <li><b>胜负手</b>：这场比赛的真正看点不是"谁赢"，而是<b>挪威破密集防守的效率与失球数</b>——决定让球盘（-1.5/-2.5）与大小球的结算。Haaland 能否高效转化是 Haaland 进球 props 的核心。</li>
+      <li><b>市场视角</b>：博彩与 Opta 超算完全收敛（≈79% / 77.4%），1X2 无价值；最有信息含量的市场是<b>挪威让球（-1.5）与大球</b>，以及 Haaland 进球细分盘。过热指数 3/5（热度来自 Haaland 首秀，而非胜负盘）。</li>
+    </ul>
+    <div class="flag">✅ <b>已确认</b>：伊拉克门将 Jalal Hassan(C) 首发 + 双方官方首发名单（见上方"✅ 官方首发 &amp; 解读"模块）。<b>待核</b>：③ 主裁 Atcho 顶级赛事执法样本与黄牌/点球倾向（公开数据有限）；④ Atcho 在本届/近两届大赛的实际场均出牌数据未检得；⑤ Kalshi/Polymarket 单场价格与 Haaland 进球 props 成交量未公开检得；⑥ 角球具体盘口数据未检得；⑦ 亚盘让球线（-1.5/-2.5）与大小球总分线具体赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49047658/fifa-world-cup-2026-iraq-vs-norway-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://theanalyst.com/articles/iraq-vs-norway-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/iraq/team-news">FIFA 官方 — 伊拉克队况</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/iraq/world-cup-2026/preview/iraq-vs-norway-prediction-team-news-lineups_599176.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.sportsmole.co.uk/football/iraq/world-cup-2026/predicted-lineups/goalkeeper-change-predicted-iraq-xi-vs-norway_599208.html">Sports Mole — 伊拉克首发/门将抉择</a> · <a href="https://www.rotowire.com/soccer/article/iraq-vs-norway-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-118221">Rotowire — 首发/战术</a> · <a href="https://tips.gg/article/iraq-norway-predicted-lineups-story/">Tips.GG — 预测首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/iraq-vs-norway-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aaXwW1a7805C/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/iraq-vs-norway-picks-predictions-142115269.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iraq-vs-norway-06-16-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://tips.gg/article/iraq-vs-norway-betting-odds/">Tips.GG — 赔率汇总</a><br>
+      • <a href="https://inside.fifa.com/news/world-cup-2026-line-up-complete-iraq-bolivia-play-off-fixtures">FIFA — 伊拉克晋级（胜玻利维亚）</a> · <a href="https://www.espn.com/soccer/match/_/gameId/401871471/iraq-spain">ESPN — 西班牙 1-1 伊拉克</a> · <a href="https://www.iraqinews.com/iraq/iraq-football-live-fifa-ranking-drop-venezuela-loss-2026/">Iraqi News — FIFA 排名 #57</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/graham-arnold-appointed-iraq-coach">FIFA — Arnold 任命</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49040890/world-cup-norway-erling-haaland-best-player-interview">ESPN — Haaland 专访</a> · <a href="https://www.goal.com/en/originals/world-cup-2026-guide-norway/bltc3092e8066696cc2">Goal — 挪威世界杯指南</a> · <a href="https://www.uefa.com/european-qualifiers/news/02a6-20d1592b3f90-2ef16e2c5255-1000--norway-at-the-world-cup-2026-squad-fixtures-group-and-hi/">UEFA — 挪威阵容/赛程</a> · <a href="https://dailysports.net/news/gabon-referee-pierre-atcho-to-officiate-iraq-vs-norway-2026-world-cup-clash-in-boston/">Dailysports — 裁判 Atcho</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-15 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['挪威胜','平局','伊拉克胜'],datasets:[{data:[79,14,7],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:90,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[64,36],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏向大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['法国','塞内加尔','挪威','伊拉克'],datasets:[{data:[3,15,32,57],backgroundColor:['#1d3a8f','#1aa84a',SC,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'伊拉克',data:[6.5,4,5,4.5,4.5,4],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'挪威',data:[7,9,8,7.5,9.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

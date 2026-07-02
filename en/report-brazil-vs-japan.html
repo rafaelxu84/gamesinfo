@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Brazil vs Japan · 2026 World Cup Round of 32 (Winner advances to Round of 16 · Brazil heavy favorites · Japan seek revenge after Oct 2025 3-2 win)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-brazil-vs-japan.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-brazil-vs-japan.html">
+<link rel="alternate" hreflang="es-MX" href="https://pksport.net/es/report-brazil-vs-japan.html">
+<link rel="alternate" hreflang="pt-BR" href="https://pksport.net/pt/report-brazil-vs-japan.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-brazil-vs-japan.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-brazil-vs-japan.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="https://pksport.net/es/report-brazil-vs-japan.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-brazil-vs-japan.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🏁 Full Time · Score Brazil 2-1 Japan · 2026 World Cup · Round of 32 · Brazil snatch stoppage-time winner to reach Round of 16</span>
+  <h1>Brazil vs Japan</h1>
+  <div class="meta">Monday, 29 June 2026 · Houston, NRG Stadium · 1:00pm ET <span style="color:var(--warn)">[some sources list 3:00pm ET / 20:00 GMT; kickoff time per official FIFA · TBC]</span> · Round of 32 · Winner advances to Round of 16</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇧🇷 Brazil</div><div class="rk">Group C winners · 7 pts (3-0 Scotland in final group game) · Coach Carlo Ancelotti · Vinícius Jr in red-hot form (scored in every group game) · Raphinha out (hamstring) · Rodrygo / Estêvão / Militão ruled out for the tournament</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇯🇵 Japan</div><div class="rk">Group F runners-up · 5 pts (1-1 Sweden confirmed qualification) · Coach Hajime Moriyasu · 3-4-2-1 system · Beat Brazil 3-2 in Oct 2025 friendly (first-ever win) · Itakura fitness doubt / Kubo out (knee)</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (written by daily-analysis 06-29/30) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review: Tactics & Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Brazil 2-1 Japan (HT 0-1) · 06-29</span></h2>
+
+    <h4>① Score Timeline</h4>
+    <p style="font-size:13.5px">Houston, NRG Stadium: a <b>2-1 comeback in which "Japan struck first and Brazil snatched it at the death."</b> Japan opened with their 3-4-2-1 high-press system and drew first blood—<b>Kaishu Sano scored a superb solo effort on 29 minutes</b>, sending Japan 1-0 ahead at half-time, almost replicating the script of the October 2025 Tokyo friendly. Brazil raised the tempo after the break, and on <b>56 minutes Casemiro headed home the equalizer</b> from a Gabriel Magalhães cross (Casemiro had been poor in the first half and booked early, with his slack defending contributing to Japan's goal—this header was his redemption). Brazil then laid siege, with Vinícius Jr's shot tipped onto the post by a superb Zion Suzuki save, and the deadlock held into stoppage time—<b>on 90+6 minutes Gabriel Martinelli (on as a 66th-minute substitute) was played in by Bruno Guimarães and finished low for the winner</b>, completing Brazil's 2-1 comeback and progress to the Round of 16. Of note: this was Brazil's <b>first time NOT being eliminated at the first knockout stage of a World Cup since 1990</b> (pre-match Opta facts: Brazil had been knocked out in four of their last six World Cup knockout games); Japan, meanwhile, have <b>won just 1 of 14 meetings with Brazil—and that lone win remains the October 2025 Tokyo friendly</b>—and exit at the Round of 32.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 29' Sano (JPN · solo effort) · 56' Casemiro (BRA · header, assist Gabriel Magalhães) · 90+6' Martinelli (BRA · winner, assist Bruno Guimarães) · HT 0-1 · FT Brazil 2-1 Japan</div>
+
+    <h4 style="margin-top:16px">② Key Data Comparison (Opta / theanalyst)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇷 Brazil</th><th>🇯🇵 Japan</th><th>Read</th></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.72</b></td><td>0.23</td><td>A wide gap: Brazil's 1.72 xG dwarfs Japan's 0.23, showing Brazil dominated chance quality—the late winner was the logical reward for sustained pressure, not luck; Japan's 0.23 reflects how heavily their goal depended on Sano's low-xG individual moment</td></tr>
+      <tr><td class="ht">Possession</td><td><b>55%</b></td><td>36%</td><td>Brazil dominated possession (~9% contested/neutral), but unlike "sterile possession"—Brazil converted it into a real threat of 19 shots / 7 on target</td></tr>
+      <tr><td class="ht">Shots / on target</td><td><b>19 / 7</b></td><td>5 / 2</td><td>Brazil overwhelmed on shots and shots on target (19-5, 7-2); Japan managed just 5 shots all game—a classic "few but selective" counter-attacking profile built on efficiency, not volume</td></tr>
+      <tr><td class="ht">Successful passes</td><td><b>630</b></td><td>267</td><td>Brazil completed 2.4x as many passes as Japan, controlling tempo and territory; Japan ceded the ball, sat deep and waited to counter</td></tr>
+      <tr><td class="ht">Key man</td><td colspan="2"><b>Gabriel Martinelli (BRA): on 66', winner on 90+6'</b></td><td>Ancelotti's 66th-minute introduction of Martinelli was the decisive call—the fresh substitute settled it in stoppage time, showcasing Brazil's squad depth and bench impact</td></tr>
+      <tr><td class="ht">Historic milestone</td><td colspan="2"><b>Brazil's first time past the World Cup's first knockout round since 1990</b></td><td>Pre-match Opta facts noted Brazil had been knocked out in four of their last six World Cup knockout games—coming from behind here partly answers the "knockout fragility" question</td></tr>
+      <tr><td class="ht">Cards</td><td colspan="2">Casemiro booked early (then defended slackly on Japan's goal)<span style="color:var(--warn)"> · full card breakdown for both sides · TBC</span></td><td>After his booking Casemiro's defensive actions were limited, indirectly contributing to the goal—he then redeemed himself with the equalizing header</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Sources: <a href="https://theanalyst.com/articles/brazil-vs-japan-stats-world-cup-2026">Opta Analyst — Brazil 2-1 Japan Stats (xG 1.72 vs 0.23 · shots 19/5 · passes 630/267 · possession 55/36)</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760487">ESPN — Match Report (Sano 29' / Casemiro 56' / Martinelli 90+6')</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-japan-review-highlights">FIFA — Match Report & Highlights</a> · <a href="https://sports.yahoo.com/soccer/fifa-world-cup/japan-brazil-13532364/">Yahoo Sports — Box Score</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical Review</h4>
+    <div class="insight"><div class="who">The "Brazil's individual ceiling + overall intensity prevail" script delivered—but again only at the death</div>The pre-match read had Brazil as clear favorites (no-vig ≈55%). Brazil duly dominated chance quality (xG 1.72 vs 0.23, 19 shots, 7 on target), <b>yet did not win it until the 96th minute</b>. Transferable conclusion: <b>Brazil's penetration efficiency bogs down against a deep block plus high press, with breaking the deadlock heavily reliant on individual brilliance and bench depth—their knockout-stage slow starts are a genuine concern</b>.</div>
+    <div class="insight"><div class="who">Japan's 3-4-2-1 worked again—but this time it was only enough to "score first," not to "hold on"</div>The pre-match storyline was whether Japan's wing-back system could replicate the Tokyo night. It did: <b>Japan struck first via high press and fast transition (Sano's 29' solo) and led 1-0 at the break</b>, validating the blueprint. Transferable conclusion: <b>Japan's system can manufacture a shock lead, but just 5 shots and 0.23 xG all game expose a lack of sustained attacking output—against Brazil-level bench depth and second-half pressure, "can they protect a lead for 90+ minutes" is the ceiling of this system</b>.</div>
+    <div class="insight"><div class="who">Ancelotti's substitution won it: Martinelli on at 66', winner in stoppage time</div>Trailing 1-0, Brazil sent on Martinelli on 66 minutes, and the fresh legs delivered the killer blow in stoppage time. Transferable conclusion: <b>Brazil's squad depth is their core knockout asset—even amid an attacking injury crisis (Raphinha/Rodrygo/Estêvão out), the bench can still swing the game; that is margin for error teams with thinner squads, such as Japan, simply do not have</b>.</div>
+    <div class="insight"><div class="who">Casemiro's "a booking and a goal" captures the volatility of an aging midfield anchor</div>Casemiro was poor in the first half, booked early, and defended slackly on Japan's goal—then redeemed himself with the equalizing header after the break. Transferable conclusion: <b>the stability of Brazil's midfield shield is volatile; against opponents with more pace and transition efficiency, the holding midfielder's discipline and concentration is an exploitable risk</b>.</div>
+
+    <h4 style="margin-top:16px">④ Prediction Reconciliation</h4>
+    <table>
+      <tr><th>Pre-match main line</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Brazil heavy favorites to win (no-vig ≈55%)</td><td style="color:var(--good)"><b>✓ Hit</b></td><td>Brazil won 2-1 and advanced, dominating chance quality (xG 1.72 vs 0.23, 19 shots, 7 on target)—but won in the 96th minute, a harder ride than expected</td></tr>
+      <tr><td class="ht">Japan seek to replicate the Tokyo night (high press + fast transition, score first)</td><td style="color:var(--warn)"><b>~ Partly</b></td><td>Japan did score first via the 3-4-2-1 and led 1-0 at the break, validating the blueprint; but could not hold the lead as in the friendly—the comeback was not replicated</td></tr>
+      <tr><td class="ht">Vinícius Jr is Brazil's biggest threat</td><td style="color:var(--warn)"><b>~ Created threat, no goal</b></td><td>Vinícius beat two men and hit the post (superb Suzuki save), the most threatening player but without a goal—the scorers were Casemiro and sub Martinelli</td></tr>
+      <tr><td class="ht">Base scenario: Brazil control the game and win leaving no doubt</td><td style="color:var(--bad)"><b>✗ Missed</b></td><td>Brazil controlled the game (possession/shots/xG all in their favor), but "no doubt" failed—they trailed 0-1 and only won in stoppage time, suspense held to the final moment</td></tr>
+      <tr><td class="ht">Japan's attack lacks sustained threat (Kubo out, knee)</td><td style="color:var(--good)"><b>✓ Largely hit</b></td><td>Japan managed only 5 shots, xG 0.23—a lack of sustained output, with virtually no clear chances beyond Sano's individual moment, in line with the pre-match read</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward Transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#5aa8d8">🇧🇷 Brazil · Through to Round of 16 (5 July · MetLife Stadium)</h4>
+        <ul class="watch">
+          <li><b>Round-of-16 opponent is the winner of Norway vs Ivory Coast</b> (decided 30 June), <b>played Sunday 5 July at MetLife Stadium in New Jersey</b>—the next preview must lock the opponent before setting tactics.</li>
+          <li><b>"Knockout slow start" is a must-fix concern</b>: dragged to stoppage time by a deep block plus press here; against stronger sides they cannot rely on last-gasp winners and need better efficiency breaking down deep blocks.</li>
+          <li><b>Bench depth is a proven asset</b>: Martinelli's substitute winner showed the value of rotation—amid the attacking injury crisis (Raphinha/Rodrygo/Estêvão out), Ancelotti's substitution timing remains a decisive variable.</li>
+          <li><b>Casemiro's volatility bears watching</b>: the "a booking and a goal" duality flags holding-midfield discipline risk; midfield protection is key against pacy opponents.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#e8788a">🇯🇵 Japan · Out at Round of 32 (season wrap-up)</h4>
+        <ul class="watch">
+          <li><b>The 3-4-2-1 again proved it can manufacture a shock lead</b> (Sano's solo + a half-time lead over Brazil), a tactical foundation Moriyasu can carry into the next cycle.</li>
+          <li><b>The ceiling is "sustainability and game management"</b>: just 5 shots, 0.23 xG, and unable to hold a lead—against the bench depth and second-half pressure of elite sides, attacking sustainability and fitness management are the gaps to address.</li>
+          <li><b>Assets to take forward</b>: the individual quality of a young midfield (Sano and others) plus mature systemic discipline form the base for Japan to push deeper in knockout rounds next cycle; they need more front-line depth to control games once ahead.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Snapshot Summary ===== -->
+  <div class="summary">
+    <h3>📋 Snapshot Summary (read this first)</h3>
+    <p class="lead">This is a Round-of-32 tie that is <b>"a mismatch on paper but loaded with narrative tension"</b>—<b>Brazil top Group C (7 pts, a 3-0 demolition of Scotland in the final round); Japan finish Group F runners-up (5 pts, a 1-1 draw with Sweden to confirm qualification)</b>, with the winner advancing directly to the Round of 16. Bookmakers and the supercomputer agree: <b>Brazil are clear, heavy favorites</b>. bet365 price Brazil to win at 1.72 (American -138), Japan at 5.25 (+425) and the draw at 3.60 (+260); DraftKings and others open Brazil at 1.71 (-140). But the greatest narrative tension comes from the <b>October 2025 Tokyo friendly—Japan came from 0-2 down to win 3-2, their first-ever victory over Brazil</b>. Opta's pre-tournament simulations give Brazil a 62.1% chance of reaching the Round of 16; head-to-head, Brazil are 11-2-1 across 14 meetings, with that friendly the only defeat. Three core storylines: ① <b>Brazil's attacking injury crisis—Raphinha is on the World Cup injury table and out, while Rodrygo (knee), Estêvão (hamstring) and Militão (hamstring) are all ruled out for the tournament</b>; Ancelotti is expected to keep the same XI, with 19-year-old prospect Rayan replacing Raphinha alongside the in-form Vinícius Jr on the wing; ② <b>whether Japan's 3-4-2-1 wing-back system can again tear open Brazil's defense</b> (the tactical blueprint of the Tokyo comeback); ③ <b>the impact of Itakura's fitness doubt and Kubo's knee absence on both ends of Japan's game</b>. Base scenario: <b>Brazil control the game with their higher individual ceiling and overall intensity, chasing a win that leaves no doubt, while Japan bank on replicating the Tokyo night's high press and fast transitions</b>, overheat index ≈ 3/5 (Brazil favoritism + revenge narrative + Vinícius form buzz).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Brazil implied win % (no-vig)</div><div class="v" style="color:#e8788a">≈55%</div></div>
+      <div class="key"><div class="k">Japan implied win % (no-vig)</div><div class="v" style="color:#5aa8d8">≈18%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈27%</div></div>
+      <div class="key"><div class="k">Market overheat index</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic (multi-source)</b>: Brazil top Group C (7 pts), Japan finish Group F runners-up (5 pts), both already through to the Round of 32; <b>this is a single-leg knockout, the winner advancing to the Round of 16</b>, a draw going to extra time / penalties (knockout rules).</li>
+      <li><b>Head-to-head + revenge narrative (Opta / ESPN multi-source)</b>: Brazil are 11-2-1 against Japan across 14 meetings, winning 6 of the last 7; <b>their only defeat is the October 2025 Tokyo friendly, when Japan came from 0-2 down to win 3-2</b>, their first-ever win over Brazil—the single biggest psychological and media variable here.</li>
+      <li><b>Brazil's attacking injury wave (ESPN / Sports Mole multi-source)</b>: <b>Raphinha is on the World Cup injury table and out of this match with a hamstring problem</b>; Rodrygo (knee, March), Estêvão (hamstring, April) and Militão (hamstring) are all ruled out for the tournament. Ancelotti is expected to keep the final-round XI, <b>with 19-year-old Rayan (Bournemouth) replacing Raphinha</b>.</li>
+      <li><b>Vinícius Jr in red-hot form (ESPN / FIFA multi-source)</b>: he scored twice against Scotland in the final round (7', 45+3'), becoming one of the rare Brazil players to score in every group game—Brazil went on to win the title in each of the four previous such instances. Vinícius is Brazil's biggest threat here.</li>
+      <li><b>Japan carry-in—1-1 Sweden confirmed qualification (Al Jazeera / Sky / FIFA multi-source)</b>: Maeda finished a slick team move, Elanga curled in a 62nd-minute equalizer; Japan locked up Group F runners-up on 5 pts. Moriyasu's 3-4-2-1 is mature and settled; Itakura was taken off in the first half with discomfort (not thought serious, expected to play).</li>
+      <li><b>Brazil carry-in—3-0 win over Scotland to top the group (ESPN / FIFA multi-source)</b>: Vinícius ×2 + Cunha; Brazil's xG was a staggering 4.46 vs Scotland's 1.13, total control; Neymar came on in the 76th to make his tournament debut (having missed the first two games with a calf injury).</li>
+    </ul>
+  </div>
+
+  <!-- ===== Key Pre-Match News ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Pre-Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core module · with sources + why it matters</span></h2>
+    <div class="sub">First-hand news and status signals shaping this match, each explaining how it changes the tactics or the result (key players / starting XIs / injuries cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Raphinha out (hamstring) · Brazil's attacking injury wave <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / Goal consistent</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Brazil winger <b>Raphinha</b> is on the World Cup injury table and out against Japan with a hamstring problem; Rodrygo / Estêvão / Militão all ruled out for the tournament</div>
+      <p style="font-size:13.5px">According to ESPN, Sports Mole and Goal, Raphinha pulled his right hamstring in the group game against Haiti, missed the 3-0 final-round win over Scotland and has not yet returned to team training, leaving him <b>ruled out of this match</b>. Combined with Rodrygo (serious knee injury in March), Estêvão (hamstring tear playing for Chelsea in April) and Éder Militão (hamstring) all out for the tournament, Brazil's attacking and defensive depth are both structurally affected. <span style="color:var(--warn)">[Whether Raphinha returns later in the tournament · per official FIFA squad list · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Raphinha's absence reduces Brazil's right-side creativity. Ancelotti is expected to keep the same XI, with 19-year-old prospect Rayan (Bournemouth) stepping in—this would be Rayan's World Cup knockout debut. Brazil's attacking firepower is more concentrated on the left through Vinícius Jr, so the pressure on Japan's right wing-back (the Junya Ito side) will spike, while Rayan's lack of big-game experience is a potential uncertainty.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49129032/brazil-confirm-raphinha-hamstring-injury-world-cup-2026-return-uncertain-group-c" style="color:var(--accent)">ESPN — Raphinha hamstring confirmed</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/predicted-lineups/rayan-or-raphinha-predicted-brazil-xi-vs-japan_600205.html" style="color:var(--accent)">Sports Mole — Brazil predicted XI (Raphinha decision)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">⭐ Japan's Ko Itakura fitness doubt · expected to start <span style="color:var(--mut);font-weight:400">· Sports Mole / RotoWire multi-source · pre-match update</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Japan captain and center-back <b>Itakura (Ajax)</b> was taken off in the first half against Sweden with discomfort, <b>listed as "questionable" but projected to start and wear the captain's armband</b></div>
+      <p style="font-size:13.5px">Per Sports Mole and RotoWire, the 29-year-old Itakura was withdrawn in the first half of the 1-1 draw with Sweden due to undetermined discomfort, but it is <b>not thought to be a serious injury</b>, and he is expected to start again in Japan's settled 3-4-2-1 and sport the captain's armband. <span style="color:var(--warn)">[Itakura's actual availability and workload · per pre-match FIFA Match Centre · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Itakura is the organizing core and captain of Japan's back three, directly responsible for marking Vinícius / Cunha in the box and managing the offside line. If his fitness is limited or he is a late absentee, the coordination of the back three and the high-line risk rise—and against Vinícius's pace, any mistimed offside line can be played straight through.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/predicted-lineups/defensive-injury-doubt-predicted-japan-xi-vs-brazil_600207.html" style="color:var(--accent)">Sports Mole — Japan predicted XI (defensive doubt)</a> · <a href="https://www.rotowire.com/soccer/article/brazil-vs-japan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120069" style="color:var(--accent)">RotoWire — Predicted XI / tactics</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Japan's Takefusa Kubo out (knee) · Neymar's Brazil tournament debut <span style="color:var(--mut);font-weight:400">· World Soccer Talk / ESPN multi-source</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Kubo</b> not in Japan's projected XI with a knee injury; Brazil's <b>Neymar</b> made his tournament debut off the bench in the final round and is available</div>
+      <p style="font-size:13.5px">Per World Soccer Talk, Kubo (Real Sociedad) has returned to training on grass but his knee injury keeps him a doubt and out of the projected XI. On Brazil's side, <b>Neymar</b> missed the first two games with a calf injury and came on in the 76th minute against Scotland to make his tournament debut—he is <b>available here, though a start is undecided</b>. <span style="color:var(--warn)">[Whether Kubo features in the squad · Neymar start/bench · per official pre-match list · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Kubo is Japan's most creative ball-carrying outlet on the wing; his absence weakens a key link in transition, leaving Nakamura and Doan's wing-back drives to shoulder more of the creative load. If Neymar comes off the bench, he is a high-quality card for Brazil to break a deadlock or extend a lead late—but having only just returned, his minutes and form need managing.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://worldsoccertalk.com/world-cup/why-is-takefusa-kubo-not-playing-for-japan-against-sweden-at-the-2026-world-cup/" style="color:var(--accent)">World Soccer Talk — why Kubo is out</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/scotland-brazil-match-report-highlights" style="color:var(--accent)">FIFA — Scotland 0-3 Brazil (Neymar debut)</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 Carry-in · Brazil 3-0 Scotland (Vinícius ×2, Cunha) <span style="color:var(--mut);font-weight:400">· ESPN / FIFA / Al Jazeera multi-source</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Brazil cruise to a 3-0 win over Scotland to top Group C, <b>Vinícius scoring twice with an overwhelming 4.46 xG</b>, Neymar returning off the bench</div>
+      <p style="font-size:13.5px">Per ESPN, FIFA and Al Jazeera, Brazil cruised to a 3-0 win over Scotland in Miami: Vinícius Jr scored in the 7th and 45+3 minutes (another goal ruled out by VAR), and Matheus Cunha sealed it in the 60th (assisted by Bruno Guimarães). <b>Brazil's xG was a staggering 4.46 vs Scotland's 1.13</b>, near-total dominance. Neymar came on in the 76th to make his tournament debut.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: A single-game xG of 4.46 shows Brazil's attacking creativity is razor-sharp and the team is firing, with Vinícius the focal point. But Scotland's defensive quality was limited; Japan's compact 3-4-2-1 and high press are a different level of test entirely—the Tokyo friendly already proved Japan can come back to beat Brazil. Brazil must convert that high xG into actual control and cannot take Japan lightly.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/match/_/gameId/760465/brazil-scotland" style="color:var(--accent)">ESPN — Scotland 0-3 Brazil</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021455" style="color:var(--accent)">FIFA Match Centre — Scotland vs Brazil</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">🎯 Carry-in · Japan 1-1 Sweden (Maeda · Elanga equalizer) confirms qualification <span style="color:var(--mut);font-weight:400">· Al Jazeera / Sky / FIFA multi-source</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Japan draw 1-1 with Sweden to lock up Group F runners-up, <b>Maeda finishing a team move, Elanga curling in the equalizer</b></div>
+      <p style="font-size:13.5px">Per Al Jazeera, Sky Sports and FIFA, Japan drew 1-1 with Sweden: Maeda slotted home after a slick team move involving Doan and Ueda, and Elanga curled a left-foot strike from the corner of the box past an unsighted Zion Suzuki in the 62nd minute. Japan locked up Group F runners-up on 5 pts and advanced to the Round of 32, with Sweden through as one of the best third-placed teams.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: This draw showcased the quality of Japan's combination play and their refusal to settle for a point (they kept pushing in the second half). Moriyasu's 3-4-2-1 is now a mature, settled system and the tactical blueprint against Brazil—the same wing-back drives and fast transitions were the core weapons in the 2025 Tokyo comeback.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.aljazeera.com/sports/2026/6/26/japan-draw-1-1-with-sweden-at-world-cup-to-finish-second-in-group-f" style="color:var(--accent)">Al Jazeera — Japan 1-1 Sweden qualify</a> · <a href="https://www.skysports.com/football/japan-vs-sweden/report/549824" style="color:var(--accent)">Sky Sports — report / Elanga equalizer</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Betting Market Heat ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert aggregation / odds / money flow / public opinion</span></h2>
+    <div class="sub">This is a "Brazil clear favorites, but the market cannot ignore the memory of the 3-2 Tokyo comeback" tie—the market seeks a pricing balance between Brazil's strength and Japan's upset narrative</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · Brazil favoritism + revenge narrative + Vinícius form buzz</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Brazil opened as heavy favorites (around 1.71, American -140), but Japan's +425 price is more respected than the "talent gap" would suggest—the market clearly factors in the memory of the October 2025 3-2 Tokyo comeback and the maturity of Japan's 3-4-2-1. Vinícius goal props and the Brazil multi-goal handicap are where public money concentrates.</div>
+    </div>
+
+    <h4>① Expert aggregation</h4>
+    <table>
+      <tr><th>Who</th><th>Identity</th><th>View / Pick</th></tr>
+      <tr><td>Opta Analyst (supercomputer)</td><td>Model</td><td>Brazil pre-tournament sims give a 62.1% chance to reach the Round of 16; H2H 11-2-1 across 14 (only loss = Tokyo 3-2, Oct 2025)—clearly favor Brazil</td></tr>
+      <tr><td>RotoWire</td><td>North American data outlet</td><td>Favor a Brazil win; emphasize Vinícius's hot form and Brazil's overall strength, but flag Raphinha's absence weakening the right</td></tr>
+      <tr><td>Racing Post</td><td>British heritage outlet</td><td>Bet Builder (a 5-1 line) including a Brazil win and a Vinícius goal; lean Brazil overall but flag Japan's counter threat</td></tr>
+      <tr><td>Goal.com</td><td>General outlet</td><td>"Seleção see off resilient Samurai Blue"—predict a narrow Brazil win, but acknowledge Japan can cause trouble</td></tr>
+      <tr><td>Bookmakers Review</td><td>Odds / lines outlet</td><td>Analyze Under 2.5 being favored and value in Brazil -1.5; note Japan's 3-4-2-1 defensive discipline</td></tr>
+      <tr><td>bet365 News</td><td>Sportsbook analysis</td><td>Brazil to win at 1.72 (-138), emphasize the Vinícius and Cunha front line, but Japan at +425 carries a genuine upset premium</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Time point</th><th>Market</th><th>Brazil / Draw / Japan</th><th>Reading</th></tr>
+      <tr><td>Opening (after tie set · ~6/26)</td><td>1X2 · DraftKings</td><td class="sc">≈1.71 / 3.60 / 5.40 <span style="color:var(--warn)">[exact opening Draw/Japan TBC]</span></td><td>Brazil open at -140 (American) as heavy favorites; Japan around +420, the market respects their upset potential</td></tr>
+      <tr><td>Current (6/27→pre-match)</td><td>1X2 · bet365</td><td class="sc">≈1.72 / 3.60 / 5.25 <span style="color:var(--warn)">[per live odds]</span></td><td>Brazil -138, Japan +425, draw +260; lines stable, no significant one-way money shock</td></tr>
+      <tr><td>Totals + handicap</td><td colspan="2" class="sc">Totals O/U 2.5 lean Under (Under around -130, Over +105); Brazil -1.5 handicap around +210 (American)</td><td>The market expects a lower-scoring game—Japan's defensive discipline + Brazil's need for a steady knockout approach → an Under consensus; the -1.5 premium shows a "Brazil multi-goal win" is not the default outcome</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning & trend (opening → current)</h4>
+    <table>
+      <tr><th>Time point</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening (tie set · ~6/26)</td><td class="sc">Brazil around -140 (DECIMAL ≈1.71); Japan around +420 (≈5.40); draw ≈3.60</td><td>Priced on tiering by strength (Brazil five-time world champions, Opta top-six title chance vs Japan an Asian power) + Group C winners on 7 pts vs Group F runners-up on 5 pts; Brazil heavy favorites but Japan not deeply written off <span style="color:var(--warn)">[exact opening · TBC]</span></td></tr>
+      <tr><td>Post-open repricing (~6/27)</td><td class="ht">Brazil around -138 (DECIMAL ≈1.72) · Japan ≈5.25 · draw ≈3.60</td><td><b>Repricing drivers</b>: ① Brazil's 3-0 win over Scotland, xG 4.46 → form positive; ② but Raphinha's absence + the attacking injury wave priced in, so Brazil not shortened further; ③ the memory of the 2025 Tokyo 3-2 comeback + Japan's steady 1-1 Sweden qualification → Japan's price eased slightly from +420 to +425, the draw price drawing attention</td></tr>
+      <tr><td>Current (6/27→pre-match)</td><td class="sc">Brazil around 1.72; totals O/U 2.5 (Under -130 mainstream); handicap -1.5 (around +210)</td><td>Market positioning is clear: <b>Brazil heavy favorites but not a blowout-level lock</b>—Japan's ≈18% win + ≈27% draw add up to ~45%, and in a single knockout game an upset has genuine room; <b>Under 2.5 is mainstream</b>, consistent with "Brazil's steady knockout approach + Japan's compact defense"; Vinícius goal props are driven by public sentiment. Positioning tier: <b>clear favorite (with a revenge-narrative premium), the core action in handicap depth and totals</b></td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a "Brazil structural heavy favorites, but Japan carry a 2025 comeback memory and a mature system" tie, overheat index <b>3/5</b>. Vinícius's form and Brazil's brand may inflate props and the multi-goal handicap, but the Brazil -1.5 at +210 premium and the Under 2.5 mainstream reveal the market is not convinced of an "easy Brazil rout"—Japan's ≈18% win and ≈27% draw add up to ~45%, leaving genuine upset room in a single knockout game. Exact opening figures per each book · TBC. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets & ④ public opinion</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket prediction markets</b>: mainstream prediction markets generally give Brazil a high probability to advance, aligned with the Opta supercomputer in favoring Brazil. <span style="color:var(--warn)">[exact shares · TBC]</span></li>
+      <li><b>Opinion focus ①</b>: <b>the October 2025 Tokyo 3-2 comeback</b>—Japan's FA chief publicly called this tie potentially "the biggest in Japan's World Cup history," and Zico also warned Brazil that "Japan are ready"; the revenge/upset narrative is the biggest opinion anchor here.</li>
+      <li><b>Opinion focus ②</b>: <b>Vinícius Jr's red-hot form</b>—scoring in every group game, seen as a key engine on Brazil's title run; opinion is heavily focused on whether he can sustain that form to tear open Japan's back three.</li>
+      <li><b>Opinion focus ③</b>: <b>Brazil's attacking injury wave</b>—Raphinha's absence + Rodrygo/Estêvão/Militão ruled out raises questions about Brazil's depth; but Neymar's return and Rayan's promotion add new storylines, and Brazil fans are cautiously optimistic.</li>
+      <li><b>Public money / social</b>: public money leans Brazil (favorite + Vinícius's individual effect), with casual books concentrating on Vinícius goal props and Brazil -1.5; some contrarian/professional money, per odds-outlet color, leans more toward the Under and Japan +425 / draw value. <span style="color:var(--warn)">[quantitative data · TBC]</span></li>
+    </ul>
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: this is a "Brazil structurally stronger, but Japan hold a comeback memory and a mature system" tie of medium-to-high heat, overheat index <b>3/5</b>. The revenge narrative inflates sentiment, but the mainstream Under and the -1.5 premium reveal the market's realistic expectation of a low-scoring / non-blowout outcome. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://dknetwork.draftkings.com/2026/06/26/opening-odds-for-brazil-vs-japan-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — opening odds</a> · <a href="https://news.bet365.com/en-us/article/brazil-vs-japan-world-cup-odds-picks-predictions/2026062711392040031">bet365 News — odds / picks</a> · <a href="https://www.bookmakersreview.com/analysis/brazil-vs-japan-odds-props-world-cup-round-of-32-betting-preview/626849/">Bookmakers Review — line analysis</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/brazil-vs-japan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-an0fT2s0iEmv/">Racing Post — Bet Builder</a> · <a href="https://theanalyst.com/articles/fifa-world-cup-2026-groups-predictions-previews">Opta Analyst — supercomputer</a></div>
+  </section>
+
+  <!-- ===== Deep Data ===== -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· historical averages vs this-tournament actuals · underlying quality signals · with sources</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments)</b> against <b>this-tournament actuals (group stage)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this-tournament actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This-tournament actual (group stage)</th><th>Delta & reading</th></tr>
+      <tr><td class="ht">🇧🇷 Brazil · attack</td><td class="ht">2022 World Cup QF exit (penalty loss to Croatia); 2018 QF exit; five-time world champions; under Ancelotti built around Vinícius / Cunha / Paquetá</td><td class="ht">Group C winners on 7 pts; final round 3-0 Scotland with a <b>staggering 4.46 xG</b> (ESPN report); Vinícius scored in every group game; output and quality both on point</td><td><b>Above historical expectation</b>: a 4.46 xG in the final round shows razor-sharp attacking creativity and hot form. But the attacking injury wave (Raphinha out + 3 ruled out) weakens depth <span style="color:var(--warn)">(complete per-game xG for the first two games · TBC)</span></td></tr>
+      <tr><td class="ht">🇧🇷 Brazil · defense</td><td class="ht">Historically world-class defensive resources; this tournament Militão (hamstring) is out, weakening center-back depth; Marquinhos / Gabriel and others anchor</td><td class="ht">Solid group-stage defense (clean sheet vs Scotland in the final round); compact overall structure</td><td><b>Solid but depth eroded by injuries</b>: facing Japan's fast transitions and wing-back drives (conceded 3 in Tokyo 2025) is a genuine test</td></tr>
+      <tr><td class="sc">🇯🇵 Japan · attack</td><td class="sc">2022 World Cup Round of 16 (penalty loss to Croatia, beat Germany/Spain in the group); <b>3-2 comeback win over Brazil in Tokyo, Oct 2025</b> (first-ever win); 3-4-2-1 wing-back system</td><td class="sc">Group F runners-up on 5 pts; 1-1 Sweden (Maeda finished a team move); attack relies on wing-back drives and fast transitions</td><td><b>In line with the system's expectation</b>: high-quality combination play, but Kubo's knee absence weakens wing creativity. The Tokyo comeback proves their counters can hurt Brazil <span style="color:var(--warn)">(per-game xG this tournament · TBC)</span></td></tr>
+      <tr><td class="sc">🇯🇵 Japan · defense</td><td class="sc">Back-three discipline is good; Itakura / Tomiyasu / Hiroki Ito anchor; Zion Suzuki in goal</td><td class="sc">Solid group-stage defense; only 1 conceded vs Sweden (Elanga long-range); compact overall</td><td><b>Defense is the system's bedrock</b>: but Itakura's fitness doubt + facing Vinícius's pace make offside-line management the biggest risk</td></tr>
+    </table>
+    <div class="note">📌 <b>Key reading</b>: Brazil's 4.46 xG against Scotland in the final round (ESPN report) is an important baseline—showing Brazil's attacking creation is at a high level this tournament, with Vinícius the focal point. But Scotland's defensive quality is far below Japan's compact 3-4-2-1, and the 2025 Tokyo 3-2 proves Japan's fast transitions can hurt Brazil directly. The data supports a "Brazil strong but not guaranteed to dominate, beware Japan's counters" expectation. Sources: ESPN xG report / FIFA / Opta Analyst.</div>
+
+    <h4>② This-match projection & Opta calibration + trap reminders</h4>
+    <table>
+      <tr><td>This-match model xG projection (magnitude)</td><td class="sc">Brazil ≈1.8–2.2</td><td class="ht">Japan ≈0.8–1.1</td><td>Brazil's individual quality + attacking creation lead; Japan's counters are infrequent but high-value (wing-back fast transitions)—consistent with the totals leaning Under</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Opta pre-tournament sims: Brazil 62.1% to reach the Round of 16; H2H Brazil 11-2-1 across 14 (6 wins in the last 7)—Brazil a clear tier above</td><td>Brazil's edge is clear, but the only defeat is the 2025 Tokyo 3-2—the supercomputer cannot fully quantify the "psychology / revenge" strategic variable</td></tr>
+      <tr><td>Pressing PPDA / xT / field tilt</td><td colspan="2" class="ht">National-team detailed public data is limited <span style="color:var(--warn)">(PPDA/xT TBC)</span>—qualitatively: Brazil's possession and field tilt lead; Japan's 3-4-2-1 high press and wing-back drives are the key tools to disrupt Brazil's build-up rhythm and create fast transitions (the Tokyo comeback blueprint)</td><td><b>Trap reminders</b>: ① Brazil's attacking injury wave (Raphinha out + 3 ruled out) weakens depth, Rayan lacks big-game experience; ② if Japan use 3-4-2-1 wing-backs to stretch wide + fast transitions, they can replicate the Tokyo comeback path; ③ Vinícius props may be overvalued on form buzz; ④ if Itakura's fitness is limited, Japan's back-three offside-line risk rises</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metrics quick reference (what these "xG-like" metrics mean)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; with penalties removed it better reflects open-play creation.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Big Chance</b>: a high-probability scoring chance—Brazil's 4.46 xG vs Scotland shows a wealth of high-quality chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press. <span style="color:var(--warn)">TBC</span></div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: the share of final-third touches; Brazil's possession system leans ahead; Japan rely on fast transitions rather than possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritizes public sources such as Opta/ESPN/FIFA; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and missing items are uniformly marked "TBC," never fabricated.</div>
+  </section>
+
+  <!-- ===== Match Referee ===== -->
+  <section>
+    <h2><span class="n">1</span> Match Referee & Officiating Context</h2>
+    <div class="note">✅ <b>Multi-source confirmed</b>: per OneFootball / Yahoo Sports / Football-Italia, the referee for this match is Italian international official <b>Maurizio Mariani</b>; assistant referees Daniele Bindoni and Alberto Tegoni, with Switzerland's Sandro Schärer as fourth official. The venue is Houston's <b>NRG Stadium</b> (a retractable-roof, climate-controllable stadium). <span style="color:var(--warn)">[Full officiating crew and VAR pairing · per official FIFA · TBC]</span></div>
+    <h4>Officiating standard + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Maurizio Mariani is a top-tier Italian referee, officiating in Serie A since 2014, internationally experienced, and added to FIFA's international list in 2022. His officiating is colored by the Serie A standard—sensitive to tactical fouls and shirt-pulling, with Serie A carding generally on the higher side. <span style="color:var(--warn)">[Mariani's exact per-game cards this tournament / career · TBC]</span></li>
+      <li><b>This tournament's standard</b>: the 2026 World Cup's unified new rules—only the captain may speak to the referee, the goalkeeper 8-second rule, and semi-automated offside (SAOT) precisely calibrating the sprint threshold. In the knockout stage referees are generally stricter on time-wasting and tactical fouls.</li>
+      <li><b>History with the two teams</b>: Mariani's notable public officiating history with Brazil and Japan is a limited sample, with no reliable major-tournament breakdown to cite—stated honestly, no figures fabricated. <span style="color:var(--warn)">[officiating record with the two teams · TBC]</span></li>
+      <li><b>Two-sidedness</b>: Japan must take risks and press / counter-press in the knockout → more midfield duels and tactical fouls; Brazil's Vinícius driving to the byline and physical duels in the box can easily create penalties or free-kicks (a positive for Brazil). Semi-automated offside will precisely adjudicate the sprint thresholds of Vinícius / Cunha and Japan's counters—especially crucial for Japan's high line. NRG's retractable roof is climate-controllable, so the risk of late fatigue-type fouls is lower than at an open-air, high-heat stadium.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-angle analysis</b>: Mariani's Serie A coloring is sensitive to tactical fouls, and intense knockout duels → the total card count may run on the higher side. On penalties, Vinícius's box drives and Japan's back-three marking duels can both create penalties; semi-automated offside is a double-edged sword for Japan's high line (it can rescue a tight call or chalk off a Japan counter goal). Given the limited historical officiating sample for Mariani with the two teams, treat related lines as a lean, not an actionable basis.</div>
+  </section>
+
+  <!-- ===== Data ===== -->
+  <section>
+    <h2><span class="n">2</span> Data (core)</h2>
+    <div class="sub">1X2 implied probabilities (vig removed) · qualification picture · totals market · overall strength profile — all charts are verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probabilities (no-vig, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 implied probabilities (no-vig)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group-stage points (both teams + their groups)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇷 Brazil</th><th>🇯🇵 Japan</th></tr>
+      <tr><td>Group-stage path</td><td class="ht">Group C winners · 7 pts; final round 3-0 Scotland (Vinícius ×2, Cunha) · xG 4.46</td><td class="sc">Group F runners-up · 5 pts; final round 1-1 Sweden (Maeda · Elanga equalizer) confirms qualification</td></tr>
+      <tr><td>Nature of this match</td><td colspan="2">Round of 32 single-leg knockout · winner advances to Round of 16 · draw goes to extra time / penalties</td></tr>
+      <tr><td>Head-to-head</td><td colspan="2" class="ht">Brazil 11-2-1 across 14 meetings (6 wins in the last 7); only loss = October 2025 Tokyo friendly, Japan came from 0-2 down to win <b>3-2</b> (first-ever win)</td></tr>
+      <tr><td>Head coach</td><td class="ht">Carlo Ancelotti (4-3-3, possession + individual quality-driven)</td><td class="sc">Hajime Moriyasu (3-4-2-1, wing-back drives + fast transitions)</td></tr>
+      <tr><td>Key players</td><td class="ht">Vinícius Jr (winger, hot form) · Matheus Cunha (striker) · Bruno Guimarães (midfield) · Casemiro · Neymar (returning off the bench)</td><td class="sc">Ayase Ueda (striker) · Daichi Kamada · Junya Ito · Ritsu Doan · Ko Itakura (captain)</td></tr>
+      <tr><td>Key absences/injuries</td><td class="ht">Raphinha out (hamstring); Rodrygo (knee) / Estêvão (hamstring) / Militão (hamstring) ruled out for the tournament; Rayan to start in his place</td><td class="sc">Kubo out (knee); Itakura fitness doubt (expected to play)</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">Win ≈1.72 (implied ≈55%)</td><td class="sc">Win ≈5.25 (implied ≈18%) · draw ≈3.60 (≈27%)</td></tr>
+      <tr><td>Totals / handicap</td><td colspan="2" class="sc">O/U 2.5 lean Under (Under around -130); Brazil -1.5 (around +210 American) · Opta pre-tournament: Brazil 62.1% to reach Round of 16</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are implied from DECIMAL odds with vig removed (Brazil 1.72 / draw 3.60 / Japan 5.25, normalized to roughly 55/27/18), clearly favoring Brazil. Totals mainstream leans Under 2.5 (Under around -130), and the Brazil -1.5 at +210 premium shows a "Brazil multi-goal win" is not the default outcome. American conversion: Brazil -138, Japan +425, draw +260. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- ===== Lineups (predicted) ===== -->
+  <section>
+    <h2><span class="n">3</span> Lineups & Recent Form <span style="font-size:11.5px;background:#1d3040;color:#7fd0e0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · unofficial · per pre-match FIFA Match Centre</span></h2>
+    <div class="sub">Predicted XIs (ESPN / Sports Mole / RotoWire projections, unofficial; official lists per pre-match FIFA Match Centre · TBC)</div>
+
+    <h4>🇧🇷 Brazil predicted XI (4-3-3) · Carlo Ancelotti</h4>
+    <div class="lineup">GK TBC; Vanderson · Marquinhos · Gabriel · Carlos Augusto; Casemiro · Bruno Guimarães · Paquetá; Vinícius Jr · Cunha · Rayan</div>
+    <table>
+      <tr><th>Player</th><th>Position/club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Vinícius Jr</td><td>LW / Real Madrid</td><td>Scored in every group game, two against Scotland in the final round; Brazil's biggest threat, the Japan right-wing-back side is the golden lane <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="ht">Matheus Cunha</td><td>Striker / Manchester United</td><td>Scored against Scotland in the final round; the attacking focal point, shouldering more of the finishing with Raphinha out <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="ht">Rayan</td><td>RW / Bournemouth</td><td>19-year-old prospect replacing the injured Raphinha; expected to make his World Cup knockout debut, big-game experience is the uncertainty <span style="color:var(--warn)">[start · TBC]</span></td></tr>
+      <tr><td class="ht">Bruno Guimarães</td><td>Midfield / Newcastle</td><td>Assisted Cunha's goal in the final round; the core of midfield organization and tempo control <span style="color:var(--warn)">[start TBC]</span></td></tr>
+    </table>
+
+    <h4>🇯🇵 Japan predicted XI (3-4-2-1) · Hajime Moriyasu</h4>
+    <div class="lineup">Z.Suzuki; H.Ito · Tomiyasu · Itakura(C); Doan · Tanaka · Sano · Nakamura; J.Ito · Kamada; Ueda</div>
+    <table>
+      <tr><th>Player</th><th>Position/club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Ayase Ueda</td><td>Striker / Feyenoord</td><td>The match-winning header in the 2025 Tokyo comeback over Brazil; the attacking focal point this tournament, his chance-taking is key to a Japan upset <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="sc">Ko Itakura</td><td>CB/captain / Ajax</td><td>Taken off in the first half vs Sweden with discomfort (fitness doubt, expected to play); the back-three's organizing core, marking Vinícius and managing the offside line is crucial <span style="color:var(--warn)">[start · fitness · TBC]</span></td></tr>
+      <tr><td class="sc">Ritsu Doan</td><td>RWB/winger / Eintracht Frankfurt</td><td>Involved in setting up Maeda's goal vs Sweden; wing-back drives are key to Japan's fast transitions and tearing open Brazil's defense <span style="color:var(--warn)">[start TBC]</span></td></tr>
+      <tr><td class="sc">Daichi Kamada</td><td>AM / Crystal Palace</td><td>One of the two attacking midfielders in the 3-4-2-1, the creative link between midfield and attack; his creative load grows with Kubo out <span style="color:var(--warn)">[start TBC]</span></td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media projections (ESPN / Sports Mole / RotoWire) and sources differ. For Brazil, <b>Raphinha is out (hamstring)</b> and Ancelotti is expected to keep the same XI with <b>Rayan</b> stepping in; the goalkeeper and exact defensive combination details are TBC. For Japan, <b>Itakura has a fitness doubt</b> (expected to play) and <b>Kubo is out (knee)</b>. Official lists per pre-match <b>FIFA Match Centre</b> · TBC. The captain (C) is per FIFA's official armband position · TBC.</div>
+  </section>
+
+  <!-- ===== Tactics + Coaches ===== -->
+  <section>
+    <h2><span class="n">4</span> Tactical Styles & Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual play and results in the last two major tournaments (2022 World Cup + the 2025 friendly / Asian qualifying)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇧🇷 Brazil · Carlo Ancelotti</div>
+        <div class="role">4-3-3 · possession + individual quality-driven · Vinícius wing burst + Bruno/Casemiro midfield axis</div>
+        <ul class="cl">
+          <li>Under Ancelotti, Brazil base on <b>4-3-3 possession with individual quality driving the attack</b>—Casemiro shielding behind, Bruno Guimarães and Paquetá progressing, <b>Vinícius Jr bursting one-on-one on the left and Cunha as the central focal point</b>. The 4.46 xG against Scotland in the final round shows razor-sharp attacking creation.</li>
+          <li>Cross-reference: 2022 World Cup QF penalty loss to Croatia (out in the last eight); 2018 QF exit. Since taking over, Ancelotti has emphasized possession and individual freedom, but this tournament Brazil have hit <b>an attacking injury wave (Raphinha out + Rodrygo/Estêvão/Militão ruled out)</b>, eroding depth, with Rayan's promotion a reactive adjustment.</li>
+          <li>This match: Brazil are expected to <b>press up with possession and use Vinícius's pace to tear open Japan's back three</b>. But beware the 2025 Tokyo lesson—once they over-commit and lose balance, Japan's wing-backs' fast transitions can play in behind directly. Ancelotti's knockout management (how to control tempo once ahead, when to bring on Neymar) is key.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇯🇵 Japan · Hajime Moriyasu</div>
+        <div class="role">3-4-2-1 · wing-back drives + high press + fast transitions (the Tokyo comeback blueprint)</div>
+        <ul class="cl">
+          <li>Moriyasu's Japan are built on a <b>signature 3-4-2-1</b>—a solid back three, double pivots (Tanaka / Sano) controlling midfield, <b>two wing-backs (Doan / Nakamura) stretching extremely wide to provide width</b>, and two attacking midfielders (J.Ito / Kamada) supporting the lone striker Ueda. They emphasize combination play and fast vertical transitions.</li>
+          <li>Cross-reference: 2022 World Cup group-stage comebacks over Germany and Spain (Round of 16 penalty loss to Croatia); <b>the October 2025 Tokyo 3-2 comeback over Brazil</b>—from 0-2 down, goals from Minamino, Nakamura and Ueda are the very template of a high press + fast transitions tearing open Brazil's defense.</li>
+          <li>This match's challenge: <b>facing Brazil's higher individual ceiling, Japan must balance defensive discipline (back-three offside line, marking Vinícius) against counter-attacking efficiency</b>. Kubo's absence weakens wing creativity, and Itakura's fitness doubt adds a defensive variable. Whether Japan can replicate the Tokyo night depends on seizing the transition space once Brazil press up.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Analyst Insights ===== -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Opta Analyst (supercomputer)<small>· multi-source consistent</small></div>Brazil's pre-tournament sims give a 62.1% chance to reach the Round of 16; H2H 11-2-1 across 14, 6 wins in the last 7. Brazil are clearly stronger, but <b>the only defeat is the October 2025 Tokyo 3-2</b>—the supercomputer cannot fully quantify the "psychology / revenge" strategic variable, and a Japan upset has a real sample to lean on.</div>
+    <div class="insight"><div class="who">ESPN / Sports Mole <small>· general prediction outlets</small></div>Brazil's 4.46 xG against Scotland in the final round shows hot form, with Vinícius the core engine. But <b>Raphinha's absence + the attacking injury wave</b> weaken depth, and Rayan's promotion lacks big-game experience. Outlets generally predict a Brazil win but acknowledge Japan's compact defense and counters can cause trouble.</div>
+    <div class="insight"><div class="who">RotoWire / Bookmakers Review <small>· data/lines analysis outlets</small></div>The mainstream Under 2.5 + the Brazil -1.5 at +210 premium reveal the market is not convinced of an "easy Brazil rout." <b>Japan's wing-backs (Doan/Nakamura) driving into the space behind Brazil once they press up is the golden counter lane</b>—the very tactical blueprint of the Tokyo comeback.</div>
+    <div class="insight"><div class="who">Composite · core uncertainties & traps <small>· multi-source composite</small></div>⚠ Trap reminders: ① Vinícius's form buzz may inflate individual prop markets (goals/assists); ② Japan's "Tokyo comeback" memory is a psychological variable the supercomputer cannot fully price; ③ Brazil's attacking injury wave (Raphinha out + 3 ruled out) + Rayan's inexperience are a hidden risk to attacking depth; ④ Japan's Itakura fitness doubt + Kubo's absence are variables on both ends—if Itakura is limited, the back-three offside line faces a spike in risk against Vinícius's pace.</div>
+  </section>
+
+  <!-- ===== Overall Verdict & TBC ===== -->
+  <section>
+    <h2><span class="n">6</span> Overall Verdict & TBC</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: Brazil are clearly stronger (Opta 62.1% to advance, no-vig ≈55%) and in hot form (final round 4.46 xG), making them rightful heavy favorites. But Japan have a mature 3-4-2-1 system and the psychological capital of the <b>2025 Tokyo 3-2 comeback</b>—this is a "mismatch on paper but high narrative tension" knockout. Base scenario: <b>Brazil control possession and chase a steady win, totals leaning Under 2.5</b>; Japan's most realistic scoring path is fast-transition counters once Vinícius/Brazil press up (wing-back drives). In a single knockout game, a Japan upset or forcing extra time has genuine room.</li>
+      <li><b>Key men</b>: Brazil — Vinícius Jr (decisive on the wing + form) · Matheus Cunha (finishing focal point) · Bruno Guimarães (midfield organization) · Neymar (super-sub); Japan — Ayase Ueda (finishing + the Tokyo comeback hero) · Ko Itakura (defensive organizer/captain) · Ritsu Doan / Keito Nakamura (wing-back drives).</li>
+      <li><b>Swing factors</b>: ① whether Brazil can use Vinícius's pace to tear open Japan's back three and convert the high xG into goals; ② whether Japan can replicate the Tokyo night's high press + fast transitions and seize the space behind once Brazil press up; ③ whether Itakura's fitness affects Japan's offside line and defensive coordination; ④ Brazil's actual right-side output with Rayan replacing Raphinha; ⑤ the timing of Neymar's introduction and its impact on Brazil's late game.</li>
+      <li><b>Market view</b>: clearly favor Brazil (≈55% no-vig) but not a one-sided lock (Japan ≈18%, draw ≈27%, ~45% combined non-Brazil-win), overheat index 3/5. Totals mainstream Under + the -1.5 at +210 premium—consistent with a "Brazil strong but not guaranteed to rout" expectation. Vinícius prop markets are sentiment-driven and may carry a premium.</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC checklist</b>: ① both official XIs (per FIFA Match Centre about an hour before kickoff)—<b>whether Itakura's fitness affects his start</b>, <b>Brazil's goalkeeper and defensive combination</b>, <b>the Neymar / Rayan starting call</b>; ② the captain (C) per FIFA's official armband position; ③ referee Mariani's full crew + VAR pairing · officiating record breakdown with the two teams · Mariani's exact per-game card figures; ④ both teams' complete per-game xG this tournament (Opta/FotMob breakdowns; ESPN gives Brazil 4.46 xG vs Scotland · Japan per-game TBC); ⑤ <b>kickoff time</b> (some sources 1:00pm ET, others 3:00pm ET / 20:00 GMT · per official FIFA); ⑥ exact opening figures · live odds per pre-match; ⑦ Brazil/Japan PPDA/xT/field tilt breakdowns—national-team public samples are limited; ⑧ Kalshi/Polymarket prediction-market exact shares.</div>
+  </section>
+
+  <!-- ===== Sources ===== -->
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.rotowire.com/soccer/article/brazil-vs-japan-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120069">RotoWire — Brazil vs Japan predicted XIs / tactical analysis</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-japan-prediction-team-news-lineups_600204.html">Sports Mole — Brazil vs Japan preview / lineups</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/49129032/brazil-confirm-raphinha-hamstring-injury-world-cup-2026-return-uncertain-group-c">ESPN — Raphinha hamstring confirmed</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/predicted-lineups/rayan-or-raphinha-predicted-brazil-xi-vs-japan_600205.html">Sports Mole — Brazil predicted XI (Rayan in)</a> · <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/predicted-lineups/defensive-injury-doubt-predicted-japan-xi-vs-brazil_600207.html">Sports Mole — Japan predicted XI (Itakura doubt)</a><br>
+      • <a href="https://www.espn.com/soccer/match/_/gameId/760465/brazil-scotland">ESPN — Scotland 0-3 Brazil (xG 4.46)</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021455">FIFA Match Centre — Scotland vs Brazil</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/scotland-brazil-match-report-highlights">FIFA report — Scotland 0-3 Brazil</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/6/26/japan-draw-1-1-with-sweden-at-world-cup-to-finish-second-in-group-f">Al Jazeera — Japan 1-1 Sweden, runners-up</a> · <a href="https://www.skysports.com/football/japan-vs-sweden/report/549824">Sky Sports — Japan 1-1 Sweden report</a> · <a href="https://www.fifa.com/en/articles/japan-sweden-match-report-highlights">FIFA report — Japan 1-1 Sweden</a><br>
+      • <a href="https://www.espn.com/soccer/match/_/gameId/757632/brazil-japan">ESPN — Japan 3-2 Brazil (2025 Tokyo friendly)</a> · <a href="https://www.espn.com/soccer/story/_/id/49202302/japan-fa-chief-brazil-clash-biggest-world-cup-tie-history">ESPN — Japan FA chief "biggest tie in history"</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/zico-warns-brazil-japan-are-ready">FIFA — Zico warns "Japan are ready"</a><br>
+      • <a href="https://theanalyst.com/articles/fifa-world-cup-2026-groups-predictions-previews">Opta Analyst — supercomputer predictions / H2H</a> · <a href="https://worldsoccertalk.com/world-cup/why-is-takefusa-kubo-not-playing-for-japan-against-sweden-at-the-2026-world-cup/">World Soccer Talk — Kubo out (knee)</a><br>
+      • <a href="https://dknetwork.draftkings.com/2026/06/26/opening-odds-for-brazil-vs-japan-in-the-2026-fifa-world-cup-round-of-32/">DraftKings Network — opening odds</a> · <a href="https://news.bet365.com/en-us/article/brazil-vs-japan-world-cup-odds-picks-predictions/2026062711392040031">bet365 News — odds / picks</a> · <a href="https://www.bookmakersreview.com/analysis/brazil-vs-japan-odds-props-world-cup-round-of-32-betting-preview/626849/">Bookmakers Review — line analysis</a><br>
+      • <a href="https://onefootball.com/en/news/italian-referee-mariani-chosen-for-brazil-vs-japan-world-cup-match-43066118">OneFootball — Mariani refs Brazil vs Japan</a> · <a href="https://football-italia.net/italian-referee-mariani-brazil-japan-world-cup/">Football-Italia — Mariani crew</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_officials">Wikipedia — 2026 World Cup officials</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/brazil-vs-japan-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-an0fT2s0iEmv/">Racing Post — Bet Builder</a> · <a href="https://www.goal.com/en/news/brazil-japan-world-cup-preview/bltfacb1acd696ead12">Goal.com — full preview</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-28 · Charts are verified data, the radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Brazil win','Draw','Japan win'],datasets:[{data:[55,27,18],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (no-vig)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[44,56],backgroundColor:[SC,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (no-vig, lean Under)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Brazil (Grp C winners)','Japan (Grp F runners-up)'],datasets:[{data:[7,5],backgroundColor:[HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:9,title:{display:true,text:'Group-stage points'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wings/transitions','Individual ceiling','Big-game experience'],
+  datasets:[
+   {label:'Brazil',data:[7.5,8.5,8,8,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Japan',data:[7.5,6.5,7,8,6.5,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

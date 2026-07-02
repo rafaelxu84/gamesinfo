@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 伊朗 vs 新西兰 · 2026世界杯 G组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-iran-vs-newzealand.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-iran-vs-newzealand.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-iran-vs-newzealand.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-iran-vs-newzealand.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-iran-vs-newzealand.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-iran-vs-newzealand.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-iran-vs-newzealand.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-iran-vs-newzealand.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 2-2 · 2026 世界杯 · G组首轮 · 四球对攻、新西兰两度领先被伊朗追平</span>
+  <h1>伊朗 vs 新西兰</h1>
+  <div class="meta">2026年6月15日 · 洛杉矶 SoFi Stadium · 21:00 ET · G组（同组：比利时、埃及）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇮🇷 伊朗</div><div class="rk">FIFA #20 · 6次世界杯参赛 · 铁血低位防守体系</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇳🇿 新西兰</div><div class="rk">FIFA #85 · 时隔16年重返世界杯 · 定位球威胁突出</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 伊朗 2-2 新西兰（半场 1-1）· 数据来源 Opta Analyst / ESPN / Al Jazeera · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">一场与"小球苦战"剧本完全相反的对攻：新西兰两度领先——第 <b>7 分钟</b> 与 <b>54 分钟</b> Elijah Just 两度破门（两球均由队长 <b>Chris Wood 助攻</b>，Just 成为史上首位在男足世界杯进球的 Motherwell 球员）；伊朗两度追平——第 <b>32 分钟</b> <b>Rezaeian</b> 扳平、第 <b>64 分钟</b>又助攻 <b>Mohebbi</b> 再度追平（Rezaeian 成为首位在单场世界杯同时进球 + 助攻的伊朗球员）。G 组四队首轮战罢全部 <b>1 分</b>同分。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 7' Just（Wood 助攻，0-1）→ 32' Rezaeian（1-1）→ HT 1-1 → 54' Just（Wood 助攻，1-2）→ 64' Mohebbi（Rezaeian 助攻，2-2）→ FT 2-2</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇮🇷 伊朗</th><th style="padding:6px">🇳🇿 新西兰</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">进球</td><td style="text-align:center">2</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">合计 4 球，远超赛前"小球 58%"预期</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">失球方式</td><td style="text-align:center">2 次被反击</td><td style="text-align:center">2 次被追平</td><td style="padding:6px;color:var(--mut)">伊朗"铁血防线"两度漏防 Wood 的直传</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">关键先生</td><td style="text-align:center">Rezaeian(球+助)</td><td style="text-align:center">Wood(2 助) / Just(2 球)</td><td style="padding:6px;color:var(--mut)">Wood 高点策应价值兑现</td></tr>
+      <tr><td style="padding:6px">韧性</td><td style="text-align:center"><b>两度扳平</b></td><td style="text-align:center">两度领先未守住</td><td style="padding:6px;color:var(--mut)">伊朗反扑力够、收尾能力不足</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① "铁血低位"人设被现实推翻</div>赛前主线是伊朗低位防守 + 小球苦战，结果伊朗两度被 Wood 的直塞反击打穿。<b>这说明伊朗</b>：本届的防线纪律与转换防守远没有招牌那么稳，由守转攻瞬间的盯人与回追是明显漏洞。</div>
+    <div class="insight"><div class="who">② 新西兰的"Wood 支点 + 直接打法"真有威胁</div>Wood 两度做球助攻 Just，新西兰不靠控球、靠纵向长传与二点冲击就两度领先。<b>这说明新西兰</b>：面对压上的组织型球队，其直接打法 + 高点策应是可复制的得分路径，绝非只会摆大巴。</div>
+    <div class="insight"><div class="who">③ 伊朗反扑力强、终结与领先管理弱</div>两度落后两度追平显示斗志与进攻手段（Rezaeian 球+助）尚可，但既没守住、也没在 64' 扳平后拿下比赛。<b>这说明伊朗</b>：能打开局面却缺乏"杀死比赛"的控制力，热门身份名不副实。</div>
+    <div class="insight"><div class="who">④ 体能/停赛隐患在对攻中放大</div>赛前点名的伊朗联赛停摆、实战感不足，在一场来回奔跑的 2-2 里更易暴露体能与专注度滑坡（两个失球均在防守转换中）。<b>这说明</b>越是开放的比赛对伊朗越不利。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>小球（线 2.5，隐含 58%）→ 实际 4 球大球</b>：本场最大误判，"低欲望苦战"剧本完全落空。</li>
+      <li>✗ <b>伊朗胜（去水 52%）+ 基准"1-0 窄胜"→ 实际 2-2 平</b>：胜负与比分剧本均未兑现。</li>
+      <li>✓ <b>"Chris Wood 的高空/策应威胁"被列为关键</b>：Wood 两次助攻，赛前点名兑现。</li>
+      <li>✓ <b>"伊朗体能/停赛隐患"被点名</b>：两个失球都在转换防守，隐患方向正确。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇮🇷 伊朗 → 6/21 vs 比利时（英格尔伍德 15:00 ET）</div>防守转换的漏洞必须修补——好在比利时首轮恰恰<b>缺正印中锋、运动战 0 球</b>，是伊朗止血的"温和"对手；若伊朗收缩稳住转换，平比利时并非奢望，但 Taremi 一侧的反击效率要提上来。</div>
+      <div class="insight" style="margin:0"><div class="who">🇳🇿 新西兰 → 6/21 vs 埃及（温哥华 21:00 ET）</div>Wood + Just 的直接打法证明能进球，但防线两度领先没守住、且埃及有萨拉赫的反击獠牙——新西兰<b>领先后的比赛管理</b>是出线关键；后防对快速反击的保护需加强。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst（theanalyst.com）、ESPN、Al Jazeera、FIFA Match Centre。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>防守型强队之间的低欲望苦战</b>：FIFA #20 的伊朗（亚洲老牌强队、Taremi 领衔的单箭头体系）对阵时隔 16 年重返世界杯的新西兰（FIFA #85、物理对抗突出、定位球是主要威胁）。盘口倾向明确但非碾压——伊朗胜赔 <b>1.83</b>（去水隐含 ≈52%），平局 3.40（≈28%），新西兰胜 4.70（≈20%）。最大共识在<b>小球方向</b>：大 2.5 球 2.15 / 小 2.5 球 1.71，市场明显偏向小球（隐含约 58%）。Opta 超算给伊朗胜率 53.8%、平局 25.8%、新西兰胜 20.4%。基准剧本：<b>伊朗 1-0 窄胜</b>，比赛节奏沉闷、进攻机会稀少；新西兰凭定位球和 Chris Wood 的高空威胁保持竞争性。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">伊朗隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈52%</div></div>
+      <div class="key"><div class="k">小球隐含概率</div><div class="v" style="color:#7fa6e6">≈58%</div></div>
+      <div class="key"><div class="k">新西兰离开世界杯</div><div class="v" style="color:var(--warn)">16年</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Mehdi Taremi 的个人能力</b>：伊朗最大的进攻出口，单枪匹马撕开新西兰低位防线的成功率，直接决定比赛走向。</li>
+      <li><b>伊朗体能短缺隐患</b>：伊朗联赛 3 月起停摆，多名主力球员赛季中断近 3 个月，实战感与竞技状态存在不确定性。</li>
+      <li><b>Chris Wood 的定位球威胁</b>：宣称已百分百恢复的新西兰队长，作为空中制霸点和定点罚球手，是新西兰抢分的最大希望。</li>
+      <li><b>地缘政治干扰</b>：伊朗签证风波令代表团部分官员无法入境，Sardar Azmoun 因纪律问题被开除，赛前准备受到影响。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 赛前最新 · 对账修正 <span style="color:var(--mut);font-weight:400">· Rotowire / Sports Mole / SI · 06-15</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">上午"伊朗体能隐患"获正面修正——<b>伊朗全队健康、热身三连胜</b>；新西兰确认 Ryan Thomas 本场不出战</div>
+      <p style="font-size:13.5px">据 Rotowire / Sports Mole / SI 赛前消息，伊朗以全队健康姿态出战，Roozbeh Cheshmi、Mehdi Torabi 均已伤愈；热身赛取得三连胜（2-0 马里、3-1 冈比亚、5-0 哥斯达黎加），状态明显好于本页上午所记的"联赛停摆体能存疑"。唯 Alireza Jahanbakhsh 赛前需通过一次体能测试以确定出场。新西兰方面全队无伤停，但中场 Ryan Thomas 已确认本场不会登场（此前本页标注的"待核"就此落定）。预测首发：伊朗（4-3-3）Beiranvand；Yousefi、Khalilzadeh、Nemati、Mohammadi；Ezatolahi、Ghoddos、Mohebi；Ghayedi、Taremi、Hosseinzadeh。<span style="color:var(--warn)">（预测首发，以官方名单为准 · 待核）</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：这是对上午判读的两点修正。① 伊朗状态好于预期、且热身展示了进攻火力（5-0），意味着伊朗并非纯摆大巴，其"控场 + 窄胜"概率上调，体能爆冷变量下降。② Thomas 缺阵令新西兰中场组织与覆盖进一步弱化，进攻更依赖 Chris Wood 的定位球与高空球——"小球 + 伊朗窄胜"的主线因此进一步巩固，而非松动。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rotowire.com/soccer/article/iran-vs-new-zealand-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-118098" style="color:var(--accent)">Rotowire — 首发/队况</a> · <a href="https://www.sportsmole.co.uk/football/iran/world-cup-2026/preview/iran-vs-new-zealand-prediction-team-news-lineups_599122.html" style="color:var(--accent)">Sports Mole — 前瞻</a> · <a href="https://www.si.com/soccer/iran-vs-new-zealand-world-cup-preview-predictions-lineups-6-15-26" style="color:var(--accent)">SI — 前瞻/首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">伊朗 · 地缘政治 + 关键球员缺席 <span style="color:var(--mut);font-weight:400">· 多源 · 05-06月</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Sardar Azmoun 因纪律问题被开除国家队</b>；伊朗签证风波致部分官员无法随队入境美国</div>
+      <p style="font-size:13.5px">伊朗头号射手之一 Sardar Azmoun 于 2026 年 5 月被驱逐出国家队，起因是其在 Instagram 发布与迪拜统治者谢赫穆罕默德合影，被伊朗当局视为政治不忠。与此同时，美国向伊朗代表团拒签，包括足协主席 Mehdi Taj 在内的大量官员无法入境，仅主教练 Amir Ghalenoei 等极少数人获得签证。伊朗随后抵制了世界杯最终抽签仪式。FIFA 介入斡旋后，伊朗赢得 4 名受影响人员的签证上诉，但仍有 11 名工作人员被拒。<span style="color:var(--warn)">[签证争端最终解决状态以赛前官方声明为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Azmoun 缺阵直接削弱伊朗第二线进攻选项，令 Taremi 负担加重、替补轮换空间收窄。签证风波导致备战流程混乱，后勤与心理层面的干扰在本就实力相近的对阵中，可能成为足以改变比赛走向的边际因素。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/5/17/sardar-azmoun-left-out-as-iran-announce-world-cup-2026-squad" style="color:var(--accent)">Al Jazeera — Azmoun 被驱逐</a> · <a href="https://www.espn.com/soccer/story/_/id/48984862/iran-usa-world-cup-visas-officials-2026" style="color:var(--accent)">ESPN — 签证风波</a> · <a href="https://www.gbnews.com/sport/football/iran-visa-world-cup-2026-2677037388" style="color:var(--accent)">GB News — 签证上诉结果</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">伊朗 · 联赛停摆与体能隐患 <span style="color:var(--mut);font-weight:400">· Sports Mole · Squawka · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">伊朗联赛 3 月停摆，<b>Hajsafi、Mohammadi、Khalilzadeh</b> 等主力后卫已近 3 个月未上场竞赛</div>
+      <p style="font-size:13.5px">由于伊朗国内联赛于 2026 年 3 月暂停，效力国内俱乐部的球员——主要是主力防线成员 Ehsan Hajsafi、Milad Mohammadi、Shojae Khalilzadeh——在赛季中长达约 3 个月无正式比赛。相比之下，效力欧洲俱乐部的 Taremi（国际米兰）、Ghoddos、Ezatolahi（确认已从脚部伤病恢复）等人保持相对完整的赛季节奏。<span style="color:var(--warn)">[体能到位与否须以赛前热身赛表现为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：对于一支以纪律防守为核心竞争力的球队，后防线球员的竞技状态至关重要。若主力后卫欠佳，面对 Chris Wood 的定位球和新西兰的直接冲击，伊朗的防守稳定性将受到考验，平局或失球概率上升。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/iran/world-cup-2026/preview/iran-vs-new-zealand-prediction-team-news-lineups_599122.html" style="color:var(--accent)">Sports Mole — 伊朗队况/联赛停摆</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iran-vs-new-zealand-06-15-26-world-cup-2026/" style="color:var(--accent)">Squawka — 前瞻分析</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">新西兰 · Ryan Thomas 伤情 + Chris Wood 复出 <span style="color:var(--mut);font-weight:400">· RNZ · NZ Herald · Flashscore · 2026-05/06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Ryan Thomas 腿筋伤势悬念</b>；Chris Wood 宣称已百分百恢复、准备首发</div>
+      <p style="font-size:13.5px">新西兰中场核心 Ryan Thomas 在效力荷兰 PEC Zwolle 期间受腿筋伤所扰，热身赛未上场，能否出战伊朗一役至本文截稿时仍存变数（Sports Mole 标注为出场存疑）。队长兼头号射手 Chris Wood 于 2025 年 12 月接受左膝手术，2026 年 5 月重返诺丁汉森林并复出，已公开表示"百分百准备好了"，矢志带领全白队首次闯入淘汰赛阶段。<span style="color:var(--warn)">[Thomas 是否首发以赛前官方伤情报告为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Thomas 是新西兰中场组织与覆盖范围的核心；若缺阵，新西兰中场结构会弱化，被伊朗中路渗透的风险升高。反之，Chris Wood 的适时复出意味着新西兰拥有一名真正的世界级定位球威胁，可以让伊朗防守在高空球上付出代价。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.rnz.co.nz/news/sport/597396/football-world-cup-ryan-thomas-in-race-against-time-after-latest-injury-blow" style="color:var(--accent)">RNZ — Thomas 伤情</a> · <a href="https://www.flashscore.com/news/soccer-world-cup-new-zealand-captain-chris-wood-fully-fit-for-2026-world-cup-after-injury-battles/xj5tDLMN/" style="color:var(--accent)">Flashscore — Wood 复出声明</a> · <a href="https://www.nzherald.co.nz/sport/football/football-world-cup/all-whites-captain-chris-wood-back-to-full-fitness-for-fifa-world-cup-sets-big-target/65TVABWPDZGABA2GD6FOQVA6RM/" style="color:var(--accent)">NZ Herald — Wood 目标</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">新西兰 · 近期战绩信号 <span style="color:var(--mut);font-weight:400">· 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">新西兰近 5 场 1 胜 4 负（4-1 胜智利），本月热身赛 0-1 负英格兰、0-4 负海地</div>
+      <p style="font-size:13.5px">新西兰备战状态并不令人安心：本月两场热身赛分别 0-1 负英格兰、0-4 惨负海地，令外界对其临赛状态和进攻端的低迷产生担忧。唯一亮点是 3 月 4-1 大胜智利，但结合其余数据——近 12 个月 9 次失败中有 6 场零射，说明进攻持续乏力，主要得分手段依赖定位球和 Wood 的个人能力。伊朗方面近期则包括 3 月 5-0 狂胜哥斯达黎加，以及两场无球无失的平局（对乌兹别克、佛得角），最终三连胜入冬。<span style="color:var(--warn)">[近期热身赛成绩与阵容选择是否具代表性，仍待正式比赛验证 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：新西兰的近期战绩强化了市场对小球的预判——双方进攻效率低，比赛走向更可能是 1-0 而非 2-1 或 3-0。0-4 负海地一役也引发对防线韧性的质疑，但需考虑热身赛可能轮换的背景。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/iran/world-cup-2026/preview/iran-vs-new-zealand-prediction-team-news-lineups_599122.html" style="color:var(--accent)">Sports Mole — 双方近期战绩</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iran-vs-new-zealand-06-15-26-world-cup-2026/" style="color:var(--accent)">Squawka — 形势分析</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源官方确认 · 与预测对照 · 速览结论是否修正</span></h2>
+    <div class="sub">两队官方首发已确认：新西兰由国家队官方 @NZ_Football 发布首发图，并经 World Soccer Talk、Khel Now 转载与搜索聚合交叉验证；伊朗 XI 经 World Soccer Talk、Khel Now 两源一致。<b style="color:var(--good)">✅ 官方确认</b></div>
+
+    <h4>① 双方官方 XI</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#f08a82">🇮🇷 伊朗（4-4-2）· Ghalenoei</div>
+        <div class="lineup">Beiranvand; Rezaeian · Khalilzadeh · Nemati · Mohammadi; A. Yousefi · Ghoddos · Ezatolahi · Mohebi; Moghanlou · Taremi</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Jahanbakhsh</b>（被预测首发，仅替补待命）、<b>Ghayedi</b>（边路爆点、预测首发落选）、Hosseinzadeh（预测首发落选）、Torabi（伤愈中场）。</div>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#7fa6e6">🇳🇿 新西兰（4-2-3-1）· Bazeley</div>
+        <div class="lineup">Crocombe; T. Payne · Surman · Boxall · Cacace; Bell · Stamenic; McCowatt · S. Singh · E. Just; Wood(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Barbarouses</b>（经验型终结点）、Waine（替补前锋）、<b>Ryan Thomas</b>（确认伤缺未进 XI，列替补）、Bindon/Rufer（中后场轮换）。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② vs 预测首发对照（逐条「为什么重要」）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">伊·阵型</td><td>4-3-3 / 4-2-3-1 单箭头</td><td><b>4-4-2 双前锋</b></td><td>速览假设的"Taremi 单箭头低位体系"被推翻——伊朗对最弱档对手摆出 Moghanlou+Taremi 双中锋，更进取、更想速胜，直接<b>修正</b>速览的体系定性</td></tr>
+      <tr><td class="ht">伊·锋线搭档</td><td>Ghayedi · Hosseinzadeh（边锋）</td><td><b>Moghanlou</b> 搭 Taremi</td><td>预测的两名边路爆点 Ghayedi、Hosseinzadeh 双双落选，Moghanlou 顶上做第二中锋——伊朗放弃边路宽度、改走中路双高点冲击新西兰防线</td></tr>
+      <tr><td class="ht">伊·右中场</td><td>Yousefi 打中卫（4-3-3）</td><td><b>A. Yousefi</b> 右前卫</td><td>Aria Yousefi 由预测的后防线位置前提到右路中场，伊朗用其覆盖右路攻防 → 中卫位由 Khalilzadeh+Nemati 固定，结构更清晰</td></tr>
+      <tr><td class="ht">伊·右后卫</td><td>未列首发</td><td><b>Rezaeian</b></td><td>老将 Rezaeian 镇守右后卫提供经验与助攻，伊朗后场可信度上升，4-4-2 边路推进有支点</td></tr>
+      <tr><td class="ht">伊·替补</td><td>Jahanbakhsh 首发存疑（待体能测试）</td><td><b>Jahanbakhsh 落选替补</b></td><td>赛前待核的体能测试结果落地：Jahanbakhsh 未进 XI——伊朗边路最熟练的爆点改作替补牌，临场视情况投入</td></tr>
+      <tr><td class="sc">新·阵型/锋线</td><td>4-4-2 / 4-2-3-1，Wood 顶</td><td><b>4-2-3-1</b>，Wood 单箭头</td><td>新西兰确认 4-2-3-1，Singh 居 10 号位串联、Wood 单中锋——与预测一致，<b>计划 A 执行</b>，定位球+Wood 高空仍是唯一稳定出口</td></tr>
+      <tr><td class="sc">新·右路</td><td>Garbett（边路）</td><td><b>McCowatt</b> 右、E. Just 左</td><td>Garbett 腿筋问题落选，McCowatt 顶上右路、Just 守左路——新西兰边路输出预期不变但更偏冲击型，整体仍是被动反击结构</td></tr>
+      <tr><td class="sc">新·后防/中场</td><td>Payne · Boxall · Surman · Cacace；Stamenic · Bell</td><td>11/11 与预测一致</td><td>Tim Payne 确认首发右后卫、Bell+Stamenic 双后腰原样——新西兰后场与中场<b>零变化</b>，本身就是信息：无伤情、按既定低位防反计划执行</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 战术解读</h4>
+    <div class="insight"><div class="who">阵型信号 · 伊朗比预期更进取</div>伊朗弃用预测的单箭头 4-3-3，改打 <b>4-4-2 双前锋</b>（Moghanlou+Taremi）。面对全场最弱档的新西兰，Ghalenoei 选择中路双高点直接施压而非保守低位——这<b>修正</b>了速览"务实单箭头、等 Taremi 灵光一现"的体系定性，伊朗摆明要速胜、要进球。</div>
+    <div class="insight"><div class="who">关键对位 · 双中锋 vs 新西兰中卫</div>Moghanlou+Taremi 直接挑战 Boxall+Surman 的中卫组合，伊朗两名宽度中场（Yousefi/Mohebi）拉边喂中路——新西兰被迫整体压缩防守，仅剩 Wood 的高空与定位球作为反扑出口。空中攻防（双向定位球）成为最现实的进球来源。</div>
+    <div class="insight"><div class="who">体能/轮换意图 · 两处爆点</div>伊朗：待核的 <b>Jahanbakhsh 体能测试未过 XI</b>，且预测首发的 Ghayedi、Hosseinzadeh 双双落选、Moghanlou 意外首发——Ghalenoei 把边路爆点全留作替补，先用双中锋强攻、再视情况换边路速度。新西兰：<b>Garbett 腿筋落选、McCowatt 顶上</b>，其余 10 人按预测原样，无伤情、计划 A 执行。</div>
+    <div class="insight"><div class="who">速览结论 · 宏观维持、体系定性修正</div><b>速览基准剧本"伊朗窄胜、整体低分"宏观维持</b>（新西兰进攻乏力的事实未变）。但需<b>修正</b>两点：① "伊朗单箭头低位体系"应改为 <b>4-4-2 双前锋进取打法</b>；② 双中锋使伊朗进球预期上修，<b>伊朗让球盘（-1）与小 2.5 球的上行风险增大</b>——若伊朗能借双高点先破僵，比分有从 1-0 滑向 2-0/2-1 的空间。综合：仍是伊朗胜基准，但"严格小球"的安全边际较赛前收窄。</div>
+
+    <h4 style="margin-top:18px">④ 市场反应</h4>
+    <p style="font-size:13.5px">截至首发公布后短时窗口，未检索到本场 1X2 / 大小球盘口出现明确单边异动的公开数据 <span style="color:var(--warn)">（待核）</span>。从首发性质看：伊朗核心 Taremi 首发、无爆冷伤退，胜负盘缺乏移动催化；但伊朗摆出双前锋而非预测的单箭头，方向上对"伊朗让球 / 大 2.5 球"构成轻微利多，对"严格小 2.5 球"构成轻微利空，幅度有限。赔率展示口径（欧洲小数盘，与赛前一致）：伊朗胜 <b>1.83</b> · 平 <b>3.40</b> · 新西兰胜 <b>4.70</b>；小 2.5 球 <b>1.71</b> · 大 2.5 球 <b>2.15</b>。<b>仅作事实陈述，非投注建议。</b></p>
+
+    <h4 style="margin-top:18px">⑤ 来源</h4>
+    <div class="src">官方首发：<a href="https://x.com/NZ_Football/status/2066672196903481670">@NZ_Football 官方首发图</a> · <a href="https://worldsoccertalk.com/world-cup/is-tim-payne-playing-iran-vs-new-zealand-projected-lineups-for-the-2026-world-cup-group-g-game/">World Soccer Talk — 双方官方首发确认</a> · <a href="https://khelnow.com/football/world-football-new-zealand-starting-lineup-vs-iran-fifa-world-cup-202606">Khel Now — 新西兰首发确认</a>。</div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · G组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>G 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇮🇷 伊朗</th><th>🇳🇿 新西兰</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#20</td><td class="sc">#85</td></tr>
+      <tr><td>世界杯史</td><td class="ht">6 次参赛（最好成绩: 2022 小组赛出线）</td><td class="sc">时隔 16 年重返（2010 后首次）</td></tr>
+      <tr><td>近期战绩（热身+友谊赛）</td><td class="ht">5-0 胜哥斯达黎加；近3连胜入冬</td><td class="sc">4-1 胜智利；0-1 负英格兰；0-4 负海地</td></tr>
+      <tr><td>主教练</td><td class="ht">Amir Ghalenoei</td><td class="sc">Darren Bazeley</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.83（隐含≈52%）</td><td class="sc">胜 4.70（≈20%）· 平 3.40（≈28%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 @ 2.15 / 小 2.5 @ 1.71 —— 市场明显偏向小球（隐含≈58%）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查世界杯正式交锋记录</td></tr>
+      <tr><td>关键缺阵</td><td class="ht">Sardar Azmoun（纪律开除）</td><td class="sc">Ryan Thomas（腿筋伤·存疑，待核）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈52/28/20）。赔率来源：FanDuel（-120/+240/+370），美线转十进制：伊朗 1.83、平 3.40、新西兰 4.70。大小球线 2.5，Over +115（2.15）/ Under -140（1.71）。Opta 超算模拟 25000 场：伊朗胜 53.8%、平 25.8%、新西兰胜 20.4%——与市场去水概率高度吻合，说明盘口定价合理，无情绪溢价。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">伊朗窄胜共识清晰；真正的分歧在"能否进球"：小球方向受到多数专家支持，但伊朗近期展示进攻能力（5-0），存在两面性</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 伊朗胜方向统一；小球有情绪资金</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">伊朗胜方向基本收敛（专家无人押新西兰赢），但小球方向有真实的情绪资金流入——海地 4-0 大胜新西兰热身赛引发舆论关注，Under 2.5 是市场最有共识的切入点。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：伊朗胜 全部 · 新西兰胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>伊朗 1-0</b> 或类似窄胜</td></tr>
+      <tr><td>Opta Analyst</td><td>数据统计机构</td><td>伊朗胜率 53.8%（超算 25000 次模拟）；新西兰胜 20.4%</td></tr>
+      <tr><td>SportsLine 专家</td><td>美系投注媒体</td><td>伊朗胜 + <b>倾向小 2.5 球</b></td></tr>
+      <tr><td>Claude (AI 面板)</td><td>NYSportsDay 三模型</td><td>伊朗单式（-155），10 模型集成 78% 共识伊朗胜；xG 预测 1.80:0.50</td></tr>
+      <tr><td>Gemini (AI 面板)</td><td>NYSportsDay 三模型</td><td><b>小 2.5 球</b> (-140)；三项结构性输入均指向低进球</td></tr>
+      <tr><td>ChatGPT (AI 面板)</td><td>NYSportsDay 三模型</td><td>新西兰 +1.5 让球盘（-175）；认为伊朗赢 2 球以上概率被高估</td></tr>
+      <tr><td>Squawka / Forebet</td><td>数据媒体</td><td>伊朗胜；偏向小球；比赛节奏沉闷</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等）</b>：胜负方向高度统一，无人押新西兰赢——但这是合理共识而非过热。真正的分歧在 ChatGPT 的让球观点（认为伊朗不会赢 2+）vs Claude/Gemini 的小球主线。总体情绪资金集中在 <b>小 2.5 球 + 伊朗胜</b> 两侧；让球盘（-1.5）有分歧。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>伊朗胜</th><th>解读</th></tr>
+      <tr><td>开档（FanDuel）</td><td>1X2</td><td class="ht">1.83</td><td>轻度倾斜；平局 3.40 / 新西兰 4.70</td></tr>
+      <tr><td>06-14/15 截止</td><td>bet365</td><td class="ht">1.85（约 -118）</td><td>基本稳定；小范围浮动</td></tr>
+      <tr><td>06-14/15</td><td>大 2.5 球</td><td colspan="2" class="ht">2.15（+115）；小 2.5 球 1.71（-140）</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>伊朗 -0.5/+1</td><td colspan="2" class="sc">伊朗 -0.5 约对应 -120 级别（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 胜负盘赔率浮动幅度有限，说明市场定价趋于稳定。最活跃的资金在 <b>大小球 2.5 线</b>——Under -140 为强力倾斜，但 1.71 的赔率说明定价已反映共识，额外边际空间有限。亚盘(-0.5)层面体现"伊朗须胜出"的基准预期。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Opta 超算</b>：伊朗胜 53.8%、平 25.8%、新西兰胜 20.4%——与博彩去水概率（52/28/20）惊人吻合，说明两池完全收敛、无情绪偏离。</li>
+      <li><b>AI 面板（NYSportsDay）</b>：三模型方向一致看伊朗，但在让球盘上有分歧（ChatGPT 押新西兰 +1.5）；小球方向 Gemini/Claude 支持；唯一分歧是胜利幅度。</li>
+      <li><b>舆论焦点</b>：伊朗的地缘政治背景（签证、Azmoun 事件）占据相当多报道篇幅；新西兰的"时隔 16 年回归"叙事带来一定情绪流量，但未见显著推动盘口的单边资金。</li>
+      <li><b>Kalshi / 预测市场</b>：具体单场胜负概率数据未公开检得 <span style="color:var(--warn)">（待核）</span>；总分细分深度数据亦未见。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场博彩与超算模型完全收敛的比赛，过热指数 <b>3/5</b>。伊朗胜方向高度统一；真正的价值分歧集中在<b>小球 2.5 球</b>这条线（偏向 Under）以及<b>让球幅度</b>。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.theanalyst.com/articles/iran-vs-new-zealand-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.sportsline.com/insiders/iran-vs-new-zealand-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 专家预测</a> · <a href="https://www.nysportsday.com/2026/06/13/chatgpt-claude-gemini-iran-vs-new-zealand-predictions-06-13-2026/">NYSportsDay — AI 面板</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iran-vs-new-zealand-06-15-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/iran-vs-new-zealand-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aAP7j4z779qD/">Racing Post — 赔率/投注</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 市场 · 让分/大小球技术分析</span></h2>
+    <div class="sub">双方均不以控球攻势著称，角球产出有限；但伊朗持球优势与新西兰解围频率会共同决定总角球数；市场数据待核。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇮🇷 伊朗</th><th>🇳🇿 新西兰</th><th>含义</th></tr>
+      <tr><td>进攻风格</td><td class="ht">低位反击为主；Taremi 背身支点；边路传中较少</td><td class="sc">直接对抗；高球为主；Chris Wood 定位球终结</td></tr>
+      <tr><td>场均角球估算</td><td class="ht">≈4–6（非控球型球队，角球产出偏低）<span style="color:var(--warn)">待核</span></td><td class="sc">≈3–5（更多时间防守，但解围出底线频繁）<span style="color:var(--warn)">待核</span></td></tr>
+      <tr><td>定位球威胁</td><td class="ht">中：中距离任意球；无顶级定位球输送手</td><td class="sc">高：Chris Wood 空中制霸；Stamenic/Bell 输送</td></tr>
+      <tr><td>角球占优预测</td><td class="ht">轻度占优（若持球、围攻时间多）</td><td class="sc">可能贡献较多被迫角球（防守解围出底线）</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>角球总数线与具体让球盘口未在本次检索到公开报价 <span style="color:var(--warn)">（待核）</span>。按打法画像分析：两队均非高压进攻型，总角球数可能落在 7–10 区间；常见基准线 O/U 9.5 或 10.5 均属正常范围，具体赔率以各主流平台实时盘口为准。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>伊朗控球优势有限（非高压型），预计角球差不会特别悬殊。若双方比赛节奏较低（符合小球预判），总角球数也会偏低，角球让球盘的价值与主盘走势高度联动。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>双方均以防守为轴心，进攻端产出受限，预期总角球数偏低（≤10）。新西兰若长时间落后防守，被迫解围出底线会推升其被迫失角数；但若比赛节奏平稳（1-0 基准剧本），总角球数可能在 8–9 区间。</div>
+    <div class="insight"><div class="who">变量与两面性</div>Chris Wood 在定位球区域的高空威胁是两队角球格局中最重要的变量：新西兰若靠定位球追平，比赛进程改变，伊朗后半场攻势增强，角球数可能上升。若伊朗早早 1-0 后收紧防线，角球数则趋于低位。</div>
+    <div class="note">角球具体盘口数据未检得，以上为打法驱动的定性分析。仅供参考，非投注建议。</div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>裁判委任已确认</b>：主裁 <b>César Ramos</b>（墨西哥，经验丰富，曾执法 2022 世界杯）；助理裁判 Alberto Morín &amp; Marco Bisguerra（墨西哥）；第四官员 Yusuke Araki（日本）；备用助理 Jun Mihara（日本）。Ramos 系 Liga MX/CONCACAF 资深主裁，临场对抗管理有经验、牌量中等；惟其针对本场两队的具体大赛执法尺度样本有限 <span style="color:var(--warn)">（待核）</span>。</div>
+    <h4>本届统一执法新规（对本场参考意义）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：若新西兰落后想拖延，工具有限；伊朗若领先收缩防守，节奏管理同样受约束。</li>
+      <li><b>仅队长可与裁判沟通</b>：伊朗队长 Ehsan Hajsafi（若首发）；新西兰队长 Chris Wood——两人均有大赛经验，适应新规无压力。</li>
+      <li><b>半自动越位</b>：判罚更快更准，Taremi 的越位临界冲刺将被精准捕捉，对进球数有轻微抑制。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在一场节奏沉闷、预期少见明显犯规的比赛中，裁判对最终结果影响较小。但若伊朗在禁区前沿被犯规（定位球对 Taremi 的拉扯），点球/黄牌概率会随裁判尺度而异——在未获知具体裁判及其执法风格的前提下，裁判面不构成可操作的分析依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；以赛前官方名单为准）</div>
+    <h4>🇮🇷 伊朗 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Beiranvand; Hardani · Kanaanizadegan · Khalilzadeh · Nemati; Ezatolahi · Ghoddos; Jahanbakhsh · Ghayedi · Mohebi; Taremi</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Mehdi Taremi</td><td>前锋 / 国际米兰</td><td>伊朗最大进攻出口；单箭头背身支点；60+ 国家队进球</td></tr>
+      <tr><td class="ht">Alireza Jahanbakhsh</td><td>边锋 / 效力欧洲</td><td>右路创造力核心；定位球和边路突破的主要来源</td></tr>
+      <tr><td class="ht">Saeid Ezatolahi</td><td>中场 / 已从脚伤恢复</td><td>中场屏障；已确认伤愈，出战应无问题</td></tr>
+      <tr><td class="ht">Alireza Beiranvand</td><td>门将 / 效力欧洲</td><td>国门核心；长传出球是伊朗反击的启动器</td></tr>
+    </table>
+    <h4>🇳🇿 新西兰 预测首发（4-4-2 / 4-2-3-1）</h4>
+    <div class="lineup">Crocombe; T. Payne · Boxall · Surman · Cacace; Stamenic · Bell; Singh; Wood (C)</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Chris Wood (C)</td><td>前锋 / 诺丁汉森林</td><td>队长；34 岁；膝伤后复出宣称百分百恢复；空中制霸与定点罚球手</td></tr>
+      <tr><td class="sc">Sarpreet Singh</td><td>中场 / 效力欧洲</td><td>技术型核心；Wood 之外最具个人能力的球员</td></tr>
+      <tr><td class="sc">Marko Stamenic</td><td>中场 / 美职联</td><td>双后腰之一；中场覆盖与持球稳定性</td></tr>
+      <tr><td class="sc">Liberato Cacace</td><td>左后卫 / Wrexham</td><td>积极插上的边后卫；是左路进攻的主要动能来源</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / Squawka），<b>以赛前官方名单为准</b>。Ryan Thomas 出战存疑（待核）；伊朗联赛停摆影响国内球员状态（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇮🇷 伊朗 · Amir Ghalenoei</div>
+        <div class="role">4-2-3-1 低位防守 + 依托 Taremi 的快速反击</div>
+        <ul class="cl">
+          <li>伊朗的核心竞争力是纪律严明的低位防守块，用双后腰锁住中路，以中场高压封堵出球线，再依托 Taremi 的背身持球发动反击。</li>
+          <li>Jahanbakhsh 的右路技术和边路传中是主要进攻套路；左路 Mohebi 提供宽度；定位球方面依赖 Taremi 的个人争顶。</li>
+          <li>风险：联赛停摆使国内球员体能存疑，若上半场主动进攻消耗过大，下半场防线可能出现松弛——尤其面对 Wood 的高空威胁。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇳🇿 新西兰 · Darren Bazeley</div>
+        <div class="role">4-4-2 或 4-2-3-1 防守反击 + 定位球决胜</div>
+        <ul class="cl">
+          <li>新西兰的战术重心是组织密集防线、压缩伊朗进攻空间，依靠 Wood 的高空球和定位球创造得分机会——这是对抗实力更强球队的标准剧本。</li>
+          <li>Cacace 的积极插上是左路最有活力的进攻出口；Stamenic/Bell 的双后腰为进攻球员提供覆盖保护。</li>
+          <li>风险：Thomas 如果缺阵，中场控制力大打折扣；进攻端过于依赖定位球，若进攻次数不足，得分机会极为稀缺。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· 超算模型</small></div>伊朗在 25000 次模拟中胜率 53.8%，新西兰 20.4%——量化模型与市场赔率完全吻合。报告强调伊朗的"务实 4-2-3-1 体系专为此类低欲望博弈设计，等待 Taremi 制造决定性时刻"，新西兰则被定位为"物理对抗强、定位球危险，但技术面上明显居于下风"。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>指出伊朗联赛停摆是最大隐患，同时强调新西兰 0-4 负海地的热身赛数据——认为两队进攻效率均处低位，1-0 是最可能的比分，基本面支持伊朗胜 + 小球组合。</div>
+    <div class="insight"><div class="who">ChatGPT · AI 面板 <small>· NYSportsDay</small></div>反向押注让球：认为伊朗赢 2 球以上的概率（22–24%）被 -175 的赔率（隐含 36%）高估，主张新西兰 +1.5 作为价值盘。这一观点反映了"伊朗历届世界杯多为窄胜或 1-0"的历史模式。</div>
+    <div class="insight"><div class="who">综合 · 新西兰侧画像 <small>· 战术信号</small></div>新西兰不是来打漂亮球的——Chris Wood 的加冕时刻在 2010 年南非世界杯已经写入历史（传奇的 1-1 平意大利）。本次目标是首次闯入淘汰赛。要实现这一目标，首场对伊朗至少需要一分——这意味着密集防守的比赛将给双方带来真实的竞争性张力，不会是单边碾压。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：伊朗 1-0 是基准剧本；1-1 平局是最大风险（Chris Wood 定位球）；新西兰胜（约 20%）是小概率尾部风险。0-0 平局为低概率事件（两队均有进球能力）。</li>
+      <li><b>关键先生</b>：Taremi（伊/进攻决定者）、Ezatolahi（伊/中场控制）、Chris Wood（新/定位球决胜）、Cacace（新/边路活力）。</li>
+      <li><b>胜负手</b>：这场比赛的真正胜负手不是阵型差距，而是<b>定位球效率</b>——谁先打破僵局，谁就能驾驭节奏。伊朗体能状态（联赛停摆影响）是最大的潜在爆冷变量。</li>
+      <li><b>市场视角</b>：博彩与 Opta 超算完全收敛（≈52%），无情绪溢价，过热指数 3/5。最有信息含量的市场是<b>小球 2.5 球</b>（偏向 Under）；亚盘层面伊朗 -0.5 是基准线。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Ryan Thomas 是否出战（伤情存疑）；② 伊朗签证风波最终影响范围及代表团完整性；③ 裁判委任未官宣；④ 伊朗联赛停摆对国内球员体能的实际影响；⑤ Kalshi/Polymarket 单场价格与成交量未公开检得；⑥ 角球具体盘口数据未检得；⑦ 亚盘具体赔率及让球线以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G">Wikipedia — G组确认（伊朗、新西兰、比利时、埃及）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021476">FIFA 官方赛程 — 伊朗 vs 新西兰</a> · <a href="https://www.espn.com/soccer/story/_/id/49045598/iran-vs-new-zealand-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/iran/world-cup-2026/preview/iran-vs-new-zealand-prediction-team-news-lineups_599122.html">Sports Mole — 前瞻/队况/首发</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-iran-vs-new-zealand-06-15-26-world-cup-2026/">Squawka — 前瞻分析</a> · <a href="https://www.rotowire.com/soccer/article/iran-vs-new-zealand-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-118098">Rotowire — 首发/战术</a><br>
+      • <a href="https://theanalyst.com/articles/iran-vs-new-zealand-prediction-world-cup-2026-match-preview">Opta Analyst — 超算模拟</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/iran-vs-new-zealand-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aAP7j4z779qD/">Racing Post — 赔率/投注</a> · <a href="https://www.sportsline.com/insiders/iran-vs-new-zealand-odds-predictions-time-2026-world-cup-picks-from-elite-soccer-expert/">SportsLine — 专家预测</a><br>
+      • <a href="https://www.nysportsday.com/2026/06/13/chatgpt-claude-gemini-iran-vs-new-zealand-predictions-06-13-2026/">NYSportsDay — AI 面板（ChatGPT/Claude/Gemini）</a> · <a href="https://www.aljazeera.com/sports/2026/5/17/sardar-azmoun-left-out-as-iran-announce-world-cup-2026-squad">Al Jazeera — Azmoun 被开除</a> · <a href="https://www.espn.com/soccer/story/_/id/48984862/iran-usa-world-cup-visas-officials-2026">ESPN — 签证风波</a><br>
+      • <a href="https://www.rnz.co.nz/news/sport/597396/football-world-cup-ryan-thomas-in-race-against-time-after-latest-injury-blow">RNZ — Ryan Thomas 伤情</a> · <a href="https://www.flashscore.com/news/soccer-world-cup-new-zealand-captain-chris-wood-fully-fit-for-2026-world-cup-after-injury-battles/xj5tDLMN/">Flashscore — Chris Wood 复出</a> · <a href="https://www.nzherald.co.nz/sport/football/football-world-cup/all-whites-captain-chris-wood-back-to-full-fitness-for-fifa-world-cup-sets-big-target/65TVABWPDZGABA2GD6FOQVA6RM/">NZ Herald — Wood 目标</a><br>
+      • <a href="https://www.gbnews.com/sport/football/iran-visa-world-cup-2026-2677037388">GB News — 签证上诉</a> · <a href="https://www.espn.com/soccer/odds/_/gameId/760427">ESPN — 赔率中心</a> · <a href="https://tips.gg/article/iran-vs-new-zealand-betting-odds/">Tips.GG — 赔率汇总</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['伊朗胜','平局','新西兰胜'],datasets:[{data:[52,28,20],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[42,58],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，明显偏向小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['比利时','伊朗','新西兰','埃及'],datasets:[{data:[3,20,85,38],backgroundColor:['#f4a61b',HT,SC,'#c8102e'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'伊朗',data:[7.5,6,6.5,5.5,7,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'新西兰',data:[6,4.5,5,7,5,4],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

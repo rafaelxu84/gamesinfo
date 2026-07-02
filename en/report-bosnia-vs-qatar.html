@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Bosnia vs Qatar · 2026 World Cup Group B Final Round</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-bosnia-vs-qatar.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-bosnia-vs-qatar.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-bosnia-vs-qatar.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-bosnia-vs-qatar.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-bosnia-vs-qatar.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#1f7a4d;--sc:#8a1538;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#23694a,#7a1532);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#0d2218,#22121d);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#5fd3ab;font-weight:600}td.sc{color:#e88aa0;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-bosnia-vs-qatar.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-bosnia-vs-qatar.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-bosnia-vs-qatar.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group B Final Round · A "quasi-knockout" with both sides on 1 point — a draw eliminates both</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full Time · Bosnia 3-1 Qatar</span>
+  <h1>Bosnia vs Qatar</h1>
+  <div class="meta">24 June 2026 · Seattle, Lumen Field · 15:00 ET (12:00 local) · Group B (alongside: Switzerland, Canada) · Final round</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#5fd3ab">🇧🇦 Bosnia</div><div class="rk">FIFA #74 range · 1-1 Canada + 1-4 Switzerland · 1 point (GD -3) · Led by Džeko · Must win</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#e88aa0">🇶🇦 Qatar</div><div class="rk">Asian Cup holders · 1-1 Switzerland + 0-6 Canada · 1 point (GD -6) · Form collapse · Must win</div></div>
+  </div>
+
+  <!-- ===== POST-MATCH REVIEW (daily-analysis written 06-25) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Bosnia 3-1 Qatar (HT 2-1) · 06-24</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Seattle's "quasi-knockout": Bosnia stormed out of the blocks with 5 shots in the first 23 minutes (all from outside the box). In the <b>29th minute</b>, 18-year-old prodigy <b>Kerim Alajbegović</b> drilled a 20-yard strike into the near corner from outside the area — <b>becoming the 8th-youngest goalscorer in World Cup history</b>; in the <b>34th minute</b> Qatar goalkeeper Abunada turned the ball into his own net for 2-0; in the <b>42nd minute</b> Al-Haydos pulled one back for Qatar to make it 2-1 at the break. In the <b>82nd minute</b>, <b>Ermin Mahmić</b> (who had also scored in the 1-4 loss to Switzerland) added another to seal 3-1. Bosnia reach the World Cup knockout rounds for the first time in their history.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 29' Alajbegović · 34' Abunada own goal · 42' Al-Haydos (QAT) · 82' Mahmić ｜ 18-year-old Alajbegović = 8th-youngest scorer in World Cup history</div>
+
+    <h4 style="margin-top:16px">② Key data comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇦 Bosnia</th><th>🇶🇦 Qatar</th><th>Reading</th></tr>
+      <tr><td class="ht">Score (HT)</td><td><b>3 (2)</b></td><td>1 (1)</td><td>Bosnia took control with a 2-1 half-time lead and added a finisher after the break</td></tr>
+      <tr><td class="ht">Opening intensity</td><td><b>5 shots in first 23 min</b></td><td>—</td><td>A high-intensity start with long-range shooting was Bosnia's keynote (all 5 shots from outside the box)</td></tr>
+      <tr><td class="ht">Possession / xG</td><td colspan="2">Detailed possession, xG and shot distribution <b>TBC</b> (full data not published in public sources)</td><td>No unverified metrics fabricated</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://theanalyst.com/articles/bosnia-herzegovina-vs-qatar-stats-world-cup-2026">Opta Analyst — Bosnia 3-1 Qatar Stats</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/bosnia-and-herzegovina-qatar-highlights-match-report">FIFA Match Report</a> · <a href="https://www.espn.com/soccer/match/_/gameId/760462/qatar-bosnia-herzegovina">ESPN</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">A high-intensity start + long-range firepower was Bosnia's winning blueprint</div>5 shots in the first 23 minutes, all from outside the box, with Alajbegović's 20-yard strike opening the scoring. <b>This shows Bosnia were willing to press high from kickoff and create danger with shots from distance</b> — this "score early, seize the rhythm" approach was the key to killing off the contest, and it is a repeatable template for the knockouts.</div>
+    <div class="insight"><div class="who">18-year-old Alajbegović is Bosnia's future core</div>The 8th-youngest scorer in World Cup history, a single long-range strike set the tone for the whole match. <b>This shows Bosnia have found a young spark capable of carrying pressure on the big stage</b>, so the attack no longer relies solely on veterans.</div>
+    <div class="insight"><div class="who">Qatar's goalkeeper own goal highlighted a fragile defence</div>The second goal came from goalkeeper Abunada's own goal. <b>This shows Qatar's back line (goalkeeper included) struggles to deal with the ball under high-intensity pressing</b> — a microcosm of their group-stage exit.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match thesis</th><th>Result</th><th>Notes</th></tr>
+      <tr><td class="ht">Bosnia win (implied ≈62%)</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>3-1 win, consistent with the clear 62% favourite positioning</td></tr>
+      <tr><td class="ht">"Both on 1 point, quasi-knockout, a draw eliminates both"</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>It was precisely this win that took Bosnia into the knockouts for the first time</td></tr>
+      <tr><td class="ht">Goals total (incl. Over lean)</td><td style="color:var(--good)"><b>✓ Over</b></td><td>4 goals in total, long-range strikes + an own goal pushed the total up</td></tr>
+      <tr><td class="ht">Market heat 2.5/5</td><td style="color:var(--good)"><b>✓ Reasonable</b></td><td>Result aligned with the line's direction, no notable upset</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#3f8ed2">🇧🇦 Bosnia · Through to the last 32 (Group B 3rd · a team first) · possibly facing the USA</h4>
+        <ul class="watch">
+          <li><b>Historic first appearance in the World Cup knockouts</b>; per several analyses, Bosnia could well become <b>hosts USA's last-32 opponent</b> (depending on final group rankings).</li>
+          <li><b>Scoring early to seize the rhythm + long-range shooting</b> is their most realistic route to stealing points off stronger sides.</li>
+          <li><b>Young spark Alajbegović</b> is one to watch closely in the knockouts.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#9aa7c7">🇶🇦 Qatar · Eliminated (bottom of Group B)</h4>
+        <ul class="watch">
+          <li><b>Group-stage exit</b>: the defence (goalkeeper included) made repeated errors under pressure, the main cause of elimination.</li>
+          <li><b>Al-Haydos can still score</b>: the veteran's individual quality remains, but overall competitiveness lags behind Europe/the stronger sides.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the Group B final round that is <b>a group game in name but a knockout in reality</b>: Bosnia (FIFA #74, led by Edin Džeko) drew 1-1 with Canada and lost 1-4 to Switzerland, while Qatar (Asian Cup holders) drew 1-1 with Switzerland and <b>were thrashed 0-6 by Canada</b>, leaving both sides on just 1 point. Switzerland and Canada both lead on 4 points and have essentially sealed the two qualification spots from this group after round two — <b>the most realistic route out for Bosnia/Qatar is "win and chase a best-third-place spot"</b>, and <b>a draw almost certainly eliminates both</b>, making this an out-and-out quasi-knockout. The line clearly favours Bosnia — win odds around <b>1.44</b> (de-vigged implied ≈62%), draw around <b>4.50</b> (≈22%), Qatar win around <b>5.00</b> (≈16%); the totals line leans <b>Over</b> ("Over 3 goals" listed as a highlight, both teams need to attack). Watch points: ① <b>Edin Džeko's hold-up play and experience</b> (Bosnia's focal point); ② <b>whether Qatar can halt the collapse</b> — a 0-6 hammering + a form crisis of no goals in 4 of their last 5 matches; ③ the <b>both-must-win</b> dynamic creating an open, attacking game. Base script: <b>Bosnia win, scoreline on the higher side</b>, with Qatar in the worst position given their form trough + goal-difference deficit. Market heat index ≈ 2.5/5 (Bosnia consensus, value in the handicap and Over).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Bosnia implied win % (de-vigged)</div><div class="v" style="color:#5fd3ab">≈62%</div></div>
+      <div class="key"><div class="k">Qatar implied win % (de-vigged)</div><div class="v" style="color:#e88aa0">≈16%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈22%</div></div>
+      <div class="key"><div class="k">Market heat index</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Quasi-knockout: a draw eliminates both</b>: Bosnia and Qatar are both on 1 point, with Switzerland/Canada having essentially locked up the top two — the most realistic route for both teams is to <b>win and chase a best-third-place spot</b>, while a draw eliminates both. This pushes the match into a "must produce a winner" open, attacking shape.</li>
+      <li><b>Edin Džeko is Bosnia's focal point (the key man)</b>: the 39-year-old captain and national-team all-time top scorer (around 73 goals) remains the pivot and experiential core of Barbarez's attack — Bosnia's biggest lever to break the game open. Availability to be re-checked pre-match.</li>
+      <li><b>Qatar's form collapse (carried over from the last match)</b>: a 0-6 thrashing by Canada, plus warm-up defeats to Tunisia and Ireland, and no goals in 4 of their last 5 matches — Qatar are the worst-placed in the group, caught in a triple bind of <b>attacking drought + collapsed confidence + a goal difference of -6 at the foot of the table</b>.</li>
+      <li><b>The goal-difference scales tip toward Bosnia</b>: Bosnia GD -3, Qatar GD -6 — even in any best-third-place tiebreak, Bosnia's goal difference and quality are superior; Qatar would need a big win to have a theoretical chance, but their attacking form can't support it.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, each explained for how it changes the tactics or result (including carry-over items from both teams' last matches; key player availability cross-checked across multiple sources)</div>
+
+    <div style="border-left:3px solid var(--ht);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#5fd3ab;font-weight:700">⭐ Key player · Edin Džeko leads Bosnia's attack <span style="color:var(--mut);font-weight:400">· Goal / Yahoo · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">39-year-old captain <b>Edin Džeko</b> (national-team all-time top scorer ≈73 goals) remains Barbarez's attacking pivot, with 6 goals in qualifying</div>
+      <p style="font-size:13.5px">According to Goal/Yahoo, despite his advancing years Edin Džeko remains the focal point and experiential core of Bosnia's attack — the all-time national-team top scorer with around 73 goals in 148 caps, having scored 6 in qualifying, his big-stage experience is "irreplaceable". Bosnia must win to chase a best-third-place spot, and Džeko's hold-up role and penalty-box finishing are the team's biggest lever. <span style="color:var(--warn)">[Starting XI and fitness subject to the official pre-match team sheet · to be re-checked]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In a match where both teams must win and the game is open, Džeko's hold-up play, aerial duels and finishing directly determine whether Bosnia can convert territorial dominance into goals. Bosnia's positioning as clear favourites (≈62%) rests precisely on the quality of their Europe-based players and Džeko's individual ceiling — this underpins the pricing of the Bosnia handicap (-0.5/-1) and the Over.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.goal.com/en-us/news/bosnia-herzegovina-qatar-world-cup-preview/blt5e8717e6a4265b16" style="color:var(--accent)">Goal — Preview/Džeko</a> · <a href="https://sports.yahoo.com/articles/bosnia-herzegovina-vs-qatar-prediction-080500103.html" style="color:var(--accent)">Yahoo Sports — Prediction/team news</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#e88aa0;font-weight:700">Qatar · Carried over from last match · Form collapse + attacking drought <span style="color:var(--mut);font-weight:400">· Yahoo / Goal · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Qatar <b>thrashed 0-6 by Canada</b>, no goals in 4 of their last 5; the contrast from Asian champions to a World Cup collapse</div>
+      <p style="font-size:13.5px">Following the 1-1 draw with Switzerland and 0-6 loss to Canada: Qatar's attack has dried up and confidence has collapsed — aside from the draw with Switzerland, they lost warm-ups to Tunisia and Ireland, and have failed to score in 4 of their last 5 matches. The 0-6 is one of the most glaring collapse data points of the tournament so far. As Asian Cup holders, Qatar's World Cup journey forms a stark contrast with their continental dominance; in the final round, bottom of the table on -6 goal difference, their theoretical qualification chances are slim. <span style="color:var(--warn)">[Starting XI and injuries subject to official pre-match confirmation · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Qatar's "attacking drought + collapsed confidence + bottom-of-the-table goal difference" is the root of why they are priced low (≈16%). With a must-win mandate, a team that has failed to score in 4 of its last 5 will find it extremely hard to break a game open; this supports the Bosnia handicap and the "Qatar low goals" pricing, but Qatar being forced to commit forward could also make the game more open (favouring the Over).</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://sports.yahoo.com/articles/bosnia-herzegovina-vs-qatar-prediction-080500103.html" style="color:var(--accent)">Yahoo Sports — Prediction/Qatar form</a> · <a href="https://www.goal.com/en-us/news/bosnia-herzegovina-qatar-world-cup-preview/blt5e8717e6a4265b16" style="color:var(--accent)">Goal — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match environment · Match referee <span style="color:var(--mut);font-weight:400">· Goal / Forebet · 06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Seattle Lumen Field (open-air, mild summer); match referee <b>awaiting official confirmation</b></div>
+      <p style="font-size:13.5px">The match is played at Seattle's Lumen Field (12:00 local, daytime; Seattle's summer climate is mild and has limited impact on fitness). As of writing, <b>the match referee has not been clearly identified in public sources</b> — subject to FIFA's official pre-match appointment. <span style="color:var(--warn)">[Referee and full officiating team · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: With both teams needing to win and high attacking intensity, the referee's threshold has a real impact on cards/penalties; once the official referee is announced, their big-tournament profile will be re-checked on match day. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.goal.com/en-us/news/bosnia-herzegovina-qatar-world-cup-preview/blt5e8717e6a4265b16" style="color:var(--accent)">Goal — Preview/match information</a> · <a href="https://www.forebet.com/en/football/matches/bosnia-herzegovina-qatar-2463178" style="color:var(--accent)">Forebet — Match data</a></div>
+    </div>
+  </section>
+
+  <!-- Confirmed Lineups & Reading -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Confirmed Lineups &amp; Reading <span style="font-size:12px;color:var(--mut);font-weight:500">· Official team sheets announced · media consistent</span></h2>
+    <div class="sub">Data source: <b>FIFA official Match Centre now shows the full starting XIs + benches</b> (captain's armband read from FIFA's C badge and verified by screenshot: <b>Bosnia Džeko, Qatar Al Haydos</b>) + Oddschecker / Sports Illustrated consistent → <b style="color:var(--good)">✅ Officially confirmed</b>. Key points: <b style="color:#5fd3ab">Bosnia field two strikers (Džeko + Demirović)</b>, <b style="color:#e88aa0">Qatar place all-time great scorer Almoez Ali on the bench</b>.</div>
+
+    <h4>① Both official starting XIs</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:13px;color:#5fd3ab;font-weight:700;margin-bottom:4px">🇧🇦 Bosnia · 4-4-2 · Sergej Barbarez</div>
+        <div class="lineup">Vasilj; Radeljić · Katić · Kolašinac · Malić; Bajraktarević · Šunjić · Bašić · Alajbegović; Demirović · Džeko(C)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: Haris Tabaković (impact striker), Benjamin Tahirović, Samed Bazdar, Amar Dedić, Dennis Hadžikadunić. <b>Džeko wears the captain's armband (confirmed by FIFA's C badge)</b>.</div>
+      </div>
+      <div>
+        <div style="font-size:13px;color:#e88aa0;font-weight:700;margin-bottom:4px">🇶🇦 Qatar · 4-3-3 · Head coach</div>
+        <div class="lineup">Abunada; Al Brake · Khoukhi · Pedro Miguel · Issa Laye; Boudiaf · Fathy · Gaber; Al Haydos(C) · Afif · Edmílson Júnior</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Key weapons on the bench: <b style="color:#e88aa0">Almoez Ali (all-time great scorer, benched for this match)</b>, Yusuf Abdurisag, Abdulaziz Hatem, Mohammed Muntari, Meshaal Barsham (goalkeeper).</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② vs predicted XI comparison (item by item: why it matters)</h4>
+    <table>
+      <tr><th>Change</th><th>Predicted</th><th>Official</th><th>Why it matters</th></tr>
+      <tr><td class="ht"><b>BOS · Shape/front line</b></td><td>4-2-3-1 (Džeko lone striker)</td><td class="ht">4-4-2 (Demirović + Džeko twin strikers)</td><td>Bosnia go for <b>two strikers and an attacking setup</b> rather than a lone striker — consistent with the "must win to chase best third" mandate; their attacking intent is more aggressive than predicted, supporting the Over/handicap direction</td></tr>
+      <tr><td class="ht"><b>BOS · Goalkeeper</b></td><td>Šehić</td><td class="ht">Vasilj</td><td>Goalkeeper and back line differ in several spots from the historical setup (Radeljić/Malić as full-backs, Kolašinac/Katić central), with a younger actual lineup</td></tr>
+      <tr><td class="ht"><b>BOS · Midfield</b></td><td>Hadžiahmetović · Gigović</td><td class="ht">Šunjić · Bašić (+ Bajraktarević/Alajbegović wide)</td><td>Both central pivots changed, with Bajraktarević deployed wide — providing wide and central supply for the two strikers</td></tr>
+      <tr><td class="sc"><b>QAT · Almoez Ali</b></td><td>Predicted starting centre-forward</td><td class="sc">Bench</td><td>Qatar place <b>all-time great scorer Almoez Ali on the bench</b>, switching to Afif centrally + Al Haydos/Edmílson on the flanks — a trade-off amid the attacking drought, confirming the summary's "Qatar's attacking problem unresolved"</td></tr>
+      <tr><td class="sc"><b>QAT · Goalkeeper/shape</b></td><td>Barsham · 4-3-3/5-3-2</td><td class="sc">Abunada · 4-3-3</td><td>Goalkeeper changed to Abunada, settling on 4-3-3; Khoukhi/Pedro Miguel central, Boudiaf-Fathy-Gaber a midfield three</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Tactical read (summary verdict: maintained and reinforced)</h4>
+    <ul class="cl">
+      <li><b style="color:#5fd3ab">Thesis maintained ① (Bosnia attack)</b>: Bosnia line up in a <b>4-4-2 with Demirović + Džeko as twin strikers</b>, more attacking than the predicted lone striker — fully consistent with the "must win, and the bigger the win the better for the best-third goal difference" mandate. The summary's "Bosnia win, scoreline higher" base case is <b>maintained and reinforced</b>, a positive for the Over and the handicap (-0.5/-1).</li>
+      <li><b style="color:#e88aa0">Thesis maintained ② (Qatar attacking concern)</b>: In a do-or-die must-win game, Qatar nonetheless place <b>all-time great scorer Almoez Ali on the bench</b>, switching to Afif centrally with veterans Al Haydos and Edmílson out wide — a trade-off reflecting their dilemma amid the attacking drought. The summary's "can Qatar halt the collapse" question is <b>even more pronounced</b>, with the starting XI lacking a genuine penalty-box finisher.</li>
+      <li><b>Key match-up</b>: Bosnia's twin strikers + wide supply target the defence Qatar exposed in the 0-6; Qatar's counter relies mainly on Afif's individual quality, with Almoez Ali kept in reserve for a second-half change. Bosnia's field tilt is expected to be clearly dominant.</li>
+      <li><b>Goal-difference scales unchanged</b>: the official lineups (Bosnia all-out attack vs Qatar's conservative selection) <b>nudge things further toward a Bosnia win + more goals</b>, consistent with the summary's "Bosnia win, Qatar worst-placed" thesis; Qatar being forced forward could still open the game up (favouring the Over but with a risk of the Bosnia -1 being spoiled).</li>
+    </ul>
+
+    <h4 style="margin-top:18px">④ Market reaction</h4>
+    <div class="note">Before the lineups were published, Bosnia win was around <b>1.44</b> (decimal), handicap -0.5/-1, totals leaning Over. The official lineups signal is <b>positive for the Bosnia attacking direction</b> — Bosnia's twin strikers strengthen the attack while Qatar's XI lacks a genuine striker, directionally supporting the Bosnia handicap and the Over; Qatar's win odds unlikely to shorten. <span style="color:var(--warn)">[Specific post-announcement lines · TBC, subject to the live pre-match market]</span> Stated as fact only, not betting advice.</div>
+
+    <div style="font-size:12px;color:var(--mut);margin-top:10px">Sources: <a href="https://www.oddschecker.com/insight/football/20260624-bosnia-and-herzegovina-vs-qatar-confirmed-lineups" style="color:var(--accent)">Oddschecker — Officially confirmed XIs + full bench</a> · <a href="https://www.si.com/soccer/bosnia-herzegovina-vs-qatar-world-cup-preview-predictions-lineups-6-24-26" style="color:var(--accent)">Sports Illustrated — Starting XIs</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021448" style="color:var(--accent)">FIFA Match Centre — Official XI (incl. C captain badge)</a></div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">FIFA ranking · 1X2 implied probability (de-vigged) · Group B picture · Over/Under market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group B four-team FIFA ranking (lower = stronger · approx.)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇧🇦 Bosnia</th><th>🇶🇦 Qatar</th></tr>
+      <tr><td>FIFA Ranking</td><td class="ht">#74 range</td><td class="sc">#36 range (Asian Cup champions)</td></tr>
+      <tr><td>First two rounds</td><td class="ht">1-1 Canada + 1-4 Switzerland (1 pt, GD -3)</td><td class="sc">1-1 Switzerland + 0-6 Canada (1 pt, GD -6)</td></tr>
+      <tr><td>Group B points (before final round)</td><td colspan="2">Switzerland 4 (+3), Canada 4 (+6) lead and have essentially locked the top two; Bosnia 1 (-3), Qatar 1 (-6) — both need to win to chase best third, a draw eliminates both</td></tr>
+      <tr><td>Head coach</td><td class="ht">Sergej Barbarez (Bosnia, home-grown)</td><td class="sc">Qatar head coach <span style="color:var(--warn)">TBC</span></td></tr>
+      <tr><td>Key players</td><td class="ht">Edin Džeko(C), Europe-based front/midfield</td><td class="sc">Akram Afif, Almoez Ali (Asian Cup heroes)</td></tr>
+      <tr><td>Watch points/questions</td><td class="ht">Džeko's finishing; can they win convincingly to chase best third</td><td class="sc">Can they halt the collapse/score; goal-difference deficit</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">No World Cup since 2014 · Nations League mid-table</td><td class="sc">WC 2022 host three straight group defeats · Asian Cup 2023/2019 champions</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win ≈1.44 (implied ≈62%)</td><td class="sc">Win ≈5.00 (≈16%) · Draw 4.50 (≈22%)</td></tr>
+      <tr><td>Over / Under</td><td colspan="2" class="sc">"Over 3 goals" listed as a highlight — both teams must win, strong attacking dynamic, leans Over</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are de-vigged implied probabilities from decimal odds (≈62/22/16, normalised). Odds source: market composite (Bosnia 4/9→1.44; draw ≈4.50; Qatar ≈5.00), "Over 3 goals" roughly even-money. Note: Qatar rank higher on FIFA, but the market <b>clearly leans toward Bosnia</b> because of Bosnia's Europe-based quality + Qatar's collapse. The handicap is Bosnia around -0.5/-1, totals lean Over. Specific odds subject to the live pre-match market. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this World Cup actuals · underlying quality signals · sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two majors / qualifying)</b> with <b>this World Cup's actuals (first two rounds)</b> item by item. Public national-team xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical average vs this World Cup actuals (team by team)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (source sample)</th><th>This World Cup actual (first two rounds)</th><th>Delta and reading</th></tr>
+      <tr><td class="ht">🇧🇦 Bosnia · Attack</td><td class="ht">Europe-based front/midfield + Džeko pivot, Džeko 6 goals in qualifying</td><td class="ht">2 goals in 2 games (1 each vs Canada and Switzerland)</td><td><b>Mid-tier</b>: Džeko is the finisher but the firepower is average; room to amplify against a collapsing Qatar</td></tr>
+      <tr><td class="ht">🇧🇦 Bosnia · Defence</td><td class="ht">Nations League mid-table, average back line</td><td class="ht">5 conceded in 2 games (dragged down by 1-4 vs Switzerland)</td><td><b>On the weak side</b>: being torn apart by Switzerland inflated the goals against; but with Qatar's attack dry, Bosnia's conceding risk drops in this match</td></tr>
+      <tr><td class="sc">🇶🇦 Qatar · Attack</td><td class="sc">Asian Cup 2023/2019 champions, Afif/Almoez Ali as finishers</td><td class="sc">1 goal in 2 games, no goals in 4 of last 5</td><td><b>Extremely low/collapsed</b>: continental-champion-level firepower has completely misfired at the World Cup, the most serious structural problem in this match</td></tr>
+      <tr><td class="sc">🇶🇦 Qatar · Defence</td><td class="sc">Organisationally decent at the Asian level</td><td class="sc">7 conceded in 2 games (0-6 vs Canada)</td><td><b>Collapsed</b>: the 0-6 exposed a defensive meltdown against European/American intensity, GD -6 at the foot of the table</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Bosnia are mid-tier on both attack and defence, but hold a quality edge over Qatar; Qatar's continental-champion level has completely misfired at the World Cup (attacking drought + 0-6 collapse). The deep data supports the "Bosnia win, Qatar worst-placed" thesis. Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② Match projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>Match model projected xG (magnitude)</td><td class="ht">Bosnia ≈1.6</td><td class="sc">Qatar ≈0.8</td><td>Bosnia favoured; but the both-must-win attacking dynamic + Qatar forced forward push the total-goals expectation higher (favouring the Over)</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Within the model, Bosnia (Europe-based quality) rank above the collapsing Qatar; the supercomputer gives Bosnia a clear win-probability edge, with Qatar's qualification probability extremely low (GD -6 + attacking misfire)</td><td>Opponent-strength calibration: Qatar's recent sample is very poor, amplifying Bosnia's relative edge</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">Public national-team data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Bosnia's field tilt is expected to dominate, Džeko's hold-up lifting penalty-box xT; Qatar must rely on the individual quality of Afif/Almoez Ali to counter for points</td><td><b>Trap warning</b>: although Qatar are collapsing, "must win" forces them forward → an open game, so the Bosnia handicap (-1) risks being spoiled by a Qatar goal; the Over is steadier than the clean win</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what each of these "xG-type" metrics represents)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; excluding penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: quality per shot — a low value = lots of long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value, the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches, measuring territorial dominance rather than pure possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">Bosnia consensus + Qatar collapse, direction clear; the value is in the handicap (-0.5/-1) and the Over (the both-must-win attacking dynamic), heat moderately low</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market heat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · Bosnia consensus, Qatar collapse reinforces the lean</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Bosnia are favoured (≈62%) and the line tilts further their way due to Qatar's form collapse. The real disagreement is in the <b>Bosnia handicap (-0.5 vs -1) and Over/Under</b> — the both-must-win attacking dynamic makes "Over 3 goals" a highlight, but Qatar's attacking drought suppresses their own goals.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: mainly Bosnia win)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Yahoo Sports</td><td>Preview/prediction</td><td>Bosnia win, with quality/depth/goal difference and motivation all in their favour</td></tr>
+      <tr><td>Goal</td><td>Pre-match preview</td><td>Bosnia edge it, Džeko the focal point; Qatar's form a concern</td></tr>
+      <tr><td>Juvefc / The Sports Rush</td><td>Prediction media</td><td>Bosnia win + watch the Over (both teams must win)</td></tr>
+      <tr><td>Forebet</td><td>Model</td><td>Model leans Bosnia, higher goal count</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Heat signal (moderately low)</b>: direction leans Bosnia, with Qatar's collapse reinforcing the tilt. No major disagreement on the result; the value is in the <b>handicap (-0.5/-1) and Over/Under ("Over 3 goals")</b>. The risk points are Qatar being forced forward to open the game up (favouring the Over but potentially spoiling the Bosnia -1), plus Bosnia's average firepower meaning a win may not be by a big margin.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Time point</th><th>Market</th><th>Bosnia win / Draw / Qatar win</th><th>Reading</th></tr>
+      <tr><td>Opening (composite)</td><td>1X2</td><td class="ht">≈1.55 / 4.20 / 4.50</td><td>Bosnia set as favourites (Europe-based quality + Džeko)</td></tr>
+      <tr><td>As of 06-22</td><td>Market / best price</td><td class="ht">1.44 (4/9) / 4.50 / 5.00</td><td>After Qatar's 0-6 collapse, odds <b>tilt further toward Bosnia</b></td></tr>
+      <tr><td>06-22</td><td>Over/Under</td><td colspan="2" class="ht">"Over 3 goals" roughly even-money — the both-must-win attacking dynamic supports the Over</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement (open → current)</h4>
+    <table>
+      <tr><th>Time point</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Open (days before)</td><td class="ht">Bosnia win ≈1.55; handicap -0.5; totals lean Over</td><td>Priced on "Bosnia's Europe-based quality + Džeko vs Qatar's Asian champions"; the open set Bosnia as favourites, not pushed to an extreme given Qatar's continental pedigree</td></tr>
+      <tr><td>Opening (repriced after round 2)</td><td class="ht">Bosnia win 1.44; handicap -0.5→-1; Qatar 5.00</td><td><b>Repricing from round 2</b>: Qatar's 0-6 thrashing + attacking drought, GD -6 at the bottom → odds <b>tilt sharply toward Bosnia</b>, the handicap deepening to -1, Qatar's win odds drifting; the both-must-win dynamic supports the Over ("Over 3 goals" a highlight)</td></tr>
+      <tr><td>Current (06-22→now)</td><td class="ht">Bosnia win 1.44; handicap -0.5/-1; totals lean Over</td><td>Price discovery focused on the <b>handicap (-0.5 vs -1) and Over/Under</b> — whether Qatar commit forward to open the game is the key variable; Bosnia's average firepower makes -1 less safe than -0.5</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: Bosnia are set as clear favourites, tilting further their way after Qatar's collapse (≈1.44, handicap -0.5/-1). The 1X2 has limited value; the most information-rich markets are the <b>handicap (-0.5/-1) and Over/Under (lean Over)</b>; the risk points are Bosnia's average firepower (a win may not be by much) + Qatar being forced forward to open the game. Opening ranges subject to each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction markets (aggregate)</b>: Bosnia's win probability is clearly superior, with a higher chance of advancing (chasing best third) than Qatar; Qatar's chances are slim with GD -6 + attacking misfire. <span style="color:var(--warn)">[Single-match volume/momentum breakdown not separately found in public sources · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Džeko's big-stage farewell act</b> — whether the 39-year-old veteran can give Bosnia a glimmer of hope is the emotional storyline.</li>
+      <li><b>Sentiment focus ②</b>: <b>Qatar's contrast from Asian champions to World Cup collapse</b> — their ability to bounce back after the 0-6 is in doubt.</li>
+      <li><b>Narrative</b>: both teams are on the brink of elimination; the slim hope of a best-third spot + Džeko's farewell are among the few watch points of this match.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite read</b>: Bosnia consensus + Qatar collapse, heat index <b>2.5/5</b>. The 1X2 has limited value; the information is in the <b>handicap (-0.5/-1) and Over/Under (lean Over)</b>; whether Qatar commit forward to open the game and Bosnia's average firepower are the two key variables. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://sports.yahoo.com/articles/bosnia-herzegovina-vs-qatar-prediction-080500103.html">Yahoo Sports — Prediction/team form</a> · <a href="https://www.goal.com/en-us/news/bosnia-herzegovina-qatar-world-cup-preview/blt5e8717e6a4265b16">Goal — Preview/Džeko</a> · <a href="https://www.juvefc.com/bosnia-and-herzegovina-v-qatar-predictions/">Juvefc — Prediction</a> · <a href="https://www.forebet.com/en/football/matches/bosnia-herzegovina-qatar-2463178">Forebet — Model/data</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">⏳ <b>Referee awaiting official confirmation</b>: as of writing, the match referee has not been clearly identified in public sources — subject to FIFA's official pre-match appointment. The match is at Seattle's Lumen Field (open-air, daytime, mild summer). <span style="color:var(--warn)">[Referee, full officiating team and VAR combination · TBC]</span></div>
+    <h4>Officiating threshold + this tournament's unified new rules (qualitative)</h4>
+    <ul class="cl">
+      <li><b>This tournament's unified new rules</b>: only captains may address the referee, an 8-second goalkeeper hold, semi-automated offside — the officiating environment this tournament is stricter overall, with time-wasting and crowding the referee well managed.</li>
+      <li><b>Nature of the match</b>: a quasi-knockout where both teams must win, with high tackling and emotional intensity — yellow cards and potential penalties are more likely than in an ordinary dead-rubber finale; semi-automated offside will precisely capture the borderline sprints of Džeko/Qatar's counters.</li>
+      <li><b>Officiating history with both teams</b>: to be re-checked once the referee is announced, including their big-tournament profile and history with both teams.</li>
+      <li><b>Two-sidedness</b>: high-intensity, open play favours higher card counts, but the specific threshold depends on the referee's identity — until confirmed, the cards/penalty markets are offered only as situational pointers, not actionable guidance.</li>
+    </ul>
+    <div class="flag">⚠ <b>Officiating analysis</b>: with the referee undecided, the officiating side is primarily a situational judgment of "nature of the match (quasi-knockout, must-win, open play) → cards on the higher side"; once FIFA announces the referee, their big-tournament single-match cards/penalty profile and history with both teams will be re-checked on match day.</div>
+  </section>
+
+  <!-- Predicted lineups & key players -->
+  <section>
+    <h2><span class="n">3</span> Predicted Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version see the ✅ Confirmed Lineups module above</span></h2>
+    <div class="sub">Predicted lineups (Goal / Yahoo / Forebet projections, unofficial; official lineups subject to the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇧🇦 Bosnia predicted XI (4-2-3-1) · Sergej Barbarez · Džeko lone striker</h4>
+    <div class="lineup">Šehić; Katić · Bičakčić · Ahmetović · Mujakić; Hadžiahmetović · Gigović; Bajraktarević · Tahirović · Bašić; Džeko(C)</div>
+    <table>
+      <tr><th>Player</th><th>Position/club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Edin Džeko (C)</td><td>Centre-forward / captain</td><td>National-team all-time top scorer (≈73 goals), still the pivot and experiential core at 39; Bosnia's biggest lever to score</td></tr>
+      <tr><td class="ht">Europe-based front/midfield</td><td>Wing/attacking midfield</td><td>The source of Bosnia's relative quality edge, must supply Džeko with ammunition and add depth</td></tr>
+      <tr><td class="ht">GK Šehić / defence</td><td>Back line</td><td>Dragged down by goals conceded in the 1-4 vs Switzerland; against a drained Qatar, the conceding pressure drops</td></tr>
+    </table>
+    <div class="note" style="margin-top:4px;margin-bottom:10px">⚠ The specific names in Bosnia's predicted XI are media projections/historical lineups; <b>be sure to defer to the official pre-match team sheet · TBC</b>.</div>
+    <h4>🇶🇦 Qatar predicted XI (4-3-3 / 5-3-2) · head coach TBC</h4>
+    <div class="lineup">Barsham; Pedro Miguel · B.Khoukhi · Tarek Salman · Homam Ahmed; Boudiaf · Hatem · Madibo; Akram Afif · Almoez Ali · Mohammed Muntari</div>
+    <table>
+      <tr><th>Player</th><th>Position/role</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Akram Afif</td><td>Winger/attacking midfield</td><td>Asian Cup 2023 best player/Golden Boot, Qatar's top hope for creation and finishing; whether his form recovers is key</td></tr>
+      <tr><td class="sc">Almoez Ali</td><td>Centre-forward</td><td>Qatar's all-time great scorer (Asian Cup 2019 Golden Boot), but the attack has dried up recently and he urgently needs to end the drought</td></tr>
+      <tr><td class="sc">GK Barsham / defence</td><td>Back line</td><td>The 0-6 loss to Canada exposed a defensive collapse; they must stop the bleeding before any chance of nicking points</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media projections/historical lineups (Goal / Yahoo / Forebet), <b>subject to the official pre-match team sheet · TBC</b>. Bosnia's focus is Džeko's support and fitness; Qatar's focus is the head coach choice and whether Afif/Almoez Ali can halt the attacking drought.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion is cross-referenced against both teams' actual approach and results in their last two major tournaments (World Cup + their respective continental/Nations League competitions)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#5fd3ab">🇧🇦 Bosnia · Sergej Barbarez</div>
+        <div class="role">4-2-3-1 Europe-based quality + Džeko pivot, set pieces for points</div>
+        <ul class="cl">
+          <li>Bosnia's game revolves around <b>Europe-based front/midfield quality + the Džeko pivot + set pieces</b> — their floor comes from individual quality, but the back line is average (exposed in the 1-4 vs Switzerland), overall European mid-tier.</li>
+          <li>Cross-reference: no World Cup since 2014, Nations League mid-table — limited experience in big-tournament battles, but Džeko's individual ceiling can amplify the advantage against weaker sides.</li>
+          <li>Entry point this match: Qatar's attacking drought and collapsed defence (0-6) are the target for Bosnia to amplify their firepower; they must convert territorial dominance into goals via Džeko's hold-up + wide supply, and the bigger the win the better for the best-third goal difference.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#e88aa0">🇶🇦 Qatar · head coach TBC</div>
+        <div class="role">4-3-3 / 5-3-2 possession+wide, Afif/Almoez Ali finishing (form collapse)</div>
+        <ul class="cl">
+          <li>At the Asian level Qatar won two Asian Cups (2019, 2023) through <b>possession + Afif's creation + Almoez Ali's finishing</b>, a mature system; but against European/American intensity, both attack and defence misfire at once.</li>
+          <li>Cross-reference: WC 2022 host three straight group defeats, this edition's 0-6 loss to Canada — <b>Qatar's continental dominance does not transfer to the World Cup stage</b>, a structural intensity gap rather than a one-off.</li>
+          <li>Approach this match: must win → forced forward, but no goals in 4 of their last 5 makes breaking the game open extremely hard; they must rely on the individual quality of Afif/Almoez Ali to counter for points while first steadying the defence to avoid another collapse. Theoretical qualification chances are slim.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Goal / Yahoo <small>· Pre-match preview</small></div>Bosnia edge it, superior on quality/depth/motivation/goal difference; Džeko the focal point. Qatar's form has collapsed (0-6 + attacking drought), the worst-placed.</div>
+    <div class="insight"><div class="who">Juvefc / Forebet <small>· Prediction/model</small></div>Bosnia win + Over (the both-must-win attacking dynamic); Qatar's win probability low.</div>
+    <div class="insight"><div class="who">Prediction markets <small>· Market consensus</small></div>Bosnia's win probability is clearly superior, with a higher chance of chasing best third than Qatar; Qatar's chances are slim with GD -6 + attacking misfire.</div>
+    <div class="insight"><div class="who">Composite · core question and trap <small>· Opta / FotMob</small></div>The real question is <b>whether Bosnia can win by enough (best-third goal difference) and whether Qatar can halt the collapse</b>. ⚠ Trap warning: Bosnia's firepower is average (a win may not be by much), so -1 is less safe than -0.5; Qatar being forced forward will open the game up → the Over is steadier than the clean win, but could also spoil the Bosnia handicap.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; Verification Checklist</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: Bosnia win with the scoreline on the higher side is the base script (Qatar collapse + bottom of the goal-difference table); a draw (≈22%) almost certainly eliminates both; a Qatar win (≈16%) would require an against-the-grain burst amid the attacking drought. The both-must-win attacking dynamic makes the Over more likely.</li>
+      <li><b>Key men</b>: Edin Džeko (Bosnia / pivot and finisher, biggest lever to score), Bosnia's Europe-based front/midfield; Akram Afif, Almoez Ali (Qatar / their only hope of halting the collapse).</li>
+      <li><b>Decisive factors</b>: ① whether Džeko can convert Bosnia's quality edge into goals; ② whether Qatar can halt the attacking drought and defensive collapse; ③ the degree to which Qatar are forced forward (determining how open the game is and the Over/Under).</li>
+      <li><b>Market view</b>: Bosnia consensus (≈62/22/16), Qatar's collapse reinforcing the lean, heat index 2.5/5. The 1X2 has limited value; the information is in the handicap (-0.5/-1) and Over/Under (lean Over).</li>
+    </ul>
+    <div class="flag">⚠ <b>Items to verify (TBC)</b>: ① both official starting XIs (FIFA Match Centre ~1 hour before kickoff); ② Džeko's fitness/start and Bosnia's actual lineup (re-check on match day); ③ Qatar's head coach choice and starting XI; ④ <b>the match referee and officiating team</b> (re-check the threshold profile once FIFA announces); ⑤ the precise arithmetic for the Group B best third (running alongside Switzerland–Canada, subject to FIFA's official determination); ⑥ specific odds for the handicap (-0.5/-1) and Over/Under totals line subject to the live pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.goal.com/en-us/news/bosnia-herzegovina-qatar-world-cup-preview/blt5e8717e6a4265b16">Goal — Preview/Džeko/match information</a> · <a href="https://sports.yahoo.com/articles/bosnia-herzegovina-vs-qatar-prediction-080500103.html">Yahoo Sports — Prediction/team form</a> · <a href="https://www.juvefc.com/bosnia-and-herzegovina-v-qatar-predictions/">Juvefc — Prediction</a><br>
+      • <a href="https://www.forebet.com/en/football/matches/bosnia-herzegovina-qatar-2463178">Forebet — Model/data/H2H</a> · <a href="https://thesportsrush.com/bosnia-and-herzegovina-v-qatar-predictions/">The Sports Rush — Prediction</a> · <a href="https://www.skysports.com/football/news/12098/13543085/world-cup-2026-group-b-guide-fixtures-schedule-standings-and-odds-for-canada-bosnia-herzegovina-qatar-and-switzerland">Sky Sports — Group B guide/standings</a><br>
+      • <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021448">FIFA — Match Centre</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_B">Wikipedia — Group B</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-23 · Charts use verified data, radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#2bbd8a',SC='#c45a78',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Bosnia win','Draw','Qatar win'],datasets:[{data:[62,22,16],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:75,title:{display:true,text:'Implied probability % (de-vigged, leans Over)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Switzerland','Canada','Qatar','Bosnia'],datasets:[{data:[20,31,36,74],backgroundColor:['#7fa6e6','#e8cd6b',SC,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA ranking (lower = stronger · approx.)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wide play/counter','Individual ceiling','Big-tournament experience'],
+  datasets:[
+   {label:'Bosnia',data:[5.5,6,6,6,6.5,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Qatar (collapse)',data:[4.5,4,5.5,5.5,5.5,5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

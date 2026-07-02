@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 巴西 vs 摩洛哥 · 2026世界杯 C组焦点战</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-brazil-vs-morocco.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-brazil-vs-morocco.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-brazil-vs-morocco.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-brazil-vs-morocco.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-brazil-vs-morocco.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --br:#16a34a;--ma:#c1272d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#0a7d3c,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13261b,#152138);border:1px solid var(--line);border-left:4px solid var(--good);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.br{color:#34d27b;font-weight:600}td.ma{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;font-weight:700}
+  .pbr{background:#16a34a33;color:#4ade80}.pma{background:#c1272d33;color:#f08a82}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-brazil-vs-morocco.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-brazil-vs-morocco.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-brazil-vs-morocco.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">⚽ 2026 世界杯 · C组首轮 · 当日头牌焦点战</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0a7d3c,#1d4a2a);margin-left:6px">🏁 已完赛 1-1</span>
+  <h1>巴西 vs 摩洛哥</h1>
+  <div class="meta">2026年6月13日 · 东卢瑟福 MetLife Stadium（决赛球场） · 18:00 ET · C组（同组：苏格兰、海地） · FOX/Telemundo 全国直播</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#34d27b">🇧🇷 巴西</div><div class="rk">FIFA #5 · 身价 €11.35亿 · 安切洛蒂首次大赛</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇲🇦 摩洛哥</div><div class="rk">FIFA #7 · 身价 €4.88亿 · 2025非洲杯冠军</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘模块 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 1-1（半场 1-1）· 事实与解读分开</span></h2>
+    <div class="sub">摩洛哥开场 30 分钟 14 射 12 的疾风轰炸先入一球，Vinícius 32′ 单骑世界波扳平；下半场归于沉闷，终场前 Alisson 连续扑救保下 1 分。市场"赢但赢不大"的判断比"巴西主胜"更准。</div>
+
+    <h4 style="margin-top:6px">① 比分进程</h4>
+    <p style="font-size:13.5px">摩洛哥用整届最猛的开场抢下主动：<b>21′ Ismael Saibari 推射破门</b>（本人世界杯首球），此前摩洛哥前 30 分钟已轰出 12 脚射门。巴西没有慌乱，<b>32′ Vinícius Júnior 在左路与 B 费倒脚后内切右脚劲射穿过 Bounou</b>（个人国家队第 10 球）扳平，半场 1-1。下半场双方均收敛，机会寥寥；<b>终场前 Alisson 一次连续双扑</b>保住平局。两队各取 1 分。</p>
+    <div class="lineup">21′ ⚽ Saibari (MAR, 世界杯首球)  ·  32′ ⚽ Vinícius Jr (BRA, B费助攻)  ·  半场 1-1  ·  90+′ 🧤 Alisson 连续双扑  ·  全场 1-1</div>
+
+    <h4 style="margin-top:18px">② 核心数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇧🇷 巴西</th><th>🇲🇦 摩洛哥</th><th>一句话解读</th></tr>
+      <tr><td>控球率</td><td class="br">48%</td><td class="ma">44%</td><td>无一方真正掌控——焦点战变成对攻拉锯，与赛前"巴西压着打"预期不同</td></tr>
+      <tr><td>射门 / 射正</td><td class="br">12 / 5</td><td class="ma">14 / 4</td><td>摩洛哥射门数反超，但其中 12 脚集中在前 30 分钟，后段哑火</td></tr>
+      <tr><td>射门分布</td><td class="br">全场均衡</td><td class="ma">前 30′ 打 12 脚</td><td>摩洛哥是"开场风暴型"，巴西越踢越稳——节奏管理两种思路</td></tr>
+      <tr><td>高强度逼抢</td><td class="br">—</td><td class="ma">Saibari 100 次压迫</td><td>Saibari 单场 100 次压迫追平本届最高——摩洛哥靠体能压迫而非控球</td></tr>
+      <tr><td>关键扑救</td><td class="br">Alisson 终场双扑</td><td class="ma">—</td><td>巴西这 1 分有运气成分，门将价值兑现</td></tr>
+      <tr><td>裁判 / 纪律</td><td colspan="2" style="color:#cbd5e1">主裁 Slavko Vinčić（斯洛文尼亚）· 全场无点球、对抗可控</td><td>未出现赛前担忧的判点变量，焦点战吹得克制</td></tr>
+    </table>
+    <div class="note">数据来源：<a href="https://theanalyst.com/articles/brazil-vs-morocco-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.espn.com/soccer/report/_/gameId/760419" style="color:var(--accent)">ESPN 赛后</a> · <a href="https://www.cbssports.com/soccer/news/brazil-vs-morocco-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS Sports</a>（控球/射门 ≥2 源一致；xG 完整拆分待 Opta 面板更新）。</div>
+
+    <h4 style="margin-top:18px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who" style="color:#f08a82">摩洛哥：开场风暴是真武器，但只有 30 分钟电量</div>前 30 分钟 12 射 + Saibari 100 次压迫，摩洛哥用强度而非控球把巴西按住并先进球。<b>说明这支非洲杯冠军的现实打法是高压逼抢 + 快速转换，而非阵地控球</b>——威胁集中在开场，一旦风暴过去（后段仅 2 射）就缺乏二次进攻手段，体能与板凳是隐忧。</div>
+    <div class="insight"><div class="who" style="color:#34d27b">巴西：缺内马尔，进攻靠 Vinícius 的个人解题</div>扳平球是 Vinícius 一次个人能力终结，而非体系创造。<b>说明安切洛蒂这套缺内马尔的巴西尚未形成稳定的阵地进攻框架</b>，高度依赖边路单点爆破；中锋实验（Igor Thiago/Cunha）本场未交出答卷，锋线串联仍是课题。</div>
+    <div class="insight"><div class="who" style="color:#34d27b">Alisson 的双扑＝巴西的隐形保险</div>终场前的连续扑救直接保下 1 分。<b>说明这支巴西的下限由顶级门将兜底</b>——在进攻未磨合、后防被反击撕扯时，门将位置的世界级配置是他们仍能不输球的关键资产。</div>
+    <div class="insight"><div class="who">两队都没赢，但都没输——务实的强强分账</div>焦点战打成对攻平局，双方都保住不败。<b>说明小组首轮强强相遇时，"先求不败"的心态主导了下半场的收敛</b>，这对后续面对弱旅时的真实进攻力仍是问号。</div>
+
+    <h4 style="margin-top:18px">④ 预测对账（赛前结论逐项核对）</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td>巴西主胜（隐含 ≈59%）</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>1-1 平。巴西连胜都没拿到，胜率高估</td></tr>
+      <tr><td>市场"赢可以、赢两个难"（-1.5 仅 2.30）</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>不仅赢不了两球，连一球都没赢——盘口对让球的谨慎完全正确</td></tr>
+      <tr><td>摩洛哥转换杀可复制（2023 曾 2-1）</td><td style="color:var(--good);font-weight:700">✓ 兑现</td><td>Saibari 开场高压破门，路径判断准确</td></tr>
+      <tr><td>Hakimi vs Vinícius 谁赢谁定调</td><td style="color:var(--warn);font-weight:700">~ 各半</td><td>Vinícius 进球兑现个人价值，但摩洛哥右路并未被打爆，整体打平</td></tr>
+      <tr><td>下半场进球更多（VSiN 主打）</td><td style="color:var(--bad);font-weight:700">✗ 偏差</td><td>两球都在上半场，下半场 0 球</td></tr>
+    </table>
+    <div class="flag"><b>对账小结：</b>胜负判断偏差——把巴西主胜当基准、低估了摩洛哥的开场强度与巴西缺内马尔后的进攻不稳。但<b>市场最核心的提醒"别买巴西大胜"完全命中</b>，这是本场最有价值的判断。</div>
+
+    <h4 style="margin-top:18px">⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#34d27b"><div class="who" style="color:#34d27b">🇧🇷 巴西 → 下一场 vs 海地（6/19 费城 Lincoln Financial）</div>
+        ① <b>阵地进攻必须解题</b>：本场对摩洛哥未能用体系创造，对深守的海地（本轮被苏格兰 0-1）若仍只靠 Vinícius 单点，破密集会重演加拿大式低效；<br>② <b>中锋人选待定</b>：Igor Thiago/Cunha 本场没立功，下一场是确立首发中锋的窗口；<br>③ <b>积极信号</b>：Alisson 状态在线、Vinícius 已进球找回手感，面对弱旅应是宣泄进攻火力的场次。</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇲🇦 摩洛哥 → 下一场 vs 苏格兰（6/19 福克斯堡 Gillette）</div>
+        ① <b>开场高压＝可复制武器</b>：对组织偏慢的苏格兰，前 30 分钟的强度风暴更可能直接转化；<br>② <b>必须解决"风暴后哑火"</b>：本场后段仅 2 射的续航问题，对手若挺过开场就有机会，板凳轮换与体能分配是关键；<br>③ <b>Aguerd/Ezzalzouli 报销的后防隐患</b>仍在，定位球与高空球防守需重点盯防苏格兰（McGinn/Adams 体系靠二点球与定位球得分）。</div>
+    </div>
+    <div class="note" style="margin-top:14px">以下为本场<b>赛前完整分析存档</b>（关键临场新闻、官方首发、数据面、市场热度、裁判画像等原样保留，作为预测对账依据）。</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">小组赛阶段最高规格的对话之一：身价 <b>€11.35亿 vs €4.88亿</b>、FIFA #5 vs #7。这不是惯常的"豪门打鱼腩"——摩洛哥 2024年6月至2025年12月拉出 <b>国际比赛19连胜</b>，非洲区预选8战全胜，还是 2023 年友谊赛 <b>2-1 赢过巴西</b>的队。但两队都带着隐患来：巴西<b>内马尔伤缺本场</b>（小腿，入选名单但两场热身全缺）、罗德里戈/埃斯特旺伤退；摩洛哥更重——<b>Aguerd、Ezzalzouli 赛季报销</b>，Mazraoui 肩伤临场决定，雷格拉吉 3 月辞职后由 U20 冠军教头乌阿赫比临阵接手。赔率隐含巴西胜率 ≈59%，但市场反复强调一件事：<b>赢可以，赢两个难</b>（巴西 -1.5 仅 2.30）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">巴西隐含胜率(去水)</div><div class="v" style="color:#34d27b">≈59%</div></div>
+      <div class="key"><div class="k">身价比</div><div class="v">2.3×</div></div>
+      <div class="key"><div class="k">摩洛哥近45场</div><div class="v" style="color:#f08a82">33胜2负</div></div>
+      <div class="key"><div class="k">上次交手(2023)</div><div class="v" style="color:#f08a82">摩 2-1</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Hakimi vs Vinícius</b>：欧冠冠军右后卫对世界第一档左边锋——本场最贵的单挑，谁赢谁定调。</li>
+      <li><b>巴西的中锋实验</b>：英超25球的 Igor Thiago 与 Cunha 之争，安帅称"首发已定"但未揭牌。</li>
+      <li><b>摩洛哥的转换杀</b>：2023年那场 2-1 就是 Hakimi/Díaz 打爆巴西攻防转换——剧本可复制。</li>
+      <li><b>下半场变量</b>：两队板凳深度差一档，VSiN 主打"下半场进球更多"正是吃这个结构。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+    <div style="border:1px solid #1e466b;border-left:4px solid var(--accent);background:#0d1b2e;border-radius:8px;padding:12px 14px;margin:8px 0 14px;font-size:13.5px">
+      <div style="color:var(--accent);font-weight:700;margin-bottom:6px">📰 临场更新 · 2026-06-13 ~10:00 ET</div>
+      <p style="margin-bottom:6px">🆕 <b>内马尔临场决定</b>（小腿不适，game-time doubtful）；若缺阵，<b>Igor Thiago 顶替中锋首发</b>。<span style="color:var(--mut)">🔑 巴西失去最具创造力的临门一传，由支点中锋打法替代，破摩洛哥低位块的方式从"个人解锁"转向"传中+二点"。</span></p>
+      <p style="margin-bottom:6px">⚠ <b>摩洛哥 Aguerd（耻骨炎）确认不在预测首发</b>，最佳中卫缺阵；<b>Mazraoui（肩伤）左后卫存疑</b>。</p>
+      <p style="margin-bottom:0">赔率：巴西 <b>1.60</b>（-167）/ 平 <b>3.90</b>（+290）/ 摩洛哥 <b>5.00</b>（+400）；预测巴西首发：Alisson；Wesley、Marquinhos…。<span style="font-size:12px;color:var(--mut)">来源：<a href="https://www.rotowire.com/soccer/article/brazil-vs-morocco-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-c-117816" style="color:var(--accent)">RotoWire</a> · <a href="https://www.espn.com/soccer/story/_/id/49026946/fifa-world-cup-2026-brazil-vs-morocco-kickoff-how-watch-stats-team-news" style="color:var(--accent)">ESPN</a></span></p>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">巴西 · 伤停 <span style="color:var(--mut);font-weight:400">· 双源确认</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">内马尔入选 26 人名单但<b>预计缺席本场</b>（二级小腿拉伤）；罗德里戈、埃斯特旺、Wesley 伤退无缘世界杯</div>
+      <p style="font-size:13.5px">34 岁的内马尔获安切洛蒂任内首次征召，但二级小腿拉伤让他缺席了全部两场热身，预计无缘揭幕战；媒体一致预期其最现实的复出窗口是第二轮 6/19 对海地。更早前，<b>罗德里戈与埃斯特旺均因伤退出本届世界杯</b>，右后卫 Wesley 伤退由亚特兰大中场 Ederson 替补入队。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：巴西的攻击群一下少了三个名字——右路轮换深度（罗德里戈/埃斯特旺）几乎清零，Raphinha 没有替身。这放大了两个点：① Vinícius 必须扛住对 Hakimi 的消耗战，无人换挡；② 中锋位置（Thiago/Cunha）的首发选择从"轮换论"变成"押注论"。内马尔的缺席反而让阵容更清晰——安帅可以不必为"怎么安放内马尔"做战术妥协。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/48809277/neymar-makes-cut-brazil-announce-final-26-man-world-cup-squad" style="color:var(--accent)">ESPN — 巴西26人名单/内马尔</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-morocco-prediction-team-news-lineups_598948.html" style="color:var(--accent)">Sports Mole — 伤情汇总</a> · <a href="https://vsin.com/soccer/brazil-vs-morocco-prediction-2026-fifa-world-cup-preview-and-pick/" style="color:var(--accent)">VSiN — 赛前评估</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">摩洛哥 · 伤停更重 <span style="color:var(--mut);font-weight:400">· 以 Sports Mole 更新为准 · 部分待核</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">中卫 Aguerd、边锋 Ezzalzouli <b>无缘整届世界杯</b>；左后卫 Mazraoui 肩伤临场决定</div>
+      <p style="font-size:13.5px">摩洛哥的伤情比巴西更伤筋动骨：主力中卫 <b>Nayef Aguerd（腹股沟）与边锋 Ezzalzouli（膝）整届报销</b>；Mazraoui 肩伤出战成疑、临场决定。锋线由希超 18 球的 El Kaabi 顶在最前，Rahimi 预计顶替左翼。注：VSiN 稍早的预测首发仍含 Aguerd，与 Sports Mole 更新冲突，按更晚信息处理，<b>标记待核</b>。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Aguerd 是摩洛哥 2022 四强防线的支柱，他的缺席让中卫线换上 Diop/Riad 级别的组合——<b>面对 Vinícius/Raphinha 的直线冲击，这是全场最被低估的错位</b>。若 Mazraoui 也缺阵，左路防区（恰好是 Raphinha 的猎区）双重降级。摩洛哥的铁血防守名声基于的人，有一半不在场上。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-morocco-prediction-team-news-lineups_598948.html" style="color:var(--accent)">Sports Mole — 摩洛哥伤情</a> · <a href="https://vsin.com/soccer/brazil-vs-morocco-prediction-2026-fifa-world-cup-preview-and-pick/" style="color:var(--accent)">VSiN — 预测首发（与上冲突处待核）</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">摩洛哥 · 换帅风波 <span style="color:var(--mut);font-weight:400">· 背景</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">雷格拉吉 3 月辞职：世界杯前 3 个月换帅，U20 世界杯冠军教头<b>乌阿赫比（Ouahbi）</b>接任，5 场 3胜2平</div>
+      <p style="font-size:13.5px">带队打进 2022 四强、2025 非洲杯夺冠（决赛 0-1 落后后因塞内加尔罢赛被判 3-0、争议加冕）的雷格拉吉在 3 月辞职。接任的乌阿赫比是 2025 U20 世界杯冠军主帅，上任 5 场 3 胜 2 平（6/2 4-0 马达加斯加、上周末 1-1 挪威）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：19 连胜的体系是雷格拉吉的——乌阿赫比只来得及做微调。大赛首战对世界最强对手之一，<b>新帅的临场应变（尤其落后时）完全没有经过检验</b>。反过来，他与 El Khannouss 等 U20 一代的私人信任是摩洛哥更衣室此刻的粘合剂。这是"19连胜"光环下最大的暗变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/5/31/from-afcon-to-world-cup-2026-how-morocco-became-a-football-powerhouse" style="color:var(--accent)">Al Jazeera — 摩洛哥崛起/换帅</a> · <a href="https://www.espn.com/soccer/story/_/id/48233884/senegal-afcon-final-morocco-winner-caf-overturn" style="color:var(--accent)">ESPN — 非洲杯争议夺冠</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">当值裁判 · 已官宣 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">斯洛文尼亚名哨 <b>Slavko Vinčić</b> 执法（2024欧冠决赛主裁）；第四官员为瑞士 Schärer</div>
+      <p style="font-size:13.5px">FIFA 任命 <b>Slavko Vinčić</b> 主哨，助理 Klančnik/Kovačič。可查数据：生涯 444 场 1819 黄 39 红（约 <b>4.1 黄/场</b>）、88 个点球（<b>0.27/场</b>，欧冠约每3场1点）；2025/26 欧冠场均 2.43 张牌。他执法过 2024 欧冠决赛（皇马 vs 多特）——<b>Vinícius 曾在他哨下决赛破门</b>。与巴西/摩洛哥国家队的执法历史未检索到（无样本）。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Vinčić 是"大场面少哨型"裁判——欧冠决赛级别的控场，吹罚倾向让比赛流动、对轻微接触不轻易响哨。对本场的含义：① Vinícius/Hakimi 这对单挑的身体对抗会被放过更多，利于防守方"贴身消耗"；② 0.27/场 的点球率不算低，禁区内拉拽（摩洛哥防定位球的惯用伎俩）仍有成本。<b>两面性</b>：少哨利于摩洛哥的对抗强度，但也利于巴西的连续进攻不被切碎。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.moroccoworldnews.com/2026/06/318039/world-cup-2026-slovenias-slavko-vincic-to-referee-morocco-vs-brazil-match/" style="color:var(--accent)">Morocco World News — 任命</a> · <a href="https://www.statshub.com/referee/slavko-vincic/68557" style="color:var(--accent)">StatsHub — Vinčić 数据</a> · <a href="https://valuestats.com/en/referee/19366-slavko-vincic" style="color:var(--accent)">ValueStats — 出牌/点球率</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f1f16,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源确认 · 名单(事实) + 影响(解读)</span></h2>
+    <div class="sub">官方名单已于开球前约 70 分钟公布（T-70）。两队均有出人意料的取舍——逐条对照预测、明确速览结论是否需要修正。</div>
+
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇧🇷 巴西 · 官方首发（4-2-3-1）</div>
+        <div class="role">安切洛蒂大赛首阵 · 双边卫意外大换血</div>
+        <div class="lineup">Alisson; Ibáñez · Marquinhos · Gabriel · Douglas Santos; Casemiro · Guimarães; Raphinha · Paquetá · Vinícius; Igor Thiago</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">替补席关键武器：<b style="color:#cbd5e1">Danilo、Alex Sandro</b>（被弃用的两名主力边卫）、<b style="color:#cbd5e1">Cunha、Endrick、Martinelli</b>。</div>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇲🇦 摩洛哥 · 官方首发（4-2-3-1）</div>
+        <div class="role">乌阿赫比押注 U20 一代 · Amrabat/El Kaabi 双双坐板凳</div>
+        <div class="lineup">Bounou; Hakimi(C) · Diop · Riad · Mazraoui; El Aynaoui · Bouaddi; Brahim Díaz · Ounahi · El Khannouss; Saibari</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:8px">替补席关键武器：<b style="color:#cbd5e1">Amrabat</b>（被弃用的主力后腰）、<b style="color:#cbd5e1">Ayoub El Kaabi</b>（希超 18 球）、<b style="color:#cbd5e1">Rahimi、Talbi</b>。Mazraoui 肩伤过关、如期首发。</div>
+      </div>
+    </div>
+
+    <h4>① vs 预测首发对照（逐条「为什么重要」）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="br">巴西右后卫</td><td>Danilo</td><td><b>Ibáñez</b>（中卫客串）</td><td>Danilo 坐板凳；安帅用防守属性中卫顶右路，意图防 Hakimi 走廊而非边路助攻</td></tr>
+      <tr><td class="br">巴西左后卫</td><td>Alex Sandro</td><td><b>Douglas Santos</b></td><td>又一名老将边卫被弃，左路同样转向防守属性——后防整体收紧</td></tr>
+      <tr><td class="br">巴西中锋</td><td>Igor Thiago / Cunha</td><td><b>Igor Thiago</b></td><td>悬念落地：支点中锋，破低位块靠传中+二点，而非 Cunha 的回撤串联</td></tr>
+      <tr><td class="ma">摩洛哥后腰</td><td>Amrabat</td><td><b>Bouaddi</b>（Lille 新星）</td><td>经验扫荡让位机动出球，新帅把对 U20 一代的信任落到首发</td></tr>
+      <tr><td class="ma">摩洛哥中锋</td><td>El Kaabi</td><td><b>Saibari</b>（伪九回撤）</td><td>放弃纯支点，改打回撤+二串联——正是 2023 年 2-1 那场的转换杀基因</td></tr>
+      <tr><td class="ma">摩洛哥左后卫</td><td>Mazraoui（肩伤待定）</td><td><b>Mazraoui</b></td><td>肩伤过关首发，左路未被迫降级——对摩洛哥是利好（待核项解除）</td></tr>
+      <tr><td>其余</td><td colspan="2">巴西 8/11、摩洛哥框架与预测一致</td><td>双方主体仍是预测的"计划 A"（Aguerd 确认伤缺、Diop+Riad 中卫一致）</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">② 战术解读</h4>
+    <div class="insight"><div class="who">巴西双边卫防守化 <small>· 阵型信号</small></div>同时弃用 Danilo 与 Alex Sandro，改用中卫属性的 Ibáñez 客串右后卫、Douglas Santos 守左路——这是一张"先封住 Hakimi 右路走廊、牺牲边路助攻"的牌。<b>速览结论"安帅先求稳"得到强化 → 维持</b>。</div>
+    <div class="insight"><div class="who">中锋悬念揭牌 = Igor Thiago <small>· 关键对位</small></div>速览第 2 个看点（中锋实验）落地为支点型 Igor Thiago。含义：巴西破摩洛哥低位块的方式确定为"传中找二点"，而非 Cunha 的回撤做球——更吃 Vinícius/Raphinha 的下底质量。</div>
+    <div class="insight"><div class="who">摩洛哥 Bouaddi 顶替 Amrabat <small>· 体能/机动意图</small></div>新帅乌阿赫比让 19 岁 Lille 后腰 Bouaddi 首发、经验丰富的 Amrabat 待命。中场由"扫荡硬度"转向"机动出球"——对位 Casemiro+Guimarães 是机动 vs 经验的对话，落后时仍有 Amrabat 这张稳态牌。</div>
+    <div class="insight"><div class="who">Saibari 伪九 + Ounahi 前提 <small>· 速览主线校验</small></div>摩洛哥放弃 El Kaabi 的纯支点，改用 Saibari 回撤串联、Ounahi 前移——强化的正是速览"转换杀"主线（2023 复仇局基因）。<b>速览"摩洛哥赌 Hakimi 走廊一次转换"的结论 → 维持甚至强化</b>。</div>
+    <div class="insight"><div class="who">总览结论 <small>· 是否修正</small></div>两队首发都指向"结构稳 + 转换快"，且巴西后防意外收紧——这反而坐实市场"赢可以、赢两个难"的定价。<b>速览"巴西 1-0 / 2-1 窄胜"中枢结论：维持，不修正。</b></div>
+
+    <h4 style="margin-top:18px">③ 市场反应</h4>
+    <div class="note">名单无核心伤退爆点——<b>Vinícius、Raphinha、Hakimi、Bounou 均首发</b>，不构成 5–15 分钟内移动盘口的硬冲击。结构性看，巴西双边卫防守化 + Igor Thiago 支点首发，方向上轻微利好赛前已成共识的"<b>小 2.5 球</b>"与"<b>巴西 -1.5 难兑</b>"两个口袋（详见上方热度模块）。<b>公布前后精确赔率移动未取得，标记待核</b>，本段仅作事实/结构陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:10px">来源（✅ 双源确认）：<a href="https://sports.yahoo.com/articles/world-cup-2026-brazil-vs-205000683.html">Yahoo Sports / Football Italia — 双方官方 XI</a> · <a href="https://khelnow.com/football/world-football-morocco-lineup-vs-brazil-fifa-world-cup-202606">Khel Now — 摩洛哥官方 XI + 替补</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">身价 · 胜平负隐含概率（赔率去水） · C组格局 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>全队身价对比（€百万，Transfermarkt）</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>1X2 隐含概率（bet365 去水）</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>C 组四队身价格局（€百万）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇧🇷 巴西</th><th>🇲🇦 摩洛哥</th></tr>
+      <tr><td>FIFA 排名</td><td class="br">#5（一说#6·待核）</td><td class="ma">#7（一说#8·待核）</td></tr>
+      <tr><td>全队身价</td><td class="br">€11.35亿（人均€4367万）</td><td class="ma">€4.88亿</td></tr>
+      <tr><td>预选赛</td><td class="br">南美区第5（8胜4平6负，曾0-1玻利维亚）</td><td class="ma">非洲区 8 战全胜、首支晋级的非洲队</td></tr>
+      <tr><td>近期状态</td><td class="br">近3场全胜：胜克罗地亚、6-2巴拿马、2-1埃及（合计11-4）</td><td class="ma">2024.6–2025.12 国际赛19连胜；2023以来 45场33胜10平2负</td></tr>
+      <tr><td>1X2 赔率（bet365）</td><td class="br">1.57（隐含≈59%）</td><td class="ma">5.25（≈18%）· 平 4.00（≈23%）</td></tr>
+      <tr><td>让球</td><td colspan="2" class="br">巴西 -1.5 @2.30 / 摩 +1.5 @1.57；巴西 -1 @2.15 —— 市场不信"赢两个"</td></tr>
+      <tr><td>大小 2.5</td><td colspan="2">大 1.91–2.00 / 小 1.77–1.85（小球受捧）</td></tr>
+      <tr><td>历史交锋</td><td colspan="2" class="ma">2023.3 友谊赛摩洛哥 2-1 巴西；最近正赛交手为 1998 世界杯巴西 3-0。巴西世界杯对非洲球队 7胜1负（唯一输球：2022 0-1 喀麦隆）</td></tr>
+    </table>
+    <div class="note">📌 概率为 bet365 赔率去水后的隐含概率（59/23/18）。各书商巴西价区间 1.57–1.69，隐含 59–64%——对一场"FIFA前7互咬"来说定价并不夸张；真正被市场看空的是巴西的净胜球能力。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">当日流量顶级，但方向上"热而不疯"——胜负一边倒，幅度高度克制</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · 流量过热，价格未失真</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">当日唯一豪门对决+纽约准主场+内马尔悬念+复仇叙事，全国直播流量拉满；但赔率与预测市场对巴西的定价（59% vs 58.5%）高度一致，没有出现"情绪价"——热的是话题，不是盘口。</div>
+    </div>
+
+    <h4>① 名人 / 专家推荐聚合（方向统计：巴西胜 ≈8 · 摩洛哥 0 · 平 0；幅度/玩法分裂）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th><th>方向</th></tr>
+      <tr><td>Alex Blowers</td><td>VSiN</td><td><b>下半场进球多 @2.10</b>：上半场试探，巴西板凳深度后程碾压</td><td><span class="pill pbr">巴西·后程</span></td></tr>
+      <tr><td>Jon Eimer</td><td>SportsLine（欧冠 31-13）</td><td>小 2.5 球：两队结构都先保不输</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">小球</span></td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>巴西 3-1</b>——全表最激进的比分</td><td><span class="pill pbr">巴西大胜</span></td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>巴西胜、开放场面</td><td><span class="pill pbr">巴西胜</span></td></tr>
+      <tr><td>Yahoo / Juvefc</td><td>预测媒体</td><td>巴西胜 + 大2.5 + 双方进球</td><td><span class="pill pbr">巴西+大球</span></td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>巴西胜 @1.69；另荐 Raphinha 进球</td><td><span class="pill pbr">巴西胜</span></td></tr>
+      <tr><td>Sportytrader</td><td>预测站</td><td>双方进球（BTTS Yes）</td><td><span class="pill pma">摩有进球</span></td></tr>
+      <tr><td>AI 面板 · ChatGPT</td><td>NYSportsDay 三模型</td><td>反向安全垫：<b>摩洛哥 +1.5</b>——"巴西赢，但赢不了两球"</td><td><span class="pill pma">摩受让</span></td></tr>
+      <tr><td>AI 面板 · Claude</td><td>同上</td><td>巴西 ML（10模型集成 94% 共识）</td><td><span class="pill pbr">巴西胜</span></td></tr>
+      <tr><td>AI 面板 · Gemini</td><td>同上</td><td>小 2.5 球</td><td><span class="pill" style="background:#38bdf833;color:#7dd3fc">小球</span></td></tr>
+      <tr><td>Dimers 模型</td><td>量化</td><td>巴西 55.9%、小球 57%、最可能比分 <b>1-0</b>（14.4%）</td><td><span class="pill pbr">巴西小胜</span></td></tr>
+    </table>
+    <div class="flag">⚠ <b>结构信号</b>：与墨西哥揭幕战同构——胜负方向 0 信源押摩洛哥，但"摩 +1.5 @1.57"与"小 2.5"是模型派共振的两个反向口袋。Sports Mole 的 3-1 是孤例；主流共识是 <b>1-0 / 2-1 的窄胜</b>。即：市场对"巴西胜"定价充分，对"巴西大胜"高度怀疑。</div>
+
+    <h4 style="margin-top:20px">② 赔率横截面（美式已换算小数；开盘→现价时间线待核）</h4>
+    <table>
+      <tr><th>书商</th><th>巴西胜</th><th>平局</th><th>摩洛哥胜</th></tr>
+      <tr><td>bet365</td><td class="br">1.57</td><td>4.00</td><td class="ma">5.25</td></tr>
+      <tr><td>Lucky Rebel</td><td class="br">1.63</td><td>4.10</td><td class="ma">6.00</td></tr>
+      <tr><td>FanDuel</td><td class="br">1.65</td><td>3.80</td><td class="ma">5.50</td></tr>
+      <tr><td>BetOnline（VSiN 线）</td><td class="br">1.69</td><td>3.75</td><td class="ma">5.50</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">③ 预测市场资金面</h4>
+    <table>
+      <tr><th>市场</th><th>巴西</th><th>平</th><th>摩洛哥</th></tr>
+      <tr><td>Polymarket / Kalshi 本场</td><td class="br">≈58.5%</td><td>≈24.5%</td><td class="ma">≈17.5%</td></tr>
+      <tr><td>Polymarket C组头名</td><td class="br">71.5%</td><td colspan="2" class="ma">摩洛哥 20.5%</td></tr>
+      <tr><td>博彩 C组头名</td><td class="br">1.32（-310，开盘 -350）</td><td colspan="2" class="ma">摩 5.00-5.50 · 苏格兰 11-13 · 海地 101+</td></tr>
+    </table>
+    <ul class="cl" style="margin-top:10px">
+      <li><b>定价一致性</b>：预测市场 58.5% ≈ 博彩去水 59%——两个独立资金池零分歧，价格高度有效，无套利窗口。</li>
+      <li><b>组头名盘微妙松动</b>：巴西从开盘 -350 回到 -310，钱在小幅试探"摩洛哥搅局"的可能。</li>
+      <li><b>体量</b>：全赛事预测市场破 $20亿（Kalshi 单平台超 $1亿）；本场为小组赛阶段最受关注场次之一，单场量待核。</li>
+    </ul>
+
+    <h4 style="margin-top:20px">④ 社媒 / 舆论热度</h4>
+    <ul class="cl">
+      <li>叙事密度当日最高：内马尔悬念、安帅首次大赛带巴西、摩洛哥换帅+非洲杯争议夺冠、2023 复仇局、巴西 24 年冠军荒（上次夺冠恰在美国）。</li>
+      <li>纽约都会区两侨民社区对冲：巴西裔与摩洛哥/北非裔都把 MetLife 当主场——现场氛围预计五五开，不是单边主场。</li>
+      <li>FOX + Telemundo 双语全国直播，当日收视预期仅次于美国队自身比赛。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：流量过热（4/5）但定价干净——与"墨西哥揭幕战"的情绪溢价不同，本场两个资金池互相校准后给出的 59% 是可信中枢。市场留下的盲点反而在两端：摩洛哥 +1.5 的"输1球保护"被模型派买成共识后价值已薄，而<b>平局 4.00</b>（两队首战都怕输的现实结构）是被叙事掩盖的"无聊选项"。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://vsin.com/soccer/brazil-vs-morocco-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — Blowers</a> · <a href="https://www.sportsline.com/insiders/brazil-vs-morocco-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine — Eimer</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-morocco-prediction-team-news-lineups_598948.html">Sports Mole</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-brazil-vs-morocco-predictions-world-cup-2026/">NYSportsDay — AI面板/Dimers</a> · <a href="https://polymarket.com/sports/world-cup/fifwc-bra-mar-2026-06-13">Polymarket 本场</a> · <a href="https://polymarket.com/event/world-cup-group-c-winner">Polymarket C组</a> · <a href="https://www.oddschecker.com/us/insight/soccer/20260608-2026-fifa-world-cup-group-c-odds-predictions-analysis-for-brazils-group">Oddschecker — C组赔率</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/">Racing Post</a> · <a href="https://finance.yahoo.com/markets/options/articles/world-cup-betting-kalshi-polymarket-133600704.html">Yahoo Finance — $2B 体量</a></div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:11px;font-weight:700;color:#4ade80;border:1px solid #1d4a2a;border-radius:10px;padding:2px 9px;background:#0f1f16">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方；官方名单已公布，见上方"✅ 官方首发 &amp; 解读"）</div>
+    <h4>🇧🇷 巴西 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Alisson; Danilo/Ederson · Marquinhos · Gabriel · Alex Sandro; Casemiro · Guimarães; Raphinha · Paquetá · Vinícius; Igor Thiago/Cunha</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="br">Vinícius Jr</td><td>左边锋 / 皇马</td><td>身价≈€1.5亿+；本季西甲 16球5助；对位 Hakimi 是全场最贵单挑</td></tr>
+      <tr><td class="br">Raphinha</td><td>右边锋 / 巴萨</td><td>本季西甲 13球3助，巴西近周期头号射手；对位可能降级的摩洛哥左路</td></tr>
+      <tr><td class="br">Igor Thiago</td><td>中锋 / 布伦特福德</td><td><b>英超25球</b>（巴西人单季英超进球纪录），与 Cunha 竞争首发——安帅称"已定"未揭牌</td></tr>
+      <tr><td class="br">Alisson</td><td>门将 / 利物浦</td><td>锁定首发；摩洛哥的转换杀直接考验他的一对一</td></tr>
+    </table>
+    <h4>🇲🇦 摩洛哥 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Bounou; Hakimi · Diop/Riad · 中卫(Aguerd伤缺) · Mazraoui(肩伤待定); Amrabat · Ounahi; Brahim Díaz · El Khannouss · Rahimi; El Kaabi</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ma">Achraf Hakimi (C)</td><td>右后卫 / 巴黎</td><td>上季11球14助、欧冠冠军、非洲足球先生；伤愈打满欧冠决赛120分钟，满血状态</td></tr>
+      <tr><td class="ma">Brahim Díaz</td><td>前腰/边锋 / 皇马</td><td>国家队 26场14球（上周末刚进球）；与皇马队友 Vinícius 同场对决</td></tr>
+      <tr><td class="ma">Ayoub El Kaabi</td><td>中锋 / 奥林匹亚科斯</td><td>希超 25场18球；En-Nesyri 未入预测首发</td></tr>
+      <tr><td class="ma">Yassine Bounou</td><td>门将 / 利雅得新月</td><td>2022 扑点英雄；摩洛哥"输1球以内"剧本的底气</td></tr>
+    </table>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#34d27b">🇧🇷 巴西 · Carlo Ancelotti（2025.5上任，队史首位外籍主帅）</div>
+        <div class="role">4-2-3-1 · 控球+边路爆点，大赛经验之王</div>
+        <ul class="cl">
+          <li>接手后近3场全胜（11-4），把预选赛第5的散装巴西重新组装成结构清晰的争冠队。</li>
+          <li>安帅生涯定式：大赛先求稳——首战大概率控制风险而非表演，1-0/2-1 比 3-1 更像他的剧本。</li>
+          <li>命门：右路轮换清零（罗德里戈/埃斯特旺伤退），Raphinha 无替身；中锋人选未经大赛检验。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇲🇦 摩洛哥 · Mohamed Ouahbi（2026.3接任，U20世界杯冠军教头）</div>
+        <div class="role">4-2-3-1 · 中低位块 + Hakimi 右路走廊反击</div>
+        <ul class="cl">
+          <li>继承雷格拉吉的 19 连胜体系：让出控球、Amrabat 扫荡、反击全部走 Hakimi-Díaz 右路走廊。</li>
+          <li>上任 5 场 3胜2平 未输——但没打过一场这个强度的对手，临场应变零样本。</li>
+          <li>风险：Aguerd 伤缺后中卫线降级，被冲击时的协防默契未经检验；落后时的 Plan B 是黑盒。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">巴西控球+边路传中本应造角，但近5场角球总数全部 &lt;10.5；摩洛哥退守后获角下降——盘口指向"巴西占优但总数中性偏低"。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table>
+      <tr><th>维度</th><th>🇧🇷 巴西</th><th>🇲🇦 摩洛哥</th><th>含义</th></tr>
+      <tr><td>场均获得角球</td><td class="br">5.2（近10场）</td><td class="ma">6.0（近7场）</td><td>摩洛哥数字偏高源于对手偏弱；对巴西时大概率回落</td></tr>
+      <tr><td>场均被迫角球（对手）</td><td class="br">3.3</td><td class="ma">2.0</td><td>摩洛哥退防后角球更少漏给对手——压缩总数</td></tr>
+      <tr><td>进攻侧重（边路/中路/高压逼抢）</td><td class="br">强边路：Vinícius/Raphinha 突击+大量传中，造角主力</td><td class="ma">中低位块，反击走 Hakimi 右路走廊，造角靠转换而非围攻</td><td>巴西是"持续围攻型"造角，摩洛哥是"零星反击型"造角</td></tr>
+      <tr><td>定位球威胁</td><td class="br">中等：高点一般，二点跟进尚可</td><td class="ma">较高：2022四强即靠定位球与防空，进攻角球有威胁</td><td>角球转化端摩洛哥效率不低，但本场获角机会少</td></tr>
+      <tr><td>角球占优倾向</td><td class="br">控球+传中=角球数大概率领先</td><td class="ma">让出球权=主动放弃角球量</td><td>角球计数巴西占优是结构性结论</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>主流前瞻未公布明确的角球专项盘口，仅给出球队场均角球与"<b>巴西近5场角球总数全部 &lt;10.5</b>"的定性提示。据此给出<b>推算线（待核）</b>：角球总数 <b>大/小 9.5</b>，按惯例两面约 <b>大 1.90 / 小 1.90</b>（欧赔小数，<b>估算·待核</b>）；角球让球 <b>巴西 -1.5</b>（线，保留原样），约 <b>1.90 / 1.90</b>（<b>估算·待核</b>）。书商/来源：球队角球均值取自 SportsGambler 赛前数据；&lt;10.5 提示见 SportsGambler/Squawka 前瞻。</p>
+    <h4>③ 技术面研判（让分 & 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>巴西将长时间持球并通过边路突击与传中制造角球，摩洛哥主动让出球权、退守低位块，角球量天然偏向巴西。结合 5.2 vs 6.0 的表面均值（摩方含对弱旅的注水）与对位强度差，<b>巴西角球净占优是大概率</b>——读盘上倾向支持"巴西 -1.5（角球让球）"一侧，但摩洛哥若靠少量反击与定位球攒下 3–4 个角，-1.5 仍可能被磨平，半负风险存在。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>两端攻击体量合计本应偏高，但本场剧本压制了总数：摩洛哥退防→漏给巴西的角球少（场均仅被迫 2.0），且巴西<b>近5场角球总数全部 &lt;10.5</b>。综合"巴西围攻但不开放、摩洛哥反击不围攻"的结构，<b>总数偏向小球（小 9.5）</b>，而非对攻拉锯式的高角球局。</div>
+    <div class="insight"><div class="who">变量与两面性</div>剧本一旦改变，角球随之放大：① 若巴西早早领先，摩洛哥被迫压上→两端角球都增多，可能把总数顶回 9.5 以上；② 中卫线降级（Aguerd 伤缺）若被 Vinícius/Raphinha 持续打穿，巴西传中/角球频次将明显抬升；③ 6 月美东 MetLife 高温与轮换可能拖慢节奏、压低围攻强度→利小球。两面性在于"巴西占优"较稳，但"总数高低"高度依赖比分剧本。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.sportsgambler.com/betting-tips/football/brazil-vs-morocco-prediction-lineups-odds-2026-06-14/" style="color:var(--accent)">SportsGambler — 球队角球均值/&lt;10.5 提示</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-brazil-vs-morocco-06-13-26-world-cup-2026/" style="color:var(--accent)">Squawka — 前瞻</a> · <a href="https://corner-stats.com/brazil/national/team/1153" style="color:var(--accent)">Corner-Stats — 巴西角球</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已官宣</b>：斯洛文尼亚 <b>Slavko Vinčić</b>（2024欧冠决赛主裁）。生涯 <b>4.1 黄/场、0.27 点球/场</b>（欧冠约每3场1点）；大场面"少哨控场"风格；与两队国家队无执法历史（无样本），但 Vinícius 曾在其哨下的欧冠决赛破门。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球</b>：Bounou 的拖节奏艺术被规则限制，摩洛哥"管理比赛"的工具少一件。</li>
+      <li><b>仅队长可与裁判沟通</b>：Hakimi（队长）兼任沟通官——他本就是全场情绪枢纽。</li>
+      <li><b>半自动越位</b>：巴西反越位冲身后（Vinícius/Raphinha 对高线）的临界球判得更快更准。</li>
+    </ul>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">VSiN · Alex Blowers <small>· B级 分析</small></div>两队首战的共同理性是"先不输"——上半场互相试探后，巴西的板凳深度（即便伤了三人）仍比摩洛哥厚一档，下半场进球多于上半场是结构性结论。</div>
+    <div class="insight"><div class="who">NYSportsDay AI 面板 <small>· 模型派样本</small></div>10 模型集成 94% 共识巴西胜，但最可能比分 1-0（14.4%）——模型派的画像是"窄而稳"：赢面大，赢幅小。</div>
+    <div class="insight"><div class="who">综合 · 2023 复仇局拆解 <small>· 战术信号</small></div>2023 年丹吉尔 2-1：摩洛哥赢在攻防转换瞬间打巴西中场真空。如今 Casemiro+Guimarães 的双后腰正是安帅对那场比赛的"补丁"——本场实质是摩洛哥的转换速度 vs 巴西的新中场结构。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：巴西 1-0 / 2-1 窄胜是共识中枢；摩洛哥的现实路径是把比赛拖入 70 分钟内 0-0/1-1，赌 Hakimi 走廊的一次转换。</li>
+      <li><b>关键先生</b>：Vinícius（巴/对位 Hakimi）、Igor Thiago 或 Cunha（巴/未揭牌的中锋牌）、Hakimi（摩/攻防双枢纽）、Bounou（摩/守住窄负盘的底线）。</li>
+      <li><b>胜负手</b>：摩洛哥降级版中卫线能否扛住 Vinícius/Raphinha 的直线冲击 vs 巴西新双后腰能否锁死 2023 年输掉的转换瞬间。</li>
+      <li><b>市场视角</b>：59% 是干净的中枢价；被忽视的两端是平局 4.00 与"摩洛哥拖入点球区间"的下半场剧本。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① FIFA 排名两队各有 ±1 位出入；② Aguerd 报销与 VSiN 预测首发冲突，以更晚的 Sports Mole 为准但仍待官方名单；③ Mazraoui 肩伤临场决定；④ 开盘→现价时间线未取得；⑤ 中锋首发（Thiago/Cunha）安帅未揭牌；⑥ 内马尔"缺席本场"为媒体一致预期，最终以官方名单为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/48809277/neymar-makes-cut-brazil-announce-final-26-man-world-cup-squad">ESPN — 巴西名单/内马尔</a> · <a href="https://www.sportsmole.co.uk/football/brazil/world-cup-2026/preview/brazil-vs-morocco-prediction-team-news-lineups_598948.html">Sports Mole — 前瞻/伤情/预测首发</a><br>
+      • <a href="https://vsin.com/soccer/brazil-vs-morocco-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN — 赛前分析</a> · <a href="https://www.nysportsday.com/2026/06/10/chatgpt-claude-gemini-brazil-vs-morocco-predictions-world-cup-2026/">NYSportsDay — AI面板/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-brazil-vs-morocco-06-13-26-world-cup-2026/">Squawka — 前瞻</a><br>
+      • <a href="https://www.aljazeera.com/sports/2026/5/31/from-afcon-to-world-cup-2026-how-morocco-became-a-football-powerhouse">Al Jazeera — 摩洛哥19连胜/换帅</a> · <a href="https://www.espn.com/soccer/story/_/id/48233884/senegal-afcon-final-morocco-winner-caf-overturn">ESPN — 非洲杯争议</a> · <a href="https://www.moroccoworldnews.com/2026/06/318039/world-cup-2026-slovenias-slavko-vincic-to-referee-morocco-vs-brazil-match/">MWN — 裁判任命</a> · <a href="https://www.statshub.com/referee/slavko-vincic/68557">StatsHub — Vinčić</a> · <a href="https://www.si.com/soccer/most-expensive-squads-2026-world-cup-ranked">SI — 身价榜</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-12 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',BR='#16a34a',MA='#c1272d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥'],datasets:[{data:[1135,488.2],backgroundColor:[BR,MA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['巴西胜','平局','摩洛哥胜'],datasets:[{data:[59,23,18],backgroundColor:[BR,DR,MA],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['巴西','摩洛哥','苏格兰','海地'],datasets:[{data:[1135,488.2,207.8,55.6],backgroundColor:[BR,MA,'#3b6fb0','#d21034'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€百万'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'巴西',data:[7.5,8.5,7.5,7,9.5,9],borderColor:BR,backgroundColor:BR+'33',pointBackgroundColor:BR},
+   {label:'摩洛哥',data:[7.5,6.5,7,7.5,8,8],borderColor:MA,backgroundColor:MA+'33',pointBackgroundColor:MA}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

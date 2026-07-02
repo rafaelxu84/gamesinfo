@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 比利时 vs 埃及 · 2026世界杯 G组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-belgium-vs-egypt.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-belgium-vs-egypt.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-belgium-vs-egypt.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-belgium-vs-egypt.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-belgium-vs-egypt.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-belgium-vs-egypt.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-belgium-vs-egypt.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-belgium-vs-egypt.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-1 · 2026 世界杯 · G组首轮 · 萨拉赫生日助攻、比利时靠乌龙扳平</span>
+  <h1>比利时 vs 埃及</h1>
+  <div class="meta">2026年6月15日 · 西雅图 Lumen Field · 15:00 ET（12:00 PT） · G组（同组：伊朗、新西兰）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇧🇪 比利时</div><div class="rk">FIFA #9 · 13场不败 · "黄金一代"收官世代</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇪🇬 埃及</div><div class="rk">FIFA #29 · 预选全程不败 · 萨拉赫领衔</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 比利时 1-1 埃及（半场 0-1）· 数据来源 Sofascore / Opta / FIFA · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">埃及先入一球：第 <b>19 分钟</b> 萨拉赫（34 岁生日当天）做球，<b>Emam Ashour</b> 一脚捅射穿过 Meunier 两腿、钻进 Courtois 把守的球门——萨拉赫全场 <b>12/13 传球</b>外加这记关键助攻，仍是埃及的胜负手。比利时直到第 <b>66 分钟</b>才靠 <b>Mohamed Hany 乌龙</b>扳平。射门 15-14、xG <b>1.32-1.07</b>、双方各 3 射正、各 2 次绝佳机会——1-1 是一场各取所需的均势平局。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 19' Ashour（萨拉赫助攻，埃及 0-1）→ HT 0-1 → 66' Hany 乌龙（1-1）→ FT 1-1</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇧🇪 比利时</th><th style="padding:6px">🇪🇬 埃及</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center"><b>1.32</b></td><td style="text-align:center">1.07</td><td style="padding:6px;color:var(--mut)">差距极小——比利时未制造碾压级机会</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">15 / 3</td><td style="text-align:center">14 / 3</td><td style="padding:6px;color:var(--mut)">几乎对等，埃及不是被动挨打</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center">2</td><td style="text-align:center">2</td><td style="padding:6px;color:var(--mut)">机会质量五五开，平局合理</td></tr>
+      <tr><td style="padding:6px">运动战进球</td><td style="text-align:center">0（乌龙）</td><td style="text-align:center"><b>1</b></td><td style="padding:6px;color:var(--mut)">比利时无运动战破门，进攻支点缺失</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① 比利时"无正印中锋"的代价</div>De Ketelaere 伪九撑前、Lukaku 不在，比利时空有 15 射却 0 个运动战进球、xG 仅 1.32。<b>这说明比利时</b>：黄金一代尾声缺少真正的禁区支点，传切再多也难在密集防线前完成最后一击，扳平还得靠对手乌龙。</div>
+    <div class="insight"><div class="who">② 萨拉赫仍是体系发动机</div>34 岁的萨拉赫一次做球直接转化进球、传球 12/13 近乎零失误。<b>这说明埃及</b>：进攻高度依赖萨拉赫的串联与终结参与，他在状态时埃及就能与豪门掰手腕——但也意味着限制住他=限制住埃及。</div>
+    <div class="insight"><div class="who">③ 埃及中场紧凑、反击犀利</div>埃及不是摆大巴硬扛，而是中场紧凑切断比利时直塞、由萨拉赫领衔快速由守转攻（首球即来自此），全场射门 14 次几乎追平对手。<b>这说明埃及</b>：是有反击獠牙的组织型球队，面对压上的对手更危险。</div>
+    <div class="insight"><div class="who">④ 一场"公平的平局"，非偷分</div>xG 1.32-1.07、绝佳机会 2-2，数据层面双方旗鼓相当。<b>这说明</b>：把比利时摆在 56% 的赛前共识或许偏高，G 组的实力分层比盘口显示的更平。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>比利时胜（去水 56%）→ 实际 1-1 平</b>：热门未能拿下，埃及实力被低估。</li>
+      <li>✗ <b>大 2.5 球 → 实际 2 球（小球）</b>：进球总数压线偏小一侧兑现，大球落空。</li>
+      <li>✓ <b>"萨拉赫制造至少一次危险"</b>：直接助攻 + 全场串联，核心判断兑现。</li>
+      <li>✓ <b>"比利时能否零封埃及"被列为张力点</b>：结果未能零封，正是赛前担忧所在。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇧🇪 比利时 → 6/21 vs 伊朗（英格尔伍德 15:00 ET）</div>伊朗是组织严密的低位球队（首轮虽 2-2 但防线会收缩）——比利时<b>"无中锋破密集"</b>的问题会再次被放大；若 Lukaku 仍不可用，定位球与边路传中质量决定能否拿下三分。</div>
+      <div class="insight" style="margin:0"><div class="who">🇪🇬 埃及 → 6/21 vs 新西兰（温哥华 21:00 ET）</div>新西兰首轮被伊朗灌入 2 球、防线偏软——萨拉赫领衔的反击对位非常有利，这是埃及小组出线最现实的一场胜机；需把握住萨拉赫制造的机会。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Sofascore、Opta Analyst、FIFA、Outlook India。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这不是一场量级碾压的比赛，而是一场<b>有真实悬念的对位</b>：比利时（FIFA #9，13场不败，"黄金一代"末班车）遭遇埃及（FIFA #29，预选全程不败，萨拉赫刚过34岁生日）。盘口显示比利时是明确热门——胜赔 <b>1.67</b>（去水隐含 ≈56%），但埃及并非纸老虎：胜赔 <b>5.00</b>（≈19%），平局 <b>3.80</b>（≈25%）。真正有看点的叙事是<b>萨拉赫对阵比利时后防线</b>：他独揽埃及预选60%的进球参与，而比利时 Debast、De Winter、Theate 的后防搭档尚未经历高水平快速反击的考验。比赛的全部张力压在两处：<b>大/小 2.5 球</b>（市场轻度偏小，但分歧真实存在）与<b>比利时能否零封埃及</b>。基准剧本：<b>比利时 2-1 险胜</b>，萨拉赫制造至少一次危险。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">比利时隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈56%</div></div>
+      <div class="key"><div class="k">比利时不败场次</div><div class="v">13场</div></div>
+      <div class="key"><div class="k">萨拉赫预选进球参与</div><div class="v" style="color:#7fa6e6">60%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">3/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>萨拉赫对阵比利时后防</b>：这是本场最核心的对决——萨拉赫34岁生日当天迎战欧洲豪门，状态与体能是最大变量。</li>
+      <li><b>大/小 2.5 球是真实博弈线</b>：两支注重防守的球队，比利时欧洲杯后多场低比分胜利，埃及以防反见长；但双方也均具进攻火力。</li>
+      <li><b>Doku 能否首发出场</b>：Jeremy Doku 赛前曾有呼吸问题，其状态直接影响比利时左翼的进攻冲击力。<span style="color:var(--warn)">[待核]</span></li>
+      <li><b>裁判牌数风险</b>：已确认由巴西巴甲（Série A）裁判 Ramon Abatti 主哨——出自出牌相对活跃、对抗容忍度较高的执法体系；在比利时 vs 埃及这种有对抗性的对位中牌数市场值得关注（大赛样本有限 <span style="color:var(--warn)">待核</span>）。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:4px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">🆕 赛前最新 · 比利时边路 + 埃及核心 · ESPN / Goal / SI · 06-15</div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Doku 训练中途因呼吸不适提前离场后已返回合练、预计仍首发；Salah 比赛日迎来 34 岁生日</div>
+      <p style="font-size:13.5px">据 ESPN/Goal，比利时边锋 Jérémy Doku 在周二训练中因呼吸不适提前离场，但随后已返回合练，预计仍将首发；De Bruyne、Lukaku、Doku、Trossard 预计全部首发。Zeno Debast（5 月所受腿伤）仍在恢复、料缺阵。埃及方面无伤停，Marmoush 任单箭头、Salah 踢右路、Trezeguet 与 Ashour 居中。（预测首发，以官方名单为准 · 待核）</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Doku 是比利时边路最锋利的爆点，也是本场最大 X 因素——其健康状态直接决定比利时能否在 Salah 身后那侧反复撕开埃及防线。另一端，Salah（生日驱动叙事）与 Marmoush 组成的双星攻击线，是埃及制造冷门的主要资本；比利时后防（Debast 缺阵）需提防 Salah 的右路内切与 Marmoush 的纵深冲击。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49046985" style="color:var(--accent)">ESPN</a> · <a href="https://www.goal.com/en/news/belgium-egypt-world-cup-preview/blt8b8db9e1f93f0387" style="color:var(--accent)">Goal</a> · <a href="https://www.si.com/soccer/belgium-vs-egypt-world-cup-preview-predictions-lineups-6-15-26" style="color:var(--accent)">SI</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">比利时 · Doku 状态疑问 <span style="color:var(--mut);font-weight:400">· 06-13/14 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Jeremy Doku 赛前有呼吸问题，能否首发存疑 <span style="color:var(--warn)">[待核]</span></div>
+      <p style="font-size:13.5px">Sports Mole 报道曼城边锋 Doku 在集训期间曾出现呼吸问题，赛前能否列入首发尚待确认。若 Doku 无法上场，比利时左翼纵深突破能力将大幅下降——Rudi Garcia 可能以 Trossard 顶替或调整阵型。其余主力（Courtois、De Bruyne、Lukaku）无明确伤情报告。<span style="color:var(--warn)">[以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Doku 是比利时左翼反击速度的核心来源，其爆发力是埃及右侧防线最难应对的变量。Doku 缺阵意味着比利时宽度收窄、对埃及低位防守的拉开效果减弱，直接影响进球总数市场（利空大球方向）和比利时-1 让球市场。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/predicted-lineups/doku-deadline-predicted-belgium-xi-vs-egypt_599119.html" style="color:var(--accent)">Sports Mole — Doku 伤情/预测首发</a> · <a href="https://www.espn.com/soccer/story/_/id/49046985/belgium-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" style="color:var(--accent)">ESPN — 赛前信息/预测首发</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">埃及 · 萨拉赫 34 岁生日出战 <span style="color:var(--mut);font-weight:400">· 06-15 · 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Mohamed Salah 在 34 岁生日当天（6月15日）领衔出场，预选独揽 60% 进球参与</div>
+      <p style="font-size:13.5px">Sky Sports、Goal.com 等多源确认：萨拉赫在非洲区预选赛中打进 9 球、贡献 3 次助攻，个人进球参与占埃及全队 60%。他将在 34 岁生日当天首次参加世界杯。此外，Omar Marmoush（前法兰克福，2024-25 赛季德甲顶级射手）、Trezeguet 将为萨拉赫提供支援。埃及主帅 Hossam Hassan 目前未公布完整首发名单，主要球员无已知重大伤情。<span style="color:var(--warn)">[首发名单以赛前官方公布为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：萨拉赫不仅是个人威胁，更是埃及全队进攻体系的发动机。比利时 Debast/De Winter 后防缺乏对抗顶级前锋的系统测试，一旦埃及打出快速反击，萨拉赫的单刀或直塞能力将是最大威胁。结合 Marmoush 的爆破力，埃及在比利时推进时的防反效率值得关注，这也是大球方向的最重要支撑之一。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.skysports.com/football/news/12098/13543098/world-cup-2026-group-g-guide-fixtures-schedule-standings-and-odds-for-belgium-egypt-iran-and-new-zealand" style="color:var(--accent)">Sky Sports — G组导读/萨拉赫</a> · <a href="https://www.goal.com/en/news/belgium-egypt-world-cup-preview/blt8b8db9e1f93f0387" style="color:var(--accent)">Goal.com — 赛前全景</a> · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/belgium-vs-egypt-prediction-team-news-lineups_599081.html" style="color:var(--accent)">Sports Mole — 队情前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">比利时 · Courtois 复出 <span style="color:var(--mut);font-weight:400">· 06-12 多源</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Thibaut Courtois 复出守门，后防经历较长周期缺席后重回国家队</div>
+      <p style="font-size:13.5px">Goal.com、HITC 多源报道：Courtois 在皇马因重伤缺席一段时间后重新回归比利时国家队门将位置，出战本届世界杯。这是比利时"黄金一代"中最重要的个人回归之一，为后防提供了稳定的最后一道防线。Rudi Garcia 预计使用 4-2-3-1 阵型，Debast、De Winter 搭档中后卫，Castagne/Meunier 和 De Cuyper 担任两侧边后卫。</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Courtois 的存在大幅提升比利时对阵萨拉赫时的防线可信度。他在欧洲顶级比赛中对抗速度型前锋经验丰富，是比利时能否守住小球（小 2.5 球）的关键保障。但他在本届世界杯前的实战状态与体能积累仍值得关注。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.hitc.com/world-cup-2026-group-g-guide-mo-salah-key-for-egypt-and-belgium-favourites/" style="color:var(--accent)">HITC — G组前瞻/Courtois</a> · <a href="https://www.goal.com/en/news/belgium-egypt-world-cup-preview/blt8b8db9e1f93f0387" style="color:var(--accent)">Goal.com — 赛前全景</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">裁判 · 已确认 <span style="color:var(--mut);font-weight:400">· FIFA 任命</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">巴西巴甲（Série A）主裁 Ramon Abatti 确认主哨本场</div>
+      <p style="font-size:13.5px">主裁 <b>Ramon Abatti</b>（巴西 · 巴甲 Série A · CONMEBOL）确认执法本场；助理裁判 Danilo Manis、Rafael Alves（均为巴西籍），第四官员 Kevin Ortega（秘鲁）。巴甲出身的裁判整体出牌相对活跃、对身体对抗容忍度较高，但其大赛（世界杯/洲际杯）牌数样本有限，量化参考价值受限。<span style="color:var(--warn)">[具体均值待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在比利时 vs 埃及这场有真实对抗性的比赛中，巴甲执法体系的倾向（容忍对抗但严惩累积/战术犯规）会影响牌数走向。埃及若密集防守频繁拦截 Salah/Marmoush 反击、比利时球员若对判罚过激反应，黄牌概率偏高，红牌风险不能完全排除。牌数盘宜以"倾向性"而非"精确均值"看待，因个人大赛样本有限。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://english.ahram.org.eg/WorldCup2026/AfricaInner.aspx?NewsContentID=570678" style="color:var(--accent)">Ahram Online — Abatti 官宣</a> · <a href="https://foot-africa.com/en/news/warning-for-egypt-belgium-this-referee-issued-a-red-card-in-every-club-world-cup-game-1240960/" style="color:var(--accent)">Foot Africa — 每场必发红牌警告</a> · <a href="https://www.statshub.com/referee/abel-ramon-abatti/787576" style="color:var(--accent)">StatHub — Abatti 执法数据</a></div>
+    </div>
+  </section>
+
+  <!-- ===== 官方首发 & 解读 ===== -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0e2218,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 双源官方确认 · 与预测对照 · 速览结论是否修正</span></h2>
+    <div class="sub">两队官方首发均已由各自国家队官方发布确认（@BelRedDevils / @EgyptNT_EN），并经 Khel Now 转载 + 搜索聚合交叉验证。<b style="color:var(--good)">✅ 官方确认</b></div>
+
+    <h4>① 双方官方 XI</h4>
+    <div class="twocol">
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#f08a82">🇧🇪 比利时（4-2-3-1）· Garcia</div>
+        <div class="lineup">Courtois; Meunier · Ngoy · Mechele · Castagne; Onana · Tielemans; Trossard · De Bruyne(C) · Doku; De Ketelaere</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Lukaku</b>（超级替补终结点）、Lukebakio（边路爆点）、Witsel/Vanaken（中场经验）。</div>
+      </div>
+      <div>
+        <div style="font-size:14px;font-weight:800;color:#7fa6e6">🇪🇬 埃及（4-2-3-1）· Hossam Hassan</div>
+        <div class="lineup">Shobeir; Hany · Fathy · Ibrahim · Fotouh; Lasheen · Attia; Salah(C) · Ashour · Ziko; Marmoush</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b>Trezeguet</b>（右路宽度/被预测首发却落选）、Zizo（Ahmed Zizo）、<b>El Shenawy</b>（资深门将退居替补）、Ibrahim Adel。</div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">② vs 预测首发对照（逐条「为什么重要」）</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">比·锋线</td><td>Lukaku 单箭头</td><td><b>De Ketelaere</b> 伪九号</td><td>无中锋支点改为更流动的伪九，比利时进攻更靠跑动与组合而非高点冲击 → 利空高空球/略利空大球，Lukaku 成超级替补</td></tr>
+      <tr><td class="ht">比·中卫</td><td>Debast · De Winter</td><td><b>Ngoy · Mechele</b></td><td>Debast 伤缺已坐实，Mechele（经验）顶替——比对萨拉赫/Marmoush 的后防可信度反而上升，速览的"后防经验不足"担忧部分缓解</td></tr>
+      <tr><td class="ht">比·边后卫</td><td>Castagne(右) · De Cuyper(左)</td><td><b>Meunier(右)</b> · Castagne(左)</td><td>Meunier 经验镇守右路直面萨拉赫内切；Castagne 移左、De Cuyper 落选 → 右路对位萨拉赫的稳健度提高</td></tr>
+      <tr><td class="ht">比·左翼</td><td>Doku（待核）</td><td><b>Doku ✅ 确认首发</b></td><td>最大待核变量落地：呼吸不适未影响出场，比利时边路最锋利爆点在场 → 维持大球/比利时让球的进攻支撑</td></tr>
+      <tr><td class="sc">埃·门将</td><td>El Shenawy</td><td><b>Shobeir</b></td><td>资深门将 El Shenawy 退居替补、Mostafa Shobeir 首发——埃及最后一道防线经验值下降，比利时强攻阶段的零封难度对埃及不利</td></tr>
+      <tr><td class="sc">埃·左路</td><td>Trezeguet</td><td><b>Mostafa Ziko</b></td><td>被普遍预测首发的 Trezeguet 落选替补，Ziko 顶替左路——埃及右侧（Salah）仍是主威胁，左路输出预期下调</td></tr>
+      <tr><td class="sc">埃·阵型/中场</td><td>4-3-3（Ashour·Fathy·Attia）</td><td><b>4-2-3-1</b>（Lasheen·Attia 双后腰，Ashour 前提）</td><td>Hamdy Fathy 下沉打中卫、Lasheen 进双后腰 → 中场更厚、更偏防守块，强化"低位防反"主线；Ashour 前提为 Salah/Marmoush 串联</td></tr>
+      <tr><td class="sc">埃·核心</td><td>Salah(C) · Marmoush</td><td>Salah(C) 右路 · Marmoush 单箭头</td><td>11/2 核心位置与预测一致——埃及无伤情，计划 A 执行，萨拉赫生日驱动叙事成立</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 战术解读</h4>
+    <div class="insight"><div class="who">阵型信号 · 埃及更"缩"了</div>埃及由预测的 4-3-3 改为 <b>4-2-3-1 双后腰</b>（Lasheen+Attia），Hamdy Fathy 由中场下沉打中卫——中场层更厚、防守块更低，<b>印证而非修正</b>速览"以防为主、等萨拉赫/Marmoush 反击"的主线。埃及更不愿与比利时对攻。</div>
+    <div class="insight"><div class="who">关键对位 · 萨拉赫 vs Meunier 这侧</div>比利时右路换上经验型 Meunier（而非进攻型边卫），正对萨拉赫的左路内切——比利时对最大威胁源做了"稳健化"安排，Ngoy+Mechele 中卫组合也比预测的 Debast+De Winter 更有对抗经验。速览担心的"后防经验不足"被部分对冲。</div>
+    <div class="insight"><div class="who">体能/轮换意图 · 两处爆点</div>比利时：<b>De Ketelaere 伪九替下 Lukaku</b>，放弃中路高点、换取前场流动与逼抢——Lukaku 留作超级替补，意味着 Garcia 想先用速度与组合撕开埃及低位，再视情况用 Lukaku 终结。埃及：<b>替补门将 Shobeir 首发、Trezeguet 落选</b>是两处临场意外，前者削弱埃及最后一道防线的经验值，后者下调埃及左路进攻预期。</div>
+    <div class="insight"><div class="who">速览结论 · 维持（微调）</div><b>速览基准剧本"比利时 2-1 险胜、萨拉赫制造威胁"维持。</b>微调方向：① 埃及替补门将 + Trezeguet 落选 + 4-2-3-1 更保守 → 埃及进攻火力略降、比利时<b>零封概率不降反略升</b>；② 比利时无中锋支点（De Ketelaere 伪九）→ 高空与强攻终结点减弱，对"大球"是轻微利空。综合：仍是比利时小胜基准，小球/比利时零封方向较赛前略获支撑。</div>
+
+    <h4 style="margin-top:18px">④ 市场反应</h4>
+    <p style="font-size:13.5px">截至首发公布后短时窗口，未检索到本场 1X2 / 大小球盘口出现明确单边异动的公开数据 <span style="color:var(--warn)">（待核）</span>。从首发性质看：比利时核心（De Bruyne、Doku、Courtois）全部首发、无爆冷伤退，胜负盘缺乏移动催化；埃及两处意外（替补门将首发、Trezeguet 落选）方向上轻微利空埃及进攻，理论上对"比利时零封 / 小 2.5 球"有微弱支撑，但幅度有限。赔率展示口径：比利时胜 <b>1.67</b>、平 <b>3.80</b>、埃及胜 <b>5.00</b>（欧洲小数盘，与赛前一致）。<b>仅作事实陈述，非投注建议。</b></p>
+
+    <h4 style="margin-top:18px">⑤ 来源</h4>
+    <div class="src">官方首发：<a href="https://x.com/BelRedDevils/status/2066575219494441169">@BelRedDevils 官方推</a> · <a href="https://x.com/EgyptNT_EN/status/2066578614334665044">@EgyptNT_EN 官方推</a> · <a href="https://khelnow.com/football/world-football-belgium-starting-lineup-vs-egypt-fifa-world-cup-202606">Khel Now — 比利时首发确认</a> · <a href="https://khelnow.com/football/world-football-egypt-starting-lineup-vs-belgium-fifa-world-cup-202606">Khel Now — 埃及首发确认</a> · 裁判/开球：<a href="https://www.si.com/soccer/belgium-vs-egypt-world-cup-preview-predictions-lineups-6-15-26">SI</a>。</div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · G组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>G 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇧🇪 比利时</th><th>🇪🇬 埃及</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#9</td><td class="sc">#29</td></tr>
+      <tr><td>近期战绩</td><td class="ht">13场不败；预选 29球/8场；5-0 大胜突尼斯</td><td class="sc">非洲区预选全程不败（10场）；4-0 胜沙特；3-2 胜科特迪瓦</td></tr>
+      <tr><td>主教练</td><td class="ht">Rudi Garcia</td><td class="sc">Hossam Hassan</td></tr>
+      <tr><td>核心球员</td><td class="ht">De Bruyne、Lukaku、Doku（待核）、Courtois</td><td class="sc">Salah（C）、Marmoush、Trezeguet</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 1.67（隐含去水≈56%）</td><td class="sc">胜 5.00（≈19%）· 平 3.80（≈25%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">大 2.5 ≈2.00 / 小 2.5 ≈1.82 —— 市场轻度偏小，分歧真实存在</td></tr>
+      <tr><td>亚盘（让分线）</td><td class="ht">比利时 -0.5 亚盘（线非赔率）</td><td class="sc">埃及 +0.5 受让（线非赔率）<span style="color:var(--warn)">待核具体赔率</span></td></tr>
+      <tr><td>历史交锋</td><td colspan="2">4次友谊赛：埃及 2 胜（含 2022 年 2-1）、比利时 1 胜（2018 年 3-0）、1 平</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率（Belgium -150 ML → 1.67；Draw +280 → 3.80；Egypt +400 → 5.00）去水后隐含概率（≈56/25/19，合计100%）。数据来源：多家主流博彩综合；Kalshi 预测市场：比利时 61%、平 24%、埃及 17%。这是一场有真实竞争力的对位——市场对埃及的尊重体现在 5.00 赔率（非100+），胜负盘有信息含量。</div>
+  </section>
+
+  <!-- ===== 投注市场热度 ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">萨拉赫效应 + 比利时"黄金一代"收官：情绪热度中等，真实分歧主要在大/小 2.5 球与是否零封</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥<span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">3/5 · 萨拉赫叙事驱动，有真实分歧</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">萨拉赫 34 岁生日 + 黄金一代终章：叙事层面的情绪热度高于一般小组赛，但盘口真实反映了比赛的不确定性（比利时仅 56% 胜率），不存在极端情绪溢价。过热指数 3/5。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：比利时胜 全部 · 平 0 · 埃及 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td><b>比利时 2-1</b> —— 比利时险胜，萨拉赫有进球</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td>比利时胜 + Over 2.5 作为组合；认为埃及有反击威胁</td></tr>
+      <tr><td>ClutchPoints</td><td>美系媒体</td><td>比利时胜（-155）；Over 2.5 +100 作为附加</td></tr>
+      <tr><td>OddsShark</td><td>赔率聚合</td><td>比利时应当凭实力优势取胜</td></tr>
+      <tr><td>Dimers 模型</td><td>数据驱动</td><td>最可能比分 <b>埃及 0-1 比利时</b>（低比分取胜）</td></tr>
+      <tr><td>Kalshi 预测市场</td><td>市场共识</td><td>比利时 61%、平 24%、埃及 17%</td></tr>
+    </table>
+    <div class="flag">⚠ <b>方向共识与真实分歧并存</b>：所有媒体方向一致看好比利时，但在<b>比分</b>上分裂明显：Dimers 模型给"0-1"（低比分），Sports Mole 给"2-1"，ClutchPoints 押 Over 2.5，Forebet 算法倾向小于等于 2 球（51% 概率）。换言之，专家对胜者有共识，但对进球数毫无共识——这正是大/小 2.5 球的价值所在。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>比利时胜</th><th>解读</th></tr>
+      <tr><td>开档</td><td>多家综合</td><td class="ht">≈1.67</td><td>比利时热门但赔率有意义，非极端压水</td></tr>
+      <tr><td>06-13/14</td><td>Bet365/1xBet</td><td class="ht">1.67–1.68</td><td>稳定；平 3.80、埃及 5.00</td></tr>
+      <tr><td>06-13/14</td><td>大 2.5 球</td><td class="ht">≈2.00</td><td>对应小 2.5 ≈1.82 —— 分歧真实，偏小</td></tr>
+    </table>
+    <div class="note">📌 赔率移动平稳，无单边异动信号。比利时 1.67 仍给"胜负盘"留有信息含量，专家方向押比利时时也同时押大球 Over 2.5——但模型方向恰好相反，这条线仍有真实博弈。亚盘让分线约比利时 -0.5（线非赔率，保留原值）<span style="color:var(--warn)">待核具体开盘赔率</span>。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 &amp; ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi</b>：比利时 61%、平 24%、埃及 17%——与博彩去水概率（56/25/19）方向一致，Kalshi 略微推高比利时概率约 5 个百分点，显示市场存在轻度情绪溢价但非极端。</li>
+      <li><b>Polymarket/DefiRate</b>：本场独立盘价格与成交量暂未检索到公开数据 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>舆论</b>：萨拉赫在生日当天首战世界杯、比利时"黄金一代"收官——两个叙事共同驱动关注度。比利时 2022 卡塔尔小组出局阴影仍在，媒体聚焦"Garcia 能否带队振作"。话题热度高于 G 组其他场次。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：博彩与预测市场方向收敛（比利时热门），但概率未收敛至极端（56–61%），说明这是一场有真实悬念的比赛。过热指数 <b>3/5</b>。价值争议最大的两处：<b>大/小 2.5 球</b>（市场轻度偏小，专家偏大，模型偏小）和<b>比利时 -0.5 亚盘</b>（埃及是否能获得平局）。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/belgium-vs-egypt-prediction-team-news-lineups_599081.html">Sports Mole</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a2JPS7Q7FVSO/">Racing Post</a> · <a href="https://clutchpoints.com/soccer/belgium-vs-egypt-2026-world-cup-predictions-odds-pick">ClutchPoints</a> · <a href="https://www.dimers.com/bet-hub/swc/schedule/2026_1_bel_egy">Dimers</a> · <a href="https://www.oddsshark.com/soccer/world-cup/belgium-egypt-odds-picks-2026">OddsShark</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-belgium-vs-egypt-06-15-26-world-cup-2026/">Squawka/Kalshi</a></div>
+  </section>
+
+  <!-- 角球技术面 -->
+  <section style="border:1px solid #3a2f14;background:linear-gradient(135deg,#1c1a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🚩</span> 角球技术面 <span style="font-size:12px;color:var(--mut);font-weight:500">· 打法 × 实际盘口 · 让分/大小球技术分析</span></h2>
+    <div class="sub">比利时近 9 场 7 场产出 10.5+ 角球，进攻压迫式打法是角球产出主要来源；埃及防反体系频繁解围出底线。</div>
+    <h4>① 两队角球画像（打法驱动）</h4>
+    <table><tr><th>维度</th><th>🇧🇪 比利时</th><th>🇪🇬 埃及</th><th>含义</th></tr>
+      <tr><td>场均获得角球</td><td class="ht">近 9 场 7 场超 10.5 角球 <span style="color:var(--warn)">待核具体场均值</span></td><td class="sc">防反体系，偏低持球，角球产出少</td><td>比利时进攻持球压迫是主要角球来源</td></tr>
+      <tr><td>场均被迫角球</td><td class="ht">相对较少（控球稳定）</td><td class="sc">低位防守，解围出底线频繁 → 送出对方角球多</td><td>埃及密集防守"贡献"比利时角球</td></tr>
+      <tr><td>进攻侧重</td><td class="ht">Doku/De Cuyper 边路下底 + De Bruyne 定位球输送</td><td class="sc">萨拉赫左路反击；Marmoush 直插；整体以防为主</td><td>比利时边路冲击是角球主要来源</td></tr>
+      <tr><td>定位球威胁</td><td class="ht">高：De Bruyne 定位球质量顶级；Lukaku/Debast 高点</td><td class="sc">中：萨拉赫任意球能力；整体制空较弱</td><td>角球对比利时的进攻转化威胁更大</td></tr>
+      <tr><td>角球占优倾向</td><td class="ht">明显占优（预计 7–9:3–5）</td><td class="sc">劣势但非极端</td><td>比赛类型决定角球差适中，非碾压级</td></tr>
+    </table>
+    <h4>② 实际盘口（角球市场）</h4>
+    <p>比利时近 9 场 7 场超过 10.5 角球（Racing Post / 多源）；角球总数线市场未获取精确开盘赔率 <span style="color:var(--warn)">（待核）</span>，参考同类对位预估约 <b>大 9.5–10.5 球</b>区间。角球让分线：按打法画像合理推断比利时约 -2.5 / -3.5 净角球优势 <span style="color:var(--warn)">（待核）</span>。</p>
+    <h4>③ 技术面研判（让分 &amp; 大小球）</h4>
+    <div class="insight"><div class="who">让分（角球让球）</div>比利时控球进攻型打法 + 埃及低位防守频繁解围，角球占优几乎是确定性事件。但埃及若打出快速反击、减少持续防守阶段，角球差可能收窄至 4–5 角以内——让球盘并非"白送"。</div>
+    <div class="insight"><div class="who">大小球（角球总数）</div>比利时边路冲击持续 + 埃及解围出底线，双向力量都支持偏大。但若埃及打出高效反击、比利时被迫调整进攻节奏，总角球数可能低于预期。近 9 场 7 场超 10.5 的历史数据支持偏大，但对手质量的提升（比较埃及 vs 弱旅）需要折算。</div>
+    <div class="insight"><div class="who">变量</div>Doku 状态：若首发，边路下底频率升高，角球产出增加；若缺阵，比利时改走中路，角球数可能下降。另外若比赛中途出现红牌（Abatti 执法习惯），防守方减员后反而减少边路被动，角球数可能出现非线性变化。</div>
+    <div class="note">仅供分析参考，非投注建议。来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a2JPS7Q7FVSO/">Racing Post — 角球历史数据</a> · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/belgium-vs-egypt-prediction-team-news-lineups_599081.html">Sports Mole — 比赛前瞻</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 &amp; 执法环境</h2>
+    <div class="note">✅ <b>已确认任命</b>：主裁 <b>Ramon Abatti</b>（巴西，巴甲 Série A 裁判 · CONMEBOL）；助理裁判：Danilo Manis、Rafael Alves（均为巴西籍）；第四官员：Kevin Ortega（秘鲁）。</div>
+    <div class="flag">⚠ <b>执法风格倾向</b>：作为巴甲（Série A）出身的裁判，Abatti 来自整体相对"出牌活跃、对身体对抗容忍度较高"的执法体系——这意味着本场允许一定程度的身体对抗，但累积犯规与战术犯规仍易吃牌。比利时 vs 埃及是有真实对抗性的比赛：埃及后卫拦截 Salah/Marmoush 反击后的持续犯规、以及比利时球员对争议判罚的过激反应，都构成黄牌风险点。<b>不过其具体的大赛（世界杯/洲际杯）牌数样本有限，量化参考价值受限 <span style="color:var(--warn)">[待核]</span></b>，牌数盘口宜以"倾向性判断"而非"精确均值"看待。</div>
+    <h4>本届统一执法新规（对本场影响）</h4>
+    <ul class="cl">
+      <li><b>门将 8 秒持球、掷界 5 秒</b>：若比利时落后想拖延节奏，或埃及领先时 Courtois 持球，此规则将加快比赛节奏。</li>
+      <li><b>仅队长可与裁判沟通</b>：De Bruyne（比利时队长）、Salah（埃及队长）均为经验丰富的领袖，与裁判的沟通不会是劣势。</li>
+      <li><b>半自动越位</b>：萨拉赫/Marmoush 的超前反击球将被更快、更准地判定，对埃及进攻有一定抑制。</li>
+    </ul>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 &amp; 关键球员 <span style="font-size:12px;font-weight:600;color:var(--good);border:1px solid #1d4a2a;background:#0e2218;border-radius:6px;padding:2px 8px">预测版 · 官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方）——官方首发已公布，请以页面上方「✅ 官方首发 &amp; 解读」模块为准；本节保留作赛前预测留档</div>
+    <h4>🇧🇪 比利时 预测首发（4-2-3-1）</h4>
+    <div class="lineup">Courtois; Castagne · Debast · De Winter · De Cuyper; Onana · Tielemans; Doku（待核）· De Bruyne(C) · Trossard; Lukaku</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Kevin De Bruyne (C)</td><td>中场 / 曼城</td><td>队长；37 次国际球，119 帽；比利时进攻核心与定位球输送者</td></tr>
+      <tr><td class="ht">Romelu Lukaku</td><td>前锋 / 那不勒斯</td><td>单箭头终结点，强壮体型撑起比利时中路支点进攻</td></tr>
+      <tr><td class="ht">Jeremy Doku</td><td>边锋 / 曼城</td><td>左翼速度爆发力最强点；<b>赛前有呼吸问题，是否首发待核</b></td></tr>
+      <tr><td class="ht">Thibaut Courtois</td><td>门将 / 皇马</td><td>复出；世界级门将，对阵萨拉赫的最关键保障</td></tr>
+    </table>
+    <h4>🇪🇬 埃及 预测首发（4-3-3 或 4-2-3-1）</h4>
+    <div class="lineup">El Shenawy; Rabia · Abdelmonem · Mohamed Hany · Ahmed Fatouh; Emam Ashour · Hamdy Fathy · Marwan Attia; Salah(C) · Marmoush · Trezeguet</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Mohamed Salah (C)</td><td>前锋 / 利物浦</td><td>6月15日34岁生日；预选9球+3助=60%进球参与；头号威胁</td></tr>
+      <tr><td class="sc">Omar Marmoush</td><td>前锋 / 曼城</td><td>2024-25 德甲顶级射手之一；速度与爆发力为埃及带来第二进攻点</td></tr>
+      <tr><td class="sc">Trezeguet</td><td>边锋</td><td>预选有效输出；为埃及右路提供宽度与越位制造能力</td></tr>
+      <tr><td class="sc">El Shenawy</td><td>门将 / 阿尔阿赫利</td><td>资深守门员；若比赛进入比利时强攻阶段将面临高强度考验</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / ESPN / Rotowire），<b>以赛前官方名单为准</b>。Doku 是否确定首发为最大待核变量；埃及 Hossam Hassan 截至截稿前未公布官方名单（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 &amp; 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇧🇪 比利时 · Rudi Garcia</div>
+        <div class="role">4-2-3-1 主动控球 + 边路突破 + De Bruyne 任意球体系</div>
+        <ul class="cl">
+          <li>Garcia 接手后确立了以 De Bruyne 为核心、双边锋宽度拉开为基础的攻守一体打法；13场不败的成绩证明了阵型稳定性。</li>
+          <li>核心设计：De Cuyper 边后卫高压助攻 + Doku（若适用）快马下底 → 制造中路 Lukaku 的终结机会；De Bruyne 的定位球在高水平赛事里是最高效的得分路径。</li>
+          <li>风险：后防中卫搭档 Debast/De Winter 缺乏世界杯大赛经验；若埃及打出萨拉赫/Marmoush 的高速双箭头反击，后防线承压时间将是全场最大变量。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇪🇬 埃及 · Hossam Hassan</div>
+        <div class="role">4-3-3 / 4-2-3-1 中位防守块 + 萨拉赫主导的快速反击</div>
+        <ul class="cl">
+          <li>埃及以防为主、以不失分为第一战术目标：预选赛全程不败（10场）建立了强大的防守纪律性。</li>
+          <li>剧本：中场双后腰吸收比利时中路压力，萨拉赫/Marmoush 等待比利时高位进攻时身后空间暴露，打直接的快速反击。</li>
+          <li>风险：埃及历史上在世界杯尚未赢得一场胜利（历史上参加三届，均小组出局）；面对比利时 Courtois 守门与高位压迫，反击路线能否打通是最大变量。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>比利时 2-1 —— 比利时实力高出一档，但埃及在萨拉赫带领下有能力制造反击进球。低比分险胜是最合理基准剧本。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 英系老牌</small></div>比利时胜 + Over 2.5 作为主要组合；认为双方均具进攻威胁，低比分的可能性因萨拉赫存在而被压低。</div>
+    <div class="insight"><div class="who">Dimers 模型 <small>· 数据驱动</small></div>最可能比分 <b>0-1</b>（比利时单球取胜），反映了"结果确定、但进球数趋于保守"的基准判断——支持小球方向。</div>
+    <div class="insight"><div class="who">综合战术评估 <small>· 两队对比</small></div>本场核心矛盾是"比利时的进攻压迫 vs 埃及的防守韧性"——Courtois vs 萨拉赫是一对真实的顶级对决。历史交锋埃及有 2 胜（含 2022 年 2-1），说明埃及绝非纸老虎，冷门概率约 19% 值得认真对待。</div>
+  </section>
+
+  <!-- 综合 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 &amp; 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：比利时胜率约 56%（去水），是明确但非压倒性的热门；埃及冷门约 19%，平局约 25%。基准剧本是<b>比利时 2-1 险胜</b>，萨拉赫进球在基准剧本之内。</li>
+      <li><b>大/小 2.5 球</b>：市场轻度偏小（小 2.5 ≈1.82 vs 大 2.5 ≈2.00），但专家与模型有真实分歧——这是本场唯一有信息含量的双向博弈市场。</li>
+      <li><b>裁判面</b>：Abatti 的严格执法历史在此类对抗性对位中创造了牌数与点球市场的参考价值。</li>
+      <li><b>关键先生</b>：萨拉赫（埃/个人决定性威胁）、De Bruyne（比/进攻指挥官）、Courtois（比/守门屏障）、Doku（比/待核）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核项目</b>：① Doku 是否确定首发（赛前呼吸问题）；② 埃及官方首发名单未公布；③ 亚盘具体赔率待确认；④ 角球总数精确开盘线待确认；⑤ Polymarket/DefiRate 单场价格与成交量未检得；⑥ 比利时/埃及近期具体场均角球数以官方统计为准；⑦ Courtois 复出后世界杯前实战准备情况待核。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49046985/belgium-vs-egypt-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups">ESPN — 收看方式/队情/预测首发</a> · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/belgium-vs-egypt-prediction-team-news-lineups_599081.html">Sports Mole — 前瞻/队况</a> · <a href="https://www.sportsmole.co.uk/football/belgium/world-cup-2026/predicted-lineups/doku-deadline-predicted-belgium-xi-vs-egypt_599119.html">Sports Mole — Doku 伤情/比利时首发</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/belgium-vs-egypt-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-a2JPS7Q7FVSO/">Racing Post — 赔率/投注</a> · <a href="https://clutchpoints.com/soccer/belgium-vs-egypt-2026-world-cup-predictions-odds-pick">ClutchPoints — 专家预测</a> · <a href="https://www.dimers.com/bet-hub/swc/schedule/2026_1_bel_egy">Dimers — 模型/正确比分</a> · <a href="https://www.oddsshark.com/soccer/world-cup/belgium-egypt-odds-picks-2026">OddsShark — 赔率/分析</a><br>
+      • <a href="https://english.ahram.org.eg/WorldCup2026/AfricaInner.aspx?NewsContentID=570678">Ahram Online — 裁判 Abatti 任命</a> · <a href="https://foot-africa.com/en/news/warning-for-egypt-belgium-this-referee-issued-a-red-card-in-every-club-world-cup-game-1240960/">Foot Africa — Abatti 执法风格</a> · <a href="https://www.statshub.com/referee/abel-ramon-abatti/787576">StatHub — Abatti 裁判数据</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543098/world-cup-2026-group-g-guide-fixtures-schedule-standings-and-odds-for-belgium-egypt-iran-and-new-zealand">Sky Sports — G组导读</a> · <a href="https://www.goal.com/en/news/belgium-egypt-world-cup-preview/blt8b8db9e1f93f0387">Goal.com — 赛前全景</a> · <a href="https://www.hitc.com/world-cup-2026-group-g-guide-mo-salah-key-for-egypt-and-belgium-favourites/">HITC — G组/萨拉赫</a> · <a href="https://www.rotowire.com/soccer/article/belgium-vs-egypt-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-118093">Rotowire — 战术分析/首发</a><br>
+      • <a href="https://www.soundersfc.com/news/belvegy-101-preview-all-you-need-to-know-when-belgium-faces-egypt-in-fifa-world-cup-2026tm-at-lumen-field">Seattle Sounders FC — 西雅图主场信息</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-belgium-vs-egypt-06-15-26-world-cup-2026/">Squawka/Kalshi — 预测市场</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-14 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['比利时胜','平局','埃及胜'],datasets:[{data:[56,25,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[48,52],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:65,title:{display:true,text:'隐含概率 %（去水，市场轻度偏小）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['比利时','埃及','伊朗','新西兰'],datasets:[{data:[9,29,67,100],backgroundColor:[HT,SC,'#16a34a','#c1272d'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'比利时',data:[7.5,8,8.5,8.5,9,7.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'埃及',data:[7,7,6,6,8,5.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

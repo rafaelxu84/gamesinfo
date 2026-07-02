@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Japan vs Sweden · 2026 World Cup Group F Final Round (Sweden must win · Japan through with a draw)</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-japan-vs-sweden.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-japan-vs-sweden.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#006aa7;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#5aa8d8;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-japan-vs-sweden.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group F Final Round · Sweden must win vs a Japan side through with a draw</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Japan 1-1 Sweden</span>
+  <h1>Japan vs Sweden</h1>
+  <div class="meta">25 June 2026 · Arlington, AT&amp;T Stadium · ~18:00 local / 19:00 ET · Group F final round (played simultaneously: Netherlands vs Tunisia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇯🇵 Japan</div><div class="rk">2-2 Netherlands + 4-0 Tunisia · 4 pts (GD +4) · through with a draw, top spot with a win · missing Mitoma / Endo · Kubo injured out</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#5aa8d8">🇸🇪 Sweden</div><div class="rk">5-1 Tunisia + 1-5 Netherlands · 3 pts (GD 0) · must win to lock up a top-two finish · Isak + Gyökeres twin stars · missing Kulusevski / Forsberg</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-26) ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Japan 1-1 Sweden (HT 0-0) · 06-25</span></h2>
+    <h4>① Score progression</h4>
+    <p style="font-size:13.5px">Arlington, Dallas Stadium: a goalless first half, with Japan in control but lacking the cutting edge to break through. <b>In the second half, 56' Daizen Maeda</b> met a <b>Ritsu Doan</b> through-ball that split the Swedish defence and slotted into the bottom-left corner — the conversion of <b>the only big chance of the match</b>. Just six minutes later (<b>62'</b>), <b>Anthony Elanga</b> curled a left-footed strike from distance over goalkeeper Suzuki to equalise — his <b>second goal across two World Cup tournaments</b>. Final score <b>1-1</b>. The result sees <b>both teams progress together</b>: Japan, on 5 points (2 wins, 1 draw, unbeaten throughout) edged out the last-gasp draw and finished <b>2nd in Group F (runners-up)</b>, with the Netherlands winning the group; Sweden, on 4 points, squeezed through as <b>one of the best third-placed teams</b> into the round of 32.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 56' Maeda (Doan assist) · 62' Elanga (left-footed long-range equaliser) ｜ HT 0-0 · the match's only big chance converted by Japan · Elanga 2 shots, 2 on target</div>
+
+    <h4 style="margin-top:16px">② Core data comparison (Opta / Sofascore)</h4>
+    <table>
+      <tr><th>Metric</th><th>🇯🇵 Japan</th><th>🇸🇪 Sweden</th><th>Reading</th></tr>
+      <tr><td class="ht">Possession</td><td><b>52.3%</b></td><td>47.7%</td><td>Japan held a slight possession edge (note: FIFA's official split was Japan 44% / Sweden 56%; the Opta/Squawka split is used here) — the gap was small, the difference was in threat quality</td></tr>
+      <tr><td class="ht">Expected goals xG</td><td><b>1.31</b></td><td>0.42</td><td>Japan's 1.31 xG includes the only big chance of the match; Sweden's 0.42 came almost entirely from Elanga's fortunate long-range effort — Japan were deserved leaders</td></tr>
+      <tr><td class="ht">Shots / on target</td><td>8 / 3</td><td><b>10 / 5</b></td><td>Sweden had slightly more shots but of lower quality (mostly from distance); Japan had fewer, sharper shots, working the ball into high-quality areas</td></tr>
+      <tr><td class="ht">Big chances</td><td><b>2 / 1 scored</b></td><td>0</td><td>Japan 2 big chances, 1 converted; Sweden 0 big chances all game — Elanga's screamer was a non-structural goal</td></tr>
+      <tr><td class="ht">Corners</td><td><b>8</b></td><td>1</td><td>Japan 8 corners vs Sweden 1 — sustained Japanese positional pressure, with Sweden barely threatening from set pieces</td></tr>
+      <tr><td class="ht">Pass accuracy / yellow cards</td><td>TBC / 0</td><td>TBC / Gyökeres 1 yellow</td><td>Japan continued their fully disciplined, zero-yellow campaign; Sweden's Gyökeres was booked</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">Data sources: <a href="https://theanalyst.com/articles/japan-vs-sweden-stats-2026-world-cup">Opta Analyst — Japan 1-1 Sweden Stats</a> · <a href="https://www.sofascore.com/news/japan-1-1-sweden-maeda-shines-in-group-f-draw">Sofascore</a> · <a href="https://www.squawka.com/en/news/world-cup/japan-vs-sweden-result-stats/">Squawka</a> · <a href="https://www.fotmob.com/news/v7sf1t1pa8fl1tboxkn6ql0f8-japan-1-1-sweden-elanga-equaliser-sends-both-sides-into-world-cup-knockout-phase">FotMob</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021471">FIFA official</a></div>
+
+    <h4 style="margin-top:16px">③ Tactical review</h4>
+    <div class="insight"><div class="who">Japan's "low block + precise counter" script delivered as expected — solving the puzzle even short on creativity</div>Japan posted 1.31 xG, 2 big chances and 8 corners, with the only big chance of the match finished by Maeda off a Doan through-ball. <b>This shows that even without their three main creators Kubo/Mitoma/Endo, Japan can still solve the problem through disciplined positional pressure plus one fatal vertical through-ball</b> — exactly the realisation of the pre-match call that "the motivation gap feeds Japan's counter-attack", and a template that remains effective in the knockouts against teams that defend deep.</div>
+    <div class="insight"><div class="who">Sweden's attack relied solely on individual moments — structural creation was 0</div>Sweden had 0 big chances and 0.42 xG all game, the equaliser a non-structural long-range screamer from Elanga. <b>This shows the Isak+Gyökeres twin stars could not generate systematic threat once locked down by Japan's deep three-at-the-back</b>, exposing the creative vacuum in midfield caused by the absence of Kulusevski/Forsberg — this Sweden side advances on individual ability, but the system is fragile.</div>
+    <div class="insight"><div class="who">Maeda was the match-winner and the most reliable output point</div>Maeda's goal plus his tireless running earned him Sofascore's man of the match (rating 7.9, 0.72 xG / 0.75 xGOT). <b>This shows that with Kubo absent, Japan's scoring burden can be taken on by a running-type finisher like Maeda</b>, who, combined with Doan's passing vision, forms the most reliable scoring route.</div>
+    <div class="insight"><div class="who">Japan finished the group unbeaten — discipline is an invisible asset</div>Japan came through with 2 wins and 1 draw and zero yellow cards (just the 0 from the first two rounds), advancing as group runners-up. <b>This shows Japan are one of the few sides at this tournament that combine tactical discipline with zero loss-of-control cost</b> — no suspension accumulation risk in the knockouts, with full squad availability.</div>
+
+    <h4 style="margin-top:16px">④ Prediction ledger</h4>
+    <table>
+      <tr><th>Pre-match main line</th><th>Result</th><th>Note</th></tr>
+      <tr><td class="ht">Japan slight favourites (implied ≈49%) / base case "narrow Japan win or draw"</td><td style="color:var(--good)"><b>✓ Draw delivered</b></td><td>1-1 landed in the "draw" base-case branch; the draw achieved Japan's qualification target</td></tr>
+      <tr><td class="ht">"Sweden must push up → feeds Japan's counter"</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Japan's only big chance was precisely a transition vertical through-ball — the script as scripted</td></tr>
+      <tr><td class="ht">Kubo's absence caps Japan's creative ceiling</td><td style="color:var(--warn)"><b>~ Partly borne out</b></td><td>Japan did manage only 1.31 xG with limited goal output, but still solved it via Doan-Maeda and were not dragged down</td></tr>
+      <tr><td class="ht">Sweden's back line torn apart 5-1 by the Netherlands is a soft spot</td><td style="color:var(--warn)"><b>~ Only 1 conceded</b></td><td>Sweden tightened up and conceded just 1 — the motivation gap meant their pushing intensity was lower than expected, making them more solid instead</td></tr>
+      <tr><td class="ht">Over/Under 2.5 goals</td><td style="color:var(--bad)"><b>✗ Went Under</b></td><td>Just 2 goals, landing under the 2.5 line — the pre-match "leaning Over" call did not pan out, with the counter-attacking duel limiting goals</td></tr>
+      <tr><td class="ht">Market heat 2/5</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Mild consensus, no upset, result landed within the expected range</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇯🇵 Japan · Through to the round of 32 (Group F runners-up)</h4>
+        <ul class="watch">
+          <li><b>Advance 2nd in Group F into the round of 32</b>: per multiple post-match reports, their opponent is most likely Brazil — with Brazil's individual explosiveness, Japan's deep three-at-the-back will face a stern test (exact fixture and time per FIFA's official bracket, <b>TBC</b>).</li>
+          <li><b>The counter + one fatal through-ball scoring model is replicable</b>: but facing knockout-stage heavyweights they will need more creators, and whether Kubo can return from injury is key to the ceiling.</li>
+          <li><b>Kubo's injury still needs tracking</b>: absent here, Japan solved it via Doan-Maeda; if Kubo returns in the knockouts he could significantly raise their ceiling for breaking down packed defences.</li>
+          <li><b>Discipline as an asset</b>: through the group with zero yellow cards and no suspension accumulation, full squad availability, free to field the strongest XI.</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#5aa8d8">🇸🇪 Sweden · Through to the round of 32 as one of the best third-placed teams</h4>
+        <ul class="watch">
+          <li><b>On 4 points, advancing as one of the best third-placed teams</b>: the 1-1 draw was enough to preserve their third-place qualification spot and reach the round of 32 (multiple reports point to France as their opponent, <b>exact fixture and time per FIFA official, TBC</b>).</li>
+          <li><b>Systematic creativity is the hard limit</b>: 0 big chances here, with the absence of Kulusevski/Forsberg leaving midfield unable to feed the strikers; if they keep relying solely on Isak/Gyökeres's individual ability in the knockouts, breaking down strong sides will be tough.</li>
+          <li><b>Elanga's long-range shooting is a hidden weapon</b>: 2 goals across two tournaments, plus this screamer — a non-structural scoring point when Sweden are stuck in positional play.</li>
+          <li><b>Gyökeres's 1 yellow warrants caution on accumulation</b>: card management affects selection in the knockout stage.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is the Group F final round's <b>"motivation-asymmetry" duel</b>, and it is <b>played simultaneously with Netherlands-Tunisia</b>. Japan, on 4 points (2-2 draw with the Netherlands + 4-0 win over Tunisia, goal difference +4), <b>only need a draw to lock up qualification, and a win to contend for top spot</b>; Sweden, on 3 points (5-1 demolition of Tunisia + 1-5 thrashing by the Netherlands, goal difference 0), <b>must win to be safely in the top two</b> (in theory a draw still leaves a slim third-place tail, but it is no longer in their own hands). This tips the "intensity of needing to win" entirely toward Sweden — they must push forward, and that is exactly <b>what feeds Japan's favoured low-block counter</b>. Both the odds and the supercomputer make Japan slight favourites: Japan win ≈ <b>1.90</b>, draw <b>3.55</b>, Sweden win <b>4.33</b> (Opta supercomputer 51.9% / 25.9% / 22.2%); the handicap line is Japan <b>-0.5</b> (roughly the moneyline) and the total line O/U <b>2.5</b> leaning Over. The biggest uncertainty is that <b>Japan's key man Kubo is confirmed out with a knee injury</b> (hurt in a collision with Dumfries in the Netherlands match), on top of Mitoma/Endo missing the whole tournament, squeezing Japan's creativity; meanwhile Sweden's <b>Isak + Gyökeres front two</b> firepower is its only bargaining chip, but its back line was just torn apart 5-1 by the Netherlands. Three things to watch: ① <b>Sweden must push up vs Japan's counter trap</b> (the motivation gap); ② <b>Japan's creative ceiling for breaking down / countering after Kubo's absence</b>; ③ <b>can the Isak/Gyökeres twin stars punch through Japan's deep three-at-the-back</b>. Base-case script: <b>goals on the table, a narrow Japan win or draw</b>, overheat index ≈ 2/5 (mild consensus leaning Japan; the information concentrates on "Sweden's deep handicap and Over/Under").</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Japan implied win prob. (de-vigged)</div><div class="v" style="color:#e8788a">≈49%</div></div>
+      <div class="key"><div class="k">Sweden implied win prob. (de-vigged)</div><div class="v" style="color:#5aa8d8">≈22%</div></div>
+      <div class="key"><div class="k">Draw implied probability</div><div class="v" style="color:var(--draw)">≈26%</div></div>
+      <div class="key"><div class="k">Market overheat index</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Qualification arithmetic + motivation asymmetry</b>: Japan on 4 points, GD +4, <b>through with a draw, top spot with a win</b> (top spot also depends on the simultaneous Netherlands-Tunisia result and goal difference); Sweden on 3 points, GD 0, <b>must win</b> to be safely in the top two, with a draw essentially leaving only the slim third-place tail. The pressure to win tips toward Sweden — they have to push up, and that is exactly what feeds Japan's low-block counter.</li>
+      <li><b>Kubo confirmed injured out (Japan · multi-source confirmed)</b>: hurt his left knee in a 75th-minute collision with Dumfries in the Netherlands match (MRI confirmed), <b>officially confirmed to miss this game</b>, staying with the squad to recover and target a knockout-stage return. On top of Mitoma (hamstring, out for the whole tournament) and Endo (foot injury, withdrew), Japan's front-line creativity is further squeezed — see the key match news.</li>
+      <li><b>Sweden's twin stars Isak + Gyökeres fit to start (Sweden · multi-source confirmed)</b>: the pair each scored against Tunisia and Gyökeres also netted against the Netherlands; Potter has openly called this Premier League front pair Sweden's biggest threat; but Kulusevski (knee injury, not in the squad) and Forsberg (knee injury, not in the squad) are both absent, damaging Sweden's midfield creation and wide depth.</li>
+      <li><b>Sweden's back line was just torn apart 5-1 by the Netherlands</b>: last round they were carved open by a Brobbey brace + a Gakpo double, with three-at-the-back coordination and defending fast transitions the soft spots. If Japan drag the game into transition, that plays right into their hands — this is where this match's "motivation gap making the scoreline gap smaller than the quality gap" is reverse-exploited by Japan.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Core module: Key match news ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand news and status signals affecting this fixture, with item-by-item explanation of how each changes the tactics or result (key player absences cross-confirmed by multiple sources)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ Key Player Check · Japan's Kubo confirmed out <span style="color:var(--mut);font-weight:400">· ESPN / RotoWire / OneFootball + Japanese media, consistent across sources · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Consistent across sources: Takefusa Kubo <b>confirmed out against Sweden with a left knee injury</b> (hurt in a 75th-minute collision with Dumfries vs the Netherlands, MRI confirmed), staying with the squad to recover and target a knockout-stage return</div>
+      <p style="font-size:13.5px">Key player absence cross-confirmed: <b>ESPN, RotoWire, OneFootball</b> and Japanese media all report that Japan's top creator <b>Takefusa Kubo</b> suffered a left knee injury in a 75th-minute collision with Dumfries in the Netherlands match (MRI confirmed) and <b>has been ruled out of this game</b>, staying at base for individual/light rehab work, with a chance to return in the knockout stage if Japan advance. <span style="color:var(--warn)">[Starting XI and injury grade per the pre-match FIFA Match Centre official sheets / Japan FA bulletin · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: with Mitoma (out for the whole tournament) and Endo (withdrew) already missing, Kubo is Japan's <b>most reliable inside-cutting organiser and engine for breaking down packed defences</b>. His absence makes Japan's attack lean more on Kamada's link-up, Junya Ito's wing play and Ueda's target-man finishing, lowering the creative ceiling for breaking down / countering. This is the key variable for the goal total and the depth of Japan's handicap line.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.rotowire.com/soccer/headlines/takefusa-kubo-injury-ruled-out-against-sweden-520669" style="color:var(--accent)">RotoWire — Kubo confirmed to miss Sweden</a> · <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Pre-match preview / team news</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515" style="color:var(--accent)">OneFootball — Preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Key Player Check · Sweden's Isak + Gyökeres fit to start <span style="color:var(--mut);font-weight:400">· ESPN / Flashscore, multi-source · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Premier League front pair <b>Isak + Gyökeres both fit, expected to start</b>; Potter has openly called the combination Sweden's biggest threat</div>
+      <p style="font-size:13.5px">Sweden's two main strikers — <b>Alexander Isak</b> (back from injury, started and scored against Tunisia) and <b>Viktor Gyökeres</b> (scored against both Tunisia and the Netherlands) — are both fit, with ESPN's predicted XI pairing the two up front. Manager Graham Potter has publicly set this front pair as Sweden's core threat. But midfield creative hub <b>Dejan Kulusevski</b> (knee/patella injury, not in the 26-man squad) and <b>Emil Forsberg</b> (knee injury, not in the squad) are both absent, damaging Sweden's central-attacking link-up and wide depth. <span style="color:var(--warn)">[Starting XI per the pre-match FIFA official sheet · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Sweden must win and will inevitably push up, and <b>the Isak/Gyökeres tall front pair</b> is their only chip to break through Japan's deep three-at-the-back, with set pieces and aerial balls in the box especially worth watching (many of the 5 goals against Tunisia came from front-line pressure). But the absence of Kulusevski/Forsberg weakens the supply and second-line creation — whether the twin stars are effectively fed decides whether Sweden's attack has "teeth but no mouth".</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/" style="color:var(--accent)">ESPN — Sweden squad/preview</a> · <a href="https://www.goal.com/en/lists/world-cup-dejan-kulusevski-injury-tottenham-sweden-viktor-gyokeres-alexander-isak/bltd56651aa57664624" style="color:var(--accent)">Goal — Kulusevski absent</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">Japan · Long-term attacking depletion <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / FIFA, multi-source · 05–06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Winger <b>Mitoma out for the whole tournament with a hamstring injury</b>; veteran captain <b>Endo</b> withdrew with a foot injury (subsequently announced his international retirement)</div>
+      <p style="font-size:13.5px">Brighton winger <b>Kaoru Mitoma</b> suffered a serious hamstring injury on 9 May (about 8 weeks), missing out on this World Cup squad, with Tomiyasu coming in as replacement; midfield linchpin and veteran captain <b>Wataru Endo</b> withdrew before the tournament with a foot injury and subsequently announced his retirement from the national team. Both, combined with Kubo's injury absence here, sharply shrink Japan's attacking and midfield creative spine at this tournament.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Mitoma is the left-side one-v-one threat and Endo the midfield shield and tempo-setter; with both absent plus Kubo injured out, Japan's breaking down of packed defences and transition rely more on Kamada's organisation, Junya Ito's wing pace and Ueda's target play. The good news is that 4-0 against Tunisia (Ueda brace, Kamada, Ito on the scoresheet) proved the alternative plan works — but against a Sweden side that must push up, counter-attack efficiency is key.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/48775615/" style="color:var(--accent)">ESPN — Mitoma out</a> · <a href="https://www.fifa.com/en/articles/japan-captain-endo-ruled-out-injury" style="color:var(--accent)">FIFA — Endo withdraws</a> · <a href="https://www.aljazeera.com/sports/2026/6/21/japan-tunisia-4-0-fifa-world-cup-2026-ayase-ueda-daichi-kamada-junya-ito" style="color:var(--accent)">Al Jazeera — Japan 4-0 Tunisia</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Match Environment · Match Referee <span style="color:var(--mut);font-weight:400">· ESPN official preview · 06-24</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee: Salvadoran <b>Ivan Barton</b>; Arlington AT&amp;T Stadium (roofed / climate-controlled)</div>
+      <p style="font-size:13.5px">Per ESPN's official pre-match preview, the referee for this match is Salvadoran <b>Ivan Barton</b>, an international-level referee from the CONCACAF system. AT&amp;T Stadium is a modern roofed, climate-controlled venue, so the June Texas heat has a relatively manageable impact on physical condition. <span style="color:var(--warn)">[Full officiating crew and VAR pairing, plus Barton's per-match cards/penalty breakdown at this and the last two major tournaments · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: with Sweden forced to push up and Japan stretching them on the counter, duels and tactical fouls in and around the box will increase, and the referee's tolerance has a real bearing on cards and potential penalties. This tournament's unified new rules lean strict (only captains may speak, the 8-second goalkeeper rule, semi-automated offside) — semi-automated offside will precisely capture the marginal sprints of Isak/Gyökeres and Japan's counter-attack offside line. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.espn.com/soccer/story/_/id/49155285/fifa-world-cup-2026-japan-vs-sweden-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — Japan vs Sweden official preview (referee/lineups)</a></div>
+    </div>
+  </section>
+
+  <!-- Data panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">Win/Draw/Loss implied probability (de-vigged odds) · Group F picture · Over/Under market · Overall strength profile — all charts use verified data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, from DECIMAL odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over/Under 2.5 goals implied probability (de-vigged)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group F four teams' points (before final round)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇯🇵 Japan</th><th>🇸🇪 Sweden</th></tr>
+      <tr><td>First two rounds</td><td class="ht">2-2 Netherlands + 4-0 Tunisia (4 pts, GD +4)</td><td class="sc">5-1 Tunisia + 1-5 Netherlands (3 pts, GD 0)</td></tr>
+      <tr><td>Group F points (before final round)</td><td colspan="2">Netherlands 4 (GD +4, 7 scored), Japan 4 (GD +4, 6 scored) out front; Sweden 3 (GD 0); Tunisia 0, eliminated. The Netherlands lead on goals scored</td></tr>
+      <tr><td>Qualification scenarios</td><td class="ht">through with a draw, top spot with a win (top spot also depends on the Netherlands-Tunisia result)</td><td class="sc">must win to be safely in the top two; a draw leaves only the slim third-place tail</td></tr>
+      <tr><td>Head coach</td><td class="ht">Hajime Moriyasu</td><td class="sc">Graham Potter (England)</td></tr>
+      <tr><td>Key players</td><td class="ht">Kamada, Junya Ito, Ueda, Z. Suzuki (Kubo injured out)</td><td class="sc">Isak, Gyökeres, Elanga, Lindelöf</td></tr>
+      <tr><td>Major absences</td><td class="ht">Mitoma (whole tournament), Endo (withdrew), Kubo (injured out for this game)</td><td class="sc">Kulusevski (knee/not selected), Forsberg (knee/not selected)</td></tr>
+      <tr><td>This match's watch points/questions</td><td class="ht">counter efficiency + game-managing the scoreline; creativity after Kubo's absence</td><td class="sc">must push up vs the counter trap; can the back line plug the leaks</td></tr>
+      <tr><td>1X2 odds (DECIMAL)</td><td class="ht">win ≈1.90 (implied ≈49%)</td><td class="sc">win ≈4.33 (implied ≈22%) · draw ≈3.55 (≈26%)</td></tr>
+      <tr><td>Handicap / Over-Under</td><td colspan="2" class="sc">Japan -0.5 (roughly the moneyline); total line O/U 2.5 leaning Over (both teams scored 6, Sweden conceded 6 across two games)</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from DECIMAL odds (≈49/26/22, normalised), in the same direction as the Opta supercomputer (Japan 51.9% / draw 25.9% / Sweden 22.2%). Odds sources: FanDuel/DraftKings/bet365/Paddy Power composite; the handicap is Japan -0.5 and the total line O/U 2.5 leaning Over. Kubo's absence vs Sweden's need to push up is the core variable for Over/Under and handicap depth. Exact odds per the live pre-match prices. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep data · expected metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical averages vs this World Cup's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: line up each team's <b>historical baseline (last two major tournaments / qualifying)</b> against <b>this World Cup's actual values (first two rounds)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" and never fabricated.</div>
+
+    <h4>① Core: historical averages vs this World Cup's actual values (team by team)</h4>
+    <table>
+      <tr><th>Team / Metric</th><th>Historical baseline (sample source)</th><th>This World Cup actual (first two rounds)</th><th>Difference and reading</th></tr>
+      <tr><td class="ht">🇯🇵 Japan · Attack</td><td class="ht">2022 "giant-killer" low-block counter + impact subs (Doan came off the bench for both equalisers vs Germany/Spain); open-play creation relies on wingers</td><td class="ht">2 games, 6 goals (2-2 Netherlands, 4-0 Tunisia); fluent firepower vs Tunisia from Ueda/Kamada/Ito</td><td><b>On target but with caveats</b>: the 4-0 against Tunisia's bunker proves the alternative plan works, but Kubo's absence here weakens the inside-cutting organising ceiling <span style="color:var(--warn)">(per-game xG public sample limited · TBC)</span></td></tr>
+      <tr><td class="ht">🇯🇵 Japan · Defence</td><td class="ht">Moriyasu's three-at-the-back deep and compact, transition; in 2022 limited Germany/Spain's high-quality attacks</td><td class="ht">2 games, 2 goals conceded (Netherlands corner late equaliser + ); structure solid, strong under pressure</td><td><b>The floor is in defence</b>: the low block + fast recovery is its source of stability; against Sweden's tall front pair, set pieces and aerial balls in the box are the main risk points</td></tr>
+      <tr><td class="sc">🇸🇪 Sweden · Attack</td><td class="sc">Isak/Gyökeres top individual ability; qualifying/warm-ups rely on the twin stars to finish</td><td class="sc">2 games, 6 goals (fluent 5-1 vs Tunisia; only Elanga's 1 in the 1-5 vs Netherlands)</td><td><b>Bipolar</b>: crushed Tunisia but scored only 1 against the Netherlands, with firepower dropping off as opponent strength rises; missing Kulusevski/Forsberg's supply, the twin stars' service is in doubt <span style="color:var(--warn)">(public xG sample limited · TBC)</span></td></tr>
+      <tr><td class="sc">🇸🇪 Sweden · Defence</td><td class="sc">three-at-the-back system led by Lindelöf; defending fast transitions has been unstable in recent years</td><td class="sc">2 games, 6 goals conceded (torn apart 5-1 by the Netherlands, also conceded 1 to Tunisia)</td><td><b>Clear soft spot</b>: carved open by a Brobbey double + a Gakpo double, with three-at-the-back coordination and defending counters the Achilles heel — exactly what Japan's counter can exploit</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Japan continue their 2022 "low block + counter" main line, and the fluent firepower against Tunisia proves there is a solution beyond Kubo, but the creative ceiling drops with Kubo absent here; Sweden's firepower is bipolar (5-1 Tun vs 1-5 Ned), and the back line was just played through by the Netherlands. The deep data supports the main line of "Sweden forced to push up, Japan's counter efficiency + game-managing the scoreline". Sources: Opta Analyst · FotMob/Sofascore (first two rounds) · FIFA/team major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration + trap warning</h4>
+    <table>
+      <tr><td>This match's model-projected xG (magnitude)</td><td class="ht">Japan ≈1.4–1.7</td><td class="sc">Sweden ≈1.1–1.4</td><td>Japan slightly ahead but with its ceiling a touch suppressed by Kubo's absence; Sweden pushing up earns chances but also exposes the back line — consistent with the odds' "Japan slight handicap + leaning Over"</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="ht">The Opta supercomputer gives Japan 51.9% win / draw 25.9% / Sweden 22.2%; prediction market Kalshi around 53/27/21, in the same direction leaning Japan</td><td>Within the system the two teams are close to a "coin biased toward Japan"; Japan's form (9 unbeaten, including wins over Brazil/England) and goal-difference edge add to it</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="ht">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Sweden, needing to win, will actively apply pressure with field tilt rising, while Japan tend to cede the ball and counter, with PPDA rising in the middle-and-late phases (passive deep block); Kubo's absence lowers Japan's front-line xT</td><td><b>Trap warning</b>: ① Sweden must push up → space for both sides, raising the chance of Over and favouring both teams to score (BTTS); ② Japan are through with a draw, so if they lead early they may turn to defence, suppressing their own goal output; ③ here the "motivation gap" works in reverse — Sweden pushing up exposes the back line, so Japan's counter efficiency may stretch the scoreline</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; excluding penalties, it better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances opponents create against you, measuring true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall strength.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = lots of long-range shots / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; lower = more aggressive pressing.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: the share of final-third touches, measuring territorial dominance rather than pure possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore; national teams have limited public samples on granular metrics like PPDA/xT/field tilt, so missing items are uniformly marked "TBC" and values are never fabricated.</div>
+  </section>
+
+  <!-- Betting market heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">This is a "mild Japan lean" near-coin-flip fixture — Japan a slight -0.5 handicap, with genuine suspense in the result; the information content concentrates on handicap depth, Over/Under and the tactical consequences of "Sweden must push up"</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market overheat index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · mild consensus leaning Japan, no frenzied one-way action, information concentrated on handicap/Over-Under</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Expert direction is almost unanimously leaning Japan (≈49% de-vigged, supercomputer ≈52%), but the price has not been driven by frenzy — Sweden still has a genuine 4.33 price. The real disagreement is over <b>the openness once Sweden are forced to push up</b> (Over/Under, BTTS) and <b>Kubo's absence on Japan's attacking ceiling</b>. Racing Post is the only voice explicitly backing Sweden against the grain.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction leans Japan, disagreement over the margin and whether to back Sweden against the grain)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Sports Mole</td><td>Pre-match preview</td><td>Japan 2-1, "Sweden narrowly beaten"</td></tr>
+      <tr><td>OneFootball</td><td>Aggregator media</td><td>Japan win @1.95 "genuine value" — form/defence/discipline all better than Sweden</td></tr>
+      <tr><td>Total Football Analysis</td><td>Data media</td><td>Japan to edge a high-scoring game; Over 2.5 + Gyökeres anytime scorer</td></tr>
+      <tr><td>Yahoo / SportsRush</td><td>North American media</td><td>Japan 2-1; Over 2.5; Gyökeres anytime scorer</td></tr>
+      <tr><td>Opta Analyst (supercomputer)</td><td>Model camp</td><td>Japan 51.9% / draw 25.9% / Sweden 22.2%</td></tr>
+      <tr><td>Racing Post (contrarian)</td><td>UK heritage outlet</td><td><b>Backs Sweden @4.33</b> — value price + doubts Japan can sustain their form, with an open defence</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheat signal (on the low side)</b>: the direction leans Japan but is <b>not extreme</b>, and there is Racing Post explicitly backing Sweden against the grain, plus a strong "Over/BTTS" consensus undercurrent. This is not a one-sided fixture — there is genuine suspense in the result. The biggest uncertainty is <b>the openness once Sweden push up</b> (pushing Over/Under higher) and <b>Japan's attacking ceiling without Kubo</b>, rather than the result direction being feverishly priced.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (DECIMAL)</h4>
+    <table>
+      <tr><th>Point in time</th><th>Market</th><th>Japan win / draw / Sweden win</th><th>Reading</th></tr>
+      <tr><td>Open (pre-match / multi-book composite)</td><td>1X2</td><td class="ht">≈1.90 / 3.55 / 4.33</td><td>Japan slight favourite, Sweden deep-handicap underdog <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>As of 06-24</td><td>FanDuel/bet365/Paddy Power</td><td class="ht">Japan 1.83–1.95 / draw 3.40–3.60 / Sweden 4.20–4.40</td><td>books differ slightly, overall making Japan a slight favourite and Sweden ≈22%</td></tr>
+      <tr><td>06-24</td><td>Over/Under + handicap</td><td colspan="2" class="ht">Japan -0.5 (≈moneyline); O/U 2.5 leaning Over (Over @≈1.80); BTTS leaning Yes</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (opening → current)</h4>
+    <table>
+      <tr><th>Point in time</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening (days before / pre-season expectation)</td><td class="sc">Sweden once respected for the Isak/Gyökeres twin stars; the two teams close</td><td>priced pre-match as "Sweden's twin stars vs Japan the giant-killers", with the two teams positioned close and no one-way lean <span style="color:var(--warn)">[exact opening figures · TBC]</span></td></tr>
+      <tr><td>Open (after round 2 + goal-difference repricing)</td><td class="ht">Japan tightened to slight favourite (≈1.90); Sweden drifted out to ≈4.33</td><td><b>repricing from round-2 results</b>: Sweden's back line exposed by the Netherlands <b>5-1</b>, Japan's 2-2 Netherlands + 4-0 Tunisia (GD +4 vs Sweden 0), the market made Japan a slight favourite and Sweden a deep handicap; <b>key logic: Sweden's "must win → forced to push up" reinforces Japan rather than Sweden</b>, because pushing up feeds Japan's counter</td></tr>
+      <tr><td>Current (06-24 → now)</td><td class="ht">Japan -0.5 (≈1.90); O/U 2.5 leaning Over; Sweden ≈4.33</td><td>price discovery concentrates on <b>handicap depth</b> (can Japan beat Sweden outright / the cover value of Sweden +0.5) and <b>Over/Under-BTTS</b> (Sweden push up + both sides can score → leaning Over); Kubo's absence slightly suppresses Japan's attacking ceiling, a fine-tuning variable for Over/the deep handicap</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this is a "mild Japan lean near-coin-flip line", unlike a one-sided heavy handicap — there is still genuine price discovery in the 1X2. The key variables are <b>the openness once Sweden are forced to push up</b> (pushing Over/Under-BTTS higher) and <b>Japan's attacking ceiling without Kubo</b>. The core counter-intuitive point: Sweden's "must win" is the reason the market favours Japan more (pushing up exposes the back line, feeding the counter), not the reason to favour Sweden. Exact opening figures per each platform · TBC. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction markets &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Prediction market (Kalshi)</b>: win/draw/loss about <b>Japan 53% / draw 27% / Sweden 21%</b>, highly consistent with the Opta supercomputer and even more pro-Japan than the de-vigged bookmaker prices. Qualification market: Japan ≈99% to advance, Sweden ≈91% (with a third-place tail still available under the 48-team format). Polymarket has a related market, but the exact per-outcome share for the single match was not found <span style="color:var(--warn)">[Polymarket exact shares · TBC]</span>.</li>
+      <li><b>Sentiment focus ①</b>: <b>Premier League front pair Isak + Gyökeres forced to "fight for survival"</b> — "when a front line like that has to win, it's worth watching" is the biggest traffic point.</li>
+      <li><b>Sentiment focus ②</b>: <b>can Japan sustain their form</b> — 9 unbeaten (including wins over Brazil, England), but missing Kubo/Mitoma/Endo, with doubts over whether the creativity is still enough.</li>
+      <li><b>Public money / social volume breakdown</b>: no quantitative data found <span style="color:var(--warn)">[public betting % / social quantification · TBC]</span>; qualitatively: public money leans Japan (form + favourite), with recreational money leaning Over 2.5 / BTTS.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Composite read</b>: this is a "mild Japan lean near-coin-flip line", overheat index <b>2/5</b>. The 1X2 has genuine price discovery, and the core variables are <b>the openness of Sweden being forced to push up</b> (pushing Over/Under-BTTS higher) and <b>Japan's attacking ceiling without Kubo</b>. The counter-intuitive point: Sweden's pressure to win is the reason the market favours Japan more. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.espn.com/soccer/odds/_/gameId/760471">ESPN — Odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/japan-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aKsXj1J6aMIS/">Racing Post — Backs Sweden</a> · <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/preview/japan-vs-sweden-prediction-team-news-lineups_599879.html">Sports Mole — Prediction</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515">OneFootball</a> · <a href="https://theanalyst.com/articles/japan-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — Supercomputer</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Media report</b>: per ESPN's official pre-match preview, the referee for this match is Salvadoran <b>Ivan Barton</b> (CONCACAF system, international level); Arlington AT&amp;T Stadium (roofed, climate-controlled). <span style="color:var(--warn)">[full officiating crew and VAR pairing · TBC]</span></div>
+    <h4>Officiating tendency + this tournament's unified new rules (qualitative + system profile)</h4>
+    <ul class="cl">
+      <li><b>System profile</b>: Barton is from El Salvador, the CONCACAF officiating system — an international-level referee who has officiated continental events (Gold Cup / qualifying region). This World Cup's officiating environment leans strict (only captains may speak, the 8-second goalkeeper rule, semi-automated offside).</li>
+      <li><b>This/last-two-tournament actual sample</b>: the precise per-match cards/penalty breakdown for Barton at this and the last two World Cups has limited public sample. <span style="color:var(--warn)">[per-match major-tournament yellow-card/penalty-rate breakdown · no reliable major-tournament sample, no fabricated figures · TBC]</span>. Qualitative judgment: CONCACAF-system referees have a certain tolerance for physical contact.</li>
+      <li><b>Officiating history with the two teams</b>: no significant public officiating history with either Japan or Sweden to speak of (<b>no sample, stated honestly</b>).</li>
+      <li><b>Two-sidedness</b>: Sweden must push up → more high pressing and aerial duels in the box, with Isak/Gyökeres's duels and tugging easily generating free kicks/penalties; Japan's counters and tactical fouls to slow play also add card/penalty observation points. Semi-automated offside will precisely capture both sides' marginal sprints. Cards/penalty markets are best treated as leanings, not actionable bases.</li>
+    </ul>
+    <div class="flag">⚠ <b>Referee-side analysis</b>: the two teams are close in quality, so the referee's impact on the result is limited, with the main value in cards/penalties: the box duels once Sweden push up and Japan's tactical fouls are the yellow-card/penalty observation points. Given Barton's limited per-match major-tournament breakdown, treat the related markets as leanings, not actionable bases.</div>
+  </section>
+
+  <!-- Lineups and key players -->
+  <section>
+    <h2><span class="n">3</span> Lineups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted starting XI (ESPN / RotoWire projection, unofficial; official squad per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇯🇵 Japan predicted XI (3-4-2-1) · Moriyasu · Kubo injured out</h4>
+    <div class="lineup">Z. Suzuki; Tomiyasu · Itakura · H. Ito; Doan · Sano · Tanaka · K. Nakamura; J. Ito · Kamada; Ueda</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="ht">Daichi Kamada</td><td>Attacking midfielder / link-up</td><td>89' late equaliser vs the Netherlands, 4' goal vs Tunisia; Japan's organising hub with Kubo absent</td></tr>
+      <tr><td class="ht">Ayase Ueda</td><td>Striker</td><td>brace vs Tunisia (31', 83'), in hot form; the target-man finisher to break Sweden's three-at-the-back</td></tr>
+      <tr><td class="ht">Junya Ito</td><td>Right winger/wing-back</td><td>69' goal vs Tunisia; wing pace and crossing source with Mitoma absent</td></tr>
+      <tr><td class="ht">Zion Suzuki</td><td>Goalkeeper / Parma</td><td>new-generation keeper, balanced in shot-stopping and distribution; must cope with Isak/Gyökeres's aerial balls in the box</td></tr>
+    </table>
+    <h4>🇸🇪 Sweden predicted XI (3-5-2) · Graham Potter · Isak + Gyökeres twin stars</h4>
+    <div class="lineup">Nordfeldt; Lagerbielke · Hien · Lindelöf(C); Elanga · Karlström · Bergvall · Ayari · Gudmundsson; Gyökeres · Isak</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / notes</th></tr>
+      <tr><td class="sc">Alexander Isak</td><td>Striker</td><td>back from injury, started and scored vs Tunisia; one of the tall front pair to break Japan's low block</td></tr>
+      <tr><td class="sc">Viktor Gyökeres</td><td>Striker</td><td>scored against both Tunisia and the Netherlands; anytime scorer is the market's favourite Sweden-side option</td></tr>
+      <tr><td class="sc">Anthony Elanga</td><td>Right flank / winger</td><td>came off the bench and scored 59' vs the Netherlands; ESPN strongly tips him to start, providing wing pace</td></tr>
+      <tr><td class="sc">Victor Lindelöf (C)</td><td>Centre-back / captain</td><td>three-at-the-back leader; the back line was just torn apart 5-1 by the Netherlands, with coordination and defending counters the Achilles heel</td></tr>
+    </table>
+    <div class="note">Squad note: both predicted XIs are media analysts' projections (ESPN / RotoWire), <b>per the pre-match official sheet · TBC</b>. Japan's focus is on Kamada/J. Ito carrying creation after <b>Kubo confirmed out</b> and whether Moriyasu keeps the three-at-the-back; Sweden's focus is the Isak/Gyökeres twin stars + <b>the goalkeeping choice between Nordfeldt and Johansson differs across sources</b> <span style="color:var(--warn)">[goalkeeper choice · TBC]</span>, and how the midfield supplies the twin stars without Kulusevski/Forsberg.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Each conclusion cross-references both teams' actual approach and results at their last two major tournaments (World Cup + continental event / 2018+2022)</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇯🇵 Japan · Hajime Moriyasu</div>
+        <div class="role">3-4-2-1 / three-at-the-back deep and compact + fast transition + impact subs</div>
+        <ul class="cl">
+          <li>Moriyasu's signature is a <b>deep, compact block + high-intensity pressing + fast vertical balls in transition</b> — the 2022 Qatar template with which Japan twice came from behind to topple Germany and Spain (Doan involved in both equalisers off the bench), the "giant-killer" main line. At this tournament, 2-2 vs the Netherlands (88' corner late equaliser) and 4-0 vs Tunisia continue this approach of a solid floor and a sharp eye for chances.</li>
+          <li>Cross-reference: WC 2022 comebacks vs Germany/Spain, 2-2 vs Netherlands at this tournament (equalising a late corner with a corner of their own) — <b>Japan are especially comfortable against strong sides who push up</b>; give them transition space and they will punish you on the counter and from set pieces. Sweden's need to push up plays right into this.</li>
+          <li>This match's entry point: cede some possession and counter via Kamada's organisation + J. Ito's wing pace + Ueda's target play, plus set pieces; Kubo's absence weakens inside-cutting creation, but the Tunisia game proves the alternative is viable. Being through with a draw gives them a safety cushion to "stay solid first, then strike" — if they lead early they may turn to defence.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#5aa8d8">🇸🇪 Sweden · Graham Potter</div>
+        <div class="role">3-5-2 · front two Isak/Gyökeres + wing width, must take the initiative to press</div>
+        <ul class="cl">
+          <li>Under Potter, Sweden are built on a <b>three-at-the-back + front two</b> framework, relying on the individual ability of Isak/Gyökeres to finish. At this tournament 5-1 vs Tunisia was a fluent display of firepower, but 1-5 vs the Netherlands saw them played through — <b>against opponents with intact structure who can counter, Sweden's defensive coordination is immediately exposed</b>.</li>
+          <li>Cross-reference: against the Netherlands torn open by a Brobbey double + a Gakpo double (defending counters and coordination both failing), and missing Kulusevski/Forsberg weakening the midfield supply — <b>Sweden's floor is in defence, their ceiling tied to the twin stars' individual sparks</b>. Needing to win means they cannot be as passive as against the Netherlands, and must take the initiative to push up.</li>
+          <li>This match's response: high pressing + feeding Isak/Gyökeres aerial balls and second-ball attacks, using Elanga's wing pace; set pieces are their realistic weapon to break Japan's low block. But pushing up will inevitably expose the space behind, leaving an opening for Japan's counter and Ueda/Ito's vertical thrusts — the biggest cost of Sweden's need to win.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">OneFootball / Total Football Analysis <small>· pre-match preview</small></div>A Japan win is seen as "genuine value" — form and defensive discipline both better than Sweden; most expect a goal-filled game with the ball on the table, favouring Over 2.5 + Gyökeres anytime scorer.</div>
+    <div class="insight"><div class="who">Sports Mole / Yahoo <small>· prediction media</small></div>Several outlets give Japan 2-1, "Sweden narrowly beaten"; the core logic is that Sweden must push up and its back line was just torn apart 5-1 by the Netherlands, feeding Japan's counter.</div>
+    <div class="insight"><div class="who">Racing Post (contrarian) <small>· UK heritage outlet</small></div>Backs Sweden @4.33: "value price" — doubts Japan can sustain their early-season form, and that their more open approach will leave the back line exposed to Isak/Gyökeres; Bet Builder includes an Isak goal.</div>
+    <div class="insight"><div class="who">Composite · core suspense and traps <small>· Opta / Kalshi</small></div>Both the supercomputer and the prediction market lean Japan (≈52% / 53%). ⚠ Trap warning: ① Japan are through with a draw, so if they lead early they may turn to defence, suppressing their own goal output; ② Sweden must push up → the chance of Over/BTTS rises, but it also exposes the back line to Japan's counter; ③ Kubo's absence lowers Japan's attacking ceiling, a fine-tuning variable for Over/the deep handicap; ④ Sweden's twin stars are still the switch for an upset.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; To Be Confirmed</h2>
+    <ul class="cl">
+      <li><b>Result lean</b>: a narrow Japan win or a draw is the base-case script. The quality and form scales lean mildly toward Japan (GD +4, 9 unbeaten, a low-block counter that contains push-up sides); Sweden must win and are forced to push up, with a back line just torn apart 5-1 by the Netherlands, feeding Japan's counter. But Sweden's Isak/Gyökeres twin stars are a genuine variable, capable of producing an upset or forcing Japan into an open game.</li>
+      <li><b>Key men</b>: Kamada (Jpn/organising hub), Ueda (Jpn/target-man finisher), Junya Ito (Jpn/wing pace), Z. Suzuki (Jpn/goalkeeper); Isak, Gyökeres (Swe/tall front pair), Elanga (Swe/wing pace), Lindelöf (Swe/defensive leader). <b>Japan's Kubo is injured out.</b></li>
+      <li><b>Match-winners</b>: ① can Sweden push up without their back line being torn open by Japan's counter; ② can Japan, without Kubo, sustain creativity via Kamada/Ito + take their counter/set-piece chances; ③ will Japan's "through with a draw" mindset see them turn to defence early, suppressing their attacking intensity.</li>
+      <li><b>Market view</b>: a mild Japan lean near-coin-flip line (≈49/26/22, supercomputer ≈52%), overheat index 2/5; the 1X2 has genuine price discovery. The core variables are the openness once Sweden push up (pushing Over/Under-BTTS higher) + Japan's attacking ceiling without Kubo. The counter-intuitive point: Sweden's pressure to win is the reason the market favours Japan more.</li>
+    </ul>
+    <div class="flag">⚠ <b>To be confirmed</b>: ① both official starting XIs (~1 hour before kickoff, FIFA Match Centre); ② <b>Sweden's goalkeeping choice</b> (Nordfeldt vs Johansson, differing across sources) and the midfield pairing without Kulusevski/Forsberg; ③ whether Japan keep the three-at-the-back, and the specific front-line combination after Kubo's absence (Kubo's absence multi-source confirmed); ④ Barton's full officiating crew and VAR pairing, plus his per-match cards/penalty breakdown at this and the last two major tournaments (where there is no reliable major-tournament sample, it is stated honestly); ⑤ the exact goal-difference and tie-break rules for qualification/top spot (points → goal difference → goals scored → head-to-head → fair-play points → drawing of lots), the Netherlands-Tunisia result combinations Japan need to contend for top spot, and the tail conditions for Sweden's third-place qualification (per FIFA's official determination); ⑥ the handicap line (Japan -0.5) and the Over/Under total line (O/U 2.5), with exact opening figures per the live pre-match prices; ⑦ Polymarket's exact single-match shares and the public betting % / social quantification were not found.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49155285/fifa-world-cup-2026-japan-vs-sweden-tv-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — Japan vs Sweden official preview (referee/lineups/coaches)</a> · <a href="https://www.rotowire.com/soccer/headlines/takefusa-kubo-injury-ruled-out-against-sweden-520669">RotoWire — Kubo confirmed absent</a> · <a href="https://www.goal.com/en/lists/world-cup-dejan-kulusevski-injury-tottenham-sweden-viktor-gyokeres-alexander-isak/bltd56651aa57664624">Goal — Kulusevski absent</a><br>
+      • <a href="https://www.espn.com/soccer/story/_/id/48775615/">ESPN — Mitoma out</a> · <a href="https://www.fifa.com/en/articles/japan-captain-endo-ruled-out-injury">FIFA — Endo withdraws</a> · <a href="https://www.aljazeera.com/sports/2026/6/21/japan-tunisia-4-0-fifa-world-cup-2026-ayase-ueda-daichi-kamada-junya-ito">Al Jazeera — Japan 4-0 Tunisia</a><br>
+      • <a href="https://www.skysports.com/football/news/12098/13543097/world-cup-2026-group-f-guide-fixtures-schedule-standings-and-odds-for-netherlands-japan-sweden-and-tunisia">Sky Sports — Group F picture/standings</a> · <a href="https://theanalyst.com/articles/japan-vs-sweden-prediction-world-cup-2026-match-preview">Opta Analyst — Supercomputer prediction</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/japan-vs-sweden-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aKsXj1J6aMIS/">Racing Post — Odds/backs Sweden</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/japan/world-cup-2026/preview/japan-vs-sweden-prediction-team-news-lineups_599879.html">Sports Mole — Prediction/lineups</a> · <a href="https://onefootball.com/en/news/japan-vs-sweden-prediction-world-cup-2026-preview-best-bets-43041515">OneFootball — Preview</a> · <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_F">Wikipedia — Group F/tie-break rules</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Match Analysis Hub · Data as of 2026-06-24 · Charts use verified data; radar chart is an analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#006aa7',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Japan win','Draw','Sweden win'],datasets:[{data:[49,26,22],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Implied prob. % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[56,44],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied prob. % (de-vigged, slight Over lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Netherlands','Japan','Sweden','Tunisia'],datasets:[{data:[4,4,3,0],backgroundColor:['#f0a04b',HT,SC,'#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'Points (before final round)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Wing/transition','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Japan',data:[7.5,6.5,7,7.5,6.5,7],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Sweden',data:[5,7,5.5,6.5,8,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

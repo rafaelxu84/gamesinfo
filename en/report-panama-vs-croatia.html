@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Match Deep Dive · Panama vs Croatia · 2026 World Cup Group L Matchday 2</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-panama-vs-croatia.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-panama-vs-croatia.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-panama-vs-croatia.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-panama-vs-croatia.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-panama-vs-croatia.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#3b6fb0;--sc:#d21034;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1d3a63,#7a1f2b);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#152138,#241318);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#9cc0ee;font-weight:600}td.sc{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-panama-vs-croatia.html" style="color:#92a0c2;text-decoration:none">中文</a> · <b style="color:#38bdf8">EN</b> · <a href="/es/report-panama-vs-croatia.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-panama-vs-croatia.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/en/index.html">← Back to Analysis Hub</a><br>
+  <span class="badge">🔮 Pre-Match Preview · 2026 World Cup · Group L Matchday 2 · A 0-points vs 0-points "early do-or-die"</span>
+  <span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 Full time · Panama 0-1 Croatia</span>
+  <h1>Panama vs Croatia</h1>
+  <div class="meta">23 June 2026 · Toronto, BMO Field · 19:00 ET · Group L (also in group: England, Ghana) · Matchday 2</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇵🇦 Panama</div><div class="rk">Managed by Christiansen · CONCACAF pragmatist · Lost 0-1 to Ghana in the opener (stoppage-time winner, 62% possession yet 0 goals) · 0 points</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇭🇷 Croatia</div><div class="rk">Managed by Dalić · Modrić's last dance · Lost 2-4 to England in the opener (overrun in the second half) · 0 points</div></div>
+  </div>
+
+  <!-- ===== Post-Match Review (daily-analysis written 06-24) ===== -->
+<section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+  <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> Post-Match Review · Tactics &amp; Data <span style="font-size:12px;color:var(--mut);font-weight:500">· Full time Panama 0-1 Croatia (HT 0-0) · Group L Matchday 2 · 06-23</span></h2>
+
+  <h4>① Score progression</h4>
+  <p style="font-size:13.5px">2018 World Cup runners-up Croatia edged Panama 1-0 in Toronto, restarting their qualification engine. In the <b>54th minute</b>, substitute <b>Ante Budimir</b> arrived at the far post to tap in a <b>Josip Stanišić</b> cross, his <b>only shot on target</b> of the match (shot xG 0.78, xGOT 0.99). Croatia controlled throughout but were not clinical, while Panama, after two straight defeats, were <b>knocked out</b>. Budimir decided the game within 45 minutes off the bench and earned a match-best Sofascore 7.8.</p>
+  <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 54' Budimir (substitute, Stanišić assist)｜Croatia 58% possession, 432 successful passes vs Panama's 278｜Panama eliminated</div>
+
+  <h4 style="margin-top:16px">② Key data comparison (Opta / Sofascore)</h4>
+  <table>
+    <tr><th>Metric</th><th>🇵🇦 Panama</th><th>🇭🇷 Croatia</th><th>Reading</th></tr>
+    <tr><td class="ht">Expected goals xG</td><td>0.62</td><td><b>1.66</b></td><td>Croatia's chance quality was higher; 1.66 xG for 1 goal — slightly inefficient but enough</td></tr>
+    <tr><td class="ht">Possession</td><td>42%</td><td><b>58%</b></td><td>Croatia controlled midfield, 432 successful passes vs 278</td></tr>
+    <tr><td class="ht">Shots</td><td>8</td><td>6</td><td>Panama had more shots, but Croatia's chances were better (higher xG)</td></tr>
+    <tr><td class="ht">Winning goal</td><td>—</td><td><b>Budimir (substitute, 1 shot on target)</b></td><td>A high-quality finish of 0.78 xG / 0.99 xGOT; the impact sub settled it with one strike</td></tr>
+  </table>
+  <div class="src" style="margin-top:8px">Data sources: <a href="https://www.sofascore.com/news/panama-0-1-croatia-budimir-seals-group-l-win">Sofascore — Panama 0-1 Croatia</a> · <a href="https://www.skysports.com/football/news/11095/13554940/world-cup-2026-panama-0-1-croatia-ante-budimir-scores-from-bench-to-kickstart-2018-finalists-tournament">Sky Sports — report</a> · <a href="https://www.espn.com/soccer/story/_/id/49157167/panama-croatia-live-world-cup-2026-latest-updates-commentary-score-result">ESPN — live report</a></div>
+
+  <h4 style="margin-top:16px">③ Tactical review</h4>
+  <div class="insight"><div class="who">Impact sub Budimir: the value of Croatia's bench depth</div>Budimir came on for 45 minutes and decided the game with just 1 shot on target (xGOT 0.99). <b>Transferable conclusion: Croatia have a game-changing substitute finishing option, and if the final round becomes a stalemate, the manager's substitution card is a hidden weapon.</b></div>
+  <div class="insight"><div class="who">Stanišić's cross is the key route to break down a packed defence</div>The winning goal came from Stanišić's precise cross finding the far post. <b>Transferable conclusion: against a deep block, Croatia's wide crossing + far-post arrivals are an effective breakthrough method, rather than central penetration alone.</b></div>
+  <div class="insight"><div class="who">Croatia 1.66 xG for 1 goal: still room to improve efficiency</div>Possession dominance but only one goal — a mediocre conversion. <b>Transferable conclusion: against stronger opposition in the final round, relying on a substitute rescue alone carries higher risk; the starting attack must improve its conversion.</b></div>
+  <div class="insight"><div class="who">Panama 8 shots, 0.62 xG, eliminated: insufficient chance quality</div>Panama actually had more shots, but mostly low-quality chances, and were eliminated after two straight defeats. <b>Transferable conclusion: CONCACAF teams facing European powers need to improve "shot-on-target quality" rather than shot quantity.</b></div>
+
+  <h4 style="margin-top:16px">④ Prediction ledger</h4>
+  <table>
+    <tr><th>Pre-match thesis</th><th>Outcome</th><th>Notes</th></tr>
+    <tr><td class="ht">Croatia win</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>1-0 narrow win, result delivered</td></tr>
+    <tr><td class="ht">Croatia control the game</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>58% possession, 1.66 xG advantage</td></tr>
+    <tr><td class="ht">Under lean</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Only 1 goal, Under 2.5 delivered</td></tr>
+    <tr><td class="ht">Panama elimination risk</td><td style="color:var(--good)"><b>✓ Delivered</b></td><td>Two straight defeats confirm elimination</td></tr>
+  </table>
+
+  <h4 style="margin-top:16px">⑤ Forward transfer</h4>
+  <div class="twocol">
+    <div>
+      <h4 style="color:#5fce8c">🇭🇷 Croatia · Next: Matchday 3 vs Ghana (key qualification game)</h4>
+      <ul class="watch">
+        <li><b>Wide crossing is the template</b>: against Ghana's deep block (who just held England to a 0-0), Stanišić-style crosses + far-post arrivals will again be key.</li>
+        <li><b>Starters' finishing</b>: relied on a substitute rescue this match; in the final round the starting attack must take chances earlier to avoid another stalemate.</li>
+        <li><b>Qualification destiny</b>: after the win their situation improved, and any non-defeat in the final round most likely sees them through (subject to other group results).</li>
+      </ul>
+    </div>
+    <div>
+      <h4 style="color:#7fa6e6">🇵🇦 Panama · Next: Matchday 3 vs England (eliminated / pride match)</h4>
+      <ul class="watch">
+        <li><b>Already eliminated</b>: out after two straight defeats; the final round vs England is a pride match.</li>
+        <li><b>Improve shot-on-target quality</b>: 8 shots for just 0.62 xG this match — they need better chance creation rather than aimless long-range efforts.</li>
+        <li><b>Defensive stability</b>: against England's strong possession, the organisation of their low block is the key to leaving with dignity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <div class="summary">
+    <h3>📋 Quick Summary (Read This First)</h3>
+    <p class="lead">This is an <b>"early do-or-die" with both sides on 0 points, where a loss means near-elimination</b>: Panama lost <b>0-1 to a Ghana stoppage-time winner</b> in the opener (62% possession, 502 passes yet 0.75 xG, Martínez missed a golden chance, no goal all game), while Croatia <b>lost 2-4 to England</b> (2-2 at the break, completely overrun in the second half with xG 1.46 to 0.12, Kovačić a substitute, Modrić conceded a penalty and was withdrawn on 58 minutes). Group L points before Matchday 2: England 3 (+2), Ghana 3 (+1), Panama 0 (-1), Croatia 0 (-2) — a direct duel between the two bottom teams, with the loser essentially eliminated early. The odds clearly favour Croatia: Croatia win around <b>1.49</b> (de-vigged implied ≈62%), draw <b>3.86</b> (≈24%), Panama win <b>6.84</b> (≈14%). The real talking points: ① <b>can Croatia convert possession into box threat</b> (carrying over the weakness of a 1-8 corner deficit and only 3 shots inside the box vs England); ② <b>Panama's missing finishing point</b> (still scoreless at this World Cup, lacking a finisher who can prise open a packed defence); ③ <b>Modrić's fitness management</b> (40 years old, only 60 minutes in the opener, possibly his 200th cap here). Base scenario: <b>Croatia patiently control possession and finally win narrowly on individual quality (1-0 / 2-0 / 2-1)</b>; Panama seek a glimmer via disciplined defending + counters/set pieces. Market Heat Index ≈ 2/5 (consensus leans Croatia but the sentiment is clean).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Croatia implied win prob. (de-vigged)</div><div class="v" style="color:#f08a82">≈62%</div></div>
+      <div class="key"><div class="k">Panama implied win prob. (de-vigged)</div><div class="v" style="color:#7fa6e6">≈14%</div></div>
+      <div class="key"><div class="k">Panama goals this tournament</div><div class="v" style="color:var(--warn)">0 goals</div></div>
+      <div class="key"><div class="k">Market Heat Index</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Croatia's "possession-to-box-threat" weakness (carried over from last match)</b>: a 1-8 corner deficit vs England, only 3 shots inside the box, full-match xG 0.53 — Croatia's two goals both came from open-play moments of inspiration (Sučić through-ball, Perišić assist) rather than set pieces. Against Panama's deep block, whether they can convert possession into box touches is the key to breaking through (affecting first-goal timing / totals).</li>
+      <li><b>Panama's "on top but no goals" weakness (carried over from last match)</b>: 62% possession, 502 passes, 12 shots yet only 0.75 xG against Ghana, Martínez missed a golden chance, scoreless at this World Cup so far — lacking a finishing point who can prise open a packed defence with a through-ball or individual ability. Against Croatia, another lack of finishing risks replaying "ineffective possession".</li>
+      <li><b>Modrić's fitness management (carried over from last match)</b>: 40-year-old Modrić was withdrawn after just 60 minutes in the opener; his minutes are limited this match, possibly his 200th cap — his time on the pitch and ability to lift the midfield tempo are the key variables for Croatia's control efficiency.</li>
+      <li><b>Carlos Harvey suspension risk</b>: Panama midfielder Harvey was already booked in the opener; another yellow here means a suspension for the final round — this would limit his intensity in midfield duels, a discipline concern for Panama.</li>
+    </ul>
+  </div>
+
+  <!-- Key Match News -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Key Match News <span style="font-size:12px;color:var(--mut);font-weight:500">· Core Module · Sourced + Why It Matters</span></h2>
+    <div class="sub">First-hand information and form signals affecting this fixture, explained item-by-item for how each changes the tactics or result (including carry-over items from both teams' last match + multi-source verification of key players' availability)</div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Croatia · Carried over from last match · Possession not converting to box threat + Modrić's fitness <span style="color:var(--mut);font-weight:400">· England-match review transfer · 2026-06-17</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Croatia lost 2-4 to England in the opener, <b>overrun in the second half (xG 1.46 to 0.12, corners 1-8)</b>; Modrić withdrawn on 60 minutes</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the England-match review: after a 2-2 first half, Croatia were completely overrun by England in the second (box touches 12-1, corners 5-0). Both goals came from high-quality moments (Sučić vertical through-ball + Perišić wide assist), <b>not set pieces — they were completely outdone on corners 1-8 and had only 3 shots inside the box</b>. Modrić (40) was withdrawn on 58 minutes, a fitness-management signal. This match against Panama's low block, Croatia must convert possession into box touches, rediscover their efficiency in front of goal, and manage Modrić's minutes well.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: The attack/defence roles reverse this match — Croatia go from being "the team overrun" vs England to being "the attacking side" vs Panama. But their Matchday-1 weakness of "low possession-to-box-threat conversion" is exactly what Panama's deep block most wants to exploit. If Croatia struggle to break through, the first-goal timing is delayed, the draw/under probability rises, and the handicap (-1) comes under pressure to land.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/will-vuskovic-start-predicted-croatia-xi-vs-panama_599760.html" style="color:var(--accent)">Sports Mole — Croatia predicted XI / team news</a> · <a href="https://www.croatiaweek.com/croatia-dalic-lineup-changes-panama-toronto-world-cup/" style="color:var(--accent)">Croatia Week — Dalić formation tweak</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--ht);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#9cc0ee;font-weight:700">Panama · Carried over from last match · On top but no goals + missing finishing point <span style="color:var(--mut);font-weight:400">· Ghana-match review transfer · 2026-06-18</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Panama lost 0-1 to Ghana in the opener, <b>62% possession, 502 passes yet 0.75 xG, beaten by a stoppage-time winner</b>; scoreless at this World Cup so far</div>
+      <p style="font-size:13.5px">Carrying over the preview transfer from the Ghana-match review: Panama dominated the play with 62% possession, 502 successful passes and 12 shots, but managed only 0.75 xG, <b>Cristian Martínez missed a golden chance</b>, and they were finally beaten by a Ghana substitute in the 90+5' — <b>scoreless</b> at this World Cup so far. Ismael Díaz coming on for 28 minutes with 2 shots on target and 0.31 xG was a bright spot. Two big weaknesses must be fixed: <b>the lack of a finishing point who can prise open a packed defence</b>, and converting possession into box efficiency. Midfield linchpin Carrasquilla (groin injury) missed the opener and may make the bench this match. <span style="color:var(--warn)">[Whether Carrasquilla makes the squad/plays · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Panama's foundation is organisational discipline + counters, but in the opener they were forced to take the ball and build without finding a way through. Against Croatia, if Croatia cede some possession, Panama's finishing weakness is amplified again; conversely, if Croatia push up, Panama's counters/set pieces (Murillo/Bárcenas) are their true scoring route. This is the crux of "can Panama score their first-ever World Cup goal" and the upset probability.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/preview/panama-vs-croatia-prediction-team-news-lineups_599736.html" style="color:var(--accent)">Sports Mole — Panama preview / team news</a> · <a href="https://www.goal.com/en/news/panama-croatia-world-cup-preview/blt39aad5317bdcdba7" style="color:var(--accent)">Goal — preview</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#f08a82;font-weight:700">Croatia · Key players' availability (multi-source verified) <span style="color:var(--mut);font-weight:400">· Sports Mole · Croatia Week · Goal · 06-20→06-22</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Dalić ditches the back three, <b>reverts to 4-3-3</b>: Kovačić returns to the XI, Budimir replaces Musa, Vušković may be dropped, Modrić time-limited</div>
+      <p style="font-size:13.5px"><b>Facts (multi-source agreement)</b>: ① Several outlets (Sports Mole / Croatia Week / Goal) report Dalić will <b>abandon the back three used against England</b> and revert to a back four, with young centre-back <b>Luka Vušković (better suited to a back three) possibly dropped from the XI as a result</b>; ② <b>Gvardiol shifts to left back</b>, Stanišić at right back; ③ <b>Kovačić returns to the starting midfield</b> (a substitute in the opener); ④ up front, <b>Budimir is expected to replace Musa</b>, who scored in the opener, with Kramarić in the XI in some predictions (role TBC); ⑤ <b>Modrić</b>'s fitness is being managed — he played only around 60 minutes vs England and is expected to be used in a limited capacity again here, possibly his <b>200th</b> cap. As of writing, the Vatreni have no clear public injury/suspension data. <span style="color:var(--warn)">[Official XI per the pre-match FIFA team sheet; Vušković/Kramarić/Budimir selection · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Kovačić's return directly strengthens Croatia's midfield ball progression and control (vs England he was a sub and the midfield was overrun) — exactly the "break-down" organisation Croatia need against Panama's low block. Budimir, an aerial focal point, better suits crossing/set-piece play, fitting the script that "an aerial bombardment is needed against Panama's bunker". Reverting to a back four adds numbers in attack in an attacking posture. These tweaks overall <b>favour Croatia's breakthrough efficiency</b>.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/will-vuskovic-start-predicted-croatia-xi-vs-panama_599760.html" style="color:var(--accent)">Sports Mole — Vušković dropped / 4-3-3</a> · <a href="https://www.croatiaweek.com/croatia-dalic-lineup-changes-panama-toronto-world-cup/" style="color:var(--accent)">Croatia Week — Dalić formation tweak</a> · <a href="https://www.goal.com/en/news/panama-croatia-world-cup-preview/blt39aad5317bdcdba7" style="color:var(--accent)">Goal — preview / Modrić limited</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Panama · Key players' availability (multi-source verified) <span style="color:var(--mut);font-weight:400">· Sports Mole · Racing Post · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Midfielder <b>Carlos Harvey suspension risk</b>; organising linchpin <b>Carrasquilla (groin injury) may return to the bench</b></div>
+      <p style="font-size:13.5px"><b>Facts (multi-source agreement)</b>: ① Panama midfielder <b>Carlos Harvey</b> picked up a <b>yellow card</b> in the late, heated scenes against Ghana in the opener, and another yellow here would mean a <b>suspension for the final round</b> — he was excellent against Ghana, and this suspension risk will affect how hard he can compete; ② midfield organising linchpin <b>Adalberto Carrasquilla (groin strain)</b> missed the opener, and several outlets say he <b>may make the bench this match</b>, though a start is in doubt; ③ Panama are highly likely to keep the pragmatic 3-4-3 / 4-4-2 structure from the opener, with Mosquera in goal, Murillo/Córdoba leading the defence, and Bárcenas as captain and organiser. <span style="color:var(--warn)">[Carrasquilla's minutes, whether Harvey starts/is protected · TBC]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: Harvey's suspension risk means Panama may need to "hold back" in midfield duels, weakening their intensity in choking Croatia's midfield; if Carrasquilla can feature (even off the bench), he is Panama's scarce organiser who can "break down a packed defence with a through-ball/individual ability" — exactly addressing the finishing weakness exposed in the opener. Both affect whether Panama can drag the game into a low-scoring narrow contest and chase an upset.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/predicted-lineups/carlos-harvey-ban-predicted-panama-xi-vs-croatia_599759.html" style="color:var(--accent)">Sports Mole — Harvey suspension risk / Panama predicted XI</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/panama-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZnLU5O1Zsqe/" style="color:var(--accent)">Racing Post — team news / odds</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Venue / Match referee announced <span style="color:var(--mut);font-weight:400">· Dailysports · ESPN · 06-21</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Referee confirmed: Gabonese official <b>Pierre Atcho</b> to take charge; the match is at Toronto's BMO Field (open-air)</div>
+      <p style="font-size:13.5px">Multiple sources (Dailysports, the ESPN referee list, Wikipedia) confirm FIFA has appointed Gabonese official <b>Pierre Atcho</b> for this Group L Matchday 2 game, with compatriots Boris Ditsoga and Amos Abeigne as assistants and Khalid Al Turais (Saudi Arabia) as fourth official. Atcho has been on the FIFA international list since 2018 and has officiated AFCON 2023/2025 knockout matches, CAF Confederation Cup/Super Cup finals and the U17 World Cup — so he has <b>continental-tournament samples but no senior World Cup single-match sample</b>. The match is at Toronto's BMO Field (open-air).</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Why it matters</b>: In this game with a quality gap but where Panama will compete physically, the refereeing value lies mainly in cards/penalties: Panama's CONCACAF-style physical duels + Harvey's suspension risk, combined with Atcho's relatively high yellow-card average (African-competition sample ≈3.4–3.6 yellows/match), make the total cards and the penalty threshold for box grappling the points to watch. See the referee module below.</div>
+      <div style="font-size:12px;margin-top:6px">Sources: <a href="https://dailysports.net/news/gabonese-referee-pierre-atcho-will-take-charge-of-the-panama-croatia-match-at-the-world-cup/" style="color:var(--accent)">Dailysports — Atcho appointment announced</a> · <a href="https://en.wikipedia.org/wiki/Pierre_Atcho" style="color:var(--accent)">Wikipedia — Atcho profile</a></div>
+    </div>
+  </section>
+
+  <!-- Data Panel -->
+  <section>
+    <h2><span class="n">1</span> Data Panel (Core)</h2>
+    <div class="sub">1X2 implied probability (de-vigged) · Group L picture before Matchday 2 · totals market · overall strength profile — all charts use verified / sourced data</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 implied probability (de-vigged, derived from decimal odds)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Over / Under 2.5 implied probability (market leans Under)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Group L points before Matchday 2 (after Matchday 1)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Overall strength profile (analyst assessment 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Key Stats Comparison</h4>
+    <table>
+      <tr><th>Metric</th><th>🇵🇦 Panama</th><th>🇭🇷 Croatia</th></tr>
+      <tr><td>Opening-match result</td><td class="ht">0-1 loss vs Ghana (stoppage-time winner, 62% possession, 0 goals)</td><td class="sc">2-4 loss vs England (2-2 at the break, overrun in the second half)</td></tr>
+      <tr><td>Group L points before Matchday 2</td><td colspan="2">England 3 (+2) · Ghana 3 (+1) · Panama 0 (-1) · Croatia 0 (-2) — both Panama and Croatia on 0, the loser near-eliminated</td></tr>
+      <tr><td>Head coach</td><td class="ht">Thomas Christiansen (Danish/Spanish)</td><td class="sc">Zlatko Dalić</td></tr>
+      <tr><td>Key players</td><td class="ht">Bárcenas(C), Murillo, Carrasquilla (injured), I. Díaz</td><td class="sc">Modrić(C), Kovačić, Gvardiol, Perišić, Baturina</td></tr>
+      <tr><td>Match talking points / questions</td><td class="ht">Can they score their first-ever World Cup goal; finishing point; Harvey's yellow</td><td class="sc">Possession-to-box-threat; Modrić's fitness; breakdown efficiency</td></tr>
+      <tr><td>Last two major tournaments</td><td class="ht">Gold Cup 2023 runners-up · Copa América 2024 group exit · WC 2018 lost all three</td><td class="sc">World Cup 2022 third place · Euro 2024 group exit</td></tr>
+      <tr><td>1X2 odds (decimal)</td><td class="ht">Win 6.84 (implied ≈14%)</td><td class="sc">Win 1.49 (≈62%) · Draw 3.86 (≈24%)</td></tr>
+      <tr><td>Over / Under 2.5</td><td colspan="2" class="sc">The market leans slightly toward <b>Under 2.5</b> (Under -130 / Over +105); the core markets are the Croatia handicap (-1) and whether Panama can score</td></tr>
+    </table>
+    <div class="note">📌 Probabilities are the de-vigged implied probabilities from decimal odds (≈62/24/14, then normalised). Odds source: bet365 (Croatia 1.49 / -188, draw 3.86 / +300, Panama 6.84 / +550); totals Under 2.5 around -130 / Over 2.5 around +105. The handicap is around Croatia -1; specific odds per the real-time pre-match line. For analysis only — not betting advice.</div>
+  </section>
+
+  <!-- Deep Data · Expected Metrics -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Deep Data · Expected Metrics <span style="font-size:12px;color:var(--mut);font-weight:500">· Historical average vs this tournament's actual values · Underlying quality signals · Sourced</span></h2>
+    <div class="sub">Core method: compare each team's <b>historical baseline (last two major tournaments / qualifying / friendlies)</b> against <b>this tournament's actual values (Matchday 1)</b>, item by item. National-team public xG samples are limited; missing items are marked "TBC" — never fabricated.</div>
+
+    <h4>① Core: historical average vs this tournament's actual (team-by-team)</h4>
+    <table>
+      <tr><th>Team / metric</th><th>Historical baseline (source sample)</th><th>This tournament's actual (Matchday 1)</th><th>Delta &amp; reading</th></tr>
+      <tr><td class="sc">🇭🇷 Croatia · Attack</td><td class="sc">World Cup 2022 third-place-level midfield control, via Modrić/Kovačić organisation + wide supply</td><td class="sc">Matchday 1: <b>2 goals</b> vs England (open-play moments), but corners 1-8, only 3 shots inside the box</td><td><b>Partly matches</b>: can score on individual quality, but <b>possession-to-box-threat and set pieces completely failed</b> — must be fixed against a deep-block Panama</td></tr>
+      <tr><td class="sc">🇭🇷 Croatia · Defence</td><td class="sc">Composed at major tournaments, but the Euro 2024 group exit exposed declining fitness/duelling</td><td class="sc">Matchday 1: conceded <b>4</b> (crushed by England in the second half, allowed only 0.53 xG yet conceded 2 with some luck)</td><td><b>Below</b> historical: a structural second-half collapse; but against Panama (firepower far below England) defensive pressure plummets</td></tr>
+      <tr><td class="ht">🇵🇦 Panama · Attack</td><td class="ht">Gold Cup 2023 runners-up via cup resilience; limited attacking output, reliant on counters/set pieces</td><td class="ht">Matchday 1: <b>0 goals</b>, 62% possession and 502 passes yet 0.75 xG, missed a golden chance</td><td><b>Far below</b> requirement: possession dominance yet "ineffective", <b>lacking a finisher to prise open a packed defence</b>, scoreless at this World Cup</td></tr>
+      <tr><td class="ht">🇵🇦 Panama · Defence</td><td class="ht">Foundation is a low bunker of organisational discipline + physical duels</td><td class="ht">Matchday 1: conceded 1 (stoppage-time winner), defensive discipline in place over 90 minutes</td><td><b>Continues</b> their strength: only 1 goal from 0.75 xG over 90 minutes — their only asset for an upset</td></tr>
+    </table>
+    <div class="note">📌 <b>Actual vs historical read</b>: Croatia's attack "can score but is inefficient and set pieces failed", defence "crushed by a strong side but little pressure against a weak one"; Panama's attack <b>far below requirement</b> (scoreless), defence <b>continues its discipline</b>. The deep data aligns with the thesis of "Croatia have possession dominance but breakdown efficiency is key, Panama chase points via the bunker + counters". Sources: Opta Analyst · Sofascore (Matchday 1 xG) · FIFA/team-history major-tournament records. For analysis only — not betting advice.</div>
+
+    <h4>② This match's projection &amp; Opta calibration</h4>
+    <table>
+      <tr><td>Model projected xG for this match (magnitude)</td><td class="ht">Panama ≈0.7</td><td class="sc">Croatia ≈1.6</td><td>Croatia ahead but no rout; combined ≈2.3 sits on the Under 2.5 side, echoing the market's Under lean</td></tr>
+      <tr><td>Opta Power Ranking / supercomputer</td><td colspan="2" class="sc">Supercomputer 25,000 simulations: Croatia qualification probability <b>76.9%</b> (pre-season model), Panama only <b>40.0%</b>; Croatia are clear favourites this match, but both teams on 0 points make this the qualification watershed</td><td>After opponent-strength calibration Croatia have the edge on paper and in pedigree (Panama are the weakest tier in Group L)</td></tr>
+      <tr><td>Pressing PPDA · xT · field tilt</td><td colspan="2" class="sc">National-team public data is limited <span style="color:var(--warn)">(TBC)</span> — qualitatively: Croatia's field tilt will press into Panama's half with possession dominance, while Panama lean low + counter</td><td><b>Trap reminder</b>: Croatia most likely dominate possession, but if their "possession→box-threat" conversion (the Matchday-1 weakness) does not improve, the handicap (-1) and the over have a risk of failing</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Deep-metric quick reference (what these "xG-like" metrics each represent)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>: the total quality of shooting chances; stripping out penalties better reflects open-play creativity.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>: the quality of chances the opponent creates against you; measures true defensive level.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>: xG−xGA, the single best proxy for overall quality.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>: the quality of each shot — a low value = many long-range efforts / poor chances.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>: passes allowed per defensive action; the lower the value the more aggressive the press.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>: share of final-third touches; measures territorial tilt rather than raw possession.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Note: this module prioritises public sources such as Opta/FotMob/Sofascore/Understat; national teams have limited public samples for granular metrics like PPDA/xT/field tilt, and any missing items are marked "TBC" — figures are never fabricated.</div>
+  </section>
+
+  <!-- Betting Market Heat -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Betting Market Heat <span style="font-size:12px;color:var(--mut);font-weight:500">· Expert picks / Odds / Money flow / Sentiment</span></h2>
+    <div class="sub">Croatia is clearly favoured (de-vigged ≈62%); the genuine disagreement is over "handicap size (-0.5 vs -1) + whether Panama can score + totals"; consensus leans Croatia but the sentiment is clean</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Market Heat Index</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · Leans Croatia, clean sentiment</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Croatia are clear favourites (de-vigged ≈62%), but because of their 2-4 opening rout + Panama's bunker, the win price (1.49) is not an ultra-short line. The value is concentrated in the <b>handicap size (-0.5 vs -1), whether Panama score (first goal / both teams to score) and the totals (the Under is sharper)</b>. Modrić's "last dance" is the sentiment-driving angle.</div>
+    </div>
+
+    <h4>① Expert pick aggregation (direction: Croatia win majority · Draw next · Panama win minority)</h4>
+    <table>
+      <tr><th>Who</th><th>Profile</th><th>View / Pick</th></tr>
+      <tr><td>Racing Post</td><td>Established UK outlet</td><td>Croatia win (a 5-2 bet builder), focused on Croatia's individual quality + the handicap, noting patience is needed</td></tr>
+      <tr><td>Sports Mole</td><td>Prediction media</td><td>Croatia win; Panama hard to break down, but Croatia need patience to crack the packed defence</td></tr>
+      <tr><td>Goal.com</td><td>Pre-match preview</td><td>Croatia are clear favourites (-180), ahead on pedigree and finishing</td></tr>
+      <tr><td>Squawka</td><td>Data media</td><td>Croatia dominate possession; Panama have limited open-play chances</td></tr>
+      <tr><td>Juve FC / TheSportsRush</td><td>Prediction media</td><td>Croatia win + low score; Panama's scoreless concern is flagged</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Overheating signal (low)</b>: the result direction leans Croatia, but Panama's bunker + Croatia's opening rout keep the win price from being ultra-short — this is reasonable consensus, not overheating. The real disagreement is over the <b>handicap size (-0.5 vs -1), whether Panama score and the totals</b>. Modrić's record / "last dance" is a traffic angle, not a source of money movement.</div>
+
+    <h4 style="margin-top:20px">② Odds movement (decimal)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Market</th><th>Croatia win</th><th>Reading</th></tr>
+      <tr><td>Opening (multi-book composite)</td><td>1X2</td><td class="sc">≈1.45–1.50</td><td>Croatia clear favourites; draw ≈3.80 / Panama ≈6.50–7.00</td></tr>
+      <tr><td>06-21 cutoff</td><td>bet365 / multi-platform</td><td class="sc">1.49 (-188)</td><td>Croatia's short win price is basically stable (both on 0 points, priced on Croatia's pedigree)</td></tr>
+      <tr><td>06-21</td><td>Over / Under</td><td colspan="2" class="sc">The market leans slightly toward <b>Under 2.5</b> (Under -130 / Over +105) — Panama's low output + Croatia's efficiency concern</td></tr>
+      <tr><td>Handicap (AH reference)</td><td>Croatia -0.5 / -1</td><td colspan="2" class="sc">The Croatia -1 angle — specific odds per the real-time line</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b Line positioning &amp; movement trend (open → now)</h4>
+    <table>
+      <tr><th>Snapshot</th><th>Line / odds</th><th>Positioning change · trigger</th></tr>
+      <tr><td>Opening line (days before)</td><td class="sc">Croatia win ≈1.45; handicap -1</td><td>Priced on "World Cup third-place pedigree vs a weak CONCACAF side", the opening line already pressed Croatia into clear favourites at -1</td></tr>
+      <tr><td>Open (post-Matchday-1 repricing)</td><td class="sc">Croatia win 1.49; handicap -0.5/-1 both present</td><td><b>Repricing from both teams' Matchday 1</b>: Croatia's 2-4 exposed a second-half collapse and the possession-conversion weakness, Panama's 0-1 showed a bunker + scoreless → the angle for the handicap shrinking toward -0.5 strengthens (Croatia win but hard to win big), and the Under line gains slight favour</td></tr>
+      <tr><td>Current line (06-21→now)</td><td class="sc">Croatia win 1.49; Under 2.5 slightly hot / handicap -0.5 vs -1 in tug-of-war</td><td>The 1X2 is basically locked (Croatia clearly favoured); the most active price discovery is on the <b>handicap (-0.5 vs -1) and whether Panama score</b> — "Croatia's breakdown efficiency + Modrić's fitness" is the key variable for whether the deeper handicap lands</td></tr>
+    </table>
+    <div class="note">📌 <b>Market positioning read</b>: this match's odds leaned Croatia from the opening line (≈1.45, -1 handicap), but <b>Croatia's 2-4 second-half collapse + Panama's 0-1 bunker</b> actually lowered confidence slightly in the deeper handicap (-1) and strengthened the Under angle (Croatia win but not necessarily by a lot). The 1X2 value is limited (pricing is near-saturated); the most information-rich are the <b>Croatia handicap (-0.5/-1), whether Panama score and the totals</b> — the risk point is Croatia struggling to break through + Modrić time-limited compressing the winning margin. Opening ranges per each platform. For analysis only — not betting advice.</div>
+
+    <h4 style="margin-top:20px">③ Prediction market &amp; ④ Sentiment</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (aggregate)</b>: bookmaker de-vig gives Croatia about <b>62%</b>, draw 24%, Panama 14%; the prediction markets agree in direction (Croatia clearly ahead). <span style="color:var(--warn)">[This single match's volume and momentum breakdown not separately found publicly · TBC]</span></li>
+      <li><b>Sentiment focus ①</b>: <b>Modrić's "last dance"</b> (40 years old, possibly his 200th cap) is this match's biggest traffic angle.</li>
+      <li><b>Sentiment focus ②</b>: <b>the "double 0-point do-or-die"</b> — a direct duel between the two bottom teams where the loser is essentially out, a tense narrative.</li>
+      <li><b>Panama narrative</b>: Gold Cup 2023 runners-up pedigree + a pragmatic-defence reputation draw attention, but scoreless at this World Cup so far and lacking a finishing point limit outside confidence in their upset chances.</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Overall read</b>: the result direction leans Croatia, with bookmakers and prediction markets aligned (≈62%), Heat Index <b>2/5</b>. The traffic comes from <b>Modrić's last dance + the double 0-point do-or-die</b> rather than the 1X2; the most information-rich are the <b>Croatia handicap (-0.5/-1), whether Panama score and the totals</b>. For analysis only — not betting advice.</div>
+    <div class="src" style="margin-top:10px">Sources: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/panama-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZnLU5O1Zsqe/">Racing Post — odds/betting</a> · <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/preview/panama-vs-croatia-prediction-team-news-lineups_599736.html">Sports Mole — preview</a> · <a href="https://www.goal.com/en/news/panama-croatia-world-cup-preview/blt39aad5317bdcdba7">Goal — preview</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-panama-vs-croatia-06-23-26-world-cup-2026/">Squawka — preview</a></div>
+  </section>
+
+  <!-- Referee -->
+  <section>
+    <h2><span class="n">2</span> Match Referee &amp; Officiating Environment</h2>
+    <div class="note">✅ <b>Confirmed</b>: the referee for this match is Gabonese official <b>Pierre Atcho</b> (FIFA international referee since 2018), with assistants Boris Ditsoga and Amos Abeigne (both Gabonese) and fourth official Khalid Al Turais (Saudi Arabia). Sources: Dailysports, Wikipedia, ESPN referee list. <span style="color:var(--warn)">[This match's specific VAR setup · TBC]</span></div>
+    <h4>Officiating strictness + this tournament's uniform new rules (actual data + qualitative)</h4>
+    <ul class="cl">
+      <li><b>Officiating profile</b>: Atcho comes from the African (CAF) officiating system and has officiated AFCON 2023/2025 knockout matches (including the 2025 Senegal vs Egypt semi-final), CAF Confederation Cup/Super Cup finals and the U17 World Cup — so he has <b>continental-tournament and high-intensity match samples</b>. Public statistics show a relatively high yellow-card average (African-competition sample <b>≈3.46–3.63 yellows/match, around 0.11 reds/match</b>), with a moderate penalty-award frequency. <span style="color:var(--warn)">[No senior World Cup single-match sample; the above averages are from African/club competitions, so extrapolate with caution · TBC]</span></li>
+      <li><b>Officiating history with both teams</b>: no notable public officiating history with either Panama or Croatia, so no team bias to speak of.</li>
+      <li><b>This tournament's uniform new rules + environment signals</b>: 8-second goalkeeper hold, only the captain may speak to the referee, semi-automated offside; this tournament's officiating environment is strict (the opener already produced new-rule precedents such as a red card for a "covering-the-mouth celebration"). If Panama use plenty of physical duels/tactical fouls to intercept Croatia, accumulated yellows and box-penalty risk rise — Harvey's suspension risk in particular bears watching.</li>
+      <li><b>Actual impact on this match</b>: in a game with a quality gap but strong physicality, the refereeing value lies mainly in cards/penalties; Atcho's relatively high yellow average plus Panama's robust style make the total cards and the box-grappling decisions the points to watch. Given no World Cup single-match sample, the card markets should be viewed as a "tendency".</li>
+    </ul>
+    <div class="flag">⚠ <b>Refereeing analysis</b>: this match is "Croatia's possession-based attack vs Panama's low bunker + physical duels" — the refereeing value lies in cards/penalties: Panama's defenders/midfielders frequently fouling to halt Croatia's progress (accumulating fouls) and the penalty threshold for box grappling are the points to watch; Atcho's yellow average is relatively high (African-competition sample), but with <b>no senior World Cup single-match sample</b>, treat it as a tendency reference.</div>
+  </section>
+
+  <!-- Line-ups & key players -->
+  <section>
+    <h2><span class="n">3</span> Starting Line-ups &amp; Recent Form <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Predicted version · official version announced ~1 hour before kickoff</span></h2>
+    <div class="sub">Predicted XI (Sports Mole / ESPN projections, not official; official line-ups per the pre-match FIFA Match Centre · TBC)</div>
+    <h4>🇵🇦 Panama Predicted XI (3-4-3) · Christiansen</h4>
+    <div class="lineup">Mosquera; Ramos · Córdoba · Andrade; Murillo · Harvey · Bárcenas(C) · Blackman; C.Martínez · Waterman · J.L.Rodríguez</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="ht">Adalberto Carrasquilla</td><td>Midfield / organising linchpin</td><td>Panama's midfield conductor; groin injury, missed the opener, may return to the bench this match (TBC) — a scarce break-down organiser</td></tr>
+      <tr><td class="ht">Carlos Harvey</td><td>Midfielder</td><td>Excellent in the opener but already booked; another yellow here means a final-round suspension, so he must moderate his challenges</td></tr>
+      <tr><td class="ht">Ismael Díaz</td><td>Winger/Forward</td><td>Joint top scorer in the squad in qualifying, a counter/set-piece finishing point; came off the bench in the opener for 2 shots on target, 0.31 xG</td></tr>
+      <tr><td class="ht">Amir Murillo</td><td>Wing-back/Defender</td><td>The core of Panama's defence and right-side progression, two-way, a counter-attack starter</td></tr>
+    </table>
+    <h4>🇭🇷 Croatia Predicted XI (4-3-3) · Dalić</h4>
+    <div class="lineup">Livaković; Stanišić · Šutalo · Ćaleta-Car · Gvardiol; Modrić(C) · Kovačić · P.Sučić; Perišić · Budimir · Baturina</div>
+    <table>
+      <tr><th>Player</th><th>Position/Club</th><th>Recent / Notes</th></tr>
+      <tr><td class="sc">Luka Modrić (C)</td><td>Midfield / Captain</td><td>40 years old, played only 60 minutes in the opener before being withdrawn, fitness managed; possibly his 200th cap this match</td></tr>
+      <tr><td class="sc">Mateo Kovačić</td><td>Midfield / Manchester City</td><td>A substitute in the opener, returns to the XI this match — strengthens midfield ball progression and control, the key to breaking down a packed defence</td></tr>
+      <tr><td class="sc">Ante Budimir</td><td>Striker / focal point</td><td>Expected to replace Musa, who scored in the opener; an aerial focal point better suited to crossing/set-piece bombardment of Panama's bunker</td></tr>
+      <tr><td class="sc">Martin Baturina</td><td>Attacking midfielder / Como</td><td>The organising/creative core, rated 7.9 in the opener; the key creator supplying the front line</td></tr>
+    </table>
+    <div class="note">Line-up note: both predicted XIs are media analytical projections (Sports Mole / ESPN); <b>defer to the official pre-match team sheet · TBC</b>. Croatia reverting to 4-3-3 (Vušković possibly dropped, Gvardiol shifting to left back, Kovačić returning, Budimir replacing Musa, Kramarić's role TBC) and Panama's Carrasquilla minutes / Harvey selection are the key TBC variables.</div>
+  </section>
+
+  <!-- Tactics + coaches -->
+  <section>
+    <h2><span class="n">4</span> Tactical Style &amp; Head Coaches</h2>
+    <div class="sub">Every conclusion cross-references both teams' actual play and results across their last two major tournaments</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇵🇦 Panama · Thomas Christiansen</div>
+        <div class="role">3-4-3 / 4-4-2 pragmatism · organisational discipline + physical duels + counters, missing a finishing point</div>
+        <ul class="cl">
+          <li><b>Evidence from the last two major tournaments</b>: reaching the Gold Cup 2023 final as runners-up proves their <b>defensive organisation and cup resilience</b> are genuine strengths; but the Copa América 2024 group exit and WC 2018's three straight defeats (scoring against England only from a set piece) show that against stronger opponents their <b>attacking output is limited and they rely on set pieces for goals</b>. This tournament's 62% possession yet 0 goals in the opener is exactly the continuation of this chronic issue.</li>
+          <li>Cross-reference: this match Panama will most likely set up in a compact low block, compress Croatia's midfield space, disrupt the rhythm with physical duels, then seek chances via Murillo/Bárcenas counters and set pieces (Díaz/Waterman arriving) — exactly the basis of their run to the Gold Cup 2023 final.</li>
+          <li>This match's angle: the realistic goal is not an open possession contest but to <b>hold a low xG, ambush via one counter or set piece, and drag the game into a low-scoring narrow contest to chase an upset or protect a draw</b>; they must manage Harvey's yellow and avoid being prised open by Croatia's individual quality on the edge of the box.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇭🇷 Croatia · Zlatko Dalić</div>
+        <div class="role">4-3-3 midfield control + individual quality to break down packed defences, an ageing engine but deep pedigree</div>
+        <ul class="cl">
+          <li><b>Evidence from the last two major tournaments</b>: World Cup 2022 third place via Modrić/Kovačić-led midfield control and shoot-out resilience; but the Euro 2024 group exit without a single win (a 98th-minute equaliser from Italy) exposed a dual decline in fitness and breakdown efficiency. This tournament's 2-4 loss to England and second-half being overrun further confirm an ageing engine.</li>
+          <li>Cross-reference: against England Croatia were "the team overrun", but this match against Panama the attack/defence roles reverse and they become the attacking side — yet their Matchday-1 weakness of "possession-to-box-threat, set pieces completely failed (corners 1-8)" is exactly what Panama's low bunker most wants to exploit. Dalić reverting to 4-3-3, recalling Kovačić, and using the aerial Budimir is precisely to improve breakdown and set-piece efficiency.</li>
+          <li>This match's approach: Dalić will most likely let Modrić conduct on limited minutes, Kovačić control, Baturina supply, and Budimir/Perišić create aerial threats and crosses in the box and out wide; the realistic task is to <b>patiently break down the packed defence, convert possession into box touches, and avoid being ambushed by Panama's counter/set piece while struggling to score</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analyst insights -->
+  <section>
+    <h2><span class="n">5</span> Analyst Insights</h2>
+    <div class="insight"><div class="who">Sports Mole / Goal <small>· Pre-match preview</small></div>Croatia are clear favourites (-180), ahead on pedigree and finishing, but need patience to break down Panama's packed defence; if Panama's scoreless run and finishing weakness are not fixed, they will struggle to take points off Croatia.</div>
+    <div class="insight"><div class="who">Racing Post <small>· Betting media</small></div>Recommends a Croatia win + handicap angle, noting the game may be low-scoring and Croatia need patience; doubts the deeper handicap (-1) will land against Panama's bunker.</div>
+    <div class="insight"><div class="who">Opta supercomputer <small>· Market consensus</small></div>The pre-season model gives Croatia a 76.9% qualification probability and Panama 40.0%; but both teams on 0 points make this the qualification watershed, with the loser near-eliminated. Bookmaker de-vig (Croatia ≈62%) agrees in direction.</div>
+    <div class="insight"><div class="who">Composite · core uncertainty and traps <small>· Opta / Sofascore</small></div>The real uncertainty is <b>whether Croatia can convert possession into box threat and break down the packed defence</b>, and <b>whether Panama can score their first-ever World Cup goal / hold a low score</b>. ⚠ Trap reminder: Croatia struggling to break through + Modrić time-limited + Panama's bunker could compress the winning margin, giving the deeper handicap (-1) and the over a risk of failing — the one variable to watch.</div>
+  </section>
+
+  <!-- Overall assessment -->
+  <section>
+    <h2><span class="n">6</span> Overall Assessment &amp; TBC</h2>
+    <ul class="cl">
+      <li><b>Result tendency</b>: Croatia patiently controlling possession and winning narrowly on individual quality (1-0 / 2-0 / 2-1) is the base scenario; the draw (≈24%) and a Panama win (≈14%) are medium-to-small tail outcomes — Panama chasing points requires the low bunker holding + one counter/set-piece ambush + Croatia struggling to score all at once. The loser is essentially eliminated early, so both carry the pressure of "must take points".</li>
+      <li><b>Key men</b>: Kovačić (CRO/break-down organisation), Modrić (CRO/the last engine on limited minutes), Budimir (CRO/aerial box presence), Carrasquilla (PAN/scarce organiser, fitness TBC), Murillo + Díaz (PAN/counter and set-piece finishing).</li>
+      <li><b>Matchwinners</b>: this match's real talking point is <b>whether Croatia can convert possession into box threat and patiently crack Panama's bunker</b>, and <b>whether Panama can score their first-ever World Cup goal or hold a low score</b> — deciding the settlement of the handicap (-0.5/-1) and the totals.</li>
+      <li><b>Market view</b>: bookmakers and the supercomputer agree in direction (Croatia, ≈62%), with limited 1X2 value; the most information-rich are the <b>Croatia handicap (-0.5/-1), whether Panama score and the Under</b>. Heat Index 2/5 (traffic from Modrić's last dance + the double 0-point do-or-die).</li>
+    </ul>
+    <div class="flag">⚠ <b>TBC</b>: ① both teams' official XIs (~1 hour pre-match, FIFA Match Centre); ② Croatia's Vušković/Kramarić/Budimir selection, Modrić's minutes; ③ Panama's Carrasquilla minutes and whether Harvey starts/is protected; ④ Atcho's VAR setup for this match and a senior World Cup single-match card breakdown (no sample; the current averages are from African/club competitions); ⑤ Kalshi/Polymarket volume and momentum breakdown for this match; ⑥ the Asian handicap line (-0.5/-1) and the totals line — specific odds per the real-time pre-match market.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Sources</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49135852/panama-croatia-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — schedule/XI/referee/preview</a> · <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/preview/panama-vs-croatia-prediction-team-news-lineups_599736.html">Sports Mole — preview/team news</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/panama-vs-croatia-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aZnLU5O1Zsqe/">Racing Post — odds/team news/prediction</a><br>
+      • <a href="https://www.sportsmole.co.uk/football/croatia/world-cup-2026/predicted-lineups/will-vuskovic-start-predicted-croatia-xi-vs-panama_599760.html">Sports Mole — Croatia XI/Vušković/4-3-3</a> · <a href="https://www.sportsmole.co.uk/football/panama/world-cup-2026/predicted-lineups/carlos-harvey-ban-predicted-panama-xi-vs-croatia_599759.html">Sports Mole — Panama XI/Harvey suspension risk</a> · <a href="https://www.croatiaweek.com/croatia-dalic-lineup-changes-panama-toronto-world-cup/">Croatia Week — Dalić formation tweak</a><br>
+      • <a href="https://www.goal.com/en/news/panama-croatia-world-cup-preview/blt39aad5317bdcdba7">Goal — preview/Modrić limited</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-panama-vs-croatia-06-23-26-world-cup-2026/">Squawka — preview</a> · <a href="https://theanalyst.com/articles/world-cup-2026-group-l-predictions-preview">Opta Analyst — Group L supercomputer preview</a><br>
+      • <a href="https://dailysports.net/news/gabonese-referee-pierre-atcho-will-take-charge-of-the-panama-croatia-match-at-the-world-cup/">Dailysports — Atcho appointment announced</a> · <a href="https://en.wikipedia.org/wiki/Pierre_Atcho">Wikipedia — Atcho profile</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams">ESPN — World Cup referee list</a> · <a href="https://www.skysports.com/football/news/12098/13543108/world-cup-2026-group-l-guide-fixtures-schedule-standings-and-odds-for-england-croatia-ghana-and-panama">Sky Sports — Group L picture/standings</a>
+    </div>
+  </section>
+
+  <div class="foot">2026 World Cup Analysis Hub · Data as of 2026-06-22 · Charts use verified / sourced data, radar chart is analyst composite assessment · For analysis only — not betting advice</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#3b6fb0',SC='#d21034',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Croatia win','Draw','Panama win'],datasets:[{data:[62,24,14],backgroundColor:[SC,DR,HT],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'Implied probability % (de-vigged)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Over 2.5','Under 2.5'],datasets:[{data:[45,55],backgroundColor:[DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Implied probability % (de-vigged, slight Under lean)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['England','Ghana','Panama','Croatia'],datasets:[{data:[3,3,0,0],backgroundColor:['#f08a82','#1aa84a',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:4,title:{display:true,text:'Group L points before Matchday 2'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Defensive stability','Attacking finishing','Midfield control','Set pieces','Individual ceiling','Major-tournament experience'],
+  datasets:[
+   {label:'Panama',data:[7,4.5,5.5,6.5,5,6],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'Croatia',data:[6,6,7.5,6,7,8.5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 埃及 vs 伊朗 · 2026世界杯 G组末轮（埃及平局即出线、胜则争头名 · 伊朗须取胜才掌握主动）</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-egypt-vs-iran.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-egypt-vs-iran.html">
+<link rel="alternate" hreflang="es" href="https://pksport.net/es/report-egypt-vs-iran.html">
+<link rel="alternate" hreflang="pt" href="https://pksport.net/pt/report-egypt-vs-iran.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-egypt-vs-iran.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#bc002d;--sc:#239f40;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#bc002d,#063a73);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#1a0e16,#0e2030);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#e8788a;font-weight:600}td.sc{color:#6fd089;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="https://tipster-24.com/en/report-egypt-vs-iran.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="https://pksport.net/es/report-egypt-vs-iran.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="https://pksport.net/pt/report-egypt-vs-iran.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🔮 赛前前瞻 · 2026 世界杯 · G组末轮 · 埃及平局即出线 vs 须取胜方掌主动的伊朗</span><span class="badge" style="background:linear-gradient(90deg,#1d9e4b,#13632f);margin-left:6px">🏁 已完赛 · 埃及 1-1 伊朗</span>
+  <h1>埃及 vs 伊朗</h1>
+  <div class="meta">2026年6月26日 · 西雅图 Lumen Field · 约23:00 ET（北京时间 6/27 上午 11:00）· G组末轮（<b>同时进行：新西兰 vs 比利时 @温哥华 BC Place</b>）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#e8788a">🇪🇬 埃及</div><div class="rk">1-1 比利时 + 3-1 新西兰 · 4 分（净 +2、进 4）· G组榜首 · 平局即出线、胜则争头名 · Salah 领衔 · Fathy/Abdelmaguid 存疑</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#6fd089">🇮🇷 伊朗</div><div class="rk">2-2 新西兰 + 0-0 比利时 · 2 分（净 0）· 不败但两连平 · 须取胜方稳掌主动 · Taremi 领衔 · 队长 Hajisafi 停赛</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘（daily-analysis 写入 06-27） ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#141a2c,#161d2e)">
+    <h2><span class="n" style="background:var(--accent);color:#06121c">📊</span> 赛后复盘 · 技战术与数据 <span style="font-size:12px;color:var(--mut);font-weight:500">· 终场 埃及 1-1 伊朗（半场 1-1）· 06-26</span></h2>
+    <h4>① 比分进程</h4>
+    <p style="font-size:13.5px">西雅图 Lumen Field：一场开局闪电、尾声惊魂的 1-1。<b>埃及第 5 分钟（4:26）由 Mahmoud Saber 抢点一脚推射破门</b>——这是埃及世界杯队史最快进球；但伊朗几乎立刻回敬，<b>第 14 分钟（13:13）Ramin Rezaeian 扳平</b>，同样刷新伊朗世界杯队史最快进球纪录。此后伊朗踢得远比赛前判断更主动，全场制造出大量威胁，<b>终场前（93'）Shoja Khalilzadeh 一度将球捅入网窝，但 VAR 判定越位取消</b>，绝杀被吹。最终 1-1：<b>埃及凭这 1 分以小组次席（5 分）锁定晋级、淘汰赛对阵澳大利亚；比利时同晚 5-1 大胜新西兰、凭净胜球夺 G 组头名；伊朗 3 分列小组第三，出线与否须等"成绩较好第三名"的跨组比较（前景渺茫）；新西兰垫底出局</b>。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border-radius:8px;padding:8px 11px;margin:6px 0">⏱ 5' Saber（埃 · 队史最快 WC 进球 4:26）｜14' Rezaeian（伊 · 队史最快 WC 进球 13:13）｜93' Khalilzadeh 入球被 VAR 判越位取消（伊）· 半场 1-1</div>
+
+    <h4 style="margin-top:16px">② 核心数据对照（Opta / FIFA）</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇬 埃及</th><th>🇮🇷 伊朗</th><th>解读</th></tr>
+      <tr><td class="ht">预期进球 xG</td><td>0.81（15 射 / 3 正）</td><td><b>1.94</b>（13 射 / 4 正）</td><td>伊朗 <b>1.94 是其世界杯队史最高单场 xG</b>（超 1998 对美国的 1.88）——与赛前"伊朗无锋无创造"的判断相反，伊朗才是机会质量更高的一方，只是临门与运气（VAR）不站在它一边</td></tr>
+      <tr><td class="ht">控球</td><td><b>53%</b></td><td>36%</td><td>（另约 11% 争夺中）埃及控球占优，但把球权转化为高质量机会不如伊朗</td></tr>
+      <tr><td class="ht">射门 / 射正</td><td>15 / 3</td><td>13 / 4</td><td>双方射门量都不低，闷局判断部分落空；但仅 2 球入账，总进球仍走小</td></tr>
+      <tr><td class="ht">关键里程碑</td><td colspan="2"><b>埃及（4:26）与伊朗（13:13）双双刷新各自世界杯队史最快进球</b></td><td>开局 14 分钟内两度破门，是本届小组赛节奏最快的开场之一</td></tr>
+      <tr><td class="ht">争议判罚</td><td colspan="2"><b>93' Khalilzadeh 绝杀被 VAR 判越位取消</b></td><td>若进球有效伊朗将 2-1 取胜并极可能出线——VAR 一线之差直接改变了伊朗的命运</td></tr>
+    </table>
+    <div class="src" style="margin-top:8px">数据来源：<a href="https://theanalyst.com/articles/egypt-vs-iran-stats-fifa-world-cup-2026">Opta Analyst — Egypt 1-1 Iran Stats（xG 0.81 vs 1.94 · 控球 53/36 · 射门 15/13）</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021479">FIFA Match Centre — Result & Stats</a> · <a href="https://www.skysports.com/football/egypt-vs-iran/report/549826">Sky Sports — 战报（Khalilzadeh 越位被吹）</a></div>
+
+    <h4 style="margin-top:16px">③ 技战术复盘</h4>
+    <div class="insight"><div class="who">"动机差"剧本兑现一半：埃及拿到平局即满足，主动收</div>赛前判断"求胜烈度倒向伊朗、埃及平局即出线"。结果<b>埃及取得 1 分即锁定次席晋级</b>，下半场明显以稳守、控制节奏为先——这部分剧本兑现。但代价是把场面与机会让给了伊朗。</div>
+    <div class="insight"><div class="who">最大修正：伊朗并非"无锋无创造"，1.94 xG 是队史最高</div>赛前低估了伊朗的进攻产出。本场<b>伊朗 13 射 4 正、xG 高达 1.94（队史世界杯最高）</b>，并在补时打入一记被 VAR 取消的"绝杀"。伊朗输在<b>把握机会与运气</b>，而非创造力枯竭——这是对赛前判断的诚实纠偏。</div>
+    <div class="insight"><div class="who">Salah 个人记录未刷新——埃及破门来自 Saber</div>赛前看点之一是 Salah 能否再进 1 球超越 Hossam Hassan 成埃及队史第一射手。本场<b>埃及的唯一进球来自 Mahmoud Saber 的抢点</b>，Salah 未能改写纪录，但埃及靠团队拿到了出线所需的分数。</div>
+    <div class="insight"><div class="who">闷球判断部分落空：射门量高，但总进球仍走小</div>赛前重度押"Under 2.5、半场平局"。结果<b>全场 2 球、Under 2.5 命中</b>，但双方合计 28 射的高出手量说明这并非沉闷对攻——是"高强度但低效"的一场，靠门将与 VAR 把比分压在低位。</div>
+
+    <h4 style="margin-top:16px">④ 预测对账</h4>
+    <table>
+      <tr><th>赛前主线</th><th>结果</th><th>说明</th></tr>
+      <tr><td class="ht">埃及平局即出线（基准剧本）</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>1-1 平局，埃及以次席（5 分）锁定晋级，淘汰赛对阵澳大利亚</td></tr>
+      <tr><td class="ht">Under 2.5 重度偏小</td><td style="color:var(--good)"><b>✓ 命中</b></td><td>全场仅 2 球，Under 2.5 命中（但出手量并不低）</td></tr>
+      <tr><td class="ht">"伊朗无锋无创造、想压上却没货"</td><td style="color:var(--bad)"><b>✗ 偏差</b></td><td>伊朗 13 射 / xG 1.94（队史最高）+ 被吹绝杀——创造力被明显低估，输在效率与运气</td></tr>
+      <tr><td class="ht">伊朗须取胜方掌主动</td><td style="color:var(--warn)"><b>~ 未兑现</b></td><td>伊朗只取得平局、3 分列第三，出线已不在自己手中（前景渺茫）</td></tr>
+      <tr><td class="ht">Salah 刷新埃及队史射手纪录看点</td><td style="color:var(--bad)"><b>✗ 未发生</b></td><td>埃及进球来自 Saber，Salah 未破门</td></tr>
+    </table>
+
+    <h4 style="margin-top:16px">⑤ 前瞻迁移</h4>
+    <div class="twocol">
+      <div>
+        <h4 style="color:#e8788a">🇪🇬 埃及 · 次席晋级 32 强（对阵澳大利亚）</h4>
+        <ul class="watch">
+          <li><b>以 G 组次席晋级、淘汰赛对阵澳大利亚</b>——这是一档可争胜的对位，是埃及走得更远的现实机会。</li>
+          <li><b>进攻效率仍是隐忧</b>：本场 xG 仅 0.81、靠 Saber 一击制胜，<b>Salah 的破门状态</b>将决定埃及在淘汰赛的上限。</li>
+          <li><b>防守与心态是带入资本</b>：在让出场面的情况下守住平局并出线，说明球队稳定性可用——对澳大利亚可主打控制 + 反击。</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#6fd089">🇮🇷 伊朗 · 列第三、出线渺茫</h4>
+        <ul class="watch">
+          <li><b>3 分列 G 组第三</b>，须等"成绩较好第三名"跨组比较，前景渺茫——大概率出局。</li>
+          <li><b>"虽败犹荣"的进攻数据</b>：队史世界杯最高单场 xG（1.94）+ 被 VAR 取消的绝杀，是其离别的注脚——创造力够、缺的是效率与运气。</li>
+          <li><b>队长 Hajisafi 停赛归来后的左路与领导力重组</b>，以及 Taremi 的把握机会能力，是伊朗未来需要解决的结构性问题。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是 G 组末轮的<b>"动机不对称"对决</b>，且与<b>新西兰-比利时同时进行</b>。埃及 4 分（1-1 平比利时 + 3-1 胜新西兰、净胜球 +2、进 4）<b>高居小组榜首，一场平局即可锁定出线、取胜则锁定小组头名</b>；伊朗 2 分（2-2 平新西兰 + 0-0 闷平比利时、净胜球 0）<b>两连平不败但进攻乏力，必须取胜才能稳掌出线主动权</b>（理论上平局仍有"成绩较好第三名"出线的尾部，但要依赖同时进行的新西兰-比利时结果与跨组净胜球比较，已不在自己手中）。这把"求胜烈度"完全倒向伊朗——但伊朗本届两战仅进 2 球（均对新西兰），对比利时 80 分钟少打一人却 0 射正威胁，<b>"想压上却无锋无创造"</b>正是它的死结。盘口与超算均把埃及定为<b>微弱热门</b>：埃及胜约 <b>2.45</b>、平 <b>2.75</b>、伊朗胜 <b>3.30</b>（Ladbrokes 折合小数；Opta 超算 42.9% / 32.2% / 24.9%）；最大特征是<b>大小球极度偏小</b>——Under 2.5 被定为 1-2 的重度热门，与日本-瑞典那种"偏大球"场次截然相反。最大不确定因素是<b>埃及核心 Salah 的破门效率</b>（再进 1 球即超越 Hossam Hassan 成埃及国家队历史第一射手）与<b>伊朗能否在必须取胜的压力下打开钢筋混凝土式的本方蓝图</b>。三处看点：① <b>伊朗须取胜 vs 埃及"平局即满足"</b>（动机差 + 埃及可能主动收）；② <b>Salah/Marmoush 的个人爆破能否撕开伊朗 5 后卫低位铁桶</b>；③ <b>队长 Hajisafi 停赛后伊朗左路与更衣室领导力</b>。基准剧本：<b>低比分、闷、埃及小胜或平局</b>，过热指数 ≈ 2/5（共识温和偏埃及、信息集中在"走小球与半场平局"）。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">埃及隐含胜率(去水)</div><div class="v" style="color:#e8788a">≈42%</div></div>
+      <div class="key"><div class="k">伊朗隐含胜率(去水)</div><div class="v" style="color:#6fd089">≈25%</div></div>
+      <div class="key"><div class="k">平局隐含概率</div><div class="v" style="color:var(--draw)">≈33%</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>出线算术 + 动机不对称</b>：埃及 4 分、净 +2、进 4，列 G 组榜首，<b>平局即出线、取胜锁头名</b>（多家明确：平局即可甩开伊朗与新西兰）；伊朗 2 分、净 0、两连平，<b>必须取胜方稳掌主动</b>，平局只剩依赖他组的第三名渺茫尾部。求胜压力完全倒向伊朗——但它得压上，而埃及的攻击质量与个人爆破能力明显更高一档。</li>
+      <li><b>埃及伤情存疑（多源一致）</b>：中卫 <b>Hamdy Fathy（哈姆迪·法蒂）</b>对新西兰半场前因疑似腿筋伤下场，<b>大概率缺席</b>，Ramy Rabia 顶上搭档 Yasser Ibrahim；中卫 <b>Hossam Abdelmaguid</b> 对新西兰补时遭头部撞击（脑震荡），<b>同样存疑</b>——Sports Mole / Racing Post / ESPN 多源一致。详见关键临场新闻。</li>
+      <li><b>伊朗队长 Hajisafi 停赛（多源一致）</b>：左后卫、队长 <b>Ehsan Hajisafi（埃赫桑·哈吉萨菲）</b>对比利时累计第二张黄牌<b>本场停赛</b>，老将 Milad Mohammadi 预计顶替左路。这是伊朗在必须取胜的关键战里的双重损失：左路防守 + 更衣室领导力。详见关键临场新闻。</li>
+      <li><b>伊朗"有守无攻"是死结</b>：本届两战仅进 2 球（皆对新西兰），对比利时 0-0 闷平、且在对手 80 分钟少打一人时仅迫使库尔图瓦做出 1 次扑救——Taremi 状态下滑、被回撤打中场，5-4-1 极度保守。它要赢就必须打破自己的保守蓝图，而这正给埃及的反击与 Salah/Marmoush 的转换留出空间。</li>
+    </ul>
+  </div>
+
+  <!-- ===== 核心模块：关键临场新闻 ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果（关键球员出缺已多源交叉确认）</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · 伊朗队长 Hajisafi 停赛 <span style="color:var(--mut);font-weight:400">· ESPN / Sports Mole / Opta 多源一致 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：队长、左后卫 <b>Ehsan Hajisafi 因累计第二张黄牌本场停赛</b>，老将 Milad Mohammadi 预计顶替左路</div>
+      <p style="font-size:13.5px">关键球员出缺多源交叉：<b>ESPN、Sports Mole、Opta Analyst</b> 均报道，伊朗队长、146 次国脚的左后卫 <b>哈吉萨菲（Hajisafi）</b>在对比利时一战吃到本届第二张黄牌、<b>本场累计停赛</b>，预计由老将 <b>Milad Mohammadi（米拉德·穆罕马迪）</b>顶上左后卫。这对必须取胜的伊朗是双重损失——既失左路稳定性，也失更衣室领袖。<span style="color:var(--warn)">[首发与具体顶替人选以赛前 FIFA Match Centre 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：伊朗本就靠纪律性与低位防守立身（对比利时 0-0），队长兼左后卫缺阵削弱了其防线的组织与左路覆盖；同时伊朗必须取胜、需要压上，左路攻防转换的稳定性下降——埃及的 Salah/Marmoush 右路爆破正可针对伊朗替补左后卫一侧做文章。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.espn.com/soccer/story/_/id/49141716/fifa-world-cup-2026-egypt-vs-iran-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 埃及vs伊朗官方前瞻</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/preview/egypt-vs-iran-prediction-team-news-lineups_599975.html" style="color:var(--accent)">Sports Mole — 团队消息/阵容</a> · <a href="https://theanalyst.com/articles/egypt-vs-iran-prediction-world-cup-2026-match-preview" style="color:var(--accent)">Opta Analyst — 预览</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--bad);font-weight:700">⭐ 关键球员核查 · 埃及中卫双双存疑 <span style="color:var(--mut);font-weight:400">· Sports Mole / Racing Post / ESPN 多源一致 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">多源一致：<b>Hamdy Fathy（腿筋）+ Hossam Abdelmaguid（脑震荡）</b>对新西兰受伤、均为本场重大疑问；Ramy Rabia 预计顶替</div>
+      <p style="font-size:13.5px"><b>Sports Mole、Racing Post、ESPN</b> 多源一致：中卫 <b>哈姆迪·法蒂（Hamdy Fathy）</b>对新西兰半场前因疑似腿筋伤被换下、<b>大概率缺席</b>；中卫 <b>侯萨姆·阿卜杜勒马吉德（Hossam Abdelmaguid）</b>在补时阶段头部受撞、疑似脑震荡，<b>同样存疑</b>。预计 <b>Ramy Rabia</b> 顶上、搭档 <b>Yasser Ibrahim</b> 镇守中卫。<span style="color:var(--warn)">[伤情等级与首发以赛前 FIFA 官方名单 / 埃及足协通报为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：埃及若中卫轮换，后防默契与定位球防守是观察点。但伊朗本届进攻贫弱（两战 2 球、对比利时 0 射正威胁），对埃及临时中卫的实质冲击有限——这项变量对"埃及能否零封"的影响大于"能否取胜"。Salah 平局即出线的心态 + 中卫存疑，可能让埃及更倾向于稳守而非全力进攻。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/preview/egypt-vs-iran-prediction-team-news-lineups_599975.html" style="color:var(--accent)">Sports Mole — 埃及团队消息</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/egypt-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aARLl2s6c96X/" style="color:var(--accent)">Racing Post — 团队消息</a> · <a href="https://www.espn.com/soccer/story/_/id/49141716/fifa-world-cup-2026-egypt-vs-iran-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">关键球员核查 · 埃及 Salah 状态火热、追平历史纪录 <span style="color:var(--mut);font-weight:400">· ESPN / Al Jazeera / FIFA 多源 · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>Salah 本届 4 次世界杯出场全部参与进球（1 球 2 助），再进 1 球即成埃及历史第一射手（69 球，超 Hossam Hassan）</b></div>
+      <p style="font-size:13.5px">埃及头号球星 <b>萨拉赫（Mohamed Salah）</b>状态正佳——对新西兰当选全场最佳，本届前两战合计 1 球 2 助，被埃及主帅力挺为核心。其国家队目前 68 球，<b>再入 1 球即追平并超越传奇 Hossam Hassan（也正是现任主帅），成埃及国家队历史第一射手（69 球）</b>。锋线另有曼城前锋 <b>Omar Marmoush（马尔穆什）</b>右路爆破、Trezeguet 与被巴萨签下的新星 Hamza Abdelkarim 提供深度。<span style="color:var(--warn)">[首发以赛前 FIFA 官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：在伊朗摆出 5-4-1 钢筋混凝土低位时，<b>能解题的往往是 Salah/Marmoush 级别的个人爆破与转换</b>。埃及的进攻上限明显高于伊朗，这也是市场把埃及定为热门的核心理由——但若埃及满足于平局而主动收，反而会压低己方进攻烈度（与"走小球"的盘口一致）。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.aljazeera.com/sports/2026/6/22/salah-scores-as-egypt-beat-new-zealand-3-1-for-first-world-cup-win" style="color:var(--accent)">Al Jazeera — Salah 进球、埃及 3-1 新西兰</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/salah-to-break-hassan-record-predicted-egypt-xi-vs-iran_600008.html" style="color:var(--accent)">Sports Mole — Salah 追平纪录/预测阵容</a> · <a href="https://www.espn.com/soccer/story/_/id/49141716/fifa-world-cup-2026-egypt-vs-iran-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 前瞻</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">现场环境 · 当值裁判 <span style="color:var(--mut);font-weight:400">· Dailysports 报道（援引 FIFA 任命）· 06-23</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">主裁：波兰籍 <b>Szymon Marciniak（什琴斯尼·马尔奇尼亚克）</b>——世界顶级、2022 世界杯决赛主裁；西雅图 Lumen Field</div>
+      <p style="font-size:13.5px">据 Dailysports 援引 FIFA 任命，本场主裁为波兰籍 <b>Marciniak</b>，他是当今欧足联/国际足联最高级别的精英主裁之一（曾执法 2022 卡塔尔世界杯决赛、2023 欧冠决赛）。助理裁判 Tomasz Listkiewicz、Adam Kupsik（波兰），第四官员 Yusuke Araki（日本）。<span style="color:var(--warn)">[完整裁判组与 VAR 组合以 FIFA 官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Marciniak 经验老到、对抗尺度稳定，处理大场面与情绪化对抗能力强——这对本场具有<b>地缘/场外敏感性</b>（西雅图原"Pride Match"标签引两国官方抗议）的比赛尤为重要。本届统一新规偏严（仅队长可沟通、门将 8 秒规则、半自动越位）；伊朗须压上、埃及反击拉扯，禁区对抗与战术犯规会增多。详见下方裁判模块。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://dailysports.net/news/the-match-officials-for-the-egypt-vs-iran-world-cup-clash-have-been-revealed/" style="color:var(--accent)">Dailysports — 埃及vs伊朗裁判任命（援引 FIFA）</a> · <a href="https://www.espn.com/soccer/story/_/id/48964271/world-cup-2026-referees-complete-list-officials-var-teams" style="color:var(--accent)">ESPN — 世界杯裁判名单</a></div>
+    </div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">胜平负隐含概率（赔率去水）· G组格局 · 大小球市场 · 综合实力画像 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水，重度偏小球）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>G 组四队积分（末轮前）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇪🇬 埃及</th><th>🇮🇷 伊朗</th></tr>
+      <tr><td>前两轮</td><td class="ht">1-1 比利时 + 3-1 新西兰（4 分，净 +2，进 4）</td><td class="sc">2-2 新西兰 + 0-0 比利时（2 分，净 0，进 2）</td></tr>
+      <tr><td>G 组积分（末轮前）</td><td colspan="2">埃及 4(净 +2，进 4) 居首；伊朗 2(净 0)、比利时 2(净 0) 并列次席；新西兰 1 垫底。前两名 + 可能的最佳第三名出线</td></tr>
+      <tr><td>出线情景</td><td class="ht">平局即出线、取胜锁头名</td><td class="sc">须取胜方稳掌主动；平局仅剩第三名渺茫尾部</td></tr>
+      <tr><td>主教练</td><td class="ht">Hossam Hassan（埃及传奇前锋出身）</td><td class="sc">Amir Ghalanoei（阿米尔·加拉诺伊）</td></tr>
+      <tr><td>核心球员</td><td class="ht">Salah、Marmoush、Trezeguet、Shobeir(门)</td><td class="sc">Taremi、Jahanbakhsh、Ghoddos、Beiranvand(门)</td></tr>
+      <tr><td>重要缺阵 / 存疑</td><td class="ht">Fathy（腿筋·存疑）、Abdelmaguid（脑震荡·存疑）</td><td class="sc">Hajisafi（停赛）、Cheshmi（伤·两战未出）</td></tr>
+      <tr><td>本场看点/疑问</td><td class="ht">Salah/Marmoush 撕铁桶 + 平局心态是否主动收</td><td class="sc">必须压上 vs "有守无攻"；停赛后的左路</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈2.45（隐含≈42%）</td><td class="sc">胜 ≈3.30（隐含≈25%）· 平 ≈2.75（≈33%）</td></tr>
+      <tr><td>让球 / 大小球</td><td colspan="2" class="sc">埃及小幅让球（约让 -0.5/0）；总分线 O/U 2.5 <b>重度偏小球</b>（Under 约 1-2 重度热门、两队 4 战仅 8 球且伊朗仅进 2）</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈42/33/25，归一后），与 Opta 超算（埃及 42.9% / 平 32.2% / 伊朗 24.9%）方向高度一致。盘口来源：Ladbrokes（埃及 29-20 / 平 7-4 / 伊朗 23-10）、bet365、Paddy Power 综合；大小球 Under 2.5 被 bet365/Paddy Power 定为约 1-2 的重度热门（本场是<b>偏小球</b>剧本）。"伊朗有守无攻 + 埃及平局即满足"是大小球与让球深度的核心变量。具体赔率以赛前实时盘口为准。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 深度数据 · 预期指标 -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> 深度数据 · 预期指标 <span style="font-size:12px;color:var(--mut);font-weight:500">· 历史均值 vs 本届世界杯实际值 · 底层质量信号 · 带来源</span></h2>
+    <div class="sub">核心方法：把每队<b>历史基准（近两届大赛 / 预选）</b>与<b>本届世界杯实际值（前两轮）</b>逐项对照。国家队公开 xG 样本有限，缺失项标"待核"，绝不编造。</div>
+
+    <h4>① 核心：历史均值 vs 本届世界杯实际值（逐队对照）</h4>
+    <table>
+      <tr><th>队 / 指标</th><th>历史基准（来源样本）</th><th>本届世界杯实际（前两轮）</th><th>差值与解读</th></tr>
+      <tr><td class="ht">🇪🇬 埃及 · 进攻</td><td class="ht">长期围绕 Salah 个人爆破 + 边路传中；CAF 预选以 Salah/Trezeguet 为火力主轴</td><td class="ht">2 战 4 球（1-1 比利时、3-1 新西兰）；Salah 全程参与进球，Marmoush 右路冲击新西兰防线</td><td><b>达标</b>：进攻质量明显高于伊朗，Salah/Marmoush 是撕开低位铁桶的现实武器 <span style="color:var(--warn)">（场均 xG 公开样本有限 · 待核）</span></td></tr>
+      <tr><td class="ht">🇪🇬 埃及 · 防守</td><td class="ht">历届世界杯防守偏脆（2018 三战皆负）；本届 Hassan 治下纪律性提升</td><td class="ht">2 战丢 2 球（比利时点球扳平 + 新西兰 1 球）；整体收紧</td><td><b>有进步但中卫存疑</b>：Fathy/Abdelmaguid 双双存疑，临时中卫的默契与定位球防守是观察点；但伊朗进攻贫弱，实质冲击有限</td></tr>
+      <tr><td class="sc">🇮🇷 伊朗 · 进攻</td><td class="sc">历来以 Taremi/Azmoun 为锋线核心；2022 对威尔士有高效反击</td><td class="sc">2 战 2 球（皆对新西兰）；对比利时 0-0、对手少打一人仍仅 1 次扑救威胁</td><td><b>明显衰退</b>：Taremi 状态下滑、一度被回撤打中场，5-4-1 极度保守——"有守无攻"是本场最大死结 <span style="color:var(--warn)">（Opta：伊朗两战射门/射正/xG 均居 G 组末位 · 见下）</span></td></tr>
+      <tr><td class="sc">🇮🇷 伊朗 · 防守</td><td class="sc">大赛传统强项，纪律性 + 低位密集是立身之本</td><td class="sc">2 战丢 2 球（皆对新西兰）；对比利时 0-0 是本届最佳防守表现之一，门将 Beiranvand 两战 13 扑救</td><td><b>本届最强项</b>：低位铁桶 + Beiranvand 高效扑救是其唯一资产；但必须取胜意味着它得离开这个舒适区、主动压上</td></tr>
+    </table>
+    <div class="note">📌 <b>实际 vs 历史判读</b>：埃及延续"Salah 个人爆破 + 边路冲击"主线，进攻质量明显高于伊朗；伊朗则延续大赛防守传统（对比利时 0-0），但进攻全面衰退（两战仅 2 球、对比利时 0 射正威胁）。深度数据支持"伊朗被迫压上、埃及反击 + 个人解题、整体走低比分"的主线。来源：Opta Analyst（前两轮射门/射正/xG）· FIFA/队史大赛记录。仅供分析参考，非投注建议。</div>
+
+    <h4>② 本场投射 & Opta 校准 + 陷阱提醒</h4>
+    <table>
+      <tr><td>本场模型投射 xG（量级）</td><td class="ht">埃及 ≈1.2–1.5</td><td class="sc">伊朗 ≈0.7–1.0</td><td>埃及略占优、个人爆破上限更高；伊朗须压上会换来零星机会但风险大——与盘口"埃及微让 + 重度偏小球"一致</td></tr>
+      <tr><td>Opta Power Ranking / 超算</td><td colspan="2" class="ht">Opta 超算给埃及 42.9% 胜 / 平 32.2% / 伊朗 24.9%；并给埃及 61.4% 概率夺小组头名（比利时 28.7%、伊朗仅 9.9%）</td><td>体系内埃及微弱占优、平局概率偏高（动机差 + 双方均偏保守）；伊朗两战射门 24/射正 7/xG 2.1 均居 G 组末位</td></tr>
+      <tr><td>压迫 PPDA · xT · field tilt</td><td colspan="2" class="ht">国家队公开数据有限 <span style="color:var(--warn)">（待核）</span>——定性：伊朗须取胜会被迫主动施压、field tilt 升高（违背其低位本能）；埃及倾向控球 + 等待 Salah/Marmoush 转换，PPDA 在中后段升高（被动深蹲护平局）</td><td><b>陷阱提醒</b>：① 双方均偏保守 + 埃及平局即出线 → <b>走小球 / 半场平局概率高</b>（Racing Post 力推 Under / 半场平手）；② 伊朗若被迫压上 → 露出身后空间，给 Salah/Marmoush 反击放大比分；③ "动机差"在此偏向"闷"而非"开放"——与日本-瑞典那种"被迫对攻推高大球"截然不同</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ 深度指标速查（这些"类 xG"指标各代表什么）</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b>：射门机会的质量总和，剔除点球后更反映运动战创造力。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b>：对手对你创造的机会质量，衡量防守真实水平。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b>：xG−xGA，综合实力的单一最佳代理指标。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b>：每脚射门质量——低值=远射多/机会差。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b>：每次防守动作允许的传球数，值越低=逼抢越凶。</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b>：前场三区触球占比，衡量场面倾斜而非单纯控球。</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">说明：本模块优先采用 Opta/FotMob/Sofascore 等公开来源；国家队在 PPDA/xT/field tilt 等细分指标上公开样本有限，缺失项一律标注"待核"，绝不编造数值。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 专家推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">这是"温和偏埃及、但平局概率很高"的低比分场次——埃及微让，胜平负有真实悬念；信息含量集中在大小球（重度偏小）、半场平局与"伊朗有守无攻"的战术后果</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2/5 · 共识温和偏埃及、无狂热单边，信息集中在小球/半场平局</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">专家方向温和偏埃及（≈42% 去水、超算 42.9%），但平局赔率很短（≈2.75）——因平局对双方都"够用或可接受"。真正的分歧不在胜负方向，而在<b>大小球（Under 被定为重度热门）</b>与<b>伊朗能否在必须取胜下打开蓝图</b>。Racing Post 直接力推"半场平局 + Under"。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向偏埃及，强共识在"小球/半场平局"）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>Opta Analyst（超算）</td><td>模型派</td><td>埃及 42.9% / 平 32.2% / 伊朗 24.9%；预判紧凑、埃及微弱占优</td></tr>
+      <tr><td>Racing Post</td><td>英系老牌</td><td><b>力推半场平局 @10-11 + Under 2.5</b>（Under 是 1-2 重度热门）；"会很闷、不好看"；Bet Builder 含 Rezaeian 射门</td></tr>
+      <tr><td>Sports Mole</td><td>赛前预览</td><td>埃及进攻更胜一筹；Salah 追平 Hassan 纪录是焦点</td></tr>
+      <tr><td>Total Football Analysis</td><td>数据媒体</td><td>埃及略受青睐——攻击质量与经验占优；伊朗保守难追分</td></tr>
+      <tr><td>SI / RotoWire</td><td>北美媒体</td><td>埃及已出线、只为头名而战；伊朗谨慎的 5-4-1 使其难以追分取胜</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（偏低）</b>：方向偏埃及但<b>不极端</b>，且平局赔率很短、信息高度集中在"小球/半场平局"。这不是一边倒胜负场次——胜平负有真实悬念。最大不确定性是<b>伊朗在必须取胜下能否打开保守蓝图</b>（决定是否走出 0-0/1-0 的闷局）与<b>埃及平局即满足是否主动收</b>，而非胜负方向被狂热定价。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>埃及胜 / 平 / 伊朗胜</th><th>解读</th></tr>
+      <tr><td>开档（赛前/多家综合）</td><td>1X2</td><td class="ht">≈2.45 / 2.75 / 3.30</td><td>埃及微弱热门、平局赔率很短（双方都"接受"平局）<span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>06-24 截止</td><td>Ladbrokes（折合小数）</td><td class="ht">埃及 2.45 / 平 2.75 / 伊朗 3.30</td><td>各书略有差异，整体把埃及定为微弱热门、平局概率偏高（≈33%）</td></tr>
+      <tr><td>06-24</td><td>大/小球 + 让球</td><td colspan="2" class="ht">埃及小幅让球（约 -0.5/0）；O/U 2.5 <b>重度偏小球</b>（Under 约 1-2）；半场平局赔率很短</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">②-b 盘口定位与变化趋势（初盘 → 现盘）</h4>
+    <table>
+      <tr><th>时点</th><th>盘口 / 赔率</th><th>定位变化 · 触发</th></tr>
+      <tr><td>初盘（赛前数日 / 赛季前预期）</td><td class="sc">两队接近、伊朗因防守传统受敬重；埃及因 Salah 略占优</td><td>赛前以"Salah 个人能力 vs 伊朗大赛防守纪律"定价，两队定位接近、未一边倒 <span style="color:var(--warn)">[精确初盘数值 · 待核]</span></td></tr>
+      <tr><td>开盘（次轮赛后 + 净胜球重定价）</td><td class="ht">埃及收紧为微弱热门（≈2.45）、平局赔率压短（≈2.75）；伊朗走宽至 ≈3.30</td><td><b>repricing 来自次轮战绩与出线算术</b>：埃及 3-1 胜新西兰登顶（净 +2），伊朗 0-0 闷平比利时暴露进攻贫弱；市场关键逻辑：<b>埃及"平局即出线"+ 伊朗"有守无攻"双双压低进球预期</b>，平局赔率被压短、大小球转向重度偏小</td></tr>
+      <tr><td>现盘（06-24→现）</td><td class="ht">埃及 ≈2.45（微让）；平 ≈2.75；O/U 2.5 重度偏小；伊朗 ≈3.30</td><td>价格发现集中在 <b>大小球（Under 1-2 重度热门）</b>与<b>半场平局</b>（双方均不愿早冒险）；Hajisafi 停赛 + 埃及中卫存疑是边际微调，但伊朗进攻乏力使"埃及零封/低比分"成为主流定价</td></tr>
+    </table>
+    <div class="note">📌 <b>市场定位解读</b>：这是"温和偏埃及、平局概率很高的低比分盘"，与一边倒重让盘不同——1X2 仍有真实价格发现，且<b>平局赔率异常短</b>（因平局对埃及够用、对伊朗也比输好）。核心变量是<b>大小球（重度偏小）</b>与<b>伊朗能否打开保守蓝图</b>。核心反直觉点：与日本-瑞典"被迫压上推高大球"不同，本场"动机差 + 双方保守"反而把比赛压向<b>闷局与小球</b>。初盘精确数值以各平台为准 · 待核。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>预测市场（Kalshi / Polymarket）</b>：单场各结果精确占比未检得 <span style="color:var(--warn)">[Kalshi/Polymarket 精确占比 · 待核]</span>；出线市场方向上，Opta 给埃及 ≈99% 出线、伊朗出线概率显著低（须取胜或依赖第三名尾部）。</li>
+      <li><b>舆论焦点 ①</b>：<b>Salah 追平并超越 Hossam Hassan 成埃及历史第一射手</b>（再进 1 球即 69 球）——这是本场最大流量点，叠加"Salah 最后一届世界杯"的叙事。</li>
+      <li><b>舆论焦点 ②</b>：<b>伊朗"有守无攻"能否打破历史</b>——伊朗从未突破世界杯小组赛，本届须取胜方掌主动，但 Taremi 状态下滑、5-4-1 极保守，被质疑缺乏取胜的"野心与手段"。</li>
+      <li><b>公众资金面 / 社媒声量细分</b>：未检得量化数据 <span style="color:var(--warn)">[公众投注% / 社媒量化 · 待核]</span>；定性：公众资金偏埃及（Salah 流量 + 出线在望），休闲盘倾向 Under 2.5 / 半场平局。另注：本场因西雅图"Pride Match"标签引两国官方抗议，场外关注度高于纯竞技层面。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：本场是"温和偏埃及、平局概率高的低比分盘"，过热指数 <b>2/5</b>。1X2 有真实价格发现，核心变量是<b>大小球（重度偏小）</b>与<b>伊朗能否打开保守蓝图</b>。反直觉点：双方动机差 + 保守天性把比赛压向闷局与小球，而非对攻大球。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/egypt-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aARLl2s6c96X/">Racing Post — 赔率/半场平局/Under</a> · <a href="https://theanalyst.com/articles/egypt-vs-iran-prediction-world-cup-2026-match-preview">Opta Analyst — 超算预测</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/preview/egypt-vs-iran-prediction-team-news-lineups_599975.html">Sports Mole — 预测/阵容</a> · <a href="https://www.si.com/soccer/egypt-vs-iran-world-cup-preview-predictions-lineups-6-26-26">SI — 预测</a> · <a href="https://www.skysports.com/football/news/12098/13543098/world-cup-2026-group-g-guide-fixtures-schedule-standings-and-odds-for-belgium-egypt-iran-and-new-zealand">Sky Sports — G组形势/赔率</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">2</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>媒体报道</b>：据 Dailysports 援引 FIFA 任命，本场主裁为波兰籍 <b>Szymon Marciniak</b>（世界顶级、2022 世界杯决赛主裁）；助理 Listkiewicz、Kupsik（波兰），第四官员 Araki（日本）。西雅图 Lumen Field。<span style="color:var(--warn)">[完整裁判组与 VAR 组合 · 待核]</span></div>
+    <h4>执法尺度 + 本届统一新规（定性 + 体系画像）</h4>
+    <ul class="cl">
+      <li><b>体系画像</b>：Marciniak 是当今欧足联/国际足联最高级别的精英主裁之一（执法过 2022 世界杯决赛、2023 欧冠决赛），<b>经验顶级、对大场面与情绪化对抗的掌控力强</b>。本届世界杯执法环境偏严（仅队长可沟通、门将 8 秒规则、半自动越位）。</li>
+      <li><b>本届/近两届实际样本</b>：Marciniak 本届/近两届世界杯单场出牌/判点的精确场均细分公开样本有限。<span style="color:var(--warn)">[大赛单场黄牌/判点率细分 · 无可靠本届样本，不编数值 · 待核]</span>。定性判断：尺度稳定、敢于在关键判罚上果断（含点球/红牌）。</li>
+      <li><b>场外敏感性</b>：本场原被西雅图地方委员会贴上"Pride Match"标签，埃及、伊朗两国官方均正式抗议（两国均将同性恋入罪）。安排 Marciniak 这一级别主裁，意在保障高敏感场次的赛场秩序与判罚权威。</li>
+      <li><b>两面性</b>：伊朗须取胜 → 后段可能高位施压、禁区争顶增多；埃及反击 + 拖住比分（平局即满足）会出现战术犯规与拖延（门将 8 秒规则可触发）。半自动越位将精准捕捉双方临界冲刺。牌数/点球盘宜以倾向看待，不作可操作依据。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：本场实力接近、预期比分低，裁判对胜负影响有限，主要价值在牌数/点球与拖延管理：伊朗后段压上的禁区对抗、埃及护平局的战术犯规与拖延是黄牌观察点。鉴于 Marciniak 本届单场大赛细分样本有限，相关盘口以倾向看待、不作可操作依据。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">3</span> 首发 & 近期表现 <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">预测版 · 官方版赛前约 1 小时公布</span></h2>
+    <div class="sub">预测首发（ESPN / Racing Post / Sports Mole 推测，非官方；官方名单以赛前 FIFA Match Centre 为准 · 待核）</div>
+    <h4>🇪🇬 埃及 预测首发（4-2-3-1）· Hossam Hassan · Fathy/Abdelmaguid 存疑</h4>
+    <div class="lineup">Shobeir; Hany · Ibrahim · Rabia · Fatou; Attiah · Lasheen; Zika · Salah · Ashour; Marmoush</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Mohamed Salah</td><td>右边锋/前腰 · 利物浦</td><td>本届 4 战全部参与进球（1 球 2 助）；再进 1 球即超 Hossam Hassan 成埃及历史第一射手（69 球）</td></tr>
+      <tr><td class="ht">Omar Marmoush</td><td>前锋/边路 · 曼城</td><td>埃及最直接的右路持球爆破点，对新西兰跑垮其防线；是撕开伊朗低位的转换威胁</td></tr>
+      <tr><td class="ht">Ramy Rabia</td><td>中卫</td><td>预计顶替伤缺的 Fathy、搭档 Yasser Ibrahim；后防默契是观察点</td></tr>
+      <tr><td class="ht">Mohamed Shobeir</td><td>门将</td><td>预计首发（El Shenawy 替补）；须应对伊朗零星的远射与定位球</td></tr>
+    </table>
+    <h4>🇮🇷 伊朗 预测首发（5-4-1）· Amir Ghalanoei · 队长 Hajisafi 停赛</h4>
+    <div class="lineup">Beiranvand; Rezaeian · Kanani · Khalilzadeh · Nemati · Mohammadi(代 Hajisafi); Jahanbakhsh · Ghoddos · Ezatolahi · Mohebbi; Taremi</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Mehdi Taremi</td><td>中锋 · 105 国脚 / 60 球</td><td>伊朗经验最丰富的前锋之一，但本届状态下滑、一度被回撤打中场；伊朗进攻能否解题系于他</td></tr>
+      <tr><td class="sc">Alireza Jahanbakhsh</td><td>边路/中场</td><td>提供宽度与创造力，是伊朗为数不多的边路爆点</td></tr>
+      <tr><td class="sc">Ramin Rezaeian</td><td>右后卫/右翼 · 国家队 9 球</td><td>擅长前插、本届对新西兰破门；伊朗压上时的右路进攻支点（Racing Post 看好其有射门）</td></tr>
+      <tr><td class="sc">Alireza Beiranvand</td><td>门将</td><td>两战 13 次扑救，是伊朗低位铁桶的最后一道高效屏障</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发为媒体分析推测（ESPN / Racing Post / Sports Mole），<b>以赛前官方名单为准 · 待核</b>。埃及焦点是 <b>Fathy/Abdelmaguid 中卫双双存疑</b>后的后防搭配、以及 Salah/Marmoush 的锋线组合；伊朗焦点是 <b>队长 Hajisafi 停赛</b>后由 Mohammadi 顶左路、Taremi 是否回到锋线最前端、以及 5-4-1 是否在必须取胜下改打更进取的阵型 <span style="color:var(--warn)">[阵型与具体人选 · 待核]</span>。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">4</span> 战术风格 & 主教练</h2>
+    <div class="sub">每条结论均交叉参照两队近两届大赛的实际打法与结果（世界杯 + 本大洲赛事 / 非洲杯·亚洲杯 / 2018+2022）</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#e8788a">🇪🇬 埃及 · Hossam Hassan</div>
+        <div class="role">4-2-3-1 / 控球 + 边路冲击 + 围绕 Salah/Marmoush 的个人解题</div>
+        <ul class="cl">
+          <li>Hassan（埃及传奇前锋出身）治下，埃及以<b>4-2-3-1 控球 + 边路传中 + Salah/Marmoush 个人爆破</b>为骨架。本届 1-1 比利时（顶住强敌拿分）、3-1 新西兰（首胜 + Salah 参与进球）证明这套既有下限（防守纪律提升）又有上限（个人能力解题）。</li>
+          <li>交叉参照：2018 世界杯三战皆负（防守脆、过度依赖 Salah）是历史教训；本届对比利时收住、对新西兰高效——<b>Hassan 把"纪律性"补进了埃及的传统短板</b>，对阵保守对手时尤其能靠个人能力撬开。</li>
+          <li>本场切入口：面对伊朗 5-4-1 低位铁桶，靠控球 + 边路传中 + Salah/Marmoush 的转换与定位球解题；<b>平局即出线给了它"先稳后伺机"的安全垫</b>——若局面胶着，埃及大概率不会冒险，更可能耐心等待一次个人爆破或定位球。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#6fd089">🇮🇷 伊朗 · Amir Ghalanoei</div>
+        <div class="role">5-4-1 · 低位密集 + 纪律防守，须主动施压却缺锋无创造</div>
+        <ul class="cl">
+          <li>Ghalanoei 麾下伊朗以<b>5-4-1 低位密集 + 纪律性防守</b>立身，对比利时 0-0（对手 80 分钟少打一人仍仅 1 次扑救威胁）是本届最佳防守之一。但<b>进攻全面贫弱</b>——两战仅 2 球（皆对新西兰），Taremi 一度被回撤打中场。</li>
+          <li>交叉参照：伊朗在世界杯历史上从未突破小组赛（1978/1998/2006/2014/2018/2022 均止步小组），传统强在防守、弱在终结；本届延续此模式——<b>下限在铁桶防守、上限受制于无锋无创造</b>。必须取胜意味着它得离开舒适区、主动压上，这恰恰违背其本能。</li>
+          <li>本场应对：理论上须高位施压 + 喂给 Taremi、靠 Rezaeian/Jahanbakhsh 的边路前插与定位球；但队长 Hajisafi 停赛削弱左路，且越压上越露身后空间，给 Salah/Marmoush 的反击留口子——<b>"想赢却不擅长赢"是伊朗必须取胜的最大矛盾</b>。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">Opta Analyst（超算）<small>· 模型派</small></div>预判一场紧凑的比赛，埃及微弱占优（42.9% / 平 32.2% / 伊朗 24.9%）；并给埃及 61.4% 概率夺小组头名。伊朗两战射门 24/射正 7/xG 2.1 均居 G 组末位，进攻是其硬伤。</div>
+    <div class="insight"><div class="who">Racing Post <small>· 英系老牌</small></div>力推"<b>半场平局 + Under 2.5</b>"——"会很闷、不好看"；平局对埃及够用、对伊朗也比输好，双方上半场都不会冒险。Bet Builder 含 Rezaeian 有射门。</div>
+    <div class="insight"><div class="who">Sports Mole / SI <small>· 预测媒体</small></div>埃及进攻质量更高、且只为头名而战；伊朗谨慎的 5-4-1 使其难以追分取胜。焦点叙事是 Salah 追平并超越 Hossam Hassan 成埃及历史第一射手。</div>
+    <div class="insight"><div class="who">综合 · 核心悬念与陷阱 <small>· Opta / 队史</small></div>超算偏埃及但平局概率高。⚠ 陷阱提醒：① 埃及平局即出线，可能主动收、压低进球；② 伊朗须取胜须压上 → 露后防给埃及反击，但其进攻贫弱、未必能打开蓝图；③ 中卫存疑（埃及）vs 左路停赛（伊朗）是边际变量；④ 与日本-瑞典不同，本场动机差 + 双方保守把比赛压向<b>闷局/小球</b>，而非对攻大球。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：埃及小胜或平局是基准剧本，且<b>整体偏低比分</b>。实力与攻击质量温和偏埃及（Salah/Marmoush 个人爆破上限更高、净 +2、纪律性提升）；伊朗须取胜、被迫压上，但本届进攻全面贫弱（两战 2 球、对比利时 0 射正威胁），且队长 Hajisafi 停赛、本能保守，"想赢却不擅长赢"。平局对双方都"够用或可接受"是平局赔率短的根本原因。</li>
+      <li><b>关键先生</b>：Salah（埃/历史射手纪录 + 个人解题）、Marmoush（埃/右路爆破）、Shobeir（埃/门将）；Taremi（伊/锋线唯一支点）、Rezaeian/Jahanbakhsh（伊/边路前插）、Beiranvand（伊/高效门将）。<b>伊朗队长 Hajisafi 停赛</b>，<b>埃及 Fathy/Abdelmaguid 中卫存疑</b>。</li>
+      <li><b>胜负手</b>：① 伊朗能否在必须取胜下打开自己的保守蓝图（决定是否走出 0-0/1-0 闷局）；② Salah/Marmoush 的个人爆破能否撕开伊朗 5 后卫低位；③ 埃及"平局即出线"心态会否使其主动收、压低进攻烈度；④ 同时进行的新西兰-比利时结果，决定伊朗第三名出线尾部是否还有意义。</li>
+      <li><b>市场视角</b>：温和偏埃及、平局概率高的低比分盘（≈42/33/25、超算 42.9%），过热指数 2/5；1X2 有真实价格发现、平局赔率异常短。核心变量是大小球（重度偏小）+ 伊朗能否打开保守蓝图。反直觉点：本场动机差 + 双方保守把比赛压向闷局与小球。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① 双方官方首发（赛前约 1 小时 FIFA Match Centre）；② <b>埃及中卫搭配</b>（Fathy/Abdelmaguid 伤情等级 + 是否 Rabia/Ibrahim 顶上）；③ <b>伊朗左路顶替与阵型</b>（Mohammadi 代 Hajisafi、5-4-1 是否改更进取阵型、Taremi 站位）；④ Marciniak 完整裁判组与 VAR 组合、其本届/近两届单场出牌/判点细分（无可靠本届样本即如实说明）；⑤ 出线/头名的精确净胜球与并列规则（积分→净胜球→进球数→相互战绩→公平竞赛分→抽签）、伊朗第三名出线尾部所需的新西兰-比利时结果与跨组比较（以 FIFA 官方判定为准）；⑥ 让球线与大小球总分线（O/U 2.5 偏小）、精确初盘数值以赛前实时盘口为准；⑦ Kalshi/Polymarket 单场精确占比、公众投注%/社媒量化未检得。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49141716/fifa-world-cup-2026-egypt-vs-iran-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups">ESPN — 埃及vs伊朗官方前瞻（裁判/首发/团队消息）</a> · <a href="https://www.sportsmole.co.uk/football/egypt/world-cup-2026/preview/egypt-vs-iran-prediction-team-news-lineups_599975.html">Sports Mole — 预测/阵容/团队消息</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/egypt-vs-iran-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aARLl2s6c96X/">Racing Post — 赔率/团队消息/半场平局</a><br>
+      • <a href="https://theanalyst.com/articles/egypt-vs-iran-prediction-world-cup-2026-match-preview">Opta Analyst — 超算预测/前两轮数据</a> · <a href="https://www.aljazeera.com/sports/2026/6/22/salah-scores-as-egypt-beat-new-zealand-3-1-for-first-world-cup-win">Al Jazeera — 埃及 3-1 新西兰/Salah</a> · <a href="https://dailysports.net/news/the-match-officials-for-the-egypt-vs-iran-world-cup-clash-have-been-revealed/">Dailysports — 裁判任命（援引 FIFA）</a><br>
+      • <a href="https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_G">Wikipedia — G组/并列规则/H2H</a> · <a href="https://www.skysports.com/football/news/12098/13543098/world-cup-2026-group-g-guide-fixtures-schedule-standings-and-odds-for-belgium-egypt-iran-and-new-zealand">Sky Sports — G组形势/赔率</a> · <a href="https://www.espn.com/soccer/story/_/id/49072841/group-g-2026-world-cup-teams-records-stats-know-belgium-iran-new-zealand-egypt">ESPN — G组综述</a> · <a href="https://www.si.com/soccer/egypt-vs-iran-world-cup-preview-predictions-lineups-6-26-26">SI — 预测/阵容</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-24 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#bc002d',SC='#239f40',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['埃及胜','平局','伊朗胜'],datasets:[{data:[42,33,25],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[38,62],backgroundColor:[DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，重度偏小球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['埃及','伊朗','比利时','新西兰'],datasets:[{data:[4,2,2,1],backgroundColor:[HT,SC,'#f0a04b','#9aa6c0'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:6,title:{display:true,text:'积分（末轮前）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','边路/转换','个人上限','大赛经验'],
+  datasets:[
+   {label:'埃及',data:[6.5,7,6.5,7.5,8,6.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'伊朗',data:[7.5,4.5,5.5,5.5,5.5,7],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise tática aprofundada · Tchéquia vs África do Sul · Copa do Mundo 2026 · Grupo A 2ª rodada</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-czechia-vs-southafrica.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-czechia-vs-southafrica.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#c8102e;--sc:#e0ad1a;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#8a6a13);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#1f1a08);border:1px solid var(--line);border-left:4px solid var(--ht);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#ec6f7c;font-weight:600}td.sc{color:#ecc24a;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-czechia-vs-southafrica.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="/index.html">← Voltar ao centro de análises</a><br>
+  <span class="badge">🏁 Encerrado 1-1 · Copa do Mundo 2026 · Grupo A · 2ª rodada · Duelo de "véspera da eliminação" entre dois times derrotados na 1ª rodada</span>
+  <h1>Tchéquia vs África do Sul</h1>
+  <div class="meta">18 de junho de 2026 · Atlanta, Mercedes-Benz Stadium (indoor) · 12:00 ET · Grupo A (mesmo grupo: México, Coreia do Sul)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#ec6f7c">🇨🇿 Tchéquia</div><div class="rk">Comandada por Koubek · 1ª rodada: 1-2 contra a Coreia do Sul · Melhor de toda a Europa em bola parada (11 gols nas eliminatórias) · Pouca criatividade no jogo aberto</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#ecc24a">🇿🇦 África do Sul</div><div class="rk">Comandada por Broos · 1ª rodada: 0-2 contra o México · Sithole + Zwane suspensos · xG total de apenas 0,07</div></div>
+  </div>
+
+  <!-- ===== Análise pós-jogo ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> Análise pós-jogo: tática e dados</h2>
+    <div class="sub">Final Tchéquia 1-1 África do Sul (intervalo 1-0) · Mercedes-Benz Stadium, Atlanta, 67.442 · Árbitra Tori Penso (EUA, segunda mulher a apitar na história das Copas do Mundo masculinas) · Dados de Sofascore / Opta Analyst / FIFA / ESPN · O conteúdo pré-jogo abaixo está integralmente preservado como arquivo de prognóstico</div>
+
+    <h4>① Evolução do placar</h4>
+    <p style="font-size:14px">Foi um jogo de <b>duas fases: a Tchéquia golpeou cedo, a África do Sul controlou e empatou</b>. Logo aos <b>6 minutos</b>, uma jogada tcheca nasceu de um arremesso lateral, Sojka tocou na medida e <b>Sadílek</b> invadiu a área para finalizar rasteiro de pé esquerdo, 1-0 — o gol mais cedo da Copa até agora. A partir daí o roteiro pendeu de vez para a África do Sul: os Bafana Bafana acumularam <b>62%</b> de posse e completaram 508 de 563 passes, recuando a Tchéquia com circulação paciente e consolidando aos poucos o domínio territorial. A Tchéquia, por sua vez, confirmou o perfil pré-jogo — o jogo aberto não abria, o ataque se reduziu quase totalmente à bola parada e cruzamentos na área, e Schick desperdiçou duas chances claras. No segundo tempo a África do Sul superou a Tchéquia por 12-9 em finalizações e seu xG subiu de 0,21 no intervalo para 1,14. Aos <b>83 minutos</b>, um chute de longe de Maseko bateu no braço do reserva tcheco <b>Šulc</b>, a árbitra marcou pênalti e <b>Mokoena</b> converteu para empatar, 1-1. O xG final foi Tchéquia 1,02 contra África do Sul 1,35-1,37 — qualidade e território equilibrados, a vantagem apagada por um único pênalti de mão.</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 6' Sadílek (assistência de Sojka, após arremesso lateral, finalização de pé esquerdo, 1-0) → 33' amarelo para Mokoena (primeiro da África do Sul) → INT 1-0 → 83' Mokoena (pênalti, chute de longe de Maseko no braço de Šulc, 1-1) → FINAL 1-1</div>
+
+    <h4>② Comparativo de dados-chave</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">Métrica</th><th style="padding:6px">🇨🇿 Tchéquia</th><th style="padding:6px">🇿🇦 África do Sul</th><th style="text-align:left;padding:6px">Leitura</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Posse de bola</td><td style="text-align:center">38%</td><td style="text-align:center"><b>62%</b></td><td style="padding:6px;color:var(--mut)">A África do Sul controlou o jogo com posse e circulação (508/563 passes) — o oposto da leitura pré-jogo ("gargalo da Tchéquia no jogo aberto, África do Sul forçada a se abrir"): foi a África do Sul, não a Tchéquia, quem ficou com a bola</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">1,02</td><td style="text-align:center"><b>1,35</b></td><td style="padding:6px;color:var(--mut)">O xG da África do Sul subiu de 0,21 para 1,14 no segundo tempo — superando de vez a seca de 0,07 da 1ª rodada; a qualidade da Tchéquia foi um pouco menor mas mais perto do gol</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Finalizações / no gol</td><td style="text-align:center">14 / 3</td><td style="text-align:center"><b>17 / 4</b></td><td style="padding:6px;color:var(--mut)">A África do Sul finalizou mais no total, mas a Tchéquia dominou 11-6 em finalizações dentro da área — "volume para a África do Sul, qualidade para a Tchéquia"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Chances claras</td><td style="text-align:center"><b>3</b></td><td style="text-align:center">1</td><td style="padding:6px;color:var(--mut)">A Tchéquia dominou 3-1 mas marcou apenas uma vez — os dois erros de Schick em chances claras são a razão direta de não vencer o jogo</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Cruzamentos (certos/tentados)</td><td style="text-align:center"><b>7/16 (44%)</b></td><td style="text-align:center">4/17 (24%)</td><td style="padding:6px;color:var(--mut)">A qualidade de cruzamento da Tchéquia foi claramente maior e venceu 59% das disputas aéreas — a linha pré-jogo "bola parada / cruzamentos na área" se cumpriu, mas a finalização falhou</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Escanteios</td><td style="text-align:center">5</td><td style="text-align:center">5</td><td style="padding:6px;color:var(--mut)">5-5 — o "bombardeio de escanteios" da Tchéquia não produziu gol; sua arma mais afiada do pré-jogo se apagou aqui</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">Defesas · goleiro</td><td style="text-align:center">Kovář 3 (+0,11 GP)</td><td style="text-align:center">Williams 2</td><td style="padding:6px;color:var(--mut)">Kovář neutralizou várias vezes o ataque da África do Sul no segundo tempo; o pênalti era indefensável. Ao contrário da leitura pré-jogo ("Williams é a esperança de empate da África do Sul"), foi o goleiro tcheco que salvou</td></tr>
+      <tr><td style="padding:6px">Faltas · amarelos</td><td style="text-align:center">1 amarelo</td><td style="text-align:center">2 amarelos</td><td style="padding:6px;color:var(--mut)">Penso advertiu 2 jogadores da África do Sul no 1º tempo (incl. Mokoena aos 33') e 1 tcheco no 2º — na direção da leitura pré-jogo do "risco de amarelos acumulados da África do Sul desfalcada", sem perder o controle</td></tr>
+    </table></div>
+
+    <h4>③ Análise tática</h4>
+    <div class="insight"><div class="who">① Papéis totalmente invertidos: África do Sul com a bola, Tchéquia apanhando</div>A linha pré-jogo era "Tchéquia mais forte no papel, África do Sul obrigada a um bloco baixo profundo". Na prática a África do Sul acumulou 62% de posse, 508 passes e 58 entradas no último terço para dominar o território, enquanto a Tchéquia ficou em 38% e recuada. <b>Isso nos diz sobre a África do Sul</b>: sem Sithole, Broos não trancou o jogo — deixou Mokoena (119 toques, 97 passes, 5 passes decisivos, nota 8,0) conduzir o jogo como eixo. É a maior subversão da leitura pré-jogo; a África do Sul somou seu ponto com posse, não com defesa pura.</div>
+    <div class="insight"><div class="who">② A "qualidade na área" da Tchéquia se sustentou, mas a finalização falhou</div>A Tchéquia dominou em finalizações dentro da área (11-6), chances claras (3-1), precisão de cruzamentos (44% a 24%) e duelos aéreos (59%) — a linha pré-jogo de "colocar a bola na área, fabricar qualidade com cruzamentos e bola parada" de fato se cumpriu. Mas Schick errou duas chances claras e o time acertou só 3 de 14 finalizações no gol. <b>Isso nos diz sobre a Tchéquia</b>: a estrutura ofensiva está certa (qualidade concentrada na área), mas o velho problema da falta de um finalizador confiável voltou a ser fatal — criar chances sem convertê-las é justamente por que 0 pontos viraram 1 e não conseguiram liquidar um rival desfalcado.</div>
+    <div class="insight"><div class="who">③ O dividendo da bola parada ficou sem ser cobrado — escanteios 5-5, bombardeio apagado</div>O pré-jogo apontou a "melhor bola parada da Europa da Tchéquia (11 gols nas eliminatórias, 7 de escanteio)" como o ponto de ruptura mais afiado. Aqui os escanteios terminaram 5-5 e nenhuma bola parada foi convertida. Krejčí (nota 7,5, 5 disputas aéreas vencidas, 4 finalizações) foi ameaça pelo alto, mas com Souček no banco faltou seu alvo aéreo mais alto — exatamente o alerta de "intensidade rebaixada" já anotado no módulo da escalação oficial. <b>Isso nos diz sobre a Tchéquia</b>: a bola parada é força no papel, mas quando o adversário (mesmo desfalcado) defende o alto bem posicionado e falta seu melhor cabeceador, a arma não é uma saída confiável — o ajuste pré-jogo de "rebaixar a intensidade" foi validado com precisão.</div>
+    <div class="insight"><div class="who">④ Mokoena carregou a África do Sul sozinho — metrônomo e finalizador ao mesmo tempo</div>Mokoena teve 119 toques (recorde do jogo), completou 93 de 97 passes, deu 5 passes decisivos (os mais do jogo), acertou 8 de 8 bolas longas, fez 8 recuperações e converteu o pênalti — levando o craque do jogo na Sofascore com 8,0. <b>Isso nos diz sobre a África do Sul</b>: num meio-campo sem Sithole, Mokoena assumiu sozinho a criação, a progressão e a finalização — coincidindo exatamente com a leitura pré-jogo de que "Mokoena precisa carregar sozinho o desarme e a saída de bola". Ele transformou uma noite esperada de "aguentar e defender" numa de "controlar e empatar".</div>
+    <div class="insight"><div class="who">⑤ Um pênalti de mão decidiu o empate — reaparece o mal da Tchéquia de "não segurar uma vantagem"</div>A Tchéquia abriu 1-0 aos 6 minutos, só para ser alcançada aos 83' por uma mão de Šulc na área. Isso reflete a 1ª rodada: "vantagem de 1-0 virada por 2-1 pela Coreia do Sul". <b>Isso nos diz sobre a Tchéquia</b>: a falha estrutural de não conseguir ampliar uma vantagem no jogo aberto e depois ter dificuldade de fechar a partida já apareceu em dois jogos seguidos — a única diferença é levar dois e perder na 1ª rodada contra levar um e empatar aqui. Um ataque unidimensional (bola parada/cruzamentos, sem Plano B) deixa cada vantagem sob risco de escapar.</div>
+
+    <h4>④ Acerto de contas do prognóstico (conferência item a item das conclusões pré-jogo)</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>△ <b>Conclusão do resumo "Tchéquia vence por margem mínima graças à bola parada" → real 1-1</b>: a direção (Tchéquia tomando a iniciativa, marcando primeiro) foi em parte correta, mas a "vitória" falhou — o bombardeio de bola parada se apagou, a finalização falhou e um pênalti de mão forçou o empate.</li>
+      <li>✗ <b>Vitória da Tchéquia implícita no mercado ≈49% (odd 1,75) / mercados de previsão ≈56% → sem vitória (empate)</b>: o favorito não respondeu, caindo no empate (implícito pré-jogo ≈32%), uma cauda de probabilidade média.</li>
+      <li>✗ <b>Leitura central "a bola parada da Tchéquia rompe o bloco baixo da África do Sul desfalcada" → não cumprida</b>: escanteios 5-5, sem gol de bola parada; e a África do Sul não se meteu em bloco baixo algum, mas tomou a iniciativa com 62% de posse — tanto a via de ruptura quanto o andamento foram o oposto do esperado.</li>
+      <li>✓ <b>"A Tchéquia carece de criatividade no jogo aberto, sem Plano B" → cumprido com precisão</b>: apenas 38% de posse, Schick errando duas chances claras e a incapacidade de ampliar a vantagem no jogo aberto — o velho problema voltou a ser fatal.</li>
+      <li>✓ <b>"A seca ofensiva da África do Sul de 0,07 xG na 1ª rodada" → nitidamente melhorada aqui</b>: o xG da África do Sul se recuperou para 1,35 (1,14 no segundo tempo), superando a seca graças ao controle de Mokoena — o oposto da expectativa pessimista de "seleção desfalcada que só pode defender".</li>
+      <li>△ <b>Tendência de gols (Over 2.5 levemente afiado ≈53%) → real 2 gols (Under)</b>: total de gols 2, não passou de 2,5; o Over falhou mas ficou perto da linha.</li>
+      <li>✓ <b>Arbitragem "Penso cartões em alta, risco de amarelos acumulados da África do Sul" → em parte cumprido</b>: a África do Sul levou 2 amarelos no 1º tempo (incl. Mokoena), 3 amarelos no total — direcionalmente consistente, sem escalar fora de controle.</li>
+    </ul>
+
+    <h4>⑤ Projeção para o próximo jogo</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇨🇿 Tchéquia → 24/6 vs México (última rodada · Cidade do México)</div>① É um <b>duelo de vida ou morte</b>: com 1 ponto e atrás, a Tchéquia precisa tirar pontos do líder do grupo, o México, na última rodada para ter alguma esperança de avançar ou brigar pela terceira vaga — um desafio íngreme; ② <b>A eficiência de finalização é o ponto fraco</b>: dominou 3-1 em chances claras mas marcou uma, com Schick errando duas vezes — diante de um México mais forte, voltar a desperdiçar chances será ainda mais difícil de remediar; ③ a bola parada segue sendo arma no papel mas se apagou aqui (escanteios 5-5); precisam recuperar a intensidade do bombardeio (se Souček volta ao time titular é algo a observar); ④ <b>"não segurar uma vantagem" já ocorreu em dois jogos seguidos</b> — diante do jogo pelas pontas e da qualidade individual do México, é preciso corrigir com urgência os riscos de mão/posicionamento na área.</div>
+      <div class="insight" style="margin:0"><div class="who">🇿🇦 África do Sul → 24/6 vs Coreia do Sul (última rodada · Estadio Monterrey)</div>① Também um <b>duelo de vida ou morte</b>: com 1 ponto, precisam vencer a Coreia do Sul (já com 3 pela vitória) na última rodada para ter chance; ② <b>Mokoena é o motor</b>: a posse e a criação passaram totalmente por ele (nota 8,0) — diante de uma Coreia do Sul mais rápida vão seguir se apoiando na sua distribuição, mas também precisam dividir a dependência; ③ <b>a seca ofensiva está amenizada</b> (xG 1,35): a virada de Broos para ficar com a bola em vez de defender fundo pode se manter diante da Coreia do Sul, mas precisam converter a posse em mais chances de área (aqui só 6 finalizações dentro da área); ④ os suspensos Sithole/Zwane cumprem suas punições após este jogo e podem voltar para a última rodada, reforçando o desarme de meio-campo e um recurso ofensivo de reta final.</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">Fontes: Sofascore (estatísticas/notas pós-jogo), Opta Analyst (theanalyst.com), FIFA (central da partida), ESPN, Sky Sports. Apenas para fins de análise — não é recomendação de apostas.</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia primeiro este trecho)</h3>
+    <p class="lead">Este é um <b>duelo de vida ou morte ("perdeu, está eliminado")</b> entre dois times derrotados na 1ª rodada: a Tchéquia abriu 1-0 mas foi virada por 2-1 pela Coreia do Sul, enquanto a África do Sul perdeu por 0-2 para o México na estreia e <b>levou dois dos três cartões vermelhos do jogo</b> (Sithole e Zwane ambos suspensos nesta partida). As odds pendem claramente para a Tchéquia — vitória da Tchéquia a <b>1,75</b> (≈49% de probabilidade implícita sem margem), empate 3,80 (≈32%), vitória da África do Sul 5,00 (≈19%); os mercados de previsão dão à Tchéquia cerca de <b>56%</b> de chance de vitória. O trunfo estrutural da Tchéquia é a <b>bola parada</b>: os 11 gols de bola parada nas eliminatórias europeias da Copa de 2026 foram o maior número de toda a Europa (sendo 7 de escanteios, 50% do total de gols), e os 4 gols contra Irlanda e Dinamarca na repescagem também vieram todos de bola parada — diante de uma defesa aérea de uma África do Sul desfalcada e sem seu trinco de meio-campo Sithole, este é o ponto de ruptura mais afiado. O calcanhar de Aquiles é igualmente claro: a Tchéquia <b>tem pouca criatividade no jogo aberto</b> (já exposta pelo bloco baixo da Coreia do Sul na 1ª rodada), faltando um Plano B além de Schick; já a África do Sul é um <b>elenco desfalcado + uma seca ofensiva com xG de 0,07 no jogo todo</b>. Cenário-base: a Tchéquia vence por margem mínima graças à bola parada; a África do Sul busca uma chance de sobrevivência com bloco baixo disciplinado e contra-ataques. Índice de superaquecimento do mercado ≈ 2/5 (dois times fracos, pouco volume de discussão).</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Prob. implícita Tchéquia (sem margem)</div><div class="v" style="color:#ec6f7c">≈49%</div></div>
+      <div class="key"><div class="k">Prob. implícita África do Sul (sem margem)</div><div class="v" style="color:#ecc24a">≈19%</div></div>
+      <div class="key"><div class="k">Bola parada Tchéquia (elim.)</div><div class="v" style="color:var(--warn)">11 (maior da Europa)</div></div>
+      <div class="key"><div class="k">Índice de superaquecimento</div><div class="v" style="color:var(--good)">2/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>As duas suspensões da África do Sul</b>: o trinco de meio-campo Sithole + o principal recurso ofensivo de reserva Zwane ausentes ao mesmo tempo (vermelhos na 1ª rodada) — esta é a maior brecha na escalação de Broos e o ponto de entrada para a aceleração e a bola parada da Tchéquia.</li>
+      <li><b>Bola parada da Tchéquia vs defesa aérea da África do Sul</b>: a Tchéquia foi a 1ª de toda a Europa com 11 gols de bola parada nas eliminatórias (7 de escanteios) e marcou seus 4 gols da repescagem todos em bola parada; o bombardeio aéreo de Schick + Souček + Krejčí é o núcleo tático do jogo.</li>
+      <li><b>O gargalo da Tchéquia no jogo aberto</b>: depois de abrir o placar na 1ª rodada, foi neutralizada pelo bloco baixo da Coreia do Sul, secou de criatividade no jogo aberto e acabou sendo virada — se a África do Sul firmar o bloco baixo, a Tchéquia pode novamente cair na "posse de bola sem solução".</li>
+      <li><b>Árbitra do jogo: Tori Penso (EUA)</b>: a segunda mulher a apitar na história das Copas do Mundo masculinas (após Frappart em 2022); sua média de cartões amarelos em amostras internacionais é alta (cerca de 3,3-3,4 por jogo), e somado ao ambiente de arbitragem mais rigoroso desta edição, o risco de acúmulo de amarelos da África do Sul desfalcada merece atenção.</li>
+    </ul>
+  </div>
+
+  <!-- noticias-chave de ultima hora -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave de última hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · com fontes + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que afetam esta partida, com explicação item a item de como alteram a tática ou o resultado (inclui o que cada time traz do último jogo)</div>
+
+    <div style="border-left:3px solid var(--bad);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">África do Sul · Bagagem do último jogo · duas suspensões <span style="color:var(--mut);font-weight:400">· transferência da análise da estreia · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">África do Sul perdeu por 0-2 para o México na 1ª rodada, <b>Sithole + Zwane ambos suspensos por cartão vermelho</b>, e enfrenta a Tchéquia desfalcada</div>
+      <p style="font-size:13.5px">Dando sequência à projeção a partir da análise da estreia: no 0-2 contra o México, <b>Sithole (vermelho direto aos 50' por derrubar adversário em situação de gol claro) e Zwane (vermelho direto via VAR aos 82' por tapa em adversário) ficam ambos suspensos nesta partida</b> — o primeiro é o operário que faz a marcação de meio-campo e bloqueia o ponto de criação adversário, o segundo é o principal recurso ofensivo de reserva de Broos quando está atrás no placar. Mais grave ainda, naquele jogo a África do Sul teve um <b>xG total de apenas 0,07</b> (3 finalizações, 0 no alvo, apenas 2 toques na área), confirmando por completo o retrato de que defender puro não traz pontos. Desfalcada, será forçada a abrir o jogo, com risco ainda maior.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a ausência de Sithole enfraquece diretamente a cobertura e a interceptação no meio-campo da África do Sul, facilitando a progressão de Souček/Provod e a disputa da segunda bola na bola parada da Tchéquia; a ausência de Zwane retira o único recurso de contra-ataque de alta qualidade de Broos quando está atrás. Essas duas suspensões rebaixam a África do Sul de "defesa fechada + roubar pontos no contra-ataque" para "quase só dá para resistir", e são a base central para enxergar o handicap da Tchéquia (-0,5/-1) como um ângulo mais afiado.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo México vs África do Sul</a> · <a href="https://www.skysports.com/football/news/12098/13552605/world-cup-2026-mexico-2-0-south-africa-julian-quinones-and-raul-jimenez-score-as-co-hosts-win-opener-in-game-of-three-red-cards" style="color:var(--accent)">Sky Sports — crônica dos 3 cartões vermelhos</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ec6f7c;font-weight:700">Tchéquia · Bagagem do último jogo · gargalo no jogo aberto <span style="color:var(--mut);font-weight:400">· transferência da análise do jogo contra a Coreia · 2026-06-11</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tchéquia abriu 1-0 na 1ª rodada e <b>foi virada por 2-1 pela Coreia do Sul</b>; arma de bola parada já comprovada, mas falta criatividade no jogo aberto</div>
+      <p style="font-size:13.5px">Dando sequência à projeção a partir da análise do jogo contra a Coreia: a Tchéquia abriu 1-0 e em seguida foi virada por 2-1 pela Coreia do Sul — a arma de bola parada (gol cedo vindo de jogada ensaiada) já está comprovada, mas <b>após assumir a liderança a criatividade no jogo aberto secou</b>, e diante da pressão e do controle de jogo da Coreia foi perdendo terreno, reexpondo o velho problema da falta de um segundo recurso de ruptura além de Schick. Situação de classificação: a Tchéquia tem 0 pontos, mas só pega o México na última rodada e enfrenta agora a desfalcada África do Sul — o destino ainda está em suas mãos, e ela precisa dos 3 pontos.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a eficiência da Tchéquia em quebrar o bloco baixo da África do Sul é o maior suspense tático do jogo. Se, como na 1ª rodada, não conseguir abrir o jogo aberto, a bola parada (escanteios) se torna quase a única fonte de gols — e isso é justamente o ponto forte da Tchéquia e o ponto fraco do elenco desfalcado sul-africano; os dois sinais somados apontam para o roteiro principal da Tchéquia "vencer pela bola parada".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live" style="color:var(--accent)">Opta Analyst — estatísticas pós-jogo Coreia do Sul vs Tchéquia</a> · <a href="https://sports.yahoo.com/articles/south-korea-vs-czechia-box-003101523.html" style="color:var(--accent)">Yahoo — Box Score</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">Tchéquia · Trunfo estrutural <span style="color:var(--mut);font-weight:400">· Opta Analyst · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tchéquia com <b>11 gols de bola parada nas eliminatórias europeias, o maior número de toda a Europa</b> (7 de escanteios, 50% do total de gols); os 4 gols da repescagem foram todos de bola parada</div>
+      <p style="font-size:13.5px">Segundo a Opta, os gols de bola parada da Tchéquia nas eliminatórias europeias da Copa de 2026 (11) foram os maiores de toda a Europa, sendo os 7 gols de escanteio o maior número numa categoria isolada, e a bola parada representou 50% de todos os gols; além das disputas de pênaltis nos dois jogos da repescagem rumo à Copa, todos os 4 gols de jogo aberto contra Irlanda e Dinamarca também vieram de bola parada. Schick (ataque ao primeiro pau + finalização), Souček (jogo aéreo) e Krejčí são as principais armas aéreas; Provod é o principal cobrador e ponto de cruzamento nas jogadas ensaiadas.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: os gols sofridos pela África do Sul na 1ª rodada já vinham em parte de seus próprios erros de saída de bola, e agora ela ainda perde Sithole, seu interceptador central e disputante da segunda bola — o bombardeio de escanteios e bola parada da Tchéquia atinge exatamente o elo mais frágil do elenco desfalcado sul-africano. Este é um caminho de ruptura com muito mais conteúdo informativo do que um "duelo de ataque no jogo aberto", e sustenta o ângulo do handicap da Tchéquia.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats" style="color:var(--accent)">Opta Analyst — dados de bola parada da Tchéquia</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history" style="color:var(--accent)">FIFA — história da seleção tcheca</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#ecc24a;font-weight:700">Escalação · Prováveis titulares <span style="color:var(--mut);font-weight:400">· Wincomparator · Racing Post · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Tchéquia deve manter a formação de bola parada (Schick centroavante único); África do Sul é forçada a remontar o meio-campo, com Makgopa/Foster no ataque</div>
+      <p style="font-size:13.5px">Provável escalação da Tchéquia: Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick — dando continuidade ao esquema de bola parada das eliminatórias, com Schick como núcleo de finalização. A África do Sul, com Sithole/Zwane suspensos, é forçada a remontar: Williams (C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster — no meio-campo, Moremi assume a posição de Sithole, e no ataque Makgopa forma dupla com Foster. <span style="color:var(--warn)">[a escalação oficial de ambos depende da lista da FIFA pré-jogo · a confirmar]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: com a perda de Sithole no meio-campo, a qualidade de interceptação e disputa da segunda bola de Mokoena/Moremi cai, justamente a área-alvo da bola parada da Tchéquia e da infiltração de Souček; se Schick estiver em boa fase e os cruzamentos de Provod forem precisos, a probabilidade de a Tchéquia romper o elenco desfalcado sobe bastante. As duas mudanças afetam tanto o handicap quanto o mercado de quem abre o placar.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/" style="color:var(--accent)">Wincomparator — prováveis titulares/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/" style="color:var(--accent)">Racing Post — situação dos times/apostas</a> · <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — prévia/prováveis titulares</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Ambiente da partida · árbitra do jogo já oficializada <span style="color:var(--mut);font-weight:400">· FIFA / ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitra definida: a renomada apitadora americana <b>Tori Penso</b> — a <b>segunda mulher a apitar</b> na história das Copas do Mundo masculinas</div>
+      <p style="font-size:13.5px">A FIFA designou a americana <b>Tori Penso</b> para apitar esta partida da 2ª rodada do Grupo A; ela se tornará a <b>segunda mulher a arbitrar uma partida oficial na história das Copas do Mundo masculinas</b> (após Frappart no Catar 2022); as árbitras assistentes serão as americanas Brooke Mayo e Kathryn Nesbitt, e o quarto árbitro será o neozelandês Campbell-Kirk Kawana-Waugh. Penso apitou a final da Copa do Mundo Feminina de 2023 (primeira árbitra americana a apitar uma final de Copa do Mundo) e tem amostra real de grandes torneios masculinos nos Jogos Olímpicos de Paris 2024 (futebol masculino) e no Mundial de Clubes de 2025 (apitou Al Ain vs Juventus e Dortmund vs Ulsan). A partida será disputada indoor no Mercedes-Benz Stadium de Atlanta, sem variável climática.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: a média de cartões amarelos de Penso em amostras internacionais é alta (cerca de 3,3-3,4 por jogo), e somada ao ambiente de arbitragem rigoroso desta edição (3 vermelhos já na estreia), se a África do Sul desfalcada protelar ou se confrontar de forma emocional, o custo de acúmulo de amarelos (2 amarelos = suspensão no jogo seguinte) e de faltas na área será amplificado; sua frequência de marcação de pênaltis é de cerca de 0,36 por jogo, e o critério de marcação em disputas dentro da área merece atenção. Veja mais no módulo de arbitragem abaixo.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/" style="color:var(--accent)">TelecomAsia — designação de Penso</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa" style="color:var(--accent)">FIFA — Penso no Mundial de Clubes</a></div>
+    </div>
+  </section>
+
+  <!-- Escalações oficiais -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0d2014,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#04140d">✅</span> Escalações oficiais e leitura <span style="font-size:12px;color:var(--mut);font-weight:500">· Confirmado por duas fontes (FIFA oficial + 101GreatGoals) · divulgado ~50 min antes do início</span></h2>
+    <div class="sub">Cada equipe faz <b>5 mudanças</b>, todas rotações do técnico (não desfalques de última hora). <span style="color:var(--good)">✅ Confirmado oficialmente</span></div>
+
+    <div class="twocol">
+      <div>
+        <h4>🇨🇿 Escalação oficial da Tchéquia <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA marca 5-2-3</span></h4>
+        <div class="lineup">Kovář(1); Holeš(3) · Hranáč(4) · Coufal(5) · Krejčí(7,C); Darida(8) · Červ(12) · Sadílek(18) · Sojka(24); Hložek(9) · Schick(10)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Armas-chave no banco: <b>Souček(22)</b> (referência aérea em bola parada / desarmador, fora do time) · <b>Provod(17)</b> (criatividade pela esquerda) · <b>Šulc(15)</b> (meia de ligação livre)</div>
+      </div>
+      <div>
+        <h4>🇿🇦 Escalação oficial da África do Sul <span style="color:var(--mut);font-weight:400;font-size:12px">· FIFA marca 4-2-3-1</span></h4>
+        <div class="lineup">Williams(1,C); Mudau(20) · Mbokazi(14) · Okon(21) · Modiba(6); Mokoena(4) · Mbatha(5); Appollis(7) · Adams(23) · Maseko(12); Rayners(15)</div>
+        <div style="font-size:12.5px;color:var(--mut);margin-top:6px">Armas-chave no banco: <b>Foster(9)</b> (atacante da Premier League, força para o segundo tempo) · <b>Mofokeng(10)</b> (faísca) · <b>Makgopa(17)</b> (referência aérea) · <b>Moremi(8)</b></div>
+      </div>
+    </div>
+
+    <h4 style="margin-top:18px">📋 vs escalação provável</h4>
+    <table>
+      <tr><th>Mudança</th><th>Provável</th><th>Oficial</th><th>Por que importa</th></tr>
+      <tr><td class="ht">TCH · volante</td><td>Souček titular</td><td>Souček no banco</td><td>Sua melhor presença aérea fica de fora: cai a "qualidade" do bombardeio de bola parada. É o ponto em que a tese central do resumo precisa de ajuste.</td></tr>
+      <tr><td class="ht">TCH · meio-campo</td><td>Provod · Šulc</td><td>Darida · Červ · Sadílek</td><td>Trocados por um trio de mobilidade/saída de bola: resposta direta ao "secou a criatividade no jogo aberto, sufocada pelo bloco baixo" da estreia.</td></tr>
+      <tr><td class="ht">TCH · ataque</td><td>Schick centroavante único</td><td>Hložek + Schick</td><td>Mais profundidade com duas pontas, pressionando a linha alta da África do Sul e abrindo mais espaço para o contra-ataque.</td></tr>
+      <tr><td class="sc">AFS · zagueiro</td><td>Sibisi</td><td>Okon</td><td>Rotação defensiva; Okon entra no miolo da zaga.</td></tr>
+      <tr><td class="sc">AFS · meio/ataque</td><td>Moremi / Makgopa · Foster</td><td>Mbatha · Adams / Rayners centroavante único</td><td>Broos tira o atacante de PL Foster por um meio-campo mais de controle + Rayners na frente: continuidade do pragmático "bloco baixo + contra".</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">🧠 Leitura tática</h4>
+    <ul class="watch">
+      <li><b>Conclusão do resumo: mantém-se, mas com ajuste na bola parada</b> — o resumo apontava o "bombardeio aéreo de Schick + Souček + Krejčí" como ponto de ruptura central, mas Souček está no banco, retirando a maior ameaça aérea da Tchéquia e baixando a intensidade do bombardeio em escanteio/bola parada frente ao esperado; Krejčí, Hranáč, Holeš e Hložek ainda dão presença aérea, e Souček fica como opção para o segundo tempo. <b>A vantagem em bola parada segue como a linha principal, com a intensidade revisada para baixo.</b></li>
+      <li><b>A reformulação do meio-campo da Tchéquia responde direto ao ponto fraco</b>: Darida + Červ + Sadílek substituem Souček/Provod/Šulc, somando mobilidade, saída de bola e chegadas — atacando o problema da estreia de ser sufocada pelo bloco baixo da Coreia sem resposta com a bola, e cobrindo a "falta de criatividade no jogo aberto" do resumo.</li>
+      <li><b>Hložek ao lado de Schick (FIFA 5-2-3)</b>: de um centroavante único para duas referências, somando penetração; se a África do Sul subir as linhas, a Tchéquia ganha mais espaço no contra-ataque.</li>
+      <li><b>África do Sul: Rayners centroavante único, Foster fora</b>: Broos opta por um meio-campo de controle (Mbatha + Adams) + Rayners em vez do nível-PL de Foster, dando continuidade ao disciplinado "bloco baixo + contra" e ecoando o "arrancar uma sobrevida com bloco baixo" do resumo; mas a seca ofensiva de 0,07 xG da estreia não é claramente aliviada pelas mudanças, com Foster/Mofokeng guardados como recursos para buscar o resultado no segundo tempo.</li>
+    </ul>
+
+    <div class="note">📊 <b>Reação do mercado</b>: até este módulo (≈50 min antes do início), não se detecta movimento claro da linha 1X2/mais-menos após a divulgação das escalações. Com baixo interesse nos dois times e mudanças que são rotações do técnico e não desfalques-surpresa, espera-se reação limitada da linha. Apenas como fato, não é recomendação de apostas.</div>
+
+    <div style="font-size:12px;margin-top:12px;color:var(--mut)">Fontes: <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440" style="color:var(--accent)">Match Centre oficial da FIFA — Line Up</a> · <a href="https://www.101greatgoals.com/football/world-cup-news/world-cup-2026-live-czechia-vs-south-africa-teams-line-ups-tv-channel-live-online-stream/" style="color:var(--accent)">101GreatGoals — times confirmados</a></div>
+  </section>
+
+  <!-- lado dos dados -->
+  <section>
+    <h2><span class="n">1</span> Lado dos dados (central)</h2>
+    <div class="sub">Probabilidades implícitas de vitória/empate/derrota (odds sem margem) · panorama do Grupo A · mercado de mais/menos gols · retrato de força geral — todos os gráficos usam dados já verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Probabilidade implícita 1X2 (sem margem, calculada a partir das odds DECIMAIS)</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidade implícita Mais/Menos 2,5 gols (sem margem)</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Ranking FIFA das quatro seleções do Grupo A (quanto menor, mais forte)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Retrato de força geral (avaliação dos analistas 0-10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇨🇿 Tchéquia</th><th>🇿🇦 África do Sul</th></tr>
+      <tr><td>Treinador</td><td class="ht">Miroslav Koubek (substituiu Hašek em 12-2025)</td><td class="sc">Hugo Broos (belga)</td></tr>
+      <tr><td>Resultado da 1ª rodada</td><td class="ht">1-2 contra a Coreia do Sul (abriu 1-0 e foi virada)</td><td class="sc">0-2 contra o México (levou 2 vermelhos)</td></tr>
+      <tr><td>Suspensos/desfalques nesta partida</td><td class="ht">Nenhuma suspensão de titular confirmada</td><td class="sc"><b>Sithole + Zwane suspensos</b> (vermelhos na 1ª rodada)</td></tr>
+      <tr><td>Forma de classificação</td><td class="ht">Vice-líder do grupo nas eliminatórias europeias (atrás da Croácia) + repescagem: eliminou Irlanda e Dinamarca nos pênaltis</td><td class="sc">Líder do grupo nas eliminatórias africanas</td></tr>
+      <tr><td>Retrato de bola parada</td><td class="ht"><b>11 gols de bola parada nas eliminatórias europeias, o maior de toda a Europa</b> (7 de escanteios, 50% dos gols)</td><td class="sc">xG de 0,07 na 1ª rodada, apagada tanto no jogo aberto quanto na bola parada</td></tr>
+      <tr><td>Últimos dois grandes torneios</td><td class="ht">Euro 2024: eliminada na lanterna do grupo · Euro 2020: oitavas de final (derrota para a Dinamarca)</td><td class="sc">CAN 2023: 3º lugar · CAN 2025: oitavas de final (derrota para Camarões)</td></tr>
+      <tr><td>Odds 1X2 (DECIMAIS)</td><td class="ht">Vitória 1,75 (implícita ≈49%)</td><td class="sc">Vitória 5,00 (≈19%) · empate 3,80 (≈32%)</td></tr>
+      <tr><td>Mais / Menos 2,5 gols</td><td colspan="2" class="sc">Mais gols ligeiramente mais afiado (Over 2,5 cerca de 1,88, implícita ≈53%); ambos precisam marcar para sobreviver, ampliando a margem de oscilação do placar</td></tr>
+      <tr><td>Jogadores-chave</td><td class="ht">Patrik Schick / Tomáš Souček / Lukáš Provod</td><td class="sc">Ronwen Williams / Lyle Foster / Evidence Makgopa</td></tr>
+    </table>
+    <div class="note">📌 As probabilidades são as implícitas após retirar a margem das odds DECIMAIS (≈49/32/19). Fonte das odds: bet365 (Tchéquia 1,75 / -143, empate 3,80 / +280, África do Sul 5,00 / +400); conversão da linha americana para decimal: -143→1,70, +280→3,80, +400→5,00 (a melhor cotação do mercado chega a 1,82 para a Tchéquia e 4,00 para a África do Sul). A linha de mais/menos gols está em 2,5: Over 2,5 cerca de 1,88 (implícita ≈53%, ligeiramente afiada); como ambos "perdem e estão eliminados", o grau de abertura aumenta; BTTS (ambos marcam) cerca de 2,00. Handicap da Tchéquia -0,5/-1 a confirmar conforme a linha em tempo real pré-jogo. Apenas para fins de análise — não é recomendação de apostas.</div>
+  </section>
+
+  <!-- Dados aprofundados · Métricas esperadas -->
+  <section style="border:1px solid #14503f;background:linear-gradient(135deg,#0d201a,#161d2e)">
+    <h2><span class="n" style="background:#10b981;color:#04140d">📈</span> Dados aprofundados · Métricas esperadas <span style="font-size:12px;color:var(--mut);font-weight:500">· Média histórica vs valor real desta Copa · sinais de qualidade subjacente · com fontes</span></h2>
+    <div class="sub">Método central: confrontar item a item a <b>base histórica de cada time (últimos dois grandes torneios / eliminatórias / amostra de amistosos)</b> com o <b>valor real dos jogos já disputados nesta Copa</b>, para ver "se nesta Copa está acima ou abaixo do nível histórico, e o que isso significa". As amostras públicas de xG das seleções são limitadas; itens ausentes são marcados como "a confirmar", nunca inventados.</div>
+
+    <h4>① Núcleo: Média histórica vs valor real desta Copa (time a time)</h4>
+    <table>
+      <tr><th>Time / métrica</th><th>Base histórica (amostra/fonte)</th><th>Real nesta Copa (1ª rodada)</th><th>Diferença e leitura</th></tr>
+      <tr><td class="ht">🇨🇿 Tchéquia · Ataque xG/gols</td><td class="ht">Nas eliminatórias europeias, média de gols por jogo relativamente alta, mas <b>50% vindos de bola parada</b> (11 gols de bola parada, o maior de toda a Europa); na Euro 2024, apenas 2 gols em 3 jogos da fase final</td><td class="ht">1ª rodada <b>xG 0.81</b>, 1 gol marcado (1-2 contra a Coreia do Sul, chegou a estar 1-0 à frente)</td><td>Nesta Copa, a criatividade no jogo aberto se aproxima do patamar de "seca na fase final" (≈0.8 xG), <b>abaixo</b> do número vistoso de gols das eliminatórias — o dividendo da bola parada não se concretizou neste jogo, e falta um Plano B no jogo aberto</td></tr>
+      <tr><td class="ht">🇨🇿 Tchéquia · Defesa xGA/gols sofridos</td><td class="ht">Defesa intermediária nas eliminatórias europeias; passou na repescagem nos pênaltis, não se destacando por jogos sem sofrer gols</td><td class="ht">1ª rodada sofreu <b>1.84 xGA</b> da Coreia do Sul, levou 2 gols (virada após estar à frente)</td><td><b>Pior</b> do que a impressão histórica: não consegue conter a penetração pelo meio, gestão colapsa após abrir o placar — é um risco estrutural diante de adversários com capacidade de jogo posicional</td></tr>
+      <tr><td class="sc">🇿🇦 África do Sul · Ataque xG/gols</td><td class="sc">No 3º lugar da CAN 2023 já classificou com "poucos gols + pênaltis", ataque pobre; eliminatórias e amistosos (5 jogos sem vencer, 1-1 com a Jamaica, 0-0 com a Nicarágua) com baixa média de gols por jogo</td><td class="sc">1ª rodada <b>xG 0.07</b> (jogo inteiro ≈ ameaça zero), 0 gol</td><td><b>Muito abaixo</b> da base histórica já pobre — 0.07 é um nível dos piores na história do time; após a <b>dupla suspensão de Sithole+Zwane</b>, o ataque fica ainda mais sem solução</td></tr>
+      <tr><td class="sc">🇿🇦 África do Sul · Defesa xGA/gols sofridos</td><td class="sc">A base histórica do time = defesa disciplinada em bloco baixo (na CAN avançou longe sofrendo poucos gols)</td><td class="sc">1ª rodada sofreu 2 gols, defesa foi furada após levar 2 cartões vermelhos</td><td>Os vermelhos fizeram com que "a única virtude" também falhasse; um a menos + titulares suspensos rebaixam ainda mais a base defensiva neste jogo</td></tr>
+    </table>
+    <div class="note">📌 <b>Leitura real vs histórica</b>: os valores reais desta Copa de ambos os times estão <b>abaixo</b> de suas respectivas bases históricas — a Tchéquia recuou ao patamar de "seca na fase final" no jogo aberto (0.81 xG), com a bola parada sem se concretizar; o ataque da África do Sul (0.07 xG) atingiu mínima histórica e a defesa piorou com vermelhos + dupla suspensão. Os dados aprofundados estão alinhados à linha mestra: "a Tchéquia é favorita no papel, mas furar o bloco baixo ainda exige um Plano B além de Schick". Fontes: Opta Analyst (xG/estatística da 1ª rodada) · FotMob/Sofascore (dados da 1ª rodada) · registros públicos de grandes torneios/eliminatórias do histórico dos times. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4>② Projeção do jogo & calibração Opta</h4>
+    <table>
+      <tr><td>xG projetado pelo modelo deste jogo (xGscore)</td><td class="ht">Tchéquia ≈1.4</td><td class="sc">África do Sul ≈0.6</td><td>Após calibração, a projeção da Tchéquia é claramente superior — mas "furar um bloco baixo compacto" sempre foi o ponto fraco da Tchéquia; atenção à eficiência de conversão</td></tr>
+      <tr><td>Opta Power Ranking / supercomputador</td><td colspan="2" class="sc">No sistema, a Tchéquia está firme na parte de cima do Grupo A e a África do Sul na lanterna; o supercomputador dá ≈49% de vitória à Tchéquia (consistente com as odds sem margem)</td><td>Após calibração da força dos adversários, a amostra da Tchéquia tem mais valor que a da África do Sul (cujos adversários foram mais fracos)</td></tr>
+      <tr><td>Pressão PPDA · xT · field tilt</td><td colspan="2" class="sc">Dados públicos de seleções limitados <span style="color:var(--warn)">(a confirmar)</span> — qualitativo: Tchéquia em bloco médio-alto + bombardeio de bola parada, África do Sul forçada ao bloco baixo mas com um degrau a menos de execução</td><td>A inclinação do campo provavelmente penderá por muito tempo para a Tchéquia</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">③ Consulta rápida de métricas aprofundadas (o que cada um desses indicadores "tipo xG" representa)</h4>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG / npxG</b> (gols esperados / gols esperados sem pênaltis): soma da qualidade das chances de finalização; ao excluir pênaltis, reflete melhor a criatividade no jogo aberto.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGA / xGC</b> (gols esperados sofridos): a qualidade das chances que o adversário cria contra você, mede o nível real da defesa em vez de depender de defesas/sorte.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xGD / 90</b> (saldo esperado a cada 90 minutos): xG−xGA, o melhor indicador isolado para representar a força geral.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">xG per shot</b> (qualidade média por finalização): se a escolha de finalização é eficiente — valor baixo = muitos chutes de longe / chances ruins.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">PPDA</b> (passes permitidos por ação defensiva): quanto menor o valor, mais intensa a pressão, refletindo a intensidade da marcação.</div>
+      <div style="background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:12.5px"><b style="color:#34d399">Field tilt</b> (inclinação do campo): proporção de toques no terço ofensivo, mede território/domínio de campo em vez de simples posse de bola.</div>
+    </div>
+    <div style="font-size:12px;color:var(--mut);margin-top:8px">Observação: este módulo prioriza fontes públicas como Opta/FotMob/Sofascore/Understat/xGscore; as seleções têm amostras públicas limitadas em métricas detalhadas como PPDA/xT/field tilt, e os itens ausentes são sempre marcados como "a confirmar", nunca inventando valores.</div>
+  </section>
+
+  <!-- temperatura do mercado de apostas -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Temperatura do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· recomendações de especialistas / odds / fluxo de dinheiro / opinião pública</span></h2>
+    <div class="sub">Um confronto entre dois times fracos derrotados na 1ª rodada — pouco volume de discussão, dinheiro fino, mas direção consensual a favor da Tchéquia; o dinheiro recai principalmente no handicap da Tchéquia e no mais/menos gols</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.25">🔥🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--good)">2/5 · frio; direção pende para a Tchéquia, mas com pouco volume e sem prêmio emocional</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Dois times de baixa atenção + horário fora de pico (12:00 ET) + ambos recém-derrotados — tanto o calor do tema quanto o dinheiro de apostas são finos. A maioria dos especialistas aposta na Tchéquia (base: vantagem na bola parada + duas suspensões da África do Sul), mas é um "consenso razoável", não superaquecimento. O dinheiro se concentra no <b>handicap da Tchéquia e no mais/menos gols</b>, não no simples mercado de resultado.</div>
+    </div>
+
+    <h4>① Agregação de recomendações de especialistas (estatística de direção: vitória da Tchéquia maioria · empate minoria · vitória da África do Sul 0)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>Wincomparator</td><td>modelo de previsão/odds</td><td>Vitória da Tchéquia <b>49,2%</b> / empate 31,6% / África do Sul 19,2%; recomenda principalmente Over 2,5 (55,2%)</td></tr>
+      <tr><td>Racing Post</td><td>mídia britânica de apostas</td><td>Vitória da Tchéquia; pacote 7-2 com foco em gol de Schick + controle de jogo da Tchéquia</td></tr>
+      <tr><td>Squawka</td><td>mídia de dados</td><td>Tchéquia como o lado mais limpo; ataque desfalcado da África do Sul é fraco</td></tr>
+      <tr><td>Goal.com</td><td>mídia de previsão</td><td>"Perdeu, está eliminado" — Tchéquia leva vantagem com a bola parada e Schick</td></tr>
+      <tr><td>Compare.bet</td><td>agregador de odds</td><td>Vitória da Tchéquia + ângulo de mais gols</td></tr>
+      <tr><td>Johnnybet / TFA</td><td>mídia de previsão</td><td>Vitória da Tchéquia; a África do Sul só tem chance de empate com grandes defesas de Williams</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Sinal de superaquecimento (baixo)</b>: a maioria aposta na vitória da Tchéquia — isto é um consenso razoável, não superaquecimento. A real divergência está no <b>mais/menos gols (Over vs Under) e na magnitude do handicap</b> (-0,5 vs -1), e em se a África do Sul consegue um empate com Williams e o bloco baixo. Não há dinheiro significativo empurrando a vitória da África do Sul, e o calor do tema é baixo no geral.</div>
+
+    <h4 style="margin-top:20px">② Movimentação das odds (DECIMAIS)</h4>
+    <table>
+      <tr><th>Momento</th><th>Mercado</th><th>Vitória da Tchéquia</th><th>Leitura</th></tr>
+      <tr><td>Abertura (bet365)</td><td>1X2</td><td class="ht">1,75 (-143)</td><td>Clara preferência pela Tchéquia; empate 3,80 (+280) / África do Sul 5,00 (+400)</td></tr>
+      <tr><td>Fechamento 06-17</td><td>multiplataforma</td><td class="ht">1,70-1,82 (melhor do mercado 1,82)</td><td>Odd curta da Tchéquia oscilando numa faixa estreita, basicamente estável</td></tr>
+      <tr><td>06-17</td><td>Mais/Menos gols</td><td colspan="2" class="ht">Mais gols ligeiramente afiado (Over 2,5 cerca de 1,88, implícita ≈53%); ambos precisam marcar para sobreviver</td></tr>
+      <tr><td>Handicap (referência asiática)</td><td>Tchéquia -0,5 / -1</td><td colspan="2" class="ht">As odds específicas do handicap Tchéquia -0,5/-1 a confirmar conforme a linha em tempo real</td></tr>
+    </table>
+    <div class="note">📌 As odds 1X2 praticamente não se mexem — preço de resultado estável. A descoberta de preço mais ativa está no <b>handicap (-0,5/-1) e no mais/menos gols (mais gols ligeiramente afiado)</b>, além de gol de Schick a qualquer momento e props de número de escanteios da Tchéquia. Apenas para fins de análise — não é recomendação de apostas.</div>
+
+    <h4 style="margin-top:20px">③ Mercados de previsão & ④ Opinião pública</h4>
+    <ul class="cl">
+      <li><b>Kalshi / Polymarket (agregação DefiRate)</b>: cerca de <b>56%</b> de chance de vitória da Tchéquia nesta partida — alinhado com a direção das casas sem margem; probabilidade de vencer o Grupo A: México 62,5%, Coreia do Sul 35%, Tchéquia 3,4%, África do Sul 0,5%; a classificação de ambos está à beira da eliminação. <span style="color:var(--warn)">[volume de negociação da partida específica e detalhamento do momentum de 30 dias não divulgados separadamente · a confirmar]</span></li>
+      <li><b>Foco da opinião pública</b>: ① <b>Tori Penso se torna a segunda árbitra da história das Copas do Mundo masculinas</b> — esta é a maior fonte de volume de discussão da partida (o valor narrativo supera o próprio jogo); ② as duas suspensões da África do Sul e a luta pela sobrevivência na "véspera da eliminação".</li>
+      <li><b>Narrativa da África do Sul</b>: elenco desfalcado + xG de 0,07 na estreia; a confiança do público na vitória sul-africana é baixíssima; um pouco de dinheiro de "bilhete de loteria de longa distância" aposta na vitória da África do Sul, mas o preço não subiu de forma evidente.</li>
+      <li><b>Narrativa da Tchéquia</b>: time forte em bola parada + obrigada a vencer; a direção dos especialistas é concentrada, mas com baixo calor — é um "favorito razoável de baixa atenção".</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>Leitura geral</b>: a direção do resultado é clara (Tchéquia), as casas e os mercados de previsão estão alinhados, índice de superaquecimento <b>2/5</b> (frio). O calor do tema vem principalmente do <b>significado histórico de Penso como árbitra mulher</b>, não do próprio jogo; os mercados com mais conteúdo informativo são o <b>handicap da Tchéquia (-0,5/-1), o mais/menos gols e os props de gol de Schick / escanteios da Tchéquia</b>. Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — previsão/odds</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — odds/apostas</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — prévia</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — previsão</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — Kalshi/Polymarket</a></div>
+  </section>
+
+  <!-- arbitragem -->
+  <section>
+    <h2><span class="n">2</span> Árbitra do jogo & ambiente de arbitragem</h2>
+    <div class="note">✅ <b>Confirmado</b>: a árbitra principal desta partida é a americana <b>Tori Penso</b> — a <b>segunda mulher a apitar uma partida oficial</b> na história das Copas do Mundo masculinas (após Frappart no Catar 2022); as assistentes são as americanas Brooke Mayo e Kathryn Nesbitt, e o quarto árbitro é o neozelandês Campbell-Kirk Kawana-Waugh. Fontes: FIFA / ESPN / TelecomAsia.</div>
+    <h4>Últimos dois grandes torneios + critério de arbitragem internacional (dados reais)</h4>
+    <ul class="cl">
+      <li><b>Amostra real de grandes torneios masculinos (chave)</b>: Penso possui <b>amostra real de arbitragem em grandes torneios masculinos</b> — apitou 1 jogo da fase de grupos do futebol masculino nos Jogos Olímpicos de Paris 2024; apitou 2 jogos no Mundial de Clubes de 2025 (Al Ain vs Juventus, Dortmund vs Ulsan) e foi quarta árbitra 2 vezes; apitou a final da Copa do Mundo Feminina de 2023 (primeira árbitra americana a apitar uma final de Copa do Mundo). Isso a diferencia de árbitras estreantes sem qualquer amostra de grandes torneios, com valor de referência relativamente alto, mas a amostra de jogos isolados em grandes torneios masculinos de elite ainda é pequena.</li>
+      <li><b>Critério de cartões/pênaltis (amostra internacional combinada)</b>: pelo critério estatístico combinado, sua <b>média é de cerca de 3,3-3,4 amarelos e 0,04 vermelho por jogo</b>, com cerca de 25 pênaltis marcados na carreira (cerca de <b>0,36 por jogo</b>) — um critério de cartões abundante. <span style="color:var(--warn)">[o detalhamento da média de cartões por jogo de uma única edição de grande torneio masculino tem amostra pequena; vale o registro oficial · a confirmar]</span></li>
+      <li><b>Histórico de arbitragem com as duas seleções</b>: como árbitra americana de longa atuação em CONCACAF / MLS / futebol feminino, <b>não tem histórico público significativo de arbitragem nem polêmicas com Tchéquia ou África do Sul</b> — não há viés a favor de nenhum time.</li>
+      <li><b>Novas regras uniformes desta edição + sinal ambiental</b>: 8 segundos para o goleiro segurar a bola, só o capitão pode falar com a arbitragem, impedimento semiautomático; esta edição já teve 3 vermelhos na estreia (inédito em 20 anos de Copa), evidência concreta de um ambiente de arbitragem mais rigoroso. Se a desfalcada África do Sul protelar ou cercar a arbitragem, sob as novas regras e o critério abundante de cartões de Penso, o risco de acúmulo de amarelos (2 amarelos = suspensão no jogo seguinte) sobe.</li>
+    </ul>
+    <div class="flag">⚠ <b>Análise da arbitragem</b>: o critério de cartões de Penso é abundante (cerca de 3,3-3,4 amarelos/jogo) e, num jogo de "perdeu, está eliminado" com intensidade de disputa possivelmente elevada, o total de cartões e o acúmulo de amarelos da África do Sul merecem atenção; sua frequência de marcação de pênaltis é moderada (cerca de 0,36/jogo), com critério neutro nas disputas dentro da área. Como ela possui amostra real de grandes torneios masculinos (diferente de um perfil puramente feminino/de liga), a arbitragem é uma dimensão de análise referenciável neste jogo — mas a amostra de jogos isolados em grandes torneios masculinos de elite ainda é pequena, e a extrapolação do critério exige cautela.</div>
+  </section>
+
+  <!-- escalacao e jogadores-chave -->
+  <section>
+    <h2><span class="n">3</span> Escalação & desempenho recente <span style="font-size:11.5px;background:#1d4a2a;color:#7fe0a0;font-weight:600;padding:3px 9px;border-radius:20px">Versão provável — ver o módulo ✅ oficial acima</span></h2>
+    <div class="sub">Prováveis titulares (estimativa das fontes de análise, não oficial; a lista oficial já saiu — ver o módulo "✅ Escalações oficiais e leitura" acima)</div>
+    <h4>🇨🇿 Provável escalação da Tchéquia (4-2-3-1)</h4>
+    <div class="lineup">Kovář; Coufal · Chaloupek · Hranáč · Krejčí · Zelený; Souček · Sojka; Provod · Šulc · Schick</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Recente / observações</th></tr>
+      <tr><td class="ht">Patrik Schick</td><td>atacante / Leverkusen</td><td>Núcleo de finalização e primeiro pau na bola parada; em boa fase de gols no clube, é a principal arma da Tchéquia para romper o elenco desfalcado</td></tr>
+      <tr><td class="ht">Tomáš Souček</td><td>meio-campo / West Ham</td><td>Ponto aéreo da bola parada e disputante da segunda bola; peça-chave de infiltração no ataque de escanteio</td></tr>
+      <tr><td class="ht">Lukáš Provod</td><td>meia-ala / Slavia Praga</td><td>Principal cobrador de bola parada e ponto de desenho dos cruzamentos; principal fonte de criatividade no jogo aberto</td></tr>
+      <tr><td class="ht">Ladislav Krejčí</td><td>zagueiro / Villarreal</td><td>Saída de bola + ponto aéreo no ataque de bola parada, eixo nas duas fases</td></tr>
+    </table>
+    <h4>🇿🇦 Provável escalação da África do Sul (5-3-2 / 4-3-3, desfalcada)</h4>
+    <div class="lineup">Williams(C); Mudau · Sibisi · Mbokazi · Modiba; Mokoena · Moremi · Appollis; Makgopa · Foster</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Recente / observações</th></tr>
+      <tr><td class="sc">Ronwen Williams</td><td>goleiro / capitão</td><td>Herói dos pênaltis na CAN 2023; maior esperança da África do Sul por um empate, suas defesas e comando são a última linha</td></tr>
+      <tr><td class="sc">Lyle Foster</td><td>atacante / Burnley</td><td>Principal ponto de finalização da África do Sul, mas falta um recurso estável além de Foster (o xG de 0,07 na 1ª rodada confirma)</td></tr>
+      <tr><td class="sc">Evidence Makgopa</td><td>atacante</td><td>Marcou contra Camarões na CAN 2025; pode subir ao ataque para dar mais força ofensiva</td></tr>
+      <tr><td class="sc">Teboho Mokoena</td><td>meio-campo</td><td>Núcleo do meio-campo após a suspensão de Sithole; precisa assumir sozinho a interceptação e a saída de bola</td></tr>
+    </table>
+    <div class="note">Nota sobre as escalações: as prováveis de ambos os times são estimativas de análise da mídia (Wincomparator / Racing Post / ESPN), <b>valendo a lista oficial pré-jogo · a confirmar</b>. A África do Sul, por causa das <b>duas suspensões de Sithole + Zwane</b>, é forçada a remontar o meio-campo e o grupo ofensivo de reserva; a Tchéquia deve manter o esquema de bola parada, com Schick como centroavante único.</div>
+  </section>
+
+  <!-- tatica + treinadores -->
+  <section>
+    <h2><span class="n">4</span> Estilo tático & treinadores</h2>
+    <div class="sub">Cada conclusão é cruzada com o estilo de jogo e os resultados reais de ambos os times nos últimos dois grandes torneios</div>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#ec6f7c">🇨🇿 Tchéquia · Miroslav Koubek</div>
+        <div class="role">4-2-3-1 baseado em bola parada + muita corrida + coletividade, criatividade limitada no jogo aberto</div>
+        <ul class="cl">
+          <li>A marca da Tchéquia é a <b>melhor bola parada de toda a Europa, certificada pela Opta</b> (11 gols nas eliminatórias, 7 de escanteio; 4 gols da repescagem todos de bola parada) + muita corrida + coesão coletiva — desde que assumiu em 12-2025, Koubek classificou a equipe à Copa justamente com esse estilo, eliminando Irlanda e Dinamarca nos pênaltis. O jogo aéreo de Schick/Souček/Krejčí é a arma central.</li>
+          <li>Cruzamento de referência: na Euro 2024 a Tchéquia <b>foi eliminada na lanterna do grupo</b> (derrota para Portugal, empate com a Geórgia, derrota com 10 homens para a Turquia), expondo o vício crônico da criatividade seca no jogo aberto e da incapacidade de segurar a vantagem; o 1-0 que virou 2-1 contra a Coreia do Sul na 1ª rodada é a repetição do mesmo mal. Este é o maior risco do jogo — se a África do Sul firmar o bloco baixo, a Tchéquia pode novamente ficar com "posse de bola sem solução".</li>
+          <li>Ponto de entrada do jogo: com a perda de Sithole na interceptação de meio-campo e na disputa da segunda bola, o bombardeio de escanteios e bola parada da Tchéquia acerta em cheio o ponto fraco do elenco desfalcado; Schick em boa fase + cruzamentos precisos de Provod é o caminho realista para uma vitória por margem mínima.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#ecc24a">🇿🇦 África do Sul · Hugo Broos</div>
+        <div class="role">5-3-2 / bloco baixo + contra-ataque, forçada a ser conservadora desfalcada, carência de finalizadores</div>
+        <ul class="cl">
+          <li>A marca de Broos é a <b>cultura defensiva de bloco baixo disciplinado + contra-ataque rápido + coletivo jovem</b> — na CAN 2023 chegou às semifinais com esse estilo e conquistou o 3º lugar eliminando o Congo (RDC) nos pênaltis (Williams foi o herói), o modelo de auge da equipe.</li>
+          <li>Cruzamento de referência: na CAN 2025 a África do Sul avançou como 2ª do grupo e perdeu por 1-2 para Camarões nas oitavas (gol de Makgopa), mantendo o retrato de "defesa sólida, mas carência de finalizadores"; a estreia 0-2 contra o México levou esse ponto fraco ao extremo — <b>xG total de apenas 0,07</b>, o preço do 5-3-2 que só defende e não ataca cobrado por completo.</li>
+          <li>Resposta neste jogo: sem o trinco de meio-campo Sithole e o recurso ofensivo de reserva Zwane, a resiliência do bloco baixo de Broos cai, deixando-o no dilema entre "resistir para empatar" e "abrir o jogo para vencer"; a esperança realista está nas defesas de Williams, em emboscadas de bola parada e em ganhar tempo quando a Tchéquia não conseguir abrir o jogo aberto — mas abrir o jogo desfalcada só dá mais chances de bola parada à Tchéquia.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- insights dos analistas -->
+  <section>
+    <h2><span class="n">5</span> Insights dos analistas</h2>
+    <div class="insight"><div class="who">Opta Analyst <small>· instituto de dados</small></div>A Tchéquia teve 11 gols de bola parada nas eliminatórias europeias, o maior de toda a Europa (7 de escanteios, 50% dos gols), e seus 4 gols de jogo aberto na repescagem foram todos de bola parada — os dados quantificados confirmam que a bola parada é a fonte de gols mais confiável da Tchéquia; diante de uma África do Sul desfalcada e sem Sithole para disputar a segunda bola, essa vantagem é ainda mais amplificada.</div>
+    <div class="insight"><div class="who">Wincomparator <small>· modelo de previsão</small></div>Vitória da Tchéquia 49,2% / empate 31,6% / África do Sul 19,2%, recomendando principalmente Over 2,5 (55,2%, 1,88) — o modelo entende que o fato de ambos "perderem e estarem eliminados" eleva o grau de abertura e o número de gols, direção alinhada com as casas sem margem.</div>
+    <div class="insight"><div class="who">Perspectiva de handicap/mais-menos gols <small>· Racing Post / Compare.bet</small></div>Diversas mídias veem o <b>handicap Tchéquia -0,5/-1 e o Over 2,5</b> como mais interessantes do que o simples mercado de resultado, com base na vantagem de bola parada da Tchéquia + o elenco desfalcado sul-africano com as duas suspensões; gol de Schick e número de escanteios da Tchéquia são o principal campo de batalha dos apostadores de varejo movidos pelo tema.</div>
+    <div class="insight"><div class="who">Geral · significado histórico e sinais de arbitragem <small>· FIFA / ESPN</small></div>O jogo em si tem baixa atenção, mas <b>Tori Penso se tornando a segunda árbitra mulher das Copas do Mundo masculinas</b> traz volume narrativo histórico. O verdadeiro suspense não está na direção do resultado, e sim em <b>se a Tchéquia consegue romper o bloco baixo da África do Sul com a bola parada</b>, e em se o critério da arbitragem (Penso, abundante em cartões) amplifica os amarelos e as polêmicas na área sob a alta intensidade da "véspera da eliminação".</div>
+  </section>
+
+  <!-- avaliacao geral -->
+  <section>
+    <h2><span class="n">6</span> Avaliação geral & pontos a confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória da Tchéquia por margem mínima (1-0 / 2-0 / 2-1, rompendo via bola parada) é o cenário-base; o empate (≈32%) é uma cauda de probabilidade média — se a Tchéquia não conseguir abrir o jogo aberto como na 1ª rodada e ainda for neutralizada por Williams na bola parada, a África do Sul tem chance de empatar; a vitória da África do Sul (≈19%) exige que defesas decisivas de Williams + emboscadas de bola parada/contra-ataque + a "posse sem solução" da Tchéquia ocorram ao mesmo tempo.</li>
+      <li><b>Homens decisivos</b>: Schick (Tch./núcleo de finalização e primeiro pau na bola parada), Souček + Provod (Tch./ponto aéreo de escanteio e cruzamentos), Williams (África do Sul/maior esperança de empate), Foster/Makgopa (África do Sul/recurso limitado de contra-ataque).</li>
+      <li><b>Fator decisivo</b>: o real ponto de interesse do jogo é <b>se a bola parada da Tchéquia consegue romper o bloco baixo da África do Sul sem Sithole</b> — o que define a liquidação do handicap (-0,5/-1) e do mais/menos gols (mais gols ligeiramente afiado). O número de escanteios da Tchéquia e se Schick marca são o núcleo dos props correspondentes.</li>
+      <li><b>Perspectiva de mercado</b>: as casas e os mercados de previsão estão alinhados (preferência pela Tchéquia, cerca de 56%), com valor limitado no 1X2; os mercados com mais conteúdo informativo são o <b>handicap da Tchéquia (-0,5/-1), o mais/menos gols e os mercados detalhados de gol de Schick / escanteios da Tchéquia</b>. Índice de superaquecimento 2/5 (frio, o calor do tema vem do significado histórico de Penso como árbitra mulher, não do mercado de resultado).</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① <s>as escalações oficiais de ambos</s> <span style="color:var(--good)">✅ confirmadas (duas fontes, ver o módulo "Escalações oficiais e leitura" acima; 5 rotações por lado, Souček no banco)</span>; ② se a Tchéquia tem alguma lesão/suspensão não divulgada; ③ o detalhamento específico da média de cartões de Penso em uma única edição de grande torneio masculino (a amostra internacional combinada de cerca de 3,3-3,4 amarelos/jogo já está confirmada); ④ o volume de negociação da partida específica e o detalhamento do momentum de 30 dias na Kalshi/Polymarket não foram obtidos separadamente; ⑤ as odds específicas da linha de handicap asiático (-0,5/-1) e da linha total de mais/menos gols valem conforme a linha em tempo real pré-jogo.</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49079982/fifa-world-cup-2026-czechia-vs-south-africa-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — calendário/escalação/arbitragem</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021440">FIFA — central da partida</a> · <a href="https://www.wincomparator.com/predictions/czech-republic-south-africa-7937372/">Wincomparator — previsão/odds</a><br>
+      • <a href="https://theanalyst.com/articles/czechia-world-cup-2026-preview-set-pieces-stats">Opta Analyst — dados de bola parada da Tchéquia</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/czechia-team-profile-history">FIFA — história/classificação da seleção tcheca</a> · <a href="https://worldsoccertalk.com/world-cup/czechia-2026-world-cup-preview-squad-breakdown-key-player-and-tactical-analysis/">World Soccer Talk — tática da Tchéquia</a><br>
+      • <a href="https://theanalyst.com/articles/south-korea-vs-czechia-stats-2026-world-cup-live">Opta Analyst — Coreia do Sul vs Tchéquia (bagagem da Tchéquia)</a> · <a href="https://theanalyst.com/articles/mexico-vs-south-africa-stats-2026-world-cup">Opta Analyst — México vs África do Sul (bagagem da África do Sul/duas suspensões)</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/czech-republic-vs-south-africa-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-agsWj2c9RFvC/">Racing Post — odds/apostas</a><br>
+      • <a href="https://www.squawka.com/us/news/world-cup/match-preview-czech-republic-vs-south-africa-06-18-26-world-cup-2026/">Squawka — prévia</a> · <a href="https://www.goal.com/en-za/betting/world-cup/czechia-vs-south-africa-predictions-18-06-2026/A%3Abltf197fd987a2499e6">Goal — previsão</a> · <a href="https://www.compare.bet/news/czech-republic-vs-south-africa-betting-preview-predictions-tips-and-live-odds">Compare.bet — agregação de odds</a><br>
+      • <a href="https://www.telecomasia.net/news/football/american-penso-appointed-as-referee-for-czech-republic-vs-south-africa-match-at-2026-world-cup/">TelecomAsia — designação de Penso</a> · <a href="https://inside.fifa.com/refereeing/news/tori-penso-interview-club-world-cup-2025-referee-usa">FIFA — Penso no Mundial de Clubes</a> · <a href="https://en.wikipedia.org/wiki/Tori_Penso">Wikipedia — currículo de Penso</a> · <a href="https://defirate.com/prediction-markets/world-cup-odds/group-stage/">DefiRate — mercados de previsão</a><br>
+      • <a href="https://www.cafonline.com/afcon2025/news/cameroon-charge-into-the-quarter-finals-south-africa-fall-short-2-1/">CAF — África do Sul na CAN 2025 (eliminada nas oitavas)</a> · <a href="https://www.flashscore.com/news/soccer-euro-euro-2024-talking-points-portugal-impress-czech-regret-group-e-set-for-epic-end/ERs5dn9k">Flashscore — Tchéquia eliminada na Euro 2024</a>
+    </div>
+  </section>
+
+  <div class="foot">Centro de análises da Copa do Mundo 2026 · dados até 17-06-2026 · gráficos com dados já verificados, o gráfico de radar é uma avaliação geral dos analistas · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#c8102e',SC='#e0ad1a',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória da Tchéquia','Empate','Vitória da África do Sul'],datasets:[{data:[49,32,19],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Probabilidade implícita % (sem margem)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['Mais 2,5 gols','Menos 2,5 gols'],datasets:[{data:[53,47],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:70,title:{display:true,text:'Probabilidade implícita % (sem margem, leve viés para mais gols)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['México','Coreia do Sul','Tchéquia','África do Sul'],datasets:[{data:[15,23,42,60],backgroundColor:['#16a34a','#3b6fb0',HT,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'Ranking FIFA (quanto menor, mais forte; ilustrativo)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização ofensiva','Controle de meio-campo','Bola parada','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'Tchéquia',data:[6.5,6,6,9,7,5.5],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'África do Sul',data:[6,4.5,5.5,5,5.5,6],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

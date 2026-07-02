@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赛前深度分析 · 葡萄牙 vs 刚果(金) · 2026世界杯 K组</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-portugal-vs-drcongo.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-portugal-vs-drcongo.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-portugal-vs-drcongo.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-portugal-vs-drcongo.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-portugal-vs-drcongo.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --ht:#d21034;--sc:#3b6fb0;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#7a1f2b,#1d3a63);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#241318,#152138);border:1px solid var(--line);border-left:4px solid var(--sc);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.ht{color:#f08a82;font-weight:600}td.sc{color:#7fa6e6;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><b style="color:#38bdf8">中文</b> · <a href="/en/report-portugal-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-portugal-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">ES</a> · <a href="/pt/report-portugal-vs-drcongo.html" style="color:#92a0c2;text-decoration:none">PT</a></div>
+
+  <a class="back" href="/index.html">← 返回分析中心</a><br>
+  <span class="badge">🏁 已完赛 1-1 · 2026 世界杯 · K组首轮 · Ronaldo 哑火、刚果(金)时隔52年回归即斩获队史世界杯首分</span>
+  <h1>葡萄牙 vs 刚果(金)</h1>
+  <div class="meta">2026年6月17日 · 休斯顿 NRG Stadium · 13:00 ET · K组（同组：哥伦比亚、乌兹别克斯坦）</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇹 葡萄牙</div><div class="rk">FIFA #6 · 卫冕欧国联冠军 · Ronaldo 第六届世界杯 + Bruno Fernandes 组织核心</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇨🇩 刚果(金)</div><div class="rk">FIFA #60 区间 · 时隔52年重返世界杯（1974后首次）· 低位铁桶 + 快速反击</div></div>
+  </div>
+
+  <!-- ===== 赛后复盘 ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#141b2b)">
+    <h2><span class="n">📊</span> 赛后复盘 · 技战术与数据</h2>
+    <div class="sub">终场 葡萄牙 1-1 刚果(金)（半场 1-1）· 数据来源 Opta Analyst / Sofascore / FIFA / ESPN / Al Jazeera · 下方赛前内容完整保留作预测存档</div>
+
+    <h4>① 比分进程</h4>
+    <p style="font-size:14px">葡萄牙开局梦幻：第 <b>6 分钟</b> Pedro Neto 右路做球、<b>João Neves</b> 抢点破门，1-0——看上去剧本会按"热门轻取"展开。但刚果(金)随即用纪律严整的 5-3-2 把葡萄牙挡在禁区外，并在反击中逐渐占到机会上风。上半场补时阶段，<b>Arthur Masuaku</b> 左路送出助攻，<b>Yoane Wissa</b>（正是赛前主线点名的反击核心）在 <b>45+5'</b> 冷静推射，打入刚果(金)<b>世界杯历史首球</b>——这是他们参加世界杯以来的第 32 次射门才换来的首粒进球。下半场葡萄牙控球高达约 80%、却始终撞不开铁桶，Ronaldo 全场哑火（延续大赛连续 10 场不进球），1-1 的比分一直保持到终场，刚果(金)拿到队史首个世界杯积分。</p>
+    <div style="font-size:12.5px;color:var(--mut);background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:8px 0">⏱ 6' João Neves（Pedro Neto 助攻，葡 1-0）→ 13' Bernardo Silva 黄牌 → 32' Chancel Mbemba 黄牌 → 45+5' Wissa（Masuaku 助攻，刚果队史世界杯首球，1-1）→ HT 1-1 → 下半场葡萄牙约 80% 控球但零突破 → FT 1-1</div>
+
+    <h4>② 核心数据对照</h4>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:13.5px">
+      <tr style="border-bottom:1px solid var(--line);color:var(--mut)"><th style="text-align:left;padding:6px">指标</th><th style="padding:6px">🇵🇹 葡萄牙</th><th style="padding:6px">🇨🇩 刚果(金)</th><th style="text-align:left;padding:6px">解读</th></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">控球率</td><td style="text-align:center"><b>≈80%</b></td><td style="text-align:center">≈20%</td><td style="padding:6px;color:var(--mut)">葡萄牙近乎一边倒控球，却完全没转化为胜势——典型的"控而不破"</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">xG</td><td style="text-align:center">0.64</td><td style="text-align:center"><b>0.82</b></td><td style="padding:6px;color:var(--mut)">刚果(金) xG 反超葡萄牙——少控球但机会质量更高，这是平局的根本注脚</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">射门 / 射正</td><td style="text-align:center">7 / —</td><td style="text-align:center"><b>8</b> / —</td><td style="padding:6px;color:var(--mut)">控球 80% 却只 7 射、被对手射门数反超，破密集防守效率严重不足</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">绝佳机会</td><td style="text-align:center">—</td><td style="text-align:center"><b>1</b></td><td style="padding:6px;color:var(--mut)">上半场唯一一次绝佳机会属于刚果(金)，且被 Wissa 一击转化</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">禁区触球</td><td style="text-align:center"><b>11</b></td><td style="text-align:center">—</td><td style="padding:6px;color:var(--mut)">仅 11 次禁区触球，对一支 80% 控球的球队偏低——传导多停留在禁区外围</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">传球成功率</td><td style="text-align:center"><b>459/488 ≈94%</b></td><td style="text-align:center">—</td><td style="padding:6px;color:var(--mut)">传球极其精准（前场三区 94/109、86%），但都是无威胁的横向倒脚</td></tr>
+      <tr style="border-bottom:1px solid #1c2540"><td style="padding:6px">定位球 · 角球</td><td style="text-align:center">角球 1</td><td style="text-align:center"><b>角球 3</b></td><td style="padding:6px;color:var(--mut)">角球 1-3 落后——葡萄牙赛前倚重的定位球武器本场几乎没打出来</td></tr>
+      <tr><td style="padding:6px">犯规 · 黄红牌</td><td style="text-align:center">犯规 3 · 黄1（B.Silva）</td><td style="text-align:center">犯规 5 · 黄1（Mbemba）</td><td style="padding:6px;color:var(--mut)">无红牌；刚果(金)用恰当的中场犯规切断葡萄牙节奏，B.Silva 13' 早黄反映其焦躁</td></tr>
+    </table></div>
+
+    <h4>③ 技战术复盘</h4>
+    <div class="insight"><div class="who">① "控而不破"——80% 控球换不来第二球</div>葡萄牙坐拥约 80% 控球、94% 传球成功率，却只有 7 次射门、11 次禁区触球，xG 仅 0.64 反被对手 0.82 超过。传球大量停留在前场三区外围（94/109）而非禁区内。<b>这说明葡萄牙</b>：当对手摆出纪律严整的低位铁桶时，控球本身毫无意义——缺少打身后的纵向穿透与禁区内终结点，"控而不破"会反复出现，淘汰赛遇到摆大巴的对手时这是结构性风险。</div>
+    <div class="insight"><div class="who">② Desabre 的 5-3-2 铁桶 + Wissa 反击，赛前判读全中</div>刚果(金)用三中卫五后卫压缩传中空间、中场恰当犯规切节奏，把唯一一次绝佳机会通过 Wissa 的速度转化为进球——与赛前"纪律型防反、Wissa 是偷袭关键、葡萄牙赢但赢得不轻松"的主线完全吻合。<b>这说明刚果(金)</b>：Desabre 体系（AFCON 已点球淘汰埃及）对豪门切实可行，低位铁桶 + 单点速度的剧本可复制，是他们后两轮对哥伦比亚、乌兹别克斯坦的现实蓝本。</div>
+    <div class="insight"><div class="who">③ Ronaldo 的告别开局哑火，个人盘资金落空</div>41 岁的 Ronaldo 全场未能破门，大赛连续 10 场不进球，赛前作为散户资金最大入口的"Ronaldo 进球盘"全部落空，FOX 等媒体还点名其一次跑位选择"葬送"了一次机会。<b>这说明葡萄牙</b>：把破铁桶的希望寄托在一个 41 岁中锋的门前嗅觉上风险极高，Martínez 需要更早投入 Leão/Ramos 这类能制造纵深与混乱的奇兵，而非依赖站桩式终结点。</div>
+    <div class="insight"><div class="who">④ 轮休 Dias / Leão 的代价——板凳奇兵来得太晚</div>葡萄牙首发轮休了 Rúben Dias 与 Rafael Leão、改打 4-2-3-1，结果阵地战缺乏 Leão 的爆点与突破，破局奇兵直到落后才登场，为时已晚。<b>这说明葡萄牙</b>：面对必须强攻的弱旅，过早轮休核心爆点球员会直接削弱破铁桶能力——阵容深度是优势，但使用时机错了就会变成失分的隐患。</div>
+
+    <h4>④ 预测对账（赛前结论逐项核对）</h4>
+    <ul class="watch" style="font-size:13.5px">
+      <li>✗ <b>速览结论"基准剧本：葡萄牙 2-0 取胜" → 实际 1-1 平</b>：热门未能拿下三分，基准剧本未兑现，刚果(金)爆出冷平。</li>
+      <li>✗ <b>葡萄牙胜（去水隐含 ≈76%）→ 实际打平</b>：高隐含胜率落空，正是赛前"绝非碾压、可能赢得不轻松"警示的极端兑现。</li>
+      <li>✓ <b>"刚果(金)组织度足够、不太可能被血洗" → 实际守平且 xG 占优</b>：对刚果(金)防反实力的判读精确，甚至偏保守。</li>
+      <li>△ <b>大小球倾向（破密集防守效率决定大小球）→ 实际仅 2 球（小球一侧）</b>：方向上"赢得不轻松/小球两面性"已点出，但具体走小且只进 2 球。</li>
+      <li>✓ <b>市场过热指数 2.5/5（提示热门有被高估风险）→ 兑现</b>：过热提示正确，葡萄牙让球与 Ronaldo 进球盘资金全数落空。</li>
+      <li>✓ <b>Yoane Wissa 是刚果(金)偷袭关键 → Wissa 打入队史世界杯首球</b>：赛前点名的反击核心精确命中。</li>
+    </ul>
+
+    <h4>⑤ 前瞻迁移（带入下一场）</h4>
+    <div class="grid2">
+      <div class="insight" style="margin:0"><div class="who">🇵🇹 葡萄牙 → 6/23 vs 乌兹别克斯坦（休斯顿 NRG Stadium）</div>① 乌兹别克斯坦首轮 1-3 不敌哥伦比亚、但敢于压上对攻——若对方不像刚果(金)那样死守，葡萄牙的控球或更易转化，但身后空间也需提防；② 本场"控而不破"是核心警讯：必须增加打身后的纵向穿透，并尽早投入 Leão 这类爆点，而非依赖 Ronaldo 站桩；③ 出线压力陡增——哥伦比亚已 3 分领跑，葡萄牙必须取胜，可能不再轮休 Dias/Leão；④ Bernardo Silva 13' 早黄需注意累积，避免再吃牌停赛。</div>
+      <div class="insight" style="margin:0"><div class="who">🇨🇩 刚果(金) → 6/23 vs 哥伦比亚（瓜达拉哈拉 Estadio Akron）</div>① 哥伦比亚首轮 3-1 胜乌兹别克斯坦、Luis Díaz 状态火热——刚果(金)后防（Mbemba 领衔）将面对比葡萄牙更直接犀利的边路冲击，低位铁桶剧本仍是首选；② 可复制的得分路径已验证：稳守 + Wissa 单点速度反击，对压上的哥伦比亚身后空间同样可行；③ Mbemba 本场已吃黄牌，需控制动作避免累积停赛；④ 历史首分已入账、士气高涨，一场平局即能让出线主动权进一步扩大，纪律与体能管理是关键。</div>
+    </div>
+
+    <p style="font-size:12px;color:var(--mut);margin-top:14px">来源：Opta Analyst（theanalyst.com）、Sofascore、FIFA、ESPN、Al Jazeera、Goal、NBC Sports。仅供分析参考，非投注建议。</p>
+  </section>
+
+  <div class="summary">
+    <h3>📋 速览梗概（先看这一段）</h3>
+    <p class="lead">这是一场<b>明确的强弱对话</b>：欧洲豪门、卫冕欧国联冠军葡萄牙（FIFA #6、Roberto Martínez 执教、41 岁的 Cristiano Ronaldo 大概率迎来个人第六届也是最后一届世界杯、Bruno Fernandes 居中调度）对阵时隔 52 年首次回到世界杯舞台的刚果(金)（自 1974 年后首次、靠跨洲附加赛加时 1-0 淘汰牙买加晋级、Sébastien Desabre 打造的纪律型防反球队）。盘口一边倒——葡萄牙胜赔约 <b>1.31</b>（去水隐含 ≈76%），平局约 6.00（≈16%），刚果(金)胜约 13.00（≈8%）。Kalshi 共识为葡 77 / 平 17 / 刚 8。比赛真正的看点不在 1X2，而在<b>葡萄牙的胜负差、Ronaldo 是否破门、以及刚果(金)能否守住失球数</b>。基准剧本：<b>葡萄牙 2-0 取胜</b>，但刚果(金)组织度足够、不太可能被血洗。</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">葡萄牙隐含胜率(去水)</div><div class="v" style="color:#f08a82">≈76%</div></div>
+      <div class="key"><div class="k">刚果(金)隐含胜率(去水)</div><div class="v" style="color:#7fa6e6">≈8%</div></div>
+      <div class="key"><div class="k">刚果(金)离开世界杯</div><div class="v" style="color:var(--warn)">52年</div></div>
+      <div class="key"><div class="k">市场过热指数</div><div class="v" style="color:var(--warn)">2.5/5</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>Cristiano Ronaldo 的世界杯告别</b>：41 岁、葡萄牙史上出场(226)与进球(143)双纪录保持者，第六届世界杯——这极可能是他的世界杯谢幕，舆论与 Ronaldo 进球盘的资金核心。</li>
+      <li><b>葡萄牙破密集防守的效率</b>：预选赛场均产出极高、约 71% 控球；面对刚果(金)的低位铁桶，破防效率决定让球盘（-1.5/-2.5）与大小球的结算。</li>
+      <li><b>刚果(金)的反击与 Yoane Wissa</b>：布伦特福德前锋 Wissa（37 场 9 球）的速度 + 队长 Chancel Mbemba 的防线领导，是刚果(金)偷袭与守住失球数的关键。</li>
+      <li><b>Bruno Fernandes 的中场组织</b>：葡萄牙由守转攻的节拍器与定位球主罚，撕开刚果(金)三中卫体系的关键变量。</li>
+    </ul>
+  </div>
+
+  <!-- 关键临场新闻 -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> 关键临场新闻 <span style="font-size:12px;color:var(--mut);font-weight:500">· 核心模块 · 带来源 + 为什么重要</span></h2>
+    <div class="sub">影响这场比赛的一手消息与状态信号，逐条解释它如何改变战术或结果</div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">葡萄牙 · Ronaldo 第六届世界杯 + 卫冕欧国联 <span style="color:var(--mut);font-weight:400">· FIFA · ESPN · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0"><b>41 岁的 Ronaldo 创纪录第六次出征世界杯</b>；葡萄牙是卫冕欧国联冠军，被视为夺冠热门之一</div>
+      <p style="font-size:13.5px">葡萄牙于 5 月 19 日公布 26 人世界杯名单，41 岁的队长 Cristiano Ronaldo 在列——他保持着葡萄牙国家队 226 场出场与 143 球的双纪录，本届将是他个人第六届世界杯。Roberto Martínez 麾下的葡萄牙刚刚卫冕了欧国联冠军，拥有世界最豪华的阵容之一：Bruno Fernandes、Bernardo Silva、Vitinha、Nuno Mendes、Rúben Dias、Rafael Leão、Pedro Neto、João Neves 等悉数在列，被广泛认为有能力首次冲击世界杯冠军。葡萄牙的揭幕战即对阵刚果(金)。<span style="color:var(--warn)">[最终首发与 Ronaldo 是否首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：葡萄牙的阵容深度与个人上限是本场绝对主轴。市场对 1X2 几无悬念，真正的资金博弈集中在 Ronaldo 的进球盘（首开纪录、任意时间进球）与葡萄牙让球幅度上。Ronaldo 告别之战的话题性是散户资金的最大入口。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement" style="color:var(--accent)">FIFA — Ronaldo 第六届世界杯 / 葡萄牙名单</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup/feature/portugal-2026-world-cup-preview-squad-fixtures-and-prediction_599092.html" style="color:var(--accent)">Sports Mole — 葡萄牙前瞻</a> · <a href="https://www.espn.com/soccer/story/_/id/49069166/fifa-world-cup-2026-portugal-vs-dr-congo-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups" style="color:var(--accent)">ESPN — 赛程/首发/裁判</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">刚果(金) · 时隔 52 年回归 + 跨洲附加赛晋级 <span style="color:var(--mut);font-weight:400">· CAF · FIFA · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">刚果(金)<b>跨洲附加赛加时 1-0 淘汰牙买加</b>，时隔 52 年重返世界杯（1974 后首次）</div>
+      <p style="font-size:13.5px">在 Sébastien Desabre 带领下，刚果(金)于 2026 年 3 月 31 日通过跨洲附加赛、加时赛凭 Axel Tuanzebe 的进球 1-0 力克牙买加，时隔 52 年（自 1974 年扎伊尔时代后首次）重返世界杯决赛圈。Desabre 公布的 26 人名单融合经验与冲击力：布伦特福德前锋 Yoane Wissa（37 场国家队 9 球）状态火热，老将 Simon Banza 与 Cédric Bakambu 提供成熟的国家队进球能力，队长 Chancel Mbemba 坐镇后防核心，旅欧双国籍球员 Aaron Wan-Bissaka、Axel Tuanzebe、Arthur Masuaku 等强化了防线与边路。刚果(金)被分入包含葡萄牙、哥伦比亚、乌兹别克斯坦的 K 组。<span style="color:var(--warn)">[最终首发以赛前官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：刚果(金)是纪律型防反球队、并非鱼腩。它的现实目标是控制失球数、伺机反击偷袭。这意味着葡萄牙可能"赢但赢得不轻松"——这是让球盘（-1.5 vs -2.5）与小球一侧的两面性来源。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://www.cafonline.com/news/desabre-names-fearless-dr-congo-squad-for-historic-world-cup-return/" style="color:var(--accent)">CAF — Desabre 公布无畏名单</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/congo-dr-team-profile-history" style="color:var(--accent)">FIFA — 刚果(金)队史档案</a> · <a href="https://www.squawka.com/en/news/world-cup/dr-congo-world-cup-2026-fixtures-squad-analysis/" style="color:var(--accent)">Squawka — 刚果(金)阵容分析</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">刚果(金) · 主帅 Desabre + 防反打法 <span style="color:var(--mut);font-weight:400">· ESPN · CAF · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">法籍主帅 <b>Sébastien Desabre</b> 打造防守稳固、反击与定位球见长的球队；预计 3-5-2 / 5-3-2</div>
+      <p style="font-size:13.5px">法籍主帅 Sébastien Desabre 自 2022 年执教刚果(金)，曾率队闯入 AFCON 2023 四强（点球淘汰埃及，最终列第四名），并以不败战绩晋级 AFCON 2025（小组第二，1-0 胜贝宁、1-1 平塞内加尔、3-0 胜博茨瓦纳）。他的招牌是防守稳固 + 快速转换与定位球威胁，并大量起用旅欧双国籍球员（Tuanzebe、Wan-Bissaka 等）。媒体预测本场他将摆出 3-5-2 / 5-3-2：Lionel Mpasi 守门，Mbemba 领衔三中卫，Wan-Bissaka 与 Masuaku 任翼卫，Wissa 与 Bakambu 锋线搭档。<span style="color:var(--warn)">[阵型与首发以官方为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：Desabre 的体系在 AFCON 已被验证能限制强队（点球淘汰埃及）。三中卫 + 翼卫的结构既能压缩葡萄牙的传中空间，又能在反击中通过 Wissa 的速度直接威胁——这决定了葡萄牙能否打出大胜，也是小球与让球盘的核心变量。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://africa.espn.com/espn/story/_/id/47391768/sebastien-desabre-dual-nationals-fallen-giants-dr-congo-afcon-threats" style="color:var(--accent)">ESPN — Desabre 与旅欧双国籍球员</a> · <a href="https://www.rotowire.com/soccer/article/portugal-vs-dr-congo-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-118360" style="color:var(--accent)">Rotowire — 预测首发/战术</a> · <a href="https://www.aol.com/news/dr-congo-forced-settle-second-211441564.html" style="color:var(--accent)">AOL — 刚果(金) AFCON 2025 小组第二</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--sc);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:#7fa6e6;font-weight:700">葡萄牙 · 预测首发 + 定位球资源 <span style="color:var(--mut);font-weight:400">· Sports Mole · Rotowire · 2026-06</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">媒体预测 4-3-3：Diogo Costa 把门，Bruno Fernandes 居中，锋线 Ronaldo / Leão / Pedro Neto</div>
+      <p style="font-size:13.5px">媒体预测葡萄牙摆出 4-3-3：Diogo Costa；Diogo Dalot · Rúben Dias · Gonçalo Inácio · Nuno Mendes；Vitinha · Bruno Fernandes · Bernardo Silva；Pedro Neto · Cristiano Ronaldo · Rafael Leão。葡萄牙定位球资源极为丰富——Bruno Fernandes、Bernardo Silva、Nuno Mendes、Pedro Neto、Francisco Conceição、João Cancelo 均可主罚，这是撕开刚果(金)密集防守的重要武器。Ronaldo 是否首发或替补登场存在变数（曾在 WC 2022 被轮换）。<span style="color:var(--warn)">[首发为媒体推测，以赛前官方名单为准 · 待核]</span></p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">为什么重要</b>：面对低位铁桶，定位球与边路传中往往是破局关键。葡萄牙拥有多名顶级主罚手与高质量边锋（Leão、Pedro Neto），意味着即便阵地战受阻，定位球与个人能力也能制造得分点——支持大球与葡萄牙让球的结构性依据。</div>
+      <div style="font-size:12px;margin-top:6px">来源：<a href="https://lastwordonsports.com/football/2026/05/26/portugal-predicted-lineup/" style="color:var(--accent)">Last Word on Sports — 葡萄牙预测首发</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/portugal-vs-congo-dr-prediction-team-news-lineups_599288.html" style="color:var(--accent)">Sports Mole — 前瞻/首发</a> · <a href="https://www.rotowire.com/soccer/article/portugal-vs-dr-congo-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-118360" style="color:var(--accent)">Rotowire — 预测首发/战术</a></div>
+    </div>
+  </section>
+
+  <!-- 官方首发 & 解读 -->
+  <section style="border:1px solid #1d4a2a;background:linear-gradient(135deg,#0f2417,#161d2e)">
+    <h2><span class="n" style="background:var(--good);color:#06210f">✅</span> 官方首发 &amp; 解读 <span style="font-size:12px;color:var(--mut);font-weight:500">· 官方确认（≥2 源一致）· T-40 写入</span></h2>
+    <div class="sub">官方名单已出 — 葡萄牙最大变动：<b style="color:#86efac">Rúben Dias、Rafael Leão 双双轮休</b>，改打 4-2-3-1；Ronaldo 首发确认。来源：Bolavip（confirmed XI）+ World Soccer Talk（专文解释 Dias 缺阵）+ FIFA 比赛中心，三源一致。</div>
+
+    <h4>🇵🇹 葡萄牙 · 官方首发（4-2-3-1）</h4>
+    <div class="lineup">Diogo Costa; João Cancelo · Tomás Araújo · Renato Veiga · Nuno Mendes; João Neves · Vitinha; Bernardo Silva · Bruno Fernandes · Pedro Neto; Cristiano Ronaldo</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：<b style="color:#cbd5e1">Rúben Dias</b>（头号中卫轮休待命）· <b style="color:#cbd5e1">Rafael Leão</b>（破铁桶奇兵）· Gonçalo Ramos / João Félix（进攻轮换）</div>
+
+    <h4 style="margin-top:18px">🇨🇩 刚果(金) · 官方首发（5-3-2）</h4>
+    <div class="lineup">Lionel Mpasi; Aaron Wan-Bissaka · Steve Kapuadi · Axel Tuanzebe · Chancel Mbemba · Arthur Masuaku; Samuel Moutoussamy · Edo Kayembe · Ngal'ayel Mukau; Yoane Wissa · Cédric Bakambu</div>
+    <div style="font-size:12.5px;color:var(--mut);margin-top:6px">替补席关键武器：Noah Sadiki / Meschack Elia（中场轮换）· Nathanaël Mbuku（边路冲击）· Simon Banza（替补支点）</div>
+
+    <h4 style="margin-top:18px">vs 预测首发对照</h4>
+    <table>
+      <tr><th>变化</th><th>预测</th><th>官方</th><th>为什么重要</th></tr>
+      <tr><td class="ht">中卫搭档</td><td>Rúben Dias + Gonçalo Inácio</td><td><b>Tomás Araújo + Renato Veiga</b>（Dias、Inácio 双双轮休）</td><td>经验最足的防线领袖 Dias 坐板凳，中卫年轻化——面对 Wissa 速度的唯一隐患点，但对手攻击有限、风险可控</td></tr>
+      <tr><td class="ht">阵型/中场</td><td>4-3-3（Vitinha-Bruno-Bernardo）</td><td><b>4-2-3-1</b>（Neves+Vitinha 双后腰）</td><td>多一层中场保护=针对铁桶的"耐心控球+反击保险"配置，而非全力压上；Bernardo 内收做 10 号</td></tr>
+      <tr><td class="ht">右后卫</td><td>Diogo Dalot</td><td>João Cancelo</td><td>Cancelo 助攻属性更强，提供右路套上宽度与传中</td></tr>
+      <tr><td class="ht">左边锋</td><td>Rafael Leão 首发</td><td>Leão 替补，Pedro Neto 占边</td><td>破密集防守的最强 1v1 爆点被留作奇兵——略降"血洗"上限</td></tr>
+      <tr><td class="ht">9 号位</td><td>Ronaldo（是否首发存疑）</td><td><b>Ronaldo 首发确认</b></td><td>速览第一悬念落地：他首发，告别叙事与进球 props 主线成立</td></tr>
+      <tr><td class="sc">刚果中场</td><td>Elia / Sadiki / Mbuku 等</td><td>Moutoussamy · Kayembe · Mukau</td><td>更偏硬度与拦截的中场三人，强化中路屏障；Sadiki/Elia 留替补</td></tr>
+      <tr><td class="sc">刚果后防/阵型</td><td>3-5-2 / 5-3-2 存分歧</td><td><b>5-3-2 落地</b>（加 Kapuadi 成后场 5 人）</td><td>低位铁桶 + 双前锋（Wissa+Bakambu）确认，防反计划 A 执行</td></tr>
+    </table>
+
+    <h4 style="margin-top:18px">战术解读（速览结论：<b style="color:#86efac">维持</b>，微调小球/-1.5 倾向）</h4>
+    <ul class="cl">
+      <li><b>阵型信号</b>：葡萄牙摆 4-2-3-1、Neves+Vitinha 双后腰，比预测的 4-3-3 多一层中场保护——这是针对刚果(金)铁桶的"耐心控球+反击保险"配置。速览"葡萄牙胜、看点在破防效率"的主线<b>维持</b>。</li>
+      <li><b>Dias + Leão 双双轮休是最大信号</b>：Martínez 在揭幕战对弱旅选择保护核心、为后续硬仗留力。最强破铁桶个人爆点（Leão）不在首发，<b>略微下调"血洗"上限</b>——与本页"刚果不会被血洗、-2.5 更谨慎"的既有判断一致，并进一步支持小球 / -1.5 一侧。</li>
+      <li><b>中卫年轻化是唯一隐患</b>：Araújo（23 岁）+ Renato Veiga 面对 Wissa 的速度直塞是仅有的风险点；但刚果(金)进攻仅 Wissa+Bakambu 两个出球点，整体不改变葡萄牙的巨大优势。</li>
+      <li><b>刚果(金) 5-3-2 + 双前锋如期落地</b>：与本页预测完全一致，Mbemba 领衔后场 5 人、Kayembe/Moutoussamy/Mukau 的硬度中场保护禁区前沿。速览"刚果守失球数、伺机反击"主线<b>维持</b>。</li>
+      <li><b>Ronaldo 首发确认</b>：速览唯一的人员悬念落地，告别叙事与进球 props 主线成立。</li>
+    </ul>
+
+    <div class="note">📊 <b>市场反应</b>：Dias、Leão 缺阵属<b>轮休性质（非核心伤退）</b>，通常不触发盘口剧烈移动——1X2 维持（葡 ≈1.31 / 平 ≈6.00 / 刚 ≈13.00，欧赔小数盘）。结构上，最强破铁桶爆点（Leão）替补 + 双后腰控制流，使<b>小球与 -1.5 一侧</b>较 -2.5 略受青睐。仅事实陈述，非投注建议。</div>
+
+    <div class="src" style="margin-top:12px">来源：<a href="https://bolavip.com/en/world-cup/lineups-uniforms-and-referee-for-portugal-vs-dr-congo-with-cristiano-ronaldo-for-2026-world-cup">Bolavip — Confirmed lineups（官方首发）</a> · <a href="https://worldsoccertalk.com/world-cup/why-isnt-ruben-dias-playing-for-portugal-vs-dr-congo-in-the-2026-world-cup-group-k-match/">World Soccer Talk — 为何 Dias 不首发</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021502">FIFA — 比赛中心（Match 23）</a></div>
+  </section>
+
+  <!-- 数据面 -->
+  <section>
+    <h2><span class="n">1</span> 数据面（核心）</h2>
+    <div class="sub">FIFA 排名 · 胜平负隐含概率（赔率去水） · K组格局 · 大小球市场 — 图表均为已核实数据</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>1X2 隐含概率（去水，DECIMAL 赔率推算）</h5><canvas id="probChart"></canvas></div>
+      <div class="chartbox"><h5>大/小 2.5 球隐含概率（去水）</h5><canvas id="totalChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>K 组四队 FIFA 排名（越低越强）</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>综合实力画像（分析师评估 0–10）</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>关键数据对照</h4>
+    <table>
+      <tr><th>指标</th><th>🇵🇹 葡萄牙</th><th>🇨🇩 刚果(金)</th></tr>
+      <tr><td>FIFA 排名</td><td class="ht">#6 区间</td><td class="sc">#60 区间</td></tr>
+      <tr><td>世界杯史</td><td class="ht">常客；2006 四强、2016 欧洲杯 + 2025 欧国联冠军</td><td class="sc">时隔 52 年重返（1974 扎伊尔时代后首次）</td></tr>
+      <tr><td>晋级方式</td><td class="ht">欧洲区预选赛出线（高产出、约 71% 控球）</td><td class="sc">跨洲附加赛加时 1-0 胜牙买加</td></tr>
+      <tr><td>近两届大赛</td><td class="ht">Euro 2024 八强（点球负法国）；WC 2022 八强（负摩洛哥）</td><td class="sc">AFCON 2023 第四名；AFCON 2025 16 强（缺席 WC 2022）</td></tr>
+      <tr><td>主教练</td><td class="ht">Roberto Martínez（西班牙籍）</td><td class="sc">Sébastien Desabre（法国籍）</td></tr>
+      <tr><td>1X2 赔率（DECIMAL）</td><td class="ht">胜 ≈1.31（隐含≈76%）</td><td class="sc">胜 ≈13.00（≈8%）· 平 ≈6.00（≈16%）</td></tr>
+      <tr><td>大 / 小 2.5 球</td><td colspan="2" class="sc">偏大球（葡萄牙高产出）；但刚果(金)铁桶可能压低总分，常见线 O/U 2.5</td></tr>
+      <tr><td>历史交锋</td><td colspan="2">无可查世界杯正式交锋记录</td></tr>
+      <tr><td>核心球员</td><td class="ht">Cristiano Ronaldo（226 场 143 球）/ Bruno Fernandes</td><td class="sc">Yoane Wissa / Chancel Mbemba / Cédric Bakambu</td></tr>
+    </table>
+    <div class="note">📌 概率为 DECIMAL 赔率去水后的隐含概率（≈76/16/8）。赔率来源：bet365 等（葡萄牙 1.31、平 6.00、刚果(金) 13.00）。去水前隐含和约 100.7%，归一后葡 ≈76% / 平 ≈16% / 刚 ≈8%。Kalshi 预测市场共识为葡 77 / 平 17 / 刚 8——与博彩去水概率高度吻合，说明盘口定价合理。大小球与让球盘是本场最活跃的市场。仅供分析参考，非投注建议。</div>
+  </section>
+
+  <!-- 投注市场热度 -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> 投注市场热度 <span style="font-size:12px;color:var(--mut);font-weight:500">· 名人推荐 / 赔率 / 资金面 / 舆论</span></h2>
+    <div class="sub">葡萄牙取胜几无悬念，1X2 本身热度有限；真正的资金博弈在 Ronaldo 进球盘、葡萄牙 -1.5/-2.5 让球与大小球——Ronaldo 告别叙事是热度主驱动</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">市场过热指数</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥<span style="opacity:.5">🔥</span><span style="opacity:.25">🔥🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">2.5/5 · 胜负无悬念；Ronaldo 叙事带热度，但刚果(金)防反压低了血洗预期</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">结果近乎注定，1X2 资金平淡；Ronaldo 告别之战带来大量进球 props 资金（首开纪录、任意时间进球）。但与"血洗式"对位不同，刚果(金)的防反组织度让市场对大比分让球(-2.5)更谨慎，热度因此<b>没有冲到最顶</b>，落在 2.5/5。</div>
+    </div>
+
+    <h4>① 专家推荐聚合（方向统计：葡萄牙胜 全部 · 刚果(金)胜 0 · 平局 0）</h4>
+    <table>
+      <tr><th>谁</th><th>身份</th><th>观点 / Pick</th></tr>
+      <tr><td>ESPN</td><td>综合体育媒体</td><td><b>葡萄牙取胜</b>；刚果(金)摆防反、力求不被大胜</td></tr>
+      <tr><td>Sports Mole</td><td>预测媒体</td><td>葡萄牙胜（多球差），看好 Ronaldo/Leão 破门</td></tr>
+      <tr><td>Racing Post</td><td>英系投注媒体</td><td>葡萄牙让球 + 比分预测（bet builder）</td></tr>
+      <tr><td>Squawka</td><td>数据媒体</td><td>葡萄牙轻取；刚果(金)组织度足以避免崩盘</td></tr>
+      <tr><td>Yahoo Sports</td><td>美系投注媒体</td><td>葡萄牙胜 + 价值角度（让球/大小球）</td></tr>
+      <tr><td>Goal / TheHardTackle</td><td>预测媒体</td><td>葡萄牙胜；多家给出 2-0 类基准比分</td></tr>
+    </table>
+    <div class="flag">⚠ <b>过热信号（中等偏低）</b>：胜负方向 100% 统一，无人押刚果(金)——这是合理共识而非过热。真正分歧在<b>让球幅度</b>（-1.5 vs -2.5）与大小球：刚果(金)的铁桶让"葡萄牙大胜"不再是默认假设，使情绪资金更多落在 Ronaldo 进球 props 而非大比分让球。</div>
+
+    <h4 style="margin-top:20px">② 赔率变动（DECIMAL）</h4>
+    <table>
+      <tr><th>时点</th><th>市场</th><th>葡萄牙胜</th><th>解读</th></tr>
+      <tr><td>开档（bet365）</td><td>1X2</td><td class="ht">≈1.33</td><td>重度倾斜；平 ≈5.80 / 刚果(金) ≈13.00</td></tr>
+      <tr><td>06-16/17 截止</td><td>多平台</td><td class="ht">1.31–1.33</td><td>葡萄牙短赔窄幅波动，基本稳定</td></tr>
+      <tr><td>06-16/17</td><td>大/小球</td><td colspan="2" class="ht">偏大球（葡萄牙高产出），但受刚果(金)铁桶压制，总分线不算高</td></tr>
+      <tr><td>让球（亚盘参考）</td><td>葡萄牙 -1.5 / -2.5</td><td colspan="2" class="ht">-1.5 是主流锐侧；-2.5 受刚果(金)防反拖累更谨慎（线非赔率，待核）</td></tr>
+    </table>
+    <div class="note">📌 1X2 赔率几乎不动——结果定价稳定。最活跃的价格发现在<b>让球（-1.5/-2.5）与大小球</b>线，以及 Ronaldo 进球 props。与一边倒的"血洗盘"不同，刚果(金)的防反结构让 -2.5 一侧定价更谨慎。仅供分析参考，非投注建议。</div>
+
+    <h4 style="margin-top:20px">③ 预测市场 & ④ 舆论</h4>
+    <ul class="cl">
+      <li><b>Kalshi 共识</b>：葡 77 / 平 17 / 刚 8——与博彩去水概率（≈76/16/8）高度吻合，说明两池收敛、无情绪偏离。Polymarket/DefiRate 单场细分成交量与 30 日动量未公开检得 <span style="color:var(--warn)">（待核）</span>。</li>
+      <li><b>舆论焦点</b>：几乎全部围绕 <b>Ronaldo 的世界杯告别</b>——41 岁、第六届、双纪录保持者的叙事占据绝大多数报道篇幅，Ronaldo 进球 props 因此获得大量散户资金。</li>
+      <li><b>刚果(金)叙事</b>：52 年回归 + Desabre 的旅欧双国籍班底带来一定情绪流量，但未见推动胜负盘的资金（无人相信刚果(金)会赢）。</li>
+      <li><b>社媒情绪</b>：以 Ronaldo 第六届世界杯 / 可能的谢幕为主轴，正面流量集中在葡萄牙侧；刚果(金)侧以"历史回归"励志叙事为主。</li>
+    </ul>
+
+    <div class="note" style="margin-top:14px">🧭 <b>综合判读</b>：这是一场胜负近乎注定、博彩与 Kalshi 完全收敛的比赛，过热指数 <b>2.5/5</b>。热度并非来自 1X2，而是来自 <b>Ronaldo 告别的进球 props</b> 与<b>让球幅度</b>；刚果(金)的防反组织度压低了"血洗"预期，使热度未冲到最顶。仅供分析参考，非投注建议。</div>
+    <div class="src" style="margin-top:10px">来源：<a href="https://www.espn.com/soccer/story/_/id/49069166/fifa-world-cup-2026-portugal-vs-dr-congo-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 前瞻/裁判</a> · <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aFQKs5y07Snd/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/portugal-vs-dr-congo-prediction-100000038.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-portugal-vs-dr-congo-06-17-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.sportytrader.com/en/odds/portugal-dr-congo-7937433/">SportyTrader — 赔率汇总</a></div>
+  </section>
+
+  <!-- 裁判 -->
+  <section>
+    <h2><span class="n">4</span> 当值裁判 & 执法环境</h2>
+    <div class="note">✅ <b>已确认</b>：本场主裁判为卡塔尔籍 <b>Abdulrahman Al-Jassim</b>（ESPN 确认）。他是经验丰富的 FIFA 国际级裁判，执法过 2022 世界杯（含三四名决赛 克罗地亚 2-1 摩洛哥）、2019 世俱杯决赛（利物浦 vs 弗拉门戈）、2019 亚洲杯，并已被任命执法 2026 世界杯。来源：ESPN / Wikipedia / 90min。</div>
+    <h4>裁判背景与执法尺度（含近两届大赛实际样本）</h4>
+    <ul class="cl">
+      <li><b>近两届大赛实际样本（WC 2022 + 2023 亚洲杯）</b>：Al-Jassim 在 2022 世界杯被指派三四名决赛——这是对其控场能力的高度认可。该场 克罗地亚 2-1 摩洛哥<b>未判点球</b>、出牌克制，整体执法平稳；这与他在卡塔尔联赛<b>约每场 5 张黄牌</b>的高出牌率形成明显的"大赛 vs 联赛尺度差"——在顶级大赛中他明显收紧、以控场为先。</li>
+      <li><b>点球倾向</b>：其大赛公开样本中点球判罚并不频繁（三四名决赛 0 点球）；但其执法风格以果断、依赖 VAR 复核为特征——这意味着禁区内明显犯规仍会被捕捉，但他不会轻易制造软点球。</li>
+      <li><b>本届统一新规</b>：门将 8 秒持球、仅队长可与裁判沟通、半自动越位——葡萄牙领先后若降速控场受新规约束；半自动越位将精准捕捉 Ronaldo/Leão 的越位临界冲刺。</li>
+    </ul>
+    <div class="flag">⚠ <b>裁判面分析</b>：在一场葡萄牙长时间控球的比赛中，犯规多集中在刚果(金)半场的防守动作。刚果(金)身体对抗强（CAF 风格），若在禁区内对 Leão/Pedro Neto 的突破犯规，点球风险存在；但 Al-Jassim 在大赛中尺度克制、不轻易给软点，因此本场更可能是"刚果(金)累计黄牌偏多、点球为中性偏低概率"的格局。其大赛控场履历意味着场面失控的概率低。</div>
+  </section>
+
+  <!-- 首发与关键球员 -->
+  <section>
+    <h2><span class="n">2</span> 首发 & 关键球员 <span style="font-size:11.5px;background:var(--good);color:#06210f;font-weight:700;padding:3px 9px;border-radius:20px">预测版，官方版见上方 ✅ 模块</span></h2>
+    <div class="sub">预测首发（分析源推测，非官方）——<b style="color:#86efac">官方名单已公布，详见上方"✅ 官方首发 &amp; 解读"模块</b>（葡萄牙实际改打 4-2-3-1、Dias/Leão 轮休）</div>
+    <h4>🇵🇹 葡萄牙 预测首发（4-3-3）</h4>
+    <div class="lineup">Diogo Costa; Diogo Dalot · Rúben Dias · Gonçalo Inácio · Nuno Mendes; Vitinha · Bruno Fernandes · Bernardo Silva; Pedro Neto · Cristiano Ronaldo · Rafael Leão</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="ht">Cristiano Ronaldo</td><td>前锋 / 单箭头</td><td>队长；226 场 143 球双纪录；第六届世界杯，大概率谢幕；Ronaldo 进球 props 核心</td></tr>
+      <tr><td class="ht">Bruno Fernandes</td><td>中场 / 组织核心</td><td>由守转攻节拍器与定位球主罚；撕开密集防线的关键</td></tr>
+      <tr><td class="ht">Rafael Leão</td><td>边锋 / AC 米兰</td><td>速度与突破撕开刚果(金)防线宽度；破铁桶的个人能力出口</td></tr>
+      <tr><td class="ht">Vitinha</td><td>中场 / 巴黎圣日耳曼</td><td>控球与节奏掌控；阵地战耐心调度的关键</td></tr>
+    </table>
+    <h4>🇨🇩 刚果(金) 预测首发（3-5-2 / 5-3-2）</h4>
+    <div class="lineup">Lionel Mpasi; Aaron Wan-Bissaka · Chancel Mbemba · Axel Tuanzebe; （翼卫）Masuaku · （中场三人）· Yoane Wissa · Cédric Bakambu</div>
+    <table>
+      <tr><th>球员</th><th>位置/俱乐部</th><th>近期 / 备注</th></tr>
+      <tr><td class="sc">Yoane Wissa</td><td>前锋 / 布伦特福德</td><td>国家队 37 场 9 球；速度是反击与偷袭的核心威胁</td></tr>
+      <tr><td class="sc">Chancel Mbemba</td><td>中后卫 / 队长</td><td>防线领导与经验；三中卫体系的轴心</td></tr>
+      <tr><td class="sc">Cédric Bakambu</td><td>前锋 / 锋线搭档</td><td>成熟的国家队进球能力；支点与第二终结点</td></tr>
+      <tr><td class="sc">Aaron Wan-Bissaka</td><td>右翼卫 / 旅欧双国籍</td><td>防守强硬的边路屏障；限制葡萄牙左路（Leão/Nuno Mendes）的关键</td></tr>
+    </table>
+    <div class="note">名单注：双方预测首发均为媒体分析推测（Sports Mole / Rotowire / Last Word on Sports），<b>以赛前官方名单为准 · 待核</b>。Ronaldo 是否首发存在变数（WC 2022 曾被轮换）；刚果(金)阵型在 3-5-2 与 5-3-2 间存在分歧（待核）。</div>
+  </section>
+
+  <!-- 战术 + 主帅 -->
+  <section>
+    <h2><span class="n">3</span> 战术风格 & 主教练</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇹 葡萄牙 · Roberto Martínez</div>
+        <div class="role">4-3-3 控球围攻 + 边路爆点 + 定位球</div>
+        <ul class="cl">
+          <li><b>近两届大赛交叉对照</b>：WC 2022 葡萄牙在 16 强 6-1 血洗瑞士时，Ronaldo 被轮换、Gonçalo Ramos 上演帽子戏法——说明这支葡萄牙<b>多点开花、并不依赖 Ronaldo 一人</b>；但八强 0-1 负摩洛哥暴露了面对纪律型非洲球队低位防守时<b>破密集防守效率不足</b>的老问题。</li>
+          <li>Euro 2024 八强点球负法国：120 分钟 0-0，再次显示葡萄牙在高强度对抗中<b>阵地战转化率偏低</b>。Martínez 麾下控球率高（约 71%）、边路 Leão/Pedro Neto 提供宽度，Bruno Fernandes 居中调度并主罚定位球。</li>
+          <li>风险：刚果(金)正是"纪律型非洲低位防守"的典型——与摩洛哥同源的防反风格。若葡萄牙阵地战久攻不下、心态急躁，理论上存在被 Wissa 反击偷袭的尾部风险；定位球与个人能力（Leão 突破、Bruno 任意球）是更可靠的破局点。</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇨🇩 刚果(金) · Sébastien Desabre</div>
+        <div class="role">3-5-2 / 5-3-2 低位铁桶 + 快速反击与定位球</div>
+        <ul class="cl">
+          <li><b>近两届大赛交叉对照</b>：AFCON 2023 刚果(金)<b>点球淘汰埃及、最终列第四名</b>——证明 Desabre 的防反体系能在淘汰赛限制强队、把比赛拖入低比分；AFCON 2025 不败晋级（1-0 胜贝宁、1-1 平塞内加尔、3-0 胜博茨瓦纳）显示防线稳固、对强队（塞内加尔）能守住平局。</li>
+          <li>打法：三中卫（Mbemba 领衔）+ 翼卫（Wan-Bissaka/Masuaku）压缩空间、专门盯防葡萄牙边路传中；进攻靠 Wissa 的速度反击与 Bakambu 的支点，定位球是为数不多的得分手段。</li>
+          <li>风险：面对葡萄牙的多点进攻（Ronaldo + Leão + Pedro Neto + Bruno 定位球），单纯退守难以全面覆盖；若体能与专注力在下半场下滑，失球数可能放大。但其 AFCON 履历说明它<b>大概率不会被血洗</b>。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分析师洞察 -->
+  <section>
+    <h2><span class="n">5</span> 分析师洞察</h2>
+    <div class="insight"><div class="who">ESPN <small>· 综合体育媒体</small></div>预测葡萄牙取胜，指出刚果(金)在 Desabre 麾下会"摆出阵型干扰并打反击"，依靠 Wissa 的速度与 Mbemba 的经验；葡萄牙拥有最完整的阵容之一，但刚果(金)组织度足以避免被大胜。</div>
+    <div class="insight"><div class="who">Sports Mole <small>· 预测媒体</small></div>预测葡萄牙多球差取胜、看好 Ronaldo/Leão 破门；认为这本应是一场轻松的葡萄牙胜，但刚果(金)纪律性足以避免惨败——本场真正悬念是失球数与让球幅度。</div>
+    <div class="insight"><div class="who">让球/大小球视角 <small>· Racing Post / Yahoo</small></div>多家媒体将 <b>葡萄牙 -1.5</b> 视为比单纯胜负盘更锐的角度；但与"血洗盘"不同，刚果(金)防反让 -2.5 一侧更谨慎。Ronaldo 进球 props 是告别叙事驱动的散户主战场。</div>
+    <div class="insight"><div class="who">综合 · 战术信号 <small>· 跨大赛对照</small></div>关键交叉点：葡萄牙 WC 2022 八强正是<b>负于纪律型非洲低位防守（摩洛哥）</b>，而刚果(金) AFCON 2023 又恰恰<b>点球淘汰过埃及</b>——两条履历叠加，说明这类对位对葡萄牙并非送分，破防效率是真正的胜负手，而非"谁赢"。</div>
+  </section>
+
+  <!-- 综合研判 -->
+  <section>
+    <h2><span class="n">6</span> 综合研判 & 待核</h2>
+    <ul class="cl">
+      <li><b>赛果倾向</b>：葡萄牙 2-0 取胜是基准剧本；Ronaldo/Leão 有较高破门概率。平局（约 16%）与刚果(金)胜（约 8%）均为小概率尾部风险，刚果(金)爆冷需要极致铁桶 + Wissa 反击偷袭 + 门将神勇同时发生。</li>
+      <li><b>关键先生</b>：Ronaldo（葡/进球 props 与告别叙事核心）、Bruno Fernandes（葡/破密集防守的组织者与定位球）、Yoane Wissa（刚/反击偷袭威胁）、Chancel Mbemba（刚/防线领导，决定失球数）。</li>
+      <li><b>胜负手</b>：这场比赛的真正看点不是"谁赢"，而是<b>葡萄牙破密集防守的效率与失球数</b>——决定让球盘（-1.5/-2.5）与大小球的结算。葡萄牙 WC 2022 负摩洛哥 + 刚果(金) AFCON 2023 淘汰埃及的双重履历，说明这是真正的考验。</li>
+      <li><b>市场视角</b>：博彩与 Kalshi 完全收敛（≈76% / 77%），1X2 无价值；最有信息含量的市场是<b>葡萄牙让球（-1.5）与大小球</b>，以及 Ronaldo 进球细分盘。过热指数 2.5/5（热度来自 Ronaldo 告别，刚果(金)防反压低了血洗预期）。</li>
+    </ul>
+    <div class="flag">⚠ <b>待核</b>：① Ronaldo 是否首发（WC 2022 曾被轮换）；② 双方官方首发名单与刚果(金)阵型（3-5-2 vs 5-3-2）；③ Al-Jassim 在 2023 亚洲杯的具体场均出牌/点球细分数据；④ Polymarket/DefiRate 单场价格、成交量与 30 日动量未公开检得；⑤ 角球与具体大小球总分线、亚盘让球线（-1.5/-2.5）赔率以赛前实时盘口为准。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">来源</h2>
+    <div class="src">
+      • <a href="https://www.espn.com/soccer/story/_/id/49069166/fifa-world-cup-2026-portugal-vs-dr-congo-channel-how-watch-kickoff-live-stream-referee-predicted-line-ups">ESPN — 赛程/首发/裁判</a> · <a href="https://www.rotowire.com/soccer/article/portugal-vs-dr-congo-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-118360">Rotowire — 预测首发/战术</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/portugal-vs-congo-dr-prediction-team-news-lineups_599288.html">Sports Mole — 前瞻/首发</a><br>
+      • <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement">FIFA — Ronaldo 第六届世界杯 / 葡萄牙名单</a> · <a href="https://www.sportsmole.co.uk/football/portugal/world-cup/feature/portugal-2026-world-cup-preview-squad-fixtures-and-prediction_599092.html">Sports Mole — 葡萄牙前瞻</a> · <a href="https://lastwordonsports.com/football/2026/05/26/portugal-predicted-lineup/">Last Word on Sports — 葡萄牙预测首发</a><br>
+      • <a href="https://www.cafonline.com/news/desabre-names-fearless-dr-congo-squad-for-historic-world-cup-return/">CAF — Desabre 公布名单</a> · <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/congo-dr-team-profile-history">FIFA — 刚果(金)队史档案</a> · <a href="https://www.squawka.com/en/news/world-cup/dr-congo-world-cup-2026-fixtures-squad-analysis/">Squawka — 刚果(金)阵容分析</a> · <a href="https://africa.espn.com/espn/story/_/id/47391768/sebastien-desabre-dual-nationals-fallen-giants-dr-congo-afcon-threats">ESPN — Desabre 与旅欧球员</a> · <a href="https://www.aol.com/news/dr-congo-forced-settle-second-211441564.html">AOL — 刚果(金) AFCON 2025</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/portugal-vs-dr-congo-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aFQKs5y07Snd/">Racing Post — 赔率/投注</a> · <a href="https://sports.yahoo.com/articles/portugal-vs-dr-congo-prediction-100000038.html">Yahoo Sports — 预测/赔率</a> · <a href="https://www.squawka.com/us/news/world-cup/match-preview-portugal-vs-dr-congo-06-17-26-world-cup-2026/">Squawka — 前瞻</a> · <a href="https://www.sportytrader.com/en/odds/portugal-dr-congo-7937433/">SportyTrader — 赔率汇总</a> · <a href="https://en.wikipedia.org/wiki/Abdulrahman_Al-Jassim">Wikipedia — 裁判 Al-Jassim</a> · <a href="https://www.90min.com/posts/abdulrahman-al-jassim-referee-officiating-world-cup-third-place-playoff">90min — Al-Jassim 三四名决赛</a>
+    </div>
+  </section>
+
+  <div class="foot">2026世界杯赛事分析中心 · 数据截至 2026-06-16 · 图表为已核实数据，雷达图为分析师综合评估 · 仅供分析参考，非投注建议</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',HT='#d21034',SC='#3b6fb0',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['葡萄牙胜','平局','刚果(金)胜'],datasets:[{data:[76,16,8],backgroundColor:[HT,DR,SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:90,title:{display:true,text:'隐含概率 %（去水）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('totalChart'),{type:'bar',
+ data:{labels:['大 2.5 球','小 2.5 球'],datasets:[{data:[58,42],backgroundColor:[HT,DR],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},suggestedMax:80,title:{display:true,text:'隐含概率 %（去水，偏向大球）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['葡萄牙','哥伦比亚','乌兹别克斯坦','刚果(金)'],datasets:[{data:[6,13,57,60],backgroundColor:[HT,'#facc15','#1aa84a',SC],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},reverse:true,title:{display:true,text:'FIFA 排名（越低越强，近似）'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['防守稳定','进攻终结','中场控制','定位球','个人上限','大赛经验'],
+  datasets:[
+   {label:'葡萄牙',data:[8,8.5,9,8.5,9.5,9],borderColor:HT,backgroundColor:HT+'33',pointBackgroundColor:HT},
+   {label:'刚果(金)',data:[7,5.5,5.5,6,5.5,5],borderColor:SC,backgroundColor:SC+'33',pointBackgroundColor:SC}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>

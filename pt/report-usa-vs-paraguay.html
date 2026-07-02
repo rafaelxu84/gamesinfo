@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise pré-jogo · EUA vs Paraguai · Copa do Mundo 2026 Grupo D</title>
+<link rel="alternate" hreflang="zh" href="https://tipster-24.com/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="en" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="es-MX" href="https://tipster-24.com/es/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="pt-BR" href="https://tipster-24.com/pt/report-usa-vs-paraguay.html">
+<link rel="alternate" hreflang="x-default" href="https://tipster-24.com/en/report-usa-vs-paraguay.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{--bg:#0d1220;--card:#161d2e;--card2:#1c2540;--line:#2a3450;--txt:#e9eef8;--mut:#93a1c4;
+    --us:#1f4e9c;--py:#d0312d;--accent:#38bdf8;--warn:#f59e0b;--good:#22c55e;--bad:#ef4444;--draw:#64748b;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,sans-serif;line-height:1.65;padding:26px 14px 70px}
+  .wrap{max-width:960px;margin:0 auto}
+  .back{display:inline-block;color:var(--accent);text-decoration:none;font-size:13px;margin-bottom:10px}
+  .badge{display:inline-block;background:linear-gradient(90deg,#1f4e9c,#7a1f18);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.5px}
+  h1{font-size:30px;margin:14px 0 4px;font-weight:800}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+  .vs{display:flex;align-items:center;justify-content:center;gap:22px;margin:8px 0 22px;flex-wrap:wrap}
+  .vs .team{text-align:center}.vs .team .nm{font-size:19px;font-weight:800}.vs .team .rk{font-size:12px;color:var(--mut)}
+  .vs .x{color:var(--mut);font-size:14px}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+  h2{font-size:20px;margin-bottom:4px;display:flex;align-items:center;gap:10px}
+  h2 .n{background:var(--accent);color:#06121c;width:26px;height:26px;border-radius:7px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:800}
+  .sub{color:var(--mut);font-size:13px;margin-bottom:16px}
+  h4{font-size:15px;margin:18px 0 6px}
+  .summary{background:linear-gradient(135deg,#13192b,#251515);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:14px;padding:22px;margin-bottom:20px}
+  .summary h3{font-size:13px;color:var(--accent);letter-spacing:1.5px;margin-bottom:10px;text-transform:uppercase}
+  .summary .lead{font-size:15px;margin-bottom:14px}
+  .keyrow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  @media(max-width:680px){.keyrow{grid-template-columns:1fr 1fr}}
+  .key{background:#0d1526;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .key .k{color:var(--mut);font-size:11px}.key .v{font-size:20px;font-weight:800;margin-top:2px}
+  .watch{list-style:none;margin-top:8px}.watch li{padding:6px 0 6px 24px;position:relative;font-size:14px}
+  .watch li:before{content:"▶";position:absolute;left:0;color:var(--accent);font-size:11px;top:9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+  .chartbox{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:8px}
+  .chartbox h5{font-size:13px;color:var(--mut);font-weight:600;margin-bottom:10px;text-align:center}
+  canvas{max-height:250px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+  th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase}
+  td.us{color:#7fa6e6;font-weight:600}td.py{color:#f08a82;font-weight:600}
+  .lineup{font-family:ui-monospace,monospace;font-size:13px;background:#0d1526;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:8px;color:#cbd5e1}
+  .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+  .coach{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .coach .nm{font-size:16px;font-weight:800}.coach .role{font-size:12px;color:var(--mut);margin-bottom:8px}
+  ul.cl{margin:6px 0 0 18px}ul.cl li{margin-bottom:6px;font-size:14px}
+  .insight{border-left:3px solid var(--accent);padding:10px 14px;margin:12px 0;background:var(--card2);border-radius:0 8px 8px 0}
+  .insight .who{font-size:12px;color:var(--accent);font-weight:700;margin-bottom:3px}.insight .who small{color:var(--mut);font-weight:400}
+  .flag{background:#3a2a12;border:1px solid #6b4f1d;border-radius:8px;padding:12px 14px;font-size:13.5px;margin-top:12px}.flag b{color:var(--warn)}
+  .note{background:#10243a;border:1px solid #1e466b;border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;color:#bfe0f7}
+  .src{font-size:12px;color:var(--mut);line-height:1.9}.src a{color:var(--accent);text-decoration:none}
+  .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="text-align:right;font-size:12px;margin-bottom:8px;color:#92a0c2"><a href="/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">中文</a> · <a href="/en/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">EN</a> · <a href="/es/report-usa-vs-paraguay.html" style="color:#92a0c2;text-decoration:none">ES</a> · <b style="color:#38bdf8">PT</b></div>
+
+  <a class="back" href="index.html">← Voltar à Central de Análise</a><br>
+  <span class="badge">⚽ Copa do Mundo 2026 · 1ª rodada do Grupo D · Estreia dos EUA em casa na Copa</span>
+  <span class="badge" style="background:linear-gradient(90deg,#0d3b66,#1d4a2a);margin-left:6px">🏁 Encerrado 4-1</span>
+  <h1>EUA vs Paraguai</h1>
+  <div class="meta">12 de junho de 2026 · SoFi Stadium, Los Angeles (Inglewood) · 21:00 ET / 18:00 local · Grupo D (também no grupo: Austrália, Turquia)</div>
+  <div class="vs">
+    <div class="team"><div class="nm" style="color:#7fa6e6">🇺🇸 EUA</div><div class="rk">FIFA #16 · Elenco €410 mi · Anfitrião</div></div>
+    <div class="x">— VS —</div>
+    <div class="team"><div class="nm" style="color:#f08a82">🇵🇾 Paraguai</div><div class="rk">FIFA #40 · Elenco €157,15 mi · De volta após 16 anos</div></div>
+  </div>
+
+  <!-- ===== Módulo de análise pós-jogo ===== -->
+  <section style="border:1px solid #2a3450;border-left:4px solid var(--accent);background:linear-gradient(135deg,#101a2e,#161d2e)">
+    <h2><span class="n">📊</span> Análise pós-jogo: tática e dados <span style="font-size:12px;color:var(--mut);font-weight:500">· Final 4-1 (intervalo 3-0) · fatos e interpretação separados</span></h2>
+    <div class="sub">O mercado dava só ≈49% aos EUA; ainda no primeiro tempo, um 3-0 escancarou a defesa do Paraguai; Balogun marcou duas vezes e Reyna fechou com uma trivela nos acréscimos — este foi o maior desvio de previsão do produto.</div>
+
+    <h4 style="margin-top:6px">① Como o placar evoluiu</h4>
+    <p style="font-size:13.5px">Os EUA fulminaram cedo: <b>7′ cruzamento rasteiro de McKennie, Bobadilla contra o próprio gol</b> 1-0; <b>31′ Balogun</b> empurrou para o canto inferior direito após desvio em passe de Pulisic 2-0; <b>45+5′ Balogun</b> de novo (enfiada de Tillman, aguentou a entrada e cobriu o goleiro no ângulo esquerdo), 3-0 praticamente sacramentado no intervalo. No segundo tempo o Paraguai descontou: <b>73′ o reserva Mauricio</b> finalizou de primeira após tabela com Enciso; <b>90+8′ Reyna</b>, recém-entrado, fechou em 4-1 com uma trivela (curva de trivela com o lado de fora do pé).</p>
+    <div class="lineup">7′ ⚽ Bobadilla (contra, EUA 1-0)  ·  31′ ⚽ Balogun  ·  45+5′ ⚽ Balogun (intervalo 3-0)  ·  73′ ⚽ Mauricio (PAR)  ·  90+8′ ⚽ Reyna (trivela)  ·  final 4-1  ·  🟨 Almirón (PAR, simulação, revertido pelo VAR)</div>
+
+    <h4 style="margin-top:18px">② Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇺🇸 EUA</th><th>🇵🇾 Paraguai</th><th>Leitura em uma frase</th></tr>
+      <tr><td>Posse de bola</td><td class="us">65%</td><td class="py">35%</td><td>Os EUA controlaram, mas o decisivo foi a eficiência, não a posse</td></tr>
+      <tr><td>xG (gols esperados)</td><td class="us">1,35</td><td class="py">0,47</td><td>Os 4 gols dos EUA superam de longe o xG de 1,35 — a finalização sobrenatural (Balogun/Reyna) foi o fator decisivo, não um "atropelo de chances"</td></tr>
+      <tr><td>Gols reais vs xG</td><td class="us">4 (+2,65)</td><td class="py">1 (+0,53)</td><td>Os dois superaram o xG, mas a eficiência de conversão dos EUA é de outro patamar</td></tr>
+      <tr><td>Origem dos gols</td><td class="us">jogada ×3 + gol contra</td><td class="py">conversão do reserva</td><td>Os EUA furaram a defesa fechada com tabelas + qualidade individual, justamente o que se duvidava na prévia</td></tr>
+      <tr><td>Arbitragem / disciplina</td><td colspan="2" style="color:#cbd5e1">Árbitro Danny Makkelie (Holanda) · VAR anulou amarelo de Ream e marcou amarelo a Almirón por simulação · arbitragem contida no geral</td><td>Sem pênalti, baixo confronto; o resultado foi decidido inteiramente em jogadas</td></tr>
+    </table>
+    <div class="note">Fontes dos dados: <a href="https://theanalyst.com/articles/united-states-vs-paraguay-stats-world-cup-2026" style="color:var(--accent)">Opta Analyst</a> · <a href="https://www.cbssports.com/soccer/news/usa-paraguay-live-updates-world-cup-2026-score-result/live/" style="color:var(--accent)">CBS Sports</a> · <a href="https://www.fifa.com/en/match-centre/match/17/285023/289273/400021458" style="color:var(--accent)">FIFA Match Centre</a> (placar/gols/xG com ≥2 fontes coincidentes).</div>
+
+    <h4 style="margin-top:18px">③ Releitura tática</h4>
+    <div class="insight"><div class="who" style="color:#7fa6e6">EUA: blitz + qualidade individual contra defesa fechada</div>Os EUA fizeram 3-0 no primeiro tempo, todos os gols em jogada (incluindo o contra), apoiados no cruzamento rasteiro de McKennie, na qualidade de passe de Pulisic/Tillman e na finalização de Balogun. <b>Ou seja, a capacidade desta seleção de furar o bloco sul-americano foi muito subestimada pelo mercado</b> — a precificação pré-jogo de "≈49%, dúvida se fura o ferrolho" foi diretamente desmentida pela forma de Balogun e pela combinação pelos lados e pelo meio.</div>
+    <div class="insight"><div class="who" style="color:var(--good)">Forma de Balogun = núcleo ofensivo confirmado</div>Balogun marcou duas vezes depois do gol sobre Senegal em 31/5, e ambas de qualidade (empurrão após desvio + finalização por cima aguentando a marcação). <b>Ou seja, o centroavante-pivô único de Pochettino achou sua resposta</b>, o feedback positivo de continuidade se confirmou, e essa é a maior certeza do sistema ofensivo dos EUA nesta Copa.</div>
+    <div class="insight"><div class="who" style="color:#f08a82">Paraguai: a estrutura ruiu rápido com o adversário à frente</div>Definido na prévia como "estrutura sólida, capaz de arrastar para o lamaçal", o Paraguai sofreu 3 gols em 45 minutos. <b>Ou seja, uma vez que o bloco baixo de Alfaro é furado por gol cedo e precisa sair para o jogo, a defesa de transição é um buraco enorme</b> — se sofrer gol cedo de novo no próximo jogo, será muito complicado.</div>
+    <div class="insight"><div class="who">O impacto de Reyna saindo do banco</div>Reyna entrou e fechou nos acréscimos com uma trivela, <b>ou seja, a profundidade de criatividade da segunda linha dos EUA (Reyna/Tillman) é arma de verdade</b>, e Pochettino tem mais cartas de rodízio ofensivo do que se esperava.</div>
+
+    <h4 style="margin-top:18px">④ Balanço das previsões (conferindo item a item as conclusões pré-jogo)</h4>
+    <table>
+      <tr><th>Linha-mestra pré-jogo</th><th>Resultado</th><th>Observação</th></tr>
+      <tr><td>Vitória dos EUA implícita só ≈49%, mercado duvidando muito que furassem a defesa fechada</td><td style="color:var(--bad);font-weight:700">✗ Erro grande</td><td>Vitória dos EUA por 4-1, com 3-0 no intervalo; a precificação do mercado foi totalmente desmentida — foi o maior erro de direção do produto</td></tr>
+      <tr><td>Lamaçal de placar baixo / centro de gravidade do over-under para baixo (tendência Under)</td><td style="color:var(--bad);font-weight:700">✗ Errou</td><td>5 gols no jogo, Over 2.5 batido com folga; o roteiro do lamaçal não se confirmou em nada</td></tr>
+      <tr><td>Pulisic + Balogun dando continuidade à forma contra Senegal</td><td style="color:var(--good);font-weight:700">✓ Acertou</td><td>Balogun marcou duas vezes, Pulisic deu a assistência do segundo; leitura de quem destrava correta</td></tr>
+      <tr><td>Dúvida sobre o zagueiro Richards jogar</td><td style="color:var(--good);font-weight:700">✓ Resolvido</td><td>Richards foi titular como previsto e teve atuação sólida; o risco pré-jogo não se concretizou</td></tr>
+      <tr><td>Paraguai sem Enciso, contra-ataque rebaixado</td><td style="color:var(--warn);font-weight:700">~ Info atualizada</td><td>Enciso na verdade entrou e deu a assistência do único gol, de Mauricio — a info pré-jogo de "ausência" estava errada/houve recuperação posterior, registrado com honestidade</td></tr>
+    </table>
+    <div class="flag"><b>Resumo do balanço:</b> este foi <b>o maior desvio de previsão</b> do produto até agora — o erro central foi seguir o mercado e dar peso excessivo à "estrutura sólida" do Paraguai, subestimando a forma atual de Balogun e o ímpeto dos EUA jogando em casa. As leituras de continuidade (Pulisic/Balogun) e a dúvida resolvida de Richards acertaram, mas resultado e over-under erraram nos dois, e isso precisa entrar com honestidade no balanço de acertos.</div>
+
+    <h4 style="margin-top:18px">⑤ Projeção para a próxima rodada</h4>
+    <div class="twocol">
+      <div class="insight" style="border-left-color:#7fa6e6"><div class="who" style="color:#7fa6e6">🇺🇸 EUA → próximo jogo vs Austrália (19/6, Seattle)</div>
+        ① <b>A forma quente de Balogun</b> é o maior ativo a levar; o sistema de centroavante-pivô único já está rodando;<br>② <b>A dúvida sobre "furar a defesa fechada" já foi resolvida</b>: a Austrália provavelmente também defenderá em bloco baixo, mas este jogo provou que os EUA têm a solução de combinação pelos lados e pelo meio + qualidade individual;<br>③ <b>Atenção à concentração defensiva</b>: depois do 3-0 houve relaxamento e descontaram um gol; contra adversários mais incisivos (como o jogo aéreo e os lados da Austrália) é preciso manter a intensidade no jogo todo; ter Richards saudável e disponível é um trunfo.</div>
+      <div class="insight" style="border-left-color:#f08a82"><div class="who" style="color:#f08a82">🇵🇾 Paraguai → próximo jogo vs Turquia (19-20/6, Santa Clara)</div>
+        ① <b>Tem de evitar o gol cedo</b>: sofrer 3 gols em 45 minutos expôs a falha grave na defesa de transição depois de ser furado, ponto fatal contra uma Turquia também forte no ataque;<br>② <b>Enciso disponível</b>: aqui ele criou o único gol com sua tabela, é o pivô da criatividade do contra-ataque paraguaio, e o time deve montar o contra-ataque em torno dele;<br>③ <b>O bloco baixo precisa recuperar confiança</b>: o problema de esticar o time depois de sofrer gol cedo precisa ser corrigido no treino, ou a situação na classificação ficará extremamente desfavorável.</div>
+    </div>
+    <div class="note" style="margin-top:14px">A seguir, o arquivo completo da análise pré-jogo (mantido na íntegra como base para o balanço das previsões).</div>
+  </section>
+
+  <div class="summary">
+    <h3>📋 Resumo rápido (leia isto primeiro)</h3>
+    <p class="lead">A estreia de maior pressão da história da seleção americana: Copa em casa + toda a construção de Pochettino desde que assumiu apostada neste verão. A diferença no papel é clara — valor de elenco <b>2,6 vezes maior</b>, ranking FIFA #16 vs #40, e os EUA vêm embalados pela vitória de 31/5 por <b>3-2 sobre Senegal</b> (gols de Pulisic e Balogun). Mas o preço do mercado é <b>bem mais frio: a probabilidade implícita de vitória dos EUA é de apenas ≈49%</b> (1.95; mercados de previsão em 49,5%) — porque o Paraguai de Alfaro é exatamente o tipo de adversário que os EUA menos querem encontrar: 6º nas Eliminatórias sul-americanas, estrutura sólida, capaz de arrastar o jogo para o lamaçal com bloco defensivo e bolas paradas, e que venceu até a Argentina nas Eliminatórias. Dois riscos americanos: <b>o zagueiro Richards, recém-recuperado de lesão no tornozelo, voltou aos treinos mas é dúvida</b>, e o lastro físico de Pulisic, com temporada interrompida por lesão no posterior da coxa + bursite. O Paraguai, por sua vez, perde <b>Enciso e Balbuena</b>, e seus contra-ataques ficam com menos dentes.</p>
+    <div class="keyrow">
+      <div class="key"><div class="k">Contexto</div><div class="v" style="color:var(--warn)">Estreia do anfitrião</div></div>
+      <div class="key"><div class="k">Valor de elenco</div><div class="v">EUA ≈2,6×</div></div>
+      <div class="key"><div class="k">Implícita EUA</div><div class="v" style="color:#7fa6e6">≈49%</div></div>
+      <div class="key"><div class="k">Richards</div><div class="v" style="color:var(--warn)">Dúvida</div></div>
+    </div>
+    <ul class="watch">
+      <li><b>O sinal dos ≈49%</b>: 2,6× de diferença de valor, mas odds quase 50-50 — o mercado duvida profundamente da capacidade americana de furar o bloco baixo sul-americano.</li>
+      <li><b>A vaga de zagueiro de Richards</b>: se não chegar, quem entrar ao lado de Ream contra o pivô Sanabria e as bolas paradas será o elo mais fino dos EUA.</li>
+      <li><b>A continuidade de Pulisic + Balogun pós-Senegal</b>: os dois marcaram em 31/5; repetir contra defesa postada é a chave para destravar o jogo.</li>
+      <li><b>Paraguai sem Enciso/Balbuena</b>: criatividade no contra-ataque cai de nível; mais provável que se feche de vez — o centro de gravidade do over/under desce ainda mais.</li>
+    </ul>
+  </div>
+
+  <!-- ===== Módulo central: notícias de última hora ===== -->
+  <section style="border:1px solid #5a2330;background:linear-gradient(135deg,#23131a,#161d2e)">
+    <h2><span class="n" style="background:var(--bad);color:#fff">🔴</span> Notícias-chave de última hora <span style="font-size:12px;color:var(--mut);font-weight:500">· Módulo central · Com fontes + por que importa</span></h2>
+    <div class="sub">Informações de primeira mão e sinais de forma que afetam este jogo, com explicação de como cada um muda a tática ou o resultado</div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">EUA · Lesões <span style="color:var(--mut);font-weight:400">· Avaliação pré-jogo · A confirmar</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Única dúvida defensiva: o zagueiro <b>Chris Richards diz estar recuperado e voltou aos treinos na segunda-feira, mas a titularidade segue em aberto</b>; o restante do elenco está saudável</div>
+      <p style="font-size:13.5px">Atualização do dia do jogo (duas fontes): Richards rompeu ligamentos do tornozelo pelo Crystal Palace em maio e ficou fora por mais de um mês; <b>só voltou aos treinos com o grupo na segunda-feira</b>; ele diz estar 100%, mas sua ausência no amistoso contra a Alemanha chegou a deixar Pochettino publicamente "irritado". Se não for titular, <b>Miles Robinson ou McKenzie</b> faz dupla com Tim Ream (o Sports Mole chama isso de "Pochettino's defensive dilemma").</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: Richards é o único zagueiro pela direita dos EUA que combina combate físico e saída de bola. Se ficar fora ou jogar abaixo, contra o jogo de pivô de Sanabria e as <b>bolas paradas</b> de que o Paraguai tanto depende, Ream, de 37 anos, terá um parceiro improvisado ao lado — exatamente o tipo de fraqueza que os times de Alfaro melhor atacam. <span style="color:var(--warn)">[Titularidade a confirmar na lista oficial 1 hora antes do jogo]</span></div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.espn.com/soccer/story/_/id/48976577/usa-world-cup-chris-richards-injury-mauricio-pochettino-germany" style="color:var(--accent)">ESPN — Linha do tempo da recuperação de Richards</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Dilema Richards/escalação projetada</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--warn);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--warn);font-weight:700">Paraguai · Desfalques <span style="color:var(--mut);font-weight:400">· Duas fontes · Situação de Enciso com versões divergentes, marcado "a confirmar"</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">O craque paraguaio <b>Julio Enciso está praticamente fora deste jogo</b> (dupla pancada na coxa) — retorno previsto, na melhor hipótese, na 3ª rodada contra a Austrália; Balbuena lesionado e fora</div>
+      <p style="font-size:13.5px">Atualização do dia do jogo (confirmada por duas fontes): Enciso <b>saiu de maca</b> aos 25 minutos do amistoso de 5/6 contra a Nicarágua (dupla pancada na parte anterior e posterior da coxa) e fez ressonância; deve permanecer na lista, mas <b>voltaria no máximo na 3ª rodada, contra a Austrália</b> — sem chances reais neste jogo. Artilheiro das Eliminatórias, Enciso é justamente o ponto mais criativo do contra-ataque paraguaio; a lesão de Balbuena retira um alvo aéreo das bolas paradas. Fora isso, Alfaro <b>não tem outros problemas</b> e mantém a base fixa.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o Paraguai já apostava tudo em "poucos contra-ataques + bolas paradas"; sem Enciso, o contra-ataque regride de "dente criativo" para a linha única de "progressão individual de Almirón + Sanabria na área"; sem Balbuena, perde-se um alvo aéreo nas bolas paradas dos dois lados. Significado prático para os EUA: <b>cai a chance de sofrer gol em contra-ataque, e o jogo se aproxima de um "treino de ataque contra defesa em meio campo"</b> — furar o bloqueio é outra história. <span style="color:var(--warn)">[Se Enciso vai para a lista/banco, vale o anúncio oficial]</span></div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.beinsports.com/en-nz/football/fifa-world-cup-2026/articles/paraguay-s-julio-enciso-injured-ahead-of-world-cup-2026-06-06" style="color:var(--accent)">beIN — Lesão de Enciso</a> · <a href="https://www.si.com/soccer/usmnt-first-world-cup-opponent-injury-blow-star-player" style="color:var(--accent)">SI — Confirmação da lesão</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — Prévia/desfalques</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">EUA · Forma <span style="color:var(--mut);font-weight:400">· Último amistoso em 31-05</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">EUA fecham a preparação com 3-2 sobre Senegal: <b>gols de Pulisic e Balogun</b>, ataque chega à Copa com confiança</div>
+      <p style="font-size:13.5px">No último amistoso, em 31/5, os EUA <b>venceram Senegal por 3-2</b>, com um gol de Pulisic e um de Balogun. Para Pulisic é um sinal importante — sua temporada no Milan foi repetidamente interrompida por <b>lesão no posterior da coxa e bursite</b>, com longos períodos sem produção direta; Balogun (Monaco, 19 gols na temporada passada somando todas as competições) está consolidado como referência.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: os dois caminhos mais realistas dos EUA para furar o bloco baixo paraguaio são exatamente o corte para dentro de Pulisic e a finalização de área de Balogun — os dois marcando no mesmo jogo antes da Copa acende justamente "a única rota de gol clara dos EUA". Por outro lado, se o lastro físico de Pulisic não sustentar 90 minutos de alta produção (histórico de lesões na temporada inteira), a criatividade americana no jogo posicional despenca para o plano B de Tillman/McKennie.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/" style="color:var(--accent)">Racing Post — 3-2 sobre Senegal/lesões de Pulisic</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html" style="color:var(--accent)">Sports Mole — Situação do elenco</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--good);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--good);font-weight:700">EUA · Sinal sobre o goleiro <span style="color:var(--mut);font-weight:400">· Quadro da escalação</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Disputa pelo gol decidida: <b>Matt Freese ultrapassou Matt Turner e virou a primeira opção de Pochettino</b></div>
+      <p style="font-size:13.5px">O Sports Mole confirma que <b>Matt Freese "definitively taken over"</b> — o goleiro do NYCFC venceu a disputa de um ano contra o ex-titular Matt Turner e defenderá a meta na estreia. O meio fica com Adams + McKennie, Tillman infiltrando, e Pulisic flutuando atrás de Balogun.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o jogo de pés de Freese é a razão central da escolha de Pochettino — os EUA precisam construir desde trás sob a pressão do meio-campo paraguaio, e o goleiro é o primeiro elo da saída. Lado do risco: Freese não tem experiência de Copa, e o primeiro toque sob a pressão de 70 mil pessoas em casa na estreia é o alvo preferido das sondagens altas do Paraguai.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html" style="color:var(--accent)">Sports Mole — Freese titular</a> · <a href="https://www.nbcsports.com/soccer/news/usmnt-lineup-versus-paraguay-who-will-pochettino-choose-for-usa-in-world-cup-opener" style="color:var(--accent)">NBC — Debate da escalação</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Arbitragem · Já anunciada <span style="color:var(--mut);font-weight:400">· Designação da FIFA em 06-08</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Árbitro do jogo: o renomado holandês <b>Danny Makkelie</b> — 506 jogos na carreira, <b>3,40 amarelos/jogo, 0,32 pênaltis/jogo</b>, estilo permissivo que deixa o jogo fluir; a taxa de pênaltis subiu para 0,50/jogo nesta temporada</div>
+      <p style="font-size:13.5px"><b>Perfil quantitativo (KickoffScore/StatsHub)</b>: 506 jogos na carreira, média de <b>3,40</b> amarelos, 0,09 vermelhos e <b>0,32 pênaltis por jogo</b>; em 2025/26, 26 jogos: 3,12 amarelos/jogo, <b>0,50 pênaltis/jogo</b>, 22,4 faltas/jogo — entre os árbitros internacionais, é do tipo "poucos cartões, deixa o jogo correr, mas não hesita em marcar pênalti". Currículo robusto em grandes torneios (nível Champions/Eurocopa). Histórico: <b>apitou os EUA no amistoso EUA vs Alemanha de 2015; sem registro público de jogos do Paraguai (não encontrado, registrado com transparência)</b>. O VAR será o espanhol Carlos del Cerro Grande.</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: o critério permissivo é faca de dois gumes — o amistoso EUA x Paraguai de novembro passado terminou em confusão, e se Makkelie mantiver o estilo "poucos apitos", o jogo físico e as faltinhas paraguaias passarão mais batidas, deixando a partida truncada; mas a taxa de 0,50 pênaltis/jogo desta temporada, somada à frequência de infiltrações americanas na área (Pulisic/Balogun/Dest), faz do <b>pênalti o caminho de desempate subestimado deste jogo</b>. A nova regra de "só o capitão fala com o árbitro" atinge em cheio o hábito paraguaio de cercar a arbitragem.</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.statshub.com/referee/makkelie-danny-desmond/72792" style="color:var(--accent)">StatsHub — Dados de Makkelie</a> · <a href="https://kickoffscore.com/referees/danny-makkelie" style="color:var(--accent)">KickoffScore — Dados da temporada</a> · <a href="https://sports.yahoo.com/articles/referee-usmnts-opening-world-cup-160003416.html" style="color:var(--accent)">Yahoo — Designação/VAR</a></div>
+    </div>
+
+    <div style="border-left:3px solid var(--accent);background:var(--card2);border-radius:0 8px 8px 0;padding:12px 14px;margin:12px 0">
+      <div style="font-size:12px;color:var(--accent);font-weight:700">Fora de campo · Cerimônia de abertura e ingressos <span style="color:var(--mut);font-weight:400">· 06-12, dia do jogo</span></div>
+      <div style="font-size:15px;font-weight:700;margin:4px 0">Show de estrelas na abertura no SoFi (Katy Perry/Future/Anitta/LISA etc.); mas <b>ainda há ingressos à venda dias antes do jogo</b>, e o preço a partir de US$ 1.120 virou polêmica nacional</div>
+      <p style="font-size:13.5px">A cerimônia de abertura nos EUA (uma das três, nos três países-sede) terá Katy Perry, Future, Anitta, LISA, Rema e Tyla. O outro lado: o site da FIFA e o mercado secundário ainda têm milhares de ingressos, do mínimo de US$ 1.120 ao máximo de US$ 2.735 — as procuradorias-gerais de Nova York/Nova Jersey criticaram publicamente os preços, e Trump declarou que "não gastaria US$ 1.000 para ver um jogo".</p>
+      <div style="background:#0d1526;border-radius:8px;padding:9px 11px;font-size:13px;margin-top:6px">🔑 <b style="color:var(--accent)">Por que importa</b>: estádio cheio ou não afeta o tamanho do "bônus de atmosfera do anfitrião" — com arquibancadas vazias ou ocupadas por público neutro, o empurrão esperado da torcida americana perde força; a polêmica dos preços virou assunto mais quente que o próprio time, drenando energia emocional. O impacto direto no jogo é limitado, mas explica o contraste entre "explosão de volume nas redes e estádio talvez sem fervura".</div>
+      <div style="font-size:12px;margin-top:6px">Fontes: <a href="https://www.cbssports.com/soccer/news/2026-world-cup-opening-ceremony-live-updates/live/" style="color:var(--accent)">CBS — Cerimônia de abertura</a> · <a href="https://www.npr.org/2026/06/08/nx-s1-5849905/fifa-world-cup-tickets-prices" style="color:var(--accent)">NPR — Polêmica dos ingressos</a> · <a href="https://sports.yahoo.com/articles/thousands-world-cup-tickets-remain-115259383.html" style="color:var(--accent)">Yahoo — Ingressos restantes</a></div>
+    </div>
+  </section>
+
+  <!-- Dados -->
+  <section>
+    <h2><span class="n">1</span> Painel de dados (essencial)</h2>
+    <div class="sub">Valores de elenco · Probabilidades implícitas 1X2 (odds sem a margem + validação cruzada com mercados de previsão) · Cenário do Grupo D — todos os gráficos usam dados verificados</div>
+    <div class="grid2">
+      <div class="chartbox"><h5>Comparação de valor de elenco (€ milhões, Transfermarkt)</h5><canvas id="valChart"></canvas></div>
+      <div class="chartbox"><h5>Probabilidades implícitas 1X2 (casas sem a margem vs mercados de previsão)</h5><canvas id="probChart"></canvas></div>
+    </div>
+    <div class="grid2" style="margin-top:14px">
+      <div class="chartbox"><h5>Valores de elenco do Grupo D (€ milhões)</h5><canvas id="groupChart"></canvas></div>
+      <div class="chartbox"><h5>Perfil de força geral (avaliação dos analistas, 0–10)</h5><canvas id="radarChart"></canvas></div>
+    </div>
+    <h4>Comparativo de dados-chave</h4>
+    <table>
+      <tr><th>Indicador</th><th>🇺🇸 EUA</th><th>🇵🇾 Paraguai</th></tr>
+      <tr><td>Ranking FIFA</td><td class="us">#16</td><td class="py">#40</td></tr>
+      <tr><td>Valor de elenco</td><td class="us">≈€410 mi</td><td class="py">€157,15 mi</td></tr>
+      <tr><td>Finalizadores de referência</td><td class="us">Pulisic (Milan), Balogun (Monaco, 19 gols na temporada passada)</td><td class="py">Sanabria (Cremonese, 4 gols nas Eliminatórias: gols da vitória sobre Bolívia/Venezuela e do empate com a Argentina)</td></tr>
+      <tr><td>Caminho de classificação</td><td class="us">Vaga direta como anfitrião</td><td class="py">6º nas Eliminatórias sul-americanas (28 pontos); venceu a Argentina em casa por 2-1</td></tr>
+      <tr><td>Último amistoso</td><td class="us">3-2 sobre Senegal (gols de Pulisic/Balogun)</td><td class="py">— (Alfaro com base fixa, sem novas lesões)</td></tr>
+      <tr><td>1X2 (casas)</td><td class="us">1.95 (implícita ≈49%)</td><td class="py">3.95 (≈24%) · Empate 3.45 (≈27%)</td></tr>
+      <tr><td>Mercados de previsão</td><td class="us">Kalshi/Polymarket: EUA 49,5%</td><td class="py">Empate 28,5% · Paraguai 23,5% — validação cruzada com as casas</td></tr>
+    </table>
+    <div class="note">📌 O número mais importante para guardar: <b>2,6 vezes de diferença de valor de elenco, mas só ≈49% de probabilidade de vitória</b>. Casas e mercados de previsão se confirmam mutuamente (49/27/24 ≈ 49,5/28,5/23,5), ou seja, não é precificação emocional — o mercado duvida sistematicamente da capacidade americana de destravar blocos baixos sul-americanos. É também por isso que o empate a 3.45 aparece em vários veículos como a "direção de valor".</div>
+  </section>
+
+  <!-- ===== Calor do mercado de apostas ===== -->
+  <section style="border:1px solid #4a3a14;background:linear-gradient(135deg,#221a0e,#161d2e)">
+    <h2><span class="n" style="background:var(--warn);color:#1a1206">🔥</span> Calor do mercado de apostas <span style="font-size:12px;color:var(--mut);font-weight:500">· Dicas de famosos / odds / fluxo de capital</span></h2>
+    <div class="sub">Atenção nacional no máximo, mas preços surpreendentemente frios — a clássica divisão entre barulho quente e preço frio</div>
+
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px">
+      <div style="font-size:13px;color:var(--mut)">Índice de superaquecimento do mercado</div>
+      <div style="font-size:22px;letter-spacing:2px">🔥🔥🔥🔥<span style="opacity:.25">🔥</span></div>
+      <div style="font-size:14px;font-weight:800;color:var(--warn)">4/5 · Dinheiro público extremamente unilateral (elevado em 06-12)</div>
+      <div style="font-size:12.5px;color:var(--mut);flex:1;min-width:240px">Sinal central do dia do jogo: <b>87-94% do dinheiro do público em um só lado, nos EUA, cuja probabilidade é de apenas ~50%</b> (DraftKings 94% do volume/BetMGM 89%), enquanto o preço quase não se move e o empate foi discretamente elevado a 29% — descolamento de manual entre "dinheiro público vs preço parado"; as casas têm enorme interesse no empate.</div>
+    </div>
+
+    <h4>① Agregado de dicas de especialistas (estatística de direção: ≈7-0 para vitória apertada dos EUA; cerca de metade escolhe apostas defensivas)</h4>
+    <table>
+      <tr><th>Quem</th><th>Perfil</th><th>Opinião / Pick</th></tr>
+      <tr><td>VSiN</td><td>Rede de apostas de Las Vegas</td><td>EUA ML 1.91 + BTTS "não" 1.77, múltipla a 2.90 — vitória americana em placar baixo</td></tr>
+      <tr><td>SportsLine · Jon Eimer</td><td>Especialista certificado (31-13 na Champions)</td><td>Melhor aposta na direção dos EUA (pick específico atrás do paywall · a confirmar)</td></tr>
+      <tr><td>CBS / Sports Mole / Goal</td><td>Sites de previsões</td><td>Unânimes na direção EUA; Goal: "USMNT to start strongly in LA"</td></tr>
+      <tr><td>Racing Post</td><td>Mídia de apostas britânica</td><td>Vitória dos EUA como base, roteiro principal "vitória apertada + placar baixo"</td></tr>
+      <tr><td>Modelo Dimers</td><td>Quantitativo</td><td>EUA 51,2% / Empate 25,7% / Paraguai 23,1%, placar mais provável <b>1-0</b></td></tr>
+      <tr><td>Painel de IA · ChatGPT</td><td>NYSportsDay, três modelos</td><td>Colchão contrário: <b>Paraguai +0.5 (1.80)</b> — "EUA vencem, mas vencem feio"</td></tr>
+      <tr><td>Painel de IA · Claude</td><td>Idem</td><td>EUA ML (2.05) — considera que o preço 50-50 subestima o mando</td></tr>
+      <tr><td>Painel de IA · Gemini</td><td>Idem</td><td><b>Under 2.5 gols (1.61)</b>: placar de consenso mais comum dos três modelos é 1-0</td></tr>
+    </table>
+
+    <h4 style="margin-top:20px">② Odds e fluxo do dinheiro público (odds americanas convertidas em decimais)</h4>
+    <table>
+      <tr><th>Mercado</th><th>Vitória dos EUA</th><th>Empate</th><th>Vitória do Paraguai</th></tr>
+      <tr><td>FanDuel</td><td class="us">1.95</td><td>3.40</td><td class="py">4.10</td></tr>
+      <tr><td>Caesars</td><td class="us">1.91</td><td>3.35</td><td class="py">4.05</td></tr>
+      <tr><td>Probabilidade implícita (sem a margem)</td><td class="us">≈48,8%</td><td>≈28,0%</td><td class="py">≈23,2%</td></tr>
+      <tr><td>Kalshi / Polymarket</td><td class="us">50%</td><td><b>29%</b></td><td class="py">23-24%</td></tr>
+      <tr><td>Over/Under 2.5 (FanDuel)</td><td colspan="3">Over 2.28 / Under 1.63 — under fortemente comprado; Kalshi/Polymarket dão 59-60% ao under</td></tr>
+    </table>
+    <div class="flag">⚠ <b>Descolamento central do dia do jogo</b>: <b>DraftKings 89% das apostas/94% do volume, BetMGM 87%/89%, outra grande casa 90%/82%, tudo de um lado só, nos EUA</b> — e o preço dos EUA, comparado à base de 06-11, até caiu de leve (49→48,8%), com o empate subindo para 28-29%. Um tsunami de dinheiro público que não move o preço = casas e capital afiado aceitando o outro lado. Historicamente, nessa estrutura, "o empate chato" é o resultado mais lucrativo para as casas. Se perto do jogo o preço dos EUA for comprado até 1.77 sem notícia nova, é puro capital emocional.</div>
+    <div class="note">📌 Apenas para fins de análise — não é recomendação de apostas.</div>
+    <div class="src" style="margin-top:10px">Fontes: <a href="https://vsin.com/soccer/usa-vs-paraguay-prediction-2026-fifa-world-cup-preview-and-pick/">VSiN</a> · <a href="https://www.covers.com/industry/usmnt-drawing-massive-betting-action-entering-friday-world-cup-opener-june-11-2026">Covers — Distribuição do dinheiro público</a> · <a href="https://www.foxsports.com/stories/soccer/2026-world-cup-odds-books-hoping-draw-ahead-usa-paraguay">FOX — Casas torcendo pelo empate</a> · <a href="https://www.cbssports.com/soccer/news/usmnt-paraguay-odds-prediction-time-2026-world-cup-picks-best-bets/">CBS — Odds</a> · <a href="https://www.nysportsday.com/2026/06/09/chatgpt-claude-gemini-usa-vs-paraguay-predictions-world-cup-2026/">NYSportsDay — Painel de IA</a> · <a href="https://www.dimers.com/news/paraguay-vs-united-states-final-prediction-group-d-world-cup-2026-ac">Dimers</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — Kalshi/Polymarket</a> · <a href="https://www.sportsline.com/insiders/usmnt-vs-paraguay-odds-predictions-2026-world-cup-picks-from-proven-soccer-expert/">SportsLine</a></div>
+  </section>
+
+  <!-- Escalações e forma recente -->
+  <section>
+    <h2><span class="n">2</span> Escalações & jogadores-chave</h2>
+    <div class="sub">Escalações projetadas (estimativa das fontes de análise, não oficial; vale a lista oficial antes do jogo)</div>
+    <h4>🇺🇸 EUA — escalação projetada (4-3-3, versão de consenso da imprensa · atualizada em 06-12)</h4>
+    <div class="lineup">Freese; Freeman · Richards (ou M.Robinson) · Ream · A.Robinson; Adams · McKennie · Tillman; Dest (novo papel pela direita) · Pulisic; Balogun</div>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Momento / Observações</th></tr>
+      <tr><td class="us">Christian Pulisic</td><td>Atacante / Milan</td><td>Maior estrela da história da seleção; temporada interrompida por lesão na coxa + bursite, mas reaqueceu com gol sobre Senegal em 31/5</td></tr>
+      <tr><td class="us">Folarin Balogun</td><td>Centroavante / Monaco</td><td>19 gols na temporada passada somando tudo; marcou contra Senegal, consolidado como referência</td></tr>
+      <tr><td class="us">Tyler Adams</td><td>Volante / Bournemouth</td><td>Moedor do meio-campo, primeira barreira contra a progressão de Almirón</td></tr>
+      <tr><td class="us">Chris Richards</td><td>Zagueiro / Crystal Palace</td><td><b>Diz estar recuperado, voltou aos treinos na segunda; titularidade em aberto</b> — sua presença muda o jogo aéreo e a estrutura de saída dos EUA</td></tr>
+    </table>
+    <h4>🇵🇾 Paraguai — jogadores-chave (escalação vale pelo anúncio oficial; Alfaro costuma usar base fixa em 4-4-2/5-3-2)</h4>
+    <table>
+      <tr><th>Jogador</th><th>Posição/Clube</th><th>Momento / Observações</th></tr>
+      <tr><td class="py">Antonio Sanabria</td><td>Atacante / Cremonese</td><td>4 gols nas Eliminatórias (gols da vitória sobre Bolívia/Venezuela + empate com a Argentina) — perfil de jogos grandes</td></tr>
+      <tr><td class="py">Miguel Almirón</td><td>Meia ofensivo / Atlanta United</td><td>Motor das transições; sem Enciso, quase toda a criatividade recai sobre ele</td></tr>
+      <tr><td class="py">Julio Enciso</td><td>Atacante / Strasbourg</td><td><b>Praticamente fora deste jogo</b> (retorno no máximo na 3ª rodada); sua ausência rebaixa o contra-ataque um degrau</td></tr>
+      <tr><td class="py">Fabián Balbuena</td><td>Zagueiro</td><td><b>Lesionado, fora</b> — um alvo aéreo a menos nas bolas paradas dos dois lados</td></tr>
+    </table>
+  </section>
+
+  <!-- Tática + técnicos -->
+  <section>
+    <h2><span class="n">3</span> Estilo tático & técnicos</h2>
+    <div class="twocol">
+      <div class="coach">
+        <div class="nm" style="color:#7fa6e6">🇺🇸 EUA · Mauricio Pochettino (desde 2024, ex-Chelsea)</div>
+        <div class="role">3-4-2-1 / 4-2-3-1 · Pressão alta + alas que empurram</div>
+        <ul class="cl">
+          <li>Intensidade à la Pochettino: o trio de frente pressiona a linha de saída, com Dest/A. Robinson dando amplitude como alas.</li>
+          <li>Receita contra defesas fechadas: corte de Pulisic + infiltração de Tillman pelo meio-espaço + Balogun no primeiro pau, com McKennie atacando as bolas paradas.</li>
+          <li>Calcanhar de Aquiles: a velocidade de recomposição dos zagueiros quando atacados nas costas (sobretudo sem Richards) e os 15 minutos iniciais sob a pressão do mando.</li>
+        </ul>
+      </div>
+      <div class="coach">
+        <div class="nm" style="color:#f08a82">🇵🇾 Paraguai · Gustavo Alfaro (desde 2024, ex-Costa Rica)</div>
+        <div class="role">4-4-2 / 5-3-2 · Bloco baixo + bolas paradas + gestão de jogo</div>
+        <ul class="cl">
+          <li>Alfaro é o mestre sul-americano da "ciência de pontuar com times menores": disciplina estrutural, arte da falta, bolas paradas — foi assim que venceu a Argentina nas Eliminatórias.</li>
+          <li>Base fixa com entrosamento altíssimo, quase sem rodízio; não acelera enquanto não estiver atrás no placar.</li>
+          <li>Risco: sem Enciso/Balbuena, perde uma carta no contra-ataque e outra nas bolas paradas; pressionado o jogo todo, resta torcer por um lance de Sanabria na área.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arbitragem -->
+  <section>
+    <h2><span class="n">4</span> Arbitragem & ambiente de jogo</h2>
+    <div class="note">✅ <b>Já anunciado (06-08)</b>: o árbitro será o holandês <b>Danny Makkelie</b>. A baixa tolerância dos árbitros europeus a faltinhas e cerco ao juiz + a nova regra de "só o capitão fala" comprimem em dobro o espaço de gestão de jogo do Paraguai.</div>
+    <h4>Novas regras unificadas desta Copa (impacto neste jogo)</h4>
+    <ul class="cl">
+      <li><b>8 segundos para o goleiro, contagem de 5 segundos em arremessos/tiros de meta</b>: a arte tradicional paraguaia de cozinhar o jogo é atacada diretamente.</li>
+      <li><b>Só o capitão pode falar com o árbitro</b>: o hábito sul-americano de cercar o juiz fica muito mais caro; o risco disciplinar sobe.</li>
+      <li><b>Impedimento semiautomático aprimorado</b>: as arrancadas de Balogun na linha do impedimento são julgadas mais rápido e com mais precisão.</li>
+    </ul>
+  </section>
+
+  <!-- Insights -->
+  <section>
+    <h2><span class="n">5</span> Visões dos analistas</h2>
+    <div class="insight"><div class="who">Racing Post <small>· Mídia de apostas nível B</small></div>Vitória dos EUA é a base, mas a organização defensiva paraguaia (gols sofridos nas Eliminatórias atrás só dos líderes) significa que "vitória apertada + placar baixo" é o roteiro principal; o lastro físico de Pulisic é o fator X.</div>
+    <div class="insight"><div class="who">SI / Kalshi / Polymarket <small>· Mercados de previsão</small></div>Os dois grandes mercados de previsão e as casas se validam mutuamente na faixa 49/28/23 — com 2,6× de diferença de valor de elenco, esse preço por si só é informação: o mercado desconfia do retrospecto "EUA vs bloco baixo sul-americano".</div>
+    <div class="insight"><div class="who">Sports Mole <small>· Previsões nível B</small></div>A verdadeira escolha de Pochettino não está no ataque, e sim na defesa: a titularidade de Richards define se os EUA jogam "controlando e ousando subir" ou "com seguro e em ritmo conservador".</div>
+  </section>
+
+  <!-- Síntese -->
+  <section>
+    <h2><span class="n">6</span> Avaliação final & pontos a confirmar</h2>
+    <ul class="cl">
+      <li><b>Tendência de resultado</b>: vitória apertada dos EUA (1-0/2-1) como base; a meta mais realista do Paraguai é segurar o 0-0 até depois dos 70 minutos e roubar uma bola parada. A ausência de Enciso reduz significativamente os caminhos de vitória paraguaia.</li>
+      <li><b>Homens-chave</b>: Pulisic (EUA/desequilíbrio), Balogun (EUA/finalização), Sanabria (PAR/único ponto de conversão), Adams (EUA/anular Almirón).</li>
+      <li><b>Fator decisivo</b>: os EUA conseguirem marcar nos primeiros 30 minutos — um Paraguai atrás no placar precisa sair para o jogo (não é sua praia); se o 0-0 entrar no segundo tempo, o roteiro paraguaio se confirma e a probabilidade de empate dispara.</li>
+    </ul>
+    <div class="flag">⚠ <b>A confirmar</b>: ① titularidade de Richards (anúncio oficial); ② se Enciso vai para a lista/banco; ③ a escalação americana tem versões em 3-4-2-1 e 4-2-3-1; vale a oficial; ④ checar movimento de odds em cima da hora (base 1.95).</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:16px">Fontes</h2>
+    <div class="src">
+      • <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/preview/usa-vs-paraguay-prediction-team-news-lineups_598859.html">Sports Mole — Prévia/desfalques</a> · <a href="https://www.sportsmole.co.uk/football/usa/world-cup-2026/predicted-lineups/pochettinos-defensive-dilemma-for-us-opener-predicted-usa-lineup-vs-paraguay_598933.html">Sports Mole — Escalação projetada dos EUA</a><br>
+      • <a href="https://www.racingpost.com/sport/football-tips/world-cup-2026/usa-vs-paraguay-world-cup-prediction-team-news-odds-betting-tips-and-bet-builder-aVywZ5l3JOVh/">Racing Post — Odds/situação</a> · <a href="https://www.si.com/prediction-markets/world-cup-opener-kalshi-polymarket-odds-for-usa-vs-paraguay-01ktkq0mtj4z">SI — Mercados de previsão</a><br>
+      • <a href="https://www.fourfourtwo.com/team/paraguay-world-cup-2026-squad">FourFourTwo — 26 convocados do Paraguai/Sanabria/Enciso</a> · <a href="https://www.transfermarkt.us/paraguay/marktwertanalyse/verein/3581">Transfermarkt — Valor de elenco do Paraguai</a> · <a href="https://sports.yahoo.com/articles/referee-appointments-opening-world-cup-044800311.html">Yahoo — Designações de arbitragem</a>
+    </div>
+  </section>
+
+  <div class="foot">Central de Análise da Copa do Mundo 2026 · Dados até 2026-06-12 (dia do jogo) · Gráficos com dados verificados; o radar é avaliação composta dos analistas · Apenas para fins de análise — não é recomendação de apostas</div>
+</div>
+
+<script>
+const tC='#93a1c4',grid='#2a3450',US='#3b6fb0',PY='#d0312d',DR='#64748b';
+Chart.defaults.color=tC;Chart.defaults.font.family="-apple-system,'PingFang SC',sans-serif";
+const noLeg={plugins:{legend:{display:false}}};
+
+new Chart(document.getElementById('valChart'),{type:'bar',
+ data:{labels:['EUA','Paraguai'],datasets:[{data:[410,157.15],backgroundColor:[US,PY],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ milhões'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('probChart'),{type:'bar',
+ data:{labels:['Vitória dos EUA','Empate','Vitória do Paraguai'],datasets:[
+  {label:'Casas (sem a margem)',data:[49,27,24],backgroundColor:US,borderRadius:5},
+  {label:'Kalshi/Polymarket',data:[49.5,28.5,23.5],backgroundColor:'#7c92b8',borderRadius:5}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{y:{grid:{color:grid},suggestedMax:60,title:{display:true,text:'Probabilidade implícita %'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('groupChart'),{type:'bar',
+ data:{labels:['Turquia','EUA','Paraguai','Austrália'],datasets:[{data:[494.2,410,157.15,null],backgroundColor:['#b91c1c',US,PY,'#446'],borderRadius:6}]},
+ options:{...noLeg,scales:{y:{grid:{color:grid},title:{display:true,text:'€ milhões (Austrália pendente)'}},x:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('radarChart'),{type:'radar',
+ data:{labels:['Solidez defensiva','Finalização','Controle do meio','Bolas paradas','Teto individual','Experiência em torneios'],
+  datasets:[
+   {label:'EUA',data:[6.5,7,7,6.5,8,6.5],borderColor:US,backgroundColor:US+'33',pointBackgroundColor:US},
+   {label:'Paraguai',data:[7.5,5.5,5.5,7,5.5,6],borderColor:PY,backgroundColor:PY+'33',pointBackgroundColor:PY}]},
+ options:{plugins:{legend:{position:'bottom'}},scales:{r:{min:0,max:10,grid:{color:grid},angleLines:{color:grid},pointLabels:{color:tC,font:{size:11}},ticks:{display:false}}}}});
+</script>
+</body>
+</html>
